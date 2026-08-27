@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" data-theme-mode="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Duel Desk — Yu-Gi-Oh! TCG event coverage</title>
 <meta name="description" content="Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.">
-<link rel="alternate" type="application/rss+xml" title="Coverage feed" href="https://yugiohblog.konami.com/feed/">
+<link rel="canonical" href="https://dueldesk.reizu.dev/">
+
+<!-- Theme is resolved before first paint so the page never flashes the wrong one. -->
+<script>
+(function(){
+  var root = document.documentElement, mode = 'dark';
+  try { mode = localStorage.getItem('dd-theme') || 'dark'; } catch (e) {}
+  if (mode !== 'light' && mode !== 'dark' && mode !== 'system') mode = 'dark';
+  root.dataset.themeMode = mode;
+  root.dataset.theme = mode === 'system'
+    ? (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+    : mode;
+})();
+</script>
+
+<meta name="theme-color" content="#EDF0F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1119" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 0h26v26l-6 6H0V6z' fill='%23F05B9C'/%3E%3Cpath d='M11 8h5a8 8 0 0 1 0 16h-5z' fill='%230E1119'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E1119'/%3E%3Cpath d='M8 4h20v20l-4 4H4V8z' fill='%23F05B9C'/%3E%3Cpath d='M12 10h4a6 6 0 0 1 0 12h-4z' fill='%230E1119'/%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Duel Desk">
+<meta property="og:title" content="Duel Desk — Yu-Gi-Oh! TCG event coverage">
+<meta property="og:description" content="Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.">
+<meta property="og:url" content="https://dueldesk.reizu.dev/">
+<meta property="og:image" content="https://dueldesk.reizu.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Duel Desk — Yu-Gi-Oh! TCG event coverage">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Duel Desk — Yu-Gi-Oh! TCG event coverage">
+<meta name="twitter:description" content="Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.">
+<meta name="twitter:image" content="https://dueldesk.reizu.dev/og.png">
+
+<!-- This site's own coverage feed. Konami's official blog is credited in the footer as the data source. -->
+<link rel="alternate" type="application/rss+xml" title="Duel Desk coverage feed" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -30,6 +65,7 @@
   --focus:#7FD3FF;
 }
 [data-theme="dark"]{
+  color-scheme:dark;
   --bg:#0E1119; --bg-2:#161B29; --surface:#1B2133; --surface-2:#232B41;
   --line:#2E3852; --line-soft:#232B41;
   --text:#EEF1F8; --text-2:#AEB8CE; --text-3:#8590A8;
@@ -39,6 +75,7 @@
   --c-result:#E0BC63; --c-news:#6FA8F0; --c-deck:#B78BE8;
 }
 [data-theme="light"]{
+  color-scheme:light;
   --bg:#EDF0F6; --bg-2:#E4E9F2; --surface:#FFFFFF; --surface-2:#F4F6FB;
   --line:#C3CCDD; --line-soft:#DDE3EE;
   --text:#141A26; --text-2:#4A566E; --text-3:#5E6A82;
@@ -128,6 +165,7 @@ a{color:inherit}
   color:var(--live); border:1px solid currentColor; border-radius:100px; padding:.45rem .75rem;
 }
 .livetag i{width:7px; height:7px; border-radius:50%; background:currentColor; animation:pulse 1.9s ease-in-out infinite}
+.livetag--sm{font-size:.6rem; padding:.2rem .45rem; letter-spacing:.1em}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
 .stamp{font:500 .8rem var(--mono); color:var(--text-3)}
 
@@ -150,25 +188,38 @@ a{color:inherit}
 .track__rail::-webkit-scrollbar{height:6px}
 .track__rail::-webkit-scrollbar-thumb{background:var(--line); border-radius:99px}
 
+/* The notch lives on ::before so clip-path never eats the focus ring. */
 .chip{
-  flex:0 0 auto; scroll-snap-align:start; cursor:pointer;
+  position:relative; flex:0 0 auto; scroll-snap-align:start; cursor:pointer;
   display:flex; flex-direction:column; gap:.25rem; align-items:flex-start;
   min-width:88px; min-height:66px; padding:.6rem .75rem;
-  background:var(--surface); color:var(--text-2);
-  border:1px solid var(--line); font-family:var(--body); text-align:left;
-  clip-path:polygon(var(--notch) 0,100% 0,100% calc(100% - var(--notch)),calc(100% - var(--notch)) 100%,0 100%,0 var(--notch));
-  transition:background .15s,color .15s,border-color .15s;
+  background:none; border:0; color:var(--text-2);
+  font-family:var(--body); text-align:left;
+  transition:color .15s;
 }
-.chip:hover{background:var(--surface-2); color:var(--text)}
+.chip::before{
+  content:''; position:absolute; inset:0; z-index:0;
+  background:var(--surface); border:1px solid var(--line);
+  clip-path:polygon(var(--notch) 0,100% 0,100% calc(100% - var(--notch)),calc(100% - var(--notch)) 100%,0 100%,0 var(--notch));
+  transition:background .15s,border-color .15s;
+}
+.chip > *{position:relative; z-index:1}
+.chip:hover{color:var(--text)}
+.chip:hover::before{background:var(--surface-2)}
 .chip__n{font:600 1.05rem/1 var(--mono); color:var(--text)}
 .chip__s{font-size:.68rem; letter-spacing:.08em; text-transform:uppercase}
-.chip[aria-selected="true"]{background:var(--accent); border-color:var(--accent)}
+.chip[aria-selected="true"]::before{background:var(--accent); border-color:var(--accent)}
 .chip[aria-selected="true"] .chip__n,
 .chip[aria-selected="true"] .chip__s{color:var(--accent-ink)}
-.chip[data-state="live"]{border-color:var(--live)}
+.chip[data-state="live"]::before{border-color:var(--live)}
 .chip[data-state="live"] .chip__s{color:var(--live)}
 .chip[data-state="live"][aria-selected="true"] .chip__s{color:var(--accent-ink)}
-.chip[data-state="upcoming"]{opacity:.62}
+/* Upcoming is dimmed by a readable token and a dashed edge, not by opacity. */
+.chip[data-state="upcoming"]::before{border-style:dashed}
+.chip[data-state="upcoming"] .chip__n{color:var(--text-2)}
+.chip[data-state="upcoming"] .chip__s{color:var(--text-3)}
+.chip[data-state="upcoming"][aria-selected="true"] .chip__n,
+.chip[data-state="upcoming"][aria-selected="true"] .chip__s{color:var(--accent-ink)}
 
 /* ---------------- ROUND PANEL ---------------- */
 .panel{
@@ -186,7 +237,8 @@ a{color:inherit}
 }
 .segs button:last-child{border-right:0}
 .segs button[aria-pressed="true"]{background:var(--text); color:var(--bg)}
-.segs button:hover:not([aria-pressed="true"]){color:var(--text)}
+.segs button:hover:not([aria-pressed="true"]):not(:disabled){color:var(--text)}
+.segs button:disabled{background:var(--surface); color:var(--text-3); cursor:not-allowed}
 
 table{width:100%; border-collapse:collapse; font-size:.94rem}
 caption{text-align:left; font-size:.82rem; color:var(--text-3); padding-bottom:.6rem}
@@ -198,13 +250,16 @@ th{
 td.num,th.num{font-family:var(--mono); font-variant-numeric:tabular-nums; width:4.5rem}
 td.rec{font-family:var(--mono); font-variant-numeric:tabular-nums; color:var(--text-2); white-space:nowrap}
 tbody tr:hover{background:var(--surface-2)}
+/* Scroll container is focusable so it can be reached and scrolled by keyboard. */
 .tblwrap{overflow-x:auto}
+.tblwrap:focus-visible{outline:3px solid var(--focus); outline-offset:2px}
 
 .feature{display:grid; gap:1rem; grid-template-columns:1fr auto 1fr; align-items:center; padding:1.25rem 0}
 .feature__side{text-align:center}
 .feature__side h3{font-size:1.15rem; margin-bottom:.3rem}
 .feature__side p{font:500 .82rem var(--mono); color:var(--text-2)}
 .feature__vs{font:700 .8rem var(--display); letter-spacing:.2em; color:var(--gold)}
+.feature__note{color:var(--text-2); font-size:.94rem; border-top:1px solid var(--line-soft); padding-top:1rem}
 @media (max-width:620px){.feature{grid-template-columns:1fr}}
 
 /* ---------------- COVERAGE FEED ---------------- */
@@ -227,6 +282,7 @@ tbody tr:hover{background:var(--surface-2)}
 .filters button[aria-pressed="true"] .dot{box-shadow:0 0 0 2px var(--bg)}
 
 .event{border:1px solid var(--line); background:var(--surface); margin-bottom:1rem}
+.event__h{margin:0; font:inherit}
 .event__bar{
   width:100%; display:flex; align-items:center; gap:.9rem; text-align:left;
   background:none; border:0; color:inherit; cursor:pointer;
@@ -235,7 +291,7 @@ tbody tr:hover{background:var(--surface-2)}
 .event__bar:hover{background:var(--surface-2)}
 .event__date{font:500 .78rem var(--mono); color:var(--text-3); flex:none; width:5.5rem}
 @media (max-width:560px){.event__date{display:none}}
-.event__title{font-family:var(--display); font-weight:600; font-size:1.05rem; flex:1 1 auto}
+.event__title{font-family:var(--display); font-weight:600; font-size:1.05rem; flex:1 1 auto; display:flex; align-items:center; gap:.6rem; flex-wrap:wrap}
 .event__n{font:500 .78rem var(--mono); color:var(--text-3); flex:none}
 .event__caret{flex:none; color:var(--text-3); transition:rotate .2s}
 .event__bar[aria-expanded="true"] .event__caret{rotate:180deg}
@@ -260,6 +316,7 @@ tbody tr:hover{background:var(--surface-2)}
 .side{display:flex; flex-direction:column; gap:1.25rem}
 .card{border:1px solid var(--line); background:var(--surface); padding:1.1rem}
 .card h2{font-size:.76rem; letter-spacing:.15em; text-transform:uppercase; color:var(--text-3); margin-bottom:.9rem}
+.card__note{font-size:.88rem; color:var(--text-2); margin-bottom:.9rem}
 .up{display:block; text-decoration:none; padding:.75rem 0; border-bottom:1px solid var(--line-soft)}
 .up:last-of-type{border-bottom:0}
 .up strong{display:block; font-family:var(--display); font-weight:600; font-size:1rem; margin-bottom:.2rem}
@@ -271,6 +328,8 @@ tbody tr:hover{background:var(--surface-2)}
   background:var(--surface-2); color:var(--text); border:1px solid var(--line); padding:.7rem;
 }
 .feedbtn:hover{border-color:var(--accent); color:var(--accent)}
+.srcline{font-size:.8rem; color:var(--text-3); margin-top:.8rem}
+.srcline a{color:var(--text-2)}
 
 /* ---------------- FOOTER ---------------- */
 footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2.5rem 3rem}
@@ -281,6 +340,7 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
 .foot a:hover{color:var(--text); text-decoration:underline}
 .foot p{font-size:.85rem; color:var(--text-2); max-width:34ch}
 .legal{margin-top:2rem; padding-top:1.25rem; border-top:1px solid var(--line); font-size:.8rem; color:var(--text-3)}
+.legal a{color:var(--text-2)}
 
 .demo{
   display:inline-block; font:600 .68rem var(--body); letter-spacing:.1em; text-transform:uppercase;
@@ -293,11 +353,14 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
 }
 @media (prefers-contrast:more){
   :root{--line:currentColor}
-  .chip,.event,.card,.panel,.filters button{border-width:2px}
+  .chip::before,.event,.card,.panel,.filters button{border-width:2px}
 }
 @media print{
-  .masthead,.side,.filters,.themer,.segs{display:none}
-  body{background:#fff; color:#000}
+  .masthead,.side,.filters,.themer,.segs,.skip{display:none}
+  body{background:#fff; color:#000; background-image:none}
+  .tblwrap{overflow:visible}
+  .panel{border:1px solid #000}
+  .event__body[hidden]{display:block!important}
 }
 </style>
 </head>
@@ -314,8 +377,8 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
 
     <div class="search">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <label class="visually-hidden" for="q">Search coverage</label>
-      <input id="q" type="search" placeholder="Search events and rounds" autocomplete="off">
+      <label class="visually-hidden" for="q">Search coverage, Duelists and decks</label>
+      <input id="q" type="search" placeholder="Search events, Duelists, decks" autocomplete="off">
       <kbd>/</kbd>
     </div>
 
@@ -369,7 +432,7 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
           <button type="button" data-view="feature" aria-pressed="false">Feature match</button>
         </div>
       </div>
-      <div id="round-body"></div>
+      <div id="round-body" role="tabpanel" aria-labelledby="tab-12" tabindex="0"></div>
     </div>
   </section>
 
@@ -405,13 +468,17 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
 
       <div class="card">
         <h2>Follow along</h2>
-        <p style="font-size:.88rem;color:var(--text-2);margin-bottom:.9rem">
-          Every round is published to the feed the moment it is posted. Point any reader at it.
+        <p class="card__note">
+          Every round is published to the Duel Desk feed the moment it is posted. Point any reader at it.
         </p>
-        <a class="feedbtn" href="https://yugiohblog.konami.com/feed/">
+        <a class="feedbtn" href="/feed.xml">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><path d="M4 11a9 9 0 0 1 9 9h3A12 12 0 0 0 4 8z"/><path d="M4 4a16 16 0 0 1 16 16h3A19 19 0 0 0 4 1z"/></svg>
           Subscribe by RSS
         </a>
+        <p class="srcline">
+          Round data is sourced from Konami's official
+          <a href="https://yugiohblog.konami.com/" rel="external noopener">Yu-Gi-Oh! TCG blog</a>.
+        </p>
       </div>
     </aside>
   </div>
@@ -443,25 +510,47 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
       </div>
     </div>
     <p class="legal">
-      A design study, not affiliated with or endorsed by Konami. All Duelist names, records and pairings shown are invented sample data.
+      A design study, not affiliated with, endorsed by, or sponsored by Konami. Yu-Gi-Oh! is a
+      trademark of its respective owner. All Duelist names, records and pairings shown are invented
+      sample data. Round data would be sourced from Konami's official
+      <a href="https://yugiohblog.konami.com/" rel="external noopener">Yu-Gi-Oh! TCG blog</a>.
     </p>
   </div>
 </footer>
 
 <script>
 /* ============================================================
+   0. HELPERS
+   ============================================================ */
+
+/* Everything rendered through innerHTML goes through this first.
+   The sample data below is trusted, but groupFeed() is designed to
+   replace it with third-party RSS, where titles and Duelist names
+   are attacker-controlled. Escape at the boundary, always. */
+const ESCAPES = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
+const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ESCAPES[c]);
+
+/* ============================================================
    1. THEME
+   ------------------------------------------------------------
+   The resolved theme is already on <html> from the inline script
+   in <head>, so there is no flash. This only handles changes.
    ============================================================ */
 const mq = window.matchMedia('(prefers-color-scheme: light)');
-let themeMode = 'dark';
+const themeButtons = document.querySelectorAll('[data-theme-set]');
+let themeMode = document.documentElement.dataset.themeMode || 'dark';
+
 function applyTheme(){
   const t = themeMode === 'system' ? (mq.matches ? 'light' : 'dark') : themeMode;
   document.documentElement.dataset.theme = t;
-  document.querySelectorAll('[data-theme-set]').forEach(b =>
-    b.setAttribute('aria-pressed', String(b.dataset.themeSet === themeMode)));
+  document.documentElement.dataset.themeMode = themeMode;
+  themeButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.themeSet === themeMode)));
 }
-document.querySelectorAll('[data-theme-set]').forEach(b =>
-  b.addEventListener('click', () => { themeMode = b.dataset.themeSet; applyTheme(); }));
+themeButtons.forEach(b => b.addEventListener('click', () => {
+  themeMode = b.dataset.themeSet;
+  try { localStorage.setItem('dd-theme', themeMode); } catch (e) { /* private mode — session only */ }
+  applyTheme();
+}));
 mq.addEventListener('change', () => { if (themeMode === 'system') applyTheme(); });
 
 /* ============================================================
@@ -470,8 +559,8 @@ mq.addEventListener('change', () => { if (themeMode === 'system') applyTheme(); 
    The source blog runs WordPress, so it exposes RSS at /feed/
    (?paged=2 for older items). The hard part is not fetching it,
    it is that one tournament arrives as ~47 separate posts with
-   titles like "Pairings for Round 11". These two functions turn
-   that flat stream back into events containing rounds.
+   titles like "Pairings for Round 11". These functions turn that
+   flat stream back into events containing rounds.
 
    Browsers cannot fetch the feed cross-origin, so run this on a
    small server or worker and serve the JSON to the page.
@@ -484,73 +573,117 @@ const KINDS = {
   news     : {label:'Announcement',  color:'var(--c-news)'},
   deck     : {label:'Deck profile',  color:'var(--c-deck)'}
 };
+const kindOf = k => KINDS[k] ?? KINDS.news;
+
+/* Round slot, independent of word order — real titles vary a lot
+   ("Round 11 Pairings", "Pairings for Round 11", "R11 pairings"). */
+function roundFrom(t){
+  let m;
+  if ((m = t.match(/\btop\s*(\d+)/)))                     return 'Top ' + m[1];
+  if ((m = t.match(/\bround\s*(\d+)/)))                   return +m[1];
+  if ((m = t.match(/\br(\d+)\b/)))                        return +m[1];
+  if (/\bquarter[-\s]?finals?\b/.test(t))                 return 'Top 8';
+  if (/\bsemi[-\s]?finals?\b/.test(t))                    return 'Top 4';
+  if (/\bfinals?\b/.test(t))                              return 'Final';
+  return null;
+}
+
+/* Coverage type. Order matters: the structural markers (pairings,
+   standings) are checked before the looser "deck" catch, so that
+   "Top 8 pairings" is a pairing and "Top 8 decklists" is a profile.
+   "Deck check" is a policy term, not deck content, so it is excluded.
+   Titles with no keyword at all fall back to 'news' rather than guess. */
+function kindFrom(t){
+  if (/\bpairings?\b/.test(t))                                               return 'pairings';
+  if (/\bstandings\b|\bpoint totals\b/.test(t))                              return 'standings';
+  if (/\bfeature match\b|\bfinal match\b|\bmatch:\s/.test(t))                return 'feature';
+  if (/\bwinner\b|\bchampion\b|\bcongratulations\b|\bundefeated\b/.test(t))  return 'result';
+  if (/\bdecks?\b|\bdeck ?lists?\b/.test(t) && !/\bdeck check\b/.test(t))     return 'deck';
+  return 'news';
+}
 
 /** Classify one post title into a kind plus a round slot. */
 function classify(title){
   const t = title.toLowerCase();
-  let m;
-  if ((m = t.match(/pairings for round (\d+)/)))    return {kind:'pairings',  round:+m[1]};
-  if ((m = t.match(/standings after round (\d+)/))) return {kind:'standings', round:+m[1]};
-  if ((m = t.match(/pairings for top (\d+)/)))      return {kind:'pairings',  round:'Top ' + m[1]};
-  if (/final match/.test(t))                        return {kind:'feature',   round:'Final'};
-  if (/feature match|round \d+ feature/.test(t))    return {kind:'feature',   round:null};
-  if (/winner|champion|congratulations/.test(t))    return {kind:'result',    round:'Final'};
-  if (/deck profile|top \d+ decks?/.test(t))        return {kind:'deck',      round:null};
-  return {kind:'news', round:null};
+  return {kind: kindFrom(t), round: roundFrom(t)};
 }
 
-/** Event name = the part of the title before the first colon. */
-function eventNameFrom(title){
+/* A leading "Feature Match:" is a coverage label, not an event name.
+   Splitting on the colon regardless would invent an event called
+   "Feature Match" and scatter the real tournament across it. */
+const LABEL_PREFIX = /^(pairings?|standings|feature match|final match|deck profiles?|deck ?lists?|round \d+|top \d+|results?|announcements?|update)\b/i;
+
+function eventNameFrom(title, fallback){
   const i = title.indexOf(':');
-  return (i > -1 ? title.slice(0, i) : title).trim();
+  if (i > -1){
+    const head = title.slice(0, i).trim();
+    if (head && !LABEL_PREFIX.test(head)) return head;
+  }
+  return fallback;
 }
 
 /** RSS XML -> [{event, date, posts:[{title,kind,round,time,url}]}] */
 function groupFeed(xmlText){                                   // eslint-disable-line
   const doc = new DOMParser().parseFromString(xmlText, 'application/xml');
+  if (doc.querySelector('parsererror')) throw new Error('Feed is not valid XML');
+
   const map = new Map();
   for (const item of doc.querySelectorAll('item')){
     const title = item.querySelector('title')?.textContent?.trim() ?? '';
+    if (!title) continue;
     const url   = item.querySelector('link')?.textContent?.trim() ?? '#';
-    const date  = new Date(item.querySelector('pubDate')?.textContent ?? Date.now());
-    const name  = eventNameFrom(title);
-    if (!map.has(name)) map.set(name, {event:name, date, posts:[]});
-    map.get(name).posts.push({
+    const raw   = item.querySelector('pubDate')?.textContent;
+    const date  = raw && !isNaN(Date.parse(raw)) ? new Date(raw) : new Date();
+    const cat   = item.querySelector('category')?.textContent?.trim();
+    const name  = eventNameFrom(title, cat || 'Unsorted coverage');
+
+    let group = map.get(name);
+    if (!group) map.set(name, group = {event:name, date, posts:[]});
+    if (date > group.date) group.date = date;   // group carries its newest post's date
+
+    group.posts.push({
       title, url,
       time: date.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
       ...classify(title)
     });
   }
-  return [...map.values()];
+  return [...map.values()].sort((a, b) => b.date - a.date);
 }
 
 /* ============================================================
    3. SAMPLE DATA — stands in for the parsed feed
    ============================================================ */
 const NAMES = ['R. Okonkwo','M. Alvarez','J. Lindqvist','P. Nakamura','D. Wexler','S. Boateng',
-  'K. Duval','A. Petrov','T. Marchetti','L. Zhao','C. Ferreira','N. Haddad','E. Rasmussen','V. Osei'];
+  'K. Duval','A. Petrov','T. Marchetti','L. Zhao','C. Ferreira','N. Haddad','E. Rasmussen','V. Osei',
+  'H. Bergström','I. Castellanos'];
 const DECKS = ['Maliss','Ryzeal','Fiendsmith','Mitsurugi','Voiceless Voice','Snake-Eye','Yubel','Tenpai Dragon'];
 const rec = (w,l) => `${w}–${l}–0`;
 
 const ROUNDS = [
-  ...Array.from({length:10}, (_,i) => ({id:String(i+1), label:'R'+(i+1), state:'done'})),
-  {id:'11', label:'R11', state:'done'},
-  {id:'12', label:'R12', state:'live'},
+  ...Array.from({length:11}, (_,i) => ({id:String(i+1), label:'R'+(i+1), state:'done'})),
+  {id:'12', label:'R12',   state:'live'},
   {id:'T8', label:'Top 8', state:'upcoming'},
   {id:'T4', label:'Top 4', state:'upcoming'},
   {id:'F',  label:'Final', state:'upcoming'}
 ];
 
+/* Eight tables, sixteen distinct Duelists — no one is paired against themselves. */
 const pairings = Array.from({length:8}, (_,i) => ({
   table: i+1,
-  a: NAMES[i], aRec: rec(11-Math.floor(i/3), Math.floor(i/3)),
-  b: NAMES[i+6] ?? NAMES[i], bRec: rec(10-Math.floor(i/4), 1+Math.floor(i/4))
+  a: NAMES[i],   aRec: rec(11-Math.floor(i/3), Math.floor(i/3)),
+  b: NAMES[i+8], bRec: rec(10-Math.floor(i/4), 1+Math.floor(i/4))
 }));
 
 const standings = NAMES.slice(0,8).map((n,i) => ({
   pos:i+1, name:n, record:rec(11-Math.floor(i/3), Math.floor(i/3)),
   deck:DECKS[i % DECKS.length], pct:(78 - i*2.4).toFixed(1)
 }));
+
+const FEATURE = {
+  a: {name:'R. Okonkwo', deck:'Maliss', record:'11–0–0'},
+  b: {name:'P. Nakamura', deck:'Ryzeal', record:'10–1–0'},
+  note:'Both Duelists are locked for the top cut, so this one decides seeding. Written coverage of each turn follows below as the match plays out.'
+};
 
 const EVENTS = [
   {event:'Remote Duel YCS January 2026', date:'1 Feb 2026', live:true, posts:[
@@ -577,54 +710,108 @@ const EVENTS = [
 ];
 
 /* ============================================================
-   4. ROUND TRACK — an ARIA tablist with roving tabindex
+   4. STATE
    ============================================================ */
-const rail = document.getElementById('rail');
+const rail      = document.getElementById('rail');
+const roundBody = document.getElementById('round-body');
+const roundH    = document.getElementById('round-h');
+const roundSub  = document.getElementById('round-sub');
+const list      = document.getElementById('events');
+const countEl   = document.getElementById('count');
+const qEl       = document.getElementById('q');
+const liveRegion= document.getElementById('announce');
+const viewButtons = document.querySelectorAll('[data-view]');
+
 let activeRound = '12';
 let activeView  = 'pairings';
+let filter = 'all';
+let query  = '';
+const open = new Set(['Remote Duel YCS January 2026']);
 
-function stateLabel(s){ return s === 'live' ? 'In progress' : s === 'done' ? 'Complete' : 'Not started'; }
+const roundOf = id => ROUNDS.find(r => r.id === id);
+const stateLabel = s => s === 'live' ? 'In progress' : s === 'done' ? 'Complete' : 'Not started';
+const hit = (...fields) => !query || fields.join(' ').toLowerCase().includes(query);
 
-function renderTrack(){
-  rail.innerHTML = '';
-  ROUNDS.forEach(r => {
+/* ============================================================
+   5. ROUND TRACK — an ARIA tablist with roving tabindex
+   ------------------------------------------------------------
+   Chips are built once and then updated in place. Rebuilding the
+   rail on every keypress destroyed the focused element and reset
+   the horizontal scroll to zero, which made arrow-keying jump.
+   ============================================================ */
+function buildTrack(){
+  rail.replaceChildren(...ROUNDS.map(r => {
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'chip';
-    b.role = 'tab';
+    b.setAttribute('role', 'tab');
+    b.setAttribute('aria-controls', 'round-body');
     b.dataset.state = r.state;
     b.dataset.id = r.id;
     b.id = 'tab-' + r.id;
-    b.setAttribute('aria-selected', String(r.id === activeRound));
-    b.setAttribute('aria-controls', 'round-body');
-    b.tabIndex = r.id === activeRound ? 0 : -1;
-    b.innerHTML = `<span class="chip__n">${r.label}</span><span class="chip__s">${stateLabel(r.state)}</span>`;
-    b.addEventListener('click', () => selectRound(r.id));
-    rail.append(b);
+
+    const n = document.createElement('span');
+    n.className = 'chip__n';
+    n.textContent = r.label;
+    const s = document.createElement('span');
+    s.className = 'chip__s';
+    s.textContent = stateLabel(r.state);
+    b.append(n, s);
+    return b;
+  }));
+  syncTrack();
+}
+
+function syncTrack(){
+  for (const b of rail.children){
+    const selected = b.dataset.id === activeRound;
+    b.setAttribute('aria-selected', String(selected));
+    b.tabIndex = selected ? 0 : -1;
+  }
+}
+
+function syncSegs(){
+  const upcoming = roundOf(activeRound)?.state === 'upcoming';
+  viewButtons.forEach(b => {
+    b.disabled = upcoming;
+    b.setAttribute('aria-pressed', String(!upcoming && b.dataset.view === activeView));
   });
 }
 
 function selectRound(id, focus){
+  const r = roundOf(id);
+  if (!r) return;
   activeRound = id;
-  renderTrack();
-  const r = ROUNDS.find(x => x.id === id);
-  document.getElementById('round-h').textContent =
-    /^\d+$/.test(id) ? 'Round ' + id : r.label;
-  document.getElementById('round-sub').textContent =
-    r.state === 'live'  ? 'Swiss · 624 tables · pairings posted 14:02'
-  : r.state === 'done'  ? 'Complete · results final'
-  :                       'Not started · pairings appear here when posted';
+  syncTrack();
+  syncSegs();
+
+  roundH.textContent   = /^\d+$/.test(id) ? 'Round ' + id : r.label;
+  roundSub.textContent =
+      r.state === 'live' ? `Swiss · ${r.tables ?? 624} tables · pairings posted ${r.posted ?? '14:02'}`
+    : r.state === 'done' ? 'Complete · results final'
+    :                      'Not started · pairings appear here when posted';
+  roundBody.setAttribute('aria-labelledby', 'tab-' + id);
+
   renderRound();
-  if (focus) document.getElementById('tab-' + id)?.focus();
+
+  const tab = document.getElementById('tab-' + id);
+  if (focus) tab?.focus();
+  tab?.scrollIntoView({block:'nearest', inline:'nearest'});
   say(`${r.label}, ${stateLabel(r.state).toLowerCase()}`);
 }
 
+rail.addEventListener('click', e => {
+  const chip = e.target.closest('.chip');
+  if (chip) selectRound(chip.dataset.id);
+});
+
 rail.addEventListener('keydown', e => {
-  const keys = {ArrowRight:1, ArrowLeft:-1};
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const step = {ArrowRight:1, ArrowLeft:-1}[e.key];
   const i = ROUNDS.findIndex(r => r.id === activeRound);
-  if (e.key in keys){
+  if (step){
     e.preventDefault();
-    selectRound(ROUNDS[(i + keys[e.key] + ROUNDS.length) % ROUNDS.length].id, true);
+    selectRound(ROUNDS[(i + step + ROUNDS.length) % ROUNDS.length].id, true);
   } else if (e.key === 'Home'){
     e.preventDefault(); selectRound(ROUNDS[0].id, true);
   } else if (e.key === 'End'){
@@ -633,75 +820,89 @@ rail.addEventListener('keydown', e => {
 });
 
 /* ============================================================
-   5. ROUND PANEL
+   6. ROUND PANEL
+   ------------------------------------------------------------
+   The search box filters these tables too — the pairings caption
+   promises it, so it has to be true.
    ============================================================ */
-const body = document.getElementById('round-body');
+const noMatch = what => `<div class="empty"><h3>No ${esc(what)} match “${esc(query)}”</h3>
+  <p>Try another Duelist, or clear the search to see the whole table.</p></div>`;
+
+/* A scrollable region needs to be focusable to be keyboard-scrollable
+   (Chrome and Firefox now do this for you; Safari does not). */
+const wrapTable = (label, inner) =>
+  `<div class="tblwrap" tabindex="0" role="region" aria-label="${esc(label)}">${inner}</div>`;
+
+function renderPairings(){
+  const rows = pairings.filter(p => hit(p.a, p.b));
+  if (!rows.length) return noMatch('tables');
+  return wrapTable('Pairings table', `<table>
+    <caption>Top tables. Search by Duelist to filter this list.</caption>
+    <thead><tr>
+      <th scope="col" class="num">Table</th><th scope="col">Duelist</th><th scope="col">Record</th>
+      <th scope="col">Duelist</th><th scope="col">Record</th>
+    </tr></thead><tbody>
+    ${rows.map(p => `<tr>
+      <td class="num">${esc(p.table)}</td><td>${esc(p.a)}</td><td class="rec">${esc(p.aRec)}</td>
+      <td>${esc(p.b)}</td><td class="rec">${esc(p.bRec)}</td></tr>`).join('')}
+    </tbody></table>`);
+}
+
+function renderStandings(){
+  const rows = standings.filter(s => hit(s.name, s.deck));
+  if (!rows.length) return noMatch('Duelists');
+  return wrapTable('Standings table', `<table>
+    <caption>Standings after the previous round, top eight shown.</caption>
+    <thead><tr>
+      <th scope="col" class="num">Place</th><th scope="col">Duelist</th>
+      <th scope="col">Record</th><th scope="col">Deck</th><th scope="col">Opp. win %</th>
+    </tr></thead><tbody>
+    ${rows.map(s => `<tr>
+      <th scope="row" class="num">${esc(s.pos)}</th><td>${esc(s.name)}</td>
+      <td class="rec">${esc(s.record)}</td><td>${esc(s.deck)}</td><td class="rec">${esc(s.pct)}%</td></tr>`).join('')}
+    </tbody></table>`);
+}
+
+function renderFeature(){
+  const {a, b, note} = FEATURE;
+  return `<div class="feature">
+    <div class="feature__side"><h3>${esc(a.name)}</h3><p>${esc(a.deck)} · ${esc(a.record)}</p></div>
+    <div class="feature__vs" aria-hidden="true">VS</div>
+    <div class="feature__side"><h3>${esc(b.name)}</h3><p>${esc(b.deck)} · ${esc(b.record)}</p></div>
+  </div>
+  <p class="feature__note">${esc(note)}</p>`;
+}
 
 function renderRound(){
-  const state = ROUNDS.find(r => r.id === activeRound).state;
-  if (state === 'upcoming'){
-    body.innerHTML = `<div class="empty"><h3>This round has not started</h3>
+  const r = roundOf(activeRound);
+  if (!r) return;
+  if (r.state === 'upcoming'){
+    roundBody.innerHTML = `<div class="empty"><h3>This round has not started</h3>
       <p>Pairings appear here as soon as they are posted. The page updates on its own.</p></div>`;
     return;
   }
-  if (activeView === 'pairings'){
-    body.innerHTML = `<div class="tblwrap"><table>
-      <caption>Top tables only. Search for a name to find any other table.</caption>
-      <thead><tr>
-        <th scope="col" class="num">Table</th><th scope="col">Duelist</th><th scope="col">Record</th>
-        <th scope="col">Duelist</th><th scope="col">Record</th>
-      </tr></thead><tbody>
-      ${pairings.map(p => `<tr>
-        <td class="num">${p.table}</td><td>${p.a}</td><td class="rec">${p.aRec}</td>
-        <td>${p.b}</td><td class="rec">${p.bRec}</td></tr>`).join('')}
-      </tbody></table></div>`;
-  } else if (activeView === 'standings'){
-    body.innerHTML = `<div class="tblwrap"><table>
-      <caption>Standings after the previous round, top eight shown.</caption>
-      <thead><tr>
-        <th scope="col" class="num">Place</th><th scope="col">Duelist</th>
-        <th scope="col">Record</th><th scope="col">Deck</th><th scope="col">Opp. win %</th>
-      </tr></thead><tbody>
-      ${standings.map(s => `<tr>
-        <th scope="row" class="num">${s.pos}</th><td>${s.name}</td>
-        <td class="rec">${s.record}</td><td>${s.deck}</td><td class="rec">${s.pct}%</td></tr>`).join('')}
-      </tbody></table></div>`;
-  } else {
-    body.innerHTML = `<div class="feature">
-      <div class="feature__side"><h3>R. Okonkwo</h3><p>Maliss · 11–0–0</p></div>
-      <div class="feature__vs" aria-hidden="true">VS</div>
-      <div class="feature__side"><h3>P. Nakamura</h3><p>Ryzeal · 10–1–0</p></div>
-    </div>
-    <p style="color:var(--text-2);font-size:.94rem;border-top:1px solid var(--line-soft);padding-top:1rem">
-      Both Duelists are locked for the top cut, so this one decides seeding. Written coverage of each turn
-      follows below as the match plays out.
-    </p>`;
-  }
+  roundBody.innerHTML =
+      activeView === 'pairings'  ? renderPairings()
+    : activeView === 'standings' ? renderStandings()
+    :                              renderFeature();
 }
 
-document.querySelectorAll('[data-view]').forEach(b =>
-  b.addEventListener('click', () => {
-    activeView = b.dataset.view;
-    document.querySelectorAll('[data-view]').forEach(x =>
-      x.setAttribute('aria-pressed', String(x.dataset.view === activeView)));
-    renderRound();
-    say(`Showing ${b.textContent.toLowerCase()}`);
-  }));
+viewButtons.forEach(b => b.addEventListener('click', () => {
+  activeView = b.dataset.view;
+  syncSegs();
+  renderRound();
+  say(`Showing ${b.textContent.toLowerCase()}`);
+}));
 
 /* ============================================================
-   6. COVERAGE LIST — grouped by event, filtered, searchable
+   7. COVERAGE LIST — grouped by event, filtered, searchable
    ============================================================ */
-const list = document.getElementById('events');
-const countEl = document.getElementById('count');
-let filter = 'all', query = '', open = new Set(['Remote Duel YCS January 2026']);
-
 function renderEvents(){
-  const groups = EVENTS.map(ev => {
-    const posts = ev.posts.filter(p =>
-      (filter === 'all' || p.kind === filter) &&
-      (!query || (p.title + ' ' + ev.event).toLowerCase().includes(query)));
-    return {...ev, posts};
-  }).filter(ev => ev.posts.length);
+  const groups = EVENTS.map(ev => ({
+    ...ev,
+    posts: ev.posts.filter(p =>
+      (filter === 'all' || p.kind === filter) && hit(p.title, ev.event))
+  })).filter(ev => ev.posts.length);
 
   countEl.textContent = groups.length
     ? `${groups.length} event${groups.length > 1 ? 's' : ''} · ${groups.reduce((n,g) => n + g.posts.length, 0)} updates`
@@ -714,36 +915,42 @@ function renderEvents(){
   }
 
   list.innerHTML = groups.map((ev, i) => {
-    const isOpen = open.has(ev.event) || !!query;
+    const isOpen = query ? true : open.has(ev.event);
     return `<article class="event">
-      <h3>
+      <h3 class="event__h">
         <button type="button" class="event__bar" aria-expanded="${isOpen}"
-                aria-controls="ev-${i}" data-ev="${ev.event.replace(/"/g,'&quot;')}">
-          <span class="event__date">${ev.date}</span>
-          <span class="event__title">${ev.event}${ev.live ? ' <span class="livetag" style="font-size:.6rem;padding:.2rem .45rem"><i aria-hidden="true"></i>Live</span>' : ''}</span>
-          <span class="event__n">${ev.posts.length}</span>
+                aria-controls="ev-${i}" data-ev="${esc(ev.event)}">
+          <span class="event__date">${esc(ev.date)}</span>
+          <span class="event__title">${esc(ev.event)}${ev.live ? ' <span class="livetag livetag--sm"><i aria-hidden="true"></i>Live</span>' : ''}</span>
+          <span class="event__n">${esc(ev.posts.length)}</span>
           <svg class="event__caret" width="16" height="16" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
         </button>
       </h3>
       <div class="event__body" id="ev-${i}" ${isOpen ? '' : 'hidden'}>
-        ${ev.posts.map(p => `<a class="post" href="#" style="--k:${KINDS[p.kind].color}">
-          <span class="post__k">${KINDS[p.kind].label}</span>
-          <span class="post__t">${p.title}</span>
-          <span class="post__time">${p.time}</span>
+        ${ev.posts.map(p => `<a class="post" href="#" style="--k:${kindOf(p.kind).color}">
+          <span class="post__k">${esc(kindOf(p.kind).label)}</span>
+          <span class="post__t">${esc(p.title)}</span>
+          <span class="post__time">${esc(p.time)}</span>
         </a>`).join('')}
       </div>
     </article>`;
   }).join('');
-
-  list.querySelectorAll('.event__bar').forEach(btn =>
-    btn.addEventListener('click', () => {
-      const name = btn.dataset.ev;
-      open.has(name) ? open.delete(name) : open.add(name);
-      renderEvents();
-      list.querySelector(`[data-ev="${CSS.escape(name)}"]`)?.focus();
-    }));
 }
+
+/* Delegated once, and it toggles the panel in place rather than
+   re-rendering the list — so focus is never destroyed and never
+   has to be restored. */
+list.addEventListener('click', e => {
+  const bar = e.target.closest('.event__bar');
+  if (!bar) return;
+  const name = bar.dataset.ev;
+  const panel = document.getElementById(bar.getAttribute('aria-controls'));
+  const willOpen = !(bar.getAttribute('aria-expanded') === 'true');
+  willOpen ? open.add(name) : open.delete(name);
+  bar.setAttribute('aria-expanded', String(willOpen));
+  if (panel) panel.hidden = !willOpen;
+});
 
 document.querySelectorAll('[data-filter]').forEach(b =>
   b.addEventListener('click', () => {
@@ -754,32 +961,55 @@ document.querySelectorAll('[data-filter]').forEach(b =>
     say(countEl.textContent);
   }));
 
-const qEl = document.getElementById('q');
-let timer;
+let searchTimer;
+function runSearch(){
+  const next = qEl.value.trim().toLowerCase();
+  if (next === query) return;
+  query = next;
+  renderEvents();
+  renderRound();
+  say(countEl.textContent);
+}
 qEl.addEventListener('input', () => {
-  clearTimeout(timer);
-  timer = setTimeout(() => { query = qEl.value.trim().toLowerCase(); renderEvents(); say(countEl.textContent); }, 250);
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(runSearch, 250);
 });
 
 /* "/" jumps to search, Escape clears it */
 document.addEventListener('keydown', e => {
-  if (e.key === '/' && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
-    e.preventDefault(); qEl.focus();
-  }
-  if (e.key === 'Escape' && document.activeElement === qEl){
-    qEl.value = ''; query = ''; renderEvents();
+  if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+  const ae = document.activeElement;
+  const typing = ae && (/^(INPUT|TEXTAREA|SELECT)$/.test(ae.tagName) || ae.isContentEditable);
+
+  if (e.key === '/' && !typing){
+    e.preventDefault();
+    qEl.focus();
+    qEl.select();
+  } else if (e.key === 'Escape' && ae === qEl && qEl.value){
+    e.preventDefault();
+    clearTimeout(searchTimer);        // do not let a queued render undo this
+    qEl.value = '';
+    runSearch();
   }
 });
 
 /* ============================================================
-   7. POLITE ANNOUNCEMENTS
+   8. POLITE ANNOUNCEMENTS
+   ------------------------------------------------------------
+   One shared timer, so rapid arrow-keying collapses to a single
+   announcement instead of a pile-up that clobbers itself.
    ============================================================ */
-const live = document.getElementById('announce');
-function say(msg){ live.textContent = ''; setTimeout(() => { live.textContent = msg; }, 60); }
+let sayTimer;
+function say(msg){
+  clearTimeout(sayTimer);
+  liveRegion.textContent = '';
+  sayTimer = setTimeout(() => { liveRegion.textContent = msg; }, 60);
+}
 
 /* boot */
 applyTheme();
-renderTrack();
+buildTrack();
+syncSegs();
 renderRound();
 renderEvents();
 </script>
