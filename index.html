@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duel Desk — Yu-Gi-Oh! TCG event coverage</title>
+<meta name="description" content="Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.">
+<link rel="alternate" type="application/rss+xml" title="Coverage feed" href="https://yugiohblog.konami.com/feed/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   TOKENS
+   Palette is lifted from the game's own card-frame colour system,
+   which competitive players already read fluently: Spell teal,
+   Effect orange, Trap magenta, Link blue, Fusion purple, plus the
+   antique gold of the card border used only as a hairline.
+   ============================================================ */
+:root{
+  --display:'Chakra Petch','Rajdhani','Segoe UI',system-ui,sans-serif;
+  --body:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+
+  --gold:#C8A44D;
+  --r-sm:2px; --r-md:4px;
+  --notch:10px;                 /* clipped corner — the card-frame nod */
+  --gap:clamp(1rem,2.5vw,1.75rem);
+  --shell:min(1240px,100% - 2.5rem);
+  --focus:#7FD3FF;
+}
+[data-theme="dark"]{
+  --bg:#0E1119; --bg-2:#161B29; --surface:#1B2133; --surface-2:#232B41;
+  --line:#2E3852; --line-soft:#232B41;
+  --text:#EEF1F8; --text-2:#AEB8CE; --text-3:#8590A8;
+  --accent:#F05B9C; --accent-ink:#0E1119;
+  --live:#FF5C7A;
+  --c-pair:#3BC4B0; --c-stand:#F09052; --c-feature:#F05B9C;
+  --c-result:#E0BC63; --c-news:#6FA8F0; --c-deck:#B78BE8;
+}
+[data-theme="light"]{
+  --bg:#EDF0F6; --bg-2:#E4E9F2; --surface:#FFFFFF; --surface-2:#F4F6FB;
+  --line:#C3CCDD; --line-soft:#DDE3EE;
+  --text:#141A26; --text-2:#4A566E; --text-3:#5E6A82;
+  --accent:#B01B63; --accent-ink:#FFFFFF;
+  --live:#C2183C;
+  --c-pair:#0F7568; --c-stand:#A0521C; --c-feature:#B01B63;
+  --c-result:#7A5E12; --c-news:#1F5399; --c-deck:#6A3CA0;
+  --focus:#0B4C8C;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font:400 1rem/1.6 var(--body);
+  /* faint diagonal weave, echoes the card-back texture, ~2% opacity */
+  background-image:repeating-linear-gradient(135deg,rgba(200,164,77,.028) 0 1px,transparent 1px 9px);
+}
+h1,h2,h3,h4{font-family:var(--display); font-weight:600; line-height:1.15; margin:0; letter-spacing:.01em}
+p{margin:0}
+a{color:inherit}
+
+/* Focus: never removed, always 3:1+ against both themes */
+:focus-visible{outline:3px solid var(--focus); outline-offset:2px; border-radius:var(--r-sm)}
+:focus:not(:focus-visible){outline:none}
+
+.shell{width:var(--shell); margin-inline:auto}
+.visually-hidden{
+  position:absolute!important; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0
+}
+.skip{
+  position:absolute; left:1rem; top:-100px; z-index:100;
+  background:var(--accent); color:var(--accent-ink);
+  padding:.85rem 1.25rem; font-weight:600; text-decoration:none;
+  border-radius:var(--r-md); transition:top .15s
+}
+.skip:focus{top:1rem}
+
+/* ---------------- HEADER ---------------- */
+.masthead{
+  position:sticky; top:0; z-index:40;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.masthead__in{display:flex; align-items:center; gap:1rem; min-height:68px; flex-wrap:wrap; padding-block:.6rem}
+.brand{display:flex; align-items:baseline; gap:.6rem; text-decoration:none; margin-right:auto}
+.brand__mark{
+  font-family:var(--display); font-weight:700; font-size:1.3rem;
+  letter-spacing:.06em; text-transform:uppercase;
+  padding:.28rem .6rem; color:var(--accent-ink); background:var(--accent);
+  clip-path:polygon(var(--notch) 0,100% 0,100% calc(100% - var(--notch)),calc(100% - var(--notch)) 100%,0 100%,0 var(--notch));
+}
+.brand__sub{font-size:.78rem; color:var(--text-2); letter-spacing:.04em}
+@media (max-width:560px){.brand__sub{display:none}}
+
+.search{position:relative; flex:1 1 200px; max-width:340px}
+.search input{
+  width:100%; font:400 .95rem/1 var(--body); color:var(--text);
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--r-md); padding:.7rem .7rem .7rem 2.3rem; min-height:44px;
+}
+.search input::placeholder{color:var(--text-3)}
+.search svg{position:absolute; left:.7rem; top:50%; translate:0 -50%; color:var(--text-3)}
+.search kbd{
+  position:absolute; right:.55rem; top:50%; translate:0 -50%;
+  font:500 .7rem var(--mono); color:var(--text-3);
+  border:1px solid var(--line); border-radius:3px; padding:.1rem .3rem;
+}
+@media (max-width:700px){.search kbd{display:none}}
+
+.themer{display:flex; gap:2px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-md); padding:2px}
+.themer button{
+  font:500 .78rem var(--body); color:var(--text-2); background:none; border:0;
+  padding:.5rem .7rem; min-height:40px; border-radius:3px; cursor:pointer;
+}
+.themer button[aria-pressed="true"]{background:var(--surface-2); color:var(--text); box-shadow:inset 0 0 0 1px var(--line)}
+.themer button:hover{color:var(--text)}
+
+/* ---------------- LIVE HERO ---------------- */
+.hero{padding-block:clamp(1.5rem,4vw,2.75rem) 0}
+.hero__top{display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; margin-bottom:.9rem}
+.livetag{
+  display:inline-flex; align-items:center; gap:.5rem;
+  font:600 .75rem/1 var(--body); letter-spacing:.14em; text-transform:uppercase;
+  color:var(--live); border:1px solid currentColor; border-radius:100px; padding:.45rem .75rem;
+}
+.livetag i{width:7px; height:7px; border-radius:50%; background:currentColor; animation:pulse 1.9s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.stamp{font:500 .8rem var(--mono); color:var(--text-3)}
+
+.hero h1{font-size:clamp(1.9rem,5.2vw,3.1rem); letter-spacing:-.01em; max-width:20ch}
+.hero__meta{
+  display:flex; gap:.4rem 1.4rem; flex-wrap:wrap; margin-top:.85rem;
+  font:500 .88rem var(--mono); color:var(--text-2)
+}
+.hero__meta b{color:var(--text); font-weight:600}
+
+/* ---------------- ROUND TRACK (signature) ---------------- */
+.track{margin-top:1.6rem; border-top:1px solid var(--gold); padding-top:1rem}
+.track__head{display:flex; align-items:baseline; justify-content:space-between; gap:1rem; margin-bottom:.7rem; flex-wrap:wrap}
+.track__label{font:600 .74rem/1 var(--body); letter-spacing:.16em; text-transform:uppercase; color:var(--text-3)}
+.track__hint{font-size:.78rem; color:var(--text-3)}
+.track__rail{
+  display:flex; gap:.5rem; overflow-x:auto; padding-bottom:.75rem;
+  scroll-snap-type:x proximity; scrollbar-width:thin;
+}
+.track__rail::-webkit-scrollbar{height:6px}
+.track__rail::-webkit-scrollbar-thumb{background:var(--line); border-radius:99px}
+
+.chip{
+  flex:0 0 auto; scroll-snap-align:start; cursor:pointer;
+  display:flex; flex-direction:column; gap:.25rem; align-items:flex-start;
+  min-width:88px; min-height:66px; padding:.6rem .75rem;
+  background:var(--surface); color:var(--text-2);
+  border:1px solid var(--line); font-family:var(--body); text-align:left;
+  clip-path:polygon(var(--notch) 0,100% 0,100% calc(100% - var(--notch)),calc(100% - var(--notch)) 100%,0 100%,0 var(--notch));
+  transition:background .15s,color .15s,border-color .15s;
+}
+.chip:hover{background:var(--surface-2); color:var(--text)}
+.chip__n{font:600 1.05rem/1 var(--mono); color:var(--text)}
+.chip__s{font-size:.68rem; letter-spacing:.08em; text-transform:uppercase}
+.chip[aria-selected="true"]{background:var(--accent); border-color:var(--accent)}
+.chip[aria-selected="true"] .chip__n,
+.chip[aria-selected="true"] .chip__s{color:var(--accent-ink)}
+.chip[data-state="live"]{border-color:var(--live)}
+.chip[data-state="live"] .chip__s{color:var(--live)}
+.chip[data-state="live"][aria-selected="true"] .chip__s{color:var(--accent-ink)}
+.chip[data-state="upcoming"]{opacity:.62}
+
+/* ---------------- ROUND PANEL ---------------- */
+.panel{
+  background:var(--surface); border:1px solid var(--line); border-top:2px solid var(--gold);
+  padding:clamp(1rem,3vw,1.6rem); margin-bottom:2.5rem;
+}
+.panel__head{display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem}
+.panel__head h2{font-size:1.35rem}
+.panel__head p{font:500 .82rem var(--mono); color:var(--text-3); margin-top:.2rem}
+
+.segs{display:flex; gap:0; border:1px solid var(--line); border-radius:var(--r-md); overflow:hidden}
+.segs button{
+  font:500 .85rem var(--body); background:var(--surface-2); color:var(--text-2);
+  border:0; border-right:1px solid var(--line); padding:.6rem 1rem; min-height:44px; cursor:pointer;
+}
+.segs button:last-child{border-right:0}
+.segs button[aria-pressed="true"]{background:var(--text); color:var(--bg)}
+.segs button:hover:not([aria-pressed="true"]){color:var(--text)}
+
+table{width:100%; border-collapse:collapse; font-size:.94rem}
+caption{text-align:left; font-size:.82rem; color:var(--text-3); padding-bottom:.6rem}
+th,td{padding:.7rem .6rem; text-align:left; border-bottom:1px solid var(--line-soft)}
+th{
+  font:600 .72rem var(--body); letter-spacing:.1em; text-transform:uppercase;
+  color:var(--text-3); border-bottom:1px solid var(--line);
+}
+td.num,th.num{font-family:var(--mono); font-variant-numeric:tabular-nums; width:4.5rem}
+td.rec{font-family:var(--mono); font-variant-numeric:tabular-nums; color:var(--text-2); white-space:nowrap}
+tbody tr:hover{background:var(--surface-2)}
+.tblwrap{overflow-x:auto}
+
+.feature{display:grid; gap:1rem; grid-template-columns:1fr auto 1fr; align-items:center; padding:1.25rem 0}
+.feature__side{text-align:center}
+.feature__side h3{font-size:1.15rem; margin-bottom:.3rem}
+.feature__side p{font:500 .82rem var(--mono); color:var(--text-2)}
+.feature__vs{font:700 .8rem var(--display); letter-spacing:.2em; color:var(--gold)}
+@media (max-width:620px){.feature{grid-template-columns:1fr}}
+
+/* ---------------- COVERAGE FEED ---------------- */
+.layout{display:grid; gap:var(--gap); grid-template-columns:minmax(0,1fr) 300px; padding-bottom:4rem}
+@media (max-width:960px){.layout{grid-template-columns:1fr}}
+
+.sechead{display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem; border-bottom:1px solid var(--line); padding-bottom:.7rem}
+.sechead h2{font-size:1.5rem}
+.count{font:500 .82rem var(--mono); color:var(--text-3)}
+
+.filters{display:flex; gap:.45rem; flex-wrap:wrap; margin-bottom:1.25rem}
+.filters button{
+  font:500 .82rem var(--body); background:var(--surface); color:var(--text-2);
+  border:1px solid var(--line); border-radius:100px; padding:.5rem .9rem; min-height:40px; cursor:pointer;
+  display:inline-flex; align-items:center; gap:.45rem;
+}
+.filters button:hover{color:var(--text)}
+.filters button[aria-pressed="true"]{background:var(--text); color:var(--bg); border-color:var(--text)}
+.dot{width:8px; height:8px; border-radius:50%; background:var(--k,var(--text-3)); flex:none}
+.filters button[aria-pressed="true"] .dot{box-shadow:0 0 0 2px var(--bg)}
+
+.event{border:1px solid var(--line); background:var(--surface); margin-bottom:1rem}
+.event__bar{
+  width:100%; display:flex; align-items:center; gap:.9rem; text-align:left;
+  background:none; border:0; color:inherit; cursor:pointer;
+  padding:1rem clamp(.9rem,2.5vw,1.25rem); min-height:64px;
+}
+.event__bar:hover{background:var(--surface-2)}
+.event__date{font:500 .78rem var(--mono); color:var(--text-3); flex:none; width:5.5rem}
+@media (max-width:560px){.event__date{display:none}}
+.event__title{font-family:var(--display); font-weight:600; font-size:1.05rem; flex:1 1 auto}
+.event__n{font:500 .78rem var(--mono); color:var(--text-3); flex:none}
+.event__caret{flex:none; color:var(--text-3); transition:rotate .2s}
+.event__bar[aria-expanded="true"] .event__caret{rotate:180deg}
+
+.event__body{border-top:1px solid var(--line-soft); padding:.4rem 0}
+.post{display:flex; gap:.9rem; align-items:flex-start; padding:.7rem clamp(.9rem,2.5vw,1.25rem); text-decoration:none; border-left:3px solid transparent}
+.post:hover{background:var(--surface-2); border-left-color:var(--k,var(--accent))}
+.post__k{
+  font:600 .66rem/1 var(--body); letter-spacing:.09em; text-transform:uppercase;
+  color:var(--text); background:color-mix(in srgb,var(--k) 22%,transparent);
+  border-left:3px solid var(--k); padding:.4rem .5rem; flex:none; width:7.5rem;
+}
+@media (max-width:560px){.post__k{width:auto}.post{flex-wrap:wrap; gap:.5rem}}
+.post__t{flex:1 1 auto; font-weight:500}
+.post__time{font:400 .78rem var(--mono); color:var(--text-3); flex:none}
+
+.empty{border:1px dashed var(--line); padding:2.5rem 1.5rem; text-align:center}
+.empty h3{font-size:1.1rem; margin-bottom:.4rem}
+.empty p{color:var(--text-2); font-size:.92rem}
+
+/* ---------------- SIDEBAR ---------------- */
+.side{display:flex; flex-direction:column; gap:1.25rem}
+.card{border:1px solid var(--line); background:var(--surface); padding:1.1rem}
+.card h2{font-size:.76rem; letter-spacing:.15em; text-transform:uppercase; color:var(--text-3); margin-bottom:.9rem}
+.up{display:block; text-decoration:none; padding:.75rem 0; border-bottom:1px solid var(--line-soft)}
+.up:last-of-type{border-bottom:0}
+.up strong{display:block; font-family:var(--display); font-weight:600; font-size:1rem; margin-bottom:.2rem}
+.up:hover strong{color:var(--accent)}
+.up span{font:500 .78rem var(--mono); color:var(--text-3)}
+.feedbtn{
+  display:flex; align-items:center; justify-content:center; gap:.5rem; width:100%;
+  min-height:44px; text-decoration:none; font:600 .85rem var(--body);
+  background:var(--surface-2); color:var(--text); border:1px solid var(--line); padding:.7rem;
+}
+.feedbtn:hover{border-color:var(--accent); color:var(--accent)}
+
+/* ---------------- FOOTER ---------------- */
+footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2.5rem 3rem}
+.foot{display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.foot h2{font-size:.76rem; letter-spacing:.15em; text-transform:uppercase; color:var(--text-3); margin-bottom:.7rem}
+.foot ul{list-style:none; margin:0; padding:0; display:grid; gap:.5rem}
+.foot a{color:var(--text-2); text-decoration:none; font-size:.9rem}
+.foot a:hover{color:var(--text); text-decoration:underline}
+.foot p{font-size:.85rem; color:var(--text-2); max-width:34ch}
+.legal{margin-top:2rem; padding-top:1.25rem; border-top:1px solid var(--line); font-size:.8rem; color:var(--text-3)}
+
+.demo{
+  display:inline-block; font:600 .68rem var(--body); letter-spacing:.1em; text-transform:uppercase;
+  color:var(--gold); border:1px solid var(--gold); padding:.3rem .5rem; border-radius:var(--r-sm);
+}
+
+/* ---------------- USER PREFERENCES ---------------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important; animation-iteration-count:1!important; transition-duration:.001ms!important; scroll-behavior:auto!important}
+}
+@media (prefers-contrast:more){
+  :root{--line:currentColor}
+  .chip,.event,.card,.panel,.filters button{border-width:2px}
+}
+@media print{
+  .masthead,.side,.filters,.themer,.segs{display:none}
+  body{background:#fff; color:#000}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="shell masthead__in">
+    <a class="brand" href="#main">
+      <span class="brand__mark">Duel&nbsp;Desk</span>
+      <span class="brand__sub">Yu-Gi-Oh!&nbsp;TCG event coverage</span>
+    </a>
+
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <label class="visually-hidden" for="q">Search coverage</label>
+      <input id="q" type="search" placeholder="Search events and rounds" autocomplete="off">
+      <kbd>/</kbd>
+    </div>
+
+    <div class="themer" role="group" aria-label="Colour theme">
+      <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-set="dark" aria-pressed="true">Dark</button>
+      <button type="button" data-theme-set="system" aria-pressed="false">System</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ LIVE EVENT ============ -->
+  <section class="shell hero" aria-labelledby="live-h">
+    <div class="hero__top">
+      <span class="livetag"><i aria-hidden="true"></i>Live now</span>
+      <span class="stamp">Updated 2 minutes ago · refreshes automatically</span>
+      <span class="demo">Sample data</span>
+    </div>
+
+    <h1 id="live-h">Remote Duel YCS January 2026</h1>
+
+    <p class="hero__meta">
+      <span><b>1,248</b> Duelists</span>
+      <span><b>12</b> Swiss rounds</span>
+      <span>Format <b>Advanced</b></span>
+      <span>Coverage by <b>the Duel Desk team</b></span>
+    </p>
+
+    <div class="track">
+      <div class="track__head">
+        <h2 class="track__label" id="track-h">Round track</h2>
+        <p class="track__hint">Use the left and right arrow keys to move between rounds.</p>
+      </div>
+      <div class="track__rail" role="tablist" aria-labelledby="track-h" id="rail"></div>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED ROUND ============ -->
+  <section class="shell" aria-labelledby="round-h">
+    <div class="panel">
+      <div class="panel__head">
+        <div>
+          <h2 id="round-h">Round 12</h2>
+          <p id="round-sub">Swiss · 624 tables · pairings posted 14:02</p>
+        </div>
+        <div class="segs" role="group" aria-label="Round view">
+          <button type="button" data-view="pairings" aria-pressed="true">Pairings</button>
+          <button type="button" data-view="standings" aria-pressed="false">Standings</button>
+          <button type="button" data-view="feature" aria-pressed="false">Feature match</button>
+        </div>
+      </div>
+      <div id="round-body"></div>
+    </div>
+  </section>
+
+  <!-- ============ COVERAGE + SIDEBAR ============ -->
+  <div class="shell layout">
+
+    <section aria-labelledby="cov-h">
+      <div class="sechead">
+        <h2 id="cov-h">All coverage</h2>
+        <p class="count" id="count">4 events</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter by coverage type">
+        <button type="button" data-filter="all" aria-pressed="true">Everything</button>
+        <button type="button" data-filter="pairings" aria-pressed="false"><span class="dot" style="--k:var(--c-pair)"></span>Pairings</button>
+        <button type="button" data-filter="standings" aria-pressed="false"><span class="dot" style="--k:var(--c-stand)"></span>Standings</button>
+        <button type="button" data-filter="feature" aria-pressed="false"><span class="dot" style="--k:var(--c-feature)"></span>Feature match</button>
+        <button type="button" data-filter="result" aria-pressed="false"><span class="dot" style="--k:var(--c-result)"></span>Results</button>
+        <button type="button" data-filter="deck" aria-pressed="false"><span class="dot" style="--k:var(--c-deck)"></span>Deck profiles</button>
+      </div>
+
+      <div id="events"></div>
+      <p class="visually-hidden" role="status" aria-live="polite" id="announce"></p>
+    </section>
+
+    <aside class="side" aria-label="Event information">
+      <div class="card">
+        <h2>Upcoming events</h2>
+        <a class="up" href="#"><strong>300th YCS — North America</strong><span>Richmond, Virginia</span></a>
+        <a class="up" href="#"><strong>300th YCS — Latin America</strong><span>Guadalajara, Mexico</span></a>
+        <a class="up" href="#"><strong>Regional Qualifier season</strong><span>Rolling, worldwide</span></a>
+      </div>
+
+      <div class="card">
+        <h2>Follow along</h2>
+        <p style="font-size:.88rem;color:var(--text-2);margin-bottom:.9rem">
+          Every round is published to the feed the moment it is posted. Point any reader at it.
+        </p>
+        <a class="feedbtn" href="https://yugiohblog.konami.com/feed/">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><path d="M4 11a9 9 0 0 1 9 9h3A12 12 0 0 0 4 8z"/><path d="M4 4a16 16 0 0 1 16 16h3A19 19 0 0 0 4 1z"/></svg>
+          Subscribe by RSS
+        </a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="shell">
+    <div class="foot">
+      <div>
+        <h2>Coverage</h2>
+        <ul>
+          <li><a href="#">Live events</a></li>
+          <li><a href="#">Past events</a></li>
+          <li><a href="#">Deck profiles</a></li>
+          <li><a href="#">Feature matches</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Play</h2>
+        <ul>
+          <li><a href="#">Find an event</a></li>
+          <li><a href="#">Tournament policy</a></li>
+          <li><a href="#">Forbidden and limited list</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Accessibility</h2>
+        <p>This page targets WCAG&nbsp;2.2&nbsp;AA. Everything works by keyboard, colour is never the only signal, and motion follows your system setting. Found a barrier? Tell us and we will fix it.</p>
+      </div>
+    </div>
+    <p class="legal">
+      A design study, not affiliated with or endorsed by Konami. All Duelist names, records and pairings shown are invented sample data.
+    </p>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   1. THEME
+   ============================================================ */
+const mq = window.matchMedia('(prefers-color-scheme: light)');
+let themeMode = 'dark';
+function applyTheme(){
+  const t = themeMode === 'system' ? (mq.matches ? 'light' : 'dark') : themeMode;
+  document.documentElement.dataset.theme = t;
+  document.querySelectorAll('[data-theme-set]').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.themeSet === themeMode)));
+}
+document.querySelectorAll('[data-theme-set]').forEach(b =>
+  b.addEventListener('click', () => { themeMode = b.dataset.themeSet; applyTheme(); }));
+mq.addEventListener('change', () => { if (themeMode === 'system') applyTheme(); });
+
+/* ============================================================
+   2. READING THE REAL FEED
+   ------------------------------------------------------------
+   The source blog runs WordPress, so it exposes RSS at /feed/
+   (?paged=2 for older items). The hard part is not fetching it,
+   it is that one tournament arrives as ~47 separate posts with
+   titles like "Pairings for Round 11". These two functions turn
+   that flat stream back into events containing rounds.
+
+   Browsers cannot fetch the feed cross-origin, so run this on a
+   small server or worker and serve the JSON to the page.
+   ============================================================ */
+const KINDS = {
+  pairings : {label:'Pairings',      color:'var(--c-pair)'},
+  standings: {label:'Standings',     color:'var(--c-stand)'},
+  feature  : {label:'Feature match', color:'var(--c-feature)'},
+  result   : {label:'Result',        color:'var(--c-result)'},
+  news     : {label:'Announcement',  color:'var(--c-news)'},
+  deck     : {label:'Deck profile',  color:'var(--c-deck)'}
+};
+
+/** Classify one post title into a kind plus a round slot. */
+function classify(title){
+  const t = title.toLowerCase();
+  let m;
+  if ((m = t.match(/pairings for round (\d+)/)))    return {kind:'pairings',  round:+m[1]};
+  if ((m = t.match(/standings after round (\d+)/))) return {kind:'standings', round:+m[1]};
+  if ((m = t.match(/pairings for top (\d+)/)))      return {kind:'pairings',  round:'Top ' + m[1]};
+  if (/final match/.test(t))                        return {kind:'feature',   round:'Final'};
+  if (/feature match|round \d+ feature/.test(t))    return {kind:'feature',   round:null};
+  if (/winner|champion|congratulations/.test(t))    return {kind:'result',    round:'Final'};
+  if (/deck profile|top \d+ decks?/.test(t))        return {kind:'deck',      round:null};
+  return {kind:'news', round:null};
+}
+
+/** Event name = the part of the title before the first colon. */
+function eventNameFrom(title){
+  const i = title.indexOf(':');
+  return (i > -1 ? title.slice(0, i) : title).trim();
+}
+
+/** RSS XML -> [{event, date, posts:[{title,kind,round,time,url}]}] */
+function groupFeed(xmlText){                                   // eslint-disable-line
+  const doc = new DOMParser().parseFromString(xmlText, 'application/xml');
+  const map = new Map();
+  for (const item of doc.querySelectorAll('item')){
+    const title = item.querySelector('title')?.textContent?.trim() ?? '';
+    const url   = item.querySelector('link')?.textContent?.trim() ?? '#';
+    const date  = new Date(item.querySelector('pubDate')?.textContent ?? Date.now());
+    const name  = eventNameFrom(title);
+    if (!map.has(name)) map.set(name, {event:name, date, posts:[]});
+    map.get(name).posts.push({
+      title, url,
+      time: date.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
+      ...classify(title)
+    });
+  }
+  return [...map.values()];
+}
+
+/* ============================================================
+   3. SAMPLE DATA — stands in for the parsed feed
+   ============================================================ */
+const NAMES = ['R. Okonkwo','M. Alvarez','J. Lindqvist','P. Nakamura','D. Wexler','S. Boateng',
+  'K. Duval','A. Petrov','T. Marchetti','L. Zhao','C. Ferreira','N. Haddad','E. Rasmussen','V. Osei'];
+const DECKS = ['Maliss','Ryzeal','Fiendsmith','Mitsurugi','Voiceless Voice','Snake-Eye','Yubel','Tenpai Dragon'];
+const rec = (w,l) => `${w}–${l}–0`;
+
+const ROUNDS = [
+  ...Array.from({length:10}, (_,i) => ({id:String(i+1), label:'R'+(i+1), state:'done'})),
+  {id:'11', label:'R11', state:'done'},
+  {id:'12', label:'R12', state:'live'},
+  {id:'T8', label:'Top 8', state:'upcoming'},
+  {id:'T4', label:'Top 4', state:'upcoming'},
+  {id:'F',  label:'Final', state:'upcoming'}
+];
+
+const pairings = Array.from({length:8}, (_,i) => ({
+  table: i+1,
+  a: NAMES[i], aRec: rec(11-Math.floor(i/3), Math.floor(i/3)),
+  b: NAMES[i+6] ?? NAMES[i], bRec: rec(10-Math.floor(i/4), 1+Math.floor(i/4))
+}));
+
+const standings = NAMES.slice(0,8).map((n,i) => ({
+  pos:i+1, name:n, record:rec(11-Math.floor(i/3), Math.floor(i/3)),
+  deck:DECKS[i % DECKS.length], pct:(78 - i*2.4).toFixed(1)
+}));
+
+const EVENTS = [
+  {event:'Remote Duel YCS January 2026', date:'1 Feb 2026', live:true, posts:[
+    {title:'Round 12 pairings are up',                kind:'pairings',  time:'14:02'},
+    {title:'Standings going into the final round',    kind:'standings', time:'13:48'},
+    {title:'Feature match: Maliss against Ryzeal',    kind:'feature',   time:'13:30'},
+    {title:'Round 11 pairings are up',                kind:'pairings',  time:'12:55'},
+    {title:'Standings after round 10',                kind:'standings', time:'12:20'},
+    {title:'The eight decks still in contention',     kind:'deck',      time:'11:40'}
+  ]},
+  {event:'YCS Montreal, Quebec', date:'18 Jan 2026', live:false, posts:[
+    {title:'Your champion, undefeated in the top cut', kind:'result',   time:'19:10'},
+    {title:'Final match: a mirror decided on time',    kind:'feature',  time:'18:22'},
+    {title:'Top 8 pairings',                           kind:'pairings', time:'16:05'},
+    {title:'What the top tables were playing',         kind:'deck',     time:'15:00'}
+  ]},
+  {event:'Ultimate Duelist Series — Season 6', date:'9 Jan 2026', live:false, posts:[
+    {title:'Season 6 invite structure explained',      kind:'news',     time:'10:00'},
+    {title:'Point totals after the December circuit',  kind:'standings',time:'09:30'}
+  ]},
+  {event:'Forbidden & Limited list update', date:'5 Jan 2026', live:false, posts:[
+    {title:'What changed and when it takes effect',    kind:'news',     time:'12:00'}
+  ]}
+];
+
+/* ============================================================
+   4. ROUND TRACK — an ARIA tablist with roving tabindex
+   ============================================================ */
+const rail = document.getElementById('rail');
+let activeRound = '12';
+let activeView  = 'pairings';
+
+function stateLabel(s){ return s === 'live' ? 'In progress' : s === 'done' ? 'Complete' : 'Not started'; }
+
+function renderTrack(){
+  rail.innerHTML = '';
+  ROUNDS.forEach(r => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'chip';
+    b.role = 'tab';
+    b.dataset.state = r.state;
+    b.dataset.id = r.id;
+    b.id = 'tab-' + r.id;
+    b.setAttribute('aria-selected', String(r.id === activeRound));
+    b.setAttribute('aria-controls', 'round-body');
+    b.tabIndex = r.id === activeRound ? 0 : -1;
+    b.innerHTML = `<span class="chip__n">${r.label}</span><span class="chip__s">${stateLabel(r.state)}</span>`;
+    b.addEventListener('click', () => selectRound(r.id));
+    rail.append(b);
+  });
+}
+
+function selectRound(id, focus){
+  activeRound = id;
+  renderTrack();
+  const r = ROUNDS.find(x => x.id === id);
+  document.getElementById('round-h').textContent =
+    /^\d+$/.test(id) ? 'Round ' + id : r.label;
+  document.getElementById('round-sub').textContent =
+    r.state === 'live'  ? 'Swiss · 624 tables · pairings posted 14:02'
+  : r.state === 'done'  ? 'Complete · results final'
+  :                       'Not started · pairings appear here when posted';
+  renderRound();
+  if (focus) document.getElementById('tab-' + id)?.focus();
+  say(`${r.label}, ${stateLabel(r.state).toLowerCase()}`);
+}
+
+rail.addEventListener('keydown', e => {
+  const keys = {ArrowRight:1, ArrowLeft:-1};
+  const i = ROUNDS.findIndex(r => r.id === activeRound);
+  if (e.key in keys){
+    e.preventDefault();
+    selectRound(ROUNDS[(i + keys[e.key] + ROUNDS.length) % ROUNDS.length].id, true);
+  } else if (e.key === 'Home'){
+    e.preventDefault(); selectRound(ROUNDS[0].id, true);
+  } else if (e.key === 'End'){
+    e.preventDefault(); selectRound(ROUNDS.at(-1).id, true);
+  }
+});
+
+/* ============================================================
+   5. ROUND PANEL
+   ============================================================ */
+const body = document.getElementById('round-body');
+
+function renderRound(){
+  const state = ROUNDS.find(r => r.id === activeRound).state;
+  if (state === 'upcoming'){
+    body.innerHTML = `<div class="empty"><h3>This round has not started</h3>
+      <p>Pairings appear here as soon as they are posted. The page updates on its own.</p></div>`;
+    return;
+  }
+  if (activeView === 'pairings'){
+    body.innerHTML = `<div class="tblwrap"><table>
+      <caption>Top tables only. Search for a name to find any other table.</caption>
+      <thead><tr>
+        <th scope="col" class="num">Table</th><th scope="col">Duelist</th><th scope="col">Record</th>
+        <th scope="col">Duelist</th><th scope="col">Record</th>
+      </tr></thead><tbody>
+      ${pairings.map(p => `<tr>
+        <td class="num">${p.table}</td><td>${p.a}</td><td class="rec">${p.aRec}</td>
+        <td>${p.b}</td><td class="rec">${p.bRec}</td></tr>`).join('')}
+      </tbody></table></div>`;
+  } else if (activeView === 'standings'){
+    body.innerHTML = `<div class="tblwrap"><table>
+      <caption>Standings after the previous round, top eight shown.</caption>
+      <thead><tr>
+        <th scope="col" class="num">Place</th><th scope="col">Duelist</th>
+        <th scope="col">Record</th><th scope="col">Deck</th><th scope="col">Opp. win %</th>
+      </tr></thead><tbody>
+      ${standings.map(s => `<tr>
+        <th scope="row" class="num">${s.pos}</th><td>${s.name}</td>
+        <td class="rec">${s.record}</td><td>${s.deck}</td><td class="rec">${s.pct}%</td></tr>`).join('')}
+      </tbody></table></div>`;
+  } else {
+    body.innerHTML = `<div class="feature">
+      <div class="feature__side"><h3>R. Okonkwo</h3><p>Maliss · 11–0–0</p></div>
+      <div class="feature__vs" aria-hidden="true">VS</div>
+      <div class="feature__side"><h3>P. Nakamura</h3><p>Ryzeal · 10–1–0</p></div>
+    </div>
+    <p style="color:var(--text-2);font-size:.94rem;border-top:1px solid var(--line-soft);padding-top:1rem">
+      Both Duelists are locked for the top cut, so this one decides seeding. Written coverage of each turn
+      follows below as the match plays out.
+    </p>`;
+  }
+}
+
+document.querySelectorAll('[data-view]').forEach(b =>
+  b.addEventListener('click', () => {
+    activeView = b.dataset.view;
+    document.querySelectorAll('[data-view]').forEach(x =>
+      x.setAttribute('aria-pressed', String(x.dataset.view === activeView)));
+    renderRound();
+    say(`Showing ${b.textContent.toLowerCase()}`);
+  }));
+
+/* ============================================================
+   6. COVERAGE LIST — grouped by event, filtered, searchable
+   ============================================================ */
+const list = document.getElementById('events');
+const countEl = document.getElementById('count');
+let filter = 'all', query = '', open = new Set(['Remote Duel YCS January 2026']);
+
+function renderEvents(){
+  const groups = EVENTS.map(ev => {
+    const posts = ev.posts.filter(p =>
+      (filter === 'all' || p.kind === filter) &&
+      (!query || (p.title + ' ' + ev.event).toLowerCase().includes(query)));
+    return {...ev, posts};
+  }).filter(ev => ev.posts.length);
+
+  countEl.textContent = groups.length
+    ? `${groups.length} event${groups.length > 1 ? 's' : ''} · ${groups.reduce((n,g) => n + g.posts.length, 0)} updates`
+    : 'No matches';
+
+  if (!groups.length){
+    list.innerHTML = `<div class="empty"><h3>Nothing matches that</h3>
+      <p>Try a Duelist name, an event, or clear the filter to see everything.</p></div>`;
+    return;
+  }
+
+  list.innerHTML = groups.map((ev, i) => {
+    const isOpen = open.has(ev.event) || !!query;
+    return `<article class="event">
+      <h3>
+        <button type="button" class="event__bar" aria-expanded="${isOpen}"
+                aria-controls="ev-${i}" data-ev="${ev.event.replace(/"/g,'&quot;')}">
+          <span class="event__date">${ev.date}</span>
+          <span class="event__title">${ev.event}${ev.live ? ' <span class="livetag" style="font-size:.6rem;padding:.2rem .45rem"><i aria-hidden="true"></i>Live</span>' : ''}</span>
+          <span class="event__n">${ev.posts.length}</span>
+          <svg class="event__caret" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h3>
+      <div class="event__body" id="ev-${i}" ${isOpen ? '' : 'hidden'}>
+        ${ev.posts.map(p => `<a class="post" href="#" style="--k:${KINDS[p.kind].color}">
+          <span class="post__k">${KINDS[p.kind].label}</span>
+          <span class="post__t">${p.title}</span>
+          <span class="post__time">${p.time}</span>
+        </a>`).join('')}
+      </div>
+    </article>`;
+  }).join('');
+
+  list.querySelectorAll('.event__bar').forEach(btn =>
+    btn.addEventListener('click', () => {
+      const name = btn.dataset.ev;
+      open.has(name) ? open.delete(name) : open.add(name);
+      renderEvents();
+      list.querySelector(`[data-ev="${CSS.escape(name)}"]`)?.focus();
+    }));
+}
+
+document.querySelectorAll('[data-filter]').forEach(b =>
+  b.addEventListener('click', () => {
+    filter = b.dataset.filter;
+    document.querySelectorAll('[data-filter]').forEach(x =>
+      x.setAttribute('aria-pressed', String(x.dataset.filter === filter)));
+    renderEvents();
+    say(countEl.textContent);
+  }));
+
+const qEl = document.getElementById('q');
+let timer;
+qEl.addEventListener('input', () => {
+  clearTimeout(timer);
+  timer = setTimeout(() => { query = qEl.value.trim().toLowerCase(); renderEvents(); say(countEl.textContent); }, 250);
+});
+
+/* "/" jumps to search, Escape clears it */
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault(); qEl.focus();
+  }
+  if (e.key === 'Escape' && document.activeElement === qEl){
+    qEl.value = ''; query = ''; renderEvents();
+  }
+});
+
+/* ============================================================
+   7. POLITE ANNOUNCEMENTS
+   ============================================================ */
+const live = document.getElementById('announce');
+function say(msg){ live.textContent = ''; setTimeout(() => { live.textContent = msg; }, 60); }
+
+/* boot */
+applyTheme();
+renderTrack();
+renderRound();
+renderEvents();
+</script>
+</body>
+</html>
