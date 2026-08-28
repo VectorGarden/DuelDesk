@@ -636,6 +636,52 @@ test('a single-format event filters nothing away', async (t) => {
   assert.equal(page.$$('#events .post__t').length, 3, 'all three posts remain');
 });
 
+/* Deck types are published for the cut and never for Swiss, so the columns have
+   to come and go with the data rather than sit empty on every Swiss round. */
+function withPairings(roundId, pairings) {
+  return withRounds((d) => {
+    const r = d.formats[0].rounds.find((x) => x.id === roundId) || d.formats[0].rounds[0];
+    r.pairings = pairings;
+  });
+}
+
+test('a cut pairing shows the deck each Duelist brought', async (t) => {
+  const page = await loadPage(withPairings('T8', [{
+    table: 1, a: 'Ada', aDeck: 'Mitsurugi', aRec: {wins: 12, losses: 1, draws: 0, confidence: 'derived'},
+    b: 'Bo', bDeck: 'Elfnote', bRec: {wins: 11, losses: 2, draws: 0, confidence: 'derived'},
+  }]));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.pairings.some(p => p.aDeck)).id); activeView='pairings'; renderRound();`);
+  const head = page.$$('#round-body thead th').map((n) => n.textContent);
+  assert.deepEqual(head, ['Match', 'Duelist', 'Deck', 'Record', 'Duelist', 'Deck', 'Record']);
+  const text = page.text('#round-body tbody tr');
+  assert.match(text, /Mitsurugi/);
+  assert.match(text, /Elfnote/);
+});
+
+test('a Swiss round with no decks grows no deck columns', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.phase !== 'Top cut' && r.pairings.length).id); activeView='pairings'; renderRound();`);
+  const head = page.$$('#round-body thead th').map((n) => n.textContent);
+  assert.ok(!head.includes('Deck'), `empty columns on every Swiss round: ${head}`);
+});
+
+test('a cut round renders the standings it points at', async (t) => {
+  // The data carries no copy, so if the page did not follow standingsAfter the
+  // Standings tab of every bracket round would be empty.
+  const page = await loadPage(withRounds((d) => {
+    const f = d.formats[0];
+    for (const r of f.rounds) if (r.phase === 'Top cut') r.standings = [];
+  }));
+  t.after(() => page.close());
+  const cut = page.json(`ROUNDS.filter(r => r.phase === 'Top cut').map(r => r.id)`);
+  assert.ok(cut.length, 'no cut rounds in the fixture');
+  page.run(`selectRound('${cut[0]}'); activeView='standings'; renderRound();`);
+  assert.ok(page.$$('#round-body tbody tr').length > 0,
+    'the reference was not followed');
+});
+
 test('the page asks not to be indexed', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
