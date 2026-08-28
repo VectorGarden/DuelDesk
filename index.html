@@ -710,6 +710,7 @@ function groupFeed(xmlText){                                   // eslint-disable
    and R12 were identical and the round track was decorative. */
 let ROUNDS = [];
 let eventInfo = null;
+let roundsVersion = null;      // change detection: see versionOf()
 let roundsState = 'loading';   // loading | ready | error
 let roundsError = '';
 
@@ -718,23 +719,38 @@ const roundOf = id => ROUNDS.find(r => r.id === id);
 async function loadRounds(){
   const res = await fetch('rounds.json', {cache:'no-cache'});
   if (!res.ok) throw new Error(`rounds responded ${res.status}`);
-  const data = await res.json();
+
+  const text = await res.text();
+  const version = versionOf(res, text);
+  if (roundsVersion !== null && version === roundsVersion) return {unchanged:true};
+
+  const data = JSON.parse(text);
   if (!Array.isArray(data.rounds) || !data.rounds.length) throw new Error('rounds.json has no rounds');
-  return data;
+  roundsVersion = version;   // only after it parses, so a bad file is retried
+  return {unchanged:false, data};
 }
 
-async function refreshRounds(){
+async function refreshRounds({poll = false} = {}){
   try {
-    const data = await loadRounds();
-    ROUNDS = data.rounds;
-    eventInfo = data;
+    const result = await loadRounds();
+    if (result.unchanged){
+      roundsState = 'ready';
+      roundsError = '';
+      return {changed: false};
+    }
+    ROUNDS = result.data.rounds;
+    eventInfo = result.data;
     roundsState = 'ready';
     roundsError = '';
-    /* Land on whatever the data says is in progress rather than assuming R12. */
-    const current = ROUNDS.find(r => r.state === 'live')
-                 ?? [...ROUNDS].reverse().find(r => r.state === 'done')
-                 ?? ROUNDS[0];
-    activeRound = current.id;
+    /* Land on whatever the data says is in progress rather than assuming R12 --
+       but only when we have nowhere to be. A poll must not yank a reader who is
+       looking at round 5 back to the live round. */
+    if (!activeRound || !ROUNDS.some(r => r.id === activeRound)){
+      const current = ROUNDS.find(r => r.state === 'live')
+                   ?? [...ROUNDS].reverse().find(r => r.state === 'done')
+                   ?? ROUNDS[0];
+      activeRound = current.id;
+    }
   } catch (err) {
     roundsState = 'error';
     roundsError = err.message;
@@ -772,7 +788,7 @@ function renderEventMeta(){
    carries no round detail. */
 let EVENTS = [];              // filled by refreshCoverage()
 let feedUpdated = null;       // <lastBuildDate>, drives the hero stamp
-let feedEtag = null;          // kept for conditional polling later
+let feedVersion = null;       // change detection: see versionOf()
 let coverageState = 'loading';// loading | ready | empty | stale | error
 let coverageError = '';
 
@@ -803,23 +819,69 @@ function toDisplayEvents(groups, built){
   }));
 }
 
+/* Detecting "nothing changed" cannot use res.status. The browser revalidates
+   on our behalf, and when the server answers 304 it hands the *cached body*
+   back to script as a 200 -- a revalidation 304 is never visible here.
+
+   Which header is available varies by server: GitHub Pages sends ETag,
+   `python -m http.server` sends only Last-Modified, and some send neither. So
+   fall back rather than silently re-rendering on every poll, which would drop
+   focus and reset scroll once a minute. The last resort compares the body. */
+function versionOf(res, body){
+  return res.headers.get('ETag')
+      ?? res.headers.get('Last-Modified')
+      ?? body;
+}
+
 async function loadCoverage(){
   /* no-cache forces revalidation, it does not bypass the cache. GitHub Pages
      serves this with max-age=600, so a plain fetch would read a stale copy
      from disk and any future poll would silently do nothing. */
   const res = await fetch('feed.xml', {cache:'no-cache'});
   if (!res.ok) throw new Error(`feed responded ${res.status}`);
-  feedEtag = res.headers.get('ETag');
+
   const xml = await res.text();
-  return {groups: groupFeed(xml), built: feedUpdatedFrom(xml)};
+  const version = versionOf(res, xml);
+  if (feedVersion !== null && version === feedVersion) return {unchanged:true};
+  feedVersion = version;
+
+  return {unchanged:false, groups: groupFeed(xml), built: feedUpdatedFrom(xml)};
 }
 
-async function refreshCoverage(){
+/* Rebuilding the list drops focus, so put it back on the same event. Keyed by
+   name rather than position: a refresh can reorder or insert events. */
+function renderEventsKeepingFocus(){
+  const key = document.activeElement?.closest?.('.event__bar')?.dataset.ev ?? null;
+  renderEvents();
+  if (key == null) return;
+  /* Matched by comparing dataset values rather than building an attribute
+     selector. Event names contain spaces, commas and ampersands, and
+     CSS.escape is defined for identifiers, not for quoted attribute values. */
+  for (const bar of list.querySelectorAll('.event__bar')){
+    if (bar.dataset.ev === key){ bar.focus(); return; }
+  }
+}
+
+async function refreshCoverage({poll = false} = {}){
   if (!EVENTS.length){ coverageState = 'loading'; renderEvents(); }
+  const wasStale = coverageState === 'stale';
+  const postsBefore = EVENTS.reduce((n, e) => n + e.posts.length, 0);
   try {
-    const {groups, built} = await loadCoverage();
-    EVENTS = toDisplayEvents(groups, built);
-    feedUpdated = built;
+    const result = await loadCoverage();
+
+    if (result.unchanged){
+      /* Nothing to repaint. This is the common case once polling starts, and
+         skipping the render is what stops a poll stealing focus or resetting
+         scroll inside an expanded event every minute. */
+      coverageState = 'ready';
+      coverageError = '';
+      if (wasStale) renderEvents();      // only to drop the stale notice
+      renderStamp();
+      return {changed: false};
+    }
+
+    EVENTS = toDisplayEvents(result.groups, result.built);
+    feedUpdated = result.built;
     coverageState = EVENTS.length ? 'ready' : 'empty';
     coverageError = '';
     /* Open the newest event on first load instead of hardcoding its name. */
@@ -828,10 +890,19 @@ async function refreshCoverage(){
     /* A failed reload must never blank data the reader already has. */
     coverageState = EVENTS.length ? 'stale' : 'error';
     coverageError = err.message;
+    renderEvents();
+    renderStamp();
+    renderLiveTag();
+    return {changed: false, failed: true};
   }
-  renderEvents();
+
+  renderEventsKeepingFocus();
   renderStamp();
   renderLiveTag();
+
+  const added = EVENTS.reduce((n, e) => n + e.posts.length, 0) - postsBefore;
+  if (poll && added > 0) say(`Coverage updated, ${added} new ${added === 1 ? 'post' : 'posts'}`);
+  return {changed: true};
 }
 
 /* The hero badge used to be unconditional markup. It now reflects the data:
@@ -1215,17 +1286,84 @@ function renderStamp(){
   /* <time> wraps only the timestamp. Wrapping the whole sentence would leave a
      <time> whose text is not a valid time, which is a validation error. */
   stampEl.innerHTML = `Updated <time datetime="${esc(feedUpdated.toISOString())}">`
-    + `${esc(relativeTime(feedUpdated))}</time> · refresh to check for new coverage`;
+    + `${esc(relativeTime(feedUpdated))}</time> · refreshes automatically`;
 }
 setInterval(renderStamp, 60000);
+
+/* ============================================================
+   10. POLLING
+   ------------------------------------------------------------
+   A recursive timeout rather than setInterval, so a slow response
+   can never let a second request overlap the first, plus an
+   in-flight guard because visibility changes and the retry button
+   can both fire mid-poll.
+
+   Nothing repaints unless an ETag actually changed -- see
+   loadCoverage() for why the status code cannot tell us that.
+   ============================================================ */
+const POLL_LIVE_MS = 60000;    // something is in progress
+const POLL_IDLE_MS = 300000;   // nothing live: still check, far less often
+const POLL_MAX_MS  = 600000;   // failure backoff ceiling
+
+let pollTimer = null;
+let pollDelay = POLL_LIVE_MS;
+let pollInFlight = false;
+
+const somethingLive = () =>
+  EVENTS.some(e => e.live) || ROUNDS.some(r => r.state === 'live');
+
+async function pollOnce(){
+  if (pollInFlight || document.hidden) return {skipped: true};
+  pollInFlight = true;
+  try {
+    /* Settled, not all: one resource failing must not cancel the other. */
+    const [cov, rnd] = await Promise.allSettled([
+      refreshCoverage({poll: true}),
+      refreshRounds({poll: true}),
+    ]);
+    const failed = [cov, rnd].some(r =>
+      r.status === 'rejected' || r.value?.failed || roundsState === 'error');
+    return {failed, changed: !!(cov.value?.changed || rnd.value?.changed)};
+  } finally {
+    pollInFlight = false;
+  }
+}
+
+function schedulePoll(failed){
+  clearTimeout(pollTimer);
+  if (document.hidden){ pollTimer = null; return; }
+  pollDelay = failed
+    ? Math.min(Math.max(pollDelay, POLL_LIVE_MS) * 2, POLL_MAX_MS)   // back off
+    : (somethingLive() ? POLL_LIVE_MS : POLL_IDLE_MS);               // reset
+  pollTimer = setTimeout(runPoll, pollDelay);
+}
+
+async function runPoll(){
+  const result = await pollOnce();
+  schedulePoll(!!result.failed);
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden){
+    clearTimeout(pollTimer);
+    pollTimer = null;
+    return;
+  }
+  /* Back in view: a tab left open overnight should not sit on yesterday's
+     data for another minute. Check now, and reset any accumulated backoff. */
+  pollDelay = POLL_LIVE_MS;
+  runPoll();
+});
 
 /* boot */
 applyTheme();
 renderEventMeta();
 renderRound();      // paints the loading state before either fetch lands
 renderStamp();
-refreshRounds();    // independent of the feed: one failing must not block the other
-refreshCoverage();
+Promise.allSettled([
+  refreshRounds(),  // independent of the feed: one failing must not block the other
+  refreshCoverage(),
+]).then(() => schedulePoll(false));
 </script>
 </body>
 </html>

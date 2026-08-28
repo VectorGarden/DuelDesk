@@ -25,6 +25,9 @@ file, no build step. Open it in a browser and it works.
 - **Search** — filters the coverage feed *and* the pairings and standings tables.
 - **Keyboard shortcuts** — `/` jumps to search, `Escape` clears it. Modifier combos
   (`Cmd+/`, `Ctrl+/`) are left to the browser.
+- **Live updates** — the page polls its own feed and round data, repainting only when
+  something actually changed. Polling pauses while the tab is hidden, backs off exponentially
+  on failure, and slows to a five-minute interval when no event is in progress.
 - **Theming** — light, dark, and system, driven by CSS custom properties, persisted to
   `localStorage`, and resolved before first paint so the page never flashes the wrong theme.
 - **Accessibility** — targets WCAG 2.2 AA: a properly wired `tabpanel`, visible focus rings that
@@ -55,7 +58,8 @@ Requires Node 20+ (`node:test` and jsdom). The **site itself stays dependency-fr
 Covered: escaping and URL-scheme guards, feed parsing and classification, every data state
 (loading, ready, empty, stale, error) for both loaders, per-round rendering and record coherence,
 accessibility invariants (tabpanel wiring, roving tabindex, no dangling ARIA references,
-non-interactive post rows), theme persistence, and search and filtering.
+non-interactive post rows), theme persistence, search and filtering, and polling — change
+detection, focus and scroll preservation, visibility pausing, backoff, and announcements.
 
 The suite is mutation-tested: ten deliberate regressions — unescaped output, an unrestricted
 `safeUrl`, a stale reload blanking the page, `renderRound` ignoring the active round, a detached

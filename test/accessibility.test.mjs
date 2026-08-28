@@ -82,11 +82,17 @@ test('scrollable tables are reachable by keyboard', async (t) => {
   assert.ok(wrap.getAttribute('aria-label'), 'and is named');
 });
 
-test('the page makes no claim to refresh on its own', async (t) => {
+test('the refresh claim is backed by an actual poll loop', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
   const copy = page.text('body');
-  assert.doesNotMatch(copy, /refreshes automatically/i);
+
+  // This claim is only allowed because B2 made it true.
+  assert.match(copy, /refreshes automatically/i);
+  assert.equal(typeof page.get('pollOnce'), 'function', 'and there is a poll to back it');
+  assert.ok(page.get('pollTimer') !== null, 'scheduled after boot');
+
+  // These two were never made true and must stay gone.
   assert.doesNotMatch(copy, /updates on its own/i);
   assert.doesNotMatch(copy, /the moment it is posted/i);
 });

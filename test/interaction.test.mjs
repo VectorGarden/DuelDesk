@@ -87,5 +87,5 @@ test('the stamp reports the feed time, machine-readable', async (t) => {
   assert.ok(time, 'a <time> element is rendered');
   assert.ok(!Number.isNaN(Date.parse(time.getAttribute('datetime'))), 'with a parseable datetime');
   assert.equal(time.getAttribute('datetime'), page.run('feedUpdated.toISOString()'));
-  assert.match(page.text('#stamp'), /^Updated .+ · refresh to check for new coverage$/);
+  assert.match(page.text('#stamp'), /^Updated .+ · refreshes automatically$/);
 });
