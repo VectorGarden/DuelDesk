@@ -403,6 +403,19 @@ test('the rail does not scroll-snap', async (t) => {
     'chip to the padded start edge, pushing the selected one into the far fade');
 });
 
+test('the format selector leads the track header', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const head = page.$('.track__head');
+  const kids = [...head.children].map(e => e.id || e.className);
+
+  assert.deepEqual(kids, ['formats', 'track-h', 'track__hint'],
+    'first in the row, so it lines up with the rail edge below it');
+  assert.equal(page.$('#formats').parentElement, head,
+    'and in the header row, not on one of its own, which cost a band of ' +
+    'empty space for one small control');
+});
+
 test('the hero meta follows the selected format', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
@@ -433,7 +446,13 @@ test('with one format the meta names it, since no selector does', async (t) => {
   });
   t.after(() => page.close());
 
-  assert.equal(page.$('#formats').hidden, true, 'no selector for a single format');
+  const el = page.$('#formats');
+  assert.equal(el.hidden, true, 'no selector for a single format');
+  /* The hidden attribute alone does not hide it: .formats sets display:flex,
+     and an author rule beats the UA sheet's [hidden]{display:none}. Without a
+     matching author rule the empty bordered box stays on the page. */
+  assert.equal(page.window.getComputedStyle(el).display, 'none',
+    'and it is actually not displayed, not merely marked hidden');
   assert.match(page.text('#hero-meta'), /Format/,
     'so the meta is the only thing that can state it');
   assert.match(page.text('#hero-meta'),
