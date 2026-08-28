@@ -298,7 +298,7 @@ class TestRecords(unittest.TestCase):
         self.assertEqual(got.confidence, "partial")
         self.assertEqual(got.wins, 3 // 3)
         self.assertIsNone(got.losses)
-        self.assertEqual(got.label(), "1 wins (3 pts)")
+        self.assertEqual(got.label(), "1–?", "wins known, losses not")
 
     def test_a_bye_does_not_produce_negative_losses(self):
         from records import derive
@@ -315,7 +315,7 @@ class TestRecords(unittest.TestCase):
         got = derive([{"name": "Ada", "points": 3}], rounds, event_date="2019-05-01")[0]
         self.assertEqual(got.confidence, "unknown")
         self.assertIsNone(got.wins)
-        self.assertEqual(got.label(), "3 pts")
+        self.assertEqual(got.label(True), "?–?–?", "a draws-era record with nothing known")
 
     def test_consecutive_standings_resolve_draws_exactly(self):
         from records import derive
@@ -329,7 +329,9 @@ class TestRecords(unittest.TestCase):
                      standings_series=series)[0]
         self.assertEqual(got.confidence, "derived")
         self.assertEqual((got.wins, got.draws, got.losses), (1, 1, 1))
-        self.assertEqual(got.label(), "1–1–1")
+        self.assertEqual(got.label(True), "1–1–1")
+        self.assertEqual(got.to_record(),
+                         {"wins": 1, "losses": 1, "draws": 1, "confidence": "derived"})
 
     def test_the_real_event_reconciles(self):
         import glob, re

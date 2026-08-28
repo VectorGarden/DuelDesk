@@ -14,8 +14,8 @@ test('every round renders its own data', async (t) => {
   assert.notEqual(r1, r12, 'R1 and R12 must not be identical');
   assert.notEqual(r5, r1);
   assert.notEqual(r5, r12);
-  assert.match(r1, /0–0–0/, 'round 1 pairs players on 0–0–0 entering records');
-  assert.doesNotMatch(r1, /9–2–0|10–1–0/, 'nobody has nine wins in round one');
+  assert.match(r1, /0–0/, 'round 1 pairs players on 0–0 entering records');
+  assert.doesNotMatch(r1, /9–2|10–1/, 'nobody has nine wins in round one');
 });
 
 test('standings records match the number of rounds actually played', async (t) => {
@@ -26,11 +26,11 @@ test('standings records match the number of rounds actually played', async (t) =
   for (const id of ['3', '7', '11']) {
     page.run(`selectRound('${id}')`);
     const after = page.run(`roundOf('${id}').standingsAfter`);
-    const recs = page.$$('#round-body .rec').map((n) => n.textContent).filter((s) => s.includes('–'));
+    const recs = page.json(`roundOf('${id}').standings.map(s => s.record)`);
     assert.ok(recs.length > 0, `round ${id} shows standings`);
     for (const rec of recs) {
-      const [w, l] = rec.split('–').map(Number);
-      assert.equal(w + l, after, `round ${id}: ${rec} should total ${after} matches`);
+      assert.equal(rec.wins + rec.losses + (rec.draws ?? 0), after,
+        `round ${id}: ${JSON.stringify(rec)} should total ${after} matches`);
     }
     assert.match(page.text('#round-body caption'), new RegExp(`after round ${after}`));
   }
@@ -159,9 +159,8 @@ test('cut results count toward a Duelist\'s record', async (t) => {
   cut.forEach((r, depth) => {
     for (const p of r.pairings) {
       for (const rec of [p.aRec, p.bRec]) {
-        const [w, l] = rec.split('–').map(Number);
-        assert.equal(w + l, swiss + depth,
-          `${r.label}: ${rec} should total ${swiss + depth} matches`);
+        assert.equal(rec.wins + rec.losses + (rec.draws ?? 0), swiss + depth,
+          `${r.label}: ${JSON.stringify(rec)} should total ${swiss + depth} matches`);
       }
     }
   });
@@ -175,16 +174,17 @@ test('winning a cut match adds a win, losing adds a loss', async (t) => {
 
   const entering = new Map();
   for (const p of t8.pairings) {
-    entering.set(p.a, p.aRec.split('–').map(Number));
-    entering.set(p.b, p.bRec.split('–').map(Number));
+    entering.set(p.a, p.aRec);
+    entering.set(p.b, p.bRec);
   }
 
   for (const p of t4.pairings) {
     for (const [name, rec] of [[p.a, p.aRec], [p.b, p.bRec]]) {
-      const [w, l] = rec.split('–').map(Number);
-      const [w0, l0] = entering.get(name);
-      assert.equal(w, w0 + 1, `${name} advanced, so their wins should go ${w0} -> ${w0 + 1}`);
-      assert.equal(l, l0, `${name} advanced, so their losses should stay at ${l0}`);
+      const before = entering.get(name);
+      assert.equal(rec.wins, before.wins + 1,
+        `${name} advanced, so their wins should go ${before.wins} -> ${before.wins + 1}`);
+      assert.equal(rec.losses, before.losses,
+        `${name} advanced, so their losses should stay at ${before.losses}`);
     }
   }
 });
@@ -201,8 +201,8 @@ test('the standings table keeps the final Swiss placings during the cut', async 
     assert.deepEqual(shown, afterSwiss,
       `${id}: standings must stay the final Swiss ones, not absorb cut results`);
     for (const s of shown) {
-      const [w, l] = s.record.split('–').map(Number);
-      assert.equal(w + l, swiss, `${id}: ${s.record} should still total ${swiss}`);
+      assert.equal(s.record.wins + s.record.losses + (s.record.draws ?? 0), swiss,
+        `${id}: ${JSON.stringify(s.record)} should still total ${swiss}`);
     }
   }
 });
@@ -422,4 +422,81 @@ test('switching format lands on that tournament\'s current round, not the same n
     'a format switch is a tournament switch: land on what is current');
   const landed = page.run(`roundOf(activeRound)`);
   assert.equal(landed.state, 'live', 'which is the live round');
+});
+
+test('a fully known record reads W–L', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const f = (r, o) => page.run(`formatRecord(${JSON.stringify(r)}, ${JSON.stringify(o ?? {})})`);
+  assert.equal(f({ wins: 12, losses: 1, draws: 0, confidence: 'derived' }), '12–1');
+  assert.equal(f({ wins: 0, losses: 3, draws: 0, confidence: 'derived' }), '0–3');
+});
+
+test('an unknown half shows ?, which is a different claim from a blank', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const f = (r, o) => page.run(`formatRecord(${JSON.stringify(r)}, ${JSON.stringify(o ?? {})})`);
+  // Wins are exact from points; losses need the rounds actually played.
+  assert.equal(f({ wins: 11, losses: null, draws: 0, confidence: 'partial' }), '11–?');
+  // Before ties were abolished, points alone determine neither.
+  assert.equal(f({ wins: null, losses: null, draws: null, confidence: 'unknown' }), '?–?');
+  assert.equal(f(null), '?–?', 'no record at all is still record-shaped');
+  // The two uncertain states must stay distinguishable.
+  assert.notEqual(f({ wins: 11, losses: null, draws: 0, confidence: 'partial' }),
+                  f({ wins: null, losses: null, draws: null, confidence: 'unknown' }));
+});
+
+test('records follow the era: W–L–T before ties were abolished', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const f = (r, o) => page.run(`formatRecord(${JSON.stringify(r)}, ${JSON.stringify(o ?? {})})`);
+  const old = { drawsPossible: true };
+  assert.equal(f({ wins: 10, losses: 2, draws: 1, confidence: 'derived' }, old), '10–2–1');
+  assert.equal(f({ wins: 10, losses: 2, draws: 0, confidence: 'derived' }, old), '10–2–0',
+    'a draws-era event keeps three parts even at zero draws');
+  assert.equal(f(null, old), '?–?–?', 'and an unknown one has three unknowns');
+  // A modern event never grows a third part.
+  assert.equal(f({ wins: 12, losses: 1, draws: 0, confidence: 'derived' }), '12–1');
+  // But a stray draw is never hidden, whatever the flag says.
+  assert.equal(f({ wins: 10, losses: 2, draws: 1, confidence: 'derived' }), '10–2–1');
+});
+
+test('the standings table shows points alongside the record', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  page.run(`selectRound('7')`);
+  page.$('[data-view="standings"]').click();
+  assert.match(page.text('#round-body thead'), /Pts/, 'points are shown, being what the source publishes');
+  const first = page.$$('#round-body tbody tr')[0];
+  const cells = [...first.children].map((c) => c.textContent.trim());
+  assert.match(cells[2], /^\d+–\d+$/, 'a derived record');
+  assert.match(cells[3], /^\d+$/, 'and its points');
+});
+
+test('a less certain record is visibly muted', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  // Nothing in the sample data is uncertain, so make one so.
+  page.run(`roundOf('7').standings[0].record = {wins: 4, losses: null, draws: 0, confidence: 'partial'}`);
+  page.run(`selectRound('7')`);
+  page.$('[data-view="standings"]').click();
+  const cell = page.$('#round-body tbody .rec');
+  assert.equal(cell.textContent.trim(), '4–?');
+  assert.ok(cell.classList.contains('rec--partial'),
+    'so a page of them does not read as confident data');
+});
+
+test('sample data is fully derived, so no ? appears today', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  for (const f of page.json('eventInfo.formats')) {
+    for (const r of f.rounds) {
+      for (const s of r.standings ?? []) {
+        assert.equal(s.record.confidence, 'derived', `${f.format} ${r.label} ${s.name}`);
+      }
+    }
+  }
+  page.run(`selectRound('7')`);
+  page.$('[data-view="standings"]').click();
+  assert.doesNotMatch(page.text('#round-body'), /\?/, 'invented data should never be uncertain');
 });

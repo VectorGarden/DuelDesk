@@ -94,15 +94,23 @@ class Record:
     rounds_played: int | None
     confidence: str          # derived | partial | unknown
 
-    def label(self) -> str:
-        """What the page should show, never implying more than is known."""
-        if self.confidence == "derived":
-            if self.draws:
-                return f"{self.wins}–{self.losses}–{self.draws}"
-            return f"{self.wins}–{self.losses}"
-        if self.confidence == "partial" and self.wins is not None:
-            return f"{self.wins} wins ({self.points} pts)"
-        return f"{self.points} pts" if self.points is not None else "—"
+    def label(self, draws_possible: bool = False) -> str:
+        """Record-shaped always, with ? for what is not known.
+
+        Matches how the page renders it, so the scraper and the site describe
+        the same record the same way. "10-?" and "?-?" are different claims:
+        one knows the wins, the other knows neither.
+        """
+        part = lambda v: "?" if v is None else str(v)
+        core = [part(self.wins), part(self.losses)]
+        if draws_possible or self.draws:
+            core.append(part(self.draws))
+        return "–".join(core)
+
+    def to_record(self) -> dict:
+        """The shape rounds.json stores, so the page can format it."""
+        return {"wins": self.wins, "losses": self.losses,
+                "draws": self.draws, "confidence": self.confidence}
 
 
 def derive(standings: list[dict], pairing_rounds: list[list[dict]],

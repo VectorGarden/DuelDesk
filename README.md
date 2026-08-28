@@ -15,6 +15,10 @@ file, no build step. Open it in a browser and it works.
 
 ### Features
 
+- **Honest records** — a record is stored as parts, not a formatted string, because how much is
+  known varies. Wins are exact from match points; losses need the rounds a Duelist actually played.
+  What is unknown renders as `?`, so `5–?` and `?–?` stay distinguishable, and both are muted.
+  Ties were abolished on 2025-09-02, so events before that read `W–L–T` and later ones `W–L`.
 - **Format selector** — an event runs a parallel tournament per format, each with its own field,
   round count and bracket. Switching one replaces the round set entirely and lands on whatever is
   live in that tournament. Hidden when an event has only one format, because then it is not a choice.

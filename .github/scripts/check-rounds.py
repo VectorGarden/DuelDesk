@@ -14,6 +14,30 @@ import sys
 from pathlib import Path
 
 
+def matches_played(record):
+    """Matches a record accounts for, or None when it is not fully known.
+
+    Records are stored as parts rather than a formatted string, because a
+    scraped one may know wins without losses.
+    """
+    if not isinstance(record, dict):
+        return None
+    w, l, d = record.get("wins"), record.get("losses"), record.get("draws") or 0
+    if w is None or l is None:
+        return None
+    return w + l + d
+
+
+def fmt_record(record):
+    if not isinstance(record, dict):
+        return repr(record)
+    part = lambda v: "?" if v is None else str(v)
+    core = [part(record.get("wins")), part(record.get("losses"))]
+    if record.get("draws"):
+        core.append(part(record.get("draws")))
+    return "–".join(core)
+
+
 def check_rounds(label, rounds, swiss_count):
     """Every check that applies within one format's tournament."""
     problems = []
@@ -57,15 +81,14 @@ def check_rounds(label, rounds, swiss_count):
         after = r.get("standingsAfter")
         if isinstance(after, int):
             for st in r.get("standings") or []:
-                parts = str(st.get("record", "")).replace("–", "-").split("-")
-                try:
-                    played = int(parts[0]) + int(parts[1])
-                except (ValueError, IndexError):
-                    problems.append(f"{rl}: unparseable record {st.get('record')!r}")
+                played = matches_played(st.get("record"))
+                if played is None:
+                    problems.append(f"{rl}: unusable record {st.get('record')!r}")
                     continue
                 if played != after:
                     problems.append(
-                        f"{rl}: {st.get('name')} has {st.get('record')} but {after} rounds were played")
+                        f"{rl}: {st.get('name')} has {fmt_record(st.get('record'))} "
+                        f"but {after} rounds were played")
 
     swiss = [r for r in rounds if r.get("phase") == "Swiss"]
     cut = [r for r in rounds if r.get("phase") == "Top cut"]
@@ -88,15 +111,14 @@ def check_rounds(label, rounds, swiss_count):
         for depth, r in enumerate(played_cut):
             for p in r.get("pairings") or []:
                 for who, rec in (("a", p.get("aRec")), ("b", p.get("bRec"))):
-                    parts = str(rec).replace("–", "-").split("-")
-                    try:
-                        played = int(parts[0]) + int(parts[1])
-                    except (ValueError, IndexError):
-                        problems.append(f"{label} {r['label']}: unparseable record {rec!r}")
+                    played = matches_played(rec)
+                    if played is None:
+                        problems.append(f"{label} {r['label']}: unusable record {rec!r}")
                         continue
                     if played != swiss_count + depth:
-                        problems.append(f"{label} {r['label']}: {p.get(who)} shows {rec} "
-                                        f"({played} matches), expected {swiss_count + depth}")
+                        problems.append(f"{label} {r['label']}: {p.get(who)} shows "
+                                        f"{fmt_record(rec)} ({played} matches), "
+                                        f"expected {swiss_count + depth}")
 
     for earlier, later in zip(played_cut, played_cut[1:]):
         before = {}
@@ -113,15 +135,15 @@ def check_rounds(label, rounds, swiss_count):
         for p in later.get("pairings") or []:
             for who, rec in ((p.get("a"), p.get("aRec")), (p.get("b"), p.get("bRec"))):
                 prev = before.get(who)
-                if prev is None:
+                if not isinstance(prev, dict) or not isinstance(rec, dict):
                     continue
-                try:
-                    w0, l0 = (int(x) for x in str(prev).replace("–", "-").split("-")[:2])
-                    w1, l1 = (int(x) for x in str(rec).replace("–", "-").split("-")[:2])
-                except (ValueError, IndexError):
+                w0, l0 = prev.get("wins"), prev.get("losses")
+                w1, l1 = rec.get("wins"), rec.get("losses")
+                if None in (w0, l0, w1, l1):
                     continue
                 if (w1, l1) != (w0 + 1, l0):
-                    problems.append(f"{label} {later['label']}: {who} went {prev} -> {rec}; "
+                    problems.append(f"{label} {later['label']}: {who} went "
+                                    f"{fmt_record(prev)} -> {fmt_record(rec)}; "
                                     "advancing should add exactly one win")
     return problems
 
