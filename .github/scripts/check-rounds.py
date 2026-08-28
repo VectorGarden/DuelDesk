@@ -110,6 +110,44 @@ def main(path="rounds.json"):
         if n == 0 or (n & (n - 1)) != 0:
             problems.append(f"{r['label']}: {n} matches is not a power of two")
 
+    # Cut results count, so entering records grow by one match per cut round
+    # already played. The Top 8 enters on the Swiss record; the Top 4 one later.
+    if isinstance(swiss_count, int):
+        for depth, r in enumerate(played_cut):
+            for p in r.get("pairings") or []:
+                for who, rec in (("a", p.get("aRec")), ("b", p.get("bRec"))):
+                    parts = str(rec).replace("–", "-").split("-")
+                    try:
+                        played = int(parts[0]) + int(parts[1])
+                    except (ValueError, IndexError):
+                        problems.append(f"{r['label']}: unparseable record {rec!r}")
+                        continue
+                    if played != swiss_count + depth:
+                        problems.append(
+                            f"{r['label']}: {p.get(who)} shows {rec} "
+                            f"({played} matches), expected {swiss_count + depth}")
+
+    # Advancing must add exactly one win and no losses.
+    for earlier, later in zip(played_cut, played_cut[1:]):
+        before = {}
+        for p in earlier.get("pairings") or []:
+            before[p.get("a")] = p.get("aRec")
+            before[p.get("b")] = p.get("bRec")
+        for p in later.get("pairings") or []:
+            for who, rec in ((p.get("a"), p.get("aRec")), (p.get("b"), p.get("bRec"))):
+                prev = before.get(who)
+                if prev is None:
+                    continue        # reported separately by the field check below
+                try:
+                    w0, l0 = (int(x) for x in str(prev).replace("–", "-").split("-")[:2])
+                    w1, l1 = (int(x) for x in str(rec).replace("–", "-").split("-")[:2])
+                except (ValueError, IndexError):
+                    continue
+                if (w1, l1) != (w0 + 1, l0):
+                    problems.append(
+                        f"{later['label']}: {who} went {prev} -> {rec}; advancing "
+                        f"should add exactly one win")
+
     # Each cut round's field must come from the previous round's competitors.
     for earlier, later in zip(played_cut, played_cut[1:]):
         before = {n for p in earlier["pairings"] for n in (p.get("a"), p.get("b"))}

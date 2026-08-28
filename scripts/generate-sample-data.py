@@ -76,17 +76,26 @@ def play(pairs, rng):
 
 
 def duel(a, b, rng):
-    """One elimination match. Returns (winner, loser).
+    """One elimination match. Returns (winner, loser), and updates both records.
 
-    Deliberately does not touch w/l: a top-cut result is not a Swiss result,
-    and the standings shown during the cut are the final Swiss standings.
+    A cut match is still a match: winning the Top 8 takes a Duelist from 9-3 to
+    10-3, and that is what the Top 4 pairing should show. The standings table is
+    unaffected because it is snapshotted before the cut begins -- Swiss
+    standings really are final after the last Swiss round.
     """
     edge = a["power"] / (a["power"] + b["power"])
-    return (a, b) if rng.random() < edge else (b, a)
+    winner, loser = (a, b) if rng.random() < edge else (b, a)
+    winner["w"] += 1
+    loser["l"] += 1
+    return winner, loser
 
 
 def bracket_rows(pairs):
-    """Cut pairings reuse the Swiss pairing shape, so the table renders as-is."""
+    """Cut pairings reuse the Swiss pairing shape, so the table renders as-is.
+
+    Called before the round is played, so these are entering records: a Top 4
+    row shows what each Duelist carried out of the Top 8.
+    """
     return [{
         "table": i + 1,
         "a": a["name"], "aRec": f"{a['w']}–{a['l']}–0",
@@ -181,6 +190,8 @@ def main():
             posts.append((stamp + timedelta(minutes=30), event, "The decks still in contention", "deck"))
 
     # --- Top cut. Swiss is over, so standings are final from here on. ---
+    # Snapshotted before any cut match is played: duel() updates records, and
+    # the standings table must keep showing the final *Swiss* placings.
     final_table = standings_table(players)
     seeds = [by_name[row["name"]] for row in final_table]      # seed 1..8
 

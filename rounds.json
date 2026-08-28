@@ -4,7 +4,7 @@
   "duelists": 1248,
   "swissRounds": 12,
   "coverageBy": "the Duel Desk team",
-  "updated": "2026-08-28T04:38:19.220691Z",
+  "updated": "2026-08-28T05:04:33.199288Z",
   "rounds": [
     {
       "id": "1",
@@ -12,7 +12,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "21:02",
+      "posted": "21:28",
       "standingsAfter": 1,
       "pairings": [
         {
@@ -150,7 +150,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "21:40",
+      "posted": "22:06",
       "standingsAfter": 2,
       "pairings": [
         {
@@ -288,7 +288,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "22:18",
+      "posted": "22:44",
       "standingsAfter": 3,
       "pairings": [
         {
@@ -426,7 +426,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "22:56",
+      "posted": "23:22",
       "standingsAfter": 4,
       "pairings": [
         {
@@ -564,7 +564,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "23:34",
+      "posted": "00:00",
       "standingsAfter": 5,
       "pairings": [
         {
@@ -702,7 +702,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "00:12",
+      "posted": "00:38",
       "standingsAfter": 6,
       "pairings": [
         {
@@ -840,7 +840,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "00:50",
+      "posted": "01:16",
       "standingsAfter": 7,
       "pairings": [
         {
@@ -978,7 +978,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "01:28",
+      "posted": "01:54",
       "standingsAfter": 8,
       "pairings": [
         {
@@ -1116,7 +1116,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "02:06",
+      "posted": "02:32",
       "standingsAfter": 9,
       "pairings": [
         {
@@ -1254,7 +1254,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "02:44",
+      "posted": "03:10",
       "standingsAfter": 10,
       "pairings": [
         {
@@ -1392,7 +1392,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "03:22",
+      "posted": "03:48",
       "standingsAfter": 11,
       "pairings": [
         {
@@ -1530,7 +1530,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "04:00",
+      "posted": "04:26",
       "standingsAfter": 12,
       "pairings": [
         {
@@ -1668,7 +1668,7 @@
       "phase": "Top cut",
       "state": "done",
       "tables": 4,
-      "posted": "04:38",
+      "posted": "05:04",
       "standingsAfter": 12,
       "pairings": [
         {
@@ -1778,22 +1778,22 @@
       "phase": "Top cut",
       "state": "live",
       "tables": 2,
-      "posted": "05:16",
+      "posted": "05:42",
       "standingsAfter": 12,
       "pairings": [
         {
           "table": 1,
           "a": "B. Abadi",
-          "aRec": "9–3–0",
+          "aRec": "10–3–0",
           "b": "E. Rasmussen",
-          "bRec": "9–3–0"
+          "bRec": "10–3–0"
         },
         {
           "table": 2,
           "a": "I. Sundqvist",
-          "aRec": "8–4–0",
+          "aRec": "9–4–0",
           "b": "E. Moreau",
-          "bRec": "9–3–0"
+          "bRec": "10–3–0"
         }
       ],
       "standings": [
@@ -1858,12 +1858,12 @@
         "a": {
           "name": "B. Abadi",
           "deck": "Maliss",
-          "record": "9–3–0"
+          "record": "10–3–0"
         },
         "b": {
           "name": "E. Rasmussen",
           "deck": "Voiceless Voice",
-          "record": "9–3–0"
+          "record": "10–3–0"
         },
         "note": "Two matches away from the title. Both are being covered turn by turn."
       }

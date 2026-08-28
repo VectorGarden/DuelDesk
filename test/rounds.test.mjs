@@ -147,18 +147,60 @@ test('the Top 4 is drawn from Top 8 competitors and is bracket-correct', async (
   assert.ok(t4.pairings.every((p) => p.a !== p.b));
 });
 
-test('cut records are Swiss records, not invented cut ones', async (t) => {
+test('cut results count toward a Duelist\'s record', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
   const swiss = page.get('eventInfo.swissRounds');
+  const cut = page.json(`ROUNDS.filter(r => r.phase === 'Top cut' && r.pairings.length)`);
 
-  for (const id of ['T8', 'T4']) {
-    for (const p of page.json(`roundOf('${id}').pairings`)) {
+  // Entering records grow by one match per cut round already played: the Top 8
+  // enters on the Swiss record, the Top 4 one match later.
+  cut.forEach((r, depth) => {
+    for (const p of r.pairings) {
       for (const rec of [p.aRec, p.bRec]) {
         const [w, l] = rec.split('–').map(Number);
-        assert.equal(w + l, swiss,
-          `${id}: ${rec} should be the ${swiss}-round Swiss record`);
+        assert.equal(w + l, swiss + depth,
+          `${r.label}: ${rec} should total ${swiss + depth} matches`);
       }
+    }
+  });
+});
+
+test('winning a cut match adds a win, losing adds a loss', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const t8 = page.json(`roundOf('T8')`);
+  const t4 = page.json(`roundOf('T4')`);
+
+  const entering = new Map();
+  for (const p of t8.pairings) {
+    entering.set(p.a, p.aRec.split('–').map(Number));
+    entering.set(p.b, p.bRec.split('–').map(Number));
+  }
+
+  for (const p of t4.pairings) {
+    for (const [name, rec] of [[p.a, p.aRec], [p.b, p.bRec]]) {
+      const [w, l] = rec.split('–').map(Number);
+      const [w0, l0] = entering.get(name);
+      assert.equal(w, w0 + 1, `${name} advanced, so their wins should go ${w0} -> ${w0 + 1}`);
+      assert.equal(l, l0, `${name} advanced, so their losses should stay at ${l0}`);
+    }
+  }
+});
+
+test('the standings table keeps the final Swiss placings during the cut', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const swiss = page.get('eventInfo.swissRounds');
+  const afterSwiss = page.json(`roundOf('${'12'}').standings`);
+
+  for (const id of ['T8', 'T4']) {
+    const shown = page.json(`roundOf('${id}').standings`);
+    assert.deepEqual(shown, afterSwiss,
+      `${id}: standings must stay the final Swiss ones, not absorb cut results`);
+    for (const s of shown) {
+      const [w, l] = s.record.split('–').map(Number);
+      assert.equal(w + l, swiss, `${id}: ${s.record} should still total ${swiss}`);
     }
   }
 });
