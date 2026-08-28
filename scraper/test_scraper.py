@@ -606,6 +606,155 @@ class TestFinalStandingsSelection(unittest.TestCase):
         self.assertEqual(got, {"Ada": {"status": "drop", "statusRound": 4}})
 
 
+class TestCadence(unittest.TestCase):
+    """Which scheduled ticks reach the blog and which are dropped."""
+
+    def setUp(self):
+        from datetime import datetime, timezone
+        self.now = datetime(2026, 8, 29, 14, 0, tzinfo=timezone.utc)
+
+    def ago(self, **kw):
+        from datetime import timedelta
+        return self.now - timedelta(**kw)
+
+    def test_a_live_event_checks_on_every_tick(self):
+        from cadence import should_check
+        self.assertEqual(should_check(self.now, self.ago(minutes=20), self.ago(minutes=10)),
+                         (True, "live"))
+
+    def test_a_quiet_stretch_checks_about_hourly(self):
+        from cadence import should_check
+        old = self.ago(days=30)
+        self.assertEqual(should_check(self.now, old, self.ago(minutes=10))[0], False)
+        self.assertEqual(should_check(self.now, old, self.ago(minutes=54))[0], False)
+        self.assertEqual(should_check(self.now, old, self.ago(minutes=55))[0], True)
+
+    def test_a_late_tick_still_counts_as_the_hourly_one(self):
+        from cadence import should_check
+        # GitHub runs scheduled jobs late under load. Keying off the wall-clock
+        # minute would drop a tick that arrived at :12 instead of :03 and skip
+        # the whole hour; elapsed time does not care when it arrived.
+        self.assertEqual(should_check(self.now, self.ago(days=30), self.ago(minutes=70))[0],
+                         True)
+
+    def test_the_window_lapses_overnight_and_comes_back(self):
+        from cadence import should_check
+        # Last post at midnight, first check of the morning.
+        self.assertEqual(should_check(self.now, self.ago(hours=5, minutes=59),
+                                      self.ago(minutes=1))[0], True, "still live")
+        self.assertEqual(should_check(self.now, self.ago(hours=6, minutes=1),
+                                      self.ago(minutes=1))[0], False, "back to quiet")
+
+    def test_missing_state_checks_rather_than_stalls(self):
+        from cadence import should_check
+        self.assertEqual(should_check(self.now, None, None), (True, "quiet"))
+        self.assertEqual(should_check(self.now, None, self.ago(minutes=1))[0], False,
+                         "no known change, so the quiet rate still applies")
+
+    def test_a_timestamp_from_the_future_does_not_pin_it_live(self):
+        from datetime import timedelta
+        from cadence import should_check
+        # A clock skew or a hand-edited cache must not leave the scraper polling
+        # at the fast rate indefinitely.
+        ahead = self.now + timedelta(hours=2)
+        self.assertEqual(should_check(self.now, ahead, self.ago(minutes=1))[0], False)
+        self.assertEqual(should_check(self.now, self.ago(days=30), ahead)[0], True,
+                         "and an impossible last check is re-checked, not trusted")
+
+    def test_an_unreadable_timestamp_is_treated_as_absent(self):
+        from cadence import parse_time
+        self.assertIsNone(parse_time("not a date"))
+        self.assertIsNone(parse_time(""))
+        self.assertIsNone(parse_time(None))
+
+    def test_a_naive_timestamp_is_read_as_utc(self):
+        from cadence import parse_time
+        self.assertIsNotNone(parse_time("2026-08-29T14:00:00").tzinfo,
+                             "comparing naive to aware raises, stopping the scraper")
+
+    def test_a_first_sighting_is_not_a_change(self):
+        from cadence import record, decide
+        # An empty cache means we have never looked, not that something was just
+        # posted. Treating it as a change would run the fast cadence for the
+        # whole live window every time the cache is rebuilt.
+        first = record({}, self.now, "2026-08-29")
+        self.assertNotIn("last_change", first)
+        self.assertEqual(first["high_water"], "2026-08-29")
+        self.assertEqual(decide(first, self.now), (False, "quiet"),
+                         "and the next tick is quiet, not live")
+
+    def test_the_change_time_only_moves_when_the_mark_does(self):
+        from cadence import record
+        from datetime import timedelta
+        seen = record({}, self.now - timedelta(hours=2), "2026-08-29")
+        first = record(seen, self.now, "2026-08-30")
+        self.assertEqual(first["last_change"], self.now.isoformat())
+
+        later = self.now + timedelta(minutes=10)
+        same = record(first, later, "2026-08-30")
+        self.assertEqual(same["last_change"], first["last_change"],
+                         "checking is not evidence the event is still running")
+        self.assertEqual(same["last_check"], later.isoformat())
+
+        moved = record(same, later, "2026-08-31")
+        self.assertEqual(moved["last_change"], later.isoformat())
+
+    def test_a_weekend_of_coverage_polls_fast_then_stands_down(self):
+        from datetime import datetime, timedelta, timezone
+        from cadence import decide, record
+
+        # A ten-minute cron across two days. Coverage lands every 47 minutes for
+        # eight hours of the Saturday, then nothing at all.
+        #
+        # The posts are deliberately off the tick grid -- 15:07, 15:54, 16:41 --
+        # so the measured lag is real. Landing them on the ten-minute boundaries
+        # reports a lag of zero however badly the gate behaves.
+        TICKS = 6 * 24 * 2
+        start = datetime(2026, 8, 29, 12, 0, tzinfo=timezone.utc)
+        posts = [start + timedelta(hours=3, minutes=7 + 47 * i) for i in range(10)]
+
+        # The blog is not new: it carries coverage of earlier events, so the
+        # first check records a real high-water mark rather than nothing. That
+        # matters -- a first sighting is deliberately not treated as a change.
+        state, checks, live_checks, mark = {}, 0, 0, "2026-08-01"
+        seen, lag, entry = set(), {}, None
+        for tick in range(TICKS):
+            now = start + timedelta(minutes=10 * tick)
+            go, cadence = decide(state, now)
+            if not go:
+                continue
+            checks += 1
+            live_checks += cadence == "live"
+            due = [p for p in posts if p <= now]
+            # A check covers everything published since the last one, not just
+            # the newest -- the high-water mark moves and the scrape refetches
+            # the event -- so every post now due counts as found.
+            for post in due:
+                if post not in seen:
+                    seen.add(post)
+                    lag[post] = (now - post).total_seconds() / 60
+                    entry = entry if entry is not None else now
+            mark = due[-1].isoformat() if due else mark
+            state = record(state, now, mark)
+
+        self.assertEqual(len(seen), len(posts), "every post is eventually found")
+        self.assertLess(checks, TICKS // 2, "most ticks are dropped")
+
+        # The event starts while the cadence is still quiet, so whatever has been
+        # posted by the first hourly check arrives in one batch and waits up to
+        # an hour. That is the cost of not keeping a calendar; it is paid once.
+        opening = [p for p in posts if p <= entry]
+        self.assertLessEqual(max(lag[p] for p in opening), 60)
+
+        # Every post after that is found within a single tick, which is the point.
+        rest = [p for p in posts if p > entry]
+        self.assertGreaterEqual(len(rest), 7, "otherwise this proves little")
+        self.assertLessEqual(max(lag[p] for p in rest), 10,
+                             "once live, no post waits longer than one tick")
+        self.assertGreater(live_checks, 40, "the event window is polled fast")
+        self.assertLess(checks - live_checks, 40, "and the quiet day is hourly-ish")
+
+
 class TestCutOrdering(unittest.TestCase):
     def test_stages_sort_into_bracket_order(self):
         from build import cut_rank
