@@ -61,12 +61,32 @@ def esc(text: str) -> str:
     return html.escape(text or "", quote=True)
 
 
+def titled(event: str, title: str) -> str:
+    """'Event: headline', which is how every item in this feed is written.
+
+    A feed item stands alone in a reader, with no page around it to say which
+    tournament it belongs to, so the event has to be in the title. The site reads
+    the same convention to group items, and where the convention was missing it
+    grouped by category instead: a deck list post titled "YCS Montreal Advanced
+    Format Top 32 Deck Lists" has no colon, so it became an event called "Deck
+    profile", and a feature match split at its own colon into an event called
+    "Genesys Format Round 4 Feature Match". One tournament showed up as eight.
+    """
+    title = title.strip()
+    if title.startswith(f"{event}:"):
+        return title
+    if title.startswith(event):
+        # Names it already, just without the separator the convention needs.
+        return f"{event}: {title[len(event):].lstrip(' -–—:')}".rstrip(": ")
+    return f"{event}: {title}"
+
+
 def build_feed(event: str, items: list[dict], *, updated: str | None = None,
                site: str = SITE) -> str:
     """RSS 2.0 for one event's coverage.
 
-    Each item is {title, url, modified, kind}. Items with no title or no link
-    are dropped: an entry a reader cannot open is worse than one fewer entry.
+    Each item is {title, url, modified, kind, format}. Items with no title or no
+    link are dropped: an entry a reader cannot open is worse than one fewer.
     """
     usable = [i for i in items if (i.get("title") or "").strip() and i.get("url")]
     usable.sort(key=lambda i: i.get("modified") or "", reverse=True)
@@ -80,10 +100,17 @@ def build_feed(event: str, items: list[dict], *, updated: str | None = None,
         when = rfc822(item.get("modified"))
         body.append(
             "    <item>\n"
-            f"      <title>{esc(item['title'])}</title>\n"
+            f"      <title>{esc(titled(event, item['title']))}</title>\n"
             f"      <link>{esc(item['url'])}</link>\n"
             f"      <guid isPermaLink=\"true\">{esc(item['url'])}</guid>\n"
             f"      <category>{esc(label)}</category>\n"
+            # A second category, namespaced with domain= as RSS intends, so the
+            # site can filter coverage by format without parsing the headline.
+            # Absent for posts that belong to no format -- an announcement is
+            # about the event, not about one of its tournaments -- and the site
+            # keeps those visible whichever format is selected.
+            + (f'      <category domain="format">{esc(item["format"])}</category>\n'
+               if item.get("format") else "")
             + (f"      <pubDate>{when}</pubDate>\n" if when else "")
             + f"      <description>{esc(label)} from {esc(event)}, "
               "published by Konami. Follow the link for the original post."
