@@ -501,3 +501,27 @@ class TestTLS(unittest.TestCase):
         for bad in ("_create_unverified_context", "CERT_NONE", "check_hostname = False",
                     "verify=False"):
             self.assertNotIn(bad, src, f"fetch.py must never {bad}")
+
+
+class TestAnnotatedNames(unittest.TestCase):
+    """Some standings tables put a player ID and status inside the name cell."""
+
+    def test_ids_and_status_are_stripped(self):
+        self.assertEqual(normalise_name("Adrien (0200512639) (PlayoffCut – Round 11) Racek"),
+                         "Adrien Racek")
+        self.assertEqual(normalise_name("Alex (0200539277) (Drop – Round 4) Zhou"),
+                         "Alex Zhou")
+
+    def test_an_annotated_name_matches_its_plain_form(self):
+        # This is the whole point: a name that normalises two ways counts as two
+        # people, and their appearances are never found.
+        self.assertEqual(normalise_name("Adrien (0200512639) (Drop – Round 4) Racek"),
+                         normalise_name("Adrien Racek"))
+        self.assertEqual(normalise_name("Racek, Adrien (0200512639)"),
+                         normalise_name("Adrien Racek"))
+
+    def test_stripping_does_not_disturb_ordinary_names(self):
+        for raw, want in [("George Lucas Sacco", "George Lucas Sacco"),
+                          ("Aldrich III, Gordon Russell", "Gordon Russell Aldrich III"),
+                          ("Joshua Aaron TX Jones", "Joshua Aaron Jones")]:
+            self.assertEqual(normalise_name(raw), want)
