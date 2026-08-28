@@ -255,7 +255,7 @@ class TestUpdateGate(unittest.TestCase):
 
         changed, high = check_for_updates(f, state)
         self.assertTrue(changed, "no prior state means everything is new")
-        self.assertEqual(high, "2026-08-25")
+        self.assertEqual(high, "2026-08-25T07:00:00+00:00")
 
         save_state(state, {"high_water": high})
         changed, _ = check_for_updates(f, state)
@@ -264,6 +264,82 @@ class TestUpdateGate(unittest.TestCase):
         save_state(state, {"high_water": "2020-01-01"})
         changed, _ = check_for_updates(f, state)
         self.assertTrue(changed, "a moved high-water mark must reopen it")
+
+
+class TestLastmodResolution(unittest.TestCase):
+    """The gate watches this value, so its resolution is the gate's resolution."""
+
+    def sitemap(self, *stamps):
+        urls = "".join(f"<url><loc>https://x/{i}/</loc>"
+                       f"<lastmod>{s}</lastmod></url>" for i, s in enumerate(stamps))
+        return ('<?xml version="1.0"?><urlset '
+                'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urls + "</urlset>")
+
+    def test_two_posts_on_one_day_are_two_different_marks(self):
+        from fetch import max_lastmod
+        # The bug this replaces. A single event day put 34 posts under one date,
+        # so the first moved the mark and the other 33 each read as "nothing new".
+        morning = max_lastmod(self.sitemap("2026-08-16T09:00:00-07:00"))
+        evening = max_lastmod(self.sitemap("2026-08-16T09:00:00-07:00",
+                                           "2026-08-16T17:30:00-07:00"))
+        self.assertNotEqual(morning, evening,
+                            "same day, later post -- the gate must see this")
+
+    def test_the_newest_is_the_latest_instant_not_the_highest_string(self):
+        from fetch import max_lastmod
+        # 01:00-07:00 is 08:00 UTC and later than 07:00+00:00, but sorts before
+        # it. Comparing the published text picks the wrong one.
+        got = max_lastmod(self.sitemap("2026-08-16T01:00:00-07:00",
+                                       "2026-08-16T07:00:00+00:00"))
+        self.assertEqual(got, "2026-08-16T08:00:00+00:00")
+
+    def test_the_mark_is_normalised_so_an_offset_change_is_not_a_change(self):
+        from fetch import max_lastmod
+        # The blog's offset shifts across daylight saving. The same instant
+        # written either way must produce the same stored mark.
+        self.assertEqual(max_lastmod(self.sitemap("2026-08-16T08:00:00+00:00")),
+                         max_lastmod(self.sitemap("2026-08-16T01:00:00-07:00")))
+
+    def test_a_date_only_stamp_is_still_valid_sitemap_syntax(self):
+        from fetch import max_lastmod
+        self.assertEqual(max_lastmod(self.sitemap("2026-08-16")),
+                         "2026-08-16T00:00:00+00:00")
+
+    def test_a_z_suffix_is_accepted(self):
+        from fetch import max_lastmod
+        self.assertEqual(max_lastmod(self.sitemap("2026-08-16T08:00:00Z")),
+                         "2026-08-16T08:00:00+00:00")
+
+    def test_one_unreadable_stamp_does_not_lose_the_rest(self):
+        from fetch import max_lastmod
+        got = max_lastmod(self.sitemap("not a date", "2026-08-16T08:00:00+00:00"))
+        self.assertEqual(got, "2026-08-16T08:00:00+00:00")
+
+    def test_a_sitemap_with_no_stamps_has_no_mark(self):
+        from fetch import max_lastmod
+        self.assertIsNone(max_lastmod(self.sitemap()))
+        self.assertIsNone(max_lastmod(self.sitemap("", "   ")))
+
+    def test_the_gate_reopens_for_a_post_later_the_same_day(self):
+        import tempfile
+        from fetch import Fetcher, check_for_updates, save_state
+        tmp = Path(tempfile.mkdtemp())
+        pages = {"sm": self.sitemap("2026-08-16T09:00:00-07:00")}
+
+        def transport(url, ua):
+            return SITEMAP_INDEX if url.endswith("wp-sitemap.xml") else pages["sm"]
+
+        f = Fetcher(cache_dir=tmp / "c", delay=0, transport=transport)
+        state = tmp / "state.json"
+        _, high = check_for_updates(f, state)
+        save_state(state, {"high_water": high})
+
+        # A second post lands two hours later, on the same date.
+        pages["sm"] = self.sitemap("2026-08-16T09:00:00-07:00",
+                                   "2026-08-16T11:00:00-07:00")
+        changed, moved = check_for_updates(f, state)
+        self.assertTrue(changed, "this is every round of an event after the first")
+        self.assertNotEqual(moved, high)
 
 
 def _pairing(a, b):

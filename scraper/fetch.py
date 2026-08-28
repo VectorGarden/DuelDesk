@@ -23,6 +23,7 @@ import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
 from xml.etree import ElementTree as ET
@@ -122,10 +123,53 @@ def newest_sitemap(index_xml: str) -> str:
     return max(posts, key=lambda l: int(l.rsplit("-", 1)[-1].split(".")[0]))
 
 
+def parse_lastmod(text: str | None) -> datetime | None:
+    """One sitemap <lastmod> as an instant, or None if it cannot be read.
+
+    The blog writes them with an offset -- 2026-08-16T11:07:30-07:00 -- but a
+    date alone is valid sitemap syntax too, so both are accepted, as is a "Z"
+    suffix -- fromisoformat has taken that since 3.11, and a test pins it so a
+    Python that cannot says so out loud rather than dropping every stamp.
+
+    A stamp that parses as none of those is dropped rather than raised on: one
+    malformed entry among thousands must not stop the scraper seeing the rest.
+    """
+    text = (text or "").strip()
+    if not text:
+        return None
+    try:
+        parsed = datetime.fromisoformat(text)
+    except ValueError:
+        return None
+    return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+
+
 def max_lastmod(sitemap_xml: str) -> str | None:
-    stamps = [(e.text or "")[:10] for e in ET.fromstring(sitemap_xml).findall(".//s:lastmod", NS)]
+    """The newest <lastmod> in a sitemap, to the second, normalised to UTC.
+
+    This is the whole update gate: the scraper decides there is new coverage by
+    watching this value change. It used to be truncated to ten characters -- the
+    date -- which made it blind to everything an event actually does. One
+    sub-sitemap holds 39 posts with 39 distinct timestamps and 5 distinct dates,
+    and its busiest day collapsed 34 posts into a single value. On that day the
+    first post would have moved the mark and the other 33 would each have been
+    reported as "nothing new", so the scraper would have fetched once and gone
+    quiet until midnight.
+
+    Comparison is by instant, not by text. The stamps carry real offsets, and
+    sorting them as strings gets it backwards whenever two offsets differ:
+    01:00-07:00 is 08:00 UTC and later than 07:00+00:00, but sorts before it.
+
+    Normalising to UTC also keeps the stored mark stable, so a mark that has not
+    moved cannot look like it has because the blog's offset shifted over a
+    daylight-saving boundary.
+    """
+    stamps = [parse_lastmod(e.text)
+              for e in ET.fromstring(sitemap_xml).findall(".//s:lastmod", NS)]
     stamps = [s for s in stamps if s]
-    return max(stamps) if stamps else None
+    if not stamps:
+        return None
+    return max(stamps).astimezone(timezone.utc).isoformat()
 
 
 def load_state(path: Path) -> dict:
