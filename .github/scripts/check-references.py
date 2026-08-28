@@ -5,6 +5,7 @@ Derived from the HTML rather than a hardcoded list, so a newly added
 reference is covered automatically. External URLs, data: URIs, in-page
 fragments and mailto: links are out of scope.
 """
+import json
 import re
 import sys
 from pathlib import Path
@@ -41,6 +42,22 @@ def main(path="index.html"):
         value = m.group(1).strip()
         if value.startswith(SELF_ORIGIN):
             add(value[len(SELF_ORIGIN):])
+
+    # A web manifest's icons are referenced from JSON, not from the HTML, so
+    # they would otherwise be invisible to this check.
+    for manifest in sorted(p for p in refs if p.endswith(".webmanifest") or p.endswith("manifest.json")):
+        mpath = Path(manifest.lstrip("/"))
+        if not mpath.exists():
+            continue
+        try:
+            data = json.loads(mpath.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            print(f"  FAIL    {manifest} is not valid JSON: {exc}")
+            return 1
+        for icon in data.get("icons", []):
+            src = (icon.get("src") or "").strip()
+            if src and not src.startswith(SKIP_PREFIXES):
+                add(src)
 
     missing = []
     for ref in sorted(refs):

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Duel Desk">
+  <title>Duel Desk</title>
+  <rect width="512" height="512" fill="#0E1119"/>
+  <rect x="96" y="140" width="320" height="8" fill="#C8A44D"/>
+  <path fill="#38445F" d="M118 190 H188 V350 L166 372 H96 V212 Z"/>
+  <path fill="#38445F" d="M232 190 H302 V350 L280 372 H210 V212 Z"/>
+  <path fill="#F05B9C" d="M346 190 H416 V350 L394 372 H324 V212 Z"/>
+</svg>
