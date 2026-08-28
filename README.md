@@ -122,10 +122,13 @@ title, channel description, each item title (`[Sample] …`) and each item descr
 aggregators strip `<copyright>`. The page strips the `[Sample]` prefix on parse, since the badge
 beside the headline already says so. CI enforces the marking.
 
-> **The sample feed ages.** Its timestamps are fixed at generation time, and the live state is
-> derived — an event is only "live" when the feed's own build time is recent. Once the committed
-> feed is more than six hours old, the Live badge correctly stops appearing. Regenerate the feed
-> to demonstrate that state again.
+> **The sample data is regenerated at deploy time**, so the published site is always fresh enough
+> to show its live state. The PRNG is seeded, so this reproduces the same tournament — same
+> bracket, same records — and only the clock moves. The regenerated files are re-validated before
+> upload, since they are not the ones the test job checked.
+>
+> The committed copies keep whatever timestamps they were generated with, so a local checkout more
+> than six hours old will correctly stop showing the Live badge. Run the generator to refresh it.
 
 `groupFeed()` shows how a real feed would be wired up. One tournament arrives as ~47 separate
 posts with titles like *"Pairings for Round 11"*; it turns that flat stream back into events

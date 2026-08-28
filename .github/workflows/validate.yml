@@ -110,6 +110,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # The committed feed and round data carry the timestamps they were
+      # generated with, and liveness is derived: an event is only "live" while
+      # the feed's own build time is recent. Left alone, the deployed demo stops
+      # showing its live state a few hours after the data was last regenerated.
+      #
+      # The PRNG is seeded, so this reproduces the same tournament -- same
+      # bracket, same records, same results. Only the clock moves.
+      - name: Regenerate sample data with current timestamps
+        run: python3 scripts/generate-sample-data.py
+
+      # The regenerated files are not the ones the validate job checked, so
+      # check them again. A generator fault would otherwise publish data that
+      # nothing had verified.
+      - name: Validate the regenerated data
+        run: |
+          python3 .github/scripts/check-feed.py feed.xml
+          python3 .github/scripts/check-rounds.py rounds.json
+
       # An include list, so the artifact holds the site and not the repository.
       - name: Stage the site
         run: ./scripts/stage-site.sh _site
