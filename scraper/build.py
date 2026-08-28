@@ -90,10 +90,14 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
     cut_keys = sorted((k for k in by_round if k[0] == "cut"), key=lambda k: cut_rank(k[1]))
     swiss_count = swiss_keys[-1][1] if swiss_keys else 0
 
-    # Records need every round's pairings, because a player's appearances are
-    # what give their losses. Rounds we never fetched simply do not contribute.
-    pairing_rounds = [by_round[k]["pairings"].post.table.rows
-                      for k in swiss_keys if "pairings" in by_round[k]]
+    # Records come from appearances, so the window has to match the table being
+    # derived. A "standings after round 9" table must be read against rounds
+    # 1-9 only: counting every round would give a player who played 11 a 9-2
+    # record in a nine-round table.
+    def pairings_through(limit: int | None) -> list[list[dict]]:
+        return [by_round[k]["pairings"].post.table.rows
+                for k in swiss_keys
+                if "pairings" in by_round[k] and (limit is None or k[1] <= limit)]
 
     rounds = []
     for i, key in enumerate(swiss_keys + cut_keys):
@@ -105,7 +109,19 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
         standings_post = entry.get("standings")
         standings: list[dict] = []
         if standings_post is not None:
-            recs = derive(standings_post.post.table.rows, pairing_rounds)
+            # Cut standings are the final Swiss ones, so they use every round.
+            through = swiss_count if is_cut else key[1]
+            window = pairings_through(through)
+            recs = derive(standings_post.post.table.rows, window)
+
+            # Losses are only sound when we hold the pairings for every round the
+            # table covers. With gaps a player's appearances undercount, which
+            # would read as extra losses -- so those records stay partial rather
+            # than confidently wrong.
+            complete = len(window) >= through
+            if not complete:
+                for r in recs:
+                    r.losses, r.confidence = None, "partial"
             by_name = {r.name: r for r in recs}
             for row in standings_post.post.table.rows:
                 r = by_name.get(row["name"])

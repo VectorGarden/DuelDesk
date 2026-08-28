@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import ssl
 import time
 import urllib.error
 import urllib.request
@@ -38,12 +39,42 @@ DELAY_SECONDS = 1.0          # between live requests
 TIMEOUT = 30
 
 
+# yugiohblog.konami.com sends only its leaf certificate, omitting the GeoTrust
+# intermediate, so the chain to a trusted root cannot be built. Browsers and
+# macOS curl hide this by fetching the intermediate from the leaf's AIA
+# extension; Python does not, and fails verification outright -- on a clean
+# GitHub runner as readily as anywhere else.
+#
+# The intermediate is checked in and supplied here. Verification stays fully on:
+# this adds the missing link rather than skipping the check.
+_INTERMEDIATES = Path(__file__).parent / "certs"
+
+
+def _context_with_intermediates() -> ssl.SSLContext:
+    ctx = ssl.create_default_context()
+    for pem in sorted(_INTERMEDIATES.glob("*.pem")):
+        ctx.load_verify_locations(cafile=str(pem))
+    return ctx
+
+
 def _urlopen(url: str, user_agent: str) -> str:
-    """Default transport. TLS verification is left at the default on purpose --
-    never disable it to work around a local trust-store problem."""
+    """Default transport.
+
+    Tries ordinary verification first, so a correctly configured server -- or
+    this one, if Konami ever fixes its chain -- needs nothing special. Only a
+    verification failure falls back to the checked-in intermediate, and that
+    path still verifies.
+    """
     req = urllib.request.Request(url, headers={"User-Agent": user_agent})
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-        return r.read().decode("utf-8", errors="replace")
+    try:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            return r.read().decode("utf-8", errors="replace")
+    except urllib.error.URLError as exc:
+        if not isinstance(getattr(exc, "reason", None), ssl.SSLCertVerificationError):
+            raise
+        with urllib.request.urlopen(req, timeout=TIMEOUT,
+                                    context=_context_with_intermediates()) as r:
+            return r.read().decode("utf-8", errors="replace")
 
 
 @dataclass

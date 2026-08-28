@@ -443,3 +443,29 @@ class TestBuild(unittest.TestCase):
             self.assertIn(key, self.adv)
         for key in ("id", "label", "phase", "state", "order", "pairings", "standings"):
             self.assertIn(key, self.adv["rounds"][0])
+
+
+class TestTLS(unittest.TestCase):
+    def test_the_bundled_intermediate_is_present_and_not_expiring(self):
+        import re as _re
+        import datetime as _dt
+        certs = list((Path(__file__).parent / "certs").glob("*.pem"))
+        self.assertTrue(certs, "the server omits its intermediate; one must be bundled")
+        for c in certs:
+            text = c.read_text()
+            self.assertIn("BEGIN CERTIFICATE", text, f"{c.name} holds no certificate")
+            m = _re.search(r"# Expires: (\d{4}-\d{2}-\d{2})", text)
+            self.assertTrue(m, f"{c.name} does not record its expiry")
+            expires = _dt.date.fromisoformat(m.group(1))
+            left = (expires - _dt.date.today()).days
+            self.assertGreater(left, 90,
+                f"{c.name} expires in {left} days; fetch the current intermediate "
+                "from the leaf's AIA URL and replace it")
+
+    def test_verification_is_never_disabled(self):
+        # A fallback that skips verification would be worse than the failure it
+        # works around, so make that impossible to add quietly.
+        src = (Path(__file__).parent / "fetch.py").read_text()
+        for bad in ("_create_unverified_context", "CERT_NONE", "check_hostname = False",
+                    "verify=False"):
+            self.assertNotIn(bad, src, f"fetch.py must never {bad}")
