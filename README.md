@@ -38,6 +38,30 @@ already read fluently: Spell teal, Effect orange, Trap magenta, Link blue, Fusio
 antique gold of the card border used only as a hairline. The clipped corner (`--notch`) is a nod to
 the card frame.
 
+## Tests
+
+The JavaScript lives inside `index.html`, so it never reaches a bundler or a linter. The suite
+loads the real page into jsdom with a controllable network and exercises the actual boot sequence,
+render functions and state machines — not a re-implementation that could drift from them.
+
+```bash
+npm ci
+npm test
+```
+
+Requires Node 20+ (`node:test` and jsdom). The **site itself stays dependency-free**; jsdom and
+`vnu-jar` are dev dependencies used only for testing and validation.
+
+Covered: escaping and URL-scheme guards, feed parsing and classification, every data state
+(loading, ready, empty, stale, error) for both loaders, per-round rendering and record coherence,
+accessibility invariants (tabpanel wiring, roving tabindex, no dangling ARIA references,
+non-interactive post rows), theme persistence, and search and filtering.
+
+The suite is mutation-tested: ten deliberate regressions — unescaped output, an unrestricted
+`safeUrl`, a stale reload blanking the page, `renderRound` ignoring the active round, a detached
+tabpanel label, post rows becoming links, an unconditional live badge, a fetch that stops
+revalidating, a broken roving tabindex, and theme persistence removed — are each caught.
+
 ## Running locally
 
 Just open the file:
