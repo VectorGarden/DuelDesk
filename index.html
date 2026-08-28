@@ -406,7 +406,7 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
   <section class="shell hero" aria-labelledby="live-h">
     <div class="hero__top">
       <span class="livetag"><i aria-hidden="true"></i>Live now</span>
-      <span class="stamp">Updated 2 minutes ago · refreshes automatically</span>
+      <span class="stamp">Snapshot · this preview does not update</span>
       <span class="demo">Sample data</span>
     </div>
 
@@ -480,7 +480,7 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
       <div class="card">
         <h2>Follow along</h2>
         <p class="card__note">
-          Every round is published to the Duel Desk feed the moment it is posted. Point any reader at it.
+          Every round is published to the Duel Desk feed. Point any reader at it.
         </p>
         <a class="feedbtn" href="/feed.xml">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><path d="M4 11a9 9 0 0 1 9 9h3A12 12 0 0 0 4 8z"/><path d="M4 4a16 16 0 0 1 16 16h3A19 19 0 0 0 4 1z"/></svg>
@@ -540,6 +540,28 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
    are attacker-controlled. Escape at the boundary, always. */
 const ESCAPES = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ESCAPES[c]);
+
+/* esc() makes a value safe *inside* an attribute. It does not make a URL safe
+   *as* an href: "javascript:alert(1)" contains none of the five characters
+   esc() escapes, so it passes through intact and runs on click. The two do
+   different jobs and neither substitutes for the other.
+
+   The URL constructor is doing the parsing on purpose -- it normalises the
+   tricks a hand-written scheme regex misses: "java\tscript:", leading
+   whitespace, control characters, odd encodings. */
+function safeUrl(raw){
+  const value = String(raw ?? '').trim();
+  /* Empty and fragment-only inputs resolve to the site's own homepage once the
+     URL constructor gets hold of them, which would turn a feed item with no
+     <link> into a working link somewhere unrelated. Keep those inert. */
+  if (!value || value.startsWith('#')) return '#';
+  try {
+    const u = new URL(value, location.origin);
+    return (u.protocol === 'https:' || u.protocol === 'http:') ? u.href : '#';
+  } catch {
+    return '#';                     // unparseable -> inert
+  }
+}
 
 /* ============================================================
    1. THEME
@@ -653,7 +675,8 @@ function groupFeed(xmlText){                                   // eslint-disable
     if (date > group.date) group.date = date;   // group carries its newest post's date
 
     group.posts.push({
-      title, url,
+      title,
+      url: safeUrl(url),
       time: date.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
       ...classify(title)
     });
@@ -890,7 +913,7 @@ function renderRound(){
   if (!r) return;
   if (r.state === 'upcoming'){
     roundBody.innerHTML = `<div class="empty"><h3>This round has not started</h3>
-      <p>Pairings appear here as soon as they are posted. The page updates on its own.</p></div>`;
+      <p>Pairings appear here once they are posted.</p></div>`;
     return;
   }
   roundBody.innerHTML =
@@ -940,7 +963,7 @@ function renderEvents(){
         </button>
       </h3>
       <div class="event__body" id="ev-${i}" ${isOpen ? '' : 'hidden'}>
-        ${ev.posts.map(p => `<a class="post" href="#" style="--k:${kindOf(p.kind).color}">
+        ${ev.posts.map(p => `<a class="post" href="${esc(p.url ?? '#')}" rel="noreferrer" style="--k:${kindOf(p.kind).color}">
           <span class="post__k">${esc(kindOf(p.kind).label)}</span>
           <span class="post__t">${esc(p.title)}</span>
           <span class="post__time">${esc(p.time)}</span>
