@@ -202,8 +202,19 @@ not square, has pixels that disagree with its filename, or duplicates another fi
 Design sources live in `design/` and are never deployed. Install sizes are declared in
 `site.webmanifest`, which is what makes them referenced rather than orphaned.
 
-To regenerate the PNGs after editing a source SVG, re-render each source at the sizes listed
-in `index.html` and `site.webmanifest`; CI fails if any referenced file is missing.
+To regenerate every icon after editing a source SVG:
+
+```bash
+./scripts/build-icons.sh
+```
+
+It renders each source at every shipped size with headless Chrome — the same engine that displays
+them, so what ships is what a browser draws — then rebuilds `favicon.ico` and runs the icon
+checks. Set `CHROME=/path/to/chrome` if it cannot find one.
+
+Against an unmodified tree it reproduces the committed files **byte for byte**, so a dirty
+`git status` after running it means a source really did change. That reproduction depends on the
+Chrome version, which is why CI validates the committed PNGs rather than rebuilding them.
 
 ## Deployment
 
