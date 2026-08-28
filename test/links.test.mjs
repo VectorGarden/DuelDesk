@@ -102,3 +102,32 @@ test('the jump does not preventDefault, so the fragment still navigates', async 
   assert.equal(ev.defaultPrevented, false,
     'the browser must still handle the #coverage hop, so it works without JS too');
 });
+
+test('favicon declarations stay small enough to be a favicon', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+
+  for (const link of page.$$('link[rel~="icon"]')) {
+    const sizes = link.getAttribute('sizes');
+    if (!sizes || sizes === 'any') continue;
+    for (const token of sizes.split(/\s+/)) {
+      const side = Number(token.split('x')[0]);
+      assert.ok(side <= 48,
+        `rel="icon" offers ${token}; a browser may render it at 16px`);
+    }
+  }
+  // Install-size icons belong to the manifest, not to rel="icon".
+  assert.ok(page.$('link[rel="manifest"]'), 'the manifest carries the large icons');
+});
+
+test('Safari-specific icons are declared', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+
+  const mask = page.$('link[rel="mask-icon"]');
+  assert.ok(mask, 'pinned tabs need a mask-icon');
+  assert.match(mask.getAttribute('color') ?? '', /^#[0-9a-f]{3,8}$/i,
+    'and a colour for Safari to apply');
+  assert.ok(page.$('link[rel="apple-touch-icon"]'), 'iOS home screen icon');
+  assert.ok(page.$('link[rel="icon"][href$=".ico"]'), 'a .ico is still offered');
+});

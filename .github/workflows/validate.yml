@@ -79,6 +79,11 @@ jobs:
       - name: Validate rounds.json
         run: python3 .github/scripts/check-rounds.py rounds.json
 
+      # Two favicon failures are invisible everywhere else: a PNG-encoded ICO,
+      # which Safari will not decode, and an oversized rel="icon".
+      - name: Validate icons
+        run: python3 .github/scripts/check-icons.py
+
       # Every local file the page references must actually be in the repo.
       - name: Check local references resolve
         run: python3 .github/scripts/check-references.py index.html
