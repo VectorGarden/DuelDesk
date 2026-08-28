@@ -66,6 +66,11 @@ jobs:
       - name: Validate feed.xml
         run: python3 .github/scripts/check-feed.py feed.xml
 
+      # rounds.json is fetched from JavaScript, so the reference check cannot
+      # see it. This also verifies the records in it actually add up.
+      - name: Validate rounds.json
+        run: python3 .github/scripts/check-rounds.py rounds.json
+
       # Every local file the page references must actually be in the repo.
       - name: Check local references resolve
         run: python3 .github/scripts/check-references.py index.html

@@ -62,6 +62,20 @@ The coverage list is **loaded at runtime from this site's own [`feed.xml`](feed.
 The data is still **sample data**; what changed is that the *mechanism* is real. The round panel
 (pairings, standings, feature match) remains hardcoded, because the feed carries no round detail.
 
+Round detail comes from [`rounds.json`](rounds.json). Both files are produced by
+[`scripts/generate-sample-data.py`](scripts/generate-sample-data.py) from **one simulated Swiss
+tournament**, so the coverage posts and the round panel describe the same event. The simulation
+pairs players on equal records, plays the results out, and sorts standings by wins with opponent
+match-win percentage as the tiebreak — so the records add up. An 11–0 Duelist in round 12 really
+did win eleven matches in there.
+
+```bash
+python3 scripts/generate-sample-data.py
+```
+
+It is deterministic: a seeded PRNG plus a `--now` anchor means the same inputs reproduce the same
+files byte for byte. CI checks the result stays coherent.
+
 > **The sample feed ages.** Its timestamps are fixed at generation time, and the live state is
 > derived — an event is only "live" when the feed's own build time is recent. Once the committed
 > feed is more than six hours old, the Live badge correctly stops appearing. Regenerate the feed
