@@ -53,12 +53,15 @@ limit = float(sys.argv[1])
 d = json.load(open("/tmp/smoke-rounds.json"))
 u = dt.datetime.fromisoformat(d["updated"].replace("Z", "+00:00"))
 age = (dt.datetime.now(dt.timezone.utc) - u).total_seconds() / 60
-live = [r["label"] for r in d["rounds"] if r["state"] == "live"]
+live = [r["label"] for f in d["formats"] for r in f["rounds"] if r["state"] == "live"]
+if age < -1:
+    print(f"  live data is stamped {abs(age):.0f} min in the FUTURE; the timestamp is wrong")
+    sys.exit(1)
 if age > limit:
     print(f"  live data is {age:.0f} min old (limit {limit:.0f}); this deploy did not regenerate it")
     sys.exit(1)
 print(f"  ok    live data is {age:.0f} min old, live round {live or chr(40)+chr(41)}")
-' "$MAX_DATA_AGE_MIN" || fail "stale sample data"
+' "$MAX_DATA_AGE_MIN" || fail "sample data timestamp is wrong"
 else
   fail "could not fetch rounds.json"
 fi

@@ -163,6 +163,16 @@ def main(path="rounds.json"):
             continue
         problems += check_rounds(label, rounds, swiss_count)
 
+    # "updated" must name the newest round actually posted, across all formats.
+    # This check existed and was lost when the format axis was added -- which is
+    # how a timestamp an hour in the future reached production.
+    stamped = [(f.get("format"), r) for f in formats for r in (f.get("rounds") or []) if r.get("posted")]
+    if stamped and data.get("updated"):
+        latest = max(r.get("posted") for _, r in stamped)
+        hhmm = str(data["updated"])[11:16]
+        if hhmm != latest:
+            problems.append(f"updated says {hhmm} but the newest posted round went up at {latest}")
+
     if problems:
         for p_ in problems[:25]:
             print(f"  FAIL  {p_}")
