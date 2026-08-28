@@ -155,3 +155,10 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      # Closes the loop. Everything above proves the code is good and the
+      # artifact was uploaded; only this proves the live site is serving it.
+      # Deploys were silently broken for two merges once, with CI green
+      # throughout, because nothing ever asked production a question.
+      - name: Smoke test the deployed site
+        run: ./scripts/smoke-test.sh "${{ steps.deployment.outputs.page_url }}" _site
