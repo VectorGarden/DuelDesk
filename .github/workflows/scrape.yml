@@ -106,19 +106,25 @@ jobs:
 
       - if: steps.gate.outputs.run == 'yes'
         name: Scrape the newest event
-        run: python3 scraper/run.py --out scraped-rounds.json --summary "$GITHUB_STEP_SUMMARY"
+        run: |
+          python3 scraper/run.py --out scraped-rounds.json --feed scraped-feed.xml \
+                                 --summary "$GITHUB_STEP_SUMMARY"
 
       # Validated with the same checker the site's own data must pass, so a
       # scrape that could not produce usable data fails here rather than later.
       - if: steps.gate.outputs.run == 'yes'
         name: Validate the scraped data
-        run: python3 .github/scripts/check-rounds.py scraped-rounds.json
+        run: |
+          python3 .github/scripts/check-rounds.py scraped-rounds.json
+          python3 .github/scripts/check-feed.py scraped-feed.xml
 
       - if: steps.gate.outputs.run == 'yes'
         uses: actions/upload-artifact@v4
         with:
           name: scraped-rounds
-          path: scraped-rounds.json
+          path: |
+            scraped-rounds.json
+            scraped-feed.xml
           retention-days: 14
 
       # Only when the check actually ran, so dropped ticks leave no trace. The

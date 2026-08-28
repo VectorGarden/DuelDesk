@@ -20,6 +20,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from typing import Any
 
+from naming import clock
 from records import derive
 
 CUT_ORDER_BASE = 100          # cut rounds sort after every Swiss round
@@ -218,7 +219,9 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
             "state": "done",
             "order": CUT_ORDER_BASE + cut_rank(key[1]) if is_cut else key[1],
             "tables": len(pairings) or None,
-            "posted": source.posted if source else None,
+            # The clock, not the date: "pairings posted 16:38" is what a round
+            # panel wants, and the sitemap carries the time.
+            "posted": clock(source.posted) if source else None,
             "standingsAfter": swiss_count if is_cut else (key[1] if standings else None),
             "pairings": pairings,
             "standings": standings,

@@ -19,6 +19,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from build import Source, build_event                     # noqa: E402
 from fetch import BASE, SITEMAP, Fetcher, newest_sitemap  # noqa: E402
 from index import assign_events, parse_post_sitemap, parse_sitemap_index  # noqa: E402
+from feed import build_feed                              # noqa: E402
+from naming import event_name                            # noqa: E402
 from parse import detect_kind, parse_post                 # noqa: E402
 
 # Ties were removed from tournament policy on this date.
@@ -43,6 +45,7 @@ def main() -> int:
     ap.add_argument("--cache", default=".scrape-state/cache")
     ap.add_argument("--summary", help="file to append a human-readable report to")
     ap.add_argument("--limit", type=int, default=60, help="max posts to fetch")
+    ap.add_argument("--feed", help="also write an RSS feed of the posts seen")
     args = ap.parse_args()
 
     f = Fetcher(cache_dir=args.cache)
@@ -96,13 +99,21 @@ def main() -> int:
             print(f"  skipped {p['url']}: {exc}")
             continue
         sources.append(Source(url=p["url"], post=parse_post(html, p["url"]),
-                              posted=(p["lastmod"] or "")[:10]))
+                              posted=p.get("modified") or p["lastmod"]))
 
     draws_possible = bool(latest) and date.fromisoformat(latest) < DRAWS_ABOLISHED
-    event = build_event(slug.replace("-", " ").title(), sources,
-                        draws_possible=draws_possible, updated=latest)
+    # The slug is the last resort, not the first: it renders 2026-08-quebec as
+    # "2026 08 Quebec" while every post it covers is titled "YCS Montreal".
+    name = event_name([s.post.title for s in sources],
+                      slug.replace("-", " ").title())
+    event = build_event(name, sources, draws_possible=draws_possible, updated=latest)
 
     Path(args.out).write_text(json.dumps(event, indent=2, ensure_ascii=False) + "\n")
+
+    if args.feed:
+        Path(args.feed).write_text(build_feed(name, [
+            {"title": s.post.title, "url": s.url,
+             "modified": s.posted, "kind": s.post.kind} for s in sources]))
 
     kinds = Counter(s.post.kind for s in sources)
     lines = [
