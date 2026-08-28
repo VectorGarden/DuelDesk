@@ -30,6 +30,16 @@ from typing import Any
 # trailing token is a surname and the code is stranded in the middle.
 _REGION_TOKEN = re.compile(r"[A-Z]{2,3}")
 
+# Generational suffixes are all-caps two-or-three letter tokens too, so the
+# region rule swallows them. That silently splits one person into two: the
+# standings cell "Aldrich III, Gordon Russell" keeps the suffix (the comma
+# stops it matching) while the pairings cells "Gordon Russell" + "Aldrich III"
+# lose it, and the appearance count then misses every round they played.
+#
+# VI and IA are also real region codes; a name suffix is the likelier reading in
+# a player list, and getting it wrong here costs a whole player's record.
+_NAME_SUFFIXES = {"II", "III", "IV", "VI", "VII", "VIII", "IX", "JR", "SR"}
+
 _TAG = re.compile(r"<[^>]+>")
 _TABLE = re.compile(r"<table.*?</table>", re.S | re.I)
 _ROW = re.compile(r"<tr.*?</tr>", re.S | re.I)
@@ -59,8 +69,9 @@ def strip_region(name: str) -> tuple[str, str | None]:
     tokens = name.strip().split()
     if not tokens:
         return "", None
-    codes = [t for t in tokens if _REGION_TOKEN.fullmatch(t)]
-    kept = [t for t in tokens if not _REGION_TOKEN.fullmatch(t)]
+    is_code = lambda t: bool(_REGION_TOKEN.fullmatch(t)) and t not in _NAME_SUFFIXES
+    codes = [t for t in tokens if is_code(t)]
+    kept = [t for t in tokens if not is_code(t)]
     if not kept:                      # the whole name looked like a code
         return " ".join(tokens), None
     return " ".join(kept), (codes[0] if codes else None)

@@ -264,3 +264,84 @@ class TestUpdateGate(unittest.TestCase):
         save_state(state, {"high_water": "2020-01-01"})
         changed, _ = check_for_updates(f, state)
         self.assertTrue(changed, "a moved high-water mark must reopen it")
+
+
+def _pairing(a, b):
+    return {"table": 1, "a": {"name": a, "region": None, "deck": None},
+            "b": {"name": b, "region": None, "deck": None}}
+
+
+class TestRecords(unittest.TestCase):
+    def test_losses_come_from_rounds_played_not_the_round_count(self):
+        from records import derive
+        # Dana dropped after two rounds. rounds-minus-wins would call that 0-4.
+        rounds = [[_pairing("Ada", "Dana")], [_pairing("Ada", "Dana")],
+                  [_pairing("Ada", "Bo")], [_pairing("Ada", "Bo")]]
+        standings = [{"name": "Ada", "points": 12}, {"name": "Dana", "points": 0}]
+        got = {r.name: r for r in derive(standings, rounds, event_date="2026-08-16")}
+        self.assertEqual((got["Ada"].wins, got["Ada"].losses), (4, 0))
+        self.assertEqual((got["Dana"].wins, got["Dana"].losses), (0, 2))
+        self.assertEqual(got["Dana"].label(), "0–2")
+
+    def test_placeholders_are_not_players(self):
+        from records import derive, count_appearances, is_placeholder
+        self.assertTrue(is_placeholder("*** ***"))
+        self.assertFalse(is_placeholder("Ada Lovelace"))
+        rounds = [[_pairing("Ada", "*** ***")]]
+        self.assertEqual(dict(count_appearances(rounds)), {"Ada": 1})
+        self.assertEqual(derive([{"name": "*** ***", "points": 0}], rounds), [])
+
+    def test_a_player_never_paired_reports_wins_only(self):
+        from records import derive
+        got = derive([{"name": "Ghost", "points": 3}], [[_pairing("Ada", "Bo")]],
+                     event_date="2026-08-16")[0]
+        self.assertEqual(got.confidence, "partial")
+        self.assertEqual(got.wins, 3 // 3)
+        self.assertIsNone(got.losses)
+        self.assertEqual(got.label(), "1 wins (3 pts)")
+
+    def test_a_bye_does_not_produce_negative_losses(self):
+        from records import derive
+        # Two wins on paper, one appearance -- the other was a bye.
+        got = derive([{"name": "Ada", "points": 6}], [[_pairing("Ada", "Bo")]],
+                     event_date="2026-08-16")[0]
+        self.assertEqual(got.confidence, "partial")
+        self.assertIsNone(got.losses, "better no answer than a negative one")
+
+    def test_before_2025_09_points_alone_are_ambiguous(self):
+        from records import derive
+        # 3 points is one win or three draws, and nothing here separates them.
+        rounds = [[_pairing("Ada", "Bo")] for _ in range(3)]
+        got = derive([{"name": "Ada", "points": 3}], rounds, event_date="2019-05-01")[0]
+        self.assertEqual(got.confidence, "unknown")
+        self.assertIsNone(got.wins)
+        self.assertEqual(got.label(), "3 pts")
+
+    def test_consecutive_standings_resolve_draws_exactly(self):
+        from records import derive
+        series = [
+            [{"name": "Ada", "points": 0}],
+            [{"name": "Ada", "points": 3}],    # +3 win
+            [{"name": "Ada", "points": 4}],    # +1 draw
+            [{"name": "Ada", "points": 4}],    # +0 loss
+        ]
+        got = derive([{"name": "Ada", "points": 4}], [], event_date="2019-05-01",
+                     standings_series=series)[0]
+        self.assertEqual(got.confidence, "derived")
+        self.assertEqual((got.wins, got.draws, got.losses), (1, 1, 1))
+        self.assertEqual(got.label(), "1–1–1")
+
+    def test_the_real_event_reconciles(self):
+        import glob, re
+        from records import derive
+        from parse import parse_post
+        rd = Path(__file__).parent.parent / "test" / "fixtures" / "blog" / "rounds"
+        if not rd.exists():
+            self.skipTest("round fixtures not committed")
+        rounds = [parse_post(Path(f).read_text()).table.rows
+                  for f in sorted(glob.glob(str(rd / "r*.html")),
+                                  key=lambda p: int(re.search(r"r(\d+)", p).group(1)))]
+        st = parse_post((FIX / "standings-advanced.html").read_text()).table.rows
+        recs = derive(st, rounds, event_date="2026-08-16")
+        self.assertTrue(all(r.losses is None or r.losses >= 0 for r in recs),
+                        "no derived record may imply negative losses")
