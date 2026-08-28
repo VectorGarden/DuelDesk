@@ -181,9 +181,16 @@ def main(path="rounds.json"):
         return 1
 
     problems = []
-    for field in ("event", "coverageBy", "formats"):
+    for field in ("event", "coverageBy", "formats", "sample"):
         if field not in data:
             problems.append(f"missing top-level field {field!r}")
+
+    # The page hides its "Sample data" badge unless this is exactly True, so a
+    # file that omits it or writes something truthy-but-not-true is served as
+    # genuine coverage. Required and strictly boolean, in both directions: the
+    # badge is the only claim the page makes about whether any of this is real.
+    if "sample" in data and not isinstance(data["sample"], bool):
+        problems.append(f"sample is {data['sample']!r}, expected true or false")
     for i, fmt in enumerate(data.get("formats") or []):
         for field in ("format", "swissRounds", "duelists", "rounds"):
             if field not in fmt:

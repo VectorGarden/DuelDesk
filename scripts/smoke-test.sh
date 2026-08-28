@@ -43,25 +43,44 @@ for i in $(seq 1 "$ATTEMPTS"); do
   fi
 done
 
-# --- 2. this deploy actually ran ---------------------------------------------
-# The sample data is regenerated on every deploy, so a recent timestamp cannot
-# have come from an older publish.
+# --- 2. the data we built is the data being served ---------------------------
+# Hash-compared like index.html, because that holds however the data was made.
+# The age check below cannot do this job alone: real coverage is stamped with the
+# event's own times, so a finished event is legitimately days old.
 if fetch "$BASE/rounds.json" > /tmp/smoke-rounds.json 2>/dev/null; then
+  want="$(shasum -a 256 "$SITE/rounds.json" | cut -d' ' -f1)"
+  got="$(shasum -a 256 /tmp/smoke-rounds.json | cut -d' ' -f1)"
+  if [ "$want" = "$got" ]; then
+    echo "  ok    rounds.json matches the uploaded artifact"
+  else
+    fail "rounds.json served ${got:0:16}..., expected ${want:0:16}..."
+  fi
+
+  # The freshness rule applies only to the simulation, which is regenerated on
+  # every deploy and so has no excuse for being stale. A timestamp in the future
+  # is wrong either way.
   python3 -c '
 import json, sys, datetime as dt
 limit = float(sys.argv[1])
 d = json.load(open("/tmp/smoke-rounds.json"))
-u = dt.datetime.fromisoformat(d["updated"].replace("Z", "+00:00"))
+u = dt.datetime.fromisoformat(str(d["updated"]).replace("Z", "+00:00"))
+if not u.tzinfo:
+    u = u.replace(tzinfo=dt.timezone.utc)
 age = (dt.datetime.now(dt.timezone.utc) - u).total_seconds() / 60
 live = [r["label"] for f in d["formats"] for r in f["rounds"] if r["state"] == "live"]
+if "sample" not in d:
+    print("  the served data does not say whether it is sample or real coverage")
+    sys.exit(1)
+sample = d["sample"] is True
+kind = "sample" if sample else "coverage"
 if age < -1:
-    print(f"  live data is stamped {abs(age):.0f} min in the FUTURE; the timestamp is wrong")
+    print(f"  {kind} data is stamped {abs(age):.0f} min in the FUTURE; the timestamp is wrong")
     sys.exit(1)
-if age > limit:
-    print(f"  live data is {age:.0f} min old (limit {limit:.0f}); this deploy did not regenerate it")
+if sample and age > limit:
+    print(f"  sample data is {age:.0f} min old (limit {limit:.0f}); this deploy did not regenerate it")
     sys.exit(1)
-print(f"  ok    live data is {age:.0f} min old, live round {live or chr(40)+chr(41)}")
-' "$MAX_DATA_AGE_MIN" || fail "sample data timestamp is wrong"
+print(f"  ok    {kind} data is {age:.0f} min old, live round {live or chr(40)+chr(41)}")
+' "$MAX_DATA_AGE_MIN" || fail "rounds.json timestamp is wrong"
 else
   fail "could not fetch rounds.json"
 fi

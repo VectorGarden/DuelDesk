@@ -238,7 +238,7 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
 
 
 def build_event(event: str, sources: list[Source], *,
-                coverage_by: str = "Konami's official coverage",
+                coverage_by: str = "Konami",
                 draws_possible: bool = False, updated: str | None = None) -> dict:
     by_format: dict[str, list[Source]] = defaultdict(list)
     unassigned = 0
@@ -252,6 +252,9 @@ def build_event(event: str, sources: list[Source], *,
                            for name, group in sorted(by_format.items())) if f]
     return {
         "event": event,
+        # Real coverage. The page reads this to decide whether to show its
+        # "Sample data" badge, so it is stated rather than left to be inferred.
+        "sample": False,
         "coverageBy": coverage_by,
         "drawsPossible": draws_possible,
         "updated": updated,
