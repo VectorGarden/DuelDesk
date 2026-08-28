@@ -95,10 +95,18 @@ test('rounds.json is rejected when malformed or empty', async (t) => {
   assert.equal(bad.get('roundsState'), 'error');
   assert.equal(bad.errors.length, 0);
 
-  const empty = await loadPage({ routes: { 'rounds.json': { status: 200, body: '{"rounds":[]}' } } });
-  t.after(() => empty.close());
-  assert.equal(empty.get('roundsState'), 'error');
-  assert.match(empty.get('roundsError'), /no rounds/);
+  // Two distinct empty shapes, each with its own message.
+  const noFormats = await loadPage({ routes: { 'rounds.json': { status: 200, body: '{"formats":[]}' } } });
+  t.after(() => noFormats.close());
+  assert.equal(noFormats.get('roundsState'), 'error');
+  assert.match(noFormats.get('roundsError'), /no formats/);
+
+  const noRounds = await loadPage({
+    routes: { 'rounds.json': { status: 200, body: '{"formats":[{"format":"Advanced","rounds":[]}]}' } },
+  });
+  t.after(() => noRounds.close());
+  assert.equal(noRounds.get('roundsState'), 'error');
+  assert.match(noRounds.get('roundsError'), /no rounds/);
 });
 
 test('both loads revalidate rather than reading a stale cache', async (t) => {

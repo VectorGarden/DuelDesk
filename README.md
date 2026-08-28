@@ -15,6 +15,9 @@ file, no build step. Open it in a browser and it works.
 
 ### Features
 
+- **Format selector** — an event runs a parallel tournament per format, each with its own field,
+  round count and bracket. Switching one replaces the round set entirely and lands on whatever is
+  live in that tournament. Hidden when an event has only one format, because then it is not a choice.
 - **Round track** — a horizontally scrollable ARIA tablist with roving tabindex; arrow keys,
   `Home`, and `End` move between rounds. Chips are updated in place, so the rail keeps its
   scroll position and never loses focus.
