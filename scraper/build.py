@@ -64,6 +64,46 @@ class Source:
     posted: str | None = None # HH:MM
 
 
+def pick_final_standings(candidates: list[Source]) -> Source:
+    """Choose the end-of-Swiss table from the ones that name no round.
+
+    An event publishes up to three, and they are different tables:
+
+      "Final Standings After Day 1"   stops well short of the last round
+      "Final Standings After Swiss"   the one we want
+      "Final Standings"               published after the top cut
+
+    The last is ordered by final placing, not by Swiss result -- at YCS Montreal
+    its first seed holds 24 points and its third holds 27. Used as the round-11
+    table it would show the Swiss standings in the wrong order.
+
+    Previously this took whichever arrived last, making the choice depend on
+    publication order.
+    """
+    def score(s: Source) -> tuple:
+        low = s.post.title.lower()
+        rows = s.post.table.rows if s.post.table else []
+        return ("after swiss" in low, "day 1" not in low, len(rows))
+    return max(candidates, key=score)
+
+
+def status_by_player(candidates: list[Source]) -> dict[str, dict]:
+    """Player -> status annotation, gathered from every standings table.
+
+    Only the post-cut "Final Standings" carries these, and that is not the table
+    we display, so the annotations have to be carried across to the one we do.
+    They are facts about a player's event, not about a particular table, so this
+    is a merge rather than a swap.
+    """
+    out: dict[str, dict] = {}
+    for s in candidates:
+        for row in (s.post.table.rows if s.post.table else []):
+            if row.get("status"):
+                out[row["name"]] = {"status": row["status"],
+                                    "statusRound": row["statusRound"]}
+    return out
+
+
 def build_format(name: str, sources: list[Source]) -> dict | None:
     """Assemble one format's tournament."""
     by_round: dict[tuple, dict[str, Source]] = defaultdict(dict)
@@ -84,9 +124,10 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
         return None
 
     swiss_keys = sorted((k for k in by_round if k[0] == "swiss"), key=lambda k: k[1])
+    statuses = status_by_player(floating_standings)
     if floating_standings and swiss_keys:
         last = swiss_keys[-1]
-        by_round[last].setdefault("standings", floating_standings[-1])
+        by_round[last].setdefault("standings", pick_final_standings(floating_standings))
     cut_keys = sorted((k for k in by_round if k[0] == "cut"), key=lambda k: cut_rank(k[1]))
     swiss_count = swiss_keys[-1][1] if swiss_keys else 0
 
@@ -112,7 +153,14 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
             # Cut standings are the final Swiss ones, so they use every round.
             through = swiss_count if is_cut else key[1]
             window = pairings_through(through)
-            recs = derive(standings_post.post.table.rows, window)
+            table = standings_post.post.table.rows
+            if through >= swiss_count:
+                # A status names a round in the whole event, so it only reads
+                # straight against a table covering all of Swiss. Against a
+                # "standings after round 9" table it would credit a player who
+                # went on to round 11 with two rounds they had not yet played.
+                table = [{**r, **statuses.get(r["name"], {})} for r in table]
+            recs = derive(table, window)
 
             # Losses are only sound when we hold the pairings for every round the
             # table covers. With gaps a player's appearances undercount, which
@@ -120,8 +168,12 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
             # than confidently wrong.
             complete = len(window) >= through
             if not complete:
+                # A stated round does not depend on the pairings we hold, so
+                # those records survive a gap that would sink counted ones.
+                stated = {r["name"] for r in table if r.get("status")}
                 for r in recs:
-                    r.losses, r.confidence = None, "partial"
+                    if r.name not in stated:
+                        r.losses, r.confidence = None, "partial"
             by_name = {r.name: r for r in recs}
             for row in standings_post.post.table.rows:
                 r = by_name.get(row["name"])

@@ -364,6 +364,178 @@ def _sources():
     return out
 
 
+class TestStatusAnnotations(unittest.TestCase):
+    """Reading the round a player left, rather than counting their appearances."""
+
+    def test_each_status_spelling_is_read(self):
+        from parse import split_status
+        for cell, want in [
+            ("Zhou, Alex (0200539277) (Drop - Round 4)", ("drop", 4)),
+            ("Racek, Adrien (0200512639) (PlayoffCut - Round 11)", ("playoffcut", 11)),
+            ("Pfeiffer, Felix DEU (0303059880) (Cut \u2013 Round 13)", ("cut", 13)),
+            ("Lemperg, Kyle (0100000000) (TopX \u2013 Round 7)", ("topx", 7)),
+        ]:
+            self.assertEqual(split_status(cell), want, cell)
+
+    def test_an_unannotated_cell_has_no_status(self):
+        from parse import split_status
+        self.assertEqual(split_status("Gangapersaud, Anil ON (0200262499)"),
+                         (None, None))
+
+    def test_the_status_never_reaches_the_name(self):
+        from parse import normalise_name
+        self.assertEqual(
+            normalise_name("Racek, Adrien (0200512639) (PlayoffCut - Round 11)"),
+            "Adrien Racek", "an inline status stops the player matching pairings")
+
+    def test_standings_rows_carry_the_status(self):
+        from parse import parse_table
+        t = parse_table(
+            "<table><tr><th>Rank</th><th>Player Name</th><th>Points</th></tr>"
+            "<tr><td>1</td><td>Zhou, Alex (0200539277) (Drop \u2013 Round 4)</td>"
+            "<td>9</td></tr></table>")
+        self.assertEqual(t.rows[0]["name"], "Alex Zhou")
+        self.assertEqual((t.rows[0]["status"], t.rows[0]["statusRound"]), ("drop", 4))
+
+    def test_a_bye_round_is_counted_from_the_stated_round(self):
+        from records import derive
+        # 21 points is 7 wins; the player is in ten pairings but played eleven
+        # rounds -- one was a bye. Counting appearances gives 7-3, which is ten
+        # rounds for an eleven-round player.
+        row = {"name": "Isaac", "points": 21,
+               "status": "playoffcut", "statusRound": 11}
+        rounds = [[_pairing("Isaac", f"Foe{i}")] for i in range(10)]
+        got = derive([row], rounds, event_date="2026-08-16")[0]
+        self.assertEqual((got.wins, got.losses), (7, 4))
+        self.assertEqual(got.rounds_played, 11)
+        self.assertEqual(got.confidence, "derived")
+
+    def test_a_cut_player_stops_at_the_last_swiss_round(self):
+        from records import derive
+        # "Cut - Round 13" is a bracket round, not a Swiss one. Read literally
+        # it would charge two extra losses to a finalist.
+        standings = [
+            {"name": "Felix", "points": 27, "status": "cut", "statusRound": 13},
+            {"name": "Other", "points": 9, "status": "playoffcut", "statusRound": 11},
+        ]
+        rounds = [[_pairing("Felix", "Other")] for _ in range(11)]
+        got = derive(standings, rounds, event_date="2026-08-16")[0]
+        self.assertEqual((got.wins, got.losses), (9, 2))
+        self.assertEqual(got.rounds_played, 11)
+
+    def test_swiss_length_ignores_cut_rounds(self):
+        from records import swiss_last_round
+        self.assertEqual(swiss_last_round([
+            {"status": "drop", "statusRound": 4},
+            {"status": "playoffcut", "statusRound": 11},
+            {"status": "cut", "statusRound": 14},
+        ]), 11)
+
+    def test_swiss_length_is_unknown_without_annotations(self):
+        from records import swiss_last_round
+        self.assertIsNone(swiss_last_round([{"name": "Ada", "points": 3}]))
+
+    def test_an_unannotated_player_still_counts_appearances(self):
+        from records import derive
+        row = {"name": "Anil", "points": 24}
+        rounds = [[_pairing("Anil", f"Foe{i}")] for i in range(11)]
+        got = derive([row], rounds, event_date="2026-08-16")[0]
+        self.assertEqual((got.wins, got.losses, got.confidence), (8, 3, "derived"))
+
+    def test_wins_beyond_the_stated_round_stay_partial(self):
+        from records import derive
+        # Eight wins inside a stated seven rounds is a contradiction. Raising
+        # the round count to fit would invent an unbeaten 8-0.
+        row = {"name": "Ada", "points": 24, "status": "drop", "statusRound": 7}
+        got = derive([row], [[_pairing("Ada", "Bo")]], event_date="2026-08-16")[0]
+        self.assertEqual(got.confidence, "partial")
+        self.assertIsNone(got.losses)
+
+    def test_stated_rounds_survive_missing_pairings(self):
+        from records import derive
+        # No pairings at all: appearance counting can say nothing, the stated
+        # round still can.
+        row = {"name": "Ada", "points": 9, "status": "drop", "statusRound": 5}
+        got = derive([row], [], event_date="2026-08-16")[0]
+        self.assertEqual((got.wins, got.losses, got.confidence), (3, 2, "derived"))
+
+
+class TestFinalStandingsSelection(unittest.TestCase):
+    """Which no-round standings table becomes the end-of-Swiss one, and how the
+    post-cut table's annotations reach it."""
+
+    def _src(self, title, rows):
+        from build import Source
+        from parse import Post, Table
+        return Source(url="https://x/", post=Post(title=title, kind="standings",
+                                                  fmt="Genesys", round=None,
+                                                  table=Table("standings", [], rows)))
+
+    def test_after_swiss_wins_over_day_one_and_post_cut(self):
+        from build import pick_final_standings
+        day1 = self._src("Final Standings After Day 1 (Genesys Format)", [])
+        post = self._src("Final Standings (Genesys Format)", [])
+        swiss = self._src("Final Standings After Swiss (Genesys Format)", [])
+        for order in ([day1, post, swiss], [swiss, post, day1], [post, swiss, day1]):
+            self.assertIs(pick_final_standings(order).post.title,
+                          swiss.post.title, "must not depend on publication order")
+
+    def test_day_one_is_the_last_resort(self):
+        from build import pick_final_standings
+        day1 = self._src("Final Standings After Day 1 (Genesys Format)", [])
+        post = self._src("Final Standings (Genesys Format)", [])
+        self.assertIs(pick_final_standings([post, day1]), post)
+
+    def test_a_status_does_not_leak_into_an_earlier_round(self):
+        from build import build_format, Source
+        from parse import Post, Table
+
+        def std(title, rnd, rows):
+            return Source(url="https://x/", post=Post(title=title, kind="standings",
+                                                      fmt="Genesys", round=rnd,
+                                                      table=Table("standings", [], rows)))
+
+        def pairs(rnd, *names):
+            def cell(n):
+                return {"name": n, "region": None, "deck": None}
+            rows = [{"table": 1, "a": cell(names[0]), "b": cell(names[1])}]
+            return Source(url="https://x/", post=Post(title=f"Round {rnd} Pairings",
+                                                      kind="pairings", fmt="Genesys",
+                                                      round=rnd,
+                                                      table=Table("pairings", [], rows)))
+
+        # Ada is paired in round 1 and byed in round 2, so pairings can only ever
+        # account for one of the two rounds she played. Her status names round 2.
+        fmt = build_format("Genesys", [
+            pairs(1, "Ada", "Bo"), pairs(2, "Bo", "Cy"),
+            std("Standings After Round 1 (Genesys Format)", 1,
+                [{"name": "Ada", "rank": 1, "points": 3}]),
+            std("Final Standings After Swiss (Genesys Format)", None,
+                [{"name": "Ada", "rank": 1, "points": 3}]),
+            std("Final Standings (Genesys Format)", None,
+                [{"name": "Ada", "rank": 1, "points": 3,
+                  "status": "drop", "statusRound": 2}]),
+        ])
+        r1 = next(r for r in fmt["rounds"] if r["label"] == "R1")
+        rec = r1["standings"][0]["record"]
+        self.assertEqual((rec["wins"], rec["losses"]), (1, 0),
+                         "one round played by round 1, not the two her status names")
+        r2 = next(r for r in fmt["rounds"] if r["label"] == "R2")
+        rec2 = r2["standings"][0]["record"]
+        self.assertEqual((rec2["wins"], rec2["losses"]), (1, 1),
+                         "the bye round is only visible through the status")
+
+    def test_annotations_are_collected_across_tables(self):
+        from build import status_by_player
+        got = status_by_player([
+            self._src("Final Standings After Swiss", [{"name": "Ada", "points": 9}]),
+            self._src("Final Standings", [
+                {"name": "Ada", "points": 9, "status": "drop", "statusRound": 4},
+                {"name": "Bo", "points": 3, "status": None, "statusRound": None}]),
+        ])
+        self.assertEqual(got, {"Ada": {"status": "drop", "statusRound": 4}})
+
+
 class TestCutOrdering(unittest.TestCase):
     def test_stages_sort_into_bracket_order(self):
         from build import cut_rank

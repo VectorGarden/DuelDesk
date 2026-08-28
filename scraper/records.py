@@ -113,6 +113,53 @@ class Record:
                 "draws": self.draws, "confidence": self.confidence}
 
 
+def swiss_last_round(standings: list[dict]) -> int | None:
+    """The final Swiss round, read off the standings' own status annotations.
+
+    Every non-cut status names a round within Swiss, so the largest of them is
+    the last Swiss round. "cut" is excluded: its rounds run past the end of
+    Swiss into the bracket.
+
+    Deliberately not `len(pairing_rounds)`. A record must not depend on how many
+    pairings pages happened to be fetched -- with three of eleven in hand that
+    would cap everyone at three rounds and delete real losses. This reads the
+    event's own shape from a single page.
+    """
+    rounds = [r.get("statusRound") for r in standings
+              if r.get("status") in ("drop", "playoffcut", "topx")
+              and r.get("statusRound")]
+    return max(rounds) if rounds else None
+
+
+def rounds_played(row: dict, appearances: int | None,
+                  swiss_last: int | None) -> int | None:
+    """How many Swiss rounds a player actually played.
+
+    Counting pairings appearances undercounts byes: a bye pays 3 points and
+    prints no pairing row, so the player looks like they played one round fewer
+    and comes out a loss short. 34 of 169 Genesys entrants were wrong this way
+    -- Isaac Kritz held 21 points over 11 rounds and read 7-3, a record that
+    does not add up.
+
+    The status annotation states the round outright, so it is preferred where
+    present. A "cut" player played all of Swiss and then some bracket; their
+    Swiss record ends at the last Swiss round.
+
+    With no annotation this is exactly the old appearance count -- including
+    None, meaning never paired. Nothing is inferred from the points here: a
+    player with more wins than rounds must stay partial, and quietly raising the
+    round count to match would turn that into a fabricated unbeaten record.
+    """
+    status, stated = row.get("status"), row.get("statusRound")
+    if status == "cut":
+        stated = swiss_last
+    elif status is None:
+        stated = None
+    if stated is None:
+        return appearances
+    return max(stated, appearances or 0)
+
+
 def derive(standings: list[dict], pairing_rounds: list[list[dict]],
            *, event_date: str | None = None,
            standings_series: list[list[dict]] | None = None) -> list[Record]:
@@ -120,6 +167,7 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
     draws_possible = bool(event_date) and event_date < DRAWS_ABOLISHED
     appearances = count_appearances(pairing_rounds)
     exact = results_from_standings(standings_series) if standings_series else {}
+    swiss_last = swiss_last_round(standings)
 
     out: list[Record] = []
     for row in standings:
@@ -141,6 +189,7 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
             continue
 
         wins = points // WIN_POINTS
+        played = rounds_played(row, played, swiss_last)
         if played is None or played < wins:
             # Never paired, or fewer appearances than wins (a bye awards points
             # without a pairing). Wins are still sound; losses are not.
