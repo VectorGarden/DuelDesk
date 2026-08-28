@@ -731,6 +731,32 @@ class TestEventNaming(unittest.TestCase):
         self.assertEqual(event_name(["YCS Rio – Round 1 Pairings",
                                      "YCS Rio – Round 2 Pairings"], "slug"), "YCS Rio")
 
+    def test_a_longer_heading_still_names_the_same_event(self):
+        from naming import event_name
+        # "YCS Montreal Top Tables Update" is thirteen posts naming the same
+        # event under a longer heading. Counting them as a rival split the vote.
+        titles = (["YCS Montréal: Round 1 Pairings"] * 3
+                  + ["YCS Montréal Top Tables Update: Round 4"] * 4
+                  + ["Something Else: x"])
+        self.assertEqual(event_name(titles, "slug"), "YCS Montréal")
+
+    def test_a_post_that_names_nothing_is_an_abstention(self):
+        from naming import event_name
+        # Raising the fetch budget from 60 posts to 143 brought in news posts
+        # with no event in their heading. Counting those as votes against pushed
+        # a 39.9% share under a 40% threshold and renamed the event to its slug:
+        # the same coverage, more of it, and a worse answer.
+        titles = ["YCS Montréal: Round 1 Pairings"] * 3 + ["Doors open at 9am"] * 40
+        self.assertEqual(event_name(titles, "slug"), "YCS Montréal")
+
+    def test_two_equally_supported_names_resolve_the_same_way_twice(self):
+        from naming import event_name
+        # Nothing here can tell these apart. What it must not do is depend on the
+        # order the titles arrived in, so the same event does not get two names
+        # across two scrapes.
+        a = ["Long Event Name: one", "Long Event Name: two", "Short: one", "Short: two"]
+        self.assertEqual(event_name(a, "slug"), event_name(list(reversed(a)), "slug"))
+
     def test_the_slug_wins_when_the_posts_do_not_agree(self):
         from naming import event_name
         # One oddly-titled post must not get to name the whole event.
@@ -1220,6 +1246,81 @@ class TestFeedIdentity(unittest.TestCase):
         item = ET.fromstring(xml).find("channel/item")
         self.assertIsNone(item.find('category[@domain="format"]'),
                           "an announcement is about the event, not a tournament")
+
+
+class TestFetchBudget(unittest.TestCase):
+    """Which of an event's posts get fetched when not all of them can."""
+
+    def posts(self, **counts):
+        out = []
+        for kind, n in counts.items():
+            out += [{"kind": kind, "slug": f"{kind}-{i}",
+                     "lastmod": f"2026-08-16T{i:02d}:00:00+00:00"} for i in range(n)]
+        return out
+
+    def taken(self, posts, limit):
+        from collections import Counter
+        from run import select_posts
+        return Counter(p["kind"] for p in select_posts(list(posts), limit))
+
+    def test_pairings_and_standings_are_never_rationed(self):
+        # A record is wrong without every round's pairings, so these come whole
+        # even when the budget is tight.
+        got = self.taken(self.posts(pairings=30, standings=23, feature=37, news=39), 60)
+        self.assertEqual(got["pairings"], 30)
+        self.assertEqual(got["standings"], 23)
+
+    def test_no_kind_is_starved_to_nothing(self):
+        # The failure this replaces: 30 pairings and 23 standings filled 53 of 60
+        # slots, so 5 of 37 features were fetched and all five were one format.
+        got = self.taken(self.posts(pairings=30, standings=23, feature=37,
+                                    news=39, result=12, deck=2), 60)
+        for kind in ("feature", "news", "result", "deck"):
+            self.assertGreater(got[kind], 0, f"{kind} was starved: {dict(got)}")
+
+    def test_a_whole_event_fits_in_the_default_budget(self):
+        # An event runs to about 140 posts and its table of contents caps under
+        # 200, so nothing is rationed in practice.
+        posts = self.posts(pairings=30, standings=23, feature=37, news=39,
+                           result=12, deck=2)
+        got = self.taken(posts, 200)
+        self.assertEqual(sum(got.values()), len(posts))
+
+    def test_the_limit_is_honoured(self):
+        posts = self.posts(pairings=5, standings=5, feature=50, news=50)
+        self.assertEqual(sum(self.taken(posts, 20).values()), 20)
+
+    def test_a_tight_budget_still_takes_every_pairing(self):
+        # Even past the limit: a partial pairings set produces wrong records,
+        # which is worse than one more request.
+        got = self.taken(self.posts(pairings=40, standings=10), 20)
+        self.assertEqual(got["pairings"], 20, "truncation must not drop a round silently")
+
+    def test_the_default_budget_covers_a_whole_event(self):
+        import re, run
+        # The default is what starved feature matches: at 60, pairings and
+        # standings alone took 53 of the slots. An event runs to about 140 posts
+        # and its own table of contents caps under 200. Read from the source
+        # because the parser is built inside main() and never handed out.
+        src = Path(run.__file__).read_text()
+        m = re.search(r'--limit", type=int, default=(\d+)', src)
+        self.assertIsNotNone(m, "the --limit argument moved or was renamed")
+        self.assertGreaterEqual(int(m.group(1)), 150,
+                                "too low to hold one event, which is how this broke")
+
+    def test_a_feature_match_outranks_a_news_post_for_the_last_slot(self):
+        # Both are rationed, but a feature attaches to a round on the page while
+        # a news post only ever appears in the feed.
+        got = self.taken(self.posts(pairings=3, standings=2, feature=5, news=5), 6)
+        self.assertEqual(got["feature"], 1)
+        self.assertEqual(got["news"], 0)
+
+    def test_newest_first_within_a_kind(self):
+        from run import select_posts
+        posts = self.posts(feature=5)
+        order = [p["slug"] for p in select_posts(posts, 3)]
+        self.assertEqual(order, ["feature-4", "feature-3", "feature-2"],
+                         "the newest coverage is the coverage worth having")
 
 
 class TestCadence(unittest.TestCase):
