@@ -2,7 +2,7 @@
   "name": "dueldesk",
   "version": "1.0.0",
   "private": true,
-  "description": "Yu-Gi-Oh! TCG event coverage \u2014 a dependency-free single-page design study",
+  "description": "Yu-Gi-Oh! TCG event coverage — a dependency-free single-page design study",
   "type": "module",
   "scripts": {
     "test": "node --test test/*.test.mjs"
@@ -12,6 +12,6 @@
     "vnu-jar": "23.4.11"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   }
 }
