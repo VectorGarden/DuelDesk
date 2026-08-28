@@ -403,6 +403,113 @@ test('the rail does not scroll-snap', async (t) => {
     'chip to the padded start edge, pushing the selected one into the far fade');
 });
 
+/* The badge is the page's only claim about whether any of what it shows is
+   real, so both directions are failures worth naming: hiding it over invented
+   records passes them off as coverage, and showing it over real ones tells a
+   reader to ignore results that actually happened. */
+function withRounds(transform) {
+  return {
+    routes: {
+      'rounds.json': async () => {
+        const { readFileSync } = await import('node:fs');
+        const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
+        transform(d);
+        return { status: 200, body: JSON.stringify(d) };
+      },
+    },
+  };
+}
+
+/* Real coverage is indexed and linked, never rehosted. The page shows Konami's
+   headlines, so each one has to be a way to reach the post it names -- that is
+   the whole basis on which this publishes anything at all. */
+function withFeed(xml) {
+  return { routes: { 'feed.xml': { status: 200, body: xml } } };
+}
+
+const REAL_FEED = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>Duel Desk — YCS Montréal</title>
+  <link>https://dueldesk.reizu.dev/</link>
+  <description>Indexed from Konami's official event coverage.</description>
+  <item>
+    <title>YCS Montréal: Round 3 Pairings (Genesys Format)</title>
+    <link>https://yugiohblog.konami.com/2026/ycs/round-3/</link>
+    <category>Pairings</category>
+    <pubDate>Sun, 16 Aug 2026 18:07:30 +0000</pubDate>
+    <description>Pairings from YCS Montréal, published by Konami.</description>
+  </item>
+</channel></rss>`;
+
+test('a real headline links to the post it names', async (t) => {
+  const page = await loadPage(withFeed(REAL_FEED));
+  t.after(() => page.close());
+  const link = page.$('#events a.post__t');
+  assert.ok(link, 'the headline is not a link');
+  assert.equal(link.getAttribute('href'), 'https://yugiohblog.konami.com/2026/ycs/round-3/');
+  assert.match(link.getAttribute('rel'), /noreferrer/);
+});
+
+test('a headline pointing at this site is not made a link', async (t) => {
+  // The sample feed points every item at our own homepage. A link there
+  // reloads the page under the reader and leads nowhere.
+  const page = await loadPage(withFeed(
+    REAL_FEED.replace('https://yugiohblog.konami.com/2026/ycs/round-3/',
+                      'https://dueldesk.reizu.dev/')));
+  t.after(() => page.close());
+  assert.equal(page.$('#events a.post__t'), null);
+  assert.ok(page.$('#events span.post__t'), 'still rendered, just not as a link');
+});
+
+test('an unusable link is not made a link', async (t) => {
+  const page = await loadPage(withFeed(
+    REAL_FEED.replace('https://yugiohblog.konami.com/2026/ycs/round-3/',
+                      'http://[unparseable')));
+  t.after(() => page.close());
+  assert.equal(page.$('#events a.post__t'), null);
+  assert.ok(page.$('#events span.post__t'), 'the headline still shows');
+});
+
+test('the page asks not to be indexed', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  // The site is public because Pages is, not because it is meant to be found.
+  // Duelists should not turn up here searching for their own records.
+  const meta = page.$('meta[name="robots"]');
+  assert.ok(meta, 'no robots meta tag');
+  assert.match(meta.getAttribute('content'), /noindex/);
+});
+
+test('sample data is badged as sample data', async (t) => {
+  const page = await loadPage(withRounds((d) => { d.sample = true; }));
+  t.after(() => page.close());
+  assert.equal(page.$('#demo').hidden, false);
+  assert.equal(page.window.getComputedStyle(page.$('#demo')).display, 'inline-block');
+});
+
+test('real coverage is not badged as sample data', async (t) => {
+  const page = await loadPage(withRounds((d) => { d.sample = false; }));
+  t.after(() => page.close());
+  assert.equal(page.$('#demo').hidden, true);
+  assert.equal(page.window.getComputedStyle(page.$('#demo')).display, 'none',
+    'the attribute alone does not hide it: .demo sets display:inline-block');
+});
+
+test('a file that does not say what it is is not treated as sample', async (t) => {
+  // It is also rejected by check-rounds.py before it can be deployed. This
+  // pins the page's own behaviour if one ever reaches it: the badge is a
+  // positive claim, so absence of the claim is not the claim.
+  const page = await loadPage(withRounds((d) => { delete d.sample; }));
+  t.after(() => page.close());
+  assert.equal(page.$('#demo').hidden, true);
+});
+
+test('a truthy value that is not true does not count', async (t) => {
+  const page = await loadPage(withRounds((d) => { d.sample = 'yes'; }));
+  t.after(() => page.close());
+  assert.equal(page.$('#demo').hidden, true, 'exactly true, not merely truthy');
+});
+
 test('the format selector leads the track header', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());

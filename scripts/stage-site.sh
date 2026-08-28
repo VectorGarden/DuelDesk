@@ -14,7 +14,7 @@ OUT="${1:-_site}"
 rm -rf "$OUT"
 mkdir -p "$OUT"
 
-FILES=(index.html feed.xml rounds.json og.png favicon.ico site.webmanifest CNAME)
+FILES=(index.html feed.xml rounds.json og.png favicon.ico site.webmanifest CNAME robots.txt)
 DIRS=(icons)
 
 for f in "${FILES[@]}"; do

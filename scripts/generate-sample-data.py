@@ -264,6 +264,9 @@ def main():
             r.pop("_stamp", None)
     json.dump({
         "event": event,
+        # Says so in the file rather than only in the markup, so the page can
+        # show its badge from the data it is actually displaying.
+        "sample": True,
         "coverageBy": "the Duel Desk team",
         # Ties were removed from tournament policy on 2025-09-02. Before that a
         # record reads W-L-T; after it, W-L. The shape follows the era.

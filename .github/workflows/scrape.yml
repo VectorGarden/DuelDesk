@@ -14,9 +14,14 @@ name: Scrape coverage
 # Over a quiet day it is one check an hour, as before; over a day of coverage it
 # is every ten minutes.
 #
-# This does NOT publish to the site. It produces an artifact and reports what it
-# found, so the scraper can be judged against live coverage before anything it
-# builds is served to anyone.
+# What this finds IS published. It commits rounds.json and feed.xml, and that
+# push runs Validate, which checks them again and deploys.
+#
+# Committing rather than deploying straight from here is what keeps the site
+# coherent: the repository is the one source of what is served, so a later code
+# merge redeploys the same coverage instead of reverting the site to the
+# simulation. It also leaves a history of what was published and when, which an
+# artifact that expires in 14 days does not.
 on:
   schedule:
     - cron: '3,13,23,33,43,53 * * * *'
@@ -28,7 +33,7 @@ on:
         default: false
 
 permissions:
-  contents: read
+  contents: write        # commits the coverage it scrapes; see "Publish" below
 
 concurrency:
   group: scrape
@@ -126,6 +131,31 @@ jobs:
             scraped-rounds.json
             scraped-feed.xml
           retention-days: 14
+
+      # Publish. Only when the bytes actually differ: the gate opens whenever the
+      # sitemap moves, which includes posts this scraper does not read, and an
+      # empty commit every ten minutes during an event would bury the history it
+      # exists to provide -- and trigger a deploy that changes nothing.
+      - if: steps.gate.outputs.run == 'yes'
+        id: publish
+        run: |
+          cp scraped-rounds.json rounds.json
+          cp scraped-feed.xml feed.xml
+          if git diff --quiet -- rounds.json feed.xml; then
+            echo "No change to the published data." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rounds.json feed.xml
+          git commit -m "Publish coverage of $(python3 -c "
+          import json; print(json.load(open('rounds.json'))['event'])
+          ")"
+          # Rebase rather than force: a code merge may have landed since checkout,
+          # and losing it to a data push would be a bad trade.
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+          echo "Published to main; Validate will deploy it." >> "$GITHUB_STEP_SUMMARY"
 
       # Only when the check actually ran, so dropped ticks leave no trace. The
       # key is unique per attempt because a cache entry cannot be overwritten;

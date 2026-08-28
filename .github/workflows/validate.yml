@@ -126,20 +126,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # The committed feed and round data carry the timestamps they were
-      # generated with, and liveness is derived: an event is only "live" while
-      # the feed's own build time is recent. Left alone, the deployed demo stops
-      # showing its live state a few hours after the data was last regenerated.
-      #
-      # The PRNG is seeded, so this reproduces the same tournament -- same
-      # bracket, same records, same results. Only the clock moves.
-      - name: Regenerate sample data with current timestamps
+      # Only while the site is still serving the simulation. The sample data
+      # carries the timestamps it was generated with and liveness is derived
+      # from them, so an untouched demo stops showing its live state a few hours
+      # after it was last built. Real coverage has real timestamps and must not
+      # be overwritten, so this is skipped the moment the committed data says it
+      # is not sample -- otherwise every code merge would quietly replace a
+      # scraped event with the simulation.
+      # Falls back to "not sample" when the field is missing, which is the safe
+      # direction twice over: it does not regenerate over data that might be
+      # real, and it leaves check-rounds.py below to reject the file with a
+      # readable message rather than dying here on a KeyError.
+      - id: provenance
+        run: |
+          echo "sample=$(python3 -c "
+          import json
+          print('true' if json.load(open('rounds.json')).get('sample') is True else 'false')
+          ")" >> "$GITHUB_OUTPUT"
+
+      - if: steps.provenance.outputs.sample == 'true'
+        name: Regenerate sample data with current timestamps
         run: python3 scripts/generate-sample-data.py
 
-      # The regenerated files are not the ones the validate job checked, so
-      # check them again. A generator fault would otherwise publish data that
-      # nothing had verified.
-      - name: Validate the regenerated data
+      # Whatever is about to be staged, check it here too: the regenerated files
+      # are not the ones the validate job saw, and scraped data arrives from a
+      # different workflow entirely. Nothing is published unverified.
+      - name: Validate the data about to be published
         run: |
           python3 .github/scripts/check-feed.py feed.xml
           python3 .github/scripts/check-rounds.py rounds.json

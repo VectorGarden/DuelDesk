@@ -82,7 +82,11 @@ export async function loadPage(opts = {}) {
   virtualConsole.on('jsdomError', (e) => errors.push(e));
 
   const dom = new JSDOM(fixture('index.html'), {
-    url: 'https://dueldesk.test/',
+    /* The site's real origin, because the page now decides what to link by
+       comparing hosts: an item pointing at this site is not a destination, one
+       pointing at Konami is. Served from anywhere else, the sample feed's own
+       links look external and the coverage list sprouts links to itself. */
+    url: 'https://dueldesk.reizu.dev/',
     runScripts: 'dangerously',
     pretendToBeVisual: true,
     virtualConsole,

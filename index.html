@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Not meant to be found. The coverage here is Konami's, republished
+       for one reader, so it should not turn up in search results for
+       Duelists looking for their own records. robots.txt says the same
+       to crawlers that read it before the page. -->
+  <meta name="robots" content="noindex, nofollow">
 <title>Duel Desk — Yu-Gi-Oh! TCG event coverage</title>
 <meta name="description" content="Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.">
 <link rel="canonical" href="https://dueldesk.reizu.dev/">
@@ -381,6 +386,10 @@ tbody tr:hover{background:var(--surface-2)}
 }
 @media (max-width:560px){.post__k{width:auto}.post{flex-wrap:wrap; gap:.5rem}}
 .post__t{flex:1 1 auto; font-weight:500}
+/* Reads as the headline it is, not as a blue link in a row of plain ones. The
+   underline on hover and focus is what says it goes somewhere. */
+a.post__t{color:inherit; text-decoration:none}
+a.post__t:hover,a.post__t:focus-visible{text-decoration:underline}
 .post__time{font:400 .78rem var(--mono); color:var(--text-3); flex:none}
 
 .notice{
@@ -440,6 +449,11 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
   display:inline-block; font:600 .68rem var(--body); letter-spacing:.1em; text-transform:uppercase;
   color:var(--gold); border:1px solid var(--gold); padding:.3rem .5rem; border-radius:var(--r-sm);
 }
+/* display:inline-block above is an author rule and beats the UA sheet's
+   [hidden]{display:none}, so the attribute alone would not hide the badge.
+   Written after what it overrides: a browser would take it either way on
+   specificity, but the rule reads as an override where it sits. */
+.demo[hidden]{display:none}
 
 /* ---------------- USER PREFERENCES ---------------- */
 @media (prefers-reduced-motion:reduce){
@@ -491,7 +505,10 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
     <div class="hero__top">
       <span class="livetag" id="livetag" hidden><i aria-hidden="true"></i>Live now</span>
       <span class="stamp" id="stamp">Loading coverage…</span>
-      <span class="demo">Sample data</span>
+      <!-- Shown from the data, not asserted by the markup: this badge is the
+             page's one claim about whether any of what follows is real, and it
+             must not be able to disagree with the file it describes. -->
+      <span class="demo" id="demo" hidden>Sample data</span>
     </div>
 
     <h1 id="live-h">Loading event…</h1>
@@ -643,6 +660,18 @@ const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ESCAPES[c]);
    The URL constructor is doing the parsing on purpose -- it normalises the
    tricks a hand-written scheme regex misses: "java\tscript:", leading
    whitespace, control characters, odd encodings. */
+/* A headline is only a link when it goes somewhere else. The feed carries a
+   <link> for every item, but the sample feed points every one at this site's own
+   homepage, so linking those would reload the page under the reader. For real
+   coverage the link is the point: the page shows Konami's headlines, and this is
+   how a reader reaches the post itself. */
+function offsite(url){
+  /* Every url here has been through safeUrl(), so it is either an http(s) URL or
+     the inert '#'. That is why this needs no guard of its own: '#' resolves
+     against this page and compares equal, and nothing reaching here can throw. */
+  return new URL(url, location.href).host !== location.host;
+}
+
 function safeUrl(raw){
   const value = String(raw ?? '').trim();
   /* Empty and fragment-only inputs resolve to the site's own homepage once the
@@ -951,6 +980,10 @@ function renderEventMeta(){
     return;
   }
   const f = formatOf(activeFormat);
+  /* Explicitly true, not merely truthy or absent: a file that forgets to say
+     what it is must not pass as real coverage. check-rounds.py requires the
+     field, so the page and the data cannot drift apart quietly. */
+  document.getElementById('demo').hidden = eventInfo.sample !== true;
   h1.textContent = eventInfo.event;
   meta.innerHTML = [
     `<span><b>${esc((f?.duelists ?? 0).toLocaleString())}</b> Duelists</span>`,
@@ -1411,7 +1444,9 @@ function renderEvents(){
       <div class="event__body" id="ev-${i}" ${isOpen ? '' : 'hidden'}>
         ${ev.posts.map(p => `<div class="post" style="--k:${kindOf(p.kind).color}">
           <span class="post__k">${esc(kindOf(p.kind).label)}</span>
-          <span class="post__t">${esc(p.title)}</span>
+          ${offsite(p.url)
+            ? `<a class="post__t" href="${esc(p.url)}" rel="external noreferrer">${esc(p.title)}</a>`
+            : `<span class="post__t">${esc(p.title)}</span>`}
           <span class="post__time">${esc(p.time)}</span>
         </div>`).join('')}
       </div>

@@ -815,6 +815,47 @@ class TestFeed(unittest.TestCase):
         self.assertEqual(len(root.findall("channel/item")), 0)
 
 
+class TestProvenanceCheck(unittest.TestCase):
+    """check-rounds.py is what stops a file that misdescribes itself reaching
+    the site. It runs in CI against real data, but its own rules had no test,
+    and this is the rule that decides whether invented records get served as
+    coverage."""
+
+    CHECKER = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
+
+    def check(self, mutate):
+        import json, subprocess, tempfile
+        good = json.loads((Path(__file__).resolve().parent.parent / "rounds.json").read_text())
+        mutate(good)
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
+            json.dump(good, fh)
+            path = fh.name
+        done = subprocess.run(["python3", str(self.CHECKER), path],
+                              capture_output=True, text=True)
+        return done.returncode, done.stdout
+
+    def test_the_committed_data_passes(self):
+        code, out = self.check(lambda d: None)
+        self.assertEqual(code, 0, out)
+
+    def test_a_file_that_does_not_say_what_it_is_is_rejected(self):
+        code, out = self.check(lambda d: d.pop("sample"))
+        self.assertEqual(code, 1)
+        self.assertIn("sample", out)
+
+    def test_a_truthy_value_that_is_not_boolean_is_rejected(self):
+        # "yes" and 1 are both truthy, and the page requires exactly true, so a
+        # file saying either would be served with no badge over invented data.
+        for value in ("yes", 1, None):
+            code, out = self.check(lambda d, v=value: d.__setitem__("sample", v))
+            self.assertEqual(code, 1, f"{value!r} should be rejected: {out}")
+
+    def test_both_booleans_are_accepted(self):
+        for value in (True, False):
+            code, out = self.check(lambda d, v=value: d.__setitem__("sample", v))
+            self.assertEqual(code, 0, f"{value!r} should be accepted: {out}")
+
+
 class TestCadence(unittest.TestCase):
     """Which scheduled ticks reach the blog and which are dropped."""
 
