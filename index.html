@@ -203,10 +203,18 @@ a{color:inherit}
 
 /* ---------------- ROUND TRACK (signature) ---------------- */
 .track{margin-top:1.6rem; border-top:1px solid var(--gold); padding-top:1rem}
-.track__head{display:flex; align-items:baseline; justify-content:space-between; gap:1rem; margin-bottom:.7rem; flex-wrap:wrap}
+/* Label and format selector read as one group on the left; the hint is pushed
+   to the far end by its own margin rather than by space-between, which would
+   have spread the three evenly and floated the selector into the middle. */
+.track__head{display:flex; align-items:center; gap:.9rem; margin-bottom:.7rem; flex-wrap:wrap}
 .track__label{font:600 .74rem/1 var(--body); letter-spacing:.16em; text-transform:uppercase; color:var(--text-3)}
-.track__hint{font-size:.78rem; color:var(--text-3)}
-.formats{display:flex; gap:0; border:1px solid var(--line); border-radius:var(--r-md); overflow:hidden}
+.track__hint{font-size:.78rem; color:var(--text-3); margin-left:auto}
+/* Sized to its buttons so the border hugs them instead of stretching. */
+.formats{
+  display:flex; width:max-content; max-width:100%;
+  gap:0; border:1px solid var(--line); border-radius:var(--r-md); overflow:hidden;
+}
+.formats[hidden]{display:none}
 .formats button{
   font:500 .82rem var(--body); background:var(--surface-2); color:var(--text-2);
   border:0; border-right:1px solid var(--line); padding:.45rem .9rem; min-height:40px; cursor:pointer;
@@ -492,10 +500,19 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
 
     <div class="track">
       <div class="track__head">
-        <h2 class="track__label" id="track-h">Round track</h2>
         <!-- Populated from the data: an event runs one tournament per format,
-             each with its own rounds and its own round count. -->
+             each with its own rounds and its own round count.
+
+             It leads the row so it lines up with the rail's left edge below,
+             and shares the row rather than taking one of its own, which spent a
+             band of empty space on one small control. It reads in the order the
+             choices are made: which tournament, then which round.
+
+             The heading still labels the rail's tablist through aria-labelledby,
+             and this group carries its own label, so neither depends on sitting
+             first. -->
         <div class="formats" id="formats" role="group" aria-label="Tournament format" hidden></div>
+        <h2 class="track__label" id="track-h">Round track</h2>
         <p class="track__hint">Use the left and right arrow keys to move between rounds.</p>
       </div>
       <div class="track__rail" role="tablist" aria-labelledby="track-h" id="rail"></div>
