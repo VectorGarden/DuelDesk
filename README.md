@@ -48,11 +48,13 @@ loads the real page into jsdom with a controllable network and exercises the act
 render functions and state machines — not a re-implementation that could drift from them.
 
 ```bash
+nvm use     # reads .nvmrc
 npm ci
 npm test
 ```
 
-Requires Node 20+ (`node:test` and jsdom). The **site itself stays dependency-free**; jsdom and
+Requires Node 20+ (`node:test` and jsdom). [`.nvmrc`](.nvmrc) pins the version and CI reads the
+same file, so a local shell and the runner cannot drift apart. The **site itself stays dependency-free**; jsdom and
 `vnu-jar` are dev dependencies used only for testing and validation.
 
 Covered: escaping and URL-scheme guards, feed parsing and classification, every data state
