@@ -183,7 +183,7 @@ def main():
                 "id": str(n), "label": f"R{n}", "phase": "Swiss", "state": "done",
                 "order": n,
                 "tables": spec["field"] // 2,
-                "posted": stamp.strftime("%H:%M"),
+                "posted": stamp.strftime("%H:%M"), "_stamp": stamp,
                 "standingsAfter": n,
                 "pairings": entering,
                 "standings": standings_table(players),
@@ -212,7 +212,7 @@ def main():
         rounds.append({
             "id": "T8", "label": "Top 8", "phase": "Top cut", "state": "done",
             "order": 100,
-            "tables": len(t8_pairs), "posted": t8_stamp.strftime("%H:%M"),
+            "tables": len(t8_pairs), "posted": t8_stamp.strftime("%H:%M"), "_stamp": t8_stamp,
             "standingsAfter": swiss, "pairings": t8_rows, "standings": final_table,
             "feature": feature_of(t8_rows, "The top seed opens the cut."),
         })
@@ -224,7 +224,7 @@ def main():
         rounds.append({
             "id": "T4", "label": "Top 4", "phase": "Top cut", "state": "live",
             "order": 101,
-            "tables": len(t4_pairs), "posted": t4_stamp.strftime("%H:%M"),
+            "tables": len(t4_pairs), "posted": t4_stamp.strftime("%H:%M"), "_stamp": t4_stamp,
             "standingsAfter": swiss, "pairings": t4_rows, "standings": final_table,
             "feature": feature_of(t4_rows, "Two matches away from the title."),
         })
@@ -243,11 +243,17 @@ def main():
             "rounds": rounds,
         })
 
-    newest = max(r["posted"] for f in formats_out for r in f["rounds"] if r["posted"])
+    # Derived from what was actually emitted. posted_at() closes over the last
+    # format's round count, so calling it out here extrapolated past `now` and
+    # stamped the file with a time in the future.
+    newest = max(r["_stamp"] for f in formats_out for r in f["rounds"] if r.get("_stamp"))
+    for f in formats_out:
+        for r in f["rounds"]:
+            r.pop("_stamp", None)
     json.dump({
         "event": event,
         "coverageBy": "the Duel Desk team",
-        "updated": posted_at(SWISS + 1).isoformat().replace("+00:00", "Z"),
+        "updated": newest.isoformat().replace("+00:00", "Z"),
         "formats": formats_out,
     }, open("rounds.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     print(f"rounds.json: {len(formats_out)} formats, "

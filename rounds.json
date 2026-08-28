@@ -1,7 +1,7 @@
 {
   "event": "Remote Duel YCS August 2026",
   "coverageBy": "the Duel Desk team",
-  "updated": "2026-08-28T17:28:06.807061Z",
+  "updated": "2026-08-28T16:24:49.091995Z",
   "formats": [
     {
       "format": "Advanced",
@@ -15,7 +15,7 @@
           "state": "done",
           "order": 1,
           "tables": 624,
-          "posted": "07:58",
+          "posted": "08:10",
           "standingsAfter": 1,
           "pairings": [
             {
@@ -154,7 +154,7 @@
           "state": "done",
           "order": 2,
           "tables": 624,
-          "posted": "08:36",
+          "posted": "08:48",
           "standingsAfter": 2,
           "pairings": [
             {
@@ -293,7 +293,7 @@
           "state": "done",
           "order": 3,
           "tables": 624,
-          "posted": "09:14",
+          "posted": "09:26",
           "standingsAfter": 3,
           "pairings": [
             {
@@ -432,7 +432,7 @@
           "state": "done",
           "order": 4,
           "tables": 624,
-          "posted": "09:52",
+          "posted": "10:04",
           "standingsAfter": 4,
           "pairings": [
             {
@@ -571,7 +571,7 @@
           "state": "done",
           "order": 5,
           "tables": 624,
-          "posted": "10:30",
+          "posted": "10:42",
           "standingsAfter": 5,
           "pairings": [
             {
@@ -710,7 +710,7 @@
           "state": "done",
           "order": 6,
           "tables": 624,
-          "posted": "11:08",
+          "posted": "11:20",
           "standingsAfter": 6,
           "pairings": [
             {
@@ -849,7 +849,7 @@
           "state": "done",
           "order": 7,
           "tables": 624,
-          "posted": "11:46",
+          "posted": "11:58",
           "standingsAfter": 7,
           "pairings": [
             {
@@ -988,7 +988,7 @@
           "state": "done",
           "order": 8,
           "tables": 624,
-          "posted": "12:24",
+          "posted": "12:36",
           "standingsAfter": 8,
           "pairings": [
             {
@@ -1127,7 +1127,7 @@
           "state": "done",
           "order": 9,
           "tables": 624,
-          "posted": "13:02",
+          "posted": "13:14",
           "standingsAfter": 9,
           "pairings": [
             {
@@ -1266,7 +1266,7 @@
           "state": "done",
           "order": 10,
           "tables": 624,
-          "posted": "13:40",
+          "posted": "13:52",
           "standingsAfter": 10,
           "pairings": [
             {
@@ -1405,7 +1405,7 @@
           "state": "done",
           "order": 11,
           "tables": 624,
-          "posted": "14:18",
+          "posted": "14:30",
           "standingsAfter": 11,
           "pairings": [
             {
@@ -1544,7 +1544,7 @@
           "state": "done",
           "order": 12,
           "tables": 624,
-          "posted": "14:56",
+          "posted": "15:08",
           "standingsAfter": 12,
           "pairings": [
             {
@@ -1683,7 +1683,7 @@
           "state": "done",
           "order": 100,
           "tables": 4,
-          "posted": "15:34",
+          "posted": "15:46",
           "standingsAfter": 12,
           "pairings": [
             {
@@ -1794,7 +1794,7 @@
           "state": "live",
           "order": 101,
           "tables": 2,
-          "posted": "16:12",
+          "posted": "16:24",
           "standingsAfter": 12,
           "pairings": [
             {
@@ -1911,7 +1911,7 @@
           "state": "done",
           "order": 1,
           "tables": 192,
-          "posted": "09:14",
+          "posted": "09:26",
           "standingsAfter": 1,
           "pairings": [
             {
@@ -2050,7 +2050,7 @@
           "state": "done",
           "order": 2,
           "tables": 192,
-          "posted": "09:52",
+          "posted": "10:04",
           "standingsAfter": 2,
           "pairings": [
             {
@@ -2189,7 +2189,7 @@
           "state": "done",
           "order": 3,
           "tables": 192,
-          "posted": "10:30",
+          "posted": "10:42",
           "standingsAfter": 3,
           "pairings": [
             {
@@ -2328,7 +2328,7 @@
           "state": "done",
           "order": 4,
           "tables": 192,
-          "posted": "11:08",
+          "posted": "11:20",
           "standingsAfter": 4,
           "pairings": [
             {
@@ -2467,7 +2467,7 @@
           "state": "done",
           "order": 5,
           "tables": 192,
-          "posted": "11:46",
+          "posted": "11:58",
           "standingsAfter": 5,
           "pairings": [
             {
@@ -2606,7 +2606,7 @@
           "state": "done",
           "order": 6,
           "tables": 192,
-          "posted": "12:24",
+          "posted": "12:36",
           "standingsAfter": 6,
           "pairings": [
             {
@@ -2745,7 +2745,7 @@
           "state": "done",
           "order": 7,
           "tables": 192,
-          "posted": "13:02",
+          "posted": "13:14",
           "standingsAfter": 7,
           "pairings": [
             {
@@ -2884,7 +2884,7 @@
           "state": "done",
           "order": 8,
           "tables": 192,
-          "posted": "13:40",
+          "posted": "13:52",
           "standingsAfter": 8,
           "pairings": [
             {
@@ -3023,7 +3023,7 @@
           "state": "done",
           "order": 9,
           "tables": 192,
-          "posted": "14:18",
+          "posted": "14:30",
           "standingsAfter": 9,
           "pairings": [
             {
@@ -3162,7 +3162,7 @@
           "state": "done",
           "order": 10,
           "tables": 192,
-          "posted": "14:56",
+          "posted": "15:08",
           "standingsAfter": 10,
           "pairings": [
             {
@@ -3301,7 +3301,7 @@
           "state": "done",
           "order": 100,
           "tables": 4,
-          "posted": "15:34",
+          "posted": "15:46",
           "standingsAfter": 10,
           "pairings": [
             {
@@ -3412,7 +3412,7 @@
           "state": "live",
           "order": 101,
           "tables": 2,
-          "posted": "16:12",
+          "posted": "16:24",
           "standingsAfter": 10,
           "pairings": [
             {
