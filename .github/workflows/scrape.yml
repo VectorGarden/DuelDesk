@@ -46,7 +46,7 @@ jobs:
     outputs:
       published: ${{ steps.publish.outputs.published }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # The high-water mark and the timings from the previous run. Cached rather
       # than committed: a scraper should not need write access to the repository.
@@ -54,7 +54,7 @@ jobs:
       # does not write a cache entry -- at six ticks an hour that would be a few
       # hundred entries a day evicting everything else in the repository's cache.
       - id: cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .scrape-state
           key: scrape-state-${{ github.run_id }}-${{ github.run_attempt }}
@@ -126,7 +126,7 @@ jobs:
           python3 .github/scripts/check-feed.py scraped-feed.xml
 
       - if: steps.gate.outputs.run == 'yes'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: scraped-rounds
           path: |
@@ -164,7 +164,7 @@ jobs:
       # key is unique per attempt because a cache entry cannot be overwritten;
       # the restore-key prefix picks the newest of them on the next run.
       - if: always() && steps.cadence.outputs.check == 'yes'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .scrape-state
           key: scrape-state-${{ github.run_id }}-${{ github.run_attempt }}
