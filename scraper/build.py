@@ -16,11 +16,11 @@ Two things it deliberately will not do:
 from __future__ import annotations
 
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from typing import Any
 
-from naming import clock
+from naming import clock, feature_players
 from records import derive
 
 CUT_ORDER_BASE = 100          # cut rounds sort after every Swiss round
@@ -117,7 +117,7 @@ def build_format(name: str, sources: list[Source], *,
     by_round: dict[tuple, dict[str, Source]] = defaultdict(dict)
     floating_standings: list[Source] = []
     for s in sources:
-        if s.post.kind not in ("pairings", "standings"):
+        if s.post.kind not in ("pairings", "standings", "feature"):
             continue
         key = round_key(s.post)
         if key is None:
@@ -126,6 +126,14 @@ def build_format(name: str, sources: list[Source], *,
             # and attached below, once the last Swiss round is known.
             if s.post.kind == "standings":
                 floating_standings.append(s)
+            continue
+        # A round can carry more than one feature match -- Genesys round 4 had two
+        # -- and the panel shows one. Take the newest rather than whichever the
+        # source order happened to leave last, so the choice is a decision and
+        # the same scrape twice running gives the same answer.
+        existing = by_round[key].get(s.post.kind)
+        if (s.post.kind == "feature" and existing
+                and (existing.posted or "") > (s.posted or "")):
             continue
         by_round[key][s.post.kind] = s
     if not by_round:
@@ -157,6 +165,67 @@ def build_format(name: str, sources: list[Source], *,
                 if "pairings" in by_round[k] and (limit is None or k[1] <= limit)]
         return ([by_round[k]["pairings"].post.table.rows for k in keys],
                 [k[1] for k in keys])
+
+    # Filled by the last Swiss round as it is built, then read by the cut rounds
+    # that follow it. swiss_keys sorts before cut_keys, so it is always populated
+    # before anything needs it -- but default to empty rather than rely on that,
+    # since an event whose Swiss standings never arrived should show nothing in
+    # the cut rather than fail to build at all.
+    final_standings: list[dict] = []
+    by_player: dict[str, dict] = {}
+
+    def cut_records(key) -> dict[str, dict]:
+        """Each Duelist's record going into this bracket round.
+
+        Their Swiss record plus the bracket matches they have already won, and
+        winning is the only way to still be here: a Duelist paired in the Top 4
+        beat someone in the Top 8, so every earlier cut round they appear in is
+        one more win. The same reasoning as counting Swiss appearances, and the
+        same reason it is sound -- it reads what happened rather than assuming a
+        result. Losses do not move; a bracket loss is the last thing a Duelist
+        appears in.
+        """
+        earlier = [k for k in cut_keys if cut_rank(k[1]) < cut_rank(key[1])]
+        wins_before: Counter = Counter()
+        for k in earlier:
+            post = by_round[k].get("pairings")
+            if not post:
+                continue
+            for row in post.post.table.rows:
+                for side in ("a", "b"):
+                    name = (row.get(side) or {}).get("name")
+                    if name:
+                        wins_before[name] += 1
+
+        out = {}
+        for name, rec in by_player.items():
+            extra = wins_before.get(name, 0)
+            if not extra or rec.get("wins") is None:
+                out[name] = rec
+                continue
+            out[name] = {**rec, "wins": rec["wins"] + extra}
+        return out
+
+    def feature_of(source):
+        """The round's feature match, as much of it as the post actually says.
+
+        Deck and record stay None: a feature post is prose and photographs with
+        no table in it, so the title is the only structured thing about it. Their
+        Swiss records are known, but not as of that round -- printing a final
+        record beside a round-two match would be a plausible-looking lie.
+        """
+        if source is None:
+            return None
+        players = feature_players(source.post.title)
+        if not players:
+            return None
+        a, b = players
+        return {
+            "a": {"name": a, "deck": None, "record": None},
+            "b": {"name": b, "deck": None, "record": None},
+            "note": "Feature match coverage published by Konami.",
+            "source": source.url,
+        }
 
     rounds = []
     for i, key in enumerate(swiss_keys + cut_keys):
@@ -206,15 +275,36 @@ def build_format(name: str, sources: list[Source], *,
                     "pct": None,
                 })
 
+        # A cut round has no standings table of its own -- the bracket is seeded
+        # from the end of Swiss and nothing is published after it. Showing an
+        # empty Standings tab there was wrong twice over: the round already
+        # claims standingsAfter, and the table it names exists.
+        if is_cut and not standings:
+            standings = final_standings
+
         pairings_post = entry.get("pairings")
         pairings = []
         if pairings_post is not None:
+            # Records are only sound where the table they come from covers every
+            # round the players have played. That is true of the cut, seeded from
+            # the completed Swiss standings, and false mid-Swiss: rounds 1-8
+            # publish standings with no points column at all, so a player's
+            # record going into round 4 is not something this can know.
+            records = cut_records(key) if is_cut else {}
             for row in pairings_post.post.table.rows:
                 pairings.append({
                     "table": row["table"],
-                    "a": row["a"]["name"], "aRec": None, "aDeck": row["a"].get("deck"),
-                    "b": row["b"]["name"], "bRec": None, "bDeck": row["b"].get("deck"),
+                    "a": row["a"]["name"], "aRec": records.get(row["a"]["name"]),
+                    "aDeck": row["a"].get("deck"),
+                    "b": row["b"]["name"], "bRec": records.get(row["b"]["name"]),
+                    "bDeck": row["b"].get("deck"),
                 })
+
+        # The last Swiss round's table is what the cut is seeded from, so hold on
+        # to it and to the records in it.
+        if not is_cut and standings and key == swiss_keys[-1]:
+            final_standings = standings
+            by_player = {r["name"]: r["record"] for r in standings if r.get("record")}
 
         source = (pairings_post or standings_post)
         rounds.append({
@@ -232,7 +322,7 @@ def build_format(name: str, sources: list[Source], *,
             "standingsAfter": swiss_count if is_cut else (key[1] if standings else None),
             "pairings": pairings,
             "standings": standings,
-            "feature": None,
+            "feature": feature_of(entry.get("feature")),
             "source": source.url if source else None,
         })
 

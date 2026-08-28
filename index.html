@@ -1325,13 +1325,23 @@ function renderStandings(r){
 function renderFeature(r){
   if (!r.feature) return `<div class="empty"><h3>No feature match for this round</h3>
     <p>Feature coverage is chosen once the round's top tables are known.</p></div>`;
-  const {a, b, note} = r.feature;
+  const {a, b, note, source} = r.feature;
+  /* A scraped feature post is prose and photographs: it names the two Duelists
+     and nothing else structured. Joining deck and record unconditionally printed
+     a bare " · ?–?" under every name, so each side shows only what is known. */
+  const side = (p) => {
+    const bits = [];
+    if (p.deck) bits.push(esc(p.deck));
+    if (p.record) bits.push(esc(formatRecord(p.record, {drawsPossible: eventDrawsPossible()})));
+    return `<div class="feature__side"><h3>${esc(p.name)}</h3>`
+         + (bits.length ? `<p>${bits.join(' · ')}</p>` : '') + `</div>`;
+  };
   return `<div class="feature">
-    <div class="feature__side"><h3>${esc(a.name)}</h3><p>${esc(a.deck)} · ${esc(formatRecord(a.record, {drawsPossible: eventDrawsPossible()}))}</p></div>
+    ${side(a)}
     <div class="feature__vs" aria-hidden="true">VS</div>
-    <div class="feature__side"><h3>${esc(b.name)}</h3><p>${esc(b.deck)} · ${esc(formatRecord(b.record, {drawsPossible: eventDrawsPossible()}))}</p></div>
+    ${side(b)}
   </div>
-  <p class="feature__note">${esc(note)}</p>`;
+  <p class="feature__note">${esc(note)}${offsite(source) ? ` <a href="${esc(source)}" rel="external noreferrer">Read the coverage</a>.` : ''}</p>`;
 }
 
 function renderRound(){

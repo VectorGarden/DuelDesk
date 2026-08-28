@@ -52,3 +52,26 @@ def clock(stamp: str | None) -> str | None:
         return datetime.fromisoformat(stamp).strftime("%H:%M")
     except ValueError:
         return stamp
+
+
+# "Genesys Format Round 5 Feature Match: Adrien Racek vs. Oliver Martin Ernst".
+# The separator is written "vs." on the blog but "vs" appears too, and a name
+# can contain "vs" inside a word, so it must be surrounded by spaces.
+_VERSUS = re.compile(r"\s+vs\.?\s+", re.I)
+
+
+def feature_players(title: str) -> tuple[str, str] | None:
+    """The two Duelists a feature match names, or None if it names anything else.
+
+    The post body is prose and photographs -- there is no table to read -- so the
+    title is the only structured thing about it. That is enough for the round
+    panel to say who played and link to the write-up, which is what the panel is
+    for; it is not enough for decks or records, and those stay unknown rather
+    than being filled in from somewhere they do not belong.
+    """
+    _, _, after = title.partition(":")
+    parts = _VERSUS.split(after.strip() if after.strip() else title)
+    if len(parts) != 2:
+        return None
+    a, b = (p.strip(" .") for p in parts)
+    return (a, b) if a and b else None
