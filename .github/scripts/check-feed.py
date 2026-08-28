@@ -9,10 +9,25 @@ import xml.etree.ElementTree as ET
 
 REQUIRED_ITEM_FIELDS = ("title", "link", "pubDate")
 
-# The feed publishes invented tournament results to anyone who subscribes, and
-# aggregators strip <copyright>. The disclaimer has to ride along on the parts a
-# reader actually displays, or the data reads as genuine coverage.
+# The feed reaches subscribers with no page around it, and aggregators strip
+# <copyright>, so whatever it claims about itself has to ride on the parts a
+# reader displays: the channel title and description, and each item's own title.
+#
+# There are two honest feeds and this checks whichever it is handed.
+#
+#   sample -- invented results, and every item says so, or it reads as coverage
+#   real   -- Konami's coverage, indexed and linked, and it must credit them
+#
+# What it must never be is half of each. A feed with some items marked [sample]
+# among real ones is worse than either: a reader who checks one unmarked item
+# and finds it genuine has no reason to doubt the next.
 SAMPLE_MARKER = "[sample]"
+
+# A real feed must name whose coverage it is indexing.
+ATTRIBUTION_TERMS = ("konami",)
+
+# A real item must send the reader to the source, not in a circle back to us.
+SITE_PREFIX = "https://dueldesk.reizu.dev"
 
 
 def main(path="feed.xml"):
@@ -39,13 +54,30 @@ def main(path="feed.xml"):
         if not items:
             problems.append("<channel> contains no <item> elements")
 
+    marked = [(item.findtext("title") or "").lower().lstrip().startswith(SAMPLE_MARKER)
+              for item in items]
+    sample_feed = any(marked)
+
+    if items and sample_feed and not all(marked):
+        problems.append(f"{marked.count(False)} of {len(items)} items are not marked "
+                        f"{SAMPLE_MARKER} while the rest are -- a feed must be all "
+                        "sample or all real, never a mix")
+
     if channel is not None:
         ch_title = (channel.findtext("title") or "")
         ch_desc = (channel.findtext("description") or "")
-        if "sample" not in ch_title.lower():
-            problems.append("<channel><title> does not identify the feed as sample data")
-        if "sample" not in ch_desc.lower():
-            problems.append("<channel><description> does not identify the feed as sample data")
+        blurb = f"{ch_title} {ch_desc}".lower()
+        if sample_feed:
+            if "sample" not in ch_title.lower():
+                problems.append("<channel><title> does not identify the feed as sample data")
+            if "sample" not in ch_desc.lower():
+                problems.append("<channel><description> does not identify the feed as sample data")
+        else:
+            if "sample" in blurb:
+                problems.append("<channel> calls the feed sample data, but no item is "
+                                f"marked {SAMPLE_MARKER}")
+            if not any(term in blurb for term in ATTRIBUTION_TERMS):
+                problems.append("<channel> does not say whose coverage this indexes")
 
     for n, item in enumerate(items, 1):
         title = item.find("title")
@@ -55,18 +87,22 @@ def main(path="feed.xml"):
             if node is None or not (node.text or "").strip():
                 problems.append(f"item {n} ({label!r}) missing non-empty <{field}>")
 
-        title_text = (item.findtext("title") or "")
-        if not title_text.lower().lstrip().startswith(SAMPLE_MARKER):
-            problems.append(f"item {n} ({label!r}) title is not marked {SAMPLE_MARKER}")
-        if "sample data" not in (item.findtext("description") or "").lower():
+        desc = (item.findtext("description") or "").lower()
+        if sample_feed and "sample data" not in desc:
             problems.append(f"item {n} ({label!r}) description does not say it is sample data")
+        if not sample_feed:
+            link = (item.findtext("link") or "")
+            if link.startswith(SITE_PREFIX):
+                problems.append(f"item {n} ({label!r}) links back to this site; a real "
+                                "item must link to the coverage it is indexing")
 
     if problems:
         for p in problems:
             print(f"  FAIL  {p}")
         return 1
 
-    print(f"  ok    {path}: well-formed RSS 2.0, {len(items)} items, all marked as sample data")
+    kind = "all marked as sample data" if sample_feed else "indexing external coverage"
+    print(f"  ok    {path}: well-formed RSS 2.0, {len(items)} items, {kind}")
     return 0
 
 

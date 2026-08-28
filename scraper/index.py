@@ -37,7 +37,8 @@ class Entry:
     category: str
     event_slug: str | None
     slug: str
-    lastmod: str | None
+    lastmod: str | None          # the date, for grouping posts into events
+    modified: str | None = None  # the same stamp as published, time and offset intact
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -51,13 +52,18 @@ def parse_post_sitemap(xml: str) -> list[Entry]:
     out: list[Entry] = []
     for u in ET.fromstring(xml).findall(".//s:url", NS):
         loc = u.findtext("s:loc", namespaces=NS) or ""
-        lastmod = (u.findtext("s:lastmod", namespaces=NS) or "")[:10] or None
+        # Kept twice on purpose. Events are grouped by whole days, so lastmod is
+        # a date and the comparisons downstream stay simple; the feed and the
+        # per-round posting time need the clock, so the published stamp is kept
+        # beside it rather than reconstructed later from a date.
+        published = (u.findtext("s:lastmod", namespaces=NS) or "").strip() or None
+        lastmod = published[:10] if published else None
         parts = [p for p in loc.replace(BASE, "").rstrip("/").split("/") if p]
         if len(parts) < 3:
             continue
         year, category, slug = parts[0], parts[1], parts[-1]
         event = parts[2] if len(parts) >= 4 and parts[2] not in TOPIC_SEGMENTS else None
-        out.append(Entry(loc, year, category, event, slug, lastmod))
+        out.append(Entry(loc, year, category, event, slug, lastmod, published))
     return out
 
 

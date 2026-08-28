@@ -682,6 +682,139 @@ class TestFinalStandingsSelection(unittest.TestCase):
         self.assertEqual(got, {"Ada": {"status": "drop", "statusRound": 4}})
 
 
+class TestEventNaming(unittest.TestCase):
+    """The event's name comes from its posts, not from its URL."""
+
+    def test_the_prevailing_title_prefix_names_the_event(self):
+        from naming import event_name
+        titles = ["YCS Montréal: Round 3 Pairings (Genesys Format)",
+                  "YCS Montréal: Standings After Round 9 (Advanced Format)",
+                  "YCS Montréal: Final Standings (Genesys Format)",
+                  "Genesys Format Round 4 Feature Match: Someone vs Someone"]
+        self.assertEqual(event_name(titles, "2026 08 Quebec"), "YCS Montréal")
+
+    def test_an_en_dash_separator_is_read_too(self):
+        from naming import event_name
+        self.assertEqual(event_name(["YCS Rio – Round 1 Pairings",
+                                     "YCS Rio – Round 2 Pairings"], "slug"), "YCS Rio")
+
+    def test_the_slug_wins_when_the_posts_do_not_agree(self):
+        from naming import event_name
+        # One oddly-titled post must not get to name the whole event.
+        self.assertEqual(event_name(["A: one", "B: two", "C: three", "D: four"],
+                                    "2026 08 Quebec"), "2026 08 Quebec")
+
+    def test_titles_without_a_separator_fall_back(self):
+        from naming import event_name
+        self.assertEqual(event_name(["No separator here"], "fallback"), "fallback")
+        self.assertEqual(event_name([], "fallback"), "fallback")
+
+    def test_the_posting_time_is_shown_as_published(self):
+        from naming import clock
+        # Not converted to UTC: 11:07 Pacific is 18:07 UTC, and a Saturday
+        # afternoon round would read as evening.
+        self.assertEqual(clock("2026-08-16T11:07:30-07:00"), "11:07")
+
+    def test_a_value_that_is_not_a_timestamp_passes_through(self):
+        from naming import clock
+        self.assertEqual(clock("08:24"), "08:24")
+        self.assertIsNone(clock(None))
+
+
+class TestFeed(unittest.TestCase):
+    """The feed built from real coverage, rather than from the simulation."""
+
+    ITEMS = [
+        {"title": "YCS Montréal: Round 3 Pairings (Genesys Format)",
+         "url": "https://yugiohblog.konami.com/a/",
+         "modified": "2026-08-16T11:07:30-07:00", "kind": "pairings"},
+        {"title": "YCS Montréal: Final Standings",
+         "url": "https://yugiohblog.konami.com/b/",
+         "modified": "2026-08-16T17:00:00-07:00", "kind": "standings"},
+    ]
+
+    def feed(self, items=None, **kw):
+        from feed import build_feed
+        return build_feed("YCS Montréal", self.ITEMS if items is None else items, **kw)
+
+    def test_it_is_well_formed_and_has_the_items(self):
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring(self.feed())
+        self.assertEqual(len(root.findall("channel/item")), 2)
+
+    def test_items_link_to_the_source_not_to_us(self):
+        import xml.etree.ElementTree as ET
+        # The whole basis for the feed: it says what was published and where to
+        # read it. A link back here would be claiming the coverage.
+        for item in ET.fromstring(self.feed()).findall("channel/item"):
+            self.assertTrue(item.findtext("link").startswith("https://yugiohblog.konami.com/"))
+
+    def test_it_never_claims_to_be_sample_data(self):
+        self.assertNotIn("sample", self.feed().lower())
+
+    def test_it_says_whose_coverage_it_is(self):
+        import xml.etree.ElementTree as ET
+        ch = ET.fromstring(self.feed()).find("channel")
+        self.assertIn("konami", (ch.findtext("description") or "").lower())
+        self.assertIn("konami", (ch.findtext("copyright") or "").lower())
+
+    def test_newest_first(self):
+        import xml.etree.ElementTree as ET
+        titles = [i.findtext("title")
+                  for i in ET.fromstring(self.feed()).findall("channel/item")]
+        self.assertEqual(titles[0], "YCS Montréal: Final Standings")
+
+    def test_an_item_a_reader_cannot_open_is_dropped(self):
+        import xml.etree.ElementTree as ET
+        items = self.ITEMS + [{"title": "", "url": "https://x/", "kind": "news"},
+                              {"title": "No link", "url": None, "kind": "news"}]
+        self.assertEqual(len(ET.fromstring(self.feed(items)).findall("channel/item")), 2)
+
+    def test_dates_are_rfc822_and_locale_independent(self):
+        from feed import rfc822
+        # strftime("%a, %d %b") renders month names in the running locale, and a
+        # reader parsing "sam., 16 août" gets nothing.
+        self.assertEqual(rfc822("2026-08-16T11:07:30-07:00"),
+                         "Sun, 16 Aug 2026 18:07:30 +0000")
+        self.assertEqual(rfc822("2026-08-16"), "Sun, 16 Aug 2026 00:00:00 +0000")
+        self.assertIsNone(rfc822("not a date"))
+        self.assertIsNone(rfc822(None))
+
+    def test_dates_stay_english_under_another_locale(self):
+        import locale
+        from feed import rfc822
+        # RFC 822 day and month names are English by specification. strftime
+        # renders them in LC_TIME, so a process that has set a locale -- or a
+        # future caller of setlocale anywhere in the scraper -- would emit
+        # "dim., 16 août 2026" and every reader would fail to parse the date.
+        for candidate in ("fr_FR.UTF-8", "de_DE.UTF-8", "es_ES.UTF-8"):
+            try:
+                locale.setlocale(locale.LC_TIME, candidate)
+            except locale.Error:
+                continue
+            try:
+                self.assertEqual(rfc822("2026-08-16T11:07:30-07:00"),
+                                 "Sun, 16 Aug 2026 18:07:30 +0000")
+            finally:
+                locale.setlocale(locale.LC_TIME, "C")
+            return
+        self.skipTest("no non-English locale installed to test against")
+
+    def test_markup_in_a_title_cannot_break_the_feed(self):
+        import xml.etree.ElementTree as ET
+        items = [{"title": 'Round 1 <b>"pairings"</b> & more',
+                  "url": "https://yugiohblog.konami.com/c/",
+                  "modified": "2026-08-16T11:00:00-07:00", "kind": "pairings"}]
+        root = ET.fromstring(self.feed(items))
+        self.assertEqual(root.findtext("channel/item/title"),
+                         'Round 1 <b>"pairings"</b> & more')
+
+    def test_an_event_with_no_usable_posts_still_parses(self):
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring(self.feed([]))
+        self.assertEqual(len(root.findall("channel/item")), 0)
+
+
 class TestCadence(unittest.TestCase):
     """Which scheduled ticks reach the blog and which are dropped."""
 
@@ -829,6 +962,21 @@ class TestCadence(unittest.TestCase):
                              "once live, no post waits longer than one tick")
         self.assertGreater(live_checks, 40, "the event window is polled fast")
         self.assertLess(checks - live_checks, 40, "and the quiet day is hourly-ish")
+
+
+class TestPostedTime(unittest.TestCase):
+    def test_a_round_reports_the_clock_not_the_stamp(self):
+        from build import build_format, Source
+        from parse import Post, Table
+        rows = [{"table": 1, "a": {"name": "Ada", "region": None, "deck": None},
+                 "b": {"name": "Bo", "region": None, "deck": None}}]
+        src = Source(url="https://x/", posted="2026-08-16T11:07:30-07:00",
+                     post=Post(title="Round 1 Pairings", kind="pairings",
+                               fmt="Advanced", round=1,
+                               table=Table("pairings", [], rows)))
+        fmt = build_format("Advanced", [src])
+        self.assertEqual(fmt["rounds"][0]["posted"], "11:07",
+                         "the page renders this straight into 'pairings posted ...'")
 
 
 class TestCutOrdering(unittest.TestCase):
