@@ -462,6 +462,38 @@ class TestTLS(unittest.TestCase):
                 f"{c.name} expires in {left} days; fetch the current intermediate "
                 "from the leaf's AIA URL and replace it")
 
+    def test_the_intermediate_is_the_certificate_we_expect(self):
+        """Pin it by fingerprint.
+
+        The file is loaded as a trust anchor, so substituting another
+        certificate would change what the scraper accepts. Comparing the hash
+        makes that fail here rather than depend on someone reading base64 in a
+        diff. Computed from the DER, which is what a fingerprint is over.
+        """
+        import base64
+        import hashlib
+        import re as _re
+
+        expected = {
+            "geotrust-tls-rsa-ca-g1.pem":
+                "c06e307f7cfc1d32fa72a4c033c87b90019af216f0775d64978a2eca6c8a230e",
+        }
+        certs = {c.name: c for c in (Path(__file__).parent / "certs").glob("*.pem")}
+        self.assertEqual(set(certs), set(expected),
+                         "an unpinned certificate was added to the trust bundle")
+
+        for name, path in certs.items():
+            body = _re.search(r"-----BEGIN CERTIFICATE-----(.*?)-----END CERTIFICATE-----",
+                              path.read_text(), _re.S)
+            self.assertTrue(body, f"{name} holds no certificate")
+            der = base64.b64decode("".join(body.group(1).split()))
+            got = hashlib.sha256(der).hexdigest()
+            self.assertEqual(got, expected[name],
+                             f"{name} is not the pinned certificate")
+            # The header must state the same hash, so the file documents itself.
+            self.assertIn(got, path.read_text().lower(),
+                          f"{name} header does not record its own fingerprint")
+
     def test_verification_is_never_disabled(self):
         # A fallback that skips verification would be worse than the failure it
         # works around, so make that impossible to add quietly.
