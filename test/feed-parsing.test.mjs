@@ -97,3 +97,119 @@ test('malformed and partial feeds are handled, not crashed on', async (t) => {
     `groupFeed('<rss><channel><item><link>x</link></item></channel></rss>')`);
   assert.equal(titleless.length, 0, 'an item with no title is skipped');
 });
+
+/** Build a minimal feed from [title, category] pairs. */
+const feedOf = (items) => `<?xml version="1.0"?><rss version="2.0"><channel>
+  <title>t</title><link>l</link><description>d</description>
+  ${items.map(([title, cat], i) => `<item><title>${title}</title>
+    <link>https://x.example/${i}</link>
+    ${cat ? `<category>${cat}</category>` : ''}
+    <pubDate>Fri, 28 Aug 2026 0${i}:00:00 +0000</pubDate></item>`).join('')}
+</channel></rss>`;
+
+test('the event name is split off the post headline, not repeated in it', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const groups = page.json(`groupFeed(${JSON.stringify(feedOf([
+    ['YCS Montreal: Round 3 pairings are up'],
+    ['YCS Montreal: Feature match: Maliss against Ryzeal'],
+  ]))})`);
+
+  assert.equal(groups.length, 1);
+  assert.equal(groups[0].event, 'YCS Montreal');
+  // Posts keep feed document order; only groups are sorted.
+  assert.deepEqual(groups[0].posts.map((p) => p.title), [
+    'Round 3 pairings are up',
+    'Feature match: Maliss against Ryzeal',   // inner colon survives
+  ]);
+});
+
+test('a headline with no event prefix is left alone', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  // eventNameFrom falls back to the category here, so there is nothing to strip.
+  const groups = page.json(`groupFeed(${JSON.stringify(feedOf([
+    ['Feature match: A against B', 'YCS Montreal'],
+  ]))})`);
+
+  assert.equal(groups[0].event, 'YCS Montreal');
+  assert.equal(groups[0].posts[0].title, 'Feature match: A against B',
+    'the whole headline is kept when it carries no event prefix');
+});
+
+test('an event name is not mistaken for a partial prefix', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const groups = page.json(`groupFeed(${JSON.stringify(feedOf([
+    ['YCS Montreal Regional: Round 1 pairings'],
+  ]))})`);
+  assert.equal(groups[0].event, 'YCS Montreal Regional');
+  assert.equal(groups[0].posts[0].title, 'Round 1 pairings',
+    'the full event name is removed, not a shorter lookalike');
+});
+
+test('a title that is only the event name keeps something to show', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const groups = page.json(`groupFeed(${JSON.stringify(feedOf([['YCS Montreal:']]))})`);
+  assert.ok(groups[0].posts[0].title.length > 0, 'never renders an empty row');
+});
+
+test('classification reads the headline, so event names cannot leak into it', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  // These names collide with roundFrom's patterns while still being valid event
+  // names -- they do not *start* with a coverage label, so eventNameFrom accepts
+  // them. Classifying the full title would read the round out of the event name:
+  // "Championship Round 5" -> 5, "Invitational Top 8" -> "Top 8".
+  const groups = page.json(`groupFeed(${JSON.stringify(feedOf([
+    ['Championship Round 5: Standings after round 2'],
+    ['Invitational Top 8: Standings after round 3'],
+  ]))})`);
+
+  const byEvent = Object.fromEntries(groups.map((g) => [g.event, g.posts[0]]));
+  assert.equal(byEvent['Championship Round 5'].round, 2,
+    'round comes from the headline, not the "Round 5" in the event name');
+  assert.equal(byEvent['Invitational Top 8'].round, 3,
+    'not "Top 8" picked up from the event name');
+  for (const g of groups) assert.equal(g.posts[0].kind, 'standings');
+});
+
+test('a name that is a prefix but not followed by a colon is not stripped', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  // No colon in the title, so the name comes from the category. Matching on the
+  // name alone would eat the first character of the headline.
+  const groups = page.json(`groupFeed(${JSON.stringify(feedOf([
+    ['YCS Montreal Round 1 pairings', 'YCS Montreal'],
+  ]))})`);
+
+  assert.equal(groups[0].event, 'YCS Montreal');
+  assert.equal(groups[0].posts[0].title, 'YCS Montreal Round 1 pairings',
+    'the headline is untouched when there is no "name:" prefix to remove');
+});
+
+test('the shipped feed renders headlines without the event prefix', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  for (const ev of page.json('EVENTS')) {
+    for (const p of ev.posts) {
+      assert.ok(!p.title.startsWith(ev.event),
+        `"${p.title}" repeats its own event name`);
+    }
+  }
+  // And the rendered rows agree.
+  const rows = page.$$('.post__t').map((n) => n.textContent);
+  assert.ok(rows.length > 0);
+  assert.ok(rows.every((r) => !/^Remote Duel YCS/.test(r)), 'no row leads with the event name');
+});
+
+test('search still finds a post by its event name', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  // The event name is gone from the title, so search must still match on it.
+  page.run(`query = 'montreal'; renderEvents()`);
+  const shown = page.$$('.event__title').map((n) => n.textContent);
+  assert.ok(shown.some((s) => /Montreal/i.test(s)), 'matched on the event name');
+  assert.ok(page.$$('.post').length > 0, 'and its posts are listed');
+});
