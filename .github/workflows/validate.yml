@@ -1,0 +1,71 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: HTML, inline scripts and feed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'          # Nu Html Checker needs 11+
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Nu Html Checker
+        run: npm install --no-save vnu-jar@23.4.11
+
+      # Informational: unfiltered, so genuine CSS problems stay visible in the
+      # log even though they do not gate. Expect stale CSS complaints here --
+      # see the note on the gating step below.
+      - name: HTML report (unfiltered, never fails)
+        run: |
+          JAR="$(node -p "String(require('vnu-jar'))")"
+          java -jar "$JAR" --format gnu index.html || true
+
+      # Gating, and deliberately HTML-only:
+      #   * --errors-only, so a new warning cannot break an unrelated PR.
+      #   * CSS messages filtered out. vnu bundles a CSS checker built on an old
+      #     spec snapshot that rejects valid modern CSS -- color-mix(), and the
+      #     independent transform properties translate/rotate. The hosted
+      #     validator at validator.w3.org does not flag these. Filtering keeps
+      #     this job honest about what it verifies: the HTML.
+      - name: Validate HTML
+        run: |
+          JAR="$(node -p "String(require('vnu-jar'))")"
+          java -jar "$JAR" \
+            --errors-only \
+            --filterpattern '(?s).*CSS: .*' \
+            --format gnu index.html
+
+      # An HTML validator treats <script> contents as opaque text, so a syntax
+      # error in this single-file site would otherwise reach production.
+      - name: Check inline scripts parse
+        run: node .github/scripts/check-inline-js.mjs index.html
+
+      # Python rather than xmllint: libxml2-utils is no longer present on the
+      # ubuntu-latest runner image, and this checks feed structure, not just
+      # well-formedness.
+      - name: Validate feed.xml
+        run: python3 .github/scripts/check-feed.py feed.xml
+
+      # Every local file the page references must actually be in the repo.
+      - name: Check local references resolve
+        run: python3 .github/scripts/check-references.py index.html

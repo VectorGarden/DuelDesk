@@ -22,8 +22,8 @@
 
 <meta name="theme-color" content="#EDF0F6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0E1119" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 0h26v26l-6 6H0V6z' fill='%23F05B9C'/%3E%3Cpath d='M11 8h5a8 8 0 0 1 0 16h-5z' fill='%230E1119'/%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E1119'/%3E%3Cpath d='M8 4h20v20l-4 4H4V8z' fill='%23F05B9C'/%3E%3Cpath d='M12 10h4a6 6 0 0 1 0 12h-4z' fill='%230E1119'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Cpath%20d='M6%200h26v26l-6%206H0V6z'%20fill='%23F05B9C'/%3E%3Cpath%20d='M11%208h5a8%208%200%200%201%200%2016h-5z'%20fill='%230E1119'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%230E1119'/%3E%3Cpath%20d='M8%204h20v20l-4%204H4V8z'%20fill='%23F05B9C'/%3E%3Cpath%20d='M12%2010h4a6%206%200%200%201%200%2012h-4z'%20fill='%230E1119'/%3E%3C/svg%3E">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Duel Desk">
@@ -432,7 +432,8 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
           <button type="button" data-view="feature" aria-pressed="false">Feature match</button>
         </div>
       </div>
-      <div id="round-body" role="tabpanel" aria-labelledby="tab-12" tabindex="0"></div>
+      <!-- aria-labelledby is set by syncTrack() once the tabs exist -->
+      <div id="round-body" role="tabpanel" tabindex="0"></div>
     </div>
   </section>
 
@@ -768,6 +769,9 @@ function syncTrack(){
     b.setAttribute('aria-selected', String(selected));
     b.tabIndex = selected ? 0 : -1;
   }
+  /* The tabs are built by JS, so the panel cannot name one in the static
+     document without pointing at an id that does not exist yet. */
+  roundBody.setAttribute('aria-labelledby', 'tab-' + activeRound);
 }
 
 function syncSegs(){
@@ -790,8 +794,6 @@ function selectRound(id, focus){
       r.state === 'live' ? `Swiss · ${r.tables ?? 624} tables · pairings posted ${r.posted ?? '14:02'}`
     : r.state === 'done' ? 'Complete · results final'
     :                      'Not started · pairings appear here when posted';
-  roundBody.setAttribute('aria-labelledby', 'tab-' + id);
-
   renderRound();
 
   const tab = document.getElementById('tab-' + id);
