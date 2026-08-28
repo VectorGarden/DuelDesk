@@ -20,6 +20,14 @@ SELF_ORIGIN = "https://dueldesk.reizu.dev"
 
 def main(path="index.html"):
     html = Path(path).read_text(encoding="utf-8")
+
+    # Strip <script> and <style> bodies before scanning. Their contents are
+    # code, not markup: a template literal like href="${esc(p.url)}" would
+    # otherwise be read as a filename and reported missing.
+    markup = re.sub(
+        r"<(script|style)\b[^>]*>.*?</\1\s*>", "", html, flags=re.S | re.I
+    )
+
     refs = set()
 
     def add(value):
@@ -29,7 +37,7 @@ def main(path="index.html"):
 
     # href/src are always references.
     for attr in ("href", "src"):
-        for m in re.finditer(rf'\b{attr}="([^"]+)"', html):
+        for m in re.finditer(rf'\b{attr}="([^"]+)"', markup):
             value = m.group(1).strip()
             if value.startswith(SELF_ORIGIN):
                 add(value[len(SELF_ORIGIN):])
@@ -38,7 +46,7 @@ def main(path="index.html"):
 
     # content= is mostly prose (descriptions, titles). Only a same-origin URL
     # in there is a file reference -- that is how og:image points at og.png.
-    for m in re.finditer(r'\bcontent="([^"]+)"', html):
+    for m in re.finditer(r'\bcontent="([^"]+)"', markup):
         value = m.group(1).strip()
         if value.startswith(SELF_ORIGIN):
             add(value[len(SELF_ORIGIN):])
