@@ -307,8 +307,9 @@ tbody tr:hover{background:var(--surface-2)}
 .event__bar[aria-expanded="true"] .event__caret{rotate:180deg}
 
 .event__body{border-top:1px solid var(--line-soft); padding:.4rem 0}
-.post{display:flex; gap:.9rem; align-items:flex-start; padding:.7rem clamp(.9rem,2.5vw,1.25rem); text-decoration:none; border-left:3px solid transparent}
-.post:hover{background:var(--surface-2); border-left-color:var(--k,var(--accent))}
+/* Not a link: the site has no article pages, so a post row must not offer an
+   affordance it cannot honour. No hover state, nothing focusable. */
+.post{display:flex; gap:.9rem; align-items:flex-start; padding:.7rem clamp(.9rem,2.5vw,1.25rem); border-left:3px solid transparent}
 .post__k{
   font:600 .66rem/1 var(--body); letter-spacing:.09em; text-transform:uppercase;
   color:var(--text); background:color-mix(in srgb,var(--k) 22%,transparent);
@@ -318,6 +319,24 @@ tbody tr:hover{background:var(--surface-2)}
 .post__t{flex:1 1 auto; font-weight:500}
 .post__time{font:400 .78rem var(--mono); color:var(--text-3); flex:none}
 
+.notice{
+  display:flex; align-items:center; gap:.75rem; flex-wrap:wrap;
+  border:1px solid var(--gold); background:var(--surface); color:var(--text-2);
+  padding:.8rem 1rem; margin-bottom:1rem; font-size:.88rem;
+}
+.notice b{color:var(--text); font-weight:600}
+.btn{
+  font:600 .82rem var(--body); background:var(--surface-2); color:var(--text);
+  border:1px solid var(--line); border-radius:var(--r-md);
+  padding:.5rem .9rem; min-height:40px; cursor:pointer;
+}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+.loading{display:flex; align-items:center; gap:.6rem; justify-content:center}
+.loading i{
+  width:12px; height:12px; border-radius:50%; border:2px solid var(--line);
+  border-top-color:var(--accent); animation:spin .9s linear infinite;
+}
+@keyframes spin{to{rotate:360deg}}
 .empty{border:1px dashed var(--line); padding:2.5rem 1.5rem; text-align:center}
 .empty h3{font-size:1.1rem; margin-bottom:.4rem}
 .empty p{color:var(--text-2); font-size:.92rem}
@@ -405,12 +424,12 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
   <!-- ============ LIVE EVENT ============ -->
   <section class="shell hero" aria-labelledby="live-h">
     <div class="hero__top">
-      <span class="livetag"><i aria-hidden="true"></i>Live now</span>
-      <span class="stamp">Snapshot · this preview does not update</span>
+      <span class="livetag" id="livetag" hidden><i aria-hidden="true"></i>Live now</span>
+      <span class="stamp" id="stamp">Loading coverage…</span>
       <span class="demo">Sample data</span>
     </div>
 
-    <h1 id="live-h">Remote Duel YCS January 2026</h1>
+    <h1 id="live-h">Remote Duel YCS August 2026</h1>
 
     <p class="hero__meta">
       <span><b>1,248</b> Duelists</span>
@@ -719,29 +738,79 @@ const FEATURE = {
   note:'Both Duelists are locked for the top cut, so this one decides seeding. Written coverage of each turn follows below as the match plays out.'
 };
 
-const EVENTS = [
-  {event:'Remote Duel YCS January 2026', date:'1 Feb 2026', live:true, posts:[
-    {title:'Round 12 pairings are up',                kind:'pairings',  time:'14:02'},
-    {title:'Standings going into the final round',    kind:'standings', time:'13:48'},
-    {title:'Feature match: Maliss against Ryzeal',    kind:'feature',   time:'13:30'},
-    {title:'Round 11 pairings are up',                kind:'pairings',  time:'12:55'},
-    {title:'Standings after round 10',                kind:'standings', time:'12:20'},
-    {title:'The eight decks still in contention',     kind:'deck',      time:'11:40'}
-  ]},
-  {event:'YCS Montreal, Quebec', date:'18 Jan 2026', live:false, posts:[
-    {title:'Your champion, undefeated in the top cut', kind:'result',   time:'19:10'},
-    {title:'Final match: a mirror decided on time',    kind:'feature',  time:'18:22'},
-    {title:'Top 8 pairings',                           kind:'pairings', time:'16:05'},
-    {title:'What the top tables were playing',         kind:'deck',     time:'15:00'}
-  ]},
-  {event:'Ultimate Duelist Series — Season 6', date:'9 Jan 2026', live:false, posts:[
-    {title:'Season 6 invite structure explained',      kind:'news',     time:'10:00'},
-    {title:'Point totals after the December circuit',  kind:'standings',time:'09:30'}
-  ]},
-  {event:'Forbidden & Limited list update', date:'5 Jan 2026', live:false, posts:[
-    {title:'What changed and when it takes effect',    kind:'news',     time:'12:00'}
-  ]}
-];
+/* Coverage now comes from this site's own feed rather than a second copy of
+   the same posts living here. feed.xml is the single source; the round data
+   below it (pairings, standings, feature) is still sample data -- the feed
+   carries no round detail. */
+let EVENTS = [];              // filled by refreshCoverage()
+let feedUpdated = null;       // <lastBuildDate>, drives the hero stamp
+let feedEtag = null;          // kept for conditional polling later
+let coverageState = 'loading';// loading | ready | empty | stale | error
+let coverageError = '';
+
+/* The feed has no liveness flag. Rather than invent one, infer it: an event is
+   live when its newest post lands within this window of the feed's build time. */
+const LIVE_WINDOW_MS = 6 * 60 * 60 * 1000;
+
+/* Parsed separately from groupFeed() so that function keeps its narrow
+   contract (RSS text in, events out). Re-parsing 6KB is not worth widening it. */
+function feedUpdatedFrom(xmlText){
+  const doc = new DOMParser().parseFromString(xmlText, 'application/xml');
+  const raw = doc.querySelector('channel > lastBuildDate')?.textContent;
+  return raw && !isNaN(Date.parse(raw)) ? new Date(raw) : null;
+}
+
+/* groupFeed() returns Date objects and no display fields; the renderer wants
+   a formatted date and a live flag. */
+function toDisplayEvents(groups, built){
+  /* Two conditions, not one. The feed can only say an event was live as of its
+     own build time, so that build must also be recent -- otherwise a feed
+     generated months ago goes on claiming "live now" indefinitely. */
+  const feedIsFresh = !!built && (Date.now() - built) < LIVE_WINDOW_MS;
+  return groups.map(g => ({
+    event: g.event,
+    date:  g.date.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'}),
+    live:  feedIsFresh && (built - g.date) < LIVE_WINDOW_MS,
+    posts: g.posts
+  }));
+}
+
+async function loadCoverage(){
+  /* no-cache forces revalidation, it does not bypass the cache. GitHub Pages
+     serves this with max-age=600, so a plain fetch would read a stale copy
+     from disk and any future poll would silently do nothing. */
+  const res = await fetch('feed.xml', {cache:'no-cache'});
+  if (!res.ok) throw new Error(`feed responded ${res.status}`);
+  feedEtag = res.headers.get('ETag');
+  const xml = await res.text();
+  return {groups: groupFeed(xml), built: feedUpdatedFrom(xml)};
+}
+
+async function refreshCoverage(){
+  if (!EVENTS.length){ coverageState = 'loading'; renderEvents(); }
+  try {
+    const {groups, built} = await loadCoverage();
+    EVENTS = toDisplayEvents(groups, built);
+    feedUpdated = built;
+    coverageState = EVENTS.length ? 'ready' : 'empty';
+    coverageError = '';
+    /* Open the newest event on first load instead of hardcoding its name. */
+    if (!open.size && EVENTS.length) open.add(EVENTS[0].event);
+  } catch (err) {
+    /* A failed reload must never blank data the reader already has. */
+    coverageState = EVENTS.length ? 'stale' : 'error';
+    coverageError = err.message;
+  }
+  renderEvents();
+  renderStamp();
+  renderLiveTag();
+}
+
+/* The hero badge used to be unconditional markup. It now reflects the data:
+   no live event, or a feed too old to vouch for one, means no badge. */
+function renderLiveTag(){
+  document.getElementById('livetag').hidden = !EVENTS.some(ev => ev.live);
+}
 
 /* ============================================================
    4. STATE
@@ -760,7 +829,7 @@ let activeRound = '12';
 let activeView  = 'pairings';
 let filter = 'all';
 let query  = '';
-const open = new Set(['Remote Duel YCS January 2026']);
+const open = new Set();   // seeded from the feed on first load
 
 const roundOf = id => ROUNDS.find(r => r.id === id);
 const stateLabel = s => s === 'live' ? 'In progress' : s === 'done' ? 'Complete' : 'Not started';
@@ -932,7 +1001,37 @@ viewButtons.forEach(b => b.addEventListener('click', () => {
 /* ============================================================
    7. COVERAGE LIST — grouped by event, filtered, searchable
    ============================================================ */
+/* The page previously had no notion of data that might be absent, failing, or
+   already-loaded-but-now-stale. These four states come first; filtering only
+   makes sense once there is something to filter. */
 function renderEvents(){
+  if (coverageState === 'loading'){
+    countEl.textContent = 'Loading';
+    list.innerHTML = `<div class="empty"><p class="loading"><i aria-hidden="true"></i>Loading coverage…</p></div>`;
+    return;
+  }
+  if (coverageState === 'error'){
+    countEl.textContent = 'Unavailable';
+    list.innerHTML = `<div class="empty"><h3>Coverage could not be loaded</h3>
+      <p>${esc(coverageError)}</p>
+      <p style="margin-top:1rem"><button type="button" class="btn" data-retry>Try again</button></p></div>`;
+    return;
+  }
+  if (coverageState === 'empty'){
+    countEl.textContent = 'No coverage';
+    list.innerHTML = `<div class="empty"><h3>No coverage yet</h3>
+      <p>The feed is reachable but has no items in it.</p></div>`;
+    return;
+  }
+
+  /* 'stale' still renders the data we have -- a failed reload must not blank
+     the page -- but says so, and offers a way to try again. */
+  const staleNote = coverageState === 'stale'
+    ? `<div class="notice" role="status"><b>Showing the last coverage that loaded.</b>
+         <span>${esc(coverageError)}</span>
+         <button type="button" class="btn" data-retry>Try again</button></div>`
+    : '';
+
   const groups = EVENTS.map(ev => ({
     ...ev,
     posts: ev.posts.filter(p =>
@@ -944,12 +1043,12 @@ function renderEvents(){
     : 'No matches';
 
   if (!groups.length){
-    list.innerHTML = `<div class="empty"><h3>Nothing matches that</h3>
+    list.innerHTML = staleNote + `<div class="empty"><h3>Nothing matches that</h3>
       <p>Try a Duelist name, an event, or clear the filter to see everything.</p></div>`;
     return;
   }
 
-  list.innerHTML = groups.map((ev, i) => {
+  list.innerHTML = staleNote + groups.map((ev, i) => {
     const isOpen = query ? true : open.has(ev.event);
     return `<article class="event">
       <h3 class="event__h">
@@ -963,11 +1062,11 @@ function renderEvents(){
         </button>
       </h3>
       <div class="event__body" id="ev-${i}" ${isOpen ? '' : 'hidden'}>
-        ${ev.posts.map(p => `<a class="post" href="${esc(p.url ?? '#')}" rel="noreferrer" style="--k:${kindOf(p.kind).color}">
+        ${ev.posts.map(p => `<div class="post" style="--k:${kindOf(p.kind).color}">
           <span class="post__k">${esc(kindOf(p.kind).label)}</span>
           <span class="post__t">${esc(p.title)}</span>
           <span class="post__time">${esc(p.time)}</span>
-        </a>`).join('')}
+        </div>`).join('')}
       </div>
     </article>`;
   }).join('');
@@ -977,6 +1076,7 @@ function renderEvents(){
    re-rendering the list — so focus is never destroyed and never
    has to be restored. */
 list.addEventListener('click', e => {
+  if (e.target.closest('[data-retry]')){ refreshCoverage(); return; }
   const bar = e.target.closest('.event__bar');
   if (!bar) return;
   const name = bar.dataset.ev;
@@ -1041,12 +1141,48 @@ function say(msg){
   sayTimer = setTimeout(() => { liveRegion.textContent = msg; }, 60);
 }
 
+/* ============================================================
+   9. THE HERO STAMP
+   ------------------------------------------------------------
+   Real now: the time comes from the feed's own <lastBuildDate>
+   rather than a hardcoded "2 minutes ago". The label re-renders
+   on a slow tick so it ages correctly while the page sits open.
+   That ticks the *label* only -- nothing refetches yet, and the
+   copy does not claim otherwise.
+   ============================================================ */
+const stampEl = document.getElementById('stamp');
+const RTF = new Intl.RelativeTimeFormat(undefined, {numeric:'auto'});
+
+function relativeTime(then, now = new Date()){
+  const secs = Math.round((then - now) / 1000);
+  const abs  = Math.abs(secs);
+  if (abs < 60)    return RTF.format(secs, 'second');
+  if (abs < 3600)  return RTF.format(Math.round(secs / 60), 'minute');
+  if (abs < 86400) return RTF.format(Math.round(secs / 3600), 'hour');
+  return RTF.format(Math.round(secs / 86400), 'day');
+}
+
+function renderStamp(){
+  if (!feedUpdated){
+    stampEl.textContent = coverageState === 'loading'
+      ? 'Loading coverage…'
+      : 'Coverage unavailable';
+    return;
+  }
+  /* <time> wraps only the timestamp. Wrapping the whole sentence would leave a
+     <time> whose text is not a valid time, which is a validation error. */
+  stampEl.innerHTML = `Updated <time datetime="${esc(feedUpdated.toISOString())}">`
+    + `${esc(relativeTime(feedUpdated))}</time> · refresh to check for new coverage`;
+}
+setInterval(renderStamp, 60000);
+
 /* boot */
 applyTheme();
 buildTrack();
 syncSegs();
 renderRound();
-renderEvents();
+renderStamp();
+refreshCoverage();
 </script>
 </body>
 </html>
