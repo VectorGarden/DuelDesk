@@ -74,6 +74,13 @@ python3 -m unittest discover -s scraper -p 'test_*.py'
 17 tests run against real pages saved under `test/fixtures/blog/`, so they need no network and run
 in CI.
 
+`scraper/build.py` assembles parsed posts into the site's schema — grouped by format, rounds
+ordered, records derived. `scraper/run.py` is the entry point; the `Scrape coverage` workflow runs
+it hourly behind the sitemap gate.
+
+**It does not publish to the site.** The workflow uploads an artifact and reports what it found, so
+the scraper can be judged against live coverage before anything it builds is served.
+
 ### What does not map cleanly yet
 
 - **The blog reports points, the site models W–L–0 records.** They are different quantities.

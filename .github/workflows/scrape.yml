@@ -1,0 +1,78 @@
+name: Scrape coverage
+
+# Hourly, because coverage lands in batches during an event and not at all
+# between them. Almost every run has nothing to do and should cost one request.
+#
+# This does NOT publish to the site. It produces an artifact and reports what it
+# found, so the scraper can be judged against live coverage before anything it
+# builds is served to anyone.
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Scrape even if the sitemap has not moved'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    name: Check for new coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The high-water mark from the previous run. Cached rather than committed:
+      # a scraper should not need write access to the repository.
+      - id: cache
+        uses: actions/cache@v4
+        with:
+          path: .scrape-state
+          key: scrape-state-${{ github.run_id }}
+          restore-keys: scrape-state-
+
+      # Two small requests. Stops here on almost every run.
+      - id: gate
+        run: |
+          mkdir -p .scrape-state
+          python3 - <<'PY'
+          import sys, json, pathlib
+          sys.path.insert(0, 'scraper')
+          from fetch import Fetcher, check_for_updates
+          state = pathlib.Path('.scrape-state/state.json')
+          f = Fetcher(cache_dir='.scrape-state/cache')
+          changed, high = check_for_updates(f, state)
+          forced = "${{ inputs.force }}" == "true"
+          print(f"high-water mark: {high}  changed: {changed}  forced: {forced}")
+          pathlib.Path('gate.txt').write_text('yes' if (changed or forced) else 'no')
+          state.write_text(json.dumps({"high_water": high}, indent=2) + "\n")
+          PY
+          echo "run=$(cat gate.txt)" >> "$GITHUB_OUTPUT"
+
+      - if: steps.gate.outputs.run == 'no'
+        run: echo "Nothing new since the last run. Stopping." >> "$GITHUB_STEP_SUMMARY"
+
+      - if: steps.gate.outputs.run == 'yes'
+        name: Scrape the newest event
+        run: python3 scraper/run.py --out scraped-rounds.json --summary "$GITHUB_STEP_SUMMARY"
+
+      # Validated with the same checker the site's own data must pass, so a
+      # scrape that could not produce usable data fails here rather than later.
+      - if: steps.gate.outputs.run == 'yes'
+        name: Validate the scraped data
+        run: python3 .github/scripts/check-rounds.py scraped-rounds.json
+
+      - if: steps.gate.outputs.run == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraped-rounds
+          path: scraped-rounds.json
+          retention-days: 14
