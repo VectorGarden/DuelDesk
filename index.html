@@ -14,12 +14,25 @@
   try { mode = localStorage.getItem('dd-theme') || 'dark'; } catch (e) {}
   if (mode !== 'light' && mode !== 'dark' && mode !== 'system') mode = 'dark';
   root.dataset.themeMode = mode;
-  root.dataset.theme = mode === 'system'
+  var theme = mode === 'system'
     ? (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
     : mode;
+  root.dataset.theme = theme;
+
+  /* Browsers use the FIRST theme-color whose media matches, and a tag with no
+     media always matches. Inserting one here -- while the media-query pair
+     below is still unparsed -- puts it first, so an explicit choice wins over
+     the OS preference. Without JS the tag never exists and the media pair
+     applies, which is the right fallback. */
+  var meta = document.createElement('meta');
+  meta.name = 'theme-color';
+  meta.id = 'theme-color';
+  meta.content = theme === 'light' ? '#EDF0F6' : '#0E1119';
+  document.head.appendChild(meta);
 })();
 </script>
 
+<!-- Fallback for no-JS; the script above inserts a media-less tag ahead of these. -->
 <meta name="theme-color" content="#EDF0F6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0E1119" media="(prefers-color-scheme: dark)">
 <!-- Two-tier icon set: the single lit chip carries 16-48px, where the full
@@ -591,6 +604,9 @@ function applyTheme(){
   const t = themeMode === 'system' ? (mq.matches ? 'light' : 'dark') : themeMode;
   document.documentElement.dataset.theme = t;
   document.documentElement.dataset.themeMode = themeMode;
+  /* Keep the browser chrome with the chosen theme, not the OS one. */
+  const themeMeta = document.getElementById('theme-color');
+  if (themeMeta) themeMeta.content = t === 'light' ? '#EDF0F6' : '#0E1119';
   themeButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.themeSet === themeMode)));
 }
 themeButtons.forEach(b => b.addEventListener('click', () => {
@@ -676,7 +692,12 @@ function groupFeed(xmlText){                                   // eslint-disable
 
   const map = new Map();
   for (const item of doc.querySelectorAll('item')){
-    const title = item.querySelector('title')?.textContent?.trim() ?? '';
+    /* The feed marks every item [Sample] so the disclaimer travels with it into
+       aggregators, where nobody reads <copyright>. On the page itself the badge
+       beside the headline already says so, so strip it rather than repeat it in
+       every event name and post title. */
+    const rawTitle = item.querySelector('title')?.textContent?.trim() ?? '';
+    const title = rawTitle.replace(/^\[sample\]\s*/i, '');
     if (!title) continue;
     const url   = item.querySelector('link')?.textContent?.trim() ?? '#';
     const raw   = item.querySelector('pubDate')?.textContent;
@@ -1080,12 +1101,14 @@ function renderFeature(r){
 function renderRound(){
   if (roundsState === 'loading'){
     roundBody.innerHTML = `<div class="empty"><p class="loading"><i aria-hidden="true"></i>Loading round data…</p></div>`;
+    syncPanelTabStop();
     return;
   }
   if (roundsState === 'error'){
     roundBody.innerHTML = `<div class="empty"><h3>Round data could not be loaded</h3>
       <p>${esc(roundsError)}</p>
       <p style="margin-top:1rem"><button type="button" class="btn" data-retry-rounds>Try again</button></p></div>`;
+    syncPanelTabStop();
     return;
   }
   const r = roundOf(activeRound);
@@ -1093,12 +1116,25 @@ function renderRound(){
   if (r.state === 'upcoming'){
     roundBody.innerHTML = `<div class="empty"><h3>This round has not started</h3>
       <p>Pairings appear here once they are posted.</p></div>`;
+    syncPanelTabStop();
     return;
   }
   roundBody.innerHTML =
       activeView === 'pairings'  ? renderPairings(r)
     : activeView === 'standings' ? renderStandings(r)
     :                              renderFeature(r);
+  syncPanelTabStop();
+}
+
+/* APG: a tabpanel gets tabindex="0" only when it contains nothing focusable,
+   so keyboard users can still reach its content. The pairings and standings
+   views contain a focusable .tblwrap, so keeping it there would create a
+   second, redundant tab stop on the way into the table. */
+function syncPanelTabStop(){
+  const focusable = roundBody.querySelector(
+    'a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  if (focusable) roundBody.removeAttribute('tabindex');
+  else roundBody.tabIndex = 0;
 }
 
 roundBody.addEventListener('click', e => {

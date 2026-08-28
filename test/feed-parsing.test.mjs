@@ -39,6 +39,22 @@ test('coverage type checks structural markers before the looser deck match', asy
   }
 });
 
+test('the sample marker is stripped wherever it appears', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const groups = page.json(`groupFeed(\`<?xml version="1.0"?><rss version="2.0"><channel>
+    <title>t</title><link>l</link><description>d</description>
+    <item><title>[Sample] YCS Montreal: Round 3 pairings</title><link>https://x.example/</link>
+      <pubDate>Fri, 28 Aug 2026 05:00:00 +0000</pubDate></item>
+    <item><title>[SAMPLE] YCS Montreal: Standings after round 3</title><link>https://x.example/</link>
+      <pubDate>Fri, 28 Aug 2026 05:10:00 +0000</pubDate></item>
+  </channel></rss>\`)`);
+
+  assert.equal(groups.length, 1, 'both items group under one event despite the marker');
+  assert.equal(groups[0].event, 'YCS Montreal');
+  assert.deepEqual(groups[0].posts.map((p) => p.kind).sort(), ['pairings', 'standings']);
+});
+
 test('a leading coverage label is not mistaken for an event name', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
@@ -54,6 +70,15 @@ test('the shipped feed round-trips through the parser', async (t) => {
   const groups = page.run(`groupFeed(${JSON.stringify(fixture('feed.xml'))})`);
 
   assert.equal(groups.length, 4, 'four events reassembled from a flat post stream');
+  // The gap that let a [Sample] prefix leak into every event name unnoticed.
+  for (const g of groups) {
+    assert.doesNotMatch(g.event, /^\[sample\]/i, `marker leaked into event name: ${g.event}`);
+    for (const p of g.posts) {
+      assert.doesNotMatch(p.title, /^\[sample\]/i, `marker leaked into post title: ${p.title}`);
+    }
+  }
+  assert.ok(groups.some((g) => /^Remote Duel YCS/.test(g.event)),
+    'and the real event name survives intact');
   assert.ok(!groups.some((g) => /^(feature|final) match$/i.test(g.event)), 'no bogus label-event');
   assert.ok(!groups.some((g) => g.event === 'Unsorted coverage'));
   assert.ok(groups[0].date >= groups[1].date, 'newest event first');

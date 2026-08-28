@@ -104,6 +104,11 @@ python3 scripts/generate-sample-data.py
 It is deterministic: a seeded PRNG plus a `--now` anchor means the same inputs reproduce the same
 files byte for byte. CI checks the result stays coherent.
 
+The published feed marks itself as sample data at every level a reader actually sees — channel
+title, channel description, each item title (`[Sample] …`) and each item description — because
+aggregators strip `<copyright>`. The page strips the `[Sample]` prefix on parse, since the badge
+beside the headline already says so. CI enforces the marking.
+
 > **The sample feed ages.** Its timestamps are fixed at generation time, and the live state is
 > derived — an event is only "live" when the feed's own build time is recent. Once the committed
 > feed is more than six hours old, the Live badge correctly stops appearing. Regenerate the feed
