@@ -202,13 +202,20 @@ def detect_kind(text: str) -> str:
     low = _words(text)
     if re.search(r"\bdeck ?lists?\b|\bdeck profiles?\b|\btop \d+ deck", low):
         return "deck"
-    if "pairings" in low:
+    # Singular too. The final is the one round the blog titles "Final Pairing",
+    # having exactly one match to report, and requiring the plural classified it
+    # as news -- which the fetch budget ranks last, so the round the whole
+    # bracket builds towards was the one post never fetched.
+    if re.search(r"\bpairings?\b", low):
         return "pairings"
     if "standings" in low:
         return "standings"
     if "feature match" in low:
         return "feature"
-    if re.search(r"\bwinner\b|\bchampion\b|\bcongratulations\b", low):
+    # Plurals here too. A post announcing several winners is titled "Winners",
+    # and requiring the singular filed it as news -- the same slip that hid the
+    # final pairing, in the line directly below it.
+    if re.search(r"\bwinners?\b|\bchampions?\b|\bcongratulations\b", low):
         return "result"
     return "news"
 

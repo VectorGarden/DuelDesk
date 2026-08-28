@@ -1294,22 +1294,37 @@ function renderPairings(r){
   const caption = r.phase === 'Top cut'
     ? `${esc(r.label)} bracket, seeded from the final Swiss standings.`
     : `Top tables for ${esc(r.label)}.`;
+  /* Deck types are published for the cut, where the blog titles the post "with
+     Deck Types", and never for Swiss. The columns appear only when the round has
+     them: two empty ones on every Swiss round would be worse than none. */
+  const decks = rows.some(p => p.aDeck || p.bDeck);
+  const deckHead = decks ? '<th scope="col">Deck</th>' : '';
+  const deckCell = (v) => decks ? `<td>${esc(v ?? '')}</td>` : '';
+  const rec = (v) => `<td class="rec${v?.confidence !== 'derived' ? ' rec--partial' : ''}">`
+    + `${esc(formatRecord(v, {drawsPossible: eventDrawsPossible()}))}</td>`;
+
   return wrapTable(`Pairings for ${r.label}`, `<table>
     <caption>${caption} Search by Duelist to filter this list.</caption>
     <thead><tr>
       <th scope="col" class="num">${r.phase === 'Top cut' ? 'Match' : 'Table'}</th>
-      <th scope="col">Duelist</th><th scope="col">Record</th>
-      <th scope="col">Duelist</th><th scope="col">Record</th>
+      <th scope="col">Duelist</th>${deckHead}<th scope="col">Record</th>
+      <th scope="col">Duelist</th>${deckHead}<th scope="col">Record</th>
     </tr></thead><tbody>
     ${rows.map(p => `<tr>
       <td class="num">${esc(p.table)}</td>
-      <td>${esc(p.a)}</td><td class="rec${p.aRec?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(p.aRec, {drawsPossible: eventDrawsPossible()}))}</td>
-      <td>${esc(p.b)}</td><td class="rec${p.bRec?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(p.bRec, {drawsPossible: eventDrawsPossible()}))}</td></tr>`).join('')}
+      <td>${esc(p.a)}</td>${deckCell(p.aDeck)}${rec(p.aRec)}
+      <td>${esc(p.b)}</td>${deckCell(p.bDeck)}${rec(p.bRec)}</tr>`).join('')}
     </tbody></table>`);
 }
 
 function renderStandings(r){
-  const rows = (r.standings ?? []).filter(s => hit(s.name, s.deck));
+  /* A cut round has no standings of its own and names the Swiss table it was
+     seeded from. Following the reference here rather than copying that table
+     into every cut round keeps three copies of the whole field out of the file
+     the page downloads on each visit. */
+  const source = (r.standings?.length ? r
+    : ROUNDS.find(x => String(x.id) === String(r.standingsAfter))) ?? r;
+  const rows = (source.standings ?? []).filter(s => hit(s.name, s.deck));
   if (!rows.length) return noMatch('Duelists');
   return wrapTable(`Standings after round ${r.standingsAfter}`, `<table>
     <caption>${r.phase === 'Top cut'

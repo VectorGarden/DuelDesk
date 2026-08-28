@@ -310,12 +310,12 @@ def build_format(name: str, sources: list[Source], *,
                     "pct": None,
                 })
 
-        # A cut round has no standings table of its own -- the bracket is seeded
-        # from the end of Swiss and nothing is published after it. Showing an
-        # empty Standings tab there was wrong twice over: the round already
-        # claims standingsAfter, and the table it names exists.
-        if is_cut and not standings:
-            standings = final_standings
+        # A cut round has no standings table of its own: the bracket is seeded
+        # from the end of Swiss and nothing is published after it. It names that
+        # table in standingsAfter and the page follows the reference, rather than
+        # each cut round carrying its own copy -- three copies of 766 rows took
+        # rounds.json from 1.4MB to 2.3MB, downloaded on every visit, to say the
+        # same thing three times.
 
         pairings_post = entry.get("pairings")
         pairings = []
@@ -386,7 +386,7 @@ def build_format(name: str, sources: list[Source], *,
                 "a": champion, "aRec": records.get(champion), "aDeck": None,
                 "b": runner_up, "bRec": records.get(runner_up), "bDeck": None,
             }],
-            "standings": final_standings,
+            "standings": [],
             "feature": None,
             # The standings that say the final happened, since it has no post.
             "source": next((c.url for c in floating_standings

@@ -39,6 +39,39 @@ class TestNames(unittest.TestCase):
         self.assertEqual(normalise_name("Aviel Getter"), "Aviel Getter")
 
 
+class TestFinalPairingKind(unittest.TestCase):
+    """The one round the blog titles in the singular."""
+
+    def test_a_final_pairing_is_pairings_not_news(self):
+        from parse import detect_kind
+        # "Final Pairing" -- one match, so the blog drops the plural. Requiring
+        # "pairings" classified it as news, which the fetch budget ranks last, so
+        # the round the whole bracket builds towards was the post never fetched.
+        for slug in ("ycs-montreal-advanced-format-final-pairing-with-deck-types",
+                     "ycs-montreal-genesys-format-final-pairing-with-deck-types",
+                     "ycs-orlando-final-pairings"):
+            self.assertEqual(detect_kind(slug), "pairings", slug)
+
+    def test_the_plural_still_works(self):
+        from parse import detect_kind
+        self.assertEqual(detect_kind("ycs-montreal-round-1-pairings-advanced-format"),
+                         "pairings")
+
+    def test_it_does_not_swallow_neighbouring_kinds(self):
+        from parse import detect_kind
+        self.assertEqual(detect_kind("ycs-montreal-top-32-deck-lists"), "deck")
+        self.assertEqual(detect_kind("advanced-format-round-4-feature-match-a-vs-b"),
+                         "feature")
+        self.assertEqual(detect_kind("sunday-advanced-attack-of-the-giant-card-winners"),
+                         "result")
+
+    def test_a_final_pairing_names_its_round(self):
+        from parse import detect_round
+        self.assertEqual(
+            detect_round("ycs-montreal-advanced-format-final-pairing-with-deck-types"),
+            "Final")
+
+
 class TestClassification(unittest.TestCase):
     def test_kind(self):
         for text, kind in [("Round 13 Pairings (Advanced Format)", "pairings"),
@@ -876,13 +909,19 @@ class TestRoundDetail(unittest.TestCase):
         self.fmt = next(f for f in self.event()["formats"] if f["format"] == "Advanced")
         self.cut = [r for r in self.fmt["rounds"] if r["phase"] == "Top cut"]
 
-    def test_a_cut_round_shows_the_standings_it_was_seeded_from(self):
-        # It has no table of its own -- nothing is published after Swiss -- and it
-        # already claims standingsAfter, so an empty Standings tab was wrong twice.
+    def test_a_cut_round_names_the_standings_it_was_seeded_from(self):
+        # It has no table of its own -- nothing is published after Swiss -- so it
+        # names the Swiss round it came from and the page follows that. Carrying
+        # a copy in each cut round said the same thing three times and took
+        # rounds.json from 1.4MB to 2.3MB, downloaded on every visit.
         self.assertTrue(self.cut, "the bracket did not build")
+        rounds = {str(r["id"]): r for r in self.fmt["rounds"]}
         for r in self.cut:
-            self.assertTrue(r["standings"], f"{r['label']} has no standings")
+            self.assertEqual(r["standings"], [], f"{r['label']} carries a copy")
             self.assertEqual(r["standingsAfter"], self.fmt["swissRounds"])
+            named = rounds.get(str(r["standingsAfter"]))
+            self.assertIsNotNone(named, f"{r['label']} names a round that is not here")
+            self.assertTrue(named["standings"], "the table it names is empty")
 
     def test_cut_pairings_carry_records(self):
         for row in self.cut[0]["pairings"]:
@@ -1006,6 +1045,32 @@ class TestDerivedFinal(unittest.TestCase):
         self.assertEqual(len(finals), 1, "the published final was doubled")
         self.assertEqual(finals[0]["source"], "https://x/final-match/",
                          "the published round wins; the derived one fills a gap")
+
+    def test_a_derived_final_carries_no_copy_of_the_standings_either(self):
+        from build import Source, build_event
+        from parse import Post, Table
+
+        def pairs(label, rows, url):
+            return Source(url, Post(f"{label} Pairings", "pairings", "Advanced", label,
+                                    Table("pairings", [], [
+                                        {"table": i + 1,
+                                         "a": {"name": a, "region": None, "deck": None},
+                                         "b": {"name": b, "region": None, "deck": None}}
+                                        for i, (a, b) in enumerate(rows)])), "20:00")
+
+        ev = build_event("X", [
+            pairs(1, [("Champ", "Runner")], "https://x/r1/"),
+            pairs("Top 4", [("Champ", "Semi"), ("Runner", "Other")], "https://x/t4/"),
+            self.standings([
+                self.row(1, "Champ"), self.row(2, "Runner", "cut", 14),
+                self.row(3, "Semi", "cut", 13), self.row(4, "Other", "cut", 13),
+            ]),
+        ], updated="2026-08-16T21:00:00Z")
+        final = next(r for r in ev["formats"][0]["rounds"] if r["label"] == "Final")
+        self.assertEqual(final["pairings"][0]["a"], "Champ")
+        self.assertEqual(final["standings"], [],
+                         "it names the Swiss table like every other cut round")
+        self.assertTrue(final["standingsAfter"])
 
     def test_standings_with_no_cut_annotations_say_nothing(self):
         from build import final_from_annotations
