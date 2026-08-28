@@ -88,7 +88,7 @@ test('the current round comes from the data, not a hardcoded id', async (t) => {
     routes: {
       'rounds.json': async ({ calls }) => {
         const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
+        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
         const f = d.formats[0];
         f.rounds.forEach((r) => { if (r.state === 'live') r.state = 'done'; });
         f.rounds.find((r) => r.id === '7').state = 'live';
@@ -277,7 +277,7 @@ test('a live Swiss round is counted in tables, not matches', async (t) => {
     routes: {
       'rounds.json': async () => {
         const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
+        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
         const f = d.formats[0];
         f.rounds.forEach((r) => { if (r.state === 'live') r.state = 'upcoming'; });
         f.rounds.find((r) => r.id === '9').state = 'live';
@@ -310,7 +310,7 @@ test('a single-format event shows no selector, because there is no choice', asyn
     routes: {
       'rounds.json': async () => {
         const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
+        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
         d.formats = [d.formats[0]];
         return { status: 200, body: JSON.stringify(d) };
       },
@@ -412,7 +412,7 @@ function withRounds(transform) {
     routes: {
       'rounds.json': async () => {
         const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
+        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
         transform(d);
         return { status: 200, body: JSON.stringify(d) };
       },
@@ -545,7 +545,7 @@ test('with one format the meta names it, since no selector does', async (t) => {
     routes: {
       'rounds.json': async () => {
         const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
+        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
         d.formats = [d.formats[0]];
         return { status: 200, body: JSON.stringify(d) };
       },

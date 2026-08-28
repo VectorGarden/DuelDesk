@@ -14,6 +14,7 @@ Deterministic: seeded PRNG, and every timestamp derives from --now. Re-running
 with the same --now reproduces the file byte for byte.
 """
 import argparse, json, random
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from xml.sax.saxutils import escape
 
@@ -156,7 +157,15 @@ def pairings_table(pairs):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--now', help='ISO timestamp anchoring the event (default: current UTC)')
+    # The simulation used to be written to the repository root, because the root
+    # files were what the site served. They now hold real coverage, so writing
+    # there would overwrite what is published -- and the test suite, which reads
+    # these, would be testing whichever event was scraped last.
+    ap.add_argument('--out', default='test/fixtures',
+                    help='directory to write rounds.json and feed.xml into')
     args = ap.parse_args()
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
     now = datetime.fromisoformat(args.now).astimezone(timezone.utc) if args.now \
         else datetime.now(timezone.utc)
 
@@ -273,7 +282,7 @@ def main():
         "drawsPossible": False,
         "updated": newest.isoformat().replace("+00:00", "Z"),
         "formats": formats_out,
-    }, open("rounds.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    }, open(out / "rounds.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     print(f"rounds.json: {len(formats_out)} formats, "
           + ", ".join(f"{f['format']} {len(f['rounds'])} rounds" for f in formats_out))
 
@@ -298,7 +307,7 @@ def main():
       <description>{escape(f'SAMPLE DATA - invented for a design study, not real tournament coverage. {title}')}</description>
     </item>""")
 
-    open('feed.xml', 'w', encoding='utf-8').write(f"""<?xml version="1.0" encoding="UTF-8"?>
+    open(out / 'feed.xml', 'w', encoding='utf-8').write(f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Duel Desk — Yu-Gi-Oh! TCG event coverage (SAMPLE DATA)</title>

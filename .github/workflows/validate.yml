@@ -110,72 +110,8 @@ jobs:
       (github.event_name == 'push' ||
        github.event_name == 'schedule' ||
        github.event_name == 'workflow_dispatch')
-    runs-on: ubuntu-latest
     permissions:
       contents: read
       pages: write
       id-token: write
-    # Deploys queue rather than cancel each other; a half-published site is worse
-    # than a slightly late one.
-    concurrency:
-      group: pages
-      cancel-in-progress: false
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-
-      # Only while the site is still serving the simulation. The sample data
-      # carries the timestamps it was generated with and liveness is derived
-      # from them, so an untouched demo stops showing its live state a few hours
-      # after it was last built. Real coverage has real timestamps and must not
-      # be overwritten, so this is skipped the moment the committed data says it
-      # is not sample -- otherwise every code merge would quietly replace a
-      # scraped event with the simulation.
-      # Falls back to "not sample" when the field is missing, which is the safe
-      # direction twice over: it does not regenerate over data that might be
-      # real, and it leaves check-rounds.py below to reject the file with a
-      # readable message rather than dying here on a KeyError.
-      - id: provenance
-        run: |
-          echo "sample=$(python3 -c "
-          import json
-          print('true' if json.load(open('rounds.json')).get('sample') is True else 'false')
-          ")" >> "$GITHUB_OUTPUT"
-
-      - if: steps.provenance.outputs.sample == 'true'
-        name: Regenerate sample data with current timestamps
-        run: python3 scripts/generate-sample-data.py
-
-      # Whatever is about to be staged, check it here too: the regenerated files
-      # are not the ones the validate job saw, and scraped data arrives from a
-      # different workflow entirely. Nothing is published unverified.
-      - name: Validate the data about to be published
-        run: |
-          python3 .github/scripts/check-feed.py feed.xml
-          python3 .github/scripts/check-rounds.py rounds.json
-
-      # An include list, so the artifact holds the site and not the repository.
-      - name: Stage the site
-        run: ./scripts/stage-site.sh _site
-
-      # Proves the staging script did not forget a file the page references.
-      # Cheaper to fail here than to 404 in production.
-      - name: Verify the artifact is complete
-        working-directory: _site
-        run: python3 ../.github/scripts/check-references.py index.html
-
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-      - id: deployment
-        uses: actions/deploy-pages@v4
-
-      # Closes the loop. Everything above proves the code is good and the
-      # artifact was uploaded; only this proves the live site is serving it.
-      # Deploys were silently broken for two merges once, with CI green
-      # throughout, because nothing ever asked production a question.
-      - name: Smoke test the deployed site
-        run: ./scripts/smoke-test.sh "${{ steps.deployment.outputs.page_url }}" _site
+    uses: ./.github/workflows/deploy.yml
