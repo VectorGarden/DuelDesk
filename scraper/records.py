@@ -44,7 +44,11 @@ def is_placeholder(name: str) -> bool:
 
 def count_appearances(rounds: list[list[dict]]) -> Counter:
     """How many rounds each player was paired in. `rounds` is a list of pairing
-    row-lists, one per round."""
+    row-lists, one per round.
+
+    A lower bound on rounds played, not the number itself -- see
+    `last_appearance`, which is what records are derived from.
+    """
     seen = Counter()
     for pairings in rounds:
         for row in pairings:
@@ -52,6 +56,40 @@ def count_appearances(rounds: list[list[dict]]) -> Counter:
                 name = (row.get(side) or {}).get("name", "")
                 if not is_placeholder(name):
                     seen[name] += 1
+    return seen
+
+
+def last_appearance(rounds: list[list[dict]],
+                    round_numbers: list[int] | None = None) -> dict[str, int]:
+    """The last round each player is paired in.
+
+    Rounds played is this, not the number of pairings a player appears in. A bye
+    prints no pairing row, so counting silently drops it: 35 of 765 Advanced
+    entrants at YCS Montreal had at least one, ten of them two, and every such
+    record came out a loss or two light.
+
+    Byes are not an edge case at a YCS. Most are earned and fall at the start --
+    31 of those 35 are absent only from rounds 1..k and paired continuously
+    after -- and one more is handed out every round the field is odd.
+
+    Taking the last round instead is right because a player is in the event from
+    round one until they leave: absences before their last pairing are byes, and
+    the last pairing is where they stopped. That agrees exactly with the round
+    Konami states in its own drop annotations, for all 161 annotated entrants,
+    which is two independent sources landing on the same number.
+
+    `round_numbers` names the round each list belongs to. Without it the rounds
+    are assumed to be 1..n, which undercounts if a pairings page is missing --
+    an understated record rather than an invented one.
+    """
+    numbers = round_numbers if round_numbers is not None else range(1, len(rounds) + 1)
+    seen: dict[str, int] = {}
+    for number, pairings in zip(numbers, rounds):
+        for row in pairings:
+            for side in ("a", "b"):
+                name = (row.get(side) or {}).get("name", "")
+                if not is_placeholder(name):
+                    seen[name] = max(seen.get(name, 0), number)
     return seen
 
 
@@ -131,22 +169,17 @@ def swiss_last_round(standings: list[dict]) -> int | None:
     return max(rounds) if rounds else None
 
 
-def rounds_played(row: dict, appearances: int | None,
+def rounds_played(row: dict, seen_through: int | None,
                   swiss_last: int | None) -> int | None:
     """How many Swiss rounds a player actually played.
 
-    Counting pairings appearances undercounts byes: a bye pays 3 points and
-    prints no pairing row, so the player looks like they played one round fewer
-    and comes out a loss short. 34 of 169 Genesys entrants were wrong this way
-    -- Isaac Kritz held 21 points over 11 rounds and read 7-3, a record that
-    does not add up.
-
-    The status annotation states the round outright, so it is preferred where
-    present. A "cut" player played all of Swiss and then some bracket; their
+    `seen_through` is the last round the player was paired in. The status
+    annotation states the same thing outright, so it is preferred where present
+    -- it is available for the full-Swiss table, where the two agree exactly. A "cut" player played all of Swiss and then some bracket; their
     Swiss record ends at the last Swiss round.
 
-    With no annotation this is exactly the old appearance count -- including
-    None, meaning never paired. Nothing is inferred from the points here: a
+    With no annotation this is the last round paired -- including None, meaning
+    never paired at all. Nothing is inferred from the points here: a
     player with more wins than rounds must stay partial, and quietly raising the
     round count to match would turn that into a fabricated unbeaten record.
     """
@@ -156,16 +189,17 @@ def rounds_played(row: dict, appearances: int | None,
     elif status is None:
         stated = None
     if stated is None:
-        return appearances
-    return max(stated, appearances or 0)
+        return seen_through
+    return max(stated, seen_through or 0)
 
 
 def derive(standings: list[dict], pairing_rounds: list[list[dict]],
            *, event_date: str | None = None,
-           standings_series: list[list[dict]] | None = None) -> list[Record]:
+           standings_series: list[list[dict]] | None = None,
+           round_numbers: list[int] | None = None) -> list[Record]:
     """Best available record for every player in a final standings table."""
     draws_possible = bool(event_date) and event_date < DRAWS_ABOLISHED
-    appearances = count_appearances(pairing_rounds)
+    appearances = last_appearance(pairing_rounds, round_numbers)
     exact = results_from_standings(standings_series) if standings_series else {}
     swiss_last = swiss_last_round(standings)
 
