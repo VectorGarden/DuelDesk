@@ -806,8 +806,10 @@ class TestFeed(unittest.TestCase):
                   "url": "https://yugiohblog.konami.com/c/",
                   "modified": "2026-08-16T11:00:00-07:00", "kind": "pairings"}]
         root = ET.fromstring(self.feed(items))
+        # The event prefix is added by titled(); what matters here is that the
+        # markup survives the round trip as text rather than breaking the XML.
         self.assertEqual(root.findtext("channel/item/title"),
-                         'Round 1 <b>"pairings"</b> & more')
+                         'YCS Montréal: Round 1 <b>"pairings"</b> & more')
 
     def test_an_event_with_no_usable_posts_still_parses(self):
         import xml.etree.ElementTree as ET
@@ -1008,6 +1010,57 @@ class TestProvenanceCheck(unittest.TestCase):
         for value in (True, False):
             code, out = self.check(lambda d, v=value: d.__setitem__("sample", v))
             self.assertEqual(code, 0, f"{value!r} should be accepted: {out}")
+
+
+class TestFeedIdentity(unittest.TestCase):
+    """Each item has to say which tournament it belongs to, and which format."""
+
+    def test_a_title_already_in_the_convention_is_left_alone(self):
+        from feed import titled
+        self.assertEqual(titled("YCS Montréal", "YCS Montréal: Round 3 Pairings"),
+                         "YCS Montréal: Round 3 Pairings")
+
+    def test_a_title_naming_the_event_without_a_colon_gains_one(self):
+        from feed import titled
+        # "YCS Montreal Advanced Format Top 32 Deck Lists" has no separator, so
+        # the site grouped it under its category and invented a "Deck profile"
+        # event. Repeating the name instead would read worse than fixing it.
+        self.assertEqual(
+            titled("YCS Montréal", "YCS Montréal Advanced Format Top 32 Deck Lists"),
+            "YCS Montréal: Advanced Format Top 32 Deck Lists")
+
+    def test_a_title_that_does_not_name_the_event_is_prefixed(self):
+        from feed import titled
+        got = titled("YCS Montréal", "Genesys Format Round 4 Feature Match: A vs. B")
+        self.assertEqual(got, "YCS Montréal: Genesys Format Round 4 Feature Match: A vs. B")
+        # The site splits on the first colon, so the inner one survives.
+        self.assertEqual(got.split(":", 1)[0], "YCS Montréal")
+
+    def test_a_title_that_is_only_the_event_name_gains_nothing(self):
+        from feed import titled
+        self.assertEqual(titled("YCS Montréal", "YCS Montréal"), "YCS Montréal")
+
+    def test_the_format_rides_on_its_own_category(self):
+        import xml.etree.ElementTree as ET
+        from feed import build_feed
+        xml = build_feed("YCS Montréal", [
+            {"title": "Round 1 Pairings", "url": "https://yugiohblog.konami.com/a/",
+             "modified": "2026-08-16T11:00:00-07:00", "kind": "pairings",
+             "format": "Advanced"}])
+        item = ET.fromstring(xml).find("channel/item")
+        self.assertEqual(item.find('category[@domain="format"]').text, "Advanced")
+        # The kind stays the plain category the site already reads.
+        self.assertEqual(item.find("category").text, "Pairings")
+
+    def test_a_post_belonging_to_no_format_says_nothing(self):
+        import xml.etree.ElementTree as ET
+        from feed import build_feed
+        xml = build_feed("YCS Montréal", [
+            {"title": "Doors open at 9am", "url": "https://yugiohblog.konami.com/c/",
+             "modified": "2026-08-16T09:00:00-07:00", "kind": "news", "format": None}])
+        item = ET.fromstring(xml).find("channel/item")
+        self.assertIsNone(item.find('category[@domain="format"]'),
+                          "an announcement is about the event, not a tournament")
 
 
 class TestCadence(unittest.TestCase):

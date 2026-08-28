@@ -827,6 +827,10 @@ function groupFeed(xmlText){                                   // eslint-disable
     const raw   = item.querySelector('pubDate')?.textContent;
     const date  = raw && !isNaN(Date.parse(raw)) ? new Date(raw) : new Date();
     const cat   = item.querySelector('category')?.textContent?.trim();
+    /* The feed states the format on a second, namespaced category. A post that
+       belongs to no format -- an announcement is about the event, not one of its
+       tournaments -- carries none, and stays visible whichever is selected. */
+    const fmt   = item.querySelector('category[domain="format"]')?.textContent?.trim() || null;
     const name  = eventNameFrom(title, cat || 'Unsorted coverage');
 
     /* Feed items are titled "Event: headline" so each one stands alone in a
@@ -847,6 +851,7 @@ function groupFeed(xmlText){                                   // eslint-disable
 
     group.posts.push({
       title: headline,
+      format: fmt,
       url: safeUrl(url),
       time: date.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
       /* Classify the headline, not the full title: an event called
@@ -890,6 +895,7 @@ function selectFormat(name){
   renderEventMeta();
   buildTrack();
   landOnCurrentRound();
+  renderEvents();            // the coverage list below follows the same choice
   say(`Showing the ${name} tournament`);
 }
 
@@ -1400,6 +1406,19 @@ viewButtons.forEach(b => b.addEventListener('click', () => {
 /* The page previously had no notion of data that might be absent, failing, or
    already-loaded-but-now-stale. These four states come first; filtering only
    makes sense once there is something to filter. */
+/* One tournament's coverage at a time, matching the round track above it: the
+   selector says which tournament the page is showing, and a Genesys feature
+   match is not part of the Advanced one.
+
+   Only where there is a choice to make. A single-format event hides the
+   selector, and filtering on the one format it has would say nothing while
+   risking hiding everything if the feed and the round data disagreed on the
+   name. Posts with no format are event-wide and always shown. */
+function inSelectedFormat(post){
+  if (!post.format || !hasFormatChoice()) return true;
+  return post.format === activeFormat;
+}
+
 function renderEvents(){
   if (coverageState === 'loading'){
     countEl.textContent = 'Loading';
@@ -1431,7 +1450,9 @@ function renderEvents(){
   const groups = EVENTS.map(ev => ({
     ...ev,
     posts: ev.posts.filter(p =>
-      (filter === 'all' || p.kind === filter) && hit(p.title, ev.event))
+      (filter === 'all' || p.kind === filter)
+      && inSelectedFormat(p)
+      && hit(p.title, ev.event))
   })).filter(ev => ev.posts.length);
 
   countEl.textContent = groups.length

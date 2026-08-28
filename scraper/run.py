@@ -122,8 +122,8 @@ def main() -> int:
 
     if args.feed:
         Path(args.feed).write_text(build_feed(name, [
-            {"title": s.post.title, "url": s.url,
-             "modified": s.posted, "kind": s.post.kind} for s in sources]))
+            {"title": s.post.title, "url": s.url, "modified": s.posted,
+             "kind": s.post.kind, "format": s.post.fmt} for s in sources]))
 
     kinds = Counter(s.post.kind for s in sources)
     lines = [

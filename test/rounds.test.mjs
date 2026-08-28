@@ -563,6 +563,79 @@ test('a feature match that does know the deck still shows it', async (t) => {
   assert.match(text, /5–1/);
 });
 
+/* One tournament's coverage at a time, matching the round track. A post with no
+   format is about the event rather than one of its tournaments, and stays. */
+const MIXED_FEED = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>Duel Desk — YCS Montréal</title>
+  <link>https://dueldesk.reizu.dev/</link>
+  <description>Indexed from Konami's official event coverage.</description>
+  <item><title>YCS Montréal: Round 3 Pairings (Advanced Format)</title>
+    <link>https://yugiohblog.konami.com/a/</link><category>Pairings</category>
+    <category domain="format">Advanced</category>
+    <pubDate>Sun, 16 Aug 2026 18:00:00 +0000</pubDate></item>
+  <item><title>YCS Montréal: Genesys Format Round 4 Feature Match: A vs. B</title>
+    <link>https://yugiohblog.konami.com/b/</link><category>Feature match</category>
+    <category domain="format">Genesys</category>
+    <pubDate>Sun, 16 Aug 2026 17:00:00 +0000</pubDate></item>
+  <item><title>YCS Montréal: Doors open at 9am</title>
+    <link>https://yugiohblog.konami.com/c/</link><category>News</category>
+    <pubDate>Sun, 16 Aug 2026 16:00:00 +0000</pubDate></item>
+</channel></rss>`;
+
+test('one tournament is one event, however its posts are titled', async (t) => {
+  // A deck list post has no colon and a feature match has its own, so grouping
+  // on the title alone turned one tournament into eight events.
+  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED } } });
+  t.after(() => page.close());
+  assert.deepEqual(page.json('EVENTS.map(e => e.event)'), ['YCS Montréal']);
+});
+
+test('the format selector filters the coverage list', async (t) => {
+  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED } } });
+  t.after(() => page.close());
+  const shown = () => page.$$('#events .post__t').map((n) => n.textContent);
+
+  page.run(`selectFormat('Advanced')`);
+  const adv = shown();
+  assert.ok(adv.some((t) => /Round 3 Pairings/.test(t)), 'its own pairings');
+  assert.ok(!adv.some((t) => /Feature Match/.test(t)), 'not the other tournament');
+
+  page.run(`selectFormat('Genesys')`);
+  const gen = shown();
+  assert.ok(gen.some((t) => /Feature Match/.test(t)));
+  assert.ok(!gen.some((t) => /Round 3 Pairings/.test(t)));
+});
+
+test('a post belonging to no format is always shown', async (t) => {
+  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED } } });
+  t.after(() => page.close());
+  for (const f of ['Advanced', 'Genesys']) {
+    page.run(`selectFormat('${f}')`);
+    assert.ok(page.$$('#events .post__t').some((n) => /Doors open/.test(n.textContent)),
+      `the announcement disappeared under ${f}`);
+  }
+});
+
+test('a single-format event filters nothing away', async (t) => {
+  // Nothing to choose between, and if the feed and the round data disagreed on
+  // the name, filtering on it would empty the list for no reason.
+  const page = await loadPage({
+    routes: {
+      'feed.xml': { status: 200, body: MIXED_FEED },
+      'rounds.json': async () => {
+        const { readFileSync } = await import('node:fs');
+        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
+        d.formats = [d.formats[0]];
+        return { status: 200, body: JSON.stringify(d) };
+      },
+    },
+  });
+  t.after(() => page.close());
+  assert.equal(page.$('#formats').hidden, true, 'no selector');
+  assert.equal(page.$$('#events .post__t').length, 3, 'all three posts remain');
+});
+
 test('the page asks not to be indexed', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
