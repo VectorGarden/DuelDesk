@@ -460,6 +460,76 @@ class TestStatusAnnotations(unittest.TestCase):
         self.assertEqual((got.wins, got.losses, got.confidence), (3, 2, "derived"))
 
 
+class TestByes(unittest.TestCase):
+    """Rounds played is the last round paired, not the number of pairings."""
+
+    def test_last_appearance_is_not_a_count(self):
+        from records import last_appearance, count_appearances
+        # Byed rounds 1 and 2, paired in 3 and 4.
+        rounds = [[], [], [_pairing("Ada", "Bo")], [_pairing("Ada", "Cy")]]
+        self.assertEqual(count_appearances(rounds)["Ada"], 2)
+        self.assertEqual(last_appearance(rounds)["Ada"], 4)
+
+    def test_round_numbers_travel_with_the_rows(self):
+        from records import last_appearance
+        # Rounds 1 and 2 were not fetched; the rows that were are 3 and 4.
+        rounds = [[_pairing("Ada", "Bo")], [_pairing("Ada", "Cy")]]
+        self.assertEqual(last_appearance(rounds, [3, 4])["Ada"], 4,
+                         "without the real numbers this reads as round 2")
+
+    def test_an_earned_bye_no_longer_reads_as_unbeaten(self):
+        from records import derive
+        # Yacine Sahli: 27 points after eleven rounds, byed rounds 1 and 2.
+        # Counting his nine pairings made him 9-0 -- a published unbeaten run.
+        rounds = [[], []] + [[_pairing("Yacine", f"Foe{i}")] for i in range(9)]
+        got = derive([{"name": "Yacine", "points": 27}], rounds,
+                     event_date="2026-08-16")[0]
+        self.assertEqual((got.wins, got.losses), (9, 2))
+        self.assertEqual(got.rounds_played, 11)
+
+    def test_a_dropped_player_is_not_charged_for_rounds_after_they_left(self):
+        from records import derive
+        # Played three, dropped. The event ran eleven more. Reading the last
+        # round paired must not become "the event length".
+        rounds = ([[_pairing("Ada", f"Foe{i}")] for i in range(3)]
+                  + [[_pairing("Bo", f"Foe{i}")] for i in range(11)])
+        got = derive([{"name": "Ada", "points": 0}], rounds,
+                     event_date="2026-08-16")[0]
+        self.assertEqual((got.wins, got.losses), (0, 3), "0-3, not 0-14")
+
+    def test_a_mid_event_bye_is_counted(self):
+        from records import derive
+        # Odd field: one player sits out each round. Paired in 1 and 3, byed 2.
+        rounds = [[_pairing("Ada", "Bo")], [_pairing("Bo", "Cy")],
+                  [_pairing("Ada", "Cy")]]
+        got = derive([{"name": "Ada", "points": 6}], rounds,
+                     event_date="2026-08-16")[0]
+        self.assertEqual((got.wins, got.losses, got.rounds_played), (2, 1, 3))
+
+    def test_rounds_are_taken_at_their_highest_not_their_last(self):
+        from records import last_appearance
+        # Pages are normally handed over in order; nothing in this function
+        # should depend on that.
+        rounds = [[_pairing("Ada", "Bo")], [_pairing("Ada", "Cy")]]
+        self.assertEqual(last_appearance(rounds, [7, 3])["Ada"], 7)
+
+    def test_a_round_seen_after_the_stated_one_wins(self):
+        from records import derive
+        # The annotation says she left in round 4, but she is paired in round 7.
+        # A misread annotation must not delete rounds we watched her play.
+        row = {"name": "Ada", "points": 9, "status": "drop", "statusRound": 4}
+        rounds = [[_pairing("Ada", f"Foe{i}")] for i in range(7)]
+        got = derive([row], rounds, event_date="2026-08-16")[0]
+        self.assertEqual((got.wins, got.losses, got.rounds_played), (3, 4, 7))
+
+    def test_a_player_never_paired_is_still_unknown(self):
+        from records import derive
+        got = derive([{"name": "Ghost", "points": 0}], [[_pairing("Ada", "Bo")]],
+                     event_date="2026-08-16")[0]
+        self.assertEqual(got.confidence, "partial")
+        self.assertIsNone(got.losses)
+
+
 class TestFinalStandingsSelection(unittest.TestCase):
     """Which no-round standings table becomes the end-of-Swiss one, and how the
     post-cut table's annotations reach it."""

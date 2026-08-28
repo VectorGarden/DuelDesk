@@ -131,14 +131,24 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
     cut_keys = sorted((k for k in by_round if k[0] == "cut"), key=lambda k: cut_rank(k[1]))
     swiss_count = swiss_keys[-1][1] if swiss_keys else 0
 
-    # Records come from appearances, so the window has to match the table being
+    # Records come from pairings, so the window has to match the table being
     # derived. A "standings after round 9" table must be read against rounds
-    # 1-9 only: counting every round would give a player who played 11 a 9-2
+    # 1-9 only: using every round would give a player who played 11 a 9-2
     # record in a nine-round table.
-    def pairings_through(limit: int | None) -> list[list[dict]]:
-        return [by_round[k]["pairings"].post.table.rows
-                for k in swiss_keys
+    #
+    # The round numbers travel with the rows, because rounds played is read off
+    # the last round a player appears in and positions are not rounds: drop the
+    # page for round 2 and round 3 becomes "2", shortening every record after
+    # it. Today the completeness guard below already rules that out -- if any
+    # round up to the limit is missing, the window is short and the records go
+    # partial anyway -- so passing them changes nothing on its own. It is here
+    # so that the guard is the only thing holding the invariant, rather than the
+    # guard plus an unstated assumption about list positions two files away.
+    def pairings_through(limit: int | None) -> tuple[list[list[dict]], list[int]]:
+        keys = [k for k in swiss_keys
                 if "pairings" in by_round[k] and (limit is None or k[1] <= limit)]
+        return ([by_round[k]["pairings"].post.table.rows for k in keys],
+                [k[1] for k in keys])
 
     rounds = []
     for i, key in enumerate(swiss_keys + cut_keys):
@@ -152,7 +162,7 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
         if standings_post is not None:
             # Cut standings are the final Swiss ones, so they use every round.
             through = swiss_count if is_cut else key[1]
-            window = pairings_through(through)
+            window, window_rounds = pairings_through(through)
             table = standings_post.post.table.rows
             if through >= swiss_count:
                 # A status names a round in the whole event, so it only reads
@@ -160,12 +170,14 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
                 # "standings after round 9" table it would credit a player who
                 # went on to round 11 with two rounds they had not yet played.
                 table = [{**r, **statuses.get(r["name"], {})} for r in table]
-            recs = derive(table, window)
+            recs = derive(table, window, round_numbers=window_rounds)
 
-            # Losses are only sound when we hold the pairings for every round the
-            # table covers. With gaps a player's appearances undercount, which
-            # would read as extra losses -- so those records stay partial rather
-            # than confidently wrong.
+            # Losses are only sound when we hold the pairings for every round
+            # the table covers. Reading the last round paired shrugs off a gap
+            # in the middle -- a later page still fixes the round -- but not a
+            # gap at the end, which makes every player look like they stopped
+            # early and shortens their record. Those stay partial rather than
+            # confidently wrong.
             complete = len(window) >= through
             if not complete:
                 # A stated round does not depend on the pairings we hold, so
