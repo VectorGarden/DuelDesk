@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   validate:
-    name: HTML, inline scripts and feed
+    name: Tests, HTML, inline scripts and data
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,9 +28,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: npm
 
-      - name: Install Nu Html Checker
-        run: npm install --no-save vnu-jar@23.4.11
+      # Both vnu-jar and the test harness are pinned in package-lock.json, so
+      # CI installs exactly what was developed against.
+      - name: Install dev dependencies
+        run: npm ci
+
+      # The JavaScript lives inside index.html, so it never reaches a bundler
+      # or a linter. These run the page itself in jsdom against the real data.
+      - name: Run tests
+        run: npm test
 
       # Informational: unfiltered, so genuine CSS problems stay visible in the
       # log even though they do not gate. Expect stale CSS complaints here --

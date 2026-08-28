@@ -1,0 +1,149 @@
+/**
+ * Load index.html into jsdom with a controllable network, so the page's own
+ * code can be tested rather than a copy of it.
+ *
+ * The site is one file with an inline <script> that boots on load and fetches
+ * immediately. That is exactly what makes it worth testing through jsdom: the
+ * tests exercise the real boot sequence, the real render functions and the real
+ * state machine, not a re-implementation that can drift from them.
+ *
+ * jsdom does not implement matchMedia, scrollIntoView or fetch, so those are
+ * installed before the page's script runs.
+ */
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+import { JSDOM, VirtualConsole } from 'jsdom';
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+
+/** Read a real file from the repo, so tests run against shipped data. */
+export const fixture = (name) => readFileSync(join(ROOT, name), 'utf8');
+
+/**
+ * Build a fetch stub.
+ *
+ * `routes` maps a URL substring to either:
+ *   - a function (request-like) => Response-ish
+ *   - an object {status, body, headers}
+ * Anything unmatched is served from the repo on disk.
+ */
+function makeFetch(routes, log) {
+  return async function fetchStub(url, options = {}) {
+    const href = String(url);
+    log.push({ url: href, options });
+
+    for (const [pattern, handler] of Object.entries(routes)) {
+      if (!href.includes(pattern)) continue;
+      const spec = typeof handler === 'function'
+        ? await handler({ url: href, options, calls: log })
+        : handler;
+      if (spec === undefined) continue;          // fall through to disk
+      return makeResponse(spec);
+    }
+
+    const name = href.replace(/^.*\/\//, '').replace(/^[^/]*\//, '').split('?')[0] || 'index.html';
+    try {
+      const body = fixture(name);
+      return makeResponse({ status: 200, body, headers: { ETag: `"disk-${name}"` } });
+    } catch {
+      return makeResponse({ status: 404, body: '' });
+    }
+  };
+}
+
+function makeResponse({ status = 200, body = '', headers = {} }) {
+  const map = new Map(Object.entries(headers).map(([k, v]) => [k.toLowerCase(), String(v)]));
+  return {
+    ok: status >= 200 && status < 300,
+    status,
+    headers: { get: (k) => map.get(String(k).toLowerCase()) ?? null },
+    text: async () => body,
+    json: async () => JSON.parse(body),
+  };
+}
+
+/**
+ * Load the page.
+ *
+ * @param {object} opts
+ * @param {object} opts.routes        fetch overrides, keyed by URL substring
+ * @param {boolean} opts.prefersLight what matchMedia reports
+ * @param {string} opts.storedTheme   value seeded into localStorage
+ * @param {boolean} opts.settle       wait for boot fetches (default true)
+ */
+export async function loadPage(opts = {}) {
+  const { routes = {}, prefersLight = false, storedTheme = null, settle = true } = opts;
+  const calls = [];
+
+  // Swallow the page's own console noise; surface real jsdom errors.
+  const virtualConsole = new VirtualConsole();
+  const errors = [];
+  virtualConsole.on('jsdomError', (e) => errors.push(e));
+
+  const dom = new JSDOM(fixture('index.html'), {
+    url: 'https://dueldesk.test/',
+    runScripts: 'dangerously',
+    pretendToBeVisual: true,
+    virtualConsole,
+    beforeParse(window) {
+      window.fetch = makeFetch(routes, calls);
+
+      window.matchMedia = (query) => ({
+        matches: query.includes('prefers-color-scheme: light') ? prefersLight : false,
+        media: query,
+        addEventListener() {}, removeEventListener() {},
+        addListener() {}, removeListener() {},
+      });
+
+      window.Element.prototype.scrollIntoView = function () {};
+      window.scrollTo = () => {};
+
+      if (storedTheme !== null) {
+        try { window.localStorage.setItem('dd-theme', storedTheme); } catch {}
+      }
+    },
+  });
+
+  const { window } = dom;
+  const page = {
+    dom, window,
+    document: window.document,
+    calls,
+    errors,
+    /** Read a global the page defined (its script is a classic script). */
+    get: (name) => window.eval(name),
+    /** Run an expression in page scope. */
+    run: (expr) => window.eval(expr),
+    $: (sel) => window.document.querySelector(sel),
+    $$: (sel) => [...window.document.querySelectorAll(sel)],
+    text: (sel) => (window.document.querySelector(sel)?.textContent ?? '').replace(/\s+/g, ' ').trim(),
+    close: () => dom.window.close(),
+  };
+
+  if (settle) await settled(page);
+  return page;
+}
+
+/** Wait until both boot loads have left their loading state. */
+export async function settled(page, timeout = 4000) {
+  await waitFor(page, "coverageState !== 'loading' && roundsState !== 'loading'", timeout);
+  await tick(page, 2);
+}
+
+/** Poll a page-scope boolean expression until true. */
+export async function waitFor(page, expr, timeout = 4000) {
+  const started = Date.now();
+  while (Date.now() - started < timeout) {
+    let ok = false;
+    try { ok = !!page.window.eval(expr); } catch {}
+    if (ok) return;
+    await new Promise((r) => setTimeout(r, 10));
+  }
+  throw new Error(`waitFor timed out after ${timeout}ms: ${expr}`);
+}
+
+/** Let queued microtasks and timers drain. */
+export async function tick(page, times = 1) {
+  for (let i = 0; i < times; i++) await new Promise((r) => setTimeout(r, 0));
+}
