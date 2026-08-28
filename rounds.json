@@ -4,7 +4,7 @@
   "duelists": 1248,
   "swissRounds": 12,
   "coverageBy": "the Duel Desk team",
-  "updated": "2026-08-28T05:04:33.199288Z",
+  "updated": "2026-08-28T05:58:15.625011Z",
   "rounds": [
     {
       "id": "1",
@@ -12,7 +12,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "21:28",
+      "posted": "21:44",
       "standingsAfter": 1,
       "pairings": [
         {
@@ -150,7 +150,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "22:06",
+      "posted": "22:22",
       "standingsAfter": 2,
       "pairings": [
         {
@@ -288,7 +288,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "22:44",
+      "posted": "23:00",
       "standingsAfter": 3,
       "pairings": [
         {
@@ -426,7 +426,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "23:22",
+      "posted": "23:38",
       "standingsAfter": 4,
       "pairings": [
         {
@@ -564,7 +564,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "00:00",
+      "posted": "00:16",
       "standingsAfter": 5,
       "pairings": [
         {
@@ -702,7 +702,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "00:38",
+      "posted": "00:54",
       "standingsAfter": 6,
       "pairings": [
         {
@@ -840,7 +840,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "01:16",
+      "posted": "01:32",
       "standingsAfter": 7,
       "pairings": [
         {
@@ -978,7 +978,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "01:54",
+      "posted": "02:10",
       "standingsAfter": 8,
       "pairings": [
         {
@@ -1116,7 +1116,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "02:32",
+      "posted": "02:48",
       "standingsAfter": 9,
       "pairings": [
         {
@@ -1254,7 +1254,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "03:10",
+      "posted": "03:26",
       "standingsAfter": 10,
       "pairings": [
         {
@@ -1392,7 +1392,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "03:48",
+      "posted": "04:04",
       "standingsAfter": 11,
       "pairings": [
         {
@@ -1530,7 +1530,7 @@
       "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "04:26",
+      "posted": "04:42",
       "standingsAfter": 12,
       "pairings": [
         {
@@ -1668,7 +1668,7 @@
       "phase": "Top cut",
       "state": "done",
       "tables": 4,
-      "posted": "05:04",
+      "posted": "05:20",
       "standingsAfter": 12,
       "pairings": [
         {
@@ -1778,7 +1778,7 @@
       "phase": "Top cut",
       "state": "live",
       "tables": 2,
-      "posted": "05:42",
+      "posted": "05:58",
       "standingsAfter": 12,
       "pairings": [
         {

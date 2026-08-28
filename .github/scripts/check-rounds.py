@@ -159,6 +159,20 @@ def main(path="rounds.json"):
             problems.append(f"{later['label']}: {len(after)} Duelists from "
                             f"{len(before)} in {earlier['label']}, expected half")
 
+    # "updated" must name the newest round that was actually posted. It drifted
+    # silently once before, when adding the top cut left it an round behind.
+    stamped = [r for r in rounds if r.get("posted")]
+    if stamped and data.get("updated"):
+        newest = stamped[-1]
+        if not str(data["updated"]).endswith("Z") and "+" not in str(data["updated"]):
+            problems.append(f"updated is not an absolute timestamp: {data['updated']!r}")
+        else:
+            hhmm = str(data["updated"])[11:16]
+            if hhmm != newest.get("posted"):
+                problems.append(
+                    f"updated says {hhmm} but the newest posted round "
+                    f"({newest['label']}) went up at {newest.get('posted')}")
+
     if problems:
         for p_ in problems[:25]:
             print(f"  FAIL  {p_}")

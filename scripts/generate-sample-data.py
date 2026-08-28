@@ -237,7 +237,10 @@ def main():
         'duelists': ANNOUNCED,
         'swissRounds': SWISS,
         'coverageBy': 'the Duel Desk team',
-        'updated': posted_at(SWISS).isoformat().replace('+00:00', 'Z'),
+        # The newest posted round, which is the last cut round that has pairings.
+        # This was posted_at(SWISS) back when the Swiss rounds were the last
+        # thing posted; adding the cut left it pointing an round behind.
+        'updated': posted_at(POSTED_ROUNDS - 1).isoformat().replace('+00:00', 'Z'),
         'rounds': rounds,
     }, open('rounds.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     print(f'rounds.json: {len(rounds)} rounds ({SWISS} swiss + 3 cut)')
