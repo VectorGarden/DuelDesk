@@ -396,6 +396,9 @@ tbody tr:hover{background:var(--surface-2)}
    underline on hover and focus is what says it goes somewhere. */
 a.post__t{color:inherit; text-decoration:none}
 a.post__t:hover,a.post__t:focus-visible{text-decoration:underline}
+/* A headline that moves the page rather than leaving it. Dotted, so the two
+   kinds of link are distinguishable before clicking rather than after. */
+a.post__t--jump:hover,a.post__t--jump:focus-visible{text-decoration:underline dotted}
 .post__time{font:400 .78rem var(--mono); color:var(--text-3); flex:none}
 
 .notice{
@@ -671,6 +674,38 @@ const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ESCAPES[c]);
    homepage, so linking those would reload the page under the reader. For real
    coverage the link is the point: the page shows Konami's headlines, and this is
    how a reader reaches the post itself. */
+/* A feed item for a round this page already shows should move the page to it,
+   not send the reader to Konami to read a table sitting a few hundred pixels
+   above. Only pairings and standings: a feature match or a deck list is prose
+   and photographs, and the post is the only place to read it.
+
+   Returns null when the round cannot be resolved -- an event-wide post while two
+   tournaments are on offer names no format, and guessing which one is worse than
+   linking out. */
+function jumpTarget(post){
+  if (post.kind !== 'pairings' && post.kind !== 'standings') return null;
+  if (post.round === null || post.round === undefined) return null;
+  if (hasFormatChoice() && !post.format) return null;
+  const name = post.format || activeFormat;
+  const fmt = eventInfo?.formats?.find(f => f.format === name);
+  const rounds = fmt?.rounds ?? [];
+
+  /* "Final Standings" is Konami's name for the table at the end of Swiss, not
+     for a bracket round. Reading it as one landed the reader on a panel headed
+     "Final · Top cut" for a post about Swiss -- showing the right rows, since a
+     cut round points at that very table, but saying the wrong thing about them. */
+  if (post.kind === 'standings' && post.round === 'Final') {
+    const swiss = rounds.filter(r => r.phase !== 'Top cut');
+    const last = swiss[swiss.length - 1];
+    return last ? {format: name, round: last.id, view: 'standings'} : null;
+  }
+
+  /* Cut ids drop their spaces: the feed says "Top 8", the data says "Top8". */
+  const wanted = String(post.round).replace(/\s+/g, '');
+  const round = rounds.find(r => String(r.id) === wanted);
+  return round ? {format: name, round: round.id, view: post.kind} : null;
+}
+
 function offsite(url){
   /* Every url here has been through safeUrl(), so it is either an http(s) URL or
      the inert '#'. That is why this needs no guard of its own: '#' resolves
@@ -1326,6 +1361,13 @@ function renderStandings(r){
     : ROUNDS.find(x => String(x.id) === String(r.standingsAfter))) ?? r;
   const rows = (source.standings ?? []).filter(s => hit(s.name, s.deck));
   if (!rows.length) return noMatch('Duelists');
+  /* Deck and opponent win percentage come from the simulation, which invents
+     both. Konami's standings publish rank, name and points, so against real
+     coverage these were two permanently empty columns -- and the percentage
+     rendered as a bare "%". Each appears only where the data has it. */
+  const hasDeck = rows.some(s => s.deck);
+  const hasPct = rows.some(s => s.pct !== null && s.pct !== undefined);
+
   return wrapTable(`Standings after round ${r.standingsAfter}`, `<table>
     <caption>${r.phase === 'Top cut'
       ? `Final Swiss standings after round ${esc(r.standingsAfter)}, top eight shown.`
@@ -1333,13 +1375,15 @@ function renderStandings(r){
     <thead><tr>
       <th scope="col" class="num">Place</th><th scope="col">Duelist</th>
       <th scope="col">Record</th><th scope="col" class="num">Pts</th>
-      <th scope="col">Deck</th><th scope="col">Opp. win %</th>
+      ${hasDeck ? '<th scope="col">Deck</th>' : ''}
+      ${hasPct ? '<th scope="col">Opp. win %</th>' : ''}
     </tr></thead><tbody>
     ${rows.map(s => `<tr>
       <th scope="row" class="num">${esc(s.pos)}</th><td>${esc(s.name)}</td>
       <td class="rec${s.record?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(s.record, {drawsPossible: eventDrawsPossible()}))}</td>
       <td class="rec num">${esc(s.points ?? '—')}</td>
-      <td>${esc(s.deck)}</td><td class="rec">${esc(s.pct)}%</td></tr>`).join('')}
+      ${hasDeck ? `<td>${esc(s.deck ?? '')}</td>` : ''}
+      ${hasPct ? `<td class="rec">${esc(s.pct)}%</td>` : ''}</tr>`).join('')}
     </tbody></table>`);
 }
 
@@ -1496,15 +1540,35 @@ function renderEvents(){
       <div class="event__body" id="ev-${i}" ${isOpen ? '' : 'hidden'}>
         ${ev.posts.map(p => `<div class="post" style="--k:${kindOf(p.kind).color}">
           <span class="post__k">${esc(kindOf(p.kind).label)}</span>
-          ${offsite(p.url)
-            ? `<a class="post__t" href="${esc(p.url)}" rel="external noreferrer">${esc(p.title)}</a>`
-            : `<span class="post__t">${esc(p.title)}</span>`}
+          ${(() => {
+            const to = jumpTarget(p);
+            if (to) return `<a class="post__t post__t--jump" href="#round-h"
+              data-jump-format="${esc(to.format)}" data-jump-round="${esc(to.round)}"
+              data-jump-view="${esc(to.view)}">${esc(p.title)}</a>`;
+            return offsite(p.url)
+              ? `<a class="post__t" href="${esc(p.url)}" rel="external noreferrer">${esc(p.title)}</a>`
+              : `<span class="post__t">${esc(p.title)}</span>`;
+          })()}
           <span class="post__time">${esc(p.time)}</span>
         </div>`).join('')}
       </div>
     </article>`;
   }).join('');
 }
+
+/* An in-page headline moves the page to the round it names. href="#round-h" is
+   real, so the link works with middle-click, keyboard and JavaScript off; the
+   handler upgrades it to selecting the right format, round and tab. */
+list.addEventListener('click', e => {
+  const jump = e.target.closest('[data-jump-round]');
+  if (!jump) return;
+  e.preventDefault();
+  const {jumpFormat, jumpRound, jumpView} = jump.dataset;
+  selectFormat(jumpFormat);           // no-op when it is already the one shown
+  activeView = jumpView;              // set before selectRound, which renders
+  selectRound(jumpRound, true);
+  document.getElementById('round-h').scrollIntoView({block: 'start'});
+});
 
 /* Delegated once, and it toggles the panel in place rather than
    re-rendering the list — so focus is never destroyed and never
