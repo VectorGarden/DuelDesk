@@ -67,10 +67,11 @@ def check_rounds(label, rounds, swiss_count):
             if r.get("pairings") or r.get("standings"):
                 problems.append(f"{rl}: an upcoming round must carry no data")
             continue
-        if not r.get("pairings"):
-            problems.append(f"{rl}: no pairings")
-        if not r.get("standings"):
-            problems.append(f"{rl}: no standings")
+        # A round must carry something, but not necessarily both. Generated data
+        # always has each; real coverage does not -- the blog posts standings for
+        # some rounds and pairings for others.
+        if not r.get("pairings") and not r.get("standings"):
+            problems.append(f"{rl}: neither pairings nor standings")
 
         names = [n for p in r.get("pairings") or [] for n in (p.get("a"), p.get("b"))]
         if any(p.get("a") == p.get("b") for p in r.get("pairings") or []):
@@ -81,9 +82,15 @@ def check_rounds(label, rounds, swiss_count):
         after = r.get("standingsAfter")
         if isinstance(after, int):
             for st in r.get("standings") or []:
-                played = matches_played(st.get("record"))
+                rec = st.get("record")
+                # A partial record is valid, not broken: wins can be exact while
+                # losses are not, and the page renders a ? for the gap. Only a
+                # fully derived record can be checked against the round count.
+                if isinstance(rec, dict) and rec.get("confidence") != "derived":
+                    continue
+                played = matches_played(rec)
                 if played is None:
-                    problems.append(f"{rl}: unusable record {st.get('record')!r}")
+                    problems.append(f"{rl}: unusable record {rec!r}")
                     continue
                 if played != after:
                     problems.append(
@@ -95,8 +102,15 @@ def check_rounds(label, rounds, swiss_count):
     for r in rounds:
         if r.get("phase") not in ("Swiss", "Top cut"):
             problems.append(f"{label} {r.get('label', r.get('id'))}: phase is {r.get('phase')!r}")
-    if isinstance(swiss_count, int) and len(swiss) != swiss_count:
-        problems.append(f"{label}: {len(swiss)} Swiss rounds but swissRounds says {swiss_count}")
+    if isinstance(swiss_count, int):
+        # Scraped coverage can be missing a round the blog never posted, so the
+        # count present may be lower. What must never happen is a round numbered
+        # beyond the tournament's length, or a length below what is present.
+        numbers = [int(r["id"]) for r in swiss if str(r.get("id", "")).isdigit()]
+        if numbers and max(numbers) > swiss_count:
+            problems.append(f"{label}: round {max(numbers)} exceeds swissRounds {swiss_count}")
+        if len(swiss) > swiss_count:
+            problems.append(f"{label}: {len(swiss)} Swiss rounds but swissRounds says {swiss_count}")
 
     played_cut = [r for r in cut if r.get("state") != "upcoming"]
     for r in played_cut:
@@ -111,6 +125,9 @@ def check_rounds(label, rounds, swiss_count):
         for depth, r in enumerate(played_cut):
             for p in r.get("pairings") or []:
                 for who, rec in (("a", p.get("aRec")), ("b", p.get("bRec"))):
+                    if rec is None or (isinstance(rec, dict)
+                                       and rec.get("confidence") != "derived"):
+                        continue          # a scraped pairing may carry no record
                     played = matches_played(rec)
                     if played is None:
                         problems.append(f"{label} {r['label']}: unusable record {rec!r}")
@@ -191,9 +208,15 @@ def main(path="rounds.json"):
     stamped = [(f.get("format"), r) for f in formats for r in (f.get("rounds") or []) if r.get("posted")]
     if stamped and data.get("updated"):
         latest = max(r.get("posted") for _, r in stamped)
-        hhmm = str(data["updated"])[11:16]
-        if hhmm != latest:
-            problems.append(f"updated says {hhmm} but the newest posted round went up at {latest}")
+        stamp = str(data["updated"])
+        # Generated data stamps a time; scraped data has only the date the blog
+        # published. Compare on whichever precision both carry.
+        if "T" in stamp and ":" in latest:
+            if stamp[11:16] != latest:
+                problems.append(f"updated says {stamp[11:16]} but the newest "
+                                f"posted round went up at {latest}")
+        elif len(latest) == 10 and stamp[:10] < latest:
+            problems.append(f"updated is {stamp[:10]} but a round was posted at {latest}")
 
     if problems:
         for p_ in problems[:25]:

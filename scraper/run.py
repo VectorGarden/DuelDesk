@@ -18,7 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from build import Source, build_event                     # noqa: E402
 from fetch import BASE, SITEMAP, Fetcher, newest_sitemap  # noqa: E402
-from index import assign_events, parse_post_sitemap       # noqa: E402
+from index import assign_events, parse_post_sitemap, parse_sitemap_index  # noqa: E402
 from parse import parse_post                              # noqa: E402
 
 # Ties were removed from tournament policy on this date.
@@ -47,7 +47,17 @@ def main() -> int:
 
     f = Fetcher(cache_dir=args.cache)
     index = f.get(SITEMAP, refresh=True)
-    entries = parse_post_sitemap(f.get(newest_sitemap(index), refresh=True))
+
+    # Every post sub-sitemap, not just the newest. An event's posts are split
+    # across URL shapes -- some carry the event slug, most do not -- and the
+    # undated siblings are attached by date window, so they have to be in the
+    # index for that to work. Reading only the newest chunk found 35 of the
+    # event's posts and none of its round pairings.
+    sub = [l for l in parse_sitemap_index(index) if "posts-post" in l]
+    entries = []
+    for url in sub:
+        entries += parse_post_sitemap(f.get(url, refresh=(url == newest_sitemap(index))))
+    print(f"Indexed {len(entries):,} posts from {len(sub)} sub-sitemaps")
 
     slug, posts, latest = newest_event(entries)
     if not slug:

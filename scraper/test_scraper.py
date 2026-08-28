@@ -443,3 +443,61 @@ class TestBuild(unittest.TestCase):
             self.assertIn(key, self.adv)
         for key in ("id", "label", "phase", "state", "order", "pairings", "standings"):
             self.assertIn(key, self.adv["rounds"][0])
+
+
+class TestTLS(unittest.TestCase):
+    def test_the_bundled_intermediate_is_present_and_not_expiring(self):
+        import re as _re
+        import datetime as _dt
+        certs = list((Path(__file__).parent / "certs").glob("*.pem"))
+        self.assertTrue(certs, "the server omits its intermediate; one must be bundled")
+        for c in certs:
+            text = c.read_text()
+            self.assertIn("BEGIN CERTIFICATE", text, f"{c.name} holds no certificate")
+            m = _re.search(r"# Expires: (\d{4}-\d{2}-\d{2})", text)
+            self.assertTrue(m, f"{c.name} does not record its expiry")
+            expires = _dt.date.fromisoformat(m.group(1))
+            left = (expires - _dt.date.today()).days
+            self.assertGreater(left, 90,
+                f"{c.name} expires in {left} days; fetch the current intermediate "
+                "from the leaf's AIA URL and replace it")
+
+    def test_the_intermediate_is_the_certificate_we_expect(self):
+        """Pin it by fingerprint.
+
+        The file is loaded as a trust anchor, so substituting another
+        certificate would change what the scraper accepts. Comparing the hash
+        makes that fail here rather than depend on someone reading base64 in a
+        diff. Computed from the DER, which is what a fingerprint is over.
+        """
+        import base64
+        import hashlib
+        import re as _re
+
+        expected = {
+            "geotrust-tls-rsa-ca-g1.pem":
+                "c06e307f7cfc1d32fa72a4c033c87b90019af216f0775d64978a2eca6c8a230e",
+        }
+        certs = {c.name: c for c in (Path(__file__).parent / "certs").glob("*.pem")}
+        self.assertEqual(set(certs), set(expected),
+                         "an unpinned certificate was added to the trust bundle")
+
+        for name, path in certs.items():
+            body = _re.search(r"-----BEGIN CERTIFICATE-----(.*?)-----END CERTIFICATE-----",
+                              path.read_text(), _re.S)
+            self.assertTrue(body, f"{name} holds no certificate")
+            der = base64.b64decode("".join(body.group(1).split()))
+            got = hashlib.sha256(der).hexdigest()
+            self.assertEqual(got, expected[name],
+                             f"{name} is not the pinned certificate")
+            # The header must state the same hash, so the file documents itself.
+            self.assertIn(got, path.read_text().lower(),
+                          f"{name} header does not record its own fingerprint")
+
+    def test_verification_is_never_disabled(self):
+        # A fallback that skips verification would be worse than the failure it
+        # works around, so make that impossible to add quietly.
+        src = (Path(__file__).parent / "fetch.py").read_text()
+        for bad in ("_create_unverified_context", "CERT_NONE", "check_hostname = False",
+                    "verify=False"):
+            self.assertNotIn(bad, src, f"fetch.py must never {bad}")
