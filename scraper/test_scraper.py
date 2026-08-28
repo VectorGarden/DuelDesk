@@ -183,3 +183,84 @@ class TestIndex(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class TestFetcher(unittest.TestCase):
+    """The cache, the politeness delay and the update gate, without a network."""
+
+    def setUp(self):
+        import tempfile
+        from fetch import Fetcher
+        self.tmp = Path(tempfile.mkdtemp())
+        self.calls = []
+
+        def transport(url, ua):
+            self.calls.append(url)
+            return f"<html>{url}</html>"
+
+        self.f = Fetcher(cache_dir=self.tmp / "cache", delay=0, transport=transport)
+
+    def test_a_page_is_fetched_once_then_served_from_cache(self):
+        a = self.f.get("https://example.test/post/")
+        b = self.f.get("https://example.test/post/")
+        self.assertEqual(a, b)
+        self.assertEqual(len(self.calls), 1, "the second read must not hit the network")
+        self.assertEqual(self.f.cache_size(), 1)
+
+    def test_refresh_bypasses_the_cache(self):
+        self.f.get("https://example.test/a/")
+        self.f.get("https://example.test/a/", refresh=True)
+        self.assertEqual(len(self.calls), 2)
+
+    def test_the_user_agent_identifies_the_project(self):
+        from fetch import USER_AGENT
+        self.assertIn("DuelDesk", USER_AGENT)
+        self.assertIn("dueldesk.reizu.dev", USER_AGENT)
+
+
+SITEMAP_INDEX = """<?xml version="1.0"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap><loc>https://yugiohblog.konami.com/wp-sitemap-posts-post-1.xml</loc></sitemap>
+<sitemap><loc>https://yugiohblog.konami.com/wp-sitemap-posts-post-7.xml</loc></sitemap>
+<sitemap><loc>https://yugiohblog.konami.com/wp-sitemap-posts-post-2.xml</loc></sitemap>
+<sitemap><loc>https://yugiohblog.konami.com/wp-sitemap-taxonomies-category-1.xml</loc></sitemap>
+</sitemapindex>"""
+
+
+class TestUpdateGate(unittest.TestCase):
+    def test_the_newest_sub_sitemap_is_chosen_numerically(self):
+        from fetch import newest_sitemap
+        # Not by document order, and not by string sort -- "post-10" must beat
+        # "post-9" once the blog gets that far.
+        self.assertTrue(newest_sitemap(SITEMAP_INDEX).endswith("posts-post-7.xml"))
+        many = SITEMAP_INDEX.replace("post-2.xml", "post-10.xml")
+        self.assertTrue(newest_sitemap(many).endswith("posts-post-10.xml"))
+
+    def test_taxonomy_sitemaps_are_ignored(self):
+        from fetch import newest_sitemap
+        self.assertIn("posts-post", newest_sitemap(SITEMAP_INDEX))
+
+    def test_gate_opens_only_when_the_high_water_mark_moves(self):
+        import tempfile
+        from fetch import Fetcher, check_for_updates, save_state
+        tmp = Path(tempfile.mkdtemp())
+        sm = """<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url><loc>https://x/a/</loc><lastmod>2026-08-25T00:00:00-07:00</lastmod></url>
+        <url><loc>https://x/b/</loc><lastmod>2026-08-24T00:00:00-07:00</lastmod></url></urlset>"""
+
+        def transport(url, ua):
+            return SITEMAP_INDEX if url.endswith("wp-sitemap.xml") else sm
+
+        f = Fetcher(cache_dir=tmp / "c", delay=0, transport=transport)
+        state = tmp / "state.json"
+
+        changed, high = check_for_updates(f, state)
+        self.assertTrue(changed, "no prior state means everything is new")
+        self.assertEqual(high, "2026-08-25")
+
+        save_state(state, {"high_water": high})
+        changed, _ = check_for_updates(f, state)
+        self.assertFalse(changed, "unchanged sitemap must close the gate")
+
+        save_state(state, {"high_water": "2020-01-01"})
+        changed, _ = check_for_updates(f, state)
+        self.assertTrue(changed, "a moved high-water mark must reopen it")

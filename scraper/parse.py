@@ -28,7 +28,7 @@ from typing import Any
 # They must be stripped per *cell*, before first and last names are joined:
 # "Philip DEU" + "Weidinger" naively becomes "Philip DEU Weidinger", where the
 # trailing token is a surname and the code is stranded in the middle.
-_REGION = re.compile(r"^(?P<name>.+?\S)\s+(?P<code>[A-Z]{2,3})$")
+_REGION_TOKEN = re.compile(r"[A-Z]{2,3}")
 
 _TAG = re.compile(r"<[^>]+>")
 _TABLE = re.compile(r"<table.*?</table>", re.S | re.I)
@@ -42,11 +42,28 @@ def _text(fragment: str) -> str:
 
 
 def strip_region(name: str) -> tuple[str, str | None]:
-    """'Philip DEU' -> ('Philip', 'DEU'). Leaves ordinary names alone."""
-    m = _REGION.match(name.strip())
-    if m:
-        return m.group("name").strip(), m.group("code")
-    return name.strip(), None
+    """'Philip DEU' -> ('Philip', 'DEU'). Leaves ordinary names alone.
+
+    The code is not always trailing. Where a whole name arrives in one cell it
+    can sit mid-string -- "Joshua Aaron TX Jones", "Christian Jorel Sevil CA
+    Agustin" -- so every all-caps 2-3 letter token is removed, not just the last.
+
+    This matters beyond tidiness: records are derived by counting a player's
+    appearances across pairings pages, so the same person must normalise
+    identically everywhere or they count as two people.
+
+    The blog writes ordinary names in title case and reserves all-caps for these
+    codes. At least one token is always kept, so a name that is nothing but such
+    a token survives intact.
+    """
+    tokens = name.strip().split()
+    if not tokens:
+        return "", None
+    codes = [t for t in tokens if _REGION_TOKEN.fullmatch(t)]
+    kept = [t for t in tokens if not _REGION_TOKEN.fullmatch(t)]
+    if not kept:                      # the whole name looked like a code
+        return " ".join(tokens), None
+    return " ".join(kept), (codes[0] if codes else None)
 
 
 def normalise_name(raw: str) -> str:
