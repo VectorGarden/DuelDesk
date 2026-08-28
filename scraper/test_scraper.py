@@ -815,6 +815,54 @@ class TestFeed(unittest.TestCase):
         self.assertEqual(len(root.findall("channel/item")), 0)
 
 
+class TestOngoing(unittest.TestCase):
+    """Whether the site may say a round is in progress."""
+
+    def setUp(self):
+        from datetime import datetime, timezone
+        self.now = datetime(2026, 8, 29, 14, 0, tzinfo=timezone.utc)
+
+    def ago(self, **kw):
+        from datetime import timedelta
+        return self.now - timedelta(**kw)
+
+    def test_recent_coverage_means_the_event_is_running(self):
+        from cadence import is_ongoing
+        self.assertTrue(is_ongoing(self.ago(minutes=40), self.now))
+
+    def test_coverage_that_stopped_means_it_is_over(self):
+        from cadence import is_ongoing
+        self.assertFalse(is_ongoing(self.ago(days=12), self.now),
+                         "this is the state the site published on its first day")
+        self.assertFalse(is_ongoing(self.ago(hours=7), self.now))
+
+    def test_nothing_known_is_not_a_reason_to_claim_live(self):
+        from cadence import is_ongoing
+        self.assertFalse(is_ongoing(None, self.now))
+
+    def test_build_format_will_not_claim_live_unasked(self):
+        from build import build_format, Source
+        from parse import Post, Table
+        rows = [{"table": 1, "a": {"name": "Ada", "region": None, "deck": None},
+                 "b": {"name": "Bo", "region": None, "deck": None}}]
+        src = Source(url="https://x/", posted="2026-08-16T11:07:30-07:00",
+                     post=Post(title="Round 1 Pairings", kind="pairings",
+                               fmt="Advanced", round=1,
+                               table=Table("pairings", [], rows)))
+        # A caller that does not say must not get a live round by default.
+        self.assertEqual(
+            [r for r in build_format("Advanced", [src])["rounds"] if r["state"] == "live"],
+            [])
+        self.assertEqual(
+            len([r for r in build_format("Advanced", [src], ongoing=True)["rounds"]
+                 if r["state"] == "live"]), 1)
+
+    def test_a_post_from_the_future_does_not_count(self):
+        from datetime import timedelta
+        from cadence import is_ongoing
+        self.assertFalse(is_ongoing(self.now + timedelta(hours=2), self.now))
+
+
 class TestProvenanceCheck(unittest.TestCase):
     """check-rounds.py is what stops a file that misdescribes itself reaching
     the site. It runs in CI against real data, but its own rules had no test,
@@ -1083,10 +1131,20 @@ class TestBuild(unittest.TestCase):
         self.assertTrue(all(s["record"]["losses"] is None or s["record"]["losses"] >= 0
                             for s in last["standings"]))
 
-    def test_the_newest_round_is_the_live_one(self):
-        live = [r for r in self.adv["rounds"] if r["state"] == "live"]
+    def test_a_finished_event_has_no_round_in_progress(self):
+        # The default, and the important direction: "in progress" is a claim
+        # about right now. YCS Montreal reached production reading
+        # "Top 4 - IN PROGRESS" twelve days after it ended.
+        self.assertEqual([r for r in self.adv["rounds"] if r["state"] == "live"], [])
+
+    def test_the_newest_round_is_live_while_the_event_is(self):
+        from build import build_event
+        ev = build_event("YCS Montréal", _sources(), updated="2026-08-16T19:10:00Z",
+                         ongoing=True)
+        adv = next(f for f in ev["formats"] if f["format"] == "Advanced")
+        live = [r for r in adv["rounds"] if r["state"] == "live"]
         self.assertEqual(len(live), 1)
-        self.assertEqual(live[0]["order"], max(r["order"] for r in self.adv["rounds"]))
+        self.assertEqual(live[0]["order"], max(r["order"] for r in adv["rounds"]))
 
     def test_every_round_carries_its_source_url(self):
         for r in self.adv["rounds"]:
