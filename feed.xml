@@ -1,165 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Duel Desk — Yu-Gi-Oh! TCG event coverage</title>
+    <title>Duel Desk — Yu-Gi-Oh! TCG event coverage (SAMPLE DATA)</title>
     <link>https://dueldesk.reizu.dev/</link>
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.</description>
+    <description>SAMPLE DATA — this is a design study. Every Duelist name, record and pairing in this feed is invented. Not affiliated with or endorsed by Konami. Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Aug 2026 04:29:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 05:00:16 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>A design study. Not affiliated with or endorsed by Konami. All names and records shown are invented sample data.</copyright>
     <item>
-      <title>Remote Duel YCS August 2026: Feature match: Fiendsmith against Mitsurugi</title>
+      <title>[Sample] Remote Duel YCS August 2026: Feature match: Fiendsmith against Mitsurugi</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-042904</guid>
+      <guid isPermaLink="false">dueldesk-20260828-050016</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 04:29:04 +0000</pubDate>
-      <description>Feature match: Fiendsmith against Mitsurugi</description>
+      <pubDate>Fri, 28 Aug 2026 05:00:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Feature match: Fiendsmith against Mitsurugi</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Round 12 pairings are up</title>
+      <title>[Sample] Remote Duel YCS August 2026: Round 12 pairings are up</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-042004</guid>
+      <guid isPermaLink="false">dueldesk-20260828-045116</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 04:20:04 +0000</pubDate>
-      <description>Round 12 pairings are up</description>
+      <pubDate>Fri, 28 Aug 2026 04:51:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Round 12 pairings are up</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Standings after round 11</title>
+      <title>[Sample] Remote Duel YCS August 2026: Standings after round 11</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-040404</guid>
+      <guid isPermaLink="false">dueldesk-20260828-043516</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 04:04:04 +0000</pubDate>
-      <description>Standings after round 11</description>
+      <pubDate>Fri, 28 Aug 2026 04:35:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Standings after round 11</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Round 11 pairings are up</title>
+      <title>[Sample] Remote Duel YCS August 2026: Round 11 pairings are up</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-034204</guid>
+      <guid isPermaLink="false">dueldesk-20260828-041316</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 03:42:04 +0000</pubDate>
-      <description>Round 11 pairings are up</description>
+      <pubDate>Fri, 28 Aug 2026 04:13:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Round 11 pairings are up</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: The decks still in contention</title>
+      <title>[Sample] Remote Duel YCS August 2026: The decks still in contention</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-033404</guid>
+      <guid isPermaLink="false">dueldesk-20260828-040516</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 03:34:04 +0000</pubDate>
-      <description>The decks still in contention</description>
+      <pubDate>Fri, 28 Aug 2026 04:05:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. The decks still in contention</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Standings after round 10</title>
+      <title>[Sample] Remote Duel YCS August 2026: Standings after round 10</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-032604</guid>
+      <guid isPermaLink="false">dueldesk-20260828-035716</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 03:26:04 +0000</pubDate>
-      <description>Standings after round 10</description>
+      <pubDate>Fri, 28 Aug 2026 03:57:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Standings after round 10</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Round 10 pairings are up</title>
+      <title>[Sample] Remote Duel YCS August 2026: Round 10 pairings are up</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-030404</guid>
+      <guid isPermaLink="false">dueldesk-20260828-033516</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 03:04:04 +0000</pubDate>
-      <description>Round 10 pairings are up</description>
+      <pubDate>Fri, 28 Aug 2026 03:35:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Round 10 pairings are up</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Standings after round 9</title>
+      <title>[Sample] Remote Duel YCS August 2026: Standings after round 9</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-024804</guid>
+      <guid isPermaLink="false">dueldesk-20260828-031916</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 02:48:04 +0000</pubDate>
-      <description>Standings after round 9</description>
+      <pubDate>Fri, 28 Aug 2026 03:19:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Standings after round 9</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Feature match: Maliss against Mitsurugi</title>
+      <title>[Sample] Remote Duel YCS August 2026: Feature match: Maliss against Mitsurugi</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-023504</guid>
+      <guid isPermaLink="false">dueldesk-20260828-030616</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 02:35:04 +0000</pubDate>
-      <description>Feature match: Maliss against Mitsurugi</description>
+      <pubDate>Fri, 28 Aug 2026 03:06:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Feature match: Maliss against Mitsurugi</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Round 9 pairings are up</title>
+      <title>[Sample] Remote Duel YCS August 2026: Round 9 pairings are up</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-022604</guid>
+      <guid isPermaLink="false">dueldesk-20260828-025716</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 02:26:04 +0000</pubDate>
-      <description>Round 9 pairings are up</description>
+      <pubDate>Fri, 28 Aug 2026 02:57:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Round 9 pairings are up</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Standings after round 8</title>
+      <title>[Sample] Remote Duel YCS August 2026: Standings after round 8</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-021004</guid>
+      <guid isPermaLink="false">dueldesk-20260828-024116</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 02:10:04 +0000</pubDate>
-      <description>Standings after round 8</description>
+      <pubDate>Fri, 28 Aug 2026 02:41:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Standings after round 8</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Round 8 pairings are up</title>
+      <title>[Sample] Remote Duel YCS August 2026: Round 8 pairings are up</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-014804</guid>
+      <guid isPermaLink="false">dueldesk-20260828-021916</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 01:48:04 +0000</pubDate>
-      <description>Round 8 pairings are up</description>
+      <pubDate>Fri, 28 Aug 2026 02:19:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Round 8 pairings are up</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Standings after round 7</title>
+      <title>[Sample] Remote Duel YCS August 2026: Standings after round 7</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-013204</guid>
+      <guid isPermaLink="false">dueldesk-20260828-020316</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 01:32:04 +0000</pubDate>
-      <description>Standings after round 7</description>
+      <pubDate>Fri, 28 Aug 2026 02:03:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Standings after round 7</description>
     </item>
     <item>
-      <title>Remote Duel YCS August 2026: Round 7 pairings are up</title>
+      <title>[Sample] Remote Duel YCS August 2026: Round 7 pairings are up</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-011004</guid>
+      <guid isPermaLink="false">dueldesk-20260828-014116</guid>
       <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 01:10:04 +0000</pubDate>
-      <description>Round 7 pairings are up</description>
+      <pubDate>Fri, 28 Aug 2026 01:41:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Round 7 pairings are up</description>
     </item>
     <item>
-      <title>YCS Montreal, Quebec: Your champion, undefeated in the top cut</title>
+      <title>[Sample] YCS Montreal, Quebec: Your champion, undefeated in the top cut</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260814-040204</guid>
+      <guid isPermaLink="false">dueldesk-20260814-043316</guid>
       <category>YCS Montreal, Quebec</category>
-      <pubDate>Fri, 14 Aug 2026 04:02:04 +0000</pubDate>
-      <description>Your champion, undefeated in the top cut</description>
+      <pubDate>Fri, 14 Aug 2026 04:33:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Your champion, undefeated in the top cut</description>
     </item>
     <item>
-      <title>YCS Montreal, Quebec: Final match: a mirror decided on time</title>
+      <title>[Sample] YCS Montreal, Quebec: Final match: a mirror decided on time</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260814-031404</guid>
+      <guid isPermaLink="false">dueldesk-20260814-034516</guid>
       <category>YCS Montreal, Quebec</category>
-      <pubDate>Fri, 14 Aug 2026 03:14:04 +0000</pubDate>
-      <description>Final match: a mirror decided on time</description>
+      <pubDate>Fri, 14 Aug 2026 03:45:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Final match: a mirror decided on time</description>
     </item>
     <item>
-      <title>YCS Montreal, Quebec: Top 8 pairings</title>
+      <title>[Sample] YCS Montreal, Quebec: Top 8 pairings</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260814-005704</guid>
+      <guid isPermaLink="false">dueldesk-20260814-012816</guid>
       <category>YCS Montreal, Quebec</category>
-      <pubDate>Fri, 14 Aug 2026 00:57:04 +0000</pubDate>
-      <description>Top 8 pairings</description>
+      <pubDate>Fri, 14 Aug 2026 01:28:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Top 8 pairings</description>
     </item>
     <item>
-      <title>Ultimate Duelist Series — Season 6: Season 6 invite structure explained</title>
+      <title>[Sample] Ultimate Duelist Series — Season 6: Season 6 invite structure explained</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260807-033204</guid>
+      <guid isPermaLink="false">dueldesk-20260807-040316</guid>
       <category>Ultimate Duelist Series — Season 6</category>
-      <pubDate>Fri, 07 Aug 2026 03:32:04 +0000</pubDate>
-      <description>Season 6 invite structure explained</description>
+      <pubDate>Fri, 07 Aug 2026 04:03:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Season 6 invite structure explained</description>
     </item>
     <item>
-      <title>Forbidden &amp; Limited list update: What changed and when it takes effect</title>
+      <title>[Sample] Forbidden &amp; Limited list update: What changed and when it takes effect</title>
       <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260731-023204</guid>
+      <guid isPermaLink="false">dueldesk-20260731-030316</guid>
       <category>Forbidden &amp; Limited list update</category>
-      <pubDate>Fri, 31 Jul 2026 02:32:04 +0000</pubDate>
-      <description>What changed and when it takes effect</description>
+      <pubDate>Fri, 31 Jul 2026 03:03:16 +0000</pubDate>
+      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. What changed and when it takes effect</description>
     </item>
   </channel>
 </rss>

@@ -4,14 +4,14 @@
   "duelists": 1248,
   "swissRounds": 12,
   "coverageBy": "the Duel Desk team",
-  "updated": "2026-08-28T04:20:04.445044Z",
+  "updated": "2026-08-28T04:51:16.071299Z",
   "rounds": [
     {
       "id": "1",
       "label": "R1",
       "state": "done",
       "tables": 624,
-      "posted": "21:22",
+      "posted": "21:53",
       "standingsAfter": 1,
       "pairings": [
         {
@@ -148,7 +148,7 @@
       "label": "R2",
       "state": "done",
       "tables": 624,
-      "posted": "22:00",
+      "posted": "22:31",
       "standingsAfter": 2,
       "pairings": [
         {
@@ -285,7 +285,7 @@
       "label": "R3",
       "state": "done",
       "tables": 624,
-      "posted": "22:38",
+      "posted": "23:09",
       "standingsAfter": 3,
       "pairings": [
         {
@@ -422,7 +422,7 @@
       "label": "R4",
       "state": "done",
       "tables": 624,
-      "posted": "23:16",
+      "posted": "23:47",
       "standingsAfter": 4,
       "pairings": [
         {
@@ -559,7 +559,7 @@
       "label": "R5",
       "state": "done",
       "tables": 624,
-      "posted": "23:54",
+      "posted": "00:25",
       "standingsAfter": 5,
       "pairings": [
         {
@@ -696,7 +696,7 @@
       "label": "R6",
       "state": "done",
       "tables": 624,
-      "posted": "00:32",
+      "posted": "01:03",
       "standingsAfter": 6,
       "pairings": [
         {
@@ -833,7 +833,7 @@
       "label": "R7",
       "state": "done",
       "tables": 624,
-      "posted": "01:10",
+      "posted": "01:41",
       "standingsAfter": 7,
       "pairings": [
         {
@@ -970,7 +970,7 @@
       "label": "R8",
       "state": "done",
       "tables": 624,
-      "posted": "01:48",
+      "posted": "02:19",
       "standingsAfter": 8,
       "pairings": [
         {
@@ -1107,7 +1107,7 @@
       "label": "R9",
       "state": "done",
       "tables": 624,
-      "posted": "02:26",
+      "posted": "02:57",
       "standingsAfter": 9,
       "pairings": [
         {
@@ -1244,7 +1244,7 @@
       "label": "R10",
       "state": "done",
       "tables": 624,
-      "posted": "03:04",
+      "posted": "03:35",
       "standingsAfter": 10,
       "pairings": [
         {
@@ -1381,7 +1381,7 @@
       "label": "R11",
       "state": "done",
       "tables": 624,
-      "posted": "03:42",
+      "posted": "04:13",
       "standingsAfter": 11,
       "pairings": [
         {
@@ -1518,7 +1518,7 @@
       "label": "R12",
       "state": "live",
       "tables": 624,
-      "posted": "04:20",
+      "posted": "04:51",
       "standingsAfter": 11,
       "pairings": [
         {

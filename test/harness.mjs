@@ -115,6 +115,15 @@ export async function loadPage(opts = {}) {
     get: (name) => window.eval(name),
     /** Run an expression in page scope. */
     run: (expr) => window.eval(expr),
+    /**
+     * Like run(), but structurally cloned out of the jsdom realm.
+     *
+     * Objects and arrays returned by eval carry jsdom's prototypes, so
+     * assert.deepStrictEqual reports "same structure but not reference-equal"
+     * on values that are plainly identical. Use this whenever a test compares
+     * structure rather than poking at the DOM.
+     */
+    json: (expr) => JSON.parse(window.JSON.stringify(window.eval(expr))),
     $: (sel) => window.document.querySelector(sel),
     $$: (sel) => [...window.document.querySelectorAll(sel)],
     text: (sel) => (window.document.querySelector(sel)?.textContent ?? '').replace(/\s+/g, ' ').trim(),

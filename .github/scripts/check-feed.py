@@ -9,6 +9,11 @@ import xml.etree.ElementTree as ET
 
 REQUIRED_ITEM_FIELDS = ("title", "link", "pubDate")
 
+# The feed publishes invented tournament results to anyone who subscribes, and
+# aggregators strip <copyright>. The disclaimer has to ride along on the parts a
+# reader actually displays, or the data reads as genuine coverage.
+SAMPLE_MARKER = "[sample]"
+
 
 def main(path="feed.xml"):
     try:
@@ -34,6 +39,14 @@ def main(path="feed.xml"):
         if not items:
             problems.append("<channel> contains no <item> elements")
 
+    if channel is not None:
+        ch_title = (channel.findtext("title") or "")
+        ch_desc = (channel.findtext("description") or "")
+        if "sample" not in ch_title.lower():
+            problems.append("<channel><title> does not identify the feed as sample data")
+        if "sample" not in ch_desc.lower():
+            problems.append("<channel><description> does not identify the feed as sample data")
+
     for n, item in enumerate(items, 1):
         title = item.find("title")
         label = (title.text or "").strip()[:48] if title is not None else f"item {n}"
@@ -42,12 +55,18 @@ def main(path="feed.xml"):
             if node is None or not (node.text or "").strip():
                 problems.append(f"item {n} ({label!r}) missing non-empty <{field}>")
 
+        title_text = (item.findtext("title") or "")
+        if not title_text.lower().lstrip().startswith(SAMPLE_MARKER):
+            problems.append(f"item {n} ({label!r}) title is not marked {SAMPLE_MARKER}")
+        if "sample data" not in (item.findtext("description") or "").lower():
+            problems.append(f"item {n} ({label!r}) description does not say it is sample data")
+
     if problems:
         for p in problems:
             print(f"  FAIL  {p}")
         return 1
 
-    print(f"  ok    {path}: well-formed RSS 2.0, {len(items)} items")
+    print(f"  ok    {path}: well-formed RSS 2.0, {len(items)} items, all marked as sample data")
     return 0
 
 

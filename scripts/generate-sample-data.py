@@ -200,21 +200,21 @@ def main():
     items = []
     for d, ev, title in entries:
         items.append(f"""    <item>
-      <title>{escape(f'{ev}: {title}')}</title>
+      <title>{escape(f'[Sample] {ev}: {title}')}</title>
       <link>https://dueldesk.reizu.dev/</link>
       <guid isPermaLink="false">dueldesk-{d.strftime('%Y%m%d-%H%M%S')}</guid>
       <category>{escape(ev)}</category>
       <pubDate>{d.strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>
-      <description>{escape(title)}</description>
+      <description>{escape(f'SAMPLE DATA - invented for a design study, not real tournament coverage. {title}')}</description>
     </item>""")
 
     open('feed.xml', 'w', encoding='utf-8').write(f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Duel Desk — Yu-Gi-Oh! TCG event coverage</title>
+    <title>Duel Desk — Yu-Gi-Oh! TCG event coverage (SAMPLE DATA)</title>
     <link>https://dueldesk.reizu.dev/</link>
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.</description>
+    <description>SAMPLE DATA — this is a design study. Every Duelist name, record and pairing in this feed is invented. Not affiliated with or endorsed by Konami. Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.</description>
     <language>en</language>
     <lastBuildDate>{entries[0][0].strftime('%a, %d %b %Y %H:%M:%S +0000')}</lastBuildDate>
     <generator>Duel Desk</generator>
