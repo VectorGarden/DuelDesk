@@ -353,11 +353,42 @@ test('the hero meta follows the selected format', async (t) => {
   const after = page.text('#hero-meta');
 
   assert.notEqual(after, before, 'field size and round count are per format');
-  assert.match(after, new RegExp(b), 'and it names the selected format');
+  assert.doesNotMatch(after, new RegExp(b),
+    'the selector below already names it; saying it here too printed it twice');
   assert.ok(after.includes(String(page.run('formatOf(activeFormat).swissRounds'))),
     'the Swiss round count shown is this format\'s');
   assert.ok(after.includes(page.run('formatOf(activeFormat).duelists.toLocaleString()')),
     'and so is the field size');
+});
+
+test('with one format the meta names it, since no selector does', async (t) => {
+  const page = await loadPage({
+    routes: {
+      'rounds.json': async () => {
+        const { readFileSync } = await import('node:fs');
+        const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
+        d.formats = [d.formats[0]];
+        return { status: 200, body: JSON.stringify(d) };
+      },
+    },
+  });
+  t.after(() => page.close());
+
+  assert.equal(page.$('#formats').hidden, true, 'no selector for a single format');
+  assert.match(page.text('#hero-meta'), /Format/,
+    'so the meta is the only thing that can state it');
+  assert.match(page.text('#hero-meta'),
+    new RegExp(page.json('eventInfo.formats[0].format')));
+});
+
+test('the format is stated exactly once', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const name = page.json('eventInfo.formats[0].format');
+  const inMeta = page.text('#hero-meta').includes(name);
+  const inSelector = page.$$('#formats [data-format]').some(b => b.textContent === name);
+  assert.ok(inMeta !== inSelector,
+    'exactly one of the meta line and the selector names the format');
 });
 
 test('switching format lands on that tournament, not a stale round id', async (t) => {
