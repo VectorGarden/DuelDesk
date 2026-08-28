@@ -104,3 +104,20 @@ def record(state: dict, now: datetime, high: str | None) -> dict:
         updated["last_change"] = now.isoformat()
     updated["high_water"] = high
     return updated
+
+
+def is_ongoing(newest_post: datetime | None, now: datetime) -> bool:
+    """Is coverage still arriving for this event?
+
+    The same question, and the same window, as the polling cadence: an event is
+    running while its posts keep coming. Used to decide whether the newest round
+    may be shown as in progress, which is a claim about right now.
+
+    False when nothing is known. An event wrongly shown as finished is merely
+    stale; one wrongly shown as live tells the reader to wait for results that
+    are never coming, which is what the site did on its first day of real data.
+    """
+    if newest_post is None:
+        return False
+    since = now - newest_post
+    return ZERO <= since < LIVE_WINDOW

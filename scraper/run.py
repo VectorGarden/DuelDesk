@@ -11,13 +11,15 @@ import argparse
 import json
 import sys
 from collections import Counter
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
 from build import Source, build_event                     # noqa: E402
-from fetch import BASE, SITEMAP, Fetcher, newest_sitemap  # noqa: E402
+from cadence import is_ongoing                            # noqa: E402
+from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
+                   parse_lastmod)
 from index import assign_events, parse_post_sitemap, parse_sitemap_index  # noqa: E402
 from feed import build_feed                              # noqa: E402
 from naming import event_name                            # noqa: E402
@@ -106,7 +108,15 @@ def main() -> int:
     # "2026 08 Quebec" while every post it covers is titled "YCS Montreal".
     name = event_name([s.post.title for s in sources],
                       slug.replace("-", " ").title())
-    event = build_event(name, sources, draws_possible=draws_possible, updated=latest)
+    # Whether a round may be shown as in progress. Read from the coverage rather
+    # than assumed: the newest post of a finished event is days old.
+    newest = max((parse_lastmod(s.posted) for s in sources if s.posted),
+                 default=None, key=lambda d: d or datetime.min.replace(tzinfo=timezone.utc))
+    ongoing = is_ongoing(newest, datetime.now(timezone.utc))
+    print(f"Newest post {newest.isoformat() if newest else 'unknown'}; "
+          f"event {'ongoing' if ongoing else 'finished'}")
+    event = build_event(name, sources, draws_possible=draws_possible, updated=latest,
+                        ongoing=ongoing)
 
     Path(args.out).write_text(json.dumps(event, indent=2, ensure_ascii=False) + "\n")
 

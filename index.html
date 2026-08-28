@@ -194,6 +194,12 @@ a{color:inherit}
   font:600 .75rem/1 var(--body); letter-spacing:.14em; text-transform:uppercase;
   color:var(--live); border:1px solid currentColor; border-radius:100px; padding:.45rem .75rem;
 }
+/* display:inline-flex above beats the UA sheet's [hidden]{display:none}, so the
+   attribute alone left this on screen. It is the third element in this file to
+   need saying out loud, and the only one where it was a false claim rather than
+   a stray box: the badge announced LIVE NOW over an event that had finished
+   twelve days earlier, on a page that had just started serving real results. */
+.livetag[hidden]{display:none}
 .livetag i{width:7px; height:7px; border-radius:50%; background:currentColor; animation:pulse 1.9s ease-in-out infinite}
 .livetag--sm{font-size:.6rem; padding:.2rem .45rem; letter-spacing:.1em}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}

@@ -470,6 +470,47 @@ test('an unusable link is not made a link', async (t) => {
   assert.ok(page.$('#events span.post__t'), 'the headline still shows');
 });
 
+/* Every element hidden by attribute needs its class checked: an author rule
+   setting display beats the UA sheet's [hidden]{display:none}, and the element
+   stays on screen while every test that asks `.hidden` says it is gone. This
+   has been wrong three times in this file, most recently on the badge that
+   claims an event is live. */
+function withStaleFeed() {
+  return {
+    routes: {
+      'feed.xml': async () => {
+        const { readFileSync } = await import('node:fs');
+        const xml = readFileSync(new URL('../test/fixtures/feed.xml', import.meta.url), 'utf8');
+        // Twelve days old, which is what a finished event looks like.
+        return { status: 200, body: xml.replace(
+          /<lastBuildDate>.*?<\/lastBuildDate>/,
+          '<lastBuildDate>Sun, 16 Aug 2026 18:07:30 +0000</lastBuildDate>') };
+      },
+    },
+  };
+}
+
+test('a finished event does not claim to be live', async (t) => {
+  const page = await loadPage(withStaleFeed());
+  t.after(() => page.close());
+  const tag = page.$('#livetag');
+  assert.equal(tag.hidden, true, 'nothing in the feed is recent');
+  assert.equal(page.window.getComputedStyle(tag).display, 'none',
+    'the attribute alone does not hide it: .livetag sets display:inline-flex, ' +
+    'which is how LIVE NOW came to sit over an event twelve days finished');
+});
+
+test('nothing hidden by attribute is still displayed', async (t) => {
+  const page = await loadPage(withStaleFeed());
+  t.after(() => page.close());
+  const offenders = ['livetag', 'demo', 'formats']
+    .map((id) => page.$('#' + id))
+    .filter((el) => el && el.hidden &&
+                    page.window.getComputedStyle(el).display !== 'none')
+    .map((el) => el.id);
+  assert.deepEqual(offenders, [], 'hidden in the DOM but still painted');
+});
+
 test('the page asks not to be indexed', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());

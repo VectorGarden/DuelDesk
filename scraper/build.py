@@ -105,8 +105,15 @@ def status_by_player(candidates: list[Source]) -> dict[str, dict]:
     return out
 
 
-def build_format(name: str, sources: list[Source]) -> dict | None:
-    """Assemble one format's tournament."""
+def build_format(name: str, sources: list[Source], *,
+                 ongoing: bool = False) -> dict | None:
+    """Assemble one format's tournament.
+
+    `ongoing` says whether coverage is still arriving. It defaults to False so a
+    caller that does not know cannot accidentally claim a round is live: an event
+    wrongly shown as finished is merely stale, while one wrongly shown as live is
+    telling the reader to refresh for results that will never come.
+    """
     by_round: dict[tuple, dict[str, Source]] = defaultdict(dict)
     floating_standings: list[Source] = []
     for s in sources:
@@ -229,8 +236,12 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
             "source": source.url if source else None,
         })
 
-    # The newest round with pairings but no results yet is the one in progress.
-    if rounds:
+    # The newest round with pairings but no results yet is the one in progress --
+    # but only while the event still is. A finished event's last round is its
+    # final, and calling it "in progress" is a claim about right now that the
+    # data cannot support: YCS Montreal went to production reading "Top 4 · IN
+    # PROGRESS" twelve days after it ended.
+    if rounds and ongoing:
         rounds[-1]["state"] = "live"
 
     field = max((len(r["standings"]) for r in rounds), default=0)
@@ -239,7 +250,8 @@ def build_format(name: str, sources: list[Source]) -> dict | None:
 
 def build_event(event: str, sources: list[Source], *,
                 coverage_by: str = "Konami",
-                draws_possible: bool = False, updated: str | None = None) -> dict:
+                draws_possible: bool = False, updated: str | None = None,
+                ongoing: bool = False) -> dict:
     by_format: dict[str, list[Source]] = defaultdict(list)
     unassigned = 0
     for s in sources:
@@ -248,7 +260,7 @@ def build_event(event: str, sources: list[Source], *,
         else:
             unassigned += 1
 
-    formats = [f for f in (build_format(name, group)
+    formats = [f for f in (build_format(name, group, ongoing=ongoing)
                            for name, group in sorted(by_format.items())) if f]
     return {
         "event": event,
