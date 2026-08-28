@@ -60,7 +60,10 @@ jobs:
 
       - if: steps.provenance.outputs.sample == 'true'
         name: Regenerate sample data with current timestamps
-        run: python3 scripts/generate-sample-data.py
+        # --out . explicitly: the generator now writes test fixtures by default,
+        # and this step is the one place that still wants the root files. Left
+        # implicit it would refresh the fixtures and deploy the stale root.
+        run: python3 scripts/generate-sample-data.py --out .
 
       # Whatever is about to be staged, check it here too: the regenerated files
       # are not the ones the validate job saw, and scraped data arrives from a
