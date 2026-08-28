@@ -39,12 +39,14 @@
      round track would disintegrate; the track itself takes over from 64px up.
      No SVG favicon on purpose - browsers prefer SVG at every size, which would
      collapse the two tiers back into one. icons/*.svg are the design sources. -->
-<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/icons/favicon-48.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/icons/icon-96.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<!-- Nothing larger is offered as rel="icon". A browser that picks the biggest
+     candidate would render the three-chip track at 16px, which is the mush the
+     two tiers exist to avoid. Install icons live in the manifest instead. -->
+<link rel="mask-icon" href="/icons/mask-icon.svg" color="#F05B9C">
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 

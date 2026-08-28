@@ -172,6 +172,15 @@ the icon's own silhouette would be cropped away exactly where the brand cue was 
 There is deliberately **no SVG favicon** — browsers prefer an SVG at every size, which would
 collapse the two tiers back into one.
 
+`rel="icon"` offers nothing above 48px. A browser that picks the largest candidate would render
+the three-chip track at tab size, which is the mush the two tiers exist to avoid; install-size
+icons live in `site.webmanifest` instead.
+
+`favicon.ico` uses **BMP-encoded** entries, built by
+[`scripts/build-favicon.py`](scripts/build-favicon.py). PNG-in-ICO is smaller and fine on
+Windows browsers, but Safari does not reliably decode it and falls back to a generic globe.
+`icons/mask-icon.svg` is the monochrome Safari pinned-tab icon. CI checks all of this.
+
 To regenerate the PNGs after editing a source SVG, re-render each source at the sizes listed
 in `index.html` and `site.webmanifest`; CI fails if any referenced file is missing.
 
