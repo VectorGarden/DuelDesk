@@ -40,6 +40,13 @@ _REGION_TOKEN = re.compile(r"[A-Z]{2,3}")
 # a player list, and getting it wrong here costs a whole player's record.
 _NAME_SUFFIXES = {"II", "III", "IV", "VI", "VII", "VIII", "IX", "JR", "SR"}
 
+# Some standings tables carry a player ID and a status inside the name cell:
+#   "Adrien (0200512639) (PlayoffCut - Round 11) Racek"
+# Left in place the name never matches the same player in a pairings table, so
+# their appearances are never counted and their record cannot be derived. This
+# is why an entire 169-row table came back partial.
+_ANNOTATION = re.compile(r"\s*\([^)]*\)")
+
 _TAG = re.compile(r"<[^>]+>")
 _TABLE = re.compile(r"<table.*?</table>", re.S | re.I)
 _ROW = re.compile(r"<tr.*?</tr>", re.S | re.I)
@@ -66,7 +73,7 @@ def strip_region(name: str) -> tuple[str, str | None]:
     codes. At least one token is always kept, so a name that is nothing but such
     a token survives intact.
     """
-    tokens = name.strip().split()
+    tokens = _ANNOTATION.sub(" ", name).strip().split()
     if not tokens:
         return "", None
     is_code = lambda t: bool(_REGION_TOKEN.fullmatch(t)) and t not in _NAME_SUFFIXES
