@@ -709,15 +709,30 @@ function groupFeed(xmlText){                                   // eslint-disable
     const cat   = item.querySelector('category')?.textContent?.trim();
     const name  = eventNameFrom(title, cat || 'Unsorted coverage');
 
+    /* Feed items are titled "Event: headline" so each one stands alone in a
+       reader, where there is no surrounding context. On the page the event name
+       is already the heading directly above the row, so repeating it in every
+       post is noise. Split it off rather than render it twice.
+
+       Only the exact prefix goes: "Remote Duel YCS: Feature match: X vs Y"
+       keeps its inner colon, and an item whose title carries no event prefix
+       (because eventNameFrom fell back to the category) is left alone. */
+    const headline = title.startsWith(name + ':')
+      ? title.slice(name.length + 1).trim() || title
+      : title;
+
     let group = map.get(name);
     if (!group) map.set(name, group = {event:name, date, posts:[]});
     if (date > group.date) group.date = date;   // group carries its newest post's date
 
     group.posts.push({
-      title,
+      title: headline,
       url: safeUrl(url),
       time: date.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
-      ...classify(title)
+      /* Classify the headline, not the full title: an event called
+         "300th YCS" or "Top Cut Invitational" would otherwise leak its own
+         digits and keywords into round and kind detection. */
+      ...classify(headline)
     });
   }
   return [...map.values()].sort((a, b) => b.date - a.date);
