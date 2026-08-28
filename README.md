@@ -86,7 +86,31 @@ to fetch, parse, and serve the JSON to the page.
 | `index.html` | The entire site — markup, styles, and behaviour. |
 | `feed.xml` | RSS 2.0 coverage feed. |
 | `og.png` | 1200×630 social preview image. |
+| `favicon.ico` | Multi-resolution legacy favicon (16/32/48). |
+| `site.webmanifest` | PWA manifest — name, colours, install icons. |
+| `icons/` | Icon set. `icon.svg`, `icon-small.svg` and `icon-maskable.svg` are the sources; the PNGs are generated from them. |
 | `CNAME` | Custom domain for GitHub Pages. |
+
+## The icon
+
+A **two-tier set**, because the full mark does not survive favicon sizes:
+
+- **16–48px** — a single lit chip (`icon-small.svg`). Below about 48px the three-chip
+  track turns to mush, so the small tier shows one chip lifted straight out of it.
+- **64px and up** — the full round track (`icon.svg`): a gold rule over three chips with the
+  live round lit in accent, abstracting the site's signature UI element.
+- **Android** — `icon-maskable.svg` scales the artwork into the centre 80% so an aggressive
+  circle crop cannot clip a chip.
+
+Both tiers are the same object at different zoom levels rather than two different logos.
+The notch is kept *inside* the artwork: iOS masks app icons into a squircle, so a notch on
+the icon's own silhouette would be cropped away exactly where the brand cue was meant to be.
+
+There is deliberately **no SVG favicon** — browsers prefer an SVG at every size, which would
+collapse the two tiers back into one.
+
+To regenerate the PNGs after editing a source SVG, re-render each source at the sizes listed
+in `index.html` and `site.webmanifest`; CI fails if any referenced file is missing.
 
 ## Deployment
 

@@ -22,8 +22,18 @@
 
 <meta name="theme-color" content="#EDF0F6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0E1119" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Cpath%20d='M6%200h26v26l-6%206H0V6z'%20fill='%23F05B9C'/%3E%3Cpath%20d='M11%208h5a8%208%200%200%201%200%2016h-5z'%20fill='%230E1119'/%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%230E1119'/%3E%3Cpath%20d='M8%204h20v20l-4%204H4V8z'%20fill='%23F05B9C'/%3E%3Cpath%20d='M12%2010h4a6%206%200%200%201%200%2012h-4z'%20fill='%230E1119'/%3E%3C/svg%3E">
+<!-- Two-tier icon set: the single lit chip carries 16-48px, where the full
+     round track would disintegrate; the track itself takes over from 64px up.
+     No SVG favicon on purpose - browsers prefer SVG at every size, which would
+     collapse the two tiers back into one. icons/*.svg are the design sources. -->
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/icons/favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/icons/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Duel Desk">
