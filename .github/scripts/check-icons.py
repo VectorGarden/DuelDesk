@@ -6,6 +6,7 @@ PNG-encoded (Safari does not reliably decode those, and silently shows its
 generic globe instead), and an oversized rel="icon" that a browser may pick and
 squeeze down to 16px. Neither shows up in HTML validation or the test suite.
 """
+import json
 import re
 import struct
 import sys
@@ -99,10 +100,84 @@ def check_declarations(path, problems):
               "mask-icon and apple-touch-icon present")
 
 
+def check_shipped_icons(icon_dir, html, manifest, problems):
+    """Everything in icons/ ships, so everything in icons/ must be used and real.
+
+    Two failures this catches: an icon nobody references (dead weight, published
+    and unverified -- there were six, plus a byte-identical duplicate), and a
+    file whose pixels do not match the size its name and the manifest claim,
+    which a browser would silently scale.
+    """
+    d = Path(icon_dir)
+    if not d.is_dir():
+        problems.append(f"{icon_dir}/ is missing")
+        return
+
+    haystack = Path(html).read_text(encoding="utf-8")
+    if Path(manifest).exists():
+        haystack += Path(manifest).read_text(encoding="utf-8")
+
+    seen = {}
+    for f in sorted(d.iterdir()):
+        if f.name.startswith("."):
+            continue
+        # Match on the path, not the bare filename: "icon.svg" is a substring of
+        # "mask-icon.svg", so a bare-name search reports an unused source as used.
+        if f"icons/{f.name}" not in haystack:
+            problems.append(f"{f} is shipped but referenced by nothing. Reference it "
+                            "or move it out of icons/, which is the published directory.")
+        if f.suffix == ".svg":
+            continue
+        if f.suffix != ".png":
+            problems.append(f"{f}: unexpected file type in the published icon directory")
+            continue
+
+        data = f.read_bytes()
+        if data[:8] != b"\x89PNG\r\n\x1a\n":
+            problems.append(f"{f} is not a PNG")
+            continue
+        w, h = struct.unpack(">II", data[16:24])
+        if w != h:
+            problems.append(f"{f} is {w}x{h}; icons must be square")
+        m = re.search(r"-(\d+)\.png$", f.name)
+        if m and int(m.group(1)) != w:
+            problems.append(f"{f} is {w}x{w} but its name says {m.group(1)}")
+
+        digest = hash(data)
+        if digest in seen:
+            problems.append(f"{f} is byte-identical to {seen[digest]}; ship one of them")
+        else:
+            seen[digest] = f
+
+    # Manifest entries must agree with the files on disk.
+    if Path(manifest).exists():
+        try:
+            for icon in json.loads(Path(manifest).read_text(encoding="utf-8")).get("icons", []):
+                src = Path(str(icon.get("src", "")).lstrip("/"))
+                declared = str(icon.get("sizes", "")).split("x")[0]
+                if not src.exists():
+                    continue                      # check-references.py reports this
+                data = src.read_bytes()
+                if data[:8] != b"\x89PNG\r\n\x1a\n":
+                    continue
+                w, _ = struct.unpack(">II", data[16:24])
+                if declared.isdigit() and int(declared) != w:
+                    problems.append(f"{manifest}: {src} declared {icon.get('sizes')} "
+                                    f"but the file is {w}x{w}")
+        except json.JSONDecodeError:
+            problems.append(f"{manifest} is not valid JSON")
+
+    if not problems:
+        pngs = [f for f in d.iterdir() if f.suffix == ".png"]
+        print(f"  ok    {icon_dir}/: {len(pngs)} icons, all referenced, "
+              "sizes match their names, no duplicates")
+
+
 def main(ico="favicon.ico", html="index.html"):
     problems = []
     check_ico(ico, problems)
     check_declarations(html, problems)
+    check_shipped_icons("icons", html, "site.webmanifest", problems)
     if problems:
         for p in problems:
             print(f"  FAIL  {p}")

@@ -166,7 +166,8 @@ to fetch, parse, and serve the JSON to the page.
 | `og.png` | 1200×630 social preview image. |
 | `favicon.ico` | Multi-resolution legacy favicon (16/32/48). |
 | `site.webmanifest` | PWA manifest — name, colours, install icons. |
-| `icons/` | Icon set. `icon.svg`, `icon-small.svg` and `icon-maskable.svg` are the sources; the PNGs are generated from them. |
+| `icons/` | Shipped icons only — everything here is published and must be referenced. |
+| `design/` | Icon design sources (`icon.svg`, `icon-small.svg`, `icon-maskable.svg`). Not deployed. |
 | `CNAME` | Custom domain for GitHub Pages. |
 
 ## The icon
@@ -194,7 +195,12 @@ icons live in `site.webmanifest` instead.
 `favicon.ico` uses **BMP-encoded** entries, built by
 [`scripts/build-favicon.py`](scripts/build-favicon.py). PNG-in-ICO is smaller and fine on
 Windows browsers, but Safari does not reliably decode it and falls back to a generic globe.
-`icons/mask-icon.svg` is the monochrome Safari pinned-tab icon. CI checks all of this.
+`icons/mask-icon.svg` is the monochrome Safari pinned-tab icon.
+
+`icons/` is the *published* directory: CI fails if anything in it is referenced by nothing, is
+not square, has pixels that disagree with its filename, or duplicates another file byte for byte.
+Design sources live in `design/` and are never deployed. Install sizes are declared in
+`site.webmanifest`, which is what makes them referenced rather than orphaned.
 
 To regenerate the PNGs after editing a source SVG, re-render each source at the sizes listed
 in `index.html` and `site.webmanifest`; CI fails if any referenced file is missing.
