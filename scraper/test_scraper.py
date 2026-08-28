@@ -347,3 +347,99 @@ class TestRecords(unittest.TestCase):
         recs = derive(st, rounds, event_date="2026-08-16")
         self.assertTrue(all(r.losses is None or r.losses >= 0 for r in recs),
                         "no derived record may imply negative losses")
+
+
+def _sources():
+    """Every Montreal fixture, as the builder would receive them."""
+    import glob, re as _re
+    from build import Source
+    out = []
+    rd = FIX / "rounds"
+    for f in sorted(glob.glob(str(rd / "r*.html")),
+                    key=lambda p: int(_re.search(r"r(\d+)", p).group(1))):
+        n = int(_re.search(r"r(\d+)", f).group(1))
+        out.append(Source(f"https://x/round-{n}/", parse_post(Path(f).read_text()), "12:00"))
+    for name in ("standings-advanced", "standings-genesys", "pairings-top8-decks"):
+        out.append(Source(f"https://x/{name}/", parse_post((FIX / f"{name}.html").read_text()), "18:40"))
+    return out
+
+
+class TestCutOrdering(unittest.TestCase):
+    def test_stages_sort_into_bracket_order(self):
+        from build import cut_rank
+        labels = ["Final", "Top 4", "Top 8", "Top 16", "Top 32", "Top 64"]
+        self.assertEqual(sorted(labels, key=cut_rank),
+                         ["Top 64", "Top 32", "Top 16", "Top 8", "Top 4", "Final"])
+
+    def test_the_Final_sorts_last_despite_having_no_number(self):
+        from build import cut_rank
+        self.assertGreater(cut_rank("Final"), cut_rank("Top 4"))
+        self.assertGreater(cut_rank("Finals"), cut_rank("Top 64"))
+
+    def test_stage_aliases_rank_identically(self):
+        from build import cut_rank
+        # One stage under two names must not sort into two places depending on
+        # what the blog called it that day.
+        self.assertEqual(cut_rank("Semifinals"), cut_rank("Top 4"))
+        self.assertEqual(cut_rank("Quarterfinals"), cut_rank("Top 8"))
+
+
+class TestBuild(unittest.TestCase):
+    def setUp(self):
+        from build import build_event
+        self.ev = build_event("YCS Montréal", _sources(), updated="2026-08-16T19:10:00Z")
+        self.adv = next(f for f in self.ev["formats"] if f["format"] == "Advanced")
+
+    def test_posts_are_grouped_by_format(self):
+        self.assertEqual(sorted(f["format"] for f in self.ev["formats"]), ["Advanced", "Genesys"])
+
+    def test_a_post_naming_no_format_is_not_guessed_into_one(self):
+        from build import build_event
+        from parse import parse_post
+        ev = build_event("x", _sources() + [
+            __import__("build").Source("https://x/none/",
+                                       parse_post("<title>Top 64 Pairings</title><table></table>"))])
+        self.assertGreaterEqual(ev["_unassigned"], 1, "reported, not assigned")
+
+    def test_swiss_rounds_are_ordered_and_counted(self):
+        rounds = [r for r in self.adv["rounds"] if r["phase"] == "Swiss"]
+        self.assertEqual([r["label"] for r in rounds][:3], ["R1", "R2", "R3"])
+        self.assertEqual(self.adv["swissRounds"], 13)
+        self.assertEqual([r["order"] for r in rounds], sorted(r["order"] for r in rounds))
+
+    def test_final_swiss_standings_attach_to_the_last_round(self):
+        # "Final Standings After Swiss" names no round, correctly. It must still
+        # land somewhere rather than being dropped.
+        last = [r for r in self.adv["rounds"] if r["phase"] == "Swiss"][-1]
+        self.assertEqual(last["label"], "R13")
+        self.assertEqual(len(last["standings"]), 766)
+        self.assertEqual(last["standingsAfter"], 13)
+
+    def test_records_are_derived_from_appearances(self):
+        last = [r for r in self.adv["rounds"] if r["standings"]][-1]
+        top = last["standings"][0]
+        self.assertEqual(top["record"], {"wins": 12, "losses": 1, "draws": 0,
+                                         "confidence": "derived"})
+        self.assertEqual(top["points"], 36)
+        confidences = {s["record"]["confidence"] for s in last["standings"]}
+        self.assertTrue(confidences <= {"derived", "partial", "unknown"})
+        # No derived record may imply negative losses.
+        self.assertTrue(all(s["record"]["losses"] is None or s["record"]["losses"] >= 0
+                            for s in last["standings"]))
+
+    def test_the_newest_round_is_the_live_one(self):
+        live = [r for r in self.adv["rounds"] if r["state"] == "live"]
+        self.assertEqual(len(live), 1)
+        self.assertEqual(live[0]["order"], max(r["order"] for r in self.adv["rounds"]))
+
+    def test_every_round_carries_its_source_url(self):
+        for r in self.adv["rounds"]:
+            self.assertTrue(r["source"], f"{r['label']} has no source URL")
+
+    def test_the_output_matches_the_shape_the_site_reads(self):
+        for key in ("event", "coverageBy", "drawsPossible", "updated", "formats"):
+            self.assertIn(key, self.ev)
+        for key in ("format", "swissRounds", "duelists", "rounds"):
+            self.assertIn(key, self.adv)
+        for key in ("id", "label", "phase", "state", "order", "pairings", "standings"):
+            self.assertIn(key, self.adv["rounds"][0])
