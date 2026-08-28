@@ -40,7 +40,7 @@ test('the live round shows standings that already exist, never its own', async (
   const page = await loadPage();
   t.after(() => page.close());
   const live = page.json(`ROUNDS.find(r => r.state === 'live')`);
-  const swissRounds = page.get('eventInfo.swissRounds');
+  const swissRounds = page.run(`formatOf(activeFormat).swissRounds`);
   assert.ok(live, 'the data marks a round live');
 
   if (live.phase === 'Swiss') {
@@ -89,9 +89,9 @@ test('the current round comes from the data, not a hardcoded id', async (t) => {
       'rounds.json': async ({ calls }) => {
         const { readFileSync } = await import('node:fs');
         const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
-        d.rounds.forEach((r) => { if (r.state === 'live') r.state = 'done'; });
-        const r7 = d.rounds.find((r) => r.id === '7');
-        r7.state = 'live';
+        const f = d.formats[0];
+        f.rounds.forEach((r) => { if (r.state === 'live') r.state = 'done'; });
+        f.rounds.find((r) => r.id === '7').state = 'live';
         return { status: 200, body: JSON.stringify(d) };
       },
     },
@@ -115,8 +115,9 @@ test('the top cut is seeded from the final Swiss standings', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
 
-  const swiss = page.get('eventInfo.swissRounds');
-  const finalStandings = page.json(`roundOf('${'' + 12}').standings.map(s => s.name)`);
+  const swiss = page.run(`formatOf(activeFormat).swissRounds`);
+  const lastSwiss = page.run(`[...ROUNDS].reverse().find(r => r.phase === 'Swiss').id`);
+  const finalStandings = page.json(`roundOf('${lastSwiss}').standings.map(s => s.name)`);
   const t8 = page.json(`roundOf('T8')`);
   assert.equal(t8.standingsAfter, swiss, 'the cut shows the final Swiss standings');
 
@@ -150,7 +151,7 @@ test('the Top 4 is drawn from Top 8 competitors and is bracket-correct', async (
 test('cut results count toward a Duelist\'s record', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
-  const swiss = page.get('eventInfo.swissRounds');
+  const swiss = page.run(`formatOf(activeFormat).swissRounds`);
   const cut = page.json(`ROUNDS.filter(r => r.phase === 'Top cut' && r.pairings.length)`);
 
   // Entering records grow by one match per cut round already played: the Top 8
@@ -191,8 +192,9 @@ test('winning a cut match adds a win, losing adds a loss', async (t) => {
 test('the standings table keeps the final Swiss placings during the cut', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
-  const swiss = page.get('eventInfo.swissRounds');
-  const afterSwiss = page.json(`roundOf('${'12'}').standings`);
+  const swiss = page.run(`formatOf(activeFormat).swissRounds`);
+  const lastSwiss = page.run(`[...ROUNDS].reverse().find(r => r.phase === 'Swiss').id`);
+  const afterSwiss = page.json(`roundOf('${lastSwiss}').standings`);
 
   for (const id of ['T8', 'T4']) {
     const shown = page.json(`roundOf('${id}').standings`);
@@ -276,9 +278,9 @@ test('a live Swiss round is counted in tables, not matches', async (t) => {
       'rounds.json': async () => {
         const { readFileSync } = await import('node:fs');
         const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
-        d.rounds.forEach((r) => { if (r.state === 'live') r.state = 'upcoming'; });
-        const r9 = d.rounds.find((r) => r.id === '9');
-        r9.state = 'live';
+        const f = d.formats[0];
+        f.rounds.forEach((r) => { if (r.state === 'live') r.state = 'upcoming'; });
+        f.rounds.find((r) => r.id === '9').state = 'live';
         return { status: 200, body: JSON.stringify(d) };
       },
     },
@@ -289,4 +291,135 @@ test('a live Swiss round is counted in tables, not matches', async (t) => {
   assert.match(page.text('#round-sub'), /Swiss · \d+ tables\b/,
     'Swiss is counted in tables');
   assert.doesNotMatch(page.text('#round-sub'), /\bmatches\b/);
+});
+
+test('a format selector appears, one button per tournament', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const names = page.json('eventInfo.formats.map(f => f.format)');
+  assert.ok(names.length >= 2, 'the sample event runs more than one tournament');
+
+  const buttons = page.$$('#formats [data-format]');
+  assert.deepEqual(buttons.map((b) => b.dataset.format), names);
+  assert.equal(page.$$('#formats [aria-pressed="true"]').length, 1);
+  assert.equal(page.$('#formats').hidden, false);
+});
+
+test('a single-format event shows no selector, because there is no choice', async (t) => {
+  const page = await loadPage({
+    routes: {
+      'rounds.json': async () => {
+        const { readFileSync } = await import('node:fs');
+        const d = JSON.parse(readFileSync(new URL('../rounds.json', import.meta.url), 'utf8'));
+        d.formats = [d.formats[0]];
+        return { status: 200, body: JSON.stringify(d) };
+      },
+    },
+  });
+  t.after(() => page.close());
+  assert.equal(page.$('#formats').hidden, true);
+});
+
+test('switching format replaces the whole round set', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const [a, b] = page.json('eventInfo.formats.map(f => f.format)');
+
+  const before = {
+    rounds: page.get('ROUNDS.length'),
+    swiss: page.run(`formatOf(activeFormat).swissRounds`),
+    duelists: page.run(`formatOf(activeFormat).duelists`),
+    table: page.text('#round-body tbody'),
+  };
+  page.$(`#formats [data-format="${b}"]`).click();
+
+  assert.equal(page.get('activeFormat'), b);
+  assert.notEqual(page.get('ROUNDS.length'), before.rounds, 'round counts differ per format');
+  assert.notEqual(page.run(`formatOf(activeFormat).swissRounds`), before.swiss);
+  assert.notEqual(page.text('#round-body tbody'), before.table, 'a different tournament');
+  assert.equal(page.$$('#formats [aria-pressed="true"]').length, 1);
+  assert.equal(page.$(`#formats [data-format="${b}"]`).getAttribute('aria-pressed'), 'true');
+
+  page.$(`#formats [data-format="${a}"]`).click();
+  assert.equal(page.get('ROUNDS.length'), before.rounds, 'switching back restores it');
+});
+
+test('the hero meta follows the selected format', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const [, b] = page.json('eventInfo.formats.map(f => f.format)');
+  const before = page.text('#hero-meta');
+  page.$(`#formats [data-format="${b}"]`).click();
+  const after = page.text('#hero-meta');
+
+  assert.notEqual(after, before, 'field size and round count are per format');
+  assert.match(after, new RegExp(b), 'and it names the selected format');
+  assert.ok(after.includes(String(page.run('formatOf(activeFormat).swissRounds'))),
+    'the Swiss round count shown is this format\'s');
+  assert.ok(after.includes(page.run('formatOf(activeFormat).duelists.toLocaleString()')),
+    'and so is the field size');
+});
+
+test('switching format lands on that tournament, not a stale round id', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const [, b] = page.json('eventInfo.formats.map(f => f.format)');
+
+  // Sit on a round the other format may not have.
+  page.run(`selectRound('12')`);
+  const was = page.get('activeRound');
+  page.$(`#formats [data-format="${b}"]`).click();
+
+  const now = page.get('activeRound');
+  assert.ok(page.run(`ROUNDS.some(r => r.id === activeRound)`),
+    `landed on ${now}, which must exist in ${b}`);
+  assert.ok(page.$('#round-body'), 'and the panel rendered');
+  assert.notEqual(page.$('#round-body').innerHTML, '', 'with content');
+});
+
+test('the round track rebuilds for the new format', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const [, b] = page.json('eventInfo.formats.map(f => f.format)');
+  const before = page.$$('.chip').length;
+  page.$(`#formats [data-format="${b}"]`).click();
+  const after = page.$$('.chip').length;
+
+  assert.equal(after, page.get('ROUNDS.length'), 'one chip per round of the active format');
+  assert.notEqual(after, before, 'the two tournaments have different lengths');
+  assert.equal(page.$$('.chip[aria-selected="true"]').length, 1);
+  assert.equal(page.$$('.chip').filter((c) => c.tabIndex === 0).length, 1);
+});
+
+test('rounds carry an explicit order, so one array holds Swiss and cut', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  for (const f of page.json('eventInfo.formats')) {
+    const orders = f.rounds.map((r) => r.order);
+    assert.ok(orders.every((o) => Number.isInteger(o)), `${f.format}: every round has an order`);
+    assert.deepEqual(orders, [...orders].sort((x, y) => x - y), `${f.format}: already in order`);
+    // The Final has no number to parse, which is why order is stored.
+    const fin = f.rounds.find((r) => r.label === 'Final');
+    const t4 = f.rounds.find((r) => r.label === 'Top 4');
+    assert.ok(fin.order > t4.order, `${f.format}: Final sorts after Top 4`);
+  }
+});
+
+test('switching format lands on that tournament\'s current round, not the same number', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const [, b] = page.json('eventInfo.formats.map(f => f.format)');
+
+  // Round 5 exists in both tournaments, so nothing forces a reseed. The two
+  // are at different stages, so the reader should land on what is live in the
+  // format they switched to rather than an arbitrary same-numbered round.
+  page.run(`selectRound('5')`);
+  assert.equal(page.get('activeRound'), '5');
+
+  page.$(`#formats [data-format="${b}"]`).click();
+  assert.ok(page.run(`ROUNDS.some(r => r.id === '5')`), 'round 5 exists here too');
+  assert.notEqual(page.get('activeRound'), '5',
+    'a format switch is a tournament switch: land on what is current');
+  const landed = page.run(`roundOf(activeRound)`);
+  assert.equal(landed.state, 'live', 'which is the live round');
 });

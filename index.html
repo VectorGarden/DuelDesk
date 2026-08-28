@@ -206,6 +206,14 @@ a{color:inherit}
 .track__head{display:flex; align-items:baseline; justify-content:space-between; gap:1rem; margin-bottom:.7rem; flex-wrap:wrap}
 .track__label{font:600 .74rem/1 var(--body); letter-spacing:.16em; text-transform:uppercase; color:var(--text-3)}
 .track__hint{font-size:.78rem; color:var(--text-3)}
+.formats{display:flex; gap:0; border:1px solid var(--line); border-radius:var(--r-md); overflow:hidden}
+.formats button{
+  font:500 .82rem var(--body); background:var(--surface-2); color:var(--text-2);
+  border:0; border-right:1px solid var(--line); padding:.45rem .9rem; min-height:40px; cursor:pointer;
+}
+.formats button:last-child{border-right:0}
+.formats button[aria-pressed="true"]{background:var(--text); color:var(--bg)}
+.formats button:hover:not([aria-pressed="true"]){color:var(--text)}
 .track__rail{
   display:flex; gap:.5rem; overflow-x:auto; padding-bottom:.75rem;
   scroll-snap-type:x proximity; scrollbar-width:thin;
@@ -452,6 +460,9 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
     <div class="track">
       <div class="track__head">
         <h2 class="track__label" id="track-h">Round track</h2>
+        <!-- Populated from the data: an event runs one tournament per format,
+             each with its own rounds and its own round count. -->
+        <div class="formats" id="formats" role="group" aria-label="Tournament format" hidden></div>
         <p class="track__hint">Use the left and right arrow keys to move between rounds.</p>
       </div>
       <div class="track__rail" role="tablist" aria-labelledby="track-h" id="rail"></div>
@@ -752,11 +763,55 @@ function groupFeed(xmlText){                                   // eslint-disable
    and R12 were identical and the round track was decorative. */
 let ROUNDS = [];
 let eventInfo = null;
+let activeFormat = null;       // which tournament's rounds are on screen
 let roundsVersion = null;      // change detection: see versionOf()
 let roundsState = 'loading';   // loading | ready | error
 let roundsError = '';
 
 const roundOf = id => ROUNDS.find(r => r.id === id);
+const formatOf = name => eventInfo?.formats?.find(f => f.format === name) ?? eventInfo?.formats?.[0];
+
+/* Each format is a separate tournament, so switching one out replaces the round
+   set entirely -- including the round count, which differs between them. */
+function selectFormat(name){
+  const f = formatOf(name);
+  if (!f || name === activeFormat) return;
+  activeFormat = name;
+  ROUNDS = f.rounds;
+  activeRound = null;                 // the old round id may not exist here
+  renderFormats();
+  renderEventMeta();
+  buildTrack();
+  landOnCurrentRound();
+  say(`Showing the ${name} tournament`);
+}
+
+function landOnCurrentRound(){
+  if (!activeRound || !ROUNDS.some(r => r.id === activeRound)){
+    const current = ROUNDS.find(r => r.state === 'live')
+                 ?? [...ROUNDS].reverse().find(r => r.state === 'done')
+                 ?? ROUNDS[0];
+    activeRound = current?.id ?? null;
+  }
+  syncSegs();
+  if (activeRound) selectRound(activeRound); else renderRound();
+}
+
+function renderFormats(){
+  const el = document.getElementById('formats');
+  const formats = eventInfo?.formats ?? [];
+  /* One format is not a choice, so do not present it as one. */
+  el.hidden = formats.length < 2;
+  if (el.hidden){ el.innerHTML = ''; return; }
+  el.innerHTML = formats.map(f =>
+    `<button type="button" data-format="${esc(f.format)}"
+             aria-pressed="${String(f.format === activeFormat)}">${esc(f.format)}</button>`).join('');
+}
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-format]');
+  if (b) selectFormat(b.dataset.format);
+});
 
 async function loadRounds(){
   const res = await fetch('rounds.json', {cache:'no-cache'});
@@ -767,7 +822,9 @@ async function loadRounds(){
   if (roundsVersion !== null && version === roundsVersion) return {unchanged:true};
 
   const data = JSON.parse(text);
-  if (!Array.isArray(data.rounds) || !data.rounds.length) throw new Error('rounds.json has no rounds');
+  if (!Array.isArray(data.formats) || !data.formats.length) throw new Error('rounds.json has no formats');
+  if (!data.formats.some(f => Array.isArray(f.rounds) && f.rounds.length))
+    throw new Error('rounds.json has no rounds');
   roundsVersion = version;   // only after it parses, so a bad file is retried
   return {unchanged:false, data};
 }
@@ -780,30 +837,32 @@ async function refreshRounds({poll = false} = {}){
       roundsError = '';
       return {changed: false};
     }
-    ROUNDS = result.data.rounds;
     eventInfo = result.data;
     roundsState = 'ready';
     roundsError = '';
-    /* Land on whatever the data says is in progress rather than assuming R12 --
-       but only when we have nowhere to be. A poll must not yank a reader who is
-       looking at round 5 back to the live round. */
-    if (!activeRound || !ROUNDS.some(r => r.id === activeRound)){
-      const current = ROUNDS.find(r => r.state === 'live')
-                   ?? [...ROUNDS].reverse().find(r => r.state === 'done')
-                   ?? ROUNDS[0];
-      activeRound = current.id;
+    /* Keep the reader on the format they chose across a refresh, unless it has
+       gone away. */
+    if (!activeFormat || !eventInfo.formats.some(f => f.format === activeFormat)){
+      activeFormat = eventInfo.formats[0].format;
     }
+    ROUNDS = formatOf(activeFormat).rounds;
+    renderFormats();
+    /* Land on whatever the data says is in progress -- but only when we have
+       nowhere to be. A poll must not yank a reader looking at round 5 back to
+       the live round. */
+    landOnCurrentRound();
   } catch (err) {
     roundsState = 'error';
     roundsError = err.message;
   }
   renderEventMeta();
+  renderFormats();
   buildTrack();
   syncSegs();
   /* selectRound() bails when the id is not in ROUNDS, which is exactly the case
      after a failed load -- so the error state would never paint. Render it
      directly instead of routing through round selection. */
-  if (roundsState === 'ready') selectRound(activeRound);
+  if (roundsState === 'ready' && activeRound) selectRound(activeRound);
   else renderRound();
 }
 
@@ -815,11 +874,12 @@ function renderEventMeta(){
     meta.textContent = '';
     return;
   }
+  const f = formatOf(activeFormat);
   h1.textContent = eventInfo.event;
   meta.innerHTML = [
-    `<span><b>${esc(eventInfo.duelists.toLocaleString())}</b> Duelists</span>`,
-    `<span><b>${esc(eventInfo.swissRounds)}</b> Swiss rounds</span>`,
-    `<span>Format <b>${esc(eventInfo.format)}</b></span>`,
+    `<span><b>${esc((f?.duelists ?? 0).toLocaleString())}</b> Duelists</span>`,
+    `<span><b>${esc(f?.swissRounds ?? 0)}</b> Swiss rounds</span>`,
+    `<span>Format <b>${esc(f?.format ?? '—')}</b></span>`,
     `<span>Coverage by <b>${esc(eventInfo.coverageBy)}</b></span>`
   ].join('');
 }
@@ -966,7 +1026,7 @@ const qEl       = document.getElementById('q');
 const liveRegion= document.getElementById('announce');
 const viewButtons = document.querySelectorAll('[data-view]');
 
-let activeRound = null;   // seeded from rounds.json on load
+let activeRound = null;   // seeded from the active format on load
 let activeView  = 'pairings';
 let filter = 'all';
 let query  = '';
