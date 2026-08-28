@@ -104,8 +104,8 @@ def bracket_rows(pairs):
     """
     return [{
         "table": i + 1,
-        "a": a["name"], "aRec": f"{a['w']}–{a['l']}–0",
-        "b": b["name"], "bRec": f"{b['w']}–{b['l']}–0",
+        "a": a["name"], "aRec": rec(a["w"], a["l"]),
+        "b": b["name"], "bRec": rec(b["w"], b["l"]),
     } for i, (a, b) in enumerate(pairs)]
 
 
@@ -121,13 +121,25 @@ def omw(player, by_name):
     return 100.0 * total / len(player['opps'])
 
 
+def rec(w, l, draws=0, confidence="derived"):
+    """A record as parts, not a formatted string.
+
+    How much is known varies once records come from scraped coverage: wins are
+    exact from points, losses need a player's appearances, and before ties were
+    abolished neither is determined by points alone. A baked "6-0-0" cannot
+    express that, so the page formats these and shows a ? for what is unknown.
+    """
+    return {"wins": w, "losses": l, "draws": draws, "confidence": confidence}
+
+
 def standings_table(players):
     by_name = {p['name']: p for p in players}
     ranked = sorted(players, key=lambda p: (-p['w'], p['l'], -omw(p, by_name), p['name']))
     return [{
         'pos': i + 1,
         'name': p['name'],
-        'record': f"{p['w']}–{p['l']}–0",
+        'record': rec(p['w'], p['l']),
+        'points': p['w'] * 3,
         'deck': p['deck'],
         'pct': f"{omw(p, by_name):.1f}",
     } for i, p in enumerate(ranked[:8])]
@@ -136,8 +148,8 @@ def standings_table(players):
 def pairings_table(pairs):
     return [{
         'table': i + 1,
-        'a': a['name'], 'aRec': f"{a['w']}–{a['l']}–0",
-        'b': b['name'], 'bRec': f"{b['w']}–{b['l']}–0",
+        'a': a['name'], 'aRec': rec(a['w'], a['l']),
+        'b': b['name'], 'bRec': rec(b['w'], b['l']),
     } for i, (a, b) in enumerate(pairs[:8])]
 
 
@@ -253,6 +265,9 @@ def main():
     json.dump({
         "event": event,
         "coverageBy": "the Duel Desk team",
+        # Ties were removed from tournament policy on 2025-09-02. Before that a
+        # record reads W-L-T; after it, W-L. The shape follows the era.
+        "drawsPossible": False,
         "updated": newest.isoformat().replace("+00:00", "Z"),
         "formats": formats_out,
     }, open("rounds.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)

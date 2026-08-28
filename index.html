@@ -282,6 +282,8 @@ th{
 }
 td.num,th.num{font-family:var(--mono); font-variant-numeric:tabular-nums; width:4.5rem}
 td.rec{font-family:var(--mono); font-variant-numeric:tabular-nums; color:var(--text-2); white-space:nowrap}
+/* Not fully derived: shown, but visibly less certain than the rest. */
+.rec--partial{color:var(--text-3)}
 tbody tr:hover{background:var(--surface-2)}
 /* Scroll container is focusable so it can be reached and scrolled by keyboard. */
 .tblwrap{overflow-x:auto}
@@ -654,6 +656,28 @@ const KINDS = {
   deck     : {label:'Deck profile',  color:'var(--c-deck)'}
 };
 const kindOf = k => KINDS[k] ?? KINDS.news;
+
+/* A record is stored as parts, because how much of it is known varies. Wins are
+   exact from match points; losses need the rounds a Duelist actually played;
+   and before ties were abolished on 2025-09-02, points alone determine neither
+   -- 3 points is one win or three draws.
+
+   A "?" is not decoration: it says we looked and could not tell, which is a
+   different claim from a blank. "0–?" and "?–?" are different states, and
+   collapsing both to a dash would lose that.
+
+   The shape follows the era. Ties existed before 2025-09-02, so those events
+   read W–L–T as they did at the time; later ones read W–L. */
+function formatRecord(record, {drawsPossible = false} = {}){
+  if (!record) return drawsPossible ? '?–?–?' : '?–?';
+  const part = v => (v === null || v === undefined) ? '?' : String(v);
+  const shown = drawsPossible || record.draws > 0
+    ? [record.wins, record.losses, record.draws]
+    : [record.wins, record.losses];
+  return shown.map(part).join('–');
+}
+
+const eventDrawsPossible = () => !!eventInfo?.drawsPossible;
 
 /* Round slot, independent of word order — real titles vary a lot
    ("Round 11 Pairings", "Pairings for Round 11", "R11 pairings"). */
@@ -1154,8 +1178,9 @@ function renderPairings(r){
       <th scope="col">Duelist</th><th scope="col">Record</th>
     </tr></thead><tbody>
     ${rows.map(p => `<tr>
-      <td class="num">${esc(p.table)}</td><td>${esc(p.a)}</td><td class="rec">${esc(p.aRec)}</td>
-      <td>${esc(p.b)}</td><td class="rec">${esc(p.bRec)}</td></tr>`).join('')}
+      <td class="num">${esc(p.table)}</td>
+      <td>${esc(p.a)}</td><td class="rec${p.aRec?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(p.aRec, {drawsPossible: eventDrawsPossible()}))}</td>
+      <td>${esc(p.b)}</td><td class="rec${p.bRec?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(p.bRec, {drawsPossible: eventDrawsPossible()}))}</td></tr>`).join('')}
     </tbody></table>`);
 }
 
@@ -1168,11 +1193,14 @@ function renderStandings(r){
       : `Standings after round ${esc(r.standingsAfter)}, top eight shown.`}</caption>
     <thead><tr>
       <th scope="col" class="num">Place</th><th scope="col">Duelist</th>
-      <th scope="col">Record</th><th scope="col">Deck</th><th scope="col">Opp. win %</th>
+      <th scope="col">Record</th><th scope="col" class="num">Pts</th>
+      <th scope="col">Deck</th><th scope="col">Opp. win %</th>
     </tr></thead><tbody>
     ${rows.map(s => `<tr>
       <th scope="row" class="num">${esc(s.pos)}</th><td>${esc(s.name)}</td>
-      <td class="rec">${esc(s.record)}</td><td>${esc(s.deck)}</td><td class="rec">${esc(s.pct)}%</td></tr>`).join('')}
+      <td class="rec${s.record?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(s.record, {drawsPossible: eventDrawsPossible()}))}</td>
+      <td class="rec num">${esc(s.points ?? '—')}</td>
+      <td>${esc(s.deck)}</td><td class="rec">${esc(s.pct)}%</td></tr>`).join('')}
     </tbody></table>`);
 }
 
@@ -1181,9 +1209,9 @@ function renderFeature(r){
     <p>Feature coverage is chosen once the round's top tables are known.</p></div>`;
   const {a, b, note} = r.feature;
   return `<div class="feature">
-    <div class="feature__side"><h3>${esc(a.name)}</h3><p>${esc(a.deck)} · ${esc(a.record)}</p></div>
+    <div class="feature__side"><h3>${esc(a.name)}</h3><p>${esc(a.deck)} · ${esc(formatRecord(a.record, {drawsPossible: eventDrawsPossible()}))}</p></div>
     <div class="feature__vs" aria-hidden="true">VS</div>
-    <div class="feature__side"><h3>${esc(b.name)}</h3><p>${esc(b.deck)} · ${esc(b.record)}</p></div>
+    <div class="feature__side"><h3>${esc(b.name)}</h3><p>${esc(b.deck)} · ${esc(formatRecord(b.record, {drawsPossible: eventDrawsPossible()}))}</p></div>
   </div>
   <p class="feature__note">${esc(note)}</p>`;
 }
