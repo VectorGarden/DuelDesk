@@ -47,6 +47,25 @@ _NAME_SUFFIXES = {"II", "III", "IV", "VI", "VII", "VIII", "IX", "JR", "SR"}
 # is why an entire 169-row table came back partial.
 _ANNOTATION = re.compile(r"\s*\([^)]*\)")
 
+# The status half of that annotation names the last round the player took part
+# in, and is worth keeping rather than discarding. Four spellings appear:
+#
+#   Drop - Round 4         left the event during round 4
+#   TopX - Round 7         did not survive the day-one cut, made after round 7
+#   PlayoffCut - Round 11  finished Swiss, did not make the playoff
+#   Cut - Round 12         played in the top cut and lost in that bracket round
+#
+# For the first three the round is exactly the player's last Swiss round: it
+# matched their final pairings appearance for all 161 annotated entrants at YCS
+# Montreal, with no exceptions. "Cut" is the odd one -- its round counts on past
+# the end of Swiss into the bracket (12, 13, 14 for an eleven-round event), so
+# it cannot be read as a Swiss round and is handled separately.
+#
+# "TopX" is literal in the source, not a placeholder for a number.
+_STATUS = re.compile(
+    r"\(\s*(Drop|PlayoffCut|Cut|Top\s*X)\s*[\u2010-\u2015-]\s*Round\s*(\d+)\s*\)",
+    re.I)
+
 _TAG = re.compile(r"<[^>]+>")
 _TABLE = re.compile(r"<table.*?</table>", re.S | re.I)
 _ROW = re.compile(r"<tr.*?</tr>", re.S | re.I)
@@ -82,6 +101,22 @@ def strip_region(name: str) -> tuple[str, str | None]:
     if not kept:                      # the whole name looked like a code
         return " ".join(tokens), None
     return " ".join(kept), (codes[0] if codes else None)
+
+
+def split_status(cell: str) -> tuple[str | None, int | None]:
+    """('... (Drop - Round 4) ...') -> ('Drop', 4). (None, None) if absent.
+
+    The status is returned separately from the name; the name itself still has
+    every parenthetical stripped by `strip_region`, because a status left inline
+    stops the player matching their own pairings rows.
+    """
+    m = _STATUS.search(cell)
+    if not m:
+        return None, None
+    label = re.sub(r"\s+", "", m.group(1)).lower()
+    canonical = {"drop": "drop", "playoffcut": "playoffcut",
+                 "cut": "cut", "topx": "topx"}[label]
+    return canonical, int(m.group(2))
 
 
 def normalise_name(raw: str) -> str:
@@ -205,11 +240,14 @@ def parse_table(doc: str) -> Table | None:
             if len(r) < 3 or not r[0].isdigit():
                 continue
             name, region = strip_region(r[1])
+            status, status_round = split_status(r[1])
             out.append({
                 "rank": int(r[0]),
                 "name": normalise_name(name),
                 "region": region,
                 "points": int(r[2]) if r[2].isdigit() else None,
+                "status": status,
+                "statusRound": status_round,
             })
 
     elif kind == "pairings":
