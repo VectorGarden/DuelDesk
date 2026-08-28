@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from build import Source, build_event                     # noqa: E402
 from fetch import BASE, SITEMAP, Fetcher, newest_sitemap  # noqa: E402
 from index import assign_events, parse_post_sitemap, parse_sitemap_index  # noqa: E402
-from parse import parse_post                              # noqa: E402
+from parse import detect_kind, parse_post                 # noqa: E402
 
 # Ties were removed from tournament policy on this date.
 DRAWS_ABOLISHED = date(2025, 9, 2)
@@ -64,8 +64,29 @@ def main() -> int:
         print("No event could be identified from the sitemap.")
         return 0
 
-    posts = sorted(posts, key=lambda p: p["lastmod"] or "", reverse=True)[: args.limit]
-    print(f"Event {slug!r}: fetching {len(posts)} posts (newest {latest})")
+    # Spend the budget on posts that carry results. Only pairings and standings
+    # feed a record, and losses need *every* round's pairings -- so a newest-first
+    # cut spent a third of its fetches on news posts and then left the records
+    # partial for want of the rounds it never reached.
+    #
+    # The kind is readable from the slug, so this costs nothing.
+    RANK = {"pairings": 0, "standings": 1, "deck": 2, "feature": 3, "result": 4, "news": 5}
+    for p in posts:
+        p["kind"] = detect_kind(p["slug"])
+    posts.sort(key=lambda p: (RANK.get(p["kind"], 9), p["lastmod"] or ""))
+
+    available = Counter(p["kind"] for p in posts)
+    posts = posts[: args.limit]
+    taken = Counter(p["kind"] for p in posts)
+    dropped = {k: n - taken.get(k, 0) for k, n in available.items() if n > taken.get(k, 0)}
+
+    print(f"Event {slug!r}: {sum(available.values())} posts, fetching {len(posts)} "
+          f"({', '.join(f'{v} {k}' for k, v in taken.most_common())})")
+    if dropped:
+        # Never let a budget silently cap coverage: a missing pairings page is
+        # the difference between a derived record and a partial one.
+        print(f"  not fetched (limit {args.limit}): "
+              + ", ".join(f"{v} {k}" for k, v in sorted(dropped.items())))
 
     sources = []
     for p in posts:
@@ -88,6 +109,8 @@ def main() -> int:
         f"### Scrape of `{slug}`",
         "",
         f"- posts fetched: **{len(sources)}** ({', '.join(f'{v} {k}' for k, v in kinds.most_common())})",
+        *([f"- **not fetched** (limit {args.limit}): "
+           + ", ".join(f"{v} {k}" for k, v in sorted(dropped.items()))] if dropped else []),
         f"- formats found: **{', '.join(f['format'] for f in event['formats']) or 'none'}**",
         f"- posts naming no format: **{event['_unassigned']}**",
         "",
