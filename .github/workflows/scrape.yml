@@ -43,6 +43,8 @@ jobs:
   scrape:
     name: Check for new coverage
     runs-on: ubuntu-latest
+    outputs:
+      published: ${{ steps.publish.outputs.published }}
     steps:
       - uses: actions/checkout@v4
 
@@ -145,6 +147,7 @@ jobs:
             echo "No change to the published data." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
+          echo "published=yes" >> "$GITHUB_OUTPUT"
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add rounds.json feed.xml
@@ -155,7 +158,7 @@ jobs:
           # and losing it to a data push would be a bad trade.
           git pull --rebase --autostash origin main
           git push origin HEAD:main
-          echo "Published to main; Validate will deploy it." >> "$GITHUB_STEP_SUMMARY"
+          echo "Published to main." >> "$GITHUB_STEP_SUMMARY"
 
       # Only when the check actually ran, so dropped ticks leave no trace. The
       # key is unique per attempt because a cache entry cannot be overwritten;
@@ -165,3 +168,19 @@ jobs:
         with:
           path: .scrape-state
           key: scrape-state-${{ github.run_id }}-${{ github.run_attempt }}
+
+  # The push above cannot deploy itself: GitHub does not start workflows for
+  # pushes made with GITHUB_TOKEN. So the deploy is called directly, against main
+  # rather than the checked-out sha, because the commit landed after this run
+  # began.
+  deploy:
+    name: Deploy the published coverage
+    needs: scrape
+    if: needs.scrape.outputs.published == 'yes'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ref: main
