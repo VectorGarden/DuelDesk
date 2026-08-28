@@ -511,6 +511,58 @@ test('nothing hidden by attribute is still displayed', async (t) => {
   assert.deepEqual(offenders, [], 'hidden in the DOM but still painted');
 });
 
+/* A scraped feature post is prose and photographs: it names two Duelists and
+   nothing else structured. The panel has to show that without inventing the
+   rest, and without printing the punctuation that would have joined them. */
+function withFeature(feature) {
+  return withRounds((d) => {
+    const f = d.formats[0];
+    const r = f.rounds.find((x) => x.pairings.length) || f.rounds[0];
+    r.feature = feature;
+    d.__roundId = r.id;
+  });
+}
+
+const SCRAPED_FEATURE = {
+  a: { name: 'Adrien Racek', deck: null, record: null },
+  b: { name: 'Oliver Martin Ernst Denk', deck: null, record: null },
+  note: 'Feature match coverage published by Konami.',
+  source: 'https://yugiohblog.konami.com/2026/ycs/feature/',
+};
+
+test('a feature match with no deck or record prints neither', async (t) => {
+  const page = await loadPage(withFeature(SCRAPED_FEATURE));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.feature).id); activeView='feature'; renderRound();`);
+  const text = page.text('#round-body');
+  assert.match(text, /Adrien Racek/);
+  assert.doesNotMatch(text, /·/, 'the separator has nothing to separate');
+  assert.doesNotMatch(text, /\?–\?/, 'an unknown record is omitted, not printed');
+  assert.equal(page.$$('#round-body .feature__side p').length, 0,
+    'no empty paragraph either: a blank line under the name is still a line');
+});
+
+test('a feature match links to the coverage it summarises', async (t) => {
+  const page = await loadPage(withFeature(SCRAPED_FEATURE));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.feature).id); activeView='feature'; renderRound();`);
+  const link = page.$('#round-body .feature__note a');
+  assert.ok(link, 'no link to the source post');
+  assert.equal(link.getAttribute('href'), SCRAPED_FEATURE.source);
+});
+
+test('a feature match that does know the deck still shows it', async (t) => {
+  const page = await loadPage(withFeature({
+    ...SCRAPED_FEATURE,
+    a: { name: 'Ada', deck: 'Snake-Eye', record: {wins: 5, losses: 1, draws: 0, confidence: 'derived'} },
+  }));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.feature).id); activeView='feature'; renderRound();`);
+  const text = page.text('#round-body');
+  assert.match(text, /Snake-Eye/);
+  assert.match(text, /5–1/);
+});
+
 test('the page asks not to be indexed', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());

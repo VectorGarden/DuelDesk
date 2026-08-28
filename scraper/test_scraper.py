@@ -815,6 +815,112 @@ class TestFeed(unittest.TestCase):
         self.assertEqual(len(root.findall("channel/item")), 0)
 
 
+class TestRoundDetail(unittest.TestCase):
+    """What a round panel can say beyond its own pairings table.
+
+    Built from synthetic posts rather than the saved pages: the fixture set has
+    no feature match and only one cut round, and the behaviour under test is the
+    shape of an event -- Swiss, then a bracket that narrows -- not the parsing of
+    any particular page, which is covered elsewhere.
+    """
+
+    def event(self):
+        from build import Source, build_event
+        from parse import Post, Table
+
+        def pairs(rnd, table_rows, url, posted="12:00"):
+            rows = [{"table": i + 1,
+                     "a": {"name": a, "region": None, "deck": None},
+                     "b": {"name": b, "region": None, "deck": None}}
+                    for i, (a, b) in enumerate(table_rows)]
+            return Source(url, Post(f"Round {rnd} Pairings", "pairings", "Advanced",
+                                    rnd, Table("pairings", [], rows)), posted)
+
+        # Four Duelists, three Swiss rounds, then a bracket that halves.
+        names = ["Ada", "Bo", "Cy", "Di"]
+        sources = [
+            pairs(1, [("Ada", "Bo"), ("Cy", "Di")], "https://x/r1/"),
+            pairs(2, [("Ada", "Cy"), ("Bo", "Di")], "https://x/r2/"),
+            pairs(3, [("Ada", "Di"), ("Bo", "Cy")], "https://x/r3/"),
+        ]
+        standings = [{"rank": i + 1, "name": n, "region": None,
+                      "points": 9 - 3 * i, "status": None, "statusRound": None}
+                     for i, n in enumerate(names)]
+        sources.append(Source("https://x/final/",
+                              Post("Final Standings After Swiss", "standings", "Advanced",
+                                   None, Table("standings", [], standings)), "18:00"))
+        sources.append(pairs("Top 4", [("Ada", "Di"), ("Bo", "Cy")], "https://x/t4/", "19:00"))
+        sources.append(pairs("Final", [("Ada", "Bo")], "https://x/final-match/", "20:00"))
+
+        # Two feature matches in round 2, newest first in source order on
+        # purpose: taking whichever arrives last would pick the older one, so
+        # the tie-break has to actually run for these to pass.
+        for when, who, url in (("13:30", "Bo vs. Di", "https://x/f-new/"),
+                               ("13:00", "Ada vs. Cy", "https://x/f-old/")):
+            sources.append(Source(url, Post(f"Round 2 Feature Match: {who}", "feature",
+                                            "Advanced", 2, None), when))
+        return build_event("Synthetic", sources, updated="2026-08-16T20:00:00Z")
+
+    def setUp(self):
+        self.fmt = next(f for f in self.event()["formats"] if f["format"] == "Advanced")
+        self.cut = [r for r in self.fmt["rounds"] if r["phase"] == "Top cut"]
+
+    def test_a_cut_round_shows_the_standings_it_was_seeded_from(self):
+        # It has no table of its own -- nothing is published after Swiss -- and it
+        # already claims standingsAfter, so an empty Standings tab was wrong twice.
+        self.assertTrue(self.cut, "the bracket did not build")
+        for r in self.cut:
+            self.assertTrue(r["standings"], f"{r['label']} has no standings")
+            self.assertEqual(r["standingsAfter"], self.fmt["swissRounds"])
+
+    def test_cut_pairings_carry_records(self):
+        for row in self.cut[0]["pairings"]:
+            self.assertIsNotNone(row["aRec"], f"{row['a']} has no record")
+            self.assertIsNotNone(row["bRec"], f"{row['b']} has no record")
+
+    def test_advancing_through_the_bracket_adds_a_win(self):
+        # Being paired in a later cut round is proof of winning the earlier one,
+        # which is the only reason a record may move with no results table.
+        early, late = self.cut[0], self.cut[1]
+        seen = {}
+        for row in early["pairings"]:
+            seen[row["a"]] = row["aRec"]["wins"]
+            seen[row["b"]] = row["bRec"]["wins"]
+        checked = 0
+        for row in late["pairings"]:
+            for name, rec in ((row["a"], row["aRec"]), (row["b"], row["bRec"])):
+                self.assertEqual(rec["wins"], seen[name] + 1,
+                                 f"{name} advanced without gaining a win")
+                checked += 1
+        self.assertGreater(checked, 0, "no Duelist appears in both rounds")
+
+    def test_mid_swiss_pairings_have_no_records(self):
+        # Rounds before the final standings publish no points at this event, so a
+        # record going into round 2 is not something this can know. Blank, not
+        # guessed.
+        r2 = next(r for r in self.fmt["rounds"] if r["label"] == "R2")
+        self.assertTrue(all(row["aRec"] is None for row in r2["pairings"]))
+
+    def test_a_feature_match_reaches_its_round(self):
+        r2 = next(r for r in self.fmt["rounds"] if r["label"] == "R2")
+        self.assertIsNotNone(r2["feature"], "no feature match on the round")
+        self.assertEqual(r2["feature"]["source"], "https://x/f-new/",
+                         "the newest of the two, not whichever arrived last")
+
+    def test_a_feature_match_states_only_what_the_post_says(self):
+        r2 = next(r for r in self.fmt["rounds"] if r["label"] == "R2")
+        f = r2["feature"]
+        self.assertEqual((f["a"]["name"], f["b"]["name"]), ("Bo", "Di"))
+        # A feature post has no table. Printing a final Swiss record beside a
+        # round-two match would be a plausible-looking lie.
+        self.assertIsNone(f["a"]["deck"])
+        self.assertIsNone(f["a"]["record"])
+
+    def test_a_round_with_no_feature_says_so(self):
+        r1 = next(r for r in self.fmt["rounds"] if r["label"] == "R1")
+        self.assertIsNone(r1["feature"])
+
+
 class TestOngoing(unittest.TestCase):
     """Whether the site may say a round is in progress."""
 
