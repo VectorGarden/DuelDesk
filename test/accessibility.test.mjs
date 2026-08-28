@@ -108,7 +108,7 @@ test('liveness is derived from the data, not asserted in markup', async (t) => {
     routes: {
       'feed.xml': async () => {
         const { readFileSync } = await import('node:fs');
-        const xml = readFileSync(new URL('../feed.xml', import.meta.url), 'utf8')
+        const xml = readFileSync(new URL('../test/fixtures/feed.xml', import.meta.url), 'utf8')
           .replace(/<lastBuildDate>[^<]*<\/lastBuildDate>/, '<lastBuildDate>Sun, 01 Feb 2026 14:02:00 +0000</lastBuildDate>')
           .replace(/<pubDate>[^<]*<\/pubDate>/g, '<pubDate>Sun, 01 Feb 2026 14:02:00 +0000</pubDate>');
         return { status: 200, body: xml };
