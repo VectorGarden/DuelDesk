@@ -821,11 +821,15 @@ function landOnCurrentRound(){
   if (activeRound) selectRound(activeRound); else renderRound();
 }
 
+/* One format is not a choice, so do not present it as one. The hero meta reads
+   the same flag: whichever of the two states the format, exactly one of them
+   does, so it is never said twice and never left unsaid. */
+const hasFormatChoice = () => (eventInfo?.formats?.length ?? 0) > 1;
+
 function renderFormats(){
   const el = document.getElementById('formats');
   const formats = eventInfo?.formats ?? [];
-  /* One format is not a choice, so do not present it as one. */
-  el.hidden = formats.length < 2;
+  el.hidden = !hasFormatChoice();
   if (el.hidden){ el.innerHTML = ''; return; }
   el.innerHTML = formats.map(f =>
     `<button type="button" data-format="${esc(f.format)}"
@@ -903,9 +907,12 @@ function renderEventMeta(){
   meta.innerHTML = [
     `<span><b>${esc((f?.duelists ?? 0).toLocaleString())}</b> Duelists</span>`,
     `<span><b>${esc(f?.swissRounds ?? 0)}</b> Swiss rounds</span>`,
-    `<span>Format <b>${esc(f?.format ?? '—')}</b></span>`,
+    /* The selector sits directly below this line and shows the format as the
+       pressed button. Naming it here as well printed it twice, a few pixels
+       apart, with only one of them actually being the control. */
+    hasFormatChoice() ? '' : `<span>Format <b>${esc(f?.format ?? '—')}</b></span>`,
     `<span>Coverage by <b>${esc(eventInfo.coverageBy)}</b></span>`
-  ].join('');
+  ].filter(Boolean).join('');
 }
 
 /* Coverage now comes from this site's own feed rather than a second copy of
