@@ -432,7 +432,8 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
           <button type="button" data-view="feature" aria-pressed="false">Feature match</button>
         </div>
       </div>
-      <div id="round-body" role="tabpanel" aria-labelledby="tab-12" tabindex="0"></div>
+      <!-- aria-labelledby is set by syncTrack() once the tabs exist -->
+      <div id="round-body" role="tabpanel" tabindex="0"></div>
     </div>
   </section>
 
@@ -768,6 +769,9 @@ function syncTrack(){
     b.setAttribute('aria-selected', String(selected));
     b.tabIndex = selected ? 0 : -1;
   }
+  /* The tabs are built by JS, so the panel cannot name one in the static
+     document without pointing at an id that does not exist yet. */
+  roundBody.setAttribute('aria-labelledby', 'tab-' + activeRound);
 }
 
 function syncSegs(){
@@ -790,8 +794,6 @@ function selectRound(id, focus){
       r.state === 'live' ? `Swiss · ${r.tables ?? 624} tables · pairings posted ${r.posted ?? '14:02'}`
     : r.state === 'done' ? 'Complete · results final'
     :                      'Not started · pairings appear here when posted';
-  roundBody.setAttribute('aria-labelledby', 'tab-' + id);
-
   renderRound();
 
   const tab = document.getElementById('tab-' + id);

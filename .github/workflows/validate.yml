@@ -32,17 +32,28 @@ jobs:
       - name: Install Nu Html Checker
         run: npm install --no-save vnu-jar@23.4.11
 
-      # Informational: shows warnings too, but never fails the build on its own.
-      - name: HTML report (errors and warnings)
+      # Informational: unfiltered, so genuine CSS problems stay visible in the
+      # log even though they do not gate. Expect stale CSS complaints here --
+      # see the note on the gating step below.
+      - name: HTML report (unfiltered, never fails)
         run: |
           JAR="$(node -p "String(require('vnu-jar'))")"
           java -jar "$JAR" --format gnu index.html || true
 
-      # Gating: errors only, so a new warning does not break unrelated PRs.
+      # Gating, and deliberately HTML-only:
+      #   * --errors-only, so a new warning cannot break an unrelated PR.
+      #   * CSS messages filtered out. vnu bundles a CSS checker built on an old
+      #     spec snapshot that rejects valid modern CSS -- color-mix(), and the
+      #     independent transform properties translate/rotate. The hosted
+      #     validator at validator.w3.org does not flag these. Filtering keeps
+      #     this job honest about what it verifies: the HTML.
       - name: Validate HTML
         run: |
           JAR="$(node -p "String(require('vnu-jar'))")"
-          java -jar "$JAR" --errors-only --format gnu index.html
+          java -jar "$JAR" \
+            --errors-only \
+            --filterpattern '(?s).*CSS: .*' \
+            --format gnu index.html
 
       # An HTML validator treats <script> contents as opaque text, so a syntax
       # error in this single-file site would otherwise reach production.
