@@ -4,6 +4,13 @@ on:
   pull_request:
   push:
     branches: [main]
+  # The sample data is regenerated at deploy time and its live window is six
+  # hours, so redeploy every four. That leaves two hours of slack for the
+  # scheduler, which runs late under load and is not a guarantee. Offset from
+  # the hour for the same reason -- :00 is the busiest minute on the platform.
+  schedule:
+    - cron: '17 */4 * * *'
+  # A manual "refresh now", which also deploys.
   workflow_dispatch:
 
 permissions:
@@ -93,7 +100,11 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: validate                     # never publish a build that failed its checks
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' ||
+       github.event_name == 'schedule' ||
+       github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     permissions:
       contents: read

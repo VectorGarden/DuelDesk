@@ -127,6 +127,13 @@ beside the headline already says so. CI enforces the marking.
 > bracket, same records — and only the clock moves. The regenerated files are re-validated before
 > upload, since they are not the ones the test job checked.
 >
+> The workflow also runs on a **four-hourly schedule**, so the site republishes with fresh
+> timestamps even when nobody pushes — the live window is six hours, leaving two hours of slack
+> for a scheduler that runs late under load. `workflow_dispatch` is a manual refresh.
+>
+> GitHub disables scheduled workflows after 60 days without repository activity; a push or a
+> manual run re-enables them.
+>
 > The committed copies keep whatever timestamps they were generated with, so a local checkout more
 > than six hours old will correctly stop showing the Live badge. Run the generator to refresh it.
 
