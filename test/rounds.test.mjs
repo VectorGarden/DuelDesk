@@ -682,6 +682,105 @@ test('a cut round renders the standings it points at', async (t) => {
     'the reference was not followed');
 });
 
+/* A feed item for a round the page already shows should move the page to it,
+   not send the reader to Konami to read a table sitting a few hundred pixels
+   above. The sample feed states no format, so these use one that does. */
+const JUMP_FEED = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>Duel Desk — YCS Montréal</title>
+  <link>https://dueldesk.reizu.dev/</link>
+  <description>Indexed from Konami's official event coverage.</description>
+  <item><title>YCS Montréal: Round 3 Pairings (Advanced Format)</title>
+    <link>https://yugiohblog.konami.com/a/</link><category>Pairings</category>
+    <category domain="format">Advanced</category>
+    <pubDate>Sun, 16 Aug 2026 18:00:00 +0000</pubDate></item>
+  <item><title>YCS Montréal: Advanced Format Round 4 Feature Match: A vs. B</title>
+    <link>https://yugiohblog.konami.com/b/</link><category>Feature match</category>
+    <category domain="format">Advanced</category>
+    <pubDate>Sun, 16 Aug 2026 17:00:00 +0000</pubDate></item>
+  <item><title>YCS Montréal: Round 999 Pairings (Advanced Format)</title>
+    <link>https://yugiohblog.konami.com/c/</link><category>Pairings</category>
+    <category domain="format">Advanced</category>
+    <pubDate>Sun, 16 Aug 2026 16:00:00 +0000</pubDate></item>
+</channel></rss>`;
+
+const jumpFeed = { routes: { 'feed.xml': { status: 200, body: JUMP_FEED } } };
+
+test('a pairings headline moves the page to that round', async (t) => {
+  const page = await loadPage(jumpFeed);
+  t.after(() => page.close());
+  const link = page.$$('#events a.post__t--jump').find((a) => a.dataset.jumpRound === '3');
+  assert.ok(link, 'round 3 pairings did not become an in-page link');
+  assert.equal(link.getAttribute('href'), '#round-h', 'a real href, not href="#"');
+  link.click();
+  assert.equal(page.get('activeRound'), '3');
+  assert.equal(page.get('activeView'), 'pairings');
+  assert.equal(page.get('activeFormat'), 'Advanced');
+});
+
+test('a post the page cannot show still links to the coverage', async (t) => {
+  const page = await loadPage(jumpFeed);
+  t.after(() => page.close());
+  // A feature match is prose and photographs; the post is the only place to read
+  // it, so this one has to keep leaving the site.
+  const links = page.$$('#events a.post__t');
+  const feature = links.find((a) => /Feature Match/.test(a.textContent));
+  assert.ok(feature, 'the feature match row vanished');
+  assert.match(feature.getAttribute('href'), /^https:\/\/yugiohblog\.konami\.com/);
+  assert.ok(!feature.classList.contains('post__t--jump'));
+});
+
+test('a round the page does not have is not offered as a jump', async (t) => {
+  const page = await loadPage(jumpFeed);
+  t.after(() => page.close());
+  const link = page.$$('#events a.post__t').find((a) => /Round 999/.test(a.textContent));
+  assert.ok(link, 'the row vanished');
+  assert.ok(!link.classList.contains('post__t--jump'),
+    'offered a jump to a round that does not exist');
+  assert.match(link.getAttribute('href'), /^https:/);
+});
+
+test('a final standings post goes to the end of Swiss, not the bracket', async (t) => {
+  // "Final Standings" is Konami's name for the table after Swiss. Reading it as
+  // a bracket round put the reader on a panel headed "Final · Top cut".
+  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: JUMP_FEED.replace(
+    'YCS Montréal: Round 3 Pairings (Advanced Format)',
+    'YCS Montréal: Final Standings After Swiss (Advanced Format)'
+  ).replace('<category>Pairings</category>', '<category>Standings</category>') } } });
+  t.after(() => page.close());
+  const link = page.$$('#events a.post__t--jump').find((a) => /Final Standings/.test(a.textContent));
+  assert.ok(link, 'not offered as a jump');
+  const swiss = page.json(`ROUNDS.filter(r => r.phase !== 'Top cut').at(-1).id`);
+  assert.equal(link.dataset.jumpRound, String(swiss));
+  assert.equal(link.dataset.jumpView, 'standings');
+});
+
+/* Konami's standings publish rank, name and points. Deck and opponent win
+   percentage come from the simulation, so against real coverage they were two
+   permanently empty columns and the percentage rendered as a bare "%". */
+test('standings drop the columns the coverage does not fill', async (t) => {
+  const page = await loadPage(withRounds((d) => {
+    for (const f of d.formats)
+      for (const r of f.rounds)
+        for (const s of r.standings) { s.deck = null; s.pct = null; }
+  }));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.standings.length).id); activeView='standings'; renderRound();`);
+  const head = page.$$('#round-body thead th').map((n) => n.textContent);
+  assert.deepEqual(head, ['Place', 'Duelist', 'Record', 'Pts']);
+  assert.doesNotMatch(page.text('#round-body tbody tr'), /%/,
+    'a percentage sign with no number in front of it');
+});
+
+test('standings keep those columns when the data has them', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.standings.length).id); activeView='standings'; renderRound();`);
+  const head = page.$$('#round-body thead th').map((n) => n.textContent);
+  assert.ok(head.includes('Deck'), `deck column dropped when known: ${head}`);
+  assert.ok(head.includes('Opp. win %'), `percentage dropped when known: ${head}`);
+});
+
 test('the page asks not to be indexed', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());

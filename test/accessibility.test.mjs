@@ -62,13 +62,27 @@ test('arrow keys, Home and End move between rounds', async (t) => {
 });
 
 test('post rows offer no affordance the site cannot honour', async (t) => {
+  // The rule was "no links at all", written when every sample item pointed at
+  // this site's own homepage and a link would have gone nowhere. The site can
+  // honour two things now -- a post it shows in place, and one it can only link
+  // out to -- so the rule is that every link is one of those and not a third.
   const page = await loadPage();
   t.after(() => page.close());
   assert.ok(page.$$('.post').length > 0, 'posts are rendered');
-  assert.equal(page.$$('#events a').length, 0, 'no links in the coverage list');
   assert.ok(page.$$('.post').every((n) => n.tagName === 'DIV'));
-  assert.ok(page.$$('.post').every((n) => !n.querySelector('a,button,[tabindex]')),
-    'nothing focusable inside a post row');
+
+  const rounds = new Set(page.json('ROUNDS.map(r => String(r.id))'));
+  for (const a of page.$$('#events a')) {
+    if (a.dataset.jumpRound !== undefined) {
+      assert.ok(rounds.has(String(a.dataset.jumpRound)),
+        `offers a jump to a round that is not here: ${a.dataset.jumpRound}`);
+      assert.equal(a.getAttribute('href'), '#round-h',
+        'a real href, so middle-click and no-JS still do something');
+    } else {
+      assert.match(a.getAttribute('href'), /^https?:/, 'links out, or not at all');
+      assert.match(a.getAttribute('rel') ?? '', /noreferrer/);
+    }
+  }
 });
 
 test('scrollable tables are reachable by keyboard', async (t) => {
