@@ -1,213 +1,493 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Duel Desk — Yu-Gi-Oh! TCG event coverage (SAMPLE DATA)</title>
+    <title>Duel Desk — YCS Montréal</title>
     <link>https://dueldesk.reizu.dev/</link>
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>SAMPLE DATA — this is a design study. Every Duelist name, record and pairing in this feed is invented. Not affiliated with or endorsed by Konami. Live round-by-round pairings, standings and feature match coverage for Yu-Gi-Oh! TCG events.</description>
+    <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Aug 2026 19:50:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 01:08:52 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
-    <copyright>A design study. Not affiliated with or endorsed by Konami. All names and records shown are invented sample data.</copyright>
+    <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Advanced Top 4 pairings are up</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-195013</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 19:50:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Advanced Top 4 pairings are up</description>
+      <title>YCS Montréal Advanced Format Top 32 Deck Lists</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-top-32-deck-lists/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-top-32-deck-lists/</guid>
+      <category>Deck profile</category>
+      <pubDate>Mon, 17 Aug 2026 01:08:52 +0000</pubDate>
+      <description>Deck profile from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Genesys Top 4 pairings are up</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-195013</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 19:50:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Genesys Top 4 pairings are up</description>
+      <title>YCS Montréal Genesys Format Top 32 Deck Lists</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-genesys-format-top-32-deck-lists/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-genesys-format-top-32-deck-lists/</guid>
+      <category>Deck profile</category>
+      <pubDate>Mon, 17 Aug 2026 00:35:29 +0000</pubDate>
+      <description>Deck profile from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: The Advanced Top 8 deck lists</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-193213</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 19:32:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. The Advanced Top 8 deck lists</description>
+      <title>YCS Montréal: Final Standings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-final-standings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-final-standings-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 23:59:18 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: The Genesys Top 8 deck lists</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-193213</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 19:32:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. The Genesys Top 8 deck lists</description>
+      <title>YCS Montréal: Advanced Format Top 4 Pairings (with Deck Types!)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-advanced-format-top-4-pairings-with-deck-types/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-advanced-format-top-4-pairings-with-deck-types/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 21:48:22 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Advanced Top 8 pairings are up</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-191213</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 19:12:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Advanced Top 8 pairings are up</description>
+      <title>YCS Montréal: Advanced Format Top 8 Pairings (with Deck Types!)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-advanced-format-top-8-pairings-with-deck-types/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-advanced-format-top-8-pairings-with-deck-types/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 21:44:43 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Genesys Top 8 pairings are up</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-191213</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 19:12:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Genesys Top 8 pairings are up</description>
+      <title>YCS Montréal: Genesys Format Top 4 Pairings (with Deck Types!)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-genesys-format-top-4-pairings-with-deck-types/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-genesys-format-top-4-pairings-with-deck-types/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 20:07:41 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Advanced standings after round 12</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-185613</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 18:56:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Advanced standings after round 12</description>
+      <title>YCS Montréal: Final Standings After Swiss (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-final-standings-after-swiss-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-final-standings-after-swiss-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 19:10:35 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Genesys standings after round 10</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-185613</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 18:56:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Genesys standings after round 10</description>
+      <title>YCS Montréal: Final Standings After Swiss (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-final-standings-after-swiss-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-final-standings-after-swiss-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 18:57:56 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Feature match: Fiendsmith against Mitsurugi (Advanced)</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-184313</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 18:43:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Feature match: Fiendsmith against Mitsurugi (Advanced)</description>
+      <title>YCS Montréal: Genesys Format Top 8 Pairings (with Deck Types!)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-genesys-format-top-8-pairings-with-deck-types/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-genesys-format-top-8-pairings-with-deck-types/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 18:40:14 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Feature match: Snake-Eye against Snake-Eye (Genesys)</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-184313</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 18:43:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Feature match: Snake-Eye against Snake-Eye (Genesys)</description>
+      <title>YCS Montréal: Round 13 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-13-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-13-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 17:51:06 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Advanced Round 12 pairings are up</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-183413</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 18:34:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Advanced Round 12 pairings are up</description>
+      <title>YCS Montréal: Standings After Round 12 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-12-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-12-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 17:47:59 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Genesys Round 10 pairings are up</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-183413</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 18:34:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Genesys Round 10 pairings are up</description>
+      <title>YCS Montréal: Round 12 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-12-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-12-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 16:48:35 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Advanced standings after round 11</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-181813</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 18:18:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Advanced standings after round 11</description>
+      <title>YCS Montréal: Standings After Round 11 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-11-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-11-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 16:46:47 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Genesys standings after round 9</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-181813</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 18:18:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Genesys standings after round 9</description>
+      <title>YCS Montréal: Round 11 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-11-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-11-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 16:37:22 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Advanced Round 11 pairings are up</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-175613</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 17:56:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Advanced Round 11 pairings are up</description>
+      <title>YCS Montréal: Standings After Round 10 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-10-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-10-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 16:35:42 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Genesys Round 9 pairings are up</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-175613</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 17:56:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Genesys Round 9 pairings are up</description>
+      <title>YCS Montréal: Round 11 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-11-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-11-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 16:24:26 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: The Advanced decks still in contention</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-174813</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 17:48:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. The Advanced decks still in contention</description>
+      <title>YCS Montréal: Standings After Round 10 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-10-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-10-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 16:22:52 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: The Genesys decks still in contention</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-174813</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 17:48:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. The Genesys decks still in contention</description>
+      <title>YCS Montréal: Round 10 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-10-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-10-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 15:13:45 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Advanced standings after round 10</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-174013</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 17:40:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Advanced standings after round 10</description>
+      <title>YCS Montréal: Standings After Round 9 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-9-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-9-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 15:12:21 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Remote Duel YCS August 2026: Genesys standings after round 8</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260828-174013</guid>
-      <category>Remote Duel YCS August 2026</category>
-      <pubDate>Fri, 28 Aug 2026 17:40:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Genesys standings after round 8</description>
+      <title>YCS Montréal: Round 9 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-9-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-9-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 14:52:11 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] YCS Montreal, Quebec: Your champion, undefeated in the top cut</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260814-193213</guid>
-      <category>YCS Montreal, Quebec</category>
-      <pubDate>Fri, 14 Aug 2026 19:32:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Your champion, undefeated in the top cut</description>
+      <title>YCS Montréal: Standings After Round 8 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-8-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-8-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 14:51:18 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] YCS Montreal, Quebec: Final match: a mirror decided on time</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260814-184413</guid>
-      <category>YCS Montreal, Quebec</category>
-      <pubDate>Fri, 14 Aug 2026 18:44:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Final match: a mirror decided on time</description>
+      <title>YCS Montréal: Round 8 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-8-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-8-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 14:48:05 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] YCS Montreal, Quebec: Top 8 pairings</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260814-162713</guid>
-      <category>YCS Montreal, Quebec</category>
-      <pubDate>Fri, 14 Aug 2026 16:27:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Top 8 pairings</description>
+      <title>YCS Montréal: Round 10 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-10-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-10-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 14:38:52 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Ultimate Duelist Series — Season 6: Season 6 invite structure explained</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260807-190213</guid>
-      <category>Ultimate Duelist Series — Season 6</category>
-      <pubDate>Fri, 07 Aug 2026 19:02:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. Season 6 invite structure explained</description>
+      <title>YCS Montréal: Standings After Round 9 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-9-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-9-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 14:36:57 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>[Sample] Forbidden &amp; Limited list update: What changed and when it takes effect</title>
-      <link>https://dueldesk.reizu.dev/</link>
-      <guid isPermaLink="false">dueldesk-20260731-180213</guid>
-      <category>Forbidden &amp; Limited list update</category>
-      <pubDate>Fri, 31 Jul 2026 18:02:13 +0000</pubDate>
-      <description>SAMPLE DATA - invented for a design study, not real tournament coverage. What changed and when it takes effect</description>
+      <title>YCS Montréal: Round 9 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-9-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-9-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sun, 16 Aug 2026 12:58:51 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Final Standings After Day 1 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sun, 16 Aug 2026 00:01:06 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 8 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-8-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-8-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sat, 15 Aug 2026 22:45:52 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 7 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-7-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-7-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sat, 15 Aug 2026 22:43:51 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 7 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-7-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-7-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sat, 15 Aug 2026 21:45:14 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 6 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-6-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-6-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sat, 15 Aug 2026 21:43:42 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 6 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-6-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-6-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sat, 15 Aug 2026 20:28:34 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 5 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-5-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-5-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sat, 15 Aug 2026 20:26:52 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 5 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-5-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-5-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sat, 15 Aug 2026 19:11:49 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 4 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-4-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-4-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sat, 15 Aug 2026 19:10:29 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 4 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-4-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-4-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sat, 15 Aug 2026 18:15:05 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 3 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-3-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-3-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sat, 15 Aug 2026 18:13:14 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 3 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-3-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-3-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sat, 15 Aug 2026 16:45:13 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 2 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-2-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-2-advanced-format/</guid>
+      <category>Standings</category>
+      <pubDate>Sat, 15 Aug 2026 16:43:30 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 2 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-2-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-2-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sat, 15 Aug 2026 15:26:16 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 1 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-1-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-1-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Sat, 15 Aug 2026 14:04:36 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Final Standings After Day 1 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Fri, 14 Aug 2026 23:16:32 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Genesys Format Round 5 Feature Match: Adrien Racek vs. Oliver Martin Ernst Denk</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/genesys-format-round-5-feature-match-adrien-racek-vs-oliver-martin-ernst-denk/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/genesys-format-round-5-feature-match-adrien-racek-vs-oliver-martin-ernst-denk/</guid>
+      <category>Feature match</category>
+      <pubDate>Fri, 14 Aug 2026 22:32:29 +0000</pubDate>
+      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Genesys Format Round 4 Feature Match: Matthew Vanden Heuvel vs. Joshua Leznoff</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/genesys-format-round-4-feature-match-matthew-vanden-heuvel-vs-joshua-leznoff/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/genesys-format-round-4-feature-match-matthew-vanden-heuvel-vs-joshua-leznoff/</guid>
+      <category>Feature match</category>
+      <pubDate>Fri, 14 Aug 2026 21:55:37 +0000</pubDate>
+      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 7 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-7-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-7-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Fri, 14 Aug 2026 21:44:18 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 6 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-6-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-6-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Fri, 14 Aug 2026 21:41:41 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Genesys Format Round 6 Feature Match: Alexandre Bujold vs. Jimmy Clouet</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-6-feature-match-alexandre-bujold-vs-jimmy-clouet/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-6-feature-match-alexandre-bujold-vs-jimmy-clouet/</guid>
+      <category>Feature match</category>
+      <pubDate>Fri, 14 Aug 2026 21:39:43 +0000</pubDate>
+      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 6 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-6-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-6-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Fri, 14 Aug 2026 20:25:19 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 5 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-5-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-5-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Fri, 14 Aug 2026 20:22:27 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Genesys Format Round 4 Feature Match: Michael Kerr vs. Luke Vincent</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-4-feature-match-michael-kerr-vs-luke-vincent/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-4-feature-match-michael-kerr-vs-luke-vincent/</guid>
+      <category>Feature match</category>
+      <pubDate>Fri, 14 Aug 2026 20:18:34 +0000</pubDate>
+      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 5 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-5-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-5-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Fri, 14 Aug 2026 19:26:11 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 4 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-4-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-4-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Fri, 14 Aug 2026 19:24:08 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Genesys Format Round 3 Feature Match: William Arthur Kemp III vs. Aviel Getter</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/genesys-format-round-3-feature-match-william-arthur-kemp-iii-vs-aviel-getter/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/genesys-format-round-3-feature-match-william-arthur-kemp-iii-vs-aviel-getter/</guid>
+      <category>Feature match</category>
+      <pubDate>Fri, 14 Aug 2026 18:00:22 +0000</pubDate>
+      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 4 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-4-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-4-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Fri, 14 Aug 2026 17:45:27 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 3 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-3-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-3-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Fri, 14 Aug 2026 17:43:14 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Genesys Format Round 2 Feature Match: Edward Lu vs. Mate Vulas</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-2-feature-match-edward-ky-vs-mate-vulas/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-2-feature-match-edward-ky-vs-mate-vulas/</guid>
+      <category>Feature match</category>
+      <pubDate>Fri, 14 Aug 2026 17:28:44 +0000</pubDate>
+      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 3 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-3-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-3-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Fri, 14 Aug 2026 16:51:49 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Standings After Round 2 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-2-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-2-genesys-format/</guid>
+      <category>Standings</category>
+      <pubDate>Fri, 14 Aug 2026 16:49:44 +0000</pubDate>
+      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 2 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-2-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-2-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Fri, 14 Aug 2026 15:24:28 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Genesys Format Round 1 Feature Match: Mackey Chung vs. Stephen Thomas Calusic</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/genesys-format-round-1-feature-match-mackey-chung-vs-stephen-thomas-calusic/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/genesys-format-round-1-feature-match-mackey-chung-vs-stephen-thomas-calusic/</guid>
+      <category>Feature match</category>
+      <pubDate>Fri, 14 Aug 2026 15:21:38 +0000</pubDate>
+      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Montréal: Round 1 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-1-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-1-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <pubDate>Fri, 14 Aug 2026 15:12:32 +0000</pubDate>
+      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
