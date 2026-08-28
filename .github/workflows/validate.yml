@@ -11,7 +11,8 @@ permissions:
 
 concurrency:
   group: validate-${{ github.ref }}
-  cancel-in-progress: true
+  # Superseding a PR run is fine; cancelling a run that is mid-deploy is not.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   validate:
@@ -87,3 +88,40 @@ jobs:
       # Every local file the page references must actually be in the repo.
       - name: Check local references resolve
         run: python3 .github/scripts/check-references.py index.html
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: validate                     # never publish a build that failed its checks
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    # Deploys queue rather than cancel each other; a half-published site is worse
+    # than a slightly late one.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # An include list, so the artifact holds the site and not the repository.
+      - name: Stage the site
+        run: ./scripts/stage-site.sh _site
+
+      # Proves the staging script did not forget a file the page references.
+      # Cheaper to fail here than to 404 in production.
+      - name: Verify the artifact is complete
+        working-directory: _site
+        run: python3 ../.github/scripts/check-references.py index.html
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

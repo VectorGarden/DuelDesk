@@ -189,8 +189,16 @@ in `index.html` and `site.webmanifest`; CI fails if any referenced file is missi
 
 ## Deployment
 
-Served by GitHub Pages from the default branch. `CNAME` points the site at `dueldesk.reizu.dev`;
-the matching DNS record is configured separately.
+Deployed to GitHub Pages by the `Validate` workflow, from an artifact rather than the branch.
+
+The deploy job `needs: validate`, so a build that fails its checks is never published.
+[`scripts/stage-site.sh`](scripts/stage-site.sh) copies an explicit **include list** into `_site/`
+— the branch build published the whole repository, which meant `package.json`, the test harness
+and the data generator were all reachable over HTTP. `check-references.py` then runs against the
+staged tree, so a file the page needs but the script forgot fails the build instead of 404ing in
+production.
+
+`CNAME` ships in the artifact; the matching DNS record is configured separately.
 
 Round data is sourced from Konami's official
 [Yu-Gi-Oh! TCG blog](https://yugiohblog.konami.com/), which is credited in the footer. The
