@@ -28,7 +28,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          # Read from .nvmrc so CI and a local `nvm use` cannot drift apart.
+          node-version-file: .nvmrc
           cache: npm
 
       # Both vnu-jar and the test harness are pinned in package-lock.json, so
