@@ -227,6 +227,15 @@ and the data generator were all reachable over HTTP. `check-references.py` then 
 staged tree, so a file the page needs but the script forgot fails the build instead of 404ing in
 production.
 
+After `deploy-pages` publishes, [`scripts/smoke-test.sh`](scripts/smoke-test.sh) asks production
+directly: the served `index.html` must hash-match the uploaded artifact, `rounds.json` must carry
+a timestamp only this deploy could have written, every referenced file must return 200, and no
+source file may be reachable. It retries while Pages propagates, and reports every fault it finds
+rather than stopping at the first.
+
+That check exists because deploys were once silently broken for two merges — CI stayed green
+throughout, because nothing ever asked production a question.
+
 `CNAME` ships in the artifact; the matching DNS record is configured separately.
 
 Round data is sourced from Konami's official

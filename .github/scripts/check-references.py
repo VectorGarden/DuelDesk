@@ -18,7 +18,20 @@ SKIP_PREFIXES = ("http://", "https://", "//", "data:", "mailto:", "tel:", "#")
 SELF_ORIGIN = "https://dueldesk.reizu.dev"
 
 
+def collect(path):
+    """The reference paths a page depends on. Shared with the smoke test, so
+    both agree on what "referenced" means -- href/src, plus same-origin
+    absolute URLs in content=, which is how og:image points at og.png."""
+    return _main(path, list_only=True)
+
+
 def main(path="index.html"):
+    if path == "--list":
+        raise SystemExit("usage: check-references.py [--list] <html>")
+    return _main(path, list_only=False)
+
+
+def _main(path="index.html", list_only=False):
     html = Path(path).read_text(encoding="utf-8")
 
     # Strip <script> and <style> bodies before scanning. Their contents are
@@ -67,6 +80,11 @@ def main(path="index.html"):
             if src and not src.startswith(SKIP_PREFIXES):
                 add(src)
 
+    if list_only:
+        for ref in sorted(refs):
+            print(ref)
+        return 0
+
     missing = []
     for ref in sorted(refs):
         target = Path(ref.lstrip("/"))
@@ -84,4 +102,7 @@ def main(path="index.html"):
 
 
 if __name__ == "__main__":
-    sys.exit(main(*sys.argv[1:]))
+    args = sys.argv[1:]
+    if args and args[0] == "--list":
+        sys.exit(_main(*(args[1:] or ["index.html"]), list_only=True))
+    sys.exit(main(*args))
