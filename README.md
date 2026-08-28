@@ -41,6 +41,41 @@ already read fluently: Spell teal, Effect orange, Trap magenta, Link blue, Fusio
 antique gold of the card border used only as a hairline. The clipped corner (`--notch`) is a nod to
 the card frame.
 
+## Scraping the official blog
+
+[`scraper/`](scraper/) parses coverage posts from Konami's Yu-Gi-Oh! TCG blog. **Nothing in the
+site consumes it yet** — it produces structured data, and mapping that onto the page's model is a
+separate decision (see below).
+
+The sitemap is the only supported way in: every `/feed/` path 404s and the WordPress REST posts
+endpoint returns 403. `robots.txt` disallows only `/wp-admin/` and publishes `wp-sitemap.xml`
+explicitly, so that is what `scraper/index.py` reads — 12,039 posts across seven sub-sitemaps.
+
+`scraper/parse.py` reads a post's title and table. Table shapes are detected from their **headers**,
+never by column position, because the blog uses at least three layouts:
+
+| Layout | Columns |
+| --- | --- |
+| Standings | `Rank`, `Player Name`, `Points` |
+| Pairings | `Table`, `P1 First Name`, `P1 Last Name`, `vs.`, `P2 …`, `P2 …` |
+| Pairings with decks | `Table`, `Duelist 1 Name`, `Duelist 1 Deck Type`, `vs.`, … |
+
+```bash
+python3 -m unittest discover -s scraper -p 'test_*.py'
+```
+
+17 tests run against real pages saved under `test/fixtures/blog/`, so they need no network and run
+in CI.
+
+### What does not map cleanly yet
+
+- **The blog reports points, the site models W–L–0 records.** They are different quantities.
+- **Events run two parallel tournaments** (Advanced and Genesys); `rounds.json` has no format axis.
+- **Event identity is genuinely ambiguous.** Posts appear both under an event slug
+  (`/2026/ycs/2026-08-quebec/…`) and without one, and concurrent events are real — the 2026 WCQ and
+  the Genesys Championship both ran on 2026-07-11. Posts are attached by date window and format,
+  and anything still ambiguous is reported as such rather than guessed.
+
 ## Tests
 
 The JavaScript lives inside `index.html`, so it never reaches a bundler or a linter. The suite

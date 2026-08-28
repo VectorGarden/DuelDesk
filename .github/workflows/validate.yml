@@ -83,6 +83,11 @@ jobs:
       - name: Validate feed.xml
         run: python3 .github/scripts/check-feed.py feed.xml
 
+      # The blog scraper is Python and tested against saved fixtures, so it
+      # runs offline -- the parser is the part worth guarding, not the fetch.
+      - name: Run scraper tests
+        run: python3 -m unittest discover -s scraper -p 'test_*.py' -v
+
       # rounds.json is fetched from JavaScript, so the reference check cannot
       # see it. This also verifies the records in it actually add up.
       - name: Validate rounds.json
