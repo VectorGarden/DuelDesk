@@ -75,6 +75,25 @@ def play(pairs, rng):
         a['opps'].append(b['name']); b['opps'].append(a['name'])
 
 
+def duel(a, b, rng):
+    """One elimination match. Returns (winner, loser).
+
+    Deliberately does not touch w/l: a top-cut result is not a Swiss result,
+    and the standings shown during the cut are the final Swiss standings.
+    """
+    edge = a["power"] / (a["power"] + b["power"])
+    return (a, b) if rng.random() < edge else (b, a)
+
+
+def bracket_rows(pairs):
+    """Cut pairings reuse the Swiss pairing shape, so the table renders as-is."""
+    return [{
+        "table": i + 1,
+        "a": a["name"], "aRec": f"{a['w']}–{a['l']}–0",
+        "b": b["name"], "bRec": f"{b['w']}–{b['l']}–0",
+    } for i, (a, b) in enumerate(pairs)]
+
+
 def omw(player, by_name):
     """Opponent match-win percentage, the real Swiss tiebreak."""
     if not player['opps']:
@@ -118,59 +137,88 @@ def main():
     players = build_field(rng)
     event = f"Remote Duel YCS {now.strftime('%B %Y')}"
 
-    # Round N was posted (SWISS - N) * 38 minutes before now, so R12 is freshest.
-    def posted_at(n):
-        return now - timedelta(minutes=(SWISS - n) * 38 + 12)
+    # 14 rounds get posted: R1..R12, then Top 8 and Top 4. Indexed in posting
+    # order so the most recent (Top 4 pairings) is the freshest thing in the feed.
+    POSTED_ROUNDS = SWISS + 2
+    def posted_at(i):
+        return now - timedelta(minutes=(POSTED_ROUNDS - 1 - i) * 38 + 12)
 
     rounds, posts = [], []
+    by_name = {p["name"]: p for p in players}
 
+    def feature_of(rows, phase_note):
+        top = rows[0]
+        return {
+            "a": {"name": top["a"], "deck": by_name[top["a"]]["deck"], "record": top["aRec"]},
+            "b": {"name": top["b"], "deck": by_name[top["b"]]["deck"], "record": top["bRec"]},
+            "note": phase_note,
+        }
+
+    # --- Swiss, played out in full ---
     for n in range(1, SWISS + 1):
         pairs = pair_round(players, rng)
         entering = pairings_table(pairs)
-        stamp = posted_at(n)
-        live = (n == SWISS)
+        stamp = posted_at(n - 1)
+        play(pairs, rng)
 
-        if live:
-            # R12 is paired but unplayed: standings are those after round 11.
-            table = standings_table(players)
-            after = SWISS - 1
-        else:
-            play(pairs, rng)
-            table = standings_table(players)
-            after = n
-
-        top = entering[0]
-        by_name = {p['name']: p for p in players}
         rounds.append({
-            'id': str(n), 'label': f'R{n}',
-            'state': 'live' if live else 'done',
-            'tables': ANNOUNCED // 2,
-            'posted': stamp.strftime('%H:%M'),
-            'standingsAfter': after,
-            'pairings': entering,
-            'standings': table,
-            'feature': {
-                'a': {'name': top['a'], 'deck': by_name[top['a']]['deck'], 'record': top['aRec']},
-                'b': {'name': top['b'], 'deck': by_name[top['b']]['deck'], 'record': top['bRec']},
-                'note': (f"Table one for round {n}. "
-                         + ("Both Duelists are locked for the top cut, so this one decides seeding."
-                            if live else "Written coverage of each turn follows as the match plays out.")),
-            },
+            "id": str(n), "label": f"R{n}", "phase": "Swiss", "state": "done",
+            "tables": ANNOUNCED // 2,
+            "posted": stamp.strftime("%H:%M"),
+            "standingsAfter": n,
+            "pairings": entering,
+            "standings": standings_table(players),
+            "feature": feature_of(entering, f"Table one for round {n}. Written coverage of each turn follows as the match plays out."),
         })
 
-        posts.append((stamp, event, f'Round {n} pairings are up', 'pairings'))
-        if not live:
-            posts.append((stamp + timedelta(minutes=22), event, f'Standings after round {n}', 'standings'))
+        posts.append((stamp, event, f"Round {n} pairings are up", "pairings"))
+        posts.append((stamp + timedelta(minutes=22), event, f"Standings after round {n}", "standings"))
+        top = entering[0]
         if n in (6, 9, SWISS):
             posts.append((stamp + timedelta(minutes=9), event,
-                          f"Feature match: {by_name[top['a']]['deck']} against {by_name[top['b']]['deck']}", 'feature'))
+                          f"Feature match: {by_name[top['a']]['deck']} against {by_name[top['b']]['deck']}", "feature"))
         if n == SWISS - 2:
-            posts.append((stamp + timedelta(minutes=30), event, 'The decks still in contention', 'deck'))
+            posts.append((stamp + timedelta(minutes=30), event, "The decks still in contention", "deck"))
 
-    for rid, label in (('T8', 'Top 8'), ('T4', 'Top 4'), ('F', 'Final')):
-        rounds.append({'id': rid, 'label': label, 'state': 'upcoming', 'tables': None,
-                       'posted': None, 'standingsAfter': None,
-                       'pairings': [], 'standings': [], 'feature': None})
+    # --- Top cut. Swiss is over, so standings are final from here on. ---
+    final_table = standings_table(players)
+    seeds = [by_name[row["name"]] for row in final_table]      # seed 1..8
+
+    # Standard single-elimination seeding: 1v8, 2v7, 3v6, 4v5.
+    t8_pairs = [(seeds[0], seeds[7]), (seeds[1], seeds[6]),
+                (seeds[2], seeds[5]), (seeds[3], seeds[4])]
+    t8_rows = bracket_rows(t8_pairs)
+    t8_stamp = posted_at(SWISS)
+    t8_winners = [duel(a, b, rng)[0] for a, b in t8_pairs]
+
+    rounds.append({
+        "id": "T8", "label": "Top 8", "phase": "Top cut", "state": "done",
+        "tables": len(t8_pairs), "posted": t8_stamp.strftime("%H:%M"),
+        "standingsAfter": SWISS,
+        "pairings": t8_rows, "standings": final_table,
+        "feature": feature_of(t8_rows, "The top seed opens the cut. Single elimination from here."),
+    })
+    posts.append((t8_stamp, event, "Top 8 pairings are up", "pairings"))
+    posts.append((t8_stamp + timedelta(minutes=14), event, "The Top 8 decks", "deck"))
+
+    # Winners meet: (1v8) plays (4v5), (2v7) plays (3v6).
+    t4_pairs = [(t8_winners[0], t8_winners[3]), (t8_winners[1], t8_winners[2])]
+    t4_rows = bracket_rows(t4_pairs)
+    t4_stamp = posted_at(SWISS + 1)
+
+    rounds.append({
+        "id": "T4", "label": "Top 4", "phase": "Top cut", "state": "live",
+        "tables": len(t4_pairs), "posted": t4_stamp.strftime("%H:%M"),
+        "standingsAfter": SWISS,
+        "pairings": t4_rows, "standings": final_table,
+        "feature": feature_of(t4_rows, "Two matches away from the title. Both are being covered turn by turn."),
+    })
+    posts.append((t4_stamp, event, "Top 4 pairings are up", "pairings"))
+
+    # The Final genuinely is not known yet -- the Top 4 has not been played.
+    rounds.append({"id": "F", "label": "Final", "phase": "Top cut", "state": "upcoming",
+                   "tables": None, "posted": None, "standingsAfter": None,
+                   "pairings": [], "standings": [], "feature": None})
 
     json.dump({
         'event': event,
