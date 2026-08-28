@@ -105,6 +105,37 @@ def status_by_player(candidates: list[Source]) -> dict[str, dict]:
     return out
 
 
+def final_from_annotations(candidates: list[Source]) -> tuple[str, str] | None:
+    """(runner-up, champion) for a final nobody published pairings for.
+
+    Konami covered YCS Montreal's bracket as far as the Top 4 and stopped. The
+    final was played -- the post-cut standings say so -- but it has no pairings
+    post, so the round track ended a round early with the event's most
+    interesting match missing.
+
+    The annotations describe the whole bracket. For Genesys: four Duelists lost
+    in round 12, two in round 13, one in round 14, and one was never eliminated.
+    That is a Top 8, a Top 4, a final, and a champion.
+
+    Read only when it is unambiguous. Exactly one Duelist may have lost in the
+    last bracket round and exactly one may have gone unbeaten; anything else is a
+    table this cannot read, and inventing a final is worse than ending at the
+    Top 4. A format whose post-cut standings were never published -- Advanced
+    here -- gets nothing, which is the honest outcome rather than a guess.
+    """
+    for source in candidates:
+        rows = source.post.table.rows if source.post.table else []
+        cuts = [r for r in rows if r.get("status") == "cut" and r.get("statusRound")]
+        if not cuts:
+            continue
+        unbeaten = [r["name"] for r in rows if not r.get("status")]
+        last = max(r["statusRound"] for r in cuts)
+        losers = [r["name"] for r in cuts if r["statusRound"] == last]
+        if len(losers) == 1 and len(unbeaten) == 1:
+            return losers[0], unbeaten[0]
+    return None
+
+
 def build_format(name: str, sources: list[Source], *,
                  ongoing: bool = False) -> dict | None:
     """Assemble one format's tournament.
@@ -173,6 +204,10 @@ def build_format(name: str, sources: list[Source], *,
     # the cut rather than fail to build at all.
     final_standings: list[dict] = []
     by_player: dict[str, dict] = {}
+    # Records as they stood after each round that published a standings table.
+    # A pairing for round N wants the table from N-1: that is the record each
+    # Duelist carried into the match.
+    records_after: dict[int, dict[str, dict]] = {}
 
     def cut_records(key) -> dict[str, dict]:
         """Each Duelist's record going into this bracket round.
@@ -285,12 +320,13 @@ def build_format(name: str, sources: list[Source], *,
         pairings_post = entry.get("pairings")
         pairings = []
         if pairings_post is not None:
-            # Records are only sound where the table they come from covers every
-            # round the players have played. That is true of the cut, seeded from
-            # the completed Swiss standings, and false mid-Swiss: rounds 1-8
-            # publish standings with no points column at all, so a player's
+            # The record each Duelist brought to the table. For a bracket round
+            # that is their Swiss record plus the bracket matches they have won;
+            # for a Swiss round it is whatever the previous round's standings
+            # said, which exists for the later rounds and not the early ones --
+            # rounds 1-8 publish standings with no points column at all, so a
             # record going into round 4 is not something this can know.
-            records = cut_records(key) if is_cut else {}
+            records = cut_records(key) if is_cut else records_after.get(key[1] - 1, {})
             for row in pairings_post.post.table.rows:
                 pairings.append({
                     "table": row["table"],
@@ -300,11 +336,13 @@ def build_format(name: str, sources: list[Source], *,
                     "bDeck": row["b"].get("deck"),
                 })
 
-        # The last Swiss round's table is what the cut is seeded from, so hold on
-        # to it and to the records in it.
-        if not is_cut and standings and key == swiss_keys[-1]:
-            final_standings = standings
-            by_player = {r["name"]: r["record"] for r in standings if r.get("record")}
+        if not is_cut and standings:
+            here = {r["name"]: r["record"] for r in standings if r.get("record")}
+            records_after[key[1]] = here
+            # The last Swiss round's table is also what the cut is seeded from.
+            if key == swiss_keys[-1]:
+                final_standings = standings
+                by_player = here
 
         source = (pairings_post or standings_post)
         rounds.append({
@@ -324,6 +362,37 @@ def build_format(name: str, sources: list[Source], *,
             "standings": standings,
             "feature": feature_of(entry.get("feature")),
             "source": source.url if source else None,
+        })
+
+    # A final the coverage played but never paired. Appended rather than built in
+    # the loop above, because it comes from the standings annotations and not
+    # from a post of its own, and only when no cut round already covers it.
+    finalists = final_from_annotations(floating_standings)
+    if finalists and not any(cut_rank(k[1]) >= cut_rank("Final") for k in cut_keys):
+        runner_up, champion = finalists
+        records = cut_records(("cut", "Final"))
+        seed = by_round[cut_keys[-1]].get("pairings") if cut_keys else None
+        rounds.append({
+            "id": "Final",
+            "label": "Final",
+            "phase": "Top cut",
+            "state": "done",
+            "order": CUT_ORDER_BASE + cut_rank("Final"),
+            "tables": 1,
+            "posted": clock(seed.posted) if seed else None,
+            "standingsAfter": swiss_count,
+            "pairings": [{
+                "table": 1,
+                "a": champion, "aRec": records.get(champion), "aDeck": None,
+                "b": runner_up, "bRec": records.get(runner_up), "bDeck": None,
+            }],
+            "standings": final_standings,
+            "feature": None,
+            # The standings that say the final happened, since it has no post.
+            "source": next((c.url for c in floating_standings
+                            if any(r.get("status") == "cut"
+                                   for r in (c.post.table.rows if c.post.table else []))),
+                           None),
         })
 
     # The newest round with pairings but no results yet is the one in progress --

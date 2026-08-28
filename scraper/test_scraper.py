@@ -845,9 +845,18 @@ class TestRoundDetail(unittest.TestCase):
             pairs(2, [("Ada", "Cy"), ("Bo", "Di")], "https://x/r2/"),
             pairs(3, [("Ada", "Di"), ("Bo", "Cy")], "https://x/r3/"),
         ]
-        standings = [{"rank": i + 1, "name": n, "region": None,
-                      "points": 9 - 3 * i, "status": None, "statusRound": None}
-                     for i, n in enumerate(names)]
+        def table(rows):
+            return [{"rank": i + 1, "name": n, "region": None, "points": pts,
+                     "status": None, "statusRound": None}
+                    for i, (n, pts) in enumerate(rows)]
+
+        # Standings after round 2, so round 3's pairings have something to carry.
+        sources.append(Source("https://x/after-2/",
+                              Post("Standings After Round 2", "standings", "Advanced",
+                                   2, Table("standings", [], table(
+                                       [("Ada", 6), ("Bo", 3), ("Cy", 3), ("Di", 0)]))),
+                              "15:00"))
+        standings = table([("Ada", 9), ("Bo", 6), ("Cy", 3), ("Di", 0)])
         sources.append(Source("https://x/final/",
                               Post("Final Standings After Swiss", "standings", "Advanced",
                                    None, Table("standings", [], standings)), "18:00"))
@@ -896,12 +905,19 @@ class TestRoundDetail(unittest.TestCase):
                 checked += 1
         self.assertGreater(checked, 0, "no Duelist appears in both rounds")
 
-    def test_mid_swiss_pairings_have_no_records(self):
-        # Rounds before the final standings publish no points at this event, so a
-        # record going into round 2 is not something this can know. Blank, not
-        # guessed.
-        r2 = next(r for r in self.fmt["rounds"] if r["label"] == "R2")
-        self.assertTrue(all(row["aRec"] is None for row in r2["pairings"]))
+    def test_a_swiss_round_carries_the_previous_round_s_records(self):
+        # The standings after round 2 exist in this event, so round 3's pairings
+        # know what each Duelist brought to the table. Only rounds with no
+        # published points before them stay blank -- which at YCS Montreal was
+        # rounds 1-8, not every Swiss round, as this first assumed.
+        r3 = next(r for r in self.fmt["rounds"] if r["label"] == "R3")
+        self.assertTrue(all(row["aRec"] and row["bRec"] for row in r3["pairings"]),
+                        "records were available and not used")
+
+    def test_a_round_with_nothing_published_before_it_stays_blank(self):
+        r1 = next(r for r in self.fmt["rounds"] if r["label"] == "R1")
+        self.assertTrue(all(row["aRec"] is None for row in r1["pairings"]),
+                        "nothing is known yet, and blank is the honest answer")
 
     def test_a_feature_match_reaches_its_round(self):
         r2 = next(r for r in self.fmt["rounds"] if r["label"] == "R2")
@@ -921,6 +937,84 @@ class TestRoundDetail(unittest.TestCase):
     def test_a_round_with_no_feature_says_so(self):
         r1 = next(r for r in self.fmt["rounds"] if r["label"] == "R1")
         self.assertIsNone(r1["feature"])
+
+
+class TestDerivedFinal(unittest.TestCase):
+    """A final that was played but never paired."""
+
+    def standings(self, rows):
+        from build import Source
+        from parse import Post, Table
+        return Source("https://x/final-standings/",
+                      Post("Final Standings", "standings", "Advanced", None,
+                           Table("standings", [], rows)), "21:00")
+
+    def row(self, rank, name, status=None, when=None):
+        return {"rank": rank, "name": name, "region": None, "points": 30 - rank,
+                "status": status, "statusRound": when}
+
+    def test_one_loser_and_one_unbeaten_name_the_final(self):
+        from build import final_from_annotations
+        got = final_from_annotations([self.standings([
+            self.row(1, "Champ"),
+            self.row(2, "Runner", "cut", 14),
+            self.row(3, "Semi", "cut", 13),
+            self.row(9, "Dropped", "drop", 4),
+        ])])
+        self.assertEqual(got, ("Runner", "Champ"))
+
+    def test_two_unbeaten_is_not_a_final(self):
+        from build import final_from_annotations
+        # A table this cannot read. Inventing a final is worse than stopping at
+        # the Top 4, which is what the coverage actually published.
+        self.assertIsNone(final_from_annotations([self.standings([
+            self.row(1, "Champ"), self.row(2, "Also"),
+            self.row(3, "Runner", "cut", 14),
+        ])]))
+
+    def test_two_losing_the_last_bracket_round_is_not_a_final(self):
+        from build import final_from_annotations
+        self.assertIsNone(final_from_annotations([self.standings([
+            self.row(1, "Champ"),
+            self.row(2, "Runner", "cut", 14),
+            self.row(3, "Other", "cut", 14),
+        ])]))
+
+    def test_a_published_final_is_not_duplicated_by_a_derived_one(self):
+        from build import Source, build_event
+        from parse import Post, Table
+
+        def pairs(label, rows, url):
+            return Source(url, Post(f"{label} Pairings", "pairings", "Advanced", label,
+                                    Table("pairings", [], [
+                                        {"table": i + 1,
+                                         "a": {"name": a, "region": None, "deck": None},
+                                         "b": {"name": b, "region": None, "deck": None}}
+                                        for i, (a, b) in enumerate(rows)])), "20:00")
+
+        ev = build_event("X", [
+            pairs(1, [("Champ", "Runner")], "https://x/r1/"),
+            pairs("Top 4", [("Champ", "Semi"), ("Runner", "Other")], "https://x/t4/"),
+            pairs("Final", [("Champ", "Runner")], "https://x/final-match/"),
+            self.standings([
+                self.row(1, "Champ"), self.row(2, "Runner", "cut", 14),
+                self.row(3, "Semi", "cut", 13), self.row(4, "Other", "cut", 13),
+            ]),
+        ], updated="2026-08-16T21:00:00Z")
+        fmt = ev["formats"][0]
+        finals = [r for r in fmt["rounds"] if r["label"] == "Final"]
+        self.assertEqual(len(finals), 1, "the published final was doubled")
+        self.assertEqual(finals[0]["source"], "https://x/final-match/",
+                         "the published round wins; the derived one fills a gap")
+
+    def test_standings_with_no_cut_annotations_say_nothing(self):
+        from build import final_from_annotations
+        # Advanced published only its after-Swiss table, so its final is unknown
+        # and stays unknown rather than being guessed at.
+        self.assertIsNone(final_from_annotations([self.standings([
+            self.row(1, "Champ"), self.row(2, "Runner"),
+        ])]))
+        self.assertIsNone(final_from_annotations([]))
 
 
 class TestOngoing(unittest.TestCase):
