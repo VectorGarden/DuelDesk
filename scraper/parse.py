@@ -118,7 +118,7 @@ def page_title(doc: str) -> str:
 
 
 def detect_format(text: str) -> str | None:
-    low = text.lower()
+    low = _words(text)
     if "genesys" in low:
         return "Genesys"
     if "advanced" in low:
@@ -133,7 +133,7 @@ def detect_round(text: str, kind: str | None = None):
     end of Swiss. Matching a bare "final" there would file the whole standings
     table under the last cut round.
     """
-    low = text.lower()
+    low = _words(text)
     if m := re.search(r"\btop\s*(\d+)", low):
         return f"Top {m.group(1)}"
     if m := re.search(r"\bround\s*(\d+)", low):
@@ -145,8 +145,19 @@ def detect_round(text: str, kind: str | None = None):
     return None
 
 
+def _words(text: str) -> str:
+    """Lower-case, with separators flattened to spaces.
+
+    Classification runs on slugs as well as titles -- knowing a post is
+    pairings before fetching it is what lets a limited budget go to the posts
+    that carry results. A slug writes "deck-lists" and "feature-match", so a
+    pattern expecting spaces silently files both under news.
+    """
+    return re.sub(r"[-_/]+", " ", text.lower())
+
+
 def detect_kind(text: str) -> str:
-    low = text.lower()
+    low = _words(text)
     if re.search(r"\bdeck ?lists?\b|\bdeck profiles?\b|\btop \d+ deck", low):
         return "deck"
     if "pairings" in low:

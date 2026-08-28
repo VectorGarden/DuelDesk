@@ -92,10 +92,14 @@ def check_rounds(label, rounds, swiss_count):
                 if played is None:
                     problems.append(f"{rl}: unusable record {rec!r}")
                     continue
-                if played != after:
+                # Fewer matches than rounds is legitimate: a bye awards points
+                # without a pairing, and entrants join late or sit one out. What
+                # cannot happen is a record accounting for more matches than the
+                # tournament has played by that point.
+                if played > after:
                     problems.append(
                         f"{rl}: {st.get('name')} has {fmt_record(st.get('record'))} "
-                        f"but {after} rounds were played")
+                        f"({played} matches) but only {after} rounds have been played")
 
     swiss = [r for r in rounds if r.get("phase") == "Swiss"]
     cut = [r for r in rounds if r.get("phase") == "Top cut"]
