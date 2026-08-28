@@ -1,14 +1,25 @@
 name: Scrape coverage
 
-# Hourly, because coverage lands in batches during an event and not at all
-# between them. Almost every run has nothing to do and should cost one request.
+# Every ten minutes, and almost every one of those stops immediately.
+#
+# Coverage lands in bursts: during a YCS a round finishes roughly every fifty
+# minutes and brings pairings, standings and features with it, while between
+# events nothing is posted for weeks. Hourly was far too slow for the first and
+# more often than needed for the second.
+#
+# GitHub cannot compute a cron at runtime, so the schedule is fixed at the fast
+# rate and scraper/cadence.py drops the ticks that are not wanted. That decision
+# reads the clock and the previous run's state and makes no network request, so
+# a dropped tick costs a few seconds of runner time and nothing of the blog's.
+# Over a quiet day it is one check an hour, as before; over a day of coverage it
+# is every ten minutes.
 #
 # This does NOT publish to the site. It produces an artifact and reports what it
 # found, so the scraper can be judged against live coverage before anything it
 # builds is served to anyone.
 on:
   schedule:
-    - cron: '23 * * * *'
+    - cron: '3,13,23,33,43,53 * * * *'
   workflow_dispatch:
     inputs:
       force:
@@ -30,34 +41,67 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # The high-water mark from the previous run. Cached rather than committed:
-      # a scraper should not need write access to the repository.
+      # The high-water mark and the timings from the previous run. Cached rather
+      # than committed: a scraper should not need write access to the repository.
+      # Restore and save are separate so a dropped tick, which changes nothing,
+      # does not write a cache entry -- at six ticks an hour that would be a few
+      # hundred entries a day evicting everything else in the repository's cache.
       - id: cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: .scrape-state
-          key: scrape-state-${{ github.run_id }}
+          key: scrape-state-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: scrape-state-
 
-      # Two small requests. Stops here on almost every run.
-      - id: gate
+      # Clock and cached state only. No network, so a dropped tick costs the blog
+      # nothing. Skipped for a manual run, which is a request to go and look now.
+      - id: cadence
         run: |
           mkdir -p .scrape-state
           python3 - <<'PY'
+          import sys, json, pathlib, os
+          from datetime import datetime, timezone
+          sys.path.insert(0, 'scraper')
+          from cadence import decide
+          state_path = pathlib.Path('.scrape-state/state.json')
+          state = json.loads(state_path.read_text()) if state_path.exists() else {}
+          go, rate = ((decide(state, datetime.now(timezone.utc)))
+                      if os.environ['EVENT'] == 'schedule' else (True, 'manual'))
+          line = (f"Cadence **{rate}** — " + ("checking for new coverage."
+                  if go else f"last check {state.get('last_check', 'never')}, "
+                             "skipping this tick."))
+          print(line)                                   # the log
+          for name, text in (('GITHUB_STEP_SUMMARY', line + "\n"),
+                             ('GITHUB_OUTPUT', f"check={'yes' if go else 'no'}\nrate={rate}\n")):
+              with open(os.environ[name], 'a') as fh:
+                  fh.write(text)
+          PY
+        env:
+          EVENT: ${{ github.event_name }}
+
+      # Two small requests. Stops here on most of the ticks that get this far.
+      - id: gate
+        if: steps.cadence.outputs.check == 'yes'
+        run: |
+          python3 - <<'PY'
           import sys, json, pathlib
+          from datetime import datetime, timezone
           sys.path.insert(0, 'scraper')
           from fetch import Fetcher, check_for_updates
-          state = pathlib.Path('.scrape-state/state.json')
+          from cadence import record
+          state_path = pathlib.Path('.scrape-state/state.json')
+          before = json.loads(state_path.read_text()) if state_path.exists() else {}
           f = Fetcher(cache_dir='.scrape-state/cache')
-          changed, high = check_for_updates(f, state)
+          changed, high = check_for_updates(f, state_path)
           forced = "${{ inputs.force }}" == "true"
           print(f"high-water mark: {high}  changed: {changed}  forced: {forced}")
           pathlib.Path('gate.txt').write_text('yes' if (changed or forced) else 'no')
-          state.write_text(json.dumps({"high_water": high}, indent=2) + "\n")
+          state_path.write_text(
+              json.dumps(record(before, datetime.now(timezone.utc), high), indent=2) + "\n")
           PY
           echo "run=$(cat gate.txt)" >> "$GITHUB_OUTPUT"
 
-      - if: steps.gate.outputs.run == 'no'
+      - if: steps.cadence.outputs.check == 'yes' && steps.gate.outputs.run == 'no'
         run: echo "Nothing new since the last run. Stopping." >> "$GITHUB_STEP_SUMMARY"
 
       - if: steps.gate.outputs.run == 'yes'
@@ -76,3 +120,12 @@ jobs:
           name: scraped-rounds
           path: scraped-rounds.json
           retention-days: 14
+
+      # Only when the check actually ran, so dropped ticks leave no trace. The
+      # key is unique per attempt because a cache entry cannot be overwritten;
+      # the restore-key prefix picks the newest of them on the next run.
+      - if: always() && steps.cadence.outputs.check == 'yes'
+        uses: actions/cache/save@v4
+        with:
+          path: .scrape-state
+          key: scrape-state-${{ github.run_id }}-${{ github.run_attempt }}
