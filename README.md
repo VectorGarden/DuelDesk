@@ -101,8 +101,16 @@ did win eleven matches in there.
 python3 scripts/generate-sample-data.py
 ```
 
+The simulation runs past Swiss into the **top cut**: the top eight of the final standings are
+seeded 1v8, 2v7, 3v6, 4v5, the Top 8 is played, and the Top 4 is paired from its winners. The
+Final stays empty because its competitors genuinely are not known until the Top 4 finishes — so
+the "not started" state is still shown, honestly, rather than because the data ran out.
+
+Cut rounds display Swiss records and the final Swiss standings, which is what real coverage does.
+
 It is deterministic: a seeded PRNG plus a `--now` anchor means the same inputs reproduce the same
-files byte for byte. CI checks the result stays coherent.
+files byte for byte. CI checks the result stays coherent, including that each cut round's field
+comes from the previous round's competitors and halves each time.
 
 The published feed marks itself as sample data at every level a reader actually sees — channel
 title, channel description, each item title (`[Sample] …`) and each item description — because

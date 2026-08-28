@@ -1030,10 +1030,13 @@ function selectRound(id, focus){
   syncSegs();
 
   roundH.textContent   = /^\d+$/.test(id) ? 'Round ' + id : r.label;
+  /* The cut is not Swiss and is measured in matches, not tables, so the phase
+     comes from the data rather than being assumed. */
+  const unit = r.tables === 1 ? 'match' : r.phase === 'Top cut' ? 'matches' : 'tables';
   roundSub.textContent =
-      r.state === 'live' ? `Swiss · ${r.tables} tables · pairings posted ${r.posted}`
-    : r.state === 'done' ? `Complete · results final · posted ${r.posted}`
-    :                      'Not started · pairings appear here when posted';
+      r.state === 'live' ? `${r.phase} · ${r.tables} ${unit} · pairings posted ${r.posted}`
+    : r.state === 'done' ? `${r.phase} · complete · results final · posted ${r.posted}`
+    :                      'Not started · pairings appear here once the previous round finishes';
   renderRound();
 
   const tab = document.getElementById('tab-' + id);
@@ -1078,10 +1081,14 @@ const wrapTable = (label, inner) =>
 function renderPairings(r){
   const rows = (r.pairings ?? []).filter(p => hit(p.a, p.b));
   if (!rows.length) return noMatch('tables');
+  const caption = r.phase === 'Top cut'
+    ? `${esc(r.label)} bracket, seeded from the final Swiss standings.`
+    : `Top tables for ${esc(r.label)}.`;
   return wrapTable(`Pairings for ${r.label}`, `<table>
-    <caption>Top tables for ${esc(r.label)}. Search by Duelist to filter this list.</caption>
+    <caption>${caption} Search by Duelist to filter this list.</caption>
     <thead><tr>
-      <th scope="col" class="num">Table</th><th scope="col">Duelist</th><th scope="col">Record</th>
+      <th scope="col" class="num">${r.phase === 'Top cut' ? 'Match' : 'Table'}</th>
+      <th scope="col">Duelist</th><th scope="col">Record</th>
       <th scope="col">Duelist</th><th scope="col">Record</th>
     </tr></thead><tbody>
     ${rows.map(p => `<tr>
@@ -1094,7 +1101,9 @@ function renderStandings(r){
   const rows = (r.standings ?? []).filter(s => hit(s.name, s.deck));
   if (!rows.length) return noMatch('Duelists');
   return wrapTable(`Standings after round ${r.standingsAfter}`, `<table>
-    <caption>Standings after round ${esc(r.standingsAfter)}, top eight shown.</caption>
+    <caption>${r.phase === 'Top cut'
+      ? `Final Swiss standings after round ${esc(r.standingsAfter)}, top eight shown.`
+      : `Standings after round ${esc(r.standingsAfter)}, top eight shown.`}</caption>
     <thead><tr>
       <th scope="col" class="num">Place</th><th scope="col">Duelist</th>
       <th scope="col">Record</th><th scope="col">Deck</th><th scope="col">Opp. win %</th>

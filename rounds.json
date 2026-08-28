@@ -4,14 +4,15 @@
   "duelists": 1248,
   "swissRounds": 12,
   "coverageBy": "the Duel Desk team",
-  "updated": "2026-08-28T04:51:16.071299Z",
+  "updated": "2026-08-28T04:38:19.220691Z",
   "rounds": [
     {
       "id": "1",
       "label": "R1",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "21:53",
+      "posted": "21:02",
       "standingsAfter": 1,
       "pairings": [
         {
@@ -146,9 +147,10 @@
     {
       "id": "2",
       "label": "R2",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "22:31",
+      "posted": "21:40",
       "standingsAfter": 2,
       "pairings": [
         {
@@ -283,9 +285,10 @@
     {
       "id": "3",
       "label": "R3",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "23:09",
+      "posted": "22:18",
       "standingsAfter": 3,
       "pairings": [
         {
@@ -420,9 +423,10 @@
     {
       "id": "4",
       "label": "R4",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "23:47",
+      "posted": "22:56",
       "standingsAfter": 4,
       "pairings": [
         {
@@ -557,9 +561,10 @@
     {
       "id": "5",
       "label": "R5",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "00:25",
+      "posted": "23:34",
       "standingsAfter": 5,
       "pairings": [
         {
@@ -694,9 +699,10 @@
     {
       "id": "6",
       "label": "R6",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "01:03",
+      "posted": "00:12",
       "standingsAfter": 6,
       "pairings": [
         {
@@ -831,9 +837,10 @@
     {
       "id": "7",
       "label": "R7",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "01:41",
+      "posted": "00:50",
       "standingsAfter": 7,
       "pairings": [
         {
@@ -968,9 +975,10 @@
     {
       "id": "8",
       "label": "R8",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "02:19",
+      "posted": "01:28",
       "standingsAfter": 8,
       "pairings": [
         {
@@ -1105,9 +1113,10 @@
     {
       "id": "9",
       "label": "R9",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "02:57",
+      "posted": "02:06",
       "standingsAfter": 9,
       "pairings": [
         {
@@ -1242,9 +1251,10 @@
     {
       "id": "10",
       "label": "R10",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "03:35",
+      "posted": "02:44",
       "standingsAfter": 10,
       "pairings": [
         {
@@ -1379,9 +1389,10 @@
     {
       "id": "11",
       "label": "R11",
+      "phase": "Swiss",
       "state": "done",
       "tables": 624,
-      "posted": "04:13",
+      "posted": "03:22",
       "standingsAfter": 11,
       "pairings": [
         {
@@ -1516,10 +1527,11 @@
     {
       "id": "12",
       "label": "R12",
-      "state": "live",
+      "phase": "Swiss",
+      "state": "done",
       "tables": 624,
-      "posted": "04:51",
-      "standingsAfter": 11,
+      "posted": "04:00",
+      "standingsAfter": 12,
       "pairings": [
         {
           "table": 1,
@@ -1581,59 +1593,59 @@
       "standings": [
         {
           "pos": 1,
-          "name": "P. Rossi",
-          "record": "9–2–0",
-          "deck": "Fiendsmith",
-          "pct": "60.3"
+          "name": "B. Abadi",
+          "record": "9–3–0",
+          "deck": "Maliss",
+          "pct": "63.9"
         },
         {
           "pos": 2,
-          "name": "R. Okonkwo",
-          "record": "9–2–0",
-          "deck": "Maliss",
-          "pct": "57.0"
+          "name": "V. Osei",
+          "record": "9–3–0",
+          "deck": "Snake-Eye",
+          "pct": "62.5"
         },
         {
           "pos": 3,
-          "name": "B. Abadi",
-          "record": "8–3–0",
-          "deck": "Maliss",
-          "pct": "64.5"
+          "name": "P. Rossi",
+          "record": "9–3–0",
+          "deck": "Fiendsmith",
+          "pct": "61.1"
         },
         {
           "pos": 4,
-          "name": "V. Osei",
-          "record": "8–3–0",
-          "deck": "Snake-Eye",
-          "pct": "63.6"
+          "name": "R. Okonkwo",
+          "record": "9–3–0",
+          "deck": "Maliss",
+          "pct": "61.1"
         },
         {
           "pos": 5,
           "name": "E. Rasmussen",
-          "record": "8–3–0",
+          "record": "9–3–0",
           "deck": "Voiceless Voice",
-          "pct": "57.9"
+          "pct": "59.7"
         },
         {
           "pos": 6,
           "name": "E. Moreau",
-          "record": "8–3–0",
+          "record": "9–3–0",
           "deck": "Mitsurugi",
-          "pct": "57.0"
+          "pct": "58.3"
         },
         {
           "pos": 7,
-          "name": "H. Bergstrom",
-          "record": "8–3–0",
-          "deck": "Yubel",
-          "pct": "52.9"
+          "name": "I. Sundqvist",
+          "record": "8–4–0",
+          "deck": "Snake-Eye",
+          "pct": "63.9"
         },
         {
           "pos": 8,
-          "name": "I. Sundqvist",
-          "record": "7–4–0",
-          "deck": "Snake-Eye",
-          "pct": "64.5"
+          "name": "R. Aguilar",
+          "record": "8–4–0",
+          "deck": "Yubel",
+          "pct": "58.3"
         }
       ],
       "feature": {
@@ -1647,34 +1659,219 @@
           "deck": "Mitsurugi",
           "record": "8–3–0"
         },
-        "note": "Table one for round 12. Both Duelists are locked for the top cut, so this one decides seeding."
+        "note": "Table one for round 12. Written coverage of each turn follows as the match plays out."
       }
     },
     {
       "id": "T8",
       "label": "Top 8",
-      "state": "upcoming",
-      "tables": null,
-      "posted": null,
-      "standingsAfter": null,
-      "pairings": [],
-      "standings": [],
-      "feature": null
+      "phase": "Top cut",
+      "state": "done",
+      "tables": 4,
+      "posted": "04:38",
+      "standingsAfter": 12,
+      "pairings": [
+        {
+          "table": 1,
+          "a": "B. Abadi",
+          "aRec": "9–3–0",
+          "b": "R. Aguilar",
+          "bRec": "8–4–0"
+        },
+        {
+          "table": 2,
+          "a": "V. Osei",
+          "aRec": "9–3–0",
+          "b": "I. Sundqvist",
+          "bRec": "8–4–0"
+        },
+        {
+          "table": 3,
+          "a": "P. Rossi",
+          "aRec": "9–3–0",
+          "b": "E. Moreau",
+          "bRec": "9–3–0"
+        },
+        {
+          "table": 4,
+          "a": "R. Okonkwo",
+          "aRec": "9–3–0",
+          "b": "E. Rasmussen",
+          "bRec": "9–3–0"
+        }
+      ],
+      "standings": [
+        {
+          "pos": 1,
+          "name": "B. Abadi",
+          "record": "9–3–0",
+          "deck": "Maliss",
+          "pct": "63.9"
+        },
+        {
+          "pos": 2,
+          "name": "V. Osei",
+          "record": "9–3–0",
+          "deck": "Snake-Eye",
+          "pct": "62.5"
+        },
+        {
+          "pos": 3,
+          "name": "P. Rossi",
+          "record": "9–3–0",
+          "deck": "Fiendsmith",
+          "pct": "61.1"
+        },
+        {
+          "pos": 4,
+          "name": "R. Okonkwo",
+          "record": "9–3–0",
+          "deck": "Maliss",
+          "pct": "61.1"
+        },
+        {
+          "pos": 5,
+          "name": "E. Rasmussen",
+          "record": "9–3–0",
+          "deck": "Voiceless Voice",
+          "pct": "59.7"
+        },
+        {
+          "pos": 6,
+          "name": "E. Moreau",
+          "record": "9–3–0",
+          "deck": "Mitsurugi",
+          "pct": "58.3"
+        },
+        {
+          "pos": 7,
+          "name": "I. Sundqvist",
+          "record": "8–4–0",
+          "deck": "Snake-Eye",
+          "pct": "63.9"
+        },
+        {
+          "pos": 8,
+          "name": "R. Aguilar",
+          "record": "8–4–0",
+          "deck": "Yubel",
+          "pct": "58.3"
+        }
+      ],
+      "feature": {
+        "a": {
+          "name": "B. Abadi",
+          "deck": "Maliss",
+          "record": "9–3–0"
+        },
+        "b": {
+          "name": "R. Aguilar",
+          "deck": "Yubel",
+          "record": "8–4–0"
+        },
+        "note": "The top seed opens the cut. Single elimination from here."
+      }
     },
     {
       "id": "T4",
       "label": "Top 4",
-      "state": "upcoming",
-      "tables": null,
-      "posted": null,
-      "standingsAfter": null,
-      "pairings": [],
-      "standings": [],
-      "feature": null
+      "phase": "Top cut",
+      "state": "live",
+      "tables": 2,
+      "posted": "05:16",
+      "standingsAfter": 12,
+      "pairings": [
+        {
+          "table": 1,
+          "a": "B. Abadi",
+          "aRec": "9–3–0",
+          "b": "E. Rasmussen",
+          "bRec": "9–3–0"
+        },
+        {
+          "table": 2,
+          "a": "I. Sundqvist",
+          "aRec": "8–4–0",
+          "b": "E. Moreau",
+          "bRec": "9–3–0"
+        }
+      ],
+      "standings": [
+        {
+          "pos": 1,
+          "name": "B. Abadi",
+          "record": "9–3–0",
+          "deck": "Maliss",
+          "pct": "63.9"
+        },
+        {
+          "pos": 2,
+          "name": "V. Osei",
+          "record": "9–3–0",
+          "deck": "Snake-Eye",
+          "pct": "62.5"
+        },
+        {
+          "pos": 3,
+          "name": "P. Rossi",
+          "record": "9–3–0",
+          "deck": "Fiendsmith",
+          "pct": "61.1"
+        },
+        {
+          "pos": 4,
+          "name": "R. Okonkwo",
+          "record": "9–3–0",
+          "deck": "Maliss",
+          "pct": "61.1"
+        },
+        {
+          "pos": 5,
+          "name": "E. Rasmussen",
+          "record": "9–3–0",
+          "deck": "Voiceless Voice",
+          "pct": "59.7"
+        },
+        {
+          "pos": 6,
+          "name": "E. Moreau",
+          "record": "9–3–0",
+          "deck": "Mitsurugi",
+          "pct": "58.3"
+        },
+        {
+          "pos": 7,
+          "name": "I. Sundqvist",
+          "record": "8–4–0",
+          "deck": "Snake-Eye",
+          "pct": "63.9"
+        },
+        {
+          "pos": 8,
+          "name": "R. Aguilar",
+          "record": "8–4–0",
+          "deck": "Yubel",
+          "pct": "58.3"
+        }
+      ],
+      "feature": {
+        "a": {
+          "name": "B. Abadi",
+          "deck": "Maliss",
+          "record": "9–3–0"
+        },
+        "b": {
+          "name": "E. Rasmussen",
+          "deck": "Voiceless Voice",
+          "record": "9–3–0"
+        },
+        "note": "Two matches away from the title. Both are being covered turn by turn."
+      }
     },
     {
       "id": "F",
       "label": "Final",
+      "phase": "Top cut",
       "state": "upcoming",
       "tables": null,
       "posted": null,

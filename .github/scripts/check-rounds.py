@@ -85,6 +85,42 @@ def main(path="rounds.json"):
                         f"{label}: {s.get('name')} has {rec} but {after} rounds were played"
                     )
 
+    # --- top cut: a bracket that looks plausible but is wrong would pass every
+    # check above, so verify its structure explicitly. ---
+    swiss_count = data.get("swissRounds")
+    cut = [r for r in rounds if r.get("phase") == "Top cut"]
+    swiss = [r for r in rounds if r.get("phase") == "Swiss"]
+
+    for r in rounds:
+        if r.get("phase") not in ("Swiss", "Top cut"):
+            problems.append(f"{r.get('label', r.get('id'))}: phase is {r.get('phase')!r}, "
+                            "expected 'Swiss' or 'Top cut'")
+
+    if isinstance(swiss_count, int) and len(swiss) != swiss_count:
+        problems.append(f"{len(swiss)} Swiss rounds present but swissRounds says {swiss_count}")
+
+    played_cut = [r for r in cut if r.get("state") != "upcoming"]
+    for r in played_cut:
+        # Swiss is over in the cut, so standings must be the final ones.
+        if isinstance(swiss_count, int) and r.get("standingsAfter") != swiss_count:
+            problems.append(f"{r['label']}: standingsAfter is {r.get('standingsAfter')}, "
+                            f"expected the final Swiss standings ({swiss_count})")
+        # A bracket halves each round: 4 matches, then 2, then 1.
+        n = len(r.get("pairings") or [])
+        if n == 0 or (n & (n - 1)) != 0:
+            problems.append(f"{r['label']}: {n} matches is not a power of two")
+
+    # Each cut round's field must come from the previous round's competitors.
+    for earlier, later in zip(played_cut, played_cut[1:]):
+        before = {n for p in earlier["pairings"] for n in (p.get("a"), p.get("b"))}
+        after = {n for p in later["pairings"] for n in (p.get("a"), p.get("b"))}
+        if not after <= before:
+            stray = sorted(after - before)
+            problems.append(f"{later['label']}: {stray} did not play in {earlier['label']}")
+        if len(after) * 2 != len(before):
+            problems.append(f"{later['label']}: {len(after)} Duelists from "
+                            f"{len(before)} in {earlier['label']}, expected half")
+
     if problems:
         for p_ in problems[:25]:
             print(f"  FAIL  {p_}")
@@ -93,7 +129,8 @@ def main(path="rounds.json"):
         return 1
 
     playable = [r for r in rounds if r.get("state") != "upcoming"]
-    print(f"  ok    {path}: {len(rounds)} rounds ({len(playable)} with data), records coherent")
+    print(f"  ok    {path}: {len(rounds)} rounds ({len(playable)} with data), "
+          f"{len(swiss)} Swiss + {len(cut)} cut, records and bracket coherent")
     return 0
 
 
