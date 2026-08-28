@@ -60,20 +60,12 @@ jobs:
       - name: Check inline scripts parse
         run: node .github/scripts/check-inline-js.mjs index.html
 
+      # Python rather than xmllint: libxml2-utils is no longer present on the
+      # ubuntu-latest runner image, and this checks feed structure, not just
+      # well-formedness.
       - name: Validate feed.xml
-        run: |
-          xmllint --noout feed.xml
-          echo "feed.xml is well-formed"
+        run: python3 .github/scripts/check-feed.py feed.xml
 
-      # Everything the page references locally must actually be in the repo.
+      # Every local file the page references must actually be in the repo.
       - name: Check local references resolve
-        run: |
-          status=0
-          for f in feed.xml og.png CNAME index.html; do
-            if [ -f "$f" ]; then
-              echo "  ok      $f"
-            else
-              echo "  MISSING $f"; status=1
-            fi
-          done
-          exit $status
+        run: python3 .github/scripts/check-references.py index.html
