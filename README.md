@@ -56,8 +56,16 @@ Then visit http://localhost:8000.
 
 ## Data
 
-The page currently renders **sample data** defined inline in `index.html`, and publishes the same
-data as a valid RSS 2.0 feed at [`feed.xml`](feed.xml).
+The coverage list is **loaded at runtime from this site's own [`feed.xml`](feed.xml)** through
+`groupFeed()`. The feed is the single source — the posts are no longer duplicated inline.
+
+The data is still **sample data**; what changed is that the *mechanism* is real. The round panel
+(pairings, standings, feature match) remains hardcoded, because the feed carries no round detail.
+
+> **The sample feed ages.** Its timestamps are fixed at generation time, and the live state is
+> derived — an event is only "live" when the feed's own build time is recent. Once the committed
+> feed is more than six hours old, the Live badge correctly stops appearing. Regenerate the feed
+> to demonstrate that state again.
 
 `groupFeed()` shows how a real feed would be wired up. One tournament arrives as ~47 separate
 posts with titles like *"Pairings for Round 11"*; it turns that flat stream back into events
