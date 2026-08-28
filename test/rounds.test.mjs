@@ -344,6 +344,65 @@ test('switching format replaces the whole round set', async (t) => {
   assert.equal(page.get('ROUNDS.length'), before.rounds, 'switching back restores it');
 });
 
+test('the rail marks which edges have more track behind them', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+
+  // (scrollLeft, scrollWidth, clientWidth) -> which edges are cut.
+  const at = (l, sw, cw) => page.run(`overflowState(${l}, ${sw}, ${cw})`);
+
+  assert.equal(at(0, 300, 300), 'none', 'everything fits, so nothing is cut');
+  assert.equal(at(0, 900, 300), 'end', 'at the start there is only more to the right');
+  assert.equal(at(600, 900, 300), 'start', 'at the end there is only more to the left');
+  assert.equal(at(300, 900, 300), 'both', 'in the middle both edges are cut');
+});
+
+test('a fade is not drawn for a fractional scroll offset', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  // Zoom and hidpi leave sub-pixel scroll positions on a rail that has not
+  // moved; fading there would put a permanent smudge on a full track.
+  assert.equal(page.run('overflowState(0.4, 300.3, 300)'), 'none');
+  assert.equal(page.run('overflowState(0, 300.3, 300)'), 'none',
+    'a rail a third of a pixel wider than its box has not overflowed');
+  assert.equal(page.run('overflowState(0, 0, 0)'), 'none',
+    'and a rail with no layout yet is not scrolled either');
+});
+
+test('the rail states its overflow so the fade can follow it', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const rail = page.$('#rail');
+  assert.ok(rail.dataset.overflow, 'set on build, not left undefined until first scroll');
+
+  // Nothing has layout under jsdom, so the honest answer is "nothing is cut".
+  assert.equal(rail.dataset.overflow, 'none');
+  page.run("selectRound(ROUNDS[0].id)");
+  assert.equal(rail.dataset.overflow, 'none', 'and it is kept in step when a round is picked');
+});
+
+/* The next two encode a measurement taken in a real browser, because the thing
+   they protect only exists once there is layout: with the rail 375px wide, the
+   selected chip came to rest 36px clear of the trailing edge -- exactly the fade
+   -- and 4px clear once scroll snapping was reintroduced, i.e. inside it. */
+test('the scroll padding is tied to the fade, not a copy of its value', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const declared = page.window.getComputedStyle(page.$('#rail')).scrollPaddingInline;
+  assert.match(declared, /var\(--fade\)/,
+    'a hardcoded length here goes stale the moment --fade changes, and the ' +
+    'selected round quietly starts resting under the fade again');
+});
+
+test('the rail does not scroll-snap', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const snap = page.window.getComputedStyle(page.$('#rail')).scrollSnapType;
+  assert.ok(!snap || snap === 'none',
+    'snapping overrides the scroll padding: scroll-snap-align:start pulls a ' +
+    'chip to the padded start edge, pushing the selected one into the far fade');
+});
+
 test('the hero meta follows the selected format', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
