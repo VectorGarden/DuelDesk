@@ -211,20 +211,41 @@ a{color:inherit}
 .picker[hidden]{display:none}
 .picker label{font:600 .7rem/1 var(--body); letter-spacing:.14em;
   text-transform:uppercase; color:var(--text-3)}
-.picker select{
+.picker__box{position:relative}
+.picker input{
   font:500 .82rem var(--body); color:var(--text); background:var(--surface-2);
   border:1px solid var(--line); border-radius:var(--r-md);
-  padding:.4rem 1.9rem .4rem .7rem; min-height:40px; max-width:min(22rem,60vw);
-  cursor:pointer; appearance:none;
-  /* The arrow is drawn rather than linked: a CSS strict enough to forbid remote
-     images is the same one that keeps this page self-contained. */
-  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),
-                   linear-gradient(135deg,currentColor 50%,transparent 50%);
-  background-size:5px 5px,5px 5px;
-  background-position:calc(100% - 1.05rem) 55%,calc(100% - .7rem) 55%;
-  background-repeat:no-repeat;
+  padding:.4rem .7rem; min-height:40px; width:min(22rem,60vw);
 }
-.picker select:focus-visible{outline:2px solid var(--gold); outline-offset:2px}
+.picker input::placeholder{color:var(--text-3)}
+.picker input:focus-visible{outline:2px solid var(--gold); outline-offset:2px}
+/* Over the page rather than in it: opening the list must not move the heading
+   it sits above. */
+.picker ul{
+  position:absolute; z-index:20; top:calc(100% + .3rem); right:0;
+  width:min(26rem,80vw); max-height:min(60vh,22rem); overflow-y:auto;
+  margin:0; padding:.25rem; list-style:none;
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--r-md); box-shadow:0 10px 30px rgb(0 0 0 / .35);
+}
+.picker ul[hidden]{display:none}
+.picker li[role="option"]{
+  display:flex; gap:.6rem; align-items:baseline; justify-content:space-between;
+  padding:.45rem .6rem; border-radius:calc(var(--r-md) - 2px); cursor:pointer;
+}
+.picker ul ul{margin:0; padding:0; list-style:none}
+/* Sticky so the year stays legible while a long archive scrolls under it. */
+.picker__year{
+  position:sticky; top:0; display:block; z-index:1;
+  font:600 .66rem/1 var(--body); letter-spacing:.14em; color:var(--text-3);
+  background:var(--surface); padding:.5rem .6rem .3rem;
+}
+.picker li[aria-selected="true"]{background:var(--text); color:var(--bg)}
+.picker li.here{background:var(--surface-2)}
+.picker li[aria-selected="true"].here{background:var(--text)}
+.picker li b{font-weight:600}
+.picker li span{font:500 .75rem var(--mono); opacity:.7; flex:none}
+.picker__none{padding:.6rem; color:var(--text-3); font-size:.82rem}
 /* Once it wraps it is the only thing on its row, and a lone control pinned to
    the right edge reads as though something is missing beside it. */
 @media (max-width:560px){.picker{margin-left:0}}
@@ -558,9 +579,18 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
            select rather than buttons: the archive grows an event at a time and
            a row of them would not stay a row. Hidden while there is only one,
            the same rule the format buttons follow. -->
+      <!-- A combobox rather than a select, because there are fifty-two events
+           and a dozen of them are a YCS in a city whose name you would have to
+           scroll to find. Typing filters; the list is what a select's options
+           were. -->
       <div class="picker" id="event-pick" hidden>
-        <label for="event-select">Event</label>
-        <select id="event-select"></select>
+        <label for="event-search">Event</label>
+        <div class="picker__box">
+          <input id="event-search" type="text" role="combobox" autocomplete="off"
+                 aria-expanded="false" aria-controls="event-list"
+                 aria-autocomplete="list" placeholder="Search events">
+          <ul id="event-list" role="listbox" aria-label="Events" hidden></ul>
+        </div>
       </div>
     </div>
 
@@ -1058,14 +1088,108 @@ function eventLabel(e){
   return [e.event, when].filter(Boolean).join(' · ') + (e.ongoing ? ' · live' : '');
 }
 
+/* ---- the event combobox -------------------------------------------------
+   Fifty-two events, a dozen of them a YCS in a city you would have to scroll a
+   select to find, and several sharing a name across years. So it is a search:
+   type, and the list narrows.
+
+   What a query matches is everything that identifies an event to a reader --
+   its name, where it was held, its year -- plus its archive slug, which is how
+   "north america" finds an event whose coverage only ever called it NAWCQ. */
+let pickerOpen = false;
+let pickerQuery = '';
+let pickerAt = 0;                 // which option the keyboard is on
+
+const pickerInput = () => document.getElementById('event-search');
+const pickerList  = () => document.getElementById('event-list');
+
+function eventMatches(e){
+  if (!pickerQuery) return true;
+  const hay = [e.event, e.location, e.slug, (e.updated || '').slice(0, 4)]
+    .filter(Boolean).join(' ').toLowerCase();
+  /* Every word, in any order: "wcq 2018" and "2018 wcq" are the same request,
+     and neither is a substring of "North America WCQ 2018". */
+  return pickerQuery.split(/\s+/).filter(Boolean).every(w => hay.includes(w));
+}
+
+const pickerOptions = () => CATALOG.filter(eventMatches);
+
+/* Runs of one year, in the order the catalog already has -- which is newest
+   first, so the years come out in order without sorting anything again. The
+   index travels with each event because the keyboard counts options across the
+   whole list, not within a year. */
+function groupByYear(events){
+  const out = [];
+  events.forEach((event, i) => {
+    /* Through eventDate, not the first four characters of the stamp: that reads
+       "sometime in 2019" as a year called "some". Same reason the option's own
+       date goes through it -- a stamp the archive could not have written is no
+       date rather than a confident wrong one. */
+    const on = eventDate(event.updated);
+    const year = on ? String(on.getFullYear()) : 'Undated';
+    if (out.at(-1)?.[0] !== year) out.push([year, []]);
+    out.at(-1)[1].push({event, i});
+  });
+  return out;
+}
+
 function renderEventPicker(){
   const wrap = document.getElementById('event-pick');
-  const select = document.getElementById('event-select');
   wrap.hidden = !hasEventChoice();
-  if (wrap.hidden){ select.innerHTML = ''; return; }
-  select.innerHTML = CATALOG.map(e =>
-    `<option value="${esc(e.slug)}"${e.slug === activeEvent ? ' selected' : ''}>${
-       esc(eventLabel(e))}</option>`).join('');
+  if (wrap.hidden) return;
+
+  const input = pickerInput();
+  const list = pickerList();
+  /* Closed, the box says which event is on screen; open, it holds the query.
+     Overwriting it while the reader is typing would undo their keystroke. */
+  if (!pickerOpen) input.value = entryFor(activeEvent)?.event ?? '';
+
+  const options = pickerOptions();
+  pickerAt = Math.min(pickerAt, Math.max(options.length - 1, 0));
+  list.hidden = !pickerOpen;
+  input.setAttribute('aria-expanded', String(pickerOpen));
+  if (!pickerOpen){ input.removeAttribute('aria-activedescendant'); return; }
+
+  list.innerHTML = options.length ? groupByYear(options).map(([year, events]) =>
+    /* A real group rather than a heading between rows, so the year is part of
+       what a screen reader announces about the option and not decoration
+       sitting near it. The inner list is presentational: without that the
+       options would hang off a second listbox rather than off the group. */
+    `<li role="group" aria-label="${esc(year)}">
+      <span class="picker__year" aria-hidden="true">${esc(year)}</span>
+      <ul role="presentation">${events.map(({event: e, i}) => {
+        const when = eventDate(e.updated);
+        const month = when ? when.toLocaleDateString('en-GB', {month: 'short'}) : '';
+        return `<li role="option" id="ev-opt-${i}" data-slug="${esc(e.slug)}"
+            aria-selected="${String(i === pickerAt)}"
+            class="${e.slug === activeEvent ? 'here' : ''}">
+          <b>${esc(e.event)}</b>
+          <span>${esc(e.location ? e.location + ' · ' : '')}${esc(month)}</span>
+        </li>`;
+      }).join('')}</ul>
+    </li>`).join('') : `<li class="picker__none" role="option" aria-selected="false"
+      id="ev-opt-none">No event matches that</li>`;
+
+  if (options.length) input.setAttribute('aria-activedescendant', `ev-opt-${pickerAt}`);
+  else input.removeAttribute('aria-activedescendant');
+  list.querySelector('[aria-selected="true"]')?.scrollIntoView({block: 'nearest'});
+}
+
+function openPicker(open){
+  if (pickerOpen === open) return;
+  pickerOpen = open;
+  /* The query starts empty rather than pre-filled with the current event's
+     name, which would show one result and read as though nothing else exists. */
+  pickerQuery = '';
+  pickerAt = Math.max(0, CATALOG.findIndex(e => e.slug === activeEvent));
+  if (open) pickerInput().value = '';
+  renderEventPicker();
+}
+
+function commitPicker(slug){
+  const chosen = slug ?? pickerOptions()[pickerAt]?.slug;
+  openPicker(false);
+  if (chosen) selectEvent(chosen); else renderEventPicker();
 }
 
 /* Switching events replaces everything below it, so the panel is emptied while
@@ -1091,8 +1215,45 @@ async function selectEvent(slug){
   say(`Showing ${entry.event}`);
 }
 
-document.addEventListener('change', e => {
-  if (e.target.id === 'event-select') selectEvent(e.target.value);
+document.addEventListener('input', e => {
+  if (e.target.id !== 'event-search') return;
+  pickerQuery = e.target.value.trim().toLowerCase();
+  pickerOpen = true;
+  pickerAt = 0;
+  renderEventPicker();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.target.id !== 'event-search' || e.metaKey || e.ctrlKey || e.altKey) return;
+  const options = pickerOptions();
+  const step = {ArrowDown: 1, ArrowUp: -1}[e.key];
+  if (step !== undefined){
+    e.preventDefault();
+    if (!pickerOpen) return openPicker(true);
+    if (!options.length) return;
+    pickerAt = (pickerAt + step + options.length) % options.length;
+    renderEventPicker();
+  } else if (e.key === 'Enter'){
+    e.preventDefault();
+    if (pickerOpen) commitPicker();
+  } else if (e.key === 'Escape'){
+    /* Back to the event on screen, which is what the box said before it was
+       opened. A reader who changes their mind should not have to remember it. */
+    e.preventDefault();
+    openPicker(false);
+  } else if (e.key === 'Home' || e.key === 'End'){
+    if (!pickerOpen || !options.length) return;
+    e.preventDefault();
+    pickerAt = e.key === 'Home' ? 0 : options.length - 1;
+    renderEventPicker();
+  }
+});
+
+document.addEventListener('click', e => {
+  const option = e.target.closest('#event-list [data-slug]');
+  if (option) return commitPicker(option.dataset.slug);
+  if (e.target.id === 'event-search') return openPicker(true);
+  if (pickerOpen && !e.target.closest('#event-pick')) openPicker(false);
 });
 
 function renderFormats(){

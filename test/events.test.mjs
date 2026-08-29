@@ -37,6 +37,22 @@ const twoEvents = (extra = {}) => ({
   },
 });
 
+/** Open the event search and read what it offers.
+ *
+ * `year` is the group the option sits in: the list is grouped by year, so the
+ * option itself carries only the month and the year is not repeated on it.
+ */
+function options(page, query = '') {
+  page.run(`openPicker(true)`);
+  if (query) page.run(`pickerQuery = ${JSON.stringify(query)}; renderEventPicker();`);
+  return page.$$('#event-list [role="option"]').map((li) => ({
+    slug: li.dataset.slug,
+    name: li.querySelector('b')?.textContent.trim() ?? li.textContent.trim(),
+    aside: li.querySelector('span')?.textContent.trim() ?? '',
+    year: li.closest('[role="group"]')?.getAttribute('aria-label') ?? '',
+  }));
+}
+
 test('one event is not presented as a choice', async (t) => {
   const page = await loadPage({});
   t.after(() => page.close());
@@ -48,10 +64,8 @@ test('the picker lists every event, newest first', async (t) => {
   const page = await loadPage(twoEvents());
   t.after(() => page.close());
   assert.equal(page.$('#event-pick').hidden, false);
-  assert.deepEqual(page.$$('#event-select option').map((o) => o.value),
-    [SAMPLE.slug, OLDER.slug]);
-  assert.deepEqual(page.$$('#event-select option').map((o) => o.textContent),
-    [`${SAMPLE.event} · Aug 2026`, 'YCS Columbus · May 2026']);
+  assert.deepEqual(options(page).map((o) => o.slug), [SAMPLE.slug, OLDER.slug]);
+  assert.deepEqual(options(page).map((o) => o.name), [SAMPLE.event, 'YCS Columbus']);
 });
 
 test('two events of the same name are told apart by date', async (t) => {
@@ -68,9 +82,10 @@ test('two events of the same name are told apart by date', async (t) => {
     },
   });
   t.after(() => page.close());
-  const labels = page.$$('#event-select option').map((o) => o.textContent);
+  // Told apart by the group they sit in, which is where the year now lives.
+  const labels = options(page).map((o) => `${o.year} ${o.name} ${o.aside}`);
   assert.equal(new Set(labels).size, labels.length, `not distinguishable: ${labels}`);
-  assert.deepEqual(labels.slice(1), ['YCS Columbus · May 2026', 'YCS Columbus · May 2025']);
+  assert.deepEqual(labels.slice(1), ['2026 YCS Columbus May', '2025 YCS Columbus May']);
 });
 
 test('an event with no usable date is listed by name rather than by nothing', async (t) => {
@@ -90,8 +105,10 @@ test('an event with no usable date is listed by name rather than by nothing', as
       },
     });
     t.after(() => page.close());
-    assert.equal(page.$$('#event-select option')[1].textContent, 'YCS Columbus',
-      `updated: ${JSON.stringify(updated)}`);
+    const shown = options(page)[1];
+    assert.equal(shown.name, 'YCS Columbus', `updated: ${JSON.stringify(updated)}`);
+    assert.equal(shown.aside, '', `updated: ${JSON.stringify(updated)}`);
+    assert.equal(shown.year, 'Undated', `updated: ${JSON.stringify(updated)}`);
     page.close();
   }
 });
@@ -126,7 +143,8 @@ test('the day shown is the day the coverage names, west of Greenwich too', async
     },
   });
   t.after(() => page.close());
-  assert.equal(page.$$('#event-select option')[0].textContent, 'YCS Columbus · May 2026');
+  assert.deepEqual(options(page)[0],
+    {slug: OLDER.slug, name: 'YCS Columbus', aside: 'May', year: '2026'});
   assert.ok(page.text('#hero-meta').includes('23 May 2026'), page.text('#hero-meta'));
 });
 
