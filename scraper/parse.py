@@ -119,6 +119,24 @@ def split_status(cell: str) -> tuple[str | None, int | None]:
     return canonical, int(m.group(2))
 
 
+def split_team(cell: str) -> dict[str, Any]:
+    """'Road of the King: Yacine S., Francisco O., Patrick H.' -> name + members.
+
+    A Team YCS enters three Duelists a side and publishes one standings row per
+    team, written this way. Read as one Duelist it is a name the comma rule
+    turns inside out -- normalise_name exists to make "Gouge, Justin" into
+    "Justin Gouge", and it does the same to everything after the colon.
+
+    The team's own name is left exactly as printed. It is a name someone chose,
+    not a person's, so neither the comma rule nor the region rule applies to it:
+    a team called "TCG Masters" would otherwise lose half of itself to a rule
+    for stripping province codes.
+    """
+    name, _, rest = cell.partition(":")
+    members = [m.strip() for m in rest.split(",") if m.strip()]
+    return {"name": name.strip() or cell.strip(), "members": members}
+
+
 def normalise_name(raw: str) -> str:
     """The blog writes names three ways; settle on 'First Last'."""
     raw, _ = strip_region(_text(raw))
@@ -233,6 +251,11 @@ def _classify_table(header: list[str]) -> str:
     low = [h.lower() for h in header]
     if "table" in low and any(h.strip() in ("vs.", "vs") for h in low):
         return "pairings"
+    # A Team YCS heads its Swiss pairings Table | Team 1 | Team 2, with no vs.
+    # column at all. Eleven of TEAM YCS Las Vegas's twelve rounds are written
+    # this way and none of them parsed.
+    if "table" in low and sum("team" in h for h in low) == 2:
+        return "pairings"
     if "rank" in low and any("player" in h or "name" in h for h in low):
         return "standings"
     return "unknown"
@@ -252,8 +275,22 @@ def parse_table(doc: str) -> Table | None:
     out: list[dict[str, Any]] = []
 
     if kind == "standings":
+        # Decided for the table, not row by row. A Team YCS publishes one row
+        # per team with the members inside it -- "Road of the King: Yacine S.,
+        # Francisco O., Patrick H." -- and no ordinary entrant's name has a
+        # colon in it. Taken row by row, one oddly punctuated name would be read
+        # as a team of one.
+        entered = [r[1] for r in body if len(r) >= 2 and r[0].isdigit()]
+        teams = bool(entered) and sum(":" in n for n in entered) > len(entered) / 2
+
         for r in body:
             if len(r) < 2 or not r[0].isdigit():
+                continue
+            if teams:
+                out.append({"rank": int(r[0]), **split_team(r[1]),
+                            "region": None,
+                            "points": int(r[2]) if len(r) > 2 and r[2].isdigit() else None,
+                            "status": None, "statusRound": None})
                 continue
             name, region = strip_region(r[1])
             status, status_round = split_status(r[1])
@@ -270,37 +307,69 @@ def parse_table(doc: str) -> Table | None:
             })
 
     elif kind == "pairings":
-        # Split the header on the 'vs.' column so each side is read by position
-        # within its own half -- the halves differ between layouts.
-        try:
-            pivot = next(i for i, h in enumerate(header) if h.strip().lower() in ("vs.", "vs"))
-        except StopIteration:
-            pivot = len(header) // 2
-        left, right = header[1:pivot], header[pivot + 1:]
+        # Each side is read by position within its own half, because the halves
+        # differ between layouts. Where there is a 'vs.' column it separates
+        # them and belongs to neither; the team Swiss layout has none --
+        # Table | Team 1 | Team 2 -- so the columns after the table number
+        # divide evenly instead. Treating the missing separator as a column
+        # swallowed the left side entirely and left every match a name short.
+        vs_at = next((i for i, h in enumerate(header)
+                      if h.strip().lower() in ("vs.", "vs")), None)
+        if vs_at is None:
+            split, skip = 1 + (len(header) - 1) // 2, 0
+        else:
+            split, skip = vs_at, 1
+        cut = lambda row: (row[1:split], row[split + skip:])
+        left, _ = cut(header)
         decks = any("deck" in h.lower() for h in left)
 
+        def side(cells: list[str]) -> dict[str, Any]:
+            if decks:
+                parts, deck = [cells[0]], (cells[1] if len(cells) > 1 else None)
+            else:
+                parts, deck = cells, None
+            # Per cell: the code sits on whichever cell carried it, which for
+            # a first/last split is the first, not the joined string.
+            cleaned, region = [], None
+            for c in parts:
+                text, code = strip_region(_text(c))
+                region = region or code
+                if text:
+                    cleaned.append(text)
+            return {"name": normalise_name(" ".join(cleaned)),
+                    "region": region, "deck": deck or None}
+
+        # A team match is one row of this table, holding the duels played
+        # inside it. Both team layouts announce one the same way -- a row whose
+        # table cell is not a number, carrying two names and nothing else:
+        #
+        #   ['Team', 'Cuspy Way', 'We are just here']              Swiss
+        #   ['', 'Ares', '', 'vs.', '3 Lil Pigs', '']              top cut
+        #
+        # Those rows were skipped for not starting with a number, which left
+        # three duels a match with nothing saying whose they were. A singles
+        # event has none of them and every row is a match of its own, exactly
+        # as before.
+        match = None
         for r in body:
-            if len(r) != len(header) or not r[0].isdigit():
+            if len(r) != len(header):
                 continue
-            lcells, rcells = r[1:pivot], r[pivot + 1:]
+            lcells, rcells = cut(r)
+            if not r[0].isdigit():
+                a, b = side(lcells), side(rcells)
+                if not (a["name"] and b["name"]):
+                    continue
+                match = {"table": None, "a": a, "b": b, "duels": []}
+                out.append(match)
+                continue
 
-            def side(cells: list[str], cols: list[str]) -> dict[str, Any]:
-                if decks:
-                    parts, deck = [cells[0]], (cells[1] if len(cells) > 1 else None)
-                else:
-                    parts, deck = cells, None
-                # Per cell: the code sits on whichever cell carried it, which for
-                # a first/last split is the first, not the joined string.
-                cleaned, region = [], None
-                for c in parts:
-                    text, code = strip_region(_text(c))
-                    region = region or code
-                    if text:
-                        cleaned.append(text)
-                return {"name": normalise_name(" ".join(cleaned)),
-                        "region": region, "deck": deck or None}
-
-            out.append({"table": int(r[0]), "a": side(lcells, left), "b": side(rcells, right)})
+            duel = {"table": int(r[0]), "a": side(lcells), "b": side(rcells)}
+            if match is None:
+                out.append(duel)                    # a singles event
+                continue
+            match["duels"].append(duel)
+            if match["table"] is None:              # the match is at its first table
+                match["table"] = duel["table"]
 
     return Table(kind=kind, columns=header, rows=out)
 

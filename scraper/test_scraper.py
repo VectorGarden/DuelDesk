@@ -2740,64 +2740,164 @@ class TestATeamBracketIsStillABracket(unittest.TestCase):
         self.assertIsNone(mod.bracket_width("R7"))
 
 
-class TestTeamEventsAreNotPublishedYet(unittest.TestCase):
-    """Better absent than wrong.
+class TestTeamEvents(unittest.TestCase):
+    """A Team YCS enters three Duelists a side.
 
-    A Team YCS publishes one standings row per team, with the members inside
-    it: "Road of the King: Yacine S., Francisco O., Patrick H.". Read as a
-    Duelist that is 389 "Duelists" that are teams, under a name the comma rule
-    mangles -- it is written to turn "Gouge, Justin" into "Justin Gouge".
+    Three layouts the parser had never seen, and everything downstream works on
+    entrants, so the whole of the difference is what an entrant is.
+
+        standings   Rank | Player Name
+                    1    | Road of the King: Yacine S., Francisco O., Patrick H.
+
+        Swiss       Table | Team 1 | Team 2          -- no vs. column at all
+                    Team  | Cuspy Way | We are just here
+                    1     | Billy de la Cruz Gadier | Piersen Matthew Sukienik
+
+        top cut     Table | Duelist 1 Name | Duelist 1 Deck Type | vs. | ...
+                          | Ares |  | vs. | 3 Lil Pigs |
+                    1     | Kevin QC Rodrigues Goncalves | Artmage K9 | vs. | ...
     """
 
-    def standings(self, *names):
-        return _src("https://x/s1/", "TEAM YCS Las Vegas: Standings After Round 11",
-                    ["Rank", "Player Name"],
-                    [[str(i + 1), n] for i, n in enumerate(names)])
+    SWISS = _page("TEAM YCS Las Vegas: Round 3 Pairings",
+                  ["Table", "Team 1", "Team 2"],
+                  [["Team", "Cuspy Way", "We are just here"],
+                   ["1", "Billy de la Cruz Gadier", "Piersen Matthew Sukienik"],
+                   ["2", "Timothy William Roma", "Zachary Paul Hutson"],
+                   ["3", "Jordan Eric NC Smith", "Joseph Albert Crask"],
+                   ["Team", "Lazy Dog", "Strait of Hermos"],
+                   ["4", "Nicolas Hieu CA Phan", "Yaozhong NY Liu"],
+                   ["5", "Anthony NY Xu", "Michael CA Park"],
+                   ["6", "Wenbo NY Gao", "Nathan Shigeo Shimada"]])
 
-    def test_team_entries_are_recognised(self):
-        from build import entered_as_teams
-        self.assertTrue(entered_as_teams([self.standings(
-            "Road of the King: Yacine S., Francisco O., Patrick H.",
-            "Ares: Kevin R., Matthieu B., Pierre B.",
-            "Neal 4 Papa: Cameron N., Cristian U., Antonio P.")]))
+    CUT = _page("TEAM YCS Las Vegas: Top 8 Pairings with Deck Types",
+                ["Table", "Duelist 1 Name", "Duelist 1 Deck Type", "vs.",
+                 "Duelist 2 Name", "Duelist 2 Deck Type"],
+                [["", "Ares", "", "vs.", "3 Lil Pigs", ""],
+                 ["1", "Kevin QC Rodrigues Goncalves", "Artmage K9", "vs.",
+                  "William Russell Candia", "Azamina Mitsurugi Yummy"],
+                 ["2", "Matthieu Nicolas Bricard", "Mitsurugi", "vs.",
+                  "Edwin Martin Strom IV", "Fiendsmith Yummy"],
+                 ["3", "Pierre FRA Burgals", "Bystial @Ignister Maliss", "vs.",
+                  "Michael Joseph Ehresman", "Branded Mitsurugi Sky Striker"]])
 
-    def test_ordinary_standings_are_not(self):
-        from build import entered_as_teams
-        self.assertFalse(entered_as_teams([self.standings(
-            "Francisco Andres Osorio Bobadilla", "Julien Leo Kehon",
-            "Gouge, Justin Matthew")]))
+    STANDINGS = _page("TEAM YCS Las Vegas: Standings After Round 11",
+                      ["Rank", "Player Name"],
+                      [["1", "Road of the King: Yacine S., Francisco O., Patrick H."],
+                       ["2", "Ares: Kevin R., Matthieu B., Pierre B."],
+                       ["3", "Neal 4 Papa: Cameron N., Cristian U., Antonio P."]])
 
-    def test_an_event_with_no_standings_is_not_assumed_to_be_teams(self):
-        from build import entered_as_teams
-        self.assertFalse(entered_as_teams([]))
+    # ---- the Swiss layout, which has no vs. column ----
 
-    def test_a_team_event_is_reported_rather_than_built(self):
+    def test_a_table_with_no_versus_column_is_still_pairings(self):
+        # Eleven of TEAM YCS Las Vegas's twelve Swiss rounds are written this
+        # way, and every one of them was dropped as an unreadable table.
+        self.assertEqual(parse_post(self.SWISS).table.kind, "pairings")
+
+    def test_a_team_match_is_one_row_holding_its_duels(self):
+        rows = parse_post(self.SWISS).table.rows
+        self.assertEqual(len(rows), 2, "two team matches, not six duels")
+        self.assertEqual((rows[0]["a"]["name"], rows[0]["b"]["name"]),
+                         ("Cuspy Way", "We are just here"))
+        self.assertEqual([d["a"]["name"] for d in rows[0]["duels"]],
+                         ["Billy de la Cruz Gadier", "Timothy William Roma",
+                          "Jordan Eric Smith"])
+
+    def test_the_match_is_at_the_first_table_its_duels_are_played_on(self):
+        rows = parse_post(self.SWISS).table.rows
+        self.assertEqual([r["table"] for r in rows], [1, 4])
+        self.assertEqual([d["table"] for d in rows[1]["duels"]], [4, 5, 6])
+
+    def test_neither_side_is_swallowed_by_a_separator_that_is_not_there(self):
+        # The reader split the columns on the vs. column and skipped it. With no
+        # vs. column the fallback skipped a real one instead, and every match
+        # came back a name short.
+        rows = parse_post(self.SWISS).table.rows
+        for r in rows:
+            self.assertTrue(r["a"]["name"] and r["b"]["name"], r)
+
+    # ---- the top cut layout, which has one ----
+
+    def test_the_cut_layout_names_the_teams_too(self):
+        rows = parse_post(self.CUT).table.rows
+        self.assertEqual(len(rows), 1)
+        self.assertEqual((rows[0]["a"]["name"], rows[0]["b"]["name"]),
+                         ("Ares", "3 Lil Pigs"))
+
+    def test_a_deck_belongs_to_the_Duelist_not_the_team(self):
+        row = parse_post(self.CUT).table.rows[0]
+        self.assertIsNone(row["a"]["deck"], "a team does not play a deck")
+        self.assertEqual([d["a"]["deck"] for d in row["duels"]],
+                         ["Artmage K9", "Mitsurugi", "Bystial @Ignister Maliss"])
+
+    def test_a_singles_event_is_untouched(self):
+        # Every row is a match of its own, exactly as before, and carries no
+        # duels for the page to render.
+        rows = load("pairings-round13").table.rows
+        self.assertEqual(rows[0]["a"]["name"], "George Lucas Sacco")
+        self.assertNotIn("duels", rows[0])
+
+    # ---- standings ----
+
+    def test_a_standings_row_is_a_team_and_its_members(self):
+        rows = parse_post(self.STANDINGS).table.rows
+        self.assertEqual(rows[0]["name"], "Road of the King")
+        self.assertEqual(rows[0]["members"], ["Yacine S.", "Francisco O.", "Patrick H."])
+
+    def test_the_team_name_is_left_exactly_as_printed(self):
+        from parse import split_team
+        # Neither the comma rule nor the region rule applies to a name someone
+        # chose: normalise_name exists to turn "Gouge, Justin" into "Justin
+        # Gouge", and strip_region to take province codes off people.
+        self.assertEqual(split_team("TCG QC Masters: A B., C D.")["name"],
+                         "TCG QC Masters")
+
+    def test_the_table_decides_together_not_row_by_row(self):
+        # One oddly punctuated Duelist's name would otherwise be read as a team
+        # of one in a table of individuals.
+        doc = _page("Standings After Round 11", ["Rank", "Player Name", "Points"],
+                    [["1", "Francisco Andres Osorio Bobadilla", "36"],
+                     ["2", "Nickname: The Wall", "33"],
+                     ["3", "Julien Leo Kehon", "33"]])
+        rows = parse_post(doc).table.rows
+        self.assertEqual(rows[1]["name"], "Nickname: The Wall")
+        self.assertNotIn("members", rows[1])
+
+    # ---- what the event comes out as ----
+
+    def sources(self):
+        from build import Source
+        return [Source("https://x/r3/", parse_post(self.SWISS, "https://x/r3/"), "12:00"),
+                Source("https://x/s3/", parse_post(self.STANDINGS, "https://x/s3/"), "13:00")]
+
+    def event(self):
         import io
         from contextlib import redirect_stdout
-        import run
-        sources = [self.standings("Ares: Kevin R., Matthieu B., Pierre B.",
-                                  "Lazy Dog: A. B., C. D., E. F.")]
+        from build import build_event
         with redirect_stdout(io.StringIO()):
-            event, posts, lines = run.build_one(
-                _StubFetcher(sources), "2026-04-team-ycs-las-vegas",
-                [{"kind": "standings", "url": "https://x/s1/", "lastmod": "2026-04-19",
-                  "slug": "s1"}], "2026-04-19", 200)
-        self.assertEqual(event, {})
-        self.assertIn("team event", "\n".join(lines))
+            return build_event("TEAM YCS Las Vegas", self.sources(), updated="2026-04-19")
 
+    def test_the_entrants_are_teams_and_the_data_says_so(self):
+        # The page has no way to tell from the rows: a team match reads exactly
+        # like a match. Left unsaid, 389 teams are shown as 389 Duelists.
+        fmt = self.event()["formats"][0]
+        self.assertEqual(fmt["entrant"], "Team")
+        self.assertEqual(fmt["duelists"], 3)
 
-class _StubFetcher:
-    """Hands build_one the sources it would otherwise have parsed off the wire."""
+    def test_an_ordinary_event_says_so_too(self):
+        from build import build_event
+        ev = build_event("YCS Montréal", _sources())
+        self.assertTrue(all(f["entrant"] == "Duelist" for f in ev["formats"]))
 
-    def __init__(self, sources):
-        self._sources = {s.url: s for s in sources}
+    def test_the_duels_reach_the_page(self):
+        fmt = self.event()["formats"][0]
+        match = fmt["rounds"][0]["pairings"][0]
+        self.assertEqual((match["a"], match["b"]), ("Cuspy Way", "We are just here"))
+        self.assertEqual([d["a"] for d in match["duels"]][:1], ["Billy de la Cruz Gadier"])
 
-    def get(self, url, **kw):
-        return _page("TEAM YCS Las Vegas: Standings After Round 11",
-                     ["Rank", "Player Name"],
-                     [[str(i + 1), r["name"]] for i, r in
-                      enumerate(self._sources[url].post.table.rows)])
-
+    def test_the_roster_reaches_the_page(self):
+        fmt = self.event()["formats"][0]
+        row = next(r for r in fmt["rounds"] if r["standings"])["standings"][0]
+        self.assertEqual(row["members"], ["Yacine S.", "Francisco O.", "Patrick H."])
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
