@@ -124,7 +124,12 @@ checked=0
 while read -r path; do
   [ -z "$path" ] && continue
   checked=$((checked + 1))
-  code="$(status "$BASE$path")"
+  # Rooted here rather than trusting the shape it arrives in. Every reference
+  # in the markup was absolute until the styles and the behaviour moved out of
+  # the page, and "app.js" concatenated straight onto the host is a request to
+  # dueldesk.reizu.devapp.js -- which fails, and had nothing to do with whether
+  # the file was there.
+  code="$(status "$BASE/${path#/}")"
   [ "$code" = "200" ] || { fail "$path -> $code"; missing=1; }
 done <<< "$(python3 "$(dirname "$0")/../.github/scripts/check-references.py" --list "$SITE/index.html")"
 [ "$checked" -gt 0 ] || fail "could not extract any references from $SITE/index.html"
@@ -134,7 +139,7 @@ done <<< "$(python3 "$(dirname "$0")/../.github/scripts/check-references.py" --l
 leaked=0
 for path in /package.json /package-lock.json /README.md /test/harness.mjs \
             /scripts/build-icons.sh /icons/icon.svg /design/icon.svg; do
-  code="$(status "$BASE$path")"
+  code="$(status "$BASE/${path#/}")"
   [ "$code" = "404" ] || { fail "$path is published ($code); the artifact should be the site only"; leaked=1; }
 done
 [ "$leaked" -eq 0 ] && echo "  ok    no source files published"
