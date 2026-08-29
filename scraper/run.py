@@ -175,7 +175,7 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     # YCS. Eighteen of the archive's fifty-one events were listed under a name
     # that did not identify them -- five WCQs spelled five ways, and labels like
     # "11 10 Columbus".
-    name = canonical_name(name, slug, ended, named=name != fallback)
+    name, location = canonical_name(name, slug, ended, named=name != fallback)
     # Whether a round may be shown as in progress. Read from the coverage rather
     # than assumed: the newest post of a finished event is days old.
     newest = max((parse_lastmod(s.posted) for s in sources if s.posted),
@@ -184,7 +184,7 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     print(f"  {name}: newest post {newest.isoformat() if newest else 'unknown'}, "
           f"{'ongoing' if ongoing else 'finished'}")
     event = build_event(name, sources, draws_possible=draws_possible, updated=ended,
-                        ongoing=ongoing)
+                        ongoing=ongoing, location=location)
 
     feed_posts = [{"title": s.post.title, "url": s.url, "modified": s.posted,
                    "kind": s.post.kind, "format": s.post.fmt, "event": name,

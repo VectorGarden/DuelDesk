@@ -3151,7 +3151,11 @@ class TestTheEventListReadsAsNames(unittest.TestCase):
 
     def name(self, derived, slug, ended="2026-01-01", named=True):
         from naming import canonical_name
-        return canonical_name(derived, slug, ended, named=named)
+        return canonical_name(derived, slug, ended, named=named)[0]
+
+    def location(self, derived, slug, ended="2026-01-01", named=True):
+        from naming import canonical_name
+        return canonical_name(derived, slug, ended, named=named)[1]
 
     # ---- the qualifiers ----
 
@@ -3195,7 +3199,7 @@ class TestTheEventListReadsAsNames(unittest.TestCase):
         for slug, want in (("11-10-columbus", "YCS Columbus"),
                            ("201503-guatemala", "YCS Guatemala"),
                            ("201509-monterrey", "YCS Monterrey"),
-                           ("201603-santiago-chile", "YCS Santiago Chile")):
+                           ("201603-santiago-chile", "YCS Santiago")):
             self.assertEqual(self.name(slug.replace("-", " ").title(), slug,
                                        named=False), want)
 
@@ -3203,7 +3207,57 @@ class TestTheEventListReadsAsNames(unittest.TestCase):
         # The D and C of bogota-d-c-colombia are Distrito Capital.
         self.assertEqual(self.name("201504 Bogota D C Colombia",
                                    "201504-bogota-d-c-colombia", named=False),
-                         "YCS Bogota Colombia")
+                         "YCS Bogota")
+
+    def test_a_token_holding_a_digit_is_not_a_place(self):
+        # 300th, 75thsjc, 201504 -- the date and the count.
+        self.assertEqual(self.name("12 03 100Th", "12-03-100th", named=False),
+                         "12 03 100Th")
+
+    # ---- where it was held ----
+
+    def test_the_country_is_kept_beside_the_name_not_inside_it(self):
+        self.assertEqual(self.location("201603 Santiago Chile", "201603-santiago-chile",
+                                       named=False), "Santiago, Chile")
+
+    def test_a_city_of_several_words_comes_through_whole(self):
+        # Split at a guess, "buenos-aires-argentina" is a city called Aires.
+        self.assertEqual(
+            self.name("201712 Buenos Aires Argentina", "201712-buenos-aires-argentina",
+                      named=False), "YCS Buenos Aires")
+        self.assertEqual(
+            self.location("201712 Buenos Aires Argentina", "201712-buenos-aires-argentina",
+                          named=False), "Buenos Aires, Argentina")
+
+    def test_a_two_word_city_is_not_split_into_a_country(self):
+        # san-diego-ca and atlantic-city are cities of two words. Taking the
+        # last word as the country makes them "YCS San" in "San, Diego".
+        for slug, want in (("201711-san-diego-ca", "YCS San Diego"),
+                           ("atlantic-city-2013", "YCS Atlantic City")):
+            self.assertEqual(self.name(slug.replace("-", " ").title(), slug,
+                                       named=False), want, slug)
+            self.assertIsNone(self.location(slug.replace("-", " ").title(), slug,
+                                            named=False), slug)
+
+    def test_no_country_in_the_slug_means_none_is_known(self):
+        # "Columbus" alone would be the title with a word taken off rather than
+        # anything the archive did not already say.
+        self.assertIsNone(self.location("11 10 Columbus", "11-10-columbus", named=False))
+
+    def test_a_country_the_coverage_wrote_into_the_name_is_taken_back_out(self):
+        self.assertEqual(self.name("YCS Cancun, Mexico", "2024-10-cancun-mexico"),
+                         "YCS Cancun")
+        self.assertEqual(self.location("YCS Cancun, Mexico", "2024-10-cancun-mexico"),
+                         "Cancun, Mexico")
+
+    def test_the_city_is_what_is_left_after_the_kind_of_event(self):
+        # Taking the last word instead made "YCS Guatemala City" a city called
+        # "City".
+        self.assertEqual(self.location("YCS Guatemala City, Guatemala", "201703-uds"),
+                         "Guatemala City, Guatemala")
+
+    def test_a_name_with_no_comma_says_nothing_about_where(self):
+        self.assertIsNone(self.location("YCS Montréal", "2026-08-quebec"))
 
     def test_a_place_is_only_guessed_at_when_there_was_nothing_to_go_on(self):
         # The coverage agreed on a name, so it is not overruled by a guess.

@@ -414,3 +414,29 @@ test('standings keep the columns the coverage does fill', async (t) => {
   assert.ok(heads.includes('Record'), heads.join('/'));
   assert.ok(heads.includes('Pts'), heads.join('/'));
 });
+
+test('where an event was held is shown, and is not in its name', async (t) => {
+  // "YCS Santiago" is what the event is called; that it was in Chile is a
+  // separate fact about it, and the blog writes it into the title for some
+  // events and not others.
+  const page = await loadPage({
+    routes: {
+      'rounds.json': () => {
+        const d = roundsFixture();
+        d.event = 'YCS Santiago';
+        d.location = 'Santiago, Chile';
+        return { status: 200, body: JSON.stringify(d) };
+      },
+    },
+  });
+  t.after(() => page.close());
+  assert.equal(page.text('#live-h'), 'YCS Santiago');
+  assert.match(page.text('#hero-meta'), /Santiago, Chile/);
+});
+
+test('an event with no known location says nothing about one', async (t) => {
+  const page = await loadPage({});
+  t.after(() => page.close());
+  // "1,248 Duelists" has a comma; a location is a comma followed by a word.
+  assert.ok(!/,\s*[A-Za-z]/.test(page.text('#hero-meta')), page.text('#hero-meta'));
+});

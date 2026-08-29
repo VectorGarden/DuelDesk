@@ -151,10 +151,19 @@ _YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
 
 # Words that say what kind of event this is rather than where it was. A slug
 # holding none of them is a place, and a place on this blog is a YCS.
-_EVENT_WORDS = {"ycs", "wcq", "nawcq", "uds", "sjc", "ygoc", "team", "remote",
-                "duel", "invitational", "championship", "championships",
-                "qualifier", "qualifiers", "regional", "series", "event",
-                "genesys", "advanced"}
+_EVENT_WORDS = {"ycs", "wcq", "nawcq", "uds", "sjc", "wcs", "ygoc", "rdycs",
+                "team", "remote", "duel", "invitational", "championship",
+                "championships", "qualifier", "qualifiers", "regional",
+                "series", "event", "genesys", "advanced", "extravaganza"}
+
+# Where a place name stops being the place and starts being the country or the
+# state it is in. Only ever read as the last word of a slug that is otherwise a
+# place, so it separates "santiago-chile" without having to know that Santiago
+# is a city -- and cities of two and three words, San Diego and Buenos Aires
+# and Sao Paulo, come through whole rather than being split at a guess.
+_ENCLOSING = {"argentina", "brazil", "canada", "chile", "colombia", "ecuador",
+              "guatemala", "mexico", "panama", "paraguay", "peru", "uruguay",
+              "venezuela", "california", "florida", "nevada", "ohio", "texas"}
 
 
 def _year(slug: str, ended: str | None) -> str | None:
@@ -180,8 +189,8 @@ def wcq_name(slug: str, name: str, ended: str | None) -> str | None:
     return None
 
 
-def place_name(slug: str) -> str | None:
-    """"YCS Monterrey" for a slug that names a place and nothing else.
+def place_name(slug: str) -> tuple[str | None, str | None]:
+    """("YCS Santiago", "Santiago, Chile") for a slug that names a place.
 
     Only reached when the coverage agreed on no name of its own, so this is the
     last thing tried before falling back to the slug title-cased, which is how
@@ -191,26 +200,64 @@ def place_name(slug: str) -> str | None:
     A place on this blog is a YCS. Nothing else is assumed: a slug carrying any
     word about what kind of event it was is left alone, because that word is
     more information than this guess.
+
+    The country stays out of the name and is kept beside it. "YCS Santiago" is
+    what the event is called; that it was in Chile is worth knowing and is not
+    part of the title.
     """
     tokens = [t for t in re.split(r"[^a-z0-9]+", slug.lower()) if t]
-    # Digits are the date, and single letters are administrative -- the D and C
-    # of "bogota-d-c-colombia" are Distrito Capital, not part of the city.
-    place = [t for t in tokens if not t.isdigit() and len(t) > 1]
+    # A token holding a digit is the date or the count -- 201504, 300th,
+    # 75thsjc. One or two letters is administrative: the states and provinces
+    # are written that way throughout (anaheim-ca, atlanta-ga, pittsburgh-pa),
+    # and the D and C of "bogota-d-c-colombia" are Distrito Capital rather than
+    # part of the city.
+    place = [t for t in tokens if not any(c.isdigit() for c in t) and len(t) > 2]
     if not place or any(t in _EVENT_WORDS for t in place):
-        return None
-    return "YCS " + " ".join(t.title() for t in place)
+        return None, None
+    title = lambda ts: " ".join(t.title() for t in ts)
+    if len(place) > 1 and place[-1] in _ENCLOSING:
+        city, where = title(place[:-1]), title(place[-1:])
+        return f"YCS {city}", f"{city}, {where}"
+    # No country in the slug, so none is known. "Columbus" on its own would be
+    # the title with a word taken off rather than anything the archive did not
+    # already say.
+    return f"YCS {title(place)}", None
+
+
+def split_location(name: str) -> tuple[str, str | None]:
+    """Take the country back out of a name the coverage wrote it into.
+
+    The blog titles some events "YCS Cancun, Mexico". The comma says exactly
+    where the place name ends, so nothing has to be guessed -- and what is left
+    is what the event is called.
+    """
+    head, sep, tail = name.partition(",")
+    if not sep or not tail.strip():
+        return name, None
+    # The city is what is left once the words saying what kind of event it was
+    # are off the front. Taking the last word instead made "YCS Guatemala City"
+    # a city called "City".
+    words = head.split()
+    while words and words[0].lower() in _EVENT_WORDS:
+        words.pop(0)
+    city = " ".join(words) or head.strip()
+    return head.strip(), f"{city}, {tail.strip()}"
 
 
 def canonical_name(name: str, slug: str, ended: str | None, *,
-                   named: bool = True) -> str:
-    """The event's name, settled.
+                   named: bool = True) -> tuple[str, str | None]:
+    """(the event's name, where it was held). The location may be None.
 
     `named` says whether the coverage agreed on `name` or it is the slug
     title-cased. A qualifier is renamed either way -- the blog's own "NAWCQ" is
     a name, and not one that says which year's -- while a place is only guessed
     at when there was nothing to go on.
     """
-    return wcq_name(slug, name, ended) or (None if named else place_name(slug)) or name
+    if qualifier := wcq_name(slug, name, ended):
+        return qualifier, None
+    if not named and (place := place_name(slug))[0]:
+        return place
+    return split_location(name)
 
 
 def clock(stamp: str | None) -> str | None:
