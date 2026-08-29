@@ -550,6 +550,108 @@
           "rounds": 13
         }
       ]
+    },
+    {
+      "slug": "2018-09-200th-ycs-columbus-oh",
+      "event": "200th YCS Columbus",
+      "updated": "2018-09-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-09-200th-ycs-columbus-oh/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2341,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2018-north-america-wcq",
+      "event": "North America WCQ",
+      "updated": "2018-07-02",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-north-america-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1743,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2018-central-america-wcq",
+      "event": "Central America WCQ",
+      "updated": "2018-06-10",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-central-america-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 569,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "201712-buenos-aires-argentina",
+      "event": "YCS Buenos Aires",
+      "updated": "2017-12-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201712-buenos-aires-argentina/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 407,
+          "rounds": 9
+        }
+      ]
+    },
+    {
+      "slug": "201711-san-diego-ca",
+      "event": "YCS San Diego",
+      "updated": "2017-11-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201711-san-diego-ca/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 913,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2017-central-american-wcq",
+      "event": "Central America WCQ",
+      "updated": "2017-06-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-central-american-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 552,
+          "rounds": 15
+        }
+      ]
     }
   ]
 }
