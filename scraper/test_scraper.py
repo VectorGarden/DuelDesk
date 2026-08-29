@@ -2402,5 +2402,123 @@ class TestSampleDataTimeline(unittest.TestCase):
         self.assertIn("August 2026", turn["event"])
 
 
+class TestABadPageCannotStopTheRun(unittest.TestCase):
+    """A backfill spends minutes an event and fetches hundreds of pages.
+
+    A seven-event run fetched 629 of them and one, live, came back with a
+    different first table than the same URL serves from cache. The pairings loop
+    read a standings row, and the KeyError took down the run and the six events
+    it had already built -- an hour of fetching, nothing committed.
+    """
+
+    def sources(self, table_html):
+        from build import Source
+        pairings = ("<html><head><title>Round 1 Pairings (Advanced Format)"
+                    "</title></head><body>" + table_html + "</body></html>")
+        return [Source("https://x/r1/", parse_post(pairings, "https://x/r1/"), "12:00"),
+                _src("https://x/s1/", "Standings After Round 1 (Advanced Format)",
+                     ["Rank", "Player Name", "Points"], [["1", "Ann Alpha", "3"]])]
+
+    def build(self, table_html):
+        import io
+        from contextlib import redirect_stdout
+        from build import build_event
+        log = io.StringIO()
+        with redirect_stdout(log):
+            ev = build_event("Somewhere", self.sources(table_html))
+        return ev, log.getvalue()
+
+    def test_a_pairings_post_carrying_a_standings_table_is_not_a_round(self):
+        # The exact shape that crashed: a standings row has no "table" key, and
+        # five reads downstream assume the columns of their own kind.
+        standings = ("<table><tbody><tr><td>Rank</td><td>Player Name</td></tr>"
+                     "<tr><td>1</td><td>Ann Alpha</td></tr></tbody></table>")
+        ev, log = self.build(standings)
+        self.assertIn("ignored https://x/r1/", log)
+        self.assertIn("standings table", log)
+        # The event still builds from what did parse.
+        self.assertTrue(ev["formats"], "one bad page took the whole format down")
+
+    def test_a_pairings_post_with_no_table_at_all_is_not_a_round(self):
+        ev, log = self.build("<p>The pairings are on the wall by the stage.</p>")
+        self.assertIn("no table", log)
+        self.assertTrue(ev["formats"])
+
+    def test_a_pairings_post_with_pairings_in_it_is_kept(self):
+        good = ("<table><tbody>"
+                "<tr><td>Table</td><td>P1 First Name</td><td>P1 Last Name</td>"
+                "<td>vs.</td><td>P2 First Name</td><td>P2 Last Name</td></tr>"
+                "<tr><td>1</td><td>Ann</td><td>Alpha</td><td>vs.</td>"
+                "<td>Bo</td><td>Beta</td></tr></tbody></table>")
+        ev, log = self.build(good)
+        self.assertNotIn("ignored", log)
+        rounds = ev["formats"][0]["rounds"]
+        self.assertEqual(len(rounds[0]["pairings"]), 1)
+
+
+class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
+    """Each event is written as it finishes, so a later failure must not
+    discard the ones already built."""
+
+    def run_backfill(self, breaks_on):
+        """Build three events, with build_one raising for one of them."""
+        import io, tempfile, types
+        from contextlib import redirect_stdout
+        from unittest import mock
+        import run
+        built = []
+        # No network and no sitemap: plan() is stubbed, so nothing reads either.
+        fetcher = types.SimpleNamespace(get=lambda url, **kw: "<urlset/>")
+
+        def fake_build_one(f, slug, posts, ended, limit):
+            if slug == breaks_on:
+                raise KeyError("table")
+            built.append(slug)
+            return ({"event": slug, "updated": ended, "sample": False,
+                     "ongoing": False, "coverageBy": "Konami",
+                     "formats": [{"format": "Advanced", "swissRounds": 1,
+                                  "duelists": 2, "rounds": [{"id": "1"}]}]},
+                    [], [f"### {slug}", ""])
+
+        events = [(f"e{i}", [{"kind": "pairings"}], f"2026-0{i}-01") for i in (1, 2, 3)]
+        log = io.StringIO()
+        with tempfile.TemporaryDirectory() as tmp:
+            argv = ["run.py", "--cache", f"{tmp}/cache", "--archive", f"{tmp}/events",
+                    "--manifest", f"{tmp}/events.json"]
+            with mock.patch.object(sys, "argv", argv), \
+                 mock.patch.object(run, "Fetcher", lambda **kw: fetcher), \
+                 mock.patch.object(run, "plan", lambda *a, **k: events), \
+                 mock.patch.object(run, "parse_sitemap_index", lambda x: []), \
+                 mock.patch.object(run, "build_one", fake_build_one), \
+                 redirect_stdout(log):
+                try:
+                    code = run.main()
+                except Exception as exc:
+                    return None, built, log.getvalue(), exc
+            import json
+            manifest = json.loads(Path(f"{tmp}/events.json").read_text()) \
+                if Path(f"{tmp}/events.json").exists() else {"events": []}
+        return code, built, log.getvalue(), manifest
+
+    def test_a_later_event_failing_keeps_the_earlier_ones(self):
+        code, built, log, manifest = self.run_backfill("e3")
+        self.assertEqual(code, 0)
+        self.assertEqual(built, ["e1", "e2"])
+        self.assertEqual({e["slug"] for e in manifest["events"]}, {"e1", "e2"},
+                         "the events already built were thrown away")
+
+    def test_the_failure_is_reported_rather_than_buried(self):
+        _, _, log, _ = self.run_backfill("e2")
+        self.assertIn("FAILED to build e2", log)
+        self.assertIn("1 of 3 events could not be built", log)
+
+    def test_the_newest_event_failing_fails_the_run(self):
+        # It is what the feed is titled after and what a scheduled run exists to
+        # publish. Skipping it would report success over an unchanged site.
+        code, built, log, exc = self.run_backfill("e1")
+        self.assertIsNone(code)
+        self.assertIsInstance(exc, KeyError)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

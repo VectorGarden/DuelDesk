@@ -223,12 +223,27 @@ def build_format(name: str | None, sources: list[Source], *,
     for s in sources:
         if s.post.kind not in ("pairings", "standings", "feature"):
             continue
-        # A pairings or standings post *is* its table, so one whose table did not
-        # parse is not a round source. Dropping it here rather than guarding each
-        # read keeps the invariant in one place: five of the reads downstream
-        # assume a table and would take the whole run down over a single page.
-        # A feature match is prose and legitimately has none, so it is exempt.
-        if s.post.kind in ("pairings", "standings") and s.post.table is None:
+        # A pairings post *is* its pairings table, and a standings post its
+        # standings table. One carrying neither -- no table at all, or a table
+        # that read as something else -- is not a round source. Dropping it here
+        # rather than guarding each read keeps the invariant in one place: five
+        # of the reads downstream assume the columns of their own kind, and a
+        # standings row has no "table" key to give them.
+        #
+        # Checking only for a missing table was not enough. A backfill of seven
+        # events fetched 629 pages and one of them, live, came back with a
+        # different first table than the same URL serves from cache -- so the
+        # pairings loop read a standings row, and a KeyError took down the run
+        # and the six events it had already built.
+        #
+        # Said out loud rather than skipped quietly: a round dropped here makes
+        # every record in its format partial, which is worth being able to trace
+        # back to the page that caused it.
+        if s.post.kind in ("pairings", "standings") and (
+                s.post.table is None or s.post.table.kind != s.post.kind):
+            found = s.post.table.kind if s.post.table else "no"
+            print(f"  ignored {s.url}: a {s.post.kind} post carrying "
+                  f"{'an' if found[0] in 'aeiou' else 'a'} {found} table")
             continue
         key = round_key(s.post)
         if key is None:

@@ -257,14 +257,38 @@ def main() -> int:
 
     report: list[str] = []
     newest_event = None
+    failed: list[str] = []
     for i, (slug, posts, ended) in enumerate(chosen):
-        event, feed_posts, lines = build_one(f, slug, posts, ended, args.limit)
+        try:
+            event, feed_posts, lines = build_one(f, slug, posts, ended, args.limit)
+        except Exception as exc:
+            # One event must not take the others down with it. A backfill spends
+            # minutes per event and writes each one as it finishes, so a failure
+            # on the seventh used to throw away the six already built and commit
+            # nothing -- an hour of fetching for no archive at all.
+            #
+            # The newest event is the exception: it is what the feed is titled
+            # after and what a scheduled run exists to publish, so failing to
+            # build it is a failed run, not a skipped event.
+            if i == 0:
+                raise
+            failed.append(slug)
+            print(f"  FAILED to build {slug}: {type(exc).__name__}: {exc}")
+            report += [f"### `{slug}` — **build failed**", "",
+                       f"- `{type(exc).__name__}: {exc}`", ""]
+            continue
         report += lines
         if not event:
             continue
         archive.write_event(args.archive, slug, event, feed_posts)
         if i == 0:
             newest_event = event   # names the feed's channel
+    if failed:
+        # Never let a failure be visible only in a stack trace halfway up a log
+        # that ends in success. It will be retried on the next backfill, because
+        # the archive is the memory and nothing was written for it.
+        print(f"{len(failed)} of {len(chosen)} events could not be built: "
+              + ", ".join(failed))
 
     manifest = archive.build_manifest(args.archive)
     Path(args.manifest).write_text(archive.dumps(manifest, pretty=True), encoding="utf-8")
