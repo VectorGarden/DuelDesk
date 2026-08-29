@@ -14,8 +14,8 @@ name: Scrape coverage
 # Over a quiet day it is one check an hour, as before; over a day of coverage it
 # is every ten minutes.
 #
-# What this finds IS published. It commits rounds.json and feed.xml, and that
-# push runs Validate, which checks them again and deploys.
+# What this finds IS published. It commits rounds.json, feed.xml and the events/
+# archive, and that push runs Validate, which checks them again and deploys.
 #
 # Committing rather than deploying straight from here is what keeps the site
 # coherent: the repository is the one source of what is served, so a later code
@@ -31,6 +31,13 @@ on:
         description: 'Scrape even if the sitemap has not moved'
         type: boolean
         default: false
+      backfill:
+        # A few at a time, on purpose. At one request a second an event is a
+        # couple of minutes and the whole archive is hours, and the events are
+        # finished -- there is no reason to take them all in one run.
+        description: 'Also build this many older events missing from the archive'
+        type: string
+        default: '0'
 
 permissions:
   contents: write        # commits the coverage it scrapes; see "Publish" below
@@ -115,15 +122,22 @@ jobs:
         name: Scrape the newest event
         run: |
           python3 scraper/run.py --out scraped-rounds.json --feed scraped-feed.xml \
+                                 --backfill "${{ inputs.backfill || 0 }}" \
                                  --summary "$GITHUB_STEP_SUMMARY"
 
       # Validated with the same checker the site's own data must pass, so a
       # scrape that could not produce usable data fails here rather than later.
+      # Every event in the archive, not only the newest. A backfill writes
+      # several, and an older one built from patchier coverage is exactly where
+      # a bad file would come from.
       - if: steps.gate.outputs.run == 'yes'
         name: Validate the scraped data
         run: |
           python3 .github/scripts/check-rounds.py scraped-rounds.json
           python3 .github/scripts/check-feed.py scraped-feed.xml
+          for f in events/*/rounds.json; do
+            python3 .github/scripts/check-rounds.py "$f"
+          done
 
       - if: steps.gate.outputs.run == 'yes'
         uses: actions/upload-artifact@v7
@@ -143,14 +157,15 @@ jobs:
         run: |
           cp scraped-rounds.json rounds.json
           cp scraped-feed.xml feed.xml
-          if git diff --quiet -- rounds.json feed.xml; then
+          if git diff --quiet -- rounds.json feed.xml events.json events \
+             && [ -z "$(git status --porcelain -- events events.json)" ]; then
             echo "No change to the published data." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           echo "published=yes" >> "$GITHUB_OUTPUT"
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add rounds.json feed.xml
+          git add rounds.json feed.xml events.json events
           git commit -m "Publish coverage of $(python3 -c "
           import json; print(json.load(open('rounds.json'))['event'])
           ")"

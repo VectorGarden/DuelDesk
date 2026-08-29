@@ -67,17 +67,31 @@ def check_rounds(label, rounds, swiss_count):
             if r.get("pairings") or r.get("standings"):
                 problems.append(f"{rl}: an upcoming round must carry no data")
             continue
-        # A round must carry something, but not necessarily both. Generated data
-        # always has each; real coverage does not -- the blog posts standings for
-        # some rounds and pairings for others.
-        if not r.get("pairings") and not r.get("standings"):
-            problems.append(f"{rl}: neither pairings nor standings")
+        # A round must carry something, but not necessarily all of it. Generated
+        # data always has each; real coverage does not -- the blog posts
+        # standings for some rounds and pairings for others, and for older
+        # events sometimes only a feature match. Five of the 2026 North America
+        # WCQ's rounds reached the archive as a feature match and nothing else,
+        # which is thin coverage of a real round, not an empty one.
+        if not r.get("pairings") and not r.get("standings") and not r.get("feature"):
+            problems.append(f"{rl}: no pairings, standings or feature match")
 
-        names = [n for p in r.get("pairings") or [] for n in (p.get("a"), p.get("b"))]
-        if any(p.get("a") == p.get("b") for p in r.get("pairings") or []):
+        pairs = r.get("pairings") or []
+        names = [n for p in pairs for n in (p.get("a"), p.get("b"))]
+        if any(p.get("a") == p.get("b") for p in pairs):
             problems.append(f"{rl}: a Duelist is paired against themselves")
-        if len(set(names)) != len(names):
-            problems.append(f"{rl}: a Duelist appears in two pairings")
+        # One name at two tables is either two Duelists or a mistake in the
+        # source, and the coverage does not always say which -- Columbus round 2
+        # seats "Colton Randolph Crane" twice with no region on either row. What
+        # must not happen is deriving a record from the merged appearances, so
+        # that, not the duplicate itself, is what fails: a name the build has
+        # already given up on is honestly reported, not a defect to fix here.
+        derived = {p[side] for p in pairs for side in ("a", "b")
+                   if (p.get(f"{side}Rec") or {}).get("confidence") in ("derived", "partial")}
+        twice = {n for n in names if names.count(n) > 1}
+        if bad := sorted(twice & derived):
+            problems.append(f"{rl}: a record was derived for {bad[0]}, "
+                            "who appears in two pairings")
 
         after = r.get("standingsAfter")
         if isinstance(after, int):

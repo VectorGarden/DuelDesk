@@ -196,8 +196,15 @@ def rounds_played(row: dict, seen_through: int | None,
 def derive(standings: list[dict], pairing_rounds: list[list[dict]],
            *, event_date: str | None = None,
            standings_series: list[list[dict]] | None = None,
-           round_numbers: list[int] | None = None) -> list[Record]:
-    """Best available record for every player in a final standings table."""
+           round_numbers: list[int] | None = None,
+           ambiguous: set[str] | frozenset = frozenset()) -> list[Record]:
+    """Best available record for every player in a final standings table.
+
+    `ambiguous` names two Duelists the coverage does not distinguish -- one name
+    seated at two tables in one round, with nothing to say which is which.
+    Counting their appearances counts two people's, so nothing is derived for
+    them: the points are reported and the record is left unknown.
+    """
     draws_possible = bool(event_date) and event_date < DRAWS_ABOLISHED
     appearances = last_appearance(pairing_rounds, round_numbers)
     exact = results_from_standings(standings_series) if standings_series else {}
@@ -209,6 +216,10 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
         if is_placeholder(name):
             continue
         played = appearances.get(name)
+
+        if name in ambiguous:
+            out.append(Record(name, points, None, None, None, None, "unknown"))
+            continue
 
         if name in exact:                       # round-by-round deltas: exact
             e = exact[name]

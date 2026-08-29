@@ -13,8 +13,11 @@ up -- an 11-0 Duelist in round 12 really did win eleven matches here.
 Deterministic: seeded PRNG, and every timestamp derives from --now. Re-running
 with the same --now reproduces the file byte for byte.
 """
-import argparse, json, random
+import argparse, json, random, sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scraper"))
+from archive import dumps, lean                             # noqa: E402
 from datetime import datetime, timedelta, timezone
 from xml.sax.saxutils import escape
 
@@ -271,7 +274,11 @@ def main():
     for f in formats_out:
         for r in f["rounds"]:
             r.pop("_stamp", None)
-    json.dump({
+    # Written by the scraper's own writer, so the fixture the page is tested
+    # against has the same shape as the coverage it is served -- compact, and
+    # with the nulls dropped out of the table rows. A fixture in a shape nothing
+    # publishes tests a page nobody visits.
+    sample = {
         "event": event,
         # Says so in the file rather than only in the markup, so the page can
         # show its badge from the data it is actually displaying.
@@ -282,7 +289,8 @@ def main():
         "drawsPossible": False,
         "updated": newest.isoformat().replace("+00:00", "Z"),
         "formats": formats_out,
-    }, open(out / "rounds.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    }
+    (out / "rounds.json").write_text(dumps(lean(sample)), encoding="utf-8")
     print(f"rounds.json: {len(formats_out)} formats, "
           + ", ".join(f"{f['format']} {len(f['rounds'])} rounds" for f in formats_out))
 

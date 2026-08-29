@@ -83,10 +83,12 @@ def titled(event: str, title: str) -> str:
 
 def build_feed(event: str, items: list[dict], *, updated: str | None = None,
                site: str = SITE) -> str:
-    """RSS 2.0 for one event's coverage.
+    """RSS 2.0 for the archive's newest coverage.
 
-    Each item is {title, url, modified, kind, format}. Items with no title or no
-    link are dropped: an entry a reader cannot open is worse than one fewer.
+    Each item is {title, url, modified, kind, format} and may carry {event, slug}
+    naming the tournament it belongs to; `event` is the fallback for items that
+    do not, and titles the channel. Items with no title or no link are dropped:
+    an entry a reader cannot open is worse than one fewer.
     """
     usable = [i for i in items if (i.get("title") or "").strip() and i.get("url")]
     usable.sort(key=lambda i: i.get("modified") or "", reverse=True)
@@ -98,9 +100,12 @@ def build_feed(event: str, items: list[dict], *, updated: str | None = None,
     for item in usable:
         label = LABELS.get(item.get("kind"), "Coverage")
         when = rfc822(item.get("modified"))
+        # Per item, because the feed spans events now. Falling back to the
+        # channel's name keeps a single-event feed reading exactly as before.
+        name = item.get("event") or event
         body.append(
             "    <item>\n"
-            f"      <title>{esc(titled(event, item['title']))}</title>\n"
+            f"      <title>{esc(titled(name, item['title']))}</title>\n"
             f"      <link>{esc(item['url'])}</link>\n"
             f"      <guid isPermaLink=\"true\">{esc(item['url'])}</guid>\n"
             f"      <category>{esc(label)}</category>\n"
@@ -111,8 +116,13 @@ def build_feed(event: str, items: list[dict], *, updated: str | None = None,
             # keeps those visible whichever format is selected.
             + (f'      <category domain="format">{esc(item["format"])}</category>\n'
                if item.get("format") else "")
+            # The event's archive slug, so the site can take a feed item to the
+            # event it belongs to without matching on the display name. Names
+            # are for reading; this is the identifier.
+            + (f'      <category domain="event">{esc(item["slug"])}</category>\n'
+               if item.get("slug") else "")
             + (f"      <pubDate>{when}</pubDate>\n" if when else "")
-            + f"      <description>{esc(label)} from {esc(event)}, "
+            + f"      <description>{esc(label)} from {esc(name)}, "
               "published by Konami. Follow the link for the original post."
               "</description>\n"
             "    </item>")

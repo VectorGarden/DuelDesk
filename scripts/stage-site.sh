@@ -14,8 +14,11 @@ OUT="${1:-_site}"
 rm -rf "$OUT"
 mkdir -p "$OUT"
 
-FILES=(index.html feed.xml rounds.json og.png favicon.ico site.webmanifest CNAME robots.txt)
-DIRS=(icons)
+FILES=(index.html feed.xml rounds.json events.json og.png favicon.ico site.webmanifest CNAME robots.txt)
+# events/ is the archive: one directory per event, fetched on demand rather than
+# all at once. Staged whole, because which event a reader opens is their choice
+# and every one of them has to be there when they make it.
+DIRS=(icons events)
 
 for f in "${FILES[@]}"; do
   [ -f "$f" ] || { echo "  MISSING $f"; exit 1; }

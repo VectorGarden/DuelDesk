@@ -50,9 +50,8 @@ the card frame.
 
 ## Scraping the official blog
 
-[`scraper/`](scraper/) parses coverage posts from Konami's Yu-Gi-Oh! TCG blog. **Nothing in the
-site consumes it yet** — it produces structured data, and mapping that onto the page's model is a
-separate decision (see below).
+[`scraper/`](scraper/) parses coverage posts from Konami's Yu-Gi-Oh! TCG blog, and what it finds
+is what the site serves.
 
 The sitemap is the only supported way in: every `/feed/` path 404s and the WordPress REST posts
 endpoint returns 403. `robots.txt` disallows only `/wp-admin/` and publishes `wp-sitemap.xml`
@@ -63,7 +62,7 @@ never by column position, because the blog uses at least three layouts:
 
 | Layout | Columns |
 | --- | --- |
-| Standings | `Rank`, `Player Name`, `Points` |
+| Standings | `Rank`, `Player Name`, `Points` — the points column is often absent |
 | Pairings | `Table`, `P1 First Name`, `P1 Last Name`, `vs.`, `P2 …`, `P2 …` |
 | Pairings with decks | `Table`, `Duelist 1 Name`, `Duelist 1 Deck Type`, `vs.`, … |
 
@@ -71,24 +70,60 @@ never by column position, because the blog uses at least three layouts:
 python3 -m unittest discover -s scraper -p 'test_*.py'
 ```
 
-17 tests run against real pages saved under `test/fixtures/blog/`, so they need no network and run
-in CI.
+The tests run against real pages saved under `test/fixtures/blog/`, so they need no network and
+run in CI. Every defect they guard against was found in actual markup, not imagined.
 
 `scraper/build.py` assembles parsed posts into the site's schema — grouped by format, rounds
 ordered, records derived. `scraper/run.py` is the entry point; the `Scrape coverage` workflow runs
-it hourly behind the sitemap gate.
+it behind the sitemap gate and commits what it finds.
 
-**It does not publish to the site.** The workflow uploads an artifact and reports what it found, so
-the scraper can be judged against live coverage before anything it builds is served.
+### The archive
 
-### What does not map cleanly yet
+The blog indexes about 12,000 posts, roughly 4,800 of which are event coverage across 97 event
+slugs. A run builds the newest event every time — it may still be running — and, when asked, a few
+older ones behind it:
 
-- **The blog reports points, the site models W–L–0 records.** They are different quantities.
-- **Events run two parallel tournaments** (Advanced and Genesys); `rounds.json` has no format axis.
-- **Event identity is genuinely ambiguous.** Posts appear both under an event slug
-  (`/2026/ycs/2026-08-quebec/…`) and without one, and concurrent events are real — the 2026 WCQ and
-  the Genesys Championship both ran on 2026-07-11. Posts are attached by date window and format,
-  and anything still ambiguous is reported as such rather than guessed.
+```bash
+python3 scraper/run.py --backfill 3        # the newest event, plus three more
+```
+
+Each event is written once and skipped on every run after that. The memory is the archive itself
+rather than a state file, so deleting an event's directory is how a bad build is retried.
+
+```
+events.json                        every event, small enough to load first
+events/<slug>/rounds.json          that event's rounds — the page's payload
+events/<slug>/posts.json           its coverage posts, for rebuilding the feed
+```
+
+`posts.json` exists because the feed spans events. A run backfills a few at a time, so a feed built
+only from what that run fetched would drop everything the run before it covered.
+
+### Event identity
+
+Posts appear both under an event slug (`/2026/ycs/2026-08-quebec/…`) and without one, and only
+about a fifth carry the slug. The rest are attached by date window — which takes some care:
+
+- **`lastmod` is a modification date.** Edit one 2014 post today and that event's window stretches
+  across eleven years. Eleven of 97 slugs were affected, almost always by a single re-edited post,
+  so the window is the largest cluster of an event's dates rather than their full range.
+- **A shared date is not coverage.** Three Legendary Arc-V product announcements and an item about
+  New York Comic Con were published during YCS Montréal and shown as its coverage. A post from a
+  category the event does not use has to name the event, in vocabulary read from the event's own
+  slugs rather than from a list.
+- **Concurrent events are real** — the 2026 WCQ and the Genesys Championship both ran on
+  2026-07-11 — so where a date matches two windows the format decides, and anything still
+  ambiguous is reported rather than guessed.
+
+### What the coverage does not always say
+
+- **The blog reports points, the site models W–L–0 records.** They are different quantities, and
+  where the points column is missing entirely no record can be derived at all — the page shows `?`
+  rather than a number nothing supports.
+- **Some events name no format.** The North America WCQ titles every post "North America WCQ:
+  Round 10 Pairings". That is one tournament with no format name, not a missing one.
+- **Two Duelists can share a name.** At YCS Columbus "Johnny KS Nguyen" and "Johnny PA Nguyen" are
+  two people; the region tells them apart. Where nothing does, nothing is derived for that name.
 
 ## Tests
 
@@ -211,7 +246,10 @@ to fetch, parse, and serve the JSON to the page.
 | File | Purpose |
 | --- | --- |
 | `index.html` | The entire site — markup, styles, and behaviour. |
-| `feed.xml` | RSS 2.0 coverage feed. |
+| `feed.xml` | RSS 2.0 coverage feed, newest posts across the whole archive. |
+| `rounds.json` | The newest event's rounds — what the page loads today. |
+| `events.json` | Every event in the archive: name, date, formats, and where to find it. |
+| `events/` | One directory per event; fetched on demand, not all at once. |
 | `og.png` | 1200×630 social preview image. |
 | `favicon.ico` | Multi-resolution legacy favicon (16/32/48). |
 | `site.webmanifest` | PWA manifest — name, colours, install icons. |
