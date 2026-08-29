@@ -652,6 +652,125 @@
           "rounds": 15
         }
       ]
+    },
+    {
+      "slug": "201703-uds-winter-invitational-las-vegas",
+      "event": "YCS Guatemala City, Guatemala",
+      "updated": "2017-03-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201703-uds-winter-invitational-las-vegas/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 271,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "201611-anaheim-ca",
+      "event": "YCS Anaheim",
+      "updated": "2016-11-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201611-anaheim-ca/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1121,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "uds-2016-elsalvador",
+      "event": "UDS Invitational El Salvador",
+      "updated": "2016-11-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/uds-2016-elsalvador/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 75,
+          "rounds": 9
+        }
+      ]
+    },
+    {
+      "slug": "yu-gi-oh-world-championship-2016",
+      "event": "Dragon Duel",
+      "updated": "2016-08-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/yu-gi-oh-world-championship-2016/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 5,
+          "duelists": 56,
+          "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "201603-santiago-chile",
+      "event": "201603 Santiago Chile",
+      "updated": "2016-05-02",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201603-santiago-chile/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 353,
+          "rounds": 7
+        }
+      ]
+    },
+    {
+      "slug": "201509-monterrey",
+      "event": "201509 Monterrey",
+      "updated": "2015-09-05",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201509-monterrey/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 375,
+          "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "2015-south-american-wcq",
+      "event": "Top Table Update",
+      "updated": "2015-07-05",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2015-south-american-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 8,
+          "duelists": 276,
+          "rounds": 8
+        }
+      ]
     }
   ]
 }
