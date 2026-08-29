@@ -180,7 +180,19 @@ def check_rounds(label, rounds, swiss_count):
             sides[r["label"]] = n * 2 // competitors
 
     if isinstance(swiss_count, int):
-        for depth, r in enumerate(played_cut):
+        # A Duelist arriving in a cut round has played the Swiss plus the cut
+        # rounds before it -- but only the ones the blog published. A bracket
+        # win is counted by seeing the Duelist paired in the round after it, so
+        # a cut round nobody posted pairings for adds nothing to anyone's
+        # record, and expecting it back rejected YCS Philadelphia over 35
+        # Duelists whose Top 64 match was never published.
+        #
+        # Counted rather than assumed, so the rule keeps its whole force where
+        # the coverage is complete: an event with every cut round posted expects
+        # exactly what it did before.
+        posted = 0
+        for r in played_cut:
+            depth, posted = posted, posted + bool(r.get("pairings"))
             for p in r.get("pairings") or []:
                 for who, rec in (("a", p.get("aRec")), ("b", p.get("bRec"))):
                     if rec is None or (isinstance(rec, dict)

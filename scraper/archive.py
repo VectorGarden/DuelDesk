@@ -83,13 +83,46 @@ def write_event(root: str | Path, slug: str, event: dict, posts: list[dict]) -> 
     return out
 
 
-def scraped(root: str | Path) -> set[str]:
-    """Slugs already built. This is the backfill's memory.
+def rejected_path(root: str | Path, slug: str) -> Path:
+    return event_dir(root, slug) / "rejected.json"
 
-    Read off the files rather than kept in a state file, so it cannot disagree
-    with what is actually there: delete an event's directory and the next run
-    fetches it again, which is also how a bad build is retried.
+
+def reject_event(root: str | Path, slug: str, reason: str) -> None:
+    """Record that an event was built and would not do, and why.
+
+    Without this the backfill cannot get past a bad event. A rejected event
+    leaves nothing in the archive, so the next run does not count it as
+    attempted, so it is picked again -- and because the plan takes the newest
+    events missing from the archive, the same failures are retried first every
+    time and the run never reaches the ones behind them. Five batches of ten
+    landed 21 events and then stopped dead: every batch was spending itself on
+    the same seven rejections.
+
+    Kept in the archive rather than a state file, and readable, so what the
+    archive is missing and why is a thing in the repository rather than a line
+    in a log that expires. Delete the file to try again.
     """
+    d = event_dir(root, slug)
+    d.mkdir(parents=True, exist_ok=True)
+    rejected_path(root, slug).write_text(
+        dumps({"slug": slug, "reason": reason}, pretty=True), encoding="utf-8")
+
+
+def attempted(root: str | Path) -> set[str]:
+    """Slugs the archive has already built, whether or not it kept them.
+
+    This is the backfill's memory. Read off the files rather than kept in a
+    state file, so it cannot disagree with what is actually there.
+    """
+    root = Path(root)
+    if not root.is_dir():
+        return set()
+    return {d.name for d in root.iterdir()
+            if (d / "rounds.json").is_file() or (d / "rejected.json").is_file()}
+
+
+def scraped(root: str | Path) -> set[str]:
+    """Slugs the archive holds coverage for. What the manifest is built from."""
     root = Path(root)
     if not root.is_dir():
         return set()

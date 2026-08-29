@@ -258,8 +258,7 @@ def build_format(name: str | None, sources: list[Source], *,
         # source order happened to leave last, so the choice is a decision and
         # the same scrape twice running gives the same answer.
         existing = by_round[key].get(s.post.kind)
-        if (s.post.kind == "feature" and existing
-                and (existing.posted or "") > (s.posted or "")):
+        if s.post.kind == "feature" and existing and not better_feature(s, existing):
             continue
         by_round[key][s.post.kind] = s
     if not by_round:
@@ -529,6 +528,27 @@ def entered_as_teams(sources: list[Source]) -> bool:
     if not named:
         return False
     return sum(":" in n for n in named) > len(named) / 2
+
+
+def better_feature(candidate: Source, existing: Source) -> bool:
+    """Whether `candidate` is the feature match to show for a round.
+
+    A round can carry more than one -- Genesys round 4 had two, and YCS
+    Philadelphia's Top 64 had two as well. The newest wins, so the choice is a
+    decision rather than whichever the source order happened to leave last.
+
+    But only among the ones that can be read. The panel needs the two Duelists,
+    and the title is the only structured thing about a feature post; a title
+    whose players cannot be parsed out gives the round a feature match that
+    names nobody. Philadelphia's newer Top 64 post was "Hani Jawhari Versus
+    Nicholas Scarangella", so the round it left behind held nothing at all --
+    no pairings, no standings, and a feature naming no one -- and the whole
+    event was rejected for it.
+    """
+    readable = lambda s: feature_players(s.post.title) is not None
+    if readable(candidate) != readable(existing):
+        return readable(candidate)
+    return (candidate.posted or "") >= (existing.posted or "")
 
 
 def is_tournament(fmt: dict) -> bool:
