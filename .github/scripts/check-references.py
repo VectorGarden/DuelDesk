@@ -34,11 +34,16 @@ def main(path="index.html"):
 def _main(path="index.html", list_only=False):
     html = Path(path).read_text(encoding="utf-8")
 
-    # Strip <script> and <style> bodies before scanning. Their contents are
+    # Strip <script> and <style> *bodies* before scanning. Their contents are
     # code, not markup: a template literal like href="${esc(p.url)}" would
     # otherwise be read as a filename and reported missing.
+    #
+    # The opening tag is kept, because that is where a reference lives once the
+    # code moves out of the page: this dropped the whole element, so
+    # <script src="app.js"> was stripped along with its body and the file the
+    # site cannot run without was never checked for at all.
     markup = re.sub(
-        r"<(script|style)\b[^>]*>.*?</\1\s*>", "", html, flags=re.S | re.I
+        r"(<(script|style)\b[^>]*>).*?</\2\s*>", r"\1", html, flags=re.S | re.I
     )
 
     refs = set()

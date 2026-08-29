@@ -1,15 +1,19 @@
 /**
- * Parse-check every inline <script> in an HTML file.
+ * Parse-check the page's JavaScript: every inline <script>, and every local
+ * file one points at with src.
  *
- * The whole site is one file, so its JavaScript never reaches a bundler or a
- * linter on its own. An HTML validator will not catch a syntax error inside a
- * <script> block either — it treats the contents as opaque text. This pulls
- * each block out and runs `node --check` over it.
+ * None of it reaches a bundler or a linter on its own, and an HTML validator
+ * treats a <script> body as opaque text. This pulls each block out and runs
+ * `node --check` over it.
+ *
+ * The src files matter as much as the inline ones now that the behaviour lives
+ * in app.js: a syntax error there is a page that renders its markup and does
+ * nothing, which every other check in the build would call fine.
  */
 import { readFileSync, writeFileSync, mkdtempSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 
 const file = process.argv[2];
 if (!file) {
@@ -18,32 +22,41 @@ if (!file) {
 }
 
 const src = readFileSync(file, 'utf8');
-// Inline scripts only — anything with src= is a external reference, not ours.
-const blocks = [...src.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)];
+const inline = [...src.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)]
+  .map((m, i) => ({ what: `inline block ${i + 1}`, code: m[1] }));
 
+/* Local files only. A src pointing off-site is somebody else's to parse, and
+   this build has none of them. */
+const linked = [...src.matchAll(/<script[^>]*\bsrc="([^"]+)"/gi)]
+  .map((m) => m[1])
+  .filter((href) => !/^(https?:)?\/\//.test(href))
+  .map((href) => ({
+    what: href,
+    code: readFileSync(join(dirname(file), href), 'utf8'),
+  }));
+
+const blocks = [...inline, ...linked];
 if (blocks.length === 0) {
-  console.error(`${file}: no inline <script> blocks found — expected at least one`);
+  console.error(`${file}: no JavaScript found — expected at least one script`);
   process.exit(1);
 }
 
 const dir = mkdtempSync(join(tmpdir(), 'inline-js-'));
 let failed = 0;
 
-blocks.forEach((m, i) => {
-  const code = m[1];
-  // Line number of the block's opening tag, so errors map back to the HTML.
-  const startLine = src.slice(0, m.index).split('\n').length;
+blocks.forEach(({ what, code }, i) => {
   const path = join(dir, `block-${i + 1}.js`);
   writeFileSync(path, code);
+  const lines = code.trim().split('\n').length;
   try {
     execFileSync(process.execPath, ['--check', path], { stdio: 'pipe' });
-    console.log(`  ok    block ${i + 1} (${file}:${startLine}, ${code.trim().split('\n').length} lines)`);
+    console.log(`  ok    ${what} (${lines} lines)`);
   } catch (err) {
     failed++;
-    console.error(`  FAIL  block ${i + 1} (${file}:${startLine})`);
+    console.error(`  FAIL  ${what}`);
     console.error(String(err.stderr || err.message).replace(/^/gm, '        '));
   }
 });
 
-console.log(`${blocks.length} inline script block(s) checked, ${failed} failed`);
+console.log(`${blocks.length} script(s) checked, ${failed} failed`);
 process.exit(failed ? 1 : 0);
