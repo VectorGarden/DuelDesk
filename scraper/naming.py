@@ -168,7 +168,11 @@ def event_name(titles: list[str], fallback: str) -> str:
 _REGIONS = ((r"\bnawcq\b|\bnorth american?\b", "North America"),
             (r"\bcentral american?\b", "Central America"),
             (r"\bsouth american?\b", "South America"))
-_IS_WCQ = re.compile(r"\bn?wcq\b|world championship qualifier", re.I)
+# "nawcq" as well, which _REGIONS already reads as North America and this
+# refused to let through: the 2024 qualifier published its Swiss rounds as
+# "north-america-wcq-..." and its top cut as "nawcq-...", and the two halves
+# came out as two tournaments three days apart.
+_IS_WCQ = re.compile(r"\b(?:na|n)?wcq\b|world championship qualifier", re.I)
 _YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
 
 # Words that say what kind of event this is rather than where it was. A slug

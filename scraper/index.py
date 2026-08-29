@@ -23,6 +23,9 @@ from collections import Counter
 from dataclasses import dataclass, asdict
 from datetime import date
 
+from naming import wcq_name
+from parse import detect_kind
+
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 BASE = "https://yugiohblog.konami.com/"
 
@@ -41,6 +44,10 @@ GAP_DAYS = 30
 
 # How many of an event's own posts a word must appear in to count as naming it.
 MIN_TERM_SHARE = 0.5
+
+# The two kinds of post a round track is built from. An event that published
+# neither is an announcement, not coverage.
+TOURNAMENT = ("pairings", "standings")
 
 
 @dataclass
@@ -178,6 +185,219 @@ def same_series(entry: Entry, windows: dict, within) -> str | None:
     return None
 
 
+# Words that say what a post is about rather than which event it covers. A post
+# slug is the event's name followed by the post's subject --
+# "ycs-atlanta-round-1-pairings", "uds-invitational-lima-peru-standings-after-
+# round-3" -- so the first of these words is where the name stops.
+#
+# Only words that are genuinely about a post. "in" and "the" were in this set
+# and cost the archive an event: "250th-ycs-in-bogota-colombia-round-1-pairings"
+# and "250th-ycs-in-los-angeles-round-3-pairings" both cut back to "250th-ycs",
+# which merged two tournaments held the same weekend into one.
+POST_SUBJECT = {"pairings", "pairing", "standings", "round", "rounds", "top",
+                "after", "final", "finals", "feature", "match", "matches",
+                "deck", "decks", "breakdown", "results", "result", "winner",
+                "winners", "welcome", "day", "table", "tables", "update",
+                "updates", "cut", "swiss", "bracket", "playoff", "playoffs",
+                "quarterfinals", "semifinals", "photo", "gallery"}
+
+# Two runnings of one event are at least this far apart, so a gap this long
+# inside one name's dates is the next year's tournament rather than a slow
+# weekend. Same reasoning as GAP_DAYS, and the same value.
+SERIES_GAP_DAYS = GAP_DAYS
+
+# Below this a group is strays -- a couple of posts that escaped an event the
+# path names -- rather than coverage of a tournament nobody filed.
+MIN_DISCOVERED_POSTS = 5
+
+
+def event_prefix(slug: str) -> str:
+    """The part of a post's slug that names its event, or "".
+
+    Konami files most coverage with no event in the URL, but the post slug
+    still opens with the event's name. Cutting at the first word about the post
+    leaves it: "ycs-atlanta-round-1-pairings" is YCS Atlanta's.
+
+    Empty for the older coverage, which is titled and slugged only for what the
+    post contains -- "standings-after-round-3" says nothing about which
+    tournament, and neither does the page it points at.
+    """
+    words = []
+    for w in slug.split("-"):
+        if w in POST_SUBJECT:
+            break
+        words.append(w)
+    return "-".join(words)
+
+
+def _slug_words(slug: str) -> set[str]:
+    return {w for w in slug.split("-") if w and not w.isdigit()}
+
+
+def _overlaps(a: tuple[str, str], b: tuple[str, str], slack_days: int = 0) -> bool:
+    """Whether two date ranges meet, the second widened by a few days.
+
+    The same slack the date rules allow, and for the same reason: write-ups
+    land after the event ends, so a group and the event it belongs to often sit
+    next to each other rather than on top of each other. The 2026 North America
+    WCQ's own posts are dated the 11th and the rounds that escaped it the 12th,
+    which strict overlap called two different tournaments.
+    """
+    lo = date.fromisoformat(b[0]).toordinal() - slack_days
+    hi = date.fromisoformat(b[1]).toordinal() + slack_days
+    return not (date.fromisoformat(a[1]).toordinal() < lo
+                or hi < date.fromisoformat(a[0]).toordinal())
+
+
+def _split_runnings(rows: list, gap_days: int) -> list[list]:
+    """One name's posts, cut into the separate tournaments that used it."""
+    rows = sorted(rows, key=lambda r: r["lastmod"])
+    out, current = [], [rows[0]]
+    for r in rows[1:]:
+        if (date.fromisoformat(r["lastmod"]).toordinal()
+                - date.fromisoformat(current[-1]["lastmod"]).toordinal()) > gap_days:
+            out.append(current)
+            current = []
+        current.append(r)
+    out.append(current)
+    return out
+
+
+def _minted_slug(prefix: str, lo: str, taken: set[str]) -> str:
+    """A stable id for an event the blog never gave one.
+
+    The name the posts use, with the year in front where they left it out, in
+    the same shape as the slugs Konami does write: "2017-ycs-atlanta". The
+    month is added only if that is already somebody else's.
+    """
+    year, month = lo[:4], lo[5:7]
+    base = prefix if _SLUG_YEAR.search(f"-{prefix}") else f"{year}-{prefix}"
+    if base not in taken:
+        return base
+    return f"{year}-{month}-{prefix}"
+
+
+def discover_events(records: list[dict], windows: dict, is_tournament,
+                    gap_days: int = SERIES_GAP_DAYS,
+                    minimum: int = MIN_DISCOVERED_POSTS,
+                    slack_days: int = 4) -> dict[str, str]:
+    """Post URL -> event, for coverage the blog filed under no event at all.
+
+    Two thirds of this blog's tournament coverage carries no event in its URL.
+    The 2023 North America WCQ has thirty-odd posts under /2023/championships/
+    and not one of them says which tournament in the path, so nothing above
+    this could see the event -- 2,560 rounds of pairings and standings, and
+    something over a hundred tournaments, were simply not there.
+
+    What the path leaves out the slug says: posts open with the event's name.
+    Grouping on that name and cutting each group where its dates say one
+    tournament ended and the next began is enough to find them, and the two
+    signals check each other -- a name recurring every year is split by the
+    dates, and two tournaments held the same weekend are kept apart by the
+    name.
+
+    A group whose name is already an event's, over dates that event covers, is
+    that event: those posts escaped it rather than being a tournament of their
+    own, and 2026 North America WCQ gets back twenty-two rounds this way.
+    """
+    groups: dict[str, list[dict]] = {}
+    for rec in records:
+        if rec["event"] or not rec["lastmod"] or not is_tournament(rec):
+            continue
+        if prefix := event_prefix(rec["slug"]):
+            groups.setdefault(prefix, []).append(rec)
+
+    found = []
+    for prefix, rows in sorted(groups.items()):
+        for running in _split_runnings(rows, gap_days):
+            found.append((prefix, running,
+                          (running[0]["lastmod"], running[-1]["lastmod"]), {prefix}))
+    found = _merge_same_qualifier(found, slack_days)
+
+    out: dict[str, str] = {}
+    minted: set[str] = set()
+    # Every name an event answers to, and the dates it ran, for the second pass
+    # below. A merged qualifier answers to two.
+    known: dict[str, tuple[set[str], tuple[str, str]]] = {}
+    for prefix, running, span, names in found:
+        host = [slug for slug, w in windows.items()
+                if _slug_words(prefix) <= _slug_words(slug)
+                and _overlaps(span, w, slack_days)]
+        if len(host) == 1:
+            event = host[0]
+        elif host or len(running) < minimum:
+            # Two events could host it, or it is too small to be one: the
+            # posts stay unassigned rather than being guessed at.
+            continue
+        else:
+            event = _minted_slug(prefix, span[0], set(windows) | minted)
+            minted.add(event)
+        for r in running:
+            out[r["url"]] = event
+        seen, dates = known.get(event, (set(), span))
+        known[event] = (seen | names,
+                        (min(span[0], dates[0]), max(span[1], dates[1])))
+
+    # The rest of each event's coverage: its feature matches, its deck
+    # breakdowns, the post welcoming everyone to it. Found the same way and
+    # held to the same two signals, so a post joins on its own name and its own
+    # date rather than on being adjacent to something that did.
+    for rec in records:
+        if rec["event"] or rec["url"] in out or not rec["lastmod"]:
+            continue
+        if not (prefix := event_prefix(rec["slug"])):
+            continue
+        for event, (names, dates) in known.items():
+            if ((prefix in names or _slug_words(prefix) <= _slug_words(event))
+                    and _overlaps((rec["lastmod"], rec["lastmod"]), dates, slack_days)):
+                out[rec["url"]] = event
+                break
+    return out
+
+
+def _merge_same_qualifier(found: list, slack_days: int) -> list:
+    """One qualifier written two ways is one tournament.
+
+    The 2024 North America WCQ published its Swiss rounds as
+    "north-america-wcq-round-10-pairings" and its top cut as
+    "nawcq-top-16-pairings-and-deck-types", which are two names and would
+    otherwise be two events three days apart in the reader's list.
+
+    Only qualifiers, and only where the naming module reads both names as the
+    same one -- "North America WCQ 2024" -- over dates that meet. That is a
+    narrower thing than merging on a shared date, which would take the Genesys
+    Championship running alongside as well.
+
+    The fuller name wins, because the group that carries it is the bigger one:
+    the abbreviation turns up on the cut, and the cut is the short half. Both
+    are kept, so the event's feature matches and deck breakdowns can be found
+    under whichever of the two they were slugged with.
+    """
+    keyed: dict[str, list] = {}
+    rest = []
+    for item in found:
+        prefix, _, span, _names = item
+        if name := wcq_name(prefix, "", span[1]):
+            keyed.setdefault(name, []).append(item)
+        else:
+            rest.append(item)
+
+    for items in keyed.values():
+        items.sort(key=lambda i: i[2][0])
+        merged = [items[0]]
+        for prefix, rows, span, names in items[1:]:
+            was_prefix, was_rows, was_span, was_names = merged[-1]
+            if _overlaps(span, was_span, slack_days):
+                merged[-1] = (was_prefix if len(was_rows) >= len(rows) else prefix,
+                              was_rows + rows,
+                              (min(span[0], was_span[0]), max(span[1], was_span[1])),
+                              was_names | names)
+            else:
+                merged.append((prefix, rows, span, names))
+        rest += merged
+    return rest
+
+
 def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
     """Attach every post to an event.
 
@@ -241,4 +461,15 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
             else:
                 rec["event"], rec["event_confidence"] = None, "unmatched"
         out.append(rec)
+
+    # Last, because it works on what is left: everything the path or the dates
+    # could identify has been, and these are the tournaments that were not
+    # there at all. Nothing above is revisited, so an event the earlier rules
+    # settled can only gain posts here, never lose or exchange them.
+    found = discover_events(out, windows, lambda r: detect_kind(r["slug"]) in TOURNAMENT,
+                            slack_days=slack_days)
+    for rec in out:
+        if slug := found.get(rec["url"]):
+            rec["event"], rec["event_confidence"] = slug, (
+                "prefix" if slug in windows else "discovered")
     return out
