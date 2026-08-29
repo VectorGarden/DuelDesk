@@ -7,7 +7,7 @@
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { loadPage, waitFor, fixture, roundsFixture } from './harness.mjs';
+import { loadPage, waitFor, tick, fixture, roundsFixture } from './harness.mjs';
 
 const SAMPLE = JSON.parse(fixture('events.json')).events[0];
 
@@ -33,6 +33,10 @@ const twoEvents = (extra = {}) => ({
   routes: {
     'events.json': { status: 200, body: JSON.stringify({ events: [SAMPLE, OLDER] }) },
     'older-ycs-columbus/rounds.json': () => ({ status: 200, body: JSON.stringify(olderRounds()) }),
+    /* The event on screen contributes no coverage of its own. The simulation
+       has fifty-six posts, and every one of them is noise in a test asserting
+       something about the other event or about the feed. */
+    'sample-remote-duel-ycs/posts.json': { status: 200, body: '[]' },
     ...extra,
   },
 });
@@ -305,11 +309,15 @@ test('once an event is on screen its headlines become jumps', async (t) => {
 });
 
 test('the event on screen is not offered as somewhere to go', async (t) => {
+  // Every event in the archive is listed now, so the other one is there with
+  // its own control. The one being read is the one that must not have it.
   const page = await loadPage(twoEvents({
     'feed.xml': { status: 200, body: FEED(SAMPLE.slug) },
   }));
   t.after(() => page.close());
-  assert.equal(page.$('#events [data-open-event]'), null);
+  const offered = page.$$('#events [data-open-event]').map((b) => b.dataset.openEvent);
+  assert.ok(!offered.includes(SAMPLE.slug), offered.join(','));
+  assert.deepEqual(offered, [OLDER.slug]);
 });
 
 test('a feed group is keyed on the event slug, not its display name', async (t) => {
@@ -368,8 +376,11 @@ test('the format choice still filters the event on screen', async (t) => {
   const page = await loadPage(twoEvents({ 'feed.xml': { status: 200, body: feed } }));
   t.after(() => page.close());
   assert.equal(page.get('activeFormat'), 'Advanced');
-  assert.equal(page.$$('#events article.event').length, 0,
-    'a Genesys post from the event on screen is not part of its Advanced tournament');
+  // The event on screen keeps no posts under an Advanced filter, so it drops
+  // out of the list. The other event is still listed -- unopened, it has no
+  // posts to filter, and the row is how a reader reaches it.
+  const listed = page.$$('#events .event__bar').map((b) => b.dataset.ev);
+  assert.ok(!listed.includes(SAMPLE.event), listed.join(','));
 });
 
 /* ---- a tournament with no format name --------------------------------- */
@@ -457,4 +468,181 @@ test('an event with no known location says nothing about one', async (t) => {
   t.after(() => page.close());
   // "1,248 Duelists" has a comma; a location is a comma followed by a word.
   assert.ok(!/,\s*[A-Za-z]/.test(page.text('#hero-meta')), page.text('#hero-meta'));
+});
+
+/* ---- coverage comes from the archive, not the feed ---------------------- */
+
+const POSTS = [
+  { title: 'YCS Columbus: Round 3 Pairings', url: 'https://yugiohblog.konami.com/a/',
+    modified: '2026-05-23T18:00:00Z', kind: 'pairings', format: 'Advanced',
+    event: 'YCS Columbus', slug: OLDER.slug },
+  { title: 'YCS Columbus: Standings After Round 3', url: 'https://yugiohblog.konami.com/b/',
+    modified: '2026-05-23T17:00:00Z', kind: 'standings', format: 'Advanced',
+    event: 'YCS Columbus', slug: OLDER.slug },
+];
+
+/* A feed with nothing in it, so these tests see the archive and only the
+   archive. The shipped fixture feed carries events of its own, which the list
+   correctly includes and which would drown out what is being asserted here. */
+const BARE_FEED = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Duel Desk</title>
+  <link>https://dueldesk.reizu.dev/</link><description>x</description></channel></rss>`;
+
+const SAMPLE_POSTS = [
+  { title: `${SAMPLE.event}: Round 1 Pairings`, url: 'https://yugiohblog.konami.com/s/',
+    modified: '2026-08-29T18:00:00Z', kind: 'pairings', format: 'Advanced',
+    event: SAMPLE.event, slug: SAMPLE.slug },
+];
+
+const withPosts = (extra = {}) => twoEvents({
+  'feed.xml': { status: 200, body: BARE_FEED },
+  'sample-remote-duel-ycs/posts.json': { status: 200, body: JSON.stringify(SAMPLE_POSTS) },
+  'older-ycs-columbus/posts.json': { status: 200, body: JSON.stringify(POSTS) },
+  ...extra,
+});
+
+const bars = (page) => page.$$('#events .event__bar').map((b) => b.dataset.ev);
+
+test('every event in the archive is listed, not only those in the feed', async (t) => {
+  // The feed is one river of the newest three hundred posts across the whole
+  // archive: of fifty-two events, five had any item in it and forty-seven
+  // showed no coverage at all.
+  const page = await loadPage(withPosts());
+  t.after(() => page.close());
+  assert.deepEqual(bars(page), [SAMPLE.event, 'YCS Columbus']);
+});
+
+test("an event's posts are fetched when its group is opened", async (t) => {
+  const page = await loadPage(withPosts());
+  t.after(() => page.close());
+  const asked = () => page.calls.filter((c) => String(c.url).includes(`${OLDER.slug}/posts.json`)).length;
+  assert.equal(asked(), 0, 'a listed event costs nothing until it is opened');
+
+  page.$$('#events .event__bar').find((b) => b.dataset.ev === 'YCS Columbus').click();
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  await tick(page, 2);
+  assert.equal(asked(), 1);
+  assert.match(page.text('#events'), /Round 3 Pairings/);
+});
+
+test('the event name is not repeated on every one of its posts', async (t) => {
+  const page = await loadPage(withPosts());
+  t.after(() => page.close());
+  page.run(`loadEventPosts('${OLDER.slug}')`);
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  assert.deepEqual(page.json(`POSTS.get('${OLDER.slug}').map(p => p.title)`),
+    ['Round 3 Pairings', 'Standings After Round 3']);
+});
+
+test('an event asked for twice before its posts arrive is fetched once', async (t) => {
+  /* Both the render and the click ask, and on a slow connection the second ask
+     lands while the first is still in flight. */
+  const page = await loadPage(withPosts());
+  t.after(() => page.close());
+  page.run(`loadEventPosts('${OLDER.slug}'); loadEventPosts('${OLDER.slug}');`);
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  await tick(page, 2);
+  page.run(`loadEventPosts('${OLDER.slug}')`);
+  await tick(page, 2);
+  assert.equal(
+    page.calls.filter((c) => String(c.url).includes(`${OLDER.slug}/posts.json`)).length, 1,
+    'once in flight and once already held, neither is fetched again');
+});
+
+test('an event whose posts will not load shows none rather than an error', async (t) => {
+  // The rounds above it are the page's actual subject and they are on screen.
+  const page = await loadPage(withPosts({
+    'older-ycs-columbus/posts.json': { status: 500 },
+  }));
+  t.after(() => page.close());
+  page.run(`loadEventPosts('${OLDER.slug}')`);
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  assert.deepEqual(page.json(`POSTS.get('${OLDER.slug}')`), []);
+  assert.equal(page.get('coverageState'), 'ready');
+});
+
+test('an event whose posts will not load is not asked for again', async (t) => {
+  /* The failed fetch records an empty list, and that record is what stops it
+     being asked for again: without it every render finds the event still
+     incomplete and fetches once more, which is a loop rather than an
+     empty list. */
+  const page = await loadPage(withPosts({
+    'older-ycs-columbus/posts.json': { status: 500 },
+  }));
+  t.after(() => page.close());
+  const asked = () => page.calls.filter((c) => String(c.url).includes(`${OLDER.slug}/posts.json`)).length;
+  page.$$('#events .event__bar').find((b) => b.dataset.ev === 'YCS Columbus').click();
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  await tick(page, 3);
+  page.run('renderEvents(); renderEvents();');
+  await tick(page, 2);
+  assert.equal(asked(), 1, 'asked once, and not again on every render');
+});
+
+test('the count is the archive\'s, not a tally of what has been opened', async (t) => {
+  // The page fetches an event's posts only when it is opened, so a total added
+  // up from what is loaded would climb as the reader worked down the list.
+  // Here one post of the hundred and seventy-eight has actually been fetched.
+  const page = await loadPage(withPosts({
+    'events.json': { status: 200, body: JSON.stringify({
+      events: [{ ...SAMPLE, postCount: 56 }, { ...OLDER, postCount: 122 }] }) },
+  }));
+  t.after(() => page.close());
+  assert.match(page.text('#count'), /2 events · 178 updates/);
+});
+
+test('a four-figure total is grouped, as the duelist counts are', async (t) => {
+  const page = await loadPage(withPosts({
+    'events.json': { status: 200, body: JSON.stringify({
+      events: [{ ...SAMPLE, postCount: 2000 }, { ...OLDER, postCount: 1060 }] }) },
+  }));
+  t.after(() => page.close());
+  assert.match(page.text('#count'), /3,060 updates/);
+});
+
+test('a search counts what it matched rather than the archive', async (t) => {
+  // Only a fetched event has post titles to search, so the archive's total
+  // would be a promise the result cannot keep.
+  const page = await loadPage(withPosts());
+  t.after(() => page.close());
+  page.run(`loadEventPosts('${OLDER.slug}')`);
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  await tick(page, 2);
+  page.run(`qEl.value = 'Round 3 Pairings'; runSearch();`);
+  assert.match(page.text('#count'), /1 matching/);
+});
+
+test('the list shows a handful of events and offers the rest', async (t) => {
+  // Fifty-two events is a long way to scroll past to reach anything else.
+  const many = Array.from({ length: 9 }, (_, i) => ({
+    ...SAMPLE, slug: `e${i}`, event: `Event ${i}`, updated: `2026-0${i + 1}-01`,
+    path: `events/e${i}/rounds.json`,
+  }));
+  const page = await loadPage({
+    routes: {
+      'events.json': { status: 200, body: JSON.stringify({ events: many }) },
+      'rounds.json': () => ({ status: 200, body: JSON.stringify(roundsFixture()) }),
+      // One post each, so none of them drops out for having no coverage and the
+      // count is about how many the list shows rather than how many it has.
+      'posts.json': { status: 200, body: JSON.stringify(SAMPLE_POSTS) },
+      'feed.xml': { status: 200, body: BARE_FEED },
+    },
+  });
+  t.after(() => page.close());
+  assert.equal(bars(page).length, 5);
+  assert.match(page.text('#events'), /Show all 9 events/);
+
+  page.$('#events [data-show-all]').click();
+  assert.equal(bars(page).length, 9);
+  assert.equal(page.$('#events [data-show-all]'), null, 'nothing left to show');
+});
+
+test('an event the feed names but the archive does not is still listed', async (t) => {
+  // It should not happen -- the feed is built from the archive -- and if it
+  // does the coverage is real, so hiding it would be the wrong way round.
+  const page = await loadPage(twoEvents({
+    'feed.xml': { status: 200, body: FEED('an-event-nobody-archived') },
+  }));
+  t.after(() => page.close());
+  assert.ok(bars(page).includes('YCS Columbus'), bars(page).join(','));
 });

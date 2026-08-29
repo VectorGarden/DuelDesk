@@ -327,7 +327,28 @@ def main():
         "updated": newest.isoformat().replace("+00:00", "Z"),
         "formats": formats_out,
     }
-    archive.write_event(out / archive.ARCHIVE, SLUG, sample, [])
+    # The event's own coverage posts, in the shape the scraper writes them.
+    # The page builds each event's coverage list from this rather than from the
+    # feed, so a fixture with an empty one is an event that renders its rounds
+    # and claims to have had nothing written about it.
+    #
+    # The format is read back out of the headline, which is where the simulation
+    # puts it, rather than threaded through the tuples: the same thing the
+    # parser does to a real post.
+    def spoken_format(headline):
+        for name in (f["format"] for f in FORMATS):
+            if name.lower() in headline.lower():
+                return name
+        return None
+
+    archive.write_event(out / archive.ARCHIVE, SLUG, sample, [
+        {"title": f"{event}: {headline}",
+         "url": f"https://yugiohblog.konami.com/{SLUG}/{i}/",
+         "modified": when.isoformat().replace("+00:00", "Z"),
+         "kind": kind, "format": spoken_format(headline),
+         "event": event, "slug": SLUG}
+        for i, (when, _, headline, kind) in enumerate(
+            sorted(posts, key=lambda p: p[0], reverse=True))])
     (out / archive.MANIFEST).write_text(
         archive.dumps(archive.build_manifest(out / archive.ARCHIVE), pretty=True),
         encoding="utf-8")

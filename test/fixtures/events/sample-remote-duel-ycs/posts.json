@@ -1,1 +1,506 @@
-[]
+[
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Top 4 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/0/",
+    "modified": "2026-08-29T22:09:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Top 4 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/1/",
+    "modified": "2026-08-29T22:09:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: The Advanced Top 8 deck lists",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/2/",
+    "modified": "2026-08-29T21:51:51.942270Z",
+    "kind": "deck",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: The Genesys Top 8 deck lists",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/3/",
+    "modified": "2026-08-29T21:51:51.942270Z",
+    "kind": "deck",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Top 8 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/4/",
+    "modified": "2026-08-29T21:31:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Top 8 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/5/",
+    "modified": "2026-08-29T21:31:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 12",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/6/",
+    "modified": "2026-08-29T21:15:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 10",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/7/",
+    "modified": "2026-08-29T21:15:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Feature match: Fiendsmith against Mitsurugi (Advanced)",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/8/",
+    "modified": "2026-08-29T21:02:51.942270Z",
+    "kind": "feature",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Feature match: Snake-Eye against Snake-Eye (Genesys)",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/9/",
+    "modified": "2026-08-29T21:02:51.942270Z",
+    "kind": "feature",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 12 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/10/",
+    "modified": "2026-08-29T20:53:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 10 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/11/",
+    "modified": "2026-08-29T20:53:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 11",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/12/",
+    "modified": "2026-08-29T20:37:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 9",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/13/",
+    "modified": "2026-08-29T20:37:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 11 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/14/",
+    "modified": "2026-08-29T20:15:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 9 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/15/",
+    "modified": "2026-08-29T20:15:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: The Advanced decks still in contention",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/16/",
+    "modified": "2026-08-29T20:07:51.942270Z",
+    "kind": "deck",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: The Genesys decks still in contention",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/17/",
+    "modified": "2026-08-29T20:07:51.942270Z",
+    "kind": "deck",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 10",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/18/",
+    "modified": "2026-08-29T19:59:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 8",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/19/",
+    "modified": "2026-08-29T19:59:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 10 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/20/",
+    "modified": "2026-08-29T19:37:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 8 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/21/",
+    "modified": "2026-08-29T19:37:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 9",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/22/",
+    "modified": "2026-08-29T19:21:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 7",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/23/",
+    "modified": "2026-08-29T19:21:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 9 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/24/",
+    "modified": "2026-08-29T18:59:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 7 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/25/",
+    "modified": "2026-08-29T18:59:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 8",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/26/",
+    "modified": "2026-08-29T18:43:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 6",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/27/",
+    "modified": "2026-08-29T18:43:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Feature match: Snake-Eye against Voiceless Voice (Genesys)",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/28/",
+    "modified": "2026-08-29T18:30:51.942270Z",
+    "kind": "feature",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 8 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/29/",
+    "modified": "2026-08-29T18:21:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 6 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/30/",
+    "modified": "2026-08-29T18:21:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 7",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/31/",
+    "modified": "2026-08-29T18:05:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 5",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/32/",
+    "modified": "2026-08-29T18:05:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 7 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/33/",
+    "modified": "2026-08-29T17:43:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 5 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/34/",
+    "modified": "2026-08-29T17:43:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 6",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/35/",
+    "modified": "2026-08-29T17:27:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 4",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/36/",
+    "modified": "2026-08-29T17:27:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Feature match: Maliss against Snake-Eye (Advanced)",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/37/",
+    "modified": "2026-08-29T17:14:51.942270Z",
+    "kind": "feature",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 6 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/38/",
+    "modified": "2026-08-29T17:05:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 4 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/39/",
+    "modified": "2026-08-29T17:05:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 5",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/40/",
+    "modified": "2026-08-29T16:49:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 3",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/41/",
+    "modified": "2026-08-29T16:49:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 5 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/42/",
+    "modified": "2026-08-29T16:27:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 3 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/43/",
+    "modified": "2026-08-29T16:27:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 4",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/44/",
+    "modified": "2026-08-29T16:11:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 2",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/45/",
+    "modified": "2026-08-29T16:11:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 4 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/46/",
+    "modified": "2026-08-29T15:49:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 2 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/47/",
+    "modified": "2026-08-29T15:49:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 3",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/48/",
+    "modified": "2026-08-29T15:33:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys standings after round 1",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/49/",
+    "modified": "2026-08-29T15:33:51.942270Z",
+    "kind": "standings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 3 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/50/",
+    "modified": "2026-08-29T15:11:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Genesys Round 1 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/51/",
+    "modified": "2026-08-29T15:11:51.942270Z",
+    "kind": "pairings",
+    "format": "Genesys",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 2",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/52/",
+    "modified": "2026-08-29T14:55:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 2 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/53/",
+    "modified": "2026-08-29T14:33:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced standings after round 1",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/54/",
+    "modified": "2026-08-29T14:17:51.942270Z",
+    "kind": "standings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  },
+  {
+    "title": "Remote Duel YCS August 2026: Advanced Round 1 pairings are up",
+    "url": "https://yugiohblog.konami.com/sample-remote-duel-ycs/55/",
+    "modified": "2026-08-29T13:55:51.942270Z",
+    "kind": "pairings",
+    "format": "Advanced",
+    "event": "Remote Duel YCS August 2026",
+    "slug": "sample-remote-duel-ycs"
+  }
+]

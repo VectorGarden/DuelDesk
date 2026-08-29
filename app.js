@@ -699,6 +699,10 @@ function renderEventMeta(){
    detail -- a headline and a link and nothing else -- which is why the round
    panel loads the event's own file instead of reading it from here. */
 let EVENTS = [];              // filled by refreshCoverage()
+/* How many events the list shows before asking. Fifty-two is a long way to
+   scroll past to reach anything else on the page. */
+const COVERAGE_SHOWN = 5;
+let coverageAll = false;
 let feedUpdated = null;       // <lastBuildDate>, drives the hero stamp
 let feedVersion = null;       // change detection: see versionOf()
 let coverageState = 'loading';// loading | ready | empty | stale | error
@@ -776,7 +780,7 @@ function renderEventsKeepingFocus(){
 }
 
 async function refreshCoverage({poll = false} = {}){
-  if (!EVENTS.length){ coverageState = 'loading'; renderEvents(); }
+  if (!coverageEvents().length){ coverageState = 'loading'; renderEvents(); }
   const wasStale = coverageState === 'stale';
   const postsBefore = EVENTS.reduce((n, e) => n + e.posts.length, 0);
   try {
@@ -795,13 +799,15 @@ async function refreshCoverage({poll = false} = {}){
 
     EVENTS = toDisplayEvents(result.groups, result.built);
     feedUpdated = result.built;
-    coverageState = EVENTS.length ? 'ready' : 'empty';
+    /* An empty feed is no longer an empty page: the list is the archive, and
+       the feed only says what is new. "No coverage" means no events at all. */
+    coverageState = coverageEvents().length ? 'ready' : 'empty';
     coverageError = '';
     /* Open the newest event on first load instead of hardcoding its name. */
-    if (!open.size && EVENTS.length) open.add(EVENTS[0].event);
+    if (!open.size && coverageEvents().length) open.add(coverageEvents()[0].event);
   } catch (err) {
     /* A failed reload must never blank data the reader already has. */
-    coverageState = EVENTS.length ? 'stale' : 'error';
+    coverageState = coverageEvents().length ? 'stale' : 'error';
     coverageError = err.message;
     renderEvents();
     renderStamp();
@@ -816,6 +822,106 @@ async function refreshCoverage({poll = false} = {}){
   const added = EVENTS.reduce((n, e) => n + e.posts.length, 0) - postsBefore;
   if (poll && added > 0) say(`Coverage updated, ${added} new ${added === 1 ? 'post' : 'posts'}`);
   return {changed: true};
+}
+
+/* ---- an event's own coverage ---------------------------------------------
+   The feed is one river of the newest three hundred posts across the whole
+   archive, which is the right shape for a reader subscribing to it and the
+   wrong one for a page listing fifty-two events: only the five most recent had
+   any items in it at all, so forty-seven events showed no coverage whatever.
+
+   Every event publishes its own posts beside its rounds, so the list is built
+   from the archive and each event's posts are fetched when its group is opened.
+   The feed still says when the site last updated and which events are running;
+   it is no longer where the list comes from. */
+const POSTS = new Map();          // slug -> the event's posts, once fetched
+const loadingPosts = new Set();
+
+/* Beside the rounds, which is the archive's layout: events/<slug>/rounds.json
+   and events/<slug>/posts.json. */
+const postsPath = (entry) => entry.path.replace(/rounds\.json$/, 'posts.json');
+
+async function loadEventPosts(slug){
+  const entry = entryFor(slug);
+  if (!entry || POSTS.has(slug) || loadingPosts.has(slug)) return;
+  loadingPosts.add(slug);
+  try {
+    const res = await fetch(postsPath(entry), {cache: 'no-cache'});
+    if (!res.ok) throw new Error(`posts responded ${res.status}`);
+    POSTS.set(slug, asCoveragePosts(await res.json()));
+  } catch {
+    /* An event whose posts will not load shows none rather than an error in
+       the middle of a list: the rounds above it are the page's actual subject
+       and they are already on screen. */
+    POSTS.set(slug, []);
+  } finally {
+    loadingPosts.delete(slug);
+    renderEventsKeepingFocus();
+  }
+}
+
+/* The same shape groupFeed produces, so the renderer does not care which of
+   them a post came from. */
+function asCoveragePosts(raw){
+  return (Array.isArray(raw) ? raw : []).map(p => {
+    const when = p.modified && !isNaN(Date.parse(p.modified)) ? new Date(p.modified) : null;
+    const headline = eventHeadline(p.event ?? '', p.title ?? '');
+    return {
+      title: headline,
+      format: p.format ?? null,
+      slug: p.slug ?? null,
+      url: safeUrl(p.url ?? '#'),
+      time: when ? when.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}) : '',
+      date: when,
+      ...classify(headline),
+    };
+  }).sort((a, b) => (b.date ?? 0) - (a.date ?? 0));
+}
+
+/* "YCS Montréal: Round 9 Pairings" -> "Round 9 Pairings". The event is the
+   heading directly above the row, so repeating it in every post is noise --
+   the same reasoning groupFeed applies to the feed's own titles. */
+function eventHeadline(event, title){
+  return event && title.startsWith(`${event}:`)
+    ? title.slice(event.length + 1).trim() || title
+    : title;
+}
+
+/* Every event in the archive, newest first, each with whatever of its posts are
+   to hand.
+
+   The feed has already been fetched and holds the newest few events' posts, so
+   those are shown straight away and stand in until the event's own file
+   arrives -- the feed's set is only the part of it that fitted in three hundred
+   items, so it is a head start rather than an answer.
+
+   An event the feed names but the archive does not is kept as well. It should
+   not happen, since the feed is built from the archive, and if it ever does the
+   coverage is real and hiding it would be the wrong way round. */
+function coverageEvents(){
+  const fromFeed = new Map();
+  for (const g of EVENTS) fromFeed.set(g.slug ?? g.event, g);
+
+  const out = CATALOG.map(e => {
+    const feed = fromFeed.get(e.slug);
+    fromFeed.delete(e.slug);
+    return {
+      event: e.event,
+      slug: e.slug,
+      date: eventDate(e.updated)?.toLocaleDateString('en-GB',
+        {day: 'numeric', month: 'short', year: 'numeric'}) ?? '',
+      live: !!feed?.live,
+      loaded: POSTS.has(e.slug) || !!feed,
+      complete: POSTS.has(e.slug),
+      posts: POSTS.get(e.slug) ?? feed?.posts ?? [],
+      /* What the manifest says the event has, which is not the same as what is
+         to hand: an unopened event has a count and no posts. */
+      total: e.postCount,
+    };
+  });
+  for (const g of fromFeed.values())
+    out.push({...g, loaded: true, complete: true, total: g.posts.length});
+  return out;
 }
 
 /* The hero badge used to be unconditional markup. It now reflects the data:
@@ -1196,16 +1302,31 @@ function renderEvents(){
          <button type="button" class="btn" data-retry>Try again</button></div>`
     : '';
 
-  const groups = EVENTS.map(ev => ({
+  /* An event stays in the list when its own name matches, even before its
+     posts are fetched -- otherwise searching would hide every event that
+     happens not to be open yet. */
+  const matching = coverageEvents().map(ev => ({
     ...ev,
     posts: ev.posts.filter(p =>
-      (filter === 'all' || p.kind === filter)
-      && inSelectedFormat(p)
-      && hit(p.title, ev.event))
-  })).filter(ev => ev.posts.length);
+      (filter === 'all' || p.kind === filter) && inSelectedFormat(p) && hit(p.title, ev.event)),
+  })).filter(ev => ev.posts.length || (!ev.loaded && hit(ev.event)));
 
-  countEl.textContent = groups.length
-    ? `${groups.length} event${groups.length > 1 ? 's' : ''} · ${groups.reduce((n,g) => n + g.posts.length, 0)} updates`
+  /* A handful to begin with, and the rest on request. Fifty-two events is a
+     long way to scroll past to reach anything else on the page. */
+  const groups = coverageAll ? matching : matching.slice(0, COVERAGE_SHOWN);
+  const hidden = matching.length - groups.length;
+
+  /* The total is the archive's, taken from the manifest, rather than a tally of
+     whatever has been opened -- a figure that climbed as you read would be
+     worse than none. A search or a kind filter works on post titles, and only
+     an event whose posts have been fetched has any, so those report what they
+     actually matched instead of a total they cannot yet know. */
+  const narrowed = !!query || filter !== 'all';
+  const posts = matching.reduce(
+    (n, g) => n + (narrowed ? g.posts.length : (g.total ?? g.posts.length)), 0);
+  countEl.textContent = matching.length
+    ? `${matching.length} event${matching.length > 1 ? 's' : ''} · ${posts.toLocaleString()} `
+      + (narrowed ? 'matching' : `update${posts === 1 ? '' : 's'}`)
     : 'No matches';
 
   if (!groups.length){
@@ -1213,6 +1334,11 @@ function renderEvents(){
       <p>Try a Duelist name, an event, or clear the filter to see everything.</p></div>`;
     return;
   }
+
+  const more = hidden
+    ? `<p class="more"><button type="button" class="btn" data-show-all>Show all ${
+         esc(matching.length)} events</button></p>`
+    : '';
 
   list.innerHTML = staleNote + groups.map((ev, i) => {
     const isOpen = query ? true : open.has(ev.event);
@@ -1237,6 +1363,7 @@ function renderEvents(){
             ? `<div class="post post--open"><button type="button" class="btn btn--sm"
                  data-open-event="${esc(ev.slug)}">Show this event's rounds</button></div>`
             : ''}
+        ${!ev.loaded ? `<p class="post loading"><i aria-hidden="true"></i>Loading coverage…</p>` : ''}
         ${ev.posts.map(p => `<div class="post" style="--k:${kindOf(p.kind).color}">
           <span class="post__k">${esc(kindOf(p.kind).label)}</span>
           ${(() => {
@@ -1252,7 +1379,11 @@ function renderEvents(){
         </div>`).join('')}
       </div>
     </article>`;
-  }).join('');
+  }).join('') + more;
+
+  /* Whatever is open needs its posts. Asked for after rendering rather than
+     before, so an event that is merely listed costs nothing. */
+  for (const ev of groups) if (!ev.complete && open.has(ev.event)) loadEventPosts(ev.slug);
 }
 
 /* An in-page headline moves the page to the round it names. href="#round-h" is
@@ -1274,6 +1405,7 @@ list.addEventListener('click', e => {
    has to be restored. */
 list.addEventListener('click', e => {
   if (e.target.closest('[data-retry]')){ refreshCoverage(); return; }
+  if (e.target.closest('[data-show-all]')){ coverageAll = true; renderEvents(); return; }
   const opener = e.target.closest('[data-open-event]');
   if (opener){
     selectEvent(opener.dataset.openEvent)
@@ -1288,6 +1420,12 @@ list.addEventListener('click', e => {
   willOpen ? open.add(name) : open.delete(name);
   bar.setAttribute('aria-expanded', String(willOpen));
   if (panel) panel.hidden = !willOpen;
+  /* Opened in place without re-rendering, so the posts are asked for here as
+     well as after a render -- this is the path a reader actually takes. */
+  if (willOpen){
+    const ev = coverageEvents().find(x => x.event === name);
+    if (ev && !ev.complete) loadEventPosts(ev.slug);
+  }
 });
 
 /* Footer jumps. The href is a real fragment, so without JS these still land on

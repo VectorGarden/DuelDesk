@@ -2249,6 +2249,23 @@ class TestArchive(unittest.TestCase):
         # The point of a manifest is that it stays small as the archive grows.
         self.assertNotIn("pairings", json.dumps(entry))
 
+    def test_the_manifest_counts_each_events_posts(self):
+        # The page lists every event but fetches an event's coverage only when
+        # it is opened, so the count has to come from here. Without it the page
+        # can only total what it has already loaded, and the figure climbs as
+        # you read.
+        import archive
+        self.write("2026-08-quebec", "YCS Montréal", "2026-08-16",
+                   [{"title": f"post {i}"} for i in range(7)])
+        self.assertEqual(archive.build_manifest(self.tmp)["events"][0]["postCount"], 7)
+
+    def test_an_event_with_no_posts_counts_none_rather_than_omitting_it(self):
+        # A missing key and a zero read the same to the page only if it happens
+        # to test for both; a number that is always there is one less thing.
+        import archive
+        self.write("2026-08-quebec", "YCS Montréal", "2026-08-16")
+        self.assertEqual(archive.build_manifest(self.tmp)["events"][0]["postCount"], 0)
+
     def test_the_feed_is_the_whole_archive_newest_first_and_capped(self):
         import archive
         # A run backfills a few events at a time, so a feed built from only what
