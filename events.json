@@ -79,6 +79,171 @@
           "rounds": 14
         }
       ]
+    },
+    {
+      "slug": "2026-02-300th-na",
+      "event": "300th YCS in Richmond",
+      "updated": "2026-02-15",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-02-300th-na/rounds.json",
+      "formats": [
+        {
+          "format": "Advanced",
+          "swissRounds": 15,
+          "duelists": 2285,
+          "rounds": 18
+        },
+        {
+          "format": "Genesys",
+          "swissRounds": 11,
+          "duelists": 237,
+          "rounds": 14
+        },
+        {
+          "format": null,
+          "swissRounds": 14,
+          "duelists": 998,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2025-12-rdycs-na",
+      "event": "Remote Duel YCS-North America",
+      "updated": "2025-12-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-12-rdycs-na/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 483,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2025-11-ycs-pittsburgh-pa",
+      "event": "YCS Pittsburgh",
+      "updated": "2025-11-09",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-11-ycs-pittsburgh-pa/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 14,
+          "duelists": 1847,
+          "rounds": 17
+        }
+      ]
+    },
+    {
+      "slug": "2025-10-ycs-anaheim",
+      "event": "YCS Anaheim",
+      "updated": "2025-10-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-10-ycs-anaheim/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 14,
+          "duelists": 1638,
+          "rounds": 17
+        }
+      ]
+    },
+    {
+      "slug": "2025-ycs-vancouver",
+      "event": "YCS Vancouver",
+      "updated": "2025-09-11",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-ycs-vancouver/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 561,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2025-north-america-wcq",
+      "event": "NAWCQ",
+      "updated": "2025-07-13",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-north-america-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2838,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2025-central-america-wcq",
+      "event": "Central America WCQ",
+      "updated": "2025-07-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-central-america-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 456,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2025-05-ycs-providence",
+      "event": "YCS Providence",
+      "updated": "2025-05-30",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-05-ycs-providence/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1572,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2025-04-ycs-houston",
+      "event": "YCS Houston",
+      "updated": "2025-04-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-04-ycs-houston/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1496,
+          "rounds": 15
+        }
+      ]
     }
   ]
 }

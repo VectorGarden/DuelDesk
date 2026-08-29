@@ -1618,6 +1618,15 @@
       <description>News from Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
+      <title>NAWCQ: Top Tables Update: Round 13</title>
+      <link>https://yugiohblog.konami.com/2026/championships/2025-north-america-wcq/nawcq-top-tables-update-round-13/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2025-north-america-wcq/nawcq-top-tables-update-round-13/</guid>
+      <category>News</category>
+      <category domain="event">2025-north-america-wcq</category>
+      <pubDate>Sun, 12 Jul 2026 18:49:52 +0000</pubDate>
+      <description>News from NAWCQ, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
       <title>NAWCQ: Top Tables Update: Round 11</title>
       <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-11/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-11/</guid>
@@ -2933,16 +2942,6 @@
       <category domain="event">2026-05-ycs-columbus</category>
       <pubDate>Sat, 23 May 2026 23:16:01 +0000</pubDate>
       <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Genesys Format Round 5 Feature Match: Daniel Nguyen vs. Edward Workman</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-5-feature-match-daniel-nguyen-vs-edward-workman/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-5-feature-match-daniel-nguyen-vs-edward-workman/</guid>
-      <category>Feature match</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sat, 23 May 2026 22:50:36 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
