@@ -1016,6 +1016,40 @@ function landOnCurrentRound(){
    does, so it is never said twice and never left unsaid. */
 const hasFormatChoice = () => (eventInfo?.formats?.length ?? 0) > 1;
 
+/* An event runs most years, so its name alone does not identify it: of the 68
+   events in the blog's archive with rounds to show, 25 share a name with
+   another one. Five separate North American WCQs ran between 2013 and 2017, and
+   without a date the picker offers five identical entries and no way to tell
+   which is which.
+
+   The date rather than the year, because it is the same width and answers the
+   other question a list of past events raises. Absent for an event whose
+   coverage carried no date, which is a fact about it rather than a reason to
+   print something. */
+/* The archive writes a calendar date -- the day the coverage ended -- and the
+   day is the whole point of showing it. Two things make that harder than it
+   looks.
+
+   new Date("2026-08-16") is midnight UTC, which renders as the 15th for every
+   reader west of Greenwich. Built from the parts instead, so the day shown is
+   the day the scraper wrote.
+
+   And Date.parse is not a validator: it reads "sometime in 2019" as the 1st of
+   January and hands back a date nobody wrote. The shape is checked first, so
+   anything that is not a date the archive could have produced is treated as no
+   date at all. */
+const ISO_DAY = /^(\d{4})-(\d{2})-(\d{2})/;
+function eventDate(stamp){
+  const m = ISO_DAY.exec(String(stamp ?? ''));
+  return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+}
+
+function eventLabel(e){
+  const on = eventDate(e.updated);
+  const when = on && on.toLocaleDateString('en-GB', {month:'short', year:'numeric'});
+  return [e.event, when].filter(Boolean).join(' · ') + (e.ongoing ? ' · live' : '');
+}
+
 function renderEventPicker(){
   const wrap = document.getElementById('event-pick');
   const select = document.getElementById('event-select');
@@ -1023,7 +1057,7 @@ function renderEventPicker(){
   if (wrap.hidden){ select.innerHTML = ''; return; }
   select.innerHTML = CATALOG.map(e =>
     `<option value="${esc(e.slug)}"${e.slug === activeEvent ? ' selected' : ''}>${
-       esc(e.event)}${e.ongoing ? ' · live' : ''}</option>`).join('');
+       esc(eventLabel(e))}</option>`).join('');
 }
 
 /* Switching events replaces everything below it, so the panel is emptied while
@@ -1177,7 +1211,14 @@ function renderEventMeta(){
      field, so the page and the data cannot drift apart quietly. */
   document.getElementById('demo').hidden = eventInfo.sample !== true;
   h1.textContent = eventInfo.event;
+  /* When it happened, which only becomes a question once there is more than one
+     event to be looking at. Read from the entry the picker chose, so the line
+     under the heading and the option that selected it cannot disagree. */
+  const on = eventDate(entryFor(activeEvent)?.updated);
+  const when = on && on.toLocaleDateString('en-GB',
+    {day:'numeric', month:'short', year:'numeric'});
   meta.innerHTML = [
+    when && hasEventChoice() ? `<span>${esc(when)}</span>` : '',
     `<span><b>${esc((f?.duelists ?? 0).toLocaleString())}</b> Duelists</span>`,
     `<span><b>${esc(f?.swissRounds ?? 0)}</b> Swiss rounds</span>`,
     /* The selector sits directly below this line and shows the format as the

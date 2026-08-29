@@ -51,7 +51,101 @@ test('the picker lists every event, newest first', async (t) => {
   assert.deepEqual(page.$$('#event-select option').map((o) => o.value),
     [SAMPLE.slug, OLDER.slug]);
   assert.deepEqual(page.$$('#event-select option').map((o) => o.textContent),
-    [SAMPLE.event, 'YCS Columbus']);
+    [`${SAMPLE.event} · Aug 2026`, 'YCS Columbus · May 2026']);
+});
+
+test('two events of the same name are told apart by date', async (t) => {
+  // An event runs most years, so its name alone does not identify it: of the 68
+  // events in the blog's archive with rounds to show, 25 share a name with
+  // another. Five separate North American WCQs ran between 2013 and 2017.
+  const twin = { ...OLDER, slug: 'older-still', updated: '2025-05-24' };
+  const page = await loadPage({
+    routes: {
+      'events.json': {
+        status: 200, body: JSON.stringify({ events: [SAMPLE, OLDER, twin] }),
+      },
+      'rounds.json': () => ({ status: 200, body: JSON.stringify(olderRounds()) }),
+    },
+  });
+  t.after(() => page.close());
+  const labels = page.$$('#event-select option').map((o) => o.textContent);
+  assert.equal(new Set(labels).size, labels.length, `not distinguishable: ${labels}`);
+  assert.deepEqual(labels.slice(1), ['YCS Columbus · May 2026', 'YCS Columbus · May 2025']);
+});
+
+test('an event with no usable date is listed by name rather than by nothing', async (t) => {
+  // Missing and unreadable are different inputs and the same answer: the date
+  // is absent, which is a fact about the event rather than a reason to print
+  // "Invalid Date" beside its name.
+  for (const updated of [null, '', 'sometime in 2019']) {
+    const page = await loadPage({
+      routes: {
+        'events.json': {
+          status: 200,
+          body: JSON.stringify({ events: [SAMPLE, { ...OLDER, updated }] }),
+        },
+        'older-ycs-columbus/rounds.json': () => ({
+          status: 200, body: JSON.stringify(olderRounds()),
+        }),
+      },
+    });
+    t.after(() => page.close());
+    assert.equal(page.$$('#event-select option')[1].textContent, 'YCS Columbus',
+      `updated: ${JSON.stringify(updated)}`);
+    page.close();
+  }
+});
+
+/* Built from the parts, like the page: new Date("2026-08-16") is midnight UTC
+   and renders as the 15th anywhere west of Greenwich, so a test that used it
+   would agree with the page only on machines set to UTC or east of it. */
+const longDate = (iso) => {
+  const [y, m, d] = iso.slice(0, 10).split('-').map(Number);
+  return new Date(y, m - 1, d)
+    .toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+};
+
+test('the day shown is the day the coverage names, west of Greenwich too', async (t) => {
+  // new Date("2026-08-16") is midnight UTC. Rendered in a zone behind it that
+  // is the 15th, so every archived event would be listed a day early for most
+  // of the Americas -- and the archive's dates are exactly the calendar days
+  // the tournaments were played on.
+  const tz = process.env.TZ;
+  process.env.TZ = 'America/Los_Angeles';
+  t.after(() => { if (tz === undefined) delete process.env.TZ; else process.env.TZ = tz; });
+
+  const page = await loadPage({
+    routes: {
+      'events.json': {
+        status: 200,
+        body: JSON.stringify({ events: [{ ...OLDER, updated: '2026-05-23' }, SAMPLE] }),
+      },
+      'older-ycs-columbus/rounds.json': () => ({
+        status: 200, body: JSON.stringify(olderRounds()),
+      }),
+    },
+  });
+  t.after(() => page.close());
+  assert.equal(page.$$('#event-select option')[0].textContent, 'YCS Columbus · May 2026');
+  assert.ok(page.text('#hero-meta').includes('23 May 2026'), page.text('#hero-meta'));
+});
+
+test('the date under the heading is the one the picker chose', async (t) => {
+  const page = await loadPage(twoEvents());
+  t.after(() => page.close());
+  assert.ok(page.text('#hero-meta').includes(longDate(SAMPLE.updated)),
+    page.text('#hero-meta'));
+  page.run(`selectEvent('${OLDER.slug}')`);
+  await waitFor(page, `activeEvent === '${OLDER.slug}' && roundsState === 'ready'`);
+  assert.ok(page.text('#hero-meta').includes(longDate(OLDER.updated)),
+    page.text('#hero-meta'));
+});
+
+test('a lone event needs no date beside its name', async (t) => {
+  // Nothing to tell it apart from, so the line is one fact shorter.
+  const page = await loadPage({});
+  t.after(() => page.close());
+  assert.ok(!/\d{4}/.test(page.text('#hero-meta')), page.text('#hero-meta'));
 });
 
 test('the newest event is the one on screen', async (t) => {
