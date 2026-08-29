@@ -118,19 +118,13 @@ def main() -> int:
         print("No event could be identified from the sitemap.")
         return 0
 
-    # Spend the budget on posts that carry results. Only pairings and standings
-    # feed a record, and losses need *every* round's pairings -- so a newest-first
-    # cut spent a third of its fetches on news posts and then left the records
-    # partial for want of the rounds it never reached.
-    #
-    # The kind is readable from the slug, so this costs nothing.
-    RANK = {"pairings": 0, "standings": 1, "deck": 2, "feature": 3, "result": 4, "news": 5}
+    # The kind is readable from the slug, so spending the budget on the posts
+    # that carry results costs nothing. See select_posts for how it is shared.
     for p in posts:
         p["kind"] = detect_kind(p["slug"])
-    posts.sort(key=lambda p: (RANK.get(p["kind"], 9), p["lastmod"] or ""))
 
     available = Counter(p["kind"] for p in posts)
-    posts = posts[: args.limit]
+    posts = select_posts(posts, args.limit)
     taken = Counter(p["kind"] for p in posts)
     dropped = {k: n - taken.get(k, 0) for k, n in available.items() if n > taken.get(k, 0)}
 

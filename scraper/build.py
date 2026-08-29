@@ -150,6 +150,13 @@ def build_format(name: str, sources: list[Source], *,
     for s in sources:
         if s.post.kind not in ("pairings", "standings", "feature"):
             continue
+        # A pairings or standings post *is* its table, so one whose table did not
+        # parse is not a round source. Dropping it here rather than guarding each
+        # read keeps the invariant in one place: five of the reads downstream
+        # assume a table and would take the whole run down over a single page.
+        # A feature match is prose and legitimately has none, so it is exempt.
+        if s.post.kind in ("pairings", "standings") and s.post.table is None:
+            continue
         key = round_key(s.post)
         if key is None:
             # "Final Standings After Swiss" names no round, correctly -- it is

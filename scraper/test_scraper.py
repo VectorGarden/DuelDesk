@@ -214,9 +214,6 @@ class TestIndex(unittest.TestCase):
                          ("2026-07-genesys-championship", "date+format"))
 
 
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
-
 
 class TestFetcher(unittest.TestCase):
     """The cache, the politeness delay and the update gate, without a network."""
@@ -1658,3 +1655,87 @@ class TestAnnotatedNames(unittest.TestCase):
                           ("Aldrich III, Gordon Russell", "Gordon Russell Aldrich III"),
                           ("Joshua Aaron TX Jones", "Joshua Aaron Jones")]:
             self.assertEqual(normalise_name(raw), want)
+
+
+class TestRunFetchesWhatItSelected(unittest.TestCase):
+    """main() end to end against a fake blog, watching which URLs it requests.
+
+    select_posts had every one of the tests above and none of them noticed that
+    main() never called it: main kept its own sort-by-kind-and-truncate, so the
+    budget rules were live in the test suite and dead in the scraper. A unit test
+    of a function nothing calls proves nothing, so this one drives main() and
+    reads the requests off the wire.
+    """
+
+    KINDS = {"pairings": "round-{i}-pairings-advanced-format",
+             "standings": "round-{i}-standings-advanced-format",
+             "deck": "deck-profile-{i}-advanced-format",
+             "feature": "feature-match-round-{i}-advanced-format"}
+
+    def blog(self, counts):
+        """(transport, fetched-urls). One sub-sitemap of one event's posts."""
+        urls = []
+        for kind, n in counts.items():
+            urls += [f"https://yugiohblog.konami.com/2026/ycs/fake-event/"
+                     f"{self.KINDS[kind].format(i=i)}/" for i in range(n)]
+        sitemap = ('<?xml version="1.0"?><urlset xmlns='
+                   '"http://www.sitemaps.org/schemas/sitemap/0.9">'
+                   + "".join(f"<url><loc>{u}</loc>"
+                             f"<lastmod>2026-08-{14 + i % 3:02d}T{i % 24:02d}:00:00+00:00"
+                             f"</lastmod></url>" for i, u in enumerate(urls))
+                   + "</urlset>")
+        sub = "https://yugiohblog.konami.com/wp-sitemap-posts-post-1.xml"
+        index = ('<?xml version="1.0"?><sitemapindex xmlns='
+                 '"http://www.sitemaps.org/schemas/sitemap/0.9">'
+                 f"<sitemap><loc>{sub}</loc></sitemap></sitemapindex>")
+
+        fetched = []
+
+        def transport(url, ua):
+            if url.endswith("wp-sitemap.xml"):
+                return index
+            if url == sub:
+                return sitemap
+            fetched.append(url)
+            return f"<html><head><title>Fake Event {url.rstrip('/').rsplit('/', 1)[-1]}"
+        return transport, fetched
+
+    def run_main(self, counts, limit):
+        import io, tempfile
+        from collections import Counter
+        from contextlib import redirect_stdout
+        from unittest import mock
+        import run
+        transport, fetched = self.blog(counts)
+        real = run.Fetcher
+        with tempfile.TemporaryDirectory() as tmp:
+            argv = ["run.py", "--out", f"{tmp}/out.json", "--cache", f"{tmp}/cache",
+                    "--limit", str(limit)]
+            with mock.patch.object(sys, "argv", argv), \
+                 mock.patch.object(run, "Fetcher",
+                                   lambda **kw: real(**kw, delay=0, transport=transport)), \
+                 redirect_stdout(io.StringIO()):
+                run.main()
+        marks = {"pairings": "-pairings-", "standings": "-standings-",
+                 "deck": "deck-profile-", "feature": "feature-match-"}
+        return Counter(k for u in fetched for k, mark in marks.items() if mark in u)
+
+    def test_the_budget_rules_are_the_ones_the_scraper_uses(self):
+        # Chosen so the two algorithms disagree. Under the old strict ranking a
+        # deck profile outranked a feature match, so the last slot went to the
+        # deck; select_posts rotates with features first because a feature
+        # attaches to a round on the page and a deck profile does not.
+        got = self.run_main({"pairings": 3, "standings": 2, "deck": 2, "feature": 2}, 6)
+        self.assertEqual(got["pairings"], 3)
+        self.assertEqual(got["standings"], 2)
+        self.assertEqual((got["feature"], got["deck"]), (1, 0),
+                         f"main() is not using select_posts: {dict(got)}")
+
+    def test_a_whole_event_is_fetched_at_the_default_limit(self):
+        counts = {"pairings": 13, "standings": 13, "deck": 2, "feature": 12}
+        got = self.run_main(counts, 200)
+        self.assertEqual(dict(got), counts)
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
