@@ -25,7 +25,7 @@
     },
     {
       "slug": "2026-north-america-wcq",
-      "event": "NAWCQ",
+      "event": "North America WCQ 2026",
       "updated": "2026-07-12",
       "sample": false,
       "ongoing": false,
@@ -196,7 +196,7 @@
     },
     {
       "slug": "2025-north-america-wcq",
-      "event": "NAWCQ",
+      "event": "North America WCQ 2025",
       "updated": "2025-07-13",
       "sample": false,
       "ongoing": false,
@@ -213,7 +213,7 @@
     },
     {
       "slug": "2025-central-america-wcq",
-      "event": "Central America WCQ",
+      "event": "Central America WCQ 2025",
       "updated": "2025-07-08",
       "sample": false,
       "ongoing": false,
@@ -349,7 +349,8 @@
     },
     {
       "slug": "2024-10-cancun-mexico",
-      "event": "YCS Cancun, Mexico",
+      "event": "YCS Cancun",
+      "location": "Cancun, Mexico",
       "updated": "2024-10-06",
       "sample": false,
       "ongoing": false,
@@ -383,7 +384,7 @@
     },
     {
       "slug": "2024-central-america-wcq",
-      "event": "Central America WCQ",
+      "event": "Central America WCQ 2024",
       "updated": "2024-06-22",
       "sample": false,
       "ongoing": false,
@@ -518,8 +519,25 @@
       ]
     },
     {
+      "slug": "2022-january-remote-duel-ycs",
+      "event": "Remote Duel YCS",
+      "updated": "2022-01-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-january-remote-duel-ycs/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 646,
+          "rounds": 17
+        }
+      ]
+    },
+    {
       "slug": "2019-south-america-wcq",
-      "event": "South America WCQ",
+      "event": "South America WCQ 2019",
       "updated": "2019-06-16",
       "sample": false,
       "ongoing": false,
@@ -570,7 +588,7 @@
     },
     {
       "slug": "2018-north-america-wcq",
-      "event": "North America WCQ",
+      "event": "North America WCQ 2018",
       "updated": "2018-07-02",
       "sample": false,
       "ongoing": false,
@@ -587,7 +605,7 @@
     },
     {
       "slug": "2018-central-america-wcq",
-      "event": "Central America WCQ",
+      "event": "Central America WCQ 2018",
       "updated": "2018-06-10",
       "sample": false,
       "ongoing": false,
@@ -638,7 +656,7 @@
     },
     {
       "slug": "2017-central-american-wcq",
-      "event": "Central America WCQ",
+      "event": "Central America WCQ 2017",
       "updated": "2017-06-25",
       "sample": false,
       "ongoing": false,
@@ -655,7 +673,8 @@
     },
     {
       "slug": "201703-uds-winter-invitational-las-vegas",
-      "event": "YCS Guatemala City, Guatemala",
+      "event": "YCS Guatemala City",
+      "location": "Guatemala City, Guatemala",
       "updated": "2017-03-19",
       "sample": false,
       "ongoing": false,
@@ -723,7 +742,8 @@
     },
     {
       "slug": "201603-santiago-chile",
-      "event": "201603 Santiago Chile",
+      "event": "YCS Santiago",
+      "location": "Santiago, Chile",
       "updated": "2016-05-02",
       "sample": false,
       "ongoing": false,
@@ -740,7 +760,7 @@
     },
     {
       "slug": "201509-monterrey",
-      "event": "201509 Monterrey",
+      "event": "YCS Monterrey",
       "updated": "2015-09-05",
       "sample": false,
       "ongoing": false,
@@ -757,7 +777,7 @@
     },
     {
       "slug": "2015-south-american-wcq",
-      "event": "Top Table Update",
+      "event": "South America WCQ 2015",
       "updated": "2015-07-05",
       "sample": false,
       "ongoing": false,
@@ -774,7 +794,7 @@
     },
     {
       "slug": "2015-central-american-wcq",
-      "event": "2015 Central American Wcq",
+      "event": "Central America WCQ 2015",
       "updated": "2015-06-22",
       "sample": false,
       "ongoing": false,
@@ -791,7 +811,8 @@
     },
     {
       "slug": "201504-bogota-d-c-colombia",
-      "event": "201504 Bogota D C Colombia",
+      "event": "YCS Bogota",
+      "location": "Bogota, Colombia",
       "updated": "2015-04-19",
       "sample": false,
       "ongoing": false,
@@ -808,7 +829,7 @@
     },
     {
       "slug": "201503-guatemala",
-      "event": "201503 Guatemala",
+      "event": "YCS Guatemala",
       "updated": "2015-03-08",
       "sample": false,
       "ongoing": false,
@@ -825,7 +846,7 @@
     },
     {
       "slug": "2013-south-american-wcq-championships",
-      "event": "WCQ",
+      "event": "South America WCQ 2013",
       "updated": "2014-06-28",
       "sample": false,
       "ongoing": false,
@@ -842,7 +863,7 @@
     },
     {
       "slug": "2013-north-american-wcq",
-      "event": "2013 North American Wcq",
+      "event": "North America WCQ 2013",
       "updated": "2013-07-16",
       "sample": false,
       "ongoing": false,
@@ -859,7 +880,7 @@
     },
     {
       "slug": "2013-central-american-wcq",
-      "event": "2013 Central American Wcq",
+      "event": "Central America WCQ 2013",
       "updated": "2013-07-06",
       "sample": false,
       "ongoing": false,
@@ -876,7 +897,7 @@
     },
     {
       "slug": "11-10-columbus",
-      "event": "11 10 Columbus",
+      "event": "YCS Columbus",
       "updated": "2011-10-23",
       "sample": false,
       "ongoing": false,
