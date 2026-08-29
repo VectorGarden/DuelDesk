@@ -136,15 +136,88 @@ def final_from_annotations(candidates: list[Source]) -> tuple[str, str] | None:
     return None
 
 
-def build_format(name: str, sources: list[Source], *,
+def disambiguate(sources: list[Source]) -> tuple[set[str], set[str]]:
+    """Give two Duelists who share a name their regions back. Rewrites in place.
+
+    Returns (separated, ambiguous): the names it could tell apart, and the ones
+    it could not.
+
+    At YCS Columbus, "Johnny KS Nguyen" and "Johnny PA Nguyen" are two people
+    from Kansas and Pennsylvania. The region code is the only thing separating
+    them and strip_region takes it off the name, so they merged into one Duelist
+    playing two matches a round -- and a merged Duelist's appearances are two
+    people's, which makes the losses derived from them wrong for both.
+
+    Only names that actually collide are touched, and only where a region says
+    which is which. Appending a region everywhere would be the safer-looking
+    change and the wrong one: the same person is written with a region in the
+    pairings and without one in the standings, so a name built from the region
+    unconditionally would stop matching itself between the two tables.
+
+    Sometimes there is no region to go on. Round 2 at Columbus seats "Colton
+    Randolph Crane" at two tables with nothing to separate them, and the page is
+    not the place to decide whether that is two Duelists or one printed twice.
+    Those names come back as ambiguous, and nothing is derived from them.
+    """
+    shared: set[str] = set()
+    ambiguous: set[str] = set()
+    for s in sources:
+        if s.post.kind != "pairings" or not s.post.table:
+            continue
+        seen: dict[str, str | None] = {}
+        for row in s.post.table.rows:
+            for side in ("a", "b"):
+                cell = row.get(side) or {}
+                nm, region = cell.get("name"), cell.get("region")
+                if not nm:
+                    continue
+                if nm in seen:
+                    (shared if seen[nm] != region else ambiguous).add(nm)
+                seen.setdefault(nm, region)
+    if not shared:
+        return shared, ambiguous
+
+    def relabel(cell: dict) -> None:
+        nm, region = cell.get("name"), cell.get("region")
+        if nm in shared and region:
+            cell["name"] = f"{nm} ({region})"
+
+    for s in sources:
+        for row in (s.post.table.rows if s.post.table else []):
+            if s.post.kind == "pairings":
+                for side in ("a", "b"):
+                    if row.get(side):
+                        relabel(row[side])
+            elif s.post.kind == "standings":
+                relabel(row)
+    return shared, ambiguous
+
+
+def build_format(name: str | None, sources: list[Source], *,
                  ongoing: bool = False) -> dict | None:
     """Assemble one format's tournament.
+
+    `name` is None for an event that runs a single tournament and never names a
+    format -- the North America WCQ titles every post "North America WCQ: Round
+    N Pairings". Left as None rather than invented, so the page shows the event
+    without claiming it was played under a format nobody stated.
 
     `ongoing` says whether coverage is still arriving. It defaults to False so a
     caller that does not know cannot accidentally claim a round is live: an event
     wrongly shown as finished is merely stale, while one wrongly shown as live is
     telling the reader to refresh for results that will never come.
     """
+    # Before anything reads a name: two Duelists sharing one is a collision that
+    # merges their records, and it has to be settled once, up front, so the
+    # pairings, the standings and the derivation all see the same people.
+    shared, ambiguous = disambiguate(sources)
+    for label, names in (("separated by region", shared),
+                         ("left underived, nothing tells them apart", ambiguous)):
+        if names:
+            print(f"  {name or 'main event'}: {len(names)} shared "
+                  f"{'name' if len(names) == 1 else 'names'} {label} "
+                  f"({', '.join(sorted(names))})")
+
     by_round: dict[tuple, dict[str, Source]] = defaultdict(dict)
     floating_standings: list[Source] = []
     for s in sources:
@@ -289,7 +362,8 @@ def build_format(name: str, sources: list[Source], *,
                 # "standings after round 9" table it would credit a player who
                 # went on to round 11 with two rounds they had not yet played.
                 table = [{**r, **statuses.get(r["name"], {})} for r in table]
-            recs = derive(table, window, round_numbers=window_rounds)
+            recs = derive(table, window, round_numbers=window_rounds,
+                          ambiguous=ambiguous)
 
             # Losses are only sound when we hold the pairings for every round
             # the table covers. Reading the last round paired shrugs off a gap
@@ -418,16 +492,32 @@ def build_event(event: str, sources: list[Source], *,
                 coverage_by: str = "Konami",
                 draws_possible: bool = False, updated: str | None = None,
                 ongoing: bool = False) -> dict:
-    by_format: dict[str, list[Source]] = defaultdict(list)
-    unassigned = 0
+    by_format: dict[str | None, list[Source]] = defaultdict(list)
     for s in sources:
-        if s.post.fmt:
-            by_format[s.post.fmt].append(s)
-        else:
-            unassigned += 1
+        by_format[s.post.fmt].append(s)
+
+    # Posts naming no format are usually announcements -- 19 of YCS Montreal's
+    # belong to the event rather than to either of its tournaments -- so they
+    # are not merged into one, which would misfile them.
+    #
+    # But some events run a single tournament and never name a format at all.
+    # The North America WCQ publishes "North America WCQ: Round 10 Pairings",
+    # twelve rounds of them, and a rule that only builds named formats threw
+    # away the entire event: 62 posts, nine rounds of pairings, no tournament.
+    #
+    # A tournament is a thing with rounds and standings, so that is the test.
+    # The announcements fail it and stay out; the WCQ passes it and is built,
+    # under no format name because it has none to state.
+    loose = by_format.pop(None, [])
+    kinds = {s.post.kind for s in loose}
+    unassigned = 0 if {"pairings", "standings"} <= kinds else len(loose)
+    if unassigned:
+        loose = []
 
     formats = [f for f in (build_format(name, group, ongoing=ongoing)
                            for name, group in sorted(by_format.items())) if f]
+    if loose and (only := build_format(None, loose, ongoing=ongoing)):
+        formats.append(only)
     return {
         "event": event,
         # Real coverage. The page reads this to decide whether to show its
@@ -435,6 +525,12 @@ def build_event(event: str, sources: list[Source], *,
         "sample": False,
         "coverageBy": coverage_by,
         "drawsPossible": draws_possible,
+        # Stated per event, not inferred by the reader. With an archive of many
+        # events the page lists them together, and "is this one still running"
+        # is a fact about the event that only the scrape knows -- it is read
+        # from how recent the coverage is at fetch time, which nothing looking
+        # at the file later can reconstruct.
+        "ongoing": ongoing,
         "updated": updated,
         "formats": formats,
         "_unassigned": unassigned,     # posts naming no format; reported, not guessed

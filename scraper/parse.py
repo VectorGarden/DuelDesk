@@ -221,11 +221,20 @@ def detect_kind(text: str) -> str:
 
 
 def _classify_table(header: list[str]) -> str:
+    """What a table is, from its column headings.
+
+    A points column used to be required to call something standings, and that
+    is not what the blog publishes. Points appear once a tournament is far
+    enough along to have them; before that, and at some events throughout, the
+    table is Rank and Player Name and nothing else. YCS Columbus publishes all
+    23 of its standings that way, so requiring points threw away the entire
+    event -- 17 rounds, both formats, no field size and no standings at all.
+    """
     low = [h.lower() for h in header]
-    if "rank" in low and any("point" in h for h in low):
-        return "standings"
-    if "table" in low and any(h.strip() == "vs." or h.strip() == "vs" for h in low):
+    if "table" in low and any(h.strip() in ("vs.", "vs") for h in low):
         return "pairings"
+    if "rank" in low and any("player" in h or "name" in h for h in low):
+        return "standings"
     return "unknown"
 
 
@@ -244,7 +253,7 @@ def parse_table(doc: str) -> Table | None:
 
     if kind == "standings":
         for r in body:
-            if len(r) < 3 or not r[0].isdigit():
+            if len(r) < 2 or not r[0].isdigit():
                 continue
             name, region = strip_region(r[1])
             status, status_round = split_status(r[1])
@@ -252,7 +261,10 @@ def parse_table(doc: str) -> Table | None:
                 "rank": int(r[0]),
                 "name": normalise_name(name),
                 "region": region,
-                "points": int(r[2]) if r[2].isdigit() else None,
+                # Absent, not zero. A table with no points column says nothing
+                # about anyone's points, and the record is derived from the
+                # pairings regardless.
+                "points": int(r[2]) if len(r) > 2 and r[2].isdigit() else None,
                 "status": status,
                 "statusRound": status_round,
             })

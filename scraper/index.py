@@ -19,15 +19,28 @@ from __future__ import annotations
 
 import re
 import xml.etree.ElementTree as ET
+from collections import Counter
 from dataclasses import dataclass, asdict
 from datetime import date
 
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 BASE = "https://yugiohblog.konami.com/"
 
-# Path segments that are topics, not events.
-TOPIC_SEGMENTS = {"ycs", "championships", "event-information", "genesys",
-                  "news-updates", "product-guide", "sjc", "uds", "wcq"}
+# Path segments that are topics, not events. dragon-duel reads like an event
+# slug and is not one: its posts land in 2013, 2015 and 2018, three separate
+# clusters of a dozen or more, which is a recurring side bracket covered at many
+# events rather than one tournament.
+TOPIC_SEGMENTS = {"ycs", "championships", "dragon-duel", "event-information",
+                  "genesys", "news-updates", "product-guide", "sjc", "uds",
+                  "wcq"}
+
+# A gap this long inside one event's dates means a second occasion, not a slow
+# weekend. See tight_window: measured across all 98 event slugs, 30 days is the
+# point where stray re-edits separate cleanly and real coverage stays whole.
+GAP_DAYS = 30
+
+# How many of an event's own posts a word must appear in to count as naming it.
+MIN_TERM_SHARE = 0.5
 
 
 @dataclass
@@ -67,13 +80,83 @@ def parse_post_sitemap(xml: str) -> list[Entry]:
     return out
 
 
-def event_windows(entries: list[Entry]) -> dict[str, tuple[str, str]]:
-    """Date range covered by each explicit event slug."""
-    seen: dict[str, list[str]] = {}
+def tight_window(dates: list[str], gap_days: int = GAP_DAYS) -> tuple[str, str]:
+    """The range holding the bulk of these dates, ignoring strays.
+
+    min()..max() is wrong here, because lastmod is a *modification* date: edit
+    one 2014 post today and that event's window stretches across eleven years
+    and swallows every undated post in between. It is not a rare accident -- 11
+    of 98 event slugs have a window spanning more than two months, and in nearly
+    every case it is exactly one re-edited post doing it.
+
+    So the dates are split wherever they leave a gap of a month, and the biggest
+    piece wins. On a tie the earlier piece wins: an event happens once and the
+    strays are edits made afterwards, so later is the suspicious direction.
+    """
+    ordinals = sorted(date.fromisoformat(d).toordinal() for d in dates)
+    pieces, current = [], [ordinals[0]]
+    for o in ordinals[1:]:
+        if o - current[-1] > gap_days:
+            pieces.append(current)
+            current = []
+        current.append(o)
+    pieces.append(current)
+    # By post count, not by span: an event publishes many posts on a few days,
+    # so counting distinct dates would let a two-day stray outvote a real event
+    # that ran on one.
+    best = max(pieces, key=lambda p: (len(p), -p[0]))
+    return (date.fromordinal(best[0]).isoformat(),
+            date.fromordinal(best[-1]).isoformat())
+
+
+def slug_terms(slug: str) -> set[str]:
+    """The words in a slug, minus numbers and noise too short to identify anything."""
+    return {t for t in re.split(r"[^a-z]+", slug.lower())
+            if len(t) > 2 and not t.isdigit()}
+
+
+@dataclass
+class Profile:
+    """What an event's own posts say about it, used to judge undated siblings."""
+    window: tuple[str, str]
+    categories: set[str]
+    terms: set[str]
+
+    def names(self, entry: Entry) -> bool:
+        """Whether this post corroborates the event beyond merely sharing a date.
+
+        A date window is a weak signal, and on its own it swept product news
+        into YCS Montreal's coverage: three Legendary Arc-V deck announcements
+        and an item about New York Comic Con, all published that week and none
+        of them about the tournament.
+
+        The event's own posts are the evidence. A post filed under a category
+        the event actually uses is taken at its word; one from elsewhere has to
+        say the event's name -- which is read from the coverage's own slugs
+        rather than a list, so it works for an event nobody has named yet.
+        """
+        return entry.category in self.categories or bool(self.terms & slug_terms(entry.slug))
+
+
+def event_profiles(entries: list[Entry], gap_days: int = GAP_DAYS) -> dict[str, Profile]:
+    """Per event slug, built only from the posts that carry it in their URL."""
+    own: dict[str, list[Entry]] = {}
     for e in entries:
         if e.event_slug and e.lastmod:
-            seen.setdefault(e.event_slug, []).append(e.lastmod)
-    return {k: (min(v), max(v)) for k, v in seen.items()}
+            own.setdefault(e.event_slug, []).append(e)
+    out = {}
+    for slug, posts in own.items():
+        counts = Counter(t for p in posts for t in slug_terms(p.slug))
+        out[slug] = Profile(
+            window=tight_window([p.lastmod for p in posts], gap_days),
+            categories={p.category for p in posts},
+            terms={t for t, n in counts.items() if n >= MIN_TERM_SHARE * len(posts)})
+    return out
+
+
+def event_windows(entries: list[Entry]) -> dict[str, tuple[str, str]]:
+    """Date range covered by each explicit event slug."""
+    return {k: p.window for k, p in event_profiles(entries).items()}
 
 
 def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
@@ -88,8 +171,13 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
     never enough to disambiguate. When several windows match, the format in the
     slug is used to choose, and anything still ambiguous is reported rather than
     guessed.
+
+    A window match also has to be corroborated: falling inside the dates makes a
+    post a candidate, and Profile.names decides whether it is really about the
+    event. Without that, a week of unrelated product news became coverage.
     """
-    windows = event_windows(entries)
+    profiles = event_profiles(entries)
+    windows = {k: p.window for k, p in profiles.items()}
 
     def within(d: str, lo: str, hi: str) -> bool:
         return (date.fromisoformat(lo).toordinal() - slack_days
@@ -104,7 +192,8 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
         elif not e.lastmod:
             rec["event"], rec["event_confidence"] = None, "none"
         else:
-            hits = [k for k, (lo, hi) in windows.items() if within(e.lastmod, lo, hi)]
+            hits = [k for k, (lo, hi) in windows.items()
+                    if within(e.lastmod, lo, hi) and profiles[k].names(e)]
             if len(hits) == 1:
                 rec["event"], rec["event_confidence"] = hits[0], "date"
             elif len(hits) > 1:

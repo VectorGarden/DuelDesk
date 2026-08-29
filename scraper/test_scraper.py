@@ -1193,6 +1193,62 @@ class TestProvenanceCheck(unittest.TestCase):
             code, out = self.check(lambda d, v=value: d.__setitem__("sample", v))
             self.assertEqual(code, 0, f"{value!r} should be accepted: {out}")
 
+    def first_round(self, d):
+        return d["formats"][0]["rounds"][0]
+
+    def test_a_round_covered_only_by_a_feature_match_is_accepted(self):
+        # Five of the 2026 North America WCQ's rounds reached the archive as a
+        # feature match and nothing else. That is thin coverage of a real round,
+        # not an empty one.
+        def only_feature(d):
+            r = self.first_round(d)
+            r["pairings"], r["standings"] = [], []
+            r["feature"] = {"a": "Ann Alpha", "b": "Bo Beta", "url": "https://x/f/"}
+        self.assertEqual(self.check(only_feature)[0], 0)
+
+    def test_a_round_carrying_nothing_at_all_is_still_rejected(self):
+        def empty(d):
+            r = self.first_round(d)
+            r["pairings"], r["standings"], r["feature"] = [], [], None
+        code, out = self.check(empty)
+        self.assertEqual(code, 1)
+        self.assertIn("feature match", out)
+
+    def test_a_derived_record_for_a_duelist_seated_twice_is_rejected(self):
+        # The defect this guards: two people sharing a name merge, and the
+        # merged appearances make both their records wrong.
+        def twice(d):
+            r = self.first_round(d)
+            rec = {"wins": 1, "losses": 0, "draws": 0, "confidence": "derived"}
+            r["pairings"] = [{"table": 1, "a": "Ann Alpha", "aRec": rec, "aDeck": None,
+                              "b": "Bo Beta", "bRec": rec, "bDeck": None},
+                             {"table": 2, "a": "Ann Alpha", "aRec": rec, "aDeck": None,
+                              "b": "Cy Gamma", "bRec": rec, "bDeck": None}]
+        code, out = self.check(twice)
+        self.assertEqual(code, 1)
+        self.assertIn("Ann Alpha", out)
+
+    def test_a_duelist_seated_twice_with_nothing_derived_is_accepted(self):
+        # Columbus round 2 seats "Colton Randolph Crane" at two tables with no
+        # region on either row. The build gives up on the name rather than
+        # guessing, and reporting that honestly is not a defect to fail on.
+        def twice_unknown(d):
+            r = self.first_round(d)
+            rec = {"wins": None, "losses": None, "draws": None, "confidence": "unknown"}
+            r["pairings"] = [{"table": 1, "a": "Colton Randolph Crane", "aRec": rec,
+                              "aDeck": None, "b": "Bo Beta", "bRec": rec, "bDeck": None},
+                             {"table": 2, "a": "Colton Randolph Crane", "aRec": rec,
+                              "aDeck": None, "b": "Cy Gamma", "bRec": rec, "bDeck": None}]
+        code, out = self.check(twice_unknown)
+        self.assertEqual(code, 0, out)
+
+    def test_a_duelist_paired_against_themselves_is_always_rejected(self):
+        def mirror(d):
+            self.first_round(d)["pairings"] = [
+                {"table": 1, "a": "Ann Alpha", "aRec": None, "aDeck": None,
+                 "b": "Ann Alpha", "bRec": None, "bDeck": None}]
+        self.assertEqual(self.check(mirror)[0], 1)
+
 
 class TestFeedIdentity(unittest.TestCase):
     """Each item has to say which tournament it belongs to, and which format."""
@@ -1709,7 +1765,10 @@ class TestRunFetchesWhatItSelected(unittest.TestCase):
         transport, fetched = self.blog(counts)
         real = run.Fetcher
         with tempfile.TemporaryDirectory() as tmp:
+            # Every output path inside the temp dir. Left to their defaults,
+            # the archive and its manifest land in the repo.
             argv = ["run.py", "--out", f"{tmp}/out.json", "--cache", f"{tmp}/cache",
+                    "--archive", f"{tmp}/events", "--manifest", f"{tmp}/events.json",
                     "--limit", str(limit)]
             with mock.patch.object(sys, "argv", argv), \
                  mock.patch.object(run, "Fetcher",
@@ -1735,6 +1794,480 @@ class TestRunFetchesWhatItSelected(unittest.TestCase):
         counts = {"pairings": 13, "standings": 13, "deck": 2, "feature": 12}
         got = self.run_main(counts, 200)
         self.assertEqual(dict(got), counts)
+
+
+def urlset(*urls):
+    """A sitemap of (path, lastmod) pairs, rooted at the blog."""
+    return ('<?xml version="1.0"?><urlset xmlns='
+            '"http://www.sitemaps.org/schemas/sitemap/0.9">'
+            + "".join(f"<url><loc>https://yugiohblog.konami.com/{path}/</loc>"
+                      f"<lastmod>{when}T10:00:00+00:00</lastmod></url>"
+                      for path, when in urls)
+            + "</urlset>")
+
+
+class TestEventWindows(unittest.TestCase):
+    """Windows built from lastmod, which is a modification date and lies."""
+
+    def test_one_re_edited_post_does_not_stretch_the_window(self):
+        from index import tight_window
+        # The real shape: 2014-north-american-wcq ran over two weeks in July
+        # 2014 and one of its posts was edited in 2025, so min()..max() gave it
+        # an eleven-year window that swallowed every undated post in between.
+        self.assertEqual(
+            tight_window(["2014-07-11", "2014-07-12", "2014-07-13", "2025-07-08"]),
+            ("2014-07-11", "2014-07-13"))
+
+    def test_a_genuinely_long_event_stays_whole(self):
+        from index import tight_window
+        # 2025-ycs-vancouver really does publish over four weeks. The threshold
+        # has to clear real coverage as well as catch strays.
+        self.assertEqual(
+            tight_window(["2025-08-14", "2025-08-25", "2025-09-04", "2025-09-11"]),
+            ("2025-08-14", "2025-09-11"))
+
+    def test_the_bigger_cluster_wins_on_post_count_not_span(self):
+        from index import tight_window
+        # Two posts spread over two days must not outvote five published on one.
+        self.assertEqual(
+            tight_window(["2020-01-01"] * 5 + ["2021-06-01", "2021-06-02"]),
+            ("2020-01-01", "2020-01-01"))
+
+    def test_a_tie_goes_to_the_earlier_cluster(self):
+        from index import tight_window
+        # An event happens once and strays are edits made afterwards, so later
+        # is the suspicious direction.
+        self.assertEqual(
+            tight_window(["2020-01-01", "2020-01-02", "2022-03-01", "2022-03-02"]),
+            ("2020-01-01", "2020-01-02"))
+
+    def test_dragon_duel_is_a_topic_not_an_event(self):
+        # Its posts cluster in 2013, 2015 and 2018 -- a side bracket run at many
+        # events, not one tournament.
+        entry = parse_post_sitemap(
+            urlset(("2015/ycs/dragon-duel/some-write-up", "2015-06-20")))[0]
+        self.assertIsNone(entry.event_slug)
+
+
+class TestDateAttachmentIsCorroborated(unittest.TestCase):
+    """A shared date makes a post a candidate, not coverage.
+
+    Product news published during YCS Montreal's week was attached to it and
+    shown as coverage: three Legendary Arc-V deck announcements and an item
+    about New York Comic Con.
+    """
+
+    OWN = [(f"2026/ycs/2026-08-quebec/ycs-montreal-round-{i}-pairings-advanced-format",
+            f"2026-08-1{i}") for i in (4, 5, 6)]
+
+    def assigned(self, *paths):
+        rows = assign_events(parse_post_sitemap(urlset(
+            *self.OWN, *((p, "2026-08-15") for p in paths))))
+        return {r["slug"]: r["event"] for r in rows}
+
+    def test_a_sibling_in_the_events_own_category_is_taken_at_its_word(self):
+        # A real Montreal post, and one that names nothing: no "ycs", no
+        # "montreal", no round. The category is the only thing vouching for it,
+        # so a rule that asked every post to say the event's name would throw
+        # this away along with the product news.
+        got = self.assigned("2026/ycs/qq-which-tech-cards-are-you-using-this-weekend-3")
+        self.assertEqual(got["qq-which-tech-cards-are-you-using-this-weekend-3"],
+                         "2026-08-quebec")
+
+    def test_a_word_one_post_happens_to_use_does_not_name_the_event(self):
+        # Vocabulary has to be shared across the coverage, not scraped from any
+        # single post. Montreal ran a Genesys tournament, so "genesys" appears
+        # in some of its slugs -- but the blog's standing Genesys points updates
+        # are not YCS coverage, and a threshold of zero would let every one of
+        # them in.
+        rows = assign_events(parse_post_sitemap(urlset(
+            ("2026/ycs/2026-08-quebec/ycs-montreal-round-4-pairings-advanced-format", "2026-08-14"),
+            ("2026/ycs/2026-08-quebec/ycs-montreal-round-5-pairings-advanced-format", "2026-08-15"),
+            ("2026/ycs/2026-08-quebec/ycs-montreal-round-4-pairings-genesys-format", "2026-08-16"),
+            ("2026/news-updates/genesys-points-update-august", "2026-08-15"))))
+        got = {r["slug"]: r["event"] for r in rows}
+        self.assertIsNone(got["genesys-points-update-august"])
+
+    def test_product_news_from_another_category_is_not_coverage(self):
+        got = self.assigned("2026/news-updates/legendary-arc-v-decks-lunalight")
+        self.assertIsNone(got["legendary-arc-v-decks-lunalight"])
+
+    def test_another_events_announcement_is_not_this_events_coverage(self):
+        got = self.assigned("2026/event-information/new-york-comic-con-2026-information")
+        self.assertIsNone(got["new-york-comic-con-2026-information"])
+
+    def test_a_foreign_category_post_that_names_the_event_is_kept(self):
+        # The rule must not throw out the real thing to catch the fakes. This
+        # sits in the same category and the same week as the Comic Con post.
+        got = self.assigned("2026/event-information/ycs-montreal-quebec-2026-main-event-information")
+        self.assertEqual(got["ycs-montreal-quebec-2026-main-event-information"],
+                         "2026-08-quebec")
+
+    def test_the_event_names_itself_from_its_own_coverage(self):
+        # No hardcoded vocabulary: the terms come from the event's own slugs, so
+        # an event nobody has ever named still works.
+        from index import event_profiles
+        entries = parse_post_sitemap(urlset(
+            *[(f"2031/ycs/2031-06-atlantis/ycs-atlantis-round-{i}-pairings", f"2031-06-0{i}")
+              for i in (1, 2, 3)]))
+        self.assertIn("atlantis", event_profiles(entries)["2031-06-atlantis"].terms)
+
+
+def _page(title, header, rows):
+    """A coverage post as the blog writes one: a <title> and one table."""
+    cells = lambda r: "".join(f"<td>{c}</td>" for c in r)
+    return (f"<html><head><title>{title}</title></head><body><table><tbody>"
+            f"<tr>{cells(header)}</tr>"
+            + "".join(f"<tr>{cells(r)}</tr>" for r in rows)
+            + "</tbody></table></body></html>")
+
+
+def _src(url, title, header, rows, posted="12:00"):
+    from build import Source
+    return Source(url, parse_post(_page(title, header, rows), url), posted)
+
+
+PAIR_HEAD = ["Table", "P1 First Name", "P1 Last Name", "vs.",
+             "P2 First Name", "P2 Last Name"]
+
+
+class TestSharedNames(unittest.TestCase):
+    """Two Duelists with one name.
+
+    At YCS Columbus "Johnny KS Nguyen" and "Johnny PA Nguyen" are two people.
+    strip_region takes the code off the name, so they merged into one Duelist
+    playing two matches a round -- and a merged Duelist's appearances are two
+    people's, which makes the losses derived from them wrong for both.
+    """
+
+    def build(self, rows, standings=None):
+        from build import disambiguate
+        sources = [_src("https://x/r1/", "Round 1 Pairings (Advanced Format)",
+                        PAIR_HEAD, rows)]
+        if standings is not None:
+            sources.append(_src("https://x/s1/", "Standings After Round 1 (Advanced Format)",
+                                ["Rank", "Player Name", "Points"], standings))
+        return disambiguate(sources), sources
+
+    def test_a_region_tells_two_duelists_apart(self):
+        (shared, ambiguous), sources = self.build([
+            ["1", "Johnny KS", "Nguyen", "vs.", "Steven Sean", "Bowers"],
+            ["2", "Johnny PA", "Nguyen", "vs.", "Wyatt Hank", "Ticheli"]])
+        self.assertEqual(shared, {"Johnny Nguyen"})
+        self.assertEqual(ambiguous, set())
+        got = [r["a"]["name"] for r in sources[0].post.table.rows]
+        self.assertEqual(got, ["Johnny Nguyen (KS)", "Johnny Nguyen (PA)"])
+
+    def test_the_standings_are_relabelled_too(self):
+        # Otherwise the split names stop matching the table the records are
+        # derived onto, and the fix for one Duelist breaks both.
+        (shared, _), sources = self.build(
+            [["1", "Johnny KS", "Nguyen", "vs.", "Steven Sean", "Bowers"],
+             ["2", "Johnny PA", "Nguyen", "vs.", "Wyatt Hank", "Ticheli"]],
+            standings=[["1", "Johnny KS Nguyen", "3"], ["2", "Johnny PA Nguyen", "0"]])
+        self.assertEqual([r["name"] for r in sources[1].post.table.rows],
+                         ["Johnny Nguyen (KS)", "Johnny Nguyen (PA)"])
+
+    def test_a_name_that_does_not_collide_is_left_alone(self):
+        (shared, ambiguous), sources = self.build([
+            ["1", "Philip DEU", "Weidinger", "vs.", "Dave NLD", "Vecht"]])
+        self.assertEqual((shared, ambiguous), (set(), set()))
+        self.assertEqual(sources[0].post.table.rows[0]["a"]["name"], "Philip Weidinger")
+
+    def test_a_bystander_is_untouched_while_a_collision_is_fixed(self):
+        # The region is on plenty of rows, and the same Duelist is written with
+        # one in the pairings and without one in the standings. Appending it
+        # wherever it appears would be the safer-looking change and the wrong
+        # one: Philip would stop matching himself between the two tables and
+        # lose the record the collision fix was supposed to protect.
+        (shared, _), sources = self.build(
+            [["1", "Johnny KS", "Nguyen", "vs.", "Steven Sean", "Bowers"],
+             ["2", "Johnny PA", "Nguyen", "vs.", "Wyatt Hank", "Ticheli"],
+             ["3", "Philip DEU", "Weidinger", "vs.", "Dave NLD", "Vecht"]],
+            standings=[["1", "Philip Weidinger", "9"]])
+        self.assertEqual(shared, {"Johnny Nguyen"}, "the collision is still fixed")
+        pairs = {r["a"]["name"] for r in sources[0].post.table.rows}
+        self.assertIn("Philip Weidinger", pairs, "no region on a name nobody shares")
+        self.assertEqual(sources[1].post.table.rows[0]["name"], "Philip Weidinger")
+
+    def test_with_no_region_to_go_on_the_name_is_left_ambiguous(self):
+        # Columbus round 2 seats "Colton Randolph Crane" at two tables and says
+        # nothing more. Whether that is two Duelists or one printed twice is not
+        # something the page gets to decide.
+        (shared, ambiguous), sources = self.build([
+            ["1", "DArmond Rushaun", "Dixon", "vs.", "Colton Randolph", "Crane"],
+            ["2", "Eric Casey Ho", "Kovalak", "vs.", "Colton Randolph", "Crane"]])
+        self.assertEqual(shared, set())
+        self.assertEqual(ambiguous, {"Colton Randolph Crane"})
+        self.assertEqual([r["b"]["name"] for r in sources[0].post.table.rows],
+                         ["Colton Randolph Crane"] * 2, "left exactly as found")
+
+    def test_nothing_is_derived_for_an_ambiguous_name(self):
+        from records import derive
+        standings = [{"name": "Colton Randolph Crane", "points": 3}]
+        pairings = [[{"a": {"name": "Colton Randolph Crane"}, "b": {"name": "A B"}},
+                     {"a": {"name": "Colton Randolph Crane"}, "b": {"name": "C D"}}]]
+        rec = derive(standings, pairings, ambiguous={"Colton Randolph Crane"})[0]
+        self.assertEqual(rec.confidence, "unknown")
+        self.assertIsNone(rec.wins)
+        self.assertIsNone(rec.rounds_played,
+                          "two people's appearances are nobody's round count")
+        self.assertEqual(rec.points, 3, "the points are still what the table said")
+
+
+class TestStandingsWithoutPoints(unittest.TestCase):
+    """The blog publishes Rank and Player Name and nothing else for whole events."""
+
+    TABLE = _page("YCS Columbus: Standings After Round 10 (Advanced Format)",
+                  ["Rank", "Player Name"],
+                  [["1", "Andrew Robert Hadfield"], ["2", "Chase Alexander DeDomenic"]])
+
+    def test_a_two_column_table_is_still_standings(self):
+        # Requiring a points column threw away all 23 of YCS Columbus's
+        # standings, and with them both formats' field sizes: 17 rounds, 1,618
+        # Duelists, and a built event that reported nothing at all.
+        p = parse_post(self.TABLE)
+        self.assertEqual(p.table.kind, "standings")
+        self.assertEqual(len(p.table.rows), 2)
+        self.assertEqual(p.table.rows[0]["name"], "Andrew Robert Hadfield")
+
+    def test_the_missing_points_are_absent_not_zero(self):
+        # Zero would be a claim about how the Duelist is doing. There is no
+        # points column; the table says nothing either way.
+        self.assertIsNone(parse_post(self.TABLE).table.rows[0]["points"])
+
+    def test_the_three_column_layout_still_reads_its_points(self):
+        row = load("standings-advanced").table.rows[0]
+        self.assertEqual(row["points"], 36)
+
+
+class TestSingleTournamentEvent(unittest.TestCase):
+    """Events that run one tournament and never name a format.
+
+    The North America WCQ titles every post "North America WCQ: Round 10
+    Pairings". Building only named formats threw the whole event away: 62 posts,
+    nine rounds of pairings, no tournament.
+    """
+
+    def wcq(self, *extra):
+        from build import build_event
+        return build_event("NAWCQ", [
+            _src("https://x/p10/", "North America WCQ: Round 10 Pairings",
+                 PAIR_HEAD, [["1", "Ann", "Alpha", "vs.", "Bo", "Beta"]]),
+            _src("https://x/s10/", "North America WCQ: Standings After Round 10",
+                 ["Rank", "Player Name", "Points"], [["1", "Ann Alpha", "27"]]),
+            *extra])
+
+    def test_the_tournament_is_built_under_no_format_name(self):
+        formats = self.wcq()["formats"]
+        self.assertEqual(len(formats), 1)
+        self.assertIsNone(formats[0]["format"],
+                          "no format was stated, so none may be invented")
+        self.assertTrue(formats[0]["rounds"])
+
+    def test_announcements_alone_are_not_a_tournament(self):
+        # YCS Montreal's 19 format-less posts are announcements about the event,
+        # not a third tournament running alongside Advanced and Genesys.
+        from build import build_event
+        ev = build_event("YCS Montréal", [
+            _src("https://x/n1/", "Welcome to YCS Montreal", ["a"], []),
+            _src("https://x/n2/", "The Giant Cards of YCS Montreal", ["a"], [])])
+        self.assertEqual(ev["formats"], [])
+        self.assertEqual(ev["_unassigned"], 2)
+
+    def test_named_formats_do_not_absorb_the_announcements(self):
+        ev = _build_montreal_with_announcement()
+        self.assertEqual({f["format"] for f in ev["formats"]}, {"Advanced", "Genesys"})
+        self.assertEqual(ev["_unassigned"], 1)
+
+
+def _build_montreal_with_announcement():
+    from build import build_event
+    return build_event("YCS Montréal",
+                       _sources() + [_src("https://x/n/", "Welcome to YCS Montreal",
+                                          ["a"], [])])
+
+
+class TestArchive(unittest.TestCase):
+    """One directory per event, and a manifest naming them all."""
+
+    def setUp(self):
+        import tempfile
+        self.tmp = Path(tempfile.mkdtemp())
+
+    def event(self, name, updated, fmt="Advanced", rounds=2):
+        return {"event": name, "updated": updated, "sample": False, "ongoing": False,
+                "coverageBy": "Konami",
+                "formats": [{"format": fmt, "swissRounds": 13, "duelists": 766,
+                             "rounds": [{"id": str(i)} for i in range(rounds)]}]}
+
+    def write(self, slug, name, updated, posts=()):
+        import archive
+        archive.write_event(self.tmp, slug, self.event(name, updated), list(posts))
+
+    def test_an_event_that_was_built_is_remembered(self):
+        import archive
+        self.assertEqual(archive.scraped(self.tmp), set())
+        self.write("2026-08-quebec", "YCS Montréal", "2026-08-16")
+        self.assertEqual(archive.scraped(self.tmp), {"2026-08-quebec"})
+
+    def test_a_missing_archive_is_empty_not_an_error(self):
+        import archive
+        self.assertEqual(archive.scraped(self.tmp / "nothing-here"), set())
+
+    def test_the_manifest_lists_events_newest_first(self):
+        import archive
+        self.write("a-old", "Old", "2025-01-01")
+        self.write("c-new", "New", "2026-08-16")
+        self.write("b-mid", "Mid", "2026-05-23")
+        got = [e["slug"] for e in archive.build_manifest(self.tmp)["events"]]
+        self.assertEqual(got, ["c-new", "b-mid", "a-old"])
+
+    def test_the_manifest_carries_a_summary_not_the_rounds(self):
+        import archive, json
+        self.write("2026-08-quebec", "YCS Montréal", "2026-08-16")
+        entry = archive.build_manifest(self.tmp)["events"][0]
+        self.assertEqual(entry["event"], "YCS Montréal")
+        self.assertEqual(entry["path"], "events/2026-08-quebec/rounds.json")
+        self.assertEqual(entry["formats"], [{"format": "Advanced", "swissRounds": 13,
+                                             "duelists": 766, "rounds": 2}])
+        # The point of a manifest is that it stays small as the archive grows.
+        self.assertNotIn("pairings", json.dumps(entry))
+
+    def test_the_feed_is_the_whole_archive_newest_first_and_capped(self):
+        import archive
+        # A run backfills a few events at a time, so a feed built from only what
+        # that run fetched would drop every event the run before it covered.
+        self.write("old", "Old", "2025-01-01",
+                   [{"title": "old post", "modified": "2025-01-01T10:00:00+00:00"}])
+        self.write("new", "New", "2026-08-16",
+                   [{"title": f"new post {i}",
+                     "modified": f"2026-08-1{i}T10:00:00+00:00"} for i in range(3)])
+        titles = [i["title"] for i in archive.feed_items(self.tmp, 3)]
+        self.assertEqual(titles, ["new post 2", "new post 1", "new post 0"])
+        self.assertEqual(len(archive.feed_items(self.tmp, 99)), 4,
+                         "every event's posts are there, not just the last run's")
+
+
+class TestBackfillPlan(unittest.TestCase):
+    """Which events a run builds."""
+
+    def entries(self):
+        rows = []
+        for slug, month, kinds in (
+                ("2026-08-quebec", "08", ("pairings", "standings", "news")),
+                ("2026-05-columbus", "05", ("pairings", "standings")),
+                ("2026-02-orlando", "02", ("pairings", "standings")),
+                ("2026-01-nothing", "01", ("news",))):
+            rows += [(f"2026/ycs/{slug}/ycs-round-1-{k}", f"2026-{month}-14")
+                     for k in kinds]
+        return parse_post_sitemap(urlset(*rows))
+
+    def plan(self, done, backfill):
+        from run import plan
+        return [slug for slug, _, _ in plan(self.entries(), set(done), backfill)]
+
+    def test_by_default_only_the_newest_event_is_built(self):
+        self.assertEqual(self.plan([], 0), ["2026-08-quebec"])
+
+    def test_a_backfill_takes_the_next_newest_events(self):
+        self.assertEqual(self.plan([], 2),
+                         ["2026-08-quebec", "2026-05-columbus", "2026-02-orlando"])
+
+    def test_an_event_already_in_the_archive_is_not_fetched_again(self):
+        self.assertEqual(self.plan(["2026-05-columbus"], 1),
+                         ["2026-08-quebec", "2026-02-orlando"])
+
+    def test_the_newest_event_is_rebuilt_even_though_it_is_in_the_archive(self):
+        # It is the one that may still be running.
+        self.assertEqual(self.plan(["2026-08-quebec"], 0), ["2026-08-quebec"])
+
+    def test_an_event_with_no_rounds_is_never_built(self):
+        # Of 97 event slugs only 68 published both pairings and standings. The
+        # rest are an announcement or two, and building them would put empty
+        # events in the archive and in the reader's event list.
+        self.assertNotIn("2026-01-nothing", self.plan([], 9))
+
+
+class TestEventDatesIgnoreLaterEdits(unittest.TestCase):
+    """An event is dated by its coverage, not by when someone last edited it."""
+
+    def entries(self):
+        return parse_post_sitemap(urlset(
+            # A 2025 event, with one post edited a year later.
+            ("2025/ycs/2025-na-wcq/wcq-round-1-pairings", "2025-07-08"),
+            ("2025/ycs/2025-na-wcq/wcq-round-1-standings", "2025-07-09"),
+            ("2025/ycs/2025-na-wcq/wcq-about-the-venue", "2026-07-12"),
+            ("2026/ycs/2026-na-wcq/wcq-round-1-pairings", "2026-07-11"),
+            ("2026/ycs/2026-na-wcq/wcq-round-1-standings", "2026-07-11")))
+
+    def dated(self):
+        from run import events_by_recency
+        return {slug: ended for slug, _, ended in events_by_recency(self.entries())}
+
+    def test_a_re_edited_post_does_not_redate_the_event(self):
+        self.assertEqual(self.dated()["2025-na-wcq"], "2025-07-09")
+
+    def test_the_newer_event_sorts_first(self):
+        from run import events_by_recency
+        # Dated by the raw newest lastmod, the 2025 WCQ sorted ahead of the 2026
+        # one purely because someone edited one of its posts.
+        self.assertEqual([slug for slug, _, _ in events_by_recency(self.entries())],
+                         ["2026-na-wcq", "2025-na-wcq"])
+
+    def test_draws_follow_the_day_the_event_was_played(self):
+        from datetime import date
+        from run import DRAWS_ABOLISHED
+        # Ties were abolished on 2 September 2025. A July 2025 tournament was
+        # played with them; dated to 2026 by an edit, its records were built
+        # without them.
+        self.assertLess(date.fromisoformat(self.dated()["2025-na-wcq"]), DRAWS_ABOLISHED)
+        self.assertGreater(date.fromisoformat(self.dated()["2026-na-wcq"]), DRAWS_ABOLISHED)
+
+
+class TestFeedSpansEvents(unittest.TestCase):
+    """The feed carries the whole archive, so an item's event is its own."""
+
+    ITEMS = [{"title": "Round 13 Pairings", "url": "https://x/a/", "kind": "pairings",
+              "modified": "2026-08-16T10:00:00+00:00", "format": "Advanced",
+              "event": "YCS Montréal", "slug": "2026-08-quebec"},
+             {"title": "Round 1 Pairings", "url": "https://x/b/", "kind": "pairings",
+              "modified": "2026-05-23T10:00:00+00:00", "format": "Advanced",
+              "event": "YCS Columbus", "slug": "2026-05-ycs-columbus"}]
+
+    def feed(self, items=None):
+        from feed import build_feed
+        return build_feed("Duel Desk", items if items is not None else self.ITEMS)
+
+    def test_each_item_is_titled_with_its_own_event(self):
+        # Titling every item with one event name is how a reader is told that
+        # Columbus's round 1 belongs to Montreal.
+        xml = self.feed()
+        self.assertIn("<title>YCS Montréal: Round 13 Pairings</title>", xml)
+        self.assertIn("<title>YCS Columbus: Round 1 Pairings</title>", xml)
+
+    def test_each_item_names_the_event_it_belongs_to(self):
+        xml = self.feed()
+        self.assertIn('<category domain="event">2026-08-quebec</category>', xml)
+        self.assertIn('<category domain="event">2026-05-ycs-columbus</category>', xml)
+
+    def test_the_slug_is_carried_because_display_names_are_not_identifiers(self):
+        # Two events can be written the same way and an event can be renamed
+        # between runs; the slug is what the archive is keyed on.
+        from feed import build_feed
+        xml = build_feed("Duel Desk", [{**self.ITEMS[0], "event": "YCS Montreal"}])
+        self.assertIn('<category domain="event">2026-08-quebec</category>', xml)
+
+    def test_an_item_with_no_event_falls_back_to_the_channel(self):
+        # Which is exactly a single-event feed, unchanged.
+        xml = self.feed([{k: v for k, v in self.ITEMS[0].items()
+                          if k not in ("event", "slug")}])
+        self.assertIn("<title>Duel Desk: Round 13 Pairings</title>", xml)
+        self.assertNotIn('domain="event"', xml)
+
+    def test_the_description_names_the_items_own_event(self):
+        xml = self.feed()
+        self.assertIn("Pairings from YCS Columbus, published by Konami.", xml)
 
 
 if __name__ == "__main__":

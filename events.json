@@ -1,0 +1,84 @@
+{
+  "events": [
+    {
+      "slug": "2026-08-quebec",
+      "event": "YCS Montréal",
+      "updated": "2026-08-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-08-quebec/rounds.json",
+      "formats": [
+        {
+          "format": "Advanced",
+          "swissRounds": 13,
+          "duelists": 766,
+          "rounds": 16
+        },
+        {
+          "format": "Genesys",
+          "swissRounds": 11,
+          "duelists": 169,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2026-north-america-wcq",
+      "event": "2026 North America Wcq",
+      "updated": "2026-07-12",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-north-america-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 15,
+          "duelists": 200,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2026-north-america-genesys-championship",
+      "event": "Genesys Championship",
+      "updated": "2026-07-11",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-north-america-genesys-championship/rounds.json",
+      "formats": [
+        {
+          "format": "Genesys",
+          "swissRounds": 12,
+          "duelists": 533,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2026-05-ycs-columbus",
+      "event": "YCS Columbus",
+      "updated": "2026-05-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-05-ycs-columbus/rounds.json",
+      "formats": [
+        {
+          "format": "Advanced",
+          "swissRounds": 14,
+          "duelists": 1618,
+          "rounds": 17
+        },
+        {
+          "format": "Genesys",
+          "swissRounds": 11,
+          "duelists": 175,
+          "rounds": 14
+        }
+      ]
+    }
+  ]
+}
