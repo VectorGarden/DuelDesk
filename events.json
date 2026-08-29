@@ -1,6 +1,24 @@
 {
   "events": [
     {
+      "slug": "yu-gi-oh-tcg-world-championship-2026",
+      "event": "Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026",
+      "updated": "2026-08-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/yu-gi-oh-tcg-world-championship-2026/rounds.json",
+      "postCount": 16,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 30,
+          "rounds": 8
+        }
+      ]
+    },
+    {
       "slug": "2026-08-quebec",
       "event": "YCS Montréal",
       "updated": "2026-08-16",
@@ -61,6 +79,114 @@
       ]
     },
     {
+      "slug": "2026-south-america-wcq",
+      "event": "South America WCQ 2026",
+      "updated": "2026-06-21",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-south-america-wcq/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 480,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2026-south-america-genesys-championship",
+      "event": "South America Genesys Championship",
+      "updated": "2026-06-21",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-south-america-genesys-championship/rounds.json",
+      "postCount": 22,
+      "formats": [
+        {
+          "format": "Genesys",
+          "swissRounds": 11,
+          "duelists": 118,
+          "rounds": 11
+        }
+      ]
+    },
+    {
+      "slug": "2026-south-america-dragon-duel-championship",
+      "event": "South America Dragon Duel Championship",
+      "updated": "2026-06-21",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-south-america-dragon-duel-championship/rounds.json",
+      "postCount": 16,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 12,
+          "rounds": 7
+        }
+      ]
+    },
+    {
+      "slug": "2026-central-america-wcq",
+      "event": "Central America WCQ 2026",
+      "updated": "2026-06-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-central-america-wcq/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 740,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2026-central-america-genesys-championship",
+      "event": "Central America Genesys Championship",
+      "updated": "2026-06-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-central-america-genesys-championship/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": "Genesys",
+          "swissRounds": 11,
+          "duelists": 198,
+          "rounds": 11
+        }
+      ]
+    },
+    {
+      "slug": "2026-central-america-dragon-duel-championship",
+      "event": "Central America Dragon Duel Championship",
+      "updated": "2026-06-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-central-america-dragon-duel-championship/rounds.json",
+      "postCount": 18,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 12,
+          "rounds": 7
+        }
+      ]
+    },
+    {
       "slug": "2026-05-ycs-columbus",
       "event": "YCS Columbus",
       "updated": "2026-05-23",
@@ -85,6 +211,25 @@
       ]
     },
     {
+      "slug": "2026-ycs-cartagena-colombia",
+      "event": "YCS Cartagena",
+      "location": "Cartagena, Colombia",
+      "updated": "2026-05-05",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-ycs-cartagena-colombia/rounds.json",
+      "postCount": 25,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 269,
+          "rounds": 12
+        }
+      ]
+    },
+    {
       "slug": "2026-04-team-ycs-las-vegas",
       "event": "TEAM YCS Las Vegas",
       "updated": "2026-04-19",
@@ -99,6 +244,44 @@
           "swissRounds": 12,
           "duelists": 389,
           "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2026-ycs-guatemala-city-guatemala",
+      "event": "YCS Guatemala City",
+      "location": "Guatemala City, Guatemala",
+      "updated": "2026-04-12",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 310,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2026-team-ycs-la-paz-bolivia",
+      "event": "TEAM YCS La Paz",
+      "location": "La Paz, Bolivia",
+      "updated": "2026-03-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-team-ycs-la-paz-bolivia/rounds.json",
+      "postCount": 20,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 82,
+          "rounds": 12
         }
       ]
     },
@@ -128,6 +311,24 @@
           "format": null,
           "swissRounds": 14,
           "duelists": 998,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "remote-duel-ycs-january-2026",
+      "event": "Remote Duel YCS January 2026",
+      "updated": "2026-02-01",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/remote-duel-ycs-january-2026/rounds.json",
+      "postCount": 24,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 286,
           "rounds": 14
         }
       ]

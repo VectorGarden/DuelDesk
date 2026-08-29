@@ -1,14 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Duel Desk — YCS Montréal</title>
+    <title>Duel Desk — Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026</title>
     <link>https://dueldesk.reizu.dev/</link>
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Aug 2026 02:35:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 09:33:48 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Top 8 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-top-8-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-top-8-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 09:33:48 +0000</pubDate>
+      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Final Standings after Swiss Rounds</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-final-standings-after-swiss-rounds/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-final-standings-after-swiss-rounds/</guid>
+      <category>Standings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 09:32:03 +0000</pubDate>
+      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 6</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-6/</guid>
+      <category>Standings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 07:36:36 +0000</pubDate>
+      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 7 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-7-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-7-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 07:35:50 +0000</pubDate>
+      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-5/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-5/</guid>
+      <category>Standings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 06:30:00 +0000</pubDate>
+      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 6 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-6-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-6-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 06:29:31 +0000</pubDate>
+      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-4/</guid>
+      <category>Standings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 05:24:10 +0000</pubDate>
+      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 5 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-5-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-5-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 05:23:38 +0000</pubDate>
+      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 3</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-3/</guid>
+      <category>Standings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 04:13:54 +0000</pubDate>
+      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 4 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-4-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-4-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 04:12:09 +0000</pubDate>
+      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 2</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-2/</guid>
+      <category>Standings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 02:42:29 +0000</pubDate>
+      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 3 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-3-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-3-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 02:42:00 +0000</pubDate>
+      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 1</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-1/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-1/</guid>
+      <category>Standings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 01:36:21 +0000</pubDate>
+      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 2 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-2-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-2-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 01:35:33 +0000</pubDate>
+      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Deck Type Breakdown</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-deck-type-breakdown/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-deck-type-breakdown/</guid>
+      <category>News</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 00:43:06 +0000</pubDate>
+      <description>News from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 1 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-1-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-1-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
+      <pubDate>Sat, 29 Aug 2026 00:01:27 +0000</pubDate>
+      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Montréal: And the Advanced Format Winner is…</title>
       <link>https://yugiohblog.konami.com/2026/ycs/and-the-advanced-format-winner-is/</link>
@@ -1324,7 +1468,7 @@
       <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Montréal: , Quebec 2026</title>
+      <title>YCS Montréal: Public Event Information</title>
       <link>https://yugiohblog.konami.com/2026/event-information/ycs-montreal-quebec-2026-public-event-information/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/event-information/ycs-montreal-quebec-2026-public-event-information/</guid>
       <category>News</category>
@@ -1372,7 +1516,7 @@
       <description>News from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Montréal: , Quebec 2026</title>
+      <title>YCS Montréal: Main Event Information</title>
       <link>https://yugiohblog.konami.com/2026/event-information/ycs-montreal-quebec-2026-main-event-information/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/event-information/ycs-montreal-quebec-2026-main-event-information/</guid>
       <category>News</category>
@@ -2169,779 +2313,592 @@
       <description>Standings from Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Genesys Format Main Event Top 32 Deck Lists</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-main-event-top-32-deck-lists/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-main-event-top-32-deck-lists/</guid>
-      <category>Deck profile</category>
+      <title>South America WCQ 2026: South America WCQ: Final Match</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-final-match-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-final-match-3/</guid>
+      <category>News</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 21:04:43 +0000</pubDate>
+      <description>News from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Top 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-top-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-top-4/</guid>
+      <category>News</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 19:40:28 +0000</pubDate>
+      <description>News from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Final Match</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-final-match/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-final-match/</guid>
+      <category>News</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Wed, 27 May 2026 02:10:24 +0000</pubDate>
-      <description>Deck profile from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 19:39:15 +0000</pubDate>
+      <description>News from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: , OH 2026</title>
-      <link>https://yugiohblog.konami.com/2026/event-information/ycs-columbus-oh-2026-main-event-information/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/event-information/ycs-columbus-oh-2026-main-event-information/</guid>
+      <title>South America Genesys Championship: Top 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-top-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-top-4/</guid>
       <category>News</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Tue, 26 May 2026 18:45:40 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Main Event Top 32 Deck Lists</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-main-event-top-32-deck-lists/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-main-event-top-32-deck-lists/</guid>
-      <category>Deck profile</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 23:24:04 +0000</pubDate>
-      <description>Deck profile from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Event Table of Contents</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-event-table-of-contents/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-event-table-of-contents/</guid>
-      <category>News</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 02:03:28 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: And the Genesys Format Winner Is…</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/we-have-a-winner-for-the-genesys-format-main-event-at-ycs-columbus/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/we-have-a-winner-for-the-genesys-format-main-event-at-ycs-columbus/</guid>
-      <category>Results</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 02:00:18 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 18:58:24 +0000</pubDate>
+      <description>News from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: And the Advanced Format Winner Is…</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/we-have-a-winner-for-the-advanced-format-main-event-at-ycs-columbus/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/we-have-a-winner-for-the-advanced-format-main-event-at-ycs-columbus/</guid>
-      <category>Results</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 01:59:23 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Main Event Top 4 Duelists at YCS Columbus!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-main-event-top-4-duelists-at-ycs-columbus/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-main-event-top-4-duelists-at-ycs-columbus/</guid>
+      <title>South America Dragon Duel Championship: Final Match</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-final-match-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-final-match-2/</guid>
       <category>News</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 01:51:16 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sun, 21 Jun 2026 18:03:03 +0000</pubDate>
+      <description>News from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Top 4 Pairings with Deck Types (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-4-pairings-with-deck-types-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-4-pairings-with-deck-types-genesys-format/</guid>
+      <title>South America WCQ 2026: South America WCQ: Top 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-top-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-top-8/</guid>
+      <category>News</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 17:37:58 +0000</pubDate>
+      <description>News from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Top 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-top-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-top-4/</guid>
+      <category>News</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sun, 21 Jun 2026 17:33:46 +0000</pubDate>
+      <description>News from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Top 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-top-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-top-8/</guid>
+      <category>News</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 17:25:45 +0000</pubDate>
+      <description>News from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Round 11 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-11-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-11-pairings/</guid>
       <category>Pairings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 00:32:14 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 17:21:39 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Genesys Format Main Event Top 4 Duelists at YCS Columbus!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-main-event-top-4-duelists-at-ycs-columbus/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-main-event-top-4-duelists-at-ycs-columbus/</guid>
-      <category>News</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 00:30:47 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Public Events Points Playoff Winner</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/public-events-points-playoff-winner-21/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/public-events-points-playoff-winner-21/</guid>
-      <category>Results</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 00:19:12 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Sunday ATTACK OF THE GIANT CARD!! Winners</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/sunday-attack-of-the-giant-card-winners-8/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/sunday-attack-of-the-giant-card-winners-8/</guid>
-      <category>Results</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Mon, 25 May 2026 00:18:09 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Final Pairings with Deck Types (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-final-pairing-with-deck-types/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-final-pairing-with-deck-types/</guid>
-      <category>Pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 23:59:02 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: The Advanced Format Finals of YCS Columbus Are Underway!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/the-advanced-format-finals-of-ycs-columbus-are-underway/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/the-advanced-format-finals-of-ycs-columbus-are-underway/</guid>
-      <category>News</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 23:56:28 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Genesys Format Top 4 Feature Match: Trayton Tragesser vs. William Wesley</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-top-4-feature-match-trayton-tragesser-vs-william-wesley/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-top-4-feature-match-trayton-tragesser-vs-william-wesley/</guid>
-      <category>Feature match</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 23:56:00 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Final Pairings with Deck Types (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-final-pairings-with-deck-types-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-final-pairings-with-deck-types-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 23:52:15 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Final Standings (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-final-standings-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-final-standings-genesys-format/</guid>
+      <title>South America Genesys Championship: Standings after Round 10</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-10/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-10/</guid>
       <category>Standings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 23:07:20 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 17:05:40 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Final Standings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-final-standings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-final-standings-advanced-format/</guid>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 13</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-13/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-13/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 16:55:43 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 12</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-12-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-12-2/</guid>
       <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 23:06:50 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 16:54:26 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Dragon Duel Champion</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-dragon-duel-champion/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-dragon-duel-champion/</guid>
-      <category>Results</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 23:04:41 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Dragon Duel Championship Playoff Feature Match: Nicholas R. vs. Gregory “PJ” C.</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/dragon-duel-championship-playoff-feature-match-nicholas-r-vs-gregory-pj-c/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/dragon-duel-championship-playoff-feature-match-nicholas-r-vs-gregory-pj-c/</guid>
-      <category>Feature match</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 23:02:12 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Public Events Random Playoff Winner</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/public-events-random-playoff-winner-19/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/public-events-random-playoff-winner-19/</guid>
-      <category>Results</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 22:58:39 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Genesys Format Top 8 Feature Match: Zackoria Louis vs. Daniel Nguyen</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-top-8-feature-match-zackoria-louis-vs-daniel-nguyen/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-top-8-feature-match-zackoria-louis-vs-daniel-nguyen/</guid>
-      <category>Feature match</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 22:54:49 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Top 4 Pairings with Deck Types (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-4-pairings-with-deck-types-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-4-pairings-with-deck-types-advanced-format/</guid>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 12</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-12/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-12/</guid>
       <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 22:50:00 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 16:44:38 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Advanced Format Top 8 Feature Match: Raymond Young Dai vs. Sam Arunnaveesiri</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-top-8-feature-match-raymond-young-dai-vs-sam-arunnaveesiri/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-top-8-feature-match-raymond-young-dai-vs-sam-arunnaveesiri/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 22:37:55 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Featured Duelists: Cosplay Sighted at YCS Columbus!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/featured-duelists-cosplay-sighted-at-ycs-columbus/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/featured-duelists-cosplay-sighted-at-ycs-columbus/</guid>
-      <category>News</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 22:03:52 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Genesys Format Round 6 Feature Match: Douglas Zeeff vs. Trayton Tragesser</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-6-feature-match-douglas-zeeff-vs-trayton-tragesser/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-6-feature-match-douglas-zeeff-vs-trayton-tragesser/</guid>
-      <category>Feature match</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 21:45:43 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Top 8 Pairings with Deck Types (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-8-pairings-with-deck-types-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-8-pairings-with-deck-types-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 21:01:59 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Round 14 Feature Match: Sylvia Dupee vs. Matthew Pelletier</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-14-feature-match-sylvia-dupee-vs-matthew-pelletier/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-14-feature-match-sylvia-dupee-vs-matthew-pelletier/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 20:47:31 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: 3v3 Team Dueling Winners</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/3v3-team-dueling-winners-9/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/3v3-team-dueling-winners-9/</guid>
-      <category>Results</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 20:04:43 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Speed Duel Main Event Series Winner</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/speed-duel-main-event-series-winner/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/speed-duel-main-event-series-winner/</guid>
-      <category>Results</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:55:46 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Top 8 Pairings with Deck Types (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-8-pairings-with-deck-types-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-8-pairings-with-deck-types-genesys-format/</guid>
-      <category>Pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:45:52 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Sunday’s Dragon Duel Top 4!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-sundays-dragon-duel-top-4/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-sundays-dragon-duel-top-4/</guid>
-      <category>News</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:42:03 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Round 14 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-14-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-14-pairings-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:39:23 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Standings After Round 13 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-13-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-13-advanced-format/</guid>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 11</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-11-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-11-2/</guid>
       <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:36:56 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 16:43:08 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Top Tables Update: Round 11 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-11-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-11-advanced-format/</guid>
+      <title>South America Dragon Duel Championship: Top 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-top-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-top-8/</guid>
       <category>News</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:33:19 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sun, 21 Jun 2026 16:40:23 +0000</pubDate>
+      <description>News from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Top Tables Update: Round 13 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-13-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-13-advanced-format/</guid>
-      <category>News</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:32:38 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 11</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-11/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-11/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 14:47:39 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Top Tables Update: Round 11 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-11-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-11-genesys-format/</guid>
-      <category>News</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:26:54 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 10</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-10-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-10-4/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 14:46:53 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Genesys Format Round 11 Feature Match: Edwin Strom vs. Michael DiMisa</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-11-feature-match-edwin-strom-vs-michael-dimisa/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-11-feature-match-edwin-strom-vs-michael-dimisa/</guid>
-      <category>Feature match</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:19:24 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 10</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-10-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-10-2/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 14:44:25 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Advanced Format Round 13 Feature Match: Maurice Anderson Ickes vs. Henry Louis Gullens</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-13-feature-match-maurice-anderson-ickes-vs-henry-louis-gullens/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-13-feature-match-maurice-anderson-ickes-vs-henry-louis-gullens/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:18:10 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Round 12 Feature Match: Andrew Joseph Crosley vs. Duy Chien Nguyen</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-12-feature-match-andrew-joseph-crosley-vs-duy-chien-nguyen/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-12-feature-match-andrew-joseph-crosley-vs-duy-chien-nguyen/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 18:00:17 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Genesys Format Round 9 Feature Match: Michael Kerr vs. Elijah Green</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-9-feature-match-michael-kerr-vs-elijah-green/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-9-feature-match-michael-kerr-vs-elijah-green/</guid>
-      <category>Feature match</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 17:58:42 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Genesys Format Round 10 Feature Match: Jordan Swinkunas vs. William Wesley</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-10-feature-match-jordan-swinkunas-vs-william-wesley/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-10-feature-match-jordan-swinkunas-vs-william-wesley/</guid>
-      <category>Feature match</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 17:56:27 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Round 11 Pairings (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-11-pairings-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-11-pairings-genesys-format/</guid>
+      <title>South America Genesys Championship: Round 10 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-10-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-10-pairings/</guid>
       <category>Pairings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 17:00:38 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 14:41:45 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Standings After Round 10 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-10-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-10-genesys-format/</guid>
+      <title>South America Genesys Championship: Standings after Round 9</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-9/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-9/</guid>
       <category>Standings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 16:59:54 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 14:41:10 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Standings After Round 12 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-12-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-12-advanced-format/</guid>
-      <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 16:58:47 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Round 13 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-13-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-13-pairings-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 16:57:29 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Round 12 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-12-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-12-pairings-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 16:16:23 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Standings After Round 11 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-11-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-11-advanced-format/</guid>
-      <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 16:13:23 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Round 10 Pairings (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-10-pairings-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-10-pairings-genesys-format/</guid>
+      <title>South America Genesys Championship: Round 9 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-9-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-9-pairings/</guid>
       <category>Pairings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 16:10:29 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 13:56:38 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Standings After Round 9 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-9-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-9-genesys-format/</guid>
+      <title>South America Genesys Championship: Standings after Round 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-8/</guid>
       <category>Standings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 16:10:17 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 13:55:32 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Top Tables Update: Round 9 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-9-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-9-genesys-format/</guid>
-      <category>News</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 16:05:35 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Genesys Format Round 8 Feature Match: James Yates vs. Ryan Hall</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-8-feature-match-james-yates-vs-ryan-hall/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-8-feature-match-james-yates-vs-ryan-hall/</guid>
-      <category>Feature match</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 15:58:47 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Blazing Dominion Tech Update</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-blazing-dominion-tech-update/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-blazing-dominion-tech-update/</guid>
-      <category>News</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 15:22:33 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Round 11 Feature Match: Clifford Colbert III vs. Joshua Koo</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-11-feature-match/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-11-feature-match/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 15:13:27 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Standings After Round 8 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-8-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-8-genesys-format/</guid>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 9</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-9-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-9-6/</guid>
       <category>Standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 15:12:10 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 13:29:17 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Round 9 Pairings (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-9-pairings-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-9-pairings-genesys-format/</guid>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 9</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-9-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-9-8/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 13:26:52 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Round 8 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-8-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-8-pairings/</guid>
       <category>Pairings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 14:52:39 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 13:08:26 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Advanced Format Round 10 Feature Match: Joshua Doile vs. Santiago Caras</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-10-feature-match-joshua-doile-vs-santiago-caras/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-10-feature-match-joshua-doile-vs-santiago-caras/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 14:48:54 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Round 11 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-11-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-11-pairings-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 14:35:17 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Standings After Round 10 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-10-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-10-advanced-format/</guid>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-8-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-8-7/</guid>
       <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 14:33:47 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 12:52:28 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: General Tech Update</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-general-tech-update/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-general-tech-update/</guid>
-      <category>News</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 13:53:12 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-8-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-8-7/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 12:46:55 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Round 8 Pairings (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-8-pairings-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-8-pairings-genesys-format/</guid>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 7</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-7-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-7-7/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sun, 21 Jun 2026 12:45:30 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 7</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-7-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-7-6/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 21:43:18 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 6</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-6-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-6-6/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 21:40:43 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Pairings for Round 7</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-7/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 20:49:23 +0000</pubDate>
+      <description>Pairings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Standings after Round 6</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-6/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 20:47:21 +0000</pubDate>
+      <description>Standings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 6</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-6-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-6-7/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 20:44:00 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-5-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-5-6/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 20:38:23 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Pairings for Round 6</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-6/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 20:36:44 +0000</pubDate>
+      <description>Pairings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Standings after Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-5/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-5/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 20:34:58 +0000</pubDate>
+      <description>Standings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-5-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-5-7/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 20:25:19 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-4-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-4-7/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 20:23:32 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Pairings for Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-5/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-5/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 20:21:39 +0000</pubDate>
+      <description>Pairings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Standings after Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-4/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 20:20:38 +0000</pubDate>
+      <description>Standings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-4-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-4-8/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 18:03:38 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Standings after Round 3</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-3-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-3-6/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 17:50:15 +0000</pubDate>
+      <description>Standings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Pairings for Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-4/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 17:47:16 +0000</pubDate>
+      <description>Pairings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Standings after Round 3</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-3/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 17:46:23 +0000</pubDate>
+      <description>Standings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Pairings for Round 3</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-3/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 16:48:14 +0000</pubDate>
+      <description>Pairings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Standings after Round 2</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-2/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 16:46:17 +0000</pubDate>
+      <description>Standings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 3</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-3-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-3-6/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 16:43:31 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Pairings for Round 2</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-2/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 15:46:09 +0000</pubDate>
+      <description>Pairings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Standings after Round 1</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-1/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-1/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 15:45:00 +0000</pubDate>
+      <description>Standings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 2</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-2-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-2-4/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 15:32:13 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Pairings for Round 1</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-1/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-1/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 14:43:47 +0000</pubDate>
+      <description>Pairings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America WCQ 2026: South America WCQ: Pairings for Round 1</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-1-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-1-4/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-south-america-wcq</category>
+      <pubDate>Sat, 20 Jun 2026 14:27:23 +0000</pubDate>
+      <description>Pairings from South America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Standings after Round 7</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-7/</guid>
+      <category>Standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sat, 20 Jun 2026 11:30:07 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Round 7 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-7-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-7-pairings/</guid>
       <category>Pairings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 12:51:17 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 21:21:18 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Round 10 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-10-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-10-pairings-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 12:41:30 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Standings After Day 1 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-day-1-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-day-1-advanced-format/</guid>
-      <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 02:51:01 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Round 9 Feature Match: Jake Louis Lombardi vs. Mason Wade McCoy</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-9-feature-match-jake-louis-lombardi-vs-mason-wade-mccoy/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-9-feature-match-jake-louis-lombardi-vs-mason-wade-mccoy/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 02:48:02 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Standings After Day 1 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-day-1-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-day-1-genesys-format/</guid>
+      <title>South America Genesys Championship: Standings after Round 6</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-6/</guid>
       <category>Standings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 02:24:01 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 21:17:17 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Advanced Format Round 9 Feature Match: DeAngelo Bates vs. Nana Darko</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-9-feature-match-deangelo-bates-vs-nana-darko/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-9-feature-match-deangelo-bates-vs-nana-darko/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 02:18:02 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Top Tables Update: Round 9 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-9-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-9-advanced-format/</guid>
-      <category>News</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 02:16:01 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Top Tables Update: Round 8 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-8-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-8-advanced-format/</guid>
-      <category>News</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 02:08:48 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Round 8 Feature Match: Michael Gold vs. Matthew Bishop</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-8-feature-match-michael-gold-vs-matthew-bishop/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-8-feature-match-michael-gold-vs-matthew-bishop/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 02:00:38 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Round 9 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-9-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-9-pairings-advanced-format/</guid>
+      <title>South America Genesys Championship: Round 6 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-6-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-6-pairings/</guid>
       <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 01:13:46 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 20:04:56 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Standings After Round 8 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-8-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-8-advanced-format/</guid>
+      <title>South America Genesys Championship: Standings after Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-5/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-5/</guid>
       <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 01:09:19 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 20:04:08 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Saturday ATTACK OF THE GIANT CARD!! Winners</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-05-ycs-columbus/saturday-attack-of-the-giant-card-winners-10/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-05-ycs-columbus/saturday-attack-of-the-giant-card-winners-10/</guid>
-      <category>Results</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 00:47:36 +0000</pubDate>
-      <description>Results from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Round 7 Feature Match: Giuseppi Gaetano Iuni vs. Michael Louis Volpe</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-05-ycs-columbus/advanced-format-round-7-feature-match-giuseppi-gaetano-iuni-vs-michael-louis-volpe/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-05-ycs-columbus/advanced-format-round-7-feature-match-giuseppi-gaetano-iuni-vs-michael-louis-volpe/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 00:42:23 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Advanced Format Round 8 Feature Match: Logan Kite vs. Giuseppe Iuni</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-8-feature-match-logan-kite-vs-giuseppe-iuni/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-8-feature-match-logan-kite-vs-giuseppe-iuni/</guid>
-      <category>Feature match</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sun, 24 May 2026 00:34:35 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Round 8 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-8-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-round-8-pairings-advanced-format/</guid>
+      <title>South America Genesys Championship: Round 5 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-5-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-5-pairings/</guid>
       <category>Pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sat, 23 May 2026 23:47:05 +0000</pubDate>
-      <description>Pairings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 18:54:30 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Standings After Round 7 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-7-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-standings-after-round-7-advanced-format/</guid>
+      <title>South America Genesys Championship: Standings after Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-4/</guid>
       <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sat, 23 May 2026 23:44:43 +0000</pubDate>
-      <description>Standings from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Genesys Format Round 7 Feature Match: Daniel Powell vs. Maya Burden</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-7-feature-match-daniel-powell-vs-maya-burden/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-7-feature-match-daniel-powell-vs-maya-burden/</guid>
-      <category>Feature match</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sat, 23 May 2026 23:37:58 +0000</pubDate>
-      <description>Feature match from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 18:53:07 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Columbus: Welcome to YCS Columbus!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-columbus/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-columbus/</guid>
-      <category>News</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sat, 23 May 2026 23:33:20 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Top Tables Update: Round 7 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-7-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-7-advanced-format/</guid>
-      <category>News</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sat, 23 May 2026 23:27:27 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Columbus: Top Tables Update: Round 7 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-7-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-columbus-top-tables-update-round-7-genesys-format/</guid>
-      <category>News</category>
+      <title>South America Genesys Championship: Round 4 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-4-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-4-pairings/</guid>
+      <category>Pairings</category>
       <category domain="format">Genesys</category>
-      <category domain="event">2026-05-ycs-columbus</category>
-      <pubDate>Sat, 23 May 2026 23:16:01 +0000</pubDate>
-      <description>News from YCS Columbus, published by Konami. Follow the link for the original post.</description>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 18:49:50 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Standings after Round 3</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-3/</guid>
+      <category>Standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 18:48:52 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Round 3 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-3-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-3-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 16:24:25 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Round 2 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-2-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-2-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 15:15:00 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
