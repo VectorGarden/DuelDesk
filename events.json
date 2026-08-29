@@ -81,6 +81,23 @@
       ]
     },
     {
+      "slug": "2026-04-team-ycs-las-vegas",
+      "event": "TEAM YCS Las Vegas",
+      "updated": "2026-04-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-04-team-ycs-las-vegas/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 389,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "2026-02-300th-na",
       "event": "300th YCS in Richmond",
       "updated": "2026-02-15",
@@ -382,6 +399,74 @@
       ]
     },
     {
+      "slug": "2024-02-team-ycs-las-vegas-nv",
+      "event": "TEAM YCS Las Vegas",
+      "updated": "2024-02-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-02-team-ycs-las-vegas-nv/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 510,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2023-05-ycs-philadelphia",
+      "event": "YCS Philadelphia",
+      "updated": "2023-05-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-05-ycs-philadelphia/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2396,
+          "rounds": 18
+        }
+      ]
+    },
+    {
+      "slug": "2022-11-ycs-pasadena",
+      "event": "YCS Pasadena",
+      "updated": "2022-11-15",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-11-ycs-pasadena/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1267,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "na-ygoc-2022",
+      "event": "Na Ygoc 2022",
+      "updated": "2022-07-22",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/na-ygoc-2022/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1819,
+          "rounds": 17
+        }
+      ]
+    },
+    {
       "slug": "202205-ycs-hartford-ct",
       "event": "YCS",
       "updated": "2022-05-29",
@@ -445,6 +530,23 @@
           "format": null,
           "swissRounds": 9,
           "duelists": 403,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2019-03-atlanta-ga",
+      "event": "Team YCS Atlanta",
+      "updated": "2019-03-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-03-atlanta-ga/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 558,
           "rounds": 13
         }
       ]
