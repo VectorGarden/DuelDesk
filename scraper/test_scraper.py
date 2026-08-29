@@ -3140,5 +3140,173 @@ class TestTwoPostsClaimingOneRound(unittest.TestCase):
         self.assertEqual(len(rounds[0]["standings"]), 20)
 
 
+class TestTheEventListReadsAsNames(unittest.TestCase):
+    """What the picker shows has to identify the event.
+
+    Eighteen of the archive's fifty-one were listed under something that did
+    not: five North American WCQs spelled five ways, no two of them saying
+    which year's, and labels like "11 10 Columbus" and "201504 Bogota D C
+    Colombia" that are the slug with its hyphens taken out.
+    """
+
+    def name(self, derived, slug, ended="2026-01-01", named=True):
+        from naming import canonical_name
+        return canonical_name(derived, slug, ended, named=named)[0]
+
+    def location(self, derived, slug, ended="2026-01-01", named=True):
+        from naming import canonical_name
+        return canonical_name(derived, slug, ended, named=named)[1]
+
+    # ---- the qualifiers ----
+
+    def test_every_spelling_of_the_north_american_qualifier_agrees(self):
+        for derived, slug in (("NAWCQ", "2026-north-america-wcq"),
+                              ("North America WCQ", "2018-north-america-wcq"),
+                              ("2013 North American Wcq", "2013-north-american-wcq")):
+            year = slug[:4]
+            self.assertEqual(self.name(derived, slug, f"{year}-07-01"),
+                             f"North America WCQ {year}", slug)
+
+    def test_the_other_regions_read_the_same_way(self):
+        self.assertEqual(self.name("Central America WCQ", "2024-central-america-wcq",
+                                   "2024-06-01"), "Central America WCQ 2024")
+        self.assertEqual(self.name("South America WCQ", "2019-south-america-wcq",
+                                   "2019-06-01"), "South America WCQ 2019")
+
+    def test_a_qualifier_is_renamed_even_when_the_coverage_named_it(self):
+        # "NAWCQ" is a name -- fifteen of that event's posts use it -- and it is
+        # not one that says which year's, and there is one every year.
+        self.assertEqual(self.name("NAWCQ", "2025-north-america-wcq", "2025-07-13"),
+                         "North America WCQ 2025")
+
+    def test_the_year_comes_from_the_event_not_from_its_last_edit(self):
+        # The 2013 South American WCQ has coverage edited into 2014, and it is
+        # not the 2014 one -- there was a 2014 one.
+        self.assertEqual(self.name("WCQ", "2013-south-american-wcq-championships",
+                                   "2014-01-31"), "South America WCQ 2013")
+
+    def test_a_qualifier_with_no_year_anywhere_is_still_named(self):
+        self.assertEqual(self.name("NAWCQ", "north-america-wcq", None),
+                         "North America WCQ")
+
+    def test_a_ycs_is_not_a_qualifier(self):
+        self.assertEqual(self.name("YCS Montréal", "2026-08-quebec", "2026-08-16"),
+                         "YCS Montréal")
+
+    # ---- places ----
+
+    def test_a_slug_that_names_only_a_place_is_a_ycs(self):
+        for slug, want in (("11-10-columbus", "YCS Columbus"),
+                           ("201503-guatemala", "YCS Guatemala"),
+                           ("201509-monterrey", "YCS Monterrey"),
+                           ("201603-santiago-chile", "YCS Santiago")):
+            self.assertEqual(self.name(slug.replace("-", " ").title(), slug,
+                                       named=False), want)
+
+    def test_the_administrative_letters_are_not_part_of_the_city(self):
+        # The D and C of bogota-d-c-colombia are Distrito Capital.
+        self.assertEqual(self.name("201504 Bogota D C Colombia",
+                                   "201504-bogota-d-c-colombia", named=False),
+                         "YCS Bogota")
+
+    def test_a_token_holding_a_digit_is_not_a_place(self):
+        # 300th, 75thsjc, 201504 -- the date and the count.
+        self.assertEqual(self.name("12 03 100Th", "12-03-100th", named=False),
+                         "12 03 100Th")
+
+    # ---- where it was held ----
+
+    def test_the_country_is_kept_beside_the_name_not_inside_it(self):
+        self.assertEqual(self.location("201603 Santiago Chile", "201603-santiago-chile",
+                                       named=False), "Santiago, Chile")
+
+    def test_a_city_of_several_words_comes_through_whole(self):
+        # Split at a guess, "buenos-aires-argentina" is a city called Aires.
+        self.assertEqual(
+            self.name("201712 Buenos Aires Argentina", "201712-buenos-aires-argentina",
+                      named=False), "YCS Buenos Aires")
+        self.assertEqual(
+            self.location("201712 Buenos Aires Argentina", "201712-buenos-aires-argentina",
+                          named=False), "Buenos Aires, Argentina")
+
+    def test_a_two_word_city_is_not_split_into_a_country(self):
+        # san-diego-ca and atlantic-city are cities of two words. Taking the
+        # last word as the country makes them "YCS San" in "San, Diego".
+        for slug, want in (("201711-san-diego-ca", "YCS San Diego"),
+                           ("atlantic-city-2013", "YCS Atlantic City")):
+            self.assertEqual(self.name(slug.replace("-", " ").title(), slug,
+                                       named=False), want, slug)
+            self.assertIsNone(self.location(slug.replace("-", " ").title(), slug,
+                                            named=False), slug)
+
+    def test_no_country_in_the_slug_means_none_is_known(self):
+        # "Columbus" alone would be the title with a word taken off rather than
+        # anything the archive did not already say.
+        self.assertIsNone(self.location("11 10 Columbus", "11-10-columbus", named=False))
+
+    def test_a_country_the_coverage_wrote_into_the_name_is_taken_back_out(self):
+        self.assertEqual(self.name("YCS Cancun, Mexico", "2024-10-cancun-mexico"),
+                         "YCS Cancun")
+        self.assertEqual(self.location("YCS Cancun, Mexico", "2024-10-cancun-mexico"),
+                         "Cancun, Mexico")
+
+    def test_the_city_is_what_is_left_after_the_kind_of_event(self):
+        # Taking the last word instead made "YCS Guatemala City" a city called
+        # "City".
+        self.assertEqual(self.location("YCS Guatemala City, Guatemala", "201703-uds"),
+                         "Guatemala City, Guatemala")
+
+    def test_a_name_with_no_comma_says_nothing_about_where(self):
+        self.assertIsNone(self.location("YCS Montréal", "2026-08-quebec"))
+
+    def test_a_place_is_only_guessed_at_when_there_was_nothing_to_go_on(self):
+        # The coverage agreed on a name, so it is not overruled by a guess.
+        self.assertEqual(self.name("YCS Anaheim", "201611-anaheim-ca", named=True),
+                         "YCS Anaheim")
+
+    def test_a_slug_saying_what_kind_of_event_it_was_is_left_alone(self):
+        # That word is more information than the guess would be.
+        for slug in ("na-ygoc-2022", "uds-2016-elsalvador",
+                     "201703-uds-winter-invitational-las-vegas"):
+            fallback = slug.replace("-", " ").title()
+            self.assertEqual(self.name(fallback, slug, named=False), fallback, slug)
+
+    def test_a_slug_of_nothing_but_a_date_is_left_alone(self):
+        self.assertEqual(self.name("2018 09", "2018-09", named=False), "2018 09")
+
+    def built(self, slug, ended, title):
+        """One event through the scraper's own path, off a stubbed blog."""
+        import io, types
+        from contextlib import redirect_stdout
+        import run
+        head = f"{title}: " if title else ""      # "" for coverage naming nothing
+        pages = {
+            "https://x/p/": _page(f"{head}Round 1 Pairings", PAIR_HEAD,
+                                  [["1", "Ann", "Alpha", "vs.", "Bo", "Beta"]]),
+            "https://x/s/": _page(f"{head}Standings After Round 1",
+                                  ["Rank", "Player Name", "Points"], [["1", "Ann Alpha", "3"]]),
+        }
+        posts = [{"url": u, "kind": k, "lastmod": ended, "slug": k}
+                 for u, k in (("https://x/p/", "pairings"), ("https://x/s/", "standings"))]
+        fetcher = types.SimpleNamespace(get=lambda url, **kw: pages[url])
+        with redirect_stdout(io.StringIO()):
+            event, _, _ = run.build_one(fetcher, slug, posts, ended, 200)
+        return event["event"]
+
+    def test_the_scraper_settles_the_name_it_publishes(self):
+        # Through build_one, not canonical_name alone: a rule the scraper does
+        # not call renames nothing, and the archive went out under "NAWCQ".
+        self.assertEqual(self.built("2026-north-america-wcq", "2026-07-12", "NAWCQ"),
+                         "North America WCQ 2026")
+
+    def test_the_scraper_guesses_a_place_only_when_it_has_to(self):
+        # Its posts are headed "Round 1 Pairings" and nothing else, so there is
+        # no name in the coverage and the label was "11 10 Columbus".
+        self.assertEqual(self.built("11-10-columbus", "2011-10-23", ""),
+                         "YCS Columbus")
+        self.assertEqual(self.built("2026-08-quebec", "2026-08-16", "YCS Montréal"),
+                         "YCS Montréal")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

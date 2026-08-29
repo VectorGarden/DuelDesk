@@ -135,6 +135,9 @@ def summarise(slug: str, event: dict) -> dict:
     return {
         "slug": slug,
         "event": event.get("event"),
+        # In the manifest as well, so the event list can say where an event was
+        # without fetching the whole of it.
+        **({"location": event["location"]} if event.get("location") else {}),
         "updated": event.get("updated"),
         "sample": event.get("sample", False),
         "ongoing": event.get("ongoing", False),

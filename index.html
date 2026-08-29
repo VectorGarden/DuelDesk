@@ -1227,6 +1227,10 @@ function renderEventMeta(){
     {day:'numeric', month:'short', year:'numeric'});
   meta.innerHTML = [
     when && hasEventChoice() ? `<span>${esc(when)}</span>` : '',
+    /* Where it was held, when the coverage said. Kept out of the heading --
+       "YCS Santiago" is what the event is called, and Chile is a separate fact
+       about it -- so this is where it goes. */
+    eventInfo.location ? `<span>${esc(eventInfo.location)}</span>` : '',
     /* A Team YCS ranks teams of three, so the count is teams and the noun has
        to follow it. Stated by the data rather than guessed from the rows: a
        team match reads exactly like a match. */

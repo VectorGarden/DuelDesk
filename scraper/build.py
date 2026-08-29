@@ -603,7 +603,7 @@ def is_tournament(fmt: dict) -> bool:
 def build_event(event: str, sources: list[Source], *,
                 coverage_by: str = "Konami",
                 draws_possible: bool = False, updated: str | None = None,
-                ongoing: bool = False) -> dict:
+                ongoing: bool = False, location: str | None = None) -> dict:
     by_format: dict[str | None, list[Source]] = defaultdict(list)
     for s in sources:
         by_format[s.post.fmt].append(s)
@@ -633,6 +633,10 @@ def build_event(event: str, sources: list[Source], *,
         formats.append(only)
     return {
         "event": event,
+        # Where it was held, when that is known. Kept beside the name rather
+        # than inside it: "YCS Santiago" is what the event is called, and that
+        # it was in Chile is a separate thing worth knowing.
+        **({"location": location} if location else {}),
         # Real coverage. The page reads this to decide whether to show its
         # "Sample data" badge, so it is stated rather than left to be inferred.
         "sample": False,
