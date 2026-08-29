@@ -995,6 +995,150 @@
       ]
     },
     {
+      "slug": "remote-duel-ycs-january-2024",
+      "event": "Remote Duel YCS January 2024",
+      "updated": "2024-01-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/remote-duel-ycs-january-2024/rounds.json",
+      "postCount": 24,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 323,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2023-ycs-richmond",
+      "event": "YCS Richmond",
+      "updated": "2023-11-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-ycs-richmond/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1494,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2023-ycs-santa-cruz-de-la-sierra",
+      "event": "YCS Santa Cruz de la Sierra",
+      "updated": "2023-10-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-ycs-santa-cruz-de-la-sierra/rounds.json",
+      "postCount": 21,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 8,
+          "duelists": 260,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2023-ycs-indianapolis",
+      "event": "YCS Indianapolis",
+      "updated": "2023-10-22",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-ycs-indianapolis/rounds.json",
+      "postCount": 24,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1958,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2023-ycs-vancouver",
+      "event": "YCS Vancouver",
+      "updated": "2023-09-10",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-ycs-vancouver/rounds.json",
+      "postCount": 29,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 737,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event",
+      "event": "Yu-Gi-Oh! TCG Remote Duel Extravaganza Main Event",
+      "updated": "2023-07-30",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event/rounds.json",
+      "postCount": 7,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 0,
+          "duelists": 0,
+          "rounds": 3
+        }
+      ]
+    },
+    {
+      "slug": "2023-north-america-wcq",
+      "event": "North America WCQ 2023",
+      "updated": "2023-07-09",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-north-america-wcq/rounds.json",
+      "postCount": 33,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2138,
+          "rounds": 18
+        }
+      ]
+    },
+    {
+      "slug": "2023-south-america-wcq",
+      "event": "South America WCQ 2023",
+      "updated": "2023-06-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-south-america-wcq/rounds.json",
+      "postCount": 34,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 424,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "2023-05-ycs-philadelphia",
       "event": "YCS Philadelphia",
       "updated": "2023-05-28",
