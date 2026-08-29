@@ -336,7 +336,12 @@ and the data generator were all reachable over HTTP. `check-references.py` then 
 staged tree, so a file the page needs but the script forgot fails the build instead of 404ing in
 production.
 
-After `deploy-pages` publishes, [`scripts/smoke-test.sh`](scripts/smoke-test.sh) asks production
+The same script runs twice. Before `configure-pages`, against a local server holding the staged
+artifact — a rehearsal that catches a file the staging forgot, or a fault in the check itself,
+before either is relied on. A broken check used to surface as a red deploy of a site that was
+perfectly fine.
+
+Then after `deploy-pages` publishes, [`scripts/smoke-test.sh`](scripts/smoke-test.sh) asks production
 directly: the served `index.html`, `styles.css` and `app.js` must each hash-match the uploaded
 artifact, `events.json` and the
 event it names newest must match it too, that event must carry

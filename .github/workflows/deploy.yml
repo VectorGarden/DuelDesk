@@ -86,6 +86,34 @@ jobs:
         working-directory: _site
         run: python3 ../.github/scripts/check-references.py index.html
 
+      # A rehearsal, against the artifact instead of the internet.
+      #
+      # The real smoke test runs only after deploy-pages, so a fault in the
+      # script itself shows up as a red deploy of a site that is in fact fine --
+      # which is how both #62 and #63 went red, over a URL the check was
+      # building wrongly rather than a file that was missing. Running it here
+      # first means a broken check is caught before it is relied on, and a file
+      # the staging forgot never reaches production at all.
+      #
+      # It cannot replace the real one: nothing local can answer whether the
+      # site is serving what was uploaded. Everything else it checks, it can.
+      #
+      # ATTEMPTS=1 because there is nothing to propagate -- a local server
+      # either has the file or does not, and retrying ten times with sleeps
+      # would only make a genuine failure slow.
+      - name: Rehearse the smoke test against the artifact
+        run: |
+          python3 -m http.server 8137 --bind 127.0.0.1 --directory _site &
+          trap 'kill %1 2>/dev/null || true' EXIT
+          # Silent: the first probe or two land before the server has bound,
+          # and a connection error printed there reads like a fault when it is
+          # the loop doing its job.
+          for _ in $(seq 1 40); do
+            curl -fs -o /dev/null http://127.0.0.1:8137/index.html 2>/dev/null && break
+            sleep 0.25
+          done
+          ATTEMPTS=1 ./scripts/smoke-test.sh "http://127.0.0.1:8137/" _site
+
       - uses: actions/configure-pages@v6
       # v4 stopped putting dotfiles in the artifact unless include-hidden-files
       # is set. stage-site.sh stages an explicit include list and none of it is
