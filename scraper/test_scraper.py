@@ -3308,5 +3308,139 @@ class TestTheEventListReadsAsNames(unittest.TestCase):
                          "YCS Montréal")
 
 
+class TestATitleThatOnlyNamesTheEvent(unittest.TestCase):
+    """Some posts are headed with the event and nothing else.
+
+    Two of YCS Montreal's are both "YCS Montréal, Quebec 2026" -- one the main
+    event information, one the public event information, and which is which is
+    only in the slug. Split on the event's name, both came out as
+    "YCS Montréal: , Quebec 2026": a comma, a place and a year, describing no
+    post in particular and describing both of them identically.
+    """
+
+    MAIN = ("https://yugiohblog.konami.com/2026/event-information/"
+            "ycs-montreal-quebec-2026-main-event-information/")
+    PUBLIC = ("https://yugiohblog.konami.com/2026/event-information/"
+              "ycs-montreal-quebec-2026-public-event-information/")
+
+    def test_the_slug_says_what_the_title_does_not(self):
+        from feed import titled
+        self.assertEqual(titled("YCS Montréal", "YCS Montréal, Quebec 2026", self.MAIN),
+                         "YCS Montréal: Main Event Information")
+
+    def test_two_posts_with_one_title_are_told_apart(self):
+        from feed import titled
+        both = {titled("YCS Montréal", "YCS Montréal, Quebec 2026", u)
+                for u in (self.MAIN, self.PUBLIC)}
+        self.assertEqual(len(both), 2, both)
+
+    def test_accents_do_not_stop_the_slug_matching_the_title(self):
+        # The blog writes Montreal both ways and a slug cannot carry the accent,
+        # so "Montréal" has to be recognised in "ycs-montreal-...".
+        from feed import headline_from_url
+        self.assertEqual(headline_from_url(self.MAIN, "YCS Montréal, Quebec 2026"),
+                         "Main Event Information")
+
+    def test_a_real_headline_is_left_alone(self):
+        from feed import titled
+        self.assertEqual(
+            titled("YCS Montréal", "YCS Montréal: Round 13 Pairings",
+                   "https://x/ycs-montreal-round-13-pairings/"),
+            "YCS Montréal: Round 13 Pairings")
+
+    def test_a_headline_that_merely_continues_the_name_is_the_trigger(self):
+        # Not every title that starts with the event is one of these. "YCS
+        # Columbus Top Tables Update" carries a headline; ", OH 2026" does not.
+        from feed import titled
+        self.assertEqual(
+            titled("YCS Columbus", "YCS Columbus Top Tables Update",
+                   "https://x/ycs-columbus-top-tables-update/"),
+            "YCS Columbus: Top Tables Update")
+
+    def test_a_title_with_a_headline_of_its_own_is_not_second_guessed(self):
+        # No colon, so this reaches the same branch the broken ones do. The slug
+        # says more than the title -- "round 5 advanced format" -- and none of
+        # that is an improvement on a headline the post already has.
+        from feed import titled
+        self.assertEqual(
+            titled("YCS Montréal", "YCS Montréal Top Tables Update",
+                   "https://x/ycs-montreal-top-tables-update-round-5-advanced-format/"),
+            "YCS Montréal: Top Tables Update")
+
+    def test_a_slug_saying_nothing_more_leaves_the_title_as_it_was(self):
+        # Nothing is invented when the slug repeats the title: better the
+        # awkward comma than a headline made up out of nowhere.
+        from feed import titled
+        got = titled("YCS Columbus", "YCS Columbus, OH 2026",
+                     "https://x/ycs-columbus-oh-2026/")
+        self.assertEqual(got, "YCS Columbus: , OH 2026")
+
+
+class TestAMistypedYearInASlug(unittest.TestCase):
+    """The URL is the strongest signal there is, and it is typed by hand.
+
+    Konami filed a July 2026 post -- round 13 of the 2026 North America WCQ --
+    under the 2025 event's slug:
+
+        /2026/championships/2025-north-america-wcq/nawcq-top-tables-update-round-13/
+
+    Read at its word that is 2026 coverage sitting in the 2025 event.
+    """
+
+    def index(self, *extra):
+        own = [(f"{y}/championships/{y}-north-america-wcq/nawcq-round-{i}-pairings",
+                f"{y}-07-{10 + i:02d}")
+               for y in (2025, 2026) for i in (1, 2, 3)]
+        return parse_post_sitemap(urlset(*own, *extra))
+
+    def assigned(self, *extra):
+        return {r["slug"]: (r["event"], r["event_confidence"])
+                for r in assign_events(self.index(*extra))}
+
+    def test_a_post_dated_outside_its_event_goes_to_the_right_running(self):
+        got = self.assigned(("2026/championships/2025-north-america-wcq/"
+                             "nawcq-top-tables-update-round-13", "2026-07-12"))
+        self.assertEqual(got["nawcq-top-tables-update-round-13"],
+                         ("2026-north-america-wcq", "path+year"))
+
+    def test_a_post_inside_its_event_is_left_where_the_url_puts_it(self):
+        got = self.assigned()
+        self.assertEqual(got["nawcq-round-1-pairings"][1], "path")
+
+    def test_only_the_year_may_differ(self):
+        # A slug that differs in more than its year is a different event, not
+        # the same one mistyped. The Genesys Championship runs the same week as
+        # the WCQ and its dates would hold this post perfectly well.
+        rows = assign_events(parse_post_sitemap(urlset(
+            # The 2025 running, so the stray is outside its window rather than
+            # being the whole of it.
+            *[(f"2025/championships/2025-north-america-wcq/nawcq-round-{i}-pairings",
+               f"2025-07-1{i}") for i in (1, 2, 3)],
+            *[(f"2026/championships/2026-north-america-genesys-championship/"
+               f"genesys-round-{i}-pairings", f"2026-07-1{i}") for i in (1, 2, 3)],
+            ("2026/championships/2025-north-america-wcq/"
+             "nawcq-top-tables-update-round-13", "2026-07-12"))))
+        got = {r["slug"]: (r["event"], r["event_confidence"]) for r in rows}
+        # It may still land there by date -- nothing else is on those dates --
+        # but not by the URL, which names a WCQ and not a Genesys Championship.
+        self.assertNotEqual(got["nawcq-top-tables-update-round-13"][1], "path+year")
+
+    def test_a_post_with_no_sibling_at_all_is_not_forced_into_one(self):
+        got = self.assigned(("2026/championships/2025-north-america-wcq/"
+                             "nawcq-top-tables-update-round-13", "2031-07-12"))
+        self.assertNotEqual(got["nawcq-top-tables-update-round-13"][1], "path+year")
+
+    def test_an_event_running_past_new_year_keeps_its_posts(self):
+        # 2021-december-remote-duel-ycs publishes eight posts in January 2022,
+        # under /2022/. The window follows the coverage rather than the slug, so
+        # they fall inside it and nothing is moved.
+        rows = assign_events(parse_post_sitemap(urlset(
+            *[(f"2022/ycs/2021-december-remote-duel-ycs/rdycs-round-{i}-pairings",
+               f"2022-01-2{i}") for i in (1, 2, 3)])))
+        got = {r["slug"]: (r["event"], r["event_confidence"]) for r in rows}
+        self.assertEqual(got["rdycs-round-1-pairings"],
+                         ("2021-december-remote-duel-ycs", "path"))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
