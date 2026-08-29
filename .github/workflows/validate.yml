@@ -88,10 +88,16 @@ jobs:
       - name: Run scraper tests
         run: python3 -m unittest discover -s scraper -p 'test_*.py' -v
 
-      # rounds.json is fetched from JavaScript, so the reference check cannot
-      # see it. This also verifies the records in it actually add up.
-      - name: Validate rounds.json
-        run: python3 .github/scripts/check-rounds.py rounds.json
+      # The archive is fetched from JavaScript, so the reference check cannot
+      # see it. This also verifies the records in it actually add up -- for
+      # every event, not only the newest: a backfill writes several at a time,
+      # and an older one built from patchier coverage is where a bad file would
+      # come from.
+      - name: Validate the archive
+        run: |
+          for f in events/*/rounds.json; do
+            python3 .github/scripts/check-rounds.py "$f"
+          done
 
       # Two favicon failures are invisible everywhere else: a PNG-encoded ICO,
       # which Safari will not decode, and an oversized rel="icon".

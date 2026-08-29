@@ -213,8 +213,6 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="scraped-rounds.json",
-                    help="also write the newest event here, for the current page")
     ap.add_argument("--archive", default=archive.ARCHIVE,
                     help="directory of per-event coverage")
     ap.add_argument("--manifest", default=archive.MANIFEST,
@@ -266,18 +264,11 @@ def main() -> int:
             continue
         archive.write_event(args.archive, slug, event, feed_posts)
         if i == 0:
-            newest_event = event
+            newest_event = event   # names the feed's channel
 
     manifest = archive.build_manifest(args.archive)
     Path(args.manifest).write_text(archive.dumps(manifest, pretty=True), encoding="utf-8")
     print(f"Manifest lists {len(manifest['events'])} events")
-
-    # The page still reads a single file at the root. The archive is the source
-    # of truth; this is the newest event copied out of it, and goes away once
-    # the page reads the manifest.
-    if newest_event:
-        Path(args.out).write_text(archive.dumps(archive.lean(newest_event)),
-                                  encoding="utf-8")
 
     if args.feed:
         items = archive.feed_items(args.archive, args.feed_items)

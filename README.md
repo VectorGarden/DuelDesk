@@ -176,7 +176,20 @@ The coverage list is **loaded at runtime from this site's own [`feed.xml`](feed.
 The data is still **sample data**; what changed is that the *mechanism* is real. The round panel
 (pairings, standings, feature match) remains hardcoded, because the feed carries no round detail.
 
-Round detail comes from [`rounds.json`](rounds.json). Both files are produced by
+Round detail comes from the **archive**. The page reads
+[`events.json`](events.json) first — every event, small enough to load before
+anything is on screen — and then fetches the rounds for the one event being read.
+One event is about 1.3MB, so a single file holding all of them would be a
+several-megabyte download to look at one round of one tournament.
+
+An event with more than one in the archive gets a picker above the heading.
+Choosing one replaces everything below it: the round track, the panel, and which
+headlines in the coverage list are in-page jumps rather than links to Konami —
+because which rounds an event published is in that event's own file, and the page
+does not offer a jump it cannot land. An event the archive holds but is not
+showing carries a control in the coverage list to bring it on screen.
+
+Both files are produced by
 [`scripts/generate-sample-data.py`](scripts/generate-sample-data.py) from **one simulated Swiss
 tournament**, so the coverage posts and the round panel describe the same event. The simulation
 pairs players on equal records, plays the results out, and sorts standings by wins with opponent
@@ -254,7 +267,6 @@ to fetch, parse, and serve the JSON to the page.
 | --- | --- |
 | `index.html` | The entire site — markup, styles, and behaviour. |
 | `feed.xml` | RSS 2.0 coverage feed, newest posts across the whole archive. |
-| `rounds.json` | The newest event's rounds — what the page loads today. |
 | `events.json` | Every event in the archive: name, date, formats, and where to find it. |
 | `events/` | One directory per event; fetched on demand, not all at once. |
 | `og.png` | 1200×630 social preview image. |
@@ -322,7 +334,8 @@ staged tree, so a file the page needs but the script forgot fails the build inst
 production.
 
 After `deploy-pages` publishes, [`scripts/smoke-test.sh`](scripts/smoke-test.sh) asks production
-directly: the served `index.html` must hash-match the uploaded artifact, `rounds.json` must carry
+directly: the served `index.html` must hash-match the uploaded artifact, `events.json` and the
+event it names newest must match it too, that event must carry
 a timestamp only this deploy could have written, every referenced file must return 200, and no
 source file may be reachable. It retries while Pages propagates, and reports every fault it finds
 rather than stopping at the first.

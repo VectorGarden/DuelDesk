@@ -17,11 +17,15 @@ import argparse, json, random, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scraper"))
-from archive import dumps, lean                             # noqa: E402
+import archive                                              # noqa: E402
 from datetime import datetime, timedelta, timezone
 from xml.sax.saxutils import escape
 
 SEED = 20260828
+# The archive keys events by slug, so the simulation needs one. Fixed rather
+# than derived from the month in the event's name, so regenerating on a
+# different day does not leave a second sample event behind in the archive.
+SLUG = "sample-remote-duel-ycs"
 FIELD = 64                 # simulated field; the page shows the top 8 of it
 # Real events run parallel tournaments with different round counts: at YCS
 # Montreal the Advanced main event ran 13 Swiss rounds and Genesys 11.
@@ -190,7 +194,7 @@ def main():
     # there would overwrite what is published -- and the test suite, which reads
     # these, would be testing whichever event was scraped last.
     ap.add_argument('--out', default='test/fixtures',
-                    help='directory to write rounds.json and feed.xml into')
+                    help='directory to write the archive and feed.xml into')
     args = ap.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -303,10 +307,14 @@ def main():
     for f in formats_out:
         for r in f["rounds"]:
             r.pop("_stamp", None)
-    # Written by the scraper's own writer, so the fixture the page is tested
-    # against has the same shape as the coverage it is served -- compact, and
-    # with the nulls dropped out of the table rows. A fixture in a shape nothing
+    # Written through the scraper's own archive, so the fixture the page is
+    # tested against has the shape the page is actually served: a manifest, and
+    # one directory per event holding the rounds. A fixture in a shape nothing
     # publishes tests a page nobody visits.
+    #
+    # One event, because that is what this simulates. A page with a second one
+    # to switch to is tested by stubbing the manifest, rather than by inventing
+    # a tournament here that never happened.
     sample = {
         "event": event,
         # Says so in the file rather than only in the markup, so the page can
@@ -319,7 +327,10 @@ def main():
         "updated": newest.isoformat().replace("+00:00", "Z"),
         "formats": formats_out,
     }
-    (out / "rounds.json").write_text(dumps(lean(sample)), encoding="utf-8")
+    archive.write_event(out / archive.ARCHIVE, SLUG, sample, [])
+    (out / archive.MANIFEST).write_text(
+        archive.dumps(archive.build_manifest(out / archive.ARCHIVE), pretty=True),
+        encoding="utf-8")
     print(f"rounds.json: {len(formats_out)} formats, "
           + ", ".join(f"{f['format']} {len(f['rounds'])} rounds" for f in formats_out))
 

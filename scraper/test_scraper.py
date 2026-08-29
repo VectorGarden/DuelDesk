@@ -1216,8 +1216,15 @@ class TestProvenanceCheck(unittest.TestCase):
     CHECKER = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
 
     def check(self, mutate):
+        """Run the checker over the newest published event, mutated.
+
+        Found through the manifest rather than by path, exactly as the page
+        finds it, so this cannot end up checking a file nothing serves.
+        """
         import json, subprocess, tempfile
-        good = json.loads((Path(__file__).resolve().parent.parent / "rounds.json").read_text())
+        root = Path(__file__).resolve().parent.parent
+        manifest = json.loads((root / "events.json").read_text())
+        good = json.loads((root / manifest["events"][0]["path"]).read_text())
         mutate(good)
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
             json.dump(good, fh)
@@ -1821,7 +1828,7 @@ class TestRunFetchesWhatItSelected(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             # Every output path inside the temp dir. Left to their defaults,
             # the archive and its manifest land in the repo.
-            argv = ["run.py", "--out", f"{tmp}/out.json", "--cache", f"{tmp}/cache",
+            argv = ["run.py", "--cache", f"{tmp}/cache",
                     "--archive", f"{tmp}/events", "--manifest", f"{tmp}/events.json",
                     "--limit", str(limit)]
             with mock.patch.object(sys, "argv", argv), \
@@ -2343,7 +2350,10 @@ class TestSampleDataTimeline(unittest.TestCase):
         done = subprocess.run(["python3", str(self.GENERATOR), "--now", now,
                                "--out", str(out)], capture_output=True, text=True)
         self.assertEqual(done.returncode, 0, done.stderr)
-        path = out / "rounds.json"
+        # Through the manifest, as the page finds it: the generator writes the
+        # archive the site actually serves, not a file at a fixed path.
+        manifest = json.loads((out / "events.json").read_text())
+        path = out / manifest["events"][0]["path"]
         return path, json.loads(path.read_text())
 
     def check(self, path):

@@ -204,6 +204,30 @@ a{color:inherit}
 .livetag--sm{font-size:.6rem; padding:.2rem .45rem; letter-spacing:.1em}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
 .stamp{font:500 .8rem var(--mono); color:var(--text-3)}
+/* Pushed to the far end by its own margin rather than by space-between, which
+   would spread the badges evenly across the row instead of keeping them
+   together on the left. */
+.picker{display:flex; align-items:center; gap:.5rem; margin-left:auto}
+.picker[hidden]{display:none}
+.picker label{font:600 .7rem/1 var(--body); letter-spacing:.14em;
+  text-transform:uppercase; color:var(--text-3)}
+.picker select{
+  font:500 .82rem var(--body); color:var(--text); background:var(--surface-2);
+  border:1px solid var(--line); border-radius:var(--r-md);
+  padding:.4rem 1.9rem .4rem .7rem; min-height:40px; max-width:min(22rem,60vw);
+  cursor:pointer; appearance:none;
+  /* The arrow is drawn rather than linked: a CSS strict enough to forbid remote
+     images is the same one that keeps this page self-contained. */
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),
+                   linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-size:5px 5px,5px 5px;
+  background-position:calc(100% - 1.05rem) 55%,calc(100% - .7rem) 55%;
+  background-repeat:no-repeat;
+}
+.picker select:focus-visible{outline:2px solid var(--gold); outline-offset:2px}
+/* Once it wraps it is the only thing on its row, and a lone control pinned to
+   the right edge reads as though something is missing beside it. */
+@media (max-width:560px){.picker{margin-left:0}}
 
 .hero h1{font-size:clamp(1.9rem,5.2vw,3.1rem); letter-spacing:-.01em; max-width:20ch}
 .hero__meta{
@@ -391,6 +415,9 @@ tbody tr:hover{background:var(--surface-2)}
   border-left:3px solid var(--k); padding:.4rem .5rem; flex:none; width:7.5rem;
 }
 @media (max-width:560px){.post__k{width:auto}.post{flex-wrap:wrap; gap:.5rem}}
+/* Not a post, so it does not take the coloured kind rail: it is the one row in
+   the group that acts on the page above rather than pointing away from it. */
+.post--open{border-bottom:1px solid var(--line); padding-block:.85rem}
 .post__t{flex:1 1 auto; font-weight:500}
 /* Reads as the headline it is, not as a blue link in a row of plain ones. The
    underline on hover and focus is what says it goes somewhere. */
@@ -413,6 +440,7 @@ a.post__t--jump:hover,a.post__t--jump:focus-visible{text-decoration:underline do
   padding:.5rem .9rem; min-height:40px; cursor:pointer;
 }
 .btn:hover{border-color:var(--accent); color:var(--accent)}
+.btn--sm{font-size:.78rem; padding:.35rem .7rem; min-height:32px}
 .loading{display:flex; align-items:center; gap:.6rem; justify-content:center}
 .loading i{
   width:12px; height:12px; border-radius:50%; border:2px solid var(--line);
@@ -518,6 +546,14 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
              page's one claim about whether any of what follows is real, and it
              must not be able to disagree with the file it describes. -->
       <span class="demo" id="demo" hidden>Sample data</span>
+      <!-- Above the heading, because it chooses what the heading names. A
+           select rather than buttons: the archive grows an event at a time and
+           a row of them would not stay a row. Hidden while there is only one,
+           the same rule the format buttons follow. -->
+      <div class="picker" id="event-pick" hidden>
+        <label for="event-select">Event</label>
+        <select id="event-select"></select>
+      </div>
     </div>
 
     <h1 id="live-h">Loading event…</h1>
@@ -684,6 +720,12 @@ const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ESCAPES[c]);
    linking out. */
 function jumpTarget(post){
   if (post.kind !== 'pairings' && post.kind !== 'standings') return null;
+  /* The round panel holds one event, and which rounds another event published
+     is not in the manifest -- only in the file for that event, which has not
+     been fetched. Rather than offer a jump that might land nowhere, the event
+     group in the coverage list carries a control to open the event first; every
+     headline in it becomes a jump once it is the one on screen. */
+  if (post.slug && post.slug !== activeEvent) return null;
   if (post.round === null || post.round === undefined) return null;
   if (hasFormatChoice() && !post.format) return null;
   const name = post.format || activeFormat;
@@ -866,6 +908,11 @@ function groupFeed(xmlText){                                   // eslint-disable
        belongs to no format -- an announcement is about the event, not one of its
        tournaments -- carries none, and stays visible whichever is selected. */
     const fmt   = item.querySelector('category[domain="format"]')?.textContent?.trim() || null;
+    /* And the archive slug on a third. Names are for reading -- they are derived
+       from what the coverage calls itself and can change between scrapes -- so
+       the slug is what groups an event and what links a headline to the event
+       file the round panel loads. */
+    const slug  = item.querySelector('category[domain="event"]')?.textContent?.trim() || null;
     const name  = eventNameFrom(title, cat || 'Unsorted coverage');
 
     /* Feed items are titled "Event: headline" so each one stands alone in a
@@ -880,13 +927,18 @@ function groupFeed(xmlText){                                   // eslint-disable
       ? title.slice(name.length + 1).trim() || title
       : title;
 
-    let group = map.get(name);
-    if (!group) map.set(name, group = {event:name, date, posts:[]});
+    /* Keyed on the slug where there is one, so two events that happen to be
+       written the same way stay apart, and one renamed between scrapes does not
+       split into two. */
+    const key = slug || name;
+    let group = map.get(key);
+    if (!group) map.set(key, group = {event:name, slug, date, posts:[]});
     if (date > group.date) group.date = date;   // group carries its newest post's date
 
     group.posts.push({
       title: headline,
       format: fmt,
+      slug,
       url: safeUrl(url),
       time: date.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
       /* Classify the headline, not the full title: an event called
@@ -914,6 +966,20 @@ let activeFormat = null;       // which tournament's rounds are on screen
 let roundsVersion = null;      // change detection: see versionOf()
 let roundsState = 'loading';   // loading | ready | error
 let roundsError = '';
+
+/* The archive. events.json lists every event the scraper has built, small
+   enough to load first; each event's rounds live in their own file and are
+   fetched only when that event is being read. One event is about 1.3MB, so a
+   single file holding all of them would be a several-megabyte download to look
+   at one round of one tournament. */
+let CATALOG = [];              // events.json, newest first
+let activeEvent = null;        // slug of the event on screen
+let catalogVersion = null;
+
+const entryFor = slug => CATALOG.find(e => e.slug === slug);
+/* One event is not a choice, so it is not presented as one -- the same rule the
+   format buttons follow. */
+const hasEventChoice = () => CATALOG.length > 1;
 
 const roundOf = id => ROUNDS.find(r => r.id === id);
 const formatOf = name => eventInfo?.formats?.find(f => f.format === name) ?? eventInfo?.formats?.[0];
@@ -950,6 +1016,43 @@ function landOnCurrentRound(){
    does, so it is never said twice and never left unsaid. */
 const hasFormatChoice = () => (eventInfo?.formats?.length ?? 0) > 1;
 
+function renderEventPicker(){
+  const wrap = document.getElementById('event-pick');
+  const select = document.getElementById('event-select');
+  wrap.hidden = !hasEventChoice();
+  if (wrap.hidden){ select.innerHTML = ''; return; }
+  select.innerHTML = CATALOG.map(e =>
+    `<option value="${esc(e.slug)}"${e.slug === activeEvent ? ' selected' : ''}>${
+       esc(e.event)}${e.ongoing ? ' · live' : ''}</option>`).join('');
+}
+
+/* Switching events replaces everything below it, so the panel is emptied while
+   the new file is in flight rather than left showing the old event's rounds
+   under the new event's name. */
+async function selectEvent(slug){
+  const entry = entryFor(slug);
+  if (!entry || slug === activeEvent) return;
+  activeEvent = slug;
+  activeFormat = null;
+  activeRound = null;
+  eventInfo = null;
+  ROUNDS = [];
+  roundsState = 'loading';
+  renderEventMeta();
+  renderFormats();
+  buildTrack();
+  renderRound();
+  await refreshRounds();
+  /* Which headlines below are in-page jumps depends on which event is loaded,
+     so the list is rebuilt rather than left offering the previous event's. */
+  renderEvents();
+  say(`Showing ${entry.event}`);
+}
+
+document.addEventListener('change', e => {
+  if (e.target.id === 'event-select') selectEvent(e.target.value);
+});
+
 function renderFormats(){
   const el = document.getElementById('formats');
   const formats = eventInfo?.formats ?? [];
@@ -957,7 +1060,8 @@ function renderFormats(){
   if (el.hidden){ el.innerHTML = ''; return; }
   el.innerHTML = formats.map(f =>
     `<button type="button" data-format="${esc(f.format)}"
-             aria-pressed="${String(f.format === activeFormat)}">${esc(f.format)}</button>`).join('');
+             aria-pressed="${String(f.format === activeFormat)}">${
+       esc(f.format ?? 'Main event')}</button>`).join('');
 }
 
 document.addEventListener('click', e => {
@@ -965,25 +1069,54 @@ document.addEventListener('click', e => {
   if (b) selectFormat(b.dataset.format);
 });
 
-async function loadRounds(){
-  const res = await fetch('rounds.json', {cache:'no-cache'});
+async function loadCatalog(){
+  const res = await fetch('events.json', {cache:'no-cache'});
+  if (!res.ok) throw new Error(`events responded ${res.status}`);
+
+  const text = await res.text();
+  const version = versionOf(res, text);
+  if (catalogVersion !== null && version === catalogVersion) return {unchanged:true};
+
+  const data = JSON.parse(text);
+  if (!Array.isArray(data.events) || !data.events.length)
+    throw new Error('events.json lists no events');
+  catalogVersion = version;  // only after it parses, so a bad file is retried
+  return {unchanged:false, events:data.events};
+}
+
+/* The version is tracked per event, not globally: switching away and back must
+   refetch rather than see the mark left by the event in between and decide
+   nothing has changed. */
+async function loadRounds(entry){
+  const res = await fetch(entry.path, {cache:'no-cache'});
   if (!res.ok) throw new Error(`rounds responded ${res.status}`);
 
   const text = await res.text();
   const version = versionOf(res, text);
-  if (roundsVersion !== null && version === roundsVersion) return {unchanged:true};
+  if (roundsVersion?.slug === entry.slug && roundsVersion.version === version)
+    return {unchanged:true};
 
   const data = JSON.parse(text);
   if (!Array.isArray(data.formats) || !data.formats.length) throw new Error('rounds.json has no formats');
   if (!data.formats.some(f => Array.isArray(f.rounds) && f.rounds.length))
     throw new Error('rounds.json has no rounds');
-  roundsVersion = version;   // only after it parses, so a bad file is retried
+  roundsVersion = {slug:entry.slug, version};
   return {unchanged:false, data};
 }
 
 async function refreshRounds({poll = false} = {}){
   try {
-    const result = await loadRounds();
+    const catalog = await loadCatalog();
+    if (!catalog.unchanged){
+      CATALOG = catalog.events;
+      renderEventPicker();
+    }
+    /* Whatever the reader chose, unless the archive no longer offers it. The
+       newest event is the default, and a poll must not move them off the one
+       they are reading just because a newer one appeared. */
+    if (!activeEvent || !entryFor(activeEvent)) activeEvent = CATALOG[0].slug;
+
+    const result = await loadRounds(entryFor(activeEvent));
     if (result.unchanged){
       roundsState = 'ready';
       roundsError = '';
@@ -1008,6 +1141,7 @@ async function refreshRounds({poll = false} = {}){
     roundsError = err.message;
   }
   renderEventMeta();
+  renderEventPicker();
   renderFormats();
   buildTrack();
   syncSegs();
@@ -1016,6 +1150,17 @@ async function refreshRounds({poll = false} = {}){
      directly instead of routing through round selection. */
   if (roundsState === 'ready' && activeRound) selectRound(activeRound);
   else renderRound();
+  /* Whether a headline in the coverage list is an in-page jump depends on the
+     rounds this event published, so the list has to be repainted once they
+     arrive. It used to be right by luck: rounds were one fetch and coverage
+     two, so the rounds always landed first. Reading the manifest before the
+     event file reversed that, and every headline rendered as a link off to
+     Konami for a round sitting a few hundred pixels above.
+
+     Only when the data actually changed -- refreshRounds returns early when it
+     has not -- and through the focus-preserving path, so a poll cannot steal
+     focus or reset scroll inside an expanded event. */
+  if (EVENTS.length) renderEventsKeepingFocus();
 }
 
 function renderEventMeta(){
@@ -1038,7 +1183,10 @@ function renderEventMeta(){
     /* The selector sits directly below this line and shows the format as the
        pressed button. Naming it here as well printed it twice, a few pixels
        apart, with only one of them actually being the control. */
-    hasFormatChoice() ? '' : `<span>Format <b>${esc(f?.format ?? '—')}</b></span>`,
+    /* Absent, not blank: some events run a single tournament and never name a
+       format -- the North America WCQ titles every post "North America WCQ:
+       Round 10 Pairings" -- and "Format —" states a gap where there is none. */
+    (hasFormatChoice() || !f?.format) ? '' : `<span>Format <b>${esc(f.format)}</b></span>`,
     `<span>Coverage by <b>${esc(eventInfo.coverageBy)}</b></span>`
   ].filter(Boolean).join('');
 }
@@ -1074,6 +1222,7 @@ function toDisplayEvents(groups, built){
   const feedIsFresh = !!built && (Date.now() - built) < LIVE_WINDOW_MS;
   return groups.map(g => ({
     event: g.event,
+    slug:  g.slug,
     date:  g.date.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'}),
     live:  feedIsFresh && (built - g.date) < LIVE_WINDOW_MS,
     posts: g.posts
@@ -1367,6 +1516,14 @@ function renderStandings(r){
      rendered as a bare "%". Each appears only where the data has it. */
   const hasDeck = rows.some(s => s.deck);
   const hasPct = rows.some(s => s.pct !== null && s.pct !== undefined);
+  /* And the same rule for the two columns that used to be unconditional. The
+     blog does not always publish a points column -- YCS Columbus has none for
+     any of its 17 rounds -- and without points there is nothing to derive a
+     record from either. Printed anyway, that is 1,618 rows of "?–?" beside
+     1,618 rows of "—", two columns wide, saying nothing twice. */
+  const hasPoints = rows.some(s => s.points !== null && s.points !== undefined);
+  const hasRecord = rows.some(s => s.record && (s.record.wins !== null
+                                             && s.record.wins !== undefined));
 
   return wrapTable(`Standings after round ${r.standingsAfter}`, `<table>
     <caption>${r.phase === 'Top cut'
@@ -1374,14 +1531,15 @@ function renderStandings(r){
       : `Standings after round ${esc(r.standingsAfter)}, top eight shown.`}</caption>
     <thead><tr>
       <th scope="col" class="num">Place</th><th scope="col">Duelist</th>
-      <th scope="col">Record</th><th scope="col" class="num">Pts</th>
+      ${hasRecord ? '<th scope="col">Record</th>' : ''}
+      ${hasPoints ? '<th scope="col" class="num">Pts</th>' : ''}
       ${hasDeck ? '<th scope="col">Deck</th>' : ''}
       ${hasPct ? '<th scope="col">Opp. win %</th>' : ''}
     </tr></thead><tbody>
     ${rows.map(s => `<tr>
       <th scope="row" class="num">${esc(s.pos)}</th><td>${esc(s.name)}</td>
-      <td class="rec${s.record?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(s.record, {drawsPossible: eventDrawsPossible()}))}</td>
-      <td class="rec num">${esc(s.points ?? '—')}</td>
+      ${hasRecord ? `<td class="rec${s.record?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(s.record, {drawsPossible: eventDrawsPossible()}))}</td>` : ''}
+      ${hasPoints ? `<td class="rec num">${esc(s.points ?? '—')}</td>` : ''}
       ${hasDeck ? `<td>${esc(s.deck ?? '')}</td>` : ''}
       ${hasPct ? `<td class="rec">${esc(s.pct)}%</td>` : ''}</tr>`).join('')}
     </tbody></table>`);
@@ -1472,8 +1630,15 @@ viewButtons.forEach(b => b.addEventListener('click', () => {
    Only where there is a choice to make. A single-format event hides the
    selector, and filtering on the one format it has would say nothing while
    risking hiding everything if the feed and the round data disagreed on the
-   name. Posts with no format are event-wide and always shown. */
+   name. Posts with no format are event-wide and always shown.
+
+   And only for the event on screen. The selector chooses between that event's
+   tournaments and says nothing about anyone else's: with the archive holding
+   four events, reading YCS Montreal's Advanced tournament made the Genesys
+   Championship disappear from the coverage list entirely -- every post it has
+   is Genesys, and none of them was ever part of the choice being made. */
 function inSelectedFormat(post){
+  if (post.slug && post.slug !== activeEvent) return true;
   if (!post.format || !hasFormatChoice()) return true;
   return post.format === activeFormat;
 }
@@ -1538,6 +1703,15 @@ function renderEvents(){
         </button>
       </h3>
       <div class="event__body" id="ev-${i}" ${isOpen ? '' : 'hidden'}>
+        ${/* The archive holds this event's rounds, and they are not the ones on
+              screen. Offered rather than assumed: switching replaces the whole
+              panel above, which is not something a reader should get by
+              expanding a list. Outside the disclosure button, because a button
+              inside a button is not markup. */
+          entryFor(ev.slug) && ev.slug !== activeEvent
+            ? `<div class="post post--open"><button type="button" class="btn btn--sm"
+                 data-open-event="${esc(ev.slug)}">Show this event's rounds</button></div>`
+            : ''}
         ${ev.posts.map(p => `<div class="post" style="--k:${kindOf(p.kind).color}">
           <span class="post__k">${esc(kindOf(p.kind).label)}</span>
           ${(() => {
@@ -1575,6 +1749,12 @@ list.addEventListener('click', e => {
    has to be restored. */
 list.addEventListener('click', e => {
   if (e.target.closest('[data-retry]')){ refreshCoverage(); return; }
+  const opener = e.target.closest('[data-open-event]');
+  if (opener){
+    selectEvent(opener.dataset.openEvent)
+      .then(() => document.getElementById('live-h').scrollIntoView({block: 'start'}));
+    return;
+  }
   const bar = e.target.closest('.event__bar');
   if (!bar) return;
   const name = bar.dataset.ev;

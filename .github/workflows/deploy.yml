@@ -55,14 +55,15 @@ jobs:
         run: |
           echo "sample=$(python3 -c "
           import json
-          print('true' if json.load(open('rounds.json')).get('sample') is True else 'false')
+          events = json.load(open('events.json')).get('events') or []
+          print('true' if events and all(e.get('sample') is True for e in events) else 'false')
           ")" >> "$GITHUB_OUTPUT"
 
       - if: steps.provenance.outputs.sample == 'true'
         name: Regenerate sample data with current timestamps
         # --out . explicitly: the generator now writes test fixtures by default,
-        # and this step is the one place that still wants the root files. Left
-        # implicit it would refresh the fixtures and deploy the stale root.
+        # and this step is the one place that still wants the served files. Left
+        # implicit it would refresh the fixtures and deploy the stale archive.
         run: python3 scripts/generate-sample-data.py --out .
 
       # Whatever is about to be staged, check it here too: the regenerated files
@@ -71,7 +72,9 @@ jobs:
       - name: Validate the data about to be published
         run: |
           python3 .github/scripts/check-feed.py feed.xml
-          python3 .github/scripts/check-rounds.py rounds.json
+          for f in events/*/rounds.json; do
+            python3 .github/scripts/check-rounds.py "$f"
+          done
 
       # An include list, so the artifact holds the site and not the repository.
       - name: Stage the site
