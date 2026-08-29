@@ -378,9 +378,20 @@ let pickerAt = 0;                 // which option the keyboard is on
 const pickerInput = () => document.getElementById('event-search');
 const pickerList  = () => document.getElementById('event-list');
 
+/* "NAWCQ" for "North America WCQ 2026". The qualifiers are known by their
+   initials as much as by their names -- the blog's own coverage calls that
+   event NAWCQ throughout -- and neither the name nor the slug contains the
+   word. A part that is already an abbreviation stays whole, so the WCQ in the
+   middle survives rather than becoming a W. */
+function initials(name){
+  const words = String(name || '').split(/\s+/).filter(w => /[a-z]/i.test(w));
+  return words.map(w => (w.length > 1 && w === w.toUpperCase() ? w : w[0])).join('')
+              .toLowerCase();
+}
+
 function eventMatches(e){
   if (!pickerQuery) return true;
-  const hay = [e.event, e.location, e.slug, (e.updated || '').slice(0, 4)]
+  const hay = [e.event, e.location, e.slug, (e.updated || '').slice(0, 4), initials(e.event)]
     .filter(Boolean).join(' ').toLowerCase();
   /* Every word, in any order: "wcq 2018" and "2018 wcq" are the same request,
      and neither is a substring of "North America WCQ 2018". */

@@ -42,10 +42,32 @@ MIN_NAMING_TITLES = 2
 # only a handful of titles reaches straight past the name into the subject:
 # three WCQ posts, two of them round pairings, named the event "North America
 # WCQ Round". A name never ends with one of these.
-_SUBJECT_WORDS = {"round", "rounds", "day", "top", "final", "finals",
-                  "standings", "pairing", "pairings", "feature", "match",
-                  "deck", "decks", "profile", "lists", "update", "updates",
-                  "results", "winner", "winners", "champion", "champions"}
+_SUBJECT_WORDS = {"round", "rounds", "day", "top", "table", "tables", "final",
+                  "finals", "standings", "pairing", "pairings", "feature",
+                  "match", "deck", "decks", "profile", "lists", "update",
+                  "updates", "results", "winner", "winners", "champion",
+                  "champions"}
+
+# Event types written as initials, so a slug's "ycs" comes back as "YCS".
+_ACRONYMS = {"ycs", "uds", "wcq", "sjc", "wcs", "ygoc", "rdycs", "nawcq"}
+
+
+def names_an_event(name: str) -> bool:
+    """Whether a name derived from the coverage identifies the event.
+
+    Two of them do not. YCS Charlotte's coverage agreed most often on "Top
+    Table Update", which is what a post is about rather than what the event was
+    called, and YCS Hartford's on "YCS", which is thirty events.
+
+    A word saying what a post contains is the giveaway for the first: no event
+    is called Standings or Top Tables. The second is a bare event type with
+    nothing to tell it from any other -- unlike "Genesys Championship", which is
+    also all common words and is nonetheless the name of a tournament.
+    """
+    words = [w.lower().strip(":,.") for w in name.split() if w.strip(":,.")]
+    if not words or any(w in _SUBJECT_WORDS for w in words):
+        return False
+    return not (len(words) == 1 and words[0] in _EVENT_WORDS)
 
 
 def _trim_subject(name: str) -> str:
@@ -211,17 +233,25 @@ def place_name(slug: str) -> tuple[str | None, str | None]:
     # are written that way throughout (anaheim-ca, atlanta-ga, pittsburgh-pa),
     # and the D and C of "bogota-d-c-colombia" are Distrito Capital rather than
     # part of the city.
-    place = [t for t in tokens if not any(c.isdigit() for c in t) and len(t) > 2]
-    if not place or any(t in _EVENT_WORDS for t in place):
+    words = [t for t in tokens if not any(c.isdigit() for c in t) and len(t) > 2]
+    # A slug saying what kind of event it was keeps that word and gives up the
+    # rest to the place: "2022-ycs-charlotte" is the YCS at Charlotte. Only
+    # types written as initials, because those are the ones a title would carry
+    # anyway -- anything longer is a word about the event, and a word about the
+    # event is more than this guess should overrule.
+    kind = [t for t in words if t in _ACRONYMS]
+    place = [t for t in words if t not in _EVENT_WORDS]
+    if not place or len(kind) != len(words) - len(place):
         return None, None
+    prefix = " ".join(t.upper() for t in kind) or "YCS"
     title = lambda ts: " ".join(t.title() for t in ts)
     if len(place) > 1 and place[-1] in _ENCLOSING:
         city, where = title(place[:-1]), title(place[-1:])
-        return f"YCS {city}", f"{city}, {where}"
+        return f"{prefix} {city}", f"{city}, {where}"
     # No country in the slug, so none is known. "Columbus" on its own would be
     # the title with a word taken off rather than anything the archive did not
     # already say.
-    return f"YCS {title(place)}", None
+    return f"{prefix} {title(place)}", None
 
 
 def split_location(name: str) -> tuple[str, str | None]:
@@ -250,12 +280,15 @@ def canonical_name(name: str, slug: str, ended: str | None, *,
 
     `named` says whether the coverage agreed on `name` or it is the slug
     title-cased. A qualifier is renamed either way -- the blog's own "NAWCQ" is
-    a name, and not one that says which year's -- while a place is only guessed
-    at when there was nothing to go on.
+    a name, and not one that says which year's -- while a place is guessed at
+    only when there was nothing to go on, or nothing worth having.
     """
     if qualifier := wcq_name(slug, name, ended):
         return qualifier, None
-    if not named and (place := place_name(slug))[0]:
+    # Either the coverage never agreed on a name, or it agreed on something that
+    # is not one. YCS Charlotte's settled on "Top Table Update" and YCS
+    # Hartford's on "YCS", and the slug does better than both.
+    if not (named and names_an_event(name)) and (place := place_name(slug))[0]:
         return place
     return split_location(name)
 

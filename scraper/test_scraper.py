@@ -3259,15 +3259,39 @@ class TestTheEventListReadsAsNames(unittest.TestCase):
     def test_a_name_with_no_comma_says_nothing_about_where(self):
         self.assertIsNone(self.location("YCS Montréal", "2026-08-quebec"))
 
+    def test_a_name_that_says_what_a_post_is_about_is_not_an_event_name(self):
+        # YCS Charlotte's coverage agreed most often on "Top Table Update",
+        # which is what a post contains. No event is called Standings.
+        self.assertEqual(self.name("Top Table Update", "2022-ycs-charlotte"),
+                         "YCS Charlotte")
+
+    def test_a_bare_event_type_is_not_an_event_name(self):
+        # YCS Hartford's settled on "YCS", which is thirty events.
+        self.assertEqual(self.name("YCS", "202205-ycs-hartford-ct"), "YCS Hartford")
+
+    def test_a_name_of_common_words_can_still_be_a_name(self):
+        # "Genesys Championship" is a format and an event type and nothing else,
+        # and is nonetheless what that tournament is called.
+        self.assertEqual(
+            self.name("Genesys Championship", "2026-north-america-genesys-championship"),
+            "Genesys Championship")
+
+    def test_the_slug_keeps_the_kind_of_event_it_says(self):
+        # "2022-ycs-charlotte" is the YCS at Charlotte, not a YCS by default.
+        from naming import place_name
+        self.assertEqual(place_name("uds-2016-elsalvador")[0], "UDS Elsalvador")
+
     def test_a_place_is_only_guessed_at_when_there_was_nothing_to_go_on(self):
         # The coverage agreed on a name, so it is not overruled by a guess.
         self.assertEqual(self.name("YCS Anaheim", "201611-anaheim-ca", named=True),
                          "YCS Anaheim")
 
-    def test_a_slug_saying_what_kind_of_event_it_was_is_left_alone(self):
-        # That word is more information than the guess would be.
-        for slug in ("na-ygoc-2022", "uds-2016-elsalvador",
-                     "201703-uds-winter-invitational-las-vegas"):
+    def test_a_slug_saying_more_than_a_place_is_left_alone(self):
+        # An event type written as initials is kept and the rest read as the
+        # place. Any other word about the event is more than the guess should
+        # overrule, so those slugs keep the fallback: "winter invitational" is
+        # not a city, and neither is "ygoc".
+        for slug in ("na-ygoc-2022", "201703-uds-winter-invitational-las-vegas"):
             fallback = slug.replace("-", " ").title()
             self.assertEqual(self.name(fallback, slug, named=False), fallback, slug)
 
