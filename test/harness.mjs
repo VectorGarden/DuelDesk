@@ -2,10 +2,10 @@
  * Load index.html into jsdom with a controllable network, so the page's own
  * code can be tested rather than a copy of it.
  *
- * The site is one file with an inline <script> that boots on load and fetches
- * immediately. That is exactly what makes it worth testing through jsdom: the
- * tests exercise the real boot sequence, the real render functions and the real
- * state machine, not a re-implementation that can drift from them.
+ * The page boots on load and fetches immediately. That is exactly what makes it
+ * worth testing through jsdom: the tests exercise the real boot sequence, the
+ * real render functions and the real state machine, not a re-implementation
+ * that can drift from them.
  *
  * jsdom does not implement matchMedia, scrollIntoView or fetch, so those are
  * installed before the page's script runs.
@@ -13,7 +13,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { JSDOM, VirtualConsole } from 'jsdom';
+import { JSDOM, VirtualConsole, ResourceLoader } from 'jsdom';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -92,6 +92,21 @@ function makeResponse({ status = 200, body = '', headers = {} }) {
   };
 }
 
+/* app.js and styles.css are loaded by jsdom itself rather than through the
+   page's fetch, so the fetch stub never sees them. Without a loader jsdom would
+   either skip the script -- leaving every test running against markup with no
+   behaviour behind it -- or go to the real origin over the network.
+
+   Same mapping as the fetch stub uses, for the same reason: the tests run the
+   files the site ships, not copies of them. */
+class LocalFiles extends ResourceLoader {
+  fetch(url) {
+    const name = new URL(url).pathname.replace(/^\//, '');
+    try { return Promise.resolve(Buffer.from(fixture(name))); }
+    catch { return null; }          // jsdom treats null as "not loaded"
+  }
+}
+
 /**
  * Load the page.
  *
@@ -117,6 +132,7 @@ export async function loadPage(opts = {}) {
        links look external and the coverage list sprouts links to itself. */
     url: ORIGIN,
     runScripts: 'dangerously',
+    resources: new LocalFiles(),
     pretendToBeVisual: true,
     virtualConsole,
     beforeParse(window) {

@@ -14,7 +14,8 @@ OUT="${1:-_site}"
 rm -rf "$OUT"
 mkdir -p "$OUT"
 
-FILES=(index.html feed.xml events.json og.png favicon.ico site.webmanifest CNAME robots.txt)
+FILES=(index.html styles.css app.js feed.xml events.json og.png favicon.ico
+       site.webmanifest CNAME robots.txt)
 # events/ is the archive: one directory per event, fetched on demand rather than
 # all at once. Staged whole, because which event a reader opens is their choice
 # and every one of them has to be there when they make it.

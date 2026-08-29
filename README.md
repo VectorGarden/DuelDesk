@@ -10,8 +10,8 @@ standings, and feature matches, in the shape a competitive player actually reads
 
 ## What it is
 
-The whole site is one dependency-free `index.html` — markup, styles, and behaviour in a single
-file, no build step. Open it in a browser and it works.
+A dependency-free site in three files — `index.html`, `styles.css`, `app.js` — with no build step.
+Open it in a browser and it works.
 
 ### Features
 
@@ -127,7 +127,8 @@ about a fifth carry the slug. The rest are attached by date window — which tak
 
 ## Tests
 
-The JavaScript lives inside `index.html`, so it never reaches a bundler or a linter. The suite
+The JavaScript never reaches a bundler or a linter, so `check-inline-js.mjs` parse-checks it —
+every inline block and every local file a `<script src>` points at. The suite
 loads the real page into jsdom with a controllable network and exercises the actual boot sequence,
 render functions and state machines — not a re-implementation that could drift from them.
 
@@ -265,7 +266,9 @@ to fetch, parse, and serve the JSON to the page.
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | The entire site — markup, styles, and behaviour. |
+| `index.html` | The site's markup. |
+| `styles.css` | Its styles. |
+| `app.js` | Its behaviour. Loaded with `defer`; the only inline script is the theme resolver, which has to run before first paint. |
 | `feed.xml` | RSS 2.0 coverage feed, newest posts across the whole archive. |
 | `events.json` | Every event in the archive: name, date, formats, and where to find it. |
 | `events/` | One directory per event; fetched on demand, not all at once. |
@@ -334,7 +337,8 @@ staged tree, so a file the page needs but the script forgot fails the build inst
 production.
 
 After `deploy-pages` publishes, [`scripts/smoke-test.sh`](scripts/smoke-test.sh) asks production
-directly: the served `index.html` must hash-match the uploaded artifact, `events.json` and the
+directly: the served `index.html`, `styles.css` and `app.js` must each hash-match the uploaded
+artifact, `events.json` and the
 event it names newest must match it too, that event must carry
 a timestamp only this deploy could have written, every referenced file must return 200, and no
 source file may be reachable. It retries while Pages propagates, and reports every fault it finds

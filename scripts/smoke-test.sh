@@ -43,6 +43,20 @@ for i in $(seq 1 "$ATTEMPTS"); do
   fi
 done
 
+# --- 1b. and so are the files it cannot run without --------------------------
+# index.html is markup now; the behaviour is in app.js and the look in
+# styles.css. A deploy that shipped a stale app.js would serve a page that
+# renders and then does nothing, and the hash above would call it correct.
+for asset in styles.css app.js; do
+  want="$(shasum -a 256 "$SITE/$asset" | cut -d' ' -f1)"
+  got="$(fetch "$BASE/$asset" 2>/dev/null | shasum -a 256 | cut -d' ' -f1)"
+  if [ "$want" = "$got" ]; then
+    echo "  ok    $asset matches the uploaded artifact"
+  else
+    fail "$asset served ${got:0:16}..., expected ${want:0:16}..."
+  fi
+done
+
 # --- 2. the data we built is the data being served ---------------------------
 # Hash-compared like index.html, because that holds however the data was made.
 # The age check below cannot do this job alone: real coverage is stamped with the
