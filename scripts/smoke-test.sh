@@ -47,13 +47,29 @@ done
 # Hash-compared like index.html, because that holds however the data was made.
 # The age check below cannot do this job alone: real coverage is stamped with the
 # event's own times, so a finished event is legitimately days old.
-if fetch "$BASE/rounds.json" > /tmp/smoke-rounds.json 2>/dev/null; then
-  want="$(shasum -a 256 "$SITE/rounds.json" | cut -d' ' -f1)"
+# The manifest first, then the event it names newest -- which is the pair the
+# page loads on a cold visit. Checking only the manifest would pass a deploy
+# that shipped an index to files it forgot to stage.
+if ! fetch "$BASE/events.json" > /tmp/smoke-events.json 2>/dev/null; then
+  fail "could not fetch events.json"
+fi
+want="$(shasum -a 256 "$SITE/events.json" | cut -d' ' -f1)"
+got="$(shasum -a 256 /tmp/smoke-events.json | cut -d' ' -f1)"
+[ "$want" = "$got" ] \
+  && echo "  ok    events.json matches the uploaded artifact" \
+  || fail "events.json served ${got:0:16}..., expected ${want:0:16}..."
+
+NEWEST="$(python3 -c '
+import json; print(json.load(open("/tmp/smoke-events.json"))["events"][0]["path"])')"
+echo "  ..    newest event is $NEWEST"
+
+if fetch "$BASE/$NEWEST" > /tmp/smoke-rounds.json 2>/dev/null; then
+  want="$(shasum -a 256 "$SITE/$NEWEST" | cut -d' ' -f1)"
   got="$(shasum -a 256 /tmp/smoke-rounds.json | cut -d' ' -f1)"
   if [ "$want" = "$got" ]; then
-    echo "  ok    rounds.json matches the uploaded artifact"
+    echo "  ok    $NEWEST matches the uploaded artifact"
   else
-    fail "rounds.json served ${got:0:16}..., expected ${want:0:16}..."
+    fail "$NEWEST served ${got:0:16}..., expected ${want:0:16}..."
   fi
 
   # The freshness rule applies only to the simulation, which is regenerated on
@@ -80,9 +96,9 @@ if sample and age > limit:
     print(f"  sample data is {age:.0f} min old (limit {limit:.0f}); this deploy did not regenerate it")
     sys.exit(1)
 print(f"  ok    {kind} data is {age:.0f} min old, live round {live or chr(40)+chr(41)}")
-' "$MAX_DATA_AGE_MIN" || fail "rounds.json timestamp is wrong"
+' "$MAX_DATA_AGE_MIN" || fail "the served event's timestamp is wrong"
 else
-  fail "could not fetch rounds.json"
+  fail "could not fetch $NEWEST"
 fi
 
 # --- 3. everything the page needs is reachable -------------------------------

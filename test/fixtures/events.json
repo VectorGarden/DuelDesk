@@ -1,0 +1,27 @@
+{
+  "events": [
+    {
+      "slug": "sample-remote-duel-ycs",
+      "event": "Remote Duel YCS August 2026",
+      "updated": "2026-08-29T20:01:48Z",
+      "sample": true,
+      "ongoing": false,
+      "coverageBy": "the Duel Desk team",
+      "path": "events/sample-remote-duel-ycs/rounds.json",
+      "formats": [
+        {
+          "format": "Advanced",
+          "swissRounds": 12,
+          "duelists": 1248,
+          "rounds": 15
+        },
+        {
+          "format": "Genesys",
+          "swissRounds": 10,
+          "duelists": 384,
+          "rounds": 13
+        }
+      ]
+    }
+  ]
+}

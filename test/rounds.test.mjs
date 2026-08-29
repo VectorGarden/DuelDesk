@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { loadPage } from './harness.mjs';
+import { loadPage, roundsFixture } from './harness.mjs';
 
 const body = (page) => page.text('#round-body');
 const select = (page, id) => { page.run(`selectRound('${id}')`); return body(page); };
@@ -87,8 +87,7 @@ test('the current round comes from the data, not a hardcoded id', async (t) => {
   const moved = await loadPage({
     routes: {
       'rounds.json': async ({ calls }) => {
-        const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
+        const d = roundsFixture();
         const f = d.formats[0];
         f.rounds.forEach((r) => { if (r.state === 'live') r.state = 'done'; });
         f.rounds.find((r) => r.id === '7').state = 'live';
@@ -276,8 +275,7 @@ test('a live Swiss round is counted in tables, not matches', async (t) => {
   const page = await loadPage({
     routes: {
       'rounds.json': async () => {
-        const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
+        const d = roundsFixture();
         const f = d.formats[0];
         f.rounds.forEach((r) => { if (r.state === 'live') r.state = 'upcoming'; });
         f.rounds.find((r) => r.id === '9').state = 'live';
@@ -309,8 +307,7 @@ test('a single-format event shows no selector, because there is no choice', asyn
   const page = await loadPage({
     routes: {
       'rounds.json': async () => {
-        const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
+        const d = roundsFixture();
         d.formats = [d.formats[0]];
         return { status: 200, body: JSON.stringify(d) };
       },
@@ -411,8 +408,7 @@ function withRounds(transform) {
   return {
     routes: {
       'rounds.json': async () => {
-        const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
+        const d = roundsFixture();
         transform(d);
         return { status: 200, body: JSON.stringify(d) };
       },
@@ -624,8 +620,7 @@ test('a single-format event filters nothing away', async (t) => {
     routes: {
       'feed.xml': { status: 200, body: MIXED_FEED },
       'rounds.json': async () => {
-        const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
+        const d = roundsFixture();
         d.formats = [d.formats[0]];
         return { status: 200, body: JSON.stringify(d) };
       },
@@ -855,8 +850,7 @@ test('with one format the meta names it, since no selector does', async (t) => {
   const page = await loadPage({
     routes: {
       'rounds.json': async () => {
-        const { readFileSync } = await import('node:fs');
-        const d = JSON.parse(readFileSync(new URL('../test/fixtures/rounds.json', import.meta.url), 'utf8'));
+        const d = roundsFixture();
         d.formats = [d.formats[0]];
         return { status: 200, body: JSON.stringify(d) };
       },
