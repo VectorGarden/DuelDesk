@@ -258,7 +258,9 @@ def build_format(name: str | None, sources: list[Source], *,
         # source order happened to leave last, so the choice is a decision and
         # the same scrape twice running gives the same answer.
         existing = by_round[key].get(s.post.kind)
-        if s.post.kind == "feature" and existing and not better_feature(s, existing):
+        if existing is not None and not (better_feature(s, existing)
+                                         if s.post.kind == "feature"
+                                         else better_table(s, existing)):
             continue
         by_round[key][s.post.kind] = s
     if not by_round:
@@ -537,6 +539,29 @@ def entered_as_teams(sources: list[Source]) -> bool:
             if row.get("members") or row.get("duels"):
                 return True
     return False
+
+
+def better_table(candidate: Source, existing: Source) -> bool:
+    """Whether `candidate` is the pairings or standings to use for a round.
+
+    Two posts can claim one round. Sometimes it is the same table published
+    twice; sometimes it is two events sharing a weekend, which the January 2022
+    Remote Duel YCS did with the Latin America one -- both published a Top 32,
+    and both landed on the same event.
+
+    Whichever arrived last used to win, which is not a rule at all: the same
+    coverage built differently from one run to the next, and an empty table beat
+    a full one whenever the empty one happened to be read second. That is how an
+    event passed here and was rejected in CI on identical data.
+
+    So the fuller table wins, and the newer breaks a tie. It does not settle
+    which event a post belonged to -- nothing here can -- but it does make the
+    answer the same every time, and prefers the reading with something in it.
+    """
+    rows = lambda s: len(s.post.table.rows) if s.post.table else 0
+    if rows(candidate) != rows(existing):
+        return rows(candidate) > rows(existing)
+    return (candidate.posted or "") >= (existing.posted or "")
 
 
 def better_feature(candidate: Source, existing: Source) -> bool:
