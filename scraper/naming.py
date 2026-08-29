@@ -26,16 +26,46 @@ MIN_SHARE = 0.4
 
 
 def event_name(titles: list[str], fallback: str) -> str:
-    """The event's name, or `fallback` if its posts do not agree on one."""
-    prefixes = Counter()
+    """The event's name, or `fallback` if its posts do not agree on one.
+
+    Two things this counts carefully, both learned by getting them wrong.
+
+    Support is titles that *start with* the candidate, not titles whose prefix
+    equals it. "YCS Montreal Top Tables Update" is thirteen posts naming the same
+    event under a longer heading, and treating them as a rival name split the
+    vote.
+
+    The denominator is titles that name anything at all, not every title. A news
+    post headed "Doors open at 9am" is not a vote against the event's name, it is
+    an abstention. Counting it as one is how raising the fetch budget from 60
+    posts to 143 pushed a 39.9% share under a 40% threshold and renamed the event
+    from "YCS Montreal" to "2026 08 Quebec" -- the same coverage, more of it, and
+    a worse answer.
+    """
+    named, prefixes = 0, Counter()
     for title in titles:
         parts = _TITLE_SPLIT.split(title.strip(), maxsplit=1)
         if len(parts) == 2 and parts[0]:
+            named += 1
             prefixes[parts[0]] += 1
     if not prefixes:
         return fallback
-    name, count = prefixes.most_common(1)[0]
-    return name if count >= MIN_SHARE * len(titles) else fallback
+
+    # Score every candidate by how many titles begin with it. A shorter name can
+    # only have at least the support of one extending it, so this settles on the
+    # event rather than on a heading that happens to be common: "YCS Montreal Top
+    # Tables Update" has thirteen posts of its own and is still not what the
+    # event is called.
+    #
+    # The length tie-break is for a stable answer rather than a better one. Two
+    # names in that position are unrelated -- one cannot extend the other and
+    # still tie -- so nothing here can tell them apart, and picking on length
+    # beats picking on whatever order the dictionary happened to be built in.
+    def support(name):
+        return sum(1 for t in titles if t.strip().startswith(name))
+
+    name = max(prefixes, key=lambda p: (support(p), -len(p)))
+    return name if support(name) >= MIN_SHARE * named else fallback
 
 
 def clock(stamp: str | None) -> str | None:

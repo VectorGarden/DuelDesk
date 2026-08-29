@@ -10,7 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -41,12 +41,61 @@ def newest_event(entries):
     return slug, posts, max(p["lastmod"] for p in posts if p["lastmod"])
 
 
+# Only pairings and standings feed a record, and losses need *every* round's
+# pairings, so those two are not rationed. The rest is ordering for the case
+# where the budget still binds.
+# Order within a rotation, not a cut-off: a feature match attaches to a round on
+# the page, so it goes before coverage that only ever appears in the feed.
+RANK = {"feature": 0, "deck": 1, "result": 2, "news": 3}
+
+
+def select_posts(posts: list[dict], limit: int) -> list[dict]:
+    """Which of an event's posts to fetch, and in what order.
+
+    Sorting everything by kind and taking the first N starves whichever kinds
+    sort last. At YCS Montreal that was feature matches: 30 pairings and 23
+    standings filled 53 of 60 slots, so 5 of 37 features were fetched -- and all
+    five happened to be Genesys, so Advanced showed none at all, including its
+    Top 8 and Top 4 feature matches.
+
+    Pairings and standings come first and whole, because a record is wrong
+    without every round of them. What remains is shared round-robin, so a thin
+    budget thins every kind rather than deleting one: half the feature matches is
+    a smaller loss than none of them.
+
+    Newest first within a kind. For a finished event that is the top cut, which
+    is the coverage most worth having when not all of it fits.
+
+    Worth being plain about the trade: under a budget tight enough to bind, this
+    gives feature matches fewer than the old strict ordering did -- two of 37 at
+    a limit of 60 where the old rule managed five. It is the limit that was
+    wrong. At 200, which is above what an event publishes, every kind arrives
+    whole and the rotation never runs.
+    """
+    by_kind: dict[str, list[dict]] = defaultdict(list)
+    for post in posts:
+        by_kind[post["kind"]].append(post)
+    for group in by_kind.values():
+        group.sort(key=lambda p: p["lastmod"] or "", reverse=True)
+
+    chosen = [p for kind in ("pairings", "standings") for p in by_kind.pop(kind, [])]
+    rationed = [by_kind[k] for k in sorted(by_kind, key=lambda k: RANK.get(k, 9))]
+    while len(chosen) < limit and any(rationed):
+        for group in rationed:
+            if group and len(chosen) < limit:
+                chosen.append(group.pop(0))
+    return chosen[:limit]
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="scraped-rounds.json")
     ap.add_argument("--cache", default=".scrape-state/cache")
     ap.add_argument("--summary", help="file to append a human-readable report to")
-    ap.add_argument("--limit", type=int, default=60, help="max posts to fetch")
+    # An event runs to about 140 posts and its own table of contents caps out
+    # under 200. Cache hits cost nothing, so fetching a whole event is a one-off
+    # of a few minutes and every run after it fetches only what is new.
+    ap.add_argument("--limit", type=int, default=200, help="max posts to fetch")
     ap.add_argument("--feed", help="also write an RSS feed of the posts seen")
     args = ap.parse_args()
 
