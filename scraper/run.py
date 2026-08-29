@@ -10,6 +10,8 @@ written once and then skipped on every run after it.
 from __future__ import annotations
 
 import argparse
+import shutil
+import subprocess
 import sys
 from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
@@ -211,6 +213,24 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     return event, feed_posts, lines
 
 
+CHECKER = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
+
+
+def coherence_problem(root: str, slug: str) -> str | None:
+    """What check-rounds.py objects to in a built event, or None if nothing.
+
+    The same script CI runs, invoked the same way, rather than a second copy of
+    its rules here. Two sets of rules for what counts as coherent data would
+    drift, and the one that matters is the one that gates the deploy.
+    """
+    done = subprocess.run(["python3", str(CHECKER), str(archive.rounds_path(root, slug))],
+                          capture_output=True, text=True)
+    if done.returncode == 0:
+        return None
+    lines = [l.strip() for l in (done.stdout + done.stderr).splitlines() if l.strip()]
+    return "; ".join(l.removeprefix("FAIL").strip() for l in lines) or "failed the coherence check"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--archive", default=archive.ARCHIVE,
@@ -281,6 +301,21 @@ def main() -> int:
         if not event:
             continue
         archive.write_event(args.archive, slug, event, feed_posts)
+
+        # Checked with the same script the site's own data must pass, one event
+        # at a time, and backed out if it does not. The archive is a directory
+        # of files a reader can be sent to, so it must not hold one the site
+        # would refuse to serve -- and validating the whole archive afterwards
+        # instead meant a single incoherent event failed the run and threw away
+        # the ten beside it that were fine.
+        if problem := coherence_problem(args.archive, slug):
+            shutil.rmtree(archive.event_dir(args.archive, slug))
+            failed.append(slug)
+            print(f"  REJECTED {slug}: {problem}")
+            report += [f"### `{slug}` — **rejected, not published**", "",
+                       f"- {problem}", ""]
+            continue
+
         if i == 0:
             newest_event = event   # names the feed's channel
     if failed:

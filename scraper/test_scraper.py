@@ -1303,6 +1303,33 @@ class TestProvenanceCheck(unittest.TestCase):
         code, out = self.check(twice_unknown)
         self.assertEqual(code, 0, out)
 
+    def test_a_cut_round_with_only_a_feature_match_is_accepted(self):
+        # A bracket halves, so a Top 8 of three matches is a parse that lost a
+        # row. No matches at all is different: the blog published a feature
+        # match from that round and nothing else. This rule had not been given
+        # the same reading as the one above it, and rejected a backfill batch of
+        # eleven events over one Top 8 nobody published pairings for.
+        def feature_only(d):
+            fmt = d["formats"][0]
+            cut = [r for r in fmt["rounds"] if r["phase"] == "Top cut"]
+            # The last one, which nothing advances out of. Konami covered YCS
+            # Montreal's bracket as far as the Top 4 and stopped, so this is the
+            # round most often reached by a feature match and nothing else.
+            cut[-1]["pairings"] = []
+            cut[-1]["feature"] = {"a": {"name": "Ann Alpha"}, "b": {"name": "Bo Beta"},
+                                  "source": "https://x/f/"}
+        code, out = self.check(feature_only)
+        self.assertEqual(code, 0, out)
+
+    def test_a_cut_round_missing_a_match_is_still_rejected(self):
+        def three(d):
+            fmt = d["formats"][0]
+            cut = [r for r in fmt["rounds"] if r["phase"] == "Top cut"]
+            cut[0]["pairings"] = (cut[0]["pairings"] or [])[:3]
+        code, out = self.check(three)
+        self.assertEqual(code, 1)
+        self.assertIn("power of two", out)
+
     def test_a_duelist_paired_against_themselves_is_always_rejected(self):
         def mirror(d):
             self.first_round(d)["pairings"] = [
@@ -2428,20 +2455,20 @@ class TestABadPageCannotStopTheRun(unittest.TestCase):
             ev = build_event("Somewhere", self.sources(table_html))
         return ev, log.getvalue()
 
-    def test_a_pairings_post_carrying_a_standings_table_is_not_a_round(self):
-        # The exact shape that crashed: a standings row has no "table" key, and
-        # five reads downstream assume the columns of their own kind.
-        standings = ("<table><tbody><tr><td>Rank</td><td>Player Name</td></tr>"
-                     "<tr><td>1</td><td>Ann Alpha</td></tr></tbody></table>")
-        ev, log = self.build(standings)
-        self.assertIn("ignored https://x/r1/", log)
-        self.assertIn("standings table", log)
-        # The event still builds from what did parse.
-        self.assertTrue(ev["formats"], "one bad page took the whole format down")
-
     def test_a_pairings_post_with_no_table_at_all_is_not_a_round(self):
         ev, log = self.build("<p>The pairings are on the wall by the stage.</p>")
+        self.assertIn("ignored https://x/r1/", log)
         self.assertIn("no table", log)
+        self.assertTrue(ev["formats"], "one bad page took the whole format down")
+
+    def test_a_pairings_post_whose_table_reads_as_neither_is_not_a_round(self):
+        # What is left for the guard to catch once the table is trusted: a table
+        # the parser cannot place at all. Its rows are nobody's columns.
+        odd = ("<table><tbody><tr><td>Prize</td><td>Quantity</td></tr>"
+               "<tr><td>Game mat</td><td>200</td></tr></tbody></table>")
+        ev, log = self.build(odd)
+        self.assertIn("ignored https://x/r1/", log)
+        self.assertIn("unknown table", log)
         self.assertTrue(ev["formats"])
 
     def test_a_pairings_post_with_pairings_in_it_is_kept(self):
@@ -2460,8 +2487,8 @@ class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
     """Each event is written as it finishes, so a later failure must not
     discard the ones already built."""
 
-    def run_backfill(self, breaks_on):
-        """Build three events, with build_one raising for one of them."""
+    def run_backfill(self, breaks_on, breaks_coherence=None):
+        """Build three events, one of which raises or comes out incoherent."""
         import io, tempfile, types
         from contextlib import redirect_stdout
         from unittest import mock
@@ -2470,15 +2497,27 @@ class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
         # No network and no sitemap: plan() is stubbed, so nothing reads either.
         fetcher = types.SimpleNamespace(get=lambda url, **kw: "<urlset/>")
 
+        # A real published event, renamed. Events are validated as they are
+        # written now, so a stub shaped like one would be rejected before the
+        # thing under test -- whether a later failure loses the earlier ones --
+        # ever came up.
+        import json
+        root = Path(__file__).resolve().parent.parent
+        manifest = json.loads((root / "events.json").read_text())
+        good = json.loads((root / manifest["events"][0]["path"]).read_text())
+
         def fake_build_one(f, slug, posts, ended, limit):
             if slug == breaks_on:
                 raise KeyError("table")
             built.append(slug)
-            return ({"event": slug, "updated": ended, "sample": False,
-                     "ongoing": False, "coverageBy": "Konami",
-                     "formats": [{"format": "Advanced", "swissRounds": 1,
-                                  "duelists": 2, "rounds": [{"id": "1"}]}]},
-                    [], [f"### {slug}", ""])
+            event = {**json.loads(json.dumps(good)), "event": slug, "updated": ended}
+            if slug == breaks_coherence:
+                # A Top 8 of three matches: a bracket halves, so this is a parse
+                # that lost a row rather than coverage that stopped early.
+                cut = [r for r in event["formats"][0]["rounds"]
+                       if r["phase"] == "Top cut"]
+                cut[0]["pairings"] = cut[0]["pairings"][:3]
+            return (event, [], [f"### {slug}", ""])
 
         events = [(f"e{i}", [{"kind": "pairings"}], f"2026-0{i}-01") for i in (1, 2, 3)]
         log = io.StringIO()
@@ -2512,12 +2551,123 @@ class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
         self.assertIn("FAILED to build e2", log)
         self.assertIn("1 of 3 events could not be built", log)
 
+    def test_an_incoherent_event_is_rejected_rather_than_published(self):
+        # The archive is a directory of files a reader is sent to, so it must
+        # not hold one the site would refuse to serve. Validating the whole
+        # archive afterwards instead meant one incoherent event failed the run
+        # and threw away the ten beside it that were fine.
+        code, built, log, manifest = self.run_backfill(None, breaks_coherence="e3")
+        self.assertEqual(code, 0)
+        self.assertEqual({e["slug"] for e in manifest["events"]}, {"e1", "e2"})
+        self.assertIn("REJECTED e3", log)
+        self.assertIn("power of two", log)
+
     def test_the_newest_event_failing_fails_the_run(self):
         # It is what the feed is titled after and what a scheduled run exists to
         # publish. Skipping it would report success over an unchanged site.
         code, built, log, exc = self.run_backfill("e1")
         self.assertIsNone(code)
         self.assertIsInstance(exc, KeyError)
+
+
+class TestTheTableSettlesWhatAPostIs(unittest.TestCase):
+    """Where the text and the table disagree, the table is the content.
+
+    Konami published YCS Anaheim's standings under the slug
+    ycs-anaheim-round-12-pairings. The page is headed "YCS Anaheim: Standings
+    After Round 11" and holds a standings table; only the slug says pairings,
+    and the slug is what won. Read as pairings, every row was missing the
+    columns pairings have -- which is how a seven-event backfill came down on
+    its last event with KeyError: 'table'.
+    """
+
+    URL = "https://yugiohblog.konami.com/2025/ycs/ycs-anaheim-round-12-pairings/"
+
+    def test_the_real_page_reads_as_the_standings_it_is(self):
+        doc = _page("YCS Anaheim: Standings After Round 11",
+                    ["Rank", "Player Name"],
+                    [["1", "Alex Anthony Bergeron"], ["2", "Cameron Taylor Neal"]])
+        post = parse_post(doc, self.URL)
+        self.assertEqual(post.kind, "standings")
+        self.assertEqual(len(post.table.rows), 2)
+
+    def test_the_round_follows_the_corrected_kind(self):
+        doc = _page("YCS Anaheim: Standings After Round 11",
+                    ["Rank", "Player Name"], [["1", "Alex Anthony Bergeron"]])
+        self.assertEqual(parse_post(doc, self.URL).round, 11)
+
+    def test_final_standings_under_a_pairings_slug_are_not_the_final(self):
+        # The round has to be read after the kind is settled, not before.
+        # "Final Standings" is the table at the end of Swiss, not the last round
+        # of the bracket -- but only a post already known to be standings gets
+        # read that way, and a slug saying "pairing" was enough to stop it. The
+        # whole Swiss field would have been filed under the Final.
+        doc = _page("YCS Anaheim: Final Standings", ["Rank", "Player Name", "Points"],
+                    [["1", "Alex Anthony Bergeron", "36"]])
+        post = parse_post(doc, "https://yugiohblog.konami.com/2025/ycs/"
+                               "ycs-anaheim-final-pairing/")
+        self.assertEqual(post.kind, "standings")
+        self.assertIsNone(post.round, "the end of Swiss is not the Final")
+
+    def test_a_pairings_post_with_pairings_in_it_is_left_alone(self):
+        doc = _page("YCS Anaheim: Round 12 Pairings", PAIR_HEAD,
+                    [["1", "Ann", "Alpha", "vs.", "Bo", "Beta"]])
+        post = parse_post(doc, self.URL)
+        self.assertEqual((post.kind, post.round), ("pairings", 12))
+
+    def test_a_news_post_quoting_a_table_is_still_news(self):
+        # Narrow on purpose: only between pairings and standings, and only when
+        # both are confident. An announcement that happens to carry a table is
+        # not a round of anything.
+        doc = _page("Prize Wall Restocked", ["Rank", "Player Name"],
+                    [["1", "Ann Alpha"]])
+        self.assertEqual(parse_post(doc, "https://x/prize-wall/").kind, "news")
+
+
+class TestASideEventIsNotATournament(unittest.TestCase):
+    """A format has to have rounds someone played.
+
+    YCS Anaheim's eight Genesys posts are two feature matches, some news and a
+    winner, covering a Genesys Invitational held alongside the main event. They
+    name a Top 8, so a Top 8 round was built -- with no matches in it, in a
+    format with no Duelists and no Swiss rounds. check-rounds.py rejected the
+    published file: "Genesys Top 8: 0 matches is not a power of two".
+    """
+
+    def event(self, *extra):
+        from build import build_event
+        return build_event("YCS Anaheim", [
+            _src("https://x/p1/", "YCS Anaheim: Round 1 Pairings (Advanced Format)",
+                 PAIR_HEAD, [["1", "Ann", "Alpha", "vs.", "Bo", "Beta"]]),
+            _src("https://x/s1/", "YCS Anaheim: Standings After Round 1 (Advanced Format)",
+                 ["Rank", "Player Name", "Points"], [["1", "Ann Alpha", "3"]]),
+            *extra])
+
+    def genesys_features(self):
+        return [_src("https://x/f1/",
+                     "Genesys Invitational Top 8 Feature Match: Hanko Chow vs. Steven Lee",
+                     ["a"], []),
+                _src("https://x/f2/",
+                     "Genesys Invitational Top 8 Feature Match: Siming Yang vs. Jordan Ng",
+                     ["a"], [])]
+
+    def test_a_format_covered_only_by_feature_matches_is_not_built(self):
+        formats = self.event(*self.genesys_features())["formats"]
+        self.assertEqual([f["format"] for f in formats], ["Advanced"])
+
+    def test_the_tournament_beside_it_is_unaffected(self):
+        formats = self.event(*self.genesys_features())["formats"]
+        self.assertEqual(len(formats[0]["rounds"]), 1)
+        self.assertEqual(len(formats[0]["rounds"][0]["pairings"]), 1)
+
+    def test_a_format_with_rounds_of_its_own_is_built(self):
+        # The guard must not throw out a real second tournament: Montreal runs
+        # Advanced and Genesys side by side and both have pairings.
+        formats = self.event(
+            _src("https://x/g1/", "YCS Anaheim: Round 1 Pairings (Genesys Format)",
+                 PAIR_HEAD, [["1", "Cy", "Gamma", "vs.", "Di", "Delta"]]),
+            *self.genesys_features())["formats"]
+        self.assertEqual({f["format"] for f in formats}, {"Advanced", "Genesys"})
 
 
 if __name__ == "__main__":
