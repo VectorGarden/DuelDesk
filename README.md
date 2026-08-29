@@ -102,7 +102,8 @@ only from what that run fetched would drop everything the run before it covered.
 ### Event identity
 
 Posts appear both under an event slug (`/2026/ycs/2026-08-quebec/…`) and without one, and only
-about a fifth carry the slug. The rest are attached by date window — which takes some care:
+about a fifth carry the slug. The rest are attached by date window, or by the name in their own
+slug — which takes some care:
 
 - **`lastmod` is a modification date.** Edit one 2014 post today and that event's window stretches
   across eleven years. Eleven of 97 slugs were affected, almost always by a single re-edited post,
@@ -114,6 +115,20 @@ about a fifth carry the slug. The rest are attached by date window — which tak
 - **Concurrent events are real** — the 2026 WCQ and the Genesys Championship both ran on
   2026-07-11 — so where a date matches two windows the format decides, and anything still
   ambiguous is reported rather than guessed.
+- **Most tournaments have no event slug at all.** Not one of the 2023 North America WCQ's posts
+  says which tournament in its path, and it is not alone: 2,560 rounds of pairings and standings,
+  and something over a hundred tournaments, were invisible to every rule above. What the path
+  leaves out the post slug says — `ycs-atlanta-round-1-pairings` — so the name is read off the
+  front of the slug, up to the first word that describes the post rather than the event. Grouping
+  on that name and cutting each group where the dates say one tournament ended and the next began
+  finds them, and the two signals check each other: a name used every year is split by the dates,
+  and two tournaments held the same weekend are kept apart by the name. Discovery runs last, on
+  what is left, so an event the path or the dates already settled can gain posts this way but
+  never lose or exchange one.
+- **The oldest coverage cannot be identified at all.** Before about 2017 a post is slugged, and
+  titled, only for what it contains — `standings-after-round-3`, and the page says the same. Some
+  thirty tournaments are in the index this way with nothing anywhere to say which they are, so
+  they stay unassigned rather than being guessed at.
 
 ### What the coverage does not always say
 

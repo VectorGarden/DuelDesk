@@ -25,7 +25,7 @@ from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
                    parse_lastmod)
 from index import (assign_events, event_profiles, parse_post_sitemap,  # noqa: E402
-                   parse_sitemap_index)
+                   parse_sitemap_index, tight_window)
 from feed import build_feed                              # noqa: E402
 from naming import canonical_name, event_name            # noqa: E402
 from parse import detect_kind, parse_post                 # noqa: E402
@@ -44,6 +44,11 @@ def events_by_recency(entries) -> list[tuple[str, list[dict], str]]:
     the wrong side of the day ties were abolished, so a tournament played while
     draws were still policy had its records built without them.
 
+    An event the blog filed under no path of its own has no profile to read
+    that window off, because a profile is built from the posts carrying the
+    slug and these carry none. Their dates are all the event has, so the same
+    rule is applied to them directly: the bulk of them, strays ignored.
+
     The kind is read from the slug here rather than after a page is fetched, so
     both of the decisions that follow -- which events are worth building, and
     which of an event's posts to spend the budget on -- cost nothing.
@@ -54,7 +59,13 @@ def events_by_recency(entries) -> list[tuple[str, list[dict], str]]:
         if a.get("event") and a.get("lastmod"):
             a["kind"] = detect_kind(a["slug"])
             grouped[a["event"]].append(a)
-    return sorted(((slug, posts, profiles[slug].window[1])
+
+    def ended(slug: str, posts: list[dict]) -> str:
+        if slug in profiles:
+            return profiles[slug].window[1]
+        return tight_window([p["lastmod"] for p in posts])[1]
+
+    return sorted(((slug, posts, ended(slug, posts))
                    for slug, posts in grouped.items()),
                   key=lambda e: e[2], reverse=True)
 

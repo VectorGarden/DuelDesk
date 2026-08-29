@@ -1964,6 +1964,269 @@ class TestEventWindows(unittest.TestCase):
         self.assertIsNone(entry.event_slug)
 
 
+class TestQualifierAbbreviation(unittest.TestCase):
+
+    def test_nawcq_is_the_north_america_qualifier(self):
+        # The region patterns already read it; the gate in front of them did
+        # not, so a name the module knew how to write came back as nothing.
+        from naming import wcq_name
+        self.assertEqual(wcq_name("2024-nawcq", "", "2024-07-22"),
+                         "North America WCQ 2024")
+
+    def test_a_word_merely_ending_in_wcq_is_not_a_qualifier(self):
+        from naming import wcq_name
+        self.assertIsNone(wcq_name("2024-showcq", "", "2024-07-22"))
+
+
+class TestEventPrefix(unittest.TestCase):
+    """The event's name is the front of a post's slug, up to the post's subject."""
+
+    def test_the_name_stops_at_the_first_word_about_the_post(self):
+        from index import event_prefix
+        self.assertEqual(event_prefix("ycs-atlanta-round-1-pairings"), "ycs-atlanta")
+        self.assertEqual(event_prefix("uds-invitational-lima-peru-standings-after-round-3"),
+                         "uds-invitational-lima-peru")
+        self.assertEqual(event_prefix("team-ycs-san-jose-costa-rica-standings-after-round-8"),
+                         "team-ycs-san-jose-costa-rica")
+
+    def test_coverage_that_names_only_its_subject_yields_nothing(self):
+        # The older posts are slugged, and titled, for what they contain and
+        # never for which tournament: "standings-after-round-3" is thirty of
+        # them. Fetching the page does not help -- its <title> says the same.
+        from index import event_prefix
+        self.assertEqual(event_prefix("standings-after-round-3"), "")
+        self.assertEqual(event_prefix("top-cut-will-be-top-32-and-standings-after-round-5"), "")
+
+    def test_a_joining_word_is_part_of_the_name(self):
+        # "in" and "the" were cut on once, and it cost an event: the two 250th
+        # YCS held the same weekend both came back as "250th-ycs" and merged.
+        from index import event_prefix
+        self.assertEqual(event_prefix("250th-ycs-in-bogota-colombia-round-1-pairings"),
+                         "250th-ycs-in-bogota-colombia")
+        self.assertEqual(event_prefix("250th-ycs-in-los-angeles-round-3-pairings"),
+                         "250th-ycs-in-los-angeles")
+
+
+class TestEventDiscovery(unittest.TestCase):
+    """Tournaments the blog filed under no event path at all.
+
+    Two thirds of this blog's tournament coverage carries no event in its URL:
+    2,560 rounds of pairings and standings, and something over a hundred
+    tournaments, that nothing above this could see.
+    """
+
+    def assigned(self, *urls):
+        rows = assign_events(parse_post_sitemap(urlset(*urls)))
+        return {r["slug"]: (r["event"], r["event_confidence"]) for r in rows}
+
+    @staticmethod
+    def coverage(prefix, when, n=6):
+        """One tournament's worth: enough rounds to clear the minimum."""
+        return [(f"2017/ycs/{prefix}-round-{i}-pairings", when) for i in range(1, n + 1)] + \
+               [(f"2017/ycs/{prefix}-standings-after-round-{i}", when) for i in range(1, n + 1)]
+
+    def test_an_event_with_no_path_of_its_own_is_found(self):
+        got = self.assigned(*self.coverage("ycs-atlanta", "2017-03-04"))
+        self.assertEqual(got["ycs-atlanta-round-1-pairings"],
+                         ("2017-ycs-atlanta", "discovered"))
+
+    def test_two_tournaments_on_one_weekend_stay_apart(self):
+        # YCS Atlanta and the UDS Invitational in Lima ran the same weekend in
+        # March 2017. Dates alone put all forty-nine posts in one event.
+        got = self.assigned(*self.coverage("ycs-atlanta", "2017-03-04"),
+                            *self.coverage("uds-invitational-lima-peru", "2017-03-04"))
+        self.assertEqual(got["ycs-atlanta-round-1-pairings"][0], "2017-ycs-atlanta")
+        self.assertEqual(got["uds-invitational-lima-peru-round-1-pairings"][0],
+                         "2017-uds-invitational-lima-peru")
+
+    def test_one_name_used_every_year_is_split_by_the_dates(self):
+        # "south-america-wcq" is five tournaments. Grouping on the name alone
+        # would file 2018's rounds and 2024's as one event. WordPress keeps the
+        # later slugs unique by suffixing the whole thing, which leaves the name
+        # at the front identical -- so only the dates can tell these apart.
+        got = self.assigned(
+            *self.coverage("south-america-wcq", "2018-06-30"),
+            *[(f"2017/ycs/south-america-wcq-round-{i}-pairings-2", "2024-06-29")
+              for i in range(1, 7)],
+            *[(f"2017/ycs/south-america-wcq-standings-after-round-{i}-2", "2024-06-29")
+              for i in range(1, 7)])
+        self.assertEqual(got["south-america-wcq-round-1-pairings"][0],
+                         "2018-south-america-wcq")
+        self.assertEqual(got["south-america-wcq-round-1-pairings-2"][0],
+                         "2024-south-america-wcq")
+
+    def test_posts_that_escaped_a_known_event_go_back_to_it(self):
+        # Twenty-two rounds of the 2026 North America WCQ were slugged without
+        # the event path the rest of it uses. They are that event's, not a
+        # second tournament held in the same room on the same day.
+        #
+        # The Genesys Championship ran alongside it, so the date rule cannot
+        # place these -- two events fit and it says so rather than guessing.
+        # The name is the only thing that separates them.
+        got = self.assigned(
+            ("2026/championships/2026-north-america-wcq/nawcq-round-1-pairings", "2026-07-11"),
+            ("2026/championships/2026-north-america-wcq/nawcq-standings-after-round-1", "2026-07-11"),
+            ("2026/championships/2026-north-america-genesys-championship/"
+             "genesys-round-1-pairings", "2026-07-11"),
+            ("2026/championships/2026-north-america-genesys-championship/"
+             "genesys-standings-after-round-1", "2026-07-11"),
+            *[(f"2026/championships/north-america-wcq-round-{i}-pairings", "2026-07-12")
+              for i in range(2, 8)],
+            *[(f"2026/championships/north-america-wcq-standings-after-round-{i}", "2026-07-12")
+              for i in range(2, 8)])
+        self.assertEqual(got["north-america-wcq-round-2-pairings"],
+                         ("2026-north-america-wcq", "prefix"))
+
+    def test_a_name_that_two_events_could_answer_to_is_left_alone(self):
+        # "wcq" is in the index on its own, and in 2018 the North and South
+        # America qualifiers ran the same week. Either could host it, so
+        # neither does: this is the ambiguity rule the date matching already
+        # applies, and the answer is still to report rather than guess.
+        got = self.assigned(
+            ("2018/championships/2018-north-america-wcq/nawcq-round-1-pairings", "2018-06-30"),
+            ("2018/championships/2018-north-america-wcq/nawcq-standings-after-round-1", "2018-06-30"),
+            ("2018/championships/2018-south-america-wcq/sawcq-round-1-pairings", "2018-06-30"),
+            ("2018/championships/2018-south-america-wcq/sawcq-standings-after-round-1", "2018-06-30"),
+            *[(f"2018/championships/wcq-round-{i}-pairings", "2018-07-01") for i in range(2, 6)],
+            *[(f"2018/championships/wcq-standings-after-round-{i}", "2018-07-01")
+              for i in range(2, 6)])
+        self.assertIsNone(got["wcq-round-2-pairings"][0])
+
+    def test_a_handful_of_posts_is_not_a_tournament(self):
+        # Two strays are an event's posts that got away, not coverage of a
+        # tournament nobody filed. Below the minimum they stay unassigned
+        # rather than becoming an event of two rounds in the reader's list.
+        got = self.assigned(("2017/ycs/ycs-portland-round-1-pairings", "2019-08-24"),
+                            ("2017/ycs/ycs-portland-standings-after-round-1", "2019-08-24"))
+        self.assertIsNone(got["ycs-portland-round-1-pairings"][0])
+
+    def test_an_announcement_with_no_rounds_is_not_an_event(self):
+        # A name is looked for in rounds, never in the talk around them. Eight
+        # posts welcoming everyone to a tournament are not coverage of one, and
+        # taking them for it would put an event with no rounds in the archive
+        # and in the reader's list.
+        got = self.assigned(*[(f"2017/ycs/ycs-atlanta-welcome-{i}", "2017-03-04")
+                              for i in range(8)])
+        self.assertIsNone(got["ycs-atlanta-welcome-0"][0])
+
+    def test_the_rest_of_a_discovered_events_coverage_joins_it(self):
+        # Its feature matches and deck breakdowns, found the same way: on their
+        # own name and their own date, not on being adjacent to a round.
+        got = self.assigned(*self.coverage("ycs-atlanta", "2017-03-04"),
+                            ("2017/ycs/ycs-atlanta-feature-match-a-versus-b", "2017-03-05"),
+                            ("2017/ycs/ycs-atlanta-top-8-deck-breakdown", "2017-03-05"))
+        self.assertEqual(got["ycs-atlanta-feature-match-a-versus-b"][0], "2017-ycs-atlanta")
+        self.assertEqual(got["ycs-atlanta-top-8-deck-breakdown"][0], "2017-ycs-atlanta")
+
+    def test_a_post_from_another_year_does_not_join_on_the_name(self):
+        # The name matching is not enough on its own: "ycs-atlanta" is three
+        # tournaments, so the dates have to agree as well.
+        got = self.assigned(*self.coverage("ycs-atlanta", "2017-03-04"),
+                            ("2014/ycs/ycs-atlanta-feature-match-a-versus-b", "2014-02-01"))
+        self.assertIsNone(got["ycs-atlanta-feature-match-a-versus-b"][0])
+
+    def test_an_unrelated_post_published_that_weekend_is_left_alone(self):
+        # The name has to match as well as the date. This is the rule that
+        # keeps product news out of an event's coverage, applied here too.
+        got = self.assigned(*self.coverage("ycs-atlanta", "2017-03-04"),
+                            ("2017/news-updates/introducing-the-new-structure-deck", "2017-03-05"))
+        self.assertIsNone(got["introducing-the-new-structure-deck"][0])
+
+    def test_nothing_already_identified_is_revisited(self):
+        # Discovery runs last and only on what is left, so an event the path or
+        # the dates settled can gain posts here but never lose or exchange one.
+        got = self.assigned(
+            ("2026/ycs/2026-08-quebec/ycs-montreal-round-1-pairings", "2026-08-15"),
+            ("2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-1", "2026-08-15"))
+        self.assertEqual(got["ycs-montreal-round-1-pairings"], ("2026-08-quebec", "path"))
+
+
+class TestOneQualifierWrittenTwoWays(unittest.TestCase):
+    """The 2024 North America WCQ published its Swiss rounds as
+    "north-america-wcq-round-10-pairings" and its top cut as
+    "nawcq-top-16-pairings-and-deck-types"."""
+
+    def assigned(self, *urls):
+        rows = assign_events(parse_post_sitemap(urlset(*urls)))
+        return {r["slug"]: r["event"] for r in rows}
+
+    @staticmethod
+    def swiss(when):
+        return [(f"2024/championships/north-america-wcq-round-{i}-pairings", when)
+                for i in range(1, 7)] + \
+               [(f"2024/championships/north-america-wcq-standings-after-round-{i}", when)
+                for i in range(1, 7)]
+
+    @staticmethod
+    def cut(when):
+        return [(f"2024/championships/nawcq-top-{i}-pairings-and-deck-types", when)
+                for i in (64, 32, 16, 8, 4, 2)] + \
+               [(f"2024/championships/nawcq-standings-after-round-{i}", when)
+                for i in range(7, 13)]
+
+    def test_the_two_halves_are_one_tournament(self):
+        got = self.assigned(*self.swiss("2024-07-20"), *self.cut("2024-07-22"))
+        self.assertEqual(got["nawcq-top-16-pairings-and-deck-types"],
+                         got["north-america-wcq-round-1-pairings"])
+
+    def test_the_fuller_name_is_the_one_kept(self):
+        # The abbreviation turns up on the cut, and the cut is the short half.
+        got = self.assigned(*self.swiss("2024-07-20"), *self.cut("2024-07-22"))
+        self.assertEqual(got["nawcq-top-16-pairings-and-deck-types"],
+                         "2024-north-america-wcq")
+
+    def test_two_years_of_it_are_still_two_tournaments(self):
+        # Reading both names as one qualifier must not reach across the dates:
+        # there is a North America WCQ every year.
+        got = self.assigned(*self.swiss("2024-07-20"), *self.cut("2025-07-12"))
+        self.assertNotEqual(got["nawcq-top-16-pairings-and-deck-types"],
+                            got["north-america-wcq-round-1-pairings"])
+
+    def test_two_clusters_months_apart_are_not_merged_on_the_name(self):
+        # The year is in the name, so it separates most of these on its own --
+        # but not two clusters within one year. A post re-edited months later
+        # reads as a second cluster of the same qualifier, and merging them
+        # would give the event a window running from March to July.
+        got = self.assigned(*self.swiss("2024-03-16"), *self.cut("2024-07-22"))
+        self.assertNotEqual(got["nawcq-top-16-pairings-and-deck-types"],
+                            got["north-america-wcq-round-1-pairings"])
+
+    def test_the_rest_of_the_cuts_coverage_joins_by_the_name_it_used(self):
+        # A deck breakdown slugged "nawcq-..." belongs to an event now called
+        # "2024-north-america-wcq", which does not contain the word. The merge
+        # keeps both names so that this can still be found.
+        got = self.assigned(*self.swiss("2024-07-20"), *self.cut("2024-07-22"),
+                            ("2024/championships/nawcq-top-64-deck-breakdown", "2024-07-22"))
+        self.assertEqual(got["nawcq-top-64-deck-breakdown"], "2024-north-america-wcq")
+
+    def test_the_genesys_championship_alongside_is_not_swept_in(self):
+        # A date is not the test -- this ran the same weekend and is a separate
+        # tournament, which is why merging is only ever on the qualifier's name.
+        got = self.assigned(
+            *self.swiss("2024-07-20"),
+            *[(f"2024/championships/north-america-genesys-championship-round-{i}-pairings",
+               "2024-07-20") for i in range(1, 7)],
+            *[(f"2024/championships/north-america-genesys-championship-standings-after-round-{i}",
+               "2024-07-20") for i in range(1, 7)])
+        self.assertNotEqual(got["north-america-genesys-championship-round-1-pairings"],
+                            got["north-america-wcq-round-1-pairings"])
+
+
+class TestDiscoveredEventsAreBuildable(unittest.TestCase):
+
+    def test_a_discovered_event_gets_its_end_date_from_its_own_posts(self):
+        # events_by_recency reads that date off the event's profile, and a
+        # discovered event has none: a profile is built from posts carrying the
+        # slug in the path, and these carry no path at all.
+        from run import events_by_recency
+        entries = parse_post_sitemap(urlset(
+            *[(f"2017/ycs/ycs-atlanta-round-{i}-pairings", "2017-03-04") for i in range(1, 7)],
+            *[(f"2017/ycs/ycs-atlanta-standings-after-round-{i}", "2017-03-05")
+              for i in range(1, 7)]))
+        ranked = dict((slug, ended) for slug, _, ended in events_by_recency(entries))
+        self.assertEqual(ranked["2017-ycs-atlanta"], "2017-03-05")
+
+
 class TestDateAttachmentIsCorroborated(unittest.TestCase):
     """A shared date makes a post a candidate, not coverage.
 
