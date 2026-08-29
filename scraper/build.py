@@ -503,6 +503,34 @@ def build_format(name: str | None, sources: list[Source], *,
     return {"format": name, "swissRounds": swiss_count, "duelists": field, "rounds": rounds}
 
 
+def entered_as_teams(sources: list[Source]) -> bool:
+    """Whether this event's standings list teams rather than Duelists.
+
+    A Team YCS enters three Duelists a side and publishes one standings row per
+    team, with the members inside it:
+
+        Rank | Player Name
+        1    | Road of the King: Yacine S., Francisco O., Patrick H.
+
+    Read as a Duelist that is 389 "Duelists" that are teams, under names the
+    comma rule mangles -- normalise_name reads the row above as "Francisco O.,
+    Patrick H. Road of the King: Yacine S.", because it is written to turn
+    "Gouge, Justin" into "Justin Gouge".
+
+    The Swiss pairings are a different layout too, headed Table | Team 1 | Team
+    2 with no vs. column, so they do not parse at all. None of that is coverage
+    worth publishing badly, and none of it is guessed at here: a colon in an
+    entrant's name is the blog saying this is a team, and ordinary names have
+    none.
+    """
+    named = [row.get("name") or "" for s in sources
+             if s.post.kind == "standings" and s.post.table
+             for row in s.post.table.rows]
+    if not named:
+        return False
+    return sum(":" in n for n in named) > len(named) / 2
+
+
 def is_tournament(fmt: dict) -> bool:
     """Whether a built format is a tournament, or only coverage of one.
 
