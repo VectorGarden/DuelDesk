@@ -244,6 +244,125 @@
           "rounds": 15
         }
       ]
+    },
+    {
+      "slug": "2025-02-ycs-orlando",
+      "event": "YCS Orlando",
+      "updated": "2025-02-02",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-02-ycs-orlando/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2276,
+          "rounds": 17
+        }
+      ]
+    },
+    {
+      "slug": "2024-12-ycs-anaheim",
+      "event": "YCS Anaheim",
+      "updated": "2024-12-07",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-12-ycs-anaheim/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1497,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2024-11-north-america-remote-duel-ycs",
+      "event": "North America Remote Duel YCS",
+      "updated": "2024-11-10",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-11-north-america-remote-duel-ycs/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 376,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2024-10-ycs-niagara-falls",
+      "event": "YCS Niagara Falls",
+      "updated": "2024-10-13",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-10-ycs-niagara-falls/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 880,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2024-10-cancun-mexico",
+      "event": "YCS Cancun, Mexico",
+      "updated": "2024-10-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-10-cancun-mexico/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 373,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2024-08-ycs-sacramento",
+      "event": "YCS Sacramento",
+      "updated": "2024-08-20",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-08-ycs-sacramento/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 975,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2024-central-america-wcq",
+      "event": "Central America WCQ",
+      "updated": "2024-06-22",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-central-america-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1121,
+          "rounds": 16
+        }
+      ]
     }
   ]
 }
