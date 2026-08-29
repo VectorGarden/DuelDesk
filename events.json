@@ -352,6 +352,25 @@
       ]
     },
     {
+      "slug": "2025-ycs-merida-mexico",
+      "event": "YCS Merida",
+      "location": "Merida, Mexico",
+      "updated": "2025-11-30",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-ycs-merida-mexico/rounds.json",
+      "postCount": 22,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 414,
+          "rounds": 12
+        }
+      ]
+    },
+    {
       "slug": "2025-11-ycs-pittsburgh-pa",
       "event": "YCS Pittsburgh",
       "updated": "2025-11-09",
@@ -370,6 +389,25 @@
       ]
     },
     {
+      "slug": "2025-ycs-sao-paulo-brazil",
+      "event": "YCS Sao Paulo",
+      "location": "Sao Paulo, Brazil",
+      "updated": "2025-10-14",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-ycs-sao-paulo-brazil/rounds.json",
+      "postCount": 27,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 534,
+          "rounds": 13
+        }
+      ]
+    },
+    {
       "slug": "2025-10-ycs-anaheim",
       "event": "YCS Anaheim",
       "updated": "2025-10-06",
@@ -384,6 +422,25 @@
           "swissRounds": 14,
           "duelists": 1638,
           "rounds": 17
+        }
+      ]
+    },
+    {
+      "slug": "2025-ycs-lima-peru",
+      "event": "YCS Lima",
+      "location": "Lima, Peru",
+      "updated": "2025-09-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-ycs-lima-peru/rounds.json",
+      "postCount": 24,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 457,
+          "rounds": 13
         }
       ]
     },
@@ -460,6 +517,25 @@
       ]
     },
     {
+      "slug": "2025-ycs-mexico-city-mexico",
+      "event": "YCS Mexico City",
+      "location": "Mexico City, Mexico",
+      "updated": "2025-04-20",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-ycs-mexico-city-mexico/rounds.json",
+      "postCount": 27,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1362,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "2025-04-ycs-houston",
       "event": "YCS Houston",
       "updated": "2025-04-06",
@@ -478,6 +554,25 @@
       ]
     },
     {
+      "slug": "2025-ycs-buenos-aires-argentina",
+      "event": "YCS Buenos Aires",
+      "location": "Buenos Aires, Argentina",
+      "updated": "2025-03-31",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-ycs-buenos-aires-argentina/rounds.json",
+      "postCount": 25,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 776,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "2025-03-team-ycs-las-vegas",
       "event": "TEAM YCS Las Vegas",
       "updated": "2025-03-16",
@@ -492,6 +587,43 @@
           "swissRounds": 10,
           "duelists": 439,
           "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2025-team-ycs-san-salvador-el-salvador",
+      "event": "TEAM YCS San Salvador",
+      "location": "San Salvador, El Salvador",
+      "updated": "2025-03-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-team-ycs-san-salvador-el-salvador/rounds.json",
+      "postCount": 19,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 108,
+          "rounds": 10
+        }
+      ]
+    },
+    {
+      "slug": "remote-duel-ycs-february-2025",
+      "event": "Remote Duel YCS February 2025",
+      "updated": "2025-02-09",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/remote-duel-ycs-february-2025/rounds.json",
+      "postCount": 22,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 287,
+          "rounds": 13
         }
       ]
     },
@@ -550,6 +682,25 @@
       ]
     },
     {
+      "slug": "2024-ycs-guayaquil-ecuador",
+      "event": "YCS Guayaquil",
+      "location": "Guayaquil, Ecuador",
+      "updated": "2024-11-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-ycs-guayaquil-ecuador/rounds.json",
+      "postCount": 21,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 299,
+          "rounds": 13
+        }
+      ]
+    },
+    {
       "slug": "2024-10-ycs-niagara-falls",
       "event": "YCS Niagara Falls",
       "updated": "2024-10-13",
@@ -583,6 +734,25 @@
           "swissRounds": 9,
           "duelists": 373,
           "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2024-team-ycs-santiago-chile",
+      "event": "TEAM YCS Santiago",
+      "location": "Santiago, Chile",
+      "updated": "2024-09-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-team-ycs-santiago-chile/rounds.json",
+      "postCount": 16,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 117,
+          "rounds": 10
         }
       ]
     },
