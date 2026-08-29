@@ -8,6 +8,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-08-quebec/rounds.json",
+      "postCount": 139,
       "formats": [
         {
           "format": "Advanced",
@@ -31,6 +32,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-north-america-wcq/rounds.json",
+      "postCount": 35,
       "formats": [
         {
           "format": null,
@@ -48,6 +50,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-north-america-genesys-championship/rounds.json",
+      "postCount": 46,
       "formats": [
         {
           "format": "Genesys",
@@ -65,6 +68,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-05-ycs-columbus/rounds.json",
+      "postCount": 122,
       "formats": [
         {
           "format": "Advanced",
@@ -88,6 +92,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-04-team-ycs-las-vegas/rounds.json",
+      "postCount": 74,
       "formats": [
         {
           "format": null,
@@ -105,6 +110,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-02-300th-na/rounds.json",
+      "postCount": 160,
       "formats": [
         {
           "format": "Advanced",
@@ -134,6 +140,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-12-rdycs-na/rounds.json",
+      "postCount": 76,
       "formats": [
         {
           "format": null,
@@ -151,6 +158,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-11-ycs-pittsburgh-pa/rounds.json",
+      "postCount": 88,
       "formats": [
         {
           "format": null,
@@ -168,6 +176,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-10-ycs-anaheim/rounds.json",
+      "postCount": 92,
       "formats": [
         {
           "format": null,
@@ -185,6 +194,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-vancouver/rounds.json",
+      "postCount": 78,
       "formats": [
         {
           "format": null,
@@ -202,6 +212,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-north-america-wcq/rounds.json",
+      "postCount": 62,
       "formats": [
         {
           "format": null,
@@ -219,6 +230,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-central-america-wcq/rounds.json",
+      "postCount": 23,
       "formats": [
         {
           "format": null,
@@ -236,6 +248,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-05-ycs-providence/rounds.json",
+      "postCount": 90,
       "formats": [
         {
           "format": null,
@@ -253,6 +266,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-04-ycs-houston/rounds.json",
+      "postCount": 76,
       "formats": [
         {
           "format": null,
@@ -270,6 +284,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-03-team-ycs-las-vegas/rounds.json",
+      "postCount": 72,
       "formats": [
         {
           "format": null,
@@ -287,6 +302,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-02-ycs-orlando/rounds.json",
+      "postCount": 80,
       "formats": [
         {
           "format": null,
@@ -304,6 +320,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-12-ycs-anaheim/rounds.json",
+      "postCount": 76,
       "formats": [
         {
           "format": null,
@@ -321,6 +338,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-11-north-america-remote-duel-ycs/rounds.json",
+      "postCount": 51,
       "formats": [
         {
           "format": null,
@@ -338,6 +356,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-10-ycs-niagara-falls/rounds.json",
+      "postCount": 79,
       "formats": [
         {
           "format": null,
@@ -356,6 +375,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-10-cancun-mexico/rounds.json",
+      "postCount": 22,
       "formats": [
         {
           "format": null,
@@ -373,6 +393,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-08-ycs-sacramento/rounds.json",
+      "postCount": 64,
       "formats": [
         {
           "format": null,
@@ -390,6 +411,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-central-america-wcq/rounds.json",
+      "postCount": 28,
       "formats": [
         {
           "format": null,
@@ -407,6 +429,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-02-team-ycs-las-vegas-nv/rounds.json",
+      "postCount": 65,
       "formats": [
         {
           "format": null,
@@ -424,6 +447,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-05-ycs-philadelphia/rounds.json",
+      "postCount": 107,
       "formats": [
         {
           "format": null,
@@ -441,6 +465,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-11-ycs-pasadena/rounds.json",
+      "postCount": 54,
       "formats": [
         {
           "format": null,
@@ -458,6 +483,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/na-ygoc-2022/rounds.json",
+      "postCount": 77,
       "formats": [
         {
           "format": null,
@@ -475,6 +501,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/202205-ycs-hartford-ct/rounds.json",
+      "postCount": 69,
       "formats": [
         {
           "format": null,
@@ -492,6 +519,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-ycs-charlotte/rounds.json",
+      "postCount": 53,
       "formats": [
         {
           "format": null,
@@ -509,6 +537,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-02-north-america-remote-duel-ycs/rounds.json",
+      "postCount": 25,
       "formats": [
         {
           "format": null,
@@ -526,6 +555,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-january-remote-duel-ycs/rounds.json",
+      "postCount": 61,
       "formats": [
         {
           "format": null,
@@ -543,6 +573,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-south-america-wcq/rounds.json",
+      "postCount": 29,
       "formats": [
         {
           "format": null,
@@ -560,6 +591,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-03-atlanta-ga/rounds.json",
+      "postCount": 55,
       "formats": [
         {
           "format": null,
@@ -577,6 +609,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-09-200th-ycs-columbus-oh/rounds.json",
+      "postCount": 49,
       "formats": [
         {
           "format": null,
@@ -594,6 +627,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-north-america-wcq/rounds.json",
+      "postCount": 42,
       "formats": [
         {
           "format": null,
@@ -611,6 +645,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-central-america-wcq/rounds.json",
+      "postCount": 68,
       "formats": [
         {
           "format": null,
@@ -628,6 +663,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201712-buenos-aires-argentina/rounds.json",
+      "postCount": 35,
       "formats": [
         {
           "format": null,
@@ -645,6 +681,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201711-san-diego-ca/rounds.json",
+      "postCount": 51,
       "formats": [
         {
           "format": null,
@@ -662,6 +699,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-central-american-wcq/rounds.json",
+      "postCount": 64,
       "formats": [
         {
           "format": null,
@@ -680,6 +718,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201703-uds-winter-invitational-las-vegas/rounds.json",
+      "postCount": 68,
       "formats": [
         {
           "format": null,
@@ -697,6 +736,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201611-anaheim-ca/rounds.json",
+      "postCount": 51,
       "formats": [
         {
           "format": null,
@@ -714,6 +754,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/uds-2016-elsalvador/rounds.json",
+      "postCount": 27,
       "formats": [
         {
           "format": null,
@@ -731,6 +772,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-world-championship-2016/rounds.json",
+      "postCount": 59,
       "formats": [
         {
           "format": null,
@@ -749,6 +791,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201603-santiago-chile/rounds.json",
+      "postCount": 24,
       "formats": [
         {
           "format": null,
@@ -766,6 +809,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201509-monterrey/rounds.json",
+      "postCount": 14,
       "formats": [
         {
           "format": null,
@@ -783,6 +827,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2015-south-american-wcq/rounds.json",
+      "postCount": 25,
       "formats": [
         {
           "format": null,
@@ -800,6 +845,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2015-central-american-wcq/rounds.json",
+      "postCount": 48,
       "formats": [
         {
           "format": null,
@@ -818,6 +864,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201504-bogota-d-c-colombia/rounds.json",
+      "postCount": 28,
       "formats": [
         {
           "format": null,
@@ -835,6 +882,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201503-guatemala/rounds.json",
+      "postCount": 12,
       "formats": [
         {
           "format": null,
@@ -852,6 +900,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2013-south-american-wcq-championships/rounds.json",
+      "postCount": 22,
       "formats": [
         {
           "format": null,
@@ -869,6 +918,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2013-north-american-wcq/rounds.json",
+      "postCount": 76,
       "formats": [
         {
           "format": null,
@@ -886,6 +936,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2013-central-american-wcq/rounds.json",
+      "postCount": 19,
       "formats": [
         {
           "format": null,
@@ -903,6 +954,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/11-10-columbus/rounds.json",
+      "postCount": 50,
       "formats": [
         {
           "format": null,

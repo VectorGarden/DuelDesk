@@ -385,6 +385,7 @@ tr.duel > td:not(.num){padding-left:1.4rem}
 /* Not a post, so it does not take the coloured kind rail: it is the one row in
    the group that acts on the page above rather than pointing away from it. */
 .post--open{border-bottom:1px solid var(--line); padding-block:.85rem}
+.more{padding:1rem 0 0; text-align:center}
 .post__t{flex:1 1 auto; font-weight:500}
 /* Reads as the headline it is, not as a blue link in a row of plain ones. The
    underline on hover and focus is what says it goes somewhere. */

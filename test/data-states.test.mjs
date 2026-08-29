@@ -53,24 +53,53 @@ test('a failed RELOAD goes stale and keeps the data on screen', async (t) => {
   await waitFor(page, "coverageState === 'stale'");
 
   assert.equal(page.get('EVENTS.length'), before, 'data survives the failed reload');
-  assert.equal(page.$$('.event').length, before, 'and is still rendered');
+  // The rendered list is the archive's, which the failed feed reload does not
+  // touch: what a stale feed costs is the "what is new" river, not the events.
+  assert.ok(page.$$('.event').length >= before, 'and is still rendered');
   assert.ok(page.$('.notice'), 'a notice explains why');
   assert.equal(page.$('.notice').getAttribute('role'), 'status');
   assert.ok(page.$('#stamp time'), 'the last good timestamp is kept');
 });
 
 test('a reachable but empty feed is distinguished from an error', async (t) => {
+  // An empty feed is no longer an empty page: the list is built from the
+  // archive and the feed only says what is new. "No coverage" now means no
+  // events at all, which is what the second case here is.
   const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: EMPTY_FEED } } });
   t.after(() => page.close());
-  assert.equal(page.get('coverageState'), 'empty');
-  assert.match(page.text('#events'), /no items/i);
+  assert.equal(page.get('coverageState'), 'ready');
+  assert.equal(page.get('coverageEvents().length'), 1, 'the archive is still listed');
+
+  const nothing = await loadPage({
+    routes: {
+      'feed.xml': { status: 200, body: EMPTY_FEED },
+      'events.json': { status: 200, body: JSON.stringify({ events: [] }) },
+    },
+  });
+  t.after(() => nothing.close());
+  assert.equal(nothing.get('coverageState'), 'empty');
+  assert.match(nothing.text('#events'), /no coverage/i);
 });
 
-test('malformed feed XML becomes an error rather than throwing', async (t) => {
+test('malformed feed XML is reported rather than thrown', async (t) => {
+  // Reported as stale rather than as an error, because the list is the archive
+  // and the archive loaded: what failed is the feed that says what is new. The
+  // notice says so and offers a retry, which is the honest description of a
+  // page still showing every event it has.
   const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: 'not xml <<<' } } });
   t.after(() => page.close());
-  assert.equal(page.get('coverageState'), 'error');
+  assert.equal(page.get('coverageState'), 'stale');
+  assert.match(page.text('#events'), /last coverage that loaded/i);
   assert.equal(page.errors.length, 0, 'no uncaught jsdom error');
+
+  const alone = await loadPage({
+    routes: {
+      'feed.xml': { status: 200, body: 'not xml <<<' },
+      'events.json': { status: 200, body: JSON.stringify({ events: [] }) },
+    },
+  });
+  t.after(() => alone.close());
+  assert.equal(alone.get('coverageState'), 'error', 'nothing loaded at all');
 });
 
 test('rounds and coverage fail independently', async (t) => {

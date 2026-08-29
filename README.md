@@ -171,8 +171,14 @@ Then visit http://localhost:8000.
 
 ## Data
 
-The coverage list is **loaded at runtime from this site's own [`feed.xml`](feed.xml)** through
-`groupFeed()`. The feed is the single source — the posts are no longer duplicated inline.
+The coverage list is **the archive**. [`events.json`](events.json) names every event, and an
+event's own `posts.json` is fetched when its section is opened — so a section costs nothing until
+someone reads it, and every event has coverage rather than only the newest few.
+
+[`feed.xml`](feed.xml) is still loaded, and still parsed by `groupFeed()`, but it is a
+what's-new river of the newest 300 posts across the whole archive: at 52 events it reached only
+five of them. It now says when the site last updated and which event is running, and its posts
+give the newest few sections a head start while their own files are still on the way.
 
 The data is still **sample data**; what changed is that the *mechanism* is real. The round panel
 (pairings, standings, feature match) remains hardcoded, because the feed carries no round detail.
@@ -269,8 +275,8 @@ to fetch, parse, and serve the JSON to the page.
 | `index.html` | The site's markup. |
 | `styles.css` | Its styles. |
 | `app.js` | Its behaviour. Loaded with `defer`; the only inline script is the theme resolver, which has to run before first paint. |
-| `feed.xml` | RSS 2.0 coverage feed, newest posts across the whole archive. |
-| `events.json` | Every event in the archive: name, date, formats, and where to find it. |
+| `feed.xml` | RSS 2.0 feed of the newest posts across the whole archive. What is new, not the catalogue. |
+| `events.json` | Every event in the archive: name, date, formats, how many posts it has, and where to find it. |
 | `events/` | One directory per event; fetched on demand, not all at once. |
 | `og.png` | 1200×630 social preview image. |
 | `favicon.ico` | Multi-resolution legacy favicon (16/32/48). |

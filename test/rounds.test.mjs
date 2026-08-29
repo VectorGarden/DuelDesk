@@ -420,7 +420,7 @@ function withRounds(transform) {
    headlines, so each one has to be a way to reach the post it names -- that is
    the whole basis on which this publishes anything at all. */
 function withFeed(xml) {
-  return { routes: { 'feed.xml': { status: 200, body: xml } } };
+  return { routes: { 'feed.xml': { status: 200, body: xml }, ...noOwnCoverage } };
 }
 
 const REAL_FEED = `<?xml version="1.0" encoding="UTF-8"?>
@@ -582,13 +582,13 @@ const MIXED_FEED = `<?xml version="1.0" encoding="UTF-8"?>
 test('one tournament is one event, however its posts are titled', async (t) => {
   // A deck list post has no colon and a feature match has its own, so grouping
   // on the title alone turned one tournament into eight events.
-  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED } } });
+  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED }, ...noOwnCoverage } });
   t.after(() => page.close());
   assert.deepEqual(page.json('EVENTS.map(e => e.event)'), ['YCS Montréal']);
 });
 
 test('the format selector filters the coverage list', async (t) => {
-  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED } } });
+  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED }, ...noOwnCoverage } });
   t.after(() => page.close());
   const shown = () => page.$$('#events .post__t').map((n) => n.textContent);
 
@@ -604,7 +604,7 @@ test('the format selector filters the coverage list', async (t) => {
 });
 
 test('a post belonging to no format is always shown', async (t) => {
-  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED } } });
+  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: MIXED_FEED }, ...noOwnCoverage } });
   t.after(() => page.close());
   for (const f of ['Advanced', 'Genesys']) {
     page.run(`selectFormat('${f}')`);
@@ -619,6 +619,7 @@ test('a single-format event filters nothing away', async (t) => {
   const page = await loadPage({
     routes: {
       'feed.xml': { status: 200, body: MIXED_FEED },
+      ...noOwnCoverage,
       'rounds.json': async () => {
         const d = roundsFixture();
         d.formats = [d.formats[0]];
@@ -699,7 +700,11 @@ const JUMP_FEED = `<?xml version="1.0" encoding="UTF-8"?>
     <pubDate>Sun, 16 Aug 2026 16:00:00 +0000</pubDate></item>
 </channel></rss>`;
 
-const jumpFeed = { routes: { 'feed.xml': { status: 200, body: JUMP_FEED } } };
+/* The event on screen has fifty-six posts of its own in the fixture archive,
+   and every one of them is noise in a test asserting something about a
+   particular feed item. */
+const noOwnCoverage = { 'posts.json': { status: 200, body: '[]' } };
+const jumpFeed = { routes: { 'feed.xml': { status: 200, body: JUMP_FEED }, ...noOwnCoverage } };
 
 test('a pairings headline moves the page to that round', async (t) => {
   const page = await loadPage(jumpFeed);
@@ -741,7 +746,7 @@ test('a final standings post goes to the end of Swiss, not the bracket', async (
   const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: JUMP_FEED.replace(
     'YCS Montréal: Round 3 Pairings (Advanced Format)',
     'YCS Montréal: Final Standings After Swiss (Advanced Format)'
-  ).replace('<category>Pairings</category>', '<category>Standings</category>') } } });
+  ).replace('<category>Pairings</category>', '<category>Standings</category>') }, ...noOwnCoverage } });
   t.after(() => page.close());
   const link = page.$$('#events a.post__t--jump').find((a) => /Final Standings/.test(a.textContent));
   assert.ok(link, 'not offered as a jump');

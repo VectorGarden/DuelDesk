@@ -129,7 +129,12 @@ def scraped(root: str | Path) -> set[str]:
     return {d.name for d in root.iterdir() if (d / "rounds.json").is_file()}
 
 
-def summarise(slug: str, event: dict) -> dict:
+def count_posts(root: str | Path, slug: str) -> int:
+    p = posts_path(root, slug)
+    return len(json.loads(p.read_text(encoding="utf-8"))) if p.is_file() else 0
+
+
+def summarise(slug: str, event: dict, posts: int = 0) -> dict:
     """The manifest's entry for one event: enough to list and choose it, and
     nothing that would make the manifest grow with the coverage."""
     return {
@@ -143,6 +148,11 @@ def summarise(slug: str, event: dict) -> dict:
         "ongoing": event.get("ongoing", False),
         "coverageBy": event.get("coverageBy"),
         "path": f"{ARCHIVE}/{slug}/rounds.json",
+        # How many posts the event has, not the posts themselves. The page
+        # lists every event but fetches an event's coverage only when it is
+        # opened, so without this it could only count what it had already
+        # loaded -- and a total that climbs as you read is worse than none.
+        "postCount": posts,
         "formats": [{"format": f.get("format"),
                      "swissRounds": f.get("swissRounds"),
                      "duelists": f.get("duelists"),
@@ -161,7 +171,7 @@ def build_manifest(root: str | Path) -> dict:
     events = []
     for slug in sorted(scraped(root)):
         event = json.loads(rounds_path(root, slug).read_text(encoding="utf-8"))
-        events.append(summarise(slug, event))
+        events.append(summarise(slug, event, count_posts(root, slug)))
     events.sort(key=lambda e: (e["updated"] or "", e["slug"]), reverse=True)
     return {"events": events}
 

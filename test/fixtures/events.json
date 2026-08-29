@@ -3,11 +3,12 @@
     {
       "slug": "sample-remote-duel-ycs",
       "event": "Remote Duel YCS August 2026",
-      "updated": "2026-08-29T20:01:48Z",
+      "updated": "2026-08-29T22:09:51.942270Z",
       "sample": true,
       "ongoing": false,
       "coverageBy": "the Duel Desk team",
       "path": "events/sample-remote-duel-ycs/rounds.json",
+      "postCount": 56,
       "formats": [
         {
           "format": "Advanced",
