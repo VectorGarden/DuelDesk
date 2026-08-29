@@ -2270,5 +2270,73 @@ class TestFeedSpansEvents(unittest.TestCase):
         self.assertIn("Pairings from YCS Columbus, published by Konami.", xml)
 
 
+class TestSampleDataTimeline(unittest.TestCase):
+    """The sample generator lays its rounds out backwards from --now, and each
+    round carries a bare "HH:MM" posting time. Anchored in the small hours the
+    event ran across midnight, so `updated` named a time today while the rounds
+    it summarised posted yesterday -- which check-rounds.py rejects. The deploy
+    workflow regenerates sample data and checks it in the next step, so every
+    deploy between midnight and about 06:00 UTC would have failed."""
+
+    ROOT = Path(__file__).resolve().parent.parent
+    GENERATOR = ROOT / "scripts/generate-sample-data.py"
+    CHECKER = ROOT / ".github/scripts/check-rounds.py"
+
+    def generate(self, now):
+        """Run the generator at `now` and return the rounds.json it wrote."""
+        import json, subprocess, tempfile
+        out = Path(tempfile.mkdtemp())
+        done = subprocess.run(["python3", str(self.GENERATOR), "--now", now,
+                               "--out", str(out)], capture_output=True, text=True)
+        self.assertEqual(done.returncode, 0, done.stderr)
+        path = out / "rounds.json"
+        return path, json.loads(path.read_text())
+
+    def check(self, path):
+        import subprocess
+        done = subprocess.run(["python3", str(self.CHECKER), str(path)],
+                              capture_output=True, text=True)
+        return done.returncode, done.stdout
+
+    def test_the_check_passes_whatever_hour_it_is_generated_at(self):
+        for hour in range(24):
+            now = f"2026-08-29T{hour:02d}:20:00Z"
+            code, out = self.check(self.generate(now)[0])
+            self.assertEqual(code, 0, f"--now {now}: {out}")
+
+    def test_every_round_posts_on_the_day_updated_names(self):
+        # What the checker is really asserting, stated directly: a posting time
+        # with no date beside it can only be read against one day.
+        for now in ("2026-08-29T04:20:00Z", "2026-08-29T14:20:00Z"):
+            _, data = self.generate(now)
+            posted = [r["posted"] for f in data["formats"]
+                      for r in f["rounds"] if r.get("posted")]
+            self.assertEqual(data["updated"][11:16], max(posted), now)
+            for fmt in data["formats"]:
+                # Rounds are stored in playing order, so their times must read
+                # in order too. A round stamped 00:28 after one stamped 23:50
+                # is a round from the next day, and nothing in the file says so.
+                times = [r["posted"] for r in fmt["rounds"] if r.get("posted")]
+                self.assertEqual(times, sorted(times), f"{now} {fmt['format']}")
+
+    def test_an_event_that_already_fits_the_day_is_left_where_it_is(self):
+        # The slide is a fallback, not a reschedule: a generator run at a normal
+        # hour must still describe the event as having just been updated.
+        _, data = self.generate("2026-08-29T14:20:00Z")
+        self.assertEqual(data["updated"], "2026-08-29T14:08:00Z")
+        self.assertIn("August 2026", data["event"])
+
+    def test_the_small_hours_event_is_dated_the_day_it_ran(self):
+        # Slid back rather than forwards: coverage of a tournament that has not
+        # happened yet would be a worse answer than one that finished late.
+        _, data = self.generate("2026-08-29T04:20:00Z")
+        self.assertEqual(data["updated"], "2026-08-28T23:47:00Z")
+        # The event's name follows it, so a run just after midnight on the 1st
+        # does not headline a month none of its timestamps fall in.
+        _, turn = self.generate("2026-09-01T04:20:00Z")
+        self.assertEqual(turn["updated"][:10], "2026-08-31")
+        self.assertIn("August 2026", turn["event"])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -201,6 +201,13 @@ It is deterministic: a seeded PRNG plus a `--now` anchor means the same inputs r
 files byte for byte. CI checks the result stays coherent, including that each cut round's field
 comes from the previous round's competitors and halves each time.
 
+The event is laid out backwards from `--now`, and a round's posting time is a bare `HH:MM` — the
+page shows one event day, with no date to tell rounds either side of a midnight apart. So when
+`--now` falls too early in the day for the whole event to fit behind it, the event slides back to
+the end of the previous day rather than running across the midnight: `updated` and the round times
+it summarises then still describe one day. Slid backwards, never forwards — coverage of a
+tournament that has not happened yet would be worse than one that finished late.
+
 The published feed marks itself as sample data at every level a reader actually sees — channel
 title, channel description, each item title (`[Sample] …`) and each item description — because
 aggregators strip `<copyright>`. The page strips the `[Sample]` prefix on parse, since the badge

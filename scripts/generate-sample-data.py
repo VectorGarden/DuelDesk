@@ -31,6 +31,8 @@ FORMATS = [
 ]
 SWISS = 12                 # longest format; used for the posting timeline
 ANNOUNCED = 1248           # headline field size for the event
+GAP = 38                   # minutes from one round posting to the next
+LEAD = 12                  # minutes between the newest round posting and `now`
 
 SURNAMES = """Okonkwo Alvarez Lindqvist Nakamura Wexler Boateng Duval Petrov Marchetti Zhao
 Ferreira Haddad Rasmussen Osei Bergstrom Castellanos Ibarra Novak Takahashi Mwangi Sorensen
@@ -40,6 +42,29 @@ Aguilar Vermeulen Kimura Osborne Bianchi Traore Nowak Reinhardt Espinoza Falk Mb
 Halvorsen Ricci Amara Sundqvist Costa Weber""".split()
 INITIALS = "RMJPDSKATLCNEVHIGBFOWZY"
 DECKS = ['Maliss','Ryzeal','Fiendsmith','Mitsurugi','Voiceless Voice','Snake-Eye','Yubel','Tenpai Dragon']
+
+
+def event_anchor(clock):
+    """The instant the timeline hangs off: `clock`, or the last one a day fits.
+
+    Rounds are laid out backwards from here, and each carries a bare "HH:MM"
+    posting time -- the page shows one event day, with no date to tell rounds
+    on either side of a midnight apart. Anchored in the small hours the event
+    ran across one: `updated` named a time today while the rounds it summarised
+    posted yesterday, and check-rounds.py rightly rejected the pair. Sliding
+    the whole event back to the end of the previous day keeps every stamp on a
+    single date, and still puts the newest one in the past.
+    """
+    span = timedelta(minutes=(max(spec["swiss"] for spec in FORMATS) + 1) * GAP + LEAD)
+    if span >= timedelta(days=1):
+        # No anchor would help: the event itself no longer fits a calendar day,
+        # so its posting times cannot be read as one without a date beside them.
+        sys.exit("simulated event runs {} -- longer than the day its posting "
+                 "times are written for".format(span))
+    newest, oldest = clock - timedelta(minutes=LEAD), clock - span
+    if oldest.date() == newest.date():
+        return clock
+    return newest.replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(minutes=1)
 
 
 def build_field(rng):
@@ -169,8 +194,12 @@ def main():
     args = ap.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
-    now = datetime.fromisoformat(args.now).astimezone(timezone.utc) if args.now \
+    clock = datetime.fromisoformat(args.now).astimezone(timezone.utc) if args.now \
         else datetime.now(timezone.utc)
+    # Every timestamp below -- the event's month, its round postings, the feed's
+    # older entries -- hangs off this one moment, so that they describe a single
+    # coherent event rather than the wall clock the generator happened to run on.
+    now = event_anchor(clock)
 
     event = f"Remote Duel YCS {now.strftime('%B %Y')}"
     posts = []
@@ -185,7 +214,7 @@ def main():
         posted_rounds = swiss + 2
 
         def posted_at(i, _swiss=swiss, _n=posted_rounds):
-            return now - timedelta(minutes=(_n - 1 - i) * 38 + 12)
+            return now - timedelta(minutes=(_n - 1 - i) * GAP + LEAD)
 
         by_name = {p["name"]: p for p in players}
 
