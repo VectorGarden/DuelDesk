@@ -159,6 +159,25 @@ def event_windows(entries: list[Entry]) -> dict[str, tuple[str, str]]:
     return {k: p.window for k, p in event_profiles(entries).items()}
 
 
+_SLUG_YEAR = re.compile(r"(?:^|-)(?:19|20)\d{2}(?=-|$)")
+
+
+def same_series(entry: Entry, windows: dict, within) -> str | None:
+    """The event this post's slug names, if its slug has the wrong year on it.
+
+    Two event slugs that differ only in their year are two runnings of one
+    series, so a post whose date falls outside the one its URL names, and
+    inside a sibling's, belongs to the sibling. Anything else is left to the
+    date rules.
+    """
+    family = _SLUG_YEAR.sub("", entry.event_slug)
+    for slug, (lo, hi) in windows.items():
+        if (slug != entry.event_slug and _SLUG_YEAR.sub("", slug) == family
+                and within(entry.lastmod, lo, hi)):
+            return slug
+    return None
+
+
 def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
     """Attach every post to an event.
 
@@ -187,8 +206,24 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
     out = []
     for e in entries:
         rec = e.to_dict()
-        if e.event_slug:
+        misfiled = (e.event_slug and e.lastmod and e.event_slug in windows
+                    and not within(e.lastmod, *windows[e.event_slug]))
+        if e.event_slug and not misfiled:
             rec["event"], rec["event_confidence"] = e.event_slug, "path"
+        elif misfiled and (sibling := same_series(e, windows, within)):
+            # The URL is the strongest signal there is, and it is typed by hand.
+            # Konami filed a July 2026 post -- round 13 of the 2026 North
+            # America WCQ -- under the 2025 event's slug:
+            #
+            #   /2026/championships/2025-north-america-wcq/
+            #       nawcq-top-tables-update-round-13/
+            #
+            # The slug still names the series correctly; only the year is
+            # wrong. So the year is the part not believed, and the instalment
+            # whose dates actually hold the post is used instead. Nothing else
+            # separated the two candidates: both are 2026 championships posts,
+            # and neither the category nor the vocabulary told them apart.
+            rec["event"], rec["event_confidence"] = sibling, "path+year"
         elif not e.lastmod:
             rec["event"], rec["event_confidence"] = None, "none"
         else:

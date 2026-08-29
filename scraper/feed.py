@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import html
 import re
+import unicodedata
 from datetime import datetime, timezone
 
 SITE = "https://dueldesk.reizu.dev/"
@@ -61,7 +62,38 @@ def esc(text: str) -> str:
     return html.escape(text or "", quote=True)
 
 
-def titled(event: str, title: str) -> str:
+def headline_from_url(url: str, title: str) -> str | None:
+    """The part of a post's slug its title does not already say.
+
+    Konami titles some posts with nothing but the event and where and when it
+    was: two of YCS Montreal's are both headed "YCS Montreal, Quebec 2026", and
+    which is the main event information and which the public event information
+    is only in the slug. Split on the event name that leaves ", Quebec 2026" as
+    the headline -- a comma, a place and a year, describing no post in
+    particular and the same for both of them.
+
+    So the slug is read instead, minus the words the title already used:
+
+        ycs-montreal-quebec-2026-main-event-information
+        YCS Montreal, Quebec 2026            -> Main Event Information
+
+    Accents are folded for the comparison only. The blog writes Montreal both
+    ways, and a slug cannot carry one.
+    """
+    said = {_fold(w) for w in re.findall(r"[\w']+", title)}
+    words = [w for w in url.rstrip("/").rsplit("/", 1)[-1].split("-") if w]
+    while words and _fold(words[0]) in said:
+        words.pop(0)
+    return " ".join(w.capitalize() for w in words) if words else None
+
+
+def _fold(word: str) -> str:
+    """Lowercased and stripped of accents, for comparing a title to a slug."""
+    return "".join(c for c in unicodedata.normalize("NFKD", word.lower())
+                   if not unicodedata.combining(c))
+
+
+def titled(event: str, title: str, url: str = "") -> str:
     """'Event: headline', which is how every item in this feed is written.
 
     A feed item stands alone in a reader, with no page around it to say which
@@ -77,7 +109,14 @@ def titled(event: str, title: str) -> str:
         return title
     if title.startswith(event):
         # Names it already, just without the separator the convention needs.
-        return f"{event}: {title[len(event):].lstrip(' -–—:')}".rstrip(": ")
+        rest = title[len(event):].lstrip(" -–—:")
+        # A headline that opens with a comma is not a headline: the title is
+        # still naming the event -- "YCS Montreal" then ", Quebec 2026" -- and
+        # what the post is about is in the slug instead. Two of Montreal's read
+        # "YCS Montréal: , Quebec 2026", identically, for different posts.
+        if rest.startswith(",") and (from_slug := headline_from_url(url, title)):
+            return f"{event}: {from_slug}"
+        return f"{event}: {rest}".rstrip(": ")
     return f"{event}: {title}"
 
 
@@ -105,7 +144,7 @@ def build_feed(event: str, items: list[dict], *, updated: str | None = None,
         name = item.get("event") or event
         body.append(
             "    <item>\n"
-            f"      <title>{esc(titled(name, item['title']))}</title>\n"
+            f"      <title>{esc(titled(name, item['title'], item['url']))}</title>\n"
             f"      <link>{esc(item['url'])}</link>\n"
             f"      <guid isPermaLink=\"true\">{esc(item['url'])}</guid>\n"
             f"      <category>{esc(label)}</category>\n"
