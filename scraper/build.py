@@ -400,6 +400,9 @@ def build_format(name: str | None, sources: list[Source], *,
                 standings.append({
                     "pos": row["rank"],
                     "name": row["name"],
+                    # Who is on the team. Absent for an ordinary entrant, who
+                    # is one person and needs no roster.
+                    **({"members": row["members"]} if row.get("members") else {}),
                     "record": r.to_record() if r else None,
                     "points": row.get("points"),
                     "deck": None,
@@ -423,6 +426,11 @@ def build_format(name: str | None, sources: list[Source], *,
             # rounds 1-8 publish standings with no points column at all, so a
             # record going into round 4 is not something this can know.
             records = cut_records(key) if is_cut else records_after.get(key[1] - 1, {})
+            def seat(duel: dict) -> dict:
+                return {"table": duel["table"],
+                        "a": duel["a"]["name"], "aDeck": duel["a"].get("deck"),
+                        "b": duel["b"]["name"], "bDeck": duel["b"].get("deck")}
+
             for row in pairings_post.post.table.rows:
                 pairings.append({
                     "table": row["table"],
@@ -430,6 +438,12 @@ def build_format(name: str | None, sources: list[Source], *,
                     "aDeck": row["a"].get("deck"),
                     "b": row["b"]["name"], "bRec": records.get(row["b"]["name"]),
                     "bDeck": row["b"].get("deck"),
+                    # A team match is one row holding the three duels played
+                    # inside it. The row itself is the match -- team against
+                    # team -- which is what the standings rank and what a record
+                    # is derived for; the duels are who sat where.
+                    **({"duels": [seat(d) for d in row["duels"]]}
+                       if row.get("duels") else {}),
                 })
 
         if not is_cut and standings:
@@ -500,35 +514,30 @@ def build_format(name: str | None, sources: list[Source], *,
         rounds[-1]["state"] = "live"
 
     field = max((len(r["standings"]) for r in rounds), default=0)
-    return {"format": name, "swissRounds": swiss_count, "duelists": field, "rounds": rounds}
+    # What one entrant is. A Team YCS ranks teams of three, so "389 Duelists"
+    # would be 389 teams under the wrong noun -- and the page has no way to know
+    # from the rows themselves, because a team match reads exactly like a match.
+    return {"format": name, "entrant": "Team" if entered_as_teams(sources) else "Duelist",
+            "swissRounds": swiss_count, "duelists": field, "rounds": rounds}
 
 
 def entered_as_teams(sources: list[Source]) -> bool:
-    """Whether this event's standings list teams rather than Duelists.
+    """Whether this event's entrants are teams rather than individual Duelists.
 
-    A Team YCS enters three Duelists a side and publishes one standings row per
-    team, with the members inside it:
+    A Team YCS enters three a side. Its standings hold one row per team with
+    the members inside it, and its pairings hold one row per team match with
+    the three duels inside that. The parser reads both, so this is a question
+    about the shape it produced rather than about punctuation in a name.
 
-        Rank | Player Name
-        1    | Road of the King: Yacine S., Francisco O., Patrick H.
-
-    Read as a Duelist that is 389 "Duelists" that are teams, under names the
-    comma rule mangles -- normalise_name reads the row above as "Francisco O.,
-    Patrick H. Road of the King: Yacine S.", because it is written to turn
-    "Gouge, Justin" into "Justin Gouge".
-
-    The Swiss pairings are a different layout too, headed Table | Team 1 | Team
-    2 with no vs. column, so they do not parse at all. None of that is coverage
-    worth publishing badly, and none of it is guessed at here: a colon in an
-    entrant's name is the blog saying this is a team, and ordinary names have
-    none.
+    What it decides is what the page calls them, and that is the whole of it:
+    everything downstream already works on entrants without caring whether an
+    entrant is one person or three.
     """
-    named = [row.get("name") or "" for s in sources
-             if s.post.kind == "standings" and s.post.table
-             for row in s.post.table.rows]
-    if not named:
-        return False
-    return sum(":" in n for n in named) > len(named) / 2
+    for s in sources:
+        for row in (s.post.table.rows if s.post.table else []):
+            if row.get("members") or row.get("duels"):
+                return True
+    return False
 
 
 def is_tournament(fmt: dict) -> bool:

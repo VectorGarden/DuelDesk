@@ -415,6 +415,14 @@ tbody tr:hover{background:var(--surface-2)}
   border-left:3px solid var(--k); padding:.4rem .5rem; flex:none; width:7.5rem;
 }
 @media (max-width:560px){.post__k{width:auto}.post{flex-wrap:wrap; gap:.5rem}}
+/* A team's three Duelists, under the team's own name in the standings. */
+.roster{display:block; font:400 .78rem var(--body); color:var(--text-3); margin-top:.15rem}
+/* The duels inside a team match, indented under the row that names the teams
+   playing them, so a round reads as teams first and seats second. */
+tr.match > *{border-top:1px solid var(--line)}
+tr.match > td:not(.num){font-weight:600}
+tr.duel > td{color:var(--text-2)}
+tr.duel > td:not(.num){padding-left:1.4rem}
 /* Not a post, so it does not take the coloured kind rail: it is the one row in
    the group that acts on the page above rather than pointing away from it. */
 .post--open{border-bottom:1px solid var(--line); padding-block:.85rem}
@@ -1219,7 +1227,11 @@ function renderEventMeta(){
     {day:'numeric', month:'short', year:'numeric'});
   meta.innerHTML = [
     when && hasEventChoice() ? `<span>${esc(when)}</span>` : '',
-    `<span><b>${esc((f?.duelists ?? 0).toLocaleString())}</b> Duelists</span>`,
+    /* A Team YCS ranks teams of three, so the count is teams and the noun has
+       to follow it. Stated by the data rather than guessed from the rows: a
+       team match reads exactly like a match. */
+    `<span><b>${esc((f?.duelists ?? 0).toLocaleString())}</b> ${
+       esc(f?.entrant === 'Team' ? 'Teams' : 'Duelists')}</span>`,
     `<span><b>${esc(f?.swissRounds ?? 0)}</b> Swiss rounds</span>`,
     /* The selector sits directly below this line and shows the format as the
        pressed button. Naming it here as well printed it twice, a few pixels
@@ -1513,32 +1525,51 @@ const noMatch = what => `<div class="empty"><h3>No ${esc(what)} match “${esc(q
 const wrapTable = (label, inner) =>
   `<div class="tblwrap" tabindex="0" role="region" aria-label="${esc(label)}">${inner}</div>`;
 
+/* Everyone a pairing names, so searching a Duelist's name finds the team match
+   they played in as well as the seat they played it at. */
+const named = (p) => [p.a, p.b, ...(p.duels ?? []).flatMap(d => [d.a, d.b])];
+
 function renderPairings(r){
-  const rows = (r.pairings ?? []).filter(p => hit(p.a, p.b));
+  const rows = (r.pairings ?? []).filter(p => hit(...named(p)));
   if (!rows.length) return noMatch('tables');
+  const teams = rows.some(p => p.duels?.length);
+  const who = teams ? 'Team' : 'Duelist';
   const caption = r.phase === 'Top cut'
     ? `${esc(r.label)} bracket, seeded from the final Swiss standings.`
     : `Top tables for ${esc(r.label)}.`;
   /* Deck types are published for the cut, where the blog titles the post "with
      Deck Types", and never for Swiss. The columns appear only when the round has
-     them: two empty ones on every Swiss round would be worse than none. */
-  const decks = rows.some(p => p.aDeck || p.bDeck);
+     them: two empty ones on every Swiss round would be worse than none.
+
+     A team event carries them on the duels rather than on the match, because a
+     team does not have a Deck -- three Duelists do. */
+  const decks = rows.some(p => p.aDeck || p.bDeck
+    || (p.duels ?? []).some(d => d.aDeck || d.bDeck));
   const deckHead = decks ? '<th scope="col">Deck</th>' : '';
   const deckCell = (v) => decks ? `<td>${esc(v ?? '')}</td>` : '';
   const rec = (v) => `<td class="rec${v?.confidence !== 'derived' ? ' rec--partial' : ''}">`
     + `${esc(formatRecord(v, {drawsPossible: eventDrawsPossible()}))}</td>`;
 
+  /* A team match is one row, and the three duels played inside it are rows
+     beneath, indented and numbered by the table each was played at. Flattened
+     into nine hundred rows the round would say who duelled and never say who
+     was playing whom. */
+  const duels = (p) => (p.duels ?? []).map(d => `<tr class="duel">
+      <td class="num">${esc(d.table)}</td>
+      <td>${esc(d.a)}</td>${deckCell(d.aDeck)}${decks ? '' : '<td></td>'}
+      <td>${esc(d.b)}</td>${deckCell(d.bDeck)}${decks ? '' : '<td></td>'}</tr>`).join('');
+
   return wrapTable(`Pairings for ${r.label}`, `<table>
-    <caption>${caption} Search by Duelist to filter this list.</caption>
+    <caption>${caption} Search by ${teams ? 'Duelist or team' : 'Duelist'} to filter this list.</caption>
     <thead><tr>
       <th scope="col" class="num">${r.phase === 'Top cut' ? 'Match' : 'Table'}</th>
-      <th scope="col">Duelist</th>${deckHead}<th scope="col">Record</th>
-      <th scope="col">Duelist</th>${deckHead}<th scope="col">Record</th>
+      <th scope="col">${who}</th>${deckHead}<th scope="col">Record</th>
+      <th scope="col">${who}</th>${deckHead}<th scope="col">Record</th>
     </tr></thead><tbody>
-    ${rows.map(p => `<tr>
+    ${rows.map(p => `<tr${p.duels?.length ? ' class="match"' : ''}>
       <td class="num">${esc(p.table)}</td>
       <td>${esc(p.a)}</td>${deckCell(p.aDeck)}${rec(p.aRec)}
-      <td>${esc(p.b)}</td>${deckCell(p.bDeck)}${rec(p.bRec)}</tr>`).join('')}
+      <td>${esc(p.b)}</td>${deckCell(p.bDeck)}${rec(p.bRec)}</tr>${duels(p)}`).join('')}
     </tbody></table>`);
 }
 
@@ -1549,8 +1580,9 @@ function renderStandings(r){
      the page downloads on each visit. */
   const source = (r.standings?.length ? r
     : ROUNDS.find(x => String(x.id) === String(r.standingsAfter))) ?? r;
-  const rows = (source.standings ?? []).filter(s => hit(s.name, s.deck));
-  if (!rows.length) return noMatch('Duelists');
+  const rows = (source.standings ?? []).filter(s => hit(s.name, s.deck, ...(s.members ?? [])));
+  const teams = rows.some(s => s.members?.length);
+  if (!rows.length) return noMatch(teams ? 'teams' : 'Duelists');
   /* Deck and opponent win percentage come from the simulation, which invents
      both. Konami's standings publish rank, name and points, so against real
      coverage these were two permanently empty columns -- and the percentage
@@ -1571,14 +1603,16 @@ function renderStandings(r){
       ? `Final Swiss standings after round ${esc(r.standingsAfter)}, top eight shown.`
       : `Standings after round ${esc(r.standingsAfter)}, top eight shown.`}</caption>
     <thead><tr>
-      <th scope="col" class="num">Place</th><th scope="col">Duelist</th>
+      <th scope="col" class="num">Place</th><th scope="col">${teams ? 'Team' : 'Duelist'}</th>
       ${hasRecord ? '<th scope="col">Record</th>' : ''}
       ${hasPoints ? '<th scope="col" class="num">Pts</th>' : ''}
       ${hasDeck ? '<th scope="col">Deck</th>' : ''}
       ${hasPct ? '<th scope="col">Opp. win %</th>' : ''}
     </tr></thead><tbody>
     ${rows.map(s => `<tr>
-      <th scope="row" class="num">${esc(s.pos)}</th><td>${esc(s.name)}</td>
+      <th scope="row" class="num">${esc(s.pos)}</th>
+      <td>${esc(s.name)}${s.members?.length
+        ? `<span class="roster">${esc(s.members.join(', '))}</span>` : ''}</td>
       ${hasRecord ? `<td class="rec${s.record?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(s.record, {drawsPossible: eventDrawsPossible()}))}</td>` : ''}
       ${hasPoints ? `<td class="rec num">${esc(s.points ?? '—')}</td>` : ''}
       ${hasDeck ? `<td>${esc(s.deck ?? '')}</td>` : ''}
