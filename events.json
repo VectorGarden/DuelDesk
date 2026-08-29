@@ -363,6 +363,57 @@
           "rounds": 16
         }
       ]
+    },
+    {
+      "slug": "202205-ycs-hartford-ct",
+      "event": "YCS",
+      "updated": "2022-05-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/202205-ycs-hartford-ct/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 1243,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2022-ycs-charlotte",
+      "event": "Top Table Update",
+      "updated": "2022-04-10",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-ycs-charlotte/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 1117,
+          "rounds": 8
+        }
+      ]
+    },
+    {
+      "slug": "2022-02-north-america-remote-duel-ycs",
+      "event": "Remote Duel YCS",
+      "updated": "2022-02-27",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-02-north-america-remote-duel-ycs/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 455,
+          "rounds": 8
+        }
+      ]
     }
   ]
 }
