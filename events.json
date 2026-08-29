@@ -246,6 +246,23 @@
       ]
     },
     {
+      "slug": "2025-03-team-ycs-las-vegas",
+      "event": "TEAM YCS Las Vegas",
+      "updated": "2025-03-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-03-team-ycs-las-vegas/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 439,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "2025-02-ycs-orlando",
       "event": "YCS Orlando",
       "updated": "2025-02-02",
@@ -412,6 +429,23 @@
           "swissRounds": 10,
           "duelists": 455,
           "rounds": 8
+        }
+      ]
+    },
+    {
+      "slug": "2019-south-america-wcq",
+      "event": "South America WCQ",
+      "updated": "2019-06-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-south-america-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 403,
+          "rounds": 13
         }
       ]
     }
