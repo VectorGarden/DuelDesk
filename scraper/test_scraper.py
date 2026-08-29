@@ -3083,5 +3083,62 @@ class TestARejectedEventIsRemembered(unittest.TestCase):
         self.assertEqual(planned, [], "the rejected event was picked again")
 
 
+class TestTwoPostsClaimingOneRound(unittest.TestCase):
+    """Whichever arrived last used to win, which is not a rule at all.
+
+    Two posts can claim one round: the same table published twice, or two
+    events sharing a weekend. The January 2022 Remote Duel YCS did the latter
+    with the Latin America one -- both published a Top 32, both landed on the
+    same event, and one of the two had a table that read as empty.
+
+    The same coverage then built differently from one run to the next. That is
+    how an event passed a local check and was rejected in CI on identical data.
+    """
+
+    def pairings(self, title, rows, posted):
+        return _src(f"https://x/{posted}/", title, PAIR_HEAD, rows, posted=posted)
+
+    def rows(self, n, prefix):
+        return [[str(i + 1), f"{prefix}{i}", "One", "vs.", f"{prefix}{i}", "Two"]
+                for i in range(n)]
+
+    def build(self, sources):
+        import io
+        from contextlib import redirect_stdout
+        from build import build_event
+        with redirect_stdout(io.StringIO()):
+            return build_event("Remote Duel YCS", sources)
+
+    def test_the_fuller_table_wins(self):
+        full = self.pairings("Top 32 Pairings (Advanced Format)", self.rows(16, "A"), "10:00")
+        empty = self.pairings("Top 32 Pairings (Advanced Format)", [], "18:00")
+        for order in ([full, empty], [empty, full]):
+            rounds = self.build(list(order))["formats"][0]["rounds"]
+            self.assertEqual(len(rounds[0]["pairings"]), 16,
+                             "an empty table beat a full one")
+
+    def test_the_answer_does_not_depend_on_the_order_they_arrive_in(self):
+        one = self.pairings("Top 32 Pairings (Advanced Format)", self.rows(16, "A"), "10:00")
+        two = self.pairings("Top 32 Pairings (Advanced Format)", self.rows(16, "B"), "18:00")
+        seen = {tuple(p["a"] for p in self.build(list(o))["formats"][0]["rounds"][0]["pairings"])
+                for o in ([one, two], [two, one])}
+        self.assertEqual(len(seen), 1, "the same coverage built two different ways")
+
+    def test_between_two_equal_tables_the_newer_wins(self):
+        older = self.pairings("Top 32 Pairings (Advanced Format)", self.rows(16, "Old"), "10:00")
+        newer = self.pairings("Top 32 Pairings (Advanced Format)", self.rows(16, "New"), "18:00")
+        pairs = self.build([older, newer])["formats"][0]["rounds"][0]["pairings"]
+        self.assertTrue(pairs[0]["a"].startswith("New"), pairs[0]["a"])
+
+    def test_standings_follow_the_same_rule(self):
+        head = ["Rank", "Player Name", "Points"]
+        full = _src("https://x/a/", "Standings After Round 5 (Advanced Format)", head,
+                    [[str(i + 1), f"Duelist {i}", "9"] for i in range(20)], posted="10:00")
+        empty = _src("https://x/b/", "Standings After Round 5 (Advanced Format)", head,
+                     [], posted="18:00")
+        rounds = self.build([full, empty])["formats"][0]["rounds"]
+        self.assertEqual(len(rounds[0]["standings"]), 20)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
