@@ -771,6 +771,125 @@
           "rounds": 8
         }
       ]
+    },
+    {
+      "slug": "2015-central-american-wcq",
+      "event": "2015 Central American Wcq",
+      "updated": "2015-06-22",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2015-central-american-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 599,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "201504-bogota-d-c-colombia",
+      "event": "201504 Bogota D C Colombia",
+      "updated": "2015-04-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201504-bogota-d-c-colombia/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 331,
+          "rounds": 9
+        }
+      ]
+    },
+    {
+      "slug": "201503-guatemala",
+      "event": "201503 Guatemala",
+      "updated": "2015-03-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201503-guatemala/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 192,
+          "rounds": 4
+        }
+      ]
+    },
+    {
+      "slug": "2013-south-american-wcq-championships",
+      "event": "WCQ",
+      "updated": "2014-06-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2013-south-american-wcq-championships/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 248,
+          "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "2013-north-american-wcq",
+      "event": "2013 North American Wcq",
+      "updated": "2013-07-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2013-north-american-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1413,
+          "rounds": 17
+        }
+      ]
+    },
+    {
+      "slug": "2013-central-american-wcq",
+      "event": "2013 Central American Wcq",
+      "updated": "2013-07-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2013-central-american-wcq/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 301,
+          "rounds": 7
+        }
+      ]
+    },
+    {
+      "slug": "11-10-columbus",
+      "event": "11 10 Columbus",
+      "updated": "2011-10-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/11-10-columbus/rounds.json",
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 100,
+          "rounds": 6
+        }
+      ]
     }
   ]
 }
