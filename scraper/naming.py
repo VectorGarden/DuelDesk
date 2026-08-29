@@ -155,9 +155,15 @@ def clock(stamp: str | None) -> str | None:
 
 
 # "Genesys Format Round 5 Feature Match: Adrien Racek vs. Oliver Martin Ernst".
-# The separator is written "vs." on the blog but "vs" appears too, and a name
-# can contain "vs" inside a word, so it must be surrounded by spaces.
-_VERSUS = re.compile(r"\s+vs\.?\s+", re.I)
+# The separator is written "vs." on the blog, and also "vs", and also the whole
+# word: "Top 64 Feature Match: Hani Jawhari Versus Nicholas Scarangella". A name
+# can contain any of those inside a word, so it must be surrounded by spaces.
+#
+# The spelled-out one is why YCS Philadelphia's Top 64 reached the archive as a
+# round with nothing in it. Two feature matches were published for it, the newer
+# of the two used "Versus", the players could not be read out of it, and the
+# round was left holding a feature match that named nobody.
+_VERSUS = re.compile(r"\s+(?:vs\.?|versus)\s+", re.I)
 
 
 def feature_players(title: str) -> tuple[str, str] | None:

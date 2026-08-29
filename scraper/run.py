@@ -268,12 +268,15 @@ def main() -> int:
         entries += parse_post_sitemap(f.get(url, refresh=(url == newest_sitemap(index))))
     print(f"Indexed {len(entries):,} posts from {len(sub)} sub-sitemaps")
 
-    done = archive.scraped(args.archive)
+    done = archive.attempted(args.archive)
     chosen = plan(entries, done, args.backfill)
     if not chosen:
         print("No event with both pairings and standings could be identified.")
         return 0
-    print(f"Archive holds {len(done)} events; building "
+    kept = archive.scraped(args.archive)
+    print(f"Archive holds {len(kept)} events"
+          + (f" and has rejected {len(done) - len(kept)}" if len(done) > len(kept) else "")
+          + "; building "
           + ", ".join(f"{slug} ({ended})" for slug, _, ended in chosen))
 
     report: list[str] = []
@@ -311,6 +314,7 @@ def main() -> int:
         # the ten beside it that were fine.
         if problem := coherence_problem(args.archive, slug):
             shutil.rmtree(archive.event_dir(args.archive, slug))
+            archive.reject_event(args.archive, slug, problem)
             failed.append(slug)
             print(f"  REJECTED {slug}: {problem}")
             report += [f"### `{slug}` — **rejected, not published**", "",

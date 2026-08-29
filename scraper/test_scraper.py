@@ -1321,6 +1321,33 @@ class TestProvenanceCheck(unittest.TestCase):
         code, out = self.check(feature_only)
         self.assertEqual(code, 0, out)
 
+    def test_a_record_is_measured_against_the_cut_rounds_published(self):
+        # A bracket win is counted by seeing the Duelist paired in the round
+        # after it, so a cut round nobody posted pairings for adds nothing to
+        # anyone's record. Expecting it back rejected YCS Philadelphia over 35
+        # Duelists whose Top 64 match was never published.
+        def unpublished_first_cut(d):
+            fmt = d["formats"][0]
+            cut = [r for r in fmt["rounds"] if r["phase"] == "Top cut"]
+            first = dict(cut[0])
+            first.update(id="T64", label="Top 64", pairings=[], standings=[],
+                         order=cut[0]["order"] - 1,
+                         feature={"a": {"name": "Ann Alpha"}, "b": {"name": "Bo Beta"},
+                                  "source": "https://x/f/"})
+            fmt["rounds"].insert(fmt["rounds"].index(cut[0]), first)
+        code, out = self.check(unpublished_first_cut)
+        self.assertEqual(code, 0, out)
+
+    def test_a_record_short_of_the_rounds_that_were_published_is_rejected(self):
+        # The rule keeps its whole force where the coverage is complete.
+        def one_short(d):
+            cut = [r for r in d["formats"][0]["rounds"] if r["phase"] == "Top cut"]
+            rec = cut[1]["pairings"][0]["aRec"]
+            rec["wins"] -= 1
+        code, out = self.check(one_short)
+        self.assertEqual(code, 1)
+        self.assertIn("matches), expected", out)
+
     def test_a_cut_round_missing_a_match_is_still_rejected(self):
         def three(d):
             fmt = d["formats"][0]
@@ -2898,6 +2925,163 @@ class TestTeamEvents(unittest.TestCase):
         fmt = self.event()["formats"][0]
         row = next(r for r in fmt["rounds"] if r["standings"])["standings"][0]
         self.assertEqual(row["members"], ["Yacine S.", "Francisco O.", "Patrick H."])
+
+class TestAFeatureMatchThatNamesNobody(unittest.TestCase):
+    """A round can carry more than one feature match, and the newest wins.
+
+    Only among the ones that can be read, though. YCS Philadelphia's Top 64 had
+    two, and the newer was "Top 64 Feature Match: Hani Jawhari Versus Nicholas
+    Scarangella" -- spelled out. The players could not be parsed out of it, so
+    the round was left holding a feature naming nobody, beside no pairings and
+    no standings, and the whole event was rejected for the empty round.
+    """
+
+    def test_the_separator_is_read_spelled_out(self):
+        from naming import feature_players
+        self.assertEqual(
+            feature_players("Top 64 Feature Match: Hani Jawhari Versus Nicholas Scarangella"),
+            ("Hani Jawhari", "Nicholas Scarangella"))
+
+    def test_the_abbreviations_still_work(self):
+        from naming import feature_players
+        for sep in ("vs.", "vs", "VS.", "Versus"):
+            self.assertEqual(feature_players(f"Round 5 Feature Match: A One {sep} B Two"),
+                             ("A One", "B Two"), sep)
+
+    def test_versus_inside_a_word_is_not_a_separator(self):
+        from naming import feature_players
+        # It has to be surrounded by spaces, or a name carrying the letters
+        # splits itself in half and the round reports two Duelists who are one.
+        self.assertIsNone(feature_players("Round 5 Feature Match: Alvsson Bergman"))
+
+    def feature(self, title, posted):
+        return _src(f"https://x/{posted}/", title, ["a"], [], posted=posted)
+
+    def test_a_readable_feature_beats_a_newer_unreadable_one(self):
+        from build import better_feature
+        readable = self.feature("Top 64 Feature Match: Ryan Yu vs. Dominic Couch", "10:00")
+        unreadable = self.feature("Top 64 Feature Match involving several people", "18:00")
+        self.assertTrue(better_feature(readable, unreadable))
+        self.assertFalse(better_feature(unreadable, readable))
+
+    def test_between_two_readable_ones_the_newest_wins(self):
+        from build import better_feature
+        older = self.feature("Round 4 Feature Match: A One vs. B Two", "10:00")
+        newer = self.feature("Round 4 Feature Match: C Three vs. D Four", "18:00")
+        self.assertTrue(better_feature(newer, older))
+        self.assertFalse(better_feature(older, newer))
+
+    def test_a_round_shows_the_feature_it_can_read(self):
+        import io
+        from contextlib import redirect_stdout
+        from build import build_event
+        sources = [
+            _src("https://x/p/", "Round 4 Pairings (Advanced Format)", PAIR_HEAD,
+                 [["1", "Ann", "Alpha", "vs.", "Bo", "Beta"]]),
+            self.feature("Advanced Format Round 4 Feature Match: Ryan Yu vs. Dominic Couch", "10:00"),
+            self.feature("Advanced Format Round 4 Feature Match: Hani Jawhari and friends", "18:00"),
+        ]
+        with redirect_stdout(io.StringIO()):
+            ev = build_event("YCS Philadelphia", sources)
+        feature = ev["formats"][0]["rounds"][0]["feature"]
+        self.assertIsNotNone(feature, "the round was left holding a feature naming nobody")
+        self.assertEqual(feature["a"]["name"], "Ryan Yu")
+
+
+class TestARejectedEventIsRemembered(unittest.TestCase):
+    """Otherwise the backfill cannot get past one.
+
+    A rejected event leaves nothing in the archive, so the next run does not
+    count it as attempted, so it is picked again -- and because the plan takes
+    the newest events missing from the archive, the same failures are retried
+    first every time and the run never reaches the ones behind them. Five
+    batches of ten landed 21 events and then stopped dead, every batch spending
+    itself on the same seven rejections.
+    """
+
+    def setUp(self):
+        import tempfile
+        self.tmp = Path(tempfile.mkdtemp())
+
+    def test_a_rejection_counts_as_attempted(self):
+        import archive
+        archive.reject_event(self.tmp, "2018-11-sao-paulo-brazil", "Top 8: nobody advanced")
+        self.assertEqual(archive.attempted(self.tmp), {"2018-11-sao-paulo-brazil"})
+
+    def test_a_rejection_is_not_coverage(self):
+        import archive
+        archive.reject_event(self.tmp, "2018-11-sao-paulo-brazil", "Top 8: nobody advanced")
+        self.assertEqual(archive.scraped(self.tmp), set())
+        self.assertEqual(archive.build_manifest(self.tmp)["events"], [])
+
+    def test_the_reason_is_kept_where_it_can_be_read(self):
+        # A line in a log expires; what the archive is missing and why should be
+        # a thing in the repository.
+        import archive, json
+        archive.reject_event(self.tmp, "sp", "Top 8: nobody advanced from Top 16")
+        got = json.loads(archive.rejected_path(self.tmp, "sp").read_text())
+        self.assertEqual(got["reason"], "Top 8: nobody advanced from Top 16")
+
+    def test_deleting_the_record_tries_the_event_again(self):
+        import archive
+        archive.reject_event(self.tmp, "sp", "why")
+        archive.rejected_path(self.tmp, "sp").unlink()
+        self.assertEqual(archive.attempted(self.tmp), set())
+
+    def run_backfill(self, archive_root, breaks_coherence):
+        """One run of main(), building three events, one of them incoherent."""
+        import io, json, types
+        from contextlib import redirect_stdout
+        from unittest import mock
+        import run
+        root = Path(__file__).resolve().parent.parent
+        manifest = json.loads((root / "events.json").read_text())
+        good = json.loads((root / manifest["events"][0]["path"]).read_text())
+        planned = []
+
+        def fake_build_one(f, slug, posts, ended, limit):
+            planned.append(slug)
+            event = {**json.loads(json.dumps(good)), "event": slug, "updated": ended}
+            if slug == breaks_coherence:
+                cut = [r for r in event["formats"][0]["rounds"] if r["phase"] == "Top cut"]
+                cut[0]["pairings"] = cut[0]["pairings"][:3]
+            return (event, [], [])
+
+        def plan(entries, done, backfill):
+            return [(s, [{"kind": "pairings"}], f"2026-0{i}-01")
+                    for i, s in enumerate(("e1", "e2", "e3"), start=1) if s not in done]
+
+        log = io.StringIO()
+        argv = ["run.py", "--cache", f"{self.tmp}/cache", "--archive", str(archive_root),
+                "--manifest", f"{self.tmp}/events.json"]
+        with mock.patch.object(sys, "argv", argv), \
+             mock.patch.object(run, "Fetcher",
+                               lambda **kw: types.SimpleNamespace(get=lambda u, **k: "<urlset/>")), \
+             mock.patch.object(run, "plan", plan), \
+             mock.patch.object(run, "parse_sitemap_index", lambda x: []), \
+             mock.patch.object(run, "build_one", fake_build_one), \
+             redirect_stdout(log):
+            run.main()
+        return planned, log.getvalue()
+
+    def test_the_scraper_records_what_it_rejected(self):
+        # Tested through main(), not through the archive functions alone: the
+        # memory only works if the run actually writes to it, and a helper
+        # nothing calls is how this whole sequence of failures started.
+        import archive
+        root = self.tmp / "events"
+        self.run_backfill(root, breaks_coherence="e2")
+        self.assertEqual(archive.scraped(root), {"e1", "e3"})
+        self.assertIn("e2", archive.attempted(root))
+
+    def test_the_next_run_does_not_spend_itself_on_the_same_failure(self):
+        # Five batches of ten landed 21 events and then stopped dead, every one
+        # of them retrying the same seven rejections before anything else.
+        root = self.tmp / "events"
+        self.run_backfill(root, breaks_coherence="e2")
+        planned, _ = self.run_backfill(root, breaks_coherence="e2")
+        self.assertEqual(planned, [], "the rejected event was picked again")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
