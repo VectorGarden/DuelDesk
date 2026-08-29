@@ -370,3 +370,46 @@ test('a year group is as tall as the events in it', async (t) => {
       'a year group scrolls independently of the list');
   }
 });
+
+/* ---- searching by initials --------------------------------------------- */
+
+test('a qualifier is found by the initials its coverage uses', async (t) => {
+  // The blog's own posts call the 2026 event NAWCQ throughout, and neither its
+  // name nor its slug contains that word.
+  const page = await loadPage(archive());
+  t.after(() => page.close());
+  open(page);
+  type(page, 'nawcq');
+  assert.deepEqual(shown(page), ['2026-north-america-wcq', '2018-north-america-wcq']);
+});
+
+test('the initials keep an abbreviation whole', async (t) => {
+  // N + A + WCQ, not N + A + W. The first letter of every word gives "naw",
+  // and then the thing people actually type finds nothing.
+  const page = await loadPage(archive());
+  t.after(() => page.close());
+  assert.equal(page.run(`initials('North America WCQ 2026')`), 'nawcq');
+  assert.equal(page.run(`initials('TEAM YCS Las Vegas')`), 'teamycslv');
+});
+
+test('a year in the name is not an initial', async (t) => {
+  const page = await loadPage(archive());
+  t.after(() => page.close());
+  assert.equal(page.run(`initials('South America WCQ 2015')`), 'sawcq');
+});
+
+test('initials narrow with the year like anything else', async (t) => {
+  const page = await loadPage(archive());
+  t.after(() => page.close());
+  open(page);
+  type(page, 'nawcq 2018');
+  assert.deepEqual(shown(page), ['2018-north-america-wcq']);
+});
+
+test('an event with no initials worth typing is still found by name', async (t) => {
+  const page = await loadPage(archive());
+  t.after(() => page.close());
+  open(page);
+  type(page, 'santiago');
+  assert.deepEqual(shown(page), ['201603-santiago-chile']);
+});
