@@ -1328,7 +1328,7 @@ class TestProvenanceCheck(unittest.TestCase):
             cut[0]["pairings"] = (cut[0]["pairings"] or [])[:3]
         code, out = self.check(three)
         self.assertEqual(code, 1)
-        self.assertIn("power of two", out)
+        self.assertIn("does not divide 8 into equal sides", out)
 
     def test_a_duelist_paired_against_themselves_is_always_rejected(self):
         def mirror(d):
@@ -2560,7 +2560,7 @@ class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertEqual({e["slug"] for e in manifest["events"]}, {"e1", "e2"})
         self.assertIn("REJECTED e3", log)
-        self.assertIn("power of two", log)
+        self.assertIn("does not divide 8 into equal sides", log)
 
     def test_the_newest_event_failing_fails_the_run(self):
         # It is what the feed is titled after and what a scheduled run exists to
@@ -2668,6 +2668,135 @@ class TestASideEventIsNotATournament(unittest.TestCase):
                  PAIR_HEAD, [["1", "Cy", "Gamma", "vs.", "Di", "Delta"]]),
             *self.genesys_features())["formats"]
         self.assertEqual({f["format"] for f in formats}, {"Advanced", "Genesys"})
+
+
+class TestATeamBracketIsStillABracket(unittest.TestCase):
+    """A Team YCS enters three Duelists a side.
+
+    Its Top 8 is eight teams playing four matches of three duels, listed
+    individually: twelve rows. Requiring a power of two rejected TEAM YCS Las
+    Vegas outright -- three events, over brackets that were perfectly well
+    formed.
+    """
+
+    CHECKER = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
+
+    def check(self, cut):
+        """cut: [(label, matches)]. Returns (exit code, output)."""
+        import json, subprocess, tempfile
+        pair = lambda i: {"table": i, "a": f"A{i}", "aRec": None, "aDeck": None,
+                          "b": f"B{i}", "bRec": None, "bDeck": None}
+        rounds, n = [], 0
+        for label, matches in cut:
+            n += 1
+            rounds.append({"id": label.replace(" ", ""), "label": label,
+                           "phase": "Top cut", "state": "done", "order": 100 + n,
+                           "standingsAfter": 1, "pairings": [pair(i) for i in range(matches)],
+                           "standings": [], "source": "https://x/"})
+        data = {"event": "TEAM YCS Las Vegas", "sample": False, "coverageBy": "Konami",
+                "drawsPossible": False, "updated": "2026-04-19", "ongoing": False,
+                "formats": [{"format": None, "swissRounds": 1, "duelists": 389,
+                             "rounds": [{"id": "1", "label": "R1", "phase": "Swiss",
+                                         "state": "done", "order": 1, "pairings": [pair(0)],
+                                         "standings": [], "source": "https://x/"}] + rounds}]}
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
+            json.dump(data, fh)
+            path = fh.name
+        done = subprocess.run(["python3", str(self.CHECKER), path],
+                              capture_output=True, text=True)
+        return done.returncode, done.stdout
+
+    def test_three_duelists_a_side_is_a_valid_bracket(self):
+        code, out = self.check([("Top 8", 12), ("Top 4", 6), ("Final", 3)])
+        self.assertEqual(code, 0, out)
+
+    def test_one_duelist_a_side_still_is_too(self):
+        code, out = self.check([("Top 8", 4), ("Top 4", 2), ("Final", 1)])
+        self.assertEqual(code, 0, out)
+
+    def test_a_bracket_that_changes_its_mind_is_rejected(self):
+        # Twelve in the Top 8 and two in the Top 4 is not a team event playing
+        # fewer duels; it is a round that lost rows.
+        code, out = self.check([("Top 8", 12), ("Top 4", 2), ("Final", 3)])
+        self.assertEqual(code, 1)
+        self.assertIn("disagree on how many Duelists a side", out)
+
+    def test_a_round_that_does_not_divide_evenly_is_rejected(self):
+        code, out = self.check([("Top 8", 5)])
+        self.assertEqual(code, 1)
+        self.assertIn("does not divide 8 into equal sides", out)
+
+    def test_the_width_is_read_from_the_label(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("checker", self.CHECKER)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        self.assertEqual(mod.bracket_width("Top 64"), 64)
+        self.assertEqual(mod.bracket_width("Final"), 2)
+        # The blog writes the last two stages by name as well, and the builder
+        # already treats those as the same stages.
+        self.assertEqual(mod.bracket_width("Semifinals"), 4)
+        self.assertEqual(mod.bracket_width("Quarterfinals"), 8)
+        self.assertIsNone(mod.bracket_width("R7"))
+
+
+class TestTeamEventsAreNotPublishedYet(unittest.TestCase):
+    """Better absent than wrong.
+
+    A Team YCS publishes one standings row per team, with the members inside
+    it: "Road of the King: Yacine S., Francisco O., Patrick H.". Read as a
+    Duelist that is 389 "Duelists" that are teams, under a name the comma rule
+    mangles -- it is written to turn "Gouge, Justin" into "Justin Gouge".
+    """
+
+    def standings(self, *names):
+        return _src("https://x/s1/", "TEAM YCS Las Vegas: Standings After Round 11",
+                    ["Rank", "Player Name"],
+                    [[str(i + 1), n] for i, n in enumerate(names)])
+
+    def test_team_entries_are_recognised(self):
+        from build import entered_as_teams
+        self.assertTrue(entered_as_teams([self.standings(
+            "Road of the King: Yacine S., Francisco O., Patrick H.",
+            "Ares: Kevin R., Matthieu B., Pierre B.",
+            "Neal 4 Papa: Cameron N., Cristian U., Antonio P.")]))
+
+    def test_ordinary_standings_are_not(self):
+        from build import entered_as_teams
+        self.assertFalse(entered_as_teams([self.standings(
+            "Francisco Andres Osorio Bobadilla", "Julien Leo Kehon",
+            "Gouge, Justin Matthew")]))
+
+    def test_an_event_with_no_standings_is_not_assumed_to_be_teams(self):
+        from build import entered_as_teams
+        self.assertFalse(entered_as_teams([]))
+
+    def test_a_team_event_is_reported_rather_than_built(self):
+        import io
+        from contextlib import redirect_stdout
+        import run
+        sources = [self.standings("Ares: Kevin R., Matthieu B., Pierre B.",
+                                  "Lazy Dog: A. B., C. D., E. F.")]
+        with redirect_stdout(io.StringIO()):
+            event, posts, lines = run.build_one(
+                _StubFetcher(sources), "2026-04-team-ycs-las-vegas",
+                [{"kind": "standings", "url": "https://x/s1/", "lastmod": "2026-04-19",
+                  "slug": "s1"}], "2026-04-19", 200)
+        self.assertEqual(event, {})
+        self.assertIn("team event", "\n".join(lines))
+
+
+class _StubFetcher:
+    """Hands build_one the sources it would otherwise have parsed off the wire."""
+
+    def __init__(self, sources):
+        self._sources = {s.url: s for s in sources}
+
+    def get(self, url, **kw):
+        return _page("TEAM YCS Las Vegas: Standings After Round 11",
+                     ["Rank", "Player Name"],
+                     [[str(i + 1), r["name"]] for i, r in
+                      enumerate(self._sources[url].post.table.rows)])
 
 
 if __name__ == "__main__":

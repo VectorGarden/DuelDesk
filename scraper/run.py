@@ -20,7 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import archive                                            # noqa: E402
-from build import Source, build_event                     # noqa: E402
+from build import Source, build_event, entered_as_teams   # noqa: E402
 from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
                    parse_lastmod)
@@ -164,6 +164,17 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
                               posted=p.get("modified") or p["lastmod"]))
     if not sources:
         return {}, [], [f"### `{slug}` — nothing could be fetched", ""]
+
+    if entered_as_teams(sources):
+        # Not yet. A Team YCS enters three Duelists a side: its standings list
+        # teams under names the parser mangles, and its Swiss pairings use a
+        # layout with no vs. column that does not parse at all. Published as it
+        # stands that is 389 "Duelists" that are teams and one Swiss round of
+        # twelve. Better absent than wrong, and said out loud so it is a job
+        # rather than a silence.
+        return {}, [], [f"### {slug} — **not published: a team event**", "",
+                        "- Its standings list teams, not Duelists, and its Swiss"
+                        " pairings use a layout the parser does not read.", ""]
 
     draws_possible = date.fromisoformat(ended) < DRAWS_ABOLISHED
     # The slug is the last resort, not the first: it renders 2026-08-quebec as

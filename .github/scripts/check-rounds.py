@@ -10,8 +10,28 @@ round data is that records add up. A generator bug that produced an 11-0
 Duelist in round 3 would look plausible in a screenshot and be nonsense.
 """
 import json
+import re
 import sys
 from pathlib import Path
+
+
+def bracket_width(label):
+    """How many competitors a cut round holds, from its label.
+
+    "Top 8" is eight of them. The blog also writes the last two stages by name,
+    and cut_rank in the builder treats those as the same stages, so this does
+    too. None for a label that names no stage at all.
+    """
+    low = label.lower()
+    if m := re.search(r"top\s*(\d+)", low):
+        return int(m.group(1))
+    if "semi" in low:
+        return 4
+    if "quarter" in low:
+        return 8
+    if re.search(r"\bfinals?\b", low):
+        return 2
+    return None
 
 
 def matches_played(record):
@@ -131,20 +151,33 @@ def check_rounds(label, rounds, swiss_count):
             problems.append(f"{label}: {len(swiss)} Swiss rounds but swissRounds says {swiss_count}")
 
     played_cut = [r for r in cut if r.get("state") != "upcoming"]
+    sides: dict[str, int] = {}          # round -> Duelists a side, see below
     for r in played_cut:
         if isinstance(swiss_count, int) and r.get("standingsAfter") != swiss_count:
             problems.append(f"{label} {r['label']}: standingsAfter is {r.get('standingsAfter')}, "
                             f"expected the final Swiss standings ({swiss_count})")
-        # Only where there are pairings to count. A bracket halves, so 3 matches
-        # in a Top 8 is a parse that lost a row -- but no matches at all means
-        # the blog published a feature match from that round and nothing else,
-        # which is thin coverage of a real round rather than a broken bracket.
-        # The same reasoning as the rule above that lets a feature match stand
-        # in for a round; this one had not been given it, and rejected a whole
-        # backfill batch over a Top 8 nobody published pairings for.
+        # The bracket's shape, read from the round's own label rather than
+        # assumed. A round called Top N holds N competitors playing N/2 matches,
+        # so the rows per match fall out of it -- and that is what varies.
+        #
+        # A Team YCS pairs three Duelists a side and lists them individually, so
+        # its Top 8 is eight teams playing four matches of three duels: twelve
+        # rows. Requiring a power of two rejected TEAM YCS Las Vegas outright
+        # over a bracket that was perfectly well formed.
+        #
+        # Skipped where there are no pairings at all: that is a round the blog
+        # covered with a feature match and nothing else.
         n = len(r.get("pairings") or [])
-        if n and (n & (n - 1)) != 0:
-            problems.append(f"{label} {r['label']}: {n} matches is not a power of two")
+        if not n:
+            continue
+        competitors = bracket_width(r["label"])
+        if competitors is None:
+            problems.append(f"{label} {r['label']}: not a round of a bracket")
+        elif (n * 2) % competitors:
+            problems.append(f"{label} {r['label']}: {n} matches does not divide "
+                            f"{competitors} into equal sides")
+        else:
+            sides[r["label"]] = n * 2 // competitors
 
     if isinstance(swiss_count, int):
         for depth, r in enumerate(played_cut):
@@ -161,6 +194,13 @@ def check_rounds(label, rounds, swiss_count):
                         problems.append(f"{label} {r['label']}: {p.get(who)} shows "
                                         f"{fmt_record(rec)} ({played} matches), "
                                         f"expected {swiss_count + depth}")
+
+    # One number for the whole bracket. Derived per round above, so a round that
+    # lost rows shows up as the one disagreeing with the rest rather than being
+    # waved through by a rule loose enough to accept a team event.
+    if len(set(sides.values())) > 1:
+        problems.append(f"{label}: rounds disagree on how many Duelists a side: "
+                        + ", ".join(f"{k} says {v}" for k, v in sorted(sides.items())))
 
     # Advancement, between consecutive cut rounds that both published pairings.
     # A round covered only by a feature match names nobody, and "nobody advanced
