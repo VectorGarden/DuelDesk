@@ -83,12 +83,16 @@ jobs:
         working-directory: _site
         run: python3 ../.github/scripts/check-references.py index.html
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      # v4 stopped putting dotfiles in the artifact unless include-hidden-files
+      # is set. stage-site.sh stages an explicit include list and none of it is
+      # hidden, so nothing is lost here -- but a dotfile added to that list (a
+      # .nojekyll, say) would need the input turned on to reach the site.
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
       # Closes the loop. Everything above proves the code is good and the
       # artifact was uploaded; only this proves the live site is serving it.
