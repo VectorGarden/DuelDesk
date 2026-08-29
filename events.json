@@ -757,6 +757,24 @@
       ]
     },
     {
+      "slug": "yu-gi-oh-tcg-world-championship-2024",
+      "event": "Yu-Gi-Oh! TCG World Championship 2024",
+      "updated": "2024-09-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/yu-gi-oh-tcg-world-championship-2024/rounds.json",
+      "postCount": 15,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 28,
+          "rounds": 9
+        }
+      ]
+    },
+    {
       "slug": "2024-08-ycs-sacramento",
       "event": "YCS Sacramento",
       "updated": "2024-08-20",
@@ -770,6 +788,42 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 975,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2024-north-america-wcq",
+      "event": "North America WCQ 2024",
+      "updated": "2024-07-22",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-north-america-wcq/rounds.json",
+      "postCount": 40,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2639,
+          "rounds": 17
+        }
+      ]
+    },
+    {
+      "slug": "2024-south-america-wcq",
+      "event": "South America WCQ 2024",
+      "updated": "2024-06-30",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-south-america-wcq/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 505,
           "rounds": 15
         }
       ]
@@ -793,6 +847,99 @@
       ]
     },
     {
+      "slug": "2024-ycs-indianapolis",
+      "event": "YCS Indianapolis",
+      "updated": "2024-06-02",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-ycs-indianapolis/rounds.json",
+      "postCount": 27,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1620,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2024-ycs-rio-de-janeiro-brazil",
+      "event": "YCS Rio de Janeiro",
+      "location": "Rio de Janeiro, Brazil",
+      "updated": "2024-05-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-ycs-rio-de-janeiro-brazil/rounds.json",
+      "postCount": 22,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 351,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2024-ycs-raleigh",
+      "event": "YCS Raleigh",
+      "updated": "2024-04-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-ycs-raleigh/rounds.json",
+      "postCount": 30,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1637,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2024-ycs-guadalajara-mexico",
+      "event": "YCS Guadalajara",
+      "location": "Guadalajara, Mexico",
+      "updated": "2024-04-14",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-ycs-guadalajara-mexico/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 832,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2024-ycs-medellin-colombia",
+      "event": "YCS Medellin",
+      "location": "Medellin, Colombia",
+      "updated": "2024-03-31",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-ycs-medellin-colombia/rounds.json",
+      "postCount": 21,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 454,
+          "rounds": 12
+        }
+      ]
+    },
+    {
       "slug": "2024-02-team-ycs-las-vegas-nv",
       "event": "TEAM YCS Las Vegas",
       "updated": "2024-02-28",
@@ -807,6 +954,43 @@
           "swissRounds": 10,
           "duelists": 510,
           "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2024-undisputed-uds-championship",
+      "event": "Undisputed UDS Championship",
+      "updated": "2024-02-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-undisputed-uds-championship/rounds.json",
+      "postCount": 16,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 16,
+          "rounds": 7
+        }
+      ]
+    },
+    {
+      "slug": "2024-team-ycs-san-jose-costa-rica",
+      "event": "TEAM YCS San Jose",
+      "location": "San Jose, Costa Rica",
+      "updated": "2024-02-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-team-ycs-san-jose-costa-rica/rounds.json",
+      "postCount": 20,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 8,
+          "duelists": 136,
+          "rounds": 11
         }
       ]
     },
