@@ -306,13 +306,33 @@ def parse_table(doc: str) -> Table | None:
 
 
 def parse_post(doc: str, url: str = "") -> Post:
+    """Read one post.
+
+    The kind is taken from the title and the URL, and where those disagree with
+    the table on the page, the table wins. Konami published YCS Anaheim's
+    standings under the slug ycs-anaheim-round-12-pairings -- the page is headed
+    "YCS Anaheim: Standings After Round 11" and holds a standings table, and
+    only the slug says otherwise. Read as pairings it was a post whose every
+    row was missing the columns pairings have, which is how a whole backfill
+    came down.
+
+    Narrow on purpose. Only between pairings and standings, only when both the
+    text and the table are confident, and only when they contradict each other:
+    a news post quoting a table is still news. The round is read afterwards,
+    because "Final Standings" means something different once the post is known
+    to be standings.
+    """
     title = page_title(doc)
     basis = f"{title} {url}"
+    table = parse_table(doc)
     kind = detect_kind(basis)
+    if (table and kind in ("pairings", "standings")
+            and table.kind in ("pairings", "standings") and table.kind != kind):
+        kind = table.kind
     return Post(
         title=title,
         kind=kind,
         fmt=detect_format(basis),
         round=detect_round(basis, kind),
-        table=parse_table(doc),
+        table=table,
     )

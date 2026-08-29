@@ -503,6 +503,21 @@ def build_format(name: str | None, sources: list[Source], *,
     return {"format": name, "swissRounds": swiss_count, "duelists": field, "rounds": rounds}
 
 
+def is_tournament(fmt: dict) -> bool:
+    """Whether a built format is a tournament, or only coverage of one.
+
+    YCS Anaheim's eight Genesys posts are two feature matches, some news and a
+    winner, covering a Genesys Invitational held alongside the main event. They
+    name a Top 8, so a Top 8 round was built -- with no matches in it, in a
+    format with no Duelists and no Swiss rounds. check-rounds.py rejected the
+    file, correctly: a cut round of nought matches is not a bracket.
+
+    Coverage of a side event is still coverage and stays in the feed. What it
+    is not is a tournament the round track can show.
+    """
+    return any(r["pairings"] or r["standings"] for r in fmt["rounds"])
+
+
 def build_event(event: str, sources: list[Source], *,
                 coverage_by: str = "Konami",
                 draws_possible: bool = False, updated: str | None = None,
@@ -530,8 +545,9 @@ def build_event(event: str, sources: list[Source], *,
         loose = []
 
     formats = [f for f in (build_format(name, group, ongoing=ongoing)
-                           for name, group in sorted(by_format.items())) if f]
-    if loose and (only := build_format(None, loose, ongoing=ongoing)):
+                           for name, group in sorted(by_format.items()))
+               if f and is_tournament(f)]
+    if loose and (only := build_format(None, loose, ongoing=ongoing)) and is_tournament(only):
         formats.append(only)
     return {
         "event": event,

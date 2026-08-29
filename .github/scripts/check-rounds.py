@@ -135,8 +135,15 @@ def check_rounds(label, rounds, swiss_count):
         if isinstance(swiss_count, int) and r.get("standingsAfter") != swiss_count:
             problems.append(f"{label} {r['label']}: standingsAfter is {r.get('standingsAfter')}, "
                             f"expected the final Swiss standings ({swiss_count})")
+        # Only where there are pairings to count. A bracket halves, so 3 matches
+        # in a Top 8 is a parse that lost a row -- but no matches at all means
+        # the blog published a feature match from that round and nothing else,
+        # which is thin coverage of a real round rather than a broken bracket.
+        # The same reasoning as the rule above that lets a feature match stand
+        # in for a round; this one had not been given it, and rejected a whole
+        # backfill batch over a Top 8 nobody published pairings for.
         n = len(r.get("pairings") or [])
-        if n == 0 or (n & (n - 1)) != 0:
+        if n and (n & (n - 1)) != 0:
             problems.append(f"{label} {r['label']}: {n} matches is not a power of two")
 
     if isinstance(swiss_count, int):
@@ -155,12 +162,20 @@ def check_rounds(label, rounds, swiss_count):
                                         f"{fmt_record(rec)} ({played} matches), "
                                         f"expected {swiss_count + depth}")
 
+    # Advancement, between consecutive cut rounds that both published pairings.
+    # A round covered only by a feature match names nobody, and "nobody advanced
+    # out of the Top 4" is a fact about the coverage, not about the bracket --
+    # Konami covered YCS Montreal's as far as the Top 4 and stopped, and older
+    # events stop earlier. Checking it anyway rejected whole events over the one
+    # round nobody published.
     for earlier, later in zip(played_cut, played_cut[1:]):
+        if not (earlier.get("pairings") and later.get("pairings")):
+            continue
         before = {}
-        for p in earlier.get("pairings") or []:
+        for p in earlier["pairings"]:
             before[p.get("a")] = p.get("aRec")
             before[p.get("b")] = p.get("bRec")
-        after_names = {n for p in later.get("pairings") or [] for n in (p.get("a"), p.get("b"))}
+        after_names = {n for p in later["pairings"] for n in (p.get("a"), p.get("b"))}
         stray = sorted(after_names - set(before))
         if stray:
             problems.append(f"{label} {later['label']}: {stray} did not play in {earlier['label']}")
