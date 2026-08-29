@@ -138,6 +138,81 @@ def event_name(titles: list[str], fallback: str) -> str:
     return _from_opening_words(titles, fallback)
 
 
+# The regional qualifiers are written every way there is. The blog calls the
+# North American one "NAWCQ", "North America WCQ" and "North American WCQ", and
+# there is one of each every year, so the name has to carry the year to identify
+# the event at all -- five of them sit in the archive under names that differ
+# only in spelling.
+_REGIONS = ((r"\bnawcq\b|\bnorth american?\b", "North America"),
+            (r"\bcentral american?\b", "Central America"),
+            (r"\bsouth american?\b", "South America"))
+_IS_WCQ = re.compile(r"\bn?wcq\b|world championship qualifier", re.I)
+_YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
+
+# Words that say what kind of event this is rather than where it was. A slug
+# holding none of them is a place, and a place on this blog is a YCS.
+_EVENT_WORDS = {"ycs", "wcq", "nawcq", "uds", "sjc", "ygoc", "team", "remote",
+                "duel", "invitational", "championship", "championships",
+                "qualifier", "qualifiers", "regional", "series", "event",
+                "genesys", "advanced"}
+
+
+def _year(slug: str, ended: str | None) -> str | None:
+    """The year the event was held.
+
+    The slug first, because it is the event's own name for itself: the 2013
+    South American WCQ has coverage edited into 2014, and it is not the 2014
+    one -- there was a 2014 one.
+    """
+    m = _YEAR.search(slug)
+    return m.group(0) if m else ((ended or "")[:4] or None)
+
+
+def wcq_name(slug: str, name: str, ended: str | None) -> str | None:
+    """"North America WCQ 2026" for a regional qualifier, or None."""
+    text = f"{slug} {name}".replace("-", " ").lower()
+    if not _IS_WCQ.search(text):
+        return None
+    for pattern, region in _REGIONS:
+        if re.search(pattern, text):
+            year = _year(slug, ended)
+            return f"{region} WCQ {year}" if year else f"{region} WCQ"
+    return None
+
+
+def place_name(slug: str) -> str | None:
+    """"YCS Monterrey" for a slug that names a place and nothing else.
+
+    Only reached when the coverage agreed on no name of its own, so this is the
+    last thing tried before falling back to the slug title-cased, which is how
+    "11 10 Columbus" and "201504 Bogota D C Colombia" came to be the labels in
+    the event list.
+
+    A place on this blog is a YCS. Nothing else is assumed: a slug carrying any
+    word about what kind of event it was is left alone, because that word is
+    more information than this guess.
+    """
+    tokens = [t for t in re.split(r"[^a-z0-9]+", slug.lower()) if t]
+    # Digits are the date, and single letters are administrative -- the D and C
+    # of "bogota-d-c-colombia" are Distrito Capital, not part of the city.
+    place = [t for t in tokens if not t.isdigit() and len(t) > 1]
+    if not place or any(t in _EVENT_WORDS for t in place):
+        return None
+    return "YCS " + " ".join(t.title() for t in place)
+
+
+def canonical_name(name: str, slug: str, ended: str | None, *,
+                   named: bool = True) -> str:
+    """The event's name, settled.
+
+    `named` says whether the coverage agreed on `name` or it is the slug
+    title-cased. A qualifier is renamed either way -- the blog's own "NAWCQ" is
+    a name, and not one that says which year's -- while a place is only guessed
+    at when there was nothing to go on.
+    """
+    return wcq_name(slug, name, ended) or (None if named else place_name(slug)) or name
+
+
 def clock(stamp: str | None) -> str | None:
     """'2026-08-16T11:07:30-07:00' -> '11:07'. Anything else is passed through.
 

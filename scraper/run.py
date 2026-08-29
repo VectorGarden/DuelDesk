@@ -27,7 +27,7 @@ from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
 from index import (assign_events, event_profiles, parse_post_sitemap,  # noqa: E402
                    parse_sitemap_index)
 from feed import build_feed                              # noqa: E402
-from naming import event_name                            # noqa: E402
+from naming import canonical_name, event_name            # noqa: E402
 from parse import detect_kind, parse_post                 # noqa: E402
 
 # Ties were removed from tournament policy on this date.
@@ -168,7 +168,14 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     draws_possible = date.fromisoformat(ended) < DRAWS_ABOLISHED
     # The slug is the last resort, not the first: it renders 2026-08-quebec as
     # "2026 08 Quebec" while every post it covers is titled "YCS Montreal".
-    name = event_name([s.post.title for s in sources], slug.replace("-", " ").title())
+    fallback = slug.replace("-", " ").title()
+    name = event_name([s.post.title for s in sources], fallback)
+    # Then settled: a regional qualifier is named for its region and year
+    # whatever its coverage called it, and a slug that names only a place is a
+    # YCS. Eighteen of the archive's fifty-one events were listed under a name
+    # that did not identify them -- five WCQs spelled five ways, and labels like
+    # "11 10 Columbus".
+    name = canonical_name(name, slug, ended, named=name != fallback)
     # Whether a round may be shown as in progress. Read from the coverage rather
     # than assumed: the newest post of a finished event is days old.
     newest = max((parse_lastmod(s.posted) for s in sources if s.posted),
