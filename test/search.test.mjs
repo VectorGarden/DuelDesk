@@ -342,3 +342,31 @@ test('an undated event still has somewhere to sit', async (t) => {
     page.$$('#event-list [role="group"]').map((g) => g.getAttribute('aria-label')),
     ['2026', 'Undated']);
 });
+
+test('the panel styles do not reach the lists inside it', async (t) => {
+  // ".picker ul" matched every list, not just the dropdown, so all thirteen
+  // year groups were absolutely positioned at the same spot and stacked on each
+  // other. The list showed a column of years with one event under the last.
+  const page = await loadPage(archive());
+  t.after(() => page.close());
+  open(page);
+  const position = (el) => page.window.getComputedStyle(el).position;
+  assert.equal(position(page.$('#event-list')), 'absolute',
+    'the panel is the thing that floats over the page');
+  for (const inner of page.$$('#event-list ul')) {
+    assert.notEqual(position(inner), 'absolute',
+      'a year group floated out of the list it belongs to');
+  }
+});
+
+test('a year group is as tall as the events in it', async (t) => {
+  // The symptom of the same fault, from the other side: torn out of the flow,
+  // a group collapsed to the height of its own label.
+  const page = await loadPage(archive());
+  t.after(() => page.close());
+  open(page);
+  for (const group of page.$$('#event-list [role="group"]')) {
+    assert.equal(page.window.getComputedStyle(group.querySelector('ul')).overflowY, '',
+      'a year group scrolls independently of the list');
+  }
+});

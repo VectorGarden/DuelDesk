@@ -138,13 +138,27 @@ a{color:inherit}
 .picker input{
   font:500 .82rem var(--body); color:var(--text); background:var(--surface-2);
   border:1px solid var(--line); border-radius:var(--r-md);
-  padding:.4rem .7rem; min-height:40px; width:min(22rem,60vw);
+  padding:.4rem 1.9rem .4rem .7rem; min-height:40px; width:min(22rem,60vw);
+  /* A chevron, so the box reads as something that opens rather than as another
+     search field -- the one in the header is the other kind, and this replaced
+     a select that had one. Drawn rather than linked: a CSS strict enough to
+     forbid remote images is the same one that keeps this page self-contained. */
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),
+                   linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-size:5px 5px,5px 5px;
+  background-position:calc(100% - 1.05rem) 55%,calc(100% - .7rem) 55%;
+  background-repeat:no-repeat;
 }
 .picker input::placeholder{color:var(--text-3)}
 .picker input:focus-visible{outline:2px solid var(--gold); outline-offset:2px}
 /* Over the page rather than in it: opening the list must not move the heading
-   it sits above. */
-.picker ul{
+   it sits above.
+
+   Selected by its role, not by being a ul. Each year group holds a list of its
+   own, and ".picker ul" styled those too -- thirteen panels absolutely
+   positioned at the same place, stacked on each other, so the list showed a
+   column of years with one event under the last of them. */
+.picker ul[role="listbox"]{
   position:absolute; z-index:20; top:calc(100% + .3rem); right:0;
   width:min(26rem,80vw); max-height:min(60vh,22rem); overflow-y:auto;
   margin:0; padding:.25rem; list-style:none;
@@ -156,7 +170,8 @@ a{color:inherit}
   display:flex; gap:.6rem; align-items:baseline; justify-content:space-between;
   padding:.45rem .6rem; border-radius:calc(var(--r-md) - 2px); cursor:pointer;
 }
-.picker ul ul{margin:0; padding:0; list-style:none}
+.picker ul[role="presentation"]{margin:0; padding:0; list-style:none}
+.picker li[role="group"]{list-style:none}
 /* Sticky so the year stays legible while a long archive scrolls under it. */
 .picker__year{
   position:sticky; top:0; display:block; z-index:1;
