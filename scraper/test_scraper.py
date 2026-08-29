@@ -763,6 +763,60 @@ class TestEventNaming(unittest.TestCase):
     def test_titles_without_a_separator_fall_back(self):
         from naming import event_name
         self.assertEqual(event_name(["No separator here"], "fallback"), "fallback")
+
+    def test_an_event_that_never_uses_a_colon_is_still_named(self):
+        from naming import event_name
+        # The 2026 North America WCQ heads its coverage "North America WCQ Round
+        # 13 Pairings", with a colon only on its feature matches -- so the
+        # convention saw a handful of unrelated headings, agreed on none of
+        # them, and the event reached the archive called "2026 North America Wcq".
+        titles = ["North America WCQ Round 13 Pairings",
+                  "North America WCQ Round 14 Pairings",
+                  "North America WCQ Standings After Round 12",
+                  "NAWCQ Round 11 Feature Match: Israel Santos vs. DaVinci Sukienik"]
+        self.assertEqual(event_name(titles, "2026 North America Wcq"),
+                         "North America WCQ")
+
+    def test_the_longer_of_two_equally_supported_openings_wins(self):
+        from naming import event_name
+        # Every one of those titles also begins with "North", which is not what
+        # the event is called. Same support, so the longer one is free.
+        titles = ["North America WCQ Round 13 Pairings",
+                  "North America WCQ Round 14 Pairings",
+                  "North America WCQ Standings After Round 12"]
+        self.assertEqual(event_name(titles, "fallback"), "North America WCQ")
+
+    def test_one_post_cannot_name_an_event_after_itself(self):
+        from naming import event_name
+        # Every prefix of a lone title has 100% support, so the share alone is
+        # not a threshold at all. It nearly named the 2026 North America WCQ
+        # "NAWCQ Round 11 Feature Match", after the single post there that used
+        # a colon.
+        self.assertEqual(event_name(["Doors open at 9am"], "fallback"), "fallback")
+        self.assertEqual(
+            event_name(["North America WCQ Round 13 Pairings",
+                        "North America WCQ Round 14 Pairings",
+                        "NAWCQ Round 11 Feature Match: Israel Santos vs. DaVinci Sukienik"],
+                       "fallback"),
+            "North America WCQ", "one colon title must not outvote the coverage")
+
+    def test_a_minority_opening_is_not_the_events_name(self):
+        from naming import event_name
+        # No convention and no consensus either: three pairs of posts that
+        # happen to open alike. The most common of them is still only a third of
+        # the coverage, which is not an event naming itself -- the slug is the
+        # honest answer.
+        titles = ["Doors open at 9am", "Doors open at 10am",
+                  "Welcome to the venue", "Welcome to day two",
+                  "Prize wall restocked", "Prize wall sold out"]
+        self.assertEqual(event_name(titles, "2026 08 Quebec"), "2026 08 Quebec")
+
+    def test_a_stated_name_is_not_overridden_by_a_common_opening(self):
+        from naming import event_name
+        # The fallback is only reached when the convention gives no answer. Here
+        # it does, and "YCS" opens more titles than "YCS Montréal:" does.
+        titles = ["YCS Montréal: Round 3 Pairings"] * 4 + ["YCS Championship Series news"]
+        self.assertEqual(event_name(titles, "fallback"), "YCS Montréal")
         self.assertEqual(event_name([], "fallback"), "fallback")
 
     def test_the_posting_time_is_shown_as_published(self):
