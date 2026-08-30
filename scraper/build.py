@@ -195,7 +195,8 @@ def disambiguate(sources: list[Source]) -> tuple[set[str], set[str]]:
 
 
 def build_format(name: str | None, sources: list[Source], *,
-                 ongoing: bool = False, announcements: list[Source] = ()) -> dict | None:
+                 ongoing: bool = False, announcements: list[Source] = (),
+                 event_date: str | None = None) -> dict | None:
     """Assemble one format's tournament.
 
     `name` is None for an event that runs a single tournament and never names a
@@ -294,6 +295,26 @@ def build_format(name: str | None, sources: list[Source], *,
         return ([by_round[k]["pairings"].post.table.rows for k in keys],
                 [k[1] for k in keys])
 
+    def standings_run(limit: int) -> tuple[list[list[dict]], int]:
+        """The unbroken run of standings tables ending at `limit`, and where it
+        starts.
+
+        Consecutive is the whole requirement: each round-on-round move in a
+        player's points is one match, and a missing round leaves a gap nobody
+        can attribute. The run is taken backwards from the round being reported
+        so it always reaches it, and it stops at the first round the blog did
+        not publish -- which is usually round one, whose table would say only
+        that everybody has either three points or none.
+        """
+        published = {k[1]: by_round[k]["standings"].post.table.rows
+                     for k in swiss_keys if "standings" in by_round[k]}
+        if limit not in published:
+            return [], 0
+        first = limit
+        while (first - 1) in published:
+            first -= 1
+        return [published[n] for n in range(first, limit + 1)], first
+
     # Filled by the last Swiss round as it is built, then read by the cut rounds
     # that follow it. swiss_keys sorts before cut_keys, so it is always populated
     # before anything needs it -- but default to empty rather than rely on that,
@@ -379,8 +400,16 @@ def build_format(name: str | None, sources: list[Source], *,
                 # "standings after round 9" table it would credit a player who
                 # went on to round 11 with two rounds they had not yet played.
                 table = [{**r, **statuses.get(r["name"], {})} for r in table]
+            # Before the ties were abolished, points alone cannot separate one
+            # win from three draws -- so the date is stated, and where it says
+            # draws were possible the only sound reading is the round-on-round
+            # one. Without the date every event was derived as if ties had never
+            # existed, which left 34,030 records claiming a whole number of wins
+            # their own points contradict.
+            series, series_from = standings_run(through)
             recs = derive(table, window, round_numbers=window_rounds,
-                          ambiguous=ambiguous)
+                          ambiguous=ambiguous, event_date=event_date,
+                          standings_series=series, series_from=series_from)
 
             # Losses are only sound when we hold the pairings for every round
             # the table covers. Reading the last round paired shrugs off a gap
@@ -394,7 +423,12 @@ def build_format(name: str | None, sources: list[Source], *,
                 # those records survive a gap that would sink counted ones.
                 stated = {r["name"] for r in table if r.get("status")}
                 for r in recs:
-                    if r.name not in stated:
+                    # Only the records that counted appearances to get their
+                    # losses. One read round on round from the standings does
+                    # not depend on the pairings at all, and one that already
+                    # knows nothing must not be promoted to knowing half.
+                    if (r.confidence == "derived" and not r.from_series
+                            and r.name not in stated):
                         r.losses, r.confidence = None, "partial"
             by_name = {r.name: r for r in recs}
             for row in standings_post.post.table.rows:
@@ -662,11 +696,16 @@ def build_event(event: str, sources: list[Source], *,
     if unassigned:
         loose = []
 
+    # The day the event ran, which is what says whether ties were still policy.
+    # `updated` is the end of its coverage, which is the same day or the one
+    # after -- close enough for a rule that changed once, in 2025.
+    on = (updated or "")[:10] or None
     formats = [f for f in (build_format(name, group, ongoing=ongoing,
-                                        announcements=announcements)
+                                        announcements=announcements, event_date=on)
                            for name, group in sorted(by_format.items()))
                if f and is_tournament(f)]
-    if loose and (only := build_format(None, loose, ongoing=ongoing)) and is_tournament(only):
+    if loose and (only := build_format(None, loose, ongoing=ongoing,
+                                       event_date=on)) and is_tournament(only):
         formats.append(only)
     return {
         "event": event,
