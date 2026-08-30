@@ -2230,6 +2230,30 @@ class TestRecordsKnowWhenTiesWereStillPolicy(unittest.TestCase):
         self.assertEqual(ada["record"],
                          {"wins": 2, "losses": 0, "draws": 1, "confidence": "derived"})
 
+    def test_a_record_that_does_not_add_up_to_its_row_is_not_claimed(self):
+        # The series and the table are two different documents. A cut round is
+        # handed the final standings rather than the table the series ends on,
+        # and at the 250th YCS those disagree by a win: the series read a
+        # Duelist 10-2-0 off a table saying 30 points, and the row it landed in
+        # said 27. Forty-one rows came out reading "27 points, 10 wins".
+        from records import derive
+        series = [[{"name": "Ada Lovelace", "points": 6}],
+                  [{"name": "Ada Lovelace", "points": 9}]]
+        # The series says 3-0-0. The row says 6 points, which is two wins.
+        got = derive([{"name": "Ada Lovelace", "points": 6}], [],
+                     event_date="2023-05-28", standings_series=series, series_from=2)[0]
+        self.assertEqual(got.confidence, "unknown")
+        self.assertIsNone(got.wins)
+
+    def test_a_record_that_does_add_up_is_kept(self):
+        from records import derive
+        series = [[{"name": "Ada Lovelace", "points": 6}],
+                  [{"name": "Ada Lovelace", "points": 9}]]
+        got = derive([{"name": "Ada Lovelace", "points": 9}], [],
+                     event_date="2023-05-28", standings_series=series, series_from=2)[0]
+        self.assertEqual((got.wins, got.draws, got.losses), (3, 0, 0))
+        self.assertEqual(got.confidence, "derived")
+
     def test_no_record_contradicts_its_own_points(self):
         # The whole complaint: 3*wins + draws has to come to the points.
         fmt = self.event(on="2023-05-28", standings={

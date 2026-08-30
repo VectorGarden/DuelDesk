@@ -271,7 +271,12 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
             out.append(Record(name, points, None, None, None, None, "unknown"))
             continue
 
-        if name in exact:                       # round-by-round deltas: exact
+        if name in exact and 3 * exact[name]["wins"] + exact[name]["draws"] == points:
+            # Only where it adds up to the points on this row. The series and
+            # the table are two different documents, and a cut round is handed
+            # the final standings rather than the one the series ends on -- at
+            # the 250th YCS those disagree, and 41 rows came out reading "27
+            # points, 10 wins". A record has to describe the row it sits in.
             e = exact[name]
             out.append(Record(name, points, e["wins"], e["draws"], e["losses"],
                               e["wins"] + e["draws"] + e["losses"], "derived",
