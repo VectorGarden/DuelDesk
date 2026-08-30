@@ -234,6 +234,19 @@ def _slug_words(slug: str) -> set[str]:
     return {w for w in slug.split("-") if w and not w.isdigit()}
 
 
+def _names_the_same(prefix: str, slug: str) -> bool:
+    """Whether a post's name is the event's, or part of it.
+
+    A subset test, and the empty set is a subset of everything -- so a slug
+    with no word in it at all matched every event whose dates covered it.
+    Thirty posts are numbers and nothing else, the ids WordPress falls back to
+    when a post is published untitled, and each of them attached to whichever
+    event was asked about first.
+    """
+    words = _slug_words(prefix)
+    return bool(words) and words <= _slug_words(slug)
+
+
 def _overlaps(a: tuple[str, str], b: tuple[str, str], slack_days: int = 0) -> bool:
     """Whether two date ranges meet, the second widened by a few days.
 
@@ -321,7 +334,7 @@ def discover_events(records: list[dict], windows: dict, is_tournament,
     known: dict[str, tuple[set[str], tuple[str, str]]] = {}
     for prefix, running, span, names in found:
         host = [slug for slug, w in windows.items()
-                if _slug_words(prefix) <= _slug_words(slug)
+                if _names_the_same(prefix, slug)
                 and _overlaps(span, w, slack_days)]
         if len(host) == 1:
             event = host[0]
@@ -348,7 +361,7 @@ def discover_events(records: list[dict], windows: dict, is_tournament,
         if not (prefix := event_prefix(rec["slug"])):
             continue
         for event, (names, dates) in known.items():
-            if ((prefix in names or _slug_words(prefix) <= _slug_words(event))
+            if ((prefix in names or _names_the_same(prefix, event))
                     and _overlaps((rec["lastmod"], rec["lastmod"]), dates, slack_days)):
                 out[rec["url"]] = event
                 break
@@ -454,6 +467,27 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
             elif len(hits) > 1:
                 fmt = "genesys" if "genesys" in e.slug else ("advanced" if "advanced" in e.slug else None)
                 narrowed = [h for h in hits if fmt and fmt in h] if fmt else []
+                # Failing the format, the qualifier the post names. Two events
+                # ran on 2026-07-11 -- the North America WCQ and the Genesys
+                # Championship -- and the post announcing the WCQ's winner is
+                # headed "and-the-winner-of-the-2026-nawcq-is". It names its
+                # event as plainly as a post can; what it does not do is name a
+                # format, so the rule above had nothing to work with and the
+                # event finished with no champion.
+                #
+                # Read through the naming module, so "nawcq" and
+                # "north-america-wcq" are the one qualifier they already are
+                # everywhere else. Only qualifiers, and only where exactly one
+                # candidate answers to the name: this narrows an ambiguity, it
+                # does not resolve one by picking.
+                if len(narrowed) != 1 and (want := wcq_name(e.slug, "", e.lastmod)):
+                    named = [h for h in hits
+                             if wcq_name(h, "", windows[h][1]) == want]
+                    if len(named) == 1:
+                        narrowed = named
+                        rec["event"], rec["event_confidence"] = named[0], "date+name"
+                        out.append(rec)
+                        continue
                 if len(narrowed) == 1:
                     rec["event"], rec["event_confidence"] = narrowed[0], "date+format"
                 else:

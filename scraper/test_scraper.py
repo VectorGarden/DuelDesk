@@ -2685,6 +2685,64 @@ class TestUpcomingAgainstTheRealListing(unittest.TestCase):
             self.assertTrue(e["url"].startswith("https://www.yugioh-card.com/"), e)
 
 
+class TestTheNameBreaksTheTie(unittest.TestCase):
+    """Where a date matches two events, the qualifier the post names."""
+
+    def assigned(self, *urls):
+        rows = assign_events(parse_post_sitemap(urlset(*urls)))
+        return {r["slug"]: (r["event"], r["event_confidence"]) for r in rows}
+
+    CONCURRENT = [
+        ("2026/championships/2026-north-america-wcq/nawcq-round-1-pairings", "2026-07-11"),
+        ("2026/championships/2026-north-america-wcq/nawcq-standings-after-round-1", "2026-07-11"),
+        ("2026/championships/2026-north-america-genesys-championship/"
+         "genesys-round-1-pairings", "2026-07-11"),
+        ("2026/championships/2026-north-america-genesys-championship/"
+         "genesys-standings-after-round-1", "2026-07-11"),
+    ]
+
+    def test_a_post_naming_its_qualifier_goes_to_it(self):
+        # The 2026 North America WCQ finished with no champion because the post
+        # announcing its winner is headed "and-the-winner-of-the-2026-nawcq-is"
+        # and the Genesys Championship ran the same weekend. It names its event
+        # as plainly as a post can; what it does not name is a format, which is
+        # all the rule before this one could read.
+        got = self.assigned(*self.CONCURRENT,
+                            ("2026/championships/and-the-winner-of-the-2026-nawcq-is", "2026-07-12"))
+        self.assertEqual(got["and-the-winner-of-the-2026-nawcq-is"],
+                         ("2026-north-america-wcq", "date+name"))
+
+    def test_a_post_naming_no_qualifier_is_still_ambiguous(self):
+        # This narrows an ambiguity. It does not resolve one by picking.
+        got = self.assigned(*self.CONCURRENT,
+                            ("2026/championships/what-a-weekend-that-was", "2026-07-12"))
+        self.assertIsNone(got["what-a-weekend-that-was"][0])
+        self.assertTrue(got["what-a-weekend-that-was"][1].startswith("ambiguous"))
+
+    def test_a_format_in_the_slug_still_decides_first(self):
+        # The older rule is the more specific one: a post naming the Genesys
+        # tournament belongs to it whatever else it says.
+        got = self.assigned(*self.CONCURRENT,
+                            ("2026/championships/genesys-top-8-pairings-north-america-wcq-weekend",
+                             "2026-07-12"))
+        self.assertEqual(got["genesys-top-8-pairings-north-america-wcq-weekend"][0],
+                         "2026-north-america-genesys-championship")
+
+    def test_two_qualifiers_of_one_name_are_left_alone(self):
+        # If both candidates answer to the name, the name has not told them
+        # apart and neither gets the post.
+        got = self.assigned(
+            ("2019/championships/2019-north-america-wcq/nawcq-round-1-pairings", "2019-07-10"),
+            ("2019/championships/2019-north-america-wcq/nawcq-standings-after-round-1", "2019-07-10"),
+            ("2019/championships/2019-north-america-wcq-dragon-duel/"
+             "nawcq-dragon-duel-round-1-pairings", "2019-07-10"),
+            ("2019/championships/2019-north-america-wcq-dragon-duel/"
+             "nawcq-dragon-duel-standings-after-round-1", "2019-07-10"),
+            ("2019/championships/and-the-winner-of-the-2019-nawcq-is", "2019-07-11"))
+        slug = "and-the-winner-of-the-2019-nawcq-is"
+        self.assertTrue(got[slug][0] is None or got[slug][1] != "date+name")
+
+
 class TestQualifierAbbreviation(unittest.TestCase):
 
     def test_nawcq_is_the_north_america_qualifier(self):
@@ -2781,22 +2839,21 @@ class TestEventDiscovery(unittest.TestCase):
         # the event path the rest of it uses. They are that event's, not a
         # second tournament held in the same room on the same day.
         #
-        # The Genesys Championship ran alongside it, so the date rule cannot
-        # place these -- two events fit and it says so rather than guessing.
-        # The name is the only thing that separates them.
+        # The two 200th YCS ran the same weekend in 2018, so the date rule
+        # cannot place these -- two events fit and it says so rather than
+        # guessing. Neither is a qualifier, so nothing but the name in the
+        # slug separates them.
         got = self.assigned(
-            ("2026/championships/2026-north-america-wcq/nawcq-round-1-pairings", "2026-07-11"),
-            ("2026/championships/2026-north-america-wcq/nawcq-standings-after-round-1", "2026-07-11"),
-            ("2026/championships/2026-north-america-genesys-championship/"
-             "genesys-round-1-pairings", "2026-07-11"),
-            ("2026/championships/2026-north-america-genesys-championship/"
-             "genesys-standings-after-round-1", "2026-07-11"),
-            *[(f"2026/championships/north-america-wcq-round-{i}-pairings", "2026-07-12")
+            ("2018/ycs/2018-09-200th-ycs-columbus-oh/200th-ycs-columbus-round-1-pairings", "2018-09-22"),
+            ("2018/ycs/2018-09-200th-ycs-columbus-oh/200th-ycs-columbus-standings-after-round-1", "2018-09-22"),
+            ("2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-round-1-pairings", "2018-09-22"),
+            ("2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-standings-after-round-1", "2018-09-22"),
+            *[(f"2018/ycs/200th-ycs-columbus-round-{i}-pairings", "2018-09-23")
               for i in range(2, 8)],
-            *[(f"2026/championships/north-america-wcq-standings-after-round-{i}", "2026-07-12")
+            *[(f"2018/ycs/200th-ycs-columbus-standings-after-round-{i}", "2018-09-23")
               for i in range(2, 8)])
-        self.assertEqual(got["north-america-wcq-round-2-pairings"],
-                         ("2026-north-america-wcq", "prefix"))
+        self.assertEqual(got["200th-ycs-columbus-round-2-pairings"],
+                         ("2018-09-200th-ycs-columbus-oh", "prefix"))
 
     def test_a_name_that_two_events_could_answer_to_is_left_alone(self):
         # "wcq" is in the index on its own, and in 2018 the North and South
@@ -2812,6 +2869,16 @@ class TestEventDiscovery(unittest.TestCase):
             *[(f"2018/championships/wcq-standings-after-round-{i}", "2018-07-01")
               for i in range(2, 6)])
         self.assertIsNone(got["wcq-round-2-pairings"][0])
+
+    def test_a_post_that_is_only_a_number_belongs_to_nobody(self):
+        # WordPress falls back to the post id when a post is published
+        # untitled, and thirty of those are in the index. Matching on the
+        # words in a name is a subset test, and the empty set is a subset of
+        # everything -- so each of them attached to whichever event was asked
+        # about first.
+        got = self.assigned(*self.coverage("ycs-atlanta", "2017-03-04"),
+                            ("2017/ycs/55642", "2017-03-05"))
+        self.assertIsNone(got["55642"][0])
 
     def test_a_handful_of_posts_is_not_a_tournament(self):
         # Two strays are an event's posts that got away, not coverage of a
