@@ -1156,7 +1156,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-january-2024/rounds.json",
-      "postCount": 24,
+      "postCount": 25,
       "champions": [
         {
           "format": null,
@@ -1181,13 +1181,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-richmond/rounds.json",
-      "postCount": 26,
+      "postCount": 67,
+      "champions": [
+        {
+          "format": null,
+          "name": "Joseph Thomas Bellafiore",
+          "deck": "Unchained"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 1494,
-          "rounds": 15
+          "rounds": 16
         }
       ]
     },
@@ -1199,7 +1206,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-santa-cruz-de-la-sierra/rounds.json",
-      "postCount": 21,
+      "postCount": 22,
       "champions": [
         {
           "format": null,
@@ -1224,7 +1231,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-indianapolis/rounds.json",
-      "postCount": 24,
+      "postCount": 78,
+      "champions": [
+        {
+          "format": null,
+          "name": "Steven Hamilton Santoli",
+          "deck": "Sinful Spoils Rescue-ACE"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1242,31 +1256,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-vancouver/rounds.json",
-      "postCount": 29,
+      "postCount": 72,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jesse Dean Kotton",
+          "deck": "Unchained"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 737,
-          "rounds": 14
-        }
-      ]
-    },
-    {
-      "slug": "2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event",
-      "event": "Yu-Gi-Oh! TCG Remote Duel Extravaganza Main Event",
-      "updated": "2023-07-30",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event/rounds.json",
-      "postCount": 7,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 0,
-          "duelists": 0,
-          "rounds": 3
+          "rounds": 15
         }
       ]
     },
@@ -1278,7 +1281,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-north-america-wcq/rounds.json",
-      "postCount": 33,
+      "postCount": 103,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jeremy Taeron Mitchell",
+          "deck": "Kashtira"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1314,13 +1324,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-north-america-remote-duel-ycs/rounds.json",
-      "postCount": 25,
+      "postCount": 36,
+      "champions": [
+        {
+          "format": null,
+          "name": "Steven Hamilton Santoli",
+          "deck": "Exosister"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
           "duelists": 263,
-          "rounds": 11
+          "rounds": 14
         }
       ]
     },
@@ -1332,7 +1349,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-central-america-wcq/rounds.json",
-      "postCount": 41,
+      "postCount": 44,
+      "champions": [
+        {
+          "format": null,
+          "name": "Carlos Jesus Mercado Ramirez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1376,7 +1400,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-santiago-chile/rounds.json",
-      "postCount": 22,
+      "postCount": 23,
+      "champions": [
+        {
+          "format": null,
+          "name": "Eddie Andre Alba Pando",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1432,7 +1463,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/ycs-lima-peru-2023/rounds.json",
-      "postCount": 20,
+      "postCount": 21,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jhon David Guerrero Sanchez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1444,19 +1482,19 @@
     },
     {
       "slug": "2023-team-ycs-las-vegas",
-      "event": "TEAM YCS Las Vegas",
+      "event": "Public Events",
       "updated": "2023-02-21",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-team-ycs-las-vegas/rounds.json",
-      "postCount": 23,
+      "postCount": 40,
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
           "duelists": 447,
-          "rounds": 10
+          "rounds": 11
         }
       ]
     },
@@ -1468,7 +1506,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-team-ycs-mexico-city/rounds.json",
-      "postCount": 17,
+      "postCount": 19,
       "formats": [
         {
           "format": null,
@@ -1486,13 +1524,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-remote-duel-ycs-north-america/rounds.json",
-      "postCount": 32,
+      "postCount": 63,
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 591,
-          "rounds": 10
+          "rounds": 13
         }
       ]
     },
@@ -1529,13 +1567,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-ycs-minneapolis/rounds.json",
-      "postCount": 29,
+      "postCount": 74,
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 1112,
-          "rounds": 11
+          "rounds": 16
         }
       ]
     },

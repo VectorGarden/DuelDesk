@@ -225,9 +225,378 @@
     "slug": "2023-ycs-richmond"
   },
   {
+    "title": "Round 10 Feature Match: Jerrod Dunn vs. Elias Tsirogiannis",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-10-feature-match-jerrod-dunn-vs-elias-tsirogiannis/",
+    "modified": "2023-11-05T08:49:12-08:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top 16 Deck Breakdown",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-16-deck-breakdown-3/",
+    "modified": "2023-11-05T13:32:35-08:00",
+    "kind": "deck",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Sunday ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2023/ycs/sunday-attack-of-the-giant-card-winners/",
+    "modified": "2023-11-05T15:45:27-08:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
     "title": "YCS Richmond Table of Contents",
     "url": "https://yugiohblog.konami.com/2023/ycs/ycs-richmond-table-of-contents/",
     "modified": "2023-11-06T05:16:07-08:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top 32 Feature Match Christopher LeBlanc Versus Evan Hornick",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-32-feature-match-christopher-leblanc-versus-evan-hornick/",
+    "modified": "2023-11-05T15:39:24-08:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top 32 Deck Breakdown",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-32-deck-breakdown-7/",
+    "modified": "2023-11-05T13:29:07-08:00",
+    "kind": "deck",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "And The Winner Is…",
+    "url": "https://yugiohblog.konami.com/2023/ycs/and-the-winner-is-44/",
+    "modified": "2023-11-05T16:05:04-08:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top Tables Update: Day 2",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-tables-update-day-2/",
+    "modified": "2023-11-05T06:29:07-08:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 11 Feature Match: Max Lehmann vs. Andrew Willett",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-11-feature-match-max-lehmann-vs-andrew-willett/",
+    "modified": "2023-11-05T11:02:32-08:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top 8 Deck Breakdown",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-8-deck-breakdown-3/",
+    "modified": "2023-11-05T13:32:10-08:00",
+    "kind": "deck",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Congratulations to the Top 4 Duelists of YCS Richmond!",
+    "url": "https://yugiohblog.konami.com/2023/ycs/congratulations-to-the-top-4-duelists-of-ycs-richmond/",
+    "modified": "2023-11-05T16:07:16-08:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "YCS Richmond Full Deck Breakdown",
+    "url": "https://yugiohblog.konami.com/2023/ycs/ycs-richmond-full-deck-breakdown/",
+    "modified": "2023-11-05T07:03:31-08:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top 16 Feature Match Robert Doolittle Versus Pakawat Pamornsut",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-16-feature-match-robert-doolittle-versus-pakawat-pamornsut/",
+    "modified": "2023-11-05T13:57:40-08:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "YCS Richmond Top 4 Deck Lists",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-4-deck-lists-3/",
+    "modified": "2023-11-05T17:20:07-08:00",
+    "kind": "deck",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "YCS Richmond Dragon Duel Champion",
+    "url": "https://yugiohblog.konami.com/2023/ycs/ycs-richmond-dragon-duel-champion/",
+    "modified": "2023-11-05T16:45:28-08:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "A Prize Card from the Prize Wall!?",
+    "url": "https://yugiohblog.konami.com/2023/ycs/a-prize-card-from-the-prize-wall/",
+    "modified": "2023-11-05T07:13:50-08:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top 8 Feature Match, Christopher LeBlanc Versus Justin Singh",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-8-feature-match-christopher-leblanc-versus-justin-singh/",
+    "modified": "2023-11-05T14:18:38-08:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Public Events Points Playoff Winner",
+    "url": "https://yugiohblog.konami.com/2023/ycs/public-events-points-playoff-winner-9/",
+    "modified": "2023-11-05T16:46:31-08:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top Tables Update: Round 11",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-table-update-round-11-4/",
+    "modified": "2023-11-05T10:12:14-08:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top 4 Feature Match: Jack Allen vs. Pakawat Pamornsut",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-4-feature-match-jack-allen-vs-pakawat-pamornsut/",
+    "modified": "2023-11-05T16:43:32-08:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Random Public Events Playoff Winner",
+    "url": "https://yugiohblog.konami.com/2023/ycs/random-public-events-playoff-winner/",
+    "modified": "2023-11-05T16:47:36-08:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "3rd Place Playoff: Christopher LeBlanc vs. Pakawat Pamornsut",
+    "url": "https://yugiohblog.konami.com/2023/ycs/3rd-place-playoff-christopher-leblanc-vs-pakawat-pamornsut/",
+    "modified": "2023-11-05T15:37:40-08:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 1 Feature Match: Bobby Kenny vs. Derek Mitchell French",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-1-feature-match-bobby-kenny-vs-derek-mitchell-french/",
+    "modified": "2023-11-04T10:23:44-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Saturday Speed Duel ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2023/ycs/saturday-speed-duel-attack-of-the-giant-card-winners-2/",
+    "modified": "2023-11-04T17:12:01-07:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Sunday Speed Duel ATTACK OF THE GIANT CARD!!",
+    "url": "https://yugiohblog.konami.com/2023/ycs/sunday-speed-duel-attack-of-the-giant-card-3/",
+    "modified": "2023-11-05T17:23:09-08:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 2 Feature Match: Arturo Maruri Jr. Versus Aubrey Richardson",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-2-feature-match-arturo-maruri-jr-versus-aubrey-richardson/",
+    "modified": "2023-11-04T10:58:34-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Saturday ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2023/ycs/saturday-attack-of-the-giant-card-winners/",
+    "modified": "2023-11-04T18:27:43-07:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Ultimate Time Wizard Format Finals: Ernie Aranda vs. James Johnson",
+    "url": "https://yugiohblog.konami.com/2023/ycs/ultimate-time-wizard-format-finals-ernie-aranda-vs-james-johnson/",
+    "modified": "2023-11-05T17:17:11-08:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 3 Feature Match: Timothy Dinh vs. Zachary Vicenzi",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-3-feature-match-timothy-dinh-vs-zachary-vicenzi/",
+    "modified": "2023-11-04T12:05:39-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "The Ultimate Time Wizard Tournament Winners",
+    "url": "https://yugiohblog.konami.com/2023/ycs/ultimate-time-wizard-top-3/",
+    "modified": "2023-11-05T17:22:40-08:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 4 Feature Match, Cameron Neal Versus Carl Gabriel",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-4-feature-match-cameron-neal-versus-carl-gabriel/",
+    "modified": "2023-11-04T15:09:51-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Welcome to YCS Richmond!",
+    "url": "https://yugiohblog.konami.com/2023/ycs/welcome-to-ycs-richmond/",
+    "modified": "2023-11-04T07:57:14-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 5 Feature Match: Steven Grillo vs. Devan Rodriguez",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-5-feature-match-steven-grillo-vs-devan-rodriguez/",
+    "modified": "2023-11-04T14:26:40-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "YCS Richmond GIANT Cards!",
+    "url": "https://yugiohblog.konami.com/2023/ycs/ycs-richmond-giant-cards/",
+    "modified": "2023-11-04T08:05:57-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 6 Feature Match Nathaniel Jadotte Versus Shawn Debrew",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-6-feature-match-nathaniel-jadotte-versus-shawn-debrew/",
+    "modified": "2023-11-04T15:37:46-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "QQ: What’s Your Favorite Luxury Rarity From The 25th Anniversary Rarity Collection?",
+    "url": "https://yugiohblog.konami.com/2023/ycs/quick-questions-whats-your-favorite-luxury-rarity-from-the-25th-anniversary-rarity-collection/",
+    "modified": "2023-11-04T08:25:02-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 7 Feature Match: Haris Mirzada vs. Gilles Thomas",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-7-feature-match-haris-mirzada-vs-gilles-thomas/",
+    "modified": "2023-11-04T17:08:55-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Saturday Dragon Duel Top 4",
+    "url": "https://yugiohblog.konami.com/2023/ycs/saturday-dragon-duel-top-4-7/",
+    "modified": "2023-11-04T15:12:23-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 8 Feature Match: Mingrui Cai vs. Jim Mayorga",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-8-feature-match-mingrui-cai-vs-jim-mayorga/",
+    "modified": "2023-11-04T18:24:35-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Ultimate Time Wizard Tournament, April 2010 Format Photo Gallery!",
+    "url": "https://yugiohblog.konami.com/2023/ycs/ultimate-time-wizard-tournament-april-2010-format-photo-gallery/",
+    "modified": "2023-11-04T18:32:20-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Round 9 Feature Match: Muhtasim Mallick vs. Gilles Thomas",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-9-feature-match-muhtasim-mallick-vs-gilles-thomas/",
+    "modified": "2023-11-04T19:01:39-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Richmond",
+    "slug": "2023-ycs-richmond"
+  },
+  {
+    "title": "Top Tables Update: Round 9",
+    "url": "https://yugiohblog.konami.com/2023/ycs/top-tables-update-round-9-29/",
+    "modified": "2023-11-04T21:56:45-07:00",
     "kind": "news",
     "format": null,
     "event": "YCS Richmond",
