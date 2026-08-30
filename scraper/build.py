@@ -571,9 +571,10 @@ def build_format(name: str | None, sources: list[Source], *,
     # both tournaments, because each asks only about its own cut: a post naming
     # nobody in this bracket claims nobody here.
     won_by = champion_named(cut_finalists(rounds),
-                            [{"title": s.post.title, "text": s.post.lead}
+                            [{"title": s.post.title, "text": s.post.lead,
+                              "kind": s.post.kind}
                              for s in list(sources) + list(announcements)
-                             if s.post.kind == "result"],
+                             if s.post.lead],
                             name)
     # What one entrant is. A Team YCS ranks teams of three, so "389 Duelists"
     # would be 389 teams under the wrong noun -- and the page has no way to know
@@ -705,8 +706,12 @@ def build_event(event: str, sources: list[Source], *,
     unassigned = 0 if {"pairings", "standings"} <= kinds else len(loose)
     # Kept even when the rest of the unassigned posts are dropped: which
     # tournament a winner belongs to is answered by the brackets, not by the
-    # post's own title, so this one kind is worth offering to both.
-    announcements = [s for s in loose if s.post.kind == "result"]
+    # post's own title, so these are worth offering to both. The final's own
+    # write-up counts, and rarely names a format -- "Finals Feature Match: Ada
+    # Lovelace vs Bo Peep" says which two Duelists and nothing else.
+    announcements = [s for s in loose
+                     if s.post.kind == "result"
+                     or (s.post.kind == "feature" and s.post.lead)]
     if unassigned:
         loose = []
 

@@ -2497,6 +2497,90 @@ class TestWinnerProse(unittest.TestCase):
         self.assertLessEqual(len(parse_post(page, "https://x/w/").lead), LEAD_CHARS)
 
 
+class TestChampionInAFeatureMatch(unittest.TestCase):
+    """The final's own write-up says who took it, in one sentence.
+
+    Everything else it says about champions is a preview or a biography, and
+    both read like results.
+    """
+
+    def feature(self, text, title="Finals Feature Match: Ada Lovelace vs Bo Peep"):
+        return {"title": title, "text": text, "kind": "feature"}
+
+    def test_the_sentence_that_crowns_somebody_is_read(self):
+        from winners import champion
+        got = champion(["Ada Lovelace", "Bo Peep"],
+                       [self.feature("A long match, described at length. "
+                                     "Ada Lovelace is your YCS Champion!")])
+        self.assertEqual(got, "Ada Lovelace")
+
+    def test_a_prediction_is_not_a_result(self):
+        # "...is now just a short win away from becoming a YCS Champion!" was
+        # written about a Duelist mid-match.
+        from winners import champion
+        self.assertIsNone(champion(["Ada Lovelace", "Bo Peep"], [self.feature(
+            "Ada Lovelace is now just a short win away from becoming a YCS Champion!")]))
+        self.assertIsNone(champion(["Ada Lovelace", "Bo Peep"], [self.feature(
+            "One of these Duelists will soon be known as a YCS champion.")]))
+
+    def test_a_duelists_history_is_not_this_events_result(self):
+        # The dangerous one: a fact about the runner-up, in the past tense, in
+        # a post about the match he went on to lose.
+        from winners import champion
+        self.assertIsNone(champion(["Ada Lovelace", "Bo Peep"], [self.feature(
+            "Bo Peep is a 2-time YCS Champion, and although Lovelace has only "
+            "one win, it came a week ago.")]))
+
+    def test_a_side_events_crowning_is_not_the_events(self):
+        from winners import champion
+        self.assertIsNone(champion(["Ada Lovelace", "Bo Peep"], [self.feature(
+            "Ada Lovelace is the 2018 Central America Dragon Duel WCQ Champion!")]))
+
+    def test_the_last_crowning_wins_not_the_first(self):
+        # Two sentences that both crown somebody, and only the order says which
+        # is this event's. A finals write-up opens by recalling who won the last
+        # one -- and that Duelist is often sitting at the table.
+        from winners import champion
+        got = champion(["Ada Lovelace", "Bo Peep"], [self.feature(
+            "Ada Lovelace is the champion of the last YCS she entered. "
+            "Tonight is another matter. "
+            "Bo Peep is your YCS Champion!")])
+        self.assertEqual(got, "Bo Peep")
+
+    def test_a_crowning_naming_nobody_on_record_claims_nobody(self):
+        # A post filed under the wrong event: "Shunping Xu is the champion of
+        # YCS Pasadena" sits in YCS Sao Paulo's coverage.
+        from winners import champion
+        self.assertIsNone(champion(["Ada Lovelace", "Bo Peep"], [self.feature(
+            "Shunping Xu is the champion of YCS Pasadena with his Sky Striker Deck!")]))
+
+    def test_a_feature_match_that_crowns_nobody_is_ignored(self):
+        # Most of them: the match is described and it ends with boilerplate.
+        from winners import champion
+        self.assertIsNone(champion(["Ada Lovelace", "Bo Peep"], [self.feature(
+            "Ada Lovelace attacks for game. Click here for the next Feature Match.")]))
+
+    def test_the_finals_write_up_is_kept_whole_enough_to_find_it(self):
+        # The sentence naming the champion sat 5,000 characters into the post
+        # that crowned the North America Remote Duel YCS.
+        from parse import parse_post, MATCH_CHARS
+        page = ('<title>Finals Feature Match: Ada Lovelace vs Bo Peep</title>'
+                '<div class="entry-content"><p>' + ('turn after turn. ' * 300)
+                + 'Ada Lovelace is your YCS Champion!</p></div></div>')
+        got = parse_post(page, "https://x/finals-feature-match-a-vs-b/")
+        self.assertEqual(got.kind, "feature")
+        self.assertEqual(got.round, "Final")
+        self.assertIn("Ada Lovelace is your YCS Champion", got.lead)
+        self.assertLessEqual(len(got.lead), MATCH_CHARS)
+
+    def test_an_ordinary_feature_match_carries_no_prose(self):
+        # Only the final's. An event publishes thirty of these.
+        from parse import parse_post
+        page = ('<title>Round 4 Feature Match: Ada Lovelace vs Bo Peep</title>'
+                '<div class="entry-content"><p>A match.</p></div></div>')
+        self.assertEqual(parse_post(page, "https://x/round-4-feature-match/").lead, "")
+
+
 class TestChampionInTheBuild(unittest.TestCase):
     """Who the candidates are, and that the answer reaches the file."""
 
@@ -2544,6 +2628,23 @@ class TestChampionInTheBuild(unittest.TestCase):
                          _sources() + [self.announcement(
                              "Congratulations to Samuel Deng, who defeated "
                              "Aviel Getter to take the whole thing!")],
+                         updated="2026-08-16T19:10:00Z")
+        gen = next(f for f in ev["formats"] if f["format"] == "Genesys")
+        self.assertEqual(gen["champion"], "Samuel Deng")
+
+    def test_a_finals_feature_match_reaches_the_built_format(self):
+        # The extractor can read one, and the builder has to hand it over: for
+        # nine events in the archive the finals write-up is the only thing that
+        # names a champion at all.
+        from build import build_event, Source
+        from parse import Post
+        write_up = Source(
+            "https://x/finals-feature-match/",
+            Post(title="Finals Feature Match: Samuel Deng vs Aviel Getter",
+                 kind="feature", fmt=None, round="Final", table=None,
+                 lead="A long match. Samuel Deng is your YCS Champion!"),
+            "20:00")
+        ev = build_event("YCS Montréal", _sources() + [write_up],
                          updated="2026-08-16T19:10:00Z")
         gen = next(f for f in ev["formats"] if f["format"] == "Genesys")
         self.assertEqual(gen["champion"], "Samuel Deng")

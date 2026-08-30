@@ -182,6 +182,13 @@ of (198 of the archive's 266 result posts are those), and exactly one of the cut
 named in it. Where a post names two, as a final's write-up does, whoever is on the near side of
 "defeated" won it.
 
+The final's own write-up counts too, where no post announces a winner outright. A feature match is
+prose about two Duelists and names both of them throughout, so only one sentence of it is read: the
+last one that crowns somebody. Everything else it says about champions is a preview or a
+biography, and both read like results — *"is now just a short win away from becoming a YCS
+Champion"*, *"is a 2-time YCS Champion, and although…"*. That second one is a true statement about
+the runner-up, in the past tense, in the post about the match he went on to lose.
+
 `champion` is null for most events, and that is a real answer rather than a gap to be filled.
 
 The round panel shows who won on the last round the event published, and nowhere else — usually
