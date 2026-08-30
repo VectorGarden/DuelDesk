@@ -108,6 +108,15 @@
     "slug": "2022-team-ycs-quito"
   },
   {
+    "title": "TEAM YCS Quito: Standings after Round 6",
+    "url": "https://yugiohblog.konami.com/2022/ycs/here-are-the-standings-after-round-6/",
+    "modified": "2022-10-15T16:28:28-07:00",
+    "kind": "standings",
+    "format": null,
+    "event": "TEAM YCS Quito",
+    "slug": "2022-team-ycs-quito"
+  },
+  {
     "title": "TEAM YCS Quito: Standings after Round 7",
     "url": "https://yugiohblog.konami.com/2022/ycs/team-ycs-quito-standings-after-round-7/",
     "modified": "2022-10-15T16:41:32-07:00",
@@ -117,9 +126,27 @@
     "slug": "2022-team-ycs-quito"
   },
   {
+    "title": "TEAM YCS Quito: And the winners are…",
+    "url": "https://yugiohblog.konami.com/2022/ycs/team-ycs-quito-and-the-winners-are/",
+    "modified": "2022-10-16T15:18:36-07:00",
+    "kind": "result",
+    "format": null,
+    "event": "TEAM YCS Quito",
+    "slug": "2022-team-ycs-quito"
+  },
+  {
     "title": "TEAM YCS Quito: Final Match",
     "url": "https://yugiohblog.konami.com/2022/ycs/team-ycs-quito-final-match/",
     "modified": "2022-10-16T15:05:32-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "TEAM YCS Quito",
+    "slug": "2022-team-ycs-quito"
+  },
+  {
+    "title": "Welcome to TEAM YCS Quito!",
+    "url": "https://yugiohblog.konami.com/2022/ycs/welcome-to-team-ycs-quito/",
+    "modified": "2022-10-15T13:16:24-07:00",
     "kind": "news",
     "format": null,
     "event": "TEAM YCS Quito",

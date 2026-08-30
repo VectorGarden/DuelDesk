@@ -1035,6 +1035,31 @@
       ]
     },
     {
+      "slug": "2024-ycs-raleigh",
+      "event": "YCS Raleigh",
+      "updated": "2024-04-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-ycs-raleigh/rounds.json",
+      "postCount": 70,
+      "champions": [
+        {
+          "format": null,
+          "name": "Cameron Taylor Neal",
+          "deck": "Snake-Eye"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1637,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "2024-ycs-guadalajara-mexico",
       "event": "YCS Guadalajara",
       "location": "Guadalajara, Mexico",
@@ -1585,7 +1610,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-team-ycs-quito/rounds.json",
-      "postCount": 15,
+      "postCount": 18,
       "formats": [
         {
           "format": null,
@@ -1603,13 +1628,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-ycs-niagara-falls/rounds.json",
-      "postCount": 25,
+      "postCount": 63,
       "formats": [
         {
           "format": null,
-          "swissRounds": 9,
+          "swissRounds": 10,
           "duelists": 837,
-          "rounds": 9
+          "rounds": 15
         }
       ]
     },
@@ -1621,7 +1646,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-ycs-rio-de-janeiro/rounds.json",
-      "postCount": 22,
+      "postCount": 25,
+      "champions": [
+        {
+          "format": null,
+          "name": "Joao Paulo Cavalcante Lima",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1657,7 +1689,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/south-america-yu-gi-oh-tcg-championship-2022/rounds.json",
-      "postCount": 26,
+      "postCount": 28,
+      "champions": [
+        {
+          "format": null,
+          "name": "Hernan Nehemias Bravo Figueroa",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1675,7 +1714,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/central-america-yu-gi-oh-tcg-championship-2022/rounds.json",
-      "postCount": 24,
+      "postCount": 26,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alain Munoz Godinez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1712,7 +1758,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-ycs-guadalajara-mexico/rounds.json",
-      "postCount": 23,
+      "postCount": 25,
       "formats": [
         {
           "format": null,
@@ -1810,7 +1856,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2020-uds-invitational-bogota/rounds.json",
-      "postCount": 26,
+      "postCount": 27,
+      "champions": [
+        {
+          "format": null,
+          "name": "Oscar Alexis Vargas Martinez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1828,7 +1881,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2020-team-ycs-las-vegas/rounds.json",
-      "postCount": 21,
+      "postCount": 50,
       "formats": [
         {
           "format": null,
@@ -1847,13 +1900,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2020-uds-invitational-tulsa-ok/rounds.json",
-      "postCount": 26,
+      "postCount": 50,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 245,
-          "rounds": 12
+          "rounds": 15
         }
       ]
     },
@@ -1865,7 +1918,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-pasadena/rounds.json",
-      "postCount": 27,
+      "postCount": 60,
+      "champions": [
+        {
+          "format": null,
+          "name": "Kobe Louis Short",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1878,13 +1938,12 @@
     {
       "slug": "2019-team-ycs-lima-peru",
       "event": "Team YCS Lima",
-      "location": "Lima, Peru",
       "updated": "2019-11-08",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-team-ycs-lima-peru/rounds.json",
-      "postCount": 16,
+      "postCount": 19,
       "formats": [
         {
           "format": null,
@@ -2763,6 +2822,24 @@
           "swissRounds": 5,
           "duelists": 56,
           "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "2016-ycs-origins",
+      "event": "YCS Origins",
+      "updated": "2016-06-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-ycs-origins/rounds.json",
+      "postCount": 35,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 635,
+          "rounds": 10
         }
       ]
     },

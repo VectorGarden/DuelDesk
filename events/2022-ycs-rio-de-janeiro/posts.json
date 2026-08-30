@@ -196,5 +196,32 @@
     "format": null,
     "event": "YCS Rio de Janeiro",
     "slug": "2022-ycs-rio-de-janeiro"
+  },
+  {
+    "title": "We have a winner!",
+    "url": "https://yugiohblog.konami.com/2022/ycs/we-have-a-winner-9/",
+    "modified": "2022-08-28T11:32:12-07:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Rio de Janeiro",
+    "slug": "2022-ycs-rio-de-janeiro"
+  },
+  {
+    "title": "YCS Rio de Janeiro, Brazil: Final Match",
+    "url": "https://yugiohblog.konami.com/2022/ycs/ycs-rio-de-janeiro-brazil-final-match/",
+    "modified": "2022-08-28T11:24:19-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Rio de Janeiro",
+    "slug": "2022-ycs-rio-de-janeiro"
+  },
+  {
+    "title": "Welcome to YCS Rio de Janeiro, Brazil 2022!",
+    "url": "https://yugiohblog.konami.com/2022/ycs/welcome-to-ycs-rio-de-janeiro-brazil-2022/",
+    "modified": "2022-08-27T07:07:24-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Rio de Janeiro",
+    "slug": "2022-ycs-rio-de-janeiro"
   }
 ]
