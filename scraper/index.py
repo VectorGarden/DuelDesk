@@ -506,4 +506,67 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
         if slug := found.get(rec["url"]):
             rec["event"], rec["event_confidence"] = slug, (
                 "prefix" if slug in windows else "discovered")
+
+    # A discovered event can now be dated, so the rule the path events have had
+    # all along applies to it too.
+    #
+    # Until this, an event nobody filed under a path could only ever be given a
+    # post that carried its name. Everything written about it in a sentence
+    # fell through: the post announcing its winner, its feature matches, the
+    # table of contents. The 2023 North America Remote Duel YCS has a finals
+    # write-up naming its champion in so many words, and the slug is
+    # "finals-feature-match-steven-santoli-vs-liam-mac-oscair" -- which begins
+    # with a word about the post, so there is no name in it to match, and no
+    # window to fall inside either.
+    #
+    # Same corroboration as everywhere else, because a date on its own swept
+    # product news into YCS Montreal's coverage: a post from a category the
+    # event uses is taken at its word, and one from elsewhere has to say the
+    # event's name. Same ambiguity rule too -- where two of them fit, neither
+    # gets it.
+    for rec, ev in _by_date(out, _discovered_profiles(out), within):
+        rec["event"], rec["event_confidence"] = ev, "discovered+date"
     return out
+
+
+def _discovered_profiles(records: list[dict]) -> dict[str, Profile]:
+    """A profile for each event discovery found, built the same way as the rest.
+
+    event_profiles reads the posts that carry a slug in their path, which these
+    events have none of. Theirs are the posts discovery gave them.
+    """
+    own: dict[str, list[dict]] = {}
+    for rec in records:
+        if rec["event"] and rec["event_confidence"] in ("discovered", "prefix") and rec["lastmod"]:
+            own.setdefault(rec["event"], []).append(rec)
+    out = {}
+    for slug, posts in own.items():
+        counts = Counter(t for p in posts for t in slug_terms(p["slug"]))
+        # A category one post out of thirty-four sits in is not a category the
+        # event uses, it is a post Konami filed in the wrong section. One such
+        # post -- south-america-wcq-...-playoff-round-1, under /2023/ycs/ --
+        # put "ycs" on the 2023 South America WCQ and made every YCS post that
+        # weekend a candidate for it. Six events have one of these.
+        #
+        # Unless that leaves nothing: a small event's every category is held by
+        # a single post, and no category at all would make it unreachable.
+        cats = Counter(p["category"] for p in posts)
+        common = {c for c, n in cats.items() if n > 1}
+        out[slug] = Profile(
+            window=tight_window([p["lastmod"] for p in posts]),
+            categories=common or set(cats),
+            terms={t for t, n in counts.items() if n >= MIN_TERM_SHARE * len(posts)})
+    return out
+
+
+def _by_date(records: list[dict], profiles: dict[str, Profile], within):
+    """Still-unassigned posts, and the one discovered event each belongs to."""
+    for rec in records:
+        if rec["event"] or not rec["lastmod"]:
+            continue
+        entry = Entry(rec["url"], rec["year"], rec["category"], rec["event_slug"],
+                      rec["slug"], rec["lastmod"])
+        hits = [slug for slug, p in profiles.items()
+                if within(rec["lastmod"], *p.window) and p.names(entry)]
+        if len(hits) == 1:
+            yield rec, hits[0]

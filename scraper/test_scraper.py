@@ -3074,15 +3074,19 @@ class TestEventDiscovery(unittest.TestCase):
               for i in range(2, 6)])
         self.assertIsNone(got["wcq-round-2-pairings"][0])
 
-    def test_a_post_that_is_only_a_number_belongs_to_nobody(self):
+    def test_a_post_that_is_only_a_number_names_nobody(self):
         # WordPress falls back to the post id when a post is published
-        # untitled, and thirty of those are in the index. Matching on the
-        # words in a name is a subset test, and the empty set is a subset of
-        # everything -- so each of them attached to whichever event was asked
-        # about first.
-        got = self.assigned(*self.coverage("ycs-atlanta", "2017-03-04"),
-                            ("2017/ycs/55642", "2017-03-05"))
-        self.assertIsNone(got["55642"][0])
+        # untitled, and thirty of those are in the index. Matching on the words
+        # in a name is a subset test, and the empty set is a subset of
+        # everything -- so each of them matched every event there was.
+        #
+        # It may still be attached by its date, which is a different rule with
+        # corroboration behind it. What it must never do is match on a name it
+        # does not have.
+        from index import _names_the_same
+        self.assertFalse(_names_the_same("55642", "2017-ycs-atlanta"))
+        self.assertFalse(_names_the_same("", "2017-ycs-atlanta"))
+        self.assertTrue(_names_the_same("ycs-atlanta", "2017-ycs-atlanta"))
 
     def test_a_handful_of_posts_is_not_a_tournament(self):
         # Two strays are an event's posts that got away, not coverage of a
@@ -3202,6 +3206,86 @@ class TestOneQualifierWrittenTwoWays(unittest.TestCase):
                "2024-07-20") for i in range(1, 7)])
         self.assertNotEqual(got["north-america-genesys-championship-round-1-pairings"],
                             got["north-america-wcq-round-1-pairings"])
+
+
+class TestADiscoveredEventCanBeDated(unittest.TestCase):
+    """An event nobody filed under a path could only ever be given a post that
+    carried its name.
+
+    Everything written about one in a sentence fell through -- the post
+    announcing its winner, its feature matches, its table of contents. The
+    2023 North America Remote Duel YCS has a finals write-up naming its
+    champion in so many words, under the slug
+    "finals-feature-match-steven-santoli-vs-liam-mac-oscair": no name in it to
+    match, and no window to fall inside either.
+    """
+
+    def assigned(self, *urls):
+        rows = assign_events(parse_post_sitemap(urlset(*urls)))
+        return {r["slug"]: (r["event"], r["event_confidence"]) for r in rows}
+
+    @staticmethod
+    def coverage(prefix, when, category="ycs", n=6):
+        return [(f"2023/{category}/{prefix}-round-{i}-pairings", when) for i in range(1, n + 1)] + \
+               [(f"2023/{category}/{prefix}-standings-after-round-{i}", when) for i in range(1, n + 1)]
+
+    def test_a_sibling_in_the_events_own_category_joins_it(self):
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/finals-feature-match-steven-santoli-vs-liam-mac-oscair", "2023-06-25"))
+        self.assertEqual(got["finals-feature-match-steven-santoli-vs-liam-mac-oscair"],
+                         ("2023-north-america-remote-duel-ycs", "discovered+date"))
+
+    def test_a_post_from_another_week_is_not_swept_in(self):
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/finals-feature-match-a-vs-b", "2023-09-01"))
+        self.assertIsNone(got["finals-feature-match-a-vs-b"][0])
+
+    def test_a_post_from_a_category_the_event_does_not_use_must_name_it(self):
+        # The rule that keeps product news out of an event's coverage, applied
+        # here too: three Legendary Arc-V announcements were published during
+        # YCS Montreal and shown as its coverage.
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/news-updates/introducing-the-new-structure-deck", "2023-06-25"),
+            ("2023/news-updates/north-america-remote-duel-ycs-what-to-expect", "2023-06-25"))
+        self.assertIsNone(got["introducing-the-new-structure-deck"][0])
+        self.assertEqual(got["north-america-remote-duel-ycs-what-to-expect"][0],
+                         "2023-north-america-remote-duel-ycs")
+
+    def test_two_discovered_events_that_weekend_claim_neither(self):
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            *self.coverage("south-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/finals-feature-match-a-vs-b", "2023-06-25"))
+        self.assertIsNone(got["finals-feature-match-a-vs-b"][0])
+
+    def test_one_misfiled_post_does_not_widen_the_net(self):
+        # A category one post out of thirty-four sits in is not a category the
+        # event uses. One WCQ post filed under /2023/ycs/ put "ycs" on the 2023
+        # South America WCQ and made every YCS post that weekend a candidate.
+        # The misfiled post has to be one the event actually takes, or it never
+        # reaches the category set and the fixture proves nothing: this one
+        # carries the event's name, so it joins on that and brings "ycs" with
+        # it.
+        got = self.assigned(
+            *self.coverage("south-america-wcq", "2023-06-24", category="championships"),
+            ("2023/ycs/south-america-wcq-round-7-pairings", "2023-06-24"),
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/finals-feature-match-steven-santoli-vs-liam-mac-oscair", "2023-06-25"))
+        self.assertEqual(got["south-america-wcq-round-7-pairings"][0], "2023-south-america-wcq",
+                         "the misfiled post is the event's, whatever section it sits in")
+        self.assertEqual(got["finals-feature-match-steven-santoli-vs-liam-mac-oscair"][0],
+                         "2023-north-america-remote-duel-ycs")
+
+    def test_a_small_event_keeps_the_categories_it_has(self):
+        # Every category of a short event is held by one post, and stripping
+        # them all would make it unreachable.
+        from index import _discovered_profiles
+        recs = [{"event": "e", "event_confidence": "discovered", "lastmod": "2023-06-24",
+                 "category": "ycs", "slug": "e-round-1-pairings"}]
+        self.assertEqual(_discovered_profiles(recs)["e"].categories, {"ycs"})
 
 
 class TestDiscoveredEventsAreBuildable(unittest.TestCase):
