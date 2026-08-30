@@ -20,7 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import archive                                            # noqa: E402
-from build import Source, build_event                     # noqa: E402
+from build import BUILD_VERSION, Source, build_event      # noqa: E402
 from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
                    parse_lastmod)
@@ -82,23 +82,40 @@ def worth_building(posts: list[dict]) -> bool:
     return "pairings" in kinds and "standings" in kinds
 
 
-def plan(entries, done: set[str], backfill: int) -> list[tuple[str, list[dict], str]]:
-    """Which events this run builds: the newest, plus `backfill` older ones.
+def plan(entries, done: set[str], backfill: int,
+         rebuild: int = 0, behind: set[str] | frozenset = frozenset()
+         ) -> list[tuple[str, list[dict], str]]:
+    """Which events this run builds: the newest, plus older ones.
 
     The newest event is rebuilt every time because it may still be running. The
     backfill takes the next-newest events not already in the archive, so a run
     walks backwards through history a few events at a time and a finished event
     is fetched exactly once.
+
+    `rebuild` takes events that *are* in the archive but were written by an
+    older builder. Separate from the backfill because they are opposite
+    questions -- one asks what is missing, the other what is out of date -- and
+    a run doing both at once would be hard to read afterwards. Newest first
+    either way: if a rebuild is interrupted, the events most likely to be
+    looked at are the ones already corrected.
     """
     ranked = [e for e in events_by_recency(entries) if worth_building(e[1])]
     if not ranked:
         return []
     chosen = [ranked[0]]
+    taken = {ranked[0][0]}
     for event in ranked[1:]:
         if len(chosen) > backfill:
             break
         if event[0] not in done:
             chosen.append(event)
+            taken.add(event[0])
+    for event in ranked[1:]:
+        if len(chosen) >= backfill + rebuild + 1:
+            break
+        if event[0] in behind and event[0] not in taken:
+            chosen.append(event)
+            taken.add(event[0])
     return chosen
 
 
@@ -267,6 +284,10 @@ def main() -> int:
     # a request a second an event is minutes and the archive is hours.
     ap.add_argument("--backfill", type=int, default=0, metavar="N",
                     help="also build the N newest events missing from the archive")
+    # Also off by default, and for the same reason: an event already in the
+    # archive costs the same minutes to fetch again as it did the first time.
+    ap.add_argument("--rebuild", type=int, default=0, metavar="N",
+                    help="also rebuild the N newest events an older builder wrote")
     ap.add_argument("--feed", help="also write an RSS feed of the archive's newest posts")
     ap.add_argument("--feed-items", type=int, default=300,
                     help="how many posts the feed carries")
@@ -287,7 +308,11 @@ def main() -> int:
     print(f"Indexed {len(entries):,} posts from {len(sub)} sub-sitemaps")
 
     done = archive.attempted(args.archive)
-    chosen = plan(entries, done, args.backfill)
+    stale = archive.behind(args.archive, BUILD_VERSION) if args.rebuild else set()
+    if stale:
+        print(f"{len(stale)} events were built by an older builder; "
+              f"rebuilding up to {args.rebuild} of them")
+    chosen = plan(entries, done, args.backfill, args.rebuild, stale)
     if not chosen:
         print("No event with both pairings and standings could be identified.")
         return 0

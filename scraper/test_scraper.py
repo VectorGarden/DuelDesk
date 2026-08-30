@@ -3888,6 +3888,148 @@ class TestAFeatureMatchThatNamesNobody(unittest.TestCase):
         self.assertEqual(feature["a"]["name"], "Ryan Yu")
 
 
+class TestRebuildingWhatAnOlderBuilderWrote(unittest.TestCase):
+    """The archive is built once per event and then left alone, so a change to
+    what the builder produces reaches only the events built after it."""
+
+    def setUp(self):
+        import tempfile
+        from pathlib import Path as P
+        self.tmp = P(tempfile.mkdtemp())
+
+    def write(self, slug, built=None):
+        import archive
+        event = {"event": slug, "sample": False, "coverageBy": "Konami",
+                 "updated": "2026-01-01", "formats": []}
+        if built is not None:
+            event["built"] = built
+        archive.write_event(self.tmp, slug, event, [])
+
+    def test_a_file_from_an_older_builder_is_behind(self):
+        import archive
+        self.write("old", built=1)
+        self.write("current", built=2)
+        self.assertEqual(archive.behind(self.tmp, 2), {"old"})
+
+    def test_a_file_with_no_marker_at_all_is_behind(self):
+        # Everything in the archive today predates the marker.
+        import archive
+        self.write("ancient")
+        self.assertEqual(archive.behind(self.tmp, 2), {"ancient"})
+
+    def test_what_a_builder_writes_says_which_builder_wrote_it(self):
+        from build import build_event, BUILD_VERSION
+        self.assertEqual(build_event("x", [])["built"], BUILD_VERSION)
+
+    def ranked(self, *slugs):
+        return [(s, [{"kind": "pairings"}, {"kind": "standings"}], f"2026-01-0{i+1}")
+                for i, s in enumerate(slugs)]
+
+    def plan(self, *, done, backfill=0, rebuild=0, behind=frozenset(), slugs=None):
+        from unittest import mock
+        import run
+        ranked = self.ranked(*(slugs or ("a", "b", "c", "d")))
+        with mock.patch.object(run, "events_by_recency", lambda e: ranked):
+            return [s for s, _, _ in run.plan([], done, backfill, rebuild, behind)]
+
+    def test_a_rebuild_takes_events_the_backfill_never_would(self):
+        # The backfill asks what is missing; this asks what is out of date, and
+        # every one of these is already in the archive.
+        got = self.plan(done={"a", "b", "c", "d"}, rebuild=2, behind={"b", "c", "d"})
+        self.assertEqual(got, ["a", "b", "c"], "the newest, then two behind it")
+
+    def test_a_rebuild_stops_at_the_number_asked_for(self):
+        got = self.plan(done={"a", "b", "c", "d"}, rebuild=1, behind={"b", "c", "d"})
+        self.assertEqual(got, ["a", "b"])
+
+    def test_events_that_are_current_are_left_alone(self):
+        got = self.plan(done={"a", "b", "c", "d"}, rebuild=5, behind={"d"})
+        self.assertEqual(got, ["a", "d"])
+
+    def test_nothing_is_built_twice_in_one_run(self):
+        # The newest event is always rebuilt, and it is usually also behind.
+        got = self.plan(done={"a", "b", "c", "d"}, rebuild=2, behind={"a", "b", "c", "d"})
+        self.assertEqual(got, ["a", "b", "c"])
+        self.assertEqual(len(got), len(set(got)))
+
+    def test_an_event_the_backfill_took_is_not_rebuilt_after_it(self):
+        # An event can be both missing and out of date -- it is missing, so
+        # whatever version it lacks it lacks. Building it twice in one run
+        # spends the budget twice and writes the same file twice.
+        got = self.plan(done={"a", "b"}, backfill=2, rebuild=1, behind={"c"})
+        self.assertEqual(got, ["a", "c", "d"])
+        self.assertEqual(len(got), len(set(got)), "and no event appears twice")
+
+    def test_a_backfill_and_a_rebuild_do_not_eat_each_others_budget(self):
+        # Opposite questions, separate counts: two missing and one stale is
+        # three events, not whichever two came first.
+        got = self.plan(done={"a", "b"}, backfill=2, rebuild=1, behind={"b"})
+        self.assertEqual(got, ["a", "c", "d", "b"])
+
+    def test_without_being_asked_a_run_rebuilds_nothing(self):
+        # An event already in the archive costs the same minutes to fetch again
+        # as it did the first time, so this never happens by accident.
+        got = self.plan(done={"a", "b", "c", "d"}, behind={"b", "c", "d"})
+        self.assertEqual(got, ["a"])
+
+
+class TestTheRebuildIsWiredUp(unittest.TestCase):
+    """main() reads the archive and hands the plan what it found."""
+
+    def setUp(self):
+        import tempfile
+        from pathlib import Path as P
+        self.tmp = P(tempfile.mkdtemp())
+
+    def run_main(self, extra_argv):
+        """One run of main() against a fake blog and a two-event archive."""
+        import io, sys, types, archive, run
+        from contextlib import redirect_stdout
+        from unittest import mock
+        root = self.tmp / "events"
+        for slug, built in (("newest", 2), ("stale", 1)):
+            archive.write_event(root, slug, {"event": slug, "sample": False,
+                                             "coverageBy": "Konami", "built": built,
+                                             "updated": "2026-01-01", "formats": []}, [])
+        ranked = [(s, [{"kind": "pairings"}, {"kind": "standings"}], "2026-01-01")
+                  for s in ("newest", "stale")]
+        built = []
+        def fake_build_one(f, slug, posts, ended, limit):
+            built.append(slug)
+            return ({"event": slug, "sample": False, "coverageBy": "Konami",
+                     "built": 2, "updated": ended, "formats": []}, [], [])
+        argv = ["run.py", "--cache", f"{self.tmp}/cache", "--archive", str(root),
+                "--manifest", f"{self.tmp}/events.json", *extra_argv]
+        with mock.patch.object(sys, "argv", argv), \
+             mock.patch.object(run, "Fetcher",
+                               lambda **kw: types.SimpleNamespace(get=lambda u, **k: "<urlset/>")), \
+             mock.patch.object(run, "parse_sitemap_index", lambda x: []), \
+             mock.patch.object(run, "events_by_recency", lambda e: ranked), \
+             mock.patch.object(run, "coherence_problem", lambda *a: None), \
+             mock.patch.object(run, "build_one", fake_build_one), \
+             redirect_stdout(io.StringIO()):
+            run.main()
+        return built
+
+    def test_asking_for_a_rebuild_reaches_the_stale_event(self):
+        self.assertEqual(self.run_main(["--rebuild", "5"]), ["newest", "stale"])
+
+    def test_not_asking_leaves_it_alone(self):
+        # The newest event is always rebuilt because it may still be running.
+        # Nothing else is, without being asked.
+        self.assertEqual(self.run_main([]), ["newest"])
+
+    def test_the_archive_is_not_read_unless_a_rebuild_was_asked_for(self):
+        # Not a behaviour, a cost: this reads every event file, and the
+        # scheduled run fires every ten minutes against an archive of 145 of
+        # them, some over ten megabytes.
+        import archive, run
+        from unittest import mock
+        with mock.patch.object(archive, "behind",
+                               mock.Mock(side_effect=AssertionError("read the archive"))):
+            self.assertEqual(self.run_main([]), ["newest"])
+
+
 class TestARejectedEventIsRemembered(unittest.TestCase):
     """Otherwise the backfill cannot get past one.
 
@@ -3947,7 +4089,7 @@ class TestARejectedEventIsRemembered(unittest.TestCase):
                 cut[0]["pairings"] = cut[0]["pairings"][:3]
             return (event, [], [])
 
-        def plan(entries, done, backfill):
+        def plan(entries, done, backfill, rebuild=0, behind=frozenset()):
             return [(s, [{"kind": "pairings"}], f"2026-0{i}-01")
                     for i, s in enumerate(("e1", "e2", "e3"), start=1) if s not in done]
 
