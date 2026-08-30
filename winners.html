@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-theme-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Not meant to be found. The coverage here is Konami's, republished
+       for one reader, so it should not turn up in search results for
+       Duelists looking for their own records. robots.txt says the same
+       to crawlers that read it before the page. -->
+  <meta name="robots" content="noindex, nofollow">
+<title>Winners — Duel Desk</title>
+<meta name="description" content="Every event winner in the Duel Desk archive.">
+<link rel="canonical" href="https://dueldesk.reizu.dev/winners.html">
+
+<!-- Theme is resolved before first paint so the page never flashes the wrong one. -->
+<script>
+(function(){
+  var root = document.documentElement, mode = 'dark';
+  try { mode = localStorage.getItem('dd-theme') || 'dark'; } catch (e) {}
+  if (mode !== 'light' && mode !== 'dark' && mode !== 'system') mode = 'dark';
+  root.dataset.themeMode = mode;
+  var theme = mode === 'system'
+    ? (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+    : mode;
+  root.dataset.theme = theme;
+
+  /* Browsers use the FIRST theme-color whose media matches, and a tag with no
+     media always matches. Inserting one here -- while the media-query pair
+     below is still unparsed -- puts it first, so an explicit choice wins over
+     the OS preference. Without JS the tag never exists and the media pair
+     applies, which is the right fallback. */
+  var meta = document.createElement('meta');
+  meta.name = 'theme-color';
+  meta.id = 'theme-color';
+  meta.content = theme === 'light' ? '#EDF0F6' : '#0E1119';
+  document.head.appendChild(meta);
+})();
+</script>
+
+<!-- Fallback for no-JS; the script above inserts a media-less tag ahead of these. -->
+<meta name="theme-color" content="#EDF0F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1119" media="(prefers-color-scheme: dark)">
+<!-- Two-tier icon set: the single lit chip carries 16-48px, where the full
+     round track would disintegrate; the track itself takes over from 64px up.
+     No SVG favicon on purpose - browsers prefer SVG at every size, which would
+     collapse the two tiers back into one. icons/*.svg are the design sources. -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/icons/favicon-48.png">
+<!-- Nothing larger is offered as rel="icon". A browser that picks the biggest
+     candidate would render the three-chip track at 16px, which is the mush the
+     two tiers exist to avoid. Install icons live in the manifest instead. -->
+<link rel="mask-icon" href="/icons/mask-icon.svg" color="#F05B9C">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Duel Desk">
+<meta property="og:title" content="Winners — Duel Desk">
+<meta property="og:description" content="Every event winner in the Duel Desk archive.">
+<meta property="og:url" content="https://dueldesk.reizu.dev/winners.html">
+<meta property="og:image" content="https://dueldesk.reizu.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Duel Desk — Yu-Gi-Oh! TCG event coverage">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Winners — Duel Desk">
+<meta name="twitter:description" content="Every event winner in the Duel Desk archive.">
+<meta name="twitter:image" content="https://dueldesk.reizu.dev/og.png">
+
+<!-- This site's own coverage feed. Konami's official blog is credited in the footer as the data source. -->
+<link rel="alternate" type="application/rss+xml" title="Duel Desk coverage feed" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="shell masthead__in">
+    <a class="brand" href="/">
+      <span class="brand__mark">Duel&nbsp;Desk</span>
+      <span class="brand__sub">Yu-Gi-Oh!&nbsp;TCG event coverage</span>
+    </a>
+
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <label class="visually-hidden" for="q">Search winners, events and decks</label>
+      <input id="q" type="search" placeholder="Search winners, events, decks" autocomplete="off">
+      <kbd>/</kbd>
+    </div>
+
+    <div class="themer" role="group" aria-label="Colour theme">
+      <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-set="dark" aria-pressed="true">Dark</button>
+      <button type="button" data-theme-set="system" aria-pressed="false">System</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="shell wsec" aria-labelledby="win-h">
+    <div class="sechead">
+      <div>
+        <h1 id="win-h">Winners</h1>
+        <!-- Said here rather than left to be inferred from a short list: the
+             archive holds far more events than it knows winners for, and a
+             reader counting rows should know which number they are counting. -->
+        <p class="wsec__note">Every event the coverage names a winner for. Where it never did — and
+          it often did not — the event is not listed.</p>
+      </div>
+      <p class="count" id="wcount">Loading</p>
+    </div>
+
+    <div id="winners"></div>
+    <p class="visually-hidden" role="status" aria-live="polite" id="announce"></p>
+  </section>
+</main>
+
+<footer>
+  <div class="shell">
+    <p class="srcline">
+      Coverage is sourced from Konami's official
+      <a href="https://yugiohblog.konami.com/" rel="external noreferrer">Yu-Gi-Oh! TCG blog</a>.
+      <a href="/">Back to the coverage</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="common.js" defer></script>
+<script src="winners.js" defer></script>
+</body>
+</html>

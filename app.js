@@ -2,12 +2,8 @@
    0. HELPERS
    ============================================================ */
 
-/* Everything rendered through innerHTML goes through this first.
-   Every name, headline and deck on the page came out of somebody
-   else's markup, by way of a scraper. Escape at the boundary,
-   always. */
-const ESCAPES = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
-const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ESCAPES[c]);
+/* esc(), safeUrl() and offsite() live in common.js, which every page loads:
+   they are the same job on the winners list as they are here. */
 
 /* esc() makes a value safe *inside* an attribute. It does not make a URL safe
    *as* an href: "javascript:alert(1)" contains none of the five characters
@@ -60,52 +56,9 @@ function jumpTarget(post){
   return round ? {format: name, round: round.id, view: post.kind} : null;
 }
 
-function offsite(url){
-  /* Every url here has been through safeUrl(), so it is either an http(s) URL or
-     the inert '#'. That is why this needs no guard of its own: '#' resolves
-     against this page and compares equal, and nothing reaching here can throw. */
-  return new URL(url, location.href).host !== location.host;
-}
 
-function safeUrl(raw){
-  const value = String(raw ?? '').trim();
-  /* Empty and fragment-only inputs resolve to the site's own homepage once the
-     URL constructor gets hold of them, which would turn a feed item with no
-     <link> into a working link somewhere unrelated. Keep those inert. */
-  if (!value || value.startsWith('#')) return '#';
-  try {
-    const u = new URL(value, location.origin);
-    return (u.protocol === 'https:' || u.protocol === 'http:') ? u.href : '#';
-  } catch {
-    return '#';                     // unparseable -> inert
-  }
-}
+/* Section 1, the theme, is in common.js -- the winners page needs it too. */
 
-/* ============================================================
-   1. THEME
-   ------------------------------------------------------------
-   The resolved theme is already on <html> from the inline script
-   in <head>, so there is no flash. This only handles changes.
-   ============================================================ */
-const mq = window.matchMedia('(prefers-color-scheme: light)');
-const themeButtons = document.querySelectorAll('[data-theme-set]');
-let themeMode = document.documentElement.dataset.themeMode || 'dark';
-
-function applyTheme(){
-  const t = themeMode === 'system' ? (mq.matches ? 'light' : 'dark') : themeMode;
-  document.documentElement.dataset.theme = t;
-  document.documentElement.dataset.themeMode = themeMode;
-  /* Keep the browser chrome with the chosen theme, not the OS one. */
-  const themeMeta = document.getElementById('theme-color');
-  if (themeMeta) themeMeta.content = t === 'light' ? '#EDF0F6' : '#0E1119';
-  themeButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.themeSet === themeMode)));
-}
-themeButtons.forEach(b => b.addEventListener('click', () => {
-  themeMode = b.dataset.themeSet;
-  try { localStorage.setItem('dd-theme', themeMode); } catch (e) { /* private mode — session only */ }
-  applyTheme();
-}));
-mq.addEventListener('change', () => { if (themeMode === 'system') applyTheme(); });
 
 /* ============================================================
    2. THE COVERAGE FEED
@@ -593,6 +546,22 @@ async function loadRounds(entry){
   return {unchanged:false, data};
 }
 
+/* ?event=<slug>, where the winners list sends a reader and where a link to one
+   event rather than to the site comes from.
+
+   Only consulted when there is no event on screen, which is the first load and
+   nothing else: a poll leaves a reader's choice alone because the choice is
+   still valid, not because this refuses to answer twice.
+
+   Ignored unless the archive actually holds it. A slug that is not there would
+   otherwise show an empty page for a URL that looks deliberate. */
+function wantedEvent(){
+  try {
+    const want = new URLSearchParams(location.search).get('event');
+    return want && CATALOG.some(e => e.slug === want) ? want : null;
+  } catch { return null; }
+}
+
 async function refreshRounds({poll = false} = {}){
   try {
     const catalog = await loadCatalog();
@@ -603,7 +572,7 @@ async function refreshRounds({poll = false} = {}){
     /* Whatever the reader chose, unless the archive no longer offers it. The
        newest event is the default, and a poll must not move them off the one
        they are reading just because a newer one appeared. */
-    if (!activeEvent || !entryFor(activeEvent)) activeEvent = CATALOG[0].slug;
+    if (!activeEvent || !entryFor(activeEvent)) activeEvent = wantedEvent() ?? CATALOG[0].slug;
 
     const result = await loadRounds(entryFor(activeEvent));
     if (result.unchanged){

@@ -115,9 +115,17 @@ class LocalFiles extends ResourceLoader {
  * @param {boolean} opts.prefersLight what matchMedia reports
  * @param {string} opts.storedTheme   value seeded into localStorage
  * @param {boolean} opts.settle       wait for boot fetches (default true)
+ * @param {string}  opts.page          which page to load (default index.html)
+ * @param {string}  opts.search        query string the page is loaded with
+ * @param {string}  opts.settleOn      expression that is true once the page has
+ *                                     finished booting. Defaults to the
+ *                                     coverage page's two loads; another page
+ *                                     has different globals and must say so.
  */
 export async function loadPage(opts = {}) {
-  const { routes = {}, prefersLight = false, storedTheme = null, settle = true } = opts;
+  const { routes = {}, prefersLight = false, storedTheme = null, settle = true,
+          page: file = 'index.html', search = '',
+          settleOn = "coverageState !== 'loading' && roundsState !== 'loading'" } = opts;
   const calls = [];
 
   // Swallow the page's own console noise; surface real jsdom errors.
@@ -125,12 +133,12 @@ export async function loadPage(opts = {}) {
   const errors = [];
   virtualConsole.on('jsdomError', (e) => errors.push(e));
 
-  const dom = new JSDOM(fixture('index.html'), {
+  const dom = new JSDOM(fixture(file), {
     /* The site's real origin, because the page now decides what to link by
        comparing hosts: an item pointing at this site is not a destination, one
        pointing at Konami is. Served from anywhere else, the sample feed's own
        links look external and the coverage list sprouts links to itself. */
-    url: ORIGIN,
+    url: ORIGIN + search,
     runScripts: 'dangerously',
     resources: new LocalFiles(),
     pretendToBeVisual: true,
@@ -179,11 +187,11 @@ export async function loadPage(opts = {}) {
     close: () => dom.window.close(),
   };
 
-  if (settle) await settled(page);
+  if (settle) await waitFor(page, settleOn);
   return page;
 }
 
-/** Wait until both boot loads have left their loading state. */
+/** Wait until the coverage page's two boot loads have left their loading state. */
 export async function settled(page, timeout = 4000) {
   await waitFor(page, "coverageState !== 'loading' && roundsState !== 'loading'", timeout);
   await tick(page, 2);

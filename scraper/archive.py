@@ -152,6 +152,31 @@ def behind(root: str | Path, version: int) -> set[str]:
     return out
 
 
+def champions(event: dict) -> list[dict]:
+    """Who won each of an event's tournaments, and with what.
+
+    Lifted into the manifest because the winners page lists every event at
+    once, and the alternative is fetching a hundred and forty round files --
+    several of them over ten megabytes -- to read one name out of each.
+
+    The deck comes from the champion's own side of the last pairing published,
+    which is where the coverage puts deck types when it publishes them at all.
+    """
+    out = []
+    for fmt in event.get("formats") or []:
+        if not (won := fmt.get("champion")):
+            continue
+        played = [r for r in fmt.get("rounds") or [] if r.get("pairings")]
+        deck = None
+        for row in (played[-1]["pairings"] if played else []):
+            if row.get("a") == won:
+                deck = row.get("aDeck")
+            elif row.get("b") == won:
+                deck = row.get("bDeck")
+        out.append({"format": fmt.get("format"), "name": won, "deck": deck})
+    return out
+
+
 def summarise(slug: str, event: dict, posts: int = 0) -> dict:
     """The manifest's entry for one event: enough to list and choose it, and
     nothing that would make the manifest grow with the coverage."""
@@ -171,6 +196,10 @@ def summarise(slug: str, event: dict, posts: int = 0) -> dict:
         # opened, so without this it could only count what it had already
         # loaded -- and a total that climbs as you read is worse than none.
         "postCount": posts,
+        # Only where there is one. Most events have no champion on record, and
+        # an empty list on every one of them is weight in a file the page
+        # fetches before anything is on screen.
+        **({"champions": won} if (won := champions(event)) else {}),
         "formats": [{"format": f.get("format"),
                      "swissRounds": f.get("swissRounds"),
                      "duelists": f.get("duelists"),

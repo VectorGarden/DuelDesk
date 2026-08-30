@@ -637,6 +637,33 @@ test('the list shows a handful of events and offers the rest', async (t) => {
   assert.equal(page.$('#events [data-show-all]'), null, 'nothing left to show');
 });
 
+test('a link naming an event opens that event, not the newest', async (t) => {
+  // Where the winners list sends a reader: /?event=<slug>. A link that landed
+  // on the newest event instead would be promising a destination it does not
+  // reach, which is the rule the coverage rows already follow.
+  const page = await loadPage({ ...withPosts(), search: `?event=${OLDER.slug}` });
+  t.after(() => page.close());
+  assert.equal(page.get('activeEvent'), OLDER.slug);
+  assert.equal(page.json('eventInfo.event'), 'YCS Columbus');
+});
+
+test('a link naming an event the archive lacks falls back to the newest', async (t) => {
+  // Rather than an empty page for a URL that looks deliberate.
+  const page = await loadPage({ ...withPosts(), search: '?event=no-such-event' });
+  t.after(() => page.close());
+  assert.equal(page.get('activeEvent'), SAMPLE.slug);
+});
+
+test('a poll does not drag the reader back to the link they arrived by', async (t) => {
+  const page = await loadPage({ ...withPosts(), search: `?event=${OLDER.slug}` });
+  t.after(() => page.close());
+  page.run(`selectEvent(${JSON.stringify(SAMPLE.slug)})`);
+  await tick(page, 3);
+  page.run('refreshRounds({poll: true})');
+  await tick(page, 3);
+  assert.equal(page.get('activeEvent'), SAMPLE.slug);
+});
+
 test('an event the feed names but the archive does not is still listed', async (t) => {
   // It should not happen -- the feed is built from the archive -- and if it
   // does the coverage is real, so hiding it would be the wrong way round.

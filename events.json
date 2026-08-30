@@ -9,6 +9,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-08-quebec/rounds.json",
       "postCount": 139,
+      "champions": [
+        {
+          "format": "Advanced",
+          "name": "Francisco Andres Osorio Bobadilla",
+          "deck": "Elfnote"
+        }
+      ],
       "formats": [
         {
           "format": "Advanced",
@@ -51,6 +58,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-north-america-genesys-championship/rounds.json",
       "postCount": 46,
+      "champions": [
+        {
+          "format": "Genesys",
+          "name": "Hanko Hon Kau Chow",
+          "deck": "Blitzclique"
+        }
+      ],
       "formats": [
         {
           "format": "Genesys",
@@ -177,6 +191,18 @@
       "coverageBy": "Konami",
       "path": "events/2026-05-ycs-columbus/rounds.json",
       "postCount": 122,
+      "champions": [
+        {
+          "format": "Advanced",
+          "name": "Jesse Dean Kotton",
+          "deck": "Branded Dracotail"
+        },
+        {
+          "format": "Genesys",
+          "name": "Xiaoyi Stanley Huang",
+          "deck": "Red Dragon Archfiend"
+        }
+      ],
       "formats": [
         {
           "format": "Advanced",
@@ -276,6 +302,18 @@
       "coverageBy": "Konami",
       "path": "events/2026-02-300th-na/rounds.json",
       "postCount": 160,
+      "champions": [
+        {
+          "format": "Advanced",
+          "name": "Kamal Derrick El Crooks Valdez",
+          "deck": "Radiant Typhoon Yummy"
+        },
+        {
+          "format": "Genesys",
+          "name": "Allen Cai",
+          "deck": "Radiant Typhoon"
+        }
+      ],
       "formats": [
         {
           "format": "Advanced",
@@ -324,6 +362,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-12-rdycs-na/rounds.json",
       "postCount": 76,
+      "champions": [
+        {
+          "format": null,
+          "name": "Sabit Zada",
+          "deck": "Vanquish Soul K9"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -361,6 +406,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-11-ycs-pittsburgh-pa/rounds.json",
       "postCount": 88,
+      "champions": [
+        {
+          "format": null,
+          "name": "Aditya Shirish Dharap",
+          "deck": "Dracotail"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -398,6 +450,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-10-ycs-anaheim/rounds.json",
       "postCount": 91,
+      "champions": [
+        {
+          "format": null,
+          "name": "Kamal Derrick El Crooks Valdez",
+          "deck": "Crystron K9"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -435,6 +494,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-vancouver/rounds.json",
       "postCount": 80,
+      "champions": [
+        {
+          "format": null,
+          "name": "Steven J. Trifunoski",
+          "deck": "Yummy"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -471,6 +537,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-central-america-wcq/rounds.json",
       "postCount": 23,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alexander Molina Hernandez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -489,6 +562,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-05-ycs-providence/rounds.json",
       "postCount": 97,
+      "champions": [
+        {
+          "format": null,
+          "name": "Charley Ray Futch III",
+          "deck": "Mitsurugi Ryzeal"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -545,6 +625,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-buenos-aires-argentina/rounds.json",
       "postCount": 25,
+      "champions": [
+        {
+          "format": null,
+          "name": "Luca Daniel Garcia Gonzalez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -582,6 +669,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-team-ycs-san-salvador-el-salvador/rounds.json",
       "postCount": 19,
+      "champions": [
+        {
+          "format": null,
+          "name": "Look Pak at Him",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -618,6 +712,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-02-ycs-orlando/rounds.json",
       "postCount": 80,
+      "champions": [
+        {
+          "format": null,
+          "name": "Tayveon Garrett Crowley",
+          "deck": "Ryzeal Fiendsmith"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -636,6 +737,13 @@
       "coverageBy": "Konami",
       "path": "events/2024-12-ycs-anaheim/rounds.json",
       "postCount": 76,
+      "champions": [
+        {
+          "format": null,
+          "name": "Steven Trifunoski",
+          "deck": "Fiendsmith Ryzeal"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -654,6 +762,13 @@
       "coverageBy": "Konami",
       "path": "events/2024-11-north-america-remote-duel-ycs/rounds.json",
       "postCount": 51,
+      "champions": [
+        {
+          "format": null,
+          "name": "Mario Angelo De Micco",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -691,6 +806,13 @@
       "coverageBy": "Konami",
       "path": "events/2024-10-ycs-niagara-falls/rounds.json",
       "postCount": 79,
+      "champions": [
+        {
+          "format": null,
+          "name": "Landon Edward Oliver",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -765,6 +887,13 @@
       "coverageBy": "Konami",
       "path": "events/2024-08-ycs-sacramento/rounds.json",
       "postCount": 64,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jesse Dean Kotton",
+          "deck": "Fiendsmith Snake-Eye"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -819,6 +948,13 @@
       "coverageBy": "Konami",
       "path": "events/2024-central-america-wcq/rounds.json",
       "postCount": 28,
+      "champions": [
+        {
+          "format": null,
+          "name": "Luis Gabriel Romo Rosas",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -967,6 +1103,13 @@
       "coverageBy": "Konami",
       "path": "events/2024-team-ycs-san-jose-costa-rica/rounds.json",
       "postCount": 20,
+      "champions": [
+        {
+          "format": null,
+          "name": "kids next door",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -985,6 +1128,13 @@
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-january-2024/rounds.json",
       "postCount": 24,
+      "champions": [
+        {
+          "format": null,
+          "name": "Rafael Mariano Reich",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1021,6 +1171,13 @@
       "coverageBy": "Konami",
       "path": "events/2023-ycs-santa-cruz-de-la-sierra/rounds.json",
       "postCount": 21,
+      "champions": [
+        {
+          "format": null,
+          "name": "Michel Verissimo Da Silva Luiz",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1165,6 +1322,13 @@
       "coverageBy": "Konami",
       "path": "events/2023-05-ycs-philadelphia/rounds.json",
       "postCount": 107,
+      "champions": [
+        {
+          "format": null,
+          "name": "Denis Nadas",
+          "deck": "Kashtira"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1312,6 +1476,13 @@
       "coverageBy": "Konami",
       "path": "events/2022-11-ycs-pasadena/rounds.json",
       "postCount": 54,
+      "champions": [
+        {
+          "format": null,
+          "name": "Hani Yasser Jawhari",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1548,6 +1719,13 @@
       "coverageBy": "Konami",
       "path": "events/2022-january-remote-duel-ycs/rounds.json",
       "postCount": 61,
+      "champions": [
+        {
+          "format": null,
+          "name": "Carlos Cristobal Sepulveda Vergara",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1712,6 +1890,13 @@
       "coverageBy": "Konami",
       "path": "events/2019-south-america-wcq/rounds.json",
       "postCount": 29,
+      "champions": [
+        {
+          "format": null,
+          "name": "Nicolas Miguel Vera Avila",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1730,6 +1915,13 @@
       "coverageBy": "Konami",
       "path": "events/2019-central-america-wcq/rounds.json",
       "postCount": 22,
+      "champions": [
+        {
+          "format": null,
+          "name": "Angel Fernando Ovalle Rivera",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1934,6 +2126,13 @@
       "coverageBy": "Konami",
       "path": "events/2018-central-america-wcq/rounds.json",
       "postCount": 68,
+      "champions": [
+        {
+          "format": null,
+          "name": "Roger Guzman Garcia",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2209,6 +2408,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-central-american-wcq/rounds.json",
       "postCount": 64,
+      "champions": [
+        {
+          "format": null,
+          "name": "Pedro Benhumea Salto",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2319,6 +2525,13 @@
       "coverageBy": "Konami",
       "path": "events/201611-anaheim-ca/rounds.json",
       "postCount": 50,
+      "champions": [
+        {
+          "format": null,
+          "name": "Elvis Vu",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2537,6 +2750,13 @@
       "coverageBy": "Konami",
       "path": "events/201504-bogota-d-c-colombia/rounds.json",
       "postCount": 28,
+      "champions": [
+        {
+          "format": null,
+          "name": "Barrett Arthur Keys",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
