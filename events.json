@@ -475,12 +475,12 @@
       "slug": "2025-ycs-lima-peru",
       "event": "YCS Lima",
       "location": "Lima, Peru",
-      "updated": "2025-09-28",
+      "updated": "2025-10-02",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-lima-peru/rounds.json",
-      "postCount": 24,
+      "postCount": 27,
       "formats": [
         {
           "format": null,
@@ -523,7 +523,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-north-america-wcq/rounds.json",
-      "postCount": 84,
+      "postCount": 92,
       "formats": [
         {
           "format": null,
@@ -592,7 +592,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-mexico-city-mexico/rounds.json",
-      "postCount": 27,
+      "postCount": 28,
       "formats": [
         {
           "format": null,
@@ -629,7 +629,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-buenos-aires-argentina/rounds.json",
-      "postCount": 25,
+      "postCount": 26,
       "champions": [
         {
           "format": null,
@@ -668,12 +668,12 @@
       "slug": "2025-team-ycs-san-salvador-el-salvador",
       "event": "TEAM YCS San Salvador",
       "location": "San Salvador, El Salvador",
-      "updated": "2025-03-03",
+      "updated": "2025-03-05",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-team-ycs-san-salvador-el-salvador/rounds.json",
-      "postCount": 19,
+      "postCount": 22,
       "champions": [
         {
           "format": null,
@@ -698,7 +698,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-february-2025/rounds.json",
-      "postCount": 22,
+      "postCount": 24,
       "formats": [
         {
           "format": null,
@@ -2894,6 +2894,31 @@
       ]
     },
     {
+      "slug": "2012-central-american-wcq",
+      "event": "Central America WCQ 2012",
+      "updated": "2012-06-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2012-central-american-wcq/rounds.json",
+      "postCount": 14,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alvaro Manuel Gonzalez Orea",
+          "deck": "Six Samurai"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 0,
+          "duelists": 0,
+          "rounds": 1
+        }
+      ]
+    },
+    {
       "slug": "11-10-columbus",
       "event": "YCS Columbus",
       "updated": "2011-10-23",
@@ -2908,6 +2933,24 @@
           "swissRounds": 11,
           "duelists": 100,
           "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "wcs-2010",
+      "event": "Wcs 2010",
+      "updated": "2010-08-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/wcs-2010/rounds.json",
+      "postCount": 12,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 5,
+          "duelists": 0,
+          "rounds": 2
         }
       ]
     }
