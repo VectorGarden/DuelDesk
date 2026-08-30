@@ -79,6 +79,11 @@ _ENTRY = re.compile(r"class=\"[^\"]*entry-content[^\"]*\"[^>]*>(.*?)"
                     r"(?:</div>\s*</div>|<footer)", re.S | re.I)
 _SCRIPTS = re.compile(r"<(script|style).*?</\1>", re.S | re.I)
 LEAD_CHARS = 400
+# A finals feature match is a whole match written out, and the sentence naming
+# the champion is somewhere in it -- 5,000 characters in, for the one that
+# crowned the North America Remote Duel YCS. So these are kept whole, within
+# reason. Only the finals, and only until the build has read them.
+MATCH_CHARS = 12000
 
 
 def _text(fragment: str) -> str:
@@ -426,14 +431,19 @@ def parse_post(doc: str, url: str = "") -> Post:
     if (table and kind in ("pairings", "standings")
             and table.kind in ("pairings", "standings") and table.kind != kind):
         kind = table.kind
+    rnd = detect_round(basis, kind)
     return Post(
         title=title,
         kind=kind,
         fmt=detect_format(basis),
-        round=detect_round(basis, kind),
+        round=rnd,
         table=table,
-        # Only for the posts that might announce a winner. Every other kind is
-        # read from its table, and keeping their prose would be so much weight
-        # carried through the build for nothing.
-        lead=lead(doc) if kind == "result" else "",
+        # Only for the posts that might name a champion: the ones that announce
+        # a winner, and the final's own feature match, which says who took it
+        # in a sentence somewhere in the middle of the match it describes.
+        # Every other kind is read from its table, and keeping their prose
+        # would be so much weight carried through the build for nothing.
+        lead=(lead(doc) if kind == "result"
+              else lead(doc, MATCH_CHARS) if kind == "feature" and rnd == "Final"
+              else ""),
     )

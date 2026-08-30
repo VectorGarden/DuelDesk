@@ -53,6 +53,25 @@ SIDE_EVENT = re.compile(
 # whose post is headed "And the Advanced Format Winner is".
 ANNOUNCEMENT = re.compile(r"\bwinners?\b|\bchampions?\b", re.I)
 
+# A sentence that crowns somebody, rather than looking forward to it. The
+# finals feature match is prose, and most of what it says about champions is
+# not a result: a preview of what is at stake, or a Duelist's history.
+CROWNS = re.compile(r"\bis (?:your|the|our)\b[^.!?]*\bchampions?\b"
+                    r"|\bcrown\b|\bchampions? of\b"
+                    r"|\bbecomes? (?:your|the|our)\b[^.!?]*\bchampions?\b", re.I)
+
+# What makes such a sentence a prediction, a condition or a biography instead.
+# Every one of these was found in a real finals feature match:
+#
+#   "...is now just a short win away from becoming a YCS Champion!"
+#   "One of these Duelists will soon gain the honor..."
+#   "Neven is a 2-time YCS Champion, and although Garcia only has 1 YCS win..."
+#
+# The last is the dangerous one: it is a fact about the runner-up, in the past
+# tense, in a post about the match he went on to lose.
+HEDGE = re.compile(r"\b(will|would|could|about to|soon|away from|one of|if"
+                   r"|going to|hopes?|chance|reigning|\d+-time|two-time)\b", re.I)
+
 # Which side of a beating each name is on. Only consulted when a post names two
 # of the cut's Duelists, which is what the final's write-up naturally does.
 DEFEAT = re.compile(
@@ -108,6 +127,22 @@ def announces_a_winner(title: str, opening: str = "") -> bool:
     return not (SIDE_EVENT.search(title or "") or SIDE_EVENT.search(opening[:160]))
 
 
+def crowning(text: str) -> str:
+    """The sentence in which a post crowns somebody, or "".
+
+    Read from the end, because that is where a result is and the previews are
+    at the front. A sentence that hedges, or that is about one of the side
+    events, is not a result whatever else it says.
+    """
+    for sentence in reversed(re.split(r"(?<=[.!?])\s+", text or "")):
+        if not CROWNS.search(sentence):
+            continue
+        if HEDGE.search(sentence) or SIDE_EVENT.search(sentence):
+            continue
+        return sentence
+    return ""
+
+
 def champion(candidates: list[str], posts: list[dict], fmt: str | None = None) -> str | None:
     """Which of these Duelists the coverage says won, or None.
 
@@ -122,7 +157,15 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None) -
     claimed = set()
     for post in posts:
         title, text = post.get("title") or "", post.get("text") or ""
-        if not announces_a_winner(title, text):
+        if post.get("kind") == "feature":
+            # A feature match is prose about two Duelists, and it names both of
+            # them throughout -- so unlike a winner post, the whole of it says
+            # nothing about which one took it. One sentence does, and only that
+            # sentence is read.
+            text = crowning(text)
+            if not text:
+                continue
+        elif not announces_a_winner(title, text):
             continue
         # A post that names a format is about that format's bracket and no
         # other. One that names none is read against whichever is asking.
