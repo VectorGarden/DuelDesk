@@ -2245,7 +2245,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201703-uds-winter-invitational-las-vegas/rounds.json",
-      "postCount": 68,
+      "postCount": 66,
       "formats": [
         {
           "format": null,
@@ -2318,13 +2318,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201611-anaheim-ca/rounds.json",
-      "postCount": 51,
+      "postCount": 50,
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 1121,
-          "rounds": 13
+          "rounds": 12
         }
       ]
     },
