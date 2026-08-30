@@ -160,6 +160,25 @@ in October and read in December would otherwise call a November tournament upcom
 are a fact about the event, "upcoming" is a fact about when you are looking. An event stays in the
 list through its final day rather than disappearing on the morning of its last round.
 
+### Pairings that are not in a table
+
+Konami sometimes writes a round out as sentences rather than publishing a table:
+
+```
+Table 1: Jordan Farris (Floowandereeze) vs. Liam Mac Oscair (Mathmech @Ignister)
+Table 1: Hideki Kawai (Japan – 9 points – Frog Monarch) vs. Kei Kuwano (…)
+Table 1: Medina Hernandez, Omar (HEROES) vs. Franco Flores, Braulio (…) Braulio wins 2-0
+```
+
+Those posts carry no `<table>` at all, so the builder dropped them — the 2023 North America Remote
+Duel YCS published its Top 8 and Top 4 that way and the archive had no cut for it. They are read as
+prose where there is no table to read, never as a second opinion where there is one.
+
+The bracket says where a name stops: whatever else is inside it, the deck is the last part, and the
+result sentences that trail some rows are not part of anybody's name. Every table in a round parses
+or none of it is used — a bracket short a match is not a smaller bracket, it is a wrong one. A piece
+with no "vs" in it is not a failure but a bye, which is a real thing to publish and nothing to pair.
+
 ### Who won
 
 The blog never records a winner as data. A final's pairing names two Duelists and does not say
