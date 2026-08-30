@@ -1215,16 +1215,34 @@ class TestProvenanceCheck(unittest.TestCase):
 
     CHECKER = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
 
-    def check(self, mutate):
-        """Run the checker over the newest published event, mutated.
+    def subject(self):
+        """The newest published event with a top cut these rules can be read on.
 
-        Found through the manifest rather than by path, exactly as the page
-        finds it, so this cannot end up checking a file nothing serves.
+        Through the manifest rather than by path, exactly as the page finds it,
+        so this cannot end up checking a file nothing serves -- but the newest
+        event is whichever tournament happened last, and its shape is not this
+        suite's to choose. The 2026 World Championship arrived in the archive
+        with a single cut round, and every test here that reaches for a second
+        one broke on data that was perfectly valid.
+
+        So the newest is not assumed to be suitable, only preferred: the first
+        one down the list carrying two rounds of cut pairings is used.
         """
-        import json, subprocess, tempfile
+        import json
         root = Path(__file__).resolve().parent.parent
         manifest = json.loads((root / "events.json").read_text())
-        good = json.loads((root / manifest["events"][0]["path"]).read_text())
+        for entry in manifest["events"]:
+            event = json.loads((root / entry["path"]).read_text())
+            fmt = (event.get("formats") or [{}])[0]
+            cut = [r for r in fmt.get("rounds") or [] if r.get("phase") == "Top cut"]
+            if len([r for r in cut if r.get("pairings")]) >= 2:
+                return event
+        raise self.skipTest("no published event has two rounds of cut pairings")
+
+    def check(self, mutate):
+        """Run the checker over a published event, mutated."""
+        import json, subprocess, tempfile
+        good = self.subject()
         mutate(good)
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
             json.dump(good, fh)
