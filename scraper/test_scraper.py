@@ -1982,6 +1982,135 @@ class TestEventWindows(unittest.TestCase):
         self.assertIsNone(entry.event_slug)
 
 
+def listing(*items):
+    """The events page's markup for a few entries."""
+    return "<ul>" + "".join(
+        f'<li><h6><a href="{href}">'
+        + "".join(f'<p class="small">{p}</p>' for p in paras)
+        + "</a></h6></li>" for href, paras in items) + "</ul>"
+
+
+class TestUpcomingEvents(unittest.TestCase):
+    """The schedule, which the blog does not carry.
+
+    The blog covers a tournament while it happens and says nothing before it,
+    so what is next comes from Konami's own listing at yugioh-card.com.
+    """
+
+    HOUSTON = ("/en/events-item/2026-ycs-houston/",
+               ["Yu-Gi-Oh! Championship Series Houston, Texas 2026",
+                "Houston, TX", "10/16/2026 - 10/18/2026"])
+
+    def parse(self, *items):
+        from upcoming import parse_events
+        return parse_events(listing(*items))
+
+    def test_an_event_is_read_whole(self):
+        got = self.parse(self.HOUSTON)[0]
+        self.assertEqual(got["event"], "YCS Houston")
+        self.assertEqual(got["location"], "Houston, TX")
+        self.assertEqual((got["starts"], got["ends"]), ("2026-10-16", "2026-10-18"))
+        self.assertEqual(got["url"],
+                         "https://www.yugioh-card.com/en/events-item/2026-ycs-houston/")
+
+    def test_the_series_and_the_state_and_the_year_come_out_of_the_name(self):
+        # The year is in the date beside it and the state is in the location
+        # beside that, so what is left is what anyone calls the tournament.
+        got = self.parse(
+            ("/e/1", ["Yu-Gi-Oh! Championship Series Guayaquil, Ecuador 2026",
+                      "Guayaquil, Ecuador", "10/02/2026 - 10/04/2026"]),
+            ("/e/2", ["Yu-Gi-Oh! Championship Series Santiago, Chile 2026",
+                      "Santiago, Chile", "11/27/2026 - 11/29/2026"]))
+        self.assertEqual([e["event"] for e in got], ["YCS Guayaquil", "YCS Santiago"])
+
+    def test_what_was_listed_is_kept_beside_the_name(self):
+        # The name shown is derived, so the source's own wording stays on record
+        # rather than being thrown away where nobody can check the derivation.
+        self.assertEqual(self.parse(self.HOUSTON)[0]["listed"],
+                         "Yu-Gi-Oh! Championship Series Houston, Texas 2026")
+
+    def test_an_event_with_no_city_keeps_its_whole_name(self):
+        # The Remote Duel events are named for a region and hosted on Discord.
+        # There is no city to find and cutting to one would leave "YCS".
+        got = self.parse(("/e/1", ["Latin America Remote Duel Yu-Gi-Oh! Championship Series",
+                                   "Latin America (hosted on Discord)",
+                                   "09/18/2026 - 09/20/2026"]))
+        self.assertEqual(got[0]["event"], "Latin America Remote Duel YCS")
+
+    def test_an_event_that_is_not_a_series_event_is_left_alone(self):
+        # New York Comic Con is not a YCS and guessing at its shape would only
+        # damage it.
+        got = self.parse(("/e/1", ["New York Comic Con 2026", "New York, NY",
+                                   "10/08/2026 - 10/11/2026"]))
+        self.assertEqual(got[0]["event"], "New York Comic Con 2026")
+
+    def test_an_open_ended_run_has_a_start_and_no_end(self):
+        # The promotions run until further notice. A start with no end is not a
+        # one-day event, and saying so is the difference between a promotion
+        # still on and one the page would call long finished.
+        got = self.parse(("/en/events/ygo_x_efootball/",
+                          ["Yu-Gi-Oh! x eFootball Collaboration",
+                           "North America & Latin America", "starts on 09/27/2025"]))
+        self.assertEqual((got[0]["starts"], got[0]["ends"]), ("2025-09-27", None))
+
+    def test_an_entry_with_no_date_is_not_an_event(self):
+        # The listing carries standing links -- policies, store locators -- in
+        # the same markup, and something that cannot say when it is does not go
+        # in front of a reader.
+        self.assertEqual(self.parse(("/en/events/organizedplay/", ["Organized Play Forms"])), [])
+
+    def test_they_come_out_soonest_first(self):
+        got = self.parse(
+            ("/e/1", ["Yu-Gi-Oh! Championship Series Santiago, Chile 2026",
+                      "Santiago, Chile", "11/27/2026 - 11/29/2026"]),
+            self.HOUSTON)
+        self.assertEqual([e["event"] for e in got], ["YCS Houston", "YCS Santiago"])
+
+    def test_the_file_records_when_it_was_read(self):
+        # Read every few months, so without this a reader cannot tell a quiet
+        # schedule from a stale one.
+        from upcoming import build
+        import datetime
+        got = build(listing(self.HOUSTON), datetime.date(2026, 8, 30))
+        self.assertEqual(got["fetched"], "2026-08-30")
+        self.assertEqual(len(got["events"]), 1)
+
+    def test_whether_it_has_happened_is_not_decided_here(self):
+        # A file written in October and read in December would otherwise call a
+        # November tournament upcoming. The date is a fact about the event;
+        # "upcoming" is a fact about when you are looking, so the page decides.
+        from upcoming import build
+        import datetime
+        got = build(listing(("/e/1", ["Yu-Gi-Oh! Championship Series Houston, Texas 2020",
+                                      "Houston, TX", "10/16/2020 - 10/18/2020"])),
+                    datetime.date(2026, 8, 30))
+        self.assertEqual(len(got["events"]), 1, "long past, and still written out")
+
+
+class TestUpcomingAgainstTheRealListing(unittest.TestCase):
+    """The saved page, so the parser is held to markup nobody here wrote."""
+
+    def setUp(self):
+        from pathlib import Path
+        self.page = (Path(__file__).parent.parent / "test" / "fixtures"
+                     / "yugioh-card-events.html").read_text(encoding="utf-8", errors="replace")
+
+    def test_the_shipped_listing_parses(self):
+        from upcoming import parse_events
+        got = parse_events(self.page)
+        self.assertEqual(len(got), 10)
+        names = [e["event"] for e in got]
+        for expected in ("YCS Houston", "YCS Orlando", "YCS Santiago", "YCS Guayaquil"):
+            self.assertIn(expected, names)
+
+    def test_every_event_read_has_the_four_things_the_page_shows(self):
+        from upcoming import parse_events
+        for e in parse_events(self.page):
+            self.assertTrue(e["event"], e)
+            self.assertRegex(e["starts"], r"^\d{4}-\d{2}-\d{2}$")
+            self.assertTrue(e["url"].startswith("https://www.yugioh-card.com/"), e)
+
+
 class TestQualifierAbbreviation(unittest.TestCase):
 
     def test_nawcq_is_the_north_america_qualifier(self):

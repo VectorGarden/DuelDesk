@@ -1592,6 +1592,87 @@ document.addEventListener('visibilitychange', () => {
   runPoll();
 });
 
+/* ============================================================
+   9. UPCOMING EVENTS — the schedule, which the blog does not carry
+   ------------------------------------------------------------
+   The blog covers a tournament while it happens and says nothing
+   before it, so what is next comes from Konami's own listing and
+   is read every few months rather than every few minutes.
+
+   Which of them are still to come is decided here rather than in
+   the file. A file written in October and read in December would
+   otherwise call a November tournament upcoming: the dates are a
+   fact about the event, "upcoming" is a fact about when you look.
+   ============================================================ */
+const upcomingEl = document.getElementById('upcoming');
+
+/* Local midnight. An event is upcoming all through its last day rather than
+   until the moment the clock passes its start. */
+const today = () => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; };
+
+const asDay = iso => {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso ?? ''));
+  return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+};
+
+function stillToCome(events, now){
+  return (Array.isArray(events) ? events : []).filter(e => {
+    /* Judged on the last day it runs, so a tournament is not dropped from the
+       list on the morning of its final round. An open-ended run -- the
+       promotions with a start and no end -- is judged on its start. */
+    const last = asDay(e?.ends) ?? asDay(e?.starts);
+    return last && last >= now;
+  });
+}
+
+/* "16–18 Oct 2026", or a single day where that is all there is. */
+function whenText(e){
+  const from = asDay(e.starts), to = asDay(e.ends);
+  if (!from) return '';
+  const opts = {day: 'numeric', month: 'short', year: 'numeric'};
+  if (!to || +to === +from) return from.toLocaleDateString('en-GB', opts);
+  const sameMonth = from.getMonth() === to.getMonth() && from.getFullYear() === to.getFullYear();
+  return sameMonth
+    ? `${from.getDate()}–${to.toLocaleDateString('en-GB', opts)}`
+    : `${from.toLocaleDateString('en-GB', {day: 'numeric', month: 'short'})} – `
+      + to.toLocaleDateString('en-GB', opts);
+}
+
+const UPCOMING_SHOWN = 4;
+
+function renderUpcoming(events){
+  if (!upcomingEl) return;
+  const soon = stillToCome(events, today()).slice(0, UPCOMING_SHOWN);
+  /* Nothing rendered rather than an empty heading: the card's own link to
+     Konami's listing is still below it and still answers the question. */
+  upcomingEl.innerHTML = soon.map(e => {
+    /* safeUrl answers "#" for anything it will not vouch for -- a missing URL,
+       a javascript: scheme -- and "#" is not a destination. */
+    const href = safeUrl(e.url ?? '');
+    const usable = href !== '#';
+    const body = `<strong>${esc(e.event)}</strong><span>${
+      [whenText(e), e.location].filter(Boolean).map(esc).join(' · ')}</span>`;
+    /* A link now that these events have a page to point at -- Konami's own
+       entry for each one. Where a URL will not do, the row stays plain text
+       rather than becoming an anchor that promises a destination it lacks. */
+    return usable
+      ? `<a class="up" href="${esc(href)}" rel="external noreferrer">${body}</a>`
+      : `<div class="up">${body}</div>`;
+  }).join('');
+}
+
+async function refreshUpcoming(){
+  try {
+    const res = await fetch('upcoming.json', {cache: 'no-cache'});
+    if (!res.ok) throw new Error(`upcoming responded ${res.status}`);
+    renderUpcoming((await res.json()).events);
+  } catch {
+    /* The card degrades to its own footer link, which is where this data came
+       from in the first place. A schedule nobody can fetch is not an error
+       worth putting in front of a reader. */
+  }
+}
+
 /* boot */
 applyTheme();
 renderEventMeta();
@@ -1600,4 +1681,5 @@ renderStamp();
 Promise.allSettled([
   refreshRounds(),  // independent of the feed: one failing must not block the other
   refreshCoverage(),
+  refreshUpcoming(),
 ]).then(() => schedulePoll(false));

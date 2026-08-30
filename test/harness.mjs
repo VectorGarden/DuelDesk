@@ -30,7 +30,7 @@ const ORIGIN = 'https://dueldesk.reizu.dev/';
 
    events/ is matched by prefix rather than by name, because the archive holds a
    directory per event and the page asks for the one it is reading. */
-const FIXTURES = new Set(['events.json', 'feed.xml']);
+const FIXTURES = new Set(['events.json', 'feed.xml', 'upcoming.json']);
 const fromFixtures = (name) => FIXTURES.has(name) || name.startsWith('events/');
 
 export const fixture = (name) =>

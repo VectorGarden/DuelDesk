@@ -1,0 +1,53 @@
+{
+  "fetched": "2026-08-30",
+  "events": [
+    {
+      "event": "YCS Long Past",
+      "listed": "Yu-Gi-Oh! Championship Series Long Past, Texas 2020",
+      "location": "Houston, TX",
+      "starts": "2020-10-16",
+      "ends": "2020-10-18",
+      "url": "https://www.yugioh-card.com/en/events-item/2020-ycs-long-past/"
+    },
+    {
+      "event": "YCS Houston",
+      "listed": "Yu-Gi-Oh! Championship Series Houston, Texas 2099",
+      "location": "Houston, TX",
+      "starts": "2099-10-16",
+      "ends": "2099-10-18",
+      "url": "https://www.yugioh-card.com/en/events-item/2099-ycs-houston/"
+    },
+    {
+      "event": "YCS Orlando",
+      "listed": "Yu-Gi-Oh! Championship Series Orlando, Florida 2099",
+      "location": "Orlando, FL",
+      "starts": "2099-11-06",
+      "ends": "2099-11-08",
+      "url": "https://www.yugioh-card.com/en/events-item/2099-ycs-orlando/"
+    },
+    {
+      "event": "YCS Santiago",
+      "listed": "Yu-Gi-Oh! Championship Series Santiago, Chile 2099",
+      "location": "Santiago, Chile",
+      "starts": "2099-11-27",
+      "ends": "2099-11-29",
+      "url": "https://www.yugioh-card.com/en/events-item/2099-ycs-santiago/"
+    },
+    {
+      "event": "North America Remote Duel YCS",
+      "listed": "North America Remote Duel Yu-Gi-Oh! Championship Series",
+      "location": "North America (hosted on Discord)",
+      "starts": "2099-12-04",
+      "ends": "2099-12-06",
+      "url": "https://www.yugioh-card.com/en/events-item/2099-na-rdycs/"
+    },
+    {
+      "event": "A promotion with no end",
+      "listed": "Yu-Gi-Oh! x Something Collaboration",
+      "location": "North America & Latin America",
+      "starts": "2099-12-20",
+      "ends": null,
+      "url": "https://www.yugioh-card.com/en/events/collab/"
+    }
+  ]
+}

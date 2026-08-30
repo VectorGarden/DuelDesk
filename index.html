@@ -201,11 +201,11 @@
     <aside class="side" aria-label="Event information">
       <div class="card">
         <h2>Upcoming events</h2>
-        <!-- Not links: these events have no page on this site. Same reasoning as
-             the post rows; an anchor promises a destination that does not exist. -->
-        <div class="up"><strong>300th YCS — North America</strong><span>Richmond, Virginia</span></div>
-        <div class="up"><strong>300th YCS — Latin America</strong><span>Guadalajara, Mexico</span></div>
-        <div class="up"><strong>Regional Qualifier season</strong><span>Rolling, worldwide</span></div>
+        <!-- Filled from upcoming.json, which is read off Konami's own listing
+             every few months. The markup here is what shows before that file
+             arrives and if it never does: the link below is the answer to the
+             same question, just less conveniently. -->
+        <div id="upcoming"></div>
         <p class="card__foot">Event listings are published by Konami. <a href="https://www.yugioh-card.com/en/events/" rel="external noreferrer">Find an event near you</a>.</p>
       </div>
 
