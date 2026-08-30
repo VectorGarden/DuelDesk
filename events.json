@@ -2590,12 +2590,12 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2013-north-american-wcq/rounds.json",
-      "postCount": 76,
+      "postCount": 68,
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
-          "duelists": 1413,
+          "duelists": 64,
           "rounds": 17
         }
       ]
