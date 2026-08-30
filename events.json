@@ -14,6 +14,11 @@
           "format": "Advanced",
           "name": "Francisco Andres Osorio Bobadilla",
           "deck": "Elfnote"
+        },
+        {
+          "format": "Genesys",
+          "name": "Anil Gangapersaud",
+          "deck": "Blitzclique"
         }
       ],
       "formats": [
@@ -39,7 +44,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-north-america-wcq/rounds.json",
-      "postCount": 69,
+      "postCount": 78,
       "formats": [
         {
           "format": null,
@@ -100,7 +105,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-south-america-genesys-championship/rounds.json",
-      "postCount": 22,
+      "postCount": 23,
       "formats": [
         {
           "format": "Genesys",
@@ -1878,6 +1883,31 @@
           "swissRounds": 10,
           "duelists": 771,
           "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2019-ycs-portland",
+      "event": "YCS Portland",
+      "updated": "2019-08-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-portland/rounds.json",
+      "postCount": 37,
+      "champions": [
+        {
+          "format": null,
+          "name": "Brian Chen",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 0,
+          "duelists": 0,
+          "rounds": 5
         }
       ]
     },
