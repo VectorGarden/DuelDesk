@@ -299,6 +299,15 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
             out.append(Record(name, points, None, None, None, played, "unknown"))
             continue
 
+        if points % WIN_POINTS:
+            # Points that are not a whole number of wins, in an event where a
+            # draw was not possible. Something is wrong with the points or with
+            # the date, and either way no record here can add up to them -- the
+            # deploy checks that, so claiming one would stop the scrape rather
+            # than publish an event with the record left out.
+            out.append(Record(name, points, None, None, None, played, "unknown"))
+            continue
+
         wins = points // WIN_POINTS
         played = rounds_played(row, played, swiss_last)
         if played is None or played < wins:

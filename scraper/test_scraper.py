@@ -1400,6 +1400,52 @@ class TestProvenanceCheck(unittest.TestCase):
         code, out = self.check(unpublished_first_cut)
         self.assertEqual(code, 0, out)
 
+    def test_a_record_that_does_not_add_up_to_its_points_is_rejected(self):
+        # The rule two rebuilds were stopped by, and which nothing else here
+        # would catch: a record can account for the right number of matches and
+        # still describe a different tournament than the row it sits in.
+        def wrong_by_a_win(d):
+            for fmt in d["formats"]:
+                for r in fmt["rounds"]:
+                    for st in r.get("standings") or []:
+                        rec = st.get("record") or {}
+                        if rec.get("confidence") == "derived" and st.get("points") is not None:
+                            rec["wins"] += 1
+                            return
+        code, out = self.check(wrong_by_a_win)
+        self.assertEqual(code, 1)
+        self.assertIn("which is not what that adds up to", out)
+
+    def test_a_row_claiming_no_record_is_not_asked_to_add_up(self):
+        # Most rows are this: the points are published and the record is not.
+        def claim_nothing(d):
+            for fmt in d["formats"]:
+                for r in fmt["rounds"]:
+                    for st in r.get("standings") or []:
+                        st["record"] = {"wins": None, "losses": None,
+                                        "draws": None, "confidence": "unknown"}
+        code, out = self.check(claim_nothing)
+        self.assertEqual(code, 0, out)
+
+    def test_a_draw_counts_towards_the_points(self):
+        # 3*wins + draws, not 3*wins: a record with draws in it must not be
+        # rejected for the points those draws account for.
+        def one_draw(d):
+            # A win becomes a draw: two points fewer, and the same number of
+            # matches, so this tests the arithmetic and not the round count.
+            for fmt in d["formats"]:
+                for r in fmt["rounds"]:
+                    for st in r.get("standings") or []:
+                        rec = st.get("record") or {}
+                        if (rec.get("confidence") == "derived"
+                                and st.get("points") is not None and rec.get("wins")):
+                            rec["wins"] -= 1
+                            rec["draws"] = (rec.get("draws") or 0) + 1
+                            st["points"] -= 2
+                            return
+        code, out = self.check(one_draw)
+        self.assertEqual(code, 0, out)
+
     def test_a_record_short_of_the_rounds_that_were_published_is_rejected(self):
         # The rule keeps its whole force where the coverage is complete.
         def one_short(d):
@@ -2291,6 +2337,19 @@ class TestRecordsKnowWhenTiesWereStillPolicy(unittest.TestCase):
         row = self.last_standings(fmt)[0]
         self.assertEqual((row["record"] or {}).get("confidence"), "unknown")
         self.assertEqual(row["points"], 9, "the points are still published")
+
+    def test_points_that_are_not_a_whole_number_of_wins_claim_nothing(self):
+        # After the ties were abolished every score should be a multiple of
+        # three. One that is not means the points or the date is wrong, and no
+        # record can add up to it -- which the deploy checks, so claiming one
+        # would stop the scrape rather than publish the event without it.
+        from records import derive
+        got = derive([{"name": "Ada Lovelace", "points": 4}],
+                     [[_pairing("Ada Lovelace", "Bo Peep")]],
+                     event_date="2026-05-01")[0]
+        self.assertEqual(got.confidence, "unknown")
+        self.assertIsNone(got.wins)
+        self.assertEqual(got.points, 4, "the points are still published")
 
     def test_after_ties_were_abolished_points_alone_are_enough(self):
         # Nothing is lost for the modern events: 3 points is one win, full stop.
