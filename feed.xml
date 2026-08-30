@@ -1645,15 +1645,6 @@
       <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>North America WCQ 2025: NAWCQ Top Tables Update: Round 13</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2025-north-america-wcq/nawcq-top-tables-update-round-13/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2025-north-america-wcq/nawcq-top-tables-update-round-13/</guid>
-      <category>News</category>
-      <category domain="event">2025-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 18:49:52 +0000</pubDate>
-      <description>News from North America WCQ 2025, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
       <title>North America WCQ 2026: NAWCQ Top Tables Update: Round 11</title>
       <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-11/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-11/</guid>
@@ -2888,6 +2879,15 @@
       <category domain="event">2026-south-america-dragon-duel-championship</category>
       <pubDate>Sat, 20 Jun 2026 16:48:14 +0000</pubDate>
       <description>Pairings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Standings after Round 2</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-standings-after-round-2/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Sat, 20 Jun 2026 16:46:17 +0000</pubDate>
+      <description>Standings from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

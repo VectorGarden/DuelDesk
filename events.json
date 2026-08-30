@@ -397,7 +397,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-10-ycs-anaheim/rounds.json",
-      "postCount": 92,
+      "postCount": 91,
       "formats": [
         {
           "format": null,
@@ -434,7 +434,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-vancouver/rounds.json",
-      "postCount": 78,
+      "postCount": 80,
       "formats": [
         {
           "format": null,
@@ -452,13 +452,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-north-america-wcq/rounds.json",
-      "postCount": 62,
+      "postCount": 84,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 2838,
-          "rounds": 16
+          "rounds": 18
         }
       ]
     },
@@ -488,7 +488,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-05-ycs-providence/rounds.json",
-      "postCount": 90,
+      "postCount": 97,
       "formats": [
         {
           "format": null,
@@ -525,7 +525,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-04-ycs-houston/rounds.json",
-      "postCount": 76,
+      "postCount": 69,
       "formats": [
         {
           "format": null,
@@ -562,7 +562,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-03-team-ycs-las-vegas/rounds.json",
-      "postCount": 72,
+      "postCount": 75,
       "formats": [
         {
           "format": null,
