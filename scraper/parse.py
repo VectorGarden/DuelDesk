@@ -84,6 +84,9 @@ LEAD_CHARS = 400
 # crowned the North America Remote Duel YCS. So these are kept whole, within
 # reason. Only the finals, and only until the build has read them.
 MATCH_CHARS = 12000
+# A round of pairings written out is long: 64 tables of two named Duelists and
+# their decks. Read whole, or the bottom of the room goes missing.
+PROSE_CHARS = 40000
 
 
 def _text(fragment: str) -> str:
@@ -407,6 +410,78 @@ def parse_table(doc: str) -> Table | None:
     return Table(kind=kind, columns=header, rows=out)
 
 
+# Pairings written as sentences rather than as a table. Konami does this often
+# enough to matter -- the 2023 North America Remote Duel YCS published its Top 8
+# and Top 4 this way, and the archive simply had no cut for that event.
+#
+#   Table 1: Jordan Andrew Farris (Floowandereeze) vs. Liam Mac Oscair (Mathmech)
+#   Table 1: Hideki Kawai (Japan - 9 points - Frog Monarch) vs. Kei Kuwano (...)
+#   Table 1: Medina Hernandez, Omar (HEROES) vs. Franco Flores, Braulio (...) Braulio wins 2-0
+#
+# The parenthesis carries whatever the writer had: a deck, or a country and a
+# points total and a deck. The deck is the last of them, because that is the
+# part every one of these has.
+# The text is cut at each "Table N:" and each piece read on its own, rather than
+# matched in one pass. A row where the separator is missing would otherwise run
+# on into the next table and swallow it: one row of the 2013 Central America Top
+# 16 reads "...(Constellars) vs.Gallegos Lomeli..." with no space, and the Top 16
+# came out with seven matches instead of eight.
+_PROSE_SPLIT = re.compile(r"Table\s*(\d+)\s*:", re.I)
+# "vs." with the space after it optional, for that same row.
+_VS = re.compile(r"\s*\bvs(?:\.\s*|\s+)", re.I)
+_PARENS = re.compile(r"^(.*?)\s*\(([^)]*)\)")
+
+
+def _prose_side(text: str) -> dict[str, Any] | None:
+    """One Duelist out of "Name (Country - points - Deck)", and what they played."""
+    m = _PARENS.match(text.strip())
+    if not m:
+        # No parenthesis at all. Everything to the end of the piece would be the
+        # name -- but a result sentence often trails it, and with no bracket to
+        # say where the name stopped this side is not read.
+        return None
+    # Whatever else is in there, the deck is the last part: "(HEROES)" is a
+    # deck, and so is the end of "(Japan - 9 points - Frog Monarch)".
+    deck = re.split(r"\s+[-\u2013\u2014]\s+", m.group(2))[-1].strip() or None
+    name = normalise_name(m.group(1))
+    return {"name": name, "region": None, "deck": deck} if name else None
+
+
+def parse_prose_pairings(text: str) -> list[dict[str, Any]]:
+    """Pairings read out of prose, or [] where the shape is not there.
+
+    Konami writes a round this way often enough to matter -- the 2023 North
+    America Remote Duel YCS published its Top 8 and Top 4 as sentences, and the
+    archive simply had no cut for that event.
+
+        Table 1: Jordan Farris (Floowandereeze) vs. Liam Mac Oscair (Mathmech)
+        Table 1: Hideki Kawai (Japan - 9 points - Frog Monarch) vs. Kei Kuwano (...)
+        Table 1: Medina Hernandez, Omar (HEROES) vs. Franco Flores, Braulio (...) Braulio wins 2-0
+
+    Every table that names two Duelists, or none of them. A bracket short a
+    match is not a smaller bracket, it is a wrong one, and the round it lands in
+    would be measured against a field that never played it. Where a piece will
+    not parse, the post is left to be dropped exactly as it was before.
+
+    A piece with no "vs" in it is not one of those. It is a bye -- "Table 16:
+    Jonathon Castillo Gomez (Blue-Eyes) - BYE" -- which is a real thing to
+    publish and nothing to pair.
+    """
+    pieces = _PROSE_SPLIT.split(text)
+    out: list[dict[str, Any]] = []
+    pairings = 0
+    for number, piece in zip(pieces[1::2], pieces[2::2]):
+        sep = _VS.search(piece)
+        if not sep:
+            continue
+        pairings += 1
+        a = _prose_side(piece[:sep.start()])
+        b = _prose_side(piece[sep.end():])
+        if a and b:
+            out.append({"table": int(number), "a": a, "b": b})
+    return out if len(out) == pairings else []
+
+
 def parse_post(doc: str, url: str = "") -> Post:
     """Read one post.
 
@@ -428,6 +503,13 @@ def parse_post(doc: str, url: str = "") -> Post:
     basis = f"{title} {url}"
     table = parse_table(doc)
     kind = detect_kind(basis)
+    if table is None and kind == "pairings":
+        # No table on the page at all. Before giving up on the post, read it as
+        # prose: the build drops a pairings post carrying no table, and for
+        # some events that is the whole of the cut.
+        if rows := parse_prose_pairings(lead(doc, PROSE_CHARS)):
+            table = Table(kind="pairings", columns=["Table", "Duelist", "vs.", "Duelist"],
+                          rows=rows)
     if (table and kind in ("pairings", "standings")
             and table.kind in ("pairings", "standings") and table.kind != kind):
         kind = table.kind

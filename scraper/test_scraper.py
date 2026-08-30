@@ -2455,6 +2455,109 @@ class TestStandingsRun(unittest.TestCase):
                          {"wins": 4, "losses": 2, "draws": 0, "confidence": "derived"})
 
 
+class TestPairingsWrittenAsProse(unittest.TestCase):
+    """Konami writes a round as sentences often enough to matter.
+
+    The 2023 North America Remote Duel YCS published its Top 8 and Top 4 that
+    way, and the archive had no cut for that event at all.
+    """
+
+    def rows(self, text):
+        from parse import parse_prose_pairings
+        return parse_prose_pairings(text)
+
+    def test_a_round_is_read_out_of_sentences(self):
+        got = self.rows("Table 1: Jordan Farris (Floowandereeze) vs. "
+                        "Liam Mac Oscair (Mathmech @Ignister)")
+        self.assertEqual(got, [{"table": 1,
+                                "a": {"name": "Jordan Farris", "region": None,
+                                      "deck": "Floowandereeze"},
+                                "b": {"name": "Liam Mac Oscair", "region": None,
+                                      "deck": "Mathmech @Ignister"}}])
+
+    def test_the_deck_is_the_last_thing_in_the_bracket(self):
+        # The writer puts in whatever they had: a deck, or a country and a
+        # points total and a deck. The deck is the part all of them end with.
+        got = self.rows("Table 1: Hideki Kawai (Japan – 9 points – Frog Monarch) vs. "
+                        "Kei Kuwano (Japan – 9 points – Herald of Perfection)")
+        self.assertEqual(got[0]["a"]["deck"], "Frog Monarch")
+        self.assertEqual(got[0]["b"]["deck"], "Herald of Perfection")
+
+    def test_a_surname_first_name_is_turned_around(self):
+        got = self.rows("Table 1: Medina Hernandez, Omar (HEROES) vs. "
+                        "Franco Flores, Braulio Omar (Gravekeepers)")
+        self.assertEqual([got[0]["a"]["name"], got[0]["b"]["name"]],
+                         ["Omar Medina Hernandez", "Braulio Omar Franco Flores"])
+
+    def test_a_result_trailing_the_row_is_not_part_of_the_name(self):
+        # "...(Gravekeepers) Braulio wins 2-0" -- the bracket says where the
+        # name stopped.
+        got = self.rows("Table 1: Medina Hernandez, Omar (HEROES) vs. "
+                        "Franco Flores, Braulio Omar (Gravekeepers) Braulio wins 2-0")
+        self.assertEqual(got[0]["b"]["name"], "Braulio Omar Franco Flores")
+
+    def test_a_missing_space_after_vs_does_not_swallow_the_next_table(self):
+        # One row of the 2013 Central America Top 16 reads "(Constellars)
+        # vs.Gallegos Lomeli, Luis Edgar" with no space, and a separator that
+        # insisted on one ran the row on into the table after it. The Top 16
+        # came out with seven matches.
+        got = self.rows("Table 1: Garcia Reyes, Eduardo (Constellars) vs.Gallegos Lomeli, "
+                        "Luis Edgar (Dragon Ruler) "
+                        "Table 2: Vazquez Herrera, Jonhathan (Dragon Ruler) vs. "
+                        "Rodriguez Pinto, Victor (Dragon Ruler)")
+        self.assertEqual([r["table"] for r in got], [1, 2])
+        self.assertEqual(got[0]["b"]["name"], "Luis Edgar Gallegos Lomeli")
+
+    def test_a_bye_is_not_a_pairing_and_does_not_spoil_the_round(self):
+        # "Table 16: Jonathon Castillo Gomez (Blue-Eyes) – BYE" is a real thing
+        # to publish and nothing to pair.
+        got = self.rows("Table 1: A One (Deck) vs. B Two (Deck) "
+                        "Table 2: Jonathon Castillo Gomez (Blue-Eyes) – BYE")
+        self.assertEqual([r["table"] for r in got], [1])
+
+    def test_a_round_that_will_not_parse_whole_is_not_used_at_all(self):
+        # A bracket short a match is not a smaller bracket, it is a wrong one,
+        # and the round it lands in would be measured against a field that
+        # never played it.
+        self.assertEqual(self.rows("Table 1: A One (Deck) vs. B Two (Deck) "
+                                   "Table 2: no bracket here vs nor here"), [])
+
+    def test_a_whole_round_is_read_not_just_the_top_tables(self):
+        # Sixty-four tables of two named Duelists and their decks is a long
+        # post, and reading only the opening of it loses the bottom of the room.
+        from parse import parse_post
+        tables = " ".join(
+            f"Table {i}: Duelist Number{i} (Deck{i}) vs. Opponent Number{i} (Other{i})"
+            for i in range(1, 65))
+        page = ('<title>Round 1 Pairings</title><div class="entry-content"><p>'
+                + tables + '</p></div></div>')
+        got = parse_post(page, "https://x/round-1-pairings/")
+        self.assertEqual(len(got.table.rows), 64)
+        self.assertEqual(got.table.rows[-1]["a"]["name"], "Duelist Number64")
+
+    def test_prose_reaches_the_post_when_there_is_no_table(self):
+        from parse import parse_post
+        page = ('<title>Top 8 Pairings (with Deck Types!)</title>'
+                '<div class="entry-content"><p>Take a look at the Top 8!</p>'
+                '<p>Table 1: A One (Floowandereeze) vs. B Two (Mathmech)</p>'
+                '</div></div>')
+        got = parse_post(page, "https://x/top-8-pairings-with-deck-types/")
+        self.assertEqual(got.kind, "pairings")
+        self.assertEqual(got.table.kind, "pairings")
+        self.assertEqual(len(got.table.rows), 1)
+
+    def test_a_page_with_a_table_is_read_from_the_table(self):
+        # The prose reading is a fallback, not a second opinion.
+        from parse import parse_post
+        page = ('<title>Round 3 Pairings</title><div class="entry-content">'
+                '<table><tr><th>Table</th><th>Duelist</th><th>vs.</th><th>Duelist</th></tr>'
+                '<tr><td>1</td><td>Ada Lovelace</td><td>vs.</td><td>Bo Peep</td></tr></table>'
+                '<p>Table 9: Somebody Else (Deck) vs. Another One (Deck)</p>'
+                '</div></div>')
+        got = parse_post(page, "https://x/round-3-pairings/")
+        self.assertEqual([r["table"] for r in got.table.rows], [1])
+
+
 class TestWinnerProse(unittest.TestCase):
     """The one line a champion can be read out of, and only for the posts that
     might carry one."""
