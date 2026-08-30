@@ -1358,6 +1358,60 @@
       ]
     },
     {
+      "slug": "2022-team-ycs-quito",
+      "event": "TEAM YCS Quito",
+      "updated": "2022-10-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-team-ycs-quito/rounds.json",
+      "postCount": 15,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 122,
+          "rounds": 10
+        }
+      ]
+    },
+    {
+      "slug": "2022-ycs-niagara-falls",
+      "event": "YCS Niagara Falls",
+      "updated": "2022-09-11",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-ycs-niagara-falls/rounds.json",
+      "postCount": 25,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 837,
+          "rounds": 9
+        }
+      ]
+    },
+    {
+      "slug": "2022-ycs-rio-de-janeiro",
+      "event": "YCS Rio de Janeiro",
+      "updated": "2022-08-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-ycs-rio-de-janeiro/rounds.json",
+      "postCount": 22,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 456,
+          "rounds": 12
+        }
+      ]
+    },
+    {
       "slug": "na-ygoc-2022",
       "event": "Na Ygoc 2022",
       "updated": "2022-07-22",
@@ -1376,6 +1430,42 @@
       ]
     },
     {
+      "slug": "south-america-yu-gi-oh-tcg-championship-2022",
+      "event": "South America Yu-Gi-Oh! TCG Championship 2022",
+      "updated": "2022-06-26",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/south-america-yu-gi-oh-tcg-championship-2022/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 360,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "central-america-yu-gi-oh-tcg-championship-2022",
+      "event": "Central America Yu-Gi-Oh! TCG Championship 2022",
+      "updated": "2022-06-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/central-america-yu-gi-oh-tcg-championship-2022/rounds.json",
+      "postCount": 24,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 783,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "202205-ycs-hartford-ct",
       "event": "YCS",
       "updated": "2022-05-29",
@@ -1390,6 +1480,44 @@
           "swissRounds": 10,
           "duelists": 1243,
           "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2022-ycs-guadalajara-mexico",
+      "event": "YCS Guadalajara",
+      "location": "Guadalajara, Mexico",
+      "updated": "2022-05-01",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-ycs-guadalajara-mexico/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1244,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2022-ycs-bogota-colombia",
+      "event": "YCS Bogota",
+      "location": "Bogota, Colombia",
+      "updated": "2022-04-24",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-ycs-bogota-colombia/rounds.json",
+      "postCount": 21,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 510,
+          "rounds": 13
         }
       ]
     },
@@ -1444,6 +1572,61 @@
           "swissRounds": 13,
           "duelists": 646,
           "rounds": 17
+        }
+      ]
+    },
+    {
+      "slug": "2020-uds-invitational-bogota",
+      "event": "UDS Invitational Bogota",
+      "updated": "2020-03-01",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2020-uds-invitational-bogota/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 192,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2020-team-ycs-las-vegas",
+      "event": "Team YCS Las Vegas",
+      "updated": "2020-02-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2020-team-ycs-las-vegas/rounds.json",
+      "postCount": 21,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 497,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2020-uds-invitational-tulsa-ok",
+      "event": "UDS Invitational Tulsa",
+      "location": "Tulsa, OK",
+      "updated": "2020-02-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2020-uds-invitational-tulsa-ok/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 245,
+          "rounds": 12
         }
       ]
     },
