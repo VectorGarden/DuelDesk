@@ -71,6 +71,14 @@ _TABLE = re.compile(r"<table.*?</table>", re.S | re.I)
 _ROW = re.compile(r"<tr.*?</tr>", re.S | re.I)
 _CELL = re.compile(r"<t[dh][^>]*>(.*?)</t[dh]>", re.S | re.I)
 _TITLE = re.compile(r"<title[^>]*>(.*?)</title>", re.S | re.I)
+# WordPress wraps a post's prose in this. Only the opening is kept, and only for
+# the posts that announce a winner: the sentence naming one is always the first
+# thing such a post says, and holding whole articles in memory for every page of
+# a 140-post event to read one line of them would be waste.
+_ENTRY = re.compile(r"class=\"[^\"]*entry-content[^\"]*\"[^>]*>(.*?)"
+                    r"(?:</div>\s*</div>|<footer)", re.S | re.I)
+_SCRIPTS = re.compile(r"<(script|style).*?</\1>", re.S | re.I)
+LEAD_CHARS = 400
 
 
 def _text(fragment: str) -> str:
@@ -160,12 +168,32 @@ class Post:
     fmt: str | None              # Advanced | Genesys | None
     round: Any                   # int, "Top 8", "Final", or None
     table: Table | None = None
+    # The opening of the prose, kept only where something might be read out of
+    # it. Never written to the archive -- see to_dict.
+    lead: str = ""
 
     def to_dict(self) -> dict:
         d = asdict(self)
         if self.table is None:
             d.pop("table")
+        # Working data for the build, not a fact about the post. The archive
+        # carries what the coverage said, not the paragraph it said it in.
+        d.pop("lead", None)
         return d
+
+
+def lead(doc: str, limit: int = LEAD_CHARS) -> str:
+    """The opening of a post's prose, flattened to one line.
+
+    Enough to read a winner out of and no more. Tables are cut first: a post
+    announcing a champion sometimes carries the final standings underneath, and
+    a thousand names of table would drown the one sentence that matters.
+    """
+    m = _ENTRY.search(doc)
+    if not m:
+        return ""
+    body = _TABLE.sub(" ", _SCRIPTS.sub(" ", m.group(1)))
+    return re.sub(r"\s+", " ", _text(body))[:limit].strip()
 
 
 def page_title(doc: str) -> str:
@@ -404,4 +432,8 @@ def parse_post(doc: str, url: str = "") -> Post:
         fmt=detect_format(basis),
         round=detect_round(basis, kind),
         table=table,
+        # Only for the posts that might announce a winner. Every other kind is
+        # read from its table, and keeping their prose would be so much weight
+        # carried through the build for nothing.
+        lead=lead(doc) if kind == "result" else "",
     )

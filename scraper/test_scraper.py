@@ -1990,6 +1990,265 @@ def listing(*items):
         + "</a></h6></li>" for href, paras in items) + "</ul>"
 
 
+class TestChampion(unittest.TestCase):
+    """Who won, recognised among the Duelists who could have.
+
+    No name is read out of the prose. The event knows who was in the deepest
+    round of its cut, and the post is asked only which of them it means.
+    """
+
+    def post(self, title, text):
+        return {"title": title, "text": text}
+
+    def test_the_one_duelist_the_post_names_is_the_champion(self):
+        from winners import champion
+        got = champion(["Barrett Arthur Keys", "Someone Else Entirely"],
+                       [self.post("And the Winner Is…",
+                                  "Congratulations to Barrett Arthur Keys the "
+                                  "winner of YCS Bogota, Colombia!")])
+        self.assertEqual(got, "Barrett Arthur Keys")
+
+    def test_a_shorter_name_in_the_prose_still_matches_the_record(self):
+        # The tables carry two surnames and the blog usually prints one.
+        from winners import champion
+        got = champion(["Francisco Andres Osorio Bobadilla", "Julien Leo Kehon"],
+                       [self.post("And the Advanced Format Winner is…",
+                                  "Francisco Osorio from Santiago, Chile used his "
+                                  "Elfnote Deck to win the whole thing!")])
+        self.assertEqual(got, "Francisco Andres Osorio Bobadilla")
+
+    def test_the_one_who_did_the_defeating_won(self):
+        # The 2013 North America WCQ, which broke two earlier rules. Both
+        # Duelists are named and only the sentence says which way round it went.
+        from winners import champion
+        got = champion(["Patrick Hoban", "David Keener"],
+                       [self.post("Congratulations to our North American Champion",
+                                  "Patrick J. Hoban of Atlanta, GA playing his Dragon "
+                                  "Ruler Deck, defeated David J. Keener III to become "
+                                  "the 2013 North American Champion.")])
+        self.assertEqual(got, "Patrick Hoban")
+
+    def test_a_lone_forename_does_not_identify_anybody(self):
+        # A rule matching on one word decided this event was won by a Duelist
+        # called Patrick Le, on the strength of the word "Patrick".
+        from winners import named_in
+        self.assertEqual(named_in("Patrick Le", "Patrick J. Hoban defeated David Keener"), -1)
+        self.assertGreaterEqual(named_in("Patrick Hoban", "Patrick J. Hoban defeated"), 0)
+
+    def test_a_side_events_winner_is_not_the_events_champion(self):
+        # Every YCS runs a dozen of these and each has a congratulatory post of
+        # its own: 198 of the archive's 266 result posts are side events.
+        from winners import champion
+        got = champion(["Jose Lopez", "Someone Else Entirely"],
+                       [self.post("YCS Anaheim: Saturday ATTACK OF THE GIANT CARD Winner!",
+                                  "Congrats to our Saturday ATTACK OF THE GIANT CARD "
+                                  "winner, Jose Lopez!")])
+        self.assertIsNone(got)
+
+    def test_a_side_event_named_only_in_the_body_is_still_a_side_event(self):
+        # "And the Winner Is..." is used for the Dragon Duel playoff as readily
+        # as for the event itself, and only the first line says which.
+        from winners import champion
+        got = champion(["Emmett Parker Smith", "Someone Else Entirely"],
+                       [self.post("And the Winner Is…",
+                                  "We have our winner of the Dragon Duel Championship "
+                                  "playoff! Emmett Parker Smith used his Ryzeal deck…")])
+        self.assertIsNone(got)
+
+    def test_a_post_that_announces_nothing_is_not_read(self):
+        from winners import champion
+        got = champion(["Barrett Arthur Keys"],
+                       [self.post("Top 4 Feature Match",
+                                  "Barrett Arthur Keys sits down against…")])
+        self.assertIsNone(got)
+
+    def test_a_format_post_is_read_against_its_own_bracket(self):
+        # A two-format event publishes two winner posts, and reading one against
+        # the other's cut would hand a format the wrong champion.
+        from winners import champion
+        posts = [self.post("And the Advanced Format Winner Is…",
+                           "Jesse Dean Kotton takes it with Ryzeal!"),
+                 self.post("And the Genesys Format Winner Is…",
+                           "Xiaoyi Stanley Huang wins the Genesys side.")]
+        self.assertEqual(champion(["Jesse Dean Kotton"], posts, "Advanced"),
+                         "Jesse Dean Kotton")
+        self.assertEqual(champion(["Xiaoyi Stanley Huang"], posts, "Genesys"),
+                         "Xiaoyi Stanley Huang")
+
+    def test_a_post_naming_no_format_is_read_by_whoever_asks(self):
+        # Most events have one tournament and title their post accordingly.
+        from winners import champion
+        posts = [self.post("We have a winner!", "Rafael Mariano Reich took it.")]
+        self.assertEqual(champion(["Rafael Mariano Reich"], posts, "Advanced"),
+                         "Rafael Mariano Reich")
+
+    def test_two_posts_naming_two_winners_claim_neither(self):
+        # A disagreement is not a result.
+        from winners import champion
+        got = champion(["Ann Alpha Smith", "Bo Beta Jones"],
+                       [self.post("And the Winner Is…", "Ann Alpha Smith won!"),
+                        self.post("We have a winner!", "Bo Beta Jones won!")])
+        self.assertIsNone(got)
+
+    def test_an_event_whose_winner_was_never_posted_claims_nobody(self):
+        # The common answer, and a real one: no champion rather than a guess.
+        from winners import champion
+        self.assertIsNone(champion(["Ann Alpha Smith", "Bo Beta Jones"], []))
+
+    def test_nobody_on_record_means_nobody_claimed(self):
+        from winners import champion
+        self.assertIsNone(champion([], [self.post("And the Winner Is…", "Ann Alpha Smith!")]))
+
+    def test_a_one_word_name_is_not_enough_to_recognise(self):
+        # Team events enter under names like "Legionnaire", and one word is not
+        # identification: it may be an ordinary word of the prose. A team event
+        # has no champion here rather than possibly the wrong one.
+        from winners import named_in
+        self.assertEqual(named_in("Legionnaire", "Legionnaire won the whole thing"), -1)
+
+    def test_two_named_and_nothing_saying_which_claims_neither(self):
+        # A post that names both finalists without saying who beat whom has not
+        # answered the question. Taking whichever is mentioned first would have
+        # given the 2013 North America WCQ to the runner-up.
+        from winners import champion
+        got = champion(["Ann Alpha Smith", "Bo Beta Jones"],
+                       [self.post("And the Winner Is…",
+                                  "What a final between Ann Alpha Smith and "
+                                  "Bo Beta Jones! What a weekend!")])
+        self.assertIsNone(got)
+
+    def test_one_formats_post_cannot_crown_the_others_champion(self):
+        # Both tournaments of a two-format event have their own cut and their
+        # own winner post. Read against each other they produce two claims for
+        # one bracket, and two claims are no claim.
+        from winners import champion
+        posts = [self.post("And the Advanced Format Winner Is…", "Jesse Dean Kotton takes it!"),
+                 self.post("And the Genesys Format Winner Is…", "Sam Epsilon Doe takes it!")]
+        self.assertEqual(champion(["Jesse Dean Kotton", "Sam Epsilon Doe"], posts, "Advanced"),
+                         "Jesse Dean Kotton")
+        self.assertEqual(champion(["Jesse Dean Kotton", "Sam Epsilon Doe"], posts, "Genesys"),
+                         "Sam Epsilon Doe")
+
+    def test_a_name_nobody_recorded_is_not_promoted_to_champion(self):
+        # The post names a Duelist the cut does not have -- a side event's
+        # winner, or another event's post filed here. Recognition, not
+        # extraction: if it is not one of the candidates it is not an answer.
+        from winners import champion
+        got = champion(["Ann Alpha Smith", "Bo Beta Jones"],
+                       [self.post("And the Winner Is…",
+                                  "Congratulations to Carla Gamma Brown!")])
+        self.assertIsNone(got)
+
+
+class TestWinnerProse(unittest.TestCase):
+    """The one line a champion can be read out of, and only for the posts that
+    might carry one."""
+
+    PAGE = ('<title>And the Winner Is&#8230;</title>'
+            '<div class="entry-content"><p>Congratulations to Ann Alpha Smith, '
+            'who defeated Bo Beta Jones!</p>{extra}</div></div>')
+
+    def test_a_result_posts_opening_is_kept(self):
+        from parse import parse_post
+        got = parse_post(self.PAGE.format(extra=""), "https://x/and-the-winner-is/")
+        self.assertEqual(got.kind, "result")
+        self.assertIn("Ann Alpha Smith", got.lead)
+
+    def test_every_other_kind_carries_no_prose(self):
+        # Read from their tables, so holding their paragraphs would be weight
+        # carried through the build of a 140-post event for nothing.
+        from parse import parse_post
+        page = ('<title>Round 3 Pairings</title><div class="entry-content">'
+                '<p>Here are the pairings.</p></div></div>')
+        got = parse_post(page, "https://x/round-3-pairings/")
+        self.assertEqual(got.kind, "pairings")
+        self.assertEqual(got.lead, "")
+
+    def test_a_table_underneath_does_not_drown_the_sentence(self):
+        # A post announcing a champion sometimes carries the final standings
+        # below it, and a thousand names of table would push the one sentence
+        # that matters past the end of what is kept.
+        from parse import parse_post
+        table = "<table>" + "".join(
+            f"<tr><td>{i}</td><td>Someone Else Number {i}</td></tr>"
+            for i in range(200)) + "</table>"
+        got = parse_post(self.PAGE.format(extra=table), "https://x/and-the-winner-is/")
+        self.assertIn("Ann Alpha Smith", got.lead)
+        self.assertNotIn("Someone Else Number", got.lead)
+
+    def test_the_opening_is_bounded(self):
+        from parse import parse_post, LEAD_CHARS
+        page = self.PAGE.format(extra="<p>" + ("padding " * 400) + "</p>")
+        self.assertLessEqual(len(parse_post(page, "https://x/w/").lead), LEAD_CHARS)
+
+
+class TestChampionInTheBuild(unittest.TestCase):
+    """Who the candidates are, and that the answer reaches the file."""
+
+    def rounds(self, *specs):
+        return [{"label": lbl, "phase": phase,
+                 "pairings": [{"a": a, "b": b} for a, b in pairs]}
+                for lbl, phase, pairs in specs]
+
+    def test_the_candidates_are_the_deepest_cut_round(self):
+        from build import cut_finalists
+        got = cut_finalists(self.rounds(
+            ("Top 8", "Top cut", [("A One", "B Two"), ("C Three", "D Four")]),
+            ("Top 4", "Top cut", [("A One", "C Three")])))
+        self.assertEqual(got, ["A One", "C Three"])
+
+    def test_swiss_players_are_not_candidates(self):
+        # A Swiss round holds most of the field, and asking a winner post which
+        # of two hundred names it mentions is the loose question that produced
+        # wrong champions. An event with no cut published has no candidates.
+        from build import cut_finalists
+        self.assertEqual(cut_finalists(self.rounds(
+            ("R11", "Swiss", [("A One", "B Two"), ("C Three", "D Four")]),
+            ("R12", "Swiss", [("A One", "C Three")]))), [])
+
+    def test_a_cut_round_with_no_pairings_is_not_the_deepest(self):
+        # The bracket is often published a round further than the pairings are.
+        from build import cut_finalists
+        rounds = self.rounds(("Top 4", "Top cut", [("A One", "C Three")]))
+        rounds.append({"label": "Final", "phase": "Top cut", "pairings": []})
+        self.assertEqual(cut_finalists(rounds), ["A One", "C Three"])
+
+    def announcement(self, lead):
+        """A result post carrying one line of prose, as the fetcher would."""
+        from build import Source
+        from parse import Post
+        return Source("https://x/and-the-winner-is/",
+                      Post(title="And the Winner Is…", kind="result", fmt=None,
+                           round=None, table=None, lead=lead),
+                      "20:00")
+
+    def test_the_champion_reaches_the_built_format(self):
+        # The whole point: the answer has to be in the file the page reads.
+        from build import build_event
+        ev = build_event("YCS Montréal",
+                         _sources() + [self.announcement(
+                             "Congratulations to Samuel Deng, who defeated "
+                             "Aviel Getter to take the whole thing!")],
+                         updated="2026-08-16T19:10:00Z")
+        gen = next(f for f in ev["formats"] if f["format"] == "Genesys")
+        self.assertEqual(gen["champion"], "Samuel Deng")
+
+    def test_an_event_nobody_announced_a_winner_for_says_so(self):
+        # Null is the common answer across the archive, and a real one.
+        from build import build_event
+        ev = build_event("YCS Montréal", _sources(), updated="2026-08-16T19:10:00Z")
+        self.assertTrue(all(f["champion"] is None for f in ev["formats"]))
+
+    def test_a_side_events_post_does_not_crown_anybody(self):
+        from build import build_event
+        ev = build_event("YCS Montréal",
+                         _sources() + [self.announcement(
+                             "We have our winner of the Dragon Duel Championship "
+                             "playoff! Samuel Deng used his Ryzeal deck…")],
+                         updated="2026-08-16T19:10:00Z")
+        self.assertTrue(all(f["champion"] is None for f in ev["formats"]))
+
+
 class TestUpcomingEvents(unittest.TestCase):
     """The schedule, which the blog does not carry.
 

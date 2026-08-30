@@ -148,6 +148,30 @@ in October and read in December would otherwise call a November tournament upcom
 are a fact about the event, "upcoming" is a fact about when you are looking. An event stays in the
 list through its final day rather than disappearing on the morning of its last round.
 
+### Who won
+
+The blog never records a winner as data. A final's pairing names two Duelists and does not say
+which of them took it, and most events publish no final at all — coverage usually stops at the
+semis. What there is instead is a post: *"Congratulations to Barrett Arthur Keys the winner of YCS
+Bogota!"*
+
+Reading a name out of prose like that is not attempted. Two rules were tried on the real archive —
+take the first name in the post, take the longest — and each confidently produced a *different*
+wrong champion for the 2013 North America WCQ, whose post reads *"Patrick J. Hoban … defeated
+David J. Keener III"*. One picked a Duelist called Patrick Le, on the strength of the word
+"Patrick". The other picked Keener, who lost.
+
+So no name is read out of a post. The event already knows who could have won — the Duelists in the
+deepest round of its cut — and the post is asked only which of *them* it means. That makes it
+recognition over a handful of candidates rather than extraction from open prose, and the failure
+mode becomes "no champion claimed" instead of "the wrong one". Three things must hold: the post
+announces a winner by its own title, it is not about one of the side events every YCS runs a dozen
+of (198 of the archive's 266 result posts are those), and exactly one of the cut's Duelists is
+named in it. Where a post names two, as a final's write-up does, whoever is on the near side of
+"defeated" won it.
+
+`champion` is null for most events, and that is a real answer rather than a gap to be filled.
+
 ### What the coverage does not always say
 
 - **The blog reports points, the site models W–L–0 records.** They are different quantities, and

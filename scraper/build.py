@@ -21,6 +21,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from naming import clock, feature_players
+from winners import champion as champion_named
 from records import derive
 
 CUT_ORDER_BASE = 100          # cut rounds sort after every Swiss round
@@ -194,7 +195,7 @@ def disambiguate(sources: list[Source]) -> tuple[set[str], set[str]]:
 
 
 def build_format(name: str | None, sources: list[Source], *,
-                 ongoing: bool = False) -> dict | None:
+                 ongoing: bool = False, announcements: list[Source] = ()) -> dict | None:
     """Assemble one format's tournament.
 
     `name` is None for an event that runs a single tournament and never names a
@@ -515,11 +516,42 @@ def build_format(name: str | None, sources: list[Source], *,
         rounds[-1]["state"] = "live"
 
     field = max((len(r["standings"]) for r in rounds), default=0)
+    # Result posts naming no format are considered too. A two-format event
+    # usually titles them "And the Advanced Format Winner is", but not always,
+    # and one that does not would otherwise be dropped with the rest of the
+    # unassigned posts and take its event's champion with it. Safe to offer to
+    # both tournaments, because each asks only about its own cut: a post naming
+    # nobody in this bracket claims nobody here.
+    won_by = champion_named(cut_finalists(rounds),
+                            [{"title": s.post.title, "text": s.post.lead}
+                             for s in list(sources) + list(announcements)
+                             if s.post.kind == "result"],
+                            name)
     # What one entrant is. A Team YCS ranks teams of three, so "389 Duelists"
     # would be 389 teams under the wrong noun -- and the page has no way to know
     # from the rows themselves, because a team match reads exactly like a match.
     return {"format": name, "entrant": "Team" if entered_as_teams(sources) else "Duelist",
-            "swissRounds": swiss_count, "duelists": field, "rounds": rounds}
+            "swissRounds": swiss_count, "duelists": field,
+            # Who won, where the coverage says so plainly enough to be sure.
+            # Null is the common answer and a real one: most events never
+            # publish a final, and the post announcing a winner is not always
+            # there. See winners.py for why nothing is guessed at.
+            "champion": won_by,
+            "rounds": rounds}
+
+
+def cut_finalists(rounds: list[dict]) -> list[str]:
+    """The Duelists in the deepest round of the cut that was published.
+
+    Whoever won was one of them. Only the cut, never Swiss: a Swiss round holds
+    most of the field, and asking a winner post which of two hundred names it
+    mentions is the loose question that produced wrong champions.
+    """
+    played = [r for r in rounds if r.get("phase") == "Top cut" and r.get("pairings")]
+    if not played:
+        return []
+    return [row[side] for row in played[-1]["pairings"]
+            for side in ("a", "b") if row.get(side)]
 
 
 def entered_as_teams(sources: list[Source]) -> bool:
@@ -623,10 +655,15 @@ def build_event(event: str, sources: list[Source], *,
     loose = by_format.pop(None, [])
     kinds = {s.post.kind for s in loose}
     unassigned = 0 if {"pairings", "standings"} <= kinds else len(loose)
+    # Kept even when the rest of the unassigned posts are dropped: which
+    # tournament a winner belongs to is answered by the brackets, not by the
+    # post's own title, so this one kind is worth offering to both.
+    announcements = [s for s in loose if s.post.kind == "result"]
     if unassigned:
         loose = []
 
-    formats = [f for f in (build_format(name, group, ongoing=ongoing)
+    formats = [f for f in (build_format(name, group, ongoing=ongoing,
+                                        announcements=announcements)
                            for name, group in sorted(by_format.items()))
                if f and is_tournament(f)]
     if loose and (only := build_format(None, loose, ongoing=ongoing)) and is_tournament(only):
