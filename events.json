@@ -2035,6 +2035,99 @@
       ]
     },
     {
+      "slug": "2018-ycs-salt-lake-city",
+      "event": "YCS Salt Lake City",
+      "updated": "2018-03-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-salt-lake-city/rounds.json",
+      "postCount": 29,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 531,
+          "rounds": 11
+        }
+      ]
+    },
+    {
+      "slug": "2018-ycs-san-jose-costa-rica",
+      "event": "YCS San Jose",
+      "location": "San Jose, Costa Rica",
+      "updated": "2018-03-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-san-jose-costa-rica/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 263,
+          "rounds": 9
+        }
+      ]
+    },
+    {
+      "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia",
+      "event": "UDS Invitational Santa Cruz de la Sierra",
+      "location": "Santa Cruz de la Sierra, Bolivia",
+      "updated": "2018-03-04",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-uds-invitational-santa-cruz-de-la-sierra-bolivia/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 99,
+          "rounds": 10
+        }
+      ]
+    },
+    {
+      "slug": "2018-uds-invitational-sacramento-ca",
+      "event": "UDS Invitational Sacramento",
+      "location": "Sacramento, CA",
+      "updated": "2018-02-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-uds-invitational-sacramento-ca/rounds.json",
+      "postCount": 28,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 144,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2018-ycs-atlanta",
+      "event": "YCS Atlanta",
+      "updated": "2018-02-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-atlanta/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1178,
+          "rounds": 11
+        }
+      ]
+    },
+    {
       "slug": "201712-buenos-aires-argentina",
       "event": "YCS Buenos Aires",
       "updated": "2017-12-03",
@@ -2071,6 +2164,79 @@
       ]
     },
     {
+      "slug": "2017-uds-invitational-trinidad-and-tobago",
+      "event": "UDS Invitational Trinidad and Tobago",
+      "updated": "2017-10-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-uds-invitational-trinidad-and-tobago/rounds.json",
+      "postCount": 21,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 85,
+          "rounds": 10
+        }
+      ]
+    },
+    {
+      "slug": "2017-ycs-dallas",
+      "event": "YCS Dallas",
+      "updated": "2017-10-22",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-ycs-dallas/rounds.json",
+      "postCount": 27,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1097,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2017-uds-invitational-kissimmee-fl",
+      "event": "UDS Invitational Kissimmee",
+      "location": "Kissimmee, FL",
+      "updated": "2017-09-24",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-uds-invitational-kissimmee-fl/rounds.json",
+      "postCount": 24,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 178,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2017-ycs-toronto",
+      "event": "YCS Toronto",
+      "updated": "2017-08-27",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-ycs-toronto/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 548,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "2017-central-american-wcq",
       "event": "Central America WCQ 2017",
       "updated": "2017-06-25",
@@ -2085,6 +2251,24 @@
           "swissRounds": 10,
           "duelists": 552,
           "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2017-ycs-pittsburgh",
+      "event": "YCS Pittsburgh",
+      "updated": "2017-05-14",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-ycs-pittsburgh/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 971,
+          "rounds": 14
         }
       ]
     },
