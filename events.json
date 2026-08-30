@@ -32,13 +32,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-north-america-wcq/rounds.json",
-      "postCount": 35,
+      "postCount": 69,
       "formats": [
         {
           "format": null,
           "swissRounds": 15,
-          "duelists": 200,
-          "rounds": 12
+          "duelists": 2077,
+          "rounds": 18
         }
       ]
     },
