@@ -3233,6 +3233,41 @@ class TestArchive(unittest.TestCase):
         # The point of a manifest is that it stays small as the archive grows.
         self.assertNotIn("pairings", json.dumps(entry))
 
+    def test_the_manifest_carries_who_won_and_with_what(self):
+        # The winners page lists every event at once, and the alternative is
+        # fetching a hundred and forty round files -- several over ten
+        # megabytes -- to read one name out of each.
+        import archive
+        got = archive.champions({"formats": [{
+            "format": "Advanced", "champion": "Ada Lovelace",
+            "rounds": [{"label": "Final", "pairings": [
+                {"a": "Ada Lovelace", "aDeck": "Elfnote",
+                 "b": "Bo Peep", "bDeck": "Kewl Tune"}]}]}]})
+        self.assertEqual(got, [{"format": "Advanced", "name": "Ada Lovelace",
+                                "deck": "Elfnote"}])
+
+    def test_the_deck_is_the_winners_side_of_the_pairing(self):
+        # Reading the other side prints the runner-up's deck under the
+        # winner's name, which is the sort of thing that looks right.
+        import archive
+        got = archive.champions({"formats": [{
+            "format": None, "champion": "Bo Peep",
+            "rounds": [{"label": "Final", "pairings": [
+                {"a": "Ada Lovelace", "aDeck": "Elfnote",
+                 "b": "Bo Peep", "bDeck": "Kewl Tune"}]}]}]})
+        self.assertEqual(got[0]["deck"], "Kewl Tune")
+
+    def test_an_event_with_no_champion_contributes_nothing(self):
+        import archive
+        self.assertEqual(archive.champions({"formats": [{"format": "Advanced"}]}), [])
+
+    def test_a_champion_with_no_deck_published_still_counts(self):
+        import archive
+        got = archive.champions({"formats": [{
+            "format": None, "champion": "Ada Lovelace",
+            "rounds": [{"label": "Top 4", "pairings": [{"a": "Ada Lovelace", "b": "Bo Peep"}]}]}]})
+        self.assertEqual(got, [{"format": None, "name": "Ada Lovelace", "deck": None}])
+
     def test_the_manifest_counts_each_events_posts(self):
         # The page lists every event but fetches an event's coverage only when
         # it is opened, so the count has to come from here. Without it the page
