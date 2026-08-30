@@ -134,6 +134,24 @@ def count_posts(root: str | Path, slug: str) -> int:
     return len(json.loads(p.read_text(encoding="utf-8"))) if p.is_file() else 0
 
 
+def behind(root: str | Path, version: int) -> set[str]:
+    """Slugs whose coverage was written by an older builder.
+
+    Read off the files rather than kept in a state file, exactly as `attempted`
+    is, so it cannot disagree with what is actually there. A file with no
+    `built` at all predates the marker and is behind by definition.
+    """
+    out = set()
+    for slug in scraped(root):
+        try:
+            event = json.loads(rounds_path(root, slug).read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if event.get("built", 0) != version:
+            out.add(slug)
+    return out
+
+
 def summarise(slug: str, event: dict, posts: int = 0) -> dict:
     """The manifest's entry for one event: enough to list and choose it, and
     nothing that would make the manifest grow with the coverage."""

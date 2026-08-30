@@ -38,6 +38,13 @@ on:
         description: 'Also build this many older events missing from the archive'
         type: string
         default: '0'
+      rebuild:
+        # The other direction: events already here, written by a builder that
+        # has since been corrected. Costs the same as building them the first
+        # time, so it is asked for in the same small numbers.
+        description: 'Also rebuild this many events an older builder wrote'
+        type: string
+        default: '0'
 
 permissions:
   contents: write        # commits the coverage it scrapes; see "Publish" below
@@ -112,9 +119,10 @@ jobs:
           # one without this, the gate answers "Nothing new since the last run.
           # Stopping." -- which is true, and not the question.
           backfill = int("${{ inputs.backfill || 0 }}" or 0)
-          forced = "${{ inputs.force }}" == "true" or backfill > 0
+          rebuild = int("${{ inputs.rebuild || 0 }}" or 0)
+          forced = "${{ inputs.force }}" == "true" or backfill > 0 or rebuild > 0
           print(f"high-water mark: {high}  changed: {changed}  "
-                f"forced: {forced}  backfill: {backfill}")
+                f"forced: {forced}  backfill: {backfill}  rebuild: {rebuild}")
           pathlib.Path('gate.txt').write_text('yes' if (changed or forced) else 'no')
           state_path.write_text(
               json.dumps(record(before, datetime.now(timezone.utc), high), indent=2) + "\n")
@@ -129,6 +137,7 @@ jobs:
         run: |
           python3 scraper/run.py --feed scraped-feed.xml \
                                  --backfill "${{ inputs.backfill || 0 }}" \
+                                 --rebuild "${{ inputs.rebuild || 0 }}" \
                                  --summary "$GITHUB_STEP_SUMMARY"
 
       # Validated with the same checker the site's own data must pass, so a

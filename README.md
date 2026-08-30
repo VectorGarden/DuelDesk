@@ -99,6 +99,18 @@ events/<slug>/posts.json           its coverage posts, for rebuilding the feed
 `posts.json` exists because the feed spans events. A run backfills a few at a time, so a feed built
 only from what that run fetched would drop everything the run before it covered.
 
+### Rebuilding what an older builder wrote
+
+The archive is built once per event and then left alone — that is what `attempted` is for — so a
+change to what the builder produces reaches only the events built after it. Each event file
+records the `built` version that wrote it, and `--rebuild N` takes the N newest events whose
+version is behind the current one. Separate from `--backfill`, which asks the opposite question:
+one is what is missing, the other what is out of date.
+
+Bump `BUILD_VERSION` in `scraper/build.py` when the builder starts producing something the older
+files do not have, then rebuild in batches. Without the marker there is no way to ask which files
+are behind, and rebuilding everything is hours of fetching to correct a handful.
+
 ### Event identity
 
 Posts appear both under an event slug (`/2026/ycs/2026-08-quebec/…`) and without one, and only

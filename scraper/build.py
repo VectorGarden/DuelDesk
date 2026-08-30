@@ -58,6 +58,20 @@ def round_key(post) -> tuple[str, Any]:
     return None
 
 
+# What the builder was producing when an event file was written.
+#
+# The archive is built once per event and then left alone -- that is the whole
+# point of `attempted` -- so a change to what the builder produces reaches only
+# the events built after it. Two have landed that the archive predates: who won
+# each event, and records that know whether ties were still policy when it was
+# played. Without a marker there is no way to ask which files are behind, and
+# "rebuild everything" is hours of fetching to correct a handful.
+#
+# Bump this when the builder starts producing something the older files do not
+# have. Events whose `built` is behind it are what `--rebuild` picks up.
+BUILD_VERSION = 2
+
+
 @dataclass
 class Source:
     """One fetched post, with the URL it came from."""
@@ -709,6 +723,8 @@ def build_event(event: str, sources: list[Source], *,
         formats.append(only)
     return {
         "event": event,
+        # Which builder wrote this, so a later one can find what it has to redo.
+        "built": BUILD_VERSION,
         # Where it was held, when that is known. Kept beside the name rather
         # than inside it: "YCS Santiago" is what the event is called, and that
         # it was in Chile is a separate thing worth knowing.
