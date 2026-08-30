@@ -2292,6 +2292,61 @@
       ]
     },
     {
+      "slug": "2017-uds-invitational-lima-peru",
+      "event": "UDS Invitational Lima",
+      "location": "Lima, Peru",
+      "updated": "2017-03-07",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-uds-invitational-lima-peru/rounds.json",
+      "postCount": 25,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 126,
+          "rounds": 11
+        }
+      ]
+    },
+    {
+      "slug": "2017-ycs-atlanta",
+      "event": "YCS Atlanta",
+      "updated": "2017-03-05",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-ycs-atlanta/rounds.json",
+      "postCount": 43,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1285,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2017-ycs-seattle",
+      "event": "YCS Seattle",
+      "updated": "2017-02-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-ycs-seattle/rounds.json",
+      "postCount": 19,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 716,
+          "rounds": 9
+        }
+      ]
+    },
+    {
       "slug": "201611-anaheim-ca",
       "event": "YCS Anaheim",
       "updated": "2016-11-28",
@@ -2306,6 +2361,24 @@
           "swissRounds": 11,
           "duelists": 1121,
           "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2016-ycs-rio-de-janeiro",
+      "event": "YCS Rio de Janeiro",
+      "updated": "2016-11-13",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-ycs-rio-de-janeiro/rounds.json",
+      "postCount": 20,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 351,
+          "rounds": 9
         }
       ]
     },
@@ -2328,6 +2401,60 @@
       ]
     },
     {
+      "slug": "2016-uds-invitational-chicago",
+      "event": "UDS Invitational Chicago",
+      "updated": "2016-09-21",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-uds-invitational-chicago/rounds.json",
+      "postCount": 34,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 121,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2016-ycs-mexico-city",
+      "event": "YCS Mexico City",
+      "updated": "2016-09-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-ycs-mexico-city/rounds.json",
+      "postCount": 39,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 123,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2016-ycs-toronto",
+      "event": "YCS Toronto",
+      "updated": "2016-08-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-ycs-toronto/rounds.json",
+      "postCount": 25,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 543,
+          "rounds": 10
+        }
+      ]
+    },
+    {
       "slug": "yu-gi-oh-world-championship-2016",
       "event": "Dragon Duel",
       "updated": "2016-08-23",
@@ -2342,6 +2469,24 @@
           "swissRounds": 5,
           "duelists": 56,
           "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "2016-sa-wcq",
+      "event": "SA WCQ",
+      "updated": "2016-06-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-sa-wcq/rounds.json",
+      "postCount": 25,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 285,
+          "rounds": 12
         }
       ]
     },
