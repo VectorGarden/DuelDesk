@@ -113,6 +113,33 @@ def check_rounds(label, rounds, swiss_count):
             problems.append(f"{rl}: a record was derived for {bad[0]}, "
                             "who appears in two pairings")
 
+        # A record has to come to the points printed beside it. Match points are
+        # 3 for a win and 1 for a draw, so 3*wins + draws is the score, and a row
+        # where it is not is describing a different tournament than the one on
+        # the page beside it.
+        #
+        # Two rebuilds were stopped by exactly this and neither was visible any
+        # other way. A record read round-on-round from the standings series was
+        # written into a cut round holding a different table -- 41 rows saying
+        # "27 points, 10 wins". Two Duelists named Jimmy Nguyen were ranked in
+        # every table of YCS Hartford, and records are read back by name, so one
+        # of them answered for both and the other row got a stranger's record.
+        #
+        # Checked here rather than trusted upstream because the scraper is where
+        # both of those bugs were, and a rule the scraper enforces on itself is
+        # the rule that was wrong.
+        for st in r.get("standings") or []:
+            rec, points = st.get("record"), st.get("points")
+            if not isinstance(rec, dict) or points is None:
+                continue
+            wins, draws = rec.get("wins"), rec.get("draws") or 0
+            if wins is None:
+                continue                  # nothing claimed, nothing to check
+            if 3 * wins + draws != points:
+                problems.append(
+                    f"{rl}: {st.get('name')} shows {fmt_record(rec)} "
+                    f"against {points} points, which is not what that adds up to")
+
         after = r.get("standingsAfter")
         if isinstance(after, int):
             for st in r.get("standings") or []:
