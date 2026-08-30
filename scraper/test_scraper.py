@@ -2230,6 +2230,24 @@ class TestRecordsKnowWhenTiesWereStillPolicy(unittest.TestCase):
         self.assertEqual(ada["record"],
                          {"wins": 2, "losses": 0, "draws": 1, "confidence": "derived"})
 
+    def test_two_duelists_of_one_name_get_no_record_either_way(self):
+        # YCS Hartford ranked two Jimmy Nguyens in every table -- 3 points and
+        # 0 after round one -- and nothing can say which row is which person.
+        # Records are read back by name, so one of them answered for both and
+        # the other's row came out saying "3 points, 0 wins".
+        from records import derive
+        got = derive([{"name": "Jimmy Nguyen", "points": 3},
+                      {"name": "Jimmy Nguyen", "points": 0},
+                      {"name": "Someone Else", "points": 3}],
+                     [[_pairing("Jimmy Nguyen", "Someone Else")]],
+                     event_date="2026-05-01")
+        by = {(r.name, r.points): r for r in got}
+        self.assertEqual(by[("Jimmy Nguyen", 3)].confidence, "unknown")
+        self.assertEqual(by[("Jimmy Nguyen", 0)].confidence, "unknown")
+        self.assertIsNone(by[("Jimmy Nguyen", 3)].wins)
+        self.assertEqual(by[("Someone Else", 3)].confidence, "derived",
+                         "and everybody else is unaffected")
+
     def test_a_record_that_does_not_add_up_to_its_row_is_not_claimed(self):
         # The series and the table are two different documents. A cut round is
         # handed the final standings rather than the table the series ends on,
