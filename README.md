@@ -184,6 +184,13 @@ named in it. Where a post names two, as a final's write-up does, whoever is on t
 
 `champion` is null for most events, and that is a real answer rather than a gap to be filled.
 
+The round panel shows who won on the last round the event published, and nowhere else — usually
+the final, and where coverage stopped at the semis, the deepest round that exists, because that is
+where the bracket ends for whoever is reading. Hidden until asked for: the rounds above it are
+worth reading first, and a result printed beside them takes that away from anyone following the
+bracket down. Not in the document until revealed, either — a spoiler that view-source or a screen
+reader can find is not hidden.
+
 ### What the coverage does not always say
 
 - **The blog reports points, the site models W–L–D records.** They are different quantities, and

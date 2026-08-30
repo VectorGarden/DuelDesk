@@ -171,6 +171,11 @@
           <button type="button" data-view="feature" aria-pressed="false">Feature match</button>
         </div>
       </div>
+      <!-- Who won, on the last round the event published and nowhere else: it
+           is a fact about the end of the tournament, and a reader arrives here
+           having already seen the bracket. Hidden until asked for, because the
+           rounds above it are worth reading first. Filled by renderChampion(). -->
+      <div class="champ" id="champion" hidden></div>
       <!-- aria-labelledby is set by syncTrack() once the tabs exist -->
       <div id="round-body" role="tabpanel" tabindex="0"></div>
     </div>

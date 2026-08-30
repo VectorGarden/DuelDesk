@@ -1036,6 +1036,7 @@ function selectRound(id, focus){
     : r.state === 'done' ? `${r.phase} · complete · results final · posted ${r.posted}`
     :                      'Not started · pairings appear here once the previous round finishes';
   renderRound();
+  renderChampion();
 
   const tab = document.getElementById('tab-' + id);
   if (focus) tab?.focus();
@@ -1197,6 +1198,59 @@ function renderFeature(r){
   </div>
   <p class="feature__note">${esc(note)}${offsite(source) ? ` <a href="${esc(source)}" rel="external noreferrer">Read the coverage</a>.` : ''}</p>`;
 }
+
+/* ---- who won -------------------------------------------------------------
+   Shown on the last round the event published, and nowhere else. Usually the
+   final; where coverage stopped at the semis there is no final to hang it on,
+   and the deepest round is where the bracket ends for whoever is reading.
+
+   Hidden until asked for. The rounds above it are worth reading first, and a
+   result printed beside them takes that away from anyone who wanted to follow
+   the bracket down. */
+const champEl = document.getElementById('champion');
+let championShown = false;
+
+const deepestRound = () => ROUNDS[ROUNDS.length - 1];
+
+/* What they won with, from the round they won it in. Only where the coverage
+   published deck types, which it does for the cut and not for Swiss. */
+function championDeck(name){
+  for (const p of deepestRound()?.pairings ?? []){
+    if (p.a === name) return p.aDeck;
+    if (p.b === name) return p.bDeck;
+  }
+  return null;
+}
+
+function renderChampion(){
+  const won = formatOf(activeFormat)?.champion;
+  const here = won && deepestRound() && activeRound === deepestRound().id;
+  if (!champEl) return;
+  champEl.hidden = !here;
+  if (!here){ champEl.innerHTML = ''; return; }
+
+  const deck = championDeck(won);
+  champEl.innerHTML = championShown
+    ? `<span class="champ__k">Champion</span>
+       <b class="champ__n">${esc(won)}</b>
+       ${deck ? `<span class="champ__d">${esc(deck)}</span>` : ''}
+       <button type="button" class="btn btn--sm" data-champ aria-expanded="true">Hide</button>`
+    : `<span class="champ__k">Champion</span>
+       <button type="button" class="btn btn--sm" data-champ aria-expanded="false">Reveal</button>
+       <span class="champ__h">hidden until you ask</span>`;
+}
+
+champEl?.addEventListener('click', e => {
+  if (!e.target.closest('[data-champ]')) return;
+  championShown = !championShown;
+  renderChampion();
+  /* Focus survives the rewrite: the button is the thing that was just used,
+     and a reader on the keyboard would otherwise be returned to the top. */
+  champEl.querySelector('[data-champ]')?.focus();
+  say(championShown
+    ? `Champion: ${formatOf(activeFormat)?.champion}`
+    : 'Champion hidden');
+});
 
 function renderRound(){
   if (roundsState === 'loading'){
