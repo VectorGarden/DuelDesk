@@ -232,7 +232,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-ycs-cartagena-colombia/rounds.json",
-      "postCount": 25,
+      "postCount": 27,
       "formats": [
         {
           "format": null,
@@ -269,12 +269,12 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
-      "postCount": 23,
+      "postCount": 26,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
-          "duelists": 310,
+          "duelists": 332,
           "rounds": 12
         }
       ]
@@ -288,7 +288,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-team-ycs-la-paz-bolivia/rounds.json",
-      "postCount": 20,
+      "postCount": 23,
       "formats": [
         {
           "format": null,
@@ -348,7 +348,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-january-2026/rounds.json",
-      "postCount": 24,
+      "postCount": 25,
       "formats": [
         {
           "format": null,
@@ -387,12 +387,12 @@
       "slug": "2025-ycs-merida-mexico",
       "event": "YCS Merida",
       "location": "Merida, Mexico",
-      "updated": "2025-11-30",
+      "updated": "2025-12-01",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-merida-mexico/rounds.json",
-      "postCount": 22,
+      "postCount": 24,
       "formats": [
         {
           "format": null,
@@ -436,7 +436,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-sao-paulo-brazil/rounds.json",
-      "postCount": 27,
+      "postCount": 28,
       "formats": [
         {
           "format": null,
@@ -2604,6 +2604,31 @@
           "swissRounds": 10,
           "duelists": 75,
           "rounds": 9
+        }
+      ]
+    },
+    {
+      "slug": "2016-ycs-minneapolis",
+      "event": "YCS Minneapolis",
+      "updated": "2016-10-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-ycs-minneapolis/rounds.json",
+      "postCount": 65,
+      "champions": [
+        {
+          "format": null,
+          "name": "Marcus Hayden",
+          "deck": "Metalfoes"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 775,
+          "rounds": 15
         }
       ]
     },
