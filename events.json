@@ -1631,6 +1631,97 @@
       ]
     },
     {
+      "slug": "2019-ycs-pasadena",
+      "event": "YCS Pasadena",
+      "updated": "2019-11-24",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-pasadena/rounds.json",
+      "postCount": 27,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1607,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2019-team-ycs-lima-peru",
+      "event": "Team YCS Lima",
+      "location": "Lima, Peru",
+      "updated": "2019-11-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-team-ycs-lima-peru/rounds.json",
+      "postCount": 16,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 153,
+          "rounds": 10
+        }
+      ]
+    },
+    {
+      "slug": "2019-uds-invitational-panama-city",
+      "event": "UDS Invitational Panama City",
+      "updated": "2019-10-20",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-uds-invitational-panama-city/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 95,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2019-ycs-guadalajara",
+      "event": "YCS Guadalajara",
+      "updated": "2019-09-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-guadalajara/rounds.json",
+      "postCount": 32,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 712,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2019-ycs-niagara-falls",
+      "event": "YCS Niagara Falls",
+      "updated": "2019-09-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-niagara-falls/rounds.json",
+      "postCount": 27,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 771,
+          "rounds": 13
+        }
+      ]
+    },
+    {
       "slug": "2019-south-america-wcq",
       "event": "South America WCQ 2019",
       "updated": "2019-06-16",
@@ -1644,6 +1735,61 @@
           "format": null,
           "swissRounds": 9,
           "duelists": 403,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2019-central-america-wcq",
+      "event": "Central America WCQ 2019",
+      "updated": "2019-06-09",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-central-america-wcq/rounds.json",
+      "postCount": 22,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 779,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2019-ycs-knoxville",
+      "event": "YCS Knoxville",
+      "updated": "2019-06-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-knoxville/rounds.json",
+      "postCount": 19,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 896,
+          "rounds": 11
+        }
+      ]
+    },
+    {
+      "slug": "2019-ycs-quito-ecuador",
+      "event": "YCS Quito",
+      "location": "Quito, Ecuador",
+      "updated": "2019-04-21",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-quito-ecuador/rounds.json",
+      "postCount": 21,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 406,
           "rounds": 13
         }
       ]
