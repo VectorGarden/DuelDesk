@@ -256,6 +256,16 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
     """
     draws_possible = bool(event_date) and event_date < DRAWS_ABOLISHED
     appearances = last_appearance(pairing_rounds, round_numbers)
+    # Two Duelists of one name, each with their own row. YCS Hartford ranked
+    # two Jimmy Nguyens in every table -- 3 points and 0 after round one -- and
+    # nothing here can say which row is which person. The caller reads records
+    # back by name, so one of them was answering for both.
+    #
+    # `ambiguous` is the same problem seen in the pairings, where one name is
+    # seated at two tables in a round. This is it seen in the standings, and it
+    # is caught here because that is where the rows are.
+    twice = {name for name, n in Counter(
+        r.get("name", "") for r in standings).items() if n > 1}
     exact = (results_from_standings(standings_series, series_from)
              if standings_series else {})
     swiss_last = swiss_last_round(standings)
@@ -267,7 +277,7 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
             continue
         played = appearances.get(name)
 
-        if name in ambiguous:
+        if name in ambiguous or name in twice:
             out.append(Record(name, points, None, None, None, None, "unknown"))
             continue
 

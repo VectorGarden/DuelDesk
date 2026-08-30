@@ -69,7 +69,7 @@ def round_key(post) -> tuple[str, Any]:
 #
 # Bump this when the builder starts producing something the older files do not
 # have. Events whose `built` is behind it are what `--rebuild` picks up.
-BUILD_VERSION = 3
+BUILD_VERSION = 4
 
 
 @dataclass
