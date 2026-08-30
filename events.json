@@ -1889,24 +1889,6 @@
       ]
     },
     {
-      "slug": "2018-09-200th-ycs-columbus-oh",
-      "event": "200th YCS Columbus",
-      "updated": "2018-09-25",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2018-09-200th-ycs-columbus-oh/rounds.json",
-      "postCount": 49,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 12,
-          "duelists": 2341,
-          "rounds": 14
-        }
-      ]
-    },
-    {
       "slug": "2018-uds-invitational-kansas-city-mo",
       "event": "UDS Invitational Kansas City",
       "location": "Kansas City, MO",
@@ -1933,13 +1915,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-north-america-wcq/rounds.json",
-      "postCount": 42,
+      "postCount": 55,
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
-          "duelists": 1743,
-          "rounds": 15
+          "duelists": 1757,
+          "rounds": 16
         }
       ]
     },
