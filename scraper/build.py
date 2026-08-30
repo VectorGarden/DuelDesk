@@ -69,7 +69,13 @@ def round_key(post) -> tuple[str, Any]:
 #
 # Bump this when the builder starts producing something the older files do not
 # have. Events whose `built` is behind it are what `--rebuild` picks up.
-BUILD_VERSION = 4
+#
+# 5: four changes to what the scraper can see. A tie the date rule could not
+#    break is broken by the qualifier a post names; the final's own write-up is
+#    read for a champion; a round written out as sentences is read as pairings;
+#    and an event discovered rather than filed can be dated, which is 1,879
+#    posts that had nowhere to go.
+BUILD_VERSION = 5
 
 
 @dataclass
