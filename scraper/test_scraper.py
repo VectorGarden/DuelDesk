@@ -2752,6 +2752,43 @@ class TestChampionInTheBuild(unittest.TestCase):
         gen = next(f for f in ev["formats"] if f["format"] == "Genesys")
         self.assertEqual(gen["champion"], "Samuel Deng")
 
+    def test_a_round_nothing_was_published_for_is_not_a_round(self):
+        # One is created whenever a post names a round and carries nothing: a
+        # feature match whose title will not parse into two Duelists, or a side
+        # event's write-up naming a Final the main event has not reached. Left
+        # in, it is an empty row on the track and the deploy refuses the event.
+        from build import build_event, Source
+        from parse import Post
+        # The title says "Finals Feature Match" and nothing more, so no two
+        # Duelists come out of it and the round it names carries nothing. It
+        # must be in a format's own sources to create one at all.
+        names_a_final = Source(
+            "https://x/finals-feature/",
+            Post(title="Finals Feature Match", kind="feature", fmt="Genesys",
+                 round="Final", table=None, lead=""), "20:00")
+        ev = build_event("YCS Montréal", _sources() + [names_a_final],
+                         updated="2026-08-16T19:10:00Z")
+        gen = next(f for f in ev["formats"] if f["format"] == "Genesys")
+        self.assertNotIn("Final", [r["label"] for r in gen["rounds"]])
+        for fmt in ev["formats"]:
+            for r in fmt["rounds"]:
+                self.assertTrue(r["pairings"] or r["standings"] or r.get("feature"),
+                                f"{r['label']} is empty")
+
+    def test_a_round_with_only_a_feature_match_is_still_a_round(self):
+        # The blog covers some rounds with a feature match and nothing else.
+        from build import build_event, Source
+        from parse import Post
+        ev = build_event("YCS Montréal", _sources() + [Source(
+            "https://x/f/", Post(title="Final Feature Match: Ada Lovelace vs Bo Peep",
+                                 kind="feature", fmt="Genesys", round="Final",
+                                 table=None, lead=""), "20:00")],
+            updated="2026-08-16T19:10:00Z")
+        gen = next(f for f in ev["formats"] if f["format"] == "Genesys")
+        final = next((r for r in gen["rounds"] if r["label"] == "Final"), None)
+        self.assertIsNotNone(final, "the round is kept")
+        self.assertTrue(final["feature"])
+
     def test_an_event_nobody_announced_a_winner_for_says_so(self):
         # Null is the common answer across the archive, and a real one.
         from build import build_event
@@ -3277,6 +3314,30 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         self.assertEqual(got["south-america-wcq-round-7-pairings"][0], "2023-south-america-wcq",
                          "the misfiled post is the event's, whatever section it sits in")
         self.assertEqual(got["finals-feature-match-steven-santoli-vs-liam-mac-oscair"][0],
+                         "2023-north-america-remote-duel-ycs")
+
+    def test_a_side_event_is_not_attached_by_its_date(self):
+        # Every YCS runs a dozen tournaments beside the main one, and a date
+        # cannot tell them apart. "dd-wcq-ca-standings-after-round-1" is the
+        # Dragon Duel's table and would be read as the main event's.
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/dragon-duel-standings-after-round-1", "2023-06-25"),
+            ("2023/ycs/sunday-speed-duel-attack-of-the-giant-card-finals-feature-match",
+             "2023-06-25"))
+        self.assertIsNone(got["dragon-duel-standings-after-round-1"][0])
+        self.assertIsNone(
+            got["sunday-speed-duel-attack-of-the-giant-card-finals-feature-match"][0])
+
+    def test_the_main_events_own_posts_are_unaffected(self):
+        # The rule is scoped to the date path, so a post of the event's that
+        # happens to sit next to the side events still arrives.
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/dragon-duel-standings-after-round-1", "2023-06-25"),
+            ("2023/ycs/what-a-weekend-it-has-been", "2023-06-25"))
+        self.assertIsNone(got["dragon-duel-standings-after-round-1"][0])
+        self.assertEqual(got["what-a-weekend-it-has-been"][0],
                          "2023-north-america-remote-duel-ycs")
 
     def test_a_small_event_keeps_the_categories_it_has(self):
