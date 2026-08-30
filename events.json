@@ -1795,6 +1795,44 @@
       ]
     },
     {
+      "slug": "2019-ycs-guatemala-city-guatemala",
+      "event": "YCS Guatemala City",
+      "location": "Guatemala City, Guatemala",
+      "updated": "2019-03-31",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-guatemala-city-guatemala/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 286,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2019-uds-invitational-medellin-colombia",
+      "event": "UDS Invitational Medellin",
+      "location": "Medellin, Colombia",
+      "updated": "2019-03-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-uds-invitational-medellin-colombia/rounds.json",
+      "postCount": 25,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 14,
+          "duelists": 142,
+          "rounds": 13
+        }
+      ]
+    },
+    {
       "slug": "2019-03-atlanta-ga",
       "event": "Team YCS Atlanta",
       "updated": "2019-03-18",
@@ -1813,6 +1851,62 @@
       ]
     },
     {
+      "slug": "2019-uds-invitational-las-vegas-nv",
+      "event": "UDS Invitational Las Vegas",
+      "location": "Las Vegas, NV",
+      "updated": "2019-03-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-uds-invitational-las-vegas-nv/rounds.json",
+      "postCount": 19,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 363,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2019-ycs-chicago",
+      "event": "YCS Chicago",
+      "updated": "2019-02-04",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-chicago/rounds.json",
+      "postCount": 19,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 116,
+          "rounds": 11
+        }
+      ]
+    },
+    {
+      "slug": "2018-uds-invitational-monterrey-mexico",
+      "event": "UDS Invitational Monterrey",
+      "location": "Monterrey, Mexico",
+      "updated": "2018-11-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-uds-invitational-monterrey-mexico/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 180,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "2018-09-200th-ycs-columbus-oh",
       "event": "200th YCS Columbus",
       "updated": "2018-09-25",
@@ -1827,6 +1921,25 @@
           "swissRounds": 12,
           "duelists": 2341,
           "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2018-uds-invitational-kansas-city-mo",
+      "event": "UDS Invitational Kansas City",
+      "location": "Kansas City, MO",
+      "updated": "2018-08-26",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-uds-invitational-kansas-city-mo/rounds.json",
+      "postCount": 24,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 163,
+          "rounds": 12
         }
       ]
     },
@@ -1863,6 +1976,61 @@
           "swissRounds": 10,
           "duelists": 569,
           "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2018-ycs-secaucus",
+      "event": "YCS Secaucus",
+      "updated": "2018-06-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-secaucus/rounds.json",
+      "postCount": 32,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1312,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2018-ycs-santiago-chile",
+      "event": "YCS Santiago",
+      "location": "Santiago, Chile",
+      "updated": "2018-04-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-santiago-chile/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 369,
+          "rounds": 8
+        }
+      ]
+    },
+    {
+      "slug": "2018-ycs-memphis",
+      "event": "YCS Memphis",
+      "updated": "2018-04-22",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-memphis/rounds.json",
+      "postCount": 23,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 753,
+          "rounds": 11
         }
       ]
     },
