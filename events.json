@@ -792,7 +792,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-ycs-guayaquil-ecuador/rounds.json",
-      "postCount": 21,
+      "postCount": 23,
+      "champions": [
+        {
+          "format": null,
+          "name": "Landon Edward Oliver",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -855,7 +862,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-team-ycs-santiago-chile/rounds.json",
-      "postCount": 16,
+      "postCount": 18,
       "formats": [
         {
           "format": null,
@@ -873,7 +880,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-tcg-world-championship-2024/rounds.json",
-      "postCount": 15,
+      "postCount": 16,
       "formats": [
         {
           "format": null,
@@ -916,13 +923,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-north-america-wcq/rounds.json",
-      "postCount": 40,
+      "postCount": 116,
+      "champions": [
+        {
+          "format": null,
+          "name": "Aditya Shirish Dharap",
+          "deck": "Fiendsmith Snake-Eye"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 2639,
-          "rounds": 17
+          "rounds": 18
         }
       ]
     },
@@ -934,7 +948,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-south-america-wcq/rounds.json",
-      "postCount": 23,
+      "postCount": 24,
       "formats": [
         {
           "format": null,
@@ -977,13 +991,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-ycs-indianapolis/rounds.json",
-      "postCount": 27,
+      "postCount": 86,
+      "champions": [
+        {
+          "format": null,
+          "name": "Paulo Roberto Goncalves da Silva",
+          "deck": "Snake-Eye"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 1620,
-          "rounds": 12
+          "rounds": 15
         }
       ]
     },
@@ -996,31 +1017,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-ycs-rio-de-janeiro-brazil/rounds.json",
-      "postCount": 22,
+      "postCount": 24,
+      "champions": [
+        {
+          "format": null,
+          "name": "Rafael Mariano Reich",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
           "duelists": 351,
           "rounds": 13
-        }
-      ]
-    },
-    {
-      "slug": "2024-ycs-raleigh",
-      "event": "YCS Raleigh",
-      "updated": "2024-04-23",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2024-ycs-raleigh/rounds.json",
-      "postCount": 30,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 11,
-          "duelists": 1637,
-          "rounds": 15
         }
       ]
     },
@@ -1033,7 +1043,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-ycs-guadalajara-mexico/rounds.json",
-      "postCount": 23,
+      "postCount": 26,
+      "champions": [
+        {
+          "format": null,
+          "name": "Cristian Rafael Urena",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1052,7 +1069,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-ycs-medellin-colombia/rounds.json",
-      "postCount": 21,
+      "postCount": 23,
+      "champions": [
+        {
+          "format": null,
+          "name": "Cristian Rafael Urena",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1088,13 +1112,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-undisputed-uds-championship/rounds.json",
-      "postCount": 16,
+      "postCount": 25,
       "formats": [
         {
           "format": null,
           "swissRounds": 7,
           "duelists": 16,
-          "rounds": 7
+          "rounds": 8
         }
       ]
     },
