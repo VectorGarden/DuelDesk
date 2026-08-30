@@ -1979,31 +1979,45 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-guadalajara/rounds.json",
-      "postCount": 32,
+      "postCount": 45,
+      "champions": [
+        {
+          "format": null,
+          "name": "Ramiro Garcia",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 712,
-          "rounds": 13
+          "rounds": 14
         }
       ]
     },
     {
       "slug": "2019-ycs-niagara-falls",
-      "event": "YCS Niagara Falls",
+      "event": "YCS Niagara",
       "updated": "2019-09-23",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-niagara-falls/rounds.json",
-      "postCount": 27,
+      "postCount": 55,
+      "champions": [
+        {
+          "format": null,
+          "name": "David G. Mendoza",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 771,
-          "rounds": 13
+          "rounds": 15
         }
       ]
     },
@@ -2065,7 +2079,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-central-america-wcq/rounds.json",
-      "postCount": 22,
+      "postCount": 40,
       "champions": [
         {
           "format": null,
@@ -2078,25 +2092,7 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 779,
-          "rounds": 14
-        }
-      ]
-    },
-    {
-      "slug": "2019-ycs-knoxville",
-      "event": "YCS Knoxville",
-      "updated": "2019-06-03",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2019-ycs-knoxville/rounds.json",
-      "postCount": 19,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 10,
-          "duelists": 896,
-          "rounds": 11
+          "rounds": 16
         }
       ]
     },
@@ -2109,7 +2105,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-quito-ecuador/rounds.json",
-      "postCount": 21,
+      "postCount": 24,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alejandro Vivaldo Reyes Suarez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2128,7 +2131,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-guatemala-city-guatemala/rounds.json",
-      "postCount": 23,
+      "postCount": 26,
+      "champions": [
+        {
+          "format": null,
+          "name": "Paulo Roberto Goncalves da Silva",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2147,7 +2157,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-medellin-colombia/rounds.json",
-      "postCount": 25,
+      "postCount": 26,
       "formats": [
         {
           "format": null,
@@ -2176,43 +2186,6 @@
       ]
     },
     {
-      "slug": "2019-uds-invitational-las-vegas-nv",
-      "event": "UDS Invitational Las Vegas",
-      "location": "Las Vegas, NV",
-      "updated": "2019-03-03",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2019-uds-invitational-las-vegas-nv/rounds.json",
-      "postCount": 19,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 13,
-          "duelists": 363,
-          "rounds": 14
-        }
-      ]
-    },
-    {
-      "slug": "2019-ycs-chicago",
-      "event": "YCS Chicago",
-      "updated": "2019-02-04",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2019-ycs-chicago/rounds.json",
-      "postCount": 19,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 11,
-          "duelists": 116,
-          "rounds": 11
-        }
-      ]
-    },
-    {
       "slug": "2018-uds-invitational-monterrey-mexico",
       "event": "UDS Invitational Monterrey",
       "location": "Monterrey, Mexico",
@@ -2221,7 +2194,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-monterrey-mexico/rounds.json",
-      "postCount": 26,
+      "postCount": 27,
       "formats": [
         {
           "format": null,
@@ -2240,13 +2213,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-kansas-city-mo/rounds.json",
-      "postCount": 24,
+      "postCount": 53,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 163,
-          "rounds": 12
+          "rounds": 15
         }
       ]
     },
@@ -2258,7 +2231,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-north-america-wcq/rounds.json",
-      "postCount": 55,
+      "postCount": 69,
+      "champions": [
+        {
+          "format": null,
+          "name": "Gabriel Antonio Vargas",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2296,18 +2276,25 @@
     {
       "slug": "2018-ycs-secaucus",
       "event": "YCS Secaucus",
-      "updated": "2018-06-03",
+      "updated": "2018-06-05",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-secaucus/rounds.json",
-      "postCount": 32,
+      "postCount": 74,
+      "champions": [
+        {
+          "format": null,
+          "name": "Dakota Clint Angeloff",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 1312,
-          "rounds": 13
+          "rounds": 16
         }
       ]
     },
@@ -2320,31 +2307,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-santiago-chile/rounds.json",
-      "postCount": 26,
+      "postCount": 31,
+      "champions": [
+        {
+          "format": null,
+          "name": "Hector Lorenzo Perez Herrera",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
           "duelists": 369,
           "rounds": 8
-        }
-      ]
-    },
-    {
-      "slug": "2018-ycs-memphis",
-      "event": "YCS Memphis",
-      "updated": "2018-04-22",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2018-ycs-memphis/rounds.json",
-      "postCount": 23,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 10,
-          "duelists": 753,
-          "rounds": 11
         }
       ]
     },
@@ -2356,13 +2332,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-salt-lake-city/rounds.json",
-      "postCount": 29,
+      "postCount": 65,
+      "champions": [
+        {
+          "format": null,
+          "name": "Leonard K. Anaya III",
+          "deck": "True Draco"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 531,
-          "rounds": 11
+          "rounds": 15
         }
       ]
     },
@@ -2375,7 +2358,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-san-jose-costa-rica/rounds.json",
-      "postCount": 23,
+      "postCount": 28,
+      "champions": [
+        {
+          "format": null,
+          "name": "Adrian Madriz Espinoza",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,

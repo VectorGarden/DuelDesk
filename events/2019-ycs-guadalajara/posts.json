@@ -207,9 +207,9 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
-    "title": "YCS Guadalajara Finals Feature Match: Ramiro Garcia vs. Jonhathan Sebastian Vazquez Herrera",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-finals-feature-match-ramiro-garcia-vs-jonhathan-sebastian-vazquez-herrera/",
-    "modified": "2019-09-29T22:26:57-07:00",
+    "title": "Round 1 Feature Match: David Moncada Olmos vs. Renato Ricardo Sarmiento Mesones",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-1-feature-match-david-moncada-olmos-vs-renato-ricardo-sarmiento-mesones/",
+    "modified": "2019-09-29T11:52:18-07:00",
     "kind": "feature",
     "format": null,
     "event": "YCS Guadalajara",
@@ -225,10 +225,46 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
+    "title": "YCS Guadalajara: And the Winner is…",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-and-the-winner-is/",
+    "modified": "2019-09-29T22:56:10-07:00",
+    "kind": "result",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara: Who to Watch",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-who-to-watch/",
+    "modified": "2019-09-29T08:26:55-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "Round 10 Feature Match: Erick Villanueva Priego vs. Carlos Ramon Herrera Hernandez",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-10-feature-match-erick-villanueva-priego-vs-carlos-ramon-herrera-hernandez/",
+    "modified": "2019-09-29T11:47:53-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
     "title": "YCS Guadalajara: Top Tables Update Round 8",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-top-tables-update-round-8/",
     "modified": "2019-09-29T08:55:31-07:00",
     "kind": "news",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "Top 16 Feature Match:  Esala Sammidha de Alwis Wathuthantrige vs. Salvador Molina Ochoa",
+    "url": "https://yugiohblog.konami.com/2019/ycs/top-16-feature-match-esala-sammidha-de-alwis-wathuthantrige-vs-salvador-molina-ochoa/",
+    "modified": "2019-09-29T17:54:50-07:00",
+    "kind": "feature",
     "format": null,
     "event": "YCS Guadalajara",
     "slug": "2019-ycs-guadalajara"
@@ -243,6 +279,15 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
+    "title": "Top 8 Feature Match: Juan Carlos Panales Cortes vs. Edwin Azuma Monreal Araiza",
+    "url": "https://yugiohblog.konami.com/2019/ycs/top-8-feature-match-juan-carlos-panales-cortes-vs-edwin-azuma-monreal-araiza/",
+    "modified": "2019-09-29T19:16:22-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
     "title": "YCS Guadalajara: Top Tables Update Round 10",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-top-tables-update-round-10/",
     "modified": "2019-09-29T12:26:48-07:00",
@@ -252,9 +297,81 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
+    "title": "Top 4 Feature Match: Jonhathan Sebastian Vazquez Herrera vs. Alan Omar Roman Villagomez",
+    "url": "https://yugiohblog.konami.com/2019/ycs/top-4-feature-match-jonhathan-sebastian-vazquez-herrera-vs-alan-omar-roman-villagomez/",
+    "modified": "2019-09-29T22:23:21-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
     "title": "Top 32 Feature Match: Adrian Madriz Espinoza vs. Andres David Torres Reyes",
     "url": "https://yugiohblog.konami.com/2019/ycs/38824/",
     "modified": "2019-09-29T17:11:22-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara Finals Feature Match: Ramiro Garcia vs. Jonhathan Sebastian Vazquez Herrera",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-finals-feature-match-ramiro-garcia-vs-jonhathan-sebastian-vazquez-herrera/",
+    "modified": "2019-09-29T22:26:57-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara: Wrap-Up!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-wrap-up/",
+    "modified": "2019-09-29T22:57:17-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "Round 3 Feature Match: Erick Laurentino Ramirez Rodriguez vs. Guillermo Benjamin Morales Ramirez",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-3-feature-match-erick-laurentino-ramirez-rodriguez-vs-guillermo-benjamin-morales-ramirez/",
+    "modified": "2019-09-28T13:00:20-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "Welcome To YCS Guadalajara, Mexico!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/welcome-to-ycs-guadalajara-mexico/",
+    "modified": "2019-09-28T08:36:34-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "Round 5 Feature Match: Malvin Bernardo Dionisio vs. Jose Carlo Carrillo Toscano",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-5-feature-match-malvin-bernardo-dionisio-vs-jose-carlo-carrillo-toscano/",
+    "modified": "2019-09-28T15:24:51-07:00",
+    "kind": "feature",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara: GIANT CARDS!!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-giant-cards/",
+    "modified": "2019-09-28T10:59:21-07:00",
+    "kind": "news",
+    "format": null,
+    "event": "YCS Guadalajara",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "Round 7 Feature Match: Adrian Madriz Espinoza vs. Salvador Osmar Gonzalez Zuany",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-7-feature-match-adrian-madriz-espinoza-vs-salvador-osmar-gonzalez-zuany/",
+    "modified": "2019-09-28T16:58:23-07:00",
     "kind": "feature",
     "format": null,
     "event": "YCS Guadalajara",
