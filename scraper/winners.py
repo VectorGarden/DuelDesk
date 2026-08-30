@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+"""Who won, read off the post that announces it.
+
+The blog never records a winner as data. The final match's pairing names two
+Duelists and does not say which of them took it, and most events do not publish
+a final at all -- coverage usually stops at the semis. What there is instead is
+a post:
+
+    "Congratulations to Barrett Arthur Keys the winner of YCS Bogota!"
+    "Juan Sebastian Andrade Castro is our new South America WCQ Champion."
+    "Francisco Osorio ... used his Elfnote Deck to defeat the World Champion"
+
+Reading a name out of prose like that is not something to attempt. Two rules
+were tried on the real archive -- take the first name in the post, take the
+longest -- and each of them confidently produced a different wrong champion for
+the 2013 North America WCQ, which says "Patrick J. Hoban ... defeated David J.
+Keener III". One rule picked a Duelist called Patrick Le on the strength of the
+word "Patrick"; the other picked Keener, who lost.
+
+So no name is read out of the post at all. The event already knows who could
+possibly have won -- the Duelists in the deepest round of its top cut -- and the
+post is asked only which of *them* it is talking about. That turns extraction
+into recognition, over a handful of candidates rather than the whole field, and
+the failure mode becomes "no champion claimed" rather than "the wrong one".
+
+Three things have to hold before a name is claimed:
+
+  * the post announces a winner, by its own title;
+  * it is not about one of the side events, which every YCS runs a dozen of and
+    which have winners of their own;
+  * exactly one of the cut's Duelists is named in it.
+"""
+from __future__ import annotations
+
+import re
+
+# What the blog calls the tournaments running alongside the main event. Each has
+# its own winner and its own congratulatory post, and taking one of those for
+# the event's champion is the single easiest mistake to make here: of 266 result
+# posts in the archive, 198 are these.
+SIDE_EVENT = re.compile(
+    r"dragon duel|public event|attack of the giant card|time wizard"
+    r"|3\s*v\.?\s*s?\.?\s*3|sealed|win-a-mat|bounty|cosplay|artist|charity"
+    r"|raffle|school tournament|ots tournament|speed duel|invitational"
+    r"|team tournament",
+    re.I)
+
+# A post that announces a winner says so in its title. Deliberately loose --
+# "And the Advanced Format Winner is...", "We have a winner!", "Central America
+# WCQ Winner!", "...is our new Champion" -- because the work of being careful is
+# done by the candidate list, not here. A tight pattern only lost real winners:
+# an earlier one required "the winner is" as a phrase and missed YCS Montreal,
+# whose post is headed "And the Advanced Format Winner is".
+ANNOUNCEMENT = re.compile(r"\bwinners?\b|\bchampions?\b", re.I)
+
+# Which side of a beating each name is on. Only consulted when a post names two
+# of the cut's Duelists, which is what the final's write-up naturally does.
+DEFEAT = re.compile(
+    r"\b(defeat(?:ed|s|ing)?|beat|beats|bested|topple[ds]?|overcame|overcome"
+    r"|won against|victorious over)\b", re.I)
+
+# Which format a post is about, where it says. A two-format event publishes two
+# of these posts and they must not be read against each other's brackets.
+_FORMAT = re.compile(r"\b(advanced|genesys)\b", re.I)
+
+
+def named_in(name: str, text: str) -> int:
+    """Where a recorded name is named in prose, or -1.
+
+    The blog writes shorter forms than the tables do: "Francisco Osorio" for
+    "Francisco Andres Osorio Bobadilla", "Hani Jawhari" for "Hani Yasser
+    Jawhari". So the prose is searched for the recorded name's own words and
+    two of them have to be there.
+
+    Two, not all, because the dropped word is often the last: Spanish and
+    Portuguese names carry two surnames and the blog usually prints one. And
+    not one, because a lone forename is not identification -- "Patrick" is the
+    whole of what a rule matching on one word had to go on when it decided the
+    2013 North America WCQ had been won by a Patrick who was not there.
+
+    A name that is only one word can therefore never match, which is the right
+    answer for the team events: they enter as "Legionnaire" and one word of
+    ordinary prose is not a team.
+    """
+    words = [w for w in re.split(r"[^A-Za-z]+", name.lower()) if len(w) > 1]
+    low = text.lower()
+    at = [low.find(w) for w in words]
+    present = [p for p in at if p >= 0]
+    return min(present) if len(present) >= 2 else -1
+
+
+def about_format(title: str) -> str | None:
+    """The format a winner post names, or None if it names none."""
+    m = _FORMAT.search(title or "")
+    return m.group(1).title() if m else None
+
+
+def announces_a_winner(title: str, opening: str = "") -> bool:
+    """Whether this post is the main event's winner being announced.
+
+    The opening of the body is read as well as the title, because a side event
+    is not always named in the heading -- "And the Winner Is..." is used for the
+    Dragon Duel playoff as readily as for the event itself, and the first line
+    says which.
+    """
+    if not ANNOUNCEMENT.search(title or ""):
+        return False
+    return not (SIDE_EVENT.search(title or "") or SIDE_EVENT.search(opening[:160]))
+
+
+def champion(candidates: list[str], posts: list[dict], fmt: str | None = None) -> str | None:
+    """Which of these Duelists the coverage says won, or None.
+
+    `candidates` are the Duelists in the deepest round of the cut that was
+    published. `posts` are the event's result posts, each a dict with a title
+    and the opening of its text.
+
+    None is a real answer and the common one. An event whose winner post was
+    never published, or whose cut is not in the archive, has no champion here
+    rather than a guess at one.
+    """
+    claimed = set()
+    for post in posts:
+        title, text = post.get("title") or "", post.get("text") or ""
+        if not announces_a_winner(title, text):
+            continue
+        # A post that names a format is about that format's bracket and no
+        # other. One that names none is read against whichever is asking.
+        said = about_format(title)
+        if fmt and said and said != fmt:
+            continue
+        named = sorted((at, name) for name in candidates
+                       if (at := named_in(name, text)) >= 0)
+        if len(named) == 1:
+            claimed.add(named[0][1])
+        elif len(named) > 1:
+            # The final's write-up names both Duelists. Whoever is on the near
+            # side of "defeated" won it.
+            beat = DEFEAT.search(text)
+            if beat and named[0][0] < beat.start() <= named[1][0]:
+                claimed.add(named[0][1])
+    # Two posts naming two different winners is a disagreement, not a result.
+    return claimed.pop() if len(claimed) == 1 else None
