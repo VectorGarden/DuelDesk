@@ -1,158 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Duel Desk — Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026</title>
+    <title>Duel Desk — Duel Desk</title>
     <link>https://dueldesk.reizu.dev/</link>
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 09:33:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 02:35:45 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Top 8 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-top-8-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-top-8-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 09:33:48 +0000</pubDate>
-      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Final Standings after Swiss Rounds</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-final-standings-after-swiss-rounds/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-final-standings-after-swiss-rounds/</guid>
-      <category>Standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 09:32:03 +0000</pubDate>
-      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 6</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-6/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-6/</guid>
-      <category>Standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 07:36:36 +0000</pubDate>
-      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 7 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-7-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-7-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 07:35:50 +0000</pubDate>
-      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 5</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-5/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-5/</guid>
-      <category>Standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 06:30:00 +0000</pubDate>
-      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 6 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-6-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-6-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 06:29:31 +0000</pubDate>
-      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 4</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-4/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-4/</guid>
-      <category>Standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 05:24:10 +0000</pubDate>
-      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 5 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-5-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-5-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 05:23:38 +0000</pubDate>
-      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 3</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-3/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-3/</guid>
-      <category>Standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 04:13:54 +0000</pubDate>
-      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 4 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-4-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-4-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 04:12:09 +0000</pubDate>
-      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 2</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-2/</guid>
-      <category>Standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 02:42:29 +0000</pubDate>
-      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 3 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-3-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-3-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 02:42:00 +0000</pubDate>
-      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Standings after Round 1</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-1/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-1/</guid>
-      <category>Standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 01:36:21 +0000</pubDate>
-      <description>Standings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 2 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-2-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-2-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 01:35:33 +0000</pubDate>
-      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Deck Type Breakdown</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-deck-type-breakdown/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-deck-type-breakdown/</guid>
-      <category>News</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 00:43:06 +0000</pubDate>
-      <description>News from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026: Round 1 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-1-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-1-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 00:01:27 +0000</pubDate>
-      <description>Pairings from Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
     <item>
       <title>YCS Montréal: And the Advanced Format Winner is…</title>
       <link>https://yugiohblog.konami.com/2026/ycs/and-the-advanced-format-winner-is/</link>
@@ -2899,6 +2755,157 @@
       <category domain="event">2026-south-america-genesys-championship</category>
       <pubDate>Fri, 19 Jun 2026 15:15:00 +0000</pubDate>
       <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Round 1 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-1-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-1-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Fri, 19 Jun 2026 15:14:13 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America WCQ 2026: Central America WCQ: Pairings for Round 13</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-wcq-pairings-for-round-13/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-wcq-pairings-for-round-13/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-central-america-wcq</category>
+      <pubDate>Mon, 08 Jun 2026 18:08:31 +0000</pubDate>
+      <description>Pairings from Central America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Genesys Championship: Top 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-top-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-top-8/</guid>
+      <category>News</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-central-america-genesys-championship</category>
+      <pubDate>Mon, 08 Jun 2026 18:08:14 +0000</pubDate>
+      <description>News from Central America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America WCQ 2026: Central America WCQ: Pairings for Top 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-wcq-pairings-for-top-8-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-wcq-pairings-for-top-8-2/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-central-america-wcq</category>
+      <pubDate>Mon, 08 Jun 2026 18:07:58 +0000</pubDate>
+      <description>Pairings from Central America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Genesys Championship: Top 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-top-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-top-4/</guid>
+      <category>News</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-central-america-genesys-championship</category>
+      <pubDate>Mon, 08 Jun 2026 18:07:44 +0000</pubDate>
+      <description>News from Central America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Genesys Championship: Final Match</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-final-match/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-final-match/</guid>
+      <category>News</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-central-america-genesys-championship</category>
+      <pubDate>Mon, 08 Jun 2026 18:07:19 +0000</pubDate>
+      <description>News from Central America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America WCQ 2026: Central America WCQ: Pairings for Top 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-wcq-pairings-for-top-4-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-wcq-pairings-for-top-4-2/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-central-america-wcq</category>
+      <pubDate>Mon, 08 Jun 2026 18:07:02 +0000</pubDate>
+      <description>Pairings from Central America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America WCQ 2026: Central America WCQ Final Match</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-wcq-final-match-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-wcq-final-match-3/</guid>
+      <category>News</category>
+      <category domain="event">2026-central-america-wcq</category>
+      <pubDate>Mon, 08 Jun 2026 18:06:47 +0000</pubDate>
+      <description>News from Central America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Dragon Duel Championship: Winner</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-dragon-duel-championship-winner/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-dragon-duel-championship-winner/</guid>
+      <category>Results</category>
+      <category domain="event">2026-central-america-dragon-duel-championship</category>
+      <pubDate>Mon, 08 Jun 2026 18:06:33 +0000</pubDate>
+      <description>Results from Central America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Genesys Championship: Winner</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-winner/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-winner/</guid>
+      <category>Results</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-central-america-genesys-championship</category>
+      <pubDate>Mon, 08 Jun 2026 18:06:07 +0000</pubDate>
+      <description>Results from Central America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America WCQ 2026: Central America WCQ: Standings after Round 12</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-wcq-standings-after-round-12/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-wcq-standings-after-round-12/</guid>
+      <category>Standings</category>
+      <category domain="event">2026-central-america-wcq</category>
+      <pubDate>Sun, 07 Jun 2026 19:38:51 +0000</pubDate>
+      <description>Standings from Central America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Dragon Duel Championship: Final Match</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-dragon-duel-championship-final-match/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-dragon-duel-championship-final-match/</guid>
+      <category>News</category>
+      <category domain="event">2026-central-america-dragon-duel-championship</category>
+      <pubDate>Sun, 07 Jun 2026 19:37:04 +0000</pubDate>
+      <description>News from Central America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Genesys Championship: Round 11 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-round-11-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-round-11-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-central-america-genesys-championship</category>
+      <pubDate>Sun, 07 Jun 2026 18:43:27 +0000</pubDate>
+      <description>Pairings from Central America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Genesys Championship: Standings after Round 10</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-standings-after-round-10/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-standings-after-round-10/</guid>
+      <category>Standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-central-america-genesys-championship</category>
+      <pubDate>Sun, 07 Jun 2026 18:41:18 +0000</pubDate>
+      <description>Standings from Central America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America Dragon Duel Championship: Top 4</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-dragon-duel-championship-top-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-dragon-duel-championship-top-4/</guid>
+      <category>News</category>
+      <category domain="event">2026-central-america-dragon-duel-championship</category>
+      <pubDate>Sun, 07 Jun 2026 18:36:47 +0000</pubDate>
+      <description>News from Central America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America WCQ 2026: Central America WCQ: Pairings for Round 12</title>
+      <link>https://yugiohblog.konami.com/2026/championships/central-america-wcq-pairings-for-round-12/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/central-america-wcq-pairings-for-round-12/</guid>
+      <category>Pairings</category>
+      <category domain="event">2026-central-america-wcq</category>
+      <pubDate>Sun, 07 Jun 2026 18:34:25 +0000</pubDate>
+      <description>Pairings from Central America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
