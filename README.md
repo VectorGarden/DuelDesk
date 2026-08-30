@@ -137,6 +137,16 @@ slug — which takes some care:
   and two tournaments held the same weekend are kept apart by the name. Discovery runs last, on
   what is left, so an event the path or the dates already settled can gain posts this way but
   never lose or exchange one.
+- **A discovered event can be dated too.** Until it could, an event nobody filed under a path only
+  ever received posts that carried its name — so everything written about one in a sentence fell
+  through: the post announcing its winner, its feature matches, its table of contents. The 2023
+  North America Remote Duel YCS has a finals write-up naming its champion in so many words, under
+  the slug `finals-feature-match-steven-santoli-vs-liam-mac-oscair`, which has no name in it to
+  match and no window to fall inside either. Discovered events now attract undated siblings on the
+  same corroborated terms path events always have, which is 1,879 posts. A category held by a
+  single post out of thirty-four is not one of the event's, though — one WCQ post filed under
+  `/2023/ycs/` put "ycs" on the 2023 South America WCQ and made every YCS post that weekend a
+  candidate for it.
 - **The oldest coverage cannot be identified at all.** Before about 2017 a post is slugged, and
   titled, only for what it contains — `standings-after-round-3`, and the page says the same. Some
   thirty tournaments are in the index this way with nothing anywhere to say which they are, so
