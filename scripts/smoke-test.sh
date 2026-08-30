@@ -64,6 +64,20 @@ done
 # The manifest first, then the event it names newest -- which is the pair the
 # page loads on a cold visit. Checking only the manifest would pass a deploy
 # that shipped an index to files it forgot to stage.
+# The schedule the sidebar reads. Small, and its absence is silent on the page
+# by design -- the card degrades to its link -- which is exactly why a check
+# here is worth having: nothing else would notice it had stopped being served.
+if ! fetch "$BASE/upcoming.json" > /tmp/smoke-upcoming.json 2>/dev/null; then
+  fail "could not fetch upcoming.json"
+else
+  python3 -c '
+import json, sys
+d = json.load(open("/tmp/smoke-upcoming.json"))
+assert isinstance(d.get("events"), list) and d["events"], "no events in it"
+print(f"  ok    upcoming.json serves {len(d["events"])} events")
+' || fail "upcoming.json is not usable"
+fi
+
 if ! fetch "$BASE/events.json" > /tmp/smoke-events.json 2>/dev/null; then
   fail "could not fetch events.json"
 fi

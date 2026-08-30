@@ -37,15 +37,23 @@ test('external links are marked and use https', async (t) => {
   }
 });
 
-test('upcoming events are not links, since no page exists for them', async (t) => {
+test('upcoming events link out without leaking a referrer', async (t) => {
+  /* These were plain rows for as long as the site had nowhere to send anyone:
+     an anchor promises a destination. Reading the schedule off Konami's listing
+     gives every event its own page, so the promise can now be kept. What has
+     not changed is that an outbound link here carries no referrer.
+
+     The rule this replaces still holds where it applies -- see
+     upcoming.test.mjs, where an event with no usable URL stays a plain row. */
   const page = await loadPage();
   t.after(() => page.close());
 
-  const items = page.$$('.up');
-  assert.equal(items.length, 3);
-  assert.ok(items.every((n) => n.tagName === 'DIV'), 'rendered as plain rows');
-  assert.ok(items.every((n) => !n.querySelector('a,button,[tabindex]')),
-    'and contain nothing focusable');
+  const items = page.$$('#upcoming .up');
+  assert.ok(items.length > 0, 'the card has something in it');
+  for (const item of items) {
+    assert.equal(item.tagName, 'A');
+    assert.equal(item.getAttribute('rel'), 'external noreferrer');
+  }
 });
 
 test('footer coverage links jump to the coverage section', async (t) => {

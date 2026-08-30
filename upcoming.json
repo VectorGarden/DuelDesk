@@ -1,0 +1,85 @@
+{
+  "fetched": "2026-08-29",
+  "events": [
+    {
+      "event": "Yu-Gi-Oh! x eFootball™ Collaboration",
+      "listed": "Yu-Gi-Oh! x eFootball™ Collaboration",
+      "location": "North America & Latin America",
+      "starts": "2025-09-27",
+      "ends": null,
+      "url": "https://www.yugioh-card.com/en/events/ygo_x_efootball/"
+    },
+    {
+      "event": "OTS Championship - Chaos Origin Season",
+      "listed": "OTS Championship - Chaos Origin Season",
+      "location": "North America & Latin America",
+      "starts": "2026-08-22",
+      "ends": "2026-08-23",
+      "url": "https://www.yugioh-card.com/en/events/otschampionship/"
+    },
+    {
+      "event": "WORLD CHAMPIONSHIP 2026 - OTS Celebration",
+      "listed": "WORLD CHAMPIONSHIP 2026 - OTS Celebration",
+      "location": "North America & Latin America",
+      "starts": "2026-08-29",
+      "ends": "2026-09-13",
+      "url": "https://www.yugioh-card.com/en/events-item/2026_wcs-c/"
+    },
+    {
+      "event": "Latin America Remote Duel YCS",
+      "listed": "Latin America Remote Duel Yu-Gi-Oh! Championship Series",
+      "location": "Latin America (hosted on Discord)",
+      "starts": "2026-09-18",
+      "ends": "2026-09-20",
+      "url": "https://www.yugioh-card.com/en/events-item/2026-09-latam-rdycs/"
+    },
+    {
+      "event": "YCS Guayaquil",
+      "listed": "Yu-Gi-Oh! Championship Series Guayaquil, Ecuador 2026",
+      "location": "Guayaquil, Ecuador",
+      "starts": "2026-10-02",
+      "ends": "2026-10-04",
+      "url": "https://www.yugioh-card.com/en/events-item/2026-ycs-ecuador/"
+    },
+    {
+      "event": "New York Comic Con 2026",
+      "listed": "New York Comic Con 2026",
+      "location": "New York, NY",
+      "starts": "2026-10-08",
+      "ends": "2026-10-11",
+      "url": "https://www.yugioh-card.com/en/events-item/2026_nycc/"
+    },
+    {
+      "event": "YCS Houston",
+      "listed": "Yu-Gi-Oh! Championship Series Houston, Texas 2026",
+      "location": "Houston, TX",
+      "starts": "2026-10-16",
+      "ends": "2026-10-18",
+      "url": "https://www.yugioh-card.com/en/events-item/2026-ycs-houston/"
+    },
+    {
+      "event": "YCS Orlando",
+      "listed": "Yu-Gi-Oh! Championship Series Orlando, Florida 2026",
+      "location": "Orlando, FL",
+      "starts": "2026-11-06",
+      "ends": "2026-11-08",
+      "url": "https://www.yugioh-card.com/en/events-item/2026-ycs-orlando/"
+    },
+    {
+      "event": "YCS Santiago",
+      "listed": "Yu-Gi-Oh! Championship Series Santiago, Chile 2026",
+      "location": "Santiago, Chile",
+      "starts": "2026-11-27",
+      "ends": "2026-11-29",
+      "url": "https://www.yugioh-card.com/en/events-item/2026-ycs-santiago/"
+    },
+    {
+      "event": "North America Remote Duel YCS",
+      "listed": "North America Remote Duel Yu-Gi-Oh! Championship Series",
+      "location": "North America (hosted on Discord)",
+      "starts": "2026-12-04",
+      "ends": "2026-12-06",
+      "url": "https://www.yugioh-card.com/en/events-item/2026-na-rdycs/"
+    }
+  ]
+}

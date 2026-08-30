@@ -1,0 +1,104 @@
+name: Refresh the event schedule
+
+# Once a month, and one request when it runs.
+#
+# The blog covers a tournament while it happens and says nothing before it, so
+# what is next comes from Konami's own listing at yugioh-card.com. That page
+# changes when a season is announced -- a few times a year -- so asking it every
+# ten minutes, the way the coverage scraper asks the blog, would be thousands of
+# requests to watch a number that moves four times.
+#
+# Monthly rather than quarterly because the cost of asking is one request and the
+# cost of being wrong is a stale schedule on the front page for up to three
+# months. The workflow_dispatch is there for when a season lands and nobody
+# wants to wait.
+#
+# Like the coverage scraper, this commits what it finds: the repository is the
+# one source of what is served, so a later code merge redeploys the same
+# schedule rather than reverting the page to whatever was baked in.
+on:
+  schedule:
+    - cron: '41 6 3 * *'      # 06:41 UTC on the 3rd of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: upcoming
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Read the listing
+    runs-on: ubuntu-latest
+    outputs:
+      published: ${{ steps.publish.outputs.published }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Read Konami's event listing
+        run: python3 scraper/upcoming.py --out upcoming.json
+
+      # The page reads this file, so a run that produced something it cannot use
+      # must fail here rather than on someone's screen. Checked for shape and for
+      # having found anything at all: a listing that parses to nothing is a
+      # markup change, not an empty schedule.
+      - name: Validate the schedule
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          data = json.load(open('upcoming.json'))
+          events = data.get('events')
+          assert isinstance(events, list) and events, "no events parsed -- has the markup changed?"
+          for e in events:
+              assert e.get('event'), e
+              assert isinstance(e.get('starts'), str) and len(e['starts']) == 10, e
+              assert e.get('url', '').startswith('https://www.yugioh-card.com/'), e
+          print(f"{len(events)} events, soonest {events[0]['starts']}")
+          PY
+
+      # Only when it actually differs. The listing is mostly unchanged from one
+      # month to the next, and a commit every month that says nothing would bury
+      # the history this exists to provide -- and trigger a deploy that changes
+      # nothing but the fetch date.
+      - id: publish
+        run: |
+          if git diff --quiet -- upcoming.json; then
+            echo "The schedule has not changed." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          echo "published=yes" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Schedule updated"
+            echo '```diff'
+            git diff -- upcoming.json | head -60
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add upcoming.json
+          git commit -m "Refresh the event schedule"
+          # Rebase rather than force: a code merge or a coverage push may have
+          # landed since checkout, and losing it to this would be a bad trade.
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+
+  # The push above cannot deploy itself: GitHub does not start workflows for
+  # pushes made with GITHUB_TOKEN. Same reasoning, and the same fix, as the
+  # coverage scraper.
+  deploy:
+    name: Deploy the refreshed schedule
+    needs: refresh
+    if: needs.refresh.outputs.published == 'yes'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ref: main

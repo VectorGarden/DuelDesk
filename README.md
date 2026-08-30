@@ -130,6 +130,24 @@ slug — which takes some care:
   thirty tournaments are in the index this way with nothing anywhere to say which they are, so
   they stay unassigned rather than being guessed at.
 
+### What is coming
+
+The blog covers a tournament while it happens and says nothing before it, so the schedule comes
+from somewhere else: Konami's own listing at
+[yugioh-card.com/en/events/](https://www.yugioh-card.com/en/events/), which is server-rendered and
+gives each event a name, a place, a date range and a page of its own to link to.
+
+Read once a month rather than every ten minutes. That page changes when a season is announced —
+a few times a year — and asking it at the coverage scraper's cadence would be thousands of
+requests to watch a number that moves four times. It serves no robots.txt: `/robots.txt`
+redirects to an image host that 404s, so there is no stated restriction to honour and none
+claimed either. One request a month, with the same identifying user agent the blog scraper uses.
+
+Whether an event has already happened is decided by the page, not by the file. A schedule written
+in October and read in December would otherwise call a November tournament upcoming — the dates
+are a fact about the event, "upcoming" is a fact about when you are looking. An event stays in the
+list through its final day rather than disappearing on the morning of its last round.
+
 ### What the coverage does not always say
 
 - **The blog reports points, the site models W–L–0 records.** They are different quantities, and
@@ -292,6 +310,7 @@ to fetch, parse, and serve the JSON to the page.
 | `app.js` | Its behaviour. Loaded with `defer`; the only inline script is the theme resolver, which has to run before first paint. |
 | `feed.xml` | RSS 2.0 feed of the newest posts across the whole archive. What is new, not the catalogue. |
 | `events.json` | Every event in the archive: name, date, formats, how many posts it has, and where to find it. |
+| `upcoming.json` | The schedule ahead, read off Konami's event listing once a month. |
 | `events/` | One directory per event; fetched on demand, not all at once. |
 | `og.png` | 1200×630 social preview image. |
 | `favicon.ico` | Multi-resolution legacy favicon (16/32/48). |
