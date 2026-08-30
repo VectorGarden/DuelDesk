@@ -93,31 +93,74 @@ def last_appearance(rounds: list[list[dict]],
     return seen
 
 
-def results_from_standings(series: list[list[dict]]) -> dict[str, dict[str, int]]:
+def anchor_record(points: int, rounds: int) -> tuple[int, int, int] | None:
+    """(wins, draws, losses) for a player on `points` after `rounds` matches.
+
+    None where more than one record fits. Points are 3 for a win and 1 for a
+    draw, so `3w + d = points` with `w + d + l = rounds`, and for small `rounds`
+    that has exactly one non-negative solution:
+
+        after 2 rounds:  6 -> 2-0-0    4 -> 1-1-0    3 -> 1-0-1
+                         2 -> 0-2-0    1 -> 0-1-1    0 -> 0-0-2
+
+    This exists because the blog does not publish standings after round one --
+    a table of everyone at 3-0-0 says nothing -- so a series has to be anchored
+    on the first table it does publish. Two rounds always resolve; three
+    sometimes do not, because 3 points is one win and two losses or three draws.
+    """
+    fits = [(w, points - 3 * w, rounds - w - (points - 3 * w))
+            for w in range(rounds + 1)]
+    fits = [(w, d, l) for w, d, l in fits if d >= 0 and l >= 0]
+    return fits[0] if len(fits) == 1 else None
+
+
+def results_from_standings(series: list[list[dict]],
+                           start_round: int = 0) -> dict[str, dict[str, int]]:
     """Exact W/D/L from consecutive per-round standings.
 
     Each round-on-round points delta is one match: +3 win, +1 draw, +0 loss.
     This is the only way to resolve draws, and it needs the standings pages for
     consecutive rounds -- a gap makes the rounds either side unusable.
+
+    `start_round` is the round the first table reports on, and its points are
+    read as a record of that many matches rather than as a baseline of zero.
+    Without it the tally describes only the rounds the series happens to cover:
+    a run beginning after round five would call a Duelist on 25 points 2-0-0,
+    which is not a record of anything.
+
+    A player is returned only where every round of the run is accounted for.
+    Missing from a table in the middle, or a points move that is not a win, a
+    draw or a loss, means a round nobody can attribute -- and a record short a
+    round is not exact, it is just wrong by less.
     """
+    if not series:
+        return {}
+    first = {r["name"]: r["points"] for r in series[0]
+             if r.get("points") is not None and not is_placeholder(r.get("name", ""))}
     tally: dict[str, dict[str, int]] = {}
-    previous: dict[str, int] = {}
-    for i, table in enumerate(series):
+    for name, points in first.items():
+        if (start := anchor_record(points, start_round)) is not None:
+            tally[name] = {"wins": start[0], "draws": start[1], "losses": start[2]}
+
+    previous = first
+    for table in series[1:]:
         current = {r["name"]: r["points"] for r in table
                    if r.get("points") is not None and not is_placeholder(r.get("name", ""))}
-        if i:
-            for name, points in current.items():
-                if name not in previous:
-                    continue
-                delta = points - previous[name]
-                t = tally.setdefault(name, {"wins": 0, "draws": 0, "losses": 0})
-                if delta == WIN_POINTS:
-                    t["wins"] += 1
-                elif delta == DRAW_POINTS:
-                    t["draws"] += 1
-                elif delta == 0:
-                    t["losses"] += 1
-                # anything else is a correction or a bye; leave it uncounted
+        for name in list(tally):
+            if name not in current or name not in previous:
+                # Absent for a round: dropped, or a page that does not list
+                # them. Either way this round cannot be attributed.
+                del tally[name]
+                continue
+            delta = current[name] - previous[name]
+            if delta == WIN_POINTS:
+                tally[name]["wins"] += 1
+            elif delta == DRAW_POINTS:
+                tally[name]["draws"] += 1
+            elif delta == 0:
+                tally[name]["losses"] += 1
+            else:
+                del tally[name]      # a correction, or points from elsewhere
         previous = current
     return tally
 
@@ -131,6 +174,11 @@ class Record:
     losses: int | None
     rounds_played: int | None
     confidence: str          # derived | partial | unknown
+    # Whether this came from reading the standings round on round rather than
+    # from counting appearances. Such a record does not depend on the pairings
+    # at all, so the rule that withholds losses when pairings are missing must
+    # not touch it. Not written to the archive -- see to_record.
+    from_series: bool = False
 
     def label(self, draws_possible: bool = False) -> str:
         """Record-shaped always, with ? for what is not known.
@@ -196,6 +244,7 @@ def rounds_played(row: dict, seen_through: int | None,
 def derive(standings: list[dict], pairing_rounds: list[list[dict]],
            *, event_date: str | None = None,
            standings_series: list[list[dict]] | None = None,
+           series_from: int = 0,
            round_numbers: list[int] | None = None,
            ambiguous: set[str] | frozenset = frozenset()) -> list[Record]:
     """Best available record for every player in a final standings table.
@@ -207,7 +256,8 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
     """
     draws_possible = bool(event_date) and event_date < DRAWS_ABOLISHED
     appearances = last_appearance(pairing_rounds, round_numbers)
-    exact = results_from_standings(standings_series) if standings_series else {}
+    exact = (results_from_standings(standings_series, series_from)
+             if standings_series else {})
     swiss_last = swiss_last_round(standings)
 
     out: list[Record] = []
@@ -224,7 +274,8 @@ def derive(standings: list[dict], pairing_rounds: list[list[dict]],
         if name in exact:                       # round-by-round deltas: exact
             e = exact[name]
             out.append(Record(name, points, e["wins"], e["draws"], e["losses"],
-                              e["wins"] + e["draws"] + e["losses"], "derived"))
+                              e["wins"] + e["draws"] + e["losses"], "derived",
+                              from_series=True))
             continue
 
         if draws_possible or points is None:

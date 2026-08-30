@@ -174,9 +174,17 @@ named in it. Where a post names two, as a final's write-up does, whoever is on t
 
 ### What the coverage does not always say
 
-- **The blog reports points, the site models W–L–0 records.** They are different quantities, and
+- **The blog reports points, the site models W–L–D records.** They are different quantities, and
   where the points column is missing entirely no record can be derived at all — the page shows `?`
   rather than a number nothing supports.
+- **Ties were policy until 2025-09-02**, and 121 of the archive's 144 events predate that. Points
+  are 3 for a win and 1 for a draw, so 3 points is one win *or* three draws and nothing in a single
+  table separates them. What does separate them is the move from one round's standings to the
+  next: +3 is a win, +1 a draw, +0 a loss. That reading needs the tables for consecutive rounds,
+  anchored on the first one published — which is round two, never round one, because a table of
+  everyone at three points or none says nothing. Two rounds always resolve to one record; three
+  sometimes do not, and where the anchor is ambiguous or a round is missing, the points are
+  published and the record is not.
 - **Some events name no format.** The North America WCQ titles every post "North America WCQ:
   Round 10 Pairings". That is one tournament with no format name, not a missing one.
 - **Two Duelists can share a name.** At YCS Columbus "Johnny KS Nguyen" and "Johnny PA Nguyen" are

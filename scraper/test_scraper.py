@@ -439,6 +439,50 @@ class TestRecords(unittest.TestCase):
         self.assertEqual(got.to_record(),
                          {"wins": 1, "losses": 1, "draws": 1, "confidence": "derived"})
 
+    def test_two_rounds_of_points_resolve_to_one_record(self):
+        # The blog does not publish standings after round one -- a table of
+        # everyone at three points or none says nothing -- so a series has to be
+        # anchored on the first table it does publish, which is round two.
+        from records import anchor_record
+        self.assertEqual(anchor_record(6, 2), (2, 0, 0))
+        self.assertEqual(anchor_record(4, 2), (1, 1, 0))
+        self.assertEqual(anchor_record(3, 2), (1, 0, 1))
+        self.assertEqual(anchor_record(2, 2), (0, 2, 0))
+        self.assertEqual(anchor_record(1, 2), (0, 1, 1))
+        self.assertEqual(anchor_record(0, 2), (0, 0, 2))
+
+    def test_three_rounds_do_not_always_resolve(self):
+        # 3 points after three rounds is one win and two losses, or three draws.
+        from records import anchor_record
+        self.assertIsNone(anchor_record(3, 3))
+        self.assertEqual(anchor_record(9, 3), (3, 0, 0), "but some still do")
+
+    def test_a_series_is_read_from_where_it_starts_not_from_zero(self):
+        # Without the anchor the tally describes only the rounds the series
+        # happens to cover: a run beginning after round five called a Duelist on
+        # 25 points 2-0-0, which is not a record of anything.
+        from records import results_from_standings
+        series = [[{"name": "Ada", "points": 4}],     # after R2: 1-1-0
+                  [{"name": "Ada", "points": 7}],     # +3 win
+                  [{"name": "Ada", "points": 7}]]     # +0 loss
+        self.assertEqual(results_from_standings(series, 2),
+                         {"Ada": {"wins": 2, "draws": 1, "losses": 1}})
+
+    def test_a_round_nobody_can_attribute_disqualifies_the_record(self):
+        # Missing from a table in the middle, or a points move that is not a
+        # win, a draw or a loss. A record short a round is not exact; it is
+        # wrong by less.
+        from records import results_from_standings
+        gap = [[{"name": "Ada", "points": 6}], [{"name": "Bo", "points": 6}],
+               [{"name": "Ada", "points": 9}]]
+        self.assertNotIn("Ada", results_from_standings(gap, 2))
+        odd = [[{"name": "Ada", "points": 6}], [{"name": "Ada", "points": 11}]]
+        self.assertNotIn("Ada", results_from_standings(odd, 2))
+
+    def test_an_unresolvable_anchor_claims_nobody(self):
+        from records import results_from_standings
+        self.assertEqual(results_from_standings([[{"name": "Ada", "points": 3}]], 3), {})
+
     def test_the_real_event_reconciles(self):
         import glob, re
         from records import derive
@@ -2138,6 +2182,176 @@ class TestChampion(unittest.TestCase):
                        [self.post("And the Winner Is…",
                                   "Congratulations to Carla Gamma Brown!")])
         self.assertIsNone(got)
+
+
+class TestRecordsKnowWhenTiesWereStillPolicy(unittest.TestCase):
+    """The date reaches the derivation, and the standings series with it.
+
+    Neither did before. `derive` took an event_date and a standings_series and
+    build.py passed neither, so every event was derived as though ties had never
+    existed -- which left 34,030 records claiming a whole number of wins their
+    own published points contradict, and left the one function that can resolve
+    a draw uncalled.
+    """
+
+    def event(self, *, on, standings):
+        """One format, `standings` being {round: [(name, points), ...]}."""
+        from build import build_format, Source
+        from parse import Post, Table
+        srcs = []
+        names = sorted({n for rows in standings.values() for n, _ in rows})
+        # Two distinct Duelists a table, always: one name on both sides is a
+        # collision, and the disambiguator rightly refuses to derive for it.
+        names = names if len(names) > 1 else names + ["Padding Opponent"]
+        for rnd, rows in sorted(standings.items()):
+            srcs.append(Source(f"https://x/r{rnd}-pairings/", Post(
+                title=f"Round {rnd} Pairings", kind="pairings", fmt=None, round=rnd,
+                table=Table(kind="pairings", columns=["table", "a", "b"],
+                            rows=[{"table": 1, "a": {"name": names[0]},
+                                   "b": {"name": names[1]}}])), "10:00"))
+            srcs.append(Source(f"https://x/r{rnd}-standings/", Post(
+                title=f"Standings After Round {rnd}", kind="standings", fmt=None, round=rnd,
+                table=Table(kind="standings", columns=["rank", "name", "points"],
+                            rows=[{"rank": i + 1, "name": n, "points": p}
+                                  for i, (n, p) in enumerate(rows)])), "11:00"))
+        return build_format(None, srcs, event_date=on)
+
+    def last_standings(self, fmt):
+        return [r for r in fmt["rounds"] if r["standings"]][-1]["standings"]
+
+    def test_a_draw_is_counted_where_the_series_shows_one(self):
+        # 4 points after two rounds is one win and one draw, and nothing but the
+        # round-on-round reading can say so.
+        fmt = self.event(on="2023-05-28", standings={
+            2: [("Ada Lovelace", 4), ("Bo Peep", 3)],
+            3: [("Ada Lovelace", 7), ("Bo Peep", 3)],
+        })
+        ada = next(r for r in self.last_standings(fmt) if r["name"] == "Ada Lovelace")
+        self.assertEqual(ada["record"],
+                         {"wins": 2, "losses": 0, "draws": 1, "confidence": "derived"})
+
+    def test_no_record_contradicts_its_own_points(self):
+        # The whole complaint: 3*wins + draws has to come to the points.
+        fmt = self.event(on="2023-05-28", standings={
+            2: [("Ada Lovelace", 4), ("Bo Peep", 1)],
+            3: [("Ada Lovelace", 5), ("Bo Peep", 4)],
+        })
+        for row in self.last_standings(fmt):
+            rec = row["record"] or {}
+            if rec.get("wins") is None:
+                continue
+            self.assertEqual(3 * rec["wins"] + (rec["draws"] or 0), row["points"], row)
+
+    def test_without_a_series_a_draws_era_record_is_not_claimed(self):
+        # Points alone cannot separate one win from three draws, so the points
+        # are reported and the record is not.
+        fmt = self.event(on="2023-05-28", standings={5: [("Ada Lovelace", 9)]})
+        row = self.last_standings(fmt)[0]
+        self.assertEqual((row["record"] or {}).get("confidence"), "unknown")
+        self.assertEqual(row["points"], 9, "the points are still published")
+
+    def test_after_ties_were_abolished_points_alone_are_enough(self):
+        # Nothing is lost for the modern events: 3 points is one win, full stop.
+        fmt = self.event(on="2026-05-28", standings={
+            2: [("Ada Lovelace", 6)], 3: [("Ada Lovelace", 9)]})
+        self.assertEqual((self.last_standings(fmt)[0]["record"] or {})["wins"], 3)
+
+
+class TestTheEventDateComesFromTheEvent(unittest.TestCase):
+
+    def test_a_draws_era_event_is_built_knowing_it(self):
+        # build_format takes the date, but it is build_event that knows it --
+        # off the day the coverage ends. Passing nothing meant every event was
+        # built as though ties had never been policy.
+        from build import build_event, Source
+        from parse import Post, Table
+        srcs = [
+            Source("https://x/p1/", Post(title="Round 1 Pairings", kind="pairings",
+                fmt=None, round=1, table=Table(kind="pairings", columns=["table", "a", "b"],
+                    rows=[{"table": 1, "a": {"name": "Ada Lovelace"},
+                           "b": {"name": "Bo Peep"}}])), "10:00"),
+            Source("https://x/s5/", Post(title="Standings After Round 5", kind="standings",
+                fmt=None, round=5, table=Table(kind="standings",
+                    columns=["rank", "name", "points"],
+                    rows=[{"rank": 1, "name": "Ada Lovelace", "points": 9},
+                          {"rank": 2, "name": "Bo Peep", "points": 3}])), "11:00"),
+        ]
+        ev = build_event("Some Event", srcs, updated="2023-05-28T19:10:00Z")
+        rows = [r for f in ev["formats"] for r in f["rounds"] if r["standings"]]
+        row = rows[-1]["standings"][0]
+        # Nine points over five rounds is three wins and two losses, or two
+        # wins and three draws. The date is what says so.
+        self.assertEqual((row["record"] or {}).get("confidence"), "unknown")
+        self.assertEqual(row["points"], 9)
+
+
+class TestStandingsRun(unittest.TestCase):
+    """Which tables can be read as a series: consecutive ones, ending at the
+    round being reported."""
+
+    def fmt_with(self, points_by_round):
+        """One Duelist, on the given points after each listed round."""
+        from build import build_format, Source
+        from parse import Post, Table
+        srcs = []
+        for rnd, pts in sorted(points_by_round.items()):
+            srcs.append(Source(f"https://x/r{rnd}-pairings/", Post(
+                title=f"Round {rnd} Pairings", kind="pairings", fmt=None, round=rnd,
+                table=Table(kind="pairings", columns=["table", "a", "b"],
+                            rows=[{"table": 1, "a": {"name": "Ada Lovelace"},
+                                   "b": {"name": "Bo Peep"}}])), "10:00"))
+            srcs.append(Source(f"https://x/r{rnd}-standings/", Post(
+                title=f"Standings After Round {rnd}", kind="standings", fmt=None, round=rnd,
+                table=Table(kind="standings", columns=["rank", "name", "points"],
+                            rows=[{"rank": 1, "name": "Ada Lovelace", "points": pts},
+                                  {"rank": 2, "name": "Bo Peep", "points": 0}])), "11:00"))
+        return build_format(None, srcs, event_date="2023-05-28")
+
+    def last(self, fmt):
+        return [r for r in fmt["rounds"] if r["standings"]][-1]["standings"][0]
+
+    def test_a_gap_stops_the_run_short(self):
+        # Each round-on-round move is one match, so a missing round leaves a gap
+        # nobody can attribute: the run can only reach back to round five, and
+        # nine points over five rounds is three wins and two losses or three
+        # draws and two wins. Unreadable, and said so.
+        fmt = self.fmt_with({2: 3, 3: 6, 5: 9, 6: 12})
+        self.assertEqual((self.last(fmt)["record"] or {}).get("confidence"), "unknown")
+
+    def test_a_cut_table_with_no_swiss_standings_behind_it_does_not_crash(self):
+        # A cut round reads against the whole of Swiss, and the blog does not
+        # always publish standings after the last Swiss round. Reaching for a
+        # table that is not there took the build down with a KeyError.
+        from build import build_format, Source
+        from parse import Post, Table
+        rows = [{"rank": 1, "name": "Ada Lovelace", "points": 6},
+                {"rank": 2, "name": "Bo Peep", "points": 0}]
+        def pairings(rnd, title=None):
+            return Source(f"https://x/p{rnd}/", Post(
+                title=title or f"Round {rnd} Pairings", kind="pairings", fmt=None, round=rnd,
+                table=Table(kind="pairings", columns=["table", "a", "b"],
+                            rows=[{"table": 1, "a": {"name": "Ada Lovelace"},
+                                   "b": {"name": "Bo Peep"}}])), "10:00")
+        def standings(rnd, title=None):
+            return Source(f"https://x/s{rnd}/", Post(
+                title=title or f"Standings After Round {rnd}", kind="standings",
+                fmt=None, round=rnd,
+                table=Table(kind="standings", columns=["rank", "name", "points"],
+                            rows=rows)), "11:00")
+        fmt = build_format(None, [
+            pairings(1), pairings(2), standings(2), pairings(3),
+            pairings("Top 4", title="Top 4 Pairings"),
+            standings("Top 4", title="Top 4 Standings"),
+        ], event_date="2023-05-28")
+        self.assertTrue(any(r["standings"] for r in fmt["rounds"]))
+
+    def test_an_unbroken_run_reaches_the_round_it_reports(self):
+        # The same points, with round four published: now the run reaches back
+        # to round two, where three points is one win and one loss and nothing
+        # else, and every round after it is a delta.
+        fmt = self.fmt_with({2: 3, 3: 6, 4: 6, 5: 9, 6: 12})
+        self.assertEqual(self.last(fmt)["record"],
+                         {"wins": 4, "losses": 2, "draws": 0, "confidence": "derived"})
 
 
 class TestWinnerProse(unittest.TestCase):
