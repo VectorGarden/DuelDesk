@@ -569,6 +569,18 @@ def build_format(name: str | None, sources: list[Source], *,
     if rounds and ongoing:
         rounds[-1]["state"] = "live"
 
+    # A round nothing was published for is not a round. One is created whenever
+    # a post names it and carries nothing -- a feature match whose title will
+    # not parse into two Duelists, or a side event's write-up naming a Final
+    # the main event has not reached. Left in, it is an empty row on the track,
+    # and the deploy refuses the whole event over it.
+    #
+    # Dropped rather than reported, because a round the blog never posted is
+    # already something this archive lives with: the count present may be lower
+    # than the count played, and that is stated rather than treated as damage.
+    rounds = [r for r in rounds
+              if r["pairings"] or r["standings"] or r.get("feature")]
+
     field = max((len(r["standings"]) for r in rounds), default=0)
     # Result posts naming no format are considered too. A two-format event
     # usually titles them "And the Advanced Format Winner is", but not always,

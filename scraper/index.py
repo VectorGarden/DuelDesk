@@ -25,6 +25,7 @@ from datetime import date
 
 from naming import wcq_name
 from parse import detect_kind
+from winners import SIDE_EVENT
 
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 BASE = "https://yugiohblog.konami.com/"
@@ -563,6 +564,21 @@ def _by_date(records: list[dict], profiles: dict[str, Profile], within):
     """Still-unassigned posts, and the one discovered event each belongs to."""
     for rec in records:
         if rec["event"] or not rec["lastmod"]:
+            continue
+        # Every YCS runs a dozen tournaments beside the main one, and a date
+        # cannot tell them apart -- they are on at the same time, in the same
+        # room, written up by the same people. Attaching one to the event is
+        # not a harmless extra post: "dd-wcq-ca-standings-after-round-1" is the
+        # Dragon Duel's table, and it would be read as the main event's, while
+        # "sunday-speed-duel-...-finals-feature-match" names a Final the main
+        # event has not reached and leaves an empty round where it should be.
+        #
+        # Scoped to this rule, which is the one with nothing to go on but the
+        # day a post was published. It happens that a side event's own posts
+        # rarely match by name either -- "ycs-origins-dragon-duel-champion"
+        # reads as an event called "ycs-origins-dragon-duel", which no window
+        # belongs to -- so in practice they are left alone entirely.
+        if SIDE_EVENT.search(rec["slug"].replace("-", " ")):
             continue
         entry = Entry(rec["url"], rec["year"], rec["category"], rec["event_slug"],
                       rec["slug"], rec["lastmod"])
