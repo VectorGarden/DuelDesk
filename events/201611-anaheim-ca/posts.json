@@ -194,7 +194,7 @@
     "modified": "2016-11-28T06:29:02-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "201611-anaheim-ca"
   },
   {
@@ -221,7 +221,7 @@
     "modified": "2016-11-28T06:31:05-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "201611-anaheim-ca"
   },
   {
@@ -266,7 +266,7 @@
     "modified": "2016-11-27T09:21:42-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "201611-anaheim-ca"
   },
   {
@@ -284,7 +284,7 @@
     "modified": "2016-11-27T17:57:24-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "201611-anaheim-ca"
   },
   {
@@ -365,7 +365,7 @@
     "modified": "2016-11-27T12:20:32-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "201611-anaheim-ca"
   },
   {

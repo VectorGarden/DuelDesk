@@ -2734,12 +2734,19 @@
       "coverageBy": "Konami",
       "path": "events/201712-buenos-aires-argentina/rounds.json",
       "postCount": 36,
+      "champions": [
+        {
+          "format": null,
+          "name": "Juan Sebastian – Ecuador Andrade Castro",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
           "duelists": 407,
-          "rounds": 9
+          "rounds": 11
         }
       ]
     },
@@ -2758,31 +2765,6 @@
           "swissRounds": 10,
           "duelists": 913,
           "rounds": 15
-        }
-      ]
-    },
-    {
-      "slug": "2017-uds-invitational-trinidad-and-tobago",
-      "event": "UDS Invitational Trinidad and Tobago",
-      "updated": "2017-10-29",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2017-uds-invitational-trinidad-and-tobago/rounds.json",
-      "postCount": 22,
-      "champions": [
-        {
-          "format": null,
-          "name": "Alejandro Garcia Moreno",
-          "deck": null
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 10,
-          "duelists": 85,
-          "rounds": 10
         }
       ]
     },
@@ -3074,6 +3056,13 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-minneapolis/rounds.json",
       "postCount": 54,
+      "champions": [
+        {
+          "format": null,
+          "name": "Marcus Alexander Hayden",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -3121,8 +3110,8 @@
         {
           "format": null,
           "swissRounds": 10,
-          "duelists": 123,
-          "rounds": 13
+          "duelists": 791,
+          "rounds": 14
         }
       ]
     },
