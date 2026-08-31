@@ -1825,12 +1825,19 @@
       "coverageBy": "Konami",
       "path": "events/202205-ycs-hartford-ct/rounds.json",
       "postCount": 69,
+      "champions": [
+        {
+          "format": null,
+          "name": "Poe Jiang",
+          "deck": "Sky Striker"
+        }
+      ],
       "formats": [
         {
           "format": null,
-          "swissRounds": 10,
+          "swissRounds": 11,
           "duelists": 1243,
-          "rounds": 12
+          "rounds": 15
         }
       ]
     },
@@ -1881,12 +1888,19 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-charlotte/rounds.json",
       "postCount": 53,
+      "champions": [
+        {
+          "format": null,
+          "name": "Elijah James Green",
+          "deck": "Destiny Adventurer\n  Prank-Kids"
+        }
+      ],
       "formats": [
         {
           "format": null,
-          "swissRounds": 10,
+          "swissRounds": 11,
           "duelists": 1117,
-          "rounds": 8
+          "rounds": 15
         }
       ]
     },
@@ -1899,37 +1913,19 @@
       "coverageBy": "Konami",
       "path": "events/2022-02-north-america-remote-duel-ycs/rounds.json",
       "postCount": 25,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 10,
-          "duelists": 455,
-          "rounds": 8
-        }
-      ]
-    },
-    {
-      "slug": "2022-january-remote-duel-ycs",
-      "event": "Remote Duel YCS",
-      "updated": "2022-01-16",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2022-january-remote-duel-ycs/rounds.json",
-      "postCount": 61,
       "champions": [
         {
           "format": null,
-          "name": "Carlos Cristobal Sepulveda Vergara",
-          "deck": null
+          "name": "Paul Stephen Aronson",
+          "deck": "Destiny HERO Link\n  P.U.N.K. Adventurer"
         }
       ],
       "formats": [
         {
           "format": null,
-          "swissRounds": 13,
-          "duelists": 646,
-          "rounds": 17
+          "swissRounds": 10,
+          "duelists": 455,
+          "rounds": 14
         }
       ]
     },
