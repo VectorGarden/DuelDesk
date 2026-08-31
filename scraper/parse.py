@@ -542,8 +542,17 @@ def parse_table(doc: str) -> Table | None:
             if numbered and (not r or not r[0].strip().isdigit()):
                 pair = team_row(r)
                 if pair:
-                    a, b = ({"name": normalise_name(pair[0]), "region": None, "deck": None},
-                            {"name": normalise_name(pair[1]), "region": None, "deck": None})
+                    # A team's name is not a Duelist's, and must not be read
+                    # like one. normalise_name strips a two- or three-letter
+                    # all-caps token as a region code -- right for "Philip
+                    # DEU", wrong for "Team PWP", which came back as a team
+                    # called "Team" from a region called "PWP". TEAM YCS Las
+                    # Vegas round 6 pairs "Team PWP" with "Team VCG", so both
+                    # sides became "Team" and the match was a team playing
+                    # itself, which is not a pairing and took the event out of
+                    # the archive.
+                    a, b = ({"name": _text(pair[0]).strip(), "region": None, "deck": None},
+                            {"name": _text(pair[1]).strip(), "region": None, "deck": None})
                     match = {"table": None, "a": a, "b": b, "duels": []}
                     out.append(match)
                 continue
