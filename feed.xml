@@ -828,16 +828,6 @@
       <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Montréal: Final Standings After Day 1 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-advanced-format/</guid>
-      <category>Standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 00:01:06 +0000</pubDate>
-      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
       <title>YCS Montréal: Advanced Format Round 8 Feature Match: Wei Li vs. Kevin Zuger</title>
       <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/advanced-format-round-8-feature-match-wei-li-vs-kevin-zuger/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/advanced-format-round-8-feature-match-wei-li-vs-kevin-zuger/</guid>
@@ -1271,16 +1261,6 @@
       <category domain="event">2026-08-quebec</category>
       <pubDate>Fri, 14 Aug 2026 23:28:40 +0000</pubDate>
       <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Final Standings After Day 1 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-genesys-format/</guid>
-      <category>Standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Fri, 14 Aug 2026 23:16:32 +0000</pubDate>
-      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>YCS Montréal: Genesys Format Round 6 Feature Match: Isaac Kritz vs. Dani MacDonald</title>
@@ -2893,6 +2873,26 @@
       <category domain="format">Genesys</category>
       <category domain="event">2026-south-america-genesys-championship</category>
       <pubDate>Sun, 21 Jun 2026 14:41:10 +0000</pubDate>
+      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Round 9 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-9-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-9-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 13:56:38 +0000</pubDate>
+      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Genesys Championship: Standings after Round 8</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-8/</guid>
+      <category>Standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-south-america-genesys-championship</category>
+      <pubDate>Sun, 21 Jun 2026 13:55:32 +0000</pubDate>
       <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>

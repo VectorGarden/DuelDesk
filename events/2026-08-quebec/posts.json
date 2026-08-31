@@ -414,15 +414,6 @@
     "slug": "2026-08-quebec"
   },
   {
-    "title": "YCS Montréal: Final Standings After Day 1 (Advanced Format)",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-advanced-format/",
-    "modified": "2026-08-15T17:01:06-07:00",
-    "kind": "standings",
-    "event": "YCS Montréal",
-    "format": "Advanced",
-    "slug": "2026-08-quebec"
-  },
-  {
     "title": "YCS Montréal: Standings After Round 2 (Genesys Format)",
     "url": "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-2-genesys-format/",
     "modified": "2026-08-14T09:49:44-07:00",
@@ -462,15 +453,6 @@
     "title": "YCS Montréal: Standings After Round 6 (Genesys Format)",
     "url": "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-standings-after-round-6-genesys-format/",
     "modified": "2026-08-14T14:41:41-07:00",
-    "kind": "standings",
-    "event": "YCS Montréal",
-    "format": "Genesys",
-    "slug": "2026-08-quebec"
-  },
-  {
-    "title": "YCS Montréal: Final Standings After Day 1 (Genesys Format)",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-final-standings-after-day-1-genesys-format/",
-    "modified": "2026-08-14T16:16:32-07:00",
     "kind": "standings",
     "event": "YCS Montréal",
     "format": "Genesys",
