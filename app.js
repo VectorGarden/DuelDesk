@@ -915,6 +915,11 @@ const viewButtons = document.querySelectorAll('[data-view]');
 let activeRound = null;   // seeded from the active format on load
 let activeView  = 'pairings';
 let filter = 'all';
+/* Which tournament the coverage list is showing, across every event. Separate
+   from activeFormat, which is the round track's and belongs to one event: this
+   one survives changing events, because "show me the Genesys coverage" is a
+   question about the archive and not about YCS Montreal. */
+let formatFilter = 'all';
 let query  = '';
 const open = new Set();   // seeded from the feed on first load
 
@@ -1341,13 +1346,16 @@ function renderEvents(){
          <button type="button" class="btn" data-retry>Try again</button></div>`
     : '';
 
+  renderFormatFilters();
+
   /* An event stays in the list when its own name matches, even before its
      posts are fetched -- otherwise searching would hide every event that
      happens not to be open yet. */
   const matching = coverageEvents().map(ev => ({
     ...ev,
     posts: ev.posts.filter(p =>
-      (filter === 'all' || p.kind === filter) && inSelectedFormat(p) && hit(p.title, ev.event)),
+      (filter === 'all' || p.kind === filter) && inChosenFormat(p)
+      && inSelectedFormat(p) && hit(p.title, ev.event)),
   })).filter(ev => ev.posts.length || (!ev.loaded && hit(ev.event)));
 
   /* A handful to begin with, and the rest on request. Fifty-two events is a
@@ -1470,6 +1478,62 @@ list.addEventListener('click', e => {
 /* Footer jumps. The href is a real fragment, so without JS these still land on
    the coverage section -- just unfiltered. With JS they also apply the filter,
    which is the only reason the label is honest. */
+/* A post with no format is event-wide -- an announcement, a table of contents,
+   the winner -- and belongs to whichever tournament you are reading about, so
+   it is never filtered out. Filtering it away hid every winner announcement
+   the moment anybody chose a format. */
+function inChosenFormat(post){
+  return formatFilter === 'all' || !post.format || post.format === formatFilter;
+}
+
+/* The formats the loaded coverage actually has, in the order the buttons show
+   them. Read from the posts, so a format the archive has never seen cannot get
+   a button and one it gains does not need a code change. */
+function formatsPresent(){
+  const seen = new Set();
+  for (const ev of coverageEvents()) for (const p of ev.posts || []) if (p.format) seen.add(p.format);
+  return [...seen].sort();
+}
+
+/* An event's posts are fetched when it is opened, so the formats on offer grow
+   as the reader reads. The row is rewritten only when the set of them actually
+   changes -- rebuilding it on every render would take the focus off the button
+   somebody just pressed, every minute, when the poll comes back. */
+let formatButtons = '';
+function renderFormatFilters(){
+  const box = document.getElementById('format-filters');
+  if (!box) return;
+  const present = formatsPresent();
+  const key = present.join('\u0000');
+  if (key === formatButtons) return;
+  formatButtons = key;
+  /* One format is not a choice, and a row of buttons that cannot change the
+     list is a control that lies about what it does. */
+  box.hidden = present.length < 2;
+  if (box.hidden){ box.innerHTML = ''; return; }
+  box.innerHTML = [['all', 'Every format'], ...present.map(f => [f, f])]
+    .map(([value, label]) =>
+      `<button type="button" data-feed-format="${esc(value)}" aria-pressed="${
+        String(value === formatFilter)}">${esc(label)}</button>`).join('');
+}
+
+/* data-feed-format, not data-format: the round track's buttons already own
+   that attribute, and a handler on it would have made choosing a tournament to
+   read also filter the coverage list -- and choosing a coverage filter also
+   change the round track. Two controls, two names. */
+function applyFormatFilter(name){
+  formatFilter = name;
+  document.querySelectorAll('[data-feed-format]').forEach(x =>
+    x.setAttribute('aria-pressed', String(x.dataset.feedFormat === formatFilter)));
+  renderEvents();
+  say(countEl.textContent);
+}
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-feed-format]');
+  if (b) applyFormatFilter(b.dataset.feedFormat);
+});
+
 function applyFilter(kind){
   filter = kind;
   document.querySelectorAll('[data-filter]').forEach(x =>

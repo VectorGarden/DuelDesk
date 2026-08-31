@@ -3575,6 +3575,35 @@ PAIR_HEAD = ["Table", "P1 First Name", "P1 Last Name", "vs.",
              "P2 First Name", "P2 Last Name"]
 
 
+class TestCoverageFormat(unittest.TestCase):
+    """What a post is coverage of, which is not always a format of the event."""
+
+    def test_dragon_duel_is_named_for_the_feed(self):
+        from parse import coverage_format
+        self.assertEqual(
+            coverage_format("Dragon Duel Top 8 Pairings", None), "Dragon Duel")
+
+    def test_it_wins_over_the_events_own_format(self):
+        # "Advanced Format Dragon Duel Feature Match" is Dragon Duel coverage
+        # that happens to name the format the main event was played under.
+        from parse import coverage_format
+        self.assertEqual(
+            coverage_format("Advanced Format Dragon Duel Feature Match", "Advanced"),
+            "Dragon Duel")
+
+    def test_an_ordinary_post_keeps_its_format(self):
+        from parse import coverage_format
+        self.assertEqual(coverage_format("Round 4 Pairings", "Genesys"), "Genesys")
+        self.assertIsNone(coverage_format("Round 4 Pairings", None))
+
+    def test_the_builder_does_not_see_it(self):
+        # detect_format is what groups an event's rounds into tournaments. A
+        # Dragon Duel table read as one of the main event's has cost this
+        # archive real damage, so the feed names it and the builder does not.
+        from parse import detect_format
+        self.assertIsNone(detect_format("Dragon Duel Top 8 Pairings"))
+
+
 class TestFoldedNames(unittest.TestCase):
     """One Duelist with two names.
 

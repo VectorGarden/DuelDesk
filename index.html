@@ -199,6 +199,18 @@
         <button type="button" data-filter="deck" aria-pressed="false"><span class="dot" style="--k:var(--c-deck)"></span>Deck profiles</button>
       </div>
 
+      <!-- The formats an event runs alongside each other, all weekend. The
+           kind filter above says what a post is; this says which tournament it
+           is about, and they compose.
+
+           Populated from the coverage rather than written out here: which
+           formats exist is a fact about the archive, and a button for a format
+           nobody played would filter the list down to nothing and look broken.
+           Hidden entirely while there is only one, the same rule the round
+           track's format buttons follow. -->
+      <div class="filters" role="group" aria-label="Filter by format"
+           id="format-filters" hidden></div>
+
       <div id="events"></div>
       <p class="visually-hidden" role="status" aria-live="polite" id="announce"></p>
     </section>
