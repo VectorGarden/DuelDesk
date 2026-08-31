@@ -1,0 +1,66 @@
+name: Warm the post cache
+
+# A rebuild reads the same posts again; it does not go looking for new ones. So
+# the whole cost of one is the posts that happen not to be in the cache, at the
+# one second of politeness each live request owes the blog. A batch of twenty-one
+# events spent five minutes and twenty-two seconds of its seven minutes there.
+#
+# This fills that cache ahead of time and publishes nothing. It fetches only what
+# the scraper itself would fetch -- the same events, the same posts out of each --
+# so what it leaves behind is exactly the work the next rebuild would have done.
+#
+# Manual, because it is hours of requests and nobody should trip it by pushing.
+# Bounded and resumable: it works newest-first, stops when its minutes are up,
+# and the next run carries on from the cache this one leaves. Run it until it
+# says the cache holds every post a rebuild will read.
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: 'Stop fetching after this many minutes (the cache is still saved)'
+        required: false
+        default: '240'
+
+# One at a time. Two of these would fetch the same posts twice and race to save
+# the same cache, and the loser's hours would be thrown away.
+concurrency:
+  group: warm-cache
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  warm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v7
+
+      # The same directory the scraper caches into, under the same key prefix,
+      # so the next scrape restores what this leaves without being told about it.
+      - uses: actions/cache/restore@v6
+        with:
+          path: .scrape-state
+          key: warm-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: scrape-state-
+
+      - run: |
+          mkdir -p .scrape-state
+          python3 scraper/warm.py --cache .scrape-state/cache \
+                                  --minutes "${{ inputs.minutes || 240 }}" \
+                                  | tee -a "$GITHUB_STEP_SUMMARY"
+
+      # The cadence's high-water mark is not this job's to carry. A warm runs for
+      # hours while the scraper keeps its ten-minute schedule, so the state file
+      # restored at the start of one is stale long before it ends, and saving it
+      # would wind the scraper back to whenever this began. Dropped instead: the
+      # next scrape finds no state, checks once, and writes a current one.
+      - if: always()
+        run: rm -f .scrape-state/state.json
+
+      - if: always()
+        uses: actions/cache/save@v6
+        with:
+          path: .scrape-state
+          key: scrape-state-${{ github.run_id }}-${{ github.run_attempt }}
