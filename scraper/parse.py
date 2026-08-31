@@ -320,6 +320,61 @@ def detect_kind(text: str) -> str:
     return "news"
 
 
+# A column heading that names a result rather than a Duelist.
+_NOT_A_NAME = re.compile(r"(winner|result|score|record|outcome)\b", re.I)
+
+
+_VS_CELL = ("vs.", "vs")
+
+
+def _infer_header(row: list[str]) -> list[str] | None:
+    """A header for a table that has none, read off a row of its own data.
+
+    Eleven round posts open straight into their rows -- no header at all, or
+    a caption where one should be:
+
+        ['1', 'Toby C. CA Lin', 'vs.', 'Nazree Asri']
+        ['1', 'Nicholas James NH King', 'Raphael Pelaja Neven']
+        ['1', 'Paul Stephen', 'Aronson', 'vs.', 'Brian John', 'Kalina']
+        ['Rodrigues de Souza, Rafael Jose from Brazil (Zoodiac)', 'vs', ...]
+        ['1', 'Lopez Ramirez, Walter Eligio', '30']
+
+    What the columns are is legible from the row itself: a leading number is
+    a table number or a rank, a "vs." is the divider, and a trailing number
+    where there is no divider is points. Naming them is enough -- everything
+    downstream reads columns by their names, so an inferred header is read
+    exactly like a written one.
+
+    None where the row says nothing, which leaves the table unknown and the
+    post dropped, as before. This only ever runs on a table no header could
+    be read from, so a table that reads today cannot be changed by it.
+    """
+    if not row or not any(c.strip() for c in row):
+        return None
+    ranked = row[0].strip().isdigit()
+    vs_at = next((i for i, c in enumerate(row) if c.strip().lower() in _VS_CELL), None)
+
+    if vs_at is not None:
+        if vs_at == 0 or vs_at == len(row) - 1:
+            return None                 # a divider with nothing on one side
+        head = ["Table"] if ranked else []
+        left = vs_at - len(head)
+        return (head + ["Player 1"] * left + ["vs."]
+                + ["Player 2"] * (len(row) - vs_at - 1))
+
+    if not ranked:
+        return None                     # nothing to say where the row starts
+
+    # No divider. Three cells is a rank, a name and a number -- which is
+    # standings -- or a table number and two Duelists, which is a pairing.
+    if len(row) == 3:
+        return (["Rank", "Player", "Points"] if row[2].strip().isdigit()
+                else ["Table", "Player 1", "Player 2"])
+    if len(row) == 2:
+        return ["Rank", "Player"]
+    return None
+
+
 def _classify_table(header: list[str]) -> str:
     """What a table is, from its column headings.
 
@@ -452,8 +507,18 @@ def parse_table(doc: str) -> Table | None:
     # Only ever one row, and only when the row below it is a header this
     # reader recognises. A table whose first row is data is left alone: that
     # is a different shape and guessing at it here would eat a pairing.
-    if body and _classify_table(header) == "unknown" and _classify_table(body[0]) != "unknown":
-        header, body = body[0], body[1:]
+    if _classify_table(header) == "unknown":
+        if body and _classify_table(body[0]) != "unknown":
+            header, body = body[0], body[1:]
+        elif made := _infer_header(header):
+            # The first row is data, so it stays in the body and gets a
+            # header of its own.
+            header, body = made, [header] + body
+        elif body and (made := _infer_header(body[0])):
+            # A caption over a table with no header under it. The 2013 North
+            # America WCQ writes "Top   16" in a row by itself and then its
+            # pairings, with nothing naming the columns.
+            header = made
     # And a blank row ends it. The same event puts two tournaments in one
     # table -- the Main World Championship, an empty row, then the Dragon Duel
     # World Championship with a caption and header of its own:
@@ -562,14 +627,24 @@ def parse_table(doc: str) -> Table | None:
         else:
             split, skip = vs_at, 1
         cut = lambda row: (row[start:split], row[split + skip:])
-        left, _ = cut(header)
+        left, right = cut(header)
         decks = any("deck" in h.lower() for h in left)
 
-        def side(cells: list[str]) -> dict[str, Any]:
+        def side(cells: list[str], heads: list[str] = ()) -> dict[str, Any]:
             if decks:
                 parts, deck = [cells[0]], (cells[1] if len(cells) > 1 else None)
+                heads = heads[:1]
             else:
                 parts, deck = cells, None
+            # A column that names a result is not part of a Duelist's name.
+            # The 2013 World Championship writes its rounds
+            # "Table | Player 1 | VS. | Player 2 | | Winner", and everything
+            # after the divider was read as Player 2 -- so the winner's name
+            # was appended to their opponent's, giving "Weerapun Sergio
+            # Soldani Suebyoubol" for a Duelist called Weerapun Suebyoubol.
+            keep = [c for i, c in enumerate(parts)
+                    if not (i < len(heads) and _NOT_A_NAME.match(heads[i].strip()))]
+            parts = keep if keep else parts
             # Per cell: the code sits on whichever cell carried it, which for
             # a first/last split is the first, not the joined string.
             cleaned, region = [], None
@@ -640,11 +715,11 @@ def parse_table(doc: str) -> Table | None:
             # A table with no number column has no team rows to find either:
             # every row is a match, and there is nothing to read a number from.
             if not numbered:
-                a, b = side(lcells), side(rcells)
+                a, b = side(lcells, left), side(rcells, right)
                 if a["name"] and b["name"]:
                     out.append({"table": None, "a": a, "b": b})
                 continue
-            duel = {"table": int(r[0]), "a": side(lcells), "b": side(rcells)}
+            duel = {"table": int(r[0]), "a": side(lcells, left), "b": side(rcells, right)}
             if match is None:
                 out.append(duel)                    # a singles event
                 continue
