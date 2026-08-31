@@ -114,6 +114,22 @@ def about_format(title: str) -> str | None:
     return m.group(1).title() if m else None
 
 
+# An aside, set off by dashes or brackets, is about a person and not about the
+# post. The 2026 North America WCQ's winner announcement opens:
+#
+#   "2077 Duelists competed in the 2026 North America World Championship
+#    Qualifier, and one Duelist -- a former Dragon Duel World Champion and
+#    former MASTER DUEL World Champion -- emerged on top! Ryan Yu from
+#    Ontario, Canada used his Sky Striker Deck..."
+#
+# Read whole, that is a Dragon Duel post and the event lost its champion. Read
+# without the aside it is what it plainly is: the WCQ's own result, with a line
+# of biography about the man who won it. The same mistake the hedge rule was
+# written for -- "Neven is a 2-time YCS Champion" is a fact about a person, in
+# a post about the match he lost.
+_ASIDE = re.compile(r"\s[\u2010-\u2015]\s.*?\s[\u2010-\u2015]\s|\([^)]*\)", re.S)
+
+
 def announces_a_winner(title: str, opening: str = "") -> bool:
     """Whether this post is the main event's winner being announced.
 
@@ -121,10 +137,16 @@ def announces_a_winner(title: str, opening: str = "") -> bool:
     is not always named in the heading -- "And the Winner Is..." is used for the
     Dragon Duel playoff as readily as for the event itself, and the first line
     says which.
+
+    What the first line says about the event, not what it says about the
+    Duelist: an aside naming a title somebody used to hold is biography, and
+    reading it as the subject of the post costs the event its champion.
     """
     if not ANNOUNCEMENT.search(title or ""):
         return False
-    return not (SIDE_EVENT.search(title or "") or SIDE_EVENT.search(opening[:160]))
+    if SIDE_EVENT.search(title or ""):
+        return False
+    return not SIDE_EVENT.search(_ASIDE.sub(" ", opening[:400])[:160])
 
 
 def crowning(text: str) -> str:
