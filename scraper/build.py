@@ -128,7 +128,10 @@ def round_key(post) -> tuple[str, Any]:
 #     Series invitation, and it names one who reached the Top 4 -- so it was
 #     read as announcing this event's winner, disagreed with the post that
 #     actually did, and left the event with no champion.
-BUILD_VERSION = 15
+# 16: the rounds written as sentences. Thirty-six round posts carry no table
+#     at all, and the prose reader asked for one shape of them: "Table N:"
+#     with a colon and a bracketed deck on each side. Nineteen more read now.
+BUILD_VERSION = 16
 
 
 @dataclass
