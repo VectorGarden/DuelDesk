@@ -151,7 +151,7 @@
       "postCount": 16,
       "formats": [
         {
-          "format": null,
+          "format": "Dragon Duel",
           "swissRounds": 7,
           "duelists": 12,
           "rounds": 7
@@ -205,7 +205,7 @@
       "postCount": 18,
       "formats": [
         {
-          "format": null,
+          "format": "Dragon Duel",
           "swissRounds": 7,
           "duelists": 12,
           "rounds": 7
@@ -280,7 +280,21 @@
         {
           "format": null,
           "name": "Ares",
-          "deck": null
+          "deck": null,
+          "members": [
+            {
+              "name": "Kevin Rodrigues Goncalves",
+              "deck": "Artmage K9"
+            },
+            {
+              "name": "Matthieu Nicolas Bricard",
+              "deck": "Mitsurugi"
+            },
+            {
+              "name": "Pierre Burgals",
+              "deck": "Bystial @Ignister Maliss"
+            }
+          ]
         }
       ],
       "formats": [
@@ -709,7 +723,21 @@
         {
           "format": null,
           "name": "Legionnaire",
-          "deck": null
+          "deck": null,
+          "members": [
+            {
+              "name": "Jesse Dean Kotton",
+              "deck": "Fiendsmith Ryzeal"
+            },
+            {
+              "name": "Dominic Eduardo Couch",
+              "deck": "Ryzeal"
+            },
+            {
+              "name": "Michael Joseph Albanese",
+              "deck": "Ryzeal"
+            }
+          ]
         }
       ],
       "formats": [
@@ -735,7 +763,21 @@
         {
           "format": null,
           "name": "Look Pak at Him",
-          "deck": null
+          "deck": null,
+          "members": [
+            {
+              "name": "Cameron Taylor Neal",
+              "deck": null
+            },
+            {
+              "name": "Cristian Rafael Urena",
+              "deck": null
+            },
+            {
+              "name": "Kamal Derrick El Crooks Valdez",
+              "deck": null
+            }
+          ]
         }
       ],
       "formats": [
@@ -1218,7 +1260,21 @@
         {
           "format": null,
           "name": "kids next door",
-          "deck": null
+          "deck": null,
+          "members": [
+            {
+              "name": "Ruben Andres Penaranda",
+              "deck": null
+            },
+            {
+              "name": "Kamal Derrick El Crooks-Valdez",
+              "deck": null
+            },
+            {
+              "name": "Pakawat Thomas Pamornsut",
+              "deck": null
+            }
+          ]
         }
       ],
       "formats": [
@@ -1394,7 +1450,21 @@
         {
           "format": null,
           "name": "Better Have It",
-          "deck": null
+          "deck": null,
+          "members": [
+            {
+              "name": "Ruben Andres Penaranda",
+              "deck": "Bystial Dragon Link"
+            },
+            {
+              "name": "Kamal Derrick El Crooks-Valdez",
+              "deck": "Purrely"
+            },
+            {
+              "name": "Pakawat Thomas Pamornsut",
+              "deck": "Unchained"
+            }
+          ]
         }
       ],
       "formats": [
@@ -1762,7 +1832,21 @@
         {
           "format": null,
           "name": "BBCITAS",
-          "deck": null
+          "deck": null,
+          "members": [
+            {
+              "name": "Anthony Alexander Ramirez Medina",
+              "deck": null
+            },
+            {
+              "name": "Freddy Alejandro Monroy Paitampoma",
+              "deck": null
+            },
+            {
+              "name": "Gerardo Jesus Delgado Portilla",
+              "deck": null
+            }
+          ]
         }
       ],
       "formats": [
@@ -2093,7 +2177,21 @@
         {
           "format": null,
           "name": "Gonna Finish That",
-          "deck": null
+          "deck": null,
+          "members": [
+            {
+              "name": "Dominic Eduardo Couch",
+              "deck": "Invoked Shaddoll"
+            },
+            {
+              "name": "Stephen Joseph Silverman",
+              "deck": "Lost World Dinosaur"
+            },
+            {
+              "name": "Scott Robertson Page",
+              "deck": "Lost World Dinosaur"
+            }
+          ]
         }
       ],
       "formats": [
@@ -2162,7 +2260,21 @@
         {
           "format": null,
           "name": "Team He Scrambling",
-          "deck": null
+          "deck": null,
+          "members": [
+            {
+              "name": "Cristian Rafael Urena",
+              "deck": null
+            },
+            {
+              "name": "Hani Yasser Jawhari",
+              "deck": null
+            },
+            {
+              "name": "Arnold Nadaban Zanabria",
+              "deck": null
+            }
+          ]
         }
       ],
       "formats": [
@@ -2307,6 +2419,37 @@
           "format": null,
           "swissRounds": 13,
           "duelists": 277,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2019-north-america-wcq",
+      "event": "North America WCQ 2019",
+      "updated": "2019-06-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-north-america-wcq/rounds.json",
+      "postCount": 115,
+      "champions": [
+        {
+          "format": null,
+          "name": "Dakota Clint Angeloff",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": "Dragon Duel",
+          "swissRounds": 7,
+          "duelists": 82,
+          "rounds": 10
+        },
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2047,
           "rounds": 16
         }
       ]
@@ -2622,6 +2765,30 @@
           "swissRounds": 12,
           "duelists": 163,
           "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2018-south-america-wcq",
+      "event": "South America WCQ 2018",
+      "updated": "2018-07-02",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-south-america-wcq/rounds.json",
+      "postCount": 45,
+      "formats": [
+        {
+          "format": "Dragon Duel",
+          "swissRounds": 0,
+          "duelists": 4,
+          "rounds": 3
+        },
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 300,
+          "rounds": 18
         }
       ]
     },
@@ -3028,6 +3195,30 @@
       ]
     },
     {
+      "slug": "2017-south-american-wcq",
+      "event": "South America WCQ 2017",
+      "updated": "2017-07-02",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-south-american-wcq/rounds.json",
+      "postCount": 38,
+      "formats": [
+        {
+          "format": "Dragon Duel",
+          "swissRounds": 0,
+          "duelists": 0,
+          "rounds": 1
+        },
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 272,
+          "rounds": 12
+        }
+      ]
+    },
+    {
       "slug": "2017-central-american-wcq",
       "event": "Central America WCQ 2017",
       "updated": "2017-06-25",
@@ -3100,6 +3291,24 @@
           "swissRounds": 9,
           "duelists": 358,
           "rounds": 10
+        }
+      ]
+    },
+    {
+      "slug": "2017-ycs-denver",
+      "event": "YCS Denver",
+      "updated": "2017-04-09",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-ycs-denver/rounds.json",
+      "postCount": 42,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 717,
+          "rounds": 14
         }
       ]
     },
@@ -3382,6 +3591,37 @@
       ]
     },
     {
+      "slug": "2016-north-american-wcq",
+      "event": "North America WCQ 2016",
+      "updated": "2016-07-10",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-north-american-wcq/rounds.json",
+      "postCount": 63,
+      "champions": [
+        {
+          "format": null,
+          "name": "Erik Godwin Christensen",
+          "deck": "Domain Monarchs"
+        }
+      ],
+      "formats": [
+        {
+          "format": "Dragon Duel",
+          "swissRounds": 0,
+          "duelists": 0,
+          "rounds": 2
+        },
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 1714,
+          "rounds": 17
+        }
+      ]
+    },
+    {
       "slug": "2016-ycs-origins",
       "event": "YCS Origins",
       "updated": "2016-06-19",
@@ -3508,6 +3748,30 @@
           "swissRounds": 8,
           "duelists": 276,
           "rounds": 11
+        }
+      ]
+    },
+    {
+      "slug": "2015-north-american-wcq",
+      "event": "North America WCQ 2015",
+      "updated": "2015-07-04",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2015-north-american-wcq/rounds.json",
+      "postCount": 54,
+      "formats": [
+        {
+          "format": "Dragon Duel",
+          "swissRounds": 7,
+          "duelists": 67,
+          "rounds": 3
+        },
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2031,
+          "rounds": 16
         }
       ]
     },
