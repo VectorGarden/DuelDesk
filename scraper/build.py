@@ -295,17 +295,45 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
     # played, so the majority spelling is the one to keep.
     rounds_seen = Counter(n for group in together for n in group)
 
+    # Where the candidates could possibly be, so the rules are asked about
+    # those rather than about everybody. Both rules are narrow -- a shortening
+    # keeps one end of the name, a typo leaves every other word alone -- and
+    # scanning every pair spent almost all of its time proving so. One
+    # 646-Duelist event compared 2,064,969 pairs to find 162 worth testing for
+    # a typo and 10,190 worth testing for a shortening.
+    #
+    # Both indexes are supersets of what the rules accept, and the rules still
+    # decide, so the folding is the same folding. The keys are chosen to keep
+    # it that way: ends_agree accepts a prefix -- "Ben" agrees with "Benjamin"
+    # -- so the end index is keyed on a first letter and not a whole word,
+    # which a shorter forename would fall straight out of.
+    ends_index: dict[tuple, set[str]] = defaultdict(set)
+    gap_index: dict[tuple, set[str]] = defaultdict(set)
+    for n in names:
+        w = _words(n)
+        if not w:
+            continue
+        ends_index["first", w[0][0]].add(n)
+        ends_index["last", w[-1][0]].add(n)
+        # Two names differing in exactly one word agree on the others, so they
+        # meet under the key that leaves that word out.
+        for i in range(len(w)):
+            gap_index[len(w), i, w[:i] + w[i + 1:]].add(n)
+
     canon: dict[str, str] = {}
     for short in names:
         sw = _words(short)
         if len(sw) < 2:
             continue                    # a lone word identifies nobody
-        longer = [n for n in names
+        keeps_an_end = ends_index["first", sw[0][0]] | ends_index["last", sw[-1][0]]
+        longer = [n for n in keeps_an_end
                   if len(_words(n)) > len(sw) and shortens(sw, _words(n))
                   and ends_agree(sw, _words(n)) and apart(short, n)]
         # Or the same name with a letter typed wrong, folded the way round the
         # coverage votes: the spelling seen in more rounds keeps the Duelist.
-        longer += [n for n in names
+        one_word_off = set().union(*(gap_index[len(sw), i, sw[:i] + sw[i + 1:]]
+                                     for i in range(len(sw))))
+        longer += [n for n in one_word_off
                    if misspelt(sw, _words(n)) and apart(short, n)
                    and rounds_seen[n] > rounds_seen[short]]
         if len(longer) > 1:
