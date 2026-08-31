@@ -3273,6 +3273,32 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         self.assertEqual(got["finals-feature-match-steven-santoli-vs-liam-mac-oscair"],
                          ("2023-north-america-remote-duel-ycs", "discovered+date"))
 
+    def test_a_round_is_never_joined_on_the_date_alone(self):
+        # A date says a piece of writing belongs to the weekend. It does not say
+        # whose bracket a table is, and a discovered event's vocabulary is its
+        # own slugs -- which is to say "pairings", "top", "round". A slug built
+        # from nothing else matches every event that ran that weekend.
+        #
+        # YCS Chicago published its Top 32 under its own name, and something
+        # else that weekend published "top-32-pairings-6", naming nobody. Dated
+        # in, it was the fuller of the two tables and won -- and then fourteen
+        # of the sixteen Duelists in Chicago's own Top 16 had, on the record,
+        # never played in its Top 32.
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/top-32-pairings-6", "2023-06-25"))
+        self.assertIsNone(got["top-32-pairings-6"][0])
+
+    def test_the_writing_around_an_event_still_joins_it(self):
+        # The rule is narrow on purpose: it holds back rounds, not writing.
+        # Everything this class exists for -- the winner announcement, the
+        # feature matches, the table of contents -- still arrives by date.
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/and-the-winner-is-4", "2023-06-25"))
+        self.assertEqual(got["and-the-winner-is-4"][0],
+                         "2023-north-america-remote-duel-ycs")
+
     def test_a_post_from_another_week_is_not_swept_in(self):
         got = self.assigned(
             *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
@@ -3444,6 +3470,105 @@ def _src(url, title, header, rows, posted="12:00"):
 
 PAIR_HEAD = ["Table", "P1 First Name", "P1 Last Name", "vs.",
              "P2 First Name", "P2 Last Name"]
+
+
+class TestFoldedNames(unittest.TestCase):
+    """One Duelist with two names.
+
+    YCS Chicago seated "Aaron Chase Furman" through eleven rounds of Swiss and
+    "Aaron Furman" in the Top 16. Nothing downstream survives that: a record is
+    looked up by name, so the cut asked for a Duelist the standings had filed
+    under a longer one and got nothing, and the advancement check read a Top 16
+    whose Duelists had never played in the Top 32.
+    """
+
+    def fold(self, swiss, cut, cut_round="Top 16"):
+        from build import reconcile_names
+        sources = [_src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD, swiss),
+                   _src("https://x/t/", f"{cut_round} Pairings", PAIR_HEAD, cut)]
+        return reconcile_names(sources), sources
+
+    def test_a_dropped_middle_name_is_folded(self):
+        canon, sources = self.fold(
+            [["1", "Aaron Chase", "Furman", "vs.", "Kobe Louis", "Short"]],
+            [["1", "Aaron", "Furman", "vs.", "Kobe", "Short"]])
+        self.assertEqual(canon, {"Aaron Furman": "Aaron Chase Furman",
+                                 "Kobe Short": "Kobe Louis Short"})
+        got = [(r["a"]["name"], r["b"]["name"]) for r in sources[1].post.table.rows]
+        self.assertEqual(got, [("Aaron Chase Furman", "Kobe Louis Short")])
+
+    def test_a_dropped_forename_is_folded(self):
+        # Konami drops given names from the front as readily as from the back:
+        # YCS Knoxville printed "Mohammed Faisal Khan" as "Faisal Khan". A rule
+        # keyed on the forename refuses him.
+        canon, _ = self.fold(
+            [["1", "Mohammed Faisal", "Khan", "vs.", "Kyle Conner", "Jones"]],
+            [["1", "Faisal", "Khan", "vs.", "Kyle", "Jones"]])
+        self.assertEqual(canon["Faisal Khan"], "Mohammed Faisal Khan")
+
+    def test_a_nickname_is_folded(self):
+        canon, _ = self.fold(
+            [["1", "Jeffrey Michael Alexander", "Jones", "vs.", "Rashad Franklin", "Jones"]],
+            [["1", "Jeff", "Jones", "vs.", "Rashad", "Jones"]])
+        self.assertEqual(canon["Jeff Jones"], "Jeffrey Michael Alexander Jones")
+
+    def test_two_candidates_are_left_alone(self):
+        # YCS Memphis ran a Nhan Thanh Nguyen and a Thanh Cong Nguyen, and a
+        # Top 16 "Thanh Nguyen" could be either. Guessing costs a Duelist their
+        # record and gives it to someone who did not earn it.
+        canon, _ = self.fold(
+            [["1", "Nhan Thanh", "Nguyen", "vs.", "Thanh Cong", "Nguyen"]],
+            [["1", "Thanh", "Nguyen", "vs.", "Chuong", "Nguyen"]])
+        self.assertNotIn("Thanh Nguyen", canon)
+
+    def test_the_previous_round_settles_two_candidates(self):
+        # Both Nguyens played the Swiss; only one reached the Top 32, and that
+        # is the one the Top 16 means.
+        from build import reconcile_names
+        sources = [
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Nhan Thanh", "Nguyen", "vs.", "Thanh Cong", "Nguyen"]]),
+            _src("https://x/t32/", "Top 32 Pairings", PAIR_HEAD,
+                 [["1", "Thanh Cong", "Nguyen", "vs.", "Chuong", "Nguyen"]]),
+            _src("https://x/t16/", "Top 16 Pairings", PAIR_HEAD,
+                 [["1", "Thanh", "Nguyen", "vs.", "Chuong", "Nguyen"]])]
+        canon = reconcile_names(sources)
+        self.assertEqual(canon["Thanh Nguyen"], "Thanh Cong Nguyen")
+
+    def test_two_seated_in_one_round_are_two_people(self):
+        # One Duelist does not play themselves, so whatever the names look
+        # like, a round holding both spellings holds two entrants.
+        canon, _ = self.fold(
+            [["1", "Aaron", "Furman", "vs.", "Aaron Chase", "Furman"]],
+            [["1", "Aaron", "Furman", "vs.", "Kobe", "Short"]])
+        self.assertNotIn("Aaron Furman", canon)
+
+    def test_an_initial_is_not_expanded(self):
+        # "J Jones" among several is not identification, and a two-letter word
+        # would start half the forenames in the room.
+        canon, _ = self.fold(
+            [["1", "Jeffrey Michael Alexander", "Jones", "vs.", "Johnny Nathaniel", "Jones"]],
+            [["1", "J", "Jones", "vs.", "Johnny", "Jones"]])
+        self.assertNotIn("J Jones", canon)
+
+    def test_a_lone_word_is_never_folded(self):
+        # Team events enter as one word -- "Legionnaire" is not a forename.
+        canon, _ = self.fold(
+            [["1", "Team", "Legionnaire", "vs.", "Team", "Sharks"]],
+            [["1", "", "Legionnaire", "vs.", "", "Sharks"]])
+        self.assertNotIn("Legionnaire", canon)
+
+    def test_the_standings_are_folded_too(self):
+        # Otherwise the cut's names stop matching the table the records are
+        # derived onto, which is the whole reason for folding them.
+        from build import reconcile_names
+        sources = [
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Aaron Chase", "Furman", "vs.", "Kobe Louis", "Short"]]),
+            _src("https://x/s/", "Standings After Round 1",
+                 ["Rank", "Player Name", "Points"], [["1", "Aaron Furman", "3"]])]
+        reconcile_names(sources)
+        self.assertEqual(sources[1].post.table.rows[0]["name"], "Aaron Chase Furman")
 
 
 class TestSharedNames(unittest.TestCase):
