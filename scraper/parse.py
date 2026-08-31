@@ -89,8 +89,18 @@ MATCH_CHARS = 12000
 PROSE_CHARS = 40000
 
 
+# Zero-width characters that are not whitespace to str.strip() and are not
+# anything to a reader either. TEAM YCS Las Vegas 2023 carries a byte order
+# mark inside the cells of its finals table, so "vs.\ufeff" was not "vs." and
+# the row announcing the match's two teams was not recognised as one -- the
+# final's three duels stood as three separate matches, in an event whose every
+# other cut round is a team match of three.
+_INVISIBLE = str.maketrans("", "", "\ufeff\u200b\u200c\u200d\u2060")
+
+
 def _text(fragment: str) -> str:
-    return html.unescape(_TAG.sub("", fragment)).replace("\xa0", " ").strip()
+    return (html.unescape(_TAG.sub("", fragment))
+            .replace("\xa0", " ").translate(_INVISIBLE).strip())
 
 
 def strip_region(name: str) -> tuple[str, str | None]:
@@ -327,6 +337,16 @@ _NOT_A_NAME = re.compile(r"(winner|result|score|record|outcome)\b", re.I)
 _VS_CELL = ("vs.", "vs")
 
 
+def _announces_a_team(row: list[str]) -> bool:
+    """Whether this row announces a team match rather than naming columns.
+
+    The same test the pairings reader uses further down: a row carrying two
+    names and nothing else but the words that frame them.
+    """
+    named = [c for c in row if c.strip().lower() not in ("team", "vs.", "vs", "")]
+    return len(named) == 2 and any(c.strip().lower() == "team" for c in row)
+
+
 def _infer_header(row: list[str]) -> list[str] | None:
     """A header for a table that has none, read off a row of its own data.
 
@@ -508,7 +528,14 @@ def parse_table(doc: str) -> Table | None:
     # reader recognises. A table whose first row is data is left alone: that
     # is a different shape and guessing at it here would eat a pairing.
     if _classify_table(header) == "unknown":
-        if body and _classify_table(body[0]) != "unknown":
+        if body and _announces_a_team(header) and _classify_table(body[0]) != "unknown":
+            # Not a caption: TEAM YCS Las Vegas announces the final's teams
+            # above the header rather than below it, and dropping that row as
+            # a caption left the match's three duels standing as three
+            # separate matches -- a Final of three singles in an event whose
+            # every other cut round is a team match of three.
+            header, body = body[0], [header] + body[1:]
+        elif body and _classify_table(body[0]) != "unknown":
             header, body = body[0], body[1:]
         elif made := _infer_header(header):
             # The first row is data, so it stays in the body and gets a

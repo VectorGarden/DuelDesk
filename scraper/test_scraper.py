@@ -3991,6 +3991,44 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         row = parse_post(html).table.rows[0]
         self.assertEqual(row["a"]["name"], "Lift Yourself 1:58")
 
+    def test_a_team_row_carrying_a_byte_order_mark(self):
+        # TEAM YCS Las Vegas 2023 has a byte order mark inside the cells of
+        # its finals table, and str.strip() does not remove one -- so "vs."
+        # was not "vs." and the row announcing the two teams was not read as
+        # announcing anything. Its three duels stood as three separate
+        # matches, in an event whose every other cut round is a team match of
+        # three, and the event was rejected for disagreeing with itself.
+        html = ("<html><head><title>Pairings for the Finals</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Team</td><td>Back For Seconds\ufeff</td><td>vs.\ufeff</td>"
+                "<td>2 World Champs and John\ufeff</td><td></td></tr>"
+                "<tr><td>Table\ufeff</td><td>Player 1\ufeff</td><td>Deck Type\ufeff</td>"
+                "<td>Player 2\ufeff</td><td>Deck Type</td></tr>"
+                "<tr><td>1</td><td>Stephen S.</td><td>Kashtira</td>"
+                "<td>John W.</td><td>Despia Branded</td></tr>"
+                "<tr><td>2</td><td>Dominic C.</td><td>Kashtira</td>"
+                "<td>Ryan Y.</td><td>Labrynth</td></tr>"
+                "</tbody></table></body></html>")
+        rows = parse_post(html).table.rows
+        self.assertEqual(len(rows), 1, "one team match, not two singles")
+        self.assertEqual((rows[0]["a"]["name"], rows[0]["b"]["name"]),
+                         ("Back For Seconds", "2 World Champs and John"))
+        self.assertEqual(len(rows[0]["duels"]), 2)
+
+    def test_a_team_announcement_is_not_a_caption(self):
+        # The caption rule reads past a row that names no columns. A team
+        # announcement names no columns either, and it is data.
+        html = ("<html><head><title>Top 4 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Team</td><td>Alpha Squad</td><td>vs.</td><td>Beta Crew</td></tr>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs.</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>vs.</td><td>Bo B.</td></tr>"
+                "</tbody></table></body></html>")
+        rows = parse_post(html).table.rows
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["a"]["name"], "Alpha Squad")
+        self.assertEqual(len(rows[0]["duels"]), 1)
+
     def test_a_ranking_is_never_a_pairing(self):
         # TEAM YCS La Paz heads its standings "Rank | Team Name | Duelist
         # Names | Points". Two of those read like sides, so asking about sides
