@@ -222,12 +222,38 @@ def detect_format(text: str) -> str | None:
     return None
 
 
+# The tournaments that run beside the main event and get written up like it,
+# each under its own name. Counted from what the archive holds: Dragon Duel 228
+# posts, ATTACK OF THE GIANT CARD 128, public events 84, Time Wizard 34.
+#
+# Named rather than lumped together, because they are four different
+# tournaments and a reader asking for one of them means that one. Longest
+# first, so "attack of the giant card" is not read as its own last two words.
+#
+# Deliberately not winners.SIDE_EVENT, which is a wider net cast for a
+# different purpose. That one matches "invitational", and a UDS Invitational is
+# a main event in this archive with a hundred posts of its own -- filing those
+# under anything but their own format would be a plain lie.
+_SIDE_COVERAGE = [
+    (re.compile(r"attack of the giant card"), "Attack of the Giant Card"),
+    (re.compile(r"dragon duel"),              "Dragon Duel"),
+    (re.compile(r"public event"),             "Public Events"),
+    (re.compile(r"time wizard"),              "Time Wizard"),
+]
+
+
 def coverage_format(text: str, fmt: str | None) -> str | None:
     """What a post is coverage *of*, which is not always a format of the event.
 
-    Dragon Duel runs alongside the main event all weekend and the blog writes
-    it up like any other tournament -- 222 posts across 45 events. A reader
-    filtering the feed wants it in the list of things to filter by.
+    Dragon Duel, ATTACK OF THE GIANT CARD, the public events and Time Wizard
+    all run alongside the main event and the blog writes them up like any other
+    tournament -- 474 posts between them. A reader filtering the feed wants
+    them in the list of things to filter by.
+
+    Each under its own name. They are four different tournaments, and a reader
+    asking for one of them means that one -- calling the button Dragon Duel
+    said that three quarters of what it held was something it is not, and
+    calling it Other says only that nobody looked.
 
     It is deliberately not a value detect_format returns. That answer groups an
     event's rounds into tournaments, and a Dragon Duel table read as one of the
@@ -235,7 +261,11 @@ def coverage_format(text: str, fmt: str | None) -> str | None:
     "dd-wcq-ca-standings-after-round-1" became the WCQ's own standings once.
     The feed can name the thing without the builder having to believe in it.
     """
-    return "Dragon Duel" if "dragon duel" in _words(text) else fmt
+    low = _words(text)
+    for pattern, name in _SIDE_COVERAGE:
+        if pattern.search(low):
+            return name
+    return fmt
 
 
 def detect_round(text: str, kind: str | None = None):

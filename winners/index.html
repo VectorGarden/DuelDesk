@@ -113,14 +113,19 @@
         <p class="wsec__note">Every event the coverage names a winner for. Where it never did — and
           it often did not — the event is not listed.</p>
       </div>
-      <p class="count" id="wcount">Loading</p>
-    </div>
+      <!-- The count sits with the heading and the filter sits with the note,
+           which puts each beside the thing it qualifies: how many winners
+           there are, and which of them you are looking at.
 
-    <!-- Populated from the winners themselves, so a format nobody has won
-         under cannot get a button. Hidden while there is only one, the same
-         rule the coverage filter follows. -->
-    <div class="filters" role="group" aria-label="Filter by format"
-         id="format-filters" hidden></div>
+           The filter is populated from the winners themselves, so a format
+           nobody has won under cannot get a button, and it is hidden while
+           there is only one -- the rule the coverage filter follows. -->
+      <div class="sechead__right">
+        <p class="count" id="wcount">Loading</p>
+        <div class="filters wsec__filters" role="group" aria-label="Filter by format"
+             id="format-filters" hidden></div>
+      </div>
+    </div>
 
     <div id="winners"></div>
     <p class="visually-hidden" role="status" aria-live="polite" id="announce"></p>

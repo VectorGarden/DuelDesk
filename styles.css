@@ -456,6 +456,10 @@ a.post__t--jump:hover,a.post__t--jump:focus-visible{text-decoration:underline do
    reason the coverage list groups by event and not by Duelist. */
 .wsec{padding:var(--gap) 0 3rem}
 .wsec__note{margin:.35rem 0 0; max-width:52ch; color:var(--text-2); font-size:.9rem}
+/* The count above, the filter below it, both hard right -- so the filter ends
+   up on the note's line rather than on a row of its own. */
+.sechead__right{display:flex; flex-direction:column; align-items:flex-end; gap:.55rem}
+.wsec__filters{margin-bottom:0; justify-content:flex-end}
 .wins{list-style:none; margin:1.25rem 0 0; padding:0;
       border-top:1px solid var(--line-soft)}
 .win{display:flex; flex-wrap:wrap; gap:.35rem 1rem; align-items:baseline;
