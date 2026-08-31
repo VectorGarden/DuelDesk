@@ -41,3 +41,8 @@ build/
 # Python
 __pycache__/
 *.py[cod]
+
+# The staged copy of the site. scripts/stage-site.sh writes it, the deploy
+# uploads it, and it is every file the site serves -- so committing it once
+# would double the repository and go stale the moment anything changed.
+_site/
