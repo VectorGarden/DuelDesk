@@ -475,12 +475,12 @@
       "slug": "2025-ycs-lima-peru",
       "event": "YCS Lima",
       "location": "Lima, Peru",
-      "updated": "2025-10-02",
+      "updated": "2025-09-28",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-lima-peru/rounds.json",
-      "postCount": 27,
+      "postCount": 25,
       "formats": [
         {
           "format": null,
@@ -698,7 +698,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-february-2025/rounds.json",
-      "postCount": 24,
+      "postCount": 23,
       "formats": [
         {
           "format": null,
