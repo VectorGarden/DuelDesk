@@ -1146,10 +1146,21 @@ function renderStandings(r){
     </tbody></table>`);
 }
 
+/* A round can carry several. 102 of the 357 rounds with a feature match have
+   more than one and YCS Montreal's Top 4 had three, so all of them are shown.
+
+   `r.feature` is what the builder wrote before it kept them all. Reading it
+   here keeps the panel working for the events still holding the old shape,
+   between this deploying and the archive being rebuilt; it can go once nothing
+   in events/ has a `feature` key. */
+function roundFeatures(r){
+  return r.features || (r.feature ? [r.feature] : []);
+}
+
 function renderFeature(r){
-  if (!r.feature) return `<div class="empty"><h3>No feature match for this round</h3>
+  const features = roundFeatures(r);
+  if (!features.length) return `<div class="empty"><h3>No feature match for this round</h3>
     <p>Feature coverage is chosen once the round's top tables are known.</p></div>`;
-  const {a, b, note, source} = r.feature;
   /* A scraped feature post is prose and photographs: it names the two Duelists
      and nothing else structured. Joining deck and record unconditionally printed
      a bare " · ?–?" under every name, so each side shows only what is known. */
@@ -1160,12 +1171,17 @@ function renderFeature(r){
     return `<div class="feature__side"><h3>${esc(p.name)}</h3>`
          + (bits.length ? `<p>${bits.join(' · ')}</p>` : '') + `</div>`;
   };
-  return `<div class="feature">
+  const one = ({a, b, note, source}) => `<div class="feature">
     ${side(a)}
     <div class="feature__vs" aria-hidden="true">VS</div>
     ${side(b)}
   </div>
   <p class="feature__note">${esc(note)}${offsite(source) ? ` <a href="${esc(source)}" rel="external noreferrer">Read the coverage</a>.` : ''}</p>`;
+  /* Counted only where there is more than one, so the ordinary round reads the
+     way it always did rather than gaining a heading saying "1 of 1". */
+  if (features.length === 1) return one(features[0]);
+  return `<p class="feature__count">${features.length} feature matches published for this round.</p>`
+       + features.map(f => `<div class="feature__one">${one(f)}</div>`).join('');
 }
 
 /* ---- who won -------------------------------------------------------------

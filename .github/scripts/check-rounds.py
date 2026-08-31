@@ -93,7 +93,13 @@ def check_rounds(label, rounds, swiss_count):
         # events sometimes only a feature match. Five of the 2026 North America
         # WCQ's rounds reached the archive as a feature match and nothing else,
         # which is thin coverage of a real round, not an empty one.
-        if not r.get("pairings") and not r.get("standings") and not r.get("feature"):
+        # `feature` is what the builder wrote before it kept every one of them.
+        # This runs against the committed archive, which is rebuilt over
+        # several runs after a deploy, so both shapes are in events/ at once --
+        # reading only the new one failed 50 of 160 events on the first push.
+        # It can go once nothing there has a `feature` key.
+        if not r.get("pairings") and not r.get("standings") \
+                and not r.get("features") and not r.get("feature"):
             problems.append(f"{rl}: no pairings, standings or feature match")
 
         pairs = r.get("pairings") or []
