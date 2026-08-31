@@ -1319,7 +1319,7 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 696,
-          "rounds": 13
+          "rounds": 14
         }
       ]
     },
@@ -1581,24 +1581,6 @@
       ]
     },
     {
-      "slug": "2023-team-ycs-las-vegas",
-      "event": "TEAM YCS Las Vegas",
-      "updated": "2023-02-21",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2023-team-ycs-las-vegas/rounds.json",
-      "postCount": 30,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 9,
-          "duelists": 447,
-          "rounds": 11
-        }
-      ]
-    },
-    {
       "slug": "2023-team-ycs-mexico-city",
       "event": "TEAM YCS Mexico City",
       "updated": "2023-02-15",
@@ -1625,12 +1607,19 @@
       "coverageBy": "Konami",
       "path": "events/2022-remote-duel-ycs-north-america/rounds.json",
       "postCount": 60,
+      "champions": [
+        {
+          "format": null,
+          "name": "Cristian Rafael Urena",
+          "deck": "Tearlaments"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 591,
-          "rounds": 13
+          "rounds": 14
         }
       ]
     },
@@ -1647,7 +1636,7 @@
         {
           "format": null,
           "name": "Hani Yasser Jawhari",
-          "deck": null
+          "deck": "Ishizu Tearlaments"
         }
       ],
       "formats": [
@@ -1655,7 +1644,7 @@
           "format": null,
           "swissRounds": 11,
           "duelists": 1267,
-          "rounds": 15
+          "rounds": 16
         }
       ]
     },
@@ -1668,6 +1657,13 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-minneapolis/rounds.json",
       "postCount": 62,
+      "champions": [
+        {
+          "format": null,
+          "name": "Christopher Jordan LeBlanc",
+          "deck": "Spright Tearlaments"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1704,6 +1700,13 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-niagara-falls/rounds.json",
       "postCount": 63,
+      "champions": [
+        {
+          "format": null,
+          "name": "Raymond Young Dai",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1734,7 +1737,7 @@
           "format": null,
           "swissRounds": 9,
           "duelists": 456,
-          "rounds": 12
+          "rounds": 13
         }
       ]
     },
@@ -1747,6 +1750,13 @@
       "coverageBy": "Konami",
       "path": "events/na-ygoc-2022/rounds.json",
       "postCount": 77,
+      "champions": [
+        {
+          "format": null,
+          "name": "Hansel Erik Aguero",
+          "deck": "Tenyi Swordsoul"
+        }
+      ],
       "formats": [
         {
           "format": null,

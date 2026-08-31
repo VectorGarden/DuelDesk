@@ -266,7 +266,7 @@
     "modified": "2023-05-28T14:51:01-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -293,7 +293,7 @@
     "modified": "2023-05-28T13:29:26-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -347,7 +347,7 @@
     "modified": "2023-05-28T17:20:49-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -419,7 +419,7 @@
     "modified": "2023-05-28T13:14:28-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Public Events",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -428,7 +428,7 @@
     "modified": "2023-05-28T17:54:23-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -482,7 +482,7 @@
     "modified": "2023-05-28T18:05:52-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Public Events",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -509,7 +509,7 @@
     "modified": "2023-05-28T18:55:19-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Public Events",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -536,7 +536,7 @@
     "modified": "2023-05-27T18:07:09-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -563,7 +563,7 @@
     "modified": "2023-05-27T22:04:35-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Public Events",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -608,7 +608,7 @@
     "modified": "2023-05-28T10:58:22-07:00",
     "kind": "news",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Public Events",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -923,7 +923,7 @@
     "modified": "2023-05-27T16:34:11-07:00",
     "kind": "news",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -950,7 +950,7 @@
     "modified": "2023-05-27T18:15:38-07:00",
     "kind": "news",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2023-05-ycs-philadelphia"
   },
   {
@@ -959,7 +959,7 @@
     "modified": "2023-05-27T21:35:09-07:00",
     "kind": "news",
     "event": "YCS Philadelphia",
-    "format": null,
+    "format": "Public Events",
     "slug": "2023-05-ycs-philadelphia"
   }
 ]

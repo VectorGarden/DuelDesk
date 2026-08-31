@@ -257,7 +257,7 @@
     "modified": "2024-08-18T12:13:33-07:00",
     "kind": "result",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -320,7 +320,7 @@
     "modified": "2024-08-18T18:37:19-07:00",
     "kind": "deck",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -356,7 +356,7 @@
     "modified": "2024-08-17T21:17:05-07:00",
     "kind": "deck",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -419,7 +419,7 @@
     "modified": "2024-08-18T17:39:26-07:00",
     "kind": "result",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -428,7 +428,7 @@
     "modified": "2024-08-17T18:24:23-07:00",
     "kind": "news",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Public Events",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -473,7 +473,7 @@
     "modified": "2024-08-18T18:39:54-07:00",
     "kind": "result",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Public Events",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -482,7 +482,7 @@
     "modified": "2024-08-17T18:58:37-07:00",
     "kind": "news",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -500,7 +500,7 @@
     "modified": "2024-08-18T18:43:32-07:00",
     "kind": "result",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Public Events",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -527,7 +527,7 @@
     "modified": "2024-08-18T18:52:17-07:00",
     "kind": "result",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -554,7 +554,7 @@
     "modified": "2024-08-17T21:14:14-07:00",
     "kind": "result",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-08-ycs-sacramento"
   },
   {
@@ -563,7 +563,7 @@
     "modified": "2024-08-17T21:15:30-07:00",
     "kind": "news",
     "event": "YCS Sacramento",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2024-08-ycs-sacramento"
   },
   {
