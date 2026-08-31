@@ -2281,7 +2281,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-secaucus/rounds.json",
-      "postCount": 74,
+      "postCount": 72,
       "champions": [
         {
           "format": null,
@@ -2332,12 +2332,12 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-salt-lake-city/rounds.json",
-      "postCount": 65,
+      "postCount": 63,
       "champions": [
         {
           "format": null,
           "name": "Leonard K. Anaya III",
-          "deck": "True Draco"
+          "deck": null
         }
       ],
       "formats": [
@@ -2384,7 +2384,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-santa-cruz-de-la-sierra-bolivia/rounds.json",
-      "postCount": 23,
+      "postCount": 24,
       "formats": [
         {
           "format": null,
@@ -2403,31 +2403,31 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-sacramento-ca/rounds.json",
-      "postCount": 28,
+      "postCount": 58,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 144,
-          "rounds": 12
+          "rounds": 15
         }
       ]
     },
     {
       "slug": "2018-ycs-atlanta",
       "event": "YCS Atlanta",
-      "updated": "2018-02-18",
+      "updated": "2018-02-19",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-atlanta/rounds.json",
-      "postCount": 26,
+      "postCount": 66,
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 1178,
-          "rounds": 11
+          "rounds": 16
         }
       ]
     },
@@ -2475,7 +2475,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-trinidad-and-tobago/rounds.json",
-      "postCount": 21,
+      "postCount": 22,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alejandro Garcia Moreno",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2493,13 +2500,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-dallas/rounds.json",
-      "postCount": 27,
+      "postCount": 64,
+      "champions": [
+        {
+          "format": null,
+          "name": "Mohammed Imran Khan",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 1097,
-          "rounds": 15
+          "rounds": 16
         }
       ]
     },
@@ -2512,13 +2526,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-kissimmee-fl/rounds.json",
-      "postCount": 24,
+      "postCount": 53,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 178,
-          "rounds": 12
+          "rounds": 15
         }
       ]
     },
@@ -2530,13 +2544,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-toronto/rounds.json",
-      "postCount": 26,
+      "postCount": 48,
+      "champions": [
+        {
+          "format": null,
+          "name": "Christopher Jordan LeBlanc",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 548,
-          "rounds": 14
+          "rounds": 15
         }
       ]
     },
@@ -2573,13 +2594,20 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-pittsburgh/rounds.json",
-      "postCount": 26,
+      "postCount": 60,
+      "champions": [
+        {
+          "format": null,
+          "name": "Aaron Chase Furman",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 971,
-          "rounds": 14
+          "rounds": 15
         }
       ]
     },
@@ -2611,7 +2639,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-lima-peru/rounds.json",
-      "postCount": 25,
+      "postCount": 26,
       "formats": [
         {
           "format": null,
@@ -2629,7 +2657,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-atlanta/rounds.json",
-      "postCount": 43,
+      "postCount": 57,
+      "champions": [
+        {
+          "format": null,
+          "name": "Corey Ryan Roca",
+          "deck": "Paleozoic Frog"
+        }
+      ],
       "formats": [
         {
           "format": null,
