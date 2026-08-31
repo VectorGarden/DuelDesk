@@ -2109,7 +2109,7 @@
         {
           "format": null,
           "name": "Kobe Louis Short",
-          "deck": null
+          "deck": "Sky Striker Orcust"
         }
       ],
       "formats": [
@@ -2170,7 +2170,7 @@
         {
           "format": null,
           "name": "Ramiro Garcia",
-          "deck": null
+          "deck": "Lunalight Orcust"
         }
       ],
       "formats": [
@@ -2240,7 +2240,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-portland/rounds.json",
-      "postCount": 28,
+      "postCount": 37,
       "champions": [
         {
           "format": null,
@@ -2251,9 +2251,9 @@
       "formats": [
         {
           "format": null,
-          "swissRounds": 0,
-          "duelists": 0,
-          "rounds": 5
+          "swissRounds": 10,
+          "duelists": 808,
+          "rounds": 14
         }
       ]
     },
@@ -2266,7 +2266,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-08-uds-summer-invitational-2019-indianapolis-in/rounds.json",
-      "postCount": 105,
+      "postCount": 96,
       "formats": [
         {
           "format": null,
@@ -2391,7 +2391,7 @@
         {
           "format": null,
           "name": "Paulo Roberto Goncalves da Silva",
-          "deck": null
+          "deck": "Sky Striker"
         }
       ],
       "formats": [
@@ -2504,7 +2504,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-11-sao-paulo-brazil/rounds.json",
-      "postCount": 111,
+      "postCount": 110,
       "champions": [
         {
           "format": null,
@@ -2559,7 +2559,7 @@
         {
           "format": null,
           "name": "Manav Dawar",
-          "deck": null
+          "deck": "Sky Striker"
         }
       ],
       "formats": [
@@ -2628,7 +2628,7 @@
         {
           "format": null,
           "name": "Roger Guzman Garcia",
-          "deck": null
+          "deck": "Trickstar Sky Striker"
         }
       ],
       "formats": [
@@ -2653,7 +2653,7 @@
         {
           "format": null,
           "name": "Dakota Clint Angeloff",
-          "deck": null
+          "deck": "Trickstar Sky Striker"
         }
       ],
       "formats": [
@@ -2679,7 +2679,7 @@
         {
           "format": null,
           "name": "Hector Lorenzo Perez Herrera",
-          "deck": null
+          "deck": "Pendulum Magicians"
         }
       ],
       "formats": [
@@ -2755,7 +2755,7 @@
         {
           "format": null,
           "name": "Adrian Madriz Espinoza",
-          "deck": null
+          "deck": "Dark Pendulum"
         }
       ],
       "formats": [
@@ -2843,7 +2843,7 @@
         {
           "format": null,
           "name": "Juan Sebastian – Ecuador Andrade Castro",
-          "deck": null
+          "deck": "SPYRAL"
         }
       ],
       "formats": [
