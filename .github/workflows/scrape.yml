@@ -161,8 +161,12 @@ jobs:
           #
           # --untracked-files=all because a backfill writes a directory that
           # git has never seen, and a directory is not a file to check.
+          # Not the deletions. A rejected event has its rounds.json removed,
+          # and git reports that in the same listing -- so the check was
+          # handed a file that is not there and failed the run for it, which
+          # stopped a rebuild the moment any event was rejected.
           written=$(git status --porcelain --untracked-files=all -- events \
-                    | awk '{print $NF}' | grep '/rounds\.json$' || true)
+                    | grep -v '^ *D' | awk '{print $NF}' | grep '/rounds\.json$' || true)
           if [ -z "$written" ]; then
             echo "No event file was written."
           else
