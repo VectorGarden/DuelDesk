@@ -3683,6 +3683,21 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         self.assertEqual(t.kind, "standings")
         self.assertEqual((t.rows[0]["name"], t.rows[0]["points"]), ("Ann Alpha", 12))
 
+    def test_a_ranking_is_never_a_pairing(self):
+        # TEAM YCS La Paz heads its standings "Rank | Team Name | Duelist
+        # Names | Points". Two of those read like sides, so asking about sides
+        # before asking about rank turned every standings table on the event
+        # into a bracket -- and left it with no standings, no format, and
+        # nothing at all in the archive.
+        html = ("<html><head><title>Standings After Round 4</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Rank</td><td>Team Name</td><td>Duelist Names</td><td>Points</td></tr>"
+                "<tr><td>1</td><td>Road of the King</td><td>Ann A., Bo B., Cy C.</td><td>12</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual(t.kind, "standings")
+        self.assertEqual(t.rows[0]["rank"], 1)
+
     def test_one_side_is_not_a_pairing(self):
         # A deck list names one Duelist per row. Reading it as a pairing would
         # give every one of them an opponent made of their own deck.

@@ -339,15 +339,20 @@ def _classify_table(header: list[str]) -> str:
     # Name and Name before that. Requiring a "vs." column, or the word Table,
     # or the word Team, left 149 round posts unread -- tables all of them, and
     # none of them a shape anybody had told this function about.
-    sides = sum(bool(re.match(r"(player|duelist|team|name)\b", h)) for h in low)
-    if sides == 2:
-        return "pairings"
-    # Standings need a rank and something after it. The name column is not
-    # always headed at all -- "Rank |  | Points" is how nine of them arrive --
-    # so the points are enough to say what the table is.
+    # Standings first, because a ranking is never a pairing and some of them
+    # name two columns that read like sides. TEAM YCS La Paz heads its
+    # standings "Rank | Team Name | Duelist Names | Points", and asking about
+    # sides before asking about rank read every one of them as a bracket --
+    # which left that event with no standings, no format, and nothing at all.
+    #
+    # The name column is not always headed -- "Rank |  | Points" is how nine of
+    # them arrive -- so the points say what the table is where no heading can.
     if "rank" in low and (any("player" in h or "name" in h for h in low)
                           or any("point" in h for h in low)):
         return "standings"
+    sides = sum(bool(re.match(r"(player|duelist|team|name)\b", h)) for h in low)
+    if sides == 2:
+        return "pairings"
     return "unknown"
 
 
