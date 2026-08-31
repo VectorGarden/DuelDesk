@@ -84,7 +84,7 @@ jobs:
       # Cheaper to fail here than to 404 in production.
       - name: Verify the artifact is complete
         working-directory: _site
-        run: python3 ../.github/scripts/check-references.py index.html
+        run: python3 ../.github/scripts/check-references.py index.html winners.html winners/index.html
 
       # A rehearsal, against the artifact instead of the internet.
       #

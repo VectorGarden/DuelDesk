@@ -106,7 +106,7 @@ jobs:
 
       # Every local file the page references must actually be in the repo.
       - name: Check local references resolve
-        run: python3 .github/scripts/check-references.py index.html
+        run: python3 .github/scripts/check-references.py index.html winners.html winners/index.html
 
   deploy:
     name: Deploy to GitHub Pages
