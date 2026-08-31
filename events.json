@@ -63,6 +63,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-north-america-wcq/rounds.json",
       "postCount": 78,
+      "champions": [
+        {
+          "format": null,
+          "name": "Ryan Linus Yu",
+          "deck": "Sky Striker"
+        }
+      ],
       "formats": [
         {
           "format": null,
