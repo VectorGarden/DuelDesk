@@ -269,12 +269,12 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
-      "postCount": 26,
+      "postCount": 25,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
-          "duelists": 332,
+          "duelists": 310,
           "rounds": 12
         }
       ]
@@ -288,7 +288,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-team-ycs-la-paz-bolivia/rounds.json",
-      "postCount": 23,
+      "postCount": 22,
       "formats": [
         {
           "format": null,
@@ -387,12 +387,12 @@
       "slug": "2025-ycs-merida-mexico",
       "event": "YCS Merida",
       "location": "Merida, Mexico",
-      "updated": "2025-12-01",
+      "updated": "2025-11-30",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-merida-mexico/rounds.json",
-      "postCount": 24,
+      "postCount": 23,
       "formats": [
         {
           "format": null,
