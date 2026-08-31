@@ -396,7 +396,7 @@ to fetch, parse, and serve the JSON to the page.
 | `styles.css` | Its styles. |
 | `app.js` | Its behaviour. Loaded with `defer`; the only inline script is the theme resolver, which has to run before first paint. |
 | `feed.xml` | RSS 2.0 feed of the newest posts across the whole archive. What is new, not the catalogue. |
-| `winners.html` | Every event the coverage names a winner for, built from the manifest alone. |
+| `winners/index.html` | Every event the coverage names a winner for, built from the manifest alone. Served at `/winners`. |
 | `common.js` | Escaping, URL safety and the theme — the same job on both pages. |
 | `winners.js` | The winners list's own behaviour. |
 | `events.json` | Every event in the archive: name, date, formats, how many posts it has, who won it, and where to find it. |
