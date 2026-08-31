@@ -28,7 +28,7 @@ from index import (assign_events, event_profiles, parse_post_sitemap,  # noqa: E
                    parse_sitemap_index, tight_window)
 from feed import build_feed                              # noqa: E402
 from naming import canonical_name, event_name            # noqa: E402
-from parse import detect_kind, parse_post                 # noqa: E402
+from parse import coverage_format, detect_kind, parse_post  # noqa: E402
 
 # Ties were removed from tournament policy on this date.
 DRAWS_ABOLISHED = date(2025, 9, 2)
@@ -215,7 +215,10 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
                         ongoing=ongoing, location=location)
 
     feed_posts = [{"title": s.post.title, "url": s.url, "modified": s.posted,
-                   "kind": s.post.kind, "format": s.post.fmt, "event": name,
+                   "kind": s.post.kind, "event": name,
+                   # What the post is coverage of, which for Dragon Duel is not
+                   # a format the builder groups rounds by. See coverage_format.
+                   "format": coverage_format(s.post.title, s.post.fmt),
                    "slug": slug} for s in sources]
 
     kinds = Counter(s.post.kind for s in sources)

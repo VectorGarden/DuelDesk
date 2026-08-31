@@ -37,6 +37,60 @@ test('filtering narrows the coverage list to one kind', async (t) => {
   assert.equal(page.$$('[data-filter][aria-pressed="true"]').length, 1);
 });
 
+test('the format filter narrows the coverage list to one tournament', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  const buttons = page.$$('[data-feed-format]').map((b) => b.dataset.feedFormat);
+  assert.ok(buttons.length > 2, `no format choice to make: ${buttons}`);
+  const before = page.$$('#events .post__t').length;
+  const formatOfTitle = new Map(page.run(`coverageEvents().flatMap(e => e.posts)
+    .map(p => [p.title, p.format ?? null])`));
+
+  /* Every format, not one of them. Reading off the rendered list rather than
+     off the predicate, because asking inChosenFormat what it thinks proves
+     only that it agrees with itself -- that version passed cleanly with the
+     call to it taken out of the list's own filter. */
+  let narrowedByOne = false;
+  for (const pick of buttons.filter((f) => f !== 'all')){
+    page.$(`[data-feed-format="${pick}"]`).click();
+    const titles = page.$$('#events .post__t').map((n) => n.textContent.trim());
+    assert.ok(titles.length > 0, `${pick} emptied the list`);
+    if (titles.length < before) narrowedByOne = true;
+    /* Every post left is either that format or event-wide: an announcement or
+       a winner carries no format and belongs to whichever tournament you read. */
+    const leaked = titles.filter((t) => {
+      const f = formatOfTitle.get(t);
+      return f !== undefined && f !== null && f !== pick;
+    });
+    assert.deepEqual(leaked, [], `${pick} still shows other formats: ${leaked}`);
+    assert.equal(page.$$('[data-feed-format][aria-pressed="true"]').length, 1);
+  }
+  assert.ok(narrowedByOne, `no format changed the list of ${before}`);
+});
+
+test('a post with no format survives every format filter', async (t) => {
+  /* Filtering these away hid every winner announcement and table of contents
+     the moment anybody chose a format. */
+  const page = await loadPage();
+  t.after(() => page.close());
+  const kept = page.run(`formatFilter='Genesys'; coverageEvents().flatMap(e => e.posts)
+    .filter(p => !p.format).every(p => inChosenFormat(p))`);
+  assert.equal(kept, true);
+});
+
+test('the format row stays hidden when there is nothing to choose', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+  /* Through coverageEvents, which is where the row reads them from: an event's
+     posts come out of POSTS once it has been opened and out of the feed
+     before that, and mutating only one of the two proves nothing. */
+  const hidden = page.run(`
+    coverageEvents().forEach(e => (e.posts || []).forEach(p => { p.format = 'Advanced'; }));
+    formatButtons = null; renderEvents();
+    document.getElementById('format-filters').hidden`);
+  assert.equal(hidden, true, 'one format is not a choice');
+});
+
 test('search filters the round table as the caption promises', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());

@@ -211,6 +211,17 @@ of (198 of the archive's 266 result posts are those), and exactly one of the cut
 named in it. Where a post names two, as a final's write-up does, whoever is on the near side of
 "defeated" won it.
 
+The coverage list filters by format as well as by kind, and the two compose. The buttons are read
+from the posts that are loaded rather than written into the page, so a format the archive has never
+seen cannot get one. A post carrying no format — an announcement, a table of contents, the winner —
+is event-wide and shows under every format; filtering those away hid every winner announcement the
+moment anybody chose one.
+
+Dragon Duel is one of those buttons and is deliberately not one of `detect_format`'s answers. That
+function groups an event's rounds into tournaments, and a Dragon Duel table read as one of the main
+event's has cost this archive real damage — `dd-wcq-ca-standings-after-round-1` became the WCQ's own
+standings once. The feed can name the thing without the builder having to believe in it.
+
 A round shows every feature match it carried, newest first. 102 of the 357 rounds that have one
 have more than one — YCS Montréal's Top 4 had three — so showing the best of them threw away two
 thirds of the Duelists the blog wrote about that round. A post whose title names no two Duelists is

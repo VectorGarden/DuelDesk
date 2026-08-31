@@ -222,6 +222,22 @@ def detect_format(text: str) -> str | None:
     return None
 
 
+def coverage_format(text: str, fmt: str | None) -> str | None:
+    """What a post is coverage *of*, which is not always a format of the event.
+
+    Dragon Duel runs alongside the main event all weekend and the blog writes
+    it up like any other tournament -- 222 posts across 45 events. A reader
+    filtering the feed wants it in the list of things to filter by.
+
+    It is deliberately not a value detect_format returns. That answer groups an
+    event's rounds into tournaments, and a Dragon Duel table read as one of the
+    main event's has cost this archive real damage:
+    "dd-wcq-ca-standings-after-round-1" became the WCQ's own standings once.
+    The feed can name the thing without the builder having to believe in it.
+    """
+    return "Dragon Duel" if "dragon duel" in _words(text) else fmt
+
+
 def detect_round(text: str, kind: str | None = None):
     """The round a post is about, or None.
 
