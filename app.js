@@ -1196,10 +1196,14 @@ function renderPairings(r){
      beneath, indented and numbered by the table each was played at. Flattened
      into nine hundred rows the round would say who duelled and never say who
      was playing whom. */
+  /* A duel has no record of its own -- the record belongs to the team -- but
+     it still has to occupy the column, or every cell after it shifts left. A
+     round with deck types has seven columns and this row was emitting five,
+     so the second Duelist landed under Record and their deck under Team. */
   const duels = (p) => (p.duels ?? []).map(d => `<tr class="duel">
       <td class="num">${esc(d.table)}</td>
-      <td>${esc(d.a)}</td>${deckCell(d.aDeck)}${decks ? '' : '<td></td>'}
-      <td>${esc(d.b)}</td>${deckCell(d.bDeck)}${decks ? '' : '<td></td>'}</tr>`).join('');
+      <td>${esc(d.a)}</td>${deckCell(d.aDeck)}<td></td>
+      <td>${esc(d.b)}</td>${deckCell(d.bDeck)}<td></td></tr>`).join('');
 
   return wrapTable(`Pairings for ${r.label}`, `<table>
     <caption>${caption} Search by ${teams ? 'Duelist or team' : 'Duelist'} to filter this list.</caption>

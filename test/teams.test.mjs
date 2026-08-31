@@ -130,3 +130,43 @@ test('a singles event renders exactly as it did', async (t) => {
   assert.equal(page.$$('#round-body tr.match').length, 0);
   assert.equal(page.$$('#round-body tr.duel').length, 0);
 });
+
+/** The same event with deck types on the duels, which is how a cut is published. */
+function teamRoundsWithDecks() {
+  const d = teamRounds();
+  for (const r of d.formats[0].rounds) {
+    for (const p of r.pairings ?? []) {
+      p.duels = (p.duels ?? []).map((x, i) => ({
+        ...x, aDeck: ['Kashtira', 'Labrynth', 'Despia Branded'][i] ?? 'Ryzeal',
+        bDeck: ['Despia Branded', 'Labrynth', 'Kashtira'][i] ?? 'Maliss',
+      }));
+    }
+  }
+  return d;
+}
+
+test('a duel row fills the record column it has no record for', async (t) => {
+  // A duel has no record of its own -- the record belongs to the team -- but
+  // it still has to occupy the column. With deck types the round has seven
+  // columns and the duel row was emitting five, so the second Duelist landed
+  // under Record and their deck under Team:
+  //
+  //   MATCH  TEAM         DECK      RECORD     TEAM             DECK  RECORD
+  //   1      Stephen S.   Kashtira  John W.    Despia Branded
+  const page = await loadPage({ routes: {
+    'rounds.json': () => ({ status: 200, body: JSON.stringify(teamRoundsWithDecks()) }),
+  } });
+  t.after(() => page.close());
+  const id = page.json('ROUNDS.filter(r => r.pairings.length).map(r => r.id)')[0];
+  page.run(`selectRound('${id}'); activeView='pairings'; renderRound();`);
+  assert.ok(heads(page).includes('Deck'), 'the fixture is meant to have deck types');
+  const width = heads(page).length;
+  const duel = page.$$('#round-body tr.duel')[0];
+  assert.ok(duel, 'no duel rows rendered at all');
+  assert.equal(duel.querySelectorAll('td').length, width,
+    `a duel row has ${duel.querySelectorAll('td').length} cells in a ${width}-column table`);
+  // And the cells are where the headings say they are.
+  const cells = [...duel.querySelectorAll('td')].map((c) => c.textContent.trim());
+  assert.equal(cells[heads(page).indexOf('Deck')], 'Kashtira');
+  assert.equal(cells[width - 1], '', 'the trailing record cell is the empty one');
+});
