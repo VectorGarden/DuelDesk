@@ -276,6 +276,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-04-team-ycs-las-vegas/rounds.json",
       "postCount": 74,
+      "champions": [
+        {
+          "format": null,
+          "name": "Ares",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -698,6 +705,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-03-team-ycs-las-vegas/rounds.json",
       "postCount": 75,
+      "champions": [
+        {
+          "format": null,
+          "name": "Legionnaire",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -3304,6 +3318,31 @@
       ]
     },
     {
+      "slug": "2016-ycs-toronto",
+      "event": "YCS Toronto",
+      "updated": "2016-08-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-ycs-toronto/rounds.json",
+      "postCount": 49,
+      "champions": [
+        {
+          "format": null,
+          "name": "Bohdan John Temnyk",
+          "deck": "Burning Abyss Phantom Knight"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 543,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "yu-gi-oh-world-championship-2016",
       "event": "Pairings",
       "updated": "2016-08-23",
@@ -3336,6 +3375,31 @@
           "swissRounds": 10,
           "duelists": 635,
           "rounds": 11
+        }
+      ]
+    },
+    {
+      "slug": "2016-sa-wcq",
+      "event": "SA WCQ",
+      "updated": "2016-06-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-sa-wcq/rounds.json",
+      "postCount": 34,
+      "champions": [
+        {
+          "format": null,
+          "name": "Joaquin Rinaldi Petroni",
+          "deck": "Dracoslayer Performapals"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 285,
+          "rounds": 13
         }
       ]
     },
