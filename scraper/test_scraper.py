@@ -2178,6 +2178,38 @@ class TestChampion(unittest.TestCase):
     def post(self, title, text):
         return {"title": title, "text": text}
 
+    def test_a_title_held_elsewhere_is_not_a_win_here(self):
+        # YCS Guatemala City 2017 published its winner and, the same weekend,
+        # "UDS Champions at YCS Guatemala" -- a photograph of Duelists holding
+        # an Ultimate Duelist Series invitation, one of whom reached the Top
+        # 4. Both posts say "Champions", so both were read as announcing this
+        # event's winner; two posts claiming two different Duelists is a
+        # disagreement, and the event was left with no champion at all.
+        from winners import champion
+        got = champion(
+            ["Gerald Yagans South Chaves", "Alejandro Garcia Moreno"],
+            [self.post("YCS Guatemala City: And the winner is…",
+                       "Congratulations to Gerald South Chaves from Costa Rica "
+                       "for becoming our newest YCS Champion!"),
+             self.post("YCS Guatemala City: UDS Champions at YCS Guatemala",
+                       "We have got two UDS Champions in attendance! Here are "
+                       "Osmin Arteaga from El Salvador and Alejandro Garcia "
+                       "from Mexico with their UDS title belts.")])
+        self.assertEqual(got, "Gerald Yagans South Chaves")
+
+    def test_a_greeting_is_not_an_announcement(self):
+        # "Welcoming the National Champions of South America" greets Duelists
+        # who won somewhere else. It is not this event's result.
+        from winners import announces_a_winner
+        self.assertFalse(announces_a_winner(
+            "Welcoming the National Champions of South America", ""))
+        self.assertFalse(announces_a_winner("Honoring Our Champions In Attendance!", ""))
+        # And the real thing still reads as one.
+        self.assertTrue(announces_a_winner(
+            "Congratulations to the Winner of the 2023 North America "
+            "World Championship Qualifier!", ""))
+        self.assertTrue(announces_a_winner("..And the 2013 Yu-Gi-Oh! World Champions are…", ""))
+
     def test_the_one_duelist_the_post_names_is_the_champion(self):
         from winners import champion
         got = champion(["Barrett Arthur Keys", "Someone Else Entirely"],

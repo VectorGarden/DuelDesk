@@ -53,6 +53,20 @@ SIDE_EVENT = re.compile(
 # whose post is headed "And the Advanced Format Winner is".
 ANNOUNCEMENT = re.compile(r"\bwinners?\b|\bchampions?\b", re.I)
 
+# A post about titles somebody already holds, rather than one won here. "UDS
+# Champions at YCS Seattle" is Duelists holding an Ultimate Duelist Series
+# invitation, photographed at a YCS; "Welcoming the National Champions of
+# South America" is a greeting. Both say "Champions" and neither announces
+# anybody's win.
+#
+# This costs a real champion when it is not caught. YCS Guatemala City 2017
+# published its winner and, the same weekend, "UDS Champions at YCS Guatemala"
+# -- which names a Duelist who reached the Top 4. Two posts claiming two
+# different winners is a disagreement, so the event was left with none.
+HELD_ELSEWHERE = re.compile(
+    r"\buds champions?\b|\bin attendance\b|\bwelcoming\b|\bhonou?ring\b"
+    r"|\btitle belts?\b", re.I)
+
 # A sentence that crowns somebody, rather than looking forward to it. The
 # finals feature match is prose, and most of what it says about champions is
 # not a result: a preview of what is at stake, or a Duelist's history.
@@ -144,9 +158,10 @@ def announces_a_winner(title: str, opening: str = "") -> bool:
     """
     if not ANNOUNCEMENT.search(title or ""):
         return False
-    if SIDE_EVENT.search(title or ""):
+    if SIDE_EVENT.search(title or "") or HELD_ELSEWHERE.search(title or ""):
         return False
-    return not SIDE_EVENT.search(_ASIDE.sub(" ", opening[:400])[:160])
+    said = _ASIDE.sub(" ", opening[:400])[:160]
+    return not (SIDE_EVENT.search(said) or HELD_ELSEWHERE.search(said))
 
 
 def crowning(text: str) -> str:
