@@ -14,13 +14,18 @@ OUT="${1:-_site}"
 rm -rf "$OUT"
 mkdir -p "$OUT"
 
+# winners.html is a tombstone redirecting to /winners, not the page itself --
+# see the file. It stays staged for as long as links to the old URL might.
 FILES=(index.html winners.html styles.css common.js app.js winners.js
        feed.xml events.json upcoming.json og.png
        favicon.ico site.webmanifest CNAME robots.txt)
 # events/ is the archive: one directory per event, fetched on demand rather than
 # all at once. Staged whole, because which event a reader opens is their choice
 # and every one of them has to be there when they make it.
-DIRS=(icons events)
+# winners/ is one file, index.html, and that is the point: a directory with
+# an index is served at /winners by any static host, which "winners.html" is
+# not. Staged as a directory for the same reason it is stored as one.
+DIRS=(icons events winners)
 
 for f in "${FILES[@]}"; do
   [ -f "$f" ] || { echo "  MISSING $f"; exit 1; }

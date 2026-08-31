@@ -14,7 +14,7 @@ import { loadPage } from './harness.mjs';
 const BOOTED = "document.getElementById('wcount').textContent !== 'Loading'";
 
 const manifest = (events) => ({
-  page: 'winners.html',
+  page: 'winners/index.html',
   settleOn: BOOTED,
   routes: { 'events.json': { status: 200, body: JSON.stringify({ events }) } },
 });
@@ -126,7 +126,7 @@ test('an archive with no winners yet says that, not nothing', async (t) => {
 
 test('a manifest that will not load is reported, not blank', async (t) => {
   const page = await loadPage({
-    page: 'winners.html',
+    page: 'winners/index.html',
     settleOn: BOOTED,
     routes: { 'events.json': { status: 500 } },
   });

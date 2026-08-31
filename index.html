@@ -204,6 +204,21 @@
     </section>
 
     <aside class="side" aria-label="Event information">
+      <!-- Above the upcoming events on purpose. Someone arriving without an
+           event in mind wants one of two things: the next one, or the last
+           one that mattered. The footer had the answer to the second and
+           nowhere anybody looks for it. -->
+      <div class="card">
+        <h2>Winners</h2>
+        <p class="card__note">
+          Every champion the coverage names, newest first.
+        </p>
+        <a class="feedbtn" href="/winners">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M6 4h12v5a6 6 0 0 1-12 0z"/><path d="M6 6H3v2a4 4 0 0 0 3 3.9"/><path d="M18 6h3v2a4 4 0 0 1-3 3.9"/></svg>
+          See every winner
+        </a>
+      </div>
+
       <div class="card">
         <h2>Upcoming events</h2>
         <!-- Filled from upcoming.json, which is read off Konami's own listing
@@ -242,7 +257,7 @@
           <li><a href="#coverage" data-jump="feature">Feature matches</a></li>
           <li><a href="#coverage" data-jump="deck">Deck profiles</a></li>
           <li><a href="#coverage" data-jump="result">Results</a></li>
-          <li><a href="/winners.html">Winners</a></li>
+          <li><a href="/winners">Winners</a></li>
         </ul>
       </div>
       <div>
