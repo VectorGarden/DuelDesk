@@ -125,7 +125,12 @@ document.addEventListener('keydown', (e) => {
 
 async function load(){
   try {
-    const res = await fetch('events.json', {cache: 'no-cache'});
+    /* Rooted. This page is served at /winners/, so "events.json" asks for
+       /winners/events.json and gets a 404 -- which is what it did, and the
+       page showed "Winners could not be loaded" over an empty list. app.js
+       can say it relatively because index.html is served from the root; this
+       one cannot. */
+    const res = await fetch('/events.json', {cache: 'no-cache'});
     if (!res.ok) throw new Error(`events.json responded ${res.status}`);
     WINS = flatten((await res.json()).events);
     if (!WINS.length){

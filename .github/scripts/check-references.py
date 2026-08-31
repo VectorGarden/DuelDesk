@@ -123,6 +123,27 @@ def _main(path="index.html", list_only=False):
             print(ref)
         return 0
 
+    # A page below the root cannot fetch anything relatively. Its scripts are
+    # shared with the page at the root, where "events.json" is correct, and
+    # served from /winners/ the same string asks for /winners/events.json.
+    #
+    # This is the third fault this one page has shipped, and each got past the
+    # checks by being one layer further in than the last: a refresh nothing
+    # read, then a stylesheet resolved from the wrong directory, then a fetch
+    # inside the script -- which this file deliberately does not read as
+    # markup, and so never saw at all.
+    if Path(path).parent != Path("."):
+        for ref in sorted(r for r in refs if r.endswith(".js")):
+            js = Path(ref.lstrip("/")) if ref.startswith("/") else here / ref
+            if not js.is_file():
+                continue
+            for m in re.finditer(r"""fetch\(\s*['"]([^'"]+)['"]""", js.read_text(encoding="utf-8")):
+                if not m.group(1).startswith(("/", "http://", "https://", "data:")):
+                    print(f"  FAIL    {ref} fetches '{m.group(1)}' relatively, "
+                          f"and {path} is not served from the root")
+                    return 1
+
+
     # A relative reference is relative to the page, not to wherever this was
     # run from. winners/index.html asked for "styles.css" and every check said
     # yes, because styles.css is in the repository root -- and the browser at
