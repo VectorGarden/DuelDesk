@@ -2682,13 +2682,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-seattle/rounds.json",
-      "postCount": 19,
+      "postCount": 36,
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 716,
-          "rounds": 9
+          "rounds": 11
         }
       ]
     },
@@ -2725,7 +2725,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-rio-de-janeiro/rounds.json",
-      "postCount": 20,
+      "postCount": 23,
       "formats": [
         {
           "format": null,
@@ -2786,7 +2786,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-uds-invitational-chicago/rounds.json",
-      "postCount": 34,
+      "postCount": 33,
       "formats": [
         {
           "format": null,
@@ -2799,12 +2799,19 @@
     {
       "slug": "2016-ycs-mexico-city",
       "event": "YCS Mexico City",
-      "updated": "2016-09-18",
+      "updated": "2016-09-20",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-mexico-city/rounds.json",
-      "postCount": 39,
+      "postCount": 55,
+      "champions": [
+        {
+          "format": null,
+          "name": "Adrian Madriz Espinoza",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2822,13 +2829,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-toronto/rounds.json",
-      "postCount": 25,
+      "postCount": 48,
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 543,
-          "rounds": 10
+          "rounds": 14
         }
       ]
     },
@@ -2876,7 +2883,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-sa-wcq/rounds.json",
-      "postCount": 25,
+      "postCount": 34,
+      "champions": [
+        {
+          "format": null,
+          "name": "Joaquin – Dracoslayer Performapals Rinaldi Petroni",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2924,24 +2938,6 @@
       ]
     },
     {
-      "slug": "2015-south-american-wcq",
-      "event": "South America WCQ 2015",
-      "updated": "2015-07-05",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2015-south-american-wcq/rounds.json",
-      "postCount": 25,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 8,
-          "duelists": 276,
-          "rounds": 8
-        }
-      ]
-    },
-    {
       "slug": "2015-central-american-wcq",
       "event": "Central America WCQ 2015",
       "updated": "2015-06-22",
@@ -2950,6 +2946,13 @@
       "coverageBy": "Konami",
       "path": "events/2015-central-american-wcq/rounds.json",
       "postCount": 48,
+      "champions": [
+        {
+          "format": null,
+          "name": "Galileo Mauricio De Obaldia Soza",
+          "deck": "Nekroz"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -3017,7 +3020,7 @@
           "format": null,
           "swissRounds": 7,
           "duelists": 248,
-          "rounds": 6
+          "rounds": 7
         }
       ]
     },
@@ -3053,7 +3056,7 @@
           "format": null,
           "swissRounds": 9,
           "duelists": 301,
-          "rounds": 7
+          "rounds": 9
         }
       ]
     },
@@ -3066,13 +3069,6 @@
       "coverageBy": "Konami",
       "path": "events/2012-central-american-wcq/rounds.json",
       "postCount": 14,
-      "champions": [
-        {
-          "format": null,
-          "name": "Alvaro Manuel Gonzalez Orea",
-          "deck": "Six Samurai"
-        }
-      ],
       "formats": [
         {
           "format": null,
