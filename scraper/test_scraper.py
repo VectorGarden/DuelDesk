@@ -3838,6 +3838,37 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         self.assertEqual(row["b"]["name"], "Byung-Hyug Choi")
         self.assertNotEqual(row["a"]["name"], row["b"]["name"])
 
+    def test_a_standings_cell_is_annotated_too(self):
+        # The 2016 South America WCQ writes its standings the same way as its
+        # pairings, and only the pairings were read that way -- so the deck
+        # stayed inside the name. reconcile_names counts words, so the
+        # spelling carrying a deck was the longer one and won: eight clean
+        # names were folded into their mangled spellings across all eleven
+        # rounds, and the champion reached the winners page as "Joaquin -
+        # Dracoslayer Performapals Rinaldi Petroni".
+        html = ("<html><head><title>Standings After Round 4</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Rank</td><td>Player</td><td>Points</td></tr>"
+                "<tr><td>1</td>"
+                "<td>Rinaldi Petroni, Joaquin (Argentina) \u2013 Dracoslayer Performapals</td>"
+                "<td>12</td></tr>"
+                "</tbody></table></body></html>")
+        row = parse_post(html).table.rows[0]
+        self.assertEqual(row["name"], "Joaquin Rinaldi Petroni")
+        self.assertEqual(row["region"], "Argentina")
+
+    def test_the_region_is_written_before_the_deck(self):
+        # Which of the two the bracket holds cannot be read off the bracket:
+        # it is the country in one of these and the deck in the other. What
+        # does not vary is the order.
+        from parse import read_annotation
+        self.assertEqual(
+            read_annotation("Quispe Llanco, Ariel (Bolivia) \u2013 Burning Abyss"),
+            ("Quispe Llanco, Ariel", "Bolivia", "Burning Abyss"))
+        self.assertEqual(
+            read_annotation("Deonarine, Brandon Luke \u2013 Trinidad and Tobago (SPYRAL)"),
+            ("Deonarine, Brandon Luke", "Trinidad and Tobago", "SPYRAL"))
+
     def test_a_dash_with_no_bracket_is_left_alone(self):
         # "Correa - Moreira, Jesus" is a compound surname, and 137 names in
         # the archive carry a country after a dash with no bracket at all.

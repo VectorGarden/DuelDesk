@@ -97,7 +97,13 @@ def round_key(post) -> tuple[str, Any]:
 #    tables of one match, and wrote the country and deck beside each Duelist --
 #    so the round held one match of four Duelists whose names no other round
 #    agreed with, and the event was rejected and left the archive.
-BUILD_VERSION = 9
+# 10: a standings cell is annotated too. The 2016 South America WCQ writes
+#     "Rinaldi Petroni, Joaquin (Argentina) - Dracoslayer Performapals" in its
+#     standings as well as its pairings, and only the pairings were read that
+#     way -- so the deck stayed inside the name, and reconcile_names, which
+#     counts words, folded eight clean names into their mangled spellings
+#     across every round of the event.
+BUILD_VERSION = 10
 
 
 @dataclass
