@@ -19,12 +19,12 @@ from __future__ import annotations
 
 import re
 import xml.etree.ElementTree as ET
-from collections import Counter
+from collections import Counter, defaultdict
 from dataclasses import dataclass, asdict
 from datetime import date
 
 from naming import wcq_name
-from parse import detect_kind
+from parse import detect_kind, detect_round
 from winners import SIDE_EVENT
 
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -562,6 +562,17 @@ def _discovered_profiles(records: list[dict]) -> dict[str, Profile]:
 
 def _by_date(records: list[dict], profiles: dict[str, Profile], within):
     """Still-unassigned posts, and the one discovered event each belongs to."""
+    # The rounds each event already holds from a post that named it, which is
+    # what a dated round is not allowed to duplicate.
+    covered: dict[str, set] = defaultdict(set)
+    for rec in records:
+        if not rec["event"]:
+            continue
+        kind = detect_kind(rec["slug"])
+        if kind in TOURNAMENT:
+            covered[rec["event"]].add(
+                (kind, detect_round(f"{rec['slug']} {rec['url']}", kind)))
+
     for rec in records:
         if rec["event"] or not rec["lastmod"]:
             continue
@@ -580,22 +591,36 @@ def _by_date(records: list[dict], profiles: dict[str, Profile], within):
         # belongs to -- so in practice they are left alone entirely.
         if SIDE_EVENT.search(rec["slug"].replace("-", " ")):
             continue
-        # And never a round. A date is enough to say a piece of writing belongs
-        # to the weekend an event ran; it is not enough to put a bracket in it.
-        #
-        # YCS Chicago published "ycs-chicago-top-32-pairings-and-deck-breakdown"
-        # and something else that weekend published "top-32-pairings-6", which
-        # names nobody. Dated into Chicago, it was the fuller of the two tables
-        # and won -- and then fourteen of the sixteen Duelists in Chicago's own
-        # Top 16 had not played in its Top 32, which is how the deploy found it.
-        #
-        # Rounds arrive by name, which is how discovery finds an event in the
-        # first place. This rule is for the prose around one.
-        if detect_kind(rec["slug"]) in TOURNAMENT:
-            continue
         entry = Entry(rec["url"], rec["year"], rec["category"], rec["event_slug"],
                       rec["slug"], rec["lastmod"])
         hits = [slug for slug, p in profiles.items()
                 if within(rec["lastmod"], *p.window) and p.names(entry)]
-        if len(hits) == 1:
-            yield rec, hits[0]
+        if len(hits) != 1:
+            continue
+        # A round the event already has, on the strength of a date, is the one
+        # thing this rule must not do. YCS Chicago published
+        # "ycs-chicago-top-32-pairings-and-deck-breakdown", and something else
+        # that weekend published "top-32-pairings-6", which names nobody. Dated
+        # in, it was the fuller of the two tables and won -- and then fourteen
+        # of the sixteen Duelists in Chicago's own Top 16 had not played in its
+        # Top 32, which is how the deploy found it.
+        #
+        # Refusing every dated round was the first fix and it was too blunt.
+        # YCS Minneapolis 2016 is named by none of its own standings --
+        # "standings-after-round-4-4", "standings-after-the-swiss-rounds" --
+        # and the rule took all six, which left the event with no standings at
+        # all and dropped it below the coverage worth building. A generic slug
+        # is how the blog wrote a round, not evidence the round is somebody
+        # else's.
+        #
+        # What separates the two is whether the event already holds that round
+        # from a post that named it. Where it does, the date adds a second
+        # table for a round that has one, and there is nothing to choose
+        # between them but size. Where it does not, the date is the only thing
+        # standing between the round and nobody having it.
+        kind = detect_kind(rec["slug"])
+        if kind in TOURNAMENT:
+            rnd = detect_round(f"{rec['slug']} {rec['url']}", kind)
+            if (kind, rnd) in covered.get(hits[0], ()):
+                continue
+        yield rec, hits[0]
