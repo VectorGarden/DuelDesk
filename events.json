@@ -2089,6 +2089,13 @@
       "coverageBy": "Konami",
       "path": "events/2020-team-ycs-las-vegas/rounds.json",
       "postCount": 50,
+      "champions": [
+        {
+          "format": null,
+          "name": "Gonna Finish That",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -2151,6 +2158,13 @@
       "coverageBy": "Konami",
       "path": "events/2019-team-ycs-lima-peru/rounds.json",
       "postCount": 19,
+      "champions": [
+        {
+          "format": null,
+          "name": "Team He Scrambling",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
