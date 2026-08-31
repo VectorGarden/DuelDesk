@@ -4212,9 +4212,54 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
                 "<tr><td>1</td><td>La Revolucion: Lozano, Connor Joseph</td><td>vs.</td>"
                 "<td>The Mulchummies: Suangco, Adriane Earl Sun</td></tr>"
                 "</tbody></table></body></html>")
+        # The prefix names the team, so the row is the team's match and the
+        # Duelist is the duel inside it.
         row = parse_post(html).table.rows[0]
-        self.assertEqual(row["a"]["name"], "Connor Joseph Lozano")
-        self.assertEqual(row["b"]["name"], "Adriane Earl Sun Suangco")
+        self.assertEqual((row["a"]["name"], row["b"]["name"]),
+                         ("La Revolucion", "The Mulchummies"))
+        duel = row["duels"][0]
+        self.assertEqual(duel["a"]["name"], "Connor Joseph Lozano")
+        self.assertEqual(duel["b"]["name"], "Adriane Earl Sun Suangco")
+
+    def test_three_rows_of_one_team_pair_are_one_match(self):
+        # TEAM YCS Las Vegas 2020 writes its cut with the team on every
+        # Duelist and no announcement row at all. Read a row at a time, its
+        # Top 4 of four teams held twenty-four Duelists and no team -- so the
+        # event had no roster and could name no champion.
+        rows = []
+        for i, (t1, d1, t2, d2) in enumerate([
+                ("Gonna Finish That", "Couch, Dominic", "Dino DNA", "Gamrat, Griffin"),
+                ("Gonna Finish That", "Silverman, Stephen", "Dino DNA", "Cornell, Brendan"),
+                ("Gonna Finish That", "Page, Scott", "Dino DNA", "Nappi, Ross"),
+                ("Team Leon", "Gibbs, James", "Hi Kasey", "Jaffer, Michael")], 1):
+            rows.append(f"<tr><td>{i}</td><td>{t1}: {d1}</td><td>vs.</td>"
+                        f"<td>{t2}: {d2}</td></tr>")
+        html = ("<html><head><title>Top 4 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs.</td><td>Player 2</td></tr>"
+                + "".join(rows) + "</tbody></table></body></html>")
+        got = parse_post(html).table.rows
+        self.assertEqual(len(got), 2, "two team matches, not four singles")
+        self.assertEqual((got[0]["a"]["name"], got[0]["b"]["name"]),
+                         ("Gonna Finish That", "Dino DNA"))
+        self.assertEqual(len(got[0]["duels"]), 3)
+        self.assertEqual(got[0]["duels"][0]["a"]["name"], "Dominic Couch")
+        self.assertEqual(len(got[1]["duels"]), 1, "the next pair of teams starts the next match")
+
+    def test_a_team_does_not_play_itself(self):
+        # TEAM YCS Las Vegas 2020 has two teams registered as "Brick Squad"
+        # and pairs them against each other. Grouped on the prefix that is a
+        # team playing itself, which is not a match -- so the prefix is not
+        # evidence here and the rows stand as the duels they are.
+        html = ("<html><head><title>Round 1 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs.</td><td>Player 2</td></tr>"
+                "<tr><td>235</td><td>Brick Squad: Fuentes Jr., Saul</td><td>vs.</td>"
+                "<td>Brick Squad: Johnson, Jermaine</td></tr>"
+                "</tbody></table></body></html>")
+        row = parse_post(html).table.rows[0]
+        self.assertNotIn("duels", row, "a team cannot play itself")
+        self.assertEqual(row["a"]["name"], "Saul Fuentes Jr.")
 
     def test_a_colon_with_no_name_after_it_is_left_alone(self):
         # The team prefix is only stripped where a comma follows, because the

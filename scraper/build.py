@@ -144,7 +144,12 @@ def round_key(post) -> tuple[str, Any]:
 #     be searched for, so a team event had no champion unless a winner post
 #     happened to quote the name. The coverage names the people instead, and
 #     the people are already here, in the duels a team match was decided by.
-BUILD_VERSION = 19
+# 20: the team is the prefix on every Duelist. Four Team YCSs publish their
+#     cut with no announcement row at all -- the team is written on each
+#     Duelist and consecutive rows sharing a pair are the match. Read a row at
+#     a time, a Top 4 of four teams held twenty-four Duelists and no team, so
+#     those events had no roster and could name no champion.
+BUILD_VERSION = 20
 
 
 @dataclass
