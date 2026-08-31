@@ -113,7 +113,12 @@ def round_key(post) -> tuple[str, Any]:
 #     Reading them found 595 pairings at YCS Hartford, 350 standings at YCS
 #     Pasadena and a Top 4 for the 2013 North America WCQ -- and, on the way,
 #     that a "Winner" column was being read as part of the loser's name.
-BUILD_VERSION = 12
+# 13: the team written on every Duelist. A Team YCS that does not announce
+#     the team in a row of its own writes it on each Duelist instead -- "La
+#     Revolucion: Lozano, Connor Joseph" -- and the comma rule partitioned
+#     around it, leaving the team in the middle of the name. 32,791 names
+#     across eleven events.
+BUILD_VERSION = 13
 
 
 @dataclass

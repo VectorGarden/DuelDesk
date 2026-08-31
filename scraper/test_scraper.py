@@ -3962,6 +3962,35 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         row = parse_post(html).table.rows[0]
         self.assertEqual(row["b"]["name"], "Weerapun Suebyoubol")
 
+    def test_the_team_written_on_every_duelist(self):
+        # A Team YCS that does not announce the team in a row of its own
+        # writes it on every Duelist: "La Revolucion: Lozano, Connor Joseph".
+        # The colon is the team's and the comma is the Duelist's, and
+        # normalise_name partitions on the comma -- so the team landed in the
+        # middle of the name. 32,791 names across eleven events read that way.
+        html = ("<html><head><title>Round 1 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs.</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>La Revolucion: Lozano, Connor Joseph</td><td>vs.</td>"
+                "<td>The Mulchummies: Suangco, Adriane Earl Sun</td></tr>"
+                "</tbody></table></body></html>")
+        row = parse_post(html).table.rows[0]
+        self.assertEqual(row["a"]["name"], "Connor Joseph Lozano")
+        self.assertEqual(row["b"]["name"], "Adriane Earl Sun Suangco")
+
+    def test_a_colon_with_no_name_after_it_is_left_alone(self):
+        # The team prefix is only stripped where a comma follows, because the
+        # comma is what says a Duelist's name comes next. "Lift Yourself
+        # 1:58" is a team, and 58 is not a Duelist -- without the comma rule
+        # this cell would come back named "58".
+        html = ("<html><head><title>Round 1 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs.</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Lift Yourself 1:58</td><td>vs.</td><td>Beta, Bo</td></tr>"
+                "</tbody></table></body></html>")
+        row = parse_post(html).table.rows[0]
+        self.assertEqual(row["a"]["name"], "Lift Yourself 1:58")
+
     def test_a_ranking_is_never_a_pairing(self):
         # TEAM YCS La Paz heads its standings "Rank | Team Name | Duelist
         # Names | Points". Two of those read like sides, so asking about sides
