@@ -305,6 +305,25 @@
       ]
     },
     {
+      "slug": "2026-team-ycs-la-paz-bolivia",
+      "event": "TEAM YCS La Paz",
+      "location": "La Paz, Bolivia",
+      "updated": "2026-03-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-team-ycs-la-paz-bolivia/rounds.json",
+      "postCount": 22,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 82,
+          "rounds": 12
+        }
+      ]
+    },
+    {
       "slug": "2026-02-300th-na",
       "event": "300th YCS in Richmond",
       "updated": "2026-02-15",
@@ -1136,6 +1155,24 @@
       ]
     },
     {
+      "slug": "2024-02-team-ycs-las-vegas-nv",
+      "event": "TEAM YCS Las Vegas",
+      "updated": "2024-02-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-02-team-ycs-las-vegas-nv/rounds.json",
+      "postCount": 65,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 510,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "2024-undisputed-uds-championship",
       "event": "Undisputed UDS Championship",
       "updated": "2024-02-18",
@@ -1327,6 +1364,31 @@
           "swissRounds": 10,
           "duelists": 737,
           "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2023-team-ycs-sao-paulo",
+      "event": "TEAM YCS Sao Paulo",
+      "updated": "2023-09-04",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-team-ycs-sao-paulo/rounds.json",
+      "postCount": 22,
+      "champions": [
+        {
+          "format": null,
+          "name": "Better Have It",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 8,
+          "duelists": 196,
+          "rounds": 11
         }
       ]
     },
@@ -1558,6 +1620,24 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 600,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2023-team-ycs-las-vegas",
+      "event": "TEAM YCS Las Vegas",
+      "updated": "2023-02-21",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-team-ycs-las-vegas/rounds.json",
+      "postCount": 30,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 447,
           "rounds": 12
         }
       ]
@@ -1908,6 +1988,49 @@
           "swissRounds": 10,
           "duelists": 455,
           "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2022-latin-america-remote-duel-ycs",
+      "event": "Latin America Remote Duel",
+      "updated": "2022-02-01",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-latin-america-remote-duel-ycs/rounds.json",
+      "postCount": 12,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1783,
+          "rounds": 7
+        }
+      ]
+    },
+    {
+      "slug": "2022-january-remote-duel-ycs",
+      "event": "Remote Duel YCS",
+      "updated": "2022-01-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2022-january-remote-duel-ycs/rounds.json",
+      "postCount": 51,
+      "champions": [
+        {
+          "format": null,
+          "name": "Kamal Derrick El Crooks-Valdez",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 646,
+          "rounds": 17
         }
       ]
     },
@@ -2751,6 +2874,31 @@
       ]
     },
     {
+      "slug": "2017-uds-invitational-trinidad-and-tobago",
+      "event": "UDS Invitational Trinidad and Tobago",
+      "updated": "2017-10-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-uds-invitational-trinidad-and-tobago/rounds.json",
+      "postCount": 22,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alejandro Garcia Moreno",
+          "deck": "SPYRAL"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 85,
+          "rounds": 11
+        }
+      ]
+    },
+    {
       "slug": "2017-ycs-dallas",
       "event": "YCS Dallas",
       "updated": "2017-10-22",
@@ -2888,6 +3036,32 @@
       ]
     },
     {
+      "slug": "201704-ycs-bogota-colombia",
+      "event": "YCS Bogota",
+      "location": "Bogota, Colombia",
+      "updated": "2017-04-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/201704-ycs-bogota-colombia/rounds.json",
+      "postCount": 35,
+      "champions": [
+        {
+          "format": null,
+          "name": "Kanaan – Venezuela Asfour Al Jaubri",
+          "deck": "Zoodiacs"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 358,
+          "rounds": 10
+        }
+      ]
+    },
+    {
       "slug": "201703-uds-winter-invitational-las-vegas",
       "event": "YCS Guatemala City",
       "location": "Guatemala City, Guatemala",
@@ -2903,6 +3077,32 @@
           "swissRounds": 13,
           "duelists": 271,
           "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2017-ycs-guatemala-city-guatemala",
+      "event": "YCS Guatemala City",
+      "location": "Guatemala City, Guatemala",
+      "updated": "2017-03-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-ycs-guatemala-city-guatemala/rounds.json",
+      "postCount": 23,
+      "champions": [
+        {
+          "format": null,
+          "name": "Gerald Yagans – Costa Rica South Chaves",
+          "deck": "Zoodiacs-Infernoid"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 8,
+          "duelists": 250,
+          "rounds": 9
         }
       ]
     },
