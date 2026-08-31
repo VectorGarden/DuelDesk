@@ -76,7 +76,7 @@ function jumpTarget(post){
 const KINDS = {
   pairings : {label:'Pairings',      color:'var(--c-pair)'},
   standings: {label:'Standings',     color:'var(--c-stand)'},
-  feature  : {label:'Feature match', color:'var(--c-feature)'},
+  feature  : {label:'Feature Match', color:'var(--c-feature)'},
   result   : {label:'Result',        color:'var(--c-result)'},
   news     : {label:'Announcement',  color:'var(--c-news)'},
   deck     : {label:'Deck profile',  color:'var(--c-deck)'}
@@ -1128,7 +1128,7 @@ function renderExport(r){
     one.hidden = rows.length === 0;
     if (!one.hidden){
       const seats = rows.reduce((n, x) => n + x.count, 0);
-      one.textContent = `Export ${r.label}`;
+      one.textContent = 'Export Round Archetypes';
       one.setAttribute('aria-label',
         `Export the ${rows.length} archetypes across ${seats} Duelists in ${r.label} as JSON`);
     }
@@ -1142,7 +1142,7 @@ function renderExport(r){
     all.hidden = rows.length === 0 || cut.length < 2;
     if (!all.hidden){
       const duelists = rows.reduce((n, x) => n + x.count, 0);
-      all.textContent = 'Export top cut';
+      all.textContent = 'Export Top Cut Archetypes';
       all.setAttribute('aria-label',
         `Export the ${rows.length} archetypes across ${duelists} Duelists in the top cut as JSON`);
     }

@@ -577,7 +577,10 @@ test('both export buttons appear on a cut that has decks', async (t) => {
   page.run(`selectRound('c101'); renderRound();`);
   assert.equal(page.$('#export-archetypes').hidden, false);
   assert.equal(page.$('#export-top-cut').hidden, false);
-  assert.match(page.$('#export-archetypes').textContent, /Top 8/);
+  assert.equal(page.$('#export-archetypes').textContent, 'Export Round Archetypes');
+  assert.equal(page.$('#export-top-cut').textContent, 'Export Top Cut Archetypes');
+  /* Which round it is comes from the label, since the button no longer says. */
+  assert.match(page.$('#export-archetypes').getAttribute('aria-label'), /Top 8/);
 });
 
 test('a round with no decks published offers no export', async (t) => {

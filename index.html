@@ -134,7 +134,13 @@
 
     <h1 id="live-h">Loading event…</h1>
 
-    <p class="hero__meta" id="hero-meta"></p>
+    <!-- The event's own line: when it ran, how many entered, how far it went.
+         The top cut export belongs with them, because that is what it is a
+         fact about -- the whole cut, not the round being read below. -->
+    <div class="hero__line">
+      <p class="hero__meta" id="hero-meta"></p>
+      <button type="button" class="export" id="export-top-cut" hidden></button>
+    </div>
 
     <div class="track">
       <div class="track__head">
@@ -168,27 +174,25 @@
         <div class="segs" role="group" aria-label="Round view">
           <button type="button" data-view="pairings" aria-pressed="true">Pairings</button>
           <button type="button" data-view="standings" aria-pressed="false">Standings</button>
-          <button type="button" data-view="feature" aria-pressed="false">Feature match</button>
+          <button type="button" data-view="feature" aria-pressed="false">Feature Match</button>
         </div>
-        <!-- Deck types are published for the cut and never for Swiss, so these
-             appear on the rounds that have them and nowhere else. The second is
-             the whole published cut compiled into one object, each Duelist
-             counted once, and is hidden where the cut is a single round and it
-             would only repeat the first. Both shown by renderExport(), which
-             also counts what they would write.
 
-             Grouped, and pushed to the end of the row, so the pair reads as one
-             control rather than as two the layout happened to space apart. -->
-        <div class="exports" role="group" aria-label="Export deck archetypes">
-          <button type="button" class="export" id="export-archetypes" hidden></button>
-          <button type="button" class="export" id="export-top-cut" hidden></button>
-        </div>
+
       </div>
       <!-- Who won, on the last round the event published and nowhere else: it
            is a fact about the end of the tournament, and a reader arrives here
            having already seen the bracket. Hidden until asked for, because the
            rounds above it are worth reading first. Filled by renderChampion(). -->
       <div class="champ" id="champion" hidden></div>
+      <!-- The round's own export, on its own line above the table: it acts on
+           the round below it, and in the head beside the view switcher it read
+           as one more way of looking at the round rather than a way of taking
+           it away. Deck types are published for the cut and never for Swiss, so
+           it appears on the rounds that have them and nowhere else. The event's
+           export is up on the hero line, with the other facts about the event. -->
+      <div class="round-tools">
+        <button type="button" class="export" id="export-archetypes" hidden></button>
+      </div>
       <!-- aria-labelledby is set by syncTrack() once the tabs exist -->
       <div id="round-body" role="tabpanel" tabindex="0"></div>
     </div>
@@ -207,7 +211,7 @@
         <button type="button" data-filter="all" aria-pressed="true">Everything</button>
         <button type="button" data-filter="pairings" aria-pressed="false"><span class="dot" style="--k:var(--c-pair)"></span>Pairings</button>
         <button type="button" data-filter="standings" aria-pressed="false"><span class="dot" style="--k:var(--c-stand)"></span>Standings</button>
-        <button type="button" data-filter="feature" aria-pressed="false"><span class="dot" style="--k:var(--c-feature)"></span>Feature match</button>
+        <button type="button" data-filter="feature" aria-pressed="false"><span class="dot" style="--k:var(--c-feature)"></span>Feature Match</button>
         <button type="button" data-filter="result" aria-pressed="false"><span class="dot" style="--k:var(--c-result)"></span>Results</button>
         <button type="button" data-filter="deck" aria-pressed="false"><span class="dot" style="--k:var(--c-deck)"></span>Deck profiles</button>
       </div>
@@ -279,7 +283,7 @@
         <h2>Coverage</h2>
         <ul>
           <li><a href="#coverage">All coverage</a></li>
-          <li><a href="#coverage" data-jump="feature">Feature matches</a></li>
+          <li><a href="#coverage" data-jump="feature">Feature Matches</a></li>
           <li><a href="#coverage" data-jump="deck">Deck profiles</a></li>
           <li><a href="#coverage" data-jump="result">Results</a></li>
           <li><a href="/winners/">Winners</a></li>

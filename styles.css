@@ -334,7 +334,17 @@ tbody tr:hover{background:var(--surface-2)}
 /* The export buttons sit with the view switcher rather than in the panel: they
    act on the round being shown, and a control that belongs to a round should
    not scroll away with the table inside it. */
-.exports{display:flex; gap:.45rem; margin-left:auto}
+/* Its own row, ending where the table ends. Collapsed while the button in it
+   is hidden, so a Swiss round costs no space for an export it does not have. */
+.round-tools{display:flex; justify-content:flex-end; margin-bottom:.6rem}
+.round-tools:has(> [hidden]){display:none}
+
+/* The event line, with the export at the end of it. align-items:end rather
+   than centre because the meta wraps to two lines on a narrow screen and the
+   button should stay with the last of them rather than float beside the gap. */
+.hero__line{display:flex; align-items:flex-end; gap:1rem; flex-wrap:wrap}
+.hero__line .hero__meta{flex:1 1 auto}
+.hero__line .export{margin-top:.85rem}
 .export{
   font:600 .78rem var(--body); letter-spacing:.02em;
   background:var(--surface-2); color:var(--text-2);
