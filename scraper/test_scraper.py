@@ -4529,6 +4529,59 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
                          ("Back For Seconds", "2 World Champs and John"))
         self.assertEqual(len(rows[0]["duels"]), 2)
 
+    def test_a_cut_round_of_ten_is_not_a_cut_round(self):
+        # The 2016 North America WCQ heads a post "Pairings: Top 10" over 128
+        # matches -- 256 Duelists, the field that came back for day two. Its
+        # own first sentence says what it is, and round 10's pairings were
+        # missing from the event entirely.
+        from parse import parse_post
+        html = ("<html><head><title>Pairings: Top 10</title></head><body>"
+                "<div class=\"entry-content\">"
+                "<p>Here are the Pairings for Round 10.</p></div></div>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>vs</td><td>Bo B.</td></tr>"
+                "</tbody></table></body></html>")
+        self.assertEqual(parse_post(html, "https://x/pairings-top-10/").round, 10)
+
+    def test_a_bracket_that_could_exist_is_never_second_guessed(self):
+        # Only an impossible label sends this to the prose. A Top 8 is a Top 8
+        # even in a post that mentions another round in passing.
+        from parse import parse_post
+        html = ("<html><head><title>Pairings: Top 8</title></head><body>"
+                "<div class=\"entry-content\">"
+                "<p>These eight came through Round 12.</p></div></div>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>vs</td><td>Bo B.</td></tr>"
+                "</tbody></table></body></html>")
+        self.assertEqual(parse_post(html, "https://x/pairings-top-8/").round, "Top 8")
+
+    def test_an_impossible_label_with_nothing_to_correct_it_stands(self):
+        # The prose is asked, not obeyed. A post that says nothing useful keeps
+        # what its heading said, and the checker refuses the event -- which is
+        # a better answer than an invented one.
+        from parse import parse_post
+        html = ("<html><head><title>Pairings: Top 10</title></head><body>"
+                "<div class=\"entry-content\">"
+                "<p>The hall was packed today.</p></div></div>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>vs</td><td>Bo B.</td></tr>"
+                "</tbody></table></body></html>")
+        self.assertEqual(parse_post(html, "https://x/p/").round, "Top 10")
+
+    def test_which_numbers_are_brackets(self):
+        from parse import impossible_bracket
+        for good in ("Top 4", "Top 8", "Top 16", "Top 32", "Top 64", "Top 256"):
+            self.assertFalse(impossible_bracket(good), good)
+        for bad in ("Top 3", "Top 10", "Top 1", "Top 0", "Top 100"):
+            self.assertTrue(impossible_bracket(bad), bad)
+        # Swiss rounds are numbers, and "Final" is neither.
+        self.assertFalse(impossible_bracket(10))
+        self.assertFalse(impossible_bracket("Final"))
+        self.assertFalse(impossible_bracket(None))
+
     def test_the_title_names_the_round_and_the_slug_only_fills_in(self):
         # Konami types slugs by hand and sometimes types them wrong. The 2017
         # South America WCQ published "Pairings for Round 3" under the slug

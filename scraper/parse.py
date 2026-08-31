@@ -1109,6 +1109,19 @@ def parse_prose_pairings(text: str) -> list[dict[str, Any]]:
     return out if len(out) == pairings else []
 
 
+def impossible_bracket(rnd) -> bool:
+    """A "Top N" that no bracket could produce.
+
+    A cut halves the field, so N is a power of two -- 4, 8, 16, 32, 64 and 256
+    are every value the archive holds, across 527 cut rounds. Ten is not one,
+    and a round labelled with it was never a round of ten.
+    """
+    if not isinstance(rnd, str) or not (m := re.fullmatch(r"Top (\d+)", rnd)):
+        return False
+    n = int(m.group(1))
+    return n < 2 or bool(n & (n - 1))
+
+
 def parse_post(doc: str, url: str = "") -> Post:
     """Read one post.
 
@@ -1157,6 +1170,18 @@ def parse_post(doc: str, url: str = "") -> Post:
     # said pairings and the page said standings: what the page calls itself
     # beats what its address does.
     rnd = detect_round(title, kind) or detect_round(basis, kind)
+    # And a cut round of ten is not a cut round. Brackets halve, so every one
+    # of the archive's 527 is a power of two, and the 2016 North America WCQ
+    # heads a post "Pairings: Top 10" over 128 matches -- 256 Duelists, the
+    # field that came back for day two. Its own first sentence says what it is:
+    #
+    #   Here are the Pairings for Round 10.
+    #
+    # So the post is asked. A heading is one line someone typed and can carry a
+    # typo; the sentence under it is another chance to be right, and it is only
+    # consulted when the heading has said something impossible.
+    if impossible_bracket(rnd):
+        rnd = detect_round(lead(doc, PROSE_CHARS), kind) or rnd
     return Post(
         title=title,
         kind=kind,
