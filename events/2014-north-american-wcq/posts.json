@@ -108,15 +108,6 @@
     "slug": "2014-north-american-wcq"
   },
   {
-    "title": "Pairings: Round 1",
-    "url": "https://yugiohblog.konami.com/2014/championships/standings-round-1/",
-    "modified": "2014-07-12T10:10:20-07:00",
-    "kind": "pairings",
-    "event": "North America WCQ 2014",
-    "format": null,
-    "slug": "2014-north-american-wcq"
-  },
-  {
     "title": "Standings: Round 1",
     "url": "https://yugiohblog.konami.com/2014/championships/2014-north-american-wcq/standings-round-1-2/",
     "modified": "2014-07-12T11:49:57-07:00",
@@ -437,7 +428,7 @@
     "modified": "2014-07-12T13:58:00-07:00",
     "kind": "news",
     "event": "North America WCQ 2014",
-    "format": null,
+    "format": "Public Events",
     "slug": "2014-north-american-wcq"
   },
   {
@@ -455,7 +446,7 @@
     "modified": "2014-07-12T13:03:10-07:00",
     "kind": "news",
     "event": "North America WCQ 2014",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2014-north-american-wcq"
   },
   {

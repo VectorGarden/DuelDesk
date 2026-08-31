@@ -3023,7 +3023,7 @@
         {
           "format": null,
           "name": "Aaron Chase Furman",
-          "deck": null
+          "deck": "Draco Zoodiac"
         }
       ],
       "formats": [
@@ -3063,14 +3063,13 @@
     },
     {
       "slug": "201703-uds-winter-invitational-las-vegas",
-      "event": "YCS Guatemala City",
-      "location": "Guatemala City, Guatemala",
+      "event": "Ultimate Duelist Series Invitational",
       "updated": "2017-03-19",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201703-uds-winter-invitational-las-vegas/rounds.json",
-      "postCount": 66,
+      "postCount": 55,
       "formats": [
         {
           "format": null,
@@ -3306,30 +3305,19 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-toronto/rounds.json",
       "postCount": 49,
+      "champions": [
+        {
+          "format": null,
+          "name": "Bohdan John Temnyk",
+          "deck": "Burning Abyss Phantom Knights"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 543,
           "rounds": 14
-        }
-      ]
-    },
-    {
-      "slug": "yu-gi-oh-world-championship-2016",
-      "event": "Dragon Duel",
-      "updated": "2016-08-23",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/yu-gi-oh-world-championship-2016/rounds.json",
-      "postCount": 59,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 5,
-          "duelists": 56,
-          "rounds": 6
         }
       ]
     },
@@ -3347,7 +3335,7 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 635,
-          "rounds": 10
+          "rounds": 11
         }
       ]
     },
@@ -3364,7 +3352,7 @@
         {
           "format": null,
           "name": "Joaquin – Dracoslayer Performapals Rinaldi Petroni",
-          "deck": null
+          "deck": "Argentina"
         }
       ],
       "formats": [
@@ -3372,7 +3360,7 @@
           "format": null,
           "swissRounds": 9,
           "duelists": 285,
-          "rounds": 12
+          "rounds": 13
         }
       ]
     },
@@ -3389,7 +3377,7 @@
         {
           "format": null,
           "name": "Brandon Ossiel Aguilar Gonzalez",
-          "deck": null
+          "deck": "Brilliant Monarchs"
         }
       ],
       "formats": [
@@ -3397,7 +3385,7 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 513,
-          "rounds": 14
+          "rounds": 15
         }
       ]
     },
@@ -3416,7 +3404,7 @@
           "format": null,
           "swissRounds": 9,
           "duelists": 353,
-          "rounds": 7
+          "rounds": 9
         }
       ]
     },
@@ -3429,12 +3417,19 @@
       "coverageBy": "Konami",
       "path": "events/201509-monterrey/rounds.json",
       "postCount": 14,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alan Daniel Santacruz Guzman",
+          "deck": "Burning Abyss Deck"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
           "duelists": 375,
-          "rounds": 6
+          "rounds": 8
         }
       ]
     },
@@ -3452,7 +3447,7 @@
           "format": null,
           "swissRounds": 8,
           "duelists": 276,
-          "rounds": 10
+          "rounds": 11
         }
       ]
     },
@@ -3521,7 +3516,7 @@
           "format": null,
           "swissRounds": 7,
           "duelists": 192,
-          "rounds": 4
+          "rounds": 5
         }
       ]
     },
@@ -3533,7 +3528,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2014-north-american-wcq/rounds.json",
-      "postCount": 78,
+      "postCount": 77,
       "champions": [
         {
           "format": null,
