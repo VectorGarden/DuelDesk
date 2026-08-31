@@ -150,7 +150,13 @@ def round_key(post) -> tuple[str, Any]:
 #     Duelist and consecutive rows sharing a pair are the match. Read a row at
 #     a time, a Top 4 of four teams held twenty-four Duelists and no team, so
 #     those events had no roster and could name no champion.
-BUILD_VERSION = 20
+# 21: six events the archive had refused. A round the blog published with
+#     Player 2 copied from Player 1; the Dragon Duel's tables read as the main
+#     event's, which also cost the 2016 World Championship its champion; a Top
+#     4 holding eight Duelists; a slug that said Top 3 over a title that said
+#     Round 3; a Top 8 published as four unheaded tables; a duel nobody
+#     numbered; and a cut round of ten, which no bracket can produce.
+BUILD_VERSION = 21
 
 
 @dataclass
