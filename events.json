@@ -2777,12 +2777,19 @@
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-santa-cruz-de-la-sierra-bolivia/rounds.json",
       "postCount": 24,
+      "champions": [
+        {
+          "format": null,
+          "name": "Rudolph Von Landwuest Rodriguez",
+          "deck": "Pendulum Magician"
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 99,
-          "rounds": 10
+          "rounds": 12
         }
       ]
     },
@@ -3089,6 +3096,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-guatemala-city-guatemala/rounds.json",
       "postCount": 23,
+      "champions": [
+        {
+          "format": null,
+          "name": "Gerald Yagans South Chaves",
+          "deck": "Zoodiacs-Infernoid"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -3156,7 +3170,7 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 716,
-          "rounds": 12
+          "rounds": 13
         }
       ]
     },
@@ -3199,7 +3213,7 @@
           "format": null,
           "swissRounds": 9,
           "duelists": 351,
-          "rounds": 9
+          "rounds": 10
         }
       ]
     },
@@ -3217,7 +3231,7 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 75,
-          "rounds": 9
+          "rounds": 10
         }
       ]
     },
@@ -3260,7 +3274,7 @@
           "format": null,
           "swissRounds": 12,
           "duelists": 121,
-          "rounds": 13
+          "rounds": 14
         }
       ]
     },
@@ -3285,31 +3299,6 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 791,
-          "rounds": 14
-        }
-      ]
-    },
-    {
-      "slug": "2016-ycs-toronto",
-      "event": "YCS Toronto",
-      "updated": "2016-08-28",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2016-ycs-toronto/rounds.json",
-      "postCount": 49,
-      "champions": [
-        {
-          "format": null,
-          "name": "Bohdan John Temnyk",
-          "deck": "Burning Abyss Phantom Knights"
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 10,
-          "duelists": 543,
           "rounds": 14
         }
       ]
@@ -3347,31 +3336,6 @@
           "swissRounds": 10,
           "duelists": 635,
           "rounds": 11
-        }
-      ]
-    },
-    {
-      "slug": "2016-sa-wcq",
-      "event": "SA WCQ",
-      "updated": "2016-06-19",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2016-sa-wcq/rounds.json",
-      "postCount": 34,
-      "champions": [
-        {
-          "format": null,
-          "name": "Joaquin Rinaldi Petroni",
-          "deck": "Dracoslayer Performapals"
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 9,
-          "duelists": 285,
-          "rounds": 13
         }
       ]
     },
@@ -3711,6 +3675,31 @@
           "swissRounds": 9,
           "duelists": 362,
           "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2011-south-american-wcq",
+      "event": "South America WCQ 2011",
+      "updated": "2011-07-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2011-south-american-wcq/rounds.json",
+      "postCount": 10,
+      "champions": [
+        {
+          "format": null,
+          "name": "Juan Grijalva",
+          "deck": "Machina Gadget"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 0,
+          "duelists": 0,
+          "rounds": 1
         }
       ]
     },
