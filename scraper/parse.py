@@ -860,8 +860,74 @@ def _prose_side(text: str) -> dict[str, Any] | None:
             return None
         deck = _plausible_deck(tail)
     said = _FROM_COUNTRY.sub("", said)
+    # "Farfan Soto, Sergio Mauricio - Bolivia (Pendulum Magician)" -- the
+    # country after a dash, with the bracket holding the deck. The same shape
+    # a table cell carries, and the same reading: where a bracket says the
+    # side is annotated, what follows the dash is not part of the name.
+    if deck and (m := _SPELT_REGION.search(said)):
+        said = said[:m.start()]
     name = normalise_name(said)
     return {"name": name, "region": None, "deck": deck} if name else None
+
+
+# A round written as a sentence about the Duelists rather than as a list of
+# them. Every YCS final since 2022 is published this way:
+#
+#   Michael Tamez and his Floowandereeze Deck is facing off against
+#   Christopher LeBlanc and his Spright Tearlaments Deck
+#   Ryan Yu will be using his Sky Striker Deck to Duel against Landon Oliver
+#   and his Fire King Snake-Eye Azamina Deck
+#   Chase Robert Cunningham versus Noah Reid Greene
+#
+# Worth reading rather than dropping: these are Finals, and an event whose
+# Final is missing has no two Duelists for a winner post to be recognised
+# among -- which is exactly how YCS Niagara Falls 2022 had no champion.
+_DUEL_AGAINST = re.compile(r"\s+(?:up\s+)?(?:against|versus)\s+", re.I)
+# "and his Floowandereeze Deck", "using her Sky Striker Deck". The deck is
+# what sits between the pronoun and the word Deck.
+_THEIR_DECK = re.compile(
+    r"\s+(?:and|with|using|is using|are using|will be using)\s+"
+    r"(?:his|her|their)\s+(.+)\s+Decks?\b", re.I)
+# "At Table 1, Ryan Arthur Levine is using..." -- YCS Toronto writes its Top 4
+# as one sentence a table.
+_AT_TABLE = re.compile(r"^\s*at\s+table\s+(\d+)\s*,\s*", re.I)
+
+
+def _sentence_side(text: str, lead: bool) -> dict[str, Any] | None:
+    """One Duelist out of a sentence about them, and the deck it names."""
+    deck = None
+    if m := _THEIR_DECK.search(text):
+        deck, text = m.group(1).strip(), text[:m.start()]
+    else:
+        # No deck named on this side. Everything up to the first verb is the
+        # name -- "Noah Reid Greene" stands alone, but "Bohdan Temnyk and his
+        # ... Deck" would have been caught above.
+        text = re.split(r"\s+(?:is|are|will|and)\b", text, maxsplit=1)[0]
+    if lead:
+        text = _AT_TABLE.sub("", _PREAMBLE.sub("", text))
+    name = normalise_name(text.strip(" ,.!?"))
+    # Two words at least. A sentence hands back whatever is in front of the
+    # verb, and one word of that is a fragment rather than a Duelist.
+    return ({"name": name, "region": None, "deck": deck}
+            if name and len(name.split()) >= 2 else None)
+
+
+def parse_prose_duels(text: str) -> list[dict[str, Any]]:
+    """Rounds written as sentences: one match a sentence, or [].
+
+    Same all-or-nothing as the pairings reader, and for the same reason: a
+    round short a match is a wrong round, not a small one.
+    """
+    out, said = [], 0
+    for sentence in re.split(r"(?<=[.!?])\s+", text or ""):
+        if not (sep := _DUEL_AGAINST.search(sentence)):
+            continue
+        said += 1
+        a = _sentence_side(sentence[:sep.start()], lead=True)
+        b = _sentence_side(sentence[sep.end():], lead=False)
+        if a and b:
+            out.append({"table": None, "a": a, "b": b})
+    return out if said and len(out) == said else []
 
 
 def parse_prose_pairings(text: str) -> list[dict[str, Any]]:
@@ -934,7 +1000,10 @@ def parse_post(doc: str, url: str = "") -> Post:
         # No table on the page at all. Before giving up on the post, read it as
         # prose: the build drops a pairings post carrying no table, and for
         # some events that is the whole of the cut.
-        if rows := parse_prose_pairings(lead(doc, PROSE_CHARS)):
+        said = lead(doc, PROSE_CHARS)
+        # The list first, then the sentence. A post that lists its pairings is
+        # the commoner thing and the surer read; a sentence is what is left.
+        if rows := (parse_prose_pairings(said) or parse_prose_duels(said)):
             table = Table(kind="pairings", columns=["Table", "Duelist", "vs.", "Duelist"],
                           rows=rows)
     if (table and kind in ("pairings", "standings")

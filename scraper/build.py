@@ -131,7 +131,11 @@ def round_key(post) -> tuple[str, Any]:
 # 16: the rounds written as sentences. Thirty-six round posts carry no table
 #     at all, and the prose reader asked for one shape of them: "Table N:"
 #     with a colon and a bracketed deck on each side. Nineteen more read now.
-BUILD_VERSION = 16
+# 17: a final written as a sentence. Every YCS final since 2022 is published
+#     as prose about the two Duelists rather than as a pairing, so ten events
+#     had no Final -- and an event with no Final has no two Duelists for a
+#     winner post to be recognised among.
+BUILD_VERSION = 17
 
 
 @dataclass
