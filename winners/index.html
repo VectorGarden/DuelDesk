@@ -116,6 +116,12 @@
       <p class="count" id="wcount">Loading</p>
     </div>
 
+    <!-- Populated from the winners themselves, so a format nobody has won
+         under cannot get a button. Hidden while there is only one, the same
+         rule the coverage filter follows. -->
+    <div class="filters" role="group" aria-label="Filter by format"
+         id="format-filters" hidden></div>
+
     <div id="winners"></div>
     <p class="visually-hidden" role="status" aria-live="polite" id="announce"></p>
   </section>

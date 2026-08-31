@@ -64,9 +64,49 @@ function repeats(rows){
   return n;
 }
 
+/* An event that names no format was played under Advanced. Before 2025 there
+   was nothing else to play -- Advanced and the Dragon Duel side event, which
+   is not in here at all -- so the blog had no reason to say so, and the
+   builder does not invent what the source never stated.
+
+   Read here rather than written into the archive, because the archive should
+   go on saying what Konami said. The filter can know what that means. */
+const DEFAULT_FORMAT = 'Advanced';
+const formatOf = (r) => r.format || DEFAULT_FORMAT;
+
+let formatFilter = 'all';
+
+function formatsPresent(){
+  return [...new Set(WINS.map(formatOf))].sort();
+}
+
+function renderFormatFilters(){
+  const box = document.getElementById('format-filters');
+  if (!box) return;
+  const present = formatsPresent();
+  /* One format is not a choice. */
+  box.hidden = present.length < 2;
+  if (box.hidden){ box.innerHTML = ''; return; }
+  box.innerHTML = [['all', 'Every Format'], ...present.map(f => [f, f])]
+    .map(([value, label]) =>
+      `<button type="button" data-win-format="${esc(value)}" aria-pressed="${
+        String(value === formatFilter)}">${esc(label)}</button>`).join('');
+}
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-win-format]');
+  if (!b) return;
+  formatFilter = b.dataset.winFormat;
+  render();
+  say(countEl.textContent);
+});
+
 function render(){
   const all = repeats(WINS);
-  const rows = WINS.filter(r => hit(r.event, r.name, r.deck, r.format, r.location));
+  renderFormatFilters();
+  const rows = WINS.filter(r =>
+    (formatFilter === 'all' || formatOf(r) === formatFilter)
+    && hit(r.event, r.name, r.deck, r.format, r.location));
 
   countEl.textContent = rows.length
     ? `${rows.length} winner${rows.length > 1 ? 's' : ''}`
