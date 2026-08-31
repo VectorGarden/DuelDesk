@@ -2029,7 +2029,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-portland/rounds.json",
-      "postCount": 37,
+      "postCount": 28,
       "champions": [
         {
           "format": null,
@@ -2079,7 +2079,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-central-america-wcq/rounds.json",
-      "postCount": 40,
+      "postCount": 39,
       "champions": [
         {
           "format": null,
@@ -2213,7 +2213,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-kansas-city-mo/rounds.json",
-      "postCount": 53,
+      "postCount": 52,
       "formats": [
         {
           "format": null,
