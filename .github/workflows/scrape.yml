@@ -149,9 +149,30 @@ jobs:
         name: Validate the scraped data
         run: |
           python3 .github/scripts/check-feed.py scraped-feed.xml
-          for f in events/*/rounds.json; do
-            python3 .github/scripts/check-rounds.py "$f"
-          done
+          # The events this run wrote, which is what it can be wrong about. A
+          # backfill writes several, and an older one built from patchier
+          # coverage is exactly where a bad file comes from -- every one of
+          # those is in this list, because the run is what put it there.
+          #
+          # Not the whole archive. Checking all 164 to clear the 20 a batch
+          # touches cost fifteen seconds of every batch, re-proving what the
+          # run that wrote each file had already proved. validate.yml still
+          # sweeps everything, on every merge to main and every four hours.
+          #
+          # --untracked-files=all because a backfill writes a directory that
+          # git has never seen, and a directory is not a file to check.
+          written=$(git status --porcelain --untracked-files=all -- events \
+                    | awk '{print $NF}' | grep '/rounds\.json$' || true)
+          if [ -z "$written" ]; then
+            echo "No event file was written."
+          else
+            for f in $written; do
+              python3 .github/scripts/check-rounds.py "$f"
+            done
+            n=$(printf '%s\n' "$written" | wc -l | tr -d ' ')
+            all=$(ls events/*/rounds.json | wc -l | tr -d ' ')
+            echo "Checked $n of $all event files -- the ones this run wrote."
+          fi
 
       - if: steps.gate.outputs.run == 'yes'
         uses: actions/upload-artifact@v7
