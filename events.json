@@ -1758,6 +1758,13 @@
       "coverageBy": "Konami",
       "path": "events/2022-team-ycs-quito/rounds.json",
       "postCount": 17,
+      "champions": [
+        {
+          "format": null,
+          "name": "BBCITAS",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
