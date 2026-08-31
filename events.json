@@ -3205,6 +3205,31 @@
       ]
     },
     {
+      "slug": "wcq-2016-mexico",
+      "event": "WCQ Mexico",
+      "updated": "2016-06-11",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/wcq-2016-mexico/rounds.json",
+      "postCount": 33,
+      "champions": [
+        {
+          "format": null,
+          "name": "Brandon Ossiel Aguilar Gonzalez",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 513,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "201603-santiago-chile",
       "event": "YCS Santiago",
       "location": "Santiago, Chile",
@@ -3238,6 +3263,24 @@
           "swissRounds": 9,
           "duelists": 375,
           "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "2015-south-american-wcq",
+      "event": "South America WCQ 2015",
+      "updated": "2015-07-05",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2015-south-american-wcq/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 8,
+          "duelists": 276,
+          "rounds": 10
         }
       ]
     },
@@ -3307,6 +3350,24 @@
           "swissRounds": 7,
           "duelists": 192,
           "rounds": 4
+        }
+      ]
+    },
+    {
+      "slug": "2014-wcq-ca",
+      "event": "WCQ CA",
+      "updated": "2014-07-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2014-wcq-ca/rounds.json",
+      "postCount": 42,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 498,
+          "rounds": 9
         }
       ]
     },
@@ -3397,6 +3458,24 @@
           "swissRounds": 11,
           "duelists": 100,
           "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "11-06-indianapolis",
+      "event": "YCS Indianapolis",
+      "updated": "2011-08-09",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/11-06-indianapolis/rounds.json",
+      "postCount": 33,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 362,
+          "rounds": 12
         }
       ]
     },
