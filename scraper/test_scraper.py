@@ -3575,6 +3575,49 @@ PAIR_HEAD = ["Table", "P1 First Name", "P1 Last Name", "vs.",
              "P2 First Name", "P2 Last Name"]
 
 
+class TestABiographyIsNotASideEvent(unittest.TestCase):
+    """A side event named in an aside is about the Duelist, not the post.
+
+    The 2026 North America WCQ's winner announcement opens by saying its
+    winner is a former Dragon Duel World Champion, and the event lost its
+    champion to that sentence.
+    """
+
+    NAWCQ = ("2077 Duelists competed in the 2026 North America World Championship "
+             "Qualifier, and one Duelist \u2013 a former Dragon Duel World Champion "
+             "and former MASTER DUEL World Champion \u2013 emerged on top! Ryan Yu "
+             "from Ontario, Canada used his Sky Striker Deck to go undefeated.")
+
+    def test_a_title_held_in_an_aside_does_not_veto_the_post(self):
+        from winners import announces_a_winner
+        self.assertTrue(announces_a_winner("And the Winner of the 2026 NAWCQ Is\u2026",
+                                           self.NAWCQ))
+
+    def test_a_bracketed_aside_counts_too(self):
+        from winners import announces_a_winner
+        self.assertTrue(announces_a_winner(
+            "And the Winner Is\u2026",
+            "One Duelist (a former Dragon Duel champion) came out on top!"))
+
+    def test_a_post_actually_about_the_side_event_is_still_refused(self):
+        # The rule must not throw out what it was written to catch.
+        from winners import announces_a_winner
+        self.assertFalse(announces_a_winner(
+            "And the Winner Is\u2026", "The Dragon Duel Championship has a winner!"))
+
+    def test_a_side_event_in_the_title_is_still_refused(self):
+        from winners import announces_a_winner
+        self.assertFalse(announces_a_winner("And the Dragon Duel Winner Is\u2026",
+                                            "Somebody won."))
+
+    def test_the_champion_is_read_out_of_the_post(self):
+        from winners import champion
+        got = champion(["Charley Ray Futch III", "Ryan Linus Yu"],
+                       [{"title": "And the Winner of the 2026 NAWCQ Is\u2026",
+                         "text": self.NAWCQ, "kind": "result"}])
+        self.assertEqual(got, "Ryan Linus Yu")
+
+
 class TestCoverageFormat(unittest.TestCase):
     """What a post is coverage of, which is not always a format of the event."""
 
