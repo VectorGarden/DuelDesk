@@ -1233,6 +1233,142 @@ class TestDerivedFinal(unittest.TestCase):
         self.assertEqual(finals[0]["source"], "https://x/final-match/",
                          "the published round wins; the derived one fills a gap")
 
+    def test_a_cut_round_is_named_for_how_many_are_left_in_it(self):
+        # The 2019 North America WCQ titles a post "Top 4 Pairings" and puts
+        # four matches in it -- eight Duelists, which is a Top 8. The same
+        # event titles its Top 64 post with 32 matches and its Top 16 with 8,
+        # so the one post is a slip. Read as written the Top 4 became a team
+        # round of two a side and 115 posts left the archive.
+        from build import Source, build_event
+        from parse import Post, Table
+
+        def pairs(label, rows, url):
+            return Source(url, Post(f"{label} Pairings", "pairings", None, label,
+                                    Table("pairings", [], [
+                                        {"table": i + 1,
+                                         "a": {"name": a, "region": None, "deck": None},
+                                         "b": {"name": b, "region": None, "deck": None}}
+                                        for i, (a, b) in enumerate(rows)])), "20:00")
+
+        ev = build_event("WCQ", [
+            pairs("Top 16", [("A", "B"), ("C", "D"), ("E", "F"), ("G", "H"),
+                             ("I", "J"), ("K", "L"), ("M", "N"), ("O", "P")],
+                  "https://x/top-16/"),
+            pairs("Top 4", [("A", "C"), ("E", "G"), ("I", "K"), ("M", "O")],
+                  "https://x/mislabelled/"),
+            Source("https://x/standings/",
+                   Post("Final Standings", "standings", None, None,
+                        Table("standings", [],
+                              [self.row(i + 1, n) for i, n in enumerate("ABCDEFGH")])),
+                   "21:00"),
+        ], updated="2026-08-16T21:00:00Z")
+
+        labels = [r["label"] for r in ev["formats"][0]["rounds"]]
+        self.assertIn("Top 8", labels, "four matches is a Top 8, whatever it was called")
+        self.assertNotIn("Top 4", labels)
+        eight = next(r for r in ev["formats"][0]["rounds"] if r["label"] == "Top 8")
+        self.assertEqual(eight["source"], "https://x/mislabelled/")
+
+    def test_a_cut_round_that_agrees_with_its_name_is_left_alone(self):
+        from build import relabel_by_size
+        from parse import Post, Table
+        from build import Source
+
+        def post(label, n):
+            return {"pairings": Source(
+                f"https://x/{label}/",
+                Post(f"{label} Pairings", "pairings", None, label,
+                     Table("pairings", [], [
+                         {"table": i + 1,
+                          "a": {"name": f"a{i}", "region": None, "deck": None},
+                          "b": {"name": f"b{i}", "region": None, "deck": None}}
+                         for i in range(n)])), "20:00")}
+
+        by_round = {("cut", "Top 8"): post("Top 8", 4),
+                    ("cut", "Top 4"): post("Top 4", 2)}
+        relabel_by_size(by_round)
+        self.assertEqual(sorted(by_round), [("cut", "Top 4"), ("cut", "Top 8")])
+
+    def test_a_relabelled_round_never_lands_on_a_name_already_taken(self):
+        from build import relabel_by_size, Source
+        from parse import Post, Table
+
+        def post(label, n):
+            return {"pairings": Source(
+                f"https://x/{label}/",
+                Post(f"{label} Pairings", "pairings", None, label,
+                     Table("pairings", [], [
+                         {"table": i + 1,
+                          "a": {"name": f"a{i}", "region": None, "deck": None},
+                          "b": {"name": f"b{i}", "region": None, "deck": None}}
+                         for i in range(n)])), "20:00")}
+
+        # A "Top 4" holding four matches wants to become Top 8, but this event
+        # published a real Top 8 as well. Neither moves; the checker can say so
+        # far better than a guess can.
+        by_round = {("cut", "Top 8"): post("Top 8", 4),
+                    ("cut", "Top 4"): post("Top 4", 4)}
+        relabel_by_size(by_round)
+        self.assertEqual(sorted(by_round), [("cut", "Top 4"), ("cut", "Top 8")])
+        self.assertEqual(by_round[("cut", "Top 4")]["pairings"].url,
+                         "https://x/Top 4/")
+
+    def test_only_the_pairings_move_off_a_wrong_name(self):
+        # A standings table filed under the same name is a different post
+        # making its own claim about a different thing, and it stays.
+        from build import relabel_by_size, Source
+        from parse import Post, Table
+
+        def pairings(n):
+            return Source("https://x/p/", Post("Top 4 Pairings", "pairings", None, "Top 4",
+                                               Table("pairings", [], [
+                                                   {"table": i + 1,
+                                                    "a": {"name": f"a{i}", "region": None, "deck": None},
+                                                    "b": {"name": f"b{i}", "region": None, "deck": None}}
+                                                   for i in range(n)])), "20:00")
+
+        standings = Source("https://x/s/",
+                           Post("Top 4 Standings", "standings", None, "Top 4",
+                                Table("standings", [], [])), "21:00")
+        by_round = {("cut", "Top 4"): {"pairings": pairings(4), "standings": standings}}
+        relabel_by_size(by_round)
+        self.assertEqual(sorted(by_round), [("cut", "Top 4"), ("cut", "Top 8")])
+        self.assertEqual(by_round[("cut", "Top 8")]["pairings"].url, "https://x/p/")
+        self.assertEqual(by_round[("cut", "Top 4")], {"standings": standings},
+                         "the standings post never claimed to be a Top 8")
+
+    def test_a_team_round_is_not_counted_this_way(self):
+        # A team round's rows are matches, not duels, and a partly published
+        # one counts to a number that looks like a bracket without being one:
+        # two of a Top 8's four team matches would read as a Top 4.
+        from build import relabel_by_size, Source
+        from parse import Post, Table
+
+        rows = [{"table": i + 1,
+                 "a": {"name": f"Team {i}A", "region": None, "deck": None},
+                 "b": {"name": f"Team {i}B", "region": None, "deck": None},
+                 "duels": [{"table": i + 1, "a": "x", "b": "y"}]} for i in range(2)]
+        by_round = {("cut", "Top 8"): {"pairings": Source(
+            "https://x/p/", Post("Top 8 Pairings", "pairings", None, "Top 8",
+                                 Table("pairings", [], rows)), "20:00")}}
+        relabel_by_size(by_round)
+        self.assertEqual(sorted(by_round), [("cut", "Top 8")])
+
+    def test_a_count_that_is_not_a_bracket_is_not_an_answer(self):
+        # Three matches is six Duelists, which is no bracket at all. The table
+        # is partial, not misnamed, and "Top 6" would be worse than "Top 8".
+        from build import relabel_by_size, Source
+        from parse import Post, Table
+
+        rows = [{"table": i + 1,
+                 "a": {"name": f"a{i}", "region": None, "deck": None},
+                 "b": {"name": f"b{i}", "region": None, "deck": None}} for i in range(3)]
+        by_round = {("cut", "Top 8"): {"pairings": Source(
+            "https://x/p/", Post("Top 8 Pairings", "pairings", None, "Top 8",
+                                 Table("pairings", [], rows)), "20:00")}}
+        relabel_by_size(by_round)
+        self.assertEqual(sorted(by_round), [("cut", "Top 8")])
+
     def test_a_tournament_alongside_is_not_a_round_of_the_one_beside_it(self):
         # The 2018 South America WCQ has no Top 8 pairings post of its own, so
         # the Dragon Duel's stood in as one: eight children who never played in

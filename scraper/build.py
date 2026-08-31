@@ -505,6 +505,52 @@ def disambiguate(sources: list[Source]) -> tuple[set[str], set[str]]:
     return shared, ambiguous
 
 
+def relabel_by_size(by_round: dict) -> None:
+    """A cut round is named for how many Duelists are still in it.
+
+    So a Top N holds N/2 matches, and that holds for all 455 cut rounds in the
+    archive without a single exception. The 2019 North America WCQ publishes a
+    post titled "North America WCQ: Top 4 Pairings" holding four:
+
+        1  Nguyen, Thanh Cong    vs.  Dawar, Manav
+        2  Dominguez, Abdur Rahim vs. Dai, Raymond Young
+        3  Rayos, Brian          vs.  Li, Wei
+        4  Angeloff, Dakota Clint vs. Gueye, Maguette Laye
+
+    Eight Duelists, which is a Top 8. The same event titles its Top 64 post
+    with 32 matches and its Top 16 post with 8, so this one is a slip rather
+    than a convention -- and read as written it made the Top 4 a team round of
+    two a side, which took 115 posts out of the archive.
+
+    The count of matches is data and the title is something someone typed, so
+    the count wins. Only the pairings move: a standings table filed under the
+    same name is a different post making its own claim, and is left where it
+    is. Nothing moves onto a name already taken, or off a team round, whose
+    rows are matches rather than duels and do not count this way.
+    """
+    for key in [k for k in by_round if k[0] == "cut"]:
+        want = re.fullmatch(r"Top (\d+)", key[1])
+        post = by_round[key].get("pairings")
+        if not want or post is None:
+            continue
+        rows = post.post.table.rows
+        if not rows or any(r.get("duels") for r in rows):
+            continue
+        held = len(rows) * 2
+        fixed = (key[0], f"Top {held}")
+        # And only onto a bracket that could exist. Every one of the archive's
+        # 527 cut rounds is a power of two, 4 through 64, so a count that is
+        # not one says the table is partial rather than the title wrong -- and
+        # "Top 6" would be a worse answer than the one already there.
+        if held & (held - 1) or held < 4:
+            continue
+        if held == int(want.group(1)) or fixed in by_round:
+            continue
+        by_round[fixed] = {"pairings": by_round[key].pop("pairings")}
+        if not by_round[key]:
+            del by_round[key]
+
+
 def build_format(name: str | None, sources: list[Source], *,
                  ongoing: bool = False, announcements: list[Source] = (),
                  event_date: str | None = None) -> dict | None:
@@ -595,6 +641,7 @@ def build_format(name: str | None, sources: list[Source], *,
     # key has to exist even though no table put it there.
     for key in features:
         by_round[key]
+    relabel_by_size(by_round)
     if not by_round:
         return None
 
