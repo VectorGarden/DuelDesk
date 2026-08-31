@@ -4893,6 +4893,46 @@ class TestArchive(unittest.TestCase):
             "rounds": [{"label": "Top 4", "pairings": [{"a": "Ada Lovelace", "b": "Bo Peep"}]}]}]})
         self.assertEqual(got, [{"format": None, "name": "Ada Lovelace", "deck": None}])
 
+    def test_a_team_champion_names_its_duelists(self):
+        # A team has no deck of its own -- three Duelists do -- and the page
+        # has nowhere else to read them from. Fetching the round file to find
+        # three names is what this function exists to avoid.
+        import archive
+        got = archive.champions({"formats": [{
+            "format": None, "champion": "Better Have It", "entrant": "Team",
+            "rounds": [{"label": "Top 4", "pairings": [
+                {"a": "Better Have It", "aDeck": None, "b": "Los Pistoleros", "bDeck": None,
+                 "duels": [
+                     {"table": 1, "a": "Ruben Andres Penaranda", "aDeck": "Bystial Dragon Link",
+                      "b": "Someone Else", "bDeck": "Purrely"},
+                     {"table": 2, "a": "Pakawat Thomas Pamornsut", "aDeck": "Unchained",
+                      "b": "A Third", "bDeck": "Maliss"}]}]}]}]})
+        self.assertEqual(got[0]["name"], "Better Have It")
+        self.assertEqual(got[0]["members"], [
+            {"name": "Ruben Andres Penaranda", "deck": "Bystial Dragon Link"},
+            {"name": "Pakawat Thomas Pamornsut", "deck": "Unchained"}])
+
+    def test_the_members_are_the_winning_side_of_the_match(self):
+        # Reading the other side lists the runner-up's Duelists under the
+        # winner's name, which is the sort of thing that looks right.
+        import archive
+        got = archive.champions({"formats": [{
+            "format": None, "champion": "Los Pistoleros", "entrant": "Team",
+            "rounds": [{"label": "Final", "pairings": [
+                {"a": "Better Have It", "b": "Los Pistoleros",
+                 "duels": [{"table": 1, "a": "Ruben Andres Penaranda", "aDeck": "Purrely",
+                            "b": "Cameron Taylor Neal", "bDeck": "Ryzeal"}]}]}]}]})
+        self.assertEqual(got[0]["members"], [{"name": "Cameron Taylor Neal", "deck": "Ryzeal"}])
+
+    def test_a_singles_champion_carries_no_members(self):
+        # Every singles event would otherwise carry an empty list in a file
+        # the page fetches before anything is on screen.
+        import archive
+        got = archive.champions({"formats": [{
+            "format": None, "champion": "Ada Lovelace",
+            "rounds": [{"label": "Final", "pairings": [{"a": "Ada Lovelace", "b": "Bo Peep"}]}]}]})
+        self.assertNotIn("members", got[0])
+
     def test_the_manifest_counts_each_events_posts(self):
         # The page lists every event but fetches an event's coverage only when
         # it is opened, so the count has to come from here. Without it the page

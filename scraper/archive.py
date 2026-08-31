@@ -161,19 +161,30 @@ def champions(event: dict) -> list[dict]:
 
     The deck comes from the champion's own side of the last pairing published,
     which is where the coverage puts deck types when it publishes them at all.
+
+    A team champion carries its Duelists too. A team has no deck of its own --
+    three Duelists do -- and the page has nowhere else to read them from: they
+    are in the duels the winning match was decided by, and fetching the round
+    file to find three names is what this function exists to avoid.
     """
     out = []
     for fmt in event.get("formats") or []:
         if not (won := fmt.get("champion")):
             continue
         played = [r for r in fmt.get("rounds") or [] if r.get("pairings")]
-        deck = None
+        deck, members = None, []
         for row in (played[-1]["pairings"] if played else []):
-            if row.get("a") == won:
-                deck = row.get("aDeck")
-            elif row.get("b") == won:
-                deck = row.get("bDeck")
-        out.append({"format": fmt.get("format"), "name": won, "deck": deck})
+            side = "a" if row.get("a") == won else ("b" if row.get("b") == won else None)
+            if side is None:
+                continue
+            deck = row.get(side + "Deck")
+            members = [{"name": duel[side], "deck": duel.get(side + "Deck")}
+                       for duel in row.get("duels") or [] if duel.get(side)]
+        out.append({"format": fmt.get("format"), "name": won, "deck": deck,
+                    # Only where there are any. Every singles event would
+                    # otherwise carry an empty list in a file the page fetches
+                    # before anything is on screen.
+                    **({"members": members} if members else {})})
     return out
 
 
