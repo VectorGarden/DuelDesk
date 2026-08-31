@@ -2398,6 +2398,81 @@
       ]
     },
     {
+      "slug": "2018-11-sao-paulo-brazil",
+      "event": "YCS Pasadena",
+      "updated": "2018-11-18",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-11-sao-paulo-brazil/rounds.json",
+      "postCount": 111,
+      "champions": [
+        {
+          "format": null,
+          "name": "Shunping Xu",
+          "deck": "Sky Striker"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1342,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2018-09-200th-ycs-mexico-city-mexico",
+      "event": "200th YCS Mexico City",
+      "updated": "2018-09-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-09-200th-ycs-mexico-city-mexico/rounds.json",
+      "postCount": 53,
+      "champions": [
+        {
+          "format": null,
+          "name": "Andres David Torres Reyes",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2111,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2018-09-200th-ycs-columbus-oh",
+      "event": "200th YCS Columbus",
+      "updated": "2018-09-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-09-200th-ycs-columbus-oh/rounds.json",
+      "postCount": 71,
+      "champions": [
+        {
+          "format": null,
+          "name": "Manav Dawar",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2781,
+          "rounds": 16
+        }
+      ]
+    },
+    {
       "slug": "2018-uds-invitational-kansas-city-mo",
       "event": "UDS Invitational Kansas City",
       "location": "Kansas City, MO",
@@ -2514,6 +2589,31 @@
           "swissRounds": 9,
           "duelists": 369,
           "rounds": 8
+        }
+      ]
+    },
+    {
+      "slug": "2018-ycs-memphis",
+      "event": "YCS Memphis",
+      "updated": "2018-04-22",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-memphis/rounds.json",
+      "postCount": 63,
+      "champions": [
+        {
+          "format": null,
+          "name": "Kamal Derrick El Crooks-Valdez",
+          "deck": "Pendulum Magician"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 753,
+          "rounds": 15
         }
       ]
     },
@@ -2750,6 +2850,24 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 548,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2017-north-american-wcq",
+      "event": "North America WCQ 2017",
+      "updated": "2017-07-09",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2017-north-american-wcq/rounds.json",
+      "postCount": 47,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 15,
+          "duelists": 2259,
           "rounds": 15
         }
       ]
