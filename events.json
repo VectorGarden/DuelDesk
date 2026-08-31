@@ -3875,6 +3875,12 @@
       ],
       "formats": [
         {
+          "format": "Dragon Duel",
+          "swissRounds": 0,
+          "duelists": 81,
+          "rounds": 3
+        },
+        {
           "format": null,
           "swissRounds": 11,
           "duelists": 1716,
@@ -3953,6 +3959,12 @@
         }
       ],
       "formats": [
+        {
+          "format": "Dragon Duel",
+          "swissRounds": 7,
+          "duelists": 8,
+          "rounds": 9
+        },
         {
           "format": null,
           "swissRounds": 11,
