@@ -241,6 +241,28 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
         return any(a == b or b.startswith(a)
                    for a, b in ((sw[0], lw[0]), (sw[-1], lw[-1])))
 
+    def misspelt(a: tuple[str, ...], b: tuple[str, ...]) -> bool:
+        """Whether these are one name with a letter typed wrong in it.
+
+        YCS Atlanta's Swiss seated "Mohammed Imran Khan" for eleven rounds and
+        its Top 4 post printed "Mohammed Imram Khan". Nothing about that is a
+        shortening -- same words, same length, one letter -- so the folding
+        rules did not reach it, and the event was rejected because a Duelist in
+        the Top 4 had not played in the Top 8.
+
+        Exactly one letter, in exactly one word, with every other word
+        identical. Two Duelists whose names are one letter apart both played
+        the Swiss and are therefore seated in the same rounds, which `apart`
+        already refuses.
+        """
+        if len(a) != len(b):
+            return False
+        odd = [i for i, (x, y) in enumerate(zip(a, b)) if x != y]
+        if len(odd) != 1:
+            return False
+        x, y = a[odd[0]], b[odd[0]]
+        return len(x) == len(y) and sum(p != q for p, q in zip(x, y)) == 1
+
     def shortens(sw: tuple[str, ...], lw: tuple[str, ...]) -> bool:
         """Whether every word of sw is a distinct word of lw, or starts one."""
         spare = list(lw)
@@ -252,6 +274,11 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
             spare.remove(fit[0])
         return True
 
+    # How many rounds each spelling was seated in. A typo appears once, in the
+    # post that carried it; the name itself appears everywhere the Duelist
+    # played, so the majority spelling is the one to keep.
+    rounds_seen = Counter(n for group in together for n in group)
+
     canon: dict[str, str] = {}
     for short in names:
         sw = _words(short)
@@ -260,6 +287,11 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
         longer = [n for n in names
                   if len(_words(n)) > len(sw) and shortens(sw, _words(n))
                   and ends_agree(sw, _words(n)) and apart(short, n)]
+        # Or the same name with a letter typed wrong, folded the way round the
+        # coverage votes: the spelling seen in more rounds keeps the Duelist.
+        longer += [n for n in names
+                   if misspelt(sw, _words(n)) and apart(short, n)
+                   and rounds_seen[n] > rounds_seen[short]]
         if len(longer) > 1:
             # Several people could be meant, so the bracket is asked instead.
             # A Duelist in a cut round played in the round before it, and YCS
