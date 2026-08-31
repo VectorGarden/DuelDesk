@@ -4386,6 +4386,29 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         t = self.table(["Player", "Deck"], ["Ann Alpha", "Ryzeal"]).table
         self.assertEqual(t.kind, "unknown")
 
+    def test_a_column_the_blog_copied_is_not_a_round(self):
+        # YCS Denver published round 6 with Player 2 holding Player 1's name
+        # in all 247 rows. Read as written it is 247 Duelists each playing
+        # themselves, which is not a round -- and it took the whole 42-post
+        # event out of the archive.
+        head = ["Table", "Player 1", "vs.", "Player 2"]
+        copied = self.table(head,
+                            ["1", "Brown, Quinton", "vs.", "Brown, Quinton"],
+                            ["2", "Flynn, Andrey", "vs.", "Flynn, Andrey"]).table
+        self.assertEqual(copied.kind, "pairings")   # still a pairings post
+        self.assertEqual(copied.rows, [])           # with nothing to read
+
+    def test_one_copied_row_still_stops_the_event(self):
+        # Every row, not some. A single self-paired row is a typo in a round
+        # that was really played, and the archive should keep refusing it
+        # rather than quietly drop the round it belongs to.
+        head = ["Table", "Player 1", "vs.", "Player 2"]
+        mixed = self.table(head,
+                           ["1", "Brown, Quinton", "vs.", "Brown, Quinton"],
+                           ["2", "Flynn, Andrey", "vs.", "Le, An Thanh"]).table
+        self.assertEqual(len(mixed.rows), 2)
+        self.assertEqual(mixed.rows[0]["a"]["name"], mixed.rows[0]["b"]["name"])
+
     def test_a_table_that_is_neither_is_still_neither(self):
         t = self.table(["Deck", "Count"], ["Ryzeal", "13"]).table
         self.assertEqual(t.kind, "unknown")
