@@ -22,6 +22,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from naming import clock, feature_players
+from parse import coverage_format
 from winners import champion as champion_named
 from records import derive
 
@@ -1037,7 +1038,22 @@ def build_event(event: str, sources: list[Source], *,
                 ongoing: bool = False, location: str | None = None) -> dict:
     by_format: dict[str | None, list[Source]] = defaultdict(list)
     for s in sources:
-        by_format[s.post.fmt].append(s)
+        # A tournament that ran alongside the main event is its own tournament,
+        # not a round of the one it ran beside. coverage_format has named these
+        # all along and warned in its own docstring what happens when nobody
+        # acts on the answer -- and nobody did: the builder grouped by the
+        # post's format, which for a WCQ is None for every post, so the Dragon
+        # Duel's tables were merged into the main event's bracket.
+        #
+        # The 2018 South America WCQ was refused over exactly that. It has no
+        # Top 8 pairings post of its own, so the Dragon Duel's stood in as one:
+        #
+        #   Top 8   south-america-dragon-duel-wcq-pairings-for-top-8
+        #   Top 4   south-america-wcq-pairings-for-top-4
+        #
+        # Eight children who never played in the Top 16, and a Top 4 that never
+        # played in that Top 8. Forty-five posts left the archive over it.
+        by_format[coverage_format(s.post.title, s.post.fmt)].append(s)
 
     # Posts naming no format are usually announcements -- 19 of YCS Montreal's
     # belong to the event rather than to either of its tournaments -- so they

@@ -1233,6 +1233,48 @@ class TestDerivedFinal(unittest.TestCase):
         self.assertEqual(finals[0]["source"], "https://x/final-match/",
                          "the published round wins; the derived one fills a gap")
 
+    def test_a_tournament_alongside_is_not_a_round_of_the_one_beside_it(self):
+        # The 2018 South America WCQ has no Top 8 pairings post of its own, so
+        # the Dragon Duel's stood in as one: eight children who never played in
+        # the Top 16, and forty-five posts refused over it. Every post of a WCQ
+        # names no format, so grouping by the post's format put both
+        # tournaments in one bracket.
+        from build import Source, build_event
+        from parse import Post, Table
+
+        def pairs(title, label, rows, url):
+            return Source(url, Post(title, "pairings", None, label,
+                                    Table("pairings", [], [
+                                        {"table": i + 1,
+                                         "a": {"name": a, "region": None, "deck": None},
+                                         "b": {"name": b, "region": None, "deck": None}}
+                                        for i, (a, b) in enumerate(rows)])), "20:00")
+
+        def table(title, rows, url):
+            return Source(url, Post(title, "standings", None, None,
+                                    Table("standings", [], rows)), "21:00")
+
+        ev = build_event("South America WCQ", [
+            pairs("South America WCQ: Pairings for Top 4", "Top 4",
+                  [("Ann Alpha", "Bo Beta"), ("Cy Gamma", "Di Delta")],
+                  "https://x/wcq-top-4/"),
+            table("South America WCQ: Final Standings",
+                  [self.row(1, "Ann Alpha"), self.row(2, "Bo Beta"),
+                   self.row(3, "Cy Gamma"), self.row(4, "Di Delta")],
+                  "https://x/wcq-standings/"),
+            pairs("South America Dragon Duel WCQ: Pairings for Top 4", "Top 4",
+                  [("Kid One", "Kid Two"), ("Kid Three", "Kid Four")],
+                  "https://x/dd-top-4/"),
+        ], updated="2026-08-16T21:00:00Z")
+
+        named = {f["format"]: f for f in ev["formats"]}
+        self.assertEqual(set(named), {None, "Dragon Duel"})
+        main = named[None]["rounds"][0]["pairings"]
+        self.assertEqual([p["a"] for p in main], ["Ann Alpha", "Cy Gamma"],
+                         "the main event kept only its own Top 4")
+        kids = named["Dragon Duel"]["rounds"][0]["pairings"]
+        self.assertEqual([p["a"] for p in kids], ["Kid One", "Kid Three"])
+
     def test_a_derived_final_carries_no_copy_of_the_standings_either(self):
         from build import Source, build_event
         from parse import Post, Table
