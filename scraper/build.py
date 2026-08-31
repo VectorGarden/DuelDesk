@@ -187,16 +187,27 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
     one, or the start of one: the cut tables shorten "Jeffrey Michael Alexander
     Jones" to "Jeff Jones", and they drop given names from the front as readily
     as from the back -- "Mohammed Faisal Khan" is printed "Faisal Khan", so a
-    rule keyed on the forename would refuse him.
+    rule keyed on the forename alone would refuse him.
 
-    Being the only candidate is what makes that safe rather than reckless. YCS
-    Knoxville seated a Mohammed Imran Khan as well, and he is not a candidate
-    for "Faisal Khan"; had he been, neither Duelist would be folded. The same
-    uniqueness covers the initial nobody can expand -- "J Jones" is left alone
-    among five, which costs a record and does not invent one.
+    But the two have to agree about a forename or a surname, and not merely
+    share words. Without that, "Alexander Michael" folded into "Jeffrey Michael
+    Alexander Jones" at YCS Cancun -- two people, one of them erased, because
+    the shorter name's two words happen to sit inside the longer one. Matching
+    either end is enough for every real shortening: "Aaron Furman" keeps the
+    forename, "Faisal Khan" keeps the surname, and "Edgar Tinoco" for "Edgar
+    Gustavo Tinoco Serrano" keeps the forename where the second surname is the
+    one dropped.
+
+    Being the only candidate is what makes the rest safe rather than reckless.
+    YCS Knoxville seated a Mohammed Imran Khan as well, and he is not a
+    candidate for "Faisal Khan"; had he been, neither Duelist would be folded.
+    The same uniqueness covers the initial nobody can expand -- "J Jones" is
+    left alone among five, which costs a record and does not invent one.
 
     Two spellings seated in the same round are two people, whatever their names
-    look like: one Duelist does not play themselves. That case is left alone too.
+    look like: one Duelist does not play themselves. That case is left alone
+    too, and so is a target two names both reach for -- folding those would
+    seat one Duelist twice in a round that holds two.
     """
     names: set[str] = set()
     together: list[set[str]] = []      # names seated in one round
@@ -220,6 +231,11 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
     def apart(a: str, b: str) -> bool:
         return not any({a, b} <= group for group in together)
 
+    def ends_agree(sw: tuple[str, ...], lw: tuple[str, ...]) -> bool:
+        """Whether the two names agree about a forename or about a surname."""
+        return any(a == b or b.startswith(a)
+                   for a, b in ((sw[0], lw[0]), (sw[-1], lw[-1])))
+
     def shortens(sw: tuple[str, ...], lw: tuple[str, ...]) -> bool:
         """Whether every word of sw is a distinct word of lw, or starts one."""
         spare = list(lw)
@@ -238,7 +254,7 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
             continue                    # a lone word identifies nobody
         longer = [n for n in names
                   if len(_words(n)) > len(sw) and shortens(sw, _words(n))
-                  and apart(short, n)]
+                  and ends_agree(sw, _words(n)) and apart(short, n)]
         if len(longer) > 1:
             # Several people could be meant, so the bracket is asked instead.
             # A Duelist in a cut round played in the round before it, and YCS
@@ -260,6 +276,21 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
         while canon.get(canon[short]) and canon[short] not in seen:
             seen.add(canon[short])
             canon[short] = canon[canon[short]]
+
+    # Several names reaching for one target are usually one Duelist written
+    # several ways -- YCS Memphis has "Kamal Crooks", "Kamal Crooks-Valdez" and
+    # "Kamal Derrick El Crooks-Valdez", and refusing all three because there
+    # were three left the event with a Top 16 seeded from nobody.
+    #
+    # What cannot stand is two of them in one round, because that is one
+    # Duelist playing themselves. Those are left alone, and only those.
+    reached = defaultdict(set)
+    for short, long in canon.items():
+        reached[long].add(short)
+    for long, shorts in reached.items():
+        if len(shorts) > 1 and any(len(shorts & group) > 1 for group in together):
+            for short in shorts:
+                canon.pop(short, None)
 
     if canon:
         for s in sources:

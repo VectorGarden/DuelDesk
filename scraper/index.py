@@ -50,6 +50,9 @@ MIN_TERM_SHARE = 0.5
 # neither is an announcement, not coverage.
 TOURNAMENT = ("pairings", "standings")
 
+# How many events may share a word before it stops identifying any of them.
+FEW = 3
+
 
 @dataclass
 class Entry:
@@ -525,7 +528,16 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
     # event uses is taken at its word, and one from elsewhere has to say the
     # event's name. Same ambiguity rule too -- where two of them fit, neither
     # gets it.
-    for rec, ev in _by_date(out, _discovered_profiles(out), within):
+    # Who each word of a slug belongs to. "philadelphia" is in one event's
+    # vocabulary out of two hundred and six, which is what makes it evidence;
+    # "round" is in a hundred and forty-three, which is what makes it none.
+    disc = _discovered_profiles(out)
+    owners: dict[str, set[str]] = defaultdict(set)
+    for slug, prof in list(profiles.items()) + list(disc.items()):
+        for term in prof.terms:
+            owners[term].add(slug)
+
+    for rec, ev in _by_date(out, disc, within, owners):
         rec["event"], rec["event_confidence"] = ev, "discovered+date"
     return out
 
@@ -560,7 +572,8 @@ def _discovered_profiles(records: list[dict]) -> dict[str, Profile]:
     return out
 
 
-def _by_date(records: list[dict], profiles: dict[str, Profile], within):
+def _by_date(records: list[dict], profiles: dict[str, Profile], within,
+             owners: dict[str, set[str]] | None = None):
     """Still-unassigned posts, and the one discovered event each belongs to."""
     # The rounds each event already holds from a post that named it, which is
     # what a dated round is not allowed to duplicate.
@@ -622,5 +635,23 @@ def _by_date(records: list[dict], profiles: dict[str, Profile], within):
         if kind in TOURNAMENT:
             rnd = detect_round(f"{rec['slug']} {rec['url']}", kind)
             if (kind, rnd) in covered.get(hits[0], ()):
+                continue
+            # And a round that names another event is that event's. Every YCS
+            # post is filed under "ycs", and a category is enough for the prose
+            # this rule is mostly for and nowhere near enough for a table:
+            # "ycs-philadelphia-top-64-pairings-and-deck-types" was vouched for
+            # by its category and became YCS Cancun's Top 64, an event that
+            # never played one -- sixty-three Duelists in a round of
+            # sixty-four, because the blog had printed one of Philadelphia's
+            # twice.
+            #
+            # A word is evidence in proportion to how few events use it.
+            # "philadelphia" belongs to one vocabulary of two hundred and six;
+            # "round" belongs to a hundred and forty-three and says nothing.
+            # Only the rare ones are read, which is why YCS Minneapolis keeps
+            # standings called nothing but "standings-after-round-4-4".
+            named = [who for term in slug_terms(rec["slug"])
+                     if 0 < len(who := (owners or {}).get(term, set())) <= FEW]
+            if any(hits[0] not in who for who in named):
                 continue
         yield rec, hits[0]

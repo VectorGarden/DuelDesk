@@ -3346,6 +3346,38 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
                          "discovered")
         self.assertIsNone(got["top-32-pairings-6"][0])
 
+    def test_a_word_many_events_use_names_none_of_them(self):
+        # The rule reads a word in proportion to how few events use it. Four
+        # events calling themselves a Cup means "cup" identifies no event at
+        # all, and a round whose slug happens to carry it must not be refused
+        # on that -- which is what keeps YCS Minneapolis's "standings-after-
+        # round-4-4" attached to the event that actually played it.
+        got = self.assigned(
+            *self.coverage("alpha-open", "2023-06-24"),
+            *self.coverage("beta-cup", "2023-02-04"),
+            *self.coverage("gamma-cup", "2023-03-04"),
+            *self.coverage("delta-cup", "2023-04-08"),
+            *self.coverage("epsilon-cup", "2023-05-06"),
+            ("2023/ycs/cup-standings-after-round-9", "2023-06-25"))
+        self.assertEqual(got["cup-standings-after-round-9"],
+                         ("2023-alpha-open", "discovered+date"))
+
+    def test_a_round_naming_another_event_is_that_events(self):
+        # A category is enough for the prose this rule is mostly for, and every
+        # YCS post is filed under "ycs". It is nowhere near enough for a table:
+        # "ycs-philadelphia-top-64-pairings-and-deck-types" was vouched for by
+        # its category and became YCS Cancun's Top 64 -- an event that never
+        # played one, arriving with sixty-three Duelists in a round of
+        # sixty-four because the blog had printed one of Philadelphia's twice.
+        # Philadelphia ran months earlier, so its own window does not hold this
+        # post and only the other event's does. Nothing but the name says whose
+        # table it is.
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            *self.coverage("ycs-philadelphia", "2023-01-14"),
+            ("2023/ycs/ycs-philadelphia-top-64-pairings", "2023-06-25"))
+        self.assertIsNone(got["ycs-philadelphia-top-64-pairings"][0])
+
     def test_a_round_the_event_has_no_other_way_to_get_is_kept(self):
         # Refusing every dated round was the first fix and it was too blunt.
         # YCS Minneapolis 2016 is named by none of its own standings --
@@ -3582,6 +3614,52 @@ class TestFoldedNames(unittest.TestCase):
             [["1", "Jeffrey Michael Alexander", "Jones", "vs.", "Rashad Franklin", "Jones"]],
             [["1", "Jeff", "Jones", "vs.", "Rashad", "Jones"]])
         self.assertEqual(canon["Jeff Jones"], "Jeffrey Michael Alexander Jones")
+
+    def test_a_fold_needs_a_forename_or_a_surname_in_common(self):
+        # YCS Cancun seated an Alexander Michael and a Jeffrey Michael Alexander
+        # Jones. Every word of the first sits inside the second, and folding
+        # them erased a Duelist -- they agree about neither end of the name.
+        canon, _ = self.fold(
+            [["1", "Jeffrey Michael Alexander", "Jones", "vs.", "Kobe Louis", "Short"]],
+            [["1", "Alexander", "Michael", "vs.", "Kobe", "Short"]])
+        self.assertNotIn("Alexander Michael", canon)
+        self.assertEqual(canon["Kobe Short"], "Kobe Louis Short")
+
+    def test_the_surname_alone_is_enough(self):
+        # "Edgar Tinoco" for "Edgar Gustavo Tinoco Serrano": the blog prints one
+        # of two surnames, so the last words differ and the first agree.
+        canon, _ = self.fold(
+            [["1", "Edgar Gustavo", "Tinoco Serrano", "vs.", "Ann", "Alpha"]],
+            [["1", "Edgar", "Tinoco", "vs.", "Ann", "Alpha"]])
+        self.assertEqual(canon["Edgar Tinoco"], "Edgar Gustavo Tinoco Serrano")
+
+    def test_two_names_reaching_for_one_target_in_one_round_are_left_alone(self):
+        # Two seats folding to one name is one Duelist playing themselves.
+        from build import reconcile_names
+        sources = [
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Matthew Joseph", "Alvarado Ruiz", "vs.", "Ann", "Alpha"]]),
+            _src("https://x/t/", "Top 64 Pairings", PAIR_HEAD,
+                 [["1", "Matthew", "Alvarado", "vs.", "Matthew Joseph", "Alvarado"]])]
+        canon = reconcile_names(sources)
+        self.assertNotIn("Matthew Alvarado", canon)
+        self.assertNotIn("Matthew Joseph Alvarado", canon)
+
+    def test_one_duelist_written_three_ways_is_still_folded(self):
+        # YCS Memphis has "Kamal Crooks", "Kamal Crooks-Valdez" and "Kamal
+        # Derrick El Crooks-Valdez", never two of them in a round. Refusing all
+        # three because there were three left its Top 16 seeded from nobody.
+        from build import reconcile_names
+        sources = [
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Kamal Derrick El", "Crooks-Valdez", "vs.", "Ann", "Alpha"]]),
+            _src("https://x/t32/", "Top 32 Pairings", PAIR_HEAD,
+                 [["1", "Kamal", "Crooks-Valdez", "vs.", "Ann", "Alpha"]]),
+            _src("https://x/t16/", "Top 16 Pairings", PAIR_HEAD,
+                 [["1", "Kamal", "Crooks", "vs.", "Ann", "Alpha"]])]
+        canon = reconcile_names(sources)
+        self.assertEqual(canon["Kamal Crooks"], "Kamal Derrick El Crooks-Valdez")
+        self.assertEqual(canon["Kamal Crooks-Valdez"], "Kamal Derrick El Crooks-Valdez")
 
     def test_two_candidates_are_left_alone(self):
         # YCS Memphis ran a Nhan Thanh Nguyen and a Thanh Cong Nguyen, and a
