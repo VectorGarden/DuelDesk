@@ -328,6 +328,11 @@ tbody tr:hover{background:var(--surface-2)}
 .feature__side p{font:500 .82rem var(--mono); color:var(--text-2)}
 .feature__vs{font:700 .8rem var(--display); letter-spacing:.2em; color:var(--gold)}
 .feature__note{color:var(--text-2); font-size:.94rem; border-top:1px solid var(--line-soft); padding-top:1rem}
+/* Several feature matches in one round, which is 102 of the 357 that have any.
+   Separated rather than run together, so it reads as a list of matches and not
+   as one match with too many Duelists in it. */
+.feature__count{font:600 .8rem var(--body); letter-spacing:.06em; text-transform:uppercase; color:var(--text-3); margin-bottom:.25rem}
+.feature__one + .feature__one{border-top:1px solid var(--line); margin-top:1.25rem; padding-top:.25rem}
 @media (max-width:620px){.feature{grid-template-columns:1fr}}
 
 /* ---------------- COVERAGE FEED ---------------- */

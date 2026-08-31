@@ -1079,15 +1079,15 @@ class TestRoundDetail(unittest.TestCase):
         self.assertTrue(all(row["aRec"] is None for row in r1["pairings"]),
                         "nothing is known yet, and blank is the honest answer")
 
-    def test_a_feature_match_reaches_its_round(self):
+    def test_every_feature_match_reaches_its_round(self):
         r2 = next(r for r in self.fmt["rounds"] if r["label"] == "R2")
-        self.assertIsNotNone(r2["feature"], "no feature match on the round")
-        self.assertEqual(r2["feature"]["source"], "https://x/f-new/",
-                         "the newest of the two, not whichever arrived last")
+        self.assertEqual([f["source"] for f in r2["features"]],
+                         ["https://x/f-new/", "https://x/f-old/"],
+                         "both of them, newest first")
 
     def test_a_feature_match_states_only_what_the_post_says(self):
         r2 = next(r for r in self.fmt["rounds"] if r["label"] == "R2")
-        f = r2["feature"]
+        f = r2["features"][0]
         self.assertEqual((f["a"]["name"], f["b"]["name"]), ("Bo", "Di"))
         # A feature post has no table. Printing a final Swiss record beside a
         # round-two match would be a plausible-looking lie.
@@ -1096,7 +1096,7 @@ class TestRoundDetail(unittest.TestCase):
 
     def test_a_round_with_no_feature_says_so(self):
         r1 = next(r for r in self.fmt["rounds"] if r["label"] == "R1")
-        self.assertIsNone(r1["feature"])
+        self.assertEqual(r1["features"], [])
 
 
 class TestDerivedFinal(unittest.TestCase):
@@ -2841,7 +2841,7 @@ class TestChampionInTheBuild(unittest.TestCase):
         gen = next(f for f in ev["formats"] if f["format"] == "Genesys")
         final = next((r for r in gen["rounds"] if r["label"] == "Final"), None)
         self.assertIsNotNone(final, "the round is kept")
-        self.assertTrue(final["feature"])
+        self.assertTrue(final["features"])
 
     def test_an_event_nobody_announced_a_winner_for_says_so(self):
         # Null is the common answer across the archive, and a real one.
@@ -4683,35 +4683,55 @@ class TestAFeatureMatchThatNamesNobody(unittest.TestCase):
     def feature(self, title, posted):
         return _src(f"https://x/{posted}/", title, ["a"], [], posted=posted)
 
-    def test_a_readable_feature_beats_a_newer_unreadable_one(self):
-        from build import better_feature
-        readable = self.feature("Top 64 Feature Match: Ryan Yu vs. Dominic Couch", "10:00")
-        unreadable = self.feature("Top 64 Feature Match involving several people", "18:00")
-        self.assertTrue(better_feature(readable, unreadable))
-        self.assertFalse(better_feature(unreadable, readable))
-
-    def test_between_two_readable_ones_the_newest_wins(self):
-        from build import better_feature
-        older = self.feature("Round 4 Feature Match: A One vs. B Two", "10:00")
-        newer = self.feature("Round 4 Feature Match: C Three vs. D Four", "18:00")
-        self.assertTrue(better_feature(newer, older))
-        self.assertFalse(better_feature(older, newer))
-
-    def test_a_round_shows_the_feature_it_can_read(self):
+    def round_features(self, *feature_sources):
         import io
         from contextlib import redirect_stdout
         from build import build_event
         sources = [
             _src("https://x/p/", "Round 4 Pairings (Advanced Format)", PAIR_HEAD,
                  [["1", "Ann", "Alpha", "vs.", "Bo", "Beta"]]),
-            self.feature("Advanced Format Round 4 Feature Match: Ryan Yu vs. Dominic Couch", "10:00"),
-            self.feature("Advanced Format Round 4 Feature Match: Hani Jawhari and friends", "18:00"),
+            *feature_sources,
         ]
         with redirect_stdout(io.StringIO()):
             ev = build_event("YCS Philadelphia", sources)
-        feature = ev["formats"][0]["rounds"][0]["feature"]
-        self.assertIsNotNone(feature, "the round was left holding a feature naming nobody")
-        self.assertEqual(feature["a"]["name"], "Ryan Yu")
+        return ev["formats"][0]["rounds"][0]["features"]
+
+    def test_every_feature_match_the_round_carried_is_kept(self):
+        # 102 of the 357 rounds that have a feature match have more than one,
+        # and YCS Montreal's Top 4 had three. Showing the best of them threw
+        # away two thirds of the Duelists the blog wrote about that round.
+        got = self.round_features(
+            self.feature("Advanced Format Round 4 Feature Match: Ryan Yu vs. Dominic Couch", "10:00"),
+            self.feature("Advanced Format Round 4 Feature Match: C Three vs. D Four", "18:00"))
+        self.assertEqual([f["a"]["name"] for f in got], ["C Three", "Ryan Yu"],
+                         "both, newest first")
+
+    def test_a_feature_naming_nobody_is_dropped_rather_than_shown_empty(self):
+        # The title is the only structured thing about a feature post. YCS
+        # Philadelphia's newer Top 64 post was "Hani Jawhari and friends", and
+        # a panel of nobodies is worse than a shorter panel.
+        got = self.round_features(
+            self.feature("Advanced Format Round 4 Feature Match: Ryan Yu vs. Dominic Couch", "10:00"),
+            self.feature("Advanced Format Round 4 Feature Match: Hani Jawhari and friends", "18:00"))
+        self.assertEqual([f["a"]["name"] for f in got], ["Ryan Yu"])
+
+    def test_a_round_covered_only_by_feature_matches_is_still_a_round(self):
+        # Five of the 2026 North America WCQ's rounds arrived that way. The
+        # features are collected apart from the tables now, so a round whose
+        # only source is a feature match has to keep its place among the ones
+        # that have tables.
+        import io
+        from contextlib import redirect_stdout
+        from build import build_event
+        with redirect_stdout(io.StringIO()):
+            ev = build_event("YCS Philadelphia", [
+                _src("https://x/p/", "Round 4 Pairings (Advanced Format)", PAIR_HEAD,
+                     [["1", "Ann", "Alpha", "vs.", "Bo", "Beta"]]),
+                self.feature("Advanced Format Round 5 Feature Match: Ryan Yu vs. Dominic Couch", "10:00")])
+        rounds = ev["formats"][0]["rounds"]
+        self.assertEqual([r["label"] for r in rounds], ["R4", "R5"])
+        self.assertEqual(rounds[1]["features"][0]["a"]["name"], "Ryan Yu")
+        self.assertEqual(rounds[1]["pairings"], [])
 
 
 class TestRebuildingWhatAnOlderBuilderWrote(unittest.TestCase):

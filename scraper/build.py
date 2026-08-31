@@ -81,7 +81,12 @@ def round_key(post) -> tuple[str, Any]:
 #    eleven rounds and "Aaron Furman" in the Top 16 -- so a record looked up by
 #    name stopped at the cut, and the page showed two entrants where there was
 #    one. Every event with a cut is behind this.
-BUILD_VERSION = 6
+#
+# 7: every feature match a round carried, not the best of them. 102 of the 357
+#    rounds that have one have more than one -- YCS Montreal's Top 4 had three
+#    -- so keeping one threw away two thirds of the Duelists the blog wrote
+#    about that round. `feature` becomes `features`, a list, newest first.
+BUILD_VERSION = 7
 
 
 @dataclass
@@ -395,6 +400,7 @@ def build_format(name: str | None, sources: list[Source], *,
                   f"({', '.join(sorted(names))})")
 
     by_round: dict[tuple, dict[str, Source]] = defaultdict(dict)
+    features: dict[tuple, list[Source]] = defaultdict(list)
     floating_standings: list[Source] = []
     for s in sources:
         if s.post.kind not in ("pairings", "standings", "feature"):
@@ -429,16 +435,26 @@ def build_format(name: str | None, sources: list[Source], *,
             if s.post.kind == "standings":
                 floating_standings.append(s)
             continue
-        # A round can carry more than one feature match -- Genesys round 4 had two
-        # -- and the panel shows one. Take the newest rather than whichever the
-        # source order happened to leave last, so the choice is a decision and
-        # the same scrape twice running gives the same answer.
+        # A round can carry more than one feature match, and 102 of the 357
+        # rounds that have one have more than one -- YCS Montreal's Top 4 had
+        # three. Keeping the best of them threw away two thirds of the Duelists
+        # the blog wrote about that round, so all of them are kept and the
+        # panel shows all of them.
+        #
+        # Sorted rather than appended, so the same scrape twice running gives
+        # the same answer and the readable ones lead.
+        if s.post.kind == "feature":
+            features[key].append(s)
+            continue
         existing = by_round[key].get(s.post.kind)
-        if existing is not None and not (better_feature(s, existing)
-                                         if s.post.kind == "feature"
-                                         else better_table(s, existing)):
+        if existing is not None and not better_table(s, existing):
             continue
         by_round[key][s.post.kind] = s
+    # A round the blog covered with a feature match and nothing else is still a
+    # round -- five of the 2026 North America WCQ's arrived that way -- so its
+    # key has to exist even though no table put it there.
+    for key in features:
+        by_round[key]
     if not by_round:
         return None
 
@@ -534,7 +550,7 @@ def build_format(name: str | None, sources: list[Source], *,
         return out
 
     def feature_of(source):
-        """The round's feature match, as much of it as the post actually says.
+        """One feature match, as much of it as the post actually says.
 
         Deck and record stay None: a feature post is prose and photographs with
         no table in it, so the title is the only structured thing about it. Their
@@ -553,6 +569,18 @@ def build_format(name: str | None, sources: list[Source], *,
             "note": "Feature match coverage published by Konami.",
             "source": source.url,
         }
+
+    def features_of(key):
+        """Every feature match the round carries, newest first.
+
+        A title whose Duelists cannot be read names nobody, and a panel of
+        nobodies is worse than a shorter panel, so those are dropped rather
+        than shown empty -- which is also what kept YCS Philadelphia's Top 64
+        from being a round holding nothing at all.
+        """
+        newest = sorted(features.get(key, ()),
+                        key=lambda s: s.posted or "", reverse=True)
+        return [f for f in (feature_of(s) for s in newest) if f]
 
     rounds = []
     for i, key in enumerate(swiss_keys + cut_keys):
@@ -680,7 +708,7 @@ def build_format(name: str | None, sources: list[Source], *,
             "standingsAfter": swiss_count if is_cut else (key[1] if standings else None),
             "pairings": pairings,
             "standings": standings,
-            "feature": feature_of(entry.get("feature")),
+            "features": features_of(key),
             "source": source.url if source else None,
         })
 
@@ -707,7 +735,7 @@ def build_format(name: str | None, sources: list[Source], *,
                 "b": runner_up, "bRec": records.get(runner_up), "bDeck": None,
             }],
             "standings": [],
-            "feature": None,
+            "features": [],
             # The standings that say the final happened, since it has no post.
             "source": next((c.url for c in floating_standings
                             if any(r.get("status") == "cut"
@@ -733,7 +761,7 @@ def build_format(name: str | None, sources: list[Source], *,
     # already something this archive lives with: the count present may be lower
     # than the count played, and that is stated rather than treated as damage.
     rounds = [r for r in rounds
-              if r["pairings"] or r["standings"] or r.get("feature")]
+              if r["pairings"] or r["standings"] or r.get("features")]
 
     field = max((len(r["standings"]) for r in rounds), default=0)
     # Result posts naming no format are considered too. A two-format event
@@ -814,27 +842,6 @@ def better_table(candidate: Source, existing: Source) -> bool:
     rows = lambda s: len(s.post.table.rows) if s.post.table else 0
     if rows(candidate) != rows(existing):
         return rows(candidate) > rows(existing)
-    return (candidate.posted or "") >= (existing.posted or "")
-
-
-def better_feature(candidate: Source, existing: Source) -> bool:
-    """Whether `candidate` is the feature match to show for a round.
-
-    A round can carry more than one -- Genesys round 4 had two, and YCS
-    Philadelphia's Top 64 had two as well. The newest wins, so the choice is a
-    decision rather than whichever the source order happened to leave last.
-
-    But only among the ones that can be read. The panel needs the two Duelists,
-    and the title is the only structured thing about a feature post; a title
-    whose players cannot be parsed out gives the round a feature match that
-    names nobody. Philadelphia's newer Top 64 post was "Hani Jawhari Versus
-    Nicholas Scarangella", so the round it left behind held nothing at all --
-    no pairings, no standings, and a feature naming no one -- and the whole
-    event was rejected for it.
-    """
-    readable = lambda s: feature_players(s.post.title) is not None
-    if readable(candidate) != readable(existing):
-        return readable(candidate)
     return (candidate.posted or "") >= (existing.posted or "")
 
 

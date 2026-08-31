@@ -211,6 +211,12 @@ of (198 of the archive's 266 result posts are those), and exactly one of the cut
 named in it. Where a post names two, as a final's write-up does, whoever is on the near side of
 "defeated" won it.
 
+A round shows every feature match it carried, newest first. 102 of the 357 rounds that have one
+have more than one — YCS Montréal's Top 4 had three — so showing the best of them threw away two
+thirds of the Duelists the blog wrote about that round. A post whose title names no two Duelists is
+dropped rather than shown empty: the title is the only structured thing about a feature post, and a
+panel of nobodies is worse than a shorter panel.
+
 The final's own write-up counts too, where no post announces a winner outright. A feature match is
 prose about two Duelists and names both of them throughout, so only one sentence of it is read: the
 last one that crowns somebody. Everything else it says about champions is a preview or a

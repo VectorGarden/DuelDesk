@@ -510,14 +510,15 @@ test('nothing hidden by attribute is still displayed', async (t) => {
 /* A scraped feature post is prose and photographs: it names two Duelists and
    nothing else structured. The panel has to show that without inventing the
    rest, and without printing the punctuation that would have joined them. */
-function withFeature(feature) {
+function withFeatures(...features) {
   return withRounds((d) => {
     const f = d.formats[0];
     const r = f.rounds.find((x) => x.pairings.length) || f.rounds[0];
-    r.feature = feature;
+    r.features = features;
     d.__roundId = r.id;
   });
 }
+const withFeature = (feature) => withFeatures(feature);
 
 const SCRAPED_FEATURE = {
   a: { name: 'Adrien Racek', deck: null, record: null },
@@ -529,7 +530,7 @@ const SCRAPED_FEATURE = {
 test('a feature match with no deck or record prints neither', async (t) => {
   const page = await loadPage(withFeature(SCRAPED_FEATURE));
   t.after(() => page.close());
-  page.run(`selectRound(ROUNDS.find(r => r.feature).id); activeView='feature'; renderRound();`);
+  page.run(`selectRound(ROUNDS.find(r => r.features && r.features.length).id); activeView='feature'; renderRound();`);
   const text = page.text('#round-body');
   assert.match(text, /Adrien Racek/);
   assert.doesNotMatch(text, /·/, 'the separator has nothing to separate');
@@ -538,10 +539,52 @@ test('a feature match with no deck or record prints neither', async (t) => {
     'no empty paragraph either: a blank line under the name is still a line');
 });
 
+test('every feature match the round carried is shown', async (t) => {
+  /* 102 of the 357 rounds with a feature match have more than one, and YCS
+     Montreal's Top 4 had three. Showing the best of them threw away two thirds
+     of the Duelists the blog wrote about that round. */
+  const page = await loadPage(withFeatures(SCRAPED_FEATURE, {
+    ...SCRAPED_FEATURE,
+    a: { name: 'Ada Lovelace', deck: null, record: null },
+    b: { name: 'Bo Peep', deck: null, record: null },
+    source: 'https://yugiohblog.konami.com/2026/ycs/feature-2/',
+  }));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.features && r.features.length).id); activeView='feature'; renderRound();`);
+  const text = page.text('#round-body');
+  assert.match(text, /Adrien Racek/);
+  assert.match(text, /Ada Lovelace/, 'the second match is shown too');
+  assert.equal(page.$$('#round-body .feature').length, 2, 'one panel each');
+  assert.match(text, /2 feature matches/, 'and the round says how many there are');
+});
+
+test('a round with one feature match is not counted at it', async (t) => {
+  const page = await loadPage(withFeature(SCRAPED_FEATURE));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.features && r.features.length).id); activeView='feature'; renderRound();`);
+  assert.doesNotMatch(page.text('#round-body'), /1 feature match/,
+    'the ordinary round reads as it always did');
+});
+
+test('a round written by the older builder still shows its feature match', async (t) => {
+  /* Between this deploying and the archive being rebuilt, every event in
+     events/ still carries `feature` and no `features`. */
+  const page = await loadPage(withRounds((d) => {
+    const f = d.formats[0];
+    const r = f.rounds.find((x) => x.pairings.length) || f.rounds[0];
+    delete r.features;
+    r.feature = SCRAPED_FEATURE;
+    d.__roundId = r.id;
+  }));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.feature).id); activeView='feature'; renderRound();`);
+  assert.match(page.text('#round-body'), /Adrien Racek/);
+});
+
 test('a feature match links to the coverage it summarises', async (t) => {
   const page = await loadPage(withFeature(SCRAPED_FEATURE));
   t.after(() => page.close());
-  page.run(`selectRound(ROUNDS.find(r => r.feature).id); activeView='feature'; renderRound();`);
+  page.run(`selectRound(ROUNDS.find(r => r.features && r.features.length).id); activeView='feature'; renderRound();`);
   const link = page.$('#round-body .feature__note a');
   assert.ok(link, 'no link to the source post');
   assert.equal(link.getAttribute('href'), SCRAPED_FEATURE.source);
@@ -553,7 +596,7 @@ test('a feature match that does know the deck still shows it', async (t) => {
     a: { name: 'Ada', deck: 'Snake-Eye', record: {wins: 5, losses: 1, draws: 0, confidence: 'derived'} },
   }));
   t.after(() => page.close());
-  page.run(`selectRound(ROUNDS.find(r => r.feature).id); activeView='feature'; renderRound();`);
+  page.run(`selectRound(ROUNDS.find(r => r.features && r.features.length).id); activeView='feature'; renderRound();`);
   const text = page.text('#round-body');
   assert.match(text, /Snake-Eye/);
   assert.match(text, /5–1/);
