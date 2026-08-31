@@ -3621,10 +3621,16 @@ class TestABiographyIsNotASideEvent(unittest.TestCase):
 class TestCoverageFormat(unittest.TestCase):
     """What a post is coverage of, which is not always a format of the event."""
 
-    def test_dragon_duel_is_named_for_the_feed(self):
+    def test_each_side_tournament_is_named(self):
+        # Four tournaments, not one. Calling them all Dragon Duel said that
+        # three quarters of what that button held was something it is not.
         from parse import coverage_format
-        self.assertEqual(
-            coverage_format("Dragon Duel Top 8 Pairings", None), "Dragon Duel")
+        for title, want in (
+                ("Dragon Duel Top 8 Pairings", "Dragon Duel"),
+                ("Sunday ATTACK OF THE GIANT CARD!! Winners", "Attack of the Giant Card"),
+                ("Public Events Points Playoff Winner", "Public Events"),
+                ("Time Wizard Format Winner", "Time Wizard")):
+            self.assertEqual(coverage_format(title, None), want, title)
 
     def test_it_wins_over_the_events_own_format(self):
         # "Advanced Format Dragon Duel Feature Match" is Dragon Duel coverage
@@ -3634,17 +3640,29 @@ class TestCoverageFormat(unittest.TestCase):
             coverage_format("Advanced Format Dragon Duel Feature Match", "Advanced"),
             "Dragon Duel")
 
+    def test_a_main_event_that_reads_like_a_side_one_keeps_its_format(self):
+        # winners.SIDE_EVENT matches "invitational" for a different purpose.
+        # A UDS Invitational is a main event here with a hundred posts of its
+        # own, and filing those anywhere but their own format is a plain lie.
+        from parse import coverage_format
+        self.assertIsNone(coverage_format("UDS Invitational Round 4 Pairings", None))
+        self.assertEqual(
+            coverage_format("UDS Invitational Round 4 Pairings", "Advanced"), "Advanced")
+
     def test_an_ordinary_post_keeps_its_format(self):
         from parse import coverage_format
         self.assertEqual(coverage_format("Round 4 Pairings", "Genesys"), "Genesys")
         self.assertIsNone(coverage_format("Round 4 Pairings", None))
 
-    def test_the_builder_does_not_see_it(self):
+    def test_the_builder_does_not_see_them(self):
         # detect_format is what groups an event's rounds into tournaments. A
         # Dragon Duel table read as one of the main event's has cost this
-        # archive real damage, so the feed names it and the builder does not.
+        # archive real damage, so the feed names them and the builder does not.
         from parse import detect_format
-        self.assertIsNone(detect_format("Dragon Duel Top 8 Pairings"))
+        for title in ("Dragon Duel Top 8 Pairings",
+                      "Sunday ATTACK OF THE GIANT CARD!! Winners",
+                      "Public Events Points Playoff Winner"):
+            self.assertIsNone(detect_format(title), title)
 
 
 class TestFoldedNames(unittest.TestCase):
