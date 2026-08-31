@@ -3619,6 +3619,13 @@
       "coverageBy": "Konami",
       "path": "events/2013-north-american-wcq/rounds.json",
       "postCount": 68,
+      "champions": [
+        {
+          "format": null,
+          "name": "Patrick Jefferson Hoban",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -3655,6 +3662,13 @@
       "coverageBy": "Konami",
       "path": "events/2012-central-american-wcq/rounds.json",
       "postCount": 14,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alvaro Manuel Gonzalez Orea",
+          "deck": "Six Samurai"
+        }
+      ],
       "formats": [
         {
           "format": null,
