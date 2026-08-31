@@ -507,6 +507,112 @@ test('nothing hidden by attribute is still displayed', async (t) => {
   assert.deepEqual(offenders, [], 'hidden in the DOM but still painted');
 });
 
+/* ---- archetype export ---------------------------------------------------- */
+
+/* A cut of three rounds with decks on every seat, shaped like a real one: the
+   Top 4 is drawn from the Top 8 and the Final from the Top 4, which is what
+   makes counting them together a double count. */
+function withCut() {
+  return withRounds((d) => {
+    const f = d.formats[0];
+    f.rounds = f.rounds.filter((r) => r.phase !== 'Top cut');
+    const seat = (a, ad, b, bd, t) => ({table: t, a, aDeck: ad, aRec: null,
+                                        b, bDeck: bd, bRec: null});
+    const mk = (label, order, pairings) => ({
+      id: `c${order}`, label, phase: 'Top cut', state: 'done', order,
+      tables: pairings.length, posted: null, standingsAfter: null,
+      pairings, standings: [], features: [], source: 'https://x/c/',
+    });
+    /* Snake-Eye is seated first and is the rarest, so the order the decks are
+       met in is not the order they come out in. Without that the sort could be
+       deleted and every assertion here would still pass. */
+    f.rounds.push(
+      mk('Top 8', 101, [seat('Fi', 'Snake-Eye', 'Bo', 'Maliss', 1),
+                        seat('Cy', 'Ryzeal', 'Di', 'Ryzeal', 2),
+                        seat('Ed', 'Maliss', 'Ann', 'Ryzeal', 3),
+                        seat('Gi', 'Ryzeal', 'Ha', 'Maliss', 4)]),
+      mk('Top 4', 102, [seat('Ann', 'Ryzeal', 'Cy', 'Ryzeal', 1),
+                        seat('Ed', 'Maliss', 'Gi', 'Ryzeal', 2)]),
+      mk('Final', 103, [seat('Ann', 'Ryzeal', 'Ed', 'Maliss', 1)]),
+    );
+    d.__roundId = 'c101';
+  });
+}
+
+test('a round exports its own archetypes, commonest first', async (t) => {
+  const page = await loadPage(withCut());
+  t.after(() => page.close());
+  page.run(`selectRound('c101'); renderRound();`);
+  /* Through JSON, which is the thing being exported and also the only way to
+     compare across the page's realm: objects built in there are not
+     reference-equal to objects built out here, whatever they hold. */
+  assert.deepEqual(JSON.parse(page.run('JSON.stringify(archetypeCounts(roundOf(activeRound)))')), [
+    {archetype: 'Ryzeal', count: 4},
+    {archetype: 'Maliss', count: 3},
+    {archetype: 'Snake-Eye', count: 1},
+  ]);
+  /* Eight seats in a Top 8, which is the check that seats are Duelists: four
+     rows would have counted half of them. */
+  assert.equal(page.run('archetypeCounts(roundOf(activeRound)).reduce((n,x)=>n+x.count,0)'), 8);
+});
+
+test('the top cut counts each Duelist once, not once per round', async (t) => {
+  /* Ann plays the Top 8, the Top 4 and the Final. Counting the rounds together
+     would report her three times and Ryzeal would come to nine. */
+  const page = await loadPage(withCut());
+  t.after(() => page.close());
+  page.run(`selectRound('c101'); renderRound();`);
+  const rows = JSON.parse(page.run('JSON.stringify(topCutArchetypes())'));
+  assert.deepEqual(rows, [
+    {archetype: 'Ryzeal', count: 4},
+    {archetype: 'Maliss', count: 3},
+    {archetype: 'Snake-Eye', count: 1},
+  ]);
+  assert.equal(rows.reduce((n, x) => n + x.count, 0), 8, 'eight Duelists entered the cut');
+});
+
+test('both export buttons appear on a cut that has decks', async (t) => {
+  const page = await loadPage(withCut());
+  t.after(() => page.close());
+  page.run(`selectRound('c101'); renderRound();`);
+  assert.equal(page.$('#export-archetypes').hidden, false);
+  assert.equal(page.$('#export-top-cut').hidden, false);
+  assert.match(page.$('#export-archetypes').textContent, /Top 8/);
+});
+
+test('a round with no decks published offers no export', async (t) => {
+  const page = await loadPage(withRounds((d) => {
+    const f = d.formats[0];
+    const r = f.rounds.find((x) => x.pairings.length);
+    r.pairings.forEach((p) => { p.aDeck = null; p.bDeck = null; });
+    d.__roundId = r.id;
+  }));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.pairings.length).id); renderRound();`);
+  assert.equal(page.$('#export-archetypes').hidden, true);
+});
+
+test('a team event counts the Duelists inside the match, not the teams', async (t) => {
+  const page = await loadPage(withRounds((d) => {
+    const f = d.formats[0];
+    const r = f.rounds.find((x) => x.pairings.length);
+    r.phase = 'Top cut';
+    r.pairings = [{table: 1, a: 'Team One', b: 'Team Two', aDeck: null, bDeck: null,
+                   aRec: null, bRec: null,
+                   duels: [{table: 1, a: 'Ann', aDeck: 'Ryzeal', b: 'Bo', bDeck: 'Maliss'},
+                           {table: 2, a: 'Cy', aDeck: 'Ryzeal', b: 'Di', bDeck: 'Maliss'},
+                           {table: 3, a: 'Ed', aDeck: 'Ryzeal', b: 'Fi', bDeck: 'Snake-Eye'}]}];
+    d.__roundId = r.id;
+  }));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS.find(r => r.pairings.length).id); renderRound();`);
+  assert.deepEqual(JSON.parse(page.run('JSON.stringify(archetypeCounts(roundOf(activeRound)))')), [
+    {archetype: 'Ryzeal', count: 3},
+    {archetype: 'Maliss', count: 2},
+    {archetype: 'Snake-Eye', count: 1},
+  ]);
+});
+
 /* A scraped feature post is prose and photographs: it names two Duelists and
    nothing else structured. The panel has to show that without inventing the
    rest, and without printing the punctuation that would have joined them. */

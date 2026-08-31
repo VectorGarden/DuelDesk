@@ -1060,6 +1060,117 @@ const wrapTable = (label, inner) =>
    they played in as well as the seat they played it at. */
 const named = (p) => [p.a, p.b, ...(p.duels ?? []).flatMap(d => [d.a, d.b])];
 
+/* ---- archetype export ------------------------------------------------------
+   One round at a time, on purpose. Four of YCS Montreal's eight Top 8 Duelists
+   also played its Top 4 and its Final, so a count over "the top cut" would
+   report the finalists three times each and nobody would be able to tell.
+
+   Within a round the arithmetic is exact: each Duelist holds one seat and each
+   seat names one deck, so counting seats counts Duelists. A team event carries
+   its decks on the duels rather than on the match, because a team does not have
+   a deck -- three Duelists do -- and those are the seats there. */
+function archetypeCounts(r){
+  const counts = new Map();
+  for (const p of r.pairings ?? []){
+    const seats = p.duels?.length
+      ? p.duels.flatMap(d => [d.aDeck, d.bDeck])
+      : [p.aDeck, p.bDeck];
+    for (const deck of seats){
+      if (!deck) continue;              // a seat whose deck was never published
+      counts.set(deck, (counts.get(deck) ?? 0) + 1);
+    }
+  }
+  /* Commonest first, then alphabetically, so the same round exports the same
+     file twice running and two exports can be diffed. */
+  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+                    .map(([archetype, count]) => ({archetype, count}));
+}
+
+/* The whole published cut, as one object. A Duelist who reached the Final is
+   seated in the Top 8, the Top 4 and the Final, so counting the rounds together
+   would report the finalists three times each -- 4 of YCS Montreal's 8 Top 8
+   Duelists are in more than one of its rounds.
+   
+   So each Duelist is counted once, with the deck they were first published
+   holding. The widest round comes first, which is the one everybody is in, and
+   that makes this the breakdown of the cut as it was entered. */
+function topCutArchetypes(){
+  const rounds = (formatOf(activeFormat)?.rounds ?? [])
+    .filter(r => r.phase === 'Top cut' && (r.pairings ?? []).length);
+  const deckOf = new Map();
+  for (const r of rounds){
+    for (const p of r.pairings){
+      const seats = p.duels?.length
+        ? p.duels.flatMap(d => [[d.a, d.aDeck], [d.b, d.bDeck]])
+        : [[p.a, p.aDeck], [p.b, p.bDeck]];
+      for (const [who, deck] of seats){
+        if (who && deck && !deckOf.has(who)) deckOf.set(who, deck);
+      }
+    }
+  }
+  const counts = new Map();
+  for (const deck of deckOf.values()) counts.set(deck, (counts.get(deck) ?? 0) + 1);
+  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+                    .map(([archetype, count]) => ({archetype, count}));
+}
+
+function exportName(label){
+  const event = (eventInfo?.event?.name ?? 'event').toLowerCase();
+  return `${event} ${activeFormat ?? ''} ${label} archetypes`
+    .replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').toLowerCase() + '.json';
+}
+
+function renderExport(r){
+  const one = document.getElementById('export-archetypes');
+  const all = document.getElementById('export-top-cut');
+  if (one){
+    const rows = r ? archetypeCounts(r) : [];
+    one.hidden = rows.length === 0;
+    if (!one.hidden){
+      const seats = rows.reduce((n, x) => n + x.count, 0);
+      one.textContent = `Export ${r.label}`;
+      one.setAttribute('aria-label',
+        `Export the ${rows.length} archetypes across ${seats} Duelists in ${r.label} as JSON`);
+    }
+  }
+  if (all){
+    const rows = topCutArchetypes();
+    /* Hidden where it would only repeat the button beside it: an event whose
+       cut is one published round has nothing to compile. */
+    const cut = (formatOf(activeFormat)?.rounds ?? [])
+      .filter(x => x.phase === 'Top cut' && (x.pairings ?? []).length);
+    all.hidden = rows.length === 0 || cut.length < 2;
+    if (!all.hidden){
+      const duelists = rows.reduce((n, x) => n + x.count, 0);
+      all.textContent = 'Export top cut';
+      all.setAttribute('aria-label',
+        `Export the ${rows.length} archetypes across ${duelists} Duelists in the top cut as JSON`);
+    }
+  }
+}
+
+function download(rows, name){
+  /* A blob and an object URL: the file is made here and never leaves the
+     browser, which is the whole of what was asked for -- an export, not a
+     link between two sites. */
+  const blob = new Blob([JSON.stringify(rows, null, 2) + '\n'],
+                        {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+document.addEventListener('click', e => {
+  if (e.target.closest('#export-archetypes')){
+    const r = roundOf(activeRound);
+    if (r) download(archetypeCounts(r), exportName(r.label));
+  } else if (e.target.closest('#export-top-cut')){
+    download(topCutArchetypes(), exportName('top cut'));
+  }
+});
+
 function renderPairings(r){
   const rows = (r.pairings ?? []).filter(p => hit(...named(p)));
   if (!rows.length) return noMatch('tables');
@@ -1256,6 +1367,7 @@ function renderRound(){
     return;
   }
   const r = roundOf(activeRound);
+  renderExport(r);
   if (!r) return;
   if (r.state === 'upcoming'){
     roundBody.innerHTML = `<div class="empty"><h3>This round has not started</h3>
