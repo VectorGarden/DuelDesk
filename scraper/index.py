@@ -580,6 +580,19 @@ def _by_date(records: list[dict], profiles: dict[str, Profile], within):
         # belongs to -- so in practice they are left alone entirely.
         if SIDE_EVENT.search(rec["slug"].replace("-", " ")):
             continue
+        # And never a round. A date is enough to say a piece of writing belongs
+        # to the weekend an event ran; it is not enough to put a bracket in it.
+        #
+        # YCS Chicago published "ycs-chicago-top-32-pairings-and-deck-breakdown"
+        # and something else that weekend published "top-32-pairings-6", which
+        # names nobody. Dated into Chicago, it was the fuller of the two tables
+        # and won -- and then fourteen of the sixteen Duelists in Chicago's own
+        # Top 16 had not played in its Top 32, which is how the deploy found it.
+        #
+        # Rounds arrive by name, which is how discovery finds an event in the
+        # first place. This rule is for the prose around one.
+        if detect_kind(rec["slug"]) in TOURNAMENT:
+            continue
         entry = Entry(rec["url"], rec["year"], rec["category"], rec["event_slug"],
                       rec["slug"], rec["lastmod"])
         hits = [slug for slug, p in profiles.items()

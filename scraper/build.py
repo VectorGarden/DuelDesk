@@ -75,7 +75,13 @@ def round_key(post) -> tuple[str, Any]:
 #    read for a champion; a round written out as sentences is read as pairings;
 #    and an event discovered rather than filed can be dated, which is 1,879
 #    posts that had nowhere to go.
-BUILD_VERSION = 5
+#
+# 6: one Duelist, one name. The Swiss tables carry the name off the entry form
+#    and the cut tables carry the name people use -- "Aaron Chase Furman" for
+#    eleven rounds and "Aaron Furman" in the Top 16 -- so a record looked up by
+#    name stopped at the cut, and the page showed two entrants where there was
+#    one. Every event with a cut is behind this.
+BUILD_VERSION = 6
 
 
 @dataclass
@@ -157,6 +163,115 @@ def final_from_annotations(candidates: list[Source]) -> tuple[str, str] | None:
     return None
 
 
+def _words(name: str) -> tuple[str, ...]:
+    return tuple(w for w in re.split(r"[^A-Za-z]+", name.lower()) if w)
+
+
+def reconcile_names(sources: list[Source]) -> dict[str, str]:
+    """Give one Duelist one name for the whole event. Rewrites in place.
+
+    Konami's Swiss tables carry the name off the entry form and its cut tables
+    carry the name people use. YCS Chicago seated "Aaron Chase Furman" through
+    eleven rounds of Swiss and "Aaron Furman" in the Top 16, "Kobe Louis Short"
+    and then "Kobe Short", "Calvin Habib Tahan" and then "Calvin Tahan" -- the
+    same sixteen people, spelled two ways, in one event.
+
+    Nothing downstream survives that. A record is looked up by name, so the cut
+    pairings asked for a Duelist the standings had filed under a longer one and
+    got nothing; the page showed two entrants where there was one; and the
+    advancement check read a Top 16 whose Duelists had, as far as any name could
+    tell, not played in the Top 32.
+
+    A short name is folded into a longer one only where the longer one is the
+    only candidate. Every word of the short name has to be a word of the longer
+    one, or the start of one: the cut tables shorten "Jeffrey Michael Alexander
+    Jones" to "Jeff Jones", and they drop given names from the front as readily
+    as from the back -- "Mohammed Faisal Khan" is printed "Faisal Khan", so a
+    rule keyed on the forename would refuse him.
+
+    Being the only candidate is what makes that safe rather than reckless. YCS
+    Knoxville seated a Mohammed Imran Khan as well, and he is not a candidate
+    for "Faisal Khan"; had he been, neither Duelist would be folded. The same
+    uniqueness covers the initial nobody can expand -- "J Jones" is left alone
+    among five, which costs a record and does not invent one.
+
+    Two spellings seated in the same round are two people, whatever their names
+    look like: one Duelist does not play themselves. That case is left alone too.
+    """
+    names: set[str] = set()
+    together: list[set[str]] = []      # names seated in one round
+    at: dict[int, set[str]] = defaultdict(set)     # who appears, by round order
+    for s in sources:
+        if not s.post.table:
+            continue
+        here: set[str] = set()
+        for row in s.post.table.rows:
+            cells = ([row.get(side) or {} for side in ("a", "b")]
+                     if s.post.kind == "pairings" else [row])
+            here.update(c["name"] for c in cells if c.get("name"))
+        names |= here
+        together.append(here)
+        rd = s.post.round
+        if isinstance(rd, int):
+            at[rd] |= here
+        elif isinstance(rd, str):
+            at[CUT_ORDER_BASE + cut_rank(rd)] |= here
+
+    def apart(a: str, b: str) -> bool:
+        return not any({a, b} <= group for group in together)
+
+    def shortens(sw: tuple[str, ...], lw: tuple[str, ...]) -> bool:
+        """Whether every word of sw is a distinct word of lw, or starts one."""
+        spare = list(lw)
+        for w in sw:
+            fit = ([x for x in spare if x == w]
+                   or [x for x in spare if len(w) > 2 and x.startswith(w)])
+            if not fit:
+                return False
+            spare.remove(fit[0])
+        return True
+
+    canon: dict[str, str] = {}
+    for short in names:
+        sw = _words(short)
+        if len(sw) < 2:
+            continue                    # a lone word identifies nobody
+        longer = [n for n in names
+                  if len(_words(n)) > len(sw) and shortens(sw, _words(n))
+                  and apart(short, n)]
+        if len(longer) > 1:
+            # Several people could be meant, so the bracket is asked instead.
+            # A Duelist in a cut round played in the round before it, and YCS
+            # Memphis printed a Top 16 "Thanh Nguyen" over a Swiss holding both
+            # a Nhan Thanh Nguyen and a Thanh Cong Nguyen. Only one of them is
+            # in the Top 32, and that is the one who reached the Top 16.
+            first = min((r for r, who in at.items() if short in who), default=None)
+            before = [r for r in at if r < first] if first is not None else []
+            if before:
+                seeded = at[max(before)]
+                longer = [n for n in longer if n in seeded] or longer
+        if len(longer) == 1:
+            canon[short] = longer[0]
+
+    # Only the ends of a chain. "A Furman" -> "A C Furman" -> "A C D Furman"
+    # would otherwise leave the first two disagreeing about the third.
+    for short in list(canon):
+        seen = {short}
+        while canon.get(canon[short]) and canon[short] not in seen:
+            seen.add(canon[short])
+            canon[short] = canon[canon[short]]
+
+    if canon:
+        for s in sources:
+            for row in (s.post.table.rows if s.post.table else []):
+                cells = ([row.get(side) for side in ("a", "b")]
+                         if s.post.kind == "pairings" else [row])
+                for cell in cells:
+                    if cell and cell.get("name") in canon:
+                        cell["name"] = canon[cell["name"]]
+    return canon
+
+
 def disambiguate(sources: list[Source]) -> tuple[set[str], set[str]]:
     """Give two Duelists who share a name their regions back. Rewrites in place.
 
@@ -229,9 +344,17 @@ def build_format(name: str | None, sources: list[Source], *,
     wrongly shown as finished is merely stale, while one wrongly shown as live is
     telling the reader to refresh for results that will never come.
     """
-    # Before anything reads a name: two Duelists sharing one is a collision that
-    # merges their records, and it has to be settled once, up front, so the
-    # pairings, the standings and the derivation all see the same people.
+    # Before anything reads a name: one Duelist spelled two ways is as bad as
+    # two Duelists spelled one way, and both have to be settled once, up front,
+    # so the pairings, the standings and the derivation all see the same people.
+    # Folding comes first -- a collision between names nobody has reconciled yet
+    # is a collision between spellings, not between Duelists.
+    folded = reconcile_names(sources)
+    if folded:
+        print(f"  {name or 'main event'}: {len(folded)} "
+              f"{'name' if len(folded) == 1 else 'names'} folded into their "
+              f"longer form ({', '.join(f'{k} -> {v}' for k, v in sorted(folded.items())[:3])}"
+              f"{', ...' if len(folded) > 3 else ''})")
     shared, ambiguous = disambiguate(sources)
     for label, names in (("separated by region", shared),
                          ("left underived, nothing tells them apart", ambiguous)):
