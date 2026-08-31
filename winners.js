@@ -15,6 +15,14 @@ const liveRegion = document.getElementById('announce');
 
 let WINS = [];
 let query = '';
+/* The rows as rendered, so a roster button can name its own row by index
+   rather than by a name two winners could share. */
+let shown = [];
+/* Which rosters the reader has opened. Keyed by the event and the team rather
+   than by the row: a search re-orders the list, and an index would carry the
+   open state to whichever team happened to land in that position. */
+let open = new Set();
+const rosterKey = (r) => `${r.slug}|${r.name}`;
 
 const say = (msg) => { if (liveRegion) liveRegion.textContent = msg; };
 
@@ -36,6 +44,9 @@ function flatten(events){
         format: c.format || null,
         name: c.name,
         deck: c.deck || null,
+        /* A team champion's Duelists, where the manifest carries them. A
+           singles champion has none and the row is unchanged. */
+        members: c.members || null,
       });
     }
   }
@@ -61,6 +72,20 @@ const hit = (...fields) =>
 function repeats(rows){
   const n = new Map();
   for (const r of rows) n.set(r.name, (n.get(r.name) || 0) + 1);
+  return n;
+}
+
+/* How many events a Duelist has won, counting the ones they won as part of a
+   team. A team's title belongs to its three Duelists as much as to the name
+   they entered under -- Kamal Derrick El Crooks-Valdez has won alone and has
+   won on two teams, and a count that only saw the team name would say once. */
+function duelistWins(rows){
+  const n = new Map();
+  const add = (name) => name && n.set(name, (n.get(name) || 0) + 1);
+  for (const r of rows){
+    if (r.members?.length) r.members.forEach(m => add(m.name));
+    else add(r.name);
+  }
   return n;
 }
 
@@ -103,6 +128,7 @@ document.addEventListener('click', e => {
 
 function render(){
   const all = repeats(WINS);
+  const each = duelistWins(WINS);
   renderFormatFilters();
   const rows = WINS.filter(r =>
     (formatFilter === 'all' || formatOf(r) === formatFilter)
@@ -119,13 +145,17 @@ function render(){
     return;
   }
 
-  list.innerHTML = `<ol class="wins">` + rows.map(r => {
+  shown = rows;
+  list.innerHTML = `<ol class="wins">` + rows.map((r, i) => {
     const won = all.get(r.name) || 1;
     return `<li class="win">
       <div class="win__who">
         <b class="win__n">${esc(r.name)}</b>
         ${won > 1 ? `<span class="win__x" title="Events won in this archive">${esc(won)}&times;</span>` : ''}
         ${r.deck ? `<span class="win__d">${esc(r.deck)}</span>` : ''}
+        ${r.members?.length ? `<button type="button" class="roster-open" data-roster="${esc(i)}"
+            aria-expanded="${String(open.has(rosterKey(r)))}" aria-controls="roster-${esc(i)}"
+            >Roster</button>` : ''}
       </div>
       <div class="win__at">
         <a class="win__e" href="/?event=${encodeURIComponent(r.slug)}">${esc(r.event)}</a>
@@ -133,6 +163,16 @@ function render(){
         <span class="win__w">${esc(when(r.date))}</span>
         ${r.location ? `<span class="win__l">${esc(r.location)}</span>` : ''}
       </div>
+      ${r.members?.length ? `<ul class="win__roster" id="roster-${esc(i)}"${
+        open.has(rosterKey(r)) ? '' : ' hidden'}>${r.members.map(m => {
+          const mw = each.get(m.name) || 1;
+          return `<li>
+            <span class="roster__n">${esc(m.name)}</span>
+            ${mw > 1 ? `<span class="win__x" title="Events won in this archive"
+              >${esc(mw)}&times;</span>` : ''}
+            ${m.deck ? `<span class="roster__d">${esc(m.deck)}</span>` : ''}
+          </li>`;
+        }).join('')}</ul>` : ''}
     </li>`;
   }).join('') + `</ol>`;
 }
@@ -189,3 +229,20 @@ async function load(){
 
 applyTheme();
 load();
+
+/* Expanded in place rather than in a dialog. A roster is three names and the
+   row it belongs to is right there -- a modal would cover the list the reader
+   is reading to show them less than the row already implies. */
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-roster]');
+  if (!b) return;
+  const i = Number(b.dataset.roster);
+  const box = document.getElementById(`roster-${i}`);
+  if (!box) return;
+  const nowOpen = box.hidden;
+  box.hidden = !nowOpen;
+  b.setAttribute('aria-expanded', String(nowOpen));
+  const key = rosterKey(shown[i]);
+  if (nowOpen) open.add(key); else open.delete(key);
+  say(nowOpen ? `${shown[i]?.name}: ${shown[i]?.members?.length} Duelists` : 'Roster hidden');
+});

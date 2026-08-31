@@ -1327,6 +1327,18 @@ function championDeck(name){
   return null;
 }
 
+/* Who played for the winning team, from the round they won it in. A team has
+   no deck of its own -- three Duelists do -- and the duels are where they are. */
+function championRoster(name){
+  for (const p of deepestRound()?.pairings ?? []){
+    const side = p.a === name ? 'a' : (p.b === name ? 'b' : null);
+    if (!side) continue;
+    return (p.duels ?? []).filter(d => d[side])
+      .map(d => ({ name: d[side], deck: d[side + 'Deck'] ?? null }));
+  }
+  return [];
+}
+
 function renderChampion(){
   const won = formatOf(activeFormat)?.champion;
   const here = won && deepestRound() && activeRound === deepestRound().id;
@@ -1335,10 +1347,17 @@ function renderChampion(){
   if (!here){ champEl.innerHTML = ''; return; }
 
   const deck = championDeck(won);
+  /* A team champion is a name the reader cannot do anything with -- the three
+     Duelists are who won it. Only once the champion is revealed: the roster
+     names them, and showing it beside a hidden champion would give the
+     ending away to a reader who asked not to be told. */
+  const roster = championRoster(won);
   champEl.innerHTML = championShown
     ? `<span class="champ__k">Champion</span>
        <b class="champ__n">${esc(won)}</b>
        ${deck ? `<span class="champ__d">${esc(deck)}</span>` : ''}
+       ${roster.length ? `<button type="button" class="roster-open" data-roster
+           aria-haspopup="dialog">Roster</button>` : ''}
        <button type="button" class="btn btn--sm" data-champ aria-expanded="true">Hide</button>`
     : `<span class="champ__k">Champion</span>
        <button type="button" class="btn btn--sm" data-champ aria-expanded="false">Reveal</button>
@@ -1346,6 +1365,12 @@ function renderChampion(){
 }
 
 champEl?.addEventListener('click', e => {
+  if (e.target.closest('[data-roster]')){
+    const won = formatOf(activeFormat)?.champion;
+    openRoster({ name: won, members: championRoster(won),
+                 note: `Decks as published for ${deepestRound()?.label ?? 'the cut'}.` });
+    return;
+  }
   if (!e.target.closest('[data-champ]')) return;
   championShown = !championShown;
   renderChampion();

@@ -144,3 +144,77 @@ test('a name out of the data is escaped', async (t) => {
   assert.equal(page.$('#winners img'), null);
   assert.match(page.text('#winners'), /onerror/);
 });
+
+/* ── A team champion's roster ───────────────────────────────────────────── */
+
+const TEAMS = [
+  { slug: 't1', event: 'TEAM YCS São Paulo', updated: '2023-09-04',
+    path: 'events/t1/rounds.json',
+    champions: [{ format: null, name: 'Better Have It', deck: null, members: [
+      { name: 'Ruben Andres Penaranda', deck: 'Bystial Dragon Link' },
+      { name: 'Repeat Winner', deck: 'Purrely' }] }] },
+  { slug: 't2', event: 'TEAM YCS Las Vegas', updated: '2024-02-28',
+    path: 'events/t2/rounds.json',
+    champions: [{ format: null, name: 'Ares', deck: null, members: [
+      { name: 'Repeat Winner', deck: 'Maliss' }] }] },
+  { slug: 's1', event: 'YCS Montréal', updated: '2026-08-16', path: 'events/s1/rounds.json',
+    champions: [{ format: null, name: 'Ada Lovelace', deck: 'Elfnote' }] },
+];
+
+test('a team row expands its roster in place', async (t) => {
+  // Three names, and the row they belong to is right there. A dialog would
+  // cover the list the reader is reading to show them less than the row
+  // already implies.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  assert.equal(page.$$('[data-roster]').length, 2, 'a roster button per team row');
+  assert.equal(page.get('document.querySelector(".win__roster").hidden'), true,
+    'the roster is showing before it was asked for');
+  page.run(`document.querySelector('[data-roster]').click()`);
+  assert.equal(page.get('document.querySelector(".win__roster").hidden'), false);
+  assert.equal(page.get(`document.querySelector('[data-roster]').getAttribute('aria-expanded')`),
+    'true');
+});
+
+test('a singles row has no roster to expand', async (t) => {
+  const page = await loadPage(manifest([TEAMS[2]]));
+  t.after(() => page.close());
+  assert.equal(page.$$('[data-roster]').length, 0);
+  assert.equal(page.$$('.win__roster').length, 0);
+});
+
+test('a Duelist counts the events they won on a team', async (t) => {
+  // A team's title belongs to its Duelists as much as to the name they
+  // entered under. Counted by the team name alone, a Duelist who has won
+  // twice on two different teams reads as having won nothing twice.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  page.run(`document.querySelectorAll('[data-roster]').forEach(b => b.click())`);
+  const badge = (name) => page.$$('.win__roster li')
+    .filter((li) => li.querySelector('.roster__n').textContent.trim() === name)
+    .map((li) => li.querySelector('.win__x')?.textContent.trim() ?? null);
+  assert.deepEqual(badge('Repeat Winner'), ['2\u00d7', '2\u00d7'],
+    'two team titles for one Duelist are not counted');
+  assert.deepEqual(badge('Ruben Andres Penaranda'), [null],
+    'a single win should carry no badge');
+});
+
+test('an open roster survives a search that keeps its row', async (t) => {
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  // The row that will survive the search, not whichever is first: the list is
+  // newest first, so the first roster belongs to a different team.
+  page.run(`[...document.querySelectorAll('.win')]
+              .find(w => w.querySelector('.win__n').textContent.includes('Better Have It'))
+              .querySelector('[data-roster]').click()`);
+  // Through the search box, as a reader would: the page owns `query`, and
+  // setting it from outside does not reach the binding the script closed over.
+  page.run(`const q = document.getElementById('q');
+            q.value = 'better'; q.dispatchEvent(new Event('input'));`);
+  await new Promise((r) => setTimeout(r, 400));
+  assert.equal(page.$$('.win').length, 1, 'the search should leave the team row on screen');
+  assert.equal(page.get('document.querySelector("[data-roster]").getAttribute("aria-expanded")'),
+    'true', 'the button says it is collapsed');
+  assert.equal(page.get('document.querySelector(".win__roster").hidden'), false,
+    'the roster folded itself up on a re-render');
+});
