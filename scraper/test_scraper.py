@@ -3555,6 +3555,94 @@ class TestQualifierAbbreviation(unittest.TestCase):
         self.assertIsNone(wcq_name("2024-showcq", "", "2024-07-22"))
 
 
+class TestTheWorldChampionship(unittest.TestCase):
+    """One event a year, spelled five ways across five years."""
+
+    def test_every_spelling_settles_on_one_name(self):
+        from naming import worlds_name
+        for slug, name, ended, want in (
+                ("wcs-2010", "Wcs 2010", "2010-08-16", "World Championship 2010"),
+                ("yu-gi-oh-world-championship-2013", "Yu Gi Oh World Championship 2013",
+                 "2013-08-13", "World Championship 2013"),
+                # The one with no name at all: its coverage heads six posts
+                # "Pairings: ..." and writes the event's own name without a
+                # colon, so the vote never saw it.
+                ("yu-gi-oh-world-championship-2016", "Pairings",
+                 "2016-08-21", "World Championship 2016"),
+                ("yu-gi-oh-tcg-world-championship-2024",
+                 "Yu-Gi-Oh! TCG World Championship 2024", "2024-08-25",
+                 "World Championship 2024"),
+                ("yu-gi-oh-tcg-world-championship-2026",
+                 "Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026", "2026-08-30",
+                 "World Championship 2026")):
+            self.assertEqual(worlds_name(slug, name, ended), want, slug)
+
+    def test_the_name_the_archive_actually_gets(self):
+        # Through canonical_name, which is what run.py calls. Reaching the
+        # right answer in a helper nothing consults would fix nothing.
+        from naming import canonical_name
+        self.assertEqual(
+            canonical_name("Pairings", "yu-gi-oh-world-championship-2016",
+                           "2016-08-21", named=True)[0],
+            "World Championship 2016")
+        self.assertEqual(
+            canonical_name("Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026",
+                           "yu-gi-oh-tcg-world-championship-2026",
+                           "2026-08-30", named=True)[0],
+            "World Championship 2026")
+
+    def test_a_qualifier_is_not_the_championship_it_qualifies_for(self):
+        # WCQ stands for World Championship Qualifier, so the words are right
+        # there in the name and a rule reading for them would rename every
+        # qualifier in the archive after the event it is not.
+        from naming import worlds_name, canonical_name
+        self.assertIsNone(worlds_name("2026-north-america-wcq",
+                                      "North America WCQ 2026", "2026-06-28"))
+        self.assertIsNone(worlds_name("2019-north-america-wcq",
+                                      "World Championship Qualifier", "2019-06-30"))
+        self.assertEqual(canonical_name("North America WCQ 2026",
+                                        "2026-north-america-wcq", "2026-06-28")[0],
+                         "North America WCQ 2026")
+
+    def test_a_championship_with_no_year_is_not_named_for_one(self):
+        from naming import worlds_name
+        self.assertIsNone(worlds_name("world-championship", "World Championship", None))
+
+    def test_an_ordinary_event_is_left_alone(self):
+        from naming import worlds_name
+        self.assertIsNone(worlds_name("2026-08-quebec", "YCS Montréal", "2026-08-16"))
+        self.assertIsNone(worlds_name("2022-central-america-championship",
+                                      "Central America Yu-Gi-Oh! TCG Championship 2022",
+                                      "2022-11-06"))
+
+
+class TestANameThatFitsEveryEvent(unittest.TestCase):
+    """A candidate made of nothing but words for a kind of coverage."""
+
+    def test_pairings_is_not_an_event(self):
+        from naming import says_only_what_it_is
+        for no in ("Pairings", "Final Standings", "Top 8 Pairings", "Day 1 Wrap-Up"):
+            self.assertTrue(says_only_what_it_is(no), no)
+
+    def test_a_name_with_anything_of_its_own_is_kept(self):
+        # Checked against all 140 names in the archive: this rejects exactly
+        # one of them, and it is the one that is not a name.
+        from naming import says_only_what_it_is
+        for yes in ("YCS Montréal", "250th YCS", "Wcs 2010", "2016 World Championship",
+                    "North America WCQ 2026", "TEAM YCS Las Vegas", "UDS Invitational Lima"):
+            self.assertFalse(says_only_what_it_is(yes), yes)
+
+    def test_such_a_prefix_never_wins_the_vote(self):
+        from naming import event_name
+        # Six posts headed "Pairings: ..." and the event's own name written
+        # bare, which the convention cannot see. Pairings won, and the event
+        # reached the front page, the feed and the winners table called that.
+        titles = ["Pairings: Round 2", "Pairings: Round 3", "Pairings: Top 4",
+                  "Pairings: Quarterfinals!", "Pairings: World Championship Finals!",
+                  "2016 World Championship", "2016 World Championship"]
+        self.assertNotEqual(event_name(titles, "Fallback"), "Pairings")
+
+
 class TestEventPrefix(unittest.TestCase):
     """The event's name is the front of a post's slug, up to the post's subject."""
 
