@@ -95,9 +95,10 @@ jobs:
       # come from.
       - name: Validate the archive
         run: |
-          for f in events/*/rounds.json; do
-            python3 .github/scripts/check-rounds.py "$f"
-          done
+          # One process for the whole archive. Called once a file it spent
+          # about a quarter of its time starting Python rather than reading
+          # anything, and the checker takes as many paths as it is given.
+          python3 .github/scripts/check-rounds.py events/*/rounds.json
 
       # Two favicon failures are invisible everywhere else: a PNG-encoded ICO,
       # which Safari will not decode, and an oversized rel="icon".

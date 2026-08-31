@@ -170,9 +170,7 @@ jobs:
           if [ -z "$written" ]; then
             echo "No event file was written."
           else
-            for f in $written; do
-              python3 .github/scripts/check-rounds.py "$f"
-            done
+            python3 .github/scripts/check-rounds.py $written
             n=$(printf '%s\n' "$written" | wc -l | tr -d ' ')
             all=$(ls events/*/rounds.json | wc -l | tr -d ' ')
             echo "Checked $n of $all event files -- the ones this run wrote."
