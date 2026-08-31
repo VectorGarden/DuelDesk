@@ -2842,7 +2842,7 @@
       "champions": [
         {
           "format": null,
-          "name": "Juan Sebastian – Ecuador Andrade Castro",
+          "name": "Juan Sebastian Andrade Castro",
           "deck": "SPYRAL"
         }
       ],
@@ -3048,7 +3048,7 @@
       "champions": [
         {
           "format": null,
-          "name": "Kanaan – Venezuela Asfour Al Jaubri",
+          "name": "Kanaan Asfour Al Jaubri",
           "deck": "Zoodiacs"
         }
       ],
@@ -3089,13 +3089,6 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-guatemala-city-guatemala/rounds.json",
       "postCount": 23,
-      "champions": [
-        {
-          "format": null,
-          "name": "Gerald Yagans – Costa Rica South Chaves",
-          "deck": "Zoodiacs-Infernoid"
-        }
-      ],
       "formats": [
         {
           "format": null,
@@ -3369,8 +3362,8 @@
       "champions": [
         {
           "format": null,
-          "name": "Joaquin – Dracoslayer Performapals Rinaldi Petroni",
-          "deck": "Argentina"
+          "name": "Joaquin Rinaldi Petroni",
+          "deck": "Dracoslayer Performapals"
         }
       ],
       "formats": [
