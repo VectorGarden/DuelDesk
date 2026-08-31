@@ -204,7 +204,20 @@ def check_rounds(label, rounds, swiss_count):
             problems.append(f"{label} {r['label']}: {n} matches does not divide "
                             f"{competitors} into equal sides")
         else:
-            sides[r["label"]] = n * 2 // competitors
+            side = n * 2 // competitors
+            sides[r["label"]] = side
+            # And the Duelists are the ones the name calls for. The matches
+            # dividing evenly says the table is the right shape; this says it
+            # is the right size, which is what a table read into the wrong
+            # round gets wrong -- and unlike comparing against the round
+            # before, it holds whether or not that round was published.
+            # The sides of the match, which for a team event are the teams --
+            # the Duelists inside a team match are its duels, not its seats.
+            seated = {n for p in r["pairings"] for n in (p.get("a"), p.get("b"))
+                      if n is not None}
+            if len(seated) != competitors * side:
+                problems.append(f"{label} {r['label']}: {len(seated)} Duelists, "
+                                f"not the {competitors * side} its name calls for")
 
     if isinstance(swiss_count, int):
         # A Duelist arriving in a cut round has played the Swiss plus the cut
@@ -258,9 +271,8 @@ def check_rounds(label, rounds, swiss_count):
         stray = sorted(after_names - set(before))
         if stray:
             problems.append(f"{label} {later['label']}: {stray} did not play in {earlier['label']}")
-        if len(after_names) * 2 != len(before):
-            problems.append(f"{label} {later['label']}: {len(after_names)} Duelists from "
-                            f"{len(before)} in {earlier['label']}, expected half")
+
+
         for p in later.get("pairings") or []:
             for who, rec in ((p.get("a"), p.get("aRec")), (p.get("b"), p.get("bRec"))):
                 prev = before.get(who)
@@ -270,6 +282,13 @@ def check_rounds(label, rounds, swiss_count):
                 w1, l1 = rec.get("wins"), rec.get("losses")
                 if None in (w0, l0, w1, l1):
                     continue
+                # One win, whatever the labels say the gap is. A derived cut
+                # record counts the rounds the blog posted, not the rounds the
+                # bracket held -- the South America WCQ 2015 went Top 32 to
+                # Top 8 with no Top 16 between, and its Duelists carry the one
+                # win that round proves rather than the two they must have won.
+                # Reading the labels here instead would reject the builder for
+                # declining to invent the match nobody published.
                 if (w1, l1) != (w0 + 1, l0):
                     problems.append(f"{label} {later['label']}: {who} went "
                                     f"{fmt_record(prev)} -> {fmt_record(rec)}; "

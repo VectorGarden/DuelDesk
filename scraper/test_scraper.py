@@ -1337,6 +1337,50 @@ class TestProvenanceCheck(unittest.TestCase):
         self.assertEqual(code, 1)
         self.assertIn("feature match", out)
 
+    def cut(self, d):
+        """The event's cut rounds that published pairings."""
+        return [r for r in d["formats"][0]["rounds"]
+                if r.get("phase") == "Top cut" and r.get("pairings")]
+
+    def test_a_gap_in_the_published_cut_is_accepted(self):
+        # The South America WCQ 2015 published a Top 64, a Top 32 and a Top 8,
+        # and never a Top 16. Reading the two rounds either side of that gap as
+        # consecutive -- "8 Duelists from 32, expected half" -- rejected the
+        # whole event over a round Konami did not post.
+        def drop_the_middle(d):
+            rounds, cut = d["formats"][0]["rounds"], self.cut(d)
+            if len(cut) < 3:
+                self.skipTest("the subject has no cut round to drop")
+            gone = cut[1]
+            rounds.remove(gone)
+            # And the records lose the win that round was the evidence for. A
+            # derived cut record counts the rounds the blog posted, so this is
+            # what the builder itself produces when a round is not published --
+            # not a doctored file, but the shape of gapped coverage.
+            for r in cut[2:]:
+                for p in r["pairings"]:
+                    for k in ("aRec", "bRec"):
+                        if isinstance(p.get(k), dict) and p[k].get("wins"):
+                            p[k]["wins"] -= 1
+        code, out = self.check(drop_the_middle)
+        self.assertEqual(code, 0, out)
+
+    def test_a_cut_round_holding_the_wrong_number_of_duelists_is_rejected(self):
+        # What the gap rule used to catch, kept: a table read into the wrong
+        # round. Measured against the round's own name rather than against the
+        # round before it, so it holds across a gap too.
+        def merge_two(d):
+            first = self.cut(d)[0]
+            if len(first["pairings"]) < 2:
+                self.skipTest("the subject's first cut round has one match")
+            # One Duelist seated where another belongs: the matches still
+            # divide evenly and everyone here did play the round before, so
+            # only the count gives it away.
+            first["pairings"][1]["a"] = first["pairings"][0]["a"]
+        code, out = self.check(merge_two)
+        self.assertEqual(code, 1)
+        self.assertIn("its name calls for", out)
+
     def test_a_derived_record_for_a_duelist_seated_twice_is_rejected(self):
         # The defect this guards: two people sharing a name merge, and the
         # merged appearances make both their records wrong.
