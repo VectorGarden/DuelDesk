@@ -4529,6 +4529,82 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
                          ("Back For Seconds", "2 World Champs and John"))
         self.assertEqual(len(rows[0]["duels"]), 2)
 
+    def test_the_title_names_the_round_and_the_slug_only_fills_in(self):
+        # Konami types slugs by hand and sometimes types them wrong. The 2017
+        # South America WCQ published "Pairings for Round 3" under the slug
+        # south-america-wcq-pairings-for-top-3, and read together the slug won:
+        # 137 matches of Swiss became a Top 3, which is not a bracket, and the
+        # whole event was refused.
+        from parse import parse_post
+        html = ("<html><head><title>South America WCQ: Pairings for Round 3"
+                "</title></head><body><table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>vs</td><td>Bo B.</td></tr>"
+                "</tbody></table></body></html>")
+        url = "https://x/2017/south-america-wcq-pairings-for-top-3/"
+        self.assertEqual(parse_post(html, url).round, 3)
+
+    def test_a_slug_still_names_the_round_when_the_title_does_not(self):
+        # Most of the archive is read this way and has to stay that way.
+        from parse import parse_post
+        html = ("<html><head><title>South America WCQ Pairings</title></head>"
+                "<body><table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>vs</td><td>Bo B.</td></tr>"
+                "</tbody></table></body></html>")
+        url = "https://x/2017/south-america-wcq-pairings-for-round-9/"
+        self.assertEqual(parse_post(html, url).round, 9)
+
+    def test_a_headerless_table_continues_the_one_above_it(self):
+        # The 2017 South America WCQ publishes its Top 8 as four tables of one
+        # match each, none of them headed. Reading only the first gave a Top 8
+        # holding one match, which is not a bracket.
+        from parse import parse_post
+        one = ("<table><tbody><tr><td>{a}</td><td>vs</td><td>{b}</td></tr>"
+               "</tbody></table>")
+        html = ("<html><head><title>Top 8 Pairings</title></head><body>"
+                + "".join(one.format(a=a, b=b) for a, b in
+                          (("Ann A.", "Bo B."), ("Cy C.", "Di D."),
+                           ("Ed E.", "Fi F."), ("Gus G.", "Hal H.")))
+                + "</body></html>")
+        rows = parse_post(html).table.rows
+        self.assertEqual(len(rows), 4)
+        self.assertEqual([r["a"]["name"] for r in rows],
+                         ["Ann A.", "Cy C.", "Ed E.", "Gus G."])
+
+    def test_a_headerless_table_that_says_nothing_is_left_out(self):
+        # A deck breakdown under a pairings table is not more pairings. Only a
+        # row carrying a "vs." of its own is read as a continuation.
+        from parse import parse_post
+        html = ("<html><head><title>Top 8 Pairings</title></head><body>"
+                "<table><tbody><tr><td>Ann A.</td><td>vs</td><td>Bo B.</td></tr>"
+                "</tbody></table>"
+                "<table><tbody><tr><td>1</td><td>Zoodiac</td><td>13</td></tr>"
+                "<tr><td>2</td><td>True Draco</td><td>9</td></tr></tbody></table>"
+                "</body></html>")
+        # That second table infers a header of its own -- Rank | Player |
+        # Points -- so "has a header this reader can guess" is not enough to
+        # take its rows. It has to guess the same header.
+        self.assertEqual(len(parse_post(html).table.rows), 1)
+
+    def test_a_duel_the_blog_forgot_to_number_is_still_a_duel(self):
+        # The 2017 South America WCQ leaves the table cell of its second Top 4
+        # match empty. Read as the announcement of a team match, both Duelists
+        # became teams and the Top 4 held two players who never played in the
+        # Top 8.
+        from parse import parse_post
+        html = ("<html><head><title>Top 4 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>vs</td><td>Bo B.</td></tr>"
+                "<tr><td></td><td>Cy C.</td><td>vs</td><td>Di D.</td></tr>"
+                "</tbody></table></body></html>")
+        rows = parse_post(html).table.rows
+        self.assertEqual(len(rows), 2)
+        self.assertEqual((rows[1]["a"]["name"], rows[1]["b"]["name"]), ("Cy C.", "Di D."))
+        self.assertIsNone(rows[1]["table"], "it has no number because none was written")
+        self.assertNotIn("duels", rows[1], "it is a duel, not a team match")
+
     def test_a_team_announcement_is_not_a_caption(self):
         # The caption rule reads past a row that names no columns. A team
         # announcement names no columns either, and it is data.

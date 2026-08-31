@@ -573,9 +573,26 @@ def parse_table(doc: str) -> Table | None:
     # only then. Pages carry other tables -- a deck breakdown, a prize list --
     # and those have headers of their own, so they stay out rather than having
     # their rows read as pairings.
+    #
+    # And a table with no header of its own continues it when its own rows say
+    # what they are. The 2017 South America WCQ publishes its Top 8 as four
+    # tables of one match each, none of them headed:
+    #
+    #   Rodrigues de Souza, Rafael Jose (Zoodiac) vs Rego Bastos, Daniel Aires
+    #   Magalhaes Lima, Andre Felipe (True Draco) vs Lopes de Aguiar, Renato
+    #
+    # Reading only the first gave a Top 8 with one match in it, which is not a
+    # bracket, and the event was refused.
+    #
+    # Only where the row carries a "vs." of its own. That is the one shape a
+    # headerless row states outright; a ranked one could be standings, a prize
+    # list or a deck breakdown, and merging those on a guess would put rows
+    # into a table that never claimed them.
     for rows in tables[1:]:
         if rows[0] == header:
             body += rows[1:]
+        elif (made := _infer_header(rows[0])) == header and "vs." in header:
+            body += rows
     kind = _classify_table(header)
     out: list[dict[str, Any]] = []
 
@@ -729,6 +746,38 @@ def parse_table(doc: str) -> Table | None:
         # of its own, and the round reported three Duelists a side where the
         # Top 16 reported one. The event was rejected for disagreeing with
         # itself.
+        def unnumbered_duel(cells) -> bool:
+            """A duel the blog forgot to number.
+
+            The 2017 South America WCQ leaves the table cell of its second Top
+            4 match empty:
+
+                1 | Lopes de Aguiar, Renato   | vs | Rodrigues de Souza, Rafael
+                  | Delgado Chavarry, Santino | vs | Asfour Al Jaubri, Kanaan
+
+            Read as the announcement of a team match, both Duelists became
+            teams, the Top 4 held two players who never played in the Top 8,
+            and the event was refused.
+
+            A row as wide as the header, with the separator in the header's own
+            column and nothing else in it blank, is the shape of a duel
+            whatever its first cell says. The team layouts fail that last part:
+            TEAM YCS heads a match ['', 'Ares', '', 'vs.', '3 Lil Pigs', ''],
+            which is full width and separated in the right place but empty in
+            three cells that a duel would fill.
+            """
+            if vs_at is None or len(cells) != len(header):
+                return False
+            # Forgotten, not filled in with something else. A team match
+            # announces itself in that very cell -- ['Team', 'Alpha Squad',
+            # 'vs.', 'Beta Crew'] -- and is a match rather than a duel.
+            if start and cells[0].strip():
+                return False
+            if cells[vs_at].strip().lower() not in _VS_CELL:
+                return False
+            return all(c.strip() for i, c in enumerate(cells)
+                       if i >= start and i != vs_at)
+
         def team_row(cells):
             named = [c for c in cells
                      if c.strip().lower() not in ("team", "vs.", "vs", "")]
@@ -740,7 +789,7 @@ def parse_table(doc: str) -> Table | None:
             # announcement of a team match or nothing this can read. It is
             # never a duel, and reading its first cell as a number is how a
             # blank one crashed the whole event.
-            if numbered and (not r or not r[0].strip().isdigit()):
+            if numbered and (not r or not r[0].strip().isdigit()) and not unnumbered_duel(r):
                 pair = team_row(r)
                 if pair:
                     # A team's name is not a Duelist's, and must not be read
@@ -767,7 +816,8 @@ def parse_table(doc: str) -> Table | None:
                 if a["name"] and b["name"]:
                     out.append({"table": None, "a": a, "b": b})
                 continue
-            duel = {"table": int(r[0]), "a": side(lcells, left), "b": side(rcells, right)}
+            duel = {"table": int(r[0]) if r[0].strip().isdigit() else None,
+                    "a": side(lcells, left), "b": side(rcells, right)}
             if match is None:
                 # No row announced a match, but the sides may still say which
                 # teams they played for. TEAM YCS Las Vegas 2020 writes its
@@ -1093,7 +1143,20 @@ def parse_post(doc: str, url: str = "") -> Post:
     if (table and kind in ("pairings", "standings")
             and table.kind in ("pairings", "standings") and table.kind != kind):
         kind = table.kind
-    rnd = detect_round(basis, kind)
+    # The title names the round, and the slug only fills in when it does not.
+    # Konami types slugs by hand and sometimes types them wrong: the 2017 South
+    # America WCQ published
+    #
+    #   "South America WCQ: Pairings for Round 3"
+    #   south-america-wcq-pairings-for-top-3
+    #
+    # and read together the slug won, so 137 matches of Swiss became a Top 3.
+    # Nothing about a bracket of three is possible, and the event was refused.
+    #
+    # The same reasoning parse_post already applies to the kind, where the slug
+    # said pairings and the page said standings: what the page calls itself
+    # beats what its address does.
+    rnd = detect_round(title, kind) or detect_round(basis, kind)
     return Post(
         title=title,
         kind=kind,
