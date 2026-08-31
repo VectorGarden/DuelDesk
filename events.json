@@ -577,6 +577,24 @@
       ]
     },
     {
+      "slug": "2025-south-america-wcq",
+      "event": "South America WCQ 2025",
+      "updated": "2025-06-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-south-america-wcq/rounds.json",
+      "postCount": 21,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 439,
+          "rounds": 13
+        }
+      ]
+    },
+    {
       "slug": "2025-05-ycs-providence",
       "event": "YCS Providence",
       "updated": "2025-05-30",
@@ -1292,6 +1310,32 @@
       ]
     },
     {
+      "slug": "2023-ycs-cancun-mexico",
+      "event": "YCS Cancun",
+      "location": "Cancun, Mexico",
+      "updated": "2023-09-17",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-ycs-cancun-mexico/rounds.json",
+      "postCount": 26,
+      "champions": [
+        {
+          "format": null,
+          "name": "Key Andree Chavez Curioso",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 696,
+          "rounds": 13
+        }
+      ]
+    },
+    {
       "slug": "2023-ycs-vancouver",
       "event": "YCS Vancouver",
       "updated": "2023-09-10",
@@ -1313,6 +1357,31 @@
           "swissRounds": 10,
           "duelists": 737,
           "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event",
+      "event": "2023 Yu Gi Oh Tcg Remote Duel Extravaganza Main Event",
+      "updated": "2023-07-30",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event/rounds.json",
+      "postCount": 29,
+      "champions": [
+        {
+          "format": null,
+          "name": "Carlos Andres Perez Padilla",
+          "deck": "Labrynth"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 6,
+          "duelists": 116,
+          "rounds": 10
         }
       ]
     },
@@ -1990,6 +2059,31 @@
       ]
     },
     {
+      "slug": "2019-ycs-ft-worth",
+      "event": "YCS Ft. Worth",
+      "updated": "2019-10-07",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-ft-worth/rounds.json",
+      "postCount": 64,
+      "champions": [
+        {
+          "format": null,
+          "name": "Ramiro Garcia",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 110,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "2019-ycs-guadalajara",
       "event": "YCS Guadalajara",
       "updated": "2019-09-29",
@@ -2065,6 +2159,25 @@
       ]
     },
     {
+      "slug": "2019-08-uds-summer-invitational-2019-indianapolis-in",
+      "event": "UDS Invitational Indianapolis",
+      "location": "Indianapolis, IN",
+      "updated": "2019-08-24",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-08-uds-summer-invitational-2019-indianapolis-in/rounds.json",
+      "postCount": 105,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 277,
+          "rounds": 16
+        }
+      ]
+    },
+    {
       "slug": "2019-south-america-wcq",
       "event": "South America WCQ 2019",
       "updated": "2019-06-16",
@@ -2111,6 +2224,31 @@
           "swissRounds": 10,
           "duelists": 779,
           "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2019-ycs-knoxville",
+      "event": "YCS Knoxville",
+      "updated": "2019-06-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-knoxville/rounds.json",
+      "postCount": 52,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jesse Dean Kotton",
+          "deck": "Danger! Thunder Dragon"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 896,
+          "rounds": 15
         }
       ]
     },
@@ -2200,6 +2338,43 @@
           "swissRounds": 13,
           "duelists": 558,
           "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2019-uds-invitational-las-vegas-nv",
+      "event": "UDS Invitational Las Vegas",
+      "location": "Las Vegas, NV",
+      "updated": "2019-03-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-uds-invitational-las-vegas-nv/rounds.json",
+      "postCount": 51,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 363,
+          "rounds": 17
+        }
+      ]
+    },
+    {
+      "slug": "2019-ycs-chicago",
+      "event": "YCS Chicago",
+      "updated": "2019-02-04",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2019-ycs-chicago/rounds.json",
+      "postCount": 70,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1583,
+          "rounds": 16
         }
       ]
     },
@@ -2779,14 +2954,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-minneapolis/rounds.json",
-      "postCount": 65,
-      "champions": [
-        {
-          "format": null,
-          "name": "Marcus Hayden",
-          "deck": "Metalfoes"
-        }
-      ],
+      "postCount": 54,
       "formats": [
         {
           "format": null,
