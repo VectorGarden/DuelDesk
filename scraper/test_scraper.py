@@ -3683,6 +3683,38 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         self.assertEqual(t.kind, "standings")
         self.assertEqual((t.rows[0]["name"], t.rows[0]["points"]), ("Ann Alpha", 12))
 
+    def test_a_team_row_narrower_than_its_table(self):
+        # TEAM YCS Las Vegas heads its Top 8 with five columns and announces
+        # each team match with four. The length check dropped those rows, so
+        # every duel became a match of its own and the round reported three
+        # Duelists a side where the Top 16 reported one -- and the event was
+        # rejected for disagreeing with itself.
+        html = ("<html><head><title>Top 8 Pairings</title></head><body><table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>Deck Type</td>"
+                "<td>Player 2</td><td>Deck Type</td></tr>"
+                "<tr><td>Team</td><td>Alpha Squad</td><td>vs.</td><td>Beta Crew</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>Ryzeal</td><td>Bo B.</td><td>Maliss</td></tr>"
+                "<tr><td>2</td><td>Cy C.</td><td>Ryzeal</td><td>Di D.</td><td>Maliss</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual(len(t.rows), 1, "one team match, not two singles")
+        self.assertEqual((t.rows[0]["a"]["name"], t.rows[0]["b"]["name"]),
+                         ("Alpha Squad", "Beta Crew"))
+        self.assertEqual(len(t.rows[0]["duels"]), 2)
+
+    def test_the_other_team_row_shape_too(self):
+        # The same announcement written "Team | A | Team | B" rather than with
+        # a "vs." in the middle.
+        html = ("<html><head><title>Top 16 Pairings</title></head><body><table><tbody>"
+                "<tr><td>Table</td><td>Duelist 1</td><td>vs.</td><td>Duelist 2</td></tr>"
+                "<tr><td>Team</td><td>Alpha Squad</td><td>Team</td><td>Beta Crew</td></tr>"
+                "<tr><td>1</td><td>Ann A.</td><td>vs.</td><td>Bo B.</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual((t.rows[0]["a"]["name"], t.rows[0]["b"]["name"]),
+                         ("Alpha Squad", "Beta Crew"))
+        self.assertEqual(len(t.rows[0]["duels"]), 1)
+
     def test_a_ranking_is_never_a_pairing(self):
         # TEAM YCS La Paz heads its standings "Rank | Team Name | Duelist
         # Names | Points". Two of those read like sides, so asking about sides
