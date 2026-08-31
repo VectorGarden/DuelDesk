@@ -1136,24 +1136,6 @@
       ]
     },
     {
-      "slug": "2024-02-team-ycs-las-vegas-nv",
-      "event": "TEAM YCS Las Vegas",
-      "updated": "2024-02-28",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2024-02-team-ycs-las-vegas-nv/rounds.json",
-      "postCount": 65,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 10,
-          "duelists": 510,
-          "rounds": 14
-        }
-      ]
-    },
-    {
       "slug": "2024-undisputed-uds-championship",
       "event": "Undisputed UDS Championship",
       "updated": "2024-02-18",
