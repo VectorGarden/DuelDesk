@@ -923,7 +923,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-north-america-wcq/rounds.json",
-      "postCount": 116,
+      "postCount": 85,
       "champions": [
         {
           "format": null,
@@ -936,7 +936,7 @@
           "format": null,
           "swissRounds": 12,
           "duelists": 2639,
-          "rounds": 18
+          "rounds": 17
         }
       ]
     },
@@ -991,7 +991,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-ycs-indianapolis/rounds.json",
-      "postCount": 86,
+      "postCount": 67,
       "champions": [
         {
           "format": null,
@@ -1004,7 +1004,7 @@
           "format": null,
           "swissRounds": 11,
           "duelists": 1620,
-          "rounds": 15
+          "rounds": 14
         }
       ]
     },
@@ -1137,7 +1137,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-undisputed-uds-championship/rounds.json",
-      "postCount": 25,
+      "postCount": 24,
       "formats": [
         {
           "format": null,
@@ -1206,7 +1206,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-richmond/rounds.json",
-      "postCount": 67,
+      "postCount": 56,
       "champions": [
         {
           "format": null,
@@ -1256,7 +1256,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-indianapolis/rounds.json",
-      "postCount": 78,
+      "postCount": 63,
       "champions": [
         {
           "format": null,
@@ -1281,7 +1281,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-vancouver/rounds.json",
-      "postCount": 72,
+      "postCount": 59,
       "champions": [
         {
           "format": null,
@@ -1306,7 +1306,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-north-america-wcq/rounds.json",
-      "postCount": 103,
+      "postCount": 82,
       "champions": [
         {
           "format": null,
@@ -1349,7 +1349,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-north-america-remote-duel-ycs/rounds.json",
-      "postCount": 36,
+      "postCount": 35,
       "champions": [
         {
           "format": null,
