@@ -649,7 +649,27 @@ def parse_table(doc: str) -> Table | None:
             # a first/last split is the first, not the joined string.
             cleaned, region = [], None
             for c in parts:
-                text, spelt, played = read_annotation(_text(c))
+                text = _text(c)
+                # A Team YCS that does not announce the team in a row of its
+                # own writes it on every Duelist instead:
+                #
+                #   La Revolucion: Lozano, Connor Joseph
+                #
+                # The colon is the team's and the comma is the Duelist's, and
+                # normalise_name partitions on the comma -- so the team ended
+                # up in the middle of the name: "Connor Joseph La Revolucion:
+                # Lozano". 32,791 names across eleven events read that way.
+                #
+                # Only where a comma follows, which is the shape the blog
+                # writes. A team's own name can hold a colon -- "Beetron 2:
+                # Electric Boogaloo", "Lift Yourself 1:58" -- and those come
+                # through team_row rather than here, but the comma keeps this
+                # off them whatever route they take.
+                if ":" in text:
+                    before, _, after = text.partition(":")
+                    if before.strip() and "," in after:
+                        text = after.strip()
+                text, spelt, played = read_annotation(text)
                 text, code = strip_region(text)
                 region = region or code or spelt
                 deck = deck or played
