@@ -123,7 +123,12 @@ def round_key(post) -> tuple[str, Any]:
 #     above the header rather than below it, with a byte order mark inside
 #     every cell, so the row was neither recognised as an announcement nor
 #     kept: the match's three duels stood as three separate matches.
-BUILD_VERSION = 14
+# 15: a title held elsewhere is not a win here. "UDS Champions at YCS
+#     Guatemala" is a photograph of Duelists holding an Ultimate Duelist
+#     Series invitation, and it names one who reached the Top 4 -- so it was
+#     read as announcing this event's winner, disagreed with the post that
+#     actually did, and left the event with no champion.
+BUILD_VERSION = 15
 
 
 @dataclass
