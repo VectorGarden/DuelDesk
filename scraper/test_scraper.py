@@ -2210,6 +2210,51 @@ class TestChampion(unittest.TestCase):
             "World Championship Qualifier!", ""))
         self.assertTrue(announces_a_winner("..And the 2013 Yu-Gi-Oh! World Champions are…", ""))
 
+    def test_a_team_is_named_by_its_duelists(self):
+        # A team enters under a name it chose -- "Ares", "Legionnaire" -- and
+        # one word is not a name ordinary prose can be searched for. The
+        # coverage announces the win by naming the people instead:
+        #
+        #   "Pierre Burgals, Matthieu Bricard, and Kevin Rodrigues Goncalves
+        #    are the TEAM YCS Las Vegas Champions!!"
+        from winners import champion
+        got = champion(
+            ["Ares", "Neal 4 Papa"],
+            [self.post("And the Winners Are…",
+                       "We have three new YCS Champions! Pierre Burgals, "
+                       "Matthieu Bricard, and Kevin Rodrigues Goncalves are "
+                       "the TEAM YCS Las Vegas Champions!!")],
+            rosters={"Ares": ["Kevin Rodrigues Goncalves", "Matthieu Nicolas Bricard",
+                              "Pierre Burgals"],
+                     "Neal 4 Papa": ["Cameron Taylor Neal", "Cristian Rafael Urena",
+                                     "Antonio Papa"]})
+        self.assertEqual(got, "Ares")
+
+    def test_a_roster_does_not_settle_a_post_naming_both_teams(self):
+        # TEAM YCS Las Vegas 2024 names the winning team and, further down,
+        # the runner-up. Two candidates named and no "defeated" between them
+        # is a disagreement, and guessing at the first one would be the rule
+        # that cost YCS Guatemala City its champion.
+        from winners import champion
+        got = champion(
+            ["Supreme Pro", "The Jawhari Brothers"],
+            [self.post("And the Winner is…",
+                       "The Champions of TEAM YCS Las Vegas are Team The Jawhari "
+                       "Brothers! That is Hisam Jawhari, Hani Jawhari, and "
+                       "Christopher LeBlanc! Supreme Pro finished second.")],
+            rosters={"The Jawhari Brothers": ["Hani Yasser Jawhari", "Hisam Yasser Jawhari"],
+                     "Supreme Pro": ["Hansel Erik Aguero", "Pakawat Thomas Pamornsut"]})
+        self.assertIsNone(got)
+
+    def test_a_singles_event_is_unchanged_by_rosters(self):
+        # No rosters, so the question asked is exactly the one asked before.
+        from winners import champion
+        got = champion(["Barrett Arthur Keys", "Someone Else Entirely"],
+                       [self.post("And the Winner Is…",
+                                  "Congratulations to Barrett Arthur Keys!")],
+                       rosters={})
+        self.assertEqual(got, "Barrett Arthur Keys")
+
     def test_the_one_duelist_the_post_names_is_the_champion(self):
         from winners import champion
         got = champion(["Barrett Arthur Keys", "Someone Else Entirely"],

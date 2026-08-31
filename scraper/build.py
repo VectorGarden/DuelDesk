@@ -139,7 +139,12 @@ def round_key(post) -> tuple[str, Any]:
 #     round. #132 read any sentence saying "against" as a pairing, which made
 #     a clause into a Duelist; and YCS Toronto's Top 4 write-up spells
 #     "Alexandre Dalpe" as "Alexander Dalpe", which no folding rule reached.
-BUILD_VERSION = 18
+# 19: a team is named by its Duelists. A team enters under a name it chose --
+#     "Ares", "Legionnaire" -- and one word is not a name ordinary prose can
+#     be searched for, so a team event had no champion unless a winner post
+#     happened to quote the name. The coverage names the people instead, and
+#     the people are already here, in the duels a team match was decided by.
+BUILD_VERSION = 19
 
 
 @dataclass
@@ -899,12 +904,13 @@ def build_format(name: str | None, sources: list[Source], *,
     # unassigned posts and take its event's champion with it. Safe to offer to
     # both tournaments, because each asks only about its own cut: a post naming
     # nobody in this bracket claims nobody here.
+    # A team is named by its Duelists, not by the name it entered under.
     won_by = champion_named(cut_finalists(rounds),
                             [{"title": s.post.title, "text": s.post.lead,
                               "kind": s.post.kind}
                              for s in list(sources) + list(announcements)
                              if s.post.lead],
-                            name)
+                            name, rosters=cut_rosters(rounds))
     # What one entrant is. A Team YCS ranks teams of three, so "389 Duelists"
     # would be 389 teams under the wrong noun -- and the page has no way to know
     # from the rows themselves, because a team match reads exactly like a match.
@@ -930,6 +936,37 @@ def cut_finalists(rounds: list[dict]) -> list[str]:
         return []
     return [row[side] for row in played[-1]["pairings"]
             for side in ("a", "b") if row.get(side)]
+
+
+def cut_rosters(rounds: list[dict]) -> dict[str, list[str]]:
+    """Each team in the deepest cut round, and the Duelists who played for it.
+
+    A team enters under a name it chose and the coverage announces its win by
+    naming the people:
+
+        "Pierre Burgals, Matthieu Bricard, and Kevin Rodrigues Goncalves are
+         the TEAM YCS Las Vegas Champions!!"
+        "Stephen Silverman, Dominic Couch, and Alexander Cancell"
+
+    So the team name is not what identifies the team. Its Duelists are, and
+    they are already here: a team match carries the three duels it was decided
+    by, and each duel names both sides.
+
+    Empty for a singles event, where a pairing has no duels inside it.
+    """
+    played = [r for r in rounds if r.get("phase") == "Top cut" and r.get("pairings")]
+    if not played:
+        return {}
+    out: dict[str, list[str]] = {}
+    for row in played[-1]["pairings"]:
+        for side in ("a", "b"):
+            if not (team := row.get(side)):
+                continue
+            who = [duel[side]["name"] if isinstance(duel.get(side), dict) else duel.get(side)
+                   for duel in row.get("duels") or []]
+            if named := [w for w in who if w]:
+                out[team] = named
+    return out
 
 
 def entered_as_teams(sources: list[Source]) -> bool:
