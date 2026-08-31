@@ -103,7 +103,12 @@ def round_key(post) -> tuple[str, Any]:
 #     way -- so the deck stayed inside the name, and reconcile_names, which
 #     counts words, folded eight clean names into their mangled spellings
 #     across every round of the event.
-BUILD_VERSION = 10
+# 11: a caption is not a header, and a blank row ends a table. The 2013 World
+#     Championship heads each table with "Main World Championship | Round 1"
+#     in a row of its own and puts the Dragon Duel's rounds in the same table
+#     underneath, so every round post it published read as unknown and the
+#     event has never been in the archive.
+BUILD_VERSION = 11
 
 
 @dataclass

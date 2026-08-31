@@ -438,6 +438,40 @@ def parse_table(doc: str) -> Table | None:
         return None
 
     header, body = tables[0][0], list(tables[0][1:])
+    # A caption where the header should be. The 2013 World Championship heads
+    # each table with a row of its own -- "Main World Championship | Round 1"
+    # -- and the header the reader needs is underneath it:
+    #
+    #   ['', 'Main World Championship', '', 'Round 1', '', '']
+    #   ['Table', 'Player 1', 'VS.', 'Player 2', '', 'Winner']
+    #
+    # Read as the header, the caption says nothing the classifier knows, so
+    # the table came back unknown and the post was dropped -- every round of
+    # that event, which is why it has never been in the archive.
+    #
+    # Only ever one row, and only when the row below it is a header this
+    # reader recognises. A table whose first row is data is left alone: that
+    # is a different shape and guessing at it here would eat a pairing.
+    if body and _classify_table(header) == "unknown" and _classify_table(body[0]) != "unknown":
+        header, body = body[0], body[1:]
+    # And a blank row ends it. The same event puts two tournaments in one
+    # table -- the Main World Championship, an empty row, then the Dragon Duel
+    # World Championship with a caption and header of its own:
+    #
+    #   ['4', 'Murakoshi, Kei', 'VS.', 'Huang, Shin En', ...]
+    #   ['', '', '', '', '', '', '']
+    #   ['', 'Dragon Duel World Championship', '', 'Top 8', '', '', '']
+    #
+    # Read straight through, that caption has two cells that are not noise, so
+    # it was taken for the announcement of a team match -- which is both a
+    # fifth match in a Top 8 and the reason a singles championship came back
+    # holding 38 Teams.
+    #
+    # The Dragon Duel is its own tournament and is not this one's rounds.
+    for i, r in enumerate(body):
+        if not any(c.strip() for c in r):
+            body = body[:i]
+            break
     # One round is not always one table. The 2017 UDS Invitational Trinidad and
     # Tobago published its Top 4 as two tables of a single match each, and
     # reading only the first gave a Top 4 with one match in it -- which is not

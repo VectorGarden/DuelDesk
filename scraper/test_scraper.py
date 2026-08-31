@@ -3883,6 +3883,42 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         self.assertEqual(side["name"], "Jesus Correa \u2013 Moreira")
         self.assertIsNone(side["region"])
 
+    def test_a_caption_above_the_header_is_read_past(self):
+        # The 2013 World Championship heads each table with a row of its own,
+        # and the header is underneath it. Read as the header, the caption
+        # says nothing the classifier knows, so every round of that event was
+        # dropped -- which is why it has never been in the archive.
+        html = ("<html><head><title>Round 1 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td></td><td>Main World Championship</td><td></td><td>Round 1</td></tr>"
+                "<tr><td>Table</td><td>Player 1</td><td>VS.</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Alpha, Ann</td><td>VS.</td><td>Beta, Bo</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual(t.kind, "pairings")
+        self.assertEqual(len(t.rows), 1)
+        self.assertEqual(t.rows[0]["a"]["name"], "Ann Alpha")
+
+    def test_a_blank_row_ends_the_table(self):
+        # The same event puts two tournaments in one table, separated by an
+        # empty row: the Main World Championship, then the Dragon Duel World
+        # Championship with a caption and header of its own. That caption has
+        # two cells that are not noise, so it was read as the announcement of
+        # a team match -- a fifth match in a Top 8, and the reason a singles
+        # championship came back holding 38 Teams instead of 26 Duelists.
+        html = ("<html><head><title>Top 8 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>VS.</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Alpha, Ann</td><td>VS.</td><td>Beta, Bo</td></tr>"
+                "<tr><td></td><td></td><td></td><td></td></tr>"
+                "<tr><td></td><td>Dragon Duel World Championship</td><td></td><td>Top 8</td></tr>"
+                "<tr><td>Table</td><td>Player 1</td><td>VS.</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Gamma, Cy</td><td>VS.</td><td>Delta, Di</td></tr>"
+                "</tbody></table></body></html>")
+        rows = parse_post(html).table.rows
+        self.assertEqual(len(rows), 1, "the Dragon Duel is not this tournament's round")
+        self.assertNotIn("duels", rows[0], "a caption is not a team match")
+
     def test_a_ranking_is_never_a_pairing(self):
         # TEAM YCS La Paz heads its standings "Rank | Team Name | Duelist
         # Names | Points". Two of those read like sides, so asking about sides
