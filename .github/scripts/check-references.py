@@ -123,9 +123,16 @@ def _main(path="index.html", list_only=False):
             print(ref)
         return 0
 
+    # A relative reference is relative to the page, not to wherever this was
+    # run from. winners/index.html asked for "styles.css" and every check said
+    # yes, because styles.css is in the repository root -- and the browser at
+    # /winners/ asked for /winners/styles.css and got a 404. The page loaded
+    # with no styles and no scripts at all.
+    here = Path(path).parent
     missing = []
     for ref in sorted(refs):
-        target = Path(ref.lstrip("/"))
+        target = (Path(ref.lstrip("/")) if ref.startswith("/")
+                  else here / ref)
         # A directory is a reference to the index inside it -- /winners is
         # winners/index.html, which is how a static host serves a clean URL.
         # The index has to be there: an empty directory answers a local
