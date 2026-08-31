@@ -3715,6 +3715,73 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
                          ("Alpha Squad", "Beta Crew"))
         self.assertEqual(len(t.rows[0]["duels"]), 1)
 
+    def test_one_round_published_as_several_tables(self):
+        # The 2017 UDS Invitational Trinidad and Tobago wrote its Top 4 as two
+        # tables of one match each. Reading only the first gave a Top 4 with
+        # one match in it, which does not divide four Duelists into equal
+        # sides -- so the event failed the coherence check and left the
+        # archive after having been in it for eight builds.
+        html = ("<html><head><title>Top 4 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann Alpha</td><td>Bo Beta</td></tr>"
+                "</tbody></table>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>Player 2</td></tr>"
+                "<tr><td>2</td><td>Cy Gamma</td><td>Di Delta</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual(len(t.rows), 2, "both tables are the one round")
+        self.assertEqual([r["a"]["name"] for r in t.rows], ["Ann Alpha", "Cy Gamma"])
+
+    def test_a_second_table_with_its_own_header_stays_out(self):
+        # Pages carry other tables -- a deck breakdown under the pairings is
+        # the common one. Only a table repeating the pairings header is the
+        # pairings continued; anything else has a header of its own and its
+        # rows are not matches.
+        html = ("<html><head><title>Top 4 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ann Alpha</td><td>Bo Beta</td></tr>"
+                "</tbody></table>"
+                "<table><tbody>"
+                "<tr><td>Deck</td><td>Count</td></tr>"
+                "<tr><td>Ryzeal</td><td>13</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual(len(t.rows), 1, "the deck breakdown is not a match")
+
+    def test_a_country_and_deck_written_beside_the_name(self):
+        # The same event's Top 4 writes "Deonarine, Brandon Luke - Trinidad
+        # and Tobago (SPYRAL)" where its Top 8 wrote "Deonarine, Brandon
+        # Luke". Discarding the bracket threw the deck away and left the
+        # country inside the name, so the two rounds disagreed about who had
+        # played and the cut did not chain.
+        html = ("<html><head><title>Top 4 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Deonarine, Brandon Luke \u2013 Trinidad and Tobago (SPYRAL)</td>"
+                "<td>Alpha, Ann \u2013 Mexico (Maliss)</td></tr>"
+                "</tbody></table></body></html>")
+        side = parse_post(html).table.rows[0]["a"]
+        self.assertEqual(side["name"], "Brandon Luke Deonarine")
+        self.assertEqual(side["region"], "Trinidad and Tobago")
+        self.assertEqual(side["deck"], "SPYRAL")
+
+    def test_a_dash_with_no_bracket_is_left_alone(self):
+        # "Correa - Moreira, Jesus" is a compound surname, and 137 names in
+        # the archive carry a country after a dash with no bracket at all.
+        # Nothing here can tell those apart, so the dash is only read as an
+        # annotation when a bracket says the cell is annotated.
+        html = ("<html><head><title>Round 3 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Correa \u2013 Moreira, Jesus</td><td>Beta, Bo</td></tr>"
+                "</tbody></table></body></html>")
+        side = parse_post(html).table.rows[0]["a"]
+        self.assertEqual(side["name"], "Jesus Correa \u2013 Moreira")
+        self.assertIsNone(side["region"])
+
     def test_a_ranking_is_never_a_pairing(self):
         # TEAM YCS La Paz heads its standings "Rank | Team Name | Duelist
         # Names | Points". Two of those read like sides, so asking about sides

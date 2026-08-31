@@ -356,16 +356,69 @@ def _classify_table(header: list[str]) -> str:
     return "unknown"
 
 
+# A country written out, after the dash the blog separates it with. The codes
+# strip_region knows are three letters in capitals; this is "- Trinidad and
+# Tobago", which stayed inside the name and made one Duelist two people.
+# Spaces are required around the dash, so hyphenated surnames are left alone.
+_SPELT_REGION = re.compile(r"\s+[-\u2010-\u2015]\s+([^-\u2010-\u2015]+)$")
+
+
+def read_annotation(cell: str) -> tuple[str, str | None, str | None]:
+    """A Duelist cell's name, the region written beside it, and the deck.
+
+    Prose pairings have always read "Name (Country - points - Deck)" this way.
+    A table cell can carry exactly the same thing: the 2017 UDS Invitational
+    Trinidad and Tobago wrote its Top 4 as
+
+        Deonarine, Brandon Luke - Trinidad and Tobago (SPYRAL)
+
+    while the Top 8 on the previous page wrote the same Duelist as "Deonarine,
+    Brandon Luke". Discarding the bracket threw the deck away and left the
+    country inside the name, so the two rounds disagreed about who had played
+    and the cut did not chain.
+
+    Both parts are optional and neither is invented: a cell with no bracket and
+    no dash comes back unchanged, with no region and no deck.
+    """
+    if not (m := _PARENS.match(cell.strip())):
+        # No bracket, so nothing here is an annotation. The dash is left alone
+        # on purpose: "Correa - Moreira, Jesus" is a compound surname, and 137
+        # names in the archive carry a country after a dash with no bracket at
+        # all. Reading those needs evidence this function does not have, and
+        # guessing would cut a surname in half. See issue for that half.
+        return cell.strip(), None, None
+    # Whatever else is in the bracket, the deck is the last part -- the same
+    # rule prose uses, because it is the same parenthesis.
+    cell = m.group(1)
+    deck = re.split(r"\s+[-\u2013\u2014]\s+", m.group(2))[-1].strip() or None
+    region = None
+    if m := _SPELT_REGION.search(cell):
+        region, cell = m.group(1).strip(), cell[:m.start()]
+    return cell.strip(), region, deck
+
+
 def parse_table(doc: str) -> Table | None:
-    m = _TABLE.search(doc)
-    if not m:
-        return None
-    rows = [[_text(c) for c in _CELL.findall(r)] for r in _ROW.findall(m.group(0))]
-    rows = [r for r in rows if r]
-    if not rows:
+    tables = []
+    for m in _TABLE.finditer(doc):
+        rows = [[_text(c) for c in _CELL.findall(r)] for r in _ROW.findall(m.group(0))]
+        if rows := [r for r in rows if r]:
+            tables.append(rows)
+    if not tables:
         return None
 
-    header, body = rows[0], rows[1:]
+    header, body = tables[0][0], list(tables[0][1:])
+    # One round is not always one table. The 2017 UDS Invitational Trinidad and
+    # Tobago published its Top 4 as two tables of a single match each, and
+    # reading only the first gave a Top 4 with one match in it -- which is not
+    # a bracket, so the event was rejected and left the archive.
+    #
+    # A later table continues this one when it repeats the same header, and
+    # only then. Pages carry other tables -- a deck breakdown, a prize list --
+    # and those have headers of their own, so they stay out rather than having
+    # their rows read as pairings.
+    for rows in tables[1:]:
+        if rows[0] == header:
+            body += rows[1:]
     kind = _classify_table(header)
     out: list[dict[str, Any]] = []
 
@@ -443,8 +496,10 @@ def parse_table(doc: str) -> Table | None:
             # a first/last split is the first, not the joined string.
             cleaned, region = [], None
             for c in parts:
-                text, code = strip_region(_text(c))
-                region = region or code
+                text, spelt, played = read_annotation(_text(c))
+                text, code = strip_region(text)
+                region = region or code or spelt
+                deck = deck or played
                 if text:
                     cleaned.append(text)
             return {"name": normalise_name(" ".join(cleaned)),

@@ -91,7 +91,12 @@ def round_key(post) -> tuple[str, Any]:
 #    reader did not recognise -- "Table | Player 1 | Player 2" and eight other
 #    headings -- so YCS Niagara Falls 2022 had ten rounds of standings, no
 #    pairings at all, an empty cut, and therefore nobody to name champion.
-BUILD_VERSION = 8
+# 9: a round is not always one table, and a name is not always only a name. The
+#    2017 UDS Invitational Trinidad and Tobago published its Top 4 as two
+#    tables of one match, and wrote the country and deck beside each Duelist --
+#    so the round held one match of four Duelists whose names no other round
+#    agreed with, and the event was rejected and left the archive.
+BUILD_VERSION = 9
 
 
 @dataclass
