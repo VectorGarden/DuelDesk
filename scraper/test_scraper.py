@@ -5,7 +5,12 @@ The fixtures are real pages, trimmed to their <title> and <table>. Real ones
 matter here: every defect these tests guard against was found in actual markup,
 not imagined.
 """
+import contextlib
+import importlib.util
+import io
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -16,6 +21,33 @@ from index import parse_post_sitemap, assign_events, event_windows  # noqa: E402
 
 FIX = Path(__file__).parent.parent / "test" / "fixtures" / "blog"
 load = lambda n: parse_post((FIX / f"{n}.html").read_text(), n)
+
+
+
+_CHECKER_PATH = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
+_checker_loaded = None
+
+
+def run_checker(path):
+    """check-rounds.py over one file: its exit code and what it printed.
+
+    Loaded once rather than started as a command each time. Seventy-seven
+    tests ask this, and at 58ms to start Python that was four and a half
+    seconds of an eight second suite spent on an interpreter already running.
+
+    One test still runs it as a command, because that is how CI runs it and
+    an argv or exit-code mistake would not show here.
+    """
+    global _checker_loaded
+    if _checker_loaded is None:
+        spec = importlib.util.spec_from_file_location("check_rounds_under_test", _CHECKER_PATH)
+        _checker_loaded = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(_checker_loaded)
+    said = io.StringIO()
+    with contextlib.redirect_stdout(said):
+        code = _checker_loaded.main(str(path))
+    return code, said.getvalue()
+
 
 
 class TestNames(unittest.TestCase):
@@ -1342,9 +1374,30 @@ class TestProvenanceCheck(unittest.TestCase):
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
             json.dump(good, fh)
             path = fh.name
-        done = subprocess.run(["python3", str(self.CHECKER), path],
+        return run_checker(path)
+
+    def test_the_checker_still_works_as_a_command(self):
+        # Every other test loads check-rounds.py and calls it. CI runs it as a
+        # command, so one test does too: an argv mistake, a bad exit code or an
+        # import that only fails at start-up would not show any other way.
+        import subprocess
+        good = self.subject(None)
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
+            json.dump(good, fh)
+            path = fh.name
+        done = subprocess.run([sys.executable, str(self.CHECKER), path],
                               capture_output=True, text=True)
-        return done.returncode, done.stdout
+        self.assertEqual(done.returncode, 0, done.stdout + done.stderr)
+        self.assertIn("ok", done.stdout)
+        # And a file it should reject exits 1, so the gate is a real gate.
+        bad = self.subject(None)
+        bad["formats"][0]["rounds"] = []
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
+            json.dump(bad, fh)
+            badpath = fh.name
+        done = subprocess.run([sys.executable, str(self.CHECKER), badpath],
+                              capture_output=True, text=True)
+        self.assertEqual(done.returncode, 1, done.stdout)
 
     def test_the_committed_data_passes(self):
         code, out = self.check(lambda d: None)
@@ -5112,10 +5165,7 @@ class TestSampleDataTimeline(unittest.TestCase):
         return path, json.loads(path.read_text())
 
     def check(self, path):
-        import subprocess
-        done = subprocess.run(["python3", str(self.CHECKER), str(path)],
-                              capture_output=True, text=True)
-        return done.returncode, done.stdout
+        return run_checker(path)
 
     def test_the_check_passes_whatever_hour_it_is_generated_at(self):
         for hour in range(24):
@@ -5430,9 +5480,7 @@ class TestATeamBracketIsStillABracket(unittest.TestCase):
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
             json.dump(data, fh)
             path = fh.name
-        done = subprocess.run(["python3", str(self.CHECKER), path],
-                              capture_output=True, text=True)
-        return done.returncode, done.stdout
+        return run_checker(path)
 
     def test_three_duelists_a_side_is_a_valid_bracket(self):
         code, out = self.check([("Top 8", 12), ("Top 4", 6), ("Final", 3)])

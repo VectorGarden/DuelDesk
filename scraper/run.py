@@ -11,6 +11,9 @@ from __future__ import annotations
 
 import argparse
 import shutil
+import contextlib
+import importlib.util
+import io
 import subprocess
 import sys
 from collections import Counter, defaultdict
@@ -253,20 +256,42 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
 
 
 CHECKER = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
+_checker_module = None
+
+
+def _checker():
+    """check-rounds.py as a module, loaded once.
+
+    Its name has a hyphen in it, so it cannot be imported by name -- and it is
+    a script CI calls as a command, which is the point of it. Nothing here
+    copies its rules; this is the file itself.
+    """
+    global _checker_module
+    if _checker_module is None:
+        spec = importlib.util.spec_from_file_location("check_rounds", CHECKER)
+        _checker_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(_checker_module)
+    return _checker_module
 
 
 def coherence_problem(root: str, slug: str) -> str | None:
     """What check-rounds.py objects to in a built event, or None if nothing.
 
-    The same script CI runs, invoked the same way, rather than a second copy of
-    its rules here. Two sets of rules for what counts as coherent data would
-    drift, and the one that matters is the one that gates the deploy.
+    The same script CI runs, and the same rules -- it is that file, loaded.
+    Two sets of rules for what counts as coherent data would drift, and the
+    one that matters is the one that gates the deploy.
+
+    Loaded rather than run as a command. A build asks this about every event
+    it writes, and a batch writes forty: at 66ms to start Python that was two
+    and a half seconds of a run, and five seconds of the test suite, spent
+    starting an interpreter that is already running.
     """
-    done = subprocess.run(["python3", str(CHECKER), str(archive.rounds_path(root, slug))],
-                          capture_output=True, text=True)
-    if done.returncode == 0:
+    said = io.StringIO()
+    with contextlib.redirect_stdout(said):
+        code = _checker().main(str(archive.rounds_path(root, slug)))
+    if code == 0:
         return None
-    lines = [l.strip() for l in (done.stdout + done.stderr).splitlines() if l.strip()]
+    lines = [l.strip() for l in said.getvalue().splitlines() if l.strip()]
     return "; ".join(l.removeprefix("FAIL").strip() for l in lines) or "failed the coherence check"
 
 
