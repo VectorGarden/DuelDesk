@@ -3819,6 +3819,25 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         self.assertEqual(side["region"], "Trinidad and Tobago")
         self.assertEqual(side["deck"], "SPYRAL")
 
+    def test_a_bracket_in_front_of_the_name_is_not_an_annotation(self):
+        # The 2016 World Championship writes the country first: "(Japan) Yada,
+        # Makoto". Read as a trailing annotation, the name is whatever sits in
+        # front of the bracket -- nothing -- so every Duelist in the event came
+        # back nameless, every pairing was one nameless Duelist against
+        # another, and the event was refused for seating a Duelist against
+        # themselves. A leading bracket belongs to strip_region, which has
+        # always removed it.
+        html = ("<html><head><title>Round 3 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs.</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>(Japan) Yada, Makoto</td><td>vs.</td>"
+                "<td>(Korea) Choi, Byung-Hyug</td></tr>"
+                "</tbody></table></body></html>")
+        row = parse_post(html).table.rows[0]
+        self.assertEqual(row["a"]["name"], "Makoto Yada")
+        self.assertEqual(row["b"]["name"], "Byung-Hyug Choi")
+        self.assertNotEqual(row["a"]["name"], row["b"]["name"])
+
     def test_a_dash_with_no_bracket_is_left_alone(self):
         # "Correa - Moreira, Jesus" is a compound surname, and 137 names in
         # the archive carry a country after a dash with no bracket at all.
