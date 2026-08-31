@@ -1259,7 +1259,7 @@ class TestProvenanceCheck(unittest.TestCase):
 
     CHECKER = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
 
-    def subject(self):
+    def subject(self, needs=None):
         """The newest published event with a top cut these rules can be read on.
 
         Through the manifest rather than by path, exactly as the page finds it,
@@ -1271,6 +1271,13 @@ class TestProvenanceCheck(unittest.TestCase):
 
         So the newest is not assumed to be suitable, only preferred: the first
         one down the list carrying two rounds of cut pairings is used.
+
+        `needs` asks for more than that. A test that mutates a derived record
+        has to be given an event that has one -- the 2026 World Championship
+        has none, and when it arrived at the head of the manifest the two tests
+        that mutate records stopped testing anything: one asserted a rejection
+        for a file it had not changed, the other subtracted from a record whose
+        wins were None.
         """
         import json
         root = Path(__file__).resolve().parent.parent
@@ -1279,14 +1286,24 @@ class TestProvenanceCheck(unittest.TestCase):
             event = json.loads((root / entry["path"]).read_text())
             fmt = (event.get("formats") or [{}])[0]
             cut = [r for r in fmt.get("rounds") or [] if r.get("phase") == "Top cut"]
-            if len([r for r in cut if r.get("pairings")]) >= 2:
+            if len([r for r in cut if r.get("pairings")]) >= 2 and (needs is None
+                                                                    or needs(event)):
                 return event
-        raise self.skipTest("no published event has two rounds of cut pairings")
+        raise self.skipTest("no published event has the shape this test needs")
 
-    def check(self, mutate):
+    @staticmethod
+    def derived_rows(event):
+        """The standings rows carrying a derived record and the points for it."""
+        return [st for fmt in event["formats"] for r in fmt["rounds"]
+                for st in (r.get("standings") or [])
+                if (st.get("record") or {}).get("confidence") == "derived"
+                and st.get("points") is not None
+                and (st["record"].get("wins") is not None)]
+
+    def check(self, mutate, needs=None):
         """Run the checker over a published event, mutated."""
         import json, subprocess, tempfile
-        good = self.subject()
+        good = self.subject(needs)
         mutate(good)
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
             json.dump(good, fh)
@@ -1449,14 +1466,8 @@ class TestProvenanceCheck(unittest.TestCase):
         # would catch: a record can account for the right number of matches and
         # still describe a different tournament than the row it sits in.
         def wrong_by_a_win(d):
-            for fmt in d["formats"]:
-                for r in fmt["rounds"]:
-                    for st in r.get("standings") or []:
-                        rec = st.get("record") or {}
-                        if rec.get("confidence") == "derived" and st.get("points") is not None:
-                            rec["wins"] += 1
-                            return
-        code, out = self.check(wrong_by_a_win)
+            self.derived_rows(d)[0]["record"]["wins"] += 1
+        code, out = self.check(wrong_by_a_win, needs=self.derived_rows)
         self.assertEqual(code, 1)
         self.assertIn("which is not what that adds up to", out)
 
@@ -1477,26 +1488,25 @@ class TestProvenanceCheck(unittest.TestCase):
         def one_draw(d):
             # A win becomes a draw: two points fewer, and the same number of
             # matches, so this tests the arithmetic and not the round count.
-            for fmt in d["formats"]:
-                for r in fmt["rounds"]:
-                    for st in r.get("standings") or []:
-                        rec = st.get("record") or {}
-                        if (rec.get("confidence") == "derived"
-                                and st.get("points") is not None and rec.get("wins")):
-                            rec["wins"] -= 1
-                            rec["draws"] = (rec.get("draws") or 0) + 1
-                            st["points"] -= 2
-                            return
-        code, out = self.check(one_draw)
+            st = self.derived_rows(d)[0]
+            st["record"]["wins"] -= 1
+            st["record"]["draws"] = (st["record"].get("draws") or 0) + 1
+            st["points"] -= 2
+        code, out = self.check(one_draw, needs=self.derived_rows)
         self.assertEqual(code, 0, out)
 
     def test_a_record_short_of_the_rounds_that_were_published_is_rejected(self):
         # The rule keeps its whole force where the coverage is complete.
+        def deep_cut_record(event):
+            """A cut round, after the first, whose seats carry a record."""
+            cut = [r for r in event["formats"][0]["rounds"] if r["phase"] == "Top cut"]
+            return [r for r in cut[1:] if r.get("pairings")
+                    and isinstance(r["pairings"][0].get("aRec"), dict)
+                    and r["pairings"][0]["aRec"].get("wins") is not None]
+
         def one_short(d):
-            cut = [r for r in d["formats"][0]["rounds"] if r["phase"] == "Top cut"]
-            rec = cut[1]["pairings"][0]["aRec"]
-            rec["wins"] -= 1
-        code, out = self.check(one_short)
+            deep_cut_record(d)[0]["pairings"][0]["aRec"]["wins"] -= 1
+        code, out = self.check(one_short, needs=deep_cut_record)
         self.assertEqual(code, 1)
         self.assertIn("matches), expected", out)
 
@@ -3317,7 +3327,7 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         self.assertEqual(got["finals-feature-match-steven-santoli-vs-liam-mac-oscair"],
                          ("2023-north-america-remote-duel-ycs", "discovered+date"))
 
-    def test_a_round_is_never_joined_on_the_date_alone(self):
+    def test_a_round_the_event_already_holds_is_not_dated_in(self):
         # A date says a piece of writing belongs to the weekend. It does not say
         # whose bracket a table is, and a discovered event's vocabulary is its
         # own slugs -- which is to say "pairings", "top", "round". A slug built
@@ -3330,8 +3340,25 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         # never played in its Top 32.
         got = self.assigned(
             *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/north-america-remote-duel-ycs-top-32-pairings", "2023-06-24"),
             ("2023/ycs/top-32-pairings-6", "2023-06-25"))
+        self.assertEqual(got["north-america-remote-duel-ycs-top-32-pairings"][1],
+                         "discovered")
         self.assertIsNone(got["top-32-pairings-6"][0])
+
+    def test_a_round_the_event_has_no_other_way_to_get_is_kept(self):
+        # Refusing every dated round was the first fix and it was too blunt.
+        # YCS Minneapolis 2016 is named by none of its own standings --
+        # "standings-after-round-4-4", "standings-after-the-swiss-rounds" --
+        # and refusing them took all six, which left the event with no
+        # standings at all and dropped it below the coverage worth building.
+        # A generic slug is how the blog wrote a round, not evidence that the
+        # round belongs to somebody else.
+        got = self.assigned(
+            *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
+            ("2023/ycs/top-32-pairings-6", "2023-06-25"))
+        self.assertEqual(got["top-32-pairings-6"],
+                         ("2023-north-america-remote-duel-ycs", "discovered+date"))
 
     def test_the_writing_around_an_event_still_joins_it(self):
         # The rule is narrow on purpose: it holds back rounds, not writing.
