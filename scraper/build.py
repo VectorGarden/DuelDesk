@@ -16,6 +16,7 @@ Two things it deliberately will not do:
 from __future__ import annotations
 
 import re
+from functools import lru_cache
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from typing import Any
@@ -173,6 +174,11 @@ def final_from_annotations(candidates: list[Source]) -> tuple[str, str] | None:
     return None
 
 
+# Cached because reconcile_names asks the same few thousand names about each
+# other: one 646-Duelist event called this 4.7 million times, and splitting the
+# same string over and over was 74% of the whole build. A name's words never
+# change, so the second answer is the first one.
+@lru_cache(maxsize=None)
 def _words(name: str) -> tuple[str, ...]:
     return tuple(w for w in re.split(r"[^A-Za-z]+", name.lower()) if w)
 

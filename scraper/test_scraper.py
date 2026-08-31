@@ -3804,6 +3804,36 @@ class TestFoldedNames(unittest.TestCase):
                    _src("https://x/t/", f"{cut_round} Pairings", PAIR_HEAD, cut)]
         return reconcile_names(sources), sources
 
+    def test_a_name_is_split_once_not_once_per_comparison(self):
+        # reconcile_names asks every name about every other name, and asked
+        # each of them for its words up to three times a comparison. One
+        # 646-Duelist event split the same strings 4.7 million times, which
+        # was 74% of the whole build -- 5.4 seconds of the 5.5 it took.
+        #
+        # Asserted through the cache's own counters rather than a clock, so it
+        # fails when the caching is removed and not when CI is busy.
+        from build import _words
+        _words.cache_clear()
+        self.fold([["1", "Aaron Chase", "Furman", "vs.", "Kobe Louis", "Short"]],
+                  [["1", "Aaron", "Furman", "vs.", "Kobe", "Short"]])
+        info = _words.cache_info()
+        self.assertGreater(info.hits, info.misses,
+                           f"most calls should be answered from the cache, got {info}")
+
+    def test_folding_is_the_same_answer_the_second_time(self):
+        # The cache lives for the process, so a second event builds against a
+        # cache the first one filled. A name's words do not depend on which
+        # event asked, and this says so out loud: the same input must give the
+        # same folding warm as it did cold.
+        from build import _words
+        _words.cache_clear()
+        rows = ([["1", "Aaron Chase", "Furman", "vs.", "Kobe Louis", "Short"]],
+                [["1", "Aaron", "Furman", "vs.", "Kobe", "Short"]])
+        cold, _ = self.fold(*rows)
+        self.assertGreater(_words.cache_info().currsize, 0, "the cache is warm now")
+        warm, _ = self.fold(*rows)
+        self.assertEqual(cold, warm)
+
     def test_a_dropped_middle_name_is_folded(self):
         canon, sources = self.fold(
             [["1", "Aaron Chase", "Furman", "vs.", "Kobe Louis", "Short"]],
