@@ -3733,6 +3733,72 @@ class TestFoldedNames(unittest.TestCase):
         self.assertEqual(canon["Kamal Crooks"], "Kamal Derrick El Crooks-Valdez")
         self.assertEqual(canon["Kamal Crooks-Valdez"], "Kamal Derrick El Crooks-Valdez")
 
+    def test_a_letter_typed_wrong_is_folded_back(self):
+        # YCS Atlanta's Swiss seated "Mohammed Imran Khan" for eleven rounds
+        # and its Top 4 post printed "Mohammed Imram Khan". Nothing about that
+        # is a shortening, so the event was rejected for a Top 4 Duelist who
+        # had not played in the Top 8.
+        from build import reconcile_names
+        sources = [
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Ann", "Alpha"]]),
+            _src("https://x/r2/", "Round 2 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Bo", "Beta"]]),
+            _src("https://x/t/", "Top 4 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imram", "Khan", "vs.", "Ann", "Alpha"]])]
+        canon = reconcile_names(sources)
+        self.assertEqual(canon["Mohammed Imram Khan"], "Mohammed Imran Khan")
+
+    def test_the_spelling_the_coverage_uses_more_is_the_one_kept(self):
+        # A typo appears once, in the post that carried it. The name itself
+        # appears everywhere the Duelist played, so the rounds vote.
+        from build import reconcile_names
+        sources = [
+            _src("https://x/t/", "Top 4 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imram", "Khan", "vs.", "Ann", "Alpha"]]),
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Bo", "Beta"]]),
+            _src("https://x/r2/", "Round 2 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Cy", "Gamma"]])]
+        self.assertEqual(reconcile_names(sources)["Mohammed Imram Khan"],
+                         "Mohammed Imran Khan")
+
+    def test_two_letters_apart_is_two_people(self):
+        from build import reconcile_names
+        sources = [
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Ann", "Alpha"]]),
+            _src("https://x/r2/", "Round 2 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Bo", "Beta"]]),
+            _src("https://x/t/", "Top 4 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Usman", "Khan", "vs.", "Ann", "Alpha"]])]
+        self.assertNotIn("Mohammed Usman Khan", reconcile_names(sources))
+
+    def test_a_letter_wrong_in_two_words_is_not_a_typo(self):
+        # One slip in one word is a typo. Two is two names, and folding them
+        # would merge a Mohammad into a Mohammed on no evidence at all.
+        from build import reconcile_names
+        sources = [
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Ann", "Alpha"]]),
+            _src("https://x/r2/", "Round 2 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Bo", "Beta"]]),
+            _src("https://x/t/", "Top 4 Pairings", PAIR_HEAD,
+                 [["1", "Mohammad Imram", "Khan", "vs.", "Ann", "Alpha"]])]
+        self.assertNotIn("Mohammad Imram Khan", reconcile_names(sources))
+
+    def test_two_duelists_one_letter_apart_are_left_alone(self):
+        # They both entered, so they are seated in the same rounds -- which is
+        # what tells them apart from a name typed wrong in one post.
+        from build import reconcile_names
+        sources = [
+            _src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Mohammed Imram", "Khan"]]),
+            _src("https://x/r2/", "Round 2 Pairings", PAIR_HEAD,
+                 [["1", "Mohammed Imran", "Khan", "vs.", "Ann", "Alpha"],
+                  ["2", "Mohammed Imram", "Khan", "vs.", "Bo", "Beta"]])]
+        self.assertEqual(reconcile_names(sources), {})
+
     def test_two_candidates_are_left_alone(self):
         # YCS Memphis ran a Nhan Thanh Nguyen and a Thanh Cong Nguyen, and a
         # Top 16 "Thanh Nguyen" could be either. Guessing costs a Duelist their
