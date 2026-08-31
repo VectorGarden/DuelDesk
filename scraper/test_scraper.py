@@ -2744,6 +2744,79 @@ class TestProseRounds(unittest.TestCase):
         self.assertIsNone(got[0]["b"]["deck"])
 
 
+class TestProseDuels(unittest.TestCase):
+    """A round written as a sentence about the Duelists in it.
+
+    Every YCS final since 2022 is published this way, and a Final is what an
+    event needs before a winner post has two Duelists to be recognised among.
+    """
+
+    def rows(self, text):
+        from parse import parse_prose_duels
+        return parse_prose_duels(text)
+
+    def test_a_final_written_as_a_sentence(self):
+        got = self.rows("It all comes down to this! Michael Tamez and his "
+                        "Floowandereeze Deck is facing off against Christopher "
+                        "LeBlanc and his Spright Tearlaments Deck in a Match.")
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]["a"], {"name": "Michael Tamez", "region": None,
+                                       "deck": "Floowandereeze"})
+        self.assertEqual(got[0]["b"]["name"], "Christopher LeBlanc")
+
+    def test_the_other_way_of_saying_it(self):
+        got = self.rows("Ryan Yu will be using his Sky Striker Deck to Duel "
+                        "against Landon Oliver and his Fire King Snake-Eye "
+                        "Azamina Deck in the Finals!")
+        self.assertEqual(got[0]["a"], {"name": "Ryan Yu", "region": None,
+                                       "deck": "Sky Striker"})
+        self.assertEqual(got[0]["b"]["deck"], "Fire King Snake-Eye Azamina")
+
+    def test_a_deck_that_has_the_word_deck_in_it(self):
+        # YCS Toronto writes "his Extra Deck Monarch Deck". Stopping at the
+        # first "Deck" leaves the archetype as "Extra".
+        got = self.rows("At Table 1, Ryan Arthur Levine is using his Extra Deck "
+                        "Monarch Deck to Duel against Bohdan Temnyk and his "
+                        "Burning Abyss Phantom Knight Deck.")
+        self.assertEqual(got[0]["a"]["name"], "Ryan Arthur Levine")
+        self.assertEqual(got[0]["a"]["deck"], "Extra Deck Monarch")
+
+    def test_two_duelists_and_no_decks(self):
+        got = self.rows("Here are the Final Pairing at the North American "
+                        "World Championship Qualifier. Chase Robert Cunningham "
+                        "versus Noah Reid Greene")
+        self.assertEqual((got[0]["a"]["name"], got[0]["b"]["name"]),
+                         ("Chase Robert Cunningham", "Noah Reid Greene"))
+
+    def test_a_post_with_no_table_falls_through_to_the_sentence(self):
+        # The list is tried first and the sentence is what is left. Without
+        # that second try the post carries no table and is dropped whole.
+        html = ("<html><head><title>YCS Houston Final Pairing</title></head><body>"
+                "<div><div class=\"entry-content\"><p>The final round of YCS Houston "
+                "is about to begin! Pascal Manigat and his Goblin Memento Deck will be "
+                "facing off against Manuel Kalin and his Ryzeal Deck in a Match that "
+                "will determine the winner of YCS Houston!</p></div></div>"
+                "<footer>x</footer></body></html>")
+        t = parse_post(html).table
+        self.assertIsNotNone(t, "a final written as a sentence is still a round")
+        self.assertEqual(t.kind, "pairings")
+        self.assertEqual(len(t.rows), 1)
+        self.assertEqual(t.rows[0]["a"]["name"], "Pascal Manigat")
+
+    def test_a_round_short_a_match_is_not_taken(self):
+        # Two sentences say "against" and only one of them names two
+        # Duelists. Half a round is a wrong round, so neither is kept.
+        got = self.rows("Ann Alpha and her Ryzeal Deck is up against Bo Beta and "
+                        "his Maliss Deck. They are up against each other now!")
+        self.assertEqual(got, [])
+
+    def test_a_sentence_naming_nobody_is_not_a_round(self):
+        # The same all-or-nothing the pairings reader applies: a round short a
+        # match is a wrong round, not a small one.
+        self.assertEqual(self.rows("They are about to face off against each other!"), [])
+        self.assertEqual(self.rows("A weekend of Duelling is over."), [])
+
+
 class TestWinnerProse(unittest.TestCase):
     """The one line a champion can be read out of, and only for the posts that
     might carry one."""
