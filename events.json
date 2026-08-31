@@ -1507,13 +1507,13 @@
     },
     {
       "slug": "2023-team-ycs-las-vegas",
-      "event": "Public Events",
+      "event": "TEAM YCS Las Vegas",
       "updated": "2023-02-21",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-team-ycs-las-vegas/rounds.json",
-      "postCount": 40,
+      "postCount": 30,
       "formats": [
         {
           "format": null,
@@ -1549,7 +1549,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-remote-duel-ycs-north-america/rounds.json",
-      "postCount": 63,
+      "postCount": 60,
       "formats": [
         {
           "format": null,
@@ -1592,13 +1592,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-ycs-minneapolis/rounds.json",
-      "postCount": 74,
+      "postCount": 62,
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
           "duelists": 1112,
-          "rounds": 16
+          "rounds": 15
         }
       ]
     },
@@ -1610,7 +1610,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-team-ycs-quito/rounds.json",
-      "postCount": 18,
+      "postCount": 17,
       "formats": [
         {
           "format": null,
