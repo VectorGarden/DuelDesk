@@ -293,7 +293,7 @@
     "modified": "2019-03-17T17:13:13-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2019-03-atlanta-ga"
   },
   {
@@ -311,7 +311,7 @@
     "modified": "2019-03-17T17:16:10-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
-    "format": null,
+    "format": "Public Events",
     "slug": "2019-03-atlanta-ga"
   },
   {
@@ -329,7 +329,7 @@
     "modified": "2019-03-16T19:56:35-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2019-03-atlanta-ga"
   },
   {
@@ -437,7 +437,7 @@
     "modified": "2019-03-16T18:30:15-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2019-03-atlanta-ga"
   },
   {
@@ -446,7 +446,7 @@
     "modified": "2019-03-16T18:34:25-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
-    "format": null,
+    "format": "Public Events",
     "slug": "2019-03-atlanta-ga"
   },
   {

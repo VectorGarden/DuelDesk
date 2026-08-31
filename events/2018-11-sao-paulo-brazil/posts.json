@@ -527,7 +527,7 @@
     "modified": "2018-11-18T13:50:57-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
-    "format": null,
+    "format": "Public Events",
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
@@ -554,7 +554,7 @@
     "modified": "2018-11-18T17:44:04-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
@@ -608,7 +608,7 @@
     "modified": "2018-11-18T19:06:08-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
-    "format": null,
+    "format": "Public Events",
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
@@ -635,7 +635,7 @@
     "modified": "2018-11-18T19:07:16-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
-    "format": null,
+    "format": "Public Events",
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
@@ -770,7 +770,7 @@
     "modified": "2018-11-17T20:10:32-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
@@ -887,7 +887,7 @@
     "modified": "2018-11-17T11:09:26-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
-    "format": null,
+    "format": "Public Events",
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
@@ -932,7 +932,7 @@
     "modified": "2018-11-17T15:01:51-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
