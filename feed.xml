@@ -256,6 +256,7 @@
       <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/public-events-random-playoff-winner-21/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/public-events-random-playoff-winner-21/</guid>
       <category>Results</category>
+      <category domain="format">Public Events</category>
       <category domain="event">2026-08-quebec</category>
       <pubDate>Mon, 17 Aug 2026 00:21:28 +0000</pubDate>
       <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
@@ -324,7 +325,7 @@
       <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/sunday-genesys-attack-of-the-giant-card-winners-2/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/sunday-genesys-attack-of-the-giant-card-winners-2/</guid>
       <category>Results</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-08-quebec</category>
       <pubDate>Sun, 16 Aug 2026 23:56:52 +0000</pubDate>
       <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
@@ -414,7 +415,7 @@
       <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/sunday-advanced-attack-of-the-giant-card-winners/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/sunday-advanced-attack-of-the-giant-card-winners/</guid>
       <category>Results</category>
-      <category domain="format">Advanced</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-08-quebec</category>
       <pubDate>Sun, 16 Aug 2026 20:16:53 +0000</pubDate>
       <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
@@ -920,7 +921,7 @@
       <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-genesys-attack-of-the-giant-card-winners-2/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-genesys-attack-of-the-giant-card-winners-2/</guid>
       <category>Results</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-08-quebec</category>
       <pubDate>Sat, 15 Aug 2026 22:28:11 +0000</pubDate>
       <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
@@ -930,7 +931,7 @@
       <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-advanced-attack-of-the-giant-card-winners/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-advanced-attack-of-the-giant-card-winners/</guid>
       <category>Results</category>
-      <category domain="format">Advanced</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-08-quebec</category>
       <pubDate>Sat, 15 Aug 2026 22:27:57 +0000</pubDate>
       <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
@@ -1227,7 +1228,7 @@
       <link>https://yugiohblog.konami.com/2026/ycs/friday-genesys-attack-of-the-giant-card-winners-2/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/friday-genesys-attack-of-the-giant-card-winners-2/</guid>
       <category>Results</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-08-quebec</category>
       <pubDate>Fri, 14 Aug 2026 23:38:07 +0000</pubDate>
       <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
@@ -1237,7 +1238,7 @@
       <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/friday-advanced-attack-of-the-giant-card-winners/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/friday-advanced-attack-of-the-giant-card-winners/</guid>
       <category>Results</category>
-      <category domain="format">Advanced</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-08-quebec</category>
       <pubDate>Fri, 14 Aug 2026 23:36:19 +0000</pubDate>
       <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
@@ -1644,7 +1645,7 @@
       <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/sunday-genesys-attack-of-the-giant-card-winners/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/sunday-genesys-attack-of-the-giant-card-winners/</guid>
       <category>Results</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Mon, 13 Jul 2026 00:59:10 +0000</pubDate>
       <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
@@ -1709,6 +1710,7 @@
       <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/sunday-attack-of-the-giant-card-winners-9/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/sunday-attack-of-the-giant-card-winners-9/</guid>
       <category>Results</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sun, 12 Jul 2026 23:44:07 +0000</pubDate>
       <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
@@ -2067,7 +2069,7 @@
       <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/saturday-genesys-attack-of-the-giant-card-winners/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/saturday-genesys-attack-of-the-giant-card-winners/</guid>
       <category>Results</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sun, 12 Jul 2026 05:00:31 +0000</pubDate>
       <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
@@ -2105,6 +2107,7 @@
       <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/saturday-attack-of-the-giant-card-winners-11/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/saturday-attack-of-the-giant-card-winners-11/</guid>
       <category>Results</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sun, 12 Jul 2026 02:07:27 +0000</pubDate>
       <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
@@ -2657,6 +2660,7 @@
       <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/friday-attack-of-the-giant-card-winners/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/friday-attack-of-the-giant-card-winners/</guid>
       <category>Results</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sat, 11 Jul 2026 14:24:01 +0000</pubDate>
       <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
@@ -2686,7 +2690,7 @@
       <link>https://yugiohblog.konami.com/2026/ycs/friday-genesys-attack-of-the-giant-card-winners/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/friday-genesys-attack-of-the-giant-card-winners/</guid>
       <category>Results</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Attack of the Giant Card</category>
       <category domain="event">2026-north-america-genesys-championship</category>
       <pubDate>Sat, 11 Jul 2026 14:22:15 +0000</pubDate>
       <description>Results from Genesys Championship, published by Konami. Follow the link for the original post.</description>

@@ -770,7 +770,7 @@
     "modified": "2026-02-15T16:47:13-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
-    "format": null,
+    "format": "Public Events",
     "slug": "2026-02-300th-na"
   },
   {
@@ -806,7 +806,7 @@
     "modified": "2026-02-15T16:55:04-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
-    "format": "Genesys",
+    "format": "Attack of the Giant Card",
     "slug": "2026-02-300th-na"
   },
   {
@@ -833,7 +833,7 @@
     "modified": "2026-02-15T17:45:55-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2026-02-300th-na"
   },
   {
@@ -896,7 +896,7 @@
     "modified": "2026-02-15T05:50:51-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
-    "format": null,
+    "format": "Public Events",
     "slug": "2026-02-300th-na"
   },
   {
@@ -968,7 +968,7 @@
     "modified": "2026-02-14T18:35:36-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2026-02-300th-na"
   },
   {
@@ -1247,7 +1247,7 @@
     "modified": "2026-02-15T16:43:13-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
-    "format": null,
+    "format": "Public Events",
     "slug": "2026-02-300th-na"
   },
   {

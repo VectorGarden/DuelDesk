@@ -266,7 +266,7 @@
     "modified": "2026-04-19T09:20:19-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2026-04-team-ycs-las-vegas"
   },
   {
@@ -329,7 +329,7 @@
     "modified": "2026-04-19T18:14:23-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2026-04-team-ycs-las-vegas"
   },
   {
@@ -356,7 +356,7 @@
     "modified": "2026-04-19T18:17:53-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
-    "format": "Genesys",
+    "format": "Attack of the Giant Card",
     "slug": "2026-04-team-ycs-las-vegas"
   },
   {
@@ -383,7 +383,7 @@
     "modified": "2026-04-19T18:24:29-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
-    "format": null,
+    "format": "Public Events",
     "slug": "2026-04-team-ycs-las-vegas"
   },
   {
@@ -419,7 +419,7 @@
     "modified": "2026-04-19T18:21:47-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
-    "format": null,
+    "format": "Public Events",
     "slug": "2026-04-team-ycs-las-vegas"
   },
   {

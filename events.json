@@ -305,25 +305,6 @@
       ]
     },
     {
-      "slug": "2026-team-ycs-la-paz-bolivia",
-      "event": "TEAM YCS La Paz",
-      "location": "La Paz, Bolivia",
-      "updated": "2026-03-18",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2026-team-ycs-la-paz-bolivia/rounds.json",
-      "postCount": 22,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 10,
-          "duelists": 82,
-          "rounds": 12
-        }
-      ]
-    },
-    {
       "slug": "2026-02-300th-na",
       "event": "300th YCS in Richmond",
       "updated": "2026-02-15",

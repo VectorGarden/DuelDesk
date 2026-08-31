@@ -239,7 +239,7 @@
     "modified": "2025-12-16T17:38:04-08:00",
     "kind": "deck",
     "event": "Remote Duel YCS-North America",
-    "format": "Genesys",
+    "format": "Attack of the Giant Card",
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -257,7 +257,7 @@
     "modified": "2025-12-16T15:13:44-08:00",
     "kind": "news",
     "event": "Remote Duel YCS-North America",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -347,7 +347,7 @@
     "modified": "2025-12-16T11:18:15-08:00",
     "kind": "result",
     "event": "Remote Duel YCS-North America",
-    "format": "Genesys",
+    "format": "Attack of the Giant Card",
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -401,7 +401,7 @@
     "modified": "2025-12-16T10:56:36-08:00",
     "kind": "result",
     "event": "Remote Duel YCS-North America",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -428,7 +428,7 @@
     "modified": "2025-12-16T11:17:08-08:00",
     "kind": "result",
     "event": "Remote Duel YCS-North America",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -455,7 +455,7 @@
     "modified": "2025-12-16T11:16:27-08:00",
     "kind": "result",
     "event": "Remote Duel YCS-North America",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -482,7 +482,7 @@
     "modified": "2025-12-06T20:42:48-08:00",
     "kind": "result",
     "event": "Remote Duel YCS-North America",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -509,7 +509,7 @@
     "modified": "2025-12-06T21:09:26-08:00",
     "kind": "result",
     "event": "Remote Duel YCS-North America",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -644,7 +644,7 @@
     "modified": "2025-12-06T16:20:15-08:00",
     "kind": "news",
     "event": "Remote Duel YCS-North America",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-12-rdycs-na"
   },
   {
