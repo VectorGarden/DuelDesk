@@ -25,6 +25,20 @@ def collect(path):
     return _main(path, list_only=True)
 
 
+def every_page(paths):
+    """Check each page given, and fail if any of them does.
+
+    index.html was the only one checked for a long time, which is how a
+    tombstone that refreshed to itself reached production: nothing ever read
+    winners.html, because nothing links to it -- that is the point of it.
+    """
+    worst = 0
+    for one in paths:
+        print(f"-- {one}")
+        worst = max(worst, _main(one))
+    return worst
+
+
 def main(path="index.html"):
     if path == "--list":
         raise SystemExit("usage: check-references.py [--list] <html>")
@@ -85,6 +99,25 @@ def _main(path="index.html", list_only=False):
             if src and not src.startswith(SKIP_PREFIXES):
                 add(src)
 
+    # A meta refresh that lands back on the page it is on. GitHub Pages
+    # resolves an extensionless /winners to winners.html before it looks at
+    # winners/, so a tombstone there aimed at /winners redirected to itself and
+    # the winners page could not be opened in a browser at all.
+    #
+    # Invisible to everything else that checks this site: the response is an
+    # ordinary 200 with a well-formed body, and following the refresh is the
+    # browser's job. Only the file can say where it is sending people.
+    # The trailing slash is the whole difference and must not be normalised
+    # away: Pages serves winners.html at /winners.html and at /winners, and
+    # serves winners/index.html at /winners/. Aiming the refresh at the first
+    # two is a loop; aiming it at the third is the fix.
+    here = "/" + str(Path(path).name)
+    stem = here[:-len(".html")] if here.endswith(".html") else None
+    for m in re.finditer(r'http-equiv="refresh"[^>]*content="[^"]*url=([^"\s]+)', markup, re.I):
+        if m.group(1) in {here, stem}:
+            print(f"  FAIL    {path} refreshes to {m.group(1)}, which is itself")
+            return 1
+
     if list_only:
         for ref in sorted(refs):
             print(ref)
@@ -120,6 +153,8 @@ def _main(path="index.html", list_only=False):
 
 if __name__ == "__main__":
     args = sys.argv[1:]
+    if len(args) > 1 and "--list" not in args:
+        sys.exit(every_page(args))
     if args and args[0] == "--list":
         sys.exit(_main(*(args[1:] or ["index.html"]), list_only=True))
     sys.exit(main(*args))
