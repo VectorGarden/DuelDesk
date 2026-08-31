@@ -118,7 +118,12 @@ def round_key(post) -> tuple[str, Any]:
 #     Revolucion: Lozano, Connor Joseph" -- and the comma rule partitioned
 #     around it, leaving the team in the middle of the name. 32,791 names
 #     across eleven events.
-BUILD_VERSION = 13
+# 14: a team row is data, not a caption -- and a zero-width character is not
+#     part of a word. TEAM YCS Las Vegas 2023 announces its final's teams
+#     above the header rather than below it, with a byte order mark inside
+#     every cell, so the row was neither recognised as an announcement nor
+#     kept: the match's three duels stood as three separate matches.
+BUILD_VERSION = 14
 
 
 @dataclass
