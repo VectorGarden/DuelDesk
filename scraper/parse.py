@@ -360,6 +360,12 @@ def _classify_table(header: list[str]) -> str:
 # strip_region knows are three letters in capitals; this is "- Trinidad and
 # Tobago", which stayed inside the name and made one Duelist two people.
 # Spaces are required around the dash, so hyphenated surnames are left alone.
+# The separator an annotation opens with, and what one leaves behind.
+_LEADING = re.compile(r"^[\s,\u2010-\u2015-]+")
+# What is left on the end of a name when the annotation is taken off it.
+_DANGLING = re.compile(r"[\s,\u2010-\u2015-]+$")
+
+
 _SPELT_REGION = re.compile(r"\s+[-\u2010-\u2015]\s+([^-\u2010-\u2015]+)$")
 
 
@@ -367,45 +373,59 @@ def read_annotation(cell: str) -> tuple[str, str | None, str | None]:
     """A Duelist cell's name, the region written beside it, and the deck.
 
     Prose pairings have always read "Name (Country - points - Deck)" this way.
-    A table cell can carry exactly the same thing: the 2017 UDS Invitational
-    Trinidad and Tobago wrote its Top 4 as
+    A table cell carries the same thing, and the blog writes it either way
+    round:
 
+        Quispe Llanco, Ariel (Bolivia) - Burning Abyss Phantom Knights
+        Lopez Rangel, Carlos Eduardo - (Colombia) Fire Kings Kozmos
         Deonarine, Brandon Luke - Trinidad and Tobago (SPYRAL)
 
-    while the Top 8 on the previous page wrote the same Duelist as "Deonarine,
-    Brandon Luke". Discarding the bracket threw the deck away and left the
-    country inside the name, so the two rounds disagreed about who had played
-    and the cut did not chain.
+    The bracket is the country in the first two and the deck in the third, so
+    which one it is cannot be read off the bracket. What does not vary is the
+    order: where a cell carries both, the region comes first and the deck
+    second. That is the rule here.
 
-    Both parts are optional and neither is invented: a cell with no bracket and
-    no dash comes back unchanged, with no region and no deck.
+    Reading none of this is what put a deck inside a name. The 2016 South
+    America WCQ wrote its standings the first way, and the name kept the deck
+    -- which reconcile_names then preferred, because it counts words, folding
+    eight clean names into their mangled spellings across all eleven rounds
+    and sending its champion to the winners page as "Joaquin - Dracoslayer
+    Performapals Rinaldi Petroni".
+
+    Both parts are optional and neither is invented: a cell with no bracket
+    comes back unchanged, with no region and no deck.
     """
-    if not (m := _PARENS.match(cell.strip())) or not m.group(1).strip():
+    text = cell.strip()
+    if not (m := _PARENS.match(text)) or not m.group(1).strip():
         # No bracket, or a bracket with nothing in front of it. The 2016 World
         # Championship writes "(Japan) Yada, Makoto" -- the country leads and
         # the name follows -- and reading that as an annotation left the name
-        # as the empty string in front of the bracket. Every Duelist in the
-        # event came back nameless, every pairing was one nameless Duelist
-        # against another, and the event was refused for seating a Duelist
-        # against themselves.
+        # as the empty string in front of the bracket. A leading bracket is
+        # strip_region's business, as it was before this function existed.
         #
-        # A leading bracket is not this function's business. strip_region
-        # removes it further down, as it did before there was a function here.
-        #
-        # The dash is left alone
-        # on purpose: "Correa - Moreira, Jesus" is a compound surname, and 137
-        # names in the archive carry a country after a dash with no bracket at
-        # all. Reading those needs evidence this function does not have, and
-        # guessing would cut a surname in half. See issue for that half.
-        return cell.strip(), None, None
-    # Whatever else is in the bracket, the deck is the last part -- the same
-    # rule prose uses, because it is the same parenthesis.
-    cell = m.group(1)
-    deck = re.split(r"\s+[-\u2013\u2014]\s+", m.group(2))[-1].strip() or None
-    region = None
-    if m := _SPELT_REGION.search(cell):
-        region, cell = m.group(1).strip(), cell[:m.start()]
-    return cell.strip(), region, deck
+        # A dash with no bracket is left alone too. "Correa - Moreira, Jesus"
+        # is a compound surname, and 137 names in the archive carry a country
+        # after a dash with nothing to say which it is.
+        return text, None, None
+
+    head, bracket, tail = m.group(1), m.group(2).strip(), text[m.end():]
+    # An annotation written before the bracket rather than after it.
+    spelt = None
+    if s := _SPELT_REGION.search(head):
+        spelt, head = s.group(1).strip(), head[:s.start()]
+
+    # In the order the coverage wrote them, so the first is the region.
+    said = [x for x in (spelt, bracket, _DANGLING.sub("", _LEADING.sub("", tail)).strip()) if x]
+    if len(said) > 1:
+        region, deck = said[0], said[-1]
+    else:
+        # One annotation, which may still hold both: "(Japan - 9 points -
+        # Frog Monarch)" is a country, a total and a deck in one bracket. The
+        # deck is the last of them, because that is the part every one has.
+        bits = [b.strip() for b in re.split(r"\s+[-\u2010-\u2015]\s+", said[0])] if said else []
+        region = bits[0] if len(bits) > 1 else None
+        deck = bits[-1] if bits else None
+    return _DANGLING.sub("", head).strip(), region or None, deck or None
 
 
 def parse_table(doc: str) -> Table | None:
@@ -451,7 +471,20 @@ def parse_table(doc: str) -> Table | None:
                             "points": int(r[2]) if len(r) > 2 and r[2].isdigit() else None,
                             "status": None, "statusRound": None})
                 continue
-            name, region = strip_region(r[1])
+            # The same reading the pairings get. A standings cell carries
+            # the same annotations -- "Quispe Llanco, Ariel (Bolivia) -
+            # Burning Abyss Phantom Knights" -- and reading it without them
+            # left the deck inside the name.
+            #
+            # That is not only a bad label. reconcile_names counts the words
+            # of a name, so the spelling carrying a deck is the longer one and
+            # wins: the 2016 South America WCQ folded eight clean names into
+            # their mangled spellings and rewrote them across all eleven
+            # rounds, which is how its champion reached the winners page as
+            # "Joaquin - Dracoslayer Performapals Rinaldi Petroni".
+            cell, spelt, _ = read_annotation(r[1])
+            name, region = strip_region(cell)
+            region = region or spelt
             status, status_round = split_status(r[1])
             out.append({
                 "rank": int(r[0]),
