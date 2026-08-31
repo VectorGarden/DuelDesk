@@ -674,7 +674,7 @@ def parse_table(doc: str) -> Table | None:
             parts = keep if keep else parts
             # Per cell: the code sits on whichever cell carried it, which for
             # a first/last split is the first, not the joined string.
-            cleaned, region = [], None
+            cleaned, region, team = [], None, None
             for c in parts:
                 text = _text(c)
                 # A Team YCS that does not announce the team in a row of its
@@ -695,14 +695,15 @@ def parse_table(doc: str) -> Table | None:
                 if ":" in text:
                     before, _, after = text.partition(":")
                     if before.strip() and "," in after:
-                        text = after.strip()
+                        team, text = before.strip(), after.strip()
                 text, spelt, played = read_annotation(text)
                 text, code = strip_region(text)
                 region = region or code or spelt
                 deck = deck or played
                 if text:
                     cleaned.append(text)
-            return {"name": normalise_name(" ".join(cleaned)),
+            return {**({"team": team} if team else {}),
+                    "name": normalise_name(" ".join(cleaned)),
                     "region": region, "deck": deck or None}
 
         # A team match is one row of this table, holding the duels played
@@ -768,6 +769,35 @@ def parse_table(doc: str) -> Table | None:
                 continue
             duel = {"table": int(r[0]), "a": side(lcells, left), "b": side(rcells, right)}
             if match is None:
+                # No row announced a match, but the sides may still say which
+                # teams they played for. TEAM YCS Las Vegas 2020 writes its
+                # cut with the team on every Duelist and no announcement at
+                # all:
+                #
+                #   1 | Gonna Finish That: Couch, Dominic  | vs. | Dino DNA: Gamrat, Griffin
+                #   2 | Gonna Finish That: Silverman, ...  | vs. | Dino DNA: Cornell, Brendan
+                #   3 | Gonna Finish That: Page, Scott     | vs. | Dino DNA: Nappi, Ross
+                #
+                # Those three rows are one match. Read as three, the Top 4 of
+                # four teams held twenty-four Duelists and no team, so the
+                # event had no roster and could name no champion.
+                #
+                # Consecutive rows only, and only while both teams hold: the
+                # next pair of teams starts the next match.
+                # Not where both sides carry the same name. TEAM YCS Las
+                # Vegas 2020 has two teams registered as "Brick Squad" and
+                # pairs them against each other, and a team does not play
+                # itself -- so the prefix is not evidence of a match here and
+                # the rows stand as the duels they are.
+                teams = (duel["a"].get("team"), duel["b"].get("team"))
+                if all(teams) and teams[0] != teams[1]:
+                    if not out or out[-1].get("teams") != teams:
+                        out.append({"table": duel["table"], "teams": teams,
+                                    "a": {"name": teams[0], "region": None, "deck": None},
+                                    "b": {"name": teams[1], "region": None, "deck": None},
+                                    "duels": []})
+                    out[-1]["duels"].append(duel)
+                    continue
                 out.append(duel)                    # a singles event
                 continue
             match["duels"].append(duel)
