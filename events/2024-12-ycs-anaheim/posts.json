@@ -257,7 +257,7 @@
     "modified": "2024-12-09T06:30:12-08:00",
     "kind": "deck",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -275,7 +275,7 @@
     "modified": "2024-12-08T10:02:41-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -338,7 +338,7 @@
     "modified": "2024-12-08T18:35:29-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -365,7 +365,7 @@
     "modified": "2024-12-08T15:14:21-08:00",
     "kind": "deck",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -410,7 +410,7 @@
     "modified": "2024-12-08T18:33:05-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -437,7 +437,7 @@
     "modified": "2024-12-08T18:34:38-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -464,7 +464,7 @@
     "modified": "2024-12-08T18:40:59-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -491,7 +491,7 @@
     "modified": "2024-12-07T19:55:17-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -572,7 +572,7 @@
     "modified": "2024-12-07T12:10:52-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "2024-12-ycs-anaheim"
   },
   {
@@ -635,7 +635,7 @@
     "modified": "2024-12-07T16:34:02-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "2024-12-ycs-anaheim"
   },
   {

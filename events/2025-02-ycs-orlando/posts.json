@@ -338,7 +338,7 @@
     "modified": "2025-02-02T13:27:04-08:00",
     "kind": "deck",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-02-ycs-orlando"
   },
   {
@@ -347,7 +347,7 @@
     "modified": "2025-02-02T16:17:32-08:00",
     "kind": "result",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2025-02-ycs-orlando"
   },
   {
@@ -383,7 +383,7 @@
     "modified": "2025-02-02T15:44:16-08:00",
     "kind": "result",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-02-ycs-orlando"
   },
   {
@@ -419,7 +419,7 @@
     "modified": "2025-02-02T15:49:50-08:00",
     "kind": "result",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-02-ycs-orlando"
   },
   {
@@ -428,7 +428,7 @@
     "modified": "2025-02-02T12:50:15-08:00",
     "kind": "news",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2025-02-ycs-orlando"
   },
   {
@@ -446,7 +446,7 @@
     "modified": "2025-02-02T17:33:55-08:00",
     "kind": "result",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-02-ycs-orlando"
   },
   {
@@ -482,7 +482,7 @@
     "modified": "2025-02-02T13:43:16-08:00",
     "kind": "news",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-02-ycs-orlando"
   },
   {
@@ -500,7 +500,7 @@
     "modified": "2025-02-01T19:25:38-08:00",
     "kind": "result",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-02-ycs-orlando"
   },
   {
@@ -599,7 +599,7 @@
     "modified": "2025-02-01T14:53:59-08:00",
     "kind": "news",
     "event": "YCS Orlando",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-02-ycs-orlando"
   },
   {

@@ -374,7 +374,7 @@
     "modified": "2025-10-05T18:13:23-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-10-ycs-anaheim"
   },
   {
@@ -401,7 +401,7 @@
     "modified": "2025-10-05T18:15:48-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-10-ycs-anaheim"
   },
   {
@@ -428,7 +428,7 @@
     "modified": "2025-10-05T20:01:17-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-10-ycs-anaheim"
   },
   {
@@ -536,7 +536,7 @@
     "modified": "2025-10-04T19:05:48-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-10-ycs-anaheim"
   },
   {
@@ -563,7 +563,7 @@
     "modified": "2025-10-04T19:59:35-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-10-ycs-anaheim"
   },
   {
@@ -779,7 +779,7 @@
     "modified": "2025-10-04T21:24:49-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-10-ycs-anaheim"
   },
   {

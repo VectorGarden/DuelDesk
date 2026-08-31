@@ -347,7 +347,7 @@
     "modified": "2025-04-06T22:35:30-07:00",
     "kind": "deck",
     "event": "YCS Houston",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2025-04-ycs-houston"
   },
   {
@@ -410,7 +410,7 @@
     "modified": "2025-04-06T14:59:25-07:00",
     "kind": "news",
     "event": "YCS Houston",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2025-04-ycs-houston"
   },
   {
@@ -428,7 +428,7 @@
     "modified": "2025-04-06T14:52:28-07:00",
     "kind": "news",
     "event": "YCS Houston",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-04-ycs-houston"
   },
   {
@@ -536,7 +536,7 @@
     "modified": "2025-04-05T14:32:37-07:00",
     "kind": "news",
     "event": "YCS Houston",
-    "format": null,
+    "format": "Public Events",
     "slug": "2025-04-ycs-houston"
   },
   {
@@ -608,7 +608,7 @@
     "modified": "2025-04-05T19:24:28-07:00",
     "kind": "news",
     "event": "YCS Houston",
-    "format": null,
+    "format": "Time Wizard",
     "slug": "2025-04-ycs-houston"
   },
   {
@@ -617,7 +617,7 @@
     "modified": "2025-04-05T19:36:44-07:00",
     "kind": "news",
     "event": "YCS Houston",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2025-04-ycs-houston"
   }
 ]
