@@ -1,6 +1,24 @@
 {
   "events": [
     {
+      "slug": "yu-gi-oh-tcg-world-championship-2026",
+      "event": "Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026",
+      "updated": "2026-08-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/yu-gi-oh-tcg-world-championship-2026/rounds.json",
+      "postCount": 17,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 7,
+          "duelists": 30,
+          "rounds": 9
+        }
+      ]
+    },
+    {
       "slug": "2026-08-quebec",
       "event": "YCS Montréal",
       "updated": "2026-08-16",
