@@ -2678,6 +2678,72 @@ class TestPairingsWrittenAsProse(unittest.TestCase):
         self.assertEqual([r["table"] for r in got.table.rows], [1])
 
 
+class TestProseRounds(unittest.TestCase):
+    """Rounds the blog wrote as sentences rather than as a table."""
+
+    def rows(self, text):
+        from parse import parse_prose_pairings
+        return parse_prose_pairings(text)
+
+    def test_a_table_number_without_a_colon(self):
+        # Eight posts write "Table 1 De Obaldia Soza, ..." with nothing
+        # between the number and the first name.
+        got = self.rows("Here are the pairings for Top 4: "
+                        "Table 1 Andrade Castro, Juan Sebastian (True Draco) vs "
+                        "Stephenson, Darren James (Pendulum Magicians) "
+                        "Table 2 Perez Herrera, Hector (ABC) vs Mena Campos, Esteban (Zoodiac)")
+        self.assertEqual(len(got), 2)
+        self.assertEqual(got[0]["a"]["name"], "Juan Sebastian Andrade Castro")
+        self.assertEqual(got[0]["b"]["deck"], "Pendulum Magicians")
+
+    def test_a_deck_after_a_dash_instead_of_a_bracket(self):
+        # The 2014 Central America WCQ writes the deck after a dash.
+        got = self.rows("Here are the pairings for the Top 8: "
+                        "Table 1: Elizondo Ochoa, Saul Hiram \u2013 Madolche Hand vs. "
+                        "Gonzalez Orea, Alvaro \u2013 Geargia")
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]["a"]["name"], "Saul Hiram Elizondo Ochoa")
+        self.assertEqual(got[0]["a"]["deck"], "Madolche Hand")
+
+    def test_a_country_written_out_beside_the_name(self):
+        got = self.rows("Table 1 De Obaldia Soza, Galileo Mauricio from Panama (ABC) "
+                        "vs Perez Herrera, Hector Lorenzo from Chile (ABC)")
+        self.assertEqual(got[0]["a"]["name"], "Galileo Mauricio De Obaldia Soza")
+
+    def test_a_chain_with_no_table_numbers(self):
+        # Nothing separates one pairing from the next but the bracket ending
+        # the side before it.
+        got = self.rows("Here are the Top 4 Pairings! "
+                        "Aaron Furman (Metalfoes) vs. Chandler Sanford (Majespecter) "
+                        "Kamal Crooks (Blue-Eyes) vs. Jose Uriel Diaz (Kozmo)")
+        self.assertEqual(len(got), 2)
+        self.assertEqual(got[0]["a"]["name"], "Aaron Furman")
+        self.assertEqual(got[1]["b"]["name"], "Jose Uriel Diaz")
+
+    def test_a_preamble_ending_in_a_full_stop(self):
+        got = self.rows("Only four Duelists remain! Here are the semifinal matchups. "
+                        "Rolando Alberto Gordon Bustamante (Gouki) vs. "
+                        "Andres David Torres Reyes (Burning Abyss)")
+        self.assertEqual(got[0]["a"]["name"], "Rolando Alberto Gordon Bustamante")
+
+    def test_an_initial_is_not_the_end_of_a_preamble(self):
+        # Cutting at every full stop would take "Antonio Nogueira Jr." down to
+        # nothing and lose the post rather than its preamble.
+        got = self.rows("We are close to crowning a champion! "
+                        "Antonio Nogueira Jr. (Tengu Synchro) vs Julian Beltran (Six Samurai)")
+        self.assertEqual(got[0]["a"]["name"], "Antonio Nogueira Jr.")
+
+    def test_a_sentence_trailing_a_pairing_is_not_a_deck(self):
+        # "Parra, Filiberto Octavio - Geargia advances to Top 8. Orea had
+        # represented Central America in 2012" is a sentence, not an
+        # archetype. The name is worth keeping without it.
+        got = self.rows("Table 1: Gonzalez Orea, Alvaro \u2013 Madolche Hand vs. "
+                        "Parra, Filiberto Octavio \u2013 Geargia Parra, Filiberto Octavio "
+                        "\u2013 Geargia advances to Top 8. Orea had represented Central America.")
+        self.assertEqual(got[0]["b"]["name"], "Filiberto Octavio Parra")
+        self.assertIsNone(got[0]["b"]["deck"])
+
+
 class TestWinnerProse(unittest.TestCase):
     """The one line a champion can be read out of, and only for the posts that
     might carry one."""

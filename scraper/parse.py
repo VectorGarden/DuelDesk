@@ -793,24 +793,74 @@ def parse_table(doc: str) -> Table | None:
 # on into the next table and swallow it: one row of the 2013 Central America Top
 # 16 reads "...(Constellars) vs.Gallegos Lomeli..." with no space, and the Top 16
 # came out with seven matches instead of eight.
-_PROSE_SPLIT = re.compile(r"Table\s*(\d+)\s*:", re.I)
+# The colon is optional. Eight posts write "Table 1 De Obaldia Soza, ..."
+# with nothing between the number and the first name.
+_PROSE_SPLIT = re.compile(r"Table\s*(\d+)\s*:?\s", re.I)
 # "vs." with the space after it optional, for that same row.
 _VS = re.compile(r"\s*\bvs(?:\.\s*|\s+)", re.I)
 _PARENS = re.compile(r"^(.*?)\s*\(([^)]*)\)")
 
 
+# "De Obaldia Soza, Galileo Mauricio from Panama (ABC)" -- the country written
+# out, in the middle of the side rather than in the bracket.
+_FROM_COUNTRY = re.compile(r"\s+from\s+[A-Z][^,()]*$")
+
+# A round written as a chain with no "Table N" to cut it at:
+#
+#   Here are the Top 4 Pairings! Aaron Furman (Metalfoes) vs. Chandler
+#   Sanford (Majespecter) Kamal Crooks (Blue-Eyes) vs. Jose Uriel Diaz (Kozmo)
+#
+# Nothing separates one pairing from the next except the bracket ending the
+# side before it, so the bracket is what the pairs are found by. Each side is
+# bounded: it cannot run past a bracket, and it cannot be longer than a name
+# and a deck.
+_PROSE_PAIR = re.compile(
+    r"([^()]{2,90}\([^)]*\))\s*(?:vs\.?|versus)\s+([^()]{2,90}\([^)]*\))", re.I)
+
+# What a post says before it starts naming anybody. Cut at the last of these,
+# so "Here are the Top 4 Pairings!" does not become part of the first name.
+#
+# A full stop counts too -- "Here are the semifinal matchups. Rolando ..." --
+# but only after a whole word. An initial and a suffix both end in a stop, and
+# cutting at those would take "Antonio Nogueira Jr." down to nothing and lose
+# the post rather than the preamble.
+_PREAMBLE = re.compile(r"^.*(?:[:!?]|(?<![A-Z])(?<!\bJr)(?<!\bSr)(?<!\bDr)\w{4,}\.)\s+", re.S)
+
+# A deck is a deck's length. Where a piece trails a result sentence -- "Parra,
+# Filiberto Octavio - Geargia advances to Top 8. Orea had represented Central
+# America in 2012" -- what follows the dash is a sentence, not an archetype,
+# and the name is worth keeping without it.
+def _plausible_deck(said: str) -> str | None:
+    said = said.strip()
+    return said if said and "," not in said and len(said.split()) <= 5 else None
+
+
 def _prose_side(text: str) -> dict[str, Any] | None:
     """One Duelist out of "Name (Country - points - Deck)", and what they played."""
-    m = _PARENS.match(text.strip())
-    if not m:
-        # No parenthesis at all. Everything to the end of the piece would be the
-        # name -- but a result sentence often trails it, and with no bracket to
-        # say where the name stopped this side is not read.
-        return None
-    # Whatever else is in there, the deck is the last part: "(HEROES)" is a
-    # deck, and so is the end of "(Japan - 9 points - Frog Monarch)".
-    deck = re.split(r"\s+[-\u2013\u2014]\s+", m.group(2))[-1].strip() or None
-    name = normalise_name(m.group(1))
+    text = text.strip()
+    if m := _PARENS.match(text):
+        # Whatever else is in there, the deck is the last part: "(HEROES)" is a
+        # deck, and so is the end of "(Japan - 9 points - Frog Monarch)".
+        deck = re.split(r"\s+[-\u2013\u2014]\s+", m.group(2))[-1].strip() or None
+        said = m.group(1)
+    else:
+        # No bracket. The deck can be written after a dash instead -- the 2014
+        # Central America WCQ writes "Gonzalez Orea, Alvaro - Madolche Hand" --
+        # and a piece of prose here is bounded by "Table N" on one side and
+        # "vs." on the other, so what follows the dash is the deck rather than
+        # the second half of a surname.
+        #
+        # Without one of the two, this side is not read: everything to the end
+        # of the piece would be the name, and a result sentence often trails
+        # it with nothing to say where the name stopped.
+        said, _, tail = text.partition(" \u2013 ")
+        if not tail:
+            said, _, tail = text.partition(" - ")
+        if not tail:
+            return None
+        deck = _plausible_deck(tail)
+    said = _FROM_COUNTRY.sub("", said)
+    name = normalise_name(said)
     return {"name": name, "region": None, "deck": deck} if name else None
 
 
@@ -834,6 +884,16 @@ def parse_prose_pairings(text: str) -> list[dict[str, Any]]:
     Jonathon Castillo Gomez (Blue-Eyes) - BYE" -- which is a real thing to
     publish and nothing to pair.
     """
+    if not _PROSE_SPLIT.search(text):
+        # No "Table N" anywhere. Read it as a chain instead, and take it only
+        # if every pairing in it reads -- the same all-or-nothing this has
+        # always applied, for the same reason.
+        found = _PROSE_PAIR.findall(text)
+        chain = [{"table": None, "a": a, "b": b}
+                 for left, right in found
+                 if (a := _prose_side(_PREAMBLE.sub("", left))) and (b := _prose_side(right))]
+        return chain if found and len(chain) == len(found) else []
+
     pieces = _PROSE_SPLIT.split(text)
     out: list[dict[str, Any]] = []
     pairings = 0
