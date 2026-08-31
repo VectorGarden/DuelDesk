@@ -3322,6 +3322,24 @@
       ]
     },
     {
+      "slug": "yu-gi-oh-world-championship-2016",
+      "event": "Pairings",
+      "updated": "2016-08-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/yu-gi-oh-world-championship-2016/rounds.json",
+      "postCount": 58,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 5,
+          "duelists": 22,
+          "rounds": 7
+        }
+      ]
+    },
+    {
       "slug": "2016-ycs-origins",
       "event": "YCS Origins",
       "updated": "2016-06-19",
