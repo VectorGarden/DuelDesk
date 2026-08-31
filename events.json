@@ -3581,7 +3581,20 @@
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-world-championship-2016/rounds.json",
       "postCount": 58,
+      "champions": [
+        {
+          "format": null,
+          "name": "Shunsuke Hiyama",
+          "deck": null
+        }
+      ],
       "formats": [
+        {
+          "format": "Dragon Duel",
+          "swissRounds": 4,
+          "duelists": 12,
+          "rounds": 6
+        },
         {
           "format": null,
           "swissRounds": 5,
@@ -3796,7 +3809,7 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 599,
-          "rounds": 16
+          "rounds": 15
         }
       ]
     },
