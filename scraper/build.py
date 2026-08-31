@@ -86,7 +86,12 @@ def round_key(post) -> tuple[str, Any]:
 #    rounds that have one have more than one -- YCS Montreal's Top 4 had three
 #    -- so keeping one threw away two thirds of the Duelists the blog wrote
 #    about that round. `feature` becomes `features`, a list, newest first.
-BUILD_VERSION = 7
+#
+# 8: the tables the blog actually writes. 149 round posts held a real table the
+#    reader did not recognise -- "Table | Player 1 | Player 2" and eight other
+#    headings -- so YCS Niagara Falls 2022 had ten rounds of standings, no
+#    pairings at all, an empty cut, and therefore nobody to name champion.
+BUILD_VERSION = 8
 
 
 @dataclass
