@@ -3368,6 +3368,31 @@
       ]
     },
     {
+      "slug": "2014-north-american-wcq",
+      "event": "North America WCQ 2014",
+      "updated": "2014-07-25",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2014-north-american-wcq/rounds.json",
+      "postCount": 78,
+      "champions": [
+        {
+          "format": null,
+          "name": "Korey Mitchell McDuffie",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1716,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "2014-wcq-ca",
       "event": "WCQ CA",
       "updated": "2014-07-06",
