@@ -804,7 +804,32 @@ def parse_table(doc: str) -> Table | None:
             if match["table"] is None:              # the match is at its first table
                 match["table"] = duel["table"]
 
+        # A round where every table pairs a Duelist against themselves is a
+        # column the blog copied, not a round that was played. YCS Denver's
+        # round 6 is published with Player 2 holding Player 1's name in all
+        # 247 rows:
+        #
+        #   1 | Brown, Quinton DeVante Marvin | vs. | Brown, Quinton DeVante Marvin
+        #   2 | Flynn, Andrey Asiev           | vs. | Flynn, Andrey Asiev
+        #
+        # There is no opponent in that post to read, so the pairings are
+        # dropped and the round keeps whatever else it has -- 244 rounds in
+        # the archive already stand with no pairings. Reading them as written
+        # took the whole 42-post event out of the archive.
+        #
+        # Every row, not some: one self-paired row is a typo in a round that
+        # was really played, and that still stops the event, as it should.
+        if out and all(_itself(d) for d in out):
+            out = []
+
     return Table(kind=kind, columns=header, rows=out)
+
+
+def _itself(duel: dict) -> bool:
+    """Both sides of one row naming the same Duelist."""
+    def named(side):
+        return side["name"] if isinstance(side, dict) else side
+    return bool(named(duel.get("a")) and named(duel["a"]) == named(duel.get("b")))
 
 
 # Pairings written as sentences rather than as a table. Konami does this often
