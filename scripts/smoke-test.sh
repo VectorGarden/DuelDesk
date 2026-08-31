@@ -144,7 +144,27 @@ while read -r path; do
   # dueldesk.reizu.devapp.js -- which fails, and had nothing to do with whether
   # the file was there.
   code="$(status "$BASE/${path#/}")"
-  [ "$code" = "200" ] || { fail "$path -> $code"; missing=1; }
+  # A redirect is not a missing file. /winners is a directory with an index in
+  # it, which is how a static host serves a clean URL at all, and every one of
+  # them answers the bare name with a 301 to the name with a slash. Requiring a
+  # literal 200 failed the deploy on a page that was being served perfectly
+  # well -- and the reference check in CI passed, because the file was there.
+  #
+  # The redirect still has to arrive somewhere real: what is required is that
+  # following it ends in 200, so a reference pointing at nothing fails exactly
+  # as it did before.
+  case "$code" in
+    30[1278])
+      final="$(curl -sSL -o /dev/null -m 20 -w '%{http_code}' "$BASE/${path#/}" 2>/dev/null || echo 000)"
+      if [ "$final" = "200" ]; then
+        echo "  ok    $path -> $code -> $final"
+      else
+        fail "$path -> $code -> $final"; missing=1
+      fi
+      ;;
+    200) ;;
+    *) fail "$path -> $code"; missing=1 ;;
+  esac
 done <<< "$(python3 "$(dirname "$0")/../.github/scripts/check-references.py" --list "$SITE/index.html")"
 [ "$checked" -gt 0 ] || fail "could not extract any references from $SITE/index.html"
 [ "$missing" -eq 0 ] && [ "$checked" -gt 0 ] && echo "  ok    all $checked referenced files serve 200"

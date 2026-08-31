@@ -93,7 +93,19 @@ def _main(path="index.html", list_only=False):
     missing = []
     for ref in sorted(refs):
         target = Path(ref.lstrip("/"))
-        if target.exists():
+        # A directory is a reference to the index inside it -- /winners is
+        # winners/index.html, which is how a static host serves a clean URL.
+        # The index has to be there: an empty directory answers a local
+        # http.server with a file listing and GitHub Pages with a 404, so the
+        # rehearsal would pass and the deploy would serve nothing.
+        if target.is_dir():
+            index = target / "index.html"
+            if index.is_file():
+                print(f"  ok      {ref} ({index})")
+            else:
+                missing.append(ref)
+                print(f"  MISSING {ref} is a directory with no index.html")
+        elif target.exists():
             print(f"  ok      {ref}")
         else:
             missing.append(ref)
