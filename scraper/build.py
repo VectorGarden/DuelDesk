@@ -135,7 +135,11 @@ def round_key(post) -> tuple[str, Any]:
 #     as prose about the two Duelists rather than as a pairing, so ten events
 #     had no Final -- and an event with no Final has no two Duelists for a
 #     winner post to be recognised among.
-BUILD_VERSION = 17
+# 18: a sentence side must be a name, and two letters can be the wrong way
+#     round. #132 read any sentence saying "against" as a pairing, which made
+#     a clause into a Duelist; and YCS Toronto's Top 4 write-up spells
+#     "Alexandre Dalpe" as "Alexander Dalpe", which no folding rule reached.
+BUILD_VERSION = 18
 
 
 @dataclass
@@ -315,7 +319,18 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
         if len(odd) != 1:
             return False
         x, y = a[odd[0]], b[odd[0]]
-        return len(x) == len(y) and sum(p != q for p, q in zip(x, y)) == 1
+        if len(x) != len(y):
+            return False
+        off = [i for i, (p, q) in enumerate(zip(x, y)) if p != q]
+        if len(off) == 1:
+            return True
+        # Or two neighbours the wrong way round, which is the same slip of the
+        # hand. YCS Toronto's Top 8 seats "Alexandre Dalpe" and its Top 4 is
+        # written up as "Alexander Dalpe" -- one Duelist, and a Top 4 holding
+        # somebody who had not played in the Top 8 took the event out of the
+        # archive.
+        return (len(off) == 2 and off[1] == off[0] + 1
+                and x[off[0]] == y[off[1]] and x[off[1]] == y[off[0]])
 
     def shortens(sw: tuple[str, ...], lw: tuple[str, ...]) -> bool:
         """Whether every word of sw is a distinct word of lw, or starts one."""

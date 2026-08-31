@@ -893,6 +893,33 @@ _THEIR_DECK = re.compile(
 _AT_TABLE = re.compile(r"^\s*at\s+table\s+(\d+)\s*,\s*", re.I)
 
 
+# Particles that sit inside a name without a capital of their own.
+_PARTICLES = {"de", "del", "la", "las", "los", "van", "von", "der", "den",
+              "da", "das", "dos", "du", "di", "el", "al", "bin", "ibn", "y"}
+
+
+def _looks_like_a_name(said: str) -> bool:
+    """Whether this is a Duelist's name rather than a piece of a sentence.
+
+    The sentence reader hands back whatever sits in front of a verb, and on a
+    post that is not about two Duelists that is a clause. The 2016 South
+    America WCQ writes its Top 16 as a dash-delimited chain with "Versus"
+    between the halves, and reading it as a sentence gave a Duelist called
+    "With just sixteen Duelists now remaining in the WCQ let's find out who's
+    left" playing one called "in the Top 16" -- a Top 16 of two matches, which
+    took the event out of the archive.
+
+    A name is a few words, each of them capitalised or a particle, and none of
+    them punctuation the blog uses to separate things.
+    """
+    words = said.split()
+    if not 2 <= len(words) <= 6:
+        return False
+    if any(c in said for c in ";:\u2013\u2014|") or any(ch.isdigit() for ch in said):
+        return False
+    return all(w[:1].isupper() or w.lower().strip(".,") in _PARTICLES for w in words)
+
+
 def _sentence_side(text: str, lead: bool) -> dict[str, Any] | None:
     """One Duelist out of a sentence about them, and the deck it names."""
     deck = None
@@ -905,11 +932,13 @@ def _sentence_side(text: str, lead: bool) -> dict[str, Any] | None:
         text = re.split(r"\s+(?:is|are|will|and)\b", text, maxsplit=1)[0]
     if lead:
         text = _AT_TABLE.sub("", _PREAMBLE.sub("", text))
-    name = normalise_name(text.strip(" ,.!?"))
-    # Two words at least. A sentence hands back whatever is in front of the
-    # verb, and one word of that is a fragment rather than a Duelist.
+    # A conjunction the sentence left behind. YCS Toronto writes "Michael
+    # Kyle Walters and and his Burning Abyss Phantom Knight Deck", and the
+    # doubled word puts an "and" on the end of the name.
+    text = re.sub(r"\s+(?:and|with|&)$", "", text.strip(" ,.!?"))
+    name = normalise_name(text)
     return ({"name": name, "region": None, "deck": deck}
-            if name and len(name.split()) >= 2 else None)
+            if name and _looks_like_a_name(name) else None)
 
 
 def parse_prose_duels(text: str) -> list[dict[str, Any]]:

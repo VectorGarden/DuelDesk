@@ -2810,6 +2810,28 @@ class TestProseDuels(unittest.TestCase):
                         "his Maliss Deck. They are up against each other now!")
         self.assertEqual(got, [])
 
+    def test_a_clause_is_not_a_duelist(self):
+        # The 2016 South America WCQ writes its Top 16 as a dash-delimited
+        # chain with "Versus" between the halves. Read as sentences, that gave
+        # a Duelist called "With just sixteen Duelists now remaining in the
+        # WCQ let's find out who's left" playing one called "in the Top 16" --
+        # a Top 16 of two matches, which took the event out of the archive.
+        got = self.rows("With just sixteen Duelists now remaining in the WCQ "
+                        "let\u2019s find out who\u2019s left; where they\u2019re from; "
+                        "and who they\u2019re up against in the Top 16!")
+        self.assertEqual(got, [])
+
+    def test_a_doubled_word_does_not_cost_the_post(self):
+        # YCS Toronto writes "Michael Kyle Walters and and his Burning Abyss
+        # Phantom Knight Deck", and the doubled word leaves a conjunction on
+        # the end of the name -- which the name test then refuses, losing the
+        # round rather than the typo.
+        got = self.rows("At Table 2, Alexander Dalpe is using his Domain Monarch "
+                        "Deck to Duel against Michael Kyle Walters and and his "
+                        "Burning Abyss Phantom Knight Deck.")
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]["b"]["name"], "Michael Kyle Walters")
+
     def test_a_sentence_naming_nobody_is_not_a_round(self):
         # The same all-or-nothing the pairings reader applies: a round short a
         # match is a wrong round, not a small one.
@@ -4330,6 +4352,23 @@ class TestFoldedNames(unittest.TestCase):
             [["1", "Benjamin Carl", "Smithson", "vs.", "Zoe", "Adams"]],
             [["1", "Ben", "Smith", "vs.", "Zoe", "Adams"]], cut_round="Top 4")
         self.assertEqual(canon.get("Ben Smith"), "Benjamin Carl Smithson")
+
+    def test_two_letters_the_wrong_way_round(self):
+        # YCS Toronto's Top 8 seats "Alexandre Dalpe" and its Top 4 is written
+        # up as "Alexander Dalpe" -- one Duelist, and a Top 4 holding somebody
+        # who had not played in the Top 8 took the event out of the archive. A
+        # transposition is the same slip of the hand as a typed letter.
+        # The spelling seen in more rounds keeps the Duelist, so the typo has
+        # to be the rarer one -- as it is: it appears in the write-up of one
+        # round and the name itself appears everywhere they played.
+        from build import reconcile_names
+        swiss = [["1", "Alexandre", "Dalpe", "vs.", "Kobe Louis", "Short"]]
+        sources = [_src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD, swiss),
+                   _src("https://x/r2/", "Round 2 Pairings", PAIR_HEAD, swiss),
+                   _src("https://x/t/", "Top 4 Pairings", PAIR_HEAD,
+                        [["1", "Alexander", "Dalpe", "vs.", "Kobe", "Short"]])]
+        canon = reconcile_names(sources)
+        self.assertEqual(canon.get("Alexander Dalpe"), "Alexandre Dalpe")
 
     def test_a_dropped_middle_name_is_folded(self):
         canon, sources = self.fold(
