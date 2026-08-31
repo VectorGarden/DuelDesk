@@ -24,7 +24,7 @@ from dataclasses import dataclass, asdict
 from datetime import date
 
 from naming import wcq_name
-from parse import detect_kind, detect_round
+from parse import detect_format, detect_kind, detect_round
 from winners import SIDE_EVENT
 
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -440,6 +440,15 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
                 <= date.fromisoformat(d).toordinal()
                 <= date.fromisoformat(hi).toordinal() + slack_days)
 
+    filed: dict[str, set] = defaultdict(set)
+    for e in entries:
+        if not (e.event_slug and e.lastmod):
+            continue
+        kind = detect_kind(e.slug)
+        if kind in TOURNAMENT:
+            filed[e.event_slug].add((kind, detect_round(f"{e.slug} {e.url}", kind),
+                                     detect_format(f"{e.slug} {e.url}")))
+
     out = []
     for e in entries:
         rec = e.to_dict()
@@ -466,6 +475,11 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
         else:
             hits = [k for k, (lo, hi) in windows.items()
                     if within(e.lastmod, lo, hi) and profiles[k].names(e)]
+            kind = detect_kind(e.slug)
+            if len(hits) == 1 and kind in TOURNAMENT and (
+                    kind, detect_round(f"{e.slug} {e.url}", kind),
+                    detect_format(f"{e.slug} {e.url}")) in filed.get(hits[0], ()):
+                hits = []
             if len(hits) == 1:
                 rec["event"], rec["event_confidence"] = hits[0], "date"
             elif len(hits) > 1:

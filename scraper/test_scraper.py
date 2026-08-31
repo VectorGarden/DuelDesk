@@ -182,6 +182,40 @@ class TestIndex(unittest.TestCase):
         # forced into the nearest one.
         self.assertEqual(got["unrelated-points-update"], (None, "unmatched"))
 
+    def test_a_date_may_not_duplicate_a_round_the_event_has(self):
+        # The January 2022 Remote Duel YCS ran alongside the Latin America
+        # Remote Duel YCS. Both published a Top 32, both are filed under
+        # "ycs", and only one of them has the event in its URL. A shared
+        # weekend and a shared category were enough to take the other one --
+        # and Latin America's cut overwrote North America's, leaving one
+        # tournament's Top 32 feeding another's Top 16.
+        xml = SITEMAP.replace("</urlset>", """
+        <url><loc>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/top-32-pairings/</loc>
+             <lastmod>2026-08-16T10:00:00-07:00</lastmod></url>
+        <url><loc>https://yugiohblog.konami.com/2026/ycs/other-event-top-32-pairings/</loc>
+             <lastmod>2026-08-16T11:00:00-07:00</lastmod></url>
+        </urlset>""")
+        got = {r["slug"]: r["event"] for r in assign_events(parse_post_sitemap(xml))}
+        self.assertEqual(got["top-32-pairings"], "2026-08-quebec", "its own, by path")
+        self.assertIsNone(got["other-event-top-32-pairings"],
+                          "a second Top 32 is a second tournament, not this one's")
+
+    def test_the_other_format_is_not_the_same_round(self):
+        # The guard above keys a round by its format as well. YCS Montreal
+        # runs Advanced and Genesys side by side and both publish a round 13,
+        # so a format-blind key made one tournament's coverage refuse the
+        # other's -- which split the event in two and lost the posts that
+        # nothing else claimed.
+        xml = SITEMAP.replace("</urlset>", """
+        <url><loc>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/round-13-pairings-genesys-format/</loc>
+             <lastmod>2026-08-16T10:00:00-07:00</lastmod></url>
+        </urlset>""")
+        got = {r["slug"]: (r["event"], r["event_confidence"])
+               for r in assign_events(parse_post_sitemap(xml))}
+        self.assertEqual(got["ycs-montreal-round-13-pairings-advanced-format"],
+                         ("2026-08-quebec", "date"),
+                         "Advanced round 13 is not the Genesys one")
+
     def test_concurrent_events_are_refused_not_guessed(self):
         # Two events on the same weekend is real: the 2026 WCQ and the Genesys
         # Championship both ran on 2026-07-11.
