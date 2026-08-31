@@ -156,7 +156,12 @@ def round_key(post) -> tuple[str, Any]:
 #     4 holding eight Duelists; a slug that said Top 3 over a title that said
 #     Round 3; a Top 8 published as four unheaded tables; a duel nobody
 #     numbered; and a cut round of ten, which no bracket can produce.
-BUILD_VERSION = 21
+# 22: the World Championship is called that. Five events, five spellings, and
+#     for 2016 no name at all -- its coverage heads six posts "Pairings: ..."
+#     and writes the event's own name without a colon, so the vote never saw
+#     it and the archive published the event as Pairings. The name is stored
+#     in rounds.json, so only a rebuild changes it.
+BUILD_VERSION = 22
 
 
 @dataclass

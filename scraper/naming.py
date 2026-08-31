@@ -111,6 +111,35 @@ def _from_opening_words(titles: list[str], fallback: str) -> str:
     return best.rstrip(":–—- ") if enough else fallback
 
 
+# Words that describe coverage rather than name an event. A title split on its
+# colon offers its first half as the event's name, and the 2016 World
+# Championship heads six posts this way -- "Pairings: Round 2", "Pairings: Top
+# 4", "Pairings: World Championship Finals!" -- while writing the event's own
+# name, "2016 World Championship", bare and without a colon, so it never enters
+# the vote at all. Pairings won it, and the event went to the front page,
+# the feed and the winners table called Pairings.
+_COVERAGE_WORDS = frozenset("""
+pairings pairing standings standing results result final finals feature
+features match matches round rounds top day deck decks profile breakdown
+recap wrap up winner winners quarterfinals semifinals bracket brackets
+update updates tables table photo gallery
+""".split())
+_WORDS_ONLY = re.compile(r"[^\W\d_]+", re.UNICODE)
+
+
+def says_only_what_it_is(name: str) -> bool:
+    """A candidate made of nothing but words for a kind of coverage.
+
+    Not a name -- it would fit every event the blog has ever covered. Checked
+    against all 140 names in the archive, it rejects exactly one: Pairings.
+    "Final Standings" and "Top 8 Pairings" go the same way; "250th YCS", "Wcs
+    2010" and "2016 World Championship" all keep their names, because a word
+    that is not on this list is a word about which event this is.
+    """
+    words = _WORDS_ONLY.findall(name.lower())
+    return bool(words) and all(w in _COVERAGE_WORDS for w in words)
+
+
 def event_name(titles: list[str], fallback: str) -> str:
     """The event's name, or `fallback` if its posts do not agree on one.
 
@@ -131,7 +160,7 @@ def event_name(titles: list[str], fallback: str) -> str:
     named, prefixes = 0, Counter()
     for title in titles:
         parts = _TITLE_SPLIT.split(title.strip(), maxsplit=1)
-        if len(parts) == 2 and parts[0]:
+        if len(parts) == 2 and parts[0] and not says_only_what_it_is(parts[0]):
             named += 1
             prefixes[parts[0]] += 1
 
@@ -201,6 +230,31 @@ def _year(slug: str, ended: str | None) -> str | None:
     """
     m = _YEAR.search(slug)
     return m.group(0) if m else ((ended or "")[:4] or None)
+
+
+# The World Championship, which the blog has spelled five ways across five
+# events -- "2010 Yu-Gi-Oh! World Championship", "Yu-Gi-Oh! TCG WORLD
+# CHAMPIONSHIP 2026", and for 2016 nothing at all, because its coverage heads
+# six posts "Pairings: ..." and writes the event's own name without a colon, so
+# the vote never saw it and the archive called the event Pairings.
+#
+# Named for the year like a qualifier is, because there is one every year and
+# the year is what tells them apart.
+_IS_WORLDS = re.compile(r"world championship|\bwcs\b", re.I)
+
+
+def worlds_name(slug: str, name: str, ended: str | None) -> str | None:
+    """"World Championship 2016" for a World Championship, or None.
+
+    A qualifier is not one, and says so in its own name -- "World Championship
+    Qualifier" is what WCQ stands for -- so those are refused here and answered
+    by wcq_name, which runs first anyway.
+    """
+    text = f"{slug} {name}".replace("-", " ")
+    if _IS_WCQ.search(text) or not _IS_WORLDS.search(text):
+        return None
+    year = _year(slug, ended)
+    return f"World Championship {year}" if year else None
 
 
 def wcq_name(slug: str, name: str, ended: str | None) -> str | None:
@@ -289,6 +343,8 @@ def canonical_name(name: str, slug: str, ended: str | None, *,
     """
     if qualifier := wcq_name(slug, name, ended):
         return qualifier, None
+    if worlds := worlds_name(slug, name, ended):
+        return worlds, None
     # Either the coverage never agreed on a name, or it agreed on something that
     # is not one. YCS Charlotte's settled on "Top Table Update" and YCS
     # Hartford's on "YCS", and the slug does better than both.
