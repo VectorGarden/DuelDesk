@@ -180,7 +180,8 @@ def crowning(text: str) -> str:
     return ""
 
 
-def champion(candidates: list[str], posts: list[dict], fmt: str | None = None) -> str | None:
+def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
+             rosters: dict[str, list[str]] | None = None) -> str | None:
     """Which of these Duelists the coverage says won, or None.
 
     `candidates` are the Duelists in the deepest round of the cut that was
@@ -209,8 +210,23 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None) -
         said = about_format(title)
         if fmt and said and said != fmt:
             continue
-        named = sorted((at, name) for name in candidates
-                       if (at := named_in(name, text)) >= 0)
+        # A team is recognised by whoever played for it. It enters under a
+        # name it chose -- "Ares", "Legionnaire" -- and one word is not a
+        # name that ordinary prose can be searched for, which is why a team
+        # event has had no champion unless the post happened to quote it.
+        # The Duelists are what the coverage names:
+        #
+        #   "Pierre Burgals, Matthieu Bricard, and Kevin Rodrigues Goncalves
+        #    are the TEAM YCS Las Vegas Champions!!"
+        #
+        # Whichever of the two names is found first stands for the team, so a
+        # post that says "defeated" still reads the right way round.
+        def where(name: str) -> int:
+            found = [at for who in [name] + list((rosters or {}).get(name, []))
+                     if (at := named_in(who, text)) >= 0]
+            return min(found) if found else -1
+
+        named = sorted((at, name) for name in candidates if (at := where(name)) >= 0)
         if len(named) == 1:
             claimed.add(named[0][1])
         elif len(named) > 1:
