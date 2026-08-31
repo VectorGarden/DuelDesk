@@ -3935,6 +3935,18 @@ class TestFoldedNames(unittest.TestCase):
         warm, _ = self.fold(*rows)
         self.assertEqual(cold, warm)
 
+    def test_a_shortening_of_both_ends_is_still_found(self):
+        # The candidate index is keyed on a first letter, not a whole word,
+        # because ends_agree accepts a prefix: "Ben" agrees with "Benjamin".
+        # Keyed on whole words this Duelist has no key in common with their
+        # own longer name -- neither "ben"/"benjamin" nor "smith"/"smithson"
+        # -- so the fold would quietly stop happening, which is how a narrowed
+        # folding rule cost the archive four events in #89 and #93.
+        canon, _ = self.fold(
+            [["1", "Benjamin Carl", "Smithson", "vs.", "Zoe", "Adams"]],
+            [["1", "Ben", "Smith", "vs.", "Zoe", "Adams"]], cut_round="Top 4")
+        self.assertEqual(canon.get("Ben Smith"), "Benjamin Carl Smithson")
+
     def test_a_dropped_middle_name_is_folded(self):
         canon, sources = self.fold(
             [["1", "Aaron Chase", "Furman", "vs.", "Kobe Louis", "Short"]],
