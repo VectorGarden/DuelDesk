@@ -461,8 +461,37 @@ def parse_table(doc: str) -> Table | None:
         # three duels a match with nothing saying whose they were. A singles
         # event has none of them and every row is a match of its own, exactly
         # as before.
+        # The row that announces a team match, in either of the two shapes the
+        # blog writes it:
+        #
+        #   ['Team', 'Joel White's Insurance Agents', 'Team', 'Slifer Slackers']
+        #   ['Team', 'Joel White's Insurance Agents', 'vs.', 'Robert McNett']
+        #
+        # Neither is as wide as the table it sits in -- TEAM YCS Las Vegas
+        # heads its Top 8 with five columns and announces its matches with
+        # four -- so the length check dropped them, every duel became a match
+        # of its own, and the round reported three Duelists a side where the
+        # Top 16 reported one. The event was rejected for disagreeing with
+        # itself.
+        def team_row(cells):
+            named = [c for c in cells
+                     if c.strip().lower() not in ("team", "vs.", "vs", "")]
+            return named if len(named) == 2 else None
+
         match = None
         for r in body:
+            # A row that does not open with a table number is either the
+            # announcement of a team match or nothing this can read. It is
+            # never a duel, and reading its first cell as a number is how a
+            # blank one crashed the whole event.
+            if numbered and (not r or not r[0].strip().isdigit()):
+                pair = team_row(r)
+                if pair:
+                    a, b = ({"name": normalise_name(pair[0]), "region": None, "deck": None},
+                            {"name": normalise_name(pair[1]), "region": None, "deck": None})
+                    match = {"table": None, "a": a, "b": b, "duels": []}
+                    out.append(match)
+                continue
             if len(r) != len(header):
                 continue
             lcells, rcells = cut(r)
@@ -473,14 +502,6 @@ def parse_table(doc: str) -> Table | None:
                 if a["name"] and b["name"]:
                     out.append({"table": None, "a": a, "b": b})
                 continue
-            if not r[0].isdigit():
-                a, b = side(lcells), side(rcells)
-                if not (a["name"] and b["name"]):
-                    continue
-                match = {"table": None, "a": a, "b": b, "duels": []}
-                out.append(match)
-                continue
-
             duel = {"table": int(r[0]), "a": side(lcells), "b": side(rcells)}
             if match is None:
                 out.append(duel)                    # a singles event
