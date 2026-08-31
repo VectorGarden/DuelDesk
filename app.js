@@ -79,7 +79,7 @@ const KINDS = {
   feature  : {label:'Feature Match', color:'var(--c-feature)'},
   result   : {label:'Result',        color:'var(--c-result)'},
   news     : {label:'Announcement',  color:'var(--c-news)'},
-  deck     : {label:'Deck profile',  color:'var(--c-deck)'}
+  deck     : {label:'Deck Profile',  color:'var(--c-deck)'}
 };
 const kindOf = k => KINDS[k] ?? KINDS.news;
 
@@ -1623,7 +1623,7 @@ function renderFormatFilters(){
      list is a control that lies about what it does. */
   box.hidden = present.length < 2;
   if (box.hidden){ box.innerHTML = ''; return; }
-  box.innerHTML = [['all', 'Every format'], ...present.map(f => [f, f])]
+  box.innerHTML = [['all', 'Every Format'], ...present.map(f => [f, f])]
     .map(([value, label]) =>
       `<button type="button" data-feed-format="${esc(value)}" aria-pressed="${
         String(value === formatFilter)}">${esc(label)}</button>`).join('');
