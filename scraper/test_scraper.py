@@ -3919,6 +3919,49 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         self.assertEqual(len(rows), 1, "the Dragon Duel is not this tournament's round")
         self.assertNotIn("duels", rows[0], "a caption is not a team match")
 
+    def test_a_table_with_no_header_at_all(self):
+        # Eleven round posts open straight into their rows. What the columns
+        # are is legible from the row itself -- a leading number, a "vs.", a
+        # trailing number -- and naming them is enough, because everything
+        # downstream reads columns by their names.
+        html = ("<html><head><title>Round 4 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>1</td><td>Ann Alpha</td><td>vs.</td><td>Bo Beta</td></tr>"
+                "<tr><td>2</td><td>Cy Gamma</td><td>vs.</td><td>Di Delta</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual(t.kind, "pairings")
+        self.assertEqual(len(t.rows), 2, "the first row is data, not a header")
+        self.assertEqual(t.rows[0]["a"]["name"], "Ann Alpha")
+
+    def test_a_headerless_ranking_is_standings(self):
+        # Three cells ending in a number is a rank, a name and points.
+        html = ("<html><head><title>Standings After Round 10</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>1</td><td>Lopez Ramirez, Walter Eligio</td><td>30</td></tr>"
+                "<tr><td>2</td><td>Santacruz Guzman, Alan Daniel</td><td>27</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual(t.kind, "standings")
+        self.assertEqual((t.rows[0]["rank"], t.rows[0]["points"]), (1, 30))
+        self.assertEqual(t.rows[0]["name"], "Walter Eligio Lopez Ramirez")
+
+    def test_a_winner_column_is_not_part_of_a_name(self):
+        # The 2013 World Championship writes its rounds "Table | Player 1 |
+        # VS. | Player 2 | | Winner", and everything after the divider was
+        # read as Player 2 -- so the winner's name was appended to their
+        # opponent's, and a Duelist called Weerapun Suebyoubol was filed as
+        # "Weerapun Sergio Soldani Suebyoubol".
+        html = ("<html><head><title>Round 1 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Player 1</td><td>VS.</td><td>Player 2</td>"
+                "<td></td><td>Winner</td></tr>"
+                "<tr><td>1</td><td>Soldani, Sergio</td><td>VS.</td>"
+                "<td>Suebyoubol, Weerapun</td><td></td><td>Sergio Soldani (Italy)</td></tr>"
+                "</tbody></table></body></html>")
+        row = parse_post(html).table.rows[0]
+        self.assertEqual(row["b"]["name"], "Weerapun Suebyoubol")
+
     def test_a_ranking_is_never_a_pairing(self):
         # TEAM YCS La Paz heads its standings "Rank | Team Name | Duelist
         # Names | Points". Two of those read like sides, so asking about sides

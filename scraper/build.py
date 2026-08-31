@@ -108,7 +108,12 @@ def round_key(post) -> tuple[str, Any]:
 #     in a row of its own and puts the Dragon Duel's rounds in the same table
 #     underneath, so every round post it published read as unknown and the
 #     event has never been in the archive.
-BUILD_VERSION = 11
+# 12: a table with no header at all. Eleven round posts open straight into
+#     their rows, and what the columns are is legible from the row itself.
+#     Reading them found 595 pairings at YCS Hartford, 350 standings at YCS
+#     Pasadena and a Top 4 for the 2013 North America WCQ -- and, on the way,
+#     that a "Winner" column was being read as part of the loser's name.
+BUILD_VERSION = 12
 
 
 @dataclass
