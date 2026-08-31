@@ -2714,24 +2714,6 @@
       ]
     },
     {
-      "slug": "2018-ycs-atlanta",
-      "event": "YCS Atlanta",
-      "updated": "2018-02-19",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2018-ycs-atlanta/rounds.json",
-      "postCount": 66,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 11,
-          "duelists": 1178,
-          "rounds": 16
-        }
-      ]
-    },
-    {
       "slug": "201712-buenos-aires-argentina",
       "event": "YCS Buenos Aires",
       "updated": "2017-12-03",
@@ -3000,13 +2982,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-seattle/rounds.json",
-      "postCount": 36,
+      "postCount": 37,
       "formats": [
         {
           "format": null,
           "swissRounds": 10,
           "duelists": 716,
-          "rounds": 11
+          "rounds": 12
         }
       ]
     },
