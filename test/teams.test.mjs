@@ -170,3 +170,73 @@ test('a duel row fills the record column it has no record for', async (t) => {
   assert.equal(cells[heads(page).indexOf('Deck')], 'Kashtira');
   assert.equal(cells[width - 1], '', 'the trailing record cell is the empty one');
 });
+
+/* ── The champion's roster ──────────────────────────────────────────────── */
+
+/** A team event whose deepest cut round the champion won. */
+function championRounds() {
+  const d = teamRounds();
+  const fmt = d.formats[0];
+  /* The champion line shows on the deepest round the event has, which is the
+     last one in ROUNDS -- not the last one that happens to carry pairings. */
+  const last = fmt.rounds[fmt.rounds.length - 1];
+  const withPairings = fmt.rounds.filter((r) => r.pairings?.length).pop();
+  last.pairings = JSON.parse(JSON.stringify(withPairings.pairings)).slice(0, 1);
+  last.phase = 'Top cut';
+  fmt.champion = last.pairings[0].a;
+  fmt.entrant = 'Team';
+  last.pairings[0].duels = [
+    { table: 1, a: 'Ruben Andres Penaranda', aDeck: 'Bystial Dragon Link', b: 'X', bDeck: 'Y' },
+    { table: 2, a: 'Pakawat Thomas Pamornsut', aDeck: 'Unchained', b: 'Z', bDeck: 'W' },
+  ];
+  return d;
+}
+
+const championEvent = { routes: {
+  'rounds.json': () => ({ status: 200, body: JSON.stringify(championRounds()) }),
+} };
+
+async function atTheChampion(t) {
+  const page = await loadPage(championEvent);
+  t.after(() => page.close());
+  const ids = page.json('ROUNDS.filter(r => r.pairings.length).map(r => r.id)');
+  page.run(`selectRound('${ids[ids.length - 1]}'); renderRound(); renderChampion();`);
+  return page;
+}
+
+test('the roster is not offered before the champion is revealed', async (t) => {
+  // The roster names the three Duelists who won it. Beside a hidden champion
+  // that gives the ending away to a reader who asked not to be told.
+  const page = await atTheChampion(t);
+  assert.equal(page.$$('#champion [data-roster]').length, 0,
+    'the roster button is showing while the champion is hidden');
+});
+
+test('a revealed team champion offers its roster', async (t) => {
+  const page = await atTheChampion(t);
+  page.run(`document.querySelector('[data-champ]').click()`);
+  assert.equal(page.$$('#champion [data-roster]').length, 1, page.text('#champion'));
+});
+
+test('the roster names the Duelists and what they played', async (t) => {
+  const page = await atTheChampion(t);
+  page.run(`document.querySelector('[data-champ]').click()`);
+  page.run(`document.querySelector('#champion [data-roster]').click()`);
+  // jsdom has no <dialog>, so the fallback is what shows here -- which is
+  // the point of having one: the content is on screen either way.
+  assert.ok(page.get('document.getElementById("roster").hasAttribute("open")'),
+    'the roster is not showing');
+  const names = page.$$('#roster-list .roster__n').map((n) => n.textContent);
+  assert.deepEqual(names, ['Ruben Andres Penaranda', 'Pakawat Thomas Pamornsut']);
+  const decks = page.$$('#roster-list .roster__d').map((n) => n.textContent);
+  assert.deepEqual(decks, ['Bystial Dragon Link', 'Unchained']);
+});
+
+test('a singles champion has no roster to open', async (t) => {
+  const page = await loadPage({});
+  t.after(() => page.close());
+  const ids = page.json('ROUNDS.filter(r => r.pairings.length).map(r => r.id)');
+  page.run(`selectRound('${ids[ids.length - 1]}'); renderRound(); renderChampion();`);
+  page.run(`document.querySelector('[data-champ]')?.click()`);
+  assert.equal(page.$$('#champion [data-roster]').length, 0);
+});

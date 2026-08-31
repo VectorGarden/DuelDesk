@@ -552,3 +552,46 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
   .panel{border:1px solid #000}
   .event__body[hidden]{display:block!important}
 }
+
+/* ── A team champion's roster ────────────────────────────────────────────
+   A team enters under a name it chose and the coverage announces its win by
+   naming the people. The name is what the page can show in a line; the three
+   Duelists need somewhere of their own, and a dialog is the only thing on
+   this site that has one. Native, so the focus trap, Escape and the inert
+   background come with it rather than being written again. */
+.roster-dialog{
+  border:1px solid var(--line); background:var(--surface); color:var(--text);
+  padding:0; border-radius:var(--r-md); width:min(30rem,calc(100vw - 2rem));
+  /* The same clipped corner the cards use, so it reads as part of the frame. */
+  clip-path:polygon(var(--notch) 0,100% 0,100% calc(100% - var(--notch)),
+                    calc(100% - var(--notch)) 100%,0 100%,0 var(--notch));
+}
+.roster-dialog::backdrop{background:color-mix(in srgb,#000 62%,transparent)}
+.roster-dialog__hd{display:flex; align-items:baseline; justify-content:space-between;
+  gap:1rem; padding:1rem 1.15rem .7rem; border-bottom:1px solid var(--line-soft)}
+.roster-dialog__k{font:600 .7rem/1 var(--mono); letter-spacing:.08em;
+  text-transform:uppercase; color:var(--text-3)}
+.roster-dialog__n{font-family:var(--display); font-size:1.15rem; font-weight:600;
+  margin:.15rem 0 0}
+.roster-dialog__x{background:none; border:1px solid var(--line); color:var(--text-2);
+  border-radius:var(--r-sm); font:600 .78rem var(--mono); padding:.2rem .5rem; cursor:pointer}
+.roster-dialog__x:hover{color:var(--text); border-color:var(--text-3)}
+.roster{list-style:none; margin:0; padding:.55rem 1.15rem 1.05rem}
+.roster li{display:flex; align-items:baseline; justify-content:space-between;
+  gap:1rem; padding:.5rem 0; border-bottom:1px solid var(--line-soft)}
+.roster li:last-child{border-bottom:0}
+.roster__n{font-family:var(--display); font-size:.98rem; font-weight:600}
+.roster__d{font:500 .78rem var(--mono); color:var(--text-2)}
+.roster__at{padding:0 1.15rem 1rem; margin:0; font-size:.8rem; color:var(--text-3)}
+/* The chip that opens it, on the champion line and on a winners row. */
+.roster-open{font:600 .72rem var(--mono); color:var(--text-3); background:none;
+  border:1px solid var(--line); border-radius:var(--r-sm);
+  padding:.08rem .38rem; cursor:pointer}
+.roster-open:hover{color:var(--text); border-color:var(--text-3)}
+
+/* The roster expanded under a winners row, indented so it reads as belonging
+   to the team above it rather than as three more winners. */
+.win__roster{list-style:none; margin:.5rem 0 0 1.1rem; padding:0 0 0 .9rem;
+  border-left:1px solid var(--line)}
+.win__roster li{display:flex; align-items:baseline; gap:.55rem; flex-wrap:wrap;
+  padding:.22rem 0}

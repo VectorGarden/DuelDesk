@@ -62,3 +62,50 @@ themeButtons.forEach(b => b.addEventListener('click', () => {
   applyTheme();
 }));
 mq.addEventListener('change', () => { if (themeMode === 'system') applyTheme(); });
+
+/* ── A team champion's roster ────────────────────────────────────────────
+   Both pages name a team champion by the name it entered under, which says
+   nothing about who won it. The Duelists are in the manifest, on the champion
+   entry, and this is what puts them on screen.
+
+   Native <dialog>: showModal() gives the focus trap, Escape and the inert
+   background, and returns focus where it came from when it closes. Writing
+   those again would be three bugs waiting rather than one function.
+
+   Shared because the two pages differ only in the line underneath. */
+function openRoster({ name, members, note }){
+  const box  = document.getElementById('roster');
+  const list = document.getElementById('roster-list');
+  if (!box || !list || !(members || []).length) return;
+  document.getElementById('roster-name').textContent = name;
+  list.innerHTML = (members || []).map(m => `<li>
+      <span class="roster__n">${esc(m.name)}</span>
+      ${m.deck ? `<span class="roster__d">${esc(m.deck)}</span>` : ''}
+    </li>`).join('');
+  const at = document.getElementById('roster-at');
+  at.textContent = note || '';
+  at.hidden = !note;
+  /* showModal() where there is one. A browser without <dialog> still gets the
+     content -- the open attribute shows it inline -- rather than a click that
+     does nothing and an exception in the console. */
+  if (typeof box.showModal === 'function') box.showModal();
+  else box.setAttribute('open', '');
+}
+
+function closeRoster(box){
+  if (typeof box.close === 'function') box.close();
+  else box.removeAttribute('open');
+}
+
+document.addEventListener('click', (e) => {
+  const box = document.getElementById('roster');
+  if (box && e.target.closest('[data-roster-close]')) closeRoster(box);
+});
+/* A click on the backdrop is a click on the dialog itself: the box is the
+   element, and anything outside its own rectangle is the backdrop. */
+document.getElementById('roster')?.addEventListener('click', (e) => {
+  const box = e.currentTarget.getBoundingClientRect();
+  const outside = e.clientX < box.left || e.clientX > box.right
+               || e.clientY < box.top  || e.clientY > box.bottom;
+  if (outside) closeRoster(e.currentTarget);
+});
