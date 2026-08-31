@@ -3736,6 +3736,23 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
                          ("Alpha Squad", "Beta Crew"))
         self.assertEqual(len(t.rows[0]["duels"]), 2)
 
+    def test_a_team_keeps_a_name_that_looks_like_a_region_code(self):
+        # normalise_name strips a two- or three-letter all-caps token as a
+        # region code, which is right for a Duelist -- "Philip DEU" -- and
+        # wrong for a team. TEAM YCS Las Vegas round 6 pairs "Team PWP" with
+        # "Team VCG"; both came back as a team called "Team", so the match was
+        # a team playing itself and the event left the archive.
+        html = ("<html><head><title>Round 6 Pairings</title></head><body>"
+                "<table><tbody>"
+                "<tr><td>Table</td><td>Team 1</td><td>Team 2</td></tr>"
+                "<tr><td>Team</td><td>Team PWP</td><td>Team VCG</td></tr>"
+                "<tr><td>1</td><td>Ann Alpha</td><td>Bo Beta</td></tr>"
+                "</tbody></table></body></html>")
+        row = parse_post(html).table.rows[0]
+        self.assertEqual((row["a"]["name"], row["b"]["name"]), ("Team PWP", "Team VCG"))
+        self.assertNotEqual(row["a"]["name"], row["b"]["name"],
+                            "a team does not play itself")
+
     def test_the_other_team_row_shape_too(self):
         # The same announcement written "Team | A | Team | B" rather than with
         # a "vs." in the middle.
