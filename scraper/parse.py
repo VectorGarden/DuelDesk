@@ -333,12 +333,20 @@ def _classify_table(header: list[str]) -> str:
     low = [h.lower() for h in header]
     if "table" in low and any(h.strip() in ("vs.", "vs") for h in low):
         return "pairings"
-    # A Team YCS heads its Swiss pairings Table | Team 1 | Team 2, with no vs.
-    # column at all. Eleven of TEAM YCS Las Vegas's twelve rounds are written
-    # this way and none of them parsed.
-    if "table" in low and sum("team" in h for h in low) == 2:
+    # Two sides is what makes a table a pairing, and the blog heads them a
+    # dozen ways: Team 1 and Team 2 at a Team YCS, Player 1 and Player 2 for
+    # most of 2016 and 2017 and every round of the 2022 Remote Duel YCS, plain
+    # Name and Name before that. Requiring a "vs." column, or the word Table,
+    # or the word Team, left 149 round posts unread -- tables all of them, and
+    # none of them a shape anybody had told this function about.
+    sides = sum(bool(re.match(r"(player|duelist|team|name)\b", h)) for h in low)
+    if sides == 2:
         return "pairings"
-    if "rank" in low and any("player" in h or "name" in h for h in low):
+    # Standings need a rank and something after it. The name column is not
+    # always headed at all -- "Rank |  | Points" is how nine of them arrive --
+    # so the points are enough to say what the table is.
+    if "rank" in low and (any("player" in h or "name" in h for h in low)
+                          or any("point" in h for h in low)):
         return "standings"
     return "unknown"
 
@@ -395,13 +403,29 @@ def parse_table(doc: str) -> Table | None:
         # Table | Team 1 | Team 2 -- so the columns after the table number
         # divide evenly instead. Treating the missing separator as a column
         # swallowed the left side entirely and left every match a name short.
+        # Whether the first column is the table number. Most layouts head it
+        # "Table" or leave it blank; some have no such column at all and open
+        # straight on the first Duelist, and reading their opening name as a
+        # table number dropped it from the match.
+        numbered = bool(header) and ("table" in header[0].lower()
+                                     or not header[0].strip())
+        start = 1 if numbered else 0
+
+        # What divides the two sides. A "vs." column where there is one, and
+        # otherwise a column headed nothing at all, which is the same thing
+        # drawn rather than written -- "Table | Player 1 |  | Player 2".
+        # Splitting the remaining columns evenly instead put the blank on the
+        # right and cost that side its deck.
         vs_at = next((i for i, h in enumerate(header)
                       if h.strip().lower() in ("vs.", "vs")), None)
         if vs_at is None:
-            split, skip = 1 + (len(header) - 1) // 2, 0
+            vs_at = next((i for i, h in enumerate(header)
+                          if i > start and not h.strip()), None)
+        if vs_at is None:
+            split, skip = start + (len(header) - start) // 2, 0
         else:
             split, skip = vs_at, 1
-        cut = lambda row: (row[1:split], row[split + skip:])
+        cut = lambda row: (row[start:split], row[split + skip:])
         left, _ = cut(header)
         decks = any("deck" in h.lower() for h in left)
 
@@ -437,6 +461,13 @@ def parse_table(doc: str) -> Table | None:
             if len(r) != len(header):
                 continue
             lcells, rcells = cut(r)
+            # A table with no number column has no team rows to find either:
+            # every row is a match, and there is nothing to read a number from.
+            if not numbered:
+                a, b = side(lcells), side(rcells)
+                if a["name"] and b["name"]:
+                    out.append({"table": None, "a": a, "b": b})
+                continue
             if not r[0].isdigit():
                 a, b = side(lcells), side(rcells)
                 if not (a["name"] and b["name"]):

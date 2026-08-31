@@ -3618,6 +3618,82 @@ class TestABiographyIsNotASideEvent(unittest.TestCase):
         self.assertEqual(got, "Ryan Linus Yu")
 
 
+class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
+    """A table the reader did not recognise is a round nobody has.
+
+    149 round posts were unread and every one of them held a real table. YCS
+    Niagara Falls 2022 heads its pairings "Table | Player 1 | Player 2", so
+    every pairings post on it parsed to nothing -- the standings came through,
+    the whole bracket did not, and with no cut there were no candidates to ask
+    who had won it. The event sat in the archive looking present and hollow.
+    """
+
+    def table(self, header, *rows):
+        cells = lambda r: "".join(f"<td>{c}</td>" for c in r)
+        return parse_post("<html><head><title>Round 4 Pairings</title></head><body>"
+                          f"<table><tbody><tr>{cells(header)}</tr>"
+                          + "".join(f"<tr>{cells(r)}</tr>" for r in rows)
+                          + "</tbody></table></body></html>")
+
+    def test_player_1_and_player_2(self):
+        t = self.table(["Table", "Player 1", "Player 2"],
+                       ["1", "Ann Alpha", "Bo Beta"]).table
+        self.assertEqual(t.kind, "pairings")
+        self.assertEqual((t.rows[0]["a"]["name"], t.rows[0]["b"]["name"]),
+                         ("Ann Alpha", "Bo Beta"))
+        self.assertEqual(t.rows[0]["table"], 1)
+
+    def test_a_blank_column_divides_the_sides(self):
+        # "Table | Player 1 |  | Player 2" -- the same separator drawn rather
+        # than written. Splitting the rest evenly put the blank on the right.
+        t = self.table(["Table", "Player 1", "", "Player 2"],
+                       ["1", "Ann Alpha", "", "Bo Beta"]).table
+        self.assertEqual((t.rows[0]["a"]["name"], t.rows[0]["b"]["name"]),
+                         ("Ann Alpha", "Bo Beta"))
+
+    def test_a_deck_on_each_side(self):
+        t = self.table(["Table", "Player 1", "Deck Type", "Player 2", "Deck Type"],
+                       ["1", "Ann Alpha", "Ryzeal", "Bo Beta", "Maliss"]).table
+        self.assertEqual((t.rows[0]["a"]["deck"], t.rows[0]["b"]["deck"]),
+                         ("Ryzeal", "Maliss"))
+
+    def test_a_table_with_no_table_number(self):
+        # The first column is the first Duelist, and reading it as a table
+        # number dropped that side of every match.
+        t = self.table(["Player 1", "vs.", "Player 2"],
+                       ["Ann Alpha", "vs.", "Bo Beta"]).table
+        self.assertEqual((t.rows[0]["a"]["name"], t.rows[0]["b"]["name"]),
+                         ("Ann Alpha", "Bo Beta"))
+        self.assertIsNone(t.rows[0]["table"])
+
+    def test_names_with_no_heading_of_their_own(self):
+        t = self.table(["Name", "Deck", "", "Name", "Deck"],
+                       ["Ann Alpha", "Ryzeal", "", "Bo Beta", "Maliss"]).table
+        self.assertEqual((t.rows[0]["a"]["name"], t.rows[0]["b"]["deck"]),
+                         ("Ann Alpha", "Maliss"))
+
+    def test_standings_whose_name_column_is_unheaded(self):
+        # "Rank |  | Points" is how nine of them arrive. The points say what
+        # the table is where the missing heading cannot.
+        html = ("<html><head><title>Standings After Round 4</title></head><body>"
+                "<table><tbody><tr><td>Rank</td><td></td><td>Points</td></tr>"
+                "<tr><td>1</td><td>Ann Alpha</td><td>12</td></tr>"
+                "</tbody></table></body></html>")
+        t = parse_post(html).table
+        self.assertEqual(t.kind, "standings")
+        self.assertEqual((t.rows[0]["name"], t.rows[0]["points"]), ("Ann Alpha", 12))
+
+    def test_one_side_is_not_a_pairing(self):
+        # A deck list names one Duelist per row. Reading it as a pairing would
+        # give every one of them an opponent made of their own deck.
+        t = self.table(["Player", "Deck"], ["Ann Alpha", "Ryzeal"]).table
+        self.assertEqual(t.kind, "unknown")
+
+    def test_a_table_that_is_neither_is_still_neither(self):
+        t = self.table(["Deck", "Count"], ["Ryzeal", "13"]).table
+        self.assertEqual(t.kind, "unknown")
+
+
 class TestCoverageFormat(unittest.TestCase):
     """What a post is coverage of, which is not always a format of the event."""
 
