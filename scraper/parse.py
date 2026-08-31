@@ -380,8 +380,19 @@ def read_annotation(cell: str) -> tuple[str, str | None, str | None]:
     Both parts are optional and neither is invented: a cell with no bracket and
     no dash comes back unchanged, with no region and no deck.
     """
-    if not (m := _PARENS.match(cell.strip())):
-        # No bracket, so nothing here is an annotation. The dash is left alone
+    if not (m := _PARENS.match(cell.strip())) or not m.group(1).strip():
+        # No bracket, or a bracket with nothing in front of it. The 2016 World
+        # Championship writes "(Japan) Yada, Makoto" -- the country leads and
+        # the name follows -- and reading that as an annotation left the name
+        # as the empty string in front of the bracket. Every Duelist in the
+        # event came back nameless, every pairing was one nameless Duelist
+        # against another, and the event was refused for seating a Duelist
+        # against themselves.
+        #
+        # A leading bracket is not this function's business. strip_region
+        # removes it further down, as it did before there was a function here.
+        #
+        # The dash is left alone
         # on purpose: "Correa - Moreira, Jesus" is a compound surname, and 137
         # names in the archive carry a country after a dash with no bracket at
         # all. Reading those needs evidence this function does not have, and
