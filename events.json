@@ -3574,7 +3574,7 @@
     },
     {
       "slug": "yu-gi-oh-world-championship-2016",
-      "event": "Pairings",
+      "event": "World Championship 2016",
       "updated": "2016-08-23",
       "sample": false,
       "ongoing": false,
@@ -3815,8 +3815,7 @@
     },
     {
       "slug": "201504-bogota-d-c-colombia",
-      "event": "YCS Bogota",
-      "location": "Bogota, Colombia",
+      "event": "Out and About",
       "updated": "2015-04-19",
       "sample": false,
       "ongoing": false,
