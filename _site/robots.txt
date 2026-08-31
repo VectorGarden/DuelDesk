@@ -1,0 +1,9 @@
+# This site republishes Konami's event coverage for one person's use. It is
+# public because GitHub Pages is, not because it is meant to be found.
+#
+# Search engines honour this; it is a request, not a control. Anyone with the
+# URL can still read the site, and a crawler that ignores robots.txt still will.
+# The noindex meta tag in index.html says the same thing to the ones that check
+# the page rather than this file.
+User-agent: *
+Disallow: /
