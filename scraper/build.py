@@ -166,7 +166,12 @@ def round_key(post) -> tuple[str, Any]:
 #     from the vote, which let a candidate with five titles out of fifty-three
 #     clear a share it should have failed, and five events reached the site
 #     named QQ.
-BUILD_VERSION = 23
+# 24: one Remote Duel YCS is not another. Three events were called exactly
+#     "Remote Duel YCS" and two exactly "North America Remote Duel YCS", so
+#     the front page listed them side by side with nothing to tell them apart.
+#     Named for the month as well as the year, because North America played
+#     one in February 2022 and another that December.
+BUILD_VERSION = 24
 
 
 @dataclass

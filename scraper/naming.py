@@ -268,6 +268,70 @@ def worlds_name(slug: str, name: str, ended: str | None) -> str | None:
     return f"World Championship {year}" if year else None
 
 
+# The Remote Duel YCS, played online, which the blog has spelled five ways --
+# "Remote Duel YCS", "Remote Duel YCS-North America", "Latin America Remote
+# Duel" -- and three of those say nothing about which one. Three events were
+# called exactly "Remote Duel YCS" and two exactly "North America Remote Duel
+# YCS", so the front page listed them side by side with nothing to tell them
+# apart.
+#
+# Named for the month as well as the year, because there is more than one a
+# year: North America played one in February 2022 and another that December.
+# The blog names three of them that way itself -- "Remote Duel YCS January
+# 2024" -- so this is its own convention with the region put in front.
+_IS_REMOTE_DUEL = re.compile(r"remote duel", re.I)
+# The Remote Duel Extravaganza is a different thing and is not a YCS, so it
+# keeps its own name rather than being renamed after a series it is not in.
+_IS_YCS = re.compile(r"\bycs\b|\brdycs\b", re.I)
+# Latin America first: _REGIONS has no pattern for it, and it is the only
+# non-North-American Remote Duel YCS the archive holds.
+_RD_REGIONS = ((r"\blatin american?\b", "Latin America"),
+               (r"\bnorth american?\b|\bna\b", "North America"),
+               (r"\bsouth american?\b", "South America"),
+               (r"\bcentral american?\b", "Central America"))
+_MONTHS = ("january", "february", "march", "april", "may", "june", "july",
+           "august", "september", "october", "november", "december")
+# A year and a month at the front of a slug -- "2022-02-north-america-...".
+_SLUG_MONTH = re.compile(r"\b(19|20)\d{2}-(0[1-9]|1[0-2])\b")
+
+
+def _month(slug: str, ended: str | None) -> str | None:
+    """The month the event was played, named.
+
+    The slug before the date, because the date is the end of the coverage and
+    the coverage can run past the month: "remote-duel-ycs-january-2026" has its
+    last post on 1 February, and it is January's event.
+    """
+    low = slug.replace("-", " ").lower()
+    for name in _MONTHS:
+        if re.search(rf"\b{name}\b", low):
+            return name.title()
+    if m := _SLUG_MONTH.search(slug):
+        return _MONTHS[int(m.group(2)) - 1].title()
+    if ended and len(ended) >= 7 and ended[5:7].isdigit():
+        n = int(ended[5:7])
+        if 1 <= n <= 12:
+            return _MONTHS[n - 1].title()
+    return None
+
+
+def remote_duel_name(slug: str, name: str, ended: str | None) -> str | None:
+    """"North America Remote Duel YCS February 2022", or None.
+
+    The region only where the coverage states one. Three of these events never
+    do -- the blog calls them "Remote Duel YCS January 2024" and nothing more
+    -- and inventing a region for them would be a guess dressed as a fact.
+    """
+    text = f"{slug} {name}".replace("-", " ")
+    if not (_IS_REMOTE_DUEL.search(text) and _IS_YCS.search(text)):
+        return None
+    year, month = _year(slug, ended), _month(slug, ended)
+    if not (year and month):
+        return None
+    region = next((r for pattern, r in _RD_REGIONS if re.search(pattern, text, re.I)), None)
+    return f"{region + ' ' if region else ''}Remote Duel YCS {month} {year}"
+
+
 def wcq_name(slug: str, name: str, ended: str | None) -> str | None:
     """"North America WCQ 2026" for a regional qualifier, or None."""
     text = f"{slug} {name}".replace("-", " ").lower()
@@ -356,6 +420,8 @@ def canonical_name(name: str, slug: str, ended: str | None, *,
         return qualifier, None
     if worlds := worlds_name(slug, name, ended):
         return worlds, None
+    if remote := remote_duel_name(slug, name, ended):
+        return remote, None
     # Either the coverage never agreed on a name, or it agreed on something that
     # is not one. YCS Charlotte's settled on "Top Table Update" and YCS
     # Hartford's on "YCS", and the slug does better than both.

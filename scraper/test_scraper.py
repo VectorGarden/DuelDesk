@@ -3616,6 +3616,76 @@ class TestTheWorldChampionship(unittest.TestCase):
                                       "2022-11-06"))
 
 
+class TestTheRemoteDuelYCS(unittest.TestCase):
+    """More than one a year, and the blog spelled it five ways."""
+
+    def test_every_spelling_settles_on_one_name(self):
+        from naming import remote_duel_name
+        for slug, name, ended, want in (
+                # Three called exactly this, so the front page listed them
+                # side by side with nothing to tell them apart.
+                ("2022-02-north-america-remote-duel-ycs", "Remote Duel YCS", "2022-02-27",
+                 "North America Remote Duel YCS February 2022"),
+                ("2022-remote-duel-ycs-north-america", "Remote Duel YCS", "2022-12-11",
+                 "North America Remote Duel YCS December 2022"),
+                ("2022-january-remote-duel-ycs", "Remote Duel YCS", "2022-01-16",
+                 "Remote Duel YCS January 2022"),
+                ("2022-latin-america-remote-duel-ycs", "Latin America Remote Duel",
+                 "2022-02-01", "Latin America Remote Duel YCS February 2022"),
+                ("2025-12-rdycs-na", "Remote Duel YCS-North America", "2025-12-16",
+                 "North America Remote Duel YCS December 2025"),
+                # And two called exactly this.
+                ("2023-north-america-remote-duel-ycs", "North America Remote Duel YCS",
+                 "2023-06-25", "North America Remote Duel YCS June 2023"),
+                ("2024-11-north-america-remote-duel-ycs", "North America Remote Duel YCS",
+                 "2024-11-10", "North America Remote Duel YCS November 2024")):
+            self.assertEqual(remote_duel_name(slug, name, ended), want, slug)
+
+    def test_the_month_comes_from_the_slug_not_the_last_post(self):
+        # The date is the end of the coverage, and the coverage can run past
+        # the month it covers: this event's last post is on 1 February and it
+        # is January's event. Reading the month off the date renames it.
+        from naming import remote_duel_name
+        self.assertEqual(
+            remote_duel_name("remote-duel-ycs-january-2026",
+                             "Remote Duel YCS January 2026", "2026-02-01"),
+            "Remote Duel YCS January 2026")
+
+    def test_an_event_the_blog_gives_no_region_keeps_none(self):
+        # Three of these never name a region anywhere in their coverage. The
+        # blog calls them "Remote Duel YCS January 2024" and nothing more, and
+        # inventing a region would be a guess dressed as a fact.
+        from naming import remote_duel_name
+        for slug, name, ended in (
+                ("remote-duel-ycs-january-2024", "Remote Duel YCS January 2024", "2024-01-28"),
+                ("remote-duel-ycs-february-2025", "Remote Duel YCS February 2025", "2025-02-09")):
+            got = remote_duel_name(slug, name, ended)
+            self.assertEqual(got, name, slug)
+            self.assertNotIn("America", got)
+
+    def test_the_extravaganza_is_not_a_ycs(self):
+        # A different thing that also happens to be played remotely. It keeps
+        # its own name rather than being renamed after a series it is not in.
+        from naming import remote_duel_name
+        self.assertIsNone(remote_duel_name(
+            "2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event",
+            "2023 Yu Gi Oh Tcg Remote Duel Extravaganza Main Event", "2023-07-30"))
+
+    def test_an_ordinary_ycs_is_left_alone(self):
+        from naming import remote_duel_name, canonical_name
+        self.assertIsNone(remote_duel_name("2026-08-quebec", "YCS Montréal", "2026-08-16"))
+        self.assertEqual(canonical_name("YCS Montréal", "2026-08-quebec", "2026-08-16")[0],
+                         "YCS Montréal")
+
+    def test_the_name_the_archive_actually_gets(self):
+        # Through canonical_name, which is what run.py calls.
+        from naming import canonical_name
+        self.assertEqual(
+            canonical_name("Remote Duel YCS", "2025-12-rdycs-na", "2025-12-16",
+                           named=True)[0],
+            "North America Remote Duel YCS December 2025")
+
+
 class TestANameThatFitsEveryEvent(unittest.TestCase):
     """A candidate made of nothing but words for a kind of coverage."""
 
