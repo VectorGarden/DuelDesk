@@ -180,7 +180,12 @@ def round_key(post) -> tuple[str, Any]:
 #     both finalists and no word like "defeated" between them was a
 #     disagreement and no champion, which is how YCS Denver had a winner post
 #     saying "Anderson Tsang is your newest YCS Champion" and no champion.
-BUILD_VERSION = 26
+# 27: the blog says who came second. Winning the final is written "to victory
+#     against", and the loser is often named as the loser rather than as
+#     somebody who was beaten -- "In second place was", "Runner-up:". Four
+#     more events had a winner post naming both finalists and no word the
+#     archive read as putting one before the other.
+BUILD_VERSION = 27
 
 
 @dataclass

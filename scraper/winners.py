@@ -88,9 +88,19 @@ HEDGE = re.compile(r"\b(will|would|could|about to|soon|away from|one of|if"
 
 # Which side of a beating each name is on. Only consulted when a post names two
 # of the cut's Duelists, which is what the final's write-up naturally does.
+# Words that put the winner before the loser. Two kinds: beating somebody, and
+# saying who came second.
+#
+# "against" is deliberately not here on its own. YCS San Diego's winner post
+# says the champion "had an epic Match against his own brother at YCS Dallas,
+# but his brother took the title that time" -- an against about a different
+# tournament a year earlier, sitting exactly where this rule looks. Only
+# "victory against", which is what winning the final is called, and the two
+# phrases that name the loser as the loser.
 DEFEAT = re.compile(
     r"\b(defeat(?:ed|s|ing)?|beat|beats|bested|topple[ds]?|overcame|overcome"
-    r"|won against|victorious over)\b", re.I)
+    r"|won against|victorious over|victory (?:against|over)"
+    r"|in second place|runner-?up)\b", re.I)
 
 # Which format a post is about, where it says. A two-format event publishes two
 # of these posts and they must not be read against each other's brackets.
