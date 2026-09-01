@@ -4156,6 +4156,13 @@
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-world-championship-2013/rounds.json",
       "postCount": 20,
+      "champions": [
+        {
+          "format": null,
+          "name": "Shin En Huang",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
