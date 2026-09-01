@@ -207,15 +207,6 @@
     "slug": "2026-ycs-cartagena-colombia"
   },
   {
-    "title": "YCS Guatemala City, Guatemala Winner",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-guatemala-city-guatemala-winner/",
-    "modified": "2026-05-03T15:56:19-07:00",
-    "kind": "result",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
     "title": "YCS Cartagena, Colombia: Top 4",
     "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-top-4/",
     "modified": "2026-05-03T15:08:16-07:00",
@@ -237,6 +228,24 @@
     "title": "Welcome to YCS Cartagena, Colombia",
     "url": "https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-cartagena-colombia/",
     "modified": "2026-05-02T12:09:10-07:00",
+    "kind": "news",
+    "event": "YCS Cartagena",
+    "format": null,
+    "slug": "2026-ycs-cartagena-colombia"
+  },
+  {
+    "title": "YCS Cartagena, Colombia 2026",
+    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-2026-main-event-information/",
+    "modified": "2026-04-23T14:16:39-07:00",
+    "kind": "news",
+    "event": "YCS Cartagena",
+    "format": null,
+    "slug": "2026-ycs-cartagena-colombia"
+  },
+  {
+    "title": "YCS Cartagena, Colombia 2026",
+    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-2026-public-events-information/",
+    "modified": "2026-04-15T14:55:54-07:00",
     "kind": "news",
     "event": "YCS Cartagena",
     "format": null,

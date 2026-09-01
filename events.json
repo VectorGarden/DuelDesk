@@ -1,24 +1,6 @@
 {
   "events": [
     {
-      "slug": "yu-gi-oh-tcg-world-championship-2026",
-      "event": "World Championship 2026",
-      "updated": "2026-08-29",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/yu-gi-oh-tcg-world-championship-2026/rounds.json",
-      "postCount": 17,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 7,
-          "duelists": 30,
-          "rounds": 9
-        }
-      ]
-    },
-    {
       "slug": "2026-08-quebec",
       "event": "YCS Montréal",
       "updated": "2026-08-16",
@@ -105,32 +87,14 @@
       ]
     },
     {
-      "slug": "2026-south-america-wcq",
-      "event": "South America WCQ 2026",
-      "updated": "2026-06-21",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2026-south-america-wcq/rounds.json",
-      "postCount": 26,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 13,
-          "duelists": 480,
-          "rounds": 13
-        }
-      ]
-    },
-    {
       "slug": "2026-south-america-genesys-championship",
       "event": "South America Genesys Championship",
-      "updated": "2026-06-21",
+      "updated": "2026-06-29",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-south-america-genesys-championship/rounds.json",
-      "postCount": 23,
+      "postCount": 24,
       "formats": [
         {
           "format": "Genesys",
@@ -143,18 +107,36 @@
     {
       "slug": "2026-south-america-dragon-duel-championship",
       "event": "South America Dragon Duel Championship",
-      "updated": "2026-06-21",
+      "updated": "2026-06-29",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-south-america-dragon-duel-championship/rounds.json",
-      "postCount": 16,
+      "postCount": 17,
       "formats": [
         {
           "format": "Dragon Duel",
           "swissRounds": 7,
           "duelists": 12,
           "rounds": 7
+        }
+      ]
+    },
+    {
+      "slug": "2026-south-america-wcq",
+      "event": "South America WCQ 2026",
+      "updated": "2026-06-21",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-south-america-wcq/rounds.json",
+      "postCount": 28,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 480,
+          "rounds": 13
         }
       ]
     },
@@ -166,7 +148,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-central-america-wcq/rounds.json",
-      "postCount": 26,
+      "postCount": 28,
       "formats": [
         {
           "format": null,
@@ -220,7 +202,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-05-ycs-columbus/rounds.json",
-      "postCount": 122,
+      "postCount": 123,
       "champions": [
         {
           "format": "Advanced",
@@ -257,12 +239,31 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-ycs-cartagena-colombia/rounds.json",
-      "postCount": 27,
+      "postCount": 28,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 269,
+          "rounds": 12
+        }
+      ]
+    },
+    {
+      "slug": "2026-ycs-guatemala-city-guatemala",
+      "event": "YCS Guatemala City",
+      "location": "Guatemala City, Guatemala",
+      "updated": "2026-05-03",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
+      "postCount": 27,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 310,
           "rounds": 12
         }
       ]
@@ -275,7 +276,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-04-team-ycs-las-vegas/rounds.json",
-      "postCount": 74,
+      "postCount": 72,
       "champions": [
         {
           "format": null,
@@ -307,34 +308,36 @@
       ]
     },
     {
-      "slug": "2026-ycs-guatemala-city-guatemala",
-      "event": "YCS Guatemala City",
-      "location": "Guatemala City, Guatemala",
-      "updated": "2026-04-12",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
-      "postCount": 25,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 12,
-          "duelists": 310,
-          "rounds": 12
-        }
-      ]
-    },
-    {
       "slug": "2026-team-ycs-la-paz-bolivia",
       "event": "TEAM YCS La Paz",
       "location": "La Paz, Bolivia",
-      "updated": "2026-03-18",
+      "updated": "2026-03-23",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-team-ycs-la-paz-bolivia/rounds.json",
-      "postCount": 22,
+      "postCount": 23,
+      "champions": [
+        {
+          "format": null,
+          "name": "Living Fossils",
+          "deck": null,
+          "members": [
+            {
+              "name": "Jesse Dean Kotton",
+              "deck": null
+            },
+            {
+              "name": "Patrick Jefferson Hoban",
+              "deck": null
+            },
+            {
+              "name": "Christopher Jordan LeBlanc",
+              "deck": null
+            }
+          ]
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -352,7 +355,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-02-300th-na/rounds.json",
-      "postCount": 160,
+      "postCount": 157,
       "champions": [
         {
           "format": "Advanced",
@@ -389,18 +392,44 @@
     {
       "slug": "remote-duel-ycs-january-2026",
       "event": "Remote Duel YCS January 2026",
-      "updated": "2026-02-01",
+      "updated": "2026-02-13",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-january-2026/rounds.json",
-      "postCount": 25,
+      "postCount": 26,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jhon David Guerrero Sanchez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 286,
           "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2025-ycs-merida-mexico",
+      "event": "YCS Merida",
+      "location": "Merida, Mexico",
+      "updated": "2025-12-16",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-ycs-merida-mexico/rounds.json",
+      "postCount": 28,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 431,
+          "rounds": 12
         }
       ]
     },
@@ -412,7 +441,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-12-rdycs-na/rounds.json",
-      "postCount": 76,
+      "postCount": 74,
       "champions": [
         {
           "format": null,
@@ -430,25 +459,6 @@
       ]
     },
     {
-      "slug": "2025-ycs-merida-mexico",
-      "event": "YCS Merida",
-      "location": "Merida, Mexico",
-      "updated": "2025-11-30",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2025-ycs-merida-mexico/rounds.json",
-      "postCount": 23,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 12,
-          "duelists": 414,
-          "rounds": 12
-        }
-      ]
-    },
-    {
       "slug": "2025-11-ycs-pittsburgh-pa",
       "event": "YCS Pittsburgh",
       "updated": "2025-11-09",
@@ -456,7 +466,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-11-ycs-pittsburgh-pa/rounds.json",
-      "postCount": 88,
+      "postCount": 90,
       "champions": [
         {
           "format": null,
@@ -482,7 +492,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-sao-paulo-brazil/rounds.json",
-      "postCount": 28,
+      "postCount": 30,
       "formats": [
         {
           "format": null,
@@ -521,12 +531,12 @@
       "slug": "2025-ycs-lima-peru",
       "event": "YCS Lima",
       "location": "Lima, Peru",
-      "updated": "2025-09-28",
+      "updated": "2025-10-01",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-lima-peru/rounds.json",
-      "postCount": 25,
+      "postCount": 30,
       "formats": [
         {
           "format": null,
@@ -587,7 +597,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-central-america-wcq/rounds.json",
-      "postCount": 23,
+      "postCount": 22,
       "champions": [
         {
           "format": null,
@@ -599,7 +609,7 @@
         {
           "format": null,
           "swissRounds": 9,
-          "duelists": 456,
+          "duelists": 426,
           "rounds": 14
         }
       ]
@@ -607,17 +617,17 @@
     {
       "slug": "2025-south-america-wcq",
       "event": "South America WCQ 2025",
-      "updated": "2025-06-08",
+      "updated": "2025-07-05",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-south-america-wcq/rounds.json",
-      "postCount": 21,
+      "postCount": 22,
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
-          "duelists": 439,
+          "duelists": 456,
           "rounds": 13
         }
       ]
@@ -630,7 +640,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-05-ycs-providence/rounds.json",
-      "postCount": 97,
+      "postCount": 91,
       "champions": [
         {
           "format": null,
@@ -674,7 +684,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-04-ycs-houston/rounds.json",
-      "postCount": 69,
+      "postCount": 77,
       "formats": [
         {
           "format": null,
@@ -753,12 +763,12 @@
       "slug": "2025-team-ycs-san-salvador-el-salvador",
       "event": "TEAM YCS San Salvador",
       "location": "San Salvador, El Salvador",
-      "updated": "2025-03-05",
+      "updated": "2025-03-03",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-team-ycs-san-salvador-el-salvador/rounds.json",
-      "postCount": 22,
+      "postCount": 20,
       "champions": [
         {
           "format": null,
@@ -792,12 +802,19 @@
     {
       "slug": "remote-duel-ycs-february-2025",
       "event": "Remote Duel YCS February 2025",
-      "updated": "2025-02-09",
+      "updated": "2025-02-26",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-february-2025/rounds.json",
-      "postCount": 23,
+      "postCount": 24,
+      "champions": [
+        {
+          "format": null,
+          "name": "Carlos Rafael Mejia Guardian",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -840,7 +857,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-12-ycs-anaheim/rounds.json",
-      "postCount": 76,
+      "postCount": 77,
       "champions": [
         {
           "format": null,
@@ -942,13 +959,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-10-cancun-mexico/rounds.json",
-      "postCount": 22,
+      "postCount": 20,
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
           "duelists": 373,
-          "rounds": 13
+          "rounds": 12
         }
       ]
     },

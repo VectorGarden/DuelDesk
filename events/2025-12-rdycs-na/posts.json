@@ -252,12 +252,12 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "YCS Houston: Saturday ATTACK OF THE GIANT CARD!! Top 3 Duelists",
-    "url": "https://yugiohblog.konami.com/2025/ycs/ycs-houston-saturday-attack-of-the-giant-card/",
-    "modified": "2025-12-16T15:13:44-08:00",
+    "title": "Latin America Remote Duel YCS 2026",
+    "url": "https://yugiohblog.konami.com/2025/event-information/latin-america-remote-duel-ycs-2026-main-event-information/",
+    "modified": "2025-12-16T17:44:53-08:00",
     "kind": "news",
     "event": "North America Remote Duel YCS December 2025",
-    "format": "Attack of the Giant Card",
+    "format": null,
     "slug": "2025-12-rdycs-na"
   },
   {
@@ -273,42 +273,6 @@
     "title": "2025 North America Remote Duel YCS: Top 32 Deck Lists",
     "url": "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-top-32-deck-lists/",
     "modified": "2025-12-16T11:15:56-08:00",
-    "kind": "deck",
-    "event": "North America Remote Duel YCS December 2025",
-    "format": null,
-    "slug": "2025-12-rdycs-na"
-  },
-  {
-    "title": "YCS Merida, Mexico Winner",
-    "url": "https://yugiohblog.konami.com/2025/ycs/ycs-merida-mexico-winner/",
-    "modified": "2025-12-16T10:54:25-08:00",
-    "kind": "result",
-    "event": "North America Remote Duel YCS December 2025",
-    "format": null,
-    "slug": "2025-12-rdycs-na"
-  },
-  {
-    "title": "Latin America Remote Duel YCS 2026",
-    "url": "https://yugiohblog.konami.com/2025/event-information/latin-america-remote-duel-ycs-2026-main-event-information/",
-    "modified": "2025-12-16T17:44:53-08:00",
-    "kind": "news",
-    "event": "North America Remote Duel YCS December 2025",
-    "format": null,
-    "slug": "2025-12-rdycs-na"
-  },
-  {
-    "title": "Round 3 Feature Match: Bryce Cloe vs. Llewelyn Slone",
-    "url": "https://yugiohblog.konami.com/2025/ycs/round-3-feature-match-bryce-cloe-vs-llewelyn-slone/",
-    "modified": "2025-12-16T17:44:02-08:00",
-    "kind": "feature",
-    "event": "North America Remote Duel YCS December 2025",
-    "format": null,
-    "slug": "2025-12-rdycs-na"
-  },
-  {
-    "title": "Remote Duel YCS-North America: Top 8 Deck Breakdown!",
-    "url": "https://yugiohblog.konami.com/2025/ycs/remote-duel-ycs-north-america-top-8-deck-breakdown/",
-    "modified": "2025-12-07T18:03:17-08:00",
     "kind": "deck",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -333,10 +297,19 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 4 Feature Match: Yuta Abe vs. Herman Hansson",
-    "url": "https://yugiohblog.konami.com/2025/ycs/round-4-feature-match-yuta-abe-vs-herman-hansson/",
-    "modified": "2025-12-16T17:45:35-08:00",
+    "title": "Round 3 Feature Match: Bryce Cloe vs. Llewelyn Slone",
+    "url": "https://yugiohblog.konami.com/2025/ycs/round-3-feature-match-bryce-cloe-vs-llewelyn-slone/",
+    "modified": "2025-12-16T17:44:02-08:00",
     "kind": "feature",
+    "event": "North America Remote Duel YCS December 2025",
+    "format": null,
+    "slug": "2025-12-rdycs-na"
+  },
+  {
+    "title": "Remote Duel YCS-North America: Top 8 Deck Breakdown!",
+    "url": "https://yugiohblog.konami.com/2025/ycs/remote-duel-ycs-north-america-top-8-deck-breakdown/",
+    "modified": "2025-12-07T18:03:17-08:00",
+    "kind": "deck",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
     "slug": "2025-12-rdycs-na"
@@ -360,9 +333,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 5 Feature Match: Cesar Gonzalez Rodriguez vs. Timothy Dahl",
-    "url": "https://yugiohblog.konami.com/2025/ycs/round-5-feature-match-cesar-gonzalez-rodriguez-vs-timothy-dahl/",
-    "modified": "2025-12-16T17:46:59-08:00",
+    "title": "Round 4 Feature Match: Yuta Abe vs. Herman Hansson",
+    "url": "https://yugiohblog.konami.com/2025/ycs/round-4-feature-match-yuta-abe-vs-herman-hansson/",
+    "modified": "2025-12-16T17:45:35-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -387,9 +360,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 7 Feature Match: Anthony Xu vs. Sabit Zada",
-    "url": "https://yugiohblog.konami.com/2025/ycs/round-7-feature-match-anthony-xu-vs-sabit-zada/",
-    "modified": "2025-12-16T17:46:20-08:00",
+    "title": "Round 5 Feature Match: Cesar Gonzalez Rodriguez vs. Timothy Dahl",
+    "url": "https://yugiohblog.konami.com/2025/ycs/round-5-feature-match-cesar-gonzalez-rodriguez-vs-timothy-dahl/",
+    "modified": "2025-12-16T17:46:59-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -414,9 +387,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 10 Feature Match: Jeremy Alan AmRhein vs. Savvas Charalampidis",
-    "url": "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/round-10-feature-match-jeremy-alan-amrhein-vs-savvas-charalampidis/",
-    "modified": "2025-12-16T17:39:55-08:00",
+    "title": "Round 7 Feature Match: Anthony Xu vs. Sabit Zada",
+    "url": "https://yugiohblog.konami.com/2025/ycs/round-7-feature-match-anthony-xu-vs-sabit-zada/",
+    "modified": "2025-12-16T17:46:20-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -441,9 +414,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 11 Feature Match: Kylar Price vs. Jamie Hunter",
-    "url": "https://yugiohblog.konami.com/2025/ycs/round-11-feature-match-kylar-price-vs-jamie-hunter/",
-    "modified": "2025-12-16T17:39:02-08:00",
+    "title": "Round 10 Feature Match: Jeremy Alan AmRhein vs. Savvas Charalampidis",
+    "url": "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/round-10-feature-match-jeremy-alan-amrhein-vs-savvas-charalampidis/",
+    "modified": "2025-12-16T17:39:55-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -468,9 +441,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 12 Feature Match: Jamie Hunter vs. Zio Mundry",
-    "url": "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/round-12-feature-match-jamie-hunter-vs-zio-mundry/",
-    "modified": "2025-12-16T17:37:34-08:00",
+    "title": "Round 11 Feature Match: Kylar Price vs. Jamie Hunter",
+    "url": "https://yugiohblog.konami.com/2025/ycs/round-11-feature-match-kylar-price-vs-jamie-hunter/",
+    "modified": "2025-12-16T17:39:02-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -495,9 +468,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Top 8 Feature Match: Jesse Kotton vs. Julien Kehon",
-    "url": "https://yugiohblog.konami.com/2025/ycs/top-8-feature-match-jesse-kotton-vs-julien-kehon/",
-    "modified": "2025-12-16T11:59:30-08:00",
+    "title": "Round 12 Feature Match: Jamie Hunter vs. Zio Mundry",
+    "url": "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/round-12-feature-match-jamie-hunter-vs-zio-mundry/",
+    "modified": "2025-12-16T17:37:34-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -522,9 +495,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Top 4 Feature Match: Gabriel Soussi vs. Julien Kehon",
-    "url": "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/top-4-feature-match-gabriel-soussi-vs-julien-kehon/",
-    "modified": "2025-12-16T11:58:12-08:00",
+    "title": "Top 8 Feature Match: Jesse Kotton vs. Julien Kehon",
+    "url": "https://yugiohblog.konami.com/2025/ycs/top-8-feature-match-jesse-kotton-vs-julien-kehon/",
+    "modified": "2025-12-16T11:59:30-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -540,9 +513,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Top 8 Feature Match: Anthony Xu vs. Sabit Zada",
-    "url": "https://yugiohblog.konami.com/2025/ycs/top-8-feature-match-anthony-xu-vs-sabit-zada/",
-    "modified": "2025-12-16T11:58:35-08:00",
+    "title": "Top 4 Feature Match: Gabriel Soussi vs. Julien Kehon",
+    "url": "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/top-4-feature-match-gabriel-soussi-vs-julien-kehon/",
+    "modified": "2025-12-16T11:58:12-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -558,9 +531,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Finals Feature Match: Gabriel Soussi vs. Sabit Zada",
-    "url": "https://yugiohblog.konami.com/2025/ycs/finals-feature-match-gabriel-soussi-vs-sabit-zada/",
-    "modified": "2025-12-16T11:17:57-08:00",
+    "title": "Top 8 Feature Match: Anthony Xu vs. Sabit Zada",
+    "url": "https://yugiohblog.konami.com/2025/ycs/top-8-feature-match-anthony-xu-vs-sabit-zada/",
+    "modified": "2025-12-16T11:58:35-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -576,9 +549,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 9 Feature Match: Jorje Kosho vs. Yuhao Ye",
-    "url": "https://yugiohblog.konami.com/2025/ycs/round-9-feature-match-jorje-kosho-vs-yuhao-ye/",
-    "modified": "2025-12-07T11:37:00-08:00",
+    "title": "Finals Feature Match: Gabriel Soussi vs. Sabit Zada",
+    "url": "https://yugiohblog.konami.com/2025/ycs/finals-feature-match-gabriel-soussi-vs-sabit-zada/",
+    "modified": "2025-12-16T11:17:57-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -594,9 +567,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 6 Feature Match: Ashik Nabit vs. Franco Persano",
-    "url": "https://yugiohblog.konami.com/2025/ycs/round-6-feature-match-ashik-nabit-vs-franco-persano/",
-    "modified": "2025-12-06T19:45:30-08:00",
+    "title": "Round 9 Feature Match: Jorje Kosho vs. Yuhao Ye",
+    "url": "https://yugiohblog.konami.com/2025/ycs/round-9-feature-match-jorje-kosho-vs-yuhao-ye/",
+    "modified": "2025-12-07T11:37:00-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -612,9 +585,9 @@
     "slug": "2025-12-rdycs-na"
   },
   {
-    "title": "Round 8 Feature Match: Erik Carlson vs. Vincent Costanza",
-    "url": "https://yugiohblog.konami.com/2025/ycs/round-8-feature-match-erik-carlson-vs-vincent-costanza/",
-    "modified": "2025-12-06T21:52:56-08:00",
+    "title": "Round 6 Feature Match: Ashik Nabit vs. Franco Persano",
+    "url": "https://yugiohblog.konami.com/2025/ycs/round-6-feature-match-ashik-nabit-vs-franco-persano/",
+    "modified": "2025-12-06T19:45:30-08:00",
     "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
@@ -625,6 +598,15 @@
     "url": "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-11-17/",
     "modified": "2025-12-07T11:36:06-08:00",
     "kind": "news",
+    "event": "North America Remote Duel YCS December 2025",
+    "format": null,
+    "slug": "2025-12-rdycs-na"
+  },
+  {
+    "title": "Round 8 Feature Match: Erik Carlson vs. Vincent Costanza",
+    "url": "https://yugiohblog.konami.com/2025/ycs/round-8-feature-match-erik-carlson-vs-vincent-costanza/",
+    "modified": "2025-12-06T21:52:56-08:00",
+    "kind": "feature",
     "event": "North America Remote Duel YCS December 2025",
     "format": null,
     "slug": "2025-12-rdycs-na"
