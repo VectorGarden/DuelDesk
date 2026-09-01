@@ -154,8 +154,8 @@ def about_format(title: str) -> str | None:
 _ASIDE = re.compile(r"\s[\u2010-\u2015]\s.*?\s[\u2010-\u2015]\s|\([^)]*\)", re.S)
 
 
-def announces_a_winner(title: str, opening: str = "") -> bool:
-    """Whether this post is the main event's winner being announced.
+def announces_a_winner(title: str, opening: str = "", fmt: str | None = None) -> bool:
+    """Whether this post announces the winner of the tournament being asked about.
 
     The opening of the body is read as well as the title, because a side event
     is not always named in the heading -- "And the Winner Is..." is used for the
@@ -165,13 +165,43 @@ def announces_a_winner(title: str, opening: str = "") -> bool:
     What the first line says about the event, not what it says about the
     Duelist: an aside naming a title somebody used to hold is biography, and
     reading it as the subject of the post costs the event its champion.
+
+    `fmt` is the tournament asking. A side event's winner post is not the main
+    event's result and never was -- but since the builder began grouping those
+    tournaments separately, the Dragon Duel is a tournament of its own with its
+    own bracket, and this rule was refusing it its own championship:
+
+        And the new North American Dragon Duel Champion is...
+        Congratulations to Aiden Christopher Tiemann of Austin, Texas...
+
+    Aiden is in that bracket's Top 8. Four events had a Dragon Duel winner post
+    naming a Duelist who was right there in the cut, and no champion.
     """
     if not ANNOUNCEMENT.search(title or ""):
         return False
-    if SIDE_EVENT.search(title or "") or HELD_ELSEWHERE.search(title or ""):
+    if HELD_ELSEWHERE.search(title or ""):
         return False
     said = _ASIDE.sub(" ", opening[:400])[:160]
-    return not (SIDE_EVENT.search(said) or HELD_ELSEWHERE.search(said))
+    if HELD_ELSEWHERE.search(said):
+        return False
+    # Named anywhere -- heading or first line -- and not the tournament asking.
+    for text in (title or "", said):
+        if (found := SIDE_EVENT.search(text)) and not _asked_about(found.group(0), fmt):
+            return False
+    return True
+
+
+def _asked_about(found: str, fmt: str | None) -> bool:
+    """Whether the side event a post names is the tournament asking about it.
+
+    Loose on purpose: SIDE_EVENT matches "public event" where the builder calls
+    the tournament "Public Events", so the shorter is checked against the
+    longer rather than the two being required to be equal.
+    """
+    if not fmt:
+        return False
+    a, b = found.strip().lower(), fmt.strip().lower()
+    return a in b or b in a
 
 
 def crowning(text: str) -> str:
@@ -218,7 +248,7 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
             text = crowning(text)
             if not text:
                 continue
-        elif not announces_a_winner(title, text):
+        elif not announces_a_winner(title, text, fmt):
             continue
         # A post that names a format is about that format's bracket and no
         # other. One that names none is read against whichever is asking.
