@@ -285,6 +285,27 @@ def _year(slug: str, ended: str | None) -> str | None:
 _IS_WORLDS = re.compile(r"world championship|\bwcs\b", re.I)
 
 
+# The Genesys Championship, which each region runs. Central and South America
+# name theirs in their own coverage; North America's calls itself just "Genesys
+# Championship", so the event sat on the front page beside two that say where
+# they were and did not.
+_IS_GENESYS = re.compile(r"genesys championship", re.I)
+
+
+def genesys_name(slug: str, name: str, ended: str | None) -> str | None:
+    """"North America Genesys Championship", or None.
+
+    The region only where one is named -- in the coverage or, as here, in the
+    slug. Not named for its year, because the two that already carry a region
+    are not, and there is one of each so far.
+    """
+    text = f"{slug} {name}".replace("-", " ")
+    if not _IS_GENESYS.search(text):
+        return None
+    region = next((r for pattern, r in _REGIONS if re.search(pattern, text, re.I)), None)
+    return f"{region} Genesys Championship" if region else None
+
+
 def worlds_name(slug: str, name: str, ended: str | None) -> str | None:
     """"World Championship 2016" for a World Championship, or None.
 
@@ -466,6 +487,8 @@ def canonical_name(name: str, slug: str, ended: str | None, *,
         return qualifier, None
     if worlds := worlds_name(slug, name, ended):
         return worlds, None
+    if genesys := genesys_name(slug, name, ended):
+        return genesys, None
     if remote := remote_duel_name(slug, name, ended):
         return remote, None
     # Either the coverage never agreed on a name, or it agreed on something that

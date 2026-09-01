@@ -3877,6 +3877,42 @@ class TestQualifierAbbreviation(unittest.TestCase):
         self.assertIsNone(wcq_name("2024-showcq", "", "2024-07-22"))
 
 
+class TestTheGenesysChampionship(unittest.TestCase):
+    """Each region runs one, and only two of them said so."""
+
+    def test_the_region_comes_from_the_slug_when_the_coverage_omits_it(self):
+        from naming import genesys_name, canonical_name
+        self.assertEqual(
+            genesys_name("2026-north-america-genesys-championship",
+                         "Genesys Championship", "2026-07-11"),
+            "North America Genesys Championship")
+        self.assertEqual(
+            canonical_name("Genesys Championship",
+                           "2026-north-america-genesys-championship",
+                           "2026-07-11")[0],
+            "North America Genesys Championship")
+
+    def test_the_two_that_already_say_it_are_unchanged(self):
+        from naming import genesys_name
+        for slug, name in (
+                ("2026-south-america-genesys-championship",
+                 "South America Genesys Championship"),
+                ("2026-central-america-genesys-championship",
+                 "Central America Genesys Championship")):
+            self.assertEqual(genesys_name(slug, name, "2026-06-29"), name, slug)
+
+    def test_something_else_genesys_is_not_a_championship(self):
+        from naming import genesys_name
+        self.assertIsNone(genesys_name("2026-08-quebec", "YCS Montréal", "2026-08-16"))
+        self.assertIsNone(genesys_name("genesys-format-deck-profile",
+                                       "Genesys Format Deck Profile", "2026-08-16"))
+
+    def test_a_championship_with_no_region_anywhere_keeps_its_name(self):
+        from naming import genesys_name
+        self.assertIsNone(genesys_name("genesys-championship",
+                                       "Genesys Championship", "2026-07-11"))
+
+
 class TestTheWorldChampionship(unittest.TestCase):
     """One event a year, spelled five ways across five years."""
 
@@ -7135,10 +7171,14 @@ class TestTheEventListReadsAsNames(unittest.TestCase):
 
     def test_a_name_of_common_words_can_still_be_a_name(self):
         # "Genesys Championship" is a format and an event type and nothing else,
-        # and is nonetheless what that tournament is called.
+        # and is nonetheless what that tournament is called. What it must not
+        # become is a place guessed off the slug.
+        #
+        # It now keeps the name and gains the region the slug states, because
+        # each region runs one and the other two say so in their own coverage.
         self.assertEqual(
             self.name("Genesys Championship", "2026-north-america-genesys-championship"),
-            "Genesys Championship")
+            "North America Genesys Championship")
 
     def test_the_slug_keeps_the_kind_of_event_it_says(self):
         # "2022-ycs-charlotte" is the YCS at Charlotte, not a YCS by default.
