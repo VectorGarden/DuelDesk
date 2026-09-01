@@ -153,12 +153,12 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "YCS Chicago: And the Winner is…",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-chicago-and-the-winner-is/",
-    "modified": "2019-06-02T14:44:22-07:00",
+    "title": "YCS Knoxville: Dragon Duel Champion!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-knoxville-dragon-duel-champion/",
+    "modified": "2019-06-03T10:56:26-07:00",
     "kind": "result",
     "event": "YCS Knoxville",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2019-ycs-knoxville"
   },
   {
@@ -189,12 +189,12 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "QQ: Which Deck Are You Using This Weekend?",
-    "url": "https://yugiohblog.konami.com/2019/ycs/qq-which-deck-are-you-using-this-weekend-5/",
-    "modified": "2019-06-02T06:30:57-07:00",
-    "kind": "news",
+    "title": "YCS Knoxville: Public Event Playoff Random Winner",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-knoxville-public-event-playoff-randomwinner/",
+    "modified": "2019-06-03T10:24:56-07:00",
+    "kind": "result",
     "event": "YCS Knoxville",
-    "format": null,
+    "format": "Public Events",
     "slug": "2019-ycs-knoxville"
   },
   {
@@ -207,9 +207,18 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Top Tables Update: Round 9",
-    "url": "https://yugiohblog.konami.com/2019/ycs/top-tables-update-round-9-23/",
-    "modified": "2019-06-02T07:34:47-07:00",
+    "title": "YCS Knoxville: Public Event Playoff Points Winner",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-knoxville-public-event-playoff-points-winner/",
+    "modified": "2019-06-02T15:34:30-07:00",
+    "kind": "result",
+    "event": "YCS Knoxville",
+    "format": "Public Events",
+    "slug": "2019-ycs-knoxville"
+  },
+  {
+    "title": "QQ: Which Deck Are You Using This Weekend?",
+    "url": "https://yugiohblog.konami.com/2019/ycs/qq-which-deck-are-you-using-this-weekend-5/",
+    "modified": "2019-06-02T06:30:57-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
     "format": null,
@@ -225,9 +234,9 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "QQ: Which Cards from the Yu-Gi-Oh! Animated Series Do You Want?",
-    "url": "https://yugiohblog.konami.com/2019/ycs/qq-which-cards-from-the-yu-gi-oh-animated-series-do-you-want/",
-    "modified": "2019-06-02T07:36:24-07:00",
+    "title": "Top Tables Update: Round 9",
+    "url": "https://yugiohblog.konami.com/2019/ycs/top-tables-update-round-9-23/",
+    "modified": "2019-06-02T07:34:47-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
     "format": null,
@@ -243,9 +252,9 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Top Tables Update: Round 10",
-    "url": "https://yugiohblog.konami.com/2019/ycs/top-tables-update-round-10-20/",
-    "modified": "2019-06-02T08:17:30-07:00",
+    "title": "QQ: Which Cards from the Yu-Gi-Oh! Animated Series Do You Want?",
+    "url": "https://yugiohblog.konami.com/2019/ycs/qq-which-cards-from-the-yu-gi-oh-animated-series-do-you-want/",
+    "modified": "2019-06-02T07:36:24-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
     "format": null,
@@ -261,9 +270,9 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "YCS Knoxville: Top 32 Duelists and Decks!",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-knoxville-top-32-duelists-and-decks/",
-    "modified": "2019-06-02T09:15:28-07:00",
+    "title": "Top Tables Update: Round 10",
+    "url": "https://yugiohblog.konami.com/2019/ycs/top-tables-update-round-10-20/",
+    "modified": "2019-06-02T08:17:30-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
     "format": null,
@@ -279,6 +288,24 @@
     "slug": "2019-ycs-knoxville"
   },
   {
+    "title": "YCS Knoxville: Top 32 Duelists and Decks!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-knoxville-top-32-duelists-and-decks/",
+    "modified": "2019-06-02T09:15:28-07:00",
+    "kind": "news",
+    "event": "YCS Knoxville",
+    "format": null,
+    "slug": "2019-ycs-knoxville"
+  },
+  {
+    "title": "Round 1 Feature Match: Miciah Umstead vs. Romello Wilson",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-1-feature-match-miciah-umstead-vs-romello-wilson/",
+    "modified": "2019-06-01T09:31:34-07:00",
+    "kind": "feature",
+    "event": "YCS Knoxville",
+    "format": null,
+    "slug": "2019-ycs-knoxville"
+  },
+  {
     "title": "Top 32 Feature Match: Max Reynolds vs. Jesse Kotton",
     "url": "https://yugiohblog.konami.com/2019/ycs/36577/",
     "modified": "2019-06-02T10:22:09-07:00",
@@ -288,9 +315,27 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Round 1 Feature Match: Miciah Umstead vs. Romello Wilson",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-1-feature-match-miciah-umstead-vs-romello-wilson/",
-    "modified": "2019-06-01T09:31:34-07:00",
+    "title": "Round 1 Feature Match: Crandial Gerald Rogers vs. Robert Kenny III",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-1-feature-match-crandial-gerald-rogers-vs-robert-kenny-iii/",
+    "modified": "2019-06-01T10:08:20-07:00",
+    "kind": "feature",
+    "event": "YCS Knoxville",
+    "format": null,
+    "slug": "2019-ycs-knoxville"
+  },
+  {
+    "title": "YCS Knoxville: Sunday’s Top 4 Dragon Duelists",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-knoxville-sundays-top-4-dragon-duelists/",
+    "modified": "2019-06-02T12:30:06-07:00",
+    "kind": "news",
+    "event": "YCS Knoxville",
+    "format": "Dragon Duel",
+    "slug": "2019-ycs-knoxville"
+  },
+  {
+    "title": "Round 2 Feature Match: Travis Tacket vs. Becker Phathanak",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-2-feature-match-travis-tacket-vs-becker-phathanak/",
+    "modified": "2019-06-01T10:48:36-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
     "format": null,
@@ -306,9 +351,9 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Round 1 Feature Match: Crandial Gerald Rogers vs. Robert Kenny III",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-1-feature-match-crandial-gerald-rogers-vs-robert-kenny-iii/",
-    "modified": "2019-06-01T10:08:20-07:00",
+    "title": "Round 3 Feature Match: Joe Claudio vs. Noah Greene",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-3-feature-match-joe-claudio-vs-noah-greene/",
+    "modified": "2019-06-01T11:08:38-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
     "format": null,
@@ -324,9 +369,27 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Round 2 Feature Match: Travis Tacket vs. Becker Phathanak",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-2-feature-match-travis-tacket-vs-becker-phathanak/",
-    "modified": "2019-06-01T10:48:36-07:00",
+    "title": "Round 4 Feature Match: Andrew James Naylor vs. Perry Ellis Smith Jr.",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-4-feature-match-andrew-james-naylor-vs-perry-ellis-smith-jr/",
+    "modified": "2019-06-01T13:51:48-07:00",
+    "kind": "feature",
+    "event": "YCS Knoxville",
+    "format": null,
+    "slug": "2019-ycs-knoxville"
+  },
+  {
+    "title": "YCS Knoxville: ATTACK OF THE GIANT CARD!!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-knoxville-attack-of-the-giant-card/",
+    "modified": "2019-06-01T09:43:20-07:00",
+    "kind": "news",
+    "event": "YCS Knoxville",
+    "format": "Attack of the Giant Card",
+    "slug": "2019-ycs-knoxville"
+  },
+  {
+    "title": "Round 5 Feature Match: Vincent Polsinelli vs. Faisal Khan",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-5-feature-match-vincent-polsinelli-vs-faisal-khan/",
+    "modified": "2019-06-01T13:55:35-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
     "format": null,
@@ -342,9 +405,9 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Round 3 Feature Match: Joe Claudio vs. Noah Greene",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-3-feature-match-joe-claudio-vs-noah-greene/",
-    "modified": "2019-06-01T11:08:38-07:00",
+    "title": "Round 6 Feature Match: Steven John Logan vs. Billy Gene White Jr.",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-6-feature-match-steven-john-logan-vs-billy-gene-white-jr/",
+    "modified": "2019-06-01T15:57:03-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
     "format": null,
@@ -360,9 +423,27 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Round 4 Feature Match: Andrew James Naylor vs. Perry Ellis Smith Jr.",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-4-feature-match-andrew-james-naylor-vs-perry-ellis-smith-jr/",
-    "modified": "2019-06-01T13:51:48-07:00",
+    "title": "Round 7 Feature Match: Luke Parkes vs. Elijah Green",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-7-feature-match-luke-parkes-vs-elijah-green/",
+    "modified": "2019-06-01T15:55:12-07:00",
+    "kind": "feature",
+    "event": "YCS Knoxville",
+    "format": null,
+    "slug": "2019-ycs-knoxville"
+  },
+  {
+    "title": "YCS Knoxville: Saturday’s Top 4 Dragon Duelists",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-knoxville-saturdays-top-4-dragon-duelists/",
+    "modified": "2019-06-01T13:34:29-07:00",
+    "kind": "news",
+    "event": "YCS Knoxville",
+    "format": "Dragon Duel",
+    "slug": "2019-ycs-knoxville"
+  },
+  {
+    "title": "Round 8 Feature Match: Timothy Befera vs. Wei Li",
+    "url": "https://yugiohblog.konami.com/2019/ycs/round-8-feature-match-timothy-befera-vs-wei-li/",
+    "modified": "2019-06-01T16:58:28-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
     "format": null,
@@ -378,28 +459,10 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Round 5 Feature Match: Vincent Polsinelli vs. Faisal Khan",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-5-feature-match-vincent-polsinelli-vs-faisal-khan/",
-    "modified": "2019-06-01T13:55:35-07:00",
-    "kind": "feature",
-    "event": "YCS Knoxville",
-    "format": null,
-    "slug": "2019-ycs-knoxville"
-  },
-  {
     "title": "QQ: What’s Your Favorite Card in Dark Neostorm?",
     "url": "https://yugiohblog.konami.com/2019/ycs/qq-whats-your-favorite-card-in-dark-neostorm/",
     "modified": "2019-06-01T14:31:22-07:00",
     "kind": "news",
-    "event": "YCS Knoxville",
-    "format": null,
-    "slug": "2019-ycs-knoxville"
-  },
-  {
-    "title": "Round 6 Feature Match: Steven John Logan vs. Billy Gene White Jr.",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-6-feature-match-steven-john-logan-vs-billy-gene-white-jr/",
-    "modified": "2019-06-01T15:57:03-07:00",
-    "kind": "feature",
     "event": "YCS Knoxville",
     "format": null,
     "slug": "2019-ycs-knoxville"
@@ -414,28 +477,10 @@
     "slug": "2019-ycs-knoxville"
   },
   {
-    "title": "Round 7 Feature Match: Luke Parkes vs. Elijah Green",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-7-feature-match-luke-parkes-vs-elijah-green/",
-    "modified": "2019-06-01T15:55:12-07:00",
-    "kind": "feature",
-    "event": "YCS Knoxville",
-    "format": null,
-    "slug": "2019-ycs-knoxville"
-  },
-  {
     "title": "Top Tables Update: Round 7",
     "url": "https://yugiohblog.konami.com/2019/ycs/top-tables-update-round-7-18/",
     "modified": "2019-06-01T15:51:37-07:00",
     "kind": "news",
-    "event": "YCS Knoxville",
-    "format": null,
-    "slug": "2019-ycs-knoxville"
-  },
-  {
-    "title": "Round 8 Feature Match: Timothy Befera vs. Wei Li",
-    "url": "https://yugiohblog.konami.com/2019/ycs/round-8-feature-match-timothy-befera-vs-wei-li/",
-    "modified": "2019-06-01T16:58:28-07:00",
-    "kind": "feature",
     "event": "YCS Knoxville",
     "format": null,
     "slug": "2019-ycs-knoxville"

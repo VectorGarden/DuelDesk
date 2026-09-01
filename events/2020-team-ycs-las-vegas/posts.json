@@ -135,12 +135,12 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
-    "title": "Team YCS Las Vegas: Tag Duel Tournament Winners!",
-    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-tag-duel-tournament-winners/",
-    "modified": "2020-02-23T18:19:49-08:00",
+    "title": "Team YCS Las Vegas: Sunday’s First 3 vs. 3 Public Event Winners!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-sundays-first-3-vs-3-public-event-winners/",
+    "modified": "2020-02-23T15:30:27-08:00",
     "kind": "result",
     "event": "Team YCS Las Vegas",
-    "format": null,
+    "format": "Public Events",
     "slug": "2020-team-ycs-las-vegas"
   },
   {
@@ -162,12 +162,12 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
-    "title": "Congratulations to the Top 4 Teams of Team YCS Las Vegas!",
-    "url": "https://yugiohblog.konami.com/2020/ycs/congratulations-to-the-top-4-teams-of-team-ycs-las-vegas/",
-    "modified": "2020-02-23T19:38:48-08:00",
+    "title": "Team YCS Las Vegas: Sunday’s Dragon Duel Winners!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-sundays-dragon-duel-winners/",
+    "modified": "2020-02-23T15:40:38-08:00",
     "kind": "result",
     "event": "Team YCS Las Vegas",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2020-team-ycs-las-vegas"
   },
   {
@@ -189,12 +189,12 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
-    "title": "And the Winner is…",
-    "url": "https://yugiohblog.konami.com/2020/ycs/and-the-winner-is-36/",
-    "modified": "2020-02-23T19:10:50-08:00",
+    "title": "Team YCS Las Vegas: Dragon Duel Champion!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-dragon-duel-champion/",
+    "modified": "2020-02-23T15:45:37-08:00",
     "kind": "result",
     "event": "Team YCS Las Vegas",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2020-team-ycs-las-vegas"
   },
   {
@@ -211,6 +211,15 @@
     "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-triple-deck-profile-team-gonna-finish-thats-second-place-decks/",
     "modified": "2020-02-23T19:12:00-08:00",
     "kind": "deck",
+    "event": "Team YCS Las Vegas",
+    "format": null,
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
+    "title": "Team YCS Las Vegas: Tag Duel Tournament Winners!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-tag-duel-tournament-winners/",
+    "modified": "2020-02-23T18:19:49-08:00",
+    "kind": "result",
     "event": "Team YCS Las Vegas",
     "format": null,
     "slug": "2020-team-ycs-las-vegas"
@@ -234,12 +243,30 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
+    "title": "Team YCS Las Vegas: Sunday’s Second 3 vs. 3 Public Event Winners!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-sundays-second-3-vs-3-public-event-winners/",
+    "modified": "2020-02-23T18:27:41-08:00",
+    "kind": "result",
+    "event": "Team YCS Las Vegas",
+    "format": "Public Events",
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
     "title": "Team YCS Las Vegas Profile: Team Spellstone Sorcerer Karood",
     "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-profile-team-spellstone-sorcerer-karood/",
     "modified": "2020-02-23T11:55:27-08:00",
     "kind": "news",
     "event": "Team YCS Las Vegas",
     "format": null,
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
+    "title": "Team YCS Las Vegas: Random Public Events Playoff Winner",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-random-public-events-playoff-winner/",
+    "modified": "2020-02-23T18:56:10-08:00",
+    "kind": "result",
+    "event": "Team YCS Las Vegas",
+    "format": "Public Events",
     "slug": "2020-team-ycs-las-vegas"
   },
   {
@@ -252,10 +279,28 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
+    "title": "Team YCS Las Vegas: Public Events Points Playoff Winner",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-public-events-points-playoff-winner/",
+    "modified": "2020-02-23T18:59:11-08:00",
+    "kind": "result",
+    "event": "Team YCS Las Vegas",
+    "format": "Public Events",
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
     "title": "QQ: Which Team Will Win YCS Las Vegas?",
     "url": "https://yugiohblog.konami.com/2020/ycs/qq-which-team-will-win-ycs-las-vegas/",
     "modified": "2020-02-23T13:02:41-08:00",
     "kind": "news",
+    "event": "Team YCS Las Vegas",
+    "format": null,
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
+    "title": "Congratulations to the Top 4 Teams of Team YCS Las Vegas!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/congratulations-to-the-top-4-teams-of-team-ycs-las-vegas/",
+    "modified": "2020-02-23T19:38:48-08:00",
+    "kind": "result",
     "event": "Team YCS Las Vegas",
     "format": null,
     "slug": "2020-team-ycs-las-vegas"
@@ -270,6 +315,15 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
+    "title": "And the Winner is…",
+    "url": "https://yugiohblog.konami.com/2020/ycs/and-the-winner-is-36/",
+    "modified": "2020-02-23T19:10:50-08:00",
+    "kind": "result",
+    "event": "Team YCS Las Vegas",
+    "format": null,
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
     "title": "Team Talk: Team “Slifer Slacker”",
     "url": "https://yugiohblog.konami.com/2020/ycs/team-talk-team-slifer-slacker/",
     "modified": "2020-02-23T14:45:43-08:00",
@@ -279,12 +333,39 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
+    "title": "Team YCS Las Vegas: Saturday’s 3 vs. 3 Public Event Winners!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-saturdays-3-vs-3-public-event-winners/",
+    "modified": "2020-02-22T20:12:27-08:00",
+    "kind": "result",
+    "event": "Team YCS Las Vegas",
+    "format": "Public Events",
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
     "title": "The Final Match is Underway!",
     "url": "https://yugiohblog.konami.com/2020/ycs/the-final-match-is-underway/",
     "modified": "2020-02-23T16:34:37-08:00",
     "kind": "news",
     "event": "Team YCS Las Vegas",
     "format": null,
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
+    "title": "Team YCS Las Vegas: Sunday’s ATTACK OF THE GIANT CARD!!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-sundays-attack-of-the-giant-card/",
+    "modified": "2020-02-23T17:35:14-08:00",
+    "kind": "news",
+    "event": "Team YCS Las Vegas",
+    "format": "Attack of the Giant Card",
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
+    "title": "Team YCS Las Vegas: Sunday’s Speed Duel ATTACK OF THE GIANT CARD!!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-sundays-speed-duel-attack-of-the-giant-card/",
+    "modified": "2020-02-23T17:48:11-08:00",
+    "kind": "news",
+    "event": "Team YCS Las Vegas",
+    "format": "Attack of the Giant Card",
     "slug": "2020-team-ycs-las-vegas"
   },
   {
@@ -387,6 +468,15 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
+    "title": "Team YCS Las Vegas: ATTACK OF THE GIANT CARD!! Prizes",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-attack-of-the-giant-card-prizes/",
+    "modified": "2020-02-22T16:27:36-08:00",
+    "kind": "news",
+    "event": "Team YCS Las Vegas",
+    "format": "Attack of the Giant Card",
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
     "title": "QQ: Are You and Your Teammates Playing the Same Deck?",
     "url": "https://yugiohblog.konami.com/2020/ycs/qq-are-you-and-your-teammates-playing-the-same-deck/",
     "modified": "2020-02-22T17:33:29-08:00",
@@ -420,6 +510,24 @@
     "kind": "news",
     "event": "Team YCS Las Vegas",
     "format": null,
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
+    "title": "Team YCS Las Vegas: Saturday’s Speed Duel ATTACK OF THE GIANT CARD!!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-saturdays-speed-duel-attack-of-the-giant-card/",
+    "modified": "2020-02-22T19:54:03-08:00",
+    "kind": "news",
+    "event": "Team YCS Las Vegas",
+    "format": "Attack of the Giant Card",
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
+    "title": "Team YCS Las Vegas: Saturday’s ATTACK OF THE GIANT CARD!!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-saturdays-attack-of-the-giant-card/",
+    "modified": "2020-02-22T20:06:05-08:00",
+    "kind": "news",
+    "event": "Team YCS Las Vegas",
+    "format": "Attack of the Giant Card",
     "slug": "2020-team-ycs-las-vegas"
   },
   {

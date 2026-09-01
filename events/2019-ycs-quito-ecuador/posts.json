@@ -180,12 +180,12 @@
     "slug": "2019-ycs-quito-ecuador"
   },
   {
-    "title": "We have a winner!",
-    "url": "https://yugiohblog.konami.com/2019/ycs/we-have-a-winner-6/",
-    "modified": "2019-04-21T16:53:30-07:00",
+    "title": "YCS Quito, Ecuador: Saturday Dragon Duel Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-quito-ecuador-saturday-dragon-duel-winners/",
+    "modified": "2019-04-21T08:55:25-07:00",
     "kind": "result",
     "event": "YCS Quito",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2019-ycs-quito-ecuador"
   },
   {
@@ -198,6 +198,15 @@
     "slug": "2019-ycs-quito-ecuador"
   },
   {
+    "title": "YCS Quito, Ecuador: Sunday Dragon Duel Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-quito-ecuador-sunday-dragon-duel-winners/",
+    "modified": "2019-04-21T15:57:19-07:00",
+    "kind": "result",
+    "event": "YCS Quito",
+    "format": "Dragon Duel",
+    "slug": "2019-ycs-quito-ecuador"
+  },
+  {
     "title": "Welcome to the Yu-Gi-Oh! Championship Series Quito, Ecuador!",
     "url": "https://yugiohblog.konami.com/2019/ycs/welcome-to-the-yu-gi-oh-championship-series-quito-ecuador/",
     "modified": "2019-04-20T10:35:16-07:00",
@@ -207,10 +216,28 @@
     "slug": "2019-ycs-quito-ecuador"
   },
   {
+    "title": "YCS Quito, Ecuador: Dragon Duel Playoff Winner",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-quito-ecuador-dragon-duel-playoff-winner/",
+    "modified": "2019-04-21T16:11:09-07:00",
+    "kind": "result",
+    "event": "YCS Quito",
+    "format": "Dragon Duel",
+    "slug": "2019-ycs-quito-ecuador"
+  },
+  {
     "title": "YCS Quito, Ecuador: Country Breakdown",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-quito-ecuador-country-breakdown/",
     "modified": "2019-04-20T15:39:43-07:00",
     "kind": "news",
+    "event": "YCS Quito",
+    "format": null,
+    "slug": "2019-ycs-quito-ecuador"
+  },
+  {
+    "title": "We have a winner!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/we-have-a-winner-6/",
+    "modified": "2019-04-21T16:53:30-07:00",
+    "kind": "result",
     "event": "YCS Quito",
     "format": null,
     "slug": "2019-ycs-quito-ecuador"

@@ -2174,7 +2174,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-latin-america-remote-duel-ycs/rounds.json",
-      "postCount": 12,
+      "postCount": 13,
       "formats": [
         {
           "format": null,
@@ -2192,7 +2192,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-january-remote-duel-ycs/rounds.json",
-      "postCount": 51,
+      "postCount": 50,
       "champions": [
         {
           "format": null,
@@ -2242,7 +2242,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2020-team-ycs-las-vegas/rounds.json",
-      "postCount": 50,
+      "postCount": 62,
       "champions": [
         {
           "format": null,
@@ -2282,7 +2282,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2020-uds-invitational-tulsa-ok/rounds.json",
-      "postCount": 50,
+      "postCount": 58,
       "formats": [
         {
           "format": null,
@@ -2300,7 +2300,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-pasadena/rounds.json",
-      "postCount": 60,
+      "postCount": 69,
       "champions": [
         {
           "format": null,
@@ -2359,12 +2359,12 @@
     {
       "slug": "2019-uds-invitational-panama-city",
       "event": "UDS Invitational Panama City",
-      "updated": "2019-10-20",
+      "updated": "2019-10-22",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-panama-city/rounds.json",
-      "postCount": 23,
+      "postCount": 24,
       "formats": [
         {
           "format": null,
@@ -2382,7 +2382,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-ft-worth/rounds.json",
-      "postCount": 64,
+      "postCount": 74,
       "champions": [
         {
           "format": null,
@@ -2407,7 +2407,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-guadalajara/rounds.json",
-      "postCount": 45,
+      "postCount": 52,
       "champions": [
         {
           "format": null,
@@ -2432,7 +2432,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-niagara-falls/rounds.json",
-      "postCount": 55,
+      "postCount": 60,
       "champions": [
         {
           "format": null,
@@ -2452,12 +2452,12 @@
     {
       "slug": "2019-ycs-portland",
       "event": "YCS Portland",
-      "updated": "2019-08-25",
+      "updated": "2019-09-09",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-portland/rounds.json",
-      "postCount": 37,
+      "postCount": 46,
       "champions": [
         {
           "format": null,
@@ -2483,7 +2483,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-08-uds-summer-invitational-2019-indianapolis-in/rounds.json",
-      "postCount": 96,
+      "postCount": 95,
       "formats": [
         {
           "format": null,
@@ -2503,6 +2503,11 @@
       "path": "events/2019-north-america-wcq/rounds.json",
       "postCount": 115,
       "champions": [
+        {
+          "format": "Dragon Duel",
+          "name": "Lucas Dan Oswald",
+          "deck": null
+        },
         {
           "format": null,
           "name": "Dakota Clint Angeloff",
@@ -2557,7 +2562,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-central-america-wcq/rounds.json",
-      "postCount": 40,
+      "postCount": 41,
       "champions": [
         {
           "format": null,
@@ -2582,7 +2587,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-knoxville/rounds.json",
-      "postCount": 52,
+      "postCount": 57,
       "champions": [
         {
           "format": null,
@@ -2608,7 +2613,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-quito-ecuador/rounds.json",
-      "postCount": 24,
+      "postCount": 27,
       "champions": [
         {
           "format": null,
@@ -2660,7 +2665,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-medellin-colombia/rounds.json",
-      "postCount": 26,
+      "postCount": 28,
       "champions": [
         {
           "format": null,
@@ -2725,7 +2730,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-las-vegas-nv/rounds.json",
-      "postCount": 51,
+      "postCount": 56,
       "formats": [
         {
           "format": null,
@@ -2743,7 +2748,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2019-ycs-chicago/rounds.json",
-      "postCount": 70,
+      "postCount": 77,
       "formats": [
         {
           "format": null,
@@ -2762,7 +2767,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-monterrey-mexico/rounds.json",
-      "postCount": 27,
+      "postCount": 30,
       "formats": [
         {
           "format": null,
@@ -2874,7 +2879,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-south-america-wcq/rounds.json",
-      "postCount": 45,
+      "postCount": 46,
       "formats": [
         {
           "format": "Dragon Duel",
@@ -2898,7 +2903,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-north-america-wcq/rounds.json",
-      "postCount": 69,
+      "postCount": 68,
       "champions": [
         {
           "format": null,
@@ -2911,6 +2916,31 @@
           "format": null,
           "swissRounds": 11,
           "duelists": 1757,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2018-ycs-secaucus",
+      "event": "YCS Secaucus",
+      "updated": "2018-06-14",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-secaucus/rounds.json",
+      "postCount": 75,
+      "champions": [
+        {
+          "format": null,
+          "name": "Dakota Clint Angeloff",
+          "deck": "Trickstar Sky Striker"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1312,
           "rounds": 16
         }
       ]
@@ -2941,31 +2971,6 @@
       ]
     },
     {
-      "slug": "2018-ycs-secaucus",
-      "event": "YCS Secaucus",
-      "updated": "2018-06-05",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2018-ycs-secaucus/rounds.json",
-      "postCount": 72,
-      "champions": [
-        {
-          "format": null,
-          "name": "Dakota Clint Angeloff",
-          "deck": "Trickstar Sky Striker"
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 11,
-          "duelists": 1312,
-          "rounds": 16
-        }
-      ]
-    },
-    {
       "slug": "2018-ycs-santiago-chile",
       "event": "YCS Santiago",
       "location": "Santiago, Chile",
@@ -2974,7 +2979,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-santiago-chile/rounds.json",
-      "postCount": 31,
+      "postCount": 33,
       "champions": [
         {
           "format": null,
@@ -2999,7 +3004,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-memphis/rounds.json",
-      "postCount": 63,
+      "postCount": 65,
       "champions": [
         {
           "format": null,

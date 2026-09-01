@@ -153,12 +153,12 @@
     "slug": "2019-ycs-niagara-falls"
   },
   {
-    "title": "YCS Niagara: And the Winner is…",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-and-the-winner-is/",
-    "modified": "2019-09-22T16:32:33-07:00",
+    "title": "YCS Niagara Falls: Speed Duel ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-speed-duel-attack-of-the-giant-card-winners/",
+    "modified": "2019-09-23T07:28:05-07:00",
     "kind": "result",
     "event": "YCS Niagara",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2019-ycs-niagara-falls"
   },
   {
@@ -189,6 +189,15 @@
     "slug": "2019-ycs-niagara-falls"
   },
   {
+    "title": "YCS Niagara Falls: Dragon Duel Champion!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-dragon-duel-champion/",
+    "modified": "2019-09-22T13:59:39-07:00",
+    "kind": "result",
+    "event": "YCS Niagara",
+    "format": "Dragon Duel",
+    "slug": "2019-ycs-niagara-falls"
+  },
+  {
     "title": "YCS Niagara Falls: Top Tables Update Round 5",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-top-tables-update-round-5/",
     "modified": "2019-09-22T11:03:17-07:00",
@@ -213,6 +222,15 @@
     "kind": "deck",
     "event": "YCS Niagara",
     "format": null,
+    "slug": "2019-ycs-niagara-falls"
+  },
+  {
+    "title": "YCS Niagara Falls: Sunday’s ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-sundays-attack-of-the-giant-card-winners/",
+    "modified": "2019-09-22T14:03:47-07:00",
+    "kind": "result",
+    "event": "YCS Niagara",
+    "format": "Attack of the Giant Card",
     "slug": "2019-ycs-niagara-falls"
   },
   {
@@ -243,6 +261,15 @@
     "slug": "2019-ycs-niagara-falls"
   },
   {
+    "title": "YCS Niagara: And the Winner is…",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-and-the-winner-is/",
+    "modified": "2019-09-22T16:32:33-07:00",
+    "kind": "result",
+    "event": "YCS Niagara",
+    "format": null,
+    "slug": "2019-ycs-niagara-falls"
+  },
+  {
     "title": "YCS Niagara Falls: Top Tables Update Round 9",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-top-tables-update-round-9/",
     "modified": "2019-09-22T11:02:56-07:00",
@@ -267,6 +294,15 @@
     "kind": "deck",
     "event": "YCS Niagara",
     "format": null,
+    "slug": "2019-ycs-niagara-falls"
+  },
+  {
+    "title": "YCS Niagara Falls: Saturday’s ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-saturdays-attack-of-the-giant-card-winners/",
+    "modified": "2019-09-21T17:19:34-07:00",
+    "kind": "result",
+    "event": "YCS Niagara",
+    "format": "Attack of the Giant Card",
     "slug": "2019-ycs-niagara-falls"
   },
   {
@@ -450,12 +486,12 @@
     "slug": "2019-ycs-niagara-falls"
   },
   {
-    "title": "YCS Niagara Falls: Check Out The Prize Wall!",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-check-out-the-prize-wall/",
-    "modified": "2019-09-21T15:06:58-07:00",
+    "title": "YCS Niagara Falls: Saturday’s Top 4 Dragon Duelists",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-saturdays-top-4-dragon-duelists/",
+    "modified": "2019-09-21T14:39:11-07:00",
     "kind": "news",
     "event": "YCS Niagara",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2019-ycs-niagara-falls"
   },
   {
@@ -463,6 +499,15 @@
     "url": "https://yugiohblog.konami.com/2019/ycs/round-8-feature-match-stanley-lee-vs-nikolas-konikkos/",
     "modified": "2019-09-21T17:37:03-07:00",
     "kind": "feature",
+    "event": "YCS Niagara",
+    "format": null,
+    "slug": "2019-ycs-niagara-falls"
+  },
+  {
+    "title": "YCS Niagara Falls: Check Out The Prize Wall!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-niagara-falls-check-out-the-prize-wall/",
+    "modified": "2019-09-21T15:06:58-07:00",
+    "kind": "news",
     "event": "YCS Niagara",
     "format": null,
     "slug": "2019-ycs-niagara-falls"

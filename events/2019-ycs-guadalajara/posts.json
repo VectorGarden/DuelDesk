@@ -225,12 +225,12 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
-    "title": "YCS Guadalajara: And the Winner is…",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-and-the-winner-is/",
-    "modified": "2019-09-29T22:56:10-07:00",
+    "title": "YCS Guadalajara: Sunday’s ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-sundays-attack-of-the-giant-card-winners/",
+    "modified": "2019-09-29T22:30:42-07:00",
     "kind": "result",
     "event": "YCS Guadalajara",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2019-ycs-guadalajara"
   },
   {
@@ -252,6 +252,15 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
+    "title": "YCS Guadalajara: Public Event Points Playoff Winner",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-public-event-points-playoff-winner/",
+    "modified": "2019-09-29T22:46:01-07:00",
+    "kind": "result",
+    "event": "YCS Guadalajara",
+    "format": "Public Events",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
     "title": "YCS Guadalajara: Top Tables Update Round 8",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-top-tables-update-round-8/",
     "modified": "2019-09-29T08:55:31-07:00",
@@ -267,6 +276,15 @@
     "kind": "feature",
     "event": "YCS Guadalajara",
     "format": null,
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara: Public Event Random Playoff Winner",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-public-event-random-playoff-winner/",
+    "modified": "2019-09-29T22:47:44-07:00",
+    "kind": "result",
+    "event": "YCS Guadalajara",
+    "format": "Public Events",
     "slug": "2019-ycs-guadalajara"
   },
   {
@@ -288,6 +306,15 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
+    "title": "YCS Guadalajara: Dragon Duel Champion!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-dragon-duel-champion/",
+    "modified": "2019-09-29T22:49:39-07:00",
+    "kind": "result",
+    "event": "YCS Guadalajara",
+    "format": "Dragon Duel",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
     "title": "YCS Guadalajara: Top Tables Update Round 10",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-top-tables-update-round-10/",
     "modified": "2019-09-29T12:26:48-07:00",
@@ -301,6 +328,15 @@
     "url": "https://yugiohblog.konami.com/2019/ycs/top-4-feature-match-jonhathan-sebastian-vazquez-herrera-vs-alan-omar-roman-villagomez/",
     "modified": "2019-09-29T22:23:21-07:00",
     "kind": "feature",
+    "event": "YCS Guadalajara",
+    "format": null,
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara: And the Winner is…",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-and-the-winner-is/",
+    "modified": "2019-09-29T22:56:10-07:00",
+    "kind": "result",
     "event": "YCS Guadalajara",
     "format": null,
     "slug": "2019-ycs-guadalajara"
@@ -324,12 +360,21 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
-    "title": "YCS Guadalajara: Wrap-Up!",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-wrap-up/",
-    "modified": "2019-09-29T22:57:17-07:00",
+    "title": "YCS Guadalajara: Saturday’s ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-saturdays-attack-of-the-giant-card-winners/",
+    "modified": "2019-09-28T18:05:51-07:00",
+    "kind": "result",
+    "event": "YCS Guadalajara",
+    "format": "Attack of the Giant Card",
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara: Sunday’s Top 4 Dragon Duelists",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-sundays-top-4-dragon-duelists/",
+    "modified": "2019-09-29T22:28:59-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2019-ycs-guadalajara"
   },
   {
@@ -342,9 +387,9 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
-    "title": "Welcome To YCS Guadalajara, Mexico!",
-    "url": "https://yugiohblog.konami.com/2019/ycs/welcome-to-ycs-guadalajara-mexico/",
-    "modified": "2019-09-28T08:36:34-07:00",
+    "title": "YCS Guadalajara: Wrap-Up!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-wrap-up/",
+    "modified": "2019-09-29T22:57:17-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
     "format": null,
@@ -360,9 +405,9 @@
     "slug": "2019-ycs-guadalajara"
   },
   {
-    "title": "YCS Guadalajara: GIANT CARDS!!",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-giant-cards/",
-    "modified": "2019-09-28T10:59:21-07:00",
+    "title": "Welcome To YCS Guadalajara, Mexico!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/welcome-to-ycs-guadalajara-mexico/",
+    "modified": "2019-09-28T08:36:34-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
     "format": null,
@@ -373,6 +418,15 @@
     "url": "https://yugiohblog.konami.com/2019/ycs/round-7-feature-match-adrian-madriz-espinoza-vs-salvador-osmar-gonzalez-zuany/",
     "modified": "2019-09-28T16:58:23-07:00",
     "kind": "feature",
+    "event": "YCS Guadalajara",
+    "format": null,
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara: GIANT CARDS!!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-giant-cards/",
+    "modified": "2019-09-28T10:59:21-07:00",
+    "kind": "news",
     "event": "YCS Guadalajara",
     "format": null,
     "slug": "2019-ycs-guadalajara"
@@ -402,6 +456,15 @@
     "kind": "news",
     "event": "YCS Guadalajara",
     "format": null,
+    "slug": "2019-ycs-guadalajara"
+  },
+  {
+    "title": "YCS Guadalajara: Saturday’s Top 4 Dragon Duelists",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-guadalajara-dragon-duel-saturday/",
+    "modified": "2019-09-28T16:58:44-07:00",
+    "kind": "news",
+    "event": "YCS Guadalajara",
+    "format": "Dragon Duel",
     "slug": "2019-ycs-guadalajara"
   }
 ]

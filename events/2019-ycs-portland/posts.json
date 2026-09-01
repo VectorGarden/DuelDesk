@@ -153,9 +153,9 @@
     "slug": "2019-ycs-portland"
   },
   {
-    "title": "QQ: What is Your Favorite Card from Rising Rampage?",
-    "url": "https://yugiohblog.konami.com/2019/ycs/qq-what-is-your-favorite-card-from-rising-rampage/",
-    "modified": "2019-08-25T10:06:15-07:00",
+    "title": "YCS Portland: Prize Wall",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-prize-wall/",
+    "modified": "2019-09-09T13:54:06-07:00",
     "kind": "news",
     "event": "YCS Portland",
     "format": null,
@@ -180,9 +180,18 @@
     "slug": "2019-ycs-portland"
   },
   {
-    "title": "QQ: What’s your favorite card in Fists of the Gadgets?",
-    "url": "https://yugiohblog.konami.com/2019/ycs/qq-whats-your-favorite-card-in-fists-of-the-gadgets/",
-    "modified": "2019-08-25T11:15:40-07:00",
+    "title": "YCS Portland: Dragon Duel Champion!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-dragon-duel-champion/",
+    "modified": "2019-08-25T17:49:59-07:00",
+    "kind": "result",
+    "event": "YCS Portland",
+    "format": "Dragon Duel",
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "QQ: What is Your Favorite Card from Rising Rampage?",
+    "url": "https://yugiohblog.konami.com/2019/ycs/qq-what-is-your-favorite-card-from-rising-rampage/",
+    "modified": "2019-08-25T10:06:15-07:00",
     "kind": "news",
     "event": "YCS Portland",
     "format": null,
@@ -207,9 +216,18 @@
     "slug": "2019-ycs-portland"
   },
   {
-    "title": "QQ: What was your Favorite Change to the F&L List?",
-    "url": "https://yugiohblog.konami.com/2019/ycs/qq-what-was-your-favorite-change-to-the-fl-list/",
-    "modified": "2019-08-25T14:13:33-07:00",
+    "title": "YCS Portland: Public Event Playoff Points Winner",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-public-event-playoff-points-winner/",
+    "modified": "2019-08-25T18:38:08-07:00",
+    "kind": "result",
+    "event": "YCS Portland",
+    "format": "Public Events",
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "QQ: What’s your favorite card in Fists of the Gadgets?",
+    "url": "https://yugiohblog.konami.com/2019/ycs/qq-whats-your-favorite-card-in-fists-of-the-gadgets/",
+    "modified": "2019-08-25T11:15:40-07:00",
     "kind": "news",
     "event": "YCS Portland",
     "format": null,
@@ -234,9 +252,18 @@
     "slug": "2019-ycs-portland"
   },
   {
-    "title": "YCS Portland: Top 16",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-16/",
-    "modified": "2019-08-25T12:30:20-07:00",
+    "title": "YCS Portland: Public Event Playoff Random Winner",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-public-event-playoff-random-winner/",
+    "modified": "2019-08-25T18:50:14-07:00",
+    "kind": "result",
+    "event": "YCS Portland",
+    "format": "Public Events",
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "QQ: What was your Favorite Change to the F&L List?",
+    "url": "https://yugiohblog.konami.com/2019/ycs/qq-what-was-your-favorite-change-to-the-fl-list/",
+    "modified": "2019-08-25T14:13:33-07:00",
     "kind": "news",
     "event": "YCS Portland",
     "format": null,
@@ -252,12 +279,48 @@
     "slug": "2019-ycs-portland"
   },
   {
+    "title": "YCS Portland: Sunday’s ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-sundays-attack-of-the-giant-card-winners/",
+    "modified": "2019-08-25T19:27:16-07:00",
+    "kind": "result",
+    "event": "YCS Portland",
+    "format": "Attack of the Giant Card",
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "YCS Portland: Top 16",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-16/",
+    "modified": "2019-08-25T12:30:20-07:00",
+    "kind": "news",
+    "event": "YCS Portland",
+    "format": null,
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "YCS Portland: Saturday’s ATTACK OF THE GIANT CARD!! Winners",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-saturdays-attack-of-the-giant-card-winners/",
+    "modified": "2019-08-24T19:15:57-07:00",
+    "kind": "result",
+    "event": "YCS Portland",
+    "format": "Attack of the Giant Card",
+    "slug": "2019-ycs-portland"
+  },
+  {
     "title": "QQ: How do you Like Legacy of the Duelist: Link Evolution so far?",
     "url": "https://yugiohblog.konami.com/2019/ycs/qq-how-do-you-like-legacy-of-the-duelist-link-evolution-so-far/",
     "modified": "2019-08-25T18:24:54-07:00",
     "kind": "news",
     "event": "YCS Portland",
     "format": null,
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "YCS Portland: Sunday’s Top 4 Dragon Duelists",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-sundays-top-4-dragon-duelists/",
+    "modified": "2019-08-25T13:50:16-07:00",
+    "kind": "news",
+    "event": "YCS Portland",
+    "format": "Dragon Duel",
     "slug": "2019-ycs-portland"
   },
   {
@@ -327,6 +390,24 @@
     "title": "VIP Deck Breakdown",
     "url": "https://yugiohblog.konami.com/2019/ycs/vip-deck-breakdown/",
     "modified": "2019-08-24T17:46:13-07:00",
+    "kind": "news",
+    "event": "YCS Portland",
+    "format": null,
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "YCS Portland: Saturday’s Top 4 Dragon Duelists",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-saturdays-top-4-dragon-duelists/",
+    "modified": "2019-08-24T17:50:36-07:00",
+    "kind": "news",
+    "event": "YCS Portland",
+    "format": "Dragon Duel",
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "YCS Portland: Top Tables Update: Round 8",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-tables-update-round-8/",
+    "modified": "2019-08-24T19:19:08-07:00",
     "kind": "news",
     "event": "YCS Portland",
     "format": null,
