@@ -210,7 +210,13 @@ def round_key(post) -> tuple[str, Any]:
 #     inside it and became the Final -- two matches in a round that holds one,
 #     which took the 2026 World Championship out of the archive the moment
 #     version 31 gave it that post.
-BUILD_VERSION = 32
+# 33: a name never moves a round. Version 31 gave a post to the event its slug
+#     names, rounds included, and the blog reprints tables under a second slug
+#     -- YCS Philadelphia's Top 64 is printed twice and the copy holds 63
+#     Duelists. It beat the good table on size and the event left the site;
+#     YCS Guadalajara lost two rounds the same way. A name says which event a
+#     post is about and nothing about whether its table is any good.
+BUILD_VERSION = 33
 
 
 @dataclass
