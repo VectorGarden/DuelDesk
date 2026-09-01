@@ -1219,6 +1219,27 @@
       "coverageBy": "Konami",
       "path": "events/2024-02-team-ycs-las-vegas-nv/rounds.json",
       "postCount": 65,
+      "champions": [
+        {
+          "format": null,
+          "name": "The Jawhari Brothers",
+          "deck": null,
+          "members": [
+            {
+              "name": "Christopher Jordan LeBlanc",
+              "deck": "Fire King Snake-Eye"
+            },
+            {
+              "name": "Hani Yasser Jawhari",
+              "deck": "Fire King Snake-Eye"
+            },
+            {
+              "name": "Hisam Yasser Jawhari",
+              "deck": "Snake-Eye"
+            }
+          ]
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1478,7 +1499,7 @@
     },
     {
       "slug": "2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event",
-      "event": "2023 Yu Gi Oh Tcg Remote Duel Extravaganza Main Event",
+      "event": "Remote Duel Extravaganza July 2023",
       "updated": "2023-07-30",
       "sample": false,
       "ongoing": false,
