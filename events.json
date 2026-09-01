@@ -3964,6 +3964,13 @@
       "coverageBy": "Konami",
       "path": "events/2013-south-american-wcq-championships/rounds.json",
       "postCount": 22,
+      "champions": [
+        {
+          "format": null,
+          "name": "Rogger Antonio Vera Moran",
+          "deck": "Machina Gadget"
+        }
+      ],
       "formats": [
         {
           "format": null,
