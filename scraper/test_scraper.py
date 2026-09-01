@@ -2461,11 +2461,14 @@ class TestChampion(unittest.TestCase):
                                      "Antonio Papa"]})
         self.assertEqual(got, "Ares")
 
-    def test_a_roster_does_not_settle_a_post_naming_both_teams(self):
+    def test_a_post_naming_both_teams_is_settled_by_the_crowning_sentence(self):
         # TEAM YCS Las Vegas 2024 names the winning team and, further down,
-        # the runner-up. Two candidates named and no "defeated" between them
-        # is a disagreement, and guessing at the first one would be the rule
-        # that cost YCS Guatemala City its champion.
+        # the runner-up. This used to be a disagreement and no champion, on
+        # the grounds that guessing at the first name is what cost YCS
+        # Guatemala City its champion.
+        #
+        # It is not a guess. The sentence doing the crowning names one team,
+        # and the other is in a different sentence saying it finished second.
         from winners import champion
         got = champion(
             ["Supreme Pro", "The Jawhari Brothers"],
@@ -2475,6 +2478,29 @@ class TestChampion(unittest.TestCase):
                        "Christopher LeBlanc! Supreme Pro finished second.")],
             rosters={"The Jawhari Brothers": ["Hani Yasser Jawhari", "Hisam Yasser Jawhari"],
                      "Supreme Pro": ["Hansel Erik Aguero", "Pakawat Thomas Pamornsut"]})
+        self.assertEqual(got, "The Jawhari Brothers")
+
+    def test_the_crowning_sentence_is_read_not_the_first_name(self):
+        # The guard the test above used to provide, kept: a post that names
+        # the runner-up first must not hand it the title. Here "Bo Beta" is
+        # named before "Ann Alpha" and the crowning sentence names Ann.
+        from winners import champion
+        got = champion(
+            ["Ann Alpha", "Bo Beta"],
+            [self.post("And the winner is…",
+                       "Bo Beta came into the Finals unbeaten. It was not to be: "
+                       "Ann Alpha is your newest YCS Champion!")])
+        self.assertEqual(got, "Ann Alpha")
+
+    def test_both_in_the_crowning_sentence_is_still_no_champion(self):
+        # "X over Y to become Champion" puts both in that one sentence and
+        # says nothing this rule can read. A guess is worse than no champion.
+        from winners import champion
+        got = champion(
+            ["Ann Alpha", "Bo Beta"],
+            [self.post("And the winner is…",
+                       "What a Match. Ann Alpha and Bo Beta are your YCS "
+                       "Champions and runner-up.")])
         self.assertIsNone(got)
 
     def test_a_singles_event_is_unchanged_by_rosters(self):
