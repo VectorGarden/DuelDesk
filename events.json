@@ -977,13 +977,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-10-cancun-mexico/rounds.json",
-      "postCount": 20,
+      "postCount": 22,
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
           "duelists": 373,
-          "rounds": 12
+          "rounds": 13
         }
       ]
     },
@@ -1716,13 +1716,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-250th-ycs-in-los-angeles/rounds.json",
-      "postCount": 30,
+      "postCount": 28,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 3225,
-          "rounds": 13
+          "rounds": 11
         }
       ]
     },
@@ -1735,7 +1735,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-250th-ycs-in-bogota-colombia/rounds.json",
-      "postCount": 26,
+      "postCount": 25,
       "champions": [
         {
           "format": null,
@@ -1747,7 +1747,7 @@
         {
           "format": null,
           "swissRounds": 11,
-          "duelists": 1126,
+          "duelists": 887,
           "rounds": 15
         }
       ]
