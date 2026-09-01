@@ -398,7 +398,24 @@ def detect_kind(text: str) -> str:
 
 
 # A column heading that names a result rather than a Duelist.
-_NOT_A_NAME = re.compile(r"(winner|result|score|record|outcome)\b", re.I)
+# A column heading that says the cell under it is not part of anybody's name.
+#
+# "deck" is here for the same table that put "winner" here. The 2013 World
+# Championship heads its cut
+#
+#   Table | Player 1 | VS. | Player 2 | | Winner | Deck
+#
+# and everything right of the divider was read as Player 2, so the deck was
+# appended to their name: "Shin En Dragon Rulers Huang" for a Duelist called
+# Shin En Huang. That is not a label a reader would forgive, and it cost the
+# event its champion -- both finalists matched the winner post on "Dragon
+# Rulers", which was never part of anybody's name.
+#
+# Where a deck column belongs to the Duelist beside it, it is read before this
+# and kept: that is the `decks` split above, which pairs each name with the
+# deck in its own half of the table. This one belongs to the winner of the
+# match rather than to either player, so there is nobody to give it to.
+_NOT_A_NAME = re.compile(r"(winner|result|score|record|outcome|deck)\b", re.I)
 
 
 _VS_CELL = ("vs.", "vs")

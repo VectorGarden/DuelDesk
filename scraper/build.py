@@ -240,7 +240,12 @@ def round_key(post) -> tuple[str, Any]:
 #     Qualifier winner!" and never says champion -- "Championship" there is the
 #     event's name -- so the sentence that crowned him said nothing this could
 #     read.
-BUILD_VERSION = 38
+# 39: a deck column is not a name. The 2013 World Championship heads its cut
+#     "Table | Player 1 | VS. | Player 2 | | Winner | Deck" and everything
+#     right of the divider was read as Player 2, so the deck landed in the
+#     middle of the name -- "Shin En Dragon Rulers Huang" -- and both
+#     finalists matched the winner post on "Dragon Rulers".
+BUILD_VERSION = 39
 
 
 @dataclass
