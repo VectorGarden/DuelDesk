@@ -8,13 +8,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-tcg-world-championship-2026/rounds.json",
-      "postCount": 18,
+      "postCount": 17,
       "formats": [
         {
           "format": null,
           "swissRounds": 7,
           "duelists": 30,
-          "rounds": 10
+          "rounds": 9
         }
       ]
     },
@@ -373,7 +373,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-02-300th-na/rounds.json",
-      "postCount": 157,
+      "postCount": 159,
       "champions": [
         {
           "format": "Advanced",
@@ -441,12 +441,12 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-ycs-merida-mexico/rounds.json",
-      "postCount": 28,
+      "postCount": 26,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
-          "duelists": 431,
+          "duelists": 414,
           "rounds": 12
         }
       ]
@@ -615,7 +615,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-central-america-wcq/rounds.json",
-      "postCount": 22,
+      "postCount": 23,
       "champions": [
         {
           "format": null,
@@ -627,7 +627,7 @@
         {
           "format": null,
           "swissRounds": 9,
-          "duelists": 426,
+          "duelists": 456,
           "rounds": 14
         }
       ]
@@ -635,17 +635,17 @@
     {
       "slug": "2025-south-america-wcq",
       "event": "South America WCQ 2025",
-      "updated": "2025-07-05",
+      "updated": "2025-06-08",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-south-america-wcq/rounds.json",
-      "postCount": 22,
+      "postCount": 21,
       "formats": [
         {
           "format": null,
           "swissRounds": 9,
-          "duelists": 456,
+          "duelists": 439,
           "rounds": 13
         }
       ]
@@ -1194,6 +1194,32 @@
       ]
     },
     {
+      "slug": "2024-ycs-guadalajara-mexico",
+      "event": "YCS Guadalajara",
+      "location": "Guadalajara, Mexico",
+      "updated": "2024-04-14",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2024-ycs-guadalajara-mexico/rounds.json",
+      "postCount": 25,
+      "champions": [
+        {
+          "format": null,
+          "name": "Cristian Rafael Urena",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 832,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "2024-ycs-medellin-colombia",
       "event": "YCS Medellin",
       "location": "Medellin, Colombia",
@@ -1628,6 +1654,31 @@
           "swissRounds": 10,
           "duelists": 942,
           "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2023-05-ycs-philadelphia",
+      "event": "YCS Philadelphia",
+      "updated": "2023-05-28",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2023-05-ycs-philadelphia/rounds.json",
+      "postCount": 107,
+      "champions": [
+        {
+          "format": null,
+          "name": "Denis Nadas",
+          "deck": "Kashtira"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 2396,
+          "rounds": 18
         }
       ]
     },
