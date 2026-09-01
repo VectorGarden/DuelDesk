@@ -598,6 +598,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-north-america-wcq/rounds.json",
       "postCount": 92,
+      "champions": [
+        {
+          "format": null,
+          "name": "Wilfredo Michael Flores",
+          "deck": "Bystial Fiendsmith Orcust"
+        }
+      ],
       "formats": [
         {
           "format": null,
