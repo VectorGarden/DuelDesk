@@ -109,6 +109,52 @@ jobs:
       - name: Check local references resolve
         run: python3 .github/scripts/check-references.py index.html winners.html winners/index.html
 
+  # The suite reads saved fixtures and the archive check reads the archive as
+  # committed, so nothing above opens a post. A change to how coverage is read
+  # is therefore untested against coverage until a rebuild runs -- and a
+  # rebuild commits and deploys each batch before its halt conditions are
+  # checked. Twice that has cost the live site an event: the 2026 World
+  # Championship, refused over a mislabelled semi-final, and YCS Philadelphia
+  # and YCS Guadalajara, refused over duplicate tables a new rule handed them.
+  #
+  # This rebuilds six events from live coverage and refuses the change if one
+  # of them stops being coherent. Only when the scraper is what changed: for
+  # any other pull request it is a fetch nobody needed.
+  rebuild-sample:
+    name: Rebuild a sample of events
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v7
+
+      - id: touched
+        name: Did this change the scraper?
+        run: |
+          base="origin/${{ github.base_ref }}"
+          git fetch --quiet --depth=1 origin "${{ github.base_ref }}"
+          if git diff --name-only "$base"...HEAD | grep -qE '^(scraper/|\.github/scripts/(check-rounds|rebuild-sample)\.py)'; then
+            echo "run=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=no" >> "$GITHUB_OUTPUT"
+            echo "The scraper is untouched, so there is nothing here to test."
+          fi
+
+      # Shared with the scrape workflow, which fills it every run. A cold cache
+      # means fetching 529 posts at the politeness delay, so the restore is what
+      # keeps this job to seconds rather than nine minutes -- hence the timeout
+      # below, which reports rather than hangs if it ever misses entirely.
+      - if: steps.touched.outputs.run == 'yes'
+        uses: actions/cache/restore@v6
+        with:
+          path: .scrape-state
+          key: scrape-state-${{ github.run_id }}
+          restore-keys: scrape-state-
+
+      - if: steps.touched.outputs.run == 'yes'
+        name: Rebuild six events and check them
+        timeout-minutes: 12
+        run: python3 .github/scripts/rebuild-sample.py
+
   deploy:
     name: Deploy to GitHub Pages
     needs: validate                     # never publish a build that failed its checks
