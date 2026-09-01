@@ -3346,6 +3346,11 @@
           "format": "Dragon Duel",
           "name": "Rafael Mariano Reich",
           "deck": "Zoodiac"
+        },
+        {
+          "format": null,
+          "name": "Rafael Jose Rodrigues de Souza",
+          "deck": "Zoodiac"
         }
       ],
       "formats": [
@@ -3611,6 +3616,13 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-rio-de-janeiro/rounds.json",
       "postCount": 27,
+      "champions": [
+        {
+          "format": null,
+          "name": "Galileo Mauricio De Obaldia Soza",
+          "deck": "ABC"
+        }
+      ],
       "formats": [
         {
           "format": null,
