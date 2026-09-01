@@ -135,6 +135,25 @@ def _text(fragment: str) -> str:
             .replace("\xa0", " ").translate(_INVISIBLE).strip())
 
 
+# A title written into the name after a dash, which 2013's Central American
+# coverage does: "Campos Valverde, Jorge Luis - Costa Rican Champion". Six
+# names in the archive, 47 rows.
+#
+# Only where the annotation says "Champion". #113 warned that reading whatever
+# follows a dash cuts a real surname in half, and the archive proves it: of 68
+# names holding a dash, 62 are a team -- "Nguyen - Tamez - Cebrian", "Council
+# of Robina - Walmart Edition" -- or a surname, "Jesus Correa - Moreira". Six
+# say Champion, and those six are the mangled ones.
+_TITLE_AFTER_DASH = re.compile(r"\s*[-–—]\s*([^,()]*?\bchampions?\b[^,()]*?)\s*(?=$|[,(])", re.I)
+
+
+def strip_title(name: str) -> tuple[str, str | None]:
+    """'Jorge Luis - Costa Rican Champion' -> ('Jorge Luis', 'Costa Rican Champion')."""
+    if not (m := _TITLE_AFTER_DASH.search(name)):
+        return name, None
+    return (name[:m.start()] + name[m.end():]).strip(), m.group(1).strip()
+
+
 def strip_region(name: str) -> tuple[str, str | None]:
     """'Philip DEU' -> ('Philip', 'DEU'). Leaves ordinary names alone.
 
@@ -150,15 +169,22 @@ def strip_region(name: str) -> tuple[str, str | None]:
     codes. At least one token is always kept, so a name that is nothing but such
     a token survives intact.
     """
+    # Written out in words before it is looked for in capitals. A country or a
+    # title spelled out survives every rule below, which reads only two- and
+    # three-letter codes, and normalise_name then swaps the comma and leaves it
+    # in the middle of the name.
+    name, spelt = strip_country(name)
+    if spelt is None:
+        name, spelt = strip_title(name)
     tokens = _ANNOTATION.sub(" ", name).strip().split()
     if not tokens:
-        return "", None
+        return "", spelt
     is_code = lambda t: bool(_REGION_TOKEN.fullmatch(t)) and t not in _NAME_SUFFIXES
     codes = [t for t in tokens if is_code(t)]
     kept = [t for t in tokens if not is_code(t)]
     if not kept:                      # the whole name looked like a code
-        return " ".join(tokens), None
-    return " ".join(kept), (codes[0] if codes else None)
+        return " ".join(tokens), spelt
+    return " ".join(kept), (codes[0] if codes else spelt)
 
 
 def split_status(cell: str) -> tuple[str | None, int | None]:
@@ -949,7 +975,27 @@ _PARENS = re.compile(r"^(.*?)\s*\(([^)]*)\)")
 
 # "De Obaldia Soza, Galileo Mauricio from Panama (ABC)" -- the country written
 # out, in the middle of the side rather than in the bracket.
-_FROM_COUNTRY = re.compile(r"\s+from\s+[A-Z][^,()]*$")
+# A country written out after the name, which South American coverage does:
+# "Lopes de Aguiar, Renato from Brazil". Read out of prose since #112 and never
+# out of a table cell, where strip_region -- which knows only two- and
+# three-letter codes -- let it through. normalise_name then swapped the comma
+# and left the country in the middle of the name: "Renato from Brazil Lopes de
+# Aguiar", 846 times across a dozen events.
+#
+# A Duelist written both ways counts as two people in their own event's
+# records, and the mangled spelling is the longer one, so it wins the fold.
+#
+# The word "from" is what makes this safe. #113 warned that a rule taking
+# whatever follows a dash cuts a real surname in half -- "Jesus Correa -
+# Moreira" is one name -- and nothing here reads a dash.
+_FROM_COUNTRY = re.compile(r"\s+from\s+([A-Z][^,()]*?)\s*(?=$|[,(])")
+
+
+def strip_country(name: str) -> tuple[str, str | None]:
+    """'Renato from Brazil' -> ('Renato', 'Brazil'). Leaves the rest alone."""
+    if not (m := _FROM_COUNTRY.search(name)):
+        return name, None
+    return (name[:m.start()] + name[m.end():]).strip(), m.group(1).strip()
 
 # A round written as a chain with no "Table N" to cut it at:
 #

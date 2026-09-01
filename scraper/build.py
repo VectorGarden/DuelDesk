@@ -229,7 +229,13 @@ def round_key(post) -> tuple[str, Any]:
 #     for a nested one: YCS Chicago's winner post returned 140 characters of a
 #     312KB page, stopping before the winner's name, and an empty body looks
 #     exactly like a post made of images.
-BUILD_VERSION = 36
+# 37: a country is not part of a name. South American coverage writes "Lopes de
+#     Aguiar, Renato from Brazil" and 2013's Central American coverage writes a
+#     title after a dash; strip_region knew only two- and three-letter codes,
+#     so both survived and normalise_name swapped the comma around them. 846
+#     rows carried a country in the middle of a name and 47 a title, and a
+#     Duelist written both ways counted as two people in their own records.
+BUILD_VERSION = 37
 
 
 @dataclass
