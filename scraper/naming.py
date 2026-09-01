@@ -207,12 +207,43 @@ def event_name(titles: list[str], fallback: str) -> str:
 # only in spelling.
 _REGIONS = ((r"\bnawcq\b|\bnorth american?\b", "North America"),
             (r"\bcentral american?\b", "Central America"),
-            (r"\bsouth american?\b", "South America"))
+            (r"\bsouth american?\b", "South America"),
+            # Written out first, abbreviated after, so a slug that says the
+            # region in full is never read off two letters somewhere else in
+            # it. Three qualifiers say it only this way and had no region at
+            # all: "WCQ CA", "SA WCQ", and one named for the country it was
+            # held in.
+            #
+            # Safe because a qualifier is the only thing that reaches here --
+            # the blog runs these for Central, South and North America and
+            # nothing else, so on a WCQ two letters can mean only one thing.
+            # "ca" is Central America here and not California.
+            (r"\bca\b", "Central America"),
+            (r"\bsa\b", "South America"),
+            (r"\bna\b", "North America"),
+            # Mexico's qualifier is the Central American one. The archive has
+            # every year from 2012 to 2026 except 2014 and 2016, and these two
+            # events are those years: the 2014 one calls itself "WCQ CA" and
+            # the 2016 one names the country instead of the region.
+            (r"\bmexico\b", "Central America"))
 # "nawcq" as well, which _REGIONS already reads as North America and this
 # refused to let through: the 2024 qualifier published its Swiss rounds as
 # "north-america-wcq-..." and its top cut as "nawcq-...", and the two halves
 # came out as two tournaments three days apart.
-_IS_WCQ = re.compile(r"\b(?:na|n)?wcq\b|world championship qualifier", re.I)
+# What the qualifier has been called. "WCQ" and "World Championship Qualifier"
+# are the current names; before 2023 the same event was the region's Yu-Gi-Oh!
+# TCG Championship, and its North American leg is filed under the initials of
+# that older name. All three regions ran one in 2022 and the archive has no
+# 2022 qualifier for any of them, which is those three events.
+#
+# The championship pattern carries the region inside it. That is narrowness for
+# its own sake rather than a load-bearing guard: the World Championship is
+# already out of reach because "World" stands between "TCG" and "Championship",
+# and an event matching without a region would find none below and return None
+# anyway. No test can tell the two versions apart, and mutating the region out
+# of this pattern does not go red.
+_IS_WCQ = re.compile(r"\b(?:na|n)?wcq\b|world championship qualifier"
+                     r"|\bygoc\b|americ\w* yu gi oh!? tcg championship", re.I)
 _YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
 
 # Words that say what kind of event this is rather than where it was. A slug

@@ -3550,6 +3550,84 @@ class TestQualifierAbbreviation(unittest.TestCase):
         self.assertEqual(wcq_name("2024-nawcq", "", "2024-07-22"),
                          "North America WCQ 2024")
 
+    def test_a_qualifier_that_abbreviates_its_region(self):
+        # Three qualifiers name their region only in the short form, or by the
+        # country instead, and so had no region at all: they went to the site
+        # as "WCQ CA", "SA WCQ" and "WCQ Mexico".
+        #
+        # Two letters are enough here because a qualifier is the only thing
+        # that reaches this function, and the blog runs these for Central,
+        # South and North America and nothing else -- so "ca" is Central
+        # America and not California.
+        from naming import wcq_name
+        self.assertEqual(wcq_name("2014-wcq-ca", "WCQ CA", "2014-07-06"),
+                         "Central America WCQ 2014")
+        self.assertEqual(wcq_name("2016-sa-wcq", "SA WCQ", "2016-06-19"),
+                         "South America WCQ 2016")
+        # Mexico's qualifier is the Central American one. The archive holds
+        # every year from 2012 to 2026 except 2014 and 2016, and these two
+        # events are exactly those years.
+        self.assertEqual(wcq_name("wcq-2016-mexico", "WCQ Mexico", "2016-06-11"),
+                         "Central America WCQ 2016")
+
+    def test_the_qualifier_under_its_older_name(self):
+        # Before 2023 the same event was the region's Yu-Gi-Oh! TCG
+        # Championship, and its North American leg is filed under the initials
+        # of that older name. All three regions ran one in 2022 and the
+        # archive had no 2022 qualifier for any of them.
+        from naming import wcq_name
+        self.assertEqual(wcq_name("na-ygoc-2022", "Na Ygoc 2022", "2022-07-22"),
+                         "North America WCQ 2022")
+        self.assertEqual(
+            wcq_name("central-america-yu-gi-oh-tcg-championship-2022",
+                     "Central America Yu-Gi-Oh! TCG Championship 2022", "2022-06-19"),
+            "Central America WCQ 2022")
+        self.assertEqual(
+            wcq_name("south-america-yu-gi-oh-tcg-championship-2022",
+                     "South America Yu-Gi-Oh! TCG Championship 2022", "2022-06-26"),
+            "South America WCQ 2022")
+
+    def test_the_world_championship_is_not_a_qualifier(self):
+        # It is the same words with "World" in the middle of them, and
+        # wcq_name is asked first. Claiming it here would take the event away
+        # from worlds_name.
+        from naming import wcq_name, canonical_name
+        self.assertIsNone(wcq_name("yu-gi-oh-tcg-world-championship-2024",
+                                   "Yu-Gi-Oh! TCG World Championship 2024", "2024-08-25"))
+        self.assertEqual(
+            canonical_name("Yu-Gi-Oh! TCG World Championship 2024",
+                           "yu-gi-oh-tcg-world-championship-2024", "2024-08-25")[0],
+            "World Championship 2024")
+
+    def test_another_championship_beside_it_is_not_a_qualifier(self):
+        # The Genesys and Dragon Duel championships run alongside and are not
+        # the qualifier.
+        from naming import wcq_name
+        for slug, name in (
+                ("2026-central-america-genesys-championship",
+                 "Central America Genesys Championship"),
+                ("2026-south-america-dragon-duel-championship",
+                 "South America Dragon Duel Championship")):
+            self.assertIsNone(wcq_name(slug, name, "2026-06-08"), slug)
+
+    def test_the_renamed_qualifier_is_still_found_by_its_initials(self):
+        # The site's event search matches on initials, so "NAWCQ" has to keep
+        # finding an event whose coverage never used the word. This is the
+        # rule app.js implements; if it changes there, this says so.
+        name = "North America WCQ 2022"
+        words = [w for w in name.split() if any(c.isalpha() for c in w)]
+        initials = "".join(w if len(w) > 1 and w == w.upper() else w[0]
+                           for w in words).lower()
+        self.assertEqual(initials, "nawcq")
+
+    def test_the_region_written_out_beats_two_letters_elsewhere(self):
+        # Order matters: a slug that says the region in full must never be
+        # read off two letters somewhere else in it.
+        from naming import wcq_name
+        self.assertEqual(
+            wcq_name("2026-south-america-wcq-ca-final", "South America WCQ", "2026-06-28"),
+            "South America WCQ 2026")
+
     def test_a_word_merely_ending_in_wcq_is_not_a_qualifier(self):
         from naming import wcq_name
         self.assertIsNone(wcq_name("2024-showcq", "", "2024-07-22"))
@@ -6717,8 +6795,14 @@ class TestTheEventListReadsAsNames(unittest.TestCase):
         # An event type written as initials is kept and the rest read as the
         # place. Any other word about the event is more than the guess should
         # overrule, so those slugs keep the fallback: "winter invitational" is
-        # not a city, and neither is "ygoc".
-        for slug in ("na-ygoc-2022", "201703-uds-winter-invitational-las-vegas"):
+        # not a city, and neither is "undisputed".
+        #
+        # This used to be checked with "na-ygoc-2022", which is no longer an
+        # example of anything: YGOC is what the North America qualifier was
+        # called before 2023, so that slug is now answered by wcq_name long
+        # before a place is guessed at.
+        for slug in ("2024-undisputed-uds-championship",
+                     "201703-uds-winter-invitational-las-vegas"):
             fallback = slug.replace("-", " ").title()
             self.assertEqual(self.name(fallback, slug, named=False), fallback, slug)
 
