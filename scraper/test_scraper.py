@@ -2684,6 +2684,33 @@ class TestChampion(unittest.TestCase):
                      "Supreme Pro": ["Hansel Erik Aguero", "Pakawat Thomas Pamornsut"]})
         self.assertEqual(got, "The Jawhari Brothers")
 
+    def test_a_post_may_crown_a_winner_rather_than_a_champion(self):
+        # The 2025 North America WCQ crowns with "winner" and never says
+        # champion: "Championship" in that sentence is the event's name.
+        from winners import crowning, champion
+        text = ("We have our North America WCQ Winner! Emerging from 2,838 "
+                "Duelists, Wilfredo Flores is the North America World "
+                "Championship Qualifier winner! He had an intense battle "
+                "against last year's winner, Aditya Dharap.")
+        self.assertIn("Wilfredo Flores", crowning(text))
+        got = champion(["Aditya Shirish Dharap", "Wilfredo Michael Flores"],
+                       [self.post("And the Winner is…", text)])
+        self.assertEqual(got, "Wilfredo Michael Flores")
+
+    def test_last_years_winner_is_not_this_years(self):
+        # The same post names the runner-up as "last year's winner" two
+        # sentences on. A sentence has to crown somebody, not merely say the
+        # word.
+        from winners import crowning
+        said = crowning("He had an intense battle against last year's winner, "
+                        "Aditya Dharap and his Bystial Deck.")
+        self.assertEqual(said, "")
+
+    def test_a_champion_is_still_crowned(self):
+        from winners import crowning
+        self.assertIn("Anderson Tsang",
+                      crowning("Anderson Tsang is your newest YCS Champion!"))
+
     def test_the_roll_call_names_the_winner_first(self):
         # A winner post often crowns somebody and then lists the placings
         # behind them. Everyone after "the rest of the Top 4" came second or
