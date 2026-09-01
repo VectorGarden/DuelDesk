@@ -24,7 +24,7 @@ from dataclasses import dataclass, asdict
 from datetime import date
 
 from naming import wcq_name
-from parse import detect_format, detect_kind, detect_round
+from parse import coverage_format, detect_format, detect_kind, detect_round
 from winners import SIDE_EVENT
 
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -553,7 +553,64 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
 
     for rec, ev in _by_date(out, disc, within, owners):
         rec["event"], rec["event_confidence"] = ev, "discovered+date"
+
+    # Last of all, and the only rule here that overrules another: a post whose
+    # slug opens with an event's own name, in that event's own year, belongs to
+    # that event whatever a date said about it.
+    #
+    # A date is what the blog last edited a post, not when the event was, and
+    # an edit months later moves the post to whichever event was running that
+    # week. YCS Chicago's winner post is dated four months after the event and
+    # went to YCS Knoxville; YCS Mexico City's went to YCS Providence. Neither
+    # crowned the wrong Duelist, but only because the names in them happened
+    # not to be in the receiving event's cut.
+    for rec, ev in _named_outright(out, {**profiles, **disc}):
+        rec["event"], rec["event_confidence"] = ev, "name"
     return out
+
+
+# An event's slug with any leading date taken off -- "2019-ycs-chicago" is
+# written "ycs-chicago" by the posts that name it.
+_DATE_PREFIX = re.compile(r"^(?:(?:19|20)?\d{2})(?:-?\d{2})?-")
+
+
+def _named_outright(records: list[dict], profiles: dict[str, Profile]):
+    """Posts whose slug opens with one event's name, and that event.
+
+    The whole name, contiguous, at the front, and in the event's own year --
+    not a word of it somewhere in the middle. A rule reading single words
+    matched "round-4-feature-match-austin-ruggeri-versus..." to the Austin
+    event on the Duelist's forename, and moved fourteen hundred posts.
+    """
+    year_of = {s: p.window[0][:4] for s, p in profiles.items()}
+    names: dict[str, set[str]] = defaultdict(set)
+    for slug in profiles:
+        # Long enough to be a name. "12-04" is a date, not an event.
+        if len(bare := _DATE_PREFIX.sub("", slug)) > 6:
+            names[bare].add(slug)
+
+    for rec in records:
+        year = str(rec.get("year") or "")
+        opens = [(bare, slug) for bare, owners in names.items()
+                 if rec["slug"].startswith(bare + "-")
+                 for slug in owners if year_of.get(slug) == year]
+        if len(opens) != 1 or rec["event"] == opens[0][1]:
+            continue
+        bare, slug = opens[0]
+        # What the post says about itself after its event's name. A side event
+        # the builder keeps as its own tournament is welcome -- the Dragon
+        # Duel's champion belongs to the Dragon Duel. One it does not separate
+        # would land in the main event's bracket, and
+        # "ycs-houston-speed-duel-main-event-series-top-8" is a Top 8 that
+        # event never played.
+        #
+        # Read past the name, not across it: SIDE_EVENT matches "invitational",
+        # which is half of what a UDS Invitational is called, and reading the
+        # whole slug threw away that event's own rounds.
+        rest = rec["slug"][len(bare) + 1:].replace("-", " ")
+        if SIDE_EVENT.search(rest) and coverage_format(rest, None) is None:
+            continue
+        yield rec, slug
 
 
 def _discovered_profiles(records: list[dict]) -> dict[str, Profile]:
