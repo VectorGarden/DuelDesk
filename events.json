@@ -2612,10 +2612,17 @@
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-medellin-colombia/rounds.json",
       "postCount": 26,
+      "champions": [
+        {
+          "format": null,
+          "name": "Paulo Roberto Goncalves da Silva",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
-          "swissRounds": 14,
+          "swissRounds": 12,
           "duelists": 142,
           "rounds": 13
         }
@@ -2630,10 +2637,31 @@
       "coverageBy": "Konami",
       "path": "events/2019-03-atlanta-ga/rounds.json",
       "postCount": 54,
+      "champions": [
+        {
+          "format": null,
+          "name": "Team TCG Collectibles Fala Galera",
+          "deck": null,
+          "members": [
+            {
+              "name": "Michel Verissimo Da Silva Luiz",
+              "deck": null
+            },
+            {
+              "name": "Paulo Roberto Goncalves da Silva",
+              "deck": null
+            },
+            {
+              "name": "Hector Lorenzo Perez Herrera",
+              "deck": null
+            }
+          ]
+        }
+      ],
       "formats": [
         {
           "format": null,
-          "swissRounds": 13,
+          "swissRounds": 11,
           "duelists": 558,
           "rounds": 13
         }
