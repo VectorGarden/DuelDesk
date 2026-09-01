@@ -2480,6 +2480,46 @@ class TestChampion(unittest.TestCase):
                      "Supreme Pro": ["Hansel Erik Aguero", "Pakawat Thomas Pamornsut"]})
         self.assertEqual(got, "The Jawhari Brothers")
 
+    def test_winning_the_final_is_called_victory_against(self):
+        # YCS Seattle crowns nobody in the form CROWNS reads -- "we finally
+        # have a Champion!" is not "is your Champion" -- so the crowning
+        # sentence is empty and both finalists are named. What separates them
+        # is the sentence describing the final.
+        from winners import champion
+        got = champion(
+            ["Alexis Roberto Rodriguez Jimenez", "Noah Reid Greene"],
+            [self.post("YCS Seattle: Champion",
+                       "Coming out ahead of 851 other Duelists, we finally have a "
+                       "Champion! Alexis Rodriguez is taking home the title, the "
+                       "trophy, and an Ultra Rare Number 93: Utopia Kaiser! He "
+                       "piloted his Kaiju Zoodiac Deck to victory against Noah "
+                       "Greene's Artifact Zoodiac Deck.")])
+        self.assertEqual(got, "Alexis Roberto Rodriguez Jimenez")
+
+    def test_the_loser_is_named_as_the_loser(self):
+        # Two ways the blog says it, both of which put the winner first.
+        from winners import champion
+        for tail in ("In second place was Bo Beta.", "Runner-up: Bo Beta."):
+            got = champion(
+                ["Ann Alpha", "Bo Beta"],
+                [self.post("And the winner is…",
+                           f"Our new Champion is Ann Alpha of Chile! {tail}")])
+            self.assertEqual(got, "Ann Alpha", tail)
+
+    def test_a_match_at_another_event_is_not_this_final(self):
+        # YCS San Diego's winner post says the champion "had an epic Match
+        # against his own brother at YCS Dallas, but his brother took the
+        # title that time". A bare "against" sits exactly where this rule
+        # looks and is about a different tournament a year earlier, so it is
+        # not a marker. Here it would hand the title to the wrong Duelist.
+        from winners import champion
+        got = champion(
+            ["Ann Alpha", "Bo Beta"],
+            [self.post("And the winner is…",
+                       "Bo Beta had an epic Match against Ann Alpha at YCS Dallas "
+                       "last year. This year the trophy went elsewhere.")])
+        self.assertIsNone(got)
+
     def test_the_crowning_sentence_is_read_not_the_first_name(self):
         # The guard the test above used to provide, kept: a post that names
         # the runner-up first must not hand it the title. Here "Bo Beta" is
