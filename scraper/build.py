@@ -206,7 +206,11 @@ def round_key(post) -> tuple[str, Any]:
 #     months later moved the post to whichever event ran that week: YCS
 #     Chicago's winner post went to YCS Knoxville, YCS Mexico City's to YCS
 #     Providence. 38 posts move and 229 that had no event at all are placed.
-BUILD_VERSION = 31
+# 32: a semi-final is the Top 4. "Semi-Finals pairings" matched the "finals"
+#     inside it and became the Final -- two matches in a round that holds one,
+#     which took the 2026 World Championship out of the archive the moment
+#     version 31 gave it that post.
+BUILD_VERSION = 32
 
 
 @dataclass
