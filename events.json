@@ -1032,7 +1032,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-08-ycs-sacramento/rounds.json",
-      "postCount": 64,
+      "postCount": 66,
       "champions": [
         {
           "format": null,
@@ -1125,7 +1125,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-ycs-indianapolis/rounds.json",
-      "postCount": 67,
+      "postCount": 69,
       "champions": [
         {
           "format": null,
@@ -1176,7 +1176,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-ycs-raleigh/rounds.json",
-      "postCount": 70,
+      "postCount": 75,
       "champions": [
         {
           "format": null,
@@ -1190,32 +1190,6 @@
           "swissRounds": 11,
           "duelists": 1637,
           "rounds": 15
-        }
-      ]
-    },
-    {
-      "slug": "2024-ycs-guadalajara-mexico",
-      "event": "YCS Guadalajara",
-      "location": "Guadalajara, Mexico",
-      "updated": "2024-04-14",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2024-ycs-guadalajara-mexico/rounds.json",
-      "postCount": 26,
-      "champions": [
-        {
-          "format": null,
-          "name": "Cristian Rafael Urena",
-          "deck": null
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 10,
-          "duelists": 832,
-          "rounds": 14
         }
       ]
     },
@@ -1375,7 +1349,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-richmond/rounds.json",
-      "postCount": 56,
+      "postCount": 57,
       "champions": [
         {
           "format": null,
@@ -1425,7 +1399,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-ycs-indianapolis/rounds.json",
-      "postCount": 63,
+      "postCount": 65,
       "champions": [
         {
           "format": null,
@@ -1565,7 +1539,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-north-america-wcq/rounds.json",
-      "postCount": 82,
+      "postCount": 85,
       "champions": [
         {
           "format": null,
@@ -1590,7 +1564,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-south-america-wcq/rounds.json",
-      "postCount": 34,
+      "postCount": 35,
+      "champions": [
+        {
+          "format": null,
+          "name": "Santiago Marin Lopez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -1608,7 +1589,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-north-america-remote-duel-ycs/rounds.json",
-      "postCount": 35,
+      "postCount": 37,
       "champions": [
         {
           "format": null,
@@ -1651,31 +1632,6 @@
       ]
     },
     {
-      "slug": "2023-05-ycs-philadelphia",
-      "event": "YCS Philadelphia",
-      "updated": "2023-05-28",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2023-05-ycs-philadelphia/rounds.json",
-      "postCount": 107,
-      "champions": [
-        {
-          "format": null,
-          "name": "Denis Nadas",
-          "deck": "Kashtira"
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 12,
-          "duelists": 2396,
-          "rounds": 18
-        }
-      ]
-    },
-    {
       "slug": "2023-ycs-santiago-chile",
       "event": "YCS Santiago",
       "location": "Santiago, Chile",
@@ -1709,13 +1665,13 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-250th-ycs-in-los-angeles/rounds.json",
-      "postCount": 28,
+      "postCount": 30,
       "formats": [
         {
           "format": null,
           "swissRounds": 12,
           "duelists": 3225,
-          "rounds": 11
+          "rounds": 13
         }
       ]
     },
@@ -1723,17 +1679,24 @@
       "slug": "2023-250th-ycs-in-bogota-colombia",
       "event": "250th YCS in Bogota",
       "location": "250th YCS in Bogota, Colombia",
-      "updated": "2023-04-02",
+      "updated": "2023-04-03",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-250th-ycs-in-bogota-colombia/rounds.json",
-      "postCount": 24,
+      "postCount": 26,
+      "champions": [
+        {
+          "format": null,
+          "name": "Esteban Velasquez Prieto",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
           "swissRounds": 11,
-          "duelists": 887,
+          "duelists": 1126,
           "rounds": 15
         }
       ]
@@ -1772,7 +1735,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-team-ycs-las-vegas/rounds.json",
-      "postCount": 30,
+      "postCount": 33,
       "formats": [
         {
           "format": null,
@@ -1858,7 +1821,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-ycs-minneapolis/rounds.json",
-      "postCount": 62,
+      "postCount": 65,
       "champions": [
         {
           "format": null,
@@ -1922,7 +1885,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-ycs-niagara-falls/rounds.json",
-      "postCount": 63,
+      "postCount": 68,
       "champions": [
         {
           "format": null,

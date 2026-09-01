@@ -243,6 +243,15 @@
     "slug": "2023-team-ycs-las-vegas"
   },
   {
+    "title": "TEAM YCS Las Vegas Dragon Duel Champion",
+    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-las-vegas-dragon-duel-champion-2/",
+    "modified": "2023-02-20T22:22:33-08:00",
+    "kind": "result",
+    "event": "TEAM YCS Las Vegas",
+    "format": "Dragon Duel",
+    "slug": "2023-team-ycs-las-vegas"
+  },
+  {
     "title": "3rd Place Match: Adrian Gonzalez (Team Joel White’s Insurance Agents) vs. Chester Hensen (Team Kentucky Boyz)",
     "url": "https://yugiohblog.konami.com/2023/ycs/3rd-place-match-adrian-gonzalez-team-joel-whites-insurance-agents-vs-chester-hensen-team-kentucky-boyz/",
     "modified": "2023-02-20T23:51:18-08:00",
@@ -261,10 +270,28 @@
     "slug": "2023-team-ycs-las-vegas"
   },
   {
+    "title": "TEAM YCS Las Vegas Giant Cards",
+    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-las-vegas-giant-cards/",
+    "modified": "2023-02-19T00:27:09-08:00",
+    "kind": "news",
+    "event": "TEAM YCS Las Vegas",
+    "format": null,
+    "slug": "2023-team-ycs-las-vegas"
+  },
+  {
     "title": "Top 4 Feature Match: Stephen Silverman (Team Back For Seconds) vs. Joseph Gold (Team Kentucky Boyz)",
     "url": "https://yugiohblog.konami.com/2023/ycs/top-4-feature-match-stephen-silverman-team-back-for-seconds-vs-joseph-gold-kentucky-boyz/",
     "modified": "2023-02-20T23:54:39-08:00",
     "kind": "feature",
+    "event": "TEAM YCS Las Vegas",
+    "format": null,
+    "slug": "2023-team-ycs-las-vegas"
+  },
+  {
+    "title": "TEAM YCS Las Vegas Tech Update",
+    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-las-vegas-tech-update-2/",
+    "modified": "2023-02-19T13:55:24-08:00",
+    "kind": "news",
     "event": "TEAM YCS Las Vegas",
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
