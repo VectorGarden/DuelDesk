@@ -216,7 +216,11 @@ def round_key(post) -> tuple[str, Any]:
 #     Duelists. It beat the good table on size and the event left the site;
 #     YCS Guadalajara lost two rounds the same way. A name says which event a
 #     post is about and nothing about whether its table is any good.
-BUILD_VERSION = 33
+# 34: the Genesys Championship names its region. Each region runs one; Central
+#     and South America name theirs in their own coverage and North America's
+#     calls itself just "Genesys Championship", so it sat on the front page
+#     beside two that say where they were and did not.
+BUILD_VERSION = 34
 
 
 @dataclass
