@@ -2337,6 +2337,59 @@ class TestTLS(unittest.TestCase):
             self.assertNotIn(bad, src, f"fetch.py must never {bad}")
 
 
+class TestASpeltOutRegion(unittest.TestCase):
+    """A country or a title written in words, not in a two-letter code."""
+
+    def test_a_country_after_from_leaves_the_name(self):
+        # South American coverage writes "Lopes de Aguiar, Renato from Brazil".
+        # strip_region knows only capitalised codes, so the country survived
+        # and normalise_name swapped the comma around it: "Renato from Brazil
+        # Lopes de Aguiar", 846 rows across a dozen events.
+        from parse import strip_region, normalise_name
+        name, region = strip_region("Lopes de Aguiar, Renato from Brazil")
+        self.assertEqual(normalise_name(name), "Renato Lopes de Aguiar")
+        self.assertEqual(region, "Brazil")
+
+    def test_a_title_after_a_dash_leaves_the_name(self):
+        from parse import strip_region, normalise_name
+        name, region = strip_region("Campos Valverde, Jorge Luis - Costa Rican Champion")
+        self.assertEqual(normalise_name(name), "Jorge Luis Campos Valverde")
+        self.assertEqual(region, "Costa Rican Champion")
+
+    def test_a_dash_that_is_part_of_a_name_is_left_alone(self):
+        # #113's warning, and the archive proves it: of 68 names holding a
+        # dash, 62 are a team or a surname and six say "Champion". Only the six
+        # are read.
+        #
+        # "D1 TCG - Colors" is not among these: the all-caps rule below takes
+        # its TCG for a region code, which it did before this and is a
+        # different argument.
+        from parse import strip_region
+        for whole in ("Jesus Correa - Moreira",
+                      "Admassu Williams - Ademe",
+                      "Nguyen - Tamez - Cebrian",
+                      "Council of Robina - Walmart Edition"):
+            self.assertEqual(strip_region(whole), (whole, None), whole)
+
+    def test_the_word_from_inside_a_name_is_not_an_annotation(self):
+        from parse import strip_region
+        self.assertEqual(strip_region("Fromage, Pierre"), ("Fromage, Pierre", None))
+
+    def test_a_two_letter_code_still_works(self):
+        from parse import strip_region
+        self.assertEqual(strip_region("Philip DEU"), ("Philip", "DEU"))
+        self.assertEqual(strip_region("Joshua Aaron TX Jones"), ("Joshua Aaron Jones", "TX"))
+
+    def test_both_spellings_of_one_Duelist_fold_together(self):
+        # The point of the fix: a Duelist written both ways counted as two
+        # people in their own event's records, and the mangled spelling is the
+        # longer one, so it won the fold.
+        from parse import strip_region, normalise_name
+        annotated, _ = strip_region("Rodrigues de Souza, Rafael Jose from Brazil")
+        plain, _ = strip_region("Rodrigues de Souza, Rafael Jose")
+        self.assertEqual(normalise_name(annotated), normalise_name(plain))
+
+
 class TestAnnotatedNames(unittest.TestCase):
     """Some standings tables put a player ID and status inside the name cell."""
 
