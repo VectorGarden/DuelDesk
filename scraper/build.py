@@ -189,7 +189,14 @@ def round_key(post) -> tuple[str, Any]:
 #     name was its slug title-cased -- "2023 Yu Gi Oh Tcg Remote Duel
 #     Extravaganza Main Event". Named for its month like the Remote Duel YCS
 #     beside it, which is what the blog's own welcome post calls it.
-BUILD_VERSION = 28
+# 29: a bracket labelled as Swiss rounds is still a bracket. Team YCS Atlanta
+#     numbers all fourteen of its rounds and its winner post says what they
+#     were -- ten Swiss and four of single elimination. With no cut round the
+#     archive had nobody to ask about a champion and no team match to read a
+#     roster from. And a team named inside another team's name is not
+#     independently named: its Top 4 holds both "TCG Collectibles" and "Team
+#     TCG Collectibles Fala Galera".
+BUILD_VERSION = 29
 
 
 @dataclass
@@ -544,6 +551,52 @@ def disambiguate(sources: list[Source]) -> tuple[set[str], set[str]]:
     return shared, ambiguous
 
 
+def relabel_the_swiss_tail(by_round: dict) -> None:
+    """A bracket the blog numbered like Swiss rounds.
+
+    Team YCS Atlanta publishes fourteen rounds and calls every one of them a
+    round. Its own winner post says what they were:
+
+        After 10 rounds of Swiss and 4 rounds of Single Elimination, Team TCG
+        Collectibles Fala Galera ... bested all other teams
+
+    Swiss does not halve. These do -- 4 matches then 2 -- and a run that halves
+    down to a bracket at the end of an event with no cut at all is that
+    event's cut, whatever its rounds were called. Left as Swiss, the archive
+    had no cut round, so it had nobody to ask about a champion and no team
+    match to read a roster from.
+
+    Only where the format has no cut of its own, only a trailing run, and only
+    down to a size a bracket could be. Two events in the archive look like
+    this; every other event with a bracket says so.
+    """
+    if any(k[0] == "cut" for k in by_round):
+        return
+    swiss = sorted((k for k in by_round if k[0] == "swiss"), key=lambda k: k[1])
+    played = [k for k in swiss if (by_round[k].get("pairings") is not None)]
+    if not played:
+        return
+    run = [played[-1]]
+    while True:
+        here = _matches(by_round[run[0]])
+        before = played[played.index(run[0]) - 1] if played.index(run[0]) else None
+        if before is None or _matches(by_round[before]) != here * 2:
+            break
+        run.insert(0, before)
+    held = _matches(by_round[run[-1]]) * 2
+    if held < 4 or held & (held - 1) or len(run) < 2:
+        return
+    for i, key in enumerate(reversed(run)):
+        size = held << i
+        by_round[("cut", f"Top {size}")] = by_round.pop(key)
+
+
+def _matches(entry: dict) -> int:
+    """How many matches a round published, or 0."""
+    post = entry.get("pairings")
+    return len(post.post.table.rows) if post else 0
+
+
 def relabel_by_size(by_round: dict) -> None:
     """A cut round is named for how many Duelists are still in it.
 
@@ -680,6 +733,7 @@ def build_format(name: str | None, sources: list[Source], *,
     # key has to exist even though no table put it there.
     for key in features:
         by_round[key]
+    relabel_the_swiss_tail(by_round)
     relabel_by_size(by_round)
     if not by_round:
         return None

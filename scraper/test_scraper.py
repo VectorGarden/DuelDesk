@@ -1269,6 +1269,104 @@ class TestDerivedFinal(unittest.TestCase):
         eight = next(r for r in ev["formats"][0]["rounds"] if r["label"] == "Top 8")
         self.assertEqual(eight["source"], "https://x/mislabelled/")
 
+    def test_a_bracket_numbered_like_swiss_rounds_is_still_a_bracket(self):
+        # Team YCS Atlanta publishes fourteen rounds and calls every one of
+        # them a round. Its own winner post says what they were: "After 10
+        # rounds of Swiss and 4 rounds of Single Elimination". Swiss does not
+        # halve; these do. Left as Swiss the event had no cut round at all, so
+        # nobody to ask about a champion and no team match to read a roster
+        # from.
+        from build import relabel_the_swiss_tail, Source
+        from parse import Post, Table
+
+        def rnd(n, matches):
+            return {"pairings": Source(
+                f"https://x/r{n}/",
+                Post(f"Round {n} Pairings", "pairings", None, n,
+                     Table("pairings", [], [
+                         {"table": i + 1,
+                          "a": {"name": f"a{n}-{i}", "region": None, "deck": None},
+                          "b": {"name": f"b{n}-{i}", "region": None, "deck": None}}
+                         for i in range(matches)])), "20:00")}
+
+        by_round = {("swiss", 10): rnd(10, 29), ("swiss", 11): rnd(11, 4),
+                    ("swiss", 12): rnd(12, 2)}
+        relabel_the_swiss_tail(by_round)
+        self.assertEqual(sorted(by_round, key=str),
+                         [("cut", "Top 4"), ("cut", "Top 8"), ("swiss", 10)])
+
+    def test_an_event_with_a_cut_of_its_own_keeps_its_swiss(self):
+        # Only where there is no cut at all. An event that says where its
+        # bracket starts is not second-guessed -- and this tail would be
+        # relabelled if the guard were not there, so the guard is what the
+        # test is measuring.
+        from build import relabel_the_swiss_tail, Source
+        from parse import Post, Table
+
+        def rnd(label, matches):
+            return {"pairings": Source(
+                f"https://x/{label}/",
+                Post(f"{label}", "pairings", None, label,
+                     Table("pairings", [], [{"table": i + 1,
+                                             "a": {"name": f"a{i}", "region": None, "deck": None},
+                                             "b": {"name": f"b{i}", "region": None, "deck": None}}
+                                            for i in range(matches)])), "20:00")}
+
+        by_round = {("swiss", 9): rnd(9, 4), ("swiss", 10): rnd(10, 2),
+                    ("cut", "Top 4"): rnd("Top 4", 2)}
+        relabel_the_swiss_tail(by_round)
+        self.assertEqual(set(by_round),
+                         {("cut", "Top 4"), ("swiss", 9), ("swiss", 10)},
+                         "the Swiss rounds stayed Swiss")
+
+    def test_the_swiss_tail_is_relabelled_by_the_builder(self):
+        # Through build_event, which is what run.py calls. A rule the builder
+        # never consults fixes nothing.
+        from build import Source, build_event
+        from parse import Post, Table
+
+        def rnd(n, rows):
+            return Source(f"https://x/r{n}/",
+                          Post(f"Round {n} Pairings", "pairings", None, n,
+                               Table("pairings", [], [
+                                   {"table": i + 1,
+                                    "a": {"name": a, "region": None, "deck": None},
+                                    "b": {"name": b, "region": None, "deck": None}}
+                                   for i, (a, b) in enumerate(rows)])), "20:00")
+
+        ev = build_event("Team YCS Somewhere", [
+            rnd(1, [("A", "B"), ("C", "D"), ("E", "F"), ("G", "H")]),
+            rnd(2, [("A", "C"), ("E", "G")]),
+            Source("https://x/standings/",
+                   Post("Final Standings", "standings", None, None,
+                        Table("standings", [], [
+                            {"rank": i + 1, "name": n, "region": None, "points": 9 - i,
+                             "status": None, "statusRound": None}
+                            for i, n in enumerate("ABCDEFGH")])), "21:00"),
+        ], updated="2026-08-16T21:00:00Z")
+        labels = [r["label"] for r in ev["formats"][0]["rounds"]]
+        self.assertIn("Top 8", labels)
+        self.assertIn("Top 4", labels)
+
+    def test_a_swiss_tail_that_does_not_halve_is_swiss(self):
+        from build import relabel_the_swiss_tail, Source
+        from parse import Post, Table
+
+        def rnd(n, matches):
+            return {"pairings": Source(
+                f"https://x/r{n}/",
+                Post(f"Round {n}", "pairings", None, n,
+                     Table("pairings", [], [{"table": i + 1,
+                                             "a": {"name": f"a{i}", "region": None, "deck": None},
+                                             "b": {"name": f"b{i}", "region": None, "deck": None}}
+                                            for i in range(matches)])), "20:00")}
+
+        # 9 then 5 is Swiss thinning out, not a bracket halving.
+        by_round = {("swiss", 8): rnd(8, 9), ("swiss", 9): rnd(9, 5)}
+        before = dict(by_round)
+        relabel_the_swiss_tail(by_round)
+        self.assertEqual(by_round, before)
+
     def test_a_cut_round_that_agrees_with_its_name_is_left_alone(self):
         from build import relabel_by_size
         from parse import Post, Table
@@ -2518,6 +2616,33 @@ class TestChampion(unittest.TestCase):
             [self.post("And the winner is…",
                        "Bo Beta had an epic Match against Ann Alpha at YCS Dallas "
                        "last year. This year the trophy went elsewhere.")])
+        self.assertIsNone(got)
+
+    def test_a_team_named_inside_another_team_is_not_named(self):
+        # Team YCS Atlanta's Top 4 holds "TCG Collectibles", who came fourth,
+        # and "Team TCG Collectibles Fala Galera", who won. Every word of the
+        # first is in the second, so the one sentence naming the champion read
+        # as a sentence naming two teams and the event had no champion.
+        from winners import champion
+        got = champion(
+            ["TCG Collectibles", "Team TCG Collectibles Fala Galera",
+             "Mare Mare Lair", "00000 Golden Eggs"],
+            [self.post("And the Winners Are…",
+                       "Congratulations to our Team YCS Champions! After 10 rounds "
+                       "of Swiss and 4 rounds of Single Elimination, Team TCG "
+                       "Collectibles Fala Galera from South America bested all "
+                       "other teams to win it all!")])
+        self.assertEqual(got, "Team TCG Collectibles Fala Galera")
+
+    def test_two_teams_that_merely_share_a_word_both_count(self):
+        # Containment, not overlap. "Mare Mare Lair" and "Lair Squad" share a
+        # word and neither is inside the other, so a post naming both is still
+        # a post naming two teams.
+        from winners import champion
+        got = champion(
+            ["Mare Mare Lair", "Lair Squad"],
+            [self.post("And the winner is…",
+                       "Mare Mare Lair and Lair Squad met in a great final.")])
         self.assertIsNone(got)
 
     def test_the_crowning_sentence_is_read_not_the_first_name(self):

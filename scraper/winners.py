@@ -190,6 +190,11 @@ def crowning(text: str) -> str:
     return ""
 
 
+def _bare(name: str) -> str:
+    """A name reduced to its words, for asking whether one contains another."""
+    return " ".join(re.findall(r"[a-z0-9]+", name.lower()))
+
+
 def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
              rosters: dict[str, list[str]] | None = None) -> str | None:
     """Which of these Duelists the coverage says won, or None.
@@ -238,6 +243,15 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
 
         named = sorted((at, name) for name in candidates
                        if (at := where(name, text)) >= 0)
+        # A team whose name is inside another team's name is not independently
+        # named. Team YCS Atlanta's Top 4 holds both "TCG Collectibles", who
+        # came fourth, and "Team TCG Collectibles Fala Galera", who won, and
+        # every word of the first is in the second -- so the sentence naming
+        # the champion looked like a sentence naming two teams, and the event
+        # had no champion.
+        inside = {_bare(n) for _, n in named}
+        named = [(at, n) for at, n in named
+                 if not any(_bare(n) != other and _bare(n) in other for other in inside)]
         if len(named) == 1:
             claimed.add(named[0][1])
         elif len(named) > 1:
