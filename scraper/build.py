@@ -161,7 +161,12 @@ def round_key(post) -> tuple[str, Any]:
 #     and writes the event's own name without a colon, so the vote never saw
 #     it and the archive published the event as Pairings. The name is stored
 #     in rounds.json, so only a rebuild changes it.
-BUILD_VERSION = 22
+# 23: a title that used the naming convention is not an abstention. Version 22
+#     dropped "Top Table Update" and its kind from the denominator as well as
+#     from the vote, which let a candidate with five titles out of fifty-three
+#     clear a share it should have failed, and five events reached the site
+#     named QQ.
+BUILD_VERSION = 23
 
 
 @dataclass

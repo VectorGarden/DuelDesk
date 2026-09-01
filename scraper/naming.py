@@ -160,9 +160,20 @@ def event_name(titles: list[str], fallback: str) -> str:
     named, prefixes = 0, Counter()
     for title in titles:
         parts = _TITLE_SPLIT.split(title.strip(), maxsplit=1)
-        if len(parts) == 2 and parts[0] and not says_only_what_it_is(parts[0]):
+        if len(parts) == 2 and parts[0]:
+            # Counted, but not always a candidate. A title headed "Pairings:
+            # Round 2" is not an abstention -- it used the convention, it just
+            # did not name the event -- so it belongs in the denominator.
+            #
+            # Leaving it out of both shrank the denominator, and a candidate
+            # that should have failed its share cleared it instead: YCS
+            # Charlotte has seven posts headed "Top Table Update" and five
+            # headed "QQ", and once the first stopped counting, QQ won with
+            # five titles out of fifty-three. Five events went to the site
+            # named QQ.
             named += 1
-            prefixes[parts[0]] += 1
+            if not says_only_what_it_is(parts[0]):
+                prefixes[parts[0]] += 1
 
     # Score every candidate by how many titles begin with it. A shorter name can
     # only have at least the support of one extending it, so this settles on the
