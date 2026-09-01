@@ -180,12 +180,12 @@
     "slug": "2016-ycs-mexico-city"
   },
   {
-    "title": "YCS Mexico City: And the Winner Is…",
-    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-and-the-winner-is/",
-    "modified": "2016-09-18T15:46:49-07:00",
+    "title": "YCS Mexico City: Sunday’s ATTACK OF THE GIANT CARD!! Winner",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-sundays-attack-of-the-giant-card-winner/",
+    "modified": "2016-09-18T15:21:23-07:00",
     "kind": "result",
     "event": "YCS Mexico City",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2016-ycs-mexico-city"
   },
   {
@@ -207,9 +207,9 @@
     "slug": "2016-ycs-mexico-city"
   },
   {
-    "title": "YCS Mexico City: Points Playoff Prize Card Winner",
-    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-points-playoff-prize-card-winner/",
-    "modified": "2016-09-18T16:25:33-07:00",
+    "title": "YCS Mexico City: And the Winner Is…",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-and-the-winner-is/",
+    "modified": "2016-09-18T15:46:49-07:00",
     "kind": "result",
     "event": "YCS Mexico City",
     "format": null,
@@ -234,9 +234,9 @@
     "slug": "2016-ycs-mexico-city"
   },
   {
-    "title": "YCS Mexico City: Random Playoff Prize Card Winner",
-    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-random-playoff-prize-card-winner/",
-    "modified": "2016-09-18T16:52:02-07:00",
+    "title": "YCS Mexico City: Points Playoff Prize Card Winner",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-points-playoff-prize-card-winner/",
+    "modified": "2016-09-18T16:25:33-07:00",
     "kind": "result",
     "event": "YCS Mexico City",
     "format": null,
@@ -256,6 +256,15 @@
     "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-top-8-feature-match-ismael-campos-altamirano-vs-salvador-molina-ochoa/",
     "modified": "2016-09-18T14:58:19-07:00",
     "kind": "feature",
+    "event": "YCS Mexico City",
+    "format": null,
+    "slug": "2016-ycs-mexico-city"
+  },
+  {
+    "title": "YCS Mexico City: Random Playoff Prize Card Winner",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-random-playoff-prize-card-winner/",
+    "modified": "2016-09-18T16:52:02-07:00",
+    "kind": "result",
     "event": "YCS Mexico City",
     "format": null,
     "slug": "2016-ycs-mexico-city"
@@ -429,6 +438,15 @@
     "kind": "news",
     "event": "YCS Mexico City",
     "format": null,
+    "slug": "2016-ycs-mexico-city"
+  },
+  {
+    "title": "YCS Mexico City: ATTACK OF THE GIANT CARDS!! Prizes",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-mexico-city-attack-of-the-giant-cards-prizes/",
+    "modified": "2016-09-17T13:10:14-07:00",
+    "kind": "news",
+    "event": "YCS Mexico City",
+    "format": "Attack of the Giant Card",
     "slug": "2016-ycs-mexico-city"
   },
   {

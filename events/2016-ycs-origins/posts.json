@@ -154,6 +154,15 @@
   },
   {
     "title": "YCS Origins",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-dragon-duel-champion/",
+    "modified": "2016-06-19T17:09:35-07:00",
+    "kind": "result",
+    "event": "YCS Origins",
+    "format": null,
+    "slug": "2016-ycs-origins"
+  },
+  {
+    "title": "YCS Origins",
     "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-day-1-recap/",
     "modified": "2016-06-19T07:29:49-07:00",
     "kind": "news",
@@ -166,6 +175,15 @@
     "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-top-16-feature-match-collin-reardon-versus-johan-burke/",
     "modified": "2016-06-19T17:37:14-07:00",
     "kind": "feature",
+    "event": "YCS Origins",
+    "format": null,
+    "slug": "2016-ycs-origins"
+  },
+  {
+    "title": "YCS Origins",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-public-events-winners/",
+    "modified": "2016-06-19T17:21:43-07:00",
+    "kind": "result",
     "event": "YCS Origins",
     "format": null,
     "slug": "2016-ycs-origins"
@@ -234,6 +252,15 @@
     "slug": "2016-ycs-origins"
   },
   {
+    "title": "YCS Origins",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-sunday-dragon-duel-top-4/",
+    "modified": "2016-06-19T17:05:52-07:00",
+    "kind": "news",
+    "event": "YCS Origins",
+    "format": null,
+    "slug": "2016-ycs-origins"
+  },
+  {
     "title": "Welcome to YCS Origins!",
     "url": "https://yugiohblog.konami.com/2016/ycs/welcome-to-ycs-origins/",
     "modified": "2016-06-18T09:55:44-07:00",
@@ -255,6 +282,15 @@
     "title": "YCS Origins",
     "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-top-table-update-round-5/",
     "modified": "2016-06-18T15:10:03-07:00",
+    "kind": "news",
+    "event": "YCS Origins",
+    "format": null,
+    "slug": "2016-ycs-origins"
+  },
+  {
+    "title": "YCS Origins",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-saturday-dragon-duel-top-4/",
+    "modified": "2016-06-18T15:20:11-07:00",
     "kind": "news",
     "event": "YCS Origins",
     "format": null,
@@ -289,6 +325,24 @@
   },
   {
     "title": "YCS Origins",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-introducing-the-yu-gi-oh-generation-duel-public-event/",
+    "modified": "2016-06-18T17:27:26-07:00",
+    "kind": "news",
+    "event": "YCS Origins",
+    "format": null,
+    "slug": "2016-ycs-origins"
+  },
+  {
+    "title": "YCS Origins",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-generation-duel-tournament-day-1-top-4/",
+    "modified": "2016-06-18T18:41:08-07:00",
+    "kind": "news",
+    "event": "YCS Origins",
+    "format": null,
+    "slug": "2016-ycs-origins"
+  },
+  {
+    "title": "YCS Origins",
     "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-qq-what-deck-will-win-ycs-origins/",
     "modified": "2016-06-18T17:32:24-07:00",
     "kind": "news",
@@ -306,9 +360,27 @@
     "slug": "2016-ycs-origins"
   },
   {
+    "title": "YCS Origins",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-generation-duel-tournament-friday-top-4/",
+    "modified": "2016-06-18T18:42:38-07:00",
+    "kind": "news",
+    "event": "YCS Origins",
+    "format": null,
+    "slug": "2016-ycs-origins"
+  },
+  {
     "title": "TCS Origins",
     "url": "https://yugiohblog.konami.com/2016/ycs/tcs-origins-qq-who-would-you-give-a-structure-deck/",
     "modified": "2016-06-18T18:45:44-07:00",
+    "kind": "news",
+    "event": "YCS Origins",
+    "format": null,
+    "slug": "2016-ycs-origins"
+  },
+  {
+    "title": "YCS Origins",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-origins-generation-duel-tournament-wednesday-top-4/",
+    "modified": "2016-06-18T19:06:06-07:00",
     "kind": "news",
     "event": "YCS Origins",
     "format": null,

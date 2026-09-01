@@ -261,12 +261,12 @@
     "slug": "2017-ycs-dallas"
   },
   {
-    "title": "YCS Dallas: And the Winner is…",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-dallas-and-the-winner-is/",
-    "modified": "2017-10-22T16:49:06-07:00",
+    "title": "YCS Dallas ATTACK OF THE GIANT CARDS!! Winner #2!",
+    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-dallas-attack-of-the-giant-cards-winner-2/",
+    "modified": "2017-10-22T15:27:01-07:00",
     "kind": "result",
     "event": "YCS Dallas",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2017-ycs-dallas"
   },
   {
@@ -283,6 +283,15 @@
     "url": "https://yugiohblog.konami.com/2017/ycs/round-11-feature-match-cristopher-geovany-ramos-vs-dean-arbuckle/",
     "modified": "2017-10-22T10:16:28-07:00",
     "kind": "feature",
+    "event": "YCS Dallas",
+    "format": null,
+    "slug": "2017-ycs-dallas"
+  },
+  {
+    "title": "YCS Dallas: And the Winner is…",
+    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-dallas-and-the-winner-is/",
+    "modified": "2017-10-22T16:49:06-07:00",
+    "kind": "result",
     "event": "YCS Dallas",
     "format": null,
     "slug": "2017-ycs-dallas"
@@ -306,6 +315,15 @@
     "slug": "2017-ycs-dallas"
   },
   {
+    "title": "YCS Dallas Dragon Duel Championship Winner!",
+    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-dallas-dragon-duel-championship-winner/",
+    "modified": "2017-10-22T17:17:06-07:00",
+    "kind": "result",
+    "event": "YCS Dallas",
+    "format": "Dragon Duel",
+    "slug": "2017-ycs-dallas"
+  },
+  {
     "title": "QQ: What’s Your Favorite Card in the Legendary Dragon Decks?",
     "url": "https://yugiohblog.konami.com/2017/ycs/qq-whats-your-favorite-card-in-the-legendary-dragon-decks/",
     "modified": "2017-10-22T09:26:42-07:00",
@@ -321,6 +339,15 @@
     "kind": "feature",
     "event": "YCS Dallas",
     "format": null,
+    "slug": "2017-ycs-dallas"
+  },
+  {
+    "title": "YCS Dallas ATTACK OF THE GIANT CARDS!! Winner #1",
+    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-dallas-attack-of-the-giant-cards-winner-1/",
+    "modified": "2017-10-21T18:17:26-07:00",
+    "kind": "result",
+    "event": "YCS Dallas",
+    "format": "Attack of the Giant Card",
     "slug": "2017-ycs-dallas"
   },
   {
@@ -468,12 +495,12 @@
     "slug": "2017-ycs-dallas"
   },
   {
-    "title": "Top Tables Update: Round 4",
-    "url": "https://yugiohblog.konami.com/2017/ycs/top-tables-update-round-4-8/",
-    "modified": "2017-10-21T15:38:55-07:00",
+    "title": "YCS Dallas: ATTACK OF THE GIANT CARDS!!",
+    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-dallas-attack-of-the-giant-cards/",
+    "modified": "2017-10-21T13:24:41-07:00",
     "kind": "news",
     "event": "YCS Dallas",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2017-ycs-dallas"
   },
   {
@@ -486,9 +513,9 @@
     "slug": "2017-ycs-dallas"
   },
   {
-    "title": "Saturday’s Generation Duel Top 4",
-    "url": "https://yugiohblog.konami.com/2017/ycs/saturdays-generation-duel-top-4-3/",
-    "modified": "2017-10-21T15:42:24-07:00",
+    "title": "Top Tables Update: Round 4",
+    "url": "https://yugiohblog.konami.com/2017/ycs/top-tables-update-round-4-8/",
+    "modified": "2017-10-21T15:38:55-07:00",
     "kind": "news",
     "event": "YCS Dallas",
     "format": null,
@@ -504,9 +531,9 @@
     "slug": "2017-ycs-dallas"
   },
   {
-    "title": "Top Tables Update: Round 5",
-    "url": "https://yugiohblog.konami.com/2017/ycs/top-tables-update-round-5-17/",
-    "modified": "2017-10-21T15:49:48-07:00",
+    "title": "Saturday’s Generation Duel Top 4",
+    "url": "https://yugiohblog.konami.com/2017/ycs/saturdays-generation-duel-top-4-3/",
+    "modified": "2017-10-21T15:42:24-07:00",
     "kind": "news",
     "event": "YCS Dallas",
     "format": null,
@@ -522,9 +549,9 @@
     "slug": "2017-ycs-dallas"
   },
   {
-    "title": "Top Tables Update: Round 6",
-    "url": "https://yugiohblog.konami.com/2017/ycs/top-tables-update-round-6-25/",
-    "modified": "2017-10-21T17:52:42-07:00",
+    "title": "Top Tables Update: Round 5",
+    "url": "https://yugiohblog.konami.com/2017/ycs/top-tables-update-round-5-17/",
+    "modified": "2017-10-21T15:49:48-07:00",
     "kind": "news",
     "event": "YCS Dallas",
     "format": null,
@@ -535,6 +562,15 @@
     "url": "https://yugiohblog.konami.com/2017/ycs/round-1-feature-match-pedro-benhumea-salto-vs-gerardo-sotomayor-meza/",
     "modified": "2017-10-19T19:02:52-07:00",
     "kind": "feature",
+    "event": "YCS Dallas",
+    "format": null,
+    "slug": "2017-ycs-dallas"
+  },
+  {
+    "title": "Top Tables Update: Round 6",
+    "url": "https://yugiohblog.konami.com/2017/ycs/top-tables-update-round-6-25/",
+    "modified": "2017-10-21T17:52:42-07:00",
+    "kind": "news",
     "event": "YCS Dallas",
     "format": null,
     "slug": "2017-ycs-dallas"

@@ -234,12 +234,12 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta: And the Winner is…",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-and-the-winner-is-2/",
-    "modified": "2018-02-18T19:12:13-08:00",
+    "title": "YCS Atlanta: Dragon Duel Champion!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-dragon-duel-champion-3/",
+    "modified": "2018-02-18T16:39:19-08:00",
     "kind": "result",
     "event": "YCS Atlanta",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2018-ycs-atlanta"
   },
   {
@@ -256,6 +256,15 @@
     "url": "https://yugiohblog.konami.com/2018/ycs/top-8-feature-match-mohammed-khan-vs-edwin-diaz/",
     "modified": "2018-02-19T06:38:58-08:00",
     "kind": "feature",
+    "event": "YCS Atlanta",
+    "format": null,
+    "slug": "2018-ycs-atlanta"
+  },
+  {
+    "title": "YCS Atlanta: And the Winner is…",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-and-the-winner-is-2/",
+    "modified": "2018-02-18T19:12:13-08:00",
+    "kind": "result",
     "event": "YCS Atlanta",
     "format": null,
     "slug": "2018-ycs-atlanta"
@@ -423,12 +432,12 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "New Regional Qualifier Game Mat Featuring Saryuja Skull Dread!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/new-regional-qualifier-game-mat-featuring-saryuja-skull-dread/",
-    "modified": "2018-02-17T12:02:52-08:00",
+    "title": "YCS Atlanta: ATTACK OF THE GIANT CARDS!!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-attack-of-the-giant-cards/",
+    "modified": "2018-02-17T12:01:59-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
-    "format": null,
+    "format": "Attack of the Giant Card",
     "slug": "2018-ycs-atlanta"
   },
   {
@@ -441,9 +450,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Check Out This Pot of Greed!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/check-out-this-pot-of-greed/",
-    "modified": "2018-02-17T13:47:43-08:00",
+    "title": "New Regional Qualifier Game Mat Featuring Saryuja Skull Dread!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/new-regional-qualifier-game-mat-featuring-saryuja-skull-dread/",
+    "modified": "2018-02-17T12:02:52-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -459,9 +468,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta: Tech Update",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-tech-update-3/",
-    "modified": "2018-02-17T15:22:55-08:00",
+    "title": "Check Out This Pot of Greed!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/check-out-this-pot-of-greed/",
+    "modified": "2018-02-17T13:47:43-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -477,9 +486,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta Top Tables Update: Round 5",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-top-tables-update-round-5/",
-    "modified": "2018-02-17T16:01:44-08:00",
+    "title": "YCS Atlanta: Tech Update",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-tech-update-3/",
+    "modified": "2018-02-17T15:22:55-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -495,9 +504,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta Top Tables Update: Round 6",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-top-tables-update-round-6/",
-    "modified": "2018-02-17T17:11:09-08:00",
+    "title": "YCS Atlanta Top Tables Update: Round 5",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-top-tables-update-round-5/",
+    "modified": "2018-02-17T16:01:44-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -513,9 +522,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "QQ: What’s Your Favorite Card in Extreme Force?",
-    "url": "https://yugiohblog.konami.com/2018/ycs/qq-whats-your-favorite-card-in-extreme-force/",
-    "modified": "2018-02-17T17:15:15-08:00",
+    "title": "YCS Atlanta Top Tables Update: Round 6",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-top-tables-update-round-6/",
+    "modified": "2018-02-17T17:11:09-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -531,9 +540,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta Top Tables Update: Round 8",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-top-tables-update-round-8/",
-    "modified": "2018-02-17T19:58:02-08:00",
+    "title": "QQ: What’s Your Favorite Card in Extreme Force?",
+    "url": "https://yugiohblog.konami.com/2018/ycs/qq-whats-your-favorite-card-in-extreme-force/",
+    "modified": "2018-02-17T17:15:15-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -549,9 +558,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "QQ: What’s the Deck to Beat?",
-    "url": "https://yugiohblog.konami.com/2018/ycs/qq-whats-the-deck-to-beat/",
-    "modified": "2018-02-17T20:02:42-08:00",
+    "title": "YCS Atlanta Top Tables Update: Round 8",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-top-tables-update-round-8/",
+    "modified": "2018-02-17T19:58:02-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -567,9 +576,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "QQ: What’s Your Favorite Change On The New F&L List?",
-    "url": "https://yugiohblog.konami.com/2018/ycs/qq-whats-your-favorite-change-on-the-new-fl-list/",
-    "modified": "2018-02-17T20:07:38-08:00",
+    "title": "QQ: What’s the Deck to Beat?",
+    "url": "https://yugiohblog.konami.com/2018/ycs/qq-whats-the-deck-to-beat/",
+    "modified": "2018-02-17T20:02:42-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -580,6 +589,15 @@
     "url": "https://yugiohblog.konami.com/2018/ycs/round-5-feature-match-ousama-chamem-vs-alexander-juneja/",
     "modified": "2018-02-17T17:44:42-08:00",
     "kind": "feature",
+    "event": "YCS Atlanta",
+    "format": null,
+    "slug": "2018-ycs-atlanta"
+  },
+  {
+    "title": "QQ: What’s Your Favorite Change On The New F&L List?",
+    "url": "https://yugiohblog.konami.com/2018/ycs/qq-whats-your-favorite-change-on-the-new-fl-list/",
+    "modified": "2018-02-17T20:07:38-08:00",
+    "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
     "slug": "2018-ycs-atlanta"

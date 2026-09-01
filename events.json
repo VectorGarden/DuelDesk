@@ -3029,7 +3029,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-salt-lake-city/rounds.json",
-      "postCount": 63,
+      "postCount": 67,
       "champions": [
         {
           "format": null,
@@ -3055,7 +3055,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-san-jose-costa-rica/rounds.json",
-      "postCount": 28,
+      "postCount": 29,
       "champions": [
         {
           "format": null,
@@ -3081,7 +3081,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-santa-cruz-de-la-sierra-bolivia/rounds.json",
-      "postCount": 24,
+      "postCount": 27,
       "champions": [
         {
           "format": null,
@@ -3125,7 +3125,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2018-ycs-atlanta/rounds.json",
-      "postCount": 70,
+      "postCount": 72,
       "champions": [
         {
           "format": null,
@@ -3200,7 +3200,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-trinidad-and-tobago/rounds.json",
-      "postCount": 22,
+      "postCount": 25,
       "champions": [
         {
           "format": null,
@@ -3225,7 +3225,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-dallas/rounds.json",
-      "postCount": 64,
+      "postCount": 68,
       "champions": [
         {
           "format": null,
@@ -3251,7 +3251,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-kissimmee-fl/rounds.json",
-      "postCount": 53,
+      "postCount": 55,
       "formats": [
         {
           "format": null,
@@ -3269,7 +3269,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-toronto/rounds.json",
-      "postCount": 48,
+      "postCount": 49,
       "champions": [
         {
           "format": null,
@@ -3313,6 +3313,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-south-american-wcq/rounds.json",
       "postCount": 38,
+      "champions": [
+        {
+          "format": "Dragon Duel",
+          "name": "Rafael Mariano Reich",
+          "deck": "Zoodiac"
+        }
+      ],
       "formats": [
         {
           "format": "Dragon Duel",
@@ -3361,7 +3368,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-pittsburgh/rounds.json",
-      "postCount": 60,
+      "postCount": 61,
       "champions": [
         {
           "format": null,
@@ -3412,7 +3419,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-denver/rounds.json",
-      "postCount": 42,
+      "postCount": 46,
       "champions": [
         {
           "format": null,
@@ -3456,7 +3463,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-guatemala-city-guatemala/rounds.json",
-      "postCount": 23,
+      "postCount": 28,
       "champions": [
         {
           "format": null,
@@ -3482,7 +3489,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-lima-peru/rounds.json",
-      "postCount": 26,
+      "postCount": 34,
       "formats": [
         {
           "format": null,
@@ -3500,7 +3507,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-atlanta/rounds.json",
-      "postCount": 57,
+      "postCount": 65,
       "champions": [
         {
           "format": null,
@@ -3520,12 +3527,12 @@
     {
       "slug": "2017-ycs-seattle",
       "event": "YCS Seattle",
-      "updated": "2017-02-19",
+      "updated": "2017-03-02",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-ycs-seattle/rounds.json",
-      "postCount": 37,
+      "postCount": 38,
       "champions": [
         {
           "format": null,
@@ -3575,7 +3582,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-rio-de-janeiro/rounds.json",
-      "postCount": 23,
+      "postCount": 27,
       "formats": [
         {
           "format": null,
@@ -3611,7 +3618,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-minneapolis/rounds.json",
-      "postCount": 54,
+      "postCount": 56,
       "champions": [
         {
           "format": null,
@@ -3636,7 +3643,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-uds-invitational-chicago/rounds.json",
-      "postCount": 33,
+      "postCount": 43,
       "formats": [
         {
           "format": null,
@@ -3654,7 +3661,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-mexico-city/rounds.json",
-      "postCount": 55,
+      "postCount": 57,
       "champions": [
         {
           "format": null,
@@ -3679,7 +3686,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-toronto/rounds.json",
-      "postCount": 49,
+      "postCount": 50,
       "champions": [
         {
           "format": null,
@@ -3707,6 +3714,11 @@
       "postCount": 58,
       "champions": [
         {
+          "format": "Dragon Duel",
+          "name": "Po-Hsiang Peng",
+          "deck": null
+        },
+        {
           "format": null,
           "name": "Shunsuke Hiyama",
           "deck": null
@@ -3717,13 +3729,13 @@
           "format": "Dragon Duel",
           "swissRounds": 4,
           "duelists": 12,
-          "rounds": 6
+          "rounds": 7
         },
         {
           "format": null,
           "swissRounds": 5,
           "duelists": 22,
-          "rounds": 7
+          "rounds": 8
         }
       ]
     },
@@ -3737,6 +3749,11 @@
       "path": "events/2016-north-american-wcq/rounds.json",
       "postCount": 63,
       "champions": [
+        {
+          "format": "Dragon Duel",
+          "name": "Aiden Christopher Tiemann",
+          "deck": null
+        },
         {
           "format": null,
           "name": "Erik Godwin Christensen",
@@ -3766,7 +3783,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-ycs-origins/rounds.json",
-      "postCount": 35,
+      "postCount": 43,
       "formats": [
         {
           "format": null,
@@ -3904,6 +3921,13 @@
       "coverageBy": "Konami",
       "path": "events/2015-north-american-wcq/rounds.json",
       "postCount": 54,
+      "champions": [
+        {
+          "format": "Dragon Duel",
+          "name": "Austin Wesley Colling",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": "Dragon Duel",

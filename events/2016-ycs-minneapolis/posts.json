@@ -198,6 +198,15 @@
     "slug": "2016-ycs-minneapolis"
   },
   {
+    "title": "YCS Minneapolis Public Events Playoff Winner #1",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-minneapolis-public-events-playoff-winner-1/",
+    "modified": "2016-10-16T15:47:19-07:00",
+    "kind": "result",
+    "event": "YCS Minneapolis",
+    "format": "Public Events",
+    "slug": "2016-ycs-minneapolis"
+  },
+  {
     "title": "Saturday’s Generation Duel Tournament Top 4!",
     "url": "https://yugiohblog.konami.com/2016/ycs/generation-duel-tournament-top-4/",
     "modified": "2016-10-16T17:52:55-07:00",
@@ -222,6 +231,15 @@
     "kind": "deck",
     "event": "YCS Minneapolis",
     "format": null,
+    "slug": "2016-ycs-minneapolis"
+  },
+  {
+    "title": "YCS Minneapolis Dragon Duel Champion!",
+    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-minneapolis-dragon-duel-champion/",
+    "modified": "2016-10-16T17:36:57-07:00",
+    "kind": "result",
+    "event": "YCS Minneapolis",
+    "format": "Dragon Duel",
     "slug": "2016-ycs-minneapolis"
   },
   {
