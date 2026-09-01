@@ -3094,6 +3094,13 @@
       "coverageBy": "Konami",
       "path": "events/201711-san-diego-ca/rounds.json",
       "postCount": 51,
+      "champions": [
+        {
+          "format": null,
+          "name": "Mohammed Faisal Khan",
+          "deck": "SPYRAL"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -3324,6 +3331,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-denver/rounds.json",
       "postCount": 42,
+      "champions": [
+        {
+          "format": null,
+          "name": "Anderson Ga Jun Tsang",
+          "deck": "Infernoid"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -3430,6 +3444,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-seattle/rounds.json",
       "postCount": 37,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alexis Roberto Rodriguez Jimenez",
+          "deck": "Kaiju Zoodiac"
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -3733,6 +3754,13 @@
       "coverageBy": "Konami",
       "path": "events/201603-santiago-chile/rounds.json",
       "postCount": 24,
+      "champions": [
+        {
+          "format": null,
+          "name": "Nicolas Gonzalo Godoy",
+          "deck": "Argentina"
+        }
+      ],
       "formats": [
         {
           "format": null,
