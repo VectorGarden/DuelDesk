@@ -4043,6 +4043,13 @@
       "coverageBy": "Konami",
       "path": "events/201503-guatemala/rounds.json",
       "postCount": 12,
+      "champions": [
+        {
+          "format": null,
+          "name": "Erick Villanueva Priego",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -4184,6 +4191,13 @@
       "coverageBy": "Konami",
       "path": "events/2013-central-american-wcq/rounds.json",
       "postCount": 19,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alejandro Vivaldo Reyes Suarez",
+          "deck": "Dragon Ruler"
+        }
+      ],
       "formats": [
         {
           "format": null,
