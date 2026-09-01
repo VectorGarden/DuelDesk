@@ -2048,7 +2048,7 @@
     },
     {
       "slug": "2022-ycs-charlotte",
-      "event": "QQ",
+      "event": "YCS Charlotte",
       "updated": "2022-04-10",
       "sample": false,
       "ongoing": false,
@@ -2073,7 +2073,7 @@
     },
     {
       "slug": "2022-02-north-america-remote-duel-ycs",
-      "event": "Remote Duel YCS",
+      "event": "North America Remote Duel YCS February 2022",
       "updated": "2022-02-27",
       "sample": false,
       "ongoing": false,
@@ -2098,7 +2098,7 @@
     },
     {
       "slug": "2022-latin-america-remote-duel-ycs",
-      "event": "Latin America Remote Duel",
+      "event": "Latin America Remote Duel YCS February 2022",
       "updated": "2022-02-01",
       "sample": false,
       "ongoing": false,
@@ -2116,7 +2116,7 @@
     },
     {
       "slug": "2022-january-remote-duel-ycs",
-      "event": "Remote Duel YCS",
+      "event": "Remote Duel YCS January 2022",
       "updated": "2022-01-16",
       "sample": false,
       "ongoing": false,
