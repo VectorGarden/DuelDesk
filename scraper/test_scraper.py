@@ -1706,13 +1706,21 @@ class TestProvenanceCheck(unittest.TestCase):
         def only_feature(d):
             r = self.first_round(d)
             r["pairings"], r["standings"] = [], []
-            r["feature"] = {"a": "Ann Alpha", "b": "Bo Beta", "url": "https://x/f/"}
+            r["features"] = [{"a": {"name": "Ann Alpha"}, "b": {"name": "Bo Beta"},
+                              "url": "https://x/f/"}]
         self.assertEqual(self.check(only_feature)[0], 0)
 
     def test_a_round_carrying_nothing_at_all_is_still_rejected(self):
+        # "features", plural and a list, which is what a round actually holds.
+        # Both of these used to set "feature", which no round has, so this one
+        # emptied nothing and passed only while the event it happened to pick
+        # had no feature matches in its first round. The 2026 World
+        # Championship left the manifest for one rebuild and the next event
+        # along had two, which is when it showed.
         def empty(d):
             r = self.first_round(d)
-            r["pairings"], r["standings"], r["feature"] = [], [], None
+            r["pairings"], r["standings"], r["features"] = [], [], []
+            r.pop("feature", None)
         code, out = self.check(empty)
         self.assertEqual(code, 1)
         self.assertIn("feature match", out)
@@ -5176,6 +5184,29 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
                 "</tbody></table></body></html>")
         url = "https://x/2017/south-america-wcq-pairings-for-top-3/"
         self.assertEqual(parse_post(html, url).round, 3)
+
+    def test_a_semi_final_is_the_top_4(self):
+        # "Semi-Finals pairings" matched the "finals" inside it and became the
+        # Final -- two matches in a round that holds one, so the 2026 World
+        # Championship reported two Duelists a side and was refused. Written
+        # closed, "Semifinals" matched nothing at all and was no round.
+        from parse import detect_round
+        for text in ("Semi-Finals pairings", "Semifinals", "Semi Finals",
+                     "Pairings: Semi-Finals!"):
+            self.assertEqual(detect_round(text, "pairings"), "Top 4", text)
+
+    def test_a_quarter_final_is_the_top_8(self):
+        from parse import detect_round
+        for text in ("Quarterfinals", "Quarter-Finals pairings",
+                     "Pairings: Quarterfinals!"):
+            self.assertEqual(detect_round(text, "pairings"), "Top 8", text)
+
+    def test_the_final_itself_is_still_the_final(self):
+        from parse import detect_round
+        self.assertEqual(detect_round("Final Pairing", "pairings"), "Final")
+        self.assertEqual(detect_round("Finals pairing", "pairings"), "Final")
+        # And the standings at the end of Swiss are still not a round.
+        self.assertIsNone(detect_round("Final Standings After Swiss", "standings"))
 
     def test_a_slug_still_names_the_round_when_the_title_does_not(self):
         # Most of the archive is read this way and has to stay that way.

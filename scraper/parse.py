@@ -292,6 +292,16 @@ def detect_round(text: str, kind: str | None = None):
         return int(m.group(1))
     if kind == "standings" and re.search(r"after swiss|final standings", low):
         return None
+    # A semi-final is the Top 4 and a quarter-final the Top 8, which is what
+    # the rest of the archive calls them. Before this, "Semi-Finals pairings"
+    # matched the "finals" inside it and became the Final -- two matches in a
+    # round that holds one, so the World Championship 2026 reported two
+    # Duelists a side and was refused. "Semifinals", written closed, matched
+    # nothing at all and was no round.
+    if re.search(r"\bsemi[\s-]?finals?\b", low):
+        return "Top 4"
+    if re.search(r"\bquarter[\s-]?finals?\b", low):
+        return "Top 8"
     if re.search(r"\bfinals?\b", low):
         return "Final"
     return None
