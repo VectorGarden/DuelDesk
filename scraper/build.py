@@ -220,7 +220,11 @@ def round_key(post) -> tuple[str, Any]:
 #     and South America name theirs in their own coverage and North America's
 #     calls itself just "Genesys Championship", so it sat on the front page
 #     beside two that say where they were and did not.
-BUILD_VERSION = 34
+# 35: the roll-call, and the heading. A winner post often crowns somebody and
+#     then lists the placings behind them -- "the rest of the Top 4" -- and a
+#     team's own name is often only in the heading, with the body naming the
+#     three Duelists and not the team.
+BUILD_VERSION = 35
 
 
 @dataclass
