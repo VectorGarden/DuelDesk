@@ -171,7 +171,12 @@ def round_key(post) -> tuple[str, Any]:
 #     the front page listed them side by side with nothing to tell them apart.
 #     Named for the month as well as the year, because North America played
 #     one in February 2022 and another that December.
-BUILD_VERSION = 24
+# 25: the qualifiers that named their region in two letters, or not at all.
+#     "WCQ CA", "SA WCQ", one named for the country it was held in, and the
+#     three 2022 events filed under what the qualifier was called before 2023.
+#     Every year from 2011 to 2026 is now named the same way, and the only
+#     gaps left are 2020 and 2021, when these were not held.
+BUILD_VERSION = 25
 
 
 @dataclass
