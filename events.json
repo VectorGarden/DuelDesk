@@ -2915,6 +2915,13 @@
       "coverageBy": "Konami",
       "path": "events/2018-south-america-wcq/rounds.json",
       "postCount": 46,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jefferson Salas Reyna",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": "Dragon Duel",
