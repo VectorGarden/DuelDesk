@@ -110,7 +110,7 @@ HEDGE = re.compile(r"\b(will|would|could|about to|soon|away from|one of|if"
 # "victory against", which is what winning the final is called, and the two
 # phrases that name the loser as the loser.
 DEFEAT = re.compile(
-    r"\b(defeat(?:ed|s|ing)?|beat|beats|bested|topple[ds]?|overcame|overcome"
+    r"\b(defeat(?:ed|s|ing)?|beat|beats|bested|topple[ds]?|overcame|overcom(?:e|es|ing)"
     r"|won against|victorious over|victory (?:against|over)"
     r"|in second place|runner-?up"
     # The roll-call. A winner post often crowns somebody and then lists the

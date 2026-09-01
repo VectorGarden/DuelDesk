@@ -2684,6 +2684,23 @@ class TestChampion(unittest.TestCase):
                      "Supreme Pro": ["Hansel Erik Aguero", "Pakawat Thomas Pamornsut"]})
         self.assertEqual(got, "The Jawhari Brothers")
 
+    def test_overcoming_is_the_same_word_as_overcame(self):
+        # The 2013 World Championship writes "...winning the 2013 Yu-Gi-Oh!
+        # World Championship overcoming David J. Keener III". DEFEAT knew
+        # overcame and overcome and not the participle, so the post named the
+        # champion and the runner-up with nothing between them.
+        from winners import champion
+        got = champion(
+            ["Shin En Huang", "David J. Keener III", "Weerapun Suebyoubol"],
+            [self.post("..And the 2013 Yu-Gi-Oh! World Champions are…",
+                       "Congratulations to Shin En Huang of Taiwan with Dragon "
+                       "Rulers becoming the King of Games and winning the 2013 "
+                       "Yu-Gi-Oh! World Championship overcoming David J. Keener "
+                       "III of the USA playing Prophecy. Shin En Huang will "
+                       "receive the prize card, while David J. Keener III, "
+                       "Weerapun Suebyoubol of Thailand...")])
+        self.assertEqual(got, "Shin En Huang")
+
     def test_a_post_may_crown_a_winner_rather_than_a_champion(self):
         # The 2025 North America WCQ crowns with "winner" and never says
         # champion: "Championship" in that sentence is the event's name.
@@ -5484,6 +5501,26 @@ class TestTheHeadersTheBlogActuallyWrites(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["a"]["name"], "Alpha Squad")
         self.assertEqual(len(rows[0]["duels"]), 1)
+
+    def test_a_deck_column_is_not_part_of_a_name(self):
+        # The 2013 World Championship heads its cut "Table | Player 1 | VS. |
+        # Player 2 | | Winner | Deck", and everything right of the divider was
+        # read as Player 2 -- so the deck landed in their name: "Shin En Dragon
+        # Rulers Huang" for a Duelist called Shin En Huang.
+        t = self.table(["Table", "Player 1", "VS.", "Player 2", "", "Winner", "Deck"],
+                       ["1", "Murakoshi, Kei", "VS.", "Huang, Shin En", "",
+                        "Shin En Huang (Taiwan)", "Dragon Rulers"]).table
+        self.assertEqual(t.rows[0]["b"]["name"], "Shin En Huang")
+        self.assertEqual(t.rows[0]["a"]["name"], "Kei Murakoshi")
+
+    def test_a_deck_beside_its_own_duelist_is_still_kept(self):
+        # Where the deck column belongs to the Duelist next to it, it is read
+        # before this rule and stays.
+        t = self.table(["Table", "Player 1", "Deck", "vs.", "Player 2", "Deck"],
+                       ["1", "Ann Alpha", "Ryzeal", "vs.", "Bo Beta", "Snake-Eye"]).table
+        self.assertEqual(t.rows[0]["a"], {"name": "Ann Alpha", "region": None,
+                                          "deck": "Ryzeal"})
+        self.assertEqual(t.rows[0]["b"]["deck"], "Snake-Eye")
 
     def test_a_ranking_is_never_a_pairing(self):
         # TEAM YCS La Paz heads its standings "Rank | Team Name | Duelist
