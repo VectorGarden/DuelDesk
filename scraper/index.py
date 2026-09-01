@@ -610,6 +610,18 @@ def _named_outright(records: list[dict], profiles: dict[str, Profile]):
         rest = rec["slug"][len(bare) + 1:].replace("-", " ")
         if SIDE_EVENT.search(rest) and coverage_format(rest, None) is None:
             continue
+        # And only what cannot change the shape of a bracket. A name says
+        # which event a post belongs to; it says nothing about whether the
+        # table in it is any good, and this rule cannot look. The blog
+        # reprints tables under a second slug and the copy is often the worse
+        # of the two -- YCS Philadelphia's Top 64 was printed twice and the
+        # copy holds 63 Duelists, so handing the event its own name back cost
+        # it the event. Guadalajara lost two rounds the same way.
+        #
+        # A result or a deck list has no round to be wrong about, and the
+        # winner posts this rule exists for are results.
+        if detect_kind(rec["slug"]) in (*TOURNAMENT, "feature"):
+            continue
         yield rec, slug
 
 

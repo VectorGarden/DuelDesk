@@ -4436,16 +4436,28 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
 
     def test_the_events_own_name_is_not_read_as_a_side_event(self):
         # SIDE_EVENT matches "invitational", which is half of what a UDS
-        # Invitational is called. Reading the whole slug threw away that
-        # event's own rounds.
+        # Invitational is called, so reading the whole slug refused that
+        # event's own posts.
         got = self.assigned(
             *self.coverage("uds-invitational-chicago", "2016-06-24"),
             *self.coverage("ycs-elsewhere", "2016-09-02"),
-            ("2016/ycs/uds-invitational-chicago-here-are-the-pairings-for-round-11",
-             "2016-09-02"))
-        self.assertEqual(
-            got["uds-invitational-chicago-here-are-the-pairings-for-round-11"],
-            ("2016-uds-invitational-chicago", "name"))
+            ("2016/ycs/uds-invitational-chicago-and-the-winner-is", "2016-09-02"))
+        self.assertEqual(got["uds-invitational-chicago-and-the-winner-is"],
+                         ("2016-uds-invitational-chicago", "name"))
+
+    def test_a_name_never_moves_a_round(self):
+        # A name says which event a post is about. It says nothing about
+        # whether the table in it is any good, and this rule cannot look --
+        # so it moves no pairings, no standings and no feature match, and can
+        # neither create a round nor replace one.
+        got = self.assigned(
+            *self.coverage("ycs-guadalajara-mexico", "2024-06-24"),
+            *self.coverage("ycs-elsewhere", "2024-09-02"),
+            ("2024/ycs/ycs-guadalajara-mexico-top-16-pairings-3", "2024-09-02"),
+            ("2024/ycs/ycs-guadalajara-mexico-standings-after-round-8", "2024-09-02"))
+        for slug in ("ycs-guadalajara-mexico-top-16-pairings-3",
+                     "ycs-guadalajara-mexico-standings-after-round-8"):
+            self.assertNotEqual(got[slug][1], "name", slug)
 
     def test_a_round_naming_another_event_is_that_events(self):
         # A category is enough for the prose this rule is mostly for, and every
@@ -4458,16 +4470,16 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         # post and only the other event's does. Nothing but the name says whose
         # table it is.
         #
-        # It used to be left unassigned, because nothing could act on a name.
-        # Now something can, and the post goes to the event it names. What this
-        # test is really about is that it does not go to the other one, and it
-        # still does not.
+        # I gave this post to Philadelphia once, on the grounds that the event
+        # it names is a better answer than none. It is not: the copy holds 63
+        # Duelists in a round of 64, it beat the good table on size, and the
+        # event was refused and left the site. A name says which event a post
+        # is about and nothing about whether its table is any good.
         got = self.assigned(
             *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
             *self.coverage("ycs-philadelphia", "2023-01-14"),
             ("2023/ycs/ycs-philadelphia-top-64-pairings", "2023-06-25"))
-        self.assertEqual(got["ycs-philadelphia-top-64-pairings"],
-                         ("2023-ycs-philadelphia", "name"))
+        self.assertIsNone(got["ycs-philadelphia-top-64-pairings"][0])
 
     def test_a_round_the_event_has_no_other_way_to_get_is_kept(self):
         # Refusing every dated round was the first fix and it was too blunt.
