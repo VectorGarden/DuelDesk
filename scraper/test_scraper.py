@@ -3632,6 +3632,34 @@ class TestANameThatFitsEveryEvent(unittest.TestCase):
                     "North America WCQ 2026", "TEAM YCS Las Vegas", "UDS Invitational Lima"):
             self.assertFalse(says_only_what_it_is(yes), yes)
 
+    def test_a_weak_candidate_does_not_win_by_the_others_leaving(self):
+        # YCS Charlotte has seven posts headed "Top Table Update" and five
+        # headed "QQ". Dropping the first from the vote is right; dropping it
+        # from the denominator too is not, and it let QQ clear a share it
+        # should have failed. Five events reached the site named QQ.
+        from naming import event_name
+        # The real vote, counted off the event's 53 posts: sixteen titles use
+        # the convention, and QQ holds five of them. Five is under the 40%
+        # share; it only passed when the other eleven stopped counting.
+        titles = (["Top Table Update: Round %d" % n for n in range(1, 8)]
+                  + ["Day 1: Morning", "Day 1: Evening", "Day 2: Morning", "Day 2: Evening"]
+                  + ["QQ: Something", "QQ: Else", "QQ: Again", "QQ: More", "QQ: Still"]
+                  + ["Welcome to YCS Charlotte!"]
+                  + ["YCS Charlotte Round %d Pairings" % n for n in range(1, 11)])
+        # Not QQ, which is the whole of it. On the real event the fallback
+        # path then reads "YCS Charlotte" off the other thirty-seven titles;
+        # this fixture carries the vote, not the whole post list.
+        self.assertNotEqual(event_name(titles, "Fallback"), "QQ")
+
+    def test_a_prefix_that_says_only_its_kind_still_counts_as_a_vote_cast(self):
+        # The denominator is titles that used the convention, which these did.
+        from naming import event_name
+        # Nine "Pairings:" titles and two "Real Event:" ones. Two out of eleven
+        # is not a share, and the answer is not "Real Event" on that evidence.
+        titles = ["Pairings: Round %d" % n for n in range(1, 10)] + \
+                 ["Real Event: One", "Real Event: Two"]
+        self.assertNotEqual(event_name(titles, "Fallback"), "Real Event")
+
     def test_such_a_prefix_never_wins_the_vote(self):
         from naming import event_name
         # Six posts headed "Pairings: ..." and the event's own name written
