@@ -3211,6 +3211,44 @@ class TestPairingsWrittenAsProse(unittest.TestCase):
         self.assertEqual(len(got.table.rows), 64)
         self.assertEqual(got.table.rows[-1]["a"]["name"], "Duelist Number64")
 
+    def test_a_nested_entry_is_read_to_its_end(self):
+        # YCS Chicago's winner post nests its text four divs deep. The rule
+        # that ended at the first "</div></div>" returned 140 characters of a
+        # 312KB page and stopped before the winner's name, so the event had a
+        # winner post naming a Duelist in its own Top 4 and no champion -- and
+        # an empty string looks exactly like a post made of images.
+        from parse import entry
+        doc = ('<div class="spnc-entry-content">'
+               '<div class="gs"><div class=""><div id=":un" class="ii gt">'
+               '<div dir="ltr"></div>'
+               '</div></div></div>'
+               '<div class="gs"><div dir="ltr">Raphael Neven from the Netherlands '
+               'used his Lunalight Deck to come out on top.</div></div>'
+               '</div><footer>not the post</footer>')
+        got = entry(doc)
+        self.assertIn("Raphael Neven", got)
+        self.assertNotIn("not the post", got)
+
+    def test_a_flat_entry_still_ends_where_it_ends(self):
+        from parse import entry
+        doc = ('<div class="entry-content"><p>The body.</p></div>'
+               '<div class="comments">Not the body.</div>')
+        got = entry(doc)
+        self.assertIn("The body.", got)
+        self.assertNotIn("Not the body.", got)
+
+    def test_an_entry_nobody_closed_stops_at_the_footer(self):
+        from parse import entry
+        doc = '<div class="entry-content"><p>The body.</p><footer>Not the body.</footer>'
+        got = entry(doc)
+        self.assertIn("The body.", got)
+        self.assertNotIn("Not the body.", got)
+
+    def test_a_page_with_no_entry_at_all_reads_as_nothing(self):
+        from parse import entry, lead
+        self.assertEqual(entry("<html><body><p>Loose.</p></body></html>"), "")
+        self.assertEqual(lead("<html><body><p>Loose.</p></body></html>"), "")
+
     def test_prose_reaches_the_post_when_there_is_no_table(self):
         from parse import parse_post
         page = ('<title>Top 8 Pairings (with Deck Types!)</title>'

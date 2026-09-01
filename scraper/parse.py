@@ -75,8 +75,40 @@ _TITLE = re.compile(r"<title[^>]*>(.*?)</title>", re.S | re.I)
 # the posts that announce a winner: the sentence naming one is always the first
 # thing such a post says, and holding whole articles in memory for every page of
 # a 140-post event to read one line of them would be waste.
-_ENTRY = re.compile(r"class=\"[^\"]*entry-content[^\"]*\"[^>]*>(.*?)"
-                    r"(?:</div>\s*</div>|<footer)", re.S | re.I)
+_ENTRY_OPEN = re.compile(r"class=\"[^\"]*entry-content[^\"]*\"[^>]*>", re.I)
+_DIV = re.compile(r"<(/?)div\b[^>]*>", re.I)
+
+
+def entry(doc: str) -> str:
+    """The post's body: everything inside the entry-content div.
+
+    Found by counting divs rather than by looking for the pair that closes it.
+    A regex ending at the first "</div></div>" is right for a flat post and
+    wrong for a nested one, and it fails silently -- YCS Chicago's winner post
+    nests its text four divs deep, so 140 characters of a 312KB page came back
+    and the rest, including
+
+        Raphael Neven from the Netherlands used his Lunalight Deck to come out
+        on top in a field of 1566 Duelists
+
+    was never read. The event had a winner post naming a Duelist in its own Top
+    4 and no champion, and the empty string looked like a post made of images.
+
+    Rare -- four pages in a cache of 4,349 -- but silent, and what it takes is
+    the end of the post.
+    """
+    if not (m := _ENTRY_OPEN.search(doc)):
+        return ""
+    start, depth = m.end(), 1
+    for tag in _DIV.finditer(doc, start):
+        depth += -1 if tag.group(1) else 1
+        if depth == 0:
+            return doc[start:tag.start()]
+    # No closing div for it. Everything to the footer, which is where the old
+    # rule stopped too.
+    rest = doc[start:]
+    cut = re.search(r"<footer", rest, re.I)
+    return rest[:cut.start()] if cut else rest
 _SCRIPTS = re.compile(r"<(script|style).*?</\1>", re.S | re.I)
 LEAD_CHARS = 400
 # A finals feature match is a whole match written out, and the sentence naming
@@ -207,10 +239,9 @@ def lead(doc: str, limit: int = LEAD_CHARS) -> str:
     announcing a champion sometimes carries the final standings underneath, and
     a thousand names of table would drown the one sentence that matters.
     """
-    m = _ENTRY.search(doc)
-    if not m:
+    if not (found := entry(doc)):
         return ""
-    body = _TABLE.sub(" ", _SCRIPTS.sub(" ", m.group(1)))
+    body = _TABLE.sub(" ", _SCRIPTS.sub(" ", found))
     return re.sub(r"\s+", " ", _text(body))[:limit].strip()
 
 

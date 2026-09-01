@@ -224,7 +224,12 @@ def round_key(post) -> tuple[str, Any]:
 #     then lists the placings behind them -- "the rest of the Top 4" -- and a
 #     team's own name is often only in the heading, with the body naming the
 #     three Duelists and not the team.
-BUILD_VERSION = 35
+# 36: read the whole entry. The body of a post was found by ending at the
+#     first "</div></div>", which is right for a flat post and silently wrong
+#     for a nested one: YCS Chicago's winner post returned 140 characters of a
+#     312KB page, stopping before the winner's name, and an empty body looks
+#     exactly like a post made of images.
+BUILD_VERSION = 36
 
 
 @dataclass
