@@ -221,12 +221,13 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
         #
         # Whichever of the two names is found first stands for the team, so a
         # post that says "defeated" still reads the right way round.
-        def where(name: str) -> int:
+        def where(name: str, hay: str) -> int:
             found = [at for who in [name] + list((rosters or {}).get(name, []))
-                     if (at := named_in(who, text)) >= 0]
+                     if (at := named_in(who, hay)) >= 0]
             return min(found) if found else -1
 
-        named = sorted((at, name) for name in candidates if (at := where(name)) >= 0)
+        named = sorted((at, name) for name in candidates
+                       if (at := where(name, text)) >= 0)
         if len(named) == 1:
             claimed.add(named[0][1])
         elif len(named) > 1:
@@ -235,5 +236,26 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
             beat = DEFEAT.search(text)
             if beat and named[0][0] < beat.start() <= named[1][0]:
                 claimed.add(named[0][1])
+            else:
+                # No such word, which is the commoner case: the blog crowns the
+                # winner in one sentence and mentions who they beat in the
+                # next.
+                #
+                #   Overcoming 716 other Duelists, Anderson Tsang is your
+                #   newest YCS Champion! He piloted his Infernoid Deck to
+                #   victory against Leonard Anaya's Zoodiac Deck in the Finals.
+                #
+                # Read whole, that names two finalists and nothing says which
+                # way round -- YCS Denver had no champion on the strength of
+                # it. The sentence that does the crowning names one of them,
+                # and that is the one being crowned.
+                #
+                # Only where exactly one is in it. "X defeated Y to become
+                # Champion" puts both in that sentence, and is answered above
+                # or not at all -- a guess is worse than no champion.
+                said = crowning(text)
+                inside = [name for _, name in named if where(name, said) >= 0]
+                if len(inside) == 1:
+                    claimed.add(inside[0])
     # Two posts naming two different winners is a disagreement, not a result.
     return claimed.pop() if len(claimed) == 1 else None

@@ -176,7 +176,11 @@ def round_key(post) -> tuple[str, Any]:
 #     three 2022 events filed under what the qualifier was called before 2023.
 #     Every year from 2011 to 2026 is now named the same way, and the only
 #     gaps left are 2020 and 2021, when these were not held.
-BUILD_VERSION = 25
+# 26: the sentence that crowns somebody names them. A winner post that names
+#     both finalists and no word like "defeated" between them was a
+#     disagreement and no champion, which is how YCS Denver had a winner post
+#     saying "Anderson Tsang is your newest YCS Champion" and no champion.
+BUILD_VERSION = 26
 
 
 @dataclass
