@@ -201,7 +201,12 @@ def round_key(post) -> tuple[str, Any]:
 #     wrong for the side event itself -- and the Dragon Duel has been a
 #     tournament of its own since version 20 grouped it separately. Five of
 #     them had a winner post naming a Duelist standing in their own cut.
-BUILD_VERSION = 30
+# 31: a post that opens with an event's name belongs to that event. A date is
+#     when the blog last edited a post, not when the event was, and an edit
+#     months later moved the post to whichever event ran that week: YCS
+#     Chicago's winner post went to YCS Knoxville, YCS Mexico City's to YCS
+#     Providence. 38 posts move and 229 that had no event at all are placed.
+BUILD_VERSION = 31
 
 
 @dataclass

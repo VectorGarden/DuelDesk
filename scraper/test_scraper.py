@@ -4385,6 +4385,60 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         self.assertEqual(got["cup-standings-after-round-9"],
                          ("2023-alpha-open", "discovered+date"))
 
+    def test_a_post_opening_with_an_events_name_goes_to_it(self):
+        # A date is what the blog last edited a post, not when the event was.
+        # YCS Chicago's winner post is dated four months after the event and
+        # went to YCS Knoxville, whose window held it.
+        got = self.assigned(
+            *self.coverage("ycs-chicago", "2019-02-04"),
+            *self.coverage("ycs-knoxville", "2019-06-02"),
+            ("2019/ycs/ycs-chicago-and-the-winner-is", "2019-06-02"))
+        self.assertEqual(got["ycs-chicago-and-the-winner-is"],
+                         ("2019-ycs-chicago", "name"))
+
+    def test_the_name_has_to_be_the_whole_of_it_and_at_the_front(self):
+        # A rule reading single words matched a feature match to the Austin
+        # event on the Duelist's forename, and moved fourteen hundred posts.
+        got = self.assigned(
+            *self.coverage("ycs-austin", "2019-02-04"),
+            *self.coverage("ycs-knoxville", "2019-06-02"),
+            ("2019/ycs/round-4-feature-match-austin-ruggeri-vs-bo-beta", "2019-06-02"))
+        self.assertNotEqual(got["round-4-feature-match-austin-ruggeri-vs-bo-beta"][0],
+                            "2019-ycs-austin")
+
+    def test_a_side_event_the_builder_keeps_apart_is_welcome(self):
+        # The Dragon Duel is its own tournament, so its champion belongs to it.
+        got = self.assigned(
+            *self.coverage("ycs-origins", "2016-06-24"),
+            *self.coverage("ycs-elsewhere", "2016-09-02"),
+            ("2016/ycs/ycs-origins-dragon-duel-champion", "2016-09-02"))
+        self.assertEqual(got["ycs-origins-dragon-duel-champion"],
+                         ("2016-ycs-origins", "name"))
+
+    def test_a_side_event_it_does_not_keep_apart_is_left_out(self):
+        # Speed Duel is not a tournament the builder separates, so a Top 8 of
+        # one would land in the main event's bracket -- a round it never
+        # played.
+        got = self.assigned(
+            *self.coverage("ycs-houston", "2025-04-20"),
+            *self.coverage("ycs-elsewhere", "2025-05-30"),
+            ("2025/ycs/ycs-houston-speed-duel-main-event-series-top-8", "2025-05-30"))
+        self.assertNotEqual(got["ycs-houston-speed-duel-main-event-series-top-8"][1],
+                            "name")
+
+    def test_the_events_own_name_is_not_read_as_a_side_event(self):
+        # SIDE_EVENT matches "invitational", which is half of what a UDS
+        # Invitational is called. Reading the whole slug threw away that
+        # event's own rounds.
+        got = self.assigned(
+            *self.coverage("uds-invitational-chicago", "2016-06-24"),
+            *self.coverage("ycs-elsewhere", "2016-09-02"),
+            ("2016/ycs/uds-invitational-chicago-here-are-the-pairings-for-round-11",
+             "2016-09-02"))
+        self.assertEqual(
+            got["uds-invitational-chicago-here-are-the-pairings-for-round-11"],
+            ("2016-uds-invitational-chicago", "name"))
+
     def test_a_round_naming_another_event_is_that_events(self):
         # A category is enough for the prose this rule is mostly for, and every
         # YCS post is filed under "ycs". It is nowhere near enough for a table:
@@ -4395,11 +4449,17 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         # Philadelphia ran months earlier, so its own window does not hold this
         # post and only the other event's does. Nothing but the name says whose
         # table it is.
+        #
+        # It used to be left unassigned, because nothing could act on a name.
+        # Now something can, and the post goes to the event it names. What this
+        # test is really about is that it does not go to the other one, and it
+        # still does not.
         got = self.assigned(
             *self.coverage("north-america-remote-duel-ycs", "2023-06-24"),
             *self.coverage("ycs-philadelphia", "2023-01-14"),
             ("2023/ycs/ycs-philadelphia-top-64-pairings", "2023-06-25"))
-        self.assertIsNone(got["ycs-philadelphia-top-64-pairings"][0])
+        self.assertEqual(got["ycs-philadelphia-top-64-pairings"],
+                         ("2023-ycs-philadelphia", "name"))
 
     def test_a_round_the_event_has_no_other_way_to_get_is_kept(self):
         # Refusing every dated round was the first fix and it was too blunt.
