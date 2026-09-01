@@ -185,7 +185,11 @@ def round_key(post) -> tuple[str, Any]:
 #     somebody who was beaten -- "In second place was", "Runner-up:". Four
 #     more events had a winner post naming both finalists and no word the
 #     archive read as putting one before the other.
-BUILD_VERSION = 27
+# 28: the Extravaganza is named, not slugged. The last event on the site whose
+#     name was its slug title-cased -- "2023 Yu Gi Oh Tcg Remote Duel
+#     Extravaganza Main Event". Named for its month like the Remote Duel YCS
+#     beside it, which is what the blog's own welcome post calls it.
+BUILD_VERSION = 28
 
 
 @dataclass
