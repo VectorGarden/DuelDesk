@@ -2631,6 +2631,42 @@ class TestChampion(unittest.TestCase):
                      "Supreme Pro": ["Hansel Erik Aguero", "Pakawat Thomas Pamornsut"]})
         self.assertEqual(got, "The Jawhari Brothers")
 
+    def test_the_roll_call_names_the_winner_first(self):
+        # A winner post often crowns somebody and then lists the placings
+        # behind them. Everyone after "the rest of the Top 4" came second or
+        # worse.
+        from winners import champion
+        got = champion(
+            ["Erick Villanueva Priego", "Pablo Roberto Palacios Granados"],
+            [self.post("And the winner is….",
+                       "Erick Villanueva Priego of Mexico! Congratulations to Erick "
+                       "for becoming the new YCS Guatemala Champion! Congratulations "
+                       "also to the rest of the Top 4! It's from left: Pablo Roberto "
+                       "Palacios Granados and Eddy Estuardo Palala Ortiz.")])
+        self.assertEqual(got, "Erick Villanueva Priego")
+
+    def test_the_heading_is_part_of_what_a_post_says(self):
+        # TEAM YCS Las Vegas 2023 names the winning team in its heading and
+        # only the three Duelists in the body, so a rule reading the body
+        # alone found no team at all.
+        from winners import champion
+        got = champion(
+            ["2 World Champs and John", "Back For Seconds"],
+            [self.post("Congratulations to the TEAM YCS Las Vegas Champions: "
+                       "Team Back for Seconds",
+                       "Stephen Silverman, Dominic Couch, and Alexander Cancell")])
+        self.assertEqual(got, "Back For Seconds")
+
+    def test_a_heading_naming_nobody_settles_nothing(self):
+        # Reading the heading must not turn a post that names two finalists
+        # into one that names one.
+        from winners import champion
+        got = champion(
+            ["Ann Alpha", "Bo Beta"],
+            [self.post("And the winner is…",
+                       "Ann Alpha and Bo Beta met in the Finals.")])
+        self.assertIsNone(got)
+
     def test_winning_the_final_is_called_victory_against(self):
         # YCS Seattle crowns nobody in the form CROWNS reads -- "we finally
         # have a Champion!" is not "is your Champion" -- so the crowning

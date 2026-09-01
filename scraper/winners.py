@@ -100,7 +100,12 @@ HEDGE = re.compile(r"\b(will|would|could|about to|soon|away from|one of|if"
 DEFEAT = re.compile(
     r"\b(defeat(?:ed|s|ing)?|beat|beats|bested|topple[ds]?|overcame|overcome"
     r"|won against|victorious over|victory (?:against|over)"
-    r"|in second place|runner-?up)\b", re.I)
+    r"|in second place|runner-?up"
+    # The roll-call. A winner post often crowns somebody and then lists the
+    # placings behind them: "Congratulations to Erick ... Congratulations also
+    # to the rest of the Top 4! It's from left: Pablo ...". Everyone after
+    # that phrase came second or worse.
+    r"|rest of the top|in (?:third|fourth) place)\b", re.I)
 
 # Which format a post is about, where it says. A two-format event publishes two
 # of these posts and they must not be read against each other's brackets.
@@ -239,7 +244,12 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
     """
     claimed = set()
     for post in posts:
-        title, text = post.get("title") or "", post.get("text") or ""
+        title, body = post.get("title") or "", post.get("text") or ""
+        # What the post says, heading included. A team's own name is often
+        # only in the heading -- "Congratulations to the TEAM YCS Las Vegas
+        # Champions: Team Back for Seconds" -- and the body under it names the
+        # three Duelists and not the team.
+        text = f"{title}. {body}"
         if post.get("kind") == "feature":
             # A feature match is prose about two Duelists, and it names both of
             # them throughout -- so unlike a winner post, the whole of it says
