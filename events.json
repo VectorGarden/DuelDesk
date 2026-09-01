@@ -3654,7 +3654,7 @@
     },
     {
       "slug": "2016-sa-wcq",
-      "event": "SA WCQ",
+      "event": "South America WCQ 2016",
       "updated": "2016-06-19",
       "sample": false,
       "ongoing": false,
@@ -3679,7 +3679,7 @@
     },
     {
       "slug": "wcq-2016-mexico",
-      "event": "WCQ Mexico",
+      "event": "Central America WCQ 2016",
       "updated": "2016-06-11",
       "sample": false,
       "ongoing": false,
@@ -3754,7 +3754,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2015-south-american-wcq/rounds.json",
-      "postCount": 26,
+      "postCount": 27,
       "formats": [
         {
           "format": null,
