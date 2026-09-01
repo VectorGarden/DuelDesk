@@ -1787,6 +1787,27 @@
       "coverageBy": "Konami",
       "path": "events/2023-team-ycs-las-vegas/rounds.json",
       "postCount": 33,
+      "champions": [
+        {
+          "format": null,
+          "name": "Back For Seconds",
+          "deck": null,
+          "members": [
+            {
+              "name": "Stephen S.",
+              "deck": "Kashtira"
+            },
+            {
+              "name": "Dominic C.",
+              "deck": "Kashtira"
+            },
+            {
+              "name": "Alexander C.",
+              "deck": "Kashtira"
+            }
+          ]
+        }
+      ],
       "formats": [
         {
           "format": null,
