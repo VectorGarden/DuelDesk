@@ -235,7 +235,12 @@ def round_key(post) -> tuple[str, Any]:
 #     so both survived and normalise_name swapped the comma around them. 846
 #     rows carried a country in the middle of a name and 47 a title, and a
 #     Duelist written both ways counted as two people in their own records.
-BUILD_VERSION = 37
+# 38: a post may crown a winner rather than a champion. The 2025 North America
+#     WCQ says "Wilfredo Flores is the North America World Championship
+#     Qualifier winner!" and never says champion -- "Championship" there is the
+#     event's name -- so the sentence that crowned him said nothing this could
+#     read.
+BUILD_VERSION = 38
 
 
 @dataclass

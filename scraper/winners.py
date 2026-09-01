@@ -70,9 +70,21 @@ HELD_ELSEWHERE = re.compile(
 # A sentence that crowns somebody, rather than looking forward to it. The
 # finals feature match is prose, and most of what it says about champions is
 # not a result: a preview of what is at stake, or a Duelist's history.
-CROWNS = re.compile(r"\bis (?:your|the|our)\b[^.!?]*\bchampions?\b"
+# "winner" as well as "champion", because the blog crowns with both and the
+# 2025 North America WCQ uses only the first:
+#
+#     Wilfredo Flores is the North America World Championship Qualifier winner!
+#
+# "Championship" there is the event's name, not a crowning, so the sentence
+# said nothing this could read and the event named no winner.
+#
+# Still only in the shapes that crown somebody. "He had an intense battle
+# against last year's winner, Aditya Dharap" is in the same post, two
+# sentences later, and says who did not win it.
+CROWNS = re.compile(r"\bis (?:your|the|our)\b[^.!?]*\b(?:champions?|winners?)\b"
                     r"|\bcrown\b|\bchampions? of\b"
-                    r"|\bbecomes? (?:your|the|our)\b[^.!?]*\bchampions?\b", re.I)
+                    r"|\bbecomes? (?:your|the|our)\b[^.!?]*\b(?:champions?|winners?)\b",
+                    re.I)
 
 # What makes such a sentence a prediction, a condition or a biography instead.
 # Every one of these was found in a real finals feature match:
