@@ -1135,7 +1135,7 @@
     },
     {
       "slug": "2024-ycs-raleigh",
-      "event": "QQ",
+      "event": "YCS Raleigh",
       "updated": "2024-04-25",
       "sample": false,
       "ongoing": false,
@@ -1363,7 +1363,7 @@
     },
     {
       "slug": "2023-ycs-indianapolis",
-      "event": "QQ",
+      "event": "YCS Indianapolis",
       "updated": "2023-10-22",
       "sample": false,
       "ongoing": false,
@@ -1478,7 +1478,7 @@
     },
     {
       "slug": "2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event",
-      "event": "Yu-Gi-Oh! TCG Remote Duel Extravaganza Main Event",
+      "event": "2023 Yu Gi Oh Tcg Remote Duel Extravaganza Main Event",
       "updated": "2023-07-30",
       "sample": false,
       "ongoing": false,
@@ -1546,7 +1546,7 @@
     },
     {
       "slug": "2023-north-america-remote-duel-ycs",
-      "event": "North America Remote Duel YCS",
+      "event": "North America Remote Duel YCS June 2023",
       "updated": "2023-06-25",
       "sample": false,
       "ongoing": false,
@@ -1746,7 +1746,7 @@
     },
     {
       "slug": "2022-remote-duel-ycs-north-america",
-      "event": "Remote Duel YCS",
+      "event": "North America Remote Duel YCS December 2022",
       "updated": "2022-12-11",
       "sample": false,
       "ongoing": false,
