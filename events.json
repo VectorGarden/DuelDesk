@@ -3890,13 +3890,13 @@
     },
     {
       "slug": "2014-wcq-ca",
-      "event": "WCQ CA",
+      "event": "Central America WCQ 2014",
       "updated": "2014-07-06",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2014-wcq-ca/rounds.json",
-      "postCount": 42,
+      "postCount": 47,
       "formats": [
         {
           "format": null,
