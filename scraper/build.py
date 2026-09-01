@@ -196,7 +196,12 @@ def round_key(post) -> tuple[str, Any]:
 #     roster from. And a team named inside another team's name is not
 #     independently named: its Top 4 holds both "TCG Collectibles" and "Team
 #     TCG Collectibles Fala Galera".
-BUILD_VERSION = 29
+# 30: a tournament may claim its own championship. announces_a_winner refuses
+#     a post that names a side event, which is right for the main event and
+#     wrong for the side event itself -- and the Dragon Duel has been a
+#     tournament of its own since version 20 grouped it separately. Five of
+#     them had a winner post naming a Duelist standing in their own cut.
+BUILD_VERSION = 30
 
 
 @dataclass

@@ -2526,6 +2526,51 @@ class TestChampion(unittest.TestCase):
                        "from Mexico with their UDS title belts.")])
         self.assertEqual(got, "Gerald Yagans South Chaves")
 
+    def test_a_tournament_may_claim_its_own_championship(self):
+        # The Dragon Duel became a tournament of its own when the builder
+        # started grouping it separately, and this rule was still refusing it
+        # its own winner post -- so four events had a Dragon Duel champion
+        # named in prose, sitting in their own Top 8, and no champion.
+        from winners import announces_a_winner, champion
+        title = "And the new North American Dragon Duel Champion is…"
+        text = ("The Dragon Duel Champion of the North American 2016 World "
+                "Championship Qualifier has been crowned! Congratulations to "
+                "Aiden Christopher Tiemann of Austin, Texas!")
+        self.assertFalse(announces_a_winner(title, text),
+                         "not the main event's result")
+        self.assertTrue(announces_a_winner(title, text, "Dragon Duel"),
+                        "but it is the Dragon Duel's")
+        got = champion(["Aiden Christopher Tiemann", "Ian Gregory Parish"],
+                       [self.post(title, text)], "Dragon Duel")
+        self.assertEqual(got, "Aiden Christopher Tiemann")
+
+    def test_a_side_events_winner_is_still_not_the_main_events(self):
+        # The rule this loosens is the one that keeps a Dragon Duel post from
+        # crowning the main event, and that has to keep working.
+        from winners import announces_a_winner, champion
+        title = "And the new North American Dragon Duel Champion is…"
+        text = "Congratulations to Aiden Christopher Tiemann of Austin, Texas!"
+        self.assertFalse(announces_a_winner(title, text, None))
+        self.assertIsNone(champion(["Aiden Christopher Tiemann"],
+                                   [self.post(title, text)], None))
+
+    def test_one_side_event_does_not_claim_another(self):
+        # Asking as the Dragon Duel does not open the door to every side
+        # event: a Public Events playoff is still somebody else's result.
+        from winners import announces_a_winner
+        self.assertFalse(announces_a_winner("Public Events Playoff Winner!",
+                                            "Louis Poma won the points playoff.",
+                                            "Dragon Duel"))
+
+    def test_the_format_asking_is_matched_loosely(self):
+        # SIDE_EVENT says "public event" where the builder says "Public
+        # Events", so the shorter is checked against the longer.
+        from winners import _asked_about
+        self.assertTrue(_asked_about("public event", "Public Events"))
+        self.assertTrue(_asked_about("dragon duel", "Dragon Duel"))
+        self.assertFalse(_asked_about("dragon duel", "Genesys"))
+        self.assertFalse(_asked_about("dragon duel", None))
+
     def test_a_greeting_is_not_an_announcement(self):
         # "Welcoming the National Champions of South America" greets Duelists
         # who won somewhere else. It is not this event's result.
