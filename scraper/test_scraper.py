@@ -3807,13 +3807,33 @@ class TestTheRemoteDuelYCS(unittest.TestCase):
             self.assertEqual(got, name, slug)
             self.assertNotIn("America", got)
 
-    def test_the_extravaganza_is_not_a_ycs(self):
-        # A different thing that also happens to be played remotely. It keeps
-        # its own name rather than being renamed after a series it is not in.
+    def test_the_extravaganza_is_named_for_its_month_too(self):
+        # A different series played the same way, and the last name on the
+        # site that was a slug rather than a name. The blog calls it "the July
+        # 2023 Remote Duel Extravaganza" in its own welcome post.
+        from naming import remote_duel_name, canonical_name
+        slug = "2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"
+        was = "2023 Yu Gi Oh Tcg Remote Duel Extravaganza Main Event"
+        self.assertEqual(remote_duel_name(slug, was, "2023-07-30"),
+                         "Remote Duel Extravaganza July 2023")
+        self.assertEqual(canonical_name(was, slug, "2023-07-30", named=False)[0],
+                         "Remote Duel Extravaganza July 2023")
+
+    def test_an_extravaganza_is_not_called_a_ycs(self):
+        # Two series, not one. Naming the Extravaganza after the YCS would
+        # file it under a series it is not in.
         from naming import remote_duel_name
-        self.assertIsNone(remote_duel_name(
-            "2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event",
-            "2023 Yu Gi Oh Tcg Remote Duel Extravaganza Main Event", "2023-07-30"))
+        got = remote_duel_name("2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event",
+                               "2023 Yu Gi Oh Tcg Remote Duel Extravaganza Main Event",
+                               "2023-07-30")
+        self.assertNotIn("YCS", got)
+
+    def test_something_remote_that_is_neither_keeps_its_name(self):
+        # The rule answers two series and refuses everything else, rather than
+        # renaming anything with "remote duel" in it.
+        from naming import remote_duel_name
+        self.assertIsNone(remote_duel_name("2022-remote-duel-photo-gallery",
+                                           "Remote Duel Photo Gallery", "2022-05-01"))
 
     def test_an_ordinary_ycs_is_left_alone(self):
         from naming import remote_duel_name, canonical_name

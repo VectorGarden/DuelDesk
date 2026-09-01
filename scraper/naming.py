@@ -311,9 +311,12 @@ def worlds_name(slug: str, name: str, ended: str | None) -> str | None:
 # The blog names three of them that way itself -- "Remote Duel YCS January
 # 2024" -- so this is its own convention with the region put in front.
 _IS_REMOTE_DUEL = re.compile(r"remote duel", re.I)
-# The Remote Duel Extravaganza is a different thing and is not a YCS, so it
-# keeps its own name rather than being renamed after a series it is not in.
+# Two series are played remotely and they are not the same event. The YCS is
+# the one with a region; the Extravaganza runs a Yu-Gi-Oh! TCG main event and a
+# DUEL LINKS one beside it, and only the TCG half is coverage this archive
+# holds.
 _IS_YCS = re.compile(r"\bycs\b|\brdycs\b", re.I)
+_IS_EXTRAVAGANZA = re.compile(r"\bextravaganzas?\b", re.I)
 # Latin America first: _REGIONS has no pattern for it, and it is the only
 # non-North-American Remote Duel YCS the archive holds.
 _RD_REGIONS = ((r"\blatin american?\b", "Latin America"),
@@ -354,13 +357,25 @@ def remote_duel_name(slug: str, name: str, ended: str | None) -> str | None:
     -- and inventing a region for them would be a guess dressed as a fact.
     """
     text = f"{slug} {name}".replace("-", " ")
-    if not (_IS_REMOTE_DUEL.search(text) and _IS_YCS.search(text)):
+    if not _IS_REMOTE_DUEL.search(text):
+        return None
+    if _IS_YCS.search(text):
+        series = "Remote Duel YCS"
+    elif _IS_EXTRAVAGANZA.search(text):
+        # Named for its month like the YCS is, and for the same reason: the
+        # blog runs more than one a year and calls this one "the July 2023
+        # Remote Duel Extravaganza" in its own welcome post. Left as the slug
+        # title-cased, it read "2023 Yu Gi Oh Tcg Remote Duel Extravaganza
+        # Main Event" -- the last name on the site that was a slug rather than
+        # a name.
+        series = "Remote Duel Extravaganza"
+    else:
         return None
     year, month = _year(slug, ended), _month(slug, ended)
     if not (year and month):
         return None
     region = next((r for pattern, r in _RD_REGIONS if re.search(pattern, text, re.I)), None)
-    return f"{region + ' ' if region else ''}Remote Duel YCS {month} {year}"
+    return f"{region + ' ' if region else ''}{series} {month} {year}"
 
 
 def wcq_name(slug: str, name: str, ended: str | None) -> str | None:
