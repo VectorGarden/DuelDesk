@@ -2400,12 +2400,31 @@
       <description>Standings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
+      <title>North America WCQ 2026: Token Booth at the NA WCQ</title>
+      <link>https://yugiohblog.konami.com/2026/championships/token-booth-at-the-na-wcq/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/token-booth-at-the-na-wcq/</guid>
+      <category>News</category>
+      <category domain="event">2026-north-america-wcq</category>
+      <pubDate>Sat, 11 Jul 2026 15:59:23 +0000</pubDate>
+      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
       <title>North America WCQ 2026: Welcome to the North America World Championship Qualifier!</title>
       <link>https://yugiohblog.konami.com/2026/championships/welcome-to-the-north-america-world-championship-qualifier/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/welcome-to-the-north-america-world-championship-qualifier/</guid>
       <category>News</category>
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sat, 11 Jul 2026 14:59:02 +0000</pubDate>
+      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>North America WCQ 2026: NA WCQ Public Events Prizes and Prize Wall</title>
+      <link>https://yugiohblog.konami.com/2026/championships/na-wcq-public-events-prizes-and-prize-wall/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/na-wcq-public-events-prizes-and-prize-wall/</guid>
+      <category>News</category>
+      <category domain="format">Public Events</category>
+      <category domain="event">2026-north-america-wcq</category>
+      <pubDate>Sat, 11 Jul 2026 14:57:04 +0000</pubDate>
       <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
@@ -2425,6 +2444,15 @@
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sat, 11 Jul 2026 14:46:22 +0000</pubDate>
       <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>North America WCQ 2026: Mulcharmies Spotted at the NA WCQ!</title>
+      <link>https://yugiohblog.konami.com/2026/championships/mulcharmies-spotted-at-the-na-wcq/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/mulcharmies-spotted-at-the-na-wcq/</guid>
+      <category>News</category>
+      <category domain="event">2026-north-america-wcq</category>
+      <pubDate>Sat, 11 Jul 2026 14:44:21 +0000</pubDate>
+      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>North America WCQ 2026: North America WORLD CHAMPIONSHIP Qualifier 2026 In-Person Survey Sweepstakes Terms &amp; Conditions</title>
@@ -2864,36 +2892,6 @@
       <category domain="event">2026-south-america-genesys-championship</category>
       <pubDate>Sun, 21 Jun 2026 14:41:45 +0000</pubDate>
       <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>South America Genesys Championship: Standings after Round 9</title>
-      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-9/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-9/</guid>
-      <category>Standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-south-america-genesys-championship</category>
-      <pubDate>Sun, 21 Jun 2026 14:41:10 +0000</pubDate>
-      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>South America Genesys Championship: Round 9 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-9-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-round-9-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-south-america-genesys-championship</category>
-      <pubDate>Sun, 21 Jun 2026 13:56:38 +0000</pubDate>
-      <description>Pairings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>South America Genesys Championship: Standings after Round 8</title>
-      <link>https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-8/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-genesys-championship-standings-after-round-8/</guid>
-      <category>Standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-south-america-genesys-championship</category>
-      <pubDate>Sun, 21 Jun 2026 13:55:32 +0000</pubDate>
-      <description>Standings from South America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

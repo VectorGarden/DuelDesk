@@ -621,12 +621,12 @@
     "slug": "2026-north-america-wcq"
   },
   {
-    "title": "Welcome Back to the North America Yu-Gi-Oh! World Championship Qualifier 2026!",
-    "url": "https://yugiohblog.konami.com/2026/championships/welcome-back-to-the-north-america-yu-gi-oh-world-championship-qualifier-2026/",
-    "modified": "2026-07-11T07:56:18-07:00",
+    "title": "NA WCQ Public Events Prizes and Prize Wall",
+    "url": "https://yugiohblog.konami.com/2026/championships/na-wcq-public-events-prizes-and-prize-wall/",
+    "modified": "2026-07-11T07:57:04-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
-    "format": null,
+    "format": "Public Events",
     "slug": "2026-north-america-wcq"
   },
   {
@@ -639,9 +639,9 @@
     "slug": "2026-north-america-wcq"
   },
   {
-    "title": "North America WCQ Participation Prizes!",
-    "url": "https://yugiohblog.konami.com/2026/championships/north-america-wcq-participation-prizes/",
-    "modified": "2026-07-11T10:01:24-07:00",
+    "title": "Welcome Back to the North America Yu-Gi-Oh! World Championship Qualifier 2026!",
+    "url": "https://yugiohblog.konami.com/2026/championships/welcome-back-to-the-north-america-yu-gi-oh-world-championship-qualifier-2026/",
+    "modified": "2026-07-11T07:56:18-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
     "format": null,
@@ -652,6 +652,33 @@
     "url": "https://yugiohblog.konami.com/2026/championships/nawcq-round-9-feature-match-deonte-thompson-vs-thomas-chacko/",
     "modified": "2026-07-11T20:08:40-07:00",
     "kind": "feature",
+    "event": "North America WCQ 2026",
+    "format": null,
+    "slug": "2026-north-america-wcq"
+  },
+  {
+    "title": "Mulcharmies Spotted at the NA WCQ!",
+    "url": "https://yugiohblog.konami.com/2026/championships/mulcharmies-spotted-at-the-na-wcq/",
+    "modified": "2026-07-11T07:44:21-07:00",
+    "kind": "news",
+    "event": "North America WCQ 2026",
+    "format": null,
+    "slug": "2026-north-america-wcq"
+  },
+  {
+    "title": "Token Booth at the NA WCQ",
+    "url": "https://yugiohblog.konami.com/2026/championships/token-booth-at-the-na-wcq/",
+    "modified": "2026-07-11T08:59:23-07:00",
+    "kind": "news",
+    "event": "North America WCQ 2026",
+    "format": null,
+    "slug": "2026-north-america-wcq"
+  },
+  {
+    "title": "North America WCQ Participation Prizes!",
+    "url": "https://yugiohblog.konami.com/2026/championships/north-america-wcq-participation-prizes/",
+    "modified": "2026-07-11T10:01:24-07:00",
+    "kind": "news",
     "event": "North America WCQ 2026",
     "format": null,
     "slug": "2026-north-america-wcq"
