@@ -139,6 +139,12 @@ a{color:inherit}
   font:500 .82rem var(--body); color:var(--text); background:var(--surface-2);
   border:1px solid var(--line); border-radius:var(--r-md);
   padding:.4rem 1.9rem .4rem .7rem; min-height:40px; width:min(22rem,60vw);
+  /* A floor, because the width is tied to the viewport and box-sizing is
+     border-box: where 60vw resolves to nothing -- a window this narrow, or a
+     tab laid out before its viewport is known -- the box collapses to its own
+     padding and renders as a 43.6px stub with the chevron and no room to type.
+     Nothing else stops it; a text input's min-width is 0. */
+  min-width:8rem;
   /* A chevron, so the box reads as something that opens rather than as another
      search field -- the one in the header is the other kind, and this replaced
      a select that had one. Drawn rather than linked: a CSS strict enough to
@@ -185,8 +191,19 @@ a{color:inherit}
 .picker li span{font:500 .75rem var(--mono); opacity:.7; flex:none}
 .picker__none{padding:.6rem; color:var(--text-3); font-size:.82rem}
 /* Once it wraps it is the only thing on its row, and a lone control pinned to
-   the right edge reads as though something is missing beside it. */
-@media (max-width:560px){.picker{margin-left:0}}
+   the right edge reads as though something is missing beside it.
+
+   The list hangs off the left of the screen at this size if it stays anchored
+   to the input: it is up to 80vw wide and the input it is pinned to by its
+   right edge is narrower than that, so on a 375px screen it opened at x=-4 and
+   stopped 79px short of the right margin. Positioned against the whole picker
+   instead, it spans from the label to the input's right edge and stays on the
+   screen at any width. */
+@media (max-width:560px){
+  .picker{margin-left:0; position:relative}
+  .picker__box{position:static}
+  .picker ul[role="listbox"]{left:0; right:0; width:auto}
+}
 
 .hero h1{font-size:clamp(1.9rem,5.2vw,3.1rem); letter-spacing:-.01em; max-width:20ch}
 .hero__meta{
