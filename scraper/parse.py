@@ -396,9 +396,14 @@ def _words(text: str) -> str:
 KINDS = (
     ("pairings",  r"\bpairings?\b"),
     ("standings", r"\bstandings\b|\bpoint totals\b"),
-    # "Final Match" is how the blog titles a final it writes up rather than
-    # tabulates, and sixty-six of them were filed as news.
-    ("feature",   r"\bfeature match\b|\bfinal match\b|\bmatch:\s"),
+    # Not "Final Match", though the blog titles sixty-six posts that way and
+    # the page used to read them as feature matches. Those posts carry the
+    # final's pairing table and often only a line of preview text -- "Good
+    # luck to both Duelists!" -- and a feature match is a write-up, so its
+    # table is not read as a round. Calling them feature cost the 2019 UDS
+    # Invitational Medellin its champion: the Final had no pairing left to
+    # derive one from.
+    ("feature",   r"\bfeature match\b|\bmatch:\s"),
     # Any post about the decks played, which is looser than it looks: the blog
     # writes "Top 8 Decklists", "Deck Breakdown", "Deck Type Breakdown",
     # "Duelists and Decks in Day 2" and "Top 16 Players and Decks", and a rule

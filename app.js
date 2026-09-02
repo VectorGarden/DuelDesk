@@ -137,7 +137,10 @@ function roundFrom(t){
 function kindFrom(t){
   if (/\bpairings?\b/.test(t))                                                 return 'pairings';
   if (/\bstandings\b|\bpoint totals\b/.test(t))                                return 'standings';
-  if (/\bfeature match\b|\bfinal match\b|\bmatch:\s/.test(t))                  return 'feature';
+  // Not "Final Match": those posts carry the final's pairing table, and the
+  // builder reads a feature match as a write-up rather than a round. See
+  // parse.KINDS -- calling them feature cost an event its champion.
+  if (/\bfeature match\b|\bmatch:\s/.test(t))                                    return 'feature';
   // Any post about the decks played. What comes out is not a phrasing but
   // three series that are about decks without covering any: QQ, the reader
   // question column; the Structure Deck and game mat products; and Deck
