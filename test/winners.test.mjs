@@ -199,6 +199,43 @@ test('a Duelist counts the events they won on a team', async (t) => {
     'a single win should carry no badge');
 });
 
+test('a Duelist\'s own row counts the events they won on a team', async (t) => {
+  // Jesse Dean Kotton has won four events alone and two on teams. His own rows
+  // said four while his name inside a roster said six -- the same Duelist,
+  // two numbers, on one page.
+  const page = await loadPage(manifest([...TEAMS,
+    { slug: 's2', event: 'YCS Utrecht', updated: '2026-01-10',
+      path: 'events/s2/rounds.json',
+      champions: [{ format: null, name: 'Repeat Winner', deck: 'Ryzeal' }] }]));
+  t.after(() => page.close());
+  const solo = rows(page).find((r) => r.querySelector('.win__n').textContent === 'Repeat Winner');
+  // Scoped to the row's own heading: a roster's badges are inside the row too.
+  assert.equal(solo.querySelector('.win__who .win__x').textContent.trim(), '3\u00d7',
+    'one win alone and two on teams is three, on the row and in the roster alike');
+});
+
+test('a team is still counted by the name it entered under', async (t) => {
+  // The Duelists' totals must not be handed to the team: Ares won once.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  const ares = rows(page).find((r) => r.querySelector('.win__n').textContent === 'Ares');
+  assert.equal(ares.querySelector('.win__who .win__x'), null);
+});
+
+test('an expanded roster does not push the event and date out of place', async (t) => {
+  // The winners row is a flex line with space-between. A roster that does not
+  // claim a row of its own becomes a third column, and the event and its date
+  // land in the middle of the row instead of against the right margin.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  const basis = page.get(`(() => {
+    const ul = document.querySelector('.win__roster');
+    const cs = getComputedStyle(ul);
+    return cs.flexBasis || cs.getPropertyValue('flex-basis');
+  })()`);
+  assert.equal(basis, '100%', 'the roster takes a full row under its team');
+});
+
 test('an open roster survives a search that keeps its row', async (t) => {
   const page = await loadPage(manifest(TEAMS));
   t.after(() => page.close());

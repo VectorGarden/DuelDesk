@@ -590,8 +590,13 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
 .roster-open:hover{color:var(--text); border-color:var(--text-3)}
 
 /* The roster expanded under a winners row, indented so it reads as belonging
-   to the team above it rather than as three more winners. */
-.win__roster{list-style:none; margin:.5rem 0 0 1.1rem; padding:0 0 0 .9rem;
-  border-left:1px solid var(--line)}
+   to the team above it rather than as three more winners.
+
+   Its own full-width row, because the row above is a flex line with
+   space-between: a roster that did not claim one became a third column, so the
+   names sat at the right edge and shoved the event and its date into the
+   middle of the row, away from the margin every other row aligns them to. */
+.win__roster{flex:1 0 100%; list-style:none; margin:.5rem 0 0 1.1rem;
+  padding:0 0 0 .9rem; border-left:1px solid var(--line)}
 .win__roster li{display:flex; align-items:baseline; gap:.55rem; flex-wrap:wrap;
   padding:.22rem 0}

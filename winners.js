@@ -66,25 +66,22 @@ const when = (iso) => {
 const hit = (...fields) =>
   !query || fields.filter(Boolean).join(' ').toLowerCase().includes(query);
 
-/* How many events this person has won, across the whole archive. Worth saying:
-   the same names come back, and a list that did not say so would be hiding the
-   most interesting thing in it. */
-function repeats(rows){
-  const n = new Map();
-  for (const r of rows) n.set(r.name, (n.get(r.name) || 0) + 1);
-  return n;
-}
+/* How many events each name in the archive has won. Worth saying: the same
+   names come back, and a list that did not say so would be hiding the most
+   interesting thing in it.
 
-/* How many events a Duelist has won, counting the ones they won as part of a
-   team. A team's title belongs to its three Duelists as much as to the name
-   they entered under -- Kamal Derrick El Crooks-Valdez has won alone and has
-   won on two teams, and a count that only saw the team name would say once. */
-function duelistWins(rows){
+   A team's title belongs to its three Duelists as much as to the name they
+   entered under, so a team row credits both -- the team, and every Duelist on
+   it. Jesse Dean Kotton has won four events alone and two on teams, and until
+   this was one map his own rows said four while his name inside a roster said
+   six. Two counters answering almost the same question is how that happened,
+   so there is one. */
+function winsByName(rows){
   const n = new Map();
   const add = (name) => name && n.set(name, (n.get(name) || 0) + 1);
   for (const r of rows){
-    if (r.members?.length) r.members.forEach(m => add(m.name));
-    else add(r.name);
+    add(r.name);
+    r.members?.forEach(m => add(m.name));
   }
   return n;
 }
@@ -127,8 +124,7 @@ document.addEventListener('click', e => {
 });
 
 function render(){
-  const all = repeats(WINS);
-  const each = duelistWins(WINS);
+  const wonBy = winsByName(WINS);
   renderFormatFilters();
   const rows = WINS.filter(r =>
     (formatFilter === 'all' || formatOf(r) === formatFilter)
@@ -147,7 +143,7 @@ function render(){
 
   shown = rows;
   list.innerHTML = `<ol class="wins">` + rows.map((r, i) => {
-    const won = all.get(r.name) || 1;
+    const won = wonBy.get(r.name) || 1;
     return `<li class="win">
       <div class="win__who">
         <b class="win__n">${esc(r.name)}</b>
@@ -165,7 +161,7 @@ function render(){
       </div>
       ${r.members?.length ? `<ul class="win__roster" id="roster-${esc(i)}"${
         open.has(rosterKey(r)) ? '' : ' hidden'}>${r.members.map(m => {
-          const mw = each.get(m.name) || 1;
+          const mw = wonBy.get(m.name) || 1;
           return `<li>
             <span class="roster__n">${esc(m.name)}</span>
             ${mw > 1 ? `<span class="win__x" title="Events won in this archive"
