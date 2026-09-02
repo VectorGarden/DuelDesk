@@ -2889,6 +2889,23 @@ class TestChampion(unittest.TestCase):
             [self.post("And the new Central American Champion is…", text)])
         self.assertEqual(got, "Jose Lagunez")
 
+    def test_a_name_word_is_a_whole_word(self):
+        # A substring search reads a name's particles into ordinary words. YCS
+        # Mexico City's winner post says "used a Mementotlan Deck", and
+        # "Christopher Alvarado De La O" was found in it -- "de" inside Deck,
+        # "la" inside Mementotlan, close enough together to look like a name.
+        # Two Duelists named, no word between them, no champion.
+        from winners import named_in, champion
+        text = ("Congratulations to Rene Ybarra, who used a Mementotlan Deck "
+                "to become our newest YCS Champion!")
+        self.assertEqual(named_in("Christopher Alvarado De La O", text), -1)
+        self.assertGreaterEqual(named_in("Rene Epigmenio Ybarra Trapote", text), 0)
+        got = champion(
+            ["Christopher Alvarado De La O", "Roberto Lopez arce",
+             "Juan Diego Gonzalez", "Rene Epigmenio Ybarra Trapote"],
+            [self.post("YCS Mexico City, Mexico 2025 Winner", text)])
+        self.assertEqual(got, "Rene Epigmenio Ybarra Trapote")
+
     def test_two_words_far_apart_are_two_coincidences(self):
         # Two of a name's words standing together is the name. The same two
         # scattered across a page are not.

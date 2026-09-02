@@ -257,7 +257,11 @@ def round_key(post) -> tuple[str, Any]:
 #     earliest of its own words, so the 2014 Central American WCQ's two Joses
 #     -- one in the first line, one in the last -- came back level, and no
 #     word could sit between them to say which had won.
-BUILD_VERSION = 42
+# 43: a name's word is a whole word. Matching by substring read a name's
+#     particles into ordinary words -- "De La" found inside "Mementotlan Deck"
+#     -- so YCS Mexico City's winner post named two Duelists and could crown
+#     neither.
+BUILD_VERSION = 43
 
 
 @dataclass

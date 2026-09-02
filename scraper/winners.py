@@ -165,7 +165,13 @@ def named_in(name: str, text: str) -> int:
     # the first line, so the two were level, no word could sit between them,
     # and the event kept no champion -- with "In second place is" written
     # plainly in the middle of the post.
-    spots = [[m.start() for m in re.finditer(re.escape(w), low)] for w in words]
+    # Whole words. A substring search reads a name's particles into ordinary
+    # words: "Christopher Alvarado De La O" was found in "used a Mementotlan
+    # Deck" -- "de" inside Deck, "la" inside Mementotlan, close enough together
+    # to look like a name -- so YCS Mexico City's winner post named two
+    # Duelists and could crown neither.
+    spots = [[m.start() for m in re.finditer(rf"\b{re.escape(w)}\b", low)]
+             for w in words]
     seen = sorted((at, i) for i, places in enumerate(spots) for at in places)
     best = -1
     for a in range(len(seen)):
