@@ -1313,7 +1313,19 @@ function renderFeature(r){
    result printed beside them takes that away from anyone who wanted to follow
    the bracket down. */
 const champEl = document.getElementById('champion');
-let championShown = false;
+
+/* Which tournament the reader asked to be told about, rather than whether they
+   asked. A plain flag stayed true when the event changed, so revealing one
+   champion gave away the next event's before its bracket had been read -- on
+   the one page whose whole point is that the ending is not printed beside the
+   rounds. Resetting the flag wherever the tournament changes is two lines in
+   two functions today and one missed line the next time a third way of
+   changing it is added; a reveal that names its own tournament cannot leak
+   into another however the reader got there. Formats count separately: each is
+   its own tournament with its own champion. */
+let championFor = null;
+const tournamentKey = () => `${activeEvent}\u0000${activeFormat}`;
+const championShown = () => championFor !== null && championFor === tournamentKey();
 
 const deepestRound = () => ROUNDS[ROUNDS.length - 1];
 
@@ -1352,7 +1364,7 @@ function renderChampion(){
      names them, and showing it beside a hidden champion would give the
      ending away to a reader who asked not to be told. */
   const roster = championRoster(won);
-  champEl.innerHTML = championShown
+  champEl.innerHTML = championShown()
     ? `<span class="champ__k">Champion</span>
        <b class="champ__n">${esc(won)}</b>
        ${deck ? `<span class="champ__d">${esc(deck)}</span>` : ''}
@@ -1372,12 +1384,12 @@ champEl?.addEventListener('click', e => {
     return;
   }
   if (!e.target.closest('[data-champ]')) return;
-  championShown = !championShown;
+  championFor = championShown() ? null : tournamentKey();
   renderChampion();
   /* Focus survives the rewrite: the button is the thing that was just used,
      and a reader on the keyboard would otherwise be returned to the top. */
   champEl.querySelector('[data-champ]')?.focus();
-  say(championShown
+  say(championShown()
     ? `Champion: ${formatOf(activeFormat)?.champion}`
     : 'Champion hidden');
 });

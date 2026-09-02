@@ -29,6 +29,21 @@ function withChampion(mutate = () => {}) {
   };
 }
 
+/* One event, two tournaments. Each crowns its own Duelist, so a reveal that
+   did not name its format would hand over the other one's ending. */
+function twoFormats() {
+  const d = roundsFixture();
+  const base = d.formats[0];
+  const crown = (name, who) => {
+    const rounds = base.rounds.map((r) => ({ ...r }));
+    rounds[rounds.length - 1] = { ...rounds[rounds.length - 1],
+      pairings: [{ table: 1, a: who, aDeck: 'Elfnote', b: 'Bo Peep', bDeck: 'Kewl Tune' }] };
+    return { ...base, format: name, champion: who, rounds };
+  };
+  d.formats = [crown('Advanced', 'Ada Lovelace'), crown('Genesys', 'Grace Hopper')];
+  return d;
+}
+
 const champ = (page) => page.$('#champion');
 const deepest = (page) => page.json('ROUNDS[ROUNDS.length-1].id');
 
@@ -125,4 +140,23 @@ test('a champion is escaped like anything else from the data', async (t) => {
   champ(page).querySelector('[data-champ]').click();
   assert.equal(champ(page).querySelector('img'), null);
   assert.match(champ(page).textContent, /onerror/, 'shown as the text it is');
+});
+
+test('a champion revealed in one format is not revealed in the other', async (t) => {
+  // Each format is its own tournament with its own champion, so switching
+  // between them is switching tournaments -- the same spoiler as switching
+  // events, inside one event.
+  const page = await loadPage({ routes: {
+    'rounds.json': { status: 200, body: JSON.stringify(twoFormats()) },
+    'sample-remote-duel-ycs/posts.json': { status: 200, body: '[]' },
+  } });
+  t.after(() => page.close());
+  page.run(`selectFormat('Advanced'); selectRound(ROUNDS[ROUNDS.length-1].id)`);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  assert.match(champ(page).textContent, /Ada Lovelace/);
+
+  page.run(`selectFormat('Genesys'); selectRound(ROUNDS[ROUNDS.length-1].id)`);
+  assert.doesNotMatch(champ(page).textContent, /Grace Hopper/,
+    "the other tournament's champion was given away without being asked for");
+  assert.match(champ(page).textContent, /Reveal/);
 });

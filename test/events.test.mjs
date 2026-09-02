@@ -239,6 +239,75 @@ test('switching away and back fetches again rather than trusting a stale mark', 
   assert.equal(page.text('#live-h'), SAMPLE.event);
 });
 
+/* Both events crowned somebody, so a reveal carried across from one would be
+   the other's ending printed without being asked for. */
+const withChampions = (extra = {}) => {
+  const crown = (d, who) => {
+    const f = d.formats[0];
+    const last = f.rounds[f.rounds.length - 1];
+    last.pairings = [{ table: 1, a: who, aDeck: 'Elfnote', b: 'Bo Peep', bDeck: 'Kewl Tune' }];
+    f.champion = who;
+    return d;
+  };
+  return twoEvents({
+    'sample-remote-duel-ycs/rounds.json': () => ({
+      status: 200, body: JSON.stringify(crown(roundsFixture(), 'Ada Lovelace')) }),
+    'older-ycs-columbus/rounds.json': () => ({
+      status: 200, body: JSON.stringify(crown(olderRounds(), 'Grace Hopper')) }),
+    ...extra,
+  });
+};
+
+const landOnChampion = (page) =>
+  page.run(`selectRound(ROUNDS[ROUNDS.length-1].id)`);
+
+test('a champion revealed on one event is not revealed on the next', async (t) => {
+  // The page hides who won until it is asked, because the rounds above are
+  // worth reading first. Asked once, it stayed asked: switching events
+  // printed the next event's ending beside a bracket nobody had read yet.
+  const page = await loadPage(withChampions());
+  t.after(() => page.close());
+  landOnChampion(page);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  assert.match(page.text('#champion'), /Ada Lovelace/, 'revealed on the first event');
+
+  page.run(`selectEvent('${'older-ycs-columbus'}')`);
+  await waitFor(page, `activeEvent === 'older-ycs-columbus' && roundsState === 'ready'`);
+  landOnChampion(page);
+  assert.doesNotMatch(page.text('#champion'), /Grace Hopper/,
+    "the next event's champion was given away without being asked for");
+  assert.match(page.text('#champion'), /Reveal/);
+});
+
+test('and asking again on the second event still works', async (t) => {
+  const page = await loadPage(withChampions());
+  t.after(() => page.close());
+  landOnChampion(page);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  page.run(`selectEvent('older-ycs-columbus')`);
+  await waitFor(page, `activeEvent === 'older-ycs-columbus' && roundsState === 'ready'`);
+  landOnChampion(page);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  assert.match(page.text('#champion'), /Grace Hopper/);
+});
+
+test('coming back to an event keeps the reveal the reader asked for', async (t) => {
+  // The reveal belongs to a tournament, not to a moment. This reader has
+  // already been told how this event ends and cannot be untold it, so asking
+  // again on the way back would be ceremony rather than protection.
+  const page = await loadPage(withChampions());
+  t.after(() => page.close());
+  landOnChampion(page);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  page.run(`selectEvent('older-ycs-columbus')`);
+  await waitFor(page, `activeEvent === 'older-ycs-columbus' && roundsState === 'ready'`);
+  page.run(`selectEvent('${'sample-remote-duel-ycs'}')`);
+  await waitFor(page, `activeEvent === 'sample-remote-duel-ycs' && roundsState === 'ready'`);
+  landOnChampion(page);
+  assert.match(page.text('#champion'), /Ada Lovelace/,
+    'the reader asked for this one and has not left it since');
+});
+
 test('the round the reader was on does not survive into another event', async (t) => {
   const page = await loadPage(twoEvents());
   t.after(() => page.close());
