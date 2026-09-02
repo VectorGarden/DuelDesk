@@ -64,6 +64,20 @@ test('one event is not presented as a choice', async (t) => {
     'the archive holds one event; there is nothing to pick');
 });
 
+test('the picker box cannot collapse to nothing', async (t) => {
+  // Its width is min(22rem,60vw) and box-sizing is border-box, so where 60vw
+  // resolves to nothing the box shrinks to its own padding: a 43.6px stub
+  // showing the chevron with no room to type, which is what the live site
+  // rendered. A text input's min-width is 0, so nothing else stops it.
+  const page = await loadPage({});
+  t.after(() => page.close());
+  const floor = page.get(
+    `getComputedStyle(document.getElementById('event-search')).minWidth`);
+  // Read as a number, so "0", "0px" and "" all fail the same way.
+  assert.ok(parseFloat(floor) > 0,
+    `the box needs a width floor above zero, got ${JSON.stringify(floor)}`);
+});
+
 test('the picker lists every event, newest first', async (t) => {
   const page = await loadPage(twoEvents());
   t.after(() => page.close());
