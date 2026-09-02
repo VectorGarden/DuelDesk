@@ -120,6 +120,44 @@ def tight_window(dates: list[str], gap_days: int = GAP_DAYS) -> tuple[str, str]:
             date.fromordinal(best[-1]).isoformat())
 
 
+def settled_end(ended: str, days: dict[str, int], today: str | None = None,
+                gap_days: int = 2, stray_posts: int = 2) -> str:
+    """The day an event's coverage really ended, ignoring a later edit.
+
+    lastmod is a modification date, so a post edited weeks afterwards dates the
+    event to the day it was edited. tight_window already refuses the extreme
+    version of this -- an edit years later -- by splitting on a month's gap.
+    What it cannot see is the stray inside that month: YCS Seattle published
+    thirty-seven posts on 18 and 19 February 2017 and one more on 2 March, and
+    the site dated the tournament to March.
+
+    So the end date walks backwards off a stray and stops at the first real
+    day of coverage. A stray is both rare and remote -- no more than a couple
+    of posts, and separated from the rest by more than a weekend -- because
+    either alone is ordinary. A quiet last day is what a Sunday looks like when
+    only the winner is left to announce, and a gap is what a Remote Duel event
+    looks like when it runs over two weekends.
+
+    Nineteen of the archive's events move; the other hundred and fifty-four do
+    not, and none moves by less than three days. An event still being covered
+    is left alone: its quiet newest day is the coverage catching up, not a
+    stray, and there is no telling the two apart until it stops.
+    """
+    # Still being written about, so today's silence means nothing yet.
+    if today is not None and (date.fromisoformat(today).toordinal()
+                              - date.fromisoformat(ended).toordinal()) <= gap_days:
+        return ended
+    while earlier := [d for d in days if d < ended]:
+        if days.get(ended, 0) > stray_posts:
+            break
+        previous = max(earlier)
+        if (date.fromisoformat(ended).toordinal()
+                - date.fromisoformat(previous).toordinal()) <= gap_days:
+            break
+        ended = previous
+    return ended
+
+
 def slug_terms(slug: str) -> set[str]:
     """The words in a slug, minus numbers and noise too short to identify anything."""
     return {t for t in re.split(r"[^a-z]+", slug.lower())
