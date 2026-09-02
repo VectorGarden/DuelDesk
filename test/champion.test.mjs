@@ -160,3 +160,79 @@ test('a champion revealed in one format is not revealed in the other', async (t)
     "the other tournament's champion was given away without being asked for");
   assert.match(champ(page).textContent, /Reveal/);
 });
+
+/* ── The crown, where the tables name the champion ───────────────────────── */
+
+/** The simulation with a champion who is traceable: a record somewhere says
+ *  the builder knew which Duelist of that name it meant. */
+function crowned({ derived = true } = {}) {
+  const d = roundsFixture();
+  const f = d.formats[0];
+  const last = f.rounds[f.rounds.length - 1];
+  last.pairings = [{ table: 1, a: 'Ada Lovelace', aDeck: 'Elfnote',
+                     aRec: derived ? { wins: 3, losses: 0, draws: 0, confidence: 'derived' } : null,
+                     b: 'Bo Peep', bDeck: 'Kewl Tune', bRec: null }];
+  // Played, or the panel says the round has not started and renders no table
+  // for the crown to sit in.
+  last.state = 'done';
+  f.champion = 'Ada Lovelace';
+  return d;
+}
+
+const page4 = (mutate) => loadPage({ routes: {
+  'rounds.json': { status: 200, body: JSON.stringify(mutate ?? crowned()) },
+  'sample-remote-duel-ycs/posts.json': { status: 200, body: '[]' },
+} });
+
+const crowns = (page) => page.$$('#round-body .crown').length;
+
+test('no crown until the champion has been revealed', async (t) => {
+  // The rounds above are worth reading first, and a crown in the pairings
+  // gives the ending away as plainly as printing the name would.
+  const page = await page4();
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS[ROUNDS.length-1].id)`);
+  assert.equal(crowns(page), 0);
+});
+
+test('and one on the champion once it has', async (t) => {
+  const page = await page4();
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS[ROUNDS.length-1].id)`);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  assert.ok(crowns(page) > 0, 'the champion is named in the round and not marked');
+});
+
+test('the mark says what it means, not just how it looks', async (t) => {
+  // Colour and shape are never the only signal, so the mark is the word
+  // itself. Nothing here needs an accessible name bolted on beside a glyph.
+  const page = await page4();
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS[ROUNDS.length-1].id)`);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  const el = page.$('#round-body .crown');
+  assert.match(el.textContent.trim(), /^champion$/i,
+    'the badge has to read as a word, not as a picture of one');
+});
+
+test('nobody is crowned when the builder could not tell the name apart', async (t) => {
+  // Two Duelists share a name more often than a bracket is wrong. The builder
+  // refuses to derive a record for a name it cannot separate, so a champion
+  // with no record anywhere is one this cannot safely point at -- crowning by
+  // name alone would crown whichever of them lost.
+  const page = await page4(crowned({ derived: false }));
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS[ROUNDS.length-1].id)`);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  assert.equal(crowns(page), 0);
+});
+
+test('the runner-up is not crowned', async (t) => {
+  const page = await page4();
+  t.after(() => page.close());
+  page.run(`selectRound(ROUNDS[ROUNDS.length-1].id)`);
+  page.run(`document.querySelector('#champion [data-champ]').click()`);
+  const cells = page.$$('#round-body td').filter((td) => /Bo Peep/.test(td.textContent));
+  assert.ok(cells.length, 'the runner-up is in the table');
+  for (const td of cells) assert.equal(td.querySelector('.crown'), null);
+});
