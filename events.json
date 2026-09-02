@@ -2231,7 +2231,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-latin-america-remote-duel-ycs/rounds.json",
-      "postCount": 12,
+      "postCount": 13,
       "formats": [
         {
           "format": null,
@@ -2249,7 +2249,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-january-remote-duel-ycs/rounds.json",
-      "postCount": 51,
+      "postCount": 50,
       "champions": [
         {
           "format": null,
@@ -2723,10 +2723,17 @@
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-medellin-colombia/rounds.json",
       "postCount": 28,
+      "champions": [
+        {
+          "format": null,
+          "name": "Paulo Roberto Goncalves da Silva",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
-          "swissRounds": 14,
+          "swissRounds": 12,
           "duelists": 142,
           "rounds": 13
         }

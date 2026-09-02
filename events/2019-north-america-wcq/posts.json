@@ -495,15 +495,6 @@
     "slug": "2019-north-america-wcq"
   },
   {
-    "title": "North America WCQ: Final Match",
-    "url": "https://yugiohblog.konami.com/2019/championships/2019-north-america-wcq/north-america-wcq-final-match/",
-    "modified": "2019-06-23T17:31:27-07:00",
-    "kind": "feature",
-    "event": "North America WCQ 2019",
-    "format": null,
-    "slug": "2019-north-america-wcq"
-  },
-  {
     "title": "2019 North America WCQ: And the Winner is…",
     "url": "https://yugiohblog.konami.com/2019/championships/2019-north-america-wcq/2019-north-america-wcq-and-the-winner-is/",
     "modified": "2019-06-23T19:08:26-07:00",
@@ -708,6 +699,15 @@
     "kind": "news",
     "event": "North America WCQ 2019",
     "format": "Public Events",
+    "slug": "2019-north-america-wcq"
+  },
+  {
+    "title": "North America WCQ: Final Match",
+    "url": "https://yugiohblog.konami.com/2019/championships/2019-north-america-wcq/north-america-wcq-final-match/",
+    "modified": "2019-06-23T17:31:27-07:00",
+    "kind": "news",
+    "event": "North America WCQ 2019",
+    "format": null,
     "slug": "2019-north-america-wcq"
   },
   {

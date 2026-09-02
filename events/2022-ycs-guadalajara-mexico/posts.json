@@ -198,15 +198,6 @@
     "slug": "2022-ycs-guadalajara-mexico"
   },
   {
-    "title": "YCS Guadalajara, Mexico: Final Match",
-    "url": "https://yugiohblog.konami.com/2022/ycs/ycs-guadalajara-mexico-final-match/",
-    "modified": "2022-05-01T15:11:18-07:00",
-    "kind": "feature",
-    "event": "YCS Guadalajara",
-    "format": null,
-    "slug": "2022-ycs-guadalajara-mexico"
-  },
-  {
     "title": "Congratulations to our new YCS Champ!",
     "url": "https://yugiohblog.konami.com/2022/ycs/congratulations-to-our-new-ycs-champ/",
     "modified": "2022-05-01T16:15:25-07:00",
@@ -219,6 +210,15 @@
     "title": "Welcome to YCS",
     "url": "https://yugiohblog.konami.com/2022/ycs/welcome-to-ycs-guadalajara-2/",
     "modified": "2022-05-01T08:27:27-07:00",
+    "kind": "news",
+    "event": "YCS Guadalajara",
+    "format": null,
+    "slug": "2022-ycs-guadalajara-mexico"
+  },
+  {
+    "title": "YCS Guadalajara, Mexico: Final Match",
+    "url": "https://yugiohblog.konami.com/2022/ycs/ycs-guadalajara-mexico-final-match/",
+    "modified": "2022-05-01T15:11:18-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
     "format": null,

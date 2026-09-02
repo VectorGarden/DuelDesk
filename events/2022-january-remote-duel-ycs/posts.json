@@ -378,15 +378,6 @@
     "slug": "2022-january-remote-duel-ycs"
   },
   {
-    "title": "Latin America Remote Duel YCS",
-    "url": "https://yugiohblog.konami.com/2022/ycs/latin-america-remote-duel-ycs-final-match/",
-    "modified": "2022-01-16T15:37:15-08:00",
-    "kind": "feature",
-    "event": "Remote Duel YCS January 2022",
-    "format": null,
-    "slug": "2022-january-remote-duel-ycs"
-  },
-  {
     "title": "Remote Duel YCS",
     "url": "https://yugiohblog.konami.com/2022/ycs/2022-january-remote-duel-ycs/remote-duel-ycs-top-32-deck-types/",
     "modified": "2022-01-16T13:46:46-08:00",
@@ -414,19 +405,19 @@
     "slug": "2022-january-remote-duel-ycs"
   },
   {
-    "title": "Remote Duel YCS",
-    "url": "https://yugiohblog.konami.com/2022/ycs/2022-january-remote-duel-ycs/remote-duel-ycs-time-for-the-final-match/",
-    "modified": "2022-01-16T19:03:55-08:00",
-    "kind": "feature",
+    "title": "North America January 2022 Remote Duel YCS Champion",
+    "url": "https://yugiohblog.konami.com/2022/ycs/2022-january-remote-duel-ycs/north-america-january-2022-remote-duel-ycs-champion/",
+    "modified": "2022-01-16T19:47:07-08:00",
+    "kind": "result",
     "event": "Remote Duel YCS January 2022",
     "format": null,
     "slug": "2022-january-remote-duel-ycs"
   },
   {
-    "title": "North America January 2022 Remote Duel YCS Champion",
-    "url": "https://yugiohblog.konami.com/2022/ycs/2022-january-remote-duel-ycs/north-america-january-2022-remote-duel-ycs-champion/",
-    "modified": "2022-01-16T19:47:07-08:00",
-    "kind": "result",
+    "title": "Remote Duel YCS",
+    "url": "https://yugiohblog.konami.com/2022/ycs/2022-january-remote-duel-ycs/remote-duel-ycs-time-for-the-final-match/",
+    "modified": "2022-01-16T19:03:55-08:00",
+    "kind": "news",
     "event": "Remote Duel YCS January 2022",
     "format": null,
     "slug": "2022-january-remote-duel-ycs"

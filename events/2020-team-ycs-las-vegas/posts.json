@@ -126,15 +126,6 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
-    "title": "The Final Match is Underway!",
-    "url": "https://yugiohblog.konami.com/2020/ycs/the-final-match-is-underway/",
-    "modified": "2020-02-23T16:34:37-08:00",
-    "kind": "feature",
-    "event": "Team YCS Las Vegas",
-    "format": null,
-    "slug": "2020-team-ycs-las-vegas"
-  },
-  {
     "title": "Deck Profile: Ryan Pasnik’s WATER Link Deck",
     "url": "https://yugiohblog.konami.com/2020/ycs/deck-profile-ryan-pasniks-water-link-deck/",
     "modified": "2020-02-23T12:05:43-08:00",
@@ -342,12 +333,12 @@
     "slug": "2020-team-ycs-las-vegas"
   },
   {
-    "title": "Team YCS Las Vegas: Sunday’s ATTACK OF THE GIANT CARD!!",
-    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-sundays-attack-of-the-giant-card/",
-    "modified": "2020-02-23T17:35:14-08:00",
+    "title": "The Final Match is Underway!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/the-final-match-is-underway/",
+    "modified": "2020-02-23T16:34:37-08:00",
     "kind": "news",
     "event": "Team YCS Las Vegas",
-    "format": "Attack of the Giant Card",
+    "format": null,
     "slug": "2020-team-ycs-las-vegas"
   },
   {
@@ -357,6 +348,15 @@
     "kind": "result",
     "event": "Team YCS Las Vegas",
     "format": "Public Events",
+    "slug": "2020-team-ycs-las-vegas"
+  },
+  {
+    "title": "Team YCS Las Vegas: Sunday’s ATTACK OF THE GIANT CARD!!",
+    "url": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-sundays-attack-of-the-giant-card/",
+    "modified": "2020-02-23T17:35:14-08:00",
+    "kind": "news",
+    "event": "Team YCS Las Vegas",
+    "format": "Attack of the Giant Card",
     "slug": "2020-team-ycs-las-vegas"
   },
   {
