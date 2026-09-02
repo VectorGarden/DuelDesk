@@ -3220,7 +3220,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201712-buenos-aires-argentina/rounds.json",
-      "postCount": 36,
+      "postCount": 35,
       "champions": [
         {
           "format": null,
@@ -3382,7 +3382,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2017-south-american-wcq/rounds.json",
-      "postCount": 38,
+      "postCount": 39,
       "champions": [
         {
           "format": "Dragon Duel",
@@ -3519,7 +3519,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201703-uds-winter-invitational-las-vegas/rounds.json",
-      "postCount": 55,
+      "postCount": 57,
       "formats": [
         {
           "format": null,
@@ -3632,7 +3632,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/201611-anaheim-ca/rounds.json",
-      "postCount": 50,
+      "postCount": 51,
       "champions": [
         {
           "format": null,
@@ -3645,7 +3645,7 @@
           "format": null,
           "swissRounds": 11,
           "duelists": 1121,
-          "rounds": 12
+          "rounds": 13
         }
       ]
     },
@@ -3890,7 +3890,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2016-sa-wcq/rounds.json",
-      "postCount": 34,
+      "postCount": 37,
       "champions": [
         {
           "format": null,

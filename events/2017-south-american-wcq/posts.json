@@ -225,12 +225,12 @@
     "slug": "2017-south-american-wcq"
   },
   {
-    "title": "Top Cut for Dragon Duel at the South American WCQ",
-    "url": "https://yugiohblog.konami.com/2017/ycs/top-cut-for-dragon-duel-at-the-south-american-wcq-2/",
-    "modified": "2017-07-02T09:49:32-07:00",
+    "title": "Welcome to the South American WCQ!",
+    "url": "https://yugiohblog.konami.com/2017/championships/welcome-to-the-south-american-wcq/",
+    "modified": "2017-07-19T15:30:36-07:00",
     "kind": "news",
     "event": "South America WCQ 2017",
-    "format": "Dragon Duel",
+    "format": null,
     "slug": "2017-south-american-wcq"
   },
   {
@@ -243,9 +243,9 @@
     "slug": "2017-south-american-wcq"
   },
   {
-    "title": "South America Dragon Duel WCQ: Finals",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-dragon-duel-wcq-finals/",
-    "modified": "2017-07-02T11:51:57-07:00",
+    "title": "Top Cut for Dragon Duel at the South American WCQ",
+    "url": "https://yugiohblog.konami.com/2017/ycs/top-cut-for-dragon-duel-at-the-south-american-wcq-2/",
+    "modified": "2017-07-02T09:49:32-07:00",
     "kind": "news",
     "event": "South America WCQ 2017",
     "format": "Dragon Duel",
@@ -261,12 +261,12 @@
     "slug": "2017-south-american-wcq"
   },
   {
-    "title": "The Finals have begun at the South American WCQ!",
-    "url": "https://yugiohblog.konami.com/2017/championships/the-finals-have-begun-at-the-south-american-wcq-2/",
-    "modified": "2017-07-02T12:00:56-07:00",
+    "title": "South America Dragon Duel WCQ: Finals",
+    "url": "https://yugiohblog.konami.com/2017/championships/south-america-dragon-duel-wcq-finals/",
+    "modified": "2017-07-02T11:51:57-07:00",
     "kind": "news",
     "event": "South America WCQ 2017",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2017-south-american-wcq"
   },
   {
@@ -279,9 +279,9 @@
     "slug": "2017-south-american-wcq"
   },
   {
-    "title": "South America WCQ: Top Tables Update in Round 6",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-6/",
-    "modified": "2017-07-01T13:20:27-07:00",
+    "title": "The Finals have begun at the South American WCQ!",
+    "url": "https://yugiohblog.konami.com/2017/championships/the-finals-have-begun-at-the-south-american-wcq-2/",
+    "modified": "2017-07-02T12:00:56-07:00",
     "kind": "news",
     "event": "South America WCQ 2017",
     "format": null,
@@ -294,6 +294,15 @@
     "kind": "result",
     "event": "South America WCQ 2017",
     "format": "Dragon Duel",
+    "slug": "2017-south-american-wcq"
+  },
+  {
+    "title": "South America WCQ: Top Tables Update in Round 6",
+    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-6/",
+    "modified": "2017-07-01T13:20:27-07:00",
+    "kind": "news",
+    "event": "South America WCQ 2017",
+    "format": null,
     "slug": "2017-south-american-wcq"
   },
   {
