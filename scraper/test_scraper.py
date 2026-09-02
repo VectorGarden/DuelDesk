@@ -7204,7 +7204,7 @@ class TestRebuildingWhatAnOlderBuilderWrote(unittest.TestCase):
         from unittest import mock
         import run
         ranked = self.ranked(*(slugs or ("a", "b", "c", "d")))
-        with mock.patch.object(run, "events_by_recency", lambda e: ranked):
+        with mock.patch.object(run, "events_by_recency", lambda *a: ranked):
             return [s for s, _, _ in run.plan([], done, backfill, rebuild, behind)]
 
     def test_a_rebuild_takes_events_the_backfill_never_would(self):
@@ -7279,7 +7279,7 @@ class TestTheRebuildIsWiredUp(unittest.TestCase):
              mock.patch.object(run, "Fetcher",
                                lambda **kw: types.SimpleNamespace(get=lambda u, **k: "<urlset/>")), \
              mock.patch.object(run, "parse_sitemap_index", lambda x: []), \
-             mock.patch.object(run, "events_by_recency", lambda e: ranked), \
+             mock.patch.object(run, "events_by_recency", lambda *a: ranked), \
              mock.patch.object(run, "coherence_problem", lambda *a: None), \
              mock.patch.object(run, "build_one", fake_build_one), \
              redirect_stdout(io.StringIO()):
@@ -7364,7 +7364,7 @@ class TestARejectedEventIsRemembered(unittest.TestCase):
                 cut[0]["pairings"] = cut[0]["pairings"][:3]
             return (event, [], [])
 
-        def plan(entries, done, backfill, rebuild=0, behind=frozenset()):
+        def plan(entries, done, backfill, rebuild=0, behind=frozenset(), read=None):
             return [(s, [{"kind": "pairings"}], f"2026-0{i}-01")
                     for i, s in enumerate(("e1", "e2", "e3"), start=1) if s not in done]
 
@@ -7791,6 +7791,74 @@ class TestAMistypedYearInASlug(unittest.TestCase):
         got = {r["slug"]: (r["event"], r["event_confidence"]) for r in rows}
         self.assertEqual(got["rdycs-round-1-pairings"],
                          ("2021-december-remote-duel-ycs", "path"))
+
+
+class ReadsTheWinnerPost(unittest.TestCase):
+    """The event a winner announcement names in its text, not its slug."""
+
+    def rows(self, text, events, slug="championships/we-have-a-winner-13",
+             read=None, when="2026-06-08"):
+        posts = [(f"2026/championships/{e}/{e[5:9]}-round-{i}-pairings",
+                  f"2026-06-0{i}") for e in events for i in (7, 8)]
+        if read is None:
+            def read(url):
+                return text
+        return {r["slug"]: (r["event"], r["event_confidence"]) for r in assign_events(
+            parse_post_sitemap(urlset(*posts, (f"2026/{slug}", when))), read=read)}
+
+    BOTH = ("2026-central-america-wcq",
+            "2026-central-america-dragon-duel-championship")
+
+    def test_the_event_named_in_the_first_line_gets_the_post(self):
+        # "we-have-a-winner-13" names nothing, and two championships ran that
+        # weekend, so neither the slug nor the date can place it. The text can:
+        # this is the Central America WCQ 2026's champion.
+        got = self.rows("Esteban Jesus Mena Campos is our new Central America "
+                        "WCQ Champion. He used a Kewl Tune Deck.", self.BOTH)
+        self.assertEqual(got["we-have-a-winner-13"],
+                         ("2026-central-america-wcq", "announced"))
+
+    def test_a_post_naming_no_event_is_left_where_it_was(self):
+        # Two ran that weekend and the text names neither, so there is nothing
+        # here to know. Reported, the way every other ambiguity in this module
+        # is reported -- never resolved by taking whichever came first.
+        got = self.rows("Congratulations to our new Champion!", self.BOTH)
+        self.assertIsNone(got["we-have-a-winner-13"][0])
+
+    def test_the_longer_name_wins_where_one_contains_the_other(self):
+        # "Central America WCQ Dragon Duel" contains "Central America WCQ", so
+        # the text names both events and means the longer one. Nothing here may
+        # hand the main event a side event's winner.
+        got = self.rows("Ana Sofia Rojas is our new Central America WCQ Dragon "
+                        "Duel Champion.",
+                        ("2026-central-america-wcq",
+                         "2026-central-america-wcq-dragon-duel"))
+        self.assertEqual(got["we-have-a-winner-13"][0],
+                         "2026-central-america-wcq-dragon-duel")
+
+    def test_a_post_carrying_a_round_is_not_moved_by_its_text(self):
+        # A name says which event a post is about and nothing about whether the
+        # table in it belongs in that event's bracket -- the rule that cost
+        # Philadelphia and Guadalajara their brackets twice.
+        got = self.rows("Esteban Jesus Mena Campos is our new Central America "
+                        "WCQ Champion.", self.BOTH,
+                        slug="championships/and-the-winner-is-round-8-pairings")
+        self.assertNotEqual(got["and-the-winner-is-round-8-pairings"][1], "announced")
+
+    def test_a_post_no_window_holds_is_never_fetched(self):
+        # The fetch is the cost of this rule, so it is spent only where an
+        # answer is possible at all.
+        asked = []
+        self.rows(None, self.BOTH, when="2019-03-04",
+                  read=lambda url: asked.append(url) or "")
+        self.assertEqual(asked, [])
+
+    def test_a_post_that_cannot_be_read_is_left_alone(self):
+        # A page the blog will not serve is one post lost, never a run.
+        def boom(url):
+            raise OSError("502")
+        got = self.rows(None, self.BOTH, read=boom)
+        self.assertIsNone(got["we-have-a-winner-13"][0])
 
 
 if __name__ == "__main__":

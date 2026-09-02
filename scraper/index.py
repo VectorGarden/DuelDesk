@@ -436,7 +436,8 @@ def _merge_same_qualifier(found: list, slack_days: int) -> list:
     return rest
 
 
-def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
+def assign_events(entries: list[Entry], slack_days: int = 4,
+                  read=None) -> list[dict]:
     """Attach every post to an event.
 
     Posts carrying an event slug define the windows. Posts without one are
@@ -638,7 +639,63 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
                       rec["slug"], rec["lastmod"])
         if claimed := qualifier_named(entry, {k: p.window for k, p in everything.items()}):
             rec["event"], rec["event_confidence"] = claimed, "initials"
+
+    # And, for the handful left, what the post says in its first line.
+    #
+    # Everything above reads a slug. Some winner announcements have no name in
+    # theirs to read -- the Central America WCQ 2026's is "we-have-a-winner-13"
+    # -- and three championships ran that weekend, so the date cannot choose
+    # between them either. The event is named in the post, in a sentence:
+    # "Esteban Jesus Mena Campos is our new Central America WCQ Champion."
+    #
+    # Reading costs a fetch, so this asks for one only where the answer is
+    # worth having and nothing cheaper will do: the post is still unassigned,
+    # its slug announces a winner, and some event's window holds its date.
+    # Ten posts on the whole blog meet that, and the caller decides whether to
+    # pay for them -- with no reader this pass does nothing at all.
+    if read is not None:
+        for rec, ev in _announced_in(out, everything, within, read):
+            rec["event"], rec["event_confidence"] = ev, "announced"
     return out
+
+
+# Slugs that say a winner is about to be named and nothing else. Deliberately
+# short: this decides which posts are worth a fetch, and the fetch is the cost.
+ANNOUNCEMENT = re.compile(r"we-have-a-winner|and-the-winner|winner-is|champion-is")
+
+
+def _announced_in(records: list[dict], profiles: dict[str, Profile], within, read):
+    """Winner posts that name their event in the text, and that event.
+
+    The event's own name, whole and contiguous, the way _named_outright wants
+    it in a slug -- a word of it is not enough. Where two events fit, the
+    longer name wins: a post reading "YCS Lima Dragon Duel Champion" names
+    both, and means the Dragon Duel.
+    """
+    for rec in records:
+        if rec["event"] or not rec["lastmod"] or not ANNOUNCEMENT.search(rec["slug"]):
+            continue
+        # Same guard as the rule above, for the same reason: a name says which
+        # event a post is about, never that the table in it belongs in that
+        # event's bracket.
+        if detect_kind(rec["slug"]) in (*TOURNAMENT, "feature"):
+            continue
+        near = {s: bare for s, p in profiles.items()
+                if within(rec["lastmod"], *p.window)
+                and len(bare := _DATE_PREFIX.sub("", s).replace("-", " ")) > 6}
+        if not near:
+            continue
+        try:
+            text = (read(rec["url"]) or "").lower()
+        except Exception:
+            continue
+        hits = [s for s, bare in near.items() if bare in text]
+        # The longest name, where one contains another. Anything else that
+        # matched two events is left alone, as everywhere else here.
+        hits = [s for s in hits
+                if not any(o != s and near[s] in near[o] for o in hits)]
+        if len(hits) == 1:
+            yield rec, hits[0]
 
 
 # An event's slug with any leading date taken off -- "2019-ycs-chicago" is

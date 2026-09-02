@@ -31,13 +31,13 @@ from index import (assign_events, event_profiles, parse_post_sitemap,  # noqa: E
                    parse_sitemap_index, tight_window)
 from feed import build_feed                              # noqa: E402
 from naming import canonical_name, event_name            # noqa: E402
-from parse import coverage_format, detect_kind, parse_post  # noqa: E402
+from parse import coverage_format, detect_kind, lead, parse_post  # noqa: E402
 
 # Ties were removed from tournament policy on this date.
 DRAWS_ABOLISHED = date(2025, 9, 2)
 
 
-def events_by_recency(entries) -> list[tuple[str, list[dict], str]]:
+def events_by_recency(entries, read=None) -> list[tuple[str, list[dict], str]]:
     """Every identified event, its posts, and the day its coverage ended.
 
     That last date is taken from the event's window rather than from the newest
@@ -58,7 +58,7 @@ def events_by_recency(entries) -> list[tuple[str, list[dict], str]]:
     """
     profiles = event_profiles(entries)
     grouped: dict[str, list[dict]] = defaultdict(list)
-    for a in assign_events(entries):
+    for a in assign_events(entries, read=read):
         if a.get("event") and a.get("lastmod"):
             a["kind"] = detect_kind(a["slug"])
             grouped[a["event"]].append(a)
@@ -86,8 +86,8 @@ def worth_building(posts: list[dict]) -> bool:
 
 
 def plan(entries, done: set[str], backfill: int,
-         rebuild: int = 0, behind: set[str] | frozenset = frozenset()
-         ) -> list[tuple[str, list[dict], str]]:
+         rebuild: int = 0, behind: set[str] | frozenset = frozenset(),
+         read=None) -> list[tuple[str, list[dict], str]]:
     """Which events this run builds: the newest, plus older ones.
 
     The newest event is rebuilt every time because it may still be running. The
@@ -102,7 +102,7 @@ def plan(entries, done: set[str], backfill: int,
     either way: if a rebuild is interrupted, the events most likely to be
     looked at are the ones already corrected.
     """
-    ranked = [e for e in events_by_recency(entries) if worth_building(e[1])]
+    ranked = [e for e in events_by_recency(entries, read) if worth_building(e[1])]
     if not ranked:
         return []
     chosen = [ranked[0]]
@@ -340,7 +340,11 @@ def main() -> int:
     if stale:
         print(f"{len(stale)} events were built by an older builder; "
               f"rebuilding up to {args.rebuild} of them")
-    chosen = plan(entries, done, args.backfill, args.rebuild, stale)
+    # The indexer reads a post only where a slug could not place it and an
+    # event's window holds its date -- ten posts on the blog, and cached like
+    # every other fetch after the first run.
+    chosen = plan(entries, done, args.backfill, args.rebuild, stale,
+                  read=lambda url: lead(f.get(url)))
     if not chosen:
         print("No event with both pairings and standings could be identified.")
         return 0
