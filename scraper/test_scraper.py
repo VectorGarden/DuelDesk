@@ -4103,6 +4103,23 @@ class TestQualifierAbbreviation(unittest.TestCase):
         self.assertEqual(wcq_name("2024-nawcq", "", "2024-07-22"),
                          "North America WCQ 2024")
 
+    def test_a_year_may_run_on_to_the_initials(self):
+        # "sawcq2025-winner" is the 2025 South American qualifier's winner
+        # post. A word boundary after "wcq" never matches when a digit
+        # follows, so the slug named nothing this module could read.
+        from naming import wcq_name
+        self.assertEqual(wcq_name("sawcq2025-winner", "", "2025-07-08"),
+                         "South America WCQ 2025")
+        self.assertEqual(wcq_name("cawcq-round-3-pairings", "", "2025-06-08"),
+                         "Central America WCQ 2025")
+        self.assertEqual(wcq_name("2024-nawcq", "", "2024-07-22"),
+                         "North America WCQ 2024")
+
+    def test_a_word_merely_containing_wcq_is_still_not_one(self):
+        from naming import wcq_name
+        for slug in ("2024-showcq", "showcq-nonsense", "2024-sawcqs-parody"):
+            self.assertIsNone(wcq_name(slug, "", "2024-07-22"), slug)
+
     def test_a_qualifier_that_abbreviates_its_region(self):
         # Three qualifiers name their region only in the short form, or by the
         # country instead, and so had no region at all: they went to the site
@@ -4743,6 +4760,41 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         """One tournament's worth, filed under its own event slug in the path."""
         return [(f"{year}/ycs/{slug}/round-{i}-pairings", when) for i in range(1, n + 1)] + \
                [(f"{year}/ycs/{slug}/standings-after-round-{i}", when) for i in range(1, n + 1)]
+
+    def test_a_qualifier_is_placed_by_its_initials(self):
+        # The dates cannot always place these. "sawcq2025-winner" carries 8
+        # July, weeks after the South American qualifier and inside two others
+        # -- so it was ambiguous between the Central and North American ones,
+        # neither of which it is about.
+        got = self.assigned(
+            *self.coverage("south-america-wcq", "2025-06-08"),
+            *self.coverage("central-america-wcq", "2025-07-06"),
+            ("2025/championships/sawcq2025-winner", "2025-07-08"))
+        self.assertEqual(got["sawcq2025-winner"],
+                         ("2025-south-america-wcq", "initials"))
+
+    def test_initials_never_carry_a_round(self):
+        # The 2019 North America WCQ's World Qualifying Points Playoff is named
+        # for the qualifier it runs beside, and its tables put five Duelists in
+        # a Top 8 who had not played in the Top 16 -- which took the event out
+        # of the archive until the sample gate caught it.
+        got = self.assigned(
+            *self.coverage("north-america-wcq", "2019-06-30"),
+            *self.coverage("central-america-wcq", "2019-08-02"),
+            ("2019/championships/north-america-wcq-world-qualifying-points-"
+             "playoff-round-1-pairings", "2019-08-01"))
+        slug = "north-america-wcq-world-qualifying-points-playoff-round-1-pairings"
+        self.assertNotEqual(got[slug][1], "initials")
+
+    def test_two_events_answering_one_name_settle_nothing(self):
+        # The blog spells a qualifier several ways, and two events can answer
+        # to the same reading. Where they do this narrows nothing and the post
+        # is left where the dates put it -- picking one would be a guess.
+        got = self.assigned(
+            *self.coverage("south-america-wcq", "2025-06-08"),
+            *self.coverage("south-american-wcq", "2025-06-20"),
+            ("2025/championships/sawcq2025-winner", "2025-11-30"))
+        self.assertNotEqual(got["sawcq2025-winner"][1], "initials")
 
     def test_a_path_survives_a_late_edit(self):
         # A lastmod is when the blog last edited a post, not when the event
