@@ -216,12 +216,12 @@
     "slug": "2019-03-atlanta-ga"
   },
   {
-    "title": "Team YCS Atlanta: And the Winners Are…",
-    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-and-the-winners-are/",
-    "modified": "2019-03-18T11:19:23-07:00",
+    "title": "Team YCS Atlanta: Dragon Duel Playoff Winner",
+    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-dragon-duel-playoff-winner/",
+    "modified": "2022-09-29T11:08:37-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2019-03-atlanta-ga"
   },
   {
@@ -234,9 +234,9 @@
     "slug": "2019-03-atlanta-ga"
   },
   {
-    "title": "Team YCS Atlanta: Congratulations to our Top 4 Teams!",
-    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-congratulations-to-our-top-4-teams/",
-    "modified": "2019-03-18T11:18:49-07:00",
+    "title": "Team YCS Atlanta: And the Winners Are…",
+    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-and-the-winners-are/",
+    "modified": "2019-03-18T11:19:23-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
     "format": null,
@@ -252,9 +252,9 @@
     "slug": "2019-03-atlanta-ga"
   },
   {
-    "title": "Team YCS Atlanta: 3v3 Team Tournament Winners (Sunday)",
-    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-3v3-team-tournament-winners-sunday/",
-    "modified": "2019-03-17T17:07:11-07:00",
+    "title": "Team YCS Atlanta: Congratulations to our Top 4 Teams!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-congratulations-to-our-top-4-teams/",
+    "modified": "2019-03-18T11:18:49-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
     "format": null,
@@ -270,9 +270,9 @@
     "slug": "2019-03-atlanta-ga"
   },
   {
-    "title": "Team YCS Atlanta: 3v3 Team Tournament #2 Winners (Sunday)",
-    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-3v3-team-tournament-2-winners-sunday/",
-    "modified": "2019-03-17T17:10:08-07:00",
+    "title": "Team YCS Atlanta: 3v3 Team Tournament Winners (Sunday)",
+    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-3v3-team-tournament-winners-sunday/",
+    "modified": "2019-03-17T17:07:11-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
     "format": null,
@@ -288,6 +288,24 @@
     "slug": "2019-03-atlanta-ga"
   },
   {
+    "title": "Team YCS Atlanta: 3v3 Team Tournament #2 Winners (Sunday)",
+    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-3v3-team-tournament-2-winners-sunday/",
+    "modified": "2019-03-17T17:10:08-07:00",
+    "kind": "result",
+    "event": "Team YCS Atlanta",
+    "format": null,
+    "slug": "2019-03-atlanta-ga"
+  },
+  {
+    "title": "Team YCS Atlanta: Top Tables Round 8",
+    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-top-tables-round-8/",
+    "modified": "2019-03-17T10:14:25-07:00",
+    "kind": "news",
+    "event": "Team YCS Atlanta",
+    "format": null,
+    "slug": "2019-03-atlanta-ga"
+  },
+  {
     "title": "Team YCS Atlanta: ATTACK OF THE GIANT CARD!! Winners (Sunday)",
     "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-attack-of-the-giant-card-winners-sunday/",
     "modified": "2019-03-17T17:13:13-07:00",
@@ -297,9 +315,9 @@
     "slug": "2019-03-atlanta-ga"
   },
   {
-    "title": "Team YCS Atlanta: Top Tables Round 8",
-    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-top-tables-round-8/",
-    "modified": "2019-03-17T10:14:25-07:00",
+    "title": "Team YCS Atlanta: Prize Wall",
+    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-prize-wall/",
+    "modified": "2019-03-17T08:46:51-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
     "format": null,
@@ -315,9 +333,9 @@
     "slug": "2019-03-atlanta-ga"
   },
   {
-    "title": "Team YCS Atlanta: Prize Wall",
-    "url": "https://yugiohblog.konami.com/2019/ycs/2019-03-atlanta-ga/team-ycs-atlanta-prize-wall/",
-    "modified": "2019-03-17T08:46:51-07:00",
+    "title": "Team YCS Atlanta: Top 16",
+    "url": "https://yugiohblog.konami.com/2019/ycs/team-ycs-atlanta-top-16/",
+    "modified": "2019-03-17T09:59:53-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
     "format": null,
@@ -330,15 +348,6 @@
     "kind": "result",
     "event": "Team YCS Atlanta",
     "format": "Attack of the Giant Card",
-    "slug": "2019-03-atlanta-ga"
-  },
-  {
-    "title": "Team YCS Atlanta: Top 16",
-    "url": "https://yugiohblog.konami.com/2019/ycs/team-ycs-atlanta-top-16/",
-    "modified": "2019-03-17T09:59:53-07:00",
-    "kind": "news",
-    "event": "Team YCS Atlanta",
-    "format": null,
     "slug": "2019-03-atlanta-ga"
   },
   {
