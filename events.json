@@ -4120,6 +4120,13 @@
       "coverageBy": "Konami",
       "path": "events/2014-wcq-ca/rounds.json",
       "postCount": 47,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jose Lagunez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
