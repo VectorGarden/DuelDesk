@@ -207,6 +207,15 @@
     "slug": "2019-south-america-wcq"
   },
   {
+    "title": "South America Dragon Duel WCQ: Final Match",
+    "url": "https://yugiohblog.konami.com/2019/championships/south-america-dragon-duel-wcq-final-match/",
+    "modified": "2019-06-16T12:14:10-07:00",
+    "kind": "feature",
+    "event": "South America WCQ 2019",
+    "format": "Dragon Duel",
+    "slug": "2019-south-america-wcq"
+  },
+  {
     "title": "We have a new South American WCQ Champion!",
     "url": "https://yugiohblog.konami.com/2019/championships/we-have-a-new-south-american-wcq-champion/",
     "modified": "2019-06-17T11:24:36-07:00",
@@ -225,6 +234,15 @@
     "slug": "2019-south-america-wcq"
   },
   {
+    "title": "South America WCQ: Final Match",
+    "url": "https://yugiohblog.konami.com/2019/championships/south-america-final-match/",
+    "modified": "2019-06-16T14:09:49-07:00",
+    "kind": "feature",
+    "event": "South America WCQ 2019",
+    "format": null,
+    "slug": "2019-south-america-wcq"
+  },
+  {
     "title": "We have a South America Dragon Duel Champion!",
     "url": "https://yugiohblog.konami.com/2019/championships/we-have-a-south-america-dragon-duel-champion/",
     "modified": "2019-06-16T13:20:06-07:00",
@@ -234,28 +252,10 @@
     "slug": "2019-south-america-wcq"
   },
   {
-    "title": "South America Dragon Duel WCQ: Final Match",
-    "url": "https://yugiohblog.konami.com/2019/championships/south-america-dragon-duel-wcq-final-match/",
-    "modified": "2019-06-16T12:14:10-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2019",
-    "format": "Dragon Duel",
-    "slug": "2019-south-america-wcq"
-  },
-  {
     "title": "South America WCQ: World Qualifying Points Winner",
     "url": "https://yugiohblog.konami.com/2019/championships/south-america-wcq-world-qualifying-points-winner/",
     "modified": "2019-06-14T13:59:38-07:00",
     "kind": "result",
-    "event": "South America WCQ 2019",
-    "format": null,
-    "slug": "2019-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Final Match",
-    "url": "https://yugiohblog.konami.com/2019/championships/south-america-final-match/",
-    "modified": "2019-06-16T14:09:49-07:00",
-    "kind": "news",
     "event": "South America WCQ 2019",
     "format": null,
     "slug": "2019-south-america-wcq"

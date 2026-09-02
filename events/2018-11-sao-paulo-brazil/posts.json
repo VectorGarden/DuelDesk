@@ -459,6 +459,15 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
+    "title": "YCS Pasadena: Top 16 Players and Decks!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-pasadena-top-16-players-and-decks/",
+    "modified": "2018-11-18T13:52:06-08:00",
+    "kind": "deck",
+    "event": "YCS Pasadena",
+    "format": null,
+    "slug": "2018-11-sao-paulo-brazil"
+  },
+  {
     "title": "YCS Sao Paulo: Dragon Duel Champion!",
     "url": "https://yugiohblog.konami.com/2018/ycs/ycs-sao-paulo-dragon-duel-champion/",
     "modified": "2018-11-18T11:50:18-08:00",
@@ -480,6 +489,15 @@
     "title": "Round 11 Feature Match: Jonathan Rosario vs. Roman Kieser",
     "url": "https://yugiohblog.konami.com/2018/ycs/round-11-feature-match-jonathan-rosario-vs-roman-kieser/",
     "modified": "2018-11-18T11:40:59-08:00",
+    "kind": "feature",
+    "event": "YCS Pasadena",
+    "format": null,
+    "slug": "2018-11-sao-paulo-brazil"
+  },
+  {
+    "title": "Speed Duel Feature Match: Devin Liao vs. Christopher Huanosta",
+    "url": "https://yugiohblog.konami.com/2018/ycs/speed-dueling-is-here-at-ycs-pasadena-although-the-speed-dueling-decks-are-not-yet-officially-released-and-wont-be-released-until-2019-duelists-here-this-weekend-are-allowed-to-borrow-one-o/",
+    "modified": "2018-11-17T18:06:20-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
     "format": null,
@@ -738,9 +756,9 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "YCS Pasadena: Top 16 Players and Decks!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-pasadena-top-16-players-and-decks/",
-    "modified": "2018-11-18T13:52:06-08:00",
+    "title": "YCS Pasadena: The Finals Are About to Begin!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-pasadena-the-finals-are-about-to-begin/",
+    "modified": "2018-11-18T16:00:52-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
     "format": null,
@@ -765,9 +783,9 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "YCS Pasadena: The Finals Are About to Begin!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-pasadena-the-finals-are-about-to-begin/",
-    "modified": "2018-11-18T16:00:52-08:00",
+    "title": "YCS Pasadena Charity Event",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-pasadena-charity-event/",
+    "modified": "2018-11-18T18:29:42-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
     "format": null,
@@ -783,24 +801,6 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "YCS Pasadena Charity Event",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-pasadena-charity-event/",
-    "modified": "2018-11-18T18:29:42-08:00",
-    "kind": "news",
-    "event": "YCS Pasadena",
-    "format": null,
-    "slug": "2018-11-sao-paulo-brazil"
-  },
-  {
-    "title": "Round 3 Feature Match: Aaron Furman vs. Surya Kamaraguru",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-3-feature-match-aaron-furman-vs-surya-kamaraguru/",
-    "modified": "2018-11-17T15:41:48-08:00",
-    "kind": "feature",
-    "event": "YCS Pasadena",
-    "format": null,
-    "slug": "2018-11-sao-paulo-brazil"
-  },
-  {
     "title": "Sunday’s Top 4 Dragon Duelists at YCS Pasadena!",
     "url": "https://yugiohblog.konami.com/2018/ycs/sundays-top-4-dragon-duelists-at-ycs-pasadena/",
     "modified": "2018-11-18T19:27:07-08:00",
@@ -810,9 +810,9 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "Round 4 Feature Match: Yishan McNabb vs. Jonathon Castillo",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-4-feature-match-yishan-mcnabb-vs-jonathon-castillo/",
-    "modified": "2018-11-17T16:23:51-08:00",
+    "title": "Round 3 Feature Match: Aaron Furman vs. Surya Kamaraguru",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-3-feature-match-aaron-furman-vs-surya-kamaraguru/",
+    "modified": "2018-11-17T15:41:48-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
     "format": null,
@@ -828,9 +828,9 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "Round 5 Feature Match: Brian Ramirez vs. Connor Farmer",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-5-feature-match-brian-ramirez-vs-connor-farmer/",
-    "modified": "2018-11-17T18:08:28-08:00",
+    "title": "Round 4 Feature Match: Yishan McNabb vs. Jonathon Castillo",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-4-feature-match-yishan-mcnabb-vs-jonathon-castillo/",
+    "modified": "2018-11-17T16:23:51-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
     "format": null,
@@ -846,9 +846,9 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "Round 6 Feature Match: Carlos Talamantes vs. Richard Barnett",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-6-feature-match-carlos-talamantes-vs-richard-barnett/",
-    "modified": "2018-11-17T19:43:10-08:00",
+    "title": "Round 5 Feature Match: Brian Ramirez vs. Connor Farmer",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-5-feature-match-brian-ramirez-vs-connor-farmer/",
+    "modified": "2018-11-17T18:08:28-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
     "format": null,
@@ -864,9 +864,9 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "Round 8 Feature Match: Wolf Lechte vs. Richard Barnett",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-8-feature-match-wolf-lechte-vs-richard-barnett/",
-    "modified": "2018-11-17T20:49:36-08:00",
+    "title": "Round 6 Feature Match: Carlos Talamantes vs. Richard Barnett",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-6-feature-match-carlos-talamantes-vs-richard-barnett/",
+    "modified": "2018-11-17T19:43:10-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
     "format": null,
@@ -882,9 +882,9 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "Round 7 Feature Match: Niya Carter vs. Daniel Rangel",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-7-feature-match-niya-carter-vs-daniel-rangel/",
-    "modified": "2018-11-17T21:18:01-08:00",
+    "title": "Round 8 Feature Match: Wolf Lechte vs. Richard Barnett",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-8-feature-match-wolf-lechte-vs-richard-barnett/",
+    "modified": "2018-11-17T20:49:36-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
     "format": null,
@@ -900,9 +900,9 @@
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
-    "title": "Round 9 Feature Match: Abraham King vs. Darren Stephenson",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-9-feature-match-abraham-king-vs-darren-stephenson/",
-    "modified": "2018-11-17T21:53:21-08:00",
+    "title": "Round 7 Feature Match: Niya Carter vs. Daniel Rangel",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-7-feature-match-niya-carter-vs-daniel-rangel/",
+    "modified": "2018-11-17T21:18:01-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
     "format": null,
@@ -915,6 +915,15 @@
     "kind": "news",
     "event": "YCS Pasadena",
     "format": "Dragon Duel",
+    "slug": "2018-11-sao-paulo-brazil"
+  },
+  {
+    "title": "Round 9 Feature Match: Abraham King vs. Darren Stephenson",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-9-feature-match-abraham-king-vs-darren-stephenson/",
+    "modified": "2018-11-17T21:53:21-08:00",
+    "kind": "feature",
+    "event": "YCS Pasadena",
+    "format": null,
     "slug": "2018-11-sao-paulo-brazil"
   },
   {
@@ -940,15 +949,6 @@
     "url": "https://yugiohblog.konami.com/2018/ycs/get-ready-for-speed-dueling/",
     "modified": "2018-11-17T17:49:04-08:00",
     "kind": "news",
-    "event": "YCS Pasadena",
-    "format": null,
-    "slug": "2018-11-sao-paulo-brazil"
-  },
-  {
-    "title": "Speed Duel Feature Match: Devin Liao vs. Christopher Huanosta",
-    "url": "https://yugiohblog.konami.com/2018/ycs/speed-dueling-is-here-at-ycs-pasadena-although-the-speed-dueling-decks-are-not-yet-officially-released-and-wont-be-released-until-2019-duelists-here-this-weekend-are-allowed-to-borrow-one-o/",
-    "modified": "2018-11-17T18:06:20-08:00",
-    "kind": "feature",
     "event": "YCS Pasadena",
     "format": null,
     "slug": "2018-11-sao-paulo-brazil"

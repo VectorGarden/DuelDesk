@@ -2111,31 +2111,6 @@
       ]
     },
     {
-      "slug": "202205-ycs-hartford-ct",
-      "event": "YCS Hartford",
-      "updated": "2022-05-29",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/202205-ycs-hartford-ct/rounds.json",
-      "postCount": 69,
-      "champions": [
-        {
-          "format": null,
-          "name": "Poe Jiang",
-          "deck": "Sky Striker"
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 11,
-          "duelists": 1243,
-          "rounds": 15
-        }
-      ]
-    },
-    {
       "slug": "2022-ycs-guadalajara-mexico",
       "event": "YCS Guadalajara",
       "location": "Guadalajara, Mexico",
@@ -2231,7 +2206,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-latin-america-remote-duel-ycs/rounds.json",
-      "postCount": 13,
+      "postCount": 12,
       "formats": [
         {
           "format": null,
@@ -2249,7 +2224,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2022-january-remote-duel-ycs/rounds.json",
-      "postCount": 50,
+      "postCount": 51,
       "champions": [
         {
           "format": null,
@@ -2723,17 +2698,10 @@
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-medellin-colombia/rounds.json",
       "postCount": 28,
-      "champions": [
-        {
-          "format": null,
-          "name": "Paulo Roberto Goncalves da Silva",
-          "deck": null
-        }
-      ],
       "formats": [
         {
           "format": null,
-          "swissRounds": 12,
+          "swissRounds": 14,
           "duelists": 142,
           "rounds": 13
         }

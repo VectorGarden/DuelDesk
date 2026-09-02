@@ -135,9 +135,9 @@
     "slug": "2019-ycs-portland"
   },
   {
-    "title": "YCS Portland: Top 4 Deck Profile",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-4-deck-profile-yishan-mcnabbs-golden-castle-gren-maju/",
-    "modified": "2019-08-25T19:26:37-07:00",
+    "title": "YCS Portland: Top 32 Duelists and Decks!",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-32-duelists-and-decks/",
+    "modified": "2019-08-25T14:26:41-07:00",
     "kind": "deck",
     "event": "YCS Portland",
     "format": null,
@@ -172,8 +172,8 @@
   },
   {
     "title": "YCS Portland: Top 4 Deck Profile",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-4-deck-profile-brian-chen/",
-    "modified": "2019-08-25T18:24:27-07:00",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-4-deck-profile-yishan-mcnabbs-golden-castle-gren-maju/",
+    "modified": "2019-08-25T19:26:37-07:00",
     "kind": "deck",
     "event": "YCS Portland",
     "format": null,
@@ -208,8 +208,8 @@
   },
   {
     "title": "YCS Portland: Top 4 Deck Profile",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-4-deck-profile-joe-alvarezs-salamangreat/",
-    "modified": "2019-08-25T18:23:14-07:00",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-4-deck-profile-brian-chen/",
+    "modified": "2019-08-25T18:24:27-07:00",
     "kind": "deck",
     "event": "YCS Portland",
     "format": null,
@@ -244,8 +244,8 @@
   },
   {
     "title": "YCS Portland: Top 4 Deck Profile",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-4-deck-profile-garon-williams-sky-striker/",
-    "modified": "2019-08-25T18:33:31-07:00",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-4-deck-profile-joe-alvarezs-salamangreat/",
+    "modified": "2019-08-25T18:23:14-07:00",
     "kind": "deck",
     "event": "YCS Portland",
     "format": null,
@@ -279,6 +279,15 @@
     "slug": "2019-ycs-portland"
   },
   {
+    "title": "YCS Portland: Top 4 Deck Profile",
+    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-4-deck-profile-garon-williams-sky-striker/",
+    "modified": "2019-08-25T18:33:31-07:00",
+    "kind": "deck",
+    "event": "YCS Portland",
+    "format": null,
+    "slug": "2019-ycs-portland"
+  },
+  {
     "title": "YCS Portland: Sunday’s ATTACK OF THE GIANT CARD!! Winners",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-sundays-attack-of-the-giant-card-winners/",
     "modified": "2019-08-25T19:27:16-07:00",
@@ -292,6 +301,15 @@
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-16/",
     "modified": "2019-08-25T12:30:20-07:00",
     "kind": "news",
+    "event": "YCS Portland",
+    "format": null,
+    "slug": "2019-ycs-portland"
+  },
+  {
+    "title": "VIP Deck Breakdown",
+    "url": "https://yugiohblog.konami.com/2019/ycs/vip-deck-breakdown/",
+    "modified": "2019-08-24T17:46:13-07:00",
+    "kind": "deck",
     "event": "YCS Portland",
     "format": null,
     "slug": "2019-ycs-portland"
@@ -321,15 +339,6 @@
     "kind": "news",
     "event": "YCS Portland",
     "format": "Dragon Duel",
-    "slug": "2019-ycs-portland"
-  },
-  {
-    "title": "YCS Portland: Top 32 Duelists and Decks!",
-    "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-top-32-duelists-and-decks/",
-    "modified": "2019-08-25T14:26:41-07:00",
-    "kind": "news",
-    "event": "YCS Portland",
-    "format": null,
     "slug": "2019-ycs-portland"
   },
   {
@@ -381,15 +390,6 @@
     "title": "YCS Portland: Who to Watch",
     "url": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-who-to-watch/",
     "modified": "2019-08-24T16:59:46-07:00",
-    "kind": "news",
-    "event": "YCS Portland",
-    "format": null,
-    "slug": "2019-ycs-portland"
-  },
-  {
-    "title": "VIP Deck Breakdown",
-    "url": "https://yugiohblog.konami.com/2019/ycs/vip-deck-breakdown/",
-    "modified": "2019-08-24T17:46:13-07:00",
     "kind": "news",
     "event": "YCS Portland",
     "format": null,

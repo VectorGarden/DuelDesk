@@ -198,6 +198,15 @@
     "slug": "2018-ycs-memphis"
   },
   {
+    "title": "YCS Memphis Top 32 Duelists and Decks!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-memphis-top-32-duelists-and-decks/",
+    "modified": "2018-04-22T12:01:56-07:00",
+    "kind": "deck",
+    "event": "YCS Memphis",
+    "format": null,
+    "slug": "2018-ycs-memphis"
+  },
+  {
     "title": "YCS Memphis: Dragon Duel Champion!",
     "url": "https://yugiohblog.konami.com/2018/ycs/ycs-memphis-dragon-duel-champion/",
     "modified": "2018-04-22T15:21:03-07:00",
@@ -220,6 +229,15 @@
     "url": "https://yugiohblog.konami.com/2018/ycs/round-10-feature-match-jesse-kotton-vs-corey-stearman/",
     "modified": "2018-04-22T11:17:54-07:00",
     "kind": "feature",
+    "event": "YCS Memphis",
+    "format": null,
+    "slug": "2018-ycs-memphis"
+  },
+  {
+    "title": "Top 16 Pairings and Decks!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/check-out-which-duelists-and-decks-are-dueling-in-the-top-16-2/",
+    "modified": "2018-04-22T12:01:35-07:00",
+    "kind": "pairings",
     "event": "YCS Memphis",
     "format": null,
     "slug": "2018-ycs-memphis"
@@ -270,24 +288,6 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "YCS Memphis Top 32 Duelists and Decks!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-memphis-top-32-duelists-and-decks/",
-    "modified": "2018-04-22T12:01:56-07:00",
-    "kind": "news",
-    "event": "YCS Memphis",
-    "format": null,
-    "slug": "2018-ycs-memphis"
-  },
-  {
-    "title": "Top 8 Feature Match: Mason Mattila vs. Thanh Nguyen",
-    "url": "https://yugiohblog.konami.com/2018/ycs/top-8-feature-match-mason-mattila-vs-thanh-nguyen/",
-    "modified": "2018-04-22T15:27:11-07:00",
-    "kind": "feature",
-    "event": "YCS Memphis",
-    "format": null,
-    "slug": "2018-ycs-memphis"
-  },
-  {
     "title": "Round 10 Feature Match: Mason Mattila vs. Nicholas Petzold",
     "url": "https://yugiohblog.konami.com/2018/ycs/round-10-mason-mattila-vs-nicholas-petzold/",
     "modified": "2018-04-22T12:11:19-07:00",
@@ -297,27 +297,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Top 4 Feature Match: James Rutherford vs. Kamal Crooks",
-    "url": "https://yugiohblog.konami.com/2018/ycs/top-4-feature-match-james-rutherford-vs-kamal-crooks/",
-    "modified": "2018-04-22T16:18:18-07:00",
-    "kind": "feature",
-    "event": "YCS Memphis",
-    "format": null,
-    "slug": "2018-ycs-memphis"
-  },
-  {
-    "title": "Top 16 Pairings and Decks!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/check-out-which-duelists-and-decks-are-dueling-in-the-top-16-2/",
-    "modified": "2018-04-22T12:01:35-07:00",
-    "kind": "pairings",
-    "event": "YCS Memphis",
-    "format": null,
-    "slug": "2018-ycs-memphis"
-  },
-  {
-    "title": "Finals Feature Match: Kamal Crooks vs. Andres Espinosa",
-    "url": "https://yugiohblog.konami.com/2018/ycs/finals-feature-match-kamal-crooks-vs-andres-espinosa/",
-    "modified": "2018-04-22T16:30:17-07:00",
+    "title": "Top 8 Feature Match: Mason Mattila vs. Thanh Nguyen",
+    "url": "https://yugiohblog.konami.com/2018/ycs/top-8-feature-match-mason-mattila-vs-thanh-nguyen/",
+    "modified": "2018-04-22T15:27:11-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -333,9 +315,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 1 Feature Match: Thomas Opsal vs. Michael Sexton",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-1-feature-match-thomas-opsal-vs-michael-sexton/",
-    "modified": "2018-04-21T11:02:07-07:00",
+    "title": "Top 4 Feature Match: James Rutherford vs. Kamal Crooks",
+    "url": "https://yugiohblog.konami.com/2018/ycs/top-4-feature-match-james-rutherford-vs-kamal-crooks/",
+    "modified": "2018-04-22T16:18:18-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -351,9 +333,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 1 Feature Match: Bryan Bernardi vs. Michael Tinga",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-1-feature-match-bryan-bernardi-vs-michael-tinga/",
-    "modified": "2018-04-21T11:08:00-07:00",
+    "title": "Finals Feature Match: Kamal Crooks vs. Andres Espinosa",
+    "url": "https://yugiohblog.konami.com/2018/ycs/finals-feature-match-kamal-crooks-vs-andres-espinosa/",
+    "modified": "2018-04-22T16:30:17-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -369,9 +351,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 2 Feature Match: Edgar Gonzalez vs. William Sullivan",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-2-feature-match-edgar-gonzalez-vs-william-sullivan/",
-    "modified": "2018-04-21T12:36:37-07:00",
+    "title": "Round 1 Feature Match: Thomas Opsal vs. Michael Sexton",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-1-feature-match-thomas-opsal-vs-michael-sexton/",
+    "modified": "2018-04-21T11:02:07-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -387,9 +369,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 2 Feature Match: Travis Tackett vs. Corey Rogers",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-2-feature-match-travis-tackett-vs-corey-rogers/",
-    "modified": "2018-04-21T13:32:21-07:00",
+    "title": "Round 1 Feature Match: Bryan Bernardi vs. Michael Tinga",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-1-feature-match-bryan-bernardi-vs-michael-tinga/",
+    "modified": "2018-04-21T11:08:00-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -405,9 +387,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 3 Feature Match: Aaron Furman vs. Azad Deihim",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-3-feature-match-aaron-furman-vs-azad-deihim/",
-    "modified": "2018-04-21T13:57:58-07:00",
+    "title": "Round 2 Feature Match: Edgar Gonzalez vs. William Sullivan",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-2-feature-match-edgar-gonzalez-vs-william-sullivan/",
+    "modified": "2018-04-21T12:36:37-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -423,9 +405,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 4 Feature Match: Johnny Nguyen vs. Garcia Ruiz",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-4-feature-match-johnny-nguyen-vs-garcia-ruiz/",
-    "modified": "2018-04-21T15:03:44-07:00",
+    "title": "Round 2 Feature Match: Travis Tackett vs. Corey Rogers",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-2-feature-match-travis-tackett-vs-corey-rogers/",
+    "modified": "2018-04-21T13:32:21-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -441,9 +423,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 5 Feature Match: Jermaine Leach vs. Turner Brattan",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-5-feature-match-jermaine-leach-vs-turner-brattan/",
-    "modified": "2018-04-21T16:54:31-07:00",
+    "title": "Round 3 Feature Match: Aaron Furman vs. Azad Deihim",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-3-feature-match-aaron-furman-vs-azad-deihim/",
+    "modified": "2018-04-21T13:57:58-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -459,9 +441,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 6 Feature Match: Joshua Forbis vs. David Flores",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-6-feature-match-joshua-forbis-vs-david-flores/",
-    "modified": "2018-04-21T18:25:01-07:00",
+    "title": "Round 4 Feature Match: Johnny Nguyen vs. Garcia Ruiz",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-4-feature-match-johnny-nguyen-vs-garcia-ruiz/",
+    "modified": "2018-04-21T15:03:44-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -477,9 +459,9 @@
     "slug": "2018-ycs-memphis"
   },
   {
-    "title": "Round 8 Feature Match: Jeff Jones vs. Esala Wathuthantrige",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-8-feature-match-jeff-jones-vs-esala-wathuthantrige/",
-    "modified": "2018-04-21T20:18:39-07:00",
+    "title": "Round 5 Feature Match: Jermaine Leach vs. Turner Brattan",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-5-feature-match-jermaine-leach-vs-turner-brattan/",
+    "modified": "2018-04-21T16:54:31-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
@@ -495,10 +477,28 @@
     "slug": "2018-ycs-memphis"
   },
   {
+    "title": "Round 6 Feature Match: Joshua Forbis vs. David Flores",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-6-feature-match-joshua-forbis-vs-david-flores/",
+    "modified": "2018-04-21T18:25:01-07:00",
+    "kind": "feature",
+    "event": "YCS Memphis",
+    "format": null,
+    "slug": "2018-ycs-memphis"
+  },
+  {
     "title": "QQ: Which Cards From Your Side Deck Do You Use Most?",
     "url": "https://yugiohblog.konami.com/2018/ycs/qq-which-cards-from-your-side-deck-do-you-use-most/",
     "modified": "2018-04-21T15:49:55-07:00",
     "kind": "news",
+    "event": "YCS Memphis",
+    "format": null,
+    "slug": "2018-ycs-memphis"
+  },
+  {
+    "title": "Round 8 Feature Match: Jeff Jones vs. Esala Wathuthantrige",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-8-feature-match-jeff-jones-vs-esala-wathuthantrige/",
+    "modified": "2018-04-21T20:18:39-07:00",
+    "kind": "feature",
     "event": "YCS Memphis",
     "format": null,
     "slug": "2018-ycs-memphis"
