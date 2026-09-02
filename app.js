@@ -1222,8 +1222,8 @@ function renderPairings(r){
      so the second Duelist landed under Record and their deck under Team. */
   const duels = (p) => (p.duels ?? []).map(d => `<tr class="duel">
       <td class="num">${esc(d.table)}</td>
-      <td>${esc(d.a)}</td>${deckCell(d.aDeck)}<td></td>
-      <td>${esc(d.b)}</td>${deckCell(d.bDeck)}<td></td></tr>`).join('');
+      <td>${withCrown(d.a)}</td>${deckCell(d.aDeck)}<td></td>
+      <td>${withCrown(d.b)}</td>${deckCell(d.bDeck)}<td></td></tr>`).join('');
 
   return wrapTable(`Pairings for ${r.label}`, `<table>
     <caption>${caption} Search by ${teams ? 'Duelist or team' : 'Duelist'} to filter this list.</caption>
@@ -1234,8 +1234,8 @@ function renderPairings(r){
     </tr></thead><tbody>
     ${rows.map(p => `<tr${p.duels?.length ? ' class="match"' : ''}>
       <td class="num">${esc(p.table)}</td>
-      <td>${esc(p.a)}</td>${deckCell(p.aDeck)}${rec(p.aRec)}
-      <td>${esc(p.b)}</td>${deckCell(p.bDeck)}${rec(p.bRec)}</tr>${duels(p)}`).join('')}
+      <td>${withCrown(p.a)}</td>${deckCell(p.aDeck)}${rec(p.aRec)}
+      <td>${withCrown(p.b)}</td>${deckCell(p.bDeck)}${rec(p.bRec)}</tr>${duels(p)}`).join('')}
     </tbody></table>`);
 }
 
@@ -1277,7 +1277,7 @@ function renderStandings(r){
     </tr></thead><tbody>
     ${rows.map(s => `<tr>
       <th scope="row" class="num">${esc(s.pos)}</th>
-      <td>${esc(s.name)}${s.members?.length
+      <td>${withCrown(s.name)}${s.members?.length
         ? `<span class="roster">${esc(s.members.join(', '))}</span>` : ''}</td>
       ${hasRecord ? `<td class="rec${s.record?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(s.record, {drawsPossible: eventDrawsPossible()}))}</td>` : ''}
       ${hasPoints ? `<td class="rec num">${esc(s.points ?? '—')}</td>` : ''}
@@ -1308,7 +1308,7 @@ function renderFeature(r){
     const bits = [];
     if (p.deck) bits.push(esc(p.deck));
     if (p.record) bits.push(esc(formatRecord(p.record, {drawsPossible: eventDrawsPossible()})));
-    return `<div class="feature__side"><h3>${esc(p.name)}</h3>`
+    return `<div class="feature__side"><h3>${withCrown(p.name)}</h3>`
          + (bits.length ? `<p>${bits.join(' · ')}</p>` : '') + `</div>`;
   };
   const one = ({a, b, note, source}) => `<div class="feature">
@@ -1348,6 +1348,54 @@ const tournamentKey = () => `${activeEvent}\u0000${activeFormat}`;
 const championShown = () => championFor !== null && championFor === tournamentKey();
 
 const deepestRound = () => ROUNDS[ROUNDS.length - 1];
+
+/* A crown beside the Duelist who won, wherever the round tables name them.
+
+   Only once the champion has been revealed. The whole point of hiding them is
+   that the rounds above are worth reading first, and a crown in the Top 4
+   pairings gives the ending away as plainly as printing the name would --
+   which is the leak #179 closed between events and would reopen inside one.
+
+   And only where the archive can point to them without doubt. Two Duelists
+   share a name more often than a bracket is wrong: YCS Hartford's Top 32
+   seats a Pascal Manigat in two different matches, and crowning by name alone
+   would crown whichever one lost. The builder already knows -- it refuses to
+   derive a record for a name it cannot tell apart -- so a champion it never
+   derived a record for is one this cannot safely point at. Five of the
+   archive's hundred and forty-two are refused on that test, and one of them,
+   Raphael Pelaja Neven, is named in fifteen seats. */
+const traceable = new Map();
+
+function championIsTraceable(fmt){
+  const key = `${activeEvent}\u0000${fmt.format}`;
+  if (traceable.has(key)) return traceable.get(key);
+  const won = fmt.champion;
+  let derived = false;
+  for (const r of fmt.rounds ?? []){
+    for (const p of r.pairings ?? []){
+      if ((p.a === won && p.aRec) || (p.b === won && p.bRec)) derived = true;
+    }
+    for (const st of r.standings ?? []){
+      if (st.name === won && st.record && st.record.wins !== null
+          && st.record.wins !== undefined) derived = true;
+    }
+  }
+  traceable.set(key, derived);
+  return derived;
+}
+
+/* The crown's markup, or nothing. Never colour alone: the glyph is hidden
+   from assistive technology and the word it stands for is read instead. */
+function crown(name){
+  if (!name || !championShown()) return '';
+  const fmt = formatOf(activeFormat);
+  if (!fmt || fmt.champion !== name || !championIsTraceable(fmt)) return '';
+  return ` <span class="crown" title="Won this tournament"><span aria-hidden="true">👑</span>`
+       + `<span class="visually-hidden">champion</span></span>`;
+}
+
+/* A name as the tables print it, with the crown where it belongs. */
+const withCrown = (v) => `${esc(v)}${crown(v)}`;
 
 /* What they won with, from the round they won it in. Only where the coverage
    published deck types, which it does for the cut and not for Swiss. */
@@ -1406,6 +1454,11 @@ champEl?.addEventListener('click', e => {
   if (!e.target.closest('[data-champ]')) return;
   championFor = championShown() ? null : tournamentKey();
   renderChampion();
+  /* And the tables, which mark the champion wherever they name them. Only
+     this strip was redrawn before, so a reveal put the name in the heading
+     and left the round below it uncrowned until something else happened to
+     redraw it. */
+  renderRound();
   /* Focus survives the rewrite: the button is the thing that was just used,
      and a reader on the keyboard would otherwise be returned to the top. */
   champEl.querySelector('[data-champ]')?.focus();

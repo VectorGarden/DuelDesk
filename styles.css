@@ -498,6 +498,11 @@ a.post__t--jump:hover,a.post__t--jump:focus-visible{text-decoration:underline do
 .win__f{font:500 .72rem var(--mono); color:var(--text-3)}
 .win__w{font-family:var(--mono)}
 
+/* The champion, marked where the tables name them. Sized down and nudged up
+   so a row of names still reads as a row: the crown is an aside on the name,
+   not a second column. */
+.crown{font-size:.78em; line-height:1; vertical-align:.08em; margin-left:.15em}
+
 /* Who won. Sits between the round's heading and its tables, so it reads as part
    of the round rather than as a banner over the panel. */
 .champ{display:flex; align-items:center; gap:.7rem; flex-wrap:wrap;
