@@ -1092,7 +1092,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2024-north-america-wcq/rounds.json",
-      "postCount": 85,
+      "postCount": 87,
       "champions": [
         {
           "format": null,
@@ -1625,7 +1625,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-south-america-wcq/rounds.json",
-      "postCount": 35,
+      "postCount": 36,
       "champions": [
         {
           "format": null,
@@ -1751,7 +1751,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2023-250th-ycs-in-los-angeles/rounds.json",
-      "postCount": 28,
+      "postCount": 29,
       "formats": [
         {
           "format": null,
