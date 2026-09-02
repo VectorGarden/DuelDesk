@@ -375,25 +375,58 @@ def _words(text: str) -> str:
     return re.sub(r"[-_/]+", " ", text.lower())
 
 
+# What a post is, in the order the questions have to be asked. The page asks
+# the same questions of live feed titles in app.js kindFrom, and the two must
+# give the same answer: see test/fixtures/kinds.json, which both test suites
+# read. They had drifted apart over 403 of the archive's 8,076 titles before
+# this list existed.
+#
+# Order is the rule, not a detail:
+#
+#   "YCS Hartford Top 32 Pairings and Deck Lists" is a bracket that also
+#   prints decks, and the bracket is the part worth having, so pairings is
+#   asked first. "TEAM YCS Las Vegas Winner Deck Lists" is a decklist post
+#   about a winner, so deck is asked before result.
+#
+# Singular and plural, throughout. The final is the one round the blog titles
+# "Final Pairing", having exactly one match to report; a post announcing
+# several winners is titled "Winners". Requiring one or the other filed both
+# as news -- which the fetch budget ranks last, so the round the whole bracket
+# builds towards was the one post never fetched.
+KINDS = (
+    ("pairings",  r"\bpairings?\b"),
+    ("standings", r"\bstandings\b|\bpoint totals\b"),
+    # "Final Match" is how the blog titles a final it writes up rather than
+    # tabulates, and sixty-six of them were filed as news.
+    ("feature",   r"\bfeature match\b|\bfinal match\b|\bmatch:\s"),
+    # Any post about the decks played, which is looser than it looks: the blog
+    # writes "Top 8 Decklists", "Deck Breakdown", "Deck Type Breakdown",
+    # "Duelists and Decks in Day 2" and "Top 16 Players and Decks", and a rule
+    # naming the forms it knew about lost the ones it did not.
+    #
+    # What has to come out is not a phrasing but three series that are about
+    # decks without being coverage of any: QQ, the blog's reader-question
+    # column, which asks "Which Deck Are You Using This Weekend?" fifty-nine
+    # times; the Structure Deck and game mat products; and Deck Update, which
+    # is a set announcement. Deck check is a floor penalty.
+    # "Decklists" is one word as often as two, and \bdecks?\b does not see it.
+    ("deck",      r"\bdecks?\b|\bdeck ?lists?\b|\bdeck ?profiles?\b"),
+    ("result",    r"\bwinners?\b|\bchampions?\b|\bcongratulations\b|\bundefeated\b"),
+)
+
+# About decks, but not coverage of any. See the "deck" line above.
+_NOT_DECK_COVERAGE = re.compile(
+    r"\bqq\b|\bstructure deck\b|\bdeck check\b|\bdeck update\b"
+    r"|\bgame mat\b|\btech update\b")
+
+
 def detect_kind(text: str) -> str:
     low = _words(text)
-    if re.search(r"\bdeck ?lists?\b|\bdeck profiles?\b|\btop \d+ deck", low):
-        return "deck"
-    # Singular too. The final is the one round the blog titles "Final Pairing",
-    # having exactly one match to report, and requiring the plural classified it
-    # as news -- which the fetch budget ranks last, so the round the whole
-    # bracket builds towards was the one post never fetched.
-    if re.search(r"\bpairings?\b", low):
-        return "pairings"
-    if "standings" in low:
-        return "standings"
-    if "feature match" in low:
-        return "feature"
-    # Plurals here too. A post announcing several winners is titled "Winners",
-    # and requiring the singular filed it as news -- the same slip that hid the
-    # final pairing, in the line directly below it.
-    if re.search(r"\bwinners?\b|\bchampions?\b|\bcongratulations\b", low):
-        return "result"
+    for kind, pattern in KINDS:
+        if kind == "deck" and _NOT_DECK_COVERAGE.search(low):
+            continue
+        if re.search(pattern, low):
+            return kind
     return "news"
 
 

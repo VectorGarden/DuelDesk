@@ -118,17 +118,34 @@ function roundFrom(t){
   return null;
 }
 
-/* Coverage type. Order matters: the structural markers (pairings,
-   standings) are checked before the looser "deck" catch, so that
-   "Top 8 pairings" is a pairing and "Top 8 decklists" is a profile.
-   "Deck check" is a policy term, not deck content, so it is excluded.
-   Titles with no keyword at all fall back to 'news' rather than guess. */
+/* Coverage type. The same questions the scraper asks in parse.detect_kind,
+   in the same order, giving the same answers -- test/fixtures/kinds.json is
+   read by both suites so the two cannot drift again. They had drifted over
+   403 of the archive's 8,076 titles: this rule read "Public Events winners"
+   as news, because it asked for a singular winner, and filed "QQ: What Decks
+   were you expecting to see this weekend" under deck profiles, because it
+   asked for the bare word "deck".
+
+   Order is the rule, not a detail. "Top 32 Pairings and Deck Lists" is a
+   bracket that also prints decks, and the bracket is the part worth having;
+   "Winner Deck Lists" is a decklist post about a winner. So pairings is asked
+   before deck, and deck before result.
+
+   Singular and plural throughout: the blog titles a final "Final Pairing" and
+   a multi-winner post "Winners". Titles with no keyword at all fall back to
+   'news' rather than guess. */
 function kindFrom(t){
-  if (/\bpairings?\b/.test(t))                                               return 'pairings';
-  if (/\bstandings\b|\bpoint totals\b/.test(t))                              return 'standings';
-  if (/\bfeature match\b|\bfinal match\b|\bmatch:\s/.test(t))                return 'feature';
-  if (/\bwinner\b|\bchampion\b|\bcongratulations\b|\bundefeated\b/.test(t))  return 'result';
-  if (/\bdecks?\b|\bdeck ?lists?\b/.test(t) && !/\bdeck check\b/.test(t))     return 'deck';
+  if (/\bpairings?\b/.test(t))                                                 return 'pairings';
+  if (/\bstandings\b|\bpoint totals\b/.test(t))                                return 'standings';
+  if (/\bfeature match\b|\bfinal match\b|\bmatch:\s/.test(t))                  return 'feature';
+  // Any post about the decks played. What comes out is not a phrasing but
+  // three series that are about decks without covering any: QQ, the reader
+  // question column; the Structure Deck and game mat products; and Deck
+  // Update, a set announcement. Deck check is a floor penalty.
+  if (/\bdecks?\b|\bdeck ?lists?\b|\bdeck ?profiles?\b/.test(t)
+      && !/\bqq\b|\bstructure deck\b|\bdeck check\b|\bdeck update\b|\bgame mat\b|\btech update\b/.test(t))
+                                                                              return 'deck';
+  if (/\bwinners?\b|\bchampions?\b|\bcongratulations\b|\bundefeated\b/.test(t)) return 'result';
   return 'news';
 }
 
