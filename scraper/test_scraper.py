@@ -1753,21 +1753,67 @@ class TestProvenanceCheck(unittest.TestCase):
         code, out = self.check(drop_the_middle)
         self.assertEqual(code, 0, out)
 
-    def test_a_cut_round_holding_the_wrong_number_of_duelists_is_rejected(self):
+    def test_a_cut_round_missing_a_seat_is_rejected(self):
         # What the gap rule used to catch, kept: a table read into the wrong
-        # round. Measured against the round's own name rather than against the
-        # round before it, so it holds across a gap too.
+        # round, or the short reprint that cost YCS Philadelphia its Top 64.
+        # Measured against the round's own name rather than against the round
+        # before it, so it holds across a gap too.
+        def drop_one(d):
+            first = self.cut(d)[0]
+            if len(first["pairings"]) < 2:
+                self.skipTest("the subject's first cut round has one match")
+            first["pairings"][-1]["b"] = None
+        code, out = self.check(drop_one)
+        self.assertEqual(code, 1)
+        self.assertIn("its name calls for", out)
+
+    def test_a_duelist_seated_twice_with_a_record_is_rejected(self):
+        # One Duelist seated where another belongs: the matches still divide
+        # evenly, the seats still count right, and everyone here did play the
+        # round before. What gives it away is that the builder derived a
+        # record for the name, so it believed it knew who they were -- and
+        # nobody plays themselves.
         def merge_two(d):
             first = self.cut(d)[0]
             if len(first["pairings"]) < 2:
                 self.skipTest("the subject's first cut round has one match")
-            # One Duelist seated where another belongs: the matches still
-            # divide evenly and everyone here did play the round before, so
-            # only the count gives it away.
             first["pairings"][1]["a"] = first["pairings"][0]["a"]
         code, out = self.check(merge_two)
         self.assertEqual(code, 1)
-        self.assertIn("its name calls for", out)
+        self.assertIn("is seated 2 times and has a record", out)
+
+    def test_two_duelists_who_share_a_name_are_not_a_broken_bracket(self):
+        # YCS Hartford's Top 32 seats a Pascal Manigat in two matches. They
+        # are two people, which the builder can see and cannot separate, so it
+        # derives no record for either -- and counting distinct names instead
+        # of seats read the round as 31 Duelists of 32 and cost the archive
+        # the whole event.
+        def share_a_name(d):
+            rounds = self.cut(d)
+            first = rounds[0]
+            if len(first["pairings"]) < 2:
+                self.skipTest("the subject's first cut round has one match")
+            # Onto Duelists who go no further, so the only thing under test is
+            # the repeated name -- overwriting somebody who advances trips the
+            # continuity rule instead and proves nothing.
+            later = {n for r in rounds[1:] for p in r.get("pairings") or []
+                     for n in (p.get("a"), p.get("b")) if n}
+            spots = [(p, side) for p in first["pairings"] for side in ("a", "b")
+                     if p.get(side) and p[side] not in later]
+            # In different matches: the same name on both sides of one is a
+            # Duelist paired against themselves, which is its own rule.
+            spots = [s for i, s in enumerate(spots)
+                     if not any(s[0] is t[0] for t in spots[:i])]
+            if len(spots) < 2:
+                self.skipTest("no two eliminated seats in different matches")
+            (keep, keep_side), (take, take_side) = spots[0], spots[1]
+            take[take_side] = keep[keep_side]
+            # Underived on both, the way the builder leaves a name it cannot
+            # tell apart.
+            keep[keep_side + "Rec"] = None
+            take[take_side + "Rec"] = None
+        code, out = self.check(share_a_name)
+        self.assertEqual(code, 0, out)
 
     def test_a_derived_record_for_a_duelist_seated_twice_is_rejected(self):
         # The defect this guards: two people sharing a name merge, and the
