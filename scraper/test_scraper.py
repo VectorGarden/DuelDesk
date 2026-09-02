@@ -4738,6 +4738,42 @@ class TestADiscoveredEventCanBeDated(unittest.TestCase):
         self.assertEqual(got["cup-standings-after-round-9"],
                          ("2023-alpha-open", "discovered+date"))
 
+    @staticmethod
+    def filed(year, slug, when, n=6):
+        """One tournament's worth, filed under its own event slug in the path."""
+        return [(f"{year}/ycs/{slug}/round-{i}-pairings", when) for i in range(1, n + 1)] + \
+               [(f"{year}/ycs/{slug}/standings-after-round-{i}", when) for i in range(1, n + 1)]
+
+    def test_a_path_survives_a_late_edit(self):
+        # A lastmod is when the blog last edited a post, not when the event
+        # was. YCS Houston's winner post lives under /2025-04-ycs-houston/ and
+        # was touched on 30 May, so the date handed it to YCS Providence --
+        # eight of the 2013 North America WCQ's standings went to YCS Chicago
+        # the same way, six years off.
+        got = self.assigned(
+            *self.filed(2025, "2025-ycs-houston", "2025-04-06"),
+            *self.filed(2025, "2025-ycs-providence", "2025-05-30"),
+            ("2025/ycs/2025-ycs-houston/and-the-winner-is", "2025-05-30"))
+        self.assertEqual(got["and-the-winner-is"],
+                         ("2025-ycs-houston", "path+late"))
+
+    def test_a_sibling_that_explains_the_date_still_wins(self):
+        # The rule this sits beside, and which keeps precedence: Konami files a
+        # post under last year's slug, and the running whose dates actually
+        # hold it is a better answer than the path.
+        got = self.assigned(
+            *self.filed(2025, "2025-north-america-wcq", "2025-06-28"),
+            *self.filed(2026, "2026-north-america-wcq", "2026-06-28"),
+            ("2026/ycs/2025-north-america-wcq/top-tables-update", "2026-06-28"))
+        self.assertEqual(got["top-tables-update"],
+                         ("2026-north-america-wcq", "path+year"))
+
+    def test_a_path_whose_dates_hold_it_is_just_the_path(self):
+        got = self.assigned(
+            *self.filed(2025, "2025-ycs-houston", "2025-04-06"),
+            ("2025/ycs/2025-ycs-houston/round-9-pairings", "2025-04-06"))
+        self.assertEqual(got["round-9-pairings"][1], "path")
+
     def test_a_post_opening_with_an_events_name_goes_to_it(self):
         # A date is what the blog last edited a post, not when the event was.
         # YCS Chicago's winner post is dated four months after the event and

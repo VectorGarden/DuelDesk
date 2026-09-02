@@ -261,7 +261,11 @@ def round_key(post) -> tuple[str, Any]:
 #     particles into ordinary words -- "De La" found inside "Mementotlan Deck"
 #     -- so YCS Mexico City's winner post named two Duelists and could crown
 #     neither.
-BUILD_VERSION = 43
+# 44: the path names the event. A lastmod is when the blog last edited a post,
+#     and an edit weeks later moved it to whatever event ran that week: YCS
+#     Houston's winner post went to YCS Providence, and eight of the 2013
+#     North America WCQ's standings went to YCS Chicago, six years away.
+BUILD_VERSION = 44
 
 
 @dataclass

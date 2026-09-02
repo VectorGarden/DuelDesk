@@ -456,6 +456,35 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
                     and not within(e.lastmod, *windows[e.event_slug]))
         if e.event_slug and not misfiled:
             rec["event"], rec["event_confidence"] = e.event_slug, "path"
+        elif misfiled and not same_series(e, windows, within):
+            # The date disagrees with the path and no other running of the
+            # series explains it, which means the date is what is wrong. A
+            # lastmod is when the blog last edited a post, and an edit weeks
+            # later moves it to whatever event was on that week: YCS Houston's
+            # winner post was touched on 30 May and went to YCS Providence,
+            # and eight of the 2013 North America WCQ's standings went to YCS
+            # Chicago, six years away.
+            #
+            # The path is typed by hand and names the event outright. Where
+            # nothing can explain it away, it is believed.
+            #
+            # Not always rightly, and two of the thirty show it. They sit
+            # under /11-02-dallas/ and are called
+            # "ycs-atlanta-decks-by-the-numbers" and "-card-tech-by-the-
+            # numbers", so the path is simply wrong.
+            #
+            # The date cannot save them either. They are dated 2011-03-19 and
+            # the Atlanta tournaments either side are 10-11-atlanta, which ran
+            # 20-29 November 2010, and 12-02-atlanta in February 2012. No
+            # window holds them, so no rule here has a true answer to give:
+            # today the date puts them in YCS Charlotte, which is 20 March and
+            # also not Atlanta.
+            #
+            # They move from one wrong event to another. Worth knowing, and not
+            # worth contorting this rule for -- a guard reading the post's own
+            # slug would have to know which events exist, and discovery has not
+            # run yet when this decides.
+            rec["event"], rec["event_confidence"] = e.event_slug, "path+late"
         elif misfiled and (sibling := same_series(e, windows, within)):
             # The URL is the strongest signal there is, and it is typed by hand.
             # Konami filed a July 2026 post -- round 13 of the 2026 North
