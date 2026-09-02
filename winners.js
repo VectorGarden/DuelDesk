@@ -43,10 +43,14 @@ function flatten(events){
            WCQ: Round 10 Pairings". Shown as nothing rather than invented. */
         format: c.format || null,
         name: c.name,
+        /* The archive's name for this Duelist, where the blog wrote them two
+           ways. Only for counting and searching: the row shows what the event
+           that crowned them published. */
+        person: c.person || null,
         deck: c.deck || null,
         /* A team champion's Duelists, where the manifest carries them. A
            singles champion has none and the row is unchanged. */
-        members: c.members || null,
+        members: c.members?.map(m => ({...m, person: m.person || null})) || null,
       });
     }
   }
@@ -78,13 +82,25 @@ const hit = (...fields) =>
    so there is one. */
 function winsByName(rows){
   const n = new Map();
-  const add = (name) => name && n.set(name, (n.get(name) || 0) + 1);
+  const add = (who) => who?.name && n.set(who.person || who.name,
+                                          (n.get(who.person || who.name) || 0) + 1);
   for (const r of rows){
-    add(r.name);
-    r.members?.forEach(m => add(m.name));
+    add(r);
+    r.members?.forEach(add);
   }
   return n;
 }
+
+/* What to count a Duelist under: the archive's name for them where the blog
+   wrote them two ways, and otherwise the only name there is. */
+const idOf = (who) => who.person || who.name;
+
+/* The same name without its middle initials, so one Duelist is found under
+   either spelling the blog used. Searching "Steven Trifunoski" should not
+   miss the event that printed him "Steven J. Trifunoski", and searching the
+   fuller name should not miss the event that printed the shorter. */
+const withoutInitials = (name) =>
+  name.split(/\s+/).filter(w => !/^[A-Za-z]\.?$/.test(w)).join(' ');
 
 /* An event that names no format was played under Advanced. Before 2025 there
    was nothing else to play -- Advanced and the Dragon Duel side event, which
@@ -128,7 +144,8 @@ function render(){
   renderFormatFilters();
   const rows = WINS.filter(r =>
     (formatFilter === 'all' || formatOf(r) === formatFilter)
-    && hit(r.event, r.name, r.deck, r.format, r.location));
+    && hit(r.event, r.name, withoutInitials(r.name), r.person,
+           r.deck, r.format, r.location));
 
   countEl.textContent = rows.length
     ? `${rows.length} winner${rows.length > 1 ? 's' : ''}`
@@ -143,7 +160,7 @@ function render(){
 
   shown = rows;
   list.innerHTML = `<ol class="wins">` + rows.map((r, i) => {
-    const won = wonBy.get(r.name) || 1;
+    const won = wonBy.get(idOf(r)) || 1;
     return `<li class="win">
       <div class="win__who">
         <b class="win__n">${esc(r.name)}</b>
@@ -161,7 +178,7 @@ function render(){
       </div>
       ${r.members?.length ? `<ul class="win__roster" id="roster-${esc(i)}"${
         open.has(rosterKey(r)) ? '' : ' hidden'}>${r.members.map(m => {
-          const mw = wonBy.get(m.name) || 1;
+          const mw = wonBy.get(idOf(m)) || 1;
           return `<li>
             <span class="roster__n">${esc(m.name)}</span>
             ${mw > 1 ? `<span class="win__x" title="Events won in this archive"
