@@ -217,18 +217,42 @@ def check_rounds(label, rounds, swiss_count):
         else:
             side = n * 2 // competitors
             sides[r["label"]] = side
-            # And the Duelists are the ones the name calls for. The matches
+            # And the seats are the ones the name calls for. The matches
             # dividing evenly says the table is the right shape; this says it
             # is the right size, which is what a table read into the wrong
             # round gets wrong -- and unlike comparing against the round
             # before, it holds whether or not that round was published.
             # The sides of the match, which for a team event are the teams --
             # the Duelists inside a team match are its duels, not its seats.
-            seated = {n for p in r["pairings"] for n in (p.get("a"), p.get("b"))
-                      if n is not None}
-            if len(seated) != competitors * side:
-                problems.append(f"{label} {r['label']}: {len(seated)} Duelists, "
+            #
+            # Seats, not distinct names. Two Duelists share a name more often
+            # than a bracket is wrong: YCS Hartford's Top 32 seats a Pascal
+            # Manigat in two different matches, and they are two people the
+            # builder can see and cannot separate. Counted by name that table
+            # held 31 Duelists in a round of 32, and the event was refused
+            # over a round that is the right size and always was.
+            #
+            # This still catches what the count is for. A table read into the
+            # wrong round has the wrong number of seats, and the reprint that
+            # cost YCS Philadelphia its Top 64 held 63 of them.
+            seats = [(n, p.get(side_key + "Rec"))
+                     for p in r["pairings"]
+                     for side_key, n in (("a", p.get("a")), ("b", p.get("b")))
+                     if n is not None]
+            if len(seats) != competitors * side:
+                problems.append(f"{label} {r['label']}: {len(seats)} Duelists, "
                                 f"not the {competitors * side} its name calls for")
+            # And nobody plays themselves. A name in two seats is either two
+            # Duelists who share it or one seated twice, and the builder has
+            # already said which: it refuses to derive a record for a name it
+            # cannot tell apart, so a repeat carrying a record is the second
+            # kind -- a cell copied over its neighbour, or a merge of two
+            # people into one.
+            counted = Counter(n for n, _ in seats)
+            with_record = {n for n, rec in seats if rec}
+            for name in sorted(n for n, c in counted.items() if c > 1 and n in with_record):
+                problems.append(f"{label} {r['label']}: {name} is seated "
+                                f"{counted[name]} times and has a record")
 
     if isinstance(swiss_count, int):
         # A Duelist arriving in a cut round has played the Swiss plus the cut
