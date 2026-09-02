@@ -225,9 +225,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "And The Winner is…",
-    "url": "https://yugiohblog.konami.com/2023/ycs/and-the-winner-is-43/",
-    "modified": "2023-10-22T16:31:27-07:00",
+    "title": "Special Prize for Undefeated Duelist at YCS Indianapolis!",
+    "url": "https://yugiohblog.konami.com/2023/ycs/special-prize-for-undefeated-duelist-at-ycs-indianapolis/",
+    "modified": "2023-10-22T13:00:06-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
     "format": null,
@@ -261,9 +261,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "Congratulations to the Top 4 of YCS Indianapolis!",
-    "url": "https://yugiohblog.konami.com/2023/ycs/congratulations-to-the-top-4-of-ycs-indianapolis/",
-    "modified": "2023-10-22T16:38:18-07:00",
+    "title": "And The Winner is…",
+    "url": "https://yugiohblog.konami.com/2023/ycs/and-the-winner-is-43/",
+    "modified": "2023-10-22T16:31:27-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
     "format": null,
@@ -292,6 +292,15 @@
     "url": "https://yugiohblog.konami.com/2023/ycs/top-8-deck-breakdown-2/",
     "modified": "2023-10-22T13:38:57-07:00",
     "kind": "deck",
+    "event": "YCS Indianapolis",
+    "format": null,
+    "slug": "2023-ycs-indianapolis"
+  },
+  {
+    "title": "Congratulations to the Top 4 of YCS Indianapolis!",
+    "url": "https://yugiohblog.konami.com/2023/ycs/congratulations-to-the-top-4-of-ycs-indianapolis/",
+    "modified": "2023-10-22T16:38:18-07:00",
+    "kind": "result",
     "event": "YCS Indianapolis",
     "format": null,
     "slug": "2023-ycs-indianapolis"
@@ -396,9 +405,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "Special Prize for Undefeated Duelist at YCS Indianapolis!",
-    "url": "https://yugiohblog.konami.com/2023/ycs/special-prize-for-undefeated-duelist-at-ycs-indianapolis/",
-    "modified": "2023-10-22T13:00:06-07:00",
+    "title": "YCS Indianapolis Table of Contents",
+    "url": "https://yugiohblog.konami.com/2023/ycs/ycs-indianapolis-table-of-contents/",
+    "modified": "2023-10-22T23:19:26-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
     "format": null,
@@ -414,24 +423,6 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "YCS Indianapolis Table of Contents",
-    "url": "https://yugiohblog.konami.com/2023/ycs/ycs-indianapolis-table-of-contents/",
-    "modified": "2023-10-22T23:19:26-07:00",
-    "kind": "news",
-    "event": "YCS Indianapolis",
-    "format": null,
-    "slug": "2023-ycs-indianapolis"
-  },
-  {
-    "title": "Round 3 Feature Match: Jeff Jones vs. Sebastien Libbrecht",
-    "url": "https://yugiohblog.konami.com/2023/ycs/round-3-feature-match-jeff-jones-vs-sebastien-libbrecht/",
-    "modified": "2023-10-21T11:28:03-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "format": null,
-    "slug": "2023-ycs-indianapolis"
-  },
-  {
     "title": "YCS Indianapolis Dragon Duel Championship Playoff!",
     "url": "https://yugiohblog.konami.com/2023/ycs/ycs-indianapolis-dragon-duel-championship-playoff/",
     "modified": "2023-10-22T22:48:15-07:00",
@@ -441,9 +432,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "Round 4 Feature Match: Wyatt Brannock vs. Shunping Xu",
-    "url": "https://yugiohblog.konami.com/2023/ycs/round-4-feature-match-wyatt-brannock-vs-shunping-xu/",
-    "modified": "2023-10-21T12:58:59-07:00",
+    "title": "Round 3 Feature Match: Jeff Jones vs. Sebastien Libbrecht",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-3-feature-match-jeff-jones-vs-sebastien-libbrecht/",
+    "modified": "2023-10-21T11:28:03-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
     "format": null,
@@ -459,9 +450,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "Round 5 Feature Match: Jesse Kotton vs. Joo Ho Ahn",
-    "url": "https://yugiohblog.konami.com/2023/ycs/round-5-feature-match-jesse-kotton-vs-joo-ho-ahn/",
-    "modified": "2023-10-21T14:48:05-07:00",
+    "title": "Round 4 Feature Match: Wyatt Brannock vs. Shunping Xu",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-4-feature-match-wyatt-brannock-vs-shunping-xu/",
+    "modified": "2023-10-21T12:58:59-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
     "format": null,
@@ -477,9 +468,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "Round 6 Feature Match: Anthony King vs. Austin Bare",
-    "url": "https://yugiohblog.konami.com/2023/ycs/round-6-feature-match-anthony-king-vs-austin-bare/",
-    "modified": "2023-10-21T18:41:39-07:00",
+    "title": "Round 5 Feature Match: Jesse Kotton vs. Joo Ho Ahn",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-5-feature-match-jesse-kotton-vs-joo-ho-ahn/",
+    "modified": "2023-10-21T14:48:05-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
     "format": null,
@@ -495,9 +486,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "Round 7 Feature Match: Steven Gleason vs. Sathe Khaldi",
-    "url": "https://yugiohblog.konami.com/2023/ycs/round-7-feature-match-steven-gleason-vs-sathe-khaldi/",
-    "modified": "2023-10-21T17:21:21-07:00",
+    "title": "Round 6 Feature Match: Anthony King vs. Austin Bare",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-6-feature-match-anthony-king-vs-austin-bare/",
+    "modified": "2023-10-21T18:41:39-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
     "format": null,
@@ -513,9 +504,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "Round 8 Feature Match: Victor Lu vs. Davon Amos Hall",
-    "url": "https://yugiohblog.konami.com/2023/ycs/round-8-feature-match-victor-lu-vs-davon-amos-hall/",
-    "modified": "2023-10-21T18:40:43-07:00",
+    "title": "Round 7 Feature Match: Steven Gleason vs. Sathe Khaldi",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-7-feature-match-steven-gleason-vs-sathe-khaldi/",
+    "modified": "2023-10-21T17:21:21-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
     "format": null,
@@ -531,9 +522,9 @@
     "slug": "2023-ycs-indianapolis"
   },
   {
-    "title": "Round 9 Feature Match: Jose Marin vs. Jongwon Lee",
-    "url": "https://yugiohblog.konami.com/2023/ycs/round-9-feature-match-jose-marin-vs-jongwon-lee/",
-    "modified": "2023-10-21T18:53:41-07:00",
+    "title": "Round 8 Feature Match: Victor Lu vs. Davon Amos Hall",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-8-feature-match-victor-lu-vs-davon-amos-hall/",
+    "modified": "2023-10-21T18:40:43-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
     "format": null,
@@ -544,6 +535,15 @@
     "url": "https://yugiohblog.konami.com/2023/ycs/top-tables-update-round-6-34/",
     "modified": "2023-10-21T14:08:34-07:00",
     "kind": "news",
+    "event": "YCS Indianapolis",
+    "format": null,
+    "slug": "2023-ycs-indianapolis"
+  },
+  {
+    "title": "Round 9 Feature Match: Jose Marin vs. Jongwon Lee",
+    "url": "https://yugiohblog.konami.com/2023/ycs/round-9-feature-match-jose-marin-vs-jongwon-lee/",
+    "modified": "2023-10-21T18:53:41-07:00",
+    "kind": "feature",
     "event": "YCS Indianapolis",
     "format": null,
     "slug": "2023-ycs-indianapolis"
