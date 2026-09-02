@@ -171,15 +171,6 @@
     "slug": "2025-ycs-merida-mexico"
   },
   {
-    "title": "YCS Merida, Mexico: Final Match",
-    "url": "https://yugiohblog.konami.com/2025/ycs/ycs-merida-mexico-final-match/",
-    "modified": "2025-11-30T14:40:56-08:00",
-    "kind": "feature",
-    "event": "YCS Merida",
-    "format": null,
-    "slug": "2025-ycs-merida-mexico"
-  },
-  {
     "title": "YCS Merida, Mexico Winner",
     "url": "https://yugiohblog.konami.com/2025/ycs/ycs-merida-mexico-winner/",
     "modified": "2025-12-16T10:54:25-08:00",
@@ -201,6 +192,15 @@
     "title": "YCS Merida, Mexico: Round for Top 4",
     "url": "https://yugiohblog.konami.com/2025/ycs/ycs-merida-mexico-round-for-top-4/",
     "modified": "2025-11-30T14:40:08-08:00",
+    "kind": "news",
+    "event": "YCS Merida",
+    "format": null,
+    "slug": "2025-ycs-merida-mexico"
+  },
+  {
+    "title": "YCS Merida, Mexico: Final Match",
+    "url": "https://yugiohblog.konami.com/2025/ycs/ycs-merida-mexico-final-match/",
+    "modified": "2025-11-30T14:40:56-08:00",
     "kind": "news",
     "event": "YCS Merida",
     "format": null,

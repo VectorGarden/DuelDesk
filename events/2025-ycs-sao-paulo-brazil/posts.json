@@ -207,15 +207,6 @@
     "slug": "2025-ycs-sao-paulo-brazil"
   },
   {
-    "title": "YCS Sao Paulo, Brazil: Final Match",
-    "url": "https://yugiohblog.konami.com/2025/ycs/ycs-sao-paulo-brazil-final-match/",
-    "modified": "2025-10-12T16:45:55-07:00",
-    "kind": "feature",
-    "event": "YCS Sao Paulo",
-    "format": null,
-    "slug": "2025-ycs-sao-paulo-brazil"
-  },
-  {
     "title": "YCS Sao Paulo, Brazil Winner",
     "url": "https://yugiohblog.konami.com/2025/ycs/ycs-sao-paulo-brazil-winner/",
     "modified": "2025-10-14T11:58:52-07:00",
@@ -237,6 +228,15 @@
     "title": "YCS Sao Paulo, Brazil: Round for Top 4",
     "url": "https://yugiohblog.konami.com/2025/ycs/ycs-sao-paulo-brazil-round-for-top-4/",
     "modified": "2025-10-12T16:30:30-07:00",
+    "kind": "news",
+    "event": "YCS Sao Paulo",
+    "format": null,
+    "slug": "2025-ycs-sao-paulo-brazil"
+  },
+  {
+    "title": "YCS Sao Paulo, Brazil: Final Match",
+    "url": "https://yugiohblog.konami.com/2025/ycs/ycs-sao-paulo-brazil-final-match/",
+    "modified": "2025-10-12T16:45:55-07:00",
     "kind": "news",
     "event": "YCS Sao Paulo",
     "format": null,

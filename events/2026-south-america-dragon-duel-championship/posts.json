@@ -117,15 +117,6 @@
     "slug": "2026-south-america-dragon-duel-championship"
   },
   {
-    "title": "South America Dragon Duel Championship: Final Match",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-final-match-2/",
-    "modified": "2026-06-21T11:03:03-07:00",
-    "kind": "feature",
-    "event": "South America Dragon Duel Championship",
-    "format": "Dragon Duel",
-    "slug": "2026-south-america-dragon-duel-championship"
-  },
-  {
     "title": "South America Dragon Duel Championship Winner",
     "url": "https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-winner-2/",
     "modified": "2026-06-29T12:47:13-07:00",
@@ -147,6 +138,15 @@
     "title": "South America Dragon Duel Championship: Top 4",
     "url": "https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-top-4/",
     "modified": "2026-06-21T10:33:46-07:00",
+    "kind": "news",
+    "event": "South America Dragon Duel Championship",
+    "format": "Dragon Duel",
+    "slug": "2026-south-america-dragon-duel-championship"
+  },
+  {
+    "title": "South America Dragon Duel Championship: Final Match",
+    "url": "https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-final-match-2/",
+    "modified": "2026-06-21T11:03:03-07:00",
     "kind": "news",
     "event": "South America Dragon Duel Championship",
     "format": "Dragon Duel",
