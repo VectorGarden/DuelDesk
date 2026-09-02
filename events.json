@@ -3838,6 +3838,13 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-origins/rounds.json",
       "postCount": 43,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jacob David Phinney",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
