@@ -276,7 +276,11 @@ def round_key(post) -> tuple[str, Any]:
 #  47 One rule for what a post is, shared with the page. The stored kind
 #     changes for 267 posts: 198 plural winner announcements that read as
 #     news, and 69 that mention decks without covering any.
-BUILD_VERSION = 47
+#  48 "Final Match" is not a feature match. The archive had already been
+#     rebuilt at 47 when that was corrected, so nothing was behind and the
+#     fix had nothing to run against: the 2019 UDS Invitational Medellin
+#     stayed without its champion.
+BUILD_VERSION = 48
 
 
 @dataclass
