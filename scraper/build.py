@@ -253,7 +253,11 @@ def round_key(post) -> tuple[str, Any]:
 #     Phinney against Aaron Chase Furman and its winner post says "Jake
 #     Phinney" -- a shortening no folding rule reaches, and named_in wants two
 #     words of a name. Asked only of a post that named nobody at all.
-BUILD_VERSION = 41
+# 42: a name is read where it actually stands. named_in reported a name at the
+#     earliest of its own words, so the 2014 Central American WCQ's two Joses
+#     -- one in the first line, one in the last -- came back level, and no
+#     word could sit between them to say which had won.
+BUILD_VERSION = 42
 
 
 @dataclass

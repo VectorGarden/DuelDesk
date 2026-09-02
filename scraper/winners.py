@@ -128,6 +128,13 @@ DEFEAT = re.compile(
 _FORMAT = re.compile(r"\b(advanced|genesys)\b", re.I)
 
 
+# How close two words of a name have to stand to be that name rather than two
+# coincidences. Wide enough for the forms the blog writes -- "Lagunez, Jose",
+# "Jose Carlo Carrillo Toscano", a middle name dropped -- and far short of the
+# distance between one sentence's Duelist and the next's.
+NEAR = 40
+
+
 def named_in(name: str, text: str) -> int:
     """Where a recorded name is named in prose, or -1.
 
@@ -148,9 +155,28 @@ def named_in(name: str, text: str) -> int:
     """
     words = [w for w in re.split(r"[^A-Za-z]+", name.lower()) if len(w) > 1]
     low = text.lower()
-    at = [low.find(w) for w in words]
-    present = [p for p in at if p >= 0]
-    return min(present) if len(present) >= 2 else -1
+    # Every place each word appears, not just the first. Two of a name's words
+    # standing together is the name; the same two scattered across a page are
+    # two coincidences.
+    #
+    # The 2014 Central American WCQ's winner post names a Jose Lagunez in its
+    # first line and a Jose Carlo Carrillo Toscano in its last. Reading each
+    # name at the earliest of its own words put both of them at the "Jose" in
+    # the first line, so the two were level, no word could sit between them,
+    # and the event kept no champion -- with "In second place is" written
+    # plainly in the middle of the post.
+    spots = [[m.start() for m in re.finditer(re.escape(w), low)] for w in words]
+    seen = sorted((at, i) for i, places in enumerate(spots) for at in places)
+    best = -1
+    for a in range(len(seen)):
+        for b in range(a + 1, len(seen)):
+            if seen[b][0] - seen[a][0] > NEAR:
+                break
+            if seen[b][1] != seen[a][1]:      # two *different* words of the name
+                if best < 0 or seen[a][0] < best:
+                    best = seen[a][0]
+                break
+    return best
 
 
 def about_format(title: str) -> str | None:
