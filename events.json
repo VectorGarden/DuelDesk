@@ -62,7 +62,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-north-america-wcq/rounds.json",
-      "postCount": 81,
+      "postCount": 82,
       "champions": [
         {
           "format": null,
@@ -148,7 +148,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-south-america-wcq/rounds.json",
-      "postCount": 28,
+      "postCount": 29,
       "formats": [
         {
           "format": null,
@@ -166,7 +166,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2026-central-america-wcq/rounds.json",
-      "postCount": 28,
+      "postCount": 30,
+      "champions": [
+        {
+          "format": null,
+          "name": "Esteban Jesus Mena Campos",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -528,7 +535,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-10-ycs-anaheim/rounds.json",
-      "postCount": 91,
+      "postCount": 92,
       "champions": [
         {
           "format": null,
@@ -597,7 +604,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-north-america-wcq/rounds.json",
-      "postCount": 92,
+      "postCount": 95,
       "champions": [
         {
           "format": null,
@@ -611,6 +618,31 @@
           "swissRounds": 12,
           "duelists": 2838,
           "rounds": 18
+        }
+      ]
+    },
+    {
+      "slug": "2025-south-america-wcq",
+      "event": "South America WCQ 2025",
+      "updated": "2025-07-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-south-america-wcq/rounds.json",
+      "postCount": 22,
+      "champions": [
+        {
+          "format": null,
+          "name": "Felipe Bisserier Zapata",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 439,
+          "rounds": 13
         }
       ]
     },
@@ -640,24 +672,6 @@
       ]
     },
     {
-      "slug": "2025-south-america-wcq",
-      "event": "South America WCQ 2025",
-      "updated": "2025-06-08",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2025-south-america-wcq/rounds.json",
-      "postCount": 21,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 9,
-          "duelists": 439,
-          "rounds": 13
-        }
-      ]
-    },
-    {
       "slug": "2025-05-ycs-providence",
       "event": "YCS Providence",
       "updated": "2025-05-30",
@@ -665,7 +679,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-05-ycs-providence/rounds.json",
-      "postCount": 91,
+      "postCount": 88,
       "champions": [
         {
           "format": null,
@@ -692,6 +706,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-mexico-city-mexico/rounds.json",
       "postCount": 28,
+      "champions": [
+        {
+          "format": null,
+          "name": "Rene Epigmenio Ybarra Trapote",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -709,7 +730,14 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2025-04-ycs-houston/rounds.json",
-      "postCount": 77,
+      "postCount": 80,
+      "champions": [
+        {
+          "format": null,
+          "name": "Pascal Manigat",
+          "deck": "Goblin Memento"
+        }
+      ],
       "formats": [
         {
           "format": null,
