@@ -1222,8 +1222,8 @@ function renderPairings(r){
      so the second Duelist landed under Record and their deck under Team. */
   const duels = (p) => (p.duels ?? []).map(d => `<tr class="duel">
       <td class="num">${esc(d.table)}</td>
-      <td>${withCrown(d.a)}</td>${deckCell(d.aDeck)}<td></td>
-      <td>${withCrown(d.b)}</td>${deckCell(d.bDeck)}<td></td></tr>`).join('');
+      <td>${withPlace(d.a)}</td>${deckCell(d.aDeck)}<td></td>
+      <td>${withPlace(d.b)}</td>${deckCell(d.bDeck)}<td></td></tr>`).join('');
 
   return wrapTable(`Pairings for ${r.label}`, `<table>
     <caption>${caption} Search by ${teams ? 'Duelist or team' : 'Duelist'} to filter this list.</caption>
@@ -1234,8 +1234,8 @@ function renderPairings(r){
     </tr></thead><tbody>
     ${rows.map(p => `<tr${p.duels?.length ? ' class="match"' : ''}>
       <td class="num">${esc(p.table)}</td>
-      <td>${withCrown(p.a)}</td>${deckCell(p.aDeck)}${rec(p.aRec)}
-      <td>${withCrown(p.b)}</td>${deckCell(p.bDeck)}${rec(p.bRec)}</tr>${duels(p)}`).join('')}
+      <td>${withPlace(p.a)}</td>${deckCell(p.aDeck)}${rec(p.aRec)}
+      <td>${withPlace(p.b)}</td>${deckCell(p.bDeck)}${rec(p.bRec)}</tr>${duels(p)}`).join('')}
     </tbody></table>`);
 }
 
@@ -1277,7 +1277,7 @@ function renderStandings(r){
     </tr></thead><tbody>
     ${rows.map(s => `<tr>
       <th scope="row" class="num">${esc(s.pos)}</th>
-      <td>${withCrown(s.name)}${s.members?.length
+      <td>${withPlace(s.name)}${s.members?.length
         ? `<span class="roster">${esc(s.members.join(', '))}</span>` : ''}</td>
       ${hasRecord ? `<td class="rec${s.record?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(s.record, {drawsPossible: eventDrawsPossible()}))}</td>` : ''}
       ${hasPoints ? `<td class="rec num">${esc(s.points ?? '—')}</td>` : ''}
@@ -1308,7 +1308,7 @@ function renderFeature(r){
     const bits = [];
     if (p.deck) bits.push(esc(p.deck));
     if (p.record) bits.push(esc(formatRecord(p.record, {drawsPossible: eventDrawsPossible()})));
-    return `<div class="feature__side"><h3>${withCrown(p.name)}</h3>`
+    return `<div class="feature__side"><h3>${withPlace(p.name)}</h3>`
          + (bits.length ? `<p>${bits.join(' · ')}</p>` : '') + `</div>`;
   };
   const one = ({a, b, note, source}) => `<div class="feature">
@@ -1349,54 +1349,86 @@ const championShown = () => championFor !== null && championFor === tournamentKe
 
 const deepestRound = () => ROUNDS[ROUNDS.length - 1];
 
-/* A crown beside the Duelist who won, wherever the round tables name them.
+/* How far each Duelist got, beside their name wherever the round tables print
+   it: champion, runner-up, or the top cut they reached.
 
    Only once the champion has been revealed. The whole point of hiding them is
-   that the rounds above are worth reading first, and a crown in the Top 4
+   that the rounds above are worth reading first, and a badge in the Top 4
    pairings gives the ending away as plainly as printing the name would --
    which is the leak #179 closed between events and would reopen inside one.
+   A runner-up badge says who did not win, which gives away as much.
 
-   And only where the archive can point to them without doubt. Two Duelists
-   share a name more often than a bracket is wrong: YCS Hartford's Top 32
-   seats a Pascal Manigat in two different matches, and crowning by name alone
-   would crown whichever one lost. The builder already knows -- it refuses to
-   derive a record for a name it cannot tell apart -- so a champion it never
-   derived a record for is one this cannot safely point at. Five of the
-   archive's hundred and forty-two are refused on that test, and one of them,
-   Raphael Pelaja Neven, is named in fifteen seats. */
-const traceable = new Map();
+   And only where the archive can point to the Duelist without doubt. Two
+   Duelists share a name more often than a bracket is wrong: YCS Hartford's
+   Top 32 seats a Pascal Manigat in two different matches, and badging by name
+   alone would badge whichever one went out first. The builder already knows
+   -- it refuses to derive a record for a name it cannot tell apart -- so a
+   name it never derived a record for is one this cannot safely point at. */
+const places = new Map();
 
-function championIsTraceable(fmt){
+/* Who finished where, as far as the coverage actually says.
+
+   The runner-up is the other Duelist in the final, and is only knowable when
+   the final's own pairing was published: 36 of the archive's 142 tournaments.
+   The rest announce a winner without it.
+
+   Everyone else in the Top 4 is badged as having reached it, and not as third
+   or fourth. They did not play off -- there is no third place match -- so
+   there is no third and fourth, there are two thirds, and where the final is
+   missing the runner-up is among them too. A badge saying "Top 4" is true;
+   one saying "3rd" is a guess. */
+function placementsIn(fmt){
   const key = `${activeEvent}\u0000${fmt.format}`;
-  if (traceable.has(key)) return traceable.get(key);
-  const won = fmt.champion;
-  let derived = false;
+  if (places.has(key)) return places.get(key);
+
+  const derived = new Set();
+  const round = (label) => (fmt.rounds ?? []).find(r => r.label === label);
+  const seats = (r) => (r?.pairings ?? []).flatMap(p => [p.a, p.b]).filter(Boolean);
   for (const r of fmt.rounds ?? []){
     for (const p of r.pairings ?? []){
-      if ((p.a === won && p.aRec) || (p.b === won && p.bRec)) derived = true;
+      if (p.a && p.aRec) derived.add(p.a);
+      if (p.b && p.bRec) derived.add(p.b);
     }
     for (const st of r.standings ?? []){
-      if (st.name === won && st.record && st.record.wins !== null
-          && st.record.wins !== undefined) derived = true;
+      if (st.name && st.record && st.record.wins !== null
+          && st.record.wins !== undefined) derived.add(st.name);
     }
   }
-  traceable.set(key, derived);
-  return derived;
+
+  const out = new Map();
+  const won = fmt.champion;
+  if (won && derived.has(won)) out.set(won, 'champion');
+
+  const final = seats(round('Final'));
+  const top4 = seats(round('Top 4'));
+  if (won && final.length === 2 && final.includes(won)){
+    const second = final.find(n => n !== won);
+    if (second && derived.has(second)) out.set(second, 'runner-up');
+  }
+  for (const n of top4){
+    if (!out.has(n) && derived.has(n)) out.set(n, 'top 4');
+  }
+  places.set(key, out);
+  return out;
 }
 
-/* The mark's markup, or nothing. A word rather than a glyph: an emoji is the
-   one mark whose appearance the page does not control, and a crown drawn at
-   this size reads as clutter in a column of names. The word is also its own
-   accessible name, so nothing here depends on colour or shape. */
-function crown(name){
+/* The badge's markup, or nothing. A word rather than a glyph: an emoji is the
+   one mark whose appearance the page does not control, and it reads as
+   clutter in a column of names. The word is also its own accessible name, so
+   nothing here depends on colour or shape.
+
+   Highest only, which the map gives for free: a Duelist holds one place. */
+function placeBadge(name){
   if (!name || !championShown()) return '';
   const fmt = formatOf(activeFormat);
-  if (!fmt || fmt.champion !== name || !championIsTraceable(fmt)) return '';
-  return ` <span class="crown">champion</span>`;
+  if (!fmt) return '';
+  const place = placementsIn(fmt).get(name);
+  if (!place) return '';
+  return ` <span class="place place--${place.replace(/\W+/g, '')}">${esc(place)}</span>`;
 }
 
-/* A name as the tables print it, with the crown where it belongs. */
-const withCrown = (v) => `${esc(v)}${crown(v)}`;
+/* A name as the tables print it, with its placement where it belongs. */
+const withPlace = (v) => `${esc(v)}${placeBadge(v)}`;
 
 /* What they won with, from the round they won it in. Only where the coverage
    published deck types, which it does for the cut and not for Swiss. */
