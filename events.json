@@ -2225,8 +2225,8 @@
     },
     {
       "slug": "2022-latin-america-remote-duel-ycs",
-      "event": "Latin America Remote Duel YCS February 2022",
-      "updated": "2022-02-01",
+      "event": "Latin America Remote Duel YCS January 2022",
+      "updated": "2022-01-16",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
@@ -2509,7 +2509,7 @@
     {
       "slug": "2019-ycs-portland",
       "event": "YCS Portland",
-      "updated": "2019-09-09",
+      "updated": "2019-08-25",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
@@ -2992,31 +2992,6 @@
       ]
     },
     {
-      "slug": "2018-ycs-secaucus",
-      "event": "YCS Secaucus",
-      "updated": "2018-06-14",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2018-ycs-secaucus/rounds.json",
-      "postCount": 75,
-      "champions": [
-        {
-          "format": null,
-          "name": "Dakota Clint Angeloff",
-          "deck": "Trickstar Sky Striker"
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 11,
-          "duelists": 1312,
-          "rounds": 16
-        }
-      ]
-    },
-    {
       "slug": "2018-central-america-wcq",
       "event": "Central America WCQ 2018",
       "updated": "2018-06-10",
@@ -3037,6 +3012,31 @@
           "format": null,
           "swissRounds": 10,
           "duelists": 569,
+          "rounds": 16
+        }
+      ]
+    },
+    {
+      "slug": "2018-ycs-secaucus",
+      "event": "YCS Secaucus",
+      "updated": "2018-06-05",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2018-ycs-secaucus/rounds.json",
+      "postCount": 75,
+      "champions": [
+        {
+          "format": null,
+          "name": "Dakota Clint Angeloff",
+          "deck": "Trickstar Sky Striker"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1312,
           "rounds": 16
         }
       ]
