@@ -4116,7 +4116,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2014-north-american-wcq/rounds.json",
-      "postCount": 77,
+      "postCount": 78,
       "champions": [
         {
           "format": null,
@@ -4147,7 +4147,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2014-wcq-ca/rounds.json",
-      "postCount": 47,
+      "postCount": 48,
       "champions": [
         {
           "format": null,
@@ -4172,7 +4172,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2013-south-american-wcq-championships/rounds.json",
-      "postCount": 22,
+      "postCount": 30,
       "champions": [
         {
           "format": null,
@@ -4222,7 +4222,7 @@
       "ongoing": false,
       "coverageBy": "Konami",
       "path": "events/2013-north-american-wcq/rounds.json",
-      "postCount": 68,
+      "postCount": 76,
       "champions": [
         {
           "format": null,
@@ -4240,7 +4240,7 @@
         {
           "format": null,
           "swissRounds": 11,
-          "duelists": 64,
+          "duelists": 1413,
           "rounds": 17
         }
       ]
