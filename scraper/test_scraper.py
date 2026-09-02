@@ -2871,6 +2871,42 @@ class TestChampion(unittest.TestCase):
                        "Mare Mare Lair and Lair Squad met in a great final.")])
         self.assertIsNone(got)
 
+    def test_a_name_is_read_where_it_actually_stands(self):
+        # The 2014 Central American WCQ's winner post names a Jose Lagunez in
+        # its first line and a Jose Carlo Carrillo Toscano in its last. Reading
+        # each name at the earliest of its own words put both at the same
+        # "Jose", so the two were level, no word could sit between them, and
+        # the event kept no champion -- with "In second place is" written
+        # plainly in the middle of the post.
+        from winners import named_in, champion
+        text = ("…Jose Lagunez. He is our new Central American Champion! "
+                "In second place is Filiberto Octavio Parra. "
+                "In third place is Jose Carlo Carrillo Toscano.")
+        self.assertLess(named_in("Jose Lagunez", text),
+                        named_in("Jose Carlo Carrillo Toscano", text))
+        got = champion(
+            ["Jose Lagunez", "Jose Carlo Carrillo Toscano", "Filiberto Octavio Parra"],
+            [self.post("And the new Central American Champion is…", text)])
+        self.assertEqual(got, "Jose Lagunez")
+
+    def test_two_words_far_apart_are_two_coincidences(self):
+        # Two of a name's words standing together is the name. The same two
+        # scattered across a page are not.
+        from winners import named_in
+        near = "Ann Alpha won the whole thing."
+        far = ("Ann took the trophy after a long weekend of Duels, and the "
+               "hall emptied out slowly afterwards while the staff packed the "
+               "tables away and somebody finally turned the lights off. Alpha")
+        self.assertGreaterEqual(named_in("Ann Alpha", near), 0)
+        self.assertEqual(named_in("Ann Alpha", far), -1)
+
+    def test_one_word_is_still_not_identification(self):
+        from winners import named_in
+        self.assertEqual(named_in("Patrick Hoban", "Patrick took it."), -1)
+        # Nor the same word twice. It has to be two *different* words of the
+        # name standing together.
+        self.assertEqual(named_in("Patrick Hoban", "Patrick, and Patrick again."), -1)
+
     def test_a_surname_nobody_else_answers_to(self):
         # YCS Origins' Final is Jacob David Phinney against Aaron Chase Furman
         # and its winner post says "Jake Phinney" -- a shortening no folding
