@@ -18,6 +18,8 @@ from __future__ import annotations
 
 import copy
 import json
+import re
+from collections import defaultdict
 from pathlib import Path
 
 ARCHIVE = "events"
@@ -219,6 +221,82 @@ def summarise(slug: str, event: dict, posts: int = 0) -> dict:
     }
 
 
+_INITIAL = re.compile(r"^[A-Za-z]\.?$")
+
+
+def names_in(event: dict) -> set[str]:
+    """Every Duelist the event seated, from its pairings and its standings."""
+    out: set[str] = set()
+    for fmt in event.get("formats") or []:
+        for rnd in fmt.get("rounds") or []:
+            for row in rnd.get("pairings") or []:
+                out.update(row[k] for k in ("a", "b") if row.get(k))
+            for row in rnd.get("standings") or []:
+                if row.get("name"):
+                    out.add(row["name"])
+    return out
+
+
+def one_person(seated: dict[str, set[str]]) -> dict[str, str]:
+    """Names the archive writes two ways for one Duelist, and the fuller one.
+
+    The blog is not consistent about a middle initial across events. Steven
+    Trifunoski won YCS Anaheim; Steven J. Trifunoski won YCS Vancouver. They
+    are one Duelist with two titles, and the winners page counted them as two
+    Duelists with one each.
+
+    Within an event this is already handled, and by a stricter rule than this
+    one -- see build.fold_short_names, which has a round's seating to argue
+    from. Across events there is no round to look at, so this asks for more
+    before it folds anything:
+
+      * The shorter name's words all sit in the longer one, in order, and the
+        two share both a forename and a surname.
+      * What the longer one adds is initials and nothing else. A full inserted
+        word is a name, and names are how two people differ: 73 pairs in this
+        archive that differ by a word are provably two people, because they
+        are seated in the same event.
+      * Nothing else answers to that forename and surname. Ankit Shah is
+        written Ankit H. Shah and Ankit L. Shah, which is two Duelists and an
+        ambiguous third spelling; folding it either way invents a record.
+      * The two are never seated in the same event. One Duelist does not enter
+        twice, so an overlap settles it -- this is what rules out Alejandro
+        Cruz and Alejandro Castillo Cruz, who played the same tournament.
+
+    Sixty pairs in the archive meet all four. Only the names are folded, and
+    only for counting a Duelist across events: what each event published is
+    what it published, and this does not touch it.
+    """
+    ends: dict[tuple[str, str], list[str]] = defaultdict(list)
+    for name in seated:
+        if len(words := name.split()) >= 2:
+            ends[(words[0].lower(), words[-1].lower())].append(name)
+
+    folded: dict[str, str] = {}
+    for group in ends.values():
+        # Exactly two spellings, or there is no unambiguous fuller form.
+        if len(group) != 2:
+            continue
+        short, long_ = sorted(group, key=lambda n: len(n.split()))
+        sw, lw = short.split(), long_.split()
+        if len(sw) >= len(lw):
+            continue
+        at, extra = 0, []
+        for word in lw:
+            if at < len(sw) and word.lower() == sw[at].lower():
+                at += 1
+            else:
+                extra.append(word)
+        if at != len(sw) or not extra:
+            continue
+        if not all(_INITIAL.match(x) for x in extra):
+            continue
+        if seated[short] & seated[long_]:
+            continue
+        folded[short] = long_
+    return folded
+
+
 def build_manifest(root: str | Path) -> dict:
     """Every built event, newest first.
 
@@ -226,11 +304,23 @@ def build_manifest(root: str | Path) -> dict:
     finishing on the same day list in a stable order rather than in whatever
     order the filesystem returned.
     """
-    events = []
+    events, seated = [], defaultdict(set)
     for slug in sorted(scraped(root)):
         event = json.loads(rounds_path(root, slug).read_text(encoding="utf-8"))
+        for name in names_in(event):
+            seated[name].add(slug)
         events.append(summarise(slug, event, count_posts(root, slug)))
     events.sort(key=lambda e: (e["updated"] or "", e["slug"]), reverse=True)
+
+    # Who is who, once every event has been read: a Duelist written two ways
+    # across the archive is one Duelist, and the winners page counts by this
+    # rather than by the spelling each event happened to print.
+    same = one_person(seated)
+    for event in events:
+        for won in event.get("champions") or []:
+            for who in (won, *(won.get("members") or [])):
+                if (person := same.get(who["name"])):
+                    who["person"] = person
     return {"events": events}
 
 

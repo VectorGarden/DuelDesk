@@ -6271,6 +6271,66 @@ def _build_montreal_with_announcement():
                                           ["a"], [])])
 
 
+class TestOneDuelistOneName(unittest.TestCase):
+    """A Duelist the blog writes two ways across the archive."""
+
+    def fold(self, **seated):
+        import archive
+        return archive.one_person({n.replace("_", " "): set(evs)
+                                   for n, evs in seated.items()})
+
+    def test_an_initial_the_blog_dropped_is_one_Duelist(self):
+        # Steven Trifunoski won YCS Anaheim; Steven J. Trifunoski won YCS
+        # Vancouver. The winners page counted two Duelists with one title each.
+        self.assertEqual(
+            self.fold(Steven_Trifunoski=["anaheim"], **{"Steven_J._Trifunoski": ["vancouver"]}),
+            {"Steven Trifunoski": "Steven J. Trifunoski"})
+
+    def test_two_spellings_in_one_event_are_two_Duelists(self):
+        # One Duelist does not enter a tournament twice. Alejandro Cruz and
+        # Alejandro Castillo Cruz played the same one.
+        self.assertEqual(
+            self.fold(Steven_Trifunoski=["anaheim", "vancouver"],
+                      **{"Steven_J._Trifunoski": ["vancouver"]}),
+            {})
+
+    def test_a_competing_initial_is_left_alone(self):
+        # Ankit Shah is written Ankit H. Shah and Ankit L. Shah: two Duelists
+        # and a third spelling that answers to neither. Folding it either way
+        # would invent a record.
+        self.assertEqual(
+            self.fold(Ankit_Shah=["a"], **{"Ankit_H._Shah": ["b"], "Ankit_L._Shah": ["c"]}),
+            {})
+
+    def test_an_inserted_word_is_a_name_not_a_spelling(self):
+        # Names are how two people differ. Andres Garcia and Andres Arevalo
+        # Garcia are two Duelists, and this archive proves it by seating pairs
+        # of that shape in one event seventy-three times.
+        self.assertEqual(
+            self.fold(Andres_Garcia=["a"], Andres_Arevalo_Garcia=["b"]), {})
+
+    def test_a_different_surname_is_a_different_Duelist(self):
+        self.assertEqual(self.fold(Steven_Trifunoski=["a"], Steven_Trifunovic=["b"]), {})
+
+    def test_the_manifest_counts_a_champion_under_one_name(self):
+        import archive, json, tempfile
+        tmp = Path(tempfile.mkdtemp())
+        def event(name, who, other):
+            return {"event": name, "updated": "2026-01-01", "sample": False,
+                    "ongoing": False, "coverageBy": "Konami",
+                    "formats": [{"format": "Advanced", "champion": who, "rounds": [
+                        {"id": "f", "pairings": [{"table": 1, "a": who, "b": other}]}]}]}
+        archive.write_event(tmp, "anaheim", event("YCS Anaheim", "Steven Trifunoski", "Bo Peep"), [])
+        archive.write_event(tmp, "vancouver",
+                            event("YCS Vancouver", "Steven J. Trifunoski", "Ada Lovelace"), [])
+        by_slug = {e["slug"]: e for e in archive.build_manifest(tmp)["events"]}
+        # The name each event published is what that event published.
+        self.assertEqual(by_slug["anaheim"]["champions"][0]["name"], "Steven Trifunoski")
+        # And both count as the one Duelist they are.
+        self.assertEqual(by_slug["anaheim"]["champions"][0]["person"], "Steven J. Trifunoski")
+        self.assertNotIn("person", by_slug["vancouver"]["champions"][0])
+
+
 class TestArchive(unittest.TestCase):
     """One directory per event, and a manifest naming them all."""
 

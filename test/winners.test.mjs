@@ -255,3 +255,41 @@ test('an open roster survives a search that keeps its row', async (t) => {
   assert.equal(page.get('document.querySelector(".win__roster").hidden'), false,
     'the roster folded itself up on a re-render');
 });
+
+/* ── One Duelist, two spellings ──────────────────────────────────────────── */
+
+/* The blog is not consistent about a middle initial across events, so the
+   manifest says which rows are the same Duelist. The row still shows the name
+   the event that crowned them published. */
+const SPELLINGS = [
+  { slug: 'v', event: 'YCS Vancouver', updated: '2025-09-11', path: 'events/v/rounds.json',
+    champions: [{ format: null, name: 'Steven J. Trifunoski', deck: 'Ryzeal' }] },
+  { slug: 'an', event: 'YCS Anaheim', updated: '2024-12-07', path: 'events/an/rounds.json',
+    champions: [{ format: null, name: 'Steven Trifunoski', deck: 'Snake-Eye',
+                  person: 'Steven J. Trifunoski' }] },
+];
+
+test('a Duelist written two ways is counted once', async (t) => {
+  const page = await loadPage(manifest(SPELLINGS));
+  t.after(() => page.close());
+  const badges = rows(page).map((r) => r.querySelector('.win__who .win__x')?.textContent.trim());
+  assert.deepEqual(badges, ['2\u00d7', '2\u00d7'],
+    'two titles for one Duelist read as one title each');
+});
+
+test('and still listed under the name its event published', async (t) => {
+  // What each event printed is what it printed; the manifest says who is who
+  // without rewriting either row.
+  const page = await loadPage(manifest(SPELLINGS));
+  t.after(() => page.close());
+  assert.deepEqual(names(page), ['Steven J. Trifunoski', 'Steven Trifunoski']);
+});
+
+test('and found under either spelling', async (t) => {
+  const page = await loadPage(manifest(SPELLINGS));
+  t.after(() => page.close());
+  for (const q of ['Steven J. Trifunoski', 'steven trifunoski']){
+    page.run(`query = ${JSON.stringify(q.toLowerCase())}; render();`);
+    assert.equal(rows(page).length, 2, `searching ${JSON.stringify(q)} found one row, not both`);
+  }
+});
