@@ -180,15 +180,6 @@
     "slug": "2023-ycs-santiago-chile"
   },
   {
-    "title": "YCS Santiago, Chile: Final Match",
-    "url": "https://yugiohblog.konami.com/2023/ycs/ycs-santiago-chile-final-match-2/",
-    "modified": "2023-05-21T13:48:26-07:00",
-    "kind": "feature",
-    "event": "YCS Santiago",
-    "format": null,
-    "slug": "2023-ycs-santiago-chile"
-  },
-  {
     "title": "YCS Santiago, Chile: YCS Champion",
     "url": "https://yugiohblog.konami.com/2023/ycs/ycs-santiago-chile-ycs-champion/",
     "modified": "2023-05-21T15:05:48-07:00",
@@ -201,6 +192,15 @@
     "title": "YCS Santiago, Chile: Top 32",
     "url": "https://yugiohblog.konami.com/2023/ycs/ycs-santiago-chile-top-32/",
     "modified": "2023-05-21T10:21:40-07:00",
+    "kind": "news",
+    "event": "YCS Santiago",
+    "format": null,
+    "slug": "2023-ycs-santiago-chile"
+  },
+  {
+    "title": "YCS Santiago, Chile: Final Match",
+    "url": "https://yugiohblog.konami.com/2023/ycs/ycs-santiago-chile-final-match-2/",
+    "modified": "2023-05-21T13:48:26-07:00",
     "kind": "news",
     "event": "YCS Santiago",
     "format": null,
