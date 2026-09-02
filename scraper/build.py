@@ -269,7 +269,11 @@ def round_key(post) -> tuple[str, Any]:
 #     and a word boundary after "wcq" never matches when a digit follows, so
 #     the slug named nothing -- and its date, weeks after the tournament, sat
 #     inside two qualifiers it was not about.
-BUILD_VERSION = 45
+#  46 The date an event is listed under is the day its coverage ended, not
+#     the day somebody edited one of its posts afterwards. Nineteen events
+#     moved; YCS Seattle 2017 had been dated to 2 March by a single post
+#     edited eleven days after the tournament.
+BUILD_VERSION = 46
 
 
 @dataclass

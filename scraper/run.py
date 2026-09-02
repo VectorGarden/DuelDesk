@@ -28,7 +28,7 @@ from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
                    parse_lastmod)
 from index import (assign_events, event_profiles, parse_post_sitemap,  # noqa: E402
-                   parse_sitemap_index, tight_window)
+                   parse_sitemap_index, settled_end, tight_window)
 from feed import build_feed                              # noqa: E402
 from naming import canonical_name, event_name            # noqa: E402
 from parse import coverage_format, detect_kind, lead, parse_post  # noqa: E402
@@ -64,9 +64,15 @@ def events_by_recency(entries, read=None) -> list[tuple[str, list[dict], str]]:
             grouped[a["event"]].append(a)
 
     def ended(slug: str, posts: list[dict]) -> str:
-        if slug in profiles:
-            return profiles[slug].window[1]
-        return tight_window([p["lastmod"] for p in posts])[1]
+        end = (profiles[slug].window[1] if slug in profiles
+               else tight_window([p["lastmod"] for p in posts])[1])
+        # And not the day somebody edited one post afterwards. This is the
+        # date the event is listed and sorted under, and for events either
+        # side of the day ties were abolished it decides whether their records
+        # may hold a draw -- YCS Vancouver ran in August 2025 and one edited
+        # post dated it to September, past the change.
+        seen = Counter(p["lastmod"] for p in posts if p.get("lastmod"))
+        return settled_end(end, seen, date.today().isoformat())
 
     return sorted(((slug, posts, ended(slug, posts))
                    for slug, posts in grouped.items()),

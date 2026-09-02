@@ -6271,6 +6271,61 @@ def _build_montreal_with_announcement():
                                           ["a"], [])])
 
 
+class TestTheDayCoverageEnded(unittest.TestCase):
+    """The date an event is listed under, and the late edit that moved it."""
+
+    def end(self, ended, days, today="2030-01-01"):
+        from index import settled_end
+        return settled_end(ended, days, today)
+
+    def test_a_lone_post_edited_afterwards_does_not_date_the_event(self):
+        # YCS Seattle: 14 posts on 18 February 2017, 23 on the 19th, and one
+        # more on 2 March. The site dated the tournament to March.
+        self.assertEqual(
+            self.end("2017-03-02",
+                     {"2017-02-18": 14, "2017-02-19": 23, "2017-03-02": 1}),
+            "2017-02-19")
+
+    def test_a_quiet_last_day_of_a_real_weekend_is_kept(self):
+        # A Sunday with only the winner left to announce is not a stray. It is
+        # the day the tournament ended.
+        self.assertEqual(
+            self.end("2025-11-09", {"2025-11-08": 38, "2025-11-09": 1}),
+            "2025-11-09")
+
+    def test_a_second_weekend_of_real_coverage_is_kept(self):
+        # A Remote Duel event running over two weekends ends on the second one.
+        # The gap is there, and eleven days wide, but so is the coverage: what
+        # makes a stray a stray is that almost nothing was published on it.
+        self.assertEqual(
+            self.end("2025-12-17", {"2025-12-06": 36, "2025-12-17": 20}),
+            "2025-12-17")
+
+    def test_it_walks_back_over_two_strays_but_not_into_the_event(self):
+        self.assertEqual(
+            self.end("2026-07-02", {"2026-06-06": 30, "2026-06-07": 25,
+                                    "2026-06-20": 1, "2026-07-02": 1}),
+            "2026-06-07")
+
+    def test_an_event_still_being_covered_is_left_alone(self):
+        # Its newest day is quiet because the coverage has not caught up, and
+        # there is no telling that from a stray until it stops.
+        # Far enough from the rest, and quiet enough, that a finished event
+        # would have this trimmed -- which is exactly why the run has to be
+        # over before it is.
+        self.assertEqual(
+            self.end("2026-08-29", {"2026-08-20": 10, "2026-08-29": 1},
+                     today="2026-08-30"),
+            "2026-08-29")
+        self.assertEqual(
+            self.end("2026-08-29", {"2026-08-20": 10, "2026-08-29": 1},
+                     today="2026-09-30"),
+            "2026-08-20", "and trimmed once it is")
+
+    def test_an_event_with_no_dated_posts_keeps_the_date_it_had(self):
+        self.assertEqual(self.end("2017-03-02", {}), "2017-03-02")
+
+
 class TestOneDuelistOneName(unittest.TestCase):
     """A Duelist the blog writes two ways across the archive."""
 
