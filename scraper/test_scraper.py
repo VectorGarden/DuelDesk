@@ -6271,6 +6271,44 @@ def _build_montreal_with_announcement():
                                           ["a"], [])])
 
 
+class TestWhatAPostIs(unittest.TestCase):
+    """One rule, asked in two languages.
+
+    The cases live in test/fixtures/kinds.json because app.js asks the same
+    questions of live feed titles and has to give the same answers. The two
+    had drifted over 403 of the archive's 8,076 titles.
+    """
+
+    def cases(self):
+        import json
+        here = Path(__file__).resolve().parent.parent / "test/fixtures/kinds.json"
+        return json.loads(here.read_text(encoding="utf-8"))["cases"]
+
+    def test_every_shared_case_classifies_as_the_fixture_says(self):
+        from parse import detect_kind
+        for case in self.cases():
+            with self.subTest(case["title"]):
+                self.assertEqual(detect_kind(case["title"]), case["kind"],
+                                 case.get("why", ""))
+
+    def test_the_fixture_covers_every_kind_the_page_can_show(self):
+        # A shared fixture only stops a drift it looks at.
+        got = {c["kind"] for c in self.cases()}
+        self.assertEqual(got, {"pairings", "standings", "feature", "deck",
+                               "result", "news"})
+
+    def test_a_slug_classifies_the_same_as_the_title_it_came_from(self):
+        # Knowing a post is pairings before fetching it is what lets a limited
+        # budget go to the posts that carry results, and a slug writes
+        # "deck-lists" where a title writes "Deck Lists".
+        import re
+        from parse import detect_kind
+        for case in self.cases():
+            slug = re.sub(r"[^a-z0-9]+", "-", case["title"].lower()).strip("-")
+            with self.subTest(slug):
+                self.assertEqual(detect_kind(slug), case["kind"])
+
+
 class TestTheDayCoverageEnded(unittest.TestCase):
     """The date an event is listed under, and the late edit that moved it."""
 

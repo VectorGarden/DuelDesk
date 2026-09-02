@@ -273,7 +273,10 @@ def round_key(post) -> tuple[str, Any]:
 #     the day somebody edited one of its posts afterwards. Nineteen events
 #     moved; YCS Seattle 2017 had been dated to 2 March by a single post
 #     edited eleven days after the tournament.
-BUILD_VERSION = 46
+#  47 One rule for what a post is, shared with the page. The stored kind
+#     changes for 267 posts: 198 plural winner announcements that read as
+#     news, and 69 that mention decks without covering any.
+BUILD_VERSION = 47
 
 
 @dataclass

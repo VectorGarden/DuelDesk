@@ -1,0 +1,118 @@
+{
+  "_": [
+    "What a post is, from its title. Read by the Python suite against",
+    "parse.detect_kind and by the JS suite against app.js kindFrom, because",
+    "there are two implementations of one rule and they had drifted apart over",
+    "403 of the archive's 8,076 titles before this file existed.",
+    "Real titles from the blog, chosen for the questions they force."
+  ],
+  "cases": [
+    {
+      "title": "YCS Montreal: Round 9 Pairings",
+      "kind": "pairings"
+    },
+    {
+      "title": "Final Pairing",
+      "kind": "pairings",
+      "why": "the final has one match to report, so the blog writes it singular"
+    },
+    {
+      "title": "YCS Montreal: Standings after Round 6",
+      "kind": "standings"
+    },
+    {
+      "title": "Point Totals After Round 4",
+      "kind": "standings"
+    },
+    {
+      "title": "Round 7 Feature Match: Ada Lovelace vs Bo Peep",
+      "kind": "feature"
+    },
+    {
+      "title": "YCS Atlanta: Final Match",
+      "kind": "feature",
+      "why": "how the blog titles a final it writes up rather than tabulates"
+    },
+    {
+      "title": "Top 8 Deck Profiles",
+      "kind": "deck"
+    },
+    {
+      "title": "YCS Hartford Top 32 Deck Lists",
+      "kind": "deck"
+    },
+    {
+      "title": "Public Events winners",
+      "kind": "result",
+      "why": "plural: asking for a singular winner filed 198 posts as news"
+    },
+    {
+      "title": "Welcoming the National Champions of South America",
+      "kind": "result"
+    },
+    {
+      "title": "Congratulations to our new Champion!",
+      "kind": "result"
+    },
+    {
+      "title": "YCS Houston: Undefeated Duelist After Swiss Rounds!",
+      "kind": "result"
+    },
+    {
+      "title": "YCS Hartford Top 32 Pairings and Deck Lists",
+      "kind": "pairings",
+      "why": "a bracket that also prints decks; the bracket is the part worth having"
+    },
+    {
+      "title": "TEAM YCS Las Vegas Winner Deck Lists",
+      "kind": "deck",
+      "why": "a decklist post about a winner, so deck is asked before result"
+    },
+    {
+      "title": "QQ: What Decks were you expecting to see this weekend?",
+      "kind": "news",
+      "why": "QQ is the blog's reader-question column: about decks, not coverage of any"
+    },
+    {
+      "title": "Tech Update: Generation Force Extra Deck Additions",
+      "kind": "news"
+    },
+    {
+      "title": "Deck Check Procedures at Championship Events",
+      "kind": "news",
+      "why": "a policy term, not deck content"
+    },
+    {
+      "title": "Doors open at 8am",
+      "kind": "news"
+    },
+    {
+      "title": "NAWCQ Deck Breakdown: Top 32",
+      "kind": "deck",
+      "why": "the blog names deck coverage many ways; a rule listing the forms it knew lost the rest"
+    },
+    {
+      "title": "YCS Vancouver: Deck Type Breakdown for Top 16!",
+      "kind": "deck"
+    },
+    {
+      "title": "Duelists and Decks in Day 2!",
+      "kind": "deck"
+    },
+    {
+      "title": "QQ: Which Deck Are You Using This Weekend?",
+      "kind": "news",
+      "why": "asked fifty-nine times across the archive"
+    },
+    {
+      "title": "New Structure Deck: Albaz Strike Game Mat!",
+      "kind": "news",
+      "why": "merchandise"
+    },
+    {
+      "title": "Deck Update: Legacy of Destruction!",
+      "kind": "news",
+      "why": "a set announcement, not a tournament's decks"
+    }
+  ]
+}
