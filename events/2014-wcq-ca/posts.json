@@ -180,6 +180,15 @@
     "slug": "2014-wcq-ca"
   },
   {
+    "title": "WCQ",
+    "url": "https://yugiohblog.konami.com/2014/championships/wcq-ca-which-deck-will-win-this-weekend/",
+    "modified": "2014-07-06T09:09:49-07:00",
+    "kind": "deck",
+    "event": "Central America WCQ 2014",
+    "format": null,
+    "slug": "2014-wcq-ca"
+  },
+  {
     "title": "And the new Central American Champion is…",
     "url": "https://yugiohblog.konami.com/2014/championships/and-the-new-central-american-champion-is/",
     "modified": "2014-07-06T14:26:15-07:00",
@@ -343,8 +352,8 @@
   },
   {
     "title": "WCQ",
-    "url": "https://yugiohblog.konami.com/2014/championships/wcq-ca-which-deck-will-win-this-weekend/",
-    "modified": "2014-07-06T09:09:49-07:00",
+    "url": "https://yugiohblog.konami.com/2014/championships/wcq-ca-qq-which-deck-are-you-using-and-why/",
+    "modified": "2014-07-06T08:25:05-07:00",
     "kind": "news",
     "event": "Central America WCQ 2014",
     "format": null,
@@ -355,15 +364,6 @@
     "url": "https://yugiohblog.konami.com/2014/championships/wcq-ca-top-4-feature-match-jose-lagunes-vs-daniel-gonzalez/",
     "modified": "2014-07-06T15:50:01-07:00",
     "kind": "feature",
-    "event": "Central America WCQ 2014",
-    "format": null,
-    "slug": "2014-wcq-ca"
-  },
-  {
-    "title": "WCQ",
-    "url": "https://yugiohblog.konami.com/2014/championships/wcq-ca-qq-which-deck-are-you-using-and-why/",
-    "modified": "2014-07-06T08:25:05-07:00",
-    "kind": "news",
     "event": "Central America WCQ 2014",
     "format": null,
     "slug": "2014-wcq-ca"
