@@ -249,7 +249,11 @@ def round_key(post) -> tuple[str, Any]:
 #     new South American Champion!" reads as a winner post to every rule, and
 #     the body under it is a pairings table -- so a preview naming one Duelist
 #     of the cut would have crowned them two rounds before they won anything.
-BUILD_VERSION = 40
+# 41: a surname nobody else answers to. YCS Origins' Final is Jacob David
+#     Phinney against Aaron Chase Furman and its winner post says "Jake
+#     Phinney" -- a shortening no folding rule reaches, and named_in wants two
+#     words of a name. Asked only of a post that named nobody at all.
+BUILD_VERSION = 41
 
 
 @dataclass

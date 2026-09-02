@@ -2871,6 +2871,51 @@ class TestChampion(unittest.TestCase):
                        "Mare Mare Lair and Lair Squad met in a great final.")])
         self.assertIsNone(got)
 
+    def test_a_surname_nobody_else_answers_to(self):
+        # YCS Origins' Final is Jacob David Phinney against Aaron Chase Furman
+        # and its winner post says "Jake Phinney" -- a shortening no folding
+        # rule reaches. named_in wants two words of a name and gets one, so the
+        # post named nobody.
+        from winners import champion
+        got = champion(
+            ["Aaron Chase Furman", "Jacob David Phinney"],
+            [self.post("YCS Origins: And the new YCS Champion is…",
+                       "Congratulations to Jake Phinney of North Carolina, "
+                       "YCS Origins Champion!")])
+        self.assertEqual(got, "Jacob David Phinney")
+
+    def test_a_post_that_named_somebody_is_not_asked_again(self):
+        # The guard the earlier version of this lacked. It asked per candidate,
+        # whenever that candidate went unmatched, and in a field of 32 some
+        # stray surname always matches somebody -- it turned the 2012 Central
+        # American WCQ's winner post from one naming five into one naming six,
+        # and the event lost its champion.
+        from winners import champion
+        got = champion(
+            ["Ann Alpha", "Bo Beta", "Cy Furman"],
+            [self.post("And the winner is…",
+                       "Ann Alpha is your newest Champion! Furman took third.")])
+        self.assertEqual(got, "Ann Alpha")
+
+    def test_two_Duelists_sharing_a_surname_settle_nothing(self):
+        # A surname identifies somebody only when nobody else answers to it.
+        from winners import champion
+        self.assertIsNone(champion(
+            ["Mohammed Faisal Khan", "Mohammed Imran Khan"],
+            [self.post("And the winner is…", "Khan takes the title!")]))
+
+    def test_a_generational_suffix_is_not_a_surname(self):
+        from winners import surname, only_by_surname
+        self.assertEqual(surname("Eddie Martin Strom IV"), "strom")
+        self.assertEqual(surname("Robert Boyajian II"), "boyajian")
+        # And a short last word is a particle or an initial, not an
+        # identification: "Li" would match inside a dozen ordinary words.
+        self.assertEqual(surname("Ann Li"), "")
+        self.assertEqual(surname("Ann B"), "ann", "a lone initial is dropped first")
+        self.assertIsNone(only_by_surname(
+            ["Eddie Martin Strom IV"],
+            "a field of 2253 Duelists, five of them from Ohio"))
+
     def test_the_crowning_sentence_is_read_not_the_first_name(self):
         # The guard the test above used to provide, kept: a post that names
         # the runner-up first must not hand it the title. Here "Bo Beta" is
