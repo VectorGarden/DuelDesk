@@ -262,6 +262,49 @@ def _bare(name: str) -> str:
     return " ".join(re.findall(r"[a-z0-9]+", name.lower()))
 
 
+# What a name ends with that is not a surname. "Eddie Martin Strom IV" ends in
+# a generational suffix, and taking IV for the surname handed a Dragon Duel to
+# a Duelist nobody had mentioned.
+_SUFFIX = {"jr", "sr", "ii", "iii", "iv", "v", "vi", "vii"}
+
+
+def surname(name: str) -> str:
+    """The last word of a name that is a name, lowercased, or ""."""
+    words = [w.lower() for w in re.split(r"[^A-Za-z]+", name) if len(w) > 1]
+    while words and words[-1] in _SUFFIX:
+        words.pop()
+    # Two letters is an initial or a particle, not something to identify
+    # anybody by.
+    return words[-1] if words and len(words[-1]) > 2 else ""
+
+
+def only_by_surname(field: list[str], text: str) -> str | None:
+    """The one Duelist in the field whose surname is in the text, or None.
+
+    named_in wants two words of a name because one is not identification: a
+    lone "Patrick" is what a rule matching on one word had to go on when it
+    decided the 2013 North America WCQ had been won by a Patrick who was not
+    there.
+
+    A surname is different when nobody else in the round answers to it. YCS
+    Origins' Final is Jacob David Phinney against Aaron Chase Furman and its
+    winner post says "Jake Phinney" -- a shortening no folding rule reaches,
+    and Phinney is one of exactly two people it could mean.
+
+    Asked only of a post that named nobody at all, which is the whole of what
+    makes it safe. An earlier version asked it per candidate, whenever that
+    candidate went unmatched, and in a field of 32 some stray surname always
+    matches somebody: it cost the 2012 Central American WCQ its champion by
+    turning a post that named five into a post that named six.
+    """
+    seen = {}
+    for name in field:
+        if (last := surname(name)) and re.search(rf"\b{re.escape(last)}\b", text, re.I):
+            seen.setdefault(last, []).append(name)
+    found = [names for names in seen.values() if len(names) == 1]
+    return found[0][0] if len(found) == 1 else None
+
+
 def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
              rosters: dict[str, list[str]] | None = None) -> str | None:
     """Which of these Duelists the coverage says won, or None.
@@ -324,6 +367,10 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
         inside = {_bare(n) for _, n in named}
         named = [(at, n) for at, n in named
                  if not any(_bare(n) != other and _bare(n) in other for other in inside)]
+        # Nobody at all, and one surname in the field is in the text. The blog
+        # shortens a forename oftener than it shortens a surname.
+        if not named and (lone := only_by_surname(candidates, text)):
+            named = [(text.lower().find(surname(lone)), lone)]
         if len(named) == 1:
             claimed.add(named[0][1])
         elif len(named) > 1:
