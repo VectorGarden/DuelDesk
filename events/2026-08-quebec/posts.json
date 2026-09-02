@@ -540,6 +540,15 @@
     "slug": "2026-08-quebec"
   },
   {
+    "title": "YCS Montréal: Genesys Format Deck Breakdown",
+    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-genesys-format-deck-breakdown/",
+    "modified": "2026-08-14T16:32:50-07:00",
+    "kind": "deck",
+    "event": "YCS Montréal",
+    "format": "Genesys",
+    "slug": "2026-08-quebec"
+  },
+  {
     "title": "YCS Montréal 3 vs. 3 Team Dueling Winners!",
     "url": "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-3-vs-3-team-dueling-winners/",
     "modified": "2026-08-16T12:53:28-07:00",
@@ -1188,12 +1197,12 @@
     "slug": "2026-08-quebec"
   },
   {
-    "title": "YCS Montréal: Genesys Format Deck Breakdown",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-genesys-format-deck-breakdown/",
-    "modified": "2026-08-14T16:32:50-07:00",
+    "title": "YCS Montréal, Quebec 2026",
+    "url": "https://yugiohblog.konami.com/2026/event-information/ycs-montreal-quebec-2026-main-event-information/",
+    "modified": "2026-08-11T10:49:43-07:00",
     "kind": "news",
     "event": "YCS Montréal",
-    "format": "Genesys",
+    "format": null,
     "slug": "2026-08-quebec"
   },
   {
@@ -1203,15 +1212,6 @@
     "kind": "feature",
     "event": "YCS Montréal",
     "format": "Genesys",
-    "slug": "2026-08-quebec"
-  },
-  {
-    "title": "YCS Montréal, Quebec 2026",
-    "url": "https://yugiohblog.konami.com/2026/event-information/ycs-montreal-quebec-2026-main-event-information/",
-    "modified": "2026-08-11T10:49:43-07:00",
-    "kind": "news",
-    "event": "YCS Montréal",
-    "format": null,
     "slug": "2026-08-quebec"
   },
   {
