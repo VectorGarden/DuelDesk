@@ -245,7 +245,11 @@ def round_key(post) -> tuple[str, Any]:
 #     right of the divider was read as Player 2, so the deck landed in the
 #     middle of the name -- "Shin En Dragon Rulers Huang" -- and both
 #     finalists matched the winner post on "Dragon Rulers".
-BUILD_VERSION = 39
+# 40: a preview is not an announcement. "Only two more rounds before we have a
+#     new South American Champion!" reads as a winner post to every rule, and
+#     the body under it is a pairings table -- so a preview naming one Duelist
+#     of the cut would have crowned them two rounds before they won anything.
+BUILD_VERSION = 40
 
 
 @dataclass

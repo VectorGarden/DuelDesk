@@ -95,6 +95,10 @@ CROWNS = re.compile(r"\bis (?:your|the|our)\b[^.!?]*\b(?:champions?|winners?)\b"
 #
 # The last is the dangerous one: it is a fact about the runner-up, in the past
 # tense, in a post about the match he went on to lose.
+# A post that is still counting down to a result. Narrow on purpose: one post
+# in the whole archive matches, and it is the preview above.
+NOT_YET = re.compile(r"\bbefore we\b|\bmore rounds?\b|\brounds? (?:left|to go)\b", re.I)
+
 HEDGE = re.compile(r"\b(will|would|could|about to|soon|away from|one of|if"
                    r"|going to|hopes?|chance|reigning|\d+-time|two-time)\b", re.I)
 
@@ -197,6 +201,22 @@ def announces_a_winner(title: str, opening: str = "", fmt: str | None = None) ->
     if not ANNOUNCEMENT.search(title or ""):
         return False
     if HELD_ELSEWHERE.search(title or ""):
+        return False
+    # A post looking forward to a champion is not a post announcing one. The
+    # 2015 South American WCQ is headed
+    #
+    #   Only two more rounds before we have a new South American Champion!
+    #
+    # which reads as an announcement to every rule here, and the body under it
+    # is a pairings table. Both of its Duelists were named, so it happened to
+    # settle nothing -- but a preview naming one of them would have crowned
+    # somebody two rounds before they won anything.
+    #
+    # HEDGE is the same idea and is deliberately not reused: it holds "will",
+    # "chance" and "reigning", which a real winner post says often enough
+    # ("the reigning champion fell"), and this is asked of every announcement
+    # rather than of one sentence.
+    if NOT_YET.search(title or "") or NOT_YET.search(opening[:160]):
         return False
     said = _ASIDE.sub(" ", opening[:400])[:160]
     if HELD_ELSEWHERE.search(said):
