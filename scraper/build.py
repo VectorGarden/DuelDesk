@@ -265,7 +265,11 @@ def round_key(post) -> tuple[str, Any]:
 #     and an edit weeks later moved it to whatever event ran that week: YCS
 #     Houston's winner post went to YCS Providence, and eight of the 2013
 #     North America WCQ's standings went to YCS Chicago, six years away.
-BUILD_VERSION = 44
+# 45: a qualifier known by its initials. The blog writes "sawcq2025-winner",
+#     and a word boundary after "wcq" never matches when a digit follows, so
+#     the slug named nothing -- and its date, weeks after the tournament, sat
+#     inside two qualifiers it was not about.
+BUILD_VERSION = 45
 
 
 @dataclass

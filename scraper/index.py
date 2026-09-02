@@ -173,6 +173,27 @@ def event_windows(entries: list[Entry]) -> dict[str, tuple[str, str]]:
 _SLUG_YEAR = re.compile(r"(?:^|-)(?:19|20)\d{2}(?=-|$)")
 
 
+def qualifier_named(entry: Entry, windows: dict) -> str | None:
+    """The qualifier a post's slug names, when exactly one event answers to it.
+
+    The dates cannot always place these. "sawcq2025-winner" is the 2025 South
+    American qualifier's winner post and carries 8 July, weeks after that
+    tournament and inside two others -- so it was ambiguous between the Central
+    and North American ones, neither of which it is about.
+
+    What it does say, plainly, is which qualifier. wcq_name reads that: the
+    blog's own initials for the three regions, with the year running straight
+    on to them. Asked only once the dates have failed, and only where exactly
+    one event answers to the name, so this narrows an ambiguity rather than
+    overruling an answer.
+    """
+    if not (want := wcq_name(entry.slug, "", entry.lastmod)):
+        return None
+    answering = [slug for slug, (lo, hi) in windows.items()
+                 if wcq_name(slug, "", hi) == want]
+    return answering[0] if len(answering) == 1 else None
+
+
 def same_series(entry: Entry, windows: dict, within) -> str | None:
     """The event this post's slug names, if its slug has the wrong year on it.
 
@@ -595,6 +616,28 @@ def assign_events(entries: list[Entry], slack_days: int = 4) -> list[dict]:
     # not to be in the receiving event's cut.
     for rec, ev in _named_outright(out, {**profiles, **disc}):
         rec["event"], rec["event_confidence"] = ev, "name"
+
+    # And the qualifiers, which the blog names by their initials. Last, with
+    # the discovered events in hand: the 2025 South American qualifier is not
+    # a path event, so nothing earlier than this knows it exists.
+    everything = {**profiles, **disc}
+    for rec in out:
+        if rec["event"]:
+            continue
+        # Nothing that carries a round, for the reason the rule above it says:
+        # a name tells you which event a post is about and nothing about
+        # whether its table belongs in that event's bracket. The 2019 North
+        # America WCQ's World Qualifying Points Playoff is named for the
+        # qualifier it runs beside -- "north-america-wcq-world-qualifying-
+        # points-playoff-round-1" -- and its tables put five Duelists in a Top
+        # 8 who had not played in the Top 16, which took the event out of the
+        # archive.
+        if detect_kind(rec["slug"]) in (*TOURNAMENT, "feature"):
+            continue
+        entry = Entry(rec["url"], rec["year"], rec["category"], rec["event_slug"],
+                      rec["slug"], rec["lastmod"])
+        if claimed := qualifier_named(entry, {k: p.window for k, p in everything.items()}):
+            rec["event"], rec["event_confidence"] = claimed, "initials"
     return out
 
 

@@ -205,9 +205,12 @@ def event_name(titles: list[str], fallback: str) -> str:
 # there is one of each every year, so the name has to carry the year to identify
 # the event at all -- five of them sit in the archive under names that differ
 # only in spelling.
-_REGIONS = ((r"\bnawcq\b|\bnorth american?\b", "North America"),
-            (r"\bcentral american?\b", "Central America"),
-            (r"\bsouth american?\b", "South America"),
+_REGIONS = ((r"\bnawcq(?![a-z])|\bnorth american?\b", "North America"),
+            # The other two initialisms, which the blog uses exactly as it uses
+            # NAWCQ: "sawcq2025-winner" is the 2025 South American qualifier's
+            # winner post and named nothing this module could read.
+            (r"\bcawcq(?![a-z])|\bcentral american?\b", "Central America"),
+            (r"\bsawcq(?![a-z])|\bsouth american?\b", "South America"),
             # Written out first, abbreviated after, so a slug that says the
             # region in full is never read off two letters somewhere else in
             # it. Three qualifiers say it only this way and had no region at
@@ -242,7 +245,9 @@ _REGIONS = ((r"\bnawcq\b|\bnorth american?\b", "North America"),
 # and an event matching without a region would find none below and return None
 # anyway. No test can tell the two versions apart, and mutating the region out
 # of this pattern does not go red.
-_IS_WCQ = re.compile(r"\b(?:na|n)?wcq\b|world championship qualifier"
+# The blog runs a year straight on to the initials -- "sawcq2025-winner" --
+# so the word does not end where a word boundary would.
+_IS_WCQ = re.compile(r"\b(?:na|sa|ca|n)?wcq(?![a-z])|world championship qualifier"
                      r"|\bygoc\b|americ\w* yu gi oh!? tcg championship", re.I)
 _YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
 
