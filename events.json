@@ -105,9 +105,27 @@
       ]
     },
     {
+      "slug": "2026-south-america-wcq",
+      "event": "South America WCQ 2026",
+      "updated": "2026-06-21",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-south-america-wcq/rounds.json",
+      "postCount": 29,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 13,
+          "duelists": 480,
+          "rounds": 13
+        }
+      ]
+    },
+    {
       "slug": "2026-south-america-genesys-championship",
       "event": "South America Genesys Championship",
-      "updated": "2026-06-29",
+      "updated": "2026-06-21",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
@@ -125,7 +143,7 @@
     {
       "slug": "2026-south-america-dragon-duel-championship",
       "event": "South America Dragon Duel Championship",
-      "updated": "2026-06-29",
+      "updated": "2026-06-21",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
@@ -137,24 +155,6 @@
           "swissRounds": 7,
           "duelists": 12,
           "rounds": 7
-        }
-      ]
-    },
-    {
-      "slug": "2026-south-america-wcq",
-      "event": "South America WCQ 2026",
-      "updated": "2026-06-21",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2026-south-america-wcq/rounds.json",
-      "postCount": 29,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 13,
-          "duelists": 480,
-          "rounds": 13
         }
       ]
     },
@@ -275,25 +275,6 @@
       ]
     },
     {
-      "slug": "2026-ycs-guatemala-city-guatemala",
-      "event": "YCS Guatemala City",
-      "location": "Guatemala City, Guatemala",
-      "updated": "2026-05-03",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
-      "postCount": 27,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 12,
-          "duelists": 310,
-          "rounds": 12
-        }
-      ]
-    },
-    {
       "slug": "2026-04-team-ycs-las-vegas",
       "event": "TEAM YCS Las Vegas",
       "updated": "2026-04-19",
@@ -333,10 +314,29 @@
       ]
     },
     {
+      "slug": "2026-ycs-guatemala-city-guatemala",
+      "event": "YCS Guatemala City",
+      "location": "Guatemala City, Guatemala",
+      "updated": "2026-04-12",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
+      "postCount": 27,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 310,
+          "rounds": 12
+        }
+      ]
+    },
+    {
       "slug": "2026-team-ycs-la-paz-bolivia",
       "event": "TEAM YCS La Paz",
       "location": "La Paz, Bolivia",
-      "updated": "2026-03-23",
+      "updated": "2026-03-18",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
@@ -417,7 +417,7 @@
     {
       "slug": "remote-duel-ycs-january-2026",
       "event": "Remote Duel YCS January 2026",
-      "updated": "2026-02-13",
+      "updated": "2026-02-01",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
@@ -436,25 +436,6 @@
           "swissRounds": 12,
           "duelists": 286,
           "rounds": 14
-        }
-      ]
-    },
-    {
-      "slug": "2025-ycs-merida-mexico",
-      "event": "YCS Merida",
-      "location": "Merida, Mexico",
-      "updated": "2025-12-16",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2025-ycs-merida-mexico/rounds.json",
-      "postCount": 26,
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 12,
-          "duelists": 414,
-          "rounds": 12
         }
       ]
     },
@@ -480,6 +461,25 @@
           "swissRounds": 12,
           "duelists": 483,
           "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2025-ycs-merida-mexico",
+      "event": "YCS Merida",
+      "location": "Merida, Mexico",
+      "updated": "2025-11-30",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-ycs-merida-mexico/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 12,
+          "duelists": 414,
+          "rounds": 12
         }
       ]
     },
@@ -574,7 +574,7 @@
     {
       "slug": "2025-ycs-vancouver",
       "event": "YCS Vancouver",
-      "updated": "2025-09-11",
+      "updated": "2025-08-17",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
@@ -622,31 +622,6 @@
       ]
     },
     {
-      "slug": "2025-south-america-wcq",
-      "event": "South America WCQ 2025",
-      "updated": "2025-07-08",
-      "sample": false,
-      "ongoing": false,
-      "coverageBy": "Konami",
-      "path": "events/2025-south-america-wcq/rounds.json",
-      "postCount": 22,
-      "champions": [
-        {
-          "format": null,
-          "name": "Felipe Bisserier Zapata",
-          "deck": null
-        }
-      ],
-      "formats": [
-        {
-          "format": null,
-          "swissRounds": 9,
-          "duelists": 439,
-          "rounds": 13
-        }
-      ]
-    },
-    {
       "slug": "2025-central-america-wcq",
       "event": "Central America WCQ 2025",
       "updated": "2025-07-08",
@@ -668,6 +643,31 @@
           "swissRounds": 9,
           "duelists": 456,
           "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2025-south-america-wcq",
+      "event": "South America WCQ 2025",
+      "updated": "2025-06-08",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2025-south-america-wcq/rounds.json",
+      "postCount": 22,
+      "champions": [
+        {
+          "format": null,
+          "name": "Felipe Bisserier Zapata",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 439,
+          "rounds": 13
         }
       ]
     },
@@ -855,7 +855,7 @@
     {
       "slug": "remote-duel-ycs-february-2025",
       "event": "Remote Duel YCS February 2025",
-      "updated": "2025-02-26",
+      "updated": "2025-02-09",
       "sample": false,
       "ongoing": false,
       "coverageBy": "Konami",
@@ -915,7 +915,8 @@
         {
           "format": null,
           "name": "Steven Trifunoski",
-          "deck": "Fiendsmith Ryzeal"
+          "deck": "Fiendsmith Ryzeal",
+          "person": "Steven J. Trifunoski"
         }
       ],
       "formats": [
