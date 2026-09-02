@@ -297,9 +297,9 @@
     "slug": "2017-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta: Deck Profile",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-deck-profile-nathan-lawders-windwitch-invoked-artifact-deck/",
-    "modified": "2017-03-04T18:32:06-08:00",
+    "title": "YCS Atlanta: What Deck are you playing?",
+    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-what-deck-are-you-playing/",
+    "modified": "2017-03-04T14:37:13-08:00",
     "kind": "deck",
     "event": "YCS Atlanta",
     "format": null,
@@ -333,6 +333,15 @@
     "slug": "2017-ycs-atlanta"
   },
   {
+    "title": "YCS Atlanta: Deck Profile",
+    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-deck-profile-nathan-lawders-windwitch-invoked-artifact-deck/",
+    "modified": "2017-03-04T18:32:06-08:00",
+    "kind": "deck",
+    "event": "YCS Atlanta",
+    "format": null,
+    "slug": "2017-ycs-atlanta"
+  },
+  {
     "title": "YCS Atlanta: Random Public Events Playoff Winners",
     "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-random-public-events-playoff-winners/",
     "modified": "2017-03-05T21:08:34-08:00",
@@ -346,6 +355,15 @@
     "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-top-32/",
     "modified": "2017-03-05T08:53:22-08:00",
     "kind": "news",
+    "event": "YCS Atlanta",
+    "format": null,
+    "slug": "2017-ycs-atlanta"
+  },
+  {
+    "title": "YCS Atlanta: Final Match",
+    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-final-match/",
+    "modified": "2017-03-05T15:12:29-08:00",
+    "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
     "slug": "2017-ycs-atlanta"
@@ -382,15 +400,6 @@
     "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-sunday-giant-card/",
     "modified": "2017-03-05T12:10:48-08:00",
     "kind": "result",
-    "event": "YCS Atlanta",
-    "format": null,
-    "slug": "2017-ycs-atlanta"
-  },
-  {
-    "title": "YCS Atlanta: Final Match",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-final-match/",
-    "modified": "2017-03-05T15:12:29-08:00",
-    "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
     "slug": "2017-ycs-atlanta"
@@ -480,15 +489,6 @@
     "title": "YCS Atlanta: Saturday Generation Duel",
     "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-saturday-generation-duel/",
     "modified": "2017-03-04T14:28:40-08:00",
-    "kind": "news",
-    "event": "YCS Atlanta",
-    "format": null,
-    "slug": "2017-ycs-atlanta"
-  },
-  {
-    "title": "YCS Atlanta: What Deck are you playing?",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-what-deck-are-you-playing/",
-    "modified": "2017-03-04T14:37:13-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,

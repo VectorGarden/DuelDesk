@@ -2111,6 +2111,31 @@
       ]
     },
     {
+      "slug": "202205-ycs-hartford-ct",
+      "event": "YCS Hartford",
+      "updated": "2022-05-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/202205-ycs-hartford-ct/rounds.json",
+      "postCount": 69,
+      "champions": [
+        {
+          "format": null,
+          "name": "Poe Jiang",
+          "deck": "Sky Striker"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1243,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "2022-ycs-guadalajara-mexico",
       "event": "YCS Guadalajara",
       "location": "Guadalajara, Mexico",

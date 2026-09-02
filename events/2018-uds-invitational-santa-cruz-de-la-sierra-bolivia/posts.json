@@ -189,10 +189,10 @@
     "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
   },
   {
-    "title": "And the winner is….",
-    "url": "https://yugiohblog.konami.com/2018/uds/and-the-winner-is-31/",
-    "modified": "2018-03-04T14:01:09-08:00",
-    "kind": "result",
+    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Final Match",
+    "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-final-match/",
+    "modified": "2018-03-04T12:22:17-08:00",
+    "kind": "feature",
     "event": "UDS Invitational Santa Cruz de la Sierra",
     "format": null,
     "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
@@ -201,34 +201,16 @@
     "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Complete Deck Breakdown",
     "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-complete-deck-breakdown/",
     "modified": "2018-03-04T08:02:11-08:00",
-    "kind": "news",
+    "kind": "deck",
     "event": "UDS Invitational Santa Cruz de la Sierra",
     "format": null,
     "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
   },
   {
-    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Saturday Dragon Duel Winners",
-    "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-saturday-dragon-duel-winners/",
-    "modified": "2018-03-03T12:33:15-08:00",
+    "title": "And the winner is….",
+    "url": "https://yugiohblog.konami.com/2018/uds/and-the-winner-is-31/",
+    "modified": "2018-03-04T14:01:09-08:00",
     "kind": "result",
-    "event": "UDS Invitational Santa Cruz de la Sierra",
-    "format": "Dragon Duel",
-    "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
-  },
-  {
-    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Deck Breakdown for Day 2",
-    "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-deck-breakdown-for-day-2/",
-    "modified": "2018-03-04T08:35:21-08:00",
-    "kind": "news",
-    "event": "UDS Invitational Santa Cruz de la Sierra",
-    "format": null,
-    "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
-  },
-  {
-    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Final Match",
-    "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-final-match/",
-    "modified": "2018-03-04T12:22:17-08:00",
-    "kind": "news",
     "event": "UDS Invitational Santa Cruz de la Sierra",
     "format": null,
     "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
@@ -240,6 +222,24 @@
     "kind": "news",
     "event": "UDS Invitational Santa Cruz de la Sierra",
     "format": null,
+    "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
+  },
+  {
+    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Deck Breakdown for Day 2",
+    "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-deck-breakdown-for-day-2/",
+    "modified": "2018-03-04T08:35:21-08:00",
+    "kind": "deck",
+    "event": "UDS Invitational Santa Cruz de la Sierra",
+    "format": null,
+    "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
+  },
+  {
+    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Saturday Dragon Duel Winners",
+    "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-saturday-dragon-duel-winners/",
+    "modified": "2018-03-03T12:33:15-08:00",
+    "kind": "result",
+    "event": "UDS Invitational Santa Cruz de la Sierra",
+    "format": "Dragon Duel",
     "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
   }
 ]

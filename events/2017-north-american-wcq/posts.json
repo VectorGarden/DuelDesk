@@ -244,6 +244,15 @@
   },
   {
     "title": "North America WCQ",
+    "url": "https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-round-5-deck-breakdown/",
+    "modified": "2017-07-08T17:35:19-07:00",
+    "kind": "deck",
+    "event": "North America WCQ 2017",
+    "format": null,
+    "slug": "2017-north-american-wcq"
+  },
+  {
+    "title": "North America WCQ",
     "url": "https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-and-the-winner-is/",
     "modified": "2017-07-09T18:34:48-07:00",
     "kind": "result",
@@ -390,15 +399,6 @@
     "title": "North America WCQ",
     "url": "https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-day-1-what-side-are-you-on/",
     "modified": "2017-07-08T17:34:11-07:00",
-    "kind": "news",
-    "event": "North America WCQ 2017",
-    "format": null,
-    "slug": "2017-north-american-wcq"
-  },
-  {
-    "title": "North America WCQ",
-    "url": "https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-round-5-deck-breakdown/",
-    "modified": "2017-07-08T17:35:19-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
     "format": null,

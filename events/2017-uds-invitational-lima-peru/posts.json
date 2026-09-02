@@ -189,6 +189,24 @@
     "slug": "2017-uds-invitational-lima-peru"
   },
   {
+    "title": "UDS Invitational Lima, Peru: Final Match",
+    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-final-match/",
+    "modified": "2017-03-05T12:30:25-08:00",
+    "kind": "feature",
+    "event": "UDS Invitational Lima",
+    "format": null,
+    "slug": "2017-uds-invitational-lima-peru"
+  },
+  {
+    "title": "UDS Invitational Lima, Peru: Complete Deck Breakdown",
+    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-complete-deck-breakdown/",
+    "modified": "2017-03-05T07:23:51-08:00",
+    "kind": "deck",
+    "event": "UDS Invitational Lima",
+    "format": null,
+    "slug": "2017-uds-invitational-lima-peru"
+  },
+  {
     "title": "UDS Invitational Lima, Peru: Saturday’s Public Events Winners!",
     "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-saturdays-public-events-winners/",
     "modified": "2017-03-05T12:11:45-08:00",
@@ -198,10 +216,19 @@
     "slug": "2017-uds-invitational-lima-peru"
   },
   {
-    "title": "UDS Invitational Lima, Peru: Complete Deck Breakdown",
-    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-complete-deck-breakdown/",
-    "modified": "2017-03-05T07:23:51-08:00",
+    "title": "UDS Invitational Lima, Peru: Top 8",
+    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-top-8/",
+    "modified": "2017-03-05T09:42:34-08:00",
     "kind": "news",
+    "event": "UDS Invitational Lima",
+    "format": null,
+    "slug": "2017-uds-invitational-lima-peru"
+  },
+  {
+    "title": "UDS Invitational Lima, Peru: Deck Breadown for Day 2",
+    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-deck-breadown-for-day-2/",
+    "modified": "2017-03-05T09:09:10-08:00",
+    "kind": "deck",
     "event": "UDS Invitational Lima",
     "format": null,
     "slug": "2017-uds-invitational-lima-peru"
@@ -216,12 +243,12 @@
     "slug": "2017-uds-invitational-lima-peru"
   },
   {
-    "title": "UDS Invitational Lima, Peru: Deck Breadown for Day 2",
-    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-deck-breadown-for-day-2/",
-    "modified": "2017-03-05T09:09:10-08:00",
+    "title": "UDS Invitational Lima, Peru: Sunday Dragon Duel",
+    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-sunday-dragon-duel/",
+    "modified": "2017-03-05T13:57:23-08:00",
     "kind": "news",
     "event": "UDS Invitational Lima",
-    "format": null,
+    "format": "Dragon Duel",
     "slug": "2017-uds-invitational-lima-peru"
   },
   {
@@ -231,33 +258,6 @@
     "kind": "result",
     "event": "UDS Invitational Lima",
     "format": null,
-    "slug": "2017-uds-invitational-lima-peru"
-  },
-  {
-    "title": "UDS Invitational Lima, Peru: Top 8",
-    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-top-8/",
-    "modified": "2017-03-05T09:42:34-08:00",
-    "kind": "news",
-    "event": "UDS Invitational Lima",
-    "format": null,
-    "slug": "2017-uds-invitational-lima-peru"
-  },
-  {
-    "title": "UDS Invitational Lima, Peru: Final Match",
-    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-final-match/",
-    "modified": "2017-03-05T12:30:25-08:00",
-    "kind": "news",
-    "event": "UDS Invitational Lima",
-    "format": null,
-    "slug": "2017-uds-invitational-lima-peru"
-  },
-  {
-    "title": "UDS Invitational Lima, Peru: Sunday Dragon Duel",
-    "url": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-sunday-dragon-duel/",
-    "modified": "2017-03-05T13:57:23-08:00",
-    "kind": "news",
-    "event": "UDS Invitational Lima",
-    "format": "Dragon Duel",
     "slug": "2017-uds-invitational-lima-peru"
   },
   {

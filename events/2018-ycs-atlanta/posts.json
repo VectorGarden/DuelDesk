@@ -234,6 +234,15 @@
     "slug": "2018-ycs-atlanta"
   },
   {
+    "title": "Top 32 Duelists and Decks!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/top-32-duelists-and-decks-6/",
+    "modified": "2018-02-18T13:00:24-08:00",
+    "kind": "deck",
+    "event": "YCS Atlanta",
+    "format": null,
+    "slug": "2018-ycs-atlanta"
+  },
+  {
     "title": "YCS Atlanta: Dragon Duel Champion!",
     "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-dragon-duel-champion-3/",
     "modified": "2018-02-18T16:39:19-08:00",
@@ -324,9 +333,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Top 32 Duelists and Decks!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/top-32-duelists-and-decks-6/",
-    "modified": "2018-02-18T13:00:24-08:00",
+    "title": "The Finals of YCS Atlanta 2018 Are Underway!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/the-finals-of-ycs-atlanta-2018-are-underway/",
+    "modified": "2018-02-18T17:02:21-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -342,9 +351,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "The Finals of YCS Atlanta 2018 Are Underway!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/the-finals-of-ycs-atlanta-2018-are-underway/",
-    "modified": "2018-02-18T17:02:21-08:00",
+    "title": "YCS Atlanta Top 4 Duelists!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-top-4-duelists/",
+    "modified": "2018-02-18T19:11:13-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -360,9 +369,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta Top 4 Duelists!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-top-4-duelists/",
-    "modified": "2018-02-18T19:11:13-08:00",
+    "title": "YCS Atlanta 2018 Event Table of Contents!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-2018-event-table-of-contents/",
+    "modified": "2018-02-18T19:21:04-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -378,9 +387,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta 2018 Event Table of Contents!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-2018-event-table-of-contents/",
-    "modified": "2018-02-18T19:21:04-08:00",
+    "title": "Welcome to YCS Atlanta!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/welcome-to-ycs-atlanta/",
+    "modified": "2018-02-17T08:43:35-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -396,9 +405,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Welcome to YCS Atlanta!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/welcome-to-ycs-atlanta/",
-    "modified": "2018-02-17T08:43:35-08:00",
+    "title": "YCS Atlanta 2018 First-Timers!",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-2018-first-timers/",
+    "modified": "2018-02-17T09:17:40-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
     "format": null,
@@ -414,24 +423,6 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "YCS Atlanta 2018 First-Timers!",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-2018-first-timers/",
-    "modified": "2018-02-17T09:17:40-08:00",
-    "kind": "news",
-    "event": "YCS Atlanta",
-    "format": null,
-    "slug": "2018-ycs-atlanta"
-  },
-  {
-    "title": "Top 4 Feature Match: Kamal Crooks-Valdez vs. Jeremy Mitchell",
-    "url": "https://yugiohblog.konami.com/2018/ycs/top-4-feature-match-kamal-crooks-valdez-vs-jeremy-mitchell/",
-    "modified": "2018-02-18T18:35:55-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta",
-    "format": null,
-    "slug": "2018-ycs-atlanta"
-  },
-  {
     "title": "YCS Atlanta: ATTACK OF THE GIANT CARDS!!",
     "url": "https://yugiohblog.konami.com/2018/ycs/ycs-atlanta-attack-of-the-giant-cards/",
     "modified": "2018-02-17T12:01:59-08:00",
@@ -441,9 +432,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Finals Feature Match: Dablessin Wilson vs. Jeremy Mitchell",
-    "url": "https://yugiohblog.konami.com/2018/ycs/finals-feature-match-dablessin-wilson-vs-jeremy-mitchell/",
-    "modified": "2018-02-18T19:04:18-08:00",
+    "title": "Top 4 Feature Match: Kamal Crooks-Valdez vs. Jeremy Mitchell",
+    "url": "https://yugiohblog.konami.com/2018/ycs/top-4-feature-match-kamal-crooks-valdez-vs-jeremy-mitchell/",
+    "modified": "2018-02-18T18:35:55-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -459,9 +450,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Round 1 Feature Match: Orelvis Lantigua vs. Zachary Clark",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-1-feature-match-orelvis-lantigua-vs-zachary-clark/",
-    "modified": "2018-02-17T11:45:35-08:00",
+    "title": "Finals Feature Match: Dablessin Wilson vs. Jeremy Mitchell",
+    "url": "https://yugiohblog.konami.com/2018/ycs/finals-feature-match-dablessin-wilson-vs-jeremy-mitchell/",
+    "modified": "2018-02-18T19:04:18-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -477,9 +468,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Round 1 Feature Match: Randell Platt vs. Logan Stewmon",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-1-feature-match-randell-platt-vs-logan-stewmon/",
-    "modified": "2018-02-17T12:39:56-08:00",
+    "title": "Round 1 Feature Match: Orelvis Lantigua vs. Zachary Clark",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-1-feature-match-orelvis-lantigua-vs-zachary-clark/",
+    "modified": "2018-02-17T11:45:35-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -495,9 +486,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Round 2 Feature Match: Raphael Neven vs. Josiah Miller",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-2-feature-match-raphael-neven-vs-josiah-miller/",
-    "modified": "2018-02-17T12:54:53-08:00",
+    "title": "Round 1 Feature Match: Randell Platt vs. Logan Stewmon",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-1-feature-match-randell-platt-vs-logan-stewmon/",
+    "modified": "2018-02-17T12:39:56-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -513,9 +504,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Round 2 Feature Match: Roland Fang vs. Joshua Johnson",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-2-feature-match-roland-fang-vs-joshua-johnson/",
-    "modified": "2018-02-17T13:18:30-08:00",
+    "title": "Round 2 Feature Match: Raphael Neven vs. Josiah Miller",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-2-feature-match-raphael-neven-vs-josiah-miller/",
+    "modified": "2018-02-17T12:54:53-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -531,9 +522,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Round 3 Feature Match: Earl Boone vs. Richard Moore",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-3-feature-match-earl-boone-vs-richard-moore/",
-    "modified": "2018-02-17T14:37:39-08:00",
+    "title": "Round 2 Feature Match: Roland Fang vs. Joshua Johnson",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-2-feature-match-roland-fang-vs-joshua-johnson/",
+    "modified": "2018-02-17T13:18:30-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -549,9 +540,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Round 4 Feature Match: Jeff Jones vs. Feliciano Vega",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-4-feature-match-jeff-jones-vs-feliciano-vega/",
-    "modified": "2018-02-17T14:56:06-08:00",
+    "title": "Round 3 Feature Match: Earl Boone vs. Richard Moore",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-3-feature-match-earl-boone-vs-richard-moore/",
+    "modified": "2018-02-17T14:37:39-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -567,9 +558,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Round 4 Feature Match: Noah Greene vs. Zetron Cakha",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-4-feature-match-noah-greene-vs-zetron-cakha/",
-    "modified": "2018-02-17T15:17:16-08:00",
+    "title": "Round 4 Feature Match: Jeff Jones vs. Feliciano Vega",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-4-feature-match-jeff-jones-vs-feliciano-vega/",
+    "modified": "2018-02-17T14:56:06-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -585,9 +576,9 @@
     "slug": "2018-ycs-atlanta"
   },
   {
-    "title": "Round 5 Feature Match: Ousama Chamem vs. Alexander Juneja",
-    "url": "https://yugiohblog.konami.com/2018/ycs/round-5-feature-match-ousama-chamem-vs-alexander-juneja/",
-    "modified": "2018-02-17T17:44:42-08:00",
+    "title": "Round 4 Feature Match: Noah Greene vs. Zetron Cakha",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-4-feature-match-noah-greene-vs-zetron-cakha/",
+    "modified": "2018-02-17T15:17:16-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
@@ -598,6 +589,15 @@
     "url": "https://yugiohblog.konami.com/2018/ycs/qq-whats-your-favorite-change-on-the-new-fl-list/",
     "modified": "2018-02-17T20:07:38-08:00",
     "kind": "news",
+    "event": "YCS Atlanta",
+    "format": null,
+    "slug": "2018-ycs-atlanta"
+  },
+  {
+    "title": "Round 5 Feature Match: Ousama Chamem vs. Alexander Juneja",
+    "url": "https://yugiohblog.konami.com/2018/ycs/round-5-feature-match-ousama-chamem-vs-alexander-juneja/",
+    "modified": "2018-02-17T17:44:42-08:00",
+    "kind": "feature",
     "event": "YCS Atlanta",
     "format": null,
     "slug": "2018-ycs-atlanta"

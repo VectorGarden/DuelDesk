@@ -306,6 +306,15 @@
     "slug": "2016-north-american-wcq"
   },
   {
+    "title": "Deck Analysis: Monarchs",
+    "url": "https://yugiohblog.konami.com/2016/championships/deck-analysis-monarchs/",
+    "modified": "2016-07-09T13:23:43-07:00",
+    "kind": "deck",
+    "event": "North America WCQ 2016",
+    "format": null,
+    "slug": "2016-north-american-wcq"
+  },
+  {
     "title": "3 vs. 3 Team Tournament Winners!",
     "url": "https://yugiohblog.konami.com/2016/championships/3-vs-3-team-tournament-winners-2/",
     "modified": "2016-07-10T17:53:02-07:00",
@@ -330,6 +339,15 @@
     "kind": "feature",
     "event": "North America WCQ 2016",
     "format": "Dragon Duel",
+    "slug": "2016-north-american-wcq"
+  },
+  {
+    "title": "Deck Analysis: Pendulums",
+    "url": "https://yugiohblog.konami.com/2016/championships/deck-analysis-pendulums/",
+    "modified": "2016-07-09T14:53:42-07:00",
+    "kind": "deck",
+    "event": "North America WCQ 2016",
+    "format": null,
     "slug": "2016-north-american-wcq"
   },
   {
@@ -360,6 +378,15 @@
     "slug": "2016-north-american-wcq"
   },
   {
+    "title": "Deck Analysis: Burning Abyss",
+    "url": "https://yugiohblog.konami.com/2016/championships/deck-analysis-burning-abyss/",
+    "modified": "2016-07-09T20:36:25-07:00",
+    "kind": "deck",
+    "event": "North America WCQ 2016",
+    "format": null,
+    "slug": "2016-north-american-wcq"
+  },
+  {
     "title": "Points Playoff Winner!",
     "url": "https://yugiohblog.konami.com/2016/championships/points-playoff-winner/",
     "modified": "2016-07-10T18:06:07-07:00",
@@ -382,6 +409,15 @@
     "url": "https://yugiohblog.konami.com/2016/championships/round-1-feature-match-scott-devoe-vs-andrew-calascione/",
     "modified": "2016-07-09T11:46:37-07:00",
     "kind": "feature",
+    "event": "North America WCQ 2016",
+    "format": null,
+    "slug": "2016-north-american-wcq"
+  },
+  {
+    "title": "Deck Analysis: Card of Demise",
+    "url": "https://yugiohblog.konami.com/2016/championships/deck-analysis-card-of-demise/",
+    "modified": "2016-07-09T21:39:01-07:00",
+    "kind": "deck",
     "event": "North America WCQ 2016",
     "format": null,
     "slug": "2016-north-american-wcq"
@@ -468,9 +504,9 @@
     "slug": "2016-north-american-wcq"
   },
   {
-    "title": "Deck Analysis: Monarchs",
-    "url": "https://yugiohblog.konami.com/2016/championships/deck-analysis-monarchs/",
-    "modified": "2016-07-09T13:23:43-07:00",
+    "title": "Top Tables Update: Round 5",
+    "url": "https://yugiohblog.konami.com/2016/championships/top-tables-update-round-5-13/",
+    "modified": "2016-07-09T18:22:35-07:00",
     "kind": "news",
     "event": "North America WCQ 2016",
     "format": null,
@@ -486,9 +522,9 @@
     "slug": "2016-north-american-wcq"
   },
   {
-    "title": "Deck Analysis: Pendulums",
-    "url": "https://yugiohblog.konami.com/2016/championships/deck-analysis-pendulums/",
-    "modified": "2016-07-09T14:53:42-07:00",
+    "title": "Round 6: Photo Gallery",
+    "url": "https://yugiohblog.konami.com/2016/championships/round-6-photo-gallery/",
+    "modified": "2016-07-09T19:03:26-07:00",
     "kind": "news",
     "event": "North America WCQ 2016",
     "format": null,
@@ -504,36 +540,9 @@
     "slug": "2016-north-american-wcq"
   },
   {
-    "title": "Top Tables Update: Round 5",
-    "url": "https://yugiohblog.konami.com/2016/championships/top-tables-update-round-5-13/",
-    "modified": "2016-07-09T18:22:35-07:00",
-    "kind": "news",
-    "event": "North America WCQ 2016",
-    "format": null,
-    "slug": "2016-north-american-wcq"
-  },
-  {
-    "title": "Round 6: Photo Gallery",
-    "url": "https://yugiohblog.konami.com/2016/championships/round-6-photo-gallery/",
-    "modified": "2016-07-09T19:03:26-07:00",
-    "kind": "news",
-    "event": "North America WCQ 2016",
-    "format": null,
-    "slug": "2016-north-american-wcq"
-  },
-  {
     "title": "Saturday Generation Duel Top 4!",
     "url": "https://yugiohblog.konami.com/2016/championships/saturday-generation-duel-top-4/",
     "modified": "2016-07-09T20:03:01-07:00",
-    "kind": "news",
-    "event": "North America WCQ 2016",
-    "format": null,
-    "slug": "2016-north-american-wcq"
-  },
-  {
-    "title": "Deck Analysis: Burning Abyss",
-    "url": "https://yugiohblog.konami.com/2016/championships/deck-analysis-burning-abyss/",
-    "modified": "2016-07-09T20:36:25-07:00",
     "kind": "news",
     "event": "North America WCQ 2016",
     "format": null,
@@ -552,15 +561,6 @@
     "title": "Top Tables Update: Round 6",
     "url": "https://yugiohblog.konami.com/2016/championships/top-tables-update-round-6-19/",
     "modified": "2016-07-09T21:15:19-07:00",
-    "kind": "news",
-    "event": "North America WCQ 2016",
-    "format": null,
-    "slug": "2016-north-american-wcq"
-  },
-  {
-    "title": "Deck Analysis: Card of Demise",
-    "url": "https://yugiohblog.konami.com/2016/championships/deck-analysis-card-of-demise/",
-    "modified": "2016-07-09T21:39:01-07:00",
     "kind": "news",
     "event": "North America WCQ 2016",
     "format": null,

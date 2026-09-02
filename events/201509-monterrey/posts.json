@@ -72,6 +72,15 @@
     "slug": "201509-monterrey"
   },
   {
+    "title": "YCS",
+    "url": "https://yugiohblog.konami.com/2015/ycs/ycs-monterrey-final-match/",
+    "modified": "2015-09-06T11:49:18-07:00",
+    "kind": "feature",
+    "event": "YCS Monterrey",
+    "format": null,
+    "slug": "201509-monterrey"
+  },
+  {
     "title": "And the winner is…",
     "url": "https://yugiohblog.konami.com/2015/ycs/and-the-winner-is-19/",
     "modified": "2015-09-06T12:42:06-07:00",
@@ -84,15 +93,6 @@
     "title": "Welcome to Day 2 of YCS",
     "url": "https://yugiohblog.konami.com/2015/ycs/welcome-to-day-2-of-ycs-monterrey-top-16/",
     "modified": "2015-09-06T09:52:26-07:00",
-    "kind": "news",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/ycs-monterrey-final-match/",
-    "modified": "2015-09-06T11:49:18-07:00",
     "kind": "news",
     "event": "YCS Monterrey",
     "format": null,
