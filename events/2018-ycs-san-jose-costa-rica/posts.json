@@ -162,15 +162,6 @@
     "slug": "2018-ycs-san-jose-costa-rica"
   },
   {
-    "title": "YCS San Jose, Costa Rica: Final Match",
-    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-san-jose-costa-rica-final-match/",
-    "modified": "2018-03-18T17:03:07-07:00",
-    "kind": "feature",
-    "event": "YCS San Jose",
-    "format": null,
-    "slug": "2018-ycs-san-jose-costa-rica"
-  },
-  {
     "title": "YCS San Jose, Costa Rica: Complete Deck Breakdown",
     "url": "https://yugiohblog.konami.com/2018/ycs/ycs-san-jose-costa-rica-complete-deck-breakdown/",
     "modified": "2018-03-18T11:56:12-07:00",
@@ -228,6 +219,15 @@
     "title": "YCS San Jose, Costa Rica: Top 16",
     "url": "https://yugiohblog.konami.com/2018/ycs/ycs-san-jose-costa-rica-top-16/",
     "modified": "2018-03-18T14:16:28-07:00",
+    "kind": "news",
+    "event": "YCS San Jose",
+    "format": null,
+    "slug": "2018-ycs-san-jose-costa-rica"
+  },
+  {
+    "title": "YCS San Jose, Costa Rica: Final Match",
+    "url": "https://yugiohblog.konami.com/2018/ycs/ycs-san-jose-costa-rica-final-match/",
+    "modified": "2018-03-18T17:03:07-07:00",
     "kind": "news",
     "event": "YCS San Jose",
     "format": null,

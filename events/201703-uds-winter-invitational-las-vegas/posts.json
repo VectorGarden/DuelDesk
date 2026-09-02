@@ -261,15 +261,6 @@
     "slug": "201703-uds-winter-invitational-las-vegas"
   },
   {
-    "title": "Ultimate Duelist Series Invitational",
-    "url": "https://yugiohblog.konami.com/2017/uds/201703-uds-winter-invitational-las-vegas/ultimate-duelist-series-invitational-winter-2017-final-match/",
-    "modified": "2017-03-19T18:37:29-07:00",
-    "kind": "feature",
-    "event": "Ultimate Duelist Series Invitational",
-    "format": null,
-    "slug": "201703-uds-winter-invitational-las-vegas"
-  },
-  {
     "title": "YCS Guatemala City, Guatemala: OTS Tournament Series Winners",
     "url": "https://yugiohblog.konami.com/2017/ycs/ycs-guatemala-city-guatemala-ots-tournament-series-winners/",
     "modified": "2017-03-19T17:12:41-07:00",
@@ -399,6 +390,15 @@
     "title": "Ultimate Duelist Series Invitational",
     "url": "https://yugiohblog.konami.com/2017/uds/201703-uds-winter-invitational-las-vegas/ultimate-duelist-series-invitational-winter-2017-top-16-photo-gallery/",
     "modified": "2017-03-19T16:14:06-07:00",
+    "kind": "news",
+    "event": "Ultimate Duelist Series Invitational",
+    "format": null,
+    "slug": "201703-uds-winter-invitational-las-vegas"
+  },
+  {
+    "title": "Ultimate Duelist Series Invitational",
+    "url": "https://yugiohblog.konami.com/2017/uds/201703-uds-winter-invitational-las-vegas/ultimate-duelist-series-invitational-winter-2017-final-match/",
+    "modified": "2017-03-19T18:37:29-07:00",
     "kind": "news",
     "event": "Ultimate Duelist Series Invitational",
     "format": null,

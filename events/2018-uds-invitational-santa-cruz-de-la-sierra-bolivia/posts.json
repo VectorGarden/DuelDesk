@@ -189,15 +189,6 @@
     "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
   },
   {
-    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Final Match",
-    "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-final-match/",
-    "modified": "2018-03-04T12:22:17-08:00",
-    "kind": "feature",
-    "event": "UDS Invitational Santa Cruz de la Sierra",
-    "format": null,
-    "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
-  },
-  {
     "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Complete Deck Breakdown",
     "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-complete-deck-breakdown/",
     "modified": "2018-03-04T08:02:11-08:00",
@@ -216,9 +207,9 @@
     "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
   },
   {
-    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Country Breakdown",
-    "url": "https://yugiohblog.konami.com/2018/ycs/uds-invitational-santa-cruz-de-la-sierra-bolivia-country-breakdown/",
-    "modified": "2018-03-03T15:31:38-08:00",
+    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Final Match",
+    "url": "https://yugiohblog.konami.com/2018/uds/uds-invitational-santa-cruz-de-la-sierra-bolivia-final-match/",
+    "modified": "2018-03-04T12:22:17-08:00",
     "kind": "news",
     "event": "UDS Invitational Santa Cruz de la Sierra",
     "format": null,
@@ -240,6 +231,15 @@
     "kind": "result",
     "event": "UDS Invitational Santa Cruz de la Sierra",
     "format": "Dragon Duel",
+    "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
+  },
+  {
+    "title": "UDS Invitational Santa Cruz de la Sierra, Bolivia: Country Breakdown",
+    "url": "https://yugiohblog.konami.com/2018/ycs/uds-invitational-santa-cruz-de-la-sierra-bolivia-country-breakdown/",
+    "modified": "2018-03-03T15:31:38-08:00",
+    "kind": "news",
+    "event": "UDS Invitational Santa Cruz de la Sierra",
+    "format": null,
     "slug": "2018-uds-invitational-santa-cruz-de-la-sierra-bolivia"
   }
 ]
