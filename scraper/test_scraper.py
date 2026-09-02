@@ -2632,6 +2632,46 @@ class TestChampion(unittest.TestCase):
         self.assertFalse(_asked_about("dragon duel", "Genesys"))
         self.assertFalse(_asked_about("dragon duel", None))
 
+    def test_a_preview_is_not_an_announcement(self):
+        # The 2015 South American WCQ is headed "Only two more rounds before we
+        # have a new South American Champion!" and the body under it is a
+        # pairings table. Both of its Duelists were named, so it happened to
+        # settle nothing -- but a preview naming one of them would have crowned
+        # somebody two rounds before they won anything.
+        from winners import announces_a_winner, champion
+        title = "Only two more rounds before we have a new South American Champion!"
+        text = ("There are only two more rounds left before we crown the new South "
+                "American Champion. Table 1: Calachua Curasi, Hubert Dante vs. "
+                "Delgado Portilla, Gerardo Jesus")
+        self.assertFalse(announces_a_winner(title, text))
+        # And with only one of them in it, which is the dangerous shape.
+        self.assertIsNone(champion(
+            ["Hubert Dante Calachua Curasi", "Somebody Else Entirely"],
+            [self.post(title, "Two rounds to go before we crown a Champion. "
+                              "Table 1: Calachua Curasi, Hubert Dante vs. a bye")]))
+
+    def test_a_heading_that_gives_nothing_away_is_read_further(self):
+        # The heading of a preview is not always the giveaway. "And the winner
+        # is..." is the blog's stock title and it heads previews too, so the
+        # opening has to be read as well -- which is where "before we crown"
+        # sits.
+        from winners import announces_a_winner
+        self.assertFalse(announces_a_winner(
+            "And the winner is…",
+            "Two more rounds to go before we crown a new Champion. Table 1: ..."))
+
+    def test_a_real_winner_post_is_not_hedged_away(self):
+        # HEDGE is not reused for this: it holds "reigning", which a winner
+        # post says often enough, and "will", and this is asked of every
+        # announcement rather than of one sentence.
+        from winners import announces_a_winner
+        for title, text in (
+                ("And the winner is…", "Ann Alpha beat the reigning champion in the Finals."),
+                ("And the winner is…", "Ann Alpha will receive the trophy and a prize card."),
+                ("YCS Denver: And the Winner is…",
+                 "YCS Denver is finished, and we finally have a winner!")):
+            self.assertTrue(announces_a_winner(title, text), title)
+
     def test_a_greeting_is_not_an_announcement(self):
         # "Welcoming the National Champions of South America" greets Duelists
         # who won somewhere else. It is not this event's result.
