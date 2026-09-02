@@ -498,10 +498,18 @@ a.post__t--jump:hover,a.post__t--jump:focus-visible{text-decoration:underline do
 .win__f{font:500 .72rem var(--mono); color:var(--text-3)}
 .win__w{font-family:var(--mono)}
 
-/* The champion, marked where the tables name them. Sized down and nudged up
-   so a row of names still reads as a row: the crown is an aside on the name,
-   not a second column. */
-.crown{font-size:.78em; line-height:1; vertical-align:.08em; margin-left:.15em}
+/* The champion, marked where the tables name them. The same badge the winners
+   page uses to count a repeat winner, so one visual language says "this
+   Duelist, and something about their record" in both places.
+
+   Sized down and nudged up so a row of names still reads as a row: the badge
+   is an aside on the name, not a second column. */
+.crown{
+  font:600 .62rem/1 var(--mono); letter-spacing:.06em; text-transform:uppercase;
+  color:var(--accent-ink); background:var(--accent);
+  padding:.14rem .38rem; border-radius:999px;
+  margin-left:.35em; vertical-align:.1em; white-space:nowrap;
+}
 
 /* Who won. Sits between the round's heading and its tables, so it reads as part
    of the round rather than as a banner over the panel. */

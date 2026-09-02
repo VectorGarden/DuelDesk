@@ -1384,14 +1384,15 @@ function championIsTraceable(fmt){
   return derived;
 }
 
-/* The crown's markup, or nothing. Never colour alone: the glyph is hidden
-   from assistive technology and the word it stands for is read instead. */
+/* The mark's markup, or nothing. A word rather than a glyph: an emoji is the
+   one mark whose appearance the page does not control, and a crown drawn at
+   this size reads as clutter in a column of names. The word is also its own
+   accessible name, so nothing here depends on colour or shape. */
 function crown(name){
   if (!name || !championShown()) return '';
   const fmt = formatOf(activeFormat);
   if (!fmt || fmt.champion !== name || !championIsTraceable(fmt)) return '';
-  return ` <span class="crown" title="Won this tournament"><span aria-hidden="true">👑</span>`
-       + `<span class="visually-hidden">champion</span></span>`;
+  return ` <span class="crown">champion</span>`;
 }
 
 /* A name as the tables print it, with the crown where it belongs. */

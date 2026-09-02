@@ -203,16 +203,16 @@ test('and one on the champion once it has', async (t) => {
   assert.ok(crowns(page) > 0, 'the champion is named in the round and not marked');
 });
 
-test('the crown says what it means, not just how it looks', async (t) => {
-  // Colour and shape are never the only signal: the glyph is hidden from
-  // assistive technology and the word it stands for is read instead.
+test('the mark says what it means, not just how it looks', async (t) => {
+  // Colour and shape are never the only signal, so the mark is the word
+  // itself. Nothing here needs an accessible name bolted on beside a glyph.
   const page = await page4();
   t.after(() => page.close());
   page.run(`selectRound(ROUNDS[ROUNDS.length-1].id)`);
   page.run(`document.querySelector('#champion [data-champ]').click()`);
   const el = page.$('#round-body .crown');
-  assert.match(el.textContent, /champion/);
-  assert.equal(el.querySelector('[aria-hidden="true"]').getAttribute('aria-hidden'), 'true');
+  assert.match(el.textContent.trim(), /^champion$/i,
+    'the badge has to read as a word, not as a picture of one');
 });
 
 test('nobody is crowned when the builder could not tell the name apart', async (t) => {
