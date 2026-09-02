@@ -630,3 +630,10 @@ footer{border-top:1px solid var(--line); background:var(--bg-2); padding-block:2
   padding:0 0 0 .9rem; border-left:1px solid var(--line)}
 .win__roster li{display:flex; align-items:baseline; gap:.55rem; flex-wrap:wrap;
   padding:.22rem 0}
+/* The Duelist the search was looking for. Marked, and also said: the row's own
+   name did not answer the query, so without this the row looks like a mistake
+   to anyone who cannot see the highlight. */
+.win__roster li.roster__hit{
+  background:var(--surface-2); border-radius:var(--r-md);
+  margin-left:-.4rem; padding-left:.4rem; padding-right:.4rem;
+}

@@ -68,7 +68,14 @@ const when = (iso) => {
 };
 
 const hit = (...fields) =>
-  !query || fields.filter(Boolean).join(' ').toLowerCase().includes(query);
+  !query || matches(...fields);
+
+/* Whether these fields answer the query, where "no query" is not an answer.
+   hit() says yes to everything when nothing has been typed, which is right for
+   deciding whether to show a row and wrong for deciding whether a name is why
+   the row is showing. */
+const matches = (...fields) =>
+  !!query && fields.filter(Boolean).join(' ').toLowerCase().includes(query);
 
 /* How many events each name in the archive has won. Worth saying: the same
    names come back, and a list that did not say so would be hiding the most
@@ -94,6 +101,26 @@ function winsByName(rows){
 /* What to count a Duelist under: the archive's name for them where the blog
    wrote them two ways, and otherwise the only name there is. */
 const idOf = (who) => who.person || who.name;
+
+/* Which Duelists on a team are why their row is showing.
+
+   A team enters under a team's name, so the Duelists who won on it are not on
+   the row at all -- they are inside the roster, which is closed until asked
+   for. Seventeen of the archive's twenty-eight roster Duelists have never won
+   a singles event, so before this the search could not find them at all, and
+   the other eleven were findable only under some other event they happened to
+   win alone: a result that looks complete and is not.
+
+   A team has no deck of its own either -- three Duelists do -- so a deck a
+   team played was unfindable for the same reason. */
+const matchedMembers = (r) =>
+  (r.members ?? []).filter(m => matches(m.name, withoutInitials(m.name), m.person, m.deck));
+
+/* Whether a row's roster is showing: because the reader asked for it, or
+   because the search found somebody in it. A row that answers a search on a
+   name the reader cannot see reads as a bug, so the answer is on screen with
+   the question. */
+const showRoster = (r) => open.has(rosterKey(r)) || matchedMembers(r).length > 0;
 
 /* The same name without its middle initials, so one Duelist is found under
    either spelling the blog used. Searching "Steven Trifunoski" should not
@@ -144,8 +171,9 @@ function render(){
   renderFormatFilters();
   const rows = WINS.filter(r =>
     (formatFilter === 'all' || formatOf(r) === formatFilter)
-    && hit(r.event, r.name, withoutInitials(r.name), r.person,
-           r.deck, r.format, r.location));
+    && (hit(r.event, r.name, withoutInitials(r.name), r.person,
+            r.deck, r.format, r.location)
+        || matchedMembers(r).length > 0));
 
   countEl.textContent = rows.length
     ? `${rows.length} winner${rows.length > 1 ? 's' : ''}`
@@ -167,7 +195,7 @@ function render(){
         ${won > 1 ? `<span class="win__x" title="Events won in this archive">${esc(won)}&times;</span>` : ''}
         ${r.deck ? `<span class="win__d">${esc(r.deck)}</span>` : ''}
         ${r.members?.length ? `<button type="button" class="roster-open" data-roster="${esc(i)}"
-            aria-expanded="${String(open.has(rosterKey(r)))}" aria-controls="roster-${esc(i)}"
+            aria-expanded="${String(showRoster(r))}" aria-controls="roster-${esc(i)}"
             >Roster</button>` : ''}
       </div>
       <div class="win__at">
@@ -177,15 +205,22 @@ function render(){
         ${r.location ? `<span class="win__l">${esc(r.location)}</span>` : ''}
       </div>
       ${r.members?.length ? `<ul class="win__roster" id="roster-${esc(i)}"${
-        open.has(rosterKey(r)) ? '' : ' hidden'}>${r.members.map(m => {
+        showRoster(r) ? '' : ' hidden'}>${(() => {
+          const found = new Set(matchedMembers(r).map(m => m.name));
+          return r.members.map(m => {
           const mw = wonBy.get(idOf(m)) || 1;
-          return `<li>
-            <span class="roster__n">${esc(m.name)}</span>
+          /* Said as well as shown. A highlight alone would leave a reader who
+             cannot see it wondering why this row answered their search. */
+          const why = found.has(m.name)
+            ? `<span class="visually-hidden"> matches your search</span>` : '';
+          return `<li${found.has(m.name) ? ' class="roster__hit"' : ''}>
+            <span class="roster__n">${esc(m.name)}${why}</span>
             ${mw > 1 ? `<span class="win__x" title="Events won in this archive"
               >${esc(mw)}&times;</span>` : ''}
             ${m.deck ? `<span class="roster__d">${esc(m.deck)}</span>` : ''}
           </li>`;
-        }).join('')}</ul>` : ''}
+        }).join('');
+        })()}</ul>` : ''}
     </li>`;
   }).join('') + `</ol>`;
 }

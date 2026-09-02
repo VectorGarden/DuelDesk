@@ -293,3 +293,79 @@ test('and found under either spelling', async (t) => {
     assert.equal(rows(page).length, 2, `searching ${JSON.stringify(q)} found one row, not both`);
   }
 });
+
+/* ── Finding a Duelist who won on a team ─────────────────────────────────── */
+
+const search = (page, q) => page.run(`query = ${JSON.stringify(q.toLowerCase())}; render();`);
+
+test('a Duelist is found by the roster they won on', async (t) => {
+  // A team enters under the team's name, so its Duelists are not on the row at
+  // all. Seventeen of the archive's twenty-eight roster Duelists have never
+  // won a singles event, and the search could not find them at all.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  search(page, 'Ruben Andres Penaranda');
+  assert.deepEqual(names(page), ['Better Have It']);
+});
+
+test('and the roster opens, so the row says why it is here', async (t) => {
+  // A row answering a search on a name the reader cannot see reads as a bug.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  search(page, 'Ruben Andres Penaranda');
+  const box = page.$('.win__roster');
+  assert.equal(box.hidden, false);
+  assert.equal(page.$(`[data-roster]`).getAttribute('aria-expanded'), 'true');
+});
+
+test('and the Duelist who matched is the one marked', async (t) => {
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  search(page, 'Ruben Andres Penaranda');
+  const marked = page.$$('.roster__hit .roster__n').map((n) => n.textContent);
+  assert.equal(marked.length, 1);
+  assert.match(marked[0], /^Ruben Andres Penaranda/);
+});
+
+test('the mark is said, not only shown', async (t) => {
+  // The row's own name did not answer the query. Without this, a reader who
+  // cannot see the highlight is left wondering why this row is in the list.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  search(page, 'Ruben Andres Penaranda');
+  assert.match(page.$('.roster__hit .roster__n').textContent, /matches your search/);
+});
+
+test('a deck a team played is findable too', async (t) => {
+  // A team has no deck of its own -- three Duelists do -- so a team's decks
+  // were unfindable for the same reason its Duelists were.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  search(page, 'Purrely');
+  assert.deepEqual(names(page), ['Better Have It']);
+});
+
+test('rosters stay shut until something asks for them', async (t) => {
+  // Opening every roster on every render would make the list unreadable, and
+  // the reader has asked for nothing yet.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  for (const box of page.$$('.win__roster')) assert.equal(box.hidden, true);
+});
+
+test('a search that matches the team itself opens nothing', async (t) => {
+  // The row already answers the query on its own name; there is nothing
+  // hidden that needs showing.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  search(page, 'Ares');
+  const shown = rows(page).find((r) => r.querySelector('.win__n').textContent === 'Ares');
+  assert.equal(shown.querySelector('.win__roster').hidden, true);
+});
+
+test('the count still counts rows, not Duelists', async (t) => {
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  search(page, 'Repeat Winner');
+  assert.match(page.$('#wcount').textContent, /^2 winners/);
+});
