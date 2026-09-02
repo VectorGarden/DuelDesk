@@ -38,7 +38,7 @@ sys.path.insert(0, str(ROOT / "scraper"))
 from fetch import Fetcher, SITEMAP                         # noqa: E402
 from index import (assign_events, parse_post_sitemap,      # noqa: E402
                    parse_sitemap_index)
-from parse import detect_kind                              # noqa: E402
+from parse import detect_kind, lead                        # noqa: E402
 import run as R                                            # noqa: E402
 
 CHECKER = ROOT / ".github/scripts/check-rounds.py"
@@ -98,7 +98,9 @@ def main() -> int:
     for sm in parse_sitemap_index(f.get(SITEMAP)):
         entries += parse_post_sitemap(f.get(sm))
     assigned: dict[str, list[dict]] = {}
-    for rec in assign_events(entries):
+    # With the reader, because the run under test has one: an event whose
+    # winner post is placed by its text has to be gated like any other.
+    for rec in assign_events(entries, read=lambda url: lead(f.get(url))):
         if rec["event"] in slugs:
             assigned.setdefault(rec["event"], []).append(
                 {"title": "", "url": rec["url"], "modified": rec["lastmod"],
