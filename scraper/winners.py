@@ -337,18 +337,46 @@ def only_by_surname(field: list[str], text: str) -> str | None:
     return found[0][0] if len(found) == 1 else None
 
 
+def named_in_full(name: str, text: str) -> int:
+    """Where a recorded name is named, when the candidates are the whole field.
+
+    named_in asks for two of a name's words, which is the right question of a
+    Top 8: eight names, every one of them certainly in the event, and the blog
+    shortening surnames as it does. Asked instead of everybody who played, the
+    same question starts finding names that are not there. The 250th YCS in Los
+    Angeles fielded a Dominic Frank De los Angeles, and "here at the 250th YCS
+    in Los Angeles" holds two words of him -- so the recap of last year's
+    winner read as this year's crowning.
+
+    So the forename has to be there too. The blog drops a second surname often
+    and a forename almost never -- "James Markowitz" for "James Allen Sun
+    Markowitz" -- and a host city is not a forename.
+    """
+    at = named_in(name, text)
+    if at < 0:
+        return at
+    words = [w for w in re.split(r"[^A-Za-z]+", name.lower()) if len(w) > 1]
+    if words and not re.search(rf"\b{re.escape(words[0])}\b", text.lower()):
+        return -1
+    return at
+
+
 def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
-             rosters: dict[str, list[str]] | None = None) -> str | None:
+             rosters: dict[str, list[str]] | None = None,
+             whole_field: bool = False) -> str | None:
     """Which of these Duelists the coverage says won, or None.
 
     `candidates` are the Duelists in the deepest round of the cut that was
-    published. `posts` are the event's result posts, each a dict with a title
+    published -- or, where no cut was, everybody who played, and `whole_field`
+    says so. A wider list is a looser question, so it is asked more strictly:
+    see named_in_full. `posts` are the event's result posts, each a dict with a title
     and the opening of its text.
 
     None is a real answer and the common one. An event whose winner post was
-    never published, or whose cut is not in the archive, has no champion here
+    never published, or that names nobody who played, has no champion here
     rather than a guess at one.
     """
+    named_here = named_in_full if whole_field else named_in
     claimed = set()
     for post in posts:
         title, body = post.get("title") or "", post.get("text") or ""
@@ -385,7 +413,7 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
         # post that says "defeated" still reads the right way round.
         def where(name: str, hay: str) -> int:
             found = [at for who in [name] + list((rosters or {}).get(name, []))
-                     if (at := named_in(who, hay)) >= 0]
+                     if (at := named_here(who, hay)) >= 0]
             return min(found) if found else -1
 
         named = sorted((at, name) for name in candidates
@@ -400,8 +428,10 @@ def champion(candidates: list[str], posts: list[dict], fmt: str | None = None,
         named = [(at, n) for at, n in named
                  if not any(_bare(n) != other and _bare(n) in other for other in inside)]
         # Nobody at all, and one surname in the field is in the text. The blog
-        # shortens a forename oftener than it shortens a surname.
-        if not named and (lone := only_by_surname(candidates, text)):
+        # shortens a forename oftener than it shortens a surname. Not of the
+        # whole field, where a surname on its own is the loosest question of
+        # all and hundreds of names are being asked it.
+        if not named and not whole_field and (lone := only_by_surname(candidates, text)):
             named = [(text.lower().find(surname(lone)), lone)]
         if len(named) == 1:
             claimed.add(named[0][1])

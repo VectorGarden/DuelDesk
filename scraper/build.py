@@ -292,7 +292,12 @@ def round_key(post) -> tuple[str, Any]:
 #  52 The name a deck is called, where the coverage wrote another. A
 #     curated table: engine order is meaningful, so only the spellings
 #     somebody who plays the game has settled are folded.
-BUILD_VERSION = 52
+#  53 An event that published no cut may still have published its winner.
+#     Where there is no bracket to ask, the whole field is asked instead,
+#     and asked more strictly: the forename has to be there, because two
+#     words of a long name are easy to find by accident among hundreds.
+#     Four tournaments were crowned by this, two of them Julien Leo Kehon's.
+BUILD_VERSION = 53
 
 
 @dataclass
@@ -1157,12 +1162,18 @@ def build_format(name: str | None, sources: list[Source], *,
     # both tournaments, because each asks only about its own cut: a post naming
     # nobody in this bracket claims nobody here.
     # A team is named by its Duelists, not by the name it entered under.
-    won_by = champion_named(cut_finalists(rounds),
+    # Whoever the cut named, or everybody who played where no cut was
+    # published at all. A tournament that ran a cut and never posted it still
+    # posts its winner, and Julien Leo Kehon's two 2026 YCS wins were both
+    # written up plainly and neither counted.
+    finalists = cut_finalists(rounds)
+    won_by = champion_named(finalists or whole_field(rounds),
                             [{"title": s.post.title, "text": s.post.lead,
                               "kind": s.post.kind}
                              for s in list(sources) + list(announcements)
                              if s.post.lead],
-                            name, rosters=cut_rosters(rounds))
+                            name, rosters=cut_rosters(rounds),
+                            whole_field=not finalists)
     # What one entrant is. A Team YCS ranks teams of three, so "389 Duelists"
     # would be 389 teams under the wrong noun -- and the page has no way to know
     # from the rows themselves, because a team match reads exactly like a match.
@@ -1188,6 +1199,18 @@ def cut_finalists(rounds: list[dict]) -> list[str]:
         return []
     return [row[side] for row in played[-1]["pairings"]
             for side in ("a", "b") if row.get(side)]
+
+
+def whole_field(rounds: list[dict]) -> list[str]:
+    """Everybody who played, for an event that published no cut.
+
+    The last resort, and only that. Asking a winner post which of two hundred
+    names it mentions is the loose question that produced wrong champions, so
+    it is asked only where the tight one cannot be -- and asked more strictly
+    when it is. See named_in_full.
+    """
+    return sorted({row[side] for r in rounds for row in (r.get("pairings") or [])
+                   for side in ("a", "b") if row.get(side)})
 
 
 def cut_rosters(rounds: list[dict]) -> dict[str, list[str]]:

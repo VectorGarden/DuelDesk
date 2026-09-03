@@ -3864,6 +3864,98 @@ class TestChampionInTheBuild(unittest.TestCase):
             ("R11", "Swiss", [("A One", "B Two"), ("C Three", "D Four")]),
             ("R12", "Swiss", [("A One", "C Three")]))), [])
 
+    def test_the_field_is_asked_where_no_cut_was_published(self):
+        # YCS Guatemala City and YCS Cartagena both ran twelve rounds, never
+        # published a bracket, and both posted "Congratulations to Julien Leo
+        # Kehon ... to become our YCS Champion!" With nothing to ask, neither
+        # counted.
+        from build import whole_field
+        self.assertEqual(whole_field(self.rounds(
+            ("R11", "Swiss", [("A One", "B Two"), ("C Three", "D Four")]),
+            ("R12", "Swiss", [("A One", "C Three")]))),
+            ["A One", "B Two", "C Three", "D Four"])
+
+    def test_an_event_with_no_cut_is_crowned_from_its_field(self):
+        # Through the builder, because the fallback is a decision the call site
+        # makes and a helper that works alone proves nothing about it.
+        from build import build_event
+        swiss = [s for s in _sources() if "top8" not in s.url]
+        ev = build_event("YCS Montréal",
+                         swiss + [self.announcement(
+                             "Congratulations to Aaron Coy Stainrod, who used "
+                             "a Branded Deck to become our YCS Champion!")],
+                         updated="2026-08-16T19:10:00Z")
+        adv = next(f for f in ev["formats"] if f["format"] == "Advanced")
+        self.assertEqual(adv["champion"], "Aaron Coy Stainrod")
+
+    def test_a_place_name_does_not_crown_the_field_through_the_builder(self):
+        # The 250th YCS's failure, in the fixture: Montréal's field holds a
+        # Malcolm Thomas La Prairie Mcswiggan, and La Prairie is a suburb of
+        # Montréal. Two words of a name standing together is the name, which is
+        # the right question of a Top 8 and the wrong one of nine hundred
+        # Duelists -- so where the field is the candidates, the strict question
+        # has to be the one the builder asks.
+        from build import build_event
+        swiss = [s for s in _sources() if "top8" not in s.url]
+        ev = build_event("YCS Montréal",
+                         swiss + [self.announcement(
+                             "After 12 Rounds of competition here at YCS "
+                             "Montréal in La Prairie, we have finally crowned "
+                             "our winner!")],
+                         updated="2026-08-16T19:10:00Z")
+        adv = next(f for f in ev["formats"] if f["format"] == "Advanced")
+        self.assertIsNone(adv["champion"])
+
+    def test_a_format_with_a_cut_is_still_asked_the_loose_question(self):
+        # The fallback is the last resort and only that: a format that
+        # published a bracket is asked about its bracket, on the terms a
+        # bracket earns. Eight names can be asked which of them a lone surname
+        # is, and Genesys's champion is crowned here by "Gangapersaud" alone.
+        from build import build_event
+        ev = build_event("YCS Montréal",
+                         _sources() + [self.announcement(
+                             "Congratulations to Gangapersaud, our newest "
+                             "YCS Champion!")],
+                         updated="2026-08-16T19:10:00Z")
+        gen = next(f for f in ev["formats"] if f["format"] == "Genesys")
+        self.assertEqual(gen["champion"], "Anil Gangapersaud")
+
+    def test_a_host_city_is_not_a_duelist(self):
+        # The 250th YCS in Los Angeles fielded a Dominic Frank De los Angeles.
+        # Two words of a name standing together is the name -- the right
+        # question of a Top 8 -- and "here at the 250th YCS in Los Angeles"
+        # answers it, so a recap of last year's winner read as this year's
+        # crowning. Against the whole field the forename is wanted too.
+        from winners import champion
+        post = {"title": "And The Winner Is…", "kind": "result",
+                "text": "After 18 Rounds of competition here at the 250th YCS "
+                        "in Los Angeles, we have finally crowned our winner!"}
+        self.assertIsNone(champion(["Dominic Frank De los Angeles", "Bo Peep"],
+                                   [post], whole_field=True))
+
+    def test_a_shortened_surname_still_names_its_duelist(self):
+        # What the forename rule must not cost: the blog drops a second
+        # surname often, and "James Markowitz" is how it wrote YCS Merida's
+        # champion James Allen Sun Markowitz.
+        from winners import champion
+        post = {"title": "And The Winner Is…", "kind": "result",
+                "text": "Congratulations to James Markowitz who used a "
+                        "Mitsurugi Yummy Deck to become our newest YCS Champion!"}
+        self.assertEqual(champion(["James Allen Sun Markowitz", "Bo Peep"],
+                                  [post], whole_field=True),
+                         "James Allen Sun Markowitz")
+
+    def test_a_surname_alone_does_not_crown_the_whole_field(self):
+        # A surname on its own is the loosest question there is, and it is
+        # asked of a cut because a cut is eight names. Hundreds of names is
+        # not the list to ask it of.
+        from winners import champion
+        post = {"title": "And The Winner Is…", "kind": "result",
+                "text": "Congratulations to Markowitz, our newest YCS Champion!"}
+        cands = ["James Allen Sun Markowitz", "Bo Peep"]
+        self.assertEqual(champion(cands, [post]), "James Allen Sun Markowitz")
+        self.assertIsNone(champion(cands, [post], whole_field=True))
+
     def test_a_cut_round_with_no_pairings_is_not_the_deepest(self):
         # The bracket is often published a round further than the pairings are.
         from build import cut_finalists
