@@ -6041,6 +6041,48 @@ class TestARegistrationNumberIsNotADeck(unittest.TestCase):
         self.assertEqual(_prose_side("Aaron Furman (Metalfoes)")["deck"], "Metalfoes")
 
 
+class TestTheDeckColumnIsTheOneHeadedDeck(unittest.TestCase):
+    """Which cell holds the deck, when the side has more than two."""
+
+    def read(self, header, row):
+        from parse import parse_table
+        return parse_table(_page("Round 5 Pairings", header, [row]))
+
+    HEAD = ["Table", "Duelist 1 Name", "Duelist 1 Points", "Duelist 1 Deck Type",
+            "vs.", "Duelist 2 Name", "Duelist 2 Points", "Duelist 2 Deck Type"]
+
+    def test_a_points_column_between_them_is_not_the_deck(self):
+        # The 300th YCS heads its Genesys rounds this way, and taking the cell
+        # after the name took the points: 186 rows of that event were
+        # published with a Duelist's score as their deck -- "6", "9", "12".
+        t = self.read(self.HEAD,
+                      ["6001", "Samuel Nicholas Slone", "12", "Vanquish Soul",
+                       "vs.", "Joshua Adam Friedman", "12", "Shaddoll Dracotail"])
+        row = t.rows[0]
+        self.assertEqual(row["a"]["deck"], "Vanquish Soul")
+        self.assertEqual(row["b"]["deck"], "Shaddoll Dracotail")
+
+    def test_and_the_points_are_not_part_of_the_name(self):
+        t = self.read(self.HEAD,
+                      ["6001", "Samuel Nicholas Slone", "12", "Vanquish Soul",
+                       "vs.", "Joshua Adam Friedman", "12", "Shaddoll Dracotail"])
+        self.assertEqual(t.rows[0]["a"]["name"], "Samuel Nicholas Slone")
+        self.assertEqual(t.rows[0]["b"]["name"], "Joshua Adam Friedman")
+
+    def test_the_ordinary_two_column_side_is_unchanged(self):
+        t = self.read(["Table", "Duelist 1", "Deck", "vs.", "Duelist 2", "Deck"],
+                      ["1", "Aaron Furman", "Metalfoes", "vs.", "Bo Peep", "Kewl Tune"])
+        self.assertEqual(t.rows[0]["a"], {"name": "Aaron Furman", "region": None,
+                                          "deck": "Metalfoes"})
+
+    def test_a_side_with_no_deck_column_keeps_its_whole_name(self):
+        t = self.read(["Table", "P1 First Name", "P1 Last Name", "vs.",
+                       "P2 First Name", "P2 Last Name"],
+                      ["1", "Aaron", "Furman", "vs.", "Bo", "Peep"])
+        self.assertEqual(t.rows[0]["a"]["name"], "Aaron Furman")
+        self.assertIsNone(t.rows[0]["a"]["deck"])
+
+
 class TestSpelledOutNames(unittest.TestCase):
     """What the older slugs write out in full."""
 

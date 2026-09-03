@@ -480,6 +480,21 @@ def detect_kind(text: str) -> str:
 _NOT_A_NAME = re.compile(r"(winner|result|score|record|outcome|deck)\b", re.I)
 
 
+# The column that holds the deck, wherever it sits. A side is not always
+# "name then deck": the 300th YCS heads its Genesys rounds
+#
+#   Table | Duelist 1 Name | Duelist 1 Points | Duelist 1 Deck Type | vs. | ...
+#
+# and taking the cell after the name took the points, so 186 rows of that
+# event were published with a Duelist's score as their deck -- "6", "9", "12".
+_DECK_COL = re.compile(r"\bdecks?\b", re.I)
+
+# And the columns beside it that are about the Duelist without being their
+# name. Searched rather than matched from the start, because these headings
+# are written "Duelist 1 Points" as often as "Points".
+_ABOUT_NOT_NAMED = re.compile(r"\b(points?|record|score|result|standing)\b", re.I)
+
+
 _VS_CELL = ("vs.", "vs")
 
 
@@ -818,12 +833,18 @@ def parse_table(doc: str) -> Table | None:
             split, skip = vs_at, 1
         cut = lambda row: (row[start:split], row[split + skip:])
         left, right = cut(header)
-        decks = any("deck" in h.lower() for h in left)
+        deck_at = next((i for i, h in enumerate(left) if _DECK_COL.search(h)), None)
 
         def side(cells: list[str], heads: list[str] = ()) -> dict[str, Any]:
-            if decks:
-                parts, deck = [cells[0]], (cells[1] if len(cells) > 1 else None)
-                heads = heads[:1]
+            if deck_at is not None:
+                deck = cells[deck_at] if deck_at < len(cells) else None
+                # Everything else on this side is the name, minus the columns
+                # that are about the Duelist without being part of it.
+                keepable = [i for i in range(len(cells))
+                            if i != deck_at
+                            and not (i < len(heads) and _ABOUT_NOT_NAMED.search(heads[i]))]
+                parts = [cells[i] for i in keepable] or [cells[0]]
+                heads = [heads[i] for i in keepable if i < len(heads)]
             else:
                 parts, deck = cells, None
             # A column that names a result is not part of a Duelist's name.

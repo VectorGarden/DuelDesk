@@ -283,7 +283,10 @@ def round_key(post) -> tuple[str, Any]:
 #  49 A registration number is not a deck. 1,344 cells across six events
 #     showed a Duelist's COSSY number where their deck belongs, and the
 #     archive keeps the stored value, so they need rebuilding to lose it.
-BUILD_VERSION = 49
+#  50 The deck column is the one headed Deck. The 300th YCS puts a points
+#     column between the name and the deck, and 186 of its rows were
+#     published with a Duelist's score where their deck belongs.
+BUILD_VERSION = 50
 
 
 @dataclass
