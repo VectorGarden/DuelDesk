@@ -289,7 +289,10 @@ def round_key(post) -> tuple[str, Any]:
 #  51 A cell's line breaks are not part of the value it holds. 35 deck names
 #     and 136 cells carried a newline, so "Sky\n  Striker" counted as a
 #     different deck from "Sky Striker".
-BUILD_VERSION = 51
+#  52 The name a deck is called, where the coverage wrote another. A
+#     curated table: engine order is meaningful, so only the spellings
+#     somebody who plays the game has settled are folded.
+BUILD_VERSION = 52
 
 
 @dataclass

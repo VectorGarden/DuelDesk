@@ -899,7 +899,10 @@ def parse_table(doc: str) -> Table | None:
                     cleaned.append(text)
             return {**({"team": team} if team else {}),
                     "name": normalise_name(" ".join(cleaned)),
-                    "region": region, "deck": deck or None}
+                    "region": region,
+                    # The column path reaches the deck without going through
+                    # _deck_or_none, so the same names are settled here too.
+                    "deck": canonical_deck(deck) if deck else None}
 
         # A team match is one row of this table, holding the duels played
         # inside it. Both team layouts announce one the same way -- a row whose
@@ -1095,10 +1098,55 @@ _PARENS = re.compile(r"^(.*?)\s*\(([^)]*)\)")
 _REGISTRATION = re.compile(r"^\d+$")
 
 
+# Decks the coverage writes more than one way, and the name each one is.
+#
+# Curated, not derived, and it has to be: the order of a deck's engines says
+# which is the primary and which the secondary, so "Ryzeal Fiendsmith" and
+# "Fiendsmith Ryzeal" are two decks and folding permutations together would
+# erase that. Only where somebody who plays the game has said which spelling
+# the deck's own is.
+#
+# Three of these could not have been worked out from the archive at all:
+# "Burning Abyss Phantom Knights" is right across the singular and the plural,
+# "Phantom Knight Orcust" over a spelling written with slashes, and the Fur
+# Hire deck is called "Runick Spright Fur Hire" -- a name that appears in
+# neither of the spellings the coverage used.
+#
+# Keyed on the name with its case and punctuation flattened, so a variant that
+# differs only in those is caught by the same entry.
+_DECK_ALIASES = {
+    # Three engines, folded to the order the deck is known by.
+    "ignister bystial maliss":            "Bystial @Ignister Maliss",
+    "fire king snake eye azamina":        "Azamina Fire King Snake-Eye",
+    "ryzeal mitsurugi fiendsmith":        "Mitsurugi Ryzeal Fiendsmith",
+    "magistus branded dracotail":         "Branded Magistus Dracotail",
+    "azamina snake eye fiendsmith":       "Snake-Eye Fiendsmith Azamina",
+    "ryzeal bystial fiendsmith":          "Bystial Ryzeal Fiendsmith",
+    "despia dogmatika branded":           "Dogmatika Despia Branded",
+    # One spelling is the deck's, whatever order the coverage used.
+    "thunder dragon danger":              "Danger! Thunder Dragon",
+    "tearlaments danger":                 "Danger! Tearlaments",
+    "orcust phantom knight":              "Phantom Knight Orcust",
+    "phantom knight burning abyss":       "Burning Abyss Phantom Knights",
+    "burning abyss phantom knight":       "Burning Abyss Phantom Knights",
+    "phantom knights burning abyss":      "Burning Abyss Phantom Knights",
+    # And one the coverage never spelled right.
+    "fur hire spright runick":            "Runick Spright Fur Hire",
+    "spright fur hire runick":            "Runick Spright Fur Hire",
+}
+
+_DECK_KEY = re.compile(r"[^a-z0-9]+")
+
+
+def canonical_deck(name: str) -> str:
+    """The name this deck is called, where the coverage wrote another."""
+    return _DECK_ALIASES.get(_DECK_KEY.sub(" ", name.lower()).strip(), name)
+
+
 def _deck_or_none(text: str | None) -> str | None:
     """A deck, unless what was found is a number."""
     text = (text or "").strip()
-    return None if not text or _REGISTRATION.match(text) else text
+    return None if not text or _REGISTRATION.match(text) else canonical_deck(text)
 
 
 # "De Obaldia Soza, Galileo Mauricio from Panama (ABC)" -- the country written
