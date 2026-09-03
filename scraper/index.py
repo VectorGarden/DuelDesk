@@ -381,9 +381,22 @@ _OPENING_TRIM = re.compile(r"^(?:welcome-to-the-|welcome-to-|welcome-|introducti
 # YCS Montreal -- so only the kinds that carry a tournament's own record come.
 _COVERAGE = ("pairings", "standings", "feature", "result", "deck")
 
+# A stretch of the coverage rather than a tournament. The blog welcomes its
+# readers to "day 2" and to "week 2 of the WCQs" the same way it welcomes them
+# to YCS Dallas, and neither is an event: one is the second day of a tournament
+# already under way, the other is several qualifiers at once. Read as names
+# they became "YCS Day" and "YCS Week The Wcqs".
+_A_STRETCH_OF_TIME = re.compile(r"^(?:day|week|weekend|round|session|part|"
+                                r"morning|afternoon|sunday|saturday|friday)\b")
+
+# WordPress adds a counter to a slug it has used before. It says nothing about
+# the event -- "ycs-toronto-3" is the third post to want that slug, not the
+# third YCS Toronto.
+_REPEAT_SUFFIX = re.compile(r"-\d+$")
+
 
 def opened_events(records: list[dict], windows: dict, within,
-                  gap_days: int = 3, minimum: int = 9) -> dict[str, str]:
+                  gap_days: int = 3, minimum: int = 4) -> dict[str, str]:
     """Post URL -> event, for tournaments the blog covered but never named.
 
     discover_events reads the event's name off the front of a slug. The oldest
@@ -397,8 +410,9 @@ def opened_events(records: list[dict], windows: dict, within,
     Four things have to hold, because attaching tables by date is what cost
     YCS Philadelphia and YCS Guadalajara their brackets:
 
-      * The weekend has to hold a bracket's worth of tables. A stray pairings
-        post is not a tournament.
+      * The weekend has to hold four tables. A stray pairings post is not a
+        tournament, and four is where this stops finding any: below it the
+        other three conditions refuse everything that is left.
       * Nothing in the weekend already belongs to an event. Asked of the
         posts rather than of the known windows, because by this point events
         have been discovered that no window describes: 2016 YCS Minneapolis
@@ -436,8 +450,8 @@ def opened_events(records: list[dict], windows: dict, within,
         opening = [r for r in here if _OPENS.search(r["slug"])]
         if len(opening) != 1:
             continue
-        bare = _OPENING_TRIM.sub("", opening[0]["slug"]).strip("-")
-        if len(bare) < 4:
+        bare = _REPEAT_SUFFIX.sub("", _OPENING_TRIM.sub("", opening[0]["slug"])).strip("-")
+        if len(bare) < 4 or _A_STRETCH_OF_TIME.match(bare.replace("-", " ")):
             continue
         slug = f"{lo[:4]}-{bare}"
         for rec in here:

@@ -5971,6 +5971,23 @@ class TestTournamentsNobodyNamed(unittest.TestCase):
         self.assertNotEqual(got["standings-after-round-1"][1], "opened")
         self.assertNotIn("2014-ycs-dallas", {e for e, _ in got.values()})
 
+    def test_a_stretch_of_the_coverage_is_not_a_tournament(self):
+        # The blog welcomes its readers to "day 2" and to "week 2 of the WCQs"
+        # the same way it welcomes them to YCS Dallas. One is the second day of
+        # a tournament already under way, the other is several qualifiers at
+        # once; read as names they became "YCS Day" and "YCS Week The Wcqs".
+        for opening in ("welcome-to-day-2", "welcome-to-week-2-of-the-wcqs",
+                        "welcome-to-sunday-at-the-ycs"):
+            with self.subTest(opening):
+                got = self.weekend(opening=opening)
+                self.assertIsNone(got["standings-after-round-1"][0])
+
+    def test_a_slug_wordpress_numbered_is_not_a_third_ycs_toronto(self):
+        # WordPress adds a counter to a slug it has used before. It says which
+        # post wanted the slug, not which running of the event this was.
+        got = self.weekend(opening="welcome-to-ycs-toronto-3")
+        self.assertEqual(got["standings-after-round-1"][0], "2014-ycs-toronto")
+
     def test_the_news_running_that_weekend_is_not_coverage(self):
         # A window of dates is not evidence that a post is about the
         # tournament: that mistake swept a week of card announcements into
@@ -6003,6 +6020,10 @@ class TestSpelledOutNames(unittest.TestCase):
         # the event "YCS First Guadalajara".
         self.assertEqual(self.name("2012-first-ycs-in-2012-in-guadalajara-mexico"),
                          ("YCS Guadalajara", "Guadalajara, Mexico"))
+
+    def test_how_emphatic_the_blog_was_is_not_where_it_was(self):
+        # "the very first YCS of Brazil" read as a place made it "YCS Very".
+        self.assertEqual(self.name("2014-very-first-ycs-of-brazil")[0], "YCS Brazil")
 
     def test_the_names_that_were_right_stay_right(self):
         self.assertEqual(self.name("2014-ycs-dallas")[0], "YCS Dallas")
