@@ -230,6 +230,7 @@
     "modified": "2022-07-22T13:23:10-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -239,6 +240,7 @@
     "modified": "2022-07-17T18:35:09-07:00",
     "kind": "deck",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -248,6 +250,7 @@
     "modified": "2022-07-17T10:05:54-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "na-ygoc-2022"
   },
@@ -257,6 +260,7 @@
     "modified": "2022-07-17T07:34:08-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "na-ygoc-2022"
   },
@@ -266,6 +270,7 @@
     "modified": "2022-07-17T08:18:09-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -275,6 +280,7 @@
     "modified": "2022-07-16T19:10:04-07:00",
     "kind": "deck",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -284,6 +290,7 @@
     "modified": "2022-07-17T10:16:28-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "na-ygoc-2022"
   },
@@ -293,6 +300,7 @@
     "modified": "2022-07-17T08:27:38-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -302,6 +310,7 @@
     "modified": "2022-07-17T12:02:08-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -311,6 +320,7 @@
     "modified": "2022-07-17T17:55:15-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Public Events",
     "slug": "na-ygoc-2022"
   },
@@ -320,6 +330,7 @@
     "modified": "2022-07-17T08:48:23-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -329,6 +340,7 @@
     "modified": "2022-07-17T17:22:16-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -338,6 +350,7 @@
     "modified": "2022-07-17T17:54:29-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Public Events",
     "slug": "na-ygoc-2022"
   },
@@ -347,6 +360,7 @@
     "modified": "2022-07-17T09:19:44-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -356,6 +370,7 @@
     "modified": "2022-07-17T15:57:51-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -365,6 +380,7 @@
     "modified": "2022-07-17T18:26:54-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "na-ygoc-2022"
   },
@@ -374,6 +390,7 @@
     "modified": "2022-07-17T09:34:21-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -383,6 +400,7 @@
     "modified": "2022-07-17T18:12:28-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -392,6 +410,7 @@
     "modified": "2022-07-17T18:38:25-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -401,6 +420,7 @@
     "modified": "2022-07-17T09:53:23-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -410,6 +430,7 @@
     "modified": "2022-07-16T11:16:37-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -419,6 +440,7 @@
     "modified": "2022-07-17T18:43:35-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "na-ygoc-2022"
   },
@@ -428,6 +450,7 @@
     "modified": "2022-07-17T09:53:30-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -437,6 +460,7 @@
     "modified": "2022-07-16T12:17:46-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "na-ygoc-2022"
   },
@@ -446,6 +470,7 @@
     "modified": "2022-07-17T18:59:45-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -455,6 +480,7 @@
     "modified": "2022-07-17T11:24:59-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -464,6 +490,7 @@
     "modified": "2022-07-16T14:00:48-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -473,6 +500,7 @@
     "modified": "2022-07-17T19:07:56-07:00",
     "kind": "result",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -482,6 +510,7 @@
     "modified": "2022-07-17T12:32:01-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -491,6 +520,7 @@
     "modified": "2022-07-16T16:01:17-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "na-ygoc-2022"
   },
@@ -500,6 +530,7 @@
     "modified": "2022-07-17T13:01:00-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -509,6 +540,7 @@
     "modified": "2022-07-16T16:51:34-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "na-ygoc-2022"
   },
@@ -527,6 +559,7 @@
     "modified": "2022-07-16T17:22:08-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "na-ygoc-2022"
   },
@@ -536,6 +569,7 @@
     "modified": "2022-07-16T10:38:22-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -545,6 +579,7 @@
     "modified": "2022-07-16T17:52:14-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "na-ygoc-2022"
   },
@@ -554,6 +589,7 @@
     "modified": "2022-07-16T09:00:49-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -563,6 +599,7 @@
     "modified": "2022-07-16T18:25:53-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -572,6 +609,7 @@
     "modified": "2022-07-16T12:12:54-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -581,6 +619,7 @@
     "modified": "2022-07-16T19:48:06-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -590,6 +629,7 @@
     "modified": "2022-07-16T14:22:47-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -599,6 +639,7 @@
     "modified": "2022-07-16T20:58:51-07:00",
     "kind": "feature",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -608,6 +649,7 @@
     "modified": "2022-07-16T14:32:54-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -617,6 +659,7 @@
     "modified": "2022-07-16T14:57:04-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "na-ygoc-2022"
   },
@@ -626,6 +669,7 @@
     "modified": "2022-07-16T15:03:02-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "na-ygoc-2022"
   },
@@ -635,6 +679,7 @@
     "modified": "2022-07-16T15:12:30-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -644,6 +689,7 @@
     "modified": "2022-07-16T16:59:25-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -653,6 +699,7 @@
     "modified": "2022-07-16T18:01:31-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -662,6 +709,7 @@
     "modified": "2022-07-16T19:40:11-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "na-ygoc-2022"
   },
@@ -671,6 +719,7 @@
     "modified": "2022-07-16T19:22:11-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   },
@@ -680,6 +729,7 @@
     "modified": "2022-07-16T20:17:26-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "na-ygoc-2022"
   },
@@ -689,6 +739,7 @@
     "modified": "2022-07-16T21:00:05-07:00",
     "kind": "news",
     "event": "North America WCQ 2022",
+    "article": true,
     "format": null,
     "slug": "na-ygoc-2022"
   }

@@ -248,6 +248,7 @@
     "modified": "2022-10-23T07:44:30-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -257,6 +258,7 @@
     "modified": "2022-10-23T18:08:03-07:00",
     "kind": "deck",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -266,6 +268,7 @@
     "modified": "2022-10-23T18:01:32-07:00",
     "kind": "result",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -275,6 +278,7 @@
     "modified": "2022-10-23T07:43:00-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -284,6 +288,7 @@
     "modified": "2022-10-23T08:31:34-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -293,6 +298,7 @@
     "modified": "2022-10-23T17:44:32-07:00",
     "kind": "result",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -302,6 +308,7 @@
     "modified": "2022-10-23T07:37:56-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -311,6 +318,7 @@
     "modified": "2022-10-23T10:15:29-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -320,6 +328,7 @@
     "modified": "2022-10-23T18:19:58-07:00",
     "kind": "result",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2022-ycs-minneapolis"
   },
@@ -329,6 +338,7 @@
     "modified": "2022-10-23T07:52:28-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -338,6 +348,7 @@
     "modified": "2022-10-23T12:16:35-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -347,6 +358,7 @@
     "modified": "2022-10-23T18:23:24-07:00",
     "kind": "result",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": "Public Events",
     "slug": "2022-ycs-minneapolis"
   },
@@ -356,6 +368,7 @@
     "modified": "2022-10-23T11:59:58-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -365,6 +378,7 @@
     "modified": "2022-10-23T14:15:46-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -374,6 +388,7 @@
     "modified": "2022-10-23T18:25:59-07:00",
     "kind": "result",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": "Public Events",
     "slug": "2022-ycs-minneapolis"
   },
@@ -383,6 +398,7 @@
     "modified": "2022-10-23T09:20:22-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -392,6 +408,7 @@
     "modified": "2022-10-23T17:14:22-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -401,6 +418,7 @@
     "modified": "2022-10-23T14:20:17-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -410,6 +428,7 @@
     "modified": "2022-10-23T16:55:24-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -419,6 +438,7 @@
     "modified": "2022-10-23T09:08:10-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -428,6 +448,7 @@
     "modified": "2022-10-23T17:35:57-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -437,6 +458,7 @@
     "modified": "2022-10-23T09:47:21-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -446,6 +468,7 @@
     "modified": "2022-10-22T10:44:46-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -455,6 +478,7 @@
     "modified": "2022-10-23T09:57:25-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -464,6 +488,7 @@
     "modified": "2022-10-22T12:19:39-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -473,6 +498,7 @@
     "modified": "2022-10-23T11:23:02-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -482,6 +508,7 @@
     "modified": "2022-10-22T13:20:19-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -500,6 +527,7 @@
     "modified": "2022-10-22T15:25:30-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -509,6 +537,7 @@
     "modified": "2022-10-22T11:05:35-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -518,6 +547,7 @@
     "modified": "2022-10-22T17:18:04-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -527,6 +557,7 @@
     "modified": "2022-10-22T15:39:26-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -536,6 +567,7 @@
     "modified": "2022-10-22T17:54:09-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -545,6 +577,7 @@
     "modified": "2022-10-22T15:45:16-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -554,6 +587,7 @@
     "modified": "2022-10-22T20:03:56-07:00",
     "kind": "feature",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -563,6 +597,7 @@
     "modified": "2022-10-22T20:04:44-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -572,6 +607,7 @@
     "modified": "2022-10-22T18:02:42-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   },
@@ -581,6 +617,7 @@
     "modified": "2022-10-22T18:07:40-07:00",
     "kind": "news",
     "event": "YCS Minneapolis",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-minneapolis"
   }

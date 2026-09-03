@@ -221,6 +221,7 @@
     "modified": "2025-11-20T10:57:54-08:00",
     "kind": "news",
     "event": "YCS Merida",
+    "article": true,
     "format": null,
     "slug": "2025-ycs-merida-mexico"
   },
@@ -230,6 +231,7 @@
     "modified": "2025-10-28T17:58:41-07:00",
     "kind": "news",
     "event": "YCS Merida",
+    "article": true,
     "format": null,
     "slug": "2025-ycs-merida-mexico"
   }

@@ -257,6 +257,7 @@
     "modified": "2025-10-03T15:20:50-07:00",
     "kind": "news",
     "event": "YCS Sao Paulo",
+    "article": true,
     "format": null,
     "slug": "2025-ycs-sao-paulo-brazil"
   },
@@ -266,6 +267,7 @@
     "modified": "2025-10-02T16:11:15-07:00",
     "kind": "news",
     "event": "YCS Sao Paulo",
+    "article": true,
     "format": null,
     "slug": "2025-ycs-sao-paulo-brazil"
   }

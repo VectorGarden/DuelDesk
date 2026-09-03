@@ -131,6 +131,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-south-america-genesys-championship/rounds.json",
       "postCount": 24,
+      "champions": [
+        {
+          "format": "Genesys",
+          "name": "Allan Barros Pereira de Arruda",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": "Genesys",
@@ -149,6 +156,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-south-america-dragon-duel-championship/rounds.json",
       "postCount": 17,
+      "champions": [
+        {
+          "format": "Dragon Duel",
+          "name": "Camila Isabel Alba",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": "Dragon Duel",
@@ -192,6 +206,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-central-america-genesys-championship/rounds.json",
       "postCount": 23,
+      "champions": [
+        {
+          "format": "Genesys",
+          "name": "Uziel Tapia Perez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": "Genesys",
@@ -210,6 +231,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-central-america-dragon-duel-championship/rounds.json",
       "postCount": 18,
+      "champions": [
+        {
+          "format": "Dragon Duel",
+          "name": "Santiago Emilio Lopez Rodriguez",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": "Dragon Duel",
@@ -265,6 +293,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-ycs-cartagena-colombia/rounds.json",
       "postCount": 28,
+      "champions": [
+        {
+          "format": null,
+          "name": "Julien Leo Kehon",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -323,6 +358,13 @@
       "coverageBy": "Konami",
       "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
       "postCount": 27,
+      "champions": [
+        {
+          "format": null,
+          "name": "Julien Leo Kehon",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -474,6 +516,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-merida-mexico/rounds.json",
       "postCount": 26,
+      "champions": [
+        {
+          "format": null,
+          "name": "James Allen Sun Markowitz",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,
@@ -562,6 +611,13 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-lima-peru/rounds.json",
       "postCount": 30,
+      "champions": [
+        {
+          "format": null,
+          "name": "Steven J. Trifunoski",
+          "deck": null
+        }
+      ],
       "formats": [
         {
           "format": null,

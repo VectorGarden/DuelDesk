@@ -221,6 +221,7 @@
     "modified": "2022-04-10T07:07:59-07:00",
     "kind": "deck",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -230,6 +231,7 @@
     "modified": "2022-04-10T16:09:27-07:00",
     "kind": "result",
     "event": "YCS Charlotte",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2022-ycs-charlotte"
   },
@@ -239,6 +241,7 @@
     "modified": "2022-04-10T06:16:56-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -248,6 +251,7 @@
     "modified": "2022-04-10T13:35:23-07:00",
     "kind": "deck",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -257,6 +261,7 @@
     "modified": "2022-04-10T16:19:35-07:00",
     "kind": "result",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -266,6 +271,7 @@
     "modified": "2022-04-10T07:37:54-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -275,6 +281,7 @@
     "modified": "2022-04-10T16:12:06-07:00",
     "kind": "result",
     "event": "YCS Charlotte",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2022-ycs-charlotte"
   },
@@ -284,6 +291,7 @@
     "modified": "2022-04-10T07:50:28-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -302,6 +310,7 @@
     "modified": "2022-04-10T09:49:00-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -320,6 +329,7 @@
     "modified": "2022-04-10T10:57:25-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -329,6 +339,7 @@
     "modified": "2022-04-09T19:06:38-07:00",
     "kind": "result",
     "event": "YCS Charlotte",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2022-ycs-charlotte"
   },
@@ -338,6 +349,7 @@
     "modified": "2022-04-10T11:19:34-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -347,6 +359,7 @@
     "modified": "2022-04-09T19:06:12-07:00",
     "kind": "result",
     "event": "YCS Charlotte",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2022-ycs-charlotte"
   },
@@ -356,6 +369,7 @@
     "modified": "2022-04-10T12:08:21-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": "Public Events",
     "slug": "2022-ycs-charlotte"
   },
@@ -365,6 +379,7 @@
     "modified": "2022-04-10T12:09:43-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -374,6 +389,7 @@
     "modified": "2022-04-10T13:38:29-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -383,6 +399,7 @@
     "modified": "2022-04-09T07:28:24-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -392,6 +409,7 @@
     "modified": "2022-04-09T09:04:51-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -401,6 +419,7 @@
     "modified": "2022-04-09T09:04:36-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": "Public Events",
     "slug": "2022-ycs-charlotte"
   },
@@ -410,6 +429,7 @@
     "modified": "2022-04-09T12:16:34-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -419,6 +439,7 @@
     "modified": "2022-04-09T21:35:27-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": "Public Events",
     "slug": "2022-ycs-charlotte"
   },
@@ -428,6 +449,7 @@
     "modified": "2022-04-09T13:02:04-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -437,6 +459,7 @@
     "modified": "2022-04-09T14:25:07-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -446,6 +469,7 @@
     "modified": "2022-04-09T14:27:10-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -455,6 +479,7 @@
     "modified": "2022-04-09T15:51:14-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -464,6 +489,7 @@
     "modified": "2022-04-09T17:21:29-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   },
@@ -473,6 +499,7 @@
     "modified": "2022-04-09T19:07:30-07:00",
     "kind": "news",
     "event": "YCS Charlotte",
+    "article": true,
     "format": null,
     "slug": "2022-ycs-charlotte"
   }

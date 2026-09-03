@@ -257,6 +257,7 @@
     "modified": "2025-09-26T08:23:21-07:00",
     "kind": "news",
     "event": "YCS Lima",
+    "article": true,
     "format": null,
     "slug": "2025-ycs-lima-peru"
   },
@@ -266,6 +267,7 @@
     "modified": "2025-09-17T14:45:20-07:00",
     "kind": "news",
     "event": "YCS Lima",
+    "article": true,
     "format": null,
     "slug": "2025-ycs-lima-peru"
   }

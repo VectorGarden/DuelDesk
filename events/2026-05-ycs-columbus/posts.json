@@ -491,6 +491,7 @@
     "modified": "2026-05-24T14:45:43-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -500,6 +501,7 @@
     "modified": "2026-05-26T19:10:24-07:00",
     "kind": "deck",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -518,6 +520,7 @@
     "modified": "2026-05-26T11:45:40-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -527,6 +530,7 @@
     "modified": "2026-05-24T08:58:47-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -536,6 +540,7 @@
     "modified": "2026-05-25T16:24:04-07:00",
     "kind": "deck",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -545,6 +550,7 @@
     "modified": "2026-05-24T13:04:43-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -563,6 +569,7 @@
     "modified": "2026-05-24T07:48:54-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -572,6 +579,7 @@
     "modified": "2026-05-24T15:58:39-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-05-ycs-columbus"
   },
@@ -581,6 +589,7 @@
     "modified": "2026-05-24T06:53:12-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -590,6 +599,7 @@
     "modified": "2026-05-24T08:13:27-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -599,6 +609,7 @@
     "modified": "2026-05-24T16:04:41-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-05-ycs-columbus"
   },
@@ -608,6 +619,7 @@
     "modified": "2026-05-24T08:22:33-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -617,6 +629,7 @@
     "modified": "2026-05-24T10:58:42-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -626,6 +639,7 @@
     "modified": "2026-05-24T17:18:09-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-05-ycs-columbus"
   },
@@ -635,6 +649,7 @@
     "modified": "2026-05-24T11:33:19-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -644,6 +659,7 @@
     "modified": "2026-05-24T11:00:17-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -653,6 +669,7 @@
     "modified": "2026-05-24T17:19:12-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-05-ycs-columbus"
   },
@@ -662,6 +679,7 @@
     "modified": "2026-05-24T09:05:35-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -671,6 +689,7 @@
     "modified": "2026-05-24T10:56:27-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -680,6 +699,7 @@
     "modified": "2026-05-24T19:00:18-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -689,6 +709,7 @@
     "modified": "2026-05-24T11:26:54-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -698,6 +719,7 @@
     "modified": "2026-05-24T11:18:10-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -707,6 +729,7 @@
     "modified": "2026-05-24T18:59:23-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -716,6 +739,7 @@
     "modified": "2026-05-24T11:32:38-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -725,6 +749,7 @@
     "modified": "2026-05-24T11:19:24-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -734,6 +759,7 @@
     "modified": "2026-05-23T15:12:48-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-05-ycs-columbus"
   },
@@ -743,6 +769,7 @@
     "modified": "2026-05-24T11:42:03-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-05-ycs-columbus"
   },
@@ -752,6 +779,7 @@
     "modified": "2026-05-24T13:47:31-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -761,6 +789,7 @@
     "modified": "2026-05-23T17:47:36-07:00",
     "kind": "result",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-05-ycs-columbus"
   },
@@ -770,6 +799,7 @@
     "modified": "2026-05-24T15:03:52-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -779,6 +809,7 @@
     "modified": "2026-05-24T15:54:49-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -788,6 +819,7 @@
     "modified": "2026-05-24T16:56:28-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -797,6 +829,7 @@
     "modified": "2026-05-24T15:37:55-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -806,6 +839,7 @@
     "modified": "2026-05-24T17:30:47-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -815,6 +849,7 @@
     "modified": "2026-05-24T16:02:12-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-05-ycs-columbus"
   },
@@ -824,6 +859,7 @@
     "modified": "2026-05-24T18:51:16-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -833,6 +869,7 @@
     "modified": "2026-05-24T16:56:00-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -842,6 +879,7 @@
     "modified": "2026-05-23T16:33:20-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -851,6 +889,7 @@
     "modified": "2026-05-23T10:49:15-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -860,6 +899,7 @@
     "modified": "2026-05-23T08:11:13-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -869,6 +909,7 @@
     "modified": "2026-05-23T11:02:17-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -878,6 +919,7 @@
     "modified": "2026-05-23T08:18:28-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -887,6 +929,7 @@
     "modified": "2026-05-23T10:55:11-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -896,6 +939,7 @@
     "modified": "2026-05-23T08:35:44-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -905,6 +949,7 @@
     "modified": "2026-05-23T13:49:11-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -914,6 +959,7 @@
     "modified": "2026-05-23T12:39:57-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -923,6 +969,7 @@
     "modified": "2026-05-23T12:32:23-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -932,6 +979,7 @@
     "modified": "2026-05-23T14:29:37-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-05-ycs-columbus"
   },
@@ -941,6 +989,7 @@
     "modified": "2026-05-23T12:37:51-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -950,6 +999,7 @@
     "modified": "2026-05-23T15:01:16-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -959,6 +1009,7 @@
     "modified": "2026-05-23T12:29:51-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -968,6 +1019,7 @@
     "modified": "2026-05-23T15:08:52-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -977,6 +1029,7 @@
     "modified": "2026-05-23T13:46:53-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -986,6 +1039,7 @@
     "modified": "2026-05-23T15:21:54-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -995,6 +1049,7 @@
     "modified": "2026-05-23T14:23:54-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1004,6 +1059,7 @@
     "modified": "2026-05-23T16:16:01-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1013,6 +1069,7 @@
     "modified": "2026-05-23T15:50:36-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1022,6 +1079,7 @@
     "modified": "2026-05-23T16:27:27-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1031,6 +1089,7 @@
     "modified": "2026-05-23T16:37:58-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1040,6 +1099,7 @@
     "modified": "2026-05-23T19:08:48-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1049,6 +1109,7 @@
     "modified": "2026-05-23T17:42:23-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1058,6 +1119,7 @@
     "modified": "2026-05-23T19:16:01-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1067,6 +1129,7 @@
     "modified": "2026-05-23T17:34:35-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1076,6 +1139,7 @@
     "modified": "2026-05-14T15:37:09-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "2026-05-ycs-columbus"
   },
@@ -1085,6 +1149,7 @@
     "modified": "2026-05-23T19:00:38-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1094,6 +1159,7 @@
     "modified": "2026-05-23T19:18:02-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   },
@@ -1103,6 +1169,7 @@
     "modified": "2026-05-23T19:48:02-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-05-ycs-columbus"
   }

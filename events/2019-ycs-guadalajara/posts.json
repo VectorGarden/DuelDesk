@@ -212,6 +212,7 @@
     "modified": "2019-09-29T11:52:18-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -221,6 +222,7 @@
     "modified": "2019-09-29T17:51:39-07:00",
     "kind": "deck",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -230,6 +232,7 @@
     "modified": "2019-09-29T22:30:42-07:00",
     "kind": "result",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-guadalajara"
   },
@@ -239,6 +242,7 @@
     "modified": "2019-09-29T08:26:55-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -248,6 +252,7 @@
     "modified": "2019-09-29T11:47:53-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -257,6 +262,7 @@
     "modified": "2019-09-29T22:46:01-07:00",
     "kind": "result",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-guadalajara"
   },
@@ -266,6 +272,7 @@
     "modified": "2019-09-29T08:55:31-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -275,6 +282,7 @@
     "modified": "2019-09-29T17:54:50-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -284,6 +292,7 @@
     "modified": "2019-09-29T22:47:44-07:00",
     "kind": "result",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-guadalajara"
   },
@@ -293,6 +302,7 @@
     "modified": "2019-09-29T11:22:20-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -302,6 +312,7 @@
     "modified": "2019-09-29T19:16:22-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -311,6 +322,7 @@
     "modified": "2019-09-29T22:49:39-07:00",
     "kind": "result",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-guadalajara"
   },
@@ -320,6 +332,7 @@
     "modified": "2019-09-29T12:26:48-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -329,6 +342,7 @@
     "modified": "2019-09-29T22:23:21-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -338,6 +352,7 @@
     "modified": "2019-09-29T22:56:10-07:00",
     "kind": "result",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -347,6 +362,7 @@
     "modified": "2019-09-29T17:11:22-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -356,6 +372,7 @@
     "modified": "2019-09-29T22:26:57-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -365,6 +382,7 @@
     "modified": "2019-09-28T18:05:51-07:00",
     "kind": "result",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-guadalajara"
   },
@@ -383,6 +401,7 @@
     "modified": "2019-09-28T13:00:20-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -392,6 +411,7 @@
     "modified": "2019-09-29T22:57:17-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -401,6 +421,7 @@
     "modified": "2019-09-28T15:24:51-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -410,6 +431,7 @@
     "modified": "2019-09-28T08:36:34-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -419,6 +441,7 @@
     "modified": "2019-09-28T16:58:23-07:00",
     "kind": "feature",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -428,6 +451,7 @@
     "modified": "2019-09-28T10:59:21-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -437,6 +461,7 @@
     "modified": "2019-09-28T14:55:10-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -446,6 +471,7 @@
     "modified": "2019-09-28T15:56:42-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -455,6 +481,7 @@
     "modified": "2019-09-28T16:54:17-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guadalajara"
   },
@@ -464,6 +491,7 @@
     "modified": "2019-09-28T16:58:44-07:00",
     "kind": "news",
     "event": "YCS Guadalajara",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-guadalajara"
   }

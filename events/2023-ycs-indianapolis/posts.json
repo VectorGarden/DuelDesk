@@ -212,6 +212,7 @@
     "modified": "2023-10-22T07:27:49-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -221,6 +222,7 @@
     "modified": "2023-10-22T12:44:57-07:00",
     "kind": "deck",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -230,6 +232,7 @@
     "modified": "2023-10-22T13:00:06-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -239,6 +242,7 @@
     "modified": "2023-10-22T05:53:52-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2023-ycs-indianapolis"
   },
@@ -248,6 +252,7 @@
     "modified": "2023-10-22T11:40:29-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -257,6 +262,7 @@
     "modified": "2023-10-22T13:02:02-07:00",
     "kind": "deck",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -266,6 +272,7 @@
     "modified": "2023-10-22T16:31:27-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -275,6 +282,7 @@
     "modified": "2023-10-22T06:07:25-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -284,6 +292,7 @@
     "modified": "2023-10-22T11:16:20-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -293,6 +302,7 @@
     "modified": "2023-10-22T13:38:57-07:00",
     "kind": "deck",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -302,6 +312,7 @@
     "modified": "2023-10-22T16:38:18-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -311,6 +322,7 @@
     "modified": "2023-10-22T06:41:36-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -320,6 +332,7 @@
     "modified": "2023-10-22T16:18:41-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -329,6 +342,7 @@
     "modified": "2023-10-22T22:54:59-07:00",
     "kind": "deck",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -338,6 +352,7 @@
     "modified": "2023-10-22T07:03:05-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -347,6 +362,7 @@
     "modified": "2023-10-22T15:33:14-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -356,6 +372,7 @@
     "modified": "2023-10-22T07:05:48-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -365,6 +382,7 @@
     "modified": "2023-10-22T16:40:58-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -374,6 +392,7 @@
     "modified": "2023-10-22T08:34:07-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -383,6 +402,7 @@
     "modified": "2023-10-22T17:10:32-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -392,6 +412,7 @@
     "modified": "2023-10-22T09:25:11-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -401,6 +422,7 @@
     "modified": "2023-10-21T09:45:41-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -419,6 +441,7 @@
     "modified": "2023-10-21T10:41:21-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -428,6 +451,7 @@
     "modified": "2023-10-22T22:48:15-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2023-ycs-indianapolis"
   },
@@ -437,6 +461,7 @@
     "modified": "2023-10-21T11:28:03-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -446,6 +471,7 @@
     "modified": "2023-10-21T15:54:22-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -455,6 +481,7 @@
     "modified": "2023-10-21T12:58:59-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -464,6 +491,7 @@
     "modified": "2023-10-21T08:26:32-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -473,6 +501,7 @@
     "modified": "2023-10-21T14:48:05-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -482,6 +511,7 @@
     "modified": "2023-10-21T09:38:02-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -491,6 +521,7 @@
     "modified": "2023-10-21T18:41:39-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -500,6 +531,7 @@
     "modified": "2023-10-21T10:46:52-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -509,6 +541,7 @@
     "modified": "2023-10-21T17:21:21-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -518,6 +551,7 @@
     "modified": "2023-10-21T12:03:25-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -527,6 +561,7 @@
     "modified": "2023-10-21T18:40:43-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -536,6 +571,7 @@
     "modified": "2023-10-21T14:08:34-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -545,6 +581,7 @@
     "modified": "2023-10-21T18:53:41-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -554,6 +591,7 @@
     "modified": "2023-10-21T16:14:59-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -563,6 +601,7 @@
     "modified": "2023-10-21T16:53:41-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -572,6 +611,7 @@
     "modified": "2023-10-21T19:01:47-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   },
@@ -581,6 +621,7 @@
     "modified": "2023-10-21T19:02:24-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-indianapolis"
   }

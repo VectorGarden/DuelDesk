@@ -230,6 +230,7 @@
     "modified": "2026-04-10T12:15:35-07:00",
     "kind": "news",
     "event": "YCS Guatemala City",
+    "article": true,
     "format": null,
     "slug": "2026-ycs-guatemala-city-guatemala"
   },
@@ -239,6 +240,7 @@
     "modified": "2026-04-01T15:33:51-07:00",
     "kind": "news",
     "event": "YCS Guatemala City",
+    "article": true,
     "format": null,
     "slug": "2026-ycs-guatemala-city-guatemala"
   }

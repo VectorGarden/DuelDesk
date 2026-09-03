@@ -275,6 +275,7 @@
     "modified": "2025-10-05T11:12:52-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Genesys",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -284,6 +285,7 @@
     "modified": "2025-10-05T20:30:44-07:00",
     "kind": "deck",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -293,6 +295,7 @@
     "modified": "2025-10-06T13:12:18-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -302,6 +305,7 @@
     "modified": "2025-11-20T17:39:28-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Genesys",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -311,6 +315,7 @@
     "modified": "2025-10-05T11:12:10-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -320,6 +325,7 @@
     "modified": "2025-10-05T15:11:49-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -329,6 +335,7 @@
     "modified": "2025-10-30T06:39:28-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -338,6 +345,7 @@
     "modified": "2025-10-05T08:42:33-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -347,6 +355,7 @@
     "modified": "2025-10-05T19:23:47-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -356,6 +365,7 @@
     "modified": "2025-10-06T13:11:04-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Genesys",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -365,6 +375,7 @@
     "modified": "2025-10-05T11:32:59-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -374,6 +385,7 @@
     "modified": "2025-10-05T18:13:23-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Public Events",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -383,6 +395,7 @@
     "modified": "2025-10-05T08:42:14-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -392,6 +405,7 @@
     "modified": "2025-10-05T11:19:13-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -401,6 +415,7 @@
     "modified": "2025-10-05T18:15:48-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Public Events",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -410,6 +425,7 @@
     "modified": "2025-10-05T11:05:41-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -419,6 +435,7 @@
     "modified": "2025-10-05T11:33:18-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -428,6 +445,7 @@
     "modified": "2025-10-05T20:01:17-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -437,6 +455,7 @@
     "modified": "2025-10-05T11:46:11-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -446,6 +465,7 @@
     "modified": "2025-10-05T14:14:27-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -455,6 +475,7 @@
     "modified": "2025-10-05T20:18:25-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -464,6 +485,7 @@
     "modified": "2025-10-05T11:46:21-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -473,6 +495,7 @@
     "modified": "2025-10-05T14:44:54-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -482,6 +505,7 @@
     "modified": "2025-10-05T20:23:07-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -491,6 +515,7 @@
     "modified": "2025-10-05T12:04:58-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -500,6 +525,7 @@
     "modified": "2025-10-05T14:46:33-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -509,6 +535,7 @@
     "modified": "2025-10-05T20:35:18-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Genesys",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -518,6 +545,7 @@
     "modified": "2025-10-05T14:21:21-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -527,6 +555,7 @@
     "modified": "2025-10-05T19:25:37-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -536,6 +565,7 @@
     "modified": "2025-10-04T19:05:48-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -545,6 +575,7 @@
     "modified": "2025-10-05T14:23:36-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -554,6 +585,7 @@
     "modified": "2025-10-05T18:32:51-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -563,6 +595,7 @@
     "modified": "2025-10-04T19:59:35-07:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -572,6 +605,7 @@
     "modified": "2025-10-05T20:28:38-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Genesys",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -581,6 +615,7 @@
     "modified": "2025-10-05T17:42:00-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -599,6 +634,7 @@
     "modified": "2025-10-05T19:46:12-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Genesys",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -608,6 +644,7 @@
     "modified": "2025-10-05T19:55:09-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -617,6 +654,7 @@
     "modified": "2025-10-04T10:53:13-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -626,6 +664,7 @@
     "modified": "2025-10-05T20:15:22-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -635,6 +674,7 @@
     "modified": "2025-10-04T12:26:12-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -644,6 +684,7 @@
     "modified": "2025-10-04T18:41:27-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -653,6 +694,7 @@
     "modified": "2025-10-04T12:54:05-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -662,6 +704,7 @@
     "modified": "2025-10-04T10:25:56-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -671,6 +714,7 @@
     "modified": "2025-10-04T19:49:20-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -680,6 +724,7 @@
     "modified": "2025-10-04T13:37:30-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -689,6 +734,7 @@
     "modified": "2025-10-04T16:27:36-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -698,6 +744,7 @@
     "modified": "2025-10-04T17:01:40-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -707,6 +754,7 @@
     "modified": "2025-10-04T15:55:06-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -716,6 +764,7 @@
     "modified": "2025-10-04T17:02:04-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -725,6 +774,7 @@
     "modified": "2025-10-04T19:04:45-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Genesys",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -734,6 +784,7 @@
     "modified": "2025-10-04T19:48:26-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -743,6 +794,7 @@
     "modified": "2025-10-04T19:48:44-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -752,6 +804,7 @@
     "modified": "2025-10-04T19:22:28-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Genesys",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -761,6 +814,7 @@
     "modified": "2025-10-04T17:40:53-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -770,6 +824,7 @@
     "modified": "2025-10-04T19:03:00-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -779,6 +834,7 @@
     "modified": "2025-10-04T18:44:05-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -788,6 +844,7 @@
     "modified": "2025-10-04T19:48:02-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -797,6 +854,7 @@
     "modified": "2025-10-04T20:47:22-07:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -806,6 +864,7 @@
     "modified": "2025-10-04T20:56:55-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   },
@@ -815,6 +874,7 @@
     "modified": "2025-10-04T21:24:49-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Public Events",
     "slug": "2025-10-ycs-anaheim"
   },
@@ -824,6 +884,7 @@
     "modified": "2025-09-11T11:35:17-07:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2025-10-ycs-anaheim"
   }

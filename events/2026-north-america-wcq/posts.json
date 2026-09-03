@@ -293,6 +293,7 @@
     "modified": "2026-07-12T08:46:12-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -302,6 +303,7 @@
     "modified": "2026-07-12T21:44:32-07:00",
     "kind": "deck",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -311,6 +313,7 @@
     "modified": "2026-07-12T16:44:07-07:00",
     "kind": "result",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-north-america-wcq"
   },
@@ -320,6 +323,7 @@
     "modified": "2026-07-12T12:38:14-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -329,6 +333,7 @@
     "modified": "2026-07-12T11:19:29-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -338,6 +343,7 @@
     "modified": "2026-07-12T17:59:10-07:00",
     "kind": "result",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-north-america-wcq"
   },
@@ -356,6 +362,7 @@
     "modified": "2026-07-12T15:08:53-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -365,6 +372,7 @@
     "modified": "2026-07-12T20:09:50-07:00",
     "kind": "result",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -374,6 +382,7 @@
     "modified": "2026-07-12T09:03:01-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -383,6 +392,7 @@
     "modified": "2026-07-12T16:36:15-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -392,6 +402,7 @@
     "modified": "2026-07-11T07:24:01-07:00",
     "kind": "result",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-north-america-wcq"
   },
@@ -401,6 +412,7 @@
     "modified": "2026-07-12T10:22:35-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-north-america-wcq"
   },
@@ -410,6 +422,7 @@
     "modified": "2026-07-12T17:52:31-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -419,6 +432,7 @@
     "modified": "2026-07-11T07:46:22-07:00",
     "kind": "result",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -428,6 +442,7 @@
     "modified": "2026-07-12T10:38:05-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -437,6 +452,7 @@
     "modified": "2026-07-12T18:51:36-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -446,6 +462,7 @@
     "modified": "2026-07-11T19:07:27-07:00",
     "kind": "result",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-north-america-wcq"
   },
@@ -455,6 +472,7 @@
     "modified": "2026-07-12T11:37:48-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -464,6 +482,7 @@
     "modified": "2026-07-11T10:31:18-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -473,6 +492,7 @@
     "modified": "2026-07-11T22:00:31-07:00",
     "kind": "result",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-north-america-wcq"
   },
@@ -482,6 +502,7 @@
     "modified": "2026-07-12T11:44:04-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -491,6 +512,7 @@
     "modified": "2026-07-11T11:10:58-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -500,6 +522,7 @@
     "modified": "2026-07-12T11:49:52-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -509,6 +532,7 @@
     "modified": "2026-07-11T12:26:01-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -518,6 +542,7 @@
     "modified": "2026-07-12T18:00:09-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-north-america-wcq"
   },
@@ -527,6 +552,7 @@
     "modified": "2026-07-11T11:50:17-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -536,6 +562,7 @@
     "modified": "2026-07-12T17:23:25-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -545,6 +572,7 @@
     "modified": "2026-07-11T13:01:04-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -554,6 +582,7 @@
     "modified": "2026-07-12T17:54:22-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -563,6 +592,7 @@
     "modified": "2026-07-11T14:14:06-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -572,6 +602,7 @@
     "modified": "2026-07-12T20:14:21-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -581,6 +612,7 @@
     "modified": "2026-07-11T14:38:18-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -590,6 +622,7 @@
     "modified": "2026-07-11T12:01:39-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -599,6 +632,7 @@
     "modified": "2026-07-11T16:33:52-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -608,6 +642,7 @@
     "modified": "2026-07-11T07:36:17-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -617,6 +652,7 @@
     "modified": "2026-07-11T17:26:01-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -626,6 +662,7 @@
     "modified": "2026-07-11T07:59:02-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -635,6 +672,7 @@
     "modified": "2026-07-11T18:12:12-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -644,6 +682,7 @@
     "modified": "2026-07-11T07:57:04-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-north-america-wcq"
   },
@@ -653,6 +692,7 @@
     "modified": "2026-07-11T20:08:40-07:00",
     "kind": "feature",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -662,6 +702,7 @@
     "modified": "2026-07-11T07:56:18-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -671,6 +712,7 @@
     "modified": "2026-07-11T07:44:21-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -680,6 +722,7 @@
     "modified": "2026-07-11T08:59:23-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -689,6 +732,7 @@
     "modified": "2026-07-11T10:01:24-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -698,6 +742,7 @@
     "modified": "2026-07-11T15:15:00-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -707,6 +752,7 @@
     "modified": "2026-07-11T17:48:28-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -716,6 +762,7 @@
     "modified": "2026-07-11T17:46:40-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -725,6 +772,7 @@
     "modified": "2026-07-11T18:26:12-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   },
@@ -734,6 +782,7 @@
     "modified": "2026-07-11T20:07:52-07:00",
     "kind": "news",
     "event": "North America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-north-america-wcq"
   }

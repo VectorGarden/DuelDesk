@@ -140,6 +140,7 @@
     "modified": "2019-09-22T08:07:29-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -149,6 +150,7 @@
     "modified": "2019-09-22T10:11:35-07:00",
     "kind": "deck",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -158,6 +160,7 @@
     "modified": "2019-09-23T07:28:05-07:00",
     "kind": "result",
     "event": "YCS Niagara",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-niagara-falls"
   },
@@ -167,6 +170,7 @@
     "modified": "2019-09-22T11:03:26-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -176,6 +180,7 @@
     "modified": "2019-09-22T11:04:41-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -185,6 +190,7 @@
     "modified": "2019-09-22T16:15:24-07:00",
     "kind": "deck",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -194,6 +200,7 @@
     "modified": "2019-09-22T13:59:39-07:00",
     "kind": "result",
     "event": "YCS Niagara",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-niagara-falls"
   },
@@ -203,6 +210,7 @@
     "modified": "2019-09-22T11:03:17-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -212,6 +220,7 @@
     "modified": "2019-09-22T09:44:39-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -221,6 +230,7 @@
     "modified": "2019-09-22T16:41:18-07:00",
     "kind": "deck",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -239,6 +249,7 @@
     "modified": "2019-09-22T11:03:06-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -248,6 +259,7 @@
     "modified": "2019-09-22T12:00:30-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -257,6 +269,7 @@
     "modified": "2019-09-22T16:23:15-07:00",
     "kind": "deck",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -266,6 +279,7 @@
     "modified": "2019-09-22T16:32:33-07:00",
     "kind": "result",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -275,6 +289,7 @@
     "modified": "2019-09-22T11:02:56-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -284,6 +299,7 @@
     "modified": "2019-09-22T14:17:48-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -293,6 +309,7 @@
     "modified": "2019-09-22T16:41:38-07:00",
     "kind": "deck",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -302,6 +319,7 @@
     "modified": "2019-09-21T17:19:34-07:00",
     "kind": "result",
     "event": "YCS Niagara",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-niagara-falls"
   },
@@ -311,6 +329,7 @@
     "modified": "2019-09-22T07:14:18-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -320,6 +339,7 @@
     "modified": "2019-09-22T14:53:09-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -329,6 +349,7 @@
     "modified": "2019-09-22T08:09:42-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -338,6 +359,7 @@
     "modified": "2019-09-22T16:01:01-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -347,6 +369,7 @@
     "modified": "2019-09-22T08:11:22-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -356,6 +379,7 @@
     "modified": "2019-09-21T08:48:36-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -365,6 +389,7 @@
     "modified": "2019-09-22T09:23:32-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -374,6 +399,7 @@
     "modified": "2019-09-21T12:37:38-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -383,6 +409,7 @@
     "modified": "2019-09-22T09:26:44-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -392,6 +419,7 @@
     "modified": "2019-09-21T11:03:12-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -401,6 +429,7 @@
     "modified": "2019-09-22T10:13:17-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -410,6 +439,7 @@
     "modified": "2019-09-21T12:37:46-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -428,6 +458,7 @@
     "modified": "2019-09-21T13:57:22-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -437,6 +468,7 @@
     "modified": "2019-09-22T16:20:49-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -446,6 +478,7 @@
     "modified": "2019-09-21T14:34:43-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -455,6 +488,7 @@
     "modified": "2019-09-21T07:31:01-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -464,6 +498,7 @@
     "modified": "2019-09-21T15:33:37-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -473,6 +508,7 @@
     "modified": "2019-09-21T13:54:10-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -482,6 +518,7 @@
     "modified": "2019-09-21T16:37:19-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -491,6 +528,7 @@
     "modified": "2019-09-21T14:39:11-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-niagara-falls"
   },
@@ -500,6 +538,7 @@
     "modified": "2019-09-21T17:37:03-07:00",
     "kind": "feature",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -509,6 +548,7 @@
     "modified": "2019-09-21T15:06:58-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -518,6 +558,7 @@
     "modified": "2019-09-21T16:09:25-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -527,6 +568,7 @@
     "modified": "2019-09-21T16:52:53-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   },
@@ -536,6 +578,7 @@
     "modified": "2019-09-18T16:18:52-07:00",
     "kind": "news",
     "event": "YCS Niagara",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-niagara-falls"
   }

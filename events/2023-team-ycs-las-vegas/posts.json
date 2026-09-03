@@ -203,6 +203,7 @@
     "modified": "2023-02-20T22:26:23-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
   },
@@ -212,6 +213,7 @@
     "modified": "2023-02-20T23:53:09-08:00",
     "kind": "deck",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
   },
@@ -239,6 +241,7 @@
     "modified": "2023-02-20T22:23:54-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
   },
@@ -248,6 +251,7 @@
     "modified": "2023-02-20T22:22:33-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2023-team-ycs-las-vegas"
   },
@@ -257,6 +261,7 @@
     "modified": "2023-02-20T23:51:18-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
   },
@@ -266,6 +271,7 @@
     "modified": "2023-02-20T22:23:42-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
   },
@@ -275,6 +281,7 @@
     "modified": "2023-02-19T00:27:09-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
   },
@@ -284,6 +291,7 @@
     "modified": "2023-02-20T23:54:39-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
   },
@@ -293,6 +301,7 @@
     "modified": "2023-02-19T13:55:24-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2023-team-ycs-las-vegas"
   }

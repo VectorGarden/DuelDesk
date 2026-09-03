@@ -248,6 +248,7 @@
     "modified": "2026-04-19T10:38:26-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -257,6 +258,7 @@
     "modified": "2026-04-19T14:42:40-07:00",
     "kind": "deck",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -266,6 +268,7 @@
     "modified": "2026-04-19T09:20:19-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -284,6 +287,7 @@
     "modified": "2026-04-19T10:35:06-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -293,6 +297,7 @@
     "modified": "2026-04-19T18:43:20-07:00",
     "kind": "deck",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -311,6 +316,7 @@
     "modified": "2026-04-19T11:20:35-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -320,6 +326,7 @@
     "modified": "2026-04-19T12:10:14-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -329,6 +336,7 @@
     "modified": "2026-04-19T18:14:23-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -338,6 +346,7 @@
     "modified": "2026-04-19T12:44:27-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -347,6 +356,7 @@
     "modified": "2026-04-19T14:42:10-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -356,6 +366,7 @@
     "modified": "2026-04-19T18:17:53-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -365,6 +376,7 @@
     "modified": "2026-04-19T13:35:53-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -374,6 +386,7 @@
     "modified": "2026-04-19T13:56:43-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -383,6 +396,7 @@
     "modified": "2026-04-19T18:24:29-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -392,6 +406,7 @@
     "modified": "2026-04-19T18:21:47-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -401,6 +416,7 @@
     "modified": "2026-04-19T16:59:02-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -410,6 +426,7 @@
     "modified": "2026-04-19T19:22:15-07:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -419,6 +436,7 @@
     "modified": "2026-04-19T19:18:13-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -428,6 +446,7 @@
     "modified": "2026-04-19T16:54:03-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -446,6 +465,7 @@
     "modified": "2026-04-18T10:23:51-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -455,6 +475,7 @@
     "modified": "2026-04-19T18:08:37-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -464,6 +485,7 @@
     "modified": "2026-04-18T10:35:42-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -473,6 +495,7 @@
     "modified": "2026-04-19T18:00:58-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -482,6 +505,7 @@
     "modified": "2026-04-18T11:13:41-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -491,6 +515,7 @@
     "modified": "2026-04-19T19:18:45-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -500,6 +525,7 @@
     "modified": "2026-04-18T12:27:22-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -509,6 +535,7 @@
     "modified": "2026-04-19T19:20:53-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -518,6 +545,7 @@
     "modified": "2026-04-18T13:53:04-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -527,6 +555,7 @@
     "modified": "2026-04-18T12:35:38-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -536,6 +565,7 @@
     "modified": "2026-04-18T17:56:51-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -545,6 +575,7 @@
     "modified": "2026-04-18T12:13:40-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -554,6 +585,7 @@
     "modified": "2026-04-18T20:09:43-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -563,6 +595,7 @@
     "modified": "2026-04-18T13:20:35-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -572,6 +605,7 @@
     "modified": "2026-04-17T09:37:36-07:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -581,6 +615,7 @@
     "modified": "2026-04-18T14:23:13-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -590,6 +625,7 @@
     "modified": "2026-04-18T14:31:59-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -599,6 +635,7 @@
     "modified": "2026-04-18T15:44:06-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -608,6 +645,7 @@
     "modified": "2026-04-18T17:13:53-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -617,6 +655,7 @@
     "modified": "2026-04-18T19:06:36-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -626,6 +665,7 @@
     "modified": "2026-04-18T18:54:05-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -635,6 +675,7 @@
     "modified": "2026-04-18T19:58:22-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   },
@@ -644,6 +685,7 @@
     "modified": "2026-04-18T20:21:28-07:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2026-04-team-ycs-las-vegas"
   }

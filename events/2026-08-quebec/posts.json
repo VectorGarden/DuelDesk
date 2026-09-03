@@ -464,6 +464,7 @@
     "modified": "2026-08-16T07:08:54-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -473,6 +474,7 @@
     "modified": "2026-08-16T18:08:52-07:00",
     "kind": "deck",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -482,6 +484,7 @@
     "modified": "2026-08-19T19:35:45-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -500,6 +503,7 @@
     "modified": "2026-08-16T07:31:51-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -509,6 +513,7 @@
     "modified": "2026-08-16T17:35:29-07:00",
     "kind": "deck",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -518,6 +523,7 @@
     "modified": "2026-08-16T11:18:55-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-08-quebec"
   },
@@ -527,6 +533,7 @@
     "modified": "2026-08-16T05:59:21-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -536,6 +543,7 @@
     "modified": "2026-08-16T09:12:52-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -545,6 +553,7 @@
     "modified": "2026-08-14T16:32:50-07:00",
     "kind": "deck",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -554,6 +563,7 @@
     "modified": "2026-08-16T12:53:28-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -563,6 +573,7 @@
     "modified": "2026-08-16T06:33:49-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -572,6 +583,7 @@
     "modified": "2026-08-16T09:14:46-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -581,6 +593,7 @@
     "modified": "2026-08-16T13:16:53-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-08-quebec"
   },
@@ -590,6 +603,7 @@
     "modified": "2026-08-16T07:58:44-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -599,6 +613,7 @@
     "modified": "2026-08-16T10:06:09-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -608,6 +623,7 @@
     "modified": "2026-08-16T16:43:48-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -617,6 +633,7 @@
     "modified": "2026-08-16T09:28:56-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -626,6 +643,7 @@
     "modified": "2026-08-16T10:40:16-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -635,6 +653,7 @@
     "modified": "2026-08-16T16:56:52-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-08-quebec"
   },
@@ -644,6 +663,7 @@
     "modified": "2026-08-16T09:28:35-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -653,6 +673,7 @@
     "modified": "2026-08-16T11:07:30-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -662,6 +683,7 @@
     "modified": "2026-08-16T17:04:03-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -671,6 +693,7 @@
     "modified": "2026-08-16T09:33:35-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -680,6 +703,7 @@
     "modified": "2026-08-16T16:35:37-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -689,6 +713,7 @@
     "modified": "2026-08-16T17:21:28-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-08-quebec"
   },
@@ -698,6 +723,7 @@
     "modified": "2026-08-16T09:45:25-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -707,6 +733,7 @@
     "modified": "2026-08-16T16:25:57-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -716,6 +743,7 @@
     "modified": "2026-08-15T15:27:57-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-08-quebec"
   },
@@ -725,6 +753,7 @@
     "modified": "2026-08-16T09:54:23-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -734,6 +763,7 @@
     "modified": "2026-08-16T16:35:48-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -743,6 +773,7 @@
     "modified": "2026-08-15T15:28:11-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-08-quebec"
   },
@@ -752,6 +783,7 @@
     "modified": "2026-08-16T11:11:46-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -761,6 +793,7 @@
     "modified": "2026-08-16T17:09:07-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -770,6 +803,7 @@
     "modified": "2026-08-14T16:36:19-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-08-quebec"
   },
@@ -779,6 +813,7 @@
     "modified": "2026-08-16T17:17:46-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -788,6 +823,7 @@
     "modified": "2026-08-16T17:15:09-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -797,6 +833,7 @@
     "modified": "2026-08-14T16:38:07-07:00",
     "kind": "result",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-08-quebec"
   },
@@ -806,6 +843,7 @@
     "modified": "2026-08-16T17:18:42-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -815,6 +853,7 @@
     "modified": "2026-08-16T18:07:27-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -824,6 +863,7 @@
     "modified": "2026-08-16T17:51:21-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -833,6 +873,7 @@
     "modified": "2026-08-16T17:55:47-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -842,6 +883,7 @@
     "modified": "2026-08-16T17:50:06-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -851,6 +893,7 @@
     "modified": "2026-08-16T18:35:13-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -860,6 +903,7 @@
     "modified": "2026-08-15T06:42:23-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -869,6 +913,7 @@
     "modified": "2026-08-15T13:38:02-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -878,6 +923,7 @@
     "modified": "2026-08-15T07:08:38-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -887,6 +933,7 @@
     "modified": "2026-08-15T08:04:57-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -896,6 +943,7 @@
     "modified": "2026-08-15T07:42:00-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -905,6 +953,7 @@
     "modified": "2026-08-15T09:13:39-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -914,6 +963,7 @@
     "modified": "2026-08-15T09:14:25-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -923,6 +973,7 @@
     "modified": "2026-08-15T09:20:01-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -932,6 +983,7 @@
     "modified": "2026-08-15T13:36:08-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -941,6 +993,7 @@
     "modified": "2026-08-15T11:55:08-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -950,6 +1003,7 @@
     "modified": "2026-08-15T16:29:51-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -959,6 +1013,7 @@
     "modified": "2026-08-15T11:44:08-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -968,6 +1023,7 @@
     "modified": "2026-08-15T12:25:36-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -977,6 +1033,7 @@
     "modified": "2026-08-15T12:19:56-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -986,6 +1043,7 @@
     "modified": "2026-08-15T14:41:47-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -995,6 +1053,7 @@
     "modified": "2026-08-15T14:30:35-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -1004,6 +1063,7 @@
     "modified": "2026-08-15T14:53:54-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -1013,6 +1073,7 @@
     "modified": "2026-08-15T15:26:52-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -1022,6 +1083,7 @@
     "modified": "2026-08-15T15:57:16-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-08-quebec"
   },
@@ -1031,6 +1093,7 @@
     "modified": "2026-08-15T16:30:35-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -1040,6 +1103,7 @@
     "modified": "2026-08-15T16:12:01-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -1049,6 +1113,7 @@
     "modified": "2026-08-15T15:50:14-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -1058,6 +1123,7 @@
     "modified": "2026-08-15T17:05:00-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1067,6 +1133,7 @@
     "modified": "2026-08-15T17:03:41-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -1076,6 +1143,7 @@
     "modified": "2026-08-15T17:15:51-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1085,6 +1153,7 @@
     "modified": "2026-08-15T16:53:53-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-08-quebec"
   },
@@ -1094,6 +1163,7 @@
     "modified": "2026-08-14T09:46:08-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1103,6 +1173,7 @@
     "modified": "2026-08-14T08:21:38-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -1112,6 +1183,7 @@
     "modified": "2026-08-14T07:38:29-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1121,6 +1193,7 @@
     "modified": "2026-08-14T10:28:44-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -1130,6 +1203,7 @@
     "modified": "2026-08-14T14:31:58-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1139,6 +1213,7 @@
     "modified": "2026-08-14T11:00:22-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -1148,6 +1223,7 @@
     "modified": "2026-08-14T15:14:12-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1157,6 +1233,7 @@
     "modified": "2026-08-14T13:18:34-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -1166,6 +1243,7 @@
     "modified": "2026-08-14T15:32:23-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1175,6 +1253,7 @@
     "modified": "2026-08-14T14:55:37-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -1184,6 +1263,7 @@
     "modified": "2026-08-14T16:33:17-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1193,6 +1273,7 @@
     "modified": "2026-08-14T15:32:29-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -1202,6 +1283,7 @@
     "modified": "2026-08-11T10:49:43-07:00",
     "kind": "news",
     "event": "YCS Montréal",
+    "article": true,
     "format": null,
     "slug": "2026-08-quebec"
   },
@@ -1211,6 +1293,7 @@
     "modified": "2026-08-14T14:39:43-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -1220,6 +1303,7 @@
     "modified": "2026-08-14T15:57:11-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   },
@@ -1229,6 +1313,7 @@
     "modified": "2026-08-14T16:28:40-07:00",
     "kind": "feature",
     "event": "YCS Montréal",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-08-quebec"
   }

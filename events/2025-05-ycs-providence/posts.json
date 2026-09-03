@@ -221,6 +221,7 @@
     "modified": "2025-05-30T16:55:44-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -230,6 +231,7 @@
     "modified": "2025-05-29T16:48:53-07:00",
     "kind": "deck",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -239,6 +241,7 @@
     "modified": "2025-05-30T16:28:54-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2025-05-ycs-providence"
   },
@@ -257,6 +260,7 @@
     "modified": "2025-05-30T16:48:00-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -266,6 +270,7 @@
     "modified": "2025-05-04T10:19:58-07:00",
     "kind": "deck",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -275,6 +280,7 @@
     "modified": "2025-05-30T16:27:58-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -284,6 +290,7 @@
     "modified": "2025-05-30T16:48:47-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -293,6 +300,7 @@
     "modified": "2025-05-30T16:47:26-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -302,6 +310,7 @@
     "modified": "2025-05-04T11:37:56-07:00",
     "kind": "deck",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -311,6 +320,7 @@
     "modified": "2025-05-30T16:22:30-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2025-05-ycs-providence"
   },
@@ -320,6 +330,7 @@
     "modified": "2025-05-30T16:44:17-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": "Public Events",
     "slug": "2025-05-ycs-providence"
   },
@@ -329,6 +340,7 @@
     "modified": "2025-05-30T16:46:52-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -338,6 +350,7 @@
     "modified": "2025-05-04T12:37:50-07:00",
     "kind": "deck",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -347,6 +360,7 @@
     "modified": "2025-05-30T16:21:51-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2025-05-ycs-providence"
   },
@@ -356,6 +370,7 @@
     "modified": "2025-05-30T16:41:30-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -365,6 +380,7 @@
     "modified": "2025-05-30T16:46:29-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -374,6 +390,7 @@
     "modified": "2025-05-04T14:24:11-07:00",
     "kind": "deck",
     "event": "YCS Providence",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2025-05-ycs-providence"
   },
@@ -383,6 +400,7 @@
     "modified": "2025-05-30T16:21:08-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -392,6 +410,7 @@
     "modified": "2025-05-30T16:39:36-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2025-05-ycs-providence"
   },
@@ -401,6 +420,7 @@
     "modified": "2025-05-30T16:45:18-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -410,6 +430,7 @@
     "modified": "2025-05-04T15:56:59-07:00",
     "kind": "deck",
     "event": "YCS Providence",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2025-05-ycs-providence"
   },
@@ -419,6 +440,7 @@
     "modified": "2025-05-30T16:19:20-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": "Public Events",
     "slug": "2025-05-ycs-providence"
   },
@@ -428,6 +450,7 @@
     "modified": "2025-05-30T16:35:50-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2025-05-ycs-providence"
   },
@@ -437,6 +460,7 @@
     "modified": "2025-05-30T16:44:43-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -446,6 +470,7 @@
     "modified": "2025-05-30T16:18:47-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": "Public Events",
     "slug": "2025-05-ycs-providence"
   },
@@ -455,6 +480,7 @@
     "modified": "2025-05-30T16:38:01-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2025-05-ycs-providence"
   },
@@ -464,6 +490,7 @@
     "modified": "2025-05-30T16:43:35-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -473,6 +500,7 @@
     "modified": "2025-05-30T16:17:46-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2025-05-ycs-providence"
   },
@@ -482,6 +510,7 @@
     "modified": "2025-05-30T16:32:07-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2025-05-ycs-providence"
   },
@@ -491,6 +520,7 @@
     "modified": "2025-05-30T16:40:57-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -500,6 +530,7 @@
     "modified": "2025-05-29T16:49:21-07:00",
     "kind": "result",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -509,6 +540,7 @@
     "modified": "2025-05-30T16:27:30-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2025-05-ycs-providence"
   },
@@ -518,6 +550,7 @@
     "modified": "2025-05-30T16:40:28-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -536,6 +569,7 @@
     "modified": "2025-05-30T16:38:29-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -545,6 +579,7 @@
     "modified": "2025-05-30T16:22:13-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -554,6 +589,7 @@
     "modified": "2025-05-30T16:37:14-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -563,6 +599,7 @@
     "modified": "2025-05-30T16:20:02-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -572,6 +609,7 @@
     "modified": "2025-05-30T16:36:54-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -581,6 +619,7 @@
     "modified": "2025-05-30T16:17:26-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -590,6 +629,7 @@
     "modified": "2025-05-30T16:36:29-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -608,6 +648,7 @@
     "modified": "2025-05-30T16:31:45-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -617,6 +658,7 @@
     "modified": "2025-05-04T06:17:25-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -626,6 +668,7 @@
     "modified": "2025-05-30T16:31:05-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -635,6 +678,7 @@
     "modified": "2025-05-04T06:49:48-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -644,6 +688,7 @@
     "modified": "2025-05-30T16:30:35-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -653,6 +698,7 @@
     "modified": "2025-05-04T08:06:53-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -662,6 +708,7 @@
     "modified": "2025-05-30T16:30:00-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -671,6 +718,7 @@
     "modified": "2025-05-04T12:47:48-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -680,6 +728,7 @@
     "modified": "2025-05-30T16:29:13-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -689,6 +738,7 @@
     "modified": "2025-05-03T08:53:57-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -698,6 +748,7 @@
     "modified": "2025-05-30T16:26:54-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -707,6 +758,7 @@
     "modified": "2025-05-03T13:27:00-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -716,6 +768,7 @@
     "modified": "2025-05-30T16:26:21-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -725,6 +778,7 @@
     "modified": "2025-05-03T16:52:05-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -734,6 +788,7 @@
     "modified": "2025-05-30T16:18:22-07:00",
     "kind": "feature",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -743,6 +798,7 @@
     "modified": "2025-05-03T13:26:42-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -752,6 +808,7 @@
     "modified": "2025-05-03T14:45:23-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -761,6 +818,7 @@
     "modified": "2025-05-03T16:53:39-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -770,6 +828,7 @@
     "modified": "2025-05-03T17:03:20-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -779,6 +838,7 @@
     "modified": "2025-05-03T19:03:46-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   },
@@ -788,6 +848,7 @@
     "modified": "2025-04-15T15:31:00-07:00",
     "kind": "news",
     "event": "YCS Providence",
+    "article": true,
     "format": null,
     "slug": "2025-05-ycs-providence"
   }

@@ -230,6 +230,7 @@
     "modified": "2023-11-05T08:49:12-08:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -239,6 +240,7 @@
     "modified": "2023-11-05T07:03:31-08:00",
     "kind": "deck",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -248,6 +250,7 @@
     "modified": "2023-11-05T16:05:04-08:00",
     "kind": "result",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -266,6 +269,7 @@
     "modified": "2023-11-05T15:39:24-08:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -275,6 +279,7 @@
     "modified": "2023-11-05T13:32:35-08:00",
     "kind": "deck",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -284,6 +289,7 @@
     "modified": "2023-11-05T16:07:16-08:00",
     "kind": "result",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -293,6 +299,7 @@
     "modified": "2023-11-05T06:29:07-08:00",
     "kind": "news",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -302,6 +309,7 @@
     "modified": "2023-11-05T11:02:32-08:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -311,6 +319,7 @@
     "modified": "2023-11-05T13:29:07-08:00",
     "kind": "deck",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -320,6 +329,7 @@
     "modified": "2023-11-05T16:45:28-08:00",
     "kind": "result",
     "event": "YCS Richmond",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2023-ycs-richmond"
   },
@@ -329,6 +339,7 @@
     "modified": "2023-11-05T07:13:50-08:00",
     "kind": "news",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -338,6 +349,7 @@
     "modified": "2023-11-05T13:57:40-08:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -347,6 +359,7 @@
     "modified": "2023-11-05T13:32:10-08:00",
     "kind": "deck",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -356,6 +369,7 @@
     "modified": "2023-11-05T10:12:14-08:00",
     "kind": "news",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -365,6 +379,7 @@
     "modified": "2023-11-05T14:18:38-08:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -374,6 +389,7 @@
     "modified": "2023-11-05T17:20:07-08:00",
     "kind": "deck",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -383,6 +399,7 @@
     "modified": "2023-11-05T15:37:40-08:00",
     "kind": "news",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -392,6 +409,7 @@
     "modified": "2023-11-05T16:43:32-08:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -401,6 +419,7 @@
     "modified": "2023-11-04T07:57:14-07:00",
     "kind": "news",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -410,6 +429,7 @@
     "modified": "2023-11-04T10:23:44-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -419,6 +439,7 @@
     "modified": "2023-11-04T08:05:57-07:00",
     "kind": "news",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -428,6 +449,7 @@
     "modified": "2023-11-04T10:58:34-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -437,6 +459,7 @@
     "modified": "2023-11-04T08:25:02-07:00",
     "kind": "news",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -446,6 +469,7 @@
     "modified": "2023-11-04T12:05:39-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -455,6 +479,7 @@
     "modified": "2023-11-04T21:56:45-07:00",
     "kind": "news",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -464,6 +489,7 @@
     "modified": "2023-11-04T15:09:51-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -473,6 +499,7 @@
     "modified": "2023-11-04T14:26:40-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -482,6 +509,7 @@
     "modified": "2023-11-04T15:37:46-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -491,6 +519,7 @@
     "modified": "2023-11-04T17:08:55-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -500,6 +529,7 @@
     "modified": "2023-11-04T18:24:35-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   },
@@ -509,6 +539,7 @@
     "modified": "2023-11-04T19:01:39-07:00",
     "kind": "feature",
     "event": "YCS Richmond",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-richmond"
   }

@@ -158,6 +158,7 @@
     "modified": "2019-10-07T08:16:43-07:00",
     "kind": "feature",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -167,6 +168,7 @@
     "modified": "2019-10-06T10:33:16-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -176,6 +178,7 @@
     "modified": "2019-10-06T15:18:52-07:00",
     "kind": "result",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -194,6 +197,7 @@
     "modified": "2019-10-06T16:03:00-07:00",
     "kind": "feature",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -203,6 +207,7 @@
     "modified": "2019-10-06T11:08:21-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -212,6 +217,7 @@
     "modified": "2019-10-06T15:26:20-07:00",
     "kind": "result",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-ft-worth"
   },
@@ -221,6 +227,7 @@
     "modified": "2019-10-06T23:42:08-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -230,6 +237,7 @@
     "modified": "2019-10-06T17:10:13-07:00",
     "kind": "feature",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -239,6 +247,7 @@
     "modified": "2019-10-06T11:59:20-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -248,6 +257,7 @@
     "modified": "2019-10-06T16:24:29-07:00",
     "kind": "result",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-ft-worth"
   },
@@ -257,6 +267,7 @@
     "modified": "2019-10-06T07:12:17-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -266,6 +277,7 @@
     "modified": "2019-10-06T18:37:23-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -275,6 +287,7 @@
     "modified": "2019-10-06T16:29:47-07:00",
     "kind": "result",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-ft-worth"
   },
@@ -284,6 +297,7 @@
     "modified": "2019-10-06T08:03:28-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -293,6 +307,7 @@
     "modified": "2019-10-06T18:42:03-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -302,6 +317,7 @@
     "modified": "2019-10-06T17:18:51-07:00",
     "kind": "result",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-ft-worth"
   },
@@ -311,6 +327,7 @@
     "modified": "2019-10-06T08:21:38-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -320,6 +337,7 @@
     "modified": "2019-10-06T19:07:09-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -329,6 +347,7 @@
     "modified": "2019-10-06T17:41:11-07:00",
     "kind": "result",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-ft-worth"
   },
@@ -338,6 +357,7 @@
     "modified": "2019-10-06T08:58:43-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -347,6 +367,7 @@
     "modified": "2019-10-06T19:22:18-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -356,6 +377,7 @@
     "modified": "2019-10-06T17:48:31-07:00",
     "kind": "result",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -365,6 +387,7 @@
     "modified": "2019-10-06T09:01:57-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -374,6 +397,7 @@
     "modified": "2019-10-05T11:34:18-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -383,6 +407,7 @@
     "modified": "2019-10-05T16:01:27-07:00",
     "kind": "result",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-ft-worth"
   },
@@ -392,6 +417,7 @@
     "modified": "2019-10-06T10:39:38-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -401,6 +427,7 @@
     "modified": "2019-10-05T17:21:51-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -410,6 +437,7 @@
     "modified": "2019-10-06T11:19:53-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -419,6 +447,7 @@
     "modified": "2019-10-05T18:11:35-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -428,6 +457,7 @@
     "modified": "2019-10-06T11:30:06-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -437,6 +467,7 @@
     "modified": "2019-10-05T19:24:28-07:00",
     "kind": "deck",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -446,6 +477,7 @@
     "modified": "2019-10-06T13:35:46-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -455,6 +487,7 @@
     "modified": "2019-10-06T15:16:02-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -464,6 +497,7 @@
     "modified": "2019-10-06T15:32:37-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-ft-worth"
   },
@@ -473,6 +507,7 @@
     "modified": "2019-10-06T15:42:02-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -482,6 +517,7 @@
     "modified": "2019-10-06T19:21:45-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -491,6 +527,7 @@
     "modified": "2019-10-05T08:54:55-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -500,6 +537,7 @@
     "modified": "2019-10-05T09:22:11-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -509,6 +547,7 @@
     "modified": "2019-10-05T09:46:53-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -518,6 +557,7 @@
     "modified": "2019-10-05T11:04:24-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -527,6 +567,7 @@
     "modified": "2019-10-05T11:44:54-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -536,6 +577,7 @@
     "modified": "2019-10-05T12:19:30-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -545,6 +587,7 @@
     "modified": "2019-10-05T12:35:58-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -554,6 +597,7 @@
     "modified": "2019-10-05T13:35:05-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-ft-worth"
   },
@@ -563,6 +607,7 @@
     "modified": "2019-10-05T13:34:27-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-ft-worth"
   },
@@ -572,6 +617,7 @@
     "modified": "2019-10-05T14:16:41-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -581,6 +627,7 @@
     "modified": "2019-10-05T14:35:25-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -590,6 +637,7 @@
     "modified": "2019-10-05T14:58:56-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -599,6 +647,7 @@
     "modified": "2019-10-05T15:09:09-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-ft-worth"
   },
@@ -608,6 +657,7 @@
     "modified": "2019-10-05T15:15:29-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -617,6 +667,7 @@
     "modified": "2019-10-05T16:28:38-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -626,6 +677,7 @@
     "modified": "2019-10-05T16:53:07-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -635,6 +687,7 @@
     "modified": "2019-10-05T18:18:47-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -644,6 +697,7 @@
     "modified": "2019-10-05T18:24:48-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -653,6 +707,7 @@
     "modified": "2019-10-05T18:45:43-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   },
@@ -662,6 +717,7 @@
     "modified": "2019-10-05T18:56:11-07:00",
     "kind": "news",
     "event": "YCS Ft. Worth",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-ft-worth"
   }

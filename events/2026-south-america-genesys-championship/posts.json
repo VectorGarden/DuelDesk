@@ -212,6 +212,7 @@
     "modified": "2026-06-15T17:09:42-07:00",
     "kind": "news",
     "event": "South America Genesys Championship",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-south-america-genesys-championship"
   }

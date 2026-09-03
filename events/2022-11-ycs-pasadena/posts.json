@@ -212,6 +212,7 @@
     "modified": "2022-11-07T20:28:01-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -221,6 +222,7 @@
     "modified": "2022-11-07T06:23:00-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -248,6 +250,7 @@
     "modified": "2022-11-06T10:09:54-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -257,6 +260,7 @@
     "modified": "2022-11-05T11:16:47-07:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -266,6 +270,7 @@
     "modified": "2022-11-06T17:25:53-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2022-11-ycs-pasadena"
   },
@@ -275,6 +280,7 @@
     "modified": "2022-11-06T13:54:27-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -284,6 +290,7 @@
     "modified": "2022-11-06T11:46:05-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -293,6 +300,7 @@
     "modified": "2022-11-06T21:25:48-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -302,6 +310,7 @@
     "modified": "2022-11-06T16:05:44-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2022-11-ycs-pasadena"
   },
@@ -311,6 +320,7 @@
     "modified": "2022-11-06T12:47:29-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -320,6 +330,7 @@
     "modified": "2022-11-05T21:17:58-07:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2022-11-ycs-pasadena"
   },
@@ -329,6 +340,7 @@
     "modified": "2022-11-06T18:01:26-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2022-11-ycs-pasadena"
   },
@@ -338,6 +350,7 @@
     "modified": "2022-11-06T15:18:32-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -347,6 +360,7 @@
     "modified": "2022-11-05T21:24:30-07:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -356,6 +370,7 @@
     "modified": "2022-11-06T21:07:47-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -365,6 +380,7 @@
     "modified": "2022-11-06T18:52:22-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -374,6 +390,7 @@
     "modified": "2022-11-06T21:59:40-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -383,6 +400,7 @@
     "modified": "2022-11-06T18:52:42-08:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -392,6 +410,7 @@
     "modified": "2022-11-05T10:32:37-07:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -401,6 +420,7 @@
     "modified": "2022-11-05T15:40:29-07:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -410,6 +430,7 @@
     "modified": "2022-11-05T12:47:15-07:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -419,6 +440,7 @@
     "modified": "2022-11-05T11:59:57-07:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -428,6 +450,7 @@
     "modified": "2022-11-05T16:37:11-07:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -437,6 +460,7 @@
     "modified": "2022-11-05T16:26:58-07:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -446,6 +470,7 @@
     "modified": "2022-11-05T16:34:19-07:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2022-11-ycs-pasadena"
   },
@@ -455,6 +480,7 @@
     "modified": "2022-11-05T18:44:33-07:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -464,6 +490,7 @@
     "modified": "2022-11-05T20:26:17-07:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -473,6 +500,7 @@
     "modified": "2022-11-05T21:08:31-07:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   },
@@ -482,6 +510,7 @@
     "modified": "2022-11-05T23:16:31-07:00",
     "kind": "feature",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2022-11-ycs-pasadena"
   }

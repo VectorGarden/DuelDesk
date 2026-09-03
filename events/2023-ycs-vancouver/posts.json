@@ -230,6 +230,7 @@
     "modified": "2023-09-10T10:41:56-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -239,6 +240,7 @@
     "modified": "2023-09-10T14:46:03-07:00",
     "kind": "deck",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -248,6 +250,7 @@
     "modified": "2023-09-10T17:17:16-07:00",
     "kind": "result",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -257,6 +260,7 @@
     "modified": "2023-09-10T10:09:50-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -266,6 +270,7 @@
     "modified": "2023-09-10T11:44:18-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -275,6 +280,7 @@
     "modified": "2023-09-10T13:04:36-07:00",
     "kind": "deck",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -284,6 +290,7 @@
     "modified": "2023-09-10T17:22:20-07:00",
     "kind": "result",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -293,6 +300,7 @@
     "modified": "2023-09-10T11:35:23-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2023-ycs-vancouver"
   },
@@ -302,6 +310,7 @@
     "modified": "2023-09-10T15:37:54-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -311,6 +320,7 @@
     "modified": "2023-09-10T19:20:58-07:00",
     "kind": "deck",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -320,6 +330,7 @@
     "modified": "2023-09-10T17:31:36-07:00",
     "kind": "result",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -329,6 +340,7 @@
     "modified": "2023-09-10T11:56:09-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -338,6 +350,7 @@
     "modified": "2023-09-10T15:20:30-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -356,6 +369,7 @@
     "modified": "2023-09-10T15:27:21-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -365,6 +379,7 @@
     "modified": "2023-09-09T10:23:21-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -374,6 +389,7 @@
     "modified": "2023-09-10T16:27:27-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -383,6 +399,7 @@
     "modified": "2023-09-09T10:20:04-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -392,6 +409,7 @@
     "modified": "2023-09-10T17:43:58-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -401,6 +419,7 @@
     "modified": "2023-09-09T12:22:21-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -410,6 +429,7 @@
     "modified": "2023-09-10T19:07:17-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -419,6 +439,7 @@
     "modified": "2023-09-09T11:57:25-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -428,6 +449,7 @@
     "modified": "2023-09-09T13:59:51-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -437,6 +459,7 @@
     "modified": "2023-09-09T10:53:12-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -446,6 +469,7 @@
     "modified": "2023-09-09T12:25:19-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -455,6 +479,7 @@
     "modified": "2023-09-09T12:11:26-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -464,6 +489,7 @@
     "modified": "2023-09-09T14:45:51-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -473,6 +499,7 @@
     "modified": "2023-09-09T12:23:29-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -482,6 +509,7 @@
     "modified": "2023-09-09T15:59:57-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -491,6 +519,7 @@
     "modified": "2023-09-09T13:05:14-07:00",
     "kind": "news",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -500,6 +529,7 @@
     "modified": "2023-09-09T17:10:23-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -509,6 +539,7 @@
     "modified": "2023-09-09T19:01:00-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -518,6 +549,7 @@
     "modified": "2023-09-09T19:27:05-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   },
@@ -527,6 +559,7 @@
     "modified": "2023-09-09T20:09:01-07:00",
     "kind": "feature",
     "event": "YCS Vancouver",
+    "article": true,
     "format": null,
     "slug": "2023-ycs-vancouver"
   }

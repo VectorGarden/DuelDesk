@@ -752,6 +752,7 @@
     "modified": "2026-02-15T07:24:30-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -761,6 +762,7 @@
     "modified": "2026-02-15T18:15:24-08:00",
     "kind": "deck",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -770,6 +772,7 @@
     "modified": "2026-02-15T16:47:13-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-02-300th-na"
   },
@@ -779,6 +782,7 @@
     "modified": "2026-02-15T08:14:17-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -788,6 +792,7 @@
     "modified": "2026-02-15T07:42:53-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -797,6 +802,7 @@
     "modified": "2026-02-15T18:29:55-08:00",
     "kind": "deck",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -806,6 +812,7 @@
     "modified": "2026-02-15T16:55:04-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-02-300th-na"
   },
@@ -824,6 +831,7 @@
     "modified": "2026-02-15T09:24:49-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -833,6 +841,7 @@
     "modified": "2026-02-15T17:45:55-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-02-300th-na"
   },
@@ -842,6 +851,7 @@
     "modified": "2026-02-15T06:52:42-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -851,6 +861,7 @@
     "modified": "2026-02-15T09:22:33-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -860,6 +871,7 @@
     "modified": "2026-02-15T17:02:48-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-02-300th-na"
   },
@@ -869,6 +881,7 @@
     "modified": "2026-02-15T06:52:52-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -878,6 +891,7 @@
     "modified": "2026-02-15T10:35:42-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -887,6 +901,7 @@
     "modified": "2026-02-15T17:08:54-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -896,6 +911,7 @@
     "modified": "2026-02-15T05:50:51-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-02-300th-na"
   },
@@ -905,6 +921,7 @@
     "modified": "2026-02-15T12:05:07-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -914,6 +931,7 @@
     "modified": "2026-02-15T17:31:59-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -923,6 +941,7 @@
     "modified": "2026-02-15T07:55:14-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -932,6 +951,7 @@
     "modified": "2026-02-15T13:17:58-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -941,6 +961,7 @@
     "modified": "2026-02-15T18:20:09-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -950,6 +971,7 @@
     "modified": "2026-02-15T07:51:14-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -959,6 +981,7 @@
     "modified": "2026-02-15T13:13:20-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -968,6 +991,7 @@
     "modified": "2026-02-14T18:35:36-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2026-02-300th-na"
   },
@@ -977,6 +1001,7 @@
     "modified": "2026-02-15T09:55:21-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -986,6 +1011,7 @@
     "modified": "2026-02-15T16:38:08-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -995,6 +1021,7 @@
     "modified": "2026-02-14T19:13:06-08:00",
     "kind": "result",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-02-300th-na"
   },
@@ -1004,6 +1031,7 @@
     "modified": "2026-02-15T08:14:19-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1013,6 +1041,7 @@
     "modified": "2026-02-15T16:57:16-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-02-300th-na"
   },
@@ -1022,6 +1051,7 @@
     "modified": "2026-02-15T09:27:16-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1031,6 +1061,7 @@
     "modified": "2026-02-14T10:38:27-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1040,6 +1071,7 @@
     "modified": "2026-02-15T09:33:08-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1049,6 +1081,7 @@
     "modified": "2026-02-14T09:14:03-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1058,6 +1091,7 @@
     "modified": "2026-02-15T10:26:19-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1067,6 +1101,7 @@
     "modified": "2026-02-14T10:39:09-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1076,6 +1111,7 @@
     "modified": "2026-02-15T10:54:06-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1085,6 +1121,7 @@
     "modified": "2026-02-14T11:12:10-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1103,6 +1140,7 @@
     "modified": "2026-02-14T13:10:46-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1112,6 +1150,7 @@
     "modified": "2026-02-15T11:28:44-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1121,6 +1160,7 @@
     "modified": "2026-02-14T12:23:24-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1139,6 +1179,7 @@
     "modified": "2026-02-14T14:19:46-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1148,6 +1189,7 @@
     "modified": "2026-02-15T13:23:17-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1157,6 +1199,7 @@
     "modified": "2026-02-14T14:57:22-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1166,6 +1209,7 @@
     "modified": "2026-02-15T13:33:54-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-02-300th-na"
   },
@@ -1175,6 +1219,7 @@
     "modified": "2026-02-14T17:13:33-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1193,6 +1238,7 @@
     "modified": "2026-02-14T17:16:16-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1211,6 +1257,7 @@
     "modified": "2026-02-14T17:32:09-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1220,6 +1267,7 @@
     "modified": "2026-02-15T16:46:13-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1229,6 +1277,7 @@
     "modified": "2026-02-14T18:51:46-08:00",
     "kind": "feature",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1238,6 +1287,7 @@
     "modified": "2026-02-15T16:43:13-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Public Events",
     "slug": "2026-02-300th-na"
   },
@@ -1247,6 +1297,7 @@
     "modified": "2026-02-15T17:18:44-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1256,6 +1307,7 @@
     "modified": "2026-02-15T18:11:30-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1265,6 +1317,7 @@
     "modified": "2026-02-14T19:18:08-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1274,6 +1327,7 @@
     "modified": "2026-02-14T09:35:51-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1283,6 +1337,7 @@
     "modified": "2026-02-14T09:23:47-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1292,6 +1347,7 @@
     "modified": "2026-02-14T09:36:43-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1301,6 +1357,7 @@
     "modified": "2026-02-14T09:36:05-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1310,6 +1367,7 @@
     "modified": "2026-02-14T06:48:05-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1319,6 +1377,7 @@
     "modified": "2026-02-14T08:34:35-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1328,6 +1387,7 @@
     "modified": "2026-02-14T07:11:14-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1337,6 +1397,7 @@
     "modified": "2026-02-14T07:28:53-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": null,
     "slug": "2026-02-300th-na"
   },
@@ -1355,6 +1416,7 @@
     "modified": "2026-02-14T12:35:11-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1364,6 +1426,7 @@
     "modified": "2026-02-14T14:40:01-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1373,6 +1436,7 @@
     "modified": "2026-02-14T15:19:47-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1382,6 +1446,7 @@
     "modified": "2026-02-14T14:47:30-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2026-02-300th-na"
   },
@@ -1391,6 +1456,7 @@
     "modified": "2026-02-14T15:25:00-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1400,6 +1466,7 @@
     "modified": "2026-02-14T16:48:28-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Genesys",
     "slug": "2026-02-300th-na"
   },
@@ -1409,6 +1476,7 @@
     "modified": "2026-02-14T17:34:22-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },
@@ -1418,6 +1486,7 @@
     "modified": "2026-02-14T18:44:46-08:00",
     "kind": "news",
     "event": "300th YCS in Richmond",
+    "article": true,
     "format": "Advanced",
     "slug": "2026-02-300th-na"
   },

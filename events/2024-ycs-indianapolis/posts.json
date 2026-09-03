@@ -194,6 +194,7 @@
     "modified": "2024-06-02T13:07:43-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -203,6 +204,7 @@
     "modified": "2024-06-02T09:54:24-07:00",
     "kind": "deck",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -212,6 +214,7 @@
     "modified": "2024-06-02T12:42:56-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2024-ycs-indianapolis"
   },
@@ -221,6 +224,7 @@
     "modified": "2024-06-02T05:55:37-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -230,6 +234,7 @@
     "modified": "2024-06-02T13:07:26-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -239,6 +244,7 @@
     "modified": "2024-06-02T10:40:31-07:00",
     "kind": "deck",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -248,6 +254,7 @@
     "modified": "2024-06-02T14:27:31-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2024-ycs-indianapolis"
   },
@@ -257,6 +264,7 @@
     "modified": "2024-06-02T07:17:43-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -266,6 +274,7 @@
     "modified": "2024-06-02T07:01:19-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -275,6 +284,7 @@
     "modified": "2024-06-02T11:52:52-07:00",
     "kind": "deck",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -284,6 +294,7 @@
     "modified": "2024-06-02T15:42:18-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -293,6 +304,7 @@
     "modified": "2024-06-02T08:07:20-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -302,6 +314,7 @@
     "modified": "2024-06-02T08:08:02-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -311,6 +324,7 @@
     "modified": "2024-06-02T15:29:37-07:00",
     "kind": "deck",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -320,6 +334,7 @@
     "modified": "2024-06-01T18:57:43-07:00",
     "kind": "result",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -329,6 +344,7 @@
     "modified": "2024-06-02T08:11:54-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -338,6 +354,7 @@
     "modified": "2024-06-02T09:05:26-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -347,6 +364,7 @@
     "modified": "2024-06-02T08:06:13-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -356,6 +374,7 @@
     "modified": "2024-06-02T12:04:23-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -365,6 +384,7 @@
     "modified": "2024-06-02T08:34:00-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -374,6 +394,7 @@
     "modified": "2024-06-02T11:38:14-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -383,6 +404,7 @@
     "modified": "2024-06-02T14:02:18-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -392,6 +414,7 @@
     "modified": "2024-06-02T12:14:28-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -401,6 +424,7 @@
     "modified": "2024-06-02T15:35:09-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -410,6 +434,7 @@
     "modified": "2024-06-02T13:43:26-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -428,6 +453,7 @@
     "modified": "2024-06-02T15:26:51-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -437,6 +463,7 @@
     "modified": "2024-06-01T07:53:13-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -446,6 +473,7 @@
     "modified": "2024-06-01T09:03:04-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -455,6 +483,7 @@
     "modified": "2024-06-01T08:02:46-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -464,6 +493,7 @@
     "modified": "2024-06-01T10:18:48-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -473,6 +503,7 @@
     "modified": "2024-06-01T09:05:16-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -482,6 +513,7 @@
     "modified": "2024-06-01T12:52:13-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -491,6 +523,7 @@
     "modified": "2024-06-01T10:23:31-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -500,6 +533,7 @@
     "modified": "2024-06-01T13:23:31-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -509,6 +543,7 @@
     "modified": "2024-06-01T09:44:40-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -518,6 +553,7 @@
     "modified": "2024-06-01T14:13:58-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -527,6 +563,7 @@
     "modified": "2024-06-01T11:31:27-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -536,6 +573,7 @@
     "modified": "2024-06-01T15:47:21-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -545,6 +583,7 @@
     "modified": "2024-06-01T14:37:46-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -554,6 +593,7 @@
     "modified": "2024-06-01T15:25:58-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -563,6 +603,7 @@
     "modified": "2024-06-01T14:37:29-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -572,6 +613,7 @@
     "modified": "2024-06-01T17:16:08-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -581,6 +623,7 @@
     "modified": "2024-06-01T17:02:25-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -590,6 +633,7 @@
     "modified": "2024-06-01T18:22:45-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -599,6 +643,7 @@
     "modified": "2024-06-01T17:39:10-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -608,6 +653,7 @@
     "modified": "2024-06-01T18:47:57-07:00",
     "kind": "feature",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   },
@@ -617,6 +663,7 @@
     "modified": "2024-06-01T18:53:54-07:00",
     "kind": "news",
     "event": "YCS Indianapolis",
+    "article": true,
     "format": null,
     "slug": "2024-ycs-indianapolis"
   }

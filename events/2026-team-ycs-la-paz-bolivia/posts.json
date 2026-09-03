@@ -176,6 +176,7 @@
     "modified": "2026-03-23T09:24:17-07:00",
     "kind": "result",
     "event": "TEAM YCS La Paz",
+    "article": true,
     "format": null,
     "slug": "2026-team-ycs-la-paz-bolivia"
   },
@@ -203,6 +204,7 @@
     "modified": "2026-03-15T10:42:58-07:00",
     "kind": "news",
     "event": "TEAM YCS La Paz",
+    "article": true,
     "format": null,
     "slug": "2026-team-ycs-la-paz-bolivia"
   }

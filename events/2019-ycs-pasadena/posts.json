@@ -158,6 +158,7 @@
     "modified": "2019-11-24T13:22:05-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -167,6 +168,7 @@
     "modified": "2019-11-24T15:59:13-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-pasadena"
   },
@@ -176,6 +178,7 @@
     "modified": "2019-11-24T09:28:33-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -185,6 +188,7 @@
     "modified": "2019-11-24T14:17:16-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -194,6 +198,7 @@
     "modified": "2019-11-24T17:20:28-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-pasadena"
   },
@@ -203,6 +208,7 @@
     "modified": "2019-11-24T09:42:35-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -212,6 +218,7 @@
     "modified": "2019-11-24T15:42:19-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -221,6 +228,7 @@
     "modified": "2019-11-24T19:23:00-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -230,6 +238,7 @@
     "modified": "2019-11-24T10:17:31-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -239,6 +248,7 @@
     "modified": "2019-11-24T18:44:55-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -248,6 +258,7 @@
     "modified": "2019-11-24T19:59:12-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-pasadena"
   },
@@ -257,6 +268,7 @@
     "modified": "2019-11-24T10:49:08-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -266,6 +278,7 @@
     "modified": "2019-11-24T18:58:24-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -275,6 +288,7 @@
     "modified": "2019-11-24T20:03:53-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-pasadena"
   },
@@ -284,6 +298,7 @@
     "modified": "2019-11-24T11:01:29-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -293,6 +308,7 @@
     "modified": "2019-11-24T19:10:45-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -302,6 +318,7 @@
     "modified": "2019-11-24T20:23:00-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-pasadena"
   },
@@ -311,6 +328,7 @@
     "modified": "2019-11-24T11:52:15-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -320,6 +338,7 @@
     "modified": "2019-11-24T19:20:17-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -329,6 +348,7 @@
     "modified": "2019-11-23T18:56:09-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-pasadena"
   },
@@ -338,6 +358,7 @@
     "modified": "2019-11-24T12:54:02-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -347,6 +368,7 @@
     "modified": "2019-11-23T18:43:57-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -356,6 +378,7 @@
     "modified": "2019-11-23T20:20:17-08:00",
     "kind": "result",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-pasadena"
   },
@@ -365,6 +388,7 @@
     "modified": "2019-11-24T13:57:31-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -374,6 +398,7 @@
     "modified": "2019-11-23T19:38:00-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -383,6 +408,7 @@
     "modified": "2019-11-24T15:16:15-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -392,6 +418,7 @@
     "modified": "2019-11-23T21:24:22-08:00",
     "kind": "deck",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -401,6 +428,7 @@
     "modified": "2019-11-24T16:47:22-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -410,6 +438,7 @@
     "modified": "2019-11-24T17:24:02-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-pasadena"
   },
@@ -419,6 +448,7 @@
     "modified": "2019-11-24T18:32:46-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -428,6 +458,7 @@
     "modified": "2019-11-24T20:29:05-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -446,6 +477,7 @@
     "modified": "2019-11-23T10:31:34-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -455,6 +487,7 @@
     "modified": "2019-11-23T11:34:11-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-pasadena"
   },
@@ -464,6 +497,7 @@
     "modified": "2019-11-23T11:43:17-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -473,6 +507,7 @@
     "modified": "2019-11-23T12:12:15-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -482,6 +517,7 @@
     "modified": "2019-11-23T13:20:11-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -491,6 +527,7 @@
     "modified": "2019-11-23T13:38:34-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -500,6 +537,7 @@
     "modified": "2019-11-23T13:49:08-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -509,6 +547,7 @@
     "modified": "2019-11-23T14:19:16-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -518,6 +557,7 @@
     "modified": "2019-11-23T15:26:24-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -527,6 +567,7 @@
     "modified": "2019-11-23T15:39:30-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -536,6 +577,7 @@
     "modified": "2019-11-23T16:29:23-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -545,6 +587,7 @@
     "modified": "2019-11-23T17:11:34-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -554,6 +597,7 @@
     "modified": "2019-11-23T17:33:19-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-pasadena"
   },
@@ -563,6 +607,7 @@
     "modified": "2019-11-23T17:51:55-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -572,6 +617,7 @@
     "modified": "2019-11-23T18:00:52-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -581,6 +627,7 @@
     "modified": "2019-11-23T19:44:13-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -590,6 +637,7 @@
     "modified": "2019-11-23T19:53:31-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -599,6 +647,7 @@
     "modified": "2019-11-23T20:05:25-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -608,6 +657,7 @@
     "modified": "2019-11-23T20:33:44-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   },
@@ -617,6 +667,7 @@
     "modified": "2019-11-23T21:50:36-08:00",
     "kind": "news",
     "event": "YCS Pasadena",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-pasadena"
   }

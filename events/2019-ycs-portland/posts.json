@@ -131,6 +131,7 @@
     "modified": "2019-08-25T13:45:07-07:00",
     "kind": "feature",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -140,6 +141,7 @@
     "modified": "2019-08-25T14:26:41-07:00",
     "kind": "deck",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -149,6 +151,7 @@
     "modified": "2019-08-25T19:27:31-07:00",
     "kind": "result",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -158,6 +161,7 @@
     "modified": "2019-09-09T13:54:06-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -167,6 +171,7 @@
     "modified": "2019-08-25T16:35:23-07:00",
     "kind": "feature",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -176,6 +181,7 @@
     "modified": "2019-08-25T19:26:37-07:00",
     "kind": "deck",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -194,6 +200,7 @@
     "modified": "2019-08-25T10:06:15-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -203,6 +210,7 @@
     "modified": "2019-08-25T17:26:29-07:00",
     "kind": "feature",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -212,6 +220,7 @@
     "modified": "2019-08-25T18:24:27-07:00",
     "kind": "deck",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -221,6 +230,7 @@
     "modified": "2019-08-25T18:38:08-07:00",
     "kind": "result",
     "event": "YCS Portland",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-portland"
   },
@@ -230,6 +240,7 @@
     "modified": "2019-08-25T11:15:40-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -239,6 +250,7 @@
     "modified": "2019-08-25T17:28:24-07:00",
     "kind": "feature",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -248,6 +260,7 @@
     "modified": "2019-08-25T18:23:14-07:00",
     "kind": "deck",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -257,6 +270,7 @@
     "modified": "2019-08-25T18:50:14-07:00",
     "kind": "result",
     "event": "YCS Portland",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-portland"
   },
@@ -266,6 +280,7 @@
     "modified": "2019-08-25T14:13:33-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -275,6 +290,7 @@
     "modified": "2019-08-25T18:02:51-07:00",
     "kind": "feature",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -284,6 +300,7 @@
     "modified": "2019-08-25T18:33:31-07:00",
     "kind": "deck",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -293,6 +310,7 @@
     "modified": "2019-08-25T19:27:16-07:00",
     "kind": "result",
     "event": "YCS Portland",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-portland"
   },
@@ -311,6 +329,7 @@
     "modified": "2019-08-24T17:46:13-07:00",
     "kind": "deck",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -320,6 +339,7 @@
     "modified": "2019-08-24T19:15:57-07:00",
     "kind": "result",
     "event": "YCS Portland",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-portland"
   },
@@ -329,6 +349,7 @@
     "modified": "2019-08-25T18:24:54-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -374,6 +395,7 @@
     "modified": "2019-08-24T12:12:19-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -383,6 +405,7 @@
     "modified": "2019-08-24T13:42:27-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -392,6 +415,7 @@
     "modified": "2019-08-24T16:59:46-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   },
@@ -401,6 +425,7 @@
     "modified": "2019-08-24T17:50:36-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-portland"
   },
@@ -410,6 +435,7 @@
     "modified": "2019-08-24T19:19:08-07:00",
     "kind": "news",
     "event": "YCS Portland",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-portland"
   }

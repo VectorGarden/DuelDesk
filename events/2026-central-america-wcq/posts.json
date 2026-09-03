@@ -239,6 +239,7 @@
     "modified": "2026-06-08T10:52:04-07:00",
     "kind": "news",
     "event": "Central America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-central-america-wcq"
   },
@@ -257,6 +258,7 @@
     "modified": "2026-06-05T10:11:24-07:00",
     "kind": "news",
     "event": "Central America WCQ 2026",
+    "article": true,
     "format": null,
     "slug": "2026-central-america-wcq"
   },

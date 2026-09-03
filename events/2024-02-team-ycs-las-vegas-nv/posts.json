@@ -194,6 +194,7 @@
     "modified": "2024-02-25T08:37:49-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -203,6 +204,7 @@
     "modified": "2024-02-28T11:46:16-08:00",
     "kind": "deck",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -212,6 +214,7 @@
     "modified": "2024-02-25T09:28:09-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -221,6 +224,7 @@
     "modified": "2024-02-25T10:46:56-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -230,6 +234,7 @@
     "modified": "2024-02-25T00:24:32-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -239,6 +244,7 @@
     "modified": "2024-02-25T09:36:28-08:00",
     "kind": "deck",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -248,6 +254,7 @@
     "modified": "2024-02-25T08:40:37-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -257,6 +264,7 @@
     "modified": "2024-02-25T12:19:17-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -266,6 +274,7 @@
     "modified": "2024-02-25T10:37:12-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -275,6 +284,7 @@
     "modified": "2024-02-25T13:42:34-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -284,6 +294,7 @@
     "modified": "2024-02-25T18:29:38-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -293,6 +304,7 @@
     "modified": "2024-02-25T13:26:46-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -302,6 +314,7 @@
     "modified": "2024-02-25T16:20:36-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -320,6 +333,7 @@
     "modified": "2024-02-25T14:03:38-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -329,6 +343,7 @@
     "modified": "2024-02-25T17:04:57-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -338,6 +353,7 @@
     "modified": "2024-02-24T10:21:10-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -347,6 +363,7 @@
     "modified": "2024-02-25T15:50:29-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -356,6 +373,7 @@
     "modified": "2024-02-25T17:21:07-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -365,6 +383,7 @@
     "modified": "2024-02-24T11:41:52-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -374,6 +393,7 @@
     "modified": "2024-02-25T16:35:18-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -392,6 +412,7 @@
     "modified": "2024-02-24T11:23:58-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -401,6 +422,7 @@
     "modified": "2024-02-25T16:46:16-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -410,6 +432,7 @@
     "modified": "2024-02-25T21:55:23-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Public Events",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -419,6 +442,7 @@
     "modified": "2024-02-24T19:21:48-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -428,6 +452,7 @@
     "modified": "2024-02-25T19:08:27-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -437,6 +462,7 @@
     "modified": "2024-02-25T21:55:35-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -446,6 +472,7 @@
     "modified": "2024-02-24T16:33:04-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -455,6 +482,7 @@
     "modified": "2024-02-24T16:31:09-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -464,6 +492,7 @@
     "modified": "2024-02-25T21:55:55-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -473,6 +502,7 @@
     "modified": "2024-02-24T14:59:48-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -482,6 +512,7 @@
     "modified": "2024-02-24T15:20:54-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -491,6 +522,7 @@
     "modified": "2024-02-25T21:55:07-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Public Events",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -500,6 +532,7 @@
     "modified": "2024-02-24T19:19:32-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -509,6 +542,7 @@
     "modified": "2024-02-24T15:48:11-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -518,6 +552,7 @@
     "modified": "2024-02-25T19:28:21-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -527,6 +562,7 @@
     "modified": "2024-02-24T19:51:27-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -536,6 +572,7 @@
     "modified": "2024-02-24T18:26:35-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -545,6 +582,7 @@
     "modified": "2024-02-24T16:44:51-08:00",
     "kind": "result",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -554,6 +592,7 @@
     "modified": "2024-02-24T20:53:59-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -563,6 +602,7 @@
     "modified": "2024-02-24T19:16:55-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -572,6 +612,7 @@
     "modified": "2024-02-24T21:14:07-08:00",
     "kind": "news",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   },
@@ -581,6 +622,7 @@
     "modified": "2024-02-24T21:40:29-08:00",
     "kind": "feature",
     "event": "TEAM YCS Las Vegas",
+    "article": true,
     "format": null,
     "slug": "2024-02-team-ycs-las-vegas-nv"
   }

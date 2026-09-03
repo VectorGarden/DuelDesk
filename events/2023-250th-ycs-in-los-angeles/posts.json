@@ -194,6 +194,7 @@
     "modified": "2023-04-03T08:42:05-07:00",
     "kind": "result",
     "event": "250th YCS",
+    "article": true,
     "format": null,
     "slug": "2023-250th-ycs-in-los-angeles"
   },
@@ -221,6 +222,7 @@
     "modified": "2023-04-03T01:56:18-07:00",
     "kind": "news",
     "event": "250th YCS",
+    "article": true,
     "format": null,
     "slug": "2023-250th-ycs-in-los-angeles"
   },

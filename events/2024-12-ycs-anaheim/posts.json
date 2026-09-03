@@ -248,6 +248,7 @@
     "modified": "2024-12-08T11:03:21-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -257,6 +258,7 @@
     "modified": "2024-12-09T06:30:12-08:00",
     "kind": "deck",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -266,6 +268,7 @@
     "modified": "2024-12-08T15:50:24-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -275,6 +278,7 @@
     "modified": "2024-12-08T10:02:41-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Time Wizard",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -284,6 +288,7 @@
     "modified": "2024-12-08T11:20:40-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -293,6 +298,7 @@
     "modified": "2024-12-08T09:59:09-08:00",
     "kind": "deck",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -302,6 +308,7 @@
     "modified": "2024-12-08T18:45:40-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -311,6 +318,7 @@
     "modified": "2024-12-08T09:40:31-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -320,6 +328,7 @@
     "modified": "2024-12-08T14:00:02-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -329,6 +338,7 @@
     "modified": "2024-12-08T12:20:58-08:00",
     "kind": "deck",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -338,6 +348,7 @@
     "modified": "2024-12-08T18:35:29-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Public Events",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -347,6 +358,7 @@
     "modified": "2024-12-08T10:26:43-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -356,6 +368,7 @@
     "modified": "2024-12-08T14:24:09-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -365,6 +378,7 @@
     "modified": "2024-12-08T13:11:47-08:00",
     "kind": "deck",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -374,6 +388,7 @@
     "modified": "2024-12-08T18:37:14-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -383,6 +398,7 @@
     "modified": "2024-12-08T13:24:37-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -392,6 +408,7 @@
     "modified": "2024-12-08T16:47:12-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -401,6 +418,7 @@
     "modified": "2024-12-08T15:14:21-08:00",
     "kind": "deck",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -410,6 +428,7 @@
     "modified": "2024-12-08T18:33:05-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -419,6 +438,7 @@
     "modified": "2024-12-08T14:01:07-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -428,6 +448,7 @@
     "modified": "2024-12-08T18:51:40-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -437,6 +458,7 @@
     "modified": "2024-12-08T20:18:44-08:00",
     "kind": "deck",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -446,6 +468,7 @@
     "modified": "2024-12-08T18:34:38-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Public Events",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -455,6 +478,7 @@
     "modified": "2024-12-08T14:56:50-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -464,6 +488,7 @@
     "modified": "2024-12-07T13:23:49-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -473,6 +498,7 @@
     "modified": "2024-12-08T18:40:59-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -491,6 +517,7 @@
     "modified": "2024-12-07T13:54:41-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -500,6 +527,7 @@
     "modified": "2024-12-07T19:55:17-08:00",
     "kind": "result",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -509,6 +537,7 @@
     "modified": "2024-12-08T18:44:51-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -518,6 +547,7 @@
     "modified": "2024-12-07T15:37:06-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -536,6 +566,7 @@
     "modified": "2024-12-07T17:33:04-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -545,6 +576,7 @@
     "modified": "2024-12-07T09:48:01-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -554,6 +586,7 @@
     "modified": "2024-12-07T18:00:49-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -563,6 +596,7 @@
     "modified": "2024-12-07T12:10:52-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Public Events",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -572,6 +606,7 @@
     "modified": "2024-12-07T19:53:11-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -581,6 +616,7 @@
     "modified": "2024-12-07T14:18:04-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -590,6 +626,7 @@
     "modified": "2024-12-07T21:47:44-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -599,6 +636,7 @@
     "modified": "2024-12-07T14:05:43-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -608,6 +646,7 @@
     "modified": "2024-12-05T12:15:52-08:00",
     "kind": "feature",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -617,6 +656,7 @@
     "modified": "2024-12-07T15:00:12-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -626,6 +666,7 @@
     "modified": "2024-12-07T15:54:25-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -635,6 +676,7 @@
     "modified": "2024-12-07T16:34:02-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Public Events",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -644,6 +686,7 @@
     "modified": "2024-12-07T16:54:46-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -653,6 +696,7 @@
     "modified": "2024-12-07T18:24:08-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2024-12-ycs-anaheim"
   },
@@ -662,6 +706,7 @@
     "modified": "2024-12-07T18:17:28-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -671,6 +716,7 @@
     "modified": "2024-12-07T19:29:42-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -680,6 +726,7 @@
     "modified": "2024-12-07T21:26:24-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   },
@@ -689,6 +736,7 @@
     "modified": "2024-11-19T10:30:32-08:00",
     "kind": "news",
     "event": "YCS Anaheim",
+    "article": true,
     "format": null,
     "slug": "2024-12-ycs-anaheim"
   }
