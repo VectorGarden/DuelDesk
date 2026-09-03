@@ -167,6 +167,7 @@
     "modified": "2016-11-06T06:46:31-08:00",
     "kind": "deck",
     "event": "UDS Invitational El Salvador",
+    "article": true,
     "format": null,
     "slug": "uds-2016-elsalvador"
   },
@@ -185,6 +186,7 @@
     "modified": "2016-11-06T07:49:24-08:00",
     "kind": "news",
     "event": "UDS Invitational El Salvador",
+    "article": true,
     "format": null,
     "slug": "uds-2016-elsalvador"
   },
@@ -221,6 +223,7 @@
     "modified": "2016-11-05T11:43:06-07:00",
     "kind": "news",
     "event": "UDS Invitational El Salvador",
+    "article": true,
     "format": null,
     "slug": "uds-2016-elsalvador"
   },
@@ -230,6 +233,7 @@
     "modified": "2016-11-05T14:06:25-07:00",
     "kind": "news",
     "event": "UDS Invitational El Salvador",
+    "article": true,
     "format": null,
     "slug": "uds-2016-elsalvador"
   },

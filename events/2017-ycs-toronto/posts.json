@@ -221,6 +221,7 @@
     "modified": "2017-08-27T19:35:30-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -230,6 +231,7 @@
     "modified": "2017-08-27T18:26:38-07:00",
     "kind": "result",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -239,6 +241,7 @@
     "modified": "2017-08-27T19:03:21-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -248,6 +251,7 @@
     "modified": "2017-08-27T07:06:13-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -257,6 +261,7 @@
     "modified": "2017-08-27T16:32:38-07:00",
     "kind": "result",
     "event": "YCS Toronto",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-toronto"
   },
@@ -266,6 +271,7 @@
     "modified": "2017-08-27T19:03:45-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -275,6 +281,7 @@
     "modified": "2017-08-27T08:12:23-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -284,6 +291,7 @@
     "modified": "2017-08-27T16:45:16-07:00",
     "kind": "result",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -293,6 +301,7 @@
     "modified": "2017-08-27T09:50:22-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -302,6 +311,7 @@
     "modified": "2017-08-27T09:43:07-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -311,6 +321,7 @@
     "modified": "2017-08-27T14:04:51-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -320,6 +331,7 @@
     "modified": "2017-08-27T11:20:35-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -338,6 +350,7 @@
     "modified": "2017-08-27T13:48:26-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -347,6 +360,7 @@
     "modified": "2017-08-27T16:12:31-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -356,6 +370,7 @@
     "modified": "2017-08-27T14:56:36-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -374,6 +389,7 @@
     "modified": "2017-08-27T17:18:09-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -383,6 +399,7 @@
     "modified": "2017-08-26T08:46:43-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -392,6 +409,7 @@
     "modified": "2017-08-26T10:23:40-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -401,6 +419,7 @@
     "modified": "2017-08-26T14:37:51-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -410,6 +429,7 @@
     "modified": "2017-08-26T12:26:41-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -419,6 +439,7 @@
     "modified": "2017-08-26T14:51:54-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -428,6 +449,7 @@
     "modified": "2017-08-26T14:42:59-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-toronto"
   },
@@ -437,6 +459,7 @@
     "modified": "2017-08-26T14:55:53-07:00",
     "kind": "result",
     "event": "YCS Toronto",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-toronto"
   }

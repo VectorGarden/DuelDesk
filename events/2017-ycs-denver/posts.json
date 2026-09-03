@@ -203,6 +203,7 @@
     "modified": "2017-04-09T10:43:47-07:00",
     "kind": "feature",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -212,6 +213,7 @@
     "modified": "2017-04-09T11:36:56-07:00",
     "kind": "deck",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -230,6 +232,7 @@
     "modified": "2017-04-09T07:47:41-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -239,6 +242,7 @@
     "modified": "2017-04-09T18:00:22-07:00",
     "kind": "feature",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -257,6 +261,7 @@
     "modified": "2017-04-09T08:59:20-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -266,6 +271,7 @@
     "modified": "2017-04-09T18:04:20-07:00",
     "kind": "result",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -275,6 +281,7 @@
     "modified": "2017-04-09T10:24:59-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -284,6 +291,7 @@
     "modified": "2017-04-09T18:13:10-07:00",
     "kind": "result",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -293,6 +301,7 @@
     "modified": "2017-04-09T14:29:25-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -311,6 +320,7 @@
     "modified": "2017-04-09T17:13:19-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-denver"
   },
@@ -320,6 +330,7 @@
     "modified": "2017-04-09T18:08:31-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -329,6 +340,7 @@
     "modified": "2017-04-08T11:08:58-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -338,6 +350,7 @@
     "modified": "2017-04-08T10:35:10-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -347,6 +360,7 @@
     "modified": "2017-04-08T10:46:24-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -356,6 +370,7 @@
     "modified": "2017-04-08T14:44:57-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -365,6 +380,7 @@
     "modified": "2017-04-08T14:41:05-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": "Public Events",
     "slug": "2017-ycs-denver"
   },
@@ -374,6 +390,7 @@
     "modified": "2017-04-08T15:00:40-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -383,6 +400,7 @@
     "modified": "2017-04-08T16:20:56-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-denver"
   },
@@ -392,6 +410,7 @@
     "modified": "2017-04-08T18:10:18-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -401,6 +420,7 @@
     "modified": "2017-04-08T18:35:33-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   },
@@ -410,6 +430,7 @@
     "modified": "2017-04-08T18:41:58-07:00",
     "kind": "news",
     "event": "YCS Denver",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-denver"
   }

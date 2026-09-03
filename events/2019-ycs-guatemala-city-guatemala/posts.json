@@ -221,6 +221,7 @@
     "modified": "2019-03-30T12:11:26-07:00",
     "kind": "news",
     "event": "YCS Guatemala City",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guatemala-city-guatemala"
   },
@@ -230,6 +231,7 @@
     "modified": "2019-03-30T13:16:38-07:00",
     "kind": "news",
     "event": "YCS Guatemala City",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-guatemala-city-guatemala"
   }

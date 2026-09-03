@@ -86,6 +86,7 @@
     "modified": "2015-04-19T11:52:28-07:00",
     "kind": "deck",
     "event": "YCS Bogota",
+    "article": true,
     "format": null,
     "slug": "201504-bogota-d-c-colombia"
   },
@@ -95,6 +96,7 @@
     "modified": "2015-04-19T12:58:37-07:00",
     "kind": "result",
     "event": "YCS Bogota",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "201504-bogota-d-c-colombia"
   },
@@ -104,6 +106,7 @@
     "modified": "2015-04-19T10:30:30-07:00",
     "kind": "news",
     "event": "YCS Bogota",
+    "article": true,
     "format": null,
     "slug": "201504-bogota-d-c-colombia"
   },
@@ -122,6 +125,7 @@
     "modified": "2015-04-19T10:30:50-07:00",
     "kind": "news",
     "event": "YCS Bogota",
+    "article": true,
     "format": null,
     "slug": "201504-bogota-d-c-colombia"
   },
@@ -140,6 +144,7 @@
     "modified": "2015-04-19T10:31:33-07:00",
     "kind": "news",
     "event": "YCS Bogota",
+    "article": true,
     "format": null,
     "slug": "201504-bogota-d-c-colombia"
   },
@@ -185,6 +190,7 @@
     "modified": "2015-04-19T09:50:49-07:00",
     "kind": "news",
     "event": "YCS Bogota",
+    "article": true,
     "format": null,
     "slug": "201504-bogota-d-c-colombia"
   },
@@ -212,6 +218,7 @@
     "modified": "2015-04-19T12:18:06-07:00",
     "kind": "news",
     "event": "YCS Bogota",
+    "article": true,
     "format": null,
     "slug": "201504-bogota-d-c-colombia"
   },
@@ -221,6 +228,7 @@
     "modified": "2015-04-19T12:44:47-07:00",
     "kind": "news",
     "event": "YCS Bogota",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "201504-bogota-d-c-colombia"
   },

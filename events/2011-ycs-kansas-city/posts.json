@@ -86,6 +86,7 @@
     "modified": "2011-11-20T09:46:31-08:00",
     "kind": "feature",
     "event": "YCS Kansas City",
+    "article": true,
     "format": null,
     "slug": "2011-ycs-kansas-city"
   },
@@ -95,6 +96,7 @@
     "modified": "2011-11-20T15:56:03-08:00",
     "kind": "result",
     "event": "YCS Kansas City",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2011-ycs-kansas-city"
   },
@@ -104,6 +106,7 @@
     "modified": "2011-11-20T02:42:32-08:00",
     "kind": "news",
     "event": "YCS Kansas City",
+    "article": true,
     "format": null,
     "slug": "2011-ycs-kansas-city"
   },
@@ -113,6 +116,7 @@
     "modified": "2011-11-20T13:30:53-08:00",
     "kind": "feature",
     "event": "YCS Kansas City",
+    "article": true,
     "format": null,
     "slug": "2011-ycs-kansas-city"
   },
@@ -122,6 +126,7 @@
     "modified": "2011-11-20T16:00:46-08:00",
     "kind": "result",
     "event": "YCS Kansas City",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2011-ycs-kansas-city"
   },
@@ -131,6 +136,7 @@
     "modified": "2011-11-20T17:36:16-08:00",
     "kind": "feature",
     "event": "YCS Kansas City",
+    "article": true,
     "format": null,
     "slug": "2011-ycs-kansas-city"
   },
@@ -140,6 +146,7 @@
     "modified": "2011-11-20T14:23:00-08:00",
     "kind": "feature",
     "event": "YCS Kansas City",
+    "article": true,
     "format": null,
     "slug": "2011-ycs-kansas-city"
   },
@@ -149,6 +156,7 @@
     "modified": "2011-11-20T17:42:30-08:00",
     "kind": "feature",
     "event": "YCS Kansas City",
+    "article": true,
     "format": null,
     "slug": "2011-ycs-kansas-city"
   },
@@ -158,6 +166,7 @@
     "modified": "2011-11-20T17:45:37-08:00",
     "kind": "feature",
     "event": "YCS Kansas City",
+    "article": true,
     "format": null,
     "slug": "2011-ycs-kansas-city"
   },
@@ -167,6 +176,7 @@
     "modified": "2011-11-19T18:40:04-08:00",
     "kind": "feature",
     "event": "YCS Kansas City",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2011-ycs-kansas-city"
   }

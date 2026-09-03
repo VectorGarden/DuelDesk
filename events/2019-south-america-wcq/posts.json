@@ -221,6 +221,7 @@
     "modified": "2019-06-16T07:46:58-07:00",
     "kind": "news",
     "event": "South America WCQ 2019",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-south-america-wcq"
   },
@@ -230,6 +231,7 @@
     "modified": "2019-06-16T13:20:06-07:00",
     "kind": "result",
     "event": "South America WCQ 2019",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-south-america-wcq"
   },

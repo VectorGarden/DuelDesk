@@ -86,6 +86,7 @@
     "modified": "2013-07-06T10:31:43-07:00",
     "kind": "deck",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": null,
     "slug": "2013-central-american-wcq"
   },
@@ -95,6 +96,7 @@
     "modified": "2013-07-07T12:26:32-07:00",
     "kind": "result",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": null,
     "slug": "2013-central-american-wcq"
   },
@@ -104,6 +106,7 @@
     "modified": "2013-07-07T08:28:13-07:00",
     "kind": "news",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": null,
     "slug": "2013-central-american-wcq"
   },
@@ -113,6 +116,7 @@
     "modified": "2013-07-06T16:36:33-07:00",
     "kind": "result",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2013-central-american-wcq"
   },
@@ -122,6 +126,7 @@
     "modified": "2013-07-07T11:23:39-07:00",
     "kind": "news",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": null,
     "slug": "2013-central-american-wcq"
   },
@@ -131,6 +136,7 @@
     "modified": "2013-07-07T11:49:23-07:00",
     "kind": "news",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": null,
     "slug": "2013-central-american-wcq"
   },
@@ -140,6 +146,7 @@
     "modified": "2013-07-06T09:42:34-07:00",
     "kind": "news",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": null,
     "slug": "2013-central-american-wcq"
   },
@@ -158,6 +165,7 @@
     "modified": "2013-07-06T10:06:37-07:00",
     "kind": "news",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2013-central-american-wcq"
   },
@@ -167,6 +175,7 @@
     "modified": "2013-07-06T14:50:06-07:00",
     "kind": "news",
     "event": "Central America WCQ 2013",
+    "article": true,
     "format": null,
     "slug": "2013-central-american-wcq"
   }

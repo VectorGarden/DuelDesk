@@ -86,6 +86,7 @@
     "modified": "2015-02-15T10:58:39-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -95,6 +96,7 @@
     "modified": "2015-02-15T12:47:17-08:00",
     "kind": "deck",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -113,6 +115,7 @@
     "modified": "2015-02-14T11:21:34-08:00",
     "kind": "news",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -122,6 +125,7 @@
     "modified": "2015-02-15T11:12:49-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -140,6 +144,7 @@
     "modified": "2015-02-15T11:17:26-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -158,6 +163,7 @@
     "modified": "2015-02-15T11:27:42-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -167,6 +173,7 @@
     "modified": "2015-02-15T19:34:46-08:00",
     "kind": "result",
     "event": "YCS Tacoma",
+    "article": true,
     "format": "Public Events",
     "slug": "2015-ycs-tacoma"
   },
@@ -176,6 +183,7 @@
     "modified": "2015-02-15T13:03:34-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -185,6 +193,7 @@
     "modified": "2015-02-14T10:57:03-08:00",
     "kind": "result",
     "event": "YCS Tacoma",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2015-ycs-tacoma"
   },
@@ -194,6 +203,7 @@
     "modified": "2015-02-15T13:12:46-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -212,6 +222,7 @@
     "modified": "2015-02-15T17:18:18-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -230,6 +241,7 @@
     "modified": "2015-02-15T17:40:26-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -239,6 +251,7 @@
     "modified": "2015-02-15T17:59:07-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -248,6 +261,7 @@
     "modified": "2015-02-15T19:05:52-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2015-ycs-tacoma"
   },
@@ -257,6 +271,7 @@
     "modified": "2015-02-15T19:22:12-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -266,6 +281,7 @@
     "modified": "2015-02-15T19:26:43-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -275,6 +291,7 @@
     "modified": "2015-02-15T19:29:45-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -284,6 +301,7 @@
     "modified": "2015-02-14T10:07:57-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -293,6 +311,7 @@
     "modified": "2015-02-14T11:08:23-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -302,6 +321,7 @@
     "modified": "2015-02-14T13:20:46-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -311,6 +331,7 @@
     "modified": "2015-02-14T13:20:12-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -320,6 +341,7 @@
     "modified": "2015-02-14T16:21:23-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -329,6 +351,7 @@
     "modified": "2015-02-14T16:30:58-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -338,6 +361,7 @@
     "modified": "2015-02-14T16:33:59-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -347,6 +371,7 @@
     "modified": "2015-02-14T16:43:03-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -356,6 +381,7 @@
     "modified": "2015-02-14T16:53:27-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -365,6 +391,7 @@
     "modified": "2015-02-14T17:45:14-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -374,6 +401,7 @@
     "modified": "2015-02-14T18:22:31-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -383,6 +411,7 @@
     "modified": "2015-02-14T20:48:06-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   },
@@ -392,6 +421,7 @@
     "modified": "2015-02-14T20:55:33-08:00",
     "kind": "feature",
     "event": "YCS Tacoma",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-tacoma"
   }

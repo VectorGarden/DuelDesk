@@ -158,6 +158,7 @@
     "modified": "2017-03-19T14:28:42-07:00",
     "kind": "result",
     "event": "YCS Guatemala City",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-guatemala-city-guatemala"
   },
@@ -248,6 +249,7 @@
     "modified": "2017-03-18T18:36:43-07:00",
     "kind": "news",
     "event": "YCS Guatemala City",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-guatemala-city-guatemala"
   }

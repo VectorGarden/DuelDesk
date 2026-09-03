@@ -185,6 +185,7 @@
     "modified": "2017-04-16T13:37:08-07:00",
     "kind": "result",
     "event": "YCS Bogota",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "201704-ycs-bogota-colombia"
   },
@@ -212,6 +213,7 @@
     "modified": "2017-04-15T09:25:25-07:00",
     "kind": "news",
     "event": "YCS Bogota",
+    "article": true,
     "format": null,
     "slug": "201704-ycs-bogota-colombia"
   },
@@ -221,6 +223,7 @@
     "modified": "2017-04-16T14:13:31-07:00",
     "kind": "result",
     "event": "YCS Bogota",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "201704-ycs-bogota-colombia"
   },
@@ -284,6 +287,7 @@
     "modified": "2017-04-15T17:02:05-07:00",
     "kind": "news",
     "event": "YCS Bogota",
+    "article": true,
     "format": null,
     "slug": "201704-ycs-bogota-colombia"
   },
@@ -311,6 +315,7 @@
     "modified": "2017-04-15T17:55:57-07:00",
     "kind": "result",
     "event": "YCS Bogota",
+    "article": true,
     "format": "Public Events",
     "slug": "201704-ycs-bogota-colombia"
   }

@@ -23,6 +23,7 @@
     "modified": "2012-06-17T13:15:55-07:00",
     "kind": "result",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2012-central-american-wcq"
   },
@@ -32,6 +33,7 @@
     "modified": "2012-06-17T10:19:09-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2012-central-american-wcq"
   },
@@ -41,6 +43,7 @@
     "modified": "2012-06-17T14:29:56-07:00",
     "kind": "result",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": null,
     "slug": "2012-central-american-wcq"
   },
@@ -50,6 +53,7 @@
     "modified": "2012-06-17T11:00:31-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": null,
     "slug": "2012-central-american-wcq"
   },
@@ -59,6 +63,7 @@
     "modified": "2012-06-17T14:31:57-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": null,
     "slug": "2012-central-american-wcq"
   },
@@ -68,6 +73,7 @@
     "modified": "2012-06-16T11:21:17-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": null,
     "slug": "2012-central-american-wcq"
   },
@@ -77,6 +83,7 @@
     "modified": "2012-06-16T12:29:44-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2012-central-american-wcq"
   },
@@ -86,6 +93,7 @@
     "modified": "2012-06-16T13:08:43-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": null,
     "slug": "2012-central-american-wcq"
   },
@@ -95,6 +103,7 @@
     "modified": "2012-06-16T13:43:53-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2012-central-american-wcq"
   },
@@ -104,6 +113,7 @@
     "modified": "2012-06-16T17:54:41-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2012-central-american-wcq"
   },
@@ -122,6 +132,7 @@
     "modified": "2012-06-16T18:57:14-07:00",
     "kind": "news",
     "event": "Central America WCQ 2012",
+    "article": true,
     "format": null,
     "slug": "2012-central-american-wcq"
   }

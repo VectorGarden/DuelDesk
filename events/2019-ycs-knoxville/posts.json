@@ -149,6 +149,7 @@
     "modified": "2019-06-02T07:23:05-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -158,6 +159,7 @@
     "modified": "2019-06-02T09:15:28-07:00",
     "kind": "deck",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -167,6 +169,7 @@
     "modified": "2019-06-03T10:56:26-07:00",
     "kind": "result",
     "event": "YCS Knoxville",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-knoxville"
   },
@@ -176,6 +179,7 @@
     "modified": "2019-06-03T10:55:55-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -185,6 +189,7 @@
     "modified": "2019-06-02T08:16:14-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -194,6 +199,7 @@
     "modified": "2019-06-02T20:15:19-07:00",
     "kind": "result",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -203,6 +209,7 @@
     "modified": "2019-06-03T10:24:56-07:00",
     "kind": "result",
     "event": "YCS Knoxville",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-ycs-knoxville"
   },
@@ -212,6 +219,7 @@
     "modified": "2019-06-02T08:46:43-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -230,6 +238,7 @@
     "modified": "2019-06-02T06:30:57-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -239,6 +248,7 @@
     "modified": "2019-06-02T11:51:59-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -248,6 +258,7 @@
     "modified": "2019-06-02T07:34:47-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -257,6 +268,7 @@
     "modified": "2019-06-02T13:13:00-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -266,6 +278,7 @@
     "modified": "2019-06-02T07:36:24-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -275,6 +288,7 @@
     "modified": "2019-06-02T14:03:24-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -284,6 +298,7 @@
     "modified": "2019-06-02T08:17:30-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -293,6 +308,7 @@
     "modified": "2019-06-02T15:18:17-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -302,6 +318,7 @@
     "modified": "2019-06-02T10:22:09-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -311,6 +328,7 @@
     "modified": "2019-06-01T09:31:34-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -329,6 +347,7 @@
     "modified": "2019-06-01T10:08:20-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -338,6 +357,7 @@
     "modified": "2019-06-02T13:40:07-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -347,6 +367,7 @@
     "modified": "2019-06-01T10:48:36-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -356,6 +377,7 @@
     "modified": "2019-06-01T07:43:27-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -365,6 +387,7 @@
     "modified": "2019-06-01T11:08:38-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -374,6 +397,7 @@
     "modified": "2019-06-01T09:43:20-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-ycs-knoxville"
   },
@@ -383,6 +407,7 @@
     "modified": "2019-06-01T13:51:48-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -392,6 +417,7 @@
     "modified": "2019-06-01T12:02:51-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -401,6 +427,7 @@
     "modified": "2019-06-01T13:55:35-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -410,6 +437,7 @@
     "modified": "2019-06-01T12:10:00-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -419,6 +447,7 @@
     "modified": "2019-06-01T15:57:03-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -428,6 +457,7 @@
     "modified": "2019-06-01T13:34:29-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-ycs-knoxville"
   },
@@ -437,6 +467,7 @@
     "modified": "2019-06-01T15:55:12-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -446,6 +477,7 @@
     "modified": "2019-06-01T14:29:49-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -455,6 +487,7 @@
     "modified": "2019-06-01T16:58:28-07:00",
     "kind": "feature",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -464,6 +497,7 @@
     "modified": "2019-06-01T14:31:22-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -473,6 +507,7 @@
     "modified": "2019-06-01T14:35:08-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -482,6 +517,7 @@
     "modified": "2019-06-01T15:51:37-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -491,6 +527,7 @@
     "modified": "2019-06-01T16:20:42-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -500,6 +537,7 @@
     "modified": "2019-06-01T16:22:25-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   },
@@ -509,6 +547,7 @@
     "modified": "2019-06-01T17:00:19-07:00",
     "kind": "news",
     "event": "YCS Knoxville",
+    "article": true,
     "format": null,
     "slug": "2019-ycs-knoxville"
   }

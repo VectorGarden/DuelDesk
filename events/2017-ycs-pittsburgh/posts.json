@@ -212,6 +212,7 @@
     "modified": "2017-05-14T07:31:05-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -221,6 +222,7 @@
     "modified": "2017-05-14T14:58:23-07:00",
     "kind": "result",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -239,6 +241,7 @@
     "modified": "2017-05-14T07:48:42-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -248,6 +251,7 @@
     "modified": "2017-05-14T15:30:45-07:00",
     "kind": "result",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -257,6 +261,7 @@
     "modified": "2017-05-14T07:37:54-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -266,6 +271,7 @@
     "modified": "2017-05-14T09:19:16-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -275,6 +281,7 @@
     "modified": "2017-05-14T15:39:33-07:00",
     "kind": "result",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -284,6 +291,7 @@
     "modified": "2017-05-14T08:36:59-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -293,6 +301,7 @@
     "modified": "2017-05-14T10:08:51-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -302,6 +311,7 @@
     "modified": "2017-05-14T16:27:23-07:00",
     "kind": "result",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-pittsburgh"
   },
@@ -311,6 +321,7 @@
     "modified": "2017-05-14T09:22:13-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -320,6 +331,7 @@
     "modified": "2017-05-14T12:16:33-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -329,6 +341,7 @@
     "modified": "2017-05-13T13:40:24-07:00",
     "kind": "result",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -347,6 +360,7 @@
     "modified": "2017-05-14T14:00:50-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -365,6 +379,7 @@
     "modified": "2017-05-14T14:47:59-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -383,6 +398,7 @@
     "modified": "2017-05-14T15:21:04-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -401,6 +417,7 @@
     "modified": "2017-05-13T09:03:00-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -410,6 +427,7 @@
     "modified": "2017-05-14T20:08:51-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -419,6 +437,7 @@
     "modified": "2017-05-13T10:04:57-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -428,6 +447,7 @@
     "modified": "2017-05-13T07:58:38-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -437,6 +457,7 @@
     "modified": "2017-05-13T11:20:26-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -455,6 +476,7 @@
     "modified": "2017-05-13T11:55:47-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -464,6 +486,7 @@
     "modified": "2017-05-13T14:51:29-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -473,6 +496,7 @@
     "modified": "2017-05-13T14:11:04-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -482,6 +506,7 @@
     "modified": "2017-05-13T14:54:55-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -491,6 +516,7 @@
     "modified": "2017-05-13T16:53:26-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -500,6 +526,7 @@
     "modified": "2017-05-13T18:24:24-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -509,6 +536,7 @@
     "modified": "2017-05-13T17:58:27-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -518,6 +546,7 @@
     "modified": "2017-05-13T18:28:01-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -527,6 +556,7 @@
     "modified": "2017-05-13T18:21:35-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -536,6 +566,7 @@
     "modified": "2017-05-13T18:53:23-07:00",
     "kind": "news",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   },
@@ -545,6 +576,7 @@
     "modified": "2017-05-13T19:11:55-07:00",
     "kind": "feature",
     "event": "YCS Pittsburgh",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-pittsburgh"
   }

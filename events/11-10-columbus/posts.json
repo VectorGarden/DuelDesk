@@ -86,6 +86,7 @@
     "modified": "2011-10-23T08:23:32-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -95,6 +96,7 @@
     "modified": "2011-10-25T11:25:20-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -104,6 +106,7 @@
     "modified": "2011-10-23T09:11:27-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -113,6 +116,7 @@
     "modified": "2011-10-24T11:33:26-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -122,6 +126,7 @@
     "modified": "2011-10-23T09:51:20-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -131,6 +136,7 @@
     "modified": "2011-10-24T10:06:35-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "11-10-columbus"
   },
@@ -140,6 +146,7 @@
     "modified": "2011-10-23T12:49:35-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -149,6 +156,7 @@
     "modified": "2011-10-23T06:17:59-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -158,6 +166,7 @@
     "modified": "2011-10-23T13:48:06-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -167,6 +176,7 @@
     "modified": "2011-10-23T06:26:19-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -176,6 +186,7 @@
     "modified": "2011-10-22T21:26:47-07:00",
     "kind": "feature",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -194,6 +205,7 @@
     "modified": "2011-10-23T09:09:31-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -203,6 +215,7 @@
     "modified": "2011-10-23T09:16:43-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -230,6 +243,7 @@
     "modified": "2011-10-23T15:15:05-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -239,6 +253,7 @@
     "modified": "2011-10-23T16:06:49-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -257,6 +272,7 @@
     "modified": "2011-10-23T19:26:18-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -266,6 +282,7 @@
     "modified": "2011-10-22T07:30:03-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -284,6 +301,7 @@
     "modified": "2011-10-22T08:55:39-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -311,6 +329,7 @@
     "modified": "2011-10-22T10:05:49-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -329,6 +348,7 @@
     "modified": "2011-10-22T10:49:10-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -347,6 +367,7 @@
     "modified": "2011-10-22T11:10:14-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -356,6 +377,7 @@
     "modified": "2011-10-22T11:16:31-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "11-10-columbus"
   },
@@ -365,6 +387,7 @@
     "modified": "2011-10-22T12:36:09-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -374,6 +397,7 @@
     "modified": "2011-10-22T12:36:48-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -383,6 +407,7 @@
     "modified": "2011-10-22T14:31:04-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -392,6 +417,7 @@
     "modified": "2011-10-22T15:21:09-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -410,6 +436,7 @@
     "modified": "2011-10-22T14:52:30-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -428,6 +455,7 @@
     "modified": "2011-10-22T17:04:07-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -437,6 +465,7 @@
     "modified": "2011-10-22T17:21:11-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": null,
     "slug": "11-10-columbus"
   },
@@ -446,6 +475,7 @@
     "modified": "2011-10-22T17:30:57-07:00",
     "kind": "news",
     "event": "YCS Columbus",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "11-10-columbus"
   }

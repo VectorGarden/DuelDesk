@@ -77,6 +77,7 @@
     "modified": "2012-04-01T11:35:50-07:00",
     "kind": "result",
     "event": "YCS Lima",
+    "article": true,
     "format": null,
     "slug": "2012-yu-gi-oh-championship-series-lima-peru"
   },
@@ -86,6 +87,7 @@
     "modified": "2012-03-31T08:42:22-07:00",
     "kind": "news",
     "event": "YCS Lima",
+    "article": true,
     "format": null,
     "slug": "2012-yu-gi-oh-championship-series-lima-peru"
   },
@@ -104,6 +106,7 @@
     "modified": "2012-04-01T12:46:33-07:00",
     "kind": "result",
     "event": "YCS Lima",
+    "article": true,
     "format": "Public Events",
     "slug": "2012-yu-gi-oh-championship-series-lima-peru"
   },
@@ -113,6 +116,7 @@
     "modified": "2012-04-01T15:59:34-07:00",
     "kind": "result",
     "event": "YCS Lima",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2012-yu-gi-oh-championship-series-lima-peru"
   },
@@ -122,6 +126,7 @@
     "modified": "2012-04-01T17:02:03-07:00",
     "kind": "result",
     "event": "YCS Lima",
+    "article": true,
     "format": "Public Events",
     "slug": "2012-yu-gi-oh-championship-series-lima-peru"
   },
@@ -131,6 +136,7 @@
     "modified": "2012-04-01T17:01:07-07:00",
     "kind": "result",
     "event": "YCS Lima",
+    "article": true,
     "format": "Public Events",
     "slug": "2012-yu-gi-oh-championship-series-lima-peru"
   },
@@ -140,6 +146,7 @@
     "modified": "2012-03-31T14:43:17-07:00",
     "kind": "result",
     "event": "YCS Lima",
+    "article": true,
     "format": "Public Events",
     "slug": "2012-yu-gi-oh-championship-series-lima-peru"
   },
@@ -149,6 +156,7 @@
     "modified": "2012-03-31T15:52:38-07:00",
     "kind": "result",
     "event": "YCS Lima",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2012-yu-gi-oh-championship-series-lima-peru"
   },

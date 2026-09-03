@@ -95,6 +95,7 @@
     "modified": "2016-05-02T09:54:17-07:00",
     "kind": "result",
     "event": "YCS Santiago",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "201603-santiago-chile"
   },
@@ -104,6 +105,7 @@
     "modified": "2016-05-01T12:07:14-07:00",
     "kind": "news",
     "event": "YCS Santiago",
+    "article": true,
     "format": null,
     "slug": "201603-santiago-chile"
   },
@@ -113,6 +115,7 @@
     "modified": "2016-05-01T12:16:00-07:00",
     "kind": "result",
     "event": "YCS Santiago",
+    "article": true,
     "format": null,
     "slug": "201603-santiago-chile"
   },
@@ -122,6 +125,7 @@
     "modified": "2016-05-01T12:19:39-07:00",
     "kind": "news",
     "event": "YCS Santiago",
+    "article": true,
     "format": null,
     "slug": "201603-santiago-chile"
   },
@@ -131,6 +135,7 @@
     "modified": "2016-05-01T14:59:22-07:00",
     "kind": "result",
     "event": "YCS Santiago",
+    "article": true,
     "format": "Public Events",
     "slug": "201603-santiago-chile"
   },
@@ -140,6 +145,7 @@
     "modified": "2016-05-01T14:48:58-07:00",
     "kind": "news",
     "event": "YCS Santiago",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "201603-santiago-chile"
   },
@@ -149,6 +155,7 @@
     "modified": "2016-04-30T15:21:06-07:00",
     "kind": "result",
     "event": "YCS Santiago",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "201603-santiago-chile"
   },
@@ -167,6 +174,7 @@
     "modified": "2016-04-30T11:11:37-07:00",
     "kind": "news",
     "event": "YCS Santiago",
+    "article": true,
     "format": null,
     "slug": "201603-santiago-chile"
   },
@@ -176,6 +184,7 @@
     "modified": "2016-04-30T10:35:30-07:00",
     "kind": "news",
     "event": "YCS Santiago",
+    "article": true,
     "format": null,
     "slug": "201603-santiago-chile"
   },
@@ -185,6 +194,7 @@
     "modified": "2016-04-30T14:37:27-07:00",
     "kind": "news",
     "event": "YCS Santiago",
+    "article": true,
     "format": null,
     "slug": "201603-santiago-chile"
   },
@@ -194,6 +204,7 @@
     "modified": "2016-04-30T15:08:33-07:00",
     "kind": "news",
     "event": "YCS Santiago",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "201603-santiago-chile"
   },

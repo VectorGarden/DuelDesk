@@ -212,6 +212,7 @@
     "modified": "2018-06-05T15:00:54-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -221,6 +222,7 @@
     "modified": "2018-06-03T10:45:08-07:00",
     "kind": "deck",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -239,6 +241,7 @@
     "modified": "2018-06-14T12:07:24-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -248,6 +251,7 @@
     "modified": "2018-06-03T07:26:48-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -257,6 +261,7 @@
     "modified": "2018-06-02T20:15:14-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -266,6 +271,7 @@
     "modified": "2018-06-03T19:44:52-07:00",
     "kind": "result",
     "event": "YCS Secaucus",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2018-ycs-secaucus"
   },
@@ -275,6 +281,7 @@
     "modified": "2018-06-03T08:27:05-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -284,6 +291,7 @@
     "modified": "2018-06-03T09:02:50-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -293,6 +301,7 @@
     "modified": "2018-06-02T20:14:58-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -311,6 +320,7 @@
     "modified": "2018-06-03T09:24:34-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -320,6 +330,7 @@
     "modified": "2018-06-02T20:14:11-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -329,6 +340,7 @@
     "modified": "2018-06-03T09:12:43-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -338,6 +350,7 @@
     "modified": "2018-06-03T09:59:03-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -347,6 +360,7 @@
     "modified": "2018-06-03T08:21:26-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -356,6 +370,7 @@
     "modified": "2018-06-03T10:39:58-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -365,6 +380,7 @@
     "modified": "2018-06-03T09:11:39-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -374,6 +390,7 @@
     "modified": "2018-06-03T14:21:32-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -392,6 +409,7 @@
     "modified": "2018-06-03T15:04:48-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -401,6 +419,7 @@
     "modified": "2018-06-03T10:09:00-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -410,6 +429,7 @@
     "modified": "2018-06-03T15:32:30-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -419,6 +439,7 @@
     "modified": "2018-06-03T15:11:37-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -428,6 +449,7 @@
     "modified": "2018-06-03T19:32:55-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -446,6 +468,7 @@
     "modified": "2018-06-03T19:43:46-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -464,6 +487,7 @@
     "modified": "2018-06-02T11:15:56-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -482,6 +506,7 @@
     "modified": "2018-06-02T11:38:44-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -491,6 +516,7 @@
     "modified": "2018-06-02T10:14:31-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -500,6 +526,7 @@
     "modified": "2018-06-02T14:37:44-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -509,6 +536,7 @@
     "modified": "2018-06-02T09:35:25-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -518,6 +546,7 @@
     "modified": "2018-06-02T14:21:14-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -527,6 +556,7 @@
     "modified": "2018-06-02T10:42:16-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -536,6 +566,7 @@
     "modified": "2018-06-02T14:34:43-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -545,6 +576,7 @@
     "modified": "2018-06-02T12:09:43-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2018-ycs-secaucus"
   },
@@ -554,6 +586,7 @@
     "modified": "2018-06-02T14:48:53-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -563,6 +596,7 @@
     "modified": "2018-06-02T20:15:55-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -572,6 +606,7 @@
     "modified": "2018-06-02T17:12:00-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -590,6 +625,7 @@
     "modified": "2018-06-02T18:23:01-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -599,6 +635,7 @@
     "modified": "2018-06-02T20:15:26-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -608,6 +645,7 @@
     "modified": "2018-06-02T19:29:00-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -617,6 +655,7 @@
     "modified": "2018-06-02T16:04:27-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -626,6 +665,7 @@
     "modified": "2018-06-02T20:43:16-07:00",
     "kind": "feature",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -635,6 +675,7 @@
     "modified": "2018-06-02T17:22:27-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -644,6 +685,7 @@
     "modified": "2018-06-02T18:49:11-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -653,6 +695,7 @@
     "modified": "2018-06-02T19:36:50-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -662,6 +705,7 @@
     "modified": "2018-06-02T20:47:08-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   },
@@ -671,6 +715,7 @@
     "modified": "2018-06-02T21:07:06-07:00",
     "kind": "news",
     "event": "YCS Secaucus",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-secaucus"
   }

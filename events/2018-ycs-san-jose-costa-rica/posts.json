@@ -167,6 +167,7 @@
     "modified": "2018-03-18T11:56:12-07:00",
     "kind": "deck",
     "event": "YCS San Jose",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-san-jose-costa-rica"
   },
@@ -185,6 +186,7 @@
     "modified": "2018-03-18T11:53:41-07:00",
     "kind": "news",
     "event": "YCS San Jose",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-san-jose-costa-rica"
   },
@@ -203,6 +205,7 @@
     "modified": "2018-03-18T10:51:19-07:00",
     "kind": "news",
     "event": "YCS San Jose",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-san-jose-costa-rica"
   },
@@ -212,6 +215,7 @@
     "modified": "2018-03-18T11:24:50-07:00",
     "kind": "news",
     "event": "YCS San Jose",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-san-jose-costa-rica"
   },
@@ -239,6 +243,7 @@
     "modified": "2018-03-17T12:22:51-07:00",
     "kind": "news",
     "event": "YCS San Jose",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-san-jose-costa-rica"
   },
@@ -248,6 +253,7 @@
     "modified": "2018-03-17T13:47:32-07:00",
     "kind": "news",
     "event": "YCS San Jose",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-san-jose-costa-rica"
   },
@@ -257,6 +263,7 @@
     "modified": "2018-03-17T17:06:16-07:00",
     "kind": "news",
     "event": "YCS San Jose",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-san-jose-costa-rica"
   }

@@ -86,6 +86,7 @@
     "modified": "2015-04-12T07:11:04-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -95,6 +96,7 @@
     "modified": "2015-04-11T10:04:45-07:00",
     "kind": "news",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -104,6 +106,7 @@
     "modified": "2015-04-12T09:51:14-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -113,6 +116,7 @@
     "modified": "2015-04-12T11:29:44-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -122,6 +126,7 @@
     "modified": "2015-04-12T13:41:03-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -131,6 +136,7 @@
     "modified": "2015-04-12T13:40:02-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -140,6 +146,7 @@
     "modified": "2015-04-12T21:39:52-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -149,6 +156,7 @@
     "modified": "2015-04-12T21:50:36-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -158,6 +166,7 @@
     "modified": "2015-04-12T22:03:43-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -167,6 +176,7 @@
     "modified": "2015-04-12T22:14:19-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -176,6 +186,7 @@
     "modified": "2015-04-12T22:20:06-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -185,6 +196,7 @@
     "modified": "2015-04-12T22:55:02-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -194,6 +206,7 @@
     "modified": "2015-04-11T16:38:37-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -203,6 +216,7 @@
     "modified": "2015-04-11T13:14:14-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -212,6 +226,7 @@
     "modified": "2015-04-11T12:33:34-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -221,6 +236,7 @@
     "modified": "2015-04-11T13:31:22-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -230,6 +246,7 @@
     "modified": "2015-04-11T13:26:57-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -239,6 +256,7 @@
     "modified": "2015-04-11T14:03:18-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -248,6 +266,7 @@
     "modified": "2015-04-11T16:14:29-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -257,6 +276,7 @@
     "modified": "2015-04-11T16:46:59-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -266,6 +286,7 @@
     "modified": "2015-04-11T19:34:16-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   },
@@ -275,6 +296,7 @@
     "modified": "2015-04-11T20:05:56-07:00",
     "kind": "feature",
     "event": "YCS Chicago",
+    "article": true,
     "format": null,
     "slug": "2015-ycs-chicago"
   }

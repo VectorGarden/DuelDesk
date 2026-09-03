@@ -248,6 +248,7 @@
     "modified": "2018-07-02T08:26:30-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2018-south-america-wcq"
   },
@@ -257,6 +258,7 @@
     "modified": "2018-07-01T12:08:38-07:00",
     "kind": "deck",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -266,6 +268,7 @@
     "modified": "2018-07-02T08:25:50-07:00",
     "kind": "result",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -284,6 +287,7 @@
     "modified": "2018-07-02T09:03:00-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -293,6 +297,7 @@
     "modified": "2018-07-01T15:49:40-07:00",
     "kind": "deck",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -302,6 +307,7 @@
     "modified": "2018-07-01T12:58:41-07:00",
     "kind": "result",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2018-south-america-wcq"
   },
@@ -311,6 +317,7 @@
     "modified": "2018-07-01T09:51:56-07:00",
     "kind": "news",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -320,6 +327,7 @@
     "modified": "2018-07-01T12:03:54-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -329,6 +337,7 @@
     "modified": "2018-06-30T16:05:10-07:00",
     "kind": "news",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -338,6 +347,7 @@
     "modified": "2018-07-01T14:23:43-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -347,6 +357,7 @@
     "modified": "2018-06-30T16:53:37-07:00",
     "kind": "news",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2018-south-america-wcq"
   },
@@ -356,6 +367,7 @@
     "modified": "2018-07-01T16:02:09-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -365,6 +377,7 @@
     "modified": "2018-06-30T17:26:24-07:00",
     "kind": "news",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -374,6 +387,7 @@
     "modified": "2018-06-30T13:28:01-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -383,6 +397,7 @@
     "modified": "2018-06-30T17:27:49-07:00",
     "kind": "news",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2018-south-america-wcq"
   },
@@ -392,6 +407,7 @@
     "modified": "2018-06-30T15:36:31-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -401,6 +417,7 @@
     "modified": "2018-06-30T17:44:40-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   },
@@ -410,6 +427,7 @@
     "modified": "2018-06-30T19:34:52-07:00",
     "kind": "feature",
     "event": "South America WCQ 2018",
+    "article": true,
     "format": null,
     "slug": "2018-south-america-wcq"
   }

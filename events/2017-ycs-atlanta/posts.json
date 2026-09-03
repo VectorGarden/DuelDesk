@@ -257,6 +257,7 @@
     "modified": "2017-03-05T10:30:19-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -266,6 +267,7 @@
     "modified": "2017-03-05T13:19:20-08:00",
     "kind": "deck",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -275,6 +277,7 @@
     "modified": "2017-03-05T20:50:24-08:00",
     "kind": "result",
     "event": "YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-atlanta"
   },
@@ -284,6 +287,7 @@
     "modified": "2017-03-05T07:35:44-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -293,6 +297,7 @@
     "modified": "2017-03-05T10:36:26-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -302,6 +307,7 @@
     "modified": "2017-03-04T14:37:13-08:00",
     "kind": "deck",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -311,6 +317,7 @@
     "modified": "2017-03-05T21:08:51-08:00",
     "kind": "result",
     "event": "YCS Atlanta",
+    "article": true,
     "format": "Public Events",
     "slug": "2017-ycs-atlanta"
   },
@@ -320,6 +327,7 @@
     "modified": "2017-03-05T07:46:28-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -329,6 +337,7 @@
     "modified": "2017-03-05T10:46:36-08:00",
     "kind": "feature",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -338,6 +347,7 @@
     "modified": "2017-03-04T18:32:06-08:00",
     "kind": "deck",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -347,6 +357,7 @@
     "modified": "2017-03-05T21:08:34-08:00",
     "kind": "result",
     "event": "YCS Atlanta",
+    "article": true,
     "format": "Public Events",
     "slug": "2017-ycs-atlanta"
   },
@@ -365,6 +376,7 @@
     "modified": "2017-03-05T21:12:42-08:00",
     "kind": "result",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -374,6 +386,7 @@
     "modified": "2017-03-05T10:49:50-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-atlanta"
   },
@@ -383,6 +396,7 @@
     "modified": "2017-03-04T18:56:44-08:00",
     "kind": "result",
     "event": "YCS Atlanta",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2017-ycs-atlanta"
   },
@@ -392,6 +406,7 @@
     "modified": "2017-03-05T12:10:48-08:00",
     "kind": "result",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -410,6 +425,7 @@
     "modified": "2017-03-05T20:40:00-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -419,6 +435,7 @@
     "modified": "2017-03-05T20:48:05-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-atlanta"
   },
@@ -428,6 +445,7 @@
     "modified": "2017-03-05T21:15:33-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -437,6 +455,7 @@
     "modified": "2017-03-04T08:48:30-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -446,6 +465,7 @@
     "modified": "2017-03-04T08:45:51-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -455,6 +475,7 @@
     "modified": "2017-03-04T09:00:20-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -473,6 +494,7 @@
     "modified": "2017-03-04T14:17:59-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -482,6 +504,7 @@
     "modified": "2017-03-04T14:23:00-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -491,6 +514,7 @@
     "modified": "2017-03-04T14:28:40-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -500,6 +524,7 @@
     "modified": "2017-03-04T14:43:58-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -509,6 +534,7 @@
     "modified": "2017-03-04T15:08:07-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-atlanta"
   },
@@ -518,6 +544,7 @@
     "modified": "2017-03-04T15:27:58-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": "Public Events",
     "slug": "2017-ycs-atlanta"
   },
@@ -527,6 +554,7 @@
     "modified": "2017-03-04T17:58:39-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -536,6 +564,7 @@
     "modified": "2017-03-04T16:34:14-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -545,6 +574,7 @@
     "modified": "2017-03-04T17:39:21-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -554,6 +584,7 @@
     "modified": "2017-03-04T18:33:24-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -563,6 +594,7 @@
     "modified": "2017-03-04T17:57:50-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -572,6 +604,7 @@
     "modified": "2017-03-04T18:36:23-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   },
@@ -581,6 +614,7 @@
     "modified": "2017-03-04T20:13:31-08:00",
     "kind": "news",
     "event": "YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-atlanta"
   }

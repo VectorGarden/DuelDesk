@@ -68,6 +68,7 @@
     "modified": "2016-03-19T12:34:41-07:00",
     "kind": "news",
     "event": "YCS San Jose Costa Rica",
+    "article": true,
     "format": null,
     "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
   }

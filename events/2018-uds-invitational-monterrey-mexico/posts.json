@@ -230,6 +230,7 @@
     "modified": "2018-11-24T12:22:35-08:00",
     "kind": "deck",
     "event": "UDS Invitational Monterrey",
+    "article": true,
     "format": null,
     "slug": "2018-uds-invitational-monterrey-mexico"
   },
@@ -266,6 +267,7 @@
     "modified": "2018-11-24T15:38:14-08:00",
     "kind": "news",
     "event": "UDS Invitational Monterrey",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2018-uds-invitational-monterrey-mexico"
   }

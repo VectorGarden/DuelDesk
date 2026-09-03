@@ -176,6 +176,7 @@
     "modified": "2016-09-18T08:20:03-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -185,6 +186,7 @@
     "modified": "2016-09-18T12:11:59-07:00",
     "kind": "deck",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -194,6 +196,7 @@
     "modified": "2016-09-18T15:21:23-07:00",
     "kind": "result",
     "event": "YCS Mexico City",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2016-ycs-mexico-city"
   },
@@ -203,6 +206,7 @@
     "modified": "2016-09-20T12:23:41-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -212,6 +216,7 @@
     "modified": "2016-09-18T11:09:26-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -221,6 +226,7 @@
     "modified": "2016-09-18T14:58:38-07:00",
     "kind": "deck",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -230,6 +236,7 @@
     "modified": "2016-09-18T15:46:49-07:00",
     "kind": "result",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -239,6 +246,7 @@
     "modified": "2016-09-19T06:46:38-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -248,6 +256,7 @@
     "modified": "2016-09-18T12:04:33-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -257,6 +266,7 @@
     "modified": "2016-09-18T13:31:04-07:00",
     "kind": "deck",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -266,6 +276,7 @@
     "modified": "2016-09-18T16:25:33-07:00",
     "kind": "result",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -275,6 +286,7 @@
     "modified": "2016-09-18T07:10:56-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -284,6 +296,7 @@
     "modified": "2016-09-18T14:58:19-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -293,6 +306,7 @@
     "modified": "2016-09-18T16:52:02-07:00",
     "kind": "result",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -302,6 +316,7 @@
     "modified": "2016-09-18T07:25:45-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -311,6 +326,7 @@
     "modified": "2016-09-18T15:09:59-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -320,6 +336,7 @@
     "modified": "2016-09-18T10:10:38-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -329,6 +346,7 @@
     "modified": "2016-09-17T12:00:49-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -338,6 +356,7 @@
     "modified": "2016-09-18T11:14:08-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -347,6 +366,7 @@
     "modified": "2016-09-17T12:51:53-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -356,6 +376,7 @@
     "modified": "2016-09-18T11:49:43-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -365,6 +386,7 @@
     "modified": "2016-09-17T16:09:33-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -374,6 +396,7 @@
     "modified": "2016-09-18T13:37:47-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -383,6 +406,7 @@
     "modified": "2016-09-17T16:45:38-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -401,6 +425,7 @@
     "modified": "2016-09-17T22:39:43-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -410,6 +435,7 @@
     "modified": "2016-09-18T16:04:28-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -419,6 +445,7 @@
     "modified": "2016-09-17T23:04:14-07:00",
     "kind": "feature",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -428,6 +455,7 @@
     "modified": "2016-09-17T13:11:31-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -437,6 +465,7 @@
     "modified": "2016-09-17T11:57:13-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -446,6 +475,7 @@
     "modified": "2016-09-17T13:10:14-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2016-ycs-mexico-city"
   },
@@ -455,6 +485,7 @@
     "modified": "2016-09-17T13:33:40-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -464,6 +495,7 @@
     "modified": "2016-09-17T16:14:53-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -473,6 +505,7 @@
     "modified": "2016-09-17T16:49:07-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -482,6 +515,7 @@
     "modified": "2016-09-17T17:32:24-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -491,6 +525,7 @@
     "modified": "2016-09-17T17:55:03-07:00",
     "kind": "result",
     "event": "YCS Mexico City",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2016-ycs-mexico-city"
   },
@@ -500,6 +535,7 @@
     "modified": "2016-09-17T19:16:58-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   },
@@ -509,6 +545,7 @@
     "modified": "2016-09-17T23:03:25-07:00",
     "kind": "news",
     "event": "YCS Mexico City",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-mexico-city"
   }

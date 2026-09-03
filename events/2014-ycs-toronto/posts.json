@@ -77,6 +77,7 @@
     "modified": "2014-09-07T07:45:01-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -86,6 +87,7 @@
     "modified": "2014-09-07T09:54:57-07:00",
     "kind": "deck",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -95,6 +97,7 @@
     "modified": "2014-09-07T18:03:40-07:00",
     "kind": "result",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -104,6 +107,7 @@
     "modified": "2014-09-06T09:21:46-07:00",
     "kind": "news",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -113,6 +117,7 @@
     "modified": "2014-09-07T09:12:07-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -122,6 +127,7 @@
     "modified": "2014-09-07T10:00:03-07:00",
     "kind": "deck",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -131,6 +137,7 @@
     "modified": "2014-09-07T12:55:53-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -140,6 +147,7 @@
     "modified": "2014-09-07T10:01:57-07:00",
     "kind": "deck",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -149,6 +157,7 @@
     "modified": "2014-09-07T13:34:17-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -158,6 +167,7 @@
     "modified": "2014-09-07T15:04:22-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -167,6 +177,7 @@
     "modified": "2014-09-07T17:34:54-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -176,6 +187,7 @@
     "modified": "2014-09-06T09:37:47-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -185,6 +197,7 @@
     "modified": "2014-09-06T11:29:56-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -194,6 +207,7 @@
     "modified": "2014-09-06T12:38:30-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -203,6 +217,7 @@
     "modified": "2014-09-06T12:53:26-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -212,6 +227,7 @@
     "modified": "2014-09-06T14:29:54-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -221,6 +237,7 @@
     "modified": "2014-09-06T16:08:46-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   },
@@ -230,6 +247,7 @@
     "modified": "2014-09-06T21:54:47-07:00",
     "kind": "feature",
     "event": "YCS Toronto",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-toronto"
   }

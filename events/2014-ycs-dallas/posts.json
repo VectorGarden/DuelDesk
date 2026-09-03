@@ -140,6 +140,7 @@
     "modified": "2014-10-04T09:50:45-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-dallas"
   }

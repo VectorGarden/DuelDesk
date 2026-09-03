@@ -59,6 +59,7 @@
     "modified": "2010-08-16T17:10:23-07:00",
     "kind": "news",
     "event": "World Championship 2010",
+    "article": true,
     "format": null,
     "slug": "wcs-2010"
   },
@@ -68,6 +69,7 @@
     "modified": "2010-08-15T10:58:16-07:00",
     "kind": "news",
     "event": "World Championship 2010",
+    "article": true,
     "format": null,
     "slug": "wcs-2010"
   },
@@ -77,6 +79,7 @@
     "modified": "2010-08-15T10:46:55-07:00",
     "kind": "news",
     "event": "World Championship 2010",
+    "article": true,
     "format": null,
     "slug": "wcs-2010"
   },
@@ -86,6 +89,7 @@
     "modified": "2010-08-15T12:14:27-07:00",
     "kind": "news",
     "event": "World Championship 2010",
+    "article": true,
     "format": null,
     "slug": "wcs-2010"
   },
@@ -95,6 +99,7 @@
     "modified": "2010-08-15T14:01:29-07:00",
     "kind": "news",
     "event": "World Championship 2010",
+    "article": true,
     "format": null,
     "slug": "wcs-2010"
   },
@@ -104,6 +109,7 @@
     "modified": "2010-08-15T16:08:12-07:00",
     "kind": "news",
     "event": "World Championship 2010",
+    "article": true,
     "format": null,
     "slug": "wcs-2010"
   }

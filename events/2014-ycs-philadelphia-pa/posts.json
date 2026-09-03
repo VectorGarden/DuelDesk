@@ -113,6 +113,7 @@
     "modified": "2014-05-19T14:50:59-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -131,6 +132,7 @@
     "modified": "2014-05-17T11:06:38-07:00",
     "kind": "news",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -140,6 +142,7 @@
     "modified": "2014-05-19T14:54:08-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -149,6 +152,7 @@
     "modified": "2014-05-17T19:42:55-07:00",
     "kind": "result",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -158,6 +162,7 @@
     "modified": "2014-05-19T14:58:26-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -167,6 +172,7 @@
     "modified": "2014-05-18T06:44:49-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -176,6 +182,7 @@
     "modified": "2014-05-18T06:56:19-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -185,6 +192,7 @@
     "modified": "2014-05-18T07:09:59-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -194,6 +202,7 @@
     "modified": "2014-05-18T07:52:59-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -203,6 +212,7 @@
     "modified": "2014-05-18T10:27:06-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -212,6 +222,7 @@
     "modified": "2014-05-18T10:46:13-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -221,6 +232,7 @@
     "modified": "2014-05-18T10:48:12-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -230,6 +242,7 @@
     "modified": "2014-05-18T10:59:48-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -239,6 +252,7 @@
     "modified": "2014-05-18T11:50:46-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -248,6 +262,7 @@
     "modified": "2014-05-18T11:55:06-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -257,6 +272,7 @@
     "modified": "2014-05-17T11:17:09-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -266,6 +282,7 @@
     "modified": "2014-05-17T11:31:40-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -275,6 +292,7 @@
     "modified": "2014-05-17T12:44:05-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -284,6 +302,7 @@
     "modified": "2014-05-17T14:41:13-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -293,6 +312,7 @@
     "modified": "2014-05-17T14:56:23-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -302,6 +322,7 @@
     "modified": "2014-05-17T18:52:30-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   },
@@ -311,6 +332,7 @@
     "modified": "2014-05-17T19:48:33-07:00",
     "kind": "feature",
     "event": "YCS Philadelphia",
+    "article": true,
     "format": null,
     "slug": "2014-ycs-philadelphia-pa"
   }

@@ -23,6 +23,7 @@
     "modified": "2011-07-02T13:36:52-07:00",
     "kind": "deck",
     "event": "South America WCQ 2011",
+    "article": true,
     "format": null,
     "slug": "2011-south-american-wcq"
   },
@@ -32,6 +33,7 @@
     "modified": "2011-07-03T08:06:27-07:00",
     "kind": "result",
     "event": "South America WCQ 2011",
+    "article": true,
     "format": "Public Events",
     "slug": "2011-south-american-wcq"
   },
@@ -41,6 +43,7 @@
     "modified": "2011-07-03T05:50:56-07:00",
     "kind": "news",
     "event": "South America WCQ 2011",
+    "article": true,
     "format": null,
     "slug": "2011-south-american-wcq"
   },
@@ -50,6 +53,7 @@
     "modified": "2011-07-03T11:37:18-07:00",
     "kind": "result",
     "event": "South America WCQ 2011",
+    "article": true,
     "format": null,
     "slug": "2011-south-american-wcq"
   },
@@ -59,6 +63,7 @@
     "modified": "2011-07-03T06:05:18-07:00",
     "kind": "news",
     "event": "South America WCQ 2011",
+    "article": true,
     "format": "Public Events",
     "slug": "2011-south-american-wcq"
   },
@@ -68,6 +73,7 @@
     "modified": "2011-07-03T07:37:57-07:00",
     "kind": "news",
     "event": "South America WCQ 2011",
+    "article": true,
     "format": null,
     "slug": "2011-south-american-wcq"
   },
@@ -77,6 +83,7 @@
     "modified": "2011-07-03T09:58:36-07:00",
     "kind": "news",
     "event": "South America WCQ 2011",
+    "article": true,
     "format": null,
     "slug": "2011-south-american-wcq"
   },
@@ -86,6 +93,7 @@
     "modified": "2011-07-03T10:38:20-07:00",
     "kind": "news",
     "event": "South America WCQ 2011",
+    "article": true,
     "format": null,
     "slug": "2011-south-american-wcq"
   }

@@ -131,6 +131,7 @@
     "modified": "2017-02-19T11:06:26-08:00",
     "kind": "feature",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -140,6 +141,7 @@
     "modified": "2017-02-19T14:18:23-08:00",
     "kind": "deck",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -149,6 +151,7 @@
     "modified": "2017-03-02T11:41:16-08:00",
     "kind": "result",
     "event": "YCS Seattle",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-ycs-seattle"
   },
@@ -158,6 +161,7 @@
     "modified": "2017-02-19T14:58:18-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -167,6 +171,7 @@
     "modified": "2017-02-19T14:52:37-08:00",
     "kind": "feature",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -176,6 +181,7 @@
     "modified": "2017-02-19T14:20:15-08:00",
     "kind": "deck",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -185,6 +191,7 @@
     "modified": "2017-02-19T12:01:14-08:00",
     "kind": "result",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -194,6 +201,7 @@
     "modified": "2017-02-19T11:01:10-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -203,6 +211,7 @@
     "modified": "2017-02-18T15:19:30-08:00",
     "kind": "feature",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -212,6 +221,7 @@
     "modified": "2017-02-19T14:50:56-08:00",
     "kind": "deck",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -221,6 +231,7 @@
     "modified": "2017-02-19T19:23:55-08:00",
     "kind": "result",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -230,6 +241,7 @@
     "modified": "2017-02-19T11:18:23-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -239,6 +251,7 @@
     "modified": "2017-02-18T20:26:55-08:00",
     "kind": "feature",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -248,6 +261,7 @@
     "modified": "2017-02-19T19:52:47-08:00",
     "kind": "result",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -266,6 +280,7 @@
     "modified": "2017-02-19T19:40:44-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -275,6 +290,7 @@
     "modified": "2017-02-18T15:21:13-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -284,6 +300,7 @@
     "modified": "2017-02-18T12:45:36-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -293,6 +310,7 @@
     "modified": "2017-02-18T17:59:38-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -302,6 +320,7 @@
     "modified": "2017-02-18T19:47:11-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -311,6 +330,7 @@
     "modified": "2017-02-18T20:07:26-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -320,6 +340,7 @@
     "modified": "2017-02-18T20:15:21-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -329,6 +350,7 @@
     "modified": "2017-02-18T20:20:03-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   },
@@ -338,6 +360,7 @@
     "modified": "2017-02-18T20:29:51-08:00",
     "kind": "news",
     "event": "YCS Seattle",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-seattle"
   }

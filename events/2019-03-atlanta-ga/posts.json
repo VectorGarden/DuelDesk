@@ -212,6 +212,7 @@
     "modified": "2019-03-18T11:20:51-07:00",
     "kind": "deck",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -221,6 +222,7 @@
     "modified": "2022-09-29T11:08:37-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-03-atlanta-ga"
   },
@@ -230,6 +232,7 @@
     "modified": "2019-03-18T11:23:29-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -239,6 +242,7 @@
     "modified": "2019-03-18T11:19:23-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -248,6 +252,7 @@
     "modified": "2019-03-18T11:22:29-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -257,6 +262,7 @@
     "modified": "2019-03-18T11:18:49-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -266,6 +272,7 @@
     "modified": "2019-03-18T11:21:45-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -275,6 +282,7 @@
     "modified": "2019-03-17T17:07:11-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -293,6 +301,7 @@
     "modified": "2019-03-17T17:10:08-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -302,6 +311,7 @@
     "modified": "2019-03-17T10:14:25-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -311,6 +321,7 @@
     "modified": "2019-03-17T17:13:13-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-03-atlanta-ga"
   },
@@ -320,6 +331,7 @@
     "modified": "2019-03-17T08:46:51-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -329,6 +341,7 @@
     "modified": "2019-03-17T17:16:10-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-03-atlanta-ga"
   },
@@ -347,6 +360,7 @@
     "modified": "2019-03-16T19:56:35-07:00",
     "kind": "result",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-03-atlanta-ga"
   },
@@ -356,6 +370,7 @@
     "modified": "2019-03-17T14:02:48-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-03-atlanta-ga"
   },
@@ -365,6 +380,7 @@
     "modified": "2019-03-17T17:29:24-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-03-atlanta-ga"
   },
@@ -374,6 +390,7 @@
     "modified": "2019-03-16T07:17:17-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -383,6 +400,7 @@
     "modified": "2019-03-16T08:54:33-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -392,6 +410,7 @@
     "modified": "2019-03-16T11:35:40-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -401,6 +420,7 @@
     "modified": "2019-03-16T15:36:17-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-03-atlanta-ga"
   },
@@ -410,6 +430,7 @@
     "modified": "2019-03-16T15:39:37-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -428,6 +449,7 @@
     "modified": "2019-03-16T15:59:08-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -437,6 +459,7 @@
     "modified": "2019-03-16T18:25:33-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -446,6 +469,7 @@
     "modified": "2019-03-16T18:30:15-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2019-03-atlanta-ga"
   },
@@ -455,6 +479,7 @@
     "modified": "2019-03-16T18:34:25-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Public Events",
     "slug": "2019-03-atlanta-ga"
   },
@@ -464,6 +489,7 @@
     "modified": "2019-03-16T19:27:23-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2019-03-atlanta-ga"
   },
@@ -473,6 +499,7 @@
     "modified": "2019-03-16T19:30:54-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -482,6 +509,7 @@
     "modified": "2019-03-16T19:34:38-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   },
@@ -491,6 +519,7 @@
     "modified": "2019-03-16T19:39:26-07:00",
     "kind": "news",
     "event": "Team YCS Atlanta",
+    "article": true,
     "format": null,
     "slug": "2019-03-atlanta-ga"
   }

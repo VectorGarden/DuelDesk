@@ -239,6 +239,7 @@
     "modified": "2017-07-09T16:37:16-07:00",
     "kind": "feature",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -248,6 +249,7 @@
     "modified": "2017-07-08T17:35:19-07:00",
     "kind": "deck",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -257,6 +259,7 @@
     "modified": "2017-07-09T18:34:48-07:00",
     "kind": "result",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -266,6 +269,7 @@
     "modified": "2017-07-09T07:30:21-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -275,6 +279,7 @@
     "modified": "2017-07-08T10:35:25-07:00",
     "kind": "feature",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -284,6 +289,7 @@
     "modified": "2017-07-09T18:47:03-07:00",
     "kind": "result",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -293,6 +299,7 @@
     "modified": "2017-07-09T15:28:19-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -302,6 +309,7 @@
     "modified": "2017-07-08T17:43:18-07:00",
     "kind": "feature",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -311,6 +319,7 @@
     "modified": "2017-07-09T17:00:33-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -320,6 +329,7 @@
     "modified": "2017-07-08T17:52:07-07:00",
     "kind": "feature",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -329,6 +339,7 @@
     "modified": "2017-07-09T17:06:17-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -338,6 +349,7 @@
     "modified": "2017-07-08T22:01:23-07:00",
     "kind": "feature",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -347,6 +359,7 @@
     "modified": "2017-07-09T18:24:15-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -356,6 +369,7 @@
     "modified": "2017-07-09T18:30:15-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -365,6 +379,7 @@
     "modified": "2017-07-08T13:58:33-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -374,6 +389,7 @@
     "modified": "2017-07-08T09:55:09-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -383,6 +399,7 @@
     "modified": "2017-07-08T12:30:06-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -392,6 +409,7 @@
     "modified": "2017-07-08T12:58:55-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -401,6 +419,7 @@
     "modified": "2017-07-08T17:34:11-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -410,6 +429,7 @@
     "modified": "2017-07-08T21:12:34-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   },
@@ -419,6 +439,7 @@
     "modified": "2017-07-08T21:14:28-07:00",
     "kind": "news",
     "event": "North America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-north-american-wcq"
   }

@@ -176,6 +176,7 @@
     "modified": "2016-09-18T09:36:42-07:00",
     "kind": "feature",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -203,6 +204,7 @@
     "modified": "2016-09-18T09:42:09-07:00",
     "kind": "feature",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -212,6 +214,7 @@
     "modified": "2016-09-18T10:44:51-07:00",
     "kind": "result",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -221,6 +224,7 @@
     "modified": "2016-09-18T10:13:08-07:00",
     "kind": "news",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -230,6 +234,7 @@
     "modified": "2016-09-18T13:18:46-07:00",
     "kind": "feature",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -239,6 +244,7 @@
     "modified": "2016-09-18T11:43:02-07:00",
     "kind": "result",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -248,6 +254,7 @@
     "modified": "2016-09-18T13:34:08-07:00",
     "kind": "news",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -257,6 +264,7 @@
     "modified": "2016-09-18T16:45:48-07:00",
     "kind": "feature",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -275,6 +283,7 @@
     "modified": "2016-09-17T16:10:31-07:00",
     "kind": "news",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -284,6 +293,7 @@
     "modified": "2016-09-18T17:11:40-07:00",
     "kind": "feature",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -302,6 +312,7 @@
     "modified": "2016-09-17T16:38:58-07:00",
     "kind": "news",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -311,6 +322,7 @@
     "modified": "2016-09-17T12:26:30-07:00",
     "kind": "feature",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -329,6 +341,7 @@
     "modified": "2016-09-17T19:10:27-07:00",
     "kind": "news",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -338,6 +351,7 @@
     "modified": "2016-09-17T15:01:21-07:00",
     "kind": "feature",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -356,6 +370,7 @@
     "modified": "2016-09-17T22:49:26-07:00",
     "kind": "news",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -365,6 +380,7 @@
     "modified": "2016-09-17T15:18:29-07:00",
     "kind": "feature",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   },
@@ -374,6 +390,7 @@
     "modified": "2016-09-17T16:19:21-07:00",
     "kind": "result",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2016-uds-invitational-chicago"
   },
@@ -383,6 +400,7 @@
     "modified": "2016-09-17T19:20:07-07:00",
     "kind": "news",
     "event": "UDS Invitational Chicago",
+    "article": true,
     "format": null,
     "slug": "2016-uds-invitational-chicago"
   }

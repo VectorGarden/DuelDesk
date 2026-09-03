@@ -194,6 +194,7 @@
     "modified": "2018-03-25T10:35:29-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -203,6 +204,7 @@
     "modified": "2018-03-25T13:35:35-07:00",
     "kind": "deck",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -230,6 +232,7 @@
     "modified": "2018-03-25T10:43:09-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -239,6 +242,7 @@
     "modified": "2018-03-25T15:39:52-07:00",
     "kind": "deck",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -248,6 +252,7 @@
     "modified": "2018-03-25T19:39:35-07:00",
     "kind": "result",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": "Public Events",
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -257,6 +262,7 @@
     "modified": "2018-03-25T10:46:46-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -266,6 +272,7 @@
     "modified": "2018-03-25T12:49:44-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -275,6 +282,7 @@
     "modified": "2018-03-25T19:43:41-07:00",
     "kind": "result",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": "Public Events",
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -293,6 +301,7 @@
     "modified": "2018-03-25T14:48:03-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -302,6 +311,7 @@
     "modified": "2018-03-25T19:56:57-07:00",
     "kind": "result",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -311,6 +321,7 @@
     "modified": "2018-03-25T11:36:55-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -320,6 +331,7 @@
     "modified": "2018-03-25T15:33:22-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -338,6 +350,7 @@
     "modified": "2018-03-25T16:40:41-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -347,6 +360,7 @@
     "modified": "2018-03-25T15:15:53-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -356,6 +370,7 @@
     "modified": "2018-03-25T16:51:04-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -365,6 +380,7 @@
     "modified": "2018-03-25T16:55:15-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -374,6 +390,7 @@
     "modified": "2018-03-25T18:08:15-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -383,6 +400,7 @@
     "modified": "2018-03-25T19:50:26-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -392,6 +410,7 @@
     "modified": "2018-03-25T18:54:24-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -410,6 +429,7 @@
     "modified": "2018-03-25T19:34:47-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -419,6 +439,7 @@
     "modified": "2018-03-24T13:12:46-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -428,6 +449,7 @@
     "modified": "2018-03-24T13:01:01-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -437,6 +459,7 @@
     "modified": "2018-03-24T10:59:03-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -446,6 +469,7 @@
     "modified": "2018-03-24T13:41:43-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -455,6 +479,7 @@
     "modified": "2018-03-24T15:04:35-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -464,6 +489,7 @@
     "modified": "2018-03-24T14:21:16-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -473,6 +499,7 @@
     "modified": "2018-03-24T15:12:59-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -482,6 +509,7 @@
     "modified": "2018-03-24T15:36:17-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -491,6 +519,7 @@
     "modified": "2018-03-24T16:28:12-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -500,6 +529,7 @@
     "modified": "2018-03-24T16:20:07-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -509,6 +539,7 @@
     "modified": "2018-03-24T16:37:06-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -518,6 +549,7 @@
     "modified": "2018-03-24T18:32:12-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -527,6 +559,7 @@
     "modified": "2018-03-24T16:45:03-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -536,6 +569,7 @@
     "modified": "2018-03-24T19:52:02-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -545,6 +579,7 @@
     "modified": "2018-03-24T17:23:55-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -554,6 +589,7 @@
     "modified": "2018-03-24T20:23:17-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -563,6 +599,7 @@
     "modified": "2018-03-24T18:42:56-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -572,6 +609,7 @@
     "modified": "2018-03-24T21:12:40-07:00",
     "kind": "feature",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -581,6 +619,7 @@
     "modified": "2018-03-24T19:09:18-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -590,6 +629,7 @@
     "modified": "2018-03-24T19:24:07-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   },
@@ -599,6 +639,7 @@
     "modified": "2018-03-24T20:27:21-07:00",
     "kind": "news",
     "event": "YCS Salt Lake City",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-salt-lake-city"
   }

@@ -194,6 +194,7 @@
     "modified": "2018-04-22T09:34:20-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -203,6 +204,7 @@
     "modified": "2018-04-22T12:01:56-07:00",
     "kind": "deck",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -221,6 +223,7 @@
     "modified": "2018-04-22T12:11:47-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -230,6 +233,7 @@
     "modified": "2018-04-22T11:17:54-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -257,6 +261,7 @@
     "modified": "2018-04-22T12:11:35-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -266,6 +271,7 @@
     "modified": "2018-04-22T12:13:31-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -275,6 +281,7 @@
     "modified": "2018-04-22T09:33:49-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -284,6 +291,7 @@
     "modified": "2018-04-22T13:29:24-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -293,6 +301,7 @@
     "modified": "2018-04-22T12:11:19-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -302,6 +311,7 @@
     "modified": "2018-04-22T15:27:11-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -311,6 +321,7 @@
     "modified": "2018-04-22T19:16:37-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -320,6 +331,7 @@
     "modified": "2018-04-22T16:18:18-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -338,6 +350,7 @@
     "modified": "2018-04-22T16:30:17-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -356,6 +369,7 @@
     "modified": "2018-04-21T11:02:07-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -365,6 +379,7 @@
     "modified": "2018-04-21T13:10:37-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -374,6 +389,7 @@
     "modified": "2018-04-21T11:08:00-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -383,6 +399,7 @@
     "modified": "2018-04-21T09:29:49-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -392,6 +409,7 @@
     "modified": "2018-04-21T12:36:37-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -401,6 +419,7 @@
     "modified": "2018-04-21T10:51:37-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -410,6 +429,7 @@
     "modified": "2018-04-21T13:32:21-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -419,6 +439,7 @@
     "modified": "2018-04-21T13:59:31-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2018-ycs-memphis"
   },
@@ -428,6 +449,7 @@
     "modified": "2018-04-21T13:57:58-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -437,6 +459,7 @@
     "modified": "2018-04-21T15:24:23-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -446,6 +469,7 @@
     "modified": "2018-04-21T15:03:44-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -455,6 +479,7 @@
     "modified": "2018-04-21T15:26:27-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -464,6 +489,7 @@
     "modified": "2018-04-21T16:54:31-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -473,6 +499,7 @@
     "modified": "2018-04-21T15:50:18-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -482,6 +509,7 @@
     "modified": "2018-04-21T18:25:01-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -491,6 +519,7 @@
     "modified": "2018-04-21T15:49:55-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -500,6 +529,7 @@
     "modified": "2018-04-21T20:18:39-07:00",
     "kind": "feature",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -509,6 +539,7 @@
     "modified": "2018-04-21T16:25:19-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -518,6 +549,7 @@
     "modified": "2018-04-21T16:26:52-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -527,6 +559,7 @@
     "modified": "2018-04-21T16:48:15-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -536,6 +569,7 @@
     "modified": "2018-04-21T16:49:10-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -545,6 +579,7 @@
     "modified": "2018-04-21T17:03:31-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -554,6 +589,7 @@
     "modified": "2018-04-21T17:19:40-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -563,6 +599,7 @@
     "modified": "2018-04-21T18:13:37-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -572,6 +609,7 @@
     "modified": "2018-04-21T18:40:49-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   },
@@ -581,6 +619,7 @@
     "modified": "2018-04-21T20:15:42-07:00",
     "kind": "news",
     "event": "YCS Memphis",
+    "article": true,
     "format": null,
     "slug": "2018-ycs-memphis"
   }

@@ -230,6 +230,7 @@
     "modified": "2017-06-25T07:26:12-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -248,6 +249,7 @@
     "modified": "2017-06-26T14:00:35-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-central-american-wcq"
   },
@@ -257,6 +259,7 @@
     "modified": "2017-06-25T09:42:47-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -275,6 +278,7 @@
     "modified": "2017-06-26T14:09:15-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -284,6 +288,7 @@
     "modified": "2017-06-25T10:23:44-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -302,6 +307,7 @@
     "modified": "2017-06-26T14:19:47-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -311,6 +317,7 @@
     "modified": "2017-06-25T11:25:23-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -320,6 +327,7 @@
     "modified": "2017-06-26T14:13:56-07:00",
     "kind": "result",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2017-central-american-wcq"
   },
@@ -338,6 +346,7 @@
     "modified": "2017-06-25T12:33:14-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -356,6 +365,7 @@
     "modified": "2017-06-25T07:29:49-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -365,6 +375,7 @@
     "modified": "2017-06-25T15:05:53-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -383,6 +394,7 @@
     "modified": "2017-06-25T08:38:21-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -392,6 +404,7 @@
     "modified": "2017-06-25T16:58:34-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-central-american-wcq"
   },
@@ -401,6 +414,7 @@
     "modified": "2017-06-25T11:26:00-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -410,6 +424,7 @@
     "modified": "2017-06-25T16:57:48-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -419,6 +434,7 @@
     "modified": "2017-06-25T10:32:53-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -428,6 +444,7 @@
     "modified": "2017-06-24T10:40:42-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -437,6 +454,7 @@
     "modified": "2017-06-25T11:29:38-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -446,6 +464,7 @@
     "modified": "2017-06-24T14:34:36-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -455,6 +474,7 @@
     "modified": "2017-06-25T12:12:18-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -464,6 +484,7 @@
     "modified": "2017-06-24T14:33:29-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -473,6 +494,7 @@
     "modified": "2017-06-24T09:04:33-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -482,6 +504,7 @@
     "modified": "2017-06-24T17:09:10-07:00",
     "kind": "feature",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -491,6 +514,7 @@
     "modified": "2017-06-24T11:08:10-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -500,6 +524,7 @@
     "modified": "2017-06-24T12:24:17-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -509,6 +534,7 @@
     "modified": "2017-06-24T13:55:10-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -518,6 +544,7 @@
     "modified": "2017-06-24T15:02:44-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -527,6 +554,7 @@
     "modified": "2017-06-24T15:09:52-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -536,6 +564,7 @@
     "modified": "2017-06-24T15:14:18-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -545,6 +574,7 @@
     "modified": "2017-06-24T16:21:11-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -554,6 +584,7 @@
     "modified": "2017-06-24T17:00:36-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   },
@@ -563,6 +594,7 @@
     "modified": "2017-06-24T17:29:23-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2017-central-american-wcq"
   },
@@ -572,6 +604,7 @@
     "modified": "2017-06-24T17:32:53-07:00",
     "kind": "news",
     "event": "Central America WCQ 2017",
+    "article": true,
     "format": null,
     "slug": "2017-central-american-wcq"
   }

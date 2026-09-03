@@ -221,6 +221,7 @@
     "modified": "2016-11-12T05:55:16-08:00",
     "kind": "news",
     "event": "YCS Rio de Janeiro",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-rio-de-janeiro"
   },
@@ -230,6 +231,7 @@
     "modified": "2016-11-12T10:58:59-08:00",
     "kind": "news",
     "event": "YCS Rio de Janeiro",
+    "article": true,
     "format": null,
     "slug": "2016-ycs-rio-de-janeiro"
   },
@@ -239,6 +241,7 @@
     "modified": "2016-11-12T13:34:37-08:00",
     "kind": "news",
     "event": "YCS Rio de Janeiro",
+    "article": true,
     "format": "Dragon Duel",
     "slug": "2016-ycs-rio-de-janeiro"
   }

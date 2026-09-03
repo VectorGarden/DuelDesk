@@ -248,6 +248,7 @@
     "modified": "2017-10-22T09:25:53-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -257,6 +258,7 @@
     "modified": "2017-10-22T11:39:09-07:00",
     "kind": "deck",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -275,6 +277,7 @@
     "modified": "2017-10-22T07:41:18-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -284,6 +287,7 @@
     "modified": "2017-10-22T10:16:28-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -302,6 +306,7 @@
     "modified": "2017-10-22T08:05:01-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -311,6 +316,7 @@
     "modified": "2017-10-22T13:23:47-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -329,6 +335,7 @@
     "modified": "2017-10-22T09:26:42-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -338,6 +345,7 @@
     "modified": "2017-10-22T14:49:32-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -356,6 +364,7 @@
     "modified": "2017-10-22T09:44:22-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -365,6 +374,7 @@
     "modified": "2017-10-22T15:21:30-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -374,6 +384,7 @@
     "modified": "2017-10-22T11:13:33-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -383,6 +394,7 @@
     "modified": "2017-10-22T16:15:58-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -392,6 +404,7 @@
     "modified": "2017-10-22T13:18:16-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -401,6 +414,7 @@
     "modified": "2017-10-22T16:45:38-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -419,6 +433,7 @@
     "modified": "2017-10-21T12:16:18-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -428,6 +443,7 @@
     "modified": "2017-10-21T10:24:43-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -437,6 +453,7 @@
     "modified": "2017-10-21T15:03:04-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -446,6 +463,7 @@
     "modified": "2017-10-21T09:19:48-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -455,6 +473,7 @@
     "modified": "2017-10-21T18:29:34-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -464,6 +483,7 @@
     "modified": "2017-10-21T10:47:28-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -473,6 +493,7 @@
     "modified": "2017-10-21T17:41:53-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -482,6 +503,7 @@
     "modified": "2017-10-21T12:00:37-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -491,6 +513,7 @@
     "modified": "2017-10-21T18:11:33-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -500,6 +523,7 @@
     "modified": "2017-10-21T13:24:41-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": "Attack of the Giant Card",
     "slug": "2017-ycs-dallas"
   },
@@ -509,6 +533,7 @@
     "modified": "2017-10-21T20:14:16-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -518,6 +543,7 @@
     "modified": "2017-10-21T15:38:55-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -527,6 +553,7 @@
     "modified": "2017-10-21T20:41:34-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -536,6 +563,7 @@
     "modified": "2017-10-21T15:42:24-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -545,6 +573,7 @@
     "modified": "2017-10-21T21:24:17-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -554,6 +583,7 @@
     "modified": "2017-10-21T15:49:48-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -563,6 +593,7 @@
     "modified": "2017-10-19T19:02:52-07:00",
     "kind": "feature",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -572,6 +603,7 @@
     "modified": "2017-10-21T17:52:42-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -581,6 +613,7 @@
     "modified": "2017-10-21T18:22:27-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -590,6 +623,7 @@
     "modified": "2017-10-21T18:35:46-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -599,6 +633,7 @@
     "modified": "2017-10-21T18:50:57-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   },
@@ -608,6 +643,7 @@
     "modified": "2017-10-21T20:46:27-07:00",
     "kind": "news",
     "event": "YCS Dallas",
+    "article": true,
     "format": null,
     "slug": "2017-ycs-dallas"
   }
