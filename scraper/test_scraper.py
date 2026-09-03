@@ -5890,6 +5890,33 @@ class TestCoverageFormat(unittest.TestCase):
             self.assertIsNone(detect_format(title), title)
 
 
+class TestRegionStrippingIsAskedOnce(unittest.TestCase):
+    """The same cell arrives over and over; the answer is worked out once."""
+
+    def test_the_same_name_is_not_stripped_twice(self):
+        # A Duelist is seated in every round they played, so the archive asks
+        # this about the same string hundreds of times: 447,354 calls about
+        # 18,974 distinct strings across forty events.
+        #
+        # Asserted through the cache's own counters rather than a clock, so it
+        # fails when the caching is removed and not when CI is busy.
+        from parse import strip_region
+        strip_region.cache_clear()
+        for _ in range(5):
+            strip_region("Joshua Aaron TX Jones")
+            strip_region("Philip DEU")
+        info = strip_region.cache_info()
+        self.assertGreater(info.hits, info.misses,
+                           f"most calls should be answered from the cache, got {info}")
+
+    def test_caching_does_not_change_the_answer(self):
+        from parse import strip_region
+        strip_region.cache_clear()
+        first = strip_region("Christian Jorel Sevil CA Agustin")
+        self.assertEqual(strip_region("Christian Jorel Sevil CA Agustin"), first)
+        self.assertEqual(first, ("Christian Jorel Sevil Agustin", "CA"))
+
+
 class TestFoldedNames(unittest.TestCase):
     """One Duelist with two names.
 
