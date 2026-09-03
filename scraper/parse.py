@@ -179,9 +179,16 @@ def strip_region(name: str) -> tuple[str, str | None]:
     tokens = _ANNOTATION.sub(" ", name).strip().split()
     if not tokens:
         return "", spelt
-    is_code = lambda t: bool(_REGION_TOKEN.fullmatch(t)) and t not in _NAME_SUFFIXES
-    codes = [t for t in tokens if is_code(t)]
-    kept = [t for t in tokens if not is_code(t)]
+    # One pass, because the question is asked of every token of every name in
+    # the archive and asking it twice is the same regex run twice: two list
+    # comprehensions over the same tokens meant three million fullmatch calls
+    # where a million and a half would do.
+    codes: list[str] = []
+    kept: list[str] = []
+    for t in tokens:
+        target = (codes if _REGION_TOKEN.fullmatch(t) and t not in _NAME_SUFFIXES
+                  else kept)
+        target.append(t)
     if not kept:                      # the whole name looked like a code
         return " ".join(tokens), spelt
     return " ".join(kept), (codes[0] if codes else spelt)
