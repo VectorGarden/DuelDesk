@@ -646,7 +646,7 @@ def read_annotation(cell: str) -> tuple[str, str | None, str | None]:
         bits = [b.strip() for b in re.split(r"\s+[-\u2010-\u2015]\s+", said[0])] if said else []
         region = bits[0] if len(bits) > 1 else None
         deck = bits[-1] if bits else None
-    return _DANGLING.sub("", head).strip(), region or None, deck or None
+    return _DANGLING.sub("", head).strip(), region or None, _deck_or_none(deck)
 
 
 def parse_table(doc: str) -> Table | None:
@@ -1051,6 +1051,23 @@ _PROSE_SPLIT = re.compile(r"Table\s*(\d+)\s*:?\s", re.I)
 _VS = re.compile(r"\s*\bvs(?:\.\s*|\s+)", re.I)
 _PARENS = re.compile(r"^(.*?)\s*\(([^)]*)\)")
 
+# What a Duelist is registered as, which the coverage puts in the same bracket
+# a deck goes in: YCS Pasadena writes "Wong, Vincent Man Kith CA (0101299430)"
+# and the reading that finds "(Metalfoes)" found the COSSY number instead. It
+# is on the page as a Duelist's identifier and it is not what they played --
+# 1,344 cells across six events had one of these as their deck, and the site
+# showed it as one.
+#
+# Any run of digits, not only the ten-digit ones: no archetype in this game is
+# a number, so a bracket holding nothing else says nothing about the deck.
+_REGISTRATION = re.compile(r"^\d+$")
+
+
+def _deck_or_none(text: str | None) -> str | None:
+    """A deck, unless what was found is a number."""
+    text = (text or "").strip()
+    return None if not text or _REGISTRATION.match(text) else text
+
 
 # "De Obaldia Soza, Galileo Mauricio from Panama (ABC)" -- the country written
 # out, in the middle of the side rather than in the bracket.
@@ -1112,7 +1129,7 @@ def _prose_side(text: str) -> dict[str, Any] | None:
     if m := _PARENS.match(text):
         # Whatever else is in there, the deck is the last part: "(HEROES)" is a
         # deck, and so is the end of "(Japan - 9 points - Frog Monarch)".
-        deck = re.split(r"\s+[-\u2013\u2014]\s+", m.group(2))[-1].strip() or None
+        deck = _deck_or_none(re.split(r"\s+[-\u2013\u2014]\s+", m.group(2))[-1])
         said = m.group(1)
     else:
         # No bracket. The deck can be written after a dash instead -- the 2014

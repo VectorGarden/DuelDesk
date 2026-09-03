@@ -280,7 +280,10 @@ def round_key(post) -> tuple[str, Any]:
 #     rebuilt at 47 when that was corrected, so nothing was behind and the
 #     fix had nothing to run against: the 2019 UDS Invitational Medellin
 #     stayed without its champion.
-BUILD_VERSION = 48
+#  49 A registration number is not a deck. 1,344 cells across six events
+#     showed a Duelist's COSSY number where their deck belongs, and the
+#     archive keeps the stored value, so they need rebuilding to lose it.
+BUILD_VERSION = 49
 
 
 @dataclass
