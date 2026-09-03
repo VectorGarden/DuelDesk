@@ -5915,6 +5915,100 @@ class TestAFragmentIsReadOnce(unittest.TestCase):
         self.assertEqual(first, "Sky Striker")
 
 
+class TestTournamentsNobodyNamed(unittest.TestCase):
+    """The oldest coverage names its tournament only in the post opening it."""
+
+    def weekend(self, *extra, tables=10, opening="welcome-to-ycs-dallas"):
+        """A weekend of nameless tables, plus whatever else is passed in."""
+        urls = [(f"2014/ycs/standings-after-round-{i}", "2014-10-04")
+                for i in range(1, tables + 1)]
+        if opening:
+            urls.append((f"2014/ycs/{opening}", "2014-10-04"))
+        return {r["slug"]: (r["event"], r["event_confidence"])
+                for r in assign_events(parse_post_sitemap(urlset(*urls, *extra)))}
+
+    def test_a_weekend_of_nameless_tables_becomes_its_event(self):
+        # 2011 to 2016 published its tables at the blog root as
+        # "standings-after-round-3", so three hundred of them belong to
+        # tournaments the archive did not have at all.
+        got = self.weekend()
+        self.assertEqual(got["standings-after-round-1"],
+                         ("2014-ycs-dallas", "opened"))
+
+    def test_the_post_that_opens_it_comes_too(self):
+        got = self.weekend()
+        self.assertEqual(got["welcome-to-ycs-dallas"][0], "2014-ycs-dallas")
+
+    def test_a_weekend_nobody_opened_is_left_alone(self):
+        # Without it there is nothing that says which tournament this was.
+        got = self.weekend(opening=None)
+        self.assertIsNone(got["standings-after-round-1"][0])
+
+    def test_two_openings_are_two_tournaments_and_neither_is_guessed(self):
+        # Three ran on 2015-02-14 -- Tacoma, Charlotte and Charleston -- and
+        # picking one of them would be guessing.
+        got = self.weekend(("2014/ycs/welcome-to-ycs-toronto", "2014-10-04"))
+        self.assertIsNone(got["standings-after-round-1"][0])
+
+    def test_a_stray_table_is_not_a_tournament(self):
+        got = self.weekend(tables=3)
+        self.assertIsNone(got["standings-after-round-1"][0])
+
+    def test_a_weekend_something_already_holds_is_left_alone(self):
+        # It mints tournaments nobody has; it never moves a post between
+        # events. Asked of the posts rather than of the known windows, because
+        # by this point events exist that no window describes.
+        # Discovered rather than filed under a path, which is the state this
+        # guard exists for and the one a window cannot describe: the tables
+        # are still unplaced when this rule runs, and the weekend is not free.
+        # 2016 YCS Minneapolis is the real case -- a rule reading windows
+        # alone re-claimed its weekend and relabelled thirty-one of its posts.
+        got = self.weekend(*[(f"2014/ycs/ycs-toronto-round-{i}-pairings", "2014-10-04")
+                             for i in (1, 2, 3, 4, 5)])
+        # The tables may still be claimed here -- by the date rules, which have
+        # an event to offer them. What must not happen is a second tournament
+        # being minted over the top of the one that already holds the weekend.
+        self.assertNotEqual(got["standings-after-round-1"][1], "opened")
+        self.assertNotIn("2014-ycs-dallas", {e for e, _ in got.values()})
+
+    def test_the_news_running_that_weekend_is_not_coverage(self):
+        # A window of dates is not evidence that a post is about the
+        # tournament: that mistake swept a week of card announcements into
+        # YCS Montreal's coverage.
+        got = self.weekend(("2014/ycs/qq-what-deck-are-you-playing", "2014-10-04"),
+                           ("2014/ycs/tech-update-new-cards", "2014-10-04"))
+        self.assertIsNone(got["qq-what-deck-are-you-playing"][0])
+        self.assertIsNone(got["tech-update-new-cards"][0])
+        self.assertEqual(got["standings-after-round-1"][0], "2014-ycs-dallas")
+
+
+class TestSpelledOutNames(unittest.TestCase):
+    """What the older slugs write out in full."""
+
+    def name(self, slug):
+        from naming import canonical_name
+        return canonical_name(slug.replace("-", " ").title(), slug,
+                              f"{slug[:4]}-01-01", named=False)
+
+    def test_a_championship_series_written_out_is_a_ycs(self):
+        # Ten opening posts spell it out. Spelled out it is four words, none
+        # of which is an acronym, so the place rule saw an event type it did
+        # not recognise and gave up -- leaving "2013 Yu Gi Oh Championship
+        # Series San Diego California" as the label.
+        self.assertEqual(self.name("2013-yu-gi-oh-championship-series-san-diego-california"),
+                         ("YCS San Diego", "San Diego, California"))
+
+    def test_which_running_it_was_is_not_where_it_was(self):
+        # "the first YCS in 2012 in Guadalajara, Mexico" read as a place made
+        # the event "YCS First Guadalajara".
+        self.assertEqual(self.name("2012-first-ycs-in-2012-in-guadalajara-mexico"),
+                         ("YCS Guadalajara", "Guadalajara, Mexico"))
+
+    def test_the_names_that_were_right_stay_right(self):
+        self.assertEqual(self.name("2014-ycs-dallas")[0], "YCS Dallas")
+        self.assertEqual(self.name("2011-ycs-kansas-city")[0], "YCS Kansas City")
+
+
 class TestADateIsParsedOnce(unittest.TestCase):
     """assign_events asks the same dates about each other, over and over."""
 

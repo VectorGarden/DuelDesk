@@ -253,6 +253,16 @@ _YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
 
 # Words that say what kind of event this is rather than where it was. A slug
 # holding none of them is a place, and a place on this blog is a YCS.
+# "Yu-Gi-Oh! Championship Series" written out, which is what the older slugs
+# do. The hyphens are already gone by the time this is applied.
+_SPELLED_OUT_YCS = re.compile(r"yu[- ]?gi[- ]?oh!?[- ]?championship[- ]?series")
+
+# Which running it was, which is not part of where it was held. The 2012
+# Guadalajara event is announced as "the first YCS in 2012 in Guadalajara,
+# Mexico", and read as a place that made it "YCS First Guadalajara".
+_ORDINALS = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh",
+             "eighth", "ninth", "tenth", "next", "last", "annual"}
+
 _EVENT_WORDS = {"ycs", "wcq", "nawcq", "uds", "sjc", "wcs", "ygoc", "rdycs",
                 "team", "remote", "duel", "invitational", "championship",
                 "championships", "qualifier", "qualifiers", "regional",
@@ -432,13 +442,20 @@ def place_name(slug: str) -> tuple[str | None, str | None]:
     what the event is called; that it was in Chile is worth knowing and is not
     part of the title.
     """
+    # The blog spells YCS out in full in its older slugs -- ten of them read
+    # "welcome-to-yu-gi-oh-championship-series-san-diego-california" -- and
+    # spelled out it is four words none of which is an acronym, so the rule
+    # below saw an event type it did not recognise and gave up. It is the same
+    # three letters.
+    slug = _SPELLED_OUT_YCS.sub("ycs", slug.lower())
     tokens = [t for t in re.split(r"[^a-z0-9]+", slug.lower()) if t]
     # A token holding a digit is the date or the count -- 201504, 300th,
     # 75thsjc. One or two letters is administrative: the states and provinces
     # are written that way throughout (anaheim-ca, atlanta-ga, pittsburgh-pa),
     # and the D and C of "bogota-d-c-colombia" are Distrito Capital rather than
     # part of the city.
-    words = [t for t in tokens if not any(c.isdigit() for c in t) and len(t) > 2]
+    words = [t for t in tokens if not any(c.isdigit() for c in t) and len(t) > 2
+             and t not in _ORDINALS]
     # A slug saying what kind of event it was keeps that word and gives up the
     # rest to the place: "2022-ycs-charlotte" is the YCS at Charlotte. Only
     # types written as initials, because those are the ones a title would carry
