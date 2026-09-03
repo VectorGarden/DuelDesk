@@ -86,6 +86,19 @@ test('revealing shows who won and what they won with', async (t) => {
   assert.equal(champ(page).querySelector('[data-champ]').getAttribute('aria-expanded'), 'true');
 });
 
+test('the revealed champion is a link to their page', async (t) => {
+  /* Every Duelist has a page, and the one the whole tournament was about was
+     the one name on the round track that did not go anywhere. */
+  const page = await loadPage(withChampion());
+  t.after(() => page.close());
+  page.run(`selectRound(${JSON.stringify(deepest(page))})`);
+  champ(page).querySelector('[data-champ]').click();
+  const link = champ(page).querySelector('.champ__n a.who');
+  assert.ok(link, 'the champion is a link');
+  assert.equal(link.textContent, 'Ada Lovelace');
+  assert.match(link.getAttribute('href'), /^\/player\/\?name=Ada%20Lovelace$/);
+});
+
 test('and it can be put back', async (t) => {
   const page = await loadPage(withChampion());
   t.after(() => page.close());

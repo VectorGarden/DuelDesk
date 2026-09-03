@@ -1283,7 +1283,7 @@ function renderStandings(r){
     ${rows.map(s => `<tr>
       <th scope="row" class="num">${esc(s.pos)}</th>
       <td>${withPlace(s.name)}${s.members?.length
-        ? `<span class="roster">${esc(s.members.join(', '))}</span>` : ''}</td>
+        ? `<span class="roster">${s.members.map(m => playerLink(m)).join(', ')}</span>` : ''}</td>
       ${hasRecord ? `<td class="rec${s.record?.confidence !== 'derived' ? ' rec--partial' : ''}">${esc(formatRecord(s.record, {drawsPossible: eventDrawsPossible()}))}</td>` : ''}
       ${hasPoints ? `<td class="rec num">${esc(s.points ?? '—')}</td>` : ''}
       ${hasDeck ? `<td>${esc(s.deck ?? '')}</td>` : ''}
@@ -1473,7 +1473,7 @@ function renderChampion(){
   const roster = championRoster(won);
   champEl.innerHTML = championShown()
     ? `<span class="champ__k">Champion</span>
-       <b class="champ__n">${esc(won)}</b>
+       <b class="champ__n">${roster.length ? esc(won) : playerLink(won)}</b>
        ${deck ? `<span class="champ__d">${esc(deck)}</span>` : ''}
        ${roster.length ? `<button type="button" class="roster-open" data-roster
            aria-haspopup="dialog">Roster</button>` : ''}

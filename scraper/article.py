@@ -249,3 +249,145 @@ def readable(blocks: list[dict], linked: float = 0.0) -> bool:
     table of contents leaves the titles of other posts with nothing to click.
     """
     return len(prose(blocks)) > THIN and linked <= LINKS
+
+
+# ---------------------------------------------------------------------------
+# Duelists named in the prose
+#
+# Every Duelist has a page now, and a feature match is nine paragraphs about
+# two of them. The names are already in the archive; what is missing is the
+# link from the sentence to the page.
+#
+# Who may be linked is the whole question, and it has two answers.
+#
+# A feature match is about two people. The archive knows both, from the title
+# it already parses to build the round, and in a match write-up "Kehon" cannot
+# mean any other Kehon in the hall -- so a surname on its own is enough. The
+# two combatants share a surname in one post out of 1,370.
+#
+# Every other kind of post is about the field, and 40.8% of Duelists share a
+# surname with somebody else in their own event -- 79% at the worst of them.
+# There a surname names nobody in particular, so only a name written in full
+# is linked.
+
+
+# Written after a name and not part of it.
+_SUFFIXES = {"jr", "sr", "ii", "iii", "iv"}
+# Inside a name and not something anybody is called on their own. The
+# particles carry a surname rather than being one, and the rest are ordinary
+# words that happen to sit in a name.
+_NOT_A_NAME = {"the", "and", "van", "der", "den", "dos", "das", "del", "los",
+               "las", "von", "bin", "ibn", "abu", "for", "her", "his"}
+# A team, written after the Duelist who played for it: a team feature match
+# records "Oscar Renderos (The Dueling Grandpas)". The team is not part of
+# what anybody is called, and read as though it were, "The" is the word the
+# post uses most and every "the" in it became a link.
+_TEAM_AFTER_NAME = re.compile(r"\s*\(.*")
+
+
+def _person(name: str) -> str:
+    return _TEAM_AFTER_NAME.sub("", name).strip()
+
+
+def plain(blocks: list[dict]) -> str:
+    """The unemphasised text of the blocks.
+
+    What a name may be searched in. An emphasised run is a card name, and 463
+    of them in the archive contain some Duelist's surname.
+    """
+    return " ".join(run for b in blocks for run in b.get("r", ())
+                    if isinstance(run, str))
+
+
+def _short_forms(name: str) -> list[str]:
+    """Forename plus each of the other words, which is how the blog shortens.
+
+    It drops the middle of a name and it drops a second surname, and it almost
+    never drops the forename: "Francisco Osorio" for Francisco Andres Osorio
+    Bobadilla, "James Markowitz" for James Allen Sun Markowitz. Which word it
+    keeps is not fixed -- Spanish and Portuguese names carry two surnames and
+    the one that gets printed is usually the first -- so every one of them is
+    offered and the prose decides.
+    """
+    person = _person(name)
+    words = [w for w in re.split(r"[^A-Za-z]+", person) if len(w) > 1]
+    if len(words) < 2:
+        # One word is not a name prose can be searched for, and it is how a
+        # team enters -- "Legionnaire" -- and a team has no page.
+        return []
+    return [person] + [f"{words[0]} {w}" for w in words[1:]]
+
+
+def _alone(name: str, text: str) -> str | None:
+    """The one word of this name the coverage calls them by, if it does.
+
+    A feature match names somebody once in full and then twenty times by one
+    word, and which word that is cannot be worked out from the name: the last
+    is "Bobadilla" where the blog writes "Osorio", and the second is "Leo"
+    where it writes "Kehon". So the post is asked. The word it actually uses is
+    the one it uses often; the ones it never uses match nothing and are not
+    offered, which is what keeps a middle name from becoming a link.
+    """
+    words = [w for w in re.split(r"[^A-Za-z]+", _person(name)) if len(w) > 2]
+    seen = [(len(re.findall(rf"\b{re.escape(w)}\b", text, re.I)), i, w)
+            for i, w in enumerate(words[1:])
+            if w.lower() not in _SUFFIXES and w.lower() not in _NOT_A_NAME]
+    if not seen:
+        return None
+    # The commonest, and the later word where two are level: a surname sits
+    # after a middle name. A word the post never uses wins only when none of
+    # them is used, and then it matches nothing, which is the same answer.
+    return max(seen, key=lambda s: (s[0], s[1]))[2]
+
+
+def link_names(blocks: list[dict], people, *, by_surname: bool = False) -> list[dict]:
+    """The blocks again, with each mention of `people` marked as a link.
+
+    A marked run carries both the words the coverage wrote and the name the
+    archive files them under:
+
+        {"who": "Julien Leo Kehon", "t": "Kehon"}
+
+    Only plain runs are searched, and only plain runs are marked.
+    """
+    text = plain(blocks)
+    forms: dict[str, set] = {}
+    for who in people:
+        written = _short_forms(who)
+        if not written:
+            continue
+        if by_surname and (one := _alone(who, text)):
+            written.append(one)
+        # Filed under the person, not the person and their team: the page a
+        # link goes to is one Duelist's.
+        for form in written:
+            forms.setdefault(form.lower(), set()).add(_person(who))
+    # A form two Duelists answer to names neither of them.
+    found = {f: s.pop() for f, s in forms.items() if len(s) == 1}
+    if not found:
+        return blocks
+    # Longest first, so "Julien Leo Kehon" wins where "Kehon" would also fit.
+    pattern = re.compile(r"\b(" + "|".join(re.escape(f) for f in
+                                           sorted(found, key=len, reverse=True))
+                         + r")\b", re.I)
+
+    def split(text: str) -> list:
+        out, at = [], 0
+        for m in pattern.finditer(text):
+            if m.start() > at:
+                out.append(text[at:m.start()])
+            out.append({"who": found[m.group(0).lower()], "t": m.group(0)})
+            at = m.end()
+        if at < len(text):
+            out.append(text[at:])
+        return out or [text]
+
+    marked = []
+    for b in blocks:
+        if not b.get("r"):
+            marked.append(b)
+            continue
+        runs = [part for run in b["r"]
+                for part in (split(run) if isinstance(run, str) else [run])]
+        marked.append({**b, "r": runs})
+    return marked
