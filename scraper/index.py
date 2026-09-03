@@ -21,6 +21,7 @@ import re
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 from dataclasses import dataclass, asdict
+from functools import lru_cache
 from datetime import date
 
 from naming import wcq_name
@@ -89,6 +90,16 @@ def parse_post_sitemap(xml: str) -> list[Entry]:
         event = parts[2] if len(parts) >= 4 and parts[2] not in TOPIC_SEGMENTS else None
         out.append(Entry(loc, year, category, event, slug, lastmod, published))
     return out
+
+
+# A date as a day number, worked out once per date rather than once per
+# question. assign_events asks whether a post's date falls inside an event's
+# window, and asks it for every post against every window: 1,365,509 calls
+# over one run of the archive, each parsing three ISO strings, for 3,369,664
+# parses of 776 distinct dates.
+@lru_cache(maxsize=None)
+def _day(iso: str) -> int:
+    return date.fromisoformat(iso).toordinal()
 
 
 def tight_window(dates: list[str], gap_days: int = GAP_DAYS) -> tuple[str, str]:
@@ -496,9 +507,7 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
     windows = {k: p.window for k, p in profiles.items()}
 
     def within(d: str, lo: str, hi: str) -> bool:
-        return (date.fromisoformat(lo).toordinal() - slack_days
-                <= date.fromisoformat(d).toordinal()
-                <= date.fromisoformat(hi).toordinal() + slack_days)
+        return (_day(lo) - slack_days <= _day(d) <= _day(hi) + slack_days)
 
     filed: dict[str, set] = defaultdict(set)
     for e in entries:
