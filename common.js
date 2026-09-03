@@ -16,6 +16,29 @@
 const ESCAPES = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ESCAPES[c]);
 
+/* A Duelist's name, as a link to their own page.
+
+   Opened in a new tab, deliberately: a reader following a name out of a
+   bracket is looking something up beside what they were reading, not leaving
+   it, and coming back to a round they had scrolled to is worse than a tab
+   they can close. rel="noopener" because a new tab given a handle back to
+   this one can navigate it.
+
+   Not everything in a name column is a Duelist. A bye and an unnamed seat are
+   written "*** ***", and a name with no letters in it is nobody -- the same
+   test records.is_placeholder makes on the other side. Teams do not link
+   either: a team has no page, and its Duelists are linked individually.
+
+   The name goes in the query string rather than the path so that no name
+   needs escaping into a URL shape it does not fit: 66,000 of them include
+   full stops, apostrophes, slashes and hashes. */
+const playerLink = (name) => {
+  const text = esc(name);
+  if (!name || !/[A-Za-z]/.test(name)) return text;
+  return `<a class="who" href="/player/?name=${encodeURIComponent(name)}"`
+       + ` target="_blank" rel="noopener">${text}</a>`;
+};
+
 function offsite(url){
   /* Every url here has been through safeUrl(), so it is either an http(s) URL or
      the inert '#'. That is why this needs no guard of its own: '#' resolves

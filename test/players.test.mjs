@@ -92,3 +92,52 @@ test('and what it points at is really there', async () => {
     }
   }
 });
+
+/* ── The links that reach these pages ────────────────────────────────────── */
+
+test('a Duelist name links to their own page, in a new tab', async () => {
+  // Asked for explicitly: a reader following a name out of a bracket is
+  // looking something up beside what they were reading, not leaving it.
+  const { loadPage } = await import('./harness.mjs');
+  const page = await loadPage();
+  try {
+    page.$('[data-view="pairings"]').click();
+    const link = page.$('#round-body a.who');
+    assert.ok(link, 'the round tables name Duelists and should link them');
+    assert.match(link.getAttribute('href'), /^\/player\/\?name=/);
+    assert.equal(link.getAttribute('target'), '_blank');
+    // A new tab handed a reference back can navigate the one it came from.
+    assert.match(link.getAttribute('rel'), /noopener/);
+  } finally {
+    await page.close();
+  }
+});
+
+test('a name is escaped into the query rather than the path', async () => {
+  // 66,000 names include full stops, apostrophes, slashes and hashes, and a
+  // path would have to carry them.
+  const { loadPage } = await import('./harness.mjs');
+  const page = await loadPage();
+  try {
+    const href = page.get(`playerLink("Ann O'Neil / Smith").match(/href="([^"]+)"/)[1]`);
+    assert.equal(href, "/player/?name=Ann%20O'Neil%20%2F%20Smith");
+  } finally {
+    await page.close();
+  }
+});
+
+test('a seat that is not a Duelist does not link', async () => {
+  // A bye and an unnamed seat are written "*** ***", and a name with no
+  // letters in it is nobody -- the test records.is_placeholder makes.
+  const { loadPage } = await import('./harness.mjs');
+  const page = await loadPage();
+  try {
+    for (const nobody of ['*** ***', '---', '']) {
+      assert.equal(page.get(`playerLink(${JSON.stringify(nobody)}).includes("<a")`), false,
+        `${nobody} should not be a link`);
+    }
+    assert.equal(page.get(`playerLink("Ada Lovelace").includes("<a")`), true);
+  } finally {
+    await page.close();
+  }
+});
