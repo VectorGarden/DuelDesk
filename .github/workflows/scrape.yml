@@ -184,6 +184,7 @@ jobs:
             scraped-feed.xml
             events.json
             events
+            players
           retention-days: 14
 
       # Publish. Only when the bytes actually differ: the gate opens whenever the
@@ -194,15 +195,20 @@ jobs:
         id: publish
         run: |
           cp scraped-feed.xml feed.xml
-          if git diff --quiet -- feed.xml events.json events \
-             && [ -z "$(git status --porcelain -- events events.json)" ]; then
+          # Every path the run writes, in both the question and the answer. The
+          # player index was in neither: it is rebuilt whole every run and was
+          # then thrown away with the runner, so a Duelist's page kept whatever
+          # #210 committed by hand. Steven J. Trifunoski won YCS Lima in the
+          # version 55 rebuild and his page did not say so.
+          if git diff --quiet -- feed.xml events.json events players \
+             && [ -z "$(git status --porcelain -- events events.json players)" ]; then
             echo "No change to the published data." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           echo "published=yes" >> "$GITHUB_OUTPUT"
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add feed.xml events.json events
+          git add feed.xml events.json events players
           git commit -m "Publish coverage of $(python3 -c "
           import json; print(json.load(open('events.json'))['events'][0]['event'])
           ")"

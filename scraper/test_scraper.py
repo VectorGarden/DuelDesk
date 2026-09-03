@@ -898,6 +898,47 @@ class TestDuelistsNamedInTheProse(unittest.TestCase):
         self.assertEqual(field, ["Abdulraheem Yaseen Yusuff", "Jason Torres"])
 
 
+class TestEverythingWrittenIsPublished(unittest.TestCase):
+    """A run's outputs, and whether the workflow that runs it keeps them."""
+
+    def publish_step(self):
+        from pathlib import Path
+        yml = Path(__file__).resolve().parent.parent / ".github/workflows/scrape.yml"
+        return yml.read_text(encoding="utf-8")
+
+    def test_the_workflow_commits_every_path_a_run_writes(self):
+        # The player index was rebuilt whole on every run and then thrown away
+        # with the runner: it was in neither the "did anything change" question
+        # nor the `git add` that answers it, so a Duelist's page kept whatever
+        # was committed by hand when the page was built. Steven J. Trifunoski
+        # won YCS Lima in the version 55 rebuild and his page did not say so.
+        #
+        # Asked of the constants rather than a list written out here, so a new
+        # output cannot be added to the archive and forgotten by the workflow.
+        import archive
+        text = self.publish_step()
+        added = next(line for line in text.splitlines() if "git add " in line)
+        for path in (archive.ARCHIVE, archive.MANIFEST, archive.PLAYERS, "feed.xml"):
+            self.assertIn(path, added, f"{path} is written and never committed")
+
+    def test_the_change_check_asks_about_every_path_too(self):
+        # Committing it is not enough. The step exits early when nothing has
+        # changed, and a question that does not mention the player index calls
+        # a run that only rewrote it "no change to the published data".
+        import archive
+        text = self.publish_step()
+        checks = [line for line in text.splitlines()
+                  if "git diff --quiet" in line or "status --porcelain -- events" in line]
+        self.assertEqual(len(checks), 2, "the check is two questions, not one")
+        # Both of them. The first asks what changed in files git is tracking
+        # and the second what appeared that it is not: a backfill writes an
+        # event directory git has never seen, and a fold can mint a shard file.
+        for path in (archive.ARCHIVE, archive.MANIFEST, archive.PLAYERS):
+            for line in checks:
+                self.assertIn(path, line,
+                              f"a run that only changed {path} would publish nothing")
+
+
 class TestStatusAnnotations(unittest.TestCase):
     """Reading the round a player left, rather than counting their appearances."""
 
