@@ -286,7 +286,10 @@ def round_key(post) -> tuple[str, Any]:
 #  50 The deck column is the one headed Deck. The 300th YCS puts a points
 #     column between the name and the deck, and 186 of its rows were
 #     published with a Duelist's score where their deck belongs.
-BUILD_VERSION = 50
+#  51 A cell's line breaks are not part of the value it holds. 35 deck names
+#     and 136 cells carried a newline, so "Sky\n  Striker" counted as a
+#     different deck from "Sky Striker".
+BUILD_VERSION = 51
 
 
 @dataclass

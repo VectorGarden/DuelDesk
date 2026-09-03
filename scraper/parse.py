@@ -130,6 +130,9 @@ PROSE_CHARS = 40000
 # other cut round is a team match of three.
 _INVISIBLE = str.maketrans("", "", "\ufeff\u200b\u200c\u200d\u2060")
 
+# The one tag that means "and now a space".
+_BREAK = re.compile(r"<br\s*/?>", re.I)
+
 
 # Cached for the reason strip_region and build._words are: a table's cells are
 # the same handful of strings over and over -- a Duelist's name in every round
@@ -139,8 +142,16 @@ _INVISIBLE = str.maketrans("", "", "\ufeff\u200b\u200c\u200d\u2060")
 # every distinct fragment together is a megabyte.
 @lru_cache(maxsize=None)
 def _text(fragment: str) -> str:
-    return (html.unescape(_TAG.sub("", fragment))
-            .replace("\xa0", " ").translate(_INVISIBLE).strip())
+    # One line, whatever the markup did. A cell holding "Destiny Adventurer<br>
+    # Prank-Kids" came through with the break still in it, and the newline is
+    # in the deck name the archive stores and the site prints: 35 deck names
+    # and 136 cells carried one, and "Sky\n  Striker" is a different name from
+    # "Sky Striker" to everything that counts them.
+    # A line break is a space, not nothing: dropped with the rest of the tags,
+    # "Sky<br>Striker" comes through as "SkyStriker".
+    return re.sub(r"\s+", " ",
+                  html.unescape(_TAG.sub("", _BREAK.sub(" ", fragment)))
+                  .replace("\xa0", " ").translate(_INVISIBLE)).strip()
 
 
 # A title written into the name after a dash, which 2013's Central American
