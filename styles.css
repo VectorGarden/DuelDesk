@@ -50,6 +50,20 @@ body{
 h1,h2,h3,h4{font-family:var(--display); font-weight:600; line-height:1.15; margin:0; letter-spacing:.01em}
 p{margin:0}
 a{color:inherit}
+/* A Duelist's name, which is now a link to their own page.
+
+   Every name in every table is one, so a full underline turns a standings page
+   into a page of underlines and the emphasis stops meaning anything. Barely
+   there until it is wanted: a hairline at low opacity says the name can be
+   followed, and hover and focus bring it up to a real underline. */
+a.who{
+  color:inherit; text-decoration:underline dotted;
+  text-decoration-color:color-mix(in srgb,currentColor 40%,transparent);
+  text-decoration-thickness:1px; text-underline-offset:.2em;
+}
+a.who:hover,a.who:focus-visible{
+  text-decoration-color:color-mix(in srgb,currentColor 85%,transparent);
+}
 
 /* Focus: never removed, always 3:1+ against both themes */
 :focus-visible{outline:3px solid var(--focus); outline-offset:2px; border-radius:var(--r-sm)}
@@ -410,13 +424,15 @@ tbody tr:hover{background:var(--surface-2)}
 .event__body{border-top:1px solid var(--line-soft); padding:.4rem 0}
 /* Not a link: the site has no article pages, so a post row must not offer an
    affordance it cannot honour. No hover state, nothing focusable. */
-.post{display:flex; gap:.9rem; align-items:flex-start; padding:.7rem clamp(.9rem,2.5vw,1.25rem); border-left:3px solid transparent}
+/* Wraps because a post may carry its own text under the headline, and an
+   article is a row of its own rather than a third column of the line. */
+.post{display:flex; flex-wrap:wrap; gap:.9rem; align-items:flex-start; padding:.7rem clamp(.9rem,2.5vw,1.25rem); border-left:3px solid transparent}
 .post__k{
   font:600 .66rem/1 var(--body); letter-spacing:.09em; text-transform:uppercase;
   color:var(--text); background:color-mix(in srgb,var(--k) 22%,transparent);
   border-left:3px solid var(--k); padding:.4rem .5rem; flex:none; width:7.5rem;
 }
-@media (max-width:560px){.post__k{width:auto}.post{flex-wrap:wrap; gap:.5rem}}
+@media (max-width:560px){.post__k{width:auto}.post{gap:.5rem}}
 /* A team's three Duelists, under the team's own name in the standings. */
 .roster{display:block; font:400 .78rem var(--body); color:var(--text-3); margin-top:.15rem}
 /* The duels inside a team match, indented under the row that names the teams
@@ -438,6 +454,54 @@ a.post__t:hover,a.post__t:focus-visible{text-decoration:underline}
    kinds of link are distinguishable before clicking rather than after. */
 a.post__t--jump:hover,a.post__t--jump:focus-visible{text-decoration:underline dotted}
 .post__time{font:400 .78rem var(--mono); color:var(--text-3); flex:none}
+/* A headline whose post the archive can show, which opens in its own tab.
+   The marker is drawn rather than linked, like the event picker's chevron: a
+   CSS strict enough to forbid remote images is the same one that keeps this
+   page self-contained. */
+a.post__t--read::after{
+  content:''; display:inline-block; margin-left:.4rem; vertical-align:.08em;
+  border:.3rem solid transparent; border-left-color:currentColor;
+  border-right-width:0; opacity:.55; transition:transform .12s ease;
+}
+a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
+
+/* The post itself. A full-width row of its own, because .post is a flex line
+   and an article is not a third column of it. */
+.article{
+  font-size:.95rem; line-height:1.7; color:var(--text-2);
+  /* Prose wants a measure. A rounds table can be as wide as the screen; a
+     paragraph read at that width cannot be followed back to the start of the
+     next line. */
+  max-width:68ch;
+}
+/* The article as the whole point of a page rather than a note inside one. */
+.article--page{margin:1.4rem 0 2.5rem}
+.article--page p{margin:0 0 1.05rem}
+/* Which event this came from, above the headline. */
+.read__where{font:600 .78rem var(--body); letter-spacing:.06em; text-transform:uppercase; color:var(--text-3); margin:0 0 .3rem}
+.read__where a{color:inherit; text-decoration:none}
+.read__where a:hover,.read__where a:focus-visible{text-decoration:underline}
+.read .sechead{align-items:flex-start}
+.article p{margin:0 0 .85rem}
+.article h2{font:600 1.05rem var(--body); color:var(--text); margin:1.6rem 0 .6rem}
+.article ul{margin:0 0 .85rem; padding-left:1.2rem}
+.article li{margin:.2rem 0}
+.article blockquote{
+  margin:0 0 .85rem; padding-left:.8rem; border-left:2px solid var(--line);
+  color:var(--text-3); font-style:italic;
+}
+.article hr{border:0; border-top:1px solid var(--line-soft); margin:1.1rem 0}
+.article b{color:var(--text); font-weight:600}
+/* A table inside a post scrolls on its own rather than widening the page. */
+.article__scroll{overflow-x:auto; margin:0 0 .85rem}
+.article__scroll table{border-collapse:collapse; font-size:.86rem}
+.article__scroll td{border:1px solid var(--line-soft); padding:.25rem .5rem}
+/* Whose coverage this is. Kept on every article, with the link to the
+   original: the photographs are there and not here. */
+.article__by{
+  font-size:.8rem; color:var(--text-3); border-top:1px solid var(--line-soft);
+  padding-top:.6rem; margin:0;
+}
 
 .notice{
   display:flex; align-items:center; gap:.75rem; flex-wrap:wrap;

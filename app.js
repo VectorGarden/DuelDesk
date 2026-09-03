@@ -829,6 +829,7 @@ const loadingPosts = new Set();
 /* Beside the rounds, which is the archive's layout: events/<slug>/rounds.json
    and events/<slug>/posts.json. */
 const postsPath = (entry) => entry.path.replace(/rounds\.json$/, 'posts.json');
+const articlesPath = (entry) => entry.path.replace(/rounds\.json$/, 'articles.json');
 
 async function loadEventPosts(slug){
   const entry = entryFor(slug);
@@ -860,6 +861,10 @@ function asCoveragePosts(raw){
       format: p.format ?? null,
       slug: p.slug ?? null,
       url: safeUrl(p.url ?? '#'),
+      /* Whether the archive holds this post's prose. Only posts.json says so;
+         a post that reached the page through the RSS feed keeps its link out
+         until its event is expanded and the real list arrives. */
+      article: p.article === true,
       time: when ? when.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}) : '',
       date: when,
       ...classify(headline),
@@ -1678,6 +1683,14 @@ function renderEvents(){
             if (to) return `<a class="post__t post__t--jump" href="#round-h"
               data-jump-format="${esc(to.format)}" data-jump-round="${esc(to.round)}"
               data-jump-view="${esc(to.view)}">${esc(p.title)}</a>`;
+            /* A post whose prose the archive holds is read here rather than on
+               the blog. Its own page, in its own tab: the coverage list is a
+               dense index and an article opened inside it buries the next
+               twenty headlines. */
+            if (p.article)
+              return `<a class="post__t post__t--read"
+                href="/read/?event=${encodeURIComponent(p.slug ?? '')}&post=${encodeURIComponent(p.url)}"
+                target="_blank" rel="noopener">${esc(p.title)}</a>`;
             return offsite(p.url)
               ? `<a class="post__t" href="${esc(p.url)}" rel="external noreferrer">${esc(p.title)}</a>`
               : `<span class="post__t">${esc(p.title)}</span>`;

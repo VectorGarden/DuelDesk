@@ -16,7 +16,7 @@ mkdir -p "$OUT"
 
 # winners.html is a tombstone redirecting to /winners, not the page itself --
 # see the file. It stays staged for as long as links to the old URL might.
-FILES=(index.html winners.html styles.css common.js app.js winners.js player.js
+FILES=(index.html winners.html styles.css common.js app.js winners.js player.js read.js
        feed.xml events.json upcoming.json og.png
        favicon.ico site.webmanifest CNAME robots.txt)
 # events/ is the archive: one directory per event, fetched on demand rather than
@@ -27,7 +27,7 @@ FILES=(index.html winners.html styles.css common.js app.js winners.js player.js
 # not. Staged as a directory for the same reason it is stored as one.
 # players/ is the same idea as events/: 512 files sharded by name, so looking
 # up one Duelist costs one of them rather than all sixty-six thousand.
-DIRS=(icons events winners players player)
+DIRS=(icons events winners players player read)
 
 for f in "${FILES[@]}"; do
   [ -f "$f" ] || { echo "  MISSING $f"; exit 1; }

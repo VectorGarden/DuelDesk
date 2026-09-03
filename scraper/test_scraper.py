@@ -580,6 +580,157 @@ def _sources():
     return out
 
 
+class TestAPostIsReadHere(unittest.TestCase):
+    """Turning a post body into blocks the page can render. See article.py."""
+
+    def blocks(self, html):
+        from article import article
+        return article(html)
+
+    def test_a_paragraph_becomes_a_block_of_runs(self):
+        self.assertEqual(self.blocks("<p>Kehon opened with a Kewl Tune Deck.</p>"),
+                         [{"t": "p", "r": ["Kehon opened with a Kewl Tune Deck."]}])
+
+    def test_a_card_name_keeps_its_emphasis(self):
+        # 166,794 strongs in the archive and almost all of them are card names.
+        # Stripped, a feature match is prose in which nothing is a card.
+        self.assertEqual(self.blocks("<p>He activated <strong>Effect Veiler</strong>.</p>"),
+                         [{"t": "p", "r": ["He activated ", {"b": "Effect Veiler"}, "."]}])
+
+    def test_a_card_name_written_word_by_word_is_one_run(self):
+        # Konami's editor bolds each word separately: "<strong>Ancient</strong>
+        # <strong>Gear</strong>" is one card and four runs and three spaces.
+        got = self.blocks("<p>He added <strong>Ancient</strong> <strong>Gear</strong> "
+                          "<strong>Gadjiltron</strong> <strong>Dragon</strong> to it.</p>")
+        self.assertEqual(got, [{"t": "p", "r": [
+            "He added ", {"b": "Ancient Gear Gadjiltron Dragon"}, " to it."]}])
+
+    def test_the_space_beside_a_card_name_is_not_inside_it(self):
+        # A bolded card name starts at the C of "Cyber Dragon". The space that
+        # separated it from the word before belongs to that word.
+        got = self.blocks("<p>Osorio played <b>Cyber Dragon</b> next.</p>")
+        self.assertEqual(got, [{"t": "p", "r": [
+            "Osorio played ", {"b": "Cyber Dragon"}, " next."]}])
+
+    def test_a_line_break_is_a_space(self):
+        # Dropped with the rest of the tags, "Sky<br>Striker" is "SkyStriker".
+        self.assertEqual(self.blocks("<p>Sky<br>Striker</p>"),
+                         [{"t": "p", "r": ["Sky Striker"]}])
+
+    def test_a_photograph_and_its_caption_are_dropped(self):
+        # The page forbids remote images, so a caption is a label for something
+        # the reader cannot see.
+        self.assertEqual(
+            self.blocks("<p>He won.</p><figure><img src='x.jpg'>"
+                        "<figcaption>Selig considers his options</figcaption></figure>"),
+            [{"t": "p", "r": ["He won."]}])
+
+    def test_an_image_does_not_swallow_the_rest_of_the_post(self):
+        # <img> never closes. Counted as an open tag inside a dropped figure,
+        # the depth never returns to zero and every block after it is lost --
+        # and a figure holding an image is the commonest markup in the archive.
+        got = self.blocks("<figure><img src='x.jpg'></figure>"
+                          "<p>The Duel began.</p><p>And ended.</p>")
+        self.assertEqual(got, [{"t": "p", "r": ["The Duel began."]},
+                               {"t": "p", "r": ["And ended."]}])
+
+    def test_an_iframe_is_not_content(self):
+        self.assertEqual(self.blocks("<iframe src='//x'><p>tracking</p></iframe>"
+                                     "<p>Real prose.</p>"),
+                         [{"t": "p", "r": ["Real prose."]}])
+
+    def test_headings_lists_and_rules_keep_their_shape(self):
+        got = self.blocks("<h2>Duel One</h2><ul><li>First</li><li>Second</li></ul><hr>")
+        self.assertEqual(got, [{"t": "h", "r": ["Duel One"]},
+                               {"t": "li", "r": ["First"]},
+                               {"t": "li", "r": ["Second"]},
+                               {"t": "hr"}])
+
+    def test_a_table_keeps_its_cells_and_not_its_markup(self):
+        got = self.blocks("<table><tr><td>Kehon</td><td>Kewl Tune</td></tr></table>")
+        self.assertEqual(got, [{"t": "table", "rows": [["Kehon", "Kewl Tune"]]}])
+
+    def test_a_tag_closed_out_of_order_does_not_bold_the_next_paragraph(self):
+        # Konami's CMS leaves tags open and closes them out of order. Popping
+        # the innermost emphasis blindly carries one paragraph's bold into the
+        # next.
+        # Closing by name and not by position. Popping the innermost puts the
+        # italic tail in bold and leaves bold open past the </i>, so the
+        # emphasis after the mismatch is the test: "italic" is italic.
+        got = self.blocks("<p>A <b>bold <i>both</b> italic</i> tail.</p>"
+                          "<p>Plain again.</p>")
+        self.assertEqual(got, [
+            {"t": "p", "r": ["A ", {"b": "bold "}, {"i": "both italic"}, " tail."]},
+            {"t": "p", "r": ["Plain again."]}])
+
+    def test_an_unclosed_emphasis_ends_with_its_paragraph(self):
+        # Konami's editor leaves <strong> open. Carried into the next block it
+        # bolds the rest of the post: 59 runs in the archive are a paragraph or
+        # more, against a card name's 18 characters.
+        got = self.blocks("<p>He drew <strong>Pot of Duality</p>"
+                          "<p>Meagher Set two cards and passed.</p>")
+        self.assertEqual(got, [{"t": "p", "r": ["He drew ", {"b": "Pot of Duality"}]},
+                               {"t": "p", "r": ["Meagher Set two cards and passed."]}])
+
+    def test_a_photo_gallery_is_not_an_article(self):
+        # A quarter of result posts are a headline over a photograph. Stripped,
+        # they render as a headline and a caption, which is worse than the link
+        # they replace.
+        from article import readable
+        self.assertFalse(readable(self.blocks("<p>What a weekend!</p>")))
+
+    def test_a_post_with_real_prose_is_an_article(self):
+        from article import readable
+        self.assertTrue(readable(self.blocks(
+            "<p>" + "Kehon opened with a Kewl Tune Deck and took the Duel. " * 6
+            + "</p>")))
+
+    def test_a_table_is_not_the_prose_that_earns_an_article(self):
+        # Counting cells would make every standings post an article: forty
+        # characters of prose over five hundred rows reads as half a megabyte
+        # of text, and it is a table the archive already stores and draws.
+        from article import readable
+        rows = "".join(f"<tr><td>Duelist {i}</td><td>9-0-0</td></tr>" for i in range(200))
+        self.assertFalse(readable(self.blocks(
+            f"<p>Standings after Round 5</p><table>{rows}</table>")))
+
+    def test_a_table_of_contents_is_not_an_article(self):
+        # "2026 North America WCQ Event Table of Contents!" is 7,489 characters
+        # of prose, 95% of it the headlines of other posts. Stripped of the
+        # links it is a list of titles that go nowhere.
+        from article import read, readable
+        links = " ".join(
+            f"<a href='/{i}'>Round {i} Feature Match: Somebody vs. Somebody Else</a>"
+            for i in range(8))
+        blocks, linked = read(f"<p>Coverage so far: {links}</p>")
+        self.assertGreater(linked, 0.6)
+        self.assertFalse(readable(blocks, linked))
+
+    def test_prose_around_a_link_is_still_an_article(self):
+        # The rule is about posts made of links, not posts containing one.
+        from article import read, readable
+        blocks, linked = read(
+            "<p>" + "Kehon opened with a Kewl Tune Deck and took the Duel. " * 6
+            + "See <a href='/x'>the standings</a>.</p>")
+        self.assertTrue(readable(blocks, linked))
+
+    def test_the_archive_writes_the_articles_beside_the_posts(self):
+        # Beside, not inside: posts.json arrives with the event and articles do
+        # not, and folding them in would charge every reader for prose nobody
+        # has opened.
+        import archive, json, tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            archive.write_event(tmp, "ycs", {"event": "YCS", "formats": []},
+                                [{"url": "https://x/a/", "article": True}],
+                                {"https://x/a/": [{"t": "p", "r": ["Words."]}]})
+            got = json.loads(archive.articles_path(tmp, "ycs").read_text())
+            self.assertEqual(got, {"https://x/a/": [{"t": "p", "r": ["Words."]}]})
+            # The prose itself is not in the file the event page fetches.
+            beside = archive.posts_path(tmp, "ycs").read_text()
+            self.assertNotIn("Words.", beside)
+            self.assertIn('"article": true', beside)
+
+
 class TestStatusAnnotations(unittest.TestCase):
     """Reading the round a player left, rather than counting their appearances."""
 
@@ -7503,7 +7654,7 @@ class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
                 cut = [r for r in event["formats"][0]["rounds"]
                        if r["phase"] == "Top cut"]
                 cut[0]["pairings"] = cut[0]["pairings"][:3]
-            return (event, [], [f"### {slug}", ""])
+            return (event, [], {}, [f"### {slug}", ""])
 
         events = [(f"e{i}", [{"kind": "pairings"}], f"2026-0{i}-01") for i in (1, 2, 3)]
         log = io.StringIO()
@@ -8074,7 +8225,7 @@ class TestTheRebuildIsWiredUp(unittest.TestCase):
         def fake_build_one(f, slug, posts, ended, limit):
             built.append(slug)
             return ({"event": slug, "sample": False, "coverageBy": "Konami",
-                     "built": 2, "updated": ended, "formats": []}, [], [])
+                     "built": 2, "updated": ended, "formats": []}, [], {}, [])
         argv = ["run.py", "--cache", f"{self.tmp}/cache", "--archive", str(root),
                 "--manifest", f"{self.tmp}/events.json", *extra_argv]
         with mock.patch.object(sys, "argv", argv), \
@@ -8164,7 +8315,7 @@ class TestARejectedEventIsRemembered(unittest.TestCase):
             if slug == breaks_coherence:
                 cut = [r for r in event["formats"][0]["rounds"] if r["phase"] == "Top cut"]
                 cut[0]["pairings"] = cut[0]["pairings"][:3]
-            return (event, [], [])
+            return (event, [], {}, [])
 
         def plan(entries, done, backfill, rebuild=0, behind=frozenset(), read=None):
             return [(s, [{"kind": "pairings"}], f"2026-0{i}-01")
@@ -8443,7 +8594,7 @@ class TestTheEventListReadsAsNames(unittest.TestCase):
                  for u, k in (("https://x/p/", "pairings"), ("https://x/s/", "standings"))]
         fetcher = types.SimpleNamespace(get=lambda url, **kw: pages[url])
         with redirect_stdout(io.StringIO()):
-            event, _, _ = run.build_one(fetcher, slug, posts, ended, 200)
+            event, _, _, _ = run.build_one(fetcher, slug, posts, ended, 200)
         return event["event"]
 
     def test_the_scraper_settles_the_name_it_publishes(self):

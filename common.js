@@ -39,6 +39,50 @@ const playerLink = (name) => {
        + ` target="_blank" rel="noopener">${text}</a>`;
 };
 
+/* A post's prose, as blocks the scraper stored and this page turns into
+   elements. Shared because the reader page renders them and the site may want
+   them elsewhere; kept here rather than in either page's own script.
+
+   The blog's own markup never gets this far. What the archive stores is runs
+   of text and which of them are emphasised, so every character below goes
+   through esc and every tag is one this file chose. */
+const EMPHASIS = {b: 'b', i: 'i', u: 'u', s: 'sup'};
+
+function runHtml(run){
+  if (typeof run === 'string') return esc(run);
+  if (!run || typeof run !== 'object') return '';
+  const [key, text] = Object.entries(run)[0] ?? [];
+  const tag = EMPHASIS[key];
+  return tag ? `<${tag}>${esc(text)}</${tag}>` : esc(text);
+}
+
+function blocksHtml(blocks){
+  if (!Array.isArray(blocks)) return '';
+  let html = '', list = false;
+  for (const b of blocks){
+    const runs = Array.isArray(b?.r) ? b.r.map(runHtml).join('') : '';
+    /* List items arrive one at a time and a <ul> holds all of the ones that
+       came in a row. */
+    if (b?.t === 'li'){
+      html += (list ? '' : '<ul>') + `<li>${runs}</li>`;
+      list = true;
+      continue;
+    }
+    if (list){ html += '</ul>'; list = false; }
+    if (b?.t === 'hr') html += '<hr>';
+    else if (b?.t === 'h') html += `<h2>${runs}</h2>`;
+    else if (b?.t === 'q') html += `<blockquote>${runs}</blockquote>`;
+    else if (b?.t === 'table'){
+      const rows = Array.isArray(b.rows) ? b.rows : [];
+      html += `<div class="article__scroll"><table>` + rows.map(
+        row => `<tr>` + (Array.isArray(row) ? row : []).map(
+          c => `<td>${esc(c)}</td>`).join('') + `</tr>`).join('') + `</table></div>`;
+    }
+    else if (runs) html += `<p>${runs}</p>`;
+  }
+  return html + (list ? '</ul>' : '');
+}
+
 function offsite(url){
   /* Every url here has been through safeUrl(), so it is either an http(s) URL or
      the inert '#'. That is why this needs no guard of its own: '#' resolves
