@@ -5890,6 +5890,31 @@ class TestCoverageFormat(unittest.TestCase):
             self.assertIsNone(detect_format(title), title)
 
 
+class TestAFragmentIsReadOnce(unittest.TestCase):
+    """A table's cells are the same few strings, over and over."""
+
+    def test_the_same_fragment_is_not_unescaped_twice(self):
+        # 904,677 calls about 26,956 distinct fragments across forty events.
+        #
+        # Asserted through the cache's own counters rather than a clock, so it
+        # fails when the caching is removed and not when CI is busy.
+        from parse import _text
+        _text.cache_clear()
+        for _ in range(4):
+            _text("<b>Aaron Chase Furman</b>")
+            _text("Sky&nbsp;Striker")
+        info = _text.cache_info()
+        self.assertGreater(info.hits, info.misses,
+                           f"most calls should be answered from the cache, got {info}")
+
+    def test_caching_does_not_change_the_answer(self):
+        from parse import _text
+        _text.cache_clear()
+        first = _text("<b>Sky&nbsp;Striker</b>\u200b ")
+        self.assertEqual(_text("<b>Sky&nbsp;Striker</b>\u200b "), first)
+        self.assertEqual(first, "Sky Striker")
+
+
 class TestADateIsParsedOnce(unittest.TestCase):
     """assign_events asks the same dates about each other, over and over."""
 
