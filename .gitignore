@@ -46,3 +46,9 @@ __pycache__/
 # uploads it, and it is every file the site serves -- so committing it once
 # would double the repository and go stale the moment anything changed.
 _site/
+
+# This machine's Claude Code settings. .claude/launch.json is shared and
+# committed; this one holds absolute paths that are true here and nowhere
+# else -- GH_CONFIG_DIR, pinning gh to the account VectorGarden expects so a
+# session working in another repository cannot flip it underneath this one.
+.claude/settings.local.json
