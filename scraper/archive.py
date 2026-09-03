@@ -17,6 +17,7 @@ feed a function of the archive rather than of the last run.
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import re
 from collections import defaultdict
@@ -295,6 +296,92 @@ def one_person(seated: dict[str, set[str]]) -> dict[str, str]:
             continue
         folded[short] = long_
     return folded
+
+
+PLAYERS = "players"
+PLAYER_SHARDS = 512
+
+# What a Duelist's name is, for the purpose of deciding which file they are
+# in. Only the letters, so a shard cannot move because a name gained a full
+# stop -- "P. Hoban" and "P Hoban" are one page's worth of question, not two
+# files apart.
+_SHARD_KEY = re.compile(r"[^a-z]+")
+
+
+def shard_of(name: str) -> str:
+    """Which of the player files holds this name.
+
+    Hashed rather than keyed on the first letters, because names are not
+    spread evenly across the alphabet: two-letter prefixes put 537KB under
+    "jo" and half a kilobyte under most of the rest, and a reader looking up
+    a Johnson would pay for every other one. Hashed, every file is 13 to 21KB
+    and the page fetches one of them whatever the name.
+
+    Five hundred and twelve of them: enough to keep each small, few enough
+    that the archive gains hundreds of files rather than tens of thousands.
+    """
+    flat = _SHARD_KEY.sub("", name.lower())
+    n = int(hashlib.sha1(flat.encode("utf-8")).hexdigest()[:8], 16) % PLAYER_SHARDS
+    return f"{n:03d}"
+
+
+def build_players(root: str | Path) -> dict[str, dict]:
+    """Shard name -> {Duelist: what they played and how far they got}.
+
+    One row per Duelist per tournament, holding only what the page cannot
+    work out for itself: the event's slug, which of its tournaments, the
+    deepest cut round they reached, the deck they were recorded with, and
+    whether they won it. The event's own name, date and place stay in the
+    manifest the page already loads, so they are not repeated 154,214 times.
+    """
+    rows: dict[str, dict[tuple[str, str], dict]] = defaultdict(dict)
+    for slug in sorted(scraped(root)):
+        try:
+            event = json.loads(rounds_path(root, slug).read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for fmt in event.get("formats") or []:
+            name = fmt.get("format") or ""
+            won = fmt.get("champion")
+            for rnd in fmt.get("rounds") or []:
+                cut = rnd.get("label") if rnd.get("phase") == "Top cut" else None
+                for pair in rnd.get("pairings") or []:
+                    for side in ("a", "b"):
+                        who = pair.get(side)
+                        if not who:
+                            continue
+                        at = rows[who].setdefault((slug, name), {})
+                        if cut:
+                            at["cut"] = cut
+                        if pair.get(side + "Deck"):
+                            at["deck"] = pair[side + "Deck"]
+                        if who == won:
+                            at["won"] = True
+                for row in rnd.get("standings") or []:
+                    if row.get("name"):
+                        at = rows[row["name"]].setdefault((slug, name), {})
+                        if row.get("deck"):
+                            at.setdefault("deck", row["deck"])
+
+    shards: dict[str, dict] = defaultdict(dict)
+    for who, played in rows.items():
+        shards[shard_of(who)][who] = [
+            {"e": slug, **({"f": fmt} if fmt else {}), **rest}
+            for (slug, fmt), rest in sorted(played.items())
+        ]
+    return dict(shards)
+
+
+def write_players(root: str | Path, shards: dict[str, dict]) -> int:
+    """Write the player files, and remove any shard that no longer has names."""
+    out = Path(root).parent / PLAYERS if Path(root).name else Path(PLAYERS)
+    out.mkdir(parents=True, exist_ok=True)
+    for name in sorted(shards):
+        (out / f"{name}.json").write_text(dumps(shards[name]), encoding="utf-8")
+    for stale in out.glob("*.json"):
+        if stale.stem not in shards:
+            stale.unlink()
+    return sum(len(v) for v in shards.values())
 
 
 def build_manifest(root: str | Path) -> dict:

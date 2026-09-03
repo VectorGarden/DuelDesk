@@ -415,6 +415,14 @@ def main() -> int:
     Path(args.manifest).write_text(archive.dumps(manifest, pretty=True), encoding="utf-8")
     print(f"Manifest lists {len(manifest['events'])} events")
 
+    # Who played what, sharded so a page can fetch one Duelist without the
+    # other sixty-six thousand. Rebuilt whole every run, like the manifest:
+    # it is derived from the archive and there is nothing in it to go stale
+    # independently.
+    shards = archive.build_players(args.archive)
+    named = archive.write_players(args.archive, shards)
+    print(f"Player index holds {named:,} Duelists in {len(shards)} files")
+
     if args.feed:
         items = archive.feed_items(args.archive, args.feed_items)
         Path(args.feed).write_text(build_feed(
