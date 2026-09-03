@@ -23,6 +23,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import archive                                            # noqa: E402
+from article import read as read_article, readable        # noqa: E402
 from build import BUILD_VERSION, Source, build_event      # noqa: E402
 from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
@@ -31,7 +32,14 @@ from index import (assign_events, event_profiles, parse_post_sitemap,  # noqa: E
                    parse_sitemap_index, settled_end, tight_window)
 from feed import build_feed                              # noqa: E402
 from naming import canonical_name, event_name            # noqa: E402
-from parse import coverage_format, detect_kind, lead, parse_post  # noqa: E402
+from parse import (coverage_format, detect_kind, entry, lead,  # noqa: E402
+                   parse_post)
+
+# The kinds that are writing. A pairings or standings post is a table the
+# archive already stores and the page already draws, and they are 44% of every
+# post in it -- extracting their prose would store the tables a second time to
+# say nothing around them.
+ARTICLE_KINDS = ("feature", "deck", "news", "result")
 
 # Ties were removed from tournament policy on this date.
 DRAWS_ABOLISHED = date(2025, 9, 2)
@@ -175,8 +183,11 @@ def select_posts(posts: list[dict], limit: int) -> list[dict]:
 
 
 def build_one(f, slug: str, posts: list[dict], ended: str,
-              limit: int) -> tuple[dict, list[dict], list[str]]:
-    """Fetch and build one event. Returns (event, feed posts, report lines)."""
+              limit: int) -> tuple[dict, list[dict], dict[str, list], list[str]]:
+    """Fetch and build one event.
+
+    Returns (event, feed posts, articles, report lines).
+    """
     available = Counter(p["kind"] for p in posts)
     chosen = select_posts(posts, limit)
     taken = Counter(p["kind"] for p in chosen)
@@ -190,17 +201,26 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
         print(f"  not fetched (limit {limit}): "
               + ", ".join(f"{v} {k}" for k, v in sorted(dropped.items())))
 
-    sources = []
+    sources, articles = [], {}
     for p in chosen:
         try:
             html = f.get(p["url"])
         except Exception as exc:                # a single bad page must not stop the run
             print(f"  skipped {p['url']}: {exc}")
             continue
-        sources.append(Source(url=p["url"], post=parse_post(html, p["url"]),
+        post = parse_post(html, p["url"])
+        sources.append(Source(url=p["url"], post=post,
                               posted=p.get("modified") or p["lastmod"]))
+        # The prose, for the reader. Only the kinds that are writing: a
+        # pairings or standings post is a table this archive already stores
+        # and already draws, and 94% of them carry under 200 characters
+        # around it. And only where there is enough of it -- see article.THIN.
+        if post.kind in ARTICLE_KINDS:
+            blocks, linked = read_article(entry(html))
+            if readable(blocks, linked):
+                articles[p["url"]] = blocks
     if not sources:
-        return {}, [], [f"### `{slug}` — nothing could be fetched", ""]
+        return {}, [], {}, [f"### `{slug}` — nothing could be fetched", ""]
 
     draws_possible = date.fromisoformat(ended) < DRAWS_ABOLISHED
     # The slug is the last resort, not the first: it renders 2026-08-quebec as
@@ -223,8 +243,12 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     event = build_event(name, sources, draws_possible=draws_possible, updated=ended,
                         ongoing=ongoing, location=location)
 
+    # Whether this post can be read here. The page needs to know before it
+    # fetches any prose -- a "Read it here" offered on a post that has none is
+    # worse than the link it replaced -- and posts.json is already on its way.
     feed_posts = [{"title": s.post.title, "url": s.url, "modified": s.posted,
                    "kind": s.post.kind, "event": name,
+                   **({"article": True} if s.url in articles else {}),
                    # What the post is coverage of, which for Dragon Duel is not
                    # a format the builder groups rounds by. See coverage_format.
                    "format": coverage_format(s.post.title, s.post.fmt),
@@ -258,7 +282,7 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
                      + (f", records: {dict(conf)}" if conf else ", no standings found")
                      + gap)
     lines.append("")
-    return event, feed_posts, lines
+    return event, feed_posts, articles, lines
 
 
 CHECKER = Path(__file__).resolve().parent.parent / ".github/scripts/check-rounds.py"
@@ -365,7 +389,8 @@ def main() -> int:
     failed: list[str] = []
     for i, (slug, posts, ended) in enumerate(chosen):
         try:
-            event, feed_posts, lines = build_one(f, slug, posts, ended, args.limit)
+            event, feed_posts, articles, lines = build_one(f, slug, posts, ended,
+                                                           args.limit)
         except Exception as exc:
             # One event must not take the others down with it. A backfill spends
             # minutes per event and writes each one as it finishes, so a failure
@@ -385,7 +410,7 @@ def main() -> int:
         report += lines
         if not event:
             continue
-        archive.write_event(args.archive, slug, event, feed_posts)
+        archive.write_event(args.archive, slug, event, feed_posts, articles)
 
         # Checked with the same script the site's own data must pass, one event
         # at a time, and backed out if it does not. The archive is a directory

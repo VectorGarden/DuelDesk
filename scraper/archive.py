@@ -8,11 +8,17 @@ event gets its own directory and the page fetches only the one being read.
     events.json                       every event, small enough to load first
     events/<slug>/rounds.json         that event's rounds, the page's payload
     events/<slug>/posts.json          its coverage posts, for rebuilding the feed
+    events/<slug>/articles.json       their prose, so a post can be read here
 
 posts.json exists because the feed spans events. A run backfills a few events at
 a time, so a feed built from only what that run fetched would drop every event
 the previous run covered. Keeping each event's posts beside its rounds makes the
 feed a function of the archive rather than of the last run.
+
+articles.json is separate from posts.json because posts.json is fetched with the
+event and articles are not read until somebody asks for one. Folded in, it would
+take the median event's post list from 12KB to 129KB and charge every reader for
+prose nobody has opened.
 """
 from __future__ import annotations
 
@@ -77,12 +83,25 @@ def posts_path(root: str | Path, slug: str) -> Path:
     return event_dir(root, slug) / "posts.json"
 
 
-def write_event(root: str | Path, slug: str, event: dict, posts: list[dict]) -> Path:
+def articles_path(root: str | Path, slug: str) -> Path:
+    return event_dir(root, slug) / "articles.json"
+
+
+def write_event(root: str | Path, slug: str, event: dict, posts: list[dict],
+                articles: dict[str, list] | None = None) -> Path:
     d = event_dir(root, slug)
     d.mkdir(parents=True, exist_ok=True)
     out = rounds_path(root, slug)
     out.write_text(dumps(lean(event)), encoding="utf-8")
     posts_path(root, slug).write_text(dumps(posts, pretty=True), encoding="utf-8")
+    # Written even when empty, so a reader can tell an event whose prose has
+    # not been extracted yet from one whose posts are all tables. Not pretty:
+    # this is the largest file in the directory after the rounds.
+    at = articles_path(root, slug)
+    if articles is None:
+        at.unlink(missing_ok=True)
+    else:
+        at.write_text(dumps(articles), encoding="utf-8")
     return out
 
 

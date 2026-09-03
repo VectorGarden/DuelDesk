@@ -107,7 +107,7 @@ jobs:
 
       # Every local file the page references must actually be in the repo.
       - name: Check local references resolve
-        run: python3 .github/scripts/check-references.py index.html winners.html winners/index.html
+        run: python3 .github/scripts/check-references.py index.html winners.html winners/index.html player/index.html read/index.html
 
   # The suite reads saved fixtures and the archive check reads the archive as
   # committed, so nothing above opens a post. A change to how coverage is read

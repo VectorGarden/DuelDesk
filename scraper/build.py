@@ -297,7 +297,12 @@ def round_key(post) -> tuple[str, Any]:
 #     and asked more strictly: the forename has to be there, because two
 #     words of a long name are easy to find by accident among hundreds.
 #     Four tournaments were crowned by this, two of them Julien Leo Kehon's.
-BUILD_VERSION = 53
+#  54 The prose of a post, so it can be read here instead of on the blog.
+#     Images are dropped at the scraper rather than the page, and a post
+#     that is a photo gallery or a table of contents is left as the link it
+#     was. Stored beside the posts, not in them: an article is read only
+#     when somebody opens it. Nothing already in the archive has one.
+BUILD_VERSION = 54
 
 
 @dataclass
