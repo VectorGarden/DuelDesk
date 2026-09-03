@@ -261,7 +261,7 @@ _SPELLED_OUT_YCS = re.compile(r"yu[- ]?gi[- ]?oh!?[- ]?championship[- ]?series")
 # Guadalajara event is announced as "the first YCS in 2012 in Guadalajara,
 # Mexico", and read as a place that made it "YCS First Guadalajara".
 _ORDINALS = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh",
-             "eighth", "ninth", "tenth", "next", "last", "annual"}
+             "eighth", "ninth", "tenth", "next", "last", "annual", "very"}
 
 _EVENT_WORDS = {"ycs", "wcq", "nawcq", "uds", "sjc", "wcs", "ygoc", "rdycs",
                 "team", "remote", "duel", "invitational", "championship",
