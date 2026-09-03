@@ -663,6 +663,15 @@ class TestAPostIsReadHere(unittest.TestCase):
             {"t": "p", "r": ["A ", {"b": "bold "}, {"i": "both italic"}, " tail."]},
             {"t": "p", "r": ["Plain again."]}])
 
+    def test_an_unclosed_emphasis_ends_with_its_paragraph(self):
+        # Konami's editor leaves <strong> open. Carried into the next block it
+        # bolds the rest of the post: 59 runs in the archive are a paragraph or
+        # more, against a card name's 18 characters.
+        got = self.blocks("<p>He drew <strong>Pot of Duality</p>"
+                          "<p>Meagher Set two cards and passed.</p>")
+        self.assertEqual(got, [{"t": "p", "r": ["He drew ", {"b": "Pot of Duality"}]},
+                               {"t": "p", "r": ["Meagher Set two cards and passed."]}])
+
     def test_a_photo_gallery_is_not_an_article(self):
         # A quarter of result posts are a headline over a photograph. Stripped,
         # they render as a headline and a caption, which is worse than the link

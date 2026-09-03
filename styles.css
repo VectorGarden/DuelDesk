@@ -57,12 +57,12 @@ a{color:inherit}
    there until it is wanted: a hairline at low opacity says the name can be
    followed, and hover and focus bring it up to a real underline. */
 a.who{
-  color:inherit; text-decoration:underline;
-  text-decoration-color:color-mix(in srgb,currentColor 22%,transparent);
-  text-decoration-thickness:1px; text-underline-offset:.18em;
+  color:inherit; text-decoration:underline dotted;
+  text-decoration-color:color-mix(in srgb,currentColor 40%,transparent);
+  text-decoration-thickness:1px; text-underline-offset:.2em;
 }
 a.who:hover,a.who:focus-visible{
-  text-decoration-color:color-mix(in srgb,currentColor 70%,transparent);
+  text-decoration-color:color-mix(in srgb,currentColor 85%,transparent);
 }
 
 /* Focus: never removed, always 3:1+ against both themes */

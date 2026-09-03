@@ -87,6 +87,12 @@ class _Reader(HTMLParser):
         if runs:
             self.blocks.append({"t": self._kind, "r": runs})
         self._runs, self._kind = [], "p"
+        # An emphasis does not outlive the block it opened in. Konami's editor
+        # leaves <strong> unclosed, and carried across the paragraph break it
+        # bolds everything after it: 59 runs in the archive are a whole
+        # paragraph or more, one of them 1,409 characters, where a card name is
+        # 18. A tag that never closed ends where its paragraph does.
+        self._emphasis.clear()
 
     def handle_starttag(self, tag, attrs):
         if self._dropping or tag in _DROPPED:
