@@ -507,21 +507,31 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
         w = _words(n)
         if not w:
             continue
-        ends_index["first", w[0][0]].add(n)
-        ends_index["last", w[-1][0]].add(n)
+        # Keyed on how many words the name has as well as which letter it
+        # starts with. A shortening has strictly more words than the name it
+        # shortens, so every bucket at or below that length holds nobody this
+        # rule can accept -- and a first letter alone puts thousands of names
+        # in a bucket, every one of which was tested to prove that.
+        ends_index["first", w[0][0], len(w)].add(n)
+        ends_index["last", w[-1][0], len(w)].add(n)
         # Two names differing in exactly one word agree on the others, so they
         # meet under the key that leaves that word out.
         for i in range(len(w)):
             gap_index[len(w), i, w[:i] + w[i + 1:]].add(n)
+
+    longest = max((len(_words(n)) for n in names), default=0)
 
     canon: dict[str, str] = {}
     for short in names:
         sw = _words(short)
         if len(sw) < 2:
             continue                    # a lone word identifies nobody
-        keeps_an_end = ends_index["first", sw[0][0]] | ends_index["last", sw[-1][0]]
+        keeps_an_end = set().union(*(
+            ends_index[end, letter, size]
+            for end, letter in (("first", sw[0][0]), ("last", sw[-1][0]))
+            for size in range(len(sw) + 1, longest + 1)))
         longer = [n for n in keeps_an_end
-                  if len(_words(n)) > len(sw) and shortens(sw, _words(n))
+                  if shortens(sw, _words(n))
                   and ends_agree(sw, _words(n)) and apart(short, n)]
         # Or the same name with a letter typed wrong, folded the way round the
         # coverage votes: the spelling seen in more rounds keeps the Duelist.
