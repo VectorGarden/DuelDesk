@@ -302,7 +302,12 @@ def round_key(post) -> tuple[str, Any]:
 #     that is a photo gallery or a table of contents is left as the link it
 #     was. Stored beside the posts, not in them: an article is read only
 #     when somebody opens it. Nothing already in the archive has one.
-BUILD_VERSION = 54
+#  55 The Duelists named in an article, as links to their pages. A feature
+#     match is about two people the archive knows, so a surname alone
+#     identifies one of them; every other post is about the field, where
+#     40.8% of Duelists share a surname with another entrant, and only a
+#     name written in full is read. 84,493 names across 2,725 articles.
+BUILD_VERSION = 55
 
 
 @dataclass

@@ -731,6 +731,173 @@ class TestAPostIsReadHere(unittest.TestCase):
             self.assertIn('"article": true', beside)
 
 
+class TestDuelistsNamedInTheProse(unittest.TestCase):
+    """Marking the names in an article. See article.link_names."""
+
+    def link(self, html, people, **kw):
+        from article import article, link_names
+        return link_names(article(html), people, **kw)
+
+    def runs(self, blocks):
+        return [r for b in blocks for r in b.get("r", ())]
+
+    def test_a_full_name_is_marked(self):
+        got = self.link("<p>Julien Leo Kehon won.</p>", ["Julien Leo Kehon"])
+        self.assertEqual(got, [{"t": "p", "r": [
+            {"who": "Julien Leo Kehon", "t": "Julien Leo Kehon"}, " won."]}])
+
+    def test_the_shortening_the_blog_writes_is_marked(self):
+        # It drops the middle of a name and the second surname, and the one it
+        # keeps is not always the last: the blog writes "Francisco Osorio" for
+        # Francisco Andres Osorio Bobadilla.
+        got = self.link("<p>Francisco Osorio and James Markowitz played.</p>",
+                        ["Francisco Andres Osorio Bobadilla", "James Allen Sun Markowitz"])
+        self.assertEqual(self.runs(got), [
+            {"who": "Francisco Andres Osorio Bobadilla", "t": "Francisco Osorio"},
+            " and ",
+            {"who": "James Allen Sun Markowitz", "t": "James Markowitz"},
+            " played."])
+
+    def test_a_surname_alone_is_marked_only_in_a_feature_match(self):
+        # A feature match is about two people the archive knows, so "Kehon"
+        # can only mean one of them. Every other post is about the field,
+        # where 40.8% of Duelists share a surname with another entrant.
+        text = "<p>Kehon drew a card.</p>"
+        self.assertEqual(self.link(text, ["Julien Leo Kehon"], by_surname=True),
+                         [{"t": "p", "r": [{"who": "Julien Leo Kehon", "t": "Kehon"},
+                                           " drew a card."]}])
+        self.assertEqual(self.link(text, ["Julien Leo Kehon"]),
+                         [{"t": "p", "r": ["Kehon drew a card."]}])
+
+    def test_the_word_the_coverage_uses_is_the_one_marked(self):
+        # Which word stands for the whole name cannot be read off the name:
+        # the last is "Bobadilla" where the blog writes "Osorio". So the post
+        # is asked, and a word it never uses is never offered -- which is what
+        # keeps a middle name from becoming a link.
+        got = self.link("<p>Osorio drew. Osorio passed. Osorio won.</p>",
+                        ["Francisco Andres Osorio Bobadilla"], by_surname=True)
+        self.assertEqual([r for r in self.runs(got) if isinstance(r, dict)],
+                         [{"who": "Francisco Andres Osorio Bobadilla", "t": "Osorio"}] * 3)
+
+    def test_a_name_two_duelists_answer_to_marks_neither(self):
+        got = self.link("<p>Kehon drew a card.</p>",
+                        ["Julien Leo Kehon", "Marcus Kehon"], by_surname=True)
+        self.assertEqual(got, [{"t": "p", "r": ["Kehon drew a card."]}])
+
+    def test_a_card_name_is_not_searched_for_duelists(self):
+        # 463 emphasised runs in the archive contain some Duelist's surname.
+        got = self.link("<p>He activated <strong>Kelly's Gadget</strong> next.</p>",
+                        ["Grant Kelly"], by_surname=True)
+        self.assertEqual(self.runs(got),
+                         ["He activated ", {"b": "Kelly's Gadget"}, " next."])
+
+    def test_a_team_written_after_a_name_is_not_part_of_it(self):
+        # A team feature match records "Oscar Renderos (The Dueling Grandpas)".
+        # Read as though the team were part of the name, "The" is the word the
+        # post uses most often and every "the" in it became a link.
+        got = self.link("<p>The Duel began and Renderos drew the first card.</p>",
+                        ["Oscar Renderos (The Dueling Grandpas)"], by_surname=True)
+        self.assertEqual(self.runs(got), [
+            "The Duel began and ",
+            {"who": "Oscar Renderos", "t": "Renderos"},
+            " drew the first card."])
+
+    def test_the_longest_name_that_fits_is_the_one_marked(self):
+        got = self.link("<p>Julien Leo Kehon drew.</p>", ["Julien Leo Kehon"],
+                        by_surname=True)
+        self.assertEqual(self.runs(got),
+                         [{"who": "Julien Leo Kehon", "t": "Julien Leo Kehon"}, " drew."])
+
+    def test_a_team_name_is_nobody(self):
+        # One word is not a name prose can be searched for, and it is how a
+        # team enters. A team has no page.
+        got = self.link("<p>Legionnaire took the match.</p>", ["Legionnaire"],
+                        by_surname=True)
+        self.assertEqual(got, [{"t": "p", "r": ["Legionnaire took the match."]}])
+
+    def test_a_feature_match_asks_about_its_own_two_duelists(self):
+        # Through run.duelists_in, because which people a post is asked about
+        # is the whole of what makes a surname safe.
+        from run import duelists_in
+        event = {"formats": [{"rounds": [
+            {"pairings": [{"a": "Ada Lovelace", "b": "Bo Peep"}]},
+            {"features": [{"source": "https://x/fm/",
+                           "a": {"name": "Ada Lovelace"}, "b": {"name": "Bo Peep"}}]},
+        ]}]}
+        field, features = duelists_in(event)
+        self.assertEqual(field, ["Ada Lovelace", "Bo Peep"])
+        self.assertEqual(features, {"https://x/fm/": ["Ada Lovelace", "Bo Peep"]})
+
+    def test_only_a_feature_match_is_asked_about_two_people(self):
+        # The decision the call site makes, and the whole of what makes a
+        # surname safe to read.
+        from run import article_people
+        field = ["Ada Lovelace", "Bo Peep", "Carl Gauss"]
+        features = {"https://x/fm/": ["Ada Lovelace", "Bo Peep"]}
+        self.assertEqual(article_people("feature", "https://x/fm/", field, features),
+                         (["Ada Lovelace", "Bo Peep"], True))
+        # A result post about the same event is asked about everybody, and
+        # asked without surnames.
+        self.assertEqual(article_people("result", "https://x/won/", field, features),
+                         (field, False))
+        # A feature match the archive could not read two Duelists out of is
+        # not two people either.
+        self.assertEqual(article_people("feature", "https://x/other/", field, features),
+                         (field, False))
+
+    def test_a_feature_matchs_names_are_answered_against_the_field(self):
+        # The title is where the blog shortens -- "Julien Kehon" for the Julien
+        # Leo Kehon in the standings -- and a link has to reach the page the
+        # archive actually keeps. Unlinked, it reached "nobody by that name".
+        from run import duelists_in
+        event = {"formats": [{"rounds": [
+            {"pairings": [{"a": "Julien Leo Kehon",
+                           "b": "Francisco Andres Osorio Bobadilla"}]},
+            {"features": [{"source": "https://x/fm/",
+                           "a": {"name": "Julien Kehon"},
+                           "b": {"name": "Francisco Osorio"}}]}]}]}
+        _, features = duelists_in(event)
+        self.assertEqual(features["https://x/fm/"],
+                         ["Julien Leo Kehon", "Francisco Andres Osorio Bobadilla"])
+
+    def test_a_short_name_two_entrants_answer_to_is_left_alone(self):
+        # Sending a reader to whichever came first is worse than sending them
+        # to a page that says nobody.
+        from run import duelists_in
+        event = {"formats": [{"rounds": [
+            {"pairings": [{"a": "Pascal Andre Manigat", "b": "Pascal Luc Manigat"}]},
+            {"features": [{"source": "https://x/fm/",
+                           "a": {"name": "Pascal Manigat"},
+                           "b": {"name": "Pascal Luc Manigat"}}]}]}]}
+        _, features = duelists_in(event)
+        self.assertEqual(features["https://x/fm/"], ["Pascal Luc Manigat"])
+
+    def test_a_duelist_the_field_does_not_have_is_not_linked(self):
+        # A title carries typos -- "Feilx Pfeiffer" for Felix -- and names
+        # Duelists whose pairings were never published. A link to a page that
+        # says nobody by that name is worse than the words left plain.
+        from run import duelists_in, article_people
+        event = {"formats": [{"rounds": [
+            {"pairings": [{"a": "Felix Pfeiffer", "b": "Anil Gangapersaud"}]},
+            {"features": [{"source": "https://x/fm/",
+                           "a": {"name": "Feilx Pfeiffer"},
+                           "b": {"name": "Anil Gangapersaud"}}]}]}]}
+        field, features = duelists_in(event)
+        self.assertEqual(features["https://x/fm/"], ["Anil Gangapersaud"])
+        # One Duelist is not two, so the post is asked about the field and
+        # asked without surnames.
+        self.assertEqual(article_people("feature", "https://x/fm/", field, features),
+                         (field, False))
+
+    def test_a_teams_duelists_are_the_field_and_the_team_is_not(self):
+        from run import duelists_in
+        event = {"formats": [{"rounds": [{"pairings": [
+            {"a": "Halal Staple Chasers", "b": "Top Deck Keepers",
+             "duels": [{"a": "Jason Torres", "b": "Abdulraheem Yaseen Yusuff"}]}]}]}]}
+        field, _ = duelists_in(event)
+        self.assertEqual(field, ["Abdulraheem Yaseen Yusuff", "Jason Torres"])
+
+
 class TestStatusAnnotations(unittest.TestCase):
     """Reading the round a player left, rather than counting their appearances."""
 

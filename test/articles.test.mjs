@@ -61,3 +61,26 @@ test('a malformed block does not throw or render', async (t) => {
   assert.equal(page.run(`blocksHtml([{t:'table', rows:'nope'}])`),
     '<div class="article__scroll"><table></table></div>');
 });
+
+test('a Duelist named in the prose is a link to their page', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+
+  const html = page.run(`blocksHtml([{t:'p', r:[
+    {who:'Julien Leo Kehon', t:'Kehon'}, ' opened with ', {b:'Kewl Tune Reco'}, '.']}])`);
+  assert.match(html, /<a class="who" href="\/player\/\?name=Julien%20Leo%20Kehon"/);
+  assert.match(html, />Kehon<\/a>/, 'the page says what the coverage wrote');
+  assert.equal(html.includes('Julien Leo Kehon<'), false,
+    'and not the name the archive files them under');
+});
+
+test('a linked name is escaped like everything else', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+
+  const html = page.run(`blocksHtml([{t:'p', r:[
+    {who:'<img src=x onerror=alert(1)>', t:'<script>alert(1)</script>'}]}])`);
+  assert.equal(html.includes('<img'), false);
+  assert.equal(html.includes('<script'), false);
+  assert.match(html, /&lt;script&gt;/);
+});

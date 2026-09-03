@@ -32,8 +32,11 @@ const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ESCAPES[c]);
    The name goes in the query string rather than the path so that no name
    needs escaping into a URL shape it does not fit: 66,000 of them include
    full stops, apostrophes, slashes and hashes. */
-const playerLink = (name) => {
-  const text = esc(name);
+const playerLink = (name, written) => {
+  /* `written` is what the words on the page should say, where that differs
+     from the name the archive files them under: an article says "Kehon" and
+     the page it links to is Julien Leo Kehon's. */
+  const text = esc(written ?? name);
   if (!name || !/[A-Za-z]/.test(name)) return text;
   return `<a class="who" href="/player/?name=${encodeURIComponent(name)}"`
        + ` target="_blank" rel="noopener">${text}</a>`;
@@ -51,6 +54,8 @@ const EMPHASIS = {b: 'b', i: 'i', u: 'u', s: 'sup'};
 function runHtml(run){
   if (typeof run === 'string') return esc(run);
   if (!run || typeof run !== 'object') return '';
+  /* A Duelist the coverage named, and the words it named them in. */
+  if (run.who) return playerLink(run.who, run.t);
   const [key, text] = Object.entries(run)[0] ?? [];
   const tag = EMPHASIS[key];
   return tag ? `<${tag}>${esc(text)}</${tag}>` : esc(text);
@@ -146,7 +151,7 @@ function openRoster({ name, members, note }){
   if (!box || !list || !(members || []).length) return;
   document.getElementById('roster-name').textContent = name;
   list.innerHTML = (members || []).map(m => `<li>
-      <span class="roster__n">${esc(m.name)}</span>
+      <span class="roster__n">${playerLink(m.name)}</span>
       ${m.deck ? `<span class="roster__d">${esc(m.deck)}</span>` : ''}
     </li>`).join('');
   const at = document.getElementById('roster-at');

@@ -23,11 +23,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import archive                                            # noqa: E402
-from article import read as read_article, readable        # noqa: E402
+from article import (link_names, read as read_article,    # noqa: E402
+                     readable)
 from build import BUILD_VERSION, Source, build_event      # noqa: E402
 from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
                    parse_lastmod)
+from winners import named_in                              # noqa: E402
 from index import (assign_events, event_profiles, parse_post_sitemap,  # noqa: E402
                    parse_sitemap_index, settled_end, tight_window)
 from feed import build_feed                              # noqa: E402
@@ -40,6 +42,75 @@ from parse import (coverage_format, detect_kind, entry, lead,  # noqa: E402
 # post in it -- extracting their prose would store the tables a second time to
 # say nothing around them.
 ARTICLE_KINDS = ("feature", "deck", "news", "result")
+
+
+def duelists_in(event: dict) -> tuple[list[str], dict[str, list[str]]]:
+    """Everyone who played, and the two Duelists of each feature match.
+
+    Two lists because they answer different questions. A feature match is
+    about two people the archive already knows, from the title it parses to
+    build the round, so a surname in it can only mean one of them. Every other
+    post is about the field, where 40.8% of Duelists share a surname with
+    somebody else in their own event.
+
+    A team's own name is not a Duelist and has no page. Its members are, and a
+    team match carries the duels it was decided by, each naming both seats.
+    """
+    field, features = set(), {}
+    for fmt in event.get("formats", []):
+        for rnd in fmt.get("rounds", []):
+            for row in rnd.get("pairings") or []:
+                for duel in row.get("duels") or [row]:
+                    for side in ("a", "b"):
+                        if duel.get(side):
+                            field.add(duel[side])
+            for feature in rnd.get("features") or []:
+                if feature.get("source"):
+                    features[feature["source"]] = [
+                        name for side in ("a", "b")
+                        if (name := (feature.get(side) or {}).get("name"))]
+    # A feature match's Duelists come out of the post's title, which is where
+    # the blog shortens: "Julien Kehon" for the Julien Leo Kehon in the
+    # standings. A link has to go to the page the archive actually keeps, so
+    # each is answered against the field.
+    field = sorted(field)
+    features = {url: [filed for name in pair
+                      if (filed := _as_filed(name, field))]
+                for url, pair in features.items()}
+    return field, features
+
+
+def _as_filed(name: str, field: list[str]) -> str | None:
+    """The name the archive keeps this Duelist under, or None.
+
+    Exactly one, or nobody: a short name that answers to two entrants
+    identifies neither, and linking it to whichever came first would send a
+    reader to somebody else's page.
+
+    None where the field does not have them at all. A title carries typos --
+    "Feilx Pfeiffer" for Felix -- and names Duelists whose pairings were never
+    published, and a link to a page that says nobody by that name is worse
+    than the words left plain. Its match then has one Duelist rather than two,
+    which is answered by asking the whole field without surnames.
+    """
+    if name in field:
+        return name
+    fuller = [f for f in field if named_in(f, name) >= 0]
+    return fuller[0] if len(fuller) == 1 else None
+
+
+def article_people(kind: str, url: str, field: list[str],
+                   features: dict[str, list[str]]) -> tuple[list[str], bool]:
+    """Who a post may be about, and whether a surname alone identifies them.
+
+    A feature match is about the two Duelists its title names, and in a write-up
+    about two people a surname can only be one of them. Anything else is about
+    the field, where 40.8% of Duelists share a surname with another entrant --
+    79% at the worst event -- so there only a name written in full is read.
+    """
+    pair = features.get(url) or []
+    about_two = kind == "feature" and len(pair) == 2
+    return (pair if about_two else field), about_two
 
 # Ties were removed from tournament policy on this date.
 DRAWS_ABOLISHED = date(2025, 9, 2)
@@ -201,7 +272,7 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
         print(f"  not fetched (limit {limit}): "
               + ", ".join(f"{v} {k}" for k, v in sorted(dropped.items())))
 
-    sources, articles = [], {}
+    sources, articles, kinds_of = [], {}, {}
     for p in chosen:
         try:
             html = f.get(p["url"])
@@ -219,6 +290,7 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
             blocks, linked = read_article(entry(html))
             if readable(blocks, linked):
                 articles[p["url"]] = blocks
+                kinds_of[p["url"]] = post.kind
     if not sources:
         return {}, [], {}, [f"### `{slug}` — nothing could be fetched", ""]
 
@@ -246,6 +318,13 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     # Whether this post can be read here. The page needs to know before it
     # fetches any prose -- a "Read it here" offered on a post that has none is
     # worse than the link it replaced -- and posts.json is already on its way.
+    # The Duelists in the prose, now that the event is built and the archive
+    # knows who played and who each feature match was between.
+    field, features = duelists_in(event)
+    for url, blocks in articles.items():
+        people, by_surname = article_people(kinds_of.get(url, ""), url, field, features)
+        articles[url] = link_names(blocks, people, by_surname=by_surname)
+
     feed_posts = [{"title": s.post.title, "url": s.url, "modified": s.posted,
                    "kind": s.post.kind, "event": name,
                    **({"article": True} if s.url in articles else {}),
