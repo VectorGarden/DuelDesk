@@ -28,33 +28,57 @@
    linking out. */
 function jumpTarget(post){
   if (post.kind !== 'pairings' && post.kind !== 'standings') return null;
-  /* The round panel holds one event, and which rounds another event published
-     is not in the manifest -- only in the file for that event, which has not
-     been fetched. Rather than offer a jump that might land nowhere, the event
-     group in the coverage list carries a control to open the event first; every
-     headline in it becomes a jump once it is the one on screen. */
+  /* The round panel holds one event. Another event's rounds are not on screen
+     and not in the manifest either -- only in that event's own file -- so a
+     headline belonging to one becomes a link that opens it, and the page it
+     opens resolves the round against the data once it has it. */
   if (post.slug && post.slug !== activeEvent) return null;
   if (post.round === null || post.round === undefined) return null;
   if (hasFormatChoice() && !post.format) return null;
-  const name = post.format || activeFormat;
-  const fmt = eventInfo?.formats?.find(f => f.format === name);
-  const rounds = fmt?.rounds ?? [];
+  return roundTarget(post.kind, post.round, post.format || activeFormat, eventInfo);
+}
+
+/* Which round panel a post about a round belongs to, given that event's data.
+
+   Shared by the two ways of getting there: a headline in the event on screen
+   moves the page, and a headline in any other event is a link that loads it. */
+function roundTarget(kind, round, format, info){
+  if (round === null || round === undefined) return null;
+  const fmt = info?.formats?.find(f => f.format === format) ?? info?.formats?.[0];
+  if (!fmt) return null;
+  const name = fmt.format;
+  const rounds = fmt.rounds ?? [];
 
   /* "Final Standings" is Konami's name for the table at the end of Swiss, not
      for a bracket round. Reading it as one landed the reader on a panel headed
      "Final · Top cut" for a post about Swiss -- showing the right rows, since a
      cut round points at that very table, but saying the wrong thing about them. */
-  if (post.kind === 'standings' && post.round === 'Final') {
+  if (kind === 'standings' && round === 'Final') {
     const swiss = rounds.filter(r => r.phase !== 'Top cut');
     const last = swiss[swiss.length - 1];
     return last ? {format: name, round: last.id, view: 'standings'} : null;
   }
 
   /* Cut ids drop their spaces: the feed says "Top 8", the data says "Top8". */
-  const wanted = String(post.round).replace(/\s+/g, '');
-  const round = rounds.find(r => String(r.id) === wanted);
-  return round ? {format: name, round: round.id, view: post.kind} : null;
+  const wanted = String(round).replace(/\s+/g, '');
+  const found = rounds.find(r => String(r.id) === wanted);
+  return found ? {format: name, round: found.id, view: kind} : null;
 }
+
+/* A headline in some other event, as a link into this site rather than out to
+   the blog. The round is not resolved here -- which rounds that event
+   published is in its own file and nothing has fetched it -- so the URL
+   carries what the post says and the page works it out on arrival. */
+function roundHref(post){
+  const q = new URLSearchParams({event: post.slug, round: String(post.round),
+                                 view: post.kind});
+  if (post.format) q.set('format', post.format);
+  return `/?${q}`;
+}
+
+const readsHere = (post) =>
+  (post.kind === 'pairings' || post.kind === 'standings')
+  && post.slug && post.round !== null && post.round !== undefined;
 
 
 /* Section 1, the theme, is in common.js -- the winners page needs it too. */
@@ -582,6 +606,26 @@ function wantedEvent(){
   } catch { return null; }
 }
 
+/* ?round=<label>&view=<pairings|standings>[&format=<name>], where a headline
+   in the coverage list sends a reader who asked for a round of some event
+   other than the one on screen.
+
+   What the post says, not what the data calls it: which rounds that event
+   published is in its own file, and the list that links here has not read it.
+   Resolved on arrival by roundTarget, the same way the in-page jump is.
+
+   Read once. A poll must not drag a reader back to the round they arrived on
+   twenty minutes ago, and neither must switching events. */
+let askedRound = (() => {
+  try {
+    const q = new URLSearchParams(location.search);
+    const round = q.get('round');
+    const view = q.get('view');
+    if (!round || (view !== 'pairings' && view !== 'standings')) return null;
+    return {round, view, format: q.get('format')};
+  } catch { return null; }
+})();
+
 async function refreshRounds({poll = false} = {}){
   try {
     const catalog = await loadCatalog();
@@ -613,7 +657,20 @@ async function refreshRounds({poll = false} = {}){
     /* Land on whatever the data says is in progress -- but only when we have
        nowhere to be. A poll must not yank a reader looking at round 5 back to
        the live round. */
-    landOnCurrentRound();
+    /* Where the reader asked to be, if they asked and the event published it.
+       Otherwise whatever the data says is in progress. */
+    const asked = askedRound
+      && roundTarget(askedRound.view, askedRound.round,
+                     askedRound.format || activeFormat, eventInfo);
+    askedRound = null;
+    if (asked){
+      activeFormat = asked.format;
+      ROUNDS = formatOf(activeFormat).rounds;
+      activeView = asked.view;
+      activeRound = asked.round;
+    } else {
+      landOnCurrentRound();
+    }
   } catch (err) {
     roundsState = 'error';
     roundsError = err.message;
@@ -1683,6 +1740,13 @@ function renderEvents(){
             if (to) return `<a class="post__t post__t--jump" href="#round-h"
               data-jump-format="${esc(to.format)}" data-jump-round="${esc(to.round)}"
               data-jump-view="${esc(to.view)}">${esc(p.title)}</a>`;
+            /* The same table, in another event. Konami published it and this
+               archive holds it, so the headline opens the round here rather
+               than sending the reader to the blog for a table already on the
+               site. A real href, so it works middle-clicked and with the
+               script off. */
+            if (readsHere(p)) return `<a class="post__t post__t--jump"
+              href="${esc(roundHref(p))}">${esc(p.title)}</a>`;
             /* A post whose prose the archive holds is read here rather than on
                the blog. Its own page, in its own tab: the coverage list is a
                dense index and an article opened inside it buries the next

@@ -78,6 +78,12 @@ test('post rows offer no affordance the site cannot honour', async (t) => {
         `offers a jump to a round that is not here: ${a.dataset.jumpRound}`);
       assert.equal(a.getAttribute('href'), '#round-h',
         'a real href, so middle-click and no-JS still do something');
+    } else if (a.getAttribute('href').startsWith('/')) {
+      /* The third kind: a table this archive holds, in an event that is not
+         the one on screen. It stays on the site. */
+      const url = new URL(a.getAttribute('href'), 'https://x/');
+      assert.ok(url.searchParams.get('event'), 'a link here names the event');
+      assert.match(url.searchParams.get('view') ?? '', /^(pairings|standings)$/);
     } else {
       assert.match(a.getAttribute('href'), /^https?:/, 'links out, or not at all');
       assert.match(a.getAttribute('rel') ?? '', /noreferrer/);

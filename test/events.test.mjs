@@ -355,15 +355,77 @@ const FEED = (slug) => `<?xml version="1.0" encoding="UTF-8"?>
     <pubDate>Sat, 23 May 2026 18:00:00 +0000</pubDate></item>
 </channel></rss>`;
 
-test('a headline from another event does not offer a jump that cannot land', async (t) => {
+test('a headline from another event opens that round here', async (t) => {
   // Which rounds that event published is in its own file, which has not been
-  // fetched. Offering the jump anyway would be guessing.
+  // fetched -- so the link carries what the post says and the page it opens
+  // works it out on arrival. A table this archive holds is not worth sending
+  // a reader to the blog for.
   const page = await loadPage(twoEvents({
     'feed.xml': { status: 200, body: FEED(OLDER.slug) },
   }));
   t.after(() => page.close());
-  assert.equal(page.$$('#events a.post__t--jump').length, 0);
-  assert.ok(page.$('#events a.post__t[rel~="external"]'), 'it still links to the post');
+  const link = page.$('#events a.post__t--jump');
+  assert.ok(link, 'the headline stays on the site');
+  const url = new URL(link.getAttribute('href'), 'https://x/');
+  assert.equal(url.pathname, '/');
+  assert.equal(url.searchParams.get('event'), OLDER.slug);
+  assert.equal(url.searchParams.get('round'), '3');
+  assert.equal(url.searchParams.get('view'), 'pairings');
+  assert.equal(page.$$('#events a.post__t[rel~="external"]').length, 0,
+    'and does not also send them to Konami for it');
+});
+
+test('arriving on a round link lands on that round', async (t) => {
+  const page = await loadPage({
+    ...twoEvents(),
+    search: `?event=${OLDER.slug}&round=3&view=pairings&format=Advanced`,
+  });
+  t.after(() => page.close());
+  await waitFor(page, `activeEvent === '${OLDER.slug}' && roundsState === 'ready'`);
+  assert.equal(page.json('activeRound'), '3');
+  assert.equal(page.json('activeView'), 'pairings');
+});
+
+test('the round in the URL is read once, not on every event after it', async (t) => {
+  // Arriving somewhere is not a standing instruction. Left unconsumed, the
+  // round asked for once follows the reader into the next event they open.
+  const page = await loadPage({
+    ...twoEvents(),
+    search: `?event=${OLDER.slug}&round=3&view=pairings&format=Advanced`,
+  });
+  t.after(() => page.close());
+  await waitFor(page, `activeEvent === '${OLDER.slug}' && roundsState === 'ready'`);
+  assert.equal(page.json('activeRound'), '3');
+
+  page.$('#events [data-open-event]')?.click();
+  page.run(`selectEvent('${SAMPLE.slug}')`);
+  await waitFor(page, `activeEvent === '${SAMPLE.slug}' && roundsState === 'ready'`);
+  assert.notEqual(page.json('activeRound'), '3',
+    'the next event lands where its own data says, not where the URL did');
+});
+
+test('a view the page does not have is not obeyed', async (t) => {
+  const page = await loadPage({
+    ...twoEvents(),
+    search: `?event=${OLDER.slug}&round=3&view=whatever`,
+  });
+  t.after(() => page.close());
+  await waitFor(page, `activeEvent === '${OLDER.slug}' && roundsState === 'ready'`);
+  assert.match(page.json('activeView'), /^(pairings|standings|features)$/);
+});
+
+test('a round that event never published still opens the event', async (t) => {
+  // The link is built from what a post says, not from that event's data, so
+  // the round may not be there. Landing on the event is the answer; an error
+  // for a URL that looks deliberate is not.
+  const page = await loadPage({
+    ...twoEvents(),
+    search: `?event=${OLDER.slug}&round=Top8&view=pairings`,
+  });
+  t.after(() => page.close());
+  await waitFor(page, `activeEvent === '${OLDER.slug}' && roundsState === 'ready'`);
+  assert.equal(page.text('#live-h'), 'YCS Columbus');
+  assert.ok(page.json('activeRound'), 'on some round of it');
 });
 
 test('an archived event offers to bring its rounds on screen', async (t) => {
