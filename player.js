@@ -107,7 +107,20 @@ async function load(){
     ]);
     if (!shard.ok) throw new Error(`the player index responded ${shard.status}`);
     if (!manifest.ok) throw new Error(`events.json responded ${manifest.status}`);
-    const rows = (await shard.json())[who];
+    let rows = (await shard.json())[who];
+    /* A spelling the archive folded away: the record is under the fuller name,
+       in a different shard, and the index leaves a pointer where the old one
+       hashes to. Followed once -- the fold only ever has one step, and a
+       second hop would mean a chain nothing here should be repairing. */
+    if (rows && !Array.isArray(rows) && rows.as){
+        const to = rows.as;
+        const next = await fetch(`/players/${await shardOf(to)}.json`, {cache: 'no-cache'});
+        if (!next.ok) throw new Error(`the player index responded ${next.status}`);
+        rows = (await next.json())[to];
+        nameEl.textContent = to;
+        document.title = `${to} — Duel Desk`;
+        noteEl.textContent = `Every event the archive has them in. The coverage also spells them ${who}.`;
+    }
     if (!rows || !rows.length){
       noteEl.textContent = 'The archive has nobody by that name.';
       return nobody('No Duelist by that name');

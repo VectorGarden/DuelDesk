@@ -6843,6 +6843,68 @@ class TestAnIndexOfEveryDuelist(unittest.TestCase):
         self.assertEqual(shards[archive.shard_of("Ada Lovelace")]["Ada Lovelace"][0]["cut"],
                          "Top 8")
 
+    def team(self, slug, champion, duels):
+        import archive
+        archive.write_event(self.tmp, slug, {
+            "event": slug, "updated": "2026-01-01", "sample": False,
+            "ongoing": False, "coverageBy": "Konami",
+            "formats": [{"format": "", "champion": champion, "rounds": [
+                {"id": "f", "label": "Final", "phase": "Top cut",
+                 "pairings": [{"table": 1, "a": champion, "b": "Other Team",
+                               "duels": duels}]}]}]}, [])
+
+    def test_a_team_is_not_a_Duelist_and_does_not_get_a_page(self):
+        # Its pairings name the teams; the people who played the match are in
+        # the duels underneath.
+        import archive
+        self.team("2026-team", "Ares", [
+            {"table": 1, "a": "Ada Lovelace", "b": "Bo Peep"}])
+        shards = archive.build_players(self.tmp)
+        self.assertNotIn("Ares", shards.get(archive.shard_of("Ares"), {}))
+        self.assertIn("Ada Lovelace", shards[archive.shard_of("Ada Lovelace")])
+
+    def test_a_team_title_belongs_to_the_Duelists_who_won_it(self):
+        # The champion of a team event is the team, so a Duelist who won on
+        # one read as having won nothing.
+        import archive
+        self.team("2026-team", "Ares", [
+            {"table": 1, "a": "Ada Lovelace", "b": "Bo Peep"},
+            {"table": 2, "a": "Cid Vega", "b": "Dee Marsh"}])
+        shards = archive.build_players(self.tmp)
+        for winner in ("Ada Lovelace", "Cid Vega"):
+            with self.subTest(winner):
+                self.assertTrue(shards[archive.shard_of(winner)][winner][0].get("won"))
+        for loser in ("Bo Peep", "Dee Marsh"):
+            with self.subTest(loser):
+                self.assertNotIn("won", shards[archive.shard_of(loser)][loser][0])
+
+    def test_one_Duelist_spelled_two_ways_has_one_page(self):
+        import archive
+        self.event("2026-a", "", None, [
+            {"id": "1", "label": "R1", "phase": "Swiss",
+             "pairings": [{"table": 1, "a": "Darryl Kotton", "b": "Bo Peep"}]}])
+        self.event("2026-b", "", None, [
+            {"id": "1", "label": "R1", "phase": "Swiss",
+             "pairings": [{"table": 1, "a": "Darryl K. Kotton", "b": "Cid Vega"}]}])
+        shards = archive.build_players(self.tmp)
+        kept = shards[archive.shard_of("Darryl K. Kotton")]["Darryl K. Kotton"]
+        self.assertEqual(len(kept), 2, "both events belong to the one Duelist")
+
+    def test_and_the_spelling_it_folded_away_still_finds_them(self):
+        # The shard is worked out from the name asked for, so without a
+        # pointer a reader who typed the coverage's spelling would be told
+        # nobody by that name exists -- which the fold exists to stop.
+        import archive
+        self.event("2026-a", "", None, [
+            {"id": "1", "label": "R1", "phase": "Swiss",
+             "pairings": [{"table": 1, "a": "Darryl Kotton", "b": "Bo Peep"}]}])
+        self.event("2026-b", "", None, [
+            {"id": "1", "label": "R1", "phase": "Swiss",
+             "pairings": [{"table": 1, "a": "Darryl K. Kotton", "b": "Cid Vega"}]}])
+        shards = archive.build_players(self.tmp)
+        self.assertEqual(shards[archive.shard_of("Darryl Kotton")]["Darryl Kotton"],
+                         {"as": "Darryl K. Kotton"})
+
     def test_writing_it_twice_leaves_no_file_behind(self):
         # A Duelist can leave a shard empty -- the archive loses an event, or
         # a name is folded away -- and a file nobody writes any more would go

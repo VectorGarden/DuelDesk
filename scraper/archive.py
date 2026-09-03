@@ -333,35 +333,78 @@ def build_players(root: str | Path) -> dict[str, dict]:
     deepest cut round they reached, the deck they were recorded with, and
     whether they won it. The event's own name, date and place stay in the
     manifest the page already loads, so they are not repeated 154,214 times.
+
+    A team event is read through its duels. Its pairings name the teams --
+    "Ares" against "Halal Staple Chasers" -- and a team is not a Duelist and
+    does not get a page; the three people who played the match are in the
+    duels underneath it, and they are who this is about. The same for a team's
+    standings row, which carries its members beside its name.
+
+    A team's title belongs to those three as much as to the name they entered
+    under, so the champion of a team event is credited to them. Read off the
+    winning side of the last published pairing, which is where champions()
+    finds a team's Duelists for the same reason.
+
+    And a Duelist the archive spells two ways is one Duelist with one page.
+    The fold is one_person's, which is careful about it: an inserted initial
+    only, no competing variant, and never two spellings seated in one event.
     """
-    rows: dict[str, dict[tuple[str, str], dict]] = defaultdict(dict)
+    events = {}
+    seated: dict[str, set] = defaultdict(set)
     for slug in sorted(scraped(root)):
         try:
-            event = json.loads(rounds_path(root, slug).read_text(encoding="utf-8"))
+            events[slug] = json.loads(rounds_path(root, slug).read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
+        for name in names_in(events[slug]):
+            seated[name].add(slug)
+    same = one_person(seated)
+
+    rows: dict[str, dict[tuple[str, str], dict]] = defaultdict(dict)
+
+    def record(who: str, slug: str, fmt: str, *, cut=None, deck=None, won=False):
+        at = rows[same.get(who, who)].setdefault((slug, fmt), {})
+        if cut:
+            at["cut"] = cut
+        if deck:
+            at.setdefault("deck", deck)
+        if won:
+            at["won"] = True
+
+    for slug, event in events.items():
         for fmt in event.get("formats") or []:
             name = fmt.get("format") or ""
-            won = fmt.get("champion")
+            champion = fmt.get("champion")
+            # Who won, as people. For a singles event that is the champion; for
+            # a team one it is the Duelists on the winning side of the final.
+            winners = {champion} if champion else set()
+            played = [r for r in fmt.get("rounds") or [] if r.get("pairings")]
+            for row in (played[-1]["pairings"] if played else []):
+                side = ("a" if row.get("a") == champion
+                        else "b" if row.get("b") == champion else None)
+                if side and row.get("duels"):
+                    winners = {d[side] for d in row["duels"] if d.get(side)}
+
             for rnd in fmt.get("rounds") or []:
                 cut = rnd.get("label") if rnd.get("phase") == "Top cut" else None
                 for pair in rnd.get("pairings") or []:
+                    if pair.get("duels"):
+                        for duel in pair["duels"]:
+                            for side in ("a", "b"):
+                                if duel.get(side):
+                                    record(duel[side], slug, name, cut=cut,
+                                           deck=duel.get(side + "Deck"),
+                                           won=duel[side] in winners)
+                        continue
                     for side in ("a", "b"):
-                        who = pair.get(side)
-                        if not who:
-                            continue
-                        at = rows[who].setdefault((slug, name), {})
-                        if cut:
-                            at["cut"] = cut
-                        if pair.get(side + "Deck"):
-                            at["deck"] = pair[side + "Deck"]
-                        if who == won:
-                            at["won"] = True
+                        if pair.get(side):
+                            record(pair[side], slug, name, cut=cut,
+                                   deck=pair.get(side + "Deck"),
+                                   won=pair[side] in winners)
                 for row in rnd.get("standings") or []:
-                    if row.get("name"):
-                        at = rows[row["name"]].setdefault((slug, name), {})
-                        if row.get("deck"):
-                            at.setdefault("deck", row["deck"])
+                    for who in (row.get("members") or ([row["name"]] if row.get("name") else [])):
+                        record(who, slug, name, deck=row.get("deck"),
+                               won=who in winners)
 
     shards: dict[str, dict] = defaultdict(dict)
     for who, played in rows.items():
@@ -369,6 +412,18 @@ def build_players(root: str | Path) -> dict[str, dict]:
             {"e": slug, **({"f": fmt} if fmt else {}), **rest}
             for (slug, fmt), rest in sorted(played.items())
         ]
+
+    # A spelling that was folded away still has to be findable. The fold moves
+    # a Duelist's record to the fuller name, and the shard is worked out from
+    # the name asked for -- "Darryl Kotton" hashes to 002 and "Darryl K.
+    # Kotton" to 216 -- so without this a reader who typed the spelling the
+    # coverage used would be told nobody by that name exists, which is exactly
+    # what the fold was supposed to stop.
+    #
+    # Left in the shard the old spelling hashes to, pointing at the new one.
+    for old, new in same.items():
+        if new in rows and old not in shards[shard_of(old)]:
+            shards[shard_of(old)][old] = {"as": new}
     return dict(shards)
 
 
