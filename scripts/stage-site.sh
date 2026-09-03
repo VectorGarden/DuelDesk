@@ -25,7 +25,9 @@ FILES=(index.html winners.html styles.css common.js app.js winners.js
 # winners/ is one file, index.html, and that is the point: a directory with
 # an index is served at /winners by any static host, which "winners.html" is
 # not. Staged as a directory for the same reason it is stored as one.
-DIRS=(icons events winners)
+# players/ is the same idea as events/: 512 files sharded by name, so looking
+# up one Duelist costs one of them rather than all sixty-six thousand.
+DIRS=(icons events winners players)
 
 for f in "${FILES[@]}"; do
   [ -f "$f" ] || { echo "  MISSING $f"; exit 1; }

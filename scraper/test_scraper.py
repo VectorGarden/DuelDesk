@@ -6781,6 +6781,84 @@ class TestTheDayCoverageEnded(unittest.TestCase):
         self.assertEqual(self.end("2017-03-02", {}), "2017-03-02")
 
 
+class TestAnIndexOfEveryDuelist(unittest.TestCase):
+    """Who played what, sharded so a page can fetch one of them."""
+
+    def setUp(self):
+        import tempfile
+        self.tmp = Path(tempfile.mkdtemp()) / "events"
+        self.tmp.mkdir(parents=True)
+
+    def event(self, slug, fmt, champion, rounds):
+        import archive
+        archive.write_event(self.tmp, slug, {
+            "event": slug, "updated": "2026-01-01", "sample": False,
+            "ongoing": False, "coverageBy": "Konami",
+            "formats": [{"format": fmt, "champion": champion, "rounds": rounds}]}, [])
+
+    def test_a_shard_does_not_move_because_a_name_gained_a_full_stop(self):
+        # "P. Hoban" and "P Hoban" are one page's worth of question, and a
+        # reader who typed either should not land in a different file.
+        import archive
+        self.assertEqual(archive.shard_of("P. Hoban"), archive.shard_of("P Hoban"))
+        self.assertEqual(archive.shard_of("ada lovelace"), archive.shard_of("Ada Lovelace"))
+
+    def test_every_shard_is_one_of_the_five_hundred_and_twelve(self):
+        import archive
+        names = [f"Duelist {i}" for i in range(400)]
+        got = {archive.shard_of(n) for n in names}
+        self.assertTrue(all(s.isdigit() and 0 <= int(s) < 512 and len(s) == 3 for s in got))
+
+    def test_a_duelist_carries_the_cut_they_reached_and_what_they_played(self):
+        import archive
+        self.event("2026-ycs-x", "Advanced", "Ada Lovelace", [
+            {"id": "1", "label": "R1", "phase": "Swiss",
+             "pairings": [{"table": 1, "a": "Ada Lovelace", "aDeck": "Elfnote",
+                           "b": "Bo Peep"}]},
+            {"id": "f", "label": "Top 4", "phase": "Top cut",
+             "pairings": [{"table": 1, "a": "Ada Lovelace", "b": "Bo Peep"}]}])
+        shards = archive.build_players(self.tmp)
+        rows = shards[archive.shard_of("Ada Lovelace")]["Ada Lovelace"]
+        self.assertEqual(rows, [{"e": "2026-ycs-x", "f": "Advanced",
+                                 "deck": "Elfnote", "won": True, "cut": "Top 4"}])
+
+    def test_a_duelist_who_did_not_win_is_not_marked_as_having(self):
+        import archive
+        self.event("2026-ycs-x", "Advanced", "Ada Lovelace", [
+            {"id": "f", "label": "Top 4", "phase": "Top cut",
+             "pairings": [{"table": 1, "a": "Ada Lovelace", "b": "Bo Peep"}]}])
+        shards = archive.build_players(self.tmp)
+        bo = shards[archive.shard_of("Bo Peep")]["Bo Peep"][0]
+        self.assertNotIn("won", bo)
+        self.assertEqual(bo["cut"], "Top 4")
+
+    def test_the_deepest_cut_is_the_one_kept(self):
+        import archive
+        self.event("2026-ycs-x", "", None, [
+            {"id": "a", "label": "Top 32", "phase": "Top cut",
+             "pairings": [{"table": 1, "a": "Ada Lovelace", "b": "Bo Peep"}]},
+            {"id": "b", "label": "Top 8", "phase": "Top cut",
+             "pairings": [{"table": 1, "a": "Ada Lovelace", "b": "Cid Vega"}]}])
+        shards = archive.build_players(self.tmp)
+        self.assertEqual(shards[archive.shard_of("Ada Lovelace")]["Ada Lovelace"][0]["cut"],
+                         "Top 8")
+
+    def test_writing_it_twice_leaves_no_file_behind(self):
+        # A Duelist can leave a shard empty -- the archive loses an event, or
+        # a name is folded away -- and a file nobody writes any more would go
+        # on being served.
+        import archive
+        self.event("2026-ycs-x", "", None, [
+            {"id": "a", "label": "R1", "phase": "Swiss",
+             "pairings": [{"table": 1, "a": "Ada Lovelace", "b": "Bo Peep"}]}])
+        archive.write_players(self.tmp, archive.build_players(self.tmp))
+        before = {p.name for p in (self.tmp.parent / "players").glob("*.json")}
+        archive.write_players(self.tmp, {"000": {"Only One": [{"e": "x"}]}})
+        after = {p.name for p in (self.tmp.parent / "players").glob("*.json")}
+        self.assertEqual(after, {"000.json"})
+        self.assertTrue(before - after)
+
+
 class TestOneDuelistOneName(unittest.TestCase):
     """A Duelist the blog writes two ways across the archive."""
 
