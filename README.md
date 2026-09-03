@@ -111,6 +111,26 @@ Bump `BUILD_VERSION` in `scraper/build.py` when the builder starts producing som
 files do not have, then rebuild in batches. Without the marker there is no way to ask which files
 are behind, and rebuilding everything is hours of fetching to correct a handful.
 
+[`scripts/drive-scrape.sh`](scripts/drive-scrape.sh) runs those batches:
+
+```bash
+scripts/drive-scrape.sh rebuild 50      # or: backfill
+```
+
+Each batch is a `scrape.yml` run that commits to `main`, so it pulls between them and reads the
+archive off the files rather than out of a log —
+[`scripts/archive-state.py`](scripts/archive-state.py) prints that as JSON and the driver diffs two
+of them. It stops at the first sign of damage: a self-contradicting record, a round carrying
+nothing, the archive losing an event, a batch that makes no progress, or a scrape that failed.
+Having somewhere to stop is what the batches are for.
+
+Two things it knows not to panic about. A red **deploy** with a green scrape is usually Pages'
+still serving the previous commit, so it compares the live bytes against what was committed before
+believing it. And a run that has not finished is not a run that failed: `gh run watch` returns
+early, and reading a conclusion off a still-running job once halted a healthy rebuild on its first
+batch. `RESUME_RUN=<id>` picks up a batch already in flight rather than dispatching another on top
+of it.
+
 ### Event identity
 
 Posts appear both under an event slug (`/2026/ycs/2026-08-quebec/…`) and without one, and only
