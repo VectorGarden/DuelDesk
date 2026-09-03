@@ -5890,6 +5890,31 @@ class TestCoverageFormat(unittest.TestCase):
             self.assertIsNone(detect_format(title), title)
 
 
+class TestADateIsParsedOnce(unittest.TestCase):
+    """assign_events asks the same dates about each other, over and over."""
+
+    def test_the_same_date_is_not_parsed_twice(self):
+        # Every post is asked whether its date falls inside every event's
+        # window: 1,365,509 questions over one run of the archive, each
+        # parsing three ISO strings, about 776 distinct dates.
+        #
+        # Asserted through the cache's own counters rather than a clock, so it
+        # fails when the caching is removed and not when CI is busy.
+        from index import _day
+        _day.cache_clear()
+        for _ in range(4):
+            _day("2026-08-16")
+            _day("2017-02-19")
+        info = _day.cache_info()
+        self.assertGreater(info.hits, info.misses,
+                           f"most calls should be answered from the cache, got {info}")
+
+    def test_a_day_number_orders_dates_the_way_dates_do(self):
+        from index import _day
+        self.assertLess(_day("2017-02-18"), _day("2017-02-19"))
+        self.assertEqual(_day("2017-03-02") - _day("2017-02-19"), 11)
+
+
 class TestRegionStrippingIsAskedOnce(unittest.TestCase):
     """The same cell arrives over and over; the answer is worked out once."""
 
