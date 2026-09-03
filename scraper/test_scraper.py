@@ -5999,6 +5999,48 @@ class TestTournamentsNobodyNamed(unittest.TestCase):
         self.assertEqual(got["standings-after-round-1"][0], "2014-ycs-dallas")
 
 
+class TestARegistrationNumberIsNotADeck(unittest.TestCase):
+    """What a Duelist is registered as, in the bracket a deck goes in."""
+
+    def read(self, cell):
+        from parse import read_annotation
+        return read_annotation(cell)
+
+    def test_a_cossy_number_is_not_what_they_played(self):
+        # YCS Pasadena writes "Wong, Vincent Man Kith CA (0101299430)", and the
+        # reading that finds "(Metalfoes)" found the number instead. The site
+        # showed 1,344 cells across six events with one of these as the deck.
+        self.assertEqual(self.read("Wong, Vincent Man Kith CA (0101299430)"),
+                         ("Wong, Vincent Man Kith CA", None, None))
+
+    def test_nor_is_a_bare_number_of_any_length(self):
+        # No archetype in this game is a number, so a bracket holding nothing
+        # else says nothing about the deck.
+        for cell in ("Someone (6)", "Someone (12)", "Someone (0318414631)"):
+            with self.subTest(cell):
+                self.assertIsNone(self.read(cell)[2])
+
+    def test_a_deck_is_still_a_deck(self):
+        self.assertEqual(self.read("Aaron Furman (Metalfoes)"),
+                         ("Aaron Furman", None, "Metalfoes"))
+
+    def test_and_the_country_beside_it_survives(self):
+        # "(Japan - 9 points - Frog Monarch)" is a country, a total and a deck
+        # in one bracket, and only the last of them is the deck.
+        self.assertEqual(self.read("Yada, Makoto (Japan - 9 points - Frog Monarch)"),
+                         ("Yada, Makoto", "Japan", "Frog Monarch"))
+
+    def test_a_three_letter_deck_is_not_mistaken_for_a_number(self):
+        self.assertEqual(self.read("Someone (ABC)")[2], "ABC")
+
+    def test_the_same_holds_where_a_round_is_written_as_prose(self):
+        # Every YCS final since 2022 is published as a sentence rather than a
+        # table, and it is read by a different path that had the same bug.
+        from parse import _prose_side
+        self.assertIsNone(_prose_side("Wong, Vincent Man Kith (0101299430)")["deck"])
+        self.assertEqual(_prose_side("Aaron Furman (Metalfoes)")["deck"], "Metalfoes")
+
+
 class TestSpelledOutNames(unittest.TestCase):
     """What the older slugs write out in full."""
 
