@@ -131,6 +131,13 @@ PROSE_CHARS = 40000
 _INVISIBLE = str.maketrans("", "", "\ufeff\u200b\u200c\u200d\u2060")
 
 
+# Cached for the reason strip_region and build._words are: a table's cells are
+# the same handful of strings over and over -- a Duelist's name in every round
+# they played, "Advanced" in every format column, the same deck in every seat
+# that played it. Across forty events this was called 904,677 times about
+# 26,956 distinct fragments, so 97% of the calls already had their answer, and
+# every distinct fragment together is a megabyte.
+@lru_cache(maxsize=None)
 def _text(fragment: str) -> str:
     return (html.unescape(_TAG.sub("", fragment))
             .replace("\xa0", " ").translate(_INVISIBLE).strip())
