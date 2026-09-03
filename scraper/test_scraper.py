@@ -6041,6 +6041,69 @@ class TestARegistrationNumberIsNotADeck(unittest.TestCase):
         self.assertEqual(_prose_side("Aaron Furman (Metalfoes)")["deck"], "Metalfoes")
 
 
+class TestTheDeckNameTheDeckIsCalled(unittest.TestCase):
+    """Decks the coverage writes more than one way."""
+
+    def name(self, deck):
+        from parse import canonical_deck
+        return canonical_deck(deck)
+
+    def test_three_engines_fold_to_the_order_the_deck_is_known_by(self):
+        self.assertEqual(self.name("@Ignister Bystial Maliss"), "Bystial @Ignister Maliss")
+        self.assertEqual(self.name("Ryzeal Mitsurugi Fiendsmith"), "Mitsurugi Ryzeal Fiendsmith")
+
+    def test_two_engines_are_left_alone(self):
+        # The order says which engine is the primary and which the secondary,
+        # so these are two decks and not two spellings of one.
+        for deck in ("Ryzeal Fiendsmith", "Fiendsmith Ryzeal",
+                     "Mitsurugi Ryzeal", "Ryzeal Mitsurugi"):
+            with self.subTest(deck):
+                self.assertEqual(self.name(deck), deck)
+
+    def test_a_variant_that_differs_only_in_punctuation_is_caught(self):
+        # "Thunder Dragon-Danger!", "Thunder Dragon Danger!" and "Thunder
+        # Dragon Danger" are one entry, because the key ignores both.
+        for deck in ("Thunder Dragon Danger!", "Thunder Dragon-Danger!",
+                     "Thunder Dragon Danger"):
+            with self.subTest(deck):
+                self.assertEqual(self.name(deck), "Danger! Thunder Dragon")
+
+    def test_a_singular_and_a_plural_are_the_same_deck(self):
+        # Not something a rule could derive: "Phantom Knight" and "Phantom
+        # Knights" differ by more than order.
+        for deck in ("Phantom Knight Burning Abyss", "Burning Abyss Phantom Knight",
+                     "Phantom Knights Burning Abyss"):
+            with self.subTest(deck):
+                self.assertEqual(self.name(deck), "Burning Abyss Phantom Knights")
+
+    def test_a_deck_the_coverage_never_spelled_right(self):
+        # Neither spelling in the archive is the name: it is Runick Spright
+        # Fur Hire, and no rule reading the archive could have found that.
+        for deck in ("Fur Hire Spright Runick", "Spright Fur Hire Runick"):
+            with self.subTest(deck):
+                self.assertEqual(self.name(deck), "Runick Spright Fur Hire")
+
+    def test_a_deck_nobody_wrote_twice_is_untouched(self):
+        self.assertEqual(self.name("Sky Striker"), "Sky Striker")
+        self.assertEqual(self.name("Kashtira"), "Kashtira")
+
+    def test_it_reaches_a_deck_read_out_of_a_column(self):
+        # Wired in, not merely available: the column reader settles the deck
+        # without going through the annotation reader.
+        from parse import parse_table
+        t = parse_table(_page("Round 5 Pairings",
+                              ["Table", "Duelist 1", "Deck", "vs.", "Duelist 2", "Deck"],
+                              [["1", "Ada Lovelace", "@Ignister Bystial Maliss",
+                                "vs.", "Bo Peep", "Spright Fur Hire Runick"]]))
+        self.assertEqual(t.rows[0]["a"]["deck"], "Bystial @Ignister Maliss")
+        self.assertEqual(t.rows[0]["b"]["deck"], "Runick Spright Fur Hire")
+
+    def test_and_a_deck_read_out_of_a_bracket(self):
+        from parse import read_annotation
+        self.assertEqual(read_annotation("Ada Lovelace (@Ignister Bystial Maliss)")[2],
+                         "Bystial @Ignister Maliss")
+
+
 class TestCellTextIsOneLine(unittest.TestCase):
     """A cell's markup should not end up inside the value it holds."""
 
