@@ -364,6 +364,88 @@ def _minted_slug(prefix: str, lo: str, taken: set[str]) -> str:
     return f"{year}-{month}-{prefix}"
 
 
+# How the blog opens a weekend it is about to cover. The oldest coverage names
+# its tournament nowhere else -- not in the path, not in the slug of a single
+# table, not even in their titles, which read "Standings: Round 2" -- so this
+# post is the only thing that says which tournament the weekend was.
+_OPENS = re.compile(r"^welcome-to-|^welcome-|^introduction-to-"
+                    r"|-is-underway$|-is-about-to-begin$|-has-begun$|-kicks-off$")
+
+# What that leaves once the announcement is taken off: the event's own name.
+_OPENING_TRIM = re.compile(r"^(?:welcome-to-the-|welcome-to-|welcome-|introduction-to-)"
+                           r"|(?:-is-underway|-is-about-to-begin|-has-begun|-kicks-off)$")
+
+# Coverage, as opposed to the product news and reader questions the blog runs
+# through the same weekend. A window of dates is not evidence that a post is
+# about the tournament -- that mistake swept a week of card announcements into
+# YCS Montreal -- so only the kinds that carry a tournament's own record come.
+_COVERAGE = ("pairings", "standings", "feature", "result", "deck")
+
+
+def opened_events(records: list[dict], windows: dict, within,
+                  gap_days: int = 3, minimum: int = 9) -> dict[str, str]:
+    """Post URL -> event, for tournaments the blog covered but never named.
+
+    discover_events reads the event's name off the front of a slug. The oldest
+    coverage has none to read: 2011 to 2016 published its tables at the blog
+    root as "standings-after-round-3" and "top-32-pairings", so three hundred
+    of them belong to tournaments this archive does not have at all.
+
+    What names them is the post that opens the weekend -- "welcome-to-ycs-
+    dallas", "ycs-kansas-city-is-underway" -- and that is what this reads.
+
+    Four things have to hold, because attaching tables by date is what cost
+    YCS Philadelphia and YCS Guadalajara their brackets:
+
+      * The weekend has to hold a bracket's worth of tables. A stray pairings
+        post is not a tournament.
+      * Nothing in the weekend already belongs to an event. Asked of the
+        posts rather than of the known windows, because by this point events
+        have been discovered that no window describes: 2016 YCS Minneapolis
+        was found by discover_events, and a rule reading windows alone
+        re-claimed its weekend and relabelled thirty-one of its posts.
+      * Exactly one post opens the weekend. Three tournaments ran on
+        2015-02-14 -- Tacoma, Charlotte and Charleston -- and a rule that
+        picked one of them would be guessing.
+      * Only coverage is adopted, never the news and reader questions that run
+        the same weekend.
+    """
+    unplaced = [r for r in records if not r["event"] and r["lastmod"]]
+    tables = sorted((r for r in unplaced if detect_kind(r["slug"]) in TOURNAMENT),
+                    key=lambda r: r["lastmod"])
+    if not tables:
+        return {}
+
+    runs, current = [], [tables[0]]
+    for rec in tables[1:]:
+        if _day(rec["lastmod"]) - _day(current[-1]["lastmod"]) > gap_days:
+            runs.append(current)
+            current = []
+        current.append(rec)
+    runs.append(current)
+
+    out: dict[str, str] = {}
+    for run in runs:
+        if len(run) < minimum:
+            continue
+        lo, hi = run[0]["lastmod"], run[-1]["lastmod"]
+        if any(r["event"] and r["lastmod"] and lo <= r["lastmod"] <= hi
+               for r in records):
+            continue
+        here = [r for r in unplaced if lo <= r["lastmod"] <= hi]
+        opening = [r for r in here if _OPENS.search(r["slug"])]
+        if len(opening) != 1:
+            continue
+        bare = _OPENING_TRIM.sub("", opening[0]["slug"]).strip("-")
+        if len(bare) < 4:
+            continue
+        slug = f"{lo[:4]}-{bare}"
+        for rec in here:
+            if rec is opening[0] or detect_kind(rec["slug"]) in _COVERAGE:
+                out[rec["url"]] = slug
+    return out
+
+
 def discover_events(records: list[dict], windows: dict, is_tournament,
                     gap_days: int = SERIES_GAP_DAYS,
                     minimum: int = MIN_DISCOVERED_POSTS,
@@ -622,6 +704,19 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
         if slug := found.get(rec["url"]):
             rec["event"], rec["event_confidence"] = slug, (
                 "prefix" if slug in windows else "discovered")
+
+    # And the tournaments nobody named at all, which only the post opening
+    # their weekend identifies. After discovery, because it works on what
+    # discovery could not reach, and it mints events rather than moving posts:
+    # a weekend any existing event covers is left alone.
+    # Worked out once over the whole set, then applied. Recomputing it per
+    # record would let each assignment shrink the very cluster the next one is
+    # measured against, until the weekend falls under the minimum and the rest
+    # of its tables are left behind.
+    opened = opened_events(out, windows, within)
+    for rec in out:
+        if not rec["event"] and (slug := opened.get(rec["url"])):
+            rec["event"], rec["event_confidence"] = slug, "opened"
 
     # A discovered event can now be dated, so the rule the path events have had
     # all along applies to it too.
