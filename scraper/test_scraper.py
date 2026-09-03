@@ -6041,6 +6041,38 @@ class TestARegistrationNumberIsNotADeck(unittest.TestCase):
         self.assertEqual(_prose_side("Aaron Furman (Metalfoes)")["deck"], "Metalfoes")
 
 
+class TestCellTextIsOneLine(unittest.TestCase):
+    """A cell's markup should not end up inside the value it holds."""
+
+    def test_a_line_break_inside_a_cell_becomes_a_space(self):
+        # "Destiny Adventurer<br>Prank-Kids" came through with the break still
+        # in it, and the newline went into the deck name the archive stores
+        # and the site prints: 35 deck names carried one.
+        from parse import _text
+        _text.cache_clear()
+        self.assertEqual(_text("Destiny Adventurer<br>  Prank-Kids"),
+                         "Destiny Adventurer Prank-Kids")
+
+    def test_a_break_is_a_space_and_not_nothing(self):
+        # Dropped with the rest of the tags, "Sky<br>Striker" would come
+        # through as "SkyStriker" -- a different deck from every count's view.
+        from parse import _text
+        _text.cache_clear()
+        for markup in ("Sky<br>Striker", "Sky<br />Striker", "Sky<BR/>Striker"):
+            with self.subTest(markup):
+                self.assertEqual(_text(markup), "Sky Striker")
+
+    def test_runs_of_space_collapse(self):
+        from parse import _text
+        _text.cache_clear()
+        self.assertEqual(_text("  Sky   Striker  "), "Sky Striker")
+
+    def test_and_ordinary_text_is_untouched(self):
+        from parse import _text
+        _text.cache_clear()
+        self.assertEqual(_text("<b>Ada</b> Lovelace"), "Ada Lovelace")
+
+
 class TestTheDeckColumnIsTheOneHeadedDeck(unittest.TestCase):
     """Which cell holds the deck, when the side has more than two."""
 
