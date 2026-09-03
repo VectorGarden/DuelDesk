@@ -36,7 +36,10 @@ test('the page and the scraper agree on where every Duelist lives', async () => 
   let checked = 0;
   for (const file of shardFiles) {
     const expected = file.replace('.json', '');
-    const names = Object.keys(JSON.parse(readFileSync(join(ROOT, 'players', file), 'utf8')));
+    const shard = JSON.parse(readFileSync(join(ROOT, 'players', file), 'utf8'));
+    // Aliases are in the shard the folded-away spelling hashes to, which is
+    // the whole point of them, so they are checked like any other name.
+    const names = Object.keys(shard);
     for (const name of names) {
       assert.equal(await shardOf(name), expected, `${name} is in ${file}`);
       checked += 1;
@@ -56,5 +59,36 @@ test('every shard is one of the five hundred and twelve', async () => {
     const n = await shardOf(name);
     assert.match(n, /^\d{3}$/);
     assert.ok(Number(n) >= 0 && Number(n) < 512);
+  }
+});
+
+test('a spelling that was folded away points at the one that was kept', () => {
+  // The fold moves a record to the fuller name, and the shard is worked out
+  // from the name asked for -- so without a pointer, a reader who typed the
+  // spelling the coverage used would be told nobody by that name exists.
+  const aliases = [];
+  for (const file of shardFiles) {
+    const shard = JSON.parse(readFileSync(join(ROOT, 'players', file), 'utf8'));
+    for (const [name, value] of Object.entries(shard)) {
+      if (!Array.isArray(value)) aliases.push([name, value]);
+    }
+  }
+  assert.ok(aliases.length, 'the archive folds names, so some should point');
+  for (const [name, value] of aliases) {
+    assert.equal(typeof value.as, 'string', `${name} points nowhere`);
+    assert.notEqual(value.as, name);
+  }
+});
+
+test('and what it points at is really there', async () => {
+  for (const file of shardFiles) {
+    const shard = JSON.parse(readFileSync(join(ROOT, 'players', file), 'utf8'));
+    for (const [name, value] of Object.entries(shard)) {
+      if (Array.isArray(value)) continue;
+      const target = JSON.parse(
+        readFileSync(join(ROOT, 'players', `${await shardOf(value.as)}.json`), 'utf8'));
+      assert.ok(Array.isArray(target[value.as]),
+        `${name} points at ${value.as}, which is not in the index`);
+    }
   }
 });
