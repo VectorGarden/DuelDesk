@@ -189,13 +189,23 @@ test('the tabpanel does not add a second tab stop in front of the table', async 
       `${view}: the panel must not also be a tab stop`);
   }
 
-  // Views with nothing focusable: the panel itself must be reachable.
+  // The feature view renders no scroll container, but its Duelists are links
+  // to their own pages, so it is reachable through them and the panel must
+  // not be a second stop in front of them.
   page.$('[data-view="feature"]').click();
   assert.equal(page.$('#round-body .tblwrap'), null);
-  assert.equal(panel.getAttribute('tabindex'), '0', 'feature view: panel is reachable');
+  assert.ok(page.$('#round-body a[href^="/player/"]'), 'feature view names are links');
+  assert.equal(panel.getAttribute('tabindex'), null,
+    'feature view: the links are the tab stops, not the panel');
 
-  page.run(`selectRound('T8')`);
-  assert.equal(panel.getAttribute('tabindex'), '0', 'not-started view: panel is reachable');
+  // And a state with nothing focusable at all, which is the other half of the
+  // rule: the panel itself has to be reachable or its text is unreachable by
+  // keyboard. Every round of this simulation now links out of its Duelists,
+  // so the empty state is the one that still proves it.
+  page.run(`roundsState = 'loading'; renderRound();`);
+  assert.equal(page.$$('#round-body a[href], #round-body button').length, 0,
+    'the loading state has nothing of its own to focus');
+  assert.equal(panel.getAttribute('tabindex'), '0', 'loading: the panel is reachable');
 });
 
 test('the panel tab stop is correct in the loading and error states', async (t) => {

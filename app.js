@@ -1427,8 +1427,9 @@ function placeBadge(name){
   return ` <span class="place place--${place.replace(/\W+/g, '')}">${esc(place)}</span>`;
 }
 
-/* A name as the tables print it, with its placement where it belongs. */
-const withPlace = (v) => `${esc(v)}${placeBadge(v)}`;
+/* A name as the tables print it: a link to the Duelist's own page, with
+   their placement in this tournament beside it. */
+const withPlace = (v) => `${playerLink(v)}${placeBadge(v)}`;
 
 /* What they won with, from the round they won it in. Only where the coverage
    published deck types, which it does for the cut and not for Swiss. */

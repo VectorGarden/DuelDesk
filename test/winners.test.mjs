@@ -369,3 +369,26 @@ test('the count still counts rows, not Duelists', async (t) => {
   search(page, 'Repeat Winner');
   assert.match(page.$('#wcount').textContent, /^2 winners/);
 });
+
+test('a winner\'s name links to their own page', async (t) => {
+  const page = await loadPage(manifest(EVENTS));
+  t.after(() => page.close());
+  const row = rows(page).find((r) => r.querySelector('.win__n').textContent === 'Carla Gamma');
+  const link = row.querySelector('.win__n a.who');
+  assert.ok(link, 'the name should be a link');
+  assert.equal(link.getAttribute('href'), '/player/?name=Carla%20Gamma');
+  assert.equal(link.getAttribute('target'), '_blank');
+});
+
+test('a team is not a Duelist and does not link', async (t) => {
+  // A team has no page. Its Duelists have one each, and the roster is where
+  // they are linked from.
+  const page = await loadPage(manifest(TEAMS));
+  t.after(() => page.close());
+  const ares = rows(page).find((r) => r.querySelector('.win__n').textContent === 'Ares');
+  assert.equal(ares.querySelector('.win__n a'), null);
+  page.run(`document.querySelectorAll('[data-roster]').forEach(b => b.click())`);
+  const member = page.$('.win__roster a.who');
+  assert.ok(member, 'the Duelists on the team should link');
+  assert.match(member.getAttribute('href'), /^\/player\/\?name=/);
+});

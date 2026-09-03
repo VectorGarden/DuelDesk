@@ -191,7 +191,7 @@ function render(){
     const won = wonBy.get(idOf(r)) || 1;
     return `<li class="win">
       <div class="win__who">
-        <b class="win__n">${esc(r.name)}</b>
+        <b class="win__n">${r.members?.length ? esc(r.name) : playerLink(r.name)}</b>
         ${won > 1 ? `<span class="win__x" title="Events won in this archive">${esc(won)}&times;</span>` : ''}
         ${r.deck ? `<span class="win__d">${esc(r.deck)}</span>` : ''}
         ${r.members?.length ? `<button type="button" class="roster-open" data-roster="${esc(i)}"
@@ -214,7 +214,7 @@ function render(){
           const why = found.has(m.name)
             ? `<span class="visually-hidden"> matches your search</span>` : '';
           return `<li${found.has(m.name) ? ' class="roster__hit"' : ''}>
-            <span class="roster__n">${esc(m.name)}${why}</span>
+            <span class="roster__n">${playerLink(m.name)}${why}</span>
             ${mw > 1 ? `<span class="win__x" title="Events won in this archive"
               >${esc(mw)}&times;</span>` : ''}
             ${m.deck ? `<span class="roster__d">${esc(m.deck)}</span>` : ''}
