@@ -3934,6 +3934,31 @@
       ]
     },
     {
+      "slug": "2016-ycs-providence-rhode-island",
+      "event": "YCS Providence Rhode Island",
+      "updated": "2016-05-29",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-ycs-providence-rhode-island/rounds.json",
+      "postCount": 44,
+      "champions": [
+        {
+          "format": null,
+          "name": "Tahmid Alvi Zaman",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 739,
+          "rounds": 14
+        }
+      ]
+    },
+    {
       "slug": "201603-santiago-chile",
       "event": "YCS Santiago",
       "location": "Santiago, Chile",
@@ -3956,6 +3981,82 @@
           "swissRounds": 9,
           "duelists": 353,
           "rounds": 9
+        }
+      ]
+    },
+    {
+      "slug": "2016-ycs-houston-texas",
+      "event": "YCS Houston",
+      "location": "Houston, Texas",
+      "updated": "2016-04-10",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-ycs-houston-texas/rounds.json",
+      "postCount": 37,
+      "champions": [
+        {
+          "format": null,
+          "name": "Andres David Torres Reyes",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 868,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica",
+      "event": "YCS San Jose Costa Rica",
+      "updated": "2016-03-20",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-yu-gi-oh-championship-series-san-jose-costa-rica/rounds.json",
+      "postCount": 8,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alejandro Garcia Moreno",
+          "deck": "Mexico"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 8,
+          "duelists": 145,
+          "rounds": 6
+        }
+      ]
+    },
+    {
+      "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia",
+      "event": "YCS Atlanta Georgia",
+      "updated": "2016-02-07",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2016-yu-gi-oh-championship-series-atlanta-georgia/rounds.json",
+      "postCount": 31,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jose Lagunes Maitret",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1458,
+          "rounds": 15
         }
       ]
     },
@@ -4059,6 +4160,24 @@
       ]
     },
     {
+      "slug": "2015-150th-ycs-in-columbus",
+      "event": "YCS Columbus",
+      "updated": "2015-05-24",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2015-150th-ycs-in-columbus/rounds.json",
+      "postCount": 31,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1763,
+          "rounds": 15
+        }
+      ]
+    },
+    {
       "slug": "201504-bogota-d-c-colombia",
       "event": "YCS Bogota",
       "location": "Bogota, Colombia",
@@ -4085,6 +4204,31 @@
       ]
     },
     {
+      "slug": "2015-ycs-chicago",
+      "event": "YCS Chicago",
+      "updated": "2015-04-12",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2015-ycs-chicago/rounds.json",
+      "postCount": 31,
+      "champions": [
+        {
+          "format": null,
+          "name": "Steven Jesus De Lara",
+          "deck": "Nekroz"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1345,
+          "rounds": 16
+        }
+      ]
+    },
+    {
       "slug": "201503-guatemala",
       "event": "YCS Guatemala",
       "updated": "2015-03-08",
@@ -4106,6 +4250,118 @@
           "swissRounds": 7,
           "duelists": 192,
           "rounds": 5
+        }
+      ]
+    },
+    {
+      "slug": "2015-ycs-tacoma",
+      "event": "YCS Tacoma",
+      "updated": "2015-02-15",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2015-ycs-tacoma/rounds.json",
+      "postCount": 44,
+      "champions": [
+        {
+          "format": null,
+          "name": "Barrett Arthur Keys",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 395,
+          "rounds": 15
+        }
+      ]
+    },
+    {
+      "slug": "2015-ycs-charleston",
+      "event": "YCS Charleston",
+      "updated": "2015-02-01",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2015-ycs-charleston/rounds.json",
+      "postCount": 33,
+      "champions": [
+        {
+          "format": null,
+          "name": "Jonathon Phillip Castillo Gomez",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 799,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2014-ycs-dallas",
+      "event": "YCS Dallas",
+      "updated": "2014-10-05",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2014-ycs-dallas/rounds.json",
+      "postCount": 16,
+      "champions": [
+        {
+          "format": null,
+          "name": "Billy Presley Brake",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1124,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2014-ycs-lima-peru",
+      "event": "YCS Lima",
+      "location": "Lima, Peru",
+      "updated": "2014-09-14",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2014-ycs-lima-peru/rounds.json",
+      "postCount": 8,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 6,
+          "duelists": 244,
+          "rounds": 4
+        }
+      ]
+    },
+    {
+      "slug": "2014-ycs-toronto",
+      "event": "YCS Toronto",
+      "updated": "2014-09-07",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2014-ycs-toronto/rounds.json",
+      "postCount": 26,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 566,
+          "rounds": 13
         }
       ]
     },
@@ -4191,6 +4447,49 @@
       ]
     },
     {
+      "slug": "2014-ycs-philadelphia-pa",
+      "event": "YCS Philadelphia",
+      "updated": "2014-05-19",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2014-ycs-philadelphia-pa/rounds.json",
+      "postCount": 35,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 11,
+          "duelists": 1410,
+          "rounds": 14
+        }
+      ]
+    },
+    {
+      "slug": "2014-ycs-mexico-d-f",
+      "event": "YCS Mexico",
+      "updated": "2014-04-06",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2014-ycs-mexico-d-f/rounds.json",
+      "postCount": 14,
+      "champions": [
+        {
+          "format": null,
+          "name": "Alejandro Vivaldo Reyes Suarez",
+          "deck": null
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 808,
+          "rounds": 5
+        }
+      ]
+    },
+    {
       "slug": "yu-gi-oh-world-championship-2013",
       "event": "World Championship 2013",
       "updated": "2013-08-11",
@@ -4272,6 +4571,50 @@
       ]
     },
     {
+      "slug": "2013-yu-gi-oh-championship-series-san-diego-california",
+      "event": "YCS San Diego",
+      "location": "San Diego, California",
+      "updated": "2013-04-07",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2013-yu-gi-oh-championship-series-san-diego-california/rounds.json",
+      "postCount": 38,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 9,
+          "duelists": 1230,
+          "rounds": 13
+        }
+      ]
+    },
+    {
+      "slug": "2012-ycs-indianapolis",
+      "event": "YCS Indianapolis",
+      "updated": "2012-09-23",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2012-ycs-indianapolis/rounds.json",
+      "postCount": 22,
+      "champions": [
+        {
+          "format": null,
+          "name": "Junior Dorcin",
+          "deck": "Six Samurai"
+        }
+      ],
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 569,
+          "rounds": 9
+        }
+      ]
+    },
+    {
       "slug": "2012-central-american-wcq",
       "event": "Central America WCQ 2012",
       "updated": "2012-06-16",
@@ -4293,6 +4636,43 @@
           "swissRounds": 0,
           "duelists": 0,
           "rounds": 1
+        }
+      ]
+    },
+    {
+      "slug": "2012-yu-gi-oh-championship-series-lima-peru",
+      "event": "YCS Lima",
+      "location": "Lima, Peru",
+      "updated": "2012-04-01",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2012-yu-gi-oh-championship-series-lima-peru/rounds.json",
+      "postCount": 18,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 8,
+          "duelists": 184,
+          "rounds": 7
+        }
+      ]
+    },
+    {
+      "slug": "2011-ycs-kansas-city",
+      "event": "YCS Kansas City",
+      "updated": "2011-11-20",
+      "sample": false,
+      "ongoing": false,
+      "coverageBy": "Konami",
+      "path": "events/2011-ycs-kansas-city/rounds.json",
+      "postCount": 19,
+      "formats": [
+        {
+          "format": null,
+          "swissRounds": 10,
+          "duelists": 580,
+          "rounds": 9
         }
       ]
     },
