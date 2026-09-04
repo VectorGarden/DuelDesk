@@ -131,6 +131,30 @@ early, and reading a conclusion off a still-running job once halted a healthy re
 batch. `RESUME_RUN=<id>` picks up a batch already in flight rather than dispatching another on top
 of it.
 
+### What a card does
+
+A match report names cards constantly — the archive emphasises 179,484 of them — and a deck list is
+nothing else. [`cards/`](cards) holds what each one is and does, so a reader who does not know
+*Bystial Magnamhut* can point at it instead of leaving.
+
+```bash
+python3 scripts/build-cards.py          # one request to YGOPRODeck, 512 files out
+```
+
+Run when a set releases, not on every scrape: coverage changes hourly during an event and the cards
+do not, so this is not the scraper's job.
+
+**Text, not art.** The page forbids remote images — a rule this project set itself, not a header
+somebody else enforces — and card art would have been the first deliberate exception, paid for
+either by the reader's browser talking to a third party on every hover or by this archive carrying
+thousands of pictures. What a card *does* is the question being asked, and it is words.
+
+Sharded 512 ways like the Duelists and for the same reason: the whole store is 6.4MB and no reader
+wants 6.4MB to look at one card. Keyed on the name with its punctuation and case removed, because
+the coverage writes `Maxx “C”` with the quotes a CMS invents. That costs the distinctions
+punctuation was carrying — "Rai-Mei" and "Raimei" are two cards and one key — so a key naming more
+than one card names neither, which is 6 of 14,523.
+
 ### Event identity
 
 Posts appear both under an event slug (`/2026/ycs/2026-08-quebec/…`) and without one, and only
