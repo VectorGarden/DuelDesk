@@ -390,7 +390,7 @@ test('a card the store does not have is left out rather than guessed', async () 
 const layout = new Function('btoa',
   reader.slice(reader.indexOf('const DECK_COUNT'), reader.indexOf('let popup = null;'))
   + reader.slice(reader.indexOf('const PILES'), reader.indexOf('function showPile'))
-  + '; return {layoutOf, copiesIn};')(() => '');
+  + '; return {layoutOf, copiesIn, decksByPlace};')(() => '');
 
 /* Paragraph stand-ins: the layout only ever asks a paragraph what comes after
    it, which is the whole of what it needs to know. */
@@ -577,6 +577,67 @@ test('a word that is not one of the two misspellings is not a section', async ()
     'Somebody\nMonsters: 1\n1 Effect Veiler', 'Era Deck: 1\n1 T.G. Hyper Librarian');
   const [deck] = layout.layoutOf(lines);
   assert.deepEqual([...deck.piles.keys()], ['Monsters'], 'no pile called Extra');
+});
+
+test('a deck is read inside its own place, not lined up with the next one', async () => {
+  // The post used to be read twice -- once for the cards, once for the
+  // boundaries -- and the two answers paired by position. Where a stray
+  // heading opened a place the card reading threw away, the pairing slipped:
+  // every deck after it wore the next Duelist's name and the next Duelist's
+  // count. Three posts in the archive did this, and both #242 and #247 were
+  // found by noticing the symptom rather than the disagreement.
+  const {nodes, lines} = paragraphs(
+    '*1st Place \u2013 Chris LeBlanc', 'Monsters: 1\n1 Ash Blossom & Joyous Spring',
+    'He talked us through how the Deck works.',
+    'Extra Deck: 1\n1 Some Fusion',
+    '*2nd Place \u2013 Hansel Aguero', 'Monsters: 1\n1 Tearlaments Merrli');
+  const found = layout.decksByPlace(lines, layout.layoutOf(lines));
+  assert.equal(found.length, 2, 'the place holding no main deck is not a deck');
+  assert.equal(found[1].place.at, nodes[4], 'the second deck is at the second Duelist');
+  assert.deepEqual(found[1].deck.Monsters.map((c) => c.name), ['Tearlaments Merrli'],
+                   "and holds that Duelist's cards, not the one before");
+});
+
+test('a card written without its count takes the one the section gave', async () => {
+  // Team YCS Las Vegas 2024 writes "Trap Cards: 3" and then, with no count of
+  // its own, "Infinite Impermanence". The card was read as a heading: it
+  // ended the deck it belonged to, the Extra Deck under it opened a place
+  // that held no main deck, and Chris LeBlanc's Extra and Side went with it.
+  const head = {}, main = {};
+  const [deck] = decksIn([
+    {text: 'Monsters: 1', p: head},
+    {text: '1 Ash Blossom & Joyous Spring', p: main},
+    {text: 'Trap Cards: 3', p: head, emph: false},
+    {text: 'Infinite Impermanence', p: head, emph: false},
+  ]);
+  assert.deepEqual(deck.Traps, [{name: 'Infinite Impermanence', quantity: 3}]);
+});
+
+test("a section's count is spent once, on the card written under it", async () => {
+  // Only while the pile is still empty, so what is taken is the count the
+  // section gave and not a line that turned up later with cards already in
+  // the pile.
+  const head = {}, main = {};
+  const [deck] = decksIn([
+    {text: 'Monsters: 3', p: head},
+    {text: '3 Ash Blossom & Joyous Spring', p: main},
+    {text: 'Something said afterwards.', p: head},
+  ]);
+  assert.deepEqual(deck.Monsters.map((c) => c.name), ['Ash Blossom & Joyous Spring']);
+});
+
+test('a line under a section does not end the deck it is part of', async () => {
+  // "Trap Cards: 3" and then "Infinite Impermanence", both in the one
+  // paragraph. A heading belongs at the top of a paragraph, not beneath the
+  // pile it would be ending -- and read as one it opened a place holding the
+  // Extra Deck and the Side Deck of the deck it had just closed.
+  const {lines} = paragraphs(
+    '*1st Place \u2013 Chris LeBlanc', 'Monsters: 1\n1 Ash Blossom & Joyous Spring',
+    'Trap Cards: 3\nInfinite Impermanence',
+    'Extra Deck: 1\n1 Some Fusion');
+  const found = layout.layoutOf(lines);
+  assert.equal(found.length, 1, 'one deck, and no place holding its Extra');
+  assert.deepEqual([...found[0].piles.keys()], ['Monsters', 'Traps', 'Extra']);
 });
 
 test('a heading with no number leaves the count it found', async () => {
