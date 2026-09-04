@@ -289,6 +289,35 @@ test('the Duelist after a deck is not the rest of its last card', async () => {
     'the Duelist is nobody\'s card name');
 });
 
+test('a second Extra Deck is the Side Deck', async () => {
+  // YCS Anaheim 2025 heads both of Steven Trifunoski's last two piles "Extra
+  // Deck: 15". The second holds Raigeki and Lightning Storm -- Spells, which
+  // no Extra Deck may hold -- and he was the only Duelist in the post without
+  // a Side Deck. Read as written it is an Extra Deck of thirty, which is not
+  // a deck anybody could register, and his Side Deck is nowhere.
+  const [deck] = decksIn([
+    'Monsters: 1', '1 Ash Blossom & Joyous Spring',
+    'Extra Deck: 1', '1 Exosister Asophiel',
+    'Extra Deck: 2', '2 Raigeki',
+  ]);
+  assert.deepEqual(deck.Extra.map((c) => c.name), ['Exosister Asophiel']);
+  assert.deepEqual(deck.Side.map((c) => c.name), ['Raigeki'], 'the second is the Side Deck');
+});
+
+test('a deck that has both keeps the Extra Deck it was given', async () => {
+  // Only where there is no Side Deck to disagree with. A post that writes
+  // both is not making the mistake, and a second Extra after a Side is
+  // whatever it says it is.
+  const [deck] = decksIn([
+    'Monsters: 1', '1 Ash Blossom & Joyous Spring',
+    'Extra Deck: 1', '1 Exosister Asophiel',
+    'Side Deck: 1', '1 Droll & Lock Bird',
+    'Extra Deck: 1', '1 Some Fusion',
+  ]);
+  assert.deepEqual(deck.Side.map((c) => c.name), ['Droll & Lock Bird']);
+  assert.deepEqual(deck.Extra.map((c) => c.name), ['Exosister Asophiel', 'Some Fusion']);
+});
+
 test('a wrap cannot cross a paragraph', async () => {
   // A name broken over two paragraphs is not a wrap -- it is the next thing
   // the post had to say, and in a deck list that is whoever came next.
@@ -689,6 +718,17 @@ test('a name broken by a bracket does not split the deck it is in', async () => 
   const found = layout.layoutOf(lines);
   assert.equal(found.length, 1, 'one Duelist, one deck');
   assert.deepEqual([...found[0].piles.keys()], ['Monsters', 'Side']);
+});
+
+test('the layout puts a second Extra Deck in the Side pile too', async () => {
+  // The two readings have to agree about the piles, or the tabs say one thing
+  // and the files another.
+  const {lines} = paragraphs(
+    '*Top 8: Steven Trifunoski', 'Monsters: 1\n1 Ash Blossom & Joyous Spring',
+    'Extra Deck: 1\n1 Exosister Asophiel', 'Extra Deck: 2\n2 Raigeki');
+  const [place] = layout.layoutOf(lines);
+  assert.deepEqual([...place.piles.keys()], ['Monsters', 'Extra', 'Side']);
+  assert.equal(place.piles.get('Side').said, 2, 'and the count it was given');
 });
 
 test('a heading with no number leaves the count it found', async () => {
