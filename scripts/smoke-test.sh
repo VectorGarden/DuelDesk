@@ -24,37 +24,52 @@ fail() { echo "  FAIL  $*"; FAILED=1; }
 fetch() { curl -fsSL -m 20 -H 'Cache-Control: no-cache' "$1?_=$(date +%s)$RANDOM"; }
 status() { curl -sS -o /dev/null -m 20 -w '%{http_code}' "$1" 2>/dev/null || echo 000; }
 
+# Pages propagates asynchronously, and it does not propagate one file at a
+# time: index.html can be the new one while events.json is still the old one.
+# So every comparison waits the same way, rather than the first check retrying
+# for ninety seconds and the rest asking once each -- which is what failed a
+# healthy deploy of the v60 rebuild, and taught the rebuild driver to expect
+# false alarms from the check that is supposed to stop it.
+#
+# $1 the path on the site, $2 the file it should match, $3 what to call it.
+served_matches() {
+  local path="$1" local_file="$2" label="$3" want got i
+  want="$(shasum -a 256 "$local_file" | cut -d' ' -f1)"
+  for i in $(seq 1 "$ATTEMPTS"); do
+    got="$(fetch "$BASE/$path" 2>/dev/null | shasum -a 256 | cut -d' ' -f1)"
+    if [ "$want" = "$got" ]; then
+      echo "  ok    $label matches the uploaded artifact${i:+ (attempt $i)}"
+      return 0
+    fi
+    [ "$i" -lt "$ATTEMPTS" ] && sleep 10
+  done
+  fail "$label served ${got:0:16}..., expected ${want:0:16}..."
+  return 1
+}
+
+# Every script and stylesheet the pages ask for, read out of the pages rather
+# than listed here -- a list gets forgotten, which is how decks.js reached the
+# staging script late and would have gone unchecked here entirely.
+assets() {
+  grep -ho '\(src\|href\)="[^"]*\.\(js\|css\)"' \
+       "$SITE"/*.html "$SITE"/*/index.html 2>/dev/null \
+    | sed 's/.*="//; s/"$//; s|^/||' | sort -u
+}
+
 EXPECTED="$(shasum -a 256 "$SITE/index.html" | cut -d' ' -f1)"
 echo "Smoke testing $BASE"
 echo "  expecting index.html sha256 ${EXPECTED:0:16}..."
 
 # --- 1. the page we built is the page being served ---------------------------
-# Pages propagates asynchronously, so retry rather than assuming it is instant.
-for i in $(seq 1 "$ATTEMPTS"); do
-  served="$(fetch "$BASE/" 2>/dev/null | shasum -a 256 | cut -d' ' -f1)"
-  if [ "$served" = "$EXPECTED" ]; then
-    echo "  ok    index.html matches the uploaded artifact (attempt $i)"
-    break
-  fi
-  if [ "$i" -eq "$ATTEMPTS" ]; then
-    fail "after $ATTEMPTS attempts the site serves ${served:0:16}..., expected ${EXPECTED:0:16}..."
-  else
-    sleep 10
-  fi
-done
+served_matches "" "$SITE/index.html" "index.html"
 
 # --- 1b. and so are the files it cannot run without --------------------------
 # index.html is markup now; the behaviour is in app.js and the look in
 # styles.css. A deploy that shipped a stale app.js would serve a page that
 # renders and then does nothing, and the hash above would call it correct.
-for asset in styles.css app.js; do
-  want="$(shasum -a 256 "$SITE/$asset" | cut -d' ' -f1)"
-  got="$(fetch "$BASE/$asset" 2>/dev/null | shasum -a 256 | cut -d' ' -f1)"
-  if [ "$want" = "$got" ]; then
-    echo "  ok    $asset matches the uploaded artifact"
-  else
-    fail "$asset served ${got:0:16}..., expected ${want:0:16}..."
-  fi
+for asset in $(assets); do
+  [ -f "$SITE/$asset" ] || { fail "$asset is asked for but was never staged"; continue; }
+  served_matches "$asset" "$SITE/$asset" "$asset"
 done
 
 # --- 2. the data we built is the data being served ---------------------------
@@ -78,27 +93,17 @@ print(f"  ok    upcoming.json serves {len(d["events"])} events")
 ' || fail "upcoming.json is not usable"
 fi
 
+served_matches "events.json" "$SITE/events.json" "events.json"
 if ! fetch "$BASE/events.json" > /tmp/smoke-events.json 2>/dev/null; then
   fail "could not fetch events.json"
 fi
-want="$(shasum -a 256 "$SITE/events.json" | cut -d' ' -f1)"
-got="$(shasum -a 256 /tmp/smoke-events.json | cut -d' ' -f1)"
-[ "$want" = "$got" ] \
-  && echo "  ok    events.json matches the uploaded artifact" \
-  || fail "events.json served ${got:0:16}..., expected ${want:0:16}..."
 
 NEWEST="$(python3 -c '
 import json; print(json.load(open("/tmp/smoke-events.json"))["events"][0]["path"])')"
 echo "  ..    newest event is $NEWEST"
 
-if fetch "$BASE/$NEWEST" > /tmp/smoke-rounds.json 2>/dev/null; then
-  want="$(shasum -a 256 "$SITE/$NEWEST" | cut -d' ' -f1)"
-  got="$(shasum -a 256 /tmp/smoke-rounds.json | cut -d' ' -f1)"
-  if [ "$want" = "$got" ]; then
-    echo "  ok    $NEWEST matches the uploaded artifact"
-  else
-    fail "$NEWEST served ${got:0:16}..., expected ${want:0:16}..."
-  fi
+if served_matches "$NEWEST" "$SITE/$NEWEST" "$NEWEST" \
+   && fetch "$BASE/$NEWEST" > /tmp/smoke-rounds.json 2>/dev/null; then
 
   # The freshness rule applies only to the simulation, which is regenerated on
   # every deploy and so has no excuse for being stale. A timestamp in the future
