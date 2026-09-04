@@ -608,9 +608,17 @@ function layoutOf(lines){
      "Main Deck: 20" and then, plain, the character and the skill, and that
      line is not a second Duelist. */
   let cards = false;
+  /* Which line of its own paragraph this is. Some posts write the Duelist
+     and the section under them in one paragraph, broken by a line break
+     rather than a paragraph break, and then the heading is the lines above
+     the section rather than the paragraph before it. */
+  let atP = null;
+  let said = 0;
   for (const {text: raw, p, emph} of lines){
     const text = raw.trim();
     if (!text) continue;
+    if (p !== atP){ atP = p; said = 0; }
+    const nth = said++;
     if (DECK_SECTION.test(text)){
       const next = pileOf(text);
       const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
@@ -625,12 +633,16 @@ function layoutOf(lines){
            where the bold begins and runs from there down to the section.
            What follows the name -- "Character: Yami Yugi", "Skill Name: Ever
            Faithful Companions" -- is plain, and belongs to the name. */
-        const run = heading.length && heading[heading.length - 1].p.nextElementSibling === p
+        const near = heading[heading.length - 1];
+        const run = near && (near.p === p || near.p.nextElementSibling === p)
           ? heading : [];
         let from = run.findLastIndex((held) => held.emph);
         while (from > 0 && run[from - 1].emph) from -= 1;
         const own = (from < 0 ? run.slice(-1) : run.slice(from)).map((held) => held.p);
-        deck = {at: own[0] ?? p, title: own, piles: new Map()};
+        /* How many of its lines, where the heading is in this paragraph:
+           the ones above the section, which is this line. */
+        const upto = own[own.length - 1] === p ? nth : 0;
+        deck = {at: own[0] ?? p, title: own, upto, piles: new Map()};
         found.push(deck);
         closed = false;
         cards = false;
@@ -690,6 +702,48 @@ function copiesIn(deck){
     .reduce((n, card) => n + card.quantity, 0);
 }
 
+/* Where a paragraph's nth line ends, as a text node and an offset into it.
+   Line breaks in an article are newlines inside the text rather than <br>
+   elements -- the stylesheet sets pre-line -- so a heading that shares its
+   paragraph with the section under it cannot be moved by moving the
+   paragraph. This is what a range needs to take the heading and leave the
+   rest where it is. */
+function endOfLine(p, n){
+  const walk = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+  let said = 0;
+  let text = '';
+  for (let node = walk.nextNode(); node; node = walk.nextNode()){
+    for (let i = 0; i < node.data.length; i++){
+      if (node.data[i] !== '\n'){ text += node.data[i]; continue; }
+      if (text.trim() && ++said === n) return {node, at: i};
+      text = '';
+    }
+  }
+  return null;
+}
+
+/* The heading into the name, and out of the article: it is moved rather than
+   copied, so the Duelist's name is still the link the article made it.
+
+   Where the heading shares its paragraph with the section under it, only its
+   own lines come away and the rest stays where the pile below expects it. */
+function takeHeading(name, held, upto){
+  const cut = upto ? endOfLine(held, upto) : null;
+  if (!cut){
+    while (held.firstChild) name.append(held.firstChild);
+    held.remove();
+    return;
+  }
+  const range = document.createRange();
+  range.setStart(held, 0);
+  range.setEnd(cut.node, cut.at);
+  name.append(range.extractContents());
+  /* The break the heading ended on, now at the front of what is left, which
+     pre-line would otherwise render as a blank first line. */
+  const first = document.createTreeWalker(held, NodeFilter.SHOW_TEXT).nextNode();
+  if (first && first.data.startsWith('\n')) first.deleteData(0, 1);
+}
+
 function shapeDecks(root){
   const lines = [];
   for (const p of root.querySelectorAll('p')) lines.push(...linesOf(p));
@@ -730,8 +784,9 @@ function shapeDecks(root){
     if (place.title.length){
       place.title.forEach((held, n) => {
         if (n) name.append(' — ');
-        while (held.firstChild) name.append(held.firstChild);
-        held.remove();
+        /* Only the last of them can be the section's own paragraph, which is
+           where the heading is written into the line above the cards. */
+        takeHeading(name, held, n === place.title.length - 1 ? place.upto : 0);
       });
     } else {
       name.textContent = deck.name || `Deck ${i + 1}`;

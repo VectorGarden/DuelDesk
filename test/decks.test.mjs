@@ -142,6 +142,54 @@ test('a line is emphasised only when the whole of it is', async (t) => {
   }
 });
 
+test('taking the name out of a shared paragraph leaves the section behind', async () => {
+  // The heading is moved rather than copied, so the Duelist keeps the link
+  // the article gave them. Where it shares a paragraph with "Main Deck: 42",
+  // moving the paragraph would take the total away from the pile that counts
+  // it -- and put it in the name. Only the heading's own lines come away.
+  const { loadPage } = await import('./harness.mjs');
+  const page = await loadPage();
+  try {
+    const got = page.json(`(() => {
+      ${reader.slice(reader.indexOf('function endOfLine(p, n)'), reader.indexOf('function shapeDecks'))}
+      const p = document.createElement('p');
+      p.innerHTML = '<b><a class="who" href="/player/?name=Jesse%20Dean%20Kotton">Jesse Kotton</a></b>'
+        + '<b> \u2013 1st Place\\nMain Deck: 42</b>';
+      const name = document.createElement('span');
+      takeHeading(name, p, 1);
+      return {name: name.textContent, link: name.querySelector('a.who')?.getAttribute('href'),
+              left: p.textContent, still: !!p.parentNode || p.isConnected === false};
+    })()`);
+    assert.equal(got.name, 'Jesse Kotton – 1st Place', 'the Duelist and the placing');
+    assert.equal(got.link, '/player/?name=Jesse%20Dean%20Kotton', 'still their profile');
+    assert.equal(got.left, 'Main Deck: 42', 'and the total stays in the article');
+  } finally {
+    await page.close();
+  }
+});
+
+test('a heading in a paragraph of its own is taken whole', async () => {
+  // Nothing is left of it, and the paragraph goes with it: the heading is not
+  // wanted twice, once in the name and once above the cards.
+  const { loadPage } = await import('./harness.mjs');
+  const page = await loadPage();
+  try {
+    const got = page.json(`(() => {
+      ${reader.slice(reader.indexOf('function endOfLine(p, n)'), reader.indexOf('function shapeDecks'))}
+      const box = document.createElement('div');
+      box.innerHTML = '<p><b>1st Place</b>\\nRaymond Dai</p><p>Monsters: 2</p>';
+      const p = box.firstChild;
+      const name = document.createElement('span');
+      takeHeading(name, p, 0);
+      return {name: name.textContent, gone: box.children.length};
+    })()`);
+    assert.equal(got.name, '1st Place\nRaymond Dai');
+    assert.equal(got.gone, 1, 'the paragraph it came from is gone');
+  } finally {
+    await page.close();
+  }
+});
+
 test('a plain line after a count is not a card name', async () => {
   // Emphasis is what separates the two columns. Without it the sentence after
   // a stray number would be read as a card.
@@ -386,6 +434,32 @@ test('a new name ends the deck before it, cut or no cut', async () => {
   const found = layout.layoutOf(lines);
   assert.equal(found.length, 2, 'two Duelists, two decks');
   assert.equal(found[1].at, nodes[2], 'the second at the second name');
+});
+
+test('a Duelist written into the section\'s own paragraph still names the deck', async () => {
+  // Team YCS writes the name and the total in one paragraph, broken by a line
+  // break rather than a paragraph break. The heading was only ever looked for
+  // in the paragraph before, so these decks had no name at all and were
+  // exported as "Deck 1" and "Deck 2" -- 54 of the 654 decks in the archive.
+  const {nodes, lines} = paragraphs(
+    'Here are the Deck Lists of the 1st Place team!',
+    '*Jesse Kotton \u2013 1st Place\nMain Deck: 42',
+    '*Monster Cards: 25', '3 Ash Blossom & Joyous Spring');
+  const found = layout.layoutOf(lines);
+  assert.equal(found.length, 1, 'one deck, not one per section');
+  assert.deepEqual(found[0].title, [nodes[1]], 'named from its own paragraph');
+  assert.equal(found[0].upto, 1, 'and only the line above the total is the name');
+});
+
+test('a heading in its own paragraph is not read as part of the section', async () => {
+  // The other way about: where the heading really is the paragraph before,
+  // nothing of the section's paragraph belongs to it.
+  const {nodes, lines} = paragraphs(
+    'Wanna see the Decks?', '1st Place\nRaymond Dai',
+    'Monsters: 2\n2 Ash Blossom & Joyous Spring');
+  const [deck] = layout.layoutOf(lines);
+  assert.deepEqual(deck.title, [nodes[1]]);
+  assert.equal(deck.upto, 0, 'no lines of the section paragraph');
 });
 
 test('a heading with no number leaves the count it found', async () => {
