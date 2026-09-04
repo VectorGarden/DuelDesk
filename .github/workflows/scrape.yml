@@ -48,6 +48,7 @@ on:
 
 permissions:
   contents: write        # commits the coverage it scrapes; see "Publish" below
+  actions: write         # deletes the state caches it replaces; see "Prune" below
 
 concurrency:
   group: scrape
@@ -226,6 +227,33 @@ jobs:
         with:
           path: .scrape-state
           key: scrape-state-${{ github.run_id }}-${{ github.run_attempt }}
+
+      # Prune. A unique key per run means nothing is ever overwritten, so
+      # nothing was ever removed either: 261 entries of about 47MB had piled
+      # up, the repository's cache stood at 10.19GB against a 10GB limit, and
+      # GitHub evicts the least recently used to stay under it. What it evicted
+      # was the npm cache -- used by one workflow rather than six times an hour
+      # -- so `npm ci` in Validate rebuilt itself from the network at 208
+      # seconds a time instead of restoring in 2.
+      #
+      # Two kept, not one: the newest is this run's, and the one behind it is
+      # what a run still in flight would restore from.
+      - name: Prune older state caches
+        if: always() && steps.cadence.outputs.check == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh api --paginate "repos/$REPO/actions/caches?per_page=100" \
+            --jq '.actions_caches[] | select(.key | startswith("scrape-state-"))
+                  | [.created_at, .id] | @tsv' \
+            | sort -r | tail -n +3 | cut -f2 > stale.txt
+          count=$(wc -l < stale.txt | tr -d ' ')
+          while read -r id; do
+            [ -n "$id" ] && gh api -X DELETE "repos/$REPO/actions/caches/$id" >/dev/null || true
+          done < stale.txt
+          rm -f stale.txt
+          echo "Pruned $count older state cache(s)." >> "$GITHUB_STEP_SUMMARY"
 
   # The push above cannot deploy itself: GitHub does not start workflows for
   # pushes made with GITHUB_TOKEN. So the deploy is called directly, against main
