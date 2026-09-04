@@ -151,9 +151,27 @@ def scraped(root: str | Path) -> set[str]:
     return {d.name for d in root.iterdir() if (d / "rounds.json").is_file()}
 
 
-def count_posts(root: str | Path, slug: str) -> int:
+def count_posts(root: str | Path, slug: str) -> tuple[int, dict[str, int]]:
+    """How many posts this event has, and how many of each kind.
+
+    Both, because the page needs both and neither can be worked out from the
+    other. The total is what an event says it holds; the breakdown is what a
+    filtered list needs in order to leave out an event with nothing of the
+    kind being asked for -- without it the list can only find that out by
+    fetching, which meant a group vanishing the moment it was opened.
+
+    Six numbers per event. It does not grow with the coverage, which is the
+    rule this manifest is kept to.
+    """
     p = posts_path(root, slug)
-    return len(json.loads(p.read_text(encoding="utf-8"))) if p.is_file() else 0
+    if not p.is_file():
+        return 0, {}
+    posts = json.loads(p.read_text(encoding="utf-8"))
+    kinds: dict[str, int] = {}
+    for post in posts:
+        if kind := post.get("kind"):
+            kinds[kind] = kinds.get(kind, 0) + 1
+    return len(posts), dict(sorted(kinds.items()))
 
 
 def behind(root: str | Path, version: int) -> set[str]:
@@ -210,7 +228,8 @@ def champions(event: dict) -> list[dict]:
     return out
 
 
-def summarise(slug: str, event: dict, posts: int = 0) -> dict:
+def summarise(slug: str, event: dict, posts: int = 0,
+              kinds: dict[str, int] | None = None) -> dict:
     """The manifest's entry for one event: enough to list and choose it, and
     nothing that would make the manifest grow with the coverage."""
     return {
@@ -229,6 +248,9 @@ def summarise(slug: str, event: dict, posts: int = 0) -> dict:
         # opened, so without this it could only count what it had already
         # loaded -- and a total that climbs as you read is worse than none.
         "postCount": posts,
+        # And how many of each. What lets a filtered list know an event has no
+        # deck profiles without fetching its coverage to find out.
+        **({"kinds": kinds} if kinds else {}),
         # Only where there is one. Most events have no champion on record, and
         # an empty list on every one of them is weight in a file the page
         # fetches before anything is on screen.
@@ -470,7 +492,7 @@ def build_manifest(root: str | Path) -> dict:
         event = json.loads(rounds_path(root, slug).read_text(encoding="utf-8"))
         for name in names_in(event):
             seated[name].add(slug)
-        events.append(summarise(slug, event, count_posts(root, slug)))
+        events.append(summarise(slug, event, *count_posts(root, slug)))
     events.sort(key=lambda e: (e["updated"] or "", e["slug"]), reverse=True)
 
     # Who is who, once every event has been read: a Duelist written two ways

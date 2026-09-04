@@ -965,6 +965,52 @@ class TestTheFeedStatesTheKind(unittest.TestCase):
         self.assertNotIn('domain="kind"', xml)
 
 
+class TestTheManifestSaysWhatAnEventHolds(unittest.TestCase):
+    """Per-kind counts, so a filtered list need not open an event to find out."""
+
+    def archive(self, tmp, posts):
+        import archive
+        archive.write_event(tmp, "ycs", {"event": "YCS", "formats": []}, posts)
+        return archive
+
+    def test_the_kinds_are_counted_beside_the_total(self):
+        import json, tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            a = self.archive(tmp, [{"url": "https://x/1/", "kind": "pairings"},
+                                   {"url": "https://x/2/", "kind": "pairings"},
+                                   {"url": "https://x/3/", "kind": "deck"}])
+            total, kinds = a.count_posts(tmp, "ycs")
+            self.assertEqual(total, 3)
+            self.assertEqual(kinds, {"deck": 1, "pairings": 2})
+
+    def test_a_post_with_no_kind_is_counted_in_the_total_only(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            a = self.archive(tmp, [{"url": "https://x/1/"},
+                                   {"url": "https://x/2/", "kind": "deck"}])
+            self.assertEqual(a.count_posts(tmp, "ycs"), (2, {"deck": 1}))
+
+    def test_the_manifest_carries_them(self):
+        # The whole point: the page reads this file before anything is on
+        # screen, and an event with no deck profiles must never be offered
+        # under the deck filter. Without it the list found out by opening the
+        # event, and the group vanished as it opened.
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            a = self.archive(tmp, [{"url": "https://x/1/", "kind": "feature"}])
+            entry = a.build_manifest(tmp)["events"][0]
+            self.assertEqual(entry["postCount"], 1)
+            self.assertEqual(entry["kinds"], {"feature": 1})
+
+    def test_an_event_with_no_posts_carries_no_counts(self):
+        # Weight in a file fetched before anything is drawn. An empty map says
+        # nothing an absent one does not.
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            a = self.archive(tmp, [])
+            self.assertNotIn("kinds", a.build_manifest(tmp)["events"][0])
+
+
 class TestStatusAnnotations(unittest.TestCase):
     """Reading the round a player left, rather than counting their appearances."""
 

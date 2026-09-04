@@ -9,6 +9,11 @@
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-tcg-world-championship-2026/rounds.json",
       "postCount": 17,
+      "kinds": {
+        "deck": 1,
+        "pairings": 9,
+        "standings": 7
+      },
       "formats": [
         {
           "format": null,
@@ -27,6 +32,14 @@
       "coverageBy": "Konami",
       "path": "events/2026-08-quebec/rounds.json",
       "postCount": 137,
+      "kinds": {
+        "deck": 3,
+        "feature": 37,
+        "news": 34,
+        "pairings": 30,
+        "result": 12,
+        "standings": 21
+      },
       "champions": [
         {
           "format": "Advanced",
@@ -63,6 +76,14 @@
       "coverageBy": "Konami",
       "path": "events/2026-north-america-wcq/rounds.json",
       "postCount": 82,
+      "kinds": {
+        "deck": 1,
+        "feature": 17,
+        "news": 25,
+        "pairings": 18,
+        "result": 7,
+        "standings": 14
+      },
       "champions": [
         {
           "format": null,
@@ -88,6 +109,14 @@
       "coverageBy": "Konami",
       "path": "events/2026-north-america-genesys-championship/rounds.json",
       "postCount": 46,
+      "kinds": {
+        "deck": 1,
+        "feature": 11,
+        "news": 4,
+        "pairings": 15,
+        "result": 3,
+        "standings": 12
+      },
       "champions": [
         {
           "format": "Genesys",
@@ -113,6 +142,11 @@
       "coverageBy": "Konami",
       "path": "events/2026-south-america-wcq/rounds.json",
       "postCount": 29,
+      "kinds": {
+        "news": 6,
+        "pairings": 13,
+        "standings": 10
+      },
       "formats": [
         {
           "format": null,
@@ -131,6 +165,12 @@
       "coverageBy": "Konami",
       "path": "events/2026-south-america-genesys-championship/rounds.json",
       "postCount": 24,
+      "kinds": {
+        "news": 4,
+        "pairings": 11,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": "Genesys",
@@ -156,6 +196,12 @@
       "coverageBy": "Konami",
       "path": "events/2026-south-america-dragon-duel-championship/rounds.json",
       "postCount": 17,
+      "kinds": {
+        "news": 3,
+        "pairings": 7,
+        "result": 1,
+        "standings": 6
+      },
       "champions": [
         {
           "format": "Dragon Duel",
@@ -181,6 +227,12 @@
       "coverageBy": "Konami",
       "path": "events/2026-central-america-wcq/rounds.json",
       "postCount": 30,
+      "kinds": {
+        "news": 4,
+        "pairings": 15,
+        "result": 1,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -206,6 +258,12 @@
       "coverageBy": "Konami",
       "path": "events/2026-central-america-genesys-championship/rounds.json",
       "postCount": 23,
+      "kinds": {
+        "news": 3,
+        "pairings": 11,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": "Genesys",
@@ -231,6 +289,12 @@
       "coverageBy": "Konami",
       "path": "events/2026-central-america-dragon-duel-championship/rounds.json",
       "postCount": 18,
+      "kinds": {
+        "news": 3,
+        "pairings": 7,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": "Dragon Duel",
@@ -256,6 +320,14 @@
       "coverageBy": "Konami",
       "path": "events/2026-05-ycs-columbus/rounds.json",
       "postCount": 123,
+      "kinds": {
+        "deck": 2,
+        "feature": 30,
+        "news": 27,
+        "pairings": 31,
+        "result": 10,
+        "standings": 23
+      },
       "champions": [
         {
           "format": "Advanced",
@@ -293,6 +365,12 @@
       "coverageBy": "Konami",
       "path": "events/2026-ycs-cartagena-colombia/rounds.json",
       "postCount": 28,
+      "kinds": {
+        "news": 6,
+        "pairings": 12,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -318,6 +396,14 @@
       "coverageBy": "Konami",
       "path": "events/2026-04-team-ycs-las-vegas/rounds.json",
       "postCount": 72,
+      "kinds": {
+        "deck": 2,
+        "feature": 22,
+        "news": 14,
+        "pairings": 15,
+        "result": 7,
+        "standings": 12
+      },
       "champions": [
         {
           "format": null,
@@ -358,6 +444,12 @@
       "coverageBy": "Konami",
       "path": "events/2026-ycs-guatemala-city-guatemala/rounds.json",
       "postCount": 27,
+      "kinds": {
+        "news": 6,
+        "pairings": 12,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -384,6 +476,12 @@
       "coverageBy": "Konami",
       "path": "events/2026-team-ycs-la-paz-bolivia/rounds.json",
       "postCount": 23,
+      "kinds": {
+        "news": 3,
+        "pairings": 12,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -423,6 +521,14 @@
       "coverageBy": "Konami",
       "path": "events/2026-02-300th-na/rounds.json",
       "postCount": 159,
+      "kinds": {
+        "deck": 2,
+        "feature": 22,
+        "news": 43,
+        "pairings": 46,
+        "result": 9,
+        "standings": 37
+      },
       "champions": [
         {
           "format": "Advanced",
@@ -465,6 +571,12 @@
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-january-2026/rounds.json",
       "postCount": 26,
+      "kinds": {
+        "news": 2,
+        "pairings": 14,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -490,6 +602,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-12-rdycs-na/rounds.json",
       "postCount": 74,
+      "kinds": {
+        "deck": 3,
+        "feature": 16,
+        "news": 21,
+        "pairings": 15,
+        "result": 9,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -516,6 +636,12 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-merida-mexico/rounds.json",
       "postCount": 26,
+      "kinds": {
+        "news": 6,
+        "pairings": 12,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -541,6 +667,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-11-ycs-pittsburgh-pa/rounds.json",
       "postCount": 90,
+      "kinds": {
+        "deck": 2,
+        "feature": 24,
+        "news": 23,
+        "pairings": 17,
+        "result": 10,
+        "standings": 14
+      },
       "champions": [
         {
           "format": null,
@@ -567,6 +701,12 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-sao-paulo-brazil/rounds.json",
       "postCount": 30,
+      "kinds": {
+        "news": 6,
+        "pairings": 13,
+        "result": 1,
+        "standings": 10
+      },
       "formats": [
         {
           "format": null,
@@ -585,6 +725,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-10-ycs-anaheim/rounds.json",
       "postCount": 92,
+      "kinds": {
+        "deck": 1,
+        "feature": 25,
+        "news": 25,
+        "pairings": 17,
+        "result": 11,
+        "standings": 13
+      },
       "champions": [
         {
           "format": null,
@@ -611,6 +759,12 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-lima-peru/rounds.json",
       "postCount": 30,
+      "kinds": {
+        "news": 6,
+        "pairings": 13,
+        "result": 1,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -636,6 +790,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-vancouver/rounds.json",
       "postCount": 80,
+      "kinds": {
+        "deck": 6,
+        "feature": 23,
+        "news": 18,
+        "pairings": 15,
+        "result": 8,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -661,6 +823,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-north-america-wcq/rounds.json",
       "postCount": 95,
+      "kinds": {
+        "deck": 7,
+        "feature": 23,
+        "news": 29,
+        "pairings": 18,
+        "result": 7,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -686,6 +856,12 @@
       "coverageBy": "Konami",
       "path": "events/2025-central-america-wcq/rounds.json",
       "postCount": 23,
+      "kinds": {
+        "news": 2,
+        "pairings": 14,
+        "result": 1,
+        "standings": 6
+      },
       "champions": [
         {
           "format": null,
@@ -711,6 +887,12 @@
       "coverageBy": "Konami",
       "path": "events/2025-south-america-wcq/rounds.json",
       "postCount": 22,
+      "kinds": {
+        "news": 2,
+        "pairings": 13,
+        "result": 1,
+        "standings": 6
+      },
       "champions": [
         {
           "format": null,
@@ -736,6 +918,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-05-ycs-providence/rounds.json",
       "postCount": 88,
+      "kinds": {
+        "deck": 6,
+        "feature": 22,
+        "news": 26,
+        "pairings": 15,
+        "result": 10,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -762,6 +952,12 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-mexico-city-mexico/rounds.json",
       "postCount": 28,
+      "kinds": {
+        "news": 1,
+        "pairings": 15,
+        "result": 1,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -787,6 +983,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-04-ycs-houston/rounds.json",
       "postCount": 80,
+      "kinds": {
+        "deck": 5,
+        "feature": 14,
+        "news": 31,
+        "pairings": 16,
+        "result": 5,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -813,6 +1017,12 @@
       "coverageBy": "Konami",
       "path": "events/2025-ycs-buenos-aires-argentina/rounds.json",
       "postCount": 26,
+      "kinds": {
+        "news": 2,
+        "pairings": 14,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -838,6 +1048,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-03-team-ycs-las-vegas/rounds.json",
       "postCount": 75,
+      "kinds": {
+        "deck": 4,
+        "feature": 23,
+        "news": 18,
+        "pairings": 14,
+        "result": 8,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -878,6 +1096,12 @@
       "coverageBy": "Konami",
       "path": "events/2025-team-ycs-san-salvador-el-salvador/rounds.json",
       "postCount": 20,
+      "kinds": {
+        "news": 2,
+        "pairings": 10,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -917,6 +1141,12 @@
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-february-2025/rounds.json",
       "postCount": 24,
+      "kinds": {
+        "news": 2,
+        "pairings": 12,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -942,6 +1172,14 @@
       "coverageBy": "Konami",
       "path": "events/2025-02-ycs-orlando/rounds.json",
       "postCount": 80,
+      "kinds": {
+        "deck": 6,
+        "feature": 17,
+        "news": 20,
+        "pairings": 18,
+        "result": 8,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -967,6 +1205,14 @@
       "coverageBy": "Konami",
       "path": "events/2024-12-ycs-anaheim/rounds.json",
       "postCount": 77,
+      "kinds": {
+        "deck": 6,
+        "feature": 14,
+        "news": 22,
+        "pairings": 16,
+        "result": 8,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -993,6 +1239,14 @@
       "coverageBy": "Konami",
       "path": "events/2024-11-north-america-remote-duel-ycs/rounds.json",
       "postCount": 51,
+      "kinds": {
+        "deck": 1,
+        "feature": 15,
+        "news": 12,
+        "pairings": 14,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1019,6 +1273,12 @@
       "coverageBy": "Konami",
       "path": "events/2024-ycs-guayaquil-ecuador/rounds.json",
       "postCount": 23,
+      "kinds": {
+        "news": 2,
+        "pairings": 13,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -1044,6 +1304,14 @@
       "coverageBy": "Konami",
       "path": "events/2024-10-ycs-niagara-falls/rounds.json",
       "postCount": 79,
+      "kinds": {
+        "deck": 2,
+        "feature": 20,
+        "news": 23,
+        "pairings": 15,
+        "result": 10,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -1070,6 +1338,11 @@
       "coverageBy": "Konami",
       "path": "events/2024-10-cancun-mexico/rounds.json",
       "postCount": 22,
+      "kinds": {
+        "news": 2,
+        "pairings": 13,
+        "standings": 7
+      },
       "formats": [
         {
           "format": null,
@@ -1089,6 +1362,12 @@
       "coverageBy": "Konami",
       "path": "events/2024-team-ycs-santiago-chile/rounds.json",
       "postCount": 18,
+      "kinds": {
+        "news": 2,
+        "pairings": 9,
+        "result": 1,
+        "standings": 6
+      },
       "formats": [
         {
           "format": null,
@@ -1107,6 +1386,12 @@
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-tcg-world-championship-2024/rounds.json",
       "postCount": 16,
+      "kinds": {
+        "deck": 1,
+        "news": 1,
+        "pairings": 9,
+        "standings": 5
+      },
       "formats": [
         {
           "format": null,
@@ -1125,6 +1410,14 @@
       "coverageBy": "Konami",
       "path": "events/2024-08-ycs-sacramento/rounds.json",
       "postCount": 66,
+      "kinds": {
+        "deck": 5,
+        "feature": 13,
+        "news": 14,
+        "pairings": 15,
+        "result": 12,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -1150,6 +1443,14 @@
       "coverageBy": "Konami",
       "path": "events/2024-north-america-wcq/rounds.json",
       "postCount": 87,
+      "kinds": {
+        "deck": 4,
+        "feature": 22,
+        "news": 32,
+        "pairings": 17,
+        "result": 2,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -1175,6 +1476,11 @@
       "coverageBy": "Konami",
       "path": "events/2024-south-america-wcq/rounds.json",
       "postCount": 24,
+      "kinds": {
+        "news": 1,
+        "pairings": 15,
+        "standings": 8
+      },
       "formats": [
         {
           "format": null,
@@ -1193,6 +1499,12 @@
       "coverageBy": "Konami",
       "path": "events/2024-central-america-wcq/rounds.json",
       "postCount": 28,
+      "kinds": {
+        "news": 2,
+        "pairings": 16,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -1218,6 +1530,14 @@
       "coverageBy": "Konami",
       "path": "events/2024-ycs-indianapolis/rounds.json",
       "postCount": 69,
+      "kinds": {
+        "deck": 4,
+        "feature": 20,
+        "news": 20,
+        "pairings": 12,
+        "result": 4,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -1244,6 +1564,12 @@
       "coverageBy": "Konami",
       "path": "events/2024-ycs-rio-de-janeiro-brazil/rounds.json",
       "postCount": 24,
+      "kinds": {
+        "news": 2,
+        "pairings": 13,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1269,6 +1595,14 @@
       "coverageBy": "Konami",
       "path": "events/2024-ycs-raleigh/rounds.json",
       "postCount": 75,
+      "kinds": {
+        "deck": 5,
+        "feature": 19,
+        "news": 24,
+        "pairings": 15,
+        "result": 4,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1295,6 +1629,12 @@
       "coverageBy": "Konami",
       "path": "events/2024-ycs-guadalajara-mexico/rounds.json",
       "postCount": 25,
+      "kinds": {
+        "news": 2,
+        "pairings": 14,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1321,6 +1661,12 @@
       "coverageBy": "Konami",
       "path": "events/2024-ycs-medellin-colombia/rounds.json",
       "postCount": 23,
+      "kinds": {
+        "news": 2,
+        "pairings": 12,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1346,6 +1692,14 @@
       "coverageBy": "Konami",
       "path": "events/2024-02-team-ycs-las-vegas-nv/rounds.json",
       "postCount": 65,
+      "kinds": {
+        "deck": 2,
+        "feature": 15,
+        "news": 14,
+        "pairings": 14,
+        "result": 13,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -1385,6 +1739,12 @@
       "coverageBy": "Konami",
       "path": "events/2024-undisputed-uds-championship/rounds.json",
       "postCount": 24,
+      "kinds": {
+        "deck": 1,
+        "news": 10,
+        "pairings": 8,
+        "standings": 5
+      },
       "formats": [
         {
           "format": null,
@@ -1404,6 +1764,12 @@
       "coverageBy": "Konami",
       "path": "events/2024-team-ycs-san-jose-costa-rica/rounds.json",
       "postCount": 20,
+      "kinds": {
+        "news": 2,
+        "pairings": 10,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -1443,6 +1809,12 @@
       "coverageBy": "Konami",
       "path": "events/remote-duel-ycs-january-2024/rounds.json",
       "postCount": 25,
+      "kinds": {
+        "news": 2,
+        "pairings": 13,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -1468,6 +1840,14 @@
       "coverageBy": "Konami",
       "path": "events/2023-ycs-richmond/rounds.json",
       "postCount": 57,
+      "kinds": {
+        "deck": 5,
+        "feature": 15,
+        "news": 9,
+        "pairings": 15,
+        "result": 3,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -1493,6 +1873,12 @@
       "coverageBy": "Konami",
       "path": "events/2023-ycs-santa-cruz-de-la-sierra/rounds.json",
       "postCount": 22,
+      "kinds": {
+        "news": 2,
+        "pairings": 12,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -1518,6 +1904,14 @@
       "coverageBy": "Konami",
       "path": "events/2023-ycs-indianapolis/rounds.json",
       "postCount": 65,
+      "kinds": {
+        "deck": 4,
+        "feature": 16,
+        "news": 19,
+        "pairings": 15,
+        "result": 3,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1544,6 +1938,12 @@
       "coverageBy": "Konami",
       "path": "events/2023-ycs-cancun-mexico/rounds.json",
       "postCount": 26,
+      "kinds": {
+        "news": 2,
+        "pairings": 14,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -1569,6 +1969,14 @@
       "coverageBy": "Konami",
       "path": "events/2023-ycs-vancouver/rounds.json",
       "postCount": 59,
+      "kinds": {
+        "deck": 3,
+        "feature": 16,
+        "news": 12,
+        "pairings": 15,
+        "result": 3,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -1594,6 +2002,12 @@
       "coverageBy": "Konami",
       "path": "events/2023-team-ycs-sao-paulo/rounds.json",
       "postCount": 22,
+      "kinds": {
+        "news": 2,
+        "pairings": 11,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1633,6 +2047,13 @@
       "coverageBy": "Konami",
       "path": "events/2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event/rounds.json",
       "postCount": 29,
+      "kinds": {
+        "feature": 12,
+        "news": 11,
+        "pairings": 4,
+        "result": 1,
+        "standings": 1
+      },
       "champions": [
         {
           "format": null,
@@ -1658,6 +2079,14 @@
       "coverageBy": "Konami",
       "path": "events/2023-north-america-wcq/rounds.json",
       "postCount": 85,
+      "kinds": {
+        "deck": 2,
+        "feature": 21,
+        "news": 29,
+        "pairings": 22,
+        "result": 2,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -1683,6 +2112,12 @@
       "coverageBy": "Konami",
       "path": "events/2023-south-america-wcq/rounds.json",
       "postCount": 36,
+      "kinds": {
+        "news": 9,
+        "pairings": 15,
+        "result": 2,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -1708,6 +2143,13 @@
       "coverageBy": "Konami",
       "path": "events/2023-north-america-remote-duel-ycs/rounds.json",
       "postCount": 37,
+      "kinds": {
+        "deck": 1,
+        "feature": 9,
+        "news": 7,
+        "pairings": 13,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -1733,6 +2175,12 @@
       "coverageBy": "Konami",
       "path": "events/2023-central-america-wcq/rounds.json",
       "postCount": 44,
+      "kinds": {
+        "news": 9,
+        "pairings": 16,
+        "result": 1,
+        "standings": 18
+      },
       "champions": [
         {
           "format": null,
@@ -1758,6 +2206,14 @@
       "coverageBy": "Konami",
       "path": "events/2023-05-ycs-philadelphia/rounds.json",
       "postCount": 107,
+      "kinds": {
+        "deck": 4,
+        "feature": 30,
+        "news": 34,
+        "pairings": 16,
+        "result": 12,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -1784,6 +2240,12 @@
       "coverageBy": "Konami",
       "path": "events/2023-ycs-santiago-chile/rounds.json",
       "postCount": 23,
+      "kinds": {
+        "news": 2,
+        "pairings": 13,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -1809,6 +2271,13 @@
       "coverageBy": "Konami",
       "path": "events/2023-250th-ycs-in-los-angeles/rounds.json",
       "postCount": 29,
+      "kinds": {
+        "deck": 5,
+        "news": 3,
+        "pairings": 10,
+        "result": 1,
+        "standings": 10
+      },
       "formats": [
         {
           "format": null,
@@ -1828,6 +2297,12 @@
       "coverageBy": "Konami",
       "path": "events/2023-250th-ycs-in-bogota-colombia/rounds.json",
       "postCount": 25,
+      "kinds": {
+        "news": 1,
+        "pairings": 15,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1854,6 +2329,11 @@
       "coverageBy": "Konami",
       "path": "events/ycs-lima-peru-2023/rounds.json",
       "postCount": 21,
+      "kinds": {
+        "pairings": 12,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1879,6 +2359,14 @@
       "coverageBy": "Konami",
       "path": "events/2023-team-ycs-las-vegas/rounds.json",
       "postCount": 33,
+      "kinds": {
+        "deck": 1,
+        "feature": 5,
+        "news": 3,
+        "pairings": 13,
+        "result": 2,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -1918,6 +2406,12 @@
       "coverageBy": "Konami",
       "path": "events/2023-team-ycs-mexico-city/rounds.json",
       "postCount": 19,
+      "kinds": {
+        "news": 2,
+        "pairings": 10,
+        "result": 1,
+        "standings": 6
+      },
       "formats": [
         {
           "format": null,
@@ -1936,6 +2430,14 @@
       "coverageBy": "Konami",
       "path": "events/2022-remote-duel-ycs-north-america/rounds.json",
       "postCount": 60,
+      "kinds": {
+        "deck": 2,
+        "feature": 19,
+        "news": 16,
+        "pairings": 14,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -1961,6 +2463,14 @@
       "coverageBy": "Konami",
       "path": "events/2022-11-ycs-pasadena/rounds.json",
       "postCount": 54,
+      "kinds": {
+        "deck": 2,
+        "feature": 13,
+        "news": 10,
+        "pairings": 16,
+        "result": 6,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -1986,6 +2496,14 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-minneapolis/rounds.json",
       "postCount": 65,
+      "kinds": {
+        "deck": 1,
+        "feature": 15,
+        "news": 17,
+        "pairings": 16,
+        "result": 5,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -2011,6 +2529,12 @@
       "coverageBy": "Konami",
       "path": "events/2022-team-ycs-quito/rounds.json",
       "postCount": 17,
+      "kinds": {
+        "news": 2,
+        "pairings": 10,
+        "result": 1,
+        "standings": 4
+      },
       "champions": [
         {
           "format": null,
@@ -2050,6 +2574,14 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-niagara-falls/rounds.json",
       "postCount": 68,
+      "kinds": {
+        "deck": 3,
+        "feature": 16,
+        "news": 20,
+        "pairings": 14,
+        "result": 5,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -2075,6 +2607,12 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-rio-de-janeiro/rounds.json",
       "postCount": 25,
+      "kinds": {
+        "news": 2,
+        "pairings": 13,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -2100,6 +2638,14 @@
       "coverageBy": "Konami",
       "path": "events/na-ygoc-2022/rounds.json",
       "postCount": 77,
+      "kinds": {
+        "deck": 2,
+        "feature": 16,
+        "news": 25,
+        "pairings": 17,
+        "result": 9,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -2125,6 +2671,12 @@
       "coverageBy": "Konami",
       "path": "events/south-america-yu-gi-oh-tcg-championship-2022/rounds.json",
       "postCount": 28,
+      "kinds": {
+        "news": 4,
+        "pairings": 14,
+        "result": 1,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -2150,6 +2702,12 @@
       "coverageBy": "Konami",
       "path": "events/central-america-yu-gi-oh-tcg-championship-2022/rounds.json",
       "postCount": 26,
+      "kinds": {
+        "news": 2,
+        "pairings": 15,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -2175,6 +2733,13 @@
       "coverageBy": "Konami",
       "path": "events/202205-ycs-hartford-ct/rounds.json",
       "postCount": 69,
+      "kinds": {
+        "feature": 8,
+        "news": 26,
+        "pairings": 16,
+        "result": 9,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -2201,6 +2766,12 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-guadalajara-mexico/rounds.json",
       "postCount": 25,
+      "kinds": {
+        "news": 2,
+        "pairings": 13,
+        "result": 1,
+        "standings": 9
+      },
       "formats": [
         {
           "format": null,
@@ -2220,6 +2791,11 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-bogota-colombia/rounds.json",
       "postCount": 21,
+      "kinds": {
+        "news": 1,
+        "pairings": 13,
+        "standings": 7
+      },
       "formats": [
         {
           "format": null,
@@ -2238,6 +2814,13 @@
       "coverageBy": "Konami",
       "path": "events/2022-ycs-charlotte/rounds.json",
       "postCount": 53,
+      "kinds": {
+        "deck": 2,
+        "news": 20,
+        "pairings": 15,
+        "result": 7,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -2263,6 +2846,12 @@
       "coverageBy": "Konami",
       "path": "events/2022-02-north-america-remote-duel-ycs/rounds.json",
       "postCount": 25,
+      "kinds": {
+        "news": 1,
+        "pairings": 15,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -2288,6 +2877,11 @@
       "coverageBy": "Konami",
       "path": "events/2022-latin-america-remote-duel-ycs/rounds.json",
       "postCount": 13,
+      "kinds": {
+        "news": 2,
+        "pairings": 7,
+        "standings": 4
+      },
       "formats": [
         {
           "format": null,
@@ -2306,6 +2900,13 @@
       "coverageBy": "Konami",
       "path": "events/2022-january-remote-duel-ycs/rounds.json",
       "postCount": 50,
+      "kinds": {
+        "deck": 1,
+        "news": 5,
+        "pairings": 25,
+        "result": 2,
+        "standings": 17
+      },
       "champions": [
         {
           "format": null,
@@ -2331,6 +2932,12 @@
       "coverageBy": "Konami",
       "path": "events/2020-uds-invitational-bogota/rounds.json",
       "postCount": 27,
+      "kinds": {
+        "news": 1,
+        "pairings": 13,
+        "result": 1,
+        "standings": 12
+      },
       "champions": [
         {
           "format": null,
@@ -2356,6 +2963,13 @@
       "coverageBy": "Konami",
       "path": "events/2020-team-ycs-las-vegas/rounds.json",
       "postCount": 62,
+      "kinds": {
+        "deck": 6,
+        "news": 32,
+        "pairings": 12,
+        "result": 10,
+        "standings": 2
+      },
       "champions": [
         {
           "format": null,
@@ -2396,6 +3010,14 @@
       "coverageBy": "Konami",
       "path": "events/2020-uds-invitational-tulsa-ok/rounds.json",
       "postCount": 58,
+      "kinds": {
+        "deck": 5,
+        "feature": 12,
+        "news": 20,
+        "pairings": 13,
+        "result": 6,
+        "standings": 2
+      },
       "formats": [
         {
           "format": null,
@@ -2414,6 +3036,13 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-pasadena/rounds.json",
       "postCount": 69,
+      "kinds": {
+        "deck": 10,
+        "news": 34,
+        "pairings": 15,
+        "result": 8,
+        "standings": 2
+      },
       "champions": [
         {
           "format": null,
@@ -2439,6 +3068,12 @@
       "coverageBy": "Konami",
       "path": "events/2019-team-ycs-lima-peru/rounds.json",
       "postCount": 19,
+      "kinds": {
+        "news": 2,
+        "pairings": 9,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -2478,6 +3113,12 @@
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-panama-city/rounds.json",
       "postCount": 24,
+      "kinds": {
+        "news": 1,
+        "pairings": 12,
+        "result": 1,
+        "standings": 10
+      },
       "formats": [
         {
           "format": null,
@@ -2496,6 +3137,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-ft-worth/rounds.json",
       "postCount": 74,
+      "kinds": {
+        "deck": 11,
+        "feature": 3,
+        "news": 35,
+        "pairings": 15,
+        "result": 8,
+        "standings": 2
+      },
       "champions": [
         {
           "format": null,
@@ -2521,6 +3170,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-guadalajara/rounds.json",
       "postCount": 52,
+      "kinds": {
+        "deck": 1,
+        "feature": 10,
+        "news": 12,
+        "pairings": 13,
+        "result": 6,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -2546,6 +3203,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-niagara-falls/rounds.json",
       "postCount": 60,
+      "kinds": {
+        "deck": 5,
+        "feature": 16,
+        "news": 19,
+        "pairings": 13,
+        "result": 5,
+        "standings": 2
+      },
       "champions": [
         {
           "format": null,
@@ -2571,6 +3236,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-portland/rounds.json",
       "postCount": 46,
+      "kinds": {
+        "deck": 6,
+        "feature": 5,
+        "news": 15,
+        "pairings": 12,
+        "result": 6,
+        "standings": 2
+      },
       "champions": [
         {
           "format": null,
@@ -2597,6 +3270,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-08-uds-summer-invitational-2019-indianapolis-in/rounds.json",
       "postCount": 95,
+      "kinds": {
+        "deck": 4,
+        "feature": 27,
+        "news": 31,
+        "pairings": 15,
+        "result": 6,
+        "standings": 12
+      },
       "formats": [
         {
           "format": null,
@@ -2615,6 +3296,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-north-america-wcq/rounds.json",
       "postCount": 115,
+      "kinds": {
+        "deck": 2,
+        "feature": 2,
+        "news": 58,
+        "pairings": 23,
+        "result": 6,
+        "standings": 24
+      },
       "champions": [
         {
           "format": "Dragon Duel",
@@ -2651,6 +3340,12 @@
       "coverageBy": "Konami",
       "path": "events/2019-south-america-wcq/rounds.json",
       "postCount": 29,
+      "kinds": {
+        "news": 3,
+        "pairings": 12,
+        "result": 3,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -2676,6 +3371,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-central-america-wcq/rounds.json",
       "postCount": 47,
+      "kinds": {
+        "deck": 1,
+        "feature": 11,
+        "news": 12,
+        "pairings": 12,
+        "result": 2,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -2701,6 +3404,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-knoxville/rounds.json",
       "postCount": 57,
+      "kinds": {
+        "deck": 1,
+        "feature": 17,
+        "news": 19,
+        "pairings": 14,
+        "result": 4,
+        "standings": 2
+      },
       "champions": [
         {
           "format": null,
@@ -2727,6 +3438,12 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-quito-ecuador/rounds.json",
       "postCount": 27,
+      "kinds": {
+        "news": 3,
+        "pairings": 11,
+        "result": 4,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -2753,6 +3470,12 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-guatemala-city-guatemala/rounds.json",
       "postCount": 26,
+      "kinds": {
+        "news": 3,
+        "pairings": 12,
+        "result": 1,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -2779,6 +3502,12 @@
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-medellin-colombia/rounds.json",
       "postCount": 28,
+      "kinds": {
+        "news": 1,
+        "pairings": 13,
+        "result": 3,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -2804,6 +3533,13 @@
       "coverageBy": "Konami",
       "path": "events/2019-03-atlanta-ga/rounds.json",
       "postCount": 55,
+      "kinds": {
+        "deck": 1,
+        "news": 23,
+        "pairings": 10,
+        "result": 8,
+        "standings": 13
+      },
       "champions": [
         {
           "format": null,
@@ -2844,6 +3580,14 @@
       "coverageBy": "Konami",
       "path": "events/2019-uds-invitational-las-vegas-nv/rounds.json",
       "postCount": 56,
+      "kinds": {
+        "deck": 1,
+        "feature": 18,
+        "news": 15,
+        "pairings": 16,
+        "result": 4,
+        "standings": 2
+      },
       "formats": [
         {
           "format": null,
@@ -2862,6 +3606,13 @@
       "coverageBy": "Konami",
       "path": "events/2019-ycs-chicago/rounds.json",
       "postCount": 67,
+      "kinds": {
+        "feature": 18,
+        "news": 26,
+        "pairings": 15,
+        "result": 4,
+        "standings": 4
+      },
       "champions": [
         {
           "format": null,
@@ -2888,6 +3639,13 @@
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-monterrey-mexico/rounds.json",
       "postCount": 30,
+      "kinds": {
+        "deck": 1,
+        "news": 3,
+        "pairings": 13,
+        "result": 1,
+        "standings": 12
+      },
       "formats": [
         {
           "format": null,
@@ -2906,6 +3664,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-11-sao-paulo-brazil/rounds.json",
       "postCount": 110,
+      "kinds": {
+        "deck": 2,
+        "feature": 28,
+        "news": 21,
+        "pairings": 26,
+        "result": 13,
+        "standings": 20
+      },
       "champions": [
         {
           "format": null,
@@ -2931,6 +3697,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-09-200th-ycs-mexico-city-mexico/rounds.json",
       "postCount": 53,
+      "kinds": {
+        "deck": 1,
+        "feature": 13,
+        "news": 7,
+        "pairings": 20,
+        "result": 1,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -2956,6 +3730,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-09-200th-ycs-columbus-oh/rounds.json",
       "postCount": 71,
+      "kinds": {
+        "deck": 1,
+        "feature": 14,
+        "news": 20,
+        "pairings": 16,
+        "result": 8,
+        "standings": 12
+      },
       "champions": [
         {
           "format": null,
@@ -2982,6 +3764,13 @@
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-kansas-city-mo/rounds.json",
       "postCount": 52,
+      "kinds": {
+        "deck": 1,
+        "feature": 15,
+        "news": 12,
+        "pairings": 12,
+        "standings": 12
+      },
       "formats": [
         {
           "format": null,
@@ -3000,6 +3789,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-south-america-wcq/rounds.json",
       "postCount": 46,
+      "kinds": {
+        "deck": 2,
+        "feature": 9,
+        "news": 6,
+        "pairings": 14,
+        "result": 2,
+        "standings": 13
+      },
       "champions": [
         {
           "format": null,
@@ -3031,6 +3828,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-north-america-wcq/rounds.json",
       "postCount": 68,
+      "kinds": {
+        "deck": 1,
+        "feature": 12,
+        "news": 18,
+        "pairings": 14,
+        "result": 7,
+        "standings": 16
+      },
       "champions": [
         {
           "format": null,
@@ -3056,6 +3861,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-central-america-wcq/rounds.json",
       "postCount": 68,
+      "kinds": {
+        "deck": 1,
+        "feature": 14,
+        "news": 21,
+        "pairings": 14,
+        "result": 5,
+        "standings": 13
+      },
       "champions": [
         {
           "format": null,
@@ -3081,6 +3894,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-ycs-secaucus/rounds.json",
       "postCount": 75,
+      "kinds": {
+        "deck": 1,
+        "feature": 21,
+        "news": 28,
+        "pairings": 13,
+        "result": 2,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3107,6 +3928,12 @@
       "coverageBy": "Konami",
       "path": "events/2018-ycs-santiago-chile/rounds.json",
       "postCount": 33,
+      "kinds": {
+        "news": 14,
+        "pairings": 11,
+        "result": 1,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -3132,6 +3959,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-ycs-memphis/rounds.json",
       "postCount": 65,
+      "kinds": {
+        "deck": 1,
+        "feature": 19,
+        "news": 21,
+        "pairings": 12,
+        "result": 2,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3157,6 +3992,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-ycs-salt-lake-city/rounds.json",
       "postCount": 67,
+      "kinds": {
+        "deck": 2,
+        "feature": 19,
+        "news": 21,
+        "pairings": 11,
+        "result": 4,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3183,6 +4026,13 @@
       "coverageBy": "Konami",
       "path": "events/2018-ycs-san-jose-costa-rica/rounds.json",
       "postCount": 29,
+      "kinds": {
+        "deck": 1,
+        "news": 9,
+        "pairings": 10,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -3209,6 +4059,13 @@
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-santa-cruz-de-la-sierra-bolivia/rounds.json",
       "postCount": 27,
+      "kinds": {
+        "deck": 2,
+        "news": 2,
+        "pairings": 11,
+        "result": 2,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3235,6 +4092,13 @@
       "coverageBy": "Konami",
       "path": "events/2018-uds-invitational-sacramento-ca/rounds.json",
       "postCount": 58,
+      "kinds": {
+        "deck": 1,
+        "feature": 21,
+        "news": 12,
+        "pairings": 12,
+        "standings": 12
+      },
       "formats": [
         {
           "format": null,
@@ -3253,6 +4117,14 @@
       "coverageBy": "Konami",
       "path": "events/2018-ycs-atlanta/rounds.json",
       "postCount": 72,
+      "kinds": {
+        "deck": 1,
+        "feature": 25,
+        "news": 19,
+        "pairings": 15,
+        "result": 2,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3278,6 +4150,13 @@
       "coverageBy": "Konami",
       "path": "events/201712-buenos-aires-argentina/rounds.json",
       "postCount": 35,
+      "kinds": {
+        "deck": 1,
+        "news": 9,
+        "pairings": 12,
+        "result": 2,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -3303,6 +4182,14 @@
       "coverageBy": "Konami",
       "path": "events/201711-san-diego-ca/rounds.json",
       "postCount": 51,
+      "kinds": {
+        "deck": 2,
+        "feature": 8,
+        "news": 14,
+        "pairings": 14,
+        "result": 4,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -3328,6 +4215,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-trinidad-and-tobago/rounds.json",
       "postCount": 25,
+      "kinds": {
+        "deck": 2,
+        "news": 3,
+        "pairings": 11,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -3353,6 +4247,14 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-dallas/rounds.json",
       "postCount": 68,
+      "kinds": {
+        "deck": 1,
+        "feature": 16,
+        "news": 20,
+        "pairings": 16,
+        "result": 4,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -3379,6 +4281,14 @@
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-kissimmee-fl/rounds.json",
       "postCount": 55,
+      "kinds": {
+        "deck": 1,
+        "feature": 15,
+        "news": 13,
+        "pairings": 12,
+        "result": 2,
+        "standings": 12
+      },
       "formats": [
         {
           "format": null,
@@ -3397,6 +4307,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-toronto/rounds.json",
       "postCount": 49,
+      "kinds": {
+        "feature": 11,
+        "news": 10,
+        "pairings": 14,
+        "result": 4,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3422,6 +4339,14 @@
       "coverageBy": "Konami",
       "path": "events/2017-north-american-wcq/rounds.json",
       "postCount": 47,
+      "kinds": {
+        "deck": 1,
+        "feature": 5,
+        "news": 13,
+        "pairings": 13,
+        "result": 2,
+        "standings": 13
+      },
       "formats": [
         {
           "format": null,
@@ -3440,6 +4365,12 @@
       "coverageBy": "Konami",
       "path": "events/2017-south-american-wcq/rounds.json",
       "postCount": 39,
+      "kinds": {
+        "news": 10,
+        "pairings": 12,
+        "result": 5,
+        "standings": 12
+      },
       "champions": [
         {
           "format": "Dragon Duel",
@@ -3476,6 +4407,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-central-american-wcq/rounds.json",
       "postCount": 64,
+      "kinds": {
+        "feature": 12,
+        "news": 21,
+        "pairings": 12,
+        "result": 6,
+        "standings": 13
+      },
       "champions": [
         {
           "format": null,
@@ -3501,6 +4439,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-pittsburgh/rounds.json",
       "postCount": 61,
+      "kinds": {
+        "feature": 17,
+        "news": 16,
+        "pairings": 14,
+        "result": 5,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -3527,6 +4472,12 @@
       "coverageBy": "Konami",
       "path": "events/201704-ycs-bogota-colombia/rounds.json",
       "postCount": 35,
+      "kinds": {
+        "news": 7,
+        "pairings": 10,
+        "result": 8,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3552,6 +4503,14 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-denver/rounds.json",
       "postCount": 46,
+      "kinds": {
+        "deck": 1,
+        "feature": 2,
+        "news": 17,
+        "pairings": 14,
+        "result": 4,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -3577,6 +4536,12 @@
       "coverageBy": "Konami",
       "path": "events/201703-uds-winter-invitational-las-vegas/rounds.json",
       "postCount": 57,
+      "kinds": {
+        "news": 25,
+        "pairings": 14,
+        "result": 3,
+        "standings": 15
+      },
       "formats": [
         {
           "format": null,
@@ -3596,6 +4561,12 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-guatemala-city-guatemala/rounds.json",
       "postCount": 28,
+      "kinds": {
+        "news": 5,
+        "pairings": 9,
+        "result": 5,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -3622,6 +4593,13 @@
       "coverageBy": "Konami",
       "path": "events/2017-uds-invitational-lima-peru/rounds.json",
       "postCount": 34,
+      "kinds": {
+        "deck": 2,
+        "news": 8,
+        "pairings": 9,
+        "result": 3,
+        "standings": 12
+      },
       "formats": [
         {
           "format": null,
@@ -3640,6 +4618,14 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-atlanta/rounds.json",
       "postCount": 65,
+      "kinds": {
+        "deck": 3,
+        "feature": 3,
+        "news": 24,
+        "pairings": 16,
+        "result": 6,
+        "standings": 13
+      },
       "champions": [
         {
           "format": null,
@@ -3665,6 +4651,14 @@
       "coverageBy": "Konami",
       "path": "events/2017-ycs-seattle/rounds.json",
       "postCount": 38,
+      "kinds": {
+        "deck": 3,
+        "feature": 4,
+        "news": 13,
+        "pairings": 6,
+        "result": 4,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -3690,6 +4684,13 @@
       "coverageBy": "Konami",
       "path": "events/201611-anaheim-ca/rounds.json",
       "postCount": 51,
+      "kinds": {
+        "feature": 4,
+        "news": 20,
+        "pairings": 10,
+        "result": 7,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3715,6 +4716,12 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-rio-de-janeiro/rounds.json",
       "postCount": 27,
+      "kinds": {
+        "news": 5,
+        "pairings": 9,
+        "result": 4,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -3740,6 +4747,13 @@
       "coverageBy": "Konami",
       "path": "events/uds-2016-elsalvador/rounds.json",
       "postCount": 27,
+      "kinds": {
+        "deck": 2,
+        "news": 5,
+        "pairings": 10,
+        "result": 2,
+        "standings": 8
+      },
       "formats": [
         {
           "format": null,
@@ -3758,6 +4772,14 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-minneapolis/rounds.json",
       "postCount": 56,
+      "kinds": {
+        "deck": 3,
+        "feature": 16,
+        "news": 18,
+        "pairings": 10,
+        "result": 3,
+        "standings": 6
+      },
       "champions": [
         {
           "format": null,
@@ -3783,6 +4805,13 @@
       "coverageBy": "Konami",
       "path": "events/2016-uds-invitational-chicago/rounds.json",
       "postCount": 43,
+      "kinds": {
+        "feature": 8,
+        "news": 7,
+        "pairings": 12,
+        "result": 8,
+        "standings": 8
+      },
       "formats": [
         {
           "format": null,
@@ -3801,6 +4830,14 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-mexico-city/rounds.json",
       "postCount": 57,
+      "kinds": {
+        "deck": 3,
+        "feature": 11,
+        "news": 19,
+        "pairings": 8,
+        "result": 5,
+        "standings": 11
+      },
       "champions": [
         {
           "format": null,
@@ -3826,6 +4863,13 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-toronto/rounds.json",
       "postCount": 50,
+      "kinds": {
+        "feature": 13,
+        "news": 11,
+        "pairings": 14,
+        "result": 2,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3851,6 +4895,13 @@
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-world-championship-2016/rounds.json",
       "postCount": 58,
+      "kinds": {
+        "deck": 4,
+        "news": 24,
+        "pairings": 14,
+        "result": 5,
+        "standings": 11
+      },
       "champions": [
         {
           "format": "Dragon Duel",
@@ -3887,6 +4938,14 @@
       "coverageBy": "Konami",
       "path": "events/2016-north-american-wcq/rounds.json",
       "postCount": 63,
+      "kinds": {
+        "deck": 6,
+        "feature": 11,
+        "news": 13,
+        "pairings": 13,
+        "result": 8,
+        "standings": 12
+      },
       "champions": [
         {
           "format": "Dragon Duel",
@@ -3923,6 +4982,14 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-origins/rounds.json",
       "postCount": 43,
+      "kinds": {
+        "deck": 1,
+        "feature": 6,
+        "news": 21,
+        "pairings": 4,
+        "result": 3,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -3948,6 +5015,13 @@
       "coverageBy": "Konami",
       "path": "events/2016-sa-wcq/rounds.json",
       "postCount": 37,
+      "kinds": {
+        "feature": 9,
+        "news": 13,
+        "pairings": 4,
+        "result": 1,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -3973,6 +5047,13 @@
       "coverageBy": "Konami",
       "path": "events/wcq-2016-mexico/rounds.json",
       "postCount": 33,
+      "kinds": {
+        "feature": 9,
+        "news": 9,
+        "pairings": 5,
+        "result": 3,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -3998,6 +5079,14 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-providence-rhode-island/rounds.json",
       "postCount": 44,
+      "kinds": {
+        "deck": 1,
+        "feature": 24,
+        "news": 1,
+        "pairings": 4,
+        "result": 6,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -4024,6 +5113,12 @@
       "coverageBy": "Konami",
       "path": "events/201603-santiago-chile/rounds.json",
       "postCount": 24,
+      "kinds": {
+        "news": 10,
+        "pairings": 3,
+        "result": 4,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -4050,6 +5145,14 @@
       "coverageBy": "Konami",
       "path": "events/2016-ycs-houston-texas/rounds.json",
       "postCount": 37,
+      "kinds": {
+        "deck": 1,
+        "feature": 25,
+        "news": 1,
+        "pairings": 2,
+        "result": 6,
+        "standings": 2
+      },
       "champions": [
         {
           "format": null,
@@ -4075,6 +5178,12 @@
       "coverageBy": "Konami",
       "path": "events/2016-yu-gi-oh-championship-series-san-jose-costa-rica/rounds.json",
       "postCount": 8,
+      "kinds": {
+        "news": 1,
+        "pairings": 2,
+        "result": 1,
+        "standings": 4
+      },
       "champions": [
         {
           "format": null,
@@ -4100,6 +5209,14 @@
       "coverageBy": "Konami",
       "path": "events/2016-yu-gi-oh-championship-series-atlanta-georgia/rounds.json",
       "postCount": 31,
+      "kinds": {
+        "deck": 1,
+        "feature": 17,
+        "news": 1,
+        "pairings": 2,
+        "result": 4,
+        "standings": 6
+      },
       "champions": [
         {
           "format": null,
@@ -4125,6 +5242,12 @@
       "coverageBy": "Konami",
       "path": "events/201509-monterrey/rounds.json",
       "postCount": 14,
+      "kinds": {
+        "news": 5,
+        "pairings": 2,
+        "result": 1,
+        "standings": 6
+      },
       "champions": [
         {
           "format": null,
@@ -4150,6 +5273,13 @@
       "coverageBy": "Konami",
       "path": "events/2015-south-american-wcq/rounds.json",
       "postCount": 27,
+      "kinds": {
+        "deck": 1,
+        "news": 9,
+        "pairings": 4,
+        "result": 4,
+        "standings": 9
+      },
       "formats": [
         {
           "format": null,
@@ -4168,6 +5298,14 @@
       "coverageBy": "Konami",
       "path": "events/2015-north-american-wcq/rounds.json",
       "postCount": 54,
+      "kinds": {
+        "deck": 1,
+        "feature": 15,
+        "news": 20,
+        "pairings": 7,
+        "result": 1,
+        "standings": 10
+      },
       "champions": [
         {
           "format": "Dragon Duel",
@@ -4199,6 +5337,13 @@
       "coverageBy": "Konami",
       "path": "events/2015-central-american-wcq/rounds.json",
       "postCount": 48,
+      "kinds": {
+        "feature": 14,
+        "news": 15,
+        "pairings": 5,
+        "result": 5,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -4224,6 +5369,13 @@
       "coverageBy": "Konami",
       "path": "events/2015-150th-ycs-in-columbus/rounds.json",
       "postCount": 31,
+      "kinds": {
+        "feature": 12,
+        "news": 1,
+        "pairings": 5,
+        "result": 1,
+        "standings": 12
+      },
       "formats": [
         {
           "format": null,
@@ -4243,6 +5395,13 @@
       "coverageBy": "Konami",
       "path": "events/201504-bogota-d-c-colombia/rounds.json",
       "postCount": 28,
+      "kinds": {
+        "deck": 1,
+        "news": 15,
+        "pairings": 3,
+        "result": 3,
+        "standings": 6
+      },
       "champions": [
         {
           "format": null,
@@ -4268,6 +5427,12 @@
       "coverageBy": "Konami",
       "path": "events/2015-ycs-chicago/rounds.json",
       "postCount": 31,
+      "kinds": {
+        "feature": 21,
+        "news": 1,
+        "pairings": 2,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -4293,6 +5458,12 @@
       "coverageBy": "Konami",
       "path": "events/201503-guatemala/rounds.json",
       "postCount": 12,
+      "kinds": {
+        "news": 5,
+        "pairings": 1,
+        "result": 1,
+        "standings": 5
+      },
       "champions": [
         {
           "format": null,
@@ -4318,6 +5489,14 @@
       "coverageBy": "Konami",
       "path": "events/2015-ycs-tacoma/rounds.json",
       "postCount": 44,
+      "kinds": {
+        "deck": 1,
+        "feature": 26,
+        "news": 1,
+        "pairings": 5,
+        "result": 7,
+        "standings": 4
+      },
       "champions": [
         {
           "format": null,
@@ -4343,6 +5522,14 @@
       "coverageBy": "Konami",
       "path": "events/2015-ycs-charleston/rounds.json",
       "postCount": 33,
+      "kinds": {
+        "deck": 1,
+        "feature": 19,
+        "news": 1,
+        "pairings": 3,
+        "result": 2,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -4368,6 +5555,12 @@
       "coverageBy": "Konami",
       "path": "events/2014-ycs-dallas/rounds.json",
       "postCount": 16,
+      "kinds": {
+        "news": 1,
+        "pairings": 6,
+        "result": 1,
+        "standings": 8
+      },
       "champions": [
         {
           "format": null,
@@ -4394,6 +5587,12 @@
       "coverageBy": "Konami",
       "path": "events/2014-ycs-lima-peru/rounds.json",
       "postCount": 8,
+      "kinds": {
+        "news": 1,
+        "pairings": 1,
+        "result": 1,
+        "standings": 5
+      },
       "formats": [
         {
           "format": null,
@@ -4412,6 +5611,14 @@
       "coverageBy": "Konami",
       "path": "events/2014-ycs-toronto/rounds.json",
       "postCount": 26,
+      "kinds": {
+        "deck": 3,
+        "feature": 13,
+        "news": 1,
+        "pairings": 1,
+        "result": 1,
+        "standings": 7
+      },
       "formats": [
         {
           "format": null,
@@ -4430,6 +5637,13 @@
       "coverageBy": "Konami",
       "path": "events/2014-north-american-wcq/rounds.json",
       "postCount": 78,
+      "kinds": {
+        "feature": 23,
+        "news": 33,
+        "pairings": 11,
+        "result": 1,
+        "standings": 10
+      },
       "champions": [
         {
           "format": null,
@@ -4461,6 +5675,14 @@
       "coverageBy": "Konami",
       "path": "events/2014-wcq-ca/rounds.json",
       "postCount": 48,
+      "kinds": {
+        "deck": 2,
+        "feature": 11,
+        "news": 17,
+        "pairings": 2,
+        "result": 3,
+        "standings": 13
+      },
       "champions": [
         {
           "format": null,
@@ -4486,6 +5708,13 @@
       "coverageBy": "Konami",
       "path": "events/2013-south-american-wcq-championships/rounds.json",
       "postCount": 30,
+      "kinds": {
+        "deck": 1,
+        "news": 17,
+        "pairings": 1,
+        "result": 4,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -4511,6 +5740,13 @@
       "coverageBy": "Konami",
       "path": "events/2014-ycs-philadelphia-pa/rounds.json",
       "postCount": 35,
+      "kinds": {
+        "feature": 20,
+        "news": 1,
+        "pairings": 3,
+        "result": 2,
+        "standings": 9
+      },
       "formats": [
         {
           "format": null,
@@ -4529,6 +5765,12 @@
       "coverageBy": "Konami",
       "path": "events/2014-ycs-mexico-d-f/rounds.json",
       "postCount": 14,
+      "kinds": {
+        "news": 1,
+        "pairings": 4,
+        "result": 4,
+        "standings": 5
+      },
       "champions": [
         {
           "format": null,
@@ -4554,6 +5796,12 @@
       "coverageBy": "Konami",
       "path": "events/yu-gi-oh-world-championship-2013/rounds.json",
       "postCount": 20,
+      "kinds": {
+        "news": 11,
+        "pairings": 6,
+        "result": 1,
+        "standings": 2
+      },
       "champions": [
         {
           "format": null,
@@ -4579,6 +5827,13 @@
       "coverageBy": "Konami",
       "path": "events/2013-north-american-wcq/rounds.json",
       "postCount": 76,
+      "kinds": {
+        "feature": 25,
+        "news": 36,
+        "pairings": 3,
+        "result": 3,
+        "standings": 9
+      },
       "champions": [
         {
           "format": null,
@@ -4610,6 +5865,13 @@
       "coverageBy": "Konami",
       "path": "events/2013-central-american-wcq/rounds.json",
       "postCount": 19,
+      "kinds": {
+        "deck": 1,
+        "news": 7,
+        "pairings": 2,
+        "result": 2,
+        "standings": 7
+      },
       "champions": [
         {
           "format": null,
@@ -4636,6 +5898,13 @@
       "coverageBy": "Konami",
       "path": "events/2013-yu-gi-oh-championship-series-san-diego-california/rounds.json",
       "postCount": 38,
+      "kinds": {
+        "feature": 21,
+        "news": 1,
+        "pairings": 4,
+        "result": 3,
+        "standings": 9
+      },
       "formats": [
         {
           "format": null,
@@ -4654,6 +5923,13 @@
       "coverageBy": "Konami",
       "path": "events/2012-ycs-indianapolis/rounds.json",
       "postCount": 22,
+      "kinds": {
+        "feature": 12,
+        "news": 1,
+        "pairings": 1,
+        "result": 5,
+        "standings": 3
+      },
       "champions": [
         {
           "format": null,
@@ -4679,6 +5955,12 @@
       "coverageBy": "Konami",
       "path": "events/2012-central-american-wcq/rounds.json",
       "postCount": 14,
+      "kinds": {
+        "news": 10,
+        "pairings": 1,
+        "result": 2,
+        "standings": 1
+      },
       "champions": [
         {
           "format": null,
@@ -4705,6 +5987,12 @@
       "coverageBy": "Konami",
       "path": "events/2012-yu-gi-oh-championship-series-lima-peru/rounds.json",
       "postCount": 18,
+      "kinds": {
+        "news": 1,
+        "pairings": 4,
+        "result": 9,
+        "standings": 4
+      },
       "formats": [
         {
           "format": null,
@@ -4723,6 +6011,13 @@
       "coverageBy": "Konami",
       "path": "events/2011-ycs-kansas-city/rounds.json",
       "postCount": 19,
+      "kinds": {
+        "feature": 7,
+        "news": 1,
+        "pairings": 3,
+        "result": 2,
+        "standings": 6
+      },
       "formats": [
         {
           "format": null,
@@ -4741,6 +6036,12 @@
       "coverageBy": "Konami",
       "path": "events/11-10-columbus/rounds.json",
       "postCount": 50,
+      "kinds": {
+        "feature": 6,
+        "news": 35,
+        "pairings": 2,
+        "standings": 7
+      },
       "formats": [
         {
           "format": null,
@@ -4759,6 +6060,13 @@
       "coverageBy": "Konami",
       "path": "events/11-06-indianapolis/rounds.json",
       "postCount": 33,
+      "kinds": {
+        "deck": 4,
+        "feature": 12,
+        "news": 10,
+        "pairings": 1,
+        "standings": 6
+      },
       "formats": [
         {
           "format": null,
@@ -4777,6 +6085,13 @@
       "coverageBy": "Konami",
       "path": "events/2011-south-american-wcq/rounds.json",
       "postCount": 10,
+      "kinds": {
+        "deck": 1,
+        "news": 5,
+        "pairings": 1,
+        "result": 2,
+        "standings": 1
+      },
       "champions": [
         {
           "format": null,
@@ -4802,6 +6117,11 @@
       "coverageBy": "Konami",
       "path": "events/wcs-2010/rounds.json",
       "postCount": 12,
+      "kinds": {
+        "news": 6,
+        "pairings": 5,
+        "standings": 1
+      },
       "formats": [
         {
           "format": null,

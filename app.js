@@ -968,6 +968,24 @@ function eventHeadline(event, title){
    An event the feed names but the archive does not is kept as well. It should
    not happen, since the feed is built from the archive, and if it ever does the
    coverage is real and hiding it would be the wrong way round. */
+/* Whether an unopened event could hold what the filter asks for.
+
+   Only the kind filter is answerable from the manifest: a search matches post
+   titles, and an event's titles are not here until it is opened. So a search
+   keeps the old answer -- list it, because hiding every unopened event would
+   empty the list -- and the group stays listed once opened either way. */
+/* Why an opened event is showing no coverage. */
+function nothingHere(){
+  if (query) return 'Nothing in this event matches that search.';
+  if (filter !== 'all') return `Nothing filed as ${kindOf(filter).label} in this event.`;
+  return 'No coverage is published for this event.';
+}
+
+function couldMatch(ev, filter){
+  if (filter === 'all' || !ev.kinds) return true;
+  return (ev.kinds[filter] ?? 0) > 0;
+}
+
 function coverageEvents(){
   const fromFeed = new Map();
   for (const g of EVENTS) fromFeed.set(g.slug ?? g.event, g);
@@ -987,6 +1005,11 @@ function coverageEvents(){
       /* What the manifest says the event has, which is not the same as what is
          to hand: an unopened event has a count and no posts. */
       total: e.postCount,
+      /* And how many of each kind, so a filtered list can leave out an event
+         with none of what is being asked for rather than finding that out by
+         opening it. Absent on a manifest written before this, and then the
+         list falls back to keeping the event, which is what it used to do. */
+      kinds: e.kinds ?? null,
     };
   });
   for (const g of fromFeed.values())
@@ -1697,7 +1720,19 @@ function renderEvents(){
     posts: ev.posts.filter(p =>
       (filter === 'all' || p.kind === filter) && inChosenFormat(p)
       && inSelectedFormat(p) && hit(p.title, ev.event)),
-  })).filter(ev => ev.posts.length || (!ev.loaded && hit(ev.event)));
+  })).filter(ev =>
+    ev.posts.length
+    /* An event the reader has open stays open, where it is a filter that
+       emptied it. Dropping the row out from under the cursor is how the answer
+       to "what is in here" used to be delivered. Not when nothing is being
+       filtered: an event with no coverage at all is not a filter's doing, and
+       listing it would put every empty event on the page. */
+    || (open.has(ev.event) && (!!query || filter !== 'all'))
+    /* Otherwise, one whose posts are not here yet -- but only when it could
+       still hold what is being asked for. The manifest says how many of each
+       kind an event has, so an event with no deck profiles is never offered
+       under the deck filter, rather than offered and then withdrawn. */
+    || (!ev.loaded && hit(ev.event) && couldMatch(ev, filter)));
 
   /* A handful to begin with, and the rest on request. Fifty-two events is a
      long way to scroll past to reach anything else on the page. */
@@ -1710,8 +1745,15 @@ function renderEvents(){
      an event whose posts have been fetched has any, so those report what they
      actually matched instead of a total they cannot yet know. */
   const narrowed = !!query || filter !== 'all';
-  const posts = matching.reduce(
-    (n, g) => n + (narrowed ? g.posts.length : (g.total ?? g.posts.length)), 0);
+  /* A kind filter is now answerable without opening anything: the manifest
+     says how many of each kind every event holds. A search is not -- it reads
+     post titles, and an unopened event has none here -- so that one still
+     reports what it has actually matched. */
+  const countable = !query && filter !== 'all';
+  const posts = matching.reduce((n, g) => n + (
+    countable ? (g.kinds ? (g.kinds[filter] ?? 0) : g.posts.length)
+    : narrowed ? g.posts.length
+    : (g.total ?? g.posts.length)), 0);
   countEl.textContent = matching.length
     ? `${matching.length} event${matching.length > 1 ? 's' : ''} · ${posts.toLocaleString()} `
       + (narrowed ? 'matching' : `update${posts === 1 ? '' : 's'}`)
@@ -1752,6 +1794,11 @@ function renderEvents(){
                  data-open-event="${esc(ev.slug)}">Show this event's rounds</button></div>`
             : ''}
         ${!ev.loaded ? `<p class="post loading"><i aria-hidden="true"></i>Loading coverage…</p>` : ''}
+        ${/* Opened, and holding nothing the filter asks for. Said rather than
+              shown by the row disappearing: a group the reader opened stays
+              open, and this is the answer they opened it for. */
+          ev.loaded && !ev.posts.length
+            ? `<p class="post post--none">${esc(nothingHere())}</p>` : ''}
         ${ev.posts.map(p => `<div class="post" style="--k:${kindOf(p.kind).color}">
           <span class="post__k">${esc(kindOf(p.kind).label)}</span>
           ${(() => {
