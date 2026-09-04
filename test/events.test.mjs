@@ -870,3 +870,78 @@ test('the round still comes from the headline, which posts.json does not store',
   await waitFor(page, `POSTS.has('${OLDER.slug}')`);
   assert.equal(page.json(`POSTS.get('${OLDER.slug}')[0].round`), 'Top 8');
 });
+
+
+/* A filtered list that knows what it holds.
+ *
+ * An event stayed in a filtered list on the strength of not having been
+ * loaded yet -- which was the only honest answer available, because only an
+ * opened event had any posts to match. But opening it is what loads it, so
+ * the group opened, found nothing of that kind, failed both halves of the
+ * test and was dropped: the answer to "what is in here" was delivered by the
+ * row vanishing from under the cursor.
+ *
+ * The manifest now says how many posts of each kind every event holds, which
+ * is six numbers per event and does not grow with the coverage.
+ */
+const KINDED = (kinds) => ({
+  'events.json': { status: 200, body: JSON.stringify({ events: [
+    { ...SAMPLE, postCount: 1, kinds: { pairings: 1 } },
+    { ...OLDER, postCount: 2, kinds },
+  ] }) },
+});
+
+test('an event with none of the kind asked for is never offered', async (t) => {
+  const page = await loadPage(withPosts(KINDED({ pairings: 2 })));
+  t.after(() => page.close());
+  page.run(`filter = 'deck'; renderEvents()`);
+  assert.equal(bars(page).includes('YCS Columbus'), false,
+    'it has no deck profiles and the manifest says so');
+});
+
+test('an event that could match is still offered before it is opened', async (t) => {
+  const page = await loadPage(withPosts(KINDED({ pairings: 1, deck: 1 })));
+  t.after(() => page.close());
+  page.run(`filter = 'deck'; renderEvents()`);
+  assert.equal(bars(page).includes('YCS Columbus'), true);
+});
+
+test('a manifest without the counts keeps every event listed', async (t) => {
+  // What the page did before, which is what it must go on doing for a
+  // manifest written before this.
+  const page = await loadPage(withPosts());
+  t.after(() => page.close());
+  page.run(`filter = 'deck'; renderEvents()`);
+  assert.equal(bars(page).includes('YCS Columbus'), true);
+});
+
+test('an opened event does not remove itself from a filtered list', async (t) => {
+  // The bug: it revealed, then hid, and the next event took its place.
+  const page = await loadPage(withPosts(KINDED({ pairings: 2 })));
+  t.after(() => page.close());
+  page.$$('#events .event__bar').find((b) => b.dataset.ev === 'YCS Columbus').click();
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  page.run(`filter = 'deck'; renderEvents()`);
+  assert.equal(bars(page).includes('YCS Columbus'), true, 'it stays where it was');
+  assert.match(page.text('#events'), /Nothing filed as Deck Profile in this event/);
+});
+
+test('an event with no coverage at all is still dropped', async (t) => {
+  // Only a filter emptying a group earns it a place. An event that published
+  // nothing is not a filter's doing.
+  const page = await loadPage(withPosts({
+    'older-ycs-columbus/posts.json': { status: 200, body: '[]' },
+  }));
+  t.after(() => page.close());
+  page.$$('#events .event__bar').find((b) => b.dataset.ev === 'YCS Columbus')?.click();
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  assert.equal(bars(page).includes('YCS Columbus'), false);
+});
+
+test('a filtered count is the archive\'s, not what has been opened', async (t) => {
+  const page = await loadPage(withPosts(KINDED({ pairings: 2, deck: 7 })));
+  t.after(() => page.close());
+  page.run(`filter = 'deck'; renderEvents()`);
+  assert.match(page.text('#coverage-count') || page.text('#events-count') || page.text('.count'),
+    /7 matching/);
+});
