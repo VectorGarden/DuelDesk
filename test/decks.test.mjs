@@ -241,6 +241,16 @@ test("the blog's numbered prose is not a card", async () => {
   assert.deepEqual(deck.Monsters.map((c) => c.name), ['Ash Blossom & Joyous Spring']);
 });
 
+test('cards under a misspelt Extra Deck land in the Extra pile', async () => {
+  // And they belong there rather than in the main deck: a .ydk keeps the two
+  // apart, and a main deck of 55 is not a deck anybody can register.
+  const [deck] = decksIn(['Monsters: 1', '1 Ash Blossom & Joyous Spring',
+                          'Etra Deck: 1', '1 Exosister Asophiel']);
+  assert.deepEqual(deck.Extra.map((c) => c.name), ['Exosister Asophiel']);
+  assert.deepEqual(deck.Monsters.map((c) => c.name), ['Ash Blossom & Joyous Spring']);
+  assert.equal(pileOf('Exra Deck: 15'), 'Extra');
+});
+
 test('a wrap cannot cross a paragraph', async () => {
   // A name broken over two paragraphs is not a wrap -- it is the next thing
   // the post had to say, and in a deck list that is whoever came next.
@@ -536,6 +546,37 @@ test('the tail of a wrapped name does not open a deck that is not there', async 
   const found = layout.layoutOf(lines);
   assert.equal(found.length, 1, 'one deck, and no phantom under the Side Deck');
   assert.deepEqual(found[0].title, [nodes[0]]);
+});
+
+test('an Extra Deck spelt wrong is still an Extra Deck', async () => {
+  // YCS Portland 2019 writes "Etra Deck: 15" and the Top 16 decklists from
+  // Indianapolis 2011 write "Exra Deck: 15". A section not read as one ends
+  // the deck it is in the middle of, and the Side Deck under it opened a deck
+  // that was never there -- which the parsing then threw away for holding no
+  // main deck, while the layout kept it. The two disagreed about how many
+  // decks the post held, and since they are paired by position every Duelist
+  // after it was shown against the wrong deck: Adam Corn's was 56 cards.
+  const {nodes, lines} = paragraphs(
+    'Adam Corn (Top 16)\nMonsters: 1\n1 Effect Veiler',
+    'Traps: 1\n1 Infinite Impermanence',
+    'Exra Deck: 1\n1 T.G. Hyper Librarian',
+    'Side Deck: 1\n1 D.D. Crow',
+    'Christopher Krause (Top 16)\nMonsters: 1\n1 Ash Blossom & Joyous Spring');
+  const found = layout.layoutOf(lines);
+  assert.equal(found.length, 2, 'two Duelists, and no deck under the Side Deck');
+  assert.deepEqual([...found[0].piles.keys()], ['Monsters', 'Traps', 'Extra', 'Side'],
+                   'the misspelt section is the Extra pile');
+  assert.equal(found[1].at, nodes[4], 'and the next deck is the next Duelist');
+});
+
+test('a word that is not one of the two misspellings is not a section', async () => {
+  // Spelt out rather than made tolerant: "Etra" and "Exra" are the only two
+  // near misses in the archive, and a rule loose enough to catch them by
+  // shape would read sections into words nobody has written.
+  const {lines} = paragraphs(
+    'Somebody\nMonsters: 1\n1 Effect Veiler', 'Era Deck: 1\n1 T.G. Hyper Librarian');
+  const [deck] = layout.layoutOf(lines);
+  assert.deepEqual([...deck.piles.keys()], ['Monsters'], 'no pile called Extra');
 });
 
 test('a heading with no number leaves the count it found', async () => {
