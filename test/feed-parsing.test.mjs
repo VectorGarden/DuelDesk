@@ -213,3 +213,42 @@ test('search still finds a post by its event name', async (t) => {
   assert.ok(shown.some((s) => /Montreal/i.test(s)), 'matched on the event name');
   assert.ok(page.$$('.post').length > 0, 'and its posts are listed');
 });
+
+/* Who decides what a post is.
+ *
+ * classify() asks the same questions as the scraper, in the same order --
+ * fixtures/kinds.json is read by both suites so they cannot drift. But it asks
+ * them of a headline, and the scraper asked them of the title, the slug and
+ * the table on the page. On 309 of the archive's posts that is the difference
+ * between a kind and a shrug: Central America WCQ 2014 titles forty-eight
+ * posts "WCQ" and puts everything in the slug, and read off the title alone
+ * forty-five of them are news.
+ */
+
+const FEED_WITH = (extra) => `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>Duel Desk</title><link>https://dueldesk.reizu.dev/</link><description>d</description>
+  <item><title>WCQ CA: WCQ</title>
+    <link>https://yugiohblog.konami.com/wcq-ca-top-16-pairings/</link>
+    <category>Pairings</category>${extra}
+    <category domain="event">2014-wcq-ca</category>
+    <pubDate>Sun, 06 Jul 2014 09:48:54 +0000</pubDate></item>
+</channel></rss>`;
+
+test('a feed item carries the kind the scraper read', async (t) => {
+  const page = await loadPage({
+    routes: { 'feed.xml': { status: 200,
+      body: FEED_WITH('<category domain="kind">pairings</category>') } },
+  });
+  t.after(() => page.close());
+  const post = page.json('EVENTS.flatMap(e => e.posts).find(p => /WCQ/.test(p.title)) ?? null');
+  assert.equal(post.kind, 'pairings', 'the title alone says news');
+});
+
+test('a feed item without one is still classified from its headline', async (t) => {
+  // An older feed, or one this scraper did not write.
+  const page = await loadPage({ routes: { 'feed.xml': { status: 200, body: FEED_WITH('') } } });
+  t.after(() => page.close());
+  const post = page.json('EVENTS.flatMap(e => e.posts).find(p => /WCQ/.test(p.title)) ?? null');
+  assert.equal(post.kind, 'news', 'nothing else to go on');
+});

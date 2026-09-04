@@ -148,7 +148,16 @@ def build_feed(event: str, items: list[dict], *, updated: str | None = None,
             f"      <link>{esc(item['url'])}</link>\n"
             f"      <guid isPermaLink=\"true\">{esc(item['url'])}</guid>\n"
             f"      <category>{esc(label)}</category>\n"
-            # A second category, namespaced with domain= as RSS intends, so the
+            # The same answer again, as an identifier rather than a label.
+            # The label above is prose for a feed reader; this is the kind the
+            # scraper actually read -- from the title, the slug and the table
+            # on the page, in that order of correction -- so the site does not
+            # have to guess it back out of a headline. It guessed wrong on 309
+            # posts, because the archive's older titles are "WCQ" and "Public
+            # Events" while the slug says round-1-feature-match.
+            + (f'      <category domain="kind">{esc(item["kind"])}</category>\n'
+               if item.get("kind") else "")
+            # A third category, namespaced with domain= as RSS intends, so the
             # site can filter coverage by format without parsing the headline.
             # Absent for posts that belong to no format -- an announcement is
             # about the event, not about one of its tournaments -- and the site

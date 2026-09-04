@@ -939,6 +939,32 @@ class TestEverythingWrittenIsPublished(unittest.TestCase):
                               f"a run that only changed {path} would publish nothing")
 
 
+class TestTheFeedStatesTheKind(unittest.TestCase):
+    """The kind as an identifier, not only as a label a reader sees."""
+
+    def item(self, **kw):
+        base = {"title": "WCQ", "url": "https://x/wcq-ca-top-16-pairings/",
+                "modified": "2014-07-06T09:48:54-07:00", "kind": "pairings",
+                "slug": "2014-wcq-ca"}
+        return {**base, **kw}
+
+    def test_the_kind_is_published_as_an_identifier(self):
+        # The label above it is prose for a feed reader. This is the answer the
+        # scraper worked out from the title, the slug and the table on the
+        # page, so the site does not have to guess it back out of a headline --
+        # and "WCQ" is the whole of what 48 of Central America WCQ 2014's
+        # titles say.
+        from feed import build_feed
+        xml = build_feed("E", [self.item()])
+        self.assertIn('<category domain="kind">pairings</category>', xml)
+        self.assertIn("<category>Pairings</category>", xml)
+
+    def test_an_item_with_no_kind_states_none(self):
+        from feed import build_feed
+        xml = build_feed("E", [self.item(kind=None)])
+        self.assertNotIn('domain="kind"', xml)
+
+
 class TestStatusAnnotations(unittest.TestCase):
     """Reading the round a player left, rather than counting their appearances."""
 

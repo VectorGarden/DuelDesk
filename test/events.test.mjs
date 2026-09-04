@@ -648,6 +648,19 @@ const withPosts = (extra = {}) => twoEvents({
 
 const bars = (page) => page.$$('#events .event__bar').map((b) => b.dataset.ev);
 
+/* Posts whose titles say nothing, which is most of the older archive. Central
+   America WCQ 2014 titles forty-eight posts "WCQ" and puts what they are in
+   the slug; the scraper read the title, the slug and the table on the page,
+   and stored the answer. */
+const MUTE_POSTS = [
+  { title: 'WCQ', url: 'https://yugiohblog.konami.com/wcq-ca-top-16-pairings/',
+    modified: '2026-05-23T18:00:00Z', kind: 'pairings',
+    event: 'YCS Columbus', slug: OLDER.slug },
+  { title: 'WCQ', url: 'https://yugiohblog.konami.com/wcq-ca-round-1-feature-match/',
+    modified: '2026-05-23T17:00:00Z', kind: 'feature',
+    event: 'YCS Columbus', slug: OLDER.slug },
+];
+
 test('every event in the archive is listed, not only those in the feed', async (t) => {
   // The feed is one river of the newest three hundred posts across the whole
   // archive: of fifty-two events, five had any item in it and forty-seven
@@ -817,4 +830,43 @@ test('an event the feed names but the archive does not is still listed', async (
   }));
   t.after(() => page.close());
   assert.ok(bars(page).includes('YCS Columbus'), bars(page).join(','));
+});
+
+
+test('a post is the kind the scraper read, not the one a headline suggests', async (t) => {
+  // Read off "WCQ" alone both of these are news, and the reader's filter said
+  // so for 309 posts the archive had already classified correctly.
+  const page = await loadPage(withPosts({
+    'older-ycs-columbus/posts.json': { status: 200, body: JSON.stringify(MUTE_POSTS) },
+  }));
+  t.after(() => page.close());
+  page.$$('#events .event__bar').find((b) => b.dataset.ev === 'YCS Columbus').click();
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  const kinds = page.json(`POSTS.get('${OLDER.slug}').map(p => p.kind)`);
+  assert.deepEqual(kinds, ['pairings', 'feature']);
+});
+
+test('a post with no stored kind is classified from its headline', async (t) => {
+  // posts.json written before the scraper recorded one, and the feed's own
+  // items, which arrive with nothing attached.
+  const page = await loadPage(withPosts({
+    'older-ycs-columbus/posts.json': { status: 200, body: JSON.stringify(
+      MUTE_POSTS.map(({kind, ...rest}) => ({...rest, title: 'Round 3 Pairings'}))) },
+  }));
+  t.after(() => page.close());
+  page.$$('#events .event__bar').find((b) => b.dataset.ev === 'YCS Columbus').click();
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  assert.deepEqual(page.json(`POSTS.get('${OLDER.slug}').map(p => p.kind)`),
+    ['pairings', 'pairings']);
+});
+
+test('the round still comes from the headline, which posts.json does not store', async (t) => {
+  const page = await loadPage(withPosts({
+    'older-ycs-columbus/posts.json': { status: 200, body: JSON.stringify([
+      { ...MUTE_POSTS[0], title: 'Top 8 Pairings' }]) },
+  }));
+  t.after(() => page.close());
+  page.$$('#events .event__bar').find((b) => b.dataset.ev === 'YCS Columbus').click();
+  await waitFor(page, `POSTS.has('${OLDER.slug}')`);
+  assert.equal(page.json(`POSTS.get('${OLDER.slug}')[0].round`), 'Top 8');
 });

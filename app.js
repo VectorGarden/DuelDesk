@@ -214,6 +214,11 @@ function groupFeed(xmlText){                                   // eslint-disable
     const raw   = item.querySelector('pubDate')?.textContent;
     const date  = raw && !isNaN(Date.parse(raw)) ? new Date(raw) : new Date();
     const cat   = item.querySelector('category')?.textContent?.trim();
+    /* The kind the scraper read, which it worked out from the title, the slug
+       and the table on the page. Better than anything this file can get from a
+       headline -- see asCoveragePosts -- so it is used where the feed gives it
+       and classify() fills in where it does not. */
+    const kind  = item.querySelector('category[domain="kind"]')?.textContent?.trim() || null;
     /* The feed states the format on a second, namespaced category. A post that
        belongs to no format -- an announcement is about the event, not one of its
        tournaments -- carries none, and stays visible whichever is selected. */
@@ -254,7 +259,8 @@ function groupFeed(xmlText){                                   // eslint-disable
       /* Classify the headline, not the full title: an event called
          "300th YCS" or "Top Cut Invitational" would otherwise leak its own
          digits and keywords into round and kind detection. */
-      ...classify(headline)
+      ...classify(headline),
+      ...(kind ? {kind} : {})
     });
   }
   return [...map.values()].sort((a, b) => b.date - a.date);
@@ -925,6 +931,19 @@ function asCoveragePosts(raw){
       time: when ? when.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}) : '',
       date: when,
       ...classify(headline),
+      /* The kind the scraper read, not the one this file can guess.
+         classify() asks the same questions in the same order -- kinds.json is
+         read by both suites so they cannot drift -- but it asks them of a
+         headline, and the scraper asked them of the title, the slug and the
+         table on the page, in that order of correction. On 309 posts that is
+         the difference between a kind and a shrug: the archive's older titles
+         are "WCQ" and "Public Events" and "YCS Origins", while the slugs say
+         round-1-feature-match, 3-vs-3-team-dueling-winners and top-32-decks.
+         Read off the title alone, every one of them is news.
+
+         The round still comes from the headline. posts.json does not store
+         one, and "Final Standings" is a round this page works out for itself. */
+      ...(p.kind ? {kind: p.kind} : {}),
     };
   }).sort((a, b) => (b.date ?? 0) - (a.date ?? 0));
 }
