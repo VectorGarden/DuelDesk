@@ -40,6 +40,8 @@ _BLOCKS = {"p": "p", "h1": "h", "h2": "h", "h3": "h", "h4": "h", "h5": "h",
 # are tens of thousands of these and they are the bulk of what runs cost.
 _EMPHASIS = {"strong": "b", "b": "b", "em": "i", "i": "i",
              "u": "u", "sup": "s", "mark": "b"}
+# What an emphasised run may be keyed on, which is the values above.
+EMPHASIS = frozenset(_EMPHASIS.values())
 # Taken out whole, contents and all. A figure is an image and its caption, and
 # a caption without its photograph -- "Selig considers his options" -- is not
 # prose, it is a label for something the reader cannot see.
@@ -50,6 +52,10 @@ _DROPPED = {"script", "style", "iframe", "figure", "noscript", "form", "svg",
 # an image inside a figure is the commonest markup in the archive.
 _VOID = {"img", "br", "hr", "input", "meta", "link", "source", "col", "area",
          "base", "embed", "param", "track", "wbr"}
+# Where a <br> was. Not a newline yet: the run it lands in is flattened first,
+# and a newline would be collapsed with the rest of the whitespace.
+_LINE = "\u0000"
+
 # How much of a post may be the text of links to other posts. A table of
 # contents is a page of links and nothing else -- "2026 North America WCQ Event
 # Table of Contents!" is 7,489 characters of prose, 95% of it the headlines of
@@ -102,9 +108,22 @@ class _Reader(HTMLParser):
         if tag == "a":
             self._in_link += 1
         if tag == "br":
-            # A break inside a paragraph is a space, not nothing: "Sky<br>
-            # Striker" is one name written across two lines.
-            self._write(" ")
+            # A break inside a table cell is a space, not nothing: "Sky<br>
+            # Striker" is one deck name written across two lines, and dropped
+            # entirely it reads "SkyStriker".
+            #
+            # In prose it is a line. Konami writes a deck list one card to a
+            # line and the whole of it inside a single paragraph, so read as
+            # spaces a forty-card list came out as "Monsters: 19 3 Ash Blossom
+            # & Joyous Spring 3 Dimension Shifter 3 Exosister Elis" -- a
+            # sentence nobody can read or count. Marked rather than written,
+            # because the text around it still has its own whitespace to
+            # collapse and a newline out of the source's indentation is not a
+            # line the coverage asked for.
+            if self._cell is not None:
+                self._cell.append(" ")
+            elif self._row is None:
+                self._write(_LINE)
         elif tag == "table":
             self._close()
             self._table, self._row, self._cell = [], None, None
@@ -174,7 +193,15 @@ class _Reader(HTMLParser):
 
 
 def _flatten(text: str) -> str:
-    return re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
+    """One line of text, unless the coverage asked for more than one.
+
+    Whitespace collapses; a marked line break survives it, taking the spaces
+    on either side of it with it.
+    """
+    flat = re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
+    # After the trim, not before it: a run that opens or closes on a break --
+    # "</b><br>then passed" -- would otherwise have it stripped off the edge.
+    return re.sub(rf" ?{_LINE} ?", "\n", flat)
 
 
 def _merge(runs: list[dict]) -> list:
@@ -344,11 +371,19 @@ def link_names(blocks: list[dict], people, *, by_surname: bool = False) -> list[
     """The blocks again, with each mention of `people` marked as a link.
 
     A marked run carries both the words the coverage wrote and the name the
-    archive files them under:
+    archive files them under, and the emphasis it was written in where it had
+    one:
 
         {"who": "Julien Leo Kehon", "t": "Kehon"}
+        {"who": "Raymond Dai", "t": "Raymond Dai", "e": "b"}
 
-    Only plain runs are searched, and only plain runs are marked.
+    An emphasised run is searched only when the question is the strict one. A
+    feature match asks by surname, and 463 emphasised runs in the archive hold
+    some combatant's surname inside a card name. Asked for a name written in
+    full the same runs hold 463 matches and every one of them is a Duelist:
+    they are deck-list headings, where the coverage bolds "1st Place / Raymond
+    Dai / Exosisters", and a full forename and surname is not something a card
+    is called.
     """
     text = plain(blocks)
     forms: dict[str, set] = {}
@@ -382,12 +417,21 @@ def link_names(blocks: list[dict], people, *, by_surname: bool = False) -> list[
             out.append(text[at:])
         return out or [text]
 
+    def parts(run):
+        if isinstance(run, str):
+            return split(run)
+        if by_surname or not isinstance(run, dict) or run.get("who"):
+            return [run]
+        emphasis, text = next(iter(run.items()))
+        if emphasis not in EMPHASIS:
+            return [run]
+        return [{**p, "e": emphasis} if isinstance(p, dict) else {emphasis: p}
+                for p in split(text)]
+
     marked = []
     for b in blocks:
         if not b.get("r"):
             marked.append(b)
             continue
-        runs = [part for run in b["r"]
-                for part in (split(run) if isinstance(run, str) else [run])]
-        marked.append({**b, "r": runs})
+        marked.append({**b, "r": [x for run in b["r"] for x in parts(run)]})
     return marked

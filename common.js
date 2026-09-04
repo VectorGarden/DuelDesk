@@ -54,8 +54,14 @@ const EMPHASIS = {b: 'b', i: 'i', u: 'u', s: 'sup'};
 function runHtml(run){
   if (typeof run === 'string') return esc(run);
   if (!run || typeof run !== 'object') return '';
-  /* A Duelist the coverage named, and the words it named them in. */
-  if (run.who) return playerLink(run.who, run.t);
+  /* A Duelist the coverage named, and the words it named them in -- inside
+     whatever emphasis it wrote them in, where it wrote them in one. A deck
+     list's heading is bold and holds the Duelist's name. */
+  if (run.who){
+    const link = playerLink(run.who, run.t);
+    const tag = EMPHASIS[run.e];
+    return tag ? `<${tag}>${link}</${tag}>` : link;
+  }
   const [key, text] = Object.entries(run)[0] ?? [];
   const tag = EMPHASIS[key];
   return tag ? `<${tag}>${esc(text)}</${tag}>` : esc(text);

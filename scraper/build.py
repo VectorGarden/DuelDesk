@@ -307,7 +307,13 @@ def round_key(post) -> tuple[str, Any]:
 #     identifies one of them; every other post is about the field, where
 #     40.8% of Duelists share a surname with another entrant, and only a
 #     name written in full is read. 84,493 names across 2,725 articles.
-BUILD_VERSION = 55
+#  56 A deck list is lines. Konami writes one card to a line inside a
+#     single paragraph, and read as spaces a forty-card list came out as one
+#     unreadable sentence: 98 of 228 deck articles carry more than twenty
+#     line breaks. And the Duelist in a deck list's heading is a link now --
+#     the heading is bold, and a name written in full is safe to look for
+#     inside emphasis even though a surname is not.
+BUILD_VERSION = 56
 
 
 @dataclass
