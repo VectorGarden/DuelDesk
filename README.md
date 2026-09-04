@@ -175,6 +175,19 @@ resolve to a passcode. The other 21 posts split the count from the name and are 
 exported wrong is worse than one not offered. Whatever a deck could not name is printed beside the
 buttons rather than quietly dropped.
 
+### Taking the whole post
+
+Each deck offers three files; a post of many offers two more, for all of them at once.
+
+Not three. A `.ydk` is one deck's file and there is no honest way to put sixty-three in it — the
+format has no separator, and a zip would be a dependency on a page that has none. A `ydke://` is one
+line, so a file of them is a file of them, and the registration JSON is already one object a deck.
+
+The numbers come from [`cards/ids.json`](cards) rather than the shards. A hover wants one card and
+fetches one shard of 13KB; the worst post in the archive names 642 cards across **367 of the 512
+shards** — 4.7MB in 367 requests to answer one button. Names and numbers with none of the text are
+517KB in **one** request, and 240KB of it over the wire.
+
 ### Event identity
 
 Posts appear both under an event slug (`/2026/ycs/2026-08-quebec/…`) and without one, and only

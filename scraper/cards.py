@@ -31,6 +31,14 @@ from pathlib import Path
 
 CARDS = "cards"
 CARD_SHARDS = 512
+# Every card's numbers in one file, without a word of its text.
+#
+# A hover wants one card and gets one shard of 13KB. An export wants a whole
+# deck list, and the worst post in the archive names 642 cards across 367 of
+# the 512 shards -- 4.7MB in 367 requests to answer one button. The same
+# question asked of names and numbers alone is 517KB in one, and 240KB of it
+# over the wire, so that is what an export asks.
+NUMBERS = "ids.json"
 
 # What is worth keeping of a card. Not the printings, the prices, the images or
 # the ban list: what a card is and what it does, which is the question a reader
@@ -108,6 +116,23 @@ def build(cards: list[dict]) -> dict[str, dict]:
     return shards
 
 
+def numbers(shards: dict[str, dict]) -> dict[str, list[int]]:
+    """Every card's key to its numbers: the passcode, and Konami's id where
+    there is one.
+
+    A list rather than an object because there are 14,517 of them and the
+    field names would be a third of the file.
+    """
+    out = {}
+    for held in shards.values():
+        for key, card in held.items():
+            if card.get("id") is None:
+                continue
+            out[key] = ([card["id"]] if card.get("cid") is None
+                        else [card["id"], card["cid"]])
+    return dict(sorted(out.items()))
+
+
 def write(root: str | Path, shards: dict[str, dict]) -> int:
     """Write the card files, and remove any shard that no longer has cards."""
     out = Path(root) / CARDS
@@ -125,4 +150,7 @@ def write(root: str | Path, shards: dict[str, dict]) -> int:
                                    separators=(",", ":"), ensure_ascii=False) + "\n",
                         encoding="utf-8")
         kept += len(held)
+    ids = numbers(shards)
+    (out / NUMBERS).write_text(json.dumps(ids, separators=(",", ":"),
+                                      ensure_ascii=False) + "\n", encoding="utf-8")
     return kept

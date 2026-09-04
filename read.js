@@ -701,9 +701,13 @@ function shapeDecks(root){
       name.textContent = deck.name || `Deck ${i + 1}`;
     }
     head.append(name);
-    /* What to call it in the index, taken now: the heading's own nodes have
-       just been moved here, and the paragraph they came from is gone. */
+    /* What to call it, taken now: the heading's own nodes have just been
+       moved here and the paragraph they came from is gone. The export uses it
+       too, or the first deck of a post is named after the post's opening
+       sentence -- "Here are the Deck Lists for the Top Cut of the North
+       America World Championship Qualifier!" is not a deck. */
     place.called = name.textContent.replace(/\s*\n\s*/g, ' — ').trim();
+    if (place.called) deck.name = place.called;
     const size = document.createElement('span');
     size.className = 'deck__c';
     size.textContent = `${copiesIn(deck)} cards`;
@@ -784,6 +788,12 @@ function shapeDecks(root){
       const button = at?.querySelector('[data-open]');
       if (button && button.getAttribute('aria-expanded') !== 'true') toggleDeck(root, button);
     }
+    const every = e.target.closest?.('[data-all]');
+    if (every){
+      handOverAll(decks, every.dataset.all, root.querySelector('[data-note="all"]'),
+                  document.title.replace(/ — Duel Desk$/, ''));
+      return;
+    }
     const tab = e.target.closest?.('[data-pile]');
     if (tab) showPile(root, tab);
     const button = e.target.closest?.('[data-deck]');
@@ -854,6 +864,12 @@ function indexOf(decks, layout){
       <input id="deckfind" type="search" placeholder="Find a Duelist or a deck"
              autocomplete="off">
     </label>
+    <p class="deckindex__all">
+      <span class="deckout__k">Take all ${decks.length}</span>
+      <button type="button" class="btn btn--sm" data-all="ydke">ydke:// each</button>
+      <button type="button" class="btn btn--sm" data-all="json">Registration JSON</button>
+      <span class="deckout__note" data-note="all"></span>
+    </p>
     <ol class="deckindex__list">${decks.map((deck, i) => `
       <li><a href="#deck-${i}">${esc(nameOf(deck, layout[i], i))}</a></li>`).join('')}
     </ol>`;
@@ -884,28 +900,12 @@ function narrowDecks(root, query){
    forty files the first time and none of them the second. */
 async function handOver(deck, as, note){
   note.textContent = 'Looking the cards up…';
-  const names = ['Monsters', 'Spells', 'Traps', 'Extra', 'Side']
-    .flatMap((pile) => deck[pile].map((c) => c.name));
-  const found = new Map();
-  await Promise.all([...new Set(names)].map(async (name) => {
-    found.set(name, await lookupCard(name));
-  }));
-  const resolve = (name) => found.get(name) ?? null;
+  const ids = await cardNumbers();
+  const resolve = (name) => numbersFor(ids, name);
 
   const needs = as === 'json' ? 'cid' : 'id';
   const lost = missing(deck, resolve, needs);
-  /* A filename out of the heading: "1st Place — Raymond Dai — Exosisters"
-     becomes "1st Place - Raymond Dai - Exosisters".
-
-     Only what a file system actually objects to is taken out. Much of this
-     archive is named in Spanish and Portuguese, and a rule built on \w --
-     which is ASCII and nothing else -- turned an accented name into
-     "Jos Ram rez". */
-  const stem = (deck.name || 'decklist')
-    .replace(/[\u2013\u2014]/g, '-')
-    .replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim().slice(0, 60) || 'decklist';
+  const stem = fileStem(deck.name);
   if (as === 'ydk') save(ydkOf(deck, resolve, deck.name), `${stem}.ydk`, 'text/plain');
   else if (as === 'ydke') save(ydkeOf(deck, resolve), `${stem}.ydke.txt`, 'text/plain');
   else save(JSON.stringify(registrationOf(deck, resolve, deck.name), null, 2),
@@ -916,6 +916,53 @@ async function handOver(deck, as, note){
   note.textContent = lost.length
     ? `${lost.length} card${lost.length > 1 ? 's' : ''} not in the card store: ${lost.join(', ')}`
     : '';
+}
+
+/* Every deck in the post at once.
+
+   Two of the three formats, not three. A .ydk is one deck's file and there is
+   no honest way to put sixty-three in it: the format has no separator, and a
+   zip would be a dependency on a page that has none. A ydke:// is one line,
+   so a file of them is a file of them; and the registration JSON is already
+   one object a deck, so an array of them is the shape it was going to take
+   anyway. */
+async function handOverAll(decks, as, note, title){
+  note.textContent = 'Looking the cards up…';
+  const ids = await cardNumbers();
+  const resolve = (name) => numbersFor(ids, name);
+  const stem = fileStem(title || 'deck lists');
+
+  if (as === 'ydke'){
+    const lines = decks.map((deck) =>
+      `# ${deck.name.replace(/\s*\n\s*/g, ' — ')}\n${ydkeOf(deck, resolve)}`);
+    save(lines.join('\n\n') + '\n', `${stem}.ydke.txt`, 'text/plain');
+  } else {
+    save(JSON.stringify(decks.map((deck) =>
+      registrationOf(deck, resolve, deck.name.replace(/\s*\n\s*/g, ' — '))), null, 2),
+      `${stem}.json`, 'application/json');
+  }
+
+  const lost = new Set();
+  for (const deck of decks){
+    for (const name of missing(deck, resolve, as === 'json' ? 'cid' : 'id')) lost.add(name);
+  }
+  note.textContent = lost.size
+    ? `${lost.size} card${lost.size > 1 ? 's' : ''} not in the card store: ${[...lost].join(', ')}`
+    : `${decks.length} decks.`;
+}
+
+/* A filename out of a heading: "1st Place — Raymond Dai — Exosisters" becomes
+   "1st Place - Raymond Dai - Exosisters".
+
+   Only what a file system actually objects to is taken out. Much of this
+   archive is named in Spanish and Portuguese, and a rule built on \w -- which
+   is ASCII and nothing else -- turned an accented name into "Jos Ram rez". */
+function fileStem(name){
+  return (name || 'decklist')
+    .replace(/[\u2013\u2014]/g, '-')
+    .replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim().slice(0, 60) || 'decklist';
 }
 
 function save(text, filename, type){

@@ -167,6 +167,37 @@ const heldAt = (place) => place
   ? `<span class="win__where">${esc(place)}</span>`
   : '';
 
+/* Every card's numbers, in one file and without a word of its text.
+
+   A hover wants one card and fetches one shard of 13KB. An export wants a
+   whole deck list, and the worst post in the archive names 642 cards across
+   367 of the 512 shards -- 4.7MB in 367 requests to answer one button. Names
+   and numbers alone are 517KB in one request, and 240KB of it over the wire.
+
+   So the shards answer "what does this card do" and this answers "which card
+   is this", and an export of any size asks only the second. */
+let NUMBERS = null;
+
+async function cardNumbers(){
+  if (!NUMBERS){
+    try {
+      const res = await fetch('/cards/ids.json', {cache: 'no-cache'});
+      NUMBERS = res.ok ? await res.json() : {};
+    } catch {
+      NUMBERS = {};
+    }
+  }
+  return NUMBERS;
+}
+
+/* What a name resolves to, for the files that are made of numbers.
+   [passcode] or [passcode, Konami id] -- 2% of the database has no second. */
+function numbersFor(ids, name){
+  const found = ids[cardKey(name)];
+  if (!found) return null;
+  return found[1] === undefined ? {id: found[0]} : {id: found[0], cid: found[1]};
+}
+
 function offsite(url){
   /* Every url here has been through safeUrl(), so it is either an http(s) URL or
      the inert '#'. That is why this needs no guard of its own: '#' resolves

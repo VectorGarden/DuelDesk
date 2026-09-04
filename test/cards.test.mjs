@@ -19,6 +19,11 @@ import { dirname, join } from 'node:path';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CARDS = join(ROOT, 'cards');
 
+/* The numbered files, and not ids.json beside them: that one is every card's
+   numbers with none of its text, and it is not a shard. */
+const shardFiles = () =>
+  readdirSync(CARDS).filter((f) => /^\d{3}\.json$/.test(f));
+
 /* The page's own functions, lifted out of common.js rather than
    reimplemented, so this cannot pass against a second copy that has drifted.
    Run here rather than in the page: the lookup hashes with crypto.subtle,
@@ -38,7 +43,7 @@ test('the page and the scraper agree on every card in the store', async (t) => {
   // file is a hover that quietly finds nothing, which looks like missing data
   // rather than a bug.
   let checked = 0;
-  for (const file of readdirSync(CARDS).filter((f) => f.endsWith('.json'))) {
+  for (const file of shardFiles()) {
     const expected = file.replace('.json', '');
     const shard = JSON.parse(readFileSync(join(CARDS, file), 'utf8'));
     for (const [key, card] of Object.entries(shard)) {
@@ -54,7 +59,7 @@ test('the page and the scraper agree on every card in the store', async (t) => {
 test('the count comes out of the page, not out of this file', async () => {
   assert.equal(SHARD_COUNT, 512);
   if (!existsSync(CARDS)) return;
-  assert.ok(readdirSync(CARDS).filter((f) => f.endsWith('.json')).length <= SHARD_COUNT);
+  assert.ok(shardFiles().length <= SHARD_COUNT);
 });
 
 test('the key survives what a CMS does to a name', async () => {
@@ -163,4 +168,47 @@ test('it narrows to keep out of the list rather than giving up the margin', asyn
     `narrowed to ${tight}`);
   assert.equal(geometry.cardWidth(at, {width: 300, height: 800}), geometry.CARD_NARROW,
     'and never below the width its text needs');
+});
+
+
+/* The numbers, apart from the text.
+ *
+ * A hover wants one card and fetches one shard. An export wants a whole deck
+ * list, and the worst post names 642 cards across 367 of the 512 shards --
+ * 4.7MB in 367 requests to answer one button.
+ */
+test('every card in the shards is in the numbers file, and nothing else is', async (t) => {
+  if (!existsSync(CARDS)) return t.skip('no card store built');
+  const ids = JSON.parse(readFileSync(join(CARDS, 'ids.json'), 'utf8'));
+  let expected = 0;
+  for (const file of shardFiles()){
+    for (const [key, card] of Object.entries(JSON.parse(readFileSync(join(CARDS, file), 'utf8')))){
+      if (card.id === undefined) continue;
+      expected += 1;
+      assert.ok(ids[key], `${card.name} is in a shard and not in the numbers`);
+      assert.equal(ids[key][0], card.id, `${card.name} has a different passcode`);
+      assert.equal(ids[key][1], card.cid, `${card.name} has a different Konami id`);
+    }
+  }
+  assert.equal(Object.keys(ids).length, expected, 'and nothing that is not a card');
+});
+
+test('a card Konami never numbered carries one number, not two', async (t) => {
+  if (!existsSync(CARDS)) return t.skip('no card store built');
+  const ids = JSON.parse(readFileSync(join(CARDS, 'ids.json'), 'utf8'));
+  const lengths = new Set(Object.values(ids).map((v) => v.length));
+  assert.deepEqual([...lengths].sort(), [1, 2],
+    'a passcode always, and Konami\'s id where there is one');
+});
+
+test('the page reads the numbers the same way', async () => {
+  const store = load(async () => ({ok: false}));
+  const numbers = new Function('cardKey',
+    source.slice(source.indexOf('function numbersFor'),
+                 source.indexOf('function offsite(')) + '; return numbersFor;')(store.cardKey);
+  assert.deepEqual(numbers({ashblossomjoyousspring: [14558127, 12950]},
+                           'Ash Blossom & Joyous Spring'),
+                   {id: 14558127, cid: 12950});
+  assert.deepEqual(numbers({somefusion: [55555555]}, 'Some Fusion'), {id: 55555555});
+  assert.equal(numbers({}, 'Not A Card'), null);
 });
