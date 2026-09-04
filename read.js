@@ -243,7 +243,21 @@ const DECK_COUNT = /^(\d+)[.)]?\s+(\S.*)$/;
 /* A count with nothing on the line but itself, which is how 21 posts write
    one: the number plain, the card's name emphasised on the line after. */
 const BARE_COUNT = /^(\d{1,2})$/;
-const DECK_SECTION = /^(main\s*decks?|monsters?|monster cards?|spells?|spell cards?|traps?|trap cards?|extra\s*decks?|side\s*decks?)\b/i;
+/* An Extra Deck, including the two times the coverage spelt it wrong. YCS
+   Portland 2019 writes "Etra Deck: 15" and the Top 16 decklists from
+   Indianapolis 2011 write "Exra Deck: 15", and a section that is not read as
+   one ends the deck it is in the middle of: the Side Deck under it opened a
+   deck that was never there, and the Portland deck was left with no name at
+   all.
+
+   Spelt out rather than made tolerant. These are the only two near misses in
+   the archive -- every line of every post with a section in it, matched
+   against anything of the shape "<word> Deck: <number>" -- so there is
+   nothing here for a looser rule to earn, and a looser rule would be reading
+   sections into words nobody has written yet. */
+const EXTRA = "extra|etra|exra";
+const DECK_SECTION = new RegExp(`^(main\\s*decks?|monsters?|monster cards?|spells?`
+  + `|spell cards?|traps?|trap cards?|(${EXTRA})\\s*decks?|side\\s*decks?)\\b`, 'i');
 /* A card whose name was too long for the line it was written on. "Light
    Dragon @Ignister Mereologic Aggregator" is wrapped in the coverage, and
    the wrap is a real break in the post, so the tail of the name arrives as a
@@ -264,7 +278,7 @@ const SECTION_COUNT = /:\s*(\d+)\s*$/;
    to ask the API what each card is, and here the coverage already wrote it. */
 function pileOf(heading){
   const h = heading.toLowerCase();
-  if (/^extra/.test(h)) return 'Extra';
+  if (new RegExp(`^(${EXTRA})`).test(h)) return 'Extra';
   if (/^side/.test(h)) return 'Side';
   if (/^spell/.test(h)) return 'Spells';
   if (/^trap/.test(h)) return 'Traps';
