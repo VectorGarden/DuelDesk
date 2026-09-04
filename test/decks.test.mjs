@@ -274,11 +274,17 @@ const layout = new Function('btoa',
 /* Paragraph stand-ins: the layout only ever asks a paragraph what comes after
    it, which is the whole of what it needs to know. */
 function paragraphs(...texts){
-  const nodes = texts.map((text) => ({text, nextElementSibling: null}));
+  /* A leading "*" marks the paragraph as bold, which is how Konami sets a
+     heading that runs to more than one paragraph. */
+  const nodes = texts.map((text) => ({text: text.replace(/^\*/, ''),
+                                      emph: text.startsWith('*'),
+                                      nextElementSibling: null}));
   nodes.forEach((n, i) => { n.nextElementSibling = nodes[i + 1] ?? null; });
   const lines = [];
   for (const node of nodes){
-    for (const line of node.text.split('\n')) lines.push({text: line, p: node});
+    for (const line of node.text.split('\n')){
+      lines.push({text: line, p: node, emph: node.emph});
+    }
   }
   return {nodes, lines};
 }
@@ -289,7 +295,7 @@ test('a deck begins at its heading, not at its first section', async () => {
     'Monsters: 2\n2 Ash Blossom & Joyous Spring', 'Extra Deck: 1\n1 Some Fusion');
   const [deck] = layout.layoutOf(lines);
   assert.equal(deck.at, nodes[1], 'the paragraph naming the Duelist');
-  assert.equal(deck.title, nodes[1]);
+  assert.deepEqual(deck.title, [nodes[1]]);
 });
 
 test("a post's opening line belongs to the post, not to the first deck", async () => {
@@ -304,7 +310,7 @@ test("a post's opening line belongs to the post, not to the first deck", async (
     'Monster Cards: 1', '1 Bystial Baldrake');
   const [deck] = layout.layoutOf(lines);
   assert.equal(deck.at, nodes[1], "the Duelist's name");
-  assert.equal(deck.title, nodes[1]);
+  assert.deepEqual(deck.title, [nodes[1]]);
   assert.equal(deck.at === nodes[0], false, 'and never the introduction');
 });
 
@@ -315,8 +321,37 @@ test('a heading with a card between it and the section is not the deck\'s', asyn
   const {nodes, lines} = paragraphs(
     'Somebody Else', '3 Maliss', 'Monsters: 1\n1 Bystial Baldrake');
   const [deck] = layout.layoutOf(lines);
-  assert.equal(deck.title, null, 'nothing adjacent, so no heading');
+  assert.deepEqual(deck.title, [], 'nothing adjacent, so no heading');
   assert.equal(deck.at, nodes[2], 'the section itself');
+});
+
+test('a heading written across paragraphs keeps the Duelist in it', async () => {
+  // Speed Duel names a deck in bold -- "Sam Chen - 1st Place" -- and then
+  // says in plain text which character and skill it played. Keeping only the
+  // paragraph nearest the cards named the deck "Character: Yami Yugi Skill
+  // Name: Ever Faithful Companions", which is not a Duelist and, worse, is
+  // what a second Duelist on the same character was called too: two decks
+  // under one name, and one of them overwritten on the way out as a file.
+  const {nodes, lines} = paragraphs(
+    'Here are the Top 4 Decks from Saturday\u2019s event!',
+    '*Sam Chen \u2013 1st Place',
+    'Character: Yami Yugi\nSkill Name: Ever Faithful Companions',
+    'Main Deck Total: 21', 'Monster Cards: 14', '3 Dark Magician');
+  const [deck] = layout.layoutOf(lines);
+  assert.deepEqual(deck.title, [nodes[1], nodes[2]], 'the name and what it played');
+  assert.equal(deck.at, nodes[1], 'and the deck starts at the name');
+  assert.equal(deck.at === nodes[0], false, 'never the introduction');
+});
+
+test('a heading set wholly in bold is kept whole', async () => {
+  // Where every paragraph of it is bold, the heading is all of them: the
+  // bold begins at the name and there is nothing plain in between.
+  const {nodes, lines} = paragraphs(
+    'Wanna see the Decks?', '*Steven Le \u2013 2nd Place', '*Character: Tea',
+    'Monster Cards: 10', '3 Alpha The Magnet Warrior');
+  const [deck] = layout.layoutOf(lines);
+  assert.deepEqual(deck.title, [nodes[1], nodes[2]]);
+  assert.equal(deck.at, nodes[1], 'never the introduction');
 });
 
 test('a heading with no number leaves the count it found', async () => {

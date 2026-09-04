@@ -596,21 +596,36 @@ function layoutOf(lines){
   let deck = null;
   let pile = null;
   let closed = false;
-  let heading = null;
+  /* A heading may run to several paragraphs. Konami writes a Speed Duel deck
+     as "Sam Chen - 1st Place", then "Character: Yami Yugi", then "Skill Name:
+     Ever Faithful Companions", and taking only the last of them dropped the
+     Duelist -- so two people who both played Yami Yugi with the same skill
+     came out as one deck, listed twice under the same name. */
+  let heading = [];
   let seenP = null;
-  for (const {text: raw, p} of lines){
+  for (const {text: raw, p, emph} of lines){
     const text = raw.trim();
     if (!text) continue;
     if (DECK_SECTION.test(text)){
       const next = pileOf(text);
       const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
       if (!deck || (main && closed)){
-        /* The heading counts as the deck's own only when it is the paragraph
-           immediately before it. A post opens with a line of introduction --
-           "Wanna see the Decks that Duelists piloted to the Top 8?" -- and
-           that belongs to the post, not to whoever came first. */
-        const own = heading && heading.nextElementSibling === p ? heading : null;
-        deck = {at: own ?? p, title: own, piles: new Map()};
+        /* The heading counts as the deck's own only when it runs up to the
+           section without a break. A post opens with a line of introduction
+           -- "Wanna see the Decks that Duelists piloted to the Top 8?" --
+           and that belongs to the post, not to whoever came first.
+           Where the heading really is several paragraphs, the bold is what
+           says so: Konami sets the Duelist's name and placing in bold and
+           leaves the introduction above it plain, so the heading begins
+           where the bold begins and runs from there down to the section.
+           What follows the name -- "Character: Yami Yugi", "Skill Name: Ever
+           Faithful Companions" -- is plain, and belongs to the name. */
+        const run = heading.length && heading[heading.length - 1].p.nextElementSibling === p
+          ? heading : [];
+        let from = run.findLastIndex((held) => held.emph);
+        while (from > 0 && run[from - 1].emph) from -= 1;
+        const own = (from < 0 ? run.slice(-1) : run.slice(from)).map((held) => held.p);
+        deck = {at: own[0] ?? p, title: own, piles: new Map()};
         found.push(deck);
         closed = false;
       }
@@ -626,7 +641,7 @@ function layoutOf(lines){
       }
       /* The heading's own paragraph, which may or may not hold the cards. */
       if (!held.held.includes(p)) held.held.push(p);
-      heading = null;
+      heading = [];
       seenP = p;
       continue;
     }
@@ -642,7 +657,15 @@ function layoutOf(lines){
        where the section should start rather than at "Monsters:". The last,
        not the first: a post opens with a line of introduction and then names
        whoever came first, and it is the name the deck belongs to. */
-    heading = p;
+    /* Consecutive paragraphs of it, in the order they were written. Which of
+       them belong to the deck is settled at the section, where the bold ones
+       are known to have run all the way up to it. */
+    const last = heading[heading.length - 1];
+    const line = {p, emph};
+    heading = !last ? [line]
+      : last.p === p ? [...heading.slice(0, -1), {p, emph: last.emph && emph}]
+      : last.p.nextElementSibling === p ? [...heading, line].slice(-4)
+      : [line];
     if (deck && deck.piles.size){ deck = null; pile = null; closed = false; }
   }
   return found;
@@ -694,9 +717,12 @@ function shapeDecks(root){
     head.className = 'deck__h';
     const name = document.createElement('span');
     name.className = 'deck__n';
-    if (place.title){
-      while (place.title.firstChild) name.append(place.title.firstChild);
-      place.title.remove();
+    if (place.title.length){
+      place.title.forEach((held, n) => {
+        if (n) name.append(' — ');
+        while (held.firstChild) name.append(held.firstChild);
+        held.remove();
+      });
     } else {
       name.textContent = deck.name || `Deck ${i + 1}`;
     }
