@@ -1,200 +1,24 @@
 [
-  {
-    "title": "YCS Cancun, Mexico: Round 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-guadalajara-mexico-round-8-pairings-2/",
-    "modified": "2024-10-06T09:37:00-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Round 9 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-9-pairings/",
-    "modified": "2024-10-06T11:06:37-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Top 32 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-top-32-pairings-2/",
-    "modified": "2024-10-06T11:15:06-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Top 16 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-guadalajara-mexico-top-16-pairings-3/",
-    "modified": "2024-10-06T12:14:02-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-top-8-pairings-2/",
-    "modified": "2024-10-06T13:13:40-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Top 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-top-4-pairings-2/",
-    "modified": "2024-10-06T13:58:08-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Round 1 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/ycs-cancun-mexico-round-1-pairings/",
-    "modified": "2024-10-05T09:22:39-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Round 2 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-2-pairings/",
-    "modified": "2024-10-05T10:07:21-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Round 3 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-3-pairings/",
-    "modified": "2024-10-05T11:07:31-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Round 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-4-pairings/",
-    "modified": "2024-10-05T12:13:22-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Round 5 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-5-pairings/",
-    "modified": "2024-10-05T14:15:46-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Round 6 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-6-pairings/",
-    "modified": "2024-10-05T14:54:57-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Round 7 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-7-pairings/",
-    "modified": "2024-10-05T15:23:38-07:00",
-    "kind": "pairings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-8-2/",
-    "modified": "2024-10-06T10:54:28-07:00",
-    "kind": "standings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Standings after Round 2",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-2-2/",
-    "modified": "2024-10-05T11:06:40-07:00",
-    "kind": "standings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-3-2/",
-    "modified": "2024-10-05T12:09:02-07:00",
-    "kind": "standings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-4-2/",
-    "modified": "2024-10-05T14:14:14-07:00",
-    "kind": "standings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-5-2/",
-    "modified": "2024-10-05T14:48:04-07:00",
-    "kind": "standings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-6-2/",
-    "modified": "2024-10-05T15:23:24-07:00",
-    "kind": "standings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-7/",
-    "modified": "2024-10-05T16:25:16-07:00",
-    "kind": "standings",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "YCS Cancun, Mexico: Final Match",
-    "url": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-final-match-2/",
-    "modified": "2024-10-06T16:27:50-07:00",
-    "kind": "news",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  },
-  {
-    "title": "Welcome to YCS Cancun 2024!",
-    "url": "https://yugiohblog.konami.com/2024/ycs/welcome-to-ycs-cancun-2024/",
-    "modified": "2024-10-05T09:19:24-07:00",
-    "kind": "news",
-    "event": "YCS Cancun",
-    "format": null,
-    "slug": "2024-10-cancun-mexico"
-  }
+  {"title":"YCS Cancun, Mexico: Round 8 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-guadalajara-mexico-round-8-pairings-2/","modified":"2024-10-06T09:37:00-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Round 9 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-9-pairings/","modified":"2024-10-06T11:06:37-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Top 32 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-top-32-pairings-2/","modified":"2024-10-06T11:15:06-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Top 16 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-guadalajara-mexico-top-16-pairings-3/","modified":"2024-10-06T12:14:02-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Top 8 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-top-8-pairings-2/","modified":"2024-10-06T13:13:40-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Top 4 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-top-4-pairings-2/","modified":"2024-10-06T13:58:08-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Round 1 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/ycs-cancun-mexico-round-1-pairings/","modified":"2024-10-05T09:22:39-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Round 2 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-2-pairings/","modified":"2024-10-05T10:07:21-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Round 3 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-3-pairings/","modified":"2024-10-05T11:07:31-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Round 4 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-4-pairings/","modified":"2024-10-05T12:13:22-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Round 5 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-5-pairings/","modified":"2024-10-05T14:15:46-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Round 6 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-6-pairings/","modified":"2024-10-05T14:54:57-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Round 7 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-round-7-pairings/","modified":"2024-10-05T15:23:38-07:00","kind":"pairings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Standings after Round 8","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-8-2/","modified":"2024-10-06T10:54:28-07:00","kind":"standings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Standings after Round 2","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-2-2/","modified":"2024-10-05T11:06:40-07:00","kind":"standings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Standings after Round 3","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-3-2/","modified":"2024-10-05T12:09:02-07:00","kind":"standings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Standings after Round 4","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-4-2/","modified":"2024-10-05T14:14:14-07:00","kind":"standings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Standings after Round 5","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-5-2/","modified":"2024-10-05T14:48:04-07:00","kind":"standings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Standings after Round 6","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-6-2/","modified":"2024-10-05T15:23:24-07:00","kind":"standings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Standings after Round 7","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-standings-after-round-7/","modified":"2024-10-05T16:25:16-07:00","kind":"standings","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"YCS Cancun, Mexico: Final Match","url":"https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-final-match-2/","modified":"2024-10-06T16:27:50-07:00","kind":"news","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"},
+  {"title":"Welcome to YCS Cancun 2024!","url":"https://yugiohblog.konami.com/2024/ycs/welcome-to-ycs-cancun-2024/","modified":"2024-10-05T09:19:24-07:00","kind":"news","event":"YCS Cancun","format":null,"slug":"2024-10-cancun-mexico"}
 ]

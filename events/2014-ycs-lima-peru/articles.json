@@ -1,1 +1,30 @@
-{"https://yugiohblog.konami.com/2014/ycs/and-the-winner-is-13/":[{"t":"p","r":["German Manuel Ramirez Pina from Peru! Congratulations German!"]},{"t":"p","r":["\n"]},{"t":"p","r":["In second place is Alexander Reynolds from the USA, in third place is Julian Riveros from Colombia, and in fourth is Robert Boyajian II from USA!"]}],"https://yugiohblog.konami.com/2014/ycs/welcome-to-the-ycs-lima-peru/":[{"t":"p","r":["This weekend is the first Latin American YCS where the new Prize Card is ",{"b":"Ascension Sky Dragon"},"! The last time we were here for a YCS was back in 2012. This year, we are back at the Centro de Convenciones Atlantic City!"]},{"t":"p","r":["250 players have come from all over Peru, including 2 time National Champion Gerardo Jesus Delgado Portilla, plus from all over the Americas. We’ve got 7 from the US, including a couple of former North American representatives to the World Championship, such as Robert Boyajian II and Sam Pedigo II, 5 from Argentina, 1 from Panama, 2 from Mexico, including former YCS Champion, Angel Flores, 1 from Brazil, 3 from Colombia, 3 from Bolivia, 13 from Chile, and 19 from Ecuador, including Marco Jonatan Oviedo Castro, the 2012 South American Champion, all vying to become the new YCS Champion! Welcome all, and let the best Duelist win!"]},{"t":"p","r":["Welcome to the YCS – Lima"]}]}
+{
+  "https://yugiohblog.konami.com/2014/ycs/and-the-winner-is-13/": [
+    {
+      "t": "p",
+      "r": ["German Manuel Ramirez Pina from Peru! Congratulations German!"]
+    },
+    {
+      "t": "p",
+      "r": ["\n"]
+    },
+    {
+      "t": "p",
+      "r": ["In second place is Alexander Reynolds from the USA, in third place is Julian Riveros from Colombia, and in fourth is Robert Boyajian II from USA!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2014/ycs/welcome-to-the-ycs-lima-peru/": [
+    {
+      "t": "p",
+      "r": ["This weekend is the first Latin American YCS where the new Prize Card is ",{"b":"Ascension Sky Dragon"},"! The last time we were here for a YCS was back in 2012. This year, we are back at the Centro de Convenciones Atlantic City!"]
+    },
+    {
+      "t": "p",
+      "r": ["250 players have come from all over Peru, including 2 time National Champion Gerardo Jesus Delgado Portilla, plus from all over the Americas. We’ve got 7 from the US, including a couple of former North American representatives to the World Championship, such as Robert Boyajian II and Sam Pedigo II, 5 from Argentina, 1 from Panama, 2 from Mexico, including former YCS Champion, Angel Flores, 1 from Brazil, 3 from Colombia, 3 from Bolivia, 13 from Chile, and 19 from Ecuador, including Marco Jonatan Oviedo Castro, the 2012 South American Champion, all vying to become the new YCS Champion! Welcome all, and let the best Duelist win!"]
+    },
+    {
+      "t": "p",
+      "r": ["Welcome to the YCS – Lima"]
+    }
+  ]
+}

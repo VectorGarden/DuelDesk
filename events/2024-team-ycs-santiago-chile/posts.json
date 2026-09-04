@@ -1,164 +1,20 @@
 [
-  {
-    "title": "TEAM YCS Santiago, Chile: Top 16 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-top-16-pairings/",
-    "modified": "2024-09-29T07:47:24-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-top-8-pairings/",
-    "modified": "2024-09-29T10:23:54-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Top 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-top-4-pairings/",
-    "modified": "2024-09-29T10:27:12-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Round 1 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-1-pairings/",
-    "modified": "2024-09-28T11:29:11-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Round 2 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-2-pairings/",
-    "modified": "2024-09-28T11:48:54-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Round 3 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-3-pairings/",
-    "modified": "2024-09-28T11:56:36-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Round 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-3-pairings-2/",
-    "modified": "2024-09-28T12:28:46-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Round 5 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-5-pairings/",
-    "modified": "2024-09-28T12:38:06-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Round 7 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-7-pairings/",
-    "modified": "2024-09-28T14:23:05-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Standings after Round 2",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-2/",
-    "modified": "2024-09-28T11:53:24-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-3/",
-    "modified": "2024-09-28T11:58:10-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-4/",
-    "modified": "2024-09-28T12:32:48-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-5/",
-    "modified": "2024-09-28T12:50:01-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-6/",
-    "modified": "2024-09-28T14:21:48-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-7/",
-    "modified": "2024-09-28T14:59:38-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "Congratulations to Team TCG Life Anexo",
-    "url": "https://yugiohblog.konami.com/2024/ycs/congratulations-to-team-tcg-life-anexo/",
-    "modified": "2024-09-29T14:41:48-07:00",
-    "kind": "result",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "TEAM YCS Santiago, Chile: Final Match",
-    "url": "https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-final-match/",
-    "modified": "2024-09-29T14:31:57-07:00",
-    "kind": "news",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  },
-  {
-    "title": "Welcome to TEAM YCS Santiago, Chile!",
-    "url": "https://yugiohblog.konami.com/2024/ycs/welcome-to-team-ycs-santiago-chile/",
-    "modified": "2024-09-28T11:16:40-07:00",
-    "kind": "news",
-    "event": "TEAM YCS Santiago",
-    "format": null,
-    "slug": "2024-team-ycs-santiago-chile"
-  }
+  {"title":"TEAM YCS Santiago, Chile: Top 16 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-top-16-pairings/","modified":"2024-09-29T07:47:24-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Top 8 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-top-8-pairings/","modified":"2024-09-29T10:23:54-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Top 4 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-top-4-pairings/","modified":"2024-09-29T10:27:12-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Round 1 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-1-pairings/","modified":"2024-09-28T11:29:11-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Round 2 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-2-pairings/","modified":"2024-09-28T11:48:54-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Round 3 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-3-pairings/","modified":"2024-09-28T11:56:36-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Round 4 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-3-pairings-2/","modified":"2024-09-28T12:28:46-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Round 5 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-5-pairings/","modified":"2024-09-28T12:38:06-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Round 7 Pairings","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-round-7-pairings/","modified":"2024-09-28T14:23:05-07:00","kind":"pairings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Standings after Round 2","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-2/","modified":"2024-09-28T11:53:24-07:00","kind":"standings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Standings after Round 3","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-3/","modified":"2024-09-28T11:58:10-07:00","kind":"standings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Standings after Round 4","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-4/","modified":"2024-09-28T12:32:48-07:00","kind":"standings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Standings after Round 5","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-5/","modified":"2024-09-28T12:50:01-07:00","kind":"standings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Standings after Round 6","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-6/","modified":"2024-09-28T14:21:48-07:00","kind":"standings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Standings after Round 7","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-standings-after-round-7/","modified":"2024-09-28T14:59:38-07:00","kind":"standings","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"Congratulations to Team TCG Life Anexo","url":"https://yugiohblog.konami.com/2024/ycs/congratulations-to-team-tcg-life-anexo/","modified":"2024-09-29T14:41:48-07:00","kind":"result","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"TEAM YCS Santiago, Chile: Final Match","url":"https://yugiohblog.konami.com/2024/ycs/team-ycs-santiago-chile-final-match/","modified":"2024-09-29T14:31:57-07:00","kind":"news","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"},
+  {"title":"Welcome to TEAM YCS Santiago, Chile!","url":"https://yugiohblog.konami.com/2024/ycs/welcome-to-team-ycs-santiago-chile/","modified":"2024-09-28T11:16:40-07:00","kind":"news","event":"TEAM YCS Santiago","format":null,"slug":"2024-team-ycs-santiago-chile"}
 ]

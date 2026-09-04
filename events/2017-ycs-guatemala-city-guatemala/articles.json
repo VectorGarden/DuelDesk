@@ -1,1 +1,90 @@
-{"https://yugiohblog.konami.com/2017/ycs/ycs-guatemala-city-guatemala-saturdays-dragon-duel-winners/":[{"t":"p","r":["Here are Saturday’s Dragon Duel Winners:"]},{"t":"p","r":["Winner: Daniel Villatoro, 13 years old. (Majespecter-Metalfoes)"]},{"t":"p","r":["Runner-up: Daniel Mazariegos, 9 years old. (ABC)"]},{"t":"p","r":["Third Place: Cid Eduardo Mendez, 9 yeards old. (Lightsworns)"]},{"t":"p","r":["Fourth Place: Angel Daniel Rivas, 9 years old. (Red-Eyes)"]}],"https://yugiohblog.konami.com/2017/ycs/ycs-guatemala-city-guatemala-qq-what-deck-are-you-playing-this-weekend/":[{"t":"p","r":["QQ stands for Quick Questions! We surveyed some of this weekend’s competitors to find out which Decks they’re using. Here are some of the answers we received:"]},{"t":"p","r":["“Paleozoics-Frogs.” – ",{"who":"Lester Adan Mejicanos","t":"Lester Mejicanos"}," from Guatemala."]},{"t":"p","r":["“Paleozoics-Frogs” – Luis Crispin from El Salvador."]},{"t":"p","r":["“Zoodiacs-Infernoid” – ",{"who":"Jonathan Josue Perez Garcia","t":"Jonathan Perez"}," from El Salvador."]},{"t":"p","r":["“Mermails” – Juan Jose Chavez from Costa Rica."]},{"t":"p","r":["“Blue-Eyes” – Ricardo Reik from Brazil."]},{"t":"p","r":["“Fluffal” – ",{"who":"Heriberto Fernando Rodriguez Melendez","t":"Heriberto Rodriguez"}," from Costa Rica."]},{"t":"p","r":["“Wind Witch Artifact-Invoked” – Jose Noinda from Nicaragua."]},{"t":"p","r":["“Zoodiacs” – ",{"who":"Luis Armando Samayoa Morales","t":"Luis Samayoa"}," from Guatemala."]},{"t":"p","r":["“Dark Lords” – ",{"who":"Erick Orlando Molina Lavarreda","t":"Erick Molina"}," from Guatemala."]},{"t":"p","r":["“Paleozoics-Frogs” ",{"who":"Jose Evelio Cruz Palacios","t":"Jose Cruz"}," from El Salvador."]},{"t":"p","r":["“Zoodiacs” – ",{"who":"Arnold Nadaban Zanabria","t":"Arnold Nadaban"}," from Peru."]},{"t":"p","r":["“Infernoids” – ",{"who":"Luis Guillermo Montero Villegas","t":"Luis Montero"}," from Costa Rica."]},{"t":"p","r":["“Infernoids” – Daniel Rodriguez from Honduras."]},{"t":"p","r":["“Zoodiacs” – ",{"who":"Josue Francisco Avalos Cerdas","t":"Josue Avalos"}," from Costa Rica."]},{"t":"p","r":["“Metalfoes” – ",{"who":"Jorge Isaac Izaguirre Ordones","t":"Jorge Izaguirre"}," from Honduras."]}]}
+{
+  "https://yugiohblog.konami.com/2017/ycs/ycs-guatemala-city-guatemala-saturdays-dragon-duel-winners/": [
+    {
+      "t": "p",
+      "r": ["Here are Saturday’s Dragon Duel Winners:"]
+    },
+    {
+      "t": "p",
+      "r": ["Winner: Daniel Villatoro, 13 years old. (Majespecter-Metalfoes)"]
+    },
+    {
+      "t": "p",
+      "r": ["Runner-up: Daniel Mazariegos, 9 years old. (ABC)"]
+    },
+    {
+      "t": "p",
+      "r": ["Third Place: Cid Eduardo Mendez, 9 yeards old. (Lightsworns)"]
+    },
+    {
+      "t": "p",
+      "r": ["Fourth Place: Angel Daniel Rivas, 9 years old. (Red-Eyes)"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2017/ycs/ycs-guatemala-city-guatemala-qq-what-deck-are-you-playing-this-weekend/": [
+    {
+      "t": "p",
+      "r": ["QQ stands for Quick Questions! We surveyed some of this weekend’s competitors to find out which Decks they’re using. Here are some of the answers we received:"]
+    },
+    {
+      "t": "p",
+      "r": ["“Paleozoics-Frogs.” – ",{"who":"Lester Adan Mejicanos","t":"Lester Mejicanos"}," from Guatemala."]
+    },
+    {
+      "t": "p",
+      "r": ["“Paleozoics-Frogs” – Luis Crispin from El Salvador."]
+    },
+    {
+      "t": "p",
+      "r": ["“Zoodiacs-Infernoid” – ",{"who":"Jonathan Josue Perez Garcia","t":"Jonathan Perez"}," from El Salvador."]
+    },
+    {
+      "t": "p",
+      "r": ["“Mermails” – Juan Jose Chavez from Costa Rica."]
+    },
+    {
+      "t": "p",
+      "r": ["“Blue-Eyes” – Ricardo Reik from Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["“Fluffal” – ",{"who":"Heriberto Fernando Rodriguez Melendez","t":"Heriberto Rodriguez"}," from Costa Rica."]
+    },
+    {
+      "t": "p",
+      "r": ["“Wind Witch Artifact-Invoked” – Jose Noinda from Nicaragua."]
+    },
+    {
+      "t": "p",
+      "r": ["“Zoodiacs” – ",{"who":"Luis Armando Samayoa Morales","t":"Luis Samayoa"}," from Guatemala."]
+    },
+    {
+      "t": "p",
+      "r": ["“Dark Lords” – ",{"who":"Erick Orlando Molina Lavarreda","t":"Erick Molina"}," from Guatemala."]
+    },
+    {
+      "t": "p",
+      "r": ["“Paleozoics-Frogs” ",{"who":"Jose Evelio Cruz Palacios","t":"Jose Cruz"}," from El Salvador."]
+    },
+    {
+      "t": "p",
+      "r": ["“Zoodiacs” – ",{"who":"Arnold Nadaban Zanabria","t":"Arnold Nadaban"}," from Peru."]
+    },
+    {
+      "t": "p",
+      "r": ["“Infernoids” – ",{"who":"Luis Guillermo Montero Villegas","t":"Luis Montero"}," from Costa Rica."]
+    },
+    {
+      "t": "p",
+      "r": ["“Infernoids” – Daniel Rodriguez from Honduras."]
+    },
+    {
+      "t": "p",
+      "r": ["“Zoodiacs” – ",{"who":"Josue Francisco Avalos Cerdas","t":"Josue Avalos"}," from Costa Rica."]
+    },
+    {
+      "t": "p",
+      "r": ["“Metalfoes” – ",{"who":"Jorge Isaac Izaguirre Ordones","t":"Jorge Izaguirre"}," from Honduras."]
+    }
+  ]
+}

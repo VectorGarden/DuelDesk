@@ -1,255 +1,30 @@
 [
-  {
-    "title": "Central America WCQ: Pairings for Round 9",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-9-5/",
-    "modified": "2024-06-23T10:23:43-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 10",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-10-5/",
-    "modified": "2024-06-23T10:37:10-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 11",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-11-2/",
-    "modified": "2024-06-23T15:36:56-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 64 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-64-pairings-3/",
-    "modified": "2024-06-23T15:40:52-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 32 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-32-pairings-3/",
-    "modified": "2024-06-23T16:28:16-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 16 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-16-pairings-5/",
-    "modified": "2024-06-23T16:30:47-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-8-pairings-5/",
-    "modified": "2024-06-23T16:34:36-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-4-pairings-5/",
-    "modified": "2024-06-23T19:29:52-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 1",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-1-2/",
-    "modified": "2024-06-22T12:28:40-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 2",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-2-2/",
-    "modified": "2024-06-22T12:30:49-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 3",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-3-2/",
-    "modified": "2024-06-22T12:36:06-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 4",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-4-4/",
-    "modified": "2024-06-22T14:11:16-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 5",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-5-4/",
-    "modified": "2024-06-22T14:17:50-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 6",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-6-5/",
-    "modified": "2024-06-22T15:49:41-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 7",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-7-5/",
-    "modified": "2024-06-22T17:20:27-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 8",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-8-4/",
-    "modified": "2024-06-22T18:48:40-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 9",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-9-4/",
-    "modified": "2024-06-23T10:30:05-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 10",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-10-4/",
-    "modified": "2024-06-23T15:35:32-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 2",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-2-4/",
-    "modified": "2024-06-22T12:33:46-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2024/championships/2024-central-america-wcq/central-america-wcq-standings-after-round-3-5/",
-    "modified": "2024-06-22T14:08:19-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-4-5/",
-    "modified": "2024-06-22T14:16:32-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-5-5/",
-    "modified": "2024-06-22T15:46:26-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-6-5/",
-    "modified": "2024-06-22T17:14:25-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-7-5/",
-    "modified": "2024-06-22T18:45:14-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-8-4/",
-    "modified": "2024-06-22T19:28:43-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "We have a winner!",
-    "url": "https://yugiohblog.konami.com/2024/championships/we-have-a-winner-12/",
-    "modified": "2024-06-23T19:42:17-07:00",
-    "kind": "result",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Final Match",
-    "url": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-final-match/",
-    "modified": "2024-06-23T19:31:01-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2024",
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  },
-  {
-    "title": "Welcome to the 2024 Central America WCQ!",
-    "url": "https://yugiohblog.konami.com/2024/championships/welcome-to-the-2024-central-america-wcq/",
-    "modified": "2024-06-22T10:44:30-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2024",
-    "article": true,
-    "format": null,
-    "slug": "2024-central-america-wcq"
-  }
+  {"title":"Central America WCQ: Pairings for Round 9","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-9-5/","modified":"2024-06-23T10:23:43-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 10","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-10-5/","modified":"2024-06-23T10:37:10-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 11","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-11-2/","modified":"2024-06-23T15:36:56-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Top 64 Pairings","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-64-pairings-3/","modified":"2024-06-23T15:40:52-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Top 32 Pairings","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-32-pairings-3/","modified":"2024-06-23T16:28:16-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Top 16 Pairings","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-16-pairings-5/","modified":"2024-06-23T16:30:47-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Top 8 Pairings","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-8-pairings-5/","modified":"2024-06-23T16:34:36-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Top 4 Pairings","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-4-pairings-5/","modified":"2024-06-23T19:29:52-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 1","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-1-2/","modified":"2024-06-22T12:28:40-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 2","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-2-2/","modified":"2024-06-22T12:30:49-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 3","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-3-2/","modified":"2024-06-22T12:36:06-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 4","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-4-4/","modified":"2024-06-22T14:11:16-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 5","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-5-4/","modified":"2024-06-22T14:17:50-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 6","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-6-5/","modified":"2024-06-22T15:49:41-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 7","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-7-5/","modified":"2024-06-22T17:20:27-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 8","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-pairings-for-round-8-4/","modified":"2024-06-22T18:48:40-07:00","kind":"pairings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 9","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-9-4/","modified":"2024-06-23T10:30:05-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 10","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-10-4/","modified":"2024-06-23T15:35:32-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 2","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-2-4/","modified":"2024-06-22T12:33:46-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 3","url":"https://yugiohblog.konami.com/2024/championships/2024-central-america-wcq/central-america-wcq-standings-after-round-3-5/","modified":"2024-06-22T14:08:19-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 4","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-4-5/","modified":"2024-06-22T14:16:32-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 5","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-5-5/","modified":"2024-06-22T15:46:26-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 6","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-6-5/","modified":"2024-06-22T17:14:25-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 7","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-7-5/","modified":"2024-06-22T18:45:14-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 8","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-standings-after-round-8-4/","modified":"2024-06-22T19:28:43-07:00","kind":"standings","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"We have a winner!","url":"https://yugiohblog.konami.com/2024/championships/we-have-a-winner-12/","modified":"2024-06-23T19:42:17-07:00","kind":"result","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Central America WCQ: Final Match","url":"https://yugiohblog.konami.com/2024/championships/central-america-wcq-final-match/","modified":"2024-06-23T19:31:01-07:00","kind":"news","event":"Central America WCQ 2024","format":null,"slug":"2024-central-america-wcq"},
+  {"title":"Welcome to the 2024 Central America WCQ!","url":"https://yugiohblog.konami.com/2024/championships/welcome-to-the-2024-central-america-wcq/","modified":"2024-06-22T10:44:30-07:00","kind":"news","event":"Central America WCQ 2024","article":true,"format":null,"slug":"2024-central-america-wcq"}
 ]

@@ -1,254 +1,28 @@
 [
-  {
-    "title": "Pairings & : Top 32",
-    "url": "https://yugiohblog.konami.com/2014/ycs/pairings-top-32-2/",
-    "modified": "2014-09-07T10:46:32-07:00",
-    "kind": "pairings",
-    "event": "YCS Toronto",
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Standings: Round 9",
-    "url": "https://yugiohblog.konami.com/2014/ycs/standings-round-9-3/",
-    "modified": "2014-09-07T09:09:18-07:00",
-    "kind": "standings",
-    "event": "YCS Toronto",
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Standings: Round 10",
-    "url": "https://yugiohblog.konami.com/2014/ycs/standings-round-10-2/",
-    "modified": "2014-09-07T10:39:01-07:00",
-    "kind": "standings",
-    "event": "YCS Toronto",
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Standings: Round 3",
-    "url": "https://yugiohblog.konami.com/2014/ycs/standings-round-3-4/",
-    "modified": "2014-09-06T12:33:33-07:00",
-    "kind": "standings",
-    "event": "YCS Toronto",
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Standings: Round 4",
-    "url": "https://yugiohblog.konami.com/2014/ycs/standings-round-4-4/",
-    "modified": "2014-09-06T15:45:56-07:00",
-    "kind": "standings",
-    "event": "YCS Toronto",
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Standings: Round 5",
-    "url": "https://yugiohblog.konami.com/2014/ycs/standings-round-5-4/",
-    "modified": "2014-09-06T15:51:08-07:00",
-    "kind": "standings",
-    "event": "YCS Toronto",
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Standings: Round 6",
-    "url": "https://yugiohblog.konami.com/2014/ycs/standings-round-6-4/",
-    "modified": "2014-09-06T16:11:07-07:00",
-    "kind": "standings",
-    "event": "YCS Toronto",
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Standings: Round 7",
-    "url": "https://yugiohblog.konami.com/2014/ycs/standings-round-7-3/",
-    "modified": "2014-09-06T21:44:57-07:00",
-    "kind": "standings",
-    "event": "YCS Toronto",
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 9 Feature Match: Bo Tang Versus Marc Carisse",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-9-feature-match-bo-tang-versus-marc-carisse/",
-    "modified": "2014-09-07T07:45:01-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Quick Questions: Your Favorite Side Deck Card?",
-    "url": "https://yugiohblog.konami.com/2014/ycs/quick-questions-your-favorite-side-deck-card/",
-    "modified": "2014-09-07T09:54:57-07:00",
-    "kind": "deck",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "YCS Toronto 2014: And the winner is…",
-    "url": "https://yugiohblog.konami.com/2014/ycs/ycs-toronto-2014-and-the-winner-is/",
-    "modified": "2014-09-07T18:03:40-07:00",
-    "kind": "result",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Welcome to YCS Toronto",
-    "url": "https://yugiohblog.konami.com/2014/ycs/welcome-to-ycs-toronto-3/",
-    "modified": "2014-09-06T09:21:46-07:00",
-    "kind": "news",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 10 Feature Match: Yuhang Li Versus Kenneth McCarthy",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-10-feature-match-yuhang-li-versus-kenneth-mccarthy/",
-    "modified": "2014-09-07T09:12:07-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Quick Questions: What Deck Will Be The Most Popular?",
-    "url": "https://yugiohblog.konami.com/2014/ycs/quick-questions-what-deck-will-be-the-most-popular/",
-    "modified": "2014-09-07T10:00:03-07:00",
-    "kind": "deck",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Top 32 Feature Match: Sehabbi Kheireddine Versus Claude Doiron",
-    "url": "https://yugiohblog.konami.com/2014/ycs/top-32-feature-match-sehabbi-kheireddine-versus-claude-doiron/",
-    "modified": "2014-09-07T12:55:53-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Quick Questions: What Deck Are You Playing?",
-    "url": "https://yugiohblog.konami.com/2014/ycs/quick-questions-what-deck-are-you-playing/",
-    "modified": "2014-09-07T10:01:57-07:00",
-    "kind": "deck",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Top 16 Feature Match: Desmond Johnson Versus Sean McCabe",
-    "url": "https://yugiohblog.konami.com/2014/ycs/top-16-feature-match-desmond-johnson-versus-sean-mccabe/",
-    "modified": "2014-09-07T13:34:17-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Top 8 Feature Match: Sean McCabe Versus Mario Angelo De Micco",
-    "url": "https://yugiohblog.konami.com/2014/ycs/top-8-feature-match-sean-mccabe-versus-mario-angelo-de-micco/",
-    "modified": "2014-09-07T15:04:22-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Top 4 Feature Match: Sean McCabe Versus Ruo Chen Mo",
-    "url": "https://yugiohblog.konami.com/2014/ycs/top-4-feature-match-sean-mccabe-versus-ruo-chen-mo/",
-    "modified": "2014-09-07T17:34:54-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 1 Feature Match: Sehabi Kheireddine Versus Bryan Lucier",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-1-feature-match-sehabi-kheireddine-versus-bryan-lucier/",
-    "modified": "2014-09-06T09:37:47-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 2 Feature Match: Billy Brake Versus Siu Ye",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-2-feature-match-billy-brake-versus-siu-ye/",
-    "modified": "2014-09-06T11:29:56-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 3 Feature Match: James Ribis Versus Dayton Yuen",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-3-feature-match-james-ribis-versus-dayton-yuen/",
-    "modified": "2014-09-06T12:38:30-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 4 Feature Match: Aaron Chase Furman Versus Dale Bellido",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-4-feature-match-aaron-chase-furman-versus-dale-bellido/",
-    "modified": "2014-09-06T12:53:26-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 5 Feature Match: Hunter Raymond Knight Versus Manpreet Rattan",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-5-feature-match-hunter-raymond-knight-versus-manpreet-rattan/",
-    "modified": "2014-09-06T14:29:54-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 6 Feature Match: Thomas Morran Versus Ruo Chen Mo",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-6-feature-match-thomas-morran-versus-ruo-chen-mo/",
-    "modified": "2014-09-06T16:08:46-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  },
-  {
-    "title": "Round 8 Feature Match: Yuhang Li Versus David Green",
-    "url": "https://yugiohblog.konami.com/2014/ycs/round-8-feature-match-yuhang-li-versus-david-green/",
-    "modified": "2014-09-06T21:54:47-07:00",
-    "kind": "feature",
-    "event": "YCS Toronto",
-    "article": true,
-    "format": null,
-    "slug": "2014-ycs-toronto"
-  }
+  {"title":"Pairings & : Top 32","url":"https://yugiohblog.konami.com/2014/ycs/pairings-top-32-2/","modified":"2014-09-07T10:46:32-07:00","kind":"pairings","event":"YCS Toronto","format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Standings: Round 9","url":"https://yugiohblog.konami.com/2014/ycs/standings-round-9-3/","modified":"2014-09-07T09:09:18-07:00","kind":"standings","event":"YCS Toronto","format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Standings: Round 10","url":"https://yugiohblog.konami.com/2014/ycs/standings-round-10-2/","modified":"2014-09-07T10:39:01-07:00","kind":"standings","event":"YCS Toronto","format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Standings: Round 3","url":"https://yugiohblog.konami.com/2014/ycs/standings-round-3-4/","modified":"2014-09-06T12:33:33-07:00","kind":"standings","event":"YCS Toronto","format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Standings: Round 4","url":"https://yugiohblog.konami.com/2014/ycs/standings-round-4-4/","modified":"2014-09-06T15:45:56-07:00","kind":"standings","event":"YCS Toronto","format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Standings: Round 5","url":"https://yugiohblog.konami.com/2014/ycs/standings-round-5-4/","modified":"2014-09-06T15:51:08-07:00","kind":"standings","event":"YCS Toronto","format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Standings: Round 6","url":"https://yugiohblog.konami.com/2014/ycs/standings-round-6-4/","modified":"2014-09-06T16:11:07-07:00","kind":"standings","event":"YCS Toronto","format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Standings: Round 7","url":"https://yugiohblog.konami.com/2014/ycs/standings-round-7-3/","modified":"2014-09-06T21:44:57-07:00","kind":"standings","event":"YCS Toronto","format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 9 Feature Match: Bo Tang Versus Marc Carisse","url":"https://yugiohblog.konami.com/2014/ycs/round-9-feature-match-bo-tang-versus-marc-carisse/","modified":"2014-09-07T07:45:01-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Quick Questions: Your Favorite Side Deck Card?","url":"https://yugiohblog.konami.com/2014/ycs/quick-questions-your-favorite-side-deck-card/","modified":"2014-09-07T09:54:57-07:00","kind":"deck","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"YCS Toronto 2014: And the winner is…","url":"https://yugiohblog.konami.com/2014/ycs/ycs-toronto-2014-and-the-winner-is/","modified":"2014-09-07T18:03:40-07:00","kind":"result","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Welcome to YCS Toronto","url":"https://yugiohblog.konami.com/2014/ycs/welcome-to-ycs-toronto-3/","modified":"2014-09-06T09:21:46-07:00","kind":"news","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 10 Feature Match: Yuhang Li Versus Kenneth McCarthy","url":"https://yugiohblog.konami.com/2014/ycs/round-10-feature-match-yuhang-li-versus-kenneth-mccarthy/","modified":"2014-09-07T09:12:07-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Quick Questions: What Deck Will Be The Most Popular?","url":"https://yugiohblog.konami.com/2014/ycs/quick-questions-what-deck-will-be-the-most-popular/","modified":"2014-09-07T10:00:03-07:00","kind":"deck","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Top 32 Feature Match: Sehabbi Kheireddine Versus Claude Doiron","url":"https://yugiohblog.konami.com/2014/ycs/top-32-feature-match-sehabbi-kheireddine-versus-claude-doiron/","modified":"2014-09-07T12:55:53-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Quick Questions: What Deck Are You Playing?","url":"https://yugiohblog.konami.com/2014/ycs/quick-questions-what-deck-are-you-playing/","modified":"2014-09-07T10:01:57-07:00","kind":"deck","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Top 16 Feature Match: Desmond Johnson Versus Sean McCabe","url":"https://yugiohblog.konami.com/2014/ycs/top-16-feature-match-desmond-johnson-versus-sean-mccabe/","modified":"2014-09-07T13:34:17-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Top 8 Feature Match: Sean McCabe Versus Mario Angelo De Micco","url":"https://yugiohblog.konami.com/2014/ycs/top-8-feature-match-sean-mccabe-versus-mario-angelo-de-micco/","modified":"2014-09-07T15:04:22-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Top 4 Feature Match: Sean McCabe Versus Ruo Chen Mo","url":"https://yugiohblog.konami.com/2014/ycs/top-4-feature-match-sean-mccabe-versus-ruo-chen-mo/","modified":"2014-09-07T17:34:54-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 1 Feature Match: Sehabi Kheireddine Versus Bryan Lucier","url":"https://yugiohblog.konami.com/2014/ycs/round-1-feature-match-sehabi-kheireddine-versus-bryan-lucier/","modified":"2014-09-06T09:37:47-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 2 Feature Match: Billy Brake Versus Siu Ye","url":"https://yugiohblog.konami.com/2014/ycs/round-2-feature-match-billy-brake-versus-siu-ye/","modified":"2014-09-06T11:29:56-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 3 Feature Match: James Ribis Versus Dayton Yuen","url":"https://yugiohblog.konami.com/2014/ycs/round-3-feature-match-james-ribis-versus-dayton-yuen/","modified":"2014-09-06T12:38:30-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 4 Feature Match: Aaron Chase Furman Versus Dale Bellido","url":"https://yugiohblog.konami.com/2014/ycs/round-4-feature-match-aaron-chase-furman-versus-dale-bellido/","modified":"2014-09-06T12:53:26-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 5 Feature Match: Hunter Raymond Knight Versus Manpreet Rattan","url":"https://yugiohblog.konami.com/2014/ycs/round-5-feature-match-hunter-raymond-knight-versus-manpreet-rattan/","modified":"2014-09-06T14:29:54-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 6 Feature Match: Thomas Morran Versus Ruo Chen Mo","url":"https://yugiohblog.konami.com/2014/ycs/round-6-feature-match-thomas-morran-versus-ruo-chen-mo/","modified":"2014-09-06T16:08:46-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"},
+  {"title":"Round 8 Feature Match: Yuhang Li Versus David Green","url":"https://yugiohblog.konami.com/2014/ycs/round-8-feature-match-yuhang-li-versus-david-green/","modified":"2014-09-06T21:54:47-07:00","kind":"feature","event":"YCS Toronto","article":true,"format":null,"slug":"2014-ycs-toronto"}
 ]

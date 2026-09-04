@@ -1,1 +1,46 @@
-{"https://yugiohblog.konami.com/2019/ycs/ycs-quito-ecuador-sunday-dragon-duel-winners/":[{"t":"p","r":["Here are your Top 4 Sunday Dragon Duelists!"]},{"t":"p","r":["From left to right:"]},{"t":"p","r":["1st Place: Isaac Rivadeneira (Thunder Dragon)"]},{"t":"p","r":["2nd Place: Lucas Correa (True Draco)"]},{"t":"p","r":["3rd Place: Ricardo Ibarra (Nekroz)"]},{"t":"p","r":["4th Place: Kaiky Zombie Blue-Eyes"]}],"https://yugiohblog.konami.com/2019/ycs/welcome-to-the-yu-gi-oh-championship-series-quito-ecuador/":[{"t":"p","r":["Write caption…"]},{"t":"p","r":["Welcome to YCS Quito!"]},{"t":"p","r":["We’ve got a total of 406 Duelists ready to Duel their hardest to make it to the top"]},{"t":"p","r":["This weekend we have representatives from various countries, including Brazil, Bolivia, Chile, Colombia, Costa Rica, France, Honduras, Mexico, The Netherlands, Panama, Peru, United States, Venezuela and of course, Ecuador."]}]}
+{
+  "https://yugiohblog.konami.com/2019/ycs/ycs-quito-ecuador-sunday-dragon-duel-winners/": [
+    {
+      "t": "p",
+      "r": ["Here are your Top 4 Sunday Dragon Duelists!"]
+    },
+    {
+      "t": "p",
+      "r": ["From left to right:"]
+    },
+    {
+      "t": "p",
+      "r": ["1st Place: Isaac Rivadeneira (Thunder Dragon)"]
+    },
+    {
+      "t": "p",
+      "r": ["2nd Place: Lucas Correa (True Draco)"]
+    },
+    {
+      "t": "p",
+      "r": ["3rd Place: Ricardo Ibarra (Nekroz)"]
+    },
+    {
+      "t": "p",
+      "r": ["4th Place: Kaiky Zombie Blue-Eyes"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2019/ycs/welcome-to-the-yu-gi-oh-championship-series-quito-ecuador/": [
+    {
+      "t": "p",
+      "r": ["Write caption…"]
+    },
+    {
+      "t": "p",
+      "r": ["Welcome to YCS Quito!"]
+    },
+    {
+      "t": "p",
+      "r": ["We’ve got a total of 406 Duelists ready to Duel their hardest to make it to the top"]
+    },
+    {
+      "t": "p",
+      "r": ["This weekend we have representatives from various countries, including Brazil, Bolivia, Chile, Colombia, Costa Rica, France, Honduras, Mexico, The Netherlands, Panama, Peru, United States, Venezuela and of course, Ecuador."]
+    }
+  ]
+}

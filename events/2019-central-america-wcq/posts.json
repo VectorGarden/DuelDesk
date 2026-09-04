@@ -1,451 +1,49 @@
 [
-  {
-    "title": "Central America WCQ: Pairings for Round 9",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-9-3/",
-    "modified": "2019-06-09T11:34:35-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 10",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-10-3/",
-    "modified": "2019-06-09T11:45:43-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 64 Pairings",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-11/",
-    "modified": "2019-06-09T12:08:56-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 32 Pairings",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-32-pairings/",
-    "modified": "2019-06-09T13:37:46-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 16 Pairings",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-16-pairings-3/",
-    "modified": "2019-06-09T14:26:33-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-8-pairings-3/",
-    "modified": "2019-06-09T16:13:23-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-4-pairings-3/",
-    "modified": "2019-06-09T16:17:27-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 3",
-    "url": "https://yugiohblog.konami.com/2019/championships/wcq-ca-2019-pairings-for-round-3/",
-    "modified": "2019-06-08T14:44:07-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 4",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-4-2/",
-    "modified": "2019-06-08T12:51:54-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 5",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-5-2/",
-    "modified": "2019-06-08T12:57:41-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 6",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-6-3/",
-    "modified": "2019-06-08T15:38:38-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Pairings for Round 7",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-7-3/",
-    "modified": "2019-06-08T15:51:57-07:00",
-    "kind": "pairings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 9",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-9-2/",
-    "modified": "2019-06-09T11:39:39-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 10",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-10-2/",
-    "modified": "2019-06-09T11:47:51-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 2",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-2/",
-    "modified": "2019-06-08T12:39:22-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-3-2/",
-    "modified": "2019-06-08T12:48:51-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-4-2/",
-    "modified": "2019-06-08T12:54:56-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-5-3/",
-    "modified": "2019-06-08T15:26:14-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-6-3/",
-    "modified": "2019-06-08T15:49:09-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-7-3/",
-    "modified": "2019-06-08T15:58:22-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-8-2/",
-    "modified": "2019-06-08T17:18:29-07:00",
-    "kind": "standings",
-    "event": "Central America WCQ 2019",
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Round 9 Feature Match: Gerald Yagans South Chaves vs. Jonathan Rogelio Padilla Medina",
-    "url": "https://yugiohblog.konami.com/2019/championships/round-9-feature-match-gerald-yagans-south-chaves-vs-jonathan-rogelio-padilla-medina/",
-    "modified": "2019-06-09T08:30:12-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: Top Cut Deck Breakdown!",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-cut-deck-breakdown/",
-    "modified": "2019-06-09T17:02:32-07:00",
-    "kind": "deck",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America Dragon Duel WCQ Winner!",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-dragon-duel-wcq-winner-2/",
-    "modified": "2019-06-09T18:25:01-07:00",
-    "kind": "result",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ Top 8!",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-8-2/",
-    "modified": "2026-06-29T16:27:14-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Top 64 Feature Match: Jose Carlo Carrillo Toscano vs. Aldo Augusto Montalvan Izquierdo",
-    "url": "https://yugiohblog.konami.com/2019/championships/top-64-feature-match-jose-carlo-carrillo-toscano-vs-aldo-augusto-montalvan-izquierdo/",
-    "modified": "2019-06-09T12:18:24-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ Winner!",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-winner-2/",
-    "modified": "2019-06-09T18:31:12-07:00",
-    "kind": "result",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Top Tables Update: Round 9",
-    "url": "https://yugiohblog.konami.com/2019/championships/top-tables-update-round-9-24/",
-    "modified": "2019-06-09T10:34:02-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Top 4 Feature Match: Alejandro Garcia Moreno vs. Erick Bernardo Vega Quezada",
-    "url": "https://yugiohblog.konami.com/2019/championships/top-4-feature-match-alejandro-garcia-moreno-vs-erick-bernardo-vega-quezada/",
-    "modified": "2019-06-09T17:41:04-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Top Tables Update: Round 10",
-    "url": "https://yugiohblog.konami.com/2019/ycs/top-tables-update-round-10-21/",
-    "modified": "2019-06-09T11:42:43-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Finals Feature Match: Alejandro Garcia Moreno vs. Angel Fernando Ovalle Rivera",
-    "url": "https://yugiohblog.konami.com/2019/championships/finals-feature-match-alejandro-garcia-moreno-vs-angel-fernando-ovalle-rivera/",
-    "modified": "2019-06-09T18:25:59-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "2019 Central America WCQ and Dragon Duel WCQ Trophies!",
-    "url": "https://yugiohblog.konami.com/2019/championships/2019-central-america-wcq-and-dragon-duel-wcq-trophies/",
-    "modified": "2019-06-09T17:09:15-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Round 1 Feature Match: Abraham Roger Guzman Garcia vs. Joshua Josue Rivera Escalante",
-    "url": "https://yugiohblog.konami.com/2019/championships/round-1-feature-match-abraham-roger-guzman-garcia-vs-joshua-josue-rivera-escalante/",
-    "modified": "2019-06-08T11:24:14-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America Dragon Duel WCQ Top 4!",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-dragon-duel-wcq-top-4-3/",
-    "modified": "2019-06-09T19:00:44-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Round 3 Feature Match: Adrian Madriz Espinoza vs. Joaquin Vicente Dominguez Bautista",
-    "url": "https://yugiohblog.konami.com/2019/championships/round-3-feature-match-adrian-madriz-espinoza-vs-joaquin-vicente-dominguez-bautista/",
-    "modified": "2019-06-08T14:43:59-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America WCQ: VIP Duelists!",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-wcq-vip-duelists/",
-    "modified": "2019-06-08T14:44:17-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Round 5 Feature Match: Angel Fernando Ovalle Rivera vs. Alan Eduardo Ortega Hernandez",
-    "url": "https://yugiohblog.konami.com/2019/championships/round-5-feature-match-angel-fernando-ovalle-rivera-vs-alan-eduardo-ortega-hernandez/",
-    "modified": "2019-06-08T14:02:52-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "The Central America Dragon Duel WCQ is Underway!",
-    "url": "https://yugiohblog.konami.com/2019/championships/the-central-america-dragon-duel-wcq-is-underway/",
-    "modified": "2019-06-08T14:46:57-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Round 8 Feature Match: Diego Eduardo Ballesteros Higareda vs. Erick Villanueva Priego",
-    "url": "https://yugiohblog.konami.com/2019/championships/round-8-feature-match-diego-eduardo-ballesteros-higareda-vs-erick-villanueva-priego/",
-    "modified": "2019-06-08T16:45:28-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "2019 Central America WCQ: Public Events!",
-    "url": "https://yugiohblog.konami.com/2019/championships/2019-central-america-wcq-public-events/",
-    "modified": "2019-06-08T14:46:44-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": "Public Events",
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America World Qualifying Points Playoff Top 8 Feature Match: Erick Villanueva Priego vs. Jose Carlo Carrillo Toscano",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-world-qualifying-points-playoff-top-8-feature-match-erick-villanueva-priego-vs-jose-carlo-carrillo-toscano/",
-    "modified": "2019-06-07T22:17:36-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Top Tables Update: Round 7",
-    "url": "https://yugiohblog.konami.com/2019/championships/top-tables-update-round-7-19/",
-    "modified": "2019-06-08T15:53:58-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America World Qualifying Points Playoff Top 4 Feature Match: Galileo Mauricio De Obaldia Soza vs. Nelson Omar Andino Ochoa",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-world-qualifying-points-playoff-top-4-feature-match-galileo-mauricio-de-obaldia-soza-vs-nelson-omar-andino-ochoa/",
-    "modified": "2019-06-07T21:24:54-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Top Tables Update: Round 8",
-    "url": "https://yugiohblog.konami.com/2019/championships/top-tables-update-round-8-25/",
-    "modified": "2019-06-08T17:05:00-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Central America World Qualifying Points Playoff Finals Feature Match: Galileo De Obaldia Soza vs. Jose Carlo Carrillo Toscano",
-    "url": "https://yugiohblog.konami.com/2019/championships/central-america-world-qualifying-points-playoff-finals-feature-match-galileo-de-obaldia-soza-vs-jose-carlo-carrillo-toscano/",
-    "modified": "2019-06-07T23:08:33-07:00",
-    "kind": "feature",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "2019 Central America Dragon Duel WCQ: Top 8 Duelists!",
-    "url": "https://yugiohblog.konami.com/2019/championships/2019-central-america-dragon-duel-wcq-top-8-duelists/",
-    "modified": "2019-06-08T18:52:38-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2019-central-america-wcq"
-  },
-  {
-    "title": "Welcome to the 2019 Central America WCQ!",
-    "url": "https://yugiohblog.konami.com/2019/championships/welcome-to-the-2019-central-america-wcq/",
-    "modified": "2019-06-07T20:18:56-07:00",
-    "kind": "news",
-    "event": "Central America WCQ 2019",
-    "article": true,
-    "format": null,
-    "slug": "2019-central-america-wcq"
-  }
+  {"title":"Central America WCQ: Pairings for Round 9","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-9-3/","modified":"2019-06-09T11:34:35-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 10","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-10-3/","modified":"2019-06-09T11:45:43-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Top 64 Pairings","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-11/","modified":"2019-06-09T12:08:56-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Top 32 Pairings","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-32-pairings/","modified":"2019-06-09T13:37:46-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Top 16 Pairings","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-16-pairings-3/","modified":"2019-06-09T14:26:33-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Top 8 Pairings","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-8-pairings-3/","modified":"2019-06-09T16:13:23-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Top 4 Pairings","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-4-pairings-3/","modified":"2019-06-09T16:17:27-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 3","url":"https://yugiohblog.konami.com/2019/championships/wcq-ca-2019-pairings-for-round-3/","modified":"2019-06-08T14:44:07-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 4","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-4-2/","modified":"2019-06-08T12:51:54-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 5","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-5-2/","modified":"2019-06-08T12:57:41-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 6","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-6-3/","modified":"2019-06-08T15:38:38-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Pairings for Round 7","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-pairings-for-round-7-3/","modified":"2019-06-08T15:51:57-07:00","kind":"pairings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 9","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-9-2/","modified":"2019-06-09T11:39:39-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 10","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-10-2/","modified":"2019-06-09T11:47:51-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 2","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-2/","modified":"2019-06-08T12:39:22-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 3","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-3-2/","modified":"2019-06-08T12:48:51-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 4","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-4-2/","modified":"2019-06-08T12:54:56-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 5","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-5-3/","modified":"2019-06-08T15:26:14-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 6","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-6-3/","modified":"2019-06-08T15:49:09-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 7","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-7-3/","modified":"2019-06-08T15:58:22-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Standings after Round 8","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-standings-after-round-8-2/","modified":"2019-06-08T17:18:29-07:00","kind":"standings","event":"Central America WCQ 2019","format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Round 9 Feature Match: Gerald Yagans South Chaves vs. Jonathan Rogelio Padilla Medina","url":"https://yugiohblog.konami.com/2019/championships/round-9-feature-match-gerald-yagans-south-chaves-vs-jonathan-rogelio-padilla-medina/","modified":"2019-06-09T08:30:12-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: Top Cut Deck Breakdown!","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-cut-deck-breakdown/","modified":"2019-06-09T17:02:32-07:00","kind":"deck","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America Dragon Duel WCQ Winner!","url":"https://yugiohblog.konami.com/2019/championships/central-america-dragon-duel-wcq-winner-2/","modified":"2019-06-09T18:25:01-07:00","kind":"result","event":"Central America WCQ 2019","article":true,"format":"Dragon Duel","slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ Top 8!","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-8-2/","modified":"2026-06-29T16:27:14-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Top 64 Feature Match: Jose Carlo Carrillo Toscano vs. Aldo Augusto Montalvan Izquierdo","url":"https://yugiohblog.konami.com/2019/championships/top-64-feature-match-jose-carlo-carrillo-toscano-vs-aldo-augusto-montalvan-izquierdo/","modified":"2019-06-09T12:18:24-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ Winner!","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-winner-2/","modified":"2019-06-09T18:31:12-07:00","kind":"result","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Top Tables Update: Round 9","url":"https://yugiohblog.konami.com/2019/championships/top-tables-update-round-9-24/","modified":"2019-06-09T10:34:02-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Top 4 Feature Match: Alejandro Garcia Moreno vs. Erick Bernardo Vega Quezada","url":"https://yugiohblog.konami.com/2019/championships/top-4-feature-match-alejandro-garcia-moreno-vs-erick-bernardo-vega-quezada/","modified":"2019-06-09T17:41:04-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Top Tables Update: Round 10","url":"https://yugiohblog.konami.com/2019/ycs/top-tables-update-round-10-21/","modified":"2019-06-09T11:42:43-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Finals Feature Match: Alejandro Garcia Moreno vs. Angel Fernando Ovalle Rivera","url":"https://yugiohblog.konami.com/2019/championships/finals-feature-match-alejandro-garcia-moreno-vs-angel-fernando-ovalle-rivera/","modified":"2019-06-09T18:25:59-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"2019 Central America WCQ and Dragon Duel WCQ Trophies!","url":"https://yugiohblog.konami.com/2019/championships/2019-central-america-wcq-and-dragon-duel-wcq-trophies/","modified":"2019-06-09T17:09:15-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":"Dragon Duel","slug":"2019-central-america-wcq"},
+  {"title":"Round 1 Feature Match: Abraham Roger Guzman Garcia vs. Joshua Josue Rivera Escalante","url":"https://yugiohblog.konami.com/2019/championships/round-1-feature-match-abraham-roger-guzman-garcia-vs-joshua-josue-rivera-escalante/","modified":"2019-06-08T11:24:14-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America Dragon Duel WCQ Top 4!","url":"https://yugiohblog.konami.com/2019/championships/central-america-dragon-duel-wcq-top-4-3/","modified":"2019-06-09T19:00:44-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":"Dragon Duel","slug":"2019-central-america-wcq"},
+  {"title":"Round 3 Feature Match: Adrian Madriz Espinoza vs. Joaquin Vicente Dominguez Bautista","url":"https://yugiohblog.konami.com/2019/championships/round-3-feature-match-adrian-madriz-espinoza-vs-joaquin-vicente-dominguez-bautista/","modified":"2019-06-08T14:43:59-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America WCQ: VIP Duelists!","url":"https://yugiohblog.konami.com/2019/championships/central-america-wcq-vip-duelists/","modified":"2019-06-08T14:44:17-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Round 5 Feature Match: Angel Fernando Ovalle Rivera vs. Alan Eduardo Ortega Hernandez","url":"https://yugiohblog.konami.com/2019/championships/round-5-feature-match-angel-fernando-ovalle-rivera-vs-alan-eduardo-ortega-hernandez/","modified":"2019-06-08T14:02:52-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"The Central America Dragon Duel WCQ is Underway!","url":"https://yugiohblog.konami.com/2019/championships/the-central-america-dragon-duel-wcq-is-underway/","modified":"2019-06-08T14:46:57-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":"Dragon Duel","slug":"2019-central-america-wcq"},
+  {"title":"Round 8 Feature Match: Diego Eduardo Ballesteros Higareda vs. Erick Villanueva Priego","url":"https://yugiohblog.konami.com/2019/championships/round-8-feature-match-diego-eduardo-ballesteros-higareda-vs-erick-villanueva-priego/","modified":"2019-06-08T16:45:28-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"2019 Central America WCQ: Public Events!","url":"https://yugiohblog.konami.com/2019/championships/2019-central-america-wcq-public-events/","modified":"2019-06-08T14:46:44-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":"Public Events","slug":"2019-central-america-wcq"},
+  {"title":"Central America World Qualifying Points Playoff Top 8 Feature Match: Erick Villanueva Priego vs. Jose Carlo Carrillo Toscano","url":"https://yugiohblog.konami.com/2019/championships/central-america-world-qualifying-points-playoff-top-8-feature-match-erick-villanueva-priego-vs-jose-carlo-carrillo-toscano/","modified":"2019-06-07T22:17:36-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Top Tables Update: Round 7","url":"https://yugiohblog.konami.com/2019/championships/top-tables-update-round-7-19/","modified":"2019-06-08T15:53:58-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America World Qualifying Points Playoff Top 4 Feature Match: Galileo Mauricio De Obaldia Soza vs. Nelson Omar Andino Ochoa","url":"https://yugiohblog.konami.com/2019/championships/central-america-world-qualifying-points-playoff-top-4-feature-match-galileo-mauricio-de-obaldia-soza-vs-nelson-omar-andino-ochoa/","modified":"2019-06-07T21:24:54-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Top Tables Update: Round 8","url":"https://yugiohblog.konami.com/2019/championships/top-tables-update-round-8-25/","modified":"2019-06-08T17:05:00-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"Central America World Qualifying Points Playoff Finals Feature Match: Galileo De Obaldia Soza vs. Jose Carlo Carrillo Toscano","url":"https://yugiohblog.konami.com/2019/championships/central-america-world-qualifying-points-playoff-finals-feature-match-galileo-de-obaldia-soza-vs-jose-carlo-carrillo-toscano/","modified":"2019-06-07T23:08:33-07:00","kind":"feature","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"},
+  {"title":"2019 Central America Dragon Duel WCQ: Top 8 Duelists!","url":"https://yugiohblog.konami.com/2019/championships/2019-central-america-dragon-duel-wcq-top-8-duelists/","modified":"2019-06-08T18:52:38-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":"Dragon Duel","slug":"2019-central-america-wcq"},
+  {"title":"Welcome to the 2019 Central America WCQ!","url":"https://yugiohblog.konami.com/2019/championships/welcome-to-the-2019-central-america-wcq/","modified":"2019-06-07T20:18:56-07:00","kind":"news","event":"Central America WCQ 2019","article":true,"format":null,"slug":"2019-central-america-wcq"}
 ]

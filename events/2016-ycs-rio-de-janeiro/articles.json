@@ -1,1 +1,76 @@
-{"https://yugiohblog.konami.com/2016/ycs/welcome-to-ycs-rio-de-janeiro-brazil/":[{"t":"p","r":["Duelists, Welcome to YCS Rio de Janeiro, Brazil!"]},{"t":"p","r":["We’ve got a total of 368 Duelists ready to Duel their hardest to make it to the top."]},{"t":"p","r":["We have representatives from many countries, including Argentina, Chile, Colombia, Ecuador, Peru, Mexico, Panama and of course, Brazil."]},{"t":"p","r":["Good luck to all of our participating Duelists!"]}],"https://yugiohblog.konami.com/2016/ycs/qq-which-deck-are-you-running-this-weekend-and-why-2/":[{"t":"p","r":["QQ stands for Quick Questions! We surveyed some of the competitors to find out which Decks they’re using and why they chose to use their particular Decks. Check out their responses!"]},{"t":"p","r":["“ABC, because it puts your opponent on lockdown",{"b":".”"}," –",{"who":"Rafael Roberto De Paula","t":"Rafael Roberto"}," de Paulo from Campinas, Brazil."]},{"t":"p","r":["“ABC, it is the best Deck.” – Vitor Soares from Rio de Janeiro, Brazil."]},{"t":"p","r":["“ABC, it is the best Deck out there..” – William da Fonseca Couto from Rio de Janeiro, Brazil."]},{"t":"p","r":["“Yang Zing Metalfoes, because I really enjoy playing with it.” – Joel S.V de Almeida from Sao Paulo, Brazil."]},{"t":"p","r":["“Metalfoes, because I like fusion.” – ",{"who":"Guilherme Cecilio Lima","t":"Guilherme Cecilio Lima"}," from Sao Paulo, Brazil."]},{"t":"p","r":["“Nekroz Blue-Eyes, because other players are not expecting it.” – ",{"who":"Michael Branquinho Evaristo","t":"Michael Evaristo"}," from Sao Paulo, Brazil."]},{"t":"p","r":["“Mermail, my favorite Deck.” – Alessandro Melecani from Sao Paulo, Brazil."]},{"t":"p","r":["“ABC, it is very affordable.” – Michael V.S. Luiz."]},{"t":"p","r":["“Fairy Counter, I simply love the deck.” – ",{"who":"Cristobal Antonio Munoz Arriagada","t":"Cristobal Munoz"}," from Santiago, Chile."]},{"t":"p","r":["“Lightsworn, because it is very consistent.” – ",{"who":"Roger Adrian Alejandro Cuevas Medina","t":"Roger Medina"}," from Santiago, Chile."]}],"https://yugiohblog.konami.com/2016/ycs/ycs-rio-de-janeiro-saturdays-dragon-duelists/":[{"t":"p","r":["Here are Saturday’s Dragon Duelists! From left to right, we have ",{"who":"Enzo Simono Salviati","t":"Enzo Salviati"},", Lucas Cajueiro and Nicole Cajueiro. Congratulations!"]},{"t":"p","r":["10-year old ",{"who":"Enzo Simono Salviati","t":"Enzo Salviati"}," from Sao Paulo, Brazil, piloted his Cyber Angel Deck to come out Victorious on today’s Dragon Duel event."]}]}
+{
+  "https://yugiohblog.konami.com/2016/ycs/welcome-to-ycs-rio-de-janeiro-brazil/": [
+    {
+      "t": "p",
+      "r": ["Duelists, Welcome to YCS Rio de Janeiro, Brazil!"]
+    },
+    {
+      "t": "p",
+      "r": ["We’ve got a total of 368 Duelists ready to Duel their hardest to make it to the top."]
+    },
+    {
+      "t": "p",
+      "r": ["We have representatives from many countries, including Argentina, Chile, Colombia, Ecuador, Peru, Mexico, Panama and of course, Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["Good luck to all of our participating Duelists!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2016/ycs/qq-which-deck-are-you-running-this-weekend-and-why-2/": [
+    {
+      "t": "p",
+      "r": ["QQ stands for Quick Questions! We surveyed some of the competitors to find out which Decks they’re using and why they chose to use their particular Decks. Check out their responses!"]
+    },
+    {
+      "t": "p",
+      "r": ["“ABC, because it puts your opponent on lockdown",{"b":".”"}," –",{"who":"Rafael Roberto De Paula","t":"Rafael Roberto"}," de Paulo from Campinas, Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["“ABC, it is the best Deck.” – Vitor Soares from Rio de Janeiro, Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["“ABC, it is the best Deck out there..” – William da Fonseca Couto from Rio de Janeiro, Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["“Yang Zing Metalfoes, because I really enjoy playing with it.” – Joel S.V de Almeida from Sao Paulo, Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["“Metalfoes, because I like fusion.” – ",{"who":"Guilherme Cecilio Lima","t":"Guilherme Cecilio Lima"}," from Sao Paulo, Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["“Nekroz Blue-Eyes, because other players are not expecting it.” – ",{"who":"Michael Branquinho Evaristo","t":"Michael Evaristo"}," from Sao Paulo, Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["“Mermail, my favorite Deck.” – Alessandro Melecani from Sao Paulo, Brazil."]
+    },
+    {
+      "t": "p",
+      "r": ["“ABC, it is very affordable.” – Michael V.S. Luiz."]
+    },
+    {
+      "t": "p",
+      "r": ["“Fairy Counter, I simply love the deck.” – ",{"who":"Cristobal Antonio Munoz Arriagada","t":"Cristobal Munoz"}," from Santiago, Chile."]
+    },
+    {
+      "t": "p",
+      "r": ["“Lightsworn, because it is very consistent.” – ",{"who":"Roger Adrian Alejandro Cuevas Medina","t":"Roger Medina"}," from Santiago, Chile."]
+    }
+  ],
+  "https://yugiohblog.konami.com/2016/ycs/ycs-rio-de-janeiro-saturdays-dragon-duelists/": [
+    {
+      "t": "p",
+      "r": ["Here are Saturday’s Dragon Duelists! From left to right, we have ",{"who":"Enzo Simono Salviati","t":"Enzo Salviati"},", Lucas Cajueiro and Nicole Cajueiro. Congratulations!"]
+    },
+    {
+      "t": "p",
+      "r": ["10-year old ",{"who":"Enzo Simono Salviati","t":"Enzo Salviati"}," from Sao Paulo, Brazil, piloted his Cyber Angel Deck to come out Victorious on today’s Dragon Duel event."]
+    }
+  ]
+}

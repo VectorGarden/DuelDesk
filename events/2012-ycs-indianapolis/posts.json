@@ -1,215 +1,24 @@
 [
-  {
-    "title": "Top 4 Pairings!",
-    "url": "https://yugiohblog.konami.com/2012/ycs/top-4-pairings-4/",
-    "modified": "2012-09-23T18:59:30-07:00",
-    "kind": "pairings",
-    "event": "YCS Indianapolis",
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Standings after Round 10!",
-    "url": "https://yugiohblog.konami.com/2012/ycs/standings-after-round-10/",
-    "modified": "2012-09-23T09:31:56-07:00",
-    "kind": "standings",
-    "event": "YCS Indianapolis",
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Standings as of Round 5",
-    "url": "https://yugiohblog.konami.com/2012/ycs/standings-as-of-round-5/",
-    "modified": "2012-09-22T16:48:14-07:00",
-    "kind": "standings",
-    "event": "YCS Indianapolis",
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Standings After Round 8",
-    "url": "https://yugiohblog.konami.com/2012/ycs/standings-after-round-8-3/",
-    "modified": "2012-09-22T19:02:08-07:00",
-    "kind": "standings",
-    "event": "YCS Indianapolis",
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Round 9 Feature Match: Michael Pramawat vs. James Kenzie",
-    "url": "https://yugiohblog.konami.com/2012/sjc/round-9-feature-match-michael-pramawat-vs-james-kenzie/",
-    "modified": "2012-09-23T08:49:26-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Meet our second ATTACK OF THE GIANT CARD!! winner, Matt Chasteen!",
-    "url": "https://yugiohblog.konami.com/2012/ycs/meet-our-second-attack-of-the-giant-card-winner-matt-chasteen/",
-    "modified": "2012-09-23T18:22:33-07:00",
-    "kind": "result",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": "Attack of the Giant Card",
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Welcome to YCS Indianapolis!",
-    "url": "https://yugiohblog.konami.com/2012/ycs/welcome-to-ycs-indianapolis/",
-    "modified": "2012-09-22T09:38:59-07:00",
-    "kind": "news",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Round 9 Feature Match: Parker Roberson (Hieratic) vs Josh Bequette (Machina Gadget)",
-    "url": "https://yugiohblog.konami.com/2012/ycs/round-9-feature-match-parker-roberson-hieratic-vs-josh-bequette-machina-gadget/",
-    "modified": "2012-09-23T21:03:03-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Congratulations to Junior Dorcin, champion of YCS Indianapolis!",
-    "url": "https://yugiohblog.konami.com/2012/ycs/congratulations-to-junior-dorcin-champion-of-ycs-indianapolis/",
-    "modified": "2012-09-23T20:06:45-07:00",
-    "kind": "result",
-    "event": "YCS Indianapolis",
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Round 10 Feature Match: Robbie Kohl vs. Junior Dorcin",
-    "url": "https://yugiohblog.konami.com/2012/ycs/round-10-feature-match-robbie-kohl-vs-junior-dorcin/",
-    "modified": "2012-09-23T20:57:54-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Check out the winners of the team tournament!",
-    "url": "https://yugiohblog.konami.com/2012/ycs/check-out-the-winners-of-the-team-tournament/",
-    "modified": "2012-09-23T20:13:01-07:00",
-    "kind": "result",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Top 32 Feature Match: Billy Brake vs. Evan Towler",
-    "url": "https://yugiohblog.konami.com/2012/ycs/top-32-feature-match-billy-brake-vs-evan-towler/",
-    "modified": "2012-09-23T20:56:11-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Presenting the YCS Indianapolis 2012 Winners",
-    "url": "https://yugiohblog.konami.com/2012/ycs/presenting-the-ycs-indianapolis-2012-winners/",
-    "modified": "2012-09-23T20:17:44-07:00",
-    "kind": "result",
-    "event": "YCS Indianapolis",
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Top 16 Feature Match: Steffon Bizzell vs. Christopher Lofton",
-    "url": "https://yugiohblog.konami.com/2012/ycs/top-16-feature-match-steffon-bizzell-vs-christopher-lofton/",
-    "modified": "2012-09-23T16:28:20-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "ATTACK OF THE GIANT CARDS!! Winner",
-    "url": "https://yugiohblog.konami.com/2012/ycs/attack-of-the-giant-cards-winner/",
-    "modified": "2012-09-22T18:40:48-07:00",
-    "kind": "result",
-    "event": "YCS Indianapolis",
-    "format": "Attack of the Giant Card",
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Top 8 Feature Match: Anthony Eckroth vs. Kristopher Valters",
-    "url": "https://yugiohblog.konami.com/2012/ycs/top-8-feature-match-anthony-eckroth-vs-kristopher-valters/",
-    "modified": "2012-09-23T16:56:56-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Top 4 Feature Match: Junior Dorcin vs. Parker Roberson",
-    "url": "https://yugiohblog.konami.com/2012/ycs/top-4-feature-match-junior-dorcin-vs-parker-roberson/",
-    "modified": "2012-09-23T18:43:15-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Finals Feature Match: Junior Dorcin vs. Kristopher Valters",
-    "url": "https://yugiohblog.konami.com/2012/ycs/finals-feature-match-junior-dorcin-vs-kristopher-valters/",
-    "modified": "2012-09-23T20:25:35-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": null,
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Saturday’s Dragon Duel Round 1 Feature Match: Ben Leverett vs. James Felt",
-    "url": "https://yugiohblog.konami.com/2012/ycs/saturday%e2%80%99s-dragon-duel-round-1-feature-match-ben-leverett-vs-james-felt/",
-    "modified": "2012-09-22T14:54:00-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Dragon Duel Round 2 Feature Match: Josh Bridges vs. Blake Hammond",
-    "url": "https://yugiohblog.konami.com/2012/ycs/dragon-duel-round-2-feature-match-josh-bridges-vs-blake-hammond/",
-    "modified": "2012-09-22T17:04:48-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Saturday’s Dragon Duel Round 4 Feature Match: Nathan Tackett vs. Adrian Salgado",
-    "url": "https://yugiohblog.konami.com/2012/ycs/saturday%e2%80%99s-dragon-duel-round-4-feature-match-nathan-tackett-vs-adrian-salgado/",
-    "modified": "2012-09-22T17:27:37-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2012-ycs-indianapolis"
-  },
-  {
-    "title": "Saturday Dragon Duel Round 5 Feature Match: Joshua Bridges vs. Shivum Dang",
-    "url": "https://yugiohblog.konami.com/2012/ycs/saturday-dragon-duel-round-5-feature-match-joshua-bridges-vs-shivum-dang/",
-    "modified": "2012-09-22T18:24:24-07:00",
-    "kind": "feature",
-    "event": "YCS Indianapolis",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2012-ycs-indianapolis"
-  }
+  {"title":"Top 4 Pairings!","url":"https://yugiohblog.konami.com/2012/ycs/top-4-pairings-4/","modified":"2012-09-23T18:59:30-07:00","kind":"pairings","event":"YCS Indianapolis","format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Standings after Round 10!","url":"https://yugiohblog.konami.com/2012/ycs/standings-after-round-10/","modified":"2012-09-23T09:31:56-07:00","kind":"standings","event":"YCS Indianapolis","format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Standings as of Round 5","url":"https://yugiohblog.konami.com/2012/ycs/standings-as-of-round-5/","modified":"2012-09-22T16:48:14-07:00","kind":"standings","event":"YCS Indianapolis","format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Standings After Round 8","url":"https://yugiohblog.konami.com/2012/ycs/standings-after-round-8-3/","modified":"2012-09-22T19:02:08-07:00","kind":"standings","event":"YCS Indianapolis","format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Round 9 Feature Match: Michael Pramawat vs. James Kenzie","url":"https://yugiohblog.konami.com/2012/sjc/round-9-feature-match-michael-pramawat-vs-james-kenzie/","modified":"2012-09-23T08:49:26-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Meet our second ATTACK OF THE GIANT CARD!! winner, Matt Chasteen!","url":"https://yugiohblog.konami.com/2012/ycs/meet-our-second-attack-of-the-giant-card-winner-matt-chasteen/","modified":"2012-09-23T18:22:33-07:00","kind":"result","event":"YCS Indianapolis","article":true,"format":"Attack of the Giant Card","slug":"2012-ycs-indianapolis"},
+  {"title":"Welcome to YCS Indianapolis!","url":"https://yugiohblog.konami.com/2012/ycs/welcome-to-ycs-indianapolis/","modified":"2012-09-22T09:38:59-07:00","kind":"news","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Round 9 Feature Match: Parker Roberson (Hieratic) vs Josh Bequette (Machina Gadget)","url":"https://yugiohblog.konami.com/2012/ycs/round-9-feature-match-parker-roberson-hieratic-vs-josh-bequette-machina-gadget/","modified":"2012-09-23T21:03:03-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Congratulations to Junior Dorcin, champion of YCS Indianapolis!","url":"https://yugiohblog.konami.com/2012/ycs/congratulations-to-junior-dorcin-champion-of-ycs-indianapolis/","modified":"2012-09-23T20:06:45-07:00","kind":"result","event":"YCS Indianapolis","format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Round 10 Feature Match: Robbie Kohl vs. Junior Dorcin","url":"https://yugiohblog.konami.com/2012/ycs/round-10-feature-match-robbie-kohl-vs-junior-dorcin/","modified":"2012-09-23T20:57:54-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Check out the winners of the team tournament!","url":"https://yugiohblog.konami.com/2012/ycs/check-out-the-winners-of-the-team-tournament/","modified":"2012-09-23T20:13:01-07:00","kind":"result","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Top 32 Feature Match: Billy Brake vs. Evan Towler","url":"https://yugiohblog.konami.com/2012/ycs/top-32-feature-match-billy-brake-vs-evan-towler/","modified":"2012-09-23T20:56:11-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Presenting the YCS Indianapolis 2012 Winners","url":"https://yugiohblog.konami.com/2012/ycs/presenting-the-ycs-indianapolis-2012-winners/","modified":"2012-09-23T20:17:44-07:00","kind":"result","event":"YCS Indianapolis","format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Top 16 Feature Match: Steffon Bizzell vs. Christopher Lofton","url":"https://yugiohblog.konami.com/2012/ycs/top-16-feature-match-steffon-bizzell-vs-christopher-lofton/","modified":"2012-09-23T16:28:20-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"ATTACK OF THE GIANT CARDS!! Winner","url":"https://yugiohblog.konami.com/2012/ycs/attack-of-the-giant-cards-winner/","modified":"2012-09-22T18:40:48-07:00","kind":"result","event":"YCS Indianapolis","format":"Attack of the Giant Card","slug":"2012-ycs-indianapolis"},
+  {"title":"Top 8 Feature Match: Anthony Eckroth vs. Kristopher Valters","url":"https://yugiohblog.konami.com/2012/ycs/top-8-feature-match-anthony-eckroth-vs-kristopher-valters/","modified":"2012-09-23T16:56:56-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Top 4 Feature Match: Junior Dorcin vs. Parker Roberson","url":"https://yugiohblog.konami.com/2012/ycs/top-4-feature-match-junior-dorcin-vs-parker-roberson/","modified":"2012-09-23T18:43:15-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Finals Feature Match: Junior Dorcin vs. Kristopher Valters","url":"https://yugiohblog.konami.com/2012/ycs/finals-feature-match-junior-dorcin-vs-kristopher-valters/","modified":"2012-09-23T20:25:35-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":null,"slug":"2012-ycs-indianapolis"},
+  {"title":"Saturday’s Dragon Duel Round 1 Feature Match: Ben Leverett vs. James Felt","url":"https://yugiohblog.konami.com/2012/ycs/saturday%e2%80%99s-dragon-duel-round-1-feature-match-ben-leverett-vs-james-felt/","modified":"2012-09-22T14:54:00-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":"Dragon Duel","slug":"2012-ycs-indianapolis"},
+  {"title":"Dragon Duel Round 2 Feature Match: Josh Bridges vs. Blake Hammond","url":"https://yugiohblog.konami.com/2012/ycs/dragon-duel-round-2-feature-match-josh-bridges-vs-blake-hammond/","modified":"2012-09-22T17:04:48-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":"Dragon Duel","slug":"2012-ycs-indianapolis"},
+  {"title":"Saturday’s Dragon Duel Round 4 Feature Match: Nathan Tackett vs. Adrian Salgado","url":"https://yugiohblog.konami.com/2012/ycs/saturday%e2%80%99s-dragon-duel-round-4-feature-match-nathan-tackett-vs-adrian-salgado/","modified":"2012-09-22T17:27:37-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":"Dragon Duel","slug":"2012-ycs-indianapolis"},
+  {"title":"Saturday Dragon Duel Round 5 Feature Match: Joshua Bridges vs. Shivum Dang","url":"https://yugiohblog.konami.com/2012/ycs/saturday-dragon-duel-round-5-feature-match-joshua-bridges-vs-shivum-dang/","modified":"2012-09-22T18:24:24-07:00","kind":"feature","event":"YCS Indianapolis","article":true,"format":"Dragon Duel","slug":"2012-ycs-indianapolis"}
 ]

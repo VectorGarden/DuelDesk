@@ -1,361 +1,41 @@
 [
-  {
-    "title": "South America WCQ: Top 64 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-64-pairings/",
-    "modified": "2017-07-02T06:21:29-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Top 32 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-32-pairings/",
-    "modified": "2017-07-02T07:59:38-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Top 16 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/championships/2017-south-american-wcq/south-america-wcq-top-16-pairings/",
-    "modified": "2017-07-02T08:41:02-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America Dragon Duel WCQ: Top 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-dragon-duel-wcq-top-4-pairings/",
-    "modified": "2017-07-02T09:58:07-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": "Dragon Duel",
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-8-pairings/",
-    "modified": "2017-07-02T10:31:25-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Top 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-4-pairings/",
-    "modified": "2017-07-02T11:40:25-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 3",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-top-3/",
-    "modified": "2017-07-01T09:29:35-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-4/",
-    "modified": "2017-07-01T10:19:31-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 4",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-4-2/",
-    "modified": "2017-07-01T10:21:12-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 5",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-5/",
-    "modified": "2017-07-01T11:37:06-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 6",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-6/",
-    "modified": "2017-07-01T13:05:00-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 7",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-7/",
-    "modified": "2017-07-01T14:13:49-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 8",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-8/",
-    "modified": "2017-07-01T15:09:25-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 9",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-9/",
-    "modified": "2017-07-01T16:22:50-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "WCQ South America: Standings after Top 64",
-    "url": "https://yugiohblog.konami.com/2017/championships/wcq-south-america-standings-after-top-64/",
-    "modified": "2017-07-02T07:39:45-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Top 32",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-top-32/",
-    "modified": "2017-07-02T08:39:45-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Top 16",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-top-16/",
-    "modified": "2017-07-02T09:34:03-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Top 8",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-top-8/",
-    "modified": "2017-07-02T11:37:27-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-4/",
-    "modified": "2017-07-01T11:34:56-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-5/",
-    "modified": "2017-07-01T12:26:29-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-6/",
-    "modified": "2017-07-01T14:33:08-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-7/",
-    "modified": "2017-07-01T15:02:20-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-8/",
-    "modified": "2017-07-01T16:20:58-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 9",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-9/",
-    "modified": "2017-07-01T17:01:00-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "We have a new South American WCQ Champion!",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-american-wcq-champion/",
-    "modified": "2017-07-02T12:23:07-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "Welcome to the South American WCQ!",
-    "url": "https://yugiohblog.konami.com/2017/championships/welcome-to-the-south-american-wcq/",
-    "modified": "2017-07-19T15:30:36-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "article": true,
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "Meet our new South American Dragon Duel Champion!",
-    "url": "https://yugiohblog.konami.com/2017/championships/meet-our-new-south-american-dragon-duel-champion/",
-    "modified": "2017-07-02T12:17:40-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2017",
-    "format": "Dragon Duel",
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "Top Cut for Dragon Duel at the South American WCQ",
-    "url": "https://yugiohblog.konami.com/2017/ycs/top-cut-for-dragon-duel-at-the-south-american-wcq-2/",
-    "modified": "2017-07-02T09:49:32-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "Public Events Points Playoff Winner",
-    "url": "https://yugiohblog.konami.com/2017/championships/public-events-points-playoff-winner-4/",
-    "modified": "2017-07-02T14:49:56-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2017",
-    "format": "Public Events",
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America Dragon Duel WCQ: Finals",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-dragon-duel-wcq-finals/",
-    "modified": "2017-07-02T11:51:57-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "format": "Dragon Duel",
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "Public Events Random Playoff Winner",
-    "url": "https://yugiohblog.konami.com/2017/championships/public-events-random-playoff-winner-4/",
-    "modified": "2017-07-02T14:52:23-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2017",
-    "format": "Public Events",
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "The Finals have begun at the South American WCQ!",
-    "url": "https://yugiohblog.konami.com/2017/championships/the-finals-have-begun-at-the-south-american-wcq-2/",
-    "modified": "2017-07-02T12:00:56-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "article": true,
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South American National Champions and Dragon Duel National Champions",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-american-national-champions-and-dragon-duel-national-champions/",
-    "modified": "2017-07-01T08:30:11-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2017",
-    "format": "Dragon Duel",
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Top Tables Update in Round 6",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-6/",
-    "modified": "2017-07-01T13:20:27-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "article": true,
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "QQ: How Did You Prepare for the South American World Championship Qualifier?",
-    "url": "https://yugiohblog.konami.com/2017/championships/qq-how-did-you-prepare-for-the-south-american-world-championship-qualifier/",
-    "modified": "2017-07-01T14:05:14-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "article": true,
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Top Tables Update in Round 7",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-7/",
-    "modified": "2017-07-01T14:24:47-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "article": true,
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Top Tables Update in Round 8",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-8/",
-    "modified": "2017-07-01T15:25:01-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "article": true,
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Metagame Breakdown",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-metagame-breakdown/",
-    "modified": "2017-07-01T15:48:41-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  },
-  {
-    "title": "South America WCQ: Top Tables Update in Round 10",
-    "url": "https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-10/",
-    "modified": "2017-07-01T16:36:32-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2017",
-    "article": true,
-    "format": null,
-    "slug": "2017-south-american-wcq"
-  }
+  {"title":"South America WCQ: Top 64 Pairings","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-64-pairings/","modified":"2017-07-02T06:21:29-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Top 32 Pairings","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-32-pairings/","modified":"2017-07-02T07:59:38-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Top 16 Pairings","url":"https://yugiohblog.konami.com/2017/championships/2017-south-american-wcq/south-america-wcq-top-16-pairings/","modified":"2017-07-02T08:41:02-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America Dragon Duel WCQ: Top 4 Pairings","url":"https://yugiohblog.konami.com/2017/championships/south-america-dragon-duel-wcq-top-4-pairings/","modified":"2017-07-02T09:58:07-07:00","kind":"pairings","event":"South America WCQ 2017","format":"Dragon Duel","slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Top 8 Pairings","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-8-pairings/","modified":"2017-07-02T10:31:25-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Top 4 Pairings","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-4-pairings/","modified":"2017-07-02T11:40:25-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Pairings for Round 3","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-top-3/","modified":"2017-07-01T09:29:35-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Round 3","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-4/","modified":"2017-07-01T10:19:31-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Pairings for Round 4","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-4-2/","modified":"2017-07-01T10:21:12-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Pairings for Round 5","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-5/","modified":"2017-07-01T11:37:06-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Pairings for Round 6","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-6/","modified":"2017-07-01T13:05:00-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Pairings for Round 7","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-7/","modified":"2017-07-01T14:13:49-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Pairings for Round 8","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-8/","modified":"2017-07-01T15:09:25-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Pairings for Round 9","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-pairings-for-round-9/","modified":"2017-07-01T16:22:50-07:00","kind":"pairings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"WCQ South America: Standings after Top 64","url":"https://yugiohblog.konami.com/2017/championships/wcq-south-america-standings-after-top-64/","modified":"2017-07-02T07:39:45-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Top 32","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-top-32/","modified":"2017-07-02T08:39:45-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Top 16","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-top-16/","modified":"2017-07-02T09:34:03-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Top 8","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-top-8/","modified":"2017-07-02T11:37:27-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Round 4","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-4/","modified":"2017-07-01T11:34:56-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Round 5","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-5/","modified":"2017-07-01T12:26:29-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Round 6","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-6/","modified":"2017-07-01T14:33:08-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Round 7","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-7/","modified":"2017-07-01T15:02:20-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Round 8","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-8/","modified":"2017-07-01T16:20:58-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Standings after Round 9","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-standings-after-round-9/","modified":"2017-07-01T17:01:00-07:00","kind":"standings","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"We have a new South American WCQ Champion!","url":"https://yugiohblog.konami.com/2017/championships/south-american-wcq-champion/","modified":"2017-07-02T12:23:07-07:00","kind":"result","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"Welcome to the South American WCQ!","url":"https://yugiohblog.konami.com/2017/championships/welcome-to-the-south-american-wcq/","modified":"2017-07-19T15:30:36-07:00","kind":"news","event":"South America WCQ 2017","article":true,"format":null,"slug":"2017-south-american-wcq"},
+  {"title":"Meet our new South American Dragon Duel Champion!","url":"https://yugiohblog.konami.com/2017/championships/meet-our-new-south-american-dragon-duel-champion/","modified":"2017-07-02T12:17:40-07:00","kind":"result","event":"South America WCQ 2017","format":"Dragon Duel","slug":"2017-south-american-wcq"},
+  {"title":"Top Cut for Dragon Duel at the South American WCQ","url":"https://yugiohblog.konami.com/2017/ycs/top-cut-for-dragon-duel-at-the-south-american-wcq-2/","modified":"2017-07-02T09:49:32-07:00","kind":"news","event":"South America WCQ 2017","article":true,"format":"Dragon Duel","slug":"2017-south-american-wcq"},
+  {"title":"Public Events Points Playoff Winner","url":"https://yugiohblog.konami.com/2017/championships/public-events-points-playoff-winner-4/","modified":"2017-07-02T14:49:56-07:00","kind":"result","event":"South America WCQ 2017","format":"Public Events","slug":"2017-south-american-wcq"},
+  {"title":"South America Dragon Duel WCQ: Finals","url":"https://yugiohblog.konami.com/2017/championships/south-america-dragon-duel-wcq-finals/","modified":"2017-07-02T11:51:57-07:00","kind":"news","event":"South America WCQ 2017","format":"Dragon Duel","slug":"2017-south-american-wcq"},
+  {"title":"Public Events Random Playoff Winner","url":"https://yugiohblog.konami.com/2017/championships/public-events-random-playoff-winner-4/","modified":"2017-07-02T14:52:23-07:00","kind":"result","event":"South America WCQ 2017","format":"Public Events","slug":"2017-south-american-wcq"},
+  {"title":"The Finals have begun at the South American WCQ!","url":"https://yugiohblog.konami.com/2017/championships/the-finals-have-begun-at-the-south-american-wcq-2/","modified":"2017-07-02T12:00:56-07:00","kind":"news","event":"South America WCQ 2017","article":true,"format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South American National Champions and Dragon Duel National Champions","url":"https://yugiohblog.konami.com/2017/championships/south-american-national-champions-and-dragon-duel-national-champions/","modified":"2017-07-01T08:30:11-07:00","kind":"result","event":"South America WCQ 2017","format":"Dragon Duel","slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Top Tables Update in Round 6","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-6/","modified":"2017-07-01T13:20:27-07:00","kind":"news","event":"South America WCQ 2017","article":true,"format":null,"slug":"2017-south-american-wcq"},
+  {"title":"QQ: How Did You Prepare for the South American World Championship Qualifier?","url":"https://yugiohblog.konami.com/2017/championships/qq-how-did-you-prepare-for-the-south-american-world-championship-qualifier/","modified":"2017-07-01T14:05:14-07:00","kind":"news","event":"South America WCQ 2017","article":true,"format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Top Tables Update in Round 7","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-7/","modified":"2017-07-01T14:24:47-07:00","kind":"news","event":"South America WCQ 2017","article":true,"format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Top Tables Update in Round 8","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-8/","modified":"2017-07-01T15:25:01-07:00","kind":"news","event":"South America WCQ 2017","article":true,"format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Metagame Breakdown","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-metagame-breakdown/","modified":"2017-07-01T15:48:41-07:00","kind":"news","event":"South America WCQ 2017","format":null,"slug":"2017-south-american-wcq"},
+  {"title":"South America WCQ: Top Tables Update in Round 10","url":"https://yugiohblog.konami.com/2017/championships/south-america-wcq-top-tables-update-in-round-10/","modified":"2017-07-01T16:36:32-07:00","kind":"news","event":"South America WCQ 2017","article":true,"format":null,"slug":"2017-south-american-wcq"}
 ]

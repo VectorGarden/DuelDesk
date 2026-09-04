@@ -1,258 +1,29 @@
 [
-  {
-    "title": "Top 64 Pairings",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-64-pairings/",
-    "modified": "2015-07-05T08:36:24-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Top 32 Standings",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-32-standings-and-pairings/",
-    "modified": "2015-07-05T08:41:00-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Pairings for Top 32",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/pairings-for-top-32-3/",
-    "modified": "2015-07-05T09:16:48-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-8-pairings-13/",
-    "modified": "2015-07-05T11:53:45-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Final Standings after Day 1",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/final-standings-after-day-1/",
-    "modified": "2015-07-05T05:47:08-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Standings afer Round 1 at the SA WCQ",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-afer-round-1-at-the-sa-wcq/",
-    "modified": "2015-07-04T11:02:59-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Standings for Round 2 at SA WCQ",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-for-round-2-at-sa-wcq/",
-    "modified": "2015-07-04T11:23:25-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Standings after Round 3 at the SA WCQ",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-3-at-the-sa-wcq/",
-    "modified": "2015-07-04T12:47:18-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Here are the standings after Round 4 of SA WCQ",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/here-are-the-standings-after-round-4-of-sa-wcq/",
-    "modified": "2015-07-04T13:35:05-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-5-6/",
-    "modified": "2015-07-04T14:47:30-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-6-5/",
-    "modified": "2015-07-04T16:05:38-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-7-9/",
-    "modified": "2015-07-04T17:05:44-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-8-7/",
-    "modified": "2015-07-04T18:03:41-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2015",
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Top Table Update: Round 7 Decks at the Top 10 Tables",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-table-update-round-7-decks-at-the-top-10-tables/",
-    "modified": "2015-07-04T16:24:31-07:00",
-    "kind": "deck",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Public Event Winners!",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/public-event-winners/",
-    "modified": "2015-07-05T12:31:21-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": "Public Events",
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "We are down to the Top 16",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/we-are-down-to-the-top-16/",
-    "modified": "2015-07-05T10:38:11-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Only two more rounds before we have a new South American Champion!",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/only-two-more-rounds-before-we-have-a-new-south-american-champion/",
-    "modified": "2015-07-05T12:55:24-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "The Finals have begun at the South American WCQ!",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/the-finals-have-begun-at-the-south-american-wcq/",
-    "modified": "2015-07-05T13:26:56-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "More Public Event winners!",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/more-public-event-winners/",
-    "modified": "2015-07-05T15:06:26-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": "Public Events",
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Welcome to the 2015 South American WCQ!",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/welcome-to-the-2015-south-american-wcq/",
-    "modified": "2015-07-04T09:40:30-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Today’s ATTACK OF THE GIANT CARD!! Winner!",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/todays-attack-of-the-giant-card-winner/",
-    "modified": "2015-07-04T17:14:25-07:00",
-    "kind": "result",
-    "event": "South America WCQ 2015",
-    "format": "Attack of the Giant Card",
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Round 1 at the SA WCQ",
-    "url": "https://yugiohblog.konami.com/2015/championships/dragon-duel/round-1-at-the-sa-wcq/",
-    "modified": "2015-07-04T09:54:40-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Top Cut for Dragon Duel at the South American WCQ",
-    "url": "https://yugiohblog.konami.com/2015/championships/dragon-duel/top-cut-for-dragon-duel-at-the-south-american-wcq/",
-    "modified": "2015-07-04T14:19:28-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Top Table Update: Top 10 Tables for Round 6!",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-table-update-top-10-tables-for-round-6/",
-    "modified": "2015-07-04T15:30:51-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Round 8 Top 10 Tables Update",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/round-8-top-10-tables-update/",
-    "modified": "2015-07-04T17:26:16-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "QQ: How did you earn your invite to the South American WCQ?",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/qq-how-did-you-earn-your-invite-to-the-south-american-wcq/",
-    "modified": "2015-07-04T17:59:16-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  },
-  {
-    "title": "Top Table Update: Round 9",
-    "url": "https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-table-update-round-9-4/",
-    "modified": "2015-07-04T18:18:27-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2015",
-    "article": true,
-    "format": null,
-    "slug": "2015-south-american-wcq"
-  }
+  {"title":"Top 64 Pairings","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-64-pairings/","modified":"2015-07-05T08:36:24-07:00","kind":"pairings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Top 32 Standings","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-32-standings-and-pairings/","modified":"2015-07-05T08:41:00-07:00","kind":"pairings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Pairings for Top 32","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/pairings-for-top-32-3/","modified":"2015-07-05T09:16:48-07:00","kind":"pairings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Top 8 Pairings","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-8-pairings-13/","modified":"2015-07-05T11:53:45-07:00","kind":"pairings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Final Standings after Day 1","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/final-standings-after-day-1/","modified":"2015-07-05T05:47:08-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Standings afer Round 1 at the SA WCQ","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-afer-round-1-at-the-sa-wcq/","modified":"2015-07-04T11:02:59-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Standings for Round 2 at SA WCQ","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-for-round-2-at-sa-wcq/","modified":"2015-07-04T11:23:25-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Standings after Round 3 at the SA WCQ","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-3-at-the-sa-wcq/","modified":"2015-07-04T12:47:18-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Here are the standings after Round 4 of SA WCQ","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/here-are-the-standings-after-round-4-of-sa-wcq/","modified":"2015-07-04T13:35:05-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Standings after Round 5","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-5-6/","modified":"2015-07-04T14:47:30-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Standings after Round 6","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-6-5/","modified":"2015-07-04T16:05:38-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Standings after Round 7","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-7-9/","modified":"2015-07-04T17:05:44-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Standings after Round 8","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/standings-after-round-8-7/","modified":"2015-07-04T18:03:41-07:00","kind":"standings","event":"South America WCQ 2015","format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Top Table Update: Round 7 Decks at the Top 10 Tables","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-table-update-round-7-decks-at-the-top-10-tables/","modified":"2015-07-04T16:24:31-07:00","kind":"deck","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Public Event Winners!","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/public-event-winners/","modified":"2015-07-05T12:31:21-07:00","kind":"result","event":"South America WCQ 2015","article":true,"format":"Public Events","slug":"2015-south-american-wcq"},
+  {"title":"We are down to the Top 16","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/we-are-down-to-the-top-16/","modified":"2015-07-05T10:38:11-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Only two more rounds before we have a new South American Champion!","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/only-two-more-rounds-before-we-have-a-new-south-american-champion/","modified":"2015-07-05T12:55:24-07:00","kind":"result","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"The Finals have begun at the South American WCQ!","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/the-finals-have-begun-at-the-south-american-wcq/","modified":"2015-07-05T13:26:56-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"More Public Event winners!","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/more-public-event-winners/","modified":"2015-07-05T15:06:26-07:00","kind":"result","event":"South America WCQ 2015","article":true,"format":"Public Events","slug":"2015-south-american-wcq"},
+  {"title":"Welcome to the 2015 South American WCQ!","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/welcome-to-the-2015-south-american-wcq/","modified":"2015-07-04T09:40:30-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Today’s ATTACK OF THE GIANT CARD!! Winner!","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/todays-attack-of-the-giant-card-winner/","modified":"2015-07-04T17:14:25-07:00","kind":"result","event":"South America WCQ 2015","format":"Attack of the Giant Card","slug":"2015-south-american-wcq"},
+  {"title":"Round 1 at the SA WCQ","url":"https://yugiohblog.konami.com/2015/championships/dragon-duel/round-1-at-the-sa-wcq/","modified":"2015-07-04T09:54:40-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Top Cut for Dragon Duel at the South American WCQ","url":"https://yugiohblog.konami.com/2015/championships/dragon-duel/top-cut-for-dragon-duel-at-the-south-american-wcq/","modified":"2015-07-04T14:19:28-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":"Dragon Duel","slug":"2015-south-american-wcq"},
+  {"title":"Top Table Update: Top 10 Tables for Round 6!","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-table-update-top-10-tables-for-round-6/","modified":"2015-07-04T15:30:51-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Round 8 Top 10 Tables Update","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/round-8-top-10-tables-update/","modified":"2015-07-04T17:26:16-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"QQ: How did you earn your invite to the South American WCQ?","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/qq-how-did-you-earn-your-invite-to-the-south-american-wcq/","modified":"2015-07-04T17:59:16-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"},
+  {"title":"Top Table Update: Round 9","url":"https://yugiohblog.konami.com/2015/championships/2015-south-american-wcq/top-table-update-round-9-4/","modified":"2015-07-04T18:18:27-07:00","kind":"news","event":"South America WCQ 2015","article":true,"format":null,"slug":"2015-south-american-wcq"}
 ]

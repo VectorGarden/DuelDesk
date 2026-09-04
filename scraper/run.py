@@ -516,7 +516,7 @@ def main() -> int:
               + ", ".join(failed))
 
     manifest = archive.build_manifest(args.archive)
-    Path(args.manifest).write_text(archive.dumps(manifest, pretty=True), encoding="utf-8")
+    Path(args.manifest).write_text(archive.dumps(manifest, depth=2), encoding="utf-8")
     print(f"Manifest lists {len(manifest['events'])} events")
 
     # Who played what, sharded so a page can fetch one Duelist without the

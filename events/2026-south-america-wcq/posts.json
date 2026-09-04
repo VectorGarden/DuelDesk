@@ -1,265 +1,31 @@
 [
-  {
-    "title": "South America WCQ: Pairings for Round 8",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-8-7/",
-    "modified": "2026-06-21T05:46:55-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 9",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-9-8/",
-    "modified": "2026-06-21T06:26:52-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 10",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-10-2/",
-    "modified": "2026-06-21T07:44:25-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 11",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-11/",
-    "modified": "2026-06-21T07:47:39-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 12",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-12/",
-    "modified": "2026-06-21T09:44:38-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 13",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-13/",
-    "modified": "2026-06-21T09:55:43-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 1",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-1-4/",
-    "modified": "2026-06-20T07:27:23-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 2",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-2-4/",
-    "modified": "2026-06-20T08:32:13-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 3",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-3-6/",
-    "modified": "2026-06-20T09:43:31-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 4",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-4-8/",
-    "modified": "2026-06-20T11:03:38-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 5",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-5-7/",
-    "modified": "2026-06-20T13:25:19-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 6",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-6-7/",
-    "modified": "2026-06-20T13:44:00-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Pairings for Round 7",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-7-6/",
-    "modified": "2026-06-20T14:43:18-07:00",
-    "kind": "pairings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-7-7/",
-    "modified": "2026-06-21T05:45:30-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-8-7/",
-    "modified": "2026-06-21T05:52:28-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 9",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-9-6/",
-    "modified": "2026-06-21T06:29:17-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 10",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-10-4/",
-    "modified": "2026-06-21T07:46:53-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 11",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-11-2/",
-    "modified": "2026-06-21T09:43:08-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 12",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-12-2/",
-    "modified": "2026-06-21T09:54:26-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-3-6/",
-    "modified": "2026-06-20T10:50:15-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-4-7/",
-    "modified": "2026-06-20T13:23:32-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-5-6/",
-    "modified": "2026-06-20T13:38:23-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-6-6/",
-    "modified": "2026-06-20T14:40:43-07:00",
-    "kind": "standings",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Top 8",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-top-8/",
-    "modified": "2026-06-21T10:37:58-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Top 4",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-top-4/",
-    "modified": "2026-06-21T12:40:28-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ: Final Match",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-final-match-3/",
-    "modified": "2026-06-21T14:04:43-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ Sao Paulo, Brazil 2026",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-sao-paulo-brazil-2026-main-event-information/",
-    "modified": "2026-06-19T07:12:46-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2026",
-    "article": true,
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "Welcome to the South America World Championship Qualifier 2026",
-    "url": "https://yugiohblog.konami.com/2026/championships/welcome-to-the-south-america-world-championship-qualifier-2026/",
-    "modified": "2026-06-19T07:05:49-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2026",
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  },
-  {
-    "title": "South America WCQ Sao Paulo, Brazil 2026",
-    "url": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-sao-paulo-brazil-2026-public-events-information/",
-    "modified": "2026-06-08T10:52:39-07:00",
-    "kind": "news",
-    "event": "South America WCQ 2026",
-    "article": true,
-    "format": null,
-    "slug": "2026-south-america-wcq"
-  }
+  {"title":"South America WCQ: Pairings for Round 8","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-8-7/","modified":"2026-06-21T05:46:55-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 9","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-9-8/","modified":"2026-06-21T06:26:52-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 10","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-10-2/","modified":"2026-06-21T07:44:25-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 11","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-11/","modified":"2026-06-21T07:47:39-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 12","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-12/","modified":"2026-06-21T09:44:38-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 13","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-13/","modified":"2026-06-21T09:55:43-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 1","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-1-4/","modified":"2026-06-20T07:27:23-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 2","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-2-4/","modified":"2026-06-20T08:32:13-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 3","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-3-6/","modified":"2026-06-20T09:43:31-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 4","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-4-8/","modified":"2026-06-20T11:03:38-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 5","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-5-7/","modified":"2026-06-20T13:25:19-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 6","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-6-7/","modified":"2026-06-20T13:44:00-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Pairings for Round 7","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-7-6/","modified":"2026-06-20T14:43:18-07:00","kind":"pairings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 7","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-7-7/","modified":"2026-06-21T05:45:30-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 8","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-8-7/","modified":"2026-06-21T05:52:28-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 9","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-9-6/","modified":"2026-06-21T06:29:17-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 10","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-10-4/","modified":"2026-06-21T07:46:53-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 11","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-11-2/","modified":"2026-06-21T09:43:08-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 12","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-12-2/","modified":"2026-06-21T09:54:26-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 3","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-3-6/","modified":"2026-06-20T10:50:15-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 4","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-4-7/","modified":"2026-06-20T13:23:32-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 5","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-5-6/","modified":"2026-06-20T13:38:23-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Standings after Round 6","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-standings-after-round-6-6/","modified":"2026-06-20T14:40:43-07:00","kind":"standings","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Top 8","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-top-8/","modified":"2026-06-21T10:37:58-07:00","kind":"news","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Top 4","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-top-4/","modified":"2026-06-21T12:40:28-07:00","kind":"news","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ: Final Match","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-final-match-3/","modified":"2026-06-21T14:04:43-07:00","kind":"news","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ Sao Paulo, Brazil 2026","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-sao-paulo-brazil-2026-main-event-information/","modified":"2026-06-19T07:12:46-07:00","kind":"news","event":"South America WCQ 2026","article":true,"format":null,"slug":"2026-south-america-wcq"},
+  {"title":"Welcome to the South America World Championship Qualifier 2026","url":"https://yugiohblog.konami.com/2026/championships/welcome-to-the-south-america-world-championship-qualifier-2026/","modified":"2026-06-19T07:05:49-07:00","kind":"news","event":"South America WCQ 2026","format":null,"slug":"2026-south-america-wcq"},
+  {"title":"South America WCQ Sao Paulo, Brazil 2026","url":"https://yugiohblog.konami.com/2026/championships/south-america-wcq-sao-paulo-brazil-2026-public-events-information/","modified":"2026-06-08T10:52:39-07:00","kind":"news","event":"South America WCQ 2026","article":true,"format":null,"slug":"2026-south-america-wcq"}
 ]

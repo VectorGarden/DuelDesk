@@ -1,227 +1,27 @@
 [
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Top 32",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-32/",
-    "modified": "2024-01-28T07:47:36-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Top 16",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-16/",
-    "modified": "2024-01-28T08:13:51-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Top 8",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-8/",
-    "modified": "2024-01-28T10:27:33-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Top 4",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-4/",
-    "modified": "2024-01-28T10:53:50-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 1",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-1/",
-    "modified": "2024-01-27T11:12:49-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 2",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-2/",
-    "modified": "2024-01-27T11:15:19-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 3",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-3/",
-    "modified": "2024-01-27T11:19:30-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 4",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-4/",
-    "modified": "2024-01-27T12:30:26-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 5",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-5/",
-    "modified": "2024-01-27T13:09:51-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 6",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-6/",
-    "modified": "2024-01-27T14:27:49-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 7",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-7/",
-    "modified": "2024-01-27T15:37:28-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 8",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-8/",
-    "modified": "2024-01-27T16:59:46-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Pairings for Round 9",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-9/",
-    "modified": "2024-01-27T18:01:52-08:00",
-    "kind": "pairings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 9",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-9/",
-    "modified": "2024-01-28T07:45:20-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 1",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-1/",
-    "modified": "2024-01-27T11:13:55-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 2",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-2/",
-    "modified": "2024-01-27T11:17:40-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-3/",
-    "modified": "2024-01-27T12:27:12-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-4/",
-    "modified": "2024-01-27T13:08:48-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-5/",
-    "modified": "2024-01-27T14:26:35-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-6/",
-    "modified": "2024-01-27T15:36:34-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-7/",
-    "modified": "2024-01-27T16:58:50-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-8/",
-    "modified": "2024-01-27T17:59:14-08:00",
-    "kind": "standings",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024 Winner",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-winner/",
-    "modified": "2024-01-28T12:13:05-08:00",
-    "kind": "result",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Remote Duel YCS January 2024: Final Match",
-    "url": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-final-match/",
-    "modified": "2024-01-28T11:34:12-08:00",
-    "kind": "news",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  },
-  {
-    "title": "Welcome To The Remote Duel YCS January 2024!",
-    "url": "https://yugiohblog.konami.com/2024/ycs/welcome-to-the-remote-duel-ycs-january-2024/",
-    "modified": "2024-01-27T11:20:47-08:00",
-    "kind": "news",
-    "event": "Remote Duel YCS January 2024",
-    "format": null,
-    "slug": "remote-duel-ycs-january-2024"
-  }
+  {"title":"Remote Duel YCS January 2024: Pairings for Top 32","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-32/","modified":"2024-01-28T07:47:36-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Top 16","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-16/","modified":"2024-01-28T08:13:51-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Top 8","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-8/","modified":"2024-01-28T10:27:33-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Top 4","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-4/","modified":"2024-01-28T10:53:50-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 1","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-1/","modified":"2024-01-27T11:12:49-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 2","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-2/","modified":"2024-01-27T11:15:19-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 3","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-3/","modified":"2024-01-27T11:19:30-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 4","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-4/","modified":"2024-01-27T12:30:26-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 5","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-5/","modified":"2024-01-27T13:09:51-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 6","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-6/","modified":"2024-01-27T14:27:49-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 7","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-7/","modified":"2024-01-27T15:37:28-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 8","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-8/","modified":"2024-01-27T16:59:46-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Pairings for Round 9","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-round-9/","modified":"2024-01-27T18:01:52-08:00","kind":"pairings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 9","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-9/","modified":"2024-01-28T07:45:20-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 1","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-1/","modified":"2024-01-27T11:13:55-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 2","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-2/","modified":"2024-01-27T11:17:40-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 3","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-3/","modified":"2024-01-27T12:27:12-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 4","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-4/","modified":"2024-01-27T13:08:48-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 5","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-5/","modified":"2024-01-27T14:26:35-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 6","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-6/","modified":"2024-01-27T15:36:34-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 7","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-7/","modified":"2024-01-27T16:58:50-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Standings after Round 8","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-standings-after-round-8/","modified":"2024-01-27T17:59:14-08:00","kind":"standings","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024 Winner","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-winner/","modified":"2024-01-28T12:13:05-08:00","kind":"result","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Remote Duel YCS January 2024: Final Match","url":"https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-final-match/","modified":"2024-01-28T11:34:12-08:00","kind":"news","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"},
+  {"title":"Welcome To The Remote Duel YCS January 2024!","url":"https://yugiohblog.konami.com/2024/ycs/welcome-to-the-remote-duel-ycs-january-2024/","modified":"2024-01-27T11:20:47-08:00","kind":"news","event":"Remote Duel YCS January 2024","format":null,"slug":"remote-duel-ycs-january-2024"}
 ]

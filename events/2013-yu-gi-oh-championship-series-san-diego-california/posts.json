@@ -1,366 +1,40 @@
 [
-  {
-    "title": "Pairing for Top 32",
-    "url": "https://yugiohblog.konami.com/2013/ycs/pairing-for-top-32/",
-    "modified": "2013-04-07T16:41:24-07:00",
-    "kind": "pairings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Pairing for Top 16",
-    "url": "https://yugiohblog.konami.com/2013/ycs/pairing-for-top-16/",
-    "modified": "2013-04-07T17:58:44-07:00",
-    "kind": "pairings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Pairings for Top 8",
-    "url": "https://yugiohblog.konami.com/2013/ycs/pairings-for-top-8/",
-    "modified": "2013-04-07T19:26:15-07:00",
-    "kind": "pairings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Pairings for Top 4",
-    "url": "https://yugiohblog.konami.com/2013/ycs/pairings-for-top-4/",
-    "modified": "2013-04-07T20:06:36-07:00",
-    "kind": "pairings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings after Round 9 End of Day 1 of YCS San Diego.",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-9-end-of-day-1-of-ycs-san-diego/",
-    "modified": "2013-04-07T09:22:59-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings after Round 4 Constructed",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-4-constructed/",
-    "modified": "2013-04-07T14:50:42-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings after Round 5 Constructed",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-5-constructed/",
-    "modified": "2013-04-07T16:00:04-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-3-3/",
-    "modified": "2013-04-06T18:52:53-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-4/",
-    "modified": "2013-04-06T19:26:58-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings After Round 5",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-5-4/",
-    "modified": "2013-04-06T19:42:41-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-6-3/",
-    "modified": "2013-04-06T20:59:52-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-7-4/",
-    "modified": "2013-04-06T21:53:51-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2013/ycs/standings-after-round-8-5/",
-    "modified": "2013-04-06T23:15:21-07:00",
-    "kind": "standings",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 8 Feature Match: Theerasak Poonsombat vs. Pablo Garcia",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-8-feature-match-theerasak-poonsombat-vs-pablo-garcia/",
-    "modified": "2013-04-07T11:04:18-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Here are your 3v3 winners!",
-    "url": "https://yugiohblog.konami.com/2013/ycs/here-are-your-3v3-winners-2/",
-    "modified": "2013-04-07T19:21:19-07:00",
-    "kind": "result",
-    "event": "YCS San Diego",
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Welcome to Yu-Gi-Oh! Championship Series",
-    "url": "https://yugiohblog.konami.com/2013/ycs/welcome-to-yu-gi-oh-championship-series-san-diego-california/",
-    "modified": "2013-04-06T16:02:13-07:00",
-    "kind": "news",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 9 Feature Match: Daniel Laube vs. Rickie Ricketts",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-9-feature-match-daniel-laube-vs-rickie-ricketts/",
-    "modified": "2013-04-07T12:42:46-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Public Event Random Playoff Winner",
-    "url": "https://yugiohblog.konami.com/2013/ycs/public-event-random-playoff-winner/",
-    "modified": "2013-04-07T20:38:22-07:00",
-    "kind": "result",
-    "event": "YCS San Diego",
-    "format": "Public Events",
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 2 Constructed Feature Match: Bryan Rockenback vs. Alejandro Manuel Vasquez Guerena",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-2-constructed-feature-match-bryan-rockenback-vs-alejandro-manuel-vasquez-guerena/",
-    "modified": "2013-04-07T12:51:04-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Public Event Points Playoff Winner",
-    "url": "https://yugiohblog.konami.com/2013/ycs/public-event-points-playoff-winner/",
-    "modified": "2013-04-07T20:37:33-07:00",
-    "kind": "result",
-    "event": "YCS San Diego",
-    "format": "Public Events",
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 2 Constructed Feature Match: Jeff Jones Versus Julian Wong",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-2-feature-match-jeff-jones-versus-julian-wong/",
-    "modified": "2013-04-07T13:45:42-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 4 Constructed Feature Match: Jonny Nagel vs. Thomas Vo",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-4-constructed-feature-match-jonny-nagel-vs-thomas-vo/",
-    "modified": "2013-04-07T14:16:35-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Top 32 Feature Match: Bo Tang Versus Norberto Leon",
-    "url": "https://yugiohblog.konami.com/2013/ycs/top-32-feature-match-bo-tang-versus-norberto-leon/",
-    "modified": "2013-04-07T17:17:20-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 5 Constructed Feature Match: Norberto Leon vs. Steven Ma",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-5-constructed-feature-match-norberto-leon-vs-steven-ma/",
-    "modified": "2013-04-07T19:30:52-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Top 32 Feature Match: Nick Tomlin vs. Mauricio Pavon",
-    "url": "https://yugiohblog.konami.com/2013/ycs/top-32-feature-match-nick-tomlin-vs-mauricio-pavon/",
-    "modified": "2013-04-07T17:37:40-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Top 16 Feature Match: Anthony Eckroth vs. Long Dao",
-    "url": "https://yugiohblog.konami.com/2013/ycs/top-16-feature-match-anthony-eckroth-vs-long-dao/",
-    "modified": "2013-04-07T18:53:38-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Top 16 Feature Match: Norberto Leon Versus Michael Steinman",
-    "url": "https://yugiohblog.konami.com/2013/ycs/top-16-feature-match-norberto-leon-versus-michael-steinman/",
-    "modified": "2013-04-07T19:10:38-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Top 8 Feature Match: Steven Ma Versus Michael Steinman",
-    "url": "https://yugiohblog.konami.com/2013/ycs/top-8-feature-match-steven-ma-versus-michael-steinman/",
-    "modified": "2013-04-07T19:56:46-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Top 8 Feature Match: Jeff Jones vs. Angel Ascencio",
-    "url": "https://yugiohblog.konami.com/2013/ycs/top-8-feature-match-jeff-jones-vs-angel-ascencio/",
-    "modified": "2013-04-07T20:47:54-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Top 4 Feature Match: Angel Ascencio vs. Nick Tomlin",
-    "url": "https://yugiohblog.konami.com/2013/ycs/top-4-feature-match-angel-ascencio-vs-nick-tomlin/",
-    "modified": "2013-04-07T20:56:58-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Top 4 Feature Match: Michael Steinman Versus William Montes",
-    "url": "https://yugiohblog.konami.com/2013/ycs/top-4-feature-match-michael-steinman-versus-william-montes/",
-    "modified": "2013-04-07T21:21:22-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 1 Feature Match: Jose Garcia versus Peter Gross",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-1-feature-match-jose-garcia-versus-peter-gross/",
-    "modified": "2013-04-06T17:06:16-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 2 Feature Match: Bo Tang vs. Joshua Montano",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-2-feature-match-bo-tang-vs-joshua-montano/",
-    "modified": "2013-04-06T17:58:30-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 3 Feature Match: Brian Ahle Versus Joseph Herman",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-3-feature-match-brian-ahle-versus-joseph-herman/",
-    "modified": "2013-04-06T18:38:16-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 3 Feature Match: Michael Balan vs. Yang Yang",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-3-feature-match-michael-balan-vs-yang-yang/",
-    "modified": "2013-04-06T18:51:43-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 4 Feature Match: Danny Bassous Versus Charlie Jones",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-4-feature-match-danny-bassous-versus-charlie-jones/",
-    "modified": "2013-04-06T19:16:59-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 8 Feature Match: Wilson Tsang Versus Ed Acepcion",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-8-feature-match-wilson-tsang-versus-ed-acepcion/",
-    "modified": "2013-04-06T21:58:01-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  },
-  {
-    "title": "Round 7 Feature Match: Anthony Eckroth vs. Estevan Munoz",
-    "url": "https://yugiohblog.konami.com/2013/ycs/round-7-feature-match-anthony-eckroth-vs-estevan-munoz/",
-    "modified": "2013-04-06T22:24:16-07:00",
-    "kind": "feature",
-    "event": "YCS San Diego",
-    "article": true,
-    "format": null,
-    "slug": "2013-yu-gi-oh-championship-series-san-diego-california"
-  }
+  {"title":"Pairing for Top 32","url":"https://yugiohblog.konami.com/2013/ycs/pairing-for-top-32/","modified":"2013-04-07T16:41:24-07:00","kind":"pairings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Pairing for Top 16","url":"https://yugiohblog.konami.com/2013/ycs/pairing-for-top-16/","modified":"2013-04-07T17:58:44-07:00","kind":"pairings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Pairings for Top 8","url":"https://yugiohblog.konami.com/2013/ycs/pairings-for-top-8/","modified":"2013-04-07T19:26:15-07:00","kind":"pairings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Pairings for Top 4","url":"https://yugiohblog.konami.com/2013/ycs/pairings-for-top-4/","modified":"2013-04-07T20:06:36-07:00","kind":"pairings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings after Round 9 End of Day 1 of YCS San Diego.","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-9-end-of-day-1-of-ycs-san-diego/","modified":"2013-04-07T09:22:59-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings after Round 4 Constructed","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-4-constructed/","modified":"2013-04-07T14:50:42-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings after Round 5 Constructed","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-5-constructed/","modified":"2013-04-07T16:00:04-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings after Round 3","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-3-3/","modified":"2013-04-06T18:52:53-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings after Round 4","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-4/","modified":"2013-04-06T19:26:58-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings After Round 5","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-5-4/","modified":"2013-04-06T19:42:41-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings after Round 6","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-6-3/","modified":"2013-04-06T20:59:52-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings after Round 7","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-7-4/","modified":"2013-04-06T21:53:51-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Standings after Round 8","url":"https://yugiohblog.konami.com/2013/ycs/standings-after-round-8-5/","modified":"2013-04-06T23:15:21-07:00","kind":"standings","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 8 Feature Match: Theerasak Poonsombat vs. Pablo Garcia","url":"https://yugiohblog.konami.com/2013/ycs/round-8-feature-match-theerasak-poonsombat-vs-pablo-garcia/","modified":"2013-04-07T11:04:18-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Here are your 3v3 winners!","url":"https://yugiohblog.konami.com/2013/ycs/here-are-your-3v3-winners-2/","modified":"2013-04-07T19:21:19-07:00","kind":"result","event":"YCS San Diego","format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Welcome to Yu-Gi-Oh! Championship Series","url":"https://yugiohblog.konami.com/2013/ycs/welcome-to-yu-gi-oh-championship-series-san-diego-california/","modified":"2013-04-06T16:02:13-07:00","kind":"news","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 9 Feature Match: Daniel Laube vs. Rickie Ricketts","url":"https://yugiohblog.konami.com/2013/ycs/round-9-feature-match-daniel-laube-vs-rickie-ricketts/","modified":"2013-04-07T12:42:46-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Public Event Random Playoff Winner","url":"https://yugiohblog.konami.com/2013/ycs/public-event-random-playoff-winner/","modified":"2013-04-07T20:38:22-07:00","kind":"result","event":"YCS San Diego","format":"Public Events","slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 2 Constructed Feature Match: Bryan Rockenback vs. Alejandro Manuel Vasquez Guerena","url":"https://yugiohblog.konami.com/2013/ycs/round-2-constructed-feature-match-bryan-rockenback-vs-alejandro-manuel-vasquez-guerena/","modified":"2013-04-07T12:51:04-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Public Event Points Playoff Winner","url":"https://yugiohblog.konami.com/2013/ycs/public-event-points-playoff-winner/","modified":"2013-04-07T20:37:33-07:00","kind":"result","event":"YCS San Diego","format":"Public Events","slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 2 Constructed Feature Match: Jeff Jones Versus Julian Wong","url":"https://yugiohblog.konami.com/2013/ycs/round-2-feature-match-jeff-jones-versus-julian-wong/","modified":"2013-04-07T13:45:42-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 4 Constructed Feature Match: Jonny Nagel vs. Thomas Vo","url":"https://yugiohblog.konami.com/2013/ycs/round-4-constructed-feature-match-jonny-nagel-vs-thomas-vo/","modified":"2013-04-07T14:16:35-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Top 32 Feature Match: Bo Tang Versus Norberto Leon","url":"https://yugiohblog.konami.com/2013/ycs/top-32-feature-match-bo-tang-versus-norberto-leon/","modified":"2013-04-07T17:17:20-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 5 Constructed Feature Match: Norberto Leon vs. Steven Ma","url":"https://yugiohblog.konami.com/2013/ycs/round-5-constructed-feature-match-norberto-leon-vs-steven-ma/","modified":"2013-04-07T19:30:52-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Top 32 Feature Match: Nick Tomlin vs. Mauricio Pavon","url":"https://yugiohblog.konami.com/2013/ycs/top-32-feature-match-nick-tomlin-vs-mauricio-pavon/","modified":"2013-04-07T17:37:40-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Top 16 Feature Match: Anthony Eckroth vs. Long Dao","url":"https://yugiohblog.konami.com/2013/ycs/top-16-feature-match-anthony-eckroth-vs-long-dao/","modified":"2013-04-07T18:53:38-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Top 16 Feature Match: Norberto Leon Versus Michael Steinman","url":"https://yugiohblog.konami.com/2013/ycs/top-16-feature-match-norberto-leon-versus-michael-steinman/","modified":"2013-04-07T19:10:38-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Top 8 Feature Match: Steven Ma Versus Michael Steinman","url":"https://yugiohblog.konami.com/2013/ycs/top-8-feature-match-steven-ma-versus-michael-steinman/","modified":"2013-04-07T19:56:46-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Top 8 Feature Match: Jeff Jones vs. Angel Ascencio","url":"https://yugiohblog.konami.com/2013/ycs/top-8-feature-match-jeff-jones-vs-angel-ascencio/","modified":"2013-04-07T20:47:54-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Top 4 Feature Match: Angel Ascencio vs. Nick Tomlin","url":"https://yugiohblog.konami.com/2013/ycs/top-4-feature-match-angel-ascencio-vs-nick-tomlin/","modified":"2013-04-07T20:56:58-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Top 4 Feature Match: Michael Steinman Versus William Montes","url":"https://yugiohblog.konami.com/2013/ycs/top-4-feature-match-michael-steinman-versus-william-montes/","modified":"2013-04-07T21:21:22-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 1 Feature Match: Jose Garcia versus Peter Gross","url":"https://yugiohblog.konami.com/2013/ycs/round-1-feature-match-jose-garcia-versus-peter-gross/","modified":"2013-04-06T17:06:16-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 2 Feature Match: Bo Tang vs. Joshua Montano","url":"https://yugiohblog.konami.com/2013/ycs/round-2-feature-match-bo-tang-vs-joshua-montano/","modified":"2013-04-06T17:58:30-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 3 Feature Match: Brian Ahle Versus Joseph Herman","url":"https://yugiohblog.konami.com/2013/ycs/round-3-feature-match-brian-ahle-versus-joseph-herman/","modified":"2013-04-06T18:38:16-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 3 Feature Match: Michael Balan vs. Yang Yang","url":"https://yugiohblog.konami.com/2013/ycs/round-3-feature-match-michael-balan-vs-yang-yang/","modified":"2013-04-06T18:51:43-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 4 Feature Match: Danny Bassous Versus Charlie Jones","url":"https://yugiohblog.konami.com/2013/ycs/round-4-feature-match-danny-bassous-versus-charlie-jones/","modified":"2013-04-06T19:16:59-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 8 Feature Match: Wilson Tsang Versus Ed Acepcion","url":"https://yugiohblog.konami.com/2013/ycs/round-8-feature-match-wilson-tsang-versus-ed-acepcion/","modified":"2013-04-06T21:58:01-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"},
+  {"title":"Round 7 Feature Match: Anthony Eckroth vs. Estevan Munoz","url":"https://yugiohblog.konami.com/2013/ycs/round-7-feature-match-anthony-eckroth-vs-estevan-munoz/","modified":"2013-04-06T22:24:16-07:00","kind":"feature","event":"YCS San Diego","article":true,"format":null,"slug":"2013-yu-gi-oh-championship-series-san-diego-california"}
 ]

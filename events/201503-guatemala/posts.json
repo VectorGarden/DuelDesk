@@ -1,116 +1,14 @@
 [
-  {
-    "title": "Top 8 pairings at YCS Guatemala",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201503-guatemala/top-8-pairings-at-ycs-guatemala/",
-    "modified": "2015-03-08T11:53:02-07:00",
-    "kind": "pairings",
-    "event": "YCS Guatemala",
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201503-guatemala/standings-after-round-4-ycs-guatemala/",
-    "modified": "2015-03-07T15:05:00-08:00",
-    "kind": "standings",
-    "event": "YCS Guatemala",
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Standings after Round 5 at YCS Guatemala",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201503-guatemala/standings-after-round-5-at-ycs-guatemala/",
-    "modified": "2015-03-07T16:16:45-08:00",
-    "kind": "standings",
-    "event": "YCS Guatemala",
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2015/ycs/standings-after-round-6-ycs-guatemala/",
-    "modified": "2015-03-07T16:18:45-08:00",
-    "kind": "standings",
-    "event": "YCS Guatemala",
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Standings after Round 7: YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201503-guatemala/standings-after-round-7-ycs-guatemala/",
-    "modified": "2015-03-07T17:17:51-08:00",
-    "kind": "standings",
-    "event": "YCS Guatemala",
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Final Standings Day 1 at YCS Guatemala",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201503-guatemala/final-standings-day-1-at-ycs-guatemala/",
-    "modified": "2015-03-07T18:06:43-08:00",
-    "kind": "standings",
-    "event": "YCS Guatemala",
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "And the winner is….",
-    "url": "https://yugiohblog.konami.com/2015/ycs/and-the-winner-is-15/",
-    "modified": "2015-03-08T16:14:29-07:00",
-    "kind": "result",
-    "event": "YCS Guatemala",
-    "article": true,
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Top 16 Drafts Day 2 YCS Guatemala",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201503-guatemala/top-16-drafts-day-2-ycs-guatemala/",
-    "modified": "2015-03-08T11:10:39-07:00",
-    "kind": "news",
-    "event": "YCS Guatemala",
-    "article": true,
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Public Events photo gallery!",
-    "url": "https://yugiohblog.konami.com/2015/ycs/public-events-photo-gallery/",
-    "modified": "2015-03-08T11:26:29-07:00",
-    "kind": "news",
-    "event": "YCS Guatemala",
-    "article": true,
-    "format": "Public Events",
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Top 4! YCS Guatemala",
-    "url": "https://yugiohblog.konami.com/2015/ycs/top-4-ycs-guatemala/",
-    "modified": "2015-03-08T13:04:49-07:00",
-    "kind": "news",
-    "event": "YCS Guatemala",
-    "article": true,
-    "format": null,
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Photos from Public Events",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201503-guatemala/photos-from-public-events/",
-    "modified": "2015-03-08T16:33:06-07:00",
-    "kind": "news",
-    "event": "YCS Guatemala",
-    "article": true,
-    "format": "Public Events",
-    "slug": "201503-guatemala"
-  },
-  {
-    "title": "Welcome to YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/welcome-to-ycs-guatemala/",
-    "modified": "2015-03-07T11:17:55-08:00",
-    "kind": "news",
-    "event": "YCS Guatemala",
-    "article": true,
-    "format": null,
-    "slug": "201503-guatemala"
-  }
+  {"title":"Top 8 pairings at YCS Guatemala","url":"https://yugiohblog.konami.com/2015/ycs/201503-guatemala/top-8-pairings-at-ycs-guatemala/","modified":"2015-03-08T11:53:02-07:00","kind":"pairings","event":"YCS Guatemala","format":null,"slug":"201503-guatemala"},
+  {"title":"Standings after Round 4","url":"https://yugiohblog.konami.com/2015/ycs/201503-guatemala/standings-after-round-4-ycs-guatemala/","modified":"2015-03-07T15:05:00-08:00","kind":"standings","event":"YCS Guatemala","format":null,"slug":"201503-guatemala"},
+  {"title":"Standings after Round 5 at YCS Guatemala","url":"https://yugiohblog.konami.com/2015/ycs/201503-guatemala/standings-after-round-5-at-ycs-guatemala/","modified":"2015-03-07T16:16:45-08:00","kind":"standings","event":"YCS Guatemala","format":null,"slug":"201503-guatemala"},
+  {"title":"Standings after Round 6","url":"https://yugiohblog.konami.com/2015/ycs/standings-after-round-6-ycs-guatemala/","modified":"2015-03-07T16:18:45-08:00","kind":"standings","event":"YCS Guatemala","format":null,"slug":"201503-guatemala"},
+  {"title":"Standings after Round 7: YCS","url":"https://yugiohblog.konami.com/2015/ycs/201503-guatemala/standings-after-round-7-ycs-guatemala/","modified":"2015-03-07T17:17:51-08:00","kind":"standings","event":"YCS Guatemala","format":null,"slug":"201503-guatemala"},
+  {"title":"Final Standings Day 1 at YCS Guatemala","url":"https://yugiohblog.konami.com/2015/ycs/201503-guatemala/final-standings-day-1-at-ycs-guatemala/","modified":"2015-03-07T18:06:43-08:00","kind":"standings","event":"YCS Guatemala","format":null,"slug":"201503-guatemala"},
+  {"title":"And the winner is….","url":"https://yugiohblog.konami.com/2015/ycs/and-the-winner-is-15/","modified":"2015-03-08T16:14:29-07:00","kind":"result","event":"YCS Guatemala","article":true,"format":null,"slug":"201503-guatemala"},
+  {"title":"Top 16 Drafts Day 2 YCS Guatemala","url":"https://yugiohblog.konami.com/2015/ycs/201503-guatemala/top-16-drafts-day-2-ycs-guatemala/","modified":"2015-03-08T11:10:39-07:00","kind":"news","event":"YCS Guatemala","article":true,"format":null,"slug":"201503-guatemala"},
+  {"title":"Public Events photo gallery!","url":"https://yugiohblog.konami.com/2015/ycs/public-events-photo-gallery/","modified":"2015-03-08T11:26:29-07:00","kind":"news","event":"YCS Guatemala","article":true,"format":"Public Events","slug":"201503-guatemala"},
+  {"title":"Top 4! YCS Guatemala","url":"https://yugiohblog.konami.com/2015/ycs/top-4-ycs-guatemala/","modified":"2015-03-08T13:04:49-07:00","kind":"news","event":"YCS Guatemala","article":true,"format":null,"slug":"201503-guatemala"},
+  {"title":"Photos from Public Events","url":"https://yugiohblog.konami.com/2015/ycs/201503-guatemala/photos-from-public-events/","modified":"2015-03-08T16:33:06-07:00","kind":"news","event":"YCS Guatemala","article":true,"format":"Public Events","slug":"201503-guatemala"},
+  {"title":"Welcome to YCS","url":"https://yugiohblog.konami.com/2015/ycs/welcome-to-ycs-guatemala/","modified":"2015-03-07T11:17:55-08:00","kind":"news","event":"YCS Guatemala","article":true,"format":null,"slug":"201503-guatemala"}
 ]

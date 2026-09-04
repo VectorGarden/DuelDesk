@@ -747,7 +747,9 @@ class TestAPostIsReadHere(unittest.TestCase):
             # The prose itself is not in the file the event page fetches.
             beside = archive.posts_path(tmp, "ycs").read_text()
             self.assertNotIn("Words.", beside)
-            self.assertIn('"article": true', beside)
+            # What it says, not how it is spaced: the writer puts one post to a
+        # line now, so the file reads {"url":...,"article":true}.
+        self.assertEqual(json.loads(beside)[0]["article"], True)
 
 
 class TestDuelistsNamedInTheProse(unittest.TestCase):
@@ -7700,6 +7702,41 @@ class TestAnIndexOfEveryDuelist(unittest.TestCase):
         after = {p.name for p in (self.tmp.parent / "players").glob("*.json")}
         self.assertEqual(after, {"000.json"})
         self.assertTrue(before - after)
+
+
+class TestAFileYouCanDiff(unittest.TestCase):
+    """Written so a change shows as the line that changed."""
+
+    def test_the_thing_that_changes_is_a_line_of_its_own(self):
+        from archive import dumps
+        held = {"Ada Lovelace": [{"e": "one"}], "Kobe Louis Short": [{"e": "two"}]}
+        lines = dumps(held, depth=1).splitlines()
+        self.assertEqual(lines[0], "{")
+        self.assertEqual(lines[1], '  "Ada Lovelace": [{"e":"one"}],')
+        self.assertEqual(lines[2], '  "Kobe Louis Short": [{"e":"two"}]')
+        self.assertEqual(lines[3], "}")
+
+    def test_a_deeper_file_opens_only_as_far_as_it_is_asked_to(self):
+        # A round is worth a line per pairing; the pairing itself is not worth
+        # six. Depth is where the expanding stops.
+        from archive import dumps
+        event = {"formats": [{"rounds": [{"pairings": [{"a": "One", "b": "Two"}]}]}]}
+        written = [l.strip() for l in dumps(event, depth=6).splitlines()]
+        self.assertIn('{"a":"One","b":"Two"}', written)
+        self.assertEqual(dumps(event, depth=1).splitlines()[1],
+                         '  "formats": [{"rounds":[{"pairings":[{"a":"One","b":"Two"}]}]}]')
+
+    def test_nothing_is_written_that_does_not_read_back(self):
+        from archive import dumps
+        for held in ({}, [], {"a": []}, {"a": {"b": {}}}, [[], [1, 2]],
+                     {"\u00e9": ["Andr\u00e9", None, True, 1.5]}):
+            for depth in range(4):
+                self.assertEqual(json.loads(dumps(held, depth=depth)), held)
+
+    def test_writing_twice_writes_the_same_bytes(self):
+        from archive import dumps
+        held = {"b": [1, 2], "a": {"x": None}}
+        self.assertEqual(dumps(held, depth=2), dumps(held, depth=2))
 
 
 class TestANameCutToAnInitial(unittest.TestCase):
