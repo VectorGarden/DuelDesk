@@ -251,6 +251,44 @@ test('cards under a misspelt Extra Deck land in the Extra pile', async () => {
   assert.equal(pileOf('Exra Deck: 15'), 'Extra');
 });
 
+test('a name a bracket broke across paragraphs is put back together', async () => {
+  // "Maliss <P> March Hare" is published with the brackets unescaped, and the
+  // blog's own editor read "<P>" as a paragraph: the archive holds "3 Maliss"
+  // ending one paragraph and "March Hare" beginning the next. Neither half is
+  // a card, so the card was in no deck and in no export -- and the tail, read
+  // as a heading, split the Duelist's deck in two.
+  const head = {}, first = {}, second = {};
+  const [deck] = decksIn([
+    {text: 'Monsters: 1', p: head},
+    {text: '1 Bystial Magnamhut', p: first},
+    {text: '3 Maliss', p: first},
+    {text: 'March Hare', p: second},
+    {text: '2 Mulcharmy Purulia', p: second},
+  ]);
+  assert.deepEqual(deck.Monsters.map((c) => c.name),
+    ['Bystial Magnamhut', 'Maliss March Hare', 'Mulcharmy Purulia']);
+  assert.equal(deck.Monsters[1].quantity, 3, 'and the count it was written with');
+});
+
+test('the Duelist after a deck is not the rest of its last card', async () => {
+  // What tells them apart is what is under the line. A Duelist's name is
+  // alone in its paragraph or above "Main Deck: 43"; the tail of a card name
+  // is above the rest of the list it belongs to. Without that condition the
+  // rule takes 572 lines across the archive and nearly all of them are
+  // Duelists.
+  const head = {}, cards = {}, next = {}, under = {};
+  const [deck] = decksIn([
+    {text: 'Monsters: 1', p: head},
+    {text: '1 Solemn Judgment', p: cards},
+    {text: 'Julien Leo Kehon \u2013 2', p: next},
+    {text: 'Monsters: 1', p: under},
+    {text: '3 Ash Blossom & Joyous Spring', p: under},
+  ]);
+  assert.deepEqual(deck.Monsters.map((c) => c.name),
+    ['Solemn Judgment', 'Ash Blossom & Joyous Spring'],
+    'the Duelist is nobody\'s card name');
+});
+
 test('a wrap cannot cross a paragraph', async () => {
   // A name broken over two paragraphs is not a wrap -- it is the next thing
   // the post had to say, and in a deck list that is whoever came next.
@@ -638,6 +676,19 @@ test('a line under a section does not end the deck it is part of', async () => {
   const found = layout.layoutOf(lines);
   assert.equal(found.length, 1, 'one deck, and no place holding its Extra');
   assert.deepEqual([...found[0].piles.keys()], ['Monsters', 'Traps', 'Extra']);
+});
+
+test('a name broken by a bracket does not split the deck it is in', async () => {
+  // The tail arrives at the top of a paragraph, which is where a heading
+  // lives, so it ended the deck and the Side Deck under it opened one that
+  // was never there. The NA Dragon Duel post came out as nineteen decks for
+  // sixteen Duelists.
+  const {lines} = paragraphs(
+    '*Gabriel P. \u2013 5', 'Monsters: 2\n1 Bystial Magnamhut\n3 Maliss',
+    'March Hare\n2 Mulcharmy Purulia', 'Side Deck: 1\n1 Droll & Lock Bird');
+  const found = layout.layoutOf(lines);
+  assert.equal(found.length, 1, 'one Duelist, one deck');
+  assert.deepEqual([...found[0].piles.keys()], ['Monsters', 'Side']);
 });
 
 test('a heading with no number leaves the count it found', async () => {

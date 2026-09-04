@@ -1169,6 +1169,38 @@ class TestWhatACardDoes(unittest.TestCase):
         self.assertNotIn("raimei", stored)
         self.assertIn("ashblossomjoyousspring", stored)
 
+    def test_a_card_named_in_angle_brackets_answers_without_them(self):
+        # "Maliss <P> March Hare" is published with the brackets unescaped, so
+        # the blog's own editor read "<P>" as a paragraph and closed one
+        # there. What the archive holds is "3 Maliss" at the end of one
+        # paragraph and "March Hare" at the start of the next, and rejoined
+        # that reads "Maliss March Hare" -- the card by every measure except
+        # the one the store is keyed on.
+        from cards import build, normalise, shard_of
+        shards = build([self.card("Maliss <P> March Hare")])
+        alias = normalise("Maliss March Hare")
+        self.assertIn(alias, shards[shard_of(alias)])
+        self.assertEqual(shards[shard_of(alias)][alias]["name"], "Maliss <P> March Hare")
+        # And under its own name, which is what the card is called.
+        own = normalise("Maliss <P> March Hare")
+        self.assertIn(own, shards[shard_of(own)])
+
+    def test_an_alias_two_cards_answer_to_names_neither(self):
+        # The rule the keys are built under, applied to the aliases as well.
+        from cards import build, normalise, shard_of
+        shards = build([self.card("Maliss <P> March Hare"),
+                        self.card("Maliss <C> March Hare")])
+        alias = normalise("Maliss March Hare")
+        self.assertNotIn(alias, shards.get(shard_of(alias), {}))
+
+    def test_an_alias_never_takes_a_name_a_card_already_has(self):
+        # A card actually called "Maliss March Hare" keeps its own entry.
+        from cards import build, normalise, shard_of
+        shards = build([self.card("Maliss <P> March Hare", id=1),
+                        self.card("Maliss March Hare", id=2)])
+        alias = normalise("Maliss March Hare")
+        self.assertEqual(shards[shard_of(alias)][alias]["id"], 2)
+
     def test_writing_twice_writes_the_same_bytes(self):
         # A rebuild of an unchanged database should leave the repository
         # saying nothing happened.

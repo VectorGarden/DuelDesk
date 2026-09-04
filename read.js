@@ -300,6 +300,43 @@ function pileOf(heading){
    A deck ends where the next one begins, and the next one begins at the first
    main-deck section after a side or extra one. A post holds eight of them and
    nothing separates them but that. */
+/* Which lines are the rest of the card above them, written into the paragraph
+   below it.
+
+   "Maliss <P> March Hare" is published with the brackets unescaped, and the
+   blog's own editor read "<P>" as a paragraph: what it saved, and so what the
+   archive holds, is "3 Maliss" ending one paragraph and "March Hare" starting
+   the next. A wrap cannot cross a paragraph -- #244 -- and this is not a
+   wrap, it is a paragraph break invented by a CMS.
+
+   Told apart by what is under it. The line after a deck's last card is
+   ordinarily the next Duelist, and a Duelist's name is not followed by more
+   cards in the same paragraph: it is alone, or above "Main Deck: 43". The
+   tail of a card name is followed by the rest of the list it was in.
+
+   Measured over the archive: without that last condition the rule takes 572
+   lines across 42 posts, nearly all of them Duelists. With it, 11, and every
+   one is this. */
+function tailsIn(rows){
+  const out = new Set();
+  let pile = false;
+  let card = -1;
+  rows.forEach((row, at) => {
+    const text = (row.text ?? '').trim();
+    if (!text) return;
+    if (DECK_SECTION.test(text)){ pile = true; card = -1; return; }
+    if (DECK_COUNT.test(text)){ card = pile ? at : -1; return; }
+    if (BARE_COUNT.test(text)){ card = -1; return; }
+    const under = rows.slice(at + 1).find((next) => (next.text ?? '').trim());
+    if (card >= 0 && row.p && WRAPPED.test(text)
+        && under && under.p === row.p && DECK_COUNT.test(under.text.trim())){
+      out.add(at);
+    }
+    card = -1;
+  });
+  return out;
+}
+
 function decksIn(lines){
   const rows = lines.map((l) => (typeof l === 'string'
     ? {text: l.trim(), emph: null, p: null}
@@ -327,7 +364,8 @@ function decksIn(lines){
     closed = false;
   };
 
-  rows.forEach(({text, emph, p}) => {
+  const tails = tailsIn(rows);
+  rows.forEach(({text, emph, p}, at) => {
     if (!text) return;
     const said = wrote;
     wrote = null;
@@ -365,8 +403,9 @@ function decksIn(lines){
       waiting = null;
       return;
     }
-    /* The rest of a card's name, wrapped onto the line under it. */
-    if (said && said.p === p && WRAPPED.test(text)){
+    /* The rest of a card's name, wrapped onto the line under it -- or into
+       the paragraph under it, where a bracket in the name broke one. */
+    if (said && (tails.has(at) || (said.p === p && WRAPPED.test(text)))){
       said.card.name = `${said.card.name} ${text}`;
       wrote = said;
       return;
@@ -683,7 +722,9 @@ function layoutOf(lines){
   /* Where the last card was written, so the tail of a name that wrapped is
      read as more of it rather than as the next Duelist. */
   let wrote = null;
-  for (const {text: raw, p, emph} of lines){
+  const tails = tailsIn(lines);
+  for (let at = 0; at < lines.length; at++){
+    const {text: raw, p, emph} = lines[at];
     const text = raw.trim();
     if (!text) continue;
     if (p !== atP){ atP = p; said = 0; }
@@ -743,9 +784,12 @@ function layoutOf(lines){
       wrote = deck && pile && DECK_COUNT.test(text) ? p : null;
       continue;
     }
-    /* The rest of a card's name, wrapped onto the line under it, which is no
-       kind of heading and does not end the deck it is in the middle of. */
+    /* The rest of a card's name, wrapped onto the line under it, or into the
+       paragraph under it where a bracket in the name broke one. Neither is
+       any kind of heading, and neither ends the deck it is in the middle
+       of. */
     if (wrote === p && WRAPPED.test(text)) continue;
+    if (tails.has(at)) continue;
     /* Nor is anything written under a section in that section's own
        paragraph. Team YCS Las Vegas 2024 writes "Trap Cards: 3" and then,
        with no count of its own, "Infinite Impermanence": a heading belongs
