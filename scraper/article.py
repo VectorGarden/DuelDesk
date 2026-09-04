@@ -314,6 +314,76 @@ _NOT_A_NAME = {"the", "and", "van", "der", "den", "dos", "das", "del", "los",
 _TEAM_AFTER_NAME = re.compile(r"\s*\(.*")
 
 
+def rejoin(blocks: list[dict], known) -> list[dict]:
+    """Put back together a card name a bracket broke in half.
+
+    Ten cards are named with a token in angle brackets -- "Maliss <P> March
+    Hare", "Maliss <C> Chessy Cat" -- and the blog publishes them unescaped,
+    so its own editor read "<P>" as a paragraph and closed one there. What it
+    saved, and so what the archive holds, is "3 Maliss" ending one block and
+    "March Hare" beginning the next. Neither half is a card, so the card is in
+    no deck and in no export.
+
+    The reader rejoins eleven of the twelve (#252) and cannot reach the
+    twelfth: its tail is alone in its block above a section, which is the
+    shape of a Duelist's name above "Main Deck: 43", and telling those apart
+    needs to know whether a name is a card. The page cannot ask that while
+    parsing -- the store is fetched, the parse is not -- and here it is a
+    file on disk.
+
+    So: where a counted line names something the store does not know, and the
+    first line of the next block completes a name it does, the two are one
+    card. Requiring the join to be a card is the whole of the safety -- this
+    can recognise a card, not invent one. Over the archive it fires twelve
+    times, every one a Maliss, and leaves 417 other pairs alone because
+    joining them names nothing either.
+    """
+    counted = re.compile(r"^(\d+[.)]?\s+)(\S.*)$")
+    out = [dict(b) for b in blocks]
+    for i, block in enumerate(out[:-1]):
+        runs = block.get("r") or []
+        after = out[i + 1].get("r") or []
+        if not runs or not after:
+            continue
+        tail = _text_of(runs[-1])
+        head = _text_of(after[0])
+        if not tail or not head:
+            continue
+        said = counted.match(tail.rsplit("\n", 1)[-1].strip())
+        rest = head.split("\n", 1)[0].strip()
+        if not said or not rest or known(said.group(2)) or not known(
+                f"{said.group(2)} {rest}"):
+            continue
+        # The tail keeps the whole name; the head loses the half it held. A
+        # head that held nothing else goes, or the block is an empty line.
+        out[i] = {**block, "r": [*runs[:-1],
+                                 _with_text(runs[-1], f"{tail} {rest}")]}
+        left = head[len(head.split("\n", 1)[0]):].lstrip("\n")
+        out[i + 1] = {**out[i + 1],
+                      "r": ([_with_text(after[0], left), *after[1:]] if left
+                            else list(after[1:]))}
+    return [b for b in out if b.get("r") or b.get("t") in ("hr", "table")]
+
+
+def _text_of(run) -> str:
+    if isinstance(run, str):
+        return run
+    if isinstance(run, dict):
+        return run.get("t") or run.get("who") or next(
+            (v for v in run.values() if isinstance(v, str)), "")
+    return ""
+
+
+def _with_text(run, text: str):
+    """The same run, saying something else."""
+    if isinstance(run, str):
+        return text
+    if "who" in run:
+        return {**run, "t": text}
+    key = next((k for k, v in run.items() if isinstance(v, str)), None)
+    return {**run, key: text} if key else text
+
+
 # A deck list, as told from the article rather than from its title. Enough of
 # the page's reading to answer whether there is anything to take, and no more:
 # the page owns what a deck actually is, and read.js is where that lives.

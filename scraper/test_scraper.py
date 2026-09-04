@@ -7853,6 +7853,71 @@ class TestAFileYouCanDiff(unittest.TestCase):
         self.assertEqual(dumps(held, depth=2), dumps(held, depth=2))
 
 
+class TestANameABracketBrokeInHalf(unittest.TestCase):
+    """Ten cards are named with a token in angle brackets, and the blog
+    publishes them unescaped -- so its own editor read "<P>" as a paragraph
+    and closed one there. The archive holds "3 Maliss" ending one block and
+    "March Hare" beginning the next, and neither half is a card."""
+
+    def blocks(self, *texts):
+        return [{"t": "p", "r": [t]} for t in texts]
+
+    def text(self, blocks):
+        return [" | ".join(
+            (r if isinstance(r, str) else (r.get("t") or r.get("who") or ""))
+            for r in (b.get("r") or [])) for b in blocks]
+
+    def known(self, *cards):
+        held = set(cards)
+        return lambda name: name in held
+
+    def test_the_halves_are_put_back_together(self):
+        from article import rejoin
+        held = self.blocks("1 Evilswarm Exciton Knight\n1 Maliss",
+                           "March Hare\n1 Number 103: Ragnazero")
+        out = rejoin(held, self.known("Maliss March Hare"))
+        self.assertEqual(self.text(out),
+                         ["1 Evilswarm Exciton Knight\n1 Maliss March Hare",
+                          "1 Number 103: Ragnazero"])
+
+    def test_a_tail_alone_in_its_block_takes_the_block_with_it(self):
+        # The one the page cannot reach: a lone line above a section is the
+        # shape of a Duelist's name above "Main Deck: 43".
+        from article import rejoin
+        held = self.blocks("1 Chessy Cat\n2 Maliss", "White Rabbit", "Spell Cards: 7")
+        out = rejoin(held, self.known("Maliss White Rabbit"))
+        self.assertEqual(self.text(out),
+                         ["1 Chessy Cat\n2 Maliss White Rabbit", "Spell Cards: 7"])
+
+    def test_a_name_that_is_already_a_card_is_left_alone(self):
+        # "Maliss in the Mirror" is a card and was never broken. 49 lines in
+        # the archive say it.
+        from article import rejoin
+        # And the store is asked about the half first: a line that already
+        # names a card is finished, whatever the line under it would make of
+        # it.
+        held = self.blocks("1 Maliss in the Mirror", "Reloaded\n1 Ash Blossom")
+        out = rejoin(held, self.known("Maliss in the Mirror",
+                                      "Maliss in the Mirror Reloaded"))
+        self.assertEqual(self.text(out),
+                         ["1 Maliss in the Mirror", "Reloaded\n1 Ash Blossom"])
+
+    def test_a_join_that_is_not_a_card_is_not_made(self):
+        # The whole of the safety: this recognises a card, it does not invent
+        # one. 417 pairs in the archive look like this and are left alone.
+        from article import rejoin
+        held = self.blocks("3 Waboku\n2 Something", "Steven Trifunoski\n1 Ash Blossom")
+        out = rejoin(held, self.known("Ash Blossom & Joyous Spring"))
+        self.assertEqual(self.text(out),
+                         ["3 Waboku\n2 Something", "Steven Trifunoski\n1 Ash Blossom"])
+
+    def test_a_line_that_counts_nothing_is_not_a_card_to_finish(self):
+        from article import rejoin
+        held = self.blocks("Monsters: 12", "March Hare\n1 Ash Blossom")
+        out = rejoin(held, self.known("Monsters: 12 March Hare"))
+        self.assertEqual(self.text(out), ["Monsters: 12", "March Hare\n1 Ash Blossom"])
+
+
 class TestWhereTheDeckListsAre(unittest.TestCase):
     """Whether a post has deck lists to take, asked before fetching it.
 
@@ -8445,7 +8510,7 @@ class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
         manifest = json.loads((root / "events.json").read_text())
         good = json.loads((root / manifest["events"][0]["path"]).read_text())
 
-        def fake_build_one(f, slug, posts, ended, limit):
+        def fake_build_one(f, slug, posts, ended, limit, known=None):
             if slug == breaks_on:
                 raise KeyError("table")
             built.append(slug)
@@ -9024,7 +9089,7 @@ class TestTheRebuildIsWiredUp(unittest.TestCase):
         ranked = [(s, [{"kind": "pairings"}, {"kind": "standings"}], "2026-01-01")
                   for s in ("newest", "stale")]
         built = []
-        def fake_build_one(f, slug, posts, ended, limit):
+        def fake_build_one(f, slug, posts, ended, limit, known=None):
             built.append(slug)
             return ({"event": slug, "sample": False, "coverageBy": "Konami",
                      "built": 2, "updated": ended, "formats": []}, [], {}, [])
@@ -9111,7 +9176,7 @@ class TestARejectedEventIsRemembered(unittest.TestCase):
         good = json.loads((root / manifest["events"][0]["path"]).read_text())
         planned = []
 
-        def fake_build_one(f, slug, posts, ended, limit):
+        def fake_build_one(f, slug, posts, ended, limit, known=None):
             planned.append(slug)
             event = {**json.loads(json.dumps(good)), "event": slug, "updated": ended}
             if slug == breaks_coherence:
