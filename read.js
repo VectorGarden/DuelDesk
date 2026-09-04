@@ -316,6 +316,9 @@ function decksIn(lines){
   /* The card the line before held, where it was written, so a name that
      wrapped can be put back together. */
   let wrote = null;
+  /* The paragraph the pile was opened in, and the number it said it held. */
+  let opened = null;
+  let counting = null;
 
   const start = () => {
     deck = {name: heading.join(' — '), Monsters: [], Spells: [],
@@ -336,6 +339,9 @@ function decksIn(lines){
       if (!main) closed = true;
       pile = next;
       waiting = null;
+      opened = p;
+      counting = /^main\s*decks?/i.test(text)
+        ? null : Number(SECTION_COUNT.exec(text)?.[1]) || null;
       return;
     }
     const counted = DECK_COUNT.exec(text);
@@ -363,6 +369,16 @@ function decksIn(lines){
     if (said && said.p === p && WRAPPED.test(text)){
       said.card.name = `${said.card.name} ${text}`;
       wrote = said;
+      return;
+    }
+    /* A card written with no count of its own, under a section that gave
+       one: "Trap Cards: 3" and then "Infinite Impermanence" is three of it.
+       Only in the section's own paragraph, and only while the pile is still
+       empty, so it is the section's count being spent and not a sentence
+       after a list. */
+    const pot = deck && pile ? deck[pile] : null;
+    if (pot && !pot.length && opened === p && counting){
+      pot.push({name: text, quantity: Math.min(counting, 99)});
       return;
     }
     waiting = null;
@@ -730,6 +746,11 @@ function layoutOf(lines){
     /* The rest of a card's name, wrapped onto the line under it, which is no
        kind of heading and does not end the deck it is in the middle of. */
     if (wrote === p && WRAPPED.test(text)) continue;
+    /* Nor is anything written under a section in that section's own
+       paragraph. Team YCS Las Vegas 2024 writes "Trap Cards: 3" and then,
+       with no count of its own, "Infinite Impermanence": a heading belongs
+       at the top of a paragraph, not beneath the pile it would be ending. */
+    if (seenP === p) continue;
     /* The last thing said before a deck begins is its heading, and it is
        where the section should start rather than at "Monsters:". The last,
        not the first: a post opens with a line of introduction and then names
@@ -780,6 +801,32 @@ function endOfLine(p, n){
   return null;
 }
 
+/* One deck per place, read inside the boundaries that place drew.
+
+   Not the post read twice over and the two readings lined up by position.
+   They did not always agree on how many decks a post held -- a card name the
+   coverage broke in half, a card written without its count -- and wherever
+   they disagreed, every deck after it wore the next Duelist's name and the
+   next Duelist's count.
+
+   A span with no main deck in it is not a deck. Those were always thrown
+   away; they are thrown away here too, and now by the reading that decides
+   the names rather than by the other one. */
+function decksByPlace(lines, layout){
+  const found = [];
+  layout.forEach((place, i) => {
+    const stop = layout[i + 1]?.at ?? null;
+    const span = [];
+    for (let node = place.at; node && node !== stop; node = node.nextElementSibling){
+      span.push(node);
+    }
+    const own = new Set(span);
+    const [deck] = decksIn(lines.filter((line) => own.has(line.p)));
+    if (deck) found.push({deck, place, span});
+  });
+  return found;
+}
+
 /* The heading into the name, and out of the article: it is moved rather than
    copied, so the Duelist's name is still the link the article made it.
 
@@ -805,29 +852,25 @@ function takeHeading(name, held, upto){
 function shapeDecks(root){
   const lines = [];
   for (const p of root.querySelectorAll('p')) lines.push(...linesOf(p));
-  const decks = decksIn(lines);
-  if (!decks.length) return;
   const layout = layoutOf(lines);
-  const many = decks.length > 1;
+  if (!layout.length) return;
 
-  decks.forEach((deck, i) => {
-    const place = layout[i];
-    if (!place) return;
+  const found = decksByPlace(lines, layout);
+  if (!found.length) return;
+  /* In the order they are shown, which is the order the buttons name. */
+  const decks = found.map((f) => f.deck);
+  const many = found.length > 1;
+
+  found.forEach(({deck, place, span}, i) => {
     const section = document.createElement('section');
     section.className = 'deck';
     section.id = `deck-${i}`;
 
-    /* Everything from this deck's heading up to the next one. */
-    const stop = layout[i + 1]?.at ?? null;
-    const held = [];
-    for (let node = place.at; node && node !== stop; node = node.nextElementSibling){
-      held.push(node);
-    }
     place.at.before(section);
     const body = document.createElement('div');
     body.className = 'deck__body';
     body.id = `deckbody-${i}`;
-    held.forEach((node) => body.append(node));
+    span.forEach((node) => body.append(node));
 
     const piles = PILES.filter((pile) => place.piles.has(pile));
     for (const pile of piles) trim(place.piles.get(pile));
@@ -913,7 +956,7 @@ function shapeDecks(root){
   });
 
   if (many){
-    root.prepend(indexOf(decks, layout));
+    root.prepend(indexOf(found.map((f) => f.deck), found.map((f) => f.place)));
     /* Two abreast, and the page as wide as it has: a deck list is a column of
        short lines and does not want the measure prose is held to. */
     root.classList.add('article--decks');
