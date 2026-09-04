@@ -163,7 +163,7 @@ async function lookupCard(name){
    way the page hides anything from sight and not from a screen reader, and
    shown to everyone else on hover and on focus -- which the name already
    takes, being a link. */
-const where = (place) => place
+const heldAt = (place) => place
   ? `<span class="win__where">${esc(place)}</span>`
   : '';
 

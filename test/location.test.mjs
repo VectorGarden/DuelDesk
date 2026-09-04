@@ -20,20 +20,23 @@ import { loadPage } from './harness.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
+/* Named heldAt and not "where": read.js already has a where() of its own for
+   the event a post belongs to, and these files share one scope. The collision
+   took the whole reader page down -- see test/scripts.test.mjs. */
 test('a place is markup, and nothing is markup where there is no place', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
-  assert.match(page.run(`where('Guatemala City, Guatemala')`),
+  assert.match(page.run(`heldAt('Guatemala City, Guatemala')`),
     /^<span class="win__where">Guatemala City, Guatemala<\/span>$/);
-  assert.equal(page.run(`where(null)`), '');
-  assert.equal(page.run(`where('')`), '');
-  assert.equal(page.run(`where(undefined)`), '');
+  assert.equal(page.run(`heldAt(null)`), '');
+  assert.equal(page.run(`heldAt('')`), '');
+  assert.equal(page.run(`heldAt(undefined)`), '');
 });
 
 test('a place out of the coverage cannot inject markup', async (t) => {
   const page = await loadPage();
   t.after(() => page.close());
-  const html = page.run(`where('<img src=x onerror=alert(1)>')`);
+  const html = page.run(`heldAt('<img src=x onerror=alert(1)>')`);
   assert.equal(html.includes('<img'), false);
   assert.match(html, /&lt;img/);
 });
@@ -49,7 +52,7 @@ test('the row no longer prints it, and the name carries it instead', async () =>
   for (const file of ['winners.js', 'player.js']){
     const source = readFileSync(join(ROOT, file), 'utf8');
     assert.equal(source.includes('win__l"'), false, `${file} still prints the old column`);
-    assert.match(source, /where\((r|e\?)\.location\)/,
+    assert.match(source, /heldAt\((r|e\?)\.location\)/,
       `${file} should hang the place off the name`);
   }
 });
