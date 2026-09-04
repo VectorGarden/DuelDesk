@@ -817,6 +817,43 @@ class TestDuelistsNamedInTheProse(unittest.TestCase):
                         ["Grant Kelly"], by_surname=True)
         self.assertEqual(self.runs(got), ["He drew ", {"b": "Kelly's Gadget"}, "."])
 
+    def test_a_province_inside_a_name_is_not_part_of_it(self):
+        # Konami's deck lists carry the code out of its standings export in
+        # the middle of the name -- "Yuhao ON Ye", "Laurent QC Despatie" --
+        # so the name matched nothing, went unlinked, and was printed with a
+        # province in it. strip_region is what the tables are normalised by;
+        # this is the same answer for the prose.
+        got = self.link("<p>Yuhao ON Ye won it.</p>", ["Yuhao Ye"])
+        self.assertEqual(self.runs(got),
+                         [{"who": "Yuhao Ye", "t": "Yuhao Ye"}, " won it."])
+
+    def test_a_name_with_no_province_is_left_exactly_as_written(self):
+        got = self.link("<p>Yuhao Ye won it.</p>", ["Yuhao Ye"])
+        self.assertEqual(self.runs(got),
+                         [{"who": "Yuhao Ye", "t": "Yuhao Ye"}, " won it."])
+
+    def test_the_slot_a_province_goes_in_takes_capitals_only(self):
+        # Asked of the pattern rather than of an article: end to end a
+        # lowercase match is thrown away by the lookup that follows it, so
+        # both readings give the same answer and only one of them says what it
+        # means. A rule for two or three capitals, read case-insensitively,
+        # matches "leo".
+        import re
+        from article import _with_a_code
+        pattern = re.compile(_with_a_code("Yuhao Ye"), re.I)
+        self.assertTrue(pattern.fullmatch("Yuhao ON Ye"))
+        self.assertTrue(pattern.fullmatch("yuhao on ye") is None,
+                        "a lowercase word is not a province code")
+        self.assertTrue(pattern.fullmatch("Yuhao Ye"))
+
+    def test_a_lowercase_word_is_not_a_province(self):
+        # The name is matched without regard to case and the code is not: read
+        # case-insensitively, a rule for two or three capitals matches "leo",
+        # and "Julien leo Kehon" would be read as Julien Kehon with a province
+        # called Leo.
+        got = self.link("<p>Julien leo Kehon drew.</p>", ["Julien Kehon"])
+        self.assertEqual(self.runs(got), ["Julien leo Kehon drew."])
+
     def test_a_name_two_duelists_answer_to_marks_neither(self):
         got = self.link("<p>Kehon drew a card.</p>",
                         ["Julien Leo Kehon", "Marcus Kehon"], by_surname=True)

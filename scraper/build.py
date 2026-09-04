@@ -313,7 +313,13 @@ def round_key(post) -> tuple[str, Any]:
 #     line breaks. And the Duelist in a deck list's heading is a link now --
 #     the heading is bold, and a name written in full is safe to look for
 #     inside emphasis even though a surname is not.
-BUILD_VERSION = 56
+#  57 A province is not part of a Duelist's name. Konami's deck lists
+#     carry the code out of its standings export inside the name --
+#     "Yuhao ON Ye", "Laurent QC Despatie" -- so those names matched
+#     nobody, went unlinked, and were printed with a province in them.
+#     The tables were already normalised by strip_region; the prose is now
+#     answered the same way.
+BUILD_VERSION = 57
 
 
 @dataclass
