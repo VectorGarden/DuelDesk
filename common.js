@@ -152,6 +152,21 @@ async function lookupCard(name){
   return CARDS.get(shard)[key] ?? null;
 }
 
+/* Where an event was held, hung off its name rather than printed beside it.
+
+   "YCS Guatemala City · Guatemala City, Guatemala" says the same thing twice,
+   and only 44 of the archive's 190 events have a location at all -- so it was
+   a column that was absent three quarters of the time and redundant the rest.
+
+   In the markup rather than in a title attribute, because a title is not
+   reliably reachable by a keyboard and is unreadable on a phone. Hidden the
+   way the page hides anything from sight and not from a screen reader, and
+   shown to everyone else on hover and on focus -- which the name already
+   takes, being a link. */
+const where = (place) => place
+  ? `<span class="win__where">${esc(place)}</span>`
+  : '';
+
 function offsite(url){
   /* Every url here has been through safeUrl(), so it is either an http(s) URL or
      the inert '#'. That is why this needs no guard of its own: '#' resolves
