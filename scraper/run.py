@@ -23,8 +23,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import archive                                            # noqa: E402
-from article import (holds_decks, link_names,             # noqa: E402
+from article import (holds_decks, link_names, rejoin,     # noqa: E402
                      read as read_article, readable)
+import cards                                              # noqa: E402
 from build import BUILD_VERSION, Source, build_event      # noqa: E402
 from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
@@ -254,7 +255,8 @@ def select_posts(posts: list[dict], limit: int) -> list[dict]:
 
 
 def build_one(f, slug: str, posts: list[dict], ended: str,
-              limit: int) -> tuple[dict, list[dict], dict[str, list], list[str]]:
+              limit: int, known=None
+              ) -> tuple[dict, list[dict], dict[str, list], list[str]]:
     """Fetch and build one event.
 
     Returns (event, feed posts, articles, report lines).
@@ -322,6 +324,12 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     # knows who played and who each feature match was between.
     field, features = duelists_in(event)
     for url, blocks in articles.items():
+        # A card name the blog's own editor broke in half, put back together
+        # before anything reads the article -- see article.rejoin. Needs the
+        # card store, which is why it is passed in rather than imported: the
+        # page cannot do this, and this is the only place that can.
+        if known is not None:
+            blocks = rejoin(blocks, known)
         people, by_surname = article_people(kinds_of.get(url, ""), url, field, features)
         articles[url] = link_names(blocks, people, by_surname=by_surname)
 
@@ -469,13 +477,18 @@ def main() -> int:
           + "; building "
           + ", ".join(f"{slug} ({ended})" for slug, _, ended in chosen))
 
+    # The built card store, read from disk as names are asked about. One
+    # lookup for the whole run, so a shard is read once however many events
+    # mention it.
+    is_card = cards.known(Path(args.archive).parent or Path("."))
+
     report: list[str] = []
     newest_event = None
     failed: list[str] = []
     for i, (slug, posts, ended) in enumerate(chosen):
         try:
             event, feed_posts, articles, lines = build_one(f, slug, posts, ended,
-                                                           args.limit)
+                                                           args.limit, is_card)
         except Exception as exc:
             # One event must not take the others down with it. A backfill spends
             # minutes per event and writes each one as it finishes, so a failure

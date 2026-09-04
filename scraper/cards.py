@@ -92,6 +92,36 @@ def shard_of(key: str) -> str:
     return f"{int(digest[:8], 16) % CARD_SHARDS:03d}"
 
 
+def known(root: str | Path):
+    """Ask the built store whether a name is a card, one shard at a time.
+
+    For the scraper rather than the page: the page fetches a shard when it
+    needs one, and this reads the same files off disk. Kept as a closure over
+    what it has already read, because a post asks about forty names and a
+    build asks about tens of thousands.
+
+    Returns a callable, not a set: the store is 14,527 cards across 512 files
+    and a post touches a handful of them.
+    """
+    out = Path(root) / CARDS
+    held: dict[str, dict] = {}
+
+    def is_card(name: str) -> bool:
+        key = normalise(name)
+        if not key:
+            return False
+        shard = shard_of(key)
+        if shard not in held:
+            path = out / f"{shard}.json"
+            try:
+                held[shard] = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                held[shard] = {}
+        return key in held[shard]
+
+    return is_card
+
+
 def build(cards: list[dict]) -> dict[str, dict]:
     """Shard name -> {key: what the card is}.
 
