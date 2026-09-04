@@ -32,6 +32,23 @@ test('every shared case classifies as the fixture says', async (t) => {
   }
 });
 
+test('and every title shape the archive has published', async (t) => {
+  // The hand-written cases say what the rule is for; this says what it
+  // answers, over every shape of title the coverage has actually published.
+  // The 403 titles the two implementations once disagreed over were ones
+  // nobody had thought to write down, which is what a corpus is for.
+  const held = JSON.parse(readFileSync(
+    new URL('./fixtures/kinds-archive.json', import.meta.url), 'utf8')).cases;
+  const page = await loadPage({});
+  t.after(() => page.close());
+  const off = [];
+  for (const [title, kind] of Object.entries(held)){
+    const got = page.get(`kindFrom(${JSON.stringify(title.toLowerCase())})`);
+    if (got !== kind) off.push(`${title} — the scraper says ${kind}, the page ${got}`);
+  }
+  assert.deepEqual(off, [], `${off.length} of ${Object.keys(held).length} titles disagree`);
+});
+
 test('the fixture covers every kind the filter offers', async (t) => {
   // A shared fixture only stops a drift it looks at. The filter buttons in
   // index.html are the list this has to match.
