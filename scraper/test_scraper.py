@@ -7265,6 +7265,25 @@ class TestFoldedNames(unittest.TestCase):
             [["1", "Aaron", "Furman", "vs.", "Kobe", "Short"]])
         self.assertNotIn("Aaron Furman", canon)
 
+    def test_an_initial_one_Duelist_answers_to_is_expanded(self):
+        # Team YCS Las Vegas 2023 seats "Dominic C." in the tables that decided
+        # it and "Dominic Eduardo Couch" nowhere, so the event's champions were
+        # three Duelists nobody could look up. Where one Duelist fits, the
+        # initial is that Duelist.
+        canon, _ = self.fold(
+            [["1", "Dominic Eduardo", "Couch", "vs.", "Kobe Louis", "Short"]],
+            [["1", "Dominic", "C.", "vs.", "Kobe", "Short"]])
+        self.assertEqual(canon["Dominic C."], "Dominic Eduardo Couch")
+
+    def test_a_two_letter_name_is_not_the_start_of_a_longer_one(self):
+        # "Le" is a surname, not the beginning of "Lee". An initial identifies
+        # by being one letter; two letters is a name, and folding it loses a
+        # Duelist.
+        canon, _ = self.fold(
+            [["1", "Jongwon John", "Lee", "vs.", "Kobe Louis", "Short"]],
+            [["1", "John", "Le", "vs.", "Kobe", "Short"]])
+        self.assertNotIn("John Le", canon)
+
     def test_an_initial_is_not_expanded(self):
         # "J Jones" among several is not identification, and a two-letter word
         # would start half the forenames in the room.

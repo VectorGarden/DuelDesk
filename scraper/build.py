@@ -319,7 +319,7 @@ def round_key(post) -> tuple[str, Any]:
 #     nobody, went unlinked, and were printed with a province in them.
 #     The tables were already normalised by strip_region; the prose is now
 #     answered the same way.
-BUILD_VERSION = 57
+BUILD_VERSION = 58
 
 
 @dataclass
@@ -444,8 +444,12 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
     Being the only candidate is what makes the rest safe rather than reckless.
     YCS Knoxville seated a Mohammed Imran Khan as well, and he is not a
     candidate for "Faisal Khan"; had he been, neither Duelist would be folded.
-    The same uniqueness covers the initial nobody can expand -- "J Jones" is
-    left alone among five, which costs a record and does not invent one.
+    The same uniqueness is what lets an initial be expanded at all: "J Jones"
+    is left alone among five Joneses and read among one, which is the whole of
+    the rule. A team event's standings carry the roster rather than the entry
+    form -- Team YCS Las Vegas 2023 seats "Dominic C." in the tables that
+    decided it and "Dominic Eduardo Couch" nowhere -- so refusing every
+    initial cost that event's champions their names.
 
     Two spellings seated in the same round are two people, whatever their names
     look like: one Duelist does not play themselves. That case is left alone
@@ -513,11 +517,17 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
                 and x[off[0]] == y[off[1]] and x[off[1]] == y[off[0]])
 
     def shortens(sw: tuple[str, ...], lw: tuple[str, ...]) -> bool:
-        """Whether every word of sw is a distinct word of lw, or starts one."""
+        """Whether every word of sw is a distinct word of lw, or starts one.
+
+        A word stands for a longer one when it is an initial, or long enough
+        to be a name in its own right. Two letters is neither: "Le" is a
+        surname and not the beginning of "Lee", and letting it start one folds
+        John Le into Jongwon John Lee.
+        """
         spare = list(lw)
         for w in sw:
             fit = ([x for x in spare if x == w]
-                   or [x for x in spare if len(w) > 2 and x.startswith(w)])
+                   or [x for x in spare if len(w) != 2 and x.startswith(w)])
             if not fit:
                 return False
             spare.remove(fit[0])
