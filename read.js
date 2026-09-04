@@ -234,6 +234,18 @@ const DECK_COUNT = /^(\d+)\s+(\S.*)$/;
    one: the number plain, the card's name emphasised on the line after. */
 const BARE_COUNT = /^(\d{1,2})$/;
 const DECK_SECTION = /^(main\s*decks?|monsters?|monster cards?|spells?|spell cards?|traps?|trap cards?|extra\s*decks?|side\s*decks?)\b/i;
+/* A card whose name was too long for the line it was written on. "Light
+   Dragon @Ignister Mereologic Aggregator" is wrapped in the coverage, and
+   the wrap is a real break in the post, so the tail of the name arrives as a
+   line of its own that counts nothing and names no section.
+
+   It is the tail of the card above it when it is written in the same
+   paragraph as that card -- a wrap cannot cross a paragraph -- and when it
+   does not open with a number. That last is what keeps "2. T.G. Striker",
+   which is a count written with a full stop, from being read as more of the
+   T.G. Warwolf above it. Those are the only three lines in the archive this
+   is asked about at all. */
+const WRAPPED = /^\D/;
 /* How many the section says it holds, where it says so: "Monster Cards: 31". */
 const SECTION_COUNT = /:\s*(\d+)\s*$/;
 
@@ -266,7 +278,8 @@ function pileOf(heading){
    nothing separates them but that. */
 function decksIn(lines){
   const rows = lines.map((l) => (typeof l === 'string'
-    ? {text: l.trim(), emph: null} : {text: (l.text ?? '').trim(), emph: !!l.emph}));
+    ? {text: l.trim(), emph: null, p: null}
+    : {text: (l.text ?? '').trim(), emph: !!l.emph, p: l.p ?? null}));
   const decks = [];
   let deck = null;
   let pile = null;
@@ -276,6 +289,9 @@ function decksIn(lines){
      with the two on one line -- "3 Ash Blossom & Joyous Spring" -- and 21
      with the count on its own line and the name emphasised on the next. */
   let waiting = null;
+  /* The card the line before held, where it was written, so a name that
+     wrapped can be put back together. */
+  let wrote = null;
 
   const start = () => {
     deck = {name: heading.join(' — '), Monsters: [], Spells: [],
@@ -284,8 +300,10 @@ function decksIn(lines){
     closed = false;
   };
 
-  rows.forEach(({text, emph}) => {
+  rows.forEach(({text, emph, p}) => {
     if (!text) return;
+    const said = wrote;
+    wrote = null;
     if (DECK_SECTION.test(text)){
       const next = pileOf(text);
       const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
@@ -298,7 +316,9 @@ function decksIn(lines){
     }
     const counted = DECK_COUNT.exec(text);
     if (counted && deck && pile){
-      deck[pile].push({name: counted[2].trim(), quantity: Math.min(+counted[1], 99)});
+      const card = {name: counted[2].trim(), quantity: Math.min(+counted[1], 99)};
+      deck[pile].push(card);
+      wrote = p ? {card, p} : null;
       waiting = null;
       return;
     }
@@ -313,6 +333,12 @@ function decksIn(lines){
     if (waiting !== null && emph && deck && pile){
       deck[pile].push({name: text, quantity: waiting});
       waiting = null;
+      return;
+    }
+    /* The rest of a card's name, wrapped onto the line under it. */
+    if (said && said.p === p && WRAPPED.test(text)){
+      said.card.name = `${said.card.name} ${text}`;
+      wrote = said;
       return;
     }
     waiting = null;
@@ -614,6 +640,9 @@ function layoutOf(lines){
      the section rather than the paragraph before it. */
   let atP = null;
   let said = 0;
+  /* Where the last card was written, so the tail of a name that wrapped is
+     read as more of it rather than as the next Duelist. */
+  let wrote = null;
   for (const {text: raw, p, emph} of lines){
     const text = raw.trim();
     if (!text) continue;
@@ -661,6 +690,7 @@ function layoutOf(lines){
       if (!held.held.includes(p)) held.held.push(p);
       heading = [];
       seenP = p;
+      wrote = null;
       continue;
     }
     if (DECK_COUNT.test(text) || BARE_COUNT.test(text)){
@@ -670,8 +700,12 @@ function layoutOf(lines){
         deck.piles.get(pile).held.push(p);
       }
       if (deck) cards = true;
+      wrote = deck && pile && DECK_COUNT.test(text) ? p : null;
       continue;
     }
+    /* The rest of a card's name, wrapped onto the line under it, which is no
+       kind of heading and does not end the deck it is in the middle of. */
+    if (wrote === p && WRAPPED.test(text)) continue;
     /* The last thing said before a deck begins is its heading, and it is
        where the section should start rather than at "Monsters:". The last,
        not the first: a post opens with a line of introduction and then names
