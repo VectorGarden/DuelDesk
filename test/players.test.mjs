@@ -93,6 +93,19 @@ test('and what it points at is really there', async () => {
   }
 });
 
+const alsoSpelt = new Function(
+  source.slice(source.indexOf('function alsoSpelt(who)'),
+               source.indexOf('function place(row)')) + '; return alsoSpelt;')();
+
+test('a spelling that ends in a full stop does not get a second one', () => {
+  // The standings cut a name to an initial -- "Forbes K." -- and 1,401 of the
+  // pointers in the index are that shape now, so the sentence naming the other
+  // spelling would have ended "Forbes K..".
+  assert.ok(alsoSpelt('Forbes K.').endsWith('spells them Forbes K.'));
+  assert.ok(!alsoSpelt('Forbes K.').endsWith('..'));
+  assert.ok(alsoSpelt('Steven Trifunoski').endsWith('spells them Steven Trifunoski.'));
+});
+
 /* ── The links that reach these pages ────────────────────────────────────── */
 
 test('a Duelist name links to their own page, in a new tab', async () => {
