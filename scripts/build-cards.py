@@ -21,7 +21,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scraper"))
 import cards as cardstore                                        # noqa: E402
 
-API = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
+# misc=yes, because Konami's own card id is in misc_info and is not returned
+# without it. A registration form asks for that number and a .ydk asks for the
+# passcode, and they are different numbering systems.
+API = "https://db.ygoprodeck.com/api/v7/cardinfo.php?misc=yes"
 
 
 def fetch(url: str = API) -> list[dict]:

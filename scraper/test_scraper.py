@@ -1097,6 +1097,30 @@ class TestWhatACardDoes(unittest.TestCase):
         self.assertNotIn("level", entry)
         self.assertEqual(entry["type"], "Spell Card")
 
+    def test_both_numbers_a_deck_list_is_made_of_are_kept(self):
+        # They are different numbering systems and a deck list needs both:
+        # "id" is the passcode a .ydk and a ydke:// carry, "cid" is Konami's
+        # own id, which is what a registration form wants under
+        # CardDatabaseId. Writing one where the other belongs registers
+        # somebody for a card they are not playing.
+        from cards import build, shard_of, normalise
+        card = self.card("Ash Blossom & Joyous Spring", id=14558127,
+                         misc_info=[{"konami_id": 12950}])
+        key = normalise("Ash Blossom & Joyous Spring")
+        entry = build([card])[shard_of(key)][key]
+        self.assertEqual(entry["id"], 14558127)
+        self.assertEqual(entry["cid"], 12950)
+
+    def test_a_card_konami_never_numbered_keeps_its_passcode(self):
+        # 2% of the database has no konami_id. Those export as a .ydk and not
+        # as registration JSON, which is better than exporting as neither.
+        from cards import build, shard_of, normalise
+        card = self.card("Some Fusion", id=55555555, misc_info=[{}])
+        key = normalise("Some Fusion")
+        entry = build([card])[shard_of(key)][key]
+        self.assertEqual(entry["id"], 55555555)
+        self.assertNotIn("cid", entry)
+
     def test_a_name_two_cards_answer_to_names_neither(self):
         # Three of the database's keys do: "Rai-Mei" and "Raimei" among them.
         # Showing a reader the wrong card's text is worse than showing none,

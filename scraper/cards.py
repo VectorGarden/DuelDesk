@@ -37,6 +37,14 @@ CARD_SHARDS = 512
 # hovering a name in a match report is asking.
 FIELDS = ("type", "race", "attribute", "atk", "def", "level", "archetype", "desc")
 
+# And the two numbers a deck list is made of. They are different numbering
+# systems and a deck list needs both: "id" is the eight-digit passcode printed
+# on the card, which is what a .ydk file and a ydke:// URI carry, and "cid" is
+# Konami's own card id, which is what a tournament registration form wants
+# under CardDatabaseId. 98% of the database has a cid; the rest export as a
+# .ydk and not as registration JSON.
+IDS = ("id", "cid")
+
 def normalise(name: str) -> str:
     """A card's name as something two spellings of it can both be looked up by.
 
@@ -88,6 +96,14 @@ def build(cards: list[dict]) -> dict[str, dict]:
         entry = {"name": card["name"].strip()}
         entry.update({f: card[f] for f in FIELDS
                       if card.get(f) not in (None, "")})
+        if card.get("id") is not None:
+            entry["id"] = card["id"]
+        # Konami's own id, which the API buries under misc_info and only
+        # returns when it is asked for it.
+        cid = next((m.get("konami_id") for m in card.get("misc_info") or []
+                    if m.get("konami_id") is not None), None)
+        if cid is not None:
+            entry["cid"] = cid
         shards.setdefault(shard_of(key), {})[key] = entry
     return shards
 
