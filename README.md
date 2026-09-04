@@ -155,6 +155,26 @@ the coverage writes `Maxx “C”` with the quotes a CMS invents. That costs the
 punctuation was carrying — "Rai-Mei" and "Raimei" are two cards and one key — so a key naming more
 than one card names neither, which is 6 of 14,523.
 
+### Taking a deck away
+
+A deck list on a page is for reading; a deck list somebody wants to play is a file. Each deck in a
+post offers three, and they do not speak the same language:
+
+| | carries | for |
+| --- | --- | --- |
+| `.ydk` | the 8-digit passcode | every simulator |
+| `ydke://` | the same passcodes, little-endian and base64 | pasting as a link |
+| Registration JSON | Konami's own card id, as `CardDatabaseId` | tournament registration |
+
+Which is why [`cards/`](cards) keeps both numbers. The JSON matches what
+[Deckoder](https://github.com/VectorGarden/Deckoder) reads and writes.
+
+Konami writes a deck list in sections, one card to a line behind its count, and 77 of the archive's
+posts are written that way — 651 decks between them, and **98.8%** of their 26,762 card lines
+resolve to a passcode. The other 21 posts split the count from the name and are left alone: a deck
+exported wrong is worse than one not offered. Whatever a deck could not name is printed beside the
+buttons rather than quietly dropped.
+
 ### Event identity
 
 Posts appear both under an event slug (`/2026/ycs/2026-08-quebec/…`) and without one, and only

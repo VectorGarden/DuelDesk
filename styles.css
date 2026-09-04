@@ -516,6 +516,18 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
 }
 /* What the card is. Positioned in the document rather than the viewport, so
    it stays with the name it belongs to while the page settles. */
+/* Where a deck can be taken away. Sits at the head of the list it belongs to,
+   because a post holds eight of them. */
+.deckout{
+  display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;
+  margin:1.4rem 0 .7rem; padding-top:.9rem; border-top:1px solid var(--line-soft);
+}
+.deckout__k{
+  font:600 .66rem var(--mono); letter-spacing:.08em; text-transform:uppercase;
+  color:var(--text-3); margin-right:.15rem;
+}
+.deckout__note{font-size:.8rem; color:var(--text-3); flex-basis:100%}
+
 /* Hidden means gone. A display of its own beats the browser's rule for
    [hidden], so setting the attribute left the card sitting on the page --
    dismissing it worked, and nothing about it was visible. */

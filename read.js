@@ -94,6 +94,7 @@ async function load(){
       .filter(Boolean).join(' · ');
     bodyEl.innerHTML = blocksHtml(blocks) + credit(event);
     watchCards(bodyEl);
+    offerDecks(bodyEl);
     say(`${headline}, ${blocks.length} paragraphs`);
   } catch (err) {
     noteEl.textContent = '';
@@ -193,6 +194,165 @@ function cardPanel(card){
     ${stats.length ? `<span class="cardpop__s">${esc(stats.join('  '))}</span>` : ''}
     ${card.archetype ? `<span class="cardpop__a">${esc(card.archetype)}</span>` : ''}
     <span class="cardpop__d">${esc(card.desc ?? '')}</span>`;
+}
+
+/* ============================================================
+   A DECK LIST YOU CAN LOAD
+   ------------------------------------------------------------
+   A deck list on a page is for reading. A deck list somebody wants to play is
+   a file, and there are three that matter: a .ydk, which every simulator
+   opens; a ydke:// URI, which is the same thing as a link; and the JSON a
+   tournament registration form takes.
+
+   They do not speak the same language. A .ydk and a ydke:// carry the
+   eight-digit passcode printed on the card; registration wants Konami's own
+   card id under CardDatabaseId. The card store keeps both -- see
+   scraper/cards.py -- which is the whole reason this is a few lines rather
+   than a project.
+
+   Konami writes a deck list in sections, one card to a line behind its count:
+
+       Monsters: 19
+       3 Ash Blossom & Joyous Spring
+       ...
+       Extra Deck: 15
+       ...
+
+   77 of the archive's posts are written that way and hold 651 decks between
+   them. The other 21 split the count from the name -- a column of bare
+   numbers beside a column of names -- and are left alone; a deck exported
+   wrong is worse than one not offered.
+   ============================================================ */
+
+const DECK_COUNT = /^(\d+)\s+(\S.*)$/;
+const DECK_SECTION = /^(monsters?|monster cards?|spells?|spell cards?|traps?|trap cards?|extra\s*deck|side\s*deck)\b/i;
+
+/* Which pile a section's cards belong in. The post says so, which is better
+   than working it out from the cards: a .ydk records no types, so Deckoder has
+   to ask the API what each card is, and here the coverage already wrote it. */
+function pileOf(heading){
+  const h = heading.toLowerCase();
+  if (/^extra/.test(h)) return 'Extra';
+  if (/^side/.test(h)) return 'Side';
+  if (/^spell/.test(h)) return 'Spells';
+  if (/^trap/.test(h)) return 'Traps';
+  return 'Monsters';
+}
+
+/* The decks in a post, as names and counts. Lines in, decks out -- no DOM, so
+   it can be tested against text.
+
+   A deck ends where the next one begins, and the next one begins at the first
+   main-deck section after a side or extra one. A post holds eight of them and
+   nothing separates them but that. */
+function decksIn(lines){
+  const decks = [];
+  let deck = null;
+  let pile = null;
+  let closed = false;          // this deck has reached its side or extra
+  /* Whatever was said last before a deck began. Konami puts the placing, the
+     Duelist and the deck's name there -- "1st Place / Raymond Dai /
+     Exosisters" -- and it is what the file should be called. */
+  let heading = [];
+  for (const raw of lines){
+    const line = raw.trim();
+    if (!line) continue;
+    if (DECK_SECTION.test(line)){
+      const next = pileOf(line);
+      const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
+      if (!deck || (main && closed)){
+        deck = {name: heading.join(' — '), Monsters: [], Spells: [],
+                Traps: [], Extra: [], Side: []};
+        decks.push(deck);
+        closed = false;
+      }
+      heading = [];
+      if (!main) closed = true;
+      pile = next;
+      continue;
+    }
+    const counted = DECK_COUNT.exec(line);
+    if (counted && deck && pile){
+      deck[pile].push({name: counted[2].trim(), quantity: Math.min(+counted[1], 99)});
+    } else if (!counted){
+      /* Not a card and not a section, so it is being said about the deck that
+         comes next. Only the last few lines of it: a post opens with a
+         paragraph of introduction that is nobody's deck name. */
+      heading = [...heading, line].slice(-3);
+    }
+  }
+  return decks.filter(d => d.Monsters.length || d.Spells.length || d.Traps.length);
+}
+
+/* ---------- the three files ---------- */
+
+/* Every card of a pile, once per copy, as passcodes. */
+function passcodes(entries, resolve){
+  const out = [];
+  for (const {name, quantity} of entries){
+    const card = resolve(name);
+    if (!card || card.id === undefined) continue;
+    for (let i = 0; i < quantity; i++) out.push(card.id);
+  }
+  return out;
+}
+
+function ydkOf(deck, resolve, title){
+  const main = [...passcodes(deck.Monsters, resolve), ...passcodes(deck.Spells, resolve),
+                ...passcodes(deck.Traps, resolve)];
+  const lines = [];
+  if (title) lines.push(`#created by ${title}`);
+  lines.push('#main', ...main.map(String),
+             '#extra', ...passcodes(deck.Extra, resolve).map(String),
+             '!side', ...passcodes(deck.Side, resolve).map(String));
+  return lines.join('\n') + '\n';
+}
+
+/* Passcodes as little-endian 32-bit numbers, base64. What ydke:// is. */
+function idsToB64(ids){
+  const bytes = new Uint8Array(ids.length * 4);
+  const view = new DataView(bytes.buffer);
+  ids.forEach((id, i) => view.setUint32(i * 4, id >>> 0, true));
+  let s = '';
+  bytes.forEach((b) => { s += String.fromCharCode(b); });
+  return btoa(s);
+}
+
+function ydkeOf(deck, resolve){
+  const main = [...passcodes(deck.Monsters, resolve), ...passcodes(deck.Spells, resolve),
+                ...passcodes(deck.Traps, resolve)];
+  return `ydke://${idsToB64(main)}!${idsToB64(passcodes(deck.Extra, resolve))}`
+       + `!${idsToB64(passcodes(deck.Side, resolve))}!`;
+}
+
+/* The registration form's shape, which counts copies rather than repeating
+   them, and asks for Konami's id rather than the passcode. */
+function registrationOf(deck, resolve, title){
+  const pile = (entries) => {
+    const out = [];
+    for (const {name, quantity} of entries){
+      const card = resolve(name);
+      if (!card || card.cid === undefined) continue;
+      out.push({CardDatabaseId: card.cid, Quantity: quantity});
+    }
+    return out;
+  };
+  return {Name: title || 'Untitled deck', Monsters: pile(deck.Monsters),
+          Spells: pile(deck.Spells), Traps: pile(deck.Traps),
+          Side: pile(deck.Side), Extra: pile(deck.Extra)};
+}
+
+/* What the export could not name. Said out loud rather than quietly dropped:
+   a deck that exports 38 of its 40 cards is a deck that loses two games. */
+function missing(deck, resolve, needs){
+  const out = [];
+  for (const pile of ['Monsters', 'Spells', 'Traps', 'Extra', 'Side']){
+    for (const {name} of deck[pile]){
+      const card = resolve(name);
+      if (!card || card[needs] === undefined) out.push(name);
+    }
+  }
+  return [...new Set(out)];
 }
 
 let popup = null;
@@ -335,6 +495,108 @@ function place(span){
   const where = placement(at, popup.getBoundingClientRect(), view);
   popup.style.left = `${where.left + window.scrollX}px`;
   popup.style.top = `${where.top + window.scrollY}px`;
+}
+
+/* ---------- offering them ---------- */
+
+/* One deck's controls, put where its list begins.
+
+   Per deck, not per post: a Top 8 post holds eight of them and a reader wants
+   one. Which one is not a thing a single button at the top could be told. */
+function offerDecks(root){
+  const paragraphs = [...root.querySelectorAll('p')];
+  const lines = [];
+  for (const p of paragraphs){
+    for (const line of p.textContent.split('\n')) lines.push({line, p});
+  }
+  const decks = decksIn(lines.map((l) => l.line));
+  if (!decks.length) return;
+
+  /* Where each deck starts on the page: the first section heading after the
+     one before it. Found by walking the same lines the parse walked. */
+  const starts = [];
+  let seen = 0;
+  let closed = false;
+  let open = false;
+  for (const {line, p} of lines){
+    const text = line.trim();
+    if (!DECK_SECTION.test(text)) continue;
+    const pile = pileOf(text);
+    const main = pile === 'Monsters' || pile === 'Spells' || pile === 'Traps';
+    if (!open || (main && closed)){ starts.push(p); seen += 1; closed = false; open = true; }
+    if (!main) closed = true;
+  }
+
+  decks.forEach((deck, i) => {
+    const at = starts[i];
+    if (!at) return;
+    const bar = document.createElement('p');
+    bar.className = 'deckout';
+    bar.innerHTML = `<span class="deckout__k">Take this deck</span>
+      <button type="button" class="btn btn--sm" data-deck="${i}" data-as="ydk">.ydk</button>
+      <button type="button" class="btn btn--sm" data-deck="${i}" data-as="ydke">ydke://</button>
+      <button type="button" class="btn btn--sm" data-deck="${i}" data-as="json">Registration JSON</button>
+      <span class="deckout__note" data-note="${i}"></span>`;
+    at.before(bar);
+  });
+
+  root.addEventListener('click', (e) => {
+    const button = e.target.closest?.('[data-deck]');
+    if (button) handOver(decks[+button.dataset.deck], button.dataset.as,
+                         root.querySelector(`[data-note="${button.dataset.deck}"]`));
+  });
+}
+
+/* Resolve every card in a deck, then write the file. The store is sharded, so
+   this is one fetch per shard the deck touches -- about forty cards across
+   forty files the first time and none of them the second. */
+async function handOver(deck, as, note){
+  note.textContent = 'Looking the cards up…';
+  const names = ['Monsters', 'Spells', 'Traps', 'Extra', 'Side']
+    .flatMap((pile) => deck[pile].map((c) => c.name));
+  const found = new Map();
+  await Promise.all([...new Set(names)].map(async (name) => {
+    found.set(name, await lookupCard(name));
+  }));
+  const resolve = (name) => found.get(name) ?? null;
+
+  const needs = as === 'json' ? 'cid' : 'id';
+  const lost = missing(deck, resolve, needs);
+  /* A filename out of the heading: "1st Place — Raymond Dai — Exosisters"
+     becomes "1st Place - Raymond Dai - Exosisters".
+
+     Only what a file system actually objects to is taken out. Much of this
+     archive is named in Spanish and Portuguese, and a rule built on \w --
+     which is ASCII and nothing else -- turned an accented name into
+     "Jos Ram rez". */
+  const stem = (deck.name || 'decklist')
+    .replace(/[\u2013\u2014]/g, '-')
+    .replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim().slice(0, 60) || 'decklist';
+  if (as === 'ydk') save(ydkOf(deck, resolve, deck.name), `${stem}.ydk`, 'text/plain');
+  else if (as === 'ydke') save(ydkeOf(deck, resolve), `${stem}.ydke.txt`, 'text/plain');
+  else save(JSON.stringify(registrationOf(deck, resolve, deck.name), null, 2),
+            `${stem}.json`, 'application/json');
+
+  /* What it could not name, out loud. A deck exported two cards short is a
+     deck that loses games, and quietly is the wrong way to find that out. */
+  note.textContent = lost.length
+    ? `${lost.length} card${lost.length > 1 ? 's' : ''} not in the card store: ${lost.join(', ')}`
+    : '';
+}
+
+function save(text, filename, type){
+  const url = URL.createObjectURL(new Blob([text], {type}));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.append(a);
+  a.click();
+  a.remove();
+  /* Revoked on the next turn of the loop, not now: the click has to have been
+     handed the URL before it stops meaning anything. */
+  setTimeout(() => URL.revokeObjectURL(url), 0);
 }
 
 function watchCards(root){

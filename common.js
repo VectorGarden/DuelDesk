@@ -136,7 +136,12 @@ async function lookupCard(name){
   const shard = await cardShardOf(key);
   if (!CARDS.has(shard)){
     try {
-      const res = await fetch(`/cards/${shard}.json`, {cache: 'force-cache'});
+      /* Revalidated, not taken on trust. force-cache served whatever the
+         browser had whatever the store said, so a rebuilt card file never
+         reached anybody who had already read one -- which is how a deck
+         export came back missing twelve cards that were sitting in the shard
+         it had just asked for. */
+      const res = await fetch(`/cards/${shard}.json`, {cache: 'no-cache'});
       CARDS.set(shard, res.ok ? await res.json() : {});
     } catch {
       /* A card that will not load is a card the reader does not get told
