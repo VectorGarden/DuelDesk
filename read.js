@@ -603,6 +603,11 @@ function layoutOf(lines){
      came out as one deck, listed twice under the same name. */
   let heading = [];
   let seenP = null;
+  /* Whether the deck being read has held any cards yet. A heading ends a
+     deck, but only a deck that got as far as its cards: Speed Duel writes
+     "Main Deck: 20" and then, plain, the character and the skill, and that
+     line is not a second Duelist. */
+  let cards = false;
   for (const {text: raw, p, emph} of lines){
     const text = raw.trim();
     if (!text) continue;
@@ -628,6 +633,7 @@ function layoutOf(lines){
         deck = {at: own[0] ?? p, title: own, piles: new Map()};
         found.push(deck);
         closed = false;
+        cards = false;
       }
       if (!main) closed = true;
       pile = next;
@@ -651,6 +657,7 @@ function layoutOf(lines){
       if (deck && pile && p !== seenP && !deck.piles.get(pile).held.includes(p)){
         deck.piles.get(pile).held.push(p);
       }
+      if (deck) cards = true;
       continue;
     }
     /* The last thing said before a deck begins is its heading, and it is
@@ -666,7 +673,10 @@ function layoutOf(lines){
       : last.p === p ? [...heading.slice(0, -1), {p, emph: last.emph && emph}]
       : last.p.nextElementSibling === p ? [...heading, line].slice(-4)
       : [line];
-    if (deck && deck.piles.size){ deck = null; pile = null; closed = false; }
+    /* And it ends the deck before it -- but only one that reached its cards.
+       A deck that has just opened at "Main Deck: 20" has not, and the line
+       under it says which character was played, not who played next. */
+    if (deck && deck.piles.size && cards){ deck = null; pile = null; closed = false; }
   }
   return found;
 }

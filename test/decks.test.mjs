@@ -354,6 +354,40 @@ test('a heading set wholly in bold is kept whole', async () => {
   assert.equal(deck.at, nodes[1], 'never the introduction');
 });
 
+test('a line under "Main Deck: 20" is not a second Duelist', async () => {
+  // Speed Duel opens a deck with its total and only then says which character
+  // and skill it played, plain, under the bold. That line was read as a new
+  // heading and ended the deck it belonged to, so every Duelist came out
+  // twice: once holding nothing but the total, and once named after the
+  // character -- and two Duelists on one character then shared a name.
+  const {nodes, lines} = paragraphs(
+    'Here are the Top 4 Speed Duel Deck Lists!',
+    '*Leif Andersen \u2013 1st', '*Main Deck: 20',
+    'Character: Duke Devlin\nSkill Name: See Me Rolling',
+    '*Monster Cards: 9', '3 Volcanic Shell\n2 Snipe Hunter',
+    '*Side Deck: 2', '2 Kunai with Chain');
+  const found = layout.layoutOf(lines);
+  assert.equal(found.length, 1, 'one Duelist, one deck');
+  assert.deepEqual(found[0].title, [nodes[1]], 'named for the Duelist');
+  assert.deepEqual([...found[0].piles.keys()], ['Monsters', 'Side'],
+                   'and holding the piles that followed the line');
+  assert.equal(found[0].piles.get('Monsters').held.includes(nodes[5]), true,
+               'the cards among them');
+});
+
+test('a new name ends the deck before it, cut or no cut', async () => {
+  // Not every post closes a deck with a Side or an Extra. Where one ends at
+  // its traps and the next Duelist is named straight after, the name is all
+  // there is to go on -- without it the second deck's cards are added to the
+  // first and the post reads as one enormous deck.
+  const {nodes, lines} = paragraphs(
+    'Somebody', 'Monsters: 1\n1 Ash Blossom & Joyous Spring',
+    'Somebody Else', 'Monsters: 1\n1 Tearlaments Merrli');
+  const found = layout.layoutOf(lines);
+  assert.equal(found.length, 2, 'two Duelists, two decks');
+  assert.equal(found[1].at, nodes[2], 'the second at the second name');
+});
+
 test('a heading with no number leaves the count it found', async () => {
   const {lines} = paragraphs('Somebody', 'Monsters: 19', '1 Bystial Baldrake',
                              'Monsters', '1 Ash Blossom & Joyous Spring');
