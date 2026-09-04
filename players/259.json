@@ -380,6 +380,10 @@
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
+  "Christian D.": [
+    {"e":"2022-ycs-charlotte"},
+    {"e":"2024-02-team-ycs-las-vegas-nv"}
+  ],
   "Keir": [
     {"e":"2022-ycs-charlotte"}
   ],
@@ -446,9 +450,6 @@
     {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
   "Reece Neil McCormick": [
-    {"e":"2024-02-team-ycs-las-vegas-nv"}
-  ],
-  "Christian D.": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
   "Ronald L.": [
@@ -552,10 +553,10 @@
   "Ian E.": {
     "as": "Ian Gerald Engel"
   },
-  "Zach L.": {
-    "as": "Zach Mason Levin"
-  },
   "Julien K.": {
     "as": "Julien Leo Kehon"
+  },
+  "Zach L.": {
+    "as": "Zach Mason Levin"
   }
 }

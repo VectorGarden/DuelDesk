@@ -634,9 +634,6 @@
   "João A.": {
     "as": "João Vitor Abrahão"
   },
-  "Lyric B.": {
-    "as": "Lyric Bruner"
-  },
   "Luca C.": {
     "as": "Luca Mathew Jin Soo Choi"
   },
@@ -645,5 +642,8 @@
   },
   "Tyler M.": {
     "as": "Tyler Mackenzie Mocklin"
+  },
+  "Lyric B.": {
+    "as": "Lyric Bruner"
   }
 }

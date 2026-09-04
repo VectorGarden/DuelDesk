@@ -383,9 +383,6 @@
   "Josh Louis Rykhus": [
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
-  "2G&B": [
-    {"e":"2025-03-team-ycs-las-vegas"}
-  ],
   "Luis Edmoundo Colon": [
     {"e":"2025-05-ycs-providence"}
   ],
@@ -441,11 +438,11 @@
   "Ethan S.": {
     "as": "Ethan Robert Senecal"
   },
-  "Blake J.": {
-    "as": "Blake Michael Jones"
-  },
   "Gerardo R.": {
     "as": "Gerardo Isaac Rubalcava"
+  },
+  "Blake J.": {
+    "as": "Blake Michael Jones"
   },
   "Aiden G.": {
     "as": "Aiden Gastelum"

@@ -344,6 +344,9 @@
   "Ismael": [
     {"e":"2022-ycs-charlotte"}
   ],
+  "Christian F.": [
+    {"e":"2022-ycs-charlotte"}
+  ],
   "Jesus Aguilar Hernandez": [
     {"e":"2022-ycs-guadalajara-mexico"},
     {"e":"2023-central-america-wcq"}
@@ -575,10 +578,10 @@
   "Ezequiel Leites": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Dustin L.": {
-    "as": "Dustin Leonhardt"
-  },
   "Eva P.": {
     "as": "Eva Jolene Padilla"
+  },
+  "Dustin L.": {
+    "as": "Dustin Leonhardt"
   }
 }
