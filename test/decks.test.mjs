@@ -190,6 +190,53 @@ test('a heading in a paragraph of its own is taken whole', async () => {
   }
 });
 
+test('a card name that wrapped is one card, not a card and a stray', async () => {
+  // "Light Dragon @Ignister Mereologic Aggregator" is too long for the line
+  // the coverage wrote it on, and the wrap is a real break in the post. The
+  // tail counted nothing and named no section, so it was read as a heading:
+  // it ended the deck it was in the middle of, the Side Deck under it opened
+  // a deck that was never there, and neither half of the name resolved to a
+  // passcode.
+  const head = {}, main = {}, extra = {};
+  const [deck] = decksIn([
+    {text: 'Monsters: 1', p: head},
+    {text: '1 Ash Blossom & Joyous Spring', p: main},
+    {text: 'Extra Deck: 1', p: head},
+    {text: '1 Light Dragon @Ignister', p: extra},
+    {text: 'Mereologic Aggregator', p: extra},
+  ]);
+  assert.deepEqual(deck.Extra.map((c) => c.name),
+                   ['Light Dragon @Ignister Mereologic Aggregator']);
+  assert.equal(deck.Extra[0].quantity, 1, 'and one copy of it, not two');
+});
+
+test('a count written with a full stop is not the rest of the card above it', async () => {
+  // YCS Indianapolis 2011 writes "3 T.G. Warwolf" and then "2. T.G. Striker".
+  // The second is a count, punctuated, and gluing it to the first would lose
+  // a card and rename another. A line that opens with a number is never the
+  // tail of a name.
+  const head = {}, main = {};
+  const [deck] = decksIn([
+    {text: 'Monsters: 5', p: head},
+    {text: '3 T.G. Warwolf', p: main},
+    {text: '2. T.G. Striker', p: main},
+  ]);
+  assert.deepEqual(deck.Monsters.map((c) => c.name), ['T.G. Warwolf'],
+                   'the first card is left as it was written');
+});
+
+test('a wrap cannot cross a paragraph', async () => {
+  // A name broken over two paragraphs is not a wrap -- it is the next thing
+  // the post had to say, and in a deck list that is whoever came next.
+  const head = {}, main = {}, after = {};
+  const [deck] = decksIn([
+    {text: 'Monsters: 1', p: head},
+    {text: '1 Ash Blossom & Joyous Spring', p: main},
+    {text: 'Somebody Else', p: after},
+  ]);
+  assert.deepEqual(deck.Monsters.map((c) => c.name), ['Ash Blossom & Joyous Spring']);
+});
+
 test('a plain line after a count is not a card name', async () => {
   // Emphasis is what separates the two columns. Without it the sentence after
   // a stray number would be read as a card.
@@ -460,6 +507,19 @@ test('a heading in its own paragraph is not read as part of the section', async 
   const [deck] = layout.layoutOf(lines);
   assert.deepEqual(deck.title, [nodes[1]]);
   assert.equal(deck.upto, 0, 'no lines of the section paragraph');
+});
+
+test('the tail of a wrapped name does not open a deck that is not there', async () => {
+  // The layout has to agree with the parsing about how many decks a post
+  // holds -- they are paired by position -- so a tail read as a heading here
+  // put every name after it on the wrong deck.
+  const {nodes, lines} = paragraphs(
+    '*Jesse Kotton \u2013 1st Place', 'Monsters: 1\n1 Ash Blossom & Joyous Spring',
+    'Extra Deck: 1\n1 Light Dragon @Ignister\nMereologic Aggregator',
+    'Side Deck: 1\n1 Droll & Lock Bird');
+  const found = layout.layoutOf(lines);
+  assert.equal(found.length, 1, 'one deck, and no phantom under the Side Deck');
+  assert.deepEqual(found[0].title, [nodes[0]]);
 });
 
 test('a heading with no number leaves the count it found', async () => {
