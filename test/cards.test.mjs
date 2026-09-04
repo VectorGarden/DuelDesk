@@ -47,7 +47,15 @@ test('the page and the scraper agree on every card in the store', async (t) => {
     const expected = file.replace('.json', '');
     const shard = JSON.parse(readFileSync(join(CARDS, file), 'utf8'));
     for (const [key, card] of Object.entries(shard)) {
-      assert.equal(cardKey(card.name), key, `${card.name} keys differently here`);
+      /* Its own name, or -- for the ten cards named with a token in angle
+         brackets -- the name without it. The coverage cannot hold those
+         brackets: published unescaped, the blog's editor read "<P>" as a
+         paragraph and broke the name across one, so the store answers to the
+         halves rejoined as well. */
+      const own = cardKey(card.name);
+      const without = cardKey(card.name.replace(/<[^>]{1,3}>/g, ' '));
+      assert.ok(key === own || key === without,
+        `${card.name} keys differently here`);
       assert.equal(await cardShardOf(key), expected,
         `${card.name} would be looked for elsewhere`);
       checked += 1;

@@ -53,6 +53,15 @@ FIELDS = ("type", "race", "attribute", "atk", "def", "level", "archetype", "desc
 # .ydk and not as registration JSON.
 IDS = ("id", "cid")
 
+# A token the card's name carries in angle brackets. Ten cards are written
+# this way, all of them Maliss -- "Maliss <P> March Hare", "Maliss <C>
+# Chessy Cat" -- and the coverage cannot keep them: published unescaped, the
+# blog's own editor read "<P>" as a paragraph and closed one there, so what
+# the archive holds is "3 Maliss" at the end of a paragraph and "March Hare"
+# at the start of the next. Rejoined, that reads "Maliss March Hare", which
+# is the card by every measure except the one the store is keyed on.
+_BRACKETED = re.compile(r"<[^>]{1,3}>")
+
 def normalise(name: str) -> str:
     """A card's name as something two spellings of it can both be looked up by.
 
@@ -113,6 +122,24 @@ def build(cards: list[dict]) -> dict[str, dict]:
         if cid is not None:
             entry["cid"] = cid
         shards.setdefault(shard_of(key), {})[key] = entry
+
+    # And under the name with that token taken out, so the halves the archive
+    # holds answer to the card they name. Only where nothing else answers to
+    # it already: an alias that names two cards names neither, which is the
+    # rule the keys themselves are built under.
+    aliases: dict[str, list[dict]] = {}
+    for key, found in by_key.items():
+        if len(found) != 1:
+            continue
+        name = found[0]["name"].strip()
+        if not _BRACKETED.search(name):
+            continue
+        alias = normalise(_BRACKETED.sub(" ", name))
+        if alias and alias != key and alias not in by_key:
+            aliases.setdefault(alias, []).append(shards[shard_of(key)][key])
+    for alias, entries in aliases.items():
+        if len(entries) == 1:
+            shards.setdefault(shard_of(alias), {})[alias] = entries[0]
     return shards
 
 
