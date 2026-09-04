@@ -80,6 +80,87 @@ test('each pile holds what its section said', async () => {
   assert.equal(deck.Side.length, 1);
 });
 
+/* The other shape: two columns.
+ *
+ * 21 posts write a deck list with the count alone on its line and the card's
+ * name emphasised on the next. They held 38 decks and 2,596 cards and could
+ * not be read at all, because a line saying "3" is not a card and a line
+ * saying "Blue-Eyes White Dragon" has no quantity.
+ */
+const TWO_COLUMNS = [
+  {text: 'Billy Brake', emph: true},
+  {text: 'Monsters:', emph: true},
+  {text: '24', emph: false},                    // the section's own total
+  {text: '3', emph: false},
+  {text: 'Blue-Eyes White Dragon', emph: true},
+  {text: '1', emph: false},
+  {text: 'Sage with Eyes of Blue', emph: true},
+  {text: 'Extra Deck:', emph: true},
+  {text: '15', emph: false},
+  {text: '2', emph: false},
+  {text: 'Azure-Eyes Silver Dragon', emph: true},
+];
+
+test('a count on its own line belongs to the name under it', async () => {
+  const [deck] = decksIn(TWO_COLUMNS);
+  assert.deepEqual(deck.Monsters, [
+    {name: 'Blue-Eyes White Dragon', quantity: 3},
+    {name: 'Sage with Eyes of Blue', quantity: 1}]);
+  assert.deepEqual(deck.Extra, [{name: 'Azure-Eyes Silver Dragon', quantity: 2}]);
+});
+
+test("a section's own total is not a quantity of anything", async () => {
+  // "Monsters:" then 24 then 3 then the card. The total is overwritten by the
+  // count that follows it; read as a quantity it made 24 Blue-Eyes.
+  const [deck] = decksIn(TWO_COLUMNS);
+  assert.equal(deck.Monsters[0].quantity, 3, 'not 24');
+  assert.equal(deck.Extra[0].quantity, 2, 'not 15');
+});
+
+test('a line is emphasised only when the whole of it is', async (t) => {
+  // What separates the two columns is that the card's name is bold and the
+  // count is not. "He activated Effect Veiler" is a sentence with a card in
+  // it, and read as emphasis -- because it ends in some -- it would be a card
+  // called after the whole sentence.
+  //
+  // linesOf needs a document, so it is run in one rather than reimplemented.
+  const { loadPage } = await import('./harness.mjs');
+  const page = await loadPage();
+  try {
+    const got = page.json(`(() => {
+      ${reader.slice(reader.indexOf('function linesOf(p)'), reader.indexOf('/* Which paragraph each deck begins at'))}
+      const p = document.createElement('p');
+      p.innerHTML = '<b>Blue-Eyes White Dragon</b>\\nHe activated <b>Effect Veiler</b>\\n3';
+      return linesOf(p).map(({text, emph}) => [text, emph]);
+    })()`);
+    assert.deepEqual(got, [
+      ['Blue-Eyes White Dragon', true],
+      ['He activated Effect Veiler', false],
+      ['3', false]]);
+  } finally {
+    await page.close();
+  }
+});
+
+test('a plain line after a count is not a card name', async () => {
+  // Emphasis is what separates the two columns. Without it the sentence after
+  // a stray number would be read as a card.
+  const [deck] = decksIn([
+    {text: 'Monsters:', emph: true},
+    {text: '10', emph: false},
+    {text: '3', emph: false},
+    {text: 'and then he drew', emph: false},
+    {text: 'Blue-Eyes White Dragon', emph: true}]);
+  assert.deepEqual(deck?.Monsters ?? [], [], 'nothing was claimed');
+});
+
+test('lines given as plain strings still read the one-line shape', async () => {
+  // The caller does not always know about emphasis, and the 77 posts that
+  // write "3 Ash Blossom & Joyous Spring" never needed it.
+  const [deck] = decksIn(POST);
+  assert.equal(deck.Monsters[0].quantity, 3);
+});
+
 test('the section says which pile, because the post already knows', async () => {
   assert.equal(pileOf('Monster Cards: 19'), 'Monsters');
   assert.equal(pileOf('Spells: 15'), 'Spells');
@@ -197,7 +278,7 @@ function paragraphs(...texts){
   nodes.forEach((n, i) => { n.nextElementSibling = nodes[i + 1] ?? null; });
   const lines = [];
   for (const node of nodes){
-    for (const line of node.text.split('\n')) lines.push({line, p: node});
+    for (const line of node.text.split('\n')) lines.push({text: line, p: node});
   }
   return {nodes, lines};
 }

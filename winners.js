@@ -200,7 +200,7 @@ function render(){
       </div>
       <div class="win__at">
         <a class="win__e" href="/?event=${encodeURIComponent(r.slug)}">${esc(r.event)}${
-          where(r.location)}</a>
+          heldAt(r.location)}</a>
         ${r.format ? `<span class="win__f">${esc(r.format)}</span>` : ''}
         <span class="win__w">${esc(when(r.date))}</span>
       </div>

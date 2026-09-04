@@ -73,7 +73,7 @@ function render(rows, events){
     return `<li class="win">
       <div class="win__who">
         <a class="win__n win__e" href="/?event=${encodeURIComponent(r.e)}">${
-          esc(e?.event ?? r.e)}${where(e?.location)}</a>
+          esc(e?.event ?? r.e)}${heldAt(e?.location)}</a>
         ${place(r)}
         ${r.deck ? `<span class="win__d">${esc(r.deck)}</span>` : ''}
       </div>

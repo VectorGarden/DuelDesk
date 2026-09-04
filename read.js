@@ -230,6 +230,9 @@ function cardPanel(card){
    ============================================================ */
 
 const DECK_COUNT = /^(\d+)\s+(\S.*)$/;
+/* A count with nothing on the line but itself, which is how 21 posts write
+   one: the number plain, the card's name emphasised on the line after. */
+const BARE_COUNT = /^(\d{1,2})$/;
 const DECK_SECTION = /^(main\s*decks?|monsters?|monster cards?|spells?|spell cards?|traps?|trap cards?|extra\s*decks?|side\s*decks?)\b/i;
 /* How many the section says it holds, where it says so: "Monster Cards: 31". */
 const SECTION_COUNT = /:\s*(\d+)\s*$/;
@@ -254,46 +257,73 @@ function pileOf(heading){
 /* The decks in a post, as names and counts. Lines in, decks out -- no DOM, so
    it can be tested against text.
 
+   A line is either a string or, where the caller knows, {text, emph}: whether
+   the coverage emphasised it. Some posts need that to be read at all -- see
+   below.
+
    A deck ends where the next one begins, and the next one begins at the first
    main-deck section after a side or extra one. A post holds eight of them and
    nothing separates them but that. */
 function decksIn(lines){
+  const rows = lines.map((l) => (typeof l === 'string'
+    ? {text: l.trim(), emph: null} : {text: (l.text ?? '').trim(), emph: !!l.emph}));
   const decks = [];
   let deck = null;
   let pile = null;
-  let closed = false;          // this deck has reached its side or extra
-  /* Whatever was said last before a deck began. Konami puts the placing, the
-     Duelist and the deck's name there -- "1st Place / Raymond Dai /
-     Exosisters" -- and it is what the file should be called. */
+  let closed = false;
   let heading = [];
-  for (const raw of lines){
-    const line = raw.trim();
-    if (!line) continue;
-    if (DECK_SECTION.test(line)){
-      const next = pileOf(line);
+  /* A count waiting for the card it counts. Konami writes 77 of its posts
+     with the two on one line -- "3 Ash Blossom & Joyous Spring" -- and 21
+     with the count on its own line and the name emphasised on the next. */
+  let waiting = null;
+
+  const start = () => {
+    deck = {name: heading.join(' — '), Monsters: [], Spells: [],
+            Traps: [], Extra: [], Side: []};
+    decks.push(deck);
+    closed = false;
+  };
+
+  rows.forEach(({text, emph}) => {
+    if (!text) return;
+    if (DECK_SECTION.test(text)){
+      const next = pileOf(text);
       const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
-      if (!deck || (main && closed)){
-        deck = {name: heading.join(' — '), Monsters: [], Spells: [],
-                Traps: [], Extra: [], Side: []};
-        decks.push(deck);
-        closed = false;
-      }
+      if (!deck || (main && closed)) start();
       heading = [];
       if (!main) closed = true;
       pile = next;
-      continue;
+      waiting = null;
+      return;
     }
-    const counted = DECK_COUNT.exec(line);
+    const counted = DECK_COUNT.exec(text);
     if (counted && deck && pile){
       deck[pile].push({name: counted[2].trim(), quantity: Math.min(+counted[1], 99)});
-    } else if (!counted){
+      waiting = null;
+      return;
+    }
+    if (BARE_COUNT.test(text)){
+      /* A number on its own, waiting for the card under it. A section opens
+         with its own total -- "Monsters:" then 24 then 3 then the card -- and
+         that total is simply overwritten by the count that follows it, which
+         is why it needs no rule of its own. */
+      waiting = deck && pile ? Math.min(+text, 99) : null;
+      return;
+    }
+    if (waiting !== null && emph && deck && pile){
+      deck[pile].push({name: text, quantity: waiting});
+      waiting = null;
+      return;
+    }
+    waiting = null;
+    if (!counted){
       /* Not a card and not a section, so it is being said about the deck that
          comes next. Only the last few lines of it: a post opens with a
          paragraph of introduction that is nobody's deck name. */
-      heading = [...heading, line].slice(-3);
+      heading = [...heading, text].slice(-3);
     }
-  }
-  return decks.filter(d => d.Monsters.length || d.Spells.length || d.Traps.length);
+  });
+  return decks.filter((d) => d.Monsters.length || d.Spells.length || d.Traps.length);
 }
 
 /* ---------- the three files ---------- */
@@ -522,6 +552,35 @@ function place(span){
 
 const PILES = ['Monsters', 'Spells', 'Traps', 'Extra', 'Side'];
 
+/* A paragraph's lines, each with whether the coverage emphasised it and which
+   paragraph it came from.
+
+   Emphasis is not decoration here. 21 posts write a deck list as two columns
+   -- the count plain on its own line, the card's name in bold on the next --
+   and without knowing which is which they cannot be read at all.
+
+   A line counts as emphasised only when everything in it was: "He activated
+   Effect Veiler" is a sentence with a card in it, not a card. */
+function linesOf(p){
+  const out = [];
+  let text = '';
+  let emph = true;
+  let any = false;
+  const flush = () => { out.push({text: text.trim(), emph: emph && any, p}); text = ''; emph = true; any = false; };
+  const walk = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+  for (let node = walk.nextNode(); node; node = walk.nextNode()){
+    const marked = !!node.parentElement.closest('b, i, u, sup');
+    const parts = node.data.split('\n');
+    parts.forEach((part, i) => {
+      if (i) flush();
+      if (part.trim()){ emph = emph && marked; any = true; }
+      text += part;
+    });
+  }
+  flush();
+  return out.filter((line) => line.text);
+}
+
 /* Which paragraph each deck begins at, and which paragraphs hold each of its
    piles.
 
@@ -539,8 +598,8 @@ function layoutOf(lines){
   let closed = false;
   let heading = null;
   let seenP = null;
-  for (const {line, p} of lines){
-    const text = line.trim();
+  for (const {text: raw, p} of lines){
+    const text = raw.trim();
     if (!text) continue;
     if (DECK_SECTION.test(text)){
       const next = pileOf(text);
@@ -571,8 +630,9 @@ function layoutOf(lines){
       seenP = p;
       continue;
     }
-    if (DECK_COUNT.test(text)){
-      /* A card, in whatever paragraph it landed in. */
+    if (DECK_COUNT.test(text) || BARE_COUNT.test(text)){
+      /* A card, in whatever paragraph it landed in -- or the count of one,
+         which in the two-column posts is all a line holds. */
       if (deck && pile && p !== seenP && !deck.piles.get(pile).held.includes(p)){
         deck.piles.get(pile).held.push(p);
       }
@@ -598,12 +658,9 @@ function copiesIn(deck){
 }
 
 function shapeDecks(root){
-  const paragraphs = [...root.querySelectorAll('p')];
   const lines = [];
-  for (const p of paragraphs){
-    for (const line of p.textContent.split('\n')) lines.push({line, p});
-  }
-  const decks = decksIn(lines.map((l) => l.line));
+  for (const p of root.querySelectorAll('p')) lines.push(...linesOf(p));
+  const decks = decksIn(lines);
   if (!decks.length) return;
   const layout = layoutOf(lines);
   const many = decks.length > 1;
@@ -702,7 +759,12 @@ function shapeDecks(root){
     section.append(body);
   });
 
-  if (many) root.prepend(indexOf(decks, layout));
+  if (many){
+    root.prepend(indexOf(decks, layout));
+    /* Two abreast, and the page as wide as it has: a deck list is a column of
+       short lines and does not want the measure prose is held to. */
+    root.classList.add('article--decks');
+  }
 
   root.addEventListener('click', (e) => {
     /* The whole heading opens and closes the deck. Except a link in it: the

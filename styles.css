@@ -479,6 +479,22 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
 }
 /* The article as the whole point of a page rather than a note inside one. */
 .article--page{margin:1.4rem 0 2.5rem}
+
+/* A post of deck lists is not prose, and does not want prose's measure. A
+   deck list is a column of short lines, so 68ch left half the page empty and
+   the decks scrolling past it -- they sit two abreast now, and the page is as
+   wide as it has. Prose keeps its measure: a paragraph read at this width
+   cannot be followed back to the start of the next line. */
+.article--decks{max-width:none}
+.article--decks > .deck{
+  break-inside:avoid;
+  border-top:1px solid var(--line-soft);
+}
+@media (min-width:60rem){
+  .article--decks{columns:2; column-gap:2.4rem}
+  /* The index spans both, because it is about all of them. */
+  .article--decks > .deckindex, .article--decks > p{column-span:all}
+}
 .article--page p{margin:0 0 1.05rem}
 /* Which event this came from, above the headline. */
 .read__where{font:600 .78rem var(--body); letter-spacing:.06em; text-transform:uppercase; color:var(--text-3); margin:0 0 .3rem}
