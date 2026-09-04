@@ -199,6 +199,7 @@ let popup = null;
 let showing = null;       // the name the open card belongs to
 let opening = null;       // the timer waiting to see if the reader meant it
 let closing = null;       // and the one giving them time to reach the card
+let muted = false;        // sent away by hand, until the pointer moves again
 
 /* Long enough that passing over a name on the way somewhere else opens
    nothing, short enough that resting on one does not feel like waiting. A
@@ -210,6 +211,12 @@ const REST = 300;
    through. Closing on the instant it left the name made the card
    unreachable. */
 const REACH = 160;
+
+/* Sent away deliberately, as against merely moved away from. */
+function dismiss(){
+  muted = true;
+  closeCard();
+}
 
 function closeCard(){
   clearTimeout(opening); opening = null;
@@ -227,7 +234,7 @@ const hold = () => { clearTimeout(closing); closing = null; };
 
 function wantCard(span){
   hold();
-  if (showing === span) return;
+  if (muted || showing === span) return;
   clearTimeout(opening);
   opening = setTimeout(() => openCard(span), REST);
 }
@@ -347,13 +354,27 @@ function watchCards(root){
   });
   root.addEventListener('focusout', closeCard);
   /* Every ordinary way of saying "enough". Escape is what a tooltip owes a
-     keyboard; a click anywhere is what a reader tries first; and a card left
-     hanging over the page while it scrolls is pointing at nothing. */
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeCard(); });
-  document.addEventListener('pointerdown', (e) => {
-    if (!e.target.closest?.('.cardpop')) closeCard();
+     keyboard, and a click is what everybody tries first -- including a click
+     on the card itself, which is the thing under the pointer when a reader
+     decides they have had enough of it. That was exempted at first so its
+     text stayed selectable, which made the one obvious way of dismissing it
+     the one way that did nothing.
+
+     Selecting still works: a drag ends in a click too, so a click that
+     leaves a selection behind is not a dismissal. */
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') dismiss(); });
+  document.addEventListener('click', () => {
+    if ((window.getSelection?.()?.toString() ?? '').trim()) return;
+    dismiss();
   });
+  /* A card left hanging over the page while it scrolls is pointing at
+     nothing. */
   window.addEventListener('scroll', closeCard, {passive: true});
+  /* Sent away by hand, it stays away until the reader moves. Hiding it
+     changes what is under the pointer, and what is under the pointer is
+     often another card name -- so dismissing it opened the next one, and
+     the dismissal looked like it had done nothing. */
+  root.addEventListener('mousemove', () => { muted = false; }, {passive: true});
 }
 
 applyTheme();
