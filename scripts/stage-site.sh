@@ -17,6 +17,7 @@ mkdir -p "$OUT"
 # winners.html is a tombstone redirecting to /winners, not the page itself --
 # see the file. It stays staged for as long as links to the old URL might.
 FILES=(index.html winners.html styles.css common.js app.js winners.js player.js read.js
+       decks.js
        feed.xml events.json upcoming.json og.png
        favicon.ico site.webmanifest CNAME robots.txt)
 # events/ is the archive: one directory per event, fetched on demand rather than
