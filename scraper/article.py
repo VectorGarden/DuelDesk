@@ -314,6 +314,66 @@ _NOT_A_NAME = {"the", "and", "van", "der", "den", "dos", "das", "del", "los",
 _TEAM_AFTER_NAME = re.compile(r"\s*\(.*")
 
 
+# A deck list, as told from the article rather than from its title. Enough of
+# the page's reading to answer whether there is anything to take, and no more:
+# the page owns what a deck actually is, and read.js is where that lives.
+#
+# A section heading -- "Monsters: 19", "Main Deck: 41", and the two the
+# coverage spells wrong -- and ten counted lines under one. Ten because a
+# breakdown post names a handful of cards in prose and a deck list never holds
+# fewer than forty.
+_DECK_SECTION = re.compile(
+    r"^(main\s*decks?|monsters?|monster cards?|spells?|spell cards?"
+    r"|traps?|trap cards?|(extra|etra|exra)\s*decks?|side\s*decks?)\b", re.I)
+_DECK_COUNT = re.compile(r"^(\d+)[.)]?\s+\S")
+
+
+def _lines(blocks: list[dict]):
+    """Every line of the article, as the page reads them.
+
+    Each block's runs joined and split on the breaks the coverage wrote, which
+    is where a deck list keeps one card. Emphasis included: a section heading
+    is bold, and plain() is the one that drops it.
+    """
+    for b in blocks:
+        text = ""
+        for run in b.get("r", ()):
+            if isinstance(run, str):
+                text += run
+            elif isinstance(run, dict):
+                text += run.get("who") or run.get("t") or next(
+                    (v for v in run.values() if isinstance(v, str)), "")
+        yield from text.split("\n")
+
+
+def holds_decks(blocks: list[dict]) -> bool:
+    """Whether this article has deck lists in it to take away.
+
+    The page reads the decks themselves -- one file per Duelist, named for
+    their placing -- and it can only do that once it has fetched the article.
+    This is so the button can be offered, or not offered, before any of that
+    is paid for: 99 posts in the archive hold deck lists and 3,928 do not, and
+    a post whose title says "deck" is wrong about it more often than not. 99
+    events have one; 41 have deck lists.
+
+    Deliberately less than the page's reading, and checked against it: the
+    list in test/fixtures/deck-posts.json is what read.js finds, and the test
+    asserts this agrees about all 4,027 articles. Agreeing is the whole
+    requirement -- this says whether, the page says what.
+    """
+    said = False
+    counted = 0
+    for line in _lines(blocks):
+        line = line.strip()
+        if not line:
+            continue
+        if _DECK_SECTION.match(line):
+            said = True
+        elif said and _DECK_COUNT.match(line):
+            counted += 1
+    return said and counted >= 10
+
+
 def _person(name: str) -> str:
     return _TEAM_AFTER_NAME.sub("", name).strip()
 

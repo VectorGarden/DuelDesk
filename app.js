@@ -931,6 +931,11 @@ function asCoveragePosts(raw){
          a post that reached the page through the RSS feed keeps its link out
          until its event is expanded and the real list arrives. */
       article: p.article === true,
+      /* And whether it holds deck lists, which the scraper read out of the
+         article -- see article.holds_decks. The button that takes an event's
+         decks is offered on this rather than on the kind: 99 posts are
+         titled as if they were deck lists and 41 events actually have any. */
+      decks: p.decks === true,
       time: when ? when.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}) : '',
       date: when,
       ...classify(headline),
@@ -1247,6 +1252,28 @@ function exportName(label){
     .replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').toLowerCase() + '.json';
 }
 
+/* The button for an event's deck lists, which is offered on what the scraper
+   already decided: a post carries decks: true when its article holds deck
+   lists, so this asks posts.json and not the article. 41 events in the
+   archive have decks; 99 have a post whose title says "deck", which is why
+   the title is not what this asks.
+
+   Out of the manifest, which is already here. Asking the event's posts meant
+   fetching to find out whether to offer a button, and fetching from a render
+   re-rendered the coverage list underneath somebody opening it. */
+function renderDeckExport(){
+  const button = document.getElementById('export-decks');
+  if (!button) return;
+  const held = entryFor(activeEvent)?.decks ?? 0;
+  button.hidden = held === 0;
+  if (!button.hidden){
+    button.textContent = 'Take the Deck Lists';
+    button.setAttribute('aria-label',
+      `Download every deck list this event published, from ${held} `
+      + `post${held > 1 ? 's' : ''}, as .ydk files`);
+  }
+}
+
 function renderExport(r){
   const one = document.getElementById('export-archetypes');
   const all = document.getElementById('export-top-cut');
@@ -1260,6 +1287,7 @@ function renderExport(r){
         `Export the ${rows.length} archetypes across ${seats} Duelists in ${r.label} as JSON`);
     }
   }
+  renderDeckExport();
   if (all){
     const rows = topCutArchetypes();
     /* Hidden where it would only repeat the button beside it: an event whose
@@ -1289,8 +1317,53 @@ function download(rows, name){
   URL.revokeObjectURL(url);
 }
 
+/* Every deck the event published, read out of its articles.
+
+   Fetched here rather than with the rounds: the largest articles.json in the
+   archive is half a megabyte, 88K over the wire, and somebody reading the
+   round tables should not pay for it. Read with decks.js, which is the
+   reader's own reading -- the two pages agree about what a deck is because
+   there is one of it. */
+async function takeEventDecks(note){
+  const entry = entryFor(activeEvent);
+  if (!entry) return;
+  note.textContent = 'Reading the deck lists…';
+  await loadEventPosts(activeEvent);
+  const held = (POSTS.get(activeEvent) ?? []).filter((p) => p.decks);
+  if (!held.length){
+    note.textContent = 'No deck lists in this event after all.';
+    return;
+  }
+  let articles;
+  try {
+    const res = await fetch(articlesPath(entry), {cache: 'no-cache'});
+    if (!res.ok) throw new Error(`articles responded ${res.status}`);
+    articles = await res.json();
+  } catch {
+    note.textContent = 'The deck lists would not load. Try again in a moment.';
+    return;
+  }
+  const decks = [];
+  for (const post of held){
+    const blocks = articles[post.url];
+    if (!blocks) continue;
+    const box = document.createElement('div');
+    box.innerHTML = blocksHtml(blocks);
+    const lines = [];
+    for (const el of box.querySelectorAll('p')) lines.push(...linesOf(el));
+    for (const {deck} of decksByPlace(lines, layoutOf(lines))) decks.push(deck);
+  }
+  if (!decks.length){
+    note.textContent = 'No deck lists in this event after all.';
+    return;
+  }
+  await handOverAll(decks, 'ydk', note, entry.event ?? 'deck lists');
+}
+
 document.addEventListener('click', e => {
-  if (e.target.closest('#export-archetypes')){
+  if (e.target.closest('#export-decks')){
+    takeEventDecks(document.getElementById('export-decks-note'));
+  } else if (e.target.closest('#export-archetypes')){
     const r = roundOf(activeRound);
     if (r) download(archetypeCounts(r), exportName(r.label));
   } else if (e.target.closest('#export-top-cut')){

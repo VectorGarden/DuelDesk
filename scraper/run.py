@@ -23,8 +23,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import archive                                            # noqa: E402
-from article import (link_names, read as read_article,    # noqa: E402
-                     readable)
+from article import (holds_decks, link_names,             # noqa: E402
+                     read as read_article, readable)
 from build import BUILD_VERSION, Source, build_event      # noqa: E402
 from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
@@ -328,6 +328,12 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     feed_posts = [{"title": s.post.title, "url": s.url, "modified": s.posted,
                    "kind": s.post.kind, "event": name,
                    **({"article": True} if s.url in articles else {}),
+                   # And whether it has deck lists in it, so the event page can
+                   # offer them without fetching half a megabyte of prose to
+                   # find out. 99 posts in the archive do; a post whose title
+                   # says "deck" is wrong about it more often than not.
+                   **({"decks": True}
+                      if holds_decks(articles.get(s.url) or []) else {}),
                    # What the post is coverage of, which for Dragon Duel is not
                    # a format the builder groups rounds by. See coverage_format.
                    "format": coverage_format(s.post.title, s.post.fmt),

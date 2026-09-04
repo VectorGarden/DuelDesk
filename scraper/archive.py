@@ -197,7 +197,13 @@ def count_posts(root: str | Path, slug: str) -> tuple[int, dict[str, int]]:
     kind being asked for -- without it the list can only find that out by
     fetching, which meant a group vanishing the moment it was opened.
 
-    Six numbers per event. It does not grow with the coverage, which is the
+    And how many of them hold deck lists, which is not a kind: 99 posts in the
+    archive are titled as if they were deck lists and 41 events actually have
+    any. The event page offers a download of them, and it has to know without
+    fetching anything -- asking for an event's posts to find out re-rendered
+    the coverage list underneath somebody opening it.
+
+    Seven numbers per event. It does not grow with the coverage, which is the
     rule this manifest is kept to.
     """
     p = posts_path(root, slug)
@@ -208,7 +214,8 @@ def count_posts(root: str | Path, slug: str) -> tuple[int, dict[str, int]]:
     for post in posts:
         if kind := post.get("kind"):
             kinds[kind] = kinds.get(kind, 0) + 1
-    return len(posts), dict(sorted(kinds.items()))
+    return len(posts), dict(sorted(kinds.items())), sum(
+        1 for post in posts if post.get("decks"))
 
 
 def behind(root: str | Path, version: int) -> set[str]:
@@ -266,7 +273,7 @@ def champions(event: dict) -> list[dict]:
 
 
 def summarise(slug: str, event: dict, posts: int = 0,
-              kinds: dict[str, int] | None = None) -> dict:
+              kinds: dict[str, int] | None = None, decks: int = 0) -> dict:
     """The manifest's entry for one event: enough to list and choose it, and
     nothing that would make the manifest grow with the coverage."""
     return {
@@ -280,6 +287,9 @@ def summarise(slug: str, event: dict, posts: int = 0,
         "ongoing": event.get("ongoing", False),
         "coverageBy": event.get("coverageBy"),
         "path": f"{ARCHIVE}/{slug}/rounds.json",
+        # How many of its posts hold deck lists, so the page can offer them
+        # without asking for anything first.
+        **({"decks": decks} if decks else {}),
         # How many posts the event has, not the posts themselves. The page
         # lists every event but fetches an event's coverage only when it is
         # opened, so without this it could only count what it had already
