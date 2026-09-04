@@ -428,6 +428,26 @@ def _words(text: str) -> str:
 # several winners is titled "Winners". Requiring one or the other filed both
 # as news -- which the fetch budget ranks last, so the round the whole bracket
 # builds towards was the one post never fetched.
+# Asked twice, on purpose, and kept the same by two tests rather than by one
+# implementation.
+#
+# app.js asks these same questions of live feed items, which arrive with no
+# kind on them. Consolidating the two would mean this list becoming data that
+# both read, and the page is served as it is written -- so the patterns would
+# have to be inlined into it at build time, which is a build step on a site
+# that deliberately has none.
+#
+# What that would buy is bought already:
+#
+#   * test/fixtures/kinds-archive.json holds every shape of title the coverage
+#     has published, 4,262 of them, and both suites check their answer against
+#     it. That catches a rule that answers differently about a real title.
+#   * test_the_page_asks_the_same_questions_in_the_same_order reads app.js and
+#     compares the patterns and their order against this tuple. That catches a
+#     rule nothing has exercised yet, and an order changed on one side.
+#
+# So the two are verifiably one rule. Change either and change both; the tests
+# will say so if you do not. See issue #236, closed on this reasoning.
 KINDS = (
     ("pairings",  r"\bpairings?\b"),
     ("standings", r"\bstandings\b|\bpoint totals\b"),
