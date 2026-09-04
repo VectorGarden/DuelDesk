@@ -32,6 +32,8 @@ from __future__ import annotations
 import re
 from html.parser import HTMLParser
 
+from parse import strip_region
+
 # Blocks, and what each becomes. A heading is a heading whatever its level:
 # the archive renders one size of them.
 _BLOCKS = {"p": "p", "h1": "h", "h2": "h", "h3": "h", "h4": "h", "h5": "h",
@@ -367,6 +369,17 @@ def _alone(name: str, text: str) -> str | None:
     return max(seen, key=lambda s: (s[0], s[1]))[2]
 
 
+def _with_a_code(form: str) -> str:
+    """One of a name's written forms, allowing a province code inside it.
+
+    "Yuhao Ye" also finds "Yuhao ON Ye". Case-sensitive for the code and not
+    for the name, which is what the scoped flag is for: under re.I a rule for
+    two or three capitals matches "leo" as readily as "ON".
+    """
+    return r"\s+(?:(?-i:[A-Z]{2,3})\s+)?".join(
+        re.escape(word) for word in form.split())
+
+
 def link_names(blocks: list[dict], people, *, by_surname: bool = False) -> list[dict]:
     """The blocks again, with each mention of `people` marked as a link.
 
@@ -402,16 +415,32 @@ def link_names(blocks: list[dict], people, *, by_surname: bool = False) -> list[
     if not found:
         return blocks
     # Longest first, so "Julien Leo Kehon" wins where "Kehon" would also fit.
-    pattern = re.compile(r"\b(" + "|".join(re.escape(f) for f in
+    #
+    # And with room for the province between the words. Konami's deck lists
+    # carry the code out of its standings export inside the name -- "Yuhao ON
+    # Ye", "Laurent QC Despatie", "Joshua Aaron TX Jones" -- so a name written
+    # that way matched nothing and went unlinked. The code is read
+    # case-sensitively even though the name around it is not: under re.I an
+    # all-caps rule matches "leo".
+    pattern = re.compile(r"\b(" + "|".join(_with_a_code(f) for f in
                                            sorted(found, key=len, reverse=True))
                          + r")\b", re.I)
 
     def split(text: str) -> list:
         out, at = [], 0
         for m in pattern.finditer(text):
+            written = m.group(0)
+            # What was written, with the province taken out of the middle of
+            # it: the reader is shown the Duelist's name and not Konami's
+            # export. strip_region is what the tables are normalised by, so
+            # the two say the same thing about the same person.
+            plain_name, code = strip_region(written)
+            who = found.get((plain_name if code else written).lower())
+            if who is None:
+                continue
             if m.start() > at:
                 out.append(text[at:m.start()])
-            out.append({"who": found[m.group(0).lower()], "t": m.group(0)})
+            out.append({"who": who, "t": plain_name if code else written})
             at = m.end()
         if at < len(text):
             out.append(text[at:])
