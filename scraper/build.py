@@ -319,7 +319,7 @@ def round_key(post) -> tuple[str, Any]:
 #     nobody, went unlinked, and were printed with a province in them.
 #     The tables were already normalised by strip_region; the prose is now
 #     answered the same way.
-BUILD_VERSION = 58
+BUILD_VERSION = 59
 
 
 @dataclass
@@ -401,6 +401,26 @@ def final_from_annotations(candidates: list[Source]) -> tuple[str, str] | None:
     return None
 
 
+def _duelists(row: dict) -> list[dict]:
+    """The Duelists a row holds, which in a team event is not its sides.
+
+    A team match names the teams -- "Back For Seconds" against "2 World Champs
+    and John" -- and the three people who played it are in the duels
+    underneath. Read only from the sides, a team event has no Duelists in it
+    at all, so nothing about them could be folded: Team YCS Las Vegas 2023
+    seats "Dominic Eduardo Couch" through nine rounds of Swiss and "Dominic
+    C." in the Top 8, the Top 4 and the Final, and the two stood as two
+    Duelists.
+
+    Two of these are in one duel, and one Duelist does not play themselves, so
+    collecting them here also puts them in the round's seating -- which is
+    what refuses to fold one into the other.
+    """
+    return [duel.get(side) or {} for duel in row.get("duels") or []
+            for side in ("a", "b")]
+
+
+
 # Cached because reconcile_names asks the same few thousand names about each
 # other: one 646-Duelist event called this 4.7 million times, and splitting the
 # same string over and over was 74% of the whole build. A name's words never
@@ -466,6 +486,7 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
         for row in s.post.table.rows:
             cells = ([row.get(side) or {} for side in ("a", "b")]
                      if s.post.kind == "pairings" else [row])
+            cells += _duelists(row)
             here.update(c["name"] for c in cells if c.get("name"))
         names |= here
         together.append(here)
@@ -631,6 +652,7 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
             for row in (s.post.table.rows if s.post.table else []):
                 cells = ([row.get(side) for side in ("a", "b")]
                          if s.post.kind == "pairings" else [row])
+                cells += _duelists(row)
                 for cell in cells:
                     if cell and cell.get("name") in canon:
                         cell["name"] = canon[cell["name"]]
