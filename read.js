@@ -370,7 +370,20 @@ function decksIn(lines){
     const said = wrote;
     wrote = null;
     if (DECK_SECTION.test(text)){
-      const next = pileOf(text);
+      /* A second Extra Deck is the Side Deck. The Top 8 lists from YCS
+         Anaheim 2025 head both of Steven Trifunoski's last two piles "Extra
+         Deck: 15", and the second holds Raigeki, Dark Hole, Lightning Storm
+         and Dark Ruler No More -- Spells and Traps, which no Extra Deck may
+         hold, fifteen of them, and he was the only Duelist in the post
+         without a Side Deck. An Extra Deck of thirty is not a deck anybody
+         could register.
+
+         The one deck in the archive written this way, and it is only read as
+         the Side Deck where there is no Side Deck to disagree with. */
+      let next = pileOf(text);
+      if (next === 'Extra' && deck && deck.Extra.length && !deck.Side.length){
+        next = 'Side';
+      }
       const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
       if (!deck || (main && closed)) start();
       heading = [];
@@ -730,7 +743,12 @@ function layoutOf(lines){
     if (p !== atP){ atP = p; said = 0; }
     const nth = said++;
     if (DECK_SECTION.test(text)){
-      const next = pileOf(text);
+      /* A second Extra Deck is the Side Deck -- see decksIn, which reads the
+         same post the same way, or the two would disagree about the piles. */
+      let next = pileOf(text);
+      if (next === 'Extra' && deck && deck.piles.has('Extra') && !deck.piles.has('Side')){
+        next = 'Side';
+      }
       const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
       if (!deck || (main && closed)){
         /* The heading counts as the deck's own only when it runs up to the
