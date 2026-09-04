@@ -229,7 +229,17 @@ function cardPanel(card){
    wrong is worse than one not offered.
    ============================================================ */
 
-const DECK_COUNT = /^(\d+)\s+(\S.*)$/;
+/* A card and how many of it, which is how 77 of the posts write one: "3 Ash
+   Blossom & Joyous Spring".
+
+   The full stop is YCS Indianapolis 2011, which punctuates some of its
+   counts -- "2. T.G. Striker" -- and had those cards read as nothing at all.
+   It is optional and the space after it is not, which is what keeps the
+   blog's own numbered prose out: a tech update lists its subjects as "1.)
+   Kashtira Fenrir" and "2.) The Bystial Monsters", and a bracket is not
+   whitespace. There are 219 lines written that way in the archive and none
+   of them is a card. */
+const DECK_COUNT = /^(\d+)[.)]?\s+(\S.*)$/;
 /* A count with nothing on the line but itself, which is how 21 posts write
    one: the number plain, the card's name emphasised on the line after. */
 const BARE_COUNT = /^(\d{1,2})$/;

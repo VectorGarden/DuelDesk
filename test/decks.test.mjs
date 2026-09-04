@@ -210,19 +210,35 @@ test('a card name that wrapped is one card, not a card and a stray', async () =>
   assert.equal(deck.Extra[0].quantity, 1, 'and one copy of it, not two');
 });
 
-test('a count written with a full stop is not the rest of the card above it', async () => {
-  // YCS Indianapolis 2011 writes "3 T.G. Warwolf" and then "2. T.G. Striker".
-  // The second is a count, punctuated, and gluing it to the first would lose
-  // a card and rename another. A line that opens with a number is never the
-  // tail of a name.
+test('a count written with a full stop is still a count', async () => {
+  // YCS Indianapolis 2011 punctuates some of its counts -- "3 T.G. Warwolf"
+  // and then "2. T.G. Striker". The full stop where the space should be meant
+  // the line counted nothing: the card was left out of the deck, out of the
+  // .ydk and out of the ydke://, and the line was very nearly read as more of
+  // the T.G. Warwolf above it instead.
   const head = {}, main = {};
   const [deck] = decksIn([
     {text: 'Monsters: 5', p: head},
     {text: '3 T.G. Warwolf', p: main},
     {text: '2. T.G. Striker', p: main},
   ]);
-  assert.deepEqual(deck.Monsters.map((c) => c.name), ['T.G. Warwolf'],
-                   'the first card is left as it was written');
+  assert.deepEqual(deck.Monsters.map((c) => c.name),
+                   ['T.G. Warwolf', 'T.G. Striker'], 'two cards, not one');
+  assert.deepEqual(deck.Monsters.map((c) => c.quantity), [3, 2]);
+});
+
+test("the blog's numbered prose is not a card", async () => {
+  // A tech update lists what it is about as "1.) Kashtira Fenrir", "2.) The
+  // Bystial Monsters". A bracket is not the whitespace a count needs, so none
+  // of the 219 lines written that way in the archive is read as a card -- and
+  // a line opening with a number is never glued to the card above it either.
+  const head = {}, main = {};
+  const [deck] = decksIn([
+    {text: 'Monsters: 3', p: head},
+    {text: '3 Ash Blossom & Joyous Spring', p: main},
+    {text: '2.) Gemini Imps', p: main},
+  ]);
+  assert.deepEqual(deck.Monsters.map((c) => c.name), ['Ash Blossom & Joyous Spring']);
 });
 
 test('a wrap cannot cross a paragraph', async () => {
