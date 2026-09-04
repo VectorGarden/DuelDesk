@@ -11,7 +11,7 @@
  * CardDatabaseId. Getting that wrong registers somebody for a deck they are
  * not playing, so both numbers are asserted here rather than assumed.
  *
- * The parsing and the writing are lifted out of read.js rather than
+ * The parsing and the writing are lifted out of decks.js rather than
  * reimplemented, and run against text: none of it needs a browser, which is
  * why it is written to not need one.
  */
@@ -23,8 +23,9 @@ import { dirname, join } from 'node:path';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const reader = readFileSync(join(ROOT, 'read.js'), 'utf8');
+const engine = readFileSync(join(ROOT, 'decks.js'), 'utf8');
 const deckcode = new Function('btoa',
-  reader.slice(reader.indexOf('const DECK_COUNT'), reader.indexOf('let popup = null;'))
+  engine.slice(engine.indexOf('const DECK_COUNT'), engine.indexOf('/* ---------- laying them out'))
   + '; return {decksIn, pileOf, ydkOf, ydkeOf, registrationOf, missing};')(
     (s) => Buffer.from(s, 'binary').toString('base64'));
 
@@ -128,7 +129,7 @@ test('a line is emphasised only when the whole of it is', async (t) => {
   const page = await loadPage();
   try {
     const got = page.json(`(() => {
-      ${reader.slice(reader.indexOf('function linesOf(p)'), reader.indexOf('/* Which paragraph each deck begins at'))}
+      ${engine.slice(engine.indexOf('function linesOf(p)'), engine.indexOf('/* Which paragraph each deck begins at'))}
       const p = document.createElement('p');
       p.innerHTML = '<b>Blue-Eyes White Dragon</b>\\nHe activated <b>Effect Veiler</b>\\n3';
       return linesOf(p).map(({text, emph}) => [text, emph]);
@@ -455,8 +456,8 @@ test('a card the store does not have is left out rather than guessed', async () 
 /* Two stretches of the file: the parsing, and the laying out that uses it.
    Neither needs a browser at the point of being defined. */
 const layout = new Function('btoa',
-  reader.slice(reader.indexOf('const DECK_COUNT'), reader.indexOf('let popup = null;'))
-  + reader.slice(reader.indexOf('const PILES'), reader.indexOf('function showPile'))
+  engine.slice(engine.indexOf('const DECK_COUNT'), engine.indexOf('/* ---------- laying them out'))
+  + engine.slice(engine.indexOf('const PILES'), engine.indexOf('/* Resolve every card in a deck'))
   + '; return {layoutOf, copiesIn, decksByPlace};')(() => '');
 
 /* Paragraph stand-ins: the layout only ever asks a paragraph what comes after

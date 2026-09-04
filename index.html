@@ -140,6 +140,11 @@
     <div class="hero__line">
       <p class="hero__meta" id="hero-meta"></p>
       <button type="button" class="export" id="export-top-cut" hidden></button>
+      <!-- And what they actually played, where the coverage published it. The
+           decks are in the posts rather than in the tables, so this is the one
+           control here that has to go and fetch before it can answer. -->
+      <button type="button" class="export" id="export-decks" hidden></button>
+      <span class="export__note" id="export-decks-note" role="status"></span>
     </div>
 
     <div class="track">
@@ -326,6 +331,7 @@
 </footer>
 
 <script src="common.js" defer></script>
+<script src="decks.js" defer></script>
 <script src="app.js" defer></script>
 </body>
 </html>
