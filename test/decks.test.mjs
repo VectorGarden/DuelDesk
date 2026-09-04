@@ -171,3 +171,114 @@ test('a card the store does not have is left out rather than guessed', async () 
   assert.deepEqual(ydk.slice(ydk.indexOf('#extra') + 1, ydk.indexOf('!side')),
                    ['55555555'], 'but it has a passcode, so the .ydk keeps it');
 });
+
+/* Laying a post of many decks out.
+ *
+ * The Top 64 lists run to 63 decks and 3,331 lines, and the only way to the
+ * fortieth was to scroll past thirty-nine. So each deck becomes a section: a
+ * heading that opens it, one pile shown at a time, and an index to reach any
+ * of them.
+ *
+ * Where a deck starts and which paragraphs hold which pile is the part with
+ * the logic in it, and it needs no browser: the layout is asked of lines and
+ * of whatever the lines came from, so it can be asked of stand-ins.
+ */
+/* Two stretches of the file: the parsing, and the laying out that uses it.
+   Neither needs a browser at the point of being defined. */
+const layout = new Function('btoa',
+  reader.slice(reader.indexOf('const DECK_COUNT'), reader.indexOf('let popup = null;'))
+  + reader.slice(reader.indexOf('const PILES'), reader.indexOf('function showPile'))
+  + '; return {layoutOf, copiesIn};')(() => '');
+
+/* Paragraph stand-ins: the layout only ever asks a paragraph what comes after
+   it, which is the whole of what it needs to know. */
+function paragraphs(...texts){
+  const nodes = texts.map((text) => ({text, nextElementSibling: null}));
+  nodes.forEach((n, i) => { n.nextElementSibling = nodes[i + 1] ?? null; });
+  const lines = [];
+  for (const node of nodes){
+    for (const line of node.text.split('\n')) lines.push({line, p: node});
+  }
+  return {nodes, lines};
+}
+
+test('a deck begins at its heading, not at its first section', async () => {
+  const {nodes, lines} = paragraphs(
+    'Wanna see the Decks?', '1st Place\nRaymond Dai',
+    'Monsters: 2\n2 Ash Blossom & Joyous Spring', 'Extra Deck: 1\n1 Some Fusion');
+  const [deck] = layout.layoutOf(lines);
+  assert.equal(deck.at, nodes[1], 'the paragraph naming the Duelist');
+  assert.equal(deck.title, nodes[1]);
+});
+
+test("a post's opening line belongs to the post, not to the first deck", async () => {
+  // "Wanna see the Decks that Duelists piloted to the Top 8?" is not whoever
+  // came first, and the Duelist's name sits between them. The heading counts
+  // only when it is the paragraph immediately before the section, which is
+  // what keeps the introduction out of the first deck -- and out of the index,
+  // where it read as a Duelist called "Here are the Deck Lists for the Top
+  // Cut of the North America World Championship Qualifier!".
+  const {nodes, lines} = paragraphs(
+    'Wanna see the Decks?', 'Wilfredo Michael Flores', 'Main Deck: 41',
+    'Monster Cards: 1', '1 Bystial Baldrake');
+  const [deck] = layout.layoutOf(lines);
+  assert.equal(deck.at, nodes[1], "the Duelist's name");
+  assert.equal(deck.title, nodes[1]);
+  assert.equal(deck.at === nodes[0], false, 'and never the introduction');
+});
+
+test('a heading with a card between it and the section is not the deck\'s', async () => {
+  // Adjacency is the whole of the rule. A counted line does not make a new
+  // heading, so without it the last thing said any distance back would be
+  // taken for the deck's name.
+  const {nodes, lines} = paragraphs(
+    'Somebody Else', '3 Maliss', 'Monsters: 1\n1 Bystial Baldrake');
+  const [deck] = layout.layoutOf(lines);
+  assert.equal(deck.title, null, 'nothing adjacent, so no heading');
+  assert.equal(deck.at, nodes[2], 'the section itself');
+});
+
+test('a heading with no number leaves the count it found', async () => {
+  const {lines} = paragraphs('Somebody', 'Monsters: 19', '1 Bystial Baldrake',
+                             'Monsters', '1 Ash Blossom & Joyous Spring');
+  const [deck] = layout.layoutOf(lines);
+  assert.equal(deck.piles.get('Monsters').said, 19);
+});
+
+test('a pile owns its heading and whatever paragraphs follow it', async () => {
+  // Konami writes some posts with the heading and its cards together, and
+  // others with the heading alone and the cards in the paragraph after.
+  const {nodes, lines} = paragraphs(
+    'Wilfredo Michael Flores', 'Main Deck: 41', 'Monster Cards: 31',
+    '1 Bystial Baldrake\n3 Mulcharmy Fuwalos', 'Spell Cards: 8', '3 Forbidden Droplet');
+  const [deck] = layout.layoutOf(lines);
+  assert.deepEqual(deck.piles.get('Monsters').held, [nodes[1], nodes[2], nodes[3]]);
+  assert.deepEqual(deck.piles.get('Spells').held, [nodes[4], nodes[5]]);
+});
+
+test('a main deck total is not the number of monsters in it', async () => {
+  // "Main Deck: 41" and "Monster Cards: 31" are both headings and only one of
+  // them counts monsters. The tab carried 41 until it stopped listening to
+  // the first.
+  const {lines} = paragraphs('Somebody', 'Main Deck: 41', 'Monster Cards: 31',
+                             '1 Bystial Baldrake');
+  const [deck] = layout.layoutOf(lines);
+  assert.equal(deck.piles.get('Monsters').said, 31);
+});
+
+test('the next deck starts where the last one stops', async () => {
+  const {nodes, lines} = paragraphs(
+    '1st Place\nRaymond Dai', 'Monsters: 1\n1 Ash Blossom & Joyous Spring',
+    'Side Deck: 1\n1 Droll & Lock Bird',
+    '2nd Place\nSomebody Else', 'Monsters: 1\n1 Tearlaments Merrli');
+  const decks = layout.layoutOf(lines);
+  assert.equal(decks.length, 2);
+  assert.equal(decks[1].at, nodes[3], 'at the second name, not at its Monsters');
+});
+
+test('a deck is measured in copies, not in lines', async () => {
+  // Three of a card is three cards. A list of 41 that says 18 is wrong about
+  // the only number anybody checks.
+  const [deck] = decksIn(POST);
+  assert.equal(layout.copiesIn(deck), 7, '3 + 1 + 2 + 1, and no extra or side');
+});
