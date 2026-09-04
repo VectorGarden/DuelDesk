@@ -27,7 +27,7 @@ FILES=(index.html winners.html styles.css common.js app.js winners.js player.js 
 # not. Staged as a directory for the same reason it is stored as one.
 # players/ is the same idea as events/: 512 files sharded by name, so looking
 # up one Duelist costs one of them rather than all sixty-six thousand.
-DIRS=(icons events winners players player read)
+DIRS=(icons events winners players player read cards)
 
 for f in "${FILES[@]}"; do
   [ -f "$f" ] || { echo "  MISSING $f"; exit 1; }

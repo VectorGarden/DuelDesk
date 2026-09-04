@@ -503,6 +503,45 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
 .article__scroll{overflow-x:auto; margin:0 0 .85rem}
 .article__scroll table{border-collapse:collapse; font-size:.86rem}
 .article__scroll td{border:1px solid var(--line-soft); padding:.25rem .5rem}
+/* A card name the store can answer for. Not ".card", which is this site's
+   own panel: a name that took its border and its white background was a page
+   of little boxes. Marked only on hover and focus, because a deck list is
+   forty of these in a column and forty underlines is a page of underlines
+   rather than a list of cards. */
+.cardref{cursor:help}
+.cardref:hover, .cardref:focus-visible{
+  text-decoration:underline dotted;
+  text-decoration-color:color-mix(in srgb,currentColor 55%,transparent);
+  text-underline-offset:.2em; outline:none;
+}
+/* What the card is. Positioned in the document rather than the viewport, so
+   it stays with the name it belongs to while the page settles. */
+/* Hidden means gone. A display of its own beats the browser's rule for
+   [hidden], so setting the attribute left the card sitting on the page --
+   dismissing it worked, and nothing about it was visible. */
+.cardpop[hidden]{display:none}
+.cardpop{
+  /* The width is set when it is placed -- it narrows to sit beside the name
+     rather than drop over the list. See read.js. */
+  position:absolute; z-index:40; max-width:min(30rem,calc(100vw - 1rem));
+  display:flex; flex-direction:column; gap:.3rem;
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--r-md); padding:.7rem .85rem;
+  box-shadow:0 8px 28px rgb(0 0 0 / .35);
+  font-size:.86rem; line-height:1.55; color:var(--text-2);
+}
+.cardpop__n{font:600 .95rem var(--body); color:var(--text)}
+.cardpop__t{font:400 .74rem var(--mono); color:var(--text-3);
+            letter-spacing:.04em; text-transform:uppercase}
+.cardpop__s{font:500 .78rem var(--mono); color:var(--text-2)}
+.cardpop__a{
+  align-self:flex-start; font:600 .66rem var(--mono); text-transform:uppercase;
+  letter-spacing:.06em; padding:.1rem .4rem; border-radius:999px;
+  color:var(--text-2); background:var(--surface-2); border:1px solid var(--line-soft);
+}
+/* The card's own text, which is written in lines and means them. */
+.cardpop__d{white-space:pre-line}
+
 /* Whose coverage this is. Kept on every article, with the link to the
    original: the photographs are there and not here. */
 .article__by{

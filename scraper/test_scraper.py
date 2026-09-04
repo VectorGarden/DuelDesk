@@ -1049,6 +1049,89 @@ class TestTheManifestSaysWhatAnEventHolds(unittest.TestCase):
             self.assertNotIn("kinds", a.build_manifest(tmp)["events"][0])
 
 
+class TestWhatACardDoes(unittest.TestCase):
+    """The card store. See scraper/cards.py."""
+
+    def card(self, name, **kw):
+        base = {"name": name, "type": "Effect Monster", "race": "Zombie",
+                "attribute": "FIRE", "atk": 0, "def": 1800, "level": 3,
+                "desc": "Does a thing.", "card_prices": [{"usd": "1.00"}]}
+        return {**base, **kw}
+
+    def test_a_name_is_keyed_without_its_punctuation(self):
+        # The coverage writes Maxx "C" with the quotes a CMS invents, and
+        # prose that has been through one is not where anybody should have to
+        # match an official spelling exactly.
+        from cards import normalise
+        self.assertEqual(normalise("Maxx \u201cC\u201d"), normalise('Maxx "C"'))
+        self.assertEqual(normalise("Rai-Mei"), normalise("Raimei"))
+        self.assertEqual(normalise("Ash Blossom & Joyous Spring"),
+                         "ashblossomjoyousspring")
+
+    def test_a_shard_is_named_by_the_key_and_stays_in_range(self):
+        from cards import shard_of, CARD_SHARDS
+        for name in ("ashblossomjoyousspring", "maxxc", "", "x"):
+            got = shard_of(name)
+            self.assertRegex(got, r"^\d{3}$")
+            self.assertLess(int(got), CARD_SHARDS)
+        self.assertEqual(shard_of("maxxc"), shard_of("maxxc"), "and does not wander")
+
+    def test_a_card_keeps_what_it_is_and_not_what_it_costs(self):
+        from cards import build, shard_of, normalise
+        shards = build([self.card("Ash Blossom & Joyous Spring")])
+        entry = shards[shard_of(normalise("Ash Blossom & Joyous Spring"))][
+            normalise("Ash Blossom & Joyous Spring")]
+        self.assertEqual(entry["name"], "Ash Blossom & Joyous Spring")
+        self.assertEqual(entry["desc"], "Does a thing.")
+        self.assertNotIn("card_prices", entry)
+
+    def test_a_field_the_card_does_not_have_is_not_stored(self):
+        # 14,517 cards, and a spell has no attack. An empty one on every card
+        # is weight in a file fetched to answer one hover.
+        from cards import build, shard_of, normalise
+        spell = self.card("Called by the Grave", type="Spell Card",
+                          atk=None, **{"def": None}, level=None, attribute=None)
+        entry = build([spell])[shard_of(normalise("Called by the Grave"))][
+            normalise("Called by the Grave")]
+        self.assertNotIn("atk", entry)
+        self.assertNotIn("level", entry)
+        self.assertEqual(entry["type"], "Spell Card")
+
+    def test_a_name_two_cards_answer_to_names_neither(self):
+        # Three of the database's keys do: "Rai-Mei" and "Raimei" among them.
+        # Showing a reader the wrong card's text is worse than showing none,
+        # which is the rule the Duelist names are folded under too.
+        from cards import build
+        shards = build([self.card("Rai-Mei"), self.card("Raimei"),
+                        self.card("Ash Blossom & Joyous Spring")])
+        stored = {k for held in shards.values() for k in held}
+        self.assertNotIn("raimei", stored)
+        self.assertIn("ashblossomjoyousspring", stored)
+
+    def test_writing_twice_writes_the_same_bytes(self):
+        # A rebuild of an unchanged database should leave the repository
+        # saying nothing happened.
+        import tempfile, pathlib
+        from cards import build, write
+        shards = build([self.card("Ash Blossom & Joyous Spring"), self.card("Raigeki")])
+        with tempfile.TemporaryDirectory() as tmp:
+            write(tmp, shards)
+            first = {p.name: p.read_bytes() for p in pathlib.Path(tmp, "cards").iterdir()}
+            write(tmp, shards)
+            second = {p.name: p.read_bytes() for p in pathlib.Path(tmp, "cards").iterdir()}
+            self.assertEqual(first, second)
+
+    def test_a_shard_with_nothing_in_it_is_removed(self):
+        import tempfile, pathlib
+        from cards import build, write, shard_of, normalise
+        with tempfile.TemporaryDirectory() as tmp:
+            write(tmp, build([self.card("Raigeki")]))
+            held = shard_of(normalise("Raigeki"))
+            self.assertTrue(pathlib.Path(tmp, "cards", f"{held}.json").is_file())
+            write(tmp, {})
+            self.assertEqual(list(pathlib.Path(tmp, "cards").iterdir()), [])
+
+
 class TestStatusAnnotations(unittest.TestCase):
     """Reading the round a player left, rather than counting their appearances."""
 

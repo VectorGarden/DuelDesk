@@ -94,6 +94,59 @@ function blocksHtml(blocks){
   return html + (list ? '</ul>' : '');
 }
 
+/* ============================================================
+   CARDS
+   ------------------------------------------------------------
+   What a card does, for a reader who does not already know.
+
+   The store is 14,517 cards and 6.4MB of text, sharded into 512 files the
+   same way the Duelists are: the page works out which file a name is in and
+   fetches that one, about 13KB, rather than the whole of it.
+
+   Keyed on the name with its punctuation and case taken out, because the
+   coverage writes Maxx "C" with typographic quotes and prose that has been
+   through a CMS is not where anybody should have to match an official
+   spelling exactly. Kept in step with scraper/cards.py by
+   test/cards.test.mjs, which reads the shards the scraper wrote.
+   ============================================================ */
+const CARD_SHARDS = 512;
+const CARDS = new Map();          // shard name -> its cards, once fetched
+
+/* The same key scraper/cards.normalise makes: letters and digits only. The
+   curly quotes a CMS invents and the straight ones a keyboard has both go,
+   and so do both kinds of dash, so neither has to be folded onto the other
+   first. */
+function cardKey(name){
+  return String(name ?? '').normalize('NFKD')
+    .toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
+async function cardShardOf(key){
+  const hash = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(key));
+  const hex = [...new Uint8Array(hash)].map((b) => b.toString(16).padStart(2, '0')).join('');
+  return String(parseInt(hex.slice(0, 8), 16) % CARD_SHARDS).padStart(3, '0');
+}
+
+/* The card, or null. Null is the ordinary answer: a bold run may be a heading
+   -- "Duel 1", "Extra Deck: 15" -- and 11% of the emphasised mentions in the
+   archive are not cards at all. Nothing is shown for those. */
+async function lookupCard(name){
+  const key = cardKey(name);
+  if (!key) return null;
+  const shard = await cardShardOf(key);
+  if (!CARDS.has(shard)){
+    try {
+      const res = await fetch(`/cards/${shard}.json`, {cache: 'force-cache'});
+      CARDS.set(shard, res.ok ? await res.json() : {});
+    } catch {
+      /* A card that will not load is a card the reader does not get told
+         about, which is where they were before. */
+      CARDS.set(shard, {});
+    }
+  }
+  return CARDS.get(shard)[key] ?? null;
+}
+
 function offsite(url){
   /* Every url here has been through safeUrl(), so it is either an http(s) URL or
      the inert '#'. That is why this needs no guard of its own: '#' resolves
