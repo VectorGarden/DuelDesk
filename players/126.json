@@ -184,7 +184,7 @@
     {"e":"201611-anaheim-ca"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Kashtira"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"na-ygoc-2022"}
   ],
@@ -607,10 +607,10 @@
   "Nicholas M.": {
     "as": "Nicholas Aksel Massinen"
   },
-  "Jesse V.": {
-    "as": "Jesse Ray Valle"
-  },
   "Luan D.": {
     "as": "Luan Kinh Duong"
+  },
+  "Jesse V.": {
+    "as": "Jesse Ray Valle"
   }
 }

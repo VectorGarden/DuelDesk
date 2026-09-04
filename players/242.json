@@ -397,9 +397,6 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
-  "Brenden B.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Kashtira"}
-  ],
   "Cesar Augusto Davalos Tenorio": [
     {"e":"2023-team-ycs-mexico-city"}
   ],
@@ -538,6 +535,9 @@
   ],
   "Alexsander A.": {
     "as": "Alexsander Cesar Anzini"
+  },
+  "Brenden B.": {
+    "as": "Brenden Elijah Beckmann"
   },
   "Vincent W.": {
     "as": "Vincent Wang"

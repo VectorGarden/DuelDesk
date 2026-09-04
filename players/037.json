@@ -408,7 +408,6 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-03-team-ycs-las-vegas","cut":"Top 16"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-05-ycs-providence","cut":"Top 16","deck":"Mitsurugi Ryzeal"},
     {"e":"2025-10-ycs-anaheim","won":true,"cut":"Final","deck":"Crystron K9"},
@@ -578,8 +577,8 @@
   "Connor Maguire": {
     "as": "Connor R. Maguire"
   },
-  "Tej A.": {
-    "as": "Tej C. Amin"
+  "Kurt A.": {
+    "as": "Kurt Seiji Achiu"
   },
   "Vasya P.": {
     "as": "Vasya David Pincus"
@@ -587,7 +586,7 @@
   "Danny M.": {
     "as": "Danny Xavier Martinez"
   },
-  "Kurt A.": {
-    "as": "Kurt Seiji Achiu"
+  "Tej A.": {
+    "as": "Tej C. Amin"
   }
 }

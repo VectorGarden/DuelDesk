@@ -165,7 +165,7 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Labrynth"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-ycs-raleigh"},
@@ -185,7 +185,7 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"}
+    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Despia Branded"}
   ],
   "Michael Francis Ferrigno": [
     {"e":"2016-ycs-providence-rhode-island"}
@@ -554,10 +554,10 @@
   "Brian G.": {
     "as": "Brian Jesus Garcia"
   },
-  "Fernando L.": {
-    "as": "Fernando Miguel Lucas"
-  },
   "Tyriq H.": {
     "as": "Tyriq Marquis Dewonye Hayes"
+  },
+  "Fernando L.": {
+    "as": "Fernando Miguel Lucas"
   }
 }

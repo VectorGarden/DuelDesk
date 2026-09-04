@@ -1,6 +1,6 @@
 {
   "event": "TEAM YCS Las Vegas",
-  "built": 58,
+  "built": 59,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -3407,10 +3407,10 @@
           "posted": "19:45",
           "standingsAfter": 9,
           "pairings": [
-            {"table":1,"a":"Joel White’s Insurance Agents","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Robert Andrew McNett","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Santiago G.","aDeck":"Kashtira","b":"Cameron N.","bDeck":"Labrynth"},{"table":2,"a":"Mohammed K.","aDeck":"Kashtira","b":"Caulin B.","bDeck":"Labrynth"},{"table":3,"a":"Adrian G.","aDeck":"Live-Twin Spright","b":"Ramiro G.","bDeck":"Kashtira"}]},
-            {"table":4,"a":"Team Ghost","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Kentucky Boyz","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":4,"a":"Anthony K.","aDeck":"Kashtira","b":"Michael G.","bDeck":"Tenyi Swordsoul"},{"table":5,"a":"Brenden B.","aDeck":"Kashtira","b":"Elijah G.","bDeck":"Kashtira"},{"table":6,"a":"Kyle B.","aDeck":"Despia Branded","b":"Chester H.","bDeck":"Bystial Branded"}]},
-            {"table":7,"a":"2 World Champs and John","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Burger","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":7,"a":"Ryan Y.","aDeck":"Labrynth","b":"Alexander B.","bDeck":"Kashtira"},{"table":8,"a":"John W.","aDeck":"Despia Branded","b":"Steve H.","bDeck":"Kashtira"},{"table":9,"a":"Charley F.","aDeck":"Despia Branded","b":"Matthew R.","bDeck":"Bystial Branded"}]},
-            {"table":10,"a":"Back For Seconds","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"do your thing bluemaster21","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":10,"a":"Stephen S.","aDeck":"Kashtira","b":"Luka F.","bDeck":"Despia Branded"},{"table":11,"a":"Dominic C.","aDeck":"Kashtira","b":"Herman H.","bDeck":"Labrynth"},{"table":12,"a":"Alexander C.","aDeck":"Kashtira","b":"Anderson T.","bDeck":"Despia Branded"}]}
+            {"table":1,"a":"Joel White’s Insurance Agents","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Robert Andrew McNett","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Santiago G.","aDeck":"Kashtira","b":"Cameron Taylor Neal","bDeck":"Labrynth"},{"table":2,"a":"Mohammed Faisal Khan","aDeck":"Kashtira","b":"Caulin David Bradshaw","bDeck":"Labrynth"},{"table":3,"a":"Adrian G.","aDeck":"Live-Twin Spright","b":"Ramiro G.","bDeck":"Kashtira"}]},
+            {"table":4,"a":"Team Ghost","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Kentucky Boyz","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":4,"a":"Anthony Levon King","aDeck":"Kashtira","b":"Michael Joseph Gold Jr.","bDeck":"Tenyi Swordsoul"},{"table":5,"a":"Brenden Elijah Beckmann","aDeck":"Kashtira","b":"Elijah James Green","bDeck":"Kashtira"},{"table":6,"a":"Kyle Derek Botelho","aDeck":"Despia Branded","b":"Chester Hawk Henson","bDeck":"Bystial Branded"}]},
+            {"table":7,"a":"2 World Champs and John","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Burger","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":7,"a":"Ryan Linus Yu","aDeck":"Labrynth","b":"Alexander Benson Berg","bDeck":"Kashtira"},{"table":8,"a":"John Alexander Wilkin","aDeck":"Despia Branded","b":"Steve Enrique Hernandez","bDeck":"Kashtira"},{"table":9,"a":"Charley Ray Futch III","aDeck":"Despia Branded","b":"Matthew Joseph Rivera","bDeck":"Bystial Branded"}]},
+            {"table":10,"a":"Back For Seconds","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"do your thing bluemaster21","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":10,"a":"Stephen Joseph Silverman","aDeck":"Kashtira","b":"Luka F.","bDeck":"Despia Branded"},{"table":11,"a":"Dominic Eduardo Couch","aDeck":"Kashtira","b":"Herman Hans Hansson","bDeck":"Labrynth"},{"table":12,"a":"Alexander Louis Cancell","aDeck":"Kashtira","b":"Anderson Ga Jun Tsang","bDeck":"Despia Branded"}]}
           ],
           "standings": [],
           "features": [],
@@ -3426,8 +3426,8 @@
           "posted": "19:34",
           "standingsAfter": 9,
           "pairings": [
-            {"table":1,"a":"Joel White’s Insurance Agents","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"2 World Champs and John","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Santiago G.","aDeck":"Kashtira","b":"Ryan Y.","bDeck":"Labrynth"},{"table":2,"a":"Mohammed K.","aDeck":"Kashtira","b":"John W.","bDeck":"Despia Branded"},{"table":3,"a":"Adrian G.","aDeck":"Live-Twin Spright","b":"Charley F.","bDeck":"Despia Branded"}]},
-            {"table":4,"a":"Back For Seconds","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Kentucky Boyz","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":4,"a":"Stephen S.","aDeck":"Kashtira","b":"Michael G.","bDeck":"Tenyi Swordsoul"},{"table":5,"a":"Dominic C.","aDeck":"Kashtira","b":"Elijah G.","bDeck":"Kashtira"},{"table":6,"a":"Alexander C.","aDeck":"Kashtira","b":"Chester H.","bDeck":"Bystial Branded"}]}
+            {"table":1,"a":"Joel White’s Insurance Agents","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"2 World Champs and John","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Santiago G.","aDeck":"Kashtira","b":"Ryan Linus Yu","bDeck":"Labrynth"},{"table":2,"a":"Mohammed Faisal Khan","aDeck":"Kashtira","b":"John Alexander Wilkin","bDeck":"Despia Branded"},{"table":3,"a":"Adrian G.","aDeck":"Live-Twin Spright","b":"Charley Ray Futch III","bDeck":"Despia Branded"}]},
+            {"table":4,"a":"Back For Seconds","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Kentucky Boyz","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":4,"a":"Stephen Joseph Silverman","aDeck":"Kashtira","b":"Michael Joseph Gold Jr.","bDeck":"Tenyi Swordsoul"},{"table":5,"a":"Dominic Eduardo Couch","aDeck":"Kashtira","b":"Elijah James Green","bDeck":"Kashtira"},{"table":6,"a":"Alexander Louis Cancell","aDeck":"Kashtira","b":"Chester Hawk Henson","bDeck":"Bystial Branded"}]}
           ],
           "standings": [],
           "features": [
@@ -3445,7 +3445,7 @@
           "posted": "23:50",
           "standingsAfter": 9,
           "pairings": [
-            {"table":1,"a":"Back For Seconds","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"2 World Champs and John","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Stephen S.","aDeck":"Kashtira","b":"John W.","bDeck":"Despia Branded"},{"table":2,"a":"Dominic C.","aDeck":"Kashtira","b":"Ryan Y.","bDeck":"Labrynth"},{"table":3,"a":"Alexander C.","aDeck":"Kashtira","b":"Charley F.","bDeck":"Despia Branded"}]}
+            {"table":1,"a":"Back For Seconds","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"2 World Champs and John","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Stephen Joseph Silverman","aDeck":"Kashtira","b":"John Alexander Wilkin","bDeck":"Despia Branded"},{"table":2,"a":"Dominic Eduardo Couch","aDeck":"Kashtira","b":"Ryan Linus Yu","bDeck":"Labrynth"},{"table":3,"a":"Alexander Louis Cancell","aDeck":"Kashtira","b":"Charley Ray Futch III","bDeck":"Despia Branded"}]}
           ],
           "standings": [],
           "features": [],

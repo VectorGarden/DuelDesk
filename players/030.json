@@ -394,9 +394,6 @@
   "It’s Over": [
     {"e":"2023-team-ycs-las-vegas"}
   ],
-  "Herman H.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Labrynth"}
-  ],
   "Carlos Eduardo Kazunori Kobayashi": [
     {"e":"2023-team-ycs-sao-paulo"}
   ],
@@ -527,13 +524,16 @@
   "Ryan Charles Krueger": [
     {"e":"na-ygoc-2022"}
   ],
-  "Taylor S.": {
-    "as": "Taylor Justin Sager"
-  },
   "Johnathan L.": {
     "as": "Johnathan Van Luu"
   },
+  "Taylor S.": {
+    "as": "Taylor Justin Sager"
+  },
   "Marco C.": {
     "as": "Marco Antonio Cabrera"
+  },
+  "Herman H.": {
+    "as": "Herman Hans Hansson"
   }
 }

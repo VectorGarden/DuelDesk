@@ -492,11 +492,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
-  "Charley F.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Final","deck":"Despia Branded"},
-    {"e":"2024-02-team-ycs-las-vegas-nv"},
-    {"e":"2026-04-team-ycs-las-vegas"}
-  ],
   "Gabriel Ramos Luiz": [
     {"e":"2023-team-ycs-sao-paulo"}
   ],
@@ -532,6 +527,10 @@
   ],
   "Anthony Chan": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
+  ],
+  "Charley F.": [
+    {"e":"2024-02-team-ycs-las-vegas-nv"},
+    {"e":"2026-04-team-ycs-las-vegas"}
   ],
   "Victor Junior Hernandez": [
     {"e":"2024-08-ycs-sacramento"}
@@ -634,19 +633,19 @@
   "wins Stefano Sluis": [
     {"e":"wcs-2010","deck":"Infernity"}
   ],
-  "Abel S.": {
-    "as": "Abel Salgado"
-  },
-  "Tam N.": {
-    "as": "Tam Thanh Nguyen"
-  },
   "Hai N.": {
     "as": "Hai Si Hoang Nguyen"
   },
   "Adrian E.": {
     "as": "Adrian Joshua Alas Echane"
   },
+  "Abel S.": {
+    "as": "Abel Salgado"
+  },
   "Takuma C.": {
     "as": "Takuma Ken Chipman"
+  },
+  "Tam N.": {
+    "as": "Tam Thanh Nguyen"
   }
 }

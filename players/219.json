@@ -466,10 +466,6 @@
   "$500 cardboard": [
     {"e":"2023-team-ycs-las-vegas"}
   ],
-  "Alexander B.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Kashtira"},
-    {"e":"2024-02-team-ycs-las-vegas-nv"}
-  ],
   "Julio Cesar Ayala Andrade": [
     {"e":"2023-team-ycs-mexico-city"},
     {"e":"2024-ycs-guadalajara-mexico"},
@@ -505,6 +501,9 @@
     {"e":"2023-ycs-vancouver"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-ycs-vancouver"}
+  ],
+  "Alexander B.": [
+    {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
   "Kevin Manuel Navarrete": [
     {"e":"2024-10-cancun-mexico"}
@@ -603,11 +602,11 @@
   "Julian Jean Teodoro Norkowski": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Victor T.": {
-    "as": "Victor Daniel Torres"
-  },
   "Justin R.": {
     "as": "Justin Chase Russell"
+  },
+  "Victor T.": {
+    "as": "Victor Daniel Torres"
   },
   "Bryant Q.": {
     "as": "Bryant Quach"

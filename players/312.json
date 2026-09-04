@@ -532,9 +532,6 @@
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Steve H.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Kashtira"}
-  ],
   "Ricardo Ernesto Valencia Sanchez": [
     {"e":"2023-team-ycs-mexico-city"},
     {"e":"2023-ycs-cancun-mexico"},
@@ -652,5 +649,8 @@
   },
   "Craig S.": {
     "as": "Craig Johnston Smith"
+  },
+  "Steve H.": {
+    "as": "Steve Enrique Hernandez"
   }
 }

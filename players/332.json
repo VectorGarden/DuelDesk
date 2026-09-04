@@ -485,9 +485,6 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
-  "Caulin B.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Labrynth"}
-  ],
   "Irving Miranda De La Cruz": [
     {"e":"2023-team-ycs-mexico-city"}
   ],
@@ -647,6 +644,9 @@
   ],
   "Marcos D.": {
     "as": "Marcos Damaceno"
+  },
+  "Caulin B.": {
+    "as": "Caulin David Bradshaw"
   },
   "Jet X.": {
     "as": "Jet Xiao"

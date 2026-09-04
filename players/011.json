@@ -33,7 +33,7 @@
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2022-ycs-minneapolis","cut":"Top 32","deck":"Tearlaments"},
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Kashtira"},
     {"e":"2024-02-team-ycs-las-vegas-nv","cut":"Top 16","deck":"Fire King Snake-Eye"}
   ],
   "Jose Eduardo Mancilla Tovar": [
@@ -656,8 +656,8 @@
   "Valerio Rozza": [
     {"e":"yu-gi-oh-world-championship-2013"}
   ],
-  "Noah O.": {
-    "as": "Noah James Ochs"
+  "Jeremiah J.": {
+    "as": "Jeremiah Buyco Jose"
   },
   "Sean M.": {
     "as": "Sean Michael McQuillan"
@@ -665,13 +665,13 @@
   "Sam J.": {
     "as": "Sam Mingyan Jiang"
   },
-  "Jeremiah J.": {
-    "as": "Jeremiah Buyco Jose"
-  },
-  "Pierry C.": {
-    "as": "Pierry Sebastien Cange"
+  "Noah O.": {
+    "as": "Noah James Ochs"
   },
   "Kasey C.": {
     "as": "Kasey Ryan Corneliusen"
+  },
+  "Pierry C.": {
+    "as": "Pierry Sebastien Cange"
   }
 }

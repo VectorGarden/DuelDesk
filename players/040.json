@@ -296,7 +296,7 @@
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Bystial Branded"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-ycs-guadalajara-mexico"},
     {"e":"2024-ycs-raleigh"},
@@ -581,17 +581,17 @@
   "Josue Guillen": {
     "as": "Josue A Guillen"
   },
-  "Kody M.": {
-    "as": "Kody Masataka Manabe"
+  "Kamran A.": {
+    "as": "Kamran Aghaseyedali"
   },
   "Qamar S.": {
     "as": "Qamar Abbas Stationwala"
   },
-  "Kamran A.": {
-    "as": "Kamran Aghaseyedali"
-  },
   "Javier R.": {
     "as": "Javier Ruiz"
+  },
+  "Kody M.": {
+    "as": "Kody Masataka Manabe"
   },
   "Emmanuel H.": {
     "as": "Emmanuel Eugene Hayes"

@@ -468,9 +468,6 @@
   "Roseles – Bernai – Ramirez": [
     {"e":"2023-team-ycs-las-vegas"}
   ],
-  "Chester H.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 4","deck":"Bystial Branded"}
-  ],
   "Luis Enrique Canche Borges": [
     {"e":"2023-ycs-cancun-mexico"}
   ],
@@ -593,10 +590,13 @@
   "Aaron F.": {
     "as": "Aaron Chase Furman"
   },
-  "Thaddeus B.": {
-    "as": "Thaddeus Thomas Bingham"
-  },
   "Rick W.": {
     "as": "Rick William Winspear"
+  },
+  "Chester H.": {
+    "as": "Chester Hawk Henson"
+  },
+  "Thaddeus B.": {
+    "as": "Thaddeus Thomas Bingham"
   }
 }

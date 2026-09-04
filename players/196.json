@@ -273,7 +273,6 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2024-ycs-rio-de-janeiro-brazil","cut":"Top 4"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-03-team-ycs-las-vegas","cut":"Top 16"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-05-ycs-providence","cut":"Top 32","deck":"@Ignister Maliss"},
     {"e":"2025-10-ycs-anaheim"},
@@ -528,9 +527,6 @@
   "Gustavo Lucas Gomez": [
     {"e":"2023-south-america-wcq"}
   ],
-  "Cameron N.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Labrynth"}
-  ],
   "Manuel Flores Aguilar": [
     {"e":"2023-team-ycs-mexico-city"}
   ],
@@ -660,11 +656,14 @@
   "Joao C.": {
     "as": "Joao Pedro Queroga Caldas"
   },
-  "Benito G.": {
-    "as": "Benito Enrique Garcia"
+  "Cameron N.": {
+    "as": "Cameron Taylor Neal"
   },
   "Kolton S.": {
     "as": "Kolton Allan Schroeder"
+  },
+  "Benito G.": {
+    "as": "Benito Enrique Garcia"
   },
   "Nathan K.": {
     "as": "Nathan Yongjin Kim"

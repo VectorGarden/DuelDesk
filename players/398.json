@@ -500,7 +500,7 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Kamal Derrick El May Contain Rings: Crooks Valdez": [
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas","cut":"Top 16"}
   ],
   "Kevin Neftali Vanegas": [
     {"e":"2025-04-ycs-houston"}
@@ -544,10 +544,10 @@
   "Ryuki Shitagaki": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Japan"}
   ],
-  "John M.": {
-    "as": "John Taylor McDaniel"
-  },
   "Andrew X.": {
     "as": "Andrew David Xie"
+  },
+  "John M.": {
+    "as": "John Taylor McDaniel"
   }
 }

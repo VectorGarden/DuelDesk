@@ -397,10 +397,6 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"}
   ],
-  "Matthew R.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Bystial Branded"},
-    {"e":"2026-04-team-ycs-las-vegas"}
-  ],
   "Adam Wail Ahmad Jimenez": [
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -496,6 +492,9 @@
   "Adrian S.": [
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
+  "Matthew R.": [
+    {"e":"2026-04-team-ycs-las-vegas"}
+  ],
   "Kaedin F.": [
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
@@ -506,16 +505,16 @@
   "Juan Luis Gonzalez Cano": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Immanuel B.": {
-    "as": "Immanuel Quanjai Banks"
-  },
   "Micah G.": {
     "as": "Micah James Garcia"
   },
-  "Zackary R.": {
-    "as": "Zackary Brian Reist"
+  "Immanuel B.": {
+    "as": "Immanuel Quanjai Banks"
   },
   "Grant N.": {
     "as": "Grant Daniel Napolitano"
+  },
+  "Zackary R.": {
+    "as": "Zackary Brian Reist"
   }
 }

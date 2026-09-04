@@ -447,9 +447,6 @@
   "Can We Get a Hoya": [
     {"e":"2023-team-ycs-las-vegas"}
   ],
-  "Elijah G.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 4","deck":"Kashtira"}
-  ],
   "Santiago B.": [
     {"e":"2023-team-ycs-sao-paulo"}
   ],
@@ -584,6 +581,9 @@
   "Luiz Fernando Da Conceicao Rafael": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
+  "Elijah G.": {
+    "as": "Elijah James Green"
+  },
   "Phillip E.": {
     "as": "Phillip Aleksandr Estrin"
   }

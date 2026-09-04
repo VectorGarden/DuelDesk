@@ -77,7 +77,7 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq","cut":"Top 16","deck":"Kashtira"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","cut":"Top 8","deck":"Labrynth"},
     {"e":"2023-ycs-cancun-mexico","cut":"Top 32"},
     {"e":"2023-ycs-indianapolis","cut":"Top 8","deck":"Unchained"},
     {"e":"2023-ycs-richmond"},
@@ -629,17 +629,17 @@
   "Josh Kelly": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Final","deck":"Light and Darkness Ritual"}
   ],
-  "Etienne B.": {
-    "as": "Etienne Jose Bonin"
-  },
   "James E.": {
     "as": "James Robert Esquibel"
+  },
+  "Peter N.": {
+    "as": "Peter Phuong Nguyen"
   },
   "Dylan G.": {
     "as": "Dylan Maxwell Graves"
   },
-  "Peter N.": {
-    "as": "Peter Phuong Nguyen"
+  "Etienne B.": {
+    "as": "Etienne Jose Bonin"
   },
   "Jared P.": {
     "as": "Jared Mikel Perez"

@@ -511,9 +511,6 @@
   "The TubbyBubbies": [
     {"e":"2023-team-ycs-las-vegas"}
   ],
-  "Stephen S.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Final","deck":"Kashtira","won":true}
-  ],
   "Brandon Dilan Minan Zavala": [
     {"e":"2023-team-ycs-mexico-city"},
     {"e":"2026-02-300th-na"}
@@ -679,10 +676,10 @@
   "Keegan S.": {
     "as": "Keegan Dane Spotts"
   },
-  "Ethan C.": {
-    "as": "Ethan Scott Crowe"
-  },
   "Andrew W.": {
     "as": "Andrew Robert Walch"
+  },
+  "Ethan C.": {
+    "as": "Ethan Scott Crowe"
   }
 }

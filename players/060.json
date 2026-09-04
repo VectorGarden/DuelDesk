@@ -73,7 +73,7 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq","cut":"Top 64","deck":"Kashtira"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","won":true,"cut":"Final","deck":"Kashtira"},
     {"e":"2023-team-ycs-mexico-city","cut":"Top 16"},
     {"e":"2023-ycs-cancun-mexico"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -676,10 +676,10 @@
   "George S.": {
     "as": "George Lucas Sacco"
   },
-  "Dade R.": {
-    "as": "Dade Alexander Rynerson"
-  },
   "Isaiah B.": {
     "as": "Isaiah Jeffrey Burgess"
+  },
+  "Dade R.": {
+    "as": "Dade Alexander Rynerson"
   }
 }

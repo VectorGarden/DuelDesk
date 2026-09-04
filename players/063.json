@@ -289,7 +289,7 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","won":true,"cut":"Final","deck":"Kashtira"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-ycs-raleigh"},
     {"e":"na-ygoc-2022"}

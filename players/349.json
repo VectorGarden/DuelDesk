@@ -541,10 +541,6 @@
   "Gary Dened Barahona Gomez": [
     {"e":"2023-south-america-wcq","cut":"Top 64"}
   ],
-  "Ryan Y.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Final","deck":"Labrynth"},
-    {"e":"2026-04-team-ycs-las-vegas"}
-  ],
   "Martin Guillermo lopez garcia": [
     {"e":"2023-team-ycs-mexico-city"}
   ],
@@ -704,6 +700,9 @@
   "Michel Alan Lugo Martinez": [
     {"e":"2026-02-300th-na"}
   ],
+  "Ryan Y.": [
+    {"e":"2026-04-team-ycs-las-vegas"}
+  ],
   "Alex Johnathon Ginther": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
@@ -737,10 +736,10 @@
   "Jonathon N.": {
     "as": "Jonathon Michael Nagel"
   },
-  "Benjamin D.": {
-    "as": "Benjamin John Dunn"
-  },
   "Zohair K.": {
     "as": "Zohair Ismail Khan"
+  },
+  "Benjamin D.": {
+    "as": "Benjamin John Dunn"
   }
 }

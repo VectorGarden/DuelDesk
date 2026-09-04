@@ -61,7 +61,7 @@
     {"e":"2019-ycs-ft-worth"},
     {"e":"2020-team-ycs-las-vegas","won":true,"cut":"Top 4","deck":"Lost World Dinosaur"},
     {"e":"2022-ycs-minneapolis"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","won":true,"cut":"Final","deck":"Kashtira"},
     {"e":"2023-team-ycs-mexico-city","cut":"Top 16"}
   ],
   "Luis Benito Avellana Jr.": [

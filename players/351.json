@@ -126,7 +126,7 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-remote-duel-ycs"},
     {"e":"2023-north-america-wcq"},
-    {"e":"2023-team-ycs-las-vegas","cut":"Top 16"},
+    {"e":"2023-team-ycs-las-vegas","cut":"Final","deck":"Despia Branded"},
     {"e":"2023-ycs-richmond"},
     {"e":"2023-ycs-vancouver","cut":"Top 32","deck":"Purrely"},
     {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"},
@@ -566,6 +566,9 @@
   "Brian L.": {
     "as": "Brian Patrick Lentini"
   },
+  "Allen T.": {
+    "as": "Allen Tong"
+  },
   "Angel S.": {
     "as": "Angel Manuel Sixto"
   },
@@ -574,8 +577,5 @@
   },
   "Blake R.": {
     "as": "Blake Andrew Root"
-  },
-  "Allen T.": {
-    "as": "Allen Tong"
   }
 }

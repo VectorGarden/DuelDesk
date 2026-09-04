@@ -390,9 +390,6 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2023-ycs-vancouver"}
   ],
-  "Dominic C.": [
-    {"e":"2023-team-ycs-las-vegas","cut":"Final","deck":"Kashtira","won":true}
-  ],
   "Ricardo Eduardo Juarez Salazar": [
     {"e":"2023-team-ycs-mexico-city"}
   ],
@@ -529,6 +526,9 @@
   },
   "Gustavo P.": {
     "as": "Gustavo Cassiano Pereira"
+  },
+  "Dominic C.": {
+    "as": "Dominic Eduardo Couch"
   },
   "Jack C.": {
     "as": "Jack Elliot Cates"

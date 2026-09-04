@@ -487,7 +487,7 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Ruben Andres May Contain Rings: Penaranda": [
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas","cut":"Top 16"}
   ],
   "X-2 Dropouts": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -531,11 +531,11 @@
   "Edgar Joaquin Rios Ruiz": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Kyle C.": {
-    "as": "Kyle Reece Crofoot"
-  },
   "Kethya K.": {
     "as": "Kethya Kas"
+  },
+  "Kyle C.": {
+    "as": "Kyle Reece Crofoot"
   },
   "Noah C.": {
     "as": "Noah Cervantes"

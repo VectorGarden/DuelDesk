@@ -134,7 +134,6 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"na-ygoc-2022"}
@@ -598,11 +597,11 @@
   "Raul E.": {
     "as": "Raul Barbosa Eluan"
   },
-  "Kevin K.": {
-    "as": "Kevin H. Kim"
-  },
   "Emmanuel A.": {
     "as": "Emmanuel Lulseged Abate"
+  },
+  "Kevin K.": {
+    "as": "Kevin H. Kim"
   },
   "Colton A.": {
     "as": "Colton Blane Anderson"
