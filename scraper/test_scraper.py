@@ -7889,6 +7889,25 @@ class TestANameABracketBrokeInHalf(unittest.TestCase):
         self.assertEqual(self.text(out),
                          ["1 Chessy Cat\n2 Maliss White Rabbit", "Spell Cards: 7"])
 
+    def test_one_break_after_another_does_not_undo_the_one_before(self):
+        # A deck list of these breaks them one after another: a block ends
+        # "3 Maliss", the next begins "March Hare" and ends "2 Maliss" itself.
+        # So a block is both the tail somebody needs and a half needing one,
+        # and walking a snapshot writes the second join over the first --
+        # putting back the tail it had just taken away. Twelve names were
+        # joined and nine tails left standing, and the page, still doing its
+        # own rejoining, read "Maliss March Hare March Hare".
+        from article import rejoin
+        held = self.blocks("1 Bystial Magnamhut\n3 Maliss",
+                           "March Hare\n2 Mulcharmy Purulia\n2 Maliss",
+                           "Dormouse\n1 Bystial Druiswurm")
+        out = rejoin(held, self.known("Maliss March Hare", "Maliss Dormouse"))
+        self.assertEqual(self.text(out), [
+            "1 Bystial Magnamhut\n3 Maliss March Hare",
+            "2 Mulcharmy Purulia\n2 Maliss Dormouse",
+            "1 Bystial Druiswurm",
+        ])
+
     def test_a_name_that_is_already_a_card_is_left_alone(self):
         # "Maliss in the Mirror" is a card and was never broken. 49 lines in
         # the archive say it.

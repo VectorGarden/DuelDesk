@@ -340,8 +340,14 @@ def rejoin(blocks: list[dict], known) -> list[dict]:
     """
     counted = re.compile(r"^(\d+[.)]?\s+)(\S.*)$")
     out = [dict(b) for b in blocks]
-    for i, block in enumerate(out[:-1]):
-        runs = block.get("r") or []
+    # By index, reading each block as it stands. A deck list of these breaks
+    # them one after another -- a block ends "3 Maliss", the next begins
+    # "March Hare" and ends "2 Maliss" itself -- so a block is both the tail
+    # somebody needs and a half needing one. Walked over a snapshot, the
+    # second join writes the block as it was found and puts back the tail the
+    # first join had just taken away.
+    for i in range(len(out) - 1):
+        runs = out[i].get("r") or []
         after = out[i + 1].get("r") or []
         if not runs or not after:
             continue
@@ -356,8 +362,8 @@ def rejoin(blocks: list[dict], known) -> list[dict]:
             continue
         # The tail keeps the whole name; the head loses the half it held. A
         # head that held nothing else goes, or the block is an empty line.
-        out[i] = {**block, "r": [*runs[:-1],
-                                 _with_text(runs[-1], f"{tail} {rest}")]}
+        out[i] = {**out[i], "r": [*runs[:-1],
+                                  _with_text(runs[-1], f"{tail} {rest}")]}
         left = head[len(head.split("\n", 1)[0]):].lstrip("\n")
         out[i + 1] = {**out[i + 1],
                       "r": ([_with_text(after[0], left), *after[1:]] if left
