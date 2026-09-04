@@ -363,3 +363,67 @@ test('a deck is measured in copies, not in lines', async () => {
   const [deck] = decksIn(POST);
   assert.equal(layout.copiesIn(deck), 7, '3 + 1 + 2 + 1, and no extra or side');
 });
+
+/* A zip, written by hand.
+ *
+ * Sixty-three deck lists want to arrive as sixty-three files, and a .ydk has
+ * no way of holding more than one — the format has no separator. A zip of
+ * stored entries is a documented layout and about sixty lines, which is less
+ * than a dependency costs on a page that has none.
+ *
+ * Asserted against the bytes rather than against a reader: node has no unzip,
+ * and the point is that the bytes are what the format says they are.
+ */
+const zipping = new Function('TextEncoder',
+  readFileSync(join(ROOT, 'common.js'), 'utf8')
+    .slice(readFileSync(join(ROOT, 'common.js'), 'utf8').indexOf('const CRC_TABLE'),
+           readFileSync(join(ROOT, 'common.js'), 'utf8').indexOf('function offsite('))
+  + '; return {zipOf, crc32, eachNamedOnce};')(TextEncoder);
+
+const u32 = (bytes, at) => new DataView(bytes.buffer, bytes.byteOffset).getUint32(at, true);
+const u16 = (bytes, at) => new DataView(bytes.buffer, bytes.byteOffset).getUint16(at, true);
+
+test('a CRC-32 is the one everybody else computes', async () => {
+  // The number every reader checks the file against. Wrong, and the zip opens
+  // and then refuses its own contents.
+  const of = (s) => zipping.crc32(new TextEncoder().encode(s));
+  assert.equal(of('123456789'), 0xCBF43926, 'the check value the standard gives');
+  assert.equal(of(''), 0);
+});
+
+test('the bytes say what a zip says', async () => {
+  const zip = zipping.zipOf([{name: 'a.ydk', text: '#main\n1\n'}]);
+  assert.equal(u32(zip, 0), 0x04034b50, 'a local header first');
+  assert.equal(u16(zip, 8), 0, 'stored, not deflated');
+  assert.equal(u16(zip, 6) & 0x0800, 0x0800, 'and the name is UTF-8');
+  assert.equal(u32(zip, 22), 8, 'the size it says it is');
+  /* And it ends with the directory record every reader looks for first. */
+  const end = zip.length - 22;
+  assert.equal(u32(zip, end), 0x06054b50);
+  assert.equal(u16(zip, end + 10), 1, 'one file in it');
+});
+
+test('sixty-three decks are sixty-three files', async () => {
+  const files = Array.from({length: 63}, (_, i) => ({name: `deck ${i}.ydk`, text: '#main\n1\n'}));
+  const zip = zipping.zipOf(files);
+  assert.equal(u16(zip, zip.length - 22 + 10), 63);
+});
+
+test('two decks called the same thing are two files', async () => {
+  // A name is not an identifier — a post can hold two "Top 8" decks — and two
+  // files in a zip cannot share one.
+  const files = zipping.eachNamedOnce([
+    {name: 'Top 8.ydk', text: 'a'}, {name: 'Top 8.ydk', text: 'b'}, {name: 'Top 8.ydk', text: 'c'}]);
+  assert.deepEqual(files.map((f) => f.name),
+    ['Top 8.ydk', 'Top 8 (2).ydk', 'Top 8 (3).ydk']);
+  assert.deepEqual(files.map((f) => f.text), ['a', 'b', 'c'], 'and each keeps its own');
+});
+
+test('a name with an accent survives into the archive', async () => {
+  // The names carry accents and em dashes, which is why the UTF-8 flag is set.
+  const zip = zipping.zipOf([{name: 'José Ramírez — 1.ydk', text: 'x'}]);
+  const nameLength = u16(zip, 26);
+  const name = new TextDecoder().decode(zip.slice(30, 30 + nameLength));
+  assert.equal(name, 'José Ramírez — 1.ydk');
+  assert.ok(nameLength > 'José Ramírez — 1.ydk'.length, 'encoded as UTF-8, not as characters');
+});

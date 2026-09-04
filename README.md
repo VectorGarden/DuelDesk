@@ -179,9 +179,11 @@ buttons rather than quietly dropped.
 
 Each deck offers three files; a post of many offers two more, for all of them at once.
 
-Not three. A `.ydk` is one deck's file and there is no honest way to put sixty-three in it — the
-format has no separator, and a zip would be a dependency on a page that has none. A `ydke://` is one
-line, so a file of them is a file of them, and the registration JSON is already one object a deck.
+All three. A `.ydk` holds one deck — the format has no separator — and a registration file is one
+deck's form, so those arrive as a **zip of sixty-three files**, written by hand in
+[`common.js`](common.js): a zip of stored entries is a documented layout and about sixty lines,
+which is less than a dependency costs on a page that has none. A `ydke://` is one line, so a list of
+them is a list.
 
 The numbers come from [`cards/ids.json`](cards) rather than the shards. A hover wants one card and
 fetches one shard of 13KB; the worst post in the archive names 642 cards across **367 of the 512

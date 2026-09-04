@@ -866,8 +866,9 @@ function indexOf(decks, layout){
     </label>
     <p class="deckindex__all">
       <span class="deckout__k">Take all ${decks.length}</span>
-      <button type="button" class="btn btn--sm" data-all="ydke">ydke:// each</button>
-      <button type="button" class="btn btn--sm" data-all="json">Registration JSON</button>
+      <button type="button" class="btn btn--sm" data-all="ydk">.ydk zip</button>
+      <button type="button" class="btn btn--sm" data-all="ydke">ydke:// list</button>
+      <button type="button" class="btn btn--sm" data-all="json">JSON zip</button>
       <span class="deckout__note" data-note="all"></span>
     </p>
     <ol class="deckindex__list">${decks.map((deck, i) => `
@@ -920,26 +921,33 @@ async function handOver(deck, as, note){
 
 /* Every deck in the post at once.
 
-   Two of the three formats, not three. A .ydk is one deck's file and there is
-   no honest way to put sixty-three in it: the format has no separator, and a
-   zip would be a dependency on a page that has none. A ydke:// is one line,
-   so a file of them is a file of them; and the registration JSON is already
-   one object a deck, so an array of them is the shape it was going to take
-   anyway. */
+   All three formats. A .ydk holds one deck -- the format has no separator --
+   and a registration file is one deck's form, so those arrive as a zip of
+   sixty-three files, written by hand in common.js because a zip of stored
+   entries is sixty lines rather than a dependency. A ydke:// is one line, so
+   a list of them is a list. */
 async function handOverAll(decks, as, note, title){
   note.textContent = 'Looking the cards up…';
   const ids = await cardNumbers();
   const resolve = (name) => numbersFor(ids, name);
   const stem = fileStem(title || 'deck lists');
+  const nameOfDeck = (deck, i) =>
+    fileStem(deck.name.replace(/\s*\n\s*/g, ' — ')) || `Deck ${i + 1}`;
 
   if (as === 'ydke'){
-    const lines = decks.map((deck) =>
-      `# ${deck.name.replace(/\s*\n\s*/g, ' — ')}\n${ydkeOf(deck, resolve)}`);
+    const lines = decks.map((deck, i) =>
+      `# ${nameOfDeck(deck, i)}\n${ydkeOf(deck, resolve)}`);
     save(lines.join('\n\n') + '\n', `${stem}.ydke.txt`, 'text/plain');
+  } else if (as === 'ydk'){
+    saveZip(eachNamedOnce(decks.map((deck, i) => ({
+      name: `${nameOfDeck(deck, i)}.ydk`,
+      text: ydkOf(deck, resolve, nameOfDeck(deck, i)),
+    }))), `${stem}.ydk.zip`);
   } else {
-    save(JSON.stringify(decks.map((deck) =>
-      registrationOf(deck, resolve, deck.name.replace(/\s*\n\s*/g, ' — '))), null, 2),
-      `${stem}.json`, 'application/json');
+    saveZip(eachNamedOnce(decks.map((deck, i) => ({
+      name: `${nameOfDeck(deck, i)}.json`,
+      text: JSON.stringify(registrationOf(deck, resolve, nameOfDeck(deck, i)), null, 2),
+    }))), `${stem}.json.zip`);
   }
 
   const lost = new Set();
@@ -965,8 +973,17 @@ function fileStem(name){
     .trim().slice(0, 60) || 'decklist';
 }
 
+/* The same handing-over, for bytes rather than text. */
+function saveZip(files, filename){
+  handTo(new Blob([zipOf(files)], {type: 'application/zip'}), filename);
+}
+
 function save(text, filename, type){
-  const url = URL.createObjectURL(new Blob([text], {type}));
+  handTo(new Blob([text], {type}), filename);
+}
+
+function handTo(blob, filename){
+  const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
   a.download = filename;
