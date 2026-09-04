@@ -612,10 +612,29 @@ class TestAPostIsReadHere(unittest.TestCase):
         self.assertEqual(got, [{"t": "p", "r": [
             "Osorio played ", {"b": "Cyber Dragon"}, " next."]}])
 
-    def test_a_line_break_is_a_space(self):
-        # Dropped with the rest of the tags, "Sky<br>Striker" is "SkyStriker".
-        self.assertEqual(self.blocks("<p>Sky<br>Striker</p>"),
-                         [{"t": "p", "r": ["Sky Striker"]}])
+    def test_a_line_break_in_prose_is_a_line(self):
+        # Konami writes a deck list one card to a line, and the whole of it
+        # inside a single paragraph. Read as spaces, a forty-card list came out
+        # as "Monsters: 19 3 Ash Blossom & Joyous Spring 3 Dimension Shifter",
+        # which is neither readable nor countable.
+        self.assertEqual(
+            self.blocks("<p>Monsters: 19<br>3 Ash Blossom<br>3 Dimension Shifter</p>"),
+            [{"t": "p", "r": ["Monsters: 19\n3 Ash Blossom\n3 Dimension Shifter"]}])
+
+    def test_a_line_break_in_a_table_cell_is_a_space(self):
+        # And here it is not a line. A cell holding "Destiny Adventurer<br>
+        # Prank-Kids" is one deck name written across two lines; dropped
+        # entirely it reads "SkyStriker", and kept as a line it is two decks.
+        self.assertEqual(
+            self.blocks("<table><tr><td>Destiny Adventurer<br>Prank-Kids</td></tr></table>"),
+            [{"t": "table", "rows": [["Destiny Adventurer Prank-Kids"]]}])
+
+    def test_a_break_at_the_edge_of_a_run_survives(self):
+        # The text of a run is trimmed, and a break sitting on the edge of one
+        # -- "</b><br>then passed" -- was trimmed away with the spaces.
+        self.assertEqual(
+            self.blocks("<p>He played <b>Ash Blossom</b><br>then passed.</p>"),
+            [{"t": "p", "r": ["He played ", {"b": "Ash Blossom"}, "\nthen passed."]}])
 
     def test_a_photograph_and_its_caption_are_dropped(self):
         # The page forbids remote images, so a caption is a label for something
@@ -778,6 +797,25 @@ class TestDuelistsNamedInTheProse(unittest.TestCase):
                         ["Francisco Andres Osorio Bobadilla"], by_surname=True)
         self.assertEqual([r for r in self.runs(got) if isinstance(r, dict)],
                          [{"who": "Francisco Andres Osorio Bobadilla", "t": "Osorio"}] * 3)
+
+    def test_a_name_in_a_heading_is_marked(self):
+        # A deck list's heading is bold and holds the Duelist: the coverage
+        # writes "1st Place / Raymond Dai / Exosisters" in one emphasised run,
+        # and 424 of the archive's linkable names are in one.
+        got = self.link("<p><strong>1st Place<br>Raymond Dai<br>Exosisters</strong></p>",
+                        ["Raymond Dai"])
+        self.assertEqual(self.runs(got), [
+            {"b": "1st Place\n"},
+            {"who": "Raymond Dai", "t": "Raymond Dai", "e": "b"},
+            {"b": "\nExosisters"}])
+
+    def test_a_heading_is_not_searched_by_surname(self):
+        # The loose question stays out of emphasis. 463 emphasised runs in the
+        # archive hold some combatant's surname inside a card name, and a
+        # feature match is the only post asked by surname.
+        got = self.link("<p>He drew <strong>Kelly's Gadget</strong>.</p>",
+                        ["Grant Kelly"], by_surname=True)
+        self.assertEqual(self.runs(got), ["He drew ", {"b": "Kelly's Gadget"}, "."])
 
     def test_a_name_two_duelists_answer_to_marks_neither(self):
         got = self.link("<p>Kehon drew a card.</p>",

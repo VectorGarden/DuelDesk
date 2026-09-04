@@ -84,3 +84,45 @@ test('a linked name is escaped like everything else', async (t) => {
   assert.equal(html.includes('<script'), false);
   assert.match(html, /&lt;script&gt;/);
 });
+
+test('a line the coverage wrote is a line on the page', async (t) => {
+  // Konami writes a deck list one card to a line inside a single paragraph.
+  // The archive keeps those breaks and the stylesheet renders them; nothing
+  // else in the text does, so the source's own indentation stays collapsed.
+  const page = await loadPage();
+  t.after(() => page.close());
+
+  const html = page.run(`blocksHtml([{t:'p', r:['Monsters: 19\\n3 Ash Blossom']}])`);
+  assert.match(html, /Monsters: 19\n3 Ash Blossom/);
+
+  /* Read off the rule's own text: jsdom parses the stylesheet but does not
+     surface every property through its typed accessors. */
+  const rule = page.run(`(() => {
+    for (const sheet of document.styleSheets)
+      for (const r of sheet.cssRules ?? [])
+        if ((r.selectorText ?? '') === '.article p') return r.style.cssText;
+    return null;
+  })()`);
+  assert.match(rule ?? '', /white-space:\s*pre-line/,
+    'the breaks are rendered rather than collapsed');
+});
+
+test('a name written in a heading is a link inside the heading', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+
+  const html = page.run(`blocksHtml([{t:'p', r:[
+    {who:'Raymond Dai', t:'Raymond Dai', e:'b'}]}])`);
+  assert.match(html, /^<p><b><a class="who"/, 'the emphasis wraps the link');
+  assert.match(html, />Raymond Dai<\/a><\/b>/);
+});
+
+test('an emphasis the page does not know does not wrap a link', async (t) => {
+  const page = await loadPage();
+  t.after(() => page.close());
+
+  const html = page.run(`blocksHtml([{t:'p', r:[
+    {who:'Raymond Dai', t:'Raymond Dai', e:'script'}]}])`);
+  assert.equal(html.includes('<script'), false);
+  assert.match(html, /<a class="who"/);
+});
