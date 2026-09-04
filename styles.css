@@ -517,6 +517,8 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
 /* What the card is. Positioned in the document rather than the viewport, so
    it stays with the name it belongs to while the page settles. */
 .cardpop{
+  /* The width is set when it is placed -- it narrows to sit beside the name
+     rather than drop over the list. See read.js. */
   position:absolute; z-index:40; max-width:min(30rem,calc(100vw - 1rem));
   display:flex; flex-direction:column; gap:.3rem;
   background:var(--surface); border:1px solid var(--line);

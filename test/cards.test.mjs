@@ -93,3 +93,74 @@ test('a shard is fetched once, however many of its cards are asked for', async (
   await store.lookupCard('Ash Blossom & Joyous Spring');
   assert.equal(fetches, 1, 'a shard is kept once it is here');
 });
+
+/* Where the card goes.
+ *
+ * A deck list is a column of card names. A panel dropped below one covers the
+ * next eight, so every way of moving the pointer off it landed on another name
+ * and opened another card -- which is what made it hard to be rid of. Beside
+ * the name it covers the margin instead.
+ *
+ * The arithmetic is lifted out of read.js rather than reimplemented, and run
+ * against rectangles: the harness's jsdom measures every element as zero, so a
+ * browser is no use for asking where a thing would go.
+ */
+const reader = readFileSync(join(ROOT, 'read.js'), 'utf8');
+const geometry = new Function(
+  reader.slice(reader.indexOf('const CARD_WIDE'), reader.indexOf('function place(span)'))
+  + '; return {placement, cardWidth, CARD_WIDE, CARD_NARROW};')();
+
+const rect = (left, top, width, height) =>
+  ({left, top, width, height, right: left + width, bottom: top + height});
+const VIEW = {width: 1280, height: 800};
+
+test('a card sits beside the name, not over the list', async () => {
+  const at = rect(20, 300, 180, 20);
+  const where = geometry.placement(at, rect(0, 0, 480, 240), VIEW);
+  assert.equal(where.beside, true);
+  assert.ok(where.left >= at.right, 'to the right of the name');
+  assert.ok(where.top <= at.top, 'and level with it');
+});
+
+test('and on the other side when that is where the room is', async () => {
+  const at = rect(1000, 300, 180, 20);
+  const where = geometry.placement(at, rect(0, 0, 480, 240), VIEW);
+  assert.equal(where.beside, true);
+  assert.ok(where.left + 480 <= at.left, 'to the left of the name');
+});
+
+test('it goes under the name only when there is no margin at all', async () => {
+  const narrow = {width: 380, height: 800};
+  const at = rect(20, 300, 180, 20);
+  const where = geometry.placement(at, rect(0, 0, 360, 240), narrow);
+  assert.equal(where.beside, false);
+  assert.ok(where.top >= at.bottom, 'below it');
+  assert.ok(where.left >= 8 && where.left + 360 <= narrow.width, 'and on the screen');
+});
+
+test('a card too tall for the space below goes above instead', async () => {
+  const narrow = {width: 380, height: 400};
+  const at = rect(20, 300, 180, 20);
+  const where = geometry.placement(at, rect(0, 0, 360, 240), narrow);
+  assert.ok(where.top + 240 <= 400, 'it fits on the screen');
+  assert.ok(where.top < at.top, 'which means above the name');
+});
+
+test('a card level with a name near the bottom is pulled back on screen', async () => {
+  const at = rect(20, 760, 180, 20);
+  const where = geometry.placement(at, rect(0, 0, 480, 240), VIEW);
+  assert.ok(where.top + 240 <= VIEW.height, 'not hanging off the bottom');
+  assert.ok(where.top >= 8);
+});
+
+test('it narrows to keep out of the list rather than giving up the margin', async () => {
+  // A card's text at 15rem is a taller panel. A taller panel in the margin is
+  // still better than a wider one over the deck list.
+  const at = rect(20, 300, 180, 20);
+  assert.equal(geometry.cardWidth(at, VIEW), geometry.CARD_WIDE, 'wide where there is room');
+  const tight = geometry.cardWidth(at, {width: 560, height: 800});
+  assert.ok(tight < geometry.CARD_WIDE && tight >= geometry.CARD_NARROW,
+    `narrowed to ${tight}`);
+  assert.equal(geometry.cardWidth(at, {width: 300, height: 800}), geometry.CARD_NARROW,
+    'and never below the width its text needs');
+});

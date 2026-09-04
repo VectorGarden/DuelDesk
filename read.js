@@ -196,58 +196,164 @@ function cardPanel(card){
 }
 
 let popup = null;
-let showing = null;
+let showing = null;       // the name the open card belongs to
+let opening = null;       // the timer waiting to see if the reader meant it
+let closing = null;       // and the one giving them time to reach the card
 
-function hideCard(){
+/* Long enough that passing over a name on the way somewhere else opens
+   nothing, short enough that resting on one does not feel like waiting. A
+   deck list is forty names in a column and the pointer crosses most of them
+   to leave, which is what made the card hard to be rid of: every escape route
+   opened another one. */
+const REST = 300;
+/* And the gap between the name and the card, which the pointer travels
+   through. Closing on the instant it left the name made the card
+   unreachable. */
+const REACH = 160;
+
+function closeCard(){
+  clearTimeout(opening); opening = null;
   showing = null;
-  if (popup) popup.hidden = true;
+  if (popup){ popup.hidden = true; popup.removeAttribute('data-for'); }
 }
 
-async function showCard(span){
+/* Asked for whenever the pointer is not on the name or the card. Deferred, so
+   crossing the gap between them is not leaving. */
+function letGo(){
+  clearTimeout(closing);
+  closing = setTimeout(closeCard, REACH);
+}
+const hold = () => { clearTimeout(closing); closing = null; };
+
+function wantCard(span){
+  hold();
+  if (showing === span) return;
+  clearTimeout(opening);
+  opening = setTimeout(() => openCard(span), REST);
+}
+
+/* What a card is, in the order somebody reading a match report wants it. */
+function cardPanel(card){
+  const line = [card.type, card.race, card.attribute].filter(Boolean).join(' \u00b7 ');
+  const stats = [];
+  if (card.level !== undefined) stats.push(`Level ${card.level}`);
+  if (card.atk !== undefined) stats.push(`ATK ${card.atk}`);
+  if (card.def !== undefined) stats.push(`DEF ${card.def}`);
+  return `<b class="cardpop__n">${esc(card.name)}</b>
+    <span class="cardpop__t">${esc(line)}</span>
+    ${stats.length ? `<span class="cardpop__s">${esc(stats.join('  '))}</span>` : ''}
+    ${card.archetype ? `<span class="cardpop__a">${esc(card.archetype)}</span>` : ''}
+    <span class="cardpop__d">${esc(card.desc ?? '')}</span>`;
+}
+
+async function openCard(span){
   const name = span.textContent;
   showing = span;
   const card = await lookupCard(name);
   /* The reader may have moved on while the shard was fetched, and a card
-     opening under a cursor that has gone is worse than none. */
+     opening under a pointer that has gone is worse than none. */
   if (showing !== span || !card) return;
   if (!popup){
     popup = document.createElement('div');
     popup.className = 'cardpop';
     popup.id = 'cardpop';
     popup.setAttribute('role', 'tooltip');
+    /* The card is part of what the pointer is on. Reaching it to read the
+       small print, or to select a line of it, must not count as leaving. */
+    popup.addEventListener('mouseover', hold);
+    popup.addEventListener('mouseout', letGo);
     document.body.append(popup);
   }
   popup.innerHTML = cardPanel(card);
   popup.hidden = false;
+  popup.dataset.for = name;
   span.setAttribute('aria-describedby', 'cardpop');
-  /* Beside the name, and flipped when there is no room below or to the
-     right. Measured after it is filled, because its height is its text. */
+  place(span);
+}
+
+/* Beside the name, and under it only where there is no beside to be had.
+
+   Because of what is underneath: a deck list is a column of cards, and a
+   panel dropped below one covers the next eight -- so every way of moving the
+   pointer off it landed on another name and opened another card. To the side
+   it covers the margin.
+
+   It will narrow to fit rather than give up on the side: a card's text at
+   15rem is a taller panel, and a taller panel in the margin is still better
+   than a wider one over the list.
+
+   The arithmetic is kept apart from the element so it can be tested against
+   rectangles rather than against a browser. */
+const CARD_WIDE = 480;
+const CARD_NARROW = 240;
+
+/* How wide the card may be, given how much margin there is beside the name. */
+function cardWidth(at, view){
+  const room = Math.max(view.width - at.right - 20, at.left - 20);
+  return Math.min(CARD_WIDE, Math.max(room, CARD_NARROW));
+}
+
+/* Where it goes, in the coordinates the name was measured in. */
+function placement(at, box, view){
+  const gap = 12;
+  if (view.width - at.right - gap - 8 >= box.width){
+    return {left: at.right + gap, top: level(at, box, view), beside: true};
+  }
+  if (at.left - gap - 8 >= box.width){
+    return {left: at.left - gap - box.width, top: level(at, box, view), beside: true};
+  }
+  /* No margin either side, so under it -- or over it, where under would fall
+     off the bottom. */
+  const under = at.bottom + gap;
+  return {
+    left: Math.max(8, Math.min(at.left, view.width - box.width - 8)),
+    top: under + box.height < view.height ? under
+         : Math.max(8, at.top - box.height - gap),
+    beside: false,
+  };
+}
+
+/* Level with the name, pulled back on screen if that hangs it off the bottom. */
+function level(at, box, view){
+  return Math.min(Math.max(8, at.top - 4), Math.max(8, view.height - box.height - 8));
+}
+
+function place(span){
   const at = span.getBoundingClientRect();
-  const box = popup.getBoundingClientRect();
-  /* Clamped to the left edge last, so a card wider than the window lands on
-     screen rather than off it. */
-  const left = Math.max(8, Math.min(at.left, window.innerWidth - box.width - 8));
-  const below = at.bottom + 8;
-  const top = below + box.height < window.innerHeight ? below : at.top - box.height - 8;
-  popup.style.left = `${left + window.scrollX}px`;
-  popup.style.top = `${Math.max(8, top) + window.scrollY}px`;
+  const view = {width: window.innerWidth, height: window.innerHeight};
+  popup.style.maxWidth = `${cardWidth(at, view)}px`;
+  // Measured at the width it will actually be.
+  const where = placement(at, popup.getBoundingClientRect(), view);
+  popup.style.left = `${where.left + window.scrollX}px`;
+  popup.style.top = `${where.top + window.scrollY}px`;
 }
 
 function watchCards(root){
   markCards(root);
-  const enter = (e) => {
+  const point = (e) => {
     const span = e.target.closest?.('.cardref');
-    if (span) showCard(span); else if (e.type === 'focusin') hideCard();
+    if (span) wantCard(span); else letGo();
   };
-  root.addEventListener('mouseover', enter);
-  root.addEventListener('focusin', enter);
+  root.addEventListener('mouseover', point);
   root.addEventListener('mouseout', (e) => {
-    if (e.target.closest?.('.cardref')) hideCard();
+    if (e.target.closest?.('.cardref')) letGo();
   });
-  root.addEventListener('focusout', hideCard);
-  /* Escape closes it, which is what a tooltip owes a keyboard. */
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideCard(); });
-  window.addEventListener('scroll', hideCard, {passive: true});
+  /* A keyboard reader gets it on focus and keeps it until they move on. No
+     resting: tabbing to a name is already the deliberate act the delay is
+     waiting for. */
+  root.addEventListener('focusin', (e) => {
+    const span = e.target.closest?.('.cardref');
+    if (span) openCard(span); else closeCard();
+  });
+  root.addEventListener('focusout', closeCard);
+  /* Every ordinary way of saying "enough". Escape is what a tooltip owes a
+     keyboard; a click anywhere is what a reader tries first; and a card left
+     hanging over the page while it scrolls is pointing at nothing. */
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeCard(); });
+  document.addEventListener('pointerdown', (e) => {
+    if (!e.target.closest?.('.cardpop')) closeCard();
+  });
+  window.addEventListener('scroll', closeCard, {passive: true});
 }
 
 applyTheme();
