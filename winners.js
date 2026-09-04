@@ -199,10 +199,10 @@ function render(){
             >Roster</button>` : ''}
       </div>
       <div class="win__at">
-        <a class="win__e" href="/?event=${encodeURIComponent(r.slug)}">${esc(r.event)}</a>
+        <a class="win__e" href="/?event=${encodeURIComponent(r.slug)}">${esc(r.event)}${
+          where(r.location)}</a>
         ${r.format ? `<span class="win__f">${esc(r.format)}</span>` : ''}
         <span class="win__w">${esc(when(r.date))}</span>
-        ${r.location ? `<span class="win__l">${esc(r.location)}</span>` : ''}
       </div>
       ${r.members?.length ? `<ul class="win__roster" id="roster-${esc(i)}"${
         showRoster(r) ? '' : ' hidden'}>${(() => {

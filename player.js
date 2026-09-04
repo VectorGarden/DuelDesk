@@ -73,14 +73,13 @@ function render(rows, events){
     return `<li class="win">
       <div class="win__who">
         <a class="win__n win__e" href="/?event=${encodeURIComponent(r.e)}">${
-          esc(e?.event ?? r.e)}</a>
+          esc(e?.event ?? r.e)}${where(e?.location)}</a>
         ${place(r)}
         ${r.deck ? `<span class="win__d">${esc(r.deck)}</span>` : ''}
       </div>
       <div class="win__at">
         ${r.f ? `<span class="win__f">${esc(r.f)}</span>` : ''}
         <span class="win__w">${esc(when(e?.updated))}</span>
-        ${e?.location ? `<span class="win__l">${esc(e.location)}</span>` : ''}
       </div>
     </li>`;
   }).join('') + `</ol>`;

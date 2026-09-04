@@ -674,6 +674,23 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
          font-size:.82rem; color:var(--text-3)}
 .win__e{color:var(--text-2); text-decoration:none; font-weight:500}
 .win__e:hover, .win__e:focus-visible{text-decoration:underline}
+/* Where the event was, which the row does not need to say: the event is
+   already called YCS Guatemala City. Out of sight until the name is pointed
+   at or focused, and never out of the document -- a reader who cannot see the
+   hover is the reader who most needs it said. */
+.win__where{
+  position:absolute; width:1px; height:1px; overflow:hidden;
+  clip-path:inset(50%); white-space:nowrap;
+}
+.win__e{position:relative}
+.win__e:hover .win__where, .win__e:focus-visible .win__where{
+  position:absolute; left:0; top:calc(100% + .35rem); z-index:30;
+  width:auto; height:auto; overflow:visible; clip-path:none;
+  padding:.3rem .5rem; border-radius:var(--r-md);
+  font:400 .76rem var(--body); color:var(--text-2);
+  background:var(--surface); border:1px solid var(--line);
+  box-shadow:0 6px 18px rgb(0 0 0 / .28);
+}
 .win__f{font:500 .72rem var(--mono); color:var(--text-3)}
 .win__w{font-family:var(--mono)}
 
