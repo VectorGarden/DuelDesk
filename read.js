@@ -93,8 +93,10 @@ async function load(){
     noteEl.textContent = [post?.kind ? kindLabel(post.kind) : '', dateOf(post)]
       .filter(Boolean).join(' · ');
     bodyEl.innerHTML = blocksHtml(blocks) + credit(event);
+    /* Shaped before the cards are marked, so a deck's heading is a heading by
+       the time anything asks whether it is a card. */
+    shapeDecks(bodyEl);
     watchCards(bodyEl);
-    offerDecks(bodyEl);
     say(`${headline}, ${blocks.length} paragraphs`);
   } catch (err) {
     noteEl.textContent = '';
@@ -140,7 +142,10 @@ function markCards(root){
   const walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   const jobs = [];
   for (let node = walk.nextNode(); node; node = walk.nextNode()){
-    if (node.parentElement.closest('a, .cardref')) continue;
+    /* Not a link, not already marked, and not a deck's heading: a heading is
+       bold, and read as emphasis its placing -- "– 13" -- was offered as a
+       card and underlined for one. */
+    if (node.parentElement.closest('a, .cardref, .deck__n')) continue;
     const inEmphasis = emphasised.has(node.parentElement.tagName);
     /* Line by line, not node by node: a deck list is one text node holding
        "Monsters: 19" and then forty counted lines, and asked as a whole it
@@ -225,7 +230,9 @@ function cardPanel(card){
    ============================================================ */
 
 const DECK_COUNT = /^(\d+)\s+(\S.*)$/;
-const DECK_SECTION = /^(monsters?|monster cards?|spells?|spell cards?|traps?|trap cards?|extra\s*deck|side\s*deck)\b/i;
+const DECK_SECTION = /^(main\s*decks?|monsters?|monster cards?|spells?|spell cards?|traps?|trap cards?|extra\s*decks?|side\s*decks?)\b/i;
+/* How many the section says it holds, where it says so: "Monster Cards: 31". */
+const SECTION_COUNT = /:\s*(\d+)\s*$/;
 
 /* Which pile a section's cards belong in. The post says so, which is better
    than working it out from the cards: a .ydk records no types, so Deckoder has
@@ -236,6 +243,11 @@ function pileOf(heading){
   if (/^side/.test(h)) return 'Side';
   if (/^spell/.test(h)) return 'Spells';
   if (/^trap/.test(h)) return 'Traps';
+  /* "Main Deck: 41" opens a deck and names no pile of its own. 59 of the 64
+     posts that use it name the piles underneath; 2 list the cards straight
+     after it, and those land in Monsters -- the .ydk and the ydke:// are
+     right either way, because a main deck is a main deck, and only the
+     registration file's grouping suffers. */
   return 'Monsters';
 }
 
@@ -497,13 +509,95 @@ function place(span){
   popup.style.top = `${where.top + window.scrollY}px`;
 }
 
-/* ---------- offering them ---------- */
+/* ---------- laying them out ---------- */
 
-/* One deck's controls, put where its list begins.
+/* A post of deck lists is a post of many. The Top 64 lists run to 63 decks,
+   2,826 cards and 3,331 lines, and the only way to the fortieth was to scroll
+   past thirty-nine.
 
-   Per deck, not per post: a Top 8 post holds eight of them and a reader wants
-   one. Which one is not a thing a single button at the top could be told. */
-function offerDecks(root){
+   So each deck becomes a section of its own: a heading that opens and closes
+   it, one pile shown at a time, and a list at the top to get to any of them.
+   A post holding one deck is left as it was -- none of that is worth its
+   chrome for a single list. */
+
+const PILES = ['Monsters', 'Spells', 'Traps', 'Extra', 'Side'];
+
+/* Which paragraph each deck begins at, and which paragraphs hold each of its
+   piles.
+
+   A pile is not always one paragraph. Konami writes some posts with the
+   heading and its cards together -- "Monsters: 19" and then the nineteen --
+   and others with the heading alone and the cards in the paragraph after it.
+   So a pile owns everything from its heading until the next heading.
+
+   Walks the same lines the parse walked, so the two cannot disagree about
+   where one deck ends and the next starts. */
+function layoutOf(lines){
+  const found = [];
+  let deck = null;
+  let pile = null;
+  let closed = false;
+  let heading = null;
+  let seenP = null;
+  for (const {line, p} of lines){
+    const text = line.trim();
+    if (!text) continue;
+    if (DECK_SECTION.test(text)){
+      const next = pileOf(text);
+      const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
+      if (!deck || (main && closed)){
+        /* The heading counts as the deck's own only when it is the paragraph
+           immediately before it. A post opens with a line of introduction --
+           "Wanna see the Decks that Duelists piloted to the Top 8?" -- and
+           that belongs to the post, not to whoever came first. */
+        const own = heading && heading.nextElementSibling === p ? heading : null;
+        deck = {at: own ?? p, title: own, piles: new Map()};
+        found.push(deck);
+        closed = false;
+      }
+      if (!main) closed = true;
+      pile = next;
+      if (!deck.piles.has(pile)) deck.piles.set(pile, {held: [], said: null});
+      const held = deck.piles.get(pile);
+      /* "Main Deck: 41" is the whole main deck, not the monsters in it. Its
+         number belongs to no pile, and the "Monster Cards: 31" underneath is
+         the one the Monsters tab should carry. */
+      if (!/^main\s*decks?/i.test(text)){
+        held.said = Number(SECTION_COUNT.exec(text)?.[1]) || held.said;
+      }
+      /* The heading's own paragraph, which may or may not hold the cards. */
+      if (!held.held.includes(p)) held.held.push(p);
+      heading = null;
+      seenP = p;
+      continue;
+    }
+    if (DECK_COUNT.test(text)){
+      /* A card, in whatever paragraph it landed in. */
+      if (deck && pile && p !== seenP && !deck.piles.get(pile).held.includes(p)){
+        deck.piles.get(pile).held.push(p);
+      }
+      continue;
+    }
+    /* The last thing said before a deck begins is its heading, and it is
+       where the section should start rather than at "Monsters:". The last,
+       not the first: a post opens with a line of introduction and then names
+       whoever came first, and it is the name the deck belongs to. */
+    heading = p;
+    if (deck && deck.piles.size){ deck = null; pile = null; closed = false; }
+  }
+  return found;
+}
+
+/* How big a deck is: its main deck, counted in copies rather than in lines.
+   Three of a card is three cards, and a list of 41 that says 18 is wrong
+   about the only number anybody checks. */
+function copiesIn(deck){
+  return ['Monsters', 'Spells', 'Traps']
+    .flatMap((pile) => deck[pile])
+    .reduce((n, card) => n + card.quantity, 0);
+}
+
+function shapeDecks(root){
   const paragraphs = [...root.querySelectorAll('p')];
   const lines = [];
   for (const p of paragraphs){
@@ -511,25 +605,68 @@ function offerDecks(root){
   }
   const decks = decksIn(lines.map((l) => l.line));
   if (!decks.length) return;
-
-  /* Where each deck starts on the page: the first section heading after the
-     one before it. Found by walking the same lines the parse walked. */
-  const starts = [];
-  let seen = 0;
-  let closed = false;
-  let open = false;
-  for (const {line, p} of lines){
-    const text = line.trim();
-    if (!DECK_SECTION.test(text)) continue;
-    const pile = pileOf(text);
-    const main = pile === 'Monsters' || pile === 'Spells' || pile === 'Traps';
-    if (!open || (main && closed)){ starts.push(p); seen += 1; closed = false; open = true; }
-    if (!main) closed = true;
-  }
+  const layout = layoutOf(lines);
+  const many = decks.length > 1;
 
   decks.forEach((deck, i) => {
-    const at = starts[i];
-    if (!at) return;
+    const place = layout[i];
+    if (!place) return;
+    const section = document.createElement('section');
+    section.className = 'deck';
+    section.id = `deck-${i}`;
+
+    /* Everything from this deck's heading up to the next one. */
+    const stop = layout[i + 1]?.at ?? null;
+    const held = [];
+    for (let node = place.at; node && node !== stop; node = node.nextElementSibling){
+      held.push(node);
+    }
+    place.at.before(section);
+    const body = document.createElement('div');
+    body.className = 'deck__body';
+    body.id = `deckbody-${i}`;
+    held.forEach((node) => body.append(node));
+
+    const piles = PILES.filter((pile) => place.piles.has(pile));
+    for (const pile of piles) trim(place.piles.get(pile));
+
+    /* The heading, moved rather than copied, so the Duelist's name is still
+       the link the article made it. Beside the button and not inside it: a
+       link within a button is not markup. */
+    const head = document.createElement('h2');
+    head.className = 'deck__h';
+    const name = document.createElement('span');
+    name.className = 'deck__n';
+    if (place.title){
+      while (place.title.firstChild) name.append(place.title.firstChild);
+      place.title.remove();
+    } else {
+      name.textContent = deck.name || `Deck ${i + 1}`;
+    }
+    head.append(name);
+    /* What to call it in the index, taken now: the heading's own nodes have
+       just been moved here, and the paragraph they came from is gone. */
+    place.called = name.textContent.replace(/\s*\n\s*/g, ' — ').trim();
+    const size = document.createElement('span');
+    size.className = 'deck__c';
+    size.textContent = `${copiesIn(deck)} cards`;
+    head.append(size);
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'deck__toggle';
+    toggle.dataset.open = String(i);
+    toggle.setAttribute('aria-expanded', String(!many));
+    toggle.setAttribute('aria-controls', body.id);
+    toggle.innerHTML = `<span class="visually-hidden">Show this deck</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>`;
+    head.append(toggle);
+    section.append(head);
+
+    body.hidden = many;
+
+    /* Where this deck can be taken away. Above the pills rather than under
+       the cards: under them it moved every time a pile was chosen. */
     const bar = document.createElement('p');
     bar.className = 'deckout';
     bar.innerHTML = `<span class="deckout__k">Take this deck</span>
@@ -537,13 +674,146 @@ function offerDecks(root){
       <button type="button" class="btn btn--sm" data-deck="${i}" data-as="ydke">ydke://</button>
       <button type="button" class="btn btn--sm" data-deck="${i}" data-as="json">Registration JSON</button>
       <span class="deckout__note" data-note="${i}"></span>`;
-    at.before(bar);
+    body.prepend(bar);
+
+    if (piles.length > 1){
+      const tabs = document.createElement('div');
+      tabs.className = 'deck__tabs';
+      tabs.setAttribute('role', 'tablist');
+      /* The count goes on the tab. Saying "Monsters: 19" again above the
+         nineteen is the tab's own label a second time. */
+      tabs.innerHTML = piles.map((pile, n) => {
+        const said = place.piles.get(pile).said;
+        return `<button type="button" role="tab" data-pile="${i}:${pile}"
+                 aria-selected="${n === 0}">${esc(pile)}${
+                 said ? ` <span class="deck__q">${said}</span>` : ''}</button>`;
+      }).join('');
+      bar.after(tabs);
+      /* One pile at a time. Five stacked is most of why a list of decks is
+         long. */
+      piles.forEach((pile, n) => {
+        for (const p of place.piles.get(pile).held){
+          p.dataset.holds = pile;
+          p.hidden = n !== 0;
+        }
+      });
+    }
+
+    section.append(body);
   });
 
+  if (many) root.prepend(indexOf(decks, layout));
+
   root.addEventListener('click', (e) => {
+    /* The whole heading opens and closes the deck. Except a link in it: the
+       Duelist's name is the way to their page and always was. */
+    const head = e.target.closest?.('.deck__h');
+    if (head && !e.target.closest('a')){
+      const button = head.querySelector('[data-open]');
+      if (button && !e.target.closest('[data-open]')) { toggleDeck(root, button); return; }
+    }
+    const open = e.target.closest?.('[data-open]');
+    if (open){ toggleDeck(root, open); return; }
+    /* A name in the index opens the deck it points at, as well as going to
+       it: a jump to something still closed lands on a heading and no deck. */
+    const jump = e.target.closest?.('.deckindex__list a');
+    if (jump){
+      const at = root.querySelector(jump.getAttribute('href'));
+      const button = at?.querySelector('[data-open]');
+      if (button && button.getAttribute('aria-expanded') !== 'true') toggleDeck(root, button);
+    }
+    const tab = e.target.closest?.('[data-pile]');
+    if (tab) showPile(root, tab);
     const button = e.target.closest?.('[data-deck]');
     if (button) handOver(decks[+button.dataset.deck], button.dataset.as,
                          root.querySelector(`[data-note="${button.dataset.deck}"]`));
+  });
+
+  root.addEventListener('input', (e) => {
+    if (e.target.id === 'deckfind') narrowDecks(root, e.target.value);
+  });
+}
+
+/* Take the heading off the front of a pile's first paragraph. The tab above it
+   already says which pile this is and how many are in it, and a paragraph that
+   opens by repeating its own label reads as though the page forgot. */
+function trim(pile){
+  /* Every paragraph of the pile that opens with a heading, not only the
+     first: a deck may be introduced twice over, by "Main Deck: 41" and then
+     by "Monster Cards: 31", and both are the tab's own label written again.
+
+     The heading is often bold, so it is the paragraph's text that is asked
+     and not its first text node -- checking the node meant a heading inside a
+     <b> was never seen. */
+  for (const p of [...pile.held]){
+    const [first, ...rest] = p.textContent.split('\n');
+    if (!DECK_SECTION.test(first.trim())) continue;
+    if (!rest.join('').trim() && pile.held.length > 1){
+      /* The whole paragraph was the heading. */
+      p.remove();
+      pile.held.splice(pile.held.indexOf(p), 1);
+      continue;
+    }
+    /* Otherwise take the line off the front of wherever it starts. */
+    const walk = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+    const node = walk.nextNode();
+    if (node) node.data = node.data.replace(/^[^\n]*\n?/, '');
+  }
+}
+
+function toggleDeck(root, button){
+  const body = root.querySelector(`#deckbody-${button.dataset.open}`);
+  const shown = button.getAttribute('aria-expanded') === 'true';
+  button.setAttribute('aria-expanded', String(!shown));
+  body.hidden = shown;
+}
+
+function showPile(root, tab){
+  const [i, pile] = tab.dataset.pile.split(':');
+  const section = root.querySelector(`#deck-${i}`);
+  for (const other of section.querySelectorAll('[data-pile]')){
+    other.setAttribute('aria-selected', String(other === tab));
+  }
+  /* The paragraphs were marked with their pile when the section was built. */
+  section.querySelectorAll('[data-holds]').forEach((p) => {
+    p.hidden = p.dataset.holds !== pile;
+  });
+}
+
+/* The decks in a post, as a list to get to any of them, with a box to narrow
+   it. Sixty-three names is a list; sixty-three names is not a scroll. */
+function indexOf(decks, layout){
+  const nav = document.createElement('nav');
+  nav.className = 'deckindex';
+  nav.setAttribute('aria-label', 'The decks in this post');
+  nav.innerHTML = `
+    <label class="deckindex__find">
+      <span class="visually-hidden">Find a Duelist</span>
+      <input id="deckfind" type="search" placeholder="Find a Duelist or a deck"
+             autocomplete="off">
+    </label>
+    <ol class="deckindex__list">${decks.map((deck, i) => `
+      <li><a href="#deck-${i}">${esc(nameOf(deck, layout[i], i))}</a></li>`).join('')}
+    </ol>`;
+  return nav;
+}
+
+/* What to call a deck in the index: what its heading actually says on the
+   page, which is where the Duelist's name is. */
+function nameOf(deck, place, i){
+  return place?.called || (deck.name || `Deck ${i + 1}`).replace(/\s*\n\s*/g, ' — ');
+}
+
+/* Narrowing hides the decks as well as the index entries, so the page below
+   the box is the answer to what was typed. */
+function narrowDecks(root, query){
+  const want = query.trim().toLowerCase();
+  root.querySelectorAll('.deckindex__list li').forEach((row, i) => {
+    const name = row.textContent.toLowerCase();
+    const hit = !want || name.includes(want);
+    row.hidden = !hit;
+    const section = root.querySelector(`#deck-${i}`);
+    if (section) section.hidden = !hit;
   });
 }
 
