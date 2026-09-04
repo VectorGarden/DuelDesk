@@ -279,6 +279,68 @@ def names_in(event: dict) -> set[str]:
     return out
 
 
+# A name cut down to a forename and an initial: "Dominic C.".
+_CUT_DOWN = re.compile(r"^(\S+)(?:\s+\S+)*\s+([A-Za-z])\.?$")
+
+
+def _sides(event: dict) -> tuple[set[str], set[str]]:
+    """Who the pairings name, and who the standings name."""
+    paired: set[str] = set()
+    listed: set[str] = set()
+    for fmt in event.get("formats") or []:
+        for rnd in fmt.get("rounds") or []:
+            for row in rnd.get("pairings") or []:
+                paired.update(row[k] for k in ("a", "b") if row.get(k))
+                for duel in row.get("duels") or []:
+                    paired.update(duel[k] for k in ("a", "b") if duel.get(k))
+            for row in rnd.get("standings") or []:
+                listed.update(row.get("members")
+                              or ([row["name"]] if row.get("name") else []))
+    return paired, listed
+
+
+def cut_down(event: dict) -> dict[str, str]:
+    """Names the standings cut to an initial, and who the pairings say they are.
+
+    A team event's standings carry the roster rather than the entry form:
+    Team YCS Las Vegas 2024 lists 1,319 Duelists as "Forbes K." and "Bastian
+    N." while its pairings name all 2,395 of them in full. The two are the
+    same people written twice, so without this a Duelist has a page for their
+    duels and a second page, holding one event, for the table they were listed
+    in -- and a title can land on the second. Dominic Eduardo Couch's page had
+    fifty-five events and two titles, and a "Dominic C." held his third.
+
+    Only where the pairings answer it. The initial has to be the initial of a
+    surname, the forename has to match, and exactly one Duelist in the event
+    can fit: "Robert J." is Robert Thor Juhlin at one event and Robert
+    Sylvestre Loa Jr. at another, which is why this is asked of an event and
+    not of the archive.
+
+    And only for a name the pairings never use themselves. A Duelist actually
+    entered as "Forbes K." plays under that name, and a name that plays is a
+    name, not a shortening of somebody else's.
+    """
+    paired, listed = _sides(event)
+
+    def ends(name: str) -> tuple[str, str]:
+        words = name.split()
+        return words[0].lower(), (words[-1][:1] if len(words) > 1 else "").upper()
+
+    full: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for name in paired:
+        if len(name.split()) > 1 and not _CUT_DOWN.match(name):
+            full[ends(name)].add(name)
+
+    out: dict[str, str] = {}
+    for name in listed - paired:
+        if not _CUT_DOWN.match(name) or len(name.split()) > 3:
+            continue
+        fits = full.get(ends(name), set())
+        if len(fits) == 1:
+            out[name] = next(iter(fits))
+    return out
+
+
 def one_person(seated: dict[str, set[str]]) -> dict[str, str]:
     """Names the archive writes two ways for one Duelist, and the fuller one.
 
@@ -391,19 +453,24 @@ def build_players(root: str | Path) -> dict[str, dict]:
     only, no competing variant, and never two spellings seated in one event.
     """
     events = {}
+    # What each event's standings cut to an initial, per event: the same
+    # shortening is two different Duelists at two different events.
+    shortened: dict[str, dict[str, str]] = {}
     seated: dict[str, set] = defaultdict(set)
     for slug in sorted(scraped(root)):
         try:
             events[slug] = json.loads(rounds_path(root, slug).read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
+        shortened[slug] = cut_down(events[slug])
         for name in names_in(events[slug]):
-            seated[name].add(slug)
+            seated[shortened[slug].get(name, name)].add(slug)
     same = one_person(seated)
 
     rows: dict[str, dict[tuple[str, str], dict]] = defaultdict(dict)
 
     def record(who: str, slug: str, fmt: str, *, cut=None, deck=None, won=False):
+        who = shortened.get(slug, {}).get(who, who)
         at = rows[same.get(who, who)].setdefault((slug, fmt), {})
         if cut:
             at["cut"] = cut
@@ -465,6 +532,20 @@ def build_players(root: str | Path) -> dict[str, dict]:
     for old, new in same.items():
         if new in rows and old not in shards[shard_of(old)]:
             shards[shard_of(old)][old] = {"as": new}
+
+    # And the same for a name the standings cut to an initial, where it means
+    # one Duelist. Eighty of them do not: "Robert J." is one Robert at one
+    # event and another at the next, and a page cannot point two ways.
+    pointing: dict[str, set[str]] = defaultdict(set)
+    for held in shortened.values():
+        for short, whole in held.items():
+            pointing[short].add(whole)
+    for short, whole in pointing.items():
+        if len(whole) != 1:
+            continue
+        one = next(iter(whole))
+        if one in rows and short not in shards[shard_of(short)]:
+            shards[shard_of(short)][short] = {"as": one}
     return dict(shards)
 
 

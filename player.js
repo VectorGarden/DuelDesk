@@ -47,6 +47,16 @@ const when = (iso) => {
 
 /* How far they got, as a badge. The same words the round tables use, so a
    reader moving between them is not learning a second vocabulary. */
+/* What to say on a page reached by a spelling that was folded away.
+
+   A name the standings cut to an initial ends in a full stop of its own --
+   "Forbes K." -- and the sentence does not want a second. 1,401 of the
+   pointers in the index are that shape. */
+function alsoSpelt(who){
+  return 'Every event the archive has them in. The coverage also spells them '
+    + who + (who.endsWith('.') ? '' : '.');
+}
+
 function place(row){
   if (row.won) return '<span class="place place--champion">champion</span>';
   /* Reaching the final is not reaching the Top 32, and both wore the same
@@ -122,7 +132,7 @@ async function load(){
         rows = (await next.json())[to];
         nameEl.textContent = to;
         document.title = `${to} — Duel Desk`;
-        noteEl.textContent = `Every event the archive has them in. The coverage also spells them ${who}.`;
+        noteEl.textContent = alsoSpelt(who);
     }
     if (!rows || !rows.length){
       noteEl.textContent = 'The archive has nobody by that name.';

@@ -7683,6 +7683,65 @@ class TestAnIndexOfEveryDuelist(unittest.TestCase):
         self.assertTrue(before - after)
 
 
+class TestANameCutToAnInitial(unittest.TestCase):
+    """A Duelist the standings write short and the pairings write in full."""
+
+    def test_a_name_the_standings_cut_to_an_initial_is_the_Duelist(self):
+        # A team event's standings carry the roster rather than the entry
+        # form: Team YCS Las Vegas 2024 lists 1,319 Duelists as "Forbes K."
+        # while its pairings name all 2,395 of them in full. Without this each
+        # of them has a page for their duels and a second page for the table
+        # they were listed in.
+        from archive import cut_down
+        held = cut_down({"formats": [{"rounds": [
+            {"pairings": [{"a": "Forbes Elliot Ku", "b": "Bastian Tristan Narro"}]},
+            {"standings": [{"name": "Team Somebody",
+                            "members": ["Forbes K.", "Bastian N."]}]},
+        ]}]})
+        self.assertEqual(held, {"Forbes K.": "Forbes Elliot Ku",
+                                "Bastian N.": "Bastian Tristan Narro"})
+
+    def test_an_initial_two_Duelists_answer_to_is_left_alone(self):
+        # "Robert J." is Robert Thor Juhlin at one event and Robert Sylvestre
+        # Loa Jr. at another, and both of them at neither.
+        from archive import cut_down
+        held = cut_down({"formats": [{"rounds": [
+            {"pairings": [{"a": "Robert Thor Juhlin", "b": "Robert Sylvestre Jones"}]},
+            {"standings": [{"name": "Team", "members": ["Robert J."]}]},
+        ]}]})
+        self.assertEqual(held, {})
+
+    def test_a_name_that_played_is_not_a_shortening_of_another(self):
+        # A Duelist entered as "Forbes K." plays under that name. A name that
+        # plays is a name, not somebody else written short.
+        from archive import cut_down
+        held = cut_down({"formats": [{"rounds": [
+            {"pairings": [{"a": "Forbes Elliot Ku", "b": "Forbes K."}]},
+            {"standings": [{"name": "Team", "members": ["Forbes K."]}]},
+        ]}]})
+        self.assertEqual(held, {})
+
+    def test_the_shortened_name_still_finds_the_Duelist(self):
+        # Somebody who read the standings and typed what they saw should not
+        # be told nobody by that name exists.
+        import json, tempfile, pathlib
+        from archive import build_players
+        event = {"formats": [{"format": "", "rounds": [
+            {"phase": "Swiss", "pairings": [{"a": "Forbes Elliot Ku", "b": "Someone Else Entirely"}]},
+            {"phase": "Swiss", "standings": [{"name": "Team", "members": ["Forbes K."],
+                                              "deck": "Snake-Eye"}]},
+        ]}]}
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp, "events", "an-event")
+            root.mkdir(parents=True)
+            (root / "rounds.json").write_text(json.dumps(event), encoding="utf-8")
+            shards = build_players(pathlib.Path(tmp, "events"))
+        held = {k: v for s in shards.values() for k, v in s.items()}
+        self.assertEqual(held["Forbes K."], {"as": "Forbes Elliot Ku"})
+        # And the deck the standings gave is on the Duelist's own record.
+        self.assertEqual(held["Forbes Elliot Ku"][0].get("deck"), "Snake-Eye")
+
+
 class TestOneDuelistOneName(unittest.TestCase):
     """A Duelist the blog writes two ways across the archive."""
 
