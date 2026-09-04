@@ -350,7 +350,7 @@ def main():
         for i, (when, _, headline, kind) in enumerate(
             sorted(posts, key=lambda p: p[0], reverse=True))])
     (out / archive.MANIFEST).write_text(
-        archive.dumps(archive.build_manifest(out / archive.ARCHIVE), pretty=True),
+        archive.dumps(archive.build_manifest(out / archive.ARCHIVE), depth=2),
         encoding="utf-8")
     print(f"rounds.json: {len(formats_out)} formats, "
           + ", ".join(f"{f['format']} {len(f['rounds'])} rounds" for f in formats_out))

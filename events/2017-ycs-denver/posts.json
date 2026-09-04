@@ -1,437 +1,48 @@
 [
-  {
-    "title": "YCS Denver: Pairings for Round 9",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-9/",
-    "modified": "2017-04-09T07:44:16-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Pairings for Round 10",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-10/",
-    "modified": "2017-04-09T09:57:03-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Pairings for the Top 32",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-the-top-32/",
-    "modified": "2017-04-09T11:08:15-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top 16 Pairings!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-16-pairings/",
-    "modified": "2017-04-09T12:21:38-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top 8 Pairings!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-8-pairings/",
-    "modified": "2017-04-09T13:32:48-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top 4 Pairings!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-4-pairings/",
-    "modified": "2017-04-09T15:04:36-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Round 1 Pairings!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-1-pairings/",
-    "modified": "2017-04-08T09:09:07-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Round 2 Pairings!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-2-pairings/",
-    "modified": "2017-04-08T10:54:45-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "Pairings for Round 3 at YCS",
-    "url": "https://yugiohblog.konami.com/2017/ycs/pairings-for-round-3-at-ycs-denver/",
-    "modified": "2017-04-08T14:39:27-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Round 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-4-pairings/",
-    "modified": "2017-04-08T14:41:31-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Pairings for Round 5",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-5/",
-    "modified": "2017-04-08T14:40:01-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Round 6 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-6-pairings/",
-    "modified": "2017-04-08T15:47:18-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Pairings for Round 7",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-7/",
-    "modified": "2017-04-08T17:54:38-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Pairings for Round 8",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-8/",
-    "modified": "2017-04-08T18:19:49-07:00",
-    "kind": "pairings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-8/",
-    "modified": "2017-04-09T07:39:35-07:00",
-    "kind": "standings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Standings after Round 9",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-9/",
-    "modified": "2017-04-09T09:53:11-07:00",
-    "kind": "standings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Standings after Round 10",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-10/",
-    "modified": "2017-04-09T10:46:42-07:00",
-    "kind": "standings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-3/",
-    "modified": "2017-04-08T14:43:53-07:00",
-    "kind": "standings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-4/",
-    "modified": "2017-04-08T14:40:33-07:00",
-    "kind": "standings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-5/",
-    "modified": "2017-04-08T15:43:14-07:00",
-    "kind": "standings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-6/",
-    "modified": "2017-04-08T17:49:38-07:00",
-    "kind": "standings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-7/",
-    "modified": "2017-04-08T18:15:08-07:00",
-    "kind": "standings",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "Round 10 Feature Match: David Lopez vs. Anderson Tsang",
-    "url": "https://yugiohblog.konami.com/2017/ycs/round-10-feature-match-david-lopez-vs-anderson-tsang/",
-    "modified": "2017-04-09T10:43:47-07:00",
-    "kind": "feature",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "Top 32 Players and Deck Breakdown!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/top-32-players-and-deck-breakdown/",
-    "modified": "2017-04-09T11:36:56-07:00",
-    "kind": "deck",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Dragon Duel Championship Winner!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-dragon-duel-championship-winner/",
-    "modified": "2017-04-09T17:20:55-07:00",
-    "kind": "result",
-    "event": "YCS Denver",
-    "format": "Dragon Duel",
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top Tables Update: Round 8",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-8/",
-    "modified": "2017-04-09T07:47:41-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "Top 4 Feature Match: Anderson Tsang vs. Ayinde Ross",
-    "url": "https://yugiohblog.konami.com/2017/ycs/top-4-feature-match-anderson-tsang-vs-ayinde-ross/",
-    "modified": "2017-04-09T18:00:22-07:00",
-    "kind": "feature",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Points Playoff Winner!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-points-playoff-winner/",
-    "modified": "2017-04-09T17:37:50-07:00",
-    "kind": "result",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top Tables Update: Round 9",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-9/",
-    "modified": "2017-04-09T08:59:20-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Random Playoff Winner!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-random-playoff-winner/",
-    "modified": "2017-04-09T18:04:20-07:00",
-    "kind": "result",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top Tables Update: Round 10",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-10/",
-    "modified": "2017-04-09T10:24:59-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: And the Winner is…",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-and-the-winner-is/",
-    "modified": "2017-04-09T18:13:10-07:00",
-    "kind": "result",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top 16 Photo Gallery!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-16-photo-gallery/",
-    "modified": "2017-04-09T14:29:25-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "Get Ready for the Finals of YCS Denver!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/get-ready-for-the-finals-of-ycs-denver/",
-    "modified": "2017-04-09T16:04:25-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Dragon Duel Championship!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-dragon-duel-championship/",
-    "modified": "2017-04-09T17:13:19-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "Here’s the Top 4 of YCS Denver!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/heres-the-top-4-of-ycs-denver/",
-    "modified": "2017-04-09T18:08:31-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "Welcome to YCS Denver!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/welcome-to-ycs-denver/",
-    "modified": "2017-04-08T11:08:58-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "What To Expect at YCS Denver",
-    "url": "https://yugiohblog.konami.com/2017/ycs/what-to-expect-at-ycs-denver/",
-    "modified": "2017-04-08T10:35:10-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Round 1 Photo Gallery",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-1-photo-gallery/",
-    "modified": "2017-04-08T10:46:24-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Prizes Part 1",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-prizes-part-1/",
-    "modified": "2017-04-08T14:44:57-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Prizes Part 2: Public Events Edition",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-prizes-part-2-public-events-edition/",
-    "modified": "2017-04-08T14:41:05-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": "Public Events",
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top Tables Update: Round 5",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-5/",
-    "modified": "2017-04-08T15:00:40-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver: Dragon Duel Top 4 Photo!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-dragon-duel-top-4-photo/",
-    "modified": "2017-04-08T16:20:56-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "Saturday’s Generation Duel Top 4!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/saturdays-generation-duel-top-4/",
-    "modified": "2017-04-08T18:10:18-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Tech Update!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-tech-update/",
-    "modified": "2017-04-08T18:35:33-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  },
-  {
-    "title": "YCS Denver Top Tables Update: Round 7",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-7/",
-    "modified": "2017-04-08T18:41:58-07:00",
-    "kind": "news",
-    "event": "YCS Denver",
-    "article": true,
-    "format": null,
-    "slug": "2017-ycs-denver"
-  }
+  {"title":"YCS Denver: Pairings for Round 9","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-9/","modified":"2017-04-09T07:44:16-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Pairings for Round 10","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-10/","modified":"2017-04-09T09:57:03-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Pairings for the Top 32","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-the-top-32/","modified":"2017-04-09T11:08:15-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top 16 Pairings!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-16-pairings/","modified":"2017-04-09T12:21:38-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top 8 Pairings!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-8-pairings/","modified":"2017-04-09T13:32:48-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top 4 Pairings!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-4-pairings/","modified":"2017-04-09T15:04:36-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Round 1 Pairings!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-1-pairings/","modified":"2017-04-08T09:09:07-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Round 2 Pairings!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-2-pairings/","modified":"2017-04-08T10:54:45-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"Pairings for Round 3 at YCS","url":"https://yugiohblog.konami.com/2017/ycs/pairings-for-round-3-at-ycs-denver/","modified":"2017-04-08T14:39:27-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Round 4 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-4-pairings/","modified":"2017-04-08T14:41:31-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Pairings for Round 5","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-5/","modified":"2017-04-08T14:40:01-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Round 6 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-6-pairings/","modified":"2017-04-08T15:47:18-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Pairings for Round 7","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-7/","modified":"2017-04-08T17:54:38-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Pairings for Round 8","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-pairings-for-round-8/","modified":"2017-04-08T18:19:49-07:00","kind":"pairings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Standings after Round 8","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-8/","modified":"2017-04-09T07:39:35-07:00","kind":"standings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Standings after Round 9","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-9/","modified":"2017-04-09T09:53:11-07:00","kind":"standings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Standings after Round 10","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-10/","modified":"2017-04-09T10:46:42-07:00","kind":"standings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Standings after Round 3","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-3/","modified":"2017-04-08T14:43:53-07:00","kind":"standings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Standings after Round 4","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-4/","modified":"2017-04-08T14:40:33-07:00","kind":"standings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Standings after Round 5","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-5/","modified":"2017-04-08T15:43:14-07:00","kind":"standings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Standings after Round 6","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-6/","modified":"2017-04-08T17:49:38-07:00","kind":"standings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Standings after Round 7","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-standings-after-round-7/","modified":"2017-04-08T18:15:08-07:00","kind":"standings","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"Round 10 Feature Match: David Lopez vs. Anderson Tsang","url":"https://yugiohblog.konami.com/2017/ycs/round-10-feature-match-david-lopez-vs-anderson-tsang/","modified":"2017-04-09T10:43:47-07:00","kind":"feature","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"Top 32 Players and Deck Breakdown!","url":"https://yugiohblog.konami.com/2017/ycs/top-32-players-and-deck-breakdown/","modified":"2017-04-09T11:36:56-07:00","kind":"deck","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Dragon Duel Championship Winner!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-dragon-duel-championship-winner/","modified":"2017-04-09T17:20:55-07:00","kind":"result","event":"YCS Denver","format":"Dragon Duel","slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top Tables Update: Round 8","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-8/","modified":"2017-04-09T07:47:41-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"Top 4 Feature Match: Anderson Tsang vs. Ayinde Ross","url":"https://yugiohblog.konami.com/2017/ycs/top-4-feature-match-anderson-tsang-vs-ayinde-ross/","modified":"2017-04-09T18:00:22-07:00","kind":"feature","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Points Playoff Winner!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-points-playoff-winner/","modified":"2017-04-09T17:37:50-07:00","kind":"result","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top Tables Update: Round 9","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-9/","modified":"2017-04-09T08:59:20-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Random Playoff Winner!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-random-playoff-winner/","modified":"2017-04-09T18:04:20-07:00","kind":"result","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top Tables Update: Round 10","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-10/","modified":"2017-04-09T10:24:59-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: And the Winner is…","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-and-the-winner-is/","modified":"2017-04-09T18:13:10-07:00","kind":"result","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top 16 Photo Gallery!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-16-photo-gallery/","modified":"2017-04-09T14:29:25-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"Get Ready for the Finals of YCS Denver!","url":"https://yugiohblog.konami.com/2017/ycs/get-ready-for-the-finals-of-ycs-denver/","modified":"2017-04-09T16:04:25-07:00","kind":"news","event":"YCS Denver","format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Dragon Duel Championship!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-dragon-duel-championship/","modified":"2017-04-09T17:13:19-07:00","kind":"news","event":"YCS Denver","article":true,"format":"Dragon Duel","slug":"2017-ycs-denver"},
+  {"title":"Here’s the Top 4 of YCS Denver!","url":"https://yugiohblog.konami.com/2017/ycs/heres-the-top-4-of-ycs-denver/","modified":"2017-04-09T18:08:31-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"Welcome to YCS Denver!","url":"https://yugiohblog.konami.com/2017/ycs/welcome-to-ycs-denver/","modified":"2017-04-08T11:08:58-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"What To Expect at YCS Denver","url":"https://yugiohblog.konami.com/2017/ycs/what-to-expect-at-ycs-denver/","modified":"2017-04-08T10:35:10-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Round 1 Photo Gallery","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-round-1-photo-gallery/","modified":"2017-04-08T10:46:24-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Prizes Part 1","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-prizes-part-1/","modified":"2017-04-08T14:44:57-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Prizes Part 2: Public Events Edition","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-prizes-part-2-public-events-edition/","modified":"2017-04-08T14:41:05-07:00","kind":"news","event":"YCS Denver","article":true,"format":"Public Events","slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top Tables Update: Round 5","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-5/","modified":"2017-04-08T15:00:40-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver: Dragon Duel Top 4 Photo!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-dragon-duel-top-4-photo/","modified":"2017-04-08T16:20:56-07:00","kind":"news","event":"YCS Denver","article":true,"format":"Dragon Duel","slug":"2017-ycs-denver"},
+  {"title":"Saturday’s Generation Duel Top 4!","url":"https://yugiohblog.konami.com/2017/ycs/saturdays-generation-duel-top-4/","modified":"2017-04-08T18:10:18-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Tech Update!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-tech-update/","modified":"2017-04-08T18:35:33-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"},
+  {"title":"YCS Denver Top Tables Update: Round 7","url":"https://yugiohblog.konami.com/2017/ycs/ycs-denver-top-tables-update-round-7/","modified":"2017-04-08T18:41:58-07:00","kind":"news","event":"YCS Denver","article":true,"format":null,"slug":"2017-ycs-denver"}
 ]

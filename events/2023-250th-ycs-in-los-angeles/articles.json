@@ -1,1 +1,26 @@
-{"https://yugiohblog.konami.com/2023/ycs/and-the-winner-is-41/":[{"t":"p","r":["After 18 Rounds of competition here at the 250th YCS in Los Angeles, we have finally crowned our winner!"]},{"t":"p","r":["One year ago, Paulie Aronson won the North American Remote Duel YCS, taking his place among the Yu-Gi-Oh! TCG’s storied list of Champions. But today he’s achieved an even greater victory, outlasting more than 3200 other competitors to capture another YCS Win. Congratulations to everyone who competed in this landmark event this weekend, and special accolades are reserved for Paulie Aronson, now a two-time YCS winner!"]}],"https://yugiohblog.konami.com/2023/ycs/250th-ycs-los-angeles-top-3/":[{"t":"p","r":["Here are the Top 3 Duelists of the 250th YCS in Los Angeles!"]},{"t":"p","r":["250th YCS Los Angeles Top 3"]},{"t":"p","r":["Here we have our Top 3, with their ",{"b":"Anotherverse Dragon"}," Prize Cards! We have ",{"who":"Jesse Jose Flores","t":"Jesse Flores"}," (2nd Place, left), ",{"who":"Shunping Xu","t":"Shunping Xu"}," (3rd Place, right), and Paulie Aronson (1st Place, center). Congratulations once again to these talented Duelists!"]}]}
+{
+  "https://yugiohblog.konami.com/2023/ycs/and-the-winner-is-41/": [
+    {
+      "t": "p",
+      "r": ["After 18 Rounds of competition here at the 250th YCS in Los Angeles, we have finally crowned our winner!"]
+    },
+    {
+      "t": "p",
+      "r": ["One year ago, Paulie Aronson won the North American Remote Duel YCS, taking his place among the Yu-Gi-Oh! TCG’s storied list of Champions. But today he’s achieved an even greater victory, outlasting more than 3200 other competitors to capture another YCS Win. Congratulations to everyone who competed in this landmark event this weekend, and special accolades are reserved for Paulie Aronson, now a two-time YCS winner!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2023/ycs/250th-ycs-los-angeles-top-3/": [
+    {
+      "t": "p",
+      "r": ["Here are the Top 3 Duelists of the 250th YCS in Los Angeles!"]
+    },
+    {
+      "t": "p",
+      "r": ["250th YCS Los Angeles Top 3"]
+    },
+    {
+      "t": "p",
+      "r": ["Here we have our Top 3, with their ",{"b":"Anotherverse Dragon"}," Prize Cards! We have ",{"who":"Jesse Jose Flores","t":"Jesse Flores"}," (2nd Place, left), ",{"who":"Shunping Xu","t":"Shunping Xu"}," (3rd Place, right), and Paulie Aronson (1st Place, center). Congratulations once again to these talented Duelists!"]
+    }
+  ]
+}

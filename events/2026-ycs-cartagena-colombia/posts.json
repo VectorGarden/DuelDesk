@@ -1,256 +1,30 @@
 [
-  {
-    "title": "YCS Cartagena, Colombia: Round 9 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-9-pairings/",
-    "modified": "2026-05-03T08:08:53-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 10 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-10-pairings/",
-    "modified": "2026-05-03T09:14:49-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 11 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-11-pairings/",
-    "modified": "2026-05-03T10:12:09-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 12 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-12-pairings/",
-    "modified": "2026-05-03T11:35:17-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 1 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-1-pairings/",
-    "modified": "2026-05-02T12:17:55-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 2 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-2-pairings/",
-    "modified": "2026-05-02T12:19:55-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 3 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-3-pairings/",
-    "modified": "2026-05-02T12:21:16-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-4-pairings/",
-    "modified": "2026-05-02T12:27:49-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 5 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-5-pairings/",
-    "modified": "2026-05-02T12:50:30-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 6 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-6-pairings/",
-    "modified": "2026-05-02T14:40:34-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 7 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-7-pairings/",
-    "modified": "2026-05-02T14:47:26-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Round 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-8-pairings/",
-    "modified": "2026-05-02T15:50:53-07:00",
-    "kind": "pairings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 9",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-9/",
-    "modified": "2026-05-03T09:07:51-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-8/",
-    "modified": "2026-05-03T08:08:33-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 10",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-10/",
-    "modified": "2026-05-03T10:11:13-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 11",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-11/",
-    "modified": "2026-05-03T11:34:19-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-3/",
-    "modified": "2026-05-02T12:22:58-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-4/",
-    "modified": "2026-05-02T12:48:38-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-5/",
-    "modified": "2026-05-02T14:39:24-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-6/",
-    "modified": "2026-05-02T14:46:00-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-7/",
-    "modified": "2026-05-02T15:49:47-07:00",
-    "kind": "standings",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia Winner",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-winner/",
-    "modified": "2026-05-05T09:56:22-07:00",
-    "kind": "result",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Top 8",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-top-8/",
-    "modified": "2026-05-03T12:12:18-07:00",
-    "kind": "news",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Top 4",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-top-4/",
-    "modified": "2026-05-03T15:08:16-07:00",
-    "kind": "news",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia: Final Match",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-final-match/",
-    "modified": "2026-05-03T15:53:38-07:00",
-    "kind": "news",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "Welcome to YCS Cartagena, Colombia",
-    "url": "https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-cartagena-colombia/",
-    "modified": "2026-05-02T12:09:10-07:00",
-    "kind": "news",
-    "event": "YCS Cartagena",
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia 2026",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-2026-main-event-information/",
-    "modified": "2026-04-23T14:16:39-07:00",
-    "kind": "news",
-    "event": "YCS Cartagena",
-    "article": true,
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  },
-  {
-    "title": "YCS Cartagena, Colombia 2026",
-    "url": "https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-2026-public-events-information/",
-    "modified": "2026-04-15T14:55:54-07:00",
-    "kind": "news",
-    "event": "YCS Cartagena",
-    "article": true,
-    "format": null,
-    "slug": "2026-ycs-cartagena-colombia"
-  }
+  {"title":"YCS Cartagena, Colombia: Round 9 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-9-pairings/","modified":"2026-05-03T08:08:53-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 10 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-10-pairings/","modified":"2026-05-03T09:14:49-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 11 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-11-pairings/","modified":"2026-05-03T10:12:09-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 12 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-12-pairings/","modified":"2026-05-03T11:35:17-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 1 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-1-pairings/","modified":"2026-05-02T12:17:55-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 2 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-2-pairings/","modified":"2026-05-02T12:19:55-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 3 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-3-pairings/","modified":"2026-05-02T12:21:16-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 4 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-4-pairings/","modified":"2026-05-02T12:27:49-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 5 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-5-pairings/","modified":"2026-05-02T12:50:30-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 6 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-6-pairings/","modified":"2026-05-02T14:40:34-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 7 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-7-pairings/","modified":"2026-05-02T14:47:26-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Round 8 Pairings","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-round-8-pairings/","modified":"2026-05-02T15:50:53-07:00","kind":"pairings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 9","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-9/","modified":"2026-05-03T09:07:51-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 8","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-8/","modified":"2026-05-03T08:08:33-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 10","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-10/","modified":"2026-05-03T10:11:13-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 11","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-11/","modified":"2026-05-03T11:34:19-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 3","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-3/","modified":"2026-05-02T12:22:58-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 4","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-4/","modified":"2026-05-02T12:48:38-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 5","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-5/","modified":"2026-05-02T14:39:24-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 6","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-6/","modified":"2026-05-02T14:46:00-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Standings after Round 7","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-standings-after-round-7/","modified":"2026-05-02T15:49:47-07:00","kind":"standings","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia Winner","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-winner/","modified":"2026-05-05T09:56:22-07:00","kind":"result","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Top 8","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-top-8/","modified":"2026-05-03T12:12:18-07:00","kind":"news","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Top 4","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-top-4/","modified":"2026-05-03T15:08:16-07:00","kind":"news","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia: Final Match","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-final-match/","modified":"2026-05-03T15:53:38-07:00","kind":"news","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"Welcome to YCS Cartagena, Colombia","url":"https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-cartagena-colombia/","modified":"2026-05-02T12:09:10-07:00","kind":"news","event":"YCS Cartagena","format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia 2026","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-2026-main-event-information/","modified":"2026-04-23T14:16:39-07:00","kind":"news","event":"YCS Cartagena","article":true,"format":null,"slug":"2026-ycs-cartagena-colombia"},
+  {"title":"YCS Cartagena, Colombia 2026","url":"https://yugiohblog.konami.com/2026/ycs/ycs-cartagena-colombia-2026-public-events-information/","modified":"2026-04-15T14:55:54-07:00","kind":"news","event":"YCS Cartagena","article":true,"format":null,"slug":"2026-ycs-cartagena-colombia"}
 ]

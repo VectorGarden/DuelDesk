@@ -1,300 +1,33 @@
 [
-  {
-    "title": "Pairings: Top 32",
-    "url": "https://yugiohblog.konami.com/2016/ycs/pairings-top-32-9/",
-    "modified": "2016-02-07T12:26:07-08:00",
-    "kind": "pairings",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Pairings: Top 8",
-    "url": "https://yugiohblog.konami.com/2016/ycs/pairings-top-8-ycs-atlanta/",
-    "modified": "2016-02-07T12:25:37-08:00",
-    "kind": "pairings",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Standings: Round 11",
-    "url": "https://yugiohblog.konami.com/2016/ycs/standings-round-11-3/",
-    "modified": "2016-02-07T09:44:23-08:00",
-    "kind": "standings",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Final Standings",
-    "url": "https://yugiohblog.konami.com/2016/ycs/final-standings-ycs-atlanta/",
-    "modified": "2016-02-07T15:39:32-08:00",
-    "kind": "standings",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Standings: Round 5",
-    "url": "https://yugiohblog.konami.com/2016/ycs/standings-round-5-ycs-atlanta/",
-    "modified": "2016-02-06T16:58:38-08:00",
-    "kind": "standings",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Standings: Round 7",
-    "url": "https://yugiohblog.konami.com/2016/ycs/standings-round-7-ycs-atlanta/",
-    "modified": "2016-02-06T20:45:04-08:00",
-    "kind": "standings",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Standings: Round 8",
-    "url": "https://yugiohblog.konami.com/2016/ycs/standings-round-8-ycs-atlanta/",
-    "modified": "2016-02-06T21:01:02-08:00",
-    "kind": "standings",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Standings: Round 9",
-    "url": "https://yugiohblog.konami.com/2016/ycs/standings-round-9-6/",
-    "modified": "2016-02-06T21:27:44-08:00",
-    "kind": "standings",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 1 Feature Match: Amy Young versus Brandon Rohmer",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-1-feature-match-amy-young-versus-brandon-rohmer/",
-    "modified": "2016-02-07T06:24:07-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Top 32 Duelists and Decks!",
-    "url": "https://yugiohblog.konami.com/2016/ycs/top-32-duelists-and-decks-4/",
-    "modified": "2016-02-07T09:54:17-08:00",
-    "kind": "deck",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "ATTACK OF THE GIANT CARD!! Winner!",
-    "url": "https://yugiohblog.konami.com/2016/ycs/attack-of-the-giant-card-winner-4/",
-    "modified": "2016-02-07T13:39:45-08:00",
-    "kind": "result",
-    "event": "YCS Atlanta Georgia",
-    "format": "Attack of the Giant Card",
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Welcome to Yu-Gi-Oh! Championship Series Atlanta, Georgia!",
-    "url": "https://yugiohblog.konami.com/2016/ycs/welcome-to-yu-gi-oh-championship-series-atlanta-georgia/",
-    "modified": "2016-02-07T09:45:07-08:00",
-    "kind": "news",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 2 Feature Match: Tony Hoang versus Devin Burkett",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-2-feature-match-tony-hoang-versus-devin-burkett/",
-    "modified": "2016-02-07T06:15:11-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "And the Winner Is…",
-    "url": "https://yugiohblog.konami.com/2016/ycs/and-the-winner-is-21/",
-    "modified": "2016-02-07T15:12:45-08:00",
-    "kind": "result",
-    "event": "YCS Atlanta Georgia",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 4 Feature Match: Craig Burnett versus Jake Kuenzi",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-4-feature-match-craig-burnett-versus-jake-kuenzi/",
-    "modified": "2016-02-07T06:26:46-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "YCS Atlanta Dragon Duel Champion",
-    "url": "https://yugiohblog.konami.com/2016/ycs/ycs-atlanta-dragon-duel-champion/",
-    "modified": "2016-02-07T15:43:09-08:00",
-    "kind": "result",
-    "event": "YCS Atlanta Georgia",
-    "format": "Dragon Duel",
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 5 Feature Match: Moises Bustamante versus Junior Dorcin",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-5-feature-match-moises-bustamante-versus-junior-dorcin/",
-    "modified": "2016-02-07T06:27:41-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "ATTACK OF THE GIANT CARD!! Winner #1",
-    "url": "https://yugiohblog.konami.com/2016/ycs/attack-of-the-giant-card-winner-1-4/",
-    "modified": "2016-02-06T19:01:10-08:00",
-    "kind": "result",
-    "event": "YCS Atlanta Georgia",
-    "format": "Attack of the Giant Card",
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 10 Feature Match: Alexander Simpson versus Christian Zukowski",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-10-feature-match-alexander-simpson-versus-christian-zukowski/",
-    "modified": "2016-02-07T08:36:35-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 11 Feature Match: Ed Acepcion versus Kamal Crooks",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-11-feature-match-ed-acepcion-versus-kamal-crooks/",
-    "modified": "2016-02-07T09:06:18-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Top 32 Feature Match: Billy Brake versus Frazier Smith",
-    "url": "https://yugiohblog.konami.com/2016/ycs/top-32-feature-match-billy-brake-versus-frazier-smith/",
-    "modified": "2016-02-07T11:00:57-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Top 16 Feature Match: Oscar Wener Zelaya Jr. versus Jose Uriel Diaz de Leon",
-    "url": "https://yugiohblog.konami.com/2016/ycs/top-16-feature-match-oscar-wener-zelaya-jr-versus-jose-uriel-diaz-de-leon/",
-    "modified": "2016-02-07T13:24:19-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Dragon Duel Feature Match: Round 3 (Sunday)",
-    "url": "https://yugiohblog.konami.com/2016/ycs/dragon-duel-feature-match-round-3-sunday/",
-    "modified": "2016-02-07T13:28:59-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Top 8 Feature Match: Thomas Rowe versus Santos Garcia",
-    "url": "https://yugiohblog.konami.com/2016/ycs/top-8-feature-match-thomas-rowe-versus-santos-garcia/",
-    "modified": "2016-02-07T13:37:01-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Top 4 Feature Match: Jose Uriel Diaz versus Jose Lagunes",
-    "url": "https://yugiohblog.konami.com/2016/ycs/top-4-feature-match-jose-uriel-diaz-versus-jose-lagunes/",
-    "modified": "2016-02-07T15:26:00-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Finals Feature Match: Thomas Rowe versus Jose Lagunes",
-    "url": "https://yugiohblog.konami.com/2016/ycs/finals-feature-match-thomas-rowe-versus-jose-lagunes/",
-    "modified": "2016-02-07T15:32:14-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Dragon Duel Feature Match: Round 4",
-    "url": "https://yugiohblog.konami.com/2016/ycs/dragon-duel-feature-match-round-4/",
-    "modified": "2016-02-06T16:17:04-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 6 Feature Match: Jonathan Moore versus Malvin Dionsio",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-6-feature-match-jonathan-moore-versus-malvin-dionsio/",
-    "modified": "2016-02-06T17:39:33-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 7 Feature Match: Patrick James versus Michael McLaughlin",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-7-feature-match-patrick-james-versus-michael-mclaughlin/",
-    "modified": "2016-02-06T18:46:04-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 8 Feature Match: Jose Uriel Diaz de Leon versus Yifei Yang",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-8-feature-match-jose-uriel-diaz-de-leon-versus-yifei-yang/",
-    "modified": "2016-02-06T20:53:06-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  },
-  {
-    "title": "Round 8 Feature Match: Robert Ramsey versus Richard Pizza",
-    "url": "https://yugiohblog.konami.com/2016/ycs/round-8-feature-match-robert-ramsey-versus-richard-pizza/",
-    "modified": "2016-02-06T20:56:59-08:00",
-    "kind": "feature",
-    "event": "YCS Atlanta Georgia",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-atlanta-georgia"
-  }
+  {"title":"Pairings: Top 32","url":"https://yugiohblog.konami.com/2016/ycs/pairings-top-32-9/","modified":"2016-02-07T12:26:07-08:00","kind":"pairings","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Pairings: Top 8","url":"https://yugiohblog.konami.com/2016/ycs/pairings-top-8-ycs-atlanta/","modified":"2016-02-07T12:25:37-08:00","kind":"pairings","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Standings: Round 11","url":"https://yugiohblog.konami.com/2016/ycs/standings-round-11-3/","modified":"2016-02-07T09:44:23-08:00","kind":"standings","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Final Standings","url":"https://yugiohblog.konami.com/2016/ycs/final-standings-ycs-atlanta/","modified":"2016-02-07T15:39:32-08:00","kind":"standings","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Standings: Round 5","url":"https://yugiohblog.konami.com/2016/ycs/standings-round-5-ycs-atlanta/","modified":"2016-02-06T16:58:38-08:00","kind":"standings","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Standings: Round 7","url":"https://yugiohblog.konami.com/2016/ycs/standings-round-7-ycs-atlanta/","modified":"2016-02-06T20:45:04-08:00","kind":"standings","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Standings: Round 8","url":"https://yugiohblog.konami.com/2016/ycs/standings-round-8-ycs-atlanta/","modified":"2016-02-06T21:01:02-08:00","kind":"standings","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Standings: Round 9","url":"https://yugiohblog.konami.com/2016/ycs/standings-round-9-6/","modified":"2016-02-06T21:27:44-08:00","kind":"standings","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 1 Feature Match: Amy Young versus Brandon Rohmer","url":"https://yugiohblog.konami.com/2016/ycs/round-1-feature-match-amy-young-versus-brandon-rohmer/","modified":"2016-02-07T06:24:07-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Top 32 Duelists and Decks!","url":"https://yugiohblog.konami.com/2016/ycs/top-32-duelists-and-decks-4/","modified":"2016-02-07T09:54:17-08:00","kind":"deck","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"ATTACK OF THE GIANT CARD!! Winner!","url":"https://yugiohblog.konami.com/2016/ycs/attack-of-the-giant-card-winner-4/","modified":"2016-02-07T13:39:45-08:00","kind":"result","event":"YCS Atlanta Georgia","format":"Attack of the Giant Card","slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Welcome to Yu-Gi-Oh! Championship Series Atlanta, Georgia!","url":"https://yugiohblog.konami.com/2016/ycs/welcome-to-yu-gi-oh-championship-series-atlanta-georgia/","modified":"2016-02-07T09:45:07-08:00","kind":"news","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 2 Feature Match: Tony Hoang versus Devin Burkett","url":"https://yugiohblog.konami.com/2016/ycs/round-2-feature-match-tony-hoang-versus-devin-burkett/","modified":"2016-02-07T06:15:11-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"And the Winner Is…","url":"https://yugiohblog.konami.com/2016/ycs/and-the-winner-is-21/","modified":"2016-02-07T15:12:45-08:00","kind":"result","event":"YCS Atlanta Georgia","format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 4 Feature Match: Craig Burnett versus Jake Kuenzi","url":"https://yugiohblog.konami.com/2016/ycs/round-4-feature-match-craig-burnett-versus-jake-kuenzi/","modified":"2016-02-07T06:26:46-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"YCS Atlanta Dragon Duel Champion","url":"https://yugiohblog.konami.com/2016/ycs/ycs-atlanta-dragon-duel-champion/","modified":"2016-02-07T15:43:09-08:00","kind":"result","event":"YCS Atlanta Georgia","format":"Dragon Duel","slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 5 Feature Match: Moises Bustamante versus Junior Dorcin","url":"https://yugiohblog.konami.com/2016/ycs/round-5-feature-match-moises-bustamante-versus-junior-dorcin/","modified":"2016-02-07T06:27:41-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"ATTACK OF THE GIANT CARD!! Winner #1","url":"https://yugiohblog.konami.com/2016/ycs/attack-of-the-giant-card-winner-1-4/","modified":"2016-02-06T19:01:10-08:00","kind":"result","event":"YCS Atlanta Georgia","format":"Attack of the Giant Card","slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 10 Feature Match: Alexander Simpson versus Christian Zukowski","url":"https://yugiohblog.konami.com/2016/ycs/round-10-feature-match-alexander-simpson-versus-christian-zukowski/","modified":"2016-02-07T08:36:35-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 11 Feature Match: Ed Acepcion versus Kamal Crooks","url":"https://yugiohblog.konami.com/2016/ycs/round-11-feature-match-ed-acepcion-versus-kamal-crooks/","modified":"2016-02-07T09:06:18-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Top 32 Feature Match: Billy Brake versus Frazier Smith","url":"https://yugiohblog.konami.com/2016/ycs/top-32-feature-match-billy-brake-versus-frazier-smith/","modified":"2016-02-07T11:00:57-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Top 16 Feature Match: Oscar Wener Zelaya Jr. versus Jose Uriel Diaz de Leon","url":"https://yugiohblog.konami.com/2016/ycs/top-16-feature-match-oscar-wener-zelaya-jr-versus-jose-uriel-diaz-de-leon/","modified":"2016-02-07T13:24:19-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Dragon Duel Feature Match: Round 3 (Sunday)","url":"https://yugiohblog.konami.com/2016/ycs/dragon-duel-feature-match-round-3-sunday/","modified":"2016-02-07T13:28:59-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":"Dragon Duel","slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Top 8 Feature Match: Thomas Rowe versus Santos Garcia","url":"https://yugiohblog.konami.com/2016/ycs/top-8-feature-match-thomas-rowe-versus-santos-garcia/","modified":"2016-02-07T13:37:01-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Top 4 Feature Match: Jose Uriel Diaz versus Jose Lagunes","url":"https://yugiohblog.konami.com/2016/ycs/top-4-feature-match-jose-uriel-diaz-versus-jose-lagunes/","modified":"2016-02-07T15:26:00-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Finals Feature Match: Thomas Rowe versus Jose Lagunes","url":"https://yugiohblog.konami.com/2016/ycs/finals-feature-match-thomas-rowe-versus-jose-lagunes/","modified":"2016-02-07T15:32:14-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Dragon Duel Feature Match: Round 4","url":"https://yugiohblog.konami.com/2016/ycs/dragon-duel-feature-match-round-4/","modified":"2016-02-06T16:17:04-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":"Dragon Duel","slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 6 Feature Match: Jonathan Moore versus Malvin Dionsio","url":"https://yugiohblog.konami.com/2016/ycs/round-6-feature-match-jonathan-moore-versus-malvin-dionsio/","modified":"2016-02-06T17:39:33-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 7 Feature Match: Patrick James versus Michael McLaughlin","url":"https://yugiohblog.konami.com/2016/ycs/round-7-feature-match-patrick-james-versus-michael-mclaughlin/","modified":"2016-02-06T18:46:04-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 8 Feature Match: Jose Uriel Diaz de Leon versus Yifei Yang","url":"https://yugiohblog.konami.com/2016/ycs/round-8-feature-match-jose-uriel-diaz-de-leon-versus-yifei-yang/","modified":"2016-02-06T20:53:06-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+  {"title":"Round 8 Feature Match: Robert Ramsey versus Richard Pizza","url":"https://yugiohblog.konami.com/2016/ycs/round-8-feature-match-robert-ramsey-versus-richard-pizza/","modified":"2016-02-06T20:56:59-08:00","kind":"feature","event":"YCS Atlanta Georgia","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-atlanta-georgia"}
 ]

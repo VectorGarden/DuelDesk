@@ -29,6 +29,8 @@ import re
 import unicodedata
 from pathlib import Path
 
+from archive import dumps
+
 CARDS = "cards"
 CARD_SHARDS = 512
 # Every card's numbers in one file, without a word of its text.
@@ -173,11 +175,8 @@ def write(root: str | Path, shards: dict[str, dict]) -> int:
             continue
         # Sorted, so a rebuild of an unchanged database writes identical bytes
         # and the repository records nothing.
-        path.write_text(json.dumps(dict(sorted(held.items())),
-                                   separators=(",", ":"), ensure_ascii=False) + "\n",
-                        encoding="utf-8")
+        path.write_text(dumps(dict(sorted(held.items())), depth=1), encoding="utf-8")
         kept += len(held)
     ids = numbers(shards)
-    (out / NUMBERS).write_text(json.dumps(ids, separators=(",", ":"),
-                                      ensure_ascii=False) + "\n", encoding="utf-8")
+    (out / NUMBERS).write_text(dumps(ids, depth=1), encoding="utf-8")
     return kept

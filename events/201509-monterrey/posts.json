@@ -1,130 +1,16 @@
 [
-  {
-    "title": "Pairings for Top 8",
-    "url": "https://yugiohblog.konami.com/2015/ycs/pairings-for-top-8-ycs-monterrey/",
-    "modified": "2015-09-06T10:03:10-07:00",
-    "kind": "pairings",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Pairings for Top 4: YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/pairings-for-top-4-ycs-monterrey/",
-    "modified": "2015-09-06T09:57:44-07:00",
-    "kind": "pairings",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2015/ycs/standings-after-round-4-ycs-monterrey/",
-    "modified": "2015-09-05T14:22:40-07:00",
-    "kind": "standings",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Standings after Round 5 at YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201509-monterrey/standings-after-round-5-at-ycs-monterrey/",
-    "modified": "2015-09-05T16:51:16-07:00",
-    "kind": "standings",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Standings after Round 6 at YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/201509-monterrey/standings-after-round-6-at-ycs-monterrey/",
-    "modified": "2015-09-05T16:52:46-07:00",
-    "kind": "standings",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2015/ycs/standings-after-round-7-ycs-monterrey/",
-    "modified": "2015-09-05T17:24:56-07:00",
-    "kind": "standings",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2015/ycs/standings-after-round-8-ycs-monterry/",
-    "modified": "2015-09-05T19:42:16-07:00",
-    "kind": "standings",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Standings after Round 9, YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/standings-after-round-9-ycs-moneterrey/",
-    "modified": "2015-09-05T19:45:37-07:00",
-    "kind": "standings",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "And the winner is…",
-    "url": "https://yugiohblog.konami.com/2015/ycs/and-the-winner-is-19/",
-    "modified": "2015-09-06T12:42:06-07:00",
-    "kind": "result",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Welcome to Day 2 of YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/welcome-to-day-2-of-ycs-monterrey-top-16/",
-    "modified": "2015-09-06T09:52:26-07:00",
-    "kind": "news",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/ycs-monterrey-final-match/",
-    "modified": "2015-09-06T11:49:18-07:00",
-    "kind": "news",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Welcome to YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/welcome-to-ycs-monterrey-mexico/",
-    "modified": "2015-09-05T13:33:12-07:00",
-    "kind": "news",
-    "event": "YCS Monterrey",
-    "article": true,
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Reunited with the Coronels!",
-    "url": "https://yugiohblog.konami.com/2015/ycs/reunited-with-the-coronels/",
-    "modified": "2015-09-05T19:39:44-07:00",
-    "kind": "news",
-    "event": "YCS Monterrey",
-    "article": true,
-    "format": null,
-    "slug": "201509-monterrey"
-  },
-  {
-    "title": "Top 16 returning to Day 2, YCS",
-    "url": "https://yugiohblog.konami.com/2015/ycs/top-16-returning-to-day-2-ycs-monterrey/",
-    "modified": "2015-09-05T19:47:40-07:00",
-    "kind": "news",
-    "event": "YCS Monterrey",
-    "format": null,
-    "slug": "201509-monterrey"
-  }
+  {"title":"Pairings for Top 8","url":"https://yugiohblog.konami.com/2015/ycs/pairings-for-top-8-ycs-monterrey/","modified":"2015-09-06T10:03:10-07:00","kind":"pairings","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Pairings for Top 4: YCS","url":"https://yugiohblog.konami.com/2015/ycs/pairings-for-top-4-ycs-monterrey/","modified":"2015-09-06T09:57:44-07:00","kind":"pairings","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Standings after Round 4","url":"https://yugiohblog.konami.com/2015/ycs/standings-after-round-4-ycs-monterrey/","modified":"2015-09-05T14:22:40-07:00","kind":"standings","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Standings after Round 5 at YCS","url":"https://yugiohblog.konami.com/2015/ycs/201509-monterrey/standings-after-round-5-at-ycs-monterrey/","modified":"2015-09-05T16:51:16-07:00","kind":"standings","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Standings after Round 6 at YCS","url":"https://yugiohblog.konami.com/2015/ycs/201509-monterrey/standings-after-round-6-at-ycs-monterrey/","modified":"2015-09-05T16:52:46-07:00","kind":"standings","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Standings after Round 7","url":"https://yugiohblog.konami.com/2015/ycs/standings-after-round-7-ycs-monterrey/","modified":"2015-09-05T17:24:56-07:00","kind":"standings","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Standings after Round 8","url":"https://yugiohblog.konami.com/2015/ycs/standings-after-round-8-ycs-monterry/","modified":"2015-09-05T19:42:16-07:00","kind":"standings","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Standings after Round 9, YCS","url":"https://yugiohblog.konami.com/2015/ycs/standings-after-round-9-ycs-moneterrey/","modified":"2015-09-05T19:45:37-07:00","kind":"standings","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"And the winner is…","url":"https://yugiohblog.konami.com/2015/ycs/and-the-winner-is-19/","modified":"2015-09-06T12:42:06-07:00","kind":"result","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Welcome to Day 2 of YCS","url":"https://yugiohblog.konami.com/2015/ycs/welcome-to-day-2-of-ycs-monterrey-top-16/","modified":"2015-09-06T09:52:26-07:00","kind":"news","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"YCS","url":"https://yugiohblog.konami.com/2015/ycs/ycs-monterrey-final-match/","modified":"2015-09-06T11:49:18-07:00","kind":"news","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"},
+  {"title":"Welcome to YCS","url":"https://yugiohblog.konami.com/2015/ycs/welcome-to-ycs-monterrey-mexico/","modified":"2015-09-05T13:33:12-07:00","kind":"news","event":"YCS Monterrey","article":true,"format":null,"slug":"201509-monterrey"},
+  {"title":"Reunited with the Coronels!","url":"https://yugiohblog.konami.com/2015/ycs/reunited-with-the-coronels/","modified":"2015-09-05T19:39:44-07:00","kind":"news","event":"YCS Monterrey","article":true,"format":null,"slug":"201509-monterrey"},
+  {"title":"Top 16 returning to Day 2, YCS","url":"https://yugiohblog.konami.com/2015/ycs/top-16-returning-to-day-2-ycs-monterrey/","modified":"2015-09-05T19:47:40-07:00","kind":"news","event":"YCS Monterrey","format":null,"slug":"201509-monterrey"}
 ]

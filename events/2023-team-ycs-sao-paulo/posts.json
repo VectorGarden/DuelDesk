@@ -1,200 +1,24 @@
 [
-  {
-    "title": "TEAM YCS Sao Paulo: Top 16 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-top-16-pairings/",
-    "modified": "2023-09-03T07:14:35-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-top-8-pairings/",
-    "modified": "2023-09-03T08:07:36-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Top 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-top-4-pairings/",
-    "modified": "2023-09-03T09:18:58-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Round 1 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-1-pairings/",
-    "modified": "2023-09-02T07:31:37-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Round 2 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-2-pairings/",
-    "modified": "2023-09-02T09:06:39-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Round 3 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-3-pairings/",
-    "modified": "2023-09-02T09:57:33-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Round 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-4-pairings/",
-    "modified": "2023-09-02T11:05:04-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Round 5 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-5-pairings/",
-    "modified": "2023-09-02T12:13:04-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Round 6 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-6-pairings/",
-    "modified": "2023-09-02T12:53:35-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Round 7 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-7-pairings/",
-    "modified": "2023-09-02T15:05:01-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Round 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-8-pairings/",
-    "modified": "2023-09-02T15:11:35-07:00",
-    "kind": "pairings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Standings after Round 1",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-1/",
-    "modified": "2023-09-02T08:10:03-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Standings after Round 2",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-2/",
-    "modified": "2023-09-02T09:47:37-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-3/",
-    "modified": "2023-09-02T10:57:28-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-4/",
-    "modified": "2023-09-02T12:04:07-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-5/",
-    "modified": "2023-09-02T12:50:02-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-6/",
-    "modified": "2023-09-02T15:03:21-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-7/",
-    "modified": "2023-09-02T15:06:52-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-8/",
-    "modified": "2023-09-02T16:37:14-07:00",
-    "kind": "standings",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Winners",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-winners/",
-    "modified": "2023-09-04T09:04:22-07:00",
-    "kind": "result",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "TEAM YCS Sao Paulo: Final Match",
-    "url": "https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-final-match/",
-    "modified": "2023-09-03T13:04:31-07:00",
-    "kind": "news",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  },
-  {
-    "title": "Welcome to TEAM YCS Sao Paulo!",
-    "url": "https://yugiohblog.konami.com/2023/ycs/welcome-to-team-ycs-sao-paulo/",
-    "modified": "2023-09-02T07:22:12-07:00",
-    "kind": "news",
-    "event": "TEAM YCS Sao Paulo",
-    "format": null,
-    "slug": "2023-team-ycs-sao-paulo"
-  }
+  {"title":"TEAM YCS Sao Paulo: Top 16 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-top-16-pairings/","modified":"2023-09-03T07:14:35-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Top 8 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-top-8-pairings/","modified":"2023-09-03T08:07:36-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Top 4 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-top-4-pairings/","modified":"2023-09-03T09:18:58-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Round 1 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-1-pairings/","modified":"2023-09-02T07:31:37-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Round 2 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-2-pairings/","modified":"2023-09-02T09:06:39-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Round 3 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-3-pairings/","modified":"2023-09-02T09:57:33-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Round 4 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-4-pairings/","modified":"2023-09-02T11:05:04-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Round 5 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-5-pairings/","modified":"2023-09-02T12:13:04-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Round 6 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-6-pairings/","modified":"2023-09-02T12:53:35-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Round 7 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-7-pairings/","modified":"2023-09-02T15:05:01-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Round 8 Pairings","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-round-8-pairings/","modified":"2023-09-02T15:11:35-07:00","kind":"pairings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Standings after Round 1","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-1/","modified":"2023-09-02T08:10:03-07:00","kind":"standings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Standings after Round 2","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-2/","modified":"2023-09-02T09:47:37-07:00","kind":"standings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Standings after Round 3","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-3/","modified":"2023-09-02T10:57:28-07:00","kind":"standings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Standings after Round 4","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-4/","modified":"2023-09-02T12:04:07-07:00","kind":"standings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Standings after Round 5","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-5/","modified":"2023-09-02T12:50:02-07:00","kind":"standings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Standings after Round 6","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-6/","modified":"2023-09-02T15:03:21-07:00","kind":"standings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Standings after Round 7","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-7/","modified":"2023-09-02T15:06:52-07:00","kind":"standings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Standings after Round 8","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-standings-after-round-8/","modified":"2023-09-02T16:37:14-07:00","kind":"standings","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Winners","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-winners/","modified":"2023-09-04T09:04:22-07:00","kind":"result","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"TEAM YCS Sao Paulo: Final Match","url":"https://yugiohblog.konami.com/2023/ycs/team-ycs-sao-paulo-final-match/","modified":"2023-09-03T13:04:31-07:00","kind":"news","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"},
+  {"title":"Welcome to TEAM YCS Sao Paulo!","url":"https://yugiohblog.konami.com/2023/ycs/welcome-to-team-ycs-sao-paulo/","modified":"2023-09-02T07:22:12-07:00","kind":"news","event":"TEAM YCS Sao Paulo","format":null,"slug":"2023-team-ycs-sao-paulo"}
 ]

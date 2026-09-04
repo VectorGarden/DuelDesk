@@ -59,16 +59,50 @@ def lean(event: dict) -> dict:
     return out
 
 
-def dumps(obj: dict, *, pretty: bool = False) -> str:
+def dumps(obj, *, depth: int = 0) -> str:
     """One JSON writer, so every file the site reads is written the same way.
 
-    Compact by default. Indentation is 60% of an event file and nobody reads a
-    twenty-thousand-row table by eye; the manifest, which someone might, is the
-    one written pretty.
+    Indented down to `depth` and written compact below it, which puts the
+    thing that changes on a line of its own: a Duelist, a card, a pairing.
+
+    Written on one line, as this was, a file is one line however little of it
+    moved. Folding 1,475 names showed up as "493 files changed, 654
+    insertions, 491 deletions" -- a line replaced per file, saying nothing
+    about which names -- and the largest table in the archive is 6.5MB on a
+    single line, which is more than a diff will render at all.
+
+    How deep is measured rather than chosen. Reading forty scrape commits
+    back, a real update moves this much of a file:
+
+        rounds.json     depth 1  18.18%   depth 4  5.71%   depth 6  0.06%
+        players         depth 1   7.76%   depth 2  4.76%
+        articles.json   depth 1  43.33%   depth 2 11.23%   depth 3  6.42%
+
+    So the depth each file is written at is the one that reaches the thing
+    that changes in it, and stops there. Depth 8 on an event takes the 0.06%
+    to 0.01% and costs 19% more; indenting the whole way ends at the same
+    diff as depth 6 and costs three times as much, most of it spent putting
+    {"e": "a-slug"} on three lines.
+
+    It is not free and it is nearly free: the whitespace this adds is the
+    whitespace gzip is best at. 210MB becomes 230MB on disk, and 31.91MB
+    becomes 32.67MB over the wire, which is 2%.
     """
-    sep = None if pretty else (",", ":")
-    return json.dumps(obj, indent=2 if pretty else None, separators=sep,
-                      ensure_ascii=False) + "\n"
+    return _written(obj, depth) + "\n"
+
+
+def _written(obj, depth: int, level: int = 0) -> str:
+    """`obj` as JSON, expanded while there is depth left and compact after."""
+    if level >= depth or not isinstance(obj, (dict, list)) or not obj:
+        return json.dumps(obj, separators=(",", ":"), ensure_ascii=False)
+    pad = "  " * level
+    if isinstance(obj, dict):
+        held = ",\n".join(
+            f"{pad}  {json.dumps(k, ensure_ascii=False)}: "
+            f"{_written(v, depth, level + 1)}" for k, v in obj.items())
+        return "{\n" + held + "\n" + pad + "}"
+    held = ",\n".join(f"{pad}  {_written(v, depth, level + 1)}" for v in obj)
+    return "[\n" + held + "\n" + pad + "]"
 
 
 def event_dir(root: str | Path, slug: str) -> Path:
@@ -92,8 +126,9 @@ def write_event(root: str | Path, slug: str, event: dict, posts: list[dict],
     d = event_dir(root, slug)
     d.mkdir(parents=True, exist_ok=True)
     out = rounds_path(root, slug)
-    out.write_text(dumps(lean(event)), encoding="utf-8")
-    posts_path(root, slug).write_text(dumps(posts, pretty=True), encoding="utf-8")
+    # A line per pairing and per standings row, which is what a round is.
+    out.write_text(dumps(lean(event), depth=6), encoding="utf-8")
+    posts_path(root, slug).write_text(dumps(posts, depth=1), encoding="utf-8")
     # Written even when empty, so a reader can tell an event whose prose has
     # not been extracted yet from one whose posts are all tables. Not pretty:
     # this is the largest file in the directory after the rounds.
@@ -101,7 +136,9 @@ def write_event(root: str | Path, slug: str, event: dict, posts: list[dict],
     if articles is None:
         at.unlink(missing_ok=True)
     else:
-        at.write_text(dumps(articles), encoding="utf-8")
+        # A line per run, so a post that gained a sentence says so rather
+        # than redrawing the paragraph it landed in.
+        at.write_text(dumps(articles, depth=3), encoding="utf-8")
     return out
 
 
@@ -127,7 +164,7 @@ def reject_event(root: str | Path, slug: str, reason: str) -> None:
     d = event_dir(root, slug)
     d.mkdir(parents=True, exist_ok=True)
     rejected_path(root, slug).write_text(
-        dumps({"slug": slug, "reason": reason}, pretty=True), encoding="utf-8")
+        dumps({"slug": slug, "reason": reason}, depth=1), encoding="utf-8")
 
 
 def attempted(root: str | Path) -> set[str]:
@@ -554,7 +591,8 @@ def write_players(root: str | Path, shards: dict[str, dict]) -> int:
     out = Path(root).parent / PLAYERS if Path(root).name else Path(PLAYERS)
     out.mkdir(parents=True, exist_ok=True)
     for name in sorted(shards):
-        (out / f"{name}.json").write_text(dumps(shards[name]), encoding="utf-8")
+        (out / f"{name}.json").write_text(dumps(shards[name], depth=2),
+                                          encoding="utf-8")
     for stale in out.glob("*.json"):
         if stale.stem not in shards:
             stale.unlink()

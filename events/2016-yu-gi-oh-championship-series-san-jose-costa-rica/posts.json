@@ -1,75 +1,10 @@
 [
-  {
-    "title": "Pairings and Deck Types",
-    "url": "https://yugiohblog.konami.com/2016/ycs/pairings-and-deck-types-top-16/",
-    "modified": "2016-03-20T09:42:35-07:00",
-    "kind": "pairings",
-    "event": "YCS San Jose Costa Rica",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
-  },
-  {
-    "title": "Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2016/ycs/top-8-pairings-15/",
-    "modified": "2016-03-20T10:12:47-07:00",
-    "kind": "pairings",
-    "event": "YCS San Jose Costa Rica",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
-  },
-  {
-    "title": "Standings after Round 5: YCS",
-    "url": "https://yugiohblog.konami.com/2016/ycs/standings-after-round-5-ycs-costa-rica/",
-    "modified": "2016-03-19T16:10:19-07:00",
-    "kind": "standings",
-    "event": "YCS San Jose Costa Rica",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
-  },
-  {
-    "title": "Standings after Round 6 at YCS",
-    "url": "https://yugiohblog.konami.com/2016/ycs/standings-after-round-6-at-ycs-costa-rica/",
-    "modified": "2016-03-19T16:16:34-07:00",
-    "kind": "standings",
-    "event": "YCS San Jose Costa Rica",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
-  },
-  {
-    "title": "Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2016/ycs/standings-after-round-7-10/",
-    "modified": "2016-03-19T17:21:24-07:00",
-    "kind": "standings",
-    "event": "YCS San Jose Costa Rica",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
-  },
-  {
-    "title": "Final standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2016/ycs/final-standings-after-round-8/",
-    "modified": "2016-03-19T18:50:04-07:00",
-    "kind": "standings",
-    "event": "YCS San Jose Costa Rica",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
-  },
-  {
-    "title": "And the champion is….",
-    "url": "https://yugiohblog.konami.com/2016/ycs/and-the-champion-is/",
-    "modified": "2016-03-20T19:14:30-07:00",
-    "kind": "result",
-    "event": "YCS San Jose Costa Rica",
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
-  },
-  {
-    "title": "Welcome to Yu-Gi-Oh! Championship Series San Jose, Costa Rica!",
-    "url": "https://yugiohblog.konami.com/2016/ycs/welcome-to-yu-gi-oh-championship-series-san-jose-costa-rica/",
-    "modified": "2016-03-19T12:34:41-07:00",
-    "kind": "news",
-    "event": "YCS San Jose Costa Rica",
-    "article": true,
-    "format": null,
-    "slug": "2016-yu-gi-oh-championship-series-san-jose-costa-rica"
-  }
+  {"title":"Pairings and Deck Types","url":"https://yugiohblog.konami.com/2016/ycs/pairings-and-deck-types-top-16/","modified":"2016-03-20T09:42:35-07:00","kind":"pairings","event":"YCS San Jose Costa Rica","format":null,"slug":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"},
+  {"title":"Top 8 Pairings","url":"https://yugiohblog.konami.com/2016/ycs/top-8-pairings-15/","modified":"2016-03-20T10:12:47-07:00","kind":"pairings","event":"YCS San Jose Costa Rica","format":null,"slug":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"},
+  {"title":"Standings after Round 5: YCS","url":"https://yugiohblog.konami.com/2016/ycs/standings-after-round-5-ycs-costa-rica/","modified":"2016-03-19T16:10:19-07:00","kind":"standings","event":"YCS San Jose Costa Rica","format":null,"slug":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"},
+  {"title":"Standings after Round 6 at YCS","url":"https://yugiohblog.konami.com/2016/ycs/standings-after-round-6-at-ycs-costa-rica/","modified":"2016-03-19T16:16:34-07:00","kind":"standings","event":"YCS San Jose Costa Rica","format":null,"slug":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"},
+  {"title":"Standings after Round 7","url":"https://yugiohblog.konami.com/2016/ycs/standings-after-round-7-10/","modified":"2016-03-19T17:21:24-07:00","kind":"standings","event":"YCS San Jose Costa Rica","format":null,"slug":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"},
+  {"title":"Final standings after Round 8","url":"https://yugiohblog.konami.com/2016/ycs/final-standings-after-round-8/","modified":"2016-03-19T18:50:04-07:00","kind":"standings","event":"YCS San Jose Costa Rica","format":null,"slug":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"},
+  {"title":"And the champion is….","url":"https://yugiohblog.konami.com/2016/ycs/and-the-champion-is/","modified":"2016-03-20T19:14:30-07:00","kind":"result","event":"YCS San Jose Costa Rica","format":null,"slug":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"},
+  {"title":"Welcome to Yu-Gi-Oh! Championship Series San Jose, Costa Rica!","url":"https://yugiohblog.konami.com/2016/ycs/welcome-to-yu-gi-oh-championship-series-san-jose-costa-rica/","modified":"2016-03-19T12:34:41-07:00","kind":"news","event":"YCS San Jose Costa Rica","article":true,"format":null,"slug":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"}
 ]

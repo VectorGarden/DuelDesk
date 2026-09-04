@@ -1,322 +1,37 @@
 [
-  {
-    "title": "YCS Bogota, Colombia: Top 16 Pairings with Deck Information",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-top-16-pairings-with-deck-information/",
-    "modified": "2017-04-16T13:17:48-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Top 8 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-top-8-pairings/",
-    "modified": "2017-04-16T13:14:35-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Top 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-top-4-pairings/",
-    "modified": "2017-04-16T13:13:25-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Round 3 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-3-pairings/",
-    "modified": "2017-04-15T12:26:45-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Round 4 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-4-pairings/",
-    "modified": "2017-04-15T12:40:08-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Round 5 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-5-pairings/",
-    "modified": "2017-04-15T13:39:54-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Round 6 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-6-pairings/",
-    "modified": "2017-04-15T15:36:37-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Round 7 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-7-pairings/",
-    "modified": "2017-04-15T16:20:01-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Pairings for Round 8",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-pairings-for-round-8/",
-    "modified": "2017-04-15T17:30:06-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Round 9 Pairings",
-    "url": "https://yugiohblog.konami.com/2017/ycs/201704-ycs-bogota-colombia/ycs-bogota-colombia-round-9-pairings/",
-    "modified": "2017-04-15T18:07:35-07:00",
-    "kind": "pairings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Top 16",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-top-16/",
-    "modified": "2017-04-16T13:15:06-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Top 8",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-top-8/",
-    "modified": "2017-04-16T13:12:21-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Top 4",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-top-4/",
-    "modified": "2017-04-16T13:13:00-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Round 3",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-3/",
-    "modified": "2017-04-15T12:37:20-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Round 4",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-4/",
-    "modified": "2017-04-15T13:37:39-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Round 5",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-5/",
-    "modified": "2017-04-15T15:33:21-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Round 6",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-6/",
-    "modified": "2017-04-15T16:17:52-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Round 7",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-7/",
-    "modified": "2017-04-15T17:27:14-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Round 8",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-8/",
-    "modified": "2017-04-15T18:04:42-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Standings after Round 9",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-9/",
-    "modified": "2017-04-15T19:02:18-07:00",
-    "kind": "standings",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Saturday’s Dragon Duel Winners",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-saturdays-dragon-duel-winners/",
-    "modified": "2017-04-16T13:37:08-07:00",
-    "kind": "result",
-    "event": "YCS Bogota",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Final Match",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-final-match/",
-    "modified": "2017-04-16T13:12:39-07:00",
-    "kind": "news",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: And the winner is…",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-and-the-winner-is/",
-    "modified": "2017-04-16T11:48:07-07:00",
-    "kind": "result",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "Welcome to YCS Bogota, Colombia!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/welcome-to-ycs-bogota-colombia-2/",
-    "modified": "2017-04-15T09:25:25-07:00",
-    "kind": "news",
-    "event": "YCS Bogota",
-    "article": true,
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Sunday’s Dragon Duel Winners",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-sundays-dragon-duel-winners/",
-    "modified": "2017-04-16T14:13:31-07:00",
-    "kind": "result",
-    "event": "YCS Bogota",
-    "article": true,
-    "format": "Dragon Duel",
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Bounty Duelists",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-bounty-duelists/",
-    "modified": "2017-04-15T09:23:56-07:00",
-    "kind": "news",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Sunday’s ATTACK OF THE GIANT CARD!! Winner",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-sundays-attack-of-the-giant-card-winner/",
-    "modified": "2017-04-16T14:18:01-07:00",
-    "kind": "result",
-    "event": "YCS Bogota",
-    "format": "Attack of the Giant Card",
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Country Breakdown",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-country-breakdown/",
-    "modified": "2017-04-15T10:10:37-07:00",
-    "kind": "news",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Dragon Duel Championship Winner",
-    "url": "https://yugiohblog.konami.com/2017/ycs/201704-ycs-bogota-colombia/ycs-bogota-colombia-dragon-duel-championship-winner/",
-    "modified": "2017-04-16T14:38:47-07:00",
-    "kind": "result",
-    "event": "YCS Bogota",
-    "format": "Dragon Duel",
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: VIP Duelists",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-vip-duelists/",
-    "modified": "2017-04-15T11:30:21-07:00",
-    "kind": "news",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Public Events Random Playoff Winner",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-public-events-random-playoff-winner/",
-    "modified": "2017-04-16T16:02:28-07:00",
-    "kind": "result",
-    "event": "YCS Bogota",
-    "format": "Public Events",
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia QQ: Which Deck Do You Think Will Win This Weekend?",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-qq-which-deck-do-you-think-will-win-this-weekend/",
-    "modified": "2017-04-15T17:02:05-07:00",
-    "kind": "news",
-    "event": "YCS Bogota",
-    "article": true,
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "UDS Champions at YCS Bogota, Colombia",
-    "url": "https://yugiohblog.konami.com/2017/ycs/uds-champions-at-ycs-bogota-colombia/",
-    "modified": "2017-04-15T10:18:22-07:00",
-    "kind": "result",
-    "event": "YCS Bogota",
-    "format": null,
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Saturday’s ATTACK OF THE GIANT CARD!!",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-saturdays-attack-of-the-giant-card/",
-    "modified": "2017-04-15T18:00:00-07:00",
-    "kind": "news",
-    "event": "YCS Bogota",
-    "format": "Attack of the Giant Card",
-    "slug": "201704-ycs-bogota-colombia"
-  },
-  {
-    "title": "YCS Bogota, Colombia: Saturday’s Public Events Winners",
-    "url": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-saturdays-public-events-winners/",
-    "modified": "2017-04-15T17:55:57-07:00",
-    "kind": "result",
-    "event": "YCS Bogota",
-    "article": true,
-    "format": "Public Events",
-    "slug": "201704-ycs-bogota-colombia"
-  }
+  {"title":"YCS Bogota, Colombia: Top 16 Pairings with Deck Information","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-top-16-pairings-with-deck-information/","modified":"2017-04-16T13:17:48-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Top 8 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-top-8-pairings/","modified":"2017-04-16T13:14:35-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Top 4 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-top-4-pairings/","modified":"2017-04-16T13:13:25-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Round 3 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-3-pairings/","modified":"2017-04-15T12:26:45-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Round 4 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-4-pairings/","modified":"2017-04-15T12:40:08-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Round 5 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-5-pairings/","modified":"2017-04-15T13:39:54-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Round 6 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-6-pairings/","modified":"2017-04-15T15:36:37-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Round 7 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-round-7-pairings/","modified":"2017-04-15T16:20:01-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Pairings for Round 8","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-pairings-for-round-8/","modified":"2017-04-15T17:30:06-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Round 9 Pairings","url":"https://yugiohblog.konami.com/2017/ycs/201704-ycs-bogota-colombia/ycs-bogota-colombia-round-9-pairings/","modified":"2017-04-15T18:07:35-07:00","kind":"pairings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Top 16","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-top-16/","modified":"2017-04-16T13:15:06-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Top 8","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-top-8/","modified":"2017-04-16T13:12:21-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Top 4","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-top-4/","modified":"2017-04-16T13:13:00-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Round 3","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-3/","modified":"2017-04-15T12:37:20-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Round 4","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-4/","modified":"2017-04-15T13:37:39-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Round 5","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-5/","modified":"2017-04-15T15:33:21-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Round 6","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-6/","modified":"2017-04-15T16:17:52-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Round 7","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-7/","modified":"2017-04-15T17:27:14-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Round 8","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-8/","modified":"2017-04-15T18:04:42-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Standings after Round 9","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-standings-after-round-9/","modified":"2017-04-15T19:02:18-07:00","kind":"standings","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Saturday’s Dragon Duel Winners","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-saturdays-dragon-duel-winners/","modified":"2017-04-16T13:37:08-07:00","kind":"result","event":"YCS Bogota","article":true,"format":"Dragon Duel","slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Final Match","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-final-match/","modified":"2017-04-16T13:12:39-07:00","kind":"news","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: And the winner is…","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-and-the-winner-is/","modified":"2017-04-16T11:48:07-07:00","kind":"result","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"Welcome to YCS Bogota, Colombia!","url":"https://yugiohblog.konami.com/2017/ycs/welcome-to-ycs-bogota-colombia-2/","modified":"2017-04-15T09:25:25-07:00","kind":"news","event":"YCS Bogota","article":true,"format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Sunday’s Dragon Duel Winners","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-sundays-dragon-duel-winners/","modified":"2017-04-16T14:13:31-07:00","kind":"result","event":"YCS Bogota","article":true,"format":"Dragon Duel","slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Bounty Duelists","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-bounty-duelists/","modified":"2017-04-15T09:23:56-07:00","kind":"news","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Sunday’s ATTACK OF THE GIANT CARD!! Winner","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-sundays-attack-of-the-giant-card-winner/","modified":"2017-04-16T14:18:01-07:00","kind":"result","event":"YCS Bogota","format":"Attack of the Giant Card","slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Country Breakdown","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-country-breakdown/","modified":"2017-04-15T10:10:37-07:00","kind":"news","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Dragon Duel Championship Winner","url":"https://yugiohblog.konami.com/2017/ycs/201704-ycs-bogota-colombia/ycs-bogota-colombia-dragon-duel-championship-winner/","modified":"2017-04-16T14:38:47-07:00","kind":"result","event":"YCS Bogota","format":"Dragon Duel","slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: VIP Duelists","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-vip-duelists/","modified":"2017-04-15T11:30:21-07:00","kind":"news","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Public Events Random Playoff Winner","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-public-events-random-playoff-winner/","modified":"2017-04-16T16:02:28-07:00","kind":"result","event":"YCS Bogota","format":"Public Events","slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia QQ: Which Deck Do You Think Will Win This Weekend?","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-qq-which-deck-do-you-think-will-win-this-weekend/","modified":"2017-04-15T17:02:05-07:00","kind":"news","event":"YCS Bogota","article":true,"format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"UDS Champions at YCS Bogota, Colombia","url":"https://yugiohblog.konami.com/2017/ycs/uds-champions-at-ycs-bogota-colombia/","modified":"2017-04-15T10:18:22-07:00","kind":"result","event":"YCS Bogota","format":null,"slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Saturday’s ATTACK OF THE GIANT CARD!!","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-saturdays-attack-of-the-giant-card/","modified":"2017-04-15T18:00:00-07:00","kind":"news","event":"YCS Bogota","format":"Attack of the Giant Card","slug":"201704-ycs-bogota-colombia"},
+  {"title":"YCS Bogota, Colombia: Saturday’s Public Events Winners","url":"https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-saturdays-public-events-winners/","modified":"2017-04-15T17:55:57-07:00","kind":"result","event":"YCS Bogota","article":true,"format":"Public Events","slug":"201704-ycs-bogota-colombia"}
 ]
