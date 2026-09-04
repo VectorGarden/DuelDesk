@@ -516,6 +516,10 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
 }
 /* What the card is. Positioned in the document rather than the viewport, so
    it stays with the name it belongs to while the page settles. */
+/* Hidden means gone. A display of its own beats the browser's rule for
+   [hidden], so setting the attribute left the card sitting on the page --
+   dismissing it worked, and nothing about it was visible. */
+.cardpop[hidden]{display:none}
 .cardpop{
   /* The width is set when it is placed -- it narrows to sit beside the name
      rather than drop over the list. See read.js. */

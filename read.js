@@ -258,8 +258,10 @@ async function openCard(span){
   showing = span;
   const card = await lookupCard(name);
   /* The reader may have moved on while the shard was fetched, and a card
-     opening under a pointer that has gone is worse than none. */
-  if (showing !== span || !card) return;
+     opening under a pointer that has gone is worse than none. Sent away by
+     hand in the meantime counts as moving on: a click both dismisses the card
+     and focuses the name under it, and this is the half that arrives second. */
+  if (showing !== span || muted || !card) return;
   if (!popup){
     popup = document.createElement('div');
     popup.className = 'cardpop';
@@ -347,10 +349,19 @@ function watchCards(root){
   });
   /* A keyboard reader gets it on focus and keeps it until they move on. No
      resting: tabbing to a name is already the deliberate act the delay is
-     waiting for. */
+     waiting for.
+
+     Only when the focus came from a keyboard, which is what :focus-visible
+     means. Clicking a name focuses it too, and opening on that made a click
+     on the prose -- which in a match report is mostly card names -- open a
+     card rather than dismiss the one already up. That is the whole of why
+     clicking the page appeared to do nothing. */
   root.addEventListener('focusin', (e) => {
     const span = e.target.closest?.('.cardref');
-    if (span) openCard(span); else closeCard();
+    if (!span) { closeCard(); return; }
+    let byKeyboard = true;
+    try { byKeyboard = span.matches(':focus-visible'); } catch { /* older engines */ }
+    if (byKeyboard && !muted) openCard(span);
   });
   root.addEventListener('focusout', closeCard);
   /* Every ordinary way of saying "enough". Escape is what a tooltip owes a
@@ -374,7 +385,7 @@ function watchCards(root){
      changes what is under the pointer, and what is under the pointer is
      often another card name -- so dismissing it opened the next one, and
      the dismissal looked like it had done nothing. */
-  root.addEventListener('mousemove', () => { muted = false; }, {passive: true});
+  document.addEventListener('mousemove', () => { muted = false; }, {passive: true});
 }
 
 applyTheme();
