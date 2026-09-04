@@ -1183,14 +1183,39 @@ class TestWhatACardDoes(unittest.TestCase):
             self.assertEqual(first, second)
 
     def test_a_shard_with_nothing_in_it_is_removed(self):
-        import tempfile, pathlib
+        import json, tempfile, pathlib
         from cards import build, write, shard_of, normalise
         with tempfile.TemporaryDirectory() as tmp:
             write(tmp, build([self.card("Raigeki")]))
             held = shard_of(normalise("Raigeki"))
             self.assertTrue(pathlib.Path(tmp, "cards", f"{held}.json").is_file())
             write(tmp, {})
-            self.assertEqual(list(pathlib.Path(tmp, "cards").iterdir()), [])
+            shards = sorted(p.name for p in pathlib.Path(tmp, "cards").iterdir())
+            # The numbers file is written whatever happens, so a page asking
+            # for it gets an answer rather than a 404. Empty is an answer.
+            self.assertEqual(shards, ["ids.json"])
+            self.assertEqual(json.loads(pathlib.Path(tmp, "cards", "ids.json").read_text()), {})
+
+    def test_the_numbers_file_is_every_card_that_has_one(self):
+        # What an export reads instead of the shards: the worst post in the
+        # archive names 642 cards across 367 of the 512 files, and asking for
+        # the text of all of them is 4.7MB to answer one button.
+        import tempfile, json, pathlib
+        from cards import build, write, numbers, normalise
+        cards = [self.card("Ash Blossom & Joyous Spring", id=14558127,
+                           misc_info=[{"konami_id": 12950}]),
+                 self.card("Some Fusion", id=55555555, misc_info=[{}]),
+                 self.card("Nameless", id=None)]
+        shards = build(cards)
+        got = numbers(shards)
+        self.assertEqual(got[normalise("Ash Blossom & Joyous Spring")], [14558127, 12950])
+        self.assertEqual(got[normalise("Some Fusion")], [55555555],
+                         "one number where Konami never gave a second")
+        self.assertNotIn(normalise("Nameless"), got, "and nothing without a passcode")
+        with tempfile.TemporaryDirectory() as tmp:
+            write(tmp, shards)
+            self.assertEqual(
+                json.loads(pathlib.Path(tmp, "cards", "ids.json").read_text()), got)
 
 
 class TestStatusAnnotations(unittest.TestCase):

@@ -596,21 +596,36 @@ function layoutOf(lines){
   let deck = null;
   let pile = null;
   let closed = false;
-  let heading = null;
+  /* A heading may run to several paragraphs. Konami writes a Speed Duel deck
+     as "Sam Chen - 1st Place", then "Character: Yami Yugi", then "Skill Name:
+     Ever Faithful Companions", and taking only the last of them dropped the
+     Duelist -- so two people who both played Yami Yugi with the same skill
+     came out as one deck, listed twice under the same name. */
+  let heading = [];
   let seenP = null;
-  for (const {text: raw, p} of lines){
+  for (const {text: raw, p, emph} of lines){
     const text = raw.trim();
     if (!text) continue;
     if (DECK_SECTION.test(text)){
       const next = pileOf(text);
       const main = next === 'Monsters' || next === 'Spells' || next === 'Traps';
       if (!deck || (main && closed)){
-        /* The heading counts as the deck's own only when it is the paragraph
-           immediately before it. A post opens with a line of introduction --
-           "Wanna see the Decks that Duelists piloted to the Top 8?" -- and
-           that belongs to the post, not to whoever came first. */
-        const own = heading && heading.nextElementSibling === p ? heading : null;
-        deck = {at: own ?? p, title: own, piles: new Map()};
+        /* The heading counts as the deck's own only when it runs up to the
+           section without a break. A post opens with a line of introduction
+           -- "Wanna see the Decks that Duelists piloted to the Top 8?" --
+           and that belongs to the post, not to whoever came first.
+           Where the heading really is several paragraphs, the bold is what
+           says so: Konami sets the Duelist's name and placing in bold and
+           leaves the introduction above it plain, so the heading begins
+           where the bold begins and runs from there down to the section.
+           What follows the name -- "Character: Yami Yugi", "Skill Name: Ever
+           Faithful Companions" -- is plain, and belongs to the name. */
+        const run = heading.length && heading[heading.length - 1].p.nextElementSibling === p
+          ? heading : [];
+        let from = run.findLastIndex((held) => held.emph);
+        while (from > 0 && run[from - 1].emph) from -= 1;
+        const own = (from < 0 ? run.slice(-1) : run.slice(from)).map((held) => held.p);
+        deck = {at: own[0] ?? p, title: own, piles: new Map()};
         found.push(deck);
         closed = false;
       }
@@ -626,7 +641,7 @@ function layoutOf(lines){
       }
       /* The heading's own paragraph, which may or may not hold the cards. */
       if (!held.held.includes(p)) held.held.push(p);
-      heading = null;
+      heading = [];
       seenP = p;
       continue;
     }
@@ -642,7 +657,15 @@ function layoutOf(lines){
        where the section should start rather than at "Monsters:". The last,
        not the first: a post opens with a line of introduction and then names
        whoever came first, and it is the name the deck belongs to. */
-    heading = p;
+    /* Consecutive paragraphs of it, in the order they were written. Which of
+       them belong to the deck is settled at the section, where the bold ones
+       are known to have run all the way up to it. */
+    const last = heading[heading.length - 1];
+    const line = {p, emph};
+    heading = !last ? [line]
+      : last.p === p ? [...heading.slice(0, -1), {p, emph: last.emph && emph}]
+      : last.p.nextElementSibling === p ? [...heading, line].slice(-4)
+      : [line];
     if (deck && deck.piles.size){ deck = null; pile = null; closed = false; }
   }
   return found;
@@ -694,16 +717,23 @@ function shapeDecks(root){
     head.className = 'deck__h';
     const name = document.createElement('span');
     name.className = 'deck__n';
-    if (place.title){
-      while (place.title.firstChild) name.append(place.title.firstChild);
-      place.title.remove();
+    if (place.title.length){
+      place.title.forEach((held, n) => {
+        if (n) name.append(' — ');
+        while (held.firstChild) name.append(held.firstChild);
+        held.remove();
+      });
     } else {
       name.textContent = deck.name || `Deck ${i + 1}`;
     }
     head.append(name);
-    /* What to call it in the index, taken now: the heading's own nodes have
-       just been moved here, and the paragraph they came from is gone. */
+    /* What to call it, taken now: the heading's own nodes have just been
+       moved here and the paragraph they came from is gone. The export uses it
+       too, or the first deck of a post is named after the post's opening
+       sentence -- "Here are the Deck Lists for the Top Cut of the North
+       America World Championship Qualifier!" is not a deck. */
     place.called = name.textContent.replace(/\s*\n\s*/g, ' — ').trim();
+    if (place.called) deck.name = place.called;
     const size = document.createElement('span');
     size.className = 'deck__c';
     size.textContent = `${copiesIn(deck)} cards`;
@@ -784,6 +814,12 @@ function shapeDecks(root){
       const button = at?.querySelector('[data-open]');
       if (button && button.getAttribute('aria-expanded') !== 'true') toggleDeck(root, button);
     }
+    const every = e.target.closest?.('[data-all]');
+    if (every){
+      handOverAll(decks, every.dataset.all, root.querySelector('[data-note="all"]'),
+                  document.title.replace(/ — Duel Desk$/, ''));
+      return;
+    }
     const tab = e.target.closest?.('[data-pile]');
     if (tab) showPile(root, tab);
     const button = e.target.closest?.('[data-deck]');
@@ -854,6 +890,13 @@ function indexOf(decks, layout){
       <input id="deckfind" type="search" placeholder="Find a Duelist or a deck"
              autocomplete="off">
     </label>
+    <p class="deckindex__all">
+      <span class="deckout__k">Take all ${decks.length}</span>
+      <button type="button" class="btn btn--sm" data-all="ydk">.ydk zip</button>
+      <button type="button" class="btn btn--sm" data-all="ydke">ydke:// list</button>
+      <button type="button" class="btn btn--sm" data-all="json">JSON zip</button>
+      <span class="deckout__note" data-note="all"></span>
+    </p>
     <ol class="deckindex__list">${decks.map((deck, i) => `
       <li><a href="#deck-${i}">${esc(nameOf(deck, layout[i], i))}</a></li>`).join('')}
     </ol>`;
@@ -884,28 +927,12 @@ function narrowDecks(root, query){
    forty files the first time and none of them the second. */
 async function handOver(deck, as, note){
   note.textContent = 'Looking the cards up…';
-  const names = ['Monsters', 'Spells', 'Traps', 'Extra', 'Side']
-    .flatMap((pile) => deck[pile].map((c) => c.name));
-  const found = new Map();
-  await Promise.all([...new Set(names)].map(async (name) => {
-    found.set(name, await lookupCard(name));
-  }));
-  const resolve = (name) => found.get(name) ?? null;
+  const ids = await cardNumbers();
+  const resolve = (name) => numbersFor(ids, name);
 
   const needs = as === 'json' ? 'cid' : 'id';
   const lost = missing(deck, resolve, needs);
-  /* A filename out of the heading: "1st Place — Raymond Dai — Exosisters"
-     becomes "1st Place - Raymond Dai - Exosisters".
-
-     Only what a file system actually objects to is taken out. Much of this
-     archive is named in Spanish and Portuguese, and a rule built on \w --
-     which is ASCII and nothing else -- turned an accented name into
-     "Jos Ram rez". */
-  const stem = (deck.name || 'decklist')
-    .replace(/[\u2013\u2014]/g, '-')
-    .replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim().slice(0, 60) || 'decklist';
+  const stem = fileStem(deck.name);
   if (as === 'ydk') save(ydkOf(deck, resolve, deck.name), `${stem}.ydk`, 'text/plain');
   else if (as === 'ydke') save(ydkeOf(deck, resolve), `${stem}.ydke.txt`, 'text/plain');
   else save(JSON.stringify(registrationOf(deck, resolve, deck.name), null, 2),
@@ -918,8 +945,71 @@ async function handOver(deck, as, note){
     : '';
 }
 
+/* Every deck in the post at once.
+
+   All three formats. A .ydk holds one deck -- the format has no separator --
+   and a registration file is one deck's form, so those arrive as a zip of
+   sixty-three files, written by hand in common.js because a zip of stored
+   entries is sixty lines rather than a dependency. A ydke:// is one line, so
+   a list of them is a list. */
+async function handOverAll(decks, as, note, title){
+  note.textContent = 'Looking the cards up…';
+  const ids = await cardNumbers();
+  const resolve = (name) => numbersFor(ids, name);
+  const stem = fileStem(title || 'deck lists');
+  const nameOfDeck = (deck, i) =>
+    fileStem(deck.name.replace(/\s*\n\s*/g, ' — ')) || `Deck ${i + 1}`;
+
+  if (as === 'ydke'){
+    const lines = decks.map((deck, i) =>
+      `# ${nameOfDeck(deck, i)}\n${ydkeOf(deck, resolve)}`);
+    save(lines.join('\n\n') + '\n', `${stem}.ydke.txt`, 'text/plain');
+  } else if (as === 'ydk'){
+    saveZip(eachNamedOnce(decks.map((deck, i) => ({
+      name: `${nameOfDeck(deck, i)}.ydk`,
+      text: ydkOf(deck, resolve, nameOfDeck(deck, i)),
+    }))), `${stem}.ydk.zip`);
+  } else {
+    saveZip(eachNamedOnce(decks.map((deck, i) => ({
+      name: `${nameOfDeck(deck, i)}.json`,
+      text: JSON.stringify(registrationOf(deck, resolve, nameOfDeck(deck, i)), null, 2),
+    }))), `${stem}.json.zip`);
+  }
+
+  const lost = new Set();
+  for (const deck of decks){
+    for (const name of missing(deck, resolve, as === 'json' ? 'cid' : 'id')) lost.add(name);
+  }
+  note.textContent = lost.size
+    ? `${lost.size} card${lost.size > 1 ? 's' : ''} not in the card store: ${[...lost].join(', ')}`
+    : `${decks.length} decks.`;
+}
+
+/* A filename out of a heading: "1st Place — Raymond Dai — Exosisters" becomes
+   "1st Place - Raymond Dai - Exosisters".
+
+   Only what a file system actually objects to is taken out. Much of this
+   archive is named in Spanish and Portuguese, and a rule built on \w -- which
+   is ASCII and nothing else -- turned an accented name into "Jos Ram rez". */
+function fileStem(name){
+  return (name || 'decklist')
+    .replace(/[\u2013\u2014]/g, '-')
+    .replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim().slice(0, 60) || 'decklist';
+}
+
+/* The same handing-over, for bytes rather than text. */
+function saveZip(files, filename){
+  handTo(new Blob([zipOf(files)], {type: 'application/zip'}), filename);
+}
+
 function save(text, filename, type){
-  const url = URL.createObjectURL(new Blob([text], {type}));
+  handTo(new Blob([text], {type}), filename);
+}
+
+function handTo(blob, filename){
+  const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
   a.download = filename;

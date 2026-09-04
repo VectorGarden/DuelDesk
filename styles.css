@@ -486,14 +486,18 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
    wide as it has. Prose keeps its measure: a paragraph read at this width
    cannot be followed back to the start of the next line. */
 .article--decks{max-width:none}
-.article--decks > .deck{
-  break-inside:avoid;
-  border-top:1px solid var(--line-soft);
-}
+.article--decks > .deck{border-top:1px solid var(--line-soft)}
 @media (min-width:60rem){
-  .article--decks{columns:2; column-gap:2.4rem}
-  /* The index spans both, because it is about all of them. */
-  .article--decks > .deckindex, .article--decks > p{column-span:all}
+  /* A grid and not columns. Columns fill the first before starting the
+     second, so a Top 64 post put decks 1 to 32 down the left and 33 to 63
+     down the right; across a row is the order they are written in, which is
+     the order somebody reads them. */
+  .article--decks{
+    display:grid; grid-template-columns:1fr 1fr;
+    column-gap:2.4rem; align-items:start;
+  }
+  /* Everything that is about the post rather than about one deck spans both. */
+  .article--decks > .deckindex, .article--decks > p{grid-column:1 / -1}
 }
 .article--page p{margin:0 0 1.05rem}
 /* Which event this came from, above the headline. */
@@ -573,6 +577,11 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
 .deckindex{
   margin:0 0 1.4rem; padding:.9rem 1rem; border:1px solid var(--line);
   border-radius:var(--r-md); background:var(--surface);
+}
+/* Every deck in the post, above the list of them. */
+.deckindex__all{
+  display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;
+  margin:.7rem 0 0; padding-top:.7rem; border-top:1px solid var(--line-soft);
 }
 .deckindex__find input{
   width:100%; font:inherit; font-size:.9rem; padding:.45rem .6rem;

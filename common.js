@@ -167,6 +167,135 @@ const heldAt = (place) => place
   ? `<span class="win__where">${esc(place)}</span>`
   : '';
 
+/* Every card's numbers, in one file and without a word of its text.
+
+   A hover wants one card and fetches one shard of 13KB. An export wants a
+   whole deck list, and the worst post in the archive names 642 cards across
+   367 of the 512 shards -- 4.7MB in 367 requests to answer one button. Names
+   and numbers alone are 517KB in one request, and 240KB of it over the wire.
+
+   So the shards answer "what does this card do" and this answers "which card
+   is this", and an export of any size asks only the second. */
+let NUMBERS = null;
+
+async function cardNumbers(){
+  if (!NUMBERS){
+    try {
+      const res = await fetch('/cards/ids.json', {cache: 'no-cache'});
+      NUMBERS = res.ok ? await res.json() : {};
+    } catch {
+      NUMBERS = {};
+    }
+  }
+  return NUMBERS;
+}
+
+/* What a name resolves to, for the files that are made of numbers.
+   [passcode] or [passcode, Konami id] -- 2% of the database has no second. */
+function numbersFor(ids, name){
+  const found = ids[cardKey(name)];
+  if (!found) return null;
+  return found[1] === undefined ? {id: found[0]} : {id: found[0], cid: found[1]};
+}
+
+/* ============================================================
+   A ZIP, BY HAND
+   ------------------------------------------------------------
+   Sixty-three deck lists want to arrive as sixty-three files, and a .ydk has
+   no way of holding more than one -- the format has no separator.
+
+   Written here rather than fetched, because a zip of stored entries is a
+   documented layout and about sixty lines: a header before each file, a
+   directory of them at the end, and a CRC of each. Nothing is compressed --
+   a deck list is a kilobyte and the saving would not pay for the code.
+
+   The names carry accents and em dashes, so the UTF-8 flag is set. macOS's
+   bundled unzip is an old Info-ZIP build that mishandles those whatever the
+   flag says; Finder's own extractor, Python and every modern tool read them
+   correctly.
+   ============================================================ */
+const CRC_TABLE = (() => {
+  const table = new Uint32Array(256);
+  for (let i = 0; i < 256; i++){
+    let c = i;
+    for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1;
+    table[i] = c >>> 0;
+  }
+  return table;
+})();
+
+function crc32(bytes){
+  let c = 0xFFFFFFFF;
+  for (const b of bytes) c = CRC_TABLE[(c ^ b) & 0xFF] ^ (c >>> 8);
+  return (c ^ 0xFFFFFFFF) >>> 0;
+}
+
+/* [{name, text}] -> the bytes of a zip holding them. */
+function zipOf(files){
+  const encoder = new TextEncoder();
+  const parts = [];
+  const directory = [];
+  let at = 0;
+  for (const {name, text} of files){
+    const named = encoder.encode(name);
+    const data = encoder.encode(text);
+    const crc = crc32(data);
+
+    const local = new DataView(new ArrayBuffer(30));
+    local.setUint32(0, 0x04034b50, true);
+    local.setUint16(4, 20, true);              // the version that can read it
+    local.setUint16(6, 0x0800, true);          // the name is UTF-8
+    local.setUint16(8, 0, true);               // stored, not deflated
+    local.setUint16(12, 0x21, true);           // a date, because there must be one
+    local.setUint32(14, crc, true);
+    local.setUint32(18, data.length, true);
+    local.setUint32(22, data.length, true);
+    local.setUint16(26, named.length, true);
+    parts.push(new Uint8Array(local.buffer), named, data);
+
+    const entry = new DataView(new ArrayBuffer(46));
+    entry.setUint32(0, 0x02014b50, true);
+    entry.setUint16(4, 20, true);
+    entry.setUint16(6, 20, true);
+    entry.setUint16(8, 0x0800, true);
+    entry.setUint16(10, 0, true);
+    entry.setUint16(14, 0x21, true);
+    entry.setUint32(16, crc, true);
+    entry.setUint32(20, data.length, true);
+    entry.setUint32(24, data.length, true);
+    entry.setUint16(28, named.length, true);
+    entry.setUint32(42, at, true);
+    directory.push(new Uint8Array(entry.buffer), named);
+    at += 30 + named.length + data.length;
+  }
+  const listed = directory.reduce((n, chunk) => n + chunk.length, 0);
+  const end = new DataView(new ArrayBuffer(22));
+  end.setUint32(0, 0x06054b50, true);
+  end.setUint16(8, files.length, true);
+  end.setUint16(10, files.length, true);
+  end.setUint32(12, listed, true);
+  end.setUint32(16, at, true);
+
+  const all = [...parts, ...directory, new Uint8Array(end.buffer)];
+  const out = new Uint8Array(all.reduce((n, chunk) => n + chunk.length, 0));
+  let put = 0;
+  for (const chunk of all){ out.set(chunk, put); put += chunk.length; }
+  return out;
+}
+
+/* Two decks in a post can be called the same thing -- a name is not an
+   identifier -- and two files in a zip cannot.
+
+   Not "named": app.js has one of those, and these files share a scope. */
+function eachNamedOnce(files){
+  const seen = new Map();
+  return files.map(({name, text}) => {
+    const n = (seen.get(name) ?? 0) + 1;
+    seen.set(name, n);
+    return {name: n === 1 ? name : name.replace(/(\.[^.]+)$/, ` (${n})$1`), text};
+  });
+}
+
 function offsite(url){
   /* Every url here has been through safeUrl(), so it is either an http(s) URL or
      the inert '#'. That is why this needs no guard of its own: '#' resolves
