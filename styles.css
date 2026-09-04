@@ -572,19 +572,37 @@ a.post__t--read:hover::after,a.post__t--read:focus-visible::after{opacity:.9}
    Sized down and nudged up so a row of names still reads as a row: the badge
    is an aside on the name, not a second column.
 
-   The champion carries the page's accent; the places below it are quieter,
-   because a Top 4 badge on four Duelists in every Swiss round should not
-   shout as loudly as the one on the Duelist who won. Each says its own word,
-   so none of them depends on the colour to be read. */
+   Three steps, and quiet is the default. The champion carries the page's
+   accent. Reaching the final carries a wash of it -- a Duelist who played the
+   last match of a tournament did something a Top 32 did not, and both used to
+   be the same grey. Everything below is that grey, because a Top 4 badge on
+   four Duelists in every Swiss round should not shout as loudly as the one on
+   the Duelist who won.
+
+   Three is the most that can be told apart at this size, and the ladder is
+   longer than three -- so the words carry the ordering and the colour only
+   emphasises. Each badge says its own word, and none of them depends on the
+   colour to be read.
+
+   Quiet is the base rather than an opt-out: a placement this stylesheet has
+   never heard of should look like the rest of the field, not like the
+   champion. */
 .place{
   font:600 .62rem/1 var(--mono); letter-spacing:.06em; text-transform:uppercase;
   padding:.14rem .38rem; border-radius:999px;
   margin-left:.35em; vertical-align:.1em; white-space:nowrap;
-  color:var(--accent-ink); background:var(--accent);
-}
-.place--runnerup, .place--top4{
   color:var(--text-2); background:var(--surface-2);
   border:1px solid var(--line-soft);
+}
+.place--champion{
+  color:var(--accent-ink); background:var(--accent); border-color:transparent;
+}
+/* Both names for the same thing: the event page knows who lost the final, and
+   a Duelist's own page knows only how far they got. */
+.place--final, .place--runnerup{
+  color:var(--text);
+  background:color-mix(in srgb, var(--accent) 24%, transparent);
+  border-color:color-mix(in srgb, var(--accent) 42%, transparent);
 }
 
 /* Who won. Sits between the round's heading and its tables, so it reads as part

@@ -141,3 +141,60 @@ test('a seat that is not a Duelist does not link', async () => {
     await page.close();
   }
 });
+
+/* How far they got, as a badge.
+ *
+ * Three steps and no more: the champion in the page's accent, reaching the
+ * final in a wash of it, and everything below in the quiet grey. The ladder is
+ * longer than three, so the words carry the ordering and the colour only
+ * emphasises -- which is why a Top 8 and a Top 32 are deliberately alike, and
+ * why a Final and a Top 32 were not supposed to be.
+ */
+const placeOf = new Function('esc',
+  source.slice(source.indexOf('function place(row)'),
+               source.indexOf('function render(')) + '; return place;')(String);
+
+test('a finalist is marked apart from the field below them', async () => {
+  assert.match(placeOf({ cut: 'Final' }), /place--final/);
+  assert.match(placeOf({ cut: 'Final' }), />final</);
+  for (const cut of ['Top 4', 'Top 8', 'Top 16', 'Top 32', 'Top 64']) {
+    assert.match(placeOf({ cut }), /place--top4/, cut);
+    assert.doesNotMatch(placeOf({ cut }), /place--final/, cut);
+  }
+});
+
+test('winning is still its own mark, and no cut is no mark', async () => {
+  // A Duelist who won the final is the champion, not a finalist: the highest
+  // one only, which is what the badge has always promised.
+  assert.match(placeOf({ won: true, cut: 'Final' }), /place--champion/);
+  assert.equal(placeOf({}), '');
+});
+
+test('quiet is what a badge is by default', async () => {
+  // Before, the accent was the base and the quieter places opted out of it --
+  // so a placement word this stylesheet had never seen would have arrived
+  // wearing the champion's colour. Read off the stylesheet's own rules rather
+  // than computed values: jsdom does not resolve custom properties, so every
+  // computed background here is transparent whatever the rule says.
+  const { loadPage } = await import('./harness.mjs');
+  const page = await loadPage();
+  try {
+    const ruleFor = (sel) => page.run(`(() => {
+      for (const sheet of document.styleSheets) {
+        for (const rule of sheet.cssRules ?? []) {
+          const sels = (rule.selectorText ?? '').split(',').map((s) => s.trim());
+          if (sels.includes(${JSON.stringify(sel)})) return rule.style.cssText;
+        }
+      }
+      return null;
+    })()`);
+    const base = ruleFor('.place');
+    assert.ok(base, '.place is styled');
+    assert.match(base, /--surface-2/, 'the base is the quiet one');
+    assert.doesNotMatch(base, /var\(--accent\)/, 'and not the accent');
+    assert.match(ruleFor('.place--champion'), /var\(--accent\)/,
+      'the champion opts in to it');
+  } finally {
+    await page.close();
+  }
+});

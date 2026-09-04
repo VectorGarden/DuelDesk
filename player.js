@@ -49,6 +49,10 @@ const when = (iso) => {
    reader moving between them is not learning a second vocabulary. */
 function place(row){
   if (row.won) return '<span class="place place--champion">champion</span>';
+  /* Reaching the final is not reaching the Top 32, and both wore the same
+     grey. Every other cut is the quiet one, which is what .place is by
+     default. */
+  if (row.cut === 'Final') return '<span class="place place--final">final</span>';
   if (row.cut) return `<span class="place place--top4">${esc(row.cut)}</span>`;
   return '';
 }
