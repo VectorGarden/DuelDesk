@@ -7267,6 +7267,54 @@ class TestFoldedNames(unittest.TestCase):
             [["1", "Aaron", "Furman", "vs.", "Kobe", "Short"]])
         self.assertNotIn("Aaron Furman", canon)
 
+    def team(self, rows, kind="pairings", rnd=1):
+        """A source as reconcile_names reads one.
+
+        Built rather than parsed: a team table's shape is the parser's
+        business, and what this is about is what the fold does once the rows
+        exist -- a row naming two teams, with the Duelists in the duels
+        underneath.
+        """
+        import types
+        return types.SimpleNamespace(post=types.SimpleNamespace(
+            kind=kind, round=rnd, table=types.SimpleNamespace(rows=rows)))
+
+    def duel(self, a, b):
+        return {"a": {"name": a}, "b": {"name": b}}
+
+    def test_a_team_event_is_read_for_its_Duelists(self):
+        # A team match names the teams and plays the people underneath. Read
+        # only from the sides, a team event has no Duelists in it at all, so
+        # Team YCS Las Vegas 2023 kept "Dominic Eduardo Couch" through nine
+        # rounds of Swiss and "Dominic C." in the cut, as two Duelists.
+        from build import reconcile_names
+        swiss = self.team([{**self.duel("Back For Seconds", "Dino DNA"),
+                            "duels": [self.duel("Dominic Eduardo Couch", "Griffin Ross Gamrat")]}])
+        cut = self.team([{**self.duel("Back For Seconds", "Dino DNA"),
+                          "duels": [self.duel("Dominic C.", "Griffin G.")]}], rnd=2)
+        canon = reconcile_names([swiss, cut])
+        self.assertEqual(canon.get("Dominic C."), "Dominic Eduardo Couch")
+        # And the table is rewritten, or the cut still names somebody else.
+        self.assertEqual(cut.post.table.rows[0]["duels"][0]["a"]["name"],
+                         "Dominic Eduardo Couch")
+
+    def test_two_Duelists_in_one_duel_are_two_Duelists(self):
+        # One Duelist does not play themselves. Collecting the duel's names
+        # puts them in the round's seating, which is what refuses this.
+        from build import reconcile_names
+        one = self.team([{**self.duel("Team A", "Team B"),
+                          "duels": [self.duel("Dominic C.", "Dominic Eduardo Couch")]}])
+        self.assertEqual(reconcile_names([one]), {})
+
+    def test_a_Duelist_is_never_folded_into_the_team_they_played_for(self):
+        # The team and its Duelists are in one row, so they are seated
+        # together, and the rule that one Duelist does not play themselves
+        # keeps a name from being read as a shortening of the team above it.
+        from build import reconcile_names
+        one = self.team([{**self.duel("Ada Fay Lovelace", "Dino DNA"),
+                          "duels": [self.duel("Ada L.", "Kobe Louis Short")]}])
+        self.assertEqual(reconcile_names([one]).get("Ada L."), None)
+
     def test_an_initial_one_Duelist_answers_to_is_expanded(self):
         # Team YCS Las Vegas 2023 seats "Dominic C." in the tables that decided
         # it and "Dominic Eduardo Couch" nowhere, so the event's champions were
