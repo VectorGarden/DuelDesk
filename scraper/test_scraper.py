@@ -7564,6 +7564,47 @@ class TestWhatAPostIs(unittest.TestCase):
                          {"pairings", "standings", "feature", "deck",
                           "result", "news"})
 
+    def page_rules(self):
+        """The questions app.js asks, in the order it asks them.
+
+        Read out of the source rather than run: what matters here is not the
+        answers -- the archive corpus checks those -- but that the two
+        implementations are the same rule. A pattern added to one side and not
+        the other passes a corpus test until somebody publishes a title that
+        tells them apart.
+        """
+        import re
+        app = (Path(__file__).resolve().parent.parent / "app.js").read_text(encoding="utf-8")
+        at = app.index("function kindFrom(t)")
+        body = app[at:app.index("\n}", at)]
+        test = re.compile(r"(!)?/((?:[^/\\\n]|\\.)+)/\.test\(t\)")
+        rules, held = [], []
+        for token in re.finditer(r"(?P<t>(!)?/(?:[^/\\\n]|\\.)+/\.test\(t\))"
+                                 r"|(?P<r>return '\w+')", body):
+            if token.group("t"):
+                m = test.match(token.group("t"))
+                held.append((bool(m.group(1)), m.group(2)))
+            elif held:
+                kind = re.search(r"return '(\w+)'", token.group("r")).group(1)
+                rules.append((kind, tuple(held)))
+                held = []
+        return rules
+
+    def test_the_page_asks_the_same_questions_in_the_same_order(self):
+        # Two implementations of one rule, compared as rules. The corpus in
+        # kinds-archive.json catches a rule that answers differently about a
+        # title somebody published; this catches one that would, if anybody
+        # ever published the title -- and it catches the order changing, which
+        # decides "Winner Deck Lists" and which no single title need reveal.
+        from parse import KINDS, _NOT_DECK_COVERAGE
+        mine = []
+        for kind, pattern in KINDS:
+            held = [(False, pattern)]
+            if kind == "deck":
+                held.append((True, _NOT_DECK_COVERAGE.pattern))
+            mine.append((kind, tuple(held)))
+        self.assertEqual(self.page_rules(), mine)
+
     def test_the_fixture_covers_every_kind_the_page_can_show(self):
         # A shared fixture only stops a drift it looks at.
         got = {c["kind"] for c in self.cases()}

@@ -158,6 +158,9 @@ function roundFrom(t){
    Singular and plural throughout: the blog titles a final "Final Pairing" and
    a multi-winner post "Winners". Titles with no keyword at all fall back to
    'news' rather than guess. */
+/* The same rule as parse.KINDS, in the same order, deliberately written twice:
+   see the comment there for why, and for the two tests that keep them one
+   rule. Change either and change both. */
 function kindFrom(t){
   if (/\bpairings?\b/.test(t))                                                 return 'pairings';
   if (/\bstandings\b|\bpoint totals\b/.test(t))                                return 'standings';
