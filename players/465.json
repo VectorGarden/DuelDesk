@@ -654,9 +654,6 @@
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Wyatt B.": {
-    "as": "Wyatt Leland Brannock"
-  },
   "Vivek S.": {
     "as": "Vivek Naresh Sreenivasan"
   },
@@ -666,10 +663,13 @@
   "Yucheng L.": {
     "as": "Yucheng Li"
   },
-  "Max C.": {
-    "as": "Max Cardenas"
+  "Wyatt B.": {
+    "as": "Wyatt Leland Brannock"
   },
   "Brandon F.": {
     "as": "Brandon Bryan Ferrell"
+  },
+  "Max C.": {
+    "as": "Max Cardenas"
   }
 }

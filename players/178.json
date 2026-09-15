@@ -640,16 +640,16 @@
   "Juan Carlos Bustillos Bravo": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Hansel A.": {
-    "as": "Hansel Erik Aguero"
-  },
   "Alonso B.": {
     "as": "Alonso Capone Baca"
   },
-  "Dustin S.": {
-    "as": "Dustin Ulrich Snow"
+  "Hansel A.": {
+    "as": "Hansel Erik Aguero"
   },
   "Kristin S.": {
     "as": "Kristin Alexandra Soler"
+  },
+  "Dustin S.": {
+    "as": "Dustin Ulrich Snow"
   }
 }
