@@ -360,7 +360,8 @@
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
   "Bryan Alfredo Delgado Gutierrez": [
-    {"e":"2022-team-ycs-quito"}
+    {"e":"2022-team-ycs-quito"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "David Joseph": [
     {"e":"2022-ycs-charlotte"}
@@ -458,7 +459,8 @@
   ],
   "Humberto Andres Torres Rodriguez": [
     {"e":"2023-ycs-cancun-mexico"},
-    {"e":"2024-10-cancun-mexico"}
+    {"e":"2024-10-cancun-mexico"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Dat Tri Tat Nguyen": [
     {"e":"2024-08-ycs-sacramento"}
@@ -559,13 +561,13 @@
   "Daniel Saleme Vila": {
     "as": "Daniel I Saleme Vila"
   },
-  "Bradlly K.": {
-    "as": "Bradlly James Keierleber"
+  "Matthew M.": {
+    "as": "Matthew Mace McKinney"
   },
   "Stephen M.": {
     "as": "Stephen Neil Muldoon Marquez"
   },
-  "Matthew M.": {
-    "as": "Matthew Mace McKinney"
+  "Bradlly K.": {
+    "as": "Bradlly James Keierleber"
   }
 }

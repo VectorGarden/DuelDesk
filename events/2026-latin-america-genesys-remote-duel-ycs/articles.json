@@ -1,0 +1,1292 @@
+{
+  "https://yugiohblog.konami.com/2026/event-information/ycs-houston-tx-2026-main-event-information/": [
+    {
+      "t": "p",
+      "r": [{"b":"Yu-Gi-Oh! Championship Series Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Genesys Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Genesys Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Advanced Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Advanced Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Main Event Prizing Images"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Travel"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"COVID-19 Restrictions"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Yu-Gi-Oh! Championship Series Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Where is YCS Houston, TX ?"}]
+    },
+    {
+      "t": "p",
+      "r": ["A: YCS Houston, TX 2026 will be held at:"]
+    },
+    {
+      "t": "p",
+      "r": ["Reliant Center\nHall C\n8600 Kirby Drive\nHouston, TX 77054\nUnited States"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the attendance capacity for this YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Due to safety, health, and fire regulations, we have seating for up to 2,500 Duelists for this YCS (this is the total Duelist venue capacity). We urge you to pre-register online to have a better chance of being able to play in the Main Events. If the venue reaches capacity, additional Duelists will not be allowed to enter the hall. As space opens up from the Main Events, we will offer numerous Public Events that you will still be able to participate in throughout the weekend."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Main Events will be at YCS Houston, TX?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," YCS Houston, TX will feature two Main Events. The Genesys Main Event Day 1 will be held on Friday, October 16",{"s":"th"}," and Day 2 on Sunday, October 18",{"s":"th"}," . The Advanced Main Event Day 1 will be held on Saturday, October 17",{"s":"th"}," and Day 2 on Sunday, October 18",{"s":"th"},". If a Duelist makes Day 2 for both events, they will need to choose which Day 2 they want to compete in once the standings are posted at the end of Saturday, October 17",{"s":"th"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What are the Deck-building requirements for the Main Events?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Duelists can find detailed information about Deck-building for Advanced and Genesys on the Deck construction page, https://www.yugioh-card.com/en/limited/"]
+    },
+    {
+      "t": "p",
+      "r": ["Here is the basic information:"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Advanced"}]
+    },
+    {
+      "t": "p",
+      "r": ["Decks must follow the Forbidden & Limited List, which can be viewed at https://www.yugioh-card.com/en/limited/list_2026-05-18/"]
+    },
+    {
+      "t": "p",
+      "r": ["For information on how to submit your Advanced Deck List, please see ",{"b":"When do I turn in my Deck List for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Genesys"}]
+    },
+    {
+      "t": "p",
+      "r": ["Genesys rules are simple:"]
+    },
+    {
+      "t": "li",
+      "r": ["No Link Monsters or Pendulum Monsters are allowed. All other cards are allowed. The original field layout is used, with no Extra Monster Zones nor Pendulum Zones."]
+    },
+    {
+      "t": "li",
+      "r": ["The standard Forbidden & Limited Cards list is not used. All those cards can be used, except Link Monsters and Pendulum Monsters. Usual limit of 3 copies max of any card still applies."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck construction uses a point system. Some cards are assigned a point value; most cards cost zero points. The total point cost of cards in your Main Deck, Extra Deck, and Side Deck (combined) cannot exceed the point cap for that event."]
+    },
+    {
+      "t": "p",
+      "r": ["For the Genesys Main Event, we will use the 100 Points cap for Deck-building. Click the link below for the current Genesys Points list. Genesys Deck List must be submitted through NEURON, the Yu-Gi-Oh! TCG support app."]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.yugioh-card.com/en/genesys"]
+    },
+    {
+      "t": "p",
+      "r": ["For information on how to submit your Genesys Deck List, please see ",{"b":"How do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Rounds will the Yu-Gi-Oh! Championship Series have?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The total number of Duelists in each of the Main Events, Advanced and Genesys, will determine the number of Rounds that are played in that specific Main Event."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Duelists will advance to Day 2?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," If there are 256 or fewer Duelists registered for one of the Main Events, Advanced or Genesys, then the Top 64 Duelists OR Duelists with a minimum of 15 Points, whichever number is larger, will advance to Day 2 for that specific Main Event."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 257 – 512 Duelists registered for the YCS, then the Top 64 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 513 – 1024 Duelists registered for the YCS, then the Top 128 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 1025 – 2048 Duelists registered for the YCS, then the Top 256 Duelists OR Duelists with a minimum of 21 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 2049 or more Duelists registered for the YCS, then the Top 256 Duelists OR Duelists with a minimum of 21 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What cards are legal for play?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Please check the “Products” page online at https://www.yugioh‐card.com/en/products/ for the most current legality dates of Yu-Gi-Oh! TRADING CARD GAME product releases, prior to preparing your Deck for the event."]
+    },
+    {
+      "t": "p",
+      "r": ["Cards that have been altered from their original appearance with surface decoration may be used for play"]
+    },
+    {
+      "t": "p",
+      "r": ["only if the alterations do not obscure any portion of the card text, make the illustration difficult to recognize, or make the card distinguishable from other cards in the Deck while it is face-down."]
+    },
+    {
+      "t": "p",
+      "r": ["If a card’s surface decoration renders the card unrecognizable at first glance, then the card is not allowed for tournament play."]
+    },
+    {
+      "t": "p",
+      "r": ["The Head Judge of the event has final arbitration on whether or not altered cards may be used at the tournament. Duelists are responsible for determining whether or not their altered cards are acceptable for use before the start of the tournament."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Will there be meal breaks during the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": ["A: As there will be food and drinks available inside the tournament hall, there will not be any meal breaks scheduled into the tournament."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Who should I contact if I have questions about the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Tournament Organizer: The Side Deck"},"\nEmail: info@thesidedeck.com"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Registration"},"\nEmail: us-ygo-registration@kde-us.com"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"KDE-US Representative"},"\nEmail: us-opsupport@konami.com with the subject “Question for YCS Houston 2026”"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Will there be coverage of the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Yes! There will be online coverage with Feature Matches and other updates at the YCS available here:"]
+    },
+    {
+      "t": "p",
+      "r": ["Event Coverage blog – Event updates, Quick Questions, Pairings, and Standings"]
+    },
+    {
+      "t": "p",
+      "r": ["Livestream of Feature Matches and the Top Cut Matches will be streamed on our Twitch and YouTube channels. These channels can be found at:"]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.youtube.com/user/OfficialYuGiOhTCG"]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.twitch.tv/officialyugiohtcg"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When is the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the Booster Pack purchase requirement to register for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," To register for the Genesys Main Event, Duelists will pay $25.00 USD to receive five (5) booster packs and registration in the event. This is the cost of five (5) booster packs in the local currency, including any taxes and fees.\n\nRegistration for this event, including payment, must be completed online at https://registration.yugioh-card.com. The Booster Packs purchased when registering may be picked up on site when checking in for the event."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the registration schedule for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The registration schedule for the Genesys Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Schedules are subject to change and may be updated before the event begins. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Online registration is open till the End Time and Date listed above or until available seats sell out, whichever comes first. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Deck Lists MUST be submitted by the Deck List Due Date via NEURON. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["See ",{"b":"How do I turn in my Deck List for the Genesys Main Event?"}," For more information"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When can I register for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," For this YCS, Duelists will need to register online to secure a seat to compete in the Genesys Main Event."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists can register online here:"]
+    },
+    {
+      "t": "li",
+      "r": ["https://registration.yugioh-card.com/"]
+    },
+    {
+      "t": "li",
+      "r": ["If you have not used the site to register for a YCS or WCQ event, you will need to create an account in order to register. You can do this at any time, you do not need to wait for the event registration to open to register an account."]
+    },
+    {
+      "t": "li",
+      "r": ["Registration will remain open until either all available seats in the Genesys Main Event are sold out or until Thursday, October 15, 2026 at 12:00 PM CT (whichever comes first)."]
+    },
+    {
+      "t": "li",
+      "r": ["Space is limited."]
+    },
+    {
+      "t": "li",
+      "r": [{"b":"Duelists who successfully register must still arrive at the YCS and check in on Thursday, October 15, 2026 between 12:00 PM CT and 6:00 PM CT to confirm their seat in the Tournament or their seat will be forfeited, and their entry will be refunded after the YCS. Duelists who have also registered for the Advanced Main Event can also check in for the Advanced Main Event at this time."}]
+    },
+    {
+      "t": "li",
+      "r": ["If you are not able to check in on Thursday, October 15, 2026 prior to 6:00 PM CT due to travel or other issues, you will need to contact Yu-Gi-Oh! Registration staff at us-ygo-registration@kde-us.com no later than 11:00 AM CT on Thursday, October 15, 2026 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "li",
+      "r": ["Any Duelist that does not attend a YCS they registered for and does not reach out to the registration website team beforehand will be blocked from registering online for future YCS events."]
+    },
+    {
+      "t": "p",
+      "r": ["We urge you to register online for the event due to seating capacity."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Once you have registered for the Genesys Main Event you will need to go into NEURON and submit your Genesys Deck List."]
+    },
+    {
+      "t": "li",
+      "r": ["The YCS Houston, TX Genesys Main Event will appear in the Confirm/Manage My Tournaments section on the Events tab between 24 and 48 hours after you register for the event."]
+    },
+    {
+      "t": "li",
+      "r": ["If it has been more than 48 hours since you registered and the event is not showing up in NEURON please contact us-ygo-registration@kde-us.com. Please provide your full name and the CARD GAME ID you used to register for YCS Houston 2026 Genesys Main Event."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the Deck List deadline of 2:00 PM CT Thursday, October 15, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Deck Lists are due through NEURON by 2:00 PM CT on Thursday, October 15, 2026."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists who do not turn in their Deck Lists by this deadline, will ",{"b":"automatically"}," forfeit their seat and their entry will be refunded after the YCS. Any Duelist that does not attend a YCS they registered for and does not reach out to the registration website team at us-ygo-registration@kde-us.com beforehand will be blocked from registering online for future YCS/WCQ events."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck Lists must be submitted through NEURON. Physical copies of a Deck List will not be accepted onsite for the YCS."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the registration deadline of 2:00 PM CT on Thursday, October 15, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": ["Q: ",{"b":"What is the event schedule for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": ["A: The event schedule for the Genesys Main Event is:\n\n"]
+    },
+    {
+      "t": "p",
+      "r": ["* Duelists who are competing in both Genesys and Advanced may also check in for Advanced on Thursday. Advanced Deck Lists must be submitted to check in but can still beupdated and resubmitted up until the Advanced Deck List deadline of 2:00 PM CT on Friday, October 15, 2026."]
+    },
+    {
+      "t": "p",
+      "r": ["** Alternate On-Site Check-In is only for Duelists who email the event contact to arrange it if they are unable to arrive at the venue by 6:00 PM CT on Thursday, October 15, 2026. Duelists MUST email us-ygo-registration@kde-us.com no later than 11:00 AM CT on Thursday, October 15, 2026 to secure this Alternate Check-In***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I check in for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Registered Duelists just need to arrive onsite at the venue between 12:00 PM CT and 6:00 PM CT on Thursday, October 15, 2026 and follow the signs to check in and confirm your seat in the Genesys Main Event. At this time Duelists will receive their booster packs once they are confirmed at check in. If you are not able to check in on Thursday, October 15, 2026 prior to 6:00 PM CT due to travel or other issues, you will need to contact Yu-Gi-Oh! registration staff at us-ygo-registration@kde-us.com no later than 11:00 AM CT on Thursday, October 15, 2026 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": ["*In addition to the other prizes for 1st place, the winner will receive complimentary travel and accommodation for the next Genesys Championship in their territory (North and Latin America only)."]
+    },
+    {
+      "t": "p",
+      "r": ["** Not all Yu-Gi-Oh! Cards can be made into Giant Cards see https://www.yugioh-card.com/en/events/faq/event_prizing/ for details."]
+    },
+    {
+      "t": "p",
+      "r": ["*** The YCS Prize Card Pack will be available starting at the 1st Round of Swiss on Day 2 based on standings announced at the end of Day 1. Duelists may pick up their packs at the main stage from the start of the 1st Round of Swiss on Day 2 up until the start of Top 8."]
+    },
+    {
+      "t": "p",
+      "r": ["The Ultra Rare YCS Prize Card and Super Rare YCS Prize Card will be awarded after Final Swiss Standings are determined, prior to the Top 8 cut. Duelists must still be enrolled in the tournament at the end of the final Round of Swiss and ranked in the Top 16 or Top 32 respectively to receive these Prize Cards."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Sleeves"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Metal Dice Set"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Top Cut Game Mat"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"After Genesys Swiss Rounds Giant Card"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Advanced Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When is the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": ["Duelists participating in the Genesys Main Event may also register on Thursday October 15 when they are checking in for Genesys."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the Booster Pack purchase requirement to register for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," To register for the Advanced Main Event, Duelists will pay $25.00 USD to receive five (5) booster packs and registration in the event. This is the cost of five (5) booster packs in the local currency, including any taxes and fees.\n\nRegistration for this event, including payment, must be completed online at https://registration.yugioh-card.com. The Booster Packs purchased when registering may be picked up on site when checking in for the event."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the registration schedule for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The registration schedule for the Advanced Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Schedules are subject to change and may be updated before the event begins. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Online registration is open till the End Time and Date listed above or until available seats sell out, whichever comes first. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Deck Lists MUST be submitted by the Deck List Due Date via the website where you registered. ***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When can I register for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," For this YCS, Duelists will need to register online to secure a seat to compete in the Advanced Main Event."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists can register online here:"]
+    },
+    {
+      "t": "li",
+      "r": ["https://registration.yugioh-card.com/"]
+    },
+    {
+      "t": "li",
+      "r": ["If you have not used the site to register for a YCS or WCQ event, you will need to create an account in order to register. You can do this at any time, you do not need to wait for the event registration to open to register an account."]
+    },
+    {
+      "t": "li",
+      "r": ["Registration will remain open until either all available seats in the Advanced Main Event are sold out or until Friday, October 16, 2026 at 12:00 PM CT (whichever comes first)."]
+    },
+    {
+      "t": "li",
+      "r": ["Space is limited."]
+    },
+    {
+      "t": "li",
+      "r": [{"b":"Duelists who successfully register must still arrive at the YCS and check in on Friday, October 16, 2026 between 12:00 PM CT and 6:00 PM CT to confirm their seat in the Tournament or their seat will be forfeited, and their entry will be refunded after the YCS. If you are also playing in the Genesys Main Event, you may also check in for the Advanced Main Event on Thursday, October 15, 2026 between 12:00 PM CT and 6:00 PM CT."}," You must already have submitted a Deck List for the Advanced Main Event, but you can make changes to your Deck List until Friday 2PM CT. You do not need to check in on Friday for the Advanced Main Event if you check in on Thursday."]
+    },
+    {
+      "t": "li",
+      "r": ["If you are not able to check in on Friday, October 16, 2026 prior to 6:00 PM CT due to travel or other issues, you will need to contact Yu-Gi-Oh! Registration staff at us-ygo-registration@kde-us.com no later than 11:00 AM CT on Friday, October 16, 2026 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "li",
+      "r": ["Any Duelist that does not attend a YCS they registered for and does not reach out to the registration website team beforehand will be blocked from registering online for future YCS events."]
+    },
+    {
+      "t": "p",
+      "r": ["We urge you to register online for the event due to seating capacity."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When do I turn in my Deck List for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Deck Lists are due online by 2:00 PM CT on Friday, October 16, 2026."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists who do not turn in their Deck Lists by this deadline, will ",{"b":"automatically"}," forfeit their seat and their entry will be refunded after the YCS. Any Duelist that does not attend a YCS they registered for and does not reach out to the registration website team at us-ygo-registration@kde-us.com beforehand will be blocked from registering online for future YCS/WCQ events."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck Lists must be submitted through the online system. Physical copies of a Deck List will not be accepted onsite for the YCS."]
+    },
+    {
+      "t": "li",
+      "r": ["Even if you are participating in the Genesys Main Event on Friday, this Deck submission deadline still applies."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the registration deadline of 2:00 PM CT on Friday, October 16, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the event schedule for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": ["A: The event schedule for the Advanced Main Event is:\n\n"]
+    },
+    {
+      "t": "p",
+      "r": ["* Duelists that are competing in both Genesys and Advanced may also check in for Advanced on Thursday, October 15. Advanced Deck Lists must be submitted to check in but can still beupdated and resubmitted up until the Advanced Deck List deadline of 2:00 PM CT on Friday, October 16, 2026."]
+    },
+    {
+      "t": "p",
+      "r": ["** Alternate On-Site Check-In is only for Duelists who email the event contact to arrange it if they are unable to arrive at the venue by 6:00 PM CT on Friday October 16, 2026. Duelists MUST email us-ygo-registration@kde-us.com no later than 11:00 AM CT on Friday, October 16, 2026 to secure this Alternate Check-In***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I check in for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Registered Duelists just need to arrive onsite at the venue between 12:00 PM CT and 6:00 PM CT on Friday, October 16, 2026 and follow the signs to check in and confirm your seat in the Advanced Main Event. At this time Duelists will receive their booster packs once they are confirmed at check-in. If you are not able to check in on Friday, October 16, 2026 prior to 6:00 PM CT due to travel or other issues, you will need to contact Yu-Gi-Oh! registration staff at us-ygo-registration@kde-us.com no later than 11:00 AM CT on Friday, October 16, 2026 to make alternative check-in arrangements. If you are also competing in the Genesys Main Event, you can check in for both during the Genesys Main Event check in on Thursday, October 15. Please see ",{"b":"Genesys Main Event Information"}," for details."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Advanced Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": ["*In addition to the other prizes for 1st place, the winner will receive complimentary travel and accommodation for the next WCQ in their territory (North and Latin America only)."]
+    },
+    {
+      "t": "p",
+      "r": ["** Not all Yu-Gi-Oh! Cards can be made into Giant Cards see https://www.yugioh-card.com/en/events/faq/event_prizing/ for details."]
+    },
+    {
+      "t": "p",
+      "r": ["*** The YCS Prize Card Pack will be available starting at the 1st Round of Swiss on Day 2 based on standings announced at the end of Day 1. Duelists may pick up their packs at the main stage from the start of the 1st Round of Swiss on Day 2 up until the start of Top 8."]
+    },
+    {
+      "t": "p",
+      "r": ["The Ultra Rare YCS Prize Card and Super Rare YCS Prize Card will be awarded after Final Swiss Standings are determined, prior to the Top 8 cut. Duelists must still be enrolled in the tournament at the end of the final Round of Swiss and ranked in the Top 16 or Top 32 respectively to receive these Prize Cards."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Sleeves"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Metal Dice Set"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Top Cut Game Mat"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"After Advanced Swiss Rounds Giant Card"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Main Event Prizing Images"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Travel"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the closest airport for this YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Nearest Airport(s):\n\n"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What’s the best way to get to the tournament from the airports?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," UBER, LYFT, and other app-based rideshare apps are available for pickup and drop off at the airport."]
+    },
+    {
+      "t": "p",
+      "r": ["You can find Ride Share App pickup instructions for George Bush Intercontinental Airport here: https://www.fly2houston.com/iah/taxis-ride-apps"]
+    },
+    {
+      "t": "p",
+      "r": ["You can find other Group Transportations options for George Bush Intercontinental Aiport here: https://www.fly2houston.com/iah/ground-transportation"]
+    },
+    {
+      "t": "p",
+      "r": ["You can find Ride Share App pickup instructions for William P. Hobby Airport here: https://www.fly2houston.com/hou/taxis-ride-apps"]
+    },
+    {
+      "t": "p",
+      "r": ["You can find other Group Transportations options for William P. Lobby Aiport here: https://www.fly2houston.com/hou/ground-transportation"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Are there any nearby Hotels?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Reliant Park is located in near Reliant Stadium, so it has many hotels nearby in many price brackets."]
+    },
+    {
+      "t": "p",
+      "r": ["You can find more hotel options at https://maps.app.goo.gl/JDX3Z7atHndU5cEbA"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"COVID-19 Restrictions"}]
+    },
+    {
+      "t": "p",
+      "r": ["Konami Digital Entertainment, Inc. (KDE-US) strongly encourages, but does not require, all attendees to be fully vaccinated and to wear a mask. However, KDE-US reserves the right to implement a mandatory mask and/or vaccine requirement for any event on short notice, if deemed necessary. If this event does require attendees to wear a mask, KDE-US will make all available efforts to notify all attendees. However, it is your responsibility to confirm you have read and understood the most current KDE-US COVID-19 policy prior to your arrival at the event, by checking this FAQ section, which may be updated from time to time."]
+    },
+    {
+      "t": "p",
+      "r": ["Please note that all attendees must follow measures outlined in the KDE-US COVID-19 Addendum to help prevent the spread of illness. The COVID-19 addendum can be found at https://www.yugioh-card.com/en/downloads/penalty_guide/COVID19_Addendum_v_1.pdf."]
+    },
+    {
+      "t": "p",
+      "r": ["Any attendee who has or develops symptoms consistent with COVID-19, regardless of vaccination status or other measures taken, should refrain from attending this event. If symptoms develop during this event, attendees should immediately notify event staff, withdraw from this event and leave the venue. If event staff observe symptoms consistent with COVID-19, they may direct impacted individuals to leave the venue. This can include the symptomatic individual and those who were in close proximity with such individual for extended periods of time."]
+    },
+    {
+      "t": "p",
+      "r": ["By attending this event in person, all attendees understand and acknowledge that they risk exposure to and contraction of potentially dangerous diseases and viruses, including the coronavirus disease (COVID-19), severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), and any other diseases or viruses not listed, while traveling to, from, and during the event. By attending this event, all attendees agree to knowingly and freely assume all such risks and enter the venue at their own risk."]
+    },
+    {
+      "t": "p",
+      "r": ["KDE-US makes no representations that it has taken any safety precautions that relate to infectious diseases or exposure, and even if KDE-US did proactively take preventative measures, KDE-US has made no representation that those measures will in any way reduce or prevent the risks associated with exposure. Attendees release KDE-US, its employees and representatives, and all persons involved WITH RESPECT TO ANY AND ALL ILLNESS, DISABILITY, DEATH, or loss or damage to person or property, to the fullest extent permitted by law. BY ATTENDING IN THIS EVENT, ATTENDEES ARE DEEMED TO HAVE GIVEN A FULL RELEASE OF LIABILITY TO KDE-US TO THE FULLEST EXTENT PERMITTED BY LAW."]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/event-information/latin-america-genesys-remote-duel-ycs-2026-main-event-information/": [
+    {
+      "t": "p",
+      "r": [{"b":"Registration Schedule (Main Event)"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Registration Site List"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Registration Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Main Event Prizing"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"REGISTRATION SCHEDULE (MAIN EVENT)"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"How to Register for the Genesys Remote Duel Yu-Gi-Oh! Championship Series 2026 (Genesys Remote Duel YCS)"}]
+    },
+    {
+      "t": "p",
+      "r": ["*** Schedules are subject to change and may be updated before the event begins. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Pre-registration and Deck List submission period will open till the end time and date listed above.***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Registration will take place online or in person at select OTS throughout Latin America ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Deck Lists MUST be submitted by the Deck List Due Date via NEURON. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["See ",{"b":"How do I turn in my Deck List for the Genesys Main Event?"}," For more information"]
+    },
+    {
+      "t": "p",
+      "r": ["***Duelists who register during the late registration period listed above will receive a Match Loss for Round 1. Late registration will close promptly at 12:00 PM CST on Thursday September 17",{"s":"th"},", and no additional entries will be accepted after that time.***"]
+    },
+    {
+      "t": "p",
+      "r": ["Registration for the Genesys Remote Duel YCS will require two steps:"]
+    },
+    {
+      "t": "li",
+      "r": [{"b":"STEP 1:"}," Based on your country of residence, you may register online or by visiting one of the OTS listed below for the Genesys Remote Duel YCS."]
+    },
+    {
+      "t": "li",
+      "r": [{"b":"STEP 2:"}," Once Duelists have registered for the Genesys Remote Duel YCS at the OTS corresponding to their country of residence, all Duelists will then go into NEURON to submit their Genesys Deck List."]
+    },
+    {
+      "t": "p",
+      "r": ["See ",{"b":"How do I turn in my Deck List for the Genesys Main Event?"}," For more information"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Registration Site List (this is for registration ONLY)"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"IMPORTANT"},": As of the time of posting, due to Brazil’s data protection authority (ANPD) suspending Discord’s livestreaming features in Brazil, residents of Brazil are currently unable to participate in this Remote Duel YCS."]
+    },
+    {
+      "t": "p",
+      "r": ["We are monitoring the situation closely and will provide updates if circumstances change. Please stay tuned to our Portuguese social media channels for the latest information:"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"X(Twitter):"}," https://x.com/YuGiOh_TCG_BR\n ",{"b":"Facebook:"}," https://www.facebook.com/OfficialYuGiOhTCG.BR/"]
+    },
+    {
+      "t": "p",
+      "r": ["If you reside in Latin America and your country of residence is not listed above, please email opsupport.lat@devir.com and state that you would like to participate in the Genesys Remote Duel YCS but reside in a country without an OTS hosting registration."]
+    },
+    {
+      "t": "p",
+      "r": ["Please include what country you are from and a Devir representative will be in contact with you to complete your registration."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"REMEMBER!"}," You must register both with the OTS in your country and also submit your Deck List via NEURON."]
+    },
+    {
+      "t": "p",
+      "r": ["Once you register, you can join the Remote Duel YCS Discord server at https://discord.com/invite/KzAzbhYjSf"]
+    },
+    {
+      "t": "p",
+      "r": ["There will not be any registration to the Genesys Remote Duel YCS outside of the pre-registration and late registration windows provided above. All Duelists who register during the late registration period listed above will receive a Match Loss for Round 1."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Latin America Remote Duel YCS Registration Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I enter the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Depending on your country of residence, you will pay the equivalent to the cost of the booster packs specified in the table above to receive the same number of booster packs of the current release ",{"i":"Chaos Origins"}," (CORI)",{"i":", and"}," registration in the event. Please refer to the ",{"b":"Registration Site List"}," above for the number of booster packs required for entry into this YCS."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I register for the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," All registrations for the Genesys Remote Duel YCS will be done via one of the Tournament Organizers assisting KDE-US in hosting this event from the list posted at the beginning of this FAQ. There will be at least one (1) OTS accepting registration for the Genesys Remote Duel YCS in most countries within Latin America. If your country of residence is not listed, please see the ",{"b":"What should I do if my country of residence is not listed on the registration site list?"}," section below."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Duelists are required to have a mailing address in a Latin American country to participate in this event. When you register for the event, you will indicate where you would like your participation prizes to be shipped (to a local OTS or to your residence) or if you would like to pick them up directly from the OTS you registered at for the Genesys Remote Duel YCS."}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Once you have registered for the Genesys Remote Duel YCS at the OTS corresponding to your country of residence, you will then go into NEURON to submit your Genesys Deck List. The Genesys Remote Duel YCS will appear in the Confirm/Manage My Tournaments section on the Events tab between 24 and 48 hours after you register for the event."]
+    },
+    {
+      "t": "li",
+      "r": ["If it has been more than 48 hours since you registered and the event is not showing up in NEURON please contact la-opsupport@kde-us.com. Please provide your full name, the CARD GAME ID used to register for the Genesys Remote Duel YCS, and the name of the OTS where you registered."]
+    },
+    {
+      "t": "li",
+      "r": ["Once a Deck List has been submitted, you can update and resubmit it up until the Deck List deadline of 12:00 PM CST Wednesday, September 16",{"s":"th"},", 2026."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists who do not submit their Deck Lists by this deadline will automatically forfeit their reserved seat. To request a refund, they must contact the OTS through which they registered, provided that all booster packs received remain unopened."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck Lists must be submitted through NEURON. Physical copies of a Deck List will not be accepted onsite for the YCS."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Who is eligible to compete in the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," To take part and compete in the Genesys Remote Duel YCS, a Duelist needs to meet the following criteria."]
+    },
+    {
+      "t": "p",
+      "r": ["Duelists must have NEURON downloaded and set up with their CARD GAME ID on their smart device to compete in the Genesys Remote Duel YCS and be in good standing. You can click here for a full guide on how to link your CARD GAME ID to your NEURON App."]
+    },
+    {
+      "t": "li",
+      "r": ["Suspended Duelists are not considered to be in good standing and may not register or compete"]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists must have a mailing address in a Latin American country."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelist must have stable internet connection."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists will need a webcam, smartphone or tablet to display their field to their opponent."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What should I do if my country of residence is not listed on the registration site list?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," If you reside in Latin America and your country of residence is not listed above, please email opsupport.lat@devir.com and state that you would like to participate in the Genesys Remote Duel YCS but reside in a country without an OTS hosting Registration."]
+    },
+    {
+      "t": "p",
+      "r": ["Please include what country you are from and a Devir representative will be in contact with you in order to complete your registration."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the format for the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The Genesys Remote Duel YCS will use the 100 Points cap for Deck-building. Click the link below for the current Genesys Points list. Genesys Deck List must be submitted through NEURON, the Yu-Gi-Oh! TCG support app."]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.yugioh-card.com/en/genesys"]
+    },
+    {
+      "t": "p",
+      "r": ["Genesys rules are simple:"]
+    },
+    {
+      "t": "li",
+      "r": ["No Link Monsters or Pendulum Monsters are allowed. All other cards are allowed. The original field layout is used, with no Extra Monster Zones nor Pendulum Zones."]
+    },
+    {
+      "t": "li",
+      "r": ["The standard Forbidden & Limited Cards list is not used. All those cards can be used, except Link Monsters and Pendulum Monsters. Usual limit of 3 copies max of any card still applies."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck construction uses a point system. Some cards are assigned a point value; most cards cost zero points. The total point cost of cards in your Main Deck, Extra Deck, and Side Deck (combined) cannot exceed the point cap for that event."]
+    },
+    {
+      "t": "p",
+      "r": ["Certain types of card effects involving Private Knowledge cannot be successfully resolved in Remote Duel and are considered to be Forbidden in Remote Duel only."]
+    },
+    {
+      "t": "p",
+      "r": ["Cards Forbidden in Remote Duel are not Forbidden for in-person play, therefore they are not displayed on the Genesys or Traditional Format Forbidden & Limited List."]
+    },
+    {
+      "t": "p",
+      "r": ["Please consult with the Head Judge for the event if you have questions about the legality of cards in your Deck."]
+    },
+    {
+      "t": "p",
+      "r": ["This Forbidden List is ",{"b":"in addition to"}," the Forbidden and Limited list posted on the website."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What Discord server will host the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Due to limitations inherent to Discord, Day 1 of the Genesys Remote Duel YCS may be held on multiple Discord servers. Each additional server will be assigned a group of table numbers. Please make sure you have joined the Discord server at the top of this FAQ before the start of Round 1 so that you are prepared to play immediately. If needed, the invite links for the additional servers will be found in the ",{"b":"#announcements"}," channel on the Monster Sprim Remote Duel YCS Discord server."]
+    },
+    {
+      "t": "li",
+      "r": ["You can join the Genesys Remote Duel YCS Discord server at https://discord.com/invite/KzAzbhYjSf"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Where can I find information about the Advanced Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Click ",{"b":"here"}," for information about the Advanced Remote Duel YCS."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Remote Duel YCS 2026 EVENT INFORMATION"}]
+    },
+    {
+      "t": "p",
+      "r": ["This will be a two-day Remote Duel tournament using the Genesys 100 Points cap for Deck-building Constructed Decks in the Swiss format:"]
+    },
+    {
+      "t": "li",
+      "r": ["Best 2 out of 3 Matches"]
+    },
+    {
+      "t": "li",
+      "r": ["Swiss Rounds followed by a Single-Elimination Playoff Top Cut. Rounds are dependent on the total number of Duelists at the time registration closes."]
+    },
+    {
+      "t": "li",
+      "r": ["Time Limit: 55 Minutes per Swiss Round."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Remote Duel YCS Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is Remote Duel?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Remote Duel is Sanctioned Organized Play hosted in a virtual environment, run on designated Discord servers. To participate, TCG Duelists will need a webcam, smartphone or tablet to display their field to their opponent. These events are perfect for Duelists that want to play from the comfort of their homes or are unable to travel to in-person YCS events!"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"You can find more details on Remote Duel on our website:"}]
+    },
+    {
+      "t": "li",
+      "r": ["https://www.yugioh-card.com/en/remoteduel/index.html."]
+    },
+    {
+      "t": "li",
+      "r": ["Prior to registering for events, you should read the Remote Duel Best Practices Guide as it contains information you will need to compete: https://www.yugioh-card.com/en/downloads/remoteduel/EN_Remote_Duel_Best_Practice_Guide_V_1_2.pdf"]
+    },
+    {
+      "t": "li",
+      "r": ["You are responsible for a stable internet connection and a working Remote Duel setup in order to participate in a Remote Duel event."]
+    },
+    {
+      "t": "li",
+      "r": ["If you lose your video feed, have excessively lagging or frozen video, or otherwise disconnect from a Duel in progress, you will receive a Game Loss."]
+    },
+    {
+      "t": "li",
+      "r": ["Please be mindful of background noise around your Remote Duel setup, so you and your opponent can hear each other clearly."]
+    },
+    {
+      "t": "p",
+      "r": ["All Duelists who wish to register for Public Events during the Remote Duel YCS weekend will do so via the Tournament Organizer of the specific Remote Duel server where they want to play Public Events. Please see the “",{"b":"When are Public Events scheduled?”"}," question below for registration times for Public Events from our various Tournament Organizers."]
+    },
+    {
+      "t": "p",
+      "r": ["In addition, all Duelists should read over the KDE-US Tournament Policy and Penalty Guidelines carefully. These documents tell you what you can and cannot do at an event, whether it is held in person or Remote, and give you a good idea of what to expect. You may find these Guidelines by clicking the following links."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"KDE-US Official Yu-Gi-Oh! TRADING CARD GAME Tournament Policy:"}]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.yugioh-card.com/en/downloads/penalty_guide/YGOTCG_Tournament_Policy_v_2_5.pdf"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Tournament Infractions and Penalty Guidelines:"}]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.yugioh-card.com/en/downloads/penalty_guide/Penalty_Guidelines_v_2_3.pdf"]
+    },
+    {
+      "t": "p",
+      "r": ["And also, the Remote Duel Best Practices Guide, which includes a list of cards Forbidden in Remote Duel only."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Remote Duel Best Practices Guide:"}]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.yugioh-card.com/en/downloads/remoteduel/EN_Remote_Duel_Best_Practice_Guide_V_1_2.pdf"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Rounds will the Genesys Remote Duel YCS have?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The number of rounds in the tournament will be decided based on the modifier stipulated in section ",{"b":"I. Number of Rounds – Tier 3 and Tier 4 Events"}," found in the KDE-US Tournament Policy:"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Duelists will advance to Day 2?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The number of Duelist that return for Day 2 will be based on actual registered Duelists plus all VIPS. (late entries will not be considered)"]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 32 or fewer Duelists registered for the YCS, then the Top 8 Duelists will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 33 – 64 Duelists registered for the YCS, then the Top 16 Duelists or Duelists with a minimum of 15 points, whichever is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 65 – 128 Duelists registered for the YCS, then the Top 32 Duelists or Duelists with a minimum of 15 points, whichever is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 129 – 256 Duelists registered for the YCS, then the Top 64 Duelists OR Duelists with a minimum of 15 points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 257 – 512 Duelists registered for the YCS, then the Top 128 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 513 – 1024 Duelists registered for the YCS, then the Top 128 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 1025 – 2048 Duelists registered for the YCS, then the Top 256 Duelists OR Duelists with a minimum of 21 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 2049 or more Duelists registered for the YCS, then the Top 256 Duelists OR Duelists with a minimum of 21 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What happens if I qualify for Day 2 of both Main Events at the Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," If a Duelist qualifies for Day 2 of both events (Advanced and Genesys), they must choose which Day 2 they wish to compete in once the official standings for the Advanced Main Event are posted at the end of Saturday, September 19."]
+    },
+    {
+      "t": "p",
+      "r": ["Prizing, invites, and any other awards will be awarded based on the standings that are confirmed as final."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Duelists will advance to the Top Cut?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The tournament will cut to Top 8 after all rounds of Swiss are completed and prizes will be awarded down to 32",{"s":"nd"}," place based on the standings of active Duelists."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Who should I contact if I have questions about the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Company:"}," Monster Sprim\n",{"b":"E-mail:"}," ventas@monstersprim.com.mx\n",{"b":"Discord Server"},": https://discord.com/invite/KzAzbhYjSf"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Will there be coverage of the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Yes! There will be online blog type coverage here:\nEvent Coverage blog – Event updates, Pairings, and Standings."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What will I need to participate in the Genesys Remote Duel YCS tournament?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," You should have a Genesys tournament-legal Deck as described under “",{"b":"What is the format for the Genesys Remote Duel YCS?"},",” along with any tournament supplies you will need, such as paper and pen to track Life Points, dice or counters if you are using cards which require them, extra sleeves to replace any that become damaged, and so forth. If you have a CARD GAME ID number, it should be linked to your KONAMI ID and displayed in the NEURON app on your smart device. You can click here for a full guide on how to link your CARD GAME ID to your NEURON App."]
+    },
+    {
+      "t": "p",
+      "r": ["For those joining our events for the first time, obtaining a CARD GAME ID is as easy as downloading the NEURON app. Once downloaded follow the steps below:"]
+    },
+    {
+      "t": "li",
+      "r": ["On the bottom menu screen, select Data."]
+    },
+    {
+      "t": "li",
+      "r": ["Once there, a new CARD GAME ID number will be generated at the top of the screen."]
+    },
+    {
+      "t": "p",
+      "r": ["This CARD GAME ID will be used when registering for any Yu-Gi-Oh! TCG Sanctioned events which includes our Tier 1 Local Events, Tier 2 Regional Qualifiers, Dragon Duels and OTS Championships, Tier 3 YCS, Latin America National and WCQ events, and even Tier 4 World Championship."]
+    },
+    {
+      "t": "p",
+      "r": ["Once you have a CARD GAME ID, we strongly encourage you to create a KONAMI ID and link the two accounts."]
+    },
+    {
+      "t": "p",
+      "r": ["A KONAMI ID can be used across various online services provided by the KONAMI Group. Registration is free of charge and can be completed through the “New Registration” option on the My KONAMI website (https://my.konami.net) or directly through the NEURON app."]
+    },
+    {
+      "t": "p",
+      "r": ["The most common uses of a KONAMI ID for Duelists include Yu-Gi-Oh! MASTER DUEL, Yu-Gi-Oh! DUEL LINKS, and Yu-Gi-Oh! NEURON. Linking your CARD GAME ID to a KONAMI ID helps ensure that your account information is properly associated with your Organized Play participation and allows you to access additional KONAMI services using a single account."]
+    },
+    {
+      "t": "p",
+      "r": ["You can follow the guide below for step-by-step instructions on how to link your CARD GAME ID and KONAMI ID:"]
+    },
+    {
+      "t": "p",
+      "r": ["https://img.yugioh-card.com/en/downloads/neuron/NEURON-Linking_a_CARD_GAME_ID-KONAMI_ID.pdf"]
+    },
+    {
+      "t": "p",
+      "r": ["You will also need a functional Remote Duel setup. You can find more information on Remote Duel technical requirements here: https://www.yugioh-card.com/en/downloads/remoteduel/Remote Duel Set Up Guide.pdf"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: I don’t have a Remote Duel Setup. Is there anything I can do to participate?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Some Official Tournament Stores (OTS) can offer Remote Duel Stations to allow Remote Duelists to participate in Remote Duel tournaments. These same Remote Duel Stations can be used to participate in the Genesys Remote Duel YCS. Keep in mind that quantities are limited so please make sure to reach out to your OTS to check as soon as possible."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: During my Match, how many cameras can I use to stream?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," During a match, a maximum of 1 camera can be active per Duelist."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I find my table during the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Each Round, pairings will be posted in a channel named ",{"b":"#Genesys-ycs-main-event-pairings"}," in the Remote Duel YCS Discord server. The pairings will be posted as a series of images. The images are the pairings for the Round, sorted by Duelists’ Last Name. Find your name on the Pairings channel to see the table you are assigned for the Round."]
+    },
+    {
+      "t": "p",
+      "r": ["Alternatively, the same channel will also have a QR code posted to the Online Pairings website. For this website, you will enter your CARD GAME ID and the Online Pairings website will tell you what Table you are assigned for the Round. If you are not sure what your CARD GAME ID is, you can find it next to your name on the images of the pairings list and then use it for future Rounds."]
+    },
+    {
+      "t": "p",
+      "r": ["Regardless of whether you find your assigned table through the pairings images or the Online Pairings website, once you have found your assigned table for the Round, you will be able to find it in the list of voice channels. For example, if you are assigned table 20, you would find the voice channel ",{"b":"table 20"}," and join that for your match."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I report my match result during the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Once you have completed your match, you can report your result in the ",{"b":"#Genesys-YCS-Round-results"}," text channel in the Remote Duel YCS Discord server."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Where do I find information during the Genesys Remote Duel YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," If you have any questions before, during, or after the Genesys Remote Duel YCS, you should first check the ",{"b":"#faq"}," text channel on the Remote Duel YCS Discord server. Many frequently asked questions have answers there. You should also check the ",{"b":"#announcements"}," channel for recent announcements that may answer your question. Finally, if you have not found an answer elsewhere, you can request assistance by typing ",{"b":"@staff"}," to reach out to the staff members managing the Remote Duel YCS Server."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Remote Duel YCS Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": ["*In addition to the other prizes for 1st place, the winner will receive complimentary travel and accommodation for the next Genesys Championship in their territory (North and Latin America only)."]
+    },
+    {
+      "t": "p",
+      "r": ["** Not all Yu-Gi-Oh! Cards can be made into GIANT CARDS!! see https://www.yugioh-card.com/en/events/faq/event_prizing/ for details. The GIANT CARD!! will be awarded at the winners next Genesys Championship event."]
+    },
+    {
+      "t": "p",
+      "r": ["*** The YCS Prize Card Pack will be awarded based on standings announced at the end of Day 1."]
+    },
+    {
+      "t": "p",
+      "r": ["The Ultra Rare Top 16 YCS Prize Card Pack and the Super Rare Top 32 YCS Prize Card Pack will be awarded after Final Swiss Standings are determined, prior to the Top 8 cut. Duelists must still be enrolled in the tournament at the end of the Final Round of Swiss and ranked in the Top 16 or Top 32 respectively to receive these Prize Card Packs."]
+    },
+    {
+      "t": "p",
+      "r": ["The Day 2 Prize Card Packs will be given out depending on the number of participants:"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Sleeves"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Metal Dice Set"}]
+    },
+    {
+      "t": "p",
+      "r": [{"i":"*Color of set will vary at each YCS"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Remote Duel YCS Top Cut Game Mat"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"After Advanced Swiss Rounds Giant Card"}]
+    }
+  ]
+}

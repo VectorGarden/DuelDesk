@@ -601,7 +601,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Jose Francisco Azofeifa Acosta": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Abraham Chamu": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -628,10 +629,10 @@
   "Melissa Michelle Rivas Montoya": [
     {"e":"uds-2016-elsalvador"}
   ],
-  "Korbin A.": {
-    "as": "Korbin Taylor Alexis"
-  },
   "Kevin A.": {
     "as": "Kevin Anthony Avalos"
+  },
+  "Korbin A.": {
+    "as": "Korbin Taylor Alexis"
   }
 }

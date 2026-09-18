@@ -708,6 +708,9 @@
   "Noah Cervantes": [
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
+  "ERICK JOSE SAMPEDRO PALLO": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "JAIRO DAVID JOMA LOPEZ": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
@@ -723,13 +726,13 @@
   "Ronald Renato Salgado Cabada": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Alex S.": {
-    "as": "Alex Douglas Stoddard"
-  },
   "Jim L.": {
     "as": "Jim Cody Lott"
   },
   "Christopher A.": {
     "as": "Christopher Bryan Avila"
+  },
+  "Alex S.": {
+    "as": "Alex Douglas Stoddard"
   }
 }

@@ -13,6 +13,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"wcq-2016-mexico"}
   ],
   "Charles Robert Phinney": [
@@ -557,10 +558,10 @@
   "Joshua Joseph Distura": {
     "as": "Joshua Joseph Z. Distura"
   },
-  "Jadson S.": {
-    "as": "Jadson Dos Santos"
-  },
   "Gustavo C.": {
     "as": "Gustavo Vilella Maia do Carmo"
+  },
+  "Jadson S.": {
+    "as": "Jadson Dos Santos"
   }
 }

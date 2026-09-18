@@ -228,7 +228,8 @@
   ],
   "Missael Villegas Rodriguez": [
     {"e":"2016-ycs-mexico-city"},
-    {"e":"2023-ycs-cancun-mexico"}
+    {"e":"2023-ycs-cancun-mexico"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Daniel Azael Ruiz Hernandez": [
     {"e":"2016-ycs-mexico-city"},
@@ -680,6 +681,9 @@
   "Jorge Andres Jimenez Estrella": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Erick Sebastian Rollano": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Andres Mauricio Rodriguez Marconi": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
@@ -701,11 +705,11 @@
   "Joe Vu": {
     "as": "Joe N. Vu"
   },
-  "Garrison M.": {
-    "as": "Garrison E. Motes"
-  },
   "Jeffrey M.": {
     "as": "Jeffrey Alvin Marquez"
+  },
+  "Garrison M.": {
+    "as": "Garrison E. Motes"
   },
   "Timothy D.": {
     "as": "Timothy Kenneth Michael Dahl"

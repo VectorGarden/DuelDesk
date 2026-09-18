@@ -383,6 +383,7 @@
     {"e":"2024-central-america-wcq"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Joan Gabriel Daroch Cuevas": [
@@ -569,11 +570,11 @@
   "Esteban De Jesus Vargas Alcocer": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
-  "Romulo N.": {
-    "as": "Romulo Neves Baptista Neto"
-  },
   "Gabriel L.": {
     "as": "Gabriel Ramos Luiz"
+  },
+  "Romulo N.": {
+    "as": "Romulo Neves Baptista Neto"
   },
   "Reno R.": {
     "as": "Reno Jet Ramsey"

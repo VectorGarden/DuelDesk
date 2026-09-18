@@ -106,6 +106,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Monarch"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys","won":true,"cut":"Final","deck":"Blitzclique"},
     {"e":"2026-north-america-wcq"}
   ],
@@ -701,10 +702,10 @@
   "James Wolff": {
     "as": "James R. Wolff"
   },
-  "Shane K.": {
-    "as": "Shane Ketchum"
-  },
   "Ramon F.": {
     "as": "Ramon Benito Flores"
+  },
+  "Shane K.": {
+    "as": "Shane Ketchum"
   }
 }

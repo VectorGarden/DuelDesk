@@ -218,6 +218,7 @@
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2025-central-america-wcq"},
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
@@ -599,11 +600,11 @@
   "Po-Hsiang Peng": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Taiwan","won":true,"cut":"Final"}
   ],
-  "Brent B.": {
-    "as": "Brent Anthony Bumann"
-  },
   "Stephen B.": {
     "as": "Stephen Andrew Benson"
+  },
+  "Brent B.": {
+    "as": "Brent Anthony Bumann"
   },
   "Estevan F.": {
     "as": "Estevan Falcon"

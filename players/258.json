@@ -522,6 +522,9 @@
   "Adrian Minh Tri Do": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Argani Jhaszid": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "John Laurence Bell": [
     {"e":"na-ygoc-2022"}
   ],
@@ -534,10 +537,10 @@
   "Pakawat P.": {
     "as": "Pakawat Thomas Pamornsut"
   },
-  "June L.": {
-    "as": "June Hugo Lee"
-  },
   "Dominique C.": {
     "as": "Dominique Coan"
+  },
+  "June L.": {
+    "as": "June Hugo Lee"
   }
 }

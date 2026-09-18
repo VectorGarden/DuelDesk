@@ -655,6 +655,9 @@
   "Uriel Valencia": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Matias Velez": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Logan Joseph Wolfe": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"}
@@ -662,10 +665,10 @@
   "Eduardo Rafael Reyes Teheran": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
-  "Valan Z.": {
-    "as": "Valan Joseph Zuccolillo"
-  },
   "Jeremiah S.": {
     "as": "Jeremiah Marcus Springer"
+  },
+  "Valan Z.": {
+    "as": "Valan Joseph Zuccolillo"
   }
 }

@@ -404,7 +404,8 @@
   ],
   "David Alejandro Haro Moreno": [
     {"e":"2022-latin-america-remote-duel-ycs"},
-    {"e":"2024-south-america-wcq"}
+    {"e":"2024-south-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Carlos David Aguilera Terreros": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -623,10 +624,10 @@
   "Zhen Pei Teoh": [
     {"e":"yu-gi-oh-world-championship-2013"}
   ],
-  "Samuel B.": {
-    "as": "Samuel Scott Blair"
-  },
   "Derrick L.": {
     "as": "Derrick Khai Le"
+  },
+  "Samuel B.": {
+    "as": "Samuel Scott Blair"
   }
 }

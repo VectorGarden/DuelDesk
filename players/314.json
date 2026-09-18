@@ -681,6 +681,10 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"}
   ],
+  "Miguel Hernando Bulla Bolivar": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-ycs-cartagena-colombia"}
+  ],
   "Lucas Nahuel Andueza": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"}
@@ -690,9 +694,6 @@
   ],
   "Kif and Crew": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
-  ],
-  "Miguel Hernando Bulla Bolivar": [
-    {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Pedro Pablo Mansilla Sazo": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
@@ -712,13 +713,13 @@
   "Quang H.": {
     "as": "Quang Nhat Hoang"
   },
-  "Derrick F.": {
-    "as": "Derrick Lee Fox"
+  "Johnathon T.": {
+    "as": "Johnathon Keith Taylor"
   },
   "Gonzalo L.": {
     "as": "Gonzalo Magallon Lopez"
   },
-  "Johnathon T.": {
-    "as": "Johnathon Keith Taylor"
+  "Derrick F.": {
+    "as": "Derrick Lee Fox"
   }
 }

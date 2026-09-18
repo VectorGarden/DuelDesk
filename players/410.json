@@ -625,6 +625,9 @@
   "Brandon Alan Barfield": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Paz Gonzales OToya Alejandro": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Charles Obinna Ekwueme": [
     {"e":"2026-north-america-wcq"}
   ],
@@ -632,11 +635,11 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"}
   ],
-  "Antonio S.": {
-    "as": "Antonio Salgado"
-  },
   "Tristan A.": {
     "as": "Tristan Bryce Aman"
+  },
+  "Antonio S.": {
+    "as": "Antonio Salgado"
   },
   "Isaac A.": {
     "as": "Isaac Araiza"

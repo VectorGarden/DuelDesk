@@ -633,14 +633,17 @@
   "Mark Louie Parale": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Luis Alfredo Sierra villa": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Jorge Berrios": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
-  "Samuel A.": {
-    "as": "Samuel Arone Crescini Ramos Amaro"
-  },
   "Marcelo B.": {
     "as": "Marcelo Bruno"
+  },
+  "Samuel A.": {
+    "as": "Samuel Arone Crescini Ramos Amaro"
   },
   "Sean N.": {
     "as": "Sean Neon Nguyen"

@@ -508,6 +508,9 @@
   "Juan Carlos Ortiz Ramirez": [
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
+  "Grevy Rocha": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Dalton Johnny Martin": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"}
@@ -530,11 +533,11 @@
   "Fernando F.": {
     "as": "Fernando Maciel Ferreira"
   },
-  "Alejandro H.": {
-    "as": "Alejandro Hernandez"
-  },
   "Joseph V.": {
     "as": "Joseph Michael Vianello"
+  },
+  "Alejandro H.": {
+    "as": "Alejandro Hernandez"
   },
   "Junlong W.": {
     "as": "Junlong Wu"

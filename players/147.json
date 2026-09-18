@@ -587,6 +587,9 @@
   "Robert Thomas Steacy": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Mario Vazquez": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Angel Gabriel Paz Jimenez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -611,10 +614,10 @@
   "Blake T.": {
     "as": "Blake Austin Taylor"
   },
-  "William E.": {
-    "as": "William Joseph Melgoza Espinosa"
-  },
   "Artan L.": {
     "as": "Artan Lajqi"
+  },
+  "William E.": {
+    "as": "William Joseph Melgoza Espinosa"
   }
 }

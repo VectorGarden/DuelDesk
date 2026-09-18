@@ -468,11 +468,15 @@
   "Iker Guarneros Camacho": [
     {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel"}
   ],
+  "Santiago Rodrigues Gonçalves": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-south-america-genesys-championship","f":"Genesys"}
+  ],
+  "Santiago Rodrigues Gonalves": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Colin Liu": [
     {"e":"2026-north-america-wcq"}
-  ],
-  "Santiago Rodrigues Gonçalves": [
-    {"e":"2026-south-america-genesys-championship","f":"Genesys"}
   ],
   "Luiz Henrique Falcão": [
     {"e":"2026-south-america-wcq"}
@@ -486,14 +490,14 @@
   "Ralph Pelaez": {
     "as": "Ralph A. Pelaez"
   },
-  "Demesio S.": {
-    "as": "Demesio Fabian Serrano"
+  "Dario G.": {
+    "as": "Dario Alexander Guzman"
   },
   "Aditya D.": {
     "as": "Aditya Shirish Dharap"
   },
-  "Dario G.": {
-    "as": "Dario Alexander Guzman"
+  "Demesio S.": {
+    "as": "Demesio Fabian Serrano"
   },
   "Christopher O.": {
     "as": "Christopher Martin Olmedo"

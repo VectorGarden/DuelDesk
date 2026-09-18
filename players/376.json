@@ -283,6 +283,7 @@
     {"e":"2023-ycs-cancun-mexico"},
     {"e":"2024-south-america-wcq"},
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -546,16 +547,16 @@
   "Juan Pablo Vera": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
-  "Thomas P.": {
-    "as": "Thomas Dang Pham"
-  },
   "Khoakevin V.": {
     "as": "Khoakevin Quoc Vo"
   },
-  "Ethan M.": {
-    "as": "Ethan Douglass Mammen"
+  "Thomas P.": {
+    "as": "Thomas Dang Pham"
   },
   "Riley W.": {
     "as": "Riley Michael Wilhelm"
+  },
+  "Ethan M.": {
+    "as": "Ethan Douglass Mammen"
   }
 }

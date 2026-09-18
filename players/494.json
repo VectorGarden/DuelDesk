@@ -211,6 +211,7 @@
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-south-america-dragon-duel-championship","f":"Dragon Duel"},
@@ -726,10 +727,10 @@
   "Michael C.": {
     "as": "Michael Angel Campos"
   },
-  "Jashanpal M.": {
-    "as": "Jashanpal Singh Mangat"
-  },
   "Elijah M.": {
     "as": "Elijah Ray Maine"
+  },
+  "Jashanpal M.": {
+    "as": "Jashanpal Singh Mangat"
   }
 }

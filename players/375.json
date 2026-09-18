@@ -95,6 +95,7 @@
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2025-south-america-wcq"},
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
   "Li A. Glosson": [
@@ -604,10 +605,10 @@
   "Savio Gutierrez Andia": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Parker N.": {
-    "as": "Parker Logan Newbury"
-  },
   "Ezrael G.": {
     "as": "Ezrael Mario Gomez"
+  },
+  "Parker N.": {
+    "as": "Parker Logan Newbury"
   }
 }

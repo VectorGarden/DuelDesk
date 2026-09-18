@@ -585,6 +585,9 @@
   "Bruce Lee Sheldon Dan George": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Andres Torres": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Santiago Rios Manzo": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
@@ -594,10 +597,10 @@
   "Brandon R.": {
     "as": "Brandon Xavier Ramos"
   },
-  "Nathaniel C.": {
-    "as": "Nathaniel Paul Clifton"
-  },
   "I H.": {
     "as": "I Hao Hsu"
+  },
+  "Nathaniel C.": {
+    "as": "Nathaniel Paul Clifton"
   }
 }

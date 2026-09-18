@@ -166,6 +166,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-south-america-wcq"},
     {"e":"2025-ycs-buenos-aires-argentina"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
@@ -676,11 +677,11 @@
   "Miguel Angel Marroquin Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Forbes K.": {
-    "as": "Forbes Elliot Ku"
-  },
   "Cameron S.": {
     "as": "Cameron David Smith"
+  },
+  "Forbes K.": {
+    "as": "Forbes Elliot Ku"
   },
   "Arturo A.": {
     "as": "Arturo Arestegui"

@@ -34,6 +34,7 @@
     {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 8"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -670,16 +671,16 @@
   "Aldrin Alarcon Garcia": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "George S.": {
-    "as": "George Lucas Sacco"
-  },
   "Corbin D.": {
     "as": "Corbin Paul Diez"
   },
-  "Dade R.": {
-    "as": "Dade Alexander Rynerson"
+  "George S.": {
+    "as": "George Lucas Sacco"
   },
   "Isaiah B.": {
     "as": "Isaiah Jeffrey Burgess"
+  },
+  "Dade R.": {
+    "as": "Dade Alexander Rynerson"
   }
 }

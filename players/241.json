@@ -563,6 +563,9 @@
   "Andre Aldama Tapia": [
     {"e":"2026-02-300th-na"}
   ],
+  "Humberto Andrés Torre Rodríguez": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Ronald Camilo Huaigua": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
@@ -572,10 +575,10 @@
   "Javier Eduardo Martinez Vergara": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
-  "Bradley M.": {
-    "as": "Bradley Wayne McLean"
-  },
   "Richard T.": {
     "as": "Richard Lee Tipton"
+  },
+  "Bradley M.": {
+    "as": "Bradley Wayne McLean"
   }
 }

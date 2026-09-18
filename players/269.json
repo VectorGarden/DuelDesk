@@ -161,6 +161,7 @@
     {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 4"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 4"},
     {"e":"2026-ycs-cartagena-colombia"},
@@ -611,17 +612,17 @@
   "Saulo S.": {
     "as": "Saulo Rangel dos Santos Silva"
   },
-  "Christopher D.": {
-    "as": "Christopher Chen Ning Duong"
+  "Cristian G.": {
+    "as": "Cristian Mitchell Gutierrez"
   },
   "Inderpal D.": {
     "as": "Inderpal Singh Dhaliwal"
   },
-  "Cristian G.": {
-    "as": "Cristian Mitchell Gutierrez"
+  "Christopher D.": {
+    "as": "Christopher Chen Ning Duong"
   },
-  "Joshua S.": {
-    "as": "Joshua Jordan Smith"
+  "Cody B.": {
+    "as": "Cody Cameron Bartz"
   },
   "Maximilian C.": {
     "as": "Maximilian Kyle Chow"
@@ -629,7 +630,7 @@
   "Martin G.": {
     "as": "Martin Marvyn Guillen"
   },
-  "Cody B.": {
-    "as": "Cody Cameron Bartz"
+  "Joshua S.": {
+    "as": "Joshua Jordan Smith"
   }
 }

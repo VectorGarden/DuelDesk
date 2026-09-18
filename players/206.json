@@ -526,6 +526,12 @@
   "Thomas Jonathan Buhler": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Javier Alberto Riofrío Bustamante": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
+  "Berrios Marquez Jorge Ignacio": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Robson Santos Da Silva": [
     {"e":"2026-south-america-wcq"}
   ],
@@ -547,11 +553,11 @@
   "Tomas Ferreyros Sylvester": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Luciano G.": {
-    "as": "Luciano Frank Greco"
-  },
   "Darren N.": {
     "as": "Darren Vu Nguyen"
+  },
+  "Luciano G.": {
+    "as": "Luciano Frank Greco"
   },
   "Denny K.": {
     "as": "Denny Kim"
