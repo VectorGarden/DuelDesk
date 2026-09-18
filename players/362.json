@@ -717,22 +717,25 @@
   "FERNANDO CASTILLO": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
+  "Fernando Castillo": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Jon F. Gemmellaro": [
     {"e":"2026-north-america-wcq"}
   ],
   "Yannik Ackermann": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Marcus H.": {
-    "as": "Marcus Anthony Ho"
+  "Dinh P.": {
+    "as": "Dinh Khang Pham"
   },
   "Benjamin H.": {
     "as": "Benjamin Michael Hansen"
   },
+  "Marcus H.": {
+    "as": "Marcus Anthony Ho"
+  },
   "Albert L.": {
     "as": "Albert Junghwan Lee"
-  },
-  "Dinh P.": {
-    "as": "Dinh Khang Pham"
   }
 }

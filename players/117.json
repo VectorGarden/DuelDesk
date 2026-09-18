@@ -422,7 +422,8 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2024-south-america-wcq"}
+    {"e":"2024-south-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Mateo David Sandoval Cabrera": [
     {"e":"2019-ycs-quito-ecuador"},
@@ -726,13 +727,13 @@
   "Ronald Renato Salgado Cabada": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Alex S.": {
+    "as": "Alex Douglas Stoddard"
+  },
   "Jim L.": {
     "as": "Jim Cody Lott"
   },
   "Christopher A.": {
     "as": "Christopher Bryan Avila"
-  },
-  "Alex S.": {
-    "as": "Alex Douglas Stoddard"
   }
 }

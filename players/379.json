@@ -460,7 +460,8 @@
   "Alejandro Paz Gonzales Otoya": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2024-south-america-wcq"},
-    {"e":"2025-ycs-lima-peru"}
+    {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Antonio Jose Andrade Delgado": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -724,11 +725,11 @@
   "Kenny Eduardo Ayala Alhuay": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Saul A.": {
-    "as": "Saul Agis"
-  },
   "German M.": {
     "as": "German Hoover Dakari Morales"
+  },
+  "Saul A.": {
+    "as": "Saul Agis"
   },
   "George B.": {
     "as": "George Daniel Babamirza"
