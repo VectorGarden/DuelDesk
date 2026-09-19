@@ -43,17 +43,6 @@
       <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>Latin America Remote Duel YCS September 2026: Welcome to the Latin America Advanced Remote Duel YCS</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-advanced-remote-duel-ycs/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-advanced-remote-duel-ycs/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 20:34:10 +0000</pubDate>
-      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Standings after Round 7</title>
       <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-7/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-7/</guid>
@@ -184,17 +173,6 @@
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
       <pubDate>Fri, 18 Sep 2026 18:02:04 +0000</pubDate>
       <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Welcome to the Latin America Genesys Remote Duel YCS</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-genesys-remote-duel-ycs/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-genesys-remote-duel-ycs/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 18:01:43 +0000</pubDate>
-      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Finals Pairing</title>
@@ -3203,6 +3181,27 @@
       <category domain="event">2026-north-america-genesys-championship</category>
       <pubDate>Sat, 11 Jul 2026 13:59:40 +0000</pubDate>
       <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Central America WCQ 2019: Central America WCQ Top 8!</title>
+      <link>https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-8-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2019/championships/central-america-wcq-top-8-2/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2019-central-america-wcq</category>
+      <pubDate>Mon, 29 Jun 2026 23:27:14 +0000</pubDate>
+      <description>News from Central America WCQ 2019, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>South America Dragon Duel Championship: Winner</title>
+      <link>https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-winner-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-winner-2/</guid>
+      <category>Results</category>
+      <category domain="kind">result</category>
+      <category domain="format">Dragon Duel</category>
+      <category domain="event">2026-south-america-dragon-duel-championship</category>
+      <pubDate>Mon, 29 Jun 2026 19:47:13 +0000</pubDate>
+      <description>Results from South America Dragon Duel Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
