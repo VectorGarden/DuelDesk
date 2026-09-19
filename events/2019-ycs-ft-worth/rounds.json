@@ -1,6 +1,6 @@
 {
   "event": "YCS Ft. Worth",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -5023,8 +5023,27 @@
             {"table":2,"a":"Raphael Pelaja Neven","aRec":{"wins":13,"losses":1,"draws":0,"confidence":"derived"},"aDeck":"Orcust","b":"Andres David Torres Reyes","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"bDeck":"Thunder Dragon"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Top 4 Feature Match – Raphael Neven","deck":null,"record":null},"b":{"name":"Andres Torres","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/ycs-ft-worth-top-4-feature-match-raphael-neven-vs-andres-torres/"},
+            {"a":{"name":"Top 4 Feature Match – Ramiro Garcia","deck":null,"record":null},"b":{"name":"Nicolas Ortiz","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/ycs-ft-worth-top-4-feature-match-ramiro-garcia-vs-nicolas-ortiz/"}
+          ],
           "source": "https://yugiohblog.konami.com/2019/ycs/ycs-ft-worth-top-4-pairings-with-decks/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": null,
+          "posted": null,
+          "standingsAfter": 11,
+          "pairings": [],
+          "standings": [],
+          "features": [
+            {"a":{"name":"Finals Feature Match – Ramiro Garcia","deck":null,"record":null},"b":{"name":"Raphael Neven","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/ycs-ft-worth-finals-feature-match-ramiro-garcia-vs-raphael-neven/"}
+          ],
+          "source": null
         }
       ]
     }

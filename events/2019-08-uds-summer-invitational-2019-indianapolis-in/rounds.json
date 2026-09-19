@@ -1,6 +1,6 @@
 {
   "event": "UDS Invitational Indianapolis",
-  "built": 62,
+  "built": 63,
   "location": "Indianapolis, IN",
   "sample": false,
   "coverageBy": "Konami",
@@ -27,7 +27,8 @@
           "pairings": [],
           "standings": [],
           "features": [
-            {"a":{"name":"Thomas Robert Jefferson Brower","deck":null,"record":null},"b":{"name":"Andrew Brian Ostler","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/ycs-portland-round-1-feature-match-thomas-robert-jefferson-brower-vs-andrew-brian-ostler/"}
+            {"a":{"name":"Thomas Robert Jefferson Brower","deck":null,"record":null},"b":{"name":"Andrew Brian Ostler","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/ycs-portland-round-1-feature-match-thomas-robert-jefferson-brower-vs-andrew-brian-ostler/"},
+            {"a":{"name":"Round 1 Feature Match – Tyler Cappis","deck":null,"record":null},"b":{"name":"James Armband","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-1-feature-match-tyler-cappis-vs-james-armband/"}
           ],
           "source": null
         },
@@ -461,7 +462,8 @@
             {"pos":277,"name":"Sebastian Randall Schneder","record":{"wins":0,"losses":2,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Yishan McNabb","deck":null,"record":null},"b":{"name":"Christopher Young","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-2-feature-match-yishan-mcnabb-vs-christopher-young/"}
+            {"a":{"name":"Yishan McNabb","deck":null,"record":null},"b":{"name":"Christopher Young","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-2-feature-match-yishan-mcnabb-vs-christopher-young/"},
+            {"a":{"name":"Round 2 Feature Match – Tyler Pfeifer","deck":null,"record":null},"b":{"name":"Kevin Bortle","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-2-feature-match-tyler-pfeifer-vs-kevin-bortle/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-2-pairings/"
         },
@@ -891,7 +893,8 @@
             {"pos":277,"name":"Derrick Walter Catlin","record":{"wins":0,"losses":3,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Paulo Roberto Goncalves da Silva","deck":null,"record":null},"b":{"name":"Brendon Wai Hung Siow","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-3-paulo-roberto-goncalves-da-silva-vs-brendon-wai-hung-siow/"}
+            {"a":{"name":"Paulo Roberto Goncalves da Silva","deck":null,"record":null},"b":{"name":"Brendon Wai Hung Siow","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-3-paulo-roberto-goncalves-da-silva-vs-brendon-wai-hung-siow/"},
+            {"a":{"name":"Round 3 Feature Match – Johne Smith","deck":null,"record":null},"b":{"name":"Hisam Jawhari","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-3-feature-match-johne-smith-vs-hisam-jawhari/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-3-pairings/"
         },
@@ -1315,7 +1318,8 @@
             {"pos":277,"name":"Sebastian Randall Schneder","record":{"wins":0,"losses":4,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Elmerande Santos","deck":null,"record":null},"b":{"name":"Wesley Rouse","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-4-feature-match-elmerande-santos-vs-wesley-rouse/"}
+            {"a":{"name":"Elmerande Santos","deck":null,"record":null},"b":{"name":"Wesley Rouse","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-4-feature-match-elmerande-santos-vs-wesley-rouse/"},
+            {"a":{"name":"Round 4 Feature Match – Wesley Loveland","deck":null,"record":null},"b":{"name":"Robert McNett","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-4-feature-match-wesley-loveland-vs-robert-mcnett/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-4-pairings/"
         },
@@ -1729,7 +1733,8 @@
             {"pos":277,"name":"Sebastian Randall Schneder","record":{"wins":0,"losses":5,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Aaron Chase Furman","deck":null,"record":null},"b":{"name":"Patrick James","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-5-feature-match-aaron-chase-furman-vs-patrick-james/"}
+            {"a":{"name":"Aaron Chase Furman","deck":null,"record":null},"b":{"name":"Patrick James","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-5-feature-match-aaron-chase-furman-vs-patrick-james/"},
+            {"a":{"name":"Round 5 Feature Match – Jesse Kotton","deck":null,"record":null},"b":{"name":"Robert Kenny","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-5-feature-match-jesse-kotton-vs-robert-kenny/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-5-pairings/"
         },
@@ -2129,7 +2134,8 @@
             {"pos":277,"name":"Dakota Zollan Darpinian","record":{"wins":0,"losses":6,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Melvin Brookins","deck":null,"record":null},"b":{"name":"Caulin Bradshaw","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-6-feature-match-melvin-brookins-vs-caulin-bradshaw/"}
+            {"a":{"name":"Melvin Brookins","deck":null,"record":null},"b":{"name":"Caulin Bradshaw","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-6-feature-match-melvin-brookins-vs-caulin-bradshaw/"},
+            {"a":{"name":"Round 6 Feature Match – Johnny Li","deck":null,"record":null},"b":{"name":"Ambrose Andrew Jones Jr","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-6-feature-match-johnny-li-vs-ambrose-andrew-jones-jr/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-6-pairings/"
         },
@@ -2517,7 +2523,8 @@
             {"pos":277,"name":"Dakota Zollan Darpinian","record":{"wins":0,"losses":7,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Bryan Rojas","deck":null,"record":null},"b":{"name":"Corey Nakata","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-7-bryan-rojas-vs-corey-nakata/"}
+            {"a":{"name":"Bryan Rojas","deck":null,"record":null},"b":{"name":"Corey Nakata","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-7-bryan-rojas-vs-corey-nakata/"},
+            {"a":{"name":"Round 7 Feature Match – Alex Mondlak","deck":null,"record":null},"b":{"name":"Shawn Rai","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-7-feature-match-alex-mondlak-vs-shawn-rai/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-7-pairings/"
         },
@@ -2895,7 +2902,8 @@
             {"pos":277,"name":"Dakota Zollan Darpinian","record":{"wins":0,"losses":8,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Sam Arunnaveesiri","deck":null,"record":null},"b":{"name":"Avery Foster","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-8-feature-match-sam-arunnaveesiri-vs-avery-foster/"}
+            {"a":{"name":"Sam Arunnaveesiri","deck":null,"record":null},"b":{"name":"Avery Foster","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-8-feature-match-sam-arunnaveesiri-vs-avery-foster/"},
+            {"a":{"name":"Round 8 Feature Match – Jimmy Nguyen","deck":null,"record":null},"b":{"name":"Robert Glenn Riley IV","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-8-feature-match-jimmy-nguyen-vs-robert-glenn-riley-iv/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-8-pairings/"
         },
@@ -3258,7 +3266,8 @@
             {"pos":277,"name":"Dakota Zollan Darpinian","record":{"wins":0,"losses":9,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Randy Moreno","deck":null,"record":null},"b":{"name":"Abraham King","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-9-feature-match-randy-moreno-vs-abraham-king/"}
+            {"a":{"name":"Randy Moreno","deck":null,"record":null},"b":{"name":"Abraham King","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-9-feature-match-randy-moreno-vs-abraham-king/"},
+            {"a":{"name":"Round 9 Feature Match – Manav Dawar","deck":null,"record":null},"b":{"name":"Gabriel Vargas","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-9-feature-match-manav-dawar-vs-gabriel-vargas/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-9-pairings/"
         },
@@ -3585,7 +3594,8 @@
             {"pos":277,"name":"Dakota Zollan Darpinian","record":{"wins":0,"losses":10,"draws":0,"confidence":"derived"},"points":0}
           ],
           "features": [
-            {"a":{"name":"Doug Zeeff","deck":null,"record":null},"b":{"name":"Jordan Sanchez","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-10-feature-match-doug-zeeff-vs-jordan-sanchez/"}
+            {"a":{"name":"Doug Zeeff","deck":null,"record":null},"b":{"name":"Jordan Sanchez","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/round-10-feature-match-doug-zeeff-vs-jordan-sanchez/"},
+            {"a":{"name":"Round 10 Feature Match – Douglas Zeeff","deck":null,"record":null},"b":{"name":"Dominic Couch","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-10-feature-match-douglas-zeeff-vs-dominic-couch/"}
           ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-10-pairings/"
         },
@@ -3910,7 +3920,9 @@
             {"pos":276,"name":"Derrick Walter Catlin","record":{"wins":0,"losses":11,"draws":0,"confidence":"derived"},"points":0},
             {"pos":277,"name":"Dakota Zollan Darpinian","record":{"wins":0,"losses":11,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 11 Feature Match – Matthew McRae","deck":null,"record":null},"b":{"name":"Gabriel Vargas","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-11-feature-match-matthew-mcrae-vs-gabriel-vargas/"}
+          ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-11-pairings/"
         },
         {
@@ -4230,7 +4242,9 @@
             {"pos":276,"name":"Derrick Walter Catlin","record":{"wins":0,"losses":12,"draws":0,"confidence":"derived"},"points":0},
             {"pos":277,"name":"Dakota Zollan Darpinian","record":{"wins":0,"losses":12,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 12 Feature Match – Michael James Johnson, Jr","deck":null,"record":null},"b":{"name":"Johnathan Marquiz Condecon-Acker","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-12-feature-match-michael-james-johnson-jr-vs-johnathan-marquiz-condecon-acker/"}
+          ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-12-pairings/"
         },
         {
@@ -4546,7 +4560,9 @@
             {"pos":276,"name":"Derrick Walter Catlin","record":{"wins":0,"losses":13,"draws":0,"confidence":"derived"},"points":0},
             {"pos":277,"name":"Dakota Zollan Darpinian","record":{"wins":0,"losses":13,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 13 Feature Match – Ryan Fletcher","deck":null,"record":null},"b":{"name":"Jimmy Nguyen","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-13-feature-match-ryan-fletcher-vs-jimmy-nguyen/"}
+          ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-13-pairings/"
         },
         {
@@ -4569,7 +4585,9 @@
             {"table":8,"a":"Bradley Phillip Atkinson","aRec":{"wins":10,"losses":3,"draws":0,"confidence":"derived"},"aDeck":"Salamangreat","b":"Gabriel Antonio Vargas","bRec":{"wins":10,"losses":2,"draws":1,"confidence":"derived"},"bDeck":"Thunder Dragon"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Top 16 Feature Match – Robert Kenny III","deck":null,"record":null},"b":{"name":"Benjamin Deeter","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-top-16-feature-match-robert-kenny-iii-vs-benjamin-deeter/"}
+          ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-top-16-pairings/"
         },
         {
@@ -4588,7 +4606,9 @@
             {"table":4,"a":"Douglas Gleason Zeeff","aRec":{"wins":12,"losses":2,"draws":0,"confidence":"derived"},"aDeck":"Altergeist","b":"Bradley Phillip Atkinson","bRec":{"wins":11,"losses":3,"draws":0,"confidence":"derived"},"bDeck":"Salamangreat"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Top 8 Feature Match – Mason Mattila","deck":null,"record":null},"b":{"name":"David Flores","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-top-8-feature-match-mason-mattila-vs-david-flores/"}
+          ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-top-8-pairings/"
         },
         {
@@ -4605,8 +4625,26 @@
             {"table":2,"a":"Benjamin Thomas Deeter","aRec":{"wins":12,"losses":3,"draws":0,"confidence":"derived"},"aDeck":"Phantom Knight Orcust","b":"Douglas Gleason Zeeff","bRec":{"wins":13,"losses":2,"draws":0,"confidence":"derived"},"bDeck":"Altergeist"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Top 4 Feature Match – Douglas Zeeff","deck":null,"record":null},"b":{"name":"Benjamin Deeter","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-top-4-feature-match-douglas-zeeff-vs-benjamin-deeter/"}
+          ],
           "source": "https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": null,
+          "posted": null,
+          "standingsAfter": 13,
+          "pairings": [],
+          "standings": [],
+          "features": [
+            {"a":{"name":"Finals Feature Match – David Flores","deck":null,"record":null},"b":{"name":"Benjamin Deeter","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-finals-feature-match-david-flores-vs-benjamin-deeter/"}
+          ],
+          "source": null
         }
       ]
     }

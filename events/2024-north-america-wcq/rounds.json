@@ -1,6 +1,6 @@
 {
   "event": "North America WCQ 2024",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -31119,7 +31119,8 @@
           ],
           "standings": [],
           "features": [
-            {"a":{"name":"Logan Johnson","deck":null,"record":null},"b":{"name":"Shunping Xu","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2024/championships/world-qualifying-points-playoff-top-16-feature-match-logan-johnson-vs-shunping-xu/"}
+            {"a":{"name":"Logan Johnson","deck":null,"record":null},"b":{"name":"Shunping Xu","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2024/championships/world-qualifying-points-playoff-top-16-feature-match-logan-johnson-vs-shunping-xu/"},
+            {"a":{"name":"Top 16 Feature Match – Kody Manabe","deck":null,"record":null},"b":{"name":"Steven Santoli","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2024/championships/world-qualifying-points-playoff-top-16-feature-match-kody-manabe-vs-steven-santoli/"}
           ],
           "source": "https://yugiohblog.konami.com/2024/championships/nawcq-top-16-pairings-and-deck-types/"
         },
@@ -31140,7 +31141,8 @@
           ],
           "standings": [],
           "features": [
-            {"a":{"name":"Aditya Shirish Dharap","deck":null,"record":null},"b":{"name":"Mark Solis","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2024/championships/top-8-feature-match-aditya-shirish-dharap-vs-mark-solis/"}
+            {"a":{"name":"Aditya Shirish Dharap","deck":null,"record":null},"b":{"name":"Mark Solis","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2024/championships/top-8-feature-match-aditya-shirish-dharap-vs-mark-solis/"},
+            {"a":{"name":"Top 8 Feature Match – George Lucas Sacco","deck":null,"record":null},"b":{"name":"Denis Nadas","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2024/championships/50667/"}
           ],
           "source": "https://yugiohblog.konami.com/2024/championships/nawcq-top-8-pairings-and-deck-types/"
         },

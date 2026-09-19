@@ -1,6 +1,6 @@
 {
   "event": "YCS Columbus",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
@@ -28027,5 +28027,5 @@
       ]
     }
   ],
-  "_unassigned": 12
+  "_unassigned": 11
 }

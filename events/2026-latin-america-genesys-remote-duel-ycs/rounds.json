@@ -1,10 +1,10 @@
 {
   "event": "Latin America Remote Duel YCS September 2026",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
-  "ongoing": true,
+  "ongoing": false,
   "updated": "2026-09-18",
   "formats": [
     {
@@ -614,7 +614,7 @@
           "id": "7",
           "label": "R7",
           "phase": "Swiss",
-          "state": "live",
+          "state": "done",
           "order": 7,
           "tables": 31,
           "posted": "15:11",
