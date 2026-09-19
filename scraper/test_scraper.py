@@ -17,7 +17,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from parse import (parse_post, normalise_name, strip_region,  # noqa: E402
                    detect_kind, detect_round, detect_format)
-from index import parse_post_sitemap, assign_events, event_windows  # noqa: E402
+from index import (parse_post_sitemap, assign_events, event_windows,  # noqa: E402
+                   namesakes, names_another)
 
 FIX = Path(__file__).parent.parent / "test" / "fixtures" / "blog"
 load = lambda n: parse_post((FIX / f"{n}.html").read_text(), n)
@@ -9776,3 +9777,170 @@ class ReadsTheWinnerPost(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class TestAWordThatMeansAnEvent(unittest.TestCase):
+    """Corroboration has to be worth something to count as corroboration.
+
+    Falling inside an event's dates makes a post a candidate; sharing a word
+    with the event's own coverage is what was supposed to confirm it. But the
+    commonest word in the archive is "ycs", which ninety-four events use, and
+    on its own it confirmed that "ycs-houston-tx-2026-main-event-information"
+    was coverage of the Latin America Genesys Remote Duel YCS -- an event it
+    has no category, no place and no other word in common with.
+    """
+
+    # "ycs" is only worthless because so many events are one. A crowd of them
+    # is the condition the rule exists for, so every fixture here has one.
+    CROWD = tuple(f"20{10 + i}-ycs-{place}" for i, place in enumerate(
+        ("alba", "bruges", "cadiz", "dover", "essen", "faro",
+         "ghent", "hoorn", "ilkley", "jaen")))
+
+    def namesakes(self, *slugs):
+        every = slugs + self.CROWD
+        return namesakes(every, [{"event": s, "slug": s} for s in every])
+
+    def test_a_place_names_its_event(self):
+        sharp = self.namesakes("2025-04-ycs-houston", "2026-ycs-portland")
+        self.assertEqual(sharp["2025-04-ycs-houston"], {"houston"})
+
+    def test_a_word_every_event_uses_names_none_of_them(self):
+        # On the names alone, with nothing known about how they are written.
+        bare = namesakes(self.CROWD)
+        self.assertNotIn("ycs", bare["2010-ycs-alba"])
+        self.assertIn("alba", bare["2010-ycs-alba"])
+        sharp = self.namesakes()
+        self.assertNotIn("ycs", sharp["2010-ycs-alba"])
+        self.assertEqual(sharp["2010-ycs-alba"], {"alba"})
+
+    def test_a_season_is_not_a_place(self):
+        # Konami runs an Invitational every winter, so the one event whose slug
+        # says "winter" would otherwise claim every other winter's coverage.
+        sharp = self.namesakes("201703-uds-winter-invitational-las-vegas")
+        self.assertNotIn("winter", sharp["201703-uds-winter-invitational-las-vegas"])
+
+    def test_a_duellist_is_not_a_place(self):
+        # "Salvador" and "Cruz" are things a person is called, which the
+        # archive says outright by printing them either side of a "vs".
+        sharp = namesakes(
+            ["2025-team-ycs-san-salvador-el-salvador"],
+            [{"event": "2019-ycs-guadalajara",
+              "slug": "round-7-feature-match-adrian-madriz-espinoza-vs-salvador-osmar"}])
+        self.assertNotIn("salvador", sharp["2025-team-ycs-san-salvador-el-salvador"])
+
+    def test_a_post_naming_another_event_is_not_this_events(self):
+        sharp = self.namesakes("2026-latin-america-genesys-remote-duel-ycs",
+                               "2025-04-ycs-houston")
+        self.assertTrue(names_another("2026-latin-america-genesys-remote-duel-ycs",
+                                      "ycs-houston-tx-2026-main-event-information",
+                                      sharp))
+
+    def test_a_post_naming_this_event_is_kept(self):
+        sharp = self.namesakes("2026-latin-america-genesys-remote-duel-ycs",
+                               "2025-04-ycs-houston")
+        self.assertFalse(names_another("2026-latin-america-genesys-remote-duel-ycs",
+                                       "latin-america-remote-duel-ycs-top-8-pairings",
+                                       sharp))
+
+    def test_a_post_naming_nobody_is_left_alone(self):
+        # Most coverage is written like this -- "standings-after-round-4-4" --
+        # and a rule that reads slugs for names must not take silence for a
+        # name. YCS Minneapolis is named by none of its own standings.
+        sharp = self.namesakes("2016-ycs-minneapolis", "2025-04-ycs-houston")
+        self.assertFalse(names_another("2016-ycs-minneapolis",
+                                       "standings-after-round-4-4", sharp))
+
+    def test_an_event_whose_slug_is_a_code_is_not_judged(self):
+        # "2026-02-300th-na" is a filing reference, not a name; there is
+        # nothing in it to weigh a post's words against.
+        sharp = self.namesakes("2026-02-300th-na", "2025-04-ycs-houston")
+        self.assertFalse(names_another("2026-02-300th-na",
+                                       "ycs-houston-tx-2026-main-event", sharp))
+
+    def test_a_word_the_whole_archive_writes_names_nothing(self):
+        # The 2013 World Championship is the only event called "world", and
+        # read that far every deck profile of a Lost World deck is about it.
+        # What separates a place from a word like that is not how many events
+        # are named after it but how widely the archive writes it.
+        every = ("yu-gi-oh-world-championship-2013",) + self.CROWD
+        sharp = namesakes(every, [{"event": s, "slug": f"deck-profile-lost-world-{s}"}
+                                  for s in every])
+        self.assertNotIn("world", sharp["yu-gi-oh-world-championship-2013"])
+
+    def test_naming_this_event_settles_it_whoever_else_is_named(self):
+        # A post that writes this event's name has said where it is, and a
+        # second place in the same slug does not unsay it.
+        sharp = self.namesakes("2025-04-ycs-houston", "2026-ycs-portland")
+        self.assertFalse(names_another("2025-04-ycs-houston",
+                                       "ycs-houston-tx-2026-portland-qualifier", sharp))
+        # Without Houston's own name in it, the post is Portland's business.
+        self.assertTrue(names_another("2025-04-ycs-houston",
+                                      "ycs-portland-top-8-pairings", sharp))
+
+    def test_last_years_running_does_not_take_this_years_coverage(self):
+        # Two events share a name because they are the same event a year
+        # apart. The word belongs to both, so it takes neither away.
+        sharp = self.namesakes("2026-latin-america-genesys-remote-duel-ycs",
+                               "2022-latin-america-remote-duel-ycs")
+        self.assertFalse(names_another("2026-latin-america-genesys-remote-duel-ycs",
+                                       "latin-america-remote-duel-ycs-top-8-pairings",
+                                       sharp))
+
+    def test_half_a_name_is_not_a_name(self):
+        # Two events are Santa Cruz de la Sierra, so "cruz" looks like it picks
+        # one out -- and it is also how Abraham Rivera Cruz appears in the slug
+        # of his own feature match.
+        sharp = self.namesakes("2023-ycs-santa-cruz-de-la-sierra",
+                               "2022-remote-duel-ycs-north-america")
+        self.assertFalse(names_another(
+            "2022-remote-duel-ycs-north-america",
+            "round-10-feature-match-abraham-rivera-cruz-vs-anthony-long-vang", sharp))
+
+
+class TestAStrayAnnouncementInSomebodyElsesWeek(unittest.TestCase):
+    """The whole of the bug, end to end.
+
+    YCS Houston 2026 was announced in a week the Latin America Genesys Remote
+    Duel YCS was running. The announcement has no event in its URL, so it fell
+    to the rule of last resort -- a date, corroborated by a shared word -- and
+    the shared word was "ycs".
+    """
+
+    CROWD = ("alba", "bruges", "cadiz", "dover", "essen",
+             "faro", "ghent", "hoorn", "ilkley", "jaen")
+
+    def rows(self, *extra):
+        # A crowd of YCSs, which is what makes "ycs" worth nothing.
+        rows = [(f"{2010 + i}/ycs/{2010 + i}-ycs-{place}/ycs-{place}-round-{r}-pairings",
+                 f"{2010 + i}-06-{10 + r:02d}")
+                for i, place in enumerate(self.CROWD) for r in (1, 2, 3)]
+        # An event with Houston in its name, so the word means something.
+        rows += [(f"2025/ycs/2025-04-ycs-houston/ycs-houston-round-{i}-pairings",
+                  f"2025-04-{11 + i:02d}") for i in range(1, 6)]
+        # And one Konami filed under no event at all, found by discovery.
+        rows += [(f"2026/ycs/latin-america-remote-duel-ycs-round-{i}-pairings",
+                  f"2026-03-{13 + i:02d}") for i in range(1, 6)]
+        return assign_events(parse_post_sitemap(urlset(*rows, *extra)))
+
+    def assigned(self, *extra):
+        return {r["slug"]: (r["event"], r["event_confidence"]) for r in self.rows(*extra)}
+
+    def test_an_announcement_naming_another_event_is_not_swept_in(self):
+        got = self.assigned(("2026/event-information/"
+                             "ycs-houston-tx-2026-main-event-information", "2026-03-15"))
+        self.assertIsNone(got["ycs-houston-tx-2026-main-event-information"][0])
+
+    def test_the_events_own_coverage_is_untouched(self):
+        # The rule may only take away what was never the event's. Every round
+        # the Latin America event published still belongs to it.
+        got = self.assigned()
+        for i in range(1, 6):
+            self.assertEqual(got[f"latin-america-remote-duel-ycs-round-{i}-pairings"][0],
+                             "2026-latin-america-remote-duel-ycs")
+
+    def test_an_undated_stray_that_names_nobody_is_still_taken(self):
+        # The rule reads names, and most coverage has none. A post that says
+        # nothing about where it is stays where its date puts it.
+        got = self.assigned(("2026/ycs/standings-after-round-6-2", "2026-03-15"))
+        self.assertEqual(got["standings-after-round-6-2"][0],
+                         "2026-latin-america-remote-duel-ycs")
