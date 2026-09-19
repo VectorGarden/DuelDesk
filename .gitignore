@@ -47,6 +47,11 @@ __pycache__/
 # would double the repository and go stale the moment anything changed.
 _site/
 
+# The fetch cache. CI restores its own between runs and never commits it;
+# scripts/measure-assignment.py makes one here too, because measuring a
+# change to assignment means reading the same sitemap the scraper reads.
+.scrape-state/
+
 # This machine's Claude Code settings. .claude/launch.json is shared and
 # committed; this one holds absolute paths that are true here and nowhere
 # else -- GH_CONFIG_DIR, pinning gh to the account VectorGarden expects so a
