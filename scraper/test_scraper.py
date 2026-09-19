@@ -7549,6 +7549,56 @@ def _build_montreal_with_announcement():
                                           ["a"], [])])
 
 
+class TestTheTitleOnThePage(unittest.TestCase):
+    """What the blog called a post, minus what WordPress added to it."""
+
+    def title(self, text):
+        from parse import page_title
+        return page_title(f"<html><head><title>{text}</title></head></html>")
+
+    SITE = "Yu-Gi-Oh! TCG Event Coverage"
+
+    def test_the_site_name_is_not_part_of_the_title(self):
+        self.assertEqual(
+            self.title(f"YCS Minneapolis Table of Contents! – {self.SITE}"),
+            "YCS Minneapolis Table of Contents!")
+
+    def test_a_round_written_after_a_dash_survives(self):
+        # The blog separates the round from the event with the same en dash
+        # WordPress uses for the site name, and the old rule took the first
+        # segment: this post came out as "Latin America Genesys Remote Duel
+        # YCS", one of fifteen in that event reading exactly the same, and the
+        # page has nothing else to read a round from. 311 posts in the archive
+        # lost one this way.
+        self.assertEqual(
+            self.title("Latin America Genesys Remote Duel YCS – Standings after "
+                       f"Round 4 – {self.SITE}"),
+            "Latin America Genesys Remote Duel YCS – Standings after Round 4")
+
+    def test_a_title_the_site_name_is_not_appended_to_is_left_whole(self):
+        self.assertEqual(self.title("Round 3 Pairings"), "Round 3 Pairings")
+
+    def test_a_tail_that_is_not_the_site_name_is_the_post_s(self):
+        # The rule that broke this was "the last part is the site's". Where
+        # the site's name is not there to strip, that takes the round instead
+        # -- so what is dropped has to be recognised, not merely last.
+        self.assertEqual(self.title("YCS Raleigh – Pairings for Round 7"),
+                         "YCS Raleigh – Pairings for Round 7")
+
+    def test_a_pipe_is_a_separator_too(self):
+        # Older WordPress themes use one, and the archive spans fifteen years
+        # of them.
+        self.assertEqual(self.title(f"YCS Origins – Pairings Top 8 | {self.SITE}"),
+                         "YCS Origins – Pairings Top 8")
+
+    def test_the_round_is_read_out_of_the_title_it_is_written_in(self):
+        # The point of all of it: the page reads the round from the title, and
+        # a truncated one says nothing about which round it is.
+        from index import detect_round
+        title = self.title("YCS Philadelphia – Round 6 Pairings – " + self.SITE)
+        self.assertEqual(detect_round(title, "pairings"), 6)
+
+
 class TestWhatAPostIs(unittest.TestCase):
     """One rule, asked in two languages.
 

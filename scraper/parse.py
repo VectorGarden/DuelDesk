@@ -306,13 +306,28 @@ def lead(doc: str, limit: int = LEAD_CHARS) -> str:
     return re.sub(r"\s+", " ", _text(body))[:limit].strip()
 
 
+# WordPress appends the site's own name to every page's <title>, after an en
+# dash: "… – Yu-Gi-Oh! TCG Event Coverage", and it has said that since 2011.
+#
+# The rule used to be "the site name is everything after the first dash", which
+# is true of a title with one dash in it and wrong about every title Konami
+# writes with its own: "Latin America Genesys Remote Duel YCS – Standings after
+# Round 4 – Yu-Gi-Oh! TCG Event Coverage" has two segments to drop one of, and
+# dropping both threw away the part that said which round it was. 311 posts in
+# the archive lost a round that way, and the page has nothing else to read one
+# from.
+#
+# So only the blog's own name goes, and only off the end. Renamed, it would
+# stay -- a suffix nobody wanted is visible, where a missing round is not.
+_SITE_NAME = re.compile(r"\s+[–|]\s+Yu-Gi-Oh![^–|]*$", re.I)
+
+
 def page_title(doc: str) -> str:
     m = _TITLE.search(doc)
     if not m:
         return ""
     t = _text(m.group(1))
-    # WordPress appends the site name after an en dash or pipe.
-    return re.split(r"\s+[–|]\s+", t)[0].strip()
+    return _SITE_NAME.sub("", _text(m.group(1))).strip()
 
 
 def detect_format(text: str) -> str | None:
