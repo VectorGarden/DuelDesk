@@ -195,494 +195,28 @@
       "r": ["2 Xyz Encore\n3 Nibiru, the Primal Being\n3 Gameciel, the Sea Turtle Kaiju\n3 Veidos the Eruption Dragon of Extinction\n3 D.D. Crow\n1 Unbreakable Xyz Barrier"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/ycs-houston-3-vs-3-team-tournament-winners/": [
+  "https://yugiohblog.konami.com/2025/ycs/and-the-winner-is-62/": [
     {
       "t": "p",
-      "r": ["The 3 vs. 3 Team Tournament at YCS Houston is now finished! Here’s the winning team!"]
+      "r": ["483 Duelists competed, and we now have our winner of the 2025 North America Remote Duel YCS!"]
     },
     {
       "t": "p",
-      "r": ["Team “Two Johns and a Guy” – consisting of John Rumrill, John Fielding, and Adriel Pierre Pierre – defeated the competition to win this weekend’s 3 vs. 3 Team Tournament! Rimrill and Pierre Pierre both used Fiendsmith Ryzeal Decks, while Fielding used a Bystial Maliss Deck. Congratulations to the winning team!"]
+      "r": [{"who":"Sabit Zada","t":"Sabit Zada"}," from England earned first place with his K9 Vanquish Soul Deck, winning an Ultra Rare ",{"b":"Anotherverse Stratios"},", an awesome trophy, a GIANT card of his choice, and lots of other incredible prizes! Congratulations to the newest YCS champion!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/event-information/latin-america-remote-duel-ycs-2026-main-event-information/": [
+  "https://yugiohblog.konami.com/2025/ycs/welcome-to-the-2025-north-america-remote-duel-yu-gi-oh-championship-series/": [
     {
       "t": "p",
-      "r": [{"b":"Registration Schedule (Main Event)"}]
+      "r": ["The Yu-Gi-Oh! Championship Series (“YCS”) returns, and it’s from the comfort of your own home! The Remote Duel YCS lets Duelists set up a microphone and a camera pointing to their field, and Duel against other players over Discord for the chance of winning the same trophy and prizes that Duelists have become accustomed to competing for at in-person YCS events."]
     },
     {
       "t": "p",
-      "r": [{"b":"Registration Site List"}]
+      "r": ["454 Duelists are competing in Round 1 of the Remote Duel YCS this weekend, and even though the competition will be held remotely, it will be as fierce as ever! ",{"who":"James Allen Sun Markowitz","t":"James Markowitz"}," won YCS Merida, Mexico just last weekend with his Mitsurugi Yummy Deck, and Aditya Dharap won YCS Pittsburgh a few weeks earlier with his Dracotail Deck. Mitsurugi, Yummy, and Dracotail strategies are expected to be popular picks for Duelists to use this weekend, but several Duelists are putting their faith in other strategies that they perceive to be powerful. These strategies include K9, Lunalight, Sky Striker, and Branded. The recent release of ",{"i":"THE CHRONICLES DECK: The Fallen & The Virtuous (All-Foil Edition)"}," gave some new strength to Branded strategies, which many Duelists have been integrating into their Dracotail Decks. At the end of the weekend, only one Duelists can take home the YCS trophy (or, more accurately, have the YCS trophy shipped to them) and claim the title of Remote Duel YCS champion!"]
     },
     {
       "t": "p",
-      "r": [{"b":"Registration Information"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Event Information"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"YCS Information"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Main Event Prizing"}]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"REGISTRATION SCHEDULE (MAIN EVENT)"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"How to Register for the Remote Duel Yu-Gi-Oh! Championship Series 2026 (Remote Duel YCS)"}]
-    },
-    {
-      "t": "p",
-      "r": ["*** Schedules are subject to change and may be updated before the event begins. ***"]
-    },
-    {
-      "t": "p",
-      "r": ["*** Pre-registration and Deck List submission period will open till the End Time and Date listed above or until available seats sell out, whichever comes first. ***"]
-    },
-    {
-      "t": "p",
-      "r": ["*** Registration will take place at select OTS throughout Latin America while Deck Lists MUST be submitted by the Deck List due date via the https://registration.yugioh-card.com/ website. ***"]
-    },
-    {
-      "t": "p",
-      "r": ["Registration for the Remote Duel YCS Main Event will require two steps:"]
-    },
-    {
-      "t": "li",
-      "r": [{"b":"STEP 1:"}," Based on your country of residence, you may register for the Remote Duel YCS Main Event at one of The OTS below:"]
-    },
-    {
-      "t": "li",
-      "r": [{"b":"STEP 2:"}," Once Duelists have registered for the Remote Duel YCS at the OTS corresponding to their country of residence, all Duelists will then need to create an account in https://registration.yugioh-card.com/, register for the Remote Duel YCS, follow directions on the site to create a Deck List, and submit it between December 6",{"s":"th"},", 2025 through January 28",{"s":"th"},", 2026."]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"Registration Site List (this is for registration ONLY)"}]
-    },
-    {
-      "t": "p",
-      "r": ["If you reside in Latin America and your country of residence is not listed above, please email opsupport.lat@devir.com and state that you would like to participate in the Remote Duel YCS but reside in a country without an OTS hosting Registration."]
-    },
-    {
-      "t": "p",
-      "r": ["Please include what country you are from and a Devir representative will be in contact with you to complete your registration. ",{"b":"Please note that Duelists residing in countries that are not listed above will only be allowed to register from January 12"},{"s":"th "},{"b":"through January 28"},{"s":"th"},{"b":", 2026."}]
-    },
-    {
-      "t": "li",
-      "r": [{"b":"REMEMBER!"}," You must register both with the OTS in your country and on https://registration.yugioh-card.com/ in order to create a Deck List, submit it and fully register for the event. ",{"b":"Duelists are responsible for making sure that they are registering with the same information on both"}," https://registration.yugioh-card.com/ ",{"b":"and the OTS assigned to their country of residence."}]
-    },
-    {
-      "t": "li",
-      "r": ["Create Your Deck List: https://yugiohregistration.com/Decks/MyDeckLists.aspx"]
-    },
-    {
-      "t": "li",
-      "r": ["Submit Your Deck List: https://yugiohregistration.com/Events/MyEvents.aspx"]
-    },
-    {
-      "t": "li",
-      "r": ["Once you register, you can join the Remote Duel YCS Discord server at https://discord.com/invite/KzAzbhYjSf"]
-    },
-    {
-      "t": "li",
-      "r": ["There will not be any registration to the Remote Duel YCS Main Event outside of the pre-registration and late registration windows provided above."]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"Latin America Remote Duel YCS Registration Information"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How do I enter the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Depending on your country of residence, you will pay the equivalent to the cost of the booster packs specified in the table below to receive the same number of booster packs from our most recently released sets: ",{"i":"Doom of Dimensions, Duelist Advance, or Alliance Insight, and"}," registration in the event."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How do I register for the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," All registrations for the Remote Duel YCS will be done via one of the Tournament Organizers assisting KDE-US in hosting this event from the list posted at the beginning of this FAQ. There will be at least one (1) OTS accepting registration for the Remote Duel YCS in most countries within Latin America. If your country of residence is not listed, please see the ",{"b":"What should I do if my country of residence is not listed on the registration site list?"}," section below."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Duelists are required to have a mailing address in a Latin American country to participate in this event. When you register for the event, you will indicate where you would like your participation prizes to be shipped (to a local OTS or to your residence) or if you would like to pick them up directly from the OTS you registered at for the Remote Duel YCS."}]
-    },
-    {
-      "t": "li",
-      "r": ["Once Duelists have registered for the Remote Duel YCS at the OTS corresponding to their country of residence, all Duelists will then need to create an account in https://registration.yugioh-card.com/ and register for the January 2026 Remote Duel YCS, follow directions on the site to create a Deck List, and submit it between December 6",{"s":"tht"},", 2025 through January 28",{"s":"th"},", 2026."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: Who is eligible to compete in the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," To take part and compete in the Remote Duel YCS, a Duelist needs to meet the following criteria."]
-    },
-    {
-      "t": "li",
-      "r": ["Duelists must have a CARD GAME ID and be in good standing"]
-    },
-    {
-      "t": "li",
-      "r": ["Suspended Duelists are not considered to be in good standing and may not register or compete"]
-    },
-    {
-      "t": "li",
-      "r": ["Duelists must have a mailing address in a Latin American country."]
-    },
-    {
-      "t": "li",
-      "r": ["Duelist must have stable internet connection."]
-    },
-    {
-      "t": "li",
-      "r": ["Duelists will need a webcam, smartphone or tablet to display their field to their opponent."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What should I do if my country of residence is not listed on the registration site list?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," If you reside in Latin America and your country of residence is not listed above, please email opsupport.lat@devir.com and state that you would like to participate in the Remote Duel YCS but reside in a country without an OTS hosting Registration."]
-    },
-    {
-      "t": "p",
-      "r": ["Please include what country you are from and a Devir representative will be in contact with you in order to complete your registration. ",{"b":"Please note that Duelists residing in countries that are not listed above will only be allowed to register from January 12"},{"s":"th "},{"b":"through January 28"},{"s":"th"},{"b":", 2026."}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What is the format for the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," The Remote Duel YCS tournament is a Constructed – Advanced Format event, which means each Duelist must use his or her own Deck to compete. Decks must be constructed per the latest Advanced Format guidelines. (See here for more information: http://www.yugioh-card.com/en/limited/index.html.) The Forbidden & Limited list is updated periodically; refer to the “UPDATED” date on that page to ensure your Deck matches the current format."]
-    },
-    {
-      "t": "p",
-      "r": ["Certain types of card effects involving Private Knowledge cannot be successfully resolved in Remote Duel and are considered to be Forbidden in Remote Duel only."]
-    },
-    {
-      "t": "p",
-      "r": ["Cards Forbidden in Remote Duel are not Forbidden for in-person play, therefore they are not displayed on the Advanced or Traditional Format Forbidden & Limited List."]
-    },
-    {
-      "t": "p",
-      "r": ["Please consult with the Head Judge for the event if you have questions about the legality of cards in your Deck."]
-    },
-    {
-      "t": "p",
-      "r": ["This Forbidden List is ",{"b":"in addition to"}," the Forbidden and Limited list posted on the website."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Card Name – Forbidden in Remote Duel"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What Discord server will host the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Due to limitations inherent to Discord, Day 1 of the Remote Duel YCS may be held on multiple Discord servers. Each additional server will be assigned a group of table numbers. Please make sure you have joined the Discord server at the top of this FAQ before the start of Round 1 so that you are prepared to play immediately. If needed, the invite links for the additional servers will be found in the ",{"b":"#announcements"}," channel on the Monster Sprim Remote Duel YCS Discord server."]
-    },
-    {
-      "t": "li",
-      "r": ["You can join the Remote Duel YCS Discord server at https://discord.com/invite/KzAzbhYjSf"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How do I create my Deck List on the registration website?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," You can find a guide on creating, copying, and registering your Deck List on the registration website at https://registration.yugioh-card.com/Decks/HowToCreateAndRegisterDecks.aspx"]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"EVENT INFORMATION"}]
-    },
-    {
-      "t": "li",
-      "r": ["This will be a two-day virtual tournament using Advanced Constructed Decks in the Swiss format."]
-    },
-    {
-      "t": "li",
-      "r": ["Best 2 out of 3 Matches"]
-    },
-    {
-      "t": "li",
-      "r": ["Swiss Rounds followed by a Single-Elimination Playoff Top Cut. Rounds are dependent on the total number of Duelists at the time registration closes."]
-    },
-    {
-      "t": "li",
-      "r": ["Time Limit: 55 Minutes per Swiss Round."]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"Remote Duel YCS Information"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What is Remote Duel?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Remote Duel is Sanctioned Organized Play hosted in a virtual environment, run on designated Discord servers. To participate, TCG Duelists will need a webcam, smartphone or tablet to display their field to their opponent. These events are perfect for Duelists that want to play from the comfort of their homes!"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"You can find more details on Remote Duel on our website:"}]
-    },
-    {
-      "t": "li",
-      "r": ["https://www.yugioh-card.com/en/remoteduel/index.html."]
-    },
-    {
-      "t": "li",
-      "r": ["Prior to registering for events, you should read the Remote Duel Best Practices Guide as it contains information you will need to compete:"]
-    },
-    {
-      "t": "li",
-      "r": ["https://www.yugioh-card.com/en/downloads/remoteduel/EN_Remote_Duel_Best_Practice_Guide_V_1_2.pdf"]
-    },
-    {
-      "t": "li",
-      "r": ["You are responsible for a stable internet connection and a working Remote Duel setup in order to participate in a Remote Duel event."]
-    },
-    {
-      "t": "li",
-      "r": ["If you lose your video feed, have excessively lagging or frozen video, or otherwise disconnect from a Duel in progress, you will receive a Game Loss."]
-    },
-    {
-      "t": "li",
-      "r": ["Please be mindful of background noise around your Remote Duel setup, so you and your opponent can hear each other clearly."]
-    },
-    {
-      "t": "p",
-      "r": ["All Duelists who wish to register for Public Events during the Remote Duel YCS will do so via the Tournament Organizer of the specific Remote Duel server where they want to play Public Events. Please see the “",{"b":"When are Public Events scheduled?”"}," question below for registration times for Public Events from our various Tournament Organizers."]
-    },
-    {
-      "t": "p",
-      "r": ["Duelists should review and take note of the Yu-Gi-Oh! Tournament Policy document to prepare for events. This document was recently updated, so even if you have read it before, you should read over it again!"]
-    },
-    {
-      "t": "p",
-      "r": ["https://www.yugioh-card.com/en/downloads/penalty_guide/YGOTCG_Tournament_Policy_v_2_5.pdf"]
-    },
-    {
-      "t": "p",
-      "r": ["And also, the Remote Duel Best Practices Guide, which also includes a list of cards Forbidden in Remote Duel only."]
-    },
-    {
-      "t": "p",
-      "r": ["https://www.yugioh-card.com/en/downloads/remoteduel/EN_Remote_Duel_Best_Practice_Guide_V_1_2.pdf"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What is the format for the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," The Remote Duel YCS tournament is a Constructed – Advanced Format event, which means each Duelist must use his or her own Deck to compete. Decks must be constructed per the latest Advanced Format guidelines. (See here for more information: http://www.yugioh-card.com/en/limited/index.html.) The Forbidden & Limited list is updated periodically; refer to the “UPDATED” date on that page to ensure your Deck matches the current format."]
-    },
-    {
-      "t": "p",
-      "r": ["Certain types of card effects involving Private Knowledge cannot be successfully resolved in Remote Duel and are considered to be Forbidden in Remote Duel only."]
-    },
-    {
-      "t": "p",
-      "r": ["Cards Forbidden in Remote Duel are not Forbidden for in-person play, therefore they are not displayed on the Advanced or Traditional Format Forbidden & Limited List."]
-    },
-    {
-      "t": "p",
-      "r": ["Please consult with the Head Judge for the event if you have questions about the legality of cards in your Deck."]
-    },
-    {
-      "t": "p",
-      "r": ["This Forbidden List is ",{"b":"in addition to"}," the Forbidden and Limited list posted on the website."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Card Name – Forbidden in Remote Duel"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How many Rounds will the Remote Duel YCS have?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," The number of rounds in the tournament will be decided based on the modifier stipulated in section ",{"b":"I. Number of Rounds – Tier 3 and Tier 4 Events"}," found in the KDE-US Tournament Policy:"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How many Duelists will advance to Day 2?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," The number of Duelist that return for Day 2 will be based on actual registered Duelist plus all VIPS. (late entries will not be considered)"]
-    },
-    {
-      "t": "p",
-      "r": ["If there are 256 or fewer Duelists registered for the YCS, then the Top 64 Duelists OR Duelists with a minimum of 15 Points, whichever number is larger, will advance to Day 2."]
-    },
-    {
-      "t": "p",
-      "r": ["If there are 257 – 512 Duelists registered for the YCS, then the Top 64 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
-    },
-    {
-      "t": "p",
-      "r": ["If there are 513 – 1024 Duelists registered for the YCS, then the Top 128 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How many Duelists will advance to the Top Cut?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," The tournament will cut to Top 8 after all rounds of Swiss are completed and prizes will be awarded down to 32",{"s":"nd"}," place based on the standings of active Duelists."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: Who should I contact if I have questions about the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Company:"}," Monster Sprim"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"E-mail:"}," ventas@monstersprim.com.mx"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Discord Server"},": https://discord.com/invite/KzAzbhYjSf"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: Will there be coverage of the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Yes! There will be online blog type coverage here:"]
-    },
-    {
-      "t": "p",
-      "r": ["Event Coverage blog – Event updates, Pairings, and Standings."]
-    },
-    {
-      "t": "p",
-      "r": ["There will not be a Livestream for this event"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What will I need to participate in the Remote Duel YCS tournament?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," You should have a tournament-legal Deck as described under “",{"b":"What is the format for the Yu-Gi-Oh! Championship Series?"},",” along with any tournament supplies you will need, such as paper and pen to track Life Points, dice or counters if you are using cards which require them, extra sleeves to replace any that become damaged, and so forth. If you have a CARD GAME ID number, you should have your number."]
-    },
-    {
-      "t": "p",
-      "r": ["You will also need a functional Remote Duel setup. You can find more information on Remote Duel technical requirements here: https://www.yugioh-card.com/en/downloads/remoteduel/Remote Duel Set Up Guide.pdf"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: I don’t have a Remote Duel Setup. Is there anything I can do to participate?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Some Official Tournament Stores (OTS) can offer Remote Duel Stations to allow Remote Duelists to participate in Remote Duel tournaments. These same Remote Duel Stations can be used to participate in the Remote Duel YCS. Keep in mind that quantities are limited so please make sure to reach out to your OTS to check as soon as possible."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: During my Match, how many cameras can I use to stream?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," During a match, a maximum of 1 camera can be active per Duelist."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How do I find my table during the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Each Round, pairings will be posted in a channel named ",{"b":"#ycs-main-event-pairings"}," in the Remote Duel YCS Discord server. The pairings will be posted as a series of images. The images are the pairings for the Round, sorted by Duelists’ Last Name. Find your name on the Pairings channel to see the table you are assigned for the Round."]
-    },
-    {
-      "t": "p",
-      "r": ["Alternatively, the same channel will also have a QR code posted to the Online Pairings website. For this website, you will enter your CARD GAME ID and the Online Pairings website will tell you what Table you are assigned for the Round. If you are not sure what your CARD GAME ID is, you can find it next to your name on the images of the pairings list and then use it for future Rounds."]
-    },
-    {
-      "t": "p",
-      "r": ["Regardless of whether you find your assigned table through the pairings images or the Online Pairings website, Once you have found your assigned table for the Round, you will be able to find it in the list of voice channels. For example, if you are assigned table 20, you would find the voice channel ",{"b":"table 20"}," and join that for your match."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How do I report my match result during the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Once you have completed your match, you can report your result in the ",{"b":"#ycs-Round-results"}," text channel in the Remote Duel YCS Discord server."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: Where do I find information during the Remote Duel YCS?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," If you have any questions before, during, or after the Remote Duel YCS, you should first check the ",{"b":"#faq"}," text channel on the Remote Duel YCS Discord server. Many frequently asked questions have answers there. You should also check the ",{"b":"#announcements"}," channel for recent announcements that may answer your question. Finally, if you have not found an answer elsewhere, you can request assistance by reaching out to the staff members managing the Remote Duel YCS Server."]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"Main Event Prizing"}]
-    },
-    {
-      "t": "p",
-      "r": ["*In addition to the other prizes for 1st place, the winner will receive complimentary travel and accommodation for the next WCQ in their territory (North and Latin America only)."]
-    },
-    {
-      "t": "p",
-      "r": ["** Not all Yu-Gi-Oh! Cards can be made into Giant Cards see this page for details."]
-    },
-    {
-      "t": "p",
-      "r": ["** The YCS Promo Card will be awarded based on final attendance and will be awarded at the beginning of Day 2. Duelists that drop from the event will not be eligible for the Promo Card."]
+      "r": ["Duelists will compete in 8 Swiss Rounds today, followed by 4 additional Swiss Rounds tomorrow for those with a strong enough record to advance. After all 12 Swiss Rounds are completed, the Top 8 Duelists will compete in a single-elimination bracket that will determine this weekend’s champion! Round 1 of the 2025 North America Remote Duel YCS is starting now!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-2-feature-match-seth-hopkins-vs-kevin-le/": [
@@ -2249,346 +1783,52 @@
       "r": ["1 The Black Goat Laughs\n3 Dinowrestler Pankratops\n3 Ghost Belle & Haunted Mansion\n1 Koa’ki Meiru Drago\n3 Effect Veiler\n1 Blazing Cartesia, the Virtuous\n3 Artifact Lancea"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/and-the-winner-is-62/": [
+  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/sunday-attack-of-the-giant-card-winners-5/": [
     {
       "t": "p",
-      "r": ["483 Duelists competed, and we now have our winner of the 2025 North America Remote Duel YCS!"]
+      "r": ["We have our winners for the Sunday’s Genesys ATTACK OF THE GIANT CARD!! Event!"]
     },
     {
       "t": "p",
-      "r": [{"who":"Sabit Zada","t":"Sabit Zada"}," from England earned first place with his K9 Vanquish Soul Deck, winning an Ultra Rare ",{"b":"Anotherverse Stratios"},", an awesome trophy, a GIANT card of his choice, and lots of other incredible prizes! Congratulations to the newest YCS champion!"]
+      "r": ["In 1st place, we had Jarrid Centamore, piloting the Radiant Typhoon Deck!"]
+    },
+    {
+      "t": "p",
+      "r": ["In 2nd place, Stephen Lam was playing Gem-Knights!"]
+    },
+    {
+      "t": "p",
+      "r": ["And in 3rd place, ",{"who":"Xavier LeBlanc","t":"Xavier LeBlanc"}," played Radiant Typhoon Runick!"]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations, Duelists!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/event-information/latin-america-remote-duel-ycs-2026-public-events-information/": [
+  "https://yugiohblog.konami.com/2025/ycs/what-is-a-remote-duel-3/": [
     {
       "t": "p",
-      "r": [{"b":"Public Event Schedule"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Public Event Format"}]
+      "r": ["Are you new to “Remote Duels” for the Yu-Gi-Oh! TRADING CARD GAME or confused about how this weekend’s Remote Duel YCS works? Here’s everything you need to know!"]
     },
     {
       "t": "p",
-      "r": [{"b":"Public Event Entry Packs and Prizing"}]
+      "r": ["In a Remote Duel for the Yu-Gi-Oh! TRADING CARD GAME, players can compete against one another from anywhere in the world! All they need is a video feed, a stable internet connection, and the ability to communicate with other Remote Duel participants. This weekend’s tournament is taking place in a Discord server, so players will need to create an account with Discord in order to compete."]
     },
     {
       "t": "p",
-      "r": [{"b":"Genesys"}]
+      "r": ["If you’re competing in a Yu-Gi-Oh! TRADING CARD GAME Remote Duel, you’ll need a camera that points to your field of cards so that your opponent can see it. Everything that’s going on in the Duel is visible on that feed, so it’s just like Dueling in person!"]
     },
     {
       "t": "p",
-      "r": [{"b":"DUEL LINKS Tournament"}]
+      "r": ["This weekend’s Remote Duel YCS awards prizing that is nearly identical to the prizing awarded at an in-person YCS, including the Ultra Rare ",{"b":"Anotherverse Stratios"}," prize card and special trophy for first place! The winner will also receive a GIANT Card of their choice and a variety of other prizes that players have become accustomed to winning at in-person YCS events. Top-finishing Duelists will also receive special promotional cards with a “YCS” logo stamped on them, including ",{"b":"Effect Veiler"}," for the Top 16 and ",{"b":"Card Trooper"}," for the Top 32."]
     },
     {
       "t": "p",
-      "r": [{"b":"MASTER DUEL Tournament"}]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"Public Event Schedule"}]
+      "r": ["Some Official Tournament Stores also host Remote Duel tournaments regularly. Be sure to join them if you want to experience the thrill of competitive Dueling without leaving your home."]
     },
     {
       "t": "p",
-      "r": [{"b":"Q: Will there be Public Events?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Yes, choose the Public Events Schedule from the menu at the top of this FAQ to view the schedule and more information about the Public Events for this YCS!"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What are the different types of Public Events?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," The following events will take place during the Remote Duel YCS weekend:"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"**Maximum capacity may be raised to 128 at the Tournament Organizer’s discretion."}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"***Must have your own copy of "},{"i":"THE CHRONICLES DECK: Spirit Charmers (All-Foil Edition) in "},{"b":"order to participate."}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"All Prizing in the chart above is while supplies last. Some events may launch with alternate prizing if prizing runs out. Any changes will be announced prior to Registration opening for that event."}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: When are Public Events scheduled?"}]
-    },
-    {
-      "t": "p",
-      "r": ["Please check with the Tournament Organizer that’s closer to your residence via Discord for Public Event start times. See the next section of this FAQ for a full list of Discord Servers that will be hosting Public Events."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: How do I sign up for Public Events?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," All Duelists who wish to register for Public Events should do so on the Discord server that is closest to where he or she resides."]
-    },
-    {
-      "t": "p",
-      "r": ["Public Events will be hosted in the following Discord servers throughout the Remote Duel YCS weekend:"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What is a Single-Elimination Tournament?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," Half of the tournament is eliminated after each Round – the losing Duelist is out of the tournament, while the winner goes on to the next Round. This continues until only one Duelist remains, who is then declared the winner."]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"Public Event Format"}]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"Public Event Entry Packs and Prizing"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"2026 Regional Qualifier Game Mat"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"ATTACK OF THE GIANT CARD!! Prize"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"DUEL LINKS Game Mat"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"MASTER DUEL Desk Mat"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"THE CHRONICLES DECK Tournament Game Mat"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Genesys Game Mat"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Win-A-Mat Game Mat"}]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"Genesys"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What is Genesys?"}]
-    },
-    {
-      "t": "p",
-      "r": ["Genesys uses the same rules as standard Duels, with a few simple changes."]
-    },
-    {
-      "t": "p",
-      "r": ["Genesys rules are simple:"]
-    },
-    {
-      "t": "li",
-      "r": ["No Link Monsters or Pendulum Monsters are allowed. All other cards are allowed. The original field layout is used, with no Extra Monster Zones nor Pendulum Zones."]
-    },
-    {
-      "t": "li",
-      "r": ["The standard Forbidden & Limited Cards list is not used. All those cards can be used, except Link Monsters and Pendulum Monsters. Usual limit of 3 copies max of any card still applies."]
-    },
-    {
-      "t": "li",
-      "r": ["Deck construction uses a point system. Some cards are assigned a point value; most cards cost zero points. The total point cost of cards in your Main Deck, Extra Deck, and Side Deck (combined) cannot exceed the point cap for that event."]
-    },
-    {
-      "t": "p",
-      "r": ["For the Remote Duel YCS, all Genesys tournaments will use the 100 Points cap for Deck-building."]
-    },
-    {
-      "t": "p",
-      "r": ["For more information about Genesys, please visit: https://www.yugioh-card.com/en/genesys/"]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"DUEL LINKS Tournament"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What are the rules for a DUEL LINKS Tournament?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," This event allows you to use your device and connect to others for a DUEL LINKS format, Single-Elimination event. Test your Deck builds in a Duel using the latest DUEL LINKS Forbidden and Limited restrictions to compete for DUEL LINKS Prize Patches and the new 1st place Pin (while supplies last)!"]
-    },
-    {
-      "t": "li",
-      "r": ["Rounds will be played best of three (3) Duels."]
-    },
-    {
-      "t": "li",
-      "r": ["Rounds will be 55 minutes long."]
-    },
-    {
-      "t": "p",
-      "r": ["Between each Duel, you may use your Side Deck to alter your Deck for the next Duel."]
-    },
-    {
-      "t": "li",
-      "r": ["Your Side Deck can consist of between 0 to 12 of the following;"]
-    },
-    {
-      "t": "li",
-      "r": ["Between 0 and 12 cards"]
-    },
-    {
-      "t": "li",
-      "r": ["Between 0 and 3 Legendary Duelists with a Character Skill"]
-    },
-    {
-      "t": "li",
-      "r": ["For example, a Side Deck could be made up of 9 cards and 3 additional Legendary Duelists with a Character Skill or 1 additional Legendary Duelist with 3 different Character Skills"]
-    },
-    {
-      "t": "li",
-      "r": ["Any changes can be made to the Deck between Duels of a Match, including the following:"]
-    },
-    {
-      "t": "li",
-      "r": ["Adding Cards"]
-    },
-    {
-      "t": "li",
-      "r": ["Subtracting Cards"]
-    },
-    {
-      "t": "li",
-      "r": ["Changing Legendary Duelist"]
-    },
-    {
-      "t": "li",
-      "r": ["Changing Character Skill"]
-    },
-    {
-      "t": "li",
-      "r": ["The Deck must be legal for play (appropriate number of cards in the Main and Side Deck, complies with the Forbidden and Limited list available within the DUEL LINKS app)."]
-    },
-    {
-      "t": "li",
-      "r": ["If the Duelist believes there is an error or other issue with their Deck, they should contact a Judge immediately."]
-    },
-    {
-      "t": "li",
-      "r": ["After you finish preparing your Deck, please notify the judge that you have completed Side Decking and are ready to start your next Duel."]
-    },
-    {
-      "t": "li",
-      "r": ["Failure to do this by the 3-minute mark may result in appropriate penalties."]
-    },
-    {
-      "t": "li",
-      "r": ["If there are any issues while Side Decking or connecting to the room after confirming you are ready for your next Duel, please notify a judge immediately."]
-    },
-    {
-      "t": "li",
-      "r": ["Duelists are required to revert their Deck back to its original Deck prior to the start of each Match in an On-Demand Single-Elimination Public Event. Duelists must have a DUEL LINKS legal-for-play Deck prior to each played Game/Match."]
-    },
-    {
-      "t": "li",
-      "r": ["Some DUEL LINKS Events will require Deck Lists, please be sure to check event information regarding Deck lists to confirm."]
-    },
-    {
-      "t": "p",
-      "r": ["In case of a disconnect, win/loss will be determined by the result given in-game. If the app crashes, or both Duelists disconnect simultaneously and a win is not decided, the Duelists will restart that Duel using the same Decks. Side Decking will not be allowed for that specific Duel."]
-    },
-    {
-      "t": "p",
-      "r": ["Instructions on how the competitors can connect to the in-game Tournament Room will be provided once you are seated for the events."]
-    },
-    {
-      "t": "p",
-      "r": ["Duelists will need to have the latest DUEL LINKS app installed on their device and reached Stage 4 or higher to participate in Tournaments. The current version at the time of posting is ",{"b":"v. 10.1.0"},"."]
-    },
-    {
-      "t": "hr"
-    },
-    {
-      "t": "h",
-      "r": [{"b":"MASTER DUEL Tournament"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Q: What are the rules for a MASTER DUEL Tournament?"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"A:"}," This event allows you to use your own device and connect to others remotely for a MASTER DUEL format, Single-Elimination event. Test your Deck builds in a Duel using the latest MASTER DUEL Forbidden and Limited restrictions to compete for MASTER DUEL Prizes (while supplies last)!"]
-    },
-    {
-      "t": "li",
-      "r": ["Rounds will be played best of three (3) Duels."]
-    },
-    {
-      "t": "li",
-      "r": ["For Games 2 and 3, please ignore the results of the coin toss and have the loser of the previous game choose to go first or second."]
-    },
-    {
-      "t": "li",
-      "r": ["Rounds will be 50 minutes long."]
-    },
-    {
-      "t": "li",
-      "r": ["Prior to the start the tournament, each Duelist will select 2 Decks to use for the tournament."]
-    },
-    {
-      "t": "li",
-      "r": ["Prior to each game of the match, Duelists will select which of those 2 Decks they plan to use for that specific game."]
-    },
-    {
-      "t": "li",
-      "r": ["After each Duelist has selected which Deck they would like to use, they will notify the judge that they have completed their Deck Selections and are ready to start their Duel."]
-    },
-    {
-      "t": "li",
-      "r": ["Each of those Decks must be legal for play (appropriate number of cards in the Main Deck, complies with the Forbidden and Limited list available within the MASTER DUEL app)."]
-    },
-    {
-      "t": "p",
-      "r": ["If the Duelist believes there is an error or other issue with their Decks, they should contact a Judge immediately."]
-    },
-    {
-      "t": "p",
-      "r": ["If there are any issues during Deck Selection or connecting to the room after confirming you are ready for your next Duel, please notify a judge immediately."]
-    },
-    {
-      "t": "p",
-      "r": ["In case of a disconnect, win/loss will be determined by the result given in-game. If the app crashes, or both Duelists disconnect simultaneously and a win is not decided, the Duelists will restart that Duel using the same Decks. Deck Selection will not be allowed for that specific Duel."]
-    },
-    {
-      "t": "p",
-      "r": ["Instructions on how Duelists can connect to the in-game Tournament Room will be provided once you are on the Discord Server for the events. Duelists will need to have the latest MASTER DUEL app installed on their device to participate in Tournaments. Your device will ask you to update to the latest version, if you do not have the latest version."]
+      "r": ["Click here for more information about Remote Duels!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-3-feature-match-bryce-cloe-vs-llewelyn-slone/": [
@@ -2679,40 +1919,60 @@
       "r": ["Vanquish Soul K9, Dracotail, and Yummy are each taking multiple spots in the Top 8. However, there’s also a Gem-Knight Deck that has made it in, as well! Any of these strategies could be in the finals, so be sure to stay tuned in to find out."]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/sunday-attack-of-the-giant-card-winners-5/": [
+  "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-3-vs-3-team-tournament-winners/": [
     {
       "t": "p",
-      "r": ["We have our winners for the Sunday’s Genesys ATTACK OF THE GIANT CARD!! Event!"]
+      "r": ["Here are the Top 4 teams of the 3 vs. 3 Team Tournament held at the 2025 North America Remote Duel YCS!"]
     },
     {
       "t": "p",
-      "r": ["In 1st place, we had Jarrid Centamore, piloting the Radiant Typhoon Deck!"]
+      "r": ["1st Place: Kevin Rodriguez Goncalves, Noelle Nogar, and Joseph Rothschild\n2nd Place: Tran Vo, Jacky Kwok, and Aaron Cheung\n3rd/4th Place: ",{"who":"Alexander Ryo Igarashi","t":"Alexander Igarashi"},", ",{"who":"Jesus Alejandro Barrios","t":"Jesus Barrios"},", and ",{"who":"Matthew Stuart Brown","t":"Matthew Brown"},"\n3rd/4th Place: ",{"who":"Marshall Emery Demorest III","t":"Marshall Demorest"}," III, ",{"who":"Luis Alberto Ruiz","t":"Luis Ruiz"},", and ",{"who":"Vincent Edward Hopkins Jr.","t":"Vincent Hopkins"},", Jr."]
     },
     {
       "t": "p",
-      "r": ["In 2nd place, Stephen Lam was playing Gem-Knights!"]
-    },
-    {
-      "t": "p",
-      "r": ["And in 3rd place, ",{"who":"Xavier LeBlanc","t":"Xavier LeBlanc"}," played Radiant Typhoon Runick!"]
-    },
-    {
-      "t": "p",
-      "r": ["Congratulations, Duelists!"]
+      "r": ["Congratulations to the Top 4 teams! They’ll be shipped 3 x 3 uncut sheets of cards to commemorate their victories this weekend!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/welcome-to-the-2025-north-america-remote-duel-yu-gi-oh-championship-series/": [
+  "https://yugiohblog.konami.com/2025/championships/2025-north-america-remote-duel-ycs-giant-cards/": [
     {
       "t": "p",
-      "r": ["The Yu-Gi-Oh! Championship Series (“YCS”) returns, and it’s from the comfort of your own home! The Remote Duel YCS lets Duelists set up a microphone and a camera pointing to their field, and Duel against other players over Discord for the chance of winning the same trophy and prizes that Duelists have become accustomed to competing for at in-person YCS events."]
+      "r": ["This weekend’s Remote Duel YCS features a bunch of Public Events in which players can win GIANT cards by beating the competition without leaving their home. Check out which GIANT cards are up for grabs!"]
     },
     {
       "t": "p",
-      "r": ["454 Duelists are competing in Round 1 of the Remote Duel YCS this weekend, and even though the competition will be held remotely, it will be as fierce as ever! ",{"who":"James Allen Sun Markowitz","t":"James Markowitz"}," won YCS Merida, Mexico just last weekend with his Mitsurugi Yummy Deck, and Aditya Dharap won YCS Pittsburgh a few weeks earlier with his Dracotail Deck. Mitsurugi, Yummy, and Dracotail strategies are expected to be popular picks for Duelists to use this weekend, but several Duelists are putting their faith in other strategies that they perceive to be powerful. These strategies include K9, Lunalight, Sky Striker, and Branded. The recent release of ",{"i":"THE CHRONICLES DECK: The Fallen & The Virtuous (All-Foil Edition)"}," gave some new strength to Branded strategies, which many Duelists have been integrating into their Dracotail Decks. At the end of the weekend, only one Duelists can take home the YCS trophy (or, more accurately, have the YCS trophy shipped to them) and claim the title of Remote Duel YCS champion!"]
+      "r": ["The winner of Saturday’s Advanced Format ATTACK OF THE GIANT CARD!! Tournament will be able to choose between two different GIANT cards."]
     },
     {
       "t": "p",
-      "r": ["Duelists will compete in 8 Swiss Rounds today, followed by 4 additional Swiss Rounds tomorrow for those with a strong enough record to advance. After all 12 Swiss Rounds are completed, the Top 8 Duelists will compete in a single-elimination bracket that will determine this weekend’s champion! Round 1 of the 2025 North America Remote Duel YCS is starting now!"]
+      "r": ["The first choice is a GIANT ",{"b":"Marshmao☆Yummy"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["The second choice is a GIANT ",{"b":"Dogmatika Fleurdelis, the Thunderbolt"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["Sunday’s winner will receive the remaining option, while second and third place finishers will receive Oversized (but not quite GIANT) versions of one of these two cards."]
+    },
+    {
+      "t": "p",
+      "r": ["The winner of this weekend’s Genesys ATACK OF THE GIANT CARD!! Tournament will receive a GIANT ",{"b":"Allure of Darkness"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["Second and third place finishers will receive an Oversized version of it."]
+    },
+    {
+      "t": "p",
+      "r": ["Finally, the winner of this weekend’s Speed Duel ATTACK OF THE GIANT CARD!! Tournament will receive a GIANT ",{"b":"Harpie Queen"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["As usual, an Oversized (but not quite GIANT) ",{"b":"Harpie Queen"}," will be awarded to second and third place in the Speed Duel ATTACK OF THE GIANT CARD!! Tournament."]
+    },
+    {
+      "t": "p",
+      "r": ["In addition to these amazing GIANT cards, players can redeem Prize Wall tickets for a number of other GIANT cards this weekend, including ",{"b":"Rescue Cat"},", ",{"b":"Black Rose Dragon"},", and ",{"b":"Judgment Dragon"},". Be sure to participate in this weekend’s Remote Duel YCS Public Events for your chance to win the GIANT cards that are available!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-4-feature-match-yuta-abe-vs-herman-hansson/": [
@@ -2749,44 +2009,40 @@
       "r": [{"who":"Herman Hans Hansson","t":"Herman Hansson"}," takes the 2-0 win and advances with a 4-0 record!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-3-vs-3-team-tournament-winners/": [
+  "https://yugiohblog.konami.com/2025/ycs/sunday-attack-of-the-giant-card-winners-6/": [
     {
       "t": "p",
-      "r": ["Here are the Top 4 teams of the 3 vs. 3 Team Tournament held at the 2025 North America Remote Duel YCS!"]
+      "r": ["We have the results of Sunday’s ATTACK OF THE GIANT CARD!! event!"]
     },
     {
       "t": "p",
-      "r": ["1st Place: Kevin Rodriguez Goncalves, Noelle Nogar, and Joseph Rothschild\n2nd Place: Tran Vo, Jacky Kwok, and Aaron Cheung\n3rd/4th Place: ",{"who":"Alexander Ryo Igarashi","t":"Alexander Igarashi"},", ",{"who":"Jesus Alejandro Barrios","t":"Jesus Barrios"},", and ",{"who":"Matthew Stuart Brown","t":"Matthew Brown"},"\n3rd/4th Place: ",{"who":"Marshall Emery Demorest III","t":"Marshall Demorest"}," III, ",{"who":"Luis Alberto Ruiz","t":"Luis Ruiz"},", and ",{"who":"Vincent Edward Hopkins Jr.","t":"Vincent Hopkins"},", Jr."]
+      "r": ["In 1st place, we have ",{"who":"Joshua Steven Kippenberg","t":"Joshua Kippenberg"},"! He piloted his K9 Mitsurugi Deck to victory, claiming a GIANT ",{"b":"Dogmatika Fleurdelis, the Thunderbolt"},"!"]
     },
     {
       "t": "p",
-      "r": ["Congratulations to the Top 4 teams! They’ll be shipped 3 x 3 uncut sheets of cards to commemorate their victories this weekend!"]
+      "r": ["Finishing in 2nd Place is ",{"who":"Daniel Alan Rocco","t":"Daniel Rocco"},", who played a Branded Dracotail Deck!"]
+    },
+    {
+      "t": "p",
+      "r": ["And in 3rd Place, it’s ",{"who":"Jason Yuan","t":"Jason Yuan"}," with a Solfachord Yummy Deck!"]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations, Duelists!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/what-is-a-remote-duel-3/": [
+  "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-saturdays-dragon-duel-top-4/": [
     {
       "t": "p",
-      "r": ["Are you new to “Remote Duels” for the Yu-Gi-Oh! TRADING CARD GAME or confused about how this weekend’s Remote Duel YCS works? Here’s everything you need to know!"]
+      "r": ["We have our Top 4 young Duelists for Saturday’s Dragon Duel tournament!"]
     },
     {
       "t": "p",
-      "r": ["In a Remote Duel for the Yu-Gi-Oh! TRADING CARD GAME, players can compete against one another from anywhere in the world! All they need is a video feed, a stable internet connection, and the ability to communicate with other Remote Duel participants. This weekend’s tournament is taking place in a Discord server, so players will need to create an account with Discord in order to compete."]
+      "r": ["First place: Andrew C.\nSecond place: Carsen L.\nThird place: Lee H.\nFourth place: Danielle H."]
     },
     {
       "t": "p",
-      "r": ["If you’re competing in a Yu-Gi-Oh! TRADING CARD GAME Remote Duel, you’ll need a camera that points to your field of cards so that your opponent can see it. Everything that’s going on in the Duel is visible on that feed, so it’s just like Dueling in person!"]
-    },
-    {
-      "t": "p",
-      "r": ["This weekend’s Remote Duel YCS awards prizing that is nearly identical to the prizing awarded at an in-person YCS, including the Ultra Rare ",{"b":"Anotherverse Stratios"}," prize card and special trophy for first place! The winner will also receive a GIANT Card of their choice and a variety of other prizes that players have become accustomed to winning at in-person YCS events. Top-finishing Duelists will also receive special promotional cards with a “YCS” logo stamped on them, including ",{"b":"Effect Veiler"}," for the Top 16 and ",{"b":"Card Trooper"}," for the Top 32."]
-    },
-    {
-      "t": "p",
-      "r": ["Some Official Tournament Stores also host Remote Duel tournaments regularly. Be sure to join them if you want to experience the thrill of competitive Dueling without leaving your home."]
-    },
-    {
-      "t": "p",
-      "r": ["Click here for more information about Remote Duels!"]
+      "r": ["Andrew used a Yummy Mitsurugi Deck to defeat the rest of the competition. Congratulations to the Top 4!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-5-feature-match-cesar-gonzalez-rodriguez-vs-timothy-dahl/": [
@@ -2851,68 +2107,28 @@
       "r": [{"who":"Timothy Kenneth Michael Dahl","t":"Timothy Dahl"}," takes this Match with Yummy Mitsurugi!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/sunday-attack-of-the-giant-card-winners-6/": [
+  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/public-events-points-playoff-winner-20/": [
     {
       "t": "p",
-      "r": ["We have the results of Sunday’s ATTACK OF THE GIANT CARD!! event!"]
+      "r": ["The winner of the Public Events Points Playoff is here!"]
     },
     {
       "t": "p",
-      "r": ["In 1st place, we have ",{"who":"Joshua Steven Kippenberg","t":"Joshua Kippenberg"},"! He piloted his K9 Mitsurugi Deck to victory, claiming a GIANT ",{"b":"Dogmatika Fleurdelis, the Thunderbolt"},"!"]
-    },
-    {
-      "t": "p",
-      "r": ["Finishing in 2nd Place is ",{"who":"Daniel Alan Rocco","t":"Daniel Rocco"},", who played a Branded Dracotail Deck!"]
-    },
-    {
-      "t": "p",
-      "r": ["And in 3rd Place, it’s ",{"who":"Jason Yuan","t":"Jason Yuan"}," with a Solfachord Yummy Deck!"]
-    },
-    {
-      "t": "p",
-      "r": ["Congratulations, Duelists!"]
+      "r": ["Congratulations to Joseph Rothschild, who won the playoff with his Vanquish Soul K9 Deck! He earned among the most Public Events points this weekend and was selected for this playoff. He’ll receive a Super Rare copy of the YCS Prize Card ",{"b":"Anotherverse Stratios!"}]
     }
   ],
-  "https://yugiohblog.konami.com/2025/championships/2025-north-america-remote-duel-ycs-giant-cards/": [
+  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/speed-duel-main-event-series-top-8-2/": [
     {
       "t": "p",
-      "r": ["This weekend’s Remote Duel YCS features a bunch of Public Events in which players can win GIANT cards by beating the competition without leaving their home. Check out which GIANT cards are up for grabs!"]
+      "r": ["Here are the Top 8 from the Speed Duel Main Event Series at the 2025 North America Remote Duel YCS!"]
     },
     {
       "t": "p",
-      "r": ["The winner of Saturday’s Advanced Format ATTACK OF THE GIANT CARD!! Tournament will be able to choose between two different GIANT cards."]
+      "r": ["Winner – Jeremy Sweitzer\nSecond Place – Edward Lu\nTop 4 – Richard Tian\nTop 4 – Hsiao Chen\nTop 8 – Steven De Lara\nTop 8 – Ryan Jacobs\nTop 8 – ",{"who":"Patrick Jacob Yunker","t":"Patrick Yunker"},"\nTop 8 – Connor Maguire"]
     },
     {
       "t": "p",
-      "r": ["The first choice is a GIANT ",{"b":"Marshmao☆Yummy"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["The second choice is a GIANT ",{"b":"Dogmatika Fleurdelis, the Thunderbolt"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["Sunday’s winner will receive the remaining option, while second and third place finishers will receive Oversized (but not quite GIANT) versions of one of these two cards."]
-    },
-    {
-      "t": "p",
-      "r": ["The winner of this weekend’s Genesys ATACK OF THE GIANT CARD!! Tournament will receive a GIANT ",{"b":"Allure of Darkness"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["Second and third place finishers will receive an Oversized version of it."]
-    },
-    {
-      "t": "p",
-      "r": ["Finally, the winner of this weekend’s Speed Duel ATTACK OF THE GIANT CARD!! Tournament will receive a GIANT ",{"b":"Harpie Queen"},"!"]
-    },
-    {
-      "t": "p",
-      "r": ["As usual, an Oversized (but not quite GIANT) ",{"b":"Harpie Queen"}," will be awarded to second and third place in the Speed Duel ATTACK OF THE GIANT CARD!! Tournament."]
-    },
-    {
-      "t": "p",
-      "r": ["In addition to these amazing GIANT cards, players can redeem Prize Wall tickets for a number of other GIANT cards this weekend, including ",{"b":"Rescue Cat"},", ",{"b":"Black Rose Dragon"},", and ",{"b":"Judgment Dragon"},". Be sure to participate in this weekend’s Remote Duel YCS Public Events for your chance to win the GIANT cards that are available!"]
+      "r": ["Congratulations, Speed Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-7-feature-match-anthony-xu-vs-sabit-zada/": [
@@ -2993,28 +2209,14 @@
       "r": [{"who":"Anthony Xu","t":"Anthony Xu"}," is the victor, with Gem-Knights!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/public-events-points-playoff-winner-20/": [
+  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/public-events-random-playoff-winner-16/": [
     {
       "t": "p",
-      "r": ["The winner of the Public Events Points Playoff is here!"]
+      "r": ["By entering Public Events, you have a chance of randomly being selected to a 4 Duelist playoff. The winner of the playoff earns a copy of the current YCS Prize Card, ",{"b":"Anotherverse Stratios"},"!"]
     },
     {
       "t": "p",
-      "r": ["Congratulations to Joseph Rothschild, who won the playoff with his Vanquish Soul K9 Deck! He earned among the most Public Events points this weekend and was selected for this playoff. He’ll receive a Super Rare copy of the YCS Prize Card ",{"b":"Anotherverse Stratios!"}]
-    }
-  ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-saturdays-dragon-duel-top-4/": [
-    {
-      "t": "p",
-      "r": ["We have our Top 4 young Duelists for Saturday’s Dragon Duel tournament!"]
-    },
-    {
-      "t": "p",
-      "r": ["First place: Andrew C.\nSecond place: Carsen L.\nThird place: Lee H.\nFourth place: Danielle H."]
-    },
-    {
-      "t": "p",
-      "r": ["Andrew used a Yummy Mitsurugi Deck to defeat the rest of the competition. Congratulations to the Top 4!"]
+      "r": ["Congratulations to Hanko Chow, who won the playoff with his Maliss Deck!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/round-10-feature-match-jeremy-alan-amrhein-vs-savvas-charalampidis/": [
@@ -3059,28 +2261,40 @@
       "r": ["With the victory, ",{"who":"Savvas Charalampidis","t":"Charalampidis"},"’ record improves to an impressive 8-2, hopefully taking him one step closer to the Top Cut here at the Remote Duel YCS!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/public-events-random-playoff-winner-16/": [
+  "https://yugiohblog.konami.com/2025/ycs/speed-duel-attack-of-the-giant-card-winners-4/": [
     {
       "t": "p",
-      "r": ["By entering Public Events, you have a chance of randomly being selected to a 4 Duelist playoff. The winner of the playoff earns a copy of the current YCS Prize Card, ",{"b":"Anotherverse Stratios"},"!"]
+      "r": ["We have the results of our Speed Duel ATTACK OF THE GIANT CARD!! event!"]
     },
     {
       "t": "p",
-      "r": ["Congratulations to Hanko Chow, who won the playoff with his Maliss Deck!"]
+      "r": ["Taking 1st place, it’s Steven De Lara! He’s won the GIANT ",{"b":"Harpie Queen"},"! His Battle City Bestie Deck brought him to victory, packed with controlling spells and traps, and monsters like ",{"b":"Gearfried the Iron Knight"},", ",{"b":"Drillroid"},", and ",{"b":"Fossil Dyna Pachycephalo"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["Taking 2nd, we have ",{"who":"Patrick Jacob Yunker","t":"Patrick Yunker"},", also using Battle City Bestie! Despite having the same Skill Card, his Deck is quite different, using ",{"b":"Joker’s Knight"}," and ",{"b":"Magikuriboh"}," as a big focus."]
+    },
+    {
+      "t": "p",
+      "r": ["Finishing in 3rd is Juan Navarro, playing – you guessed it, Battle City Bestie! His Deck is similar to De Lara’s, though they have different spells and traps, and different monster ratios."]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations to our Speed Duelists!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/speed-duel-main-event-series-top-8-2/": [
+  "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-top-4-duelists/": [
     {
       "t": "p",
-      "r": ["Here are the Top 8 from the Speed Duel Main Event Series at the 2025 North America Remote Duel YCS!"]
+      "r": ["The tournament is finished and we have our top 4 Duelists!"]
     },
     {
       "t": "p",
-      "r": ["Winner – Jeremy Sweitzer\nSecond Place – Edward Lu\nTop 4 – Richard Tian\nTop 4 – Hsiao Chen\nTop 8 – Steven De Lara\nTop 8 – Ryan Jacobs\nTop 8 – ",{"who":"Patrick Jacob Yunker","t":"Patrick Yunker"},"\nTop 8 – Connor Maguire"]
+      "r": ["First place: ",{"who":"Sabit Zada","t":"Sabit Zada"}," (K9 Vanquish Soul)\nSecond place: ",{"who":"Gabriel Soussi","t":"Gabriel Soussi"}," (Dracotail)\nThird place: ",{"who":"Julien Leo Kehon","t":"Julien Kehon"}," (K9 Vanquish Soul)\nFourth place: ",{"who":"Zio Tristan Mundry","t":"Zio Mundry"}," (Yummy)"]
     },
     {
       "t": "p",
-      "r": ["Congratulations, Speed Duelists!"]
+      "r": ["Congratulations to the Top 4 of the 2025 North America Remote Duel YCS!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-11-feature-match-kylar-price-vs-jamie-hunter/": [
@@ -3125,26 +2339,44 @@
       "r": [{"who":"Jamie Hunter","t":"Jamie Hunter"}," takes this one with Vanquish Soul K9!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/speed-duel-attack-of-the-giant-card-winners-4/": [
+  "https://yugiohblog.konami.com/2025/ycs/saturday-attack-of-the-giant-card-winners-6/": [
     {
       "t": "p",
-      "r": ["We have the results of our Speed Duel ATTACK OF THE GIANT CARD!! event!"]
+      "r": ["We have the results of our ATTACK OF THE GIANT CARD!! event!"]
     },
     {
       "t": "p",
-      "r": ["Taking 1st place, it’s Steven De Lara! He’s won the GIANT ",{"b":"Harpie Queen"},"! His Battle City Bestie Deck brought him to victory, packed with controlling spells and traps, and monsters like ",{"b":"Gearfried the Iron Knight"},", ",{"b":"Drillroid"},", and ",{"b":"Fossil Dyna Pachycephalo"},"."]
+      "r": ["Taking 1st Place is Hanko Chow! He piloted his @Ignister Maliss Deck to victory, claiming a GIANT ",{"b":"Marshmao☆Yummy"},"!"]
     },
     {
       "t": "p",
-      "r": ["Taking 2nd, we have ",{"who":"Patrick Jacob Yunker","t":"Patrick Yunker"},", also using Battle City Bestie! Despite having the same Skill Card, his Deck is quite different, using ",{"b":"Joker’s Knight"}," and ",{"b":"Magikuriboh"}," as a big focus."]
+      "r": ["Finishing in 2nd Place is ",{"who":"James William Sheridan IV","t":"James Sheridan"},", who played Branded Dracotail!"]
     },
     {
       "t": "p",
-      "r": ["Finishing in 3rd is Juan Navarro, playing – you guessed it, Battle City Bestie! His Deck is similar to De Lara’s, though they have different spells and traps, and different monster ratios."]
+      "r": ["And in 3rd Place, it’s Denis Nadas using Yummy Mitsurugi!"]
     },
     {
       "t": "p",
-      "r": ["Congratulations to our Speed Duelists!"]
+      "r": ["Congratulations, Duelists!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-sundays-dragon-duel-top-4/": [
+    {
+      "t": "p",
+      "r": ["Sunday’s Dragon Duel event has concluded!"]
+    },
+    {
+      "t": "p",
+      "r": ["First place: Carsen L.\nSecond place: Lee H.\nThird place tie: Danielle H. and Phoenix Scantland"]
+    },
+    {
+      "t": "p",
+      "r": ["Carsen played his P.U.N.K. K9 Deck to a win in today’s event! That means he’ll play Andrew C. from yesterday’s event in the Dragon Duel Championship!"]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations to all of our Top 4 Dragon Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/round-12-feature-match-jamie-hunter-vs-zio-mundry/": [
@@ -3193,40 +2425,18 @@
       "r": ["With the victory, ",{"who":"Zio Tristan Mundry","t":"Mundry"}," improves to a 10-2 record. Stay tuned to see if he is able to make it to the Top 8!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/saturday-attack-of-the-giant-card-winners-6/": [
+  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/remote-duel-ycs-north-america-charity-event/": [
     {
       "t": "p",
-      "r": ["We have the results of our ATTACK OF THE GIANT CARD!! event!"]
+      "r": ["The Yu-Gi-Oh! Charity Event is a Public Event in which all of the money collected is donated to the Red Cross International! Duelists that participate received OTS Packs for entering. It’s a great way to compete with other Duelists while still helping to make a contribution to an amazing cause! Here are the Top 3 Duelists from the 2025 North America Remote Duel YCS Charity Event!"]
     },
     {
       "t": "p",
-      "r": ["Taking 1st Place is Hanko Chow! He piloted his @Ignister Maliss Deck to victory, claiming a GIANT ",{"b":"Marshmao☆Yummy"},"!"]
+      "r": ["Winner – Joshua Jones\n2nd place – Karsten Natsuhara\n3rd place – ",{"who":"Antonio Zane Porter","t":"Antonio Porter"}]
     },
     {
       "t": "p",
-      "r": ["Finishing in 2nd Place is ",{"who":"James William Sheridan IV","t":"James Sheridan"},", who played Branded Dracotail!"]
-    },
-    {
-      "t": "p",
-      "r": ["And in 3rd Place, it’s Denis Nadas using Yummy Mitsurugi!"]
-    },
-    {
-      "t": "p",
-      "r": ["Congratulations, Duelists!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-top-4-duelists/": [
-    {
-      "t": "p",
-      "r": ["The tournament is finished and we have our top 4 Duelists!"]
-    },
-    {
-      "t": "p",
-      "r": ["First place: ",{"who":"Sabit Zada","t":"Sabit Zada"}," (K9 Vanquish Soul)\nSecond place: ",{"who":"Gabriel Soussi","t":"Gabriel Soussi"}," (Dracotail)\nThird place: ",{"who":"Julien Leo Kehon","t":"Julien Kehon"}," (K9 Vanquish Soul)\nFourth place: ",{"who":"Zio Tristan Mundry","t":"Zio Mundry"}," (Yummy)"]
-    },
-    {
-      "t": "p",
-      "r": ["Congratulations to the Top 4 of the 2025 North America Remote Duel YCS!"]
+      "r": ["Each of these Duelists will be receiving OTS packs. Congratulations, Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/top-8-feature-match-jesse-kotton-vs-julien-kehon/": [
@@ -3275,22 +2485,62 @@
       "r": [{"who":"Julien Leo Kehon","t":"Julien Kehon"}," takes a quick victory in Duel 2 after activating ",{"b":"Dimension Shifter"}," and advances to the Top 4 with his K9 Vanquish Soul Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-sundays-dragon-duel-top-4/": [
+  "https://yugiohblog.konami.com/2025/ycs/dragon-duel-championship-andrew-c-vs-carsen-l/": [
     {
       "t": "p",
-      "r": ["Sunday’s Dragon Duel event has concluded!"]
+      "r": ["Our Dragon Duel Championship is finally here, and we have two Minnesotan Dragon Duelists! Andrew C. won yesterday’s Dragon Duel event with Mitsurugi Yummy, while Carsen L. took down today’s with P.U.N.K. K9. It may be cold in Minnesota, but these Duels are going to be on fire!"]
     },
     {
       "t": "p",
-      "r": ["First place: Carsen L.\nSecond place: Lee H.\nThird place tie: Danielle H. and Phoenix Scantland"]
+      "r": [{"u":"Duel 1"}]
     },
     {
       "t": "p",
-      "r": ["Carsen played his P.U.N.K. K9 Deck to a win in today’s event! That means he’ll play Andrew C. from yesterday’s event in the Dragon Duel Championship!"]
+      "r": ["Carsen played first and began the Duel with ",{"b":"“A Case for K9”"},", adding ",{"b":"K9-04 Noroi"}," to his hand. Andrew activated ",{"b":"Droll & Lock Bird"},". Carsen Normal Summoned Noroi and used its effect to Special Summon ",{"b":"K9-17 Izuna"},". Izuna sent ",{"b":"K9-ØØ Lupis"}," to the Graveyard. He Special Summoned Lupis, stacking it with Noroi for ",{"b":"K9-17 “Ripper”"},". He played ",{"b":"Emergency Teleport"}," next, and Special Summoned ",{"b":"Ukiyoe-P.U.N.K. Sharakusai"},". Unfortunately, he couldn’t use Sharakusai’s effect due to Noroi’s lingering effect, since he still controlled Izuna. He had no choice but to pass the turn."]
     },
     {
       "t": "p",
-      "r": ["Congratulations to all of our Top 4 Dragon Duelists!"]
+      "r": ["Andrew Normal Summoned ",{"b":"Cupsy☆Yummy"},", and Carsen negated it with ",{"b":"Ash Blossom & Joyous Spring"},". Andrew Link Summoned ",{"b":"Yummy★Snatchy"},", which put ",{"b":"Yummyusment☆Mignon"}," on the field. He Special Summoned another Cupsy from his hand, then Synchro Summoned ",{"b":"Cupsy★Yummy Way"},". That let him add ",{"b":"Cooky☆Yummy"}," and ",{"b":"Lollipo☆Yummy"}," to his hand, and he discarded a ",{"b":"Mulcharmy Purulia"},". He activated ",{"b":"Marshmao☆Yummy"},"’s effect to Special Summon it from his hand, and Carsen Chained Ripper to negate it. Andrew Chained ",{"b":"Cupsy★Yummy Way"},", returning it to his Extra Deck, and Carsen Chained ",{"b":"Ghost Belle & Haunted Mansion"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["Andrew played ",{"b":"Pre-Preparation of Rites"},", adding ",{"b":"Mitsurugi Mirror"}," and ",{"b":"Ame no Habakiri no Mitsurugi"}," to his hand. He activated Habakiri’s effect to Special Summon and Tribute ",{"b":"Mitsurugi no Mikoto, Saji"},", and Saji’s effect put ",{"b":"Mitsurugi Ritual"}," in his hand. Carsen Special Summoned Lupis from his Graveyard. Andrew activated ",{"b":"Mitsurugi Ritual"}," to Ritual Summon from the Deck, and Carsen Chained Lupis’s effect, stacking it with Izuna for ",{"b":"K9-66X “Jacks”"},". ",{"b":"Mitsurugi Ritual"}," resolved, and Andrew Tributed Habakiri to bring ",{"b":"Ame no Murakumo no Mitsurugi"}," from the Deck. Jacks destroyed Murakumo, but Murakumo destroyed all of Carsen’s monsters. Finally, Habakiri put ",{"b":"Mitsurugi Prayers"}," in Andrew’s hand. He played Prayers to Special Summon Murakumo. Then he played ",{"b":"Mitsurugi Mirror"},", Tributing Murakumo to Ritual Summon Habakiri from the Graveyard. Murakumo got a new Prayers and returned to the field. He used both monsters to Xyz Summon ",{"b":"The Zombie Vampire"},", and then use that to Link Summon ",{"b":"Gravity Controller"},". He used Mignon’s effect to revive Cupsy from the Graveyard. He used both his monsters to Synchro Summon ",{"b":"Lollipo★Yummy Way"},", which revived two copies of Cupsy from the Graveyard. He Special Summoned Lollipo from his hand, and it shuffled Lupis back into Carsen’s Deck. Now with an open field and a massive ATK boost from ",{"b":"Yummyusment☆Mignon"},", he attacked with everything to end the Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 2"}]
+    },
+    {
+      "t": "p",
+      "r": ["In Carsen’s Draw Phase, Andrew activated ",{"b":"Mulcharmy Purulia"},". Carsen used the effect of ",{"b":"K9-66a Jokul"},", revealing Izuna, and Special Summoned both monsters. Jokul added another Izuna to his hand, and Andrew drew from Purulia. Then, Andrew activated ",{"b":"Droll & Lock Bird"},", which would lock down Carsen while shutting off his own Purulia effect. Carsen used his monsters to Xyz Summon ",{"b":"K9-17 “Ripper”"},", then Special Summoned Izuna from his hand. It sent Lupis to the Graveyard, and he Special Summoned it. He Set one in his back row to finish."]
+    },
+    {
+      "t": "p",
+      "r": ["Andrew Normal Summoned Cupsy, adding ",{"b":"Yummy☆Surprise"}," to his hand. Carsen had his own ",{"b":"Droll & Lock Bird"},", then used Lupis’s effect to Xyz Summon ",{"b":"K9-66X “Jacks”"}," and destroy Cupsy. Andrew used Surprise to revive Cupsy, and Carsen flipped ",{"b":"K9-X Forced Release"},"! He ranked up Jacks into Werewolf and destroyed Cupsy yet again – and Andrew conceded! He was kept off balance and never got a chance to get things going with an Extra Deck monster."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 3"}]
+    },
+    {
+      "t": "p",
+      "r": ["Andrew began the final Duel with ",{"b":"Mitsurugi Prayers"}," , Tributing Saji. Carsen responded to Prayers with ",{"b":"Ash Blossom & Joyous Spring"},". Saji’s effect put ",{"b":"Mitsurugi Ritual"}," in his hand. He moved to the Main Phase and activated ",{"b":"Mitsurugi Ritual"},", Tributing Habakiri from his hand to Ritual Summon Murakumo from his Deck. Habakiri let him find ",{"b":"Mitsurugi Mirror"},". He played ",{"b":"Mitsurugi Mirror"},", Tributing Murakumo to Ritual Summon Habakiri out of his Graveyard. Murakumo’s effect let it return to the field and add a new Prayers to his hand. He used both his Ritual Monsters to Xyz Summon ",{"b":"The Zombie Vampire"},", and its effect sent four cards from each player’s Deck to the Graveyard, letting Andrew Special Summon a ",{"b":"Droll & Lock Bird"}," from Carsen’s Graveyard."]
+    },
+    {
+      "t": "p",
+      "r": ["He used ",{"b":"The Zombie Vampire"}," to Link Summon ",{"b":"Gravity Controller"},". Then, he used Droll and ",{"b":"Gravity Controller"}," to Synchro Summon ",{"b":"Cupsy★Yummy Way"},". Its effect put Cupsy and Marshmao in his hand, and he discarded Marshmao. He used ",{"b":"Cupsy★Yummy Way"}," to Link Summon Snatchy, which put ",{"b":"Yummyusment☆Mignon"}," on the field. He Special Summoned Cupsy, adding ",{"b":"Yummy☆Surprise"}," to his hand. He used Snatchy and Cupsy to Synchro Summon ",{"b":"Lollipo★Yummy Way"},". That brought Cupsy and ",{"b":"Cupsy★Yummy Way"}," back to the field with their effects negated. He used both of them to Synchro Summon ",{"b":"Shamisen Samsara Sorrowcat"},". He played Surprise to Special Summon Snatchy from the Graveyard, then used Mignon to Special Summon Marshmao. Marshmao put Surprise back in his hand."]
+    },
+    {
+      "t": "p",
+      "r": ["Carsen now activated ",{"b":"K9-17 Izuna"},"’s effect in the hand. Andrew responded with ",{"b":"Lollipo★Yummy Way"},", then Chained Snatchy. He used Marshmao and Sorrowcat to Synchro Summon ",{"b":"Herald of the Arc Light"},", and then Special Summoned ",{"b":"Cupsy★Yummy Way"}," and Marshmao from the Graveyard. Izuna hit Carsen’s side of the field, and he tried to send Lupis to the Graveyard, but it was banished due to ",{"b":"Herald of the Arc Light"},"! Andrew continued, using Snatchy and Marshmao to Link Summon ",{"b":"S:P Little Knight"}," and banish Izuna. He Set ",{"i":"four"}," cards in his back row to finish the first turn!"]
+    },
+    {
+      "t": "p",
+      "r": ["Carsen moved directly to the Battle Phase and activated ",{"b":"Evenly Matched"},", but Andrew negated it with ",{"b":"Herald of the Arc Light"},". He didn’t have another way to break through Andrew’s field!"]
+    },
+    {
+      "t": "p",
+      "r": ["Andrew C. is your Remote Duel North America Dragon Duel Champion!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/top-4-feature-match-gabriel-soussi-vs-julien-kehon/": [
@@ -3343,18 +2593,22 @@
       "r": [{"who":"Gabriel Soussi","t":"Soussi"}," is moving on to the finals of the 2025 North America Remote Duel YCS!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/2025-12-rdycs-na/remote-duel-ycs-north-america-charity-event/": [
+  "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-9-38/": [
     {
       "t": "p",
-      "r": ["The Yu-Gi-Oh! Charity Event is a Public Event in which all of the money collected is donated to the Red Cross International! Duelists that participate received OTS Packs for entering. It’s a great way to compete with other Duelists while still helping to make a contribution to an amazing cause! Here are the Top 3 Duelists from the 2025 North America Remote Duel YCS Charity Event!"]
+      "r": ["64 Duelists have returned for Day 2 of the 2025 North America Remote Duel YCS! Here’s the breakdown of the 40 Decks at the top 20 tables in today’s first Swiss Round!"]
     },
     {
       "t": "p",
-      "r": ["Winner – Joshua Jones\n2nd place – Karsten Natsuhara\n3rd place – ",{"who":"Antonio Zane Porter","t":"Antonio Porter"}]
+      "r": ["Here’s the breakdown of Decks at the top 20 tables by the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Yummy Mitsurugi","9"],["Yummy","7"],["Vanquish Soul K9","6"],["Dracotail","4"],["Bystial @Ignister Maliss","3"],["Radiant Typhoon Fiendsmith","2"],["Mitsurugi","2"],["Branded Dracotail","2"],["Despia Branded","1"],["Crystron K9","1"],["@Ignister Maliss","1"],["Mitsurugi Orcust","1"],["Gem-Knight","1"]]
     },
     {
       "t": "p",
-      "r": ["Each of these Duelists will be receiving OTS packs. Congratulations, Duelists!"]
+      "r": ["Yummy Decks are leading the top tables, and the variants using Mitsurugi cards appear to be carrying the most Duelists to the top. Vanquish Soul K9, Dracotail, and Bystial @Ignister Maliss Decks are expectedly experiencing success at the top tables as well, while some less common Deck choices like Radiant Typhoon Fiendsmith and Gem-Knight appear to be taking Duelists by surprise. Follow the coverage to see which Decks continue to prevail at the 2025 North America Remote Duel YCS!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/top-8-feature-match-anthony-xu-vs-sabit-zada/": [
@@ -3435,62 +2689,22 @@
       "r": [{"who":"Sabit Zada","t":"Sabit Zada"}," wins the rematch to move on to the Top 4!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/dragon-duel-championship-andrew-c-vs-carsen-l/": [
+  "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-10-35/": [
     {
       "t": "p",
-      "r": ["Our Dragon Duel Championship is finally here, and we have two Minnesotan Dragon Duelists! Andrew C. won yesterday’s Dragon Duel event with Mitsurugi Yummy, while Carsen L. took down today’s with P.U.N.K. K9. It may be cold in Minnesota, but these Duels are going to be on fire!"]
+      "r": ["The competition remains fierce as we continue through today’s Swiss rounds! Here’s a look at what’s at the top tables."]
     },
     {
       "t": "p",
-      "r": [{"u":"Duel 1"}]
+      "r": ["By the numbers, we have:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Mitsurugi Yummy","10"],["Yummy","6"],["Dracotail","5"],["Vanquish Soul K9","5"],["Bystial @Ignister Maliss","2"],["Crystron K9","1"],["Primite Tombkeeper","1"],["Lunalight Dracotail","1"],["Despia Branded","1"],["Mitsurugi","1"],["Radiant Typhoon Fiendsmith","1"],["Branded Mitsurugi","1"],["Branded Dracotail","1"],["@Ignister Maliss","1"],["Mitsurugi Orcust","1"],["Gem-Knight","1"]]
     },
     {
       "t": "p",
-      "r": ["Carsen played first and began the Duel with ",{"b":"“A Case for K9”"},", adding ",{"b":"K9-04 Noroi"}," to his hand. Andrew activated ",{"b":"Droll & Lock Bird"},". Carsen Normal Summoned Noroi and used its effect to Special Summon ",{"b":"K9-17 Izuna"},". Izuna sent ",{"b":"K9-ØØ Lupis"}," to the Graveyard. He Special Summoned Lupis, stacking it with Noroi for ",{"b":"K9-17 “Ripper”"},". He played ",{"b":"Emergency Teleport"}," next, and Special Summoned ",{"b":"Ukiyoe-P.U.N.K. Sharakusai"},". Unfortunately, he couldn’t use Sharakusai’s effect due to Noroi’s lingering effect, since he still controlled Izuna. He had no choice but to pass the turn."]
-    },
-    {
-      "t": "p",
-      "r": ["Andrew Normal Summoned ",{"b":"Cupsy☆Yummy"},", and Carsen negated it with ",{"b":"Ash Blossom & Joyous Spring"},". Andrew Link Summoned ",{"b":"Yummy★Snatchy"},", which put ",{"b":"Yummyusment☆Mignon"}," on the field. He Special Summoned another Cupsy from his hand, then Synchro Summoned ",{"b":"Cupsy★Yummy Way"},". That let him add ",{"b":"Cooky☆Yummy"}," and ",{"b":"Lollipo☆Yummy"}," to his hand, and he discarded a ",{"b":"Mulcharmy Purulia"},". He activated ",{"b":"Marshmao☆Yummy"},"’s effect to Special Summon it from his hand, and Carsen Chained Ripper to negate it. Andrew Chained ",{"b":"Cupsy★Yummy Way"},", returning it to his Extra Deck, and Carsen Chained ",{"b":"Ghost Belle & Haunted Mansion"},"!"]
-    },
-    {
-      "t": "p",
-      "r": ["Andrew played ",{"b":"Pre-Preparation of Rites"},", adding ",{"b":"Mitsurugi Mirror"}," and ",{"b":"Ame no Habakiri no Mitsurugi"}," to his hand. He activated Habakiri’s effect to Special Summon and Tribute ",{"b":"Mitsurugi no Mikoto, Saji"},", and Saji’s effect put ",{"b":"Mitsurugi Ritual"}," in his hand. Carsen Special Summoned Lupis from his Graveyard. Andrew activated ",{"b":"Mitsurugi Ritual"}," to Ritual Summon from the Deck, and Carsen Chained Lupis’s effect, stacking it with Izuna for ",{"b":"K9-66X “Jacks”"},". ",{"b":"Mitsurugi Ritual"}," resolved, and Andrew Tributed Habakiri to bring ",{"b":"Ame no Murakumo no Mitsurugi"}," from the Deck. Jacks destroyed Murakumo, but Murakumo destroyed all of Carsen’s monsters. Finally, Habakiri put ",{"b":"Mitsurugi Prayers"}," in Andrew’s hand. He played Prayers to Special Summon Murakumo. Then he played ",{"b":"Mitsurugi Mirror"},", Tributing Murakumo to Ritual Summon Habakiri from the Graveyard. Murakumo got a new Prayers and returned to the field. He used both monsters to Xyz Summon ",{"b":"The Zombie Vampire"},", and then use that to Link Summon ",{"b":"Gravity Controller"},". He used Mignon’s effect to revive Cupsy from the Graveyard. He used both his monsters to Synchro Summon ",{"b":"Lollipo★Yummy Way"},", which revived two copies of Cupsy from the Graveyard. He Special Summoned Lollipo from his hand, and it shuffled Lupis back into Carsen’s Deck. Now with an open field and a massive ATK boost from ",{"b":"Yummyusment☆Mignon"},", he attacked with everything to end the Duel!"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel 2"}]
-    },
-    {
-      "t": "p",
-      "r": ["In Carsen’s Draw Phase, Andrew activated ",{"b":"Mulcharmy Purulia"},". Carsen used the effect of ",{"b":"K9-66a Jokul"},", revealing Izuna, and Special Summoned both monsters. Jokul added another Izuna to his hand, and Andrew drew from Purulia. Then, Andrew activated ",{"b":"Droll & Lock Bird"},", which would lock down Carsen while shutting off his own Purulia effect. Carsen used his monsters to Xyz Summon ",{"b":"K9-17 “Ripper”"},", then Special Summoned Izuna from his hand. It sent Lupis to the Graveyard, and he Special Summoned it. He Set one in his back row to finish."]
-    },
-    {
-      "t": "p",
-      "r": ["Andrew Normal Summoned Cupsy, adding ",{"b":"Yummy☆Surprise"}," to his hand. Carsen had his own ",{"b":"Droll & Lock Bird"},", then used Lupis’s effect to Xyz Summon ",{"b":"K9-66X “Jacks”"}," and destroy Cupsy. Andrew used Surprise to revive Cupsy, and Carsen flipped ",{"b":"K9-X Forced Release"},"! He ranked up Jacks into Werewolf and destroyed Cupsy yet again – and Andrew conceded! He was kept off balance and never got a chance to get things going with an Extra Deck monster."]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel 3"}]
-    },
-    {
-      "t": "p",
-      "r": ["Andrew began the final Duel with ",{"b":"Mitsurugi Prayers"}," , Tributing Saji. Carsen responded to Prayers with ",{"b":"Ash Blossom & Joyous Spring"},". Saji’s effect put ",{"b":"Mitsurugi Ritual"}," in his hand. He moved to the Main Phase and activated ",{"b":"Mitsurugi Ritual"},", Tributing Habakiri from his hand to Ritual Summon Murakumo from his Deck. Habakiri let him find ",{"b":"Mitsurugi Mirror"},". He played ",{"b":"Mitsurugi Mirror"},", Tributing Murakumo to Ritual Summon Habakiri out of his Graveyard. Murakumo’s effect let it return to the field and add a new Prayers to his hand. He used both his Ritual Monsters to Xyz Summon ",{"b":"The Zombie Vampire"},", and its effect sent four cards from each player’s Deck to the Graveyard, letting Andrew Special Summon a ",{"b":"Droll & Lock Bird"}," from Carsen’s Graveyard."]
-    },
-    {
-      "t": "p",
-      "r": ["He used ",{"b":"The Zombie Vampire"}," to Link Summon ",{"b":"Gravity Controller"},". Then, he used Droll and ",{"b":"Gravity Controller"}," to Synchro Summon ",{"b":"Cupsy★Yummy Way"},". Its effect put Cupsy and Marshmao in his hand, and he discarded Marshmao. He used ",{"b":"Cupsy★Yummy Way"}," to Link Summon Snatchy, which put ",{"b":"Yummyusment☆Mignon"}," on the field. He Special Summoned Cupsy, adding ",{"b":"Yummy☆Surprise"}," to his hand. He used Snatchy and Cupsy to Synchro Summon ",{"b":"Lollipo★Yummy Way"},". That brought Cupsy and ",{"b":"Cupsy★Yummy Way"}," back to the field with their effects negated. He used both of them to Synchro Summon ",{"b":"Shamisen Samsara Sorrowcat"},". He played Surprise to Special Summon Snatchy from the Graveyard, then used Mignon to Special Summon Marshmao. Marshmao put Surprise back in his hand."]
-    },
-    {
-      "t": "p",
-      "r": ["Carsen now activated ",{"b":"K9-17 Izuna"},"’s effect in the hand. Andrew responded with ",{"b":"Lollipo★Yummy Way"},", then Chained Snatchy. He used Marshmao and Sorrowcat to Synchro Summon ",{"b":"Herald of the Arc Light"},", and then Special Summoned ",{"b":"Cupsy★Yummy Way"}," and Marshmao from the Graveyard. Izuna hit Carsen’s side of the field, and he tried to send Lupis to the Graveyard, but it was banished due to ",{"b":"Herald of the Arc Light"},"! Andrew continued, using Snatchy and Marshmao to Link Summon ",{"b":"S:P Little Knight"}," and banish Izuna. He Set ",{"i":"four"}," cards in his back row to finish the first turn!"]
-    },
-    {
-      "t": "p",
-      "r": ["Carsen moved directly to the Battle Phase and activated ",{"b":"Evenly Matched"},", but Andrew negated it with ",{"b":"Herald of the Arc Light"},". He didn’t have another way to break through Andrew’s field!"]
-    },
-    {
-      "t": "p",
-      "r": ["Andrew C. is your Remote Duel North America Dragon Duel Champion!"]
+      "r": ["Mitsurugi Yummy was the Deck to beat yesterday, and is holding strong today. We’ve still got plenty of other Yummy, Dracotail, Vanquish Soul K9, and Maliss strategies also putting up great numbers. With 11 one-of Decks in the list, our potential Top 8 is still very much unknown. We’ll find out in three more rounds!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/finals-feature-match-gabriel-soussi-vs-sabit-zada/": [
@@ -3559,22 +2773,22 @@
       "r": [{"who":"Sabit Zada","t":"Sabit Zada"}," narrowly wins 2-1 in the Finals to become the newest YCS champion!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-9-38/": [
+  "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-11-17/": [
     {
       "t": "p",
-      "r": ["64 Duelists have returned for Day 2 of the 2025 North America Remote Duel YCS! Here’s the breakdown of the 40 Decks at the top 20 tables in today’s first Swiss Round!"]
+      "r": ["Here’s a look at what strategies are at the top tables:"]
     },
     {
       "t": "p",
-      "r": ["Here’s the breakdown of Decks at the top 20 tables by the numbers:"]
+      "r": ["By the numbers, we have:"]
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Yummy Mitsurugi","9"],["Yummy","7"],["Vanquish Soul K9","6"],["Dracotail","4"],["Bystial @Ignister Maliss","3"],["Radiant Typhoon Fiendsmith","2"],["Mitsurugi","2"],["Branded Dracotail","2"],["Despia Branded","1"],["Crystron K9","1"],["@Ignister Maliss","1"],["Mitsurugi Orcust","1"],["Gem-Knight","1"]]
+      "rows": [["Deck Types","Count"],["Mitsurugi Yummy","9"],["Vanquish Soul K9","7"],["Dracotail","6"],["Yummy","4"],["Bystial @Ignister Maliss","3"],["Branded Dracotail","2"],["K9","1"],["Primite Tombkeeper","1"],["@Ignister Maliss","1"],["Mitsurugi Orcust","1"],["Mitsurugi","1"],["Branded Mitsurugi","1"],["Lunalight Dracotail","1"],["Gem-Knight","1"]]
     },
     {
       "t": "p",
-      "r": ["Yummy Decks are leading the top tables, and the variants using Mitsurugi cards appear to be carrying the most Duelists to the top. Vanquish Soul K9, Dracotail, and Bystial @Ignister Maliss Decks are expectedly experiencing success at the top tables as well, while some less common Deck choices like Radiant Typhoon Fiendsmith and Gem-Knight appear to be taking Duelists by surprise. Follow the coverage to see which Decks continue to prevail at the 2025 North America Remote Duel YCS!"]
+      "r": ["Mitsurugi Yummy continues to hold strong as we move on through Day 2. However, strategies like Dracotail and Vanquish Soul K9 are not too far behind. It’s definitely possible that all of these Decks could make it to the Top 8. Be sure to keep an eye on the coverage to find out!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-9-feature-match-jorje-kosho-vs-yuhao-ye/": [
@@ -3627,10 +2841,10 @@
       "r": [{"who":"Yuhao Ye","t":"Yuhao Ye"}," takes this one with Branded Dracotail!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-10-35/": [
+  "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-12-6/": [
     {
       "t": "p",
-      "r": ["The competition remains fierce as we continue through today’s Swiss rounds! Here’s a look at what’s at the top tables."]
+      "r": ["It’s the final Swiss round, so this final look at the top tables will let us guess at the Top 8!"]
     },
     {
       "t": "p",
@@ -3638,11 +2852,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Mitsurugi Yummy","10"],["Yummy","6"],["Dracotail","5"],["Vanquish Soul K9","5"],["Bystial @Ignister Maliss","2"],["Crystron K9","1"],["Primite Tombkeeper","1"],["Lunalight Dracotail","1"],["Despia Branded","1"],["Mitsurugi","1"],["Radiant Typhoon Fiendsmith","1"],["Branded Mitsurugi","1"],["Branded Dracotail","1"],["@Ignister Maliss","1"],["Mitsurugi Orcust","1"],["Gem-Knight","1"]]
+      "rows": [["Deck Types","Count"],["Yummy Mitsurugi","8"],["Vanquish Soul K9","7"],["Yummy","6"],["Dracotail","5"],["Bystial @Ignister Maliss","2"],["Branded Dracotail","2"],["Crystron K9","1"],["Primite Blue-Eyes","1"],["Lunalight Dracotail","1"],["Branded Mitsurugi","1"],["Mitsurugi Orcust","1"],["Mitsurugi","1"],["Primite Tombkeeper","1"],["K9","1"],["Gem-Knight","1"]]
     },
     {
       "t": "p",
-      "r": ["Mitsurugi Yummy was the Deck to beat yesterday, and is holding strong today. We’ve still got plenty of other Yummy, Dracotail, Vanquish Soul K9, and Maliss strategies also putting up great numbers. With 11 one-of Decks in the list, our potential Top 8 is still very much unknown. We’ll find out in three more rounds!"]
+      "r": ["The Yummy Mitsurugi numbers have fallen drastically, only barely ahead of the other Decks! We should see some of them, along with Vanquish Soul K9, Dracotail, and Yummy in the Top 8. The other Decks could be all kinds of options, with Gem-Knights and Maliss having some of the best records. We’ll know shortly!"]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-6-feature-match-ashik-nabit-vs-franco-persano/": [
@@ -3731,22 +2945,14 @@
       "r": [{"b":"Dimension Shifter"}," is good, but ",{"b":"Koa’ki Meiru Drago"}," is better in Duel 3 of this Round 6 Feature Match! ",{"who":"Franco Persano","t":"Franco Persano"}," advances with a 5-1 record at the 2025 North America Remote Duel YCS with his Dracotail Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-11-17/": [
+  "https://yugiohblog.konami.com/2025/ycs/public-events-at-the-2025-north-america-remote-duel-ycs/": [
     {
       "t": "p",
-      "r": ["Here’s a look at what strategies are at the top tables:"]
+      "r": ["The 2025 North America Remote Duel YCS is more than just one giant tournament – it also features a number of Public Events that mirror what you would expect to find at an in-person YCS event. These events include ATTACK OF THE GIANT CARD!! Tournaments, Genesys Format events, Speed Duel Constructed Tournaments, Win-A-Mat Tournaments, Regional Qualifiers, MASTER DUEL Tournaments, DUEL LINKS Tournaments, the 3 vs. 3 Team Tournament, and more! Plus, Duelists can earn tickets for the Prize Wall in these events, just as they would at any in-person YCS event. Best of all, you can compete in these tournaments and win the prizes that they offer without ever leaving your home!"]
     },
     {
       "t": "p",
-      "r": ["By the numbers, we have:"]
-    },
-    {
-      "t": "table",
-      "rows": [["Deck Types","Count"],["Mitsurugi Yummy","9"],["Vanquish Soul K9","7"],["Dracotail","6"],["Yummy","4"],["Bystial @Ignister Maliss","3"],["Branded Dracotail","2"],["K9","1"],["Primite Tombkeeper","1"],["@Ignister Maliss","1"],["Mitsurugi Orcust","1"],["Mitsurugi","1"],["Branded Mitsurugi","1"],["Lunalight Dracotail","1"],["Gem-Knight","1"]]
-    },
-    {
-      "t": "p",
-      "r": ["Mitsurugi Yummy continues to hold strong as we move on through Day 2. However, strategies like Dracotail and Vanquish Soul K9 are not too far behind. It’s definitely possible that all of these Decks could make it to the Top 8. Be sure to keep an eye on the coverage to find out!"]
+      "r": ["If you’ve been missing out on the action, it’s not too late to join in. Public Events will continue to run today and tomorrow, and you can still sign up to participate in those events. You can find more information about this weekend’s Public Events, including a link to this weekend’s Remote Duel YCS Discord Server, here."]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/round-8-feature-match-erik-carlson-vs-vincent-costanza/": [
@@ -3785,34 +2991,6 @@
     {
       "t": "p",
       "r": [{"who":"Vincent Joseph Costanza","t":"Vincent Costanza"}," takes the 2-0 victory with his @Ignister Maliss Deck in Round 8 of the 2025 North America Remote Duel YCS!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2025/ycs/top-tables-update-round-12-6/": [
-    {
-      "t": "p",
-      "r": ["It’s the final Swiss round, so this final look at the top tables will let us guess at the Top 8!"]
-    },
-    {
-      "t": "p",
-      "r": ["By the numbers, we have:"]
-    },
-    {
-      "t": "table",
-      "rows": [["Deck Types","Count"],["Yummy Mitsurugi","8"],["Vanquish Soul K9","7"],["Yummy","6"],["Dracotail","5"],["Bystial @Ignister Maliss","2"],["Branded Dracotail","2"],["Crystron K9","1"],["Primite Blue-Eyes","1"],["Lunalight Dracotail","1"],["Branded Mitsurugi","1"],["Mitsurugi Orcust","1"],["Mitsurugi","1"],["Primite Tombkeeper","1"],["K9","1"],["Gem-Knight","1"]]
-    },
-    {
-      "t": "p",
-      "r": ["The Yummy Mitsurugi numbers have fallen drastically, only barely ahead of the other Decks! We should see some of them, along with Vanquish Soul K9, Dracotail, and Yummy in the Top 8. The other Decks could be all kinds of options, with Gem-Knights and Maliss having some of the best records. We’ll know shortly!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2025/ycs/public-events-at-the-2025-north-america-remote-duel-ycs/": [
-    {
-      "t": "p",
-      "r": ["The 2025 North America Remote Duel YCS is more than just one giant tournament – it also features a number of Public Events that mirror what you would expect to find at an in-person YCS event. These events include ATTACK OF THE GIANT CARD!! Tournaments, Genesys Format events, Speed Duel Constructed Tournaments, Win-A-Mat Tournaments, Regional Qualifiers, MASTER DUEL Tournaments, DUEL LINKS Tournaments, the 3 vs. 3 Team Tournament, and more! Plus, Duelists can earn tickets for the Prize Wall in these events, just as they would at any in-person YCS event. Best of all, you can compete in these tournaments and win the prizes that they offer without ever leaving your home!"]
-    },
-    {
-      "t": "p",
-      "r": ["If you’ve been missing out on the action, it’s not too late to join in. Public Events will continue to run today and tomorrow, and you can still sign up to participate in those events. You can find more information about this weekend’s Public Events, including a link to this weekend’s Remote Duel YCS Discord Server, here."]
     }
   ],
   "https://yugiohblog.konami.com/2025/ycs/2025-north-america-remote-duel-ycs-prize-wall/": [
