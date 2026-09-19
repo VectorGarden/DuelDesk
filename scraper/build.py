@@ -331,7 +331,15 @@ def round_key(post) -> tuple[str, Any]:
 #     announcement itself. No round table changed: none of the nine had
 #     contributed one, and the only table that moved at all was the Latin
 #     America event's count of posts it could not place, from one to none.
-BUILD_VERSION = 64
+#  65 Where the line between a rare word and a common one falls, measured
+#     over the sitemap rather than over the posts the archive had already
+#     taken. On the smaller set five and six looked alike; they are not. Two
+#     more posts leave events they were never about: a YCS Toronto standings
+#     table filed under Buenos Aires 2017, and a YCS Portland feature match
+#     that goes to YCS Portland. One step further and the 250th YCS in
+#     Bogota reads its own name as another event's and empties itself, so
+#     this is the last value that only corrects.
+BUILD_VERSION = 65
 
 
 @dataclass
