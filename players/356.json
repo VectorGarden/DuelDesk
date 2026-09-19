@@ -262,6 +262,9 @@
   "Quan Thanh Huynh": [
     {"e":"2017-ycs-toronto"}
   ],
+  "Dover-Terrettaz": [
+    {"e":"201712-buenos-aires-argentina"}
+  ],
   "Sean Edward Quigley": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -540,11 +543,11 @@
   "Guilherme V.": {
     "as": "Guilherme De Campos Vieira"
   },
-  "Dave K.": {
-    "as": "Dave Anil Khalasi"
-  },
   "Caleb S.": {
     "as": "Caleb Michael Simmons"
+  },
+  "Dave K.": {
+    "as": "Dave Anil Khalasi"
   },
   "Emma C.": {
     "as": "Emma Carlson"

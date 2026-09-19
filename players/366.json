@@ -719,14 +719,11 @@
   "Rodrigo Herrera Centurion": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Julio G.": {
-    "as": "Julio Gomes"
-  },
   "Diego H.": {
     "as": "Diego Henrique"
   },
-  "Aidan C.": {
-    "as": "Aidan Alexander Clarke"
+  "Julio G.": {
+    "as": "Julio Gomes"
   },
   "Demario J.": {
     "as": "Demario Montae Jester"
@@ -734,10 +731,13 @@
   "Leo F.": {
     "as": "Leo Feria"
   },
-  "Brady S.": {
-    "as": "Brady James Stockdale"
+  "Aidan C.": {
+    "as": "Aidan Alexander Clarke"
   },
   "Rico E.": {
     "as": "Rico Carlos Eichelberger"
+  },
+  "Brady S.": {
+    "as": "Brady James Stockdale"
   }
 }

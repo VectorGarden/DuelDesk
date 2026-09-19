@@ -555,9 +555,6 @@
   "Chimmey N.": {
     "as": "Chimmey Nguyen"
   },
-  "Vincent P.": {
-    "as": "Vincent Quoc Pham"
-  },
   "Matthew F.": {
     "as": "Matthew Arden Fox"
   },
@@ -566,5 +563,8 @@
   },
   "Dominic W.": {
     "as": "Dominic Lee Whalawitsa"
+  },
+  "Vincent P.": {
+    "as": "Vincent Quoc Pham"
   }
 }

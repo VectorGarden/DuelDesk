@@ -209,6 +209,9 @@
   "Eric Hawklin Tham": [
     {"e":"2017-ycs-seattle"}
   ],
+  "Chung-Salomone": [
+    {"e":"201712-buenos-aires-argentina"}
+  ],
   "Keanu Ramon De Leon": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-ycs-chicago"}
@@ -654,22 +657,22 @@
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Max C.": {
+    "as": "Max Cardenas"
+  },
   "Kyle N.": {
     "as": "Kyle Aidan Nance"
-  },
-  "Vivek S.": {
-    "as": "Vivek Naresh Sreenivasan"
   },
   "Wyatt B.": {
     "as": "Wyatt Leland Brannock"
   },
-  "Brandon F.": {
-    "as": "Brandon Bryan Ferrell"
-  },
   "Yucheng L.": {
     "as": "Yucheng Li"
   },
-  "Max C.": {
-    "as": "Max Cardenas"
+  "Brandon F.": {
+    "as": "Brandon Bryan Ferrell"
+  },
+  "Vivek S.": {
+    "as": "Vivek Naresh Sreenivasan"
   }
 }
