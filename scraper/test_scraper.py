@@ -28,6 +28,36 @@ _CHECKER_PATH = Path(__file__).resolve().parent.parent / ".github/scripts/check-
 _checker_loaded = None
 
 
+def an_event_with_a_cut(least: int = 4) -> dict:
+    """A real event out of the archive whose bracket can be broken.
+
+    Two tests build a plausible event and then take a match out of its first
+    cut round, because a bracket halves and one that does not is a parse that
+    lost a row. They took the newest event in the manifest to start from.
+
+    The newest event is whatever the coverage published last, and an event
+    still being played has no cut yet. On the day the Latin America Remote
+    Duel YCS opened, the archive's newest event was seven Swiss rounds and
+    nothing else, so both tests asked for the first of no cut rounds and died
+    on a list index -- in a fake, three frames below what they were testing.
+
+    So: the newest event that actually has a cut round with `least` matches
+    in it, which is what makes taking one away incoherent rather than merely
+    short. The archive is still the fixture; which event it is no longer
+    depends on the day.
+    """
+    root = Path(__file__).resolve().parent.parent
+    manifest = json.loads((root / "events.json").read_text())
+    for entry in manifest["events"]:
+        event = json.loads((root / entry["path"]).read_text())
+        rounds = (event.get("formats") or [{}])[0].get("rounds") or []
+        cut = [r for r in rounds if r.get("phase") == "Top cut"]
+        if cut and len(cut[0].get("pairings") or []) >= least:
+            return event
+    raise AssertionError(
+        f"no event in the archive has a cut round of {least} matches to break")
+
+
 def run_checker(path):
     """check-rounds.py over one file: its exit code and what it printed.
 
@@ -8524,10 +8554,7 @@ class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
         # written now, so a stub shaped like one would be rejected before the
         # thing under test -- whether a later failure loses the earlier ones --
         # ever came up.
-        import json
-        root = Path(__file__).resolve().parent.parent
-        manifest = json.loads((root / "events.json").read_text())
-        good = json.loads((root / manifest["events"][0]["path"]).read_text())
+        good = an_event_with_a_cut()
 
         def fake_build_one(f, slug, posts, ended, limit, known=None):
             if slug == breaks_on:
@@ -8557,7 +8584,6 @@ class TestOneEventFailingDoesNotLoseTheRest(unittest.TestCase):
                     code = run.main()
                 except Exception as exc:
                     return None, built, log.getvalue(), exc
-            import json
             manifest = json.loads(Path(f"{tmp}/events.json").read_text()) \
                 if Path(f"{tmp}/events.json").exists() else {"events": []}
         return code, built, log.getvalue(), manifest
@@ -9190,9 +9216,7 @@ class TestARejectedEventIsRemembered(unittest.TestCase):
         from contextlib import redirect_stdout
         from unittest import mock
         import run
-        root = Path(__file__).resolve().parent.parent
-        manifest = json.loads((root / "events.json").read_text())
-        good = json.loads((root / manifest["events"][0]["path"]).read_text())
+        good = an_event_with_a_cut()
         planned = []
 
         def fake_build_one(f, slug, posts, ended, limit, known=None):
