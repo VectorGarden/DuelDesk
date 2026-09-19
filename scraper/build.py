@@ -319,7 +319,17 @@ def round_key(post) -> tuple[str, Any]:
 #     nobody, went unlinked, and were printed with a province in them.
 #     The tables were already normalised by strip_region; the prose is now
 #     answered the same way.
-BUILD_VERSION = 63
+#  64 A post is coverage of the event it names, not of whatever was running
+#     the week it went up. Two rules read a date and asked only that the post
+#     share a word with the event, and the word could be "ycs", which
+#     ninety-four events use: an announcement of YCS Houston 2026 was filed
+#     as coverage of the Latin America Genesys Remote Duel YCS. Twelve posts
+#     leave events they were never about -- among them six welcomes, to
+#     Hartford, Minneapolis, Niagara, Pasadena, San Jose and Santiago, all
+#     filed under YCS Philadelphia. No round table changes: none of the
+#     twelve had contributed one. What is stale is the post list and the
+#     articles beside it, which the archive keeps as it was built.
+BUILD_VERSION = 64
 
 
 @dataclass
