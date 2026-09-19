@@ -54,6 +54,14 @@ TOURNAMENT = ("pairings", "standings")
 # How many events may share a word before it stops identifying any of them.
 FEW = 3
 
+# How few events may share a word before it counts as naming one of them.
+# Five, six, seven and eight all sort the archive identically, because what
+# decides a case is whether the post spells a name out in full and not where
+# the line between rare and common falls. Below five nothing is rare enough
+# for the rule to fire at all; at ten "chile" and "animated" start naming
+# events, and two posts that belong where they are stop belonging anywhere.
+FEW_NAMES = 5
+
 
 @dataclass
 class Entry:
@@ -173,6 +181,97 @@ def slug_terms(slug: str) -> set[str]:
     """The words in a slug, minus numbers and noise too short to identify anything."""
     return {t for t in re.split(r"[^a-z]+", slug.lower())
             if len(t) > 2 and not t.isdigit()}
+
+
+_DUELLISTS = re.compile(r"(?:feature-match|championship|match|final)-(.+?)-vs-(.+)")
+
+# A season is not a place. Konami runs a UDS Invitational every winter, so
+# "winter" is in one event's name -- the 2017 one in Las Vegas -- and reads as
+# that event on a post about the winter 2018 Invitational in Sacramento, which
+# is a different event whose own slug never says the word. Places do not come
+# round again; the calendar does.
+CALENDAR = {"winter", "spring", "summer", "autumn", "fall",
+            "january", "february", "march", "april", "may", "june", "july",
+            "august", "september", "october", "november", "december"}
+
+
+def name_terms(slug: str) -> set[str]:
+    """The words of a name, with plurals folded onto the singular.
+
+    "2026-north-america-genesys-championship" and a post that calls it the
+    "genesys-championships-standings" are saying the same name, and a rule
+    that reads one word at a time has to be able to see that.
+    """
+    return {t[:-1] if t.endswith("s") and len(t) > 4 else t
+            for t in slug_terms(slug)}
+
+
+def namesakes(slugs, records: list[dict] | None = None) -> dict[str, set[str]]:
+    """Per event, the words of its own name that identify it and nothing else.
+
+    Being rare among event names is not enough on its own. The 2013 World
+    Championship is the only event called "world", and read that far every
+    deck profile of a Lost World deck is about it; the same goes for the UDS
+    Winter Invitational and "winter", and for a Central America championship
+    whose one uncommon word is "tcg".
+
+    What separates those from "houston" is not how many events are named after
+    them but how the archive uses them: a place is written by the coverage of
+    the event held there and almost nowhere else, while "world" and "tcg" turn
+    up in posts belonging to events all over the archive.
+    """
+    spoken = Counter(t for slug in slugs for t in name_terms(slug))
+    spread: dict[str, set[str]] = defaultdict(set)
+    people: set[str] = set()
+    for rec in records or ():
+        if rec["event"]:
+            for t in name_terms(rec["slug"]):
+                spread[t].add(rec["event"])
+        # Which words are people. A feature match is written as two Duelists
+        # either side of "vs", so the archive says outright that Salvador and
+        # Cruz are things a person is called -- and San Salvador and Santa
+        # Cruz de la Sierra are not what "salvador-osmar" and "abraham-rivera-
+        # cruz" are about.
+        if m := _DUELLISTS.search(rec["slug"]):
+            people |= name_terms(m.group(1)) | name_terms(m.group(2))
+    return {slug: {t for t in name_terms(slug)
+                   if spoken[t] <= FEW_NAMES and t not in people
+                   and t not in CALENDAR
+                   and (not records or len(spread[t]) <= FEW_NAMES)}
+            for slug in slugs}
+
+
+def names_another(slug: str, post: str, sharp: dict[str, set[str]]) -> bool:
+    """Whether a post spells out some event's name, and not this event's.
+
+    Corroboration by vocabulary is only as good as the word that carries it,
+    and the commonest word in the archive carries most of it: every YCS post
+    shares "ycs" with ninety-four events. That was enough to make
+    "ycs-houston-tx-2026-main-event-information" a candidate for the Latin
+    America Genesys Remote Duel YCS, whose dates it fell inside, and the two
+    have nothing else in common at all -- not a category, not a place, not a
+    word that means either of them.
+
+    The archive already knows the difference, in the event slugs themselves.
+    "houston" is in one name out of a hundred and seventy-five and picks that
+    event out; "ycs" is in ninety-four and picks out nothing. A post that
+    writes one event's distinguishing name in full, and none of this one's,
+    is about that event.
+
+    Read in full, because a single word of a name is not the name. "cruz" is
+    distinguishing on the face of it -- two events, both Santa Cruz de la
+    Sierra -- but it is also how a Duelist called Abraham Rivera Cruz appears
+    in the slug of his own feature match, which belongs to neither.
+    """
+    ours = name_terms(slug)
+    said = name_terms(post)
+    # Nothing to judge: either the post writes this event's name in full, or
+    # the event has no name to write -- "2026-02-300th-na" is a filing
+    # reference, and an event called nothing but words the whole archive uses
+    # is in the same position.
+    if sharp.get(slug, set()) <= said:
+        return False
+    return any(n <= said and not (n & ours) for n in sharp.values() if n)
 
 
 @dataclass
@@ -758,7 +857,8 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
         for term in prof.terms:
             owners[term].add(slug)
 
-    for rec, ev in _by_date(out, disc, within, owners):
+    for rec, ev in _by_date(out, disc, within, owners,
+                            namesakes(list(profiles) + list(disc), out)):
         rec["event"], rec["event_confidence"] = ev, "discovered+date"
 
     # Last of all, and the only rule here that overrules another: a post whose
@@ -941,7 +1041,8 @@ def _discovered_profiles(records: list[dict]) -> dict[str, Profile]:
 
 
 def _by_date(records: list[dict], profiles: dict[str, Profile], within,
-             owners: dict[str, set[str]] | None = None):
+             owners: dict[str, set[str]] | None = None,
+             sharp: dict[str, set[str]] | None = None):
     """Still-unassigned posts, and the one discovered event each belongs to."""
     # The rounds each event already holds from a post that named it, which is
     # what a dated round is not allowed to duplicate.
@@ -975,7 +1076,8 @@ def _by_date(records: list[dict], profiles: dict[str, Profile], within,
         entry = Entry(rec["url"], rec["year"], rec["category"], rec["event_slug"],
                       rec["slug"], rec["lastmod"])
         hits = [slug for slug, p in profiles.items()
-                if within(rec["lastmod"], *p.window) and p.names(entry)]
+                if within(rec["lastmod"], *p.window) and p.names(entry)
+                and not names_another(slug, rec["slug"], sharp or {})]
         if len(hits) != 1:
             continue
         # A round the event already has, on the strength of a date, is the one
