@@ -298,15 +298,16 @@ def names_another(slug: str, post: str, sharp: dict[str, set[str]],
 
     Corroboration by vocabulary is only as good as the word that carries it,
     and the commonest word in the archive carries most of it: every YCS post
-    shares "ycs" with ninety-four events. That was enough to make
+    shares "ycs" with a hundred and seven events. That was enough to make
     "ycs-houston-tx-2026-main-event-information" a candidate for the Latin
     America Genesys Remote Duel YCS, whose dates it fell inside, and the two
     have nothing else in common at all -- not a category, not a place, not a
     word that means either of them.
 
     The archive already knows the difference, in the event slugs themselves.
-    "houston" is in one name out of a hundred and seventy-five and picks that
-    event out; "ycs" is in ninety-four and picks out nothing. A post that
+    "houston" is in two names out of a hundred and ninety-one, both of them
+    YCS Houston, and picks that event out; "ycs" is in a hundred and seven and
+    picks out nothing. A post that
     writes one event's distinguishing name in full, and none of this one's,
     is about that event.
 

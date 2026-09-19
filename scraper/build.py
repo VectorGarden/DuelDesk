@@ -321,14 +321,16 @@ def round_key(post) -> tuple[str, Any]:
 #     answered the same way.
 #  64 A post is coverage of the event it names, not of whatever was running
 #     the week it went up. Two rules read a date and asked only that the post
-#     share a word with the event, and the word could be "ycs", which
-#     ninety-four events use: an announcement of YCS Houston 2026 was filed
-#     as coverage of the Latin America Genesys Remote Duel YCS. Twelve posts
-#     leave events they were never about -- among them six welcomes, to
-#     Hartford, Minneapolis, Niagara, Pasadena, San Jose and Santiago, all
-#     filed under YCS Philadelphia. No round table changes: none of the
-#     twelve had contributed one. What is stale is the post list and the
-#     articles beside it, which the archive keeps as it was built.
+#     share a word with the event, and the word could be "ycs", which a
+#     hundred and seven events use: an announcement of YCS Houston 2026 was
+#     filed as coverage of the Latin America Genesys Remote Duel YCS. Nine
+#     posts left events they were never about -- five welcomes, to Hartford,
+#     Minneapolis, Niagara, Pasadena and Santiago, all filed under YCS
+#     Philadelphia; both Latin America announcements and a YCS Houston
+#     write-up under the North America Remote Duel YCS; and the Houston
+#     announcement itself. No round table changed: none of the nine had
+#     contributed one, and the only table that moved at all was the Latin
+#     America event's count of posts it could not place, from one to none.
 BUILD_VERSION = 64
 
 
