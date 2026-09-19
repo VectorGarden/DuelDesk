@@ -34,19 +34,28 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scraper"))
 
 from fetch import SITEMAP, Fetcher, newest_sitemap  # noqa: E402
 from index import parse_post_sitemap, parse_sitemap_index  # noqa: E402
+from parse import lead  # noqa: E402
 
 CACHE = ".scrape-state/cache"
 
 
 def sitemap_entries(cache: str, refresh: bool = True):
-    """Every post the blog lists, which is what the scraper works from."""
+    """Every post the blog lists, and a way to read one, as run.py has both.
+
+    The reader matters for about ten posts on the blog and it is not optional
+    to have it. A winner announcement whose slug says only "we-have-a-winner-13"
+    is placed by the sentence inside it -- "Esteban Jesus Mena Campos is our new
+    Central America WCQ Champion" -- and with no reader that rule does nothing,
+    so those posts read as belonging nowhere and every comparison here reports
+    them as a loss the archive did not make.
+    """
     f = Fetcher(cache_dir=cache)
     index = f.get(SITEMAP, refresh=refresh)
     subs = [l for l in parse_sitemap_index(index) if "posts-post" in l]
     entries = []
     for url in subs:
         entries += parse_post_sitemap(f.get(url, refresh=refresh and url == newest_sitemap(index)))
-    return entries, len(subs)
+    return entries, len(subs), lambda url: lead(f.get(url))
 
 
 def stored() -> dict[str, str]:
@@ -59,11 +68,11 @@ def stored() -> dict[str, str]:
     return out
 
 
-def assign_with(ref: str | None, entries):
+def assign_with(ref: str | None, entries, read=None):
     """Run assign_events from a given commit, or from the working tree."""
     if ref is None:
         import index
-        return {r["url"]: r.get("event") for r in index.assign_events(entries)}
+        return {r["url"]: r.get("event") for r in index.assign_events(entries, read=read)}
     with tempfile.TemporaryDirectory() as tmp:
         for name in ("index.py", "parse.py", "fetch.py", "archive.py", "cards.py", "build.py"):
             src = subprocess.run(["git", "show", f"{ref}:scraper/{name}"],
@@ -76,7 +85,7 @@ def assign_with(ref: str | None, entries):
             del sys.modules[name]
         try:
             import index as old
-            return {r["url"]: r.get("event") for r in old.assign_events(entries)}
+            return {r["url"]: r.get("event") for r in old.assign_events(entries, read=read)}
         finally:
             sys.path.remove(tmp)
             for name in [m for m in list(sys.modules) if m in
@@ -95,12 +104,12 @@ def main() -> int:
     ap.add_argument("--quiet", action="store_true", help="counts only, no list")
     args = ap.parse_args()
 
-    entries, subs = sitemap_entries(args.cache, refresh=not args.offline)
+    entries, subs, read = sitemap_entries(args.cache, refresh=not args.offline)
     print(f"Indexed {len(entries):,} posts from {subs} sub-sitemaps")
 
-    now = assign_with(None, entries)
+    now = assign_with(None, entries, read)
     if args.against:
-        was = assign_with(args.against, entries)
+        was = assign_with(args.against, entries, read)
         label = f"{args.against}'s rules"
     else:
         was = stored()
