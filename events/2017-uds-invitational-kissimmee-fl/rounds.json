@@ -1,7 +1,6 @@
 {
-  "event": "UDS Invitational Kissimmee",
-  "built": 62,
-  "location": "Kissimmee, FL",
+  "event": "UDS Invitational",
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,

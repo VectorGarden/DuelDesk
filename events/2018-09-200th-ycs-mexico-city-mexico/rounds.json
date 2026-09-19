@@ -1,6 +1,6 @@
 {
   "event": "200th YCS Mexico City",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -1308,7 +1308,10 @@
             {"table":1282,"a":"Fernando Zamora Sanchez","b":"Gustavo Perez Martinez"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 1 Feature Match – Jacob Wayne Tipton","deck":null,"record":null},"b":{"name":"John Henry Knox III","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-columbus-round-1-feature-match-jacob-wayne-tipton-vs-john-henry-knox-iii/"},
+            {"a":{"name":"Round 1 Feature Match – Alexis Vega Gonzalez","deck":null,"record":null},"b":{"name":"Sergio Salazar Rocha","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-round-1-feature-match-alexis-vega-gonzalez-vs-sergio-salazar-rocha/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/200th-ycs-mexico-city-pairings-for-round-1-2/"
         },
         {
@@ -7566,7 +7569,9 @@
             {"pos":2018,"name":"Cristopher Alexander Ortega Arana","record":{"wins":0,"losses":3,"draws":0,"confidence":"derived"},"points":0},
             {"pos":2019,"name":"Enrique Uruchurtu Cruz","record":{"wins":0,"losses":3,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 3 Feature Match – Grecia Vargas","deck":null,"record":null},"b":{"name":"Roberto Morales","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/200th-ycs-mexico-city-round-3-feature-match-grecia-vargas-vs-roberto-morales/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-pairings-for-round-3/"
         },
         {
@@ -10365,7 +10370,9 @@
             {"pos":1780,"name":"Maximiliano Rivera Lara","record":{"wins":0,"losses":4,"draws":0,"confidence":"derived"},"points":0},
             {"pos":1781,"name":"Enrique Uruchurtu Cruz","record":{"wins":0,"losses":4,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 4 Feature Match – Jose Ventura","deck":null,"record":null},"b":{"name":"Hector Perez","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-round-4-feature-match-jose-ventura-vs-hector-perez/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-pairings-for-round-4/"
         },
         {
@@ -12881,7 +12888,9 @@
             {"pos":1604,"name":"Cesar Eduardo Barron diaz","record":{"wins":0,"losses":5,"draws":0,"confidence":"derived"},"points":0},
             {"pos":1605,"name":"Maximiliano Rivera Lara","record":{"wins":0,"losses":5,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 5 Feature Match – John Joseph Downey","deck":null,"record":null},"b":{"name":"Roderick Lawton Dye","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-columbus-round-5-feature-match-john-joseph-downey-vs-roderick-lawton-dye/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-pairings-for-round-5/"
         },
         {
@@ -15099,7 +15108,9 @@
             {"pos":1398,"name":"Saul Adrian Gallegos Garcia","record":{"wins":0,"losses":6,"draws":0,"confidence":"derived"},"points":0},
             {"pos":1399,"name":"Maximiliano Rivera Lara","record":{"wins":0,"losses":6,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 6 Feature Match – Adrian Madriz","deck":null,"record":null},"b":{"name":"Geovanni Gaytan","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-round-6-feature-match-adrian-madriz-vs-geovanni-gaytan/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-pairings-for-round-6/"
         },
         {
@@ -18519,7 +18530,9 @@
             {"pos":1023,"name":"Paulette Danae Ceron Reyes","record":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"points":4},
             {"pos":1024,"name":"Johan Engelberth Lara Robledo","record":{"wins":1,"losses":7,"draws":0,"confidence":"derived"},"points":3}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 8 Feature Match – Rolando Gordon","deck":null,"record":null},"b":{"name":"Cesar Nino","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-round-8-feature-match-rolando-gordon-vs-cesar-nino/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-pairings-for-round-8/"
         },
         {
@@ -19941,7 +19954,9 @@
             {"pos":891,"name":"Ernesto Sebastian Vivanco Rizo","record":{"wins":1,"losses":6,"draws":2,"confidence":"derived"},"points":5},
             {"pos":892,"name":"Amin Palafox Hernandez","record":{"wins":1,"losses":6,"draws":2,"confidence":"derived"},"points":5}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 9 Feature Match – Luis Villalpando","deck":null,"record":null},"b":{"name":"Oscar Perez","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-round-9-feature-match-luis-villalpando-vs-oscar-perez/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/200th-ycs-mexico-city-pairings-for-round-9/"
         },
         {
@@ -20708,7 +20723,9 @@
             {"pos":240,"name":"Mario Jesus Palacios Garcia","record":{"wins":5,"losses":2,"draws":4,"confidence":"derived"},"points":19},
             {"pos":241,"name":"Armando Luna Apolonio","record":{"wins":6,"losses":4,"draws":1,"confidence":"derived"},"points":19}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 11 Feature Match – Pedro Baltazar","deck":null,"record":null},"b":{"name":"Gustavo Garcia","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-round-11-feature-match-pedro-baltazar-vs-gustavo-garcia/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-pairings-for-round-11/"
         },
         {
@@ -20891,7 +20908,9 @@
             {"table":32,"a":"Edgar Romero Rito","b":"Luis Oscar Merlos Camacho"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Top 64 Feature Match – Renee Gonzalez","deck":null,"record":null},"b":{"name":"Jorge Matu","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-top-64-feature-match-renee-gonzalez-vs-jorge-matu/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-pairings-for-top-64/"
         },
         {
@@ -20962,7 +20981,9 @@
             {"table":8,"a":"Cesar Alberto Salinas Magana","b":"Edgar Gustavo Tinoco Serrano"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Top 16 Feature Match – Rodolfo Ramirez","deck":null,"record":null},"b":{"name":"Renato Sarmiento","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/200th-ycs-mexico-city-top-16-feature-match-rodolfo-ramirez-vs-renato-sarmiento/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-pairings-for-top-16/"
         },
         {
@@ -20998,8 +21019,26 @@
             {"a":"Jose Lagunes Maitret","aDeck":"Sky Striker","b":"Edgar Gustavo Tinoco Serrano","bDeck":"Sky Striker"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Top 4 Feature Match – Rolando Gordon","deck":null,"record":null},"b":{"name":"Andres Torres","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-top-4-feature-match-rolando-gordon-vs-andres-torres/"}
+          ],
           "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-top-4-pairings-and-decks/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": null,
+          "posted": null,
+          "standingsAfter": 12,
+          "pairings": [],
+          "standings": [],
+          "features": [
+            {"a":{"name":"Finals Feature Match – Jose Lagunes","deck":null,"record":null},"b":{"name":"Andres Torres","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-mexico-city-mexico/200th-ycs-mexico-city-finals-feature-match-jose-lagunes-vs-andres-torres/"}
+          ],
+          "source": null
         }
       ]
     }

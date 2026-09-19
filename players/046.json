@@ -12,7 +12,7 @@
   ],
   "Rodolfo David Rosete Alcantara": [
     {"e":"2012-central-american-wcq","cut":"Top 32","deck":"Wind-Ups"},
-    {"e":"2014-wcq-ca"},
+    {"e":"2014-wcq-ca","cut":"Top 32"},
     {"e":"2014-ycs-mexico-d-f"},
     {"e":"2015-central-american-wcq"},
     {"e":"2016-ycs-mexico-city"},
@@ -605,10 +605,10 @@
   "Hung Luu": {
     "as": "Hung G. Luu"
   },
-  "Manuel R.": {
-    "as": "Manuel Antonio Rodriguez"
-  },
   "Julien L.": {
     "as": "Julien Lin"
+  },
+  "Manuel R.": {
+    "as": "Manuel Antonio Rodriguez"
   }
 }

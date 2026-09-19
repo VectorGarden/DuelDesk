@@ -1,6 +1,6 @@
 {
   "event": "North America WCQ 2017",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -12,8 +12,24 @@
       "entrant": "Duelist",
       "swissRounds": 15,
       "duelists": 2259,
-      "champion": null,
+      "champion": "Chester Hawk Henson",
       "rounds": [
+        {
+          "id": "1",
+          "label": "R1",
+          "phase": "Swiss",
+          "state": "done",
+          "order": 1,
+          "tables": null,
+          "posted": null,
+          "standingsAfter": null,
+          "pairings": [],
+          "standings": [],
+          "features": [
+            {"a":{"name":"Jhas Corbitt","deck":null,"record":null},"b":{"name":"John Leong","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-round-1-feature-match-jhas-corbitt-vs-john-leong/"}
+          ],
+          "source": null
+        },
         {
           "id": "2",
           "label": "R2",
@@ -11927,7 +11943,9 @@
             {"pos":1486,"name":"Jonathon Perry Muise","record":{"wins":0,"losses":4,"draws":1,"confidence":"derived"},"points":1},
             {"pos":1487,"name":"Hector Daniel Tellez","record":{"wins":0,"losses":5,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Billy Brake","deck":null,"record":null},"b":{"name":"Alfie Danklefsen","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-round-5-feature-match-billy-brake-vs-alfie-danklefsen/"}
+          ],
           "source": "https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-round-5-pairings/"
         },
         {
@@ -16647,7 +16665,9 @@
             {"table":2014,"a":"Brendan Paul Narbone","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"*** ***"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Kamal Crooks","deck":null,"record":null},"b":{"name":"Giovanni Gonzalez","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-round-9-feature-match-kamal-crooks-vs-giovanni-gonzalez/"}
+          ],
           "source": "https://yugiohblog.konami.com/2017/championships/2017-north-american-wcq/north-america-wcq-round-9-pairings/"
         },
         {

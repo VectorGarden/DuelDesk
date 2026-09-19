@@ -1,6 +1,6 @@
 {
   "event": "North America WCQ 2019",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -939,7 +939,10 @@
             {"pos":3,"name":"Lucas Dan Oswald","record":{"wins":4,"losses":3,"draws":0,"confidence":"derived"},"points":12},
             {"pos":4,"name":"Colin Jeffrey McIntee","record":{"wins":4,"losses":3,"draws":0,"confidence":"derived"},"points":12}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Dragon Duel Top 4 Feature Match – Sukienik","deck":null,"record":null},"b":{"name":"Elson","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/championships/2019-north-america-wcq/north-america-wcq-dragon-duel-top-4-feature-match-sukienik-vs-elson/"},
+            {"a":{"name":"Dragon Duel Top 4 Feature Match – McIntee","deck":null,"record":null},"b":{"name":"Oswald","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/championships/2019-north-america-wcq/north-america-wcq-dragon-duel-top-4-feature-match-mcintee-vs-oswald/"}
+          ],
           "source": "https://yugiohblog.konami.com/2019/championships/2019-north-america-wcq/north-america-wcq-dragon-duel-standings-after-top-4/"
         }
       ]

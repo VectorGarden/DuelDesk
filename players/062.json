@@ -14,7 +14,7 @@
   ],
   "Eli Cerdan Flores": [
     {"e":"2013-central-american-wcq"},
-    {"e":"2014-wcq-ca"},
+    {"e":"2014-wcq-ca","cut":"Top 32"},
     {"e":"2014-ycs-mexico-d-f"},
     {"e":"2015-central-american-wcq"},
     {"e":"201503-guatemala"},
@@ -599,10 +599,10 @@
   "Dzung Q.": {
     "as": "Dzung Phan Quach"
   },
-  "Dev K.": {
-    "as": "Dev Kapur"
-  },
   "Delanie F.": {
     "as": "Delanie Desdemona Freeze"
+  },
+  "Dev K.": {
+    "as": "Dev Kapur"
   }
 }

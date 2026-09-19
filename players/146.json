@@ -24,6 +24,19 @@
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"na-ygoc-2022"}
   ],
+  "Juan Carlos Coronel Contreras": [
+    {"e":"2014-wcq-ca","f":"Dragon Duel"},
+    {"e":"201509-monterrey"},
+    {"e":"2017-central-american-wcq"},
+    {"e":"2019-ycs-guadalajara"},
+    {"e":"2022-ycs-guadalajara-mexico"},
+    {"e":"2023-central-america-wcq"},
+    {"e":"2023-team-ycs-mexico-city"},
+    {"e":"2024-10-cancun-mexico","cut":"Top 32"},
+    {"e":"2024-central-america-wcq"},
+    {"e":"2024-ycs-guadalajara-mexico"},
+    {"e":"wcq-2016-mexico"}
+  ],
   "Gustavo Isaac Castaneda Cordova": [
     {"e":"2014-wcq-ca"},
     {"e":"2016-ycs-mexico-city"},
@@ -138,18 +151,6 @@
   ],
   "Kantawa Tangsakkasem": [
     {"e":"2015-ycs-chicago"}
-  ],
-  "Juan Carlos Coronel Contreras": [
-    {"e":"201509-monterrey"},
-    {"e":"2017-central-american-wcq"},
-    {"e":"2019-ycs-guadalajara"},
-    {"e":"2022-ycs-guadalajara-mexico"},
-    {"e":"2023-central-america-wcq"},
-    {"e":"2023-team-ycs-mexico-city"},
-    {"e":"2024-10-cancun-mexico","cut":"Top 32"},
-    {"e":"2024-central-america-wcq"},
-    {"e":"2024-ycs-guadalajara-mexico"},
-    {"e":"wcq-2016-mexico"}
   ],
   "William Austin Mobley": [
     {"e":"2016-north-american-wcq"},

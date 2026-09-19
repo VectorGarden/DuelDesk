@@ -14,7 +14,7 @@
   ],
   "Jose Manuel Barajas Gutierrez": [
     {"e":"2013-central-american-wcq"},
-    {"e":"2014-wcq-ca"}
+    {"e":"2014-wcq-ca","cut":"Top 32"}
   ],
   "Hoang Johnny Nguyen": [
     {"e":"2013-north-american-wcq"},
@@ -619,10 +619,10 @@
   "Cristian U.": {
     "as": "Cristian Rafael Urena"
   },
-  "Dalvin U.": {
-    "as": "Dalvin Singh Uppal"
-  },
   "Bestoor S.": {
     "as": "Bestoor Soroosh Sedghi"
+  },
+  "Dalvin U.": {
+    "as": "Dalvin Singh Uppal"
   }
 }

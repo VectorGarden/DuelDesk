@@ -29,6 +29,9 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-north-america-wcq"}
   ],
+  "Joshua Daniel Ramirez Brito": [
+    {"e":"2014-wcq-ca","f":"Dragon Duel"}
+  ],
   "Andres Camacho Solis": [
     {"e":"2014-wcq-ca"},
     {"e":"2015-central-american-wcq"},
@@ -627,13 +630,13 @@
   "Ritchie M.": {
     "as": "Ritchie L. Martinez"
   },
-  "Tristan B.": {
-    "as": "Tristan Daniel Bridges"
-  },
   "Leonardo P.": {
     "as": "Leonardo Daniel Palacio"
   },
   "Vince H.": {
     "as": "Vince Gabriel Suarez Hernandez"
+  },
+  "Tristan B.": {
+    "as": "Tristan Daniel Bridges"
   }
 }

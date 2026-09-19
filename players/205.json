@@ -16,7 +16,7 @@
   ],
   "Luis Gerardo Vargas": [
     {"e":"2013-central-american-wcq"},
-    {"e":"2014-wcq-ca"},
+    {"e":"2014-wcq-ca","cut":"Top 32"},
     {"e":"2014-ycs-mexico-d-f"},
     {"e":"2017-central-american-wcq"}
   ],
@@ -432,11 +432,11 @@
   "MAertin B.": {
     "as": "MAertin Farias Barbosa"
   },
-  "Dillon M.": {
-    "as": "Dillon Maharaj"
-  },
   "Hanko C.": {
     "as": "Hanko Hon Kau Chow"
+  },
+  "Dillon M.": {
+    "as": "Dillon Maharaj"
   },
   "Christian H.": {
     "as": "Christian M. Hanna"

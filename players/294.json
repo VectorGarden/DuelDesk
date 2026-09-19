@@ -58,6 +58,9 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-ycs-raleigh"}
   ],
+  "Essau Mora Duarte": [
+    {"e":"2014-wcq-ca","f":"Dragon Duel"}
+  ],
   "Alberto Venegas Najera": [
     {"e":"2014-ycs-mexico-d-f"}
   ],
@@ -584,10 +587,10 @@
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Robby F.": {
-    "as": "Robby William Fish"
-  },
   "Bryan C.": {
     "as": "Bryan Dejesus Collazo"
+  },
+  "Robby F.": {
+    "as": "Robby William Fish"
   }
 }

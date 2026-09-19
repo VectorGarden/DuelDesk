@@ -26,7 +26,7 @@
   ],
   "Alexander Constantinus Swagemakers Valadez": [
     {"e":"2013-central-american-wcq"},
-    {"e":"2014-wcq-ca"},
+    {"e":"2014-wcq-ca","cut":"Top 32"},
     {"e":"2015-central-american-wcq"},
     {"e":"201509-monterrey"},
     {"e":"2016-ycs-mexico-city","cut":"Top 32"},
@@ -647,10 +647,10 @@
   "Vishon B.": {
     "as": "Vishon Sam Bhatia"
   },
-  "Craig S.": {
-    "as": "Craig Johnston Smith"
-  },
   "Steve H.": {
     "as": "Steve Enrique Hernandez"
+  },
+  "Craig S.": {
+    "as": "Craig Johnston Smith"
   }
 }

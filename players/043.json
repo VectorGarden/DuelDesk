@@ -28,6 +28,14 @@
     {"e":"2026-north-america-wcq"},
     {"e":"na-ygoc-2022","cut":"Top 64","deck":"Adventurer P.U.N.K."}
   ],
+  "Daniel Isai Coronel Contreras": [
+    {"e":"2014-wcq-ca","f":"Dragon Duel"},
+    {"e":"201509-monterrey"},
+    {"e":"2019-ycs-guadalajara"},
+    {"e":"2023-central-america-wcq"},
+    {"e":"2023-team-ycs-mexico-city"},
+    {"e":"2024-central-america-wcq"}
+  ],
   "Alfonso Ulyses Ramirez Lopez": [
     {"e":"2014-ycs-mexico-d-f"},
     {"e":"201509-monterrey"}
@@ -92,13 +100,6 @@
   ],
   "Santana Michael Fernandez": [
     {"e":"2015-ycs-tacoma"}
-  ],
-  "Daniel Isai Coronel Contreras": [
-    {"e":"201509-monterrey"},
-    {"e":"2019-ycs-guadalajara"},
-    {"e":"2023-central-america-wcq"},
-    {"e":"2023-team-ycs-mexico-city"},
-    {"e":"2024-central-america-wcq"}
   ],
   "Ricardo Jaime Benavides Martinez": [
     {"e":"201509-monterrey"},

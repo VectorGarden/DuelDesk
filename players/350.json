@@ -55,7 +55,7 @@
     {"e":"2018-ycs-salt-lake-city"}
   ],
   "Jonathan Xavier Garcia Reyna": [
-    {"e":"2014-wcq-ca"},
+    {"e":"2014-wcq-ca","cut":"Top 32","deck":"Geargia Karakuri"},
     {"e":"2014-ycs-mexico-d-f","cut":"Top 32"},
     {"e":"2015-central-american-wcq"},
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -540,11 +540,11 @@
   "Allan D.": {
     "as": "Allan Tadeu de Souza Diogo"
   },
-  "Nick W.": {
-    "as": "Nick Allen Woodson"
-  },
   "Alexander I.": {
     "as": "Alexander Ryo Igarashi"
+  },
+  "Nick W.": {
+    "as": "Nick Allen Woodson"
   },
   "Manuel F.": {
     "as": "Manuel Isaiah Favela"

@@ -79,7 +79,7 @@
     {"e":"201509-monterrey"}
   ],
   "Victor Leonardo Mercado Vargas": [
-    {"e":"2014-wcq-ca"},
+    {"e":"2014-wcq-ca","cut":"Top 32"},
     {"e":"2014-ycs-mexico-d-f","cut":"Top 32"},
     {"e":"2015-central-american-wcq"},
     {"e":"2016-ycs-mexico-city"},
@@ -623,11 +623,11 @@
   "Matias Fernandez Silva": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Kenny L.": {
-    "as": "Kenny Mongzong Lo"
-  },
   "Solomon M.": {
     "as": "Solomon Moses Moran"
+  },
+  "Kenny L.": {
+    "as": "Kenny Mongzong Lo"
   },
   "Barry B.": {
     "as": "Barry Bennett Broadhead"

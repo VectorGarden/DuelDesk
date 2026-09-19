@@ -56,6 +56,10 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-chicago"}
   ],
+  "Alejandro Uriel Martinez Mejia": [
+    {"e":"2014-wcq-ca","f":"Dragon Duel"},
+    {"e":"2015-central-american-wcq"}
+  ],
   "Cesar Lopez Quintana": [
     {"e":"2014-wcq-ca"},
     {"e":"2023-central-america-wcq"},
@@ -104,9 +108,6 @@
     {"e":"2015-central-american-wcq"},
     {"e":"2022-ycs-guadalajara-mexico"},
     {"e":"wcq-2016-mexico"}
-  ],
-  "Alejandro Uriel Martinez Mejia": [
-    {"e":"2015-central-american-wcq"}
   ],
   "Marcelo Antonio Parisi": [
     {"e":"2015-north-american-wcq"}

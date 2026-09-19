@@ -25,7 +25,7 @@
   ],
   "Victor Abraham Alanis Carlos": [
     {"e":"2012-central-american-wcq","cut":"Top 32","deck":"Wind-Ups"},
-    {"e":"2014-wcq-ca","cut":"Top 16"},
+    {"e":"2014-wcq-ca","cut":"Top 16","deck":"Madolche"},
     {"e":"2014-ycs-mexico-d-f"},
     {"e":"2015-central-american-wcq"},
     {"e":"201509-monterrey"},
@@ -590,10 +590,10 @@
   "Diego Raphael Bejarano Becerra": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Adam T.": {
-    "as": "Adam Tapia"
-  },
   "Alberto L.": {
     "as": "Alberto October Lopez"
+  },
+  "Adam T.": {
+    "as": "Adam Tapia"
   }
 }

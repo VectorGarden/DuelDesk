@@ -97,144 +97,10 @@
       "r": ["Obaldia is moving on 1-0 in the tournament with his Lightsworn Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2014/championships/wcq-ca-top-32-decks/": [
-    {
-      "t": "p",
-      "r": ["Welcome to Day 2 of the Central American World Championship Qualifier. Here are the pairings for the Top 32:"]
-    },
-    {
-      "t": "p",
-      "r": ["\nTable 1: Gonzalez Orea, Alvaro – Madolche Hand vs. Rosete Alcantara, Rodolfo David – Evols"]
-    },
-    {
-      "t": "p",
-      "r": ["Gonzalez Orea, Alvaro – Madolche Hand advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 2: Reyes Suarez, Alejandro Vivaldo – Mythic Ruler vs. Parra, ",{"who":"Filiberto Octavio Parra","t":"Filiberto Octavio"}," – Geargia"]
-    },
-    {
-      "t": "p",
-      "r": ["Parra, ",{"who":"Filiberto Octavio Parra","t":"Filiberto Octavio"}," – Geargia advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 3: Elizondo Ochoa, ",{"who":"Saul Hiram Elizondo Ochoa","t":"Saul Hiram"}," – Madolche Hand vs. Cerdan Flores, Eli – Artifact Traptrix Hand"]
-    },
-    {
-      "t": "p",
-      "r": ["Elizondo Ochoa, ",{"who":"Saul Hiram Elizondo Ochoa","t":"Saul Hiram"}," – Madolche Hand advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 4: Garcia Hernandez, ",{"who":"Carlos Alberto Garcia Hernandez","t":"Carlos Alberto"}," – Spellbook vs. Swagemakers Valadez, Alexander Constantinus – Geargia"]
-    },
-    {
-      "t": "p",
-      "r": ["Garcia Hernandez, ",{"who":"Carlos Alberto Garcia Hernandez","t":"Carlos Alberto"}," – Spellbook advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 5: Villalobos Campa, ",{"who":"Juan Carlos Villalobos Campa","t":"Juan Carlos"}," – Geargia Karakuri vs. Mercado Vargas, Victor Leonardo – Hieratic Ruler"]
-    },
-    {
-      "t": "p",
-      "r": ["Villalobos Campa, ",{"who":"Juan Carlos Villalobos Campa","t":"Juan Carlos"}," – Geargia Karakuri advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 6: Campos Altamirano, Ismael – Evilswarm vs. Carrillo Toscano, ",{"who":"Jose Carlo Carrillo Toscano","t":"Jose Carlo"}," – Artifact Traptrix Hand"]
-    },
-    {
-      "t": "p",
-      "r": ["Carrillo Toscano, ",{"who":"Jose Carlo Carrillo Toscano","t":"Jose Carlo"}," – Artifact Traptrix Hand advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 7: Villanueva Priego, Erick – Mermail vs. Madriz Espinoza, Adrian – Geargia Traptrix"]
-    },
-    {
-      "t": "p",
-      "r": ["Villanueva Priego, Erick – Mermai advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 8: Rodriguez Ambriz, Jordan Luis – Mythic Ruler vs. Hernandez Orta, ",{"who":"Ivan Omar Hernandez Orta","t":"Ivan Omar"}," – Geargia"]
-    },
-    {
-      "t": "p",
-      "r": ["Hernandez Orta, ",{"who":"Ivan Omar Hernandez Orta","t":"Ivan Omar"}," – Geargia advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 9: Garcia Reyna, Jonathan Xavier – Geargia Karakuri vs. De Obaldia Soza, ",{"who":"Galileo Mauricio De Obaldia Soza","t":"Galileo Mauricio"}," – Lightsworn Ruler"]
-    },
-    {
-      "t": "p",
-      "r": ["De Obaldia Soza, ",{"who":"Galileo Mauricio De Obaldia Soza","t":"Galileo Mauricio"}," (Panama) – Lightsworn Ruler advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 10: De Anda Munoz, Mario – Artifact Traptrix Hand vs. Romero Soto, ",{"who":"Cristian Alexis Romero Soto","t":"Cristian Alexis"}," – Madolche"]
-    },
-    {
-      "t": "p",
-      "r": ["Romero Soto, ",{"who":"Cristian Alexis Romero Soto","t":"Cristian Alexis"}," – Madolche advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 11: Ibarra Barcenas, Angel – Traptrix Hand vs. Barajas Gutierrez, Jose Manuel – Lightsworn Ruler"]
-    },
-    {
-      "t": "p",
-      "r": ["Ibarra Barcenas, Angel – Traptrix Hand advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 12: Gomez Hernandez, Ernesto Pascual – Lightsworn Ruler vs. Lagunez, Jose – Mermail"]
-    },
-    {
-      "t": "p",
-      "r": ["Lagunez, Jose – Mermail advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 13: Olmos Hernandez, Mauricio – Madolche Artifact vs. Hernandez Ramos, Cristian Alejandro – Artifact Traptrix Hand"]
-    },
-    {
-      "t": "p",
-      "r": ["Olmos Hernandez, Mauricio – Madolche Artifact advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 14: Munoz Guzman, Jorge Eduardo – Traptrix Hand vs. Santos Viguerias, ",{"who":"Diego Saul Santos Viguerias","t":"Diego Saul"}," – Infernity"]
-    },
-    {
-      "t": "p",
-      "r": ["Santos Viguerias, ",{"who":"Diego Saul Santos Viguerias","t":"Diego Saul"}," – Infernity advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 15: Alanis Carlos, ",{"who":"Victor Abraham Alanis Carlos","t":"Victor Abraham"}," – Madolche vs. Vargas, Luis Gerardo – Spellbook"]
-    },
-    {
-      "t": "p",
-      "r": ["Alanis Carlos, ",{"who":"Victor Abraham Alanis Carlos","t":"Victor Abraham"}," – Madolche advances to Top 16."]
-    },
-    {
-      "t": "p",
-      "r": ["Table 16: Gonzalez Guzman, ",{"who":"Daniel Antonio Gonzalez Guzman","t":"Daniel Antonio"}," – Geargia Hand vs. Zepeda Gomez, Edgar – Bujin"]
-    },
-    {
-      "t": "p",
-      "r": ["Gonzalez Guzman, ",{"who":"Daniel Antonio Gonzalez Guzman","t":"Daniel Antonio"}," advances to Top 16."]
-    }
-  ],
   "https://yugiohblog.konami.com/2014/championships/welcoming-the-national-champions-and-ycs-champions-from-central-america/": [
     {
       "t": "p",
-      "r": ["Here are the National and YCS Champions hoping to be crowned Central American Champion this weekend. Taking part in the Main Event are Gabriel Durán Barahona from Costa Rica, Victor Alonso Mejia Moreno from the Dominican Republic, Marvin Josue Enamorado Maldonado from Honduras, Guadalajara, Mexico’s very own Erick Laurentino Ramirez Rodriguez, Alejandro Vivaldo Reyes Suarez from Mexico (YCS Champion), Latchman Sookdeo Maraj from Trinidad & Tobago, Bruno Eduardo Montuori Fernandez from Guatemala and Jose Arthuro Cross Lay from Panama."]
+      "r": ["Here are the National and YCS Champions hoping to be crowned Central American Champion this weekend. Taking part in the Main Event are Gabriel Durán Barahona from Costa Rica, Victor Alonso Mejia Moreno from the Dominican Republic, Marvin Josue Enamorado Maldonado from Honduras, Guadalajara, Mexico’s very own Erick Laurentino Ramirez Rodriguez, ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Alejandro Vivaldo Reyes Suarez"}," from Mexico (YCS Champion), Latchman Sookdeo Maraj from Trinidad & Tobago, Bruno Eduardo Montuori Fernandez from Guatemala and Jose Arthuro Cross Lay from Panama."]
     },
     {
       "t": "p",
@@ -848,7 +714,7 @@
     },
     {
       "t": "p",
-      "r": ["Rodolfo Rosete opened up Duel 1 with ",{"b":"Evoltile Najasho"},", ",{"b":"Soul Charge"},", ",{"b":"Evolsaur Diplo"},", ",{"b":"Evo-Diversity"},", and 2 copies of ",{"b":"Divine Wrath"},". He activated ",{"b":"Evo-Diversity"}," to add ",{"b":"Evoltile Westlo"}," from his Deck to his hand and then Set Westlo. He Set 2 copies of ",{"b":"Divine Wrath"}," before ending his turn."]
+      "r": [{"who":"Rodolfo David Rosete Alcantara","t":"Rodolfo Rosete"}," opened up Duel 1 with ",{"b":"Evoltile Najasho"},", ",{"b":"Soul Charge"},", ",{"b":"Evolsaur Diplo"},", ",{"b":"Evo-Diversity"},", and 2 copies of ",{"b":"Divine Wrath"},". He activated ",{"b":"Evo-Diversity"}," to add ",{"b":"Evoltile Westlo"}," from his Deck to his hand and then Set Westlo. He Set 2 copies of ",{"b":"Divine Wrath"}," before ending his turn."]
     },
     {
       "t": "p",
@@ -1006,33 +872,33 @@
     },
     {
       "t": "p",
-      "r": ["Table 5: Edgar Zepeda Gomez (Bujin) vs. Luis Marquez Saldivar (Artifacts/Hands/Traptrix)"]
+      "r": ["Table 5: ",{"who":"Edgar Zepeda Gomez","t":"Edgar Zepeda Gomez"}," (Bujin) vs. Luis Marquez Saldivar (Artifacts/Hands/Traptrix)"]
     },
     {
       "t": "p",
-      "r": ["Table 6: Jordan Luis Rodriguez Ambriz (Dragon Rulers) vs. Jose Lucio Martinez Pereira (Madolches)"]
+      "r": ["Table 6: ",{"who":"Jordan Luis Rodriguez Ambriz","t":"Jordan Luis Rodriguez Ambriz"}," (Dragon Rulers) vs. Jose Lucio Martinez Pereira (Madolches)"]
     },
     {
       "t": "p",
-      "r": ["Table 7: Jorge Fernando Barron Diaz (Geargia Hands) vs. Rodolfo David Rosete Alcantara (Evols)"]
+      "r": ["Table 7: Jorge Fernando Barron Diaz (Geargia Hands) vs. ",{"who":"Rodolfo David Rosete Alcantara","t":"Rodolfo David Rosete Alcantara"}," (Evols)"]
     },
     {
       "t": "p",
-      "r": ["Table 8: Jorge Eduardo Munoz Guzman (Traptrix Hands) vs. Erick Damian Moncada Romo (Geargia)"]
+      "r": ["Table 8: ",{"who":"Jorge Eduardo Munoz Guzman","t":"Jorge Eduardo Munoz Guzman"}," (Traptrix Hands) vs. Erick Damian Moncada Romo (Geargia)"]
     },
     {
       "t": "p",
-      "r": ["Table 9: Alonso Chavez Huitron (Dragon Rulers) vs. Eli Cerdan Flores (Artifacts/Traptrix/Hands)"]
+      "r": ["Table 9: Alonso Chavez Huitron (Dragon Rulers) vs. ",{"who":"Eli Cerdan Flores","t":"Eli Cerdan Flores"}," (Artifacts/Traptrix/Hands)"]
     },
     {
       "t": "p",
-      "r": ["Table 10: Mario De Anda Munoz (Artifacts/Traptrix/Hands) vs. ",{"who":"Filiberto Octavio Parra","t":"Filiberto Octavio Parra"}," (Geargias)"]
+      "r": ["Table 10: ",{"who":"Mario De Anda Munoz","t":"Mario De Anda Munoz"}," (Artifacts/Traptrix/Hands) vs. ",{"who":"Filiberto Octavio Parra","t":"Filiberto Octavio Parra"}," (Geargias)"]
     }
   ],
   "https://yugiohblog.konami.com/2014/championships/wcq-ca-round-9-feature-match-alejandro-reyes-vs-jose-barajas/": [
     {
       "t": "p",
-      "r": ["Alejandro Reyes is from Mexico City is Dueling against local Duelist Jose Barajas in this Round 9 Feature Match! Alejandro Reyes and Jose Barajas are both 7-1 in the tournament, so a victory here will guarantee one of these Duelists a spot in the Top 32! Will Alejandro Reyes secure a Top 32 spot with his Mythic Dragon Ruler Deck, or will Jose Barajas make it there with his Lightsworn Deck? It’s time to Duel!"]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Alejandro Reyes"}," is from Mexico City is Dueling against local Duelist ",{"who":"Jose Manuel Barajas Gutierrez","t":"Jose Barajas"}," in this Round 9 Feature Match! ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Alejandro Reyes"}," and ",{"who":"Jose Manuel Barajas Gutierrez","t":"Jose Barajas"}," are both 7-1 in the tournament, so a victory here will guarantee one of these Duelists a spot in the Top 32! Will ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Alejandro Reyes"}," secure a Top 32 spot with his Mythic Dragon Ruler Deck, or will ",{"who":"Jose Manuel Barajas Gutierrez","t":"Jose Barajas"}," make it there with his Lightsworn Deck? It’s time to Duel!"]
     },
     {
       "t": "p",
@@ -1040,39 +906,39 @@
     },
     {
       "t": "p",
-      "r": ["Reyes opened up Duel 1 with ",{"b":"Flamvell Guard"},", ",{"b":"Mythic Water Dragon"},", ",{"b":"Redox, Dragon Ruler of Boulders"},", ",{"b":"Fire Hand¸ Effect Veiler"},",and ",{"b":"Mythic Tree Dragon"},". He Summoned ",{"b":"Mythic Tree Dragon"}," and then Special Summoned ",{"b":"Mythic Water Dragon"},". Next, he increased his Tree Dragon’s Level to 8 and combined his 2 Dragons to Xyz Summon ",{"b":"Divine Dragon Knight Felgrand"},"!"]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," opened up Duel 1 with ",{"b":"Flamvell Guard"},", ",{"b":"Mythic Water Dragon"},", ",{"b":"Redox, Dragon Ruler of Boulders"},", ",{"b":"Fire Hand¸ Effect Veiler"},",and ",{"b":"Mythic Tree Dragon"},". He Summoned ",{"b":"Mythic Tree Dragon"}," and then Special Summoned ",{"b":"Mythic Water Dragon"},". Next, he increased his Tree Dragon’s Level to 8 and combined his 2 Dragons to Xyz Summon ",{"b":"Divine Dragon Knight Felgrand"},"!"]
     },
     {
       "t": "p",
-      "r": ["Barajas activated ",{"b":"Charge of the Light Brigade"}," by sending ",{"b":"Judgment Dragon"},", ",{"b":"Lumina, Lightsworn Summoner"},", and ",{"b":"Eclipse Wyvern"}," from the top of his Deck to his Graveyard, and added Lumina from his Deck to his hand with its effect. Next, he banished ",{"b":"Judgment Dragon"}," from his Deck with the effect of ",{"b":"Eclipse Wyvern"},". He activated ",{"b":"Solar Recharge"}," next, discarding ",{"b":"Raiden, Hand of the Lightsworn"}," to draw 2 cards and send ",{"b":"Lightray Diabolos"}," and ",{"b":"Kuribandit"}," from the top of his Deck to his Graveyard. Next, he Summoned Lumina. He discarded ",{"b":"Eclipse Wyvern"}," to try to activate its effect; but Reyes negated Lumina’s effect by detaching an Xyz Material from Felgrand. Barajas banished another ",{"b":"Judgment Dragon"}," from his Deck with the effect of ",{"b":"Eclipse Wyvern"}," and then Set 2 cards to his back row."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," activated ",{"b":"Charge of the Light Brigade"}," by sending ",{"b":"Judgment Dragon"},", ",{"b":"Lumina, Lightsworn Summoner"},", and ",{"b":"Eclipse Wyvern"}," from the top of his Deck to his Graveyard, and added Lumina from his Deck to his hand with its effect. Next, he banished ",{"b":"Judgment Dragon"}," from his Deck with the effect of ",{"b":"Eclipse Wyvern"},". He activated ",{"b":"Solar Recharge"}," next, discarding ",{"b":"Raiden, Hand of the Lightsworn"}," to draw 2 cards and send ",{"b":"Lightray Diabolos"}," and ",{"b":"Kuribandit"}," from the top of his Deck to his Graveyard. Next, he Summoned Lumina. He discarded ",{"b":"Eclipse Wyvern"}," to try to activate its effect; but ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," negated Lumina’s effect by detaching an Xyz Material from Felgrand. ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," banished another ",{"b":"Judgment Dragon"}," from his Deck with the effect of ",{"b":"Eclipse Wyvern"}," and then Set 2 cards to his back row."]
     },
     {
       "t": "p",
-      "r": ["Reyes drew another ",{"b":"Fire Hand"}," next turn. He entered his Battle Phase, and Barajas flipped ",{"b":"Beckoning Light"},", Chaining ",{"b":"Needlebug Nest"},". He sent ",{"b":"Necro Gardna"},", ",{"b":"Needlebug Nest"},", ",{"b":"Wulf, Lightsworn Beast"},", ",{"b":"Foolish Burial"},", and ",{"b":"Eclipse Wyvern"}," to his Graveyard with ",{"b":"Needlebug Nest"},", and then discarded ",{"b":"Necro Gardna"}," and ",{"b":"Garoth, Lightsworn Warrior"}," from his hand with ",{"b":"Beckoning Light"}," to add ",{"b":"Judgment Dragon"}," and ",{"b":"Lightray Diabolos"}," from his Graveyard to his hand. He Special Summoned Wulf from his Graveyard, since it was sent there from his Deck by ",{"b":"Needlebug Nest"},". Reyes’s Felgrand attacked Lumina, and Barajas banished ",{"b":"Necro Gardna"}," from his Graveyard to negate the attack. Reyes Summoned ",{"b":"Fire Hand"}," in Main Phase 2 and then ended his turn."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," drew another ",{"b":"Fire Hand"}," next turn. He entered his Battle Phase, and ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," flipped ",{"b":"Beckoning Light"},", Chaining ",{"b":"Needlebug Nest"},". He sent ",{"b":"Necro Gardna"},", ",{"b":"Needlebug Nest"},", ",{"b":"Wulf, Lightsworn Beast"},", ",{"b":"Foolish Burial"},", and ",{"b":"Eclipse Wyvern"}," to his Graveyard with ",{"b":"Needlebug Nest"},", and then discarded ",{"b":"Necro Gardna"}," and ",{"b":"Garoth, Lightsworn Warrior"}," from his hand with ",{"b":"Beckoning Light"}," to add ",{"b":"Judgment Dragon"}," and ",{"b":"Lightray Diabolos"}," from his Graveyard to his hand. He Special Summoned Wulf from his Graveyard, since it was sent there from his Deck by ",{"b":"Needlebug Nest"},". ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"},"’s Felgrand attacked Lumina, and ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," banished ",{"b":"Necro Gardna"}," from his Graveyard to negate the attack. ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," Summoned ",{"b":"Fire Hand"}," in Main Phase 2 and then ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Barajas activated the effect of ",{"b":"Lumina, Lightsworn Summoner"}," by discarding ",{"b":"Lyla, Lightsworn Sorceress"},", attempting to Special Summon Raiden from his Graveyard; but Reyes detached an Xyz Material from Felgrand to negate Lumina’s effect and make it unaffected by other cards. Next, Barajas Special Summoned ",{"b":"Judgment Dragon"},". He paid 1000 Life Points to destroy all other cards on the field, but Lumina survived since Felgrand’s effect targeted her earlier in the turn! ",{"b":"Fire Hand"}," destroyed ",{"b":"Judgment Dragon"}," with its effect, and Barajas Special Summoned ",{"b":"Ice Hand"}," from his Deck. Barajas Special Summoned Diabolos next, and attacked ",{"b":"Ice Hand"}," to destroy it. Lumina attacked directly, dropping Reyes down to 7000 Life Points."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," activated the effect of ",{"b":"Lumina, Lightsworn Summoner"}," by discarding ",{"b":"Lyla, Lightsworn Sorceress"},", attempting to Special Summon Raiden from his Graveyard; but ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," detached an Xyz Material from Felgrand to negate Lumina’s effect and make it unaffected by other cards. Next, ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," Special Summoned ",{"b":"Judgment Dragon"},". He paid 1000 Life Points to destroy all other cards on the field, but Lumina survived since Felgrand’s effect targeted her earlier in the turn! ",{"b":"Fire Hand"}," destroyed ",{"b":"Judgment Dragon"}," with its effect, and ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," Special Summoned ",{"b":"Ice Hand"}," from his Deck. ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," Special Summoned Diabolos next, and attacked ",{"b":"Ice Hand"}," to destroy it. Lumina attacked directly, dropping ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," down to 7000 Life Points."]
     },
     {
       "t": "p",
-      "r": ["Reyes banished ",{"b":"Mythic Water Dragon"}," and ",{"b":"Mythic Tree Dragon"}," from his Graveyard to Special Summon ",{"b":"Redox, Dragon Ruler of Boulders"}," and then Normal Summoned ",{"b":"Fire Hand"},". He attacked Lumina with Redox, and Barajas blocked the attack by banishing ",{"b":"Necro Gardna"}," from his Graveyard. Next, ",{"b":"Fire Hand"}," attacked Diabolos. ",{"b":"Fire Hand"}," was destroyed by battle, and destroyed Diabolos with its effect. Next, Reyes Special Summoned ",{"b":"Ice Hand"}," from his Deck, and used it to attack and destroy Lumina. Reyes banished 2 ",{"b":"Fire Hands"}," from his Graveyard to Special Summon ",{"b":"Blaster, Dragon Ruler of Infernos"}," and then combined Blaster with Redox to Xyz Summon ",{"b":"Mecha Phantom Beast Dracossack"}," in Defense Position. He detached an Xyz Material from it to Special Summon 2 ",{"b":"Mecha Phantom Beast Tokens"}," in Defense Mode and then ended his turn."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," banished ",{"b":"Mythic Water Dragon"}," and ",{"b":"Mythic Tree Dragon"}," from his Graveyard to Special Summon ",{"b":"Redox, Dragon Ruler of Boulders"}," and then Normal Summoned ",{"b":"Fire Hand"},". He attacked Lumina with Redox, and ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," blocked the attack by banishing ",{"b":"Necro Gardna"}," from his Graveyard. Next, ",{"b":"Fire Hand"}," attacked Diabolos. ",{"b":"Fire Hand"}," was destroyed by battle, and destroyed Diabolos with its effect. Next, ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," Special Summoned ",{"b":"Ice Hand"}," from his Deck, and used it to attack and destroy Lumina. ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," banished 2 ",{"b":"Fire Hands"}," from his Graveyard to Special Summon ",{"b":"Blaster, Dragon Ruler of Infernos"}," and then combined Blaster with Redox to Xyz Summon ",{"b":"Mecha Phantom Beast Dracossack"}," in Defense Position. He detached an Xyz Material from it to Special Summon 2 ",{"b":"Mecha Phantom Beast Tokens"}," in Defense Mode and then ended his turn."]
     },
     {
       "t": "p",
-      "r": ["With no cards left in his hand or on his field, Barajas drew ",{"b":"Soul Charge"},"! He gave up 4000 Life Points to Special Summon Lyla, Wulf, Garoth, and Raiden from his Graveyard in Attack Position. He activated Raiden’s effect to send the top 2 cards from his Deck to his Graveyard, and then used Garoth’s effect to send ",{"b":"Kuribandit"}," and ",{"b":"Honest"}," from the top of his Deck to his Graveyard. He combined Lyla with Wulf to Xyz Summon ",{"b":"Number 101: Silent Honor ARK"}," and then detached both Xyz Materials from ",{"b":"Number 101: Silent Honor ARK"}," to try to attach ",{"b":"Ice Hand"}," to his ",{"b":"Number 101: Silent Honor ARK"}," as an Xyz Material. Next, he combined Raiden with Garoth to Xyz Summon ",{"b":"Lavalval Chain"}," in Defense Position. He detached an Xyz Material to activate its effect, and Reyes discarded ",{"b":"Effect Veiler"}," to negate it."]
+      "r": ["With no cards left in his hand or on his field, ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," drew ",{"b":"Soul Charge"},"! He gave up 4000 Life Points to Special Summon Lyla, Wulf, Garoth, and Raiden from his Graveyard in Attack Position. He activated Raiden’s effect to send the top 2 cards from his Deck to his Graveyard, and then used Garoth’s effect to send ",{"b":"Kuribandit"}," and ",{"b":"Honest"}," from the top of his Deck to his Graveyard. He combined Lyla with Wulf to Xyz Summon ",{"b":"Number 101: Silent Honor ARK"}," and then detached both Xyz Materials from ",{"b":"Number 101: Silent Honor ARK"}," to try to attach ",{"b":"Ice Hand"}," to his ",{"b":"Number 101: Silent Honor ARK"}," as an Xyz Material. Next, he combined Raiden with Garoth to Xyz Summon ",{"b":"Lavalval Chain"}," in Defense Position. He detached an Xyz Material to activate its effect, and ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," discarded ",{"b":"Effect Veiler"}," to negate it."]
     },
     {
       "t": "p",
-      "r": ["Reyes drew ",{"b":"Torrential Tribute"}," next turn. He Summoned ",{"b":"Flamvell Guard"}," and Tuned it with 2 of his ",{"b":"Mecha Phantom Beast Tokens"}," to Synchro Summon ",{"b":"Black Rose Dragon"},". Next, he detached an Xyz Material from Dracossack to Special Summon 2 ",{"b":"Mecha Phantom beast Tokens"}," to the field. He banished ",{"b":"Flamvell Guard"}," and Blaster from his Graveyard next, in order to Special Summon Redox to his field, and used Blaster’s effect to add a ",{"b":"Flamvell Guard"}," to his hand. He attacked ",{"b":"Number 101: Silent Honor ARK"}," with both Dracossack and ",{"b":"Black Rose Dragon"}," to finally destroy it, and then Redox attacked and destroyed ",{"b":"Lavalval Chain"},". Next, Reyes combined ",{"b":"Black Rose Dragon"}," with Redox to Xyz Summon ",{"b":"Mecha Phantom Beast Dracossack"},"."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," drew ",{"b":"Torrential Tribute"}," next turn. He Summoned ",{"b":"Flamvell Guard"}," and Tuned it with 2 of his ",{"b":"Mecha Phantom Beast Tokens"}," to Synchro Summon ",{"b":"Black Rose Dragon"},". Next, he detached an Xyz Material from Dracossack to Special Summon 2 ",{"b":"Mecha Phantom beast Tokens"}," to the field. He banished ",{"b":"Flamvell Guard"}," and Blaster from his Graveyard next, in order to Special Summon Redox to his field, and used Blaster’s effect to add a ",{"b":"Flamvell Guard"}," to his hand. He attacked ",{"b":"Number 101: Silent Honor ARK"}," with both Dracossack and ",{"b":"Black Rose Dragon"}," to finally destroy it, and then Redox attacked and destroyed ",{"b":"Lavalval Chain"},". Next, ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," combined ",{"b":"Black Rose Dragon"}," with Redox to Xyz Summon ",{"b":"Mecha Phantom Beast Dracossack"},"."]
     },
     {
       "t": "p",
-      "r": ["Jose Barajas drew another ",{"b":"Soul Charge"}," next turn and conceded, without enough Life Points to put it to good use."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Jose Barajas"}," drew another ",{"b":"Soul Charge"}," next turn and conceded, without enough Life Points to put it to good use."]
     },
     {
       "t": "p",
-      "r": ["Alejandro Reyes takes a dominating victory in Duel 1 with 2 copies of ",{"b":"Mecha Phantom Beast Dracossack"},"! Jose Barajas will be going first in Duel 2!"]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Alejandro Reyes"}," takes a dominating victory in Duel 1 with 2 copies of ",{"b":"Mecha Phantom Beast Dracossack"},"! ",{"who":"Jose Manuel Barajas Gutierrez","t":"Jose Barajas"}," will be going first in Duel 2!"]
     },
     {
       "t": "p",
@@ -1080,43 +946,43 @@
     },
     {
       "t": "p",
-      "r": ["Barajas Set a card to his back row and Summoned Raiden. He activated its effect, but lost out to ",{"b":"Effect Veiler"},"."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," Set a card to his back row and Summoned Raiden. He activated its effect, but lost out to ",{"b":"Effect Veiler"},"."]
     },
     {
       "t": "p",
-      "r": ["Reyes activated ",{"b":"Gold Sarcophagus"},", banishing ",{"b":"Tidal, Dragon Ruler of Waterfalls"}," from his Deck. He activated Tidal’s effect to add ",{"b":"Mythic Water Dragon"}," to his hand. Next, he Summoned ",{"b":"Mythic Tree Dragon"},". He Special Summoned ",{"b":"Mythic Water Dragon"}," in Defense Position next, and activated his Tree Dragon’s effect to try to copy his Water Dragon’s Level; but Barajas flipped ",{"b":"Breakthrough Skill"}," to negate the Tree Dragon’s effect."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," activated ",{"b":"Gold Sarcophagus"},", banishing ",{"b":"Tidal, Dragon Ruler of Waterfalls"}," from his Deck. He activated Tidal’s effect to add ",{"b":"Mythic Water Dragon"}," to his hand. Next, he Summoned ",{"b":"Mythic Tree Dragon"},". He Special Summoned ",{"b":"Mythic Water Dragon"}," in Defense Position next, and activated his Tree Dragon’s effect to try to copy his Water Dragon’s Level; but ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," flipped ",{"b":"Breakthrough Skill"}," to negate the Tree Dragon’s effect."]
     },
     {
       "t": "p",
-      "r": ["Barajas Summoned Raiden next turn and activated its effect to send ",{"b":"Wulf, Lightsworn Beast"}," and ",{"b":"Tempest, Dragon Ruler of Storms"}," from the top of his Deck to his Graveyard. He Special Summoned Wulf and Tuned it with Raiden to Synchro Summon ",{"b":"Crimson Blader"},". He Summoned ",{"b":"Necro Gardna"}," next, and Reyes discarded ",{"b":"Effect Veiler"}," to negate ",{"b":"Crimson Blader’s"}," effect. ",{"b":"Necro Gardna"}," attacked and destroyed the Tree Dragon, and then ",{"b":"Crimson Blader"}," attacked and destroyed the Water Dragon."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," Summoned Raiden next turn and activated its effect to send ",{"b":"Wulf, Lightsworn Beast"}," and ",{"b":"Tempest, Dragon Ruler of Storms"}," from the top of his Deck to his Graveyard. He Special Summoned Wulf and Tuned it with Raiden to Synchro Summon ",{"b":"Crimson Blader"},". He Summoned ",{"b":"Necro Gardna"}," next, and ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," discarded ",{"b":"Effect Veiler"}," to negate ",{"b":"Crimson Blader’s"}," effect. ",{"b":"Necro Gardna"}," attacked and destroyed the Tree Dragon, and then ",{"b":"Crimson Blader"}," attacked and destroyed the Water Dragon."]
     },
     {
       "t": "p",
-      "r": ["Reyes activated ",{"b":"Soul Charge"}," to Special Summon Water Dragon and Tree Dragon back from his Graveyard. He increased his Tree Dragon’s Level to 8, and then Xyz Summon ",{"b":"Hieratic Sun Dragon Overlord of Heliopolis"}," by combining his 2 Mythic Dragons. He detached an Xyz Material from it to Tribute the Blaster in his hand and destroy ",{"b":"Crimson Blader"},"."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," activated ",{"b":"Soul Charge"}," to Special Summon Water Dragon and Tree Dragon back from his Graveyard. He increased his Tree Dragon’s Level to 8, and then Xyz Summon ",{"b":"Hieratic Sun Dragon Overlord of Heliopolis"}," by combining his 2 Mythic Dragons. He detached an Xyz Material from it to Tribute the Blaster in his hand and destroy ",{"b":"Crimson Blader"},"."]
     },
     {
       "t": "p",
-      "r": ["Barajas activated ",{"b":"Soul Charge"}," next turn! He gave up 3000 Life Points to Special Summon Wulf, Raiden, and ",{"b":"Crimson Blader"}," in Attack Position. He activated Raiden’s effect to send Garoth and ",{"b":"Solar Recharge"}," from the top of his Deck to his Graveyard and then Tuned Raiden with Wulf to Synchro Summon ",{"b":"Scrap Dragon"},". He Set a card to his back row and then Summoned ",{"b":"Necro Gardna"}," to the field. He combined both copies of ",{"b":"Necro Gardna"}," to Xyz Summon ",{"b":"Ghostrick Alucard"}," and then used his ",{"b":"Scrap Dragon’s"}," effect to destroy his own Alucard along with Reyes’s ",{"b":"Hieratic Sun Dragon Overlord of Heliopolis"},"."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," activated ",{"b":"Soul Charge"}," next turn! He gave up 3000 Life Points to Special Summon Wulf, Raiden, and ",{"b":"Crimson Blader"}," in Attack Position. He activated Raiden’s effect to send Garoth and ",{"b":"Solar Recharge"}," from the top of his Deck to his Graveyard and then Tuned Raiden with Wulf to Synchro Summon ",{"b":"Scrap Dragon"},". He Set a card to his back row and then Summoned ",{"b":"Necro Gardna"}," to the field. He combined both copies of ",{"b":"Necro Gardna"}," to Xyz Summon ",{"b":"Ghostrick Alucard"}," and then used his ",{"b":"Scrap Dragon’s"}," effect to destroy his own Alucard along with ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"},"’s ",{"b":"Hieratic Sun Dragon Overlord of Heliopolis"},"."]
     },
     {
       "t": "p",
-      "r": ["Reyes activated ",{"b":"Soul Charge"}," on his next turn! He paid 3000 Life Points to Special Summon ",{"b":"Mythic Tree Dragon"},", ",{"b":"Mythic Water Dragon"},", and ",{"b":"Blaster, Dragon Ruler of Infernos"}," from his Graveyard. He increased his Tree Dragon’s Level to 8 and then combined both Dragons to Xyz Summon Felgrand. He activated Felgrand’s effect to have it target itself and then banished Hieratic Sun Dragon Overlord and ",{"b":"Mythic Water Dragon"}," from his Graveyard to Special Summon Tidal from his hand. He combined Tidal with Blaster to Xyz Summon ",{"b":"Number 11: Big Eye"}," next, and then detached an Xyz Material from ",{"b":"Number 11: Big Eye"}," to take control of ",{"b":"Scrap Dragon"},". He targeted his own Felgrand and his opponent’s ",{"b":"Crimson Blader"}," with ",{"b":"Scrap Dragon’s"}," effect, but only the ",{"b":"Crimson Blader"}," was destroyed, since Felgrand was unaffected by ",{"b":"Scrap Dragon’s"}," effect."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," activated ",{"b":"Soul Charge"}," on his next turn! He paid 3000 Life Points to Special Summon ",{"b":"Mythic Tree Dragon"},", ",{"b":"Mythic Water Dragon"},", and ",{"b":"Blaster, Dragon Ruler of Infernos"}," from his Graveyard. He increased his Tree Dragon’s Level to 8 and then combined both Dragons to Xyz Summon Felgrand. He activated Felgrand’s effect to have it target itself and then banished Hieratic Sun Dragon Overlord and ",{"b":"Mythic Water Dragon"}," from his Graveyard to Special Summon Tidal from his hand. He combined Tidal with Blaster to Xyz Summon ",{"b":"Number 11: Big Eye"}," next, and then detached an Xyz Material from ",{"b":"Number 11: Big Eye"}," to take control of ",{"b":"Scrap Dragon"},". He targeted his own Felgrand and his opponent’s ",{"b":"Crimson Blader"}," with ",{"b":"Scrap Dragon’s"}," effect, but only the ",{"b":"Crimson Blader"}," was destroyed, since Felgrand was unaffected by ",{"b":"Scrap Dragon’s"}," effect."]
     },
     {
       "t": "p",
-      "r": ["Barajas Summoned ",{"b":"Lumina, Lightsworn Summoner"}," and then activated its effect by discarding ",{"b":"Necro Gardna"},"; but Reyes detached an Xyz Material from Felgrand to negate Lumina’s effect! Next, Lumina attacked Big Eye, and Barajas lost 1600 Life Points and his Lumina was destroyed. Barajas Summoned ",{"b":"Judgment Dragon"}," in Main Phase 2, paid 1000 Life Points to destroy all cards on the field, and sent the top 4 cards of his Deck to his Graveyard with ",{"b":"Judgment Dragon’s"}," effect in his End Phase."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," Summoned ",{"b":"Lumina, Lightsworn Summoner"}," and then activated its effect by discarding ",{"b":"Necro Gardna"},"; but ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," detached an Xyz Material from Felgrand to negate Lumina’s effect! Next, Lumina attacked Big Eye, and ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," lost 1600 Life Points and his Lumina was destroyed. ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," Summoned ",{"b":"Judgment Dragon"}," in Main Phase 2, paid 1000 Life Points to destroy all cards on the field, and sent the top 4 cards of his Deck to his Graveyard with ",{"b":"Judgment Dragon’s"}," effect in his End Phase."]
     },
     {
       "t": "p",
-      "r": ["Reyes drew and activated ",{"b":"Dragon Shrine"}," next turn! He sent ",{"b":"Flamvell Guard"}," and ",{"b":"Tempest, Dragon Ruler of Storms"}," from his Deck to his Graveyard and then banished Tempest and Tidal from his Graveyard to Special Summon Blaster. He added ",{"b":"Debris Dragon"}," and ",{"b":"Mythic Water Dragon"}," from his Deck to his hand with the effects of his banished Dragon Rulers and then Summoned ",{"b":"Debris Dragon"}," in Attack Position. He activated ",{"b":"Debris Dragon’s"}," effect to Special Summon ",{"b":"Effect Veiler"}," from his Graveyard and then Tuned ",{"b":"Effect Veiler"}," with Blaster to Synchro Summon ",{"b":"Scrap Dragon"},". He destroyed ",{"b":"Debris Dragon"}," and ",{"b":"Judgment Dragon"}," with ",{"b":"Scrap Dragon’s"}," effect. Then, he Special Summoned ",{"b":"Mythic Water Dragon"}," and attacked with both of his monsters, but had both of his attacks negated by two ",{"b":"Necro Gardnas"},"."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," drew and activated ",{"b":"Dragon Shrine"}," next turn! He sent ",{"b":"Flamvell Guard"}," and ",{"b":"Tempest, Dragon Ruler of Storms"}," from his Deck to his Graveyard and then banished Tempest and Tidal from his Graveyard to Special Summon Blaster. He added ",{"b":"Debris Dragon"}," and ",{"b":"Mythic Water Dragon"}," from his Deck to his hand with the effects of his banished Dragon Rulers and then Summoned ",{"b":"Debris Dragon"}," in Attack Position. He activated ",{"b":"Debris Dragon’s"}," effect to Special Summon ",{"b":"Effect Veiler"}," from his Graveyard and then Tuned ",{"b":"Effect Veiler"}," with Blaster to Synchro Summon ",{"b":"Scrap Dragon"},". He destroyed ",{"b":"Debris Dragon"}," and ",{"b":"Judgment Dragon"}," with ",{"b":"Scrap Dragon’s"}," effect. Then, he Special Summoned ",{"b":"Mythic Water Dragon"}," and attacked with both of his monsters, but had both of his attacks negated by two ",{"b":"Necro Gardnas"},"."]
     },
     {
       "t": "p",
-      "r": ["Barajas banished 2 copies of ",{"b":"Eclipse Wyvern"}," from his Graveyard to Special Summon Tempest from his Graveyard, and then used his Wyvern’s effect to add his banished ",{"b":"Judgment Dragon"}," to his hand. He Special Summoned ",{"b":"Judgment Dragon"},", and then an attack from ",{"b":"Judgment Dragon"}," over Felgrand and a direct attack from Tempest finished Reyes off!"]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," banished 2 copies of ",{"b":"Eclipse Wyvern"}," from his Graveyard to Special Summon Tempest from his Graveyard, and then used his Wyvern’s effect to add his banished ",{"b":"Judgment Dragon"}," to his hand. He Special Summoned ",{"b":"Judgment Dragon"},", and then an attack from ",{"b":"Judgment Dragon"}," over Felgrand and a direct attack from Tempest finished ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," off!"]
     },
     {
       "t": "p",
-      "r": ["Alejandro Reyes will be going first in Duel 3!"]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Alejandro Reyes"}," will be going first in Duel 3!"]
     },
     {
       "t": "p",
@@ -1124,27 +990,27 @@
     },
     {
       "t": "p",
-      "r": ["Reyes opened up Duel 3 with ",{"b":"Burial from a Different Dimension"},", ",{"b":"Mythic Water Dragon"},", ",{"b":"Flamvell Guard"},", ",{"b":"Effect Veiler"},", ",{"b":"Torrential Tribute"},", and ",{"b":"Mind Crush"},". He Set ",{"b":"Torrential Tribute"}," and ",{"b":"Mind Crush"}," and then ended his turn."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," opened up Duel 3 with ",{"b":"Burial from a Different Dimension"},", ",{"b":"Mythic Water Dragon"},", ",{"b":"Flamvell Guard"},", ",{"b":"Effect Veiler"},", ",{"b":"Torrential Tribute"},", and ",{"b":"Mind Crush"},". He Set ",{"b":"Torrential Tribute"}," and ",{"b":"Mind Crush"}," and then ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Barajas activated ",{"b":"Solar Recharge"},", discarding Lyla to draw 2 cards and send 2 Traps from the top of his Deck to his Graveyard. He Summoned Lumina next, and activated its effect by discarding a card to Special Summon Lyla; but Reyes flipped ",{"b":"Torrential Tribute"}," to clear the field when Lyla was Summoned! In Main Phase 2, Barajas activated ",{"b":"Soul Charge"},", Special Summoning Lumina, Lyla, and Garoth from his Graveyard. He activated Lyla’s effect to target ",{"b":"Mind Crush"}," for destruction, and Reyes Chained it, naming ",{"b":"Judgment Dragon"},". Barajas revealed his hand without ",{"b":"Judgment Dragon"}," in it, and Reyes discarded ",{"b":"Burial from a Different Dimension"}," from his hand at random as a consequence. Barajas Set a card to his back before entering his End Phase and sending a bunch of cards, including an ",{"b":"Eclipse Wyvern"}," that banished a ",{"b":"Judgment Dragon"}," from the Deck, from his Deck to his Graveyard."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," activated ",{"b":"Solar Recharge"},", discarding Lyla to draw 2 cards and send 2 Traps from the top of his Deck to his Graveyard. He Summoned Lumina next, and activated its effect by discarding a card to Special Summon Lyla; but ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," flipped ",{"b":"Torrential Tribute"}," to clear the field when Lyla was Summoned! In Main Phase 2, ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," activated ",{"b":"Soul Charge"},", Special Summoning Lumina, Lyla, and Garoth from his Graveyard. He activated Lyla’s effect to target ",{"b":"Mind Crush"}," for destruction, and ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," Chained it, naming ",{"b":"Judgment Dragon"},". ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," revealed his hand without ",{"b":"Judgment Dragon"}," in it, and ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," discarded ",{"b":"Burial from a Different Dimension"}," from his hand at random as a consequence. ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," Set a card to his back before entering his End Phase and sending a bunch of cards, including an ",{"b":"Eclipse Wyvern"}," that banished a ",{"b":"Judgment Dragon"}," from the Deck, from his Deck to his Graveyard."]
     },
     {
       "t": "p",
-      "r": ["Reyes Set a card to each zone, and Barajas flipped ",{"b":"Needlebug Nest"}," to send the top 5 cards from his Deck to his Graveyard in his End Phase. One of the cards he sent to the Graveyard was ",{"b":"Wulf, Lightsworn Beast"},", which he Special Summoned."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," Set a card to each zone, and ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," flipped ",{"b":"Needlebug Nest"}," to send the top 5 cards from his Deck to his Graveyard in his End Phase. One of the cards he sent to the Graveyard was ",{"b":"Wulf, Lightsworn Beast"},", which he Special Summoned."]
     },
     {
       "t": "p",
-      "r": ["Barajas combined Garoth with Wulf to Xyz Summon ",{"b":"Lavalval Chain"},". He detached an Xyz Material from it to activate its effect; but Reyes discarded ",{"b":"Effect Veiler"}," to negate its effect. Next, Barajas activated ",{"b":"Foolish Burial"},", sending another ",{"b":"Eclipse Wyvern"}," from his Deck to his Graveyard. He activated its effect to banish ",{"b":"Judgment Dragon"}," from his Deck and then discarded ",{"b":"Maxx “C”"}," to activate Lumina’s effect and Special Summon Raiden from his Graveyard. Reyes banished Raiden with ",{"b":"Bottomless Trap Hole"},". Barajas banished 2 copies of ",{"b":"Eclipse Wyvern"}," from his Graveyard to Special Summon Tempest from his Graveyard, and then used the effects of his Wyverns to add 2 ",{"b":"Judgment Dragons"}," to his hand. He attacked and destroyed ",{"b":"Flamvell Guard"}," with Tempest, and then attacked directly with Lumina and ",{"b":"Lavalval Chain"},"."]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," combined Garoth with Wulf to Xyz Summon ",{"b":"Lavalval Chain"},". He detached an Xyz Material from it to activate its effect; but ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," discarded ",{"b":"Effect Veiler"}," to negate its effect. Next, ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," activated ",{"b":"Foolish Burial"},", sending another ",{"b":"Eclipse Wyvern"}," from his Deck to his Graveyard. He activated its effect to banish ",{"b":"Judgment Dragon"}," from his Deck and then discarded ",{"b":"Maxx “C”"}," to activate Lumina’s effect and Special Summon Raiden from his Graveyard. ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," banished Raiden with ",{"b":"Bottomless Trap Hole"},". ",{"who":"Jose Manuel Barajas Gutierrez","t":"Barajas"}," banished 2 copies of ",{"b":"Eclipse Wyvern"}," from his Graveyard to Special Summon Tempest from his Graveyard, and then used the effects of his Wyverns to add 2 ",{"b":"Judgment Dragons"}," to his hand. He attacked and destroyed ",{"b":"Flamvell Guard"}," with Tempest, and then attacked directly with Lumina and ",{"b":"Lavalval Chain"},"."]
     },
     {
       "t": "p",
-      "r": ["Reyes drew a ",{"b":"Mythic Water Dragon"}," to add to the one he already had in his hand and conceded, unable to make any fruitful plays."]
+      "r": [{"who":"Alejandro Vivaldo Reyes Suarez","t":"Reyes"}," drew a ",{"b":"Mythic Water Dragon"}," to add to the one he already had in his hand and conceded, unable to make any fruitful plays."]
     },
     {
       "t": "p",
-      "r": ["Jose Barajas completes the Swiss Rounds with an 8-1 record!"]
+      "r": [{"who":"Jose Manuel Barajas Gutierrez","t":"Jose Barajas"}," completes the Swiss Rounds with an 8-1 record!"]
     }
   ],
   "https://yugiohblog.konami.com/2014/championships/wcq-ca-top-tables-update-round-7/": [
@@ -1154,7 +1020,7 @@
     },
     {
       "t": "p",
-      "r": ["Table 1: Munoz Guzman, Jorge Eduardo (Traptrix Hands) vs. Rosete Alcantara, Rodolfo David (Evols)"]
+      "r": ["Table 1: Munoz Guzman, ",{"who":"Jorge Eduardo Munoz Guzman","t":"Jorge Eduardo"}," (Traptrix Hands) vs. Rosete Alcantara, ",{"who":"Rodolfo David Rosete Alcantara","t":"Rodolfo David"}," (Evols)"]
     },
     {
       "t": "p",
@@ -1162,7 +1028,7 @@
     },
     {
       "t": "p",
-      "r": ["Table 3: De Anda Munoz, Mario (Artifacts/Traptrix/Hands) vs. Garcia Reyna, Jonathan Xavier (Mythic Ruler)"]
+      "r": ["Table 3: De Anda Munoz, Mario (Artifacts/Traptrix/Hands) vs. Garcia Reyna, ",{"who":"Jonathan Xavier Garcia Reyna","t":"Jonathan Xavier"}," (Mythic Ruler)"]
     },
     {
       "t": "p",
@@ -1182,7 +1048,7 @@
     },
     {
       "t": "p",
-      "r": ["Table 8: Bernal Olio, Marco Armando (Geargia) vs. Hernandez Ramos, Cristian Alejandro (Artifacts/Traptrix/Hands)"]
+      "r": ["Table 8: Bernal Olio, Marco Armando (Geargia) vs. Hernandez Ramos, ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Cristian Alejandro"}," (Artifacts/Traptrix/Hands)"]
     },
     {
       "t": "p",
@@ -1196,7 +1062,7 @@
   "https://yugiohblog.konami.com/2014/championships/wcq-ca-top-32-feature-match-mauricio-olmos-vs-cristian-hernandez/": [
     {
       "t": "p",
-      "r": ["Welcome to the Top 32! A wide variety of Decks made it to Day 2, but ",{"who":"Mauricio Olmos Hernandez","t":"Mauricio Olmos"},"’s is one of the most interesting among them. Olmos’s Deck combines two completely diverse strategies that generally operate separately – he’s using a Deck that integrates the Madolche strategy with the Artifact engine to completely throw his opponents off guard. Like Olmos’s Deck, Hernandez’s Deck also combines several different strategies. Guadalajara’s Cristian Hernandez is using an Artifacts/Traptrix/Hands Deck that takes advantage of a variety of different card effects. Only one of these Duelists will advance to the Top 16. It’s time to Duel!"]
+      "r": ["Welcome to the Top 32! A wide variety of Decks made it to Day 2, but ",{"who":"Mauricio Olmos Hernandez","t":"Mauricio Olmos"},"’s is one of the most interesting among them. ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"},"’s Deck combines two completely diverse strategies that generally operate separately – he’s using a Deck that integrates the Madolche strategy with the Artifact engine to completely throw his opponents off guard. Like ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"},"’s Deck, ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s Deck also combines several different strategies. Guadalajara’s ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Cristian Hernandez"}," is using an Artifacts/Traptrix/Hands Deck that takes advantage of a variety of different card effects. Only one of these Duelists will advance to the Top 16. It’s time to Duel!"]
     },
     {
       "t": "p",
@@ -1204,63 +1070,63 @@
     },
     {
       "t": "p",
-      "r": ["Hernandez activated ",{"b":"Pot of Duality"},", revealing ",{"b":"Torrential Tribute"}," and 2 copies of ",{"b":"Ice Hand"}," from the top of his Deck. He added an ",{"b":"Ice Hand"}," to his hand and shuffled the other 2 cards back into his Deck. Next, he Set a monster and Set 3 cards to his back row."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," activated ",{"b":"Pot of Duality"},", revealing ",{"b":"Torrential Tribute"}," and 2 copies of ",{"b":"Ice Hand"}," from the top of his Deck. He added an ",{"b":"Ice Hand"}," to his hand and shuffled the other 2 cards back into his Deck. Next, he Set a monster and Set 3 cards to his back row."]
     },
     {
       "t": "p",
-      "r": ["Olmos opened up with ",{"b":"Dimensional Prison"},", ",{"b":"Artifact Ignition"},", ",{"b":"Divine Wrath"},", ",{"b":"Madolche Ticket"},", ",{"b":"Black Horn of Heaven"},", and ",{"b":"Torrential Tribute"},". He Set 3 cards to his back row and then passed his turn."]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," opened up with ",{"b":"Dimensional Prison"},", ",{"b":"Artifact Ignition"},", ",{"b":"Divine Wrath"},", ",{"b":"Madolche Ticket"},", ",{"b":"Black Horn of Heaven"},", and ",{"b":"Torrential Tribute"},". He Set 3 cards to his back row and then passed his turn."]
     },
     {
       "t": "p",
-      "r": ["Hernandez Normal Summoned ",{"b":"Ice Hand"}," and then Flip Summoned ",{"b":"Ice Hand"},". He attacked with his first ",{"b":"Ice Hand"},", and lost his monster to ",{"b":"Dimensional Prison"},"; he attacked with his second ",{"b":"Ice Hand"},", and Olmos lost 1400 Life Points."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," Normal Summoned ",{"b":"Ice Hand"}," and then Flip Summoned ",{"b":"Ice Hand"},". He attacked with his first ",{"b":"Ice Hand"},", and lost his monster to ",{"b":"Dimensional Prison"},"; he attacked with his second ",{"b":"Ice Hand"},", and ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," lost 1400 Life Points."]
     },
     {
       "t": "p",
-      "r": ["Olmos drew ",{"b":"Solemn Warning"}," next turn and Set it."]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," drew ",{"b":"Solemn Warning"}," next turn and Set it."]
     },
     {
       "t": "p",
-      "r": ["Hernandez attacked directly with ",{"b":"Ice Hand"},", dropping Olmos down to 5200 Life Points. Hernandez Set a card to his back row before ending his turn."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," attacked directly with ",{"b":"Ice Hand"},", dropping ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," down to 5200 Life Points. ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," Set a card to his back row before ending his turn."]
     },
     {
       "t": "p",
-      "r": ["Olmos drew ",{"b":"Madolche Anjelly"},"! He activated ",{"b":"Madolche Ticket"}," and then Summoned Anjelly. He Tributed Anjelly to activate its effect and Special Summoned ",{"b":"Madolche Hootcake"}," from his Deck in Defense Position. Next, he activated the effect of Hootcake; but Hernandez flipped ",{"b":"Solemn Warning"}," and paid 2000 Life Points to negate its effect and destroy the Hootcake. Hootcake shuffled into Olmos’s Deck, and Olmos used his ",{"b":"Madolche Ticket"}," to add ",{"b":"Madolche Anjelly"}," from his Deck to his hand. Olmos Set ",{"b":"Divine Wrath"}," and then ended his turn."]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," drew ",{"b":"Madolche Anjelly"},"! He activated ",{"b":"Madolche Ticket"}," and then Summoned Anjelly. He Tributed Anjelly to activate its effect and Special Summoned ",{"b":"Madolche Hootcake"}," from his Deck in Defense Position. Next, he activated the effect of Hootcake; but ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," flipped ",{"b":"Solemn Warning"}," and paid 2000 Life Points to negate its effect and destroy the Hootcake. Hootcake shuffled into ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"},"’s Deck, and ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," used his ",{"b":"Madolche Ticket"}," to add ",{"b":"Madolche Anjelly"}," from his Deck to his hand. ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," Set ",{"b":"Divine Wrath"}," and then ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Hernandez attacked directly with ",{"b":"Ice Hand"},", dropping Olmos down to 3800 Life Points. He Set a card to his back row before ending his turn."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," attacked directly with ",{"b":"Ice Hand"},", dropping ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," down to 3800 Life Points. He Set a card to his back row before ending his turn."]
     },
     {
       "t": "p",
-      "r": ["Olmos Summoned ",{"b":"Madolche Anjelly"}," next turn, and Hernandez flipped ",{"b":"Breakthrough Skill"}," to negate its effect!"]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," Summoned ",{"b":"Madolche Anjelly"}," next turn, and ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," flipped ",{"b":"Breakthrough Skill"}," to negate its effect!"]
     },
     {
       "t": "p",
-      "r": ["Hernandez Summoned ",{"b":"Traptrix Dionaea"}," and then activated ",{"b":"Mind Control"}," to take control of Anjelly. Olmos discarded ",{"b":"Maxx “C”"}," after he took control of it. Next, Hernandez combined Anjelly with Dionaea to Xyz Summon ",{"b":"Number 101: Silent Honor ARK"},", and Olmos drew ",{"b":"Artifact Beagalltach"}," off of the effect of ",{"b":"Maxx “C”"},". Olmos flipped ",{"b":"Torrential Tribute"}," next, destroying ",{"b":"Ice Hand"}," and taking an Xyz Material from ",{"b":"Number 101: Silent Honor ARK"},". Hernandez tried to activate the effect of ",{"b":"Ice Hand"},", but Olmos negated it with ",{"b":"Divine Wrath"},". Hernandez attacked directly with ",{"b":"Number 101: Silent Honor ARK"}," and then ended his turn."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," Summoned ",{"b":"Traptrix Dionaea"}," and then activated ",{"b":"Mind Control"}," to take control of Anjelly. ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," discarded ",{"b":"Maxx “C”"}," after he took control of it. Next, ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," combined Anjelly with Dionaea to Xyz Summon ",{"b":"Number 101: Silent Honor ARK"},", and ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," drew ",{"b":"Artifact Beagalltach"}," off of the effect of ",{"b":"Maxx “C”"},". ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," flipped ",{"b":"Torrential Tribute"}," next, destroying ",{"b":"Ice Hand"}," and taking an Xyz Material from ",{"b":"Number 101: Silent Honor ARK"},". ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," tried to activate the effect of ",{"b":"Ice Hand"},", but ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," negated it with ",{"b":"Divine Wrath"},". ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," attacked directly with ",{"b":"Number 101: Silent Honor ARK"}," and then ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Olmos drew ",{"b":"Madolche Anjelly"}," and Summoned it, but Hernandez flipped ",{"b":"Torrential Tribute"}," to destroy it, and gave up another Xyz Material from ",{"b":"Number 101: Silent Honor ARK"}," to protect his Number monster. Olmos shuffled Anjelly back into his Deck and added an Anjelly to his hand with Ticket. He Set ",{"b":"Artifact Beagalltach"}," before passing his turn."]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," drew ",{"b":"Madolche Anjelly"}," and Summoned it, but ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," flipped ",{"b":"Torrential Tribute"}," to destroy it, and gave up another Xyz Material from ",{"b":"Number 101: Silent Honor ARK"}," to protect his Number monster. ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," shuffled Anjelly back into his Deck and added an Anjelly to his hand with Ticket. He Set ",{"b":"Artifact Beagalltach"}," before passing his turn."]
     },
     {
       "t": "p",
-      "r": ["Hernandez attacked with ",{"b":"Number 101: Silent Honor ARK"},", but Olmos flipped ",{"b":"Artifact Ignition"},". He destroyed his face-down Beagalltach and Set ",{"b":"Artifact Moralltach"}," from his Deck, and then used his Beagalltach’s effect to Special Summon it in Defense Position. He tried to destroy one of his own back rows with Beagalltach’s effect, but Olmos negated its effect with ",{"b":"Breakthrough Skill"},". Hernandez Set a card to his back row before passing."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," attacked with ",{"b":"Number 101: Silent Honor ARK"},", but ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," flipped ",{"b":"Artifact Ignition"},". He destroyed his face-down Beagalltach and Set ",{"b":"Artifact Moralltach"}," from his Deck, and then used his Beagalltach’s effect to Special Summon it in Defense Position. He tried to destroy one of his own back rows with Beagalltach’s effect, but ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," negated its effect with ",{"b":"Breakthrough Skill"},". ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," Set a card to his back row before passing."]
     },
     {
       "t": "p",
-      "r": ["Olmos Summoned ",{"b":"Madolche Anjelly"}," and Tributed it to Special Summon ",{"b":"Madolche Hootcake"}," from his Deck. He activated Hootcake’s effect to banish Anjelly from his Graveyard and Special Summon ",{"b":"Madolche Messengelato"}," from his Deck in Defense Position. He activated ",{"b":"Madolche Messengelato’s"}," effect to add ",{"b":"Madolche Chateau"}," from his Deck to his hand and then Set a card to his back row."]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," Summoned ",{"b":"Madolche Anjelly"}," and Tributed it to Special Summon ",{"b":"Madolche Hootcake"}," from his Deck. He activated Hootcake’s effect to banish Anjelly from his Graveyard and Special Summon ",{"b":"Madolche Messengelato"}," from his Deck in Defense Position. He activated ",{"b":"Madolche Messengelato’s"}," effect to add ",{"b":"Madolche Chateau"}," from his Deck to his hand and then Set a card to his back row."]
     },
     {
       "t": "p",
-      "r": ["Hernandez Set a card to each zone and passed. In his End Phase, Olmos flipped ",{"b":"Double Cyclone"},"! He destroyed Hernandez’s newly Set ",{"b":"Traptrix Trap Hole Nightmare"}," along with his own ",{"b":"Artifact Moralltach"},". He activated his Moralltach’s effect to Special Summon it and destroy ",{"b":"Number 101: Silent Honor ARK"},"."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," Set a card to each zone and passed. In his End Phase, ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," flipped ",{"b":"Double Cyclone"},"! He destroyed ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s newly Set ",{"b":"Traptrix Trap Hole Nightmare"}," along with his own ",{"b":"Artifact Moralltach"},". He activated his Moralltach’s effect to Special Summon it and destroy ",{"b":"Number 101: Silent Honor ARK"},"."]
     },
     {
       "t": "p",
-      "r": ["Olmos combined ",{"b":"Artifact Beagalltach"}," with ",{"b":"Artifact Moralltach"}," to Xyz Summon ",{"b":"Constellar Pleiades"},". Next, he activated his Hootcake’s effect to banish an Anjelly from his Graveyard and Special Summon Messengelato from his Deck in Defense Position. He added ",{"b":"Madolchepalooza"}," from his Deck to his hand with his Messengelato’s effect. He combined both Messengelatos to Xyz Summon ",{"b":"Madolche Queen Tiaramisu"},", and Hernandez flipped ",{"b":"Void Trap Hole"}," to destroy it. Olmos activated ",{"b":"Madolche Chateau"}," next, shuffling all of the Madolches in his Graveyard back into his Deck. Next, he used the effect of ",{"b":"Madolche Ticket"}," to add ",{"b":"Madolche Anjelly"}," to his hand. He Summoned ",{"b":"Madolche Mewfeuille"}," next, and activated its effect to Special Summon ",{"b":"Madolche Anjelly"}," from his hand. He combined Mewfeuille with Hootcake to Xyz Summon ",{"b":"Leviair the Sea Dragon"}," and then Special Summoned Anjelly from his Banished Zone. He combined both copies of Anjelly to Xyz Summon ",{"b":"Madolche Queen Tiaramisu"}," and then detached an Xyz Material from it to return 2 Madolches in his Graveyard back into his Deck and return Hernandez’s monster and back row to Hernandez’s Deck. Next, he detached an Xyz Material from Pleiades to return Hernandez’s last back row to his hand, and direct attacks from Pleiades, Leviair, and ",{"b":"Madolche Queen Tiaramisu"}," wiped out all of Hernandez’s Life Points!"]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," combined ",{"b":"Artifact Beagalltach"}," with ",{"b":"Artifact Moralltach"}," to Xyz Summon ",{"b":"Constellar Pleiades"},". Next, he activated his Hootcake’s effect to banish an Anjelly from his Graveyard and Special Summon Messengelato from his Deck in Defense Position. He added ",{"b":"Madolchepalooza"}," from his Deck to his hand with his Messengelato’s effect. He combined both Messengelatos to Xyz Summon ",{"b":"Madolche Queen Tiaramisu"},", and ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," flipped ",{"b":"Void Trap Hole"}," to destroy it. ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," activated ",{"b":"Madolche Chateau"}," next, shuffling all of the Madolches in his Graveyard back into his Deck. Next, he used the effect of ",{"b":"Madolche Ticket"}," to add ",{"b":"Madolche Anjelly"}," to his hand. He Summoned ",{"b":"Madolche Mewfeuille"}," next, and activated its effect to Special Summon ",{"b":"Madolche Anjelly"}," from his hand. He combined Mewfeuille with Hootcake to Xyz Summon ",{"b":"Leviair the Sea Dragon"}," and then Special Summoned Anjelly from his Banished Zone. He combined both copies of Anjelly to Xyz Summon ",{"b":"Madolche Queen Tiaramisu"}," and then detached an Xyz Material from it to return 2 Madolches in his Graveyard back into his Deck and return ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s monster and back row to ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s Deck. Next, he detached an Xyz Material from Pleiades to return ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s last back row to his hand, and direct attacks from Pleiades, Leviair, and ",{"b":"Madolche Queen Tiaramisu"}," wiped out all of ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s Life Points!"]
     },
     {
       "t": "p",
-      "r": [{"who":"Mauricio Olmos Hernandez","t":"Mauricio Olmos"}," takes a come-from-behind victory after pulling off the effects of his Artifacts in a long first Duel! Christian Hernandez will be going first in Duel 2!"]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Mauricio Olmos"}," takes a come-from-behind victory after pulling off the effects of his Artifacts in a long first Duel! Christian ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," will be going first in Duel 2!"]
     },
     {
       "t": "p",
@@ -1268,31 +1134,31 @@
     },
     {
       "t": "p",
-      "r": ["Hernandez started off Duel 2 by setting a monster and Setting 3 cards to his back row."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," started off Duel 2 by setting a monster and Setting 3 cards to his back row."]
     },
     {
       "t": "p",
-      "r": ["Olmos Set 3 cards to his back row and passed his turn."]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," Set 3 cards to his back row and passed his turn."]
     },
     {
       "t": "p",
-      "r": ["Hernandez Summoned ",{"b":"Traptrix Myrmeleo"},", but lost out on its effect to ",{"b":"Effect Veiler"},". He attacked with Myrmeleo, but Olmos flipped ",{"b":"Artifact Sanctum"}," to Special Summon Moralltachfrom his Deck and destroy Myrmeleo."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," Summoned ",{"b":"Traptrix Myrmeleo"},", but lost out on its effect to ",{"b":"Effect Veiler"},". He attacked with Myrmeleo, but ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," flipped ",{"b":"Artifact Sanctum"}," to Special Summon Moralltachfrom his Deck and destroy Myrmeleo."]
     },
     {
       "t": "p",
-      "r": ["Olmos Summoned ",{"b":"Madolche Anjelly"}," next turn. Hernandez tried to negate its effect with ",{"b":"Breakthrough Skill"},", but Olmos Chained ",{"b":"Wiretap"}," to negate ",{"b":"Breakthrough Skill"}," and shuffle it into Hernandez’s Deck. Next, Olmos Tributed Anjelly to Special Summon ",{"b":"Madolche Hootcake"}," from his Deck in Defense Position, and activated Hootcake’s effect by banishing Anjelly from his Graveyard. He Special Summoned ",{"b":"Madolche Messengelato"}," in Defense Position and used his Messengelato’s effect to add ",{"b":"Madolche Chateau"}," to his hand. He activated ",{"b":"Mind Control"}," to take control of Hernandez’s face-down ",{"b":"Fire Hand"},", and then Flip Summoned it. Next, he activated ",{"b":"Madolche Chateau"}," and shuffled all of the Madolches from his Graveyard back into his Deck. He combined Messengelato with ",{"b":"Fire Hand"}," to Xyz Summon ",{"b":"Number 101: Silent Honor ARK"}," next, and then attacked directly with ",{"b":"Number 101: Silent Honor ARK"}," and Moralltach. Hernandez dropped down to 3800 Life Points."]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," Summoned ",{"b":"Madolche Anjelly"}," next turn. ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," tried to negate its effect with ",{"b":"Breakthrough Skill"},", but ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," Chained ",{"b":"Wiretap"}," to negate ",{"b":"Breakthrough Skill"}," and shuffle it into ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s Deck. Next, ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," Tributed Anjelly to Special Summon ",{"b":"Madolche Hootcake"}," from his Deck in Defense Position, and activated Hootcake’s effect by banishing Anjelly from his Graveyard. He Special Summoned ",{"b":"Madolche Messengelato"}," in Defense Position and used his Messengelato’s effect to add ",{"b":"Madolche Chateau"}," to his hand. He activated ",{"b":"Mind Control"}," to take control of ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s face-down ",{"b":"Fire Hand"},", and then Flip Summoned it. Next, he activated ",{"b":"Madolche Chateau"}," and shuffled all of the Madolches from his Graveyard back into his Deck. He combined Messengelato with ",{"b":"Fire Hand"}," to Xyz Summon ",{"b":"Number 101: Silent Honor ARK"}," next, and then attacked directly with ",{"b":"Number 101: Silent Honor ARK"}," and Moralltach. ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," dropped down to 3800 Life Points."]
     },
     {
       "t": "p",
-      "r": ["Hernandez flipped ",{"b":"Mystical Space Typhoon"}," to destroy ",{"b":"Madolche Chateau"}," and then activated ",{"b":"Dark Hole"},"! ",{"b":"Number 101: Silent Honor ARK"}," gave up an Xyz Material to protect itself, and all other monsters were destroyed. Hootcake shuffled back into Olmos’s Deck. Next, Hernandez Summoned ",{"b":"Ice Hand"},". He attacked ",{"b":"Number 101: Silent Honor ARK"}," with ",{"b":"Ice Hand"},", and used ",{"b":"Ice Hand’s"}," effect to destroy Olmos’s face-down Moralltach and Special Summon ",{"b":"Fire Hand"}," from his Deck. Moralltach was Special Summoned to the field, and then destroyed ",{"b":"Fire Hand"}," with its effect. Hernandez used his ",{"b":"Fire Hand’s"}," effect, but Olmos discarded ",{"b":"Skull Meister"}," from his hand to negate it."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," flipped ",{"b":"Mystical Space Typhoon"}," to destroy ",{"b":"Madolche Chateau"}," and then activated ",{"b":"Dark Hole"},"! ",{"b":"Number 101: Silent Honor ARK"}," gave up an Xyz Material to protect itself, and all other monsters were destroyed. Hootcake shuffled back into ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"},"’s Deck. Next, ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," Summoned ",{"b":"Ice Hand"},". He attacked ",{"b":"Number 101: Silent Honor ARK"}," with ",{"b":"Ice Hand"},", and used ",{"b":"Ice Hand’s"}," effect to destroy ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"},"’s face-down Moralltach and Special Summon ",{"b":"Fire Hand"}," from his Deck. Moralltach was Special Summoned to the field, and then destroyed ",{"b":"Fire Hand"}," with its effect. ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," used his ",{"b":"Fire Hand’s"}," effect, but ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," discarded ",{"b":"Skull Meister"}," from his hand to negate it."]
     },
     {
       "t": "p",
-      "r": ["Olmos attacked with Moralltach, but his monster was flipped face-down by Hernandez’s ",{"b":"Book of Moon"},". Next, ",{"b":"Number 101: Silent Honor ARK"}," attacked directly."]
+      "r": [{"who":"Mauricio Olmos Hernandez","t":"Olmos"}," attacked with Moralltach, but his monster was flipped face-down by ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"},"’s ",{"b":"Book of Moon"},". Next, ",{"b":"Number 101: Silent Honor ARK"}," attacked directly."]
     },
     {
       "t": "p",
-      "r": ["Hernandez drew a card and conceded on his next turn, unable to defeat Olmos’s monsters."]
+      "r": [{"who":"Cristian Alejandro Hernandez Ramos","t":"Hernandez"}," drew a card and conceded on his next turn, unable to defeat ",{"who":"Mauricio Olmos Hernandez","t":"Olmos"},"’s monsters."]
     },
     {
       "t": "p",
@@ -1332,7 +1198,7 @@
   "https://yugiohblog.konami.com/2014/championships/wcq-ca-top-16-feature-match-carlos-garcia-vs-saul-elizondo/": [
     {
       "t": "p",
-      "r": ["Mexico City’s ",{"who":"Carlos Alberto Garcia Hernandez","t":"Carlos Garcia"}," is using the last remaining Prophecy Deck in the tournament. Now, he’s facing off against Toluca’s ",{"who":"Saul Hiram Elizondo Ochoa","t":"Saul Elizondo"}," and his Madolche Deck in this Top 16 Feature Match! Elizondo is using ",{"b":"Fire Hand"}," and ",{"b":"Ice Hand"}," in his Madolche Deck, diversifying his strategy with the hopes of throwing his opponents off their game. Which one of these Duelists will advance to the Top 8? We’re about to find out. It’s time to Duel!"]
+      "r": ["Mexico City’s ",{"who":"Carlos Alberto Garcia Hernandez","t":"Carlos Garcia"}," is using the last remaining Prophecy Deck in the tournament. Now, he’s facing off against Toluca’s ",{"who":"Saul Hiram Elizondo Ochoa","t":"Saul Elizondo"}," and his Madolche Deck in this Top 16 Feature Match! ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," is using ",{"b":"Fire Hand"}," and ",{"b":"Ice Hand"}," in his Madolche Deck, diversifying his strategy with the hopes of throwing his opponents off their game. Which one of these Duelists will advance to the Top 8? We’re about to find out. It’s time to Duel!"]
     },
     {
       "t": "p",
@@ -1340,15 +1206,15 @@
     },
     {
       "t": "p",
-      "r": ["Elizondo started off Duel 1 by Summoning ",{"b":"Madolche Magileine"},". He activated its effect to add ",{"b":"Madolche Anjelly"}," from his Deck to his hand. Next, he Set 3 cards to his back row and ended his turn."]
+      "r": [{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," started off Duel 1 by Summoning ",{"b":"Madolche Magileine"},". He activated its effect to add ",{"b":"Madolche Anjelly"}," from his Deck to his hand. Next, he Set 3 cards to his back row and ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Garcia opened up with ",{"b":"Spellbook of Power"},", ",{"b":"Justice of Prophecy"},", ",{"b":"High Priestess of Prophecy"},", ",{"b":"Temperance of Prophecy"},", ",{"b":"Book of Moon"},", and ",{"b":"Spellbook of the Master"},". He Summoned ",{"b":"Justice of Prophecy"}," and then activated ",{"b":"Spellbook of Power"}," to increase its ATK by 1000; but Elizondo flipped ",{"b":"Fiendish Chain"}," to negate ",{"b":"Justice of Prophecy’s"}," effect and prevent it from attacking. Garcia Set ",{"b":"Book of Moon"}," before ending his turn."]
+      "r": [{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," opened up with ",{"b":"Spellbook of Power"},", ",{"b":"Justice of Prophecy"},", ",{"b":"High Priestess of Prophecy"},", ",{"b":"Temperance of Prophecy"},", ",{"b":"Book of Moon"},", and ",{"b":"Spellbook of the Master"},". He Summoned ",{"b":"Justice of Prophecy"}," and then activated ",{"b":"Spellbook of Power"}," to increase its ATK by 1000; but ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," flipped ",{"b":"Fiendish Chain"}," to negate ",{"b":"Justice of Prophecy’s"}," effect and prevent it from attacking. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," Set ",{"b":"Book of Moon"}," before ending his turn."]
     },
     {
       "t": "p",
-      "r": ["Elizondo Summoned ",{"b":"Madolche Mewfeuille"}," and activated its effect to Special Summon ",{"b":"Madolche Anjelly"}," from his hand. Garcia flipped ",{"b":"Book of Moon"}," to try to put Anjelly face-down; but Elizondo Chained ",{"b":"Forbidden Lance"}," to make Anjelly unaffected by Spell and Trap Cards! He Tributed Anjelly to Special Summon ",{"b":"Madolche Hootcake"}," and then banished Anjelly from his Graveyard to Special Summon ",{"b":"Madolche Messengelato"}," from his Deck with Hootcake’s effect. Next, he used Messengelato’s effect to add ",{"b":"Madolche Ticket"}," from his Deck to his hand and activated it. He combined Hootcake with Mewfeuille to Xyz Summon ",{"b":"Leviair the Sea Dragon"}," and then detached an Xyz Material from Leviair to Special Summon ",{"b":"Madolche Anjelly"}," from his Banished Zone. Next, he combined Anjelly with Magileine to Xyz Summon ",{"b":"Madolche Queen Tiaramisu"},", and detached an Xyz Material from Tiaramisu to activate its effect. He sent Anjelly from his Graveyard back to his Deck, and shuffled ",{"b":"Justice of Prophecy"}," into Garcia’s Deck. Then, he used the effect of his ",{"b":"Madolche Ticket"}," to Special Summon ",{"b":"Madolche Messengelato"}," from his Deck. Direct attacks from Leviair, Tiaramisu, and both Messengelatos dropped Garcia down to 800 Life Points. In Main Phase 2, Elizondo combined both of his Messengelatos to Xyz Summon ",{"b":"Gagaga Cowboy"}," in Defense Position, and detached an Xyz Material from it to activate its effect. Cowboy’s effect wiped out Garcia’s last 800 Life Points!"]
+      "r": [{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," Summoned ",{"b":"Madolche Mewfeuille"}," and activated its effect to Special Summon ",{"b":"Madolche Anjelly"}," from his hand. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," flipped ",{"b":"Book of Moon"}," to try to put Anjelly face-down; but ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," Chained ",{"b":"Forbidden Lance"}," to make Anjelly unaffected by Spell and Trap Cards! He Tributed Anjelly to Special Summon ",{"b":"Madolche Hootcake"}," and then banished Anjelly from his Graveyard to Special Summon ",{"b":"Madolche Messengelato"}," from his Deck with Hootcake’s effect. Next, he used Messengelato’s effect to add ",{"b":"Madolche Ticket"}," from his Deck to his hand and activated it. He combined Hootcake with Mewfeuille to Xyz Summon ",{"b":"Leviair the Sea Dragon"}," and then detached an Xyz Material from Leviair to Special Summon ",{"b":"Madolche Anjelly"}," from his Banished Zone. Next, he combined Anjelly with Magileine to Xyz Summon ",{"b":"Madolche Queen Tiaramisu"},", and detached an Xyz Material from Tiaramisu to activate its effect. He sent Anjelly from his Graveyard back to his Deck, and shuffled ",{"b":"Justice of Prophecy"}," into ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"},"’s Deck. Then, he used the effect of his ",{"b":"Madolche Ticket"}," to Special Summon ",{"b":"Madolche Messengelato"}," from his Deck. Direct attacks from Leviair, Tiaramisu, and both Messengelatos dropped ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," down to 800 Life Points. In Main Phase 2, ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," combined both of his Messengelatos to Xyz Summon ",{"b":"Gagaga Cowboy"}," in Defense Position, and detached an Xyz Material from it to activate its effect. Cowboy’s effect wiped out ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"},"’s last 800 Life Points!"]
     },
     {
       "t": "p",
@@ -1360,27 +1226,27 @@
     },
     {
       "t": "p",
-      "r": ["Garcia opened up Duel 2 with ",{"b":"Book of Moon"},", ",{"b":"Spellbook Library of the Crescent, Phoenix Wing Wind Blast"},", ",{"b":"Spellbook Magician of Prophecy"},", and 2 copies of ",{"b":"Reckless Greed"},". He activated ",{"b":"Spellbook Library of the Crescent"},", revealing ",{"b":"Spellbook of Secrets"},", ",{"b":"Spellbook of the Master"},", and ",{"b":"Spellbook of Fate"}," from his Deck. He randomly added ",{"b":"Spellbook of the Master"}," to his hand and shuffled the other 2 Spellbooks back into his Deck. Next, he Normal Summoned ",{"b":"Spellbook Magician of Prophecy"}," and activated its effect to add ",{"b":"Spellbook of Secrets"}," to his hand. He activated ",{"b":"Spellbook of Secrets"}," next, and used its effect to add ",{"b":"Spellbook of Fate"}," to his hand. He activated ",{"b":"Spellbook of the Master"}," next, revealing ",{"b":"Spellbook of Fate"}," from his hand to copy ",{"b":"Spellbook Library of the Crescent"},"; but Elizondo Chained ",{"b":"D.D. Crow"}," to banish ",{"b":"Spellbook Library of the Crescent"}," and deprive Garcia of the effect. Garcia Set 2 copies of ",{"b":"Reckless Greed"},", ",{"b":"Spellbook of Fate"},", and ",{"b":"Book of Moon"}," before ending his turn."]
+      "r": [{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," opened up Duel 2 with ",{"b":"Book of Moon"},", ",{"b":"Spellbook Library of the Crescent, Phoenix Wing Wind Blast"},", ",{"b":"Spellbook Magician of Prophecy"},", and 2 copies of ",{"b":"Reckless Greed"},". He activated ",{"b":"Spellbook Library of the Crescent"},", revealing ",{"b":"Spellbook of Secrets"},", ",{"b":"Spellbook of the Master"},", and ",{"b":"Spellbook of Fate"}," from his Deck. He randomly added ",{"b":"Spellbook of the Master"}," to his hand and shuffled the other 2 Spellbooks back into his Deck. Next, he Normal Summoned ",{"b":"Spellbook Magician of Prophecy"}," and activated its effect to add ",{"b":"Spellbook of Secrets"}," to his hand. He activated ",{"b":"Spellbook of Secrets"}," next, and used its effect to add ",{"b":"Spellbook of Fate"}," to his hand. He activated ",{"b":"Spellbook of the Master"}," next, revealing ",{"b":"Spellbook of Fate"}," from his hand to copy ",{"b":"Spellbook Library of the Crescent"},"; but ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," Chained ",{"b":"D.D. Crow"}," to banish ",{"b":"Spellbook Library of the Crescent"}," and deprive ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," of the effect. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," Set 2 copies of ",{"b":"Reckless Greed"},", ",{"b":"Spellbook of Fate"},", and ",{"b":"Book of Moon"}," before ending his turn."]
     },
     {
       "t": "p",
-      "r": ["Elizondo Summoned ",{"b":"Madolche Magileine"}," and activated its effect to add ",{"b":"Madolche Mewfeuille"}," from his Deck to his hand. He attacked with Magileine, and Garcia flipped ",{"b":"Book of Moon"},", targeting his ",{"b":"Spellbook Magician of Prophecy"},"; but Garcia Chained ",{"b":"Forbidden Lance"},", and made ",{"b":"Spellbook Magician of Prophecy"}," unaffected by ",{"b":"Book of Moon"}," while weakening it to 0 ATK. ",{"b":"Spellbook Magician of Prophecy"}," was destroyed, and Garcia lost 6600 Life Points."]
+      "r": [{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," Summoned ",{"b":"Madolche Magileine"}," and activated its effect to add ",{"b":"Madolche Mewfeuille"}," from his Deck to his hand. He attacked with Magileine, and ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," flipped ",{"b":"Book of Moon"},", targeting his ",{"b":"Spellbook Magician of Prophecy"},"; but ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," Chained ",{"b":"Forbidden Lance"},", and made ",{"b":"Spellbook Magician of Prophecy"}," unaffected by ",{"b":"Book of Moon"}," while weakening it to 0 ATK. ",{"b":"Spellbook Magician of Prophecy"}," was destroyed, and ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," lost 6600 Life Points."]
     },
     {
       "t": "p",
-      "r": ["Garcia drew ",{"b":"World of Prophecy"},". He flipped 2 copies of ",{"b":"Reckless Greed"}," to draw ",{"b":"Spellbook of Life"},", ",{"b":"Traptrix Trap Hole Nightmare"},", ",{"b":"Spellbook of Eternity"},", and ",{"b":"Phoenix Wing Wind Blast"},". He flipped ",{"b":"Phoenix Wing Wind Blast"}," next, discarding ",{"b":"World of Prophecy"}," to return Magileine to the top of Elizondo’s Deck. Next, he activated ",{"b":"Spellbook of Life"},"! He banished ",{"b":"Spellbook Magician of Prophecy"}," from his Graveyard to Special Summon ",{"b":"World of Prophecy"}," and then activated its effect to add 2 Spellbooks to his hand. Next, he activated ",{"b":"Spellbook of Secrets"}," to add ",{"b":"Spellbook Magician of Prophecy"}," to his hand and Summoned it and activated its effect to add ",{"b":"The Grand Spellbook Tower"}," to his hand. He activated ",{"b":"Spellbook of the Master"}," next, copying the effect of ",{"b":"Spellbook of Secrets"}," to add ",{"b":"Spellbook of Wisdom"}," to his hand. He attacked directly with ",{"b":"Spellbook Magician of Prophecy"}," and ",{"b":"World of Prophecy"},", dropping Elizondo down to 4600 Life Points. In Main Phase 2, he activated ",{"b":"The Grand Spellbook Tower"}," and Set 4 cards to his back row."]
+      "r": [{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," drew ",{"b":"World of Prophecy"},". He flipped 2 copies of ",{"b":"Reckless Greed"}," to draw ",{"b":"Spellbook of Life"},", ",{"b":"Traptrix Trap Hole Nightmare"},", ",{"b":"Spellbook of Eternity"},", and ",{"b":"Phoenix Wing Wind Blast"},". He flipped ",{"b":"Phoenix Wing Wind Blast"}," next, discarding ",{"b":"World of Prophecy"}," to return Magileine to the top of ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"},"’s Deck. Next, he activated ",{"b":"Spellbook of Life"},"! He banished ",{"b":"Spellbook Magician of Prophecy"}," from his Graveyard to Special Summon ",{"b":"World of Prophecy"}," and then activated its effect to add 2 Spellbooks to his hand. Next, he activated ",{"b":"Spellbook of Secrets"}," to add ",{"b":"Spellbook Magician of Prophecy"}," to his hand and Summoned it and activated its effect to add ",{"b":"The Grand Spellbook Tower"}," to his hand. He activated ",{"b":"Spellbook of the Master"}," next, copying the effect of ",{"b":"Spellbook of Secrets"}," to add ",{"b":"Spellbook of Wisdom"}," to his hand. He attacked directly with ",{"b":"Spellbook Magician of Prophecy"}," and ",{"b":"World of Prophecy"},", dropping ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," down to 4600 Life Points. In Main Phase 2, he activated ",{"b":"The Grand Spellbook Tower"}," and Set 4 cards to his back row."]
     },
     {
       "t": "p",
-      "r": ["Elizondo Summoned ",{"b":"Madolche Mewfeuille"}," and then activated its effect to Special Summon ",{"b":"Madolche Anjelly"}," from his hand. Garcia flipped ",{"b":"Spellbook of Fate"}," and banished 3 Spellbooks from his Graveyard to banish Anjelly from the Duel. Mewfeille attacked and destroyed ",{"b":"Spellbook Magician of Prophecy"}," next, and Mewfeuille shuffled back into Elizondo’s Deck."]
+      "r": [{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," Summoned ",{"b":"Madolche Mewfeuille"}," and then activated its effect to Special Summon ",{"b":"Madolche Anjelly"}," from his hand. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," flipped ",{"b":"Spellbook of Fate"}," and banished 3 Spellbooks from his Graveyard to banish Anjelly from the Duel. Mewfeille attacked and destroyed ",{"b":"Spellbook Magician of Prophecy"}," next, and Mewfeuille shuffled back into ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"},"’s Deck."]
     },
     {
       "t": "p",
-      "r": ["Garcia sent a Spellbook to the bottom of his Deck to draw a card with ",{"b":"The Grand Spellbook Tower"}," and then activated ",{"b":"Spellbook of Eternity"}," to add ",{"b":"Spellbook of the Master"}," to his hand. He activated it to copy ",{"b":"Spellbook of Eternity"}," and then added ",{"b":"Spellbook of Secrets"}," to his hand. He activated ",{"b":"Spellbook of Secrets"}," next, and added ",{"b":"Spellbook Magician of Prophecy"}," from his Deck to his hand. He Summoned ",{"b":"Spellbook Magician of Prophecy"}," and activated its effect to add ",{"b":"Spellbook of Fate"}," to his hand. ",{"b":"Spellbook Magician of Prophecy"}," and ",{"b":"World of Prophecy"}," attacked directly, dropping Elizondo down to 1200 Life Points. Garcia Set another card to his back row before passing."]
+      "r": [{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," sent a Spellbook to the bottom of his Deck to draw a card with ",{"b":"The Grand Spellbook Tower"}," and then activated ",{"b":"Spellbook of Eternity"}," to add ",{"b":"Spellbook of the Master"}," to his hand. He activated it to copy ",{"b":"Spellbook of Eternity"}," and then added ",{"b":"Spellbook of Secrets"}," to his hand. He activated ",{"b":"Spellbook of Secrets"}," next, and added ",{"b":"Spellbook Magician of Prophecy"}," from his Deck to his hand. He Summoned ",{"b":"Spellbook Magician of Prophecy"}," and activated its effect to add ",{"b":"Spellbook of Fate"}," to his hand. ",{"b":"Spellbook Magician of Prophecy"}," and ",{"b":"World of Prophecy"}," attacked directly, dropping ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," down to 1200 Life Points. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," Set another card to his back row before passing."]
     },
     {
       "t": "p",
-      "r": ["Elizondo Summoned ",{"b":"Fire Hand"}," and then attacked ",{"b":"World of Prophecy"},"; but when Garcia flipped ",{"b":"Phoenix Wing Wind Blast"}," to put ",{"b":"Fire Hand"}," on top of Garcia’s Deck, Elizondo conceded."]
+      "r": [{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," Summoned ",{"b":"Fire Hand"}," and then attacked ",{"b":"World of Prophecy"},"; but when ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," flipped ",{"b":"Phoenix Wing Wind Blast"}," to put ",{"b":"Fire Hand"}," on top of ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"},"’s Deck, ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," conceded."]
     },
     {
       "t": "p",
@@ -1392,23 +1258,23 @@
     },
     {
       "t": "p",
-      "r": ["Elizondo started off Duel 3 by Summoning ",{"b":"Madolche Anjelly"},". He Tributed it to Special Summon ",{"b":"Madolche Hootcake"}," from his Deck and then activated Hootcake’s effect to banish Anjelly from the Graveyard and Special Summon ",{"b":"Madolche Messengelato"}," from his Deck in Defense Position. He added ",{"b":"Madolche Ticket"}," from his Deck to his hand with his Messengelato’s effect and then activated the Ticket. He Set 3 cards to his back row before ending his turn."]
+      "r": [{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," started off Duel 3 by Summoning ",{"b":"Madolche Anjelly"},". He Tributed it to Special Summon ",{"b":"Madolche Hootcake"}," from his Deck and then activated Hootcake’s effect to banish Anjelly from the Graveyard and Special Summon ",{"b":"Madolche Messengelato"}," from his Deck in Defense Position. He added ",{"b":"Madolche Ticket"}," from his Deck to his hand with his Messengelato’s effect and then activated the Ticket. He Set 3 cards to his back row before ending his turn."]
     },
     {
       "t": "p",
-      "r": ["Garcia opened up with ",{"b":"Spellbook Magician of Prophecy"},", ",{"b":"High Priestess of Prophecy"},", ",{"b":"Solemn Warning"},", ",{"b":"Spellbook of the Master"},", ",{"b":"Reckless Greed"},", and ",{"b":"World of Prophecy"},". He tried to Summon ",{"b":"Spellbook Magician of Prophecy"},"; but Elizondo flipped ",{"b":"Solemn Warning"}," and paid 2000 Life Points to negate its Summon. Garcia Set ",{"b":"Solemn Warning"}," and ",{"b":"Reckless Greed"}," before ending his turn."]
+      "r": [{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," opened up with ",{"b":"Spellbook Magician of Prophecy"},", ",{"b":"High Priestess of Prophecy"},", ",{"b":"Solemn Warning"},", ",{"b":"Spellbook of the Master"},", ",{"b":"Reckless Greed"},", and ",{"b":"World of Prophecy"},". He tried to Summon ",{"b":"Spellbook Magician of Prophecy"},"; but ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," flipped ",{"b":"Solemn Warning"}," and paid 2000 Life Points to negate its Summon. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," Set ",{"b":"Solemn Warning"}," and ",{"b":"Reckless Greed"}," before ending his turn."]
     },
     {
       "t": "p",
-      "r": ["Elizondo Summoned ",{"b":"Madolche Magileine"}," and activated its effect to add ",{"b":"Madolche Anjelly"}," from his Deck to his hand. Next, he switched Hootcake and Messengelato into Attack Position and attacked directly with all three monsters. Garcia dropped down to 3500 Life Points."]
+      "r": [{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," Summoned ",{"b":"Madolche Magileine"}," and activated its effect to add ",{"b":"Madolche Anjelly"}," from his Deck to his hand. Next, he switched Hootcake and Messengelato into Attack Position and attacked directly with all three monsters. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," dropped down to 3500 Life Points."]
     },
     {
       "t": "p",
-      "r": ["Elizondo combined Magileine with Messengelato to try to Xyz Summon ",{"b":"Gagaga Cowboy"}," in Defense Position in Main Phase 2; but Garcia flipped ",{"b":"Solemn Warning"}," and paid 2000 Life Points to negate its Summon. Garcia banished Messengelato from his Graveyard to Special Summon ",{"b":"Madolche Anjelly"}," from his Deck with Hootcake’s effect next, and then Tributed Anjelly to Special Summon ",{"b":"Madolche Messengelato"}," from his Deck. He activated Messengelato’s effect to add ",{"b":"Madolche Chateau"}," to his hand and then Set a card to his back row. Hootcake returned to his Deck in the End Phase due to Anjelly’s effect, and Elizondo added ",{"b":"Madolche Mewfeuille"}," from his Deck to his hand with the effect of his ",{"b":"Madolche Ticket"},"."]
+      "r": [{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," combined Magileine with Messengelato to try to Xyz Summon ",{"b":"Gagaga Cowboy"}," in Defense Position in Main Phase 2; but ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," flipped ",{"b":"Solemn Warning"}," and paid 2000 Life Points to negate its Summon. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," banished Messengelato from his Graveyard to Special Summon ",{"b":"Madolche Anjelly"}," from his Deck with Hootcake’s effect next, and then Tributed Anjelly to Special Summon ",{"b":"Madolche Messengelato"}," from his Deck. He activated Messengelato’s effect to add ",{"b":"Madolche Chateau"}," to his hand and then Set a card to his back row. Hootcake returned to his Deck in the End Phase due to Anjelly’s effect, and ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," added ",{"b":"Madolche Mewfeuille"}," from his Deck to his hand with the effect of his ",{"b":"Madolche Ticket"},"."]
     },
     {
       "t": "p",
-      "r": ["Garcia drew ",{"b":"Spellbook of Power"}," next turn. He activated ",{"b":"Reckless Greed"}," to draw ",{"b":"Spellbook of Wisdom"}," and ",{"b":"Temperance of Prophecy"}," from his Deck and then revealed 3 Spellbooks from his hand to Special Summon ",{"b":"High Priestess of Prophecy"},"! He activated ",{"b":"Spellbook of Power"}," next, targeting his ",{"b":"High Priestess of Prophecy"},"; and Elizondo flipped ",{"b":"Fiendish Chain"}," to negate ",{"b":"High Priestess of Prophecy’s"}," effect and prevent it from attacking. Next, he banished ",{"b":"Spellbook of Power"}," from his Graveyard to activate his ",{"b":"High Priestess of Prophecy’s"}," effect, targeting ",{"b":"Madolche Ticket"},", and then Chained ",{"b":"Spellbook of Wisdom"}," to make his ",{"b":"High Priestess of Prophecy"}," immune to ",{"b":"Fiendish Chain"},". ",{"b":"High Priestess of Prophecy"}," destroyed Ticket with its effect and then attacked Messengelato; but Messengelato couldn’t be destroyed in battle due to the effect of Anjelly. Garcia thereafter conceded, seeing no way to win."]
+      "r": [{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," drew ",{"b":"Spellbook of Power"}," next turn. He activated ",{"b":"Reckless Greed"}," to draw ",{"b":"Spellbook of Wisdom"}," and ",{"b":"Temperance of Prophecy"}," from his Deck and then revealed 3 Spellbooks from his hand to Special Summon ",{"b":"High Priestess of Prophecy"},"! He activated ",{"b":"Spellbook of Power"}," next, targeting his ",{"b":"High Priestess of Prophecy"},"; and ",{"who":"Saul Hiram Elizondo Ochoa","t":"Elizondo"}," flipped ",{"b":"Fiendish Chain"}," to negate ",{"b":"High Priestess of Prophecy’s"}," effect and prevent it from attacking. Next, he banished ",{"b":"Spellbook of Power"}," from his Graveyard to activate his ",{"b":"High Priestess of Prophecy’s"}," effect, targeting ",{"b":"Madolche Ticket"},", and then Chained ",{"b":"Spellbook of Wisdom"}," to make his ",{"b":"High Priestess of Prophecy"}," immune to ",{"b":"Fiendish Chain"},". ",{"b":"High Priestess of Prophecy"}," destroyed Ticket with its effect and then attacked Messengelato; but Messengelato couldn’t be destroyed in battle due to the effect of Anjelly. ",{"who":"Carlos Alberto Garcia Hernandez","t":"Garcia"}," thereafter conceded, seeing no way to win."]
     },
     {
       "t": "p",
@@ -1422,19 +1288,19 @@
     },
     {
       "t": "p",
-      "r": ["Table 1: Garcia Reyna, Jonathan Xavier (Geargia) vs. Villalobos Campa, ",{"who":"Juan Carlos Villalobos Campa","t":"Juan Carlos"}," (Geargia Karakuri)"]
+      "r": ["Table 1: Garcia Reyna, ",{"who":"Jonathan Xavier Garcia Reyna","t":"Jonathan Xavier"}," (Geargia) vs. Villalobos Campa, ",{"who":"Juan Carlos Villalobos Campa","t":"Juan Carlos"}," (Geargia Karakuri)"]
     },
     {
       "t": "p",
-      "r": ["Table 2: Olmos Hernandez, Mauricio (Geargia) vs. Rosete Alcantara, Rodolfo David (Evols)"]
+      "r": ["Table 2: Olmos Hernandez, Mauricio (Geargia) vs. Rosete Alcantara, ",{"who":"Rodolfo David Rosete Alcantara","t":"Rodolfo David"}," (Evols)"]
     },
     {
       "t": "p",
-      "r": ["Table 3: Reyes Suarez, Alejandro Vivaldo (Dragon Ruler) vs. Rios Obregon, Arturo Aaron (Madolche)"]
+      "r": ["Table 3: Reyes Suarez, ",{"who":"Alejandro Vivaldo Reyes Suarez","t":"Alejandro Vivaldo"}," (Dragon Ruler) vs. Rios Obregon, Arturo Aaron (Madolche)"]
     },
     {
       "t": "p",
-      "r": ["Table 4: Munoz Guzman, Jorge Eduardo (Traptrix Hand) vs. Hernandez Ramos, Cristian Alejandro (Artifact/Traptrix/Hand)"]
+      "r": ["Table 4: Munoz Guzman, ",{"who":"Jorge Eduardo Munoz Guzman","t":"Jorge Eduardo"}," (Traptrix Hand) vs. Hernandez Ramos, ",{"who":"Cristian Alejandro Hernandez Ramos","t":"Cristian Alejandro"}," (Artifact/Traptrix/Hand)"]
     },
     {
       "t": "p",
@@ -1450,11 +1316,11 @@
     },
     {
       "t": "p",
-      "r": ["Table 8: Rodriguez Ambriz, Jordan Luis (Mythic Ruler) vs. Zepeda Gomez, Edgar (Bujin)"]
+      "r": ["Table 8: Rodriguez Ambriz, ",{"who":"Jordan Luis Rodriguez Ambriz","t":"Jordan Luis"}," (Mythic Ruler) vs. Zepeda Gomez, Edgar (Bujin)"]
     },
     {
       "t": "p",
-      "r": ["Table 9: Villanueva Priego, Erick (Mermail) vs. Barajas Gutierrez, Jose Manuel (Lighgsworn)"]
+      "r": ["Table 9: Villanueva Priego, Erick (Mermail) vs. Barajas Gutierrez, ",{"who":"Jose Manuel Barajas Gutierrez","t":"Jose Manuel"}," (Lighgsworn)"]
     },
     {
       "t": "p",
@@ -1472,67 +1338,67 @@
     },
     {
       "t": "p",
-      "r": ["Carrillo opened up Duel 1 with ",{"b":"Call of the Haunted"},", ",{"b":"Traptrix Trap Hole Nightmare"},", ",{"b":"Pot of Duality"},", ",{"b":"Wiretap"},", ",{"b":"Traptrix Dionaea"},", and ",{"b":"Torrential Tribute"},". He activated ",{"b":"Pot of Duality"},", revealing ",{"b":"Wiretap"},", ",{"b":"Dimensional Prison"},", and ",{"b":"Breakthrough Skill"}," from the top of his Deck. He added ",{"b":"Breakthrough Skill"}," to his hand and shuffled the other 2 cards back into his Deck. Next, he Set 3 cards to his back row and ended his turn."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," opened up Duel 1 with ",{"b":"Call of the Haunted"},", ",{"b":"Traptrix Trap Hole Nightmare"},", ",{"b":"Pot of Duality"},", ",{"b":"Wiretap"},", ",{"b":"Traptrix Dionaea"},", and ",{"b":"Torrential Tribute"},". He activated ",{"b":"Pot of Duality"},", revealing ",{"b":"Wiretap"},", ",{"b":"Dimensional Prison"},", and ",{"b":"Breakthrough Skill"}," from the top of his Deck. He added ",{"b":"Breakthrough Skill"}," to his hand and shuffled the other 2 cards back into his Deck. Next, he Set 3 cards to his back row and ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Villanueva discarded ",{"b":"Atlantean Dragoons"}," and ",{"b":"Mermail Abyssleed"}," from his hand to Special Summon ",{"b":"Mermail Abyssmegalo"},". He activated its effect, but Carrillo flipped ",{"b":"Traptrix Trap Hole Nightmare"}," to negate it and destroy the ",{"b":"Mermail Abyssmegalo"},". Villanueva used the effect of ",{"b":"Atlantean Dragoons"}," to add ",{"b":"Atlantean Marksman"}," from his Deck to his hand and then Normal Summoned it. He attacked directly with Marksman, and then Special Summoned ",{"b":"Atlantean Heavy Infantry"}," from his Deck in Defense Position with Marksman’s effect."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," discarded ",{"b":"Atlantean Dragoons"}," and ",{"b":"Mermail Abyssleed"}," from his hand to Special Summon ",{"b":"Mermail Abyssmegalo"},". He activated its effect, but ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," flipped ",{"b":"Traptrix Trap Hole Nightmare"}," to negate it and destroy the ",{"b":"Mermail Abyssmegalo"},". ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," used the effect of ",{"b":"Atlantean Dragoons"}," to add ",{"b":"Atlantean Marksman"}," from his Deck to his hand and then Normal Summoned it. He attacked directly with Marksman, and then Special Summoned ",{"b":"Atlantean Heavy Infantry"}," from his Deck in Defense Position with Marksman’s effect."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Dark Hole"}," next turn. He Summoned Dionaea and attacked Marksman to destroy it. He Set a card to his back row before passing."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Dark Hole"}," next turn. He Summoned Dionaea and attacked Marksman to destroy it. He Set a card to his back row before passing."]
     },
     {
       "t": "p",
-      "r": ["Villanueva Summoned ",{"b":"Mermail Abysspike"}," and activated its effect by discarding ",{"b":"Atlantean Marksman"},". He added ",{"b":"Genex Undine"}," from his Deck to his hand with Abysspike’s effect and then used the effect of Marksman to target ",{"b":"Breakthrough Skill"}," for destruction; but Carrillo Chained ",{"b":"Breakthrough Skill"}," to negate the effect of ",{"b":"Atlantean Heavy Infantry"},". Next, with exactly 5 WATER monsters in his Graveyard, Villanueva Special Summoned ",{"b":"Moulinglacia the Elemental Lord"},"! Carrillo was forced to send ",{"b":"Call of the Haunted"}," and ",{"b":"Dark Hole"}," from his hand to his Graveyard. Moulinglacia attacked and destroyed Dionaea, and then Abysspike attacked directly, dropping Carrillo down to 3900 Life Points."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," Summoned ",{"b":"Mermail Abysspike"}," and activated its effect by discarding ",{"b":"Atlantean Marksman"},". He added ",{"b":"Genex Undine"}," from his Deck to his hand with Abysspike’s effect and then used the effect of Marksman to target ",{"b":"Breakthrough Skill"}," for destruction; but ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Chained ",{"b":"Breakthrough Skill"}," to negate the effect of ",{"b":"Atlantean Heavy Infantry"},". Next, with exactly 5 WATER monsters in his Graveyard, ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," Special Summoned ",{"b":"Moulinglacia the Elemental Lord"},"! ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," was forced to send ",{"b":"Call of the Haunted"}," and ",{"b":"Dark Hole"}," from his hand to his Graveyard. Moulinglacia attacked and destroyed Dionaea, and then Abysspike attacked directly, dropping ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," down to 3900 Life Points."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Artifact Sanctum"}," next turn and Set it."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Artifact Sanctum"}," next turn and Set it."]
     },
     {
       "t": "p",
-      "r": ["Villanueva attacked with ",{"b":"Mermail Abysspike"}," and Carrillo flipped ",{"b":"Artifact Sanctum"}," to Special Summon ",{"b":"Artifact Moralltach"}," from his Deck in Defense Position. He activated its effect to destroy Moulinglacia, and Carrillo was forced to give up his next turn’s Battle Phase. Abysspike attacked Moralltach, and Villanueva activated ",{"b":"Book of Moon"}," to put Moralltach face-down and destroy it in battle. In Main Phase 2, Villanueva Summoned ",{"b":"Genex Undine"},". He sent ",{"b":"Tidal, Dragon Ruler of Waterfalls"}," from his Deck to his Graveyard and added ",{"b":"Genex Controller"}," from his Deck to his hand."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," attacked with ",{"b":"Mermail Abysspike"}," and ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," flipped ",{"b":"Artifact Sanctum"}," to Special Summon ",{"b":"Artifact Moralltach"}," from his Deck in Defense Position. He activated its effect to destroy Moulinglacia, and ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," was forced to give up his next turn’s Battle Phase. Abysspike attacked Moralltach, and ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," activated ",{"b":"Book of Moon"}," to put Moralltach face-down and destroy it in battle. In Main Phase 2, ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," Summoned ",{"b":"Genex Undine"},". He sent ",{"b":"Tidal, Dragon Ruler of Waterfalls"}," from his Deck to his Graveyard and added ",{"b":"Genex Controller"}," from his Deck to his hand."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Fire Hand"}," next turn and Summoned it to the field. He attacked Abysspike with it. Both monsters were destroyed, and Carrillo activated his Hand’s effect to destroy ",{"b":"Atlantean Heavy Infantry"}," and Special Summon ",{"b":"Ice Hand"}," from his Deck in Attack Position. ",{"b":"Ice Hand"}," attacked and destroyed ",{"b":"Genex Undine"}," next."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Fire Hand"}," next turn and Summoned it to the field. He attacked Abysspike with it. Both monsters were destroyed, and ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," activated his Hand’s effect to destroy ",{"b":"Atlantean Heavy Infantry"}," and Special Summon ",{"b":"Ice Hand"}," from his Deck in Attack Position. ",{"b":"Ice Hand"}," attacked and destroyed ",{"b":"Genex Undine"}," next."]
     },
     {
       "t": "p",
-      "r": ["Villanueva Summoned ",{"b":"Genex Controller"}," and then ended his turn."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," Summoned ",{"b":"Genex Controller"}," and then ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Traptrix Dionaea"}," and Summoned it. He activated its effect to try to Special Summon another Dionaea from his Graveyard, but Villanueva discarded ",{"b":"D.D. Crow"}," to banish the Dionaea in the Graveyard. Dionaea attacked and destroyed ",{"b":"Genex Controller"},", and then ",{"b":"Ice Hand"}," attacked Villanueva directly. Villanueva dropped down to 5800 Life Points. In Main Phase 2, Carrillo combined his 2 monsters to Xyz Summon ",{"b":"Number 80: Rhapsody in Berserk"}," in Defense Position. He detached both Xyz Material from it to banish Tidal and ",{"b":"Atlantean Dragoons"}," from Villanueva’s Graveyard."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Traptrix Dionaea"}," and Summoned it. He activated its effect to try to Special Summon another Dionaea from his Graveyard, but ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," discarded ",{"b":"D.D. Crow"}," to banish the Dionaea in the Graveyard. Dionaea attacked and destroyed ",{"b":"Genex Controller"},", and then ",{"b":"Ice Hand"}," attacked ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," directly. ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," dropped down to 5800 Life Points. In Main Phase 2, ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," combined his 2 monsters to Xyz Summon ",{"b":"Number 80: Rhapsody in Berserk"}," in Defense Position. He detached both Xyz Material from it to banish Tidal and ",{"b":"Atlantean Dragoons"}," from ",{"who":"Erick Villanueva Priego","t":"Villanueva"},"’s Graveyard."]
     },
     {
       "t": "p",
-      "r": ["Villanueva banished ",{"b":"Genex Undine"}," from his Graveyard to Special Summon ",{"b":"Aqua Spirit"}," and attacked Number 80 to destroy it."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," banished ",{"b":"Genex Undine"}," from his Graveyard to Special Summon ",{"b":"Aqua Spirit"}," and attacked Number 80 to destroy it."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Artifact Sanctum"}," and Set it. In his second Main Phase, Villanueva flipped ",{"b":"Abyss-sphere"},", but Carrillo flipped ",{"b":"Wiretap"}," to negate it and shuffle it back into Carrillo’s Deck."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Artifact Sanctum"}," and Set it. In his second Main Phase, ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," flipped ",{"b":"Abyss-sphere"},", but ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," flipped ",{"b":"Wiretap"}," to negate it and shuffle it back into ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"},"’s Deck."]
     },
     {
       "t": "p",
-      "r": ["Villanueva attacked with ",{"b":"Aqua Spirit"},", but Carrillo flipped ",{"b":"Artifact Sanctum"}," to Special Summon Moralltach from his Deck and destroy ",{"b":"Aqua Spirit"},". He Set a card to his back row before passing."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," attacked with ",{"b":"Aqua Spirit"},", but ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," flipped ",{"b":"Artifact Sanctum"}," to Special Summon Moralltach from his Deck and destroy ",{"b":"Aqua Spirit"},". He Set a card to his back row before passing."]
     },
     {
       "t": "p",
-      "r": ["Carrillo Summoned ",{"b":"Cardcar D"}," and Tributed it to activate its effect. Villanueva Chained ",{"b":"Abyss-sphere"}," to Special Summon ",{"b":"Mermail Abysslinde"}," from his Deck. In the End Phase, ",{"b":"Abyss-sphere"}," and ",{"b":"Mermail Abysslinde"}," went to the Graveyard and Villanueva Special Summoned ",{"b":"Mermail Abyssteus"}," from his Deck in Defense Position with Abysslinde’s effect."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Summoned ",{"b":"Cardcar D"}," and Tributed it to activate its effect. ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," Chained ",{"b":"Abyss-sphere"}," to Special Summon ",{"b":"Mermail Abysslinde"}," from his Deck. In the End Phase, ",{"b":"Abyss-sphere"}," and ",{"b":"Mermail Abysslinde"}," went to the Graveyard and ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," Special Summoned ",{"b":"Mermail Abyssteus"}," from his Deck in Defense Position with Abysslinde’s effect."]
     },
     {
       "t": "p",
-      "r": ["Villanueva Summoned ",{"b":"Genex Controller"}," and Tuned it with Abyssteus to Synchro Summon ",{"b":"Leo, the Keeper of the Sacred Tree"}," but Carrillo flipped ",{"b":"Torrential Tribute"}," to clear the field!"]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," Summoned ",{"b":"Genex Controller"}," and Tuned it with Abyssteus to Synchro Summon ",{"b":"Leo, the Keeper of the Sacred Tree"}," but ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," flipped ",{"b":"Torrential Tribute"}," to clear the field!"]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Traptrix Myrmeleo"}," next turn and Summoned it. He activated its effect to add ",{"b":"Bottomless Trap Hole"}," to his hand and then attacked directly with Myrmeleo. Next, he activated ",{"b":"Pot of Duality"}," to add ",{"b":"Soul Charge"}," to his hand. He Set ",{"b":"Book of Moon"}," and ",{"b":"Bottomless Trap Hole"}," before ending his turn."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Traptrix Myrmeleo"}," next turn and Summoned it. He activated its effect to add ",{"b":"Bottomless Trap Hole"}," to his hand and then attacked directly with Myrmeleo. Next, he activated ",{"b":"Pot of Duality"}," to add ",{"b":"Soul Charge"}," to his hand. He Set ",{"b":"Book of Moon"}," and ",{"b":"Bottomless Trap Hole"}," before ending his turn."]
     },
     {
       "t": "p",
-      "r": ["Villanueva conceded on his next turn, seeing no way back in the Duel."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," conceded on his next turn, seeing no way back in the Duel."]
     },
     {
       "t": "p",
@@ -1544,47 +1410,47 @@
     },
     {
       "t": "p",
-      "r": ["Villanueva discarded ",{"b":"Mermail Abyssturge"}," to Special Summon ",{"b":"Mermail Abyssteus"}," from his hand and then added ",{"b":"Mermail Abysspike"}," to his hand with ",{"b":"Mermail Abyssteus’s"}," effect. Next, he Summoned ",{"b":"Mermail Abysspike"}," and activated its effect to discard ",{"b":"Mermail Abyssmegalo"}," and add ",{"b":"Genex Undine"}," from his Deck to his hand. He Set a card to his back row before passing his turn."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," discarded ",{"b":"Mermail Abyssturge"}," to Special Summon ",{"b":"Mermail Abyssteus"}," from his hand and then added ",{"b":"Mermail Abysspike"}," to his hand with ",{"b":"Mermail Abyssteus’s"}," effect. Next, he Summoned ",{"b":"Mermail Abysspike"}," and activated its effect to discard ",{"b":"Mermail Abyssmegalo"}," and add ",{"b":"Genex Undine"}," from his Deck to his hand. He Set a card to his back row before passing his turn."]
     },
     {
       "t": "p",
-      "r": ["Carrillo opened up Duel 2 with ",{"b":"Traptrix Myrmeleo"},", ",{"b":"Artifact Sanctum"},", ",{"b":"Maxx “C”"},", ",{"b":"Fire Hand"},", ",{"b":"Torrential Tribute"},", and ",{"b":"Artifact Moralltach"},". He Summoned ",{"b":"Fire Hand"}," and then attacked ",{"b":"Mermail Abysspike"},", destroying both monsters in battle. ",{"b":"Fire Hand’s"}," effect activated to destroy ",{"b":"Mermail Abyssteus"}," and then he Special Summoned ",{"b":"Ice Hand"}," from his Deck in Attack Position and attacked directly with it. Carrillo Set 3 cards to his back row before passing his turn."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," opened up Duel 2 with ",{"b":"Traptrix Myrmeleo"},", ",{"b":"Artifact Sanctum"},", ",{"b":"Maxx “C”"},", ",{"b":"Fire Hand"},", ",{"b":"Torrential Tribute"},", and ",{"b":"Artifact Moralltach"},". He Summoned ",{"b":"Fire Hand"}," and then attacked ",{"b":"Mermail Abysspike"},", destroying both monsters in battle. ",{"b":"Fire Hand’s"}," effect activated to destroy ",{"b":"Mermail Abyssteus"}," and then he Special Summoned ",{"b":"Ice Hand"}," from his Deck in Attack Position and attacked directly with it. ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Set 3 cards to his back row before passing his turn."]
     },
     {
       "t": "p",
-      "r": ["Villanueva Summoned ",{"b":"Genex Undine"}," and activated its effect by kicking ",{"b":"Atlantean Dragoons"}," from his Deck to his Graveyard. Carrillo Chained ",{"b":"Artifact Sanctum"}," to Special Summon Moralltach from his Deck. Carrillo added ",{"b":"Genex Controller"}," from his Deck to his hand with Undine’s effect and then flipped ",{"b":"Breakthrough Skill"}," to negate the effect of Moralltach. Next, he added ",{"b":"Moulinglacia the Elemental Lord"}," from his Deck to his hand with the effect of ",{"b":"Atlantean Dragoons"},". Carrillo discarded ",{"b":"Maxx “C”"}," from his hand, and then Carrillo Special Summoned Moulinglacia. Carrillo drew a card and then lost both cards in his hands to Moulinglacia’s effect. Moulinglacia attacked and destroyed ",{"b":"Ice Hand"}," and then Villanueva ended his turn."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," Summoned ",{"b":"Genex Undine"}," and activated its effect by kicking ",{"b":"Atlantean Dragoons"}," from his Deck to his Graveyard. ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Chained ",{"b":"Artifact Sanctum"}," to Special Summon Moralltach from his Deck. ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," added ",{"b":"Genex Controller"}," from his Deck to his hand with Undine’s effect and then flipped ",{"b":"Breakthrough Skill"}," to negate the effect of Moralltach. Next, he added ",{"b":"Moulinglacia the Elemental Lord"}," from his Deck to his hand with the effect of ",{"b":"Atlantean Dragoons"},". ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," discarded ",{"b":"Maxx “C”"}," from his hand, and then ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Special Summoned Moulinglacia. ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew a card and then lost both cards in his hands to Moulinglacia’s effect. Moulinglacia attacked and destroyed ",{"b":"Ice Hand"}," and then ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Fire Hand"}," next turn! He Summoned it to the field and then attacked Moulinglacia. ",{"b":"Fire Hand"}," was destroyed in battle, and Carrillo activated its effect to destroy Moulinglacia and Special Summon ",{"b":"Ice Hand"}," from his Deck in Attack Position. ",{"b":"Ice Hand"}," attacked and destroyed ",{"b":"Genex Undine"}," and then Moralltach attacked directly."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Fire Hand"}," next turn! He Summoned it to the field and then attacked Moulinglacia. ",{"b":"Fire Hand"}," was destroyed in battle, and ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," activated its effect to destroy Moulinglacia and Special Summon ",{"b":"Ice Hand"}," from his Deck in Attack Position. ",{"b":"Ice Hand"}," attacked and destroyed ",{"b":"Genex Undine"}," and then Moralltach attacked directly."]
     },
     {
       "t": "p",
-      "r": ["Villanueva discarded ",{"b":"Atlantean Marksman"}," from his hand to Special Summon ",{"b":"Mermail Abyssteus"}," in Defense Position. He activated his Abyssteus’s effect to add ",{"b":"Mermail Abysslinde"}," from his Deck to his hand and then activated his Marksman’s effect to destroy Carrillo’s face-down Moralltach. Carrillo Special Summoned Moralltach to the field, and Villanueva banished ",{"b":"Breakthrough Skill"}," from his Graveyard to negate its effect. Next, Villanueva Summoned ",{"b":"Genex Controller"},". He activated ",{"b":"Mind Control"}," to take control of ",{"b":"Ice Hand"}," next, and then Tuned ",{"b":"Ice Hand"}," with ",{"b":"Genex Controller"}," to Synchro Summon ",{"b":"Black Rose Dragon"},"! He combined ",{"b":"Black Rose Dragon"}," with Abyssteus to Xyz Summon ",{"b":"Mecha Phantom Beast Dracossack"}," in Defense Position and then detached an Xyz Material from it to Special Summon 2 ",{"b":"Mecha Phantom Beast Tokens"},". He Tributed one of them to destroy a Moralltach and then ended his turn."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," discarded ",{"b":"Atlantean Marksman"}," from his hand to Special Summon ",{"b":"Mermail Abyssteus"}," in Defense Position. He activated his Abyssteus’s effect to add ",{"b":"Mermail Abysslinde"}," from his Deck to his hand and then activated his Marksman’s effect to destroy ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"},"’s face-down Moralltach. ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Special Summoned Moralltach to the field, and ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," banished ",{"b":"Breakthrough Skill"}," from his Graveyard to negate its effect. Next, ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," Summoned ",{"b":"Genex Controller"},". He activated ",{"b":"Mind Control"}," to take control of ",{"b":"Ice Hand"}," next, and then Tuned ",{"b":"Ice Hand"}," with ",{"b":"Genex Controller"}," to Synchro Summon ",{"b":"Black Rose Dragon"},"! He combined ",{"b":"Black Rose Dragon"}," with Abyssteus to Xyz Summon ",{"b":"Mecha Phantom Beast Dracossack"}," in Defense Position and then detached an Xyz Material from it to Special Summon 2 ",{"b":"Mecha Phantom Beast Tokens"},". He Tributed one of them to destroy a Moralltach and then ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Pot of Duality"}," and activated it to reveal ",{"b":"Fire Hand"},", ",{"b":"Pot of Duality"},", and ",{"b":"Debunk"}," from the top of his Deck. He added ",{"b":"Fire Hand"}," to his hand and Summoned it. Next, he attacked a ",{"b":"Mecha Phantom Beast Token"}," to destroy it and ended his turn."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Pot of Duality"}," and activated it to reveal ",{"b":"Fire Hand"},", ",{"b":"Pot of Duality"},", and ",{"b":"Debunk"}," from the top of his Deck. He added ",{"b":"Fire Hand"}," to his hand and Summoned it. Next, he attacked a ",{"b":"Mecha Phantom Beast Token"}," to destroy it and ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Villanueva detached an Xyz Material from Dracossack to Special Summon 2 ",{"b":"Mecha Phantom Beast Tokens"}," to the field and then Summoned ",{"b":"Mermail Abysslinde"},". He switched Dracossack into Attack Position and then attacked ",{"b":"Fire Hand"}," with ",{"b":"Mermail Abysslinde"},". ",{"b":"Mermail Abysslinde"}," was destroyed by battle, and Villanueva Special Summoned ",{"b":"Mermail Abysspike"}," from his Deck in Attack Position. He activated its effect by discarding ",{"b":"Atlantean Heavy Infantry"}," and added ",{"b":"Mermail Abysslinde"}," from his Deck to his hand. Next, he used the effect of ",{"b":"Atlantean Heavy Infantry"}," to destroy Moralltach. Abysspike attacked ",{"b":"Fire Hand"}," to destroy both monsters, and then ",{"b":"Fire Hand’s"}," effect activated to destroy a ",{"b":"Mecha Phantom Beast Token"}," and Special Summon ",{"b":"Ice Hand"}," in Defense Position from Carrillo’s Deck. Next, Dracossack attacked and destroyed ",{"b":"Ice Hand"},"."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," detached an Xyz Material from Dracossack to Special Summon 2 ",{"b":"Mecha Phantom Beast Tokens"}," to the field and then Summoned ",{"b":"Mermail Abysslinde"},". He switched Dracossack into Attack Position and then attacked ",{"b":"Fire Hand"}," with ",{"b":"Mermail Abysslinde"},". ",{"b":"Mermail Abysslinde"}," was destroyed by battle, and ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," Special Summoned ",{"b":"Mermail Abysspike"}," from his Deck in Attack Position. He activated its effect by discarding ",{"b":"Atlantean Heavy Infantry"}," and added ",{"b":"Mermail Abysslinde"}," from his Deck to his hand. Next, he used the effect of ",{"b":"Atlantean Heavy Infantry"}," to destroy Moralltach. Abysspike attacked ",{"b":"Fire Hand"}," to destroy both monsters, and then ",{"b":"Fire Hand’s"}," effect activated to destroy a ",{"b":"Mecha Phantom Beast Token"}," and Special Summon ",{"b":"Ice Hand"}," in Defense Position from ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"},"’s Deck. Next, Dracossack attacked and destroyed ",{"b":"Ice Hand"},"."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Dimensional Prison"}," and Set it."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Dimensional Prison"}," and Set it."]
     },
     {
       "t": "p",
-      "r": ["Villanueva Summoned ",{"b":"Mermail Abysslinde"}," and attacked directly with ",{"b":"Mermail Abysslinde"}," and Dracossack."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," Summoned ",{"b":"Mermail Abysslinde"}," and attacked directly with ",{"b":"Mermail Abysslinde"}," and Dracossack."]
     },
     {
       "t": "p",
-      "r": ["Carrillo drew ",{"b":"Solemn Warning"}," and Set it."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," drew ",{"b":"Solemn Warning"}," and Set it."]
     },
     {
       "t": "p",
-      "r": ["Villanueva attacked directly with ",{"b":"Mermail Abysslinde"}," and Dracossack to end the Duel!"]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," attacked directly with ",{"b":"Mermail Abysslinde"}," and Dracossack to end the Duel!"]
     },
     {
       "t": "p",
@@ -1596,27 +1462,27 @@
     },
     {
       "t": "p",
-      "r": ["Carrillo started off Duel 3 by Setting 3 cards to his back row."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," started off Duel 3 by Setting 3 cards to his back row."]
     },
     {
       "t": "p",
-      "r": ["Villanueva Set a monster and Set 2 cards to his back row."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," Set a monster and Set 2 cards to his back row."]
     },
     {
       "t": "p",
-      "r": ["Carrillo Summoned ",{"b":"Traptrix Myrmeleo"}," and activated its effect to add ",{"b":"Bottomless Trap Hole"}," from his Deck to his hand. He Set it and then ended his turn."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Summoned ",{"b":"Traptrix Myrmeleo"}," and activated its effect to add ",{"b":"Bottomless Trap Hole"}," from his Deck to his hand. He Set it and then ended his turn."]
     },
     {
       "t": "p",
-      "r": ["Villanueva Summoned ",{"b":"Genex Controller"}," and then activated ",{"b":"Mind Control"}," to take control of Myrmeleo. Carrillo Chained ",{"b":"Artifact Sanctum"}," to Special Summon Moralltach from his Deck. Villanueva took control of Myrmeleo and Moralltach destroyed ",{"b":"Genex Controller"},". Next, Carrillo activated ",{"b":"Mystical Space Typhoon"}," to destroy his own face-down Moralltach and Special Summon it, and his Moralltach was banished by ",{"b":"Bottomless Trap Hole"},". Carrillo ended his turn, and Myrmeleo returned to Carrillo’s side of the field."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," Summoned ",{"b":"Genex Controller"}," and then activated ",{"b":"Mind Control"}," to take control of Myrmeleo. ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Chained ",{"b":"Artifact Sanctum"}," to Special Summon Moralltach from his Deck. ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," took control of Myrmeleo and Moralltach destroyed ",{"b":"Genex Controller"},". Next, ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," activated ",{"b":"Mystical Space Typhoon"}," to destroy his own face-down Moralltach and Special Summon it, and his Moralltach was banished by ",{"b":"Bottomless Trap Hole"},". ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," ended his turn, and Myrmeleo returned to ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"},"’s side of the field."]
     },
     {
       "t": "p",
-      "r": ["Carrillo Summoned Ice Hand and combined it with Myrmeleo to Xyz Summon ",{"b":"Abyss Dweller"},". He detached an Xyz Material from it to activate its effect and then attacked a face-down ",{"b":"Genex Undine"}," with ",{"b":"Abyss Dweller"}," to destroy it. Moralltach attacked directly next."]
+      "r": [{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Summoned Ice Hand and combined it with Myrmeleo to Xyz Summon ",{"b":"Abyss Dweller"},". He detached an Xyz Material from it to activate its effect and then attacked a face-down ",{"b":"Genex Undine"}," with ",{"b":"Abyss Dweller"}," to destroy it. Moralltach attacked directly next."]
     },
     {
       "t": "p",
-      "r": ["Villanueva Special Summoned Abyssteus next turn by discarding ",{"b":"Mermail Abyssleed"}," and activated its effect to add ",{"b":"Mermail Abyssturge"}," from his Deck to his hand. He Summoned it to the field, but it was all over on the next turn when Carrillo Summoned ",{"b":"Traptrix Dionaea"}," and Villanueva conceded."]
+      "r": [{"who":"Erick Villanueva Priego","t":"Villanueva"}," Special Summoned Abyssteus next turn by discarding ",{"b":"Mermail Abyssleed"}," and activated its effect to add ",{"b":"Mermail Abyssturge"}," from his Deck to his hand. He Summoned it to the field, but it was all over on the next turn when ",{"who":"Jose Carlo Carrillo Toscano","t":"Carrillo"}," Summoned ",{"b":"Traptrix Dionaea"}," and ",{"who":"Erick Villanueva Priego","t":"Villanueva"}," conceded."]
     },
     {
       "t": "p",

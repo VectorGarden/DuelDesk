@@ -1,6 +1,6 @@
 {
   "event": "YCS Kansas City",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -1889,6 +1889,22 @@
             {"a":{"name":"Barrett Keys","deck":null,"record":null},"b":{"name":"Zakary Kramer","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2011/championships/round-10-feature-match-barrett-keys-vs-zakary-kramer/"}
           ],
           "source": "https://yugiohblog.konami.com/2011/championships/final-standings-after-round-10/"
+        },
+        {
+          "id": "Top32",
+          "label": "Top 32",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 158,
+          "tables": null,
+          "posted": null,
+          "standingsAfter": 10,
+          "pairings": [],
+          "standings": [],
+          "features": [
+            {"a":{"name":"Civil War in Dark World – Maurice Brantley","deck":null,"record":null},"b":{"name":"Vincent Mireles","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2011/championships/top-32-feature-match-civil-war-in-dark-world-maurice-brantley-vs-vincent-mireles/"}
+          ],
+          "source": null
         },
         {
           "id": "Top16",

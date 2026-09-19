@@ -58,6 +58,9 @@
     {"e":"2023-ycs-cancun-mexico"},
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Jose Antonio Abouzaid Orkendain": [
+    {"e":"2014-wcq-ca","f":"Dragon Duel"}
+  ],
   "Michael Taylor Cazeau": [
     {"e":"2014-ycs-dallas"},
     {"e":"2015-ycs-chicago"},
@@ -598,11 +601,11 @@
   "Jose Juan Arias Coronado": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Sterling F.": {
-    "as": "Sterling Lathe Burke Flesner"
-  },
   "Aaron J.": {
     "as": "Aaron Xavier Jarrett"
+  },
+  "Sterling F.": {
+    "as": "Sterling Lathe Burke Flesner"
   },
   "Eduardo G.": {
     "as": "Eduardo Enrique May Gomez"

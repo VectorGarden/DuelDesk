@@ -1,6 +1,6 @@
 {
   "event": "YCS Atlanta",
-  "built": 62,
+  "built": 63,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -11578,7 +11578,9 @@
             {"pos":105,"name":"Eric Dean Roland Salter","record":{"wins":6,"losses":3,"draws":1,"confidence":"derived"},"points":19},
             {"pos":106,"name":"Alex Anthony Bergeron","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 10 Feature Match – Marcus Fontice","deck":null,"record":null},"b":{"name":"Matthew Hagan","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-round-10-feature-match-marcus-fontice-vs-matthew-hagan/"}
+          ],
           "source": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-round-10-pairings/"
         },
         {
@@ -12932,7 +12934,9 @@
             {"pos":1284,"name":"Donald Duane Gonzales","record":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"points":0},
             {"pos":1285,"name":"Francisco Manuel Perez","record":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Round 11 Feature Match – Johnny Nagel","deck":null,"record":null},"b":{"name":"Alen Dekhanov","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-round-11-feature-match-johnny-nagel-vs-alen-dekhanov/"}
+          ],
           "source": "https://yugiohblog.konami.com/2017/ycs/ycs-atlanta-round-11-pairings/"
         },
         {
