@@ -1,6 +1,6 @@
 {
   "event": "YCS Portland",
-  "built": 64,
+  "built": 65,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -14,6 +14,22 @@
       "duelists": 808,
       "champion": "Brian Chen",
       "rounds": [
+        {
+          "id": "1",
+          "label": "R1",
+          "phase": "Swiss",
+          "state": "done",
+          "order": 1,
+          "tables": null,
+          "posted": null,
+          "standingsAfter": null,
+          "pairings": [],
+          "standings": [],
+          "features": [
+            {"a":{"name":"Thomas Robert Jefferson Brower","deck":null,"record":null},"b":{"name":"Andrew Brian Ostler","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/ycs-portland-round-1-feature-match-thomas-robert-jefferson-brower-vs-andrew-brian-ostler/"}
+          ],
+          "source": null
+        },
         {
           "id": "2",
           "label": "R2",

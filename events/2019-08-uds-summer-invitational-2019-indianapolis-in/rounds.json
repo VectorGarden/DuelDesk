@@ -1,6 +1,6 @@
 {
   "event": "UDS Invitational Indianapolis",
-  "built": 64,
+  "built": 65,
   "location": "Indianapolis, IN",
   "sample": false,
   "coverageBy": "Konami",
@@ -27,7 +27,6 @@
           "pairings": [],
           "standings": [],
           "features": [
-            {"a":{"name":"Thomas Robert Jefferson Brower","deck":null,"record":null},"b":{"name":"Andrew Brian Ostler","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/ycs-portland-round-1-feature-match-thomas-robert-jefferson-brower-vs-andrew-brian-ostler/"},
             {"a":{"name":"Round 1 Feature Match – Tyler Cappis","deck":null,"record":null},"b":{"name":"James Armband","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/uds/2019-08-uds-summer-invitational-2019-indianapolis-in/uds-invitational-indianapolis-in-round-1-feature-match-tyler-cappis-vs-james-armband/"}
           ],
           "source": null
