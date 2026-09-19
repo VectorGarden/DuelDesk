@@ -587,6 +587,9 @@
   "Robert Thomas Steacy": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Gabriel Humberto Palencia Cortez": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Mario Vazquez": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
@@ -608,16 +611,16 @@
   "Seigo Enokizono": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Blake T.": {
-    "as": "Blake Austin Taylor"
-  },
   "Dablessin W.": {
     "as": "Dablessin Jaquise Wilson"
   },
-  "Artan L.": {
-    "as": "Artan Lajqi"
+  "Blake T.": {
+    "as": "Blake Austin Taylor"
   },
   "William E.": {
     "as": "William Joseph Melgoza Espinosa"
+  },
+  "Artan L.": {
+    "as": "Artan Lajqi"
   }
 }

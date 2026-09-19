@@ -601,16 +601,19 @@
   "Jose Antonio Becerra Paniagua": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Ariel Franco Solimano Vazquez": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Wilson Kenneth Ortega Villarroel": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Mauricio Edward Castañeda Celis": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jaylen S.": {
-    "as": "Jaylen Maurice Santos"
-  },
   "Manuel S.": {
     "as": "Manuel Alejandro Sagastizado"
+  },
+  "Jaylen S.": {
+    "as": "Jaylen Maurice Santos"
   }
 }

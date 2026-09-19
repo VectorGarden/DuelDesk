@@ -614,7 +614,8 @@
     {"e":"2025-ycs-lima-peru"}
   ],
   "Marcelo La Torre Aponte": [
-    {"e":"2025-ycs-lima-peru"}
+    {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Guillermo Papacristofilou Chirino": [
     {"e":"2025-ycs-mexico-city-mexico"}
@@ -647,10 +648,10 @@
   "Mario Humberto Montoya Castillo": [
     {"e":"2026-central-america-wcq"}
   ],
-  "Niravkumar T.": {
-    "as": "Niravkumar Dharmesn Tandel"
-  },
   "Alejandro E.": {
     "as": "Alejandro Valdez Estrada"
+  },
+  "Niravkumar T.": {
+    "as": "Niravkumar Dharmesn Tandel"
   }
 }

@@ -522,9 +522,6 @@
   "Christian Villegas": [
     {"e":"2026-central-america-wcq"}
   ],
-  "Alan Sergio Marín Alarcón": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
-  ],
   "Alexander Henry Hart Thomas": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"}
   ],
@@ -537,16 +534,16 @@
   "Facundo Chayle": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Alfredo H.": {
-    "as": "Alfredo Herrera"
-  },
   "Dylan M.": {
     "as": "Dylan Matthew Mauceri"
   },
-  "Eric C.": {
-    "as": "Eric Karl Cardwell"
+  "Alfredo H.": {
+    "as": "Alfredo Herrera"
   },
   "Anthony Y.": {
     "as": "Anthony Yun"
+  },
+  "Eric C.": {
+    "as": "Eric Karl Cardwell"
   }
 }

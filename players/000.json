@@ -444,6 +444,7 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"remote-duel-ycs-january-2026","cut":"Top 8"}
@@ -467,6 +468,7 @@
   ],
   "Alexis Leonel Geronimo": [
     {"e":"2023-ycs-santa-cruz-de-la-sierra"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Michael Jason Aboliso": [
@@ -597,14 +599,14 @@
   "Raul E.": {
     "as": "Raul Barbosa Eluan"
   },
-  "Kevin K.": {
-    "as": "Kevin H. Kim"
+  "Emmanuel A.": {
+    "as": "Emmanuel Lulseged Abate"
   },
   "Colton A.": {
     "as": "Colton Blane Anderson"
   },
-  "Emmanuel A.": {
-    "as": "Emmanuel Lulseged Abate"
+  "Kevin K.": {
+    "as": "Kevin H. Kim"
   },
   "Curtis T.": {
     "as": "Curtis Dean Trammell"

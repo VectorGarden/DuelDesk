@@ -331,7 +331,8 @@
   ],
   "Jordan Antonio Guerrero Moreno": [
     {"e":"2022-latin-america-remote-duel-ycs"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Caio Martins Sanches": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -508,10 +509,10 @@
   "Julie T.": {
     "as": "Julie Jin Tomanio"
   },
-  "Travis R.": {
-    "as": "Travis Dean Rippey"
-  },
   "Kennedy L.": {
     "as": "Kennedy Le"
+  },
+  "Travis R.": {
+    "as": "Travis Dean Rippey"
   }
 }

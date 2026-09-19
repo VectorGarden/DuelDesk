@@ -169,7 +169,8 @@
   "Jonnathan Romero Portillo": [
     {"e":"201704-ycs-bogota-colombia"},
     {"e":"2020-uds-invitational-bogota"},
-    {"e":"2023-250th-ycs-in-bogota-colombia"}
+    {"e":"2023-250th-ycs-in-bogota-colombia"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Brandon Tyler Connelly": [
     {"e":"201711-san-diego-ca"}
@@ -468,15 +469,14 @@
   "Iker Guarneros Camacho": [
     {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel"}
   ],
-  "Santiago Rodrigues Gonçalves": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
-    {"e":"2026-south-america-genesys-championship","f":"Genesys"}
-  ],
   "Santiago Rodrigues Gonalves": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Colin Liu": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Santiago Rodrigues Gonçalves": [
+    {"e":"2026-south-america-genesys-championship","f":"Genesys"}
   ],
   "Luiz Henrique Falcão": [
     {"e":"2026-south-america-wcq"}

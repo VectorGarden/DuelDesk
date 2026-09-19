@@ -411,6 +411,7 @@
     {"e":"2018-uds-invitational-sacramento-ca"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"wcq-2016-mexico"}
   ],
   "Tiburcio Cazares Hernandez": [
@@ -736,10 +737,10 @@
   "Jean Pierre Salcedo Ramirez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Marshall N.": {
-    "as": "Marshall Blade Navarro"
-  },
   "Ernest O.": {
     "as": "Ernest Richard Oliphant"
+  },
+  "Marshall N.": {
+    "as": "Marshall Blade Navarro"
   }
 }

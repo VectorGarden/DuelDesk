@@ -620,7 +620,8 @@
     {"e":"ycs-lima-peru-2023"}
   ],
   "Fernando Hanson Virto Varon": [
-    {"e":"2025-ycs-merida-mexico"}
+    {"e":"2025-ycs-merida-mexico"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Adenilson Reis Dos Santos": [
     {"e":"2025-ycs-sao-paulo-brazil"},
@@ -657,22 +658,22 @@
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Brandon F.": {
+    "as": "Brandon Bryan Ferrell"
+  },
   "Max C.": {
     "as": "Max Cardenas"
-  },
-  "Kyle N.": {
-    "as": "Kyle Aidan Nance"
   },
   "Wyatt B.": {
     "as": "Wyatt Leland Brannock"
   },
-  "Yucheng L.": {
-    "as": "Yucheng Li"
-  },
-  "Brandon F.": {
-    "as": "Brandon Bryan Ferrell"
-  },
   "Vivek S.": {
     "as": "Vivek Naresh Sreenivasan"
+  },
+  "Kyle N.": {
+    "as": "Kyle Aidan Nance"
+  },
+  "Yucheng L.": {
+    "as": "Yucheng Li"
   }
 }

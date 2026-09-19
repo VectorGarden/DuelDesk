@@ -298,6 +298,7 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-january-2024","cut":"Top 4"},
@@ -547,9 +548,6 @@
   "Ivan Ramos Bautista": [
     {"e":"2026-central-america-wcq"}
   ],
-  "Gilberto Medina Hernández": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
-  ],
   "Yago Gunchorowski Gunchorowski": [
     {"e":"2026-south-america-wcq"}
   ],
@@ -562,11 +560,11 @@
   "DongWon Ha": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Austin A.": {
-    "as": "Austin Lawrence Anthony"
-  },
   "Tanner T.": {
     "as": "Tanner Riley Louie Thompson"
+  },
+  "Austin A.": {
+    "as": "Austin Lawrence Anthony"
   },
   "Daniel J.": {
     "as": "Daniel Serrano Jr."

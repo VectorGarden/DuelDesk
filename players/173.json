@@ -614,13 +614,14 @@
   "Francis Cote Sheehan": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
-  "Austin Zane Quagleini": [
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
-  ],
   "Ian Andre Barrios Boror": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
+  ],
+  "Austin Zane Quagleini": [
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
   ],
   "Daniel Alejandro Palacio": [
     {"e":"remote-duel-ycs-january-2024"}

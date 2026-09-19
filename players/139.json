@@ -547,6 +547,7 @@
   ],
   "Luis Arturo Pena Garcia": [
     {"e":"2025-south-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -583,10 +584,10 @@
   "Nikhil Malekal": {
     "as": "Nikhil K. Malekal"
   },
-  "Nelson F.": {
-    "as": "Nelson Lolong Federipe"
-  },
   "Hyro B.": {
     "as": "Hyro de Guzman Banayad"
+  },
+  "Nelson F.": {
+    "as": "Nelson Lolong Federipe"
   }
 }

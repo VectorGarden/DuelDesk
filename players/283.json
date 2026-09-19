@@ -56,6 +56,7 @@
     {"e":"2025-team-ycs-san-salvador-el-salvador","cut":"Top 16"},
     {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 8"},
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 4"},
     {"e":"2026-ycs-cartagena-colombia"},
@@ -525,8 +526,8 @@
   "Walter Andreus Laines Velarde": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Mertjan O.": {
-    "as": "Mertjan Ozbek"
+  "Dylan P.": {
+    "as": "Dylan James Perelman"
   },
   "Keon A.": {
     "as": "Keon Hee An"
@@ -534,7 +535,7 @@
   "Anas F.": {
     "as": "Anas Faraj"
   },
-  "Dylan P.": {
-    "as": "Dylan James Perelman"
+  "Mertjan O.": {
+    "as": "Mertjan Ozbek"
   }
 }

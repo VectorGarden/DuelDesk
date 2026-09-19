@@ -73,7 +73,8 @@
     {"e":"2025-central-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-central-america-wcq"}
+    {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "James Manuel Manley": [
     {"e":"2014-ycs-philadelphia-pa"},
@@ -533,6 +534,10 @@
   "Ricardo Arturo Marquez Monjaraz": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Brayan Alejandro Gordon Castro": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"remote-duel-ycs-february-2025"}
+  ],
   "William Vela": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
@@ -542,20 +547,17 @@
   "Sebastian Mora Gamboa": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
-  "Brayan Alejandro Gordon Castro": [
-    {"e":"remote-duel-ycs-february-2025"}
-  ],
   "Dawn Lim": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
   "Leonardo B.": {
     "as": "Leonardo Luan Barbosa Bitterncourt"
   },
-  "Bradul O.": {
-    "as": "Bradul Antonyo Ortiz"
-  },
   "Gauge B.": {
     "as": "Gauge Brand Baxter"
+  },
+  "Bradul O.": {
+    "as": "Bradul Antonyo Ortiz"
   },
   "Alexander A.": {
     "as": "Alexander Joshua Aviles"

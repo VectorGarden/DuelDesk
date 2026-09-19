@@ -525,6 +525,7 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
@@ -644,11 +645,11 @@
   "Kevin Rolando Vicente Escobar": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
-  "Craig S.": {
-    "as": "Craig Johnston Smith"
-  },
   "Vishon B.": {
     "as": "Vishon Sam Bhatia"
+  },
+  "Craig S.": {
+    "as": "Craig Johnston Smith"
   },
   "Steve H.": {
     "as": "Steve Enrique Hernandez"

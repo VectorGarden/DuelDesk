@@ -25,6 +25,7 @@
   ],
   "Pablo Cristhian Torres Machaca": [
     {"e":"2012-yu-gi-oh-championship-series-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Jorge Luis Dino Rabbit Garcia Hesny": [
@@ -268,6 +269,7 @@
     {"e":"2016-sa-wcq"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2025-south-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
   "Victor Oliveira da Silva": [
@@ -501,6 +503,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2025-south-america-wcq","cut":"Top 32"},
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Johnny Ferney Cortez Lopez": [
@@ -699,6 +702,9 @@
   "Jose Alejandro Alvarez Hernandez": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Kelvin Antonio Santana Soriano": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Jaymeson Harley Shaw": [
     {"e":"2026-north-america-wcq"}
   ],
@@ -728,16 +734,16 @@
   "Demario J.": {
     "as": "Demario Montae Jester"
   },
-  "Leo F.": {
-    "as": "Leo Feria"
-  },
   "Aidan C.": {
     "as": "Aidan Alexander Clarke"
   },
-  "Rico E.": {
-    "as": "Rico Carlos Eichelberger"
+  "Leo F.": {
+    "as": "Leo Feria"
   },
   "Brady S.": {
     "as": "Brady James Stockdale"
+  },
+  "Rico E.": {
+    "as": "Rico Carlos Eichelberger"
   }
 }

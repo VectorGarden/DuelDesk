@@ -568,10 +568,11 @@
   "Alice Richard Daniel Reid": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
-  "Sebastian Catalan Munoz": [
+  "Bill Boris Zerpa Matheus": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Bill Boris Zerpa Matheus": [
+  "Sebastian Catalan Munoz": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Jakob H.": {
@@ -580,10 +581,10 @@
   "Edmond W.": {
     "as": "Edmond Jinfeng Wu"
   },
-  "Philip W.": {
-    "as": "Philip Weidinger"
-  },
   "Hao W.": {
     "as": "Hao Yi Wang"
+  },
+  "Philip W.": {
+    "as": "Philip Weidinger"
   }
 }

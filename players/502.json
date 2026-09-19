@@ -437,7 +437,8 @@
   ],
   "Jorge Hernan Vivanco Cabeza": [
     {"e":"2024-team-ycs-santiago-chile"},
-    {"e":"2025-ycs-buenos-aires-argentina"}
+    {"e":"2025-ycs-buenos-aires-argentina"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Armando Juan Miller": [
     {"e":"2024-ycs-raleigh"}
@@ -520,13 +521,13 @@
   "Garret S.": {
     "as": "Garret Alexander Soto Schier"
   },
+  "Stefan D.": {
+    "as": "Stefan Tanner Durrant"
+  },
   "Ignacio L.": {
     "as": "Ignacio Ramon Lopez"
   },
   "Eric A.": {
     "as": "Eric Alexander Avila"
-  },
-  "Stefan D.": {
-    "as": "Stefan Tanner Durrant"
   }
 }

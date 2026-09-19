@@ -442,6 +442,7 @@
   "Erick Emmanuel Aguirre Palacios": [
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Lucas Castro Leite": [
@@ -484,13 +485,13 @@
   "Kenneth Leugim Sanchez Vega": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Liborio B.": {
+    "as": "Liborio Bobby Barone"
+  },
   "Trent M.": {
     "as": "Trent Jamison Miller"
   },
   "Tyler V.": {
     "as": "Tyler James Vezina"
-  },
-  "Liborio B.": {
-    "as": "Liborio Bobby Barone"
   }
 }

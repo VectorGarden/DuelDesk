@@ -476,12 +476,13 @@
   "Michael Angelo Gomez": [
     {"e":"2026-05-ycs-columbus","f":"Genesys"}
   ],
-  "Kevin Thanh Vo": [
-    {"e":"2026-north-america-wcq"}
-  ],
   "Hernan Paul Choque Choque": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"remote-duel-ycs-january-2026"}
+  ],
+  "Kevin Thanh Vo": [
+    {"e":"2026-north-america-wcq"}
   ],
   "Luis Miguel Benavides Benavides": [
     {"e":"2026-ycs-cartagena-colombia"}
@@ -495,16 +496,16 @@
   "Diego Calderon Benavidez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Zacquery R.": {
-    "as": "Zacquery Oliver Reveche"
-  },
   "Andrew N.": {
     "as": "Andrew Trung Tin Nguyen"
   },
-  "David K.": {
-    "as": "David Matthew Karaffa"
+  "Zacquery R.": {
+    "as": "Zacquery Oliver Reveche"
   },
   "Amir F.": {
     "as": "Amir Donte Foy"
+  },
+  "David K.": {
+    "as": "David Matthew Karaffa"
   }
 }

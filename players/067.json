@@ -409,6 +409,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-south-america-wcq"},
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -467,6 +468,7 @@
     {"e":"2024-south-america-wcq"},
     {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 16"},
     {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Gabriel Martin Jara Estrella": [
@@ -580,16 +582,16 @@
   "Brian Dionicio Quinones Vargas": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Guillermo S.": {
-    "as": "Guillermo Eder Sotelo"
-  },
   "Cody E.": {
     "as": "Cody Thomas Evans"
+  },
+  "Koby N.": {
+    "as": "Koby Quang Huy Ngo"
   },
   "Anmol S.": {
     "as": "Anmol Ram Sharma"
   },
-  "Koby N.": {
-    "as": "Koby Quang Huy Ngo"
+  "Guillermo S.": {
+    "as": "Guillermo Eder Sotelo"
   }
 }

@@ -76,6 +76,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"wcq-2016-mexico"}
   ],
@@ -616,6 +617,9 @@
   "Edgar Gustavo Lara Duarte": [
     {"e":"2026-02-300th-na"}
   ],
+  "Johan Deivid Guerrero Quintero": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Henry Gremillion": [
     {"e":"na-ygoc-2022"}
   ],
@@ -625,10 +629,10 @@
   "Jaime Alonso Tilleria Alvarez": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "James Q.": {
-    "as": "James Qian"
-  },
   "Leo H.": {
     "as": "Leo Kuan Ching Hwang"
+  },
+  "James Q.": {
+    "as": "James Qian"
   }
 }

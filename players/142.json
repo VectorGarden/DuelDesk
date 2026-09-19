@@ -604,6 +604,9 @@
   "Jose Revueltas": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Mao Palazzo": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Chun Hung Li": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"}
@@ -614,14 +617,14 @@
   "Guilherme M.": {
     "as": "Guilherme Vital Machado"
   },
-  "Mitchell B.": {
-    "as": "Mitchell Than Bee Bartholomew"
-  },
   "Marvin S.": {
     "as": "Marvin Sum"
   },
   "Donovan N.": {
     "as": "Donovan Ulysses Can Nguyen"
+  },
+  "Mitchell B.": {
+    "as": "Mitchell Than Bee Bartholomew"
   },
   "Oscar A.": {
     "as": "Oscar Roberto Aguilar"

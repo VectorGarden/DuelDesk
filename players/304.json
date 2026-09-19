@@ -485,22 +485,23 @@
   "Jared David Latchman": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Jesus Daniel Bracho Martinez": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"remote-duel-ycs-january-2026"}
+  ],
   "Alexander K. Merza": [
     {"e":"na-ygoc-2022"}
   ],
-  "Jesus Daniel Bracho Martinez": [
-    {"e":"remote-duel-ycs-january-2026"}
-  ],
-  "Finn P.": {
-    "as": "Finn Alan Pedersen"
-  },
   "Hurnake D.": {
     "as": "Hurnake Singh Dhillon"
   },
-  "Giovanny G.": {
-    "as": "Giovanny Alexander Gonzalez"
+  "Finn P.": {
+    "as": "Finn Alan Pedersen"
   },
   "Eric H.": {
     "as": "Eric Zacarias Freeman Hansen"
+  },
+  "Giovanny G.": {
+    "as": "Giovanny Alexander Gonzalez"
   }
 }

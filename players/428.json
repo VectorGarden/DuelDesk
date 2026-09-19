@@ -575,7 +575,8 @@
     {"e":"2024-ycs-guadalajara-mexico"}
   ],
   "Rey Isaac Vargas Sabag": [
-    {"e":"2024-ycs-guadalajara-mexico"}
+    {"e":"2024-ycs-guadalajara-mexico"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Boanerges Daniel Pereira": [
     {"e":"2024-ycs-guayaquil-ecuador"}
@@ -656,11 +657,11 @@
   "Garbiel Alejandro Nava Mateos": [
     {"e":"2026-central-america-wcq"}
   ],
-  "Sammy J.": {
-    "as": "Sammy James Johnson Jr."
-  },
   "David Q.": {
     "as": "David Manuel Quintero"
+  },
+  "Sammy J.": {
+    "as": "Sammy James Johnson Jr."
   },
   "Ira L.": {
     "as": "Ira Eliot Lifland"

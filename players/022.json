@@ -478,7 +478,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Pablo Rodrigo Mamani": [
-    {"e":"2023-ycs-santa-cruz-de-la-sierra"}
+    {"e":"2023-ycs-santa-cruz-de-la-sierra"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Roberto Isidro Ramirez Granados": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -596,16 +597,17 @@
   "Eder Yovanny Alvarez Sarellano": [
     {"e":"2026-central-america-genesys-championship","f":"Genesys"}
   ],
+  "Roy Gabriel Zapata Espinoza": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"remote-duel-ycs-february-2025"},
+    {"e":"remote-duel-ycs-january-2024"}
+  ],
   "Taylor Patrick Rhyan": [
     {"e":"2026-north-america-wcq"}
   ],
   "Eduardo Fontenele Caldas": [
     {"e":"2026-south-america-wcq"}
-  ],
-  "Roy Gabriel Zapata Espinoza": [
-    {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"remote-duel-ycs-february-2025"},
-    {"e":"remote-duel-ycs-january-2024"}
   ],
   "Marcos Ortiz Avila": [
     {"e":"na-ygoc-2022"}
@@ -613,10 +615,10 @@
   "ADreAn B.": {
     "as": "ADreAn James Brings Him Back"
   },
-  "Daryl M.": {
-    "as": "Daryl Kenichi Mihara"
-  },
   "Deilys F.": {
     "as": "Deilys Adrian Fornaris"
+  },
+  "Daryl M.": {
+    "as": "Daryl Kenichi Mihara"
   }
 }

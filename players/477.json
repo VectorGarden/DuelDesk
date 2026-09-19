@@ -408,6 +408,7 @@
   "Stewart Daniel Piedrahita Barzola": [
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "The 707 Squad": [
@@ -600,20 +601,20 @@
   "Devon Boyd": {
     "as": "Devon L. Boyd"
   },
-  "Surya K.": {
-    "as": "Surya Kumaraguru"
-  },
   "Spencer Y.": {
     "as": "Spencer Young"
-  },
-  "Bader A.": {
-    "as": "Bader Abdullah Mahamad Alshahrani"
   },
   "Connor Z.": {
     "as": "Connor Storm Zaborowski"
   },
   "Alfredo C.": {
     "as": "Alfredo Carlos"
+  },
+  "Bader A.": {
+    "as": "Bader Abdullah Mahamad Alshahrani"
+  },
+  "Surya K.": {
+    "as": "Surya Kumaraguru"
   },
   "Ryhan J.": {
     "as": "Ryhan Chakim Jabri"

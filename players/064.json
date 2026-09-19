@@ -172,6 +172,7 @@
     {"e":"2024-ycs-guayaquil-ecuador","cut":"Top 32"},
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2025-south-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"remote-duel-ycs-january-2024"}
@@ -598,13 +599,13 @@
   "Yang V.": {
     "as": "Yang Vang"
   },
-  "Sean R.": {
-    "as": "Sean Austin Royster"
-  },
   "Xinwei T.": {
     "as": "Xinwei Tang"
   },
   "Tyler E.": {
     "as": "Tyler Makoto Endo"
+  },
+  "Sean R.": {
+    "as": "Sean Austin Royster"
   }
 }

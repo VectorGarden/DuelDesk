@@ -385,6 +385,7 @@
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-sao-paulo-brazil"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
@@ -634,16 +635,16 @@
   "João A.": {
     "as": "João Vitor Abrahão"
   },
+  "Lyric B.": {
+    "as": "Lyric Bruner"
+  },
   "Luca C.": {
     "as": "Luca Mathew Jin Soo Choi"
-  },
-  "Tyler M.": {
-    "as": "Tyler Mackenzie Mocklin"
   },
   "Joo A.": {
     "as": "Joo Ho Ahn"
   },
-  "Lyric B.": {
-    "as": "Lyric Bruner"
+  "Tyler M.": {
+    "as": "Tyler Mackenzie Mocklin"
   }
 }

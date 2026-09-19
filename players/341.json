@@ -571,7 +571,8 @@
     {"e":"2023-ycs-indianapolis"}
   ],
   "Omar Nicolas Paladines Valverde": [
-    {"e":"2023-ycs-richmond"}
+    {"e":"2023-ycs-richmond"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Marvin Waldhausen": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -682,19 +683,19 @@
   "Daigo Noguchi": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Nelvin L.": {
-    "as": "Nelvin Wai Yan Lo"
-  },
-  "Dominik N.": {
-    "as": "Dominik Jullian Nemeth"
-  },
-  "Owen A.": {
-    "as": "Owen Michael Alvarado"
-  },
   "Sebastian M.": {
     "as": "Sebastian Muralles"
   },
   "Lijie D.": {
     "as": "Lijie Deng"
+  },
+  "Nelvin L.": {
+    "as": "Nelvin Wai Yan Lo"
+  },
+  "Owen A.": {
+    "as": "Owen Michael Alvarado"
+  },
+  "Dominik N.": {
+    "as": "Dominik Jullian Nemeth"
   }
 }

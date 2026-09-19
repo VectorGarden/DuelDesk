@@ -637,17 +637,20 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"}
   ],
+  "Luis Gabriel Sekisaka Felix": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
   "Titans of Darkness": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Alejandro Uribe Guzman": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
-  "Isacc Z.": {
-    "as": "Isacc Aaron Zepeda"
-  },
   "Nicolo M.": {
     "as": "Nicolo Matela Magallanes"
+  },
+  "Isacc Z.": {
+    "as": "Isacc Aaron Zepeda"
   },
   "Mohammad S.": {
     "as": "Mohammad Ishaq Sumaira"

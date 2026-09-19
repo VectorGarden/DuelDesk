@@ -506,6 +506,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"remote-duel-ycs-february-2025"}
@@ -596,14 +597,21 @@
   "Calvin H.": [
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
+  "Esteban Villamil": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
+  "Tiago Abner De Araujo Hubiner De Lima": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
+  "Rene Amaranto Brito Mendoza": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"remote-duel-ycs-february-2025"}
+  ],
   "Marcelo Muricio Leon Colque": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Rodrigo Vargas Martinez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
-  ],
-  "Rene Amaranto Brito Mendoza": [
-    {"e":"remote-duel-ycs-february-2025"}
   ],
   "Esala W.": {
     "as": "Esala Sammidha de Alwis Wathuthantrige"

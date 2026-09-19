@@ -311,6 +311,7 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-south-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 32"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 4"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 32"}
@@ -671,10 +672,10 @@
   "Nicolas S.": {
     "as": "Nicolas Kenzo Sugino"
   },
-  "Miguel C.": {
-    "as": "Miguel Angel Casas"
-  },
   "Xirong X.": {
     "as": "Xirong Xie"
+  },
+  "Miguel C.": {
+    "as": "Miguel Angel Casas"
   }
 }

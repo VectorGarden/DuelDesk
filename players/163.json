@@ -486,7 +486,8 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-central-america-wcq"}
+    {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Daniel Alejandro Amaya Moreno": [
     {"e":"2022-ycs-bogota-colombia"}
@@ -696,10 +697,10 @@
   "Poe J.": {
     "as": "Poe Jiang"
   },
-  "David S.": {
-    "as": "David Scott Stewart"
-  },
   "Samuel C.": {
     "as": "Samuel Saegin Cheon"
+  },
+  "David S.": {
+    "as": "David Scott Stewart"
   }
 }

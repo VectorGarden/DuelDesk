@@ -645,6 +645,7 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Lucas Esequiel Ovando": [
@@ -688,13 +689,13 @@
   "Taj A.": {
     "as": "Taj Eugene Allen"
   },
-  "Connor M.": {
-    "as": "Connor R. Maguire"
-  },
   "Anthony J.": {
     "as": "Anthony Isaiah Jones"
   },
   "Devon F.": {
     "as": "Devon Wayne Filos"
+  },
+  "Connor M.": {
+    "as": "Connor R. Maguire"
   }
 }

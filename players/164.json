@@ -590,7 +590,8 @@
     {"e":"2026-02-300th-na"}
   ],
   "Santiago Daniel Catalan": [
-    {"e":"2025-ycs-buenos-aires-argentina"}
+    {"e":"2025-ycs-buenos-aires-argentina"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Elizabeth Sandra Martell": [
     {"e":"2025-ycs-vancouver"}
@@ -616,10 +617,10 @@
   "Rich C.": {
     "as": "Rich Cheng"
   },
-  "Jesus L.": {
-    "as": "Jesus Landeros Loera"
-  },
   "Marshall M.": {
     "as": "Marshall James Marengo"
+  },
+  "Jesus L.": {
+    "as": "Jesus Landeros Loera"
   }
 }

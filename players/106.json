@@ -415,6 +415,7 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -605,6 +606,9 @@
   ],
   "Alexander Benjamin Theodore Gauthier": [
     {"e":"2026-08-quebec","f":"Advanced"}
+  ],
+  "Esteban Mena Campos": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Timothy Nicholas Telesca": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},

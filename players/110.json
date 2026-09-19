@@ -291,6 +291,7 @@
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2024-ycs-guadalajara-mexico"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -335,6 +336,7 @@
   ],
   "Kanaan Asfour Al Jabri": [
     {"e":"2018-south-america-wcq","cut":"Top 16"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Victor Andres Calvo Sanchez": [
@@ -643,10 +645,10 @@
   "Gianpierre Manuel Perez Aguilar": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jonathan V.": {
-    "as": "Jonathan Scott Volberding"
-  },
   "Grant S.": {
     "as": "Grant Anthony Squires"
+  },
+  "Jonathan V.": {
+    "as": "Jonathan Scott Volberding"
   }
 }

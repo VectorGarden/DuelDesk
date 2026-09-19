@@ -445,13 +445,15 @@
   "Mitchel Espinosa Trujillo": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2024-ycs-medellin-colombia"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Luan Sebastian Loazar": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
   ],
   "Daniel Felipe Garcia Villarraga": [
-    {"e":"2023-250th-ycs-in-bogota-colombia"}
+    {"e":"2023-250th-ycs-in-bogota-colombia"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Juan Paulo Ternera Moreno": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -653,28 +655,28 @@
   "William J Kim": [
     {"e":"na-ygoc-2022"}
   ],
+  "Martin N.": {
+    "as": "Martin January Nunez"
+  },
+  "Walter A.": {
+    "as": "Walter Omar Angel"
+  },
   "Brandon C.": {
     "as": "Brandon Taylor Conrad"
   },
   "Roger T.": {
     "as": "Roger Quoc Hung Tram"
   },
-  "Walter A.": {
-    "as": "Walter Omar Angel"
-  },
-  "Martin N.": {
-    "as": "Martin January Nunez"
-  },
-  "Patrick A.": {
-    "as": "Patrick Connor Ainsworth"
+  "Jeremy C.": {
+    "as": "Jeremy David Cummins"
   },
   "Nicholas W.": {
     "as": "Nicholas John Wetmore"
   },
-  "Jeremy C.": {
-    "as": "Jeremy David Cummins"
-  },
   "Joshua L.": {
     "as": "Joshua Ryan Levine"
+  },
+  "Patrick A.": {
+    "as": "Patrick Connor Ainsworth"
   }
 }

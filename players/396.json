@@ -90,7 +90,8 @@
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-central-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-central-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Lee Charles Karnauk": [
     {"e":"2015-ycs-charleston"},
@@ -487,11 +488,11 @@
   "Muller S.": {
     "as": "Muller Matheus da Silva"
   },
-  "Dominick T.": {
-    "as": "Dominick Nelson Townsend"
-  },
   "Donovan B.": {
     "as": "Donovan Lemar Brown"
+  },
+  "Dominick T.": {
+    "as": "Dominick Nelson Townsend"
   },
   "Evan M.": {
     "as": "Evan Greyston McKay"

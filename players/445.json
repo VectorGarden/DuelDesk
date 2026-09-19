@@ -374,7 +374,8 @@
   "Keanu Nathaniel Shemar Singh": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-north-america-remote-duel-ycs"}
+    {"e":"2023-north-america-remote-duel-ycs"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Mitchell Alexander Ramirez": [
     {"e":"2022-11-ycs-pasadena"},
@@ -632,10 +633,10 @@
   "Derek M.": {
     "as": "Derek Charles Mead"
   },
-  "Weijian F.": {
-    "as": "Weijian Fang"
-  },
   "Samuel Y.": {
     "as": "Samuel Siwon You"
+  },
+  "Weijian F.": {
+    "as": "Weijian Fang"
   }
 }
