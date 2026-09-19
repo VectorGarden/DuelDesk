@@ -62,6 +62,26 @@ FEW = 3
 # events, and two posts that belong where they are stop belonging anywhere.
 FEW_NAMES = 5
 
+# How far from an event a post may be published and still be about it. Konami
+# reuses places: "california" is in a 2013 San Diego event's name and also in
+# the 2010 World Championship's coverage from Long Beach, and "panama" is a
+# 2019 Invitational and also where Galileo de Obaldia is from. Neither event
+# had happened, or was near happening, when the post naming it was written.
+#
+# A year and two years sort the archive identically. Below a year an
+# announcement gets further from its event than this allows; far above it
+# those two 2010 posts lose the event they belong to.
+NAME_SLACK_DAYS = 365
+
+# How much of an event's own coverage has to use a word before the word counts
+# as the event's, whatever its slug says. Anything between a tenth and a half
+# sorts the archive the same way, because the two sides are nowhere near each
+# other: "pasadena" is in forty-five of the hundred and ten posts of the event
+# Konami filed under "2018-11-sao-paulo-brazil" -- which is YCS Pasadena -- and
+# the words that were wrongly taking posts off events sit at one, three and
+# eight per cent.
+OWN_WORD_SHARE = 0.2
+
 
 @dataclass
 class Entry:
@@ -241,7 +261,39 @@ def namesakes(slugs, records: list[dict] | None = None) -> dict[str, set[str]]:
             for slug in slugs}
 
 
-def names_another(slug: str, post: str, sharp: dict[str, set[str]]) -> bool:
+def _learned(records: list[dict]):
+    """The names, dates and vocabulary of every event a pass found."""
+    return (namesakes(sorted({r["event"] for r in records if r["event"]}), records),
+            event_spans(records), event_words(records))
+
+
+def event_words(records: list[dict]) -> dict[str, set[str]]:
+    """Per event, the words its own coverage keeps using."""
+    posts: dict[str, list[str]] = defaultdict(list)
+    for rec in records:
+        if rec["event"]:
+            posts[rec["event"]].append(rec["slug"])
+    out = {}
+    for slug, slugs in posts.items():
+        counts = Counter(t for s in slugs for t in name_terms(s))
+        out[slug] = {t for t, n in counts.items() if n >= OWN_WORD_SHARE * len(slugs)}
+    return out
+
+
+def event_spans(records: list[dict]) -> dict[str, tuple[str, str]]:
+    """First and last day of each event's coverage, whoever gave it the post."""
+    out: dict[str, tuple[str, str]] = {}
+    for rec in records:
+        if rec["event"] and rec["lastmod"]:
+            lo, hi = out.get(rec["event"], (rec["lastmod"], rec["lastmod"]))
+            out[rec["event"]] = (min(lo, rec["lastmod"]), max(hi, rec["lastmod"]))
+    return out
+
+
+def names_another(slug: str, post: str, sharp: dict[str, set[str]],
+                  terms: set[str] | None = None,
+                  spans: dict[str, tuple[str, str]] | None = None,
+                  when: str | None = None) -> bool:
     """Whether a post spells out some event's name, and not this event's.
 
     Corroboration by vocabulary is only as good as the word that carries it,
@@ -263,7 +315,11 @@ def names_another(slug: str, post: str, sharp: dict[str, set[str]]) -> bool:
     Sierra -- but it is also how a Duelist called Abraham Rivera Cruz appears
     in the slug of his own feature match, which belongs to neither.
     """
-    ours = name_terms(slug)
+    # A slug is not always the name. The event Konami filed under
+    # "2018-11-sao-paulo-brazil" is YCS Pasadena, and forty-five of its posts
+    # say so, so "pasadena" is its word however its slug reads.
+    ours = name_terms(slug) | {t[:-1] if t.endswith("s") and len(t) > 4 else t
+                               for t in (terms or ())}
     said = name_terms(post)
     # Nothing to judge: either the post writes this event's name in full, or
     # the event has no name to write -- "2026-02-300th-na" is a filing
@@ -271,7 +327,16 @@ def names_another(slug: str, post: str, sharp: dict[str, set[str]]) -> bool:
     # is in the same position.
     if sharp.get(slug, set()) <= said:
         return False
-    return any(n <= said and not (n & ours) for n in sharp.values() if n)
+    return any(n <= said and not (n & ours) and _around(spans, other, when)
+               for other, n in sharp.items() if n)
+
+
+def _around(spans, slug: str, when: str | None) -> bool:
+    """Whether an event was running anywhere near when a post was published."""
+    if not spans or not when or slug not in spans:
+        return True
+    lo, hi = (date.fromisoformat(d).toordinal() for d in spans[slug])
+    return lo - NAME_SLACK_DAYS <= date.fromisoformat(when).toordinal() <= hi + NAME_SLACK_DAYS
 
 
 @dataclass
@@ -681,7 +746,7 @@ def _merge_same_qualifier(found: list, slack_days: int) -> list:
 
 
 def assign_events(entries: list[Entry], slack_days: int = 4,
-                  read=None) -> list[dict]:
+                  read=None, _known=None) -> list[dict]:
     """Attach every post to an event.
 
     Posts carrying an event slug define the windows. Posts without one are
@@ -698,6 +763,19 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
     post a candidate, and Profile.names decides whether it is really about the
     event. Without that, a week of unrelated product news became coverage.
     """
+    # What events there are, which the rules below have to weigh a post's
+    # words against -- and two thirds of them are not known until discovery
+    # has run, at the bottom of this function. So it is run once to find out.
+    #
+    # The first pass is given no names at all, which is the state this rule
+    # was in before: empty vocabularies make names_another say no to
+    # everything, so the pass behaves exactly as the function used to. It is
+    # also given no reader, because reading costs a fetch and the second pass
+    # does the same ten.
+    if _known is None:
+        _known = _learned(assign_events(entries, slack_days, _known=({}, {}, {})))
+    sharp, spans, words = _known
+
     profiles = event_profiles(entries)
     windows = {k: p.window for k, p in profiles.items()}
 
@@ -767,7 +845,9 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
             rec["event"], rec["event_confidence"] = None, "none"
         else:
             hits = [k for k, (lo, hi) in windows.items()
-                    if within(e.lastmod, lo, hi) and profiles[k].names(e)]
+                    if within(e.lastmod, lo, hi) and profiles[k].names(e)
+                    and not names_another(k, e.slug, sharp, words.get(k),
+                                          spans, e.lastmod)]
             kind = detect_kind(e.slug)
             if len(hits) == 1 and kind in TOURNAMENT and (
                     kind, detect_round(f"{e.slug} {e.url}", kind),
@@ -857,8 +937,7 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
         for term in prof.terms:
             owners[term].add(slug)
 
-    for rec, ev in _by_date(out, disc, within, owners,
-                            namesakes(list(profiles) + list(disc), out)):
+    for rec, ev in _by_date(out, disc, within, owners, sharp, spans, words):
         rec["event"], rec["event_confidence"] = ev, "discovered+date"
 
     # Last of all, and the only rule here that overrules another: a post whose
@@ -1042,7 +1121,9 @@ def _discovered_profiles(records: list[dict]) -> dict[str, Profile]:
 
 def _by_date(records: list[dict], profiles: dict[str, Profile], within,
              owners: dict[str, set[str]] | None = None,
-             sharp: dict[str, set[str]] | None = None):
+             sharp: dict[str, set[str]] | None = None,
+             spans: dict[str, tuple[str, str]] | None = None,
+             words: dict[str, set[str]] | None = None):
     """Still-unassigned posts, and the one discovered event each belongs to."""
     # The rounds each event already holds from a post that named it, which is
     # what a dated round is not allowed to duplicate.
@@ -1077,7 +1158,8 @@ def _by_date(records: list[dict], profiles: dict[str, Profile], within,
                       rec["slug"], rec["lastmod"])
         hits = [slug for slug, p in profiles.items()
                 if within(rec["lastmod"], *p.window) and p.names(entry)
-                and not names_another(slug, rec["slug"], sharp or {})]
+                and not names_another(slug, rec["slug"], sharp or {},
+                                      (words or {}).get(slug), spans, rec["lastmod"])]
         if len(hits) != 1:
             continue
         # A round the event already has, on the strength of a date, is the one
