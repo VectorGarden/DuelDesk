@@ -55,12 +55,19 @@ TOURNAMENT = ("pairings", "standings")
 FEW = 3
 
 # How few events may share a word before it counts as naming one of them.
-# Five, six, seven and eight all sort the archive identically, because what
-# decides a case is whether the post spells a name out in full and not where
-# the line between rare and common falls. Below five nothing is rare enough
-# for the rule to fire at all; at ten "chile" and "animated" start naming
-# events, and two posts that belong where they are stop belonging anywhere.
-FEW_NAMES = 5
+# There is no flat stretch to sit in the middle of here, so this is the last
+# value that only corrects, measured over the whole sitemap:
+#
+#     4   four posts leave events they were never about
+#     5   eleven, including both YCS Houston announcements
+#     6   thirteen: also a YCS Toronto standings table filed under Buenos
+#         Aires, and a YCS Portland feature match that goes to YCS Portland
+#     7   seventy-two -- the twenty-five posts of the 250th YCS in Bogota
+#         read their own event's name as another event's and leave it empty
+#
+# It was 5 on a measurement that indexed only the posts the archive had
+# already adopted, where 5 through 8 did look alike. They do not.
+FEW_NAMES = 6
 
 # How far from an event a post may be published and still be about it. Konami
 # reuses places: "california" is in a 2013 San Diego event's name and also in

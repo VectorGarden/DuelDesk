@@ -9857,6 +9857,31 @@ class TestAWordThatMeansAnEvent(unittest.TestCase):
         self.assertFalse(names_another("2026-02-300th-na",
                                        "ycs-houston-tx-2026-main-event", sharp))
 
+    def test_where_the_line_between_rare_and_common_falls(self):
+        # Not a round number to sit in the middle of: it is the last value
+        # that only corrects. A word six events share still picks them out of
+        # a hundred and ninety-one; at seven the 250th YCS in Bogota reads its
+        # own name as another event's and empties itself.
+        from index import FEW_NAMES
+        share = lambda n: namesakes([f"20{10 + i}-ycs-lima-{c}"
+                                     for i, c in enumerate("abcdefghij"[:n])] + list(self.CROWD))
+        self.assertIn("lima", share(FEW_NAMES)["2010-ycs-lima-a"])
+        self.assertNotIn("lima", share(FEW_NAMES + 1)["2010-ycs-lima-a"])
+
+    def test_how_widely_written_is_too_widely(self):
+        # The same line, read the other way: not how many events are named
+        # after a word but how many events' posts use it.
+        from index import FEW_NAMES
+        every = ("2010-ycs-zed",) + self.CROWD
+
+        def spread(n):
+            records = [{"event": e, "slug": "zed-round-1-pairings"}
+                       for e in list(every)[:n]]
+            return namesakes(every, records + [{"event": "2010-ycs-zed", "slug": "zed-final"}])
+
+        self.assertIn("zed", spread(FEW_NAMES)["2010-ycs-zed"])
+        self.assertNotIn("zed", spread(FEW_NAMES + 1)["2010-ycs-zed"])
+
     def test_a_word_the_whole_archive_writes_names_nothing(self):
         # The 2013 World Championship is the only event called "world", and
         # read that far every deck profile of a Lost World deck is about it.
