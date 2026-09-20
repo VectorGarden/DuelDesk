@@ -224,7 +224,7 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Kewl Tune","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Genesys","cut":"Top 8","deck":"Kewl Tune"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys","cut":"Top 4"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys","won":true,"cut":"Top 4"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq","cut":"Top 8","deck":"Kewl Tune"},
     {"e":"remote-duel-ycs-january-2026"}
