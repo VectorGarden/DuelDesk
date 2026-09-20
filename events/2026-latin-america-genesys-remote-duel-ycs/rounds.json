@@ -1033,11 +1033,11 @@
           "id": "10",
           "label": "R10",
           "phase": "Swiss",
-          "state": "live",
+          "state": "done",
           "order": 10,
           "tables": 16,
           "posted": "12:16",
-          "standingsAfter": null,
+          "standingsAfter": 10,
           "pairings": [
             {"table":1,"a":"Sebastian Alonso Serna Samame","aRec":{"wins":7,"losses":2,"draws":0,"confidence":"derived"},"b":"Boris Bladimir Veliz Morales","bRec":{"wins":7,"losses":2,"draws":0,"confidence":"derived"}},
             {"table":2,"a":"Fernando Castillo","aRec":{"wins":7,"losses":2,"draws":0,"confidence":"derived"},"b":"David Alejandro Haro Moreno","bRec":{"wins":7,"losses":2,"draws":0,"confidence":"derived"}},
@@ -1056,9 +1056,78 @@
             {"table":15,"a":"Justin Matthew Gouge","aRec":{"wins":4,"losses":5,"draws":0,"confidence":"derived"},"b":"Jose Tapia","bRec":{"wins":4,"losses":5,"draws":0,"confidence":"derived"}},
             {"table":16,"a":"Ivan Omar Hernandez Orta","aRec":{"wins":3,"losses":6,"draws":0,"confidence":"derived"},"b":"Adolfo Angel Morales Ulloa","bRec":{"wins":4,"losses":5,"draws":0,"confidence":"derived"}}
           ],
-          "standings": [],
+          "standings": [
+            {"pos":1,"name":"Henry Lawrence","record":{"wins":8,"losses":2,"draws":0,"confidence":"derived"},"points":24},
+            {"pos":2,"name":"Sebastian Alonso Serna Samame","record":{"wins":8,"losses":2,"draws":0,"confidence":"derived"},"points":24},
+            {"pos":3,"name":"Fernando Castillo","record":{"wins":8,"losses":2,"draws":0,"confidence":"derived"},"points":24},
+            {"pos":4,"name":"David Alejandro Haro Moreno","record":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"points":21},
+            {"pos":5,"name":"Pablo Cesar Dominguez Lamazares","record":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"points":21},
+            {"pos":6,"name":"Boris Bladimir Veliz Morales","record":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"points":21},
+            {"pos":7,"name":"Yuhao Ye","record":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"points":21},
+            {"pos":8,"name":"Frankjer Rafael Garcia Calzadilla","record":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"points":21},
+            {"pos":9,"name":"Hanko Hon Kau Chow","record":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"points":21},
+            {"pos":10,"name":"Miguel Angel Hernandez Morales","record":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"points":21},
+            {"pos":11,"name":"Andres Torres","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":12,"name":"Alejandro Salazar mejia","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":13,"name":"Joan Ivan Saavedra Vidales","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":14,"name":"Melquiades Arico","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":15,"name":"Santiago Rodrigues Gonalves","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":16,"name":"Argani Jhaszid","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":17,"name":"Manuel Alejandro Lacan Archila","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":18,"name":"Daniel Alejandro Monroy Salazar","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":19,"name":"Bryan Alfredo Delgado Gutierrez","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":20,"name":"Perez Vazquez Saul Eduardo","record":{"wins":6,"losses":4,"draws":0,"confidence":"derived"},"points":18},
+            {"pos":21,"name":"Jose Francisco Azofeifa Acosta","record":{"wins":5,"losses":5,"draws":0,"confidence":"derived"},"points":15},
+            {"pos":22,"name":"Justin Matthew Gouge","record":{"wins":5,"losses":5,"draws":0,"confidence":"derived"},"points":15},
+            {"pos":23,"name":"Alan Sergio Marin Alarcon","record":{"wins":5,"losses":5,"draws":0,"confidence":"derived"},"points":15},
+            {"pos":24,"name":"Mattheo Alexander Robayo","record":{"wins":5,"losses":5,"draws":0,"confidence":"derived"},"points":15},
+            {"pos":25,"name":"Raul Canales Canales","record":{"wins":5,"losses":5,"draws":0,"confidence":"derived"},"points":15},
+            {"pos":26,"name":"Daniel Andres Aguilar Llanos","record":{"wins":5,"losses":5,"draws":0,"confidence":"derived"},"points":15},
+            {"pos":27,"name":"Carlos Perez","record":{"wins":5,"losses":5,"draws":0,"confidence":"derived"},"points":15},
+            {"pos":28,"name":"Adolfo Angel Morales Ulloa","record":{"wins":4,"losses":6,"draws":0,"confidence":"derived"},"points":12},
+            {"pos":29,"name":"Renato Andre Menacho Vidal","record":{"wins":4,"losses":6,"draws":0,"confidence":"derived"},"points":12},
+            {"pos":30,"name":"Miguel Angel Gonzalez Ohep","record":{"wins":4,"losses":6,"draws":0,"confidence":"derived"},"points":12},
+            {"pos":31,"name":"Ivan Omar Hernandez Orta","record":{"wins":4,"losses":6,"draws":0,"confidence":"derived"},"points":12},
+            {"pos":32,"name":"Jose Tapia","record":{"wins":4,"losses":6,"draws":0,"confidence":"derived"},"points":12}
+          ],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-10-pairings/"
+        },
+        {
+          "id": "Top8",
+          "label": "Top 8",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 160,
+          "tables": 4,
+          "posted": "13:15",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Henry Lawrence","aRec":{"wins":8,"losses":2,"draws":0,"confidence":"derived"},"b":"Frankjer Rafael Garcia Calzadilla","bRec":{"wins":7,"losses":3,"draws":0,"confidence":"derived"}},
+            {"table":2,"a":"Yuhao Ye","aRec":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"b":"Sebastian Alonso Serna Samame","bRec":{"wins":8,"losses":2,"draws":0,"confidence":"derived"}},
+            {"table":3,"a":"Pablo Cesar Dominguez Lamazares","aRec":{"wins":7,"losses":3,"draws":0,"confidence":"derived"},"b":"David Alejandro Haro Moreno","bRec":{"wins":7,"losses":3,"draws":0,"confidence":"derived"}},
+            {"table":4,"a":"Fernando Castillo","aRec":{"wins":8,"losses":2,"draws":0,"confidence":"derived"},"b":"Boris Bladimir Veliz Morales","bRec":{"wins":7,"losses":3,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-top-8-pairings/"
+        },
+        {
+          "id": "Top4",
+          "label": "Top 4",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 161,
+          "tables": 2,
+          "posted": "14:31",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Henry Lawrence","aRec":{"wins":9,"losses":2,"draws":0,"confidence":"derived"},"b":"Pablo Cesar Dominguez Lamazares","bRec":{"wins":8,"losses":3,"draws":0,"confidence":"derived"}},
+            {"table":2,"a":"Yuhao Ye","aRec":{"wins":8,"losses":3,"draws":0,"confidence":"derived"},"b":"Boris Bladimir Veliz Morales","bRec":{"wins":8,"losses":3,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-top-4-pairings/"
         }
       ]
     }

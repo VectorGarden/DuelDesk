@@ -6,9 +6,42 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Sep 2026 19:16:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 21:31:54 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Top 4 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-top-4-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-top-4-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 21:31:54 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Top 8 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-top-8-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-top-8-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 20:15:25 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Standings after Round 10</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-10/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-10/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 20:14:24 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 10 Pairings</title>
       <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-10-pairings/</link>
@@ -3170,39 +3203,6 @@
       <category domain="event">2026-north-america-genesys-championship</category>
       <pubDate>Sat, 11 Jul 2026 14:24:23 +0000</pubDate>
       <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Round 6 Feature Match: Tan Duc Pham vs. Robert James Morant</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-genesys-championship/genesys-championship-round-6-feature-match-tan-duc-pham-vs-robert-james-morant/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-genesys-championship/genesys-championship-round-6-feature-match-tan-duc-pham-vs-robert-james-morant/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:24:13 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: Friday ATTACK OF THE GIANT CARD!! Winners</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/friday-attack-of-the-giant-card-winners/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/friday-attack-of-the-giant-card-winners/</guid>
-      <category>Results</category>
-      <category domain="kind">result</category>
-      <category domain="format">Attack of the Giant Card</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 14:24:01 +0000</pubDate>
-      <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Round 7 Feature Match: Nicholas Braydon Moore vs. Alexandre Lebel</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-genesys-championship/genesys-championship-round-7-feature-match-nicholas-braydon-moore-vs-alexandre-lebel/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-genesys-championship/genesys-championship-round-7-feature-match-nicholas-braydon-moore-vs-alexandre-lebel/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:23:28 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

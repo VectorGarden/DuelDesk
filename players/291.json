@@ -306,7 +306,7 @@
     {"e":"2020-uds-invitational-bogota"},
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys","cut":"Top 4"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
