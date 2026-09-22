@@ -6,9 +6,20 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Sep 2026 23:09:48 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 20:13:49 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Beyond the Brave Initial Genesys Points</title>
+      <link>https://yugiohblog.konami.com/2026/genesys/beyond-the-brave-initial-genesys-points/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/genesys/beyond-the-brave-initial-genesys-points/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Tue, 22 Sep 2026 20:13:49 +0000</pubDate>
+      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – We have a winner!</title>
       <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-we-have-a-winner/</link>
@@ -3192,17 +3203,6 @@
       <category domain="event">2026-north-america-genesys-championship</category>
       <pubDate>Sat, 11 Jul 2026 14:25:16 +0000</pubDate>
       <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Round 6 Feature Match: Kenny Diaz vs. Zackoriah Louis</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-6-feature-match-kenny-diaz-vs-zackoriah-louis/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-6-feature-match-kenny-diaz-vs-zackoriah-louis/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:24:58 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

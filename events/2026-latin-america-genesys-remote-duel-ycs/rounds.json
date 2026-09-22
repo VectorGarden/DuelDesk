@@ -4,8 +4,8 @@
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
-  "ongoing": false,
-  "updated": "2026-09-20",
+  "ongoing": true,
+  "updated": "2026-09-22",
   "formats": [
     {
       "format": "Genesys",
@@ -1116,7 +1116,7 @@
           "id": "Top4",
           "label": "Top 4",
           "phase": "Top cut",
-          "state": "done",
+          "state": "live",
           "order": 161,
           "tables": 2,
           "posted": "14:31",
