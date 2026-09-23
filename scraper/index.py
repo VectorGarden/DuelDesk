@@ -275,7 +275,37 @@ def namesakes(slugs, records: list[dict] | None = None) -> dict[str, set[str]]:
 def _learned(records: list[dict]):
     """The names, dates and vocabulary of every event a pass found."""
     return (namesakes(sorted({r["event"] for r in records if r["event"]}), records),
-            event_spans(records), event_words(records))
+            event_spans(records), event_words(records), running(records))
+
+
+def running(records: list[dict]) -> dict[str, tuple[str, str]]:
+    """The days each event ran, stray edits left out, whoever gave it its posts."""
+    days: dict[str, list[str]] = defaultdict(list)
+    for rec in records:
+        if rec["event"] and rec["lastmod"]:
+            days[rec["event"]].append(rec["lastmod"])
+    return {slug: tight_window(d) for slug, d in days.items()}
+
+
+def worth_reading_again(slug: str, when: str | None, running: dict) -> bool:
+    """Whether a winner post went up on a day more than one event was running.
+
+    Its slug names nothing -- "and-we-have-a-winner" -- so its date is all a
+    rule reading slugs has, and a date answers only when one event was on.
+    On 16 January 2022 two were: the North America Remote Duel YCS and the
+    Latin America one. The date rule runs before discovery, saw only the
+    first, and gave it the Latin America winner; the post says in its first
+    line which event it is about, and nothing read it, because reading was
+    only for posts nothing had placed.
+
+    Seen from the first pass, which knows every event, such a post is read
+    after all -- and what it says overrules the date, but only when it names
+    one event. Where it names none the date's answer stands: taking it away
+    first, and leaving the reading to find another, lost three winners whose
+    events go by a code nobody writes out -- "2025-12-rdycs-na", "sa-wcq".
+    """
+    return (bool(when) and bool(ANNOUNCEMENT.search(slug))
+            and sum(1 for lo, hi in running.values() if lo <= when <= hi) > 1)
 
 
 def event_words(records: list[dict]) -> dict[str, set[str]]:
@@ -879,8 +909,8 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
     # also given no reader, because reading costs a fetch and the second pass
     # does the same ten.
     if _known is None:
-        _known = _learned(assign_events(entries, slack_days, _known=({}, {}, {})))
-    sharp, spans, words = _known
+        _known = _learned(assign_events(entries, slack_days, _known=({}, {}, {}, {})))
+    sharp, spans, words, ran = _known
 
     profiles = event_profiles(entries)
     windows = {k: p.window for k, p in profiles.items()}
@@ -1096,7 +1126,7 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
     # Ten posts on the whole blog meet that, and the caller decides whether to
     # pay for them -- with no reader this pass does nothing at all.
     if read is not None:
-        for rec, ev in _announced_in(out, everything, within, read):
+        for rec, ev in _announced_in(out, everything, within, read, ran):
             rec["event"], rec["event_confidence"] = ev, "announced"
     return out
 
@@ -1106,7 +1136,8 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
 ANNOUNCEMENT = re.compile(r"we-have-a-winner|and-the-winner|winner-is|champion-is")
 
 
-def _announced_in(records: list[dict], profiles: dict[str, Profile], within, read):
+def _announced_in(records: list[dict], profiles: dict[str, Profile], within, read,
+                  ran: dict[str, tuple[str, str]] | None = None):
     """Winner posts that name their event in the text, and that event.
 
     The event's own name, whole and contiguous, the way _named_outright wants
@@ -1115,7 +1146,10 @@ def _announced_in(records: list[dict], profiles: dict[str, Profile], within, rea
     both, and means the Dragon Duel.
     """
     for rec in records:
-        if rec["event"] or not rec["lastmod"] or not ANNOUNCEMENT.search(rec["slug"]):
+        if not rec["lastmod"] or not ANNOUNCEMENT.search(rec["slug"]):
+            continue
+        if rec["event"] and not (rec["event_confidence"] in ("date", "discovered+date")
+                                 and worth_reading_again(rec["slug"], rec["lastmod"], ran)):
             continue
         # Same guard as the rule above, for the same reason: a name says which
         # event a post is about, never that the table in it belongs in that
@@ -1124,11 +1158,11 @@ def _announced_in(records: list[dict], profiles: dict[str, Profile], within, rea
             continue
         near = {s: bare for s, p in profiles.items()
                 if within(rec["lastmod"], *p.window)
-                and len(bare := _DATE_PREFIX.sub("", s).replace("-", " ")) > 6}
+                and len(bare := unbranded(_DATE_PREFIX.sub("", s).replace("-", " "))) > 6}
         if not near:
             continue
         try:
-            text = (read(rec["url"]) or "").lower()
+            text = unbranded((read(rec["url"]) or "").lower())
         except Exception:
             continue
         hits = [s for s, bare in near.items() if bare in text]
@@ -1136,8 +1170,19 @@ def _announced_in(records: list[dict], profiles: dict[str, Profile], within, rea
         # matched two events is left alone, as everywhere else here.
         hits = [s for s in hits
                 if not any(o != s and near[s] in near[o] for o in hits)]
-        if len(hits) == 1:
+        if len(hits) == 1 and hits[0] != rec["event"]:
             yield rec, hits[0]
+
+
+# The brand, which Konami writes into the middle of an event's name and which
+# tells no event from another: "Latin America Yu-Gi-Oh! TCG Remote Duel YCS"
+# is the Latin America Remote Duel YCS, and read with the brand in it, it is
+# not a whole name of anything.
+_BRAND = re.compile(r"\byu[\s-]?gi[\s-]?oh!?(?:\s+(?:tcg|trading card game))?\b")
+
+
+def unbranded(text: str) -> str:
+    return re.sub(r"\s+", " ", _BRAND.sub(" ", text)).strip()
 
 
 # An event's slug with any leading date taken off -- "2019-ycs-chicago" is
