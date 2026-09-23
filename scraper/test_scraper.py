@@ -10469,3 +10469,112 @@ class TestAFormatsOwnSection(unittest.TestCase):
                for r in assign_events(parse_post_sitemap(urlset(*rows, stray)))}
         self.assertIsNone(got["beyond-the-brave-initial-genesys-points"])
         self.assertIsNotNone(got["latin-america-genesys-remote-duel-ycs-round-1-pairings"])
+
+
+class TestAWinnerOnADayTwoEventsRan(unittest.TestCase):
+    """16 January 2022: the North America and Latin America Remote Duel YCSs.
+
+    "and-we-have-a-winner" names neither, so its date decided -- at a rule that
+    runs before discovery and saw only the North America event. The post says
+    which in its first line: "Congratulations to Carlos Sepulveda from Chile
+    for winning the Latin America Yu-Gi-Oh! TCG Remote Duel YCS!"
+    """
+
+    WINNER = "2022/ycs/and-we-have-a-winner"
+    LATIN = ("Congratulations to Carlos Sepulveda from Chile for winning the "
+             "Latin America Yu-Gi-Oh! TCG Remote Duel YCS!")
+
+    def rows(self, *extra):
+        rows = [(f"2022/ycs/2022-january-remote-duel-ycs/remote-duel-ycs-round-{i}-pairings",
+                 f"2022-01-{15 + i // 5:02d}") for i in range(1, 9)]
+        rows += [(f"2022/ycs/latin-america-remote-duel-ycs-round-{i}-pairings", "2022-01-16")
+                 for i in range(1, 8)]
+        return rows + list(extra)
+
+    def assigned(self, text, *extra):
+        read = lambda url: text
+        return {r["slug"]: (r["event"], r["event_confidence"])
+                for r in assign_events(parse_post_sitemap(urlset(*self.rows(*extra))), read=read)}
+
+    def test_the_post_goes_to_the_event_it_names(self):
+        got = self.assigned(self.LATIN, (self.WINNER, "2022-01-16"))
+        self.assertEqual(got["and-we-have-a-winner"],
+                         ("2022-latin-america-remote-duel-ycs", "announced"))
+
+    def test_where_it_names_neither_the_date_still_answers(self):
+        # Taking the date's answer away first lost three winners whose events
+        # go by a code nobody writes out -- "2025-12-rdycs-na", "sa-wcq".
+        got = self.assigned("We have a winner! Congratulations!", (self.WINNER, "2022-01-16"))
+        self.assertEqual(got["and-we-have-a-winner"][0], "2022-january-remote-duel-ycs")
+
+    def test_where_it_names_the_same_event_nothing_changes(self):
+        got = self.assigned("the winner of the January Remote Duel YCS", (self.WINNER, "2022-01-16"))
+        self.assertEqual(got["and-we-have-a-winner"], ("2022-january-remote-duel-ycs", "date"))
+
+    def test_a_winner_filed_under_its_events_address_stays(self):
+        # The URL is the strongest thing a post carries, and reading is only
+        # asked to overrule a date.
+        got = self.assigned(self.LATIN, ("2022/ycs/2022-january-remote-duel-ycs/and-we-have-a-winner",
+                                         "2022-01-16"))
+        self.assertEqual(got["and-we-have-a-winner"][0], "2022-january-remote-duel-ycs")
+
+    def test_a_winner_the_date_gave_a_discovered_event_is_read_too(self):
+        # Both date rules see half the events. The World Championship 2026
+        # carries its slug in its URL; a YCS the same day is found by
+        # discovery, and a winner post under /ycs/ that says neither went to
+        # the YCS by date. Its first line names the World Championship --
+        # brand and all, which is also how that event's slug spells it.
+        rows = [(f"2026/championships/yu-gi-oh-tcg-world-championship-2026/"
+                 f"world-championship-round-{i}-pairings", "2026-08-29") for i in range(1, 6)]
+        rows += [(f"2026/ycs/ycs-keswick-round-{i}-pairings", "2026-08-29") for i in range(1, 8)]
+        text = "Congratulations to Ada Byron, the Yu-Gi-Oh! TCG World Championship 2026 champion!"
+        got = {r["slug"]: (r["event"], r["event_confidence"])
+               for r in assign_events(parse_post_sitemap(urlset(
+                   *rows, ("2026/ycs/and-the-winner-is", "2026-08-29"))), read=lambda url: text)}
+        self.assertEqual(got["and-the-winner-is"],
+                         ("yu-gi-oh-tcg-world-championship-2026", "announced"))
+
+    def test_running_leaves_out_a_stray_edit(self):
+        # One post of an event edited years later would otherwise have it
+        # running across every day in between.
+        from index import running
+        got = running([{"event": "e", "lastmod": d}
+                       for d in ("2022-01-15", "2022-01-16", "2022-01-16", "2025-06-01")])
+        self.assertEqual(got, {"e": ("2022-01-15", "2022-01-16")})
+
+    def test_a_day_one_event_ran_is_not_read_again(self):
+        from index import worth_reading_again
+        ran = {"a": ("2022-01-14", "2022-01-16"), "b": ("2022-01-20", "2022-01-21")}
+        self.assertFalse(worth_reading_again("and-we-have-a-winner", "2022-01-16", ran))
+        ran["b"] = ("2022-01-16", "2022-01-17")
+        self.assertTrue(worth_reading_again("and-we-have-a-winner", "2022-01-16", ran))
+
+    def test_only_a_winner_post_is_read_again(self):
+        from index import worth_reading_again
+        ran = {"a": ("2022-01-14", "2022-01-16"), "b": ("2022-01-16", "2022-01-17")}
+        self.assertFalse(worth_reading_again("welcome-to-the-remote-duel-ycs", "2022-01-16", ran))
+        self.assertFalse(worth_reading_again("and-we-have-a-winner", None, ran))
+
+    def test_running_is_the_days_the_coverage_holds(self):
+        from index import running
+        got = running([{"event": "e", "lastmod": d} for d in ("2022-01-16", "2022-01-15")]
+                      + [{"event": None, "lastmod": "2022-01-01"},
+                         {"event": "e", "lastmod": None}])
+        self.assertEqual(got, {"e": ("2022-01-15", "2022-01-16")})
+
+
+class TestTheBrandIsNotPartOfTheName(unittest.TestCase):
+    """Konami writes "Yu-Gi-Oh! TCG" into the middle of an event's name."""
+
+    def test_it_is_read_out(self):
+        from index import unbranded
+        self.assertEqual(unbranded("latin america yu-gi-oh! tcg remote duel ycs"),
+                         "latin america remote duel ycs")
+        self.assertEqual(unbranded("the yu-gi-oh! trading card game world championship"),
+                         "the world championship")
+        self.assertEqual(unbranded("yu gi oh world championship 2013"), "world championship 2013")
+
+    def test_a_name_without_it_is_left_alone(self):
+        from index import unbranded
+        self.assertEqual(unbranded("latin america remote duel ycs"),
+                         "latin america remote duel ycs")
