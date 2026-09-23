@@ -18,7 +18,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from parse import (parse_post, normalise_name, strip_region,  # noqa: E402
                    detect_kind, detect_round, detect_format)
 from index import (parse_post_sitemap, assign_events, event_windows,  # noqa: E402
-                   namesakes, names_another, event_spans, event_words)
+                   namesakes, names_another, event_spans, event_words,
+                   announces_a_later_event)
 
 FIX = Path(__file__).parent.parent / "test" / "fixtures" / "blog"
 load = lambda n: parse_post((FIX / f"{n}.html").read_text(), n)
@@ -10096,3 +10097,129 @@ class TestTheDateRuleKnowsEveryName(unittest.TestCase):
     def test_a_post_that_names_nobody_is_still_taken_by_its_date(self):
         got = self.rows(("2025/ycs/standings-after-round-6-2", "2025-12-12"))
         self.assertEqual(got["standings-after-round-6-2"][0], "2025-12-rdycs-na")
+
+
+class TestOneYcsInTwoFormats(unittest.TestCase):
+    """The Latin America Remote Duel YCS of September 2026 ran two tournaments.
+
+    Genesys on the Friday and Advanced on the Saturday, each named after its
+    format in every slug. Discovery read two names as two events, and only
+    one was ever built -- so the site showed a YCS with one format, and the
+    rounds of the other inside it.
+    """
+
+    B = "https://yugiohblog.konami.com/2026/ycs/latin-america-{}-remote-duel-ycs-{}/"
+
+    def rows(self, *extra):
+        rows = [(f"2026/ycs/latin-america-genesys-remote-duel-ycs-round-{i}-pairings",
+                 "2026-09-18") for i in range(1, 8)]
+        rows += [(f"2026/ycs/latin-america-advanced-remote-duel-ycs-round-{i}-pairings",
+                  "2026-09-19") for i in range(4, 12)]
+        return {r["slug"]: (r["event"], r["event_confidence"])
+                for r in assign_events(parse_post_sitemap(urlset(*rows, *extra)))}
+
+    def test_both_formats_are_one_event(self):
+        got = self.rows()
+        events = {ev for ev, _ in got.values()}
+        self.assertEqual(len(events), 1, events)
+
+    def test_every_round_of_both_is_in_it(self):
+        got = self.rows()
+        self.assertEqual(
+            got["latin-america-advanced-remote-duel-ycs-round-11-pairings"][0],
+            got["latin-america-genesys-remote-duel-ycs-round-1-pairings"][0])
+
+    def test_the_same_name_a_year_apart_is_two_events(self):
+        got = self.rows(*[(f"2027/ycs/latin-america-advanced-remote-duel-ycs-round-{i}-pairings",
+                           "2027-09-19") for i in range(4, 12)])
+        self.assertNotEqual(
+            got["latin-america-advanced-remote-duel-ycs-round-4-pairings"][0],
+            got["latin-america-genesys-remote-duel-ycs-round-1-pairings"][0])
+
+    def test_a_different_tournament_in_the_same_week_is_not_merged(self):
+        # Take "genesys" out of "north-america-genesys-championship" and it
+        # is still a championship, and not the WCQ running beside it.
+        rows = [(f"2026/championships/north-america-wcq-round-{i}-pairings", "2026-07-11")
+                for i in range(1, 8)]
+        rows += [(f"2026/championships/north-america-genesys-championship-round-{i}-pairings",
+                  "2026-07-11") for i in range(1, 8)]
+        got = {r["slug"]: r["event"]
+               for r in assign_events(parse_post_sitemap(urlset(*rows)))}
+        self.assertNotEqual(got["north-america-wcq-round-1-pairings"],
+                            got["north-america-genesys-championship-round-1-pairings"])
+
+    def test_two_tournaments_that_share_only_a_format_are_two(self):
+        # The Central and South America Genesys Championships ran a week
+        # apart in 2026. In a week they shared, the format would be the only
+        # word they had in common, and it is not a name.
+        rows = [(f"2026/championships/{r}-america-genesys-championship-round-{i}-pairings",
+                 "2026-06-06") for r in ("central", "south") for i in range(1, 8)]
+        got = {r["slug"]: r["event"]
+               for r in assign_events(parse_post_sitemap(urlset(*rows)))}
+        self.assertNotEqual(got["central-america-genesys-championship-round-1-pairings"],
+                            got["south-america-genesys-championship-round-1-pairings"])
+
+    def page(self, title):
+        return (f"<html><head><title>{title} – Yu-Gi-Oh! TRADING CARD GAME</title></head>"
+                "<body><div class='entry-content'><table>"
+                "<tr><td>Table</td><td>Player 1</td><td>vs.</td><td>Player 2</td></tr>"
+                "<tr><td>1</td><td>Ana Diaz</td><td>vs.</td><td>Beto Ruiz</td></tr>"
+                "</table></div></body></html>")
+
+    def test_the_heading_says_which_tournament_the_address_was_borrowed_for(self):
+        # Konami put Advanced's first three rounds on Genesys's address, and
+        # the heading is the only thing on the page that says so.
+        post = parse_post(self.page("Latin America Advanced Remote Duel YCS – Round 1 Pairings"),
+                          self.B.format("genesys", "round-1-pairings-2"))
+        self.assertEqual(post.fmt, "Advanced")
+
+    def test_the_address_still_answers_when_the_heading_is_silent(self):
+        post = parse_post(self.page("Round 1 Pairings"),
+                          self.B.format("genesys", "round-1-pairings"))
+        self.assertEqual(post.fmt, "Genesys")
+
+
+class TestAnAnnouncementAfterTheEvent(unittest.TestCase):
+    """Slack past an event's last day is for write-ups, not announcements.
+
+    YCS Guayaquil 2026 was announced the Tuesday after the Latin America
+    Remote Duel YCS, shared nothing with it but "ycs", and landed in it the
+    moment there was one Latin America event there to land in instead of two.
+    """
+
+    WINDOW = ("2026-09-18", "2026-09-20")
+
+    def test_an_announcement_after_the_event_is_of_another(self):
+        self.assertTrue(announces_a_later_event("event-information", "2026-09-22", self.WINDOW))
+
+    def test_an_announcement_during_the_event_may_be_its_own(self):
+        # Both of that YCS's own information posts went up on its final day.
+        self.assertFalse(announces_a_later_event("event-information", "2026-09-20", self.WINDOW))
+
+    def test_a_write_up_after_the_event_is_what_the_slack_is_for(self):
+        self.assertFalse(announces_a_later_event("ycs", "2026-09-22", self.WINDOW))
+
+    def test_an_undated_post_is_not_judged(self):
+        self.assertFalse(announces_a_later_event("event-information", None, self.WINDOW))
+
+    def test_an_event_filed_under_its_own_address_is_held_to_it_too(self):
+        # The same line at the rule that runs first, for events whose posts
+        # carry their slug in the URL and were never discovered.
+        rows = [(f"2026/ycs/2026-09-ycs-medellin/ycs-medellin-round-{i}-pairings",
+                 f"2026-09-{17 + i // 3:02d}") for i in range(1, 8)]
+        stray = ("2026/event-information/ycs-cartagena-2026-main-event-information",
+                 "2026-09-22")
+        got = {r["slug"]: r["event"]
+               for r in assign_events(parse_post_sitemap(urlset(*rows, stray)))}
+        self.assertIsNone(got["ycs-cartagena-2026-main-event-information"])
+
+    def test_end_to_end(self):
+        rows = [(f"2026/ycs/latin-america-genesys-remote-duel-ycs-round-{i}-pairings",
+                 f"2026-09-{17 + i // 3:02d}") for i in range(1, 8)]
+        rows += [(f"2026/ycs/latin-america-advanced-remote-duel-ycs-round-{i}-pairings",
+                  "2026-09-19") for i in range(4, 12)]
+        stray = ("2026/event-information/ycs-guayaquil-ecuador-2026-main-event-information",
+                 "2026-09-22")
+        got = {r["slug"]: r["event"]
+               for r in assign_events(parse_post_sitemap(urlset(*rows, stray)))}
+        self.assertIsNone(got["ycs-guayaquil-ecuador-2026-main-event-information"])

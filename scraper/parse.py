@@ -1483,7 +1483,13 @@ def parse_post(doc: str, url: str = "") -> Post:
     return Post(
         title=title,
         kind=kind,
-        fmt=detect_format(basis),
+        # And the format, for the same reason. Konami put the Advanced
+        # tournament's first three rounds of the September 2026 Latin America
+        # Remote Duel YCS on the Genesys tournament's address -- the slug was
+        # taken, so WordPress added "-2" -- under a heading that says Advanced.
+        # Read together, "genesys" in the URL answered first, and three rounds
+        # of Advanced pairings became Genesys's rounds 1 to 3.
+        fmt=detect_format(title) or detect_format(basis),
         round=rnd,
         table=table,
         # Only for the posts that might name a champion: the ones that announce

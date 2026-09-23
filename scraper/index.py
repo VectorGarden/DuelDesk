@@ -339,6 +339,20 @@ def names_another(slug: str, post: str, sharp: dict[str, set[str]],
                for other, n in sharp.items() if n)
 
 
+def announces_a_later_event(category: str, when: str | None, window) -> bool:
+    """Whether a post announces an event rather than covering this one.
+
+    An event's slack runs past its last day because write-ups land after it:
+    the winner's deck profile, the photo gallery. Announcements do not. Konami
+    announces an event ahead of it -- the Latin America Remote Duel YCS's own
+    two came out on its final day -- so an announcement that arrives in the
+    days after an event is announcing the next thing. Two came in that way on
+    the Monday and Tuesday after that YCS: YCS Houston 2026 and YCS Guayaquil
+    2026, both corroborated by nothing but the word "ycs".
+    """
+    return category == "event-information" and bool(when) and when > window[1]
+
+
 def _around(spans, slug: str, when: str | None) -> bool:
     """Whether an event was running anywhere near when a post was published."""
     if not spans or not when or slug not in spans:
@@ -667,7 +681,7 @@ def discover_events(records: list[dict], windows: dict, is_tournament,
         for running in _split_runnings(rows, gap_days):
             found.append((prefix, running,
                           (running[0]["lastmod"], running[-1]["lastmod"]), {prefix}))
-    found = _merge_same_qualifier(found, slack_days)
+    found = _merge_formats(_merge_same_qualifier(found, slack_days), slack_days)
 
     out: dict[str, str] = {}
     minted: set[str] = set()
@@ -738,19 +752,68 @@ def _merge_same_qualifier(found: list, slack_days: int) -> list:
             rest.append(item)
 
     for items in keyed.values():
-        items.sort(key=lambda i: i[2][0])
-        merged = [items[0]]
-        for prefix, rows, span, names in items[1:]:
-            was_prefix, was_rows, was_span, was_names = merged[-1]
-            if _overlaps(span, was_span, slack_days):
-                merged[-1] = (was_prefix if len(was_rows) >= len(rows) else prefix,
-                              was_rows + rows,
-                              (min(span[0], was_span[0]), max(span[1], was_span[1])),
-                              was_names | names)
-            else:
-                merged.append((prefix, rows, span, names))
-        rest += merged
+        rest += _merge_overlapping(items, slack_days)
     return rest
+
+
+# The formats a YCS runs in, which Konami writes into the tournament's name.
+FORMAT_WORDS = frozenset({"genesys", "advanced"})
+
+
+def _merge_formats(found: list, slack_days: int) -> list:
+    """One YCS run in two formats is one event.
+
+    The Latin America Remote Duel YCS of September 2026 ran Genesys on the
+    Friday and Advanced on the Saturday, and the blog named each after its
+    format: "latin-america-genesys-remote-duel-ycs-round-4-pairings",
+    "latin-america-advanced-remote-duel-ycs-round-4-pairings". Read as two
+    names they were two events, and only one of them was ever built -- a
+    scheduled run builds the newest, and the other was second.
+
+    An event already holds its formats side by side: YCS Columbus and YCS
+    Quebec each carry an Advanced tournament and a Genesys one, because their
+    posts share a slug in the URL and nothing had to be discovered. This puts
+    a discovered YCS in the same position.
+
+    Only names that are the same once the format is taken out, over dates
+    that meet. That leaves the 2026 North America WCQ and the Genesys
+    Championship beside it as two events, which they are: take "genesys" out
+    of "north-america-genesys-championship" and it is still a championship
+    and not a WCQ.
+    """
+    keyed: dict[str, list] = {}
+    rest = []
+    for item in found:
+        words = item[0].split("-")
+        if FORMAT_WORDS & set(words):
+            keyed.setdefault("-".join(w for w in words if w not in FORMAT_WORDS),
+                             []).append(item)
+        else:
+            rest.append(item)
+    for items in keyed.values():
+        rest += _merge_overlapping(items, slack_days)
+    return rest
+
+
+def _merge_overlapping(items: list, slack_days: int) -> list:
+    """Groups that are one event under several names, joined where dates meet.
+
+    The fuller name wins, because the group that carries it is the bigger one.
+    Every name is kept, so a post can still be found under whichever of them
+    it was slugged with.
+    """
+    items = sorted(items, key=lambda i: i[2][0])
+    merged = [items[0]]
+    for prefix, rows, span, names in items[1:]:
+        was_prefix, was_rows, was_span, was_names = merged[-1]
+        if _overlaps(span, was_span, slack_days):
+            merged[-1] = (was_prefix if len(was_rows) >= len(rows) else prefix,
+                          was_rows + rows,
+                          (min(span[0], was_span[0]), max(span[1], was_span[1])),
+                          was_names | names)
+        else:
+            merged.append((prefix, rows, span, names))
+    return merged
 
 
 def assign_events(entries: list[Entry], slack_days: int = 4,
@@ -854,6 +917,7 @@ def assign_events(entries: list[Entry], slack_days: int = 4,
         else:
             hits = [k for k, (lo, hi) in windows.items()
                     if within(e.lastmod, lo, hi) and profiles[k].names(e)
+                    and not announces_a_later_event(e.category, e.lastmod, (lo, hi))
                     and not names_another(k, e.slug, sharp, words.get(k),
                                           spans, e.lastmod)]
             kind = detect_kind(e.slug)
@@ -1166,6 +1230,7 @@ def _by_date(records: list[dict], profiles: dict[str, Profile], within,
                       rec["slug"], rec["lastmod"])
         hits = [slug for slug, p in profiles.items()
                 if within(rec["lastmod"], *p.window) and p.names(entry)
+                and not announces_a_later_event(rec["category"], rec["lastmod"], p.window)
                 and not names_another(slug, rec["slug"], sharp or {},
                                       (words or {}).get(slug), spans, rec["lastmod"])]
         if len(hits) != 1:
