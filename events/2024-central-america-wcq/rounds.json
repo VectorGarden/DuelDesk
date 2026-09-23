@@ -1,6 +1,6 @@
 {
   "event": "Central America WCQ 2024",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -11604,6 +11604,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-top-4-pairings-5/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "19:31",
+          "standingsAfter": 11,
+          "pairings": [
+            {"table":1,"a":"Eduardo Daniel Cortes Moreno","b":"Luis Gabriel Romo Rosas"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2024/championships/central-america-wcq-final-match/"
         }
       ]
     }

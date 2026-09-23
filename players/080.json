@@ -287,7 +287,7 @@
     {"e":"2022-ycs-minneapolis","cut":"Top 8","deck":"Tearlaments"},
     {"e":"2022-ycs-niagara-falls","cut":"Top 32"},
     {"e":"202205-ycs-hartford-ct"},
-    {"e":"2023-05-ycs-philadelphia","won":true,"cut":"Top 4","deck":"Kashtira"},
+    {"e":"2023-05-ycs-philadelphia","won":true,"cut":"Final","deck":"Kashtira"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-remote-duel-ycs","cut":"Top 32","deck":"Kashtira"},
     {"e":"2023-north-america-wcq"},
@@ -614,7 +614,7 @@
     {"e":"2026-08-quebec","f":"Genesys"}
   ],
   "Lopez Pezo Leonardo Alexi": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Diego Alonso Vargas Sanz": [
     {"e":"ycs-lima-peru-2023"}

@@ -38,7 +38,7 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2022-ycs-niagara-falls","cut":"Top 32"},
-    {"e":"202205-ycs-hartford-ct","cut":"Top 4","deck":"Despia Branded"},
+    {"e":"202205-ycs-hartford-ct","cut":"Final","deck":"Despia Branded"},
     {"e":"2023-05-ycs-philadelphia","cut":"Top 16","deck":"Labrynth"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-team-ycs-las-vegas"},
@@ -333,7 +333,7 @@
     {"e":"2025-south-america-wcq"},
     {"e":"2025-ycs-buenos-aires-argentina"},
     {"e":"2026-south-america-wcq"},
-    {"e":"south-america-yu-gi-oh-tcg-championship-2022","won":true,"cut":"Top 4"}
+    {"e":"south-america-yu-gi-oh-tcg-championship-2022","won":true,"cut":"Final"}
   ],
   "Elvis CA Vu": [
     {"e":"2019-03-atlanta-ga"}
@@ -604,13 +604,13 @@
   "Lauro S.": {
     "as": "Lauro Pires Schlemper"
   },
-  "Luan D.": {
-    "as": "Luan Kinh Duong"
-  },
   "Nicholas M.": {
     "as": "Nicholas Aksel Massinen"
   },
   "Jesse V.": {
     "as": "Jesse Ray Valle"
+  },
+  "Luan D.": {
+    "as": "Luan Kinh Duong"
   }
 }

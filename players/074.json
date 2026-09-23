@@ -69,7 +69,7 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-chicago"},
-    {"e":"2019-ycs-niagara-falls","won":true,"cut":"Top 8"}
+    {"e":"2019-ycs-niagara-falls","won":true,"cut":"Final"}
   ],
   "Tyler Ray Frazier": [
     {"e":"2015-150th-ycs-in-columbus"}
@@ -579,10 +579,10 @@
   "Isaac O.": {
     "as": "Isaac Ryan Olson"
   },
-  "Travis U.": {
-    "as": "Travis David Ulsh"
-  },
   "Adam F.": {
     "as": "Adam P. Faulk"
+  },
+  "Travis U.": {
+    "as": "Travis David Ulsh"
   }
 }

@@ -1,6 +1,6 @@
 {
   "event": "YCS Lima",
-  "built": 65,
+  "built": 66,
   "location": "Lima, Peru",
   "sample": false,
   "coverageBy": "Konami",
@@ -4485,6 +4485,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2025/ycs/ycs-lima-peru-round-13-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "10:27",
+          "standingsAfter": 13,
+          "pairings": [
+            {"table":1,"a":"Steven J. Trifunoski","b":"Juan Mateo Augusto Renteria Pastor"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2025/ycs/ycs-lima-peru-round-for-top-4-2/"
         }
       ]
     }

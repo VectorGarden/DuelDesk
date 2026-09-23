@@ -1,6 +1,6 @@
 {
   "event": "Team YCS Las Vegas",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -2279,6 +2279,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2020/ycs/team-ycs-las-vegas-top-4-pairings-with-decks/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "16:34",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Gonna Finish That","aRec":{"wins":10,"losses":1,"draws":1,"confidence":"derived"},"b":"Team Leon","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Dominic Eduardo Couch","aDeck":"Invoked Shaddoll","b":"James Charles Gibbs","bDeck":"SPYRAL"},{"table":2,"a":"Stephen Joseph Silverman","aDeck":"Lost World Dinosaur","b":"Ayinde Ezekiai Ross","bDeck":"Lost World Dinosaur"},{"table":3,"a":"Scott Robertson Page","aDeck":"Lost World Dinosaur","b":"Herman Charles Cosie Jr.","bDeck":"Infernoid"}]}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2020/ycs/the-final-match-is-underway/"
         }
       ]
     }

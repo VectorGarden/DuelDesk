@@ -479,6 +479,7 @@
     {"e":"2023-team-ycs-sao-paulo"},
     {"e":"2024-south-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced","cut":"Top 8"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
@@ -596,10 +597,10 @@
   "MingRui C.": {
     "as": "MingRui Cai"
   },
-  "Jalon F.": {
-    "as": "Jalon Genaro Kaimana Flores"
-  },
   "Matthew T.": {
     "as": "Matthew Shawn Terry"
+  },
+  "Jalon F.": {
+    "as": "Jalon Genaro Kaimana Flores"
   }
 }

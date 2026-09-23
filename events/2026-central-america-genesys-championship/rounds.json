@@ -1,6 +1,6 @@
 {
   "event": "Central America Genesys Championship",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
@@ -1962,6 +1962,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-round-11-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "11:07",
+          "standingsAfter": 11,
+          "pairings": [
+            {"table":1,"a":"Uziel Tapia Perez","b":"Miguel Angel Hernandez Morales"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/championships/central-america-genesys-championship-final-match/"
         }
       ]
     }

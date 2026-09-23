@@ -594,7 +594,7 @@
     {"e":"2026-08-quebec","f":"Genesys"}
   ],
   "Alvaro Chevarria Rivero": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Joseph Michael Forsey III": [
     {"e":"2026-north-america-wcq"}
@@ -614,10 +614,10 @@
   "Paul R.": {
     "as": "Paul Michael Rigg"
   },
-  "Chancellor M.": {
-    "as": "Chancellor Lon Anthony James Mezzaroba"
-  },
   "Chaz C.": {
     "as": "Chaz Braydon Chinery"
+  },
+  "Chancellor M.": {
+    "as": "Chancellor Lon Anthony James Mezzaroba"
   }
 }

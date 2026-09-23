@@ -127,7 +127,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-central-america-wcq","cut":"Top 8"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced","cut":"Final"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
@@ -562,11 +562,11 @@
   "Daniel Saleme Vila": {
     "as": "Daniel I Saleme Vila"
   },
-  "Stephen M.": {
-    "as": "Stephen Neil Muldoon Marquez"
-  },
   "Bradlly K.": {
     "as": "Bradlly James Keierleber"
+  },
+  "Stephen M.": {
+    "as": "Stephen Neil Muldoon Marquez"
   },
   "Matthew M.": {
     "as": "Matthew Mace McKinney"

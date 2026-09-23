@@ -52,7 +52,7 @@
     {"e":"2025-central-america-wcq","cut":"Top 64"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024","cut":"Top 32"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -633,11 +633,11 @@
   "MAteus O.": {
     "as": "MAteus Takes Okasaki"
   },
-  "Zachary M.": {
-    "as": "Zachary Michael Moede"
-  },
   "Thomas W.": {
     "as": "Thomas John Williams"
+  },
+  "Zachary M.": {
+    "as": "Zachary Michael Moede"
   },
   "Ruben S.": {
     "as": "Ruben June Salazar"

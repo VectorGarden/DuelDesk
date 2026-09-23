@@ -1,6 +1,6 @@
 {
   "event": "Latin America Remote Duel YCS January 2022",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -12,7 +12,7 @@
       "entrant": "Duelist",
       "swissRounds": 11,
       "duelists": 1783,
-      "champion": null,
+      "champion": "Carlos Cristobal Sepulveda Vergara",
       "rounds": [
         {
           "id": "9",
@@ -2846,6 +2846,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2022/ycs/latin-america-remote-duel-ycs-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "15:37",
+          "standingsAfter": 11,
+          "pairings": [
+            {"table":1,"a":"Carlos Cristobal Sepulveda Vergara","aRec":{"wins":14,"losses":1,"draws":0,"confidence":"derived"},"b":"Jose Luis Romero Sanchez","bRec":{"wins":14,"losses":1,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2022/ycs/latin-america-remote-duel-ycs-final-match/"
         }
       ]
     }

@@ -165,7 +165,7 @@
     {"e":"2018-ycs-santiago-chile"},
     {"e":"2019-south-america-wcq"},
     {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-latin-america-remote-duel-ycs","cut":"Top 4"},
+    {"e":"2022-latin-america-remote-duel-ycs","cut":"Final"},
     {"e":"2023-ycs-santiago-chile"},
     {"e":"2024-team-ycs-santiago-chile","cut":"Top 16"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
@@ -478,10 +478,10 @@
   "Maximillian R.": {
     "as": "Maximillian John Edward Reynolds"
   },
-  "Shawn A.": {
-    "as": "Shawn Gregory Amirfar"
-  },
   "Jeffrey N.": {
     "as": "Jeffrey Ngoc Nguyen"
+  },
+  "Shawn A.": {
+    "as": "Shawn Gregory Amirfar"
   }
 }

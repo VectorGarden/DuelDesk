@@ -1,6 +1,6 @@
 {
   "event": "South America WCQ 2025",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -3750,6 +3750,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2025/championships/south-america-wcq-pairings-for-top-4-4/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "16:55",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Felipe Bisserier Zapata","b":"Mauricio Edward Castaneda Celis"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2025/championships/south-america-wcq-final-match-2/"
         }
       ]
     }

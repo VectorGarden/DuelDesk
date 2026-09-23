@@ -14,7 +14,7 @@
     {"e":"2024-ycs-guadalajara-mexico"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"}
   ],
   "Name Withheld": [
@@ -235,11 +235,11 @@
     {"e":"2023-ycs-santa-cruz-de-la-sierra"},
     {"e":"2024-11-north-america-remote-duel-ycs","cut":"Top 32"},
     {"e":"2024-south-america-wcq"},
-    {"e":"2024-team-ycs-santiago-chile","cut":"Top 4"},
+    {"e":"2024-team-ycs-santiago-chile","cut":"Final"},
     {"e":"2024-ycs-rio-de-janeiro-brazil","cut":"Top 32"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2025-south-america-wcq","won":true,"cut":"Top 4"},
+    {"e":"2025-south-america-wcq","won":true,"cut":"Final"},
     {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 16"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-sao-paulo-brazil"},

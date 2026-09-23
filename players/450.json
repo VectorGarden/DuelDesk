@@ -572,7 +572,7 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Bryan Julio Bonifaz Rojas": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"ycs-lima-peru-2023"}
   ],
   "Wayland Guan": [
@@ -587,13 +587,13 @@
   "Fabricio Santana Campodonio": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
+  "Bradley P.": {
+    "as": "Bradley Robert Peters"
+  },
   "Jacob N.": {
     "as": "Jacob Scott Nelson"
   },
   "Pete N.": {
     "as": "Pete Joseph Navarro"
-  },
-  "Bradley P.": {
-    "as": "Bradley Robert Peters"
   }
 }

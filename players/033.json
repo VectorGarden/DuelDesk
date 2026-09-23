@@ -437,7 +437,7 @@
     {"e":"2024-ycs-guadalajara-mexico"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Eldin Don Hodzic": [
     {"e":"2024-north-america-wcq"}
@@ -482,7 +482,7 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "David Berto Campoblanco Nunovero": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Kieran Joseph Bihler": [
     {"e":"2026-north-america-wcq"}
@@ -499,10 +499,10 @@
   "Matheus Martins De Oliveira": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Saulo F.": {
-    "as": "Saulo Jared Flores"
-  },
   "Bryan L.": {
     "as": "Bryan Zachary LaBrecque"
+  },
+  "Saulo F.": {
+    "as": "Saulo Jared Flores"
   }
 }

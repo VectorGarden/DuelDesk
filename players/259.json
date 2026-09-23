@@ -542,7 +542,7 @@
   "Franklin Antonio Silva Feliz": [
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Alexis Juncos": [
@@ -554,10 +554,10 @@
   "Ian E.": {
     "as": "Ian Gerald Engel"
   },
-  "Julien K.": {
-    "as": "Julien Leo Kehon"
-  },
   "Zach L.": {
     "as": "Zach Mason Levin"
+  },
+  "Julien K.": {
+    "as": "Julien Leo Kehon"
   }
 }

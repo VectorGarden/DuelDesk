@@ -579,7 +579,7 @@
   "Jose Guillermo Ramirez Zurita": [
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Lucas Cardoso De freitas": [
     {"e":"2025-ycs-sao-paulo-brazil"}
@@ -602,13 +602,13 @@
   "Reese Anthony Villagrana": [
     {"e":"na-ygoc-2022"}
   ],
-  "Benjamin V.": {
-    "as": "Benjamin Alexis Vidrio"
-  },
   "Trayone K.": {
     "as": "Trayone Matthew King"
   },
   "Giuseppe M.": {
     "as": "Giuseppe Marra"
+  },
+  "Benjamin V.": {
+    "as": "Benjamin Alexis Vidrio"
   }
 }

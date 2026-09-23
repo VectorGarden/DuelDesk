@@ -29,11 +29,12 @@
     {"e":"2023-ycs-santiago-chile","cut":"Top 4"},
     {"e":"2024-11-north-america-remote-duel-ycs","cut":"Top 32"},
     {"e":"2024-south-america-wcq","cut":"Top 64"},
-    {"e":"2024-team-ycs-santiago-chile","cut":"Top 4"},
+    {"e":"2024-team-ycs-santiago-chile","cut":"Final"},
     {"e":"2025-south-america-wcq","cut":"Top 4"},
     {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 8"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
@@ -61,7 +62,7 @@
     {"e":"2019-ycs-niagara-falls","cut":"Top 8"},
     {"e":"2019-ycs-pasadena","cut":"Top 4","deck":"Sky Striker Orcust"},
     {"e":"2019-ycs-portland","cut":"Top 32"},
-    {"e":"2020-team-ycs-las-vegas","won":true,"cut":"Top 4","deck":"Invoked Shaddoll"},
+    {"e":"2020-team-ycs-las-vegas","won":true,"cut":"Final","deck":"Invoked Shaddoll"},
     {"e":"2020-uds-invitational-tulsa-ok"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena","cut":"Top 16","deck":"Ishizu Tearlaments"},
@@ -671,16 +672,16 @@
   "Aldrin Alarcon Garcia": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "George S.": {
-    "as": "George Lucas Sacco"
-  },
   "Corbin D.": {
     "as": "Corbin Paul Diez"
   },
-  "Dade R.": {
-    "as": "Dade Alexander Rynerson"
+  "George S.": {
+    "as": "George Lucas Sacco"
   },
   "Isaiah B.": {
     "as": "Isaiah Jeffrey Burgess"
+  },
+  "Dade R.": {
+    "as": "Dade Alexander Rynerson"
   }
 }

@@ -189,7 +189,7 @@
     {"e":"2018-11-sao-paulo-brazil","cut":"Top 32"},
     {"e":"2018-uds-invitational-sacramento-ca"},
     {"e":"2019-ycs-pasadena","cut":"Top 16","deck":"Sky Striker"},
-    {"e":"2019-ycs-portland","won":true,"cut":"Top 4"},
+    {"e":"2019-ycs-portland","won":true,"cut":"Final"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
@@ -605,7 +605,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Mao Palazzo": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Chun Hung Li": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},

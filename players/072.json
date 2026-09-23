@@ -191,7 +191,7 @@
     {"e":"2025-team-ycs-san-salvador-el-salvador","cut":"Top 4"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Mauricio Andres Palma Tralma": [
@@ -563,7 +563,7 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Thiago Ezequiel Serafini": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Dylan Andrew Schmader Montano": [
     {"e":"2026-north-america-wcq"}

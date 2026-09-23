@@ -299,7 +299,7 @@
     {"e":"2023-south-america-wcq","won":true,"cut":"Top 4"},
     {"e":"2023-team-ycs-mexico-city","cut":"Top 4"},
     {"e":"2024-south-america-wcq","cut":"Top 16"},
-    {"e":"2024-team-ycs-san-jose-costa-rica","cut":"Top 4"},
+    {"e":"2024-team-ycs-san-jose-costa-rica","cut":"Final"},
     {"e":"2024-team-ycs-santiago-chile","cut":"Top 8"},
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2024-ycs-medellin-colombia"},
@@ -307,7 +307,7 @@
     {"e":"2025-south-america-wcq","cut":"Top 32"},
     {"e":"2025-team-ycs-san-salvador-el-salvador","cut":"Top 16"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 4"},
     {"e":"2026-ycs-cartagena-colombia"},
@@ -622,10 +622,10 @@
   "Alec M.": {
     "as": "Alec Bryce Madden"
   },
-  "Bradley H.": {
-    "as": "Bradley Mario Heathman"
-  },
   "Darian C.": {
     "as": "Darian Lynn Crevier"
+  },
+  "Bradley H.": {
+    "as": "Bradley Mario Heathman"
   }
 }

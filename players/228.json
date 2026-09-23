@@ -347,7 +347,7 @@
     {"e":"2019-03-atlanta-ga","cut":"Top 8"},
     {"e":"2019-08-uds-summer-invitational-2019-indianapolis-in"},
     {"e":"2019-north-america-wcq"},
-    {"e":"2019-team-ycs-lima-peru","won":true,"cut":"Top 4"},
+    {"e":"2019-team-ycs-lima-peru","won":true,"cut":"Final"},
     {"e":"2019-uds-invitational-las-vegas-nv","cut":"Top 8","deck":"Sky Striker"},
     {"e":"2019-ycs-chicago"},
     {"e":"2019-ycs-ft-worth"},
@@ -764,10 +764,10 @@
   "Jose Miguel Lara Galdos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Blake S.": {
-    "as": "Blake Michael Sepe"
-  },
   "Amit D.": {
     "as": "Amit Singh Deol"
+  },
+  "Blake S.": {
+    "as": "Blake Michael Sepe"
   }
 }

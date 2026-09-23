@@ -38,7 +38,7 @@
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2022-ycs-guadalajara-mexico","cut":"Top 32"},
     {"e":"2023-central-america-wcq"},
-    {"e":"2023-team-ycs-mexico-city","cut":"Top 4"},
+    {"e":"2023-team-ycs-mexico-city","cut":"Final"},
     {"e":"2023-ycs-cancun-mexico"},
     {"e":"2024-central-america-wcq"},
     {"e":"2024-ycs-guadalajara-mexico"},
@@ -605,6 +605,9 @@
   ],
   "Emanuel Herrera": [
     {"e":"2026-central-america-wcq"}
+  ],
+  "Frankjer Garcia Calzadilla": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys","cut":"Top 8"}
   ],
   "Hector Alejandro Solorzano Mazariegos": [
     {"e":"2026-ycs-guatemala-city-guatemala"}

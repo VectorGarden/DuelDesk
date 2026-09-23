@@ -517,7 +517,7 @@
   "Leonardo Cuellar Justiniano": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-ycs-santa-cruz-de-la-sierra"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -723,14 +723,14 @@
   "Jose Abraham Ochoa Garcia": [
     {"e":"wcq-2016-mexico"}
   ],
+  "Orlando Q.": {
+    "as": "Orlando Lawrence Quevedo"
+  },
   "Charles C.": {
     "as": "Charles Hunter Cramer"
   },
   "Gary S.": {
     "as": "Gary Fidel Sanchez"
-  },
-  "Orlando Q.": {
-    "as": "Orlando Lawrence Quevedo"
   },
   "Eric D.": {
     "as": "Eric Diaz"

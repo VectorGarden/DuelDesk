@@ -481,7 +481,7 @@
   ],
   "Rene Quiroz Morales": [
     {"e":"2022-latin-america-remote-duel-ycs"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
   "Raiden Lucas Johnson": [
@@ -704,11 +704,11 @@
   "Uhan C.": {
     "as": "Uhan Nazirtregeon Clarke"
   },
-  "Julian V.": {
-    "as": "Julian Edwardo Valero"
-  },
   "Ryan V.": {
     "as": "Ryan Douglas Villwock"
+  },
+  "Julian V.": {
+    "as": "Julian Edwardo Valero"
   },
   "Bryce S.": {
     "as": "Bryce Thomas Sharp"

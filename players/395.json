@@ -461,7 +461,7 @@
   ],
   "Jorge Daniel Cuevas Pedraza": [
     {"e":"2023-ycs-santa-cruz-de-la-sierra"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -573,10 +573,10 @@
   "Edward Benny Soto Aybar": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Andy G.": {
-    "as": "Andy July Garcia"
-  },
   "Hector O.": {
     "as": "Hector Josue Orellana"
+  },
+  "Andy G.": {
+    "as": "Andy July Garcia"
   }
 }

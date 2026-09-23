@@ -353,7 +353,7 @@
     {"e":"2020-team-ycs-las-vegas"}
   ],
   "Aaron Demarco Pastrana": [
-    {"e":"2022-02-north-america-remote-duel-ycs","cut":"Top 4","deck":"Adventurer Prank-kids"},
+    {"e":"2022-02-north-america-remote-duel-ycs","cut":"Final","deck":"Adventurer Prank-kids"},
     {"e":"2022-january-remote-duel-ycs","cut":"Top 32"},
     {"e":"2022-remote-duel-ycs-north-america","cut":"Top 32","deck":"Tearlaments"},
     {"e":"202205-ycs-hartford-ct"},
@@ -580,6 +580,7 @@
   ],
   "Melquiades Arico": [
     {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Juan Augusto Victor De Oliveira Albuquerque": [
@@ -597,16 +598,16 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Marcelo Mauricio Leon": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "David Maceira Lauranzon": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Jayesh M.": {
-    "as": "Jayesh Yogeshchandra Madani"
-  },
   "Kareem S.": {
     "as": "Kareem Abdullah Sahib"
+  },
+  "Jayesh M.": {
+    "as": "Jayesh Yogeshchandra Madani"
   }
 }

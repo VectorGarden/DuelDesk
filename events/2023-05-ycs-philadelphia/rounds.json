@@ -1,6 +1,6 @@
 {
   "event": "YCS Philadelphia",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -19813,15 +19813,17 @@
           "phase": "Top cut",
           "state": "done",
           "order": 164,
-          "tables": null,
-          "posted": null,
+          "tables": 1,
+          "posted": "15:50",
           "standingsAfter": 12,
-          "pairings": [],
+          "pairings": [
+            {"table":1,"a":"Calvin Habib Tahan","aRec":{"wins":13,"losses":2,"draws":1,"confidence":"derived"},"aDeck":"Kashtira","b":"Denis Nadas","bRec":{"wins":14,"losses":1,"draws":1,"confidence":"derived"},"bDeck":"Kashtira"}
+          ],
           "standings": [],
           "features": [
             {"a":{"name":"Denis Nadas","deck":null,"record":null},"b":{"name":"Calvin Tahan","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2023/ycs/finals-feature-match-denis-nadas-vs-calvin-tahan/"}
           ],
-          "source": null
+          "source": "https://yugiohblog.konami.com/2023/ycs/ycs-philadelphia-finals-with-deck-type/"
         }
       ]
     }

@@ -21,7 +21,7 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-team-ycs-mexico-city"},
     {"e":"2024-central-america-wcq"},
-    {"e":"central-america-yu-gi-oh-tcg-championship-2022","cut":"Top 4"}
+    {"e":"central-america-yu-gi-oh-tcg-championship-2022","cut":"Final","deck":"Dragon Link"}
   ],
   "Antonio de Jesus Hernandez Ortiz": [
     {"e":"2013-central-american-wcq"},
@@ -46,7 +46,7 @@
     {"e":"2023-ycs-santa-cruz-de-la-sierra","cut":"Top 8"},
     {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"},
     {"e":"2024-south-america-wcq","cut":"Top 32"},
-    {"e":"2024-team-ycs-san-jose-costa-rica","cut":"Top 4"},
+    {"e":"2024-team-ycs-san-jose-costa-rica","cut":"Final"},
     {"e":"2024-team-ycs-santiago-chile"},
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2024-ycs-guayaquil-ecuador","cut":"Top 4"},
@@ -56,13 +56,13 @@
     {"e":"2025-team-ycs-san-salvador-el-salvador","cut":"Top 16"},
     {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 8"},
     {"e":"2025-ycs-lima-peru"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 4"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"remote-duel-ycs-february-2025","cut":"Top 4"},
+    {"e":"remote-duel-ycs-february-2025","cut":"Final"},
     {"e":"remote-duel-ycs-january-2024","cut":"Top 32"},
-    {"e":"remote-duel-ycs-january-2026","won":true,"cut":"Top 4"},
+    {"e":"remote-duel-ycs-january-2026","won":true,"cut":"Final"},
     {"e":"ycs-lima-peru-2023","won":true,"cut":"Top 4"}
   ],
   "Justin David Whitmer": [
@@ -526,16 +526,16 @@
   "Walter Andreus Laines Velarde": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Anas F.": {
-    "as": "Anas Faraj"
-  },
-  "Mertjan O.": {
-    "as": "Mertjan Ozbek"
+  "Dylan P.": {
+    "as": "Dylan James Perelman"
   },
   "Keon A.": {
     "as": "Keon Hee An"
   },
-  "Dylan P.": {
-    "as": "Dylan James Perelman"
+  "Mertjan O.": {
+    "as": "Mertjan Ozbek"
+  },
+  "Anas F.": {
+    "as": "Anas Faraj"
   }
 }

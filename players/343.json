@@ -59,7 +59,7 @@
     {"e":"2017-south-american-wcq"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-latin-america-remote-duel-ycs","cut":"Top 8"},
-    {"e":"2022-remote-duel-ycs-north-america","cut":"Top 4","deck":"Floowandereeze"},
+    {"e":"2022-remote-duel-ycs-north-america","cut":"Final","deck":"Floowandereeze"},
     {"e":"2022-team-ycs-quito","cut":"Top 16"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq","cut":"Top 8"},
@@ -805,10 +805,10 @@
   "Tulio A.": {
     "as": "Tulio Joaquim Altoe"
   },
-  "Jeffrey J.": {
-    "as": "Jeffrey Michael Alexander Jones"
-  },
   "Geoffrey F.": {
     "as": "Geoffrey Christian Fox"
+  },
+  "Jeffrey J.": {
+    "as": "Jeffrey Michael Alexander Jones"
   }
 }

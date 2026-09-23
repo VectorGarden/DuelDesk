@@ -1,6 +1,6 @@
 {
   "event": "YCS Santa Cruz de la Sierra",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -2621,6 +2621,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2023/ycs/ycs-santa-cruz-de-la-sierra-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "13:35",
+          "standingsAfter": 8,
+          "pairings": [
+            {"table":1,"a":"Michel Verissimo Da Silva Luiz","aRec":{"wins":10,"losses":2,"draws":0,"confidence":"derived"},"b":"Luis David Cada Aguilera","bRec":{"wins":10,"losses":2,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2023/ycs/ycs-santa-cruz-de-la-sierra-final-match/"
         }
       ]
     }

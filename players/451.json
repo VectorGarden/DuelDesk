@@ -207,7 +207,7 @@
     {"e":"2023-team-ycs-mexico-city"},
     {"e":"2024-02-team-ycs-las-vegas-nv","cut":"Top 16","deck":"Fire King Snake-Eye"},
     {"e":"2024-08-ycs-sacramento","cut":"Top 4","deck":"Fiendsmith Snake-Eye"},
-    {"e":"2024-10-cancun-mexico","cut":"Top 4"},
+    {"e":"2024-10-cancun-mexico","cut":"Final"},
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-north-america-wcq"},
@@ -237,7 +237,7 @@
     {"e":"2019-08-uds-summer-invitational-2019-indianapolis-in"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-niagara-falls"},
-    {"e":"2022-02-north-america-remote-duel-ycs","won":true,"cut":"Top 4","deck":"Destiny HERO Link P.U.N.K. Adventurer"},
+    {"e":"2022-02-north-america-remote-duel-ycs","won":true,"cut":"Final","deck":"Destiny HERO Link P.U.N.K. Adventurer"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
@@ -645,7 +645,7 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Lucas Esequiel Ovando": [
@@ -670,15 +670,16 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"}
   ],
+  "Pablo Abarca Escorriola": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
+    {"e":"remote-duel-ycs-february-2025"},
+    {"e":"remote-duel-ycs-january-2026"}
+  ],
   "Nicolas Morilla": [
     {"e":"2026-south-america-wcq"}
   ],
   "Sin Uyuni": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
-  ],
-  "Pablo Abarca Escorriola": [
-    {"e":"remote-duel-ycs-february-2025"},
-    {"e":"remote-duel-ycs-january-2026"}
   ],
   "Sebastian Antonio Orias Rodriguez": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
@@ -686,16 +687,16 @@
   "Douglas P.": {
     "as": "Douglas Felix Pretto"
   },
-  "Devon F.": {
-    "as": "Devon Wayne Filos"
-  },
-  "Anthony J.": {
-    "as": "Anthony Isaiah Jones"
-  },
   "Connor M.": {
     "as": "Connor R. Maguire"
   },
+  "Devon F.": {
+    "as": "Devon Wayne Filos"
+  },
   "Taj A.": {
     "as": "Taj Eugene Allen"
+  },
+  "Anthony J.": {
+    "as": "Anthony Isaiah Jones"
   }
 }

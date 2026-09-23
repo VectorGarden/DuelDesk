@@ -1,6 +1,6 @@
 {
   "event": "South America WCQ 2026",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
@@ -4881,6 +4881,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-pairings-for-round-13/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "14:04",
+          "standingsAfter": 13,
+          "pairings": [
+            {"table":1,"a":"Juan Sebastian Andrade Castro","b":"Franco Persano"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/championships/south-america-wcq-final-match-3/"
         }
       ]
     }

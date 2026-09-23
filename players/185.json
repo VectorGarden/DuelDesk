@@ -596,7 +596,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Pedro Daniel Angeles Solorzano": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "David Alejandro Panesso Barona": [
     {"e":"2026-ycs-cartagena-colombia"}
@@ -619,11 +619,11 @@
   "Lance A.": {
     "as": "Lance Alix"
   },
-  "Brian H.": {
-    "as": "Brian Robert Hinojosa"
-  },
   "Alexander G.": {
     "as": "Alexander John Padilla Green"
+  },
+  "Brian H.": {
+    "as": "Brian Robert Hinojosa"
   },
   "Jack P.": {
     "as": "Jack Patrick Donald Pruit"

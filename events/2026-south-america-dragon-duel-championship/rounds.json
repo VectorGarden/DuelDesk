@@ -1,6 +1,6 @@
 {
   "event": "South America Dragon Duel Championship",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
@@ -237,6 +237,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-pairings-for-round-7/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "11:03",
+          "standingsAfter": 7,
+          "pairings": [
+            {"table":1,"a":"Camila Isabel Alba","b":"Patricia Catalina Caceres Rencoret"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/championships/south-america-dragon-duel-championship-final-match-2/"
         }
       ]
     }

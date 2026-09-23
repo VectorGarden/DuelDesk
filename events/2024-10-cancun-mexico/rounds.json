@@ -1,6 +1,6 @@
 {
   "event": "YCS Cancun",
-  "built": 65,
+  "built": 66,
   "location": "Cancun, Mexico",
   "sample": false,
   "coverageBy": "Konami",
@@ -3500,6 +3500,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-top-4-pairings-2/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "16:27",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Zachary Anthony Rodriguez","b":"Ittipat Arunnaveesiri"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2024/ycs/2024-10-cancun-mexico/ycs-cancun-mexico-final-match-2/"
         }
       ]
     }

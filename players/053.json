@@ -265,7 +265,7 @@
     {"e":"2024-11-north-america-remote-duel-ycs","cut":"Top 32"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2024-team-ycs-san-jose-costa-rica","won":true,"cut":"Top 4"},
+    {"e":"2024-team-ycs-san-jose-costa-rica","won":true,"cut":"Final"},
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2024-ycs-indianapolis"},
     {"e":"2024-ycs-raleigh"},
@@ -494,11 +494,11 @@
   "Ignacio Alejandro Covarrubias Hermosilla": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Vitor M.": {
-    "as": "Vitor Mattos Milioni"
-  },
   "Matheus K.": {
     "as": "Matheus Kirian"
+  },
+  "Vitor M.": {
+    "as": "Vitor Mattos Milioni"
   },
   "Ryley G.": {
     "as": "Ryley Ayman Goff"

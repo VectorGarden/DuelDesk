@@ -305,7 +305,7 @@
   "David Ernesto Vargas Chirveches": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-ycs-santa-cruz-de-la-sierra"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -529,11 +529,11 @@
     {"e":"yu-gi-oh-tcg-world-championship-2024","cut":"Top 8","deck":"Tenpai Dragon"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Enrique I.": {
-    "as": "Enrique Ibanez"
-  },
   "Nestor M.": {
     "as": "Nestor Zai Mendez"
+  },
+  "Enrique I.": {
+    "as": "Enrique Ibanez"
   },
   "Stephanos P.": {
     "as": "Stephanos Portillo"

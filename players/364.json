@@ -466,7 +466,7 @@
   ],
   "Jesus Dario Claure": [
     {"e":"2022-latin-america-remote-duel-ycs"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Elias Miqueas Roldan": [
@@ -689,6 +689,9 @@
   ],
   "Justin Genehee Chang": [
     {"e":"2026-02-300th-na","f":"Genesys"}
+  ],
+  "Ulises Munguía": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "José Augusto de Farias de Souza": [
     {"e":"2026-south-america-wcq"}

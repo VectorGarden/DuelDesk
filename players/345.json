@@ -59,7 +59,7 @@
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-ycs-santiago-chile"},
     {"e":"2024-team-ycs-santiago-chile"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"}
   ],
   "Juan Pablo Arellano Gallo": [
@@ -625,10 +625,10 @@
   "Zhen Pei Teoh": [
     {"e":"yu-gi-oh-world-championship-2013"}
   ],
-  "Derrick L.": {
-    "as": "Derrick Khai Le"
-  },
   "Samuel B.": {
     "as": "Samuel Scott Blair"
+  },
+  "Derrick L.": {
+    "as": "Derrick Khai Le"
   }
 }

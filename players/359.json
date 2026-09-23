@@ -552,7 +552,7 @@
   "Ibrahim Eduardo Echeverria Diaz": [
     {"e":"2025-south-america-wcq"},
     {"e":"2025-ycs-lima-peru"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -601,17 +601,17 @@
   "Lucas T.": {
     "as": "Lucas Cardoso Toniol"
   },
-  "Delbert F.": {
-    "as": "Delbert Lee Feltenberger"
-  },
-  "Logan J.": {
-    "as": "Logan Patrick Johnson"
-  },
   "Raul M.": {
     "as": "Raul Machuca"
   },
   "Zackary W.": {
     "as": "Zackary Jacob Wilkinson"
+  },
+  "Logan J.": {
+    "as": "Logan Patrick Johnson"
+  },
+  "Delbert F.": {
+    "as": "Delbert Lee Feltenberger"
   },
   "Andre C.": {
     "as": "Andre Hou Gin Chan"

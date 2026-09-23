@@ -598,7 +598,7 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Astua Madrigal Alvaro": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Jencin Noel Hendricks": [
     {"e":"2026-north-america-wcq"}
@@ -628,11 +628,11 @@
   "Kagan B.": {
     "as": "Kagan Michael Bragg"
   },
-  "Gavin B.": {
-    "as": "Gavin Christopher Brosowske"
-  },
   "Esgar P.": {
     "as": "Esgar Perez"
+  },
+  "Gavin B.": {
+    "as": "Gavin Christopher Brosowske"
   },
   "Xavier Z.": {
     "as": "Xavier Scott Zimmerman"

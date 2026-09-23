@@ -544,7 +544,7 @@
     {"e":"2024-team-ycs-santiago-chile","cut":"Top 16"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-ycs-buenos-aires-argentina"},
-    {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2025-ycs-sao-paulo-brazil","cut":"Final"},
     {"e":"2026-south-america-wcq"}
   ],
   "Heitor Augusto Ferreira Cavali": [
@@ -660,17 +660,17 @@
   "Carlos Andres Cruz del Aguila": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Pablo M.": {
-    "as": "Pablo Maldonado"
-  },
-  "Markus J.": {
-    "as": "Markus Aliu Levi John"
-  },
   "Jonah C.": {
     "as": "Jonah Ryan Crader"
   },
   "Gage H.": {
     "as": "Gage Wilson Hopper"
+  },
+  "Markus J.": {
+    "as": "Markus Aliu Levi John"
+  },
+  "Pablo M.": {
+    "as": "Pablo Maldonado"
   },
   "Yacine S.": {
     "as": "Yacine Sahli"

@@ -310,7 +310,7 @@
   "German Antonio Banegas Pezo": [
     {"e":"2019-ycs-quito-ecuador"},
     {"e":"2024-ycs-guayaquil-ecuador","cut":"Top 16"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -537,7 +537,7 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"}
   ],
   "Javier Fernando Murillo Quesada": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "James Paul Solano Leon": [
     {"e":"2026-ycs-cartagena-colombia"}
@@ -555,13 +555,13 @@
   "Diego M.": {
     "as": "Diego Teodoro Medeiros"
   },
-  "Brian G.": {
-    "as": "Brian Jesus Garcia"
-  },
   "Fernando L.": {
     "as": "Fernando Miguel Lucas"
   },
   "Tyriq H.": {
     "as": "Tyriq Marquis Dewonye Hayes"
+  },
+  "Brian G.": {
+    "as": "Brian Jesus Garcia"
   }
 }

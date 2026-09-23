@@ -1,6 +1,6 @@
 {
   "event": "World Championship 2024",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -397,6 +397,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2024/championships/yu-gi-oh-tcg-world-championship-2024-top-4-pairings-and-deck-types/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "13:33",
+          "standingsAfter": 7,
+          "pairings": [
+            {"table":1,"a":"Mark Solis","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"aDeck":"Fiendsmith Snake-Eye","b":"Ruben Penaranda","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"bDeck":"Fiendsmith Yubel"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2024/championships/yu-gi-oh-tcg-world-championship-2024-final-match-and-deck-types/"
         }
       ]
     }

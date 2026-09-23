@@ -290,14 +290,14 @@
     {"e":"2019-ycs-guatemala-city-guatemala"},
     {"e":"2019-ycs-quito-ecuador","cut":"Top 32"},
     {"e":"2022-latin-america-remote-duel-ycs"},
-    {"e":"2022-team-ycs-quito","cut":"Top 4"},
+    {"e":"2022-team-ycs-quito","cut":"Final"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-undisputed-uds-championship","cut":"Top 4","deck":"Snake-Eye"},
     {"e":"2024-ycs-guayaquil-ecuador","cut":"Top 32"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-south-america-wcq"},
+    {"e":"2026-south-america-wcq","cut":"Final"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024","cut":"Top 32"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
@@ -411,7 +411,7 @@
     {"e":"2018-uds-invitational-sacramento-ca"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"wcq-2016-mexico"}
   ],
   "Tiburcio Cazares Hernandez": [
@@ -430,6 +430,7 @@
     {"e":"2025-south-america-wcq"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},

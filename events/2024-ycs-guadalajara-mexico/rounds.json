@@ -1,6 +1,6 @@
 {
   "event": "YCS Guadalajara",
-  "built": 65,
+  "built": 66,
   "location": "Guadalajara, Mexico",
   "sample": false,
   "coverageBy": "Konami",
@@ -7855,6 +7855,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2024/ycs/ycs-guadalajara-mexico-top-4-pairings-2/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "16:06",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Rodrigo Fernandez Galicia","aDeck":"Kashtira Snake-Eye","b":"Cristian Rafael Urena","bDeck":"Snake-Eye"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2024/ycs/ycs-guadalajara-mexico-final-match-2/"
         }
       ]
     }

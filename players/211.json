@@ -297,7 +297,7 @@
   ],
   "Fernando Andres Lopez Gallardo": [
     {"e":"2019-south-america-wcq","cut":"Top 16"},
-    {"e":"2019-team-ycs-lima-peru","cut":"Top 4"},
+    {"e":"2019-team-ycs-lima-peru","cut":"Final"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Jose Moises Murillo": [
@@ -364,7 +364,7 @@
     {"e":"2023-ycs-santiago-chile"},
     {"e":"2024-south-america-wcq"},
     {"e":"2025-ycs-buenos-aires-argentina"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"}
   ],
@@ -409,7 +409,7 @@
   ],
   "Rafael Ernesto Escoto Golibart": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
-    {"e":"2024-ycs-medellin-colombia","cut":"Top 8"}
+    {"e":"2024-ycs-medellin-colombia","cut":"Final"}
   ],
   "Brandon Andres Martinez Escanon": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}

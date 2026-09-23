@@ -1,6 +1,6 @@
 {
   "event": "Remote Duel YCS February 2025",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -3342,6 +3342,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2025/ycs/remote-duel-ycs-february-2025-pairings-for-top-4/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "12:48",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Jhon David Guerrero Sanchez","aRec":{"wins":10,"losses":2,"draws":1,"confidence":"derived"},"b":"Carlos Rafael Mejia Guardian","bRec":{"wins":10,"losses":2,"draws":1,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2025/ycs/remote-duel-ycs-february-2025-final-match/"
         }
       ]
     }

@@ -375,7 +375,7 @@
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-north-america-remote-duel-ycs"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Mitchell Alexander Ramirez": [
     {"e":"2022-11-ycs-pasadena"},
@@ -633,10 +633,10 @@
   "Weijian F.": {
     "as": "Weijian Fang"
   },
-  "Samuel Y.": {
-    "as": "Samuel Siwon You"
-  },
   "Derek M.": {
     "as": "Derek Charles Mead"
+  },
+  "Samuel Y.": {
+    "as": "Samuel Siwon You"
   }
 }

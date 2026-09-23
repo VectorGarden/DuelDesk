@@ -206,8 +206,8 @@
     {"e":"2025-central-america-wcq"},
     {"e":"2025-ycs-mexico-city-mexico","cut":"Top 8"},
     {"e":"2025-ycs-sao-paulo-brazil"},
-    {"e":"2026-02-300th-na"},
-    {"e":"2026-central-america-wcq","won":true,"cut":"Top 4"},
+    {"e":"2026-02-300th-na","cut":"Final","deck":"Vanquish Soul K9"},
+    {"e":"2026-central-america-wcq","won":true,"cut":"Final"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],

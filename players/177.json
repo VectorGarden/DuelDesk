@@ -26,7 +26,7 @@
     {"e":"2025-central-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"}
@@ -587,11 +587,11 @@
   "Salvador Cruz Del Saz": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Kai C.": {
-    "as": "Kai Karsten Czorg"
-  },
   "Matheus E.": {
     "as": "Matheus Degli Esposti"
+  },
+  "Kai C.": {
+    "as": "Kai Karsten Czorg"
   },
   "Brenden C.": {
     "as": "Brenden Taylor Coli"

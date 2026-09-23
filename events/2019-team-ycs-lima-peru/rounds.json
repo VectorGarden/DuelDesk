@@ -1,6 +1,6 @@
 {
   "event": "Team YCS Lima",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -1494,6 +1494,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2019/ycs/team-ycs-lima-peru-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "17:08",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"TEAM WOLVES","aRec":{"wins":9,"losses":2,"draws":1,"confidence":"derived"},"b":"Team He Scrambling","bRec":{"wins":11,"losses":1,"draws":0,"confidence":"derived"},"duels":[{"table":1,"a":"Christian Felipe Miranda Visa","aDeck":null,"b":"Cristian Rafael Urena","bDeck":null},{"table":2,"a":"Fernando Andres Lopez Gallardo","aDeck":null,"b":"Hani Yasser Jawhari","bDeck":null},{"table":3,"a":"Gustavo Alfonso Miranda Visa","aDeck":null,"b":"Arnold Nadaban Zanabria","bDeck":null}]}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2019/ycs/team-ycs-lima-peru-final-match/"
         }
       ]
     }

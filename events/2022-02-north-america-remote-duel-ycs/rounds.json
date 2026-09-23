@@ -1,6 +1,6 @@
 {
   "event": "North America Remote Duel YCS February 2022",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -3857,6 +3857,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2022/ycs/remote-duel-ycs-top-4-pairings-and-deck-types/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "17:50",
+          "standingsAfter": 10,
+          "pairings": [
+            {"a":"Aaron Demarco Pastrana","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"aDeck":"Adventurer Prank-kids","b":"Paul Stephen Aronson","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"bDeck":"Destiny HERO Link P.U.N.K. Adventurer"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2022/ycs/2022-02-north-america-remote-duel-ycs/remote-duel-ycs-time-for-the-finals/"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "event": "TEAM YCS San Jose",
-  "built": 65,
+  "built": 66,
   "location": "San Jose, Costa Rica",
   "sample": false,
   "coverageBy": "Konami",
@@ -1290,6 +1290,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2024/ycs/team-ycs-san-jose-costa-rica-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "12:16",
+          "standingsAfter": 8,
+          "pairings": [
+            {"table":1,"a":"kids next door","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Puro Plus","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Ruben Andres Penaranda","aDeck":null,"b":"Santiago Marin Lopez","bDeck":null},{"table":2,"a":"Kamal Derrick El Crooks-Valdez","aDeck":null,"b":"Jhon David Guerrero Sanchez","bDeck":null},{"table":3,"a":"Pakawat Thomas Pamornsut","aDeck":null,"b":"Carlos Andres Perez Padilla","bDeck":null}]}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2024/ycs/team-ycs-san-jose-costa-rica-final-match/"
         }
       ]
     }

@@ -603,7 +603,7 @@
   ],
   "Alexander Martinez Oyuela": [
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Adolfo Hernan Medina Llanos": [
     {"e":"2025-ycs-lima-peru"},
@@ -633,11 +633,11 @@
   "that doesn’t mean they’re out of the running yet. Chris Arantes a Duelist loses a Match": [
     {"e":"wcs-2010","deck":"Blackwings"}
   ],
-  "Timothy C.": {
-    "as": "Timothy Ty Cha"
-  },
   "Emilio T.": {
     "as": "Emilio Rafael Torres"
+  },
+  "Timothy C.": {
+    "as": "Timothy Ty Cha"
   },
   "Tobie P.": {
     "as": "Tobie John Pickell"

@@ -332,7 +332,7 @@
   "Jordan Antonio Guerrero Moreno": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Caio Martins Sanches": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -503,16 +503,16 @@
   "Brad Harol Ore Mallma": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Johny V.": {
-    "as": "Johny Tran Vu"
-  },
   "Julie T.": {
     "as": "Julie Jin Tomanio"
   },
-  "Kennedy L.": {
-    "as": "Kennedy Le"
+  "Johny V.": {
+    "as": "Johny Tran Vu"
   },
   "Travis R.": {
     "as": "Travis Dean Rippey"
+  },
+  "Kennedy L.": {
+    "as": "Kennedy Le"
   }
 }

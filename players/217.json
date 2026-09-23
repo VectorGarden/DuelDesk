@@ -348,7 +348,7 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2025-ycs-merida-mexico","won":true},
+    {"e":"2025-ycs-merida-mexico","won":true,"cut":"Final"},
     {"e":"2025-ycs-sao-paulo-brazil"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-04-team-ycs-las-vegas"},

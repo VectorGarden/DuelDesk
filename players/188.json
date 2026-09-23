@@ -45,7 +45,7 @@
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"202205-ycs-hartford-ct"},
-    {"e":"2023-05-ycs-philadelphia","cut":"Top 4","deck":"Kashtira"},
+    {"e":"2023-05-ycs-philadelphia","cut":"Final","deck":"Kashtira"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
     {"e":"2023-team-ycs-las-vegas"},
@@ -445,7 +445,7 @@
   "Mitchel Espinosa Trujillo": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2024-ycs-medellin-colombia"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Luan Sebastian Loazar": [
@@ -453,7 +453,7 @@
   ],
   "Daniel Felipe Garcia Villarraga": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Juan Paulo Ternera Moreno": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -655,11 +655,11 @@
   "William J Kim": [
     {"e":"na-ygoc-2022"}
   ],
-  "Brandon C.": {
-    "as": "Brandon Taylor Conrad"
-  },
   "Walter A.": {
     "as": "Walter Omar Angel"
+  },
+  "Brandon C.": {
+    "as": "Brandon Taylor Conrad"
   },
   "Roger T.": {
     "as": "Roger Quoc Hung Tram"
@@ -667,16 +667,16 @@
   "Martin N.": {
     "as": "Martin January Nunez"
   },
-  "Joshua L.": {
-    "as": "Joshua Ryan Levine"
-  },
-  "Jeremy C.": {
-    "as": "Jeremy David Cummins"
-  },
   "Nicholas W.": {
     "as": "Nicholas John Wetmore"
   },
   "Patrick A.": {
     "as": "Patrick Connor Ainsworth"
+  },
+  "Joshua L.": {
+    "as": "Joshua Ryan Levine"
+  },
+  "Jeremy C.": {
+    "as": "Jeremy David Cummins"
   }
 }

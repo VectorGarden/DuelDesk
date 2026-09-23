@@ -257,7 +257,7 @@
     {"e":"2017-south-american-wcq"},
     {"e":"2023-team-ycs-sao-paulo"},
     {"e":"2025-ycs-sao-paulo-brazil"},
-    {"e":"2026-south-america-genesys-championship","f":"Genesys","won":true},
+    {"e":"2026-south-america-genesys-championship","f":"Genesys","won":true,"cut":"Final"},
     {"e":"2026-south-america-wcq"}
   ],
   "Stephen Oshioramhe Danjuma Aliu": [
@@ -667,14 +667,14 @@
   "Rodrigo Togores": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
+  "Adam N.": {
+    "as": "Adam Zaid Sameer Najarbashi"
+  },
   "Jesse B.": {
     "as": "Jesse Calvin Boyer"
   },
   "Jongwon L.": {
     "as": "Jongwon John Lee"
-  },
-  "Adam N.": {
-    "as": "Adam Zaid Sameer Najarbashi"
   },
   "Brenden W.": {
     "as": "Brenden Christin Alexander Whittier"

@@ -546,6 +546,9 @@
   "Pradeep Cyriac Charath": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Missael Villegas": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
+  ],
   "Diego Adrian Vasquez": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
@@ -555,10 +558,10 @@
   "Micheal S.": {
     "as": "Micheal Thomas Sizelove"
   },
-  "Jakob M.": {
-    "as": "Jakob Gregory Morton"
-  },
   "Parham P.": {
     "as": "Parham Panah"
+  },
+  "Jakob M.": {
+    "as": "Jakob Gregory Morton"
   }
 }

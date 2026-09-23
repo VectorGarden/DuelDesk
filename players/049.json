@@ -133,7 +133,7 @@
     {"e":"201503-guatemala"},
     {"e":"2017-ycs-guatemala-city-guatemala"},
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"uds-2016-elsalvador"}
   ],
@@ -435,7 +435,7 @@
   "Chris Javier Aguilar Arellano": [
     {"e":"2024-south-america-wcq"},
     {"e":"2024-team-ycs-santiago-chile","cut":"Top 4"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Edicson Josue Castro Angulo": [
@@ -515,11 +515,11 @@
   "Bruce M.": {
     "as": "Bruce Edward Michael Menard"
   },
-  "Paul H.": {
-    "as": "Paul Anh Tuan Huynh"
-  },
   "Pernell S.": {
     "as": "Pernell Don Sayre"
+  },
+  "Paul H.": {
+    "as": "Paul Anh Tuan Huynh"
   },
   "Ethan G.": {
     "as": "Ethan Tyler Gualano"

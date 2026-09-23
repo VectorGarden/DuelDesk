@@ -1,6 +1,6 @@
 {
   "event": "YCS Rio de Janeiro",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -5280,6 +5280,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2022/ycs/ycs-rio-de-janeiro-top-4-pairings-2/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "11:24",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Joao Paulo Cavalcante Lima","aRec":{"wins":12,"losses":1,"draws":0,"confidence":"derived"},"aDeck":"Burn","b":"Marcos Vinicius Lourenco Monteiro","bRec":{"wins":11,"losses":2,"draws":0,"confidence":"derived"},"bDeck":"Mathmech Ignister"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2022/ycs/ycs-rio-de-janeiro-brazil-final-match/"
         }
       ]
     }

@@ -572,7 +572,7 @@
   ],
   "Omar Nicolas Paladines Valverde": [
     {"e":"2023-ycs-richmond"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Marvin Waldhausen": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -689,11 +689,11 @@
   "Nelvin L.": {
     "as": "Nelvin Wai Yan Lo"
   },
-  "Dominik N.": {
-    "as": "Dominik Jullian Nemeth"
-  },
   "Owen A.": {
     "as": "Owen Michael Alvarado"
+  },
+  "Dominik N.": {
+    "as": "Dominik Jullian Nemeth"
   },
   "Lijie D.": {
     "as": "Lijie Deng"

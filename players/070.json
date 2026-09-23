@@ -657,7 +657,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Keylor Porras Cordoba": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Jossue Alejandro Cardenas Cuyun": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
@@ -665,11 +665,11 @@
   "Simon Trottier-Lacasse": {
     "as": "Simon T. Trottier-Lacasse"
   },
-  "Zhiming Z.": {
-    "as": "Zhiming Zhang"
-  },
   "Peter B.": {
     "as": "Peter Edward Brown"
+  },
+  "Zhiming Z.": {
+    "as": "Zhiming Zhang"
   },
   "Brennen C.": {
     "as": "Brennen Alexander Cross"

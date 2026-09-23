@@ -158,12 +158,13 @@
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2025-south-america-wcq","cut":"Top 16"},
     {"e":"2025-team-ycs-san-salvador-el-salvador","cut":"Top 8"},
-    {"e":"2025-ycs-buenos-aires-argentina","cut":"Top 4"},
-    {"e":"2025-ycs-lima-peru"},
+    {"e":"2025-ycs-buenos-aires-argentina","cut":"Final"},
+    {"e":"2025-ycs-lima-peru","cut":"Final"},
     {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 4"},
+    {"e":"2026-team-ycs-la-paz-bolivia","cut":"Final"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"remote-duel-ycs-february-2025"},
@@ -598,7 +599,7 @@
     {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel"}
   ],
   "Julian Dangelo": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Elix Daniel Rotger Rivera": [
     {"e":"2026-north-america-wcq"}
@@ -615,17 +616,17 @@
   "Saulo S.": {
     "as": "Saulo Rangel dos Santos Silva"
   },
+  "Cristian G.": {
+    "as": "Cristian Mitchell Gutierrez"
+  },
   "Christopher D.": {
     "as": "Christopher Chen Ning Duong"
   },
   "Inderpal D.": {
     "as": "Inderpal Singh Dhaliwal"
   },
-  "Cristian G.": {
-    "as": "Cristian Mitchell Gutierrez"
-  },
-  "Joshua S.": {
-    "as": "Joshua Jordan Smith"
+  "Maximilian C.": {
+    "as": "Maximilian Kyle Chow"
   },
   "Cody B.": {
     "as": "Cody Cameron Bartz"
@@ -633,7 +634,7 @@
   "Martin G.": {
     "as": "Martin Marvyn Guillen"
   },
-  "Maximilian C.": {
-    "as": "Maximilian Kyle Chow"
+  "Joshua S.": {
+    "as": "Joshua Jordan Smith"
   }
 }

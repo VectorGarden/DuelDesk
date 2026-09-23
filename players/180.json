@@ -74,7 +74,7 @@
     {"e":"2019-team-ycs-lima-peru","cut":"Top 16"},
     {"e":"2019-ycs-quito-ecuador"},
     {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-latin-america-remote-duel-ycs","cut":"Top 4"},
+    {"e":"2022-latin-america-remote-duel-ycs","won":true,"cut":"Final"},
     {"e":"2022-ycs-rio-de-janeiro","cut":"Top 32","deck":"Branded Eldlich"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
@@ -571,11 +571,11 @@
   "Brahian Adham Chavez Quintana": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Carlos T.": {
-    "as": "Carlos J.NV Torres"
-  },
   "Jack R.": {
     "as": "Jack Manning Ramsay"
+  },
+  "Carlos T.": {
+    "as": "Carlos J.NV Torres"
   },
   "Nathaniel L.": {
     "as": "Nathaniel James Lehnhof"

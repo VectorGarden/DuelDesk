@@ -586,6 +586,7 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Andres Torres": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Santiago Rios Manzo": [
@@ -597,10 +598,10 @@
   "Brandon R.": {
     "as": "Brandon Xavier Ramos"
   },
-  "I H.": {
-    "as": "I Hao Hsu"
-  },
   "Nathaniel C.": {
     "as": "Nathaniel Paul Clifton"
+  },
+  "I H.": {
+    "as": "I Hao Hsu"
   }
 }

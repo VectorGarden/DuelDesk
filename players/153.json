@@ -607,7 +607,7 @@
     {"e":"2026-central-america-genesys-championship","f":"Genesys"}
   ],
   "Jose Alberto Salas Cruz": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Brendan Adrian Labarre": [
     {"e":"2026-north-america-wcq"}
@@ -615,11 +615,11 @@
   "Irving Luis Nava Ocampo": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Jarvanta D.": {
-    "as": "Jarvanta Dorsey"
-  },
   "Amber B.": {
     "as": "Amber Elaine Ann Brown"
+  },
+  "Jarvanta D.": {
+    "as": "Jarvanta Dorsey"
   },
   "Duncan T.": {
     "as": "Duncan Henry Tucker"

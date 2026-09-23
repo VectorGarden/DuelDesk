@@ -569,17 +569,17 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Bill Boris Zerpa Matheus": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Sebastian Catalan Munoz": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Edmond W.": {
-    "as": "Edmond Jinfeng Wu"
-  },
   "Jakob H.": {
     "as": "Jakob Donald Hardin"
+  },
+  "Edmond W.": {
+    "as": "Edmond Jinfeng Wu"
   },
   "Hao W.": {
     "as": "Hao Yi Wang"

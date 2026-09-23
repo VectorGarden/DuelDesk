@@ -288,7 +288,7 @@
   "Gustavo Alfonso Miranda Visa": [
     {"e":"2018-ycs-santiago-chile"},
     {"e":"2019-south-america-wcq","cut":"Top 8"},
-    {"e":"2019-team-ycs-lima-peru","cut":"Top 4"},
+    {"e":"2019-team-ycs-lima-peru","cut":"Final"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"}
   ],
   "Erik Kaeo Kang": [
@@ -541,10 +541,10 @@
   "Daniel Wirtu": {
     "as": "Daniel M Wirtu"
   },
-  "Kyusuh O.": {
-    "as": "Kyusuh Oh"
-  },
   "Alan T.": {
     "as": "Alan Lin Truong"
+  },
+  "Kyusuh O.": {
+    "as": "Kyusuh Oh"
   }
 }

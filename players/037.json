@@ -91,7 +91,7 @@
     {"e":"2019-ycs-chicago"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs","won":true,"cut":"Top 4"},
+    {"e":"2022-january-remote-duel-ycs","won":true,"cut":"Final"},
     {"e":"2022-team-ycs-quito","cut":"Top 16"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-minneapolis"},
@@ -104,7 +104,7 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2023-team-ycs-sao-paulo","won":true,"cut":"Top 4","deck":"Purrely"},
     {"e":"2023-ycs-cancun-mexico"},
-    {"e":"2024-team-ycs-san-jose-costa-rica","won":true,"cut":"Top 4"},
+    {"e":"2024-team-ycs-san-jose-costa-rica","won":true,"cut":"Final"},
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2024-ycs-rio-de-janeiro-brazil"},
@@ -414,7 +414,7 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2025-team-ycs-san-salvador-el-salvador","won":true,"cut":"Top 4"},
+    {"e":"2025-team-ycs-san-salvador-el-salvador","won":true,"cut":"Final"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2026-02-300th-na","f":"Advanced","won":true,"cut":"Final","deck":"Radiant Typhoon Yummy"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Azamina Fiendsmith Yummy"},
@@ -577,14 +577,14 @@
   "Connor Maguire": {
     "as": "Connor R. Maguire"
   },
-  "Danny M.": {
-    "as": "Danny Xavier Martinez"
+  "Tej A.": {
+    "as": "Tej C. Amin"
   },
   "Vasya P.": {
     "as": "Vasya David Pincus"
   },
-  "Tej A.": {
-    "as": "Tej C. Amin"
+  "Danny M.": {
+    "as": "Danny Xavier Martinez"
   },
   "Kurt A.": {
     "as": "Kurt Seiji Achiu"

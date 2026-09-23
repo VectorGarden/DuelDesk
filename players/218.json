@@ -170,7 +170,7 @@
     {"e":"2024-central-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-central-america-wcq"},
-    {"e":"central-america-yu-gi-oh-tcg-championship-2022","won":true,"cut":"Top 4"}
+    {"e":"central-america-yu-gi-oh-tcg-championship-2022","won":true,"cut":"Final","deck":"Floowandereeze"}
   ],
   "Jessica Lynn Sivieri": [
     {"e":"2016-ycs-providence-rhode-island"}
@@ -544,7 +544,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Nelson Daniel Vela Veintimilla": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Jose Luis Villadiego Silva": [
     {"e":"2026-ycs-cartagena-colombia"}

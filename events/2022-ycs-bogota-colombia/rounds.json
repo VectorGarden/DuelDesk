@@ -1,6 +1,6 @@
 {
   "event": "YCS Bogota",
-  "built": 65,
+  "built": 66,
   "location": "Bogota, Colombia",
   "sample": false,
   "coverageBy": "Konami",
@@ -5035,6 +5035,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2022/ycs/ycs-bogota-colombia-top-4-pairings-2/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "15:47",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Christopher James Lofton","aRec":{"wins":11,"losses":1,"draws":1,"confidence":"derived"},"b":"Ruben Andres Penaranda","bRec":{"wins":11,"losses":1,"draws":1,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2022/ycs/ycs-bogota-colombia-final-match-2/"
         }
       ]
     }

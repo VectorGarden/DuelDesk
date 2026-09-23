@@ -486,7 +486,7 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Jesus Daniel Bracho Martinez": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Alexander K. Merza": [
@@ -498,10 +498,10 @@
   "Finn P.": {
     "as": "Finn Alan Pedersen"
   },
-  "Giovanny G.": {
-    "as": "Giovanny Alexander Gonzalez"
-  },
   "Eric H.": {
     "as": "Eric Zacarias Freeman Hansen"
+  },
+  "Giovanny G.": {
+    "as": "Giovanny Alexander Gonzalez"
   }
 }

@@ -1,6 +1,6 @@
 {
   "event": "YCS Raleigh",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -13017,6 +13017,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2024/ycs/ycs-raleigh-pairings-and-deck-types-for-top-4/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "14:45",
+          "standingsAfter": 11,
+          "pairings": [
+            {"table":1,"a":"Cameron Taylor Neal","aDeck":"Snake-Eye","b":"Jack Zhou","bDeck":"Labrynth"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2024/ycs/ycs-raleigh-final-match-deck-types/"
         }
       ]
     }

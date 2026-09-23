@@ -1,6 +1,6 @@
 {
   "event": "UDS Invitational Bogota",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -2098,6 +2098,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2020/uds/uds-invitational-bogota-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "15:04",
+          "standingsAfter": 13,
+          "pairings": [
+            {"table":1,"a":"Oscar Alexis Vargas Martinez","aRec":{"wins":12,"losses":3,"draws":0,"confidence":"derived"},"b":"Yarid Augusto Lorduy Marin","bRec":{"wins":11,"losses":4,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2020/uds/uds-invitational-bogota-final-match/"
         }
       ]
     }

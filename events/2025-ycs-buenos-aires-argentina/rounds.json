@@ -1,6 +1,6 @@
 {
   "event": "YCS Buenos Aires",
-  "built": 65,
+  "built": 66,
   "location": "Buenos Aires, Argentina",
   "sample": false,
   "coverageBy": "Konami",
@@ -8525,6 +8525,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2025/ycs/ycs-buenos-aires-argentina-top-4-pairings-2/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "12:48",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Luca Daniel Garcia Gonzalez","b":"Juan Mateo Augusto Renteria Pastor"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2025/ycs/ycs-buenos-aires-argentina-final-match-2/"
         }
       ]
     }

@@ -175,7 +175,7 @@
     {"e":"2019-team-ycs-lima-peru"},
     {"e":"2020-uds-invitational-bogota"},
     {"e":"2022-latin-america-remote-duel-ycs"},
-    {"e":"2022-team-ycs-quito","won":true,"cut":"Top 4"},
+    {"e":"2022-team-ycs-quito","won":true,"cut":"Final"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq","cut":"Top 16"},
     {"e":"2023-team-ycs-mexico-city"},
@@ -185,7 +185,7 @@
     {"e":"2023-ycs-santiago-chile"},
     {"e":"2024-south-america-wcq","cut":"Top 64"},
     {"e":"2024-team-ycs-san-jose-costa-rica"},
-    {"e":"2024-team-ycs-santiago-chile","cut":"Top 4"},
+    {"e":"2024-team-ycs-santiago-chile","cut":"Final"},
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2025-south-america-wcq"},
@@ -194,7 +194,7 @@
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2025-ycs-sao-paulo-brazil"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
@@ -375,7 +375,7 @@
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2024-south-america-wcq"},
     {"e":"2025-ycs-buenos-aires-argentina"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Rodrigo Guedes De Souza": [
@@ -566,6 +566,9 @@
     {"e":"2026-02-300th-na"}
   ],
   "Osorio Bobadilla Gabriel": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
+  ],
+  "Humberto Andrés Torre Rodríguez": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Ronald Camilo Huaigua": [

@@ -1,6 +1,6 @@
 {
   "event": "TEAM YCS San Salvador",
-  "built": 65,
+  "built": 66,
   "location": "San Salvador, El Salvador",
   "sample": false,
   "coverageBy": "Konami",
@@ -1218,6 +1218,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2025/ycs/team-ycs-san-salvador-san-salvador-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "12:12",
+          "standingsAfter": 7,
+          "pairings": [
+            {"table":1,"a":"Fala Galera","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Look Pak at Him","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"duels":[{"table":1,"a":"Luciano Jeronimo Bregion Junior","aDeck":null,"b":"Cameron Taylor Neal","bDeck":null},{"table":2,"a":"Paulo Roberto Goncalves da Silva","aDeck":null,"b":"Cristian Rafael Urena","bDeck":null},{"table":3,"a":"Pedro Henrique Nogueira","aDeck":null,"b":"Kamal Derrick El Crooks Valdez","bDeck":null}]}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2025/ycs/team-ycs-san-salvador-el-salvador-final-match/"
         }
       ]
     }

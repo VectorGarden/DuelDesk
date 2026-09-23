@@ -1,6 +1,6 @@
 {
   "event": "YCS Portland",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -3348,15 +3348,17 @@
           "phase": "Top cut",
           "state": "done",
           "order": 164,
-          "tables": null,
-          "posted": null,
+          "tables": 1,
+          "posted": "16:04",
           "standingsAfter": 10,
-          "pairings": [],
+          "pairings": [
+            {"table":1,"a":"Yishan McNabb","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Brian Chen","bRec":{"wins":12,"losses":1,"draws":0,"confidence":"derived"}}
+          ],
           "standings": [],
           "features": [
             {"a":{"name":"Yishan McNabb","deck":null,"record":null},"b":{"name":"Brian Chen","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2019/ycs/finals-feature-match-yishan-mcnabb-vs-brian-chen/"}
           ],
-          "source": null
+          "source": "https://yugiohblog.konami.com/2019/ycs/ycs-portland-the-finals-are-about-to-begin/"
         }
       ]
     }

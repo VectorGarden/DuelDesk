@@ -364,7 +364,7 @@
     {"e":"2023-north-america-wcq"}
   ],
   "Poe Jiang": [
-    {"e":"202205-ycs-hartford-ct","won":true,"cut":"Top 4","deck":"Sky Striker"},
+    {"e":"202205-ycs-hartford-ct","won":true,"cut":"Final","deck":"Sky Striker"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
@@ -517,7 +517,7 @@
   ],
   "Allisson Paola Aburto Cordero": [
     {"e":"2025-ycs-lima-peru"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Carlos Uribe Bellido": [

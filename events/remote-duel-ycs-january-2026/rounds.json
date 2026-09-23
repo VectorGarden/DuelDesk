@@ -1,6 +1,6 @@
 {
   "event": "Remote Duel YCS January 2026",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
@@ -2907,6 +2907,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/remote-duel-ycs-january-2026-pairings-for-top-4/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "16:26",
+          "standingsAfter": 12,
+          "pairings": [
+            {"table":1,"a":"Jhon David Guerrero Sanchez","b":"Luis David Cada Aguilera"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/remote-duel-ycs-january-2026-final-match/"
         }
       ]
     }

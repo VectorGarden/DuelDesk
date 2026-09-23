@@ -1,6 +1,6 @@
 {
   "event": "North America Remote Duel YCS December 2022",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -3720,6 +3720,22 @@
             {"a":{"name":"Dominic Couch","deck":null,"record":null},"b":{"name":"Cezar Victor Lopez Coscia","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2022/ycs/top-4-feature-match-dominic-couch-versus-cezar-victor-lopez-coscia/"}
           ],
           "source": "https://yugiohblog.konami.com/2022/ycs/remote-duel-ycs-north-america-top-4-pairings-with-deck-types/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "18:27",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Cristian Rafael Urena","aRec":{"wins":11,"losses":2,"draws":1,"confidence":"derived"},"aDeck":"Tearlaments","b":"Cezar Victor Lopez Coscia","bRec":{"wins":13,"losses":1,"draws":0,"confidence":"derived"},"bDeck":"Floowandereeze"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2022/ycs/remote-duel-ycs-north-america-finals-with-deck-types/"
         }
       ]
     }

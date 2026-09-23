@@ -1,6 +1,6 @@
 {
   "event": "YCS Sao Paulo",
-  "built": 65,
+  "built": 66,
   "location": "Sao Paulo, Brazil",
   "sample": false,
   "coverageBy": "Konami",
@@ -5342,6 +5342,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2025/ycs/ycs-sao-paulo-brazil-round-13-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "16:45",
+          "standingsAfter": 13,
+          "pairings": [
+            {"table":1,"a":"Rafael Mariano Reich","b":"Joaquin Pojaghi"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2025/ycs/ycs-sao-paulo-brazil-final-match/"
         }
       ]
     }

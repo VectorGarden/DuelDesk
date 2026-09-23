@@ -49,7 +49,7 @@
     {"e":"2019-uds-invitational-las-vegas-nv"},
     {"e":"2019-ycs-chicago"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"2022-ycs-bogota-colombia","cut":"Top 4"},
+    {"e":"2022-ycs-bogota-colombia","cut":"Final"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-guadalajara-mexico","cut":"Top 32"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -641,7 +641,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Norman Edgar Fernando Torres Paz": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Jerry Martin Garza": [
@@ -653,14 +653,14 @@
   "Kriss De la Cruz": {
     "as": "Kriss M. De la Cruz"
   },
-  "Mitchell M.": {
-    "as": "Mitchell Ryan Martin"
-  },
   "Duncan B.": {
     "as": "Duncan Alexander Bruce"
   },
   "Evan P.": {
     "as": "Evan Ponce"
+  },
+  "Mitchell M.": {
+    "as": "Mitchell Ryan Martin"
   },
   "Mavrick B.": {
     "as": "Mavrick Michael Bartle"

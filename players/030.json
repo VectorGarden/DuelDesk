@@ -369,7 +369,7 @@
     {"e":"2022-ycs-rio-de-janeiro"}
   ],
   "Marcos Vinicius Lourenco Monteiro": [
-    {"e":"2022-ycs-rio-de-janeiro","cut":"Top 4","deck":"Mathmech Ignister"}
+    {"e":"2022-ycs-rio-de-janeiro","cut":"Final","deck":"Mathmech Ignister"}
   ],
   "Noelle Evelyn Yves": [
     {"e":"202205-ycs-hartford-ct"},
@@ -524,16 +524,16 @@
   "Ryan Charles Krueger": [
     {"e":"na-ygoc-2022"}
   ],
-  "Johnathan L.": {
-    "as": "Johnathan Van Luu"
-  },
   "Taylor S.": {
     "as": "Taylor Justin Sager"
   },
-  "Marco C.": {
-    "as": "Marco Antonio Cabrera"
+  "Johnathan L.": {
+    "as": "Johnathan Van Luu"
   },
   "Herman H.": {
     "as": "Herman Hans Hansson"
+  },
+  "Marco C.": {
+    "as": "Marco Antonio Cabrera"
   }
 }

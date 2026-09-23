@@ -1,6 +1,6 @@
 {
   "event": "TEAM YCS Mexico City",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -2242,6 +2242,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2023/ycs/team-ycs-mexico-city-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "13:41",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Mundo de Villanos","b":"Donnel Fan Club","duels":[{"table":1,"a":"Eli Cerdan Flores","aDeck":null,"b":"Cristian Rafael Urena","bDeck":null},{"table":2,"a":"Erick Laurentino Ramirez Rodriguez","aDeck":null,"b":"Arnold Nadaban Zanabria","bDeck":null},{"table":3,"a":"Bryan Salvador Mar Berumen","aDeck":null,"b":"Walter Jule","bDeck":null}]}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2023/ycs/team-ycs-mexico-city-final-match/"
         }
       ]
     }

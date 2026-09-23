@@ -563,7 +563,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Oscar Eusevio Espinola": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Morales Velarde Jonathan": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
@@ -577,10 +577,10 @@
   "Ramon Antonio Arrasco Chavez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Owen F.": {
-    "as": "Owen Samuel Ferrell"
-  },
   "Jesus D.": {
     "as": "Jesus Aron Davila"
+  },
+  "Owen F.": {
+    "as": "Owen Samuel Ferrell"
   }
 }

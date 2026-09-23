@@ -283,6 +283,7 @@
     {"e":"2023-ycs-cancun-mexico"},
     {"e":"2024-south-america-wcq"},
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
@@ -550,13 +551,13 @@
   "Thomas P.": {
     "as": "Thomas Dang Pham"
   },
+  "Riley W.": {
+    "as": "Riley Michael Wilhelm"
+  },
   "Khoakevin V.": {
     "as": "Khoakevin Quoc Vo"
   },
   "Ethan M.": {
     "as": "Ethan Douglass Mammen"
-  },
-  "Riley W.": {
-    "as": "Riley Michael Wilhelm"
   }
 }

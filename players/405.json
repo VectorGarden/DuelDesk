@@ -178,7 +178,7 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2023-ycs-vancouver"},
     {"e":"2024-02-team-ycs-las-vegas-nv","cut":"Final","deck":"Snake-Eye"},
-    {"e":"2024-10-cancun-mexico","cut":"Top 4"},
+    {"e":"2024-10-cancun-mexico","cut":"Final"},
     {"e":"2024-10-ycs-niagara-falls"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-north-america-wcq"},
@@ -545,19 +545,19 @@
   "Marlon M.": {
     "as": "Marlon Aguiar de Melo"
   },
-  "Camaran S.": {
-    "as": "Camaran Jack Stout"
-  },
   "Andrew E.": {
     "as": "Andrew Michael Edwards"
+  },
+  "Camaran S.": {
+    "as": "Camaran Jack Stout"
   },
   "Josh G.": {
     "as": "Josh Makana Gala"
   },
-  "Jovanny C.": {
-    "as": "Jovanny Velsain Castillo"
-  },
   "Benjamin L.": {
     "as": "Benjamin Abraham Apawan Lahoy"
+  },
+  "Jovanny C.": {
+    "as": "Jovanny Velsain Castillo"
   }
 }

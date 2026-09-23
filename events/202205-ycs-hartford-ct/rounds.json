@@ -1,6 +1,6 @@
 {
   "event": "YCS Hartford",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -13436,6 +13436,22 @@
             {"a":{"name":"Justin Singh","deck":null,"record":null},"b":{"name":"Poe Jiang","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2022/ycs/top-4-feature-match-justin-singh-vs-poe-jiang/"}
           ],
           "source": "https://yugiohblog.konami.com/2022/ycs/202205-ycs-hartford-ct/ycs-hartford-top-4-pairings-and-deck-types/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "15:47",
+          "standingsAfter": 11,
+          "pairings": [
+            {"table":1,"a":"James Jin-Young Kim","aDeck":"Despia Branded","b":"Poe Jiang","bDeck":"Sky Striker"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2022/ycs/202205-ycs-hartford-ct/ycs-hartford-finals/"
         }
       ]
     }

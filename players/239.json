@@ -154,7 +154,7 @@
     {"e":"2022-ycs-bogota-colombia"},
     {"e":"2023-250th-ycs-in-bogota-colombia","cut":"Top 32"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2023-ycs-santa-cruz-de-la-sierra","cut":"Top 4"},
+    {"e":"2023-ycs-santa-cruz-de-la-sierra","cut":"Final"},
     {"e":"2024-south-america-wcq"},
     {"e":"2024-team-ycs-san-jose-costa-rica","cut":"Top 8"},
     {"e":"2024-undisputed-uds-championship"},
@@ -167,7 +167,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"remote-duel-ycs-february-2025"},
-    {"e":"remote-duel-ycs-january-2026","cut":"Top 4"},
+    {"e":"remote-duel-ycs-january-2026","cut":"Final"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -653,13 +653,13 @@
   "Kris Stubblefield": {
     "as": "Kris D. Stubblefield"
   },
-  "Dakota B.": {
-    "as": "Dakota Trey Barker"
-  },
   "Nicholas C.": {
     "as": "Nicholas Wu Yang Casali"
   },
   "Jinlong Z.": {
     "as": "Jinlong Zeng"
+  },
+  "Dakota B.": {
+    "as": "Dakota Trey Barker"
   }
 }

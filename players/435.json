@@ -374,6 +374,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2025-south-america-wcq"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"remote-duel-ycs-february-2025"},
@@ -561,13 +562,13 @@
   "Juan Diego Arce Velasquez": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Jesse W.": {
+    "as": "Jesse Miguel Wood"
+  },
   "Timothy A.": {
     "as": "Timothy Kelly Andrews"
   },
   "Levi D.": {
     "as": "Levi James Dudley"
-  },
-  "Jesse W.": {
-    "as": "Jesse Miguel Wood"
   }
 }

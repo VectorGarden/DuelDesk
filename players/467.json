@@ -290,7 +290,7 @@
     {"e":"2025-ycs-buenos-aires-argentina"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-sao-paulo-brazil"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -629,11 +629,11 @@
   "Anthony Ruiz": {
     "as": "Anthony G. Ruiz"
   },
-  "Manan B.": {
-    "as": "Manan Bhandari"
-  },
   "Jonathan F.": {
     "as": "Jonathan Howard Free"
+  },
+  "Manan B.": {
+    "as": "Manan Bhandari"
   },
   "Conor F.": {
     "as": "Conor Denis Foley"

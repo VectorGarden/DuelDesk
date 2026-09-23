@@ -28,7 +28,7 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2022-ycs-guadalajara-mexico"},
     {"e":"2023-central-america-wcq"},
-    {"e":"2023-team-ycs-mexico-city","cut":"Top 4"},
+    {"e":"2023-team-ycs-mexico-city","cut":"Final"},
     {"e":"2024-central-america-wcq"},
     {"e":"2024-ycs-guadalajara-mexico"},
     {"e":"wcq-2016-mexico","cut":"Top 8","deck":"Extra Deck Monarchs"}
@@ -444,7 +444,7 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022","cut":"Top 4"}
   ],
   "Jorge Andres Marmol Moreno": [
@@ -726,16 +726,16 @@
   "Landon O.": {
     "as": "Landon Edward Oliver"
   },
-  "Brandon T.": {
-    "as": "Brandon Ray Tominez"
-  },
   "Chuong N.": {
     "as": "Chuong Nguyen"
   },
-  "Timofeh K.": {
-    "as": "Timofeh Nikolai Kerianoff"
+  "Brandon T.": {
+    "as": "Brandon Ray Tominez"
   },
   "Ryan A.": {
     "as": "Ryan Lee Alpert"
+  },
+  "Timofeh K.": {
+    "as": "Timofeh Nikolai Kerianoff"
   }
 }

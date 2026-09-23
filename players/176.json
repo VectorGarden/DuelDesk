@@ -360,7 +360,7 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador","cut":"Top 8"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Sean Paul Frable": [
@@ -549,11 +549,11 @@
   "Miguel Angel Mendez Zuleta": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Oscar P.": {
-    "as": "Oscar Palma"
-  },
   "Kristopher V.": {
     "as": "Kristopher Dante Vianello"
+  },
+  "Oscar P.": {
+    "as": "Oscar Palma"
   },
   "Joel H.": {
     "as": "Joel Isaac Hernandez"

@@ -292,7 +292,7 @@
     {"e":"2023-south-america-wcq","cut":"Top 4"},
     {"e":"2023-team-ycs-mexico-city","cut":"Top 16"},
     {"e":"2023-team-ycs-sao-paulo"},
-    {"e":"2023-ycs-cancun-mexico","won":true,"cut":"Top 4"},
+    {"e":"2023-ycs-cancun-mexico","won":true,"cut":"Final"},
     {"e":"2023-ycs-santa-cruz-de-la-sierra","cut":"Top 32"},
     {"e":"2023-ycs-santiago-chile"},
     {"e":"2024-south-america-wcq","cut":"Top 16"},
@@ -304,7 +304,7 @@
     {"e":"2025-team-ycs-san-salvador-el-salvador","cut":"Top 16"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2025-ycs-sao-paulo-brazil"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-cartagena-colombia"},
@@ -560,6 +560,7 @@
   ],
   "Marco Andres Riega Iriarte": [
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Ernesto Valdez Diaz": [

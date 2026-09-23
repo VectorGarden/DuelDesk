@@ -211,7 +211,7 @@
     {"e":"2019-ycs-chicago","cut":"Top 16","deck":"Subterror"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"2019-ycs-niagara-falls","cut":"Top 8"},
+    {"e":"2019-ycs-niagara-falls","cut":"Final"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-minneapolis","cut":"Top 16","deck":"Bystial Dragon Link"},
@@ -659,14 +659,14 @@
   "Sean M.": {
     "as": "Sean Michael McQuillan"
   },
-  "Sam J.": {
-    "as": "Sam Mingyan Jiang"
+  "Noah O.": {
+    "as": "Noah James Ochs"
   },
   "Jeremiah J.": {
     "as": "Jeremiah Buyco Jose"
   },
-  "Noah O.": {
-    "as": "Noah James Ochs"
+  "Sam J.": {
+    "as": "Sam Mingyan Jiang"
   },
   "Pierry C.": {
     "as": "Pierry Sebastien Cange"

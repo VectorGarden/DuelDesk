@@ -215,7 +215,7 @@
     {"e":"2025-ycs-mexico-city-mexico","cut":"Top 32"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -552,17 +552,17 @@
   "Eduardo Marzano Carreon Ruelas": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Travis A.": {
-    "as": "Travis Glen Andrews"
+  "Joe W.": {
+    "as": "Joe Corley Peacock Winkler"
   },
   "Andrew A.": {
     "as": "Andrew Amir Abdeen"
   },
-  "Joe W.": {
-    "as": "Joe Corley Peacock Winkler"
-  },
   "Aydin A.": {
     "as": "Aydin Koray Arnett"
+  },
+  "Travis A.": {
+    "as": "Travis Glen Andrews"
   },
   "Rustin A.": {
     "as": "Rustin Lloyd Araza"

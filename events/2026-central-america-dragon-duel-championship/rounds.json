@@ -1,6 +1,6 @@
 {
   "event": "Central America Dragon Duel Championship",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
@@ -247,6 +247,22 @@
           ],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/championships/central-america-dragon-duel-championship-pairings-for-round-7/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "12:37",
+          "standingsAfter": 7,
+          "pairings": [
+            {"table":1,"a":"Maximo Alexander Helgueras","aRec":{"wins":6,"losses":1,"draws":0,"confidence":"derived"},"b":"Santiago Emilio Lopez Rodriguez","bRec":{"wins":7,"losses":0,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/championships/central-america-dragon-duel-championship-final-match/"
         }
       ]
     }

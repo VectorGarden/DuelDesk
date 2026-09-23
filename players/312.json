@@ -525,10 +525,10 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
-    {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-guatemala-city-guatemala","cut":"Final"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -648,10 +648,10 @@
   "Craig S.": {
     "as": "Craig Johnston Smith"
   },
-  "Steve H.": {
-    "as": "Steve Enrique Hernandez"
-  },
   "Vishon B.": {
     "as": "Vishon Sam Bhatia"
+  },
+  "Steve H.": {
+    "as": "Steve Enrique Hernandez"
   }
 }

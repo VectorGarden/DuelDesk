@@ -170,7 +170,7 @@
     {"e":"201704-ycs-bogota-colombia"},
     {"e":"2020-uds-invitational-bogota"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Brandon Tyler Connelly": [
     {"e":"201711-san-diego-ca"}
@@ -215,7 +215,7 @@
     {"e":"2018-south-america-wcq","cut":"Top 32"},
     {"e":"2018-ycs-santiago-chile"},
     {"e":"2019-south-america-wcq"},
-    {"e":"2019-team-ycs-lima-peru","cut":"Top 4"},
+    {"e":"2019-team-ycs-lima-peru","cut":"Final"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Justin Robert Warne": [
@@ -469,14 +469,15 @@
   "Iker Guarneros Camacho": [
     {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel"}
   ],
+  "Santiago Rodrigues Gonçalves": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-south-america-genesys-championship","f":"Genesys"}
+  ],
   "Santiago Rodrigues Gonalves": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Colin Liu": [
     {"e":"2026-north-america-wcq"}
-  ],
-  "Santiago Rodrigues Gonçalves": [
-    {"e":"2026-south-america-genesys-championship","f":"Genesys"}
   ],
   "Luiz Henrique Falcão": [
     {"e":"2026-south-america-wcq"}
@@ -490,8 +491,8 @@
   "Ralph Pelaez": {
     "as": "Ralph A. Pelaez"
   },
-  "Christopher O.": {
-    "as": "Christopher Martin Olmedo"
+  "Aditya D.": {
+    "as": "Aditya Shirish Dharap"
   },
   "Dario G.": {
     "as": "Dario Alexander Guzman"
@@ -499,8 +500,8 @@
   "Demesio S.": {
     "as": "Demesio Fabian Serrano"
   },
-  "Aditya D.": {
-    "as": "Aditya Shirish Dharap"
+  "Christopher O.": {
+    "as": "Christopher Martin Olmedo"
   },
   "Jovanny H.": {
     "as": "Jovanny Hernandez"

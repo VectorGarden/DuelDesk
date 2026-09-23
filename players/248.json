@@ -36,7 +36,7 @@
     {"e":"2023-250th-ycs-in-bogota-colombia","cut":"Top 32"},
     {"e":"2023-central-america-wcq","cut":"Top 32"},
     {"e":"2023-team-ycs-mexico-city"},
-    {"e":"2024-central-america-wcq","won":true,"cut":"Top 4"},
+    {"e":"2024-central-america-wcq","won":true,"cut":"Final"},
     {"e":"2024-ycs-guadalajara-mexico"},
     {"e":"2025-central-america-wcq","cut":"Top 16"},
     {"e":"2025-ycs-merida-mexico"},
@@ -601,6 +601,9 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Luis Roman Pardo": [
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
+  ],
+  "Joan Rojas": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Jordy Lopez Martinez": [

@@ -1,6 +1,6 @@
 {
   "event": "Remote Duel YCS January 2024",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -3734,6 +3734,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-pairings-for-top-4/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "11:34",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Carlos Alejandro Terrazas Hernandez","aRec":{"wins":10,"losses":2,"draws":1,"confidence":"derived"},"b":"Rafael Mariano Reich","bRec":{"wins":11,"losses":1,"draws":1,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2024/ycs/remote-duel-ycs-january-2024-final-match/"
         }
       ]
     }

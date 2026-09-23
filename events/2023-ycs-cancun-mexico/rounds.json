@@ -1,6 +1,6 @@
 {
   "event": "YCS Cancun",
-  "built": 65,
+  "built": 66,
   "location": "Cancun, Mexico",
   "sample": false,
   "coverageBy": "Konami",
@@ -6549,6 +6549,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2023/ycs/ycs-cancun-mexico-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "17:19",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Maximillian John Edwards Reynolds","aRec":{"wins":12,"losses":2,"draws":0,"confidence":"derived"},"b":"Key Andree Chavez Curioso","bRec":{"wins":12,"losses":2,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2023/ycs/ycs-cancun-mexico-final-match/"
         }
       ]
     }

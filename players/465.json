@@ -51,7 +51,7 @@
     {"e":"2018-ycs-atlanta"},
     {"e":"2018-ycs-memphis","cut":"Top 32"},
     {"e":"2018-ycs-secaucus","cut":"Top 16","deck":"Trickstar Sky Striker"},
-    {"e":"2023-ycs-cancun-mexico","cut":"Top 4"}
+    {"e":"2023-ycs-cancun-mexico","cut":"Final"}
   ],
   "Chad Elliott Burbey": [
     {"e":"2013-north-american-wcq"}
@@ -621,7 +621,7 @@
   ],
   "Fernando Hanson Virto Varon": [
     {"e":"2025-ycs-merida-mexico"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Adenilson Reis Dos Santos": [
     {"e":"2025-ycs-sao-paulo-brazil"},
@@ -658,14 +658,8 @@
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Yucheng L.": {
-    "as": "Yucheng Li"
-  },
-  "Kyle N.": {
-    "as": "Kyle Aidan Nance"
-  },
-  "Brandon F.": {
-    "as": "Brandon Bryan Ferrell"
+  "Max C.": {
+    "as": "Max Cardenas"
   },
   "Vivek S.": {
     "as": "Vivek Naresh Sreenivasan"
@@ -673,7 +667,13 @@
   "Wyatt B.": {
     "as": "Wyatt Leland Brannock"
   },
-  "Max C.": {
-    "as": "Max Cardenas"
+  "Yucheng L.": {
+    "as": "Yucheng Li"
+  },
+  "Brandon F.": {
+    "as": "Brandon Bryan Ferrell"
+  },
+  "Kyle N.": {
+    "as": "Kyle Aidan Nance"
   }
 }

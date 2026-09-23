@@ -1,6 +1,6 @@
 {
   "event": "YCS Guadalajara",
-  "built": 65,
+  "built": 66,
   "location": "Guadalajara, Mexico",
   "sample": false,
   "coverageBy": "Konami",
@@ -10834,6 +10834,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2022/ycs/ycs-guadalajara-mexico-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "15:11",
+          "standingsAfter": 11,
+          "pairings": [
+            {"table":1,"a":"Paulo Roberto Goncalves da Silva","aRec":{"wins":12,"losses":2,"draws":1,"confidence":"derived"},"b":"Andres David Torres Reyes","bRec":{"wins":13,"losses":2,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2022/ycs/ycs-guadalajara-mexico-final-match/"
         }
       ]
     }

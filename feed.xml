@@ -6,19 +6,41 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Sep 2026 20:13:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 00:06:28 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
     <item>
-      <title>Latin America Remote Duel YCS September 2026: Beyond the Brave Initial Genesys Points</title>
-      <link>https://yugiohblog.konami.com/2026/genesys/beyond-the-brave-initial-genesys-points/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/genesys/beyond-the-brave-initial-genesys-points/</guid>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – We have a winner!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-we-have-a-winner/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-we-have-a-winner/</guid>
+      <category>Results</category>
+      <category domain="kind">result</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Mon, 21 Sep 2026 00:06:28 +0000</pubDate>
+      <description>Results from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Final Match</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-final-match/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-final-match/</guid>
       <category>News</category>
       <category domain="kind">news</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Advanced</category>
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Tue, 22 Sep 2026 20:13:49 +0000</pubDate>
+      <pubDate>Mon, 21 Sep 2026 00:00:20 +0000</pubDate>
       <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Top 4 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-top-4-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-top-4-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 23:14:03 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – We have a winner!</title>
@@ -43,6 +65,17 @@
       <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS 2026 – Main Event Information</title>
+      <link>https://yugiohblog.konami.com/2026/event-information/latin-america-advanced-remote-duel-ycs-2026-main-event-information/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/event-information/latin-america-advanced-remote-duel-ycs-2026-main-event-information/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 21:59:12 +0000</pubDate>
+      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS 2026 – Main Event Information</title>
       <link>https://yugiohblog.konami.com/2026/event-information/latin-america-genesys-remote-duel-ycs-2026-main-event-information/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/event-information/latin-america-genesys-remote-duel-ycs-2026-main-event-information/</guid>
@@ -54,6 +87,17 @@
       <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Top 8 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-top-8-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-top-8-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 21:33:59 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Top 4 Pairings</title>
       <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-top-4-pairings/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-top-4-pairings/</guid>
@@ -63,6 +107,17 @@
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
       <pubDate>Sun, 20 Sep 2026 21:31:54 +0000</pubDate>
       <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 11</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-11/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-11/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 21:28:49 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Top 8 Pairings</title>
@@ -85,6 +140,83 @@
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
       <pubDate>Sun, 20 Sep 2026 20:14:24 +0000</pubDate>
       <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 11 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-11-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-11-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 20:11:02 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 10</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-10/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-10/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 20:09:07 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 10 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-10-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-10-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 19:23:12 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 9</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-9/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-9/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 19:22:20 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 9 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-9-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-9-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 19:21:28 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 8</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-8-pairings-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-8-pairings-2/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 19:19:59 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 8 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-8-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-8-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 19:19:01 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 10 Pairings</title>
@@ -142,12 +274,89 @@
       <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 7</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-7/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sun, 20 Sep 2026 00:32:09 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 7 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-7-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-7-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sat, 19 Sep 2026 23:16:56 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 6</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-6/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sat, 19 Sep 2026 23:15:59 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-4-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-4-2/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sat, 19 Sep 2026 23:14:25 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 6 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-6-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-6-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sat, 19 Sep 2026 23:13:59 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 5 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-5-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-5-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sat, 19 Sep 2026 21:12:59 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-4/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sat, 19 Sep 2026 21:12:11 +0000</pubDate>
+      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 1 Pairings</title>
       <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-1-pairings-2/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-1-pairings-2/</guid>
       <category>Pairings</category>
       <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Advanced</category>
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
       <pubDate>Sat, 19 Sep 2026 20:40:50 +0000</pubDate>
       <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
@@ -158,9 +367,20 @@
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-2-pairings-2/</guid>
       <category>Pairings</category>
       <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Advanced</category>
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
       <pubDate>Sat, 19 Sep 2026 20:40:27 +0000</pubDate>
+      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 4 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-4-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-4-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sat, 19 Sep 2026 20:39:29 +0000</pubDate>
       <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
@@ -169,10 +389,21 @@
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-3-pairings-2/</guid>
       <category>Pairings</category>
       <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Advanced</category>
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
       <pubDate>Sat, 19 Sep 2026 20:38:51 +0000</pubDate>
       <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Welcome to the Latin America Advanced Remote Duel YCS</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-advanced-remote-duel-ycs/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-advanced-remote-duel-ycs/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Sat, 19 Sep 2026 20:34:10 +0000</pubDate>
+      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Standings after Round 7</title>
@@ -305,6 +536,17 @@
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
       <pubDate>Fri, 18 Sep 2026 18:02:04 +0000</pubDate>
       <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>Latin America Remote Duel YCS September 2026: Welcome to the Latin America Genesys Remote Duel YCS</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-genesys-remote-duel-ycs/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-genesys-remote-duel-ycs/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
+      <pubDate>Fri, 18 Sep 2026 18:01:43 +0000</pubDate>
+      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Finals Pairing</title>
@@ -2966,243 +3208,6 @@
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sat, 11 Jul 2026 15:59:23 +0000</pubDate>
       <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: Welcome to the North America World Championship Qualifier!</title>
-      <link>https://yugiohblog.konami.com/2026/championships/welcome-to-the-north-america-world-championship-qualifier/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/welcome-to-the-north-america-world-championship-qualifier/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 14:59:02 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NA WCQ Public Events Prizes and Prize Wall</title>
-      <link>https://yugiohblog.konami.com/2026/championships/na-wcq-public-events-prizes-and-prize-wall/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/na-wcq-public-events-prizes-and-prize-wall/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Public Events</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 14:57:04 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: Welcome Back to the North America Yu-Gi-Oh! World Championship Qualifier 2026!</title>
-      <link>https://yugiohblog.konami.com/2026/championships/welcome-back-to-the-north-america-yu-gi-oh-world-championship-qualifier-2026/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/welcome-back-to-the-north-america-yu-gi-oh-world-championship-qualifier-2026/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 14:56:18 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: And the World Qualifying Points Playoff Winners Are…</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/and-the-world-qualifying-points-playoff-winners-are-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/and-the-world-qualifying-points-playoff-winners-are-2/</guid>
-      <category>Results</category>
-      <category domain="kind">result</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 14:46:22 +0000</pubDate>
-      <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: Mulcharmies Spotted at the NA WCQ!</title>
-      <link>https://yugiohblog.konami.com/2026/championships/mulcharmies-spotted-at-the-na-wcq/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/mulcharmies-spotted-at-the-na-wcq/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 14:44:21 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WORLD CHAMPIONSHIP Qualifier 2026 In-Person Survey Sweepstakes Terms &amp; Conditions</title>
-      <link>https://yugiohblog.konami.com/2026/championships/north-america-world-championship-qualifier-2026-in-person-survey-sweepstakes-terms-conditions/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/north-america-world-championship-qualifier-2026-in-person-survey-sweepstakes-terms-conditions/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 14:36:17 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 1 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-1-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-1-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:35:25 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Standings after Round 1</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-1/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-1/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:33:01 +0000</pubDate>
-      <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 2 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-2-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-2-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:32:48 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Round 2 Feature Match: Shunping Xu vs. Andres Arreola</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-2-feature-match-shunping-xu-vs-andres-arreola/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-2-feature-match-shunping-xu-vs-andres-arreola/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:31:50 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Standings after Round 2</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-2/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:31:38 +0000</pubDate>
-      <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 3 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-3-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-3-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:31:18 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Standings after Round 3</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-3/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-3/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:28:58 +0000</pubDate>
-      <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 4 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-4-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-4-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:28:48 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Standings after Round 4</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-4/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-4/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:26:52 +0000</pubDate>
-      <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 5 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-5-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-5-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:26:38 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Round 3 Feature Match: Jesus Reyes Flores vs. Eric Alden Saulsbury</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-genesys-championship/genesys-championship-round-3-feature-match-jesus-reyes-flores-vs-eric-alden-saulsbury/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-genesys-championship/genesys-championship-round-3-feature-match-jesus-reyes-flores-vs-eric-alden-saulsbury/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:26:29 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Round 4 Feature Match: Hanko Chow vs. Jacob Charland</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-4-feature-match-hanko-chow-vs-jacob-charland/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-4-feature-match-hanko-chow-vs-jacob-charland/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:26:11 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Standings after Round 5</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-5/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-5/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:26:02 +0000</pubDate>
-      <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 6 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-6-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-6-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:25:53 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Standings after Round 6</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-6/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-6/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:25:27 +0000</pubDate>
-      <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 7 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-7-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-7-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sat, 11 Jul 2026 14:25:16 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

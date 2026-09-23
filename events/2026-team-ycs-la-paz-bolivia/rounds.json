@@ -1,6 +1,6 @@
 {
   "event": "TEAM YCS La Paz",
-  "built": 65,
+  "built": 66,
   "location": "La Paz, Bolivia",
   "sample": false,
   "coverageBy": "Konami",
@@ -905,6 +905,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/team-ycs-la-paz-bolivia-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "11:06",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Winners Mentality","b":"Living Fossils","duels":[{"table":1,"a":"Andres David Torres Reyes","aDeck":null,"b":"Jesse Dean Kotton","bDeck":null},{"table":2,"a":"Juan Mateo Augusto Renteria Pastor","aDeck":null,"b":"Patrick Jefferson Hoban","bDeck":null},{"table":3,"a":"Rafael Mariano Reich","aDeck":null,"b":"Christopher Jordan LeBlanc","bDeck":null}]}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/team-ycs-la-paz-bolivia-final-match/"
         }
       ]
     }

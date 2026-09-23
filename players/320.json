@@ -613,7 +613,7 @@
   ],
   "Santiago Emilio Lopez Rodriguez": [
     {"e":"2026-02-300th-na"},
-    {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel","won":true}
+    {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel","won":true,"cut":"Final"}
   ],
   "Teo Eugene Montoya Jr.": [
     {"e":"2026-04-team-ycs-las-vegas"}
@@ -636,17 +636,17 @@
   "John Alexander Wilken": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Canada","cut":"Top 8"}
   ],
-  "Skyler S.": {
-    "as": "Skyler Weston Sprouse"
-  },
   "Braxton H.": {
     "as": "Braxton Kendall Hodges"
   },
-  "Erkam Y.": {
-    "as": "Erkam Omer Yilmaz"
+  "Skyler S.": {
+    "as": "Skyler Weston Sprouse"
   },
   "Andrew L.": {
     "as": "Andrew Lam"
+  },
+  "Erkam Y.": {
+    "as": "Erkam Omer Yilmaz"
   },
   "Triston M.": {
     "as": "Triston Michael Mendez"

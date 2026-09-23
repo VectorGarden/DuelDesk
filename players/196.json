@@ -249,7 +249,7 @@
     {"e":"2022-02-north-america-remote-duel-ycs","cut":"Top 32"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-team-ycs-quito","cut":"Top 16"},
-    {"e":"2022-ycs-bogota-colombia","cut":"Top 4"},
+    {"e":"2022-ycs-bogota-colombia","cut":"Final"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-guadalajara-mexico"},
     {"e":"2022-ycs-minneapolis"},
@@ -265,7 +265,7 @@
     {"e":"2024-10-cancun-mexico","cut":"Top 32"},
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2024-north-america-wcq","cut":"Top 64","deck":"Fiendsmith Snake-Eye"},
-    {"e":"2024-team-ycs-san-jose-costa-rica","won":true,"cut":"Top 4"},
+    {"e":"2024-team-ycs-san-jose-costa-rica","won":true,"cut":"Final"},
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2024-ycs-indianapolis"},
@@ -659,11 +659,11 @@
   "Cameron N.": {
     "as": "Cameron Taylor Neal"
   },
-  "Benito G.": {
-    "as": "Benito Enrique Garcia"
-  },
   "Kolton S.": {
     "as": "Kolton Allan Schroeder"
+  },
+  "Benito G.": {
+    "as": "Benito Enrique Garcia"
   },
   "Nathan K.": {
     "as": "Nathan Yongjin Kim"

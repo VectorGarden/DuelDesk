@@ -90,7 +90,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-undisputed-uds-championship","cut":"Top 4","deck":"Fire King Snake-Eye"},
     {"e":"2024-ycs-indianapolis","cut":"Top 16","deck":"Snake-Eye"},
-    {"e":"2024-ycs-raleigh","won":true,"cut":"Top 4","deck":"Snake-Eye"},
+    {"e":"2024-ycs-raleigh","won":true,"cut":"Final","deck":"Snake-Eye"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-04-ycs-houston"},
@@ -99,7 +99,7 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2025-team-ycs-san-salvador-el-salvador","won":true,"cut":"Top 4"},
+    {"e":"2025-team-ycs-san-salvador-el-salvador","won":true,"cut":"Final"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail","cut":"Final"},
@@ -629,17 +629,17 @@
   "Josh Kelly": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Final","deck":"Light and Darkness Ritual"}
   ],
+  "James E.": {
+    "as": "James Robert Esquibel"
+  },
+  "Peter N.": {
+    "as": "Peter Phuong Nguyen"
+  },
   "Dylan G.": {
     "as": "Dylan Maxwell Graves"
   },
   "Etienne B.": {
     "as": "Etienne Jose Bonin"
-  },
-  "Peter N.": {
-    "as": "Peter Phuong Nguyen"
-  },
-  "James E.": {
-    "as": "James Robert Esquibel"
   },
   "Jared P.": {
     "as": "Jared Mikel Perez"

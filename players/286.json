@@ -74,7 +74,7 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "James Manuel Manley": [
     {"e":"2014-ycs-philadelphia-pa"},
@@ -535,7 +535,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Brayan Alejandro Gordon Castro": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "William Vela": [
@@ -559,10 +559,10 @@
   "Bradul O.": {
     "as": "Bradul Antonyo Ortiz"
   },
-  "Alexander A.": {
-    "as": "Alexander Joshua Aviles"
-  },
   "Mikaylah K.": {
     "as": "Mikaylah Anne Krebbs"
+  },
+  "Alexander A.": {
+    "as": "Alexander Joshua Aviles"
   }
 }

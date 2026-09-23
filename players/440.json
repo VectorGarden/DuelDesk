@@ -171,7 +171,7 @@
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
     {"e":"2019-ycs-guadalajara"},
     {"e":"2023-central-america-wcq"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -442,7 +442,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Javier Ignacio Uzcategui Santiago": [
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Jose Angel Delgado Gonzalez": [
@@ -451,10 +451,10 @@
   "Gerald Alexis Castaneda Lozano": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Issac P.": {
-    "as": "Issac Javier Peralez"
-  },
   "Travis L.": {
     "as": "Travis James Ludd"
+  },
+  "Issac P.": {
+    "as": "Issac Javier Peralez"
   }
 }

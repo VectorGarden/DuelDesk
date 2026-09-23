@@ -81,7 +81,7 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2018-ycs-salt-lake-city"},
     {"e":"2019-ycs-pasadena"},
-    {"e":"2020-team-ycs-las-vegas","cut":"Top 4","deck":"Infernoid"},
+    {"e":"2020-team-ycs-las-vegas","cut":"Final","deck":"Infernoid"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2025-10-ycs-anaheim"},
@@ -123,7 +123,7 @@
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2025-central-america-wcq"},
     {"e":"2025-team-ycs-san-salvador-el-salvador","cut":"Top 16"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"uds-2016-elsalvador"}
   ],
   "Bailey Christian Smith": [
@@ -608,7 +608,7 @@
   "Sebastian Ignacio Siegel Rozas": [
     {"e":"2023-south-america-wcq","cut":"Top 64"},
     {"e":"2024-team-ycs-santiago-chile"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Albert Thomas Macias": [
     {"e":"2023-team-ycs-las-vegas"}
