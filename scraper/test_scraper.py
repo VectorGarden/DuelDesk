@@ -10383,3 +10383,89 @@ class TestAFinalCarriedByAPostOfAnotherKind(unittest.TestCase):
     def test_two_posts_naming_one_final_are_one_final(self):
         self.assertIsNotNone(self.final_round(self.event(
             self.final("Ada", "Cy"), self.final("Ada", "Cy", url="https://x/final-match-2/"))))
+
+
+class TestAFormatsOwnSection(unittest.TestCase):
+    """"genesys" is how a tournament is played, and the name of a blog section.
+
+    Konami posts the Genesys points list in /genesys/ every time a set comes
+    out, and every one of its slugs says "genesys" -- the word four 2026
+    events share. Two lists had nothing else in common with an event and
+    became its coverage: the September 2026 Latin America Remote Duel YCS got
+    "beyond-the-brave-initial-genesys-points", and the South America Genesys
+    Championship got "genesys-june-points-update".
+    """
+
+    def profile(self, slug, terms, categories=("ycs",)):
+        from index import Profile, name_terms
+        return Profile(window=("2026-09-18", "2026-09-20"), categories=set(categories),
+                       terms=set(terms), name=frozenset(name_terms(slug)))
+
+    def entry(self, category, slug):
+        from index import Entry
+        return Entry(f"https://yugiohblog.konami.com/2026/{category}/{slug}/", "2026",
+                     category, None, slug, "2026-09-22")
+
+    LATIN = ("2026-latin-america-genesys-remote-duel-ycs",
+             {"america", "duel", "genesys", "latin", "pairings", "remote", "round", "ycs"})
+
+    def test_a_points_list_is_not_coverage(self):
+        self.assertFalse(self.profile(*self.LATIN).names(
+            self.entry("genesys", "beyond-the-brave-initial-genesys-points")))
+
+    def test_coverage_from_the_section_that_names_its_event_is(self):
+        # Its event's path profile knows five words, from three feature
+        # matches: "championship", not "championships".
+        na = self.profile("2026-north-america-genesys-championship",
+                          {"championship", "feature", "genesys", "match", "round"},
+                          categories=("championships",))
+        self.assertTrue(na.names(self.entry(
+            "genesys", "2026-north-america-genesys-championships-standings-after-day-1")))
+
+    def test_the_format_word_still_counts_outside_the_section(self):
+        # A Genesys side event, the weekend the Genesys Championship and the
+        # WCQ ran side by side, filed under /ycs/: the format is the only word
+        # that says which event it ran under.
+        na = self.profile("2026-north-america-genesys-championship",
+                          {"championship", "feature", "genesys", "match", "round"},
+                          categories=("championships",))
+        self.assertTrue(na.names(self.entry(
+            "ycs", "friday-genesys-attack-of-the-giant-card-winners")))
+
+    def test_plurals_are_folded_only_there(self):
+        # Folded everywhere, "duelists" became the "duelist" of the 2017 UDS
+        # Winter Invitational's "ultimate-duelist-series" coverage, and a
+        # Guatemala bounty post became coverage of Las Vegas.
+        uds = self.profile("201703-uds-winter-invitational-las-vegas",
+                           {"duelist", "invitational", "series", "ultimate", "winter"},
+                           categories=("uds",))
+        self.assertFalse(uds.names(self.entry(
+            "ycs", "ycs-guatemala-city-guatemala-bounty-duelists")))
+
+    def test_a_shared_category_is_still_enough(self):
+        # Untouched: a post in a section the event itself uses is taken at its
+        # word, which is what the category rule was always for.
+        self.assertTrue(self.profile(*self.LATIN, categories=("genesys",)).names(
+            self.entry("genesys", "beyond-the-brave-initial-genesys-points")))
+
+    def test_an_event_filed_under_its_own_address_knows_its_name(self):
+        # The 2026 North America Genesys Championship carried its slug on three
+        # feature matches, which is all its profile is built from.
+        rows = [(f"2026/championships/2026-north-america-genesys-championship/"
+                 f"genesys-championship-round-{i}-feature-match-ada-vs-bo", "2026-07-11")
+                for i in (3, 6, 7)]
+        stray = ("2026/genesys/2026-north-america-genesys-championships-standings-after-day-1",
+                 "2026-07-11")
+        got = {r["slug"]: r["event"]
+               for r in assign_events(parse_post_sitemap(urlset(*rows, stray)))}
+        self.assertEqual(got["2026-north-america-genesys-championships-standings-after-day-1"],
+                         "2026-north-america-genesys-championship")
+
+    def test_end_to_end(self):
+        rows = [(f"2026/ycs/latin-america-genesys-remote-duel-ycs-round-{i}-pairings",
+                 f"2026-09-{17 + i // 3:02d}") for i in range(1, 8)]
+        stray = ("2026/genesys/beyond-the-brave-initial-genesys-points", "2026-09-21")
+        got = {r["slug"]: r["event"]
+               for r in assign_events(parse_post_sitemap(urlset(*rows, stray)))}
+        self.assertIsNone(got["beyond-the-brave-initial-genesys-points"])
+        self.assertIsNotNone(got["latin-america-genesys-remote-duel-ycs-round-1-pairings"])
