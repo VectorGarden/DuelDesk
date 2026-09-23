@@ -7103,6 +7103,56 @@ class TestFoldedNames(unittest.TestCase):
         warm, _ = self.fold(*rows)
         self.assertEqual(cold, warm)
 
+    def test_a_name_written_twice_is_the_name(self):
+        # The 2013 World Championship's final pairs David J. Keener III with
+        # "Shin En Huang Shin En Huang". Every word of Shin En Huang is a word
+        # of that, so it read as his full name and replaced him everywhere.
+        canon, sources = self.fold(
+            [["1", "Shin En", "Huang", "vs.", "Kei", "Murakoshi"]],
+            [["1", "David J.", "Keener III", "vs.", "Shin En Huang Shin En", "Huang"]],
+            cut_round="Final")
+        self.assertEqual(canon.get("Shin En Huang Shin En Huang"), "Shin En Huang")
+        self.assertNotIn("Shin En Huang", canon)
+        self.assertEqual(sources[1].post.table.rows[0]["b"]["name"], "Shin En Huang")
+
+    def test_a_name_that_is_one_word_twice_is_somebodys(self):
+        # Yang Yang played the 2013 San Diego YCS, and nobody there is Yang.
+        canon, _ = self.fold([["1", "Yang", "Yang", "vs.", "Kei", "Murakoshi"]],
+                             [["1", "Yang", "Yang", "vs.", "Kei", "Murakoshi"]])
+        self.assertNotIn("Yang Yang", canon)
+
+    def test_a_double_surname_is_still_the_longer_name(self):
+        # Four hundred Duelists here repeat a surname. "Misael Garcia" in a cut
+        # is Misael Garcia Garcia, not a misprint of him.
+        canon, _ = self.fold([["1", "Misael", "Garcia Garcia", "vs.", "Kei", "Murakoshi"]],
+                             [["1", "Misael", "Garcia", "vs.", "Kei", "Murakoshi"]])
+        self.assertEqual(canon.get("Misael Garcia"), "Misael Garcia Garcia")
+
+    def test_two_redacted_duelists_are_not_one_written_twice(self):
+        # Konami prints some Duelists as asterisks. Neither "***" nor "*** ***"
+        # has a word in it, and nothing is a name written twice when there is
+        # no name.
+        canon, _ = self.fold([["1", "***", "", "vs.", "Kei", "Murakoshi"]],
+                             [["1", "***", "***", "vs.", "Kei", "Murakoshi"]])
+        self.assertEqual(canon, {})
+
+    def test_two_seated_against_each_other_are_two(self):
+        canon, _ = self.fold([["1", "Tomas", "Dughera", "vs.", "Tomas Dughera Tomas", "Dughera"]],
+                             [["1", "Tomas", "Dughera", "vs.", "Kei", "Murakoshi"]])
+        self.assertNotIn("Tomas Dughera Tomas Dughera", canon)
+
+    def test_the_name_it_misprints_can_still_be_a_shortening(self):
+        from build import reconcile_names
+        sources = [_src("https://x/r1/", "Round 1 Pairings", PAIR_HEAD,
+                        [["1", "Tomas Ezequiel", "Dughera", "vs.", "Kei", "Murakoshi"]]),
+                   _src("https://x/t8/", "Top 8 Pairings", PAIR_HEAD,
+                        [["1", "Tomas", "Dughera", "vs.", "Kei", "Murakoshi"]]),
+                   _src("https://x/t4/", "Top 4 Pairings", PAIR_HEAD,
+                        [["1", "Tomas Dughera Tomas", "Dughera", "vs.", "Kei", "Murakoshi"]])]
+        canon = reconcile_names(sources)
+        self.assertEqual(canon.get("Tomas Dughera Tomas Dughera"), "Tomas Ezequiel Dughera")
+        self.assertEqual(canon.get("Tomas Dughera"), "Tomas Ezequiel Dughera")
+
     def test_a_shortening_of_both_ends_is_still_found(self):
         # The candidate index is keyed on a first letter, not a whole word,
         # because ends_agree accepts a prefix: "Ben" agrees with "Benjamin".
@@ -10375,6 +10425,22 @@ class TestAFinalCarriedByAPostOfAnotherKind(unittest.TestCase):
         got = self.final_round(fmt)
         self.assertIsNotNone(got)
         self.assertEqual(got["pairings"][0]["b"], "Roberto Lopez Arce")
+
+    def test_a_final_that_prints_a_name_twice_does_not_rename_anybody(self):
+        # What #285 shipped: the 2013 World Championship's final read "Shin En
+        # Huang Shin En Huang", and its champion became that.
+        import json
+        from build import build_format
+        top8 = [("David J. Keener III", "Aaron Riker"), ("Robert Boyajian", "Weerapun S"),
+                ("Sergio Soldani", "Hiromi Kudou"), ("Kei Murakoshi", "Shin En Huang")]
+        fmt = build_format(None, [
+            self.source("Round 1 Pairings", "pairings", 1, top8),
+            self.source("Top 8 Pairings", "pairings", "Top 8", top8),
+            self.final("David J. Keener III", "Shin En Huang Shin En Huang")])
+        got = self.final_round(fmt)
+        self.assertIsNotNone(got)
+        self.assertEqual(got["pairings"][0]["b"], "Shin En Huang")
+        self.assertNotIn("Shin En Huang Shin En Huang", json.dumps(fmt))
 
     def test_two_posts_naming_two_finals_name_none(self):
         self.assertIsNone(self.final_round(self.event(
