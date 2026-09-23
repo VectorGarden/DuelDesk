@@ -222,15 +222,19 @@ CALENDAR = {"winter", "spring", "summer", "autumn", "fall",
             "august", "september", "october", "november", "december"}
 
 
-def name_terms(slug: str) -> set[str]:
-    """The words of a name, with plurals folded onto the singular.
+def fold(terms) -> set[str]:
+    """Words with plurals folded onto the singular.
 
     "2026-north-america-genesys-championship" and a post that calls it the
     "genesys-championships-standings" are saying the same name, and a rule
     that reads one word at a time has to be able to see that.
     """
-    return {t[:-1] if t.endswith("s") and len(t) > 4 else t
-            for t in slug_terms(slug)}
+    return {t[:-1] if t.endswith("s") and len(t) > 4 else t for t in terms}
+
+
+def name_terms(slug: str) -> set[str]:
+    """The words of a name, plurals folded."""
+    return fold(slug_terms(slug))
 
 
 def namesakes(slugs, records: list[dict] | None = None) -> dict[str, set[str]]:
@@ -326,8 +330,7 @@ def names_another(slug: str, post: str, sharp: dict[str, set[str]],
     # A slug is not always the name. The event Konami filed under
     # "2018-11-sao-paulo-brazil" is YCS Pasadena, and forty-five of its posts
     # say so, so "pasadena" is its word however its slug reads.
-    ours = name_terms(slug) | {t[:-1] if t.endswith("s") and len(t) > 4 else t
-                               for t in (terms or ())}
+    ours = name_terms(slug) | fold(terms or ())
     said = name_terms(post)
     # Nothing to judge: either the post writes this event's name in full, or
     # the event has no name to write -- "2026-02-300th-na" is a filing
@@ -367,6 +370,13 @@ class Profile:
     window: tuple[str, str]
     categories: set[str]
     terms: set[str]
+    # The words of the event's own name, plurals folded. Only a path profile
+    # needs telling: it is built from whichever posts happen to carry the slug
+    # in their URL, which for the 2026 North America Genesys Championship was
+    # three feature matches, and its vocabulary never learned it was a North
+    # America championship. A discovered event is found by the name its posts
+    # open with, so every one of them says it and its terms already do.
+    name: frozenset[str] = frozenset()
 
     def names(self, entry: Entry) -> bool:
         """Whether this post corroborates the event beyond merely sharing a date.
@@ -381,7 +391,31 @@ class Profile:
         say the event's name -- which is read from the coverage's own slugs
         rather than a list, so it works for an event nobody has named yet.
         """
-        return entry.category in self.categories or bool(self.terms & slug_terms(entry.slug))
+        if entry.category in self.categories:
+            return True
+        shared = self.terms & slug_terms(entry.slug)
+        if entry.category not in FORMAT_WORDS:
+            return bool(shared)
+        # A format's own section is held to more. Konami posts the Genesys
+        # points list there every time a set comes out, and "genesys" -- the
+        # section's subject, in every one of its slugs -- is also a word four
+        # 2026 events share. Two points lists had nothing else in common with
+        # an event and became its coverage: "beyond-the-brave-initial-genesys-
+        # points" the Latin America Remote Duel YCS's, "genesys-june-points-
+        # update" the South America Genesys Championship's.
+        #
+        # So from there the format word counts for nothing, and a post must say
+        # something else about the event -- in its coverage's words or in its
+        # name, plurals folded: "2026-north-america-genesys-championships-
+        # standings-after-day-1" says North America championship, and that is
+        # its event.
+        #
+        # Only there. Elsewhere "genesys" does honest work: "friday-genesys-
+        # attack-of-the-giant-card-winners" is the side event of the weekend
+        # the Genesys Championship and the WCQ shared, and the format is the
+        # only word that says which of the two it ran under.
+        shared |= self.name & name_terms(entry.slug)
+        return bool(shared - FORMAT_WORDS - fold(FORMAT_WORDS))
 
 
 def event_profiles(entries: list[Entry], gap_days: int = GAP_DAYS) -> dict[str, Profile]:
@@ -394,6 +428,7 @@ def event_profiles(entries: list[Entry], gap_days: int = GAP_DAYS) -> dict[str, 
     for slug, posts in own.items():
         counts = Counter(t for p in posts for t in slug_terms(p.slug))
         out[slug] = Profile(
+            name=frozenset(name_terms(slug)),
             window=tight_window([p.lastmod for p in posts], gap_days),
             categories={p.category for p in posts},
             terms={t for t, n in counts.items() if n >= MIN_TERM_SHARE * len(posts)})
