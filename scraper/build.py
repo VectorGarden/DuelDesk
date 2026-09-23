@@ -349,8 +349,18 @@ def round_key(post) -> tuple[str, Any]:
 #     before, or, with no cut published, both from the field. That turns
 #     away the 2023 Central America WCQ's Points Playoff final, which went up
 #     that week under the same name between two people who never reached the
-#     WCQ's Top 4. No champion changes.
-BUILD_VERSION = 66
+#     WCQ's Top 4. It was measured to change no champion, and changed one:
+#     see 67.
+#  67 A name written twice is that name. The 2013 World Championship's final,
+#     read for the first time at 66, pairs David J. Keener III with "Shin En
+#     Huang Shin En Huang", and the rule that folds a shortened name into its
+#     full one took that for his: it replaced him in all ten places he
+#     appears and made it the event's champion. Folded the other way now,
+#     wherever the name also appears once -- and only there. Four hundred
+#     Duelists here really are Garcia Garcia or Martinez Martinez, and the
+#     Remote Duel YCS of January 2026 prints "Tomas Dughera Tomas Dughera"
+#     in all twenty-one places and never once, which is nothing to go on.
+BUILD_VERSION = 67
 
 
 @dataclass
@@ -690,7 +700,29 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
 
     longest = max((len(_words(n)) for n in names), default=0)
 
-    canon: dict[str, str] = {}
+    # A name written twice is that name, misprinted -- not a longer one. The
+    # 2013 World Championship's final pairs David J. Keener III with "Shin En
+    # Huang Shin En Huang", and every word of "Shin En Huang" is a word of
+    # that, so the shortening rule took it for his full name and wrote it
+    # over all ten places he appears, his title included.
+    #
+    # Only where the name also appears once, which is the evidence it is a
+    # misprint. Plenty of real names repeat a word -- four hundred Duelists
+    # here are Garcia Garcia or Martinez Martinez -- and a name that is
+    # nothing but one word twice, like Yang Yang, is somebody's name when
+    # nobody in the event is called Yang. The Remote Duel YCS of January 2026
+    # prints "Tomas Dughera Tomas Dughera" all twenty-one times, and nothing
+    # in it says otherwise, so it is left as printed.
+    by_words = {_words(n): n for n in names}
+    twice: dict[str, str] = {}
+    for n in names:
+        w = _words(n)
+        half = w[:len(w) // 2]
+        if (half and w == half + half
+                and (once := by_words.get(half)) and apart(once, n)):
+            twice[n] = once
+
+    canon: dict[str, str] = dict(twice)
     for short in names:
         sw = _words(short)
         if len(sw) < 2:
@@ -699,8 +731,8 @@ def reconcile_names(sources: list[Source]) -> dict[str, str]:
             ends_index[end, letter, size]
             for end, letter in (("first", sw[0][0]), ("last", sw[-1][0]))
             for size in range(len(sw) + 1, longest + 1)))
-        longer = [n for n in keeps_an_end
-                  if shortens(sw, _words(n))
+        longer = [n for n in keeps_an_end if n not in twice
+                  and shortens(sw, _words(n))
                   and ends_agree(sw, _words(n)) and apart(short, n)]
         # Or the same name with a letter typed wrong, folded the way round the
         # coverage votes: the spelling seen in more rounds keeps the Duelist.
