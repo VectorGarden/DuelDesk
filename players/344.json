@@ -71,7 +71,7 @@
   "Salvador Gabriel Colin Vargas": [
     {"e":"2014-wcq-ca"},
     {"e":"2014-ycs-mexico-d-f"},
-    {"e":"201509-monterrey","cut":"Top 4","deck":"Qliport Deck"},
+    {"e":"201509-monterrey","cut":"Final","deck":"Qliport Deck"},
     {"e":"2016-ycs-mexico-city"},
     {"e":"2017-central-american-wcq"},
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
@@ -567,13 +567,13 @@
   "Edson Amado Reyes Rios": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
-  "Donald M.": {
-    "as": "Donald Eugene Miller"
-  },
   "Rafael J.": {
     "as": "Rafael Ausberto Jacinto"
   },
   "Pansheng L.": {
     "as": "Pansheng Li"
+  },
+  "Donald M.": {
+    "as": "Donald Eugene Miller"
   }
 }

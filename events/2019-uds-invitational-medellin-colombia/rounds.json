@@ -1,6 +1,6 @@
 {
   "event": "UDS Invitational Medellin",
-  "built": 65,
+  "built": 66,
   "location": "Medellin, Colombia",
   "sample": false,
   "coverageBy": "Konami",
@@ -1798,6 +1798,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2019/uds/uds-invitational-medellin-colombia-pairings-for-round-14/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "04:18",
+          "standingsAfter": 12,
+          "pairings": [
+            {"table":1,"a":"Paulo Roberto Goncalves da Silva","aRec":{"wins":10,"losses":2,"draws":2,"confidence":"derived"},"b":"Ayrton Neil Mucching Quiroz","bRec":{"wins":11,"losses":2,"draws":1,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2019/uds/uds-invitational-medellin-colombia-final-match/"
         }
       ]
     }

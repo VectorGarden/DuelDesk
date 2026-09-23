@@ -277,7 +277,7 @@
     {"e":"2017-south-american-wcq","cut":"Top 64"},
     {"e":"2017-uds-invitational-lima-peru","deck":"Zoodiacs"},
     {"e":"201704-ycs-bogota-colombia"},
-    {"e":"201712-buenos-aires-argentina","won":true,"cut":"Top 4","deck":"SPYRAL"},
+    {"e":"201712-buenos-aires-argentina","won":true,"cut":"Final","deck":"SPYRAL"},
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
     {"e":"2018-south-america-wcq","cut":"Top 64"},
     {"e":"2018-ycs-atlanta","cut":"Top 32"},
@@ -738,10 +738,10 @@
   "Jean Pierre Salcedo Ramirez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Marshall N.": {
-    "as": "Marshall Blade Navarro"
-  },
   "Ernest O.": {
     "as": "Ernest Richard Oliphant"
+  },
+  "Marshall N.": {
+    "as": "Marshall Blade Navarro"
   }
 }

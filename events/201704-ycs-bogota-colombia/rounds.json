@@ -1,6 +1,6 @@
 {
   "event": "YCS Bogota",
-  "built": 65,
+  "built": 66,
   "location": "Bogota, Colombia",
   "sample": false,
   "coverageBy": "Konami",
@@ -3254,6 +3254,22 @@
           ],
           "features": [],
           "source": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "13:12",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Kanaan Asfour Al Jaubri","aRec":{"wins":10,"losses":2,"draws":0,"confidence":"derived"},"aDeck":"Zoodiacs","b":"Arnold Nadaban Zanabria","bRec":{"wins":11,"losses":0,"draws":1,"confidence":"derived"},"bDeck":"60-cards Paleozoics"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2017/ycs/ycs-bogota-colombia-final-match/"
         }
       ]
     }

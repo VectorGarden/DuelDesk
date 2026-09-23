@@ -1,6 +1,6 @@
 {
   "event": "Ultimate Duelist Series Invitational",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -3358,6 +3358,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2017/uds/201703-uds-winter-invitational-las-vegas/ultimate-duelist-series-invitational-winter-2017-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "18:37",
+          "standingsAfter": 13,
+          "pairings": [
+            {"table":1,"a":"Alfred Robert Danklefsen III","aRec":{"wins":12,"losses":3,"draws":0,"confidence":"derived"},"b":"Joseph Chou Jr.","bRec":{"wins":13,"losses":2,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2017/uds/201703-uds-winter-invitational-las-vegas/ultimate-duelist-series-invitational-winter-2017-final-match/"
         }
       ]
     }

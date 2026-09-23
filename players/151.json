@@ -344,7 +344,7 @@
     {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Daniel Ramirez Medina": [
-    {"e":"2018-09-200th-ycs-columbus-oh","cut":"Top 8","deck":"DARK Gouki"},
+    {"e":"2018-09-200th-ycs-columbus-oh","cut":"Final","deck":"DARK Gouki"},
     {"e":"2018-11-sao-paulo-brazil"},
     {"e":"2018-north-america-wcq"},
     {"e":"2018-ycs-salt-lake-city"},
@@ -723,11 +723,11 @@
   "Jose Abraham Ochoa Garcia": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Orlando Q.": {
-    "as": "Orlando Lawrence Quevedo"
-  },
   "Charles C.": {
     "as": "Charles Hunter Cramer"
+  },
+  "Orlando Q.": {
+    "as": "Orlando Lawrence Quevedo"
   },
   "Gary S.": {
     "as": "Gary Fidel Sanchez"

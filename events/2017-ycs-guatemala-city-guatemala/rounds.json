@@ -1,6 +1,6 @@
 {
   "event": "YCS Guatemala City",
-  "built": 65,
+  "built": 66,
   "location": "Guatemala City, Guatemala",
   "sample": false,
   "coverageBy": "Konami",
@@ -2344,6 +2344,22 @@
           ],
           "features": [],
           "source": "https://yugiohblog.konami.com/2017/ycs/ycs-guatemala-city-guatemala-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "11:35",
+          "standingsAfter": 8,
+          "pairings": [
+            {"table":1,"a":"Gerald Yagans South Chaves","aRec":{"wins":9,"losses":2,"draws":0,"confidence":"derived"},"aDeck":"Zoodiacs-Infernoid","b":"Alejandro Garcia Moreno","bRec":{"wins":10,"losses":1,"draws":0,"confidence":"derived"},"bDeck":"Zoodiacs"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2017/ycs/ycs-guatemala-city-guatemala-final-match/"
         }
       ]
     }

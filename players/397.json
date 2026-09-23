@@ -257,7 +257,7 @@
   ],
   "Kanaan Asfour Al Jaubri": [
     {"e":"2017-south-american-wcq","cut":"Top 4","deck":"Zoodiac"},
-    {"e":"201704-ycs-bogota-colombia","won":true,"cut":"Top 4","deck":"Zoodiacs"},
+    {"e":"201704-ycs-bogota-colombia","won":true,"cut":"Final","deck":"Zoodiacs"},
     {"e":"2019-south-america-wcq","cut":"Top 8"},
     {"e":"2019-uds-invitational-medellin-colombia","cut":"Top 4"},
     {"e":"2019-ycs-quito-ecuador"},
@@ -660,11 +660,11 @@
   "Carlos Andres Cruz del Aguila": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jonah C.": {
-    "as": "Jonah Ryan Crader"
-  },
   "Gage H.": {
     "as": "Gage Wilson Hopper"
+  },
+  "Jonah C.": {
+    "as": "Jonah Ryan Crader"
   },
   "Markus J.": {
     "as": "Markus Aliu Levi John"

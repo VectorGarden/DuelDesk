@@ -12,7 +12,7 @@
     {"e":"2016-ycs-providence-rhode-island"},
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
     {"e":"2017-north-american-wcq","cut":"Top 32"},
-    {"e":"2017-ycs-atlanta","won":true,"cut":"Top 4","deck":"Paleozoic Frog"},
+    {"e":"2017-ycs-atlanta","won":true,"cut":"Final","deck":"Paleozoic Frog"},
     {"e":"2017-ycs-pittsburgh"},
     {"e":"2018-ycs-atlanta"},
     {"e":"2018-ycs-memphis"},
@@ -682,11 +682,11 @@
   "Phoenix AntTiwon Bell": [
     {"e":"2026-north-america-wcq"}
   ],
-  "Azad D.": {
-    "as": "Azad Deihim"
-  },
   "David W.": {
     "as": "David Anthony Warren"
+  },
+  "Azad D.": {
+    "as": "Azad Deihim"
   },
   "Amir W.": {
     "as": "Amir Wahab"

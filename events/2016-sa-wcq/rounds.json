@@ -1,6 +1,6 @@
 {
   "event": "South America WCQ 2016",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -1789,6 +1789,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2016/championships/sa-wcq-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "16:03",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Joaquin Rinaldi Petroni","aRec":{"wins":9,"losses":3,"draws":0,"confidence":"derived"},"aDeck":"Dracoslayer Performapals","b":"Carlos Eduardo Lopez Rangel","bRec":{"wins":9,"losses":2,"draws":1,"confidence":"derived"},"bDeck":"Fire Kings Kozmos"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2016/championships/sa-wcq-the-finals-have-begun/"
         }
       ]
     }

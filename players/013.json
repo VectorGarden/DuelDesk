@@ -16,7 +16,7 @@
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
     {"e":"2017-north-american-wcq"},
     {"e":"2017-uds-invitational-kissimmee-fl"},
-    {"e":"2017-ycs-atlanta","cut":"Top 4","deck":"Zoodiac"},
+    {"e":"2017-ycs-atlanta","cut":"Final","deck":"Zoodiac"},
     {"e":"2017-ycs-pittsburgh"},
     {"e":"2017-ycs-seattle"},
     {"e":"2017-ycs-toronto","cut":"Top 16"},
@@ -554,10 +554,10 @@
   "Gustavo Martinez Martinez": [
     {"e":"2026-central-america-wcq"}
   ],
-  "Nicolai H.": {
-    "as": "Nicolai Mikhail Howlett"
-  },
   "Raymond L.": {
     "as": "Raymond G. Lee"
+  },
+  "Nicolai H.": {
+    "as": "Nicolai Mikhail Howlett"
   }
 }

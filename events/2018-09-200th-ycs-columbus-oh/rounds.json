@@ -1,6 +1,6 @@
 {
   "event": "200th YCS Columbus",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -28319,6 +28319,22 @@
             {"a":{"name":"Top 4 Feature Match – Adrian Gonzalez","deck":null,"record":null},"b":{"name":"Manav Dawar","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2018/ycs/200th-ycs-columbus-top-4-feature-match-adrian-gonzalez-vs-manav-dawar/"}
           ],
           "source": null
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "19:08",
+          "standingsAfter": 12,
+          "pairings": [
+            {"table":1,"a":"Manav Dawar","aRec":{"wins":13,"losses":2,"draws":1,"confidence":"derived"},"b":"Daniel Ramirez Medina","bRec":{"wins":14,"losses":2,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2018/ycs/2018-09-200th-ycs-columbus-oh/200th-ycs-columbus-the-finals/"
         }
       ]
     }

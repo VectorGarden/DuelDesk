@@ -1,6 +1,6 @@
 {
   "event": "UDS Invitational Trinidad and Tobago",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -1076,6 +1076,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2017/uds/uds-invitational-trinidad-and-tobago-top-4-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "13:39",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Arnold Nadaban Zanabria","aRec":{"wins":11,"losses":1,"draws":0,"confidence":"derived"},"aDeck":"SPYRAL","b":"Alejandro Garcia Moreno","bRec":{"wins":10,"losses":2,"draws":0,"confidence":"derived"},"bDeck":"SPYRAL"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2017/uds/uds-invitational-trinidad-and-tobago-final-match/"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "event": "UDS Invitational Lima",
-  "built": 65,
+  "built": 66,
   "location": "Lima, Peru",
   "sample": false,
   "coverageBy": "Konami",
@@ -1184,6 +1184,22 @@
           ],
           "features": [],
           "source": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-standings-after-top-4-2/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "12:30",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Jean Claude Valdivieso Perez","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"aDeck":"Zoodiacs","b":"Alejandro Garcia Moreno","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"bDeck":"Zoodiacs"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2017/uds/uds-invitational-lima-peru-final-match/"
         }
       ]
     }

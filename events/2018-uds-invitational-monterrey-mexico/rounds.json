@@ -1,6 +1,6 @@
 {
   "event": "UDS Invitational Monterrey",
-  "built": 65,
+  "built": 66,
   "location": "Monterrey, Mexico",
   "sample": false,
   "coverageBy": "Konami",
@@ -2373,6 +2373,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2018/uds/uds-invitational-monterrey-mexico-pairings-for-top-4/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "14:37",
+          "standingsAfter": 13,
+          "pairings": [
+            {"table":1,"a":"Paulo Roberto Goncalves da Silva","aRec":{"wins":12,"losses":2,"draws":1,"confidence":"derived"},"b":"Andres David Torres Reyes","bRec":{"wins":12,"losses":3,"draws":0,"confidence":"derived"}}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2018/uds/uds-invitational-monterrey-mexico-final-match/"
         }
       ]
     }

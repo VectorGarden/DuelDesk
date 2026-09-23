@@ -1,6 +1,6 @@
 {
   "event": "YCS Monterrey",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -1606,6 +1606,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2015/ycs/pairings-for-top-4-ycs-monterrey/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "11:49",
+          "standingsAfter": 9,
+          "pairings": [
+            {"table":1,"a":"Alan Daniel Santacruz Guzman","aRec":{"wins":9,"losses":2,"draws":0,"confidence":"derived"},"aDeck":"Burning Abyss Deck","b":"Salvador Gabriel Colin Vargas","bRec":{"wins":9,"losses":2,"draws":0,"confidence":"derived"},"bDeck":"Qliport Deck"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2015/ycs/ycs-monterrey-final-match/"
         }
       ]
     }

@@ -729,10 +729,13 @@
   "Charles Rose": [
     {"e":"na-ygoc-2022"}
   ],
-  "Jeremy A.": {
-    "as": "Jeremy Alan AmRhein"
-  },
+  "Shin En Huang Shin En Huang": [
+    {"e":"yu-gi-oh-world-championship-2013","won":true,"cut":"Final","deck":"Dragon Rulers"}
+  ],
   "Levi S.": {
     "as": "Levi Thomas Mathew Steffen"
+  },
+  "Jeremy A.": {
+    "as": "Jeremy Alan AmRhein"
   }
 }

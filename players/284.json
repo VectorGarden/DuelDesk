@@ -39,7 +39,7 @@
     {"e":"2015-south-american-wcq","cut":"Top 64"},
     {"e":"2016-sa-wcq"},
     {"e":"2017-south-american-wcq","cut":"Top 64"},
-    {"e":"2017-uds-invitational-lima-peru","deck":"Zoodiacs","cut":"Top 8"},
+    {"e":"2017-uds-invitational-lima-peru","deck":"Zoodiacs","cut":"Final"},
     {"e":"2019-south-america-wcq"},
     {"e":"2019-team-ycs-lima-peru"}
   ],
@@ -550,10 +550,10 @@
   "Vinicius J.": {
     "as": "Vinicius Jato"
   },
-  "Cole S.": {
-    "as": "Cole Edward Sears"
-  },
   "Brandon G.": {
     "as": "Brandon Michael Geren"
+  },
+  "Cole S.": {
+    "as": "Cole Edward Sears"
   }
 }

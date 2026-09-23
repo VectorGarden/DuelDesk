@@ -29,7 +29,7 @@
     {"e":"2017-uds-invitational-kissimmee-fl"},
     {"e":"2017-ycs-dallas"},
     {"e":"2017-ycs-seattle"},
-    {"e":"201703-uds-winter-invitational-las-vegas","cut":"Top 4","deck":"Zoodiac"},
+    {"e":"201703-uds-winter-invitational-las-vegas","cut":"Final","deck":"Zoodiac"},
     {"e":"2018-11-sao-paulo-brazil"},
     {"e":"2018-north-america-wcq"},
     {"e":"2018-ycs-memphis","cut":"Top 32"},
@@ -555,16 +555,16 @@
   "Chimmey N.": {
     "as": "Chimmey Nguyen"
   },
-  "Alexander R.": {
-    "as": "Alexander Rey Roman"
-  },
-  "Matthew F.": {
-    "as": "Matthew Arden Fox"
-  },
   "Vincent P.": {
     "as": "Vincent Quoc Pham"
   },
+  "Alexander R.": {
+    "as": "Alexander Rey Roman"
+  },
   "Dominic W.": {
     "as": "Dominic Lee Whalawitsa"
+  },
+  "Matthew F.": {
+    "as": "Matthew Arden Fox"
   }
 }

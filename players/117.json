@@ -21,7 +21,7 @@
     {"e":"2017-ycs-seattle"},
     {"e":"2017-ycs-toronto","cut":"Top 16"},
     {"e":"201711-san-diego-ca"},
-    {"e":"2018-09-200th-ycs-columbus-oh","won":true,"cut":"Top 8","deck":"Sky Striker"},
+    {"e":"2018-09-200th-ycs-columbus-oh","won":true,"cut":"Final","deck":"Sky Striker"},
     {"e":"2018-11-sao-paulo-brazil","cut":"Top 32"},
     {"e":"2018-north-america-wcq","cut":"Top 32"},
     {"e":"2018-uds-invitational-kansas-city-mo"},
@@ -727,13 +727,13 @@
   "Ronald Renato Salgado Cabada": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Christopher A.": {
-    "as": "Christopher Bryan Avila"
-  },
   "Jim L.": {
     "as": "Jim Cody Lott"
   },
   "Alex S.": {
     "as": "Alex Douglas Stoddard"
+  },
+  "Christopher A.": {
+    "as": "Christopher Bryan Avila"
   }
 }

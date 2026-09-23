@@ -1,6 +1,6 @@
 {
   "event": "World Championship 2013",
-  "built": 65,
+  "built": 66,
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": true,
@@ -12,7 +12,7 @@
       "entrant": "Duelist",
       "swissRounds": 5,
       "duelists": 26,
-      "champion": "Shin En Huang",
+      "champion": "Shin En Huang Shin En Huang",
       "rounds": [
         {
           "id": "1",
@@ -34,7 +34,7 @@
             {"table":8,"a":"Chris Mattiske","b":"Jin Woo Park"},
             {"table":9,"a":"Hiromi Kudou","b":"Aaron Christopher Riker"},
             {"table":10,"a":"David J. Keener III","b":"Kye Baker"},
-            {"table":11,"a":"Norberto Leon","b":"Shin En Huang"},
+            {"table":11,"a":"Norberto Leon","b":"Shin En Huang Shin En Huang"},
             {"table":12,"a":"Wing Ho Cheung","b":"Patrick Jefferson Hoban"},
             {"table":13,"a":"Nobuhiko Kuroiwa","b":"Valerio Rozza"}
           ],
@@ -56,7 +56,7 @@
             {"table":2,"a":"David J. Keener III","b":"Christos Bountaloudis"},
             {"table":3,"a":"Robert Boyajian II","b":"Wing Ho Cheung"},
             {"table":4,"a":"Carlos Andres Perez Padilla","b":"Atsushi Fujiwara"},
-            {"table":5,"a":"Michel C. Gruner","b":"Shin En Huang"},
+            {"table":5,"a":"Michel C. Gruner","b":"Shin En Huang Shin En Huang"},
             {"table":6,"a":"Aaron Christopher Riker","b":"Chris Mattiske"},
             {"table":7,"a":"Patrick Jefferson Hoban","b":"Nobuhiko Kuroiwa"},
             {"table":8,"a":"Norberto Leon","b":"Valerio Rozza"},
@@ -82,7 +82,7 @@
           "pairings": [
             {"table":1,"a":"Aaron Christopher Riker","b":"Wing Ho Cheung"},
             {"table":2,"a":"David J. Keener III","b":"Sergio Soldani"},
-            {"table":3,"a":"Carlos Andres Perez Padilla","b":"Shin En Huang"},
+            {"table":3,"a":"Carlos Andres Perez Padilla","b":"Shin En Huang Shin En Huang"},
             {"table":4,"a":"Valerio Rozza","b":"Akikazu Saito"},
             {"table":5,"a":"Chris Mattiske","b":"Nobuhiko Kuroiwa"},
             {"table":6,"a":"Michel C. Gruner","b":"Atsushi Fujiwara"},
@@ -96,7 +96,7 @@
           ],
           "standings": [
             {"pos":1,"name":"Aaron Christopher Riker","record":{"wins":3,"losses":0,"draws":0,"confidence":"derived"},"points":9},
-            {"pos":2,"name":"Shin En Huang","record":{"wins":3,"losses":0,"draws":0,"confidence":"derived"},"points":9},
+            {"pos":2,"name":"Shin En Huang Shin En Huang","record":{"wins":3,"losses":0,"draws":0,"confidence":"derived"},"points":9},
             {"pos":3,"name":"Sergio Soldani","record":{"wins":3,"losses":0,"draws":0,"confidence":"derived"},"points":9},
             {"pos":4,"name":"Carlos Andres Perez Padilla","record":{"wins":2,"losses":1,"draws":0,"confidence":"derived"},"points":6},
             {"pos":5,"name":"Wing Ho Cheung","record":{"wins":2,"losses":1,"draws":0,"confidence":"derived"},"points":6},
@@ -135,7 +135,7 @@
           "posted": "17:57",
           "standingsAfter": null,
           "pairings": [
-            {"table":1,"a":"Aaron Christopher Riker","aRec":{"wins":3,"losses":0,"draws":0,"confidence":"derived"},"b":"Shin En Huang","bRec":{"wins":3,"losses":0,"draws":0,"confidence":"derived"}},
+            {"table":1,"a":"Aaron Christopher Riker","aRec":{"wins":3,"losses":0,"draws":0,"confidence":"derived"},"b":"Shin En Huang Shin En Huang","bRec":{"wins":3,"losses":0,"draws":0,"confidence":"derived"}},
             {"table":2,"a":"Sergio Soldani","aRec":{"wins":3,"losses":0,"draws":0,"confidence":"derived"},"b":"Wing Ho Cheung","bRec":{"wins":2,"losses":1,"draws":0,"confidence":"derived"}},
             {"table":3,"a":"Michel C. Gruner","aRec":{"wins":2,"losses":1,"draws":0,"confidence":"derived"},"b":"Kei Murakoshi","bRec":{"wins":2,"losses":1,"draws":0,"confidence":"derived"}},
             {"table":4,"a":"David J. Keener III","aRec":{"wins":2,"losses":1,"draws":0,"confidence":"derived"},"b":"Hiromi Kudou","bRec":{"wins":2,"losses":1,"draws":0,"confidence":"derived"}},
@@ -164,7 +164,7 @@
           "standingsAfter": 5,
           "pairings": [
             {"table":1,"a":"Aaron Christopher Riker","b":"Sergio Soldani"},
-            {"table":2,"a":"Kei Murakoshi","b":"Shin En Huang"},
+            {"table":2,"a":"Kei Murakoshi","b":"Shin En Huang Shin En Huang"},
             {"table":3,"a":"Robert Boyajian II","b":"Carlos Andres Perez Padilla"},
             {"table":4,"a":"Hiromi Kudou","b":"Weerapun Suebyoubol"},
             {"table":5,"a":"Michel C. Gruner","b":"Wing Ho Cheung"},
@@ -183,7 +183,7 @@
             {"pos":3,"name":"Kei Murakoshi","record":{"wins":4,"losses":1,"draws":0,"confidence":"derived"},"points":12},
             {"pos":4,"name":"Robert Boyajian II","record":{"wins":4,"losses":1,"draws":0,"confidence":"derived"},"points":12},
             {"pos":5,"name":"Weerapun Suebyoubol","record":{"wins":3,"losses":1,"draws":1,"confidence":"derived"},"points":10},
-            {"pos":6,"name":"Shin En Huang","record":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"points":9},
+            {"pos":6,"name":"Shin En Huang Shin En Huang","record":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"points":9},
             {"pos":7,"name":"Hiromi Kudou","record":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"points":9},
             {"pos":8,"name":"David J. Keener III","record":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"points":9},
             {"pos":9,"name":"Carlos Andres Perez Padilla","record":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"points":9},
@@ -221,11 +221,27 @@
             {"table":1,"a":"David J. Keener III","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"b":"Aaron Christopher Riker","bRec":{"wins":5,"losses":0,"draws":0,"confidence":"derived"}},
             {"table":2,"a":"Robert Boyajian II","aRec":{"wins":4,"losses":1,"draws":0,"confidence":"derived"},"b":"Weerapun Suebyoubol","bRec":{"wins":3,"losses":1,"draws":1,"confidence":"derived"}},
             {"table":3,"a":"Sergio Soldani","aRec":{"wins":4,"losses":1,"draws":0,"confidence":"derived"},"b":"Hiromi Kudou","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"}},
-            {"table":4,"a":"Kei Murakoshi","aRec":{"wins":4,"losses":1,"draws":0,"confidence":"derived"},"b":"Shin En Huang","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"}}
+            {"table":4,"a":"Kei Murakoshi","aRec":{"wins":4,"losses":1,"draws":0,"confidence":"derived"},"b":"Shin En Huang Shin En Huang","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"}}
           ],
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2013/championships/yu-gi-oh-world-championship-2013/here-are-the-pairings-for-top-8/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 164,
+          "tables": 1,
+          "posted": "10:39",
+          "standingsAfter": 5,
+          "pairings": [
+            {"table":1,"a":"David J. Keener III","aRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"aDeck":"Prophecy","b":"Shin En Huang Shin En Huang","bRec":{"wins":null,"losses":null,"draws":null,"confidence":"unknown"},"bDeck":"Dragon Rulers"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2013/championships/yu-gi-oh-world-championship-2013/finals/"
         }
       ]
     }
