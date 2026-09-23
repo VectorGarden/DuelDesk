@@ -10223,3 +10223,163 @@ class TestAnAnnouncementAfterTheEvent(unittest.TestCase):
         got = {r["slug"]: r["event"]
                for r in assign_events(parse_post_sitemap(urlset(*rows, stray)))}
         self.assertIsNone(got["ycs-guayaquil-ecuador-2026-main-event-information"])
+
+
+class TestAFinalCarriedByAPostOfAnotherKind(unittest.TestCase):
+    """The blog pairs a final in a post it titles "Final Match", not "Pairings".
+
+    Under a line of preview -- "Good luck to both Duelists!" -- sits the final
+    as a one-row pairing table. The post is news to a reader, and the builder
+    read rounds only from pairings posts, so seventy-one events stopped at
+    their Top 4 with the Final unread in a post they held.
+    """
+
+    FINAL_URL = "https://x/final-match/"
+
+    @staticmethod
+    def cell(n):
+        return {"name": n, "region": None, "deck": None}
+
+    def source(self, title, kind, rnd, rows, url="https://x/", fmt=None):
+        from build import Source
+        from parse import Post, Table
+        return Source(url=url, post=Post(
+            title=title, kind=kind, fmt=fmt, round=rnd,
+            table=Table("pairings", [], [{"table": i + 1, "a": self.cell(a), "b": self.cell(b)}
+                                         for i, (a, b) in enumerate(rows)]) if rows else None))
+
+    def final(self, a, b, kind="news", url=None):
+        return self.source("YCS Somewhere: Final Match", kind, "Final", [(a, b)],
+                           url=url or self.FINAL_URL)
+
+    def event(self, *extra):
+        from build import build_format
+        return build_format(None, [
+            self.source("Round 1 Pairings", "pairings", 1,
+                        [("Ada", "Bo"), ("Cy", "Di"), ("Ed", "Flo"), ("Gus", "Hal")]),
+            self.source("Top 4 Pairings", "pairings", "Top 4", [("Ada", "Bo"), ("Cy", "Di")]),
+            *extra])
+
+    def final_round(self, fmt):
+        return next((r for r in fmt["rounds"] if r["label"] == "Final"), None)
+
+    def test_the_final_is_read_from_the_post_that_carries_it(self):
+        got = self.final_round(self.event(self.final("Ada", "Cy")))
+        self.assertIsNotNone(got)
+        self.assertEqual((got["pairings"][0]["a"], got["pairings"][0]["b"]), ("Ada", "Cy"))
+        self.assertEqual(got["source"], self.FINAL_URL)
+
+    def test_the_post_is_still_news_to_the_reader(self):
+        post = self.final("Ada", "Cy")
+        self.event(post)
+        self.assertEqual(post.post.kind, "news")
+
+    def test_a_deck_post_carrying_the_final_counts_too(self):
+        # "YCS Raleigh -- Final Match Deck Types" is the final with its decks.
+        self.assertIsNotNone(self.final_round(self.event(self.final("Ada", "Cy", kind="deck"))))
+
+    def test_a_final_nobody_in_the_semi_finals_played_is_not_this_ones(self):
+        # The Central America WCQ 2023's World Qualifying Points Playoff put
+        # its own "Final Match" up the same week, between two people who never
+        # reached the WCQ's Top 4.
+        self.assertIsNone(self.final_round(self.event(self.final("Ed", "Gus"))))
+
+    def test_two_from_one_semi_final_did_not_meet_in_the_final(self):
+        self.assertIsNone(self.final_round(self.event(self.final("Ada", "Bo"))))
+
+    def test_a_published_final_is_not_doubled(self):
+        from build import build_format
+        fmt = self.event(self.final("Ada", "Cy"),
+                         self.source("Final Pairing", "pairings", "Final", [("Ada", "Cy")],
+                                     url="https://x/final-pairing/"))
+        finals = [r for r in fmt["rounds"] if r["label"] == "Final"]
+        self.assertEqual(len(finals), 1)
+        self.assertEqual(finals[0]["source"], "https://x/final-pairing/")
+
+    def test_a_write_up_of_the_final_is_not_its_pairing(self):
+        # A feature match is prose about one duel, and its lead is where the
+        # champion is read from; it keeps that job.
+        got = self.final_round(self.event(self.final("Ada", "Cy", kind="feature")))
+        self.assertFalse(got and got["pairings"])
+        from build import as_final_pairing
+        self.assertIsNone(as_final_pairing(self.final("Ada", "Cy", kind="feature")))
+
+    def test_only_a_single_pairing_is_a_final(self):
+        from build import as_final_pairing
+        two = self.source("Finals", "news", "Final", [("Ada", "Cy"), ("Bo", "Di")])
+        self.assertIsNone(as_final_pairing(two))
+
+    def test_only_a_post_that_reads_as_the_final(self):
+        from build import as_final_pairing
+        self.assertIsNone(as_final_pairing(
+            self.source("Top 4 Preview", "news", "Top 4", [("Ada", "Cy")])))
+
+    def test_only_a_pairing_table_is_read_as_a_pairing(self):
+        # Everything downstream holds a pairings post to carrying a pairings
+        # table; the view may not be the one post that breaks that.
+        from build import as_final_pairing
+        from parse import Table
+        post = self.final("Ada", "Cy")
+        post.post.table = Table("standings", [], [{"name": "Ada", "rank": 1}])
+        self.assertIsNone(as_final_pairing(post))
+
+    def test_the_deepest_round_is_the_one_asked(self):
+        # Ada and Cy were in different quarter-finals and then met in a semi,
+        # so they did not meet again in the final. Asking the Top 8 would say
+        # they could have.
+        from build import build_format
+        fmt = build_format(None, [
+            self.source("Round 1 Pairings", "pairings", 1,
+                        [("Ada", "Bo"), ("Cy", "Di"), ("Ed", "Flo"), ("Gus", "Hal")]),
+            self.source("Top 8 Pairings", "pairings", "Top 8",
+                        [("Ada", "Bo"), ("Cy", "Di"), ("Ed", "Flo"), ("Gus", "Hal")]),
+            self.source("Top 4 Pairings", "pairings", "Top 4", [("Ada", "Cy"), ("Ed", "Gus")]),
+            self.final("Ada", "Cy")])
+        self.assertIsNone(self.final_round(fmt))
+
+    def test_a_post_with_no_table_carries_no_final(self):
+        from build import as_final_pairing
+        self.assertIsNone(as_final_pairing(self.source("Final Match", "news", "Final", [])))
+
+    def test_where_no_cut_was_published_both_must_have_played(self):
+        from build import build_format
+        swiss_only = [self.source(f"Round {n} Pairings", "pairings", n,
+                                  [("Ada", "Bo"), ("Cy", "Di")]) for n in (1, 2)]
+        self.assertIsNotNone(self.final_round(build_format(None, swiss_only + [self.final("Ada", "Cy")])))
+        self.assertIsNone(self.final_round(build_format(None, swiss_only + [self.final("Ada", "Zed")])))
+
+    def test_a_quarter_final_is_enough_to_ask(self):
+        # UDS Invitational Lima 2017 published a Top 4 with nothing in it; its
+        # Top 8 still says who could have met in the final.
+        from build import build_format
+        fmt = build_format(None, [
+            self.source("Round 1 Pairings", "pairings", 1,
+                        [("Ada", "Bo"), ("Cy", "Di"), ("Ed", "Flo"), ("Gus", "Hal")]),
+            self.source("Top 8 Pairings", "pairings", "Top 8",
+                        [("Ada", "Bo"), ("Cy", "Di"), ("Ed", "Flo"), ("Gus", "Hal")]),
+            self.final("Ada", "Ed")])
+        self.assertIsNotNone(self.final_round(fmt))
+
+    def test_a_finalist_spelled_short_is_the_same_duelist(self):
+        # Why the post is read as a pairings post rather than looked at where
+        # it stands: the rules that fold one Duelist's two spellings ask only
+        # pairings posts who is in a row. Asked nothing, "Roberto Lopez" stays
+        # a stranger to the "Roberto Lopez Arce" who played the semi-final.
+        from build import build_format
+        fmt = build_format(None, [
+            self.source("Round 1 Pairings", "pairings", 1,
+                        [("Ada Byron", "Bo Peep"), ("Roberto Lopez Arce", "Di Cruz")]),
+            self.source("Top 4 Pairings", "pairings", "Top 4",
+                        [("Ada Byron", "Bo Peep"), ("Roberto Lopez Arce", "Di Cruz")]),
+            self.final("Ada Byron", "Roberto Lopez")])
+        got = self.final_round(fmt)
+        self.assertIsNotNone(got)
+        self.assertEqual(got["pairings"][0]["b"], "Roberto Lopez Arce")
+
+    def test_two_posts_naming_two_finals_name_none(self):
+        self.assertIsNone(self.final_round(self.event(
+            self.final("Ada", "Cy"), self.final("Bo", "Di", url="https://x/final-match-2/"))))
+
+    def test_two_posts_naming_one_final_are_one_final(self):
+        self.assertIsNotNone(self.final_round(self.event(
+            self.final("Ada", "Cy"), self.final("Ada", "Cy", url="https://x/final-match-2/"))))

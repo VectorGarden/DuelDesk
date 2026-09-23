@@ -18,7 +18,7 @@ from __future__ import annotations
 import re
 from functools import lru_cache
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Any
 
 from naming import clock, feature_players
@@ -339,7 +339,18 @@ def round_key(post) -> tuple[str, Any]:
 #     that goes to YCS Portland. One step further and the 250th YCS in
 #     Bogota reads its own name as another event's and empties itself, so
 #     this is the last value that only corrects.
-BUILD_VERSION = 65
+#  66 The final, from the post that carries it. Konami pairs a final in a
+#     post titled "Final Match" or "The Finals are About to Begin!", under a
+#     line of preview, and the builder read rounds only from pairings posts,
+#     so sixty-three events stopped a round short of their end. The post
+#     stays news to a reader; the builder reads its one-row table as the
+#     Final wherever no pairings post gave the event one, and only where the
+#     two Duelists could have met: from different pairings of the round
+#     before, or, with no cut published, both from the field. That turns
+#     away the 2023 Central America WCQ's Points Playoff final, which went up
+#     that week under the same name between two people who never reached the
+#     WCQ's Top 4. No champion changes.
+BUILD_VERSION = 66
 
 
 @dataclass
@@ -348,6 +359,74 @@ class Source:
     url: str
     post: Any                 # parse.Post
     posted: str | None = None # HH:MM
+
+
+def as_final_pairing(s: Source) -> Source | None:
+    """A post that carries the Final's pairing without being a pairings post.
+
+    The blog titles sixty-six of these "Final Match", "The Finals are About to
+    Begin!" or "YCS Hartford Finals", and under a line of preview -- "Good luck
+    to both Duelists!" -- each has the final as a one-row pairing table:
+
+        Table | Player 1 | vs. | Player 2
+        1     | Yuhao Ye | vs. | Pablo Cesar Dominguez Lamazares
+
+    They are news to a reader filtering the coverage, and they stay news. But
+    the builder reads rounds only from pairings posts, so seventy-one events
+    stopped at their Top 4 with the Final sitting unread in a post they held.
+
+    Returned as a pairings post so that everything which settles names before
+    a round is read -- folding one Duelist's two spellings, telling two
+    Duelists with one name apart -- settles this one's too. Those rules look
+    at the kind to decide what a row is, and a news post's row is not asked
+    about the two people in it.
+    """
+    p = s.post
+    if (p.kind in ("pairings", "standings", "feature") or p.round != "Final"
+            or not p.table or p.table.kind != "pairings" or len(p.table.rows) != 1):
+        return None
+    return replace(s, post=replace(p, kind="pairings"))
+
+
+def _seated(row: dict) -> set[str]:
+    return {c["name"] for c in (row.get("a"), row.get("b")) if c and c.get("name")}
+
+
+def final_that_fits(candidates: list[Source], by_round: dict) -> Source | None:
+    """The one Final these posts agree on, if it is this bracket's.
+
+    A post saying "Final Match" is not enough, because not every final at an
+    event is its main event's. The 2023 Central America WCQ ran a World
+    Qualifying Points Playoff beside it, and that playoff's "Final Match" went
+    up in the same week under the same name: Jose Carlo Carrillo Toscano
+    against Roberto Lopez Arce, neither of whom played the WCQ's Top 4.
+    Taken as the WCQ's Final it would have been played by two people who never
+    reached it, and contradicted the champion the event already names.
+
+    So the bracket is asked. Two Duelists who meet in a single-elimination
+    final have not met before it, so they sat in different pairings of every
+    round before -- one each from the two semi-finals, one each from two of
+    the quarter-finals. Where the event published no cut at all, the most
+    that can be asked is that both played in it.
+    """
+    cut = sorted((k for k in by_round if k[0] == "cut" and k[1] != "Final"
+                  and "pairings" in by_round[k]), key=lambda k: cut_rank(k[1]))
+    if cut:
+        seats = [_seated(r) for r in by_round[cut[-1]]["pairings"].post.table.rows]
+
+        def fits(pair: set[str]) -> bool:
+            where = [i for i, seat in enumerate(seats) for n in pair if n in seat]
+            return len(where) == 2 and where[0] != where[1]
+    else:
+        field = {n for k in by_round if k[0] == "swiss" and "pairings" in by_round[k]
+                 for r in by_round[k]["pairings"].post.table.rows for n in _seated(r)}
+
+        def fits(pair: set[str]) -> bool:
+            return bool(field) and pair <= field
+
+    ok = [c for c in candidates if len(pair := _seated(c.post.table.rows[0])) == 2 and fits(pair)]
+    # Two posts naming two different finals is not a final either.
+    return ok[0] if len({frozenset(_seated(c.post.table.rows[0])) for c in ok}) == 1 else None
 
 
 def pick_final_standings(candidates: list[Source]) -> Source:
@@ -843,6 +922,11 @@ def build_format(name: str | None, sources: list[Source], *,
     wrongly shown as finished is merely stale, while one wrongly shown as live is
     telling the reader to refresh for results that will never come.
     """
+    # Posts carrying the Final's pairing, read as the pairing they carry. Held
+    # apart below rather than used as they stand -- see final_that_fits.
+    viewed = [(as_final_pairing(s), s) for s in sources]
+    finals_carried = [v for v, _ in viewed if v]
+    sources = [v or s for v, s in viewed]
     # Before anything reads a name: one Duelist spelled two ways is as bad as
     # two Duelists spelled one way, and both have to be settled once, up front,
     # so the pairings, the standings and the derivation all see the same people.
@@ -909,6 +993,8 @@ def build_format(name: str | None, sources: list[Source], *,
         if s.post.kind == "feature":
             features[key].append(s)
             continue
+        if any(s is c for c in finals_carried):
+            continue
         existing = by_round[key].get(s.post.kind)
         if existing is not None and not better_table(s, existing):
             continue
@@ -920,6 +1006,12 @@ def build_format(name: str | None, sources: list[Source], *,
         by_round[key]
     relabel_the_swiss_tail(by_round)
     relabel_by_size(by_round)
+    # A Final the coverage paired in a post of another kind, where no pairings
+    # post already gave the event one.
+    final = ("cut", "Final")
+    if finals_carried and "pairings" not in by_round.get(final, {}):
+        if chosen := final_that_fits(finals_carried, by_round):
+            by_round[final]["pairings"] = chosen
     if not by_round:
         return None
 
