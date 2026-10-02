@@ -537,6 +537,9 @@
   "Benjamin Applegate Philippe": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Carlos Luis Moreno Alava": [
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
   "Juan Alonso Garcia Olivarez": [
     {"e":"wcq-2016-mexico"}
   ],
@@ -549,10 +552,10 @@
   "Joaquin P.": {
     "as": "Joaquin Pojaghi"
   },
-  "Christopher S.": {
-    "as": "Christopher Ryan Springer"
-  },
   "Nathan B.": {
     "as": "Nathan James Buck"
+  },
+  "Christopher S.": {
+    "as": "Christopher Ryan Springer"
   }
 }

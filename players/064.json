@@ -175,6 +175,7 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
   "Eduardo Aurelio Aleman Elizondo": [
@@ -599,13 +600,13 @@
   "Yang V.": {
     "as": "Yang Vang"
   },
-  "Xinwei T.": {
-    "as": "Xinwei Tang"
+  "Tyler E.": {
+    "as": "Tyler Makoto Endo"
   },
   "Sean R.": {
     "as": "Sean Austin Royster"
   },
-  "Tyler E.": {
-    "as": "Tyler Makoto Endo"
+  "Xinwei T.": {
+    "as": "Xinwei Tang"
   }
 }

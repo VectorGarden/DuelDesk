@@ -287,6 +287,7 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Andre Vincenzo Castro Bonelli": [
@@ -551,13 +552,13 @@
   "Thomas P.": {
     "as": "Thomas Dang Pham"
   },
-  "Riley W.": {
-    "as": "Riley Michael Wilhelm"
+  "Ethan M.": {
+    "as": "Ethan Douglass Mammen"
   },
   "Khoakevin V.": {
     "as": "Khoakevin Quoc Vo"
   },
-  "Ethan M.": {
-    "as": "Ethan Douglass Mammen"
+  "Riley W.": {
+    "as": "Riley Michael Wilhelm"
   }
 }

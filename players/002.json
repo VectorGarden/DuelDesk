@@ -593,6 +593,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Anthonny Bryan Del Hierro Flores": [
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Walkleir De Souza Ferreira": [
@@ -610,19 +611,19 @@
   "Lenon M.": {
     "as": "Lenon De Miranda"
   },
-  "Jomar O.": {
-    "as": "Jomar Octaviani"
-  },
-  "Michael D.": {
-    "as": "Michael James Dorn"
-  },
-  "Sunny C.": {
-    "as": "Sunny Hau Chau"
-  },
   "Howard D.": {
     "as": "Howard Clayton Davis"
   },
   "Dallen H.": {
     "as": "Dallen Dewayne Harrell"
+  },
+  "Sunny C.": {
+    "as": "Sunny Hau Chau"
+  },
+  "Jomar O.": {
+    "as": "Jomar Octaviani"
+  },
+  "Michael D.": {
+    "as": "Michael James Dorn"
   }
 }

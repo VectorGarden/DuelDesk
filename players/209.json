@@ -126,6 +126,7 @@
     {"e":"2025-south-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"ycs-lima-peru-2023"}
   ],
   "Salvador Noe Villegas Olvera": [
@@ -767,10 +768,10 @@
   "Chloe C.": {
     "as": "Chloe Lorelai Ross Colella"
   },
-  "Tristan N.": {
-    "as": "Tristan Nguyen"
-  },
   "Joel R.": {
     "as": "Joel Elias Ramirez"
+  },
+  "Tristan N.": {
+    "as": "Tristan Nguyen"
   }
 }

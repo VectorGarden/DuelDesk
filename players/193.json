@@ -426,7 +426,8 @@
     {"e":"2025-south-america-wcq"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Diego Andres Gamboa Diaz": [
     {"e":"2022-ycs-bogota-colombia"}
@@ -665,10 +666,10 @@
   "Dalvinhg Enrique Villaverde Oliva": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Luis P.": {
-    "as": "Luis Manuel Perez"
-  },
   "Cristian C.": {
     "as": "Cristian Jared Cloud"
+  },
+  "Luis P.": {
+    "as": "Luis Manuel Perez"
   }
 }

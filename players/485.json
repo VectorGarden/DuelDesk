@@ -360,7 +360,8 @@
     {"e":"2025-ycs-vancouver"}
   ],
   "Ivan Mauricio Calero Garcia": [
-    {"e":"2019-ycs-quito-ecuador"}
+    {"e":"2019-ycs-quito-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Junyub John Paik": [
     {"e":"2020-team-ycs-las-vegas"},
@@ -589,17 +590,20 @@
   "Juan Pablo Ruge Perez": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
+  "Pedro Israel Vallejo Perez": [
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
   "Manuel Diaz Sanchez": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Walter J.": {
     "as": "Walter Jule"
   },
-  "Love S.": {
-    "as": "Love Toriano Smith"
-  },
   "Chancy W.": {
     "as": "Chancy Williams Wigglestove"
+  },
+  "Love S.": {
+    "as": "Love Toriano Smith"
   },
   "Gerardo V.": {
     "as": "Gerardo Varela"

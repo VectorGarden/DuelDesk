@@ -496,7 +496,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Mattheo Alexander Robayo Sanchez": [
-    {"e":"2023-south-america-wcq"}
+    {"e":"2023-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Sterling Lathe Flesner": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -655,9 +656,6 @@
   "William J Kim": [
     {"e":"na-ygoc-2022"}
   ],
-  "Martin N.": {
-    "as": "Martin January Nunez"
-  },
   "Walter A.": {
     "as": "Walter Omar Angel"
   },
@@ -667,16 +665,19 @@
   "Roger T.": {
     "as": "Roger Quoc Hung Tram"
   },
-  "Patrick A.": {
-    "as": "Patrick Connor Ainsworth"
+  "Martin N.": {
+    "as": "Martin January Nunez"
   },
   "Joshua L.": {
     "as": "Joshua Ryan Levine"
   },
+  "Jeremy C.": {
+    "as": "Jeremy David Cummins"
+  },
   "Nicholas W.": {
     "as": "Nicholas John Wetmore"
   },
-  "Jeremy C.": {
-    "as": "Jeremy David Cummins"
+  "Patrick A.": {
+    "as": "Patrick Connor Ainsworth"
   }
 }

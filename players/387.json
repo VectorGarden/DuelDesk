@@ -517,7 +517,8 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Daniel Nicolas Tettamanti Montalvan": [
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Josue Guillen Calderon": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
@@ -525,20 +526,20 @@
   "Diego Alessandro Aguirre Barreño": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Hamzeh S.": {
-    "as": "Hamzeh Hassan Salti"
-  },
   "Ryne H.": {
     "as": "Ryne Michael Macari Hanson"
   },
-  "Chris N.": {
-    "as": "Chris Chi Tsun Ng"
+  "Skyla M.": {
+    "as": "Skyla Wayne Miller"
   },
   "Junior C.": {
     "as": "Junior J. Chala"
   },
-  "Skyla M.": {
-    "as": "Skyla Wayne Miller"
+  "Hamzeh S.": {
+    "as": "Hamzeh Hassan Salti"
+  },
+  "Chris N.": {
+    "as": "Chris Chi Tsun Ng"
   },
   "Jonathan T.": {
     "as": "Jonathan Alexander Tamayo"

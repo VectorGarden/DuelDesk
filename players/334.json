@@ -530,16 +530,19 @@
   "Franklin Mamani Mamani": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Franklin Jonathan Cedeno Farfan": [
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
   "Bryant Brizuela": [
     {"e":"wcq-2016-mexico"}
   ],
   "Jean Paul Ocampo Ortega": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Oscar O.": {
-    "as": "Oscar David Ortiz"
-  },
   "Vittorio G.": {
     "as": "Vittorio Enrique Genovese"
+  },
+  "Oscar O.": {
+    "as": "Oscar David Ortiz"
   }
 }

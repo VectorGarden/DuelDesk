@@ -683,7 +683,8 @@
   ],
   "Miguel Hernando Bulla Bolivar": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Lucas Nahuel Andueza": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
@@ -713,13 +714,13 @@
   "Quang H.": {
     "as": "Quang Nhat Hoang"
   },
+  "Derrick F.": {
+    "as": "Derrick Lee Fox"
+  },
   "Gonzalo L.": {
     "as": "Gonzalo Magallon Lopez"
   },
   "Johnathon T.": {
     "as": "Johnathon Keith Taylor"
-  },
-  "Derrick F.": {
-    "as": "Derrick Lee Fox"
   }
 }

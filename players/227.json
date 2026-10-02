@@ -369,7 +369,8 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq","cut":"Top 32"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Steffany Chavez": [
     {"e":"2022-remote-duel-ycs-north-america"}

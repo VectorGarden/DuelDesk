@@ -128,7 +128,8 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Michael Oliver Gonzalez": [
     {"e":"2016-north-american-wcq"},
@@ -166,6 +167,7 @@
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026","cut":"Final"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"},
