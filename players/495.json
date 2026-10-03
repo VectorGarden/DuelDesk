@@ -633,12 +633,6 @@
   "wins Stefano Sluis": [
     {"e":"wcs-2010","deck":"Infernity"}
   ],
-  "Abel S.": {
-    "as": "Abel Salgado"
-  },
-  "Hai N.": {
-    "as": "Hai Si Hoang Nguyen"
-  },
   "Takuma C.": {
     "as": "Takuma Ken Chipman"
   },
@@ -647,5 +641,11 @@
   },
   "Adrian E.": {
     "as": "Adrian Joshua Alas Echane"
+  },
+  "Hai N.": {
+    "as": "Hai Si Hoang Nguyen"
+  },
+  "Abel S.": {
+    "as": "Abel Salgado"
   }
 }

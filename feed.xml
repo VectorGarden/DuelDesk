@@ -6,9 +6,49 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2026 19:01:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 21:43:28 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Round 6 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-6-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-6-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 21:43:28 +0000</pubDate>
+      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Standings after Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-standings-after-round-5/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-standings-after-round-5/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 21:42:01 +0000</pubDate>
+      <description>Standings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Round 5 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-5-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-5-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 20:11:06 +0000</pubDate>
+      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Standings after Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-standings-after-round-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-standings-after-round-4/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 20:10:02 +0000</pubDate>
+      <description>Standings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Guayaquil: , Ecuador – Advance: Round 4 Pairings</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-4-pairings/</link>
@@ -3179,46 +3219,6 @@
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sat, 11 Jul 2026 22:43:30 +0000</pubDate>
       <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Standings After Round 6</title>
-      <link>https://yugiohblog.konami.com/2026/championships/north-america-wcq-standings-after-round-6-4/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/north-america-wcq-standings-after-round-6-4/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 22:41:33 +0000</pubDate>
-      <description>Standings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Top Tables Update: Round 6</title>
-      <link>https://yugiohblog.konami.com/2026/championships/nawcq-top-tables-update-round-6-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/nawcq-top-tables-update-round-6-2/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 22:15:00 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Round 6 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/north-america-wcq-round-6-pairings-5/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/north-america-wcq-round-6-pairings-5/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 21:56:08 +0000</pubDate>
-      <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Standings After Round 5</title>
-      <link>https://yugiohblog.konami.com/2026/championships/north-america-wcq-standings-after-round-5-3/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/north-america-wcq-standings-after-round-5-3/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 21:45:13 +0000</pubDate>
-      <description>Standings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
