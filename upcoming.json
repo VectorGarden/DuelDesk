@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-09-03",
+  "fetched": "2026-10-03",
   "events": [
     {
       "event": "Yu-Gi-Oh! x eFootball™ Collaboration",
@@ -8,30 +8,6 @@
       "starts": "2025-09-27",
       "ends": null,
       "url": "https://www.yugioh-card.com/en/events/ygo_x_efootball/"
-    },
-    {
-      "event": "OTS Championship - Chaos Origin Season",
-      "listed": "OTS Championship - Chaos Origin Season",
-      "location": "North America & Latin America",
-      "starts": "2026-08-22",
-      "ends": "2026-08-23",
-      "url": "https://www.yugioh-card.com/en/events/otschampionship/"
-    },
-    {
-      "event": "WORLD CHAMPIONSHIP 2026 - OTS Celebration",
-      "listed": "WORLD CHAMPIONSHIP 2026 - OTS Celebration",
-      "location": "North America & Latin America",
-      "starts": "2026-08-29",
-      "ends": "2026-09-13",
-      "url": "https://www.yugioh-card.com/en/events-item/2026_wcs-c/"
-    },
-    {
-      "event": "Latin America Remote Duel YCS",
-      "listed": "Latin America Remote Duel Yu-Gi-Oh! Championship Series",
-      "location": "Latin America (hosted on Discord)",
-      "starts": "2026-09-18",
-      "ends": "2026-09-20",
-      "url": "https://www.yugioh-card.com/en/events-item/2026-09-latam-rdycs/"
     },
     {
       "event": "YCS Guayaquil",
