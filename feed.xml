@@ -6,9 +6,19 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Oct 2026 23:06:37 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 01:56:11 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Guayaquil: IMPORTANT NOTICE FOR THE PREMIERE! EVENTS THIS WEEKEND</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/important-notice-for-the-premiere-events-this-weekend/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/important-notice-for-the-premiere-events-this-weekend/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-genesys</category>
+      <pubDate>Sat, 03 Oct 2026 01:56:11 +0000</pubDate>
+      <description>News from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Guayaquil: , Ecuador – Genesys: Standings after Round 7</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-standings-after-round-7/</link>
@@ -3208,16 +3218,6 @@
       <category domain="kind">feature</category>
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sat, 11 Jul 2026 20:01:04 +0000</pubDate>
-      <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Round 2 Feature Match: Alexander Manouel Richard Kazandjian vs. Thomas Tin Leung Hong</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/nawcq-round-2-feature-match-alexander-manouel-richard-kazandjian-vs-thomas-tin-leung-hong/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/nawcq-round-2-feature-match-alexander-manouel-richard-kazandjian-vs-thomas-tin-leung-hong/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 19:26:01 +0000</pubDate>
       <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
