@@ -442,6 +442,7 @@
     {"e":"2025-ycs-sao-paulo-brazil"},
     {"e":"2026-south-america-wcq","cut":"Final"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 8"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 32"},
     {"e":"remote-duel-ycs-january-2024","cut":"Top 32"},
     {"e":"remote-duel-ycs-january-2026"},
@@ -623,7 +624,8 @@
     {"e":"2024-team-ycs-santiago-chile"}
   ],
   "Kevin Marcelo Hernandez Maya": [
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Matthew Daniel Kerner": [
     {"e":"2024-ycs-indianapolis"}

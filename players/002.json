@@ -346,7 +346,8 @@
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2022-team-ycs-quito"},
     {"e":"2024-south-america-wcq"},
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Daniel Palacios": [
     {"e":"2022-11-ycs-pasadena"},
@@ -375,7 +376,8 @@
   "Joel Ricardo Alvia Fiallos": [
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2024-ycs-medellin-colombia"}
+    {"e":"2024-ycs-medellin-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Kevin Alexander Vasquez Huera": [
     {"e":"2022-team-ycs-quito"}
@@ -611,19 +613,19 @@
   "Lenon M.": {
     "as": "Lenon De Miranda"
   },
-  "Dallen H.": {
-    "as": "Dallen Dewayne Harrell"
-  },
   "Howard D.": {
     "as": "Howard Clayton Davis"
+  },
+  "Sunny C.": {
+    "as": "Sunny Hau Chau"
+  },
+  "Dallen H.": {
+    "as": "Dallen Dewayne Harrell"
   },
   "Jomar O.": {
     "as": "Jomar Octaviani"
   },
   "Michael D.": {
     "as": "Michael James Dorn"
-  },
-  "Sunny C.": {
-    "as": "Sunny Hau Chau"
   }
 }

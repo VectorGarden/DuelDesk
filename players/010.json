@@ -470,6 +470,7 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys","cut":"Final"},
     {"e":"2026-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
@@ -672,6 +673,9 @@
   "Noah John Seung Huyk Elbert": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"}
   ],
+  "Plinio Macklides Verdezoto Aguila": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Doran Freedom Hudson": [
     {"e":"na-ygoc-2022"}
   ],
@@ -682,16 +686,16 @@
   "Wendell S.": {
     "as": "Wendell Rafael da Silva"
   },
-  "Jerome L.": {
-    "as": "Jerome Jazz Malik Levingston"
-  },
   "Dylan B.": {
     "as": "Dylan Preston Bradley"
   },
-  "Drake J.": {
-    "as": "Drake James Jewett"
+  "Jerome L.": {
+    "as": "Jerome Jazz Malik Levingston"
   },
   "Enzo P.": {
     "as": "Enzo Penichon"
+  },
+  "Drake J.": {
+    "as": "Drake James Jewett"
   }
 }

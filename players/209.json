@@ -317,6 +317,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"ycs-lima-peru-2023"}
   ],
   "Alexander Nicholas Carbo": [
@@ -762,11 +763,11 @@
   "Pedro B.": {
     "as": "Pedro Leonardo Rocha Braganca"
   },
-  "Chloe C.": {
-    "as": "Chloe Lorelai Ross Colella"
-  },
   "Kevin P.": {
     "as": "Kevin Alexis Ponce"
+  },
+  "Chloe C.": {
+    "as": "Chloe Lorelai Ross Colella"
   },
   "Tristan N.": {
     "as": "Tristan Nguyen"

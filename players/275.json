@@ -450,16 +450,19 @@
   "Fabian Escobar Rivero": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Jean Carlos De La Rosa guerrero": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Ivan Guadalupe Villanueva Sandoval": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Kevin Miranda De La Cruz": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Grigor K.": {
-    "as": "Grigor Kupchyan"
-  },
   "Ramiro D.": {
     "as": "Ramiro Delatorre"
+  },
+  "Grigor K.": {
+    "as": "Grigor Kupchyan"
   }
 }

@@ -652,28 +652,31 @@
   "Juan Esteban Torres Vergara": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
+  "Zeno Augusto Neto": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "wins Galileo De Obaldia": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Wyatt B.": {
-    "as": "Wyatt Leland Brannock"
+  "Brandon F.": {
+    "as": "Brandon Bryan Ferrell"
   },
   "Vivek S.": {
     "as": "Vivek Naresh Sreenivasan"
   },
-  "Max C.": {
-    "as": "Max Cardenas"
-  },
-  "Yucheng L.": {
-    "as": "Yucheng Li"
-  },
   "Kyle N.": {
     "as": "Kyle Aidan Nance"
   },
-  "Brandon F.": {
-    "as": "Brandon Bryan Ferrell"
+  "Max C.": {
+    "as": "Max Cardenas"
+  },
+  "Wyatt B.": {
+    "as": "Wyatt Leland Brannock"
+  },
+  "Yucheng L.": {
+    "as": "Yucheng Li"
   }
 }

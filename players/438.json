@@ -533,6 +533,7 @@
     {"e":"2025-ycs-lima-peru"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 32"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -612,6 +613,9 @@
   ],
   "Guillermo Andres Montalbetti": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Juan Sebastian Jimenez": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Joaquin Leites": [
     {"e":"remote-duel-ycs-february-2025"}

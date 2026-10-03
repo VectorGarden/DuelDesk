@@ -90,6 +90,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia","won":true,"cut":"Final"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"na-ygoc-2022"}
   ],
   "Jerome Porter-Waugh": [
@@ -685,6 +686,9 @@
   "Kelvin B.": {
     "as": "Kelvin Shibuya Benini"
   },
+  "Quinton B.": {
+    "as": "Quinton DeVante Marvin Brown"
+  },
   "Jazmin H.": {
     "as": "Jazmin Hodzic"
   },
@@ -693,9 +697,6 @@
   },
   "Darian H.": {
     "as": "Darian Joshua Riley Wolver Hahn"
-  },
-  "Quinton B.": {
-    "as": "Quinton DeVante Marvin Brown"
   },
   "Michio R.": {
     "as": "Michio Ayden Randall"

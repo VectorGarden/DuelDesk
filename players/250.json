@@ -376,6 +376,7 @@
   "Israel Leonardo Hidalgo Davila": [
     {"e":"2019-ycs-quito-ecuador"},
     {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Luc Anthony Luzzo": [
@@ -614,11 +615,11 @@
   "Rodrigo Vargas Martinez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "James D.": {
-    "as": "James Miguel Dominguez"
-  },
   "Esala W.": {
     "as": "Esala Sammidha de Alwis Wathuthantrige"
+  },
+  "James D.": {
+    "as": "James Miguel Dominguez"
   },
   "Abdur D.": {
     "as": "Abdur Rahim Dominguez"

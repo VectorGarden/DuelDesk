@@ -154,6 +154,7 @@
     {"e":"2026-central-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022","cut":"Top 8"},
     {"e":"wcq-2016-mexico"},
     {"e":"ycs-lima-peru-2023"}
@@ -565,7 +566,8 @@
   ],
   "Hugo Eduardo Salazar Garcia": [
     {"e":"2024-ycs-medellin-colombia"},
-    {"e":"2025-ycs-lima-peru"}
+    {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Avery Ray Childers": [
     {"e":"2024-ycs-raleigh"}
@@ -638,6 +640,9 @@
   "Justin Philip ONeill": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Xavier Sebastian Jacome": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Alexander James Morris": [
     {"e":"na-ygoc-2022"}
   ],
@@ -647,11 +652,11 @@
   "Marshaun Lugo": {
     "as": "Marshaun J. Lugo"
   },
-  "Esteban S.": {
-    "as": "Esteban Andres Sanchez"
-  },
   "Cortney M.": {
     "as": "Cortney Jamaal David Mattson"
+  },
+  "Esteban S.": {
+    "as": "Esteban Andres Sanchez"
   },
   "Pathum M.": {
     "as": "Pathum Weerabandara Madigapola"

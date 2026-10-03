@@ -496,7 +496,8 @@
     {"e":"2024-south-america-wcq"}
   ],
   "Henry Javier Gonzalez Guerra": [
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Brais Gonzalez": [
     {"e":"2024-ycs-guayaquil-ecuador"}
@@ -611,14 +612,14 @@
   "Esteban Re": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Chase F.": {
-    "as": "Chase Victorian Friedland"
-  },
   "Donovan J.": {
     "as": "Donovan Yoby Juarez"
   },
   "Elbert W.": {
     "as": "Elbert L. Wu"
+  },
+  "Chase F.": {
+    "as": "Chase Victorian Friedland"
   },
   "Jaden P.": {
     "as": "Jaden Travis Parent"

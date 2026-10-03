@@ -48,6 +48,7 @@
     {"e":"2025-south-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-buenos-aires-argentina"},
     {"e":"2026-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"},
     {"e":"ycs-lima-peru-2023","cut":"Top 32"}
@@ -564,10 +565,10 @@
   "Ricardo Martelly Ochoa Rivera": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Peter W.": {
-    "as": "Peter Russell Wilson"
-  },
   "Vincent T.": {
     "as": "Vincent James Tran"
+  },
+  "Peter W.": {
+    "as": "Peter Russell Wilson"
   }
 }

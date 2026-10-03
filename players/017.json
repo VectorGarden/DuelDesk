@@ -356,7 +356,8 @@
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2025-south-america-wcq"},
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Alejandro Tayabas Castillo": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -461,6 +462,7 @@
   ],
   "Ricardo David Salazar Secaira": [
     {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Justin Daniel Morgan": [
@@ -537,6 +539,9 @@
   ],
   "Shamuel Segura Nomely": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Anthony Javier Delgado": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Hassan M. Lewis": [
     {"e":"na-ygoc-2022"}

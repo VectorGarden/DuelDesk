@@ -394,6 +394,7 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Edward Joel Camacho": [
@@ -599,10 +600,10 @@
   "David Tarazona": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Traviis M.": {
-    "as": "Traviis Terrell Massengale"
-  },
   "Hongji Y.": {
     "as": "Hongji Yang"
+  },
+  "Traviis M.": {
+    "as": "Traviis Terrell Massengale"
   }
 }

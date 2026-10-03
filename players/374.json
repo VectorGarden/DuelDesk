@@ -572,6 +572,12 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
+  "Oscar Daniel Faustos Iniguez": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Roberth Alexander Carpio Aguilar": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Sebastian Catalan Munoz": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -581,10 +587,10 @@
   "Jakob H.": {
     "as": "Jakob Donald Hardin"
   },
-  "Philip W.": {
-    "as": "Philip Weidinger"
-  },
   "Hao W.": {
     "as": "Hao Yi Wang"
+  },
+  "Philip W.": {
+    "as": "Philip Weidinger"
   }
 }

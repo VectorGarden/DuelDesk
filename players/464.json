@@ -176,6 +176,7 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Noah Michael Stima": [
@@ -601,6 +602,7 @@
   ],
   "Gino Stefano Poggi": [
     {"e":"2026-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Igor Danrley Silva": [
@@ -608,6 +610,9 @@
   ],
   "Luis Felipe Rodriguez Penuela": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Edgar Elias Ceballos Vicuna": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Sulmon Qureshi": [
     {"e":"na-ygoc-2022"}

@@ -499,7 +499,8 @@
   ],
   "Sebastian Basantes Sanchez": [
     {"e":"2024-south-america-wcq"},
-    {"e":"2025-south-america-wcq"}
+    {"e":"2025-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Brian Salas Villalobos": [
     {"e":"2024-ycs-indianapolis"}
@@ -590,10 +591,10 @@
   "Diego Raphael Bejarano Becerra": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Alberto L.": {
-    "as": "Alberto October Lopez"
-  },
   "Adam T.": {
     "as": "Adam Tapia"
+  },
+  "Alberto L.": {
+    "as": "Alberto October Lopez"
   }
 }

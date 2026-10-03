@@ -42,6 +42,7 @@
     {"e":"2026-08-quebec","f":"Advanced","cut":"Top 8","deck":"Mitsurugi"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"na-ygoc-2022"}
   ],
   "Ari Fletcher Bredbenner": [
@@ -311,6 +312,7 @@
     {"e":"2019-ycs-quito-ecuador"},
     {"e":"2024-ycs-guayaquil-ecuador","cut":"Top 16"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -558,10 +560,10 @@
   "Tyriq H.": {
     "as": "Tyriq Marquis Dewonye Hayes"
   },
-  "Fernando L.": {
-    "as": "Fernando Miguel Lucas"
-  },
   "Brian G.": {
     "as": "Brian Jesus Garcia"
+  },
+  "Fernando L.": {
+    "as": "Fernando Miguel Lucas"
   }
 }

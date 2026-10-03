@@ -509,7 +509,8 @@
     {"e":"2024-team-ycs-san-jose-costa-rica"}
   ],
   "Fabian Agustin Rebolledo Patino": [
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Zachary Dane Senter": [
     {"e":"2024-ycs-raleigh"}
@@ -597,6 +598,9 @@
   ],
   "Luis Alberto Teran": [
     {"e":"2026-central-america-wcq"}
+  ],
+  "Milton Alfredo Teran": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Isiah B.": {
     "as": "Isiah Allen Bourdeau"

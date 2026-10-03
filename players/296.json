@@ -458,7 +458,8 @@
   "Jordy David Moreira Gomez": [
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Andres Felipe Arias Torres": [
     {"e":"2022-ycs-bogota-colombia"}
@@ -662,19 +663,19 @@
   "Siri Antonio Pineda Jaramillo": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Peter C.": {
-    "as": "Peter Man Chun Chung"
-  },
   "Marko K.": {
     "as": "Marko Kovacevic"
+  },
+  "Peter C.": {
+    "as": "Peter Man Chun Chung"
   },
   "Carson C.": {
     "as": "Carson Joseph Cichocki"
   },
-  "Belle N.": {
-    "as": "Belle Song Nguyen"
-  },
   "Yiming H.": {
     "as": "Yiming Huang"
+  },
+  "Belle N.": {
+    "as": "Belle Song Nguyen"
   }
 }

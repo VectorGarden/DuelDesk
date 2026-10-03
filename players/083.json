@@ -465,7 +465,8 @@
     {"e":"2024-south-america-wcq"}
   ],
   "Marlon Gustavo Moreno Andrade": [
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Angel Geovanny Concha": [
     {"e":"2024-ycs-guayaquil-ecuador"}
@@ -542,13 +543,13 @@
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Jackson R.": {
-    "as": "Jackson Dillon Rauch"
-  },
   "Ilijan P.": {
     "as": "Ilijan Paurevic"
   },
   "Zachary O.": {
     "as": "Zachary Vincent Owens"
+  },
+  "Jackson R.": {
+    "as": "Jackson Dillon Rauch"
   }
 }

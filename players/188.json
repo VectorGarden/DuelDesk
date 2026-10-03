@@ -614,7 +614,8 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Juan Alfredo Crespo": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -656,17 +657,20 @@
   "William J Kim": [
     {"e":"na-ygoc-2022"}
   ],
-  "Brandon C.": {
-    "as": "Brandon Taylor Conrad"
+  "Walter A.": {
+    "as": "Walter Omar Angel"
   },
   "Roger T.": {
     "as": "Roger Quoc Hung Tram"
   },
+  "Brandon C.": {
+    "as": "Brandon Taylor Conrad"
+  },
   "Martin N.": {
     "as": "Martin January Nunez"
   },
-  "Walter A.": {
-    "as": "Walter Omar Angel"
+  "Patrick A.": {
+    "as": "Patrick Connor Ainsworth"
   },
   "Joshua L.": {
     "as": "Joshua Ryan Levine"
@@ -676,8 +680,5 @@
   },
   "Nicholas W.": {
     "as": "Nicholas John Wetmore"
-  },
-  "Patrick A.": {
-    "as": "Patrick Connor Ainsworth"
   }
 }

@@ -42,7 +42,8 @@
   "Leandro Dionicio Montes Baren": [
     {"e":"2013-south-american-wcq-championships"},
     {"e":"2015-south-american-wcq"},
-    {"e":"2016-sa-wcq"}
+    {"e":"2016-sa-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Levhin Paulo Cugat Grospe": [
     {"e":"2013-yu-gi-oh-championship-series-san-diego-california"}
@@ -628,6 +629,9 @@
   "Ebisai Marquez": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Marco Antonio Avalos": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Uziel Alvarado Garcia": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -640,16 +644,16 @@
   "Juan Carlos Bustillos Bravo": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Alonso B.": {
-    "as": "Alonso Capone Baca"
-  },
   "Hansel A.": {
     "as": "Hansel Erik Aguero"
   },
-  "Dustin S.": {
-    "as": "Dustin Ulrich Snow"
+  "Alonso B.": {
+    "as": "Alonso Capone Baca"
   },
   "Kristin S.": {
     "as": "Kristin Alexandra Soler"
+  },
+  "Dustin S.": {
+    "as": "Dustin Ulrich Snow"
   }
 }

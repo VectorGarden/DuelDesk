@@ -507,7 +507,8 @@
     {"e":"2024-team-ycs-san-jose-costa-rica"}
   ],
   "Franny Ricardo Reyes Obando": [
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Evan Micheal Stemplinski": [
     {"e":"2024-ycs-indianapolis"},
@@ -590,6 +591,9 @@
   ],
   "Juan Jose Baloco Garces": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Robert David Parrales": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Ajit Perla": [
     {"e":"na-ygoc-2022"}

@@ -315,6 +315,7 @@
     {"e":"2019-team-ycs-lima-peru"},
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -361,6 +362,7 @@
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2025-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Joshua Adam CA Friedman": [
@@ -601,16 +603,16 @@
   "Zackery T.": {
     "as": "Zackery Clyde Twork"
   },
-  "Brandon D.": {
-    "as": "Brandon Joseph Diez"
-  },
   "Dustin B.": {
     "as": "Dustin Michael Butcher"
   },
-  "Matthew K.": {
-    "as": "Matthew Geonwoo Kim"
+  "Brandon D.": {
+    "as": "Brandon Joseph Diez"
   },
   "Jimmy T.": {
     "as": "Jimmy Thoai To"
+  },
+  "Matthew K.": {
+    "as": "Matthew Geonwoo Kim"
   }
 }

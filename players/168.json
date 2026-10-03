@@ -575,7 +575,8 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2022-ycs-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Ricardo Teodomiro Fuertes Canayo": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -767,14 +768,17 @@
   "Nathan Joseph Strahan": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Julio F Riera": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Luahn De Souza Pereira": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Ariel D.": {
-    "as": "Ariel Steven Davis"
-  },
   "Kelvin Y.": {
     "as": "Kelvin Ye"
+  },
+  "Ariel D.": {
+    "as": "Ariel Steven Davis"
   },
   "Dylan I.": {
     "as": "Dylan Nasem Issak"

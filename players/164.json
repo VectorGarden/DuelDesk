@@ -424,7 +424,8 @@
   ],
   "Antonio Francisco Lopez Posso": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
-    {"e":"2025-ycs-lima-peru"}
+    {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Cyrus Montgomery Strayhorne": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -605,17 +606,20 @@
   "Pavel Fernando Molina Fandino": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
+  "Nelson Daniel Vela": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Gustavo Reyes Rodriguez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Gerardo G.": {
-    "as": "Gerardo Garza"
+  "Rich C.": {
+    "as": "Rich Cheng"
   },
   "Quoc H.": {
     "as": "Quoc Minh Huynh"
   },
-  "Rich C.": {
-    "as": "Rich Cheng"
+  "Gerardo G.": {
+    "as": "Gerardo Garza"
   },
   "Marshall M.": {
     "as": "Marshall James Marengo"

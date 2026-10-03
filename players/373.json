@@ -544,6 +544,9 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"}
   ],
+  "Ricardo Gabriel Unda Torres": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Vicente Marvin Andino Rios": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -553,16 +556,16 @@
   "Micaela Alexa Suero Tagle": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "William B.": {
-    "as": "William Jordan Byrne"
-  },
-  "Everardo A.": {
-    "as": "Everardo Alvarez"
+  "Sai V.": {
+    "as": "Sai Vang"
   },
   "Jesse H.": {
     "as": "Jesse William Horton"
   },
-  "Sai V.": {
-    "as": "Sai Vang"
+  "Everardo A.": {
+    "as": "Everardo Alvarez"
+  },
+  "William B.": {
+    "as": "William Jordan Byrne"
   }
 }

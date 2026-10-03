@@ -6,9 +6,59 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2026 01:56:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 19:01:26 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Round 4 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-4-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-4-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 19:01:26 +0000</pubDate>
+      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Standings after Round 3</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-standings-after-round-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-standings-after-round-3/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 19:00:00 +0000</pubDate>
+      <description>Standings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Round 3 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-3-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-3-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 17:27:21 +0000</pubDate>
+      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Round 2 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-2-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-2-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 16:39:34 +0000</pubDate>
+      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Advance: Round 1 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-1-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-advance-round-1-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
+      <pubDate>Sat, 03 Oct 2026 16:38:29 +0000</pubDate>
+      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Guayaquil: IMPORTANT NOTICE FOR THE PREMIERE! EVENTS THIS WEEKEND</title>
       <link>https://yugiohblog.konami.com/2026/ycs/important-notice-for-the-premiere-events-this-weekend/</link>
@@ -3169,56 +3219,6 @@
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sat, 11 Jul 2026 21:45:13 +0000</pubDate>
       <description>Standings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Round 5 Feature Match: Nathaniel Vasquez vs. Kevin Ochoa</title>
-      <link>https://yugiohblog.konami.com/2026/championships/nawcq-round-5-feature-match-nathaniel-vasquez-vs-kevin-ochoa/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/nawcq-round-5-feature-match-nathaniel-vasquez-vs-kevin-ochoa/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 21:38:18 +0000</pubDate>
-      <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Round 4 Feature Match: Rayman Chen vs. Jesse Calvin Boyer</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-round-4-feature-match-rayman-chen-vs-jesse-calvin-boyer/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-round-4-feature-match-rayman-chen-vs-jesse-calvin-boyer/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 21:14:06 +0000</pubDate>
-      <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Round 5 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/north-america-wcq-round-5-pairings-5/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/north-america-wcq-round-5-pairings-5/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 20:18:46 +0000</pubDate>
-      <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Standings After Round 4</title>
-      <link>https://yugiohblog.konami.com/2026/championships/north-america-wcq-standings-after-round-4-5/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/north-america-wcq-standings-after-round-4-5/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 20:16:33 +0000</pubDate>
-      <description>Standings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Round 3 Feature Match: Tan Pham vs. Leo Morris</title>
-      <link>https://yugiohblog.konami.com/2026/championships/nawcq-round-3-feature-match-tan-pham-vs-leo-morris/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/nawcq-round-3-feature-match-tan-pham-vs-leo-morris/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sat, 11 Jul 2026 20:01:04 +0000</pubDate>
-      <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

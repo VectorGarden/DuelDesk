@@ -491,7 +491,8 @@
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Christian Efrain Sanchez Goya": [
-    {"e":"2022-latin-america-remote-duel-ycs"}
+    {"e":"2022-latin-america-remote-duel-ycs"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Aaron Jenhwa Kok": [
     {"e":"2022-remote-duel-ycs-north-america"}
@@ -630,6 +631,7 @@
   ],
   "Ricardo Nicolas Rodriguez Hernandez": [
     {"e":"2024-ycs-medellin-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Juan Baloco Garces": [
@@ -690,6 +692,9 @@
   ],
   "Ethan Adam Thomason": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Danny Vicente Cedeno": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Ivan Roberto San Martin Barrera": [
     {"e":"remote-duel-ycs-january-2024"}

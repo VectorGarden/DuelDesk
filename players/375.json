@@ -599,6 +599,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Alexander Patricio Salavarria": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Jakob Michael-John Mojeske": [
@@ -613,10 +614,10 @@
   "Savio Gutierrez Andia": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Parker N.": {
-    "as": "Parker Logan Newbury"
-  },
   "Ezrael G.": {
     "as": "Ezrael Mario Gomez"
+  },
+  "Parker N.": {
+    "as": "Parker Logan Newbury"
   }
 }

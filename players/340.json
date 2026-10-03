@@ -290,7 +290,8 @@
     {"e":"2019-ycs-quito-ecuador"},
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2022-team-ycs-quito"},
-    {"e":"2023-south-america-wcq"}
+    {"e":"2023-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Ariel Francisco Ludena Prieto": [
     {"e":"2019-ycs-quito-ecuador"}
@@ -567,21 +568,22 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Emerson Daniel Valencia": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Jose Javier Martinez Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Taylor R.": {
-    "as": "Taylor Jacob Rowell"
-  },
   "Drtodd L.": {
     "as": "Drtodd Tony Leylekyan"
   },
-  "Piersen S.": {
-    "as": "Piersen Matthew Sukienik"
+  "Taylor R.": {
+    "as": "Taylor Jacob Rowell"
   },
   "Robin S.": {
     "as": "Robin John Sharman"
+  },
+  "Piersen S.": {
+    "as": "Piersen Matthew Sukienik"
   }
 }

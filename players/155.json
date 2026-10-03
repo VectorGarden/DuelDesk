@@ -265,6 +265,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026","cut":"Top 8"}
   ],
@@ -483,6 +484,9 @@
   ],
   "Demontre Osceola Kunjan": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Steve Kevin Hidalgo": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Tsun-Yu Hsiao": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Taiwan"}

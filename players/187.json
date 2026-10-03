@@ -339,7 +339,8 @@
     {"e":"2019-ycs-quito-ecuador"}
   ],
   "Jaime Joel Jaramillo Garcia": [
-    {"e":"2019-ycs-quito-ecuador"}
+    {"e":"2019-ycs-quito-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Damian Devontay Dukes": [
     {"e":"2020-team-ycs-las-vegas"}
@@ -565,14 +566,14 @@
   "Wangli C.": {
     "as": "Wangli Pancieri Campos"
   },
-  "Alex W.": {
-    "as": "Alex Colin White"
-  },
   "Enrique G.": {
     "as": "Enrique Garcia"
   },
   "Anibal J.": {
     "as": "Anibal Javier"
+  },
+  "Alex W.": {
+    "as": "Alex Colin White"
   },
   "James Z.": {
     "as": "James Scott Ziliak"

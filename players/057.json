@@ -173,6 +173,7 @@
     {"e":"2026-central-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"wcq-2016-mexico"},
     {"e":"ycs-lima-peru-2023"}
@@ -555,10 +556,10 @@
   "Ricardo B.": {
     "as": "Ricardo Ferraez Ban"
   },
-  "Camren S.": {
-    "as": "Camren Jerrod Sharpe"
-  },
   "Mitchell V.": {
     "as": "Mitchell Jason Ventura"
+  },
+  "Camren S.": {
+    "as": "Camren Jerrod Sharpe"
   }
 }

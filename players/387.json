@@ -520,14 +520,20 @@
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
+  "Jose Gabriel Cherrez": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Josue Guillen Calderon": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Diego Alessandro Aguirre Barreño": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Junior C.": {
-    "as": "Junior J. Chala"
+  "Chris N.": {
+    "as": "Chris Chi Tsun Ng"
+  },
+  "Skyla M.": {
+    "as": "Skyla Wayne Miller"
   },
   "Hamzeh S.": {
     "as": "Hamzeh Hassan Salti"
@@ -535,16 +541,13 @@
   "Ryne H.": {
     "as": "Ryne Michael Macari Hanson"
   },
-  "Skyla M.": {
-    "as": "Skyla Wayne Miller"
-  },
-  "Chris N.": {
-    "as": "Chris Chi Tsun Ng"
-  },
-  "Warner M.": {
-    "as": "Warner Ottoneil Morales"
+  "Junior C.": {
+    "as": "Junior J. Chala"
   },
   "Jonathan T.": {
     "as": "Jonathan Alexander Tamayo"
+  },
+  "Warner M.": {
+    "as": "Warner Ottoneil Morales"
   }
 }

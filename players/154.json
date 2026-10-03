@@ -451,7 +451,8 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2025-south-america-wcq"}
+    {"e":"2025-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Reyes Sanchez": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -617,13 +618,16 @@
   "Italo Joao Lima Silva": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"}
   ],
+  "Frank Adilio Zambrano": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Ruben Penaranda": [
     {"e":"yu-gi-oh-tcg-world-championship-2024","cut":"Final","deck":"Fiendsmith Yubel"}
   ],
-  "Luis R.": {
-    "as": "Luis Anthony Rivera"
-  },
   "Stephen C.": {
     "as": "Stephen Alexander Cedeno"
+  },
+  "Luis R.": {
+    "as": "Luis Anthony Rivera"
   }
 }

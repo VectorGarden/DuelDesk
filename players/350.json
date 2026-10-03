@@ -180,6 +180,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Travis Dean Foster": [
@@ -541,11 +542,11 @@
   "Allan D.": {
     "as": "Allan Tadeu de Souza Diogo"
   },
-  "Nick W.": {
-    "as": "Nick Allen Woodson"
-  },
   "Alexander I.": {
     "as": "Alexander Ryo Igarashi"
+  },
+  "Nick W.": {
+    "as": "Nick Allen Woodson"
   },
   "Manuel F.": {
     "as": "Manuel Isaiah Favela"

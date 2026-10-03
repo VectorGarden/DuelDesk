@@ -409,6 +409,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "The 707 Squad": [
@@ -601,20 +602,20 @@
   "Devon Boyd": {
     "as": "Devon L. Boyd"
   },
-  "Connor Z.": {
-    "as": "Connor Storm Zaborowski"
+  "Bader A.": {
+    "as": "Bader Abdullah Mahamad Alshahrani"
   },
   "Alfredo C.": {
     "as": "Alfredo Carlos"
+  },
+  "Connor Z.": {
+    "as": "Connor Storm Zaborowski"
   },
   "Spencer Y.": {
     "as": "Spencer Young"
   },
   "Surya K.": {
     "as": "Surya Kumaraguru"
-  },
-  "Bader A.": {
-    "as": "Bader Abdullah Mahamad Alshahrani"
   },
   "Ryhan J.": {
     "as": "Ryhan Chakim Jabri"

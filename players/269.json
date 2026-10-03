@@ -42,7 +42,8 @@
     {"e":"2022-ycs-bogota-colombia"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "William H. L. Wong": [
     {"e":"2013-yu-gi-oh-championship-series-san-diego-california"}
@@ -604,6 +605,9 @@
   "Elix Daniel Rotger Rivera": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Bryan Edmundo Rubio Chang": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Uriel Omar Moran Hernandez": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -619,22 +623,22 @@
   "Christopher D.": {
     "as": "Christopher Chen Ning Duong"
   },
-  "Inderpal D.": {
-    "as": "Inderpal Singh Dhaliwal"
-  },
   "Cristian G.": {
     "as": "Cristian Mitchell Gutierrez"
   },
+  "Inderpal D.": {
+    "as": "Inderpal Singh Dhaliwal"
+  },
   "Joshua S.": {
     "as": "Joshua Jordan Smith"
+  },
+  "Martin G.": {
+    "as": "Martin Marvyn Guillen"
   },
   "Cody B.": {
     "as": "Cody Cameron Bartz"
   },
   "Maximilian C.": {
     "as": "Maximilian Kyle Chow"
-  },
-  "Martin G.": {
-    "as": "Martin Marvyn Guillen"
   }
 }

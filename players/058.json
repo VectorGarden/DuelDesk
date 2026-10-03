@@ -451,7 +451,8 @@
   "Victor Manuel Ramirez Cercado": [
     {"e":"2024-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2025-south-america-wcq"}
+    {"e":"2025-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Fernando Rodriguez Vazquez": [
     {"e":"2024-ycs-guadalajara-mexico"},
@@ -543,10 +544,10 @@
   "Alfredo H.": {
     "as": "Alfredo Herrera"
   },
-  "Eric C.": {
-    "as": "Eric Karl Cardwell"
-  },
   "Anthony Y.": {
     "as": "Anthony Yun"
+  },
+  "Eric C.": {
+    "as": "Eric Karl Cardwell"
   }
 }

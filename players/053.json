@@ -430,7 +430,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-vancouver"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Derek Tyler Roberson": [
     {"e":"2025-04-ycs-houston"}
@@ -482,6 +483,9 @@
   "The Returned’s": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Juan Sebastian Mata Tabara": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
   "Terry Lawrence Cockerill Jr.": [
     {"e":"na-ygoc-2022"}
   ],
@@ -500,16 +504,16 @@
   "Vitor M.": {
     "as": "Vitor Mattos Milioni"
   },
-  "Ryley G.": {
-    "as": "Ryley Ayman Goff"
-  },
   "Kevin Y.": {
     "as": "Kevin Young Yim"
   },
-  "Kain B.": {
-    "as": "Kain Agustin Bordner"
+  "Ryley G.": {
+    "as": "Ryley Ayman Goff"
   },
   "Aeres H.": {
     "as": "Aeres James Alexander Ham"
+  },
+  "Kain B.": {
+    "as": "Kain Agustin Bordner"
   }
 }

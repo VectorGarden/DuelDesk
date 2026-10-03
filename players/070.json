@@ -366,7 +366,8 @@
   ],
   "Sebastian Hoyos": [
     {"e":"2019-uds-invitational-medellin-colombia"},
-    {"e":"2025-south-america-wcq"}
+    {"e":"2025-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Malcolm D. Lee": [
     {"e":"2019-ycs-chicago"}
@@ -434,7 +435,8 @@
   ],
   "Gabriel Antonio Puig Perez": [
     {"e":"2022-team-ycs-quito"},
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Joseph William Piacesi": [
     {"e":"2022-ycs-charlotte"}
@@ -665,11 +667,11 @@
   "Simon Trottier-Lacasse": {
     "as": "Simon T. Trottier-Lacasse"
   },
-  "Zhiming Z.": {
-    "as": "Zhiming Zhang"
-  },
   "Peter B.": {
     "as": "Peter Edward Brown"
+  },
+  "Zhiming Z.": {
+    "as": "Zhiming Zhang"
   },
   "Brennen C.": {
     "as": "Brennen Alexander Cross"

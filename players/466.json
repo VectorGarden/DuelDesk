@@ -422,7 +422,8 @@
     {"e":"2024-team-ycs-santiago-chile"}
   ],
   "Luis Fernando Chicaiza": [
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Marlon Diaz Ramirez": [
     {"e":"2024-ycs-raleigh"},
@@ -491,6 +492,9 @@
   "Frankjer Rafael García Calzadilla": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Owen L.": {
+    "as": "Owen Quentin Love"
+  },
   "Alex R.": {
     "as": "Alex Bryan Ramirez"
   },
@@ -499,8 +503,5 @@
   },
   "Jensen S.": {
     "as": "Jensen Ciara Smillie"
-  },
-  "Owen L.": {
-    "as": "Owen Quentin Love"
   }
 }

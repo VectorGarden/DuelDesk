@@ -389,6 +389,7 @@
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Angel Alfonso Lopez Padilla": [
@@ -628,6 +629,9 @@
   ],
   "Erick Giovanni Villatoro Garcia": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Gabriel Alejandro Plaza Plaza": [
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Brian Oswaldo Faucheux Contreras": [
     {"e":"ycs-lima-peru-2023"}

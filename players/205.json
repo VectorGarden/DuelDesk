@@ -336,7 +336,8 @@
     {"e":"2024-team-ycs-san-jose-costa-rica"}
   ],
   "Juan Daniel Castro": [
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Axcel Antonio Sornoza": [
     {"e":"2024-ycs-guayaquil-ecuador"}
@@ -432,11 +433,11 @@
   "MAertin B.": {
     "as": "MAertin Farias Barbosa"
   },
-  "Dillon M.": {
-    "as": "Dillon Maharaj"
-  },
   "Hanko C.": {
     "as": "Hanko Hon Kau Chow"
+  },
+  "Dillon M.": {
+    "as": "Dillon Maharaj"
   },
   "Christian H.": {
     "as": "Christian M. Hanna"

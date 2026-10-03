@@ -376,7 +376,8 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq"},
     {"e":"2024-south-america-wcq"},
-    {"e":"2024-ycs-guayaquil-ecuador"}
+    {"e":"2024-ycs-guayaquil-ecuador"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Michael Jonathan Rico": [
     {"e":"2022-ycs-bogota-colombia"}
@@ -596,10 +597,10 @@
   "Aidan Dante Taylor": [
     {"e":"2026-north-america-wcq"}
   ],
-  "Giorgos R.": {
-    "as": "Giorgos Sebastian Ramirez"
-  },
   "Alan K.": {
     "as": "Alan Leung Wah Kwok"
+  },
+  "Giorgos R.": {
+    "as": "Giorgos Sebastian Ramirez"
   }
 }

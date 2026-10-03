@@ -365,7 +365,8 @@
     {"e":"2024-10-cancun-mexico"},
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Martin Esteban Casas Corona": [
     {"e":"2022-ycs-guadalajara-mexico"},
@@ -563,11 +564,11 @@
   "DongWon Ha": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Austin A.": {
-    "as": "Austin Lawrence Anthony"
-  },
   "Tanner T.": {
     "as": "Tanner Riley Louie Thompson"
+  },
+  "Austin A.": {
+    "as": "Austin Lawrence Anthony"
   },
   "Daniel J.": {
     "as": "Daniel Serrano Jr."

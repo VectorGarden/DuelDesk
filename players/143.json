@@ -342,6 +342,7 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq","cut":"Top 16"},
     {"e":"2024-south-america-wcq"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"ycs-lima-peru-2023"}
   ],
   "Jose Emmanuel CA Ruiz": [
@@ -597,11 +598,11 @@
   "Jorge T.": {
     "as": "Jorge Alejandro Torres"
   },
-  "Edgar B.": {
-    "as": "Edgar Enrique Barajas"
-  },
   "Mitchel N.": {
     "as": "Mitchel Adam Noto"
+  },
+  "Edgar B.": {
+    "as": "Edgar Enrique Barajas"
   },
   "Alexis L.": {
     "as": "Alexis Lemus"
