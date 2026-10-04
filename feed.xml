@@ -6,9 +6,20 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Oct 2026 17:21:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 18:47:05 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Genesys: Top 8</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-top-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-top-8/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-genesys</category>
+      <pubDate>Sun, 04 Oct 2026 18:47:05 +0000</pubDate>
+      <description>News from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Guayaquil: , Ecuador – Genesys: Round 10 Pairings</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-10-pairings/</link>
@@ -3214,16 +3225,6 @@
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sun, 12 Jul 2026 01:04:10 +0000</pubDate>
       <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Standings After Round 8</title>
-      <link>https://yugiohblog.konami.com/2026/championships/north-america-wcq-standings-after-round-8-4/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/north-america-wcq-standings-after-round-8-4/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 01:02:34 +0000</pubDate>
-      <description>Standings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
