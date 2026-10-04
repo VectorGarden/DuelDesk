@@ -13,7 +13,7 @@
       "entrant": "Duelist",
       "swissRounds": 10,
       "duelists": 72,
-      "champion": null,
+      "champion": "Sebastian Alonso Serna Samame",
       "rounds": [
         {
           "id": "1",
@@ -938,7 +938,7 @@
           "id": "10",
           "label": "R10",
           "phase": "Swiss",
-          "state": "live",
+          "state": "done",
           "order": 10,
           "tables": 16,
           "posted": "10:21",
@@ -964,6 +964,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-10-pairings/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 164,
+          "tables": 1,
+          "posted": "14:51",
+          "standingsAfter": 10,
+          "pairings": [
+            {"table":1,"a":"Jonathan Rivas","b":"Sebastian Alonso Serna Samame"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-final/"
         }
       ]
     }

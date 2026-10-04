@@ -6,9 +6,42 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Oct 2026 18:47:05 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 23:03:33 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Genesys Winner</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-winner/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-winner/</guid>
+      <category>Results</category>
+      <category domain="kind">result</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-genesys</category>
+      <pubDate>Sun, 04 Oct 2026 23:03:33 +0000</pubDate>
+      <description>Results from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Genesys Final</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-final/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-final/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-genesys</category>
+      <pubDate>Sun, 04 Oct 2026 21:51:36 +0000</pubDate>
+      <description>News from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Guayaquil: , Ecuador – Genesys: Top 4</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-top-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-top-4/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-guayaquil-ecuador-genesys</category>
+      <pubDate>Sun, 04 Oct 2026 20:46:43 +0000</pubDate>
+      <description>News from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Guayaquil: , Ecuador – Genesys: Top 8</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-top-8/</link>
@@ -3195,36 +3228,6 @@
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sun, 12 Jul 2026 02:07:27 +0000</pubDate>
       <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Top Tables Update: Round 9</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-9/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-9/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 01:26:12 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Round 8 Feature Match: Aidan Shaw Harden vs. Jackson Thomas Fulmer</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/nawcq-round-8-feature-match-aidan-shaw-harden-vs-jackson-thomas-fulmer/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/nawcq-round-8-feature-match-aidan-shaw-harden-vs-jackson-thomas-fulmer/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 01:12:12 +0000</pubDate>
-      <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Round 9 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/north-america-wcq-round-9-pairings-5/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/north-america-wcq-round-9-pairings-5/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 01:04:10 +0000</pubDate>
-      <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
