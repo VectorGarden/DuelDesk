@@ -636,16 +636,16 @@
   "that doesn’t mean they’re out of the running yet. Chris Arantes a Duelist loses a Match": [
     {"e":"wcs-2010","deck":"Blackwings"}
   ],
-  "Timothy C.": {
-    "as": "Timothy Ty Cha"
-  },
   "Emilio T.": {
     "as": "Emilio Rafael Torres"
   },
-  "Tobie P.": {
-    "as": "Tobie John Pickell"
+  "Timothy C.": {
+    "as": "Timothy Ty Cha"
   },
   "Samson N.": {
     "as": "Samson Nguyen"
+  },
+  "Tobie P.": {
+    "as": "Tobie John Pickell"
   }
 }

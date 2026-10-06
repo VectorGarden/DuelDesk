@@ -657,9 +657,6 @@
   "William J Kim": [
     {"e":"na-ygoc-2022"}
   ],
-  "Walter A.": {
-    "as": "Walter Omar Angel"
-  },
   "Brandon C.": {
     "as": "Brandon Taylor Conrad"
   },
@@ -669,16 +666,19 @@
   "Roger T.": {
     "as": "Roger Quoc Hung Tram"
   },
-  "Joshua L.": {
-    "as": "Joshua Ryan Levine"
+  "Walter A.": {
+    "as": "Walter Omar Angel"
   },
   "Patrick A.": {
     "as": "Patrick Connor Ainsworth"
   },
-  "Jeremy C.": {
-    "as": "Jeremy David Cummins"
-  },
   "Nicholas W.": {
     "as": "Nicholas John Wetmore"
+  },
+  "Joshua L.": {
+    "as": "Joshua Ryan Levine"
+  },
+  "Jeremy C.": {
+    "as": "Jeremy David Cummins"
   }
 }

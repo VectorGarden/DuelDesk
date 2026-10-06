@@ -5,7 +5,7 @@
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
-  "ongoing": true,
+  "ongoing": false,
   "updated": "2026-10-04",
   "formats": [
     {
@@ -969,7 +969,7 @@
           "id": "Final",
           "label": "Final",
           "phase": "Top cut",
-          "state": "live",
+          "state": "done",
           "order": 164,
           "tables": 1,
           "posted": "14:51",
