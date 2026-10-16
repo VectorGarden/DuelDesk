@@ -6,18 +6,83 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 19:57:42 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 22:26:22 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
     <item>
-      <title>YCS Houston: Genesys Format Round 3 Feature Match: David Capuchino vs. Joaquin Flores</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-3-feature-match-david-capuchino-vs-joaquin-flores/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-3-feature-match-david-capuchino-vs-joaquin-flores/</guid>
+      <title>YCS Houston: Top Tables Update: Round 6 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-genesys-format/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 22:26:22 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Top Tables Update: Round 5 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-5-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-5-genesys-format/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 22:20:14 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Genesys Format Round 5 Feature Match: Brian Dong vs. Rehan Saeed</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-5-feature-match-brian-dong-vs-rehan-saeed/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-5-feature-match-brian-dong-vs-rehan-saeed/</guid>
       <category>Feature match</category>
       <category domain="kind">feature</category>
       <category domain="format">Genesys</category>
       <category domain="event">2026-ycs-houston</category>
-      <pubDate>Fri, 16 Oct 2026 19:57:42 +0000</pubDate>
+      <pubDate>Fri, 16 Oct 2026 22:00:33 +0000</pubDate>
+      <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Forbidden &amp; Limited List Update – Part 1</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-1/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-1/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 21:36:24 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Round 6 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-6-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-6-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 21:30:22 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Standings After Round 5 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-5-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-5-genesys-format/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 21:25:22 +0000</pubDate>
+      <description>Standings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Genesys Format Round 2 Feature Match: Johnathan Gochenour vs. Dino Chavez</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-2-feature-match-johnathan-gochenour-vs-dino-chavez/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-2-feature-match-johnathan-gochenour-vs-dino-chavez/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 21:21:25 +0000</pubDate>
       <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
@@ -28,7 +93,40 @@
       <category domain="kind">feature</category>
       <category domain="format">Genesys</category>
       <category domain="event">2026-ycs-houston</category>
-      <pubDate>Fri, 16 Oct 2026 19:41:53 +0000</pubDate>
+      <pubDate>Fri, 16 Oct 2026 20:16:46 +0000</pubDate>
+      <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Round 5 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-5-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-5-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 20:16:03 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Standings After Round 4 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-4-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-4-genesys-format/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 20:14:39 +0000</pubDate>
+      <description>Standings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Genesys Format Round 3 Feature Match: David Capuchino vs. Joaquin Flores</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-3-feature-match-david-capuchino-vs-joaquin-flores/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-3-feature-match-david-capuchino-vs-joaquin-flores/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 19:57:42 +0000</pubDate>
       <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
@@ -3135,104 +3233,6 @@
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sun, 12 Jul 2026 18:19:29 +0000</pubDate>
       <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 12 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-12-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-12-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 18:13:01 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Standings after Round 11</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-11/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-11/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 18:11:15 +0000</pubDate>
-      <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Top Tables Update: Round 12</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-12-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-12-2/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 17:38:05 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Top Tables Update: Round 11</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-top-tables-update-round-11/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-top-tables-update-round-11/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 17:26:00 +0000</pubDate>
-      <description>News from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: Genesys Championship Top Tables Update: Round 10</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/genesys-championship-top-tables-update-round-10/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/genesys-championship-top-tables-update-round-10/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 17:22:35 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Round 10 Feature Match: Adam Gilbert vs. Johnathan Gochenour</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-10-feature-match-adam-gilbert-vs-johnathan-gochenour/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-10-feature-match-adam-gilbert-vs-johnathan-gochenour/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 17:19:45 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Round 9 Feature Match: Andrew Powelson vs. Jeremi Guevarra</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-9-feature-match-andrew-powelson-vs-jeremi-guevarra/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-9-feature-match-andrew-powelson-vs-jeremi-guevarra/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 17:07:51 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Round 11 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-round-11-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-round-11-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 16:59:11 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Standings after Round 10</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-10/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-standings-after-round-10/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 16:56:17 +0000</pubDate>
-      <description>Standings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
