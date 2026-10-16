@@ -241,7 +241,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ernest Joshua Damian": [
     {"e":"2016-ycs-houston-texas"},
@@ -589,6 +590,9 @@
   ],
   "Beimar Diego Guerrero Higueras": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
+  ],
+  "Christian Alexander Duharte": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Hugo Eduardo Cervantes Posadas": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

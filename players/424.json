@@ -213,7 +213,8 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2018-ycs-memphis"},
     {"e":"2019-03-atlanta-ga"},
-    {"e":"2019-ycs-ft-worth"}
+    {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Hasan Cong Nguyen": [
     {"e":"2016-ycs-houston-texas"}
@@ -330,6 +331,7 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Eric Eduardo Banda": [

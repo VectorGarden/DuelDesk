@@ -125,7 +125,8 @@
     {"e":"201611-anaheim-ca"},
     {"e":"2017-ycs-atlanta","cut":"Top 32"},
     {"e":"2018-ycs-memphis"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christian Aaron Lenderman": [
     {"e":"2014-ycs-dallas"},
@@ -359,7 +360,8 @@
   "Luke Thanh Nguyen": [
     {"e":"2019-ycs-ft-worth"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Erick Ortiz Estrada": [
     {"e":"2019-ycs-ft-worth"}
@@ -540,7 +542,8 @@
   ],
   "Teryl John Lemay": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Isaiah Jeffrey Burgess": [
     {"e":"2025-10-ycs-anaheim"},

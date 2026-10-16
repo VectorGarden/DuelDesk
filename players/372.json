@@ -114,6 +114,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Justin Kurt Helmuth": [
@@ -547,17 +548,20 @@
   "Abraham Gonzalo Bautista Miranda": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Alejandro Houston Gallegos": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Kohan Michael Tome": [
     {"e":"na-ygoc-2022"}
   ],
   "Dunnie Matthews Bernedo Rios": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Martin P.": {
-    "as": "Martin Ivan Perez"
-  },
   "Dominic A.": {
     "as": "Dominic Frank Azevedo"
+  },
+  "Martin P.": {
+    "as": "Martin Ivan Perez"
   },
   "Kazuma Y.": {
     "as": "Kazuma Yamamoto"

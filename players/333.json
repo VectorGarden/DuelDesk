@@ -428,7 +428,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Patrick Fleming English": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Joshua Bernard Perlmutter": [
     {"e":"2025-05-ycs-providence"}
@@ -484,10 +485,10 @@
   "Angel A.": {
     "as": "Angel Ascencio"
   },
-  "Guillaume D.": {
-    "as": "Guillaume C. Diaz"
-  },
   "Nader E.": {
     "as": "Nader Campiao Esmael"
+  },
+  "Guillaume D.": {
+    "as": "Guillaume C. Diaz"
   }
 }

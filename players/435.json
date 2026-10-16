@@ -308,7 +308,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Abraham Rivera Cruz": [
     {"e":"2019-north-america-wcq"},
@@ -564,11 +565,11 @@
   "Juan Diego Arce Velasquez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Levi D.": {
-    "as": "Levi James Dudley"
-  },
   "Jesse W.": {
     "as": "Jesse Miguel Wood"
+  },
+  "Levi D.": {
+    "as": "Levi James Dudley"
   },
   "Timothy A.": {
     "as": "Timothy Kelly Andrews"

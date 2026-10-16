@@ -210,6 +210,7 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Christian Arturo Lopez Mendoza": [
@@ -550,16 +551,16 @@
   "Juan Pablo Vera": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
-  "Ethan M.": {
-    "as": "Ethan Douglass Mammen"
+  "Khoakevin V.": {
+    "as": "Khoakevin Quoc Vo"
   },
   "Thomas P.": {
     "as": "Thomas Dang Pham"
   },
-  "Khoakevin V.": {
-    "as": "Khoakevin Quoc Vo"
-  },
   "Riley W.": {
     "as": "Riley Michael Wilhelm"
+  },
+  "Ethan M.": {
+    "as": "Ethan Douglass Mammen"
   }
 }

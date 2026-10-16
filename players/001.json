@@ -581,7 +581,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Freddy Elvira": [
     {"e":"2025-02-ycs-orlando"}
@@ -677,10 +678,10 @@
   "Keegan S.": {
     "as": "Keegan Dane Spotts"
   },
-  "Ethan C.": {
-    "as": "Ethan Scott Crowe"
-  },
   "Andrew W.": {
     "as": "Andrew Robert Walch"
+  },
+  "Ethan C.": {
+    "as": "Ethan Scott Crowe"
   }
 }

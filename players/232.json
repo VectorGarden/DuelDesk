@@ -592,7 +592,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Franco Mart?n Orsi": [
     {"e":"2024-team-ycs-santiago-chile"}

@@ -49,6 +49,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jaime Uriel Zarate Cordoba": [
@@ -662,11 +663,11 @@
   "Andrew R.": {
     "as": "Andrew Edward Rangel"
   },
-  "Georgiy K.": {
-    "as": "Georgiy Andreyevich Kachurin"
-  },
   "Tekle Y.": {
     "as": "Tekle Okbamicael Yousef"
+  },
+  "Georgiy K.": {
+    "as": "Georgiy Andreyevich Kachurin"
   },
   "Jesus C.": {
     "as": "Jesus Chavez Campas"

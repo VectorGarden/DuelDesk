@@ -428,7 +428,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Bystial @Ignister Maliss"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Winther Mera": [
     {"e":"2023-south-america-wcq"}
@@ -551,6 +552,15 @@
   ],
   "Efrain Humberto Salazar Peraza": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Caleb Sean Cordell": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Travis Chase Van Easteren": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Jarret Wayne Thompson": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Sebastian Salvatierra Leiva": [
     {"e":"remote-duel-ycs-february-2025"}

@@ -473,7 +473,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Daniel John Sutera": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Kervin Matthew John": [
     {"e":"2025-05-ycs-providence"},
@@ -515,19 +516,22 @@
   "Team A.D.S.": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Michael Donnell Garrett Jr.": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "-=This Match ended in a draw.=- She Wei Hao": [
     {"e":"wcs-2010","deck":"Frog Monarch"}
   ],
   "Garret S.": {
     "as": "Garret Alexander Soto Schier"
   },
-  "Stefan D.": {
-    "as": "Stefan Tanner Durrant"
+  "Ignacio L.": {
+    "as": "Ignacio Ramon Lopez"
   },
   "Eric A.": {
     "as": "Eric Alexander Avila"
   },
-  "Ignacio L.": {
-    "as": "Ignacio Ramon Lopez"
+  "Stefan D.": {
+    "as": "Stefan Tanner Durrant"
   }
 }

@@ -500,7 +500,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nicholas Coty Zaker": [
     {"e":"2024-10-ycs-niagara-falls"}
@@ -569,7 +570,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Jack Lynch": [
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christopher Andrew Clement": [
     {"e":"2026-05-ycs-columbus","f":"Genesys"}
@@ -587,10 +589,10 @@
   "Nilton Jair Coronel Chirinos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Justin C.": {
-    "as": "Justin Marlo Capito Cervantes"
-  },
   "Sihao C.": {
     "as": "Sihao Chen"
+  },
+  "Justin C.": {
+    "as": "Justin Marlo Capito Cervantes"
   }
 }

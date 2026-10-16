@@ -83,7 +83,8 @@
     {"e":"2015-north-american-wcq"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2022-ycs-charlotte"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christopher Arthur Chapman": [
     {"e":"2014-ycs-dallas"}

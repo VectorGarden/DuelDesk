@@ -541,7 +541,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Cody James Fotter": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Samuel Benjamin Siqueiros": [
     {"e":"2025-04-ycs-houston"}
@@ -597,22 +598,22 @@
   "Rodrigo Calixto Santos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Brandon D.": {
-    "as": "Brandon Joseph Diez"
-  },
-  "Marc L.": {
-    "as": "Marc Andre LeBlond"
+  "Zackery T.": {
+    "as": "Zackery Clyde Twork"
   },
   "Dustin B.": {
     "as": "Dustin Michael Butcher"
   },
-  "Zackery T.": {
-    "as": "Zackery Clyde Twork"
+  "Marc L.": {
+    "as": "Marc Andre LeBlond"
   },
-  "Matthew K.": {
-    "as": "Matthew Geonwoo Kim"
+  "Brandon D.": {
+    "as": "Brandon Joseph Diez"
   },
   "Jimmy T.": {
     "as": "Jimmy Thoai To"
+  },
+  "Matthew K.": {
+    "as": "Matthew Geonwoo Kim"
   }
 }

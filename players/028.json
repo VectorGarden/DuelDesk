@@ -482,7 +482,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Zachery William Lewis": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christopher Paul Stefenoni": [
     {"e":"2025-10-ycs-anaheim"}
@@ -535,6 +536,9 @@
   ],
   "Santiago Mancipe Pimentel": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Wesley Zane Wilbur": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Barry Glenn Logan II": [
     {"e":"na-ygoc-2022"}

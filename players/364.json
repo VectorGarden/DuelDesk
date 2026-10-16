@@ -646,7 +646,8 @@
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
   "Jordan Marshall Reed": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Daryl Kenichi Mihara": [
     {"e":"2025-10-ycs-anaheim"},
@@ -699,16 +700,19 @@
   "Gustavo Silva Costa": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Joaquin Flores Jr.": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Brando Briones Matta": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Nicklaus D.": {
     "as": "Nicklaus Palmer Watkins Delpiero"
   },
-  "Braydin A.": {
-    "as": "Braydin Ryan Arnold"
-  },
   "Michael R.": {
     "as": "Michael Alexander Ramirez"
+  },
+  "Braydin A.": {
+    "as": "Braydin Ryan Arnold"
   }
 }

@@ -151,7 +151,8 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Zachary Thomas Pudlo": [
     {"e":"2014-north-american-wcq"},

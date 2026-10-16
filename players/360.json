@@ -504,7 +504,8 @@
   ],
   "Gage Thomas Mcguffie": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Genesys","deck":"Ghoti"}
+    {"e":"2026-02-300th-na","f":"Genesys","deck":"Ghoti"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Noel Barron": [
     {"e":"2025-04-ycs-houston"}
@@ -548,11 +549,11 @@
   "Raul Ortega": [
     {"e":"na-ygoc-2022"}
   ],
-  "Mark V.": {
-    "as": "Mark Anthony Vianello"
-  },
   "Evan O.": {
     "as": "Evan Akira Joseph Onodera"
+  },
+  "Mark V.": {
+    "as": "Mark Anthony Vianello"
   },
   "Rudy R.": {
     "as": "Rudy Albert Riley"

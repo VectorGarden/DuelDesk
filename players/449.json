@@ -371,7 +371,8 @@
     {"e":"2023-central-america-wcq"}
   ],
   "Jeffery Jacob Freelen": [
-    {"e":"2023-north-america-wcq"}
+    {"e":"2023-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Colby Hunter Lowe": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -485,23 +486,26 @@
   "La bonita con las bonitas": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Francisco Javier March Vargas": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Gage Allan Badgerow": [
     {"e":"na-ygoc-2022"}
   ],
   "Ralph Pelaez": {
     "as": "Ralph A. Pelaez"
   },
-  "Christopher O.": {
-    "as": "Christopher Martin Olmedo"
-  },
-  "Demesio S.": {
-    "as": "Demesio Fabian Serrano"
-  },
   "Dario G.": {
     "as": "Dario Alexander Guzman"
   },
   "Aditya D.": {
     "as": "Aditya Shirish Dharap"
+  },
+  "Christopher O.": {
+    "as": "Christopher Martin Olmedo"
+  },
+  "Demesio S.": {
+    "as": "Demesio Fabian Serrano"
   },
   "Jovanny H.": {
     "as": "Jovanny Hernandez"

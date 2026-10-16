@@ -399,7 +399,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ashley Nicole Esquivel": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -505,17 +506,20 @@
   "Boris Elvis Alberto Arrecis Rodas": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Shannon Dimery": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Hector Castillo Duran": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Esequiel Robledo Jr.": {
     "as": "Esequiel G. Robledo Jr."
   },
-  "Brendan D.": {
-    "as": "Brendan Edward Dixon"
-  },
   "Luke B.": {
     "as": "Luke Alan Bowkis"
+  },
+  "Brendan D.": {
+    "as": "Brendan Edward Dixon"
   },
   "Shaye H.": {
     "as": "Shaye Allen Holman"

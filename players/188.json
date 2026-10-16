@@ -634,7 +634,8 @@
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
   "Alexander Daniel Smith": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ricardo Meza Alvarado": [
     {"e":"2026-central-america-genesys-championship","f":"Genesys"}
@@ -657,26 +658,26 @@
   "William J Kim": [
     {"e":"na-ygoc-2022"}
   ],
+  "Roger T.": {
+    "as": "Roger Quoc Hung Tram"
+  },
   "Brandon C.": {
     "as": "Brandon Taylor Conrad"
   },
-  "Roger T.": {
-    "as": "Roger Quoc Hung Tram"
+  "Walter A.": {
+    "as": "Walter Omar Angel"
   },
   "Martin N.": {
     "as": "Martin January Nunez"
   },
-  "Walter A.": {
-    "as": "Walter Omar Angel"
+  "Jeremy C.": {
+    "as": "Jeremy David Cummins"
   },
   "Joshua L.": {
     "as": "Joshua Ryan Levine"
   },
   "Patrick A.": {
     "as": "Patrick Connor Ainsworth"
-  },
-  "Jeremy C.": {
-    "as": "Jeremy David Cummins"
   },
   "Nicholas W.": {
     "as": "Nicholas John Wetmore"

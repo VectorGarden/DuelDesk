@@ -598,7 +598,8 @@
   ],
   "Timothy Matthew Garrett": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Mitchell Wayne Toler": [
     {"e":"2025-04-ycs-houston"}
@@ -663,13 +664,13 @@
   "Jonathan S.": {
     "as": "Jonathan Thomas Smith"
   },
-  "Cameron B.": {
-    "as": "Cameron Michael Bernard"
-  },
   "Hursh J.": {
     "as": "Hursh Raj Jha"
   },
   "Joseph O.": {
     "as": "Joseph Anthony Oblena"
+  },
+  "Cameron B.": {
+    "as": "Cameron Michael Bernard"
   }
 }

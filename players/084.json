@@ -543,23 +543,26 @@
   "PAN-BOL": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "William Gardner Trask": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Samuel Benito Espinoza Moscoso": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Murilo T.": {
     "as": "Murilo Ranzani Trivella"
   },
-  "William J.": {
-    "as": "William Donald Johnson"
-  },
   "Chimmey N.": {
     "as": "Chimmey Nguyen"
   },
-  "Alexander R.": {
-    "as": "Alexander Rey Roman"
+  "William J.": {
+    "as": "William Donald Johnson"
   },
   "Dominic W.": {
     "as": "Dominic Lee Whalawitsa"
+  },
+  "Alexander R.": {
+    "as": "Alexander Rey Roman"
   },
   "Matthew F.": {
     "as": "Matthew Arden Fox"

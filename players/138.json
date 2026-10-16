@@ -169,6 +169,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced","cut":"Top 8","deck":"Kewl Tune"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Brody Michael Allison": [
@@ -664,6 +665,12 @@
   ],
   "Eduardo Rafael Reyes Teheran": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Rodel Ariel Rodea": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Jose Manuel Zavala": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jeremiah S.": {
     "as": "Jeremiah Marcus Springer"

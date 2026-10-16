@@ -527,7 +527,8 @@
   "John Q Pham": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Van Allen Celaya III": [
     {"e":"2026-02-300th-na","f":"Advanced"}

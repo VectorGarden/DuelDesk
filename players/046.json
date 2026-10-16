@@ -597,6 +597,9 @@
   "Julio Cesar Garcia Valverde": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Tyler Benjamin Kramer": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Rhett Mutchler": [
     {"e":"na-ygoc-2022"}
   ],
@@ -609,10 +612,10 @@
   "Hung Luu": {
     "as": "Hung G. Luu"
   },
-  "Manuel R.": {
-    "as": "Manuel Antonio Rodriguez"
-  },
   "Julien L.": {
     "as": "Julien Lin"
+  },
+  "Manuel R.": {
+    "as": "Manuel Antonio Rodriguez"
   }
 }

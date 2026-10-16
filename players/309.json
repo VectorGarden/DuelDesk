@@ -469,7 +469,8 @@
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Shawn Joseph Prusak": [
     {"e":"2024-11-north-america-remote-duel-ycs"},
@@ -576,7 +577,8 @@
   "Anil Gangapersaud": [
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys","won":true,"cut":"Final","deck":"Blitzclique"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Justo Jose Montiel": [
     {"e":"2026-central-america-wcq"}
@@ -612,14 +614,14 @@
   "Esteban Re": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Donovan J.": {
-    "as": "Donovan Yoby Juarez"
+  "Elbert W.": {
+    "as": "Elbert L. Wu"
   },
   "Chase F.": {
     "as": "Chase Victorian Friedland"
   },
-  "Elbert W.": {
-    "as": "Elbert L. Wu"
+  "Donovan J.": {
+    "as": "Donovan Yoby Juarez"
   },
   "Jaden P.": {
     "as": "Jaden Travis Parent"

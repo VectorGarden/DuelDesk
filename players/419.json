@@ -428,7 +428,8 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Kyle Hunter Salisbury": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Victor Eduardo Serrano": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"}
@@ -483,11 +484,11 @@
   "Stephen D.": {
     "as": "Stephen Albert DeNise"
   },
-  "Rodriquis E.": {
-    "as": "Rodriquis Ramone Evans"
-  },
   "Ian U.": {
     "as": "Ian Christopher Delacruz Ulep"
+  },
+  "Rodriquis E.": {
+    "as": "Rodriquis Ramone Evans"
   },
   "Shaun L.": {
     "as": "Shaun Christopher Lopez"

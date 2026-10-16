@@ -457,7 +457,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Braden F. Burt": [
     {"e":"2024-11-north-america-remote-duel-ycs"}
@@ -564,11 +565,11 @@
   "DongWon Ha": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Tanner T.": {
-    "as": "Tanner Riley Louie Thompson"
-  },
   "Austin A.": {
     "as": "Austin Lawrence Anthony"
+  },
+  "Tanner T.": {
+    "as": "Tanner Riley Louie Thompson"
   },
   "Daniel J.": {
     "as": "Daniel Serrano Jr."

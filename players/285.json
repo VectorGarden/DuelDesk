@@ -164,7 +164,8 @@
   ],
   "Mike Rodriguez": [
     {"e":"2015-ycs-chicago"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Melvin Mauricio Rivas Lanuza": [
     {"e":"201503-guatemala"}
@@ -295,6 +296,7 @@
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Christopher Stephen Guire Jr": [

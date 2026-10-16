@@ -49,7 +49,8 @@
     {"e":"2019-ycs-ft-worth"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Austin Lee Lenhart": [
     {"e":"2014-ycs-dallas"},
@@ -158,7 +159,8 @@
   "Francisco Reyes": [
     {"e":"2016-ycs-houston-texas"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Marco Antonio Morales Davalos": [
     {"e":"2016-ycs-mexico-city"},
@@ -538,10 +540,10 @@
   "Andres Escobari Ocampo": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
-  "Chris B.": {
-    "as": "Chris Blower"
-  },
   "Cyle G.": {
     "as": "Cyle Timothy Garcia"
+  },
+  "Chris B.": {
+    "as": "Chris Blower"
   }
 }

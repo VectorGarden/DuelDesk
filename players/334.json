@@ -497,7 +497,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Top 4","deck":"Blitzclique"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Julian Mateo Rodriguez Navarrete": [
     {"e":"2025-south-america-wcq"}

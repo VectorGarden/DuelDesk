@@ -515,7 +515,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "– DOGMA": [
     {"e":"2024-team-ycs-santiago-chile"}
@@ -566,7 +567,8 @@
   ],
   "Jakob Jere Storey": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Stellan Grey Zielinski": [
     {"e":"2025-north-america-wcq"},

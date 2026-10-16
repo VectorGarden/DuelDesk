@@ -617,7 +617,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Steven Sida He": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Rafael Isiah Gonzalez": [
     {"e":"2025-04-ycs-houston"}
@@ -670,10 +671,10 @@
   "Dalvinhg Enrique Villaverde Oliva": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Cristian C.": {
-    "as": "Cristian Jared Cloud"
-  },
   "Luis P.": {
     "as": "Luis Manuel Perez"
+  },
+  "Cristian C.": {
+    "as": "Cristian Jared Cloud"
   }
 }

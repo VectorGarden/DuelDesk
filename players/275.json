@@ -329,7 +329,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Team Broke Boys": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -368,7 +369,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Andres Gerardo Navarro Carrillo": [
     {"e":"2024-central-america-wcq"}
@@ -459,10 +461,10 @@
   "Kevin Miranda De La Cruz": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Grigor K.": {
-    "as": "Grigor Kupchyan"
-  },
   "Ramiro D.": {
     "as": "Ramiro Delatorre"
+  },
+  "Grigor K.": {
+    "as": "Grigor Kupchyan"
   }
 }

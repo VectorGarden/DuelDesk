@@ -572,6 +572,9 @@
   "Anzu Prime": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Juan Diego Nino": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Angelica Jaralillo Hernandez": [
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -581,11 +584,11 @@
   "Josue Guillen": {
     "as": "Josue A Guillen"
   },
-  "Kody M.": {
-    "as": "Kody Masataka Manabe"
-  },
   "Qamar S.": {
     "as": "Qamar Abbas Stationwala"
+  },
+  "Kody M.": {
+    "as": "Kody Masataka Manabe"
   },
   "Kamran A.": {
     "as": "Kamran Aghaseyedali"

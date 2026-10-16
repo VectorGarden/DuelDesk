@@ -509,7 +509,8 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Dylan Cole Childs": [
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jordan Eric": [
     {"e":"2024-ycs-raleigh"}
@@ -574,10 +575,10 @@
   "wins Tae Woo Kim": [
     {"e":"wcs-2010","deck":"Blackwings"}
   ],
-  "Ho Y.": {
-    "as": "Ho Young Yoon"
-  },
   "Mark L.": {
     "as": "Mark Camaya Lugue"
+  },
+  "Ho Y.": {
+    "as": "Ho Young Yoon"
   }
 }

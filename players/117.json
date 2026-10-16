@@ -460,7 +460,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Manuel Alejandro Gomez Mendoza": [
     {"e":"2022-02-north-america-remote-duel-ycs"}
@@ -729,13 +730,13 @@
   "Ronald Renato Salgado Cabada": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Alex S.": {
-    "as": "Alex Douglas Stoddard"
+  "Jim L.": {
+    "as": "Jim Cody Lott"
   },
   "Christopher A.": {
     "as": "Christopher Bryan Avila"
   },
-  "Jim L.": {
-    "as": "Jim Cody Lott"
+  "Alex S.": {
+    "as": "Alex Douglas Stoddard"
   }
 }

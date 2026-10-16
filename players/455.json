@@ -537,7 +537,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ryan Alexander Shock": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -582,10 +583,10 @@
   "Ezequiel Leites": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Dustin L.": {
-    "as": "Dustin Leonhardt"
-  },
   "Eva P.": {
     "as": "Eva Jolene Padilla"
+  },
+  "Dustin L.": {
+    "as": "Dustin Leonhardt"
   }
 }

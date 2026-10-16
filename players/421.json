@@ -343,7 +343,8 @@
     {"e":"2023-ycs-vancouver"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Brenden Royce Ornelas": [
     {"e":"2022-january-remote-duel-ycs"}

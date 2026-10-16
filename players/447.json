@@ -426,6 +426,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022","cut":"Top 32","deck":"Adventurer Dragon Link"}
   ],
   "Aljuran Michael Harris-Eafford": [
@@ -709,7 +710,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Blake Martin": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Justin P. Wong": [
     {"e":"2025-05-ycs-providence"}

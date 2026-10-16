@@ -419,7 +419,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Isaiah Lemont Bailey": [
     {"e":"2024-ycs-indianapolis"}
@@ -502,14 +503,14 @@
   "Nilo Edson Menezes Da Silva": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Oscar V.": {
-    "as": "Oscar Uriel Velez"
+  "Angelique R.": {
+    "as": "Angelique Nicole Rivera"
   },
   "Zachary P.": {
     "as": "Zachary Alexander Patterson"
   },
-  "Angelique R.": {
-    "as": "Angelique Nicole Rivera"
+  "Oscar V.": {
+    "as": "Oscar Uriel Velez"
   },
   "Kristofer M.": {
     "as": "Kristofer Allen MacNeal"

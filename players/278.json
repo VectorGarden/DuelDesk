@@ -568,7 +568,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Caeleb Aerick Kackowski": [
     {"e":"2025-05-ycs-providence"}
@@ -626,10 +627,10 @@
   "Johnathan M.": {
     "as": "Johnathan Michael Murray McDonald"
   },
-  "Armaan K.": {
-    "as": "Armaan Singh Kohli"
-  },
   "Charlie A.": {
     "as": "Charlie Willam Arias"
+  },
+  "Armaan K.": {
+    "as": "Armaan Singh Kohli"
   }
 }

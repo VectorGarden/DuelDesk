@@ -196,6 +196,7 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Akash Kumar Syngal": [
@@ -635,7 +636,8 @@
     {"e":"2026-central-america-wcq"}
   ],
   "William John Lewis": [
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "McLaren Snow Nelson": [
     {"e":"2026-north-america-wcq"}
@@ -649,10 +651,10 @@
   "Gabriel Netz": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Raleigh J.": {
-    "as": "Raleigh John Jungemann"
-  },
   "Deylan P.": {
     "as": "Deylan James Pitkin"
+  },
+  "Raleigh J.": {
+    "as": "Raleigh John Jungemann"
   }
 }

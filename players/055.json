@@ -134,7 +134,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ryan Tomas Partee": [
     {"e":"201711-san-diego-ca"},
@@ -436,14 +437,14 @@
   "a": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
+  "John S.": {
+    "as": "John Bryan Salgado"
+  },
   "Todd P.": {
     "as": "Todd Ryan Plummer"
   },
   "Brandon E.": {
     "as": "Brandon Lyle Engelhardt"
-  },
-  "John S.": {
-    "as": "John Bryan Salgado"
   },
   "Evan K.": {
     "as": "Evan Jay Kofford"

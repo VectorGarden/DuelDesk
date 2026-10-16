@@ -431,7 +431,8 @@
   "Quang Duy Nguyen": [
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Genesys","deck":"Megalith"}
+    {"e":"2026-02-300th-na","f":"Genesys","deck":"Megalith"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Alexander Christophe Thierry Rochaix": [
     {"e":"2024-north-america-wcq"},

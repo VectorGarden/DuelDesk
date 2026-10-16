@@ -442,7 +442,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Rodrick Trevor Pailin": [
     {"e":"2023-ycs-richmond"}

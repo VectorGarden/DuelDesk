@@ -322,7 +322,8 @@
   "Thomas X. Katsoulas": [
     {"e":"2019-ycs-ft-worth"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Michael Knight Pypkowski": [
     {"e":"2019-ycs-knoxville"}
@@ -543,11 +544,11 @@
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Zachary O.": {
-    "as": "Zachary Vincent Owens"
-  },
   "Jackson R.": {
     "as": "Jackson Dillon Rauch"
+  },
+  "Zachary O.": {
+    "as": "Zachary Vincent Owens"
   },
   "Ilijan P.": {
     "as": "Ilijan Paurevic"

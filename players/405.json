@@ -193,7 +193,8 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced","cut":"Top 8","deck":"DoomZ"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tommy Jeffery Quintero Castro": [
     {"e":"2017-ycs-atlanta"},
@@ -546,19 +547,19 @@
   "Marlon M.": {
     "as": "Marlon Aguiar de Melo"
   },
-  "Josh G.": {
-    "as": "Josh Makana Gala"
-  },
   "Camaran S.": {
     "as": "Camaran Jack Stout"
+  },
+  "Josh G.": {
+    "as": "Josh Makana Gala"
   },
   "Andrew E.": {
     "as": "Andrew Michael Edwards"
   },
-  "Benjamin L.": {
-    "as": "Benjamin Abraham Apawan Lahoy"
-  },
   "Jovanny C.": {
     "as": "Jovanny Velsain Castillo"
+  },
+  "Benjamin L.": {
+    "as": "Benjamin Abraham Apawan Lahoy"
   }
 }

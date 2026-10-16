@@ -225,6 +225,7 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Paolo Luis Geronimo": [
@@ -551,11 +552,11 @@
   "Yoshiki Saito": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Daryl R.": {
-    "as": "Daryl Jimmy Reese"
-  },
   "Reece B.": {
     "as": "Reece Joseph Bijou"
+  },
+  "Daryl R.": {
+    "as": "Daryl Jimmy Reese"
   },
   "Siming Y.": {
     "as": "Siming Yang"

@@ -419,7 +419,8 @@
     {"e":"2022-ycs-niagara-falls"}
   ],
   "Derek Regan Dumbeck": [
-    {"e":"2019-ycs-ft-worth"}
+    {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jorge Omar Velazquez Bucio": [
     {"e":"2019-ycs-guadalajara"}
@@ -623,7 +624,8 @@
   "Michael Andrew Cooley": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Robert Cody Stevens": [
     {"e":"2025-05-ycs-providence"},
@@ -683,6 +685,9 @@
   ],
   "Phoenix AntTiwon Bell": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Rafael Rodriguez": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Azad D.": {
     "as": "Azad Deihim"

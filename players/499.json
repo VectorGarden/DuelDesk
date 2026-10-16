@@ -335,7 +335,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Gem-Knight"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Luis Humberto Lopez Rodriguez": [
     {"e":"2018-central-america-wcq"}
@@ -629,14 +630,14 @@
   "Chris Mattiske": [
     {"e":"yu-gi-oh-world-championship-2013"}
   ],
-  "Haoran G.": {
-    "as": "Haoran Gan"
+  "Rolf R.": {
+    "as": "Rolf Gabriel Roldan Rolle"
   },
   "Oliver D.": {
     "as": "Oliver Wallace Desmond"
   },
-  "Rolf R.": {
-    "as": "Rolf Gabriel Roldan Rolle"
+  "Haoran G.": {
+    "as": "Haoran Gan"
   },
   "Francis A.": {
     "as": "Francis Jose London Aguinaldo"

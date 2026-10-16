@@ -340,7 +340,8 @@
   "Stephen Currie Bronder II": [
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-ft-worth"},
-    {"e":"2020-uds-invitational-tulsa-ok"}
+    {"e":"2020-uds-invitational-tulsa-ok"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jose Paniel Cantuta Canaviri": [
     {"e":"2019-south-america-wcq"}
@@ -645,11 +646,11 @@
   "Jeanpiere Heli Leon Leon": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Christian P.": {
-    "as": "Christian Paul Gregorio Pascua"
-  },
   "Jose G.": {
     "as": "Jose Francisco Ramirez Gonzalez"
+  },
+  "Christian P.": {
+    "as": "Christian Paul Gregorio Pascua"
   },
   "Solomon S.": {
     "as": "Solomon Grant Skuljicak"

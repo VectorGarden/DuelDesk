@@ -595,10 +595,12 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Nicholas Mario Johnson": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Anthony Shane Armstrong": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Thomas Clifften Kemble": [
     {"e":"2025-04-ycs-houston"}
@@ -667,19 +669,19 @@
   "Rodrigo Togores": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
-  "Adam N.": {
-    "as": "Adam Zaid Sameer Najarbashi"
-  },
   "Jongwon L.": {
     "as": "Jongwon John Lee"
+  },
+  "Adam N.": {
+    "as": "Adam Zaid Sameer Najarbashi"
   },
   "Jesse B.": {
     "as": "Jesse Calvin Boyer"
   },
-  "Brenden W.": {
-    "as": "Brenden Christin Alexander Whittier"
-  },
   "Marcel M.": {
     "as": "Marcel Antwaun Mulder"
+  },
+  "Brenden W.": {
+    "as": "Brenden Christin Alexander Whittier"
   }
 }

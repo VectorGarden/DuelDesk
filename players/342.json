@@ -614,7 +614,8 @@
   "Caitlyn Marie Trudo": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "David Josue Lopez Rodriguez": [
     {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel"}
@@ -629,17 +630,17 @@
   "Josh Kelly": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Final","deck":"Light and Darkness Ritual"}
   ],
-  "Dylan G.": {
-    "as": "Dylan Maxwell Graves"
+  "James E.": {
+    "as": "James Robert Esquibel"
   },
   "Etienne B.": {
     "as": "Etienne Jose Bonin"
   },
-  "James E.": {
-    "as": "James Robert Esquibel"
-  },
   "Peter N.": {
     "as": "Peter Phuong Nguyen"
+  },
+  "Dylan G.": {
+    "as": "Dylan Maxwell Graves"
   },
   "Jared P.": {
     "as": "Jared Mikel Perez"

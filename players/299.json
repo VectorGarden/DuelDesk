@@ -628,6 +628,9 @@
   "Santiago Ríos Mazo": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Santiago Martinez": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Layon Lineker De Lima": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -643,13 +646,13 @@
   "Josias Velazquez Velasco": [
     {"e":"wcq-2016-mexico"}
   ],
+  "Asad F.": {
+    "as": "Asad Farooq"
+  },
   "Jair G.": {
     "as": "Jair Alejandro Garcia"
   },
   "Trevor R.": {
     "as": "Trevor James Reid"
-  },
-  "Asad F.": {
-    "as": "Asad Farooq"
   }
 }

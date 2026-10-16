@@ -436,7 +436,8 @@
     {"e":"2024-12-ycs-anaheim"}
   ],
   "Jungwoo Park": [
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Torres Nathan Lee": [
     {"e":"2024-ycs-guadalajara-mexico"}
@@ -523,13 +524,13 @@
   "Landon Oliver": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
+  "Tristan R.": {
+    "as": "Tristan James Reep"
+  },
   "Paul D.": {
     "as": "Paul Ivan Diaz"
   },
   "Bryson W.": {
     "as": "Bryson Roger Williams"
-  },
-  "Tristan R.": {
-    "as": "Tristan James Reep"
   }
 }

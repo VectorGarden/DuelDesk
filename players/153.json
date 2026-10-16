@@ -222,7 +222,8 @@
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Tearlaments Tistina"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Dtaune Quintrell Ingram": [
     {"e":"2017-ycs-atlanta"}
@@ -611,6 +612,9 @@
   ],
   "Brendan Adrian Labarre": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Jake Kremling": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Irving Luis Nava Ocampo": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

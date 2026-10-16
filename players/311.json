@@ -473,7 +473,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Connor Matthew Seese": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -540,10 +541,10 @@
   "Llewelyn S.": {
     "as": "Llewelyn Richard Slone"
   },
-  "Fayzaan N.": {
-    "as": "Fayzaan Mohammed Naeem"
-  },
   "Anthony X.": {
     "as": "Anthony Xu"
+  },
+  "Fayzaan N.": {
+    "as": "Fayzaan Mohammed Naeem"
   }
 }

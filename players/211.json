@@ -98,7 +98,8 @@
     {"e":"201509-monterrey"}
   ],
   "Sabastian Nicholias Meade": [
-    {"e":"2016-ycs-houston-texas"}
+    {"e":"2016-ycs-houston-texas"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Marcos Gutierrez Sanchez": [
     {"e":"2016-ycs-mexico-city"},
@@ -500,7 +501,8 @@
   ],
   "Nathan Andrew Garcia": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Luis Fernando Soto Chinchilla": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}
@@ -620,10 +622,10 @@
   "Cristian U.": {
     "as": "Cristian Rafael Urena"
   },
-  "Dalvin U.": {
-    "as": "Dalvin Singh Uppal"
-  },
   "Bestoor S.": {
     "as": "Bestoor Soroosh Sedghi"
+  },
+  "Dalvin U.": {
+    "as": "Dalvin Singh Uppal"
   }
 }

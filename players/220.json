@@ -32,6 +32,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -560,6 +561,9 @@
   ],
   "Luis Diego Salinas Sanabria": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Jose Luis Enriquez": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "wins Kevin Lau": [
     {"e":"wcs-2010","deck":"Gladiator Beasts"}

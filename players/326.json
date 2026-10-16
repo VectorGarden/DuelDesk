@@ -124,7 +124,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Justin Michael Vilhauer": [
     {"e":"2016-ycs-houston-texas"},
@@ -132,7 +133,8 @@
   ],
   "Donald Robert Bell": [
     {"e":"2016-ycs-houston-texas"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Sergio Jr Ruvalcaba": [
     {"e":"2016-ycs-houston-texas"}

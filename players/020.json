@@ -458,12 +458,14 @@
     {"e":"2025-05-ycs-providence"}
   ],
   "Mashearelly Solis": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jerry Jay McKee": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christler Ryan Taguibao Cruz": [
     {"e":"2025-04-ycs-houston"}

@@ -518,7 +518,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Roman Anthony Hawks": [
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Average Joes": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -565,17 +566,20 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"}
   ],
+  "Nathan Cao Chau": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Jacob Brewer": [
     {"e":"na-ygoc-2022"}
   ],
   "Brahian Adham Chavez Quintana": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jack R.": {
-    "as": "Jack Manning Ramsay"
-  },
   "Carlos T.": {
     "as": "Carlos J.NV Torres"
+  },
+  "Jack R.": {
+    "as": "Jack Manning Ramsay"
   },
   "Nathaniel L.": {
     "as": "Nathaniel James Lehnhof"

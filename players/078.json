@@ -42,6 +42,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Michael A. Forsyth": [
@@ -189,7 +190,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-02-300th-na","f":"Genesys"}
+    {"e":"2026-02-300th-na","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Javier Camilo Ramirez Roncancio": [
     {"e":"201704-ycs-bogota-colombia"}

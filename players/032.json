@@ -489,7 +489,8 @@
   ],
   "Christopher Wayne Baldwin": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Donald Luis Boersma": [
     {"e":"2024-north-america-wcq"},
@@ -596,6 +597,9 @@
   ],
   "Patricio Marino Bata": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
+  ],
+  "Alek Raul Silva": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Carlos Jesus Barron Ponce de Leon": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

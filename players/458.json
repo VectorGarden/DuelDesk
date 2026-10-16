@@ -584,7 +584,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Fossil Magnet"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Elijah Brenan James": [
     {"e":"2025-11-ycs-pittsburgh-pa"}

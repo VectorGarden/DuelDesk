@@ -294,7 +294,8 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2023-ycs-vancouver"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Eliel Monarrez": [
     {"e":"2019-ycs-chicago"}
@@ -497,11 +498,11 @@
   "Arnaldo Jose Oliveira Ramos": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Kesavan K.": {
-    "as": "Kesavan Raja Kushalnagar"
-  },
   "Rennie W.": {
     "as": "Rennie Rendell Whitehead"
+  },
+  "Kesavan K.": {
+    "as": "Kesavan Raja Kushalnagar"
   },
   "Johnny R.": {
     "as": "Johnny Ramiro Rodriguez"

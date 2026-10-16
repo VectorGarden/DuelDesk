@@ -435,7 +435,8 @@
   "Daniel Joseph Westerveld": [
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nelson Matias Sanchez Lopez": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -647,13 +648,13 @@
   "Kevin Rolando Vicente Escobar": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
-  "Vishon B.": {
-    "as": "Vishon Sam Bhatia"
+  "Steve H.": {
+    "as": "Steve Enrique Hernandez"
   },
   "Craig S.": {
     "as": "Craig Johnston Smith"
   },
-  "Steve H.": {
-    "as": "Steve Enrique Hernandez"
+  "Vishon B.": {
+    "as": "Vishon Sam Bhatia"
   }
 }

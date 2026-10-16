@@ -413,7 +413,8 @@
     {"e":"2024-ycs-indianapolis"}
   ],
   "Lennard Joakim Klein": [
-    {"e":"2023-250th-ycs-in-bogota-colombia"}
+    {"e":"2023-250th-ycs-in-bogota-colombia"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "rRamon Torres Ramirez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -564,10 +565,10 @@
   "Fernando M.": {
     "as": "Fernando Massahiro Alves Murata"
   },
-  "Angel R.": {
-    "as": "Angel Rodriguez-Cruz"
-  },
   "Jamal J.": {
     "as": "Jamal James"
+  },
+  "Angel R.": {
+    "as": "Angel Rodriguez-Cruz"
   }
 }

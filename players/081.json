@@ -48,7 +48,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Brandon Alan Baker": [
     {"e":"2014-north-american-wcq"},
@@ -469,7 +470,8 @@
   ],
   "Finn Hannan Steele": [
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "David Alejandro Munoz Gonzalez": [
     {"e":"2025-central-america-wcq"},

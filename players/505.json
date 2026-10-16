@@ -111,6 +111,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia","won":true,"cut":"Final"},
     {"e":"2026-ycs-cartagena-colombia","cut":"Final"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"},
     {"e":"remote-duel-ycs-january-2026"},
     {"e":"ycs-lima-peru-2023","cut":"Top 16"}
@@ -482,7 +483,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jorge Ivan Tapicha Bedoya": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -565,7 +567,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nestor Alirio Paez Vargas": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}

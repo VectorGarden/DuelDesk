@@ -608,6 +608,9 @@
   "Bryan Edmundo Rubio Chang": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Joshua David Moreno": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Uriel Omar Moran Hernandez": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -620,14 +623,17 @@
   "Saulo S.": {
     "as": "Saulo Rangel dos Santos Silva"
   },
-  "Christopher D.": {
-    "as": "Christopher Chen Ning Duong"
-  },
   "Inderpal D.": {
     "as": "Inderpal Singh Dhaliwal"
   },
+  "Christopher D.": {
+    "as": "Christopher Chen Ning Duong"
+  },
   "Cristian G.": {
     "as": "Cristian Mitchell Gutierrez"
+  },
+  "Martin G.": {
+    "as": "Martin Marvyn Guillen"
   },
   "Cody B.": {
     "as": "Cody Cameron Bartz"
@@ -637,8 +643,5 @@
   },
   "Maximilian C.": {
     "as": "Maximilian Kyle Chow"
-  },
-  "Martin G.": {
-    "as": "Martin Marvyn Guillen"
   }
 }

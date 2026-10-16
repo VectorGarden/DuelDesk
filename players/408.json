@@ -640,7 +640,8 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Oran Matthew Juarez Jr.": [
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Scott Christopher Desai": [
     {"e":"2026-08-quebec","f":"Advanced"}
@@ -648,10 +649,10 @@
   "Mario Humberto Montoya Castillo": [
     {"e":"2026-central-america-wcq"}
   ],
-  "Alejandro E.": {
-    "as": "Alejandro Valdez Estrada"
-  },
   "Niravkumar T.": {
     "as": "Niravkumar Dharmesn Tandel"
+  },
+  "Alejandro E.": {
+    "as": "Alejandro Valdez Estrada"
   }
 }

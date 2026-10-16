@@ -426,7 +426,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Genesys"}
+    {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Andrew Albano Diaz": [
     {"e":"2019-ycs-pasadena"}

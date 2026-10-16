@@ -581,7 +581,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Thomas Connor Thompson": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Juan Gabriel Perales": [
     {"e":"2025-04-ycs-houston"}
@@ -661,22 +662,22 @@
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Kyle N.": {
+    "as": "Kyle Aidan Nance"
+  },
   "Max C.": {
     "as": "Max Cardenas"
   },
   "Brandon F.": {
     "as": "Brandon Bryan Ferrell"
   },
-  "Kyle N.": {
-    "as": "Kyle Aidan Nance"
-  },
   "Wyatt B.": {
     "as": "Wyatt Leland Brannock"
   },
-  "Vivek S.": {
-    "as": "Vivek Naresh Sreenivasan"
-  },
   "Yucheng L.": {
     "as": "Yucheng Li"
+  },
+  "Vivek S.": {
+    "as": "Vivek Naresh Sreenivasan"
   }
 }

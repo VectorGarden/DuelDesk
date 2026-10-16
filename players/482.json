@@ -252,7 +252,8 @@
   ],
   "Payton Thomas Dunn": [
     {"e":"2019-ycs-knoxville"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Gregory Hillman Jr.": [
     {"e":"2019-ycs-portland"}
@@ -485,11 +486,11 @@
   "Kenneth Leugim Sanchez Vega": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Tyler V.": {
-    "as": "Tyler James Vezina"
-  },
   "Liborio B.": {
     "as": "Liborio Bobby Barone"
+  },
+  "Tyler V.": {
+    "as": "Tyler James Vezina"
   },
   "Trent M.": {
     "as": "Trent Jamison Miller"

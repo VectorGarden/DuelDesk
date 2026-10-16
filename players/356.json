@@ -526,7 +526,8 @@
   ],
   "Gerald Lewis Hoffman": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Casey Lee Jones": [
     {"e":"2025-north-america-wcq"}
@@ -540,14 +541,17 @@
   "Rodrigo Cortez tapia": [
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
+  "Tyler Tran": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Guilherme V.": {
     "as": "Guilherme De Campos Vieira"
   },
-  "Dave K.": {
-    "as": "Dave Anil Khalasi"
-  },
   "Caleb S.": {
     "as": "Caleb Michael Simmons"
+  },
+  "Dave K.": {
+    "as": "Dave Anil Khalasi"
   },
   "Emma C.": {
     "as": "Emma Carlson"

@@ -119,6 +119,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Bystial @Ignister Maliss"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Derek Evan Ryall": [
@@ -614,16 +615,19 @@
   "Bryan Kenneth Hill": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Danial Ryder Ray": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Haru D.": {
     "as": "Haru Domingues"
-  },
-  "Bastian N.": {
-    "as": "Bastian Tristan Narro"
   },
   "John T.": {
     "as": "John Piero Trujillo"
   },
   "Aviel G.": {
     "as": "Aviel Getter"
+  },
+  "Bastian N.": {
+    "as": "Bastian Tristan Narro"
   }
 }

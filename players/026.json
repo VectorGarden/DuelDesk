@@ -91,6 +91,7 @@
     {"e":"2020-uds-invitational-tulsa-ok"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jose Martin Vleeschower Perez": [
@@ -387,7 +388,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jossue Sahid Preciado Pazmino": [
     {"e":"2023-south-america-wcq"}
@@ -528,6 +530,9 @@
   ],
   "Juan David Gomez Payarez": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Mason Christian Stelly": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Adrian Hernandez Mendieta": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

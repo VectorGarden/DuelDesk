@@ -138,7 +138,8 @@
     {"e":"2023-north-america-wcq"}
   ],
   "Steven Dallas Chapa": [
-    {"e":"2016-ycs-houston-texas"}
+    {"e":"2016-ycs-houston-texas"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Andrew John Trapp": [
     {"e":"2016-ycs-minneapolis"},
@@ -577,16 +578,16 @@
   "Connor Maguire": {
     "as": "Connor R. Maguire"
   },
+  "Tej A.": {
+    "as": "Tej C. Amin"
+  },
   "Kurt A.": {
     "as": "Kurt Seiji Achiu"
-  },
-  "Vasya P.": {
-    "as": "Vasya David Pincus"
   },
   "Danny M.": {
     "as": "Danny Xavier Martinez"
   },
-  "Tej A.": {
-    "as": "Tej C. Amin"
+  "Vasya P.": {
+    "as": "Vasya David Pincus"
   }
 }

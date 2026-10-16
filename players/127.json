@@ -492,7 +492,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Andrew Joseph Jensen": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Sean Micheal Turner": [
     {"e":"2025-04-ycs-houston"}
@@ -555,10 +556,10 @@
   "Joaquin P.": {
     "as": "Joaquin Pojaghi"
   },
-  "Christopher S.": {
-    "as": "Christopher Ryan Springer"
-  },
   "Nathan B.": {
     "as": "Nathan James Buck"
+  },
+  "Christopher S.": {
+    "as": "Christopher Ryan Springer"
   }
 }

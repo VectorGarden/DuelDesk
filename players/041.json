@@ -398,7 +398,8 @@
   ],
   "Thanh Kim Dao": [
     {"e":"2019-ycs-ft-worth"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nathaniel Edward Cote": [
     {"e":"2019-ycs-ft-worth"},
@@ -663,6 +664,9 @@
   ],
   "Ritchie Daniel Lozano Morales": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Ryan Vaughn Adams": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nicolas Dos Santos Rangel": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}

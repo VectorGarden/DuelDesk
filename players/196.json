@@ -77,7 +77,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christopher Michael Woolheater": [
     {"e":"2014-north-american-wcq"},
@@ -174,7 +175,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Enzo Simono Salviati": [
     {"e":"2016-ycs-rio-de-janeiro"},
@@ -659,11 +661,11 @@
   "Kolton S.": {
     "as": "Kolton Allan Schroeder"
   },
-  "Cameron N.": {
-    "as": "Cameron Taylor Neal"
-  },
   "Benito G.": {
     "as": "Benito Enrique Garcia"
+  },
+  "Cameron N.": {
+    "as": "Cameron Taylor Neal"
   },
   "Nathan K.": {
     "as": "Nathan Yongjin Kim"

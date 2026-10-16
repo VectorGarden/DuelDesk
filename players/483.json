@@ -575,7 +575,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Nikolas Paul Franklin Stuetze": [
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jack Than Le": [
     {"e":"2025-05-ycs-providence"}
@@ -587,7 +588,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Jared Thomas Guilbeau": [
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Alvaro Eduardo Aguilar": [
     {"e":"2025-central-america-wcq"}
@@ -655,10 +657,10 @@
   "Kyler S.": {
     "as": "Kyler J. Spiwak"
   },
-  "Julio V.": {
-    "as": "Julio Cesar Valente"
-  },
   "Dawson S.": {
     "as": "Dawson James Schawang"
+  },
+  "Julio V.": {
+    "as": "Julio Cesar Valente"
   }
 }
