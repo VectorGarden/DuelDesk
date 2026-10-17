@@ -6,9 +6,86 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 22:26:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 00:31:18 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Houston: Advanced ATTACK OF THE GIANT!! Top 3</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/advanced-attack-of-the-giant-top-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-attack-of-the-giant-top-3/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 00:31:18 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Genesys Format Round 4 Feature Match: Jude Paris vs. Mackey Chung</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-4-feature-match-jude-paris-vs-mackey-chung/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-4-feature-match-jude-paris-vs-mackey-chung/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 00:15:10 +0000</pubDate>
+      <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Round 8 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-8-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-8-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 00:06:06 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Standings After Round 7 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-7-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-7-genesys-format/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 00:03:42 +0000</pubDate>
+      <description>Standings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Genesys Format Round 5 Feature Match: Hector Aaron Luviano Lopez vs. Jacob Allan Dotson</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-5-feature-match-hector-aaron-luviano-lopez-vs-jacob-allan-dotson/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-5-feature-match-hector-aaron-luviano-lopez-vs-jacob-allan-dotson/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 23:35:41 +0000</pubDate>
+      <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Round 7 Pairings (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-7-pairings-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-7-pairings-genesys-format/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 22:50:34 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Standings After Round 6 (Genesys Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-6-genesys-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-6-genesys-format/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Fri, 16 Oct 2026 22:48:40 +0000</pubDate>
+      <description>Standings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Houston: Top Tables Update: Round 6 (Genesys Format)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-genesys-format/</link>
@@ -3162,77 +3239,6 @@
       <category domain="event">2026-north-america-genesys-championship</category>
       <pubDate>Sun, 12 Jul 2026 19:19:23 +0000</pubDate>
       <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Top Tables Update: Round 12</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-top-tables-update-round-12/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-top-tables-update-round-12/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 19:05:07 +0000</pubDate>
-      <description>News from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Top Tables Update: Round 13</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2025-north-america-wcq/nawcq-top-tables-update-round-13/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2025-north-america-wcq/nawcq-top-tables-update-round-13/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 18:49:52 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Top Tables Update: Round 11</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-11/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-11/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 18:44:04 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Top Tables Update: Round 10</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-10-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-top-tables-update-round-10-2/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 18:37:48 +0000</pubDate>
-      <description>News from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Round 13 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-round-13-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-round-13-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 18:30:21 +0000</pubDate>
-      <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Standings After Round 12</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-standings-after-round-12/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-standings-after-round-12/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 18:26:02 +0000</pubDate>
-      <description>Standings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Round 12 Feature Match: Logan Patrick Johnson vs. Jeanpaul Alberto Perez Alonzo</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-round-12-feature-match-logan-patrick-johnson-vs-jeanpaul-alberto-perez-alonzo/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-round-12-feature-match-logan-patrick-johnson-vs-jeanpaul-alberto-perez-alonzo/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 18:19:29 +0000</pubDate>
-      <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>
