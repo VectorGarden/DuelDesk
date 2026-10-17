@@ -519,6 +519,9 @@
   "Issac Ezequiel Coello Vera": [
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
+  "Tristan Hayden Cook": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Sebastian Benites Munive": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -534,10 +537,10 @@
   "Gustavo P.": {
     "as": "Gustavo Cassiano Pereira"
   },
-  "Jack C.": {
-    "as": "Jack Elliot Cates"
-  },
   "Dominic C.": {
     "as": "Dominic Eduardo Couch"
+  },
+  "Jack C.": {
+    "as": "Jack Elliot Cates"
   }
 }

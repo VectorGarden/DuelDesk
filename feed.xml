@@ -6,9 +6,73 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2026 15:20:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 18:23:13 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Houston: Round 3 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-2-pairings-advanced-format-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-2-pairings-advanced-format-2/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 18:23:13 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Forbidden &amp; Limited List Update – Part 2</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-2/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 18:21:58 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Standings After Round 2 (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-2-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-2-advanced-format/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 17:52:58 +0000</pubDate>
+      <description>Standings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: First-Timers!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-first-timers-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-first-timers-3/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 17:09:34 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Advanced Format Round 1 Feature Match: Gary Miotke vs. Juan Hernandez</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-1-feature-match-gary-miotke-vs-juan-hernandez/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-1-feature-match-gary-miotke-vs-juan-hernandez/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 17:08:50 +0000</pubDate>
+      <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Round 2 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-2-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-2-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 16:42:06 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Houston: Round 1 Pairings (Advanced Format)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-1-pairings-advanced-format/</link>
@@ -28,16 +92,6 @@
       <category domain="kind">news</category>
       <category domain="event">2026-ycs-houston</category>
       <pubDate>Sat, 17 Oct 2026 15:16:09 +0000</pubDate>
-      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Houston: First-Timers!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-first-timers-3/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-first-timers-3/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-ycs-houston</category>
-      <pubDate>Sat, 17 Oct 2026 14:59:37 +0000</pubDate>
       <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
@@ -3188,58 +3242,6 @@
       <category domain="kind">pairings</category>
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Mon, 13 Jul 2026 00:14:15 +0000</pubDate>
-      <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Top 8 Pairings (with Deck Types!)</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-top-8-pairings-with-deck-types-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-top-8-pairings-with-deck-types-2/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Mon, 13 Jul 2026 00:11:12 +0000</pubDate>
-      <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Final Pairing (with Deck Types!)</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-final-pairing-with-deck-types/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-final-pairing-with-deck-types/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Mon, 13 Jul 2026 00:07:24 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: Sunday ATTACK OF THE GIANT CARD!! Winners</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/sunday-attack-of-the-giant-card-winners-9/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/sunday-attack-of-the-giant-card-winners-9/</guid>
-      <category>Results</category>
-      <category domain="kind">result</category>
-      <category domain="format">Attack of the Giant Card</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 23:44:07 +0000</pubDate>
-      <description>Results from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Round 15 Feature Match: Michael Kyle Walters vs. Brayden Michael Davis</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-round-15-feature-match-michael-kyle-walters-vs-brayden-michael-davis/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-round-15-feature-match-michael-kyle-walters-vs-brayden-michael-davis/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 23:36:15 +0000</pubDate>
-      <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Round 15 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-round-15-pairings-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-round-15-pairings-2/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 22:40:48 +0000</pubDate>
       <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>

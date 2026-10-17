@@ -293,7 +293,8 @@
   "Ricardo Javier Pizarro Lopez": [
     {"e":"2018-ycs-atlanta"},
     {"e":"2023-05-ycs-philadelphia"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dallas Alexander Hoffman": [
     {"e":"2018-ycs-memphis"}
@@ -607,17 +608,17 @@
   "Rodrigo Calixto Santos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Brandon D.": {
-    "as": "Brandon Joseph Diez"
+  "Marc L.": {
+    "as": "Marc Andre LeBlond"
   },
   "Zackery T.": {
     "as": "Zackery Clyde Twork"
   },
+  "Brandon D.": {
+    "as": "Brandon Joseph Diez"
+  },
   "Dustin B.": {
     "as": "Dustin Michael Butcher"
-  },
-  "Marc L.": {
-    "as": "Marc Andre LeBlond"
   },
   "Jimmy T.": {
     "as": "Jimmy Thoai To"

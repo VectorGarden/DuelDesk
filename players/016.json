@@ -279,7 +279,8 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-central-america-wcq"}
+    {"e":"2026-central-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Erick Fabricio Ramirez Salazar": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
@@ -589,10 +590,10 @@
   "Nilton Jair Coronel Chirinos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Sihao C.": {
-    "as": "Sihao Chen"
-  },
   "Justin C.": {
     "as": "Justin Marlo Capito Cervantes"
+  },
+  "Sihao C.": {
+    "as": "Sihao Chen"
   }
 }

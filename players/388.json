@@ -546,7 +546,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Jacob Eric Martinez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Juan Jhovanny Ayala": [
     {"e":"2025-04-ycs-houston"}
@@ -611,22 +612,22 @@
   "Humberto Jacinto Manyari Melendez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Moises C.": {
-    "as": "Moises Coronado"
-  },
   "Altaira C.": {
     "as": "Altaira Marie Calen"
   },
+  "Moises C.": {
+    "as": "Moises Coronado"
+  },
   "Charlie S.": {
     "as": "Charlie Alexis Sanchez"
-  },
-  "Kayne T.": {
-    "as": "Kayne Ching Hian Tan"
   },
   "Dillon W.": {
     "as": "Dillon Cody Warner"
   },
   "Sean I.": {
     "as": "Sean Gabriel Bunsoy Ignacio"
+  },
+  "Kayne T.": {
+    "as": "Kayne Ching Hian Tan"
   }
 }

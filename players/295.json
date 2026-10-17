@@ -177,6 +177,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -593,13 +594,13 @@
   "Thaddeus B.": {
     "as": "Thaddeus Thomas Bingham"
   },
+  "Marcellus T.": {
+    "as": "Marcellus James Thiry"
+  },
   "Aaron F.": {
     "as": "Aaron Chase Furman"
   },
   "Rick W.": {
     "as": "Rick William Winspear"
-  },
-  "Marcellus T.": {
-    "as": "Marcellus James Thiry"
   }
 }

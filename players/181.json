@@ -488,7 +488,8 @@
   ],
   "Cristopher J. Lopez": [
     {"e":"2023-ycs-richmond"},
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Mingxuan Liu": [
     {"e":"2023-ycs-vancouver"}
@@ -610,10 +611,10 @@
   "Benjamin V.": {
     "as": "Benjamin Alexis Vidrio"
   },
-  "Giuseppe M.": {
-    "as": "Giuseppe Marra"
-  },
   "Trayone K.": {
     "as": "Trayone Matthew King"
+  },
+  "Giuseppe M.": {
+    "as": "Giuseppe Marra"
   }
 }

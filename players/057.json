@@ -549,6 +549,9 @@
   "Luis Alberto Pardo Prada": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
+  "Miguel Angel Barba Munoz": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Alan Esteban Castro Ayala": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -558,10 +561,10 @@
   "Ricardo B.": {
     "as": "Ricardo Ferraez Ban"
   },
-  "Camren S.": {
-    "as": "Camren Jerrod Sharpe"
-  },
   "Mitchell V.": {
     "as": "Mitchell Jason Ventura"
+  },
+  "Camren S.": {
+    "as": "Camren Jerrod Sharpe"
   }
 }

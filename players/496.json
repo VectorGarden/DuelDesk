@@ -648,6 +648,9 @@
   "Javier Sebastian Jacome Sarmiento": [
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
+  "Zackery Allen Beavers": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "wins Yuma Watanabe": [
     {"e":"wcs-2010","deck":"Blackwings"}
   ],
@@ -660,10 +663,10 @@
   "Leon Gonzalo Sebastian Ochoa Saenz": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Patrick O.": {
-    "as": "Patrick Hoyd OQuinn"
-  },
   "Steven G.": {
     "as": "Steven Ramond Grillo"
+  },
+  "Patrick O.": {
+    "as": "Patrick Hoyd OQuinn"
   }
 }

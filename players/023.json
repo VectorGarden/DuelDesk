@@ -235,7 +235,8 @@
     {"e":"2019-ycs-pasadena"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2024-12-ycs-anaheim"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "James Raynette Lopez": [
     {"e":"2017-north-american-wcq"}
@@ -599,10 +600,10 @@
   "Brandon R.": {
     "as": "Brandon Xavier Ramos"
   },
-  "I H.": {
-    "as": "I Hao Hsu"
-  },
   "Nathaniel C.": {
     "as": "Nathaniel Paul Clifton"
+  },
+  "I H.": {
+    "as": "I Hao Hsu"
   }
 }

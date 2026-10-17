@@ -223,6 +223,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"na-ygoc-2022"},
@@ -731,10 +732,10 @@
   "Michael C.": {
     "as": "Michael Angel Campos"
   },
-  "Elijah M.": {
-    "as": "Elijah Ray Maine"
-  },
   "Jashanpal M.": {
     "as": "Jashanpal Singh Mangat"
+  },
+  "Elijah M.": {
+    "as": "Elijah Ray Maine"
   }
 }
