@@ -385,7 +385,8 @@
     {"e":"2025-central-america-wcq"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-central-america-wcq"}
+    {"e":"2026-central-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Douglas Madruga De Oliveira": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -528,6 +529,9 @@
   ],
   "Xavier Torres Fierro": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Fernando Manuel Gomez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Javius S.": {
     "as": "Javius Jerfle Shorter"

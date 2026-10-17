@@ -344,7 +344,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ricky Brayan Perez Blanco": [
     {"e":"2022-11-ycs-pasadena"},
@@ -458,6 +459,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Braden F. Burt": [

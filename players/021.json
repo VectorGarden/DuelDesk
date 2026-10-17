@@ -82,7 +82,8 @@
   ],
   "Juan Carlos Cabrera": [
     {"e":"2014-ycs-dallas"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Juan Carlos Lima Torres": [
     {"e":"2014-ycs-mexico-d-f"},
@@ -605,10 +606,10 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Kareem S.": {
-    "as": "Kareem Abdullah Sahib"
-  },
   "Jayesh M.": {
     "as": "Jayesh Yogeshchandra Madani"
+  },
+  "Kareem S.": {
+    "as": "Kareem Abdullah Sahib"
   }
 }

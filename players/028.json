@@ -479,10 +479,12 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Cody Matthew Brown": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Zachery William Lewis": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christopher Paul Stefenoni": [
@@ -538,6 +540,7 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Wesley Zane Wilbur": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Barry Glenn Logan II": [

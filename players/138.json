@@ -94,7 +94,8 @@
     {"e":"2019-ycs-ft-worth"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-12-rdycs-na"}
+    {"e":"2025-12-rdycs-na"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Zachary Reyes Dennis": [
     {"e":"2014-ycs-dallas"}
@@ -207,7 +208,8 @@
   "Grant Ingles Lunney": [
     {"e":"2016-north-american-wcq"},
     {"e":"2017-north-american-wcq"},
-    {"e":"2019-ycs-ft-worth"}
+    {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nicholas Angelo Lentini": [
     {"e":"2016-north-american-wcq"}
@@ -645,7 +647,8 @@
     {"e":"2025-ycs-sao-paulo-brazil"}
   ],
   "Ruban Anthony Mora Jr.": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Angel Munoz Juarez": [
     {"e":"2026-02-300th-na"}
@@ -667,9 +670,11 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Rodel Ariel Rodea": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jose Manuel Zavala": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Valan Z.": {

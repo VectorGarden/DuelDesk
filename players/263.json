@@ -385,7 +385,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Thomas Thong Minh Tran": [
     {"e":"2022-11-ycs-pasadena"}
@@ -522,7 +523,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Charles John Kaufman II": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Humberto Torre Rodriguez": [
     {"e":"2025-central-america-wcq"}

@@ -420,6 +420,7 @@
   ],
   "Derek Regan Dumbeck": [
     {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jorge Omar Velazquez Bucio": [
@@ -625,6 +626,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Robert Cody Stevens": [
@@ -686,14 +688,18 @@
   "Phoenix AntTiwon Bell": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Jaye Matthew Chlamon": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Rafael Rodriguez": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "David W.": {
-    "as": "David Anthony Warren"
-  },
   "Azad D.": {
     "as": "Azad Deihim"
+  },
+  "David W.": {
+    "as": "David Anthony Warren"
   },
   "Amir W.": {
     "as": "Amir Wahab"

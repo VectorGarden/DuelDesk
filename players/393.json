@@ -114,6 +114,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Charles Richard Shoop III": [
@@ -513,7 +514,8 @@
   ],
   "Izaack Austen Salinas": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Joseph Daniel Espinoza Flores": [
     {"e":"2024-team-ycs-san-jose-costa-rica"},
@@ -542,7 +544,8 @@
   ],
   "John Wyatt Thiel": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Larry Paul Michael Jr.": [
     {"e":"2025-04-ycs-houston"}
@@ -552,6 +555,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Kenneth Ray Mooney": [
@@ -594,7 +598,14 @@
     {"e":"2026-south-america-dragon-duel-championship","f":"Dragon Duel"}
   ],
   "Zane Anthony Bertaut Festi": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Micheal Evan Henry": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Timothy Alexander Jones": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher R. Budusky": [
     {"e":"na-ygoc-2022"}

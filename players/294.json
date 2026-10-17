@@ -346,7 +346,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Preston Scott Novotny": [
     {"e":"2019-ycs-ft-worth"}
@@ -542,7 +543,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Arturo Navarro Jr.": [
     {"e":"2025-10-ycs-anaheim"}
@@ -587,10 +589,10 @@
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Robby F.": {
-    "as": "Robby William Fish"
-  },
   "Bryan C.": {
     "as": "Bryan Dejesus Collazo"
+  },
+  "Robby F.": {
+    "as": "Robby William Fish"
   }
 }

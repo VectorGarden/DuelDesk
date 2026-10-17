@@ -218,7 +218,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Carlo Jose Lobos Jr.": [
     {"e":"2018-11-sao-paulo-brazil"},
@@ -262,6 +263,7 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Rudy Antonio Gerena": [

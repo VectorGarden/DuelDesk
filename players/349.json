@@ -570,7 +570,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Bruno Fernando Contreras Maillanca": [
     {"e":"2023-ycs-santiago-chile"}
@@ -605,7 +606,8 @@
   ],
   "Mitchell Jay Mendez": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Adam Cyncere Pichardo": [
     {"e":"2024-north-america-wcq"},
@@ -715,6 +717,9 @@
   "Andre Solovjovas Leite": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Eric Anthony Winters": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Keanu Dean Batts": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
@@ -739,10 +744,10 @@
   "Mitchell D.": {
     "as": "Mitchell Eugene Drake"
   },
-  "Zohair K.": {
-    "as": "Zohair Ismail Khan"
-  },
   "Benjamin D.": {
     "as": "Benjamin John Dunn"
+  },
+  "Zohair K.": {
+    "as": "Zohair Ismail Khan"
   }
 }

@@ -138,7 +138,8 @@
   ],
   "Luis Rodolfo Uvalle": [
     {"e":"2014-ycs-dallas"},
-    {"e":"2016-ycs-houston-texas"}
+    {"e":"2016-ycs-houston-texas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Hayden Marshall Eccles": [
     {"e":"2014-ycs-dallas"}
@@ -456,6 +457,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Daniel Francisco Nava Manzano": [
@@ -641,13 +643,14 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Ryan Eugene Ogden": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Samuel A.": {
-    "as": "Samuel Arone Crescini Ramos Amaro"
-  },
   "Marcelo B.": {
     "as": "Marcelo Bruno"
+  },
+  "Samuel A.": {
+    "as": "Samuel Arone Crescini Ramos Amaro"
   },
   "Sean N.": {
     "as": "Sean Neon Nguyen"

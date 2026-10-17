@@ -560,7 +560,8 @@
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
   "Kimani Ojai Christie": [
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Brandon Stanley White": [
     {"e":"2026-08-quebec","f":"Advanced"}
@@ -577,11 +578,11 @@
   "Nathan Matthew Lahman": [
     {"e":"na-ygoc-2022"}
   ],
-  "Ronald B.": {
-    "as": "Ronald Steven Barrows"
-  },
   "Salvador N.": {
     "as": "Salvador Angel September Navarro"
+  },
+  "Ronald B.": {
+    "as": "Ronald Steven Barrows"
   },
   "Mikel L.": {
     "as": "Mikel DeAndre Luster"

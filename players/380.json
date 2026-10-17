@@ -49,6 +49,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -583,7 +584,8 @@
   ],
   "Grayson Reece Kenna": [
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Navinash Shiv Raghubir": [
     {"e":"2024-ycs-raleigh"}
@@ -660,22 +662,22 @@
   "Alejandro Manuel Estrada Maya": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Georgiy K.": {
-    "as": "Georgiy Andreyevich Kachurin"
-  },
   "Tekle Y.": {
     "as": "Tekle Okbamicael Yousef"
   },
   "Andrew R.": {
     "as": "Andrew Edward Rangel"
   },
-  "Jesus C.": {
-    "as": "Jesus Chavez Campas"
+  "Georgiy K.": {
+    "as": "Georgiy Andreyevich Kachurin"
   },
   "Francis N.": {
     "as": "Francis Huy Nguyen"
   },
   "Kyle R.": {
     "as": "Kyle Alan Rohrer"
+  },
+  "Jesus C.": {
+    "as": "Jesus Chavez Campas"
   }
 }

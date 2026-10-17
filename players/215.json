@@ -43,6 +43,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Ari Fletcher Bredbenner": [
@@ -495,7 +496,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Elias Alfredo Cabezas": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Thomas Dominick. Dellorto": [
     {"e":"2025-05-ycs-providence"}
@@ -503,6 +505,7 @@
   "Jarred Lawrence Barlow": [
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jose Rafael Valenzuela": [
@@ -544,6 +547,9 @@
   ],
   "James Paul Solano Leon": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Alejandro Brian Ortez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "David Homero Cruz": [
     {"e":"2026-ycs-houston","f":"Genesys"}

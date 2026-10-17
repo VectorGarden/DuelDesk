@@ -287,7 +287,8 @@
   "Adan Gonzalez Lopez": [
     {"e":"2019-ycs-ft-worth"},
     {"e":"2023-ycs-indianapolis"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Julio Alberto Saavedra Gonzalez": [
     {"e":"2019-ycs-guadalajara"}
@@ -539,7 +540,8 @@
     {"e":"2026-02-300th-na","f":"Genesys"}
   ],
   "Delanie Desdemona Freeze": [
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Waylon James Bequette": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}

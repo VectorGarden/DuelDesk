@@ -344,6 +344,7 @@
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Brenden Royce Ornelas": [
@@ -548,11 +549,11 @@
   "Jaime Alexis Yañez Torres": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Leon V.": {
-    "as": "Leon Nathan Joshua Jimenez Villarica"
-  },
   "Connor C.": {
     "as": "Connor Ray Churchill"
+  },
+  "Leon V.": {
+    "as": "Leon Nathan Joshua Jimenez Villarica"
   },
   "Devon S.": {
     "as": "Devon Robert Scarpella"

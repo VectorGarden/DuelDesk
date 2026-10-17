@@ -205,6 +205,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Emilio Cabello": [
@@ -547,7 +548,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Felipe William Valenzuela Celle": [
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ibrahim Eduardo Echeverria Diaz": [
     {"e":"2025-south-america-wcq"},
@@ -598,11 +600,14 @@
   "Renan Maurício Cuba": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Lance Eugene Richardson": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Lucas T.": {
     "as": "Lucas Cardoso Toniol"
   },
-  "Zackary W.": {
-    "as": "Zackary Jacob Wilkinson"
+  "Raul M.": {
+    "as": "Raul Machuca"
   },
   "Logan J.": {
     "as": "Logan Patrick Johnson"
@@ -610,8 +615,8 @@
   "Delbert F.": {
     "as": "Delbert Lee Feltenberger"
   },
-  "Raul M.": {
-    "as": "Raul Machuca"
+  "Zackary W.": {
+    "as": "Zackary Jacob Wilkinson"
   },
   "Andre C.": {
     "as": "Andre Hou Gin Chan"

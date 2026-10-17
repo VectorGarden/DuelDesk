@@ -88,7 +88,8 @@
     {"e":"2019-ycs-knoxville"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Luis Ildefonso Martinez Jr.": [
     {"e":"2014-north-american-wcq"}
@@ -709,6 +710,9 @@
   ],
   "Omar Andres Cabarcas Castillo": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Jamie Aaron Moses": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dan That Ton": [
     {"e":"na-ygoc-2022","cut":"Top 64","deck":"Despia Branded"}

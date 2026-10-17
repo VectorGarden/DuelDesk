@@ -290,7 +290,8 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ellyhan Jose Rodriguez Montero": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -468,7 +469,8 @@
     {"e":"2024-ycs-medellin-colombia"}
   ],
   "Faisal A. Maniar": [
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Anderson Eugene Salters III": [
     {"e":"2025-02-ycs-orlando"}
@@ -480,7 +482,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Zachary Blake Bridgers": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Eric Shvili Meltz": [
     {"e":"2025-04-ycs-houston"}
@@ -560,6 +563,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Logan Kyle Hager": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Joshue Valenzuela": {

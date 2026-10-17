@@ -426,7 +426,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Guillermo Dominic Guzman Jr.": [
     {"e":"2024-north-america-wcq"},
@@ -460,7 +461,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Aaron DeLeon Silva": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Rengi Abel Ordonez": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -488,10 +490,11 @@
   "Steve Kevin Hidalgo": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
-  "Zachary Pierce McKenzie": [
+  "Andre Cao Chau": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Andre Cao Chau": [
+  "Zachary Pierce McKenzie": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tsun-Yu Hsiao": [

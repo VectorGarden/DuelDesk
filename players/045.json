@@ -363,7 +363,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Brandon John Davies Whitmyre": [
     {"e":"2022-ycs-minneapolis"},
@@ -431,7 +432,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"}
+    {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kevin Kenneth Bundang": [
     {"e":"2024-08-ycs-sacramento"},
@@ -455,7 +457,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Richard Seth Lucas Kennidy": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jordan Addison Schwab": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -504,11 +507,11 @@
   "Miguel Enrique Chevez": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
-  "Mason B.": {
-    "as": "Mason William Blake"
-  },
   "Sean D.": {
     "as": "Sean Gary Mollyneaux Dean"
+  },
+  "Mason B.": {
+    "as": "Mason William Blake"
   },
   "Manuel M.": {
     "as": "Manuel Alejandro Meza"

@@ -445,6 +445,7 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tswvyum Ethan Xiong": [
@@ -480,6 +481,9 @@
   ],
   "Dilan Leonardo Mendieta Barrios": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Joseph Anthony Morales": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Connor R.": {
     "as": "Connor Kai Rosenstein"

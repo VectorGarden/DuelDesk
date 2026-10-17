@@ -414,7 +414,8 @@
     {"e":"2025-04-ycs-houston","cut":"Top 8","deck":"Ryzeal Fiendsmith"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Hugo Isaac Lozano Covarrubias": [
     {"e":"2024-central-america-wcq"}
@@ -477,6 +478,9 @@
   ],
   "Liam Taylor Hoshowatiuk": [
     {"e":"2026-08-quebec","f":"Advanced"}
+  ],
+  "Ethan John Castaneda": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Horacio de Jesus Romero Jimenez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

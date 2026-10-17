@@ -484,6 +484,7 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jorge Ivan Tapicha Bedoya": [
@@ -568,6 +569,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nestor Alirio Paez Vargas": [
@@ -699,7 +701,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Tyler Luong Vo": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Angel Alexander Peraza": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"}

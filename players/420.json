@@ -106,7 +106,8 @@
     {"e":"2016-north-american-wcq"},
     {"e":"2016-ycs-houston-texas"},
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
-    {"e":"2017-ycs-dallas"}
+    {"e":"2017-ycs-dallas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher Ail Orantes": [
     {"e":"2015-ycs-charleston"}
@@ -473,7 +474,8 @@
   "Everardo Chavez": [
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Joel Wayne Edward LaFever": [
     {"e":"2024-ycs-indianapolis"}
@@ -552,6 +554,9 @@
   ],
   "Esteban Garcia Cervantes": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Israel Ruiz": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Anthony Christopher Ryle Jr.": [
     {"e":"na-ygoc-2022"}

@@ -225,7 +225,8 @@
   "Joaquin Guerra Jr.": [
     {"e":"2019-03-atlanta-ga"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Cody Lawerence Sweeney": [
     {"e":"2019-ycs-chicago"}
@@ -253,6 +254,7 @@
   "Payton Thomas Dunn": [
     {"e":"2019-ycs-knoxville"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Gregory Hillman Jr.": [
@@ -483,16 +485,19 @@
   "Alex Chi Sheng Lee Carballo": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Ethan Gabriel Bounds": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Kenneth Leugim Sanchez Vega": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Trent M.": {
-    "as": "Trent Jamison Miller"
+  "Tyler V.": {
+    "as": "Tyler James Vezina"
   },
   "Liborio B.": {
     "as": "Liborio Bobby Barone"
   },
-  "Tyler V.": {
-    "as": "Tyler James Vezina"
+  "Trent M.": {
+    "as": "Trent Jamison Miller"
   }
 }

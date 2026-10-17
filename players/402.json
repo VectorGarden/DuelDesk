@@ -237,7 +237,8 @@
   ],
   "Guillermo Balderas": [
     {"e":"2016-ycs-houston-texas"},
-    {"e":"2022-11-ycs-pasadena"}
+    {"e":"2022-11-ycs-pasadena"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Diego Alfonso Vega Munoz": [
     {"e":"2016-ycs-mexico-city"}
@@ -398,6 +399,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "James Tyler Smith": [
@@ -651,6 +653,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Israel C.": [
@@ -736,11 +739,11 @@
   "Josh Todd Dugas": [
     {"e":"na-ygoc-2022"}
   ],
-  "Jacob B.": {
-    "as": "Jacob Gabriel Banuelos"
-  },
   "Drew M.": {
     "as": "Drew Holden Meseck"
+  },
+  "Jacob B.": {
+    "as": "Jacob Gabriel Banuelos"
   },
   "Al M.": {
     "as": "Al Jonathan Medrano"

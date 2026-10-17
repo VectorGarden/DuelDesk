@@ -25,7 +25,8 @@
     {"e":"2016-ycs-toronto"},
     {"e":"201611-anaheim-ca"},
     {"e":"201711-san-diego-ca"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Gabriel Alexander Iriarte": [
     {"e":"2013-north-american-wcq"},
@@ -259,6 +260,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Bystial @Ignister Maliss"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -667,6 +669,12 @@
   ],
   "Adrian Alejandro Aviles Carrasco": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Juan Felipe Alviar": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Christopher Dylan Crawford": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Tyler Jordan Huber": [
     {"e":"na-ygoc-2022"}

@@ -477,7 +477,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Jacob Willis Milan": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Josue Enmanuel Perez Martinez": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"}
@@ -560,11 +561,11 @@
   "Tomas Ferreyros Sylvester": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Darren N.": {
-    "as": "Darren Vu Nguyen"
-  },
   "Luciano G.": {
     "as": "Luciano Frank Greco"
+  },
+  "Darren N.": {
+    "as": "Darren Vu Nguyen"
   },
   "Denny K.": {
     "as": "Denny Kim"

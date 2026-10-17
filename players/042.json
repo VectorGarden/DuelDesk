@@ -390,7 +390,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Brandon Gage Medina": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -463,7 +464,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Sergio Lara": [
     {"e":"2024-12-ycs-anaheim"}
@@ -575,6 +577,9 @@
   ],
   "Battle City": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Pedro Paredes": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jesus Perez Martinez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

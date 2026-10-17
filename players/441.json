@@ -540,6 +540,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ronaldo Condori Vargas": [
@@ -686,6 +687,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Brandon Michael Miller Danta": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Victor Daniel Bolanos Chaves": [

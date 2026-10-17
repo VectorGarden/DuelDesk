@@ -35,6 +35,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Kevin Q. Phan": [
@@ -545,11 +546,11 @@
   "Mitzy Ormeño Soria": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Emanuel R.": {
-    "as": "Emanuel Ramirez"
-  },
   "Ronald Y.": {
     "as": "Ronald Do Young"
+  },
+  "Emanuel R.": {
+    "as": "Emanuel Ramirez"
   },
   "Shaun M.": {
     "as": "Shaun Bruce McDonald"

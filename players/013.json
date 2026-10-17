@@ -84,6 +84,7 @@
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jorge Luis Lopez Hernandez": [
@@ -376,7 +377,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Michael Alonso Cordoba Calvo": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -555,6 +557,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Jose Guadalupe Trujillo": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Raymond L.": {

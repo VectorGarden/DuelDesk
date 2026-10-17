@@ -250,7 +250,8 @@
     {"e":"2019-ycs-chicago"}
   ],
   "Luis F. Paderones Gonzalez": [
-    {"e":"2019-ycs-ft-worth"}
+    {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Honorio Flores Espinosa": [
     {"e":"2019-ycs-guadalajara"}
@@ -306,7 +307,8 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2025-ycs-vancouver","cut":"Top 32","deck":"K9 Dracotail"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Danilo Conserva Leao Mendes": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -339,6 +341,7 @@
     {"e":"2025-north-america-wcq","cut":"Top 32","deck":"Bystial Mitsurugi Maliss"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "James Seung Lee": [
@@ -544,10 +547,10 @@
   "Dylan M.": {
     "as": "Dylan Matthew Mauceri"
   },
-  "Anthony Y.": {
-    "as": "Anthony Yun"
-  },
   "Eric C.": {
     "as": "Eric Karl Cardwell"
+  },
+  "Anthony Y.": {
+    "as": "Anthony Yun"
   }
 }

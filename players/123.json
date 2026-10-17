@@ -74,6 +74,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jaime Ramon Rios Zegarra": [
@@ -107,6 +108,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Colin Matthew Nelson": [
@@ -571,6 +573,12 @@
   ],
   "Roberto Donato Oyola Vera": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Daniel October Reyes Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Ethan Isaaiah Pena": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Patricio Oloarte Flores": [
     {"e":"wcq-2016-mexico"}

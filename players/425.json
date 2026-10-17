@@ -12,7 +12,8 @@
   ],
   "Jason Pinkard Nichols": [
     {"e":"2012-ycs-indianapolis"},
-    {"e":"2013-north-american-wcq"}
+    {"e":"2013-north-american-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Alex Taylor Dye": [
     {"e":"2012-ycs-indianapolis"},
@@ -99,6 +100,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Janice Lee": [
@@ -470,7 +472,8 @@
   ],
   "Milos B. Bukarica": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Justin Allen Kasahara": [
     {"e":"2025-north-america-wcq"}
@@ -513,11 +516,11 @@
   "Luis Fernando Zamora Zempoalteca": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Casey M.": {
-    "as": "Casey Ray Martin"
-  },
   "Marcus B.": {
     "as": "Marcus Leon Brown"
+  },
+  "Casey M.": {
+    "as": "Casey Ray Martin"
   },
   "An N.": {
     "as": "An Duy Nguyen"

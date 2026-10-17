@@ -514,10 +514,12 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Herbert Rolando Marquez Jr.": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Aaron Michael Beaudreau": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jordan William Anderson": [

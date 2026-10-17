@@ -377,7 +377,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced","cut":"Top 8","deck":"Fiendsmith Mitsurugi"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Marco Antonio Torres Espinoza": [
     {"e":"2024-central-america-wcq"}
@@ -416,7 +417,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Eddie Leonel Castillo": [
     {"e":"2025-ycs-buenos-aires-argentina"}

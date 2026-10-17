@@ -331,7 +331,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kyle Jerred Tracz": [
     {"e":"2023-ycs-vancouver"},
@@ -451,10 +452,10 @@
   "William Bak": {
     "as": "William S. Bak"
   },
-  "Nischay V.": {
-    "as": "Nischay Vallabhaneni"
-  },
   "Kameron T.": {
     "as": "Kameron Biscaya Tran"
+  },
+  "Nischay V.": {
+    "as": "Nischay Vallabhaneni"
   }
 }

@@ -38,6 +38,7 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Thomas Le Vo": [
@@ -309,6 +310,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Helena Jeveaux Werneck": [
@@ -387,7 +389,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher San Plumeau": [
     {"e":"2022-11-ycs-pasadena"}
@@ -592,6 +595,9 @@
   "Elias Pacheco Jara": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Juan Manuel Torres Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Salina Sanchez": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
@@ -608,10 +614,10 @@
   "Leonard C.": {
     "as": "Leonard Chun Yi Chu"
   },
-  "Colby T.": {
-    "as": "Colby James Taylor"
-  },
   "Avery M.": {
     "as": "Avery Moreno"
+  },
+  "Colby T.": {
+    "as": "Colby James Taylor"
   }
 }

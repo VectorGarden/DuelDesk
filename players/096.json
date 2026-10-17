@@ -85,6 +85,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Bystial @Ignister Maliss"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Anthony G. Creatura": [
@@ -552,7 +553,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Gianmarcos Arqueros": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "dhorm-dhanwant rajaram": [
     {"e":"2025-05-ycs-providence"}

@@ -429,6 +429,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Vincent Alfred Gross": [
@@ -582,6 +583,7 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Freddy Elvira": [
@@ -620,7 +622,8 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Osvaldo Hernandez Espinosa": [
     {"e":"2025-ycs-mexico-city-mexico"}
@@ -672,11 +675,11 @@
   "Hiromi Kudou": [
     {"e":"yu-gi-oh-world-championship-2013","cut":"Top 8"}
   ],
-  "Keegan S.": {
-    "as": "Keegan Dane Spotts"
-  },
   "Morley T.": {
     "as": "Morley Kim Taing"
+  },
+  "Keegan S.": {
+    "as": "Keegan Dane Spotts"
   },
   "Ethan C.": {
     "as": "Ethan Scott Crowe"

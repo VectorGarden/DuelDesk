@@ -293,7 +293,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Solomon Grand Skaulkicak": [
     {"e":"2019-ycs-niagara-falls"}
@@ -418,7 +419,8 @@
     {"e":"2023-ycs-vancouver"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nam N.": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -437,6 +439,7 @@
   ],
   "Jungwoo Park": [
     {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Torres Nathan Lee": [
@@ -458,7 +461,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Joshua Adam Norman": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jayden Riley Loriot": [
     {"e":"2025-04-ycs-houston"}
@@ -484,7 +488,8 @@
   "Sean Edward Olguin": [
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "German Eduardo Puente": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -524,13 +529,13 @@
   "Landon Oliver": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Tristan R.": {
-    "as": "Tristan James Reep"
-  },
   "Bryson W.": {
     "as": "Bryson Roger Williams"
   },
   "Paul D.": {
     "as": "Paul Ivan Diaz"
+  },
+  "Tristan R.": {
+    "as": "Tristan James Reep"
   }
 }

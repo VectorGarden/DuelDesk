@@ -57,7 +57,8 @@
   "Raul Cantu": [
     {"e":"2014-ycs-dallas"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ronald Enrique Moran": [
     {"e":"2014-ycs-dallas"},
@@ -286,7 +287,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Sayem Mohammad": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -410,7 +412,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Cesar Eduardo Chavira": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Talaal Derwiche": [
     {"e":"2025-05-ycs-providence"},
@@ -466,20 +469,23 @@
   "Shamir Andres Ballesteros Almarales": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
+  "Vicente Antonio Navarrete": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Eliseo Jesus Olivares": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Humberto Ricardo Ugarte Rodriguez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Andres E.": {
-    "as": "Andres Felipe Espinosa"
+  "Miguel V.": {
+    "as": "Miguel Angel October Vasquez"
   },
   "Niko B.": {
     "as": "Niko Daniel Baca"
   },
-  "Miguel V.": {
-    "as": "Miguel Angel October Vasquez"
+  "Andres E.": {
+    "as": "Andres Felipe Espinosa"
   },
   "Samuel G.": {
     "as": "Samuel Nathan Garland"

@@ -551,7 +551,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Adamduc Minh Tran": [
-    {"e":"2024-ycs-indianapolis"}
+    {"e":"2024-ycs-indianapolis"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Brian Rene Galarza": [
     {"e":"2024-ycs-indianapolis"}
@@ -622,13 +623,16 @@
   "Frank Adilio Zambrano": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Jordan Isaiah Glover": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Ruben Penaranda": [
     {"e":"yu-gi-oh-tcg-world-championship-2024","cut":"Final","deck":"Fiendsmith Yubel"}
   ],
-  "Luis R.": {
-    "as": "Luis Anthony Rivera"
-  },
   "Stephen C.": {
     "as": "Stephen Alexander Cedeno"
+  },
+  "Luis R.": {
+    "as": "Luis Anthony Rivera"
   }
 }

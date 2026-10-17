@@ -514,7 +514,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Julio Cezar Lopez Gahona": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Chaz Hunter": [
     {"e":"2025-04-ycs-houston"}
@@ -573,6 +574,9 @@
   "Estuardo Antonio Sandoval": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Bill The Chau": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Alfonso Yael Nuñez Padilla": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -601,19 +605,19 @@
   "Gabriel O.": {
     "as": "Gabriel Kenzo Ogawa Oda"
   },
-  "Estefan L.": {
-    "as": "Estefan Nicolas Dario Lopez"
+  "Anthony E.": {
+    "as": "Anthony William Eckroth"
   },
   "Panagiotis M.": {
     "as": "Panagiotis Mitrothanasis"
   },
-  "Anthony E.": {
-    "as": "Anthony William Eckroth"
-  },
-  "Kent N.": {
-    "as": "Kent Bao Uy Long Nguyen"
+  "Estefan L.": {
+    "as": "Estefan Nicolas Dario Lopez"
   },
   "Thomas H.": {
     "as": "Thomas Michael Hinde"
+  },
+  "Kent N.": {
+    "as": "Kent Bao Uy Long Nguyen"
   }
 }

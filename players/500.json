@@ -485,7 +485,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher DAllen Washington": [
     {"e":"2023-north-america-wcq"}
@@ -622,17 +623,20 @@
   "Erick Gabriel Garrido": [
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
+  "Manuel Lucio Reyes": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Sonia Flores Maquera": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Amy K.": {
     "as": "Amy Catherine Kelly"
   },
-  "Ezequiel A.": {
-    "as": "Ezequiel Arevalo"
-  },
   "Tevin L.": {
     "as": "Tevin Anthony Lam"
+  },
+  "Ezequiel A.": {
+    "as": "Ezequiel Arevalo"
   },
   "Omar G.": {
     "as": "Omar Guevara"

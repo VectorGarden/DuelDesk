@@ -278,7 +278,8 @@
   ],
   "Clayton Dennis Fleck": [
     {"e":"2019-ycs-ft-worth"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Carlos Rodrigo De Leon Cordova": [
     {"e":"2019-ycs-guatemala-city-guatemala"},
@@ -358,7 +359,8 @@
     {"e":"2023-ycs-santa-cruz-de-la-sierra"},
     {"e":"2025-ycs-buenos-aires-argentina"},
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-team-ycs-la-paz-bolivia"}
+    {"e":"2026-team-ycs-la-paz-bolivia"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Joaquin Ignacio Moraga Vallejos": [
     {"e":"2023-ycs-santiago-chile"},
@@ -502,13 +504,13 @@
   "Sinthya Rimache Saya": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Miriam S.": {
-    "as": "Miriam Lillian Skapik"
-  },
   "Alfonso R.": {
     "as": "Alfonso Rosales"
   },
   "Rashad J.": {
     "as": "Rashad Franklin Jones"
+  },
+  "Miriam S.": {
+    "as": "Miriam Lillian Skapik"
   }
 }

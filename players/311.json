@@ -332,7 +332,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ryan Allen Hart": [
     {"e":"2019-ycs-knoxville"}
@@ -438,7 +439,8 @@
   "Anthony Nguyen Cao": [
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Vee Allen Coleman": [
     {"e":"2024-ycs-raleigh"}
@@ -474,6 +476,7 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Connor Matthew Seese": [
@@ -525,6 +528,15 @@
   "Mario Rafael Ayala Forero": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Jeremiah Paul Gunter": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "David Paul West Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Jean Gabriel Acevedo Carrasquillo": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Mauricio Sebastian Reyna Caraballo": [
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -541,10 +553,10 @@
   "Anthony X.": {
     "as": "Anthony Xu"
   },
-  "Fayzaan N.": {
-    "as": "Fayzaan Mohammed Naeem"
-  },
   "Llewelyn S.": {
     "as": "Llewelyn Richard Slone"
+  },
+  "Fayzaan N.": {
+    "as": "Fayzaan Mohammed Naeem"
   }
 }

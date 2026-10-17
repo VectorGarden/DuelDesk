@@ -266,6 +266,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Genesys","cut":"Top 8","deck":"Radiant Typhoon"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Omar IL Ruiz": [
@@ -504,7 +505,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Josue Manuel Nunez Castaneda": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}

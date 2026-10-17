@@ -63,6 +63,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq","cut":"Top 8","deck":"Kewl Tune"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Top 8","deck":"Kewl Tune"}
   ],
   "Alexander C. Flamer": [
@@ -514,7 +515,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Orvee Rian Candelario": [
     {"e":"2023-ycs-vancouver"}
@@ -619,6 +621,9 @@
   ],
   "Edgar Daniel Pineda Mccreary": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
+  ],
+  "Uziel Fernando Rosario": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Cameron G.": {
     "as": "Cameron Vincent Grams"

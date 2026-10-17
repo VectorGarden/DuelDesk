@@ -169,6 +169,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joel Belman Jr.": [
@@ -180,6 +181,7 @@
     {"e":"2018-ycs-memphis"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Matthew Lee Highline": [
@@ -526,6 +528,7 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Jaxon Gerald Waters": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Felipe Pires Do Nascimento": [
@@ -534,11 +537,11 @@
   "Edgar Joaquin Rios Ruiz": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Kethya K.": {
-    "as": "Kethya Kas"
-  },
   "Kyle C.": {
     "as": "Kyle Reece Crofoot"
+  },
+  "Kethya K.": {
+    "as": "Kethya Kas"
   },
   "Maciej M.": {
     "as": "Maciej Jan Michalec"

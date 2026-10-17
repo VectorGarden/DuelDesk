@@ -285,7 +285,8 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Leedn Nabeel Batto": [
     {"e":"2019-ycs-chicago"}
@@ -456,10 +457,12 @@
   "Billy Wayne Davis III": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "James Aaron Castillo": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Edwin Joseph Cervantes": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -488,6 +491,15 @@
   ],
   "Samuel Antonio Velasquez Fuentes": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Ruben Alexander Escobedo": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Evan Alexander Carlin": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Thanh Nguyen Huynh": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Fabian Ortiz Diaz": [
     {"e":"remote-duel-ycs-february-2025"}

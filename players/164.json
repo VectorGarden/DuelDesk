@@ -156,6 +156,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Dudley Canter Riner": [
@@ -393,7 +394,8 @@
   ],
   "James Joon Lee": [
     {"e":"2022-ycs-charlotte"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jacob Robert Fife": [
     {"e":"2022-ycs-charlotte"},
@@ -484,7 +486,8 @@
     {"e":"2024-ycs-indianapolis"}
   ],
   "Teric Douglas Harcum": [
-    {"e":"2023-ycs-richmond"}
+    {"e":"2023-ycs-richmond"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Zhu Qi Li": [
     {"e":"2023-ycs-richmond"}
@@ -563,7 +566,8 @@
   "Dylan Ray Dallmeyer": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "David Claire Hamilton": [
     {"e":"2025-05-ycs-providence"}
@@ -612,19 +616,19 @@
   "Gustavo Reyes Rodriguez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Quoc H.": {
-    "as": "Quoc Minh Huynh"
-  },
   "Rich C.": {
     "as": "Rich Cheng"
+  },
+  "Quoc H.": {
+    "as": "Quoc Minh Huynh"
   },
   "Gerardo G.": {
     "as": "Gerardo Garza"
   },
-  "Marshall M.": {
-    "as": "Marshall James Marengo"
-  },
   "Jesus L.": {
     "as": "Jesus Landeros Loera"
+  },
+  "Marshall M.": {
+    "as": "Marshall James Marengo"
   }
 }

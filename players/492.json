@@ -66,7 +66,8 @@
   ],
   "Ethan Weldon Ennis": [
     {"e":"2015-150th-ycs-in-columbus"},
-    {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"}
+    {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher Reyes": [
     {"e":"2015-150th-ycs-in-columbus"}
@@ -502,7 +503,11 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Noah Canaan Lackey": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Logan Ray McCartney": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Carlos Alberto Ramalho Bezerra Neto": [
     {"e":"remote-duel-ycs-february-2025"}

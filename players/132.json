@@ -506,7 +506,8 @@
   ],
   "Andleep Val Farooqui": [
     {"e":"2024-08-ycs-sacramento"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Francisco Daniel Morales Oceguera": [
     {"e":"2024-10-cancun-mexico"},
@@ -524,6 +525,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Hector De la Fuente": [
@@ -586,7 +588,8 @@
   ],
   "Madilynn Akemi Abraham Moore": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Alejandro Emmanuel Rodriguez": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -619,6 +622,7 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Kai Cai Zhu": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Alexis Chavez Chirinos": [
@@ -633,10 +637,10 @@
   "Solomon M.": {
     "as": "Solomon Moses Moran"
   },
-  "Cristian D.": {
-    "as": "Cristian Martin Dimas"
-  },
   "Barry B.": {
     "as": "Barry Bennett Broadhead"
+  },
+  "Cristian D.": {
+    "as": "Cristian Martin Dimas"
   }
 }

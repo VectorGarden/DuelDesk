@@ -76,7 +76,8 @@
     {"e":"2020-uds-invitational-tulsa-ok"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-ycs-indianapolis"}
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nathan Trey Andrew Girdharry": [
     {"e":"2014-north-american-wcq"},
@@ -422,7 +423,8 @@
   ],
   "Joel Gutierrez": [
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Moises Paredes Francisco": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -492,7 +494,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kosey MacLaine Guzman": [
     {"e":"2025-02-ycs-orlando"},
@@ -552,6 +555,9 @@
   ],
   "Flavio M.": [
     {"e":"2026-04-team-ycs-las-vegas"}
+  ],
+  "Paige Alan Baker": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matt Charles Spitzer": [
     {"e":"na-ygoc-2022"}

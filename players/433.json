@@ -340,7 +340,8 @@
   ],
   "Kordero Xavier Gonzalez": [
     {"e":"2019-ycs-ft-worth"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Justin Allan Pitnick": [
     {"e":"2019-ycs-ft-worth"}
@@ -617,11 +618,11 @@
   "Matthew Adam Casiero": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Australia","cut":"Top 4"}
   ],
-  "Julius W.": {
-    "as": "Julius Wanjala Wandabwa"
-  },
   "Keaton S.": {
     "as": "Keaton Lawrence Serna"
+  },
+  "Julius W.": {
+    "as": "Julius Wanjala Wandabwa"
   },
   "Nelson T.": {
     "as": "Nelson Tam"

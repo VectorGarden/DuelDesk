@@ -44,7 +44,8 @@
   ],
   "Abraham Brandon Asaad": [
     {"e":"2014-ycs-dallas"},
-    {"e":"2018-ycs-atlanta"}
+    {"e":"2018-ycs-atlanta"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Manrique Valentin Jose Victor": [
     {"e":"2014-ycs-lima-peru"}
@@ -330,6 +331,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Team Broke Boys": [
@@ -370,6 +372,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Andres Gerardo Navarro Carrillo": [
@@ -406,10 +409,12 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Abel Guadalupe Hernandez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Colby Simon Correia": [
     {"e":"2025-05-ycs-providence"}
@@ -455,16 +460,19 @@
   "Jean Carlos De La Rosa guerrero": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Christopher Aldaberto Rojas": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Ivan Guadalupe Villanueva Sandoval": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Kevin Miranda De La Cruz": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Ramiro D.": {
-    "as": "Ramiro Delatorre"
-  },
   "Grigor K.": {
     "as": "Grigor Kupchyan"
+  },
+  "Ramiro D.": {
+    "as": "Ramiro Delatorre"
   }
 }

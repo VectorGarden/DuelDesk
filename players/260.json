@@ -474,7 +474,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Ramon Leonides Rivera Rivas": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jake Michael Bonenfant": [
     {"e":"2025-05-ycs-providence"}
@@ -510,6 +511,7 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Luis Gilberto Perez": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Andrew Umana Quiros": [

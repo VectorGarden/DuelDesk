@@ -530,7 +530,8 @@
     {"e":"2024-10-ycs-niagara-falls"},
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2025-ycs-vancouver"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Gerome Richard Antolin": [
     {"e":"2024-10-ycs-niagara-falls"}
@@ -581,7 +582,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Dionte Dominque Sain": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Miguel Angel Parada": [
     {"e":"2025-south-america-wcq"}
@@ -630,17 +632,18 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Charles Obinna Ekwueme": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Lucas Albuquerque Albuquerque": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"}
   ],
-  "Antonio S.": {
-    "as": "Antonio Salgado"
-  },
   "Tristan A.": {
     "as": "Tristan Bryce Aman"
+  },
+  "Antonio S.": {
+    "as": "Antonio Salgado"
   },
   "Isaac A.": {
     "as": "Isaac Araiza"

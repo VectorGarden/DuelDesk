@@ -450,7 +450,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "J Austin Palma Salazar": [
     {"e":"2022-11-ycs-pasadena"}
@@ -676,6 +677,9 @@
   "Plinio Macklides Verdezoto Aguila": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Dayton Scott Shegog": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Doran Freedom Hudson": [
     {"e":"na-ygoc-2022"}
   ],
@@ -686,16 +690,16 @@
   "Wendell S.": {
     "as": "Wendell Rafael da Silva"
   },
-  "Jerome L.": {
-    "as": "Jerome Jazz Malik Levingston"
-  },
   "Dylan B.": {
     "as": "Dylan Preston Bradley"
   },
-  "Enzo P.": {
-    "as": "Enzo Penichon"
+  "Jerome L.": {
+    "as": "Jerome Jazz Malik Levingston"
   },
   "Drake J.": {
     "as": "Drake James Jewett"
+  },
+  "Enzo P.": {
+    "as": "Enzo Penichon"
   }
 }

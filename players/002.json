@@ -231,6 +231,7 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-knoxville","cut":"Top 32"},
     {"e":"2023-ycs-indianapolis"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jonathan Godin-Lambert": [
@@ -583,7 +584,8 @@
   ],
   "DArmond Rushaun Dixon": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Zachary Evan Charles Comte": [
     {"e":"2026-north-america-wcq"}
@@ -613,19 +615,19 @@
   "Lenon M.": {
     "as": "Lenon De Miranda"
   },
-  "Dallen H.": {
-    "as": "Dallen Dewayne Harrell"
+  "Michael D.": {
+    "as": "Michael James Dorn"
+  },
+  "Howard D.": {
+    "as": "Howard Clayton Davis"
   },
   "Jomar O.": {
     "as": "Jomar Octaviani"
   },
-  "Michael D.": {
-    "as": "Michael James Dorn"
+  "Dallen H.": {
+    "as": "Dallen Dewayne Harrell"
   },
   "Sunny C.": {
     "as": "Sunny Hau Chau"
-  },
-  "Howard D.": {
-    "as": "Howard Clayton Davis"
   }
 }

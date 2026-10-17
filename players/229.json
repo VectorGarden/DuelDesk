@@ -50,6 +50,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -417,7 +418,8 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-central-america-wcq"}
+    {"e":"2026-central-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher Alejandro Cohen Cuevas": [
     {"e":"2022-ycs-guadalajara-mexico"},
@@ -534,7 +536,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Aidan Steven Walker": [
     {"e":"2024-north-america-wcq"},
@@ -542,7 +545,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-ycs-vancouver"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Carlos Leonardo Machaca Claros": [
     {"e":"2024-south-america-wcq"},
@@ -581,7 +585,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Carlos Ricardo Vela": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Hector Manuel Noguera": [
     {"e":"2025-04-ycs-houston"}

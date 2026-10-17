@@ -177,7 +177,8 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Rodrigo Peregrina Rodriguez": [
     {"e":"2014-ycs-mexico-d-f"}
@@ -609,6 +610,15 @@
   ],
   "Denilson Valdez Santizo": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Jesus Josue Morales Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Adam Nathan Baker": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Clint Paul Schrader": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Chris M. Ruderschmidt": [
     {"e":"na-ygoc-2022"}

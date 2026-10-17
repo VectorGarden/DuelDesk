@@ -177,7 +177,8 @@
     {"e":"2023-ycs-santiago-chile"}
   ],
   "Angel Vargas Tafolla": [
-    {"e":"2017-north-american-wcq"}
+    {"e":"2017-north-american-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Trevor William Kerr": [
     {"e":"2017-ycs-denver"}
@@ -466,13 +467,15 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Jorge De Jesus Mellado": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Vincent Hoang": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Aaron Joshua Rogers": [
     {"e":"2025-05-ycs-providence"}
@@ -506,6 +509,9 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"}
   ],
+  "Walter Amir Ramirez Padilla": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Henry Luis Oviol Bravo": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -515,13 +521,13 @@
   "Bruce M.": {
     "as": "Bruce Edward Michael Menard"
   },
+  "Paul H.": {
+    "as": "Paul Anh Tuan Huynh"
+  },
   "Pernell S.": {
     "as": "Pernell Don Sayre"
   },
   "Ethan G.": {
     "as": "Ethan Tyler Gualano"
-  },
-  "Paul H.": {
-    "as": "Paul Anh Tuan Huynh"
   }
 }

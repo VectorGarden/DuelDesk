@@ -423,7 +423,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nathanael Nahum De La Cruz": [
     {"e":"2025-05-ycs-providence"}
@@ -485,10 +486,10 @@
   "Nikhil K.": {
     "as": "Nikhil Khalasi"
   },
-  "Richard W.": {
-    "as": "Richard Taylor Wallace"
-  },
   "Avery S.": {
     "as": "Avery Nicholas Sukienik"
+  },
+  "Richard W.": {
+    "as": "Richard Taylor Wallace"
   }
 }

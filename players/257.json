@@ -114,7 +114,8 @@
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
     {"e":"2017-north-american-wcq"},
     {"e":"2017-ycs-atlanta"},
-    {"e":"2018-north-america-wcq"}
+    {"e":"2018-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jack Patrick Donald Pruit": [
     {"e":"2015-north-american-wcq"},
@@ -334,7 +335,8 @@
     {"e":"2025-north-america-wcq","cut":"Top 16","deck":"Mitsurugi Ryzeal"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jeremy Joel MA Lopez": [
     {"e":"2020-team-ycs-las-vegas"}
@@ -601,6 +603,9 @@
   ],
   "Victor Enrique Jacobo": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Jose Octavio Jaime Munoz": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Caspian K.": {
     "as": "Caspian Moon Kelly"

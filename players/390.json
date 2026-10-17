@@ -451,7 +451,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Tou Mondo Yang": [
     {"e":"2022-ycs-minneapolis"}
@@ -609,6 +610,7 @@
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Justin David Boykin": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Stephany Michell Alvarez Castro": [

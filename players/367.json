@@ -152,6 +152,7 @@
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-02-team-ycs-las-vegas-nv","cut":"Top 16","deck":"Fire King Snake-Eye"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Sathe Sami-Ali-Hiram Khaldi": [
@@ -342,7 +343,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jhonny Alfaro": [
     {"e":"2018-ycs-san-jose-costa-rica"}
@@ -607,7 +609,8 @@
     {"e":"2025-12-rdycs-na"}
   ],
   "Christopher Philip Arthmann Jr.": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Twister Sisters": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"}
@@ -639,11 +642,14 @@
   "Fabian Enrique Acosta Escorcia": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
-  "Don H.": {
-    "as": "Don Anthony Haynesworth"
-  },
+  "Servando Gomez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Joe C.": {
     "as": "Joe Claudio"
+  },
+  "Don H.": {
+    "as": "Don Anthony Haynesworth"
   },
   "Hunter M.": {
     "as": "Hunter Jacob McDonald"

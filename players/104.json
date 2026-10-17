@@ -563,7 +563,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jamal Nigel Johnson": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -618,6 +619,9 @@
   ],
   "Roberto Andres Juarez Gonzalez": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Alfred N. Abenojar": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jin Woo Park": [
     {"e":"yu-gi-oh-world-championship-2013"}

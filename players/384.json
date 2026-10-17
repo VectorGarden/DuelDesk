@@ -560,7 +560,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Enrique Martin Pascual": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Gabriel Omar Bellanero Obando": [
     {"e":"2025-central-america-wcq"}
@@ -600,10 +601,10 @@
   "Tim Graefe": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "David A.": {
-    "as": "David Arreguin"
-  },
   "Russel T.": {
     "as": "Russel Jamal Talukder"
+  },
+  "David A.": {
+    "as": "David Arreguin"
   }
 }

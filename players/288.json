@@ -110,7 +110,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jesse Lloyd Schraft": [
     {"e":"2016-ycs-minneapolis"}
@@ -454,7 +455,8 @@
     {"e":"2025-north-america-wcq"}
   ],
   "Felix Angel Perez": [
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "La Guarida del Duelita": [
     {"e":"2024-team-ycs-santiago-chile"}
@@ -488,6 +490,7 @@
   "Thanh Vinh Derin Ly": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Bludhaven Boys": [

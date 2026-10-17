@@ -401,6 +401,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jose Ezequiel Ccatamayo Loredo": [
@@ -527,6 +528,7 @@
   "Gerald Lewis Hoffman": [
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Casey Lee Jones": [
@@ -547,11 +549,11 @@
   "Guilherme V.": {
     "as": "Guilherme De Campos Vieira"
   },
-  "Dave K.": {
-    "as": "Dave Anil Khalasi"
-  },
   "Caleb S.": {
     "as": "Caleb Michael Simmons"
+  },
+  "Dave K.": {
+    "as": "Dave Anil Khalasi"
   },
   "Emma C.": {
     "as": "Emma Carlson"

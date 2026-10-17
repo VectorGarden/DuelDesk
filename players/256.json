@@ -267,7 +267,8 @@
     {"e":"201611-anaheim-ca"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ricardo Garcia Carino": [
     {"e":"2017-central-american-wcq"}
@@ -673,10 +674,10 @@
   "Nicolas C.": {
     "as": "Nicolas Fiore Colella"
   },
-  "Yandi R.": {
-    "as": "Yandi Sebastian Rodriguez Rios"
-  },
   "Xavier R.": {
     "as": "Xavier James Robinson"
+  },
+  "Yandi R.": {
+    "as": "Yandi Sebastian Rodriguez Rios"
   }
 }

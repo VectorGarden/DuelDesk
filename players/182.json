@@ -190,6 +190,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Nicholas Nathan Snowberger": [
@@ -581,6 +582,9 @@
   ],
   "Domenico Pileggi": [
     {"e":"2026-08-quebec","f":"Advanced"}
+  ],
+  "Jimmy White An Chang": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Astha Dos Anjos Salles": [
     {"e":"remote-duel-ycs-january-2026"}

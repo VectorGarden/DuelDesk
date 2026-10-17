@@ -494,7 +494,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Big Black And Yellow": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -535,7 +536,8 @@
   ],
   "Paul David Strong": [
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ahmad Khalil Mansour": [
     {"e":"2024-ycs-indianapolis"},
@@ -593,11 +595,11 @@
   "Felipe Antonio Bruna Caceres": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Rayman C.": {
-    "as": "Rayman Wei Min Chen"
-  },
   "Jiahuang W.": {
     "as": "Jiahuang Wu"
+  },
+  "Rayman C.": {
+    "as": "Rayman Wei Min Chen"
   },
   "Al E.": {
     "as": "Al Yasah Campiao Esmael"

@@ -361,7 +361,8 @@
   ],
   "Shawn Demarr Bishop": [
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2023-250th-ycs-in-los-angeles"}
+    {"e":"2023-250th-ycs-in-los-angeles"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "D’Marco Ary Santos": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -544,7 +545,11 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "William Gardner Trask": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Logan Nguyen": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Samuel Benito Espinoza Moscoso": [
     {"e":"ycs-lima-peru-2023"}
@@ -558,9 +563,6 @@
   "William J.": {
     "as": "William Donald Johnson"
   },
-  "Vincent P.": {
-    "as": "Vincent Quoc Pham"
-  },
   "Alexander R.": {
     "as": "Alexander Rey Roman"
   },
@@ -569,5 +571,8 @@
   },
   "Dominic W.": {
     "as": "Dominic Lee Whalawitsa"
+  },
+  "Vincent P.": {
+    "as": "Vincent Quoc Pham"
   }
 }

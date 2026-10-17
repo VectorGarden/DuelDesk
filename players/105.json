@@ -610,6 +610,7 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ariel Ruiz": [
@@ -637,6 +638,9 @@
   "Edimilson Barbosa Filho": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Jack David Clonan": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Juan David Roldan Berrio": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -646,10 +650,10 @@
   "Jose Eduardo Coria Ramirez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Edmund B.": {
-    "as": "Edmund Philip Beltran"
-  },
   "Ruben R.": {
     "as": "Ruben Ilai Rodriguez"
+  },
+  "Edmund B.": {
+    "as": "Edmund Philip Beltran"
   }
 }

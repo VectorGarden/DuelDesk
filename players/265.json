@@ -432,6 +432,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Megalith"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Alexander Christophe Thierry Rochaix": [
@@ -510,6 +511,12 @@
   ],
   "Jean Carlo Lainez": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Ashley Thomas Jones": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Bobby Kent Green": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Felipe Manuel Barrueto Abarca": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}

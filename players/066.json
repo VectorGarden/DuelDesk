@@ -220,6 +220,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Maurice Marzelle Poteat": [
@@ -253,7 +254,8 @@
   ],
   "Jessi Lopez": [
     {"e":"2016-ycs-houston-texas"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Oskar Flores Cuevas": [
     {"e":"2016-ycs-mexico-city"},
@@ -605,10 +607,10 @@
   "Rodrigo Ochoa Herrrera": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Sergio P.": {
-    "as": "Sergio Pinon"
-  },
   "Darius W.": {
     "as": "Darius Evander Cheek Wilson"
+  },
+  "Sergio P.": {
+    "as": "Sergio Pinon"
   }
 }

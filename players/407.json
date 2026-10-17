@@ -578,7 +578,8 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"}
   ],
   "Alexander Jacob Martinez": [
-    {"e":"2023-250th-ycs-in-los-angeles"}
+    {"e":"2023-250th-ycs-in-los-angeles"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Edgar Eduardo Villarruel": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -693,10 +694,13 @@
   "Skyler James Oakley": [
     {"e":"2026-north-america-wcq"}
   ],
-  "Angel L.": {
-    "as": "Angel Alexander Lucas"
-  },
+  "Miguel Angel Camarena": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Ondrae M.": {
     "as": "Ondrae Charles Mathews"
+  },
+  "Angel L.": {
+    "as": "Angel Alexander Lucas"
   }
 }

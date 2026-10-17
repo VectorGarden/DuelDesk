@@ -550,7 +550,8 @@
   ],
   "Brandon Bradley Klinger": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Karl James Evans": [
     {"e":"2025-05-ycs-providence"},
@@ -607,6 +608,9 @@
   "Kevin Javier De Leon": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Russell Stephen Spinks II": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Sergio Urday Orejuela": [
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -616,14 +620,14 @@
   "Brian H.": {
     "as": "Brian Robert Hinojosa"
   },
-  "Devon B.": {
-    "as": "Devon Burnley"
-  },
   "Lance A.": {
     "as": "Lance Alix"
   },
   "Alexander G.": {
     "as": "Alexander John Padilla Green"
+  },
+  "Devon B.": {
+    "as": "Devon Burnley"
   },
   "Jack P.": {
     "as": "Jack Patrick Donald Pruit"

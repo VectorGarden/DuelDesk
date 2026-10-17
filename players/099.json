@@ -494,7 +494,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Marco Barrionuevo": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -675,17 +676,20 @@
   "Duelist Revolution Diagnostico Reservado D-REV": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Gonzalo Milciades Briceno": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Iago Joaquim Cunha Nogueira": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Miguel Angel Marroquin Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Cameron S.": {
-    "as": "Cameron David Smith"
-  },
   "Forbes K.": {
     "as": "Forbes Elliot Ku"
+  },
+  "Cameron S.": {
+    "as": "Cameron David Smith"
   },
   "Arturo A.": {
     "as": "Arturo Arestegui"

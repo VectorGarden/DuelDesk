@@ -369,7 +369,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Howard Jared Castro Escoto": [
     {"e":"2019-ycs-guatemala-city-guatemala"},
@@ -622,6 +623,9 @@
   ],
   "Alberto Francisco Campaigniac": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Benjamin Edward Levene": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "John R.": {
     "as": "John Paul Ruiz"

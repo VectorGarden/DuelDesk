@@ -433,7 +433,8 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jake Thomas Perreco": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -542,6 +543,7 @@
   ],
   "Cody James Fotter": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Samuel Benjamin Siqueiros": [
@@ -562,7 +564,8 @@
   ],
   "Markus Christopher Willis": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jalen Christopher Bynum": [
     {"e":"2025-north-america-wcq"},
@@ -595,6 +598,12 @@
   "Zackary Cloutier": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Juan September Hernandez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Spencer Stone Madsen": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Rodrigo Calixto Santos": [
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -604,11 +613,11 @@
   "Zackery T.": {
     "as": "Zackery Clyde Twork"
   },
-  "Marc L.": {
-    "as": "Marc Andre LeBlond"
-  },
   "Dustin B.": {
     "as": "Dustin Michael Butcher"
+  },
+  "Marc L.": {
+    "as": "Marc Andre LeBlond"
   },
   "Jimmy T.": {
     "as": "Jimmy Thoai To"

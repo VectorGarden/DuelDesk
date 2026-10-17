@@ -187,7 +187,8 @@
   "Erick Castillo": [
     {"e":"2017-north-american-wcq"},
     {"e":"2018-north-america-wcq"},
-    {"e":"2019-ycs-chicago"}
+    {"e":"2019-ycs-chicago"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Carlos Rafael Rodil Class III": [
     {"e":"2017-north-american-wcq"}
@@ -397,6 +398,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Job Gabino Gonzalez": [

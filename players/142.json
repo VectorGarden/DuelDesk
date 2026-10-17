@@ -312,6 +312,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Lane Harrison Mathis": [
@@ -550,7 +551,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Sangwoo Daniel Park": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Joseph Michael DiCioccio": [
     {"e":"2025-05-ycs-providence"}
@@ -612,16 +614,17 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Joshua Nasen Dupre": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Guilherme M.": {
     "as": "Guilherme Vital Machado"
   },
-  "Donovan N.": {
-    "as": "Donovan Ulysses Can Nguyen"
-  },
   "Marvin S.": {
     "as": "Marvin Sum"
+  },
+  "Donovan N.": {
+    "as": "Donovan Ulysses Can Nguyen"
   },
   "Mitchell B.": {
     "as": "Mitchell Than Bee Bartholomew"

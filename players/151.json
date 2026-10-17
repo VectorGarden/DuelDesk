@@ -83,7 +83,8 @@
     {"e":"2014-ycs-dallas"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Luis Alfredo Villafana Garcia": [
     {"e":"2014-ycs-mexico-d-f"},
@@ -443,6 +444,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Edgar GA Gonzalez": [
@@ -665,7 +667,8 @@
     {"e":"2025-05-ycs-providence"}
   ],
   "Francisco Tomas Andres": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Eduardo Augusto Goncalves": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -694,7 +697,8 @@
     {"e":"2025-north-america-wcq"}
   ],
   "Jevonte Tyrone Robinson": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Santiago Angel Medrano": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -717,17 +721,20 @@
   "Jeffrey Timmy Parent": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Colby Michael Ford": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Josue Gutierrez Valencia": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Jose Abraham Ochoa Garcia": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Charles C.": {
-    "as": "Charles Hunter Cramer"
-  },
   "Gary S.": {
     "as": "Gary Fidel Sanchez"
+  },
+  "Charles C.": {
+    "as": "Charles Hunter Cramer"
   },
   "Orlando Q.": {
     "as": "Orlando Lawrence Quevedo"

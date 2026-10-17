@@ -506,7 +506,8 @@
   ],
   "Aaron Paul Jones": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ethan Orion Ouimet": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -580,6 +581,9 @@
   "Kalebe da Silva Pinto": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"}
+  ],
+  "Urbano Rodriguez Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kalebe Da Silva Pinto": [
     {"e":"remote-duel-ycs-february-2025"},

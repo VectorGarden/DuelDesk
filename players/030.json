@@ -117,6 +117,7 @@
     {"e":"2025-central-america-wcq"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Jadon Wayne Napier": [
@@ -447,10 +448,12 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Michael James Wilson": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Lukas Alexander Campbell": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cristian Robert Schroder": [
@@ -525,11 +528,11 @@
   "Ryan Charles Krueger": [
     {"e":"na-ygoc-2022"}
   ],
-  "Johnathan L.": {
-    "as": "Johnathan Van Luu"
-  },
   "Taylor S.": {
     "as": "Taylor Justin Sager"
+  },
+  "Johnathan L.": {
+    "as": "Johnathan Van Luu"
   },
   "Marco C.": {
     "as": "Marco Antonio Cabrera"

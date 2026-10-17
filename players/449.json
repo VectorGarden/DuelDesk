@@ -276,7 +276,8 @@
   "Preston Tyler Huffman": [
     {"e":"2019-ycs-ft-worth"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Thomas Austria Crouse": [
     {"e":"2019-ycs-ft-worth"}
@@ -372,6 +373,7 @@
   ],
   "Jeffery Jacob Freelen": [
     {"e":"2023-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Colby Hunter Lowe": [
@@ -486,7 +488,11 @@
   "La bonita con las bonitas": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Emiliano D. Martinez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Francisco Javier March Vargas": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Gage Allan Badgerow": [
@@ -495,17 +501,17 @@
   "Ralph Pelaez": {
     "as": "Ralph A. Pelaez"
   },
+  "Dario G.": {
+    "as": "Dario Alexander Guzman"
+  },
   "Demesio S.": {
     "as": "Demesio Fabian Serrano"
-  },
-  "Christopher O.": {
-    "as": "Christopher Martin Olmedo"
   },
   "Aditya D.": {
     "as": "Aditya Shirish Dharap"
   },
-  "Dario G.": {
-    "as": "Dario Alexander Guzman"
+  "Christopher O.": {
+    "as": "Christopher Martin Olmedo"
   },
   "Jovanny H.": {
     "as": "Jovanny Hernandez"

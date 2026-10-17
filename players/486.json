@@ -60,7 +60,8 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Anthony Luis Nieves": [
     {"e":"2014-north-american-wcq"}

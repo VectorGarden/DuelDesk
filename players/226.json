@@ -292,7 +292,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Zachary Thomas Christian": [
     {"e":"2018-ycs-atlanta"},
@@ -604,16 +605,16 @@
   "Jose Juan Arias Coronado": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Aaron J.": {
-    "as": "Aaron Xavier Jarrett"
-  },
   "Sterling F.": {
     "as": "Sterling Lathe Burke Flesner"
   },
-  "Eduardo G.": {
-    "as": "Eduardo Enrique May Gomez"
+  "Aaron J.": {
+    "as": "Aaron Xavier Jarrett"
   },
   "Tyson D.": {
     "as": "Tyson Matthew Darn"
+  },
+  "Eduardo G.": {
+    "as": "Eduardo Enrique May Gomez"
   }
 }

@@ -527,12 +527,14 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Clarence Vaughn Roberts Jr.": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ricardo Luna Jr.": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Daniel Simon Izrailevsky": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -599,6 +601,9 @@
   ],
   "Emerson Mantilla Rubio": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Stuart Anthony Bashford": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Pedro N.": {
     "as": "Pedro Henrique Nogueira"

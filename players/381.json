@@ -465,7 +465,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Francisco Eliseo Lopez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jared Scott Adams": [
     {"e":"2025-04-ycs-houston"}
@@ -505,16 +506,16 @@
   "Brad Harol Ore Mallma": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Julie T.": {
-    "as": "Julie Jin Tomanio"
-  },
   "Johny V.": {
     "as": "Johny Tran Vu"
   },
-  "Kennedy L.": {
-    "as": "Kennedy Le"
+  "Julie T.": {
+    "as": "Julie Jin Tomanio"
   },
   "Travis R.": {
     "as": "Travis Dean Rippey"
+  },
+  "Kennedy L.": {
+    "as": "Kennedy Le"
   }
 }

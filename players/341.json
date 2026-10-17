@@ -648,7 +648,8 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Lucas Lorenzo Lira": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Carlos Umana Valverde": [
     {"e":"2025-central-america-wcq"}
@@ -683,19 +684,19 @@
   "Daigo Noguchi": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
+  "Owen A.": {
+    "as": "Owen Michael Alvarado"
+  },
   "Dominik N.": {
     "as": "Dominik Jullian Nemeth"
   },
   "Nelvin L.": {
     "as": "Nelvin Wai Yan Lo"
   },
-  "Lijie D.": {
-    "as": "Lijie Deng"
-  },
-  "Owen A.": {
-    "as": "Owen Michael Alvarado"
-  },
   "Sebastian M.": {
     "as": "Sebastian Muralles"
+  },
+  "Lijie D.": {
+    "as": "Lijie Deng"
   }
 }

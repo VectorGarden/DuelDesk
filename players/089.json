@@ -273,6 +273,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jose Dedios Hernandez III": [
@@ -281,7 +282,8 @@
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Diego Breno Llerena Ureta": [
     {"e":"2019-team-ycs-lima-peru"}
@@ -475,7 +477,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Moriam Cruz Florez": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -562,7 +565,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Andres Isai Gutierrez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jonathan W. Guan": [
     {"e":"2025-05-ycs-providence"}
@@ -610,18 +614,19 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Jason Valentine Vilaysanh": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Alvaro Ernesto Astete Ponce": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Alan A.": {
+    "as": "Alan Yair Amurri"
+  },
   "Ezekiel R.": {
     "as": "Ezekiel James Rivera"
   },
   "Miguel L.": {
     "as": "Miguel Roberto Luyo"
-  },
-  "Alan A.": {
-    "as": "Alan Yair Amurri"
   }
 }

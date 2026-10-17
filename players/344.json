@@ -470,7 +470,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Mitchell Coleton Stapleton Snyder": [
     {"e":"2023-ycs-vancouver"},
@@ -568,15 +569,16 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Hayden Caleb Allen": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Rafael J.": {
-    "as": "Rafael Ausberto Jacinto"
+  "Donald M.": {
+    "as": "Donald Eugene Miller"
   },
   "Pansheng L.": {
     "as": "Pansheng Li"
   },
-  "Donald M.": {
-    "as": "Donald Eugene Miller"
+  "Rafael J.": {
+    "as": "Rafael Ausberto Jacinto"
   }
 }

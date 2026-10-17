@@ -128,6 +128,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq","cut":"Final","deck":"Kewl Tune"},
     {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022","cut":"Top 16","deck":"Tenyi Swordsoul"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
@@ -501,10 +502,10 @@
   "Hurnake D.": {
     "as": "Hurnake Singh Dhillon"
   },
-  "Giovanny G.": {
-    "as": "Giovanny Alexander Gonzalez"
-  },
   "Eric H.": {
     "as": "Eric Zacarias Freeman Hansen"
+  },
+  "Giovanny G.": {
+    "as": "Giovanny Alexander Gonzalez"
   }
 }

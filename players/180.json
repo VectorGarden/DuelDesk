@@ -519,6 +519,7 @@
   ],
   "Roman Anthony Hawks": [
     {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Average Joes": [
@@ -534,7 +535,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Alexander John Robarge": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jonnathan Josue Salazar Vanegas": [
     {"e":"2025-central-america-wcq"}

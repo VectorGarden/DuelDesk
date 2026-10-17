@@ -322,7 +322,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Lyman A. Phun": [
     {"e":"2022-11-ycs-pasadena"}
@@ -659,10 +660,10 @@
   "Leon Gonzalo Sebastian Ochoa Saenz": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Steven G.": {
-    "as": "Steven Ramond Grillo"
-  },
   "Patrick O.": {
     "as": "Patrick Hoyd OQuinn"
+  },
+  "Steven G.": {
+    "as": "Steven Ramond Grillo"
   }
 }

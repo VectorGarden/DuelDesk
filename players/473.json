@@ -198,7 +198,8 @@
     {"e":"2017-north-american-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher Cornell Hughes": [
     {"e":"2017-north-american-wcq"},
@@ -405,6 +406,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jaiven Trent Silva": [
@@ -640,6 +642,9 @@
   "Lenin Mauricio Bedon Espinosa": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Gavin Matthew Gibson": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Jose Julian Garcia Moncayo": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -649,10 +654,10 @@
   "Christian P.": {
     "as": "Christian Paul Gregorio Pascua"
   },
-  "Jose G.": {
-    "as": "Jose Francisco Ramirez Gonzalez"
-  },
   "Solomon S.": {
     "as": "Solomon Grant Skuljicak"
+  },
+  "Jose G.": {
+    "as": "Jose Francisco Ramirez Gonzalez"
   }
 }

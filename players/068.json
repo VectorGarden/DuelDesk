@@ -511,7 +511,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Tashon Alonta Coleman": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -685,11 +686,11 @@
   "Tim Gräfe": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Brendan O.": {
-    "as": "Brendan Russell Outlaw"
-  },
   "Quentin J.": {
     "as": "Quentin Lemar Jenkins"
+  },
+  "Brendan O.": {
+    "as": "Brendan Russell Outlaw"
   },
   "Oliver N.": {
     "as": "Oliver Nghiem Nguyen"

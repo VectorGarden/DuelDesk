@@ -459,7 +459,8 @@
     {"e":"2024-central-america-wcq"}
   ],
   "Simeon Jabez Arnwine": [
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Sebastian Monsalves Moya": [
     {"e":"2024-south-america-wcq"}
@@ -498,7 +499,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Osvaldo Ramirez Jr.": [
     {"e":"2025-02-ycs-orlando"}
@@ -516,7 +518,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Michael Anthony Estrada": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Samuel Lester Johnson II": [
     {"e":"2025-04-ycs-houston"}
@@ -605,17 +608,17 @@
   "Devon Boyd": {
     "as": "Devon L. Boyd"
   },
-  "Surya K.": {
-    "as": "Surya Kumaraguru"
-  },
-  "Bader A.": {
-    "as": "Bader Abdullah Mahamad Alshahrani"
+  "Alfredo C.": {
+    "as": "Alfredo Carlos"
   },
   "Spencer Y.": {
     "as": "Spencer Young"
   },
-  "Alfredo C.": {
-    "as": "Alfredo Carlos"
+  "Bader A.": {
+    "as": "Bader Abdullah Mahamad Alshahrani"
+  },
+  "Surya K.": {
+    "as": "Surya Kumaraguru"
   },
   "Connor Z.": {
     "as": "Connor Storm Zaborowski"

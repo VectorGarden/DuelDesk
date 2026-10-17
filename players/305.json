@@ -256,7 +256,8 @@
   ],
   "Vincent Joseph Schiro III": [
     {"e":"2019-ycs-ft-worth"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Joshua Aguillon Giron": [
     {"e":"2019-ycs-ft-worth"}
@@ -335,6 +336,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -503,6 +505,12 @@
   ],
   "David Alejandro Vaca Galarza": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Logan Anthony Barter": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Reynaldo Guerra Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Juan Carlos Sandoval Leon": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

@@ -452,12 +452,14 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Zachary James Edge Gandara": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Artmage"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jonathan Consignado Sabino": [

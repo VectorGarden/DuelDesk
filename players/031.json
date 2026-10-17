@@ -528,6 +528,7 @@
   ],
   "Tarique Cobe Bolding": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Luka Cornelius Gavel": [
@@ -602,6 +603,9 @@
   ],
   "Milton Alfredo Teran": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "David Solomon Tamirat": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ayden P.": {
     "as": "Ayden Chase Patricelli"

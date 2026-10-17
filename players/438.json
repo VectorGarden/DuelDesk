@@ -136,7 +136,8 @@
   ],
   "Rafael Joaquin Escobedo": [
     {"e":"2016-ycs-houston-texas"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Miguel Jose Mejias Jr.": [
     {"e":"2016-ycs-houston-texas"}
@@ -554,7 +555,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Jonathan Yeshaya Dominguez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Josh Markel Martin": [
     {"e":"2025-05-ycs-providence"},
@@ -616,6 +618,9 @@
   ],
   "Juan Sebastian Jimenez": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Jacob Daniel Taylor": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Daniel Edward Ortiz": [
     {"e":"2026-ycs-houston","f":"Genesys"}

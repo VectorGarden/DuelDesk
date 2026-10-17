@@ -167,7 +167,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matias Esteban Gajardo Reyes": [
     {"e":"201603-santiago-chile"},
@@ -527,6 +528,9 @@
   ],
   "Lucas Correa Tenedini": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Garrison Nick Fowler": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Andres Penny Sauca": [
     {"e":"ycs-lima-peru-2023"}

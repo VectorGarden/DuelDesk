@@ -362,6 +362,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022","cut":"Top 8","deck":"Adventurer Dragon Link"}
   ],
   "Jackson Wayne Pesch": [
@@ -495,6 +496,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cody Steven Tavares": [
@@ -564,7 +566,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Brandon Adam Gargula": [
     {"e":"2023-ycs-indianapolis"}
@@ -687,13 +690,13 @@
   "Alexandre A.": {
     "as": "Alexandre Alonso"
   },
+  "Jayming M.": {
+    "as": "Jayming Moua"
+  },
   "Elizabeth C.": {
     "as": "Elizabeth Chantel Childers"
   },
   "Josh V.": {
     "as": "Josh Vicente Villaflor"
-  },
-  "Jayming M.": {
-    "as": "Jayming Moua"
   }
 }

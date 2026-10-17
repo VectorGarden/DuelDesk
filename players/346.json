@@ -180,7 +180,8 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Armando Covarrubias": [
     {"e":"2016-ycs-houston-texas"},
@@ -361,7 +362,8 @@
     {"e":"2019-ycs-chicago"}
   ],
   "Thane Daniel Schlaak": [
-    {"e":"2019-ycs-ft-worth"}
+    {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Scott Gregory Reass": [
     {"e":"2019-ycs-ft-worth"},
@@ -699,7 +701,14 @@
   "Jorge Javier Estrada Vasquez": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Luis Angel Gonzalez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Raul Alejandro Velazquez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Omar Emad Mahmoud Bsiso": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Dylan Joseph Rieman": [
@@ -714,14 +723,14 @@
   "wins Luk Chi Hang": [
     {"e":"wcs-2010","deck":"Quickdraw Dandywarrior"}
   ],
-  "Jason B.": {
-    "as": "Jason Willard Bai"
-  },
   "Gabriel H.": {
     "as": "Gabriel Devonte Headley"
   },
   "Marlon S.": {
     "as": "Marlon Elgardo Salazar"
+  },
+  "Jason B.": {
+    "as": "Jason Willard Bai"
   },
   "Sebastian G.": {
     "as": "Sebastian Andres Guerra"

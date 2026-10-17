@@ -446,7 +446,8 @@
   ],
   "Christian Alexander Billingsley": [
     {"e":"2022-remote-duel-ycs-north-america"},
-    {"e":"2023-250th-ycs-in-los-angeles"}
+    {"e":"2023-250th-ycs-in-los-angeles"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Peter Santiago Miranda": [
     {"e":"2022-ycs-bogota-colombia"},
@@ -593,6 +594,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Franco Mart?n Orsi": [
@@ -623,7 +625,8 @@
     {"e":"2025-central-america-wcq"}
   ],
   "Jeremy Michael Callihan": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nicolay Arriagada Palmet": [
     {"e":"2025-south-america-wcq"},
@@ -646,7 +649,8 @@
   ],
   "Renard Lamonta Sails": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jonathan L. Toledo Guerrero": [
     {"e":"2026-02-300th-na","f":"Advanced"}

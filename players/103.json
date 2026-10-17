@@ -281,7 +281,8 @@
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "James Russell Emerson McCune": [
-    {"e":"2018-ycs-memphis"}
+    {"e":"2018-ycs-memphis"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Carlos Antonio Morales": [
     {"e":"2018-ycs-salt-lake-city"}
@@ -298,7 +299,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Fernando Daniel Alberto Poblete Ortiz": [
     {"e":"2019-south-america-wcq"},
@@ -593,10 +595,10 @@
   "Aurelio R.": {
     "as": "Aurelio Issler de Azevedo Ribeiro"
   },
-  "Ulises A.": {
-    "as": "Ulises Remigio Aispuro"
-  },
   "Kamarun M.": {
     "as": "Kamarun Albert Maraccini"
+  },
+  "Ulises A.": {
+    "as": "Ulises Remigio Aispuro"
   }
 }

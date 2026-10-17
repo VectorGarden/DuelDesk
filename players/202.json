@@ -436,7 +436,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Alexander Seth Gomez": [
     {"e":"2024-08-ycs-sacramento"}
@@ -452,7 +453,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kevin Thomas Roberts": [
     {"e":"2024-north-america-wcq"},

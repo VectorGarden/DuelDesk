@@ -29,7 +29,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Mario Rodriguez Jr.": [
     {"e":"2013-north-american-wcq"}
@@ -520,6 +521,9 @@
   ],
   "Kevin Andre Gil Davila": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Tyler Braxton Rasmus": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Grevy Nicolas Rocha Nery": [
     {"e":"remote-duel-ycs-february-2025"}

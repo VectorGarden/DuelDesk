@@ -454,7 +454,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Eric Casey Ho Kovalak": [
     {"e":"2024-north-america-wcq"},
@@ -519,7 +520,8 @@
   "Elias Yacine Ghazlani": [
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Estuardo Jos? C?ceres": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"}
@@ -563,10 +565,10 @@
   "Victor Sanchez Torres": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Dawson G.": {
-    "as": "Dawson Maxwell Graves"
-  },
   "Benjamin N.": {
     "as": "Benjamin Franklin Nevel"
+  },
+  "Dawson G.": {
+    "as": "Dawson Maxwell Graves"
   }
 }

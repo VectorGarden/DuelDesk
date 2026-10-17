@@ -305,7 +305,8 @@
   ],
   "Jeremiah Alan Granger": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Angel Adrian Perez": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
@@ -516,11 +517,11 @@
   "David Roque Magno Valerio": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Andy V.": {
-    "as": "Andy Vietduy Vuong"
-  },
   "Justin M.": {
     "as": "Justin H. Moon"
+  },
+  "Andy V.": {
+    "as": "Andy Vietduy Vuong"
   },
   "Boris C.": {
     "as": "Boris Anthony Cochajil"

@@ -493,6 +493,7 @@
   ],
   "Andrew Joseph Jensen": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Sean Micheal Turner": [
@@ -556,10 +557,10 @@
   "Joaquin P.": {
     "as": "Joaquin Pojaghi"
   },
-  "Nathan B.": {
-    "as": "Nathan James Buck"
-  },
   "Christopher S.": {
     "as": "Christopher Ryan Springer"
+  },
+  "Nathan B.": {
+    "as": "Nathan James Buck"
   }
 }

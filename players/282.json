@@ -538,7 +538,8 @@
   "John Cong Thanh Nguyen": [
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jean Pier Depaz Sanchez": [
     {"e":"2024-south-america-wcq"},
@@ -621,6 +622,12 @@
   "Johan Deivid Guerrero Quintero": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
+  "Shawn Michael Fuller": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Qasim R Adenwalla": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Henry Gremillion": [
     {"e":"na-ygoc-2022"}
   ],
@@ -630,10 +637,10 @@
   "Jaime Alonso Tilleria Alvarez": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Leo H.": {
-    "as": "Leo Kuan Ching Hwang"
-  },
   "James Q.": {
     "as": "James Qian"
+  },
+  "Leo H.": {
+    "as": "Leo Kuan Ching Hwang"
   }
 }

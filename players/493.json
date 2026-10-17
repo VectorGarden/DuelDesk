@@ -361,7 +361,8 @@
   ],
   "Preston Jerald Waalen": [
     {"e":"2022-ycs-minneapolis"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ross Petersen Bruening": [
     {"e":"2022-ycs-minneapolis"},
@@ -438,7 +439,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Aguirre – Gomez – Garcia": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -552,6 +554,9 @@
   "Royal knight 1": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Jose Diego Carrizales": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Cruz Alonso Sandoval Leon": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -561,11 +566,11 @@
   "Israel Tonatiuh Flores Hernandez": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Zhen L.": {
-    "as": "Zhen Hao Lee"
-  },
   "Rennard W.": {
     "as": "Rennard Renfred Whitehead"
+  },
+  "Zhen L.": {
+    "as": "Zhen Hao Lee"
   },
   "Tristan F.": {
     "as": "Tristan Aric Franz"

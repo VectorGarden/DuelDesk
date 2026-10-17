@@ -544,7 +544,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Preston Allen Buice": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ryan Allan Holden": [
     {"e":"2025-04-ycs-houston"},
@@ -553,7 +554,8 @@
   "Steven Tomas Quintanar": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Royce Otto Sun": [
     {"e":"2025-04-ycs-houston"},
@@ -609,6 +611,7 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Joshua David Moreno": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Uriel Omar Moran Hernandez": [
@@ -623,17 +626,17 @@
   "Saulo S.": {
     "as": "Saulo Rangel dos Santos Silva"
   },
-  "Inderpal D.": {
-    "as": "Inderpal Singh Dhaliwal"
-  },
   "Christopher D.": {
     "as": "Christopher Chen Ning Duong"
   },
   "Cristian G.": {
     "as": "Cristian Mitchell Gutierrez"
   },
-  "Martin G.": {
-    "as": "Martin Marvyn Guillen"
+  "Inderpal D.": {
+    "as": "Inderpal Singh Dhaliwal"
+  },
+  "Cody B.": {
+    "as": "Cody Cameron Bartz"
   },
   "Maximilian C.": {
     "as": "Maximilian Kyle Chow"
@@ -641,7 +644,7 @@
   "Joshua S.": {
     "as": "Joshua Jordan Smith"
   },
-  "Cody B.": {
-    "as": "Cody Cameron Bartz"
+  "Martin G.": {
+    "as": "Martin Marvyn Guillen"
   }
 }

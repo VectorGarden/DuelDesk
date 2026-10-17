@@ -104,6 +104,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Mario Vidro Ramos": [
@@ -461,7 +462,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Benjamin Tritue Nguyen": [
     {"e":"2024-08-ycs-sacramento"}
@@ -505,7 +507,8 @@
   ],
   "Jose Alberto Velasquez": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "TCG-Arena Team": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"}

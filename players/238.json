@@ -536,7 +536,8 @@
   ],
   "Gilberto Jonah Gonzalez": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "alright. That’s a team": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -596,11 +597,11 @@
   "Fernando C.": {
     "as": "Fernando Cazuza"
   },
-  "Keegan B.": {
-    "as": "Keegan Bonabian"
-  },
   "Larry N.": {
     "as": "Larry Jordan Nichols"
+  },
+  "Keegan B.": {
+    "as": "Keegan Bonabian"
   },
   "Jacob H.": {
     "as": "Jacob Tiberius Hammer"

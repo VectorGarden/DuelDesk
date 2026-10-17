@@ -97,6 +97,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced","cut":"Top 4","deck":"Kewl Tune"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Christopher Edward Meighan": [
@@ -427,6 +428,7 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Andrew Albano Diaz": [
@@ -666,6 +668,15 @@
   "Jorge Eliecer Fernandez Perez": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
+  "Joshua Konrad Wilcox": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Angel Antonio Garcia": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Shixuan Shen": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Joseph Octavius Ward Jr.": [
     {"e":"na-ygoc-2022"}
   ],
@@ -675,16 +686,16 @@
   "Aldrin Alarcon Garcia": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Corbin D.": {
-    "as": "Corbin Paul Diez"
-  },
   "George S.": {
     "as": "George Lucas Sacco"
   },
-  "Dade R.": {
-    "as": "Dade Alexander Rynerson"
+  "Corbin D.": {
+    "as": "Corbin Paul Diez"
   },
   "Isaiah B.": {
     "as": "Isaiah Jeffrey Burgess"
+  },
+  "Dade R.": {
+    "as": "Dade Alexander Rynerson"
   }
 }

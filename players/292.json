@@ -469,7 +469,8 @@
     {"e":"2024-10-cancun-mexico"}
   ],
   "Devin Dewayne Jones": [
-    {"e":"2023-ycs-indianapolis"}
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Beysa Del Jesus Celedon Vilches": [
     {"e":"2023-ycs-santiago-chile"}
@@ -481,7 +482,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Magistus Dracotail"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dylan Matthew Mauceri": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -531,7 +533,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Johny Diaz": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dexter Pedro Juan Pichardo": [
     {"e":"2025-05-ycs-providence"},

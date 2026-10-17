@@ -77,7 +77,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Brandon Scott LaBudda": [
     {"e":"2014-ycs-dallas"},
@@ -198,6 +199,7 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Billy Baxter Wilson": [
@@ -672,7 +674,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Jose Guadalupe DeLira Esparza": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jean Marc Campoverde Pizarro": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}

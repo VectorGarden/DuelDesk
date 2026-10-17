@@ -379,7 +379,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Quinten Stephen Kurtz": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher Ryan Willhite": [
     {"e":"2025-10-ycs-anaheim"}
@@ -419,7 +420,11 @@
     {"e":"2026-08-quebec","f":"Genesys"}
   ],
   "Neel Shamsunder": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Kiet Tran Tat": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Roberto Emmanuel Sierra Almendriz": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
@@ -436,11 +441,11 @@
   "MAertin B.": {
     "as": "MAertin Farias Barbosa"
   },
-  "Hanko C.": {
-    "as": "Hanko Hon Kau Chow"
-  },
   "Dillon M.": {
     "as": "Dillon Maharaj"
+  },
+  "Hanko C.": {
+    "as": "Hanko Hon Kau Chow"
   },
   "Christian H.": {
     "as": "Christian M. Hanna"

@@ -550,7 +550,8 @@
   ],
   "Todd Davlin Denning": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dominick James Antonelli": [
     {"e":"2025-05-ycs-providence"},
@@ -600,6 +601,9 @@
   "Joseph Michael Forsey III": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Christian Alexander Dabadie": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Burak S. Yamci": [
     {"e":"na-ygoc-2022"}
   ],
@@ -612,11 +616,11 @@
   "Maycon C.": {
     "as": "Maycon Roberto Caiado"
   },
-  "Paul R.": {
-    "as": "Paul Michael Rigg"
-  },
   "Chancellor M.": {
     "as": "Chancellor Lon Anthony James Mezzaroba"
+  },
+  "Paul R.": {
+    "as": "Paul Michael Rigg"
   },
   "Chaz C.": {
     "as": "Chaz Braydon Chinery"

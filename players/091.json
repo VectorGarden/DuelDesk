@@ -142,6 +142,7 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Antonio Marcellus Riley": [
@@ -674,6 +675,9 @@
   ],
   "Gabriel Patricio Lopez Noboa": [
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
+  "Donovan Xiong Haacke": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Javier Puello Cruz": [
     {"e":"remote-duel-ycs-february-2025"}

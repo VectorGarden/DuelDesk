@@ -39,7 +39,8 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Michael Ray Centers Jr.": [
     {"e":"2013-north-american-wcq"},
@@ -393,6 +394,7 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Brett Charles Dixon": [

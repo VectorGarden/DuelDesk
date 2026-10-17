@@ -29,7 +29,8 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2024-ycs-guadalajara-mexico"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Joshua A. Ney": [
     {"e":"2011-ycs-kansas-city"}
@@ -143,6 +144,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Matthew Milad Alibakhsh": [
@@ -705,14 +707,14 @@
   "Luis Alberto Arce Llantoy": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Ryan V.": {
+    "as": "Ryan Douglas Villwock"
+  },
   "Julian V.": {
     "as": "Julian Edwardo Valero"
   },
   "Uhan C.": {
     "as": "Uhan Nazirtregeon Clarke"
-  },
-  "Ryan V.": {
-    "as": "Ryan Douglas Villwock"
   },
   "Bryce S.": {
     "as": "Bryce Thomas Sharp"

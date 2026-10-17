@@ -244,6 +244,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Silas Devon Contreras": [
@@ -541,7 +542,8 @@
   "Jonathan Padua": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-ycs-mexico-city-mexico"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dawson Kaiba Welsh": [
     {"e":"2025-north-america-wcq"},

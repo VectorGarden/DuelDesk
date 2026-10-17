@@ -233,6 +233,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jesus Antonio Bautista": [
@@ -318,7 +319,8 @@
   ],
   "Mario Alberto Stumblingbear": [
     {"e":"2018-ycs-atlanta"},
-    {"e":"2022-02-north-america-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dalton Jule Reeves": [
     {"e":"2018-ycs-memphis"}

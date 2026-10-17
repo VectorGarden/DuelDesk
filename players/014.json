@@ -110,7 +110,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Trevor Martin Edgar": [
     {"e":"2015-north-american-wcq"},
@@ -596,6 +597,18 @@
   ],
   "Jose Manuel Gonzalez Cordero": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Fidel Reymundo Martinez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Nicole Alice Harris": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Christian Jesus Diaz Torres": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "James Christian Gutierrez Tavares": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nicolo Alan Laloggia": [
     {"e":"na-ygoc-2022"}

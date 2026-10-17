@@ -507,7 +507,8 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Erick Eduardo Rodriguez Torres": [
     {"e":"2024-ycs-guadalajara-mexico"}
@@ -528,6 +529,7 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Van Allen Celaya III": [
@@ -560,6 +562,9 @@
   ],
   "Leonardo Josue Montoya Espana": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Khang Duy Dang": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jamil Carlos Aranda Cadima": [
     {"e":"remote-duel-ycs-january-2026"}

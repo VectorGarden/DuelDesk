@@ -123,7 +123,8 @@
     {"e":"2016-ycs-houston-texas"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Miguel Valdez": [
     {"e":"2016-ycs-minneapolis"},
@@ -479,6 +480,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Santiago Sturmo Torres Huarcaya": [
@@ -533,7 +535,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Damian Alec Bocanegra": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Renato Sebastian Mazuelos": [
     {"e":"2025-05-ycs-providence"},
@@ -588,6 +591,9 @@
   ],
   "Leonardo Attila Gonzalez": [
     {"e":"2026-south-america-dragon-duel-championship","f":"Dragon Duel"}
+  ],
+  "Johnathan Richard Lewis": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ezra H.": {
     "as": "Ezra Michael Hurt"

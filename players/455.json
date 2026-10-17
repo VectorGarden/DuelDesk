@@ -521,7 +521,8 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Drizzle": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -538,6 +539,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ryan Alexander Shock": [
@@ -583,10 +585,10 @@
   "Ezequiel Leites": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Dustin L.": {
-    "as": "Dustin Leonhardt"
-  },
   "Eva P.": {
     "as": "Eva Jolene Padilla"
+  },
+  "Dustin L.": {
+    "as": "Dustin Leonhardt"
   }
 }

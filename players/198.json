@@ -46,7 +46,8 @@
     {"e":"2014-ycs-dallas"},
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-03-atlanta-ga"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Michael Sherman Bond": [
     {"e":"2014-ycs-dallas"}
@@ -172,7 +173,8 @@
   ],
   "Matthew Nimmolrat": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
-    {"e":"2019-north-america-wcq"}
+    {"e":"2019-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Miguel Angel Florentino Hernandez": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
@@ -470,7 +472,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Jorge Luis Lazcano Jr.": [
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dylan Thomas Wheeler": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -529,11 +532,11 @@
     {"e":"yu-gi-oh-tcg-world-championship-2024","cut":"Top 8","deck":"Tenpai Dragon"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Nestor M.": {
-    "as": "Nestor Zai Mendez"
-  },
   "Enrique I.": {
     "as": "Enrique Ibanez"
+  },
+  "Nestor M.": {
+    "as": "Nestor Zai Mendez"
   },
   "Stephanos P.": {
     "as": "Stephanos Portillo"

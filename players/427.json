@@ -223,7 +223,8 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Robert Stephen Tucker": [
     {"e":"2019-03-atlanta-ga"},
@@ -442,7 +443,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Miguelito Gabriel Montemayor": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dagon James Wise": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -494,14 +496,14 @@
   "Luan Veloso De Paula": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
+  "Angus M.": {
+    "as": "Angus Tennyson Raymond Mancini Miller"
+  },
   "Noel A.": {
     "as": "Noel Arauz"
   },
   "Nicholas O.": {
     "as": "Nicholas Antonio Ordonez"
-  },
-  "Angus M.": {
-    "as": "Angus Tennyson Raymond Mancini Miller"
   },
   "Dominick C.": {
     "as": "Dominick John Celic"

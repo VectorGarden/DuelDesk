@@ -214,6 +214,7 @@
     {"e":"2018-ycs-memphis"},
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Hasan Cong Nguyen": [
@@ -331,6 +332,7 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -579,7 +581,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Elijah Edward Ruff": [
     {"e":"2023-ycs-indianapolis"}

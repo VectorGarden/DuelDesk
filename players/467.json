@@ -379,7 +379,8 @@
     {"e":"na-ygoc-2022"}
   ],
   "Eli Fabian Campos": [
-    {"e":"2022-02-north-america-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Anthony Gonzalez": [
     {"e":"2022-11-ycs-pasadena"}
@@ -617,8 +618,15 @@
   "Jessie Ethier": [
     {"e":"2026-08-quebec","f":"Genesys"}
   ],
+  "JaCoby Joe Allen": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Rodrigo Ruiz": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Tyler Blake Norman": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Rodrigo Ibanez Cruz": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
@@ -632,11 +640,11 @@
   "Anthony Ruiz": {
     "as": "Anthony G. Ruiz"
   },
-  "Jonathan F.": {
-    "as": "Jonathan Howard Free"
-  },
   "Manan B.": {
     "as": "Manan Bhandari"
+  },
+  "Jonathan F.": {
+    "as": "Jonathan Howard Free"
   },
   "Conor F.": {
     "as": "Conor Denis Foley"

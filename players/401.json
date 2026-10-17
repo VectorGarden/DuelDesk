@@ -259,7 +259,8 @@
   "Angel Lee Garcia": [
     {"e":"2019-ycs-ft-worth"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Akhil Lingutla": [
     {"e":"2019-ycs-ft-worth"}
@@ -553,11 +554,11 @@
   "Luis Fernando Navas": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
-  "Adbell D.": {
-    "as": "Adbell Antonio Dominguez Dominguez"
-  },
   "Stephen J.": {
     "as": "Stephen Robert Josephik"
+  },
+  "Adbell D.": {
+    "as": "Adbell Antonio Dominguez Dominguez"
   },
   "Clayton F.": {
     "as": "Clayton Joel Fisher"

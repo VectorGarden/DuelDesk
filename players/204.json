@@ -499,7 +499,8 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Moises Lugo Damian": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "ENSALADA": [
     {"e":"2026-team-ycs-la-paz-bolivia"}

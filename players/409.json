@@ -443,7 +443,8 @@
   ],
   "Danfer Joel Diaz Soza": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Tyler Demonte Glenn": [
     {"e":"2024-north-america-wcq"},
@@ -451,6 +452,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Sebastian Andres Monsalves Moya": [
@@ -504,13 +506,15 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Two and a Half Man": [
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Ismael Terrazas Jr.": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Bon Trinh Do": [
     {"e":"2025-04-ycs-houston"}
@@ -607,6 +611,9 @@
   "Iker Alejandro De Leon": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Larry Wade Dallmeyer": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Fabian C.": {
     "as": "Fabian David Castaneda"
   },
@@ -616,10 +623,10 @@
   "Drew F.": {
     "as": "Drew Maxwell Fisher"
   },
-  "Tian R.": {
-    "as": "Tian Xiao Rong"
-  },
   "Andre W.": {
     "as": "Andre Thomas Wilke"
+  },
+  "Tian R.": {
+    "as": "Tian Xiao Rong"
   }
 }

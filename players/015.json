@@ -442,7 +442,8 @@
   "Christopher Dominic Lucia": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-08-ycs-sacramento"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Elijah David Pablo": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -492,7 +493,8 @@
   "Zachary Michael Shaw": [
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Anthony David Smith": [
     {"e":"2024-ycs-indianapolis"}

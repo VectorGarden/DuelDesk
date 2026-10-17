@@ -421,7 +421,8 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Forbes Elliot Ku": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -618,6 +619,7 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Luis Antonio Zarate": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Eion V.": {

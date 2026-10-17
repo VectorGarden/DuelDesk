@@ -461,6 +461,7 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Manuel Alejandro Gomez Mendoza": [
@@ -651,7 +652,8 @@
   "Max Bartolo Jr.": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Trevon Dante Robertson": [
     {"e":"2025-05-ycs-providence"},
@@ -718,6 +720,9 @@
   "JAIRO DAVID JOMA LOPEZ": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Adrian Xavier Escobedo": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Joao Carlos Carvalho": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -730,13 +735,13 @@
   "Ronald Renato Salgado Cabada": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jim L.": {
-    "as": "Jim Cody Lott"
-  },
   "Christopher A.": {
     "as": "Christopher Bryan Avila"
   },
   "Alex S.": {
     "as": "Alex Douglas Stoddard"
+  },
+  "Jim L.": {
+    "as": "Jim Cody Lott"
   }
 }

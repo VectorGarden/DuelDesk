@@ -72,7 +72,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Daniel Barrientos Ocampo": [
     {"e":"2014-ycs-dallas"}
@@ -370,6 +371,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"@Ignister Maliss"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Benjamin Aguirre": [
@@ -531,7 +533,8 @@
   ],
   "Johnny Alexander Macanche": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Cesar Andres Miranda Cardenas": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}
@@ -632,6 +635,9 @@
   "Marco Antonio Avalos": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Kyle Robert Suter": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Uziel Alvarado Garcia": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -650,10 +656,10 @@
   "Alonso B.": {
     "as": "Alonso Capone Baca"
   },
-  "Dustin S.": {
-    "as": "Dustin Ulrich Snow"
-  },
   "Kristin S.": {
     "as": "Kristin Alexandra Soler"
+  },
+  "Dustin S.": {
+    "as": "Dustin Ulrich Snow"
   }
 }

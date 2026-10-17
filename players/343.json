@@ -610,6 +610,7 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Sebastian Price": [
@@ -793,6 +794,9 @@
   "Jonathan Rivas": [
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys","cut":"Final"}
   ],
+  "Anthony John Ngo": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Jose Augusto De Farias De Souza": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -808,10 +812,10 @@
   "Tulio A.": {
     "as": "Tulio Joaquim Altoe"
   },
-  "Jeffrey J.": {
-    "as": "Jeffrey Michael Alexander Jones"
-  },
   "Geoffrey F.": {
     "as": "Geoffrey Christian Fox"
+  },
+  "Jeffrey J.": {
+    "as": "Jeffrey Michael Alexander Jones"
   }
 }

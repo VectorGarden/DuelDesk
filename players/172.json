@@ -520,10 +520,12 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Aaron Patrick Carroll": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Isaiah Dean Ramsey": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Andrae James Allen": [
     {"e":"2025-05-ycs-providence"},
@@ -542,7 +544,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Timothy Quang Le Van": [
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Brent Robert Bunch": [
     {"e":"2025-10-ycs-anaheim"}

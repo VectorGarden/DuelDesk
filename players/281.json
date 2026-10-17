@@ -169,7 +169,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-04-ycs-houston","cut":"Top 32","deck":"Primite Blue-Eyes"}
+    {"e":"2025-04-ycs-houston","cut":"Top 32","deck":"Primite Blue-Eyes"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Julian Garcia": [
     {"e":"2016-ycs-houston-texas"}
@@ -622,6 +623,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Matthew Dominic Cervoni": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Edwin Nunez Rosas": [

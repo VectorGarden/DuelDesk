@@ -345,6 +345,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Aidan Jace Nemeth": [
@@ -380,6 +381,7 @@
     {"e":"2019-ycs-ft-worth"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Dragonmaid Dracotail"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cherokee Pride Steward Blakemore": [
@@ -392,6 +394,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Noah Andrew Stout": [
@@ -604,10 +607,10 @@
   "James Ricotta": {
     "as": "James P. Ricotta"
   },
-  "Karan S.": {
-    "as": "Karan Sharma"
-  },
   "Colby N.": {
     "as": "Colby Man Tsun Ng"
+  },
+  "Karan S.": {
+    "as": "Karan Sharma"
   }
 }

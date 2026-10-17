@@ -234,6 +234,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Mitsurugi"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Miranda Suzanne Rocero": [
@@ -604,13 +605,13 @@
   "Lauro S.": {
     "as": "Lauro Pires Schlemper"
   },
+  "Luan D.": {
+    "as": "Luan Kinh Duong"
+  },
   "Nicholas M.": {
     "as": "Nicholas Aksel Massinen"
   },
   "Jesse V.": {
     "as": "Jesse Ray Valle"
-  },
-  "Luan D.": {
-    "as": "Luan Kinh Duong"
   }
 }

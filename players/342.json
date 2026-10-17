@@ -107,6 +107,7 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 8"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Abramo Jude Manfredonia": [
@@ -434,7 +435,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "David Emmanuel Cortes Negrete": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -627,20 +629,23 @@
   "Matheus Bustamante Battiato": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"}
   ],
+  "Mckevin Gerard Reeves": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Josh Kelly": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Final","deck":"Light and Darkness Ritual"}
   ],
-  "James E.": {
-    "as": "James Robert Esquibel"
-  },
-  "Peter N.": {
-    "as": "Peter Phuong Nguyen"
-  },
   "Dylan G.": {
     "as": "Dylan Maxwell Graves"
   },
   "Etienne B.": {
     "as": "Etienne Jose Bonin"
+  },
+  "James E.": {
+    "as": "James Robert Esquibel"
+  },
+  "Peter N.": {
+    "as": "Peter Phuong Nguyen"
   },
   "Jared P.": {
     "as": "Jared Mikel Perez"

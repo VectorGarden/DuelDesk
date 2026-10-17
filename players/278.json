@@ -384,7 +384,8 @@
     {"e":"2019-ycs-chicago"}
   ],
   "Shadi Salman Dababneh": [
-    {"e":"2019-ycs-ft-worth"}
+    {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Emanuel Herrera Cerda": [
     {"e":"2019-ycs-guadalajara"},
@@ -569,6 +570,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Caeleb Aerick Kackowski": [

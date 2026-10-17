@@ -576,6 +576,7 @@
   ],
   "Nikolas Paul Franklin Stuetze": [
     {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jack Than Le": [
@@ -589,6 +590,7 @@
   ],
   "Jared Thomas Guilbeau": [
     {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Alvaro Eduardo Aguilar": [
@@ -657,10 +659,10 @@
   "Kyler S.": {
     "as": "Kyler J. Spiwak"
   },
-  "Julio V.": {
-    "as": "Julio Cesar Valente"
-  },
   "Dawson S.": {
     "as": "Dawson James Schawang"
+  },
+  "Julio V.": {
+    "as": "Julio Cesar Valente"
   }
 }

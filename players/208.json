@@ -392,7 +392,8 @@
   ],
   "Kyle Andrew Grimshaw": [
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Taylor Norman Chang": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -454,7 +455,8 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Luis Ernesto Ramirez Madrid": [
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Marco Antonio Sanchez Palato": [
     {"e":"2024-ycs-guadalajara-mexico"},
@@ -515,7 +517,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"}
   ],
   "Nathan Thomas Smithey": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Juan David Marulanda Nieva": [
     {"e":"2025-central-america-wcq"}
@@ -558,6 +561,9 @@
   ],
   "Jordy Natan Izaguirre Garcia": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Keqwon Rashard Palm Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Abraham Adolfo Alejandro Milla Reyes": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

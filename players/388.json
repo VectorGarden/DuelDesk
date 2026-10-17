@@ -377,7 +377,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Daniel Correa": [
     {"e":"202205-ycs-hartford-ct"}
@@ -610,22 +611,22 @@
   "Humberto Jacinto Manyari Melendez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Charlie S.": {
-    "as": "Charlie Alexis Sanchez"
-  },
   "Moises C.": {
     "as": "Moises Coronado"
   },
   "Altaira C.": {
     "as": "Altaira Marie Calen"
   },
+  "Charlie S.": {
+    "as": "Charlie Alexis Sanchez"
+  },
   "Kayne T.": {
     "as": "Kayne Ching Hian Tan"
   },
-  "Sean I.": {
-    "as": "Sean Gabriel Bunsoy Ignacio"
-  },
   "Dillon W.": {
     "as": "Dillon Cody Warner"
+  },
+  "Sean I.": {
+    "as": "Sean Gabriel Bunsoy Ignacio"
   }
 }

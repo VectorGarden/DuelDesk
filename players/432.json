@@ -282,7 +282,8 @@
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Zachary Sorenson": [
     {"e":"2018-ycs-atlanta"}
@@ -472,7 +473,8 @@
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2024-north-america-wcq","cut":"Top 8","deck":"Tenpai Dragon"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Julio Rafael Aguilar Vazquez": [
     {"e":"2024-ycs-guadalajara-mexico"},
@@ -508,7 +510,8 @@
   ],
   "Adam Furgeson McClellan": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Anthony Roberto Madruga": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -528,6 +531,9 @@
   ],
   "Carlos M.": [
     {"e":"2026-04-team-ycs-las-vegas"}
+  ],
+  "Colin Xavier Paul": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Saul Misael Galindo Rodriguez": [
     {"e":"wcq-2016-mexico"}

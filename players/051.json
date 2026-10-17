@@ -121,6 +121,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 32"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"},
@@ -472,7 +473,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Angel Weyder Santiago Guerrero Flores": [
     {"e":"2019-team-ycs-lima-peru"},
@@ -627,7 +629,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Zachary Harold Andrew Boake": [
     {"e":"2024-10-ycs-niagara-falls"},
@@ -713,6 +716,9 @@
   ],
   "Gabriel Campelo Azevedo": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Carlos Anthony Farias": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Deyler Jesus Arias Alvarez": [
     {"e":"remote-duel-ycs-january-2024"}

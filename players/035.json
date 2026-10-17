@@ -604,6 +604,7 @@
   ],
   "Jasper Andrew Martin": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "William James ODonnell": [
@@ -651,6 +652,9 @@
   ],
   "Adhemar Neythan Gutierrez Chambi": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Luis Ernesto Reyes": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Mohammad I Sumaira": [
     {"e":"na-ygoc-2022"}

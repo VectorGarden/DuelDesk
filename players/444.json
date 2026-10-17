@@ -589,10 +589,12 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Daniel Alberto Pomar Alfaro": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Sergio Gutierrez Jr.": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ethan C. Smith": [
     {"e":"2025-05-ycs-providence"},
@@ -642,10 +644,10 @@
   "Emilio T.": {
     "as": "Emilio Rafael Torres"
   },
-  "Tobie P.": {
-    "as": "Tobie John Pickell"
-  },
   "Samson N.": {
     "as": "Samson Nguyen"
+  },
+  "Tobie P.": {
+    "as": "Tobie John Pickell"
   }
 }

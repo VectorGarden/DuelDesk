@@ -465,7 +465,8 @@
   ],
   "Damien Antonio Hernandez": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Fabio Salvatore": [
     {"e":"2025-05-ycs-providence"}
@@ -524,7 +525,11 @@
   "Rodrigo Assis Assis": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Matthew Deshawn Garza": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Yxel Alejandro Sanchez": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Juan Fernando Segarra Lopez": [
@@ -536,13 +541,13 @@
   "Fernando F.": {
     "as": "Fernando Maciel Ferreira"
   },
+  "Alejandro H.": {
+    "as": "Alejandro Hernandez"
+  },
   "Joseph V.": {
     "as": "Joseph Michael Vianello"
   },
   "Junlong W.": {
     "as": "Junlong Wu"
-  },
-  "Alejandro H.": {
-    "as": "Alejandro Hernandez"
   }
 }

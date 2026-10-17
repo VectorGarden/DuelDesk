@@ -246,7 +246,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-12-ycs-anaheim"},
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Austin-Juan Noah Thomas": [
     {"e":"2017-ycs-denver"}
@@ -422,6 +423,7 @@
     {"e":"2026-central-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -583,6 +585,9 @@
   "Getulio Botao Tavolaro": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Saarangan Jegathesan": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "wins Kei Kuwano": [
     {"e":"wcs-2010","deck":"Herald of Perfection"}
   ],
@@ -601,11 +606,11 @@
   "Yang V.": {
     "as": "Yang Vang"
   },
-  "Sean R.": {
-    "as": "Sean Austin Royster"
-  },
   "Tyler E.": {
     "as": "Tyler Makoto Endo"
+  },
+  "Sean R.": {
+    "as": "Sean Austin Royster"
   },
   "Xinwei T.": {
     "as": "Xinwei Tang"

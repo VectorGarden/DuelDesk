@@ -525,7 +525,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Victor Luis Rodriguez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Josh Ethan Goldsmith": [
     {"e":"2025-05-ycs-providence"},
@@ -555,7 +556,8 @@
   "Todd Brady Nentwig": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Johnathan David Adams II": [
     {"e":"2026-north-america-wcq"}
@@ -568,6 +570,9 @@
   ],
   "Juan Sebastian Quinteros Chanaba": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Simon Le Huynh": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Gregory James Staffopoulos": [
     {"e":"2026-ycs-houston","f":"Genesys"}

@@ -57,6 +57,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq","cut":"Top 64","deck":"Mitsurugi Ryzeal"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Ivan Bernal Castillo": [
@@ -242,6 +243,7 @@
   ],
   "Guillermo Carvajal Flores": [
     {"e":"2019-ycs-portland"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Manuel Antonio Romero Gomez": [
@@ -407,7 +409,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Francisco Javier Vargas Gutierrez": [
     {"e":"2024-north-america-wcq"},
@@ -496,11 +499,11 @@
   "Jensen S.": {
     "as": "Jensen Ciara Smillie"
   },
-  "Alexandre L.": {
-    "as": "Alexandre Lebel"
-  },
   "Alex R.": {
     "as": "Alex Bryan Ramirez"
+  },
+  "Alexandre L.": {
+    "as": "Alexandre Lebel"
   },
   "Owen L.": {
     "as": "Owen Quentin Love"

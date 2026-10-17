@@ -75,6 +75,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys","cut":"Top 8","deck":"Blitzclique"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -615,7 +616,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Michael Joedan Gomez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jagdeep Rathore Singh": [
     {"e":"2025-05-ycs-providence"},

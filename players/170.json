@@ -155,6 +155,7 @@
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022","cut":"Top 8"},
     {"e":"wcq-2016-mexico"},
     {"e":"ycs-lima-peru-2023"}
@@ -643,6 +644,9 @@
   "Xavier Sebastian Jacome": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Carlos Juan Quilimaco Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Nicholas Russell Herlambang": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
@@ -655,11 +659,11 @@
   "Marshaun Lugo": {
     "as": "Marshaun J. Lugo"
   },
-  "Cortney M.": {
-    "as": "Cortney Jamaal David Mattson"
-  },
   "Esteban S.": {
     "as": "Esteban Andres Sanchez"
+  },
+  "Cortney M.": {
+    "as": "Cortney Jamaal David Mattson"
   },
   "Pathum M.": {
     "as": "Pathum Weerabandara Madigapola"

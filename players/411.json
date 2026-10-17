@@ -401,7 +401,8 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Pablo Castillo Arias": [
     {"e":"2024-team-ycs-san-jose-costa-rica"},
@@ -463,14 +464,14 @@
   "Javiera Constanza Jofre Videla": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Nicholas Z.": {
-    "as": "Nicholas James Zopfi"
+  "Angel C.": {
+    "as": "Angel Jesus Cuevas"
   },
   "Bryant S.": {
     "as": "Bryant Antony Salcedo"
   },
-  "Angel C.": {
-    "as": "Angel Jesus Cuevas"
+  "Nicholas Z.": {
+    "as": "Nicholas James Zopfi"
   },
   "Isaac D.": {
     "as": "Isaac Vicente Daniel"

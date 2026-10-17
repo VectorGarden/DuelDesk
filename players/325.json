@@ -227,7 +227,8 @@
     {"e":"2019-ycs-chicago"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2024-ycs-indianapolis"}
+    {"e":"2024-ycs-indianapolis"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Blake Matthew Humphrey": [
     {"e":"2017-ycs-seattle"},
@@ -541,6 +542,12 @@
   ],
   "Team-YCS-AvramaxBlader": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Dimajiae Mekhi Washington": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Vincent Ray Tovar": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Steve Ramkissoom": [
     {"e":"wcq-2016-mexico"}

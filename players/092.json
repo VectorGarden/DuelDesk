@@ -557,7 +557,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Hunter Payne Cruz": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Eduardo Antonio Villa": [
     {"e":"2025-04-ycs-houston"}
@@ -568,7 +569,8 @@
   "Marc Anthony Nuzzo": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Patrick Edward Geoghegan": [
     {"e":"2025-11-ycs-pittsburgh-pa"},

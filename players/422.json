@@ -190,6 +190,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "William Clarence Horvat": [
@@ -440,7 +441,8 @@
   ],
   "Henry Martinez": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Roberto Ivan Cortez": [
     {"e":"2025-04-ycs-houston"}
@@ -502,11 +504,11 @@
   "Hudson V.": {
     "as": "Hudson Fernandes Viana"
   },
-  "Jenna D.": {
-    "as": "Jenna Eliabeth Daroszewski"
-  },
   "Steven O.": {
     "as": "Steven Osorio"
+  },
+  "Jenna D.": {
+    "as": "Jenna Eliabeth Daroszewski"
   },
   "Soham T.": {
     "as": "Soham Mandar Tamhane"

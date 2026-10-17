@@ -470,7 +470,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Team Infinita Depresion": [
     {"e":"2024-team-ycs-santiago-chile"}
@@ -482,7 +483,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Trenton Alexander Hammond": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Calvin Lee Staten": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -506,7 +508,8 @@
   ],
   "Kyle Ashton McNeer": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ricardo Andres Torres Cobos": [
     {"e":"2026-08-quebec","f":"Advanced"}
@@ -526,14 +529,14 @@
   "Izumi Yoshi": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Japan","cut":"Top 8"}
   ],
-  "Adam A.": {
-    "as": "Adam Michael Healiiolani Akiu"
+  "Edgar C.": {
+    "as": "Edgar Felipe Cortes"
   },
   "Jacquelyn Y.": {
     "as": "Jacquelyn Aubrey Yeager"
   },
-  "Edgar C.": {
-    "as": "Edgar Felipe Cortes"
+  "Adam A.": {
+    "as": "Adam Michael Healiiolani Akiu"
   },
   "Logen T.": {
     "as": "Logen Andrew Thornton"

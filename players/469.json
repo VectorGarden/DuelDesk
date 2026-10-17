@@ -39,7 +39,8 @@
     {"e":"2017-north-american-wcq"},
     {"e":"2017-ycs-atlanta"},
     {"e":"2018-ycs-atlanta"},
-    {"e":"2023-ycs-indianapolis"}
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Sebastian De Vita": [
     {"e":"2015-south-american-wcq"}
@@ -483,7 +484,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Samuel Emilio Gonzalez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kevin Adrian Hernandez": [
     {"e":"2025-04-ycs-houston"}
@@ -532,6 +534,9 @@
   "Carlos Adolfo Parra Cespedes": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
+  "Craig Alan Gobble II": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "James Sheridan": [
     {"e":"na-ygoc-2022"}
   ],
@@ -541,17 +546,17 @@
   "Daniel Hernandez Rodriguez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Benjamin C.": {
-    "as": "Benjamin Ho Chau"
-  },
   "Kyle L.": {
     "as": "Kyle Robert Lo"
   },
-  "Joseph D.": {
-    "as": "Joseph Francis Dietrich"
+  "Benjamin C.": {
+    "as": "Benjamin Ho Chau"
   },
   "Kevin W.": {
     "as": "Kevin Wu"
+  },
+  "Joseph D.": {
+    "as": "Joseph Francis Dietrich"
   },
   "Chuan T.": {
     "as": "Chuan Tong"

@@ -512,6 +512,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Bren Dany Tuells": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -524,11 +525,11 @@
   "Dante Herson Arbildo Tafur": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Adam G.": {
-    "as": "Adam Randle Gilbert"
-  },
   "Justin T.": {
     "as": "Justin Anthony Thomas"
+  },
+  "Adam G.": {
+    "as": "Adam Randle Gilbert"
   },
   "Cyril M.": {
     "as": "Cyril Justin Mendoza"

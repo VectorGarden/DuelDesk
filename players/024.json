@@ -320,7 +320,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Michel Angelo Santiesteban Gonzalez": [
     {"e":"2019-central-america-wcq"}
@@ -535,7 +536,8 @@
   ],
   "Christian Huy Do": [
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Genesys","deck":"Exosister"}
+    {"e":"2026-02-300th-na","f":"Genesys","deck":"Exosister"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Gwen Prescott MacDonald": [
     {"e":"2025-05-ycs-providence"},
@@ -599,6 +601,18 @@
   ],
   "Marcos Antonio Escalante": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Ernesto Ezequiel Davila Arauz": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Alex James Baker": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "James Edward White": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Misael Adolfo Martinez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jesus Adolfo Trujillo Sanchez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

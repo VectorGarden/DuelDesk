@@ -79,6 +79,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jacob Harley Taylor": [
@@ -173,7 +174,8 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Julio Cesar Manjarrez": [
     {"e":"2016-ycs-providence-rhode-island"},
@@ -427,6 +429,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Julian Penagos": [
@@ -514,7 +517,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Donald Joseph Demoss": [
     {"e":"2024-north-america-wcq"},
@@ -550,7 +554,8 @@
   "Jorge Gustavo Rubio": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Di Shon Niguel Poindexter Skeet": [
     {"e":"2025-05-ycs-providence"}
@@ -616,10 +621,10 @@
   "ADreAn B.": {
     "as": "ADreAn James Brings Him Back"
   },
-  "Deilys F.": {
-    "as": "Deilys Adrian Fornaris"
-  },
   "Daryl M.": {
     "as": "Daryl Kenichi Mihara"
+  },
+  "Deilys F.": {
+    "as": "Deilys Adrian Fornaris"
   }
 }

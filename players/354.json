@@ -238,7 +238,8 @@
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2025-03-team-ycs-las-vegas"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Connor Christian Farmer": [
     {"e":"201711-san-diego-ca"},
@@ -516,7 +517,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Spencer Hancock Friesen": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Blake Allen Martinez": [
     {"e":"2025-04-ycs-houston"},
@@ -548,10 +550,10 @@
   "Juan Jose Jorge Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Trent B.": {
-    "as": "Trent Buras"
-  },
   "Joseph S.": {
     "as": "Joseph Thomas Steinhauer"
+  },
+  "Trent B.": {
+    "as": "Trent Buras"
   }
 }

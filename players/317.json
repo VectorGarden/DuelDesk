@@ -50,6 +50,7 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Austin Lee Lenhart": [
@@ -493,7 +494,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Dominick Javon Davis": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Gabrielle Rodrigazo Manansala": [
     {"e":"2025-11-ycs-pittsburgh-pa"},

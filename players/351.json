@@ -150,6 +150,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Osama Anis Oza": [
@@ -560,25 +561,28 @@
   "Aldo Alexander Mero Paredes": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Voulis Kyriakos Exezidis": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Johan Andersson Rojas Nolasco": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Yuuki Shibata": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Top 8","deck":"Sky Striker"}
   ],
-  "Alex Y.": {
-    "as": "Alex Jordan Yeager"
-  },
   "Brian L.": {
     "as": "Brian Patrick Lentini"
+  },
+  "Angel S.": {
+    "as": "Angel Manuel Sixto"
+  },
+  "Alex Y.": {
+    "as": "Alex Jordan Yeager"
   },
   "Blake R.": {
     "as": "Blake Andrew Root"
   },
   "Allen T.": {
     "as": "Allen Tong"
-  },
-  "Angel S.": {
-    "as": "Angel Manuel Sixto"
   }
 }

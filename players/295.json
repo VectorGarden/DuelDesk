@@ -255,6 +255,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Anthony Do Tran": [
@@ -529,7 +530,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Michael Sherman Bond Jr.": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jim Yang": [
     {"e":"2025-04-ycs-houston"}
@@ -585,19 +587,19 @@
   "Jefferson P.": {
     "as": "Jefferson Alves de Oliveira Pires"
   },
-  "Aaron F.": {
-    "as": "Aaron Chase Furman"
-  },
   "Chester H.": {
     "as": "Chester Hawk Henson"
   },
   "Thaddeus B.": {
     "as": "Thaddeus Thomas Bingham"
   },
-  "Marcellus T.": {
-    "as": "Marcellus James Thiry"
+  "Aaron F.": {
+    "as": "Aaron Chase Furman"
   },
   "Rick W.": {
     "as": "Rick William Winspear"
+  },
+  "Marcellus T.": {
+    "as": "Marcellus James Thiry"
   }
 }

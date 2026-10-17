@@ -437,7 +437,8 @@
   ],
   "Zian Li": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Abisai G. Alejandro": [
     {"e":"2024-north-america-wcq"},
@@ -467,13 +468,15 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Brandon Deshaun Willis": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jordan Gano Munns": [
     {"e":"2025-04-ycs-houston"}
   ],
   "Michael Lee Davis": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Kevin James Wild": [
@@ -525,6 +528,9 @@
   "Argani Jhaszid": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
+  "Holmer Alans Guzman": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "John Laurence Bell": [
     {"e":"na-ygoc-2022"}
   ],
@@ -537,10 +543,10 @@
   "Pakawat P.": {
     "as": "Pakawat Thomas Pamornsut"
   },
-  "Dominique C.": {
-    "as": "Dominique Coan"
-  },
   "June L.": {
     "as": "June Hugo Lee"
+  },
+  "Dominique C.": {
+    "as": "Dominique Coan"
   }
 }

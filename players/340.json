@@ -171,6 +171,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022","cut":"Top 4","deck":"Floowandereeze"}
   ],
   "Robert J. Prajer": [
@@ -570,6 +571,9 @@
   "Emerson Daniel Valencia": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
+  "Joseph Andrew Cruz": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Javier Martinez Lopez": [
     {"e":"wcq-2016-mexico"}

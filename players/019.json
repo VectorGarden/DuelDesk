@@ -445,7 +445,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Bobby Michael Kaeff": [
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Braeden Joseph Mohr": [
     {"e":"2025-10-ycs-anaheim"},
@@ -503,17 +504,17 @@
   "Nilo Edson Menezes Da Silva": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Angelique R.": {
-    "as": "Angelique Nicole Rivera"
-  },
-  "Zachary P.": {
-    "as": "Zachary Alexander Patterson"
-  },
   "Kristofer M.": {
     "as": "Kristofer Allen MacNeal"
   },
   "Oscar V.": {
     "as": "Oscar Uriel Velez"
+  },
+  "Angelique R.": {
+    "as": "Angelique Nicole Rivera"
+  },
+  "Zachary P.": {
+    "as": "Zachary Alexander Patterson"
   },
   "Kade S.": {
     "as": "Kade Mikel Stanley"

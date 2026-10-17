@@ -503,7 +503,8 @@
   "Hayden Scott Lippelman": [
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Penjo Chhimi": [
     {"e":"2025-05-ycs-providence"}
@@ -575,18 +576,19 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Hunter Lee London": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Romulo N.": {
-    "as": "Romulo Neves Baptista Neto"
-  },
   "Gabriel L.": {
     "as": "Gabriel Ramos Luiz"
   },
-  "Reno R.": {
-    "as": "Reno Jet Ramsey"
+  "Romulo N.": {
+    "as": "Romulo Neves Baptista Neto"
   },
   "Ryan F.": {
     "as": "Ryan Fletcher"
+  },
+  "Reno R.": {
+    "as": "Reno Jet Ramsey"
   }
 }

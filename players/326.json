@@ -125,6 +125,7 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Justin Michael Vilhauer": [
@@ -543,10 +544,10 @@
   "Daniel Wirtu": {
     "as": "Daniel M Wirtu"
   },
-  "Alan T.": {
-    "as": "Alan Lin Truong"
-  },
   "Kyusuh O.": {
     "as": "Kyusuh Oh"
+  },
+  "Alan T.": {
+    "as": "Alan Lin Truong"
   }
 }

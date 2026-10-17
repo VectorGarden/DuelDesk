@@ -43,7 +43,8 @@
     {"e":"2017-central-american-wcq"}
   ],
   "Rodrigo Vazquez": [
-    {"e":"2014-ycs-dallas"}
+    {"e":"2014-ycs-dallas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jesus Alberto Principe Villanueva": [
     {"e":"2014-ycs-lima-peru"}
@@ -167,7 +168,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dorian James Oglesby": [
     {"e":"2016-ycs-origins"}
@@ -494,7 +496,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Andrew Blake Coslan": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kerry James Blevins": [
     {"e":"2025-04-ycs-houston"}

@@ -451,6 +451,7 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Luigui Daniel Caballero": [
@@ -583,16 +584,16 @@
   "Brian Dionicio Quinones Vargas": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Cody E.": {
-    "as": "Cody Thomas Evans"
+  "Koby N.": {
+    "as": "Koby Quang Huy Ngo"
   },
   "Anmol S.": {
     "as": "Anmol Ram Sharma"
   },
+  "Cody E.": {
+    "as": "Cody Thomas Evans"
+  },
   "Guillermo S.": {
     "as": "Guillermo Eder Sotelo"
-  },
-  "Koby N.": {
-    "as": "Koby Quang Huy Ngo"
   }
 }

@@ -220,6 +220,7 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Shane Patrick McCartney": [
@@ -502,7 +503,8 @@
   "Daniel Miranda": [
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-ycs-indianapolis"}
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Vinicius Gabriel Santos Vidal": [
     {"e":"2022-ycs-rio-de-janeiro"},
@@ -687,16 +689,16 @@
   "Douglas P.": {
     "as": "Douglas Felix Pretto"
   },
-  "Anthony J.": {
-    "as": "Anthony Isaiah Jones"
-  },
   "Connor M.": {
     "as": "Connor R. Maguire"
   },
-  "Devon F.": {
-    "as": "Devon Wayne Filos"
+  "Anthony J.": {
+    "as": "Anthony Isaiah Jones"
   },
   "Taj A.": {
     "as": "Taj Eugene Allen"
+  },
+  "Devon F.": {
+    "as": "Devon Wayne Filos"
   }
 }

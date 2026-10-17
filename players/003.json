@@ -217,7 +217,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Guillermo Alferdo Lopez": [
     {"e":"2016-ycs-houston-texas"}
@@ -546,6 +547,7 @@
   ],
   "Maury Andre Funez Ramirez": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Juan Jose Chala Zelada": [
@@ -578,6 +580,9 @@
   ],
   "Austin Edward Coley": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Ethan Alexander Beechboard": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Alberto Moran Moreno": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

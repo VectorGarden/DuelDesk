@@ -314,6 +314,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Abhee Nayan Brahmbhatt": [
@@ -625,10 +626,10 @@
   "Rafael R.": {
     "as": "Rafael Mariano Reich"
   },
-  "Mark M.": {
-    "as": "Mark William Melander"
-  },
   "Abraham R.": {
     "as": "Abraham Daniel Romero"
+  },
+  "Mark M.": {
+    "as": "Mark William Melander"
   }
 }

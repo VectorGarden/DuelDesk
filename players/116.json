@@ -82,6 +82,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joshua Tyler Sapp": [
@@ -335,7 +336,8 @@
   ],
   "LaCoulton Jonathan Walls Jr.": [
     {"e":"2019-ycs-chicago"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dominic Antonio Guida": [
     {"e":"2019-ycs-chicago"}
@@ -389,7 +391,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Dean Rex Cain": [
     {"e":"2022-ycs-charlotte"}
@@ -465,7 +468,8 @@
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christopher Wayde Pinkstaff": [
     {"e":"2024-12-ycs-anaheim"},
@@ -502,7 +506,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Ricardo Mendoza": [
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Lucas Agustin Sena": [
     {"e":"2025-ycs-buenos-aires-argentina"}

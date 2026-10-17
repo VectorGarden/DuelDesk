@@ -318,7 +318,8 @@
   ],
   "Jose Gerardo Padilla": [
     {"e":"2019-ycs-ft-worth"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Fernando Padilla": [
     {"e":"2019-ycs-ft-worth"},
@@ -500,7 +501,8 @@
   ],
   "Nicholas John Fox": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Omnia X-2": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -512,7 +514,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Yunis Al Janabi": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ian David Slobodianuck": [
     {"e":"2025-11-ycs-pittsburgh-pa"},

@@ -76,6 +76,7 @@
     {"e":"2025-04-ycs-houston","cut":"Top 32","deck":"Ryzeal Fiendsmith"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022","cut":"Top 32","deck":"Branded Predaplant"}
   ],
   "Alexander William Martin": [
@@ -496,16 +497,16 @@
   "Diego Calderon Benavidez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Andrew N.": {
-    "as": "Andrew Trung Tin Nguyen"
-  },
   "Zacquery R.": {
     "as": "Zacquery Oliver Reveche"
   },
-  "Amir F.": {
-    "as": "Amir Donte Foy"
+  "Andrew N.": {
+    "as": "Andrew Trung Tin Nguyen"
   },
   "David K.": {
     "as": "David Matthew Karaffa"
+  },
+  "Amir F.": {
+    "as": "Amir Donte Foy"
   }
 }

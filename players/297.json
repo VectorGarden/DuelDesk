@@ -193,6 +193,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Gem-Knight"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Tyler S. Ferreira": [
@@ -375,7 +376,8 @@
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Luciano Serna Hernandez": [
     {"e":"2019-ycs-quito-ecuador"},
@@ -586,6 +588,9 @@
   ],
   "Hugo Nacib Ribeiro De Paula": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Emiliano Santos Castillo": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nicolas Cristopher Armuna Torres": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}

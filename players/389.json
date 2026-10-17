@@ -489,7 +489,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Oscar Jesus Meza": [
     {"e":"2024-central-america-wcq"}
@@ -557,6 +558,9 @@
   ],
   "Ganamos sin leer": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Kellen Robert Mcneal": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matheus Leal De Souza": [
     {"e":"remote-duel-ycs-january-2026"}

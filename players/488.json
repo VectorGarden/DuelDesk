@@ -603,7 +603,8 @@
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Thomas Clifften Kemble": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Corey Michael Cummings": [
     {"e":"2025-05-ycs-providence"},
@@ -663,20 +664,26 @@
   "Daniel Bravo Rodriguez": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Brandon Levi Bach": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Zakaria Ilyace Wakrim": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Domar Cervantes Cepeda": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Rodrigo Togores": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
-  "Jongwon L.": {
-    "as": "Jongwon John Lee"
+  "Jesse B.": {
+    "as": "Jesse Calvin Boyer"
   },
   "Adam N.": {
     "as": "Adam Zaid Sameer Najarbashi"
   },
-  "Jesse B.": {
-    "as": "Jesse Calvin Boyer"
+  "Jongwon L.": {
+    "as": "Jongwon John Lee"
   },
   "Marcel M.": {
     "as": "Marcel Antwaun Mulder"

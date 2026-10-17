@@ -504,7 +504,8 @@
   "Benjamin Marc Maston": [
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ibraim Erbey Salinas": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -707,6 +708,9 @@
   ],
   "Daniel Enrique Letamendi Hinojosa": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Yunliang Cao": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Francisco Horacio Baza": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}

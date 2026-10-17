@@ -424,6 +424,7 @@
   "Eligio De Leon Reyna": [
     {"e":"2023-north-america-wcq"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "The HNG Boyz": [
@@ -577,6 +578,9 @@
   ],
   "CUMGRI 2 LA VENGANZA": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Blaize Anthony Cormier": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kevin Melendez Bermudez": [
     {"e":"uds-2016-elsalvador"}

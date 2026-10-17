@@ -396,7 +396,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Peter Orlando Guerrero Ramirez": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}
@@ -427,10 +428,12 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Oscar Rivera": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Devion Donte Barlow": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Filip Kaminski": [
     {"e":"2025-05-ycs-providence"}
@@ -438,6 +441,7 @@
   "Kyle Harrison Tucker": [
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "David Earl Keener": [

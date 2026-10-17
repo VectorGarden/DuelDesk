@@ -344,6 +344,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joan Andres Bailon Gonzalez": [
@@ -545,6 +546,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-12-rdycs-na"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Carlos Juaquin Gonzalez": [
@@ -592,7 +594,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Lino Sandoval Perez": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Paolo Javier Viteri": [
     {"e":"2025-05-ycs-providence"},
@@ -643,11 +646,11 @@
   "Thomas Scott Rehse": [
     {"e":"na-ygoc-2022"}
   ],
-  "Darelle L.": {
-    "as": "Darelle Julius Lewis"
-  },
   "Andrew D.": {
     "as": "Andrew Dung Van Do"
+  },
+  "Darelle L.": {
+    "as": "Darelle Julius Lewis"
   },
   "Matthieu B.": {
     "as": "Matthieu Nicolas Bricard"

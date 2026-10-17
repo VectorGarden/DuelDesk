@@ -38,7 +38,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston","cut":"Top 16","deck":"Bystial Maliss"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Horacio Galeana Sanchez": [
     {"e":"2014-ycs-mexico-d-f"},
@@ -455,7 +456,8 @@
     {"e":"2025-ycs-vancouver","cut":"Top 16","deck":"K9 Vanquish Soul"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"K9 Vanquish Soul"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Vincent Dinh Lan Ho": [
     {"e":"2023-ycs-vancouver"}
@@ -489,6 +491,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Super Meta Bros": [
@@ -565,13 +568,13 @@
   "Renato S.": {
     "as": "Renato de Almeida Souza"
   },
+  "Alan N.": {
+    "as": "Alan Duc Ngo"
+  },
   "Ashia K.": {
     "as": "Ashia Lynn Kennedy"
   },
   "Zachary I.": {
     "as": "Zachary Andrew Ireland"
-  },
-  "Alan N.": {
-    "as": "Alan Duc Ngo"
   }
 }

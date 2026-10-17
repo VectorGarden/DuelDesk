@@ -218,6 +218,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Laura Vanessa Paez Otarola": [
@@ -379,7 +380,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Michael J. Francis": [
     {"e":"2022-ycs-niagara-falls"},

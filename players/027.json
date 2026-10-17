@@ -415,6 +415,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Kevin Goncalves Rodrigues": [
@@ -578,6 +579,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cyrus Dagon Sky Lyday": [
@@ -697,6 +699,15 @@
   ],
   "David Jeremias Pineda Mota": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Anthony Edward Johnson": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Matthew Joseph Sanchez": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Miguel Angel Carrera": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Francisco Rangel Molina": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

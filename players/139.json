@@ -224,7 +224,8 @@
   "Matthew Steven Rodriguez": [
     {"e":"2017-ycs-dallas"},
     {"e":"2018-north-america-wcq"},
-    {"e":"2019-ycs-ft-worth"}
+    {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Holden Fox Herzog": [
     {"e":"201703-uds-winter-invitational-las-vegas"},
@@ -400,6 +401,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Lucigod Louie Fiumara": [
@@ -457,7 +459,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-08-ycs-sacramento"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Rick William Winspear": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -491,7 +494,8 @@
   ],
   "Carlos Hideki Motta": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Sebastian Martinez Jaida": [
     {"e":"2024-team-ycs-santiago-chile"}
@@ -577,6 +581,9 @@
   ],
   "Herbert Mauricio Chavarria Sandoval": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Emanuel Eduardo Salazar": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jordan Gutierrez": {
     "as": "Jordan J. Gutierrez"

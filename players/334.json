@@ -108,7 +108,8 @@
   "Ramiro Guerrero III": [
     {"e":"2016-ycs-houston-texas"},
     {"e":"2019-north-america-wcq"},
-    {"e":"2019-ycs-ft-worth"}
+    {"e":"2019-ycs-ft-worth"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Alec Ryan Parsons": [
     {"e":"2016-ycs-minneapolis"}
@@ -534,16 +535,19 @@
   "Franklin Jonathan Cedeno Farfan": [
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
+  "Alberto Barajas": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Bryant Brizuela": [
     {"e":"wcq-2016-mexico"}
   ],
   "Jean Paul Ocampo Ortega": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Vittorio G.": {
-    "as": "Vittorio Enrique Genovese"
-  },
   "Oscar O.": {
     "as": "Oscar David Ortiz"
+  },
+  "Vittorio G.": {
+    "as": "Vittorio Enrique Genovese"
   }
 }

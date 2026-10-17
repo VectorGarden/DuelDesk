@@ -461,7 +461,8 @@
   ],
   "Cesar Antonio Ardon": [
     {"e":"2023-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "James Richard Ortiz": [
     {"e":"2023-north-america-wcq"},
@@ -511,7 +512,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Samuel Lamont Hunter": [
     {"e":"2024-08-ycs-sacramento"}
@@ -534,7 +536,8 @@
   "Landon Seth Neal": [
     {"e":"2024-north-america-wcq"},
     {"e":"2025-03-team-ycs-las-vegas"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Romeo Steven DaParma": [
     {"e":"2024-north-america-wcq"}

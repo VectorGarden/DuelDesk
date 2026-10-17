@@ -221,7 +221,8 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-guatemala-city-guatemala"}
+    {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Logen Lee Williams": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
@@ -464,6 +465,7 @@
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 16"}
   ],

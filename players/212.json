@@ -248,6 +248,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Justin Joseph Ramsammy": [
@@ -439,7 +440,8 @@
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-03-team-ycs-las-vegas"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Got Dizzy": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -587,8 +589,18 @@
   "Josh Dylan Muy Sanchez": [
     {"e":"2026-north-america-wcq"}
   ],
+  "David Wanye Rigstad": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Robert Jonathan Silva Cantu": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Nathan Harris Cohen Allen": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Eric Nathan Roth": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Lorenzo Salvatore Roma": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Italy"}

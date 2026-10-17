@@ -221,6 +221,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Azamina Mitsurugi Orcust"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -591,7 +592,8 @@
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
   "Kunlong Lin": [
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Malcolm Thomas La Prairie Mcswiggan": [
     {"e":"2026-08-quebec","f":"Advanced"},

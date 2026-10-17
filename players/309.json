@@ -153,6 +153,7 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joshua William Claus": [
@@ -470,6 +471,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Shawn Joseph Prusak": [
@@ -578,6 +580,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys","won":true,"cut":"Final","deck":"Blitzclique"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Justo Jose Montiel": [
@@ -598,6 +601,9 @@
   ],
   "Cerberus Duel": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Michael Min Chang": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Owen Forest Wilson": [
     {"e":"na-ygoc-2022"}

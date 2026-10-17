@@ -64,6 +64,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Mark T. Denucci Jr.": [
@@ -152,6 +153,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Zachary Thomas Pudlo": [
@@ -761,6 +763,15 @@
   "Cesar Miguel Santos Arruda": [
     {"e":"2026-south-america-wcq"},
     {"e":"remote-duel-ycs-january-2024","cut":"Top 16"}
+  ],
+  "Khang Vinh Nguyen": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Connor Wilson Bish": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Michael Dayne Huff": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jose Miguel Lara Galdos": [
     {"e":"ycs-lima-peru-2023"}

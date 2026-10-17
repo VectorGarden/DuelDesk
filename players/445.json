@@ -201,6 +201,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"R.B. Cyber Dragon K9"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Cody A. Goodman": [
@@ -550,7 +551,8 @@
     {"e":"2025-05-ycs-providence"}
   ],
   "Jamahl Rakeem Robinson": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Joshua Dylan Pickett": [
     {"e":"2025-04-ycs-houston"}

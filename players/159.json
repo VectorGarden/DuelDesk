@@ -602,7 +602,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"}
   ],
   "Eric Meltz": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jefferson Lourenco dos santos silva": [
     {"e":"2026-south-america-wcq"}
@@ -610,11 +611,11 @@
   "Eduardo B.": {
     "as": "Eduardo Baumgratz"
   },
-  "Dillon C.": {
-    "as": "Dillon David Cohen"
-  },
   "Payton P.": {
     "as": "Payton Bishop Paris"
+  },
+  "Dillon C.": {
+    "as": "Dillon David Cohen"
   },
   "Jackie S.": {
     "as": "Jackie Michael Swartz"

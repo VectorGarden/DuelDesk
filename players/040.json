@@ -354,6 +354,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"na-ygoc-2022","cut":"Top 64","deck":"Tenyi Swordsoul"}
   ],
   "Nick Coty Zaker": [
@@ -573,7 +574,11 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Juan Diego Nino": [
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Emiliano Ramos Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Angelica Jaralillo Hernandez": [
     {"e":"ycs-lima-peru-2023"}
@@ -584,17 +589,17 @@
   "Josue Guillen": {
     "as": "Josue A Guillen"
   },
-  "Qamar S.": {
-    "as": "Qamar Abbas Stationwala"
+  "Kody M.": {
+    "as": "Kody Masataka Manabe"
   },
   "Javier R.": {
     "as": "Javier Ruiz"
   },
-  "Kody M.": {
-    "as": "Kody Masataka Manabe"
-  },
   "Kamran A.": {
     "as": "Kamran Aghaseyedali"
+  },
+  "Qamar S.": {
+    "as": "Qamar Abbas Stationwala"
   },
   "Emmanuel H.": {
     "as": "Emmanuel Eugene Hayes"

@@ -465,6 +465,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christler Ryan Taguibao Cruz": [
@@ -474,7 +475,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Andrew Garner Morris": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Alejandro Jose Martinez Romero": [
     {"e":"2025-central-america-wcq"},

@@ -445,7 +445,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Paulo Garcia Jr.": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -625,20 +626,20 @@
   "Giuliano U.": {
     "as": "Giuliano Massuhiro Uehara"
   },
-  "Tamir B.": {
-    "as": "Tamir Lawrence Brown"
-  },
-  "Trung L.": {
-    "as": "Trung Minh Le"
-  },
-  "Gavin J.": {
-    "as": "Gavin Yiting Jiang"
-  },
   "Yi Z.": {
     "as": "Yi Hui Zheng"
   },
   "Vivek V.": {
     "as": "Vivek Mohan Vattyam"
+  },
+  "Gavin J.": {
+    "as": "Gavin Yiting Jiang"
+  },
+  "Tamir B.": {
+    "as": "Tamir Lawrence Brown"
+  },
+  "Trung L.": {
+    "as": "Trung Minh Le"
   },
   "Tino A.": {
     "as": "Tino London Aguinaldo"

@@ -386,7 +386,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-vancouver"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Daniel Scott Becker": [
     {"e":"2022-ycs-minneapolis"}
@@ -466,7 +467,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jorge Carlos Preciat Cabrera": [
     {"e":"2024-10-cancun-mexico"},
@@ -502,7 +504,8 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Andrew David Tufto": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "2 Byes": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"}
@@ -535,6 +538,9 @@
   ],
   "Arodi Vera": [
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
+  "Rudra Vinayak Vidyasagar": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Onil Fernandez": {
     "as": "Onil F. Fernandez"

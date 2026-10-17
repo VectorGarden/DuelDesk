@@ -538,7 +538,8 @@
   ],
   "Jeremy Dakota Burke": [
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Elias Cesar Gomez": [
     {"e":"2022-11-ycs-pasadena"},
@@ -683,7 +684,8 @@
     {"e":"2024-ycs-guayaquil-ecuador"}
   ],
   "Joshua John Boczar": [
-    {"e":"2024-ycs-indianapolis"}
+    {"e":"2024-ycs-indianapolis"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Lora Daniel Mills": [
     {"e":"2024-ycs-indianapolis"}
@@ -765,19 +767,22 @@
   "Lucas Reynaldo Bautista Escalera": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Paul Ruben Rittmann": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Jesus Angel Barreda Mayhua": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Gustavo L.": {
     "as": "Gustavo Marques Lattari"
   },
-  "Skyeler P.": {
-    "as": "Skyeler John Pitcher"
-  },
   "Abelardo R.": {
     "as": "Abelardo Reyes Ramirez"
   },
   "Noe L.": {
     "as": "Noe Enrique Luna"
+  },
+  "Skyeler P.": {
+    "as": "Skyeler John Pitcher"
   }
 }

@@ -482,7 +482,8 @@
   ],
   "Edward Calderwood": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ravi David Kohlmeyer": [
     {"e":"2025-north-america-wcq"}
@@ -509,6 +510,9 @@
   ],
   "Kaua Santos Ferreira": [
     {"e":"2026-south-america-dragon-duel-championship","f":"Dragon Duel"}
+  ],
+  "John Vincent Roca Jr.": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Finn Rory Bakewell": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"United Kingdom"}

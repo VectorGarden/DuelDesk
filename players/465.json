@@ -188,7 +188,8 @@
   ],
   "Adrian Saenz": [
     {"e":"2017-ycs-denver"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Hector Issac Hernandez": [
     {"e":"2017-ycs-denver"}
@@ -347,7 +348,8 @@
   "Brandon Matthew Harris": [
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Max O. Elie Harouche": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -457,7 +459,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "RPA NLA": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -539,7 +542,8 @@
   ],
   "Muase Thao": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Tiberius Leo Molyneaux": [
     {"e":"2024-north-america-wcq"},
@@ -582,6 +586,7 @@
   ],
   "Thomas Connor Thompson": [
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Juan Gabriel Perales": [
@@ -656,21 +661,15 @@
   "Zeno Augusto Neto": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Larry Paul Michael": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "wins Galileo De Obaldia": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Brandon F.": {
-    "as": "Brandon Bryan Ferrell"
-  },
-  "Kyle N.": {
-    "as": "Kyle Aidan Nance"
-  },
-  "Max C.": {
-    "as": "Max Cardenas"
-  },
   "Wyatt B.": {
     "as": "Wyatt Leland Brannock"
   },
@@ -679,5 +678,14 @@
   },
   "Vivek S.": {
     "as": "Vivek Naresh Sreenivasan"
+  },
+  "Kyle N.": {
+    "as": "Kyle Aidan Nance"
+  },
+  "Max C.": {
+    "as": "Max Cardenas"
+  },
+  "Brandon F.": {
+    "as": "Brandon Bryan Ferrell"
   }
 }

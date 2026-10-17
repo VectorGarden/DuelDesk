@@ -6,9 +6,50 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2026 02:00:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 15:20:38 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Houston: Round 1 Pairings (Advanced Format)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-1-pairings-advanced-format/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-1-pairings-advanced-format/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 15:20:38 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: New Items at the Prize Wall!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-new-items-at-the-prize-wall/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-new-items-at-the-prize-wall/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 15:16:09 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: First-Timers!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-first-timers-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-first-timers-3/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 14:59:37 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Round 8 Feature Match: Mason Broussard vs. David Tamirat</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/round-8-feature-match-mason-broussard-vs-david-tamirat/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/round-8-feature-match-mason-broussard-vs-david-tamirat/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 17 Oct 2026 13:55:40 +0000</pubDate>
+      <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Houston: Final Standings After Day 1 (Genesys Format)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-final-standings-after-day-1-genesys-format/</link>
@@ -3200,48 +3241,6 @@
       <category domain="event">2026-north-america-wcq</category>
       <pubDate>Sun, 12 Jul 2026 22:40:48 +0000</pubDate>
       <description>Pairings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: North America WCQ Standings After Round 14</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-standings-after-round-14/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/north-america-wcq-standings-after-round-14/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 22:37:57 +0000</pubDate>
-      <description>Standings from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship: Top 4 Pairings (with Deck Types!)</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-top-4-pairings-with-deck-types/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-top-4-pairings-with-deck-types/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 22:13:27 +0000</pubDate>
-      <description>Pairings from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America WCQ 2026: NAWCQ Round 14 Feature Match: Casey Tyler Hutchinson vs. Ramon Luis Rivera</title>
-      <link>https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-round-14-feature-match-casey-tyler-hutchinson-vs-ramon-luis-rivera/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/2026-north-america-wcq/nawcq-round-14-feature-match-casey-tyler-hutchinson-vs-ramon-luis-rivera/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="event">2026-north-america-wcq</category>
-      <pubDate>Sun, 12 Jul 2026 22:08:53 +0000</pubDate>
-      <description>Feature match from North America WCQ 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>North America Genesys Championship: Genesys Championship Top 8 Feature Match: Anthony Ruperto vs. Hanko Chow</title>
-      <link>https://yugiohblog.konami.com/2026/championships/genesys-championship-top-8-feature-match-anthony-ruperto-vs-hanko-chow/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/genesys-championship-top-8-feature-match-anthony-ruperto-vs-hanko-chow/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-north-america-genesys-championship</category>
-      <pubDate>Sun, 12 Jul 2026 22:08:08 +0000</pubDate>
-      <description>Feature match from North America Genesys Championship, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

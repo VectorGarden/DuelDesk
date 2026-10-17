@@ -576,6 +576,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Taylor Miu Vo": [
@@ -637,10 +638,10 @@
   "Hayden Scott Griffis": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Jeremy G.": {
-    "as": "Jeremy Ryan Glassman"
-  },
   "Bill T.": {
     "as": "Bill Andrew Catacutan Teves"
+  },
+  "Jeremy G.": {
+    "as": "Jeremy Ryan Glassman"
   }
 }

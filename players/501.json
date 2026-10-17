@@ -106,7 +106,8 @@
   "Jarret Zackery Chavez": [
     {"e":"2016-ycs-houston-texas"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Daniel Dean Bryant": [
     {"e":"2016-ycs-minneapolis"}
@@ -576,22 +577,25 @@
   "Braulio Costa Medina": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Alex Wong": [
+    {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
   "Christian Villaneda": [
     {"e":"na-ygoc-2022"}
   ],
-  "Jesus F.": {
-    "as": "Jesus Reyes July Flores"
-  },
   "Aleksander R.": {
     "as": "Aleksander Roytburd"
   },
-  "Alberto A.": {
-    "as": "Alberto Juaquin Almanza"
+  "Jesus F.": {
+    "as": "Jesus Reyes July Flores"
   },
   "Aiden S.": {
     "as": "Aiden Christopher Springer"
   },
   "Cameron T.": {
     "as": "Cameron DeWayne Trice"
+  },
+  "Alberto A.": {
+    "as": "Alberto Juaquin Almanza"
   }
 }

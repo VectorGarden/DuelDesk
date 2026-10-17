@@ -502,6 +502,7 @@
   "Nathan Andrew Garcia": [
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Luis Fernando Soto Chinchilla": [
@@ -622,10 +623,10 @@
   "Cristian U.": {
     "as": "Cristian Rafael Urena"
   },
-  "Dalvin U.": {
-    "as": "Dalvin Singh Uppal"
-  },
   "Bestoor S.": {
     "as": "Bestoor Soroosh Sedghi"
+  },
+  "Dalvin U.": {
+    "as": "Dalvin Singh Uppal"
   }
 }
