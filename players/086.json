@@ -450,7 +450,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 8"},
     {"e":"2026-ycs-cartagena-colombia","won":true,"cut":"Final"},
     {"e":"2026-ycs-guatemala-city-guatemala","won":true,"cut":"Final"},
-    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Advanced","cut":"Top 8","deck":"Elfnote"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
   "Jair Alejandro Manzanilla": [

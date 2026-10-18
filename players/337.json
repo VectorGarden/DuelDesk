@@ -483,7 +483,7 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Vanquish Soul K9"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced","cut":"Top 8","deck":"Light and Darkness Ritual"}
   ],
   "Winston Martinez": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}

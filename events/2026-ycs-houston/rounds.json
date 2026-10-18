@@ -16755,7 +16755,7 @@
           "id": "14",
           "label": "R14",
           "phase": "Swiss",
-          "state": "live",
+          "state": "done",
           "order": 14,
           "tables": 82,
           "posted": "11:57",
@@ -17966,8 +17966,29 @@
             {"pos":1119,"name":"Nelson Tam","record":{"wins":0,"losses":1,"draws":0,"confidence":"derived"},"points":0},
             {"pos":1119,"name":"Andrew Carson Reynolds","record":{"wins":0,"losses":1,"draws":0,"confidence":"derived"},"points":0}
           ],
-          "features": [],
+          "features": [
+            {"a":{"name":"Creighton Pree","deck":null,"record":null},"b":{"name":"Odnam Gallardo","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2026/ycs/advanced-round-14-feature-match-creighton-pree-vs-odnam-gallardo/"}
+          ],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-round-14-pairings-advanced/"
+        },
+        {
+          "id": "Top8",
+          "label": "Top 8",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 160,
+          "tables": 4,
+          "posted": "14:28",
+          "standingsAfter": 14,
+          "pairings": [
+            {"table":1,"a":"Dylan Ray Dallmeyer","aRec":{"wins":7,"losses":7,"draws":0,"confidence":"derived"},"aDeck":"Angelechy","b":"Jamie Lewis Hunter","bRec":{"wins":8,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Angelechy"},
+            {"table":2,"a":"Blake Antonio Funderburke","aRec":{"wins":9,"losses":5,"draws":0,"confidence":"derived"},"aDeck":"Elfnote","b":"Roberto Carlos Hernandez Bonilla","bRec":{"wins":8,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Angelechy"},
+            {"table":3,"a":"Trevor Lee Parker","aRec":{"wins":8,"losses":6,"draws":0,"confidence":"derived"},"aDeck":"Light and Darkness Ritual","b":"Brian Alejandro Mejia","bRec":{"wins":7,"losses":7,"draws":0,"confidence":"derived"},"bDeck":"Light and Darkness Ritual"},
+            {"table":4,"a":"Julien Leo Kehon","aRec":{"wins":7,"losses":7,"draws":0,"confidence":"derived"},"aDeck":"Elfnote","b":"Steven Trifunoski","bRec":{"wins":8,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Power Patron Elfnote"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-8-pairings-with-deck-types-advanced/"
         }
       ]
     },
@@ -22457,10 +22478,10 @@
           "id": "Top8",
           "label": "Top 8",
           "phase": "Top cut",
-          "state": "live",
+          "state": "done",
           "order": 160,
           "tables": 4,
-          "posted": "13:09",
+          "posted": "14:28",
           "standingsAfter": 12,
           "pairings": [
             {"table":1001,"a":"Enzo Maximiliano Fiallos Velasco","aRec":{"wins":7,"losses":5,"draws":0,"confidence":"derived"},"aDeck":"Blitzclique","b":"Ittipat Arunnaveesiri","bRec":{"wins":8,"losses":4,"draws":0,"confidence":"derived"},"bDeck":"Magistus Fairy Tail"},
@@ -22471,6 +22492,23 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-8-pairings-with-deck-types-genesys/"
+        },
+        {
+          "id": "Top4",
+          "label": "Top 4",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 161,
+          "tables": 2,
+          "posted": "14:28",
+          "standingsAfter": 12,
+          "pairings": [
+            {"table":1001,"a":"Enzo Maximiliano Fiallos Velasco","aRec":{"wins":8,"losses":5,"draws":0,"confidence":"derived"},"aDeck":"Blitzclique","b":"Brian Dong","bRec":{"wins":7,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Angelechy"},
+            {"table":1002,"a":"Matthew Evan Harris Vanden Heuvel","aRec":{"wins":7,"losses":6,"draws":0,"confidence":"derived"},"aDeck":"Angelechy Blitzclique","b":"Juan Sebastian Andrade Castro","bRec":{"wins":8,"losses":5,"draws":0,"confidence":"derived"},"bDeck":"Angelechy"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-4-pairings-with-deck-types-genesys/"
         }
       ]
     }

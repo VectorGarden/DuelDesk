@@ -170,7 +170,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced","cut":"Top 8","deck":"Kewl Tune"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
-    {"e":"2026-ycs-houston","f":"Genesys","cut":"Top 8","deck":"Blitzclique"},
+    {"e":"2026-ycs-houston","f":"Genesys","cut":"Top 4","deck":"Blitzclique"},
     {"e":"na-ygoc-2022"}
   ],
   "Brody Michael Allison": [
@@ -677,10 +677,10 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Valan Z.": {
-    "as": "Valan Joseph Zuccolillo"
-  },
   "Jeremiah S.": {
     "as": "Jeremiah Marcus Springer"
+  },
+  "Valan Z.": {
+    "as": "Valan Joseph Zuccolillo"
   }
 }

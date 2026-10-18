@@ -567,7 +567,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced","cut":"Top 8","deck":"Angelechy"}
   ],
   "David Claire Hamilton": [
     {"e":"2025-05-ycs-providence"}
@@ -616,19 +616,19 @@
   "Gustavo Reyes Rodriguez": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Gerardo G.": {
+    "as": "Gerardo Garza"
+  },
   "Quoc H.": {
     "as": "Quoc Minh Huynh"
   },
   "Rich C.": {
     "as": "Rich Cheng"
   },
-  "Gerardo G.": {
-    "as": "Gerardo Garza"
+  "Jesus L.": {
+    "as": "Jesus Landeros Loera"
   },
   "Marshall M.": {
     "as": "Marshall James Marengo"
-  },
-  "Jesus L.": {
-    "as": "Jesus Landeros Loera"
   }
 }
