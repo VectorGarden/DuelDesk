@@ -4,7 +4,7 @@
   "sample": false,
   "coverageBy": "Konami",
   "drawsPossible": false,
-  "ongoing": true,
+  "ongoing": false,
   "updated": "2026-10-17",
   "formats": [
     {
@@ -11524,7 +11524,7 @@
           "id": "9",
           "label": "R9",
           "phase": "Swiss",
-          "state": "live",
+          "state": "done",
           "order": 9,
           "tables": 231,
           "posted": "18:16",
@@ -15826,7 +15826,7 @@
           "id": "8",
           "label": "R8",
           "phase": "Swiss",
-          "state": "live",
+          "state": "done",
           "order": 8,
           "tables": 83,
           "posted": "11:57",
