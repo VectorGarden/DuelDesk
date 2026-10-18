@@ -595,7 +595,7 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys","cut":"Top 8","deck":"Ancient Fairy Angelechy"}
   ],
   "Franco Mart?n Orsi": [
     {"e":"2024-team-ycs-santiago-chile"}

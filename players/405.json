@@ -195,7 +195,7 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys","cut":"Top 8","deck":"Magistus Fairy Tail"}
   ],
   "Tommy Jeffery Quintero Castro": [
     {"e":"2017-ycs-atlanta"},
@@ -548,11 +548,11 @@
   "Marlon M.": {
     "as": "Marlon Aguiar de Melo"
   },
-  "Camaran S.": {
-    "as": "Camaran Jack Stout"
-  },
   "Josh G.": {
     "as": "Josh Makana Gala"
+  },
+  "Camaran S.": {
+    "as": "Camaran Jack Stout"
   },
   "Andrew E.": {
     "as": "Andrew Michael Edwards"
