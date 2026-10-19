@@ -12,7 +12,7 @@
       "entrant": "Duelist",
       "swissRounds": 14,
       "duelists": 1120,
-      "champion": null,
+      "champion": "Trevor Lee Parker",
       "rounds": [
         {
           "id": "1",
@@ -17996,7 +17996,7 @@
           "id": "Top4",
           "label": "Top 4",
           "phase": "Top cut",
-          "state": "live",
+          "state": "done",
           "order": 161,
           "tables": 2,
           "posted": "16:54",
@@ -18008,6 +18008,22 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-3-pairings-with-deck-types-advanced/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 164,
+          "tables": 1,
+          "posted": "18:10",
+          "standingsAfter": 14,
+          "pairings": [
+            {"table":1,"a":"Blake Antonio Funderburke","aRec":{"wins":11,"losses":5,"draws":0,"confidence":"derived"},"aDeck":"Elfnote","b":"Trevor Lee Parker","bRec":{"wins":10,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Light and Darkness Ritual"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-final-pairing-with-deck-types-advanced/"
         }
       ]
     },
@@ -22509,7 +22525,9 @@
             {"table":1004,"a":"Khalil Mohammad Afaneh II","aRec":{"wins":7,"losses":5,"draws":0,"confidence":"derived"},"aDeck":"Blitzclique","b":"Matthew Evan Harris Vanden Heuvel","bRec":{"wins":6,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Angelechy Blitzclique"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Juan Andrade","deck":null,"record":null},"b":{"name":"Jesse Kotton","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2026/ycs/genesys-top-8-feature-match-juan-andrade-vs-jesse-kotton/"}
+          ],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-8-pairings-with-deck-types-genesys/"
         },
         {
@@ -22548,5 +22566,5 @@
       ]
     }
   ],
-  "_unassigned": 14
+  "_unassigned": 16
 }

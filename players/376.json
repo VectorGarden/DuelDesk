@@ -210,7 +210,7 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Advanced","cut":"Top 4","deck":"Light and Darkness Ritual"},
+    {"e":"2026-ycs-houston","f":"Advanced","won":true,"cut":"Final","deck":"Light and Darkness Ritual"},
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],

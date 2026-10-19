@@ -153,7 +153,7 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced","cut":"Top 4","deck":"Elfnote"},
+    {"e":"2026-ycs-houston","f":"Advanced","cut":"Final","deck":"Elfnote"},
     {"e":"na-ygoc-2022"}
   ],
   "Joshua William Claus": [
@@ -623,14 +623,14 @@
   "Esteban Re": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Elbert W.": {
-    "as": "Elbert L. Wu"
-  },
   "Donovan J.": {
     "as": "Donovan Yoby Juarez"
   },
   "Chase F.": {
     "as": "Chase Victorian Friedland"
+  },
+  "Elbert W.": {
+    "as": "Elbert L. Wu"
   },
   "Jaden P.": {
     "as": "Jaden Travis Parent"
