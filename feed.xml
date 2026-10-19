@@ -6,9 +6,107 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Oct 2026 21:28:44 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 01:05:02 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Houston: And the Genesys Winner is…</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/and-the-genesys-winner-is-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/and-the-genesys-winner-is-2/</guid>
+      <category>Results</category>
+      <category domain="kind">result</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Mon, 19 Oct 2026 01:05:02 +0000</pubDate>
+      <description>Results from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: And the Genesys Winner is…</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/and-the-genesys-winner-is/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/and-the-genesys-winner-is/</guid>
+      <category>Results</category>
+      <category domain="kind">result</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Mon, 19 Oct 2026 00:58:53 +0000</pubDate>
+      <description>Results from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Public Events Points Playoff Winner</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-public-events-points-playoff-winner-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-public-events-points-playoff-winner-2/</guid>
+      <category>Results</category>
+      <category domain="kind">result</category>
+      <category domain="format">Public Events</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Mon, 19 Oct 2026 00:55:05 +0000</pubDate>
+      <description>Results from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: 1st Place After Swiss Duelist (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-1st-place-after-swiss-duelist-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-1st-place-after-swiss-duelist-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Mon, 19 Oct 2026 00:47:01 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Public Events Random Playoff Winner</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-public-events-random-playoff-winner-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-public-events-random-playoff-winner-2/</guid>
+      <category>Results</category>
+      <category domain="kind">result</category>
+      <category domain="format">Public Events</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Mon, 19 Oct 2026 00:31:58 +0000</pubDate>
+      <description>Results from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Top 4 Pairings with Deck Types (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-3-pairings-with-deck-types-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-3-pairings-with-deck-types-advanced/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sun, 18 Oct 2026 23:54:28 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Advanced Top 8 Feature Match: Jamie Hunter vs. Dylan Dallmeyer</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/advanced-top-8-feature-match-jamie-hunter-vs-dylan-dallmeyer/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-top-8-feature-match-jamie-hunter-vs-dylan-dallmeyer/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sun, 18 Oct 2026 23:50:38 +0000</pubDate>
+      <description>Feature match from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Final Pairing with Deck Types (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-final-pairing-with-deck-types-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-final-pairing-with-deck-types-genesys/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sun, 18 Oct 2026 23:25:12 +0000</pubDate>
+      <description>Pairings from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Check Out the Semi-Finals and Finals of YCS Houston on Konami’s Official Stream!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/check-out-the-semi-finals-and-finals-of-ycs-houston-on-konamis-official-stream/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/check-out-the-semi-finals-and-finals-of-ycs-houston-on-konamis-official-stream/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sun, 18 Oct 2026 23:21:14 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Houston: Top 8 Pairings with Deck Types (Genesys)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-8-pairings-with-deck-types-genesys/</link>
@@ -3160,105 +3258,6 @@
       <category domain="event">2026-08-quebec</category>
       <pubDate>Sat, 15 Aug 2026 22:57:16 +0000</pubDate>
       <description>News from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Advanced Format Round 7 Feature Match: Marko Milovic vs. Yacine Sahli</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-7-feature-match-marko-milovic-vs-yacine-sahli/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-7-feature-match-marko-milovic-vs-yacine-sahli/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 22:50:14 +0000</pubDate>
-      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Round 8 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-8-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-8-pairings-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 22:45:52 +0000</pubDate>
-      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Standings After Round 7 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-7-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-7-advanced-format/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 22:43:51 +0000</pubDate>
-      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Saturday Genesys ATTACK OF THE GIANT CARD!! Winners</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-genesys-attack-of-the-giant-card-winners-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-genesys-attack-of-the-giant-card-winners-2/</guid>
-      <category>Results</category>
-      <category domain="kind">result</category>
-      <category domain="format">Attack of the Giant Card</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 22:28:11 +0000</pubDate>
-      <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Saturday Advanced ATTACK OF THE GIANT CARD!! Winners</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-advanced-attack-of-the-giant-card-winners/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-advanced-attack-of-the-giant-card-winners/</guid>
-      <category>Results</category>
-      <category domain="kind">result</category>
-      <category domain="format">Attack of the Giant Card</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 22:27:57 +0000</pubDate>
-      <description>Results from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Advanced Format Round 5 Feature Match: Jack Darling vs. Pradeep Charath</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-5-feature-match-jack-darling-vs-pradeep-charath/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-5-feature-match-jack-darling-vs-pradeep-charath/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 22:26:52 +0000</pubDate>
-      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Top Tables Update: Round 7 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-top-tables-update-round-7-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-top-tables-update-round-7-advanced-format/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 21:53:54 +0000</pubDate>
-      <description>News from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Round 7 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-7-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-round-7-pairings-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 21:45:14 +0000</pubDate>
-      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Standings After Round 6 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-6-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-6-advanced-format/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sat, 15 Aug 2026 21:43:42 +0000</pubDate>
-      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

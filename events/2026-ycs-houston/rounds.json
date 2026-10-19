@@ -17975,7 +17975,7 @@
           "id": "Top8",
           "label": "Top 8",
           "phase": "Top cut",
-          "state": "live",
+          "state": "done",
           "order": 160,
           "tables": 4,
           "posted": "14:28",
@@ -17987,8 +17987,27 @@
             {"table":4,"a":"Julien Leo Kehon","aRec":{"wins":7,"losses":7,"draws":0,"confidence":"derived"},"aDeck":"Elfnote","b":"Steven Trifunoski","bRec":{"wins":8,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Power Patron Elfnote"}
           ],
           "standings": [],
-          "features": [],
+          "features": [
+            {"a":{"name":"Jamie Hunter","deck":null,"record":null},"b":{"name":"Dylan Dallmeyer","deck":null,"record":null},"note":"Feature match coverage published by Konami.","source":"https://yugiohblog.konami.com/2026/ycs/advanced-top-8-feature-match-jamie-hunter-vs-dylan-dallmeyer/"}
+          ],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-8-pairings-with-deck-types-advanced/"
+        },
+        {
+          "id": "Top4",
+          "label": "Top 4",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 161,
+          "tables": 2,
+          "posted": "16:54",
+          "standingsAfter": 14,
+          "pairings": [
+            {"table":1,"a":"Trevor Lee Parker","aRec":{"wins":9,"losses":6,"draws":0,"confidence":"derived"},"aDeck":"Light and Darkness Ritual","b":"Jamie Lewis Hunter","bRec":{"wins":9,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Angelechy"},
+            {"table":2,"a":"Blake Antonio Funderburke","aRec":{"wins":10,"losses":5,"draws":0,"confidence":"derived"},"aDeck":"Elfnote","b":"Steven Trifunoski","bRec":{"wins":9,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Power Patron Elfnote"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-3-pairings-with-deck-types-advanced/"
         }
       ]
     },
@@ -17997,7 +18016,7 @@
       "entrant": "Duelist",
       "swissRounds": 12,
       "duelists": 316,
-      "champion": null,
+      "champion": "Enzo Maximiliano Fiallos Velasco",
       "rounds": [
         {
           "id": "1",
@@ -22497,7 +22516,7 @@
           "id": "Top4",
           "label": "Top 4",
           "phase": "Top cut",
-          "state": "live",
+          "state": "done",
           "order": 161,
           "tables": 2,
           "posted": "14:28",
@@ -22509,9 +22528,25 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-4-pairings-with-deck-types-genesys/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 164,
+          "tables": 1,
+          "posted": "16:25",
+          "standingsAfter": 12,
+          "pairings": [
+            {"table":1001,"a":"Enzo Maximiliano Fiallos Velasco","aRec":{"wins":9,"losses":5,"draws":0,"confidence":"derived"},"aDeck":"Blitzclique","b":"Juan Sebastian Andrade Castro","bRec":{"wins":9,"losses":5,"draws":0,"confidence":"derived"},"bDeck":"Angelechy"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-houston-final-pairing-with-deck-types-genesys/"
         }
       ]
     }
   ],
-  "_unassigned": 13
+  "_unassigned": 14
 }

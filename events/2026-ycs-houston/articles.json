@@ -89,6 +89,16 @@
       "r": ["Jeff Jones advances with a 1-0 record in the Genesys Main Event at YCS Houston with his Ashtra Labrynth Deck using ",{"b":"Dark Time Wizard"}," and ",{"b":"Foolish Graverobber"},"!"]
     }
   ],
+  "https://yugiohblog.konami.com/2026/ycs/and-the-genesys-winner-is/": [
+    {
+      "t": "p",
+      "r": ["We have our YCS Montréal Genesis Champion!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Anil Gangapersaud","t":"Anil Gangapersaud"}," is your Genesys Champion! He took his Blitzclique Deck all the way to the top, winning a tense final battle against Khari Goosby’s Toy White Forest Deck!"]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-tech-update-beyond-the-brave/": [
     {
       "t": "p",
@@ -241,6 +251,16 @@
       "r": [{"who":"Patrick Riley Huffman","t":"Patrick Huffman"}," wins this knightly Match, with Phantom Knights!"]
     }
   ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-public-events-random-playoff-winner-2/": [
+    {
+      "t": "p",
+      "r": ["Any Duelists who play in Public Events have a chance to be selected for the Random Playoffs! The winner of this mini event will claim a Super Rare copy of the YCS Prize Card ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," with its beautiful alternate artwork!"]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations to Kevin G., who won the YCS Prize Card with his Ars Magna Elfnote Deck! He said he’s been a believer since day one, and it’s proven to pay off!"]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-5-genesys-format/": [
     {
       "t": "p",
@@ -307,6 +327,16 @@
     {
       "t": "p",
       "r": [{"who":"Joaquin Flores Jr.","t":"Joaquin Flores"}," takes the 2-0 victory with his Blitzclique Deck to advance with a 3-0 record in the Genesys Main Event at YCS Houston!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-public-events-points-playoff-winner-2/": [
+    {
+      "t": "p",
+      "r": ["Duelists can get points throughout the weekend by competing in Public Events. The four Duelists with the most points at the end of the weekend get to compete in the Public Events Points Playoff. The winner of this mini event gets to take home a Super Rare copy of ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," with its beautiful alternate artwork."]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations to local Duelist ",{"who":"Matthew Richard Counts","t":"Matthew Counts"}," from Houston, Texas, who won the Public Events Points Playoff with his Deck built around ",{"b":"Light and Darkness Ritual"},". He’s taking home a Super Rare YCS Prize Card!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-genesys-format/": [
@@ -379,6 +409,16 @@
     {
       "t": "p",
       "r": [{"who":"Dawson James Schawang","t":"Dawson Schawang"}," takes the Match with Trains!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/and-the-genesys-winner-is-2/": [
+    {
+      "t": "p",
+      "r": ["We have our YCS Houston Genesys Champion!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Enzo Maximiliano Fiallos Velasco","t":"Enzo Fiallos"}," from Elizabeth, New Jersey is your YCS Houston Genesys Champion! He used his Blitzclique Deck to triumph over all other competitors in the Genesys Main Event and take home the trophy! Congratulations!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-7-genesys-format/": [
@@ -2265,6 +2305,234 @@
       "r": [{"who":"Steven Trifunoski","t":"Steven Trifunoski"}," amasses an impressive field before his first turn even begins, prompting ",{"who":"James Miles Valentino","t":"Valentino"}," to concede! ",{"who":"Steven Trifunoski","t":"Steven Trifunoski"}," wins 2-0 in Round 9 to finish the Swiss Rounds with an 8-1 record!"]
     }
   ],
+  "https://yugiohblog.konami.com/2026/ycs/check-out-the-semi-finals-and-finals-of-ycs-houston-on-konamis-official-stream/": [
+    {
+      "t": "p",
+      "r": ["The Semi-Finals and Finals of the Advanced Main Event and Genesys Main Event at YCS Houston will be available to watch on Konami’s official live stream! You can find it on YouTube and Twitch. Tune in and be the first to find out which Duelists will become champions this weekend!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-9-feature-match-mario-de-micco-vs-kobe-short/": [
+    {
+      "t": "p",
+      "r": ["We are in the final round of the Advanced Format, and Duelists are duking it out to see who will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Mario Angelo De Micco","t":"Mario De"}," ",{"who":"Mario Angelo De Micco","t":"Micco"},", from Montreal, Quebec, is our current TCG World Champion and is using the new Angelechy cards this weekend. These cards have been the talk of the tournament with the new support from ",{"i":"Beyond the Brave"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Kobe Short"},", from Carencro, Louisiana, is the YCS Pasadena 2019 Champion and is using a Branded Light and Darkness Ritual Deck this weekend."]
+    },
+    {
+      "t": "p",
+      "r": ["Both Duelists are sitting at 18 points, which means that only one of them can advance to Day 2. It’s Time to Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Duel One"}]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," won the dice roll and chose to go first. He started with ",{"b":"Effect Veiler"},", ",{"b":"Foolish Burial Goods"},", ",{"b":"Angelechy Verdict"},", ",{"b":"Angelechy Opposition,"}," and ",{"b":"Angelechy Strategy Score"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," started the match by activating ",{"b":"Angelechy Opposition"},", ",{"who":"Kobe Louis Short","t":"Short"}," Chained ",{"b":"Mulcharmy Fuwalos"},"! De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Special Summoned ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and placed ",{"b":"Angelechy Castellan"}," into his back row. In a new Chain, ",{"who":"Kobe Louis Short","t":"Short"}," activated Seneschal and De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained Castellan’s effect. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," sent ",{"b":"Angelechy Disturbance"}," from his Deck to the Graveyard with Castellan’s effect and chose not to Special Summon with Seneschal. He then activated the effect of Disturbance in his Graveyard, but ",{"who":"Kobe Louis Short","t":"Short"}," negated it with ",{"b":"Ash Blossom & Joyous Spring"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Foolish Burial Goods"}," and sent ",{"b":"Angelechy Verdict"}," from his Deck to the Graveyard. He then activated ",{"b":"Angelechy Strategy Score"}," and added ",{"b":"Angelechy Opening to e4"}," from his Deck to his hand. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated the effect of ",{"b":"Angelechy Verdict"}," from his Graveyard and discarded Opening to e4 to place ",{"b":"Angelechy Shatranga"}," onto the field. He then activated Shatranga’s effect to add another copy of ",{"b":"Angelechy Opening to e4"}," from his Deck to his hand. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Set two cards and ended his turn."]
+    },
+    {
+      "t": "p",
+      "r": ["In ",{"who":"Kobe Louis Short","t":"Short"},"’s Standby Phase, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Opening to e4"},"! He placed ",{"b":"Angelechy Endgame Problem"}," onto the field, Special Summoned ",{"b":"Angelechy Enlisted"},", and then placed ",{"b":"Angelechy Bastion"}," into his back row. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," then activated Bastion’s effect and placed ",{"b":"Angelechy Shatranga"}," onto the field and used its effect to add ",{"b":"Angelechy Disturbance"}," from his Deck to his hand. Then, still in the Standby Phase, he activated Endgame Problem’s effect and drew ",{"b":"Ash Blossom & Joyous Spring"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Mario Angelo De Micco","t":"Mario De"}," ",{"who":"Mario Angelo De Micco","t":"Micco"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," continued into his Main Phase and activated ",{"b":"Gold Sarcophagus"}," and banished ",{"b":"Tri-Brigade Mercourier"},". He activated Mercourier’s effect and added ",{"b":"Blazing Cartesia, the Virtuous"},", from his Deck to his hand. ",{"who":"Kobe Louis Short","t":"Short"}," then Normal Summoned Cartesia and activated its effect to Fusion Summon ",{"b":"Mixousia the Confounder"}," using Cartesia and ",{"b":"Skull Archfiend of Chaos"}," from his hand. He activated Skull Archfiend’s effect and sent ",{"b":"Light and Darkness Ritual"}," from his hand to the Graveyard to add ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand. ",{"who":"Kobe Louis Short","t":"Short"}," then shuffled it back into his Deck to Special Summon ",{"b":"Black Chaos"}," from his hand! On the Summon, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Verdict"},". With 5 Angelechy Monster Cards on the field, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," banished ",{"who":"Kobe Louis Short","t":"Short"},"’s whole field (except for ",{"b":"Black Chaos)"},"!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Black Chaos’"}," effect and banished both of De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s Shatrangas. Then, he banished ",{"b":"Black Chaos"}," to Special Summon ",{"b":"Dark Magician of Destruction"},"; he activated its effect but was stopped by De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s ",{"b":"Effect Veiler"},"! ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Skull Archfiend of Chaos"}," by targeting his banished ",{"b":"Black Chaos"},", along with De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s Strategy Score and Verdict. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained the effect of his Verdict in the Graveyard and sent Disturbance to place ",{"b":"Angelechy Destrier"}," onto the field. Skull Archfiend was Special Summoned. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," then activated Destrier’s effect and added ",{"b":"Angelechy Strategy Score"}," from his Deck to his hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," moved into the Battle Phase and attacked Enlisted with Skull Archfiend, then directly with ",{"b":"Dark Magician of Destruction"},". In his Main Phase 2, ",{"who":"Kobe Louis Short","t":"Short"}," Link Summoned ",{"b":"S:P Little Knight"}," and used its effect to banish Destrier. He then used the ",{"b":"Light and Darkness Ritual"}," in his Graveyard and added itself and Skull Archfiend back to his hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," Set 1 card and went to his End Phase. He activated and added back Blazing Cartesia before passing play. In the End Phase, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated the Disturbance in his Graveyard and added ",{"b":"Angelechy Brilliant Move"}," from his Deck to his hand."]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," drew ",{"b":"Dominus Impulse"}," at the start of his turn. He went to his Main Phase and activated Brilliant Move to Special Summon his ",{"b":"Angelechy Castellan"},". De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated Castellan and targeted ",{"who":"Kobe Louis Short","t":"Short"},"’s face-down ",{"b":"Mind Shuffle"},". ",{"who":"Kobe Louis Short","t":"Short"}," flipped the Mind Shuffle and activated it, but De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Ash Blossom & Joyous Spring"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["In a new Chain, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," banished his Brilliant Move from the Graveyard and sent Endgame Problem from the field to the Graveyard to Special Summon ",{"b":"Angelechy Destrier"},". He then activated ",{"b":"Angelechy Strategy Score"}," and added ",{"b":"Angelechy Opposition"}," from his Deck to his hand. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," then used the Opposition in his Graveyard and put five Angelechy cards back into his Deck. He then used the Opposition that he previously added to Special Summon ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and Destrier to his back row. ",{"who":"Kobe Louis Short","t":"Short"},"’s Seneschal activated, and De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s Destrier Chained to it. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," added ",{"b":"Angelechy Problem"}," with Destrier’s effect and then Special Summoned ",{"b":"Angelechy Bastion"},". He placed ",{"b":"Angelechy Problem"}," onto the field, and ",{"who":"Kobe Louis Short","t":"Short"}," conceded!"]
+    },
+    {
+      "t": "p",
+      "r": ["With a strategic string of plays, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," takes the first Duel! Both Duelists exchanged pleasantries about the first Duel while shuffling up."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Duel Two"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," chose to start the second Duel. In his Standby Phase, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Opening to e4"},", and ",{"who":"Kobe Louis Short","t":"Short"}," Chained Fuwalos! De ",{"who":"Mario Angelo De Micco","t":"Micco"}," placed ",{"b":"Angelechy Problem"}," and ",{"b":"Angelechy Castellan"}," and Special Summoned ",{"b":"Angelechy Enlisted"}," to the field. He activated Castellan’s effect but ",{"who":"Kobe Louis Short","t":"Short"}," Chained ",{"b":"The Fallen & The Virtuous"}," and destroyed Castellan by sending ",{"b":"Albion the Branded Dragon"}," to the Graveyard."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," Set two cards to his back row, then went into his End Phase and used Albion’s effect to Set another copy of ",{"b":"The Fallen & The Virtuous"}," onto the field."]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," had two copies of ",{"b":"Ghost Ogre & Snow Rabbit"},", ",{"b":"Foolish Burial Goods"},", and ",{"b":"Dominus Spark"},". He drew ",{"b":"Dominus Impulse"}," at the start of his turn."]
+    },
+    {
+      "t": "p",
+      "r": ["In the Draw Phase, ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Mind Shuffle"}," and used its effect to add and discard ",{"b":"Skull Archfiend of Chaos"},", which he activated to add ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand."]
+    },
+    {
+      "t": "p",
+      "r": ["In his Main Phase, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Foolish Burial Goods"}," and sent ",{"b":"Angelechy Disturbance"}," from his Deck to the Graveyard. He then activated Disturbance from the Graveyard and added ",{"b":"Angelechy Opposition"}," from his Deck to his hand. In a new Chain, ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Griffoh"}," and Set ",{"b":"Spell Shattering Sword"}," from his Deck to the field. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Opposition"}," and Special Summoned ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and placed ",{"b":"Angelechy Castellan"},". With Seneschal and Castellan, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," sent Verdict from his Deck to the Graveyard and Special Summoned ",{"b":"Angelechy Shatranga"},". He switched Enlisted to Attack Position and went into his Battle Phase. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," attacked Seneschal with Enlisted. ",{"who":"Kobe Louis Short","t":"Short"}," activated Seneschal’s effect and negated the attack before shifting control of Seneschal back to De ",{"who":"Mario Angelo De Micco","t":"Micco"},". De ",{"who":"Mario Angelo De Micco","t":"Micco"}," then attacked with both Seneschal and Shatranga directly."]
+    },
+    {
+      "t": "p",
+      "r": ["Moving into Main Phase 2, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Synchro Summoned ",{"b":"Centur-Ion Legatia"}," and activated its effect to draw ",{"b":"Dominus Purge"},". He ended his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," started his turn and activated ",{"b":"Light and Darkness Ritual"}," to add itself back from the Graveyard. He added back ",{"b":"Griffoh"}," and ",{"b":"Light and Darkness Ritual"},". Then, ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Branded in High Spirits"},", but De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Dominus Purge"}," to negate it! ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Light and Darkness Ritual"}," and De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained ",{"b":"Dominus Impulse"},". He activated ",{"b":"Mind Shuffle"}," to add ",{"b":"Celtic Mystic"}," before discarding ",{"b":"Magician of Dark Chaos – Black Chaos"},". ",{"who":"Kobe Louis Short","t":"Short"}," then Normal Summoned ",{"b":"Celtic Mystic"}," and revealed ",{"b":"Black Chaos"}," and ",{"b":"Griffoh"}," to draw three new cards. He discarded ",{"b":"Griffoh"}," and ",{"b":"Branded Retribution"},". He shuffled ",{"b":"Magician of Dark Chaos – Black Chaos"}," from the Graveyard back into the Deck to Special Summon ",{"b":"Black Chaos"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["Seeing how much time was left on the clock, and knowing he couldn’t stop ",{"b":"Black Chaos"},", De ",{"who":"Mario Angelo De Micco","t":"Micco"}," conceded the second Duel! We’re going to game three!"]
+    },
+    {
+      "t": "p",
+      "r": ["“Surely this game I won’t open ",{"b":"Mind Shuffle"},",” ",{"who":"Kobe Louis Short","t":"Short"}," said with a laugh."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Duel Three"}]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," chose to start the final Duel of the night. He opened ",{"b":"Dominus Purge"},", ",{"b":"Angelechy Endgame Problem"},", ",{"b":"Angelechy Verdict"},", ",{"b":"Angelechy Strategy Score"},", and ",{"b":"Triple Tactics Talent"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Strategy Score"}," to add ",{"b":"Angelechy Opposition"},", which he then activated to Special Summon ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and placed ",{"b":"Angelechy Castellan"}," onto his own. Both Angelechy cards activated, and De ",{"who":"Mario Angelo De Micco","t":"Micco"}," sent ",{"b":"Angelechy Disturbance"}," from his Deck to the Graveyard before Special Summoning ",{"b":"Angelechy Shatranga"}," to the field. He then banished Disturbance to add ",{"b":"Angelechy Problem"}," from his Deck. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated Problem and discarded Endgame; ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Typhoon"}," from his hand! De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Set Verdict and moved to his End Phase."]
+    },
+    {
+      "t": "p",
+      "r": ["In the End Phase, and since he didn’t open it, ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Griffoh"}," and grabbed ",{"b":"Mind Shuffle"},"! He activated Mind Shuffle and tried to add a card but was stopped by De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s ",{"b":"Dominus Purge"}," from the hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," started his turn and activated ",{"b":"Mind Shuffle"}," in the Draw Phase. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained ",{"b":"Angelechy Verdict"}," to permanently negate ",{"b":"Mind Shuffle"},"! Still in the Draw Phase, ",{"who":"Kobe Louis Short","t":"Short"}," activated another ",{"b":"Griffoh"}," and placed ",{"b":"Spell Shattering Sword"}," onto the field. He then activated ",{"b":"Nadir Servant"}," by sending ",{"b":"Ecclesia and the Dark Dragon"}," to add ",{"b":"Fallen of the White Dragon"}," from his Deck to his hand. ",{"who":"Kobe Louis Short","t":"Short"}," Special Summoned Fallen by sending ",{"b":"Titaniklad the Ash Dragon"}," to the Graveyard and then used its effect to Special Summon ",{"b":"Dogmatika Ecclesia, the Virtuous"},". He activated Ecclesia’s effect and added ",{"b":"The Fallen & The Virtuous"}," from his Deck to his hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Short"}," changed Seneschal to Attack Position, and then went into his Battle Phase. Seneschal attacked and crashed into ",{"b":"Shatranga"},". Then ",{"who":"Kobe Louis Short","t":"Short"}," attacked directly with both Ecclesia and Fallen. In his Main Phase 2, he activated ",{"b":"Ecclesia and the Dark Dragon"}," in the Graveyard by trying to put Titaniklad and Castellan back into the Deck. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained ",{"b":"Angelechy Verdict"}," from his Graveyard and swapped Castellan for Bastion. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," tried to use Bastion’s effect, but it was destroyed by ",{"who":"Kobe Louis Short","t":"Short"},"’s ",{"b":"Spell Shattering Sword"},". ",{"who":"Kobe Louis Short","t":"Short"}," Set one card, then went into his End Phase and Special Summoned ",{"b":"Guiding Quem, the Virtuous"},", using Titaniklad, and then sent ",{"b":"Blazing Cartesia, the Virtuous"},", to the Graveyard with Quem’s effect."]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," started his turn and drew ",{"b":"Angelechy Strategy Score"},". He activated it to add ",{"b":"Angelechy Opposition"}," from his Deck to his hand and then activated Opposition. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Special Summoned ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and placed ",{"b":"Angelechy Destrier"}," onto his own. In a new Chain, Seneschal was Chain Link 1, then Destrier as Chain Link 2, ",{"who":"Kobe Louis Short","t":"Short"}," activated Quem as Chain Link 3, and ",{"b":"The Fallen & The Virtuous"}," as Chain Link 4 to destroy Destrier. Destrier was destroyed, Blazing Cartesia was Special Summoned, and De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Special Summoned an ",{"b":"Angelechy Destrier"}," with Seneschal’s effect."]
+    },
+    {
+      "t": "p",
+      "r": ["In another new Chain, ",{"who":"Kobe Louis Short","t":"Short"}," activated Blazing Cartesia’s effect and Fusion Summoned ",{"b":"Mirrorjade the Iceblade Dragon"}," with his Seneschal and ",{"b":"Fallen of the White Dragon"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Triple Tactics Talent"}," to draw ",{"b":"Angelechy Opening to e4"}," and ",{"b":"Foolish Burial Goods"},". With limited options and not enough time on the clock, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," conceded the match!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Kobe Louis Short","t":"Kobe Short"}," advances to Day 2 in the Advanced Format with his Branded Light and Darkness Ritual Deck!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-1st-place-after-swiss-duelist-advanced/": [
+    {
+      "t": "p",
+      "r": ["At YCS events, the Duelist that places 1st after all Swiss Rounds are completed receives an oversized version of the current YCS prize card!"]
+    },
+    {
+      "t": "p",
+      "r": ["This weekend, ",{"who":"Jamie Lewis Hunter","t":"Jamie Hunter"}," from the United Kingdom received that honor. He finished the Swiss Rounds of the Advanced Main Event in first place with a 13-1 record using his Angelechy Deck! He’s taking home an oversized version of the ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," prize card. Congratulations!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/advanced-round-10-feature-match-matthew-bauer-vs-peter-brown/": [
+    {
+      "t": "p",
+      "r": [{"who":"Matthew William Bauer","t":"Matthew Bauer"}," from Portland, Oregon and ",{"who":"Peter Edward Brown","t":"Peter Brown"}," from Orlando, Florida both finished yesterday’s Advanced Swiss Rounds with a 7-2 record. Now, they’re facing off in this Round 10 Feature Match! Both Duelists are using strategies built around ",{"b":"Light and Darkness Ritual"},", but ",{"who":"Matthew William Bauer","t":"Bauer"}," combined his with Mitsurugi cards, while ",{"who":"Peter Edward Brown","t":"Brown"}," is supplementing his strategy with the new Ars Magna cards from ",{"i":"Beyond the Brave"},". Both of these Duelists have made the Top Cut of a YCS in the past, and now they’re looking to repeat that success. It’s time to Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel One"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Matthew William Bauer","t":"Bauer"}," opened up Duel 1 with ",{"b":"Diabellstar the Black Witch"},", ",{"b":"Skull Archfiend of Chaos"},", ",{"b":"Griffoh"},", ",{"b":"Ragged Records of Rites"},", and ",{"b":"The Hallowed Azamina"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["In the Draw Phase, he activated the effect of ",{"b":"Griffoh"}," to Set ",{"b":"Mind Shuffle"}," from his Deck. He immediately flipped it face-up and activated its effect to add ",{"b":"Black Chaos"}," from his Deck to his hand and discard his Skull Archfiend. He sent ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard to activate its effect and added ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand. He entered Main Phase 1 and used the effect of the ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with ",{"b":"Griffoh"},". He sent ",{"b":"Griffoh"}," to the Graveyard to Special Summon Diabellstar from his hand and then used Diabellstar’s effect to Set ",{"b":"Deception of Sinful Spoils"}," from his Deck, prompting ",{"who":"Peter Edward Brown","t":"Brown"}," to activate the effect of ",{"b":"Mulcharmy Fuwalos"}," from his hand. He flipped up the Deception and then activated ",{"b":"Light and Darkness Ritual"},". He banished ",{"b":"Griffoh"}," from his Graveyard to Special Summon ",{"b":"Magician of Dark Chaos – Black Chaos"}," and used its effect to return ",{"b":"Light and Darkness Ritual"}," from his Graveyard to his hand. He banished his Magician of Dark Chaos to Special Summon ",{"b":"Dark Magician of Destruction"},", allowing ",{"who":"Peter Edward Brown","t":"Brown"}," to draw a card from his Deck with Fuwalos’s effect. ",{"who":"Matthew William Bauer","t":"Bauer"}," used the effect of ",{"b":"Dark Magician of Destruction"}," to add ",{"b":"Magicians’ Souls"}," from his Deck to his hand. He Special Summoned it from his hand by sending ",{"b":"Illusion of Chaos"}," from his Deck to his Graveyard and then activated its effect on the field. He sent ",{"b":"Light and Darkness Ritual"}," from his hand and ",{"b":"Deception of Sinful Spoils"}," from his field to the Graveyard to try to draw 2 cards, but lost out to ",{"b":"Ash Blossom & Joyous Spring"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," activated ",{"b":"Ragged Records of Rites"}," next. He revealed ",{"b":"Mitsurugi Ritual"}," from his Deck to add ",{"b":"Ame no Habakiri no Mitsurugi"}," from his Deck to his hand. He activated its effect by revealing it and Special Summoned ",{"b":"Mitsurugi no Mikoto, Saji"}," from his Deck and Tributed it. ",{"who":"Peter Edward Brown","t":"Brown"}," drew a card and ",{"who":"Matthew William Bauer","t":"Bauer"}," used Saji’s effect to add ",{"b":"Mitsurugi Ritual"}," from his Deck to his hand. He activated the ",{"b":"Mitsurugi Ritual"}," and Special Summoned Habakiri from his hand by Tributing ",{"b":"Ame no Murakumo no Mitsurugi"}," from his Deck. He used Murakumo’s effect to add ",{"b":"Mitsurugi Mirror"}," from his Deck to his hand. Next, he activated the Mirror and Tributed Habakiri to Special Summon Murakumo from his Graveyard. He used the effect of Habakiri to Special Summon the Habakiri back from the Graveyard and add ",{"b":"Mitsurugi Prayers"}," from his Deck to his hand. ",{"who":"Matthew William Bauer","t":"Bauer"}," sent Habakiri and Souls to the Graveyard to Link Summon ",{"b":"Cross-Sheep"},", allowing ",{"who":"Peter Edward Brown","t":"Brown"}," to draw another card. Next, ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned ",{"b":"Skull Archfiend of Chaos"}," from his Graveyard by returning his banished ",{"b":"Griffoh"}," and Magician of Dark Chaos to the Deck along with the Fuwalos in ",{"who":"Peter Edward Brown","t":"Brown"},"’s Graveyard. After the Skull Archfiend was Summoned to the field, ",{"who":"Peter Edward Brown","t":"Brown"}," activated the effect of ",{"b":"Nibiru, the Primal Being"},"! ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained the effect of ",{"b":"Mind Shuffle"}," by returning Diabellstar to the field. He Special Summoned ",{"b":"Black Chaos"}," from his hand, which was unaffected by card effects, and then Nibiru Tributed all other monsters on the field and Special Summoned itself! ",{"who":"Matthew William Bauer","t":"Bauer"}," received a ",{"b":"Primal Being Token"}," in Defense Position with 9200 ATK and 4600 DEF. ",{"who":"Matthew William Bauer","t":"Bauer"}," used the effect of the ",{"b":"Mitsurugi Mirror"}," in his Graveyard to shuffle it back into his Deck and then Set ",{"b":"Mitsurugi Prayers"}," to his Spell & Trap Card Zone before moving into his End Phase. In the End Phase, he Set Deception from his Graveyard face-down to his field."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Peter Edward Brown","t":"Brown"}," activated ",{"b":"Dark Magical Curtain"}," in the Draw Phase and ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained ",{"b":"Mitsurugi Prayers"}," to Special Summon Murakumo from his Graveyard and take 800 points of damage. ",{"who":"Peter Edward Brown","t":"Brown"}," Special Summoned ",{"b":"Dark Magician"}," from his Deck with the Curtain’s effect and ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned ",{"b":"Diabellstar the Black Witch"}," from his Deck with its effect. ",{"who":"Matthew William Bauer","t":"Bauer"}," used his Murakumo’s effect to destroy the ",{"b":"Dark Magician"}," and Nibiru on ",{"who":"Peter Edward Brown","t":"Brown"},"’s field. While still in the Draw Phase, ",{"who":"Peter Edward Brown","t":"Brown"}," activated ",{"b":"The Gaze of Timaeus"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," activated Murakumo’s effect to try to negate it, but ",{"who":"Peter Edward Brown","t":"Brown"}," discarded ",{"b":"Infinite Impermanence"}," to resolve the effect of ",{"b":"The Gaze of Timaeus"}," and Special Summon ",{"b":"Red-Eyes Dark Dragoon"},". He entered his Main Phase and then activated the effect of his Dragoon to destroy the ",{"b":"Primal Being Token"},". ",{"who":"Peter Edward Brown","t":"Brown"}," activated the effect of ",{"b":"Black Chaos"}," in his hand to place ",{"b":"Mind Shuffle"}," face-up on his field. ",{"who":"Matthew William Bauer","t":"Bauer"}," activated the effect of his face-up ",{"b":"Mind Shuffle"},", and ",{"who":"Peter Edward Brown","t":"Brown"}," Chained ",{"b":"Ghost Ogre & Snow Rabbit’s"}," effect to destroy it. ",{"who":"Peter Edward Brown","t":"Brown"}," activated his ",{"b":"Mind Shuffle’s"}," effect to add Skull Archfiend from his Deck to his hand and discard it. He activated its effect in the Graveyard by sending ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and added ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand. He used the effect of ",{"b":"Light and Darkness Ritual"}," to return it to his hand along with a ",{"b":"Black Chaos"}," from the Graveyard. He activated ",{"b":"Light and Darkness Ritual"}," and banished Nibiru from his Graveyard to Special Summon Magician of Dark Chaos. Next, he used his Magician’s effect to return ",{"b":"Dark Magical Curtain"}," from his Graveyard to his hand. He used its other effect to banish Diabellstar face-down. He then banished his Magician to Summon ",{"b":"Dark Magician of Destruction"}," and used its effect to add ",{"b":"Magicians’ Souls"}," from his Deck to his hand. He Special Summoned it by sending ",{"b":"Black Chaos"}," from his Deck to his Graveyard and then sent Souls and ",{"b":"Dark Magician of Destruction"}," to the Graveyard to Link Summon ",{"b":"Purification Power Patron"},". He activated the effect of ",{"b":"Theorealized Medius"}," to Special Summon it from his hand and then used its effect to add ",{"b":"Theorealize"}," from his Deck to his hand. He activated ",{"b":"Theorealize"}," by sending ",{"b":"Medius the Pure"}," from his Deck to his Graveyard and then Special Summoned ",{"b":"Medius the Pure"}," from his Graveyard by returning ",{"b":"Black Chaos"}," from his hand to his Deck. Next, he used Medius’s effect to Special Summon ",{"b":"Nervedo the Shadebeast Power Patron"}," from his Deck. He sent ",{"b":"Medius the Pure"}," and ",{"b":"Purification Power Patron"}," to his Graveyard to Link Summon ",{"b":"Mediclius the Extraordinary Power Patron"}," linked to two monsters. ",{"b":"Medius the Pure"}," was banished by its own effect. ",{"who":"Peter Edward Brown","t":"Brown"}," used ",{"b":"Theorealized Medius’s"}," effect to add ",{"b":"Ars Magna the Finite and the Infinite"}," from his Deck to his hand. ",{"who":"Matthew William Bauer","t":"Bauer"}," finally conceded, realizing he would be defeated during ",{"who":"Peter Edward Brown","t":"Brown"},"’s turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Peter Edward Brown","t":"Peter Brown"}," takes the first victory of the Match with his Deck built around ",{"b":"Light and Darkness Ritual"}," and the Ars Magna monsters!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel Two"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Matthew William Bauer","t":"Bauer"}," opened up Duel 2 with ",{"b":"Ghost Ogre & Snow Rabbit"},", ",{"b":"WANTED: Seeker of Sinful Spoils"},", ",{"b":"Black Chaos"},", Habakiri, and ",{"b":"Mitsurugi Great Purification"},". He activated WANTED in his Draw Phase and ",{"who":"Peter Edward Brown","t":"Brown"}," Chained ",{"b":"Ash Blossom & Joyous Spring’s"}," effect to negate it. ",{"who":"Matthew William Bauer","t":"Bauer"}," entered Main Phase 1 and discarded ",{"b":"Black Chaos"}," to place ",{"b":"Mind Shuffle"}," from his Deck face-up on his field. Next, he activated the effect of the Habakiri in his hand and Chained the effect of ",{"b":"Mind Shuffle"},". He added ",{"b":"Skull Archfiend of Chaos"}," from his Deck to his hand and discarded it, then Special Summoned Saji and Tributed it. He activated the effects of Skull Archfiend and Saji as Chain Links 1 and 2 respectively. He sent ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and added ",{"b":"Magician of Dark Chaos – Black Chaos"}," and ",{"b":"Mitsurugi Ritual"}," from his Deck to his hand. Next, he activated the effect of the ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with ",{"b":"Black Chaos"},". He activated ",{"b":"Mitsurugi Ritual"}," and Special Summoned Habakiri from his hand by Tributing ",{"b":"Mitsurugi no Mikoto, Aramasa"}," and ",{"b":"Mitsurugi no Mikoto, Kusanagi"}," from his Deck. He activated the effects of Kusanagi and Aramasa to return ",{"b":"Mitsurugi Ritual"}," to his hand and add ",{"b":"Futsu no Mitama no Mitsurugi"}," from his Deck to his hand. He activated ",{"b":"Mitsurugi Ritual"}," again, this time Tributing Habakiri from his field to Special Summon Murakumo from his Deck. He used Habakiri’s effect to Special Summon it back to his field and add ",{"b":"Mitsurugi Prayers"}," from his Deck to his hand. He activated ",{"b":"Light and Darkness Ritual"}," next, Tributing Murakumo to Special Summon Magician of Dark Chaos from his hand. He activated the effects of his Magician and Murakumo. He added Prayers from his Deck to his hand and Special Summoned Murakumo and he added ",{"b":"Light and Darkness Ritual"}," from his Graveyard to his hand with Magician of Dark Chaos’s effect. He banished his Magician from the field to Summon ",{"b":"Dark Magician of Destruction"}," and used its effect to add ",{"b":"Dark Magical Curtain"}," from his Deck to his hand. He activated it to add ",{"b":"The Gaze of Timaeus"}," from his Deck to his hand and Special Summon ",{"b":"Dark Magician"},". He sent ",{"b":"Dark Magician"}," and ",{"b":"Dark Magician of Destruction"}," to his Graveyard to Link Summon ",{"b":"Cross-Sheep"}," and then activated ",{"b":"The Gaze of Timaeus"}," targeting the ",{"b":"Dark Magician"}," in his Graveyard. ",{"who":"Peter Edward Brown","t":"Brown"}," Chained the effect of the ",{"b":"Nibiru, the Primal Being"}," in his hand. All monsters on the field were Tributed, and ",{"who":"Peter Edward Brown","t":"Brown"}," Summoned a ",{"b":"Primal Being Token"}," with 6300 ATK and 2600 DEF. Next, ",{"who":"Peter Edward Brown","t":"Brown"}," Special Summoned his ",{"b":"Red-Eyes Dark Dragoon"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," used the effect of the Skull Archfiend in his Graveyard to Special Summon it by returning ",{"b":"Cross-Sheep"},", Magician of Dark Chaos, and ",{"who":"Peter Edward Brown","t":"Brown"},"’s Ash Blossom to the Deck, then Link Summoned ",{"b":"Cross-Sheep"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," used Prayers to Special Summon Murakumo linked to ",{"b":"Cross-Sheep"}," next, and used the effects of ",{"b":"Cross-Sheep"}," and Murakumo. He destroyed Nibiru with the effect of Murakumo and then drew 2 cards and discarded 2 cards before Special Summoning Ghost Ogre from his Graveyard. He Set 3 cards to his back row before ending his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Peter Edward Brown","t":"Brown"}," drew a card and activated ",{"b":"Dark Magical Curtain"}," in the Draw Phase. ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained Murakumo’s effect and ",{"who":"Peter Edward Brown","t":"Brown"}," discarded ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his hand to resolve the Curtain’s effect. He Special Summoned ",{"b":"Dark Magician"}," and added ",{"b":"The Gaze of Timaeus"}," to his hand, and ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned Diabellstar. Next, ",{"who":"Peter Edward Brown","t":"Brown"}," Special Summoned ",{"b":"Magicians’ Souls"}," from his hand by sending ",{"b":"Ars Magna the Division and the Union"}," from his Deck to his Graveyard. ",{"who":"Matthew William Bauer","t":"Bauer"}," activated Prayers by Tributing Murakumo and then Special Summoned Murakumo back with its effect, using its on-field effect to destroy all of ",{"who":"Peter Edward Brown","t":"Brown"},"’s monsters. Next, ",{"who":"Peter Edward Brown","t":"Brown"}," activated ",{"b":"The Gaze of Timaeus"},", but ",{"who":"Matthew William Bauer","t":"Bauer"}," negated its activation with the effect of Dragoon. Finally, ",{"who":"Peter Edward Brown","t":"Brown"}," activated the effect of the last card in his hand – ",{"b":"Griffoh"}," – and ",{"who":"Matthew William Bauer","t":"Bauer"}," activated the effect of Great Purification to negate it. With no cards left in his hand or on his field, ",{"who":"Peter Edward Brown","t":"Brown"}," conceded."]
+    },
+    {
+      "t": "p",
+      "r": ["The Match is going to a third and final Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel Three"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Peter Edward Brown","t":"Brown"}," started off Duel 3 and activated ",{"b":"Dark Magical Curtain"}," in the Draw Phase."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Matthew William Bauer","t":"Bauer"}," Chained the effect of Fuwalos, which was negated by Ash Blossom, and then Chained the effect of ",{"b":"Mulcharmy Purulia"},". ",{"who":"Peter Edward Brown","t":"Brown"}," Special Summoned ",{"b":"Dark Magician"}," and added ",{"b":"The Gaze of Timaeus"}," from his Deck to his hand and ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned Diabellstar with the Curtain’s effect. ",{"who":"Peter Edward Brown","t":"Brown"}," banished his ",{"b":"Dark Magician"}," to Special Summon ",{"b":"Dark Magician of Destruction"}," and used its effect to add ",{"b":"Magicians’ Souls"}," from his Deck to his hand. He Normal Summoned ",{"b":"Medius the Pure"},", allowing ",{"who":"Matthew William Bauer","t":"Bauer"}," to draw a card from Purulia’s effect. ",{"who":"Peter Edward Brown","t":"Brown"}," used Medius’s effect to Special Summon ",{"b":"Nervedo the Shadebeast Power Patron"}," from his Deck and then sent Medius and Nervedo to the Graveyard to Link Summon ",{"b":"Haggard Lizardose"},". He used Nervedo’s effect to Special Summon ",{"b":"Theorealized Medius"}," from his Deck. He activated ",{"b":"Ars Magna “Citrinitas”"}," and then used its effect to add ",{"b":"Ars Magna the Finite and the Infinite"}," from his Deck to his hand. He activated its effect by banishing it from his hand and added the Division and the Union to his hand. He then used ",{"b":"Theorealized Medius’s"}," effect to add ",{"b":"Ars Magna the Corruption and the Purification"}," from his Deck to his hand. He banished the Corruption and the Purification from his hand to add another ",{"b":"Ars Magna “Citrinitas”"}," from his Deck to his hand. He banished the Division and the Union from his hand to Special Summon the Finite and the Infinite from banishment. He Special Summoned Souls from his hand by sending ",{"b":"Black Chaos"}," from his Deck to his Graveyard, allowing ",{"who":"Matthew William Bauer","t":"Bauer"}," to draw a card. Next, he Link Summoned ",{"b":"Zenna’s Deceiving Doll Maidens"},". He activated a bunch of effects, sending Skull Archfiend from his Deck to his Graveyard and Special Summoning the Corruption and the Purification and the Division and the Union. ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned ",{"b":"Kuriboh – Multiply!"}," From his hand. ",{"who":"Peter Edward Brown","t":"Brown"}," used Skull Archfiend’s effect by sending ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and added Magician of Dark Chaos to his hand. He activated the effect of the Division and the Unity to draw a card and ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained the effect of ",{"b":"Kuriboh – Multiply!"}," to add ",{"b":"Griffoh"}," to his hand. ",{"who":"Matthew William Bauer","t":"Bauer"}," activated ",{"b":"Griffoh’s"}," effect and ",{"who":"Peter Edward Brown","t":"Brown"}," Chained the effect of ",{"b":"The Gaze of Timaeus"}," targeting ",{"b":"Dark Magician of Destruction"},". He Special Summoned Dragoon and ",{"who":"Matthew William Bauer","t":"Bauer"}," Set ",{"b":"Mind Shuffle"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," flipped ",{"b":"Mind Shuffle"},". ",{"who":"Peter Edward Brown","t":"Brown"}," used the effect of the ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with ",{"b":"Black Chaos"},". He then activated ",{"b":"Black Chaos’s"}," effect to place ",{"b":"Mind Shuffle"}," face-up on his field. He activated ",{"b":"Light and Darkness Ritual"}," to Ritual Summon Magician of Dark Chaos, allowing ",{"who":"Matthew William Bauer","t":"Bauer"}," to draw a card, and ",{"who":"Peter Edward Brown","t":"Brown"}," returned ",{"b":"Dark Magical Curtain"}," from his Graveyard to his hand with the Magician’s effect. ",{"who":"Peter Edward Brown","t":"Brown"}," activated his Magician’s effect to try to banish Diabellstar. ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained ",{"b":"Mind Shuffle"}," by returning Diabellstar to his hand, and ",{"who":"Peter Edward Brown","t":"Brown"}," Chained Dragoon’s effect to destroy the ",{"b":"Mind Shuffle"},". Next, ",{"who":"Peter Edward Brown","t":"Brown"}," Link Summoned ",{"b":"S:P Little Knight"},". He banished ",{"b":"Kuriboh – Multiply!"},", and after a flurry of plays, Link Summoned ",{"b":"Mediclius the Extraordinary Power Patron"}," with 3 monsters linked to it. He used ",{"b":"Griffoh’s"}," effect to Set ",{"b":"Spell Shattering Sword"}," before ending his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Matthew William Bauer","t":"Bauer"}," activated ",{"b":"Mitsurugi Prayers"}," to add Habakiri from his Deck to his hand and then activated ",{"b":"Mitsurugi Ritual"}," to try to Summon from his Deck, but lost out to Dragoon’s effect. Next he revealed Habakiri from his hand to activated its effect. He Special Summoned Saji from his Deck and Tributed it. He used Saji’s effect to ",{"b":"Mitsurugi Mirror"}," from his Deck to his hand, prompting ",{"who":"Peter Edward Brown","t":"Brown"}," to activate the effect of ",{"b":"Droll & Lock Bird"},"! ",{"who":"Peter Edward Brown","t":"Brown"}," Chained the effect of his ",{"b":"Mind Shuffle"},", and ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained ",{"b":"Dominus Spark"}," to banish Magician of Dark Chaos. ",{"who":"Peter Edward Brown","t":"Brown"}," added ",{"b":"Black Chaos"}," from his Deck to his hand and discarded it with ",{"b":"Mind Shuffle’s"}," effect. Next, ",{"who":"Matthew William Bauer","t":"Bauer"}," discarded ",{"b":"Black Chaos"}," to place ",{"b":"Mind Shuffle"}," on his field. He Special Summoned Diabellstar next by sending Habakiri from his hand to his Graveyard and Set WANTED from his Deck to his field with Diabellstar’s effect. He activated ",{"b":"Deception of the Sinful Spoils"}," and then attacked the Finite and the Infinite with Diabellstar. ",{"who":"Peter Edward Brown","t":"Brown"}," used the effect of the Finite and the Infinite to try to banish Diabellstar. ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained ",{"b":"Mind Shuffle"}," to return Diabellstar to his hand and try to Special Summon a monster from his hand, but ",{"who":"Peter Edward Brown","t":"Brown"}," Chained the effect of the Corruption and the Purification to banish ",{"b":"Mind Shuffle"},". Completely outmatched by ",{"who":"Peter Edward Brown","t":"Brown"},"’s cards, ",{"who":"Matthew William Bauer","t":"Bauer"}," finally conceded."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Peter Edward Brown","t":"Peter Brown"}," advances with an 8-2 record in the Advanced Main Event at YCS Houston!"]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/event-information/ycs-houston-tx-2026-main-event-information/": [
     {
       "t": "p",
@@ -2955,274 +3223,6 @@
       "r": ["KDE-US makes no representations that it has taken any safety precautions that relate to infectious diseases or exposure, and even if KDE-US did proactively take preventative measures, KDE-US has made no representation that those measures will in any way reduce or prevent the risks associated with exposure. Attendees release KDE-US, its employees and representatives, and all persons involved WITH RESPECT TO ANY AND ALL ILLNESS, DISABILITY, DEATH, or loss or damage to person or property, to the fullest extent permitted by law. BY ATTENDING IN THIS EVENT, ATTENDEES ARE DEEMED TO HAVE GIVEN A FULL RELEASE OF LIABILITY TO KDE-US TO THE FULLEST EXTENT PERMITTED BY LAW."]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-9-feature-match-mario-de-micco-vs-kobe-short/": [
-    {
-      "t": "p",
-      "r": ["We are in the final round of the Advanced Format, and Duelists are duking it out to see who will advance to Day 2."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Mario Angelo De Micco","t":"Mario De"}," ",{"who":"Mario Angelo De Micco","t":"Micco"},", from Montreal, Quebec, is our current TCG World Champion and is using the new Angelechy cards this weekend. These cards have been the talk of the tournament with the new support from ",{"i":"Beyond the Brave"},"."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Kobe Short"},", from Carencro, Louisiana, is the YCS Pasadena 2019 Champion and is using a Branded Light and Darkness Ritual Deck this weekend."]
-    },
-    {
-      "t": "p",
-      "r": ["Both Duelists are sitting at 18 points, which means that only one of them can advance to Day 2. It’s Time to Duel!"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Duel One"}]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," won the dice roll and chose to go first. He started with ",{"b":"Effect Veiler"},", ",{"b":"Foolish Burial Goods"},", ",{"b":"Angelechy Verdict"},", ",{"b":"Angelechy Opposition,"}," and ",{"b":"Angelechy Strategy Score"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," started the match by activating ",{"b":"Angelechy Opposition"},", ",{"who":"Kobe Louis Short","t":"Short"}," Chained ",{"b":"Mulcharmy Fuwalos"},"! De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Special Summoned ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and placed ",{"b":"Angelechy Castellan"}," into his back row. In a new Chain, ",{"who":"Kobe Louis Short","t":"Short"}," activated Seneschal and De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained Castellan’s effect. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," sent ",{"b":"Angelechy Disturbance"}," from his Deck to the Graveyard with Castellan’s effect and chose not to Special Summon with Seneschal. He then activated the effect of Disturbance in his Graveyard, but ",{"who":"Kobe Louis Short","t":"Short"}," negated it with ",{"b":"Ash Blossom & Joyous Spring"},"!"]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Foolish Burial Goods"}," and sent ",{"b":"Angelechy Verdict"}," from his Deck to the Graveyard. He then activated ",{"b":"Angelechy Strategy Score"}," and added ",{"b":"Angelechy Opening to e4"}," from his Deck to his hand. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated the effect of ",{"b":"Angelechy Verdict"}," from his Graveyard and discarded Opening to e4 to place ",{"b":"Angelechy Shatranga"}," onto the field. He then activated Shatranga’s effect to add another copy of ",{"b":"Angelechy Opening to e4"}," from his Deck to his hand. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Set two cards and ended his turn."]
-    },
-    {
-      "t": "p",
-      "r": ["In ",{"who":"Kobe Louis Short","t":"Short"},"’s Standby Phase, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Opening to e4"},"! He placed ",{"b":"Angelechy Endgame Problem"}," onto the field, Special Summoned ",{"b":"Angelechy Enlisted"},", and then placed ",{"b":"Angelechy Bastion"}," into his back row. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," then activated Bastion’s effect and placed ",{"b":"Angelechy Shatranga"}," onto the field and used its effect to add ",{"b":"Angelechy Disturbance"}," from his Deck to his hand. Then, still in the Standby Phase, he activated Endgame Problem’s effect and drew ",{"b":"Ash Blossom & Joyous Spring"},"."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Mario Angelo De Micco","t":"Mario De"}," ",{"who":"Mario Angelo De Micco","t":"Micco"}]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," continued into his Main Phase and activated ",{"b":"Gold Sarcophagus"}," and banished ",{"b":"Tri-Brigade Mercourier"},". He activated Mercourier’s effect and added ",{"b":"Blazing Cartesia, the Virtuous"},", from his Deck to his hand. ",{"who":"Kobe Louis Short","t":"Short"}," then Normal Summoned Cartesia and activated its effect to Fusion Summon ",{"b":"Mixousia the Confounder"}," using Cartesia and ",{"b":"Skull Archfiend of Chaos"}," from his hand. He activated Skull Archfiend’s effect and sent ",{"b":"Light and Darkness Ritual"}," from his hand to the Graveyard to add ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand. ",{"who":"Kobe Louis Short","t":"Short"}," then shuffled it back into his Deck to Special Summon ",{"b":"Black Chaos"}," from his hand! On the Summon, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Verdict"},". With 5 Angelechy Monster Cards on the field, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," banished ",{"who":"Kobe Louis Short","t":"Short"},"’s whole field (except for ",{"b":"Black Chaos)"},"!"]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Black Chaos’"}," effect and banished both of De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s Shatrangas. Then, he banished ",{"b":"Black Chaos"}," to Special Summon ",{"b":"Dark Magician of Destruction"},"; he activated its effect but was stopped by De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s ",{"b":"Effect Veiler"},"! ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Skull Archfiend of Chaos"}," by targeting his banished ",{"b":"Black Chaos"},", along with De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s Strategy Score and Verdict. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained the effect of his Verdict in the Graveyard and sent Disturbance to place ",{"b":"Angelechy Destrier"}," onto the field. Skull Archfiend was Special Summoned. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," then activated Destrier’s effect and added ",{"b":"Angelechy Strategy Score"}," from his Deck to his hand."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," moved into the Battle Phase and attacked Enlisted with Skull Archfiend, then directly with ",{"b":"Dark Magician of Destruction"},". In his Main Phase 2, ",{"who":"Kobe Louis Short","t":"Short"}," Link Summoned ",{"b":"S:P Little Knight"}," and used its effect to banish Destrier. He then used the ",{"b":"Light and Darkness Ritual"}," in his Graveyard and added itself and Skull Archfiend back to his hand."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," Set 1 card and went to his End Phase. He activated and added back Blazing Cartesia before passing play. In the End Phase, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated the Disturbance in his Graveyard and added ",{"b":"Angelechy Brilliant Move"}," from his Deck to his hand."]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," drew ",{"b":"Dominus Impulse"}," at the start of his turn. He went to his Main Phase and activated Brilliant Move to Special Summon his ",{"b":"Angelechy Castellan"},". De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated Castellan and targeted ",{"who":"Kobe Louis Short","t":"Short"},"’s face-down ",{"b":"Mind Shuffle"},". ",{"who":"Kobe Louis Short","t":"Short"}," flipped the Mind Shuffle and activated it, but De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Ash Blossom & Joyous Spring"},"!"]
-    },
-    {
-      "t": "p",
-      "r": ["In a new Chain, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," banished his Brilliant Move from the Graveyard and sent Endgame Problem from the field to the Graveyard to Special Summon ",{"b":"Angelechy Destrier"},". He then activated ",{"b":"Angelechy Strategy Score"}," and added ",{"b":"Angelechy Opposition"}," from his Deck to his hand. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," then used the Opposition in his Graveyard and put five Angelechy cards back into his Deck. He then used the Opposition that he previously added to Special Summon ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and Destrier to his back row. ",{"who":"Kobe Louis Short","t":"Short"},"’s Seneschal activated, and De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s Destrier Chained to it. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," added ",{"b":"Angelechy Problem"}," with Destrier’s effect and then Special Summoned ",{"b":"Angelechy Bastion"},". He placed ",{"b":"Angelechy Problem"}," onto the field, and ",{"who":"Kobe Louis Short","t":"Short"}," conceded!"]
-    },
-    {
-      "t": "p",
-      "r": ["With a strategic string of plays, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," takes the first Duel! Both Duelists exchanged pleasantries about the first Duel while shuffling up."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Duel Two"}]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," chose to start the second Duel. In his Standby Phase, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Opening to e4"},", and ",{"who":"Kobe Louis Short","t":"Short"}," Chained Fuwalos! De ",{"who":"Mario Angelo De Micco","t":"Micco"}," placed ",{"b":"Angelechy Problem"}," and ",{"b":"Angelechy Castellan"}," and Special Summoned ",{"b":"Angelechy Enlisted"}," to the field. He activated Castellan’s effect but ",{"who":"Kobe Louis Short","t":"Short"}," Chained ",{"b":"The Fallen & The Virtuous"}," and destroyed Castellan by sending ",{"b":"Albion the Branded Dragon"}," to the Graveyard."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," Set two cards to his back row, then went into his End Phase and used Albion’s effect to Set another copy of ",{"b":"The Fallen & The Virtuous"}," onto the field."]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," had two copies of ",{"b":"Ghost Ogre & Snow Rabbit"},", ",{"b":"Foolish Burial Goods"},", and ",{"b":"Dominus Spark"},". He drew ",{"b":"Dominus Impulse"}," at the start of his turn."]
-    },
-    {
-      "t": "p",
-      "r": ["In the Draw Phase, ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Mind Shuffle"}," and used its effect to add and discard ",{"b":"Skull Archfiend of Chaos"},", which he activated to add ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand."]
-    },
-    {
-      "t": "p",
-      "r": ["In his Main Phase, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Foolish Burial Goods"}," and sent ",{"b":"Angelechy Disturbance"}," from his Deck to the Graveyard. He then activated Disturbance from the Graveyard and added ",{"b":"Angelechy Opposition"}," from his Deck to his hand. In a new Chain, ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Griffoh"}," and Set ",{"b":"Spell Shattering Sword"}," from his Deck to the field. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Opposition"}," and Special Summoned ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and placed ",{"b":"Angelechy Castellan"},". With Seneschal and Castellan, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," sent Verdict from his Deck to the Graveyard and Special Summoned ",{"b":"Angelechy Shatranga"},". He switched Enlisted to Attack Position and went into his Battle Phase. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," attacked Seneschal with Enlisted. ",{"who":"Kobe Louis Short","t":"Short"}," activated Seneschal’s effect and negated the attack before shifting control of Seneschal back to De ",{"who":"Mario Angelo De Micco","t":"Micco"},". De ",{"who":"Mario Angelo De Micco","t":"Micco"}," then attacked with both Seneschal and Shatranga directly."]
-    },
-    {
-      "t": "p",
-      "r": ["Moving into Main Phase 2, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Synchro Summoned ",{"b":"Centur-Ion Legatia"}," and activated its effect to draw ",{"b":"Dominus Purge"},". He ended his turn."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," started his turn and activated ",{"b":"Light and Darkness Ritual"}," to add itself back from the Graveyard. He added back ",{"b":"Griffoh"}," and ",{"b":"Light and Darkness Ritual"},". Then, ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Branded in High Spirits"},", but De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Dominus Purge"}," to negate it! ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Light and Darkness Ritual"}," and De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained ",{"b":"Dominus Impulse"},". He activated ",{"b":"Mind Shuffle"}," to add ",{"b":"Celtic Mystic"}," before discarding ",{"b":"Magician of Dark Chaos – Black Chaos"},". ",{"who":"Kobe Louis Short","t":"Short"}," then Normal Summoned ",{"b":"Celtic Mystic"}," and revealed ",{"b":"Black Chaos"}," and ",{"b":"Griffoh"}," to draw three new cards. He discarded ",{"b":"Griffoh"}," and ",{"b":"Branded Retribution"},". He shuffled ",{"b":"Magician of Dark Chaos – Black Chaos"}," from the Graveyard back into the Deck to Special Summon ",{"b":"Black Chaos"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["Seeing how much time was left on the clock, and knowing he couldn’t stop ",{"b":"Black Chaos"},", De ",{"who":"Mario Angelo De Micco","t":"Micco"}," conceded the second Duel! We’re going to game three!"]
-    },
-    {
-      "t": "p",
-      "r": ["“Surely this game I won’t open ",{"b":"Mind Shuffle"},",” ",{"who":"Kobe Louis Short","t":"Short"}," said with a laugh."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Duel Three"}]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," chose to start the final Duel of the night. He opened ",{"b":"Dominus Purge"},", ",{"b":"Angelechy Endgame Problem"},", ",{"b":"Angelechy Verdict"},", ",{"b":"Angelechy Strategy Score"},", and ",{"b":"Triple Tactics Talent"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Angelechy Strategy Score"}," to add ",{"b":"Angelechy Opposition"},", which he then activated to Special Summon ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and placed ",{"b":"Angelechy Castellan"}," onto his own. Both Angelechy cards activated, and De ",{"who":"Mario Angelo De Micco","t":"Micco"}," sent ",{"b":"Angelechy Disturbance"}," from his Deck to the Graveyard before Special Summoning ",{"b":"Angelechy Shatranga"}," to the field. He then banished Disturbance to add ",{"b":"Angelechy Problem"}," from his Deck. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated Problem and discarded Endgame; ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Typhoon"}," from his hand! De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Set Verdict and moved to his End Phase."]
-    },
-    {
-      "t": "p",
-      "r": ["In the End Phase, and since he didn’t open it, ",{"who":"Kobe Louis Short","t":"Short"}," activated ",{"b":"Griffoh"}," and grabbed ",{"b":"Mind Shuffle"},"! He activated Mind Shuffle and tried to add a card but was stopped by De ",{"who":"Mario Angelo De Micco","t":"Micco"},"’s ",{"b":"Dominus Purge"}," from the hand."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," started his turn and activated ",{"b":"Mind Shuffle"}," in the Draw Phase. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained ",{"b":"Angelechy Verdict"}," to permanently negate ",{"b":"Mind Shuffle"},"! Still in the Draw Phase, ",{"who":"Kobe Louis Short","t":"Short"}," activated another ",{"b":"Griffoh"}," and placed ",{"b":"Spell Shattering Sword"}," onto the field. He then activated ",{"b":"Nadir Servant"}," by sending ",{"b":"Ecclesia and the Dark Dragon"}," to add ",{"b":"Fallen of the White Dragon"}," from his Deck to his hand. ",{"who":"Kobe Louis Short","t":"Short"}," Special Summoned Fallen by sending ",{"b":"Titaniklad the Ash Dragon"}," to the Graveyard and then used its effect to Special Summon ",{"b":"Dogmatika Ecclesia, the Virtuous"},". He activated Ecclesia’s effect and added ",{"b":"The Fallen & The Virtuous"}," from his Deck to his hand."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Short"}," changed Seneschal to Attack Position, and then went into his Battle Phase. Seneschal attacked and crashed into ",{"b":"Shatranga"},". Then ",{"who":"Kobe Louis Short","t":"Short"}," attacked directly with both Ecclesia and Fallen. In his Main Phase 2, he activated ",{"b":"Ecclesia and the Dark Dragon"}," in the Graveyard by trying to put Titaniklad and Castellan back into the Deck. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Chained ",{"b":"Angelechy Verdict"}," from his Graveyard and swapped Castellan for Bastion. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," tried to use Bastion’s effect, but it was destroyed by ",{"who":"Kobe Louis Short","t":"Short"},"’s ",{"b":"Spell Shattering Sword"},". ",{"who":"Kobe Louis Short","t":"Short"}," Set one card, then went into his End Phase and Special Summoned ",{"b":"Guiding Quem, the Virtuous"},", using Titaniklad, and then sent ",{"b":"Blazing Cartesia, the Virtuous"},", to the Graveyard with Quem’s effect."]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," started his turn and drew ",{"b":"Angelechy Strategy Score"},". He activated it to add ",{"b":"Angelechy Opposition"}," from his Deck to his hand and then activated Opposition. De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Special Summoned ",{"b":"Angelechy Seneschal"}," to ",{"who":"Kobe Louis Short","t":"Short"},"’s field and placed ",{"b":"Angelechy Destrier"}," onto his own. In a new Chain, Seneschal was Chain Link 1, then Destrier as Chain Link 2, ",{"who":"Kobe Louis Short","t":"Short"}," activated Quem as Chain Link 3, and ",{"b":"The Fallen & The Virtuous"}," as Chain Link 4 to destroy Destrier. Destrier was destroyed, Blazing Cartesia was Special Summoned, and De ",{"who":"Mario Angelo De Micco","t":"Micco"}," Special Summoned an ",{"b":"Angelechy Destrier"}," with Seneschal’s effect."]
-    },
-    {
-      "t": "p",
-      "r": ["In another new Chain, ",{"who":"Kobe Louis Short","t":"Short"}," activated Blazing Cartesia’s effect and Fusion Summoned ",{"b":"Mirrorjade the Iceblade Dragon"}," with his Seneschal and ",{"b":"Fallen of the White Dragon"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["De ",{"who":"Mario Angelo De Micco","t":"Micco"}," activated ",{"b":"Triple Tactics Talent"}," to draw ",{"b":"Angelechy Opening to e4"}," and ",{"b":"Foolish Burial Goods"},". With limited options and not enough time on the clock, De ",{"who":"Mario Angelo De Micco","t":"Micco"}," conceded the match!"]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Kobe Louis Short","t":"Kobe Short"}," advances to Day 2 in the Advanced Format with his Branded Light and Darkness Ritual Deck!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2026/ycs/get-ready-for-a-massive-forbidden-limited-list-update/": [
-    {
-      "t": "p",
-      "r": ["It’s almost time for all to be revealed! Big changes are coming to the Advanced Format Forbidden & Limited List for the Yu-Gi-Oh! TRADING CARD GAME, and they will be revealed during the livestream on YouTube and Twitch here at YCS Houston!"]
-    },
-    {
-      "t": "p",
-      "r": ["In total, 34 cards will be added to the Forbidden List in the new Forbidden & Limited List update, and 8 cards will be added to the Limited List. The new update will be revealed in parts throughout the livestream. A partial reveal will take place on the livestream today. Two more partial reveals will occur on Saturday, and then the last two reveals will take place on the livestream on Sunday. By the end of the weekend, Duelists watching Konami’s official YCS Houston livestream will know all 34 cards that will be added to the Forbidden List, as well as all 8 cards that will be added to the Limited List."]
-    },
-    {
-      "t": "p",
-      "r": ["Be the first to find out all of the cards that will be added to the Forbidden & Limited List in the new update by watching Konami’s official livestream for YCS Houston!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2026/ycs/advanced-round-10-feature-match-matthew-bauer-vs-peter-brown/": [
-    {
-      "t": "p",
-      "r": [{"who":"Matthew William Bauer","t":"Matthew Bauer"}," from Portland, Oregon and ",{"who":"Peter Edward Brown","t":"Peter Brown"}," from Orlando, Florida both finished yesterday’s Advanced Swiss Rounds with a 7-2 record. Now, they’re facing off in this Round 10 Feature Match! Both Duelists are using strategies built around ",{"b":"Light and Darkness Ritual"},", but ",{"who":"Matthew William Bauer","t":"Bauer"}," combined his with Mitsurugi cards, while ",{"who":"Peter Edward Brown","t":"Brown"}," is supplementing his strategy with the new Ars Magna cards from ",{"i":"Beyond the Brave"},". Both of these Duelists have made the Top Cut of a YCS in the past, and now they’re looking to repeat that success. It’s time to Duel!"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel One"}]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Matthew William Bauer","t":"Bauer"}," opened up Duel 1 with ",{"b":"Diabellstar the Black Witch"},", ",{"b":"Skull Archfiend of Chaos"},", ",{"b":"Griffoh"},", ",{"b":"Ragged Records of Rites"},", and ",{"b":"The Hallowed Azamina"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["In the Draw Phase, he activated the effect of ",{"b":"Griffoh"}," to Set ",{"b":"Mind Shuffle"}," from his Deck. He immediately flipped it face-up and activated its effect to add ",{"b":"Black Chaos"}," from his Deck to his hand and discard his Skull Archfiend. He sent ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard to activate its effect and added ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand. He entered Main Phase 1 and used the effect of the ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with ",{"b":"Griffoh"},". He sent ",{"b":"Griffoh"}," to the Graveyard to Special Summon Diabellstar from his hand and then used Diabellstar’s effect to Set ",{"b":"Deception of Sinful Spoils"}," from his Deck, prompting ",{"who":"Peter Edward Brown","t":"Brown"}," to activate the effect of ",{"b":"Mulcharmy Fuwalos"}," from his hand. He flipped up the Deception and then activated ",{"b":"Light and Darkness Ritual"},". He banished ",{"b":"Griffoh"}," from his Graveyard to Special Summon ",{"b":"Magician of Dark Chaos – Black Chaos"}," and used its effect to return ",{"b":"Light and Darkness Ritual"}," from his Graveyard to his hand. He banished his Magician of Dark Chaos to Special Summon ",{"b":"Dark Magician of Destruction"},", allowing ",{"who":"Peter Edward Brown","t":"Brown"}," to draw a card from his Deck with Fuwalos’s effect. ",{"who":"Matthew William Bauer","t":"Bauer"}," used the effect of ",{"b":"Dark Magician of Destruction"}," to add ",{"b":"Magicians’ Souls"}," from his Deck to his hand. He Special Summoned it from his hand by sending ",{"b":"Illusion of Chaos"}," from his Deck to his Graveyard and then activated its effect on the field. He sent ",{"b":"Light and Darkness Ritual"}," from his hand and ",{"b":"Deception of Sinful Spoils"}," from his field to the Graveyard to try to draw 2 cards, but lost out to ",{"b":"Ash Blossom & Joyous Spring"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," activated ",{"b":"Ragged Records of Rites"}," next. He revealed ",{"b":"Mitsurugi Ritual"}," from his Deck to add ",{"b":"Ame no Habakiri no Mitsurugi"}," from his Deck to his hand. He activated its effect by revealing it and Special Summoned ",{"b":"Mitsurugi no Mikoto, Saji"}," from his Deck and Tributed it. ",{"who":"Peter Edward Brown","t":"Brown"}," drew a card and ",{"who":"Matthew William Bauer","t":"Bauer"}," used Saji’s effect to add ",{"b":"Mitsurugi Ritual"}," from his Deck to his hand. He activated the ",{"b":"Mitsurugi Ritual"}," and Special Summoned Habakiri from his hand by Tributing ",{"b":"Ame no Murakumo no Mitsurugi"}," from his Deck. He used Murakumo’s effect to add ",{"b":"Mitsurugi Mirror"}," from his Deck to his hand. Next, he activated the Mirror and Tributed Habakiri to Special Summon Murakumo from his Graveyard. He used the effect of Habakiri to Special Summon the Habakiri back from the Graveyard and add ",{"b":"Mitsurugi Prayers"}," from his Deck to his hand. ",{"who":"Matthew William Bauer","t":"Bauer"}," sent Habakiri and Souls to the Graveyard to Link Summon ",{"b":"Cross-Sheep"},", allowing ",{"who":"Peter Edward Brown","t":"Brown"}," to draw another card. Next, ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned ",{"b":"Skull Archfiend of Chaos"}," from his Graveyard by returning his banished ",{"b":"Griffoh"}," and Magician of Dark Chaos to the Deck along with the Fuwalos in ",{"who":"Peter Edward Brown","t":"Brown"},"’s Graveyard. After the Skull Archfiend was Summoned to the field, ",{"who":"Peter Edward Brown","t":"Brown"}," activated the effect of ",{"b":"Nibiru, the Primal Being"},"! ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained the effect of ",{"b":"Mind Shuffle"}," by returning Diabellstar to the field. He Special Summoned ",{"b":"Black Chaos"}," from his hand, which was unaffected by card effects, and then Nibiru Tributed all other monsters on the field and Special Summoned itself! ",{"who":"Matthew William Bauer","t":"Bauer"}," received a ",{"b":"Primal Being Token"}," in Defense Position with 9200 ATK and 4600 DEF. ",{"who":"Matthew William Bauer","t":"Bauer"}," used the effect of the ",{"b":"Mitsurugi Mirror"}," in his Graveyard to shuffle it back into his Deck and then Set ",{"b":"Mitsurugi Prayers"}," to his Spell & Trap Card Zone before moving into his End Phase. In the End Phase, he Set Deception from his Graveyard face-down to his field."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Peter Edward Brown","t":"Brown"}," activated ",{"b":"Dark Magical Curtain"}," in the Draw Phase and ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained ",{"b":"Mitsurugi Prayers"}," to Special Summon Murakumo from his Graveyard and take 800 points of damage. ",{"who":"Peter Edward Brown","t":"Brown"}," Special Summoned ",{"b":"Dark Magician"}," from his Deck with the Curtain’s effect and ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned ",{"b":"Diabellstar the Black Witch"}," from his Deck with its effect. ",{"who":"Matthew William Bauer","t":"Bauer"}," used his Murakumo’s effect to destroy the ",{"b":"Dark Magician"}," and Nibiru on ",{"who":"Peter Edward Brown","t":"Brown"},"’s field. While still in the Draw Phase, ",{"who":"Peter Edward Brown","t":"Brown"}," activated ",{"b":"The Gaze of Timaeus"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," activated Murakumo’s effect to try to negate it, but ",{"who":"Peter Edward Brown","t":"Brown"}," discarded ",{"b":"Infinite Impermanence"}," to resolve the effect of ",{"b":"The Gaze of Timaeus"}," and Special Summon ",{"b":"Red-Eyes Dark Dragoon"},". He entered his Main Phase and then activated the effect of his Dragoon to destroy the ",{"b":"Primal Being Token"},". ",{"who":"Peter Edward Brown","t":"Brown"}," activated the effect of ",{"b":"Black Chaos"}," in his hand to place ",{"b":"Mind Shuffle"}," face-up on his field. ",{"who":"Matthew William Bauer","t":"Bauer"}," activated the effect of his face-up ",{"b":"Mind Shuffle"},", and ",{"who":"Peter Edward Brown","t":"Brown"}," Chained ",{"b":"Ghost Ogre & Snow Rabbit’s"}," effect to destroy it. ",{"who":"Peter Edward Brown","t":"Brown"}," activated his ",{"b":"Mind Shuffle’s"}," effect to add Skull Archfiend from his Deck to his hand and discard it. He activated its effect in the Graveyard by sending ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and added ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand. He used the effect of ",{"b":"Light and Darkness Ritual"}," to return it to his hand along with a ",{"b":"Black Chaos"}," from the Graveyard. He activated ",{"b":"Light and Darkness Ritual"}," and banished Nibiru from his Graveyard to Special Summon Magician of Dark Chaos. Next, he used his Magician’s effect to return ",{"b":"Dark Magical Curtain"}," from his Graveyard to his hand. He used its other effect to banish Diabellstar face-down. He then banished his Magician to Summon ",{"b":"Dark Magician of Destruction"}," and used its effect to add ",{"b":"Magicians’ Souls"}," from his Deck to his hand. He Special Summoned it by sending ",{"b":"Black Chaos"}," from his Deck to his Graveyard and then sent Souls and ",{"b":"Dark Magician of Destruction"}," to the Graveyard to Link Summon ",{"b":"Purification Power Patron"},". He activated the effect of ",{"b":"Theorealized Medius"}," to Special Summon it from his hand and then used its effect to add ",{"b":"Theorealize"}," from his Deck to his hand. He activated ",{"b":"Theorealize"}," by sending ",{"b":"Medius the Pure"}," from his Deck to his Graveyard and then Special Summoned ",{"b":"Medius the Pure"}," from his Graveyard by returning ",{"b":"Black Chaos"}," from his hand to his Deck. Next, he used Medius’s effect to Special Summon ",{"b":"Nervedo the Shadebeast Power Patron"}," from his Deck. He sent ",{"b":"Medius the Pure"}," and ",{"b":"Purification Power Patron"}," to his Graveyard to Link Summon ",{"b":"Mediclius the Extraordinary Power Patron"}," linked to two monsters. ",{"b":"Medius the Pure"}," was banished by its own effect. ",{"who":"Peter Edward Brown","t":"Brown"}," used ",{"b":"Theorealized Medius’s"}," effect to add ",{"b":"Ars Magna the Finite and the Infinite"}," from his Deck to his hand. ",{"who":"Matthew William Bauer","t":"Bauer"}," finally conceded, realizing he would be defeated during ",{"who":"Peter Edward Brown","t":"Brown"},"’s turn."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Peter Edward Brown","t":"Peter Brown"}," takes the first victory of the Match with his Deck built around ",{"b":"Light and Darkness Ritual"}," and the Ars Magna monsters!"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel Two"}]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Matthew William Bauer","t":"Bauer"}," opened up Duel 2 with ",{"b":"Ghost Ogre & Snow Rabbit"},", ",{"b":"WANTED: Seeker of Sinful Spoils"},", ",{"b":"Black Chaos"},", Habakiri, and ",{"b":"Mitsurugi Great Purification"},". He activated WANTED in his Draw Phase and ",{"who":"Peter Edward Brown","t":"Brown"}," Chained ",{"b":"Ash Blossom & Joyous Spring’s"}," effect to negate it. ",{"who":"Matthew William Bauer","t":"Bauer"}," entered Main Phase 1 and discarded ",{"b":"Black Chaos"}," to place ",{"b":"Mind Shuffle"}," from his Deck face-up on his field. Next, he activated the effect of the Habakiri in his hand and Chained the effect of ",{"b":"Mind Shuffle"},". He added ",{"b":"Skull Archfiend of Chaos"}," from his Deck to his hand and discarded it, then Special Summoned Saji and Tributed it. He activated the effects of Skull Archfiend and Saji as Chain Links 1 and 2 respectively. He sent ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and added ",{"b":"Magician of Dark Chaos – Black Chaos"}," and ",{"b":"Mitsurugi Ritual"}," from his Deck to his hand. Next, he activated the effect of the ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with ",{"b":"Black Chaos"},". He activated ",{"b":"Mitsurugi Ritual"}," and Special Summoned Habakiri from his hand by Tributing ",{"b":"Mitsurugi no Mikoto, Aramasa"}," and ",{"b":"Mitsurugi no Mikoto, Kusanagi"}," from his Deck. He activated the effects of Kusanagi and Aramasa to return ",{"b":"Mitsurugi Ritual"}," to his hand and add ",{"b":"Futsu no Mitama no Mitsurugi"}," from his Deck to his hand. He activated ",{"b":"Mitsurugi Ritual"}," again, this time Tributing Habakiri from his field to Special Summon Murakumo from his Deck. He used Habakiri’s effect to Special Summon it back to his field and add ",{"b":"Mitsurugi Prayers"}," from his Deck to his hand. He activated ",{"b":"Light and Darkness Ritual"}," next, Tributing Murakumo to Special Summon Magician of Dark Chaos from his hand. He activated the effects of his Magician and Murakumo. He added Prayers from his Deck to his hand and Special Summoned Murakumo and he added ",{"b":"Light and Darkness Ritual"}," from his Graveyard to his hand with Magician of Dark Chaos’s effect. He banished his Magician from the field to Summon ",{"b":"Dark Magician of Destruction"}," and used its effect to add ",{"b":"Dark Magical Curtain"}," from his Deck to his hand. He activated it to add ",{"b":"The Gaze of Timaeus"}," from his Deck to his hand and Special Summon ",{"b":"Dark Magician"},". He sent ",{"b":"Dark Magician"}," and ",{"b":"Dark Magician of Destruction"}," to his Graveyard to Link Summon ",{"b":"Cross-Sheep"}," and then activated ",{"b":"The Gaze of Timaeus"}," targeting the ",{"b":"Dark Magician"}," in his Graveyard. ",{"who":"Peter Edward Brown","t":"Brown"}," Chained the effect of the ",{"b":"Nibiru, the Primal Being"}," in his hand. All monsters on the field were Tributed, and ",{"who":"Peter Edward Brown","t":"Brown"}," Summoned a ",{"b":"Primal Being Token"}," with 6300 ATK and 2600 DEF. Next, ",{"who":"Peter Edward Brown","t":"Brown"}," Special Summoned his ",{"b":"Red-Eyes Dark Dragoon"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," used the effect of the Skull Archfiend in his Graveyard to Special Summon it by returning ",{"b":"Cross-Sheep"},", Magician of Dark Chaos, and ",{"who":"Peter Edward Brown","t":"Brown"},"’s Ash Blossom to the Deck, then Link Summoned ",{"b":"Cross-Sheep"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," used Prayers to Special Summon Murakumo linked to ",{"b":"Cross-Sheep"}," next, and used the effects of ",{"b":"Cross-Sheep"}," and Murakumo. He destroyed Nibiru with the effect of Murakumo and then drew 2 cards and discarded 2 cards before Special Summoning Ghost Ogre from his Graveyard. He Set 3 cards to his back row before ending his turn."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Peter Edward Brown","t":"Brown"}," drew a card and activated ",{"b":"Dark Magical Curtain"}," in the Draw Phase. ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained Murakumo’s effect and ",{"who":"Peter Edward Brown","t":"Brown"}," discarded ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his hand to resolve the Curtain’s effect. He Special Summoned ",{"b":"Dark Magician"}," and added ",{"b":"The Gaze of Timaeus"}," to his hand, and ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned Diabellstar. Next, ",{"who":"Peter Edward Brown","t":"Brown"}," Special Summoned ",{"b":"Magicians’ Souls"}," from his hand by sending ",{"b":"Ars Magna the Division and the Union"}," from his Deck to his Graveyard. ",{"who":"Matthew William Bauer","t":"Bauer"}," activated Prayers by Tributing Murakumo and then Special Summoned Murakumo back with its effect, using its on-field effect to destroy all of ",{"who":"Peter Edward Brown","t":"Brown"},"’s monsters. Next, ",{"who":"Peter Edward Brown","t":"Brown"}," activated ",{"b":"The Gaze of Timaeus"},", but ",{"who":"Matthew William Bauer","t":"Bauer"}," negated its activation with the effect of Dragoon. Finally, ",{"who":"Peter Edward Brown","t":"Brown"}," activated the effect of the last card in his hand – ",{"b":"Griffoh"}," – and ",{"who":"Matthew William Bauer","t":"Bauer"}," activated the effect of Great Purification to negate it. With no cards left in his hand or on his field, ",{"who":"Peter Edward Brown","t":"Brown"}," conceded."]
-    },
-    {
-      "t": "p",
-      "r": ["The Match is going to a third and final Duel!"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel Three"}]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Peter Edward Brown","t":"Brown"}," started off Duel 3 and activated ",{"b":"Dark Magical Curtain"}," in the Draw Phase."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Matthew William Bauer","t":"Bauer"}," Chained the effect of Fuwalos, which was negated by Ash Blossom, and then Chained the effect of ",{"b":"Mulcharmy Purulia"},". ",{"who":"Peter Edward Brown","t":"Brown"}," Special Summoned ",{"b":"Dark Magician"}," and added ",{"b":"The Gaze of Timaeus"}," from his Deck to his hand and ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned Diabellstar with the Curtain’s effect. ",{"who":"Peter Edward Brown","t":"Brown"}," banished his ",{"b":"Dark Magician"}," to Special Summon ",{"b":"Dark Magician of Destruction"}," and used its effect to add ",{"b":"Magicians’ Souls"}," from his Deck to his hand. He Normal Summoned ",{"b":"Medius the Pure"},", allowing ",{"who":"Matthew William Bauer","t":"Bauer"}," to draw a card from Purulia’s effect. ",{"who":"Peter Edward Brown","t":"Brown"}," used Medius’s effect to Special Summon ",{"b":"Nervedo the Shadebeast Power Patron"}," from his Deck and then sent Medius and Nervedo to the Graveyard to Link Summon ",{"b":"Haggard Lizardose"},". He used Nervedo’s effect to Special Summon ",{"b":"Theorealized Medius"}," from his Deck. He activated ",{"b":"Ars Magna “Citrinitas”"}," and then used its effect to add ",{"b":"Ars Magna the Finite and the Infinite"}," from his Deck to his hand. He activated its effect by banishing it from his hand and added the Division and the Union to his hand. He then used ",{"b":"Theorealized Medius’s"}," effect to add ",{"b":"Ars Magna the Corruption and the Purification"}," from his Deck to his hand. He banished the Corruption and the Purification from his hand to add another ",{"b":"Ars Magna “Citrinitas”"}," from his Deck to his hand. He banished the Division and the Union from his hand to Special Summon the Finite and the Infinite from banishment. He Special Summoned Souls from his hand by sending ",{"b":"Black Chaos"}," from his Deck to his Graveyard, allowing ",{"who":"Matthew William Bauer","t":"Bauer"}," to draw a card. Next, he Link Summoned ",{"b":"Zenna’s Deceiving Doll Maidens"},". He activated a bunch of effects, sending Skull Archfiend from his Deck to his Graveyard and Special Summoning the Corruption and the Purification and the Division and the Union. ",{"who":"Matthew William Bauer","t":"Bauer"}," Special Summoned ",{"b":"Kuriboh – Multiply!"}," From his hand. ",{"who":"Peter Edward Brown","t":"Brown"}," used Skull Archfiend’s effect by sending ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and added Magician of Dark Chaos to his hand. He activated the effect of the Division and the Unity to draw a card and ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained the effect of ",{"b":"Kuriboh – Multiply!"}," to add ",{"b":"Griffoh"}," to his hand. ",{"who":"Matthew William Bauer","t":"Bauer"}," activated ",{"b":"Griffoh’s"}," effect and ",{"who":"Peter Edward Brown","t":"Brown"}," Chained the effect of ",{"b":"The Gaze of Timaeus"}," targeting ",{"b":"Dark Magician of Destruction"},". He Special Summoned Dragoon and ",{"who":"Matthew William Bauer","t":"Bauer"}," Set ",{"b":"Mind Shuffle"},". ",{"who":"Matthew William Bauer","t":"Bauer"}," flipped ",{"b":"Mind Shuffle"},". ",{"who":"Peter Edward Brown","t":"Brown"}," used the effect of the ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with ",{"b":"Black Chaos"},". He then activated ",{"b":"Black Chaos’s"}," effect to place ",{"b":"Mind Shuffle"}," face-up on his field. He activated ",{"b":"Light and Darkness Ritual"}," to Ritual Summon Magician of Dark Chaos, allowing ",{"who":"Matthew William Bauer","t":"Bauer"}," to draw a card, and ",{"who":"Peter Edward Brown","t":"Brown"}," returned ",{"b":"Dark Magical Curtain"}," from his Graveyard to his hand with the Magician’s effect. ",{"who":"Peter Edward Brown","t":"Brown"}," activated his Magician’s effect to try to banish Diabellstar. ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained ",{"b":"Mind Shuffle"}," by returning Diabellstar to his hand, and ",{"who":"Peter Edward Brown","t":"Brown"}," Chained Dragoon’s effect to destroy the ",{"b":"Mind Shuffle"},". Next, ",{"who":"Peter Edward Brown","t":"Brown"}," Link Summoned ",{"b":"S:P Little Knight"},". He banished ",{"b":"Kuriboh – Multiply!"},", and after a flurry of plays, Link Summoned ",{"b":"Mediclius the Extraordinary Power Patron"}," with 3 monsters linked to it. He used ",{"b":"Griffoh’s"}," effect to Set ",{"b":"Spell Shattering Sword"}," before ending his turn."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Matthew William Bauer","t":"Bauer"}," activated ",{"b":"Mitsurugi Prayers"}," to add Habakiri from his Deck to his hand and then activated ",{"b":"Mitsurugi Ritual"}," to try to Summon from his Deck, but lost out to Dragoon’s effect. Next he revealed Habakiri from his hand to activated its effect. He Special Summoned Saji from his Deck and Tributed it. He used Saji’s effect to ",{"b":"Mitsurugi Mirror"}," from his Deck to his hand, prompting ",{"who":"Peter Edward Brown","t":"Brown"}," to activate the effect of ",{"b":"Droll & Lock Bird"},"! ",{"who":"Peter Edward Brown","t":"Brown"}," Chained the effect of his ",{"b":"Mind Shuffle"},", and ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained ",{"b":"Dominus Spark"}," to banish Magician of Dark Chaos. ",{"who":"Peter Edward Brown","t":"Brown"}," added ",{"b":"Black Chaos"}," from his Deck to his hand and discarded it with ",{"b":"Mind Shuffle’s"}," effect. Next, ",{"who":"Matthew William Bauer","t":"Bauer"}," discarded ",{"b":"Black Chaos"}," to place ",{"b":"Mind Shuffle"}," on his field. He Special Summoned Diabellstar next by sending Habakiri from his hand to his Graveyard and Set WANTED from his Deck to his field with Diabellstar’s effect. He activated ",{"b":"Deception of the Sinful Spoils"}," and then attacked the Finite and the Infinite with Diabellstar. ",{"who":"Peter Edward Brown","t":"Brown"}," used the effect of the Finite and the Infinite to try to banish Diabellstar. ",{"who":"Matthew William Bauer","t":"Bauer"}," Chained ",{"b":"Mind Shuffle"}," to return Diabellstar to his hand and try to Special Summon a monster from his hand, but ",{"who":"Peter Edward Brown","t":"Brown"}," Chained the effect of the Corruption and the Purification to banish ",{"b":"Mind Shuffle"},". Completely outmatched by ",{"who":"Peter Edward Brown","t":"Brown"},"’s cards, ",{"who":"Matthew William Bauer","t":"Bauer"}," finally conceded."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Peter Edward Brown","t":"Peter Brown"}," advances with an 8-2 record in the Advanced Main Event at YCS Houston!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-new-items-at-the-prize-wall/": [
-    {
-      "t": "p",
-      "r": ["Here’s a look at this weekend’s Prize Wall, including some brand new offerings!"]
-    },
-    {
-      "t": "p",
-      "r": ["Duelists who participate in Public Events will earn Public Events Tickets. Those tickets can then be exchanged for amazing prizes at the Prize Wall! Here’s a look at the options at YCS Houston, including some brand new items"]
-    },
-    {
-      "t": "p",
-      "r": ["Our first new item is a Yu-Gi-Oh! MASTER DUEL backpack! You can rep your favorite digital game while storing your physical cards at the same time!"]
-    },
-    {
-      "t": "p",
-      "r": ["Here we have some new Game Mats!"]
-    },
-    {
-      "t": "p",
-      "r": ["These new mats featuring ",{"b":"Mulcharmy Meowls"},", ",{"b":"Zalen the Shackled Dragon"},", and ",{"b":"Ashtraja Susanoo"},", are exclusive to the Prize Wall."]
-    },
-    {
-      "t": "p",
-      "r": ["For the next new items, we have gold plated metal cards!"]
-    },
-    {
-      "t": "p",
-      "r": ["We’ve got ",{"b":"Time Wizard"},", ",{"b":"Kuriboh"},", and ",{"b":"Gaia the Fierce Knight"},"!"]
-    },
-    {
-      "t": "p",
-      "r": ["That’s all the new prizes, but we also have a ton of returning favorites. Here we have a variety of GIANT card rewards!"]
-    },
-    {
-      "t": "p",
-      "r": ["Here we have an assortment of Dueling accessories. There are Game Mats, Deck boxes, and the amazing ",{"b":"Kuriboh"}," Arty bag!"]
-    },
-    {
-      "t": "p",
-      "r": ["Finally, we have a huge variety of returning Game Mats! These come from past Regional Qualifiers, Win-A-Mat events, and much more!"]
-    }
-  ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-round-9-feature-match-dawson-schawang-vs-wesley-wilbur/": [
     {
       "t": "p",
@@ -3293,18 +3293,18 @@
       "r": [{"who":"Dawson James Schawang","t":"Dawson Schawang"}," is victorious with Trains!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/advanced-attack-of-the-giant-top-3/": [
+  "https://yugiohblog.konami.com/2026/ycs/get-ready-for-a-massive-forbidden-limited-list-update/": [
     {
       "t": "p",
-      "r": ["We have our Top Advanced Duelists for Friday’s ATTACK OF THE GIANT CARD!!"]
+      "r": ["It’s almost time for all to be revealed! Big changes are coming to the Advanced Format Forbidden & Limited List for the Yu-Gi-Oh! TRADING CARD GAME, and they will be revealed during the livestream on YouTube and Twitch here at YCS Houston!"]
     },
     {
       "t": "p",
-      "r": [{"who":"Santiago Alvin Dinsmore","t":"Santiago Dinsmore"}," (left), ",{"who":"Humza Zafar Minhas","t":"Humza Zafar"}," (center), and ",{"who":"Brian Patrick Alston","t":"Brian Alston"}," (right)"]
+      "r": ["In total, 34 cards will be added to the Forbidden List in the new Forbidden & Limited List update, and 8 cards will be added to the Limited List. The new update will be revealed in parts throughout the livestream. A partial reveal will take place on the livestream today. Two more partial reveals will occur on Saturday, and then the last two reveals will take place on the livestream on Sunday. By the end of the weekend, Duelists watching Konami’s official YCS Houston livestream will know all 34 cards that will be added to the Forbidden List, as well as all 8 cards that will be added to the Limited List."]
     },
     {
       "t": "p",
-      "r": ["Let’s give a big congratulations to our top Duelists!\n ",{"b":"1st Place"}," – ",{"who":"Humza Zafar Minhas","t":"Humza Zafar Minhas"},", with Mitsurugi Fiendsmith Light and Darkness Ritual\n ",{"b":"2nd Place"}," – ",{"who":"Santiago Alvin Dinsmore","t":"Santiago Dinsmore"},", with Angelechy\n ",{"b":"3rd Place"}," – ",{"who":"Brian Patrick Alston","t":"Brian Alston"},", with Ars Magna Elfnote"]
+      "r": ["Be the first to find out all of the cards that will be added to the Forbidden & Limited List in the new update by watching Konami’s official livestream for YCS Houston!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-round-11-feature-match-brandon-diez-vs-raycel-rodriguez/": [
@@ -3377,34 +3377,46 @@
       "r": [{"who":"Brandon Joseph Diez","t":"Brandon Diez"}," wins the Match with his Destiny HERO Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-first-timers-3/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-new-items-at-the-prize-wall/": [
     {
       "t": "p",
-      "r": ["The tournament hall at YCS Houston has lots of experienced Duelists who have competed at the highest levels of competition for years. But not all of this weekend’s attendees have been to a YCS event before. Check out some of the YCS Houston first-timers in attendance this weekend!"]
+      "r": ["Here’s a look at this weekend’s Prize Wall, including some brand new offerings!"]
     },
     {
       "t": "p",
-      "r": [{"who":"Joseph Owen Kester","t":"Joseph Kester"}," from Denton, Texas has been playing the Yu-Gi-Oh! TRADING CARD GAME for a few years but has never competed at an event more competitive than one held by a local Official Tournament Store. Now, he’s competing in the Advanced Main Event at YCS Houston with his Enneacraft Deck for the first time ever! If things don’t go his way in the competition today, he’s hoping to play in some Genesys Format Public Events tomorrow. He’s enjoying his time here at the venue. “I didn’t expect everything to be so wide open,” he explained. “You can really see everything when you walk in, and the livestream stage is really impressive.”"]
+      "r": ["Duelists who participate in Public Events will earn Public Events Tickets. Those tickets can then be exchanged for amazing prizes at the Prize Wall! Here’s a look at the options at YCS Houston, including some brand new items"]
     },
     {
       "t": "p",
-      "r": [{"who":"Jesus Francisco Martinez Loera","t":"Jesus Martinez"}," from Freeport, Texas played the Yu-Gi-Oh! TRADING CARD GAME when he was younger, and picked it back up after the release of ",{"i":"Chaos Origins"},". He has competed at local tournaments, but never attended a more competitive event. Now, he’s competing in the Advanced Format Main Event at YCS Houston with his Elfnote Deck, which he has been practicing using at his local events. Jesus is impressed by how organized the tournament hall is and is excited for the tournament to begin. His favorite card in his Extra Deck is ",{"b":"Stardust Dragon"},". “I grew up on 5D’s,” he explained."]
+      "r": ["Our first new item is a Yu-Gi-Oh! MASTER DUEL backpack! You can rep your favorite digital game while storing your physical cards at the same time!"]
     },
     {
       "t": "p",
-      "r": [{"who":"Garrison Nick Fowler","t":"Garrison Fowler"}," from San Antonio, Texas has been collecting cards for about 6 years, but just started playing in 2024. He has competed in Regional Qualifier and local tournaments over the past few years, but never competed in a tournament as large as a YCS! He’s competing in the Advanced Main Event this weekend with his Deck that combines ",{"b":"Red Dragon Archfiend"}," with ",{"b":"Light and Darkness Ritual"},". Garrison is enjoying seeing Yu-Gi-Oh! TRADING CARD GAME personalities that he knows from the online community, like ",{"who":"Jesse Dean Kotton","t":"Jesse Kotton"}," and ",{"who":"Ittipat Arunnaveesiri","t":"Ittipat Arunnaveesiri"},", walking around the venue."]
+      "r": ["Here we have some new Game Mats!"]
     },
     {
       "t": "p",
-      "r": [{"who":"Shane Dylan Mosley","t":"Shane Mosley"}," from Rowlett, Texas has been playing the Yu-Gi-Oh! TRADING CARD GAME for nearly six months, and took it seriously over the past two weeks as he prepared for this weekend’s Advanced Main Event. He competed in 1 local tournament in his Dueling career, and now he’s competing with the best at YCS Houston using his Fiendsmith Hecahands Chimera Deck. “I love that I can do so many Fusions. My favorite part of the Deck is how easy it is to Summon ",{"b":"D/D/D Wave High King Caesar"}," with the Fiendsmith engine.” Shane is enjoying the tournament hall. “Everyone is really nice, and I found some cards from the vendors I’ve been looking to get for a while,” he said."]
+      "r": ["These new mats featuring ",{"b":"Mulcharmy Meowls"},", ",{"b":"Zalen the Shackled Dragon"},", and ",{"b":"Ashtraja Susanoo"},", are exclusive to the Prize Wall."]
     },
     {
       "t": "p",
-      "r": [{"who":"Matthew David Ray Hitt","t":"Matthew Hitt"}," from Prosper, Texas traveled to YCS Houston with ",{"who":"Shane Dylan Mosley","t":"Shane Mosley"},", and played the Yu-Gi-Oh! TRADING CARD GAME when he was younger. He stopped for a while, and picked the game back up a year and a half ago. Now, he’s competing in the Advanced Main Event with his Elfnote Ars Magna Deck. “The Deck is fun and I like the playstyle,” he explained. “I can also Summon ",{"b":"Crystal Wing Synchro Dragon"},", which is my favorite card in the Deck.” Matthew played in two Regional Qualifiers this year, but never entered an event as large as a YCS. He’s enjoying the larger venue, and likes the banners that are set up for a photo op."]
+      "r": ["For the next new items, we have gold plated metal cards!"]
     },
     {
       "t": "p",
-      "r": ["Good luck to all of our first-timers at YCS Houston!"]
+      "r": ["We’ve got ",{"b":"Time Wizard"},", ",{"b":"Kuriboh"},", and ",{"b":"Gaia the Fierce Knight"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["That’s all the new prizes, but we also have a ton of returning favorites. Here we have a variety of GIANT card rewards!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here we have an assortment of Dueling accessories. There are Game Mats, Deck boxes, and the amazing ",{"b":"Kuriboh"}," Arty bag!"]
+    },
+    {
+      "t": "p",
+      "r": ["Finally, we have a huge variety of returning Game Mats! These come from past Regional Qualifiers, Win-A-Mat events, and much more!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-round-10-feature-match-aj-jones-vs-nathan-chau/": [
@@ -3509,50 +3521,18 @@
       "r": [{"who":"Nathan Cao Chau","t":"Nathan Chau"}," wins the match with his Blitzclique Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/63795/": [
+  "https://yugiohblog.konami.com/2026/ycs/advanced-attack-of-the-giant-top-3/": [
     {
       "t": "p",
-      "r": ["We just had the BIG 1",{"s":"st"}," Anniversary Genesys points update, which brought a ton of shakeups to the format. After one day of Genesys Duels here at YCS Houston, we’ve seen some trends emerge."]
+      "r": ["We have our Top Advanced Duelists for Friday’s ATTACK OF THE GIANT CARD!!"]
     },
     {
       "t": "p",
-      "r": [{"u":"Skull Meister"}]
+      "r": [{"who":"Santiago Alvin Dinsmore","t":"Santiago Dinsmore"}," (left), ",{"who":"Humza Zafar Minhas","t":"Humza Zafar"}," (center), and ",{"who":"Brian Patrick Alston","t":"Brian Alston"}," (right)"]
     },
     {
       "t": "p",
-      "r": ["Since the beginning of Genesys, ",{"b":"Skull Meister"}," has been 0 points. With a useful effect for almost any Deck, and no additional cost to include, it’s become one of the go-to monsters of the format. The points update gave ",{"b":"Skull Meister"}," a cost of 1 point now, but we’re still seeing it in plenty of Decks. Duelists are still willing to use their flex spots to include the card in their Main and Side Decks."]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Destruction and Banishment options"}]
-    },
-    {
-      "t": "p",
-      "r": ["The most recent update dropped ",{"b":"Heavy Storm"}," to just 4 points, which is significantly lower than similar cards ",{"b":"Lightning Storm"}," and ",{"b":"Harpie’s Feather Duster"},". This adjustment has been enough to bring ",{"b":"Heavy Storm"}," to the spotlight as a way to break through mass amounts of spells and traps. This is especially important these days with decks like Angelechy and Labrynth that load up their spells and traps and/or rely on Field Spells."]
-    },
-    {
-      "t": "p",
-      "r": ["For ways to remove just a single spell or trap, ",{"b":"Cosmic Cyclone"}," remains the top choice. It was bumped up to 1 point not long ago, but the ability to banish its target is well worth the 1 point and the 1000 Life Points. We also occasionally see ",{"b":"Typhoon"},", since it can be played from the hand even if your opponent goes first – important against Angelechy."]
-    },
-    {
-      "t": "p",
-      "r": ["To take on monsters, we’ve got plenty of ",{"b":"Dark Hole"}," in the mix. This card was dropped to just 1 point in a past update, and it seems like Duelists prefer to use the cheaper but more specific cards like ",{"b":"Dark Hole"}," and ",{"b":"Heavy Storm"},", as opposed to the flexible cards that cost more points like ",{"b":"Lightning Storm"},"."]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Ancient Fairy Dragon"}]
-    },
-    {
-      "t": "p",
-      "r": ["With no point cost, ",{"b":"Ancient Fairy Dragon"}," is seeing a lot of use again lately. This is primarily appearing in Angelechy Decks, where it can find your important Field Spells. Not only do Angelechy have two different Field Spells (allowing ",{"b":"Ancient Fairy Dragon"}," to swap between them), but the Dragon is also able to destroy an opponent’s key Field Spell to advance your own gameplan. When ",{"b":"Terraforming"}," costs 20 points, this is a great alternative that you don’t even have to draw to use."]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Dark Time Wizard and Friends"}]
-    },
-    {
-      "t": "p",
-      "r": ["The ",{"b":"Dark Time Wizard"}," theme from ",{"i":"Beyond the Brave"}," debuted with a small number of initial points. Some Decks have space to include a ",{"b":"Dark Time Wizard"}," engine, since the Wizard itself only costs 5 points each. While ",{"b":"Swiftwind Panther Warrior"}," and ",{"b":"Alligator’s Dragon Knight"}," also cost points, the rest of the associated cards are free. That means Duelists can splash three copies of ",{"b":"Dark Time Wizard"}," for just 15 points, along with cards like ",{"b":"Fisherman of Legend"}," and ",{"b":"Foolish Graverobber"},". We saw Jeff Jones do this in his Round 1 Feature Match, using ",{"b":"Foolish Graverobber"}," with his Labrynth Trap Cards."]
+      "r": ["Let’s give a big congratulations to our top Duelists!\n ",{"b":"1st Place"}," – ",{"who":"Humza Zafar Minhas","t":"Humza Zafar Minhas"},", with Mitsurugi Fiendsmith Light and Darkness Ritual\n ",{"b":"2nd Place"}," – ",{"who":"Santiago Alvin Dinsmore","t":"Santiago Dinsmore"},", with Angelechy\n ",{"b":"3rd Place"}," – ",{"who":"Brian Patrick Alston","t":"Brian Alston"},", with Ars Magna Elfnote"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-round-12-feature-match-carlo-carrillo-vs-chance-larson/": [
@@ -3693,54 +3673,34 @@
       "r": [{"who":"Chance James Larson","t":"Chance Larson"}," continues on with a 10-2 record with his Branded Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-2/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-first-timers-3/": [
     {
       "t": "p",
-      "r": ["The second part of the October 19th Forbidden & Limited List has been revealed! Here’s the latest batch of changes:"]
+      "r": ["The tournament hall at YCS Houston has lots of experienced Duelists who have competed at the highest levels of competition for years. But not all of this weekend’s attendees have been to a YCS event before. Check out some of the YCS Houston first-timers in attendance this weekend!"]
     },
     {
       "t": "p",
-      "r": [{"u":"Newly Forbidden:"}]
+      "r": [{"who":"Joseph Owen Kester","t":"Joseph Kester"}," from Denton, Texas has been playing the Yu-Gi-Oh! TRADING CARD GAME for a few years but has never competed at an event more competitive than one held by a local Official Tournament Store. Now, he’s competing in the Advanced Main Event at YCS Houston with his Enneacraft Deck for the first time ever! If things don’t go his way in the competition today, he’s hoping to play in some Genesys Format Public Events tomorrow. He’s enjoying his time here at the venue. “I didn’t expect everything to be so wide open,” he explained. “You can really see everything when you walk in, and the livestream stage is really impressive.”"]
     },
     {
       "t": "p",
-      "r": ["Charmer Quartet in Bloom"]
+      "r": [{"who":"Jesus Francisco Martinez Loera","t":"Jesus Martinez"}," from Freeport, Texas played the Yu-Gi-Oh! TRADING CARD GAME when he was younger, and picked it back up after the release of ",{"i":"Chaos Origins"},". He has competed at local tournaments, but never attended a more competitive event. Now, he’s competing in the Advanced Format Main Event at YCS Houston with his Elfnote Deck, which he has been practicing using at his local events. Jesus is impressed by how organized the tournament hall is and is excited for the tournament to begin. His favorite card in his Extra Deck is ",{"b":"Stardust Dragon"},". “I grew up on 5D’s,” he explained."]
     },
     {
       "t": "p",
-      "r": ["Beelze of the Diabolic Dragons"]
+      "r": [{"who":"Garrison Nick Fowler","t":"Garrison Fowler"}," from San Antonio, Texas has been collecting cards for about 6 years, but just started playing in 2024. He has competed in Regional Qualifier and local tournaments over the past few years, but never competed in a tournament as large as a YCS! He’s competing in the Advanced Main Event this weekend with his Deck that combines ",{"b":"Red Dragon Archfiend"}," with ",{"b":"Light and Darkness Ritual"},". Garrison is enjoying seeing Yu-Gi-Oh! TRADING CARD GAME personalities that he knows from the online community, like ",{"who":"Jesse Dean Kotton","t":"Jesse Kotton"}," and ",{"who":"Ittipat Arunnaveesiri","t":"Ittipat Arunnaveesiri"},", walking around the venue."]
     },
     {
       "t": "p",
-      "r": ["Trishula, Dragon of the Ice Barrier"]
+      "r": [{"who":"Shane Dylan Mosley","t":"Shane Mosley"}," from Rowlett, Texas has been playing the Yu-Gi-Oh! TRADING CARD GAME for nearly six months, and took it seriously over the past two weeks as he prepared for this weekend’s Advanced Main Event. He competed in 1 local tournament in his Dueling career, and now he’s competing with the best at YCS Houston using his Fiendsmith Hecahands Chimera Deck. “I love that I can do so many Fusions. My favorite part of the Deck is how easy it is to Summon ",{"b":"D/D/D Wave High King Caesar"}," with the Fiendsmith engine.” Shane is enjoying the tournament hall. “Everyone is really nice, and I found some cards from the vendors I’ve been looking to get for a while,” he said."]
     },
     {
       "t": "p",
-      "r": ["XX-Saber Gottoms"]
+      "r": [{"who":"Matthew David Ray Hitt","t":"Matthew Hitt"}," from Prosper, Texas traveled to YCS Houston with ",{"who":"Shane Dylan Mosley","t":"Shane Mosley"},", and played the Yu-Gi-Oh! TRADING CARD GAME when he was younger. He stopped for a while, and picked the game back up a year and a half ago. Now, he’s competing in the Advanced Main Event with his Elfnote Ars Magna Deck. “The Deck is fun and I like the playstyle,” he explained. “I can also Summon ",{"b":"Crystal Wing Synchro Dragon"},", which is my favorite card in the Deck.” Matthew played in two Regional Qualifiers this year, but never entered an event as large as a YCS. He’s enjoying the larger venue, and likes the banners that are set up for a photo op."]
     },
     {
       "t": "p",
-      "r": ["D/D/D Wave High King Caesar"]
-    },
-    {
-      "t": "p",
-      "r": ["Secret Village of the Spellcasters"]
-    },
-    {
-      "t": "p",
-      "r": ["Anti-Spell Fragrance"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Newly Limited:"}]
-    },
-    {
-      "t": "p",
-      "r": ["Branded Opening"]
-    },
-    {
-      "t": "p",
-      "r": ["You can see the previous update right here. Check back for another update today, and two more tomorrow!"]
+      "r": ["Good luck to all of our first-timers at YCS Houston!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-round-11-feature-match-aeres-james-alexander-ham-vs-ivan-alberto-robledo-villa/": [
@@ -3805,18 +3765,50 @@
       "r": [{"who":"Aeres James Alexander Ham","t":"Aeres Ham"}," takes this Match with Angelechy!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-saturdays-dragon-duel-top-4/": [
+  "https://yugiohblog.konami.com/2026/ycs/63795/": [
     {
       "t": "p",
-      "r": ["We have our Top 4 for Saturday’s Dragon Duel Tournament at YCS Houston!"]
+      "r": ["We just had the BIG 1",{"s":"st"}," Anniversary Genesys points update, which brought a ton of shakeups to the format. After one day of Genesys Duels here at YCS Houston, we’ve seen some trends emerge."]
     },
     {
       "t": "p",
-      "r": ["From left to right:\n1st Place – Vincent F.\n2nd Place – Maxwell S.\n3rd Place – Fergus G.\n4th Place – Michael M."]
+      "r": [{"u":"Skull Meister"}]
     },
     {
       "t": "p",
-      "r": ["Congratulations to these young Duelists!"]
+      "r": ["Since the beginning of Genesys, ",{"b":"Skull Meister"}," has been 0 points. With a useful effect for almost any Deck, and no additional cost to include, it’s become one of the go-to monsters of the format. The points update gave ",{"b":"Skull Meister"}," a cost of 1 point now, but we’re still seeing it in plenty of Decks. Duelists are still willing to use their flex spots to include the card in their Main and Side Decks."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Destruction and Banishment options"}]
+    },
+    {
+      "t": "p",
+      "r": ["The most recent update dropped ",{"b":"Heavy Storm"}," to just 4 points, which is significantly lower than similar cards ",{"b":"Lightning Storm"}," and ",{"b":"Harpie’s Feather Duster"},". This adjustment has been enough to bring ",{"b":"Heavy Storm"}," to the spotlight as a way to break through mass amounts of spells and traps. This is especially important these days with decks like Angelechy and Labrynth that load up their spells and traps and/or rely on Field Spells."]
+    },
+    {
+      "t": "p",
+      "r": ["For ways to remove just a single spell or trap, ",{"b":"Cosmic Cyclone"}," remains the top choice. It was bumped up to 1 point not long ago, but the ability to banish its target is well worth the 1 point and the 1000 Life Points. We also occasionally see ",{"b":"Typhoon"},", since it can be played from the hand even if your opponent goes first – important against Angelechy."]
+    },
+    {
+      "t": "p",
+      "r": ["To take on monsters, we’ve got plenty of ",{"b":"Dark Hole"}," in the mix. This card was dropped to just 1 point in a past update, and it seems like Duelists prefer to use the cheaper but more specific cards like ",{"b":"Dark Hole"}," and ",{"b":"Heavy Storm"},", as opposed to the flexible cards that cost more points like ",{"b":"Lightning Storm"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Ancient Fairy Dragon"}]
+    },
+    {
+      "t": "p",
+      "r": ["With no point cost, ",{"b":"Ancient Fairy Dragon"}," is seeing a lot of use again lately. This is primarily appearing in Angelechy Decks, where it can find your important Field Spells. Not only do Angelechy have two different Field Spells (allowing ",{"b":"Ancient Fairy Dragon"}," to swap between them), but the Dragon is also able to destroy an opponent’s key Field Spell to advance your own gameplan. When ",{"b":"Terraforming"}," costs 20 points, this is a great alternative that you don’t even have to draw to use."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Dark Time Wizard and Friends"}]
+    },
+    {
+      "t": "p",
+      "r": ["The ",{"b":"Dark Time Wizard"}," theme from ",{"i":"Beyond the Brave"}," debuted with a small number of initial points. Some Decks have space to include a ",{"b":"Dark Time Wizard"}," engine, since the Wizard itself only costs 5 points each. While ",{"b":"Swiftwind Panther Warrior"}," and ",{"b":"Alligator’s Dragon Knight"}," also cost points, the rest of the associated cards are free. That means Duelists can splash three copies of ",{"b":"Dark Time Wizard"}," for just 15 points, along with cards like ",{"b":"Fisherman of Legend"}," and ",{"b":"Foolish Graverobber"},". We saw Jeff Jones do this in his Round 1 Feature Match, using ",{"b":"Foolish Graverobber"}," with his Labrynth Trap Cards."]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-round-13-feature-match-safwaan-muhammed-rahman-vs-pedro-luis-rodriguez/": [
@@ -3905,10 +3897,10 @@
       "r": [{"who":"Safwaan Muhammed Rahman","t":"Safwaan Rahman"}," takes this Match with his ",{"b":"Dark Time Wizard"}," K9’s!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-3/": [
+  "https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-2/": [
     {
       "t": "p",
-      "r": ["The third update to the October 19th Forbidden & Limited List was just shown on the live stream!"]
+      "r": ["The second part of the October 19th Forbidden & Limited List has been revealed! Here’s the latest batch of changes:"]
     },
     {
       "t": "p",
@@ -3916,31 +3908,31 @@
     },
     {
       "t": "p",
-      "r": ["Pharaonic Advent"]
+      "r": ["Charmer Quartet in Bloom"]
     },
     {
       "t": "p",
-      "r": ["Cross-Sheep"]
+      "r": ["Beelze of the Diabolic Dragons"]
     },
     {
       "t": "p",
-      "r": ["Sayuja Skull Dread"]
+      "r": ["Trishula, Dragon of the Ice Barrier"]
     },
     {
       "t": "p",
-      "r": ["Cupsy★Yummy Way"]
+      "r": ["XX-Saber Gottoms"]
     },
     {
       "t": "p",
-      "r": ["Gozen Match"]
+      "r": ["D/D/D Wave High King Caesar"]
     },
     {
       "t": "p",
-      "r": ["Rivalry of Warlords"]
+      "r": ["Secret Village of the Spellcasters"]
     },
     {
       "t": "p",
-      "r": ["There Can Be Only One"]
+      "r": ["Anti-Spell Fragrance"]
     },
     {
       "t": "p",
@@ -3948,15 +3940,11 @@
     },
     {
       "t": "p",
-      "r": ["Toon Bookmark"]
+      "r": ["Branded Opening"]
     },
     {
       "t": "p",
-      "r": ["Toon Table of Contents"]
-    },
-    {
-      "t": "p",
-      "r": ["These changes are in addition to the previous announcements from this weekend, found here and here. We’ll have two more announcements tomorrow, so check back for the final updates!"]
+      "r": ["You can see the previous update right here. Check back for another update today, and two more tomorrow!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-round-14-feature-match-creighton-pree-vs-odnam-gallardo/": [
@@ -4027,6 +4015,140 @@
     {
       "t": "p",
       "r": [{"who":"Odnam Gallardo","t":"Odnam Gallardo"}," wins the Match with his Deck built around ",{"b":"Light and Darkness Ritual"}," and finishes the Swiss Rounds with an 11-3 record!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-saturdays-dragon-duel-top-4/": [
+    {
+      "t": "p",
+      "r": ["We have our Top 4 for Saturday’s Dragon Duel Tournament at YCS Houston!"]
+    },
+    {
+      "t": "p",
+      "r": ["From left to right:\n1st Place – Vincent F.\n2nd Place – Maxwell S.\n3rd Place – Fergus G.\n4th Place – Michael M."]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations to these young Duelists!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/advanced-top-8-feature-match-jamie-hunter-vs-dylan-dallmeyer/": [
+    {
+      "t": "p",
+      "r": [{"who":"Jamie Lewis Hunter","t":"Jamie Hunter"}," from the United Kingdom and 16-year-old ",{"who":"Dylan Ray Dallmeyer","t":"Dylan Dallmeyer"}," from Carmine, Texas both made it to the Top 8 with their Angelechy Decks. ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," finished the Swiss Rounds with a 13-1 record to secure a first-place finish after the Swiss Rounds, and Dylan Dalllmeyer – who is competing in his second-ever YCS tournament – finished the Swiss Rounds with an 11-3 record, making it into eighth place with some strong tiebreakers. Now, these two Duelists are facing off against one another! One of them will advance to the Top 4 and the other will be eliminated. It’s time to Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel One"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jamie Lewis Hunter","t":"Hunter"}," opened up Duel 1 with ",{"b":"Angelechy Strategy Score"},", ",{"b":"Ghost Ogre & Snow Rabbit"},", ",{"b":"Foolish Burial"},", and 2 copies of ",{"b":"Angelechy Opening to e4"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["During the Standby Phase, ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," activated the effect of ",{"b":"Mulcharmy Fuwalos"},". After it resolved, he activated Opening to e4! He placed ",{"b":"Angelechy Problem"}," from his Deck onto his field, Special Summoned ",{"b":"Angelechy Enlisted"},", and placed ",{"b":"Angelechy Castellan"}," into his Spell & Trap Card Zone. He activated Castellan’s effect, but lost out to the effect of ",{"b":"Ghost Ogre & Snow Rabbit"},". ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," entered his Main Phase and then used ",{"b":"Foolish Burial Goods"}," to send ",{"b":"Angelechy Disturbance"}," from his Deck to his Graveyard. He activated Strategy Score to add ",{"b":"Angelechy Verdict"}," from his Deck to his hand next. He banished Disturbance from his Graveyard to activate its effect but lost out to ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"},"’s ",{"b":"Ash Blossom & Joyous Spring"},". ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," Set 3 cards to his back row before ending his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," drew a card and ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," flipped Opening to e4 in the Standby Phase. He placed ",{"b":"Angelechy Endgame Problem"}," on his field, Special Summoned Enlisted, and then placed ",{"b":"Angelechy Bastion"}," in his Spell & Trap Card Zone. He used Bastion’s effect to place ",{"b":"Angelechy Shatranga"}," in his Spell & Trap Card Zone and then used Shatranga’s effect to add Opening to e4 from his Deck to his hand. In his Main Phase, ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," used his Problem’s effect by discarding Endgame Problem. He Special Summoned Enlisted from his Extra Deck and placed ",{"b":"Angelechy Destrier"}," in his Spell & Trap Card Zone. He activated Destrier’s effect to try to add a card to his hand, but ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," Chained ",{"b":"Angelechy Verdict"}," to banish all of ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"},"’s cards! Next, ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," activated the effect of his Verdict by banishing it from his Graveyard. He sent Enlisted to his Graveyard in order to place Destrier in his back row and he used Destrier’s effect to add Strategy Score from his Deck to his hand. Next, ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," activated ",{"b":"Pot of Desires"},"! He banished the top 10 cards of his Deck face-down to draw 2 cards from his Deck. He activated ",{"b":"Foolish Burial Goods"}," next, sending ",{"b":"Angelechy Disturbance"}," from his Deck to his Graveyard. Next, he activated ",{"b":"Angelechy Opposition"},". ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," Chained Opening to e4. ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," placed Problem from his Deck onto his field, Special Summoned Destrier to the Extra Monster Zone, and placed Castellan into his Spell & Trap Card Zone. ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," resolved the effect of Opposition to Special Summon Seneschal to ",{"who":"Jamie Lewis Hunter","t":"Hunter"},"’s field and place Destrier in his own Spell & Trap Card Zone. He used Destrier’s effect to add ",{"b":"Angelechy Brilliant Move"}," to his hand and neither player Special Summoned a monster with Seneschal’s effect. ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," banished Disturbance from his Graveyard to add Problem from his Deck to his hand and then banished Opposition from his Graveyard to return 5 of the Angelechy cards he had in his Graveyard and banishment back into his Deck. ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," activated Problem and then activated its effect by discarding Problem. He Special Summoned Enlisted from his Extra Deck and placed Castellan into his back row. He activated Brilliant Move to return Destrier to his Extra Deck and Special Summon it. He Tuned Destrier with Enlisted to Synchro Summon ",{"b":"Assault Blackwing – Kusanagi the Gathering Storm"}," with 7000 ATK. ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," conceded, immediately realizing that Kusanagi would attack Destrier and Seneschal to wipe out all of his Life Points."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Dylan Ray Dallmeyer","t":"Dylan Dallmeyer"}," wins the first Duel of the Match!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel Two"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jamie Lewis Hunter","t":"Hunter"}," opened up Duel 2 with ",{"b":"Rainbow Bridge Bifrost"},", ",{"b":"Angelechy Problem"},", ",{"b":"Dominus Purge"},", ",{"b":"Inspector Boarder"},", ",{"b":"Angelechy Brilliant Move"},". He Normal Summoned ",{"b":"Inspector Boarder"}," and then activated ",{"b":"Angelechy Problem"},". He discarded Brilliant Move to activate Problem’s effect. He Special Summoned Enlisted from his Extra Deck and placed Destrier from his Extra Deck into his Spell & Trap Card Zone. He activated Destrier’s effect and added ",{"b":"Angelechy Opposition"}," from his Deck to his hand. He activated Opposition and ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," Chained the effect of ",{"b":"Mulcharmy Fuwalos"}," from his hand. ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," Special Summoned Seneschal to ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"},"’s field, allowing ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," to draw a card with Fuwalos’s effect, and placed Bastion in his back row. He used Bastion’s effect to place Shatranga in his Spell & Trap Card Zone. He used Shatranga’s effect to add ",{"b":"Angelechy Verdict"}," from his Deck to his hand. He Set the Verdict and then ended his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," drew a card and then entered his Main Phase."]
+    },
+    {
+      "t": "p",
+      "r": ["He switched his Seneschal into Attack Position and then attacked ",{"b":"Inspector Boarder"}," to destroy it. In Main Phase 2, he activated ",{"b":"Angelechy Problem"},". He discarded Disturbance to activate its effect and Special Summoned Enlisted from his Extra Deck before placing Bastion in his Spell & Trap Card Zone. He activated Bastion’s effect to place Shatranga in his Spell and Trap Card Zone and activated Shatranga’s effect, prompting ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," to flip ",{"b":"Angelechy Verdict"}," and banish all of ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"},"’s cards! ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," lost 500 Life Points with each effect he activated while Destrier was face-up on the field, so he dropped down to 5500 Life Points after using all of those card effects. Next, ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," banished Disturbance from his Graveyard to add ",{"b":"Angelechy Problem"}," from his Deck to his hand. He lost another 500 Life Points. He activated Problem’s effect by discarding Opposition. He Special Summoned Enlisted and placed Destrier in his back row, losing another 500 Life Points. He used Destrier’s effect to add Brilliant Move to his hand, losing another 500 Life Points, then activated Brilliant Move. He returned Destrier to his Extra Deck and then Special Summoned it, losing another 500 Life Points. He Tuned Enlisted with Destrier to Synchro Summon ",{"b":"Crystron Phoenix"},"! He activated its effect to banish all of the cards in ",{"who":"Jamie Lewis Hunter","t":"Hunter"},"’s Spell & Trap Card Zone and all of the Spells and Traps in ",{"who":"Jamie Lewis Hunter","t":"Hunter"},"’s Graveyard. Next, ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," banished Opposition from his Graveyard to return 5 Angelechy Synchro Monsters from banishment and his Graveyard to his Deck. He activated Strategy Score next, but lost out to ",{"who":"Jamie Lewis Hunter","t":"Hunter"},"’s ",{"b":"Dominus Purge"},". ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," ended his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jamie Lewis Hunter","t":"Hunter"}," drew ",{"b":"Foolish Burial Goods"}," and activated it to send Disturbance from his Deck to his Graveyard. He banished Disturbance to add ",{"b":"Angelechy Opposition"}," from his Deck to his hand. He activated Opposition to Special Summon Seneschal to ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"},"’s field and place Destrier in his back row. The effects of Seneschal and Destrier activated as Chain Links 1 and 2, and ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," Chained the effect of ",{"b":"Ghost Ogre & Snow Rabbit"}," from his hand to destroy Destrier. But it was over moments later! ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," Special Summoned Castellon and Tuned it with Enlisted to Synchro Summon Kusanagi the Gathering Storm with 6500 Attack Points. It attacked Seneschal and inflicted enough piercing damage to end the Duel!"]
+    },
+    {
+      "t": "p",
+      "r": ["The Match is going to a third and final Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel Three"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," went first in Duel 3 and ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," activated Opening to e4 in his Standby Phase. He placed ",{"b":"Angelechy Problem"}," from his Deck onto his field, Special Summoned Destrier, and then placed Castellan in his Spell & Trap Card Zone. He activated Castellan’s effect, but lost out to ",{"b":"Ash Blossom & Joyous Spring"},". Next, ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," activated ",{"b":"Hey, Space Trunade!"}," to return Castellan to the Extra Deck and return and ",{"b":"Angelechy Problem"}," to ",{"who":"Jamie Lewis Hunter","t":"Hunter"},"’s hand. ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," placed a card from his hand on the bottom of his Deck. ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," Set 2 cards to his back row and then ended his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jamie Lewis Hunter","t":"Hunter"}," drew ",{"b":"Angelechy Verdict"}," and added it to his hand of ",{"b":"Foolish Burial Goods"},", ",{"b":"Angelechy Strategy Score"},", ",{"b":"Ghost Ogre & Snow Rabbit"},", and ",{"b":"Shiina, Twin Tempests of Celestial Thunder"},". He entered his Standby Phase and ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," flipped Opening to e4. He placed ",{"b":"Angelechy Endgame Problem"}," on his field from his Deck, Special Summoned Enlisted, and placed Bastion in his Spell & Trap Card Zone. He activated Bastion’s effect, but lost out to ",{"who":"Jamie Lewis Hunter","t":"Hunter"},"’s ",{"b":"Ghost Ogre & Snow Rabbit"},". ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," entered his Main Phase and activated Strategy Score to add ",{"b":"Angelechy Opposition"}," from his Deck to his hand. He activated Opposition and ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," Chained Disturbance. He moved Enlisted onto ",{"who":"Jamie Lewis Hunter","t":"Hunter"},"’s field, adjacent to the Opposition, to negate Opposition’s effect. In a new Chain, Enlisted’s effect activated and ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," returned Enlisted to his Extra Deck and Special Summoned Bastion. ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," activated ",{"b":"Foolish Burial Goods"}," next, sending ",{"b":"Angelechy Brilliant Move"}," from his Deck to his Graveyard. ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," banished Disturbance from his Graveyard to add Opposition from his Deck to his hand. Next, ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," banished Brilliant Move from his Graveyard and sent Verdict from his hand to his Graveyard to Special Summon Seneschal from his Extra Deck. He activated its effect to Special Summon Enlisted from his Extra Deck, and ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," declined to Special Summon a monster. ",{"who":"Jamie Lewis Hunter","t":"Hunter"}," used Destrier’s effect to banish Bastion and then ",{"who":"Dylan Ray Dallmeyer","t":"Dallmeyer"}," conceded, realizing he was defeated."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jamie Lewis Hunter","t":"Jamie Hunter"}," is moving on to the Top 4 of the Advanced Main Event at YCS Houston!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-3/": [
+    {
+      "t": "p",
+      "r": ["The third update to the October 19th Forbidden & Limited List was just shown on the live stream!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Newly Forbidden:"}]
+    },
+    {
+      "t": "p",
+      "r": ["Pharaonic Advent"]
+    },
+    {
+      "t": "p",
+      "r": ["Cross-Sheep"]
+    },
+    {
+      "t": "p",
+      "r": ["Sayuja Skull Dread"]
+    },
+    {
+      "t": "p",
+      "r": ["Cupsy★Yummy Way"]
+    },
+    {
+      "t": "p",
+      "r": ["Gozen Match"]
+    },
+    {
+      "t": "p",
+      "r": ["Rivalry of Warlords"]
+    },
+    {
+      "t": "p",
+      "r": ["There Can Be Only One"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Newly Limited:"}]
+    },
+    {
+      "t": "p",
+      "r": ["Toon Bookmark"]
+    },
+    {
+      "t": "p",
+      "r": ["Toon Table of Contents"]
+    },
+    {
+      "t": "p",
+      "r": ["These changes are in addition to the previous announcements from this weekend, found here and here. We’ll have two more announcements tomorrow, so check back for the final updates!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/event-information/ycs-houston-tx-2026-public-event-information/": [
