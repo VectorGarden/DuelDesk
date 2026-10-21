@@ -17,6 +17,7 @@ That is the right question for a scraper.
 from __future__ import annotations
 
 import hashlib
+import http.client
 import json
 import ssl
 import time
@@ -179,6 +180,15 @@ def load_state(path: Path) -> dict:
 
 def save_state(path: Path, state: dict) -> None:
     Path(path).write_text(json.dumps(state, indent=2, sort_keys=True) + "\n")
+
+
+# What the blog not being there looks like, as against the scraper being wrong.
+# A connection that times out or is refused, a server error, a reply cut off
+# halfway -- and a sitemap that is not XML, which is what the blog served on 24
+# September 2026 while it was down: an HTML page, two and a half thousand lines
+# of it, where a list of seven links belongs.
+UNREACHABLE = (urllib.error.URLError, TimeoutError, ConnectionError,
+               http.client.HTTPException, ET.ParseError)
 
 
 def check_for_updates(fetcher: Fetcher, state_path: Path) -> tuple[bool, str | None]:

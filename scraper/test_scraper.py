@@ -10649,3 +10649,113 @@ class TestTheBrandIsNotPartOfTheName(unittest.TestCase):
         from index import unbranded
         self.assertEqual(unbranded("latin america remote duel ycs"),
                          "latin america remote duel ycs")
+
+
+class TestWhenTheBlogIsDown(unittest.TestCase):
+    """Konami's blog goes down, and a scraper red for the whole outage reads
+    like a broken one. On 21 October 2026 its one server stopped answering for
+    hours while every other Konami site was up, and every run that tried failed.
+
+    A scheduled tick skips instead, and says so. A day of it fails, because by
+    then it may be no outage at all: a blog that moved its sitemap, or started
+    refusing us, looks just like one and never stops.
+    """
+
+    def setUp(self):
+        from datetime import datetime, timezone
+        self.NOW = datetime(2026, 10, 21, 19, 27, tzinfo=timezone.utc)
+
+    def hours(self, h, m=0):
+        from datetime import timedelta
+        return self.NOW + timedelta(hours=h, minutes=m)
+
+    def test_the_first_failure_starts_the_clock(self):
+        from cadence import unreachable
+        state, give_up = unreachable({"high_water": "h", "last_check": "c"}, self.NOW)
+        self.assertEqual(state["unreachable_since"], self.NOW.isoformat())
+        self.assertFalse(give_up)
+
+    def test_later_failures_keep_the_clock_it_started(self):
+        # Measured from the first failure, not from the last check that worked:
+        # a quiet cadence checks every few hours, and that would count time
+        # from before the outage began.
+        from cadence import unreachable
+        first, _ = unreachable({}, self.NOW)
+        later, give_up = unreachable(first, self.hours(23, 59))
+        self.assertEqual(later["unreachable_since"], self.NOW.isoformat())
+        self.assertFalse(give_up)
+
+    def test_a_day_of_it_is_a_failure(self):
+        from cadence import unreachable
+        first, _ = unreachable({}, self.NOW)
+        _, give_up = unreachable(first, self.hours(24))
+        self.assertTrue(give_up)
+
+    def test_nothing_the_cadence_reads_moves(self):
+        # last_check is the cadence's record of reaching the blog. Left alone,
+        # the next tick tries again on the usual schedule.
+        from cadence import unreachable
+        before = {"high_water": "h", "last_check": "c", "last_change": "x"}
+        after, _ = unreachable(before, self.NOW)
+        self.assertEqual({k: after[k] for k in before}, before)
+
+    def test_reaching_it_again_ends_the_outage(self):
+        from cadence import record, unreachable
+        down, _ = unreachable({"high_water": "h"}, self.NOW)
+        self.assertNotIn("unreachable_since", record(down, self.NOW, "h"))
+
+    def gate(self, transport):
+        import tempfile
+        from fetch import Fetcher, check_for_updates
+        tmp = Path(tempfile.mkdtemp())
+        return check_for_updates(Fetcher(cache_dir=tmp / "c", delay=0, transport=transport),
+                                 tmp / "state.json")
+
+    def assertUnreachable(self, transport):
+        from fetch import UNREACHABLE
+        with self.assertRaises(UNREACHABLE):
+            self.gate(transport)
+
+    def test_a_server_that_does_not_answer_is_down(self):
+        import urllib.error
+
+        def silent(url, ua):
+            raise urllib.error.URLError(TimeoutError("timed out"))
+        self.assertUnreachable(silent)
+
+    # A timeout or a reset while connecting comes back from urllib wrapped in
+    # URLError; the same while the reply is being read comes back as itself.
+    def test_a_reply_that_stops_coming_is_down(self):
+        def stalled(url, ua):
+            raise TimeoutError("The read operation timed out")
+        self.assertUnreachable(stalled)
+
+    def test_a_connection_dropped_halfway_is_down(self):
+        def reset(url, ua):
+            raise ConnectionResetError(54, "Connection reset by peer")
+        self.assertUnreachable(reset)
+
+    def test_a_reply_cut_off_is_down(self):
+        import http.client
+
+        def short(url, ua):
+            raise http.client.IncompleteRead(b"<?xml", 4096)
+        self.assertUnreachable(short)
+
+    def test_a_page_where_the_sitemap_belongs_is_down(self):
+        # 24 September 2026: an HTML page, two and a half thousand lines of
+        # it, where a list of seven links belongs.
+        self.assertUnreachable(lambda url, ua: "<html><body><p>Down for maintenance</body></html>")
+
+    def test_the_scraper_being_wrong_is_not_the_blog_being_down(self):
+        # Only what an outage looks like is excused. Anything else is ours.
+        from fetch import UNREACHABLE
+
+        def broken(url, ua):
+            raise TypeError("a bug in the scraper")
+        try:
+            self.gate(broken)
+        except UNREACHABLE:
+            self.fail("a bug was read as an outage")
+        except TypeError:
+            pass
