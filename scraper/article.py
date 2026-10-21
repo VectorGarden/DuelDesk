@@ -433,7 +433,7 @@ def holds_decks(blocks: list[dict]) -> bool:
     events have one; 41 have deck lists.
 
     Deliberately less than the page's reading, and checked against it: the
-    list in test/fixtures/deck-posts.json is what read.js finds, and the test
+    list in test/fixtures/deck-posts.json is what decks.js finds, and the test
     asserts this agrees about all 4,027 articles. Agreeing is the whole
     requirement -- this says whether, the page says what.
     """

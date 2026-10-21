@@ -46,6 +46,10 @@ jobs:
 
       # The JavaScript lives inside index.html, so it never reaches a bundler
       # or a linter. These run the page itself in jsdom against the real data.
+      #
+      # Not side by side with the Python suite, though nothing stops it: on
+      # this runner the two and the HTML report compete for four CPUs, and run
+      # together they took 54 seconds -- what they took one after the other.
       - name: Run tests
         run: npm test
 
@@ -85,8 +89,19 @@ jobs:
 
       # The blog scraper is Python and tested against saved fixtures, so it
       # runs offline -- the parser is the part worth guarding, not the fetch.
+      #
+      # One fixture is not saved but written first: which posts hold deck
+      # lists, as the page reads them. The scraper is tested against that
+      # answer over every article in the archive, and the archive grows every
+      # time Konami publishes -- so a snapshot taken once went stale the first
+      # time deck lists came out after it, and this failed six runs running
+      # over YCS Houston's Top 32, which the page and the scraper agreed about
+      # all along. Written fresh, a failure here is the two disagreeing, and
+      # nothing else.
       - name: Run scraper tests
-        run: python3 -m unittest discover -s scraper -p 'test_*.py' -v
+        run: |
+          node scripts/build-deck-posts.mjs
+          python3 -m unittest discover -s scraper -p 'test_*.py' -v
 
       # The archive is fetched from JavaScript, so the reference check cannot
       # see it. This also verifies the records in it actually add up -- for
