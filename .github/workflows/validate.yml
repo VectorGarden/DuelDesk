@@ -44,18 +44,39 @@ jobs:
       - name: Install dev dependencies
         run: npm ci
 
-      # The JavaScript lives inside index.html, so it never reaches a bundler
-      # or a linter. These run the page itself in jsdom against the real data.
-      - name: Run tests
-        run: npm test
+      # The two test suites and the HTML report read the repository and write
+      # nothing the others read, so they run side by side. The JavaScript suite
+      # was 30 of this job's 70-odd seconds and the Python one 19, one after
+      # the other.
+      - parallel:
+          # The JavaScript lives inside index.html, so it never reaches a bundler
+          # or a linter. These run the page itself in jsdom against the real data.
+          - name: Run tests
+            run: npm test
 
-      # Informational: unfiltered, so genuine CSS problems stay visible in the
-      # log even though they do not gate. Expect stale CSS complaints here --
-      # see the note on the gating step below.
-      - name: HTML report (unfiltered, never fails)
-        run: |
-          JAR="$(node -p "String(require('vnu-jar'))")"
-          java -jar "$JAR" --format gnu index.html || true
+          # The blog scraper is Python and tested against saved fixtures, so it
+          # runs offline -- the parser is the part worth guarding, not the fetch.
+          #
+          # One fixture is not saved but rewritten first: which posts hold deck
+          # lists, as the page reads them. The scraper is tested against that
+          # answer over every article in the archive, and the archive grows
+          # every time Konami publishes -- so a snapshot taken once went stale
+          # the first time deck lists came out after it, and the test failed
+          # six runs running over YCS Houston's Top 32, which the page and the
+          # scraper agreed about all along. Read fresh, a failure here is the
+          # two disagreeing, and nothing else.
+          - name: Run scraper tests
+            run: |
+              node scripts/build-deck-posts.mjs
+              python3 -m unittest discover -s scraper -p 'test_*.py' -v
+
+          # Informational: unfiltered, so genuine CSS problems stay visible in
+          # the log even though they do not gate. Expect stale CSS complaints
+          # here -- see the note on the gating step below.
+          - name: HTML report (unfiltered, never fails)
+            run: |
+              JAR="$(node -p "String(require('vnu-jar'))")"
+              java -jar "$JAR" --format gnu index.html || true
 
       # Gating, and deliberately HTML-only:
       #   * --errors-only, so a new warning cannot break an unrelated PR.
@@ -82,11 +103,6 @@ jobs:
       # well-formedness.
       - name: Validate feed.xml
         run: python3 .github/scripts/check-feed.py feed.xml
-
-      # The blog scraper is Python and tested against saved fixtures, so it
-      # runs offline -- the parser is the part worth guarding, not the fetch.
-      - name: Run scraper tests
-        run: python3 -m unittest discover -s scraper -p 'test_*.py' -v
 
       # The archive is fetched from JavaScript, so the reference check cannot
       # see it. This also verifies the records in it actually add up -- for

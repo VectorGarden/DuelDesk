@@ -20,15 +20,24 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dom = new JSDOM('<!doctype html><body></body>');
 const { document } = dom.window;
 
-const read = readFileSync(join(ROOT, 'read.js'), 'utf8');
+// decks.js whole: it was written to read paragraphs and give back decks
+// without touching the page it is on, so it needs no carving up. Slicing it out
+// of read.js by marker strings is what broke when #262 moved it there -- a
+// marker that is gone is index -1, the slice is nonsense, and the first anyone
+// heard of it was "linesOf is not defined" weeks later, from a test that had
+// been comparing against a file this could no longer write.
+const engine = readFileSync(join(ROOT, 'decks.js'), 'utf8');
 const common = readFileSync(join(ROOT, 'common.js'), 'utf8');
-const slice = (s, a, b) => s.slice(s.indexOf(a), s.indexOf(b));
+const slice = (s, a, b) => {
+  const from = s.indexOf(a), to = s.indexOf(b);
+  if (from < 0 || to < 0) throw new Error(`common.js no longer has ${from < 0 ? a : b}`);
+  return s.slice(from, to);
+};
 
 const api = new Function(
   'document', 'NodeFilter', 'btoa', 'esc', 'playerLink', 'safeUrl',
   slice(common, 'const EMPHASIS', 'function cardKey')
-  + slice(read, 'const DECK_COUNT', 'let popup = null;')
-  + slice(read, 'const PILES', 'function showPile')
+  + engine
   + '; return {linesOf, layoutOf, decksByPlace, blocksHtml};')(
   document, dom.window.NodeFilter,
   (s) => Buffer.from(s, 'binary').toString('base64'),
