@@ -99,11 +99,44 @@ def record(state: dict, now: datetime, high: str | None) -> dict:
     """
     updated = dict(state)
     updated["last_check"] = now.isoformat()
+    # Reached, so whatever outage there was is over.
+    updated.pop("unreachable_since", None)
     previous = state.get("high_water")
     if high is not None and previous is not None and high != previous:
         updated["last_change"] = now.isoformat()
     updated["high_water"] = high
     return updated
+
+
+# How long the blog may be out of reach before a run says so by failing.
+#
+# Konami's blog goes down, and not for long: on 24 September 2026 it served an
+# HTML page where its sitemap belongs, and on 21 October its one server stopped
+# answering for hours while every other Konami site was up. Each time, every run
+# that tried failed, and a scraper that is red for a whole outage reads exactly
+# like one that is broken -- which this one was not.
+#
+# But a day is long enough to need somebody. A blog that has moved its sitemap,
+# or started refusing us, looks the same as an outage for its first hour and
+# never stops looking like one, and a run that skipped quietly forever would
+# hide that it had stopped working.
+OUTAGE_GRACE = timedelta(hours=24)
+
+
+def unreachable(state: dict, now: datetime) -> tuple[dict, bool]:
+    """The state to store after a check that could not reach the blog, and
+    whether it has been out of reach long enough to fail over.
+
+    Measured from the first check that failed, not the last one that worked: a
+    quiet cadence checks only every few hours, and the time since the last good
+    check would count an outage from before it began. Nothing else in the state
+    moves -- not `last_check`, which is the cadence's record of reaching the
+    blog, so the next tick tries again on the usual schedule.
+    """
+    updated = dict(state)
+    since = state.get("unreachable_since") or now.isoformat()
+    updated["unreachable_since"] = since
+    return updated, now - datetime.fromisoformat(since) >= OUTAGE_GRACE
 
 
 def is_ongoing(newest_post: datetime | None, now: datetime) -> bool:
