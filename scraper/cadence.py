@@ -101,6 +101,7 @@ def record(state: dict, now: datetime, high: str | None) -> dict:
     updated["last_check"] = now.isoformat()
     # Reached, so whatever outage there was is over.
     updated.pop("unreachable_since", None)
+    updated.pop("outage_reported", None)
     previous = state.get("high_water")
     if high is not None and previous is not None and high != previous:
         updated["last_change"] = now.isoformat()
@@ -125,18 +126,36 @@ OUTAGE_GRACE = timedelta(hours=24)
 
 def unreachable(state: dict, now: datetime) -> tuple[dict, bool]:
     """The state to store after a check that could not reach the blog, and
-    whether it has been out of reach long enough to fail over.
+    whether this check is the one that fails over it.
 
     Measured from the first check that failed, not the last one that worked: a
     quiet cadence checks only every few hours, and the time since the last good
     check would count an outage from before it began. Nothing else in the state
     moves -- not `last_check`, which is the cadence's record of reaching the
     blog, so the next tick tries again on the usual schedule.
+
+    Once a day, and not on every check after the first day. The blog went down
+    on 21 October 2026 and stayed down, and failing every run past the day
+    meant ten red runs in a day and a half, each a notice to somebody who
+    already knew. One a day says the outage is still going on as plainly, and
+    the checks between say when the next one will come.
     """
     updated = dict(state)
     since = state.get("unreachable_since") or now.isoformat()
     updated["unreachable_since"] = since
-    return updated, now - datetime.fromisoformat(since) >= OUTAGE_GRACE
+    if now - datetime.fromisoformat(since) < OUTAGE_GRACE:
+        return updated, False
+    reported = state.get("outage_reported")
+    if reported and now - datetime.fromisoformat(reported) < OUTAGE_GRACE:
+        return updated, False
+    updated["outage_reported"] = now.isoformat()
+    return updated, True
+
+
+def next_report(state: dict) -> datetime | None:
+    """When an outage already reported is due to be reported again."""
+    reported = state.get("outage_reported")
+    return datetime.fromisoformat(reported) + OUTAGE_GRACE if reported else None
 
 
 def is_ongoing(newest_post: datetime | None, now: datetime) -> bool:
