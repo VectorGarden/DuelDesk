@@ -110,7 +110,7 @@ jobs:
           from datetime import datetime, timezone
           sys.path.insert(0, 'scraper')
           from fetch import Fetcher, check_for_updates, UNREACHABLE
-          from cadence import record, unreachable
+          from cadence import next_report, record, unreachable
           state_path = pathlib.Path('.scrape-state/state.json')
           before = json.loads(state_path.read_text()) if state_path.exists() else {}
           now = datetime.now(timezone.utc)
@@ -127,9 +127,10 @@ jobs:
           except UNREACHABLE as exc:
               # The blog is down, which is Konami's and not this scraper's, and a
               # scheduled tick can only skip -- there is nothing to read. Said as
-              # a warning so it is seen, and only failed over once it has gone on
-              # for a day. A run somebody asked for fails now: they wanted work
-              # done, and a green run that did none would tell them it was.
+              # a warning so it is seen, and failed over once it has gone on for
+              # a day, then once a day after that. A run somebody asked for fails
+              # now: they wanted work done, and a green run that did none would
+              # tell them it was.
               after, give_up = unreachable(before, now)
               state_path.write_text(json.dumps(after, indent=2) + "\n")
               line = (f"The blog could not be reached ({type(exc).__name__}: {exc}), "
@@ -140,7 +141,10 @@ jobs:
                   print(f"::error::{line} " + ("That is more than a day: it may have moved, "
                         "or be refusing us." if give_up else "This run was asked for, so it fails."))
                   sys.exit(1)
-              print(f"::warning::{line} Skipping this tick.")
+              due = next_report(after)
+              print(f"::warning::{line} Skipping this tick" + (
+                  f"; reported as down, and will be again from {due.isoformat()} "
+                  "if it still is." if due else "."))
               pathlib.Path('gate.txt').write_text('no')
               pathlib.Path('reached.txt').write_text('no')
           else:

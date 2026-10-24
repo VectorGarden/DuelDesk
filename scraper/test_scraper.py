@@ -10691,6 +10691,43 @@ class TestWhenTheBlogIsDown(unittest.TestCase):
         _, give_up = unreachable(first, self.hours(24))
         self.assertTrue(give_up)
 
+    def down_for(self, *hours):
+        """The state after failed checks at each of these hours, and whether
+        the last one failed over."""
+        from cadence import unreachable
+        state, give_up = {}, False
+        for h in hours:
+            state, give_up = unreachable(state, self.hours(h))
+        return state, give_up
+
+    def test_the_first_day_reports_nothing(self):
+        state, _ = self.down_for(0, 5, 23)
+        self.assertNotIn("outage_reported", state)
+
+    def test_after_the_first_failure_the_next_waits_a_day(self):
+        # Failing every run past the day was ten red runs in a day and a half,
+        # each a notice to somebody who already knew.
+        state, give_up = self.down_for(0, 24, 27)
+        self.assertFalse(give_up)
+        self.assertEqual(state["outage_reported"], self.hours(24).isoformat())
+
+    def test_and_then_fails_again(self):
+        state, give_up = self.down_for(0, 24, 27, 48)
+        self.assertTrue(give_up)
+        self.assertEqual(state["outage_reported"], self.hours(48).isoformat())
+
+    def test_a_long_outage_inherited_is_reported_at_once(self):
+        # What the first run after this change found: down two days already,
+        # failing on every check, and nothing yet recording a report.
+        from cadence import unreachable
+        _, give_up = unreachable({"unreachable_since": self.hours(-48).isoformat()}, self.NOW)
+        self.assertTrue(give_up)
+
+    def test_the_warning_between_says_when_the_next_failure_is(self):
+        from cadence import next_report
+        self.assertIsNone(next_report(self.down_for(0)[0]))
+        self.assertEqual(next_report(self.down_for(0, 24)[0]), self.hours(48))
+
     def test_nothing_the_cadence_reads_moves(self):
         # last_check is the cadence's record of reaching the blog. Left alone,
         # the next tick tries again on the usual schedule.
@@ -10700,9 +10737,12 @@ class TestWhenTheBlogIsDown(unittest.TestCase):
         self.assertEqual({k: after[k] for k in before}, before)
 
     def test_reaching_it_again_ends_the_outage(self):
-        from cadence import record, unreachable
-        down, _ = unreachable({"high_water": "h"}, self.NOW)
-        self.assertNotIn("unreachable_since", record(down, self.NOW, "h"))
+        from cadence import record
+        down, _ = self.down_for(0, 24)
+        back = record(down, self.hours(30), "h")
+        self.assertNotIn("unreachable_since", back)
+        # And the next outage is a new one, with a day of its own.
+        self.assertNotIn("outage_reported", back)
 
     def gate(self, transport):
         import tempfile
