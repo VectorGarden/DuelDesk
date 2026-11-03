@@ -1,37 +1,13 @@
 {
-  "fetched": "2026-10-03",
+  "fetched": "2026-11-03",
   "events": [
     {
-      "event": "Yu-Gi-Oh! x eFootball™ Collaboration",
-      "listed": "Yu-Gi-Oh! x eFootball™ Collaboration",
+      "event": "Holiday Charity Event 2026",
+      "listed": "Holiday Charity Event 2026",
       "location": "North America & Latin America",
-      "starts": "2025-09-27",
-      "ends": null,
-      "url": "https://www.yugioh-card.com/en/events/ygo_x_efootball/"
-    },
-    {
-      "event": "YCS Guayaquil",
-      "listed": "Yu-Gi-Oh! Championship Series Guayaquil, Ecuador 2026",
-      "location": "Guayaquil, Ecuador",
-      "starts": "2026-10-02",
-      "ends": "2026-10-04",
-      "url": "https://www.yugioh-card.com/en/events-item/2026-ycs-ecuador/"
-    },
-    {
-      "event": "New York Comic Con 2026",
-      "listed": "New York Comic Con 2026",
-      "location": "New York, NY",
-      "starts": "2026-10-08",
-      "ends": "2026-10-11",
-      "url": "https://www.yugioh-card.com/en/events-item/2026_nycc/"
-    },
-    {
-      "event": "YCS Houston",
-      "listed": "Yu-Gi-Oh! Championship Series Houston, Texas 2026",
-      "location": "Houston, TX",
-      "starts": "2026-10-16",
-      "ends": "2026-10-18",
-      "url": "https://www.yugioh-card.com/en/events-item/2026-ycs-houston/"
+      "starts": "2026-10-31",
+      "ends": "2026-12-31",
+      "url": "https://www.yugioh-card.com/en/events-item/holidaycharity2026/"
     },
     {
       "event": "YCS Orlando",
@@ -56,6 +32,30 @@
       "starts": "2026-12-04",
       "ends": "2026-12-06",
       "url": "https://www.yugioh-card.com/en/events-item/2026-na-rdycs/"
+    },
+    {
+      "event": "YCS Lima",
+      "listed": "Yu-Gi-Oh! Championship Series Lima, Peru 2027",
+      "location": "Lima, Peru",
+      "starts": "2027-02-05",
+      "ends": "2027-02-07",
+      "url": "https://www.yugioh-card.com/en/events-item/2027-ycs-lima/"
+    },
+    {
+      "event": "YCS Santo Domingo",
+      "listed": "Yu-Gi-Oh! Championship Series Santo Domingo, Dominican Republic 2027",
+      "location": "Santo Domingo, Dominican Republic",
+      "starts": "2027-02-26",
+      "ends": "2027-02-28",
+      "url": "https://www.yugioh-card.com/en/events-item/2027-ycs-santo-domingo/"
+    },
+    {
+      "event": "YCS Veracruz",
+      "listed": "TEAM Yu-Gi-Oh! Championship Series Veracruz, Mexico 2027",
+      "location": "Veracruz, Mexico",
+      "starts": "2027-03-26",
+      "ends": "2027-03-28",
+      "url": "https://www.yugioh-card.com/en/events-item/2027-teamycs-veracruz/"
     }
   ]
 }
