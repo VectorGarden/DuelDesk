@@ -647,17 +647,11 @@
   "Kevin Leo Hinostroza Munoz": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Caique F.": {
-    "as": "Caique Souza Ferreira"
-  },
   "Fabio S.": {
     "as": "Fabio Henrique Andrade Silva"
   },
-  "Bradd C.": {
-    "as": "Bradd Richard Cyr"
-  },
-  "Russell C.": {
-    "as": "Russell Foster Chizek"
+  "Caique F.": {
+    "as": "Caique Souza Ferreira"
   },
   "Daniel P.": {
     "as": "Daniel Palacios"
@@ -665,13 +659,19 @@
   "Justin S.": {
     "as": "Justin Andrew Singh"
   },
+  "Russell C.": {
+    "as": "Russell Foster Chizek"
+  },
+  "Bradd C.": {
+    "as": "Bradd Richard Cyr"
+  },
   "Evan B.": {
     "as": "Evan Matthew Burlaga"
   },
-  "Jacob S.": {
-    "as": "Jacob Douglas Selle"
-  },
   "Alan D.": {
     "as": "Alan Evan Dale"
+  },
+  "Jacob S.": {
+    "as": "Jacob Douglas Selle"
   }
 }
