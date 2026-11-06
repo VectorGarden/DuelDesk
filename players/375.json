@@ -77,7 +77,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tadeo Emmanuel Llanes Martinez": [
     {"e":"2014-wcq-ca","f":"Dragon Duel"}
@@ -153,7 +154,8 @@
     {"e":"2016-ycs-providence-rhode-island"},
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-08-quebec","f":"Genesys"}
+    {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Luca Souza Soares": [
     {"e":"2016-ycs-rio-de-janeiro"}
@@ -602,6 +604,9 @@
   "Alexander Patricio Salavarria": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
+  "Nicholas Lira Lages": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jakob Michael-John Mojeske": [
     {"e":"na-ygoc-2022"}

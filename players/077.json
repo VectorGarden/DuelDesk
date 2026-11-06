@@ -404,7 +404,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Garrett Quincy Paulson": [
     {"e":"2023-ycs-indianapolis"},

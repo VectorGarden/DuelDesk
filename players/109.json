@@ -119,7 +119,8 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ryan Foster Combass": [
     {"e":"2015-150th-ycs-in-columbus"}
@@ -510,17 +511,17 @@
   "Blair Edward Flores": {
     "as": "Blair Edward G. Flores"
   },
-  "Calvin C.": {
-    "as": "Calvin Tam Chow"
-  },
   "Scott A.": {
     "as": "Scott Christian Adiconis"
+  },
+  "Andrei A.": {
+    "as": "Andrei Perez Ativo"
   },
   "Long V.": {
     "as": "Long Ngoc Vu"
   },
-  "Andrei A.": {
-    "as": "Andrei Perez Ativo"
+  "Calvin C.": {
+    "as": "Calvin Tam Chow"
   },
   "Elliot H.": {
     "as": "Elliot Arthur Horowitz"

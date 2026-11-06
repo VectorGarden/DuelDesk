@@ -587,7 +587,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Charles Henderson Miller V": [
     {"e":"2024-north-america-wcq"},

@@ -202,6 +202,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Mitchell Anthony Malfitano": [
@@ -537,6 +538,9 @@
   "Jean Gabriel Acevedo Carrasquillo": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Julian Koa Juvera": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Mauricio Sebastian Reyna Caraballo": [
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -550,13 +554,13 @@
   "Roger V.": {
     "as": "Roger Ricardo Visentin"
   },
-  "Anthony X.": {
-    "as": "Anthony Xu"
-  },
   "Fayzaan N.": {
     "as": "Fayzaan Mohammed Naeem"
   },
   "Llewelyn S.": {
     "as": "Llewelyn Richard Slone"
+  },
+  "Anthony X.": {
+    "as": "Anthony Xu"
   }
 }

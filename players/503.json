@@ -535,7 +535,8 @@
   "Scott James Costa": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Bobby’s Bench": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -604,6 +605,9 @@
   ],
   "Jorge Daniel Rojas": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Curtis Edward Carlton": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Hector Julio Montejo Navarro": [
     {"e":"remote-duel-ycs-february-2025"}

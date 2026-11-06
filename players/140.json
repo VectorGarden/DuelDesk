@@ -74,7 +74,8 @@
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-north-america-wcq"},
     {"e":"2023-05-ycs-philadelphia"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Joel Satcher Adams": [
     {"e":"2014-north-american-wcq"},
@@ -568,6 +569,9 @@
   ],
   "Cecilio Azael Aguilar": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Stacy Chad Turner": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jamil Carlos Aranda Cadima": [
     {"e":"remote-duel-ycs-january-2026"}

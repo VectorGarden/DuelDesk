@@ -555,7 +555,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Genesys"},
-    {"e":"2026-08-quebec","f":"Genesys"}
+    {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Matthew Carlos Ramos Lopes": [
     {"e":"2025-05-ycs-providence"},
@@ -627,6 +628,9 @@
   ],
   "Tyler Blake Norman": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Kyle Christopher Bailey Jr.": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Rodrigo Ibanez Cruz": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

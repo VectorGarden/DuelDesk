@@ -439,7 +439,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jonatan Stiven Torres": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}

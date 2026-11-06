@@ -494,7 +494,8 @@
   ],
   "Joshua Matthew Hernandez": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Purrely Support": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -584,10 +585,10 @@
   "Drtodd L.": {
     "as": "Drtodd Tony Leylekyan"
   },
-  "Piersen S.": {
-    "as": "Piersen Matthew Sukienik"
-  },
   "Robin S.": {
     "as": "Robin John Sharman"
+  },
+  "Piersen S.": {
+    "as": "Piersen Matthew Sukienik"
   }
 }

@@ -60,6 +60,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Carlos M. Salas": [
@@ -331,7 +332,8 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-ycs-richmond"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Robert Alan Hickman": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -481,6 +483,9 @@
   ],
   "Ethan John Castaneda": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Scott Peter Lewis Smith": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Horacio de Jesus Romero Jimenez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

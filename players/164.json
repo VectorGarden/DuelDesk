@@ -157,6 +157,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Dudley Canter Riner": [
@@ -313,6 +314,7 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Andrés Eduardo Salvador Ortiz": [
@@ -616,14 +618,14 @@
   "Gustavo Reyes Rodriguez": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Quoc H.": {
+    "as": "Quoc Minh Huynh"
+  },
   "Gerardo G.": {
     "as": "Gerardo Garza"
   },
   "Rich C.": {
     "as": "Rich Cheng"
-  },
-  "Quoc H.": {
-    "as": "Quoc Minh Huynh"
   },
   "Marshall M.": {
     "as": "Marshall James Marengo"

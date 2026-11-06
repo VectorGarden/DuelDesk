@@ -153,7 +153,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tairone Weldon Stutson": [
     {"e":"2015-ycs-chicago","cut":"Top 32","deck":"Qliphorts"}
@@ -379,7 +380,8 @@
   "Jamarl Andre Tyndall": [
     {"e":"2022-ycs-charlotte"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Dalton Kenneth Parrish": [
     {"e":"2022-ycs-charlotte"},
@@ -412,7 +414,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Brandon Michael Caudell": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -571,14 +574,14 @@
   "Luiz N.": {
     "as": "Luiz Cordeiro da Silva Neto"
   },
+  "Yuhang L.": {
+    "as": "Yuhang Li"
+  },
   "Jesse C.": {
     "as": "Jesse Marvin Coblentz"
   },
   "Gjelil K.": {
     "as": "Gjelil Krasniqi"
-  },
-  "Yuhang L.": {
-    "as": "Yuhang Li"
   },
   "Brode C.": {
     "as": "Brode Paul Cummings"

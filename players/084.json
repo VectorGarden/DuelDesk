@@ -62,6 +62,7 @@
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
     {"e":"2025-ycs-mexico-city-mexico","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Pedro Eddye Parreno": [
@@ -490,7 +491,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Codey Jonathan Robert Seavey": [
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Daniel Conti Contreras": [
     {"e":"2025-central-america-wcq"}
@@ -522,12 +524,14 @@
   ],
   "Zachary Aiden Conley": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Adis Muhamedagic": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Eldlich"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "José Miguel López Castillo": [
     {"e":"2026-02-300th-na"}
@@ -557,22 +561,22 @@
   "Murilo T.": {
     "as": "Murilo Ranzani Trivella"
   },
-  "Chimmey N.": {
-    "as": "Chimmey Nguyen"
-  },
   "William J.": {
     "as": "William Donald Johnson"
   },
-  "Vincent P.": {
-    "as": "Vincent Quoc Pham"
+  "Chimmey N.": {
+    "as": "Chimmey Nguyen"
   },
-  "Alexander R.": {
-    "as": "Alexander Rey Roman"
+  "Dominic W.": {
+    "as": "Dominic Lee Whalawitsa"
   },
   "Matthew F.": {
     "as": "Matthew Arden Fox"
   },
-  "Dominic W.": {
-    "as": "Dominic Lee Whalawitsa"
+  "Alexander R.": {
+    "as": "Alexander Rey Roman"
+  },
+  "Vincent P.": {
+    "as": "Vincent Quoc Pham"
   }
 }

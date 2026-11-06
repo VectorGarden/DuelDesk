@@ -194,7 +194,8 @@
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-05-ycs-philadelphia"},
-    {"e":"2025-12-rdycs-na"}
+    {"e":"2025-12-rdycs-na"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Luciano Daniel Lossio": [
     {"e":"2017-south-american-wcq","f":"Dragon Duel","cut":"Top 4","deck":"True Draco Zoodiac"}
@@ -615,16 +616,19 @@
   "Alan Aldahir Ayala": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Maxwell Christion Gordon": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Matthew Adam Casiero": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Australia","cut":"Top 4"}
   ],
-  "Julius W.": {
-    "as": "Julius Wanjala Wandabwa"
+  "Keaton S.": {
+    "as": "Keaton Lawrence Serna"
   },
   "Nelson T.": {
     "as": "Nelson Tam"
   },
-  "Keaton S.": {
-    "as": "Keaton Lawrence Serna"
+  "Julius W.": {
+    "as": "Julius Wanjala Wandabwa"
   }
 }

@@ -468,7 +468,8 @@
   ],
   "Justin Daniel Morgan": [
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Victor Geofredo Rivas": [
     {"e":"2024-ycs-raleigh"}
@@ -543,6 +544,9 @@
   ],
   "Anthony Javier Delgado": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Demetrius Terrell Woods": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Hassan M. Lewis": [
     {"e":"na-ygoc-2022"}

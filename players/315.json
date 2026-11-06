@@ -443,6 +443,9 @@
   "Christian Alfonso Tobalina Pinargote": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Harris Ethan Lansky Plofsky": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Christian David Villegas Gonzalez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -452,10 +455,10 @@
   "William Bak": {
     "as": "William S. Bak"
   },
-  "Kameron T.": {
-    "as": "Kameron Biscaya Tran"
-  },
   "Nischay V.": {
     "as": "Nischay Vallabhaneni"
+  },
+  "Kameron T.": {
+    "as": "Kameron Biscaya Tran"
   }
 }

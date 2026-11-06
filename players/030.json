@@ -212,6 +212,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Randy Steven Kurtz": [
@@ -467,7 +468,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Lucia Jathe": [
     {"e":"2025-12-rdycs-na"}
@@ -525,19 +527,22 @@
   "Ernesto Estrada Sanchez": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Peyton Zachary Paul": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Ryan Charles Krueger": [
     {"e":"na-ygoc-2022"}
   ],
-  "Johnathan L.": {
-    "as": "Johnathan Van Luu"
-  },
   "Taylor S.": {
     "as": "Taylor Justin Sager"
   },
-  "Herman H.": {
-    "as": "Herman Hans Hansson"
+  "Johnathan L.": {
+    "as": "Johnathan Van Luu"
   },
   "Marco C.": {
     "as": "Marco Antonio Cabrera"
+  },
+  "Herman H.": {
+    "as": "Herman Hans Hansson"
   }
 }

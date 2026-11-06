@@ -368,6 +368,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Alain Daniel Camous": [
@@ -476,7 +477,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cristian Apolo Santillan Lima": [
     {"e":"2022-team-ycs-quito"}
@@ -650,10 +652,10 @@
   "Jose Eduardo Coria Ramirez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Edmund B.": {
-    "as": "Edmund Philip Beltran"
-  },
   "Ruben R.": {
     "as": "Ruben Ilai Rodriguez"
+  },
+  "Edmund B.": {
+    "as": "Edmund Philip Beltran"
   }
 }

@@ -189,7 +189,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Genesys","cut":"Final","deck":"Radiant Typhoon"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Gary Jerome Brooks": [
     {"e":"2016-north-american-wcq"}
@@ -443,7 +444,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Crisitan Camilo Molina Bermudez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
@@ -608,13 +610,13 @@
   "Reese Anthony Villagrana": [
     {"e":"na-ygoc-2022"}
   ],
+  "Trayone K.": {
+    "as": "Trayone Matthew King"
+  },
   "Giuseppe M.": {
     "as": "Giuseppe Marra"
   },
   "Benjamin V.": {
     "as": "Benjamin Alexis Vidrio"
-  },
-  "Trayone K.": {
-    "as": "Trayone Matthew King"
   }
 }

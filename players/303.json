@@ -322,7 +322,8 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Genesys"}
+    {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Fernando Tadeo Alvarado": [
     {"e":"2019-ycs-pasadena"}

@@ -285,7 +285,8 @@
     {"e":"2025-north-america-wcq","cut":"Top 32","deck":"Bystial @Ignister Maliss"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Mitsurugi Sky Striker","cut":"Top 8"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jacob Thomas Sobeck": [
     {"e":"2019-ycs-chicago"},

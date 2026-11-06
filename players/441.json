@@ -629,7 +629,8 @@
   ],
   "Nicholas Daniel Fiete": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tyler Scott Collis": [
     {"e":"2025-north-america-wcq"}
@@ -688,6 +689,9 @@
   ],
   "Brandon Michael Miller Danta": [
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Yerik Josef Faulkner": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Victor Daniel Bolanos Chaves": [

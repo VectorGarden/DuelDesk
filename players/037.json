@@ -382,7 +382,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Carlos Alberto Guillen": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -583,16 +584,16 @@
   "Connor Maguire": {
     "as": "Connor R. Maguire"
   },
-  "Tej A.": {
-    "as": "Tej C. Amin"
-  },
   "Kurt A.": {
     "as": "Kurt Seiji Achiu"
+  },
+  "Danny M.": {
+    "as": "Danny Xavier Martinez"
   },
   "Vasya P.": {
     "as": "Vasya David Pincus"
   },
-  "Danny M.": {
-    "as": "Danny Xavier Martinez"
+  "Tej A.": {
+    "as": "Tej C. Amin"
   }
 }

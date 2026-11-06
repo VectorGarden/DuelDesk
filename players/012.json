@@ -77,6 +77,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Ethan Robert Thomas Tucker": [
@@ -565,7 +566,8 @@
   ],
   "Neloshan Prakash": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Justice Zachary Mason Lanthier": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -629,22 +631,22 @@
   "Tamir B.": {
     "as": "Tamir Lawrence Brown"
   },
-  "Trung L.": {
-    "as": "Trung Minh Le"
+  "Yi Z.": {
+    "as": "Yi Hui Zheng"
   },
   "Gavin J.": {
     "as": "Gavin Yiting Jiang"
   },
-  "Yi Z.": {
-    "as": "Yi Hui Zheng"
-  },
   "Vivek V.": {
     "as": "Vivek Mohan Vattyam"
   },
-  "Tino A.": {
-    "as": "Tino London Aguinaldo"
+  "Trung L.": {
+    "as": "Trung Minh Le"
   },
   "Quaye K.": {
     "as": "Quaye Song Kennerly"
+  },
+  "Tino A.": {
+    "as": "Tino London Aguinaldo"
   }
 }

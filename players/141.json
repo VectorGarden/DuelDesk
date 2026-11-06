@@ -441,7 +441,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Top 8","deck":"Blitzclique"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Raymond Maceda Lopez": [
     {"e":"2023-north-america-wcq"},
@@ -593,6 +594,9 @@
   ],
   "Teagan James Franklin Rix": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Matthew Dylan Massey": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christopher Michael Brozstek": [
     {"e":"na-ygoc-2022"}

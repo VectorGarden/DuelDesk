@@ -283,7 +283,8 @@
     {"e":"2019-ycs-knoxville"},
     {"e":"2023-north-america-wcq"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Genesys","deck":"Gold Pride P.U.N.K."}
+    {"e":"2026-02-300th-na","f":"Genesys","deck":"Gold Pride P.U.N.K."},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Leo Fox Krebs": [
     {"e":"2018-north-america-wcq"},
@@ -530,6 +531,9 @@
   ],
   "Lauro Manuel Antonio Zuniga Peralta": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Christian Clark Ardizzone": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Sebastian Rodriguez Falcon": [
     {"e":"ycs-lima-peru-2023"}

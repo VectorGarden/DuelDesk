@@ -139,6 +139,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Roberto Serna Banquez": [
@@ -341,7 +342,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"K9 Vanquish Soul"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Quoc Minh Huynh": [
     {"e":"2018-north-america-wcq"},

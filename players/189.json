@@ -143,7 +143,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tilkuram Videsh Rai": [
     {"e":"2014-north-american-wcq"}
@@ -207,6 +208,7 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Charles Scott Carlin Jr.": [
@@ -319,7 +321,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Gustavo Adolfo Cano": [
     {"e":"201503-guatemala"},
@@ -747,10 +750,10 @@
   "Jean Pierre Salcedo Ramirez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Marshall N.": {
-    "as": "Marshall Blade Navarro"
-  },
   "Ernest O.": {
     "as": "Ernest Richard Oliphant"
+  },
+  "Marshall N.": {
+    "as": "Marshall Blade Navarro"
   }
 }

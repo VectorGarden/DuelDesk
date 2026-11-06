@@ -394,7 +394,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nicholas Jackson": [
     {"e":"2025-02-ycs-orlando"}

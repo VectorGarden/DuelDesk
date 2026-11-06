@@ -563,7 +563,8 @@
   ],
   "Christopher Andrew Castro": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ian Alexander Besso": [
     {"e":"2025-05-ycs-providence"}
@@ -604,7 +605,8 @@
     {"e":"2025-ycs-vancouver"}
   ],
   "Ariel Josue Duarte": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Saul C.": [
     {"e":"2026-04-team-ycs-las-vegas"}

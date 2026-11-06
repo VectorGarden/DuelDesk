@@ -423,7 +423,8 @@
   "Bulmaro Ordonez Paz": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Paul Michael Cronen Jr.": [
     {"e":"2025-02-ycs-orlando"},
@@ -511,6 +512,9 @@
   "Roger Munoz": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
+  "Cody Mathew Stevens": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Angel David Pulido Alvarado": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

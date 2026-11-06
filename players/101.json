@@ -459,7 +459,8 @@
   "Tyler Wayne Stebner": [
     {"e":"2024-08-ycs-sacramento"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Brent John Robert Ardolino": [
     {"e":"2024-08-ycs-sacramento"}
@@ -530,7 +531,8 @@
     {"e":"2025-ycs-sao-paulo-brazil"}
   ],
   "Teodoro Salcedo Jr.": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Aviskar Ghansam": [
     {"e":"2026-02-300th-na","f":"Advanced"}

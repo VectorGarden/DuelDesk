@@ -288,7 +288,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Exosister"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Giovanni Remy Horton": [
     {"e":"2017-ycs-atlanta"}

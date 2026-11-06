@@ -465,7 +465,8 @@
   ],
   "Hayden Thorne Pressel": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nicholas Jon Anderson": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -554,6 +555,12 @@
   "Doll House": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Christopher Anthony Smith": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Noah Tyler Shively": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Roberto Dall’orto Gallegos": [
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -563,10 +570,10 @@
   "Kristopher Patrick Stewart": {
     "as": "Kristopher J Patrick Stewart"
   },
-  "Duane G.": {
-    "as": "Duane Lamont Graves"
-  },
   "Joshua F.": {
     "as": "Joshua Chad Forbis"
+  },
+  "Duane G.": {
+    "as": "Duane Lamont Graves"
   }
 }

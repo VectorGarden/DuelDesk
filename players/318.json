@@ -359,7 +359,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cayden Lander Treadway": [
     {"e":"2023-ycs-richmond"}
@@ -491,11 +492,11 @@
   "Christian Danilo Penagos Rojas": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Philip D.": {
-    "as": "Philip Win Duong"
-  },
   "Erick G.": {
     "as": "Erick Serrano Gutierrez"
+  },
+  "Philip D.": {
+    "as": "Philip Win Duong"
   },
   "Darea Y.": {
     "as": "Darea Timmy You"

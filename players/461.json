@@ -547,7 +547,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Cameron Lucas Rucker": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Michael Curtis Hayward": [
     {"e":"2025-02-ycs-orlando"}
@@ -627,13 +628,16 @@
   "Herberth Styben Ochoa Ticun": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Nicholas Alexander Booth": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Melissa Michelle Rivas Montoya": [
     {"e":"uds-2016-elsalvador"}
   ],
-  "Korbin A.": {
-    "as": "Korbin Taylor Alexis"
-  },
   "Kevin A.": {
     "as": "Kevin Anthony Avalos"
+  },
+  "Korbin A.": {
+    "as": "Korbin Taylor Alexis"
   }
 }

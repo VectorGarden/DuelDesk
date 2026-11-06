@@ -492,7 +492,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Vic Andrew Frederick": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Erik Solorzano": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -504,7 +505,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Joseph Robert White": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jose Ignacio Araya Vargas": [
     {"e":"2025-ycs-buenos-aires-argentina"},
@@ -567,11 +569,11 @@
   "Anderson S.": {
     "as": "Anderson Rocha da Silva"
   },
-  "Liwen L.": {
-    "as": "Liwen Li"
-  },
   "Trevor C.": {
     "as": "Trevor Glenn Commer"
+  },
+  "Liwen L.": {
+    "as": "Liwen Li"
   },
   "Ryota S.": {
     "as": "Ryota Christopher Saito"

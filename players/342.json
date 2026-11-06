@@ -108,6 +108,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 8"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Abramo Jude Manfredonia": [
@@ -575,7 +576,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Bryce John Berkowitz": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Marvin Michael Kammerer": [
     {"e":"2025-02-ycs-orlando"},
@@ -635,17 +637,17 @@
   "Josh Kelly": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Final","deck":"Light and Darkness Ritual"}
   ],
-  "Dylan G.": {
-    "as": "Dylan Maxwell Graves"
+  "James E.": {
+    "as": "James Robert Esquibel"
   },
   "Peter N.": {
     "as": "Peter Phuong Nguyen"
   },
+  "Dylan G.": {
+    "as": "Dylan Maxwell Graves"
+  },
   "Etienne B.": {
     "as": "Etienne Jose Bonin"
-  },
-  "James E.": {
-    "as": "James Robert Esquibel"
   },
   "Jared P.": {
     "as": "Jared Mikel Perez"

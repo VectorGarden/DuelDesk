@@ -92,7 +92,8 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jacob Jan Stachowiak": [
     {"e":"2015-150th-ycs-in-columbus"}
@@ -344,7 +345,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jhonny Alfaro": [
     {"e":"2018-ycs-san-jose-costa-rica"}

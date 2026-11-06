@@ -519,7 +519,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Ronald Javier Bravo": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Steison Valentin Ruiz": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -607,10 +608,10 @@
   "David Solomon Tamirat": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Ayden P.": {
-    "as": "Ayden Chase Patricelli"
-  },
   "Isiah B.": {
     "as": "Isiah Allen Bourdeau"
+  },
+  "Ayden P.": {
+    "as": "Ayden Chase Patricelli"
   }
 }

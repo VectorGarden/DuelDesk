@@ -536,7 +536,8 @@
     {"e":"2025-north-america-wcq"}
   ],
   "Devon Zachary Westphal": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Kim I borrow that?": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -606,17 +607,17 @@
   "Lucas T.": {
     "as": "Lucas Cardoso Toniol"
   },
-  "Logan J.": {
-    "as": "Logan Patrick Johnson"
+  "Delbert F.": {
+    "as": "Delbert Lee Feltenberger"
   },
   "Raul M.": {
     "as": "Raul Machuca"
   },
-  "Delbert F.": {
-    "as": "Delbert Lee Feltenberger"
-  },
   "Zackary W.": {
     "as": "Zackary Jacob Wilkinson"
+  },
+  "Logan J.": {
+    "as": "Logan Patrick Johnson"
   },
   "Andre C.": {
     "as": "Andre Hou Gin Chan"

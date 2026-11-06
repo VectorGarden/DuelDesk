@@ -510,7 +510,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Eric Bryan Simpson": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Sean Riley Parr": [
     {"e":"2025-02-ycs-orlando"}
@@ -536,7 +537,8 @@
   "Pedro Vicente Alvarez Jr.": [
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Centur-Ion White Forest"},
-    {"e":"2026-08-quebec","f":"Genesys"}
+    {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Diego Leonel Damas Rodriguez": [
     {"e":"2025-10-ycs-anaheim"}

@@ -640,7 +640,8 @@
   "Rei Dwain Reid": [
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Mariano Ezequiel Fernandez Cavassa": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -667,7 +668,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Dimitri Xavier Butler": [
-    {"e":"2026-02-300th-na","f":"Genesys","deck":"Adventurer Virtual World"}
+    {"e":"2026-02-300th-na","f":"Genesys","deck":"Adventurer Virtual World"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Grant Beausoliel French": [
     {"e":"2026-08-quebec","f":"Advanced"}

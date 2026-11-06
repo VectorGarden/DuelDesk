@@ -571,7 +571,8 @@
   ],
   "Alexander Dante Lacerna": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Lucas Paul Daffern": [
     {"e":"2025-02-ycs-orlando"},
@@ -632,11 +633,11 @@
   "Ezequiel A.": {
     "as": "Ezequiel Arevalo"
   },
-  "Tevin L.": {
-    "as": "Tevin Anthony Lam"
-  },
   "Amy K.": {
     "as": "Amy Catherine Kelly"
+  },
+  "Tevin L.": {
+    "as": "Tevin Anthony Lam"
   },
   "Eric M.": {
     "as": "Eric Alexander Mack"

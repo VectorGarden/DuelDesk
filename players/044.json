@@ -308,6 +308,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Rene Ernesto Ercole Orozco": [
@@ -690,7 +691,8 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Patric Dale Dean Williamson": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Alice Clark Byrd": [
     {"e":"2026-north-america-wcq"}
@@ -710,11 +712,11 @@
   "Ryan V.": {
     "as": "Ryan Douglas Villwock"
   },
-  "Julian V.": {
-    "as": "Julian Edwardo Valero"
-  },
   "Uhan C.": {
     "as": "Uhan Nazirtregeon Clarke"
+  },
+  "Julian V.": {
+    "as": "Julian Edwardo Valero"
   },
   "Bryce S.": {
     "as": "Bryce Thomas Sharp"

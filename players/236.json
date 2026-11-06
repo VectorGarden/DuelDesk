@@ -463,7 +463,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Kevin Gudino Escalona": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Team Waiter -1": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -546,11 +547,11 @@
   "Mitzy Ormeño Soria": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Emanuel R.": {
-    "as": "Emanuel Ramirez"
-  },
   "Ronald Y.": {
     "as": "Ronald Do Young"
+  },
+  "Emanuel R.": {
+    "as": "Emanuel Ramirez"
   },
   "Shaun M.": {
     "as": "Shaun Bruce McDonald"

@@ -571,7 +571,8 @@
   "Mikael Kebede Delelegn": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ruiyang Xu": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -676,16 +677,16 @@
   "Kyle N.": {
     "as": "Kyle Aidan Nance"
   },
-  "Vivek S.": {
-    "as": "Vivek Naresh Sreenivasan"
-  },
-  "Brandon F.": {
-    "as": "Brandon Bryan Ferrell"
-  },
   "Max C.": {
     "as": "Max Cardenas"
   },
+  "Vivek S.": {
+    "as": "Vivek Naresh Sreenivasan"
+  },
   "Yucheng L.": {
     "as": "Yucheng Li"
+  },
+  "Brandon F.": {
+    "as": "Brandon Bryan Ferrell"
   }
 }

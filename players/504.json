@@ -404,6 +404,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Thiago Bussola": [
@@ -601,6 +602,9 @@
   "Trevor Joe Kelty": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Khoa P.": {
+    "as": "Khoa Van Phan"
+  },
   "Jonathan O.": {
     "as": "Jonathan Gaetano Orlando"
   },
@@ -609,8 +613,5 @@
   },
   "Marcus S.": {
     "as": "Marcus Jairo Siu"
-  },
-  "Khoa P.": {
-    "as": "Khoa Van Phan"
   }
 }

@@ -524,6 +524,9 @@
   "Fábio Barboza De Freitas": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Joseph Eric Patalano": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Jorge Andres Garcia Guzman": [
     {"e":"wcq-2016-mexico"}
   ],
@@ -536,10 +539,10 @@
   "Givon H.": {
     "as": "Givon Allen Hester"
   },
-  "Gabriel G.": {
-    "as": "Gabriel Gutierrez"
-  },
   "Jeong L.": {
     "as": "Jeong Woo Lee"
+  },
+  "Gabriel G.": {
+    "as": "Gabriel Gutierrez"
   }
 }

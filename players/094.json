@@ -527,7 +527,8 @@
   "Ivan Alexis Perez Oquendo": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Xinwei Liu": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -560,6 +561,9 @@
   "Sterling Stein": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Noah Algernon Greer": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Pedro Juan Sighinolfi Villegas": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -569,10 +573,10 @@
   "Fernando M.": {
     "as": "Fernando Massahiro Alves Murata"
   },
-  "Angel R.": {
-    "as": "Angel Rodriguez-Cruz"
-  },
   "Jamal J.": {
     "as": "Jamal James"
+  },
+  "Angel R.": {
+    "as": "Angel Rodriguez-Cruz"
   }
 }

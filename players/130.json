@@ -433,7 +433,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Azamina Mitsurugi"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tevel Onyx Garland": [
     {"e":"2022-ycs-minneapolis"},
@@ -632,16 +633,16 @@
   "Pablo Alonso Rivera Luna": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Daniel E.": {
-    "as": "Daniel Christopher Evans"
-  },
   "Henry O.": {
     "as": "Henry Olivarez"
   },
-  "Anthony H.": {
-    "as": "Anthony Joseph Hubbs"
+  "Daniel E.": {
+    "as": "Daniel Christopher Evans"
   },
   "Shawn D.": {
     "as": "Shawn Hill Daley"
+  },
+  "Anthony H.": {
+    "as": "Anthony Joseph Hubbs"
   }
 }

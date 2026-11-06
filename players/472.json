@@ -202,6 +202,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024","won":true,"cut":"Final"},
     {"e":"remote-duel-ycs-january-2026"},
@@ -693,6 +694,9 @@
   ],
   "Rafael Rodriguez": [
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Marc Alan Durigon": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Azad D.": {

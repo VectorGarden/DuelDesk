@@ -375,7 +375,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Luis Angel Martinez Mendoza": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -505,7 +506,8 @@
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
   "Mathew Tyler Madison": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Maricruz Corona Coria": [
     {"e":"2026-02-300th-na"}

@@ -483,7 +483,8 @@
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Monarch"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jonathan Michael Mertz": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -517,7 +518,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Landin Duane Gillman": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Kyle David Egerdahl": [
     {"e":"2026-north-america-wcq"}
@@ -541,13 +543,13 @@
   "Fernando F.": {
     "as": "Fernando Maciel Ferreira"
   },
+  "Alejandro H.": {
+    "as": "Alejandro Hernandez"
+  },
   "Junlong W.": {
     "as": "Junlong Wu"
   },
   "Joseph V.": {
     "as": "Joseph Michael Vianello"
-  },
-  "Alejandro H.": {
-    "as": "Alejandro Hernandez"
   }
 }

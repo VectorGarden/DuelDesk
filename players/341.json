@@ -98,7 +98,8 @@
     {"e":"2016-uds-invitational-chicago"},
     {"e":"2016-ycs-origins"},
     {"e":"2017-north-american-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Joshua Tyson Henry": [
     {"e":"2014-north-american-wcq"},
@@ -626,7 +627,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Anthony Blake Inman": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Gregory Mark Vecchi": [
     {"e":"2025-02-ycs-orlando"}
@@ -684,17 +686,17 @@
   "Daigo Noguchi": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Owen A.": {
-    "as": "Owen Michael Alvarado"
+  "Nelvin L.": {
+    "as": "Nelvin Wai Yan Lo"
   },
   "Sebastian M.": {
     "as": "Sebastian Muralles"
   },
+  "Owen A.": {
+    "as": "Owen Michael Alvarado"
+  },
   "Dominik N.": {
     "as": "Dominik Jullian Nemeth"
-  },
-  "Nelvin L.": {
-    "as": "Nelvin Wai Yan Lo"
   },
   "Lijie D.": {
     "as": "Lijie Deng"

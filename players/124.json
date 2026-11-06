@@ -462,7 +462,8 @@
   ],
   "Andrew Max Vargas": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Yifei Zhan": [
     {"e":"2025-04-ycs-houston"},
@@ -505,10 +506,10 @@
   "Cristian Antony Naveros Chile": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Edward Q.": {
-    "as": "Edward Alberto Quijano"
-  },
   "Creighton P.": {
     "as": "Creighton Jevon Pree"
+  },
+  "Edward Q.": {
+    "as": "Edward Alberto Quijano"
   }
 }

@@ -486,7 +486,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Leosdany Espinosa Alvarez": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -614,13 +615,13 @@
   "Cheng Yu": {
     "as": "Cheng H. Yu"
   },
+  "Nigel N.": {
+    "as": "Nigel Nie"
+  },
   "Eulises E.": {
     "as": "Eulises Natanael Esquivel"
   },
   "Ed A.": {
     "as": "Ed Elton Devera Acepcion"
-  },
-  "Nigel N.": {
-    "as": "Nigel Nie"
   }
 }

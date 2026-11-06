@@ -469,6 +469,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Miguel Angel Cabrera Suarez": [
@@ -620,7 +621,8 @@
   "Apawan Moore": [
     {"e":"2024-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ronald Fabian Porras Alpizar": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}

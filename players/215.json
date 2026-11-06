@@ -373,7 +373,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys"},
-    {"e":"2026-08-quebec","f":"Genesys"}
+    {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Andres Muricio Sanchez Guerrero": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -567,13 +568,13 @@
   "Diego M.": {
     "as": "Diego Teodoro Medeiros"
   },
-  "Fernando L.": {
-    "as": "Fernando Miguel Lucas"
-  },
   "Brian G.": {
     "as": "Brian Jesus Garcia"
   },
   "Tyriq H.": {
     "as": "Tyriq Marquis Dewonye Hayes"
+  },
+  "Fernando L.": {
+    "as": "Fernando Miguel Lucas"
   }
 }

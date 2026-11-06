@@ -168,7 +168,8 @@
     {"e":"2018-ycs-atlanta"},
     {"e":"2019-03-atlanta-ga"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cody Garrett Christensen": [
     {"e":"2018-ycs-salt-lake-city"}

@@ -431,7 +431,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Team High Rise": [
     {"e":"2023-team-ycs-las-vegas"}

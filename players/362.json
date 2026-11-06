@@ -642,7 +642,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Gregory Bullock": [
     {"e":"2025-02-ycs-orlando"}
@@ -733,14 +734,14 @@
   "Yannik Ackermann": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Benjamin H.": {
-    "as": "Benjamin Michael Hansen"
+  "Albert L.": {
+    "as": "Albert Junghwan Lee"
   },
   "Marcus H.": {
     "as": "Marcus Anthony Ho"
   },
-  "Albert L.": {
-    "as": "Albert Junghwan Lee"
+  "Benjamin H.": {
+    "as": "Benjamin Michael Hansen"
   },
   "Dinh P.": {
     "as": "Dinh Khang Pham"

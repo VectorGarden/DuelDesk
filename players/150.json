@@ -411,7 +411,8 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Michael Joseph McGourn": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -573,10 +574,10 @@
   "Sebastian Daniel Garcia Cruz": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Benjamin Y.": {
-    "as": "Benjamin Jay Yates"
-  },
   "Connor A.": {
     "as": "Connor William Albury"
+  },
+  "Benjamin Y.": {
+    "as": "Benjamin Jay Yates"
   }
 }

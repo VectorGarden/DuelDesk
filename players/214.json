@@ -517,7 +517,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cesar Primo Beltran Ayma": [
     {"e":"2023-ycs-santa-cruz-de-la-sierra"}

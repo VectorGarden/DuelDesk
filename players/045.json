@@ -127,6 +127,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Edna Karina Guerrero Jaime": [
@@ -284,7 +285,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Louie Ventura Leon": [
     {"e":"2019-ycs-pasadena"}
@@ -484,7 +486,8 @@
   ],
   "Jeovanni Adreyan Queidon Flores": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Omar Alejandro Martinez Rodriguez": [
     {"e":"2026-02-300th-na"}

@@ -379,7 +379,8 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Hudson Ray Smith": [
     {"e":"2019-ycs-niagara-falls"}
@@ -564,7 +565,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "How’d They Top": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -638,10 +640,10 @@
   "Hayden Scott Griffis": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Bill T.": {
-    "as": "Bill Andrew Catacutan Teves"
-  },
   "Jeremy G.": {
     "as": "Jeremy Ryan Glassman"
+  },
+  "Bill T.": {
+    "as": "Bill Andrew Catacutan Teves"
   }
 }

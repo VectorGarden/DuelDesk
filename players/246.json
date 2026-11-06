@@ -516,7 +516,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Orvee Rian Candelario": [
     {"e":"2023-ycs-vancouver"}
@@ -624,6 +625,9 @@
   ],
   "Uziel Fernando Rosario": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Nicholas Ryan Oti": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cameron G.": {
     "as": "Cameron Vincent Grams"

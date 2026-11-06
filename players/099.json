@@ -367,6 +367,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jhamil Alejandro Romero Chavarria": [
@@ -685,11 +686,11 @@
   "Miguel Angel Marroquin Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Forbes K.": {
-    "as": "Forbes Elliot Ku"
-  },
   "Cameron S.": {
     "as": "Cameron David Smith"
+  },
+  "Forbes K.": {
+    "as": "Forbes Elliot Ku"
   },
   "Arturo A.": {
     "as": "Arturo Arestegui"

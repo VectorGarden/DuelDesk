@@ -526,7 +526,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Angel Gilberto Zamudio Vivas": [
     {"e":"2024-central-america-wcq"}
@@ -555,7 +556,8 @@
     {"e":"2024-ycs-indianapolis"}
   ],
   "Shane Patrick Campbell": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ryan Joseph Dunning": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -627,10 +629,10 @@
   "Benjamin Edward Levene": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Yoshi M.": {
-    "as": "Yoshi Joshua Miyagi"
-  },
   "John R.": {
     "as": "John Paul Ruiz"
+  },
+  "Yoshi M.": {
+    "as": "Yoshi Joshua Miyagi"
   }
 }

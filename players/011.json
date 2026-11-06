@@ -609,7 +609,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "George Edward Burmester": [
     {"e":"2025-02-ycs-orlando"},
@@ -662,22 +663,22 @@
   "Valerio Rozza": [
     {"e":"yu-gi-oh-world-championship-2013"}
   ],
-  "Sean M.": {
-    "as": "Sean Michael McQuillan"
-  },
   "Sam J.": {
     "as": "Sam Mingyan Jiang"
-  },
-  "Noah O.": {
-    "as": "Noah James Ochs"
   },
   "Jeremiah J.": {
     "as": "Jeremiah Buyco Jose"
   },
-  "Kasey C.": {
-    "as": "Kasey Ryan Corneliusen"
+  "Sean M.": {
+    "as": "Sean Michael McQuillan"
+  },
+  "Noah O.": {
+    "as": "Noah James Ochs"
   },
   "Pierry C.": {
     "as": "Pierry Sebastien Cange"
+  },
+  "Kasey C.": {
+    "as": "Kasey Ryan Corneliusen"
   }
 }

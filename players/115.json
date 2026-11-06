@@ -546,6 +546,9 @@
   "Simon Douglas Williams": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Jonathan Shaine Alley": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Ycaro Dos Santos Albuquerque": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -558,10 +561,10 @@
   "Joshua Joseph Distura": {
     "as": "Joshua Joseph Z. Distura"
   },
-  "Jadson S.": {
-    "as": "Jadson Dos Santos"
-  },
   "Gustavo C.": {
     "as": "Gustavo Vilella Maia do Carmo"
+  },
+  "Jadson S.": {
+    "as": "Jadson Dos Santos"
   }
 }

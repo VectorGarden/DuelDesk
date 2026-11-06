@@ -214,6 +214,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Josue Abdul Ortega Gonzalez": [
@@ -419,7 +420,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Matthew Brian Richardson": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Joseph Anthony Ellison Davert": [
     {"e":"2025-02-ycs-orlando"}
@@ -443,7 +445,8 @@
     {"e":"2025-north-america-wcq"}
   ],
   "Luksa Plenkovic": [
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "William Antonio Lopez": [
     {"e":"2025-10-ycs-anaheim"}
@@ -486,10 +489,10 @@
   "Angel A.": {
     "as": "Angel Ascencio"
   },
-  "Nader E.": {
-    "as": "Nader Campiao Esmael"
-  },
   "Guillaume D.": {
     "as": "Guillaume C. Diaz"
+  },
+  "Nader E.": {
+    "as": "Nader Campiao Esmael"
   }
 }

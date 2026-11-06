@@ -103,7 +103,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tyler Christian Ohlenforst": [
     {"e":"2015-ycs-charleston"},
@@ -623,7 +624,8 @@
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
   "Carl Ryan Eby": [
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cesar Daniel Linares Mier": [
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
@@ -647,11 +649,20 @@
   "Kevin Leo Hinostroza Munoz": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Fabio S.": {
+    "as": "Fabio Henrique Andrade Silva"
+  },
   "Caique F.": {
     "as": "Caique Souza Ferreira"
   },
-  "Fabio S.": {
-    "as": "Fabio Henrique Andrade Silva"
+  "Justin S.": {
+    "as": "Justin Andrew Singh"
+  },
+  "Russell C.": {
+    "as": "Russell Foster Chizek"
+  },
+  "Evan B.": {
+    "as": "Evan Matthew Burlaga"
   },
   "Bradd C.": {
     "as": "Bradd Richard Cyr"
@@ -659,19 +670,10 @@
   "Daniel P.": {
     "as": "Daniel Palacios"
   },
-  "Justin S.": {
-    "as": "Justin Andrew Singh"
-  },
-  "Evan B.": {
-    "as": "Evan Matthew Burlaga"
-  },
-  "Russell C.": {
-    "as": "Russell Foster Chizek"
+  "Alan D.": {
+    "as": "Alan Evan Dale"
   },
   "Jacob S.": {
     "as": "Jacob Douglas Selle"
-  },
-  "Alan D.": {
-    "as": "Alan Evan Dale"
   }
 }

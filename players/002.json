@@ -72,6 +72,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Rolando Esteban Teran Chaguaro": [
@@ -394,7 +395,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cesar Joel Cruz Bernabe": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -615,19 +617,19 @@
   "Lenon M.": {
     "as": "Lenon De Miranda"
   },
-  "Dallen H.": {
-    "as": "Dallen Dewayne Harrell"
-  },
   "Sunny C.": {
     "as": "Sunny Hau Chau"
-  },
-  "Michael D.": {
-    "as": "Michael James Dorn"
   },
   "Jomar O.": {
     "as": "Jomar Octaviani"
   },
+  "Michael D.": {
+    "as": "Michael James Dorn"
+  },
   "Howard D.": {
     "as": "Howard Clayton Davis"
+  },
+  "Dallen H.": {
+    "as": "Dallen Dewayne Harrell"
   }
 }

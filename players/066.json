@@ -604,13 +604,16 @@
   "Alejandro Reyes Vidal": [
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
+  "Jeffrey Edward Tsai": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Rodrigo Ochoa Herrrera": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Sergio P.": {
-    "as": "Sergio Pinon"
-  },
   "Darius W.": {
     "as": "Darius Evander Cheek Wilson"
+  },
+  "Sergio P.": {
+    "as": "Sergio Pinon"
   }
 }

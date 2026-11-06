@@ -496,7 +496,8 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Aric LeOnse Gray": [
     {"e":"2026-02-300th-na","f":"Advanced"},

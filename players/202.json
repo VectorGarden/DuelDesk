@@ -397,7 +397,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Tej C Amin": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -523,7 +524,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Mike Anthony Davila": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Carlos Eduardo Gonzalez Gonzalez": [
     {"e":"2026-02-300th-na"}
@@ -536,6 +538,9 @@
   ],
   "Alex John Fleet": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
+  ],
+  "Kaleb Austin Morgan": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Victor Castro Nacif De Faria": [
     {"e":"remote-duel-ycs-february-2025"}

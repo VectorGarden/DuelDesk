@@ -419,7 +419,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Radiant Typhoon","cut":"Top 4"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jiahao Fan": [
     {"e":"2019-ycs-niagara-falls"}
@@ -715,10 +716,10 @@
   "Nicklaus D.": {
     "as": "Nicklaus Palmer Watkins Delpiero"
   },
-  "Michael R.": {
-    "as": "Michael Alexander Ramirez"
-  },
   "Braydin A.": {
     "as": "Braydin Ryan Arnold"
+  },
+  "Michael R.": {
+    "as": "Michael Alexander Ramirez"
   }
 }

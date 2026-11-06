@@ -341,7 +341,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Zach Tyler Gibson": [
     {"e":"2022-ycs-niagara-falls"},
@@ -522,6 +523,9 @@
   "Hudson Oliveira Rosa": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Brennen Joseph Tyler Moore": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Gerardo Rafael Marmol Murcia": [
     {"e":"uds-2016-elsalvador"}
   ],
@@ -532,11 +536,11 @@
     {"e":"yu-gi-oh-tcg-world-championship-2024","cut":"Top 8","deck":"Tenpai Dragon"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Nestor M.": {
-    "as": "Nestor Zai Mendez"
-  },
   "Enrique I.": {
     "as": "Enrique Ibanez"
+  },
+  "Nestor M.": {
+    "as": "Nestor Zai Mendez"
   },
   "Stephanos P.": {
     "as": "Stephanos Portillo"

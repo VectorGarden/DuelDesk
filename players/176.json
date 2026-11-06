@@ -528,7 +528,8 @@
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
   "Phuong Xuan Phan": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Reid Michael Eaton": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Blackwing"}
@@ -551,11 +552,11 @@
   "Miguel Angel Mendez Zuleta": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Oscar P.": {
-    "as": "Oscar Palma"
-  },
   "Kristopher V.": {
     "as": "Kristopher Dante Vianello"
+  },
+  "Oscar P.": {
+    "as": "Oscar Palma"
   },
   "Joel H.": {
     "as": "Joel Isaac Hernandez"

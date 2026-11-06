@@ -535,7 +535,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cesar Leonardo Peralez Tapia": [
     {"e":"2024-south-america-wcq"}
@@ -580,7 +581,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Kyle Andrew Davidson": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Armando De Jesus Alvarez Lopez": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"},

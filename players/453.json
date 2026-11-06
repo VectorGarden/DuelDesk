@@ -300,6 +300,7 @@
     {"e":"2026-central-america-wcq"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-january-2024","cut":"Final"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -494,7 +495,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Austin James Casanova": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ian Charles Brosonski": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -567,11 +569,11 @@
   "DongWon Ha": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Tanner T.": {
-    "as": "Tanner Riley Louie Thompson"
-  },
   "Austin A.": {
     "as": "Austin Lawrence Anthony"
+  },
+  "Tanner T.": {
+    "as": "Tanner Riley Louie Thompson"
   },
   "Daniel J.": {
     "as": "Daniel Serrano Jr."

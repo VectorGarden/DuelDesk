@@ -409,7 +409,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Abraham Garcia Sanchez": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -602,11 +603,11 @@
   "Po-Hsiang Peng": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Taiwan","won":true,"cut":"Final"}
   ],
-  "Stephen B.": {
-    "as": "Stephen Andrew Benson"
-  },
   "Brent B.": {
     "as": "Brent Anthony Bumann"
+  },
+  "Stephen B.": {
+    "as": "Stephen Andrew Benson"
   },
   "Estevan F.": {
     "as": "Estevan Falcon"

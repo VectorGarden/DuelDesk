@@ -470,7 +470,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Regenesis Vanquish Soul","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Diego Cesar Espinosa Gutierrez": [
     {"e":"2022-11-ycs-pasadena"},
@@ -627,7 +628,8 @@
   "Nicholas Robert Maglio": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Genesys"}
+    {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Scott Thomas Watkins": [
     {"e":"2025-11-ycs-pittsburgh-pa"}

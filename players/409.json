@@ -532,7 +532,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Genesys"}
+    {"e":"2026-08-quebec","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "William John Tarutis III": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -623,10 +624,10 @@
   "Fabian C.": {
     "as": "Fabian David Castaneda"
   },
-  "Andre W.": {
-    "as": "Andre Thomas Wilke"
-  },
   "Tian R.": {
     "as": "Tian Xiao Rong"
+  },
+  "Andre W.": {
+    "as": "Andre Thomas Wilke"
   }
 }

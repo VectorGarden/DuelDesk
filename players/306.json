@@ -472,7 +472,8 @@
     {"e":"2024-team-ycs-santiago-chile"}
   ],
   "Austin Blade Douglas": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "BOTB": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -532,6 +533,9 @@
   ],
   "Kyler Daniel Gifford": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Matthew Gilbert Rivera": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Austin Edward Cintron": [
     {"e":"na-ygoc-2022"}

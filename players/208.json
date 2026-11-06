@@ -56,6 +56,7 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Nekroz"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Luke Willard Mattingly": [
@@ -86,6 +87,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Regenesis Vanquish Soul"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Joseph Paul Moore": [
@@ -564,6 +566,9 @@
   ],
   "Keqwon Rashard Palm Jr.": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Kyle Richard Jensen": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Abraham Adolfo Alejandro Milla Reyes": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

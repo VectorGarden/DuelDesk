@@ -178,6 +178,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq","won":true,"cut":"Final","deck":"Sky Striker"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022","cut":"Final","deck":"Sky Striker"}
   ],
   "Cristhian Daniel Del Valle": [
@@ -495,7 +496,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Kevin David Hedngren": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Kevin Douglas Carpenter": [
     {"e":"2025-04-ycs-houston"},
@@ -581,6 +583,9 @@
   ],
   "Blaize Anthony Cormier": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Antonio M. Bello": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Kevin Melendez Bermudez": [
     {"e":"uds-2016-elsalvador"}

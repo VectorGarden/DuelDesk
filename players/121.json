@@ -601,6 +601,9 @@
   "Salina Sanchez": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Edgar Deivi Rodriguez Belmares": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Jose Daniel Vargas Chacon": [
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -614,10 +617,10 @@
   "Kevin H.": {
     "as": "Kevin Hsu Ping Huang"
   },
-  "Avery M.": {
-    "as": "Avery Moreno"
-  },
   "Colby T.": {
     "as": "Colby James Taylor"
+  },
+  "Avery M.": {
+    "as": "Avery Moreno"
   }
 }

@@ -258,7 +258,8 @@
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
   ],
   "David Andrew Beauregard Brazell": [
-    {"e":"2018-ycs-atlanta"}
+    {"e":"2018-ycs-atlanta"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Nicholas Bradley Poe": [
     {"e":"2019-03-atlanta-ga"},
@@ -640,16 +641,16 @@
   "João A.": {
     "as": "João Vitor Abrahão"
   },
-  "Luca C.": {
-    "as": "Luca Mathew Jin Soo Choi"
-  },
-  "Joo A.": {
-    "as": "Joo Ho Ahn"
-  },
   "Lyric B.": {
     "as": "Lyric Bruner"
   },
   "Tyler M.": {
     "as": "Tyler Mackenzie Mocklin"
+  },
+  "Luca C.": {
+    "as": "Luca Mathew Jin Soo Choi"
+  },
+  "Joo A.": {
+    "as": "Joo Ho Ahn"
   }
 }

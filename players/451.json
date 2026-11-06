@@ -571,7 +571,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Dilan Tyler Bryant": [
     {"e":"2023-ycs-richmond"},

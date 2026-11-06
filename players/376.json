@@ -114,6 +114,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Exosister"},
     {"e":"2026-05-ycs-columbus","f":"Advanced","cut":"Top 4","deck":"Radiant Typhoon Sky Striker"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Angel Enrique Carrion Tabarcia Jr.": [
@@ -529,7 +530,8 @@
     {"e":"2025-ycs-merida-mexico"}
   ],
   "Santiago Enrique Lemus Garcia": [
-    {"e":"2026-02-300th-na","f":"Genesys","deck":"(No decklist)"}
+    {"e":"2026-02-300th-na","f":"Genesys","deck":"(No decklist)"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Alexis Jesus Gomez Castillejos": [
     {"e":"2026-02-300th-na"}

@@ -137,7 +137,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Branded Springans"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Final","deck":"Blitzclique"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Final","deck":"Blitzclique"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Lars Athair Rua Jacobson": [
     {"e":"2015-ycs-chicago"},
@@ -491,7 +492,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ernesto Carpio Garcia": [
     {"e":"2024-south-america-wcq"}
@@ -585,16 +587,16 @@
   "Gabriella G.": {
     "as": "Gabriella Elise Gillett"
   },
-  "Eliott C.": {
-    "as": "Eliott Jesus Campa"
-  },
   "Bo K.": {
     "as": "Bo De Kok"
   },
-  "Junhao D.": {
-    "as": "Junhao Dong"
+  "Eliott C.": {
+    "as": "Eliott Jesus Campa"
   },
   "Jonnatan L.": {
     "as": "Jonnatan Alexis Lopez"
+  },
+  "Junhao D.": {
+    "as": "Junhao Dong"
   }
 }

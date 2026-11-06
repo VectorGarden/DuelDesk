@@ -228,6 +228,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Top 8","deck":"Blitzclique"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022","cut":"Top 8","deck":"Adventurer Dragon Link"}
   ],
   "Kenny Huy Nguyen": [
@@ -658,7 +659,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Angel M. Medina Martinez": [
     {"e":"2025-02-ycs-orlando"}

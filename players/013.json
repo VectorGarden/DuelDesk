@@ -319,7 +319,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jose Edwin Macias Lopez": [
     {"e":"2019-ycs-guadalajara"},
@@ -560,10 +561,10 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Raymond L.": {
-    "as": "Raymond G. Lee"
-  },
   "Nicolai H.": {
     "as": "Nicolai Mikhail Howlett"
+  },
+  "Raymond L.": {
+    "as": "Raymond G. Lee"
   }
 }

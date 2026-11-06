@@ -567,7 +567,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Brandon Adam Gargula": [
     {"e":"2023-ycs-indianapolis"}

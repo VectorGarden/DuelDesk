@@ -548,7 +548,8 @@
   ],
   "Noah North": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "James Chi": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -600,17 +601,20 @@
   "David S. Tamirat": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Scott Warren Whitescarver": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
   "Manuel Diaz Sanchez": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Walter J.": {
     "as": "Walter Jule"
   },
-  "Chancy W.": {
-    "as": "Chancy Williams Wigglestove"
-  },
   "Love S.": {
     "as": "Love Toriano Smith"
+  },
+  "Chancy W.": {
+    "as": "Chancy Williams Wigglestove"
   },
   "Gerardo V.": {
     "as": "Gerardo Varela"

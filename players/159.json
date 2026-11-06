@@ -584,7 +584,8 @@
     {"e":"2025-ycs-sao-paulo-brazil"}
   ],
   "Zachary Matthew Taylor": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ahmed Peeran Shaikh": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -607,6 +608,9 @@
   ],
   "Jefferson Lourenco dos santos silva": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Joel Benjamin Waldmann": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Eduardo B.": {
     "as": "Eduardo Baumgratz"

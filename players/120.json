@@ -542,7 +542,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Andrew Laybon Booth": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Wesley Davis McGurn": [
     {"e":"2025-02-ycs-orlando"}
@@ -602,7 +603,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Daniel Raghoo Mackoon": [
-    {"e":"2026-02-300th-na","f":"Genesys"}
+    {"e":"2026-02-300th-na","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Zuriel Tlahuice Perez": [
     {"e":"2026-02-300th-na"},

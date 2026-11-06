@@ -101,7 +101,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Monarch"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cecil Akeem Davis": [
     {"e":"2016-north-american-wcq"},
@@ -425,7 +426,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Marco Antonio Espinoza Ribera": [
     {"e":"2023-ycs-santa-cruz-de-la-sierra"}
@@ -449,7 +451,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"}
+    {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Adrian D.": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -512,7 +515,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Thomas William Boresky III": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Rebecca Sue Buenaga": [
     {"e":"2025-02-ycs-orlando"}
@@ -594,6 +598,12 @@
   ],
   "Johnathan Richard Lewis": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Christian Andres Lopez": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "David Ringvik Bergman": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Ezra H.": {
     "as": "Ezra Michael Hurt"

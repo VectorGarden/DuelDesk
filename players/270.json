@@ -293,7 +293,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Robert Cody King": [
     {"e":"2022-ycs-charlotte"},

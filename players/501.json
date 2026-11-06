@@ -557,7 +557,8 @@
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
   "Noah Tyler Steppe": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Liam Hatfield": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -586,19 +587,19 @@
   "Christian Villaneda": [
     {"e":"na-ygoc-2022"}
   ],
-  "Jesus F.": {
-    "as": "Jesus Reyes July Flores"
-  },
   "Aleksander R.": {
     "as": "Aleksander Roytburd"
+  },
+  "Jesus F.": {
+    "as": "Jesus Reyes July Flores"
   },
   "Alberto A.": {
     "as": "Alberto Juaquin Almanza"
   },
-  "Aiden S.": {
-    "as": "Aiden Christopher Springer"
-  },
   "Cameron T.": {
     "as": "Cameron DeWayne Trice"
+  },
+  "Aiden S.": {
+    "as": "Aiden Christopher Springer"
   }
 }

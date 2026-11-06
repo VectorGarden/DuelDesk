@@ -296,6 +296,7 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Axel Gerardo Campos Butron": [
@@ -513,6 +514,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jake Edward Curtis": [
@@ -659,13 +661,13 @@
   "Iago Cipriano Yokoi": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"}
   ],
-  "Noah J.": {
-    "as": "Noah Benjamin Jymison"
-  },
   "Andrew G.": {
     "as": "Andrew Joshua Gross"
   },
   "Nathaniel V.": {
     "as": "Nathaniel GIavani Vasquez"
+  },
+  "Noah J.": {
+    "as": "Noah Benjamin Jymison"
   }
 }

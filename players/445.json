@@ -104,7 +104,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Austin Gregory Nichols": [
     {"e":"2015-150th-ycs-in-columbus"},
@@ -541,7 +542,8 @@
   "Nathaniel Kevin Benson": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Anthony Michael Fitzwilliam": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -632,13 +634,13 @@
   "Luis Angel Huillcaya Luyo": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Derek M.": {
+    "as": "Derek Charles Mead"
+  },
   "Samuel Y.": {
     "as": "Samuel Siwon You"
   },
   "Weijian F.": {
     "as": "Weijian Fang"
-  },
-  "Derek M.": {
-    "as": "Derek Charles Mead"
   }
 }

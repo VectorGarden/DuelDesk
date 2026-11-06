@@ -426,7 +426,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Jomo Andre Tracy Terry": [
     {"e":"2019-ycs-knoxville"}
@@ -668,16 +669,16 @@
   "Cielo Alban Merino": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Nicolas C.": {
-    "as": "Nicolas Fiore Colella"
-  },
   "Raymond G.": {
     "as": "Raymond Ignacio Gonzales"
   },
-  "Xavier R.": {
-    "as": "Xavier James Robinson"
+  "Nicolas C.": {
+    "as": "Nicolas Fiore Colella"
   },
   "Yandi R.": {
     "as": "Yandi Sebastian Rodriguez Rios"
+  },
+  "Xavier R.": {
+    "as": "Xavier James Robinson"
   }
 }

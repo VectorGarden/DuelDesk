@@ -523,7 +523,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Paxton Alexander Clarke": [
     {"e":"2023-ycs-vancouver"}
@@ -603,7 +604,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Christopher J. Nagy": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -639,6 +641,9 @@
   ],
   "Brady Thomas Bates": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
+  ],
+  "Alfonso Carlos Madrazo": [
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Diego Ulises Hernandez Moctezuma": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

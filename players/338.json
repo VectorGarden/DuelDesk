@@ -322,6 +322,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jhon Keyni Mosquera Buitrago": [
@@ -496,13 +497,15 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Daniel Evan Lewis": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Cody Adam Rising": [
     {"e":"2025-02-ycs-orlando"}
   ],
   "Gabriel Thomas Oti": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Kain Agustin Bordner": [
     {"e":"2025-03-team-ycs-las-vegas"},

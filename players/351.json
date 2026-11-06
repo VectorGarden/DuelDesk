@@ -151,6 +151,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Osama Anis Oza": [
@@ -338,7 +339,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Johanandersson Rojasnolasco": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -570,19 +572,19 @@
   "Yuuki Shibata": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Top 8","deck":"Sky Striker"}
   ],
+  "Allen T.": {
+    "as": "Allen Tong"
+  },
+  "Angel S.": {
+    "as": "Angel Manuel Sixto"
+  },
   "Alex Y.": {
     "as": "Alex Jordan Yeager"
   },
   "Brian L.": {
     "as": "Brian Patrick Lentini"
   },
-  "Angel S.": {
-    "as": "Angel Manuel Sixto"
-  },
   "Blake R.": {
     "as": "Blake Andrew Root"
-  },
-  "Allen T.": {
-    "as": "Allen Tong"
   }
 }

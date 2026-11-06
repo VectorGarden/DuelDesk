@@ -7,7 +7,8 @@
     {"e":"2013-north-american-wcq"},
     {"e":"2017-north-american-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Emilio Alberto Sierra Martinez": [
     {"e":"2013-north-american-wcq"},
@@ -439,7 +440,8 @@
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Joshua Levi Pinckney": [
-    {"e":"2023-north-america-wcq"}
+    {"e":"2023-north-america-wcq"},
+    {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Mahesh S. Subramanian": [
     {"e":"2023-north-america-wcq"},
