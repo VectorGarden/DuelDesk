@@ -179,6 +179,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Yunxin Zhang": [
@@ -525,7 +526,8 @@
     {"e":"2024-team-ycs-san-jose-costa-rica"}
   ],
   "Douglas Aaron Smith": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "full metalmorph alchemist": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -588,11 +590,8 @@
   "Jefferson P.": {
     "as": "Jefferson Alves de Oliveira Pires"
   },
-  "Rick W.": {
-    "as": "Rick William Winspear"
-  },
-  "Aaron F.": {
-    "as": "Aaron Chase Furman"
+  "Chester H.": {
+    "as": "Chester Hawk Henson"
   },
   "Marcellus T.": {
     "as": "Marcellus James Thiry"
@@ -600,7 +599,10 @@
   "Thaddeus B.": {
     "as": "Thaddeus Thomas Bingham"
   },
-  "Chester H.": {
-    "as": "Chester Hawk Henson"
+  "Aaron F.": {
+    "as": "Aaron Chase Furman"
+  },
+  "Rick W.": {
+    "as": "Rick William Winspear"
   }
 }

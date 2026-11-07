@@ -84,7 +84,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-05-ycs-columbus","f":"Genesys"}
+    {"e":"2026-05-ycs-columbus","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Kevin Brandon Vila": [
     {"e":"2015-north-american-wcq"},
@@ -492,7 +493,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Super Meta Bros": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -557,7 +559,9 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Mark Donavan Kozlowski": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Saulo J Flores": [
     {"e":"na-ygoc-2022"}
@@ -571,11 +575,11 @@
   "Renato S.": {
     "as": "Renato de Almeida Souza"
   },
-  "Zachary I.": {
-    "as": "Zachary Andrew Ireland"
-  },
   "Alan N.": {
     "as": "Alan Duc Ngo"
+  },
+  "Zachary I.": {
+    "as": "Zachary Andrew Ireland"
   },
   "Ashia K.": {
     "as": "Ashia Lynn Kennedy"

@@ -38,7 +38,8 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2023-ycs-richmond"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
-    {"e":"2026-02-300th-na","f":"Genesys","deck":"Magnet Adamancipator"}
+    {"e":"2026-02-300th-na","f":"Genesys","deck":"Magnet Adamancipator"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Richard Lei Zhao": [
     {"e":"2013-north-american-wcq"},
@@ -405,6 +406,8 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Thiago Bussola": [
@@ -602,8 +605,8 @@
   "Trevor Joe Kelty": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Khoa P.": {
-    "as": "Khoa Van Phan"
+  "Jonathan O.": {
+    "as": "Jonathan Gaetano Orlando"
   },
   "Charles R.": {
     "as": "Charles Thomas Russel Roberts"
@@ -611,7 +614,7 @@
   "Marcus S.": {
     "as": "Marcus Jairo Siu"
   },
-  "Jonathan O.": {
-    "as": "Jonathan Gaetano Orlando"
+  "Khoa P.": {
+    "as": "Khoa Van Phan"
   }
 }

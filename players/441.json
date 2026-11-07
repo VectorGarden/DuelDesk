@@ -323,7 +323,8 @@
     {"e":"2018-ycs-secaucus"}
   ],
   "Keith Anthony Munoz": [
-    {"e":"2018-ycs-secaucus"}
+    {"e":"2018-ycs-secaucus"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jeffee Maldonado": [
     {"e":"2018-ycs-secaucus"}
@@ -541,7 +542,8 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ronaldo Condori Vargas": [
     {"e":"2023-ycs-santa-cruz-de-la-sierra"}
@@ -625,12 +627,15 @@
   ],
   "Clark Anthony Dane": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nicholas Daniel Fiete": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Tyler Scott Collis": [
     {"e":"2025-north-america-wcq"}
@@ -692,7 +697,11 @@
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Yerik Josef Faulkner": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Stephen Thomas Andrade": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Victor Daniel Bolanos Chaves": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

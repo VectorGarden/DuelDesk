@@ -453,7 +453,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sebastian Andres Monsalves Moya": [
     {"e":"2024-team-ycs-santiago-chile"},
@@ -533,7 +535,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "William John Tarutis III": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -618,11 +622,11 @@
   "Drew F.": {
     "as": "Drew Maxwell Fisher"
   },
-  "Jesus G.": {
-    "as": "Jesus October Gonzalez"
-  },
   "Fabian C.": {
     "as": "Fabian David Castaneda"
+  },
+  "Jesus G.": {
+    "as": "Jesus October Gonzalez"
   },
   "Andre W.": {
     "as": "Andre Thomas Wilke"

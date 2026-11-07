@@ -560,7 +560,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Jacob Charles Stearns": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher Chance Adams": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -617,10 +618,10 @@
   "Tomas D.": {
     "as": "Tomas Dughera"
   },
-  "Jesse A.": {
-    "as": "Jesse Amador"
-  },
   "Marco L.": {
     "as": "Marco Antonio Raul Lujano"
+  },
+  "Jesse A.": {
+    "as": "Jesse Amador"
   }
 }

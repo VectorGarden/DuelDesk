@@ -250,7 +250,8 @@
   "Tyler Louis Gianchetta": [
     {"e":"2018-north-america-wcq"},
     {"e":"2018-ycs-secaucus"},
-    {"e":"202205-ycs-hartford-ct"}
+    {"e":"202205-ycs-hartford-ct"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Abhishek MalHotra": [
     {"e":"2018-ycs-atlanta"},
@@ -393,7 +394,8 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"}
   ],
   "Michael Craig Patrolia": [
-    {"e":"2023-250th-ycs-in-los-angeles"}
+    {"e":"2023-250th-ycs-in-los-angeles"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sean McCarthy Kollman": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -469,7 +471,9 @@
   "Justin Daniel Morgan": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Victor Geofredo Rivas": [
     {"e":"2024-ycs-raleigh"}
@@ -484,7 +488,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Kevin Perez Jr.": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Julian Isaac Joyner": [
     {"e":"2025-02-ycs-orlando"}
@@ -546,7 +551,9 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Demetrius Terrell Woods": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Hassan M. Lewis": [
     {"e":"na-ygoc-2022"}

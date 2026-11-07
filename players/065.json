@@ -134,7 +134,8 @@
     {"e":"2020-uds-invitational-tulsa-ok"}
   ],
   "James Michael Johnson Jr.": [
-    {"e":"2016-ycs-providence-rhode-island"}
+    {"e":"2016-ycs-providence-rhode-island"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Aaron Mykal Clogston": [
     {"e":"2016-ycs-providence-rhode-island"}
@@ -272,7 +273,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ryan Ellis Taylor": [
     {"e":"2018-north-america-wcq"},

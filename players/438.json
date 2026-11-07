@@ -343,7 +343,8 @@
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Candelario Becerra Astrada": [
     {"e":"2019-ycs-pasadena"}
@@ -605,7 +606,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Nicholas Thomas Cannon": [
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Bradley Michael Schuh": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}

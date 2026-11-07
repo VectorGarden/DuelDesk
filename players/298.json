@@ -232,7 +232,8 @@
     {"e":"2017-uds-invitational-trinidad-and-tobago"}
   ],
   "Phillip Raphael Elmaleh": [
-    {"e":"2017-ycs-atlanta"}
+    {"e":"2017-ycs-atlanta"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ingrid Lisse Solorzano Rivera": [
     {"e":"2017-ycs-guatemala-city-guatemala"},
@@ -353,7 +354,9 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Chris LaBelle": [
     {"e":"2019-ycs-niagara-falls"}
@@ -546,7 +549,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Johnathon Michael Bonanza": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jibin Chempithanam Alex": [
     {"e":"2025-02-ycs-orlando"},
@@ -614,6 +618,15 @@
   ],
   "Orlando Jabril Smith": [
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Hector Eduardo Ortega Aguilar": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Mark Joseph Provancher Jr.": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Angel Emilio Rendon": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jesus Ivan Nieto Lopez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},

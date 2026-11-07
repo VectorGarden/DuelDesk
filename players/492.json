@@ -273,7 +273,8 @@
     {"e":"2019-ycs-portland"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-12-ycs-anaheim"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Frank William Kergil": [
     {"e":"2019-ycs-portland"}
@@ -444,7 +445,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ian Robert Howard": [
     {"e":"2025-02-ycs-orlando"}

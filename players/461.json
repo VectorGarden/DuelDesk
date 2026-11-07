@@ -165,6 +165,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joseph F. Rose": [
@@ -268,7 +269,8 @@
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
     {"e":"2017-ycs-atlanta"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Derrick Arafat Maitland Quiros": [
     {"e":"2016-yu-gi-oh-championship-series-san-jose-costa-rica","cut":"Top 16","deck":"Majespecter Magician"},
@@ -441,7 +443,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christian Yves Sarubbi": [
     {"e":"202205-ycs-hartford-ct"}
@@ -548,7 +551,9 @@
   ],
   "Cameron Lucas Rucker": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Michael Curtis Hayward": [
     {"e":"2025-02-ycs-orlando"}
@@ -629,7 +634,11 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Nicholas Alexander Booth": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Elias Thomas Haraksin": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Melissa Michelle Rivas Montoya": [
     {"e":"uds-2016-elsalvador"}

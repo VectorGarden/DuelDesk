@@ -290,7 +290,8 @@
     {"e":"2018-ycs-atlanta"},
     {"e":"2019-03-atlanta-ga"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carolina Isabel Valdebenito Muñoz": [
     {"e":"2018-ycs-santiago-chile"}

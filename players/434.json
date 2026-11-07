@@ -129,7 +129,9 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jordan Christipher Cederdahl": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
@@ -445,7 +447,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Julian Alexander Perez": [
     {"e":"2025-02-ycs-orlando"}
@@ -489,7 +493,8 @@
     {"e":"2025-ycs-sao-paulo-brazil"}
   ],
   "Chuan Tong": [
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Saoirse Michale Bonnett": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
@@ -525,7 +530,11 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Blake Spencer Osman": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Kenneth Louis Cordero": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sebastian Benites Munive": [
     {"e":"remote-duel-ycs-january-2024"}

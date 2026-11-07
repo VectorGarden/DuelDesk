@@ -510,7 +510,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq","cut":"Top 64","deck":"Mitsurugi Ryzeal"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tri Cao Nguyen": [
     {"e":"2024-north-america-wcq"},
@@ -599,6 +600,9 @@
   ],
   "Cameron Robert Muellner": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Joel Cameron Fulton Johnson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Boris Armando Guachichulca Guaman": [
     {"e":"remote-duel-ycs-january-2026"}

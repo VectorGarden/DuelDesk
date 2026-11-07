@@ -490,14 +490,17 @@
   "Josef Gentry Wehunt": [
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Joseph David Martinez": [
     {"e":"2024-ycs-indianapolis"}
   ],
   "James David Meador": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Eric Diaz": [
     {"e":"2025-02-ycs-orlando"},
@@ -606,14 +609,14 @@
   "Gabriel O.": {
     "as": "Gabriel Kenzo Ogawa Oda"
   },
-  "Panagiotis M.": {
-    "as": "Panagiotis Mitrothanasis"
+  "Estefan L.": {
+    "as": "Estefan Nicolas Dario Lopez"
   },
   "Anthony E.": {
     "as": "Anthony William Eckroth"
   },
-  "Estefan L.": {
-    "as": "Estefan Nicolas Dario Lopez"
+  "Panagiotis M.": {
+    "as": "Panagiotis Mitrothanasis"
   },
   "Thomas H.": {
     "as": "Thomas Michael Hinde"

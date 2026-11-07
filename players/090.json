@@ -280,6 +280,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Gabriel Alberto Acosta Santiago": [
@@ -647,7 +649,12 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Eric Halan Faden": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Bryan Jose Chevere": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marci Miguel Perez Garcia": [
     {"e":"remote-duel-ycs-january-2026"}

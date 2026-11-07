@@ -402,6 +402,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded @Ignister Maliss"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Mike Carranza": [
@@ -541,13 +542,16 @@
   "Pedro Henrique Vidal": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Jessie James Price": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Daniel Wirtu": {
     "as": "Daniel M Wirtu"
   },
-  "Kyusuh O.": {
-    "as": "Kyusuh Oh"
-  },
   "Alan T.": {
     "as": "Alan Lin Truong"
+  },
+  "Kyusuh O.": {
+    "as": "Kyusuh Oh"
   }
 }

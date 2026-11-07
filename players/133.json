@@ -495,7 +495,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cody Bob Crawford": [
     {"e":"2023-ycs-indianapolis"},

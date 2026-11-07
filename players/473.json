@@ -200,7 +200,9 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Christopher Cornell Hughes": [
     {"e":"2017-north-american-wcq"},
@@ -408,6 +410,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jaiven Trent Silva": [
@@ -428,7 +431,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Chris Anthony Vitullo": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -647,7 +651,9 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matthew David Jennings": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jose Julian Garcia Moncayo": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
@@ -655,11 +661,11 @@
   "Jeanpiere Heli Leon Leon": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jose G.": {
-    "as": "Jose Francisco Ramirez Gonzalez"
-  },
   "Solomon S.": {
     "as": "Solomon Grant Skuljicak"
+  },
+  "Jose G.": {
+    "as": "Jose Francisco Ramirez Gonzalez"
   },
   "Christian P.": {
     "as": "Christian Paul Gregorio Pascua"

@@ -44,7 +44,8 @@
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Michael Alvarado": [
     {"e":"2013-yu-gi-oh-championship-series-san-diego-california"}
@@ -634,7 +635,8 @@
     {"e":"2025-05-ycs-providence"}
   ],
   "Miguel Angel Aballay": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Horacio Jose Gonzalez Ortega": [
     {"e":"2025-central-america-wcq"},
@@ -680,6 +682,15 @@
   "Dayton Scott Shegog": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Rolando Jesus Castellanos Sanchez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Gerardo David Zeron Sanchez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Keven Perez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Doran Freedom Hudson": [
     {"e":"na-ygoc-2022"}
   ],
@@ -690,16 +701,16 @@
   "Wendell S.": {
     "as": "Wendell Rafael da Silva"
   },
-  "Jerome L.": {
-    "as": "Jerome Jazz Malik Levingston"
-  },
   "Dylan B.": {
     "as": "Dylan Preston Bradley"
   },
-  "Drake J.": {
-    "as": "Drake James Jewett"
+  "Jerome L.": {
+    "as": "Jerome Jazz Malik Levingston"
   },
   "Enzo P.": {
     "as": "Enzo Penichon"
+  },
+  "Drake J.": {
+    "as": "Drake James Jewett"
   }
 }

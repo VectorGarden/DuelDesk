@@ -478,7 +478,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nicholas Alexander Walters": [
     {"e":"2025-02-ycs-orlando"}
@@ -528,7 +529,8 @@
   ],
   "Isiah Thomas Timmons": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Kyle Robert Luckenbill": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -544,6 +546,9 @@
   ],
   "Javier Aurelio Estrada Borrero": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Fabian Miguel Allen": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Otavio M.": {
     "as": "Otavio Machado"

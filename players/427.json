@@ -329,7 +329,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gerald Bishop Green": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -490,25 +491,28 @@
   "Juan Jose Molinares Picon": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
+  "Robert William Sanchez De La Cruz": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Jorge Hernandez-Castro": [
     {"e":"na-ygoc-2022"}
   ],
   "Luan Veloso De Paula": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Nicholas O.": {
-    "as": "Nicholas Antonio Ordonez"
-  },
   "Noel A.": {
     "as": "Noel Arauz"
+  },
+  "Nicholas O.": {
+    "as": "Nicholas Antonio Ordonez"
   },
   "Angus M.": {
     "as": "Angus Tennyson Raymond Mancini Miller"
   },
-  "Dominick C.": {
-    "as": "Dominick John Celic"
-  },
   "Tochtli M.": {
     "as": "Tochtli Gerardo Martinez"
+  },
+  "Dominick C.": {
+    "as": "Dominick John Celic"
   }
 }

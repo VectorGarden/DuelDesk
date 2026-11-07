@@ -289,7 +289,9 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Samuel Wilson Leishman": [
     {"e":"2018-ycs-salt-lake-city"}
@@ -441,7 +443,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jesus Nevarez Jr.": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -593,6 +596,9 @@
   "Colby Shayne Gage": [
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Colin Michael Freeman": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Eric Zarco": {
     "as": "Eric I. Zarco"

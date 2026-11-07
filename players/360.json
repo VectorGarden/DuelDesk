@@ -408,7 +408,8 @@
   "Christian Josue Salamanca Sepulveda": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gustavo Campos": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -552,11 +553,11 @@
   "Raul Ortega": [
     {"e":"na-ygoc-2022"}
   ],
-  "Mark V.": {
-    "as": "Mark Anthony Vianello"
-  },
   "Evan O.": {
     "as": "Evan Akira Joseph Onodera"
+  },
+  "Mark V.": {
+    "as": "Mark Anthony Vianello"
   },
   "Rudy R.": {
     "as": "Rudy Albert Riley"

@@ -428,7 +428,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Dwayne Anthony Robinson": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Scoop Phase": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -495,23 +496,26 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Dio Joy Dickson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Gage Allan Badgerow": [
     {"e":"na-ygoc-2022"}
   ],
   "Ralph Pelaez": {
     "as": "Ralph A. Pelaez"
   },
-  "Christopher O.": {
-    "as": "Christopher Martin Olmedo"
-  },
-  "Dario G.": {
-    "as": "Dario Alexander Guzman"
-  },
   "Demesio S.": {
     "as": "Demesio Fabian Serrano"
   },
+  "Christopher O.": {
+    "as": "Christopher Martin Olmedo"
+  },
   "Aditya D.": {
     "as": "Aditya Shirish Dharap"
+  },
+  "Dario G.": {
+    "as": "Dario Alexander Guzman"
   },
   "Jovanny H.": {
     "as": "Jovanny Hernandez"

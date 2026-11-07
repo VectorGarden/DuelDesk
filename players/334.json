@@ -145,7 +145,8 @@
   "Michael Alan Hillman": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Diego Alfonso Rodriguez Flores": [
     {"e":"2016-yu-gi-oh-championship-series-san-jose-costa-rica"},
@@ -271,6 +272,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Christofer Lee Van Zante": [
@@ -420,7 +422,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Team Copium": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -491,7 +494,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Samuel Edward Edens": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jordan Benjamin Giron": [
     {"e":"2025-north-america-wcq"}
@@ -546,10 +550,10 @@
   "Jean Paul Ocampo Ortega": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Oscar O.": {
-    "as": "Oscar David Ortiz"
-  },
   "Vittorio G.": {
     "as": "Vittorio Enrique Genovese"
+  },
+  "Oscar O.": {
+    "as": "Oscar David Ortiz"
   }
 }

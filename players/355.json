@@ -515,7 +515,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Eduardo Angulo Garcia": [
     {"e":"2025-central-america-wcq"}
@@ -553,7 +554,8 @@
   ],
   "Shawn Hill Daley Jr.": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Justin Bach Le": [
     {"e":"2026-08-quebec","f":"Genesys"}
@@ -576,11 +578,11 @@
   "Hani J.": {
     "as": "Hani Yasser Jawhari"
   },
-  "Robert S.": {
-    "as": "Robert Anthony Solorio"
-  },
   "Troy Y.": {
     "as": "Troy Shizuo Yamaguchi"
+  },
+  "Robert S.": {
+    "as": "Robert Anthony Solorio"
   },
   "Alex G.": {
     "as": "Alex Michael May Gutierrez"

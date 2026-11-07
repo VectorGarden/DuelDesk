@@ -189,6 +189,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Yohnny Gael Carranza Matias": [
@@ -463,7 +464,9 @@
   ],
   "Ronald Mario Budhan": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Blake Andrew VACAYSHON: Root": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -515,10 +518,10 @@
   "Micah G.": {
     "as": "Micah James Garcia"
   },
-  "Grant N.": {
-    "as": "Grant Daniel Napolitano"
-  },
   "Zackary R.": {
     "as": "Zackary Brian Reist"
+  },
+  "Grant N.": {
+    "as": "Grant Daniel Napolitano"
   }
 }

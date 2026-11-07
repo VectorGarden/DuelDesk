@@ -433,7 +433,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Victor Lu": [
     {"e":"2023-north-america-wcq"},
@@ -472,7 +473,8 @@
     {"e":"2024-10-ycs-niagara-falls"}
   ],
   "Dominick John Paolercio": [
-    {"e":"2024-11-north-america-remote-duel-ycs"}
+    {"e":"2024-11-north-america-remote-duel-ycs"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gustavo N/A Flores Soto": [
     {"e":"2024-central-america-wcq"}

@@ -154,6 +154,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced","cut":"Final","deck":"Elfnote"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joshua William Claus": [
@@ -407,7 +408,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Samuel Reyes Lomeli": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -608,6 +610,9 @@
   "Andrew George Dahdouh": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Colin Andrew Moore": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Owen Forest Wilson": [
     {"e":"na-ygoc-2022"}
   ],
@@ -623,14 +628,14 @@
   "Esteban Re": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Donovan J.": {
-    "as": "Donovan Yoby Juarez"
+  "Chase F.": {
+    "as": "Chase Victorian Friedland"
   },
   "Elbert W.": {
     "as": "Elbert L. Wu"
   },
-  "Chase F.": {
-    "as": "Chase Victorian Friedland"
+  "Donovan J.": {
+    "as": "Donovan Yoby Juarez"
   },
   "Jaden P.": {
     "as": "Jaden Travis Parent"

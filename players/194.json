@@ -115,7 +115,8 @@
     {"e":"2018-ycs-secaucus"},
     {"e":"2019-03-atlanta-ga"},
     {"e":"2023-05-ycs-philadelphia"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Isaiah M Santiago": [
     {"e":"2014-ycs-philadelphia-pa"}
@@ -183,7 +184,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Diego Jesus Manuel Letelier Andaur": [
     {"e":"201603-santiago-chile"},
@@ -619,6 +621,18 @@
   "Kevin Omar Gutierrez Garcia": [
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Landon Alexander Gober": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Zack Victor Escobedo Jr.": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Wade Allen Durham": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Tristan Jacob Grant": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Paul Pihl": [
     {"e":"na-ygoc-2022"}

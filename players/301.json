@@ -435,7 +435,8 @@
   ],
   "Brenden Lee Martin": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marcos Isaias Rubio Rodriguez": [
     {"e":"2024-ycs-guadalajara-mexico"}
@@ -515,16 +516,18 @@
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Rohan Chetworth Palmer Jr.": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "David Roque Magno Valerio": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Justin M.": {
-    "as": "Justin H. Moon"
-  },
   "Andy V.": {
     "as": "Andy Vietduy Vuong"
+  },
+  "Justin M.": {
+    "as": "Justin H. Moon"
   },
   "Boris C.": {
     "as": "Boris Anthony Cochajil"

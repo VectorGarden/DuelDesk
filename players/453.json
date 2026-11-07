@@ -195,7 +195,8 @@
   "Dante Yashan Hogan": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-salt-lake-city"},
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alexis Valladares Hernandez": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -301,6 +302,8 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-january-2024","cut":"Final"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -461,7 +464,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Braden F. Burt": [
     {"e":"2024-11-north-america-remote-duel-ycs"}
@@ -496,7 +500,8 @@
   ],
   "Austin James Casanova": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ian Charles Brosonski": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -546,7 +551,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Christopher Michael Buehner": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Ricardo Quesada Gallegos": [
     {"e":"2026-02-300th-na"}
@@ -559,6 +565,9 @@
   ],
   "Yago Gunchorowski Gunchorowski": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Christian Manuel Sarceno Robles": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alvaro Yuzo Saldana Gutierrez": [
     {"e":"ycs-lima-peru-2023"}

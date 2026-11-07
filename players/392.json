@@ -30,7 +30,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Mario Rodriguez Jr.": [
     {"e":"2013-north-american-wcq"}
@@ -417,7 +418,8 @@
     {"e":"2024-10-ycs-niagara-falls"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Maslen Jia Chien Hipps": [
     {"e":"2024-10-ycs-niagara-falls"},
@@ -466,7 +468,8 @@
   "Anthony Dale Ruggiero": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jordan Louis Johnson": [
     {"e":"2025-04-ycs-houston"}

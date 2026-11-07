@@ -485,7 +485,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Allard Mauricio Salazar Nuno": [
     {"e":"2024-central-america-wcq"}
@@ -496,7 +497,8 @@
   ],
   "Jean Pierre St. Christopher Housen": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sebastian Basantes Sanchez": [
     {"e":"2024-south-america-wcq"},
@@ -511,7 +513,8 @@
   ],
   "Eric Bryan Simpson": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sean Riley Parr": [
     {"e":"2025-02-ycs-orlando"}
@@ -538,7 +541,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Centur-Ion White Forest"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Diego Leonel Damas Rodriguez": [
     {"e":"2025-10-ycs-anaheim"}
@@ -584,6 +588,9 @@
   ],
   "Karlos Arturo Avitia": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Sean Michael Jeffrey Tillman": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Josue Ottoniel Mazariegos Soto": [
     {"e":"remote-duel-ycs-january-2026"}

@@ -481,7 +481,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Phonesavanh Sundara": [
     {"e":"2023-ycs-richmond"}
@@ -539,7 +540,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Yannick Yohan Caseman Whattley": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Esteban Nicolas Garcia": [
     {"e":"2025-02-ycs-orlando"},
@@ -549,7 +551,9 @@
   "Noah North": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "James Chi": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -602,7 +606,8 @@
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Scott Warren Whitescarver": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Manuel Diaz Sanchez": [
     {"e":"ycs-lima-peru-2023"}
@@ -610,11 +615,11 @@
   "Walter J.": {
     "as": "Walter Jule"
   },
-  "Chancy W.": {
-    "as": "Chancy Williams Wigglestove"
-  },
   "Love S.": {
     "as": "Love Toriano Smith"
+  },
+  "Chancy W.": {
+    "as": "Chancy Williams Wigglestove"
   },
   "Gerardo V.": {
     "as": "Gerardo Varela"

@@ -451,10 +451,12 @@
   ],
   "Ryan William Castillo": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Abed Gabriel Machado": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nikki?s Angels": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -516,11 +518,11 @@
   "Esequiel Robledo Jr.": {
     "as": "Esequiel G. Robledo Jr."
   },
-  "Luke B.": {
-    "as": "Luke Alan Bowkis"
-  },
   "Brendan D.": {
     "as": "Brendan Edward Dixon"
+  },
+  "Luke B.": {
+    "as": "Luke Alan Bowkis"
   },
   "Shaye H.": {
     "as": "Shaye Allen Holman"

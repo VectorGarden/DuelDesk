@@ -381,7 +381,8 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Radiant Typhoon Sky Striker"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jack-Rory Steenkamer": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
@@ -543,7 +544,8 @@
   ],
   "Brian Jesus Garcia": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Austin B.": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -620,6 +622,12 @@
   ],
   "Trino Jay Hernandez": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Samuel Aiden Barnier": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Jorbel Suarez Gonzalez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gregory N.": {
     "as": "Gregory Phil Nunez"

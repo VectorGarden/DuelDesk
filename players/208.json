@@ -57,6 +57,7 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Nekroz"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Luke Willard Mattingly": [
@@ -88,6 +89,7 @@
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Regenesis Vanquish Soul"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Joseph Paul Moore": [
@@ -253,7 +255,8 @@
   ],
   "DeAndre Jamal Ward": [
     {"e":"2018-ycs-atlanta"},
-    {"e":"2019-north-america-wcq"}
+    {"e":"2019-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brady Ray Pless": [
     {"e":"2018-ycs-atlanta"},
@@ -547,7 +550,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Ajani Khalil Desousa": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marco Eliseo Ruiz Torres": [
     {"e":"2026-02-300th-na"}
@@ -568,7 +572,9 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kyle Richard Jensen": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Abraham Adolfo Alejandro Milla Reyes": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

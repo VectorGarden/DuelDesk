@@ -202,7 +202,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Vanquish Soul K9"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Christian Alberto Estrada Diaz": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -502,7 +504,8 @@
     {"e":"2025-ycs-lima-peru"}
   ],
   "Levarean D. Shelton": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nathaniel Scott Bilodeau": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -528,16 +531,16 @@
   "Walter Andreus Laines Velarde": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Dylan P.": {
-    "as": "Dylan James Perelman"
-  },
-  "Mertjan O.": {
-    "as": "Mertjan Ozbek"
-  },
   "Anas F.": {
     "as": "Anas Faraj"
   },
   "Keon A.": {
     "as": "Keon Hee An"
+  },
+  "Mertjan O.": {
+    "as": "Mertjan Ozbek"
+  },
+  "Dylan P.": {
+    "as": "Dylan James Perelman"
   }
 }

@@ -93,7 +93,9 @@
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jacob Jan Stachowiak": [
     {"e":"2015-150th-ycs-in-columbus"}
@@ -346,7 +348,9 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jhonny Alfaro": [
     {"e":"2018-ycs-san-jose-costa-rica"}
@@ -555,6 +559,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Trenton Gregory Smith": [
@@ -568,13 +573,15 @@
   ],
   "Nathaniel Richard Grimm": [
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Eduardo dos Santos Souza Silva": [
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Jose Enrique Pinero": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cristian Diaz Ortiz": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -630,7 +637,8 @@
     {"e":"2026-02-300th-na"}
   ],
   "Travis Webb Smith": [
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sean Joseph Jozwiak": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
@@ -647,16 +655,16 @@
   "Servando Gomez": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Joe C.": {
-    "as": "Joe Claudio"
-  },
   "Don H.": {
     "as": "Don Anthony Haynesworth"
   },
-  "Adriel P.": {
-    "as": "Adriel Ernst Pierre Pierre"
+  "Joe C.": {
+    "as": "Joe Claudio"
   },
   "Hunter M.": {
     "as": "Hunter Jacob McDonald"
+  },
+  "Adriel P.": {
+    "as": "Adriel Ernst Pierre Pierre"
   }
 }

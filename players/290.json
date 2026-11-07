@@ -471,7 +471,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Adam Zachary Tribue": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Aiden Gastelum": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -515,7 +516,11 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jr. Gary David Thomas": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Jr., Gary David Thomas": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Finn Rory Bakewell": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"United Kingdom"}

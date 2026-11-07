@@ -505,7 +505,8 @@
   ],
   "Gordon Joseph Rafool II": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christian David Vera Zaya": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -556,17 +557,17 @@
   "Eduardo Marzano Carreon Ruelas": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Travis A.": {
-    "as": "Travis Glen Andrews"
+  "Aydin A.": {
+    "as": "Aydin Koray Arnett"
   },
   "Joe W.": {
     "as": "Joe Corley Peacock Winkler"
   },
+  "Travis A.": {
+    "as": "Travis Glen Andrews"
+  },
   "Andrew A.": {
     "as": "Andrew Amir Abdeen"
-  },
-  "Aydin A.": {
-    "as": "Aydin Koray Arnett"
   },
   "Rustin A.": {
     "as": "Rustin Lloyd Araza"

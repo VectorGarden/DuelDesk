@@ -380,7 +380,8 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2024-12-ycs-anaheim"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sebastian Xavier Vergara": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -608,17 +609,17 @@
   "Rodrigo Calixto Santos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Dustin B.": {
-    "as": "Dustin Michael Butcher"
+  "Zackery T.": {
+    "as": "Zackery Clyde Twork"
   },
   "Marc L.": {
     "as": "Marc Andre LeBlond"
   },
-  "Zackery T.": {
-    "as": "Zackery Clyde Twork"
-  },
   "Brandon D.": {
     "as": "Brandon Joseph Diez"
+  },
+  "Dustin B.": {
+    "as": "Dustin Michael Butcher"
   },
   "Jimmy T.": {
     "as": "Jimmy Thoai To"

@@ -435,7 +435,8 @@
   ],
   "Juan Gabriel Sarceno Robles": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Yufei Du": [
     {"e":"2025-02-ycs-orlando"}
@@ -520,6 +521,15 @@
   ],
   "Cristian Jesus Aguilera Sanchez": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Marcos Brayan Salgado Concepcion": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Alejandro Concepcion": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Kameron Mitchell Robinson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Everett M.": {
     "as": "Everett Monrow McKay"

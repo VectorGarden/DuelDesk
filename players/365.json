@@ -57,6 +57,7 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Ricardo Duenez Jr.": [
@@ -389,7 +390,8 @@
   ],
   "Shenguo Wu": [
     {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-ycs-indianapolis"}
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "David Alan Cruz": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -531,7 +533,12 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Carl Jacobs": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Johnny George Carlson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Paul Mirbach Ponce": [
     {"e":"na-ygoc-2022"}

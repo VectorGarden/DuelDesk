@@ -572,7 +572,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Baylor Keith Lynch": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Talon James Lawton": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -599,7 +600,8 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2025-ycs-sao-paulo-brazil"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Andres Vazquez Vizcarra": [
     {"e":"2025-ycs-mexico-city-mexico"}
@@ -614,7 +616,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "James Devlin Cassidy": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edgar Gustavo Lara Duarte": [
     {"e":"2026-02-300th-na"}
@@ -629,7 +632,14 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Casey Carlton Smith": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Alejandro J. Moreira": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Nicholas Walters": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Henry Gremillion": [
     {"e":"na-ygoc-2022"}

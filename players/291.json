@@ -411,6 +411,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Dominic William Beletti-Naccarato": [
@@ -630,6 +632,9 @@
   ],
   "Eric Fierro": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Matthew Akinyele Ola": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carson Richard Nagy": [
     {"e":"na-ygoc-2022"}

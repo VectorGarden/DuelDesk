@@ -571,7 +571,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Justin David Tamol": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Michael Raul Arboleda": [
     {"e":"2025-02-ycs-orlando"}
@@ -630,16 +631,16 @@
   "Alvaro Janssen Pereira Da Silva": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Tristan B.": {
-    "as": "Tristan Daniel Bridges"
-  },
   "Leonardo P.": {
     "as": "Leonardo Daniel Palacio"
   },
-  "Ritchie M.": {
-    "as": "Ritchie L. Martinez"
-  },
   "Vince H.": {
     "as": "Vince Gabriel Suarez Hernandez"
+  },
+  "Tristan B.": {
+    "as": "Tristan Daniel Bridges"
+  },
+  "Ritchie M.": {
+    "as": "Ritchie L. Martinez"
   }
 }

@@ -452,7 +452,8 @@
   "Gabriel De la Torre": [
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Felix Angel Perez": [
     {"e":"2024-north-america-wcq"},
@@ -486,7 +487,9 @@
   "Michael Andrew Braun": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Thanh Vinh Derin Ly": [
     {"e":"2025-02-ycs-orlando"},
@@ -543,6 +546,9 @@
   ],
   "Maylin Hernandez Chavez": [
     {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel"}
+  ],
+  "Ryan Daniel Law": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tarcisio Kelson da Conceicao": [
     {"e":"remote-duel-ycs-january-2024"}

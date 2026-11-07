@@ -222,6 +222,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Daniel Jonatan Velasco Pinto": [
@@ -455,7 +457,8 @@
   "Jakari Nicholas Clark": [
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Peter Nicholas Beers": [
     {"e":"2023-ycs-indianapolis"}
@@ -491,7 +494,9 @@
     {"e":"2026-08-quebec","f":"Genesys","cut":"Final","deck":"Toy White Forest"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Nicholas Thibodeau": [
     {"e":"2024-10-ycs-niagara-falls"}
@@ -537,7 +542,8 @@
   ],
   "Cary Graham DiDomenico": [
     {"e":"2024-ycs-raleigh"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Andre Julian Lazo": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -628,11 +634,11 @@
   "Tej Amin": {
     "as": "Tej C. Amin"
   },
-  "Seth K.": {
-    "as": "Seth Lee King"
-  },
   "Daniel L.": {
     "as": "Daniel Frumer Levin"
+  },
+  "Seth K.": {
+    "as": "Seth Lee King"
   },
   "Maxim G.": {
     "as": "Maxim Guillotte"

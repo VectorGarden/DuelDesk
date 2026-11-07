@@ -339,7 +339,8 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-north-america-wcq"},
     {"e":"2022-ycs-charlotte"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nathanael Segarra Valle": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
@@ -459,6 +460,8 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Daniel Francisco Nava Manzano": [

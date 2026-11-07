@@ -158,7 +158,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Lewis Adams": [
     {"e":"2015-ycs-tacoma"},
@@ -473,7 +474,8 @@
   ],
   "Austin Blade Douglas": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "BOTB": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -523,7 +525,8 @@
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
   "Jesuan Joel Claudio": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Joao Paulo Matias": [
     {"e":"2026-south-america-wcq"}
@@ -535,7 +538,12 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matthew Gilbert Rivera": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Quentin Miles Stone": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Austin Edward Cintron": [
     {"e":"na-ygoc-2022"}

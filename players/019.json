@@ -338,7 +338,8 @@
   "Corey James Monroe": [
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-05-ycs-philadelphia"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Thiago Severino da Silva": [
     {"e":"2022-ycs-rio-de-janeiro"}
@@ -385,7 +386,8 @@
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Mustafa E.": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -437,7 +439,9 @@
   "Miguel Angel Gonzalez": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gabriel Ray Conklin Garcia": [
     {"e":"2025-04-ycs-houston"}
@@ -455,7 +459,8 @@
   ],
   "Matthew Steven Frazier": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edgar Ricardo Orellana Rubio": [
     {"e":"2025-central-america-wcq"},
@@ -505,14 +510,14 @@
   "Nilo Edson Menezes Da Silva": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Kristofer M.": {
-    "as": "Kristofer Allen MacNeal"
+  "Zachary P.": {
+    "as": "Zachary Alexander Patterson"
   },
   "Angelique R.": {
     "as": "Angelique Nicole Rivera"
   },
-  "Zachary P.": {
-    "as": "Zachary Alexander Patterson"
+  "Kristofer M.": {
+    "as": "Kristofer Allen MacNeal"
   },
   "Oscar V.": {
     "as": "Oscar Uriel Velez"

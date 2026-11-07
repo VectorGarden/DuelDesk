@@ -297,7 +297,9 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Hameed Kamau Paul": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -323,7 +325,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ricardo Ernesto Lind-Gonzalez": [
     {"e":"2023-team-ycs-las-vegas"}

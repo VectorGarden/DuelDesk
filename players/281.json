@@ -112,7 +112,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ryan Benjamin Panek-Kravitz": [
     {"e":"2015-ycs-chicago"}
@@ -464,6 +465,7 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Darryl Spencer Jackson Jr.": [
@@ -520,7 +522,9 @@
   ],
   "Sebastian Javier Rodriguez": [
     {"e":"2023-ycs-indianapolis"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Christopher Michael Necessary": [
     {"e":"2023-ycs-indianapolis"}
@@ -628,6 +632,9 @@
   "Matthew Dominic Cervoni": [
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Chase Anthony Cusmano": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edwin Nunez Rosas": [
     {"e":"wcq-2016-mexico"}

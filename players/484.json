@@ -307,6 +307,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Manuel Alejandro Pena y Lillo": [
@@ -354,7 +356,8 @@
   "Jonathan S. Kaplan": [
     {"e":"2023-north-america-wcq"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Maximarllon Vasajes Machado": [
     {"e":"2023-team-ycs-sao-paulo"}
@@ -410,7 +413,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "William Garrett Stockdale": [
     {"e":"2024-north-america-wcq"},

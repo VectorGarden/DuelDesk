@@ -449,7 +449,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Jordon Christopher Solomon": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Bradley Loonzi Yuan": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -473,7 +474,8 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nicholas Edward Rogers": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Aldo Jose Perich Barrios": [
     {"e":"ycs-lima-peru-2023"}

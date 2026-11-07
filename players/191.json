@@ -527,7 +527,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Angel Gilberto Zamudio Vivas": [
     {"e":"2024-central-america-wcq"}
@@ -539,7 +541,8 @@
   ],
   "Philip Thomas Cardenas": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Joel Everett Paultre": [
     {"e":"2024-north-america-wcq"},
@@ -557,7 +560,9 @@
   ],
   "Shane Patrick Campbell": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ryan Joseph Dunning": [
     {"e":"2025-03-team-ycs-las-vegas"}

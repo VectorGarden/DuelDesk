@@ -465,7 +465,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Michael Christopher Berge": [
     {"e":"2025-02-ycs-orlando"}
@@ -479,7 +481,8 @@
   "Alex Niebrzydowski": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Andersson Duarte Cardenas": [
     {"e":"2025-south-america-wcq"}
@@ -539,7 +542,11 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Xavier Erick Gullo": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Orlando Angel Medina": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christian Jovani Garcia Sanchez": [
     {"e":"remote-duel-ycs-february-2025"}

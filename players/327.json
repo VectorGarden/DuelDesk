@@ -441,6 +441,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Graham Michael Ford": [
@@ -706,7 +707,8 @@
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
   "Zach Mason Levin": [
-    {"e":"2026-04-team-ycs-las-vegas","deck":"White Forest Azamina Yummy"}
+    {"e":"2026-04-team-ycs-las-vegas","deck":"White Forest Azamina Yummy"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Omar Andres Cabarcas Castillo": [
     {"e":"2026-ycs-cartagena-colombia"}
@@ -715,7 +717,8 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Justin Quindara Yanes": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Dan That Ton": [
     {"e":"na-ygoc-2022","cut":"Top 64","deck":"Despia Branded"}

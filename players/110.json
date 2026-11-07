@@ -238,7 +238,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-vancouver","cut":"Top 16","deck":"Crystron K9"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jose David Mosquera Lozano": [
     {"e":"201704-ycs-bogota-colombia"},
@@ -417,7 +418,8 @@
   "Jamie Lewis Hunter": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2026-ycs-houston","f":"Advanced","cut":"Top 4","deck":"Angelechy"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ramon Lechuga Sanchez": [
     {"e":"2022-11-ycs-pasadena"}
@@ -579,7 +581,9 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-08-quebec","f":"Advanced","cut":"Top 8","deck":"Kewl Tune"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ariel Chiming Lee Carballo": [
     {"e":"2025-central-america-wcq"}

@@ -539,7 +539,11 @@
     {"e":"2026-08-quebec","f":"Genesys"}
   ],
   "Jordan Braulio Bermudez": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Taquan James Ellis": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gustavo Jesus Alvarez Chacare": [
     {"e":"remote-duel-ycs-february-2025"}
@@ -550,10 +554,10 @@
   "Juan Jose Jorge Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Joseph S.": {
-    "as": "Joseph Thomas Steinhauer"
-  },
   "Trent B.": {
     "as": "Trent Buras"
+  },
+  "Joseph S.": {
+    "as": "Joseph Thomas Steinhauer"
   }
 }

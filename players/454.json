@@ -216,7 +216,8 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2019-north-america-wcq"},
     {"e":"2023-ycs-richmond"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jason Dong": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
@@ -277,7 +278,9 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Stephen Thomas Andretta": [
     {"e":"2018-north-america-wcq"},
@@ -371,6 +374,7 @@
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Lachezar D. Todorov": [

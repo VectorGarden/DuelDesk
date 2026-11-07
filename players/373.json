@@ -381,7 +381,8 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Thomas J. Rosenstein": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -397,7 +398,8 @@
     {"e":"2023-ycs-vancouver"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Bryan Zachary LaBrecque": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -499,7 +501,8 @@
     {"e":"2025-05-ycs-providence"}
   ],
   "Julio Alberto Sanchez": [
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jorge Gustavo Aguilar Arevalo": [
     {"e":"2025-central-america-wcq"}
@@ -556,6 +559,9 @@
   "Oscar Galvan Jr.": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Aussie Juan Lowe": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Vicente Marvin Andino Rios": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -565,16 +571,16 @@
   "Micaela Alexa Suero Tagle": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "William B.": {
-    "as": "William Jordan Byrne"
-  },
   "Everardo A.": {
     "as": "Everardo Alvarez"
   },
-  "Jesse H.": {
-    "as": "Jesse William Horton"
-  },
   "Sai V.": {
     "as": "Sai Vang"
+  },
+  "William B.": {
+    "as": "William Jordan Byrne"
+  },
+  "Jesse H.": {
+    "as": "Jesse William Horton"
   }
 }

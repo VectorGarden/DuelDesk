@@ -86,6 +86,7 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Tounoushoua Thor": [
@@ -149,7 +150,8 @@
   "Christopher Allan Milligan": [
     {"e":"2015-north-american-wcq"},
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Javier Ignacio Segovia Pinilla": [
     {"e":"2015-south-american-wcq"}
@@ -403,7 +405,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marc David Giordano": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -629,6 +632,9 @@
   ],
   "Henry Tuong Huy Nguyen": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Steven Russell Apfel": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alicia Garcia": {
     "as": "Alicia B. Garcia"

@@ -86,6 +86,7 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Aaron Joseph Schell": [
@@ -399,7 +400,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2023-ycs-richmond"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cesar Augusto Davalos Tenorio": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -534,6 +536,9 @@
   "Gerardo Soto Jr.": [
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Jarrod Richard Scicchitano": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Elio Luis Nunez Ramirez": [
     {"e":"remote-duel-ycs-february-2025"}

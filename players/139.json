@@ -402,6 +402,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Lucigod Louie Fiumara": [
@@ -511,7 +512,8 @@
   "Julian Munoz Gonzalez": [
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "John Christopher Mcvey": [
     {"e":"2024-ycs-indianapolis"}
@@ -585,16 +587,19 @@
   "Emanuel Eduardo Salazar": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Isidro Mercelino Rodriguez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Jordan Gutierrez": {
     "as": "Jordan J. Gutierrez"
   },
   "Nikhil Malekal": {
     "as": "Nikhil K. Malekal"
   },
-  "Nelson F.": {
-    "as": "Nelson Lolong Federipe"
-  },
   "Hyro B.": {
     "as": "Hyro de Guzman Banayad"
+  },
+  "Nelson F.": {
+    "as": "Nelson Lolong Federipe"
   }
 }

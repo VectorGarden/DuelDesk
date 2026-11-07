@@ -99,6 +99,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Nil K. Patel": [
@@ -157,6 +158,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "John Joesph Melissari III": [
@@ -417,7 +419,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Casey John Willerton": [
     {"e":"2018-ycs-memphis"}
@@ -649,7 +652,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Josue Blanco Rodriguez": [
     {"e":"2024-ycs-guadalajara-mexico"}
@@ -690,7 +694,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Edgar Adiel Cruz Correa": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sky Joe Garner": [
     {"e":"2026-04-team-ycs-las-vegas"}
@@ -730,14 +735,11 @@
   "Rodrigo Herrera Centurion": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Diego H.": {
-    "as": "Diego Henrique"
-  },
   "Julio G.": {
     "as": "Julio Gomes"
   },
-  "Aidan C.": {
-    "as": "Aidan Alexander Clarke"
+  "Diego H.": {
+    "as": "Diego Henrique"
   },
   "Demario J.": {
     "as": "Demario Montae Jester"
@@ -745,10 +747,13 @@
   "Leo F.": {
     "as": "Leo Feria"
   },
-  "Brady S.": {
-    "as": "Brady James Stockdale"
+  "Aidan C.": {
+    "as": "Aidan Alexander Clarke"
   },
   "Rico E.": {
     "as": "Rico Carlos Eichelberger"
+  },
+  "Brady S.": {
+    "as": "Brady James Stockdale"
   }
 }

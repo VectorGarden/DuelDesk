@@ -92,7 +92,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "William Darnell Simmons": [
     {"e":"2015-ycs-charleston"},
@@ -331,6 +332,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"ycs-lima-peru-2023"}
@@ -510,7 +512,8 @@
   "Ryan Alexander Small": [
     {"e":"2023-ycs-richmond"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alejandro Isaias Marcano Velasquez": [
     {"e":"2023-ycs-santiago-chile"}
@@ -540,7 +543,8 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys","cut":"Top 8","deck":"Magnet DoomZ"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Alberith Victor Quispe Cami": [
     {"e":"2024-south-america-wcq"},
@@ -553,7 +557,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Emmanuel (PR)": [
     {"e":"2024-ycs-raleigh"}
@@ -610,10 +615,10 @@
   "James Ricotta": {
     "as": "James P. Ricotta"
   },
-  "Karan S.": {
-    "as": "Karan Sharma"
-  },
   "Colby N.": {
     "as": "Colby Man Tsun Ng"
+  },
+  "Karan S.": {
+    "as": "Karan Sharma"
   }
 }

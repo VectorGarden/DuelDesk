@@ -277,7 +277,8 @@
   "Alex Azcona": [
     {"e":"2019-ycs-chicago"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Pablo Gutierrez Perez": [
     {"e":"2019-ycs-guadalajara"},
@@ -459,7 +460,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Anthony Alphonso Lombardi": [
     {"e":"2025-north-america-wcq"},
@@ -509,7 +511,9 @@
   "Holden McKyle Meyer": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Jurrac Fire King"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cesar Rodrigo Rosas Joya": [
     {"e":"2026-02-300th-na"}

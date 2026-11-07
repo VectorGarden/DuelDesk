@@ -502,7 +502,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Andre Hou Gin Chan": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -561,7 +562,8 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Aneudy David Cruz Guzman": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Matt Charles Spitzer": [
     {"e":"na-ygoc-2022"}
@@ -569,11 +571,11 @@
   "Antwann McCall": {
     "as": "Antwann T. McCall"
   },
-  "Jaden M.": {
-    "as": "Jaden M. Malek"
-  },
   "Jacob C.": {
     "as": "Jacob Daniel Clements"
+  },
+  "Jaden M.": {
+    "as": "Jaden M. Malek"
   },
   "Kelii A.": {
     "as": "Kelii Kamau Agee"

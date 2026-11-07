@@ -311,7 +311,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher Tyler Dailey": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
@@ -337,7 +338,9 @@
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Gem-Knight"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Luis Humberto Lopez Rodriguez": [
     {"e":"2018-central-america-wcq"}
@@ -378,6 +381,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "James Bradford Apple": [
@@ -585,7 +589,8 @@
     {"e":"2024-ycs-medellin-colombia"}
   ],
   "Aaron Cordova": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Donny’s Knights": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -633,22 +638,22 @@
   "Chris Mattiske": [
     {"e":"yu-gi-oh-world-championship-2013"}
   ],
-  "Oliver D.": {
-    "as": "Oliver Wallace Desmond"
-  },
   "Rolf R.": {
     "as": "Rolf Gabriel Roldan Rolle"
   },
   "Haoran G.": {
     "as": "Haoran Gan"
   },
+  "Oliver D.": {
+    "as": "Oliver Wallace Desmond"
+  },
+  "Francis A.": {
+    "as": "Francis Jose London Aguinaldo"
+  },
   "William Z.": {
     "as": "William Ziyun Zhou"
   },
   "Roy N.": {
     "as": "Roy Quoc To Nguyen"
-  },
-  "Francis A.": {
-    "as": "Francis Jose London Aguinaldo"
   }
 }

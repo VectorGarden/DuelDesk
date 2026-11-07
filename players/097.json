@@ -330,7 +330,9 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jerome Eleazar Artes Gamboa": [
     {"e":"201711-san-diego-ca"},
@@ -579,7 +581,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Jestise Armand Negron": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Fox Avery Lucien Wilby": [
     {"e":"2025-04-ycs-houston"}

@@ -70,7 +70,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brendan Michael O’Hearn": [
     {"e":"2014-ycs-philadelphia-pa"},
@@ -211,7 +212,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brayan Abraham Torres Gonzalez": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -420,7 +422,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Rachamim Yair Messica DeAlmeida Brito": [
     {"e":"2024-north-america-wcq","cut":"Top 64","deck":"Vanquish Soul Fire King Snake-Eye"},
@@ -431,7 +434,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Isaac Baruc Guerrero Zelaya": [
     {"e":"2024-team-ycs-san-jose-costa-rica"},
@@ -511,6 +515,9 @@
   ],
   "WataruTEAM": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Glen Xavier Camunas Resto": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gustavo R.": {
     "as": "Gustavo Bordon Ribeiro"

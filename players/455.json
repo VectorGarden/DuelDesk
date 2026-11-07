@@ -370,7 +370,9 @@
   "Edwin Omar Irizarry Brugman": [
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Domenico Franco Simeo Jr.": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -514,7 +516,9 @@
   ],
   "James Patrick Worley": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jace Newton Allen": [
     {"e":"2025-02-ycs-orlando"}
@@ -584,13 +588,16 @@
   "Angel Hernan Espinoza Paz": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "David Gabriel Fernandez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Ezequiel Leites": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Dustin L.": {
-    "as": "Dustin Leonhardt"
-  },
   "Eva P.": {
     "as": "Eva Jolene Padilla"
+  },
+  "Dustin L.": {
+    "as": "Dustin Leonhardt"
   }
 }

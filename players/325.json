@@ -459,7 +459,8 @@
   "Daniel Joseph Roman": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Yacine": [
     {"e":"2024-ycs-raleigh"}
@@ -550,7 +551,8 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Jacob Charles Casko": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Steve Ramkissoom": [
     {"e":"wcq-2016-mexico"}

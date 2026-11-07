@@ -42,6 +42,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Gilford Velez Jo": [
@@ -226,6 +228,7 @@
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"na-ygoc-2022"},
     {"e":"remote-duel-ycs-february-2025"},
@@ -278,6 +281,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Benjamin Jacob Bonus": [
@@ -648,7 +653,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Trevor Chase McMahan": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sin City Yees": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -658,7 +664,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Andreas Alessandro Ley": [
     {"e":"2025-04-ycs-houston"}
@@ -708,7 +716,9 @@
   "Roxas Chandler B. Peters": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joshua Randall Steiner": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
@@ -724,6 +734,9 @@
   "45201": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Chad William Jones": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Leonardo Alexander Alva Donayre": [
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -736,10 +749,10 @@
   "Michael C.": {
     "as": "Michael Angel Campos"
   },
-  "Jashanpal M.": {
-    "as": "Jashanpal Singh Mangat"
-  },
   "Elijah M.": {
     "as": "Elijah Ray Maine"
+  },
+  "Jashanpal M.": {
+    "as": "Jashanpal Singh Mangat"
   }
 }

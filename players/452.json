@@ -135,7 +135,8 @@
     {"e":"2023-ycs-cancun-mexico"},
     {"e":"2024-central-america-wcq","cut":"Top 64"},
     {"e":"2025-central-america-wcq","cut":"Top 32"},
-    {"e":"2026-central-america-wcq"}
+    {"e":"2026-central-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tyler Lee Rupert": [
     {"e":"2016-north-american-wcq"},
@@ -381,7 +382,8 @@
     {"e":"2025-02-ycs-orlando","cut":"Top 16","deck":"Mitsurugi Ryzeal"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Maria Argentio Cedeño": [
     {"e":"2022-team-ycs-quito"}
@@ -529,7 +531,8 @@
   ],
   "Austin Michael Smith": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Save The Dragons": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -579,10 +582,14 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Christopherr Shaye Zajaczkowski": [
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cesar David Gonzales Astudillo": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
+  ],
+  "Edwin Olivera Jr.": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Adolfo de Jesus Aquino Saravia": [
     {"e":"uds-2016-elsalvador"}
@@ -596,11 +603,11 @@
   "Rafael C.": {
     "as": "Rafael Andres Fernando Hernandez Canales"
   },
-  "Christopher Y.": {
-    "as": "Christopher Henry Yu"
-  },
   "Zhufeng L.": {
     "as": "Zhufeng Liu"
+  },
+  "Christopher Y.": {
+    "as": "Christopher Henry Yu"
   },
   "Dawson B.": {
     "as": "Dawson Kristopher Boger"

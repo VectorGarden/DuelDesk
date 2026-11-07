@@ -220,6 +220,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Justin Rafiel Colunga": [
@@ -520,7 +521,9 @@
   ],
   "Ronald Javier Bravo": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Steison Valentin Ruiz": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -607,6 +610,12 @@
   ],
   "David Solomon Tamirat": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Christopher Calvin Hare": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Nate Joseph Chastain": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Isiah B.": {
     "as": "Isiah Allen Bourdeau"

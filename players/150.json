@@ -172,7 +172,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Justin Tyler Scharnhorst": [
     {"e":"2016-ycs-houston-texas"}
@@ -412,7 +413,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Michael Joseph McGourn": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -481,10 +483,12 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Tyler Russell Ahern": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jace Michael Bonanza": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Keyner Guillermo Davila Romero": [
     {"e":"2025-02-ycs-orlando"}
@@ -571,13 +575,16 @@
   "Tony Alexander Piedra": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Garrett N. Sorensen": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Sebastian Daniel Garcia Cruz": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Benjamin Y.": {
-    "as": "Benjamin Jay Yates"
-  },
   "Connor A.": {
     "as": "Connor William Albury"
+  },
+  "Benjamin Y.": {
+    "as": "Benjamin Jay Yates"
   }
 }

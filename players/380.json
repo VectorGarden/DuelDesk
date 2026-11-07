@@ -51,6 +51,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jaime Uriel Zarate Cordoba": [
@@ -336,7 +337,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "David Michael Faunce": [
     {"e":"2018-north-america-wcq"}
@@ -540,7 +542,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Aaron Michael Burcham": [
     {"e":"2024-north-america-wcq"},
@@ -550,7 +553,9 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Blake Nicklas Garcia Bautista": [
     {"e":"2024-north-america-wcq"}
@@ -586,7 +591,8 @@
   "Grayson Reece Kenna": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Navinash Shiv Raghubir": [
     {"e":"2024-ycs-raleigh"}
@@ -658,7 +664,9 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Aaron Scott Anderson": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Luis Castillo Paniagua": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
@@ -666,22 +674,22 @@
   "Alejandro Manuel Estrada Maya": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Andrew R.": {
-    "as": "Andrew Edward Rangel"
-  },
   "Tekle Y.": {
     "as": "Tekle Okbamicael Yousef"
   },
   "Georgiy K.": {
     "as": "Georgiy Andreyevich Kachurin"
   },
-  "Kyle R.": {
-    "as": "Kyle Alan Rohrer"
+  "Andrew R.": {
+    "as": "Andrew Edward Rangel"
+  },
+  "Francis N.": {
+    "as": "Francis Huy Nguyen"
   },
   "Jesus C.": {
     "as": "Jesus Chavez Campas"
   },
-  "Francis N.": {
-    "as": "Francis Huy Nguyen"
+  "Kyle R.": {
+    "as": "Kyle Alan Rohrer"
   }
 }

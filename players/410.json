@@ -279,6 +279,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Keith Michael Brackett": [
@@ -514,7 +516,8 @@
   ],
   "Santiago Joan Alonso": [
     {"e":"2023-ycs-richmond"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jarret Gunner Erickson": [
     {"e":"2023-ycs-vancouver"}

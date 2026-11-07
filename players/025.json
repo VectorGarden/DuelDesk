@@ -299,7 +299,8 @@
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-atlanta"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-remote-duel-ycs-north-america"}
+    {"e":"2022-remote-duel-ycs-north-america"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Aiden Andre Clares": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
@@ -645,6 +646,9 @@
   ],
   "Kimberly Mildred Michelle McCormick": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Villon Zheng": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gerjust Bryan Roque Yataco": [
     {"e":"ycs-lima-peru-2023"}

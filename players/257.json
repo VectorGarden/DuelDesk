@@ -148,7 +148,8 @@
   ],
   "Christopher David Collins": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Justin Lynn Williams": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
@@ -316,7 +317,8 @@
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Madden Alexander Lay": [
-    {"e":"2019-ycs-niagara-falls"}
+    {"e":"2019-ycs-niagara-falls"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Julio October Castillo": [
     {"e":"2019-ycs-pasadena"}
@@ -419,7 +421,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nicholas Paul Lanier": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -545,10 +548,12 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Michael Robert Bradac": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Fernandez": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Doc Cheyene Jones": [
     {"e":"2025-02-ycs-orlando"}
@@ -579,7 +584,9 @@
   ],
   "Kai Caden Zamzow": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Nathan Yu Rulona": [
     {"e":"2026-02-300th-na","f":"Advanced"}

@@ -175,6 +175,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Marco Antonio Guzman": [
@@ -558,6 +559,12 @@
   ],
   "Lindao Kevin": [
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
+  "Qasem Anwar Alkhatib": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Tyler Anthony Seiber": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sara S.": {
     "as": "Sara Sarao"

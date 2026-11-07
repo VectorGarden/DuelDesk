@@ -483,7 +483,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "X3 Gaming": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -624,10 +625,10 @@
   "Jacob M.": {
     "as": "Jacob William Moore"
   },
-  "Killian O.": {
-    "as": "Killian Otalora"
-  },
   "Luke F.": {
     "as": "Luke Albert Fink"
+  },
+  "Killian O.": {
+    "as": "Killian Otalora"
   }
 }

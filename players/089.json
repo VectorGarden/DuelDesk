@@ -479,7 +479,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Moriam Cruz Florez": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -618,16 +619,19 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Jorge Ruben Camara Garcia II": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Alvaro Ernesto Astete Ponce": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Ezekiel R.": {
+    "as": "Ezekiel James Rivera"
+  },
   "Miguel L.": {
     "as": "Miguel Roberto Luyo"
   },
   "Alan A.": {
     "as": "Alan Yair Amurri"
-  },
-  "Ezekiel R.": {
-    "as": "Ezekiel James Rivera"
   }
 }

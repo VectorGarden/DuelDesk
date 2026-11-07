@@ -415,6 +415,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"(No decklist)"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Gordon Ma": [
@@ -653,11 +654,11 @@
   "Kevin Enrrique Rubio": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Nicolo M.": {
-    "as": "Nicolo Matela Magallanes"
-  },
   "Isacc Z.": {
     "as": "Isacc Aaron Zepeda"
+  },
+  "Nicolo M.": {
+    "as": "Nicolo Matela Magallanes"
   },
   "Mohammad S.": {
     "as": "Mohammad Ishaq Sumaira"

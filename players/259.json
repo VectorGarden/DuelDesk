@@ -202,7 +202,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Daniel Keith Eckstein": [
     {"e":"2016-ycs-origins"}
@@ -504,7 +505,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Christopher Vichathep": [
-    {"e":"2025-04-ycs-houston"}
+    {"e":"2025-04-ycs-houston"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "German Alexander Guillen Vasquez": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
@@ -534,7 +536,8 @@
     {"e":"2026-02-300th-na"}
   ],
   "Brian Zachary Omlang": [
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sebastien Bureau": [
     {"e":"2026-08-quebec","f":"Advanced"}
@@ -553,6 +556,9 @@
   ],
   "Jordan Villacis": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Brett Anthony Blakney": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alexis Juncos": [
     {"e":"remote-duel-ycs-january-2026"}

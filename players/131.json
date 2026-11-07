@@ -37,7 +37,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Garrett L. Byrd": [
     {"e":"2013-north-american-wcq"}
@@ -86,6 +87,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Casey Ryan Mendel": [
@@ -508,7 +510,8 @@
   "Adam Louis Prinkey": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Eric Rassloff": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -556,7 +559,9 @@
   ],
   "Mark Allan Benton": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Omar Trevizo": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}

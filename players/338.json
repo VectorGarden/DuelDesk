@@ -323,6 +323,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jhon Keyni Mosquera Buitrago": [
@@ -474,7 +476,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jacob Mitchell Taylor": [
     {"e":"2024-ycs-indianapolis"}
@@ -498,14 +501,17 @@
   ],
   "Daniel Evan Lewis": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cody Adam Rising": [
     {"e":"2025-02-ycs-orlando"}
   ],
   "Gabriel Thomas Oti": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Kain Agustin Bordner": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -585,10 +591,10 @@
   "Andrew Bilbrey": {
     "as": "Andrew R. Bilbrey"
   },
-  "Longman H.": {
-    "as": "Longman M. Huang"
-  },
   "Kelvin G.": {
     "as": "Kelvin Alexis Gonzalez"
+  },
+  "Longman H.": {
+    "as": "Longman M. Huang"
   }
 }

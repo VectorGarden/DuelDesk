@@ -86,6 +86,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Donald Eugene Johnson": [
@@ -369,6 +370,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Alain Daniel Camous": [
@@ -378,7 +381,8 @@
     {"e":"2024-10-ycs-niagara-falls"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ivan Andres Godinez Murillo": [
     {"e":"2018-ycs-san-jose-costa-rica"},
@@ -478,7 +482,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cristian Apolo Santillan Lima": [
     {"e":"2022-team-ycs-quito"}
@@ -587,7 +593,8 @@
     {"e":"2024-ycs-guadalajara-mexico"}
   ],
   "Sebastian Jorge Garcia": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Donovan Chauncey Strachan": [
     {"e":"2025-02-ycs-orlando"}
@@ -613,7 +620,9 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ariel Ruiz": [
     {"e":"2025-10-ycs-anaheim"}
@@ -642,6 +651,12 @@
   ],
   "Jack David Clonan": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "David Pagan Ramirez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Joseph Anthony Mollica Jr.": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Juan David Roldan Berrio": [
     {"e":"remote-duel-ycs-january-2026"}

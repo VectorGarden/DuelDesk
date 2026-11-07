@@ -504,7 +504,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Mark Brendon Jackson": [
     {"e":"2023-ycs-richmond"}
@@ -585,7 +586,9 @@
   ],
   "Zachary Matthew Taylor": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ahmed Peeran Shaikh": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -610,7 +613,8 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Joel Benjamin Waldmann": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Eduardo B.": {
     "as": "Eduardo Baumgratz"

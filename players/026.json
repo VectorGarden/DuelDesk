@@ -144,7 +144,8 @@
     {"e":"2019-ycs-knoxville"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edeer Vazquez": [
     {"e":"2015-ycs-chicago"},
@@ -391,7 +392,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jossue Sahid Preciado Pazmino": [
     {"e":"2023-south-america-wcq"}
@@ -516,7 +518,8 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Sebastian Gamboa": [
-    {"e":"2026-central-america-wcq"}
+    {"e":"2026-central-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marcelo Vargas": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
@@ -546,11 +549,11 @@
   "Jessica Debrodie": [
     {"e":"na-ygoc-2022"}
   ],
-  "Isaac H.": {
-    "as": "Isaac Hernandez"
-  },
   "Zakarie G.": {
     "as": "Zakarie Lanier Guivas"
+  },
+  "Isaac H.": {
+    "as": "Isaac Hernandez"
   },
   "Tim N.": {
     "as": "Tim Thien Nguyen"

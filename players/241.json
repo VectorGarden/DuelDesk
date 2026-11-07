@@ -500,7 +500,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Ala Esam Hataf": [
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Forrest Cameron Beal": [
     {"e":"2024-ycs-raleigh"}
@@ -586,10 +587,16 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Bradley M.": {
-    "as": "Bradley Wayne McLean"
-  },
+  "Ramsay Fonda Brown": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Rubner Josue Sanchez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Richard T.": {
     "as": "Richard Lee Tipton"
+  },
+  "Bradley M.": {
+    "as": "Bradley Wayne McLean"
   }
 }

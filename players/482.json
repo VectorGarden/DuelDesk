@@ -255,7 +255,8 @@
     {"e":"2019-ycs-knoxville"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gregory Hillman Jr.": [
     {"e":"2019-ycs-portland"}
@@ -390,7 +391,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Alexander Lee Prater": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jose Angel Gonzalez Jr.": [
     {"e":"2025-04-ycs-houston"},
@@ -491,13 +493,13 @@
   "Kenneth Leugim Sanchez Vega": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Trent M.": {
-    "as": "Trent Jamison Miller"
+  "Liborio B.": {
+    "as": "Liborio Bobby Barone"
   },
   "Tyler V.": {
     "as": "Tyler James Vezina"
   },
-  "Liborio B.": {
-    "as": "Liborio Bobby Barone"
+  "Trent M.": {
+    "as": "Trent Jamison Miller"
   }
 }

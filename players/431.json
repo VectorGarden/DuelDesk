@@ -345,6 +345,7 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joan Andres Bailon Gonzalez": [
@@ -524,7 +525,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Paxton Alexander Clarke": [
     {"e":"2023-ycs-vancouver"}
@@ -568,7 +571,8 @@
     {"e":"2024-ycs-indianapolis"}
   ],
   "Tyler Lee Jones": [
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brandon Donte Martin": [
     {"e":"2024-ycs-raleigh"}
@@ -605,7 +609,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Christopher J. Nagy": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -643,7 +649,11 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Alfonso Carlos Madrazo": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Gregory Kevin Grantham II": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Diego Ulises Hernandez Moctezuma": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

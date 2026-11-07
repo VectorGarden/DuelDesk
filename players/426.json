@@ -209,6 +209,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Juan Camilo Diaz Perez": [
@@ -667,6 +668,12 @@
   ],
   "Alexis Vladimir Guerra Salazar": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Benjamin Hunter Kirkland": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Toby Mathias Pfeifer": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nouchee Xiong": [
     {"e":"na-ygoc-2022"}

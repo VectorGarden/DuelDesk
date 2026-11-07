@@ -103,7 +103,8 @@
   ],
   "Jackson Christopher Hester": [
     {"e":"2016-north-american-wcq"},
-    {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"}
+    {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Bronson Allen Miller": [
     {"e":"2016-north-american-wcq"},
@@ -160,7 +161,8 @@
   ],
   "Rasheed Maurice Dickens": [
     {"e":"2017-ycs-atlanta"},
-    {"e":"2019-03-atlanta-ga"}
+    {"e":"2019-03-atlanta-ga"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "James Jamal Thompson": [
     {"e":"2017-ycs-dallas"}
@@ -267,6 +269,7 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Vince Albert C. Castillo": [
@@ -478,14 +481,14 @@
   "Humberto Ricardo Ugarte Rodriguez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Miguel V.": {
-    "as": "Miguel Angel October Vasquez"
+  "Andres E.": {
+    "as": "Andres Felipe Espinosa"
   },
   "Niko B.": {
     "as": "Niko Daniel Baca"
   },
-  "Andres E.": {
-    "as": "Andres Felipe Espinosa"
+  "Miguel V.": {
+    "as": "Miguel Angel October Vasquez"
   },
   "Samuel G.": {
     "as": "Samuel Nathan Garland"

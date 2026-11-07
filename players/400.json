@@ -68,6 +68,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Alejandro Alberto Rojas Vidal": [
@@ -445,7 +446,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Randy Joseph Marquisee": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -572,7 +574,8 @@
     {"e":"2026-08-quebec","f":"Genesys"}
   ],
   "Christian Gervasoni Betancourt": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alice Andrea Diaz Pena": [
     {"e":"2026-south-america-wcq"}

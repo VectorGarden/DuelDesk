@@ -574,7 +574,9 @@
   ],
   "Michael Wayne Sprain": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "James Martin Tarpley Jr.": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -613,10 +615,10 @@
   "Hung Luu": {
     "as": "Hung G. Luu"
   },
-  "Julien L.": {
-    "as": "Julien Lin"
-  },
   "Manuel R.": {
     "as": "Manuel Antonio Rodriguez"
+  },
+  "Julien L.": {
+    "as": "Julien Lin"
   }
 }

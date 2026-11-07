@@ -495,11 +495,13 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "LeAndre Fletcher": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carlos Alexis Maltez": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Rylan James Kern": [
     {"e":"2025-02-ycs-orlando"},
@@ -549,14 +551,20 @@
   "Christain Jayland Ryan": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Ricardo Aranda Gonzalez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Alexander Niebrzydowski": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Jaime Alexis Yañez Torres": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Connor C.": {
-    "as": "Connor Ray Churchill"
-  },
   "Leon V.": {
     "as": "Leon Nathan Joshua Jimenez Villarica"
+  },
+  "Connor C.": {
+    "as": "Connor Ray Churchill"
   },
   "Devon S.": {
     "as": "Devon Robert Scarpella"

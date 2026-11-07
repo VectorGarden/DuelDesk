@@ -262,7 +262,8 @@
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Daniel Zetina Arzate": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -316,7 +317,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Wonrae Jonathan Kim": [
     {"e":"2019-ycs-portland"}
@@ -490,7 +492,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Thomas Jefferson Harris": [
     {"e":"2025-10-ycs-anaheim"}
@@ -548,6 +552,9 @@
   ],
   "Edres Hares Safi": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Lucas Gray McCrory": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luiz Carlos Rocha Nascimento": [
     {"e":"remote-duel-ycs-january-2024"}

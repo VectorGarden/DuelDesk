@@ -533,6 +533,9 @@
   "Victor Clavijo Arturo": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Edgar Landaverde": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Uriel Flores Valdovinos": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -542,11 +545,11 @@
   "Allan D.": {
     "as": "Allan Tadeu de Souza Diogo"
   },
-  "Nick W.": {
-    "as": "Nick Allen Woodson"
-  },
   "Alexander I.": {
     "as": "Alexander Ryo Igarashi"
+  },
+  "Nick W.": {
+    "as": "Nick Allen Woodson"
   },
   "Manuel F.": {
     "as": "Manuel Isaiah Favela"

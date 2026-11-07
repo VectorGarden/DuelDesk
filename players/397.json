@@ -515,7 +515,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tyler Jacen Balyeat": [
     {"e":"2023-north-america-wcq"}
@@ -605,7 +606,8 @@
     {"e":"2024-ycs-medellin-colombia"}
   ],
   "Landy Jesus Hernandez": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Caleb Joshua Bell": [
     {"e":"2025-04-ycs-houston"},
@@ -655,23 +657,29 @@
   "Thiago Silva Lopes": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Joshua Lane Clayton": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Sang Wook Kang": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Joshua H. DuWors": [
     {"e":"na-ygoc-2022"}
   ],
   "Carlos Andres Cruz del Aguila": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Gage H.": {
-    "as": "Gage Wilson Hopper"
+  "Pablo M.": {
+    "as": "Pablo Maldonado"
   },
   "Markus J.": {
     "as": "Markus Aliu Levi John"
   },
-  "Pablo M.": {
-    "as": "Pablo Maldonado"
-  },
   "Jonah C.": {
     "as": "Jonah Ryan Crader"
+  },
+  "Gage H.": {
+    "as": "Gage Wilson Hopper"
   },
   "Yacine S.": {
     "as": "Yacine Sahli"

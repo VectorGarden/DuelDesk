@@ -34,7 +34,9 @@
     {"e":"2013-north-american-wcq"},
     {"e":"2016-north-american-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gregory Nathaniel Williams": [
     {"e":"2013-north-american-wcq"},
@@ -534,7 +536,8 @@
   "Mahdi Samir Elghoul": [
     {"e":"2024-10-ycs-niagara-falls"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brandon Joseph Delgado": [
     {"e":"2024-12-ycs-anaheim"},
@@ -653,7 +656,9 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Tomas Garza": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jaime Montalvo": [
     {"e":"na-ygoc-2022"}

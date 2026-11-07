@@ -557,7 +557,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Justin Myles Baker": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edward John Rossi IV": [
     {"e":"2025-02-ycs-orlando"}
@@ -620,16 +621,22 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Carlos Vargas": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "F Bradley Young": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Haru D.": {
     "as": "Haru Domingues"
-  },
-  "John T.": {
-    "as": "John Piero Trujillo"
   },
   "Bastian N.": {
     "as": "Bastian Tristan Narro"
   },
   "Aviel G.": {
     "as": "Aviel Getter"
+  },
+  "John T.": {
+    "as": "John Piero Trujillo"
   }
 }

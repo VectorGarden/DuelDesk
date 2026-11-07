@@ -107,7 +107,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Rue Richard A. Wycoco": [
     {"e":"2013-yu-gi-oh-championship-series-san-diego-california"},
@@ -732,15 +734,17 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Devyn Joseph Nirza": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Charles Rose": [
     {"e":"na-ygoc-2022"}
   ],
-  "Levi S.": {
-    "as": "Levi Thomas Mathew Steffen"
-  },
   "Jeremy A.": {
     "as": "Jeremy Alan AmRhein"
+  },
+  "Levi S.": {
+    "as": "Levi Thomas Mathew Steffen"
   }
 }

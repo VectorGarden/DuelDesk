@@ -384,7 +384,8 @@
     {"e":"2025-ycs-mexico-city-mexico"},
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Oscar Colin Mondragon": [
     {"e":"2022-latin-america-remote-duel-ycs"},

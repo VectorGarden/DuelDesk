@@ -116,7 +116,8 @@
   "Jose Antonio Ruiz Jr.": [
     {"e":"2015-150th-ycs-in-columbus"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Guillermo Soto Beltran": [
     {"e":"201509-monterrey"},
@@ -378,7 +379,8 @@
   "Philip Levon Lowe": [
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gustavo Rueda Martinez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -513,7 +515,17 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Benjamin Alexander Simpson": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Kevin Bryan Ellis Ortiz": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Jacob Erick Toledo": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Carlos Alberto Zelaya": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Juan Carlos Sandoval Leon": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

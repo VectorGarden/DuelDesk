@@ -369,7 +369,8 @@
   ],
   "Alejandro Cameron Sanjiao": [
     {"e":"2019-north-america-wcq"},
-    {"e":"2019-ycs-pasadena"}
+    {"e":"2019-ycs-pasadena"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jesus Alberto Santana": [
     {"e":"2019-north-america-wcq"},
@@ -508,7 +509,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jamar Vernon Mosby": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -568,7 +570,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sebastian Robert DeLaney": [
     {"e":"2025-02-ycs-orlando"},
@@ -629,6 +632,15 @@
   ],
   "Los mata sanos": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Arnaldo Luis Gonzalez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Christopher Yarbrough": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Justyn Cheung": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cristian Andres Panduro Dextre": [
     {"e":"remote-duel-ycs-january-2024"},

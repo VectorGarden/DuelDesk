@@ -333,6 +333,7 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Julio Sebastian Carretero Abad": [
@@ -634,6 +635,9 @@
   ],
   "Jason Chris Ramadhar": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "DeAndre Lamar Martin": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lucas Douglas Roberto De Lima": [
     {"e":"remote-duel-ycs-february-2025"}

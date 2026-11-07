@@ -82,7 +82,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2025-ycs-vancouver"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "John Michael Williams": [
     {"e":"2014-ycs-toronto"},
@@ -504,7 +505,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Keith Allen Casterline": [
     {"e":"2023-ycs-indianapolis"},
@@ -642,6 +644,9 @@
   "Matthew Maverick Ebreo Yosuico": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Carlos Cedeno": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Matias Andre Marin Marchant": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -651,11 +656,11 @@
   "Marcos D.": {
     "as": "Marcos Damaceno"
   },
-  "Caulin B.": {
-    "as": "Caulin David Bradshaw"
-  },
   "Jet X.": {
     "as": "Jet Xiao"
+  },
+  "Caulin B.": {
+    "as": "Caulin David Bradshaw"
   },
   "Rocky V.": {
     "as": "Rocky V. Vo"

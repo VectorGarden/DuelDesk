@@ -402,7 +402,8 @@
   ],
   "Jonathan Paul Folic": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gerson Sequeira Salinas": [
     {"e":"2024-team-ycs-san-jose-costa-rica"},
@@ -491,10 +492,10 @@
   "Dominick T.": {
     "as": "Dominick Nelson Townsend"
   },
-  "Donovan B.": {
-    "as": "Donovan Lemar Brown"
-  },
   "Evan M.": {
     "as": "Evan Greyston McKay"
+  },
+  "Donovan B.": {
+    "as": "Donovan Lemar Brown"
   }
 }

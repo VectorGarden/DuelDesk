@@ -439,6 +439,7 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 4"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -510,7 +511,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Phanuel Belhomme": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Kristoffer John Kielich": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -519,7 +521,8 @@
     {"e":"2025-12-rdycs-na","cut":"Top 8","deck":"Dracotail"}
   ],
   "Steve Ryan Pittman": [
-    {"e":"2025-12-rdycs-na"}
+    {"e":"2025-12-rdycs-na"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edwin Geovany Reyes Noguera": [
     {"e":"2025-central-america-wcq"}

@@ -473,6 +473,7 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2023-ycs-richmond"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Brennan W. Hixson": [
@@ -483,7 +484,8 @@
     {"e":"2022-ycs-charlotte"},
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Diego Rodrigo Villasenor Carrillo": [
     {"e":"2022-ycs-guadalajara-mexico"},
@@ -610,7 +612,9 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "William Luke Glipo Alconaba": [
     {"e":"2024-ycs-raleigh"}

@@ -512,7 +512,8 @@
   "Cameron Lee Fisher": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Samuell Clarence Hutchins": [
     {"e":"2025-02-ycs-orlando"},
@@ -562,7 +563,9 @@
   "Kimani Ojai Christie": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Brandon Stanley White": [
     {"e":"2026-08-quebec","f":"Advanced"}
@@ -579,16 +582,16 @@
   "Nathan Matthew Lahman": [
     {"e":"na-ygoc-2022"}
   ],
-  "Salvador N.": {
-    "as": "Salvador Angel September Navarro"
-  },
   "Ronald B.": {
     "as": "Ronald Steven Barrows"
   },
-  "Mikel L.": {
-    "as": "Mikel DeAndre Luster"
+  "Salvador N.": {
+    "as": "Salvador Angel September Navarro"
   },
   "Caleb B.": {
     "as": "Caleb James Becker"
+  },
+  "Mikel L.": {
+    "as": "Mikel DeAndre Luster"
   }
 }

@@ -287,7 +287,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Patrick Deiby Goicichea Ascencios": [
     {"e":"2019-team-ycs-lima-peru"}
@@ -370,7 +371,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Bryan Alexis Pereyra": [
     {"e":"2022-ycs-charlotte"},
@@ -551,16 +553,16 @@
   "Camaran S.": {
     "as": "Camaran Jack Stout"
   },
-  "Josh G.": {
-    "as": "Josh Makana Gala"
-  },
   "Andrew E.": {
     "as": "Andrew Michael Edwards"
   },
-  "Jovanny C.": {
-    "as": "Jovanny Velsain Castillo"
+  "Josh G.": {
+    "as": "Josh Makana Gala"
   },
   "Benjamin L.": {
     "as": "Benjamin Abraham Apawan Lahoy"
+  },
+  "Jovanny C.": {
+    "as": "Jovanny Velsain Castillo"
   }
 }

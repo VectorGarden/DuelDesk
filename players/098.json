@@ -163,7 +163,8 @@
   ],
   "Phillip Wil Smith": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Landon Neil King": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
@@ -394,7 +395,8 @@
   ],
   "Jonathan Edward Monserrate Jacobs": [
     {"e":"2023-north-america-wcq"},
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Darren Micheal Figuerido": [
     {"e":"2023-north-america-wcq"}
@@ -475,7 +477,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Oliver Raymond Harden Jr.": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Quran Michael Keiller": [
     {"e":"2025-02-ycs-orlando"}
@@ -534,6 +537,9 @@
   "Tyler James Degrand": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"}
+  ],
+  "Ivanuel Jose Mills Negron": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Makoto Yada": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Japan","cut":"Top 8"}

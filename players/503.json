@@ -141,7 +141,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alexander Jamieson Bradbury": [
     {"e":"2015-north-american-wcq"}
@@ -530,13 +531,16 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Clayton Walker Reeves": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Scott James Costa": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Bobby’s Bench": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -607,7 +611,15 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Curtis Edward Carlton": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Alexander Ray Barlow": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Antonio Maria Bello Martucci": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Hector Julio Montejo Navarro": [
     {"e":"remote-duel-ycs-february-2025"}

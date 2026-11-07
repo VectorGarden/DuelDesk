@@ -240,7 +240,8 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Omar Lara Segundo": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -292,7 +293,8 @@
     {"e":"2018-ycs-memphis"},
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alvaro Francisco Molina Molina": [
     {"e":"2018-south-america-wcq"}
@@ -327,7 +329,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jarrett Kaempfer": [
     {"e":"2019-03-atlanta-ga"}
@@ -434,7 +437,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Conor Soenke Dion": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -505,7 +509,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Domenic Antonio Riccio": [
     {"e":"2023-ycs-richmond"},
@@ -518,7 +523,9 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cesar Primo Beltran Ayma": [
     {"e":"2023-ycs-santa-cruz-de-la-sierra"}

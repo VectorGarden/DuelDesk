@@ -152,6 +152,8 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Osama Anis Oza": [
@@ -173,7 +175,8 @@
   ],
   "Ryan Blue Pinckley": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Robert Nicholas McKinney": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"}
@@ -340,7 +343,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Johanandersson Rojasnolasco": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -518,7 +523,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nolan Park Dilaimy": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -566,12 +572,18 @@
   "Voulis Kyriakos Exezidis": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Jorge Manuel Barrios": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Johan Andersson Rojas Nolasco": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Yuuki Shibata": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Top 8","deck":"Sky Striker"}
   ],
+  "Allen T.": {
+    "as": "Allen Tong"
+  },
   "Blake R.": {
     "as": "Blake Andrew Root"
   },
@@ -580,9 +592,6 @@
   },
   "Angel S.": {
     "as": "Angel Manuel Sixto"
-  },
-  "Allen T.": {
-    "as": "Allen Tong"
   },
   "Brian L.": {
     "as": "Brian Patrick Lentini"

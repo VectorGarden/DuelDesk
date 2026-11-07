@@ -368,7 +368,8 @@
     {"e":"2024-ycs-medellin-colombia"}
   ],
   "Axel Cabrera Garcia": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "The Gaming Goat Tinley Park": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -417,13 +418,13 @@
   "Logan K.": {
     "as": "Logan Michael Kite"
   },
+  "Tom K.": {
+    "as": "Tom Kleinegriber"
+  },
   "Timoti B.": {
     "as": "Timoti Baggio"
   },
   "Cash C.": {
     "as": "Cash Alexander Crites"
-  },
-  "Tom K.": {
-    "as": "Tom Kleinegriber"
   }
 }

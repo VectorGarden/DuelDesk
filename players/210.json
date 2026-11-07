@@ -409,7 +409,8 @@
   "Parker Neal James": [
     {"e":"2022-ycs-charlotte"},
     {"e":"2023-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jake Michael Gebhard": [
     {"e":"2022-ycs-minneapolis"},
@@ -493,7 +494,8 @@
   ],
   "Vic Andrew Frederick": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Erik Solorzano": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -506,7 +508,9 @@
   ],
   "Joseph Robert White": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jose Ignacio Araya Vargas": [
     {"e":"2025-ycs-buenos-aires-argentina"},

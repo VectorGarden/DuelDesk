@@ -118,6 +118,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joao Pedro Barbosa Rabelo": [
@@ -459,7 +460,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Alejandro Antonio Reyes": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Axel Zayas": [
     {"e":"2025-02-ycs-orlando"}
@@ -503,6 +505,9 @@
   "Jameel Steven Carl Russell": [
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
+  "Jerod Lee Fitzgerald": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Brad Harol Ore Mallma": [
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -512,10 +517,10 @@
   "Johny V.": {
     "as": "Johny Tran Vu"
   },
-  "Travis R.": {
-    "as": "Travis Dean Rippey"
-  },
   "Kennedy L.": {
     "as": "Kennedy Le"
+  },
+  "Travis R.": {
+    "as": "Travis Dean Rippey"
   }
 }

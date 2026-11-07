@@ -427,7 +427,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jomo Andre Tracy Terry": [
     {"e":"2019-ycs-knoxville"}
@@ -512,7 +514,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Istvan Emanuel Sanchez Ortega": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -669,16 +672,16 @@
   "Cielo Alban Merino": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Raymond G.": {
-    "as": "Raymond Ignacio Gonzales"
-  },
   "Nicolas C.": {
     "as": "Nicolas Fiore Colella"
   },
-  "Yandi R.": {
-    "as": "Yandi Sebastian Rodriguez Rios"
+  "Raymond G.": {
+    "as": "Raymond Ignacio Gonzales"
   },
   "Xavier R.": {
     "as": "Xavier James Robinson"
+  },
+  "Yandi R.": {
+    "as": "Yandi Sebastian Rodriguez Rios"
   }
 }

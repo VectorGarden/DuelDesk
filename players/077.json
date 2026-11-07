@@ -346,7 +346,8 @@
   ],
   "David Raymond Miller": [
     {"e":"2022-remote-duel-ycs-north-america"},
-    {"e":"2024-ycs-indianapolis"}
+    {"e":"2024-ycs-indianapolis"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "John Thedore Logan": [
     {"e":"2022-ycs-charlotte"},
@@ -405,7 +406,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Garrett Quincy Paulson": [
     {"e":"2023-ycs-indianapolis"},
@@ -508,6 +511,9 @@
   "Jeffery Lee Shelly": [
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Ethan Aaron Adkins": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Vincent Robert Lubertazo": [
     {"e":"na-ygoc-2022"}

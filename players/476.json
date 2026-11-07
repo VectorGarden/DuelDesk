@@ -414,7 +414,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carl James McIntosh": [
     {"e":"2024-10-ycs-niagara-falls"}
@@ -473,7 +474,8 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Anderson Eugene Salters III": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marlon Reimnitz": [
     {"e":"2025-03-team-ycs-las-vegas"}

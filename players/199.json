@@ -170,7 +170,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Juan Antonio Richards III": [
     {"e":"2017-ycs-denver"},
@@ -609,6 +610,9 @@
   ],
   "Zachary Dale Stilinovich": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Carmella Joseph Scondotto": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Samuel Acevedo": [
     {"e":"na-ygoc-2022"}

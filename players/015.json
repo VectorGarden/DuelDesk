@@ -56,6 +56,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jaeden Patrick Ayala": [
@@ -398,7 +399,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ricardo Salamanca Mora": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -554,13 +556,13 @@
   "Yoshiki Saito": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Siming Y.": {
-    "as": "Siming Yang"
+  "Reece B.": {
+    "as": "Reece Joseph Bijou"
   },
   "Daryl R.": {
     "as": "Daryl Jimmy Reese"
   },
-  "Reece B.": {
-    "as": "Reece Joseph Bijou"
+  "Siming Y.": {
+    "as": "Siming Yang"
   }
 }

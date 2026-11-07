@@ -279,6 +279,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Tom Dhao Xiong": [
@@ -522,14 +524,17 @@
   "David Ryan Capuchino": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Jonathan Adam Mahran": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Ethan Garret Belcher": [
     {"e":"na-ygoc-2022"}
   ],
-  "Joseph N.": {
-    "as": "Joseph Hung Minh Nguyen"
-  },
   "Rohit K.": {
     "as": "Rohit Girish Kaushik"
+  },
+  "Joseph N.": {
+    "as": "Joseph Hung Minh Nguyen"
   },
   "Brian N.": {
     "as": "Brian Pasco Ng"

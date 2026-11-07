@@ -608,7 +608,9 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ian William Robinson": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Mayron Andres Chacon Llanos": [
     {"e":"remote-duel-ycs-january-2024"}
@@ -622,16 +624,16 @@
   "Carlos K.": {
     "as": "Carlos Eduardo Kazunori Kobayashi"
   },
-  "Alec M.": {
-    "as": "Alec Bryce Madden"
-  },
   "Alberto G.": {
     "as": "Alberto David Gomez"
   },
-  "Darian C.": {
-    "as": "Darian Lynn Crevier"
+  "Alec M.": {
+    "as": "Alec Bryce Madden"
   },
   "Bradley H.": {
     "as": "Bradley Mario Heathman"
+  },
+  "Darian C.": {
+    "as": "Darian Lynn Crevier"
   }
 }

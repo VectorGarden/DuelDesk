@@ -209,7 +209,8 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Shadhursen Puvanendra": [
     {"e":"2017-north-american-wcq"},
@@ -487,7 +488,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Leosdany Espinosa Alvarez": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -542,7 +544,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Jose Angel Ortiz": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Theodore Jennings Corrales": [
     {"e":"2025-02-ycs-orlando"},
@@ -615,13 +618,13 @@
   "Cheng Yu": {
     "as": "Cheng H. Yu"
   },
+  "Nigel N.": {
+    "as": "Nigel Nie"
+  },
   "Ed A.": {
     "as": "Ed Elton Devera Acepcion"
   },
   "Eulises E.": {
     "as": "Eulises Natanael Esquivel"
-  },
-  "Nigel N.": {
-    "as": "Nigel Nie"
   }
 }

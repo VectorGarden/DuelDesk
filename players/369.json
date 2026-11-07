@@ -379,7 +379,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sergio Antonio Valverde Ato": [
     {"e":"2023-south-america-wcq","cut":"Top 64"},
@@ -457,13 +458,16 @@
   ],
   "Tyler Ian McFarlin": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jaime Felix Hernandez": [
     {"e":"2025-02-ycs-orlando"}
   ],
   "Christopher Alan Mayer": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Michael Caudi": [
     {"e":"2025-03-team-ycs-las-vegas"}

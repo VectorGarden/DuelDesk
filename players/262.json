@@ -543,7 +543,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Matthew Louis Rohrer": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -597,7 +599,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Manuel Antonio Rodriguez": [
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Eoghan Jo Ming Grealish": [
     {"e":"2026-08-quebec","f":"Advanced"}
@@ -612,13 +615,17 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Scott Edward Vukelic": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
-  "Jose Z.": {
-    "as": "Jose A. Zarate"
-  },
+  "German Rodriguez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Guangnan L.": {
     "as": "Guangnan Liu"
+  },
+  "Jose Z.": {
+    "as": "Jose A. Zarate"
   },
   "Scott S.": {
     "as": "Scott Joseph Sheahan"

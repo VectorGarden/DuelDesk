@@ -106,7 +106,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Colin Robert Goodhue": [
     {"e":"2014-ycs-toronto"}
@@ -255,7 +256,8 @@
   "Howard Clark Kent Jr.": [
     {"e":"2018-ycs-atlanta"},
     {"e":"2019-03-atlanta-ga"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Andrew Michael Johnson": [
     {"e":"2018-ycs-memphis"}
@@ -530,6 +532,9 @@
   "Daiki Momiji": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Japan","cut":"Top 8"}
   ],
+  "Anandeth S.": {
+    "as": "Anandeth Sinhradsvong"
+  },
   "Logan T.": {
     "as": "Logan Tomlin"
   },
@@ -538,8 +543,5 @@
   },
   "Sage D.": {
     "as": "Sage Forest Duke"
-  },
-  "Anandeth S.": {
-    "as": "Anandeth Sinhradsvong"
   }
 }

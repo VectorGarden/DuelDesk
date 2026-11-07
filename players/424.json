@@ -334,6 +334,8 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys","cut":"Top 4","deck":"Angelechy"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Eric Eduardo Banda": [
@@ -343,7 +345,9 @@
   ],
   "Kenneth Elijah Ellis": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Maxie Bryon Fuqua Jr.": [
     {"e":"2018-09-200th-ycs-columbus-oh"}

@@ -101,7 +101,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jose Cruz Sepulveda-Aguila": [
     {"e":"2014-north-american-wcq"},
@@ -202,7 +203,8 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-ycs-knoxville"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Corban Eric Palmgren": [
     {"e":"2015-ycs-charleston"},
@@ -247,7 +249,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando","cut":"Top 32","deck":"Bystial Maliss"},
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alfonso Quezada": [
     {"e":"2016-north-american-wcq"}
@@ -616,7 +619,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brock Andrew Bateman": [
     {"e":"2023-ycs-indianapolis"}
@@ -720,6 +724,15 @@
   ],
   "Teo M.": [
     {"e":"2026-04-team-ycs-las-vegas"}
+  ],
+  "Matthew David Talarico": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Jay Robert Jones": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Damian Aidan Morgan": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Davi Mendonca Lisboa": [
     {"e":"remote-duel-ycs-february-2025"}

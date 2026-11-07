@@ -391,7 +391,8 @@
   ],
   "Enayat Justin Ali": [
     {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Samuel Choong-Hyun Kyeong": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -528,7 +529,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carlos Benjamin Mamani Tola": [
     {"e":"2024-south-america-wcq"},
@@ -544,7 +546,9 @@
   "Dillon Wade Norris": [
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jose Manuel Contreras": [
     {"e":"2025-10-ycs-anaheim"}
@@ -587,6 +591,9 @@
   "Kayne Ching Hian Tan": [
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
+  "Christopher Rashaan Adams": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Michael Chadwick": [
     {"e":"na-ygoc-2022"}
   ],
@@ -608,10 +615,10 @@
   "Bridger M.": {
     "as": "Bridger Coleman Martin"
   },
-  "Taylor O.": {
-    "as": "Taylor Anthony Oakes"
-  },
   "Shane A.": {
     "as": "Shane William Andrews"
+  },
+  "Taylor O.": {
+    "as": "Taylor Anthony Oakes"
   }
 }

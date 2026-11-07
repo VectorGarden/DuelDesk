@@ -109,6 +109,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Bystial @Ignister Maliss"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Augustus Michael Strowbridge": [
@@ -285,6 +286,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Brian Hernandez": [
@@ -499,11 +502,11 @@
   "Ignacio Alejandro Covarrubias Hermosilla": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Matheus K.": {
-    "as": "Matheus Kirian"
-  },
   "Vitor M.": {
     "as": "Vitor Mattos Milioni"
+  },
+  "Matheus K.": {
+    "as": "Matheus Kirian"
   },
   "Ryley G.": {
     "as": "Ryley Ayman Goff"

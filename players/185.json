@@ -464,7 +464,8 @@
     {"e":"2023-05-ycs-philadelphia"}
   ],
   "Jonathan Alfred Morales Jr.": [
-    {"e":"2023-05-ycs-philadelphia"}
+    {"e":"2023-05-ycs-philadelphia"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alexis Santiago Vallarino Juarez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -542,7 +543,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Timothy Aaron Young": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Courtney James Terrell": [
     {"e":"2025-02-ycs-orlando"},
@@ -558,7 +560,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cristian Ira Huff": [
     {"e":"2025-10-ycs-anaheim"}
@@ -617,14 +620,14 @@
   "Ismael Isaac Huarcaya Vilcañaupa": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Brian H.": {
-    "as": "Brian Robert Hinojosa"
-  },
   "Devon B.": {
     "as": "Devon Burnley"
   },
   "Alexander G.": {
     "as": "Alexander John Padilla Green"
+  },
+  "Brian H.": {
+    "as": "Brian Robert Hinojosa"
   },
   "Lance A.": {
     "as": "Lance Alix"

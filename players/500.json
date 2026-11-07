@@ -486,7 +486,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher DAllen Washington": [
     {"e":"2023-north-america-wcq"}
@@ -572,7 +573,9 @@
   "Alexander Dante Lacerna": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Lucas Paul Daffern": [
     {"e":"2025-02-ycs-orlando"},
@@ -630,11 +633,11 @@
   "Sonia Flores Maquera": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Ezequiel A.": {
-    "as": "Ezequiel Arevalo"
-  },
   "Tevin L.": {
     "as": "Tevin Anthony Lam"
+  },
+  "Ezequiel A.": {
+    "as": "Ezequiel Arevalo"
   },
   "Amy K.": {
     "as": "Amy Catherine Kelly"

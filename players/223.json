@@ -78,7 +78,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-ycs-indianapolis"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Fernando Alfonso Fuentes": [
     {"e":"2014-north-american-wcq"}
@@ -190,6 +191,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Andrey Flores Balderrama": [
@@ -437,7 +439,8 @@
   ],
   "Shannon Tyler Floria": [
     {"e":"2019-ycs-knoxville"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Adam Robert Wolverton": [
     {"e":"2019-ycs-pasadena"}
@@ -609,7 +612,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Diego Alejandro Pincheira Fernadez": [
     {"e":"2024-team-ycs-santiago-chile"}
@@ -676,7 +680,8 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Tristan Jared Bell": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Angel Eduardo Rivera Davalos": [
     {"e":"ycs-lima-peru-2023"}

@@ -149,7 +149,9 @@
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-ycs-indianapolis"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Tyler Leonard Bauer": [
     {"e":"2015-150th-ycs-in-columbus"},
@@ -497,7 +499,8 @@
   ],
   "Donald Luis Boersma": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Perron": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}
@@ -529,7 +532,8 @@
   ],
   "Bryan Abener Gonzales": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Diego E. Gonzalez Rodriguez": [
     {"e":"2025-02-ycs-orlando"}

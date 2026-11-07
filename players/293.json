@@ -262,6 +262,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Michael V. Porter": [
@@ -381,7 +382,9 @@
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Regenesis Vanquish Soul"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Nikolas Jure Drazenovic": [
     {"e":"2023-ycs-vancouver"}
@@ -500,7 +503,12 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Gideon Alexander Lamberd": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Joseph Andrew Ernst": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Andree Jahir Sotelo Jimenez": [
     {"e":"ycs-lima-peru-2023"}
@@ -511,10 +519,10 @@
   "Miriam S.": {
     "as": "Miriam Lillian Skapik"
   },
-  "Rashad J.": {
-    "as": "Rashad Franklin Jones"
-  },
   "Alfonso R.": {
     "as": "Alfonso Rosales"
+  },
+  "Rashad J.": {
+    "as": "Rashad Franklin Jones"
   }
 }

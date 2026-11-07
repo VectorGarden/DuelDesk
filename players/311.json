@@ -203,6 +203,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Mitchell Anthony Malfitano": [
@@ -539,7 +541,12 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Julian Koa Juvera": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Jacob William Scott": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Mauricio Sebastian Reyna Caraballo": [
     {"e":"remote-duel-ycs-february-2025"},
@@ -557,10 +564,10 @@
   "Anthony X.": {
     "as": "Anthony Xu"
   },
-  "Llewelyn S.": {
-    "as": "Llewelyn Richard Slone"
-  },
   "Fayzaan N.": {
     "as": "Fayzaan Mohammed Naeem"
+  },
+  "Llewelyn S.": {
+    "as": "Llewelyn Richard Slone"
   }
 }

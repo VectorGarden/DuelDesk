@@ -279,7 +279,9 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Christopher Blake Turner": [
     {"e":"2018-ycs-memphis"}
@@ -532,10 +534,13 @@
   ],
   "Brandon Chase Daugherty": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Francisco Viana": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jabin Will Belcher": [
     {"e":"2025-05-ycs-providence"},
@@ -581,6 +586,9 @@
   ],
   "Arennenhaiwl Troy Diabo": [
     {"e":"2026-08-quebec","f":"Advanced"}
+  ],
+  "Patric Anthony Gatlin": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Massimiliano Oliveira Dias": [
     {"e":"remote-duel-ycs-february-2025"}

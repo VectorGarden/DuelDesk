@@ -424,7 +424,9 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Paul Michael Cronen Jr.": [
     {"e":"2025-02-ycs-orlando"},
@@ -433,7 +435,8 @@
     {"e":"2025-ycs-buenos-aires-argentina"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Chrishtian Anthony Holley": [
     {"e":"2025-02-ycs-orlando"}
@@ -484,7 +487,8 @@
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
   "Jose Refujio Ayala": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Joshua Luis Alan Roe": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -514,7 +518,12 @@
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Cody Mathew Stevens": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Benjamin Joseph Maurer": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Angel David Pulido Alvarado": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

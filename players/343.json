@@ -214,6 +214,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Randy Eugene Patterson": [
@@ -540,7 +542,8 @@
   ],
   "Andrew Steele Kuykendall": [
     {"e":"2019-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jorge Andres Barragan Suarez": [
     {"e":"2019-south-america-wcq"},
@@ -813,10 +816,10 @@
   "Tulio A.": {
     "as": "Tulio Joaquim Altoe"
   },
-  "Geoffrey F.": {
-    "as": "Geoffrey Christian Fox"
-  },
   "Jeffrey J.": {
     "as": "Jeffrey Michael Alexander Jones"
+  },
+  "Geoffrey F.": {
+    "as": "Geoffrey Christian Fox"
   }
 }

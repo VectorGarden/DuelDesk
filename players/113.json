@@ -254,7 +254,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Matthew Anthony Ipavec": [
     {"e":"2019-ycs-pasadena"},
@@ -455,7 +456,8 @@
   "Charlotte Arria": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sebastian Esteban Maldonado Herrera": [
     {"e":"2026-02-300th-na"},
@@ -486,10 +488,10 @@
   "Nikhil K.": {
     "as": "Nikhil Khalasi"
   },
-  "Richard W.": {
-    "as": "Richard Taylor Wallace"
-  },
   "Avery S.": {
     "as": "Avery Nicholas Sukienik"
+  },
+  "Richard W.": {
+    "as": "Richard Taylor Wallace"
   }
 }

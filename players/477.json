@@ -500,10 +500,12 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Osvaldo Ramirez Jr.": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christhian Perez Muniz": [
     {"e":"2025-02-ycs-orlando"}
@@ -588,10 +590,15 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Santiago Vallejo": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Richard John Young": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Logan Aaron Sherman": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Kevin Matthew Dabney": [
     {"e":"na-ygoc-2022"}
@@ -611,20 +618,20 @@
   "Devon Boyd": {
     "as": "Devon L. Boyd"
   },
-  "Connor Z.": {
-    "as": "Connor Storm Zaborowski"
-  },
-  "Surya K.": {
-    "as": "Surya Kumaraguru"
-  },
-  "Alfredo C.": {
-    "as": "Alfredo Carlos"
+  "Bader A.": {
+    "as": "Bader Abdullah Mahamad Alshahrani"
   },
   "Spencer Y.": {
     "as": "Spencer Young"
   },
-  "Bader A.": {
-    "as": "Bader Abdullah Mahamad Alshahrani"
+  "Alfredo C.": {
+    "as": "Alfredo Carlos"
+  },
+  "Surya K.": {
+    "as": "Surya Kumaraguru"
+  },
+  "Connor Z.": {
+    "as": "Connor Storm Zaborowski"
   },
   "Ryhan J.": {
     "as": "Ryhan Chakim Jabri"

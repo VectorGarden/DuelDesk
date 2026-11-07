@@ -156,7 +156,8 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Andrew John Beyer-Kelly": [
     {"e":"2016-north-american-wcq"},
@@ -380,6 +381,7 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Malcolm Jacob Lewis Mulhall": [
@@ -471,7 +473,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Andy Ok": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -608,7 +612,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tanner OBrein Granum": [
     {"e":"2024-ycs-indianapolis"},

@@ -357,7 +357,9 @@
   "Johnny Lee Adams": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-team-ycs-las-vegas"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sean Tyler Kerr": [
     {"e":"2022-11-ycs-pasadena"}
@@ -551,7 +553,8 @@
   ],
   "Donald Travis Mercer": [
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jose Ramon De La Cruz": [
     {"e":"2025-02-ycs-orlando"}

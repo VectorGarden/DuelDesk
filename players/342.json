@@ -109,6 +109,8 @@
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 8"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Abramo Jude Manfredonia": [
@@ -513,7 +515,8 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq","cut":"Top 64","deck":"Bystial Fiendsmith Mitsurugi"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Korey Albert Winston": [
     {"e":"2023-ycs-indianapolis"}
@@ -577,7 +580,9 @@
   ],
   "Bryce John Berkowitz": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Marvin Michael Kammerer": [
     {"e":"2025-02-ycs-orlando"},
@@ -586,13 +591,15 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Angel Manuel Reyes Hernandez": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edward Abelian": [
     {"e":"2025-10-ycs-anaheim"}
@@ -619,7 +626,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "David Josue Lopez Rodriguez": [
     {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel"}
@@ -634,20 +642,23 @@
   "Mckevin Gerard Reeves": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Jordan Alan Baxter": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Josh Kelly": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Final","deck":"Light and Darkness Ritual"}
   ],
+  "James E.": {
+    "as": "James Robert Esquibel"
+  },
+  "Etienne B.": {
+    "as": "Etienne Jose Bonin"
+  },
   "Dylan G.": {
     "as": "Dylan Maxwell Graves"
   },
   "Peter N.": {
     "as": "Peter Phuong Nguyen"
-  },
-  "Etienne B.": {
-    "as": "Etienne Jose Bonin"
-  },
-  "James E.": {
-    "as": "James Robert Esquibel"
   },
   "Jared P.": {
     "as": "Jared Mikel Perez"

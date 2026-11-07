@@ -146,7 +146,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ian Tomas Foley": [
     {"e":"2015-north-american-wcq"}
@@ -442,7 +443,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Top 8","deck":"Blitzclique"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Raymond Maceda Lopez": [
     {"e":"2023-north-america-wcq"},
@@ -569,7 +572,8 @@
   "Ramon Matthew Turner Jr.": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Enzo Penichon": [
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"}
@@ -596,7 +600,11 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matthew Dylan Massey": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Christopher Morgan Evans": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher Michael Brozstek": [
     {"e":"na-ygoc-2022"}
@@ -607,10 +615,10 @@
   "David Tarazona": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Traviis M.": {
-    "as": "Traviis Terrell Massengale"
-  },
   "Hongji Y.": {
     "as": "Hongji Yang"
+  },
+  "Traviis M.": {
+    "as": "Traviis Terrell Massengale"
   }
 }

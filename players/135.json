@@ -328,7 +328,9 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joshua Peter Ticel": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
@@ -516,6 +518,7 @@
     {"e":"2024-central-america-wcq","cut":"Top 64"},
     {"e":"2025-central-america-wcq"},
     {"e":"2026-central-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
@@ -637,6 +640,9 @@
   ],
   "Danial Sajjad Hussain": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Julian Turell Dunaway": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Daniel Fernando Araujo Varona": [
     {"e":"remote-duel-ycs-january-2024"}

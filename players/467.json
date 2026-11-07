@@ -543,7 +543,8 @@
   "Jimmy Brice Kegley": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Joseph Lake Bey": [
     {"e":"2024-ycs-raleigh"}
@@ -556,7 +557,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Genesys"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Matthew Carlos Ramos Lopes": [
     {"e":"2025-05-ycs-providence"},
@@ -630,7 +632,12 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kyle Christopher Bailey Jr.": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Jonathan Aaron Polynice": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Rodrigo Ibanez Cruz": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

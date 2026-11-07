@@ -90,6 +90,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Devin Alexander Goedeker": [
@@ -211,7 +212,8 @@
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Mitchell Tyler Schultz Garrett": [
     {"e":"2016-north-american-wcq"}
@@ -320,6 +322,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Lazaro Antonio Fernandez Balladares Jr.": [
@@ -413,7 +416,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jordan Samuel Swanson": [
     {"e":"2019-ycs-portland"}
@@ -583,7 +587,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jaylan Keeon Rodriguez": [
     {"e":"2024-12-ycs-anaheim"}
@@ -661,17 +666,20 @@
   "Carlos Miguel Soriano Rivera": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Michael Dennis Kelly": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Siri Antonio Pineda Jaramillo": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Carson C.": {
-    "as": "Carson Joseph Cichocki"
+  "Marko K.": {
+    "as": "Marko Kovacevic"
   },
   "Peter C.": {
     "as": "Peter Man Chun Chung"
   },
-  "Marko K.": {
-    "as": "Marko Kovacevic"
+  "Carson C.": {
+    "as": "Carson Joseph Cichocki"
   },
   "Belle N.": {
     "as": "Belle Song Nguyen"

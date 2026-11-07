@@ -169,7 +169,9 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cody Garrett Christensen": [
     {"e":"2018-ycs-salt-lake-city"}
@@ -192,6 +194,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "William Clarence Horvat": [
@@ -307,6 +310,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Radiant Typhoon Fiendsmith"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Daniel Stephen Sweeney": [
@@ -489,6 +493,15 @@
   ],
   "Alex David Contreras Arana": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Alberto Carlos Aponte Jr.": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Graham Avery Marcus": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Ivy Brianne Pearce": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Roierto Alejandro Diaz Balleza": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

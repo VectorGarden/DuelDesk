@@ -319,6 +319,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Andrew Michael Szewczyk": [
@@ -385,7 +386,8 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gonzalo Andres Zeballos Alvarez": [
     {"e":"201603-santiago-chile"},
@@ -683,7 +685,8 @@
     {"e":"2024-ycs-indianapolis"}
   ],
   "Nicholas John Mauro": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "David Alejandro Payare": [
     {"e":"2025-04-ycs-houston"}

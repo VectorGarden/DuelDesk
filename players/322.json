@@ -170,6 +170,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joel Belman Jr.": [
@@ -484,10 +485,12 @@
   ],
   "Dennis Eugine Godfrey": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jameel Noormohamed": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ruben Andres May Contain Rings: Penaranda": [
     {"e":"2025-03-team-ycs-las-vegas","cut":"Top 16"}
@@ -538,16 +541,16 @@
   "Edgar Joaquin Rios Ruiz": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Kethya K.": {
-    "as": "Kethya Kas"
-  },
   "Kyle C.": {
     "as": "Kyle Reece Crofoot"
   },
-  "Maciej M.": {
-    "as": "Maciej Jan Michalec"
+  "Kethya K.": {
+    "as": "Kethya Kas"
   },
   "Noah C.": {
     "as": "Noah Cervantes"
+  },
+  "Maciej M.": {
+    "as": "Maciej Jan Michalec"
   }
 }

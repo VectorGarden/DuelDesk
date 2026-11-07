@@ -191,6 +191,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Nicholas Nathan Snowberger": [
@@ -237,7 +238,9 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jimmy White-An Chang": [
     {"e":"2017-ycs-dallas"},
@@ -281,7 +284,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ismael Herrera Fuentes": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -586,6 +590,9 @@
   ],
   "Jimmy White An Chang": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Jonathan Printess Battle": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Astha Dos Anjos Salles": [
     {"e":"remote-duel-ycs-january-2026"}

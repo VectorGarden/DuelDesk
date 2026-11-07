@@ -226,7 +226,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carson Thomas Gerald MacDonald": [
     {"e":"2019-north-america-wcq"},
@@ -319,7 +320,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Umberto Alves Santos Junior": [
     {"e":"2022-ycs-rio-de-janeiro"},
@@ -445,7 +447,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Austin Lonnie Sandberg": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jojo Ruiz": [
     {"e":"2025-02-ycs-orlando"}

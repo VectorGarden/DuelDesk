@@ -431,7 +431,9 @@
   "Corbin David Lombardo": [
     {"e":"2023-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Javier Nieto": [
     {"e":"2023-north-america-wcq"},
@@ -519,7 +521,9 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Exposing allegations": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -590,7 +594,8 @@
   ],
   "Brock Allen Villarreal": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Austin Tyler Mayo": [
     {"e":"2026-02-300th-na","f":"Advanced"}

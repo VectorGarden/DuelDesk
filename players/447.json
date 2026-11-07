@@ -247,7 +247,8 @@
     {"e":"2017-uds-invitational-kissimmee-fl"},
     {"e":"2018-ycs-atlanta"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Camilo Ernesto Iturra Castro": [
     {"e":"201603-santiago-chile"}
@@ -289,7 +290,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Exosister"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Giovanni Remy Horton": [
     {"e":"2017-ycs-atlanta"}
@@ -446,7 +448,8 @@
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
   "Alex Charles Schermerhorn": [
-    {"e":"2019-ycs-chicago"}
+    {"e":"2019-ycs-chicago"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ahmet Kadri Turker": [
     {"e":"2019-ycs-chicago"}
@@ -688,7 +691,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cristian Jose ArrietaMurillo": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}
@@ -745,10 +749,12 @@
     {"e":"2025-ycs-vancouver"}
   ],
   "Jason Perez": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carlos Ediel Camacho Vega": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sithu Ndirangu Macharia": [
     {"e":"2026-02-300th-na","f":"Genesys"}
@@ -766,13 +772,17 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"}
   ],
   "Aidan Nicholas Saccomano": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carlos Roberto Torres Geraldino": [
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Wilson Goel Canel Gonzalez": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Christopher Robert Grillo": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lucas Michael Connelly": [
     {"e":"na-ygoc-2022"}

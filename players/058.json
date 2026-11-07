@@ -321,7 +321,8 @@
     {"e":"2023-team-ycs-las-vegas","cut":"Top 16"}
   ],
   "Jerry Lewis Thomas": [
-    {"e":"2022-ycs-charlotte"}
+    {"e":"2022-ycs-charlotte"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Albert Hernadez Ochoa": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -536,10 +537,16 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Cedrick Devontae Freeman": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Mario Junior Marchese Acevedo": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Isidro Lara Guillen": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Andy Almanzar Baldera": [
     {"e":"remote-duel-ycs-february-2025"}

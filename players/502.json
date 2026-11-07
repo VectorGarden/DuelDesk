@@ -167,7 +167,8 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"202205-ycs-hartford-ct"}
+    {"e":"202205-ycs-hartford-ct"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Andre Daniel Walker": [
     {"e":"2017-ycs-pittsburgh"},
@@ -449,7 +450,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Enrique Santiago Agosto": [
     {"e":"2025-02-ycs-orlando"}
@@ -463,12 +466,14 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Ethan Nicholas Mallory Hart": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Antonio Zane Porter": [
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Elfnote"}
+    {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Elfnote"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "TeamMidnight": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -535,13 +540,13 @@
   "Garret S.": {
     "as": "Garret Alexander Soto Schier"
   },
+  "Ignacio L.": {
+    "as": "Ignacio Ramon Lopez"
+  },
   "Eric A.": {
     "as": "Eric Alexander Avila"
   },
   "Stefan D.": {
     "as": "Stefan Tanner Durrant"
-  },
-  "Ignacio L.": {
-    "as": "Ignacio Ramon Lopez"
   }
 }

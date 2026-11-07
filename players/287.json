@@ -488,7 +488,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Manuel Cisneros Jr.": [
     {"e":"2023-north-america-wcq"}
@@ -521,7 +522,8 @@
   ],
   "Dontravious Demand Suttles": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Albert Udovenkov": [
     {"e":"2024-team-ycs-santiago-chile"}
@@ -533,7 +535,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Dante Raziel Cano": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Bonnie dos": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -598,7 +601,8 @@
   "Jakob Gregory Morton": [
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fur Hire K9"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ian Anthony Zaleski": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
@@ -610,13 +614,15 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Justin Harvey Levitt": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jose Luis De Leon": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Axel Zayas Jr.": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Anthony Rudolf Torbisco Chota": [
     {"e":"ycs-lima-peru-2023"}

@@ -327,7 +327,8 @@
   ],
   "Connor Richard Patrick": [
     {"e":"2022-ycs-minneapolis"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "William Mack Klingbeil III": [
     {"e":"2022-ycs-niagara-falls"}
@@ -444,7 +445,8 @@
   ],
   "Kwaundel Dasean Smith": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alexander Santiago Trayce Velasquez": [
     {"e":"2025-04-ycs-houston"},
@@ -497,7 +499,8 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Aric LeOnse Gray": [
     {"e":"2026-02-300th-na","f":"Advanced"},

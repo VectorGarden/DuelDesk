@@ -120,7 +120,9 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ryan Foster Combass": [
     {"e":"2015-150th-ycs-in-columbus"}
@@ -311,7 +313,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Robert Frisby Miles": [
     {"e":"2022-remote-duel-ycs-north-america"}
@@ -505,23 +508,26 @@
   "Lorenzo Grando Grando": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Jorge Alejandro Garcia Rivero": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Imran Qureshi": [
     {"e":"na-ygoc-2022"}
   ],
   "Blair Edward Flores": {
     "as": "Blair Edward G. Flores"
   },
-  "Scott A.": {
-    "as": "Scott Christian Adiconis"
-  },
-  "Calvin C.": {
-    "as": "Calvin Tam Chow"
+  "Andrei A.": {
+    "as": "Andrei Perez Ativo"
   },
   "Long V.": {
     "as": "Long Ngoc Vu"
   },
-  "Andrei A.": {
-    "as": "Andrei Perez Ativo"
+  "Calvin C.": {
+    "as": "Calvin Tam Chow"
+  },
+  "Scott A.": {
+    "as": "Scott Christian Adiconis"
   },
   "Elliot H.": {
     "as": "Elliot Arthur Horowitz"

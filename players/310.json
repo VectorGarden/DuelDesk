@@ -453,7 +453,8 @@
   "William Avery Peete": [
     {"e":"2023-ycs-richmond"},
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Felipe Ignacio Céspedes Urzúa": [
     {"e":"2023-ycs-santiago-chile"}
@@ -555,6 +556,9 @@
   ],
   "Bexioun Jourel Warrior": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "David Javier Gonzalez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Giovanny Alexandro Espinoza Rodriguez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

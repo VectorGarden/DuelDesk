@@ -578,7 +578,8 @@
   ],
   "Naomi Marie Kim": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Lihuen Figueroa": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -618,10 +619,10 @@
   "Jose Maria Quintanilla Gareca": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Enrique B.": {
-    "as": "Enrique Balvastro"
-  },
   "Alan W.": {
     "as": "Alan Lechao Wang"
+  },
+  "Enrique B.": {
+    "as": "Enrique Balvastro"
   }
 }

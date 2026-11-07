@@ -123,6 +123,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 32"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"},
     {"e":"ycs-lima-peru-2023","cut":"Top 16"}
@@ -241,7 +242,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Samuel Alan Goldman": [
     {"e":"2016-north-american-wcq"},
@@ -671,7 +673,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Ari Labarnas Ugur": [
-    {"e":"2025-12-rdycs-na"}
+    {"e":"2025-12-rdycs-na"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Joan Esteban Villamil Largo": [
     {"e":"2025-south-america-wcq"}
@@ -720,6 +723,9 @@
   ],
   "Carlos Anthony Farias": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Christian John Tapanes": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Deyler Jesus Arias Alvarez": [
     {"e":"remote-duel-ycs-january-2024"}

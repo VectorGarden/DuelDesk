@@ -447,10 +447,12 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Grayson Austin Michael Wells": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jordan Maverick Bonanza": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "The Land Before Time": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -504,6 +506,12 @@
   ],
   "Luis Pedro Reyes Escalante": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Spencer Andrew Anthony Bellamy": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Luis Joel Vazquez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marcelo Augusto Borges Vasques": [
     {"e":"remote-duel-ycs-february-2025"}

@@ -245,7 +245,9 @@
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Silas Devon Contreras": [
     {"e":"2019-03-atlanta-ga"}
@@ -432,7 +434,9 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Team High Rise": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -463,7 +467,8 @@
   "Jonathan Raya": [
     {"e":"2023-ycs-richmond"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Stephen Christopher Baumgartner": [
     {"e":"2023-ycs-richmond"},
@@ -579,6 +584,9 @@
   ],
   "Caio Lucci Schnor": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Jacob Michael Morschauser": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Rolando Yahir": [
     {"e":"na-ygoc-2022"}

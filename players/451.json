@@ -572,7 +572,9 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Dilan Tyler Bryant": [
     {"e":"2023-ycs-richmond"},
@@ -609,7 +611,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edgar Alejandro Varela Navarro": [
     {"e":"2024-ycs-guadalajara-mexico"}
@@ -684,14 +687,20 @@
   "Sin Uyuni": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Cameron Xavier Dixon": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Emanuel Jesus Martins": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Aidan Smith Jonathan Smith": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Sebastian Antonio Orias Rodriguez": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Douglas P.": {
     "as": "Douglas Felix Pretto"
-  },
-  "Devon F.": {
-    "as": "Devon Wayne Filos"
   },
   "Connor M.": {
     "as": "Connor R. Maguire"
@@ -701,5 +710,8 @@
   },
   "Taj A.": {
     "as": "Taj Eugene Allen"
+  },
+  "Devon F.": {
+    "as": "Devon Wayne Filos"
   }
 }

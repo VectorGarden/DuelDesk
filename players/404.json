@@ -95,6 +95,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joseph Anthony Cardoso III": [
@@ -284,7 +285,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Gold Pride P.U.N.K."},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Leo Fox Krebs": [
     {"e":"2018-north-america-wcq"},
@@ -533,7 +535,8 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Christian Clark Ardizzone": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sebastian Rodriguez Falcon": [
     {"e":"ycs-lima-peru-2023"}

@@ -648,7 +648,8 @@
   "Bradley David Iervasi": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Edwin Noel Ortiz": [
     {"e":"2025-10-ycs-anaheim"}
@@ -713,7 +714,9 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "James Henderson Robinson": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Francisco Horacio Baza": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
@@ -724,13 +727,13 @@
   "Quang H.": {
     "as": "Quang Nhat Hoang"
   },
+  "Gonzalo L.": {
+    "as": "Gonzalo Magallon Lopez"
+  },
   "Derrick F.": {
     "as": "Derrick Lee Fox"
   },
   "Johnathon T.": {
     "as": "Johnathon Keith Taylor"
-  },
-  "Gonzalo L.": {
-    "as": "Gonzalo Magallon Lopez"
   }
 }

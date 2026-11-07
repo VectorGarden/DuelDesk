@@ -125,7 +125,9 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ashik Nabit": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"}
@@ -153,7 +155,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ivin Ryan Dixon Collins": [
     {"e":"2017-ycs-dallas"},
@@ -477,7 +480,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Christopher Torres": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cristian Antonio Aguirre": [
     {"e":"2025-04-ycs-houston"}

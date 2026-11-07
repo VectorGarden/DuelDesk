@@ -219,7 +219,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carlo Jose Lobos Jr.": [
     {"e":"2018-11-sao-paulo-brazil"},
@@ -376,7 +377,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Luis Angel Martinez Mendoza": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -414,7 +417,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Chad for a Dub": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -470,7 +474,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "John Paul Fox": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Delinquent Duo Drives": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -507,7 +512,9 @@
   ],
   "Mathew Tyler Madison": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Maricruz Corona Coria": [
     {"e":"2026-02-300th-na"}

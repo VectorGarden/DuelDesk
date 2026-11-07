@@ -540,7 +540,8 @@
   ],
   "Nicholas Thomas Antonio Thompson": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "John Wyatt Thiel": [
     {"e":"2025-04-ycs-houston"},
@@ -606,6 +607,9 @@
   ],
   "Timothy Alexander Jones": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Yarel Adrian Fernandez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher R. Budusky": [
     {"e":"na-ygoc-2022"}

@@ -49,6 +49,7 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jorge Nicolas Palma Omenaca": [
@@ -616,7 +617,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Justin Kaye Young": [
     {"e":"2023-team-ycs-las-vegas"},
@@ -636,7 +638,8 @@
     {"e":"2023-team-ycs-sao-paulo"}
   ],
   "Rafael Angel Ugalde": [
-    {"e":"2023-ycs-indianapolis"}
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Zackary Allan Bair": [
     {"e":"2023-ycs-indianapolis"},
@@ -771,19 +774,22 @@
   "Paul Ruben Rittmann": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Edwin Omar Torres Salame": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Jesus Angel Barreda Mayhua": [
     {"e":"ycs-lima-peru-2023"}
   ],
   "Gustavo L.": {
     "as": "Gustavo Marques Lattari"
   },
-  "Skyeler P.": {
-    "as": "Skyeler John Pitcher"
+  "Noe L.": {
+    "as": "Noe Enrique Luna"
   },
   "Abelardo R.": {
     "as": "Abelardo Reyes Ramirez"
   },
-  "Noe L.": {
-    "as": "Noe Enrique Luna"
+  "Skyeler P.": {
+    "as": "Skyeler John Pitcher"
   }
 }

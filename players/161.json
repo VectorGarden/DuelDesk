@@ -186,6 +186,7 @@
     {"e":"2024-10-ycs-niagara-falls"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Thomas de Mendonca Mertens": [
@@ -444,7 +445,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brian Ho": [
     {"e":"2024-12-ycs-anaheim"}
@@ -553,6 +555,12 @@
   "Seth Joseph Leone": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
+  "Phillip Ray Spires": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Larry Kenneth Lara Reyes": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Ramon Enmanuel Gomez Sanchez": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -565,10 +573,10 @@
   "Victor Sanchez Torres": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Dawson G.": {
-    "as": "Dawson Maxwell Graves"
-  },
   "Benjamin N.": {
     "as": "Benjamin Franklin Nevel"
+  },
+  "Dawson G.": {
+    "as": "Dawson Maxwell Graves"
   }
 }

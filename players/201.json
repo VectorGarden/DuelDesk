@@ -451,7 +451,8 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Charles A. Prater": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Natalia Patricia Vargas Cordero": [
     {"e":"2025-02-ycs-orlando"}
@@ -525,7 +526,9 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Joseph Eric Patalano": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jorge Andres Garcia Guzman": [
     {"e":"wcq-2016-mexico"}

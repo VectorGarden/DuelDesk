@@ -115,6 +115,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced","cut":"Top 4","deck":"Radiant Typhoon Sky Striker"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Angel Enrique Carrion Tabarcia Jr.": [
@@ -213,6 +215,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced","won":true,"cut":"Final","deck":"Light and Darkness Ritual"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Christian Arturo Lopez Mendoza": [
@@ -498,7 +501,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Christian Jesus Rodriguez Ortiz": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Eric Alfredo Zepeda": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -531,7 +535,9 @@
   ],
   "Santiago Enrique Lemus Garcia": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"(No decklist)"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Alexis Jesus Gomez Castillejos": [
     {"e":"2026-02-300th-na"}
@@ -555,16 +561,16 @@
   "Juan Pablo Vera": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
+  "Thomas P.": {
+    "as": "Thomas Dang Pham"
+  },
   "Khoakevin V.": {
     "as": "Khoakevin Quoc Vo"
-  },
-  "Riley W.": {
-    "as": "Riley Michael Wilhelm"
   },
   "Ethan M.": {
     "as": "Ethan Douglass Mammen"
   },
-  "Thomas P.": {
-    "as": "Thomas Dang Pham"
+  "Riley W.": {
+    "as": "Riley Michael Wilhelm"
   }
 }

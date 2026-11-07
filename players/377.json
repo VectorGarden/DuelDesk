@@ -367,7 +367,8 @@
   ],
   "Brian Patrick Breland": [
     {"e":"2018-north-america-wcq"},
-    {"e":"2018-ycs-atlanta"}
+    {"e":"2018-ycs-atlanta"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Johannes Jurgen Warttele Igari": [
     {"e":"2018-south-america-wcq"}
@@ -492,6 +493,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Emily Kate Boyd": [
@@ -678,7 +680,8 @@
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Jose Ramon De La Cruz Huertas": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Robert Arthur Olson Jr.": [
     {"e":"2026-02-300th-na","f":"Advanced"}

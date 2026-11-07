@@ -206,6 +206,8 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Vaughn Lane Neville": [
@@ -293,7 +295,8 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-knoxville"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Mauricio Rodrigo Velasquez Baltra": [
     {"e":"2019-south-america-wcq"},
@@ -408,7 +411,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Samuel Michael Myers": [
     {"e":"2022-ycs-charlotte"},
@@ -596,7 +600,12 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Olivia Rose Boleman Nelson": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Mario Sammy Alazo": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Daniel Dominick Savino Shulman": [
     {"e":"na-ygoc-2022"}

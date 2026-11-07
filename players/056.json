@@ -297,6 +297,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Axel Gerardo Campos Butron": [
@@ -432,7 +434,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Feder Stiven Malambo Jimenez": [
     {"e":"2022-ycs-bogota-colombia"},
@@ -462,7 +465,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jason Bentley Davis Jr.": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -515,6 +519,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jake Edward Curtis": [
@@ -661,13 +667,13 @@
   "Iago Cipriano Yokoi": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"}
   ],
+  "Andrew G.": {
+    "as": "Andrew Joshua Gross"
+  },
   "Noah J.": {
     "as": "Noah Benjamin Jymison"
   },
   "Nathaniel V.": {
     "as": "Nathaniel GIavani Vasquez"
-  },
-  "Andrew G.": {
-    "as": "Andrew Joshua Gross"
   }
 }

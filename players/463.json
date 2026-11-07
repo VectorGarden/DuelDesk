@@ -291,7 +291,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher James Klein II": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -394,7 +395,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Steven Veras Cabrera": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Bienvenido De Jesus Estevez": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -435,6 +437,12 @@
   "Julian April Aguilar": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Daniel F. Avila Burbano": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Devon Worth Reeves": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Pavel Enmanuel Tripul Olano": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -447,14 +455,14 @@
   "Theo T.": {
     "as": "Theo Victor Tavares"
   },
+  "Ethan S.": {
+    "as": "Ethan Robert Senecal"
+  },
   "Gerardo R.": {
     "as": "Gerardo Isaac Rubalcava"
   },
   "Blake J.": {
     "as": "Blake Michael Jones"
-  },
-  "Ethan S.": {
-    "as": "Ethan Robert Senecal"
   },
   "Aiden G.": {
     "as": "Aiden Gastelum"

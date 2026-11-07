@@ -415,6 +415,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jordan Jamal Jones": [
@@ -454,14 +456,16 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Zachary James Edge Gandara": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Artmage"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jonathan Consignado Sabino": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -519,6 +523,12 @@
   ],
   "Alvaro Jose Cu": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Mark Anthony Gibson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Nicholas Edward Shelton": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Fabio De Oliveira Ramos": [
     {"e":"remote-duel-ycs-january-2024"}

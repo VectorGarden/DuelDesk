@@ -470,7 +470,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sergio Alfonso Gonzalez Vazquez": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -601,6 +602,9 @@
   ],
   "Zayd Rayan Ibnoumaktoum": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Samuel Ismael Miqueas Gonzalez Gonzalez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "MingRui C.": {
     "as": "MingRui Cai"

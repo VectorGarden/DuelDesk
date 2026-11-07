@@ -202,7 +202,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Matthew Sean Hladun": [
     {"e":"2016-ycs-toronto"},
@@ -471,7 +472,8 @@
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Regenesis Vanquish Soul","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Diego Cesar Espinosa Gutierrez": [
     {"e":"2022-11-ycs-pasadena"},
@@ -629,7 +631,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Scott Thomas Watkins": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -688,11 +691,11 @@
   "Tim Gräfe": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Quentin J.": {
-    "as": "Quentin Lemar Jenkins"
-  },
   "Brendan O.": {
     "as": "Brendan Russell Outlaw"
+  },
+  "Quentin J.": {
+    "as": "Quentin Lemar Jenkins"
   },
   "Oliver N.": {
     "as": "Oliver Nghiem Nguyen"

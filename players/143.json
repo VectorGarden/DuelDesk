@@ -569,7 +569,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Harrison Keith Bitzis": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Daniel Almaraz Ruvalcaba": [
     {"e":"2026-02-300th-na"}
@@ -583,6 +584,9 @@
   "Osman Javier Castillo de Leon": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Jonathan Daniel Torres": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Pedro Luis Ayala Carazas": [
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -595,11 +599,11 @@
   "Edgar B.": {
     "as": "Edgar Enrique Barajas"
   },
-  "Andy M.": {
-    "as": "Andy November Morales"
-  },
   "Mitchel N.": {
     "as": "Mitchel Adam Noto"
+  },
+  "Andy M.": {
+    "as": "Andy November Morales"
   },
   "Jorge T.": {
     "as": "Jorge Alejandro Torres"

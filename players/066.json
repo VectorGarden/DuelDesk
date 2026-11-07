@@ -221,6 +221,7 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Maurice Marzelle Poteat": [
@@ -605,7 +606,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Jeffrey Edward Tsai": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Rodrigo Ochoa Herrrera": [
     {"e":"remote-duel-ycs-february-2025"}

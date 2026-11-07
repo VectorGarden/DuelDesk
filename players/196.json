@@ -178,7 +178,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Enzo Simono Salviati": [
     {"e":"2016-ycs-rio-de-janeiro"},
@@ -580,7 +582,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Adam Norman Kania": [
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Blake Kelley": [
     {"e":"2024-north-america-wcq"},
@@ -662,14 +665,14 @@
   "Joao C.": {
     "as": "Joao Pedro Queroga Caldas"
   },
+  "Kolton S.": {
+    "as": "Kolton Allan Schroeder"
+  },
   "Cameron N.": {
     "as": "Cameron Taylor Neal"
   },
   "Benito G.": {
     "as": "Benito Enrique Garcia"
-  },
-  "Kolton S.": {
-    "as": "Kolton Allan Schroeder"
   },
   "Nathan K.": {
     "as": "Nathan Yongjin Kim"

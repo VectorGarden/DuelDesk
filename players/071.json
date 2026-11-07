@@ -55,6 +55,7 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -135,7 +136,8 @@
   "John Thomas Xavier Berry": [
     {"e":"2015-north-american-wcq"},
     {"e":"2016-north-american-wcq"},
-    {"e":"2017-north-american-wcq"}
+    {"e":"2017-north-american-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Clay Bailey Musial": [
     {"e":"2015-north-american-wcq"},
@@ -576,7 +578,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sandesh Sukhram": [
     {"e":"2022-ycs-minneapolis"},
@@ -654,7 +657,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Hilary Elaine Valentine": [
     {"e":"2024-ycs-indianapolis"}
@@ -690,7 +694,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tyler Brannigan Curtis": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -727,6 +732,9 @@
   ],
   "Micah Grayson Villegas": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Christopher Muddiman": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "William Alejandro Guerrero Fajardo": [
     {"e":"remote-duel-ycs-january-2024"}

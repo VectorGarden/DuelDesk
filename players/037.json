@@ -358,7 +358,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jarobsy Duran Gomez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -383,7 +384,9 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Carlos Alberto Guillen": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -587,11 +590,11 @@
   "Kurt A.": {
     "as": "Kurt Seiji Achiu"
   },
-  "Tej A.": {
-    "as": "Tej C. Amin"
-  },
   "Danny M.": {
     "as": "Danny Xavier Martinez"
+  },
+  "Tej A.": {
+    "as": "Tej C. Amin"
   },
   "Vasya P.": {
     "as": "Vasya David Pincus"

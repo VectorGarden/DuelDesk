@@ -44,6 +44,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Ari Fletcher Bredbenner": [
@@ -374,7 +375,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Andres Muricio Sanchez Guerrero": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -438,7 +440,8 @@
     {"e":"2024-ycs-indianapolis","cut":"Top 16","deck":"Snake-Eye"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-12-rdycs-na","cut":"Final","deck":"Dracotail"},
-    {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"}
+    {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Lemus": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -555,6 +558,9 @@
   "David Homero Cruz": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Travis Quoc Nguyen": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Branden Kenneth Squire": [
     {"e":"na-ygoc-2022"}
   ],
@@ -568,13 +574,13 @@
   "Diego M.": {
     "as": "Diego Teodoro Medeiros"
   },
-  "Brian G.": {
-    "as": "Brian Jesus Garcia"
+  "Tyriq H.": {
+    "as": "Tyriq Marquis Dewonye Hayes"
   },
   "Fernando L.": {
     "as": "Fernando Miguel Lucas"
   },
-  "Tyriq H.": {
-    "as": "Tyriq Marquis Dewonye Hayes"
+  "Brian G.": {
+    "as": "Brian Jesus Garcia"
   }
 }

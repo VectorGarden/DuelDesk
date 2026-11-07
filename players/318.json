@@ -57,7 +57,8 @@
     {"e":"2017-ycs-pittsburgh"},
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-north-america-wcq"},
-    {"e":"2018-ycs-secaucus"}
+    {"e":"2018-ycs-secaucus"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Antonio Jesus Caceres Valdivia": [
     {"e":"2015-south-american-wcq"},
@@ -315,7 +316,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tan Minh Vu": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -360,7 +362,9 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cayden Lander Treadway": [
     {"e":"2023-ycs-richmond"}
@@ -424,7 +428,8 @@
   ],
   "Joseph John Gottleib": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Anton Elias Hjollund": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -485,6 +490,12 @@
   "Jose Vicente Palacios Hurtado": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Alain J. Romero": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Maxwell James Echols": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Cesar Miguel Dos Santos Arruda": [
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -492,11 +503,11 @@
   "Christian Danilo Penagos Rojas": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Erick G.": {
-    "as": "Erick Serrano Gutierrez"
-  },
   "Philip D.": {
     "as": "Philip Win Duong"
+  },
+  "Erick G.": {
+    "as": "Erick Serrano Gutierrez"
   },
   "Darea Y.": {
     "as": "Darea Timmy You"

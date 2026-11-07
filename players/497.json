@@ -181,6 +181,7 @@
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Othman Ibrahim Othman": [
@@ -455,7 +456,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Nicholas J. Garza": [
     {"e":"2023-north-america-wcq"}
@@ -595,6 +598,9 @@
   "Aza Melaquias Sepulveda Garcia": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Vuong The Thien Tran": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Victor Leonardo Da Silva Santos": [
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
@@ -609,10 +615,10 @@
   "2 and half men": {
     "as": "2 And A Half Men"
   },
-  "Jared D.": {
-    "as": "Jared Michael Dorman"
-  },
   "Anthony A.": {
     "as": "Anthony Nicholas Accettura"
+  },
+  "Jared D.": {
+    "as": "Jared Michael Dorman"
   }
 }

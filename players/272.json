@@ -252,7 +252,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Krystian Magdiel Hurtado Perez": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -557,10 +558,12 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Johnathan David Adams II": [
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luke Patrick Brown": [
     {"e":"2026-north-america-wcq"}
@@ -576,5 +579,8 @@
   ],
   "Gregory James Staffopoulos": [
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Angel Gabriel Gonzalez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ]
 }

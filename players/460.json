@@ -121,7 +121,9 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jonathan Craig Speer": [
     {"e":"2015-north-american-wcq"}
@@ -516,7 +518,8 @@
   ],
   "Sherrod Lepoleon Spikes": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher Steven Deloach": [
     {"e":"2025-02-ycs-orlando"}

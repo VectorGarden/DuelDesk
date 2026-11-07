@@ -550,7 +550,8 @@
   "Cesar Alonso": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Aaron Joseph Figueroa": [
     {"e":"2025-04-ycs-houston"},
@@ -588,6 +589,9 @@
   ],
   "Pedro Henrique Nascimento": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Igor Polycarpe": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "David Edson Neves Fonseca": [
     {"e":"remote-duel-ycs-february-2025"}

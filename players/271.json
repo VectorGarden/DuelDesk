@@ -454,14 +454,16 @@
   "Andrew Joseph Kil": [
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jhon Jaime Novoa Martinez": [
     {"e":"2024-ycs-medellin-colombia"}
   ],
   "Antonio Lamond Garland": [
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Robert Anthony Jimenez": [
     {"e":"2025-02-ycs-orlando"}
@@ -476,7 +478,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Colton Ian McFarlin": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Stefan Tanner Durrant": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -513,7 +516,8 @@
   ],
   "Stewart Andrew Dunn": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Rene Mauricio Marciano Lima": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"},

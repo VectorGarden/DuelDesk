@@ -231,6 +231,7 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Edward Jesse Rico": [
@@ -594,6 +595,9 @@
   ],
   "Luís Felipe Santos": [
     {"e":"2026-south-america-wcq"}
+  ],
+  "Zachary William Bramble": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Dean Edward Watkins": [
     {"e":"na-ygoc-2022"}

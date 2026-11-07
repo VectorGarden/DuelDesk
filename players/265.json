@@ -461,7 +461,9 @@
   ],
   "Justin James Cushing Dyment": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Yanni Alan Eisele": [
     {"e":"2025-02-ycs-orlando"}
@@ -469,7 +471,8 @@
   "David Gregory Ozenne": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Crooked Cooks": [
     {"e":"2025-03-team-ycs-las-vegas"}

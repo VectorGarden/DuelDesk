@@ -251,7 +251,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Uriel Alejandro Salazar Rivera": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -453,7 +454,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Kevin Jose Lopez Cepero": [
     {"e":"2023-north-america-wcq"}
@@ -517,7 +519,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Orvee Rian Candelario": [
     {"e":"2023-ycs-vancouver"}
@@ -564,13 +568,15 @@
   ],
   "Andrew Dylan Toney": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Michael Christopher Burks": [
     {"e":"2025-02-ycs-orlando"}
   ],
   "Zachary Thomas Bull": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Vicente Sosa Landivar": [
     {"e":"2025-02-ycs-orlando"}
@@ -627,7 +633,8 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nicholas Ryan Oti": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cameron G.": {
     "as": "Cameron Vincent Grams"

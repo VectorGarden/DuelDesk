@@ -198,6 +198,7 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Adriel Reyes": [
@@ -296,6 +297,7 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -428,7 +430,8 @@
     {"e":"2022-ycs-charlotte"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ryan Scott Strickler": [
     {"e":"202205-ycs-hartford-ct"},
@@ -667,10 +670,10 @@
   "Ira L.": {
     "as": "Ira Eliot Lifland"
   },
-  "Sammy J.": {
-    "as": "Sammy James Johnson Jr."
-  },
   "David Q.": {
     "as": "David Manuel Quintero"
+  },
+  "Sammy J.": {
+    "as": "Sammy James Johnson Jr."
   }
 }

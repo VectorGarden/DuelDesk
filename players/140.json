@@ -75,7 +75,8 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joel Satcher Adams": [
     {"e":"2014-north-american-wcq"},
@@ -518,7 +519,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Ryan Alexander Haggerty": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cold Waved": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -571,7 +573,9 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Stacy Chad Turner": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jamil Carlos Aranda Cadima": [
     {"e":"remote-duel-ycs-january-2026"}

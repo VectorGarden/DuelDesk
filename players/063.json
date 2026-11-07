@@ -532,7 +532,9 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Phillip John Estrada": [
     {"e":"2025-02-ycs-orlando"}
@@ -582,6 +584,12 @@
   ],
   "Christian Javier Rodolfo Martinez Solis": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Rayco Gonzalez Suarez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Mallory Robin Koch": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Javier Andrew Jimenez": [
     {"e":"na-ygoc-2022"}

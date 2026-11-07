@@ -469,7 +469,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jon Elliot Mesa": [
     {"e":"2023-north-america-wcq"}
@@ -507,7 +508,8 @@
     {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
   "Andrew Bryan Wenzel": [
-    {"e":"2024-10-ycs-niagara-falls"}
+    {"e":"2024-10-ycs-niagara-falls"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Dhyeya Rajesh Desai": [
     {"e":"2024-10-ycs-niagara-falls"}
@@ -564,7 +566,9 @@
   "Christopher Andrew Castro": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ian Alexander Besso": [
     {"e":"2025-05-ycs-providence"}
@@ -606,7 +610,9 @@
   ],
   "Ariel Josue Duarte": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Saul C.": [
     {"e":"2026-04-team-ycs-las-vegas"}

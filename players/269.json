@@ -456,6 +456,7 @@
   ],
   "Skyler Eric Persyns": [
     {"e":"2023-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Matthew David Norwood": [
@@ -629,11 +630,11 @@
   "Christopher D.": {
     "as": "Christopher Chen Ning Duong"
   },
-  "Cristian G.": {
-    "as": "Cristian Mitchell Gutierrez"
-  },
   "Inderpal D.": {
     "as": "Inderpal Singh Dhaliwal"
+  },
+  "Cristian G.": {
+    "as": "Cristian Mitchell Gutierrez"
   },
   "Maximilian C.": {
     "as": "Maximilian Kyle Chow"
@@ -641,10 +642,10 @@
   "Martin G.": {
     "as": "Martin Marvyn Guillen"
   },
-  "Joshua S.": {
-    "as": "Joshua Jordan Smith"
-  },
   "Cody B.": {
     "as": "Cody Cameron Bartz"
+  },
+  "Joshua S.": {
+    "as": "Joshua Jordan Smith"
   }
 }

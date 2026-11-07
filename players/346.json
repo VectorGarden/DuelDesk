@@ -346,6 +346,7 @@
   "Jason Tyler Wright": [
     {"e":"2019-north-america-wcq"},
     {"e":"202205-ycs-hartford-ct"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jesus Correa – Moreira": [
@@ -630,7 +631,8 @@
   "Gabriel Michael Leporini": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nicholas William Travers": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -709,7 +711,18 @@
   ],
   "Omar Emad Mahmoud Bsiso": [
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Damien Lee Sneed": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "David Dwayne Mcbride": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Sean Tyler Barnier": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Dylan Joseph Rieman": [
     {"e":"na-ygoc-2022"}

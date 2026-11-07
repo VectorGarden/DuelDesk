@@ -323,7 +323,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Fernando Tadeo Alvarado": [
     {"e":"2019-ycs-pasadena"}
@@ -377,7 +379,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Aaron Gomez Castillo": [
     {"e":"2022-ycs-guadalajara-mexico"},
@@ -563,6 +566,9 @@
   ],
   "Misha Bernard Crouppen": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Njerick Daaman Gomez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Rosario": {
     "as": "Jonathan D. Rosario"

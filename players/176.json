@@ -435,7 +435,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christian Johnathon Casaus Cruz": [
     {"e":"2023-north-america-wcq"}
@@ -529,7 +530,9 @@
   ],
   "Phuong Xuan Phan": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Reid Michael Eaton": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Blackwing"}
@@ -545,6 +548,12 @@
   ],
   "Diego Segura Mansilla": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "William Ethan Richardson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Matthew Leslie Blat": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Noah Christian Wagner": [
     {"e":"na-ygoc-2022"}

@@ -331,7 +331,8 @@
   ],
   "Alan Wayne Caster Jr.": [
     {"e":"2019-north-america-wcq"},
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cristopher Alexander Martinez la Torre": [
     {"e":"2019-south-america-wcq"},
@@ -641,7 +642,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Mariano Ezequiel Fernandez Cavassa": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -662,14 +665,17 @@
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
   "Joshua David Higginbotham": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Robert Michael Carafotes": [
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Dimitri Xavier Butler": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Adventurer Virtual World"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Grant Beausoliel French": [
     {"e":"2026-08-quebec","f":"Advanced"}

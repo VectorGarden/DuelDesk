@@ -267,7 +267,8 @@
   "David Michael Hagerty": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jesus Eduardo Espinoza Rayon": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -367,7 +368,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Victor Orlando Dinarte Jr.": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -399,7 +401,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "William Edward Barnes Jr.": [
     {"e":"2023-north-america-wcq"},
@@ -563,7 +567,9 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"K9 Vanquish Soul","cut":"Top 8"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Diego Alejandro Lopez Guiven": [
     {"e":"2025-north-america-wcq"}

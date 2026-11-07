@@ -405,7 +405,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Parker Hugh Jones": [
     {"e":"2023-north-america-wcq"},
@@ -615,14 +616,14 @@
   "Carson A.": {
     "as": "Carson Kennedy Arias"
   },
+  "Derrick D.": {
+    "as": "Derrick Duy Duong"
+  },
   "Allen W.": {
     "as": "Allen Wong"
   },
   "Jade G.": {
     "as": "Jade Christian Garza"
-  },
-  "Derrick D.": {
-    "as": "Derrick Duy Duong"
   },
   "Braden M.": {
     "as": "Braden Scott Mooney"

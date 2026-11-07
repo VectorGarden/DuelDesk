@@ -290,7 +290,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jared Lee Boleman": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
@@ -623,7 +624,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lukas Sean Wilson": [
     {"e":"2025-02-ycs-orlando"}
@@ -696,6 +698,9 @@
   ],
   "Nicholas Isaiah Hinojosa": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Steven Capote": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Craig H.": {
     "as": "Craig Shun Hayashi"

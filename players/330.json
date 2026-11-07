@@ -410,7 +410,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Peter Young Brescia": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -548,6 +549,9 @@
   ],
   "Marvin Danilo Del Cid Perez": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
+  ],
+  "Braden Allen Dees": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "William Santos Da Silva Braga": [
     {"e":"remote-duel-ycs-february-2025"}

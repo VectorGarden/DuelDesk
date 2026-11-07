@@ -445,7 +445,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Raul Avila Jr.": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -454,7 +455,8 @@
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-north-america-wcq"},
     {"e":"2024-10-ycs-niagara-falls"},
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nachman Yeshiya Haim Ominsky": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -527,7 +529,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Josue Bernardo Medrano Lemus": [
     {"e":"2024-ycs-guadalajara-mexico"},
@@ -554,7 +558,8 @@
   "James Lester Sherrod": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joshua William Lewis": [
     {"e":"2025-02-ycs-orlando"},
@@ -586,7 +591,9 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "William Gabriel Borba Cabrera": [
     {"e":"2025-ycs-buenos-aires-argentina"}

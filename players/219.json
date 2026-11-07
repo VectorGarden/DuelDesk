@@ -522,7 +522,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lucas Ortiz Francovich Dario": [
     {"e":"2024-team-ycs-santiago-chile"}
@@ -602,11 +603,11 @@
   "Julian Jean Teodoro Norkowski": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Justin R.": {
-    "as": "Justin Chase Russell"
-  },
   "Victor T.": {
     "as": "Victor Daniel Torres"
+  },
+  "Justin R.": {
+    "as": "Justin Chase Russell"
   },
   "Bryant Q.": {
     "as": "Bryant Quach"

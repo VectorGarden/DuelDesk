@@ -205,7 +205,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Paul Lee Pearson": [
     {"e":"2015-ycs-chicago"}
@@ -769,16 +770,16 @@
   "Pedro B.": {
     "as": "Pedro Leonardo Rocha Braganca"
   },
-  "Chloe C.": {
-    "as": "Chloe Lorelai Ross Colella"
-  },
   "Kevin P.": {
     "as": "Kevin Alexis Ponce"
   },
-  "Joel R.": {
-    "as": "Joel Elias Ramirez"
+  "Chloe C.": {
+    "as": "Chloe Lorelai Ross Colella"
   },
   "Tristan N.": {
     "as": "Tristan Nguyen"
+  },
+  "Joel R.": {
+    "as": "Joel Elias Ramirez"
   }
 }

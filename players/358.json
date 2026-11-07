@@ -189,7 +189,9 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jose Luis Serrato Bucio": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
@@ -268,7 +270,9 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys","cut":"Top 8","deck":"Radiant Typhoon"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Omar IL Ruiz": [
     {"e":"2019-03-atlanta-ga"}
@@ -517,10 +521,12 @@
     {"e":"2025-ycs-sao-paulo-brazil"}
   ],
   "Daniel Matthew Newell": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Balin Foxx Doeg": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Alberto Torres Flores": [
     {"e":"2025-02-ycs-orlando"},
@@ -591,6 +597,9 @@
   ],
   "John Stuart Lopez": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Nico Sterling Levy": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lucas Aguiar De Oliveira": [
     {"e":"remote-duel-ycs-february-2025"}

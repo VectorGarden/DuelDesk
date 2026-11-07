@@ -195,7 +195,9 @@
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Luciano Daniel Lossio": [
     {"e":"2017-south-american-wcq","f":"Dragon Duel","cut":"Top 4","deck":"True Draco Zoodiac"}
@@ -617,18 +619,20 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Maxwell Christion Gordon": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Matthew Adam Casiero": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Australia","cut":"Top 4"}
   ],
-  "Nelson T.": {
-    "as": "Nelson Tam"
-  },
   "Julius W.": {
     "as": "Julius Wanjala Wandabwa"
   },
   "Keaton S.": {
     "as": "Keaton Lawrence Serna"
+  },
+  "Nelson T.": {
+    "as": "Nelson Tam"
   }
 }

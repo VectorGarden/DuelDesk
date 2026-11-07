@@ -409,7 +409,8 @@
   ],
   "Matthew Ryan Downs": [
     {"e":"2022-ycs-charlotte"},
-    {"e":"202205-ycs-hartford-ct"}
+    {"e":"202205-ycs-hartford-ct"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Giovanni Salvador Segura Rodriguez": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -485,7 +486,8 @@
   "Glen Michael Martinetto": [
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Kyle Lucian Lilley": [
     {"e":"2023-ycs-richmond"},
@@ -546,7 +548,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Ryan Carello Segovia": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "George Thaddeus Repas": [
     {"e":"2025-02-ycs-orlando"}
@@ -611,6 +614,12 @@
   ],
   "Conrad Jay Perez": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Richard Howard Eachus III": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Christian Juvenal Vizcarra": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Travis G.": {
     "as": "Travis Marion Goff"

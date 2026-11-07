@@ -531,6 +531,12 @@
   "Holmer Alans Guzman": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Jean Carlos Negron Rios": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Charles Stephen Herrin": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "John Laurence Bell": [
     {"e":"na-ygoc-2022"}
   ],
@@ -543,10 +549,10 @@
   "Pakawat P.": {
     "as": "Pakawat Thomas Pamornsut"
   },
-  "Dominique C.": {
-    "as": "Dominique Coan"
-  },
   "June L.": {
     "as": "June Hugo Lee"
+  },
+  "Dominique C.": {
+    "as": "Dominique Coan"
   }
 }

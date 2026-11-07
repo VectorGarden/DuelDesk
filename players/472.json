@@ -203,6 +203,8 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024","won":true,"cut":"Final"},
     {"e":"remote-duel-ycs-january-2026"},
@@ -459,7 +461,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Matthew Bustamante": [
     {"e":"2022-11-ycs-pasadena"},
@@ -531,7 +534,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Robert Cody. Stevens": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -632,7 +636,8 @@
   ],
   "Robert Cody Stevens": [
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Kenneth Eng": [
     {"e":"2025-05-ycs-providence"},
@@ -697,13 +702,17 @@
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Marc Alan Durigon": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
-  "Azad D.": {
-    "as": "Azad Deihim"
-  },
+  "Zachary Seth Krashunsky": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "David W.": {
     "as": "David Anthony Warren"
+  },
+  "Azad D.": {
+    "as": "Azad Deihim"
   },
   "Amir W.": {
     "as": "Amir Wahab"

@@ -144,7 +144,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Tilkuram Videsh Rai": [
     {"e":"2014-north-american-wcq"}
@@ -209,6 +211,8 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Charles Scott Carlin Jr.": [
@@ -322,7 +326,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gustavo Adolfo Cano": [
     {"e":"201503-guatemala"},
@@ -535,11 +541,13 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022","cut":"Top 64","deck":"Tenyi Swordsoul"}
   ],
   "Arjun Rao Rebbapragada": [
     {"e":"2022-ycs-charlotte"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ying Vang": [
     {"e":"2022-ycs-minneapolis"}
@@ -685,7 +693,8 @@
   "Noah John Collins Provost": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Maria Fernanda Gutierrez Martinez": [
     {"e":"2025-south-america-wcq"}
@@ -724,10 +733,12 @@
   "Vincent Paxton Lister": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Justin Lamont Beltran": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Pernell Don Sayre": [
     {"e":"2026-04-team-ycs-las-vegas"}
@@ -744,16 +755,25 @@
   "Kevin Khelly White": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Kevin David Hedengren": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Ella Safari Wilson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Hammad Mir": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Halton Meyer Lescano Lazaro": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Jean Pierre Salcedo Ramirez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Ernest O.": {
-    "as": "Ernest Richard Oliphant"
-  },
   "Marshall N.": {
     "as": "Marshall Blade Navarro"
+  },
+  "Ernest O.": {
+    "as": "Ernest Richard Oliphant"
   }
 }

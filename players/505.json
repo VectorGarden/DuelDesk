@@ -113,6 +113,7 @@
     {"e":"2026-ycs-cartagena-colombia","cut":"Final"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys","cut":"Top 8","deck":"Magistus Fairy Tail"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"},
     {"e":"remote-duel-ycs-january-2026"},
     {"e":"ycs-lima-peru-2023","cut":"Top 16"}
@@ -229,7 +230,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Miguel Alejandro Roa Garcia": [
     {"e":"2015-south-american-wcq"},
@@ -364,6 +366,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Guillermo Jesus Aldana Terrazas": [
@@ -572,7 +576,9 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Nestor Alirio Paez Vargas": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -591,7 +597,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Anthony Hadley": [
     {"e":"2023-north-america-wcq"}
@@ -693,7 +700,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Antonio Alexis Pieiro Bermudez": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Raymond Wayne Luera": [
     {"e":"2025-04-ycs-houston"}
@@ -735,7 +743,8 @@
   ],
   "Emmett Dean Peterson": [
     {"e":"2025-ycs-vancouver"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Vinryan Phi Ostrander": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -759,7 +768,9 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Luis Manuel Troche": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Alejandro Edward Ildefonso Medina": [
     {"e":"ycs-lima-peru-2023"}

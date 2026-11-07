@@ -326,6 +326,8 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jace Leverett": [
@@ -545,7 +547,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Arturo Navarro Jr.": [
     {"e":"2025-10-ycs-anaheim"}
@@ -566,7 +569,8 @@
     {"e":"2025-ycs-mexico-city-mexico"}
   ],
   "Taylor Morgan Hayes": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christian Del Aguila Grygo": [
     {"e":"2026-02-300th-na","f":"Genesys"}
@@ -590,10 +594,10 @@
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Robby F.": {
-    "as": "Robby William Fish"
-  },
   "Bryan C.": {
     "as": "Bryan Dejesus Collazo"
+  },
+  "Robby F.": {
+    "as": "Robby William Fish"
   }
 }

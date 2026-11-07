@@ -69,6 +69,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Justin Daniel Crofton": [
@@ -420,7 +421,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Radiant Typhoon","cut":"Top 4"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jiahao Fan": [
     {"e":"2019-ycs-niagara-falls"}
@@ -709,6 +711,9 @@
   "Joaquin Flores Jr.": [
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Andrew David Winters": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brando Briones Matta": [
     {"e":"ycs-lima-peru-2023"}

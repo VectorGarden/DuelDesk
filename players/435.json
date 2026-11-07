@@ -310,7 +310,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Abraham Rivera Cruz": [
     {"e":"2019-north-america-wcq"},
@@ -561,7 +563,9 @@
   ],
   "Tabrin Louis Aldi": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joseph Robert Mieden": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
@@ -575,13 +579,13 @@
   "Juan Diego Arce Velasquez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jesse W.": {
-    "as": "Jesse Miguel Wood"
-  },
   "Timothy A.": {
     "as": "Timothy Kelly Andrews"
   },
   "Levi D.": {
     "as": "Levi James Dudley"
+  },
+  "Jesse W.": {
+    "as": "Jesse Miguel Wood"
   }
 }

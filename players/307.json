@@ -180,6 +180,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "James Nicholas Urdiales": [
@@ -587,13 +588,16 @@
   "Cesar Alfredo Visoni Martinez": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Jose Reynaldo Rivera Torres": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Aditya Dharap": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Jaquan W.": {
-    "as": "Jaquan Arthur Williams"
-  },
   "Warner K.": {
     "as": "Warner Eugene Knowland"
+  },
+  "Jaquan W.": {
+    "as": "Jaquan Arthur Williams"
   }
 }

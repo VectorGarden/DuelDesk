@@ -486,7 +486,8 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Andrew Lloyd Berkenkamp": [
     {"e":"2023-north-america-wcq"}
@@ -568,7 +569,8 @@
   "Timothy Nicholas Orselli": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Steven Dale Riedel": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -660,28 +662,28 @@
   "William J Kim": [
     {"e":"na-ygoc-2022"}
   ],
-  "Martin N.": {
-    "as": "Martin January Nunez"
-  },
   "Brandon C.": {
     "as": "Brandon Taylor Conrad"
   },
-  "Walter A.": {
-    "as": "Walter Omar Angel"
+  "Martin N.": {
+    "as": "Martin January Nunez"
   },
   "Roger T.": {
     "as": "Roger Quoc Hung Tram"
   },
+  "Walter A.": {
+    "as": "Walter Omar Angel"
+  },
   "Patrick A.": {
     "as": "Patrick Connor Ainsworth"
   },
-  "Nicholas W.": {
-    "as": "Nicholas John Wetmore"
+  "Joshua L.": {
+    "as": "Joshua Ryan Levine"
   },
   "Jeremy C.": {
     "as": "Jeremy David Cummins"
   },
-  "Joshua L.": {
-    "as": "Joshua Ryan Levine"
+  "Nicholas W.": {
+    "as": "Nicholas John Wetmore"
   }
 }

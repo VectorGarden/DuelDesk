@@ -410,7 +410,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Abraham Garcia Sanchez": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -532,7 +533,8 @@
     {"e":"2024-ycs-indianapolis"}
   ],
   "Yirnnis Lyndell Patterson": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Zackariah Samuel Maxwell": [
     {"e":"2025-02-ycs-orlando"},
@@ -552,7 +554,8 @@
   ],
   "Juan Antonio Ortiz Perez": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nelson Moises Lara Pineda": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"}
@@ -568,7 +571,8 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Mason Lane Griffiths": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Oscar Alejandro Rosas Najera": [
     {"e":"2026-02-300th-na"}

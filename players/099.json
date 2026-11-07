@@ -368,6 +368,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Jhamil Alejandro Romero Chavarria": [
@@ -496,7 +498,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marco Barrionuevo": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -606,7 +609,8 @@
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
   "Miguel A. Ortiz": [
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Raamses Ramon Reyes": [
     {"e":"2025-10-ycs-anaheim"}
@@ -679,6 +683,9 @@
   ],
   "Gonzalo Milciades Briceno": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Nicolas Francois Mirambeau": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Iago Joaquim Cunha Nogueira": [
     {"e":"remote-duel-ycs-february-2025"}

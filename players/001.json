@@ -430,6 +430,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Vincent Alfred Gross": [
@@ -440,7 +441,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Alejandro Gomez Galindo": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -589,7 +591,9 @@
   ],
   "Freddy Elvira": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Eduardo Aldair Medrano": [
     {"e":"2025-04-ycs-houston"}
@@ -646,7 +650,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Angel Medina Ochoa": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lucas James Marr": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -683,10 +688,10 @@
   "Morley T.": {
     "as": "Morley Kim Taing"
   },
-  "Ethan C.": {
-    "as": "Ethan Scott Crowe"
-  },
   "Andrew W.": {
     "as": "Andrew Robert Walch"
+  },
+  "Ethan C.": {
+    "as": "Ethan Scott Crowe"
   }
 }

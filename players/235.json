@@ -153,7 +153,8 @@
   "Jared Michael Citrino": [
     {"e":"2015-north-american-wcq"},
     {"e":"2022-ycs-charlotte"},
-    {"e":"2023-north-america-wcq"}
+    {"e":"2023-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alvin Chi Wong": [
     {"e":"2015-north-american-wcq"},
@@ -575,6 +576,9 @@
   "Ricardo Quintanilla Cazares": [
     {"e":"2026-north-america-wcq"}
   ],
+  "Ryan Matthew Grady": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Dany Cortez Gomez": {
     "as": "Dany C. Cortez Gomez"
   },
@@ -584,10 +588,10 @@
   "Owen P.": {
     "as": "Owen Nathaniel Pritchard"
   },
-  "Dakota A.": {
-    "as": "Dakota Clint Angeloff"
-  },
   "Damien P.": {
     "as": "Damien Estevan Pena"
+  },
+  "Dakota A.": {
+    "as": "Dakota Clint Angeloff"
   }
 }

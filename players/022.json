@@ -430,7 +430,9 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Julian Penagos": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -473,7 +475,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jayden Aymery Hall": [
     {"e":"2023-ycs-indianapolis"},
@@ -543,7 +547,8 @@
   ],
   "Daniel Thomas Kirk": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Rafael Font": [
     {"e":"2025-02-ycs-orlando"}
@@ -596,7 +601,8 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Edward Javier Acosta": [
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Michael S.": [
     {"e":"2026-04-team-ycs-las-vegas"}

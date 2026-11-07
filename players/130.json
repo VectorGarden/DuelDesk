@@ -434,7 +434,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Azamina Mitsurugi"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Tevel Onyx Garland": [
     {"e":"2022-ycs-minneapolis"},
@@ -626,6 +628,9 @@
   ],
   "Jose Francisco Saker Vicent": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Jose Eduardo Rios": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marcelo Hugo Lineo Aguilar": [
     {"e":"remote-duel-ycs-january-2026"}

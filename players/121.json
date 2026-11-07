@@ -195,7 +195,8 @@
     {"e":"2017-north-american-wcq"},
     {"e":"2018-north-america-wcq"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Casey Reed Robison-Jarvis": [
     {"e":"2016-north-american-wcq"},
@@ -424,7 +425,8 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alex Dario Puchaicela Pin": [
     {"e":"2022-team-ycs-quito"},
@@ -602,7 +604,11 @@
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Edgar Deivi Rodriguez Belmares": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Logan Scott Vidi": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jose Daniel Vargas Chacon": [
     {"e":"remote-duel-ycs-february-2025"},
@@ -611,11 +617,11 @@
   "Alejandro Jose Rodriguez Loayza": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Leonard C.": {
-    "as": "Leonard Chun Yi Chu"
-  },
   "Kevin H.": {
     "as": "Kevin Hsu Ping Huang"
+  },
+  "Leonard C.": {
+    "as": "Leonard Chun Yi Chu"
   },
   "Colby T.": {
     "as": "Colby James Taylor"

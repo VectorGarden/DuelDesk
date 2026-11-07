@@ -407,7 +407,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Paula Fabio Fornos": [
     {"e":"2022-ycs-rio-de-janeiro"}
@@ -440,7 +441,9 @@
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jonatan Stiven Torres": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -552,7 +555,8 @@
   ],
   "Joseph Slavko Romanic": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Lyrilusc Drytron"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Marina Leticia Molina Damian": [
     {"e":"2026-central-america-dragon-duel-championship","f":"Dragon Duel"}

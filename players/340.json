@@ -172,6 +172,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022","cut":"Top 4","deck":"Floowandereeze"}
   ],
   "Robert J. Prajer": [
@@ -495,7 +496,9 @@
   "Joshua Matthew Hernandez": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Purrely Support": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -579,16 +582,16 @@
   "Jose Javier Martinez Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Taylor R.": {
-    "as": "Taylor Jacob Rowell"
-  },
   "Drtodd L.": {
     "as": "Drtodd Tony Leylekyan"
   },
-  "Piersen S.": {
-    "as": "Piersen Matthew Sukienik"
+  "Taylor R.": {
+    "as": "Taylor Jacob Rowell"
   },
   "Robin S.": {
     "as": "Robin John Sharman"
+  },
+  "Piersen S.": {
+    "as": "Piersen Matthew Sukienik"
   }
 }

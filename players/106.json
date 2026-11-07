@@ -476,7 +476,8 @@
   "Jesus Alberto Nunez": [
     {"e":"2023-north-america-wcq"},
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Erick Escobar Munoz": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -493,7 +494,9 @@
   "Sebastian XZaviar Leonard Tucker": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-03-team-ycs-las-vegas"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Erik P.": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -541,7 +544,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Javier Andres Chevere": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher Aaron Wiley": [
     {"e":"2025-02-ycs-orlando"}

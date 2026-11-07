@@ -259,7 +259,8 @@
   ],
   "David Andrew Beauregard Brazell": [
     {"e":"2018-ycs-atlanta"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Nicholas Bradley Poe": [
     {"e":"2019-03-atlanta-ga"},
@@ -391,6 +392,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Angel Alfonso Lopez Padilla": [
@@ -415,7 +417,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jorge Luis Badillo Moreno": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -641,16 +644,16 @@
   "João A.": {
     "as": "João Vitor Abrahão"
   },
-  "Joo A.": {
-    "as": "Joo Ho Ahn"
-  },
-  "Tyler M.": {
-    "as": "Tyler Mackenzie Mocklin"
-  },
   "Lyric B.": {
     "as": "Lyric Bruner"
   },
   "Luca C.": {
     "as": "Luca Mathew Jin Soo Choi"
+  },
+  "Joo A.": {
+    "as": "Joo Ho Ahn"
+  },
+  "Tyler M.": {
+    "as": "Tyler Mackenzie Mocklin"
   }
 }

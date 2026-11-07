@@ -402,7 +402,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-north-america-wcq"},
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Juan Antonio Lopez": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -521,7 +522,11 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Roberto Mitchel Hernandez": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Kyle Robert Patch": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Yeison Bernardo Riano Ballesilla": [
     {"e":"remote-duel-ycs-january-2024"}
@@ -532,14 +537,14 @@
   "Izumi Yoshi": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Japan","cut":"Top 8"}
   ],
+  "Jacquelyn Y.": {
+    "as": "Jacquelyn Aubrey Yeager"
+  },
   "Adam A.": {
     "as": "Adam Michael Healiiolani Akiu"
   },
   "Edgar C.": {
     "as": "Edgar Felipe Cortes"
-  },
-  "Jacquelyn Y.": {
-    "as": "Jacquelyn Aubrey Yeager"
   },
   "Logen T.": {
     "as": "Logen Andrew Thornton"

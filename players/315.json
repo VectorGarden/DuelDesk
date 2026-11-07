@@ -378,7 +378,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Jonathan Lisandro Perez Bilbao": [
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "James Timothy Range": [
     {"e":"2025-05-ycs-providence"},
@@ -444,7 +445,11 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Harris Ethan Lansky Plofsky": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Jose Arsenio Ocasio": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christian David Villegas Gonzalez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
@@ -455,10 +460,10 @@
   "William Bak": {
     "as": "William S. Bak"
   },
-  "Kameron T.": {
-    "as": "Kameron Biscaya Tran"
-  },
   "Nischay V.": {
     "as": "Nischay Vallabhaneni"
+  },
+  "Kameron T.": {
+    "as": "Kameron Biscaya Tran"
   }
 }

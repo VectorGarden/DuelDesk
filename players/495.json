@@ -479,7 +479,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jack Preston Allen III": [
     {"e":"2023-north-america-wcq"},
@@ -492,7 +494,9 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gabriel Ramos Luiz": [
     {"e":"2023-team-ycs-sao-paulo"}
@@ -588,7 +592,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Mitrex Roman": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "MyCard": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -635,19 +640,19 @@
   "wins Stefano Sluis": [
     {"e":"wcs-2010","deck":"Infernity"}
   ],
-  "Tam N.": {
-    "as": "Tam Thanh Nguyen"
+  "Adrian E.": {
+    "as": "Adrian Joshua Alas Echane"
+  },
+  "Takuma C.": {
+    "as": "Takuma Ken Chipman"
   },
   "Hai N.": {
     "as": "Hai Si Hoang Nguyen"
   },
-  "Adrian E.": {
-    "as": "Adrian Joshua Alas Echane"
+  "Tam N.": {
+    "as": "Tam Thanh Nguyen"
   },
   "Abel S.": {
     "as": "Abel Salgado"
-  },
-  "Takuma C.": {
-    "as": "Takuma Ken Chipman"
   }
 }

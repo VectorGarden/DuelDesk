@@ -78,6 +78,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Ethan Robert Thomas Tucker": [
@@ -101,7 +103,8 @@
     {"e":"2016-uds-invitational-chicago"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alexander Daniel Decolator": [
     {"e":"2014-north-american-wcq"},
@@ -532,7 +535,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ignacio Andres Gutierrez": [
     {"e":"2024-team-ycs-santiago-chile"}
@@ -567,7 +571,9 @@
   "Neloshan Prakash": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Justice Zachary Mason Lanthier": [
     {"e":"2025-11-ycs-pittsburgh-pa"}
@@ -622,11 +628,20 @@
   "Logan Robert Neal": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "George Wu": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Juan Jose Arevalo Cortez": [
     {"e":"uds-2016-elsalvador"}
   ],
   "Giuliano U.": {
     "as": "Giuliano Massuhiro Uehara"
+  },
+  "Tamir B.": {
+    "as": "Tamir Lawrence Brown"
+  },
+  "Vivek V.": {
+    "as": "Vivek Mohan Vattyam"
   },
   "Gavin J.": {
     "as": "Gavin Yiting Jiang"
@@ -634,14 +649,8 @@
   "Trung L.": {
     "as": "Trung Minh Le"
   },
-  "Tamir B.": {
-    "as": "Tamir Lawrence Brown"
-  },
   "Yi Z.": {
     "as": "Yi Hui Zheng"
-  },
-  "Vivek V.": {
-    "as": "Vivek Mohan Vattyam"
   },
   "Tino A.": {
     "as": "Tino London Aguinaldo"

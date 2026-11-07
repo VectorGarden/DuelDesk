@@ -122,7 +122,8 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lamar Duane Colquitt": [
     {"e":"2016-ycs-minneapolis"}
@@ -457,7 +458,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jorge Daniel Cuevas Pedraza": [
     {"e":"2023-ycs-santa-cruz-de-la-sierra"},
@@ -495,7 +497,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Adam Dennis Genest": [
     {"e":"2025-05-ycs-providence"}
@@ -512,7 +515,8 @@
   ],
   "Alexis Antonio Herrera Veras": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Andrew Clifford Thwaites": [
     {"e":"2025-12-rdycs-na"}
@@ -572,6 +576,9 @@
   ],
   "Corey Alex Fontenot": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Calen Gregory Wohrle": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carlos Arturo Hernandez Aguilar": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

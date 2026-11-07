@@ -104,6 +104,7 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joshua Dewayne Rice": [
@@ -532,7 +533,8 @@
   ],
   "Caleb Drewelliot Sims": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Kristopher Osten Vann": [
     {"e":"2025-04-ycs-houston"}
@@ -597,7 +599,12 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Jorge Ramon Fernandez Salas": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Jonathan Rasheem Ighodalo": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brandon Joseph Joestar": [
     {"e":"na-ygoc-2022"}

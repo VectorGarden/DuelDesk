@@ -85,7 +85,8 @@
     {"e":"2017-ycs-atlanta"},
     {"e":"2018-ycs-atlanta"},
     {"e":"2019-03-atlanta-ga"},
-    {"e":"2023-north-america-wcq"}
+    {"e":"2023-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "John Justine Orbe": [
     {"e":"2015-ycs-chicago"}
@@ -102,7 +103,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Monarch"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cecil Akeem Davis": [
     {"e":"2016-north-american-wcq"},
@@ -315,7 +317,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Johannes Xulleece Alexander": [
     {"e":"2022-11-ycs-pasadena"},
@@ -427,7 +430,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Marco Antonio Espinoza Ribera": [
     {"e":"2023-ycs-santa-cruz-de-la-sierra"}
@@ -452,7 +456,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Adrian D.": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -516,18 +522,22 @@
   ],
   "Thomas William Boresky III": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Rebecca Sue Buenaga": [
     {"e":"2025-02-ycs-orlando"}
   ],
   "Federico Vaquero Jr.": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Michael Curtis Mullen": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Diego Alvarez": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -600,10 +610,14 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Christian Andres Lopez": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "David Ringvik Bergman": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ezra H.": {
     "as": "Ezra Michael Hurt"

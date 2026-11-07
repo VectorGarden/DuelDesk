@@ -423,7 +423,8 @@
   ],
   "Ronald Travis Braden": [
     {"e":"2022-ycs-charlotte"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Geoffrey Brock Moore": [
     {"e":"2022-ycs-charlotte"}
@@ -604,6 +605,9 @@
   ],
   "Jonathan Andres Jaime Zambrano": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Sten William Robert Valencia": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Richard Douglas Stockton": [
     {"e":"na-ygoc-2022"}

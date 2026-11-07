@@ -48,6 +48,7 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"ycs-lima-peru-2023"}
@@ -309,6 +310,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Gehrig Everett Grosso": [
@@ -503,7 +505,8 @@
     {"e":"2023-05-ycs-philadelphia"}
   ],
   "Alexander Michael Patterson": [
-    {"e":"2023-05-ycs-philadelphia"}
+    {"e":"2023-05-ycs-philadelphia"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Santiago Andres Cely Gonzalez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -636,7 +639,8 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Jonathan Roy Dixon": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alexander Na Swagemakers": [
     {"e":"2026-02-300th-na"}
@@ -658,6 +662,9 @@
   ],
   "Justin Anh Tuan Pham": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Parnell Connar Schmidhofer": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Victor Hugo Calderon": [
     {"e":"remote-duel-ycs-january-2026"}

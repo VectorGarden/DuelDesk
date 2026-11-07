@@ -482,7 +482,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Richard Perry Obligacion": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -578,7 +579,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "C. Alexander Grosskopf": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Angel Luis Perez": [
     {"e":"2025-02-ycs-orlando"}
@@ -607,7 +609,8 @@
   "Michael Mario Ramirez": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Alfredo Benjamin Quintero Oviedo": [
     {"e":"2026-02-300th-na"}
@@ -625,7 +628,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"}
   ],
   "Micheal Joseph Vega": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Daniel Alejandro Palacio": [
     {"e":"remote-duel-ycs-january-2024"}
@@ -636,11 +640,11 @@
   "Jahaciel de Jesus Molina Candelaria": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Minsu P.": {
-    "as": "Minsu Park"
-  },
   "Darren D.": {
     "as": "Darren Dyal"
+  },
+  "Minsu P.": {
+    "as": "Minsu Park"
   },
   "Manuel A.": {
     "as": "Manuel Raymond Alvarez"

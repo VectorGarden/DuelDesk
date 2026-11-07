@@ -141,7 +141,8 @@
   ],
   "Erik Mauro Diliddo": [
     {"e":"2016-north-american-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jake Allen Procter": [
     {"e":"2016-north-american-wcq"},
@@ -216,7 +217,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jonathan Emanuel Walter Spence": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
@@ -286,7 +288,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Mitsurugi Sky Striker","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jacob Thomas Sobeck": [
     {"e":"2019-ycs-chicago"},
@@ -537,16 +541,19 @@
   "AbdouAllah Hammida": [
     {"e":"2026-north-america-genesys-championship","f":"Genesys"}
   ],
+  "Joseph Kyle Vandett": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Daniel Eduardo Guerra de la Fuente": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Felipe N.": {
     "as": "Felipe Nienkotter"
   },
-  "Conner M.": {
-    "as": "Conner Santino Medina"
-  },
   "Mustapha G.": {
     "as": "Mustapha Sean Ghanem"
+  },
+  "Conner M.": {
+    "as": "Conner Santino Medina"
   }
 }

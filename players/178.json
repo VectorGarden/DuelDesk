@@ -328,7 +328,8 @@
     {"e":"2019-ycs-chicago"}
   ],
   "Jose Antonio Perez Vite": [
-    {"e":"2018-09-200th-ycs-mexico-city-mexico"}
+    {"e":"2018-09-200th-ycs-mexico-city-mexico"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Axl Anibal Corona Alvarado": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -638,6 +639,9 @@
   "Kyle Robert Suter": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Keith Oscar Davis Jr.": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Uziel Alvarado Garcia": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -650,11 +654,11 @@
   "Juan Carlos Bustillos Bravo": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Alonso B.": {
-    "as": "Alonso Capone Baca"
-  },
   "Hansel A.": {
     "as": "Hansel Erik Aguero"
+  },
+  "Alonso B.": {
+    "as": "Alonso Capone Baca"
   },
   "Dustin S.": {
     "as": "Dustin Ulrich Snow"

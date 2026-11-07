@@ -258,6 +258,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Ryan Yon Ho Song": [
@@ -440,7 +441,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jeriberto Velazquez Aquino": [
     {"e":"2019-north-america-wcq"},
@@ -643,7 +645,9 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gregory Bullock": [
     {"e":"2025-02-ycs-orlando"}
@@ -734,16 +738,16 @@
   "Yannik Ackermann": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Benjamin H.": {
-    "as": "Benjamin Michael Hansen"
-  },
-  "Marcus H.": {
-    "as": "Marcus Anthony Ho"
-  },
   "Dinh P.": {
     "as": "Dinh Khang Pham"
   },
   "Albert L.": {
     "as": "Albert Junghwan Lee"
+  },
+  "Benjamin H.": {
+    "as": "Benjamin Michael Hansen"
+  },
+  "Marcus H.": {
+    "as": "Marcus Anthony Ho"
   }
 }

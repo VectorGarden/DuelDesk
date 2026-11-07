@@ -535,7 +535,8 @@
   "George Candelavia Chapman": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Chundra Fan Club": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -602,10 +603,16 @@
   "Mirko Alberto Murillo": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Giorgos R.": {
-    "as": "Giorgos Sebastian Ramirez"
-  },
+  "Blaise Kaelin Ayala": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Andres David Duschatzky": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Alan K.": {
     "as": "Alan Leung Wah Kwok"
+  },
+  "Giorgos R.": {
+    "as": "Giorgos Sebastian Ramirez"
   }
 }

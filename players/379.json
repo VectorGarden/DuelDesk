@@ -449,6 +449,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq","cut":"Top 8","deck":"Kewl Tune"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
   "Ren Anthony Jeffrey": [
@@ -723,6 +724,9 @@
   ],
   "Manuel Nicolas Lecaro": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
+  ],
+  "Brandon Lavon Marshall": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alfonso Regueira Mori": [
     {"e":"remote-duel-ycs-january-2024"}

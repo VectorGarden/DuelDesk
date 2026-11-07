@@ -73,6 +73,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Rolando Esteban Teran Chaguaro": [
@@ -313,6 +315,7 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Alan Jacob Gilstrap": [
@@ -396,7 +399,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cesar Joel Cruz Bernabe": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -617,19 +622,19 @@
   "Lenon M.": {
     "as": "Lenon De Miranda"
   },
-  "Jomar O.": {
-    "as": "Jomar Octaviani"
-  },
   "Dallen H.": {
     "as": "Dallen Dewayne Harrell"
   },
-  "Sunny C.": {
-    "as": "Sunny Hau Chau"
+  "Jomar O.": {
+    "as": "Jomar Octaviani"
   },
   "Michael D.": {
     "as": "Michael James Dorn"
   },
   "Howard D.": {
     "as": "Howard Clayton Davis"
+  },
+  "Sunny C.": {
+    "as": "Sunny Hau Chau"
   }
 }

@@ -342,7 +342,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Zach Tyler Gibson": [
     {"e":"2022-ycs-niagara-falls"},
@@ -380,7 +382,8 @@
   "John Maurice Fernandez": [
     {"e":"2023-north-america-wcq"},
     {"e":"2024-11-north-america-remote-duel-ycs"},
-    {"e":"2024-north-america-wcq"}
+    {"e":"2024-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alexandre De Franca Gomes": [
     {"e":"2023-team-ycs-sao-paulo"}
@@ -458,7 +461,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Lazarus Samuel Burton": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Oak Jeremiah Leavitt": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -524,7 +528,14 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Brennen Joseph Tyler Moore": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Sidney Matthew Gordon": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Harry Ayala": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gerardo Rafael Marmol Murcia": [
     {"e":"uds-2016-elsalvador"}
@@ -536,11 +547,11 @@
     {"e":"yu-gi-oh-tcg-world-championship-2024","cut":"Top 8","deck":"Tenpai Dragon"},
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Nestor M.": {
-    "as": "Nestor Zai Mendez"
-  },
   "Enrique I.": {
     "as": "Enrique Ibanez"
+  },
+  "Nestor M.": {
+    "as": "Nestor Zai Mendez"
   },
   "Stephanos P.": {
     "as": "Stephanos Portillo"

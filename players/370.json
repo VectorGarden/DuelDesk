@@ -370,7 +370,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Azamina Yummy"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Fabiano Vieira da Silva": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -412,7 +413,8 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher Michael Maniaci": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -476,7 +478,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christian Zavala": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -519,13 +522,16 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "London Alexander Dudley Peterson": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Black Ice": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -609,6 +615,9 @@
   ],
   "Kin Duy Dang": [
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Dylan Torres Urquiza": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Darwin Ariel Pezo Concha": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}

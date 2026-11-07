@@ -415,6 +415,7 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-indianapolis"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Haisten Doyal Bonner": [
@@ -607,6 +608,12 @@
   ],
   "Ruochen Jia": [
     {"e":"2026-08-quebec","f":"Advanced"}
+  ],
+  "Enayat Amir Justin Ali Jr.": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Douglas Alberto Perez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Thanin Siripojanakul": [
     {"e":"wcs-2010","deck":"Blackwings"}

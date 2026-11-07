@@ -231,6 +231,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Vanquish Soul K9"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "George Robert Funk": [
@@ -541,7 +542,8 @@
   ],
   "Robert James Fashingbauer": [
     {"e":"2023-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cesar Alequin Torres": [
     {"e":"2023-north-america-wcq"},
@@ -627,7 +629,9 @@
   ],
   "Dhanvi Marrapu": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Francisco Javier Jimenez Luna": [
     {"e":"2024-team-ycs-san-jose-costa-rica"},
@@ -649,7 +653,8 @@
   ],
   "Efrain Colon Comacho Jr.": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Malcolm Tayseim Obiakor": [
     {"e":"2025-02-ycs-orlando"}

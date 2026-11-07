@@ -461,16 +461,19 @@
   "Kenneth David Hopkins": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Zane Alan Lienhart": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Yuto Kondo": [
     {"e":"yu-gi-oh-tcg-world-championship-2024","cut":"Top 4","deck":"Fiendsmith Fire King Snake-Eye"}
   ],
   "Kai K.": {
     "as": "Kai Samson Koester"
   },
-  "Thomas K.": {
-    "as": "Thomas Patrick Kelly"
-  },
   "Raymond J.": {
     "as": "Raymond B. James"
+  },
+  "Thomas K.": {
+    "as": "Thomas Patrick Kelly"
   }
 }

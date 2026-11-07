@@ -446,7 +446,8 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tswvyum Ethan Xiong": [
     {"e":"2025-10-ycs-anaheim"}
@@ -478,7 +479,9 @@
   ],
   "Kyle Joseph Lemperg": [
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Dilan Leonardo Mendieta Barrios": [
     {"e":"2026-team-ycs-la-paz-bolivia"}

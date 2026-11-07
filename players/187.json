@@ -469,7 +469,8 @@
   ],
   "William Eric J.V.D. Kolesar": [
     {"e":"2024-north-america-wcq"},
-    {"e":"2025-03-team-ycs-las-vegas"}
+    {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Agustin Alvarez Rivero": [
     {"e":"2024-team-ycs-santiago-chile"},
@@ -486,7 +487,8 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Aiden Tyler Smith": [
     {"e":"2025-02-ycs-orlando"}
@@ -566,11 +568,11 @@
   "Wangli C.": {
     "as": "Wangli Pancieri Campos"
   },
-  "Enrique G.": {
-    "as": "Enrique Garcia"
-  },
   "Alex W.": {
     "as": "Alex Colin White"
+  },
+  "Enrique G.": {
+    "as": "Enrique Garcia"
   },
   "Anibal J.": {
     "as": "Anibal Javier"

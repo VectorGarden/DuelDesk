@@ -223,7 +223,8 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Dtaune Quintrell Ingram": [
     {"e":"2017-ycs-atlanta"}
@@ -498,7 +499,8 @@
   ],
   "Alberto Isamir Galeas": [
     {"e":"2023-ycs-richmond"},
-    {"e":"2024-ycs-raleigh"}
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cristian Alexis Perea Oporto": [
     {"e":"2023-ycs-santiago-chile"}
@@ -588,7 +590,8 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Jacob Bradley Langston Boersma": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tyler P.": [
     {"e":"2026-04-team-ycs-las-vegas"}
@@ -617,14 +620,17 @@
   "Jake Kremling": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Lawrence Cole Crutchfield": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Irving Luis Nava Ocampo": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Jarvanta D.": {
-    "as": "Jarvanta Dorsey"
-  },
   "Amber B.": {
     "as": "Amber Elaine Ann Brown"
+  },
+  "Jarvanta D.": {
+    "as": "Jarvanta Dorsey"
   },
   "Duncan T.": {
     "as": "Duncan Henry Tucker"

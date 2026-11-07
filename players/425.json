@@ -101,6 +101,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Janice Lee": [
@@ -462,7 +463,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Noel Armenteros": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Antonio Jeral RIvera": [
     {"e":"2025-02-ycs-orlando"}
@@ -516,11 +518,11 @@
   "Luis Fernando Zamora Zempoalteca": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Marcus B.": {
-    "as": "Marcus Leon Brown"
-  },
   "An N.": {
     "as": "An Duy Nguyen"
+  },
+  "Marcus B.": {
+    "as": "Marcus Leon Brown"
   },
   "Casey M.": {
     "as": "Casey Ray Martin"

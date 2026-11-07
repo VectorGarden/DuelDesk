@@ -398,7 +398,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher Timothy Medrano-Zambrano": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -499,7 +500,8 @@
   "Pedro Luis Rodriguez Monzon": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Grant Wade Giles": [
     {"e":"2025-02-ycs-orlando"}
@@ -597,6 +599,9 @@
   "Mario Vazquez": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
+  "Micheal Matthew Regan": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Angel Gabriel Paz Jimenez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -615,11 +620,11 @@
   "Seigo Enokizono": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Dablessin W.": {
-    "as": "Dablessin Jaquise Wilson"
-  },
   "Blake T.": {
     "as": "Blake Austin Taylor"
+  },
+  "Dablessin W.": {
+    "as": "Dablessin Jaquise Wilson"
   },
   "Artan L.": {
     "as": "Artan Lajqi"

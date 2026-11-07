@@ -190,7 +190,8 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys","cut":"Final","deck":"Radiant Typhoon"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gary Jerome Brooks": [
     {"e":"2016-north-american-wcq"}
@@ -445,7 +446,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Crisitan Camilo Molina Bermudez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
@@ -596,7 +599,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Dorian Scott Simek": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "David Emmanuel Lopez": [
     {"e":"2026-central-america-genesys-championship","f":"Genesys"}
@@ -607,16 +611,19 @@
   "Jason Andrew Skarda": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Rafael Alejandro Parjus III": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Reese Anthony Villagrana": [
     {"e":"na-ygoc-2022"}
   ],
-  "Benjamin V.": {
-    "as": "Benjamin Alexis Vidrio"
-  },
   "Giuseppe M.": {
     "as": "Giuseppe Marra"
   },
   "Trayone K.": {
     "as": "Trayone Matthew King"
+  },
+  "Benjamin V.": {
+    "as": "Benjamin Alexis Vidrio"
   }
 }

@@ -395,7 +395,8 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-north-america-wcq"},
-    {"e":"2023-team-ycs-las-vegas"}
+    {"e":"2023-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tucker Willis Myers": [
     {"e":"2022-ycs-charlotte"}
@@ -572,7 +573,9 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ruiyang Xu": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -671,11 +674,14 @@
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Kyle N.": {
-    "as": "Kyle Aidan Nance"
-  },
   "Max C.": {
     "as": "Max Cardenas"
+  },
+  "Brandon F.": {
+    "as": "Brandon Bryan Ferrell"
+  },
+  "Vivek S.": {
+    "as": "Vivek Naresh Sreenivasan"
   },
   "Yucheng L.": {
     "as": "Yucheng Li"
@@ -683,10 +689,7 @@
   "Wyatt B.": {
     "as": "Wyatt Leland Brannock"
   },
-  "Brandon F.": {
-    "as": "Brandon Bryan Ferrell"
-  },
-  "Vivek S.": {
-    "as": "Vivek Naresh Sreenivasan"
+  "Kyle N.": {
+    "as": "Kyle Aidan Nance"
   }
 }

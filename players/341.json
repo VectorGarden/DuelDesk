@@ -99,7 +99,9 @@
     {"e":"2016-ycs-origins"},
     {"e":"2017-north-american-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joshua Tyson Henry": [
     {"e":"2014-north-american-wcq"},
@@ -628,7 +630,8 @@
   ],
   "Anthony Blake Inman": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gregory Mark Vecchi": [
     {"e":"2025-02-ycs-orlando"}
@@ -683,22 +686,28 @@
   "Jorge Pablo Barrios Tzul": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Alexander Lee Mendez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Raymond Ryan Carey Dooman": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Daigo Noguchi": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Owen A.": {
-    "as": "Owen Michael Alvarado"
-  },
-  "Lijie D.": {
-    "as": "Lijie Deng"
-  },
-  "Sebastian M.": {
-    "as": "Sebastian Muralles"
+  "Nelvin L.": {
+    "as": "Nelvin Wai Yan Lo"
   },
   "Dominik N.": {
     "as": "Dominik Jullian Nemeth"
   },
-  "Nelvin L.": {
-    "as": "Nelvin Wai Yan Lo"
+  "Sebastian M.": {
+    "as": "Sebastian Muralles"
+  },
+  "Lijie D.": {
+    "as": "Lijie Deng"
+  },
+  "Owen A.": {
+    "as": "Owen Michael Alvarado"
   }
 }

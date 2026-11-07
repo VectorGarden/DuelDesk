@@ -485,7 +485,9 @@
   ],
   "Luis Alberto J. Torres": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jefferson R. Zamora": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -541,6 +543,9 @@
   "Nicholas Alex Harrichand Singh": [
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
+  ],
+  "Luis Pelaez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Michael Guallpa-Jara": [
     {"e":"na-ygoc-2022"}

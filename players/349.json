@@ -243,7 +243,8 @@
     {"e":"2017-ycs-pittsburgh"},
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christian Zaire Townsend": [
     {"e":"2017-north-american-wcq"},
@@ -718,7 +719,8 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Eric Anthony Winters": [
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Keanu Dean Batts": [
     {"e":"2026-ycs-houston","f":"Genesys"}
@@ -738,16 +740,16 @@
   "Grabiel M.": {
     "as": "Grabiel Jose Molina"
   },
-  "Mitchell D.": {
-    "as": "Mitchell Eugene Drake"
-  },
   "Jonathon N.": {
     "as": "Jonathon Michael Nagel"
   },
-  "Benjamin D.": {
-    "as": "Benjamin John Dunn"
+  "Mitchell D.": {
+    "as": "Mitchell Eugene Drake"
   },
   "Zohair K.": {
     "as": "Zohair Ismail Khan"
+  },
+  "Benjamin D.": {
+    "as": "Benjamin John Dunn"
   }
 }

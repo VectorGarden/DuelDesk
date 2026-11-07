@@ -135,7 +135,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "William Sebastian Loaiza Romero": [
     {"e":"2016-sa-wcq"},
@@ -263,7 +264,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Daniel Yusef-Borisovich Selioutsky": [
     {"e":"2019-03-atlanta-ga"}
@@ -414,7 +416,8 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Craigh Alexander Morgan": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -489,7 +492,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Erick Hernandez Hernandez": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Michael Neal Nix": [
     {"e":"2025-north-america-wcq"}
@@ -548,13 +552,13 @@
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Jackson R.": {
-    "as": "Jackson Dillon Rauch"
+  "Ilijan P.": {
+    "as": "Ilijan Paurevic"
   },
   "Zachary O.": {
     "as": "Zachary Vincent Owens"
   },
-  "Ilijan P.": {
-    "as": "Ilijan Paurevic"
+  "Jackson R.": {
+    "as": "Jackson Dillon Rauch"
   }
 }

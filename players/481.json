@@ -173,7 +173,8 @@
   "Brian Leonardo Cortes": [
     {"e":"201711-san-diego-ca"},
     {"e":"2019-ycs-pasadena"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Dustin Anthony Tesso": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
@@ -324,6 +325,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Phillip Darien Hammond Jr": [

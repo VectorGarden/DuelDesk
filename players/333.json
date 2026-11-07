@@ -215,6 +215,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Josue Abdul Ortega Gonzalez": [
@@ -365,7 +367,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gatlin Ronald Joseph Woodworth": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -421,7 +424,9 @@
   ],
   "Matthew Brian Richardson": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joseph Anthony Ellison Davert": [
     {"e":"2025-02-ycs-orlando"}
@@ -446,7 +451,8 @@
   ],
   "Luksa Plenkovic": [
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "William Antonio Lopez": [
     {"e":"2025-10-ycs-anaheim"}
@@ -482,6 +488,9 @@
   ],
   "Rodrigo Camargo": [
     {"e":"2026-central-america-genesys-championship","f":"Genesys"}
+  ],
+  "Jacob Robert Lamparella": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Carlos Manuel Ramirez Guevara": [
     {"e":"uds-2016-elsalvador"}

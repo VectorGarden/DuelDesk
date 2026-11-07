@@ -306,7 +306,8 @@
   ],
   "Gideon William Medina": [
     {"e":"2019-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Mike Tran": [
     {"e":"2019-north-america-wcq"},
@@ -600,7 +601,8 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Ivan Lawrence Reichle Heath": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Julian Teodoro Teodoro Norkowski": [
     {"e":"remote-duel-ycs-january-2026"}

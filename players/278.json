@@ -293,7 +293,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-north-america-wcq"},
     {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Angel Gasca-Aguilera": [
     {"e":"2017-ycs-atlanta"}
@@ -536,7 +537,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cesar Leonardo Peralez Tapia": [
     {"e":"2024-south-america-wcq"}
@@ -582,7 +585,8 @@
   ],
   "Kyle Andrew Davidson": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Armando De Jesus Alvarez Lopez": [
     {"e":"2025-team-ycs-san-salvador-el-salvador"},

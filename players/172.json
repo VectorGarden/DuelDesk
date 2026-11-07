@@ -366,6 +366,8 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Patrick Joseph Quinlan": [
@@ -530,7 +532,8 @@
   ],
   "Andrae James Allen": [
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lucas David Kelleher Fernandez": [
     {"e":"2025-05-ycs-providence"}
@@ -552,7 +555,8 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Rex Neist": [
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Kevin Williams Guevara Zamora": [
     {"e":"2025-north-america-wcq"},

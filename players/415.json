@@ -435,7 +435,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Michael Carl Dadaian": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -538,7 +540,8 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Lee Harrison Baker": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Javius S.": {
     "as": "Javius Jerfle Shorter"

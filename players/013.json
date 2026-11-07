@@ -320,7 +320,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jose Edwin Macias Lopez": [
     {"e":"2019-ycs-guadalajara"},
@@ -401,7 +403,8 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-04-team-ycs-las-vegas","deck":"HERO Evil HERO"}
+    {"e":"2026-04-team-ycs-las-vegas","deck":"HERO Evil HERO"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Benjamin Kenneth Mizic": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -461,7 +464,8 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Louis Cen": [
     {"e":"2023-ycs-vancouver"}
@@ -560,6 +564,9 @@
   "Jose Guadalupe Trujillo": [
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Efrain Triana Camejo": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nicolai H.": {
     "as": "Nicolai Mikhail Howlett"

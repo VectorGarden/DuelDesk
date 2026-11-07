@@ -32,7 +32,9 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2023-ycs-vancouver"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Juan Antonio Morales": [
     {"e":"2013-north-american-wcq"},
@@ -166,7 +168,8 @@
   "Benjamin Jacob Davis": [
     {"e":"2015-north-american-wcq"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cristhian Joel Gordillo Huiman": [
     {"e":"2015-south-american-wcq"},
@@ -443,7 +446,9 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Thomas Johnathan Dawes": [
     {"e":"2023-north-america-wcq"},
@@ -495,7 +500,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Lloyd Jane King": [
     {"e":"2024-ycs-indianapolis"},
@@ -505,7 +512,9 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Mark William Ascenzo": [
     {"e":"2024-ycs-indianapolis"},
@@ -562,7 +571,8 @@
     {"e":"2025-ycs-vancouver"}
   ],
   "Joseph Dwight Capozzi Jr.": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Vicente Gonzalez Gonzalez": [
     {"e":"2026-02-300th-na"}
@@ -584,6 +594,9 @@
   "Emiliano Ramos Jr.": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Felix Manuel Paniagua": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Angelica Jaralillo Hernandez": [
     {"e":"ycs-lima-peru-2023"}
   ],
@@ -593,17 +606,17 @@
   "Josue Guillen": {
     "as": "Josue A Guillen"
   },
-  "Javier R.": {
-    "as": "Javier Ruiz"
-  },
   "Kamran A.": {
     "as": "Kamran Aghaseyedali"
   },
-  "Kody M.": {
-    "as": "Kody Masataka Manabe"
-  },
   "Qamar S.": {
     "as": "Qamar Abbas Stationwala"
+  },
+  "Javier R.": {
+    "as": "Javier Ruiz"
+  },
+  "Kody M.": {
+    "as": "Kody Masataka Manabe"
   },
   "Emmanuel H.": {
     "as": "Emmanuel Eugene Hayes"

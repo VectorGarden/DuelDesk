@@ -172,6 +172,7 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022","cut":"Top 64","deck":"Despia Branded"}
   ],
   "Jose I. Sanchez": [
@@ -521,7 +522,9 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Magistus Dracotail"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Justin Christopher Rhinehart": [
     {"e":"2023-north-america-remote-duel-ycs"}
@@ -664,6 +667,9 @@
   ],
   "Luis Leonardo Calcina Huanqque": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Garrett Rhodes Marple": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Randy Dimas Ritchie": [
     {"e":"na-ygoc-2022"}

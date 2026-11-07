@@ -501,7 +501,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Thomas Neel Lynn Mills": [
     {"e":"2023-north-america-wcq"}
@@ -589,11 +590,13 @@
   "Mason William McKeand": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Armando Rafael Figueroa Santiago": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-05-ycs-providence"}
+    {"e":"2025-05-ycs-providence"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gage Alexander Davis": [
     {"e":"2025-02-ycs-orlando"}
@@ -653,15 +656,19 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Ulises Salinas": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
-  "Vishon B.": {
-    "as": "Vishon Sam Bhatia"
-  },
+  "Trever Scott Centeio": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Steve H.": {
     "as": "Steve Enrique Hernandez"
   },
   "Craig S.": {
     "as": "Craig Johnston Smith"
+  },
+  "Vishon B.": {
+    "as": "Vishon Sam Bhatia"
   }
 }

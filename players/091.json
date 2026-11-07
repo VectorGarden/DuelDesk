@@ -143,6 +143,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Antonio Marcellus Riley": [
@@ -424,7 +425,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Renato Israel GA Arauz Urdiales": [
     {"e":"2019-03-atlanta-ga"}
@@ -680,7 +682,15 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Lamarcus OBrien Adkins": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Alexander James Wyatt": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Jason Vikison Andre": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jose Javier Puello Cruz": [
     {"e":"remote-duel-ycs-february-2025"}

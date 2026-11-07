@@ -399,6 +399,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Job Gabino Gonzalez": [
@@ -453,7 +454,9 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gerardo Morales": [
     {"e":"2024-12-ycs-anaheim"}
@@ -515,5 +518,8 @@
   ],
   "Raymond Allen Gomez": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Nicholas Anthony Fabrizio": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ]
 }

@@ -429,7 +429,9 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Andrew Albano Diaz": [
     {"e":"2019-ycs-pasadena"}
@@ -623,7 +625,8 @@
     {"e":"2024-ycs-rio-de-janeiro-brazil"}
   ],
   "Benjamin Donald Adams Jr.": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Wolf Pack": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -675,10 +678,19 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Shixuan Shen": [
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Christopher Dominic Miles": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
+  ],
+  "Samuel Vernal Hill": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Luis Manuel Olivera": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Joseph Octavius Ward Jr.": [
     {"e":"na-ygoc-2022"}

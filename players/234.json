@@ -489,7 +489,9 @@
   ],
   "Jake Scott Yatsevich": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Michael Todd Nelson": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -569,6 +571,9 @@
   ],
   "Jonathan Jacob Guzman Guzman": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
+  ],
+  "Seth Ransom Barnes": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alvaro Alonso Astua Madrigal": [
     {"e":"remote-duel-ycs-january-2024","cut":"Top 16"}

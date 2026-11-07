@@ -560,7 +560,9 @@
   ],
   "Juliah Harold Capehart": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Tyler A. Tringale": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -585,6 +587,9 @@
   ],
   "Sean Thomas Crosby": [
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Elwin Alexander Castellanos": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Daniel Christian Vega Lazo": [
     {"e":"ycs-lima-peru-2023"}

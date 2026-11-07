@@ -247,7 +247,8 @@
   ],
   "James David Johnson": [
     {"e":"2022-ycs-charlotte"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gustavo Adolfo Vicencio Villareal": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -417,7 +418,8 @@
   ],
   "Kadin Rayan Karim": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jaime Serrato Contreras": [
     {"e":"2026-02-300th-na"}
@@ -436,6 +438,9 @@
   ],
   "Tukker James Weiler": [
     {"e":"2026-north-america-wcq"}
+  ],
+  "Richard Max Ross III": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luis Jose Parra Contreras": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}

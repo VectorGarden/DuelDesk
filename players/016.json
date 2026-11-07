@@ -223,7 +223,8 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-ycs-knoxville"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Chelsey Nicole Dielzel": [
     {"e":"2017-ycs-pittsburgh"},
@@ -280,7 +281,8 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
     {"e":"2026-central-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Erick Fabricio Ramirez Salazar": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
@@ -580,6 +582,9 @@
   "Misty Martins Martins": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Tyce Caleb Patterson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Gustavo Oswaldo Ortiz Ibarra": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -590,10 +595,10 @@
   "Nilton Jair Coronel Chirinos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Sihao C.": {
-    "as": "Sihao Chen"
-  },
   "Justin C.": {
     "as": "Justin Marlo Capito Cervantes"
+  },
+  "Sihao C.": {
+    "as": "Sihao Chen"
   }
 }

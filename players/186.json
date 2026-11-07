@@ -248,7 +248,8 @@
     {"e":"na-ygoc-2022"}
   ],
   "Christopher Brandon Cook": [
-    {"e":"2019-03-atlanta-ga"}
+    {"e":"2019-03-atlanta-ga"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jorge Luis Pinela": [
     {"e":"2019-03-atlanta-ga"}
@@ -484,7 +485,9 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jonathan Michael Mertz": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -519,7 +522,9 @@
   ],
   "Landin Duane Gillman": [
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Kyle David Egerdahl": [
     {"e":"2026-north-america-wcq"}
@@ -543,13 +548,13 @@
   "Fernando F.": {
     "as": "Fernando Maciel Ferreira"
   },
+  "Alejandro H.": {
+    "as": "Alejandro Hernandez"
+  },
   "Junlong W.": {
     "as": "Junlong Wu"
   },
   "Joseph V.": {
     "as": "Joseph Michael Vianello"
-  },
-  "Alejandro H.": {
-    "as": "Alejandro Hernandez"
   }
 }

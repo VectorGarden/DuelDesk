@@ -105,7 +105,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Austin Gregory Nichols": [
     {"e":"2015-150th-ycs-in-columbus"},
@@ -203,6 +204,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Cody A. Goodman": [
@@ -371,7 +373,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Keanu Nathaniel Shemar Singh": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
@@ -481,7 +484,8 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-12-rdycs-na"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brandon Lee Cochran": [
     {"e":"2023-ycs-indianapolis"},
@@ -543,7 +547,8 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Anthony Michael Fitzwilliam": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -628,19 +633,22 @@
   "Edwin Adonay Zavala Rodriguez": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
+  "Francisco Javier August Cruz": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Yarim Alberto Vargas Flores": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Luis Angel Huillcaya Luyo": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Weijian F.": {
-    "as": "Weijian Fang"
+  "Derek M.": {
+    "as": "Derek Charles Mead"
   },
   "Samuel Y.": {
     "as": "Samuel Siwon You"
   },
-  "Derek M.": {
-    "as": "Derek Charles Mead"
+  "Weijian F.": {
+    "as": "Weijian Fang"
   }
 }

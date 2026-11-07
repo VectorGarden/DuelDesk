@@ -278,7 +278,8 @@
     {"e":"2018-ycs-salt-lake-city"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-03-team-ycs-las-vegas"},
-    {"e":"2026-04-team-ycs-las-vegas"}
+    {"e":"2026-04-team-ycs-las-vegas"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alberto Mauricio Araya Salgado": [
     {"e":"2018-ycs-santiago-chile"}
@@ -488,7 +489,8 @@
   ],
   "Dylon Andreas Williams": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Hector Hugo Beltran": [
     {"e":"2025-04-ycs-houston"},
@@ -506,7 +508,9 @@
   "Chrystian Jae Vincent Kam": [
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Adriano Vasconcelos": [
     {"e":"2025-12-rdycs-na"},
@@ -561,7 +565,8 @@
   ],
   "Christian Jonathan Boksa": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Miguel Ernesto Guadarrama": [
     {"e":"2026-central-america-wcq"}
@@ -581,13 +586,13 @@
   "Ariel C.": {
     "as": "Ariel Trigoli Dias Canto"
   },
-  "Travis U.": {
-    "as": "Travis David Ulsh"
+  "Isaac O.": {
+    "as": "Isaac Ryan Olson"
   },
   "Adam F.": {
     "as": "Adam P. Faulk"
   },
-  "Isaac O.": {
-    "as": "Isaac Ryan Olson"
+  "Travis U.": {
+    "as": "Travis David Ulsh"
   }
 }

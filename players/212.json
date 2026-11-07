@@ -228,6 +228,7 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joshua James Semeniuk": [
@@ -359,7 +360,8 @@
     {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event","cut":"Top 8","deck":"Kashtira"},
     {"e":"2024-11-north-america-remote-duel-ycs"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2025-12-rdycs-na"}
+    {"e":"2025-12-rdycs-na"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Samuel Stuart": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
@@ -544,7 +546,9 @@
   "Ryan Richard Bielefeld": [
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Agustin Alejandro del Rosario Piccoli": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -569,7 +573,8 @@
     {"e":"2025-ycs-vancouver"}
   ],
   "Miguel Sebastion Obregon Jimenez": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Drew Allen Hoffmeyer": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -601,7 +606,8 @@
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Eric Nathan Roth": [
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Lorenzo Salvatore Roma": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Italy"}

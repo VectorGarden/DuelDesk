@@ -104,7 +104,9 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Tyler Christian Ohlenforst": [
     {"e":"2015-ycs-charleston"},
@@ -154,6 +156,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jeremy Taeron Mitchell": [
@@ -516,7 +519,8 @@
     {"e":"2023-north-america-wcq"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "le-64-trahit-pas": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -625,7 +629,8 @@
   ],
   "Carl Ryan Eby": [
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cesar Daniel Linares Mier": [
     {"e":"2026-central-america-genesys-championship","f":"Genesys"},
@@ -643,37 +648,43 @@
   "Álvaro Jansser Silva": [
     {"e":"2026-south-america-wcq"}
   ],
+  "Christopher Donovan June Reese": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Craig Wellington Sherman": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Pedro David Cordero Baez": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Kevin Leo Hinostroza Munoz": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Fabio S.": {
-    "as": "Fabio Henrique Andrade Silva"
-  },
   "Caique F.": {
     "as": "Caique Souza Ferreira"
   },
-  "Russell C.": {
-    "as": "Russell Foster Chizek"
-  },
-  "Justin S.": {
-    "as": "Justin Andrew Singh"
-  },
-  "Evan B.": {
-    "as": "Evan Matthew Burlaga"
+  "Fabio S.": {
+    "as": "Fabio Henrique Andrade Silva"
   },
   "Daniel P.": {
     "as": "Daniel Palacios"
   },
+  "Russell C.": {
+    "as": "Russell Foster Chizek"
+  },
+  "Evan B.": {
+    "as": "Evan Matthew Burlaga"
+  },
+  "Justin S.": {
+    "as": "Justin Andrew Singh"
+  },
   "Bradd C.": {
     "as": "Bradd Richard Cyr"
   },
-  "Alan D.": {
-    "as": "Alan Evan Dale"
-  },
   "Jacob S.": {
     "as": "Jacob Douglas Selle"
+  },
+  "Alan D.": {
+    "as": "Alan Evan Dale"
   }
 }

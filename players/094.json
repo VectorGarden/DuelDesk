@@ -395,7 +395,8 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq","cut":"Top 64","deck":"Bystial @Ignister Maliss"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sharda Lalbahadur": [
     {"e":"2023-05-ycs-philadelphia"},
@@ -415,7 +416,9 @@
   "Lennard Joakim Klein": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "rRamon Torres Ramirez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"}
@@ -505,7 +508,8 @@
     {"e":"2025-central-america-wcq"}
   ],
   "Iain Jacob DeHaan": [
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Miguel Exequiel Reartes": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -528,7 +532,9 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Xinwei Liu": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -562,7 +568,9 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Noah Algernon Greer": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Pedro Juan Sighinolfi Villegas": [
     {"e":"remote-duel-ycs-february-2025"}
@@ -573,10 +581,10 @@
   "Fernando M.": {
     "as": "Fernando Massahiro Alves Murata"
   },
-  "Angel R.": {
-    "as": "Angel Rodriguez-Cruz"
-  },
   "Jamal J.": {
     "as": "Jamal James"
+  },
+  "Angel R.": {
+    "as": "Angel Rodriguez-Cruz"
   }
 }

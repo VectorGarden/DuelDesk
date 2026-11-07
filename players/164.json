@@ -158,6 +158,8 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Dudley Canter Riner": [
@@ -315,6 +317,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Andrés Eduardo Salvador Ortiz": [
@@ -429,7 +433,8 @@
   "Antonio Francisco Lopez Posso": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2025-ycs-lima-peru"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cyrus Montgomery Strayhorne": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -448,7 +453,8 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Azamina Mitsurugi","cut":"Top 4"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-08-quebec","f":"Advanced"}
+    {"e":"2026-08-quebec","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Henry Bernard Gremillion": [
     {"e":"2023-north-america-wcq"},
@@ -458,7 +464,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jerome Orlando Carter": [
     {"e":"2023-north-america-wcq"},
@@ -523,7 +530,8 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Olive Eloise Gaede": [
     {"e":"2024-north-america-wcq"}
@@ -548,7 +556,8 @@
     {"e":"2025-02-ycs-orlando"}
   ],
   "Mikael Gabriel Riembeuer": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Two G’s and a Li": [
     {"e":"2025-03-team-ycs-las-vegas"}

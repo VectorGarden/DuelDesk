@@ -39,7 +39,8 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-remote-duel-ycs"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Thomas Steven Westad": [
     {"e":"2014-north-american-wcq"},
@@ -563,7 +564,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Juan Pablo Madrid Ramirez": [
     {"e":"2024-ycs-medellin-colombia"}
@@ -627,6 +629,9 @@
   "Christian Alfonso Romero Munoz": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
+  "Yumeki Inaba": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Daniel De Meza": [
     {"e":"na-ygoc-2022"}
   ],
@@ -639,11 +644,11 @@
   "MAteus O.": {
     "as": "MAteus Takes Okasaki"
   },
-  "Zachary M.": {
-    "as": "Zachary Michael Moede"
-  },
   "Ruben S.": {
     "as": "Ruben June Salazar"
+  },
+  "Zachary M.": {
+    "as": "Zachary Michael Moede"
   },
   "Thomas W.": {
     "as": "Thomas John Williams"

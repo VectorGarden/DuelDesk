@@ -243,7 +243,9 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ernest Joshua Damian": [
     {"e":"2016-ycs-houston-texas"},
@@ -544,7 +546,8 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Diego Rodriguez del Valle": [
     {"e":"2024-ycs-medellin-colombia","cut":"Top 16"}
@@ -559,7 +562,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Tyler Matthew Johnson": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nathan James Stronkowsky": [
     {"e":"2025-05-ycs-providence"},
@@ -600,19 +604,22 @@
   "Christian Alexander Duharte": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Gabriel Thomas Ravinet": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Hugo Eduardo Cervantes Posadas": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Dzung Q.": {
-    "as": "Dzung Phan Quach"
-  },
   "Rennick B.": {
     "as": "Rennick Jeffers Bruno"
   },
-  "Dev K.": {
-    "as": "Dev Kapur"
+  "Dzung Q.": {
+    "as": "Dzung Phan Quach"
   },
   "Delanie F.": {
     "as": "Delanie Desdemona Freeze"
+  },
+  "Dev K.": {
+    "as": "Dev Kapur"
   }
 }

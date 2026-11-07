@@ -520,16 +520,19 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Sean Terrance Barbier": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Alex David Stanger": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-12-rdycs-na"}
+    {"e":"2025-12-rdycs-na"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Gavin Tysen Underwood": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Baiknam Brian Kim": [
     {"e":"2025-10-ycs-anaheim"}
@@ -565,7 +568,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Kathryn Elizabeth Gill": [
-    {"e":"2026-02-300th-na","f":"Genesys","deck":"Blue-Eyes"}
+    {"e":"2026-02-300th-na","f":"Genesys","deck":"Blue-Eyes"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Cesar Octavio de Jesus Jauregui": [
     {"e":"2026-02-300th-na"}
@@ -606,13 +610,13 @@
   "Yang V.": {
     "as": "Yang Vang"
   },
-  "Sean R.": {
-    "as": "Sean Austin Royster"
-  },
   "Xinwei T.": {
     "as": "Xinwei Tang"
   },
   "Tyler E.": {
     "as": "Tyler Makoto Endo"
+  },
+  "Sean R.": {
+    "as": "Sean Austin Royster"
   }
 }

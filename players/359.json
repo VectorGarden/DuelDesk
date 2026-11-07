@@ -411,6 +411,7 @@
     {"e":"2026-02-300th-na"},
     {"e":"2026-central-america-wcq"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -537,7 +538,8 @@
   ],
   "Devon Zachary Westphal": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Kim I borrow that?": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -607,17 +609,17 @@
   "Lucas T.": {
     "as": "Lucas Cardoso Toniol"
   },
-  "Raul M.": {
-    "as": "Raul Machuca"
-  },
-  "Zackary W.": {
-    "as": "Zackary Jacob Wilkinson"
+  "Logan J.": {
+    "as": "Logan Patrick Johnson"
   },
   "Delbert F.": {
     "as": "Delbert Lee Feltenberger"
   },
-  "Logan J.": {
-    "as": "Logan Patrick Johnson"
+  "Zackary W.": {
+    "as": "Zackary Jacob Wilkinson"
+  },
+  "Raul M.": {
+    "as": "Raul Machuca"
   },
   "Andre C.": {
     "as": "Andre Hou Gin Chan"

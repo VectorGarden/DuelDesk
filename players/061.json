@@ -532,7 +532,8 @@
   "Dwayne ONeal Worrell": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Christopher Anthony Cardullo": [
     {"e":"2024-ycs-raleigh"}
@@ -550,7 +551,8 @@
   ],
   "Brandon Alicea": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-11-ycs-pittsburgh-pa"}
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Zhen Hao VACAYSHON: Lee": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -610,6 +612,12 @@
   ],
   "Jose Gabriel Medina Pedraza": [
     {"e":"2026-ycs-cartagena-colombia"}
+  ],
+  "Ansel Cortez Reyes": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Bryan Vincent Veith": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brandon Alexis Carrera Pina": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

@@ -151,7 +151,8 @@
     {"e":"2025-03-team-ycs-las-vegas","cut":"Top 4","deck":"Ryzeal"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Nicholas Gunnar Sundstrom": [
     {"e":"2016-north-american-wcq"},
@@ -481,10 +482,10 @@
   "Shawn A.": {
     "as": "Shawn Gregory Amirfar"
   },
-  "Jeffrey N.": {
-    "as": "Jeffrey Ngoc Nguyen"
-  },
   "Maximillian R.": {
     "as": "Maximillian John Edward Reynolds"
+  },
+  "Jeffrey N.": {
+    "as": "Jeffrey Ngoc Nguyen"
   }
 }

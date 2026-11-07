@@ -167,6 +167,7 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-central-america-wcq"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022","cut":"Top 16"},
     {"e":"uds-2016-elsalvador","cut":"Top 8","deck":"Dark Magician"}
   ],
@@ -218,7 +219,8 @@
     {"e":"2025-ycs-merida-mexico"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Guillermo Alferdo Lopez": [
     {"e":"2016-ycs-houston-texas"}
@@ -324,7 +326,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ty Garrette Thibodeaux": [
     {"e":"2018-ycs-memphis"}
@@ -583,6 +586,9 @@
   ],
   "Ethan Alexander Beechboard": [
     {"e":"2026-ycs-houston","f":"Advanced"}
+  ],
+  "Stefano Guillermo Mignone": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jose Alberto Moran Moreno": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

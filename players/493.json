@@ -362,7 +362,8 @@
   "Preston Jerald Waalen": [
     {"e":"2022-ycs-minneapolis"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Advanced"}
+    {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ross Petersen Bruening": [
     {"e":"2022-ycs-minneapolis"},
@@ -387,6 +388,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Fidencio Emilio Vazquez Veta": [
@@ -441,7 +443,9 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Aguirre – Gomez – Garcia": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -558,6 +562,12 @@
   "Jose Diego Carrizales": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Ramon Alejandro Groero Torrez": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Curt Allen Avery": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Cruz Alonso Sandoval Leon": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -567,13 +577,13 @@
   "Israel Tonatiuh Flores Hernandez": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
+  "Tristan F.": {
+    "as": "Tristan Aric Franz"
+  },
   "Rennard W.": {
     "as": "Rennard Renfred Whitehead"
   },
   "Zhen L.": {
     "as": "Zhen Hao Lee"
-  },
-  "Tristan F.": {
-    "as": "Tristan Aric Franz"
   }
 }

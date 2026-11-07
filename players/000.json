@@ -36,6 +36,7 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Joshua A. Brownmiller": [
@@ -537,7 +538,8 @@
     {"e":"2024-ycs-raleigh"}
   ],
   "Daniel Anderson Kincheloe": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brandon Kazuo Fukushima": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -607,11 +609,11 @@
   "Raul E.": {
     "as": "Raul Barbosa Eluan"
   },
-  "Colton A.": {
-    "as": "Colton Blane Anderson"
-  },
   "Emmanuel A.": {
     "as": "Emmanuel Lulseged Abate"
+  },
+  "Colton A.": {
+    "as": "Colton Blane Anderson"
   },
   "Kevin K.": {
     "as": "Kevin H. Kim"

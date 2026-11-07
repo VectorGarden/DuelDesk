@@ -143,6 +143,7 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Steven Joshua Wind": [
@@ -486,7 +487,8 @@
   ],
   "Anthony Robert Holsonback": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-north-america-wcq"}
+    {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jesse Miguel VACAYSHON: Wood": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -556,16 +558,16 @@
   "Leonardo B.": {
     "as": "Leonardo Luan Barbosa Bitterncourt"
   },
-  "Gauge B.": {
-    "as": "Gauge Brand Baxter"
-  },
   "Bradul O.": {
     "as": "Bradul Antonyo Ortiz"
   },
-  "Mikaylah K.": {
-    "as": "Mikaylah Anne Krebbs"
+  "Gauge B.": {
+    "as": "Gauge Brand Baxter"
   },
   "Alexander A.": {
     "as": "Alexander Joshua Aviles"
+  },
+  "Mikaylah K.": {
+    "as": "Mikaylah Anne Krebbs"
   }
 }

@@ -445,6 +445,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Edgar GA Gonzalez": [
@@ -725,7 +726,9 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matthew N. Nelson": [
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Josue Gutierrez Valencia": [
     {"e":"remote-duel-ycs-january-2026"}
@@ -733,14 +736,14 @@
   "Jose Abraham Ochoa Garcia": [
     {"e":"wcq-2016-mexico"}
   ],
+  "Orlando Q.": {
+    "as": "Orlando Lawrence Quevedo"
+  },
   "Gary S.": {
     "as": "Gary Fidel Sanchez"
   },
   "Charles C.": {
     "as": "Charles Hunter Cramer"
-  },
-  "Orlando Q.": {
-    "as": "Orlando Lawrence Quevedo"
   },
   "Eric D.": {
     "as": "Eric Diaz"

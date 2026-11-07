@@ -63,6 +63,8 @@
     {"e":"2025-ycs-mexico-city-mexico","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Pedro Eddye Parreno": [
@@ -231,7 +233,8 @@
     {"e":"2022-ycs-charlotte"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-north-america-wcq"},
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Brenda Natali Baez Villa": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
@@ -492,7 +495,9 @@
   ],
   "Codey Jonathan Robert Seavey": [
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Daniel Conti Contreras": [
     {"e":"2025-central-america-wcq"}
@@ -525,13 +530,16 @@
   "Zachary Aiden Conley": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Adis Muhamedagic": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Eldlich"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "José Miguel López Castillo": [
     {"e":"2026-02-300th-na"}
@@ -561,17 +569,17 @@
   "Murilo T.": {
     "as": "Murilo Ranzani Trivella"
   },
-  "Chimmey N.": {
-    "as": "Chimmey Nguyen"
-  },
   "William J.": {
     "as": "William Donald Johnson"
   },
-  "Dominic W.": {
-    "as": "Dominic Lee Whalawitsa"
+  "Chimmey N.": {
+    "as": "Chimmey Nguyen"
   },
   "Alexander R.": {
     "as": "Alexander Rey Roman"
+  },
+  "Dominic W.": {
+    "as": "Dominic Lee Whalawitsa"
   },
   "Matthew F.": {
     "as": "Matthew Arden Fox"

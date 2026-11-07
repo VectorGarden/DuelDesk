@@ -115,6 +115,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Jared Alexander Collier": [
@@ -392,7 +393,8 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Raphael Garcia Torres": [
     {"e":"2019-ycs-ft-worth"}
@@ -470,6 +472,8 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
   "Miguel Angel Cabrera Suarez": [
@@ -622,7 +626,9 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"}
+    {"e":"2026-ycs-houston","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Ronald Fabian Porras Alpizar": [
     {"e":"2024-team-ycs-san-jose-costa-rica"}
@@ -667,7 +673,8 @@
     {"e":"2025-04-ycs-houston"}
   ],
   "Nicholas Fedja Crew": [
-    {"e":"2025-10-ycs-anaheim"}
+    {"e":"2025-10-ycs-anaheim"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Tyler James Murray": [
     {"e":"2025-12-rdycs-na"}
@@ -728,22 +735,25 @@
   "Kevin Allen Velasco": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
+  "Anthony LaParham McGee": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "She Wei Hao": [
     {"e":"wcs-2010","deck":"Frog Monarch"}
   ],
-  "Brandon T.": {
-    "as": "Brandon Ray Tominez"
-  },
   "Landon O.": {
     "as": "Landon Edward Oliver"
   },
   "Chuong N.": {
     "as": "Chuong Nguyen"
   },
-  "Ryan A.": {
-    "as": "Ryan Lee Alpert"
+  "Brandon T.": {
+    "as": "Brandon Ray Tominez"
   },
   "Timofeh K.": {
     "as": "Timofeh Nikolai Kerianoff"
+  },
+  "Ryan A.": {
+    "as": "Ryan Lee Alpert"
   }
 }
