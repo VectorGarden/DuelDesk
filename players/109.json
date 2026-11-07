@@ -439,7 +439,8 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-ycs-cartagena-colombia"}
+    {"e":"2026-ycs-cartagena-colombia"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Henry Adolphus Davis": [
     {"e":"2024-ycs-raleigh"}
@@ -523,11 +524,11 @@
   "Long V.": {
     "as": "Long Ngoc Vu"
   },
-  "Calvin C.": {
-    "as": "Calvin Tam Chow"
-  },
   "Scott A.": {
     "as": "Scott Christian Adiconis"
+  },
+  "Calvin C.": {
+    "as": "Calvin Tam Chow"
   },
   "Elliot H.": {
     "as": "Elliot Arthur Horowitz"

@@ -554,7 +554,8 @@
     {"e":"2024-team-ycs-san-jose-costa-rica"}
   ],
   "Aidan Howard Murray": [
-    {"e":"2024-ycs-indianapolis"}
+    {"e":"2024-ycs-indianapolis"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Shakur Lee Morion Nu": [
     {"e":"2024-ycs-raleigh"}
@@ -624,11 +625,11 @@
   "Omar Andre Cordova Cordova": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Joseph A.": {
-    "as": "Joseph Inocensio Nunez Alemania"
-  },
   "Vladis B.": {
     "as": "Vladis Baranovskis"
+  },
+  "Joseph A.": {
+    "as": "Joseph Inocensio Nunez Alemania"
   },
   "Samuel F.": {
     "as": "Samuel Robert Fisher"

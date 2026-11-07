@@ -140,7 +140,8 @@
   ],
   "Erick Frank Gonzalez": [
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
-    {"e":"2018-ycs-atlanta"}
+    {"e":"2018-ycs-atlanta"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Joshua Adam Missiha": [
     {"e":"2017-north-american-wcq"},
@@ -521,7 +522,8 @@
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
   "Eduardo Rios Diaz": [
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Travis Mitchell Maclaury": [
     {"e":"2026-02-300th-na","f":"Advanced"}
@@ -576,10 +578,10 @@
   "Kristopher Patrick Stewart": {
     "as": "Kristopher J Patrick Stewart"
   },
-  "Joshua F.": {
-    "as": "Joshua Chad Forbis"
-  },
   "Duane G.": {
     "as": "Duane Lamont Graves"
+  },
+  "Joshua F.": {
+    "as": "Joshua Chad Forbis"
   }
 }

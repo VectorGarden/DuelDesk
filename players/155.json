@@ -323,7 +323,8 @@
     {"e":"na-ygoc-2022"}
   ],
   "William Francisco Garcia": [
-    {"e":"2022-11-ycs-pasadena"}
+    {"e":"2022-11-ycs-pasadena"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Luke Dylan Ormsby": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -501,10 +502,10 @@
   "Tsun-Yu Hsiao": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Taiwan"}
   ],
-  "Zackary F.": {
-    "as": "Zackary Dean Felix"
-  },
   "Tri C.": {
     "as": "Tri Wynn Cao"
+  },
+  "Zackary F.": {
+    "as": "Zackary Dean Felix"
   }
 }

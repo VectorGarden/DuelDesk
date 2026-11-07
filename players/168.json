@@ -78,6 +78,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia","won":true,"cut":"Final"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-houston","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 32"},
     {"e":"ycs-lima-peru-2023"},
@@ -316,6 +317,7 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-ycs-niagara-falls"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Michael Rodriguez": [

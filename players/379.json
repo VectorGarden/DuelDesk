@@ -624,7 +624,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Wardell Alex Vega": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ryan Joseph Larson": [
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -734,11 +735,11 @@
   "Kenny Eduardo Ayala Alhuay": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Saul A.": {
-    "as": "Saul Agis"
-  },
   "German M.": {
     "as": "German Hoover Dakari Morales"
+  },
+  "Saul A.": {
+    "as": "Saul Agis"
   },
   "George B.": {
     "as": "George Daniel Babamirza"

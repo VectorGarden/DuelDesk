@@ -540,7 +540,8 @@
   "Michael Anthony Calo": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
+    {"e":"2026-05-ycs-columbus","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Ahrianna Lynn Wine": [
     {"e":"2025-02-ycs-orlando"}
@@ -647,11 +648,11 @@
   "Rhuan M.": {
     "as": "Rhuan Pablo Mineiro"
   },
-  "Gavin B.": {
-    "as": "Gavin Christopher Brosowske"
-  },
   "Kagan B.": {
     "as": "Kagan Michael Bragg"
+  },
+  "Gavin B.": {
+    "as": "Gavin Christopher Brosowske"
   },
   "Esgar P.": {
     "as": "Esgar Perez"

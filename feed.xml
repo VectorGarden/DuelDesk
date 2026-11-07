@@ -6,9 +6,64 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Nov 2026 15:40:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 19:07:49 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Orlando: Round 4 Pairings (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-4-pairings-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-4-pairings-advanced/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 19:07:49 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 3 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-3-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-3-advanced/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 18:56:14 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Round 3 Pairings (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-3-pairings-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-3-pairings-advanced/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 18:04:30 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 2 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-2-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-2-advanced/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 18:01:26 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Round 2 Pairings (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-2-pairings-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-2-pairings-advanced/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 16:38:14 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Orlando: Round 1 Pairings (Advanced)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-1-pairings-advanced/</link>
@@ -3202,61 +3257,6 @@
       <category domain="event">2026-08-quebec</category>
       <pubDate>Sun, 16 Aug 2026 16:54:23 +0000</pubDate>
       <description>News from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Round 12 Pairings (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-12-pairings-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-12-pairings-advanced-format/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 16:48:35 +0000</pubDate>
-      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Standings After Round 11 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-11-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-11-advanced-format/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 16:46:47 +0000</pubDate>
-      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Top Tables Update: Round 11 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-top-tables-update-round-11-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-top-tables-update-round-11-genesys-format/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 16:45:25 +0000</pubDate>
-      <description>News from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Round 11 Pairings (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-11-pairings-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-round-11-pairings-genesys-format/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 16:37:22 +0000</pubDate>
-      <description>Pairings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Standings After Round 10 (Genesys Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-10-genesys-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/ycs-montreal-standings-after-round-10-genesys-format/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 16:35:42 +0000</pubDate>
-      <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

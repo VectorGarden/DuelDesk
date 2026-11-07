@@ -558,7 +558,8 @@
     {"e":"2025-05-ycs-providence"}
   ],
   "Gavin Ramon Frater": [
-    {"e":"2025-02-ycs-orlando"}
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Democracy Manifest": [
     {"e":"2025-03-team-ycs-las-vegas"}
@@ -626,11 +627,11 @@
   "Irving Luis Nava Ocampo": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Amber B.": {
-    "as": "Amber Elaine Ann Brown"
-  },
   "Jarvanta D.": {
     "as": "Jarvanta Dorsey"
+  },
+  "Amber B.": {
+    "as": "Amber Elaine Ann Brown"
   },
   "Duncan T.": {
     "as": "Duncan Henry Tucker"

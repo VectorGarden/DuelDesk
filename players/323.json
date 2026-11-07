@@ -268,6 +268,7 @@
     {"e":"2025-04-ycs-houston"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "Arthur Daniel Perez": [
@@ -588,10 +589,10 @@
   "Salvador N.": {
     "as": "Salvador Angel September Navarro"
   },
-  "Caleb B.": {
-    "as": "Caleb James Becker"
-  },
   "Mikel L.": {
     "as": "Mikel DeAndre Luster"
+  },
+  "Caleb B.": {
+    "as": "Caleb James Becker"
   }
 }

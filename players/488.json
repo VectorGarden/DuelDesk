@@ -420,7 +420,8 @@
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2025-north-america-wcq"}
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Chen Wu": [
     {"e":"2022-ycs-niagara-falls"}
@@ -679,20 +680,23 @@
   "Gabriel Pedraza Tey": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
+  "Alexander Elder Guizado Polanco": [
+    {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
   "Domar Cervantes Cepeda": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Rodrigo Togores": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
-  "Jongwon L.": {
-    "as": "Jongwon John Lee"
+  "Adam N.": {
+    "as": "Adam Zaid Sameer Najarbashi"
   },
   "Jesse B.": {
     "as": "Jesse Calvin Boyer"
   },
-  "Adam N.": {
-    "as": "Adam Zaid Sameer Najarbashi"
+  "Jongwon L.": {
+    "as": "Jongwon John Lee"
   },
   "Brenden W.": {
     "as": "Brenden Christin Alexander Whittier"

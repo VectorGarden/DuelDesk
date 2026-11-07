@@ -35,6 +35,7 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
   "John D. Bredehoeft": [
@@ -650,11 +651,11 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Marcelo B.": {
-    "as": "Marcelo Bruno"
-  },
   "Samuel A.": {
     "as": "Samuel Arone Crescini Ramos Amaro"
+  },
+  "Marcelo B.": {
+    "as": "Marcelo Bruno"
   },
   "Sean N.": {
     "as": "Sean Neon Nguyen"
