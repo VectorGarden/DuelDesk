@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Duel Desk — YCS Orlando</title>
+    <title>Duel Desk — YCS Houston</title>
     <link>https://dueldesk.reizu.dev/</link>
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Nov 2026 19:07:49 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 23:40:26 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Houston: Top Tables Update: Round 7 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-7-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-7-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 07 Nov 2026 23:40:26 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Top Tables Update: Round 6 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 07 Nov 2026 23:19:39 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Houston: Top Tables Update: Round 5 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-5-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-5-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-houston</category>
+      <pubDate>Sat, 07 Nov 2026 21:40:24 +0000</pubDate>
+      <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Orlando: Round 4 Pairings (Advanced)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-4-pairings-advanced/</link>
@@ -3224,39 +3257,6 @@
       <category domain="event">2026-08-quebec</category>
       <pubDate>Sun, 16 Aug 2026 17:47:59 +0000</pubDate>
       <description>Standings from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Advanced Format Round 11 Feature Match: Jacob Vincent vs. Neil Penafiel</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/advanced-format-round-11-feature-match-jacob-vincent-vs-neil-penafiel/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-format-round-11-feature-match-jacob-vincent-vs-neil-penafiel/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 17:40:16 +0000</pubDate>
-      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Genesys Format Round 10 Feature Match: Isaac Kritz vs. Mackey Chung</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/genesys-format-round-10-feature-match-isaac-kritz-vs-mackey-chung/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-format-round-10-feature-match-isaac-kritz-vs-mackey-chung/</guid>
-      <category>Feature match</category>
-      <category domain="kind">feature</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 17:06:09 +0000</pubDate>
-      <description>Feature match from YCS Montréal, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Montréal: Top Tables Update: Round 12 (Advanced Format)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-montreal-top-tables-update-round-12-advanced-format/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-montreal-top-tables-update-round-12-advanced-format/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-08-quebec</category>
-      <pubDate>Sun, 16 Aug 2026 16:54:23 +0000</pubDate>
-      <description>News from YCS Montréal, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

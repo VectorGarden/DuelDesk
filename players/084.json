@@ -569,14 +569,11 @@
   "Murilo T.": {
     "as": "Murilo Ranzani Trivella"
   },
-  "William J.": {
-    "as": "William Donald Johnson"
-  },
   "Chimmey N.": {
     "as": "Chimmey Nguyen"
   },
-  "Vincent P.": {
-    "as": "Vincent Quoc Pham"
+  "William J.": {
+    "as": "William Donald Johnson"
   },
   "Alexander R.": {
     "as": "Alexander Rey Roman"
@@ -586,5 +583,8 @@
   },
   "Dominic W.": {
     "as": "Dominic Lee Whalawitsa"
+  },
+  "Vincent P.": {
+    "as": "Vincent Quoc Pham"
   }
 }
