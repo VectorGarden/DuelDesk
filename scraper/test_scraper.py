@@ -9334,7 +9334,7 @@ class TestARejectedEventIsRemembered(unittest.TestCase):
                 cut[0]["pairings"] = cut[0]["pairings"][:3]
             return (event, [], {}, [])
 
-        def plan(entries, done, backfill, rebuild=0, behind=frozenset(), read=None):
+        def plan(entries, done, backfill, rebuild=0, behind=frozenset(), read=None, names=None):
             return [(s, [{"kind": "pairings"}], f"2026-0{i}-01")
                     for i, s in enumerate(("e1", "e2", "e3"), start=1) if s not in done]
 
@@ -10799,3 +10799,299 @@ class TestWhenTheBlogIsDown(unittest.TestCase):
             self.fail("a bug was read as an outage")
         except TypeError:
             pass
+
+
+class TestATableBelongsToWhoeverPlayedIt(unittest.TestCase):
+    """Two posts for one round, and the one whose Duelists played this event.
+
+    Konami published nine of YCS Orlando's posts in November 2026 from YCS
+    Houston's template, titles and slugs and all. Six were Genesys standings,
+    so each of Houston's rounds 2 to 7 had two: its own from October, and
+    Orlando's, which won for holding 452 Duelists to Houston's 316.
+    """
+
+    HOUSTON = [f"Houston Player {i}" for i in range(12)]
+    ORLANDO = [f"Orlando Player {i}" for i in range(20)]
+
+    def source(self, kind, rnd, names, url):
+        from build import Source
+        from parse import Post, Table
+        if kind == "pairings":
+            rows = [{"table": i + 1, "a": {"name": a}, "b": {"name": b}}
+                    for i, (a, b) in enumerate(zip(names[::2], names[1::2]))]
+        else:
+            rows = [{"name": n, "rank": i + 1, "points": 3} for i, n in enumerate(names)]
+        return Source(url=url, post=Post(title=f"{kind} {rnd}", kind=kind, fmt="Genesys",
+                                         round=rnd, table=Table(kind, [], rows)))
+
+    def standings_of(self, *extra, pairings=None):
+        from build import build_format
+        pairings = pairings or self.HOUSTON
+        fmt = build_format("Genesys", [
+            self.source("pairings", 1, pairings, "https://x/r1/"),
+            self.source("pairings", 2, pairings, "https://x/r2/"),
+            *extra])
+        r2 = next(r for r in fmt["rounds"] if r["label"] == "R2")
+        return {s["name"] for s in r2["standings"]}
+
+    def test_the_events_own_table_beats_a_fuller_one_from_elsewhere(self):
+        got = self.standings_of(
+            self.source("standings", 2, self.HOUSTON, "https://x/houston-r2-format/"),
+            self.source("standings", 2, self.ORLANDO, "https://x/houston-r2/"))
+        self.assertEqual(got, set(self.HOUSTON))
+
+    def test_whichever_order_they_came_in(self):
+        got = self.standings_of(
+            self.source("standings", 2, self.ORLANDO, "https://x/houston-r2/"),
+            self.source("standings", 2, self.HOUSTON, "https://x/houston-r2-format/"))
+        self.assertEqual(got, set(self.HOUSTON))
+
+    def test_between_two_of_its_own_the_fuller_still_wins(self):
+        # A table posted twice, the second with the late results in, is the
+        # same Duelists both times. Nothing tells them apart but size.
+        got = self.standings_of(
+            self.source("standings", 2, self.HOUSTON[:6], "https://x/r2-standings/"),
+            self.source("standings", 2, self.HOUSTON, "https://x/r2-standings-2/"))
+        self.assertEqual(got, set(self.HOUSTON))
+
+    def test_where_the_event_writes_names_two_ways_nothing_changes(self):
+        # The 2019 YCS Chicago's pairings and standings name its Duelists
+        # differently and score two in a hundred against each other. Two of
+        # its tables competing both score that, so the fuller wins as before.
+        other = [n.upper().replace(" ", "_") for n in self.HOUSTON]
+        got = self.standings_of(
+            self.source("standings", 2, other[:6], "https://x/r2-standings/"),
+            self.source("standings", 2, other, "https://x/r2-standings-2/"))
+        self.assertEqual(got, set(other))
+
+    def test_a_round_nobody_else_claims_is_left_to_it(self):
+        # Only two posts for one round are compared. A lone table is taken as
+        # it comes; moving one that is somebody else's is misfiled's job.
+        got = self.standings_of(self.source("standings", 2, self.ORLANDO, "https://x/r2/"))
+        self.assertEqual(got, set(self.ORLANDO))
+
+    def test_a_news_post_carrying_a_pairing_table_is_read_as_one(self):
+        # Konami's "Top Tables Update" posts are news by their slug and hold
+        # a pairings table, which is what misfiled has to read.
+        from build import Source, seated
+        from parse import Post, Table
+        post = Source(url="https://x/top-tables/", post=Post(
+            title="Top Tables Update: Round 5", kind="news", fmt=None, round=None,
+            table=Table("pairings", [], [{"table": 1, "a": {"name": "Ada"}, "b": {"name": "Bo"}}])))
+        self.assertEqual(seated(post), {"Ada", "Bo"})
+
+
+class TestAPostFiledUnderTheWrongEvent(unittest.TestCase):
+    """A post is filed by its slug, and Konami's slugs are copied from the last
+    event's. Nine of YCS Orlando's posts went up under YCS Houston's name, three
+    weeks after Houston ended, and made Houston the newest event: every
+    scheduled run rebuilt Houston, and Orlando's first day never reached the
+    site.
+    """
+
+    HOUSTON = {f"Houston Player {i}" for i in range(12)}
+    ORLANDO = {f"Orlando Player {i}" for i in range(20)}
+
+    def post(self, slug, lastmod, kind=None):
+        from parse import detect_kind
+        return {"url": f"https://x/{slug}/", "slug": slug, "lastmod": lastmod,
+                "kind": kind or detect_kind(slug)}
+
+    def grouped(self, *houston_extra):
+        houston = [self.post("ycs-houston-round-1-pairings-genesys-format", "2026-10-17"),
+                   *[self.post(f"ycs-houston-round-{n}-pairings-genesys-format", "2026-10-18")
+                     for n in range(2, 9)],
+                   *houston_extra]
+        orlando = [self.post("ycs-orlando-round-1-pairings-genesys", "2026-11-06"),
+                   *[self.post(f"ycs-orlando-round-{n}-pairings-genesys", "2026-11-06")
+                     for n in range(2, 9)],
+                   self.post("ycs-orlando-standings-after-day-1-genesys", "2026-11-07")]
+        return {"2026-ycs-houston": houston, "2026-ycs-orlando": orlando}
+
+    def names(self, tables, calls=None):
+        def read(url):
+            if calls is not None:
+                calls.append(url)
+            for key, names in tables.items():
+                if key in url:
+                    return names
+            if "ycs-houston" in url:
+                return self.HOUSTON
+            if "ycs-orlando" in url:
+                return self.ORLANDO
+            return set()
+        return read
+
+    def moves(self, stray, names):
+        from run import misfiled
+        return [(p["slug"], was, now) for p, was, now in misfiled(self.grouped(stray), names)]
+
+    def test_a_table_of_another_events_duelists_goes_to_that_event(self):
+        stray = self.post("ycs-houston-standings-after-round-2-genesys", "2026-11-06")
+        got = self.moves(stray, self.names({"standings-after-round-2-genesys": self.ORLANDO}))
+        self.assertEqual(got, [("ycs-houston-standings-after-round-2-genesys",
+                                "2026-ycs-houston", "2026-ycs-orlando")])
+
+    def test_an_old_post_edited_later_stays_where_it_was(self):
+        # Konami edits posts long after: one of the 2025 North America WCQ's
+        # was edited in July 2026. Its Duelists are still the ones who played.
+        stray = self.post("ycs-houston-standings-after-round-2-genesys", "2026-11-06")
+        got = self.moves(stray, self.names({"standings-after-round-2-genesys": self.HOUSTON}))
+        self.assertEqual(got, [])
+
+    def test_a_table_that_fits_neither_is_left_alone(self):
+        # Pairings and standings sometimes name Duelists two different ways,
+        # and a table that matches nobody proves nothing about where it goes.
+        stray = self.post("ycs-houston-standings-after-round-2-genesys", "2026-11-06")
+        got = self.moves(stray, self.names({"standings-after-round-2-genesys":
+                                            {f"Somebody {i}" for i in range(12)}}))
+        self.assertEqual(got, [])
+
+    def test_a_news_post_carrying_a_table_counts(self):
+        stray = self.post("ycs-houston-top-tables-update-round-5-advanced", "2026-11-07")
+        got = self.moves(stray, self.names({"top-tables-update": self.ORLANDO}))
+        self.assertEqual([g[2] for g in got], ["2026-ycs-orlando"])
+
+    def test_a_post_with_no_table_is_not_read(self):
+        calls = []
+        stray = self.post("welcome-to-ycs-houston-day-3", "2026-11-06")
+        self.assertEqual(self.moves(stray, self.names({}, calls)), [])
+        self.assertNotIn("https://x/welcome-to-ycs-houston-day-3/", calls)
+
+    def test_a_post_soon_after_its_event_is_not_read(self):
+        # Two weeks running, two events on consecutive weekends file into each
+        # other's dates constantly, and that is not this. Five hundred posts
+        # met the rule before it waited a week.
+        from run import MISFILED_AFTER_DAYS, misfiled
+        calls = []
+        grouped = self.grouped(self.post("ycs-houston-standings-after-round-9-genesys", "2026-10-21"))
+        grouped["2026-ycs-orlando"] = [dict(p, lastmod="2026-10-21") for p in grouped["2026-ycs-orlando"]]
+        self.assertGreater(MISFILED_AFTER_DAYS, 3)
+        self.assertEqual(misfiled(grouped, self.names({}, calls)), [])
+        self.assertNotIn("https://x/ycs-houston-standings-after-round-9-genesys/", calls)
+
+    def entries_with_late(self, *late_rows):
+        rows = [(f"2026/ycs/ycs-houston-round-{n}-pairings-genesys-format", "2026-10-18")
+                for n in range(1, 9)]
+        # Orlando ran over two days, as it did: rounds 1 to 4 on the Friday.
+        rows += [(f"2026/ycs/ycs-orlando-round-{n}-pairings-genesys",
+                  "2026-11-06" if n <= 4 else "2026-11-07") for n in range(1, 9)]
+        return parse_post_sitemap(urlset(*rows, *late_rows))
+
+    def test_a_post_whose_table_cannot_be_read_does_not_date_the_event(self):
+        # Three of Orlando's posts stayed filed under Houston -- their tables
+        # are not ones the parser reads -- and dated Houston into Orlando's
+        # weekend. Whoever they belong to, they are not when Houston ran.
+        from run import events_by_recency
+        entries = self.entries_with_late(
+            ("2026/ycs/ycs-houston-top-tables-update-round-5-advanced", "2026-11-07"),
+            ("2026/ycs/ycs-houston-top-tables-update-round-6-advanced", "2026-11-07"),
+            ("2026/ycs/ycs-houston-top-tables-update-round-7-advanced", "2026-11-07"))
+        ranked = events_by_recency(entries, names=lambda url: set())
+        self.assertEqual(ranked[0][0], "2026-ycs-orlando")
+        self.assertEqual({s: e for s, _, e in ranked}["2026-ycs-houston"], "2026-10-18")
+
+    def test_nor_keep_it_in_progress(self):
+        from run import events_by_recency
+        entries = self.entries_with_late(
+            ("2026/ycs/ycs-houston-top-tables-update-round-5-advanced", "2026-11-07"))
+        posts = dict((s, p) for s, p, _ in events_by_recency(entries, names=lambda url: set()))
+        late = [p for p in posts["2026-ycs-houston"] if p.get("late")]
+        self.assertEqual([p["slug"] for p in late], ["ycs-houston-top-tables-update-round-5-advanced"])
+
+    def test_an_event_still_running_is_dated_by_all_of_it(self):
+        # Nothing of Orlando's own is late: it is the event running.
+        from run import events_by_recency
+        entries = self.entries_with_late(("2026/ycs/ycs-orlando-standings-after-day-1-genesys", "2026-11-07"))
+        posts = dict((s, p) for s, p, _ in events_by_recency(entries, names=lambda url: set()))
+        self.assertFalse(any(p.get("late") for p in posts["2026-ycs-orlando"]))
+
+    def test_a_table_of_people_who_played_both_stays(self):
+        # Plenty of Duelists play two YCSs three weeks apart. A table of them
+        # fits both events, and says nothing about which it was.
+        both = set(list(self.HOUSTON)[:6]) | set(list(self.ORLANDO)[:6])
+        stray = self.post("ycs-houston-standings-after-round-2-genesys", "2026-11-06")
+        fields = {"ycs-houston-round-1": self.HOUSTON | both, "ycs-orlando-round-1": self.ORLANDO | both,
+                  "standings-after-round-2-genesys": both}
+        self.assertEqual(self.moves(stray, self.names(fields)), [])
+
+    def test_a_table_too_small_to_tell_stays(self):
+        stray = self.post("ycs-houston-standings-after-round-2-genesys", "2026-11-06")
+        two = set(list(self.ORLANDO)[:2])
+        self.assertEqual(self.moves(stray, self.names({"standings-after-round-2-genesys": two})), [])
+
+    def test_the_post_is_moved_and_not_just_found(self):
+        from run import events_by_recency
+        rows = [(f"2026/ycs/ycs-houston-round-{n}-pairings-genesys-format", "2026-10-18")
+                for n in range(1, 9)]
+        rows += [(f"2026/ycs/ycs-orlando-round-{n}-pairings-genesys", "2026-11-06")
+                 for n in range(1, 9)]
+        rows += [("2026/ycs/ycs-houston-standings-after-round-2-genesys", "2026-11-06")]
+        posts = {s: [p["slug"] for p in ps] for s, ps, _ in events_by_recency(
+            parse_post_sitemap(urlset(*rows)),
+            names=self.names({"standings-after-round-2-genesys": self.ORLANDO}))}
+        self.assertIn("ycs-houston-standings-after-round-2-genesys", posts["2026-ycs-orlando"])
+        self.assertNotIn("ycs-houston-standings-after-round-2-genesys", posts["2026-ycs-houston"])
+
+    def test_a_late_post_does_not_keep_an_event_in_progress(self):
+        from build import Source
+        from run import newest_post
+        own = Source(url="https://x/own/", post=None, posted="2026-10-18T20:24:57-07:00")
+        late = Source(url="https://x/late/", post=None, posted="2026-11-07T15:40:26-08:00")
+        posts = [{"url": "https://x/own/"}, {"url": "https://x/late/", "late": True}]
+        self.assertEqual(newest_post([own, late], posts).date().isoformat(), "2026-10-18")
+        self.assertEqual(newest_post([own, late], [{"url": "https://x/own/"}, {"url": "https://x/late/"}])
+                         .date().isoformat(), "2026-11-07")
+
+    def test_building_the_event_heeds_the_mark(self):
+        # The same, end to end through build_one: a late post dated this
+        # minute would make any event live, and does not.
+        from datetime import datetime, timezone
+        from run import build_one
+
+        def page(title, rows):
+            cells = "".join(f"<tr><td>{i + 1}</td><td>{a}</td><td>vs.</td><td>{b}</td></tr>"
+                            for i, (a, b) in enumerate(rows))
+            return (f"<html><head><title>{title} – Yu-Gi-Oh! TRADING CARD GAME</title></head>"
+                    "<body><div class='entry-content'><table>"
+                    "<tr><td>Table</td><td>Player 1</td><td>vs.</td><td>Player 2</td></tr>"
+                    f"{cells}</table></div></body></html>")
+
+        pairs = [(f"Houston Player {i}", f"Houston Player {i + 1}") for i in range(0, 12, 2)]
+        now = datetime.now(timezone.utc).isoformat()
+
+        class Fake:
+            def get(self, url, refresh=False):
+                return page("YCS Houston: Round 1 Pairings" if "own" in url
+                            else "YCS Houston Top Tables Update: Round 5", pairs)
+
+        posts = [{"url": "https://x/own/", "slug": "ycs-houston-round-1-pairings",
+                  "kind": "pairings", "lastmod": "2026-10-18", "modified": "2026-10-18T20:00:00-07:00"},
+                 {"url": "https://x/late/", "slug": "ycs-houston-top-tables-update-round-5",
+                  "kind": "news", "lastmod": now[:10], "modified": now, "late": True}]
+        event, *_ = build_one(Fake(), "2026-ycs-houston", posts, "2026-10-18", 200)
+        self.assertFalse(event["ongoing"])
+
+    def test_it_reaches_the_ranking(self):
+        # The point of moving it before anything is ranked: the old event
+        # stops being the newest, and the one running is what gets built.
+        from run import events_by_recency
+        rows = [(f"2026/ycs/ycs-houston-round-{n}-pairings-genesys-format", "2026-10-18")
+                for n in range(1, 9)]
+        rows += [(f"2026/ycs/ycs-houston-standings-after-round-{n}-genesys-format", "2026-10-18")
+                 for n in range(2, 9)]
+        rows += [(f"2026/ycs/ycs-orlando-round-{n}-pairings-genesys", "2026-11-06")
+                 for n in range(1, 9)]
+        rows += [(f"2026/ycs/ycs-houston-standings-after-round-{n}-genesys", "2026-11-06")
+                 for n in range(2, 8)]
+        entries = parse_post_sitemap(urlset(*rows))
+        names = self.names({"standings-after-round-2-genesys/": self.ORLANDO,
+                            "standings-after-round-3-genesys/": self.ORLANDO,
+                            "standings-after-round-4-genesys/": self.ORLANDO,
+                            "standings-after-round-5-genesys/": self.ORLANDO,
+                            "standings-after-round-6-genesys/": self.ORLANDO,
+                            "standings-after-round-7-genesys/": self.ORLANDO})
+        ranked = events_by_recency(entries, names=names)
+        self.assertEqual(ranked[0][0], "2026-ycs-orlando")
+        ended = {slug: end for slug, _, end in ranked}
+        self.assertLess(ended["2026-ycs-houston"], "2026-10-25")

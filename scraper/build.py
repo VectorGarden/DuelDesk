@@ -360,7 +360,17 @@ def round_key(post) -> tuple[str, Any]:
 #     Duelists here really are Garcia Garcia or Martinez Martinez, and the
 #     Remote Duel YCS of January 2026 prints "Tomas Dughera Tomas Dughera"
 #     in all twenty-one places and never once, which is nothing to go on.
-BUILD_VERSION = 67
+#  68 A table is the event's whose Duelists played it. Konami published nine
+#     of YCS Orlando's posts in November 2026 from YCS Houston's template,
+#     titles and slugs and all. Six were Genesys standings: Houston's rounds 2
+#     to 7 then had two tables each, its own and Orlando's, and Orlando's won
+#     for holding more Duelists, while Orlando had no standings for those
+#     rounds at all. The nine also dated Houston into Orlando's weekend, so
+#     every scheduled run rebuilt Houston and Orlando's first day never reached
+#     the site. Now the table whose Duelists played the event beats a fuller
+#     one, a table of another event's Duelists goes to that event, and posts
+#     that went up long after an event, while another ran, do not date it.
+BUILD_VERSION = 68
 
 
 @dataclass
@@ -978,6 +988,15 @@ def build_format(name: str | None, sources: list[Source], *,
                   f"{'name' if len(names) == 1 else 'names'} {label} "
                   f"({', '.join(sorted(names))})")
 
+    # Who played this event, by kind of table, for telling its own tables from
+    # somebody else's. A standings table is asked about the pairings and the
+    # other way round, so no table is ever its own evidence.
+    names_by_kind = {k: set().union(*(seated(x) for x in sources
+                                      if x.post.kind == k and x.post.table
+                                      and x.post.table.kind == k))
+                     for k in ("pairings", "standings")}
+    field_for = {"pairings": names_by_kind["standings"], "standings": names_by_kind["pairings"]}
+
     by_round: dict[tuple, dict[str, Source]] = defaultdict(dict)
     features: dict[tuple, list[Source]] = defaultdict(list)
     floating_standings: list[Source] = []
@@ -1028,8 +1047,17 @@ def build_format(name: str | None, sources: list[Source], *,
         if any(s is c for c in finals_carried):
             continue
         existing = by_round[key].get(s.post.kind)
-        if existing is not None and not better_table(s, existing):
-            continue
+        if existing is not None:
+            # Two posts for one round, and before the fuller of them wins, the
+            # one somebody from this event played in. Konami published nine of
+            # YCS Orlando's posts in November 2026 from YCS Houston's template,
+            # titles and all, and six were Genesys standings: two posts for
+            # each of Houston's rounds 2 to 7, and Orlando's 452 Duelists beat
+            # Houston's own 316 for being more of them.
+            here = field_for[s.post.kind]
+            ahead = played_here(s, here) - played_here(existing, here)
+            if ahead <= -FITS_BETTER or (ahead < FITS_BETTER and not better_table(s, existing)):
+                continue
         by_round[key][s.post.kind] = s
     # A round the blog covered with a feature match and nothing else is still a
     # round -- five of the 2026 North America WCQ's arrived that way -- so its
@@ -1459,6 +1487,35 @@ def entered_as_teams(sources: list[Source]) -> bool:
             if row.get("members") or row.get("duels"):
                 return True
     return False
+
+
+def seated(source: Source) -> set[str]:
+    """Everybody a pairings or standings table names."""
+    table = source.post.table
+    rows = table.rows if table else []
+    if table and table.kind == "pairings":
+        return {c["name"] for r in rows for c in (r.get("a"), r.get("b")) if c and c.get("name")}
+    return {r["name"] for r in rows if r.get("name")}
+
+
+def played_here(source: Source, field: set[str]) -> float:
+    """How much of a table is people who played this event.
+
+    Asked of the other kind of table: a standings table against the pairings,
+    a pairings table against the standings. Only ever compared with another
+    table's answer, never with a line of its own -- a few events write a
+    Duelist one way in their pairings and another in their standings, and
+    the 2019 YCS Chicago's own tables score two in a hundred against each
+    other. Two tables competing for one of its rounds both score that, and
+    the comparison says nothing; one table from the event and one from
+    somewhere else do not.
+    """
+    names = seated(source)
+    return len(names & field) / len(names) if names and field else 0.0
+
+
+# How much better one table has to fit before it beats a fuller one.
+FITS_BETTER = 0.5
 
 
 def better_table(candidate: Source, existing: Source) -> bool:
