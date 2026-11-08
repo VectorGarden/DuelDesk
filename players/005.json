@@ -433,16 +433,15 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"na-ygoc-2022"}
   ],
-  "Hunter William King": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-charlotte"}
-  ],
   "Martin Garcia Sanchez": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Pedro Abreu Azevedo": [
     {"e":"2022-latin-america-remote-duel-ycs"}
+  ],
+  "Hunter William King": [
+    {"e":"2022-ycs-charlotte"}
   ],
   "Calvin Mason Lee": [
     {"e":"2022-ycs-charlotte"}
@@ -637,19 +636,19 @@
   "Derek B.": {
     "as": "Derek Cameron Brown"
   },
+  "Abdulraheem Y.": {
+    "as": "Abdulraheem Yaseen Yusuff"
+  },
   "Marquise J.": {
     "as": "Marquise Daveon Jenkins"
-  },
-  "Samuel D.": {
-    "as": "Samuel M.A. Derenge"
   },
   "Chad F.": {
     "as": "Chad Austin Fowler"
   },
+  "Samuel D.": {
+    "as": "Samuel M.A. Derenge"
+  },
   "Cody M.": {
     "as": "Cody Jay Bennett Morris"
-  },
-  "Abdulraheem Y.": {
-    "as": "Abdulraheem Yaseen Yusuff"
   }
 }

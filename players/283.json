@@ -202,7 +202,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Vanquish Soul K9"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -534,13 +533,13 @@
   "Keon A.": {
     "as": "Keon Hee An"
   },
-  "Anas F.": {
-    "as": "Anas Faraj"
+  "Dylan P.": {
+    "as": "Dylan James Perelman"
   },
   "Mertjan O.": {
     "as": "Mertjan Ozbek"
   },
-  "Dylan P.": {
-    "as": "Dylan James Perelman"
+  "Anas F.": {
+    "as": "Anas Faraj"
   }
 }

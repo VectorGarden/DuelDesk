@@ -50,7 +50,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -600,11 +599,11 @@
   "Felipe Antonio Bruna Caceres": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Rayman C.": {
-    "as": "Rayman Wei Min Chen"
-  },
   "Jiahuang W.": {
     "as": "Jiahuang Wu"
+  },
+  "Rayman C.": {
+    "as": "Rayman Wei Min Chen"
   },
   "Runyu G.": {
     "as": "Runyu Gao"

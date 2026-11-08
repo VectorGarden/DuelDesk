@@ -359,9 +359,6 @@
   "Samuel N. Slone": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Joaquin De la Torre Jr.": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Tulio Gutierrez Matla": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
@@ -431,7 +428,6 @@
   "Corbin David Lombardo": [
     {"e":"2023-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -521,7 +517,6 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -621,10 +616,10 @@
   "Aaron J.": {
     "as": "Aaron Xavier Jarrett"
   },
-  "Tyson D.": {
-    "as": "Tyson Matthew Darn"
-  },
   "Eduardo G.": {
     "as": "Eduardo Enrique May Gomez"
+  },
+  "Tyson D.": {
+    "as": "Tyson Matthew Darn"
   }
 }

@@ -93,7 +93,6 @@
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -348,7 +347,6 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Fiendsmith Yummy"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -664,10 +662,10 @@
   "Joe C.": {
     "as": "Joe Claudio"
   },
-  "Adriel P.": {
-    "as": "Adriel Ernst Pierre Pierre"
-  },
   "Hunter M.": {
     "as": "Hunter Jacob McDonald"
+  },
+  "Adriel P.": {
+    "as": "Adriel Ernst Pierre Pierre"
   }
 }

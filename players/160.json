@@ -174,7 +174,6 @@
   "Ivan Martin Garcia": [
     {"e":"201611-anaheim-ca"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -309,10 +308,6 @@
   "Sergio Javier CA Gutierrez": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Raphael Barak Socher": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Bryan Cordon": [
     {"e":"2022-11-ycs-pasadena"}
   ],
@@ -326,10 +321,10 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
-  "Gabriel Antonio Albarran-Perea": [
+  "Raphael Barak Socher": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Ryan Tan": [
+  "Gabriel Antonio Albarran-Perea": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
   "Julio Adolfo Rendon Penaherrera": [
@@ -454,7 +449,6 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

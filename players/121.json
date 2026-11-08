@@ -372,7 +372,6 @@
   "Jose Luis Mojica": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-05-ycs-philadelphia"},
@@ -406,9 +405,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-11-ycs-pittsburgh-pa"}
-  ],
-  "Zaccory Ryan Flowers": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Felix Andre Rodriguez Perez": [
     {"e":"2022-remote-duel-ycs-north-america"},
@@ -603,12 +599,11 @@
   "Salina Sanchez": [
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Edgar Deivi Rodriguez Belmares": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Logan Scott Vidi": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Edgar Deivi Rodriguez Belmares": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jose Daniel Vargas Chacon": [
     {"e":"remote-duel-ycs-february-2025"},
@@ -623,10 +618,10 @@
   "Leonard C.": {
     "as": "Leonard Chun Yi Chu"
   },
-  "Avery M.": {
-    "as": "Avery Moreno"
-  },
   "Colby T.": {
     "as": "Colby James Taylor"
+  },
+  "Avery M.": {
+    "as": "Avery Moreno"
   }
 }

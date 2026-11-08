@@ -128,7 +128,6 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-niagara-falls"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-05-ycs-philadelphia"},
@@ -571,7 +570,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -699,13 +697,13 @@
   "Alexandre A.": {
     "as": "Alexandre Alonso"
   },
+  "Jayming M.": {
+    "as": "Jayming Moua"
+  },
   "Josh V.": {
     "as": "Josh Vicente Villaflor"
   },
   "Elizabeth C.": {
     "as": "Elizabeth Chantel Childers"
-  },
-  "Jayming M.": {
-    "as": "Jayming Moua"
   }
 }

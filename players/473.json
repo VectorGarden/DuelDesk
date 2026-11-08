@@ -200,7 +200,6 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -362,7 +361,6 @@
   ],
   "Joshua Mark Chan": [
     {"e":"2019-ycs-ft-worth"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2023-ycs-indianapolis"},
     {"e":"2024-north-america-wcq"},
@@ -413,10 +411,6 @@
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"na-ygoc-2022"}
   ],
-  "Jaiven Trent Silva": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Andy-Nghia Trong Nguyen": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -433,6 +427,9 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Jaiven Trent Silva": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Chris Anthony Vitullo": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -651,7 +648,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matthew David Jennings": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -661,11 +657,11 @@
   "Jeanpiere Heli Leon Leon": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jose G.": {
-    "as": "Jose Francisco Ramirez Gonzalez"
-  },
   "Solomon S.": {
     "as": "Solomon Grant Skuljicak"
+  },
+  "Jose G.": {
+    "as": "Jose Francisco Ramirez Gonzalez"
   },
   "Christian P.": {
     "as": "Christian Paul Gregorio Pascua"

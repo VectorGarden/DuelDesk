@@ -374,12 +374,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
-  "Detemple": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-remote-duel-ycs-north-america"},
-    {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"}
-  ],
   "Diego Andres Cares Oyarzo": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
@@ -395,6 +389,11 @@
   ],
   "Fox Benjamin Chudleigh": [
     {"e":"2022-remote-duel-ycs-north-america"}
+  ],
+  "Detemple": [
+    {"e":"2022-remote-duel-ycs-north-america"},
+    {"e":"2023-250th-ycs-in-los-angeles"},
+    {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"}
   ],
   "Sammy Gamal Abdalgalil": [
     {"e":"2022-ycs-charlotte"},

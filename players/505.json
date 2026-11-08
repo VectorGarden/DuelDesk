@@ -366,7 +366,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -464,12 +463,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
-  "Giovanni Rivera Burgos": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"202205-ycs-hartford-ct"},
-    {"e":"2023-north-america-wcq"}
-  ],
   "Allen Joshua Henry": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -493,6 +486,11 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
+  ],
+  "Giovanni Rivera Burgos": [
+    {"e":"2022-january-remote-duel-ycs"},
+    {"e":"202205-ycs-hartford-ct"},
+    {"e":"2023-north-america-wcq"}
   ],
   "Jorge Ivan Tapicha Bedoya": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -769,7 +767,6 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Luis Manuel Troche": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

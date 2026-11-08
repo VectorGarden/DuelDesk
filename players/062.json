@@ -229,7 +229,6 @@
     {"e":"2019-ycs-portland"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -610,11 +609,11 @@
   "Hugo Eduardo Cervantes Posadas": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Dzung Q.": {
-    "as": "Dzung Phan Quach"
-  },
   "Rennick B.": {
     "as": "Rennick Jeffers Bruno"
+  },
+  "Dzung Q.": {
+    "as": "Dzung Phan Quach"
   },
   "Dev K.": {
     "as": "Dev Kapur"

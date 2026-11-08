@@ -372,9 +372,6 @@
   "Jinxian Guo": [
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Bryan Ramos": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Elias Melchisedec Vargas Rodriguez": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -596,10 +593,10 @@
   "Nikhil Malekal": {
     "as": "Nikhil K. Malekal"
   },
-  "Nelson F.": {
-    "as": "Nelson Lolong Federipe"
-  },
   "Hyro B.": {
     "as": "Hyro de Guzman Banayad"
+  },
+  "Nelson F.": {
+    "as": "Nelson Lolong Federipe"
   }
 }

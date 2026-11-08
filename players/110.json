@@ -581,7 +581,6 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-08-quebec","f":"Advanced","cut":"Top 8","deck":"Kewl Tune"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -652,10 +651,10 @@
   "Gianpierre Manuel Perez Aguilar": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Grant S.": {
-    "as": "Grant Anthony Squires"
-  },
   "Jonathan V.": {
     "as": "Jonathan Scott Volberding"
+  },
+  "Grant S.": {
+    "as": "Grant Anthony Squires"
   }
 }

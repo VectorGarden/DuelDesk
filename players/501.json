@@ -334,9 +334,6 @@
   "Ai Li": [
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Ian Max Meltzer": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Christian Rene Renteria Medina": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -559,7 +556,6 @@
   ],
   "Noah Tyler Steppe": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -596,13 +592,13 @@
   "Jesus F.": {
     "as": "Jesus Reyes July Flores"
   },
-  "Aiden S.": {
-    "as": "Aiden Christopher Springer"
-  },
   "Alberto A.": {
     "as": "Alberto Juaquin Almanza"
   },
   "Cameron T.": {
     "as": "Cameron DeWayne Trice"
+  },
+  "Aiden S.": {
+    "as": "Aiden Christopher Springer"
   }
 }

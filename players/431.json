@@ -525,7 +525,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -609,7 +608,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -648,15 +646,14 @@
   "Brady Thomas Bates": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
-  "Alfonso Carlos Madrazo": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Gregory Kevin Grantham II": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Sergio Daniel": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Alfonso Carlos Madrazo": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Diego Ulises Hernandez Moctezuma": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

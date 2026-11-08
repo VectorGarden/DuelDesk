@@ -307,8 +307,7 @@
   ],
   "Al Christian Ferrari Cortez": [
     {"e":"2019-north-america-wcq"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Cristofer Alexander Heredia Rubio": [
     {"e":"2019-team-ycs-lima-peru","cut":"Top 8"}
@@ -409,13 +408,6 @@
   "William Joseph Lucas": [
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Aiman Moufid": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-05-ycs-philadelphia"},
-    {"e":"2023-north-america-wcq"},
-    {"e":"2023-ycs-richmond"},
-    {"e":"2024-north-america-wcq"}
-  ],
   "Cesar Montes De Oca": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -436,6 +428,12 @@
   ],
   "Jonathan Benitez Bobadilla": [
     {"e":"2022-ycs-guadalajara-mexico"}
+  ],
+  "Aiman Moufid": [
+    {"e":"2023-05-ycs-philadelphia"},
+    {"e":"2023-north-america-wcq"},
+    {"e":"2023-ycs-richmond"},
+    {"e":"2024-north-america-wcq"}
   ],
   "David In": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -631,16 +629,16 @@
   "Alvaro Janssen Pereira Da Silva": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Tristan B.": {
-    "as": "Tristan Daniel Bridges"
-  },
-  "Leonardo P.": {
-    "as": "Leonardo Daniel Palacio"
-  },
   "Vince H.": {
     "as": "Vince Gabriel Suarez Hernandez"
   },
   "Ritchie M.": {
     "as": "Ritchie L. Martinez"
+  },
+  "Leonardo P.": {
+    "as": "Leonardo Daniel Palacio"
+  },
+  "Tristan B.": {
+    "as": "Tristan Daniel Bridges"
   }
 }

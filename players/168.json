@@ -561,7 +561,6 @@
   ],
   "Junxiang Shao": [
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-ycs-richmond"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
@@ -779,17 +778,16 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
   "Nathan Tanner Blakeney": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Luahn De Souza Pereira": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Kelvin Y.": {
-    "as": "Kelvin Ye"
-  },
   "Ariel D.": {
     "as": "Ariel Steven Davis"
+  },
+  "Kelvin Y.": {
+    "as": "Kelvin Ye"
   },
   "Dylan I.": {
     "as": "Dylan Nasem Issak"

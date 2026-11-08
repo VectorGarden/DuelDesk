@@ -246,7 +246,6 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-08-ycs-sacramento"},
     {"e":"2026-02-300th-na"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -786,10 +785,10 @@
   "Jose Miguel Lara Galdos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Amit D.": {
-    "as": "Amit Singh Deol"
-  },
   "Blake S.": {
     "as": "Blake Michael Sepe"
+  },
+  "Amit D.": {
+    "as": "Amit Singh Deol"
   }
 }

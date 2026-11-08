@@ -62,7 +62,6 @@
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
     {"e":"2025-ycs-mexico-city-mexico","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -347,11 +346,6 @@
   "Bryson Ahmaud TX Jones": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Quintin Louis Forrer": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"202205-ycs-hartford-ct"}
-  ],
   "Benjamin Jay Yates": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -368,8 +362,9 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "D’Marco Ary Santos": [
-    {"e":"2022-january-remote-duel-ycs"}
+  "Quintin Louis Forrer": [
+    {"e":"2022-january-remote-duel-ycs"},
+    {"e":"202205-ycs-hartford-ct"}
   ],
   "Julio Cesar de Andrade": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -495,7 +490,6 @@
   ],
   "Codey Jonathan Robert Seavey": [
     {"e":"2025-05-ycs-providence"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -530,14 +524,12 @@
   "Zachary Aiden Conley": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Adis Muhamedagic": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Eldlich"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -575,16 +567,16 @@
   "William J.": {
     "as": "William Donald Johnson"
   },
-  "Alexander R.": {
-    "as": "Alexander Rey Roman"
-  },
   "Matthew F.": {
     "as": "Matthew Arden Fox"
+  },
+  "Vincent P.": {
+    "as": "Vincent Quoc Pham"
   },
   "Dominic W.": {
     "as": "Dominic Lee Whalawitsa"
   },
-  "Vincent P.": {
-    "as": "Vincent Quoc Pham"
+  "Alexander R.": {
+    "as": "Alexander Rey Roman"
   }
 }

@@ -214,7 +214,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -424,7 +423,6 @@
   ],
   "Matthew Brian Richardson": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -451,7 +449,6 @@
   ],
   "Luksa Plenkovic": [
     {"e":"2025-10-ycs-anaheim"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "William Antonio Lopez": [

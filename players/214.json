@@ -523,7 +523,6 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -620,10 +619,10 @@
   "Mauricio Edward Castañeda Celis": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jaylen S.": {
-    "as": "Jaylen Maurice Santos"
-  },
   "Manuel S.": {
     "as": "Manuel Alejandro Sagastizado"
+  },
+  "Jaylen S.": {
+    "as": "Jaylen Maurice Santos"
   }
 }

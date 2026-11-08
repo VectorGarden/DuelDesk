@@ -296,7 +296,6 @@
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -394,9 +393,6 @@
   ],
   "Angel Guadalupe Beltran": [
     {"e":"2022-11-ycs-pasadena"}
-  ],
-  "Laurie-Anne Methot": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Omar Alejandro Figueroa Leyva": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -518,7 +514,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -667,11 +662,11 @@
   "Iago Cipriano Yokoi": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"}
   ],
-  "Noah J.": {
-    "as": "Noah Benjamin Jymison"
-  },
   "Andrew G.": {
     "as": "Andrew Joshua Gross"
+  },
+  "Noah J.": {
+    "as": "Noah Benjamin Jymison"
   },
   "Nathaniel V.": {
     "as": "Nathaniel GIavani Vasquez"

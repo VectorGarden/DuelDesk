@@ -633,7 +633,6 @@
   "Nicholas Daniel Fiete": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -696,12 +695,11 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Yerik Josef Faulkner": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Stephen Thomas Andrade": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Yerik Josef Faulkner": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Victor Daniel Bolanos Chaves": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

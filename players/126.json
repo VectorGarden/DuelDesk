@@ -220,7 +220,6 @@
   ],
   "Preston Allen Coonradt": [
     {"e":"2017-ycs-atlanta"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Nicolas Andres Palma": [
@@ -452,7 +451,6 @@
   ],
   "Francisco Isaac Miranda Rodriguez": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Edgar Jonathan Olivar": [
@@ -615,11 +613,11 @@
   "Lauro S.": {
     "as": "Lauro Pires Schlemper"
   },
-  "Jesse V.": {
-    "as": "Jesse Ray Valle"
-  },
   "Luan D.": {
     "as": "Luan Kinh Duong"
+  },
+  "Jesse V.": {
+    "as": "Jesse Ray Valle"
   },
   "Nicholas M.": {
     "as": "Nicholas Aksel Massinen"

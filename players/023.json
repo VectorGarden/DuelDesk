@@ -536,7 +536,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -603,10 +602,10 @@
   "Brandon R.": {
     "as": "Brandon Xavier Ramos"
   },
-  "Nathaniel C.": {
-    "as": "Nathaniel Paul Clifton"
-  },
   "I H.": {
     "as": "I Hao Hsu"
+  },
+  "Nathaniel C.": {
+    "as": "Nathaniel Paul Clifton"
   }
 }

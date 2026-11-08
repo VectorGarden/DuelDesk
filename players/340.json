@@ -245,7 +245,6 @@
     {"e":"2019-ycs-portland"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
   "Junior Roque Capellan Caparachin": [
@@ -496,7 +495,6 @@
   "Joshua Matthew Hernandez": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -582,11 +580,11 @@
   "Jose Javier Martinez Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Drtodd L.": {
-    "as": "Drtodd Tony Leylekyan"
-  },
   "Taylor R.": {
     "as": "Taylor Jacob Rowell"
+  },
+  "Drtodd L.": {
+    "as": "Drtodd Tony Leylekyan"
   },
   "Robin S.": {
     "as": "Robin John Sharman"

@@ -190,7 +190,6 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys","cut":"Final","deck":"Radiant Typhoon"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gary Jerome Brooks": [
@@ -255,7 +254,6 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2018-uds-invitational-sacramento-ca"},
     {"e":"2019-ycs-portland","cut":"Top 32"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-08-ycs-sacramento"}
   ],
@@ -446,7 +444,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

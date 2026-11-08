@@ -477,10 +477,6 @@
   "Ronnie Alexander Villacis Lizano": [
     {"e":"2019-ycs-quito-ecuador"}
   ],
-  "Kristopher Jiake Lu": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-250th-ycs-in-los-angeles"}
-  ],
   "Amir Sahin Ener": [
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2023-north-america-remote-duel-ycs"}
@@ -549,6 +545,9 @@
   "Cristian Ortiz": [
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-08-ycs-sacramento"}
+  ],
+  "Kristopher Jiake Lu": [
+    {"e":"2023-250th-ycs-in-los-angeles"}
   ],
   "Trevor Dayn Meisner": [
     {"e":"2023-250th-ycs-in-los-angeles"}
@@ -645,7 +644,6 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -741,13 +739,13 @@
   "Benjamin H.": {
     "as": "Benjamin Michael Hansen"
   },
-  "Albert L.": {
-    "as": "Albert Junghwan Lee"
+  "Dinh P.": {
+    "as": "Dinh Khang Pham"
   },
   "Marcus H.": {
     "as": "Marcus Anthony Ho"
   },
-  "Dinh P.": {
-    "as": "Dinh Khang Pham"
+  "Albert L.": {
+    "as": "Albert Junghwan Lee"
   }
 }

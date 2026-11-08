@@ -320,7 +320,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -568,10 +567,10 @@
   "Efrain Triana Camejo": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
-  "Nicolai H.": {
-    "as": "Nicolai Mikhail Howlett"
-  },
   "Raymond L.": {
     "as": "Raymond G. Lee"
+  },
+  "Nicolai H.": {
+    "as": "Nicolai Mikhail Howlett"
   }
 }

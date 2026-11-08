@@ -326,24 +326,6 @@
     {"e":"2023-north-america-remote-duel-ycs"},
     {"e":"2024-north-america-wcq"}
   ],
-  "Dylan Thomas Robertson": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-remote-duel-ycs-north-america"},
-    {"e":"2022-ycs-minneapolis"},
-    {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-north-america-remote-duel-ycs"},
-    {"e":"2023-north-america-wcq"},
-    {"e":"2023-ycs-indianapolis"},
-    {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"},
-    {"e":"2024-11-north-america-remote-duel-ycs"},
-    {"e":"2024-north-america-wcq"},
-    {"e":"2025-12-rdycs-na"},
-    {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-north-america-wcq"},
-    {"e":"na-ygoc-2022"}
-  ],
   "Vincent Raoul Villalpando": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -359,6 +341,23 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"}
+  ],
+  "Dylan Thomas Robertson": [
+    {"e":"2022-january-remote-duel-ycs"},
+    {"e":"2022-remote-duel-ycs-north-america"},
+    {"e":"2022-ycs-minneapolis"},
+    {"e":"2023-250th-ycs-in-los-angeles"},
+    {"e":"2023-north-america-remote-duel-ycs"},
+    {"e":"2023-north-america-wcq"},
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"},
+    {"e":"2024-11-north-america-remote-duel-ycs"},
+    {"e":"2024-north-america-wcq"},
+    {"e":"2025-12-rdycs-na"},
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-north-america-genesys-championship","f":"Genesys"},
+    {"e":"2026-north-america-wcq"},
+    {"e":"na-ygoc-2022"}
   ],
   "Martin Alejandro Nole Liendo": [
     {"e":"2022-latin-america-remote-duel-ycs"}

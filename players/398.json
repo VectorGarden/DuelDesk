@@ -192,7 +192,6 @@
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
     {"e":"2023-team-ycs-las-vegas"},
@@ -317,10 +316,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
-  "Jonathan Hunter Dunning": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-ycs-indianapolis"}
-  ],
   "Pablo Sebastian Vargas Reyes": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-ycs-santiago-chile"},
@@ -437,6 +432,9 @@
     {"e":"2024-ycs-guadalajara-mexico"},
     {"e":"2026-02-300th-na"}
   ],
+  "Jonathan Hunter Dunning": [
+    {"e":"2023-ycs-indianapolis"}
+  ],
   "Jose Ignacio Mora Nelson": [
     {"e":"2023-ycs-santiago-chile"}
   ],
@@ -551,10 +549,10 @@
   "Ryuki Shitagaki": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Japan"}
   ],
-  "John M.": {
-    "as": "John Taylor McDaniel"
-  },
   "Andrew X.": {
     "as": "Andrew David Xie"
+  },
+  "John M.": {
+    "as": "John Taylor McDaniel"
   }
 }

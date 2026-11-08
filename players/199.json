@@ -327,13 +327,6 @@
   "Brandon Anthony Gray": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Maximilian Daniel Kipping Munoz": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-niagara-falls"},
-    {"e":"2023-north-america-wcq"},
-    {"e":"2024-north-america-wcq"},
-    {"e":"na-ygoc-2022"}
-  ],
   "Angel Fidel Herrera Vàzquez": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -363,6 +356,12 @@
   ],
   "Andrew Van": [
     {"e":"2022-ycs-niagara-falls"}
+  ],
+  "Maximilian Daniel Kipping Munoz": [
+    {"e":"2022-ycs-niagara-falls"},
+    {"e":"2023-north-america-wcq"},
+    {"e":"2024-north-america-wcq"},
+    {"e":"na-ygoc-2022"}
   ],
   "Paulo Eduardo de Souza Martins": [
     {"e":"2022-ycs-rio-de-janeiro"},

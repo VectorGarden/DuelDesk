@@ -416,10 +416,6 @@
   "Mac Xiang Gao": [
     {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
-  "Ben Alexander Duker": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-remote-duel-ycs-north-america"}
-  ],
   "Julio Cesar Martinez Castillo": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2022-ycs-guadalajara-mexico"},
@@ -444,6 +440,9 @@
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
+  ],
+  "Ben Alexander Duker": [
+    {"e":"2022-remote-duel-ycs-north-america"}
   ],
   "David Israel Soberon Caicedo": [
     {"e":"2022-team-ycs-quito"}
@@ -473,7 +472,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

@@ -498,7 +498,6 @@
   ],
   "James David Meador": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -609,19 +608,19 @@
   "Gabriel O.": {
     "as": "Gabriel Kenzo Ogawa Oda"
   },
+  "Panagiotis M.": {
+    "as": "Panagiotis Mitrothanasis"
+  },
   "Anthony E.": {
     "as": "Anthony William Eckroth"
   },
   "Estefan L.": {
     "as": "Estefan Nicolas Dario Lopez"
   },
-  "Panagiotis M.": {
-    "as": "Panagiotis Mitrothanasis"
+  "Kent N.": {
+    "as": "Kent Bao Uy Long Nguyen"
   },
   "Thomas H.": {
     "as": "Thomas Michael Hinde"
-  },
-  "Kent N.": {
-    "as": "Kent Bao Uy Long Nguyen"
   }
 }

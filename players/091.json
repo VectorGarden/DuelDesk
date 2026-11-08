@@ -98,7 +98,6 @@
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-niagara-falls"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-north-america-wcq"},
     {"e":"2023-ycs-vancouver"},
@@ -471,8 +470,7 @@
     {"e":"2020-team-ycs-las-vegas"}
   ],
   "Brandon John Whitmyre": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Dwight Ivan Soria-Callupe": [
     {"e":"2022-02-north-america-remote-duel-ycs"}
@@ -681,16 +679,15 @@
   "Donovan Xiong Haacke": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Lamarcus OBrien Adkins": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Alexander James Wyatt": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Jason Vikison Andre": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Lamarcus OBrien Adkins": [
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jose Javier Puello Cruz": [
     {"e":"remote-duel-ycs-february-2025"}

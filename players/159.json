@@ -586,7 +586,6 @@
   ],
   "Zachary Matthew Taylor": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -613,17 +612,16 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Joel Benjamin Waldmann": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Eduardo B.": {
     "as": "Eduardo Baumgratz"
   },
-  "Dillon C.": {
-    "as": "Dillon David Cohen"
-  },
   "Payton P.": {
     "as": "Payton Bishop Paris"
+  },
+  "Dillon C.": {
+    "as": "Dillon David Cohen"
   },
   "Jackie S.": {
     "as": "Jackie Michael Swartz"

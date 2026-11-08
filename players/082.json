@@ -154,7 +154,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -342,9 +341,6 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
-  "Ron Van Truong": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Jose Octavio Quirarte Valencia": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2022-ycs-guadalajara-mexico"},
@@ -383,7 +379,6 @@
     {"e":"2022-ycs-charlotte"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -419,7 +414,6 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

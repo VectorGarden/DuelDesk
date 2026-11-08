@@ -324,13 +324,6 @@
   "Arthur Karl Steindl": [
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Jeremiah John Domingo": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-niagara-falls"},
-    {"e":"2023-ycs-vancouver"},
-    {"e":"2024-north-america-wcq"},
-    {"e":"2025-ycs-vancouver"}
-  ],
   "Miguel Alejandro Pasos Carballo": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -341,6 +334,12 @@
   ],
   "Benjamin Alexander Duker": [
     {"e":"2022-ycs-charlotte"}
+  ],
+  "Jeremiah John Domingo": [
+    {"e":"2022-ycs-niagara-falls"},
+    {"e":"2023-ycs-vancouver"},
+    {"e":"2024-north-america-wcq"},
+    {"e":"2025-ycs-vancouver"}
   ],
   "Mikail Max Weitzenbaur-Garcia": [
     {"e":"2022-ycs-niagara-falls"}
@@ -535,7 +534,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

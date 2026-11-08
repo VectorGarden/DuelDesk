@@ -432,10 +432,6 @@
   "Sean Ignacio": [
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Joseph Alan Sanchez": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-team-ycs-las-vegas"}
-  ],
   "Paulo Victor Rubim Nepomuceno da Silva": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2022-ycs-rio-de-janeiro"},
@@ -492,6 +488,9 @@
   "Carlos Hermosillo Guerrero": [
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"na-ygoc-2022"}
+  ],
+  "Joseph Alan Sanchez": [
+    {"e":"2023-team-ycs-las-vegas"}
   ],
   "Jordan Jeffrey Smith": [
     {"e":"2023-team-ycs-las-vegas"},

@@ -363,7 +363,6 @@
   ],
   "Marcellus James Thiry": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-north-america-wcq"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-north-america-wcq"},
@@ -383,10 +382,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2024-north-america-wcq"}
-  ],
-  "Luis Alfredo Quiles": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-charlotte"}
   ],
   "Edgar Daniel Pineda McCreary": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -408,6 +403,9 @@
   ],
   "Esteban Burbano Estela": [
     {"e":"2022-latin-america-remote-duel-ycs"}
+  ],
+  "Luis Alfredo Quiles": [
+    {"e":"2022-ycs-charlotte"}
   ],
   "Axel Ariel Grande Ruiz": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -519,7 +517,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -633,7 +630,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Nicholas Ryan Oti": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cameron G.": {

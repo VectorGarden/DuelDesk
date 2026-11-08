@@ -279,7 +279,6 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -649,7 +648,6 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Eric Halan Faden": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -665,10 +663,10 @@
   "Gabriel Netz": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Deylan P.": {
-    "as": "Deylan James Pitkin"
-  },
   "Raleigh J.": {
     "as": "Raleigh John Jungemann"
+  },
+  "Deylan P.": {
+    "as": "Deylan James Pitkin"
   }
 }

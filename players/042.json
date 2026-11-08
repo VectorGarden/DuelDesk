@@ -321,12 +321,6 @@
   "Van Hermann Boubeka": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Zhao Liang Sun": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
-  "David Agosta": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Pedro Salazar Zurita": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -509,7 +503,6 @@
   ],
   "Jakari Michael Scott": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Emmanuel Ayodele Boye": [

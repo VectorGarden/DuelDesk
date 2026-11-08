@@ -350,10 +350,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
-  "Brenden Tyler Lutz": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"}
-  ],
   "Jose Miguel Lagos": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -410,7 +406,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -505,6 +500,9 @@
   "Liban Bashir Nur": [
     {"e":"2023-ycs-vancouver"},
     {"e":"2025-ycs-vancouver"}
+  ],
+  "Brenden Tyler Lutz": [
+    {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"}
   ],
   "Daniel Sing Mattu": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}

@@ -92,7 +92,6 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "William Darnell Simmons": [
@@ -331,7 +330,6 @@
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"},
@@ -421,12 +419,11 @@
   "Jose Miguel MN Valdez": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Andrew James Cable": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Ryan Rico Dell’olio": [
     {"e":"2022-11-ycs-pasadena"}
+  ],
+  "Andrew James Cable": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Jose Angel Fajardo": [
     {"e":"2022-january-remote-duel-ycs"}
@@ -557,7 +554,6 @@
     {"e":"2024-ycs-indianapolis"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Emmanuel (PR)": [
@@ -615,10 +611,10 @@
   "James Ricotta": {
     "as": "James P. Ricotta"
   },
-  "Colby N.": {
-    "as": "Colby Man Tsun Ng"
-  },
   "Karan S.": {
     "as": "Karan Sharma"
+  },
+  "Colby N.": {
+    "as": "Colby Man Tsun Ng"
   }
 }

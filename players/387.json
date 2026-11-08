@@ -104,7 +104,6 @@
     {"e":"2019-ycs-pasadena","cut":"Top 16","deck":"Sky Striker"},
     {"e":"2019-ycs-portland","cut":"Top 32"},
     {"e":"2020-uds-invitational-tulsa-ok","cut":"Top 4","deck":"Shaddoll Invoked"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte","cut":"Top 32","deck":"Destiny Adventurer Sky Striker"},
     {"e":"202205-ycs-hartford-ct"},
@@ -311,9 +310,6 @@
   ],
   "Matthew Russell Bagley": [
     {"e":"2022-11-ycs-pasadena"}
-  ],
-  "James Michael Mesa": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Joel Andres Tomala Cuenca": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -537,25 +533,25 @@
   "Diego Alessandro Aguirre Barreño": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Ryne H.": {
-    "as": "Ryne Michael Macari Hanson"
-  },
-  "Skyla M.": {
-    "as": "Skyla Wayne Miller"
-  },
   "Chris N.": {
     "as": "Chris Chi Tsun Ng"
   },
   "Hamzeh S.": {
     "as": "Hamzeh Hassan Salti"
   },
+  "Skyla M.": {
+    "as": "Skyla Wayne Miller"
+  },
+  "Ryne H.": {
+    "as": "Ryne Michael Macari Hanson"
+  },
   "Junior C.": {
     "as": "Junior J. Chala"
   },
-  "Jonathan T.": {
-    "as": "Jonathan Alexander Tamayo"
-  },
   "Warner M.": {
     "as": "Warner Ottoneil Morales"
+  },
+  "Jonathan T.": {
+    "as": "Jonathan Alexander Tamayo"
   }
 }

@@ -309,7 +309,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -456,8 +455,7 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Ernesto Lujan": [
-    {"e":"2019-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2019-ycs-pasadena"}
   ],
   "Seukhyung Lee": [
     {"e":"2019-ycs-portland"},
@@ -481,9 +479,6 @@
   ],
   "Donald James Peaslee": [
     {"e":"2022-11-ycs-pasadena"}
-  ],
-  "Darrell Corwyn Friedrich": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Rene Quiroz Morales": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -696,7 +691,6 @@
   ],
   "Patric Dale Dean Williamson": [
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

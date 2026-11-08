@@ -105,7 +105,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Austin Gregory Nichols": [
@@ -340,7 +339,6 @@
   ],
   "Kang Hyon Jung": [
     {"e":"2019-ycs-niagara-falls"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-north-america-wcq"},
@@ -376,12 +374,6 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
-  "Keanu Nathaniel Shemar Singh": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-north-america-remote-duel-ycs"},
-    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
-  ],
   "Mitchell Alexander Ramirez": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -402,6 +394,11 @@
   ],
   "Walid Lechheb": [
     {"e":"2022-january-remote-duel-ycs"}
+  ],
+  "Keanu Nathaniel Shemar Singh": [
+    {"e":"2022-january-remote-duel-ycs"},
+    {"e":"2023-north-america-remote-duel-ycs"},
+    {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Yrvin Alex Hernandez Villalobos": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -547,7 +544,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Anthony Michael Fitzwilliam": [
@@ -642,13 +638,13 @@
   "Luis Angel Huillcaya Luyo": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Samuel Y.": {
-    "as": "Samuel Siwon You"
+  "Derek M.": {
+    "as": "Derek Charles Mead"
   },
   "Weijian F.": {
     "as": "Weijian Fang"
   },
-  "Derek M.": {
-    "as": "Derek Charles Mead"
+  "Samuel Y.": {
+    "as": "Samuel Siwon You"
   }
 }

@@ -382,7 +382,6 @@
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Regenesis Vanquish Soul"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -503,7 +502,6 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Gideon Alexander Lamberd": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -516,13 +514,13 @@
   "Sinthya Rimache Saya": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Miriam S.": {
-    "as": "Miriam Lillian Skapik"
+  "Alfonso R.": {
+    "as": "Alfonso Rosales"
   },
   "Rashad J.": {
     "as": "Rashad Franklin Jones"
   },
-  "Alfonso R.": {
-    "as": "Alfonso Rosales"
+  "Miriam S.": {
+    "as": "Miriam Lillian Skapik"
   }
 }

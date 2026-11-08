@@ -372,11 +372,9 @@
   "Anthony Tyler Staehle": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
   "David Armando Garza": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
@@ -561,10 +559,10 @@
   "Ricardo B.": {
     "as": "Ricardo Ferraez Ban"
   },
-  "Mitchell V.": {
-    "as": "Mitchell Jason Ventura"
-  },
   "Camren S.": {
     "as": "Camren Jerrod Sharpe"
+  },
+  "Mitchell V.": {
+    "as": "Mitchell Jason Ventura"
   }
 }

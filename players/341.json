@@ -99,7 +99,6 @@
     {"e":"2016-ycs-origins"},
     {"e":"2017-north-american-wcq"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -471,10 +470,6 @@
   "Juan Francisco Leon": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Justin Ronald Wasielewski": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"na-ygoc-2022"}
-  ],
   "Edgar E. Corona Reyes": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -630,7 +625,6 @@
   ],
   "Anthony Blake Inman": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Gregory Mark Vecchi": [
@@ -692,22 +686,25 @@
   "Raymond Ryan Carey Dooman": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
+  "Justin Ronald Wasielewski": [
+    {"e":"na-ygoc-2022"}
+  ],
   "Daigo Noguchi": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
   "Sebastian M.": {
     "as": "Sebastian Muralles"
   },
-  "Nelvin L.": {
-    "as": "Nelvin Wai Yan Lo"
+  "Dominik N.": {
+    "as": "Dominik Jullian Nemeth"
   },
   "Lijie D.": {
     "as": "Lijie Deng"
   },
+  "Nelvin L.": {
+    "as": "Nelvin Wai Yan Lo"
+  },
   "Owen A.": {
     "as": "Owen Michael Alvarado"
-  },
-  "Dominik N.": {
-    "as": "Dominik Jullian Nemeth"
   }
 }

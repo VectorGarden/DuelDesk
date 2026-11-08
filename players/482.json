@@ -282,7 +282,6 @@
     {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Sean Thomas Ward": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-ycs-richmond"}
   ],
@@ -493,13 +492,13 @@
   "Kenneth Leugim Sanchez Vega": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Tyler V.": {
+    "as": "Tyler James Vezina"
+  },
   "Liborio B.": {
     "as": "Liborio Bobby Barone"
   },
   "Trent M.": {
     "as": "Trent Jamison Miller"
-  },
-  "Tyler V.": {
-    "as": "Tyler James Vezina"
   }
 }

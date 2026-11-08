@@ -220,7 +220,6 @@
     {"e":"201611-anaheim-ca"},
     {"e":"2017-north-american-wcq"},
     {"e":"201711-san-diego-ca"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-10-ycs-anaheim"}
   ],
@@ -409,9 +408,6 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"}
   ],
-  "Richard Luis Dias Galvao": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Alan Garcia Gutierrez": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -564,7 +560,6 @@
   "Kimani Ojai Christie": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

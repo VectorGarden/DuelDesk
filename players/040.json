@@ -32,7 +32,6 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2023-ycs-vancouver"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -395,9 +394,6 @@
     {"e":"2023-north-america-remote-duel-ycs"},
     {"e":"2024-11-north-america-remote-duel-ycs"}
   ],
-  "Ekin Y?rekli": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Augusto Cesar Bertoldo Soares": [
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-latin-america-remote-duel-ycs","cut":"Top 16"},
@@ -446,7 +442,6 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -500,7 +495,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -512,7 +506,6 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -606,8 +599,8 @@
   "Josue Guillen": {
     "as": "Josue A Guillen"
   },
-  "Kamran A.": {
-    "as": "Kamran Aghaseyedali"
+  "Qamar S.": {
+    "as": "Qamar Abbas Stationwala"
   },
   "Javier R.": {
     "as": "Javier Ruiz"
@@ -615,8 +608,8 @@
   "Kody M.": {
     "as": "Kody Masataka Manabe"
   },
-  "Qamar S.": {
-    "as": "Qamar Abbas Stationwala"
+  "Kamran A.": {
+    "as": "Kamran Aghaseyedali"
   },
   "Emmanuel H.": {
     "as": "Emmanuel Eugene Hayes"

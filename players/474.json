@@ -479,17 +479,6 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"}
   ],
-  "Joe Corley Peacock Winkler": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-north-america-wcq"},
-    {"e":"2024-02-team-ycs-las-vegas-nv"},
-    {"e":"2024-11-north-america-remote-duel-ycs"},
-    {"e":"2024-north-america-wcq"},
-    {"e":"na-ygoc-2022"}
-  ],
-  "Wendell He": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Eliel Rodrigues dos Santos Junior": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-team-ycs-sao-paulo"},
@@ -561,6 +550,13 @@
   "Trong Nguyen": [
     {"e":"2023-north-america-wcq"},
     {"e":"2025-north-america-wcq"}
+  ],
+  "Joe Corley Peacock Winkler": [
+    {"e":"2023-north-america-wcq"},
+    {"e":"2024-02-team-ycs-las-vegas-nv"},
+    {"e":"2024-11-north-america-remote-duel-ycs"},
+    {"e":"2024-north-america-wcq"},
+    {"e":"na-ygoc-2022"}
   ],
   "Aaron Esteban Mendoza": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -699,14 +695,14 @@
   "Darian H.": {
     "as": "Darian Joshua Riley Wolver Hahn"
   },
-  "Jazmin H.": {
-    "as": "Jazmin Hodzic"
+  "Quinton B.": {
+    "as": "Quinton DeVante Marvin Brown"
   },
   "Khang H.": {
     "as": "Khang Manh Hoang"
   },
-  "Quinton B.": {
-    "as": "Quinton DeVante Marvin Brown"
+  "Jazmin H.": {
+    "as": "Jazmin Hodzic"
   },
   "Michio R.": {
     "as": "Michio Ayden Randall"

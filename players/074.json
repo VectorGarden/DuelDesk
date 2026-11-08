@@ -222,7 +222,6 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-niagara-falls","cut":"Top 16"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
@@ -508,7 +507,6 @@
   "Chrystian Jae Vincent Kam": [
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -586,11 +584,11 @@
   "Ariel C.": {
     "as": "Ariel Trigoli Dias Canto"
   },
-  "Isaac O.": {
-    "as": "Isaac Ryan Olson"
-  },
   "Adam F.": {
     "as": "Adam P. Faulk"
+  },
+  "Isaac O.": {
+    "as": "Isaac Ryan Olson"
   },
   "Travis U.": {
     "as": "Travis David Ulsh"

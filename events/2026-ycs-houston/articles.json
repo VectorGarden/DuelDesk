@@ -3437,74 +3437,26 @@
       "r": [{"who":"Enzo Maximiliano Fiallos Velasco","t":"Enzo Fiallos"}," from Elizabeth, New Jersey is your YCS Houston Genesys Champion! He used his Blitzclique Deck to triumph over all other competitors in the Genesys Main Event and take home the trophy! Congratulations!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/advanced-format-tech-update-beyond-the-brave/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-8-advanced/": [
     {
       "t": "p",
-      "r": ["The ",{"i":"Beyond the Brave"}," booster set launched on October 9",{"s":"th"},", and Duelists are using lots of new cards from the set to improve their Decks this weekend. Check out some of the top tech cards that Duelists are using in the Advanced Format Main Event at YCS Houston to get an edge over the competition!"]
+      "r": ["Here’s a look at Round 8’s top tables!"]
     },
     {
       "t": "p",
-      "r": [{"b":"(1.) The Great Gallant Bandit"}]
+      "r": ["Here’s the breakdown by the numbers:"]
     },
     {
       "t": "p",
-      "r": [{"b":"The Great Gallant Bandit"}," is a top tech choice this weekend. It’s a Level 10 monster with 2500 ATK and 2000 DEF that you can Tribute Summon by Tributing monsters in your hand and/or your opponent’s field while you control no monsters. Duelists are using it to tear apart an opponent’s field by Tributing an opponent’s monsters. In that sense, it’s similar to ",{"b":"Lava Golem"}," – a popular Side Deck card in the past, which may face modern-day competition with ",{"b":"The Great Gallant Bandit"}," for space in Duelists’ Side Decks. But unlike ",{"b":"Lava Golem"},", which gets Summoned to the opponent’s field, you get to keep ",{"b":"The Great Gallant Bandit"}," for yourself even after Tributing an opponent’s monsters to Summon it."]
+      "r": ["Deck TypesCount"]
+    },
+    {
+      "t": "table",
+      "rows": [["Power Patron Ars Magna Artmage","15"],["Angelechy","9"],["Angelechy Blitzclique","2"],["Radiant Typhoon Sky Striker","2"],["Radiant Typhoon","2"],["Light and Darkness Ritual","2"],["Sacred Beast","1"],["Dogmatika Despia Branded","1"],["Red Dragon Archfiend","1"],["Lunalight","1"],["Ars Magna Sacred Beast","1"],["Power Patron Ars Magna Elfnote","1"],["Dracotail","1"],["Onomat Ryzeal","1"]]
     },
     {
       "t": "p",
-      "r": [{"b":"The Great Gallant Bandit"}," also has two useful effects that you can activate while it’s on your field. Once per turn, when your opponent activates a card effect in the hand, Graveyard, or banishment, your Normal Summoned Bandit can negate that effect and destroy the card that activated it. Plus, during the Battle Phase, you can use ",{"b":"The Great Gallant Bandit’s"}," other Quick Effect by revealing your hand and then change all monsters your opponent controls to Defense Position."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"The Great Gallant Bandit"}," does it all. You can Tribute an opponent’s monsters to Summon it, it negates cards, and renders an opponent’s monsters powerless in the Battle Phase by switching them into Defense Position. That’s why it’s a top tech card from ",{"i":"Beyond the Brave"}," that Duelists are using this weekend."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"(2.) Hey, Space Trunade!"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Hey, Space Trunade!"}," is the latest “Trunade” Spell Card from ",{"i":"Beyond the Brave"}," that can undo your opponent’s field. Its effect returns up to 2 cards from the field to the hand, and then each player returns cards from their hand to the bottom of their Deck equal to the number of cards returned to their hand."]
-    },
-    {
-      "t": "p",
-      "r": ["Like the Bandit, ",{"b":"Hey, Space Trunade!"}," can rip apart an opponent’s field, but it has even more versatility. In addition to monsters, it can also return Spells and Traps to an opponent’s hand. Its effect doesn’t target the cards it sends back to the hand, which means your opponent will need to Chain their on-field cards to your ",{"b":"Hey, Space Truande!"}," before you select the cards to remove from the field. For each card that ",{"b":"Hey, Space Trunade!"}," returns to your opponent’s hand, your opponent will need to return a card from the hand to the Deck, ensuring that your opponent has fewer cards to use as the Duel progresses. In a pinch, you can also use ",{"b":"Hey, Space Trunade!"}," to return your own cards to your hand and then return cards from your hand to your Deck."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"(3.) Mediclius the Extraordinary Power Patron"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Mediclius the Extraordinary Power Patron"}," is a new Link-3 monster that a variety of Decks can use. You can Summon it by using 2 or more monsters, including a Fusion, Synchro, Xyz, or Link Monster as Link Materials. It has 3000 ATK, three Link Arrows pointing to your Main Monsters Zones when its in an Extra Monster Zone, and gains effects based on the number of monsters it points to."]
-    },
-    {
-      "t": "p",
-      "r": ["If it points to one or more monster, once per turn during your Main Phase you can negate the effects of all face-up monsters your opponent controls and halve their ATK until the end of the turn. This effect, which is similar to the effect of ",{"b":"Forbidden Droplet"},", can be used to negate an opponent’s monsters’ effects so that you can continue your turn unimpeded by them."]
-    },
-    {
-      "t": "p",
-      "r": ["If Mediclius points to two or more monsters, it becomes unaffected by your opponent’s activated effects. This makes it tough for an opponent to stop its other effects."]
-    },
-    {
-      "t": "p",
-      "r": ["Finally, if Mediclius has 3 monsters linked to it, it gains a Quick Effect that can be used once during the opponent’s turn to banish your Mediclius along with all cards your opponent controls. This disruptive effect can remove everything from an opponent’s field right in the middle of their turn, similar to the powerhouse effect of ",{"b":"Red Supernova Dragon"},"."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Mediclius the Extraordinary Power Patron"}," has three extraordinary effects that allow it to shine whether you’re going first or second in a Duel. That’s making it a popular monster for Duelists to include in their Extra Deck this weekend."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"(4.) Spell Shattering Sword"}]
-    },
-    {
-      "t": "p",
-      "r": ["Angelechy Decks are popular in the Advanced Main Event this weekend, and ",{"b":"Spell Shattering Sword"}," from ",{"i":"Beyond the Brave"}," is a powerful tech card that Duelists are using to stop them. It’s a Quick-Play Spell Card with multiple effects, one of which will destroy all face-up Spells your opponent controls. Angelechy Decks rely on placing Angelechy monsters in the Spell & Trap Card Zone as Spell Cards, and ",{"b":"Spell Shattering Sword"}," can destroy all of them at once! Since ",{"b":"Spell Shattering Sword"}," mentions ",{"b":"Light and Darkness Ritual"}," in its text, some Duelists are using ",{"b":"Griffoh"}," to Set ",{"b":"Spell Shattering Sword"}," from their Deck and activate it right away, even if they’re not using ",{"b":"Light and Darkness Ritual"},"."]
-    },
-    {
-      "t": "p",
-      "r": [{"i":"Beyond the Brave"}," contains lots of powerful tech cards that work in a variety of Decks, and many Duelists are using them this weekend in the Advanced Format Main Event. Follow the coverage to see which tech cards make it to the Top Cut on Sunday!"]
+      "r": ["Artmage Decks have taken over, powered by the Power Patrons and Ars Magna. Angelechy Decks are just behind those, followed by a huge spread of various strategies. We’ve got one more round today, so check back for our final Top Tables Update!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-format-round-2-feature-match-johnathan-gochenour-vs-dino-chavez/": [
@@ -3647,22 +3599,74 @@
       "r": [{"who":"Trevor Lee Parker","t":"Trevor Parker"}," from Richmond, Virginia used his ",{"b":"Dark Magician"}," Deck featuring ",{"b":"Light and Darkness Ritual"}," to defeat ",{"who":"Blake Antonio Funderburke","t":"Blake Funderburke"}," in the Finals and become the Advanced Main Event champion at YCS Houston! He’ll be taking home an Ultra Rare ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," Prize Card, a beautiful new trophy, and lots of other awesome prizes. Congratulations Trevor!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-5-genesys-format/": [
+  "https://yugiohblog.konami.com/2026/ycs/advanced-format-tech-update-beyond-the-brave/": [
     {
       "t": "p",
-      "r": ["Here’s the breakdown of Decks at the top 20 tables in Round 5 of the Genesys Main Event at YCS Houston!\n"]
+      "r": ["The ",{"i":"Beyond the Brave"}," booster set launched on October 9",{"s":"th"},", and Duelists are using lots of new cards from the set to improve their Decks this weekend. Check out some of the top tech cards that Duelists are using in the Advanced Format Main Event at YCS Houston to get an edge over the competition!"]
     },
     {
       "t": "p",
-      "r": ["Here’s how it looks by the numbers:"]
-    },
-    {
-      "t": "table",
-      "rows": [["Deck Types","Count"],["Blitzclique","9"],["Angelechy Blitzclique","4"],["Ancient Fairy Angelechy","2"],["Magistus Fairy Tail","2"],["Angelechy","2"],["Labrynth","1"],["Angelechy Centur-Ion","1"],["Dragon Ruler","1"],["EARTH Machine","1"],["Vernusylph Madolche","1"],["Elfnote Centur-Ion","1"],["Phantom Knights","1"],["Snake-Eye Elfnote","1"],["Chimera","1"],["Radiant Typhon Dark Time Wizard","1"],["Kaiju K9 Radiant Typhoon","1"],["Chimera Invoked","1"],["P.U.N.K. Psychic","1"],["Predaplant Rose Dragon","1"],["Purrely","1"],["Dracotail Labrynth","1"],["Destiny HERO","1"],["Spright Blitzclique","1"],["Chimera Hecahands","1"],["Zombie Vampire Pumpking","1"],["Invoked","1"]]
+      "r": [{"b":"(1.) The Great Gallant Bandit"}]
     },
     {
       "t": "p",
-      "r": ["While Blitzclique Decks are the most represented at the top 20 tables, 26 different strategies are sitting at the top 20 tables in Round 5! Lots of cool Decks are still in contention for a Top Cut finish, including Dragon Ruler, EARTH Machine, Zombie Vampire Pumpking, and Radiant Typhoon Dark Time Wizard. Follow the coverage to see which Decks continue to prevail in the Genesys Main Event at YCS Houston!"]
+      "r": [{"b":"The Great Gallant Bandit"}," is a top tech choice this weekend. It’s a Level 10 monster with 2500 ATK and 2000 DEF that you can Tribute Summon by Tributing monsters in your hand and/or your opponent’s field while you control no monsters. Duelists are using it to tear apart an opponent’s field by Tributing an opponent’s monsters. In that sense, it’s similar to ",{"b":"Lava Golem"}," – a popular Side Deck card in the past, which may face modern-day competition with ",{"b":"The Great Gallant Bandit"}," for space in Duelists’ Side Decks. But unlike ",{"b":"Lava Golem"},", which gets Summoned to the opponent’s field, you get to keep ",{"b":"The Great Gallant Bandit"}," for yourself even after Tributing an opponent’s monsters to Summon it."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"The Great Gallant Bandit"}," also has two useful effects that you can activate while it’s on your field. Once per turn, when your opponent activates a card effect in the hand, Graveyard, or banishment, your Normal Summoned Bandit can negate that effect and destroy the card that activated it. Plus, during the Battle Phase, you can use ",{"b":"The Great Gallant Bandit’s"}," other Quick Effect by revealing your hand and then change all monsters your opponent controls to Defense Position."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"The Great Gallant Bandit"}," does it all. You can Tribute an opponent’s monsters to Summon it, it negates cards, and renders an opponent’s monsters powerless in the Battle Phase by switching them into Defense Position. That’s why it’s a top tech card from ",{"i":"Beyond the Brave"}," that Duelists are using this weekend."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"(2.) Hey, Space Trunade!"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Hey, Space Trunade!"}," is the latest “Trunade” Spell Card from ",{"i":"Beyond the Brave"}," that can undo your opponent’s field. Its effect returns up to 2 cards from the field to the hand, and then each player returns cards from their hand to the bottom of their Deck equal to the number of cards returned to their hand."]
+    },
+    {
+      "t": "p",
+      "r": ["Like the Bandit, ",{"b":"Hey, Space Trunade!"}," can rip apart an opponent’s field, but it has even more versatility. In addition to monsters, it can also return Spells and Traps to an opponent’s hand. Its effect doesn’t target the cards it sends back to the hand, which means your opponent will need to Chain their on-field cards to your ",{"b":"Hey, Space Truande!"}," before you select the cards to remove from the field. For each card that ",{"b":"Hey, Space Trunade!"}," returns to your opponent’s hand, your opponent will need to return a card from the hand to the Deck, ensuring that your opponent has fewer cards to use as the Duel progresses. In a pinch, you can also use ",{"b":"Hey, Space Trunade!"}," to return your own cards to your hand and then return cards from your hand to your Deck."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"(3.) Mediclius the Extraordinary Power Patron"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Mediclius the Extraordinary Power Patron"}," is a new Link-3 monster that a variety of Decks can use. You can Summon it by using 2 or more monsters, including a Fusion, Synchro, Xyz, or Link Monster as Link Materials. It has 3000 ATK, three Link Arrows pointing to your Main Monsters Zones when its in an Extra Monster Zone, and gains effects based on the number of monsters it points to."]
+    },
+    {
+      "t": "p",
+      "r": ["If it points to one or more monster, once per turn during your Main Phase you can negate the effects of all face-up monsters your opponent controls and halve their ATK until the end of the turn. This effect, which is similar to the effect of ",{"b":"Forbidden Droplet"},", can be used to negate an opponent’s monsters’ effects so that you can continue your turn unimpeded by them."]
+    },
+    {
+      "t": "p",
+      "r": ["If Mediclius points to two or more monsters, it becomes unaffected by your opponent’s activated effects. This makes it tough for an opponent to stop its other effects."]
+    },
+    {
+      "t": "p",
+      "r": ["Finally, if Mediclius has 3 monsters linked to it, it gains a Quick Effect that can be used once during the opponent’s turn to banish your Mediclius along with all cards your opponent controls. This disruptive effect can remove everything from an opponent’s field right in the middle of their turn, similar to the powerhouse effect of ",{"b":"Red Supernova Dragon"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Mediclius the Extraordinary Power Patron"}," has three extraordinary effects that allow it to shine whether you’re going first or second in a Duel. That’s making it a popular monster for Duelists to include in their Extra Deck this weekend."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"(4.) Spell Shattering Sword"}]
+    },
+    {
+      "t": "p",
+      "r": ["Angelechy Decks are popular in the Advanced Main Event this weekend, and ",{"b":"Spell Shattering Sword"}," from ",{"i":"Beyond the Brave"}," is a powerful tech card that Duelists are using to stop them. It’s a Quick-Play Spell Card with multiple effects, one of which will destroy all face-up Spells your opponent controls. Angelechy Decks rely on placing Angelechy monsters in the Spell & Trap Card Zone as Spell Cards, and ",{"b":"Spell Shattering Sword"}," can destroy all of them at once! Since ",{"b":"Spell Shattering Sword"}," mentions ",{"b":"Light and Darkness Ritual"}," in its text, some Duelists are using ",{"b":"Griffoh"}," to Set ",{"b":"Spell Shattering Sword"}," from their Deck and activate it right away, even if they’re not using ",{"b":"Light and Darkness Ritual"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"i":"Beyond the Brave"}," contains lots of powerful tech cards that work in a variety of Decks, and many Duelists are using them this weekend in the Advanced Format Main Event. Follow the coverage to see which tech cards make it to the Top Cut on Sunday!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-format-round-5-feature-match-brian-dong-vs-rehan-saeed/": [
@@ -3729,10 +3733,10 @@
       "r": ["Vincent F. is your YCS Houston Dragon Duel Champion!! He’s taking home a Super Rare ",{"b":"Number 93: Utopia Kaiser"}," and the Dragon Duel Championship Trophy, along with the glory of being a Champion!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-genesys-format/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-5-genesys-format/": [
     {
       "t": "p",
-      "r": ["We’re in Round 6 of the Genesys Main Event at YCS Houston! Here’s the breakdown of Decks at the top 20 tables!\n"]
+      "r": ["Here’s the breakdown of Decks at the top 20 tables in Round 5 of the Genesys Main Event at YCS Houston!\n"]
     },
     {
       "t": "p",
@@ -3740,11 +3744,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Blitzclique","8"],["Angelechy Blitzclique","5"],["Angelechy","4"],["Angelechy Centur-Ion","2"],["Labrynth","2"],["Magistus Fairy Tail","2"],["Ancient Fairy Angelechy","2"],["Jurrac Snake-Eye Fire King","1"],["Lyrilusc Mimighoul","1"],["Synchron Junk","1"],["Artmage","1"],["Destiny HERO","1"],["Snake-Eye Elfnote","1"],["Lyrilusc Drytron","1"],["Radiant Typhoon Dark Time Wizard","1"],["Magistus Invoked","1"],["Phantom Knights","1"],["Kaiju K9 Radiant Typhoon","1"],["Chimera Hecahands","1"],["Zombie Vampire Pumpking","1"],["Kaiju Blitzclique","1"],["Invoked","1"]]
+      "rows": [["Deck Types","Count"],["Blitzclique","9"],["Angelechy Blitzclique","4"],["Ancient Fairy Angelechy","2"],["Magistus Fairy Tail","2"],["Angelechy","2"],["Labrynth","1"],["Angelechy Centur-Ion","1"],["Dragon Ruler","1"],["EARTH Machine","1"],["Vernusylph Madolche","1"],["Elfnote Centur-Ion","1"],["Phantom Knights","1"],["Snake-Eye Elfnote","1"],["Chimera","1"],["Radiant Typhon Dark Time Wizard","1"],["Kaiju K9 Radiant Typhoon","1"],["Chimera Invoked","1"],["P.U.N.K. Psychic","1"],["Predaplant Rose Dragon","1"],["Purrely","1"],["Dracotail Labrynth","1"],["Destiny HERO","1"],["Spright Blitzclique","1"],["Chimera Hecahands","1"],["Zombie Vampire Pumpking","1"],["Invoked","1"]]
     },
     {
       "t": "p",
-      "r": ["Blitzclique Decks remain the most represented Deck at the top tables, but variety persists into Round 6 of the Genesys Main Event at YCS Houston! There are still lots of cool Decks at the top 20 tables, including Jurrac Snake-Eye Fire King, Artmage, and Synchron Junk. Follow the coverage to see which Decks continue to prevail!"]
+      "r": ["While Blitzclique Decks are the most represented at the top 20 tables, 26 different strategies are sitting at the top 20 tables in Round 5! Lots of cool Decks are still in contention for a Top Cut finish, including Dragon Ruler, EARTH Machine, Zombie Vampire Pumpking, and Radiant Typhoon Dark Time Wizard. Follow the coverage to see which Decks continue to prevail in the Genesys Main Event at YCS Houston!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-format-round-5-feature-match-hector-aaron-luviano-lopez-vs-jacob-allan-dotson/": [
@@ -3821,10 +3825,10 @@
       "r": [{"who":"Hector Aaron Luviano Lopez","t":"Hector Luviano"}," Lopez takes this Match with Jurrac Snake-Eyes Fire Kings!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-7-genesys-format/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-genesys-format/": [
     {
       "t": "p",
-      "r": ["Here’s the breakdown of Decks at the top 20 tables in today’s penultimate Swiss Round of the Genesys Main Event at YCS Houston!\n"]
+      "r": ["We’re in Round 6 of the Genesys Main Event at YCS Houston! Here’s the breakdown of Decks at the top 20 tables!\n"]
     },
     {
       "t": "p",
@@ -3832,11 +3836,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Blitzclique","7"],["Angelechy Blitzclique","6"],["Angelechy","4"],["Magistus Fairy Tail","2"],["Angelechy Centur-Ion","1"],["Synchron Junk","1"],["Light and Darkness Ritual","1"],["Invoked","1"],["Dracotail","1"],["White Forest Chimera Hecahands","1"],["Predaplant Rose Dragon","1"],["P.U.N.K. Psychic","1"],["Synchron Junk Assault Mode","1"],["Jurrac Snake-Eye Fire King","1"],["Snake-Eye Elfnote","1"],["Artmage DoomZ","1"],["Labrynth","1"],["Destiny HERO","1"],["Artmage","1"],["Kaiju Blitzclique","1"],["Angelechy White Forest","1"],["Lyrilusc Mimighoul","1"],["Zombie Vampire Pumpking","1"],["Kaiju K9 Radiant Typhoon","1"],["Ancient Fairy Angelechy","1"]]
+      "rows": [["Deck Types","Count"],["Blitzclique","8"],["Angelechy Blitzclique","5"],["Angelechy","4"],["Angelechy Centur-Ion","2"],["Labrynth","2"],["Magistus Fairy Tail","2"],["Ancient Fairy Angelechy","2"],["Jurrac Snake-Eye Fire King","1"],["Lyrilusc Mimighoul","1"],["Synchron Junk","1"],["Artmage","1"],["Destiny HERO","1"],["Snake-Eye Elfnote","1"],["Lyrilusc Drytron","1"],["Radiant Typhoon Dark Time Wizard","1"],["Magistus Invoked","1"],["Phantom Knights","1"],["Kaiju K9 Radiant Typhoon","1"],["Chimera Hecahands","1"],["Zombie Vampire Pumpking","1"],["Kaiju Blitzclique","1"],["Invoked","1"]]
     },
     {
       "t": "p",
-      "r": ["Blitzclique and Angelechy Decks are the most popular at the top tables in Round 7, but dozens of different Decks remain! Follow the coverage to see which Decks continue to prevail in the Genesys Main Event at YCS Houston!"]
+      "r": ["Blitzclique Decks remain the most represented Deck at the top tables, but variety persists into Round 6 of the Genesys Main Event at YCS Houston! There are still lots of cool Decks at the top 20 tables, including Jurrac Snake-Eye Fire King, Artmage, and Synchron Junk. Follow the coverage to see which Decks continue to prevail!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-format-round-4-feature-match-jude-paris-vs-mackey-chung/": [
@@ -3953,10 +3957,10 @@
       "r": [{"who":"Mackey Chung","t":"Mackey Chung"}," moves on with a 4-0 record!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-8-genesys-format/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-7-genesys-format/": [
     {
       "t": "p",
-      "r": ["The final Swiss Round of the day is underway at YCS Houston! Here’s the breakdown of Decks currently facing off at the top 20 tables of the Genesys Main Event!\n"]
+      "r": ["Here’s the breakdown of Decks at the top 20 tables in today’s penultimate Swiss Round of the Genesys Main Event at YCS Houston!\n"]
     },
     {
       "t": "p",
@@ -3964,11 +3968,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Blitzclique","10"],["Angelechy","7"],["Angelechy Blitzclique","6"],["Ancient Fairy Angelechy","2"],["Artmage DoomZ","1"],["Angelechy Centur-Ion","1"],["Synchron Junk Assault Mode","1"],["White Forest Chimera Hecahands","1"],["Kairyu-Shin","1"],["Spright Blitzclique","1"],["Destiny HERO","1"],["Earth Machine","1"],["Jurrac Snake-Eye Fire King","1"],["Light and Darkness Ritual","1"],["Invoked","1"],["B.E.S. Angelechy","1"],["Zombie Vampire Pumpking","1"],["Snake-Eye Elfnote","1"],["Kaiju Blitzclique","1"]]
+      "rows": [["Deck Types","Count"],["Blitzclique","7"],["Angelechy Blitzclique","6"],["Angelechy","4"],["Magistus Fairy Tail","2"],["Angelechy Centur-Ion","1"],["Synchron Junk","1"],["Light and Darkness Ritual","1"],["Invoked","1"],["Dracotail","1"],["White Forest Chimera Hecahands","1"],["Predaplant Rose Dragon","1"],["P.U.N.K. Psychic","1"],["Synchron Junk Assault Mode","1"],["Jurrac Snake-Eye Fire King","1"],["Snake-Eye Elfnote","1"],["Artmage DoomZ","1"],["Labrynth","1"],["Destiny HERO","1"],["Artmage","1"],["Kaiju Blitzclique","1"],["Angelechy White Forest","1"],["Lyrilusc Mimighoul","1"],["Zombie Vampire Pumpking","1"],["Kaiju K9 Radiant Typhoon","1"],["Ancient Fairy Angelechy","1"]]
     },
     {
       "t": "p",
-      "r": ["Blitzclique Decks extend their dominance in Round 8, with a quarter of the Decks at the top 20 tables on a pure Blitzclique strategy, and 18 Duelists at the top 20 tables utilizing Blitzclique cards. But lots of other cool strategies are still at the top 20 tables, including B.E.S. Angelechy, Artmage DoomZ, and Zombie Vampire Pumpking. Follow the coverage to see which Decks ultimate make it into Sunday’s Top 8!"]
+      "r": ["Blitzclique and Angelechy Decks are the most popular at the top tables in Round 7, but dozens of different Decks remain! Follow the coverage to see which Decks continue to prevail in the Genesys Main Event at YCS Houston!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-format-round-7-feature-match-brandon-diez-vs-steven-he/": [
@@ -4013,26 +4017,22 @@
       "r": [{"who":"Steven Sida He","t":"Steven He"}," wins the first Duel with just 20 seconds left in the round! The Duelists shuffled up for the second Duel, but time expired before they began. Unable to complete their Match, both Duelists received a Match loss!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-advanced-format-top-table-update-round-5/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-8-genesys-format/": [
     {
       "t": "p",
-      "r": ["Here’s a look at the Decks at the top tables of YCS Houston!"]
+      "r": ["The final Swiss Round of the day is underway at YCS Houston! Here’s the breakdown of Decks currently facing off at the top 20 tables of the Genesys Main Event!\n"]
     },
     {
       "t": "p",
-      "r": ["Here it is by the numbers:"]
+      "r": ["Here’s how it looks by the numbers:"]
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Elfnote","14"],["Angelechy","7"],["Light and Darkness Ritual","3"],["Power Patron Elfnote","3"],["Magistus Fairy Tail","2"],["Power Patron Artmage","2"],["Earth Machine Trains","1"],["@Ignister Maliss","1"],["Dogmatika Despia Branded","1"],["Angelechy Elfnote","1"],["Mitsurugi","1"],["Radiant Typhoon Sky Striker","1"],["Dogmatika Branded","1"],["Yummy","1"],["Dark Magician","1"]]
+      "rows": [["Deck Types","Count"],["Blitzclique","10"],["Angelechy","7"],["Angelechy Blitzclique","6"],["Ancient Fairy Angelechy","2"],["Artmage DoomZ","1"],["Angelechy Centur-Ion","1"],["Synchron Junk Assault Mode","1"],["White Forest Chimera Hecahands","1"],["Kairyu-Shin","1"],["Spright Blitzclique","1"],["Destiny HERO","1"],["Earth Machine","1"],["Jurrac Snake-Eye Fire King","1"],["Light and Darkness Ritual","1"],["Invoked","1"],["B.E.S. Angelechy","1"],["Zombie Vampire Pumpking","1"],["Snake-Eye Elfnote","1"],["Kaiju Blitzclique","1"]]
     },
     {
       "t": "p",
-      "r": ["We’ve got two clear front runners so far, with Elfnote and Angelechy Decks as the most represented. We also have a few Power Patron Elfnote variants, and one Duelist mixing Elfnote with Angelechy into one strategy."]
-    },
-    {
-      "t": "p",
-      "r": ["After that, we have several Decks focused around ",{"b":"Light and Darkness Ritual"},", plus Magistus Fairy Tail, Dogmatika Branded, and Power Patron Artmage strategies. There are more Decks showing up as on-offs, with everything from Dark Magician to Maliss. We’re only halfway into the first day of YCS Houston’s Advanced Format, so there’s still plenty of time for these numbers to change – check back for more updates as the tournament progresses."]
+      "r": ["Blitzclique Decks extend their dominance in Round 8, with a quarter of the Decks at the top 20 tables on a pure Blitzclique strategy, and 18 Duelists at the top 20 tables utilizing Blitzclique cards. But lots of other cool strategies are still at the top 20 tables, including B.E.S. Angelechy, Artmage DoomZ, and Zombie Vampire Pumpking. Follow the coverage to see which Decks ultimate make it into Sunday’s Top 8!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-format-round-6-feature-match-brandon-miotke-vs-william-lewis/": [
@@ -4117,10 +4117,10 @@
       "r": ["Lewis moves on with a 5-1 record with his Artmage DoomZ Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-advanced-format/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-advanced-format-top-table-update-round-5/": [
     {
       "t": "p",
-      "r": ["We’re in Round 6 of the Advanced Main Event at YCS Houston! Check out the Decks at the top 20 tables!"]
+      "r": ["Here’s a look at the Decks at the top tables of YCS Houston!"]
     },
     {
       "t": "p",
@@ -4128,11 +4128,15 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Elfnote","11"],["Angelechy","7"],["Power Patron Elfnote","4"],["Mitsurugi","3"],["Artmage Power Patron","2"],["Dark Magician Yummy","1"],["Dogmatika Despia Branded","1"],["Light and Darkness Ritual Yummy","1"],["Tenpai Light and Darkness Ritual","1"],["Lunalight","1"],["Radiant Typhoon Sky Striker","1"],["Earth Machine R.B.","1"],["Light and Darkness Ritual","1"],["Magistus Fairy Tail","1"],["Dogmatika Branded","1"],["Dark Magician","1"],["@Ignister Maliss","1"],["Primite Blue-Eyes","1"]]
+      "rows": [["Deck Types","Count"],["Elfnote","14"],["Angelechy","7"],["Light and Darkness Ritual","3"],["Power Patron Elfnote","3"],["Magistus Fairy Tail","2"],["Power Patron Artmage","2"],["Earth Machine Trains","1"],["@Ignister Maliss","1"],["Dogmatika Despia Branded","1"],["Angelechy Elfnote","1"],["Mitsurugi","1"],["Radiant Typhoon Sky Striker","1"],["Dogmatika Branded","1"],["Yummy","1"],["Dark Magician","1"]]
     },
     {
       "t": "p",
-      "r": ["Elfnote and Angelechy Decks continue to carry the biggest number of Duelists to the top 20 tables, but a variety of other strategies including Lunalight, Dark Magician, @Ignister Maliss, and Primite Blue-Eyes remain at the top! Follow the coverage to see which Decks continue to compete at the top tables as the tournament progresses!"]
+      "r": ["We’ve got two clear front runners so far, with Elfnote and Angelechy Decks as the most represented. We also have a few Power Patron Elfnote variants, and one Duelist mixing Elfnote with Angelechy into one strategy."]
+    },
+    {
+      "t": "p",
+      "r": ["After that, we have several Decks focused around ",{"b":"Light and Darkness Ritual"},", plus Magistus Fairy Tail, Dogmatika Branded, and Power Patron Artmage strategies. There are more Decks showing up as on-offs, with everything from Dark Magician to Maliss. We’re only halfway into the first day of YCS Houston’s Advanced Format, so there’s still plenty of time for these numbers to change – check back for more updates as the tournament progresses."]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/round-8-feature-match-mason-broussard-vs-david-tamirat/": [
@@ -4213,10 +4217,10 @@
       "r": [{"who":"Mason Taylor Broussard","t":"Mason Broussard"}," narrowly takes the Match at the last moment, with Blitzcliques!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-7-advanced-format/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-6-advanced-format/": [
     {
       "t": "p",
-      "r": ["We’ve got another batch of top table updates for you as we head into Round 7!"]
+      "r": ["We’re in Round 6 of the Advanced Main Event at YCS Houston! Check out the Decks at the top 20 tables!"]
     },
     {
       "t": "p",
@@ -4224,11 +4228,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Elfnote","10"],["Angelechy","9"],["Power Patron Elfnote","5"],["Light and Darkness Ritual","4"],["Dogmatika Branded","2"],["Mitsurugi","2"],["Tenpai Light and Darkness Ritual","1"],["Earth Machine","1"],["Sacred Beast","1"],["Magistus Fairy Tail","1"],["Dark Magician Mitsurugi Yummy","1"],["Artmage Power Patron","1"],["Radiant Typhoon Sky Striker","1"],["Dark Magician","1"]]
+      "rows": [["Deck Types","Count"],["Elfnote","11"],["Angelechy","7"],["Power Patron Elfnote","4"],["Mitsurugi","3"],["Artmage Power Patron","2"],["Dark Magician Yummy","1"],["Dogmatika Despia Branded","1"],["Light and Darkness Ritual Yummy","1"],["Tenpai Light and Darkness Ritual","1"],["Lunalight","1"],["Radiant Typhoon Sky Striker","1"],["Earth Machine R.B.","1"],["Light and Darkness Ritual","1"],["Magistus Fairy Tail","1"],["Dogmatika Branded","1"],["Dark Magician","1"],["@Ignister Maliss","1"],["Primite Blue-Eyes","1"]]
     },
     {
       "t": "p",
-      "r": ["Elfnote and Angelechy Decks remain at the top of the pack, though the numbers between the two are getting closer. We’ve got quite a mix of other Decks still in the running too, so keep watching for more top table updates to see what’s winning!"]
+      "r": ["Elfnote and Angelechy Decks continue to carry the biggest number of Duelists to the top 20 tables, but a variety of other strategies including Lunalight, Dark Magician, @Ignister Maliss, and Primite Blue-Eyes remain at the top! Follow the coverage to see which Decks continue to compete at the top tables as the tournament progresses!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-1-feature-match-gary-miotke-vs-juan-hernandez/": [
@@ -4293,10 +4297,10 @@
       "r": [{"who":"Gary Thomas Miotke","t":"Gary Miotke"}," wins the Match with his Power Clown Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-8-advanced-format/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-7-advanced-format/": [
     {
       "t": "p",
-      "r": ["We’re in the penultimate Swiss Round of the day at YCS Houston! Check out the Decks currently at the top 20 tables of the Advanced Format Main Event!"]
+      "r": ["We’ve got another batch of top table updates for you as we head into Round 7!"]
     },
     {
       "t": "p",
@@ -4304,11 +4308,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Elfnote","11"],["Angelechy","10"],["Mitsurugi","3"],["Branded","3"],["Light and Darkness Ritual","3"],["Power Patron Artmage","2"],["Power Patron Elfnote","2"],["Blitzclique","1"],["Primite Blue-Eyes","1"],["Light and Darkness Ritual Yummy","1"],["Dogmatika Branded Dracotail","1"],["Dark Magician","1"],["Radiant Typhoon Sky Striker","1"]]
+      "rows": [["Deck Types","Count"],["Elfnote","10"],["Angelechy","9"],["Power Patron Elfnote","5"],["Light and Darkness Ritual","4"],["Dogmatika Branded","2"],["Mitsurugi","2"],["Tenpai Light and Darkness Ritual","1"],["Earth Machine","1"],["Sacred Beast","1"],["Magistus Fairy Tail","1"],["Dark Magician Mitsurugi Yummy","1"],["Artmage Power Patron","1"],["Radiant Typhoon Sky Striker","1"],["Dark Magician","1"]]
     },
     {
       "t": "p",
-      "r": ["Elfnote and Angelechy Decks tightened their grasp on the top tables, with more than half of the Duelists at the top 20 tables now using one of those two strategies. Other Decks at the top 20 tables include Dark Magician, Primite Blue-Eyes, and Radiant Typhoon Sky Striker. Follow the coverage to see which strategies ultimately make it into the Top 8 of the Advanced Format Main Event at YCS Houston!"]
+      "r": ["Elfnote and Angelechy Decks remain at the top of the pack, though the numbers between the two are getting closer. We’ve got quite a mix of other Decks still in the running too, so keep watching for more top table updates to see what’s winning!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-2-feature-match-alberto-barajas-vs-bobby-kaeff/": [
@@ -4369,22 +4373,22 @@
       "r": [{"who":"Alberto Barajas","t":"Alberto Barajas"}," takes the Match with Destiny HEROes!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-9-advanced-format/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-8-advanced-format/": [
     {
       "t": "p",
-      "r": ["We’re entering the final Swiss round of today’s Advanced Format competition! Here’s a look at the top tables."]
+      "r": ["We’re in the penultimate Swiss Round of the day at YCS Houston! Check out the Decks currently at the top 20 tables of the Advanced Format Main Event!"]
     },
     {
       "t": "p",
-      "r": ["Here’s the breakdown by the numbers:"]
+      "r": ["Here it is by the numbers:"]
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Elfnote","10"],["Angelechy","9"],["Mitsurugi","5"],["Light and Darkness Ritual","5"],["Power Patron Elfnote","4"],["@Ignister Maliss","2"],["Phantom Knights","1"],["Dark Magician","1"],["Power Patron Artmage","1"],["Dogmatika Branded","1"],["Radiant Typhoon Sky Striker","1"]]
+      "rows": [["Deck Types","Count"],["Elfnote","11"],["Angelechy","10"],["Mitsurugi","3"],["Branded","3"],["Light and Darkness Ritual","3"],["Power Patron Artmage","2"],["Power Patron Elfnote","2"],["Blitzclique","1"],["Primite Blue-Eyes","1"],["Light and Darkness Ritual Yummy","1"],["Dogmatika Branded Dracotail","1"],["Dark Magician","1"],["Radiant Typhoon Sky Striker","1"]]
     },
     {
       "t": "p",
-      "r": ["Elfnote and Angelechy Decks have solidly claimed the top spots for the day, while Mitsurugi and L&D Ritual Decks are close behind. We continue to see a variety of rogue strategies hanging on at the top tables as well, all with a great shot at the Top 8 cut tomorrow."]
+      "r": ["Elfnote and Angelechy Decks tightened their grasp on the top tables, with more than half of the Duelists at the top 20 tables now using one of those two strategies. Other Decks at the top 20 tables include Dark Magician, Primite Blue-Eyes, and Radiant Typhoon Sky Striker. Follow the coverage to see which strategies ultimately make it into the Top 8 of the Advanced Format Main Event at YCS Houston!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-1-feature-match-william-candia-vs-luke-keblis/": [
@@ -4517,6 +4521,24 @@
       "r": [{"who":"William Russell Candia","t":"William Candia"}," takes the first round for the Advanced Format here at YCS Houston with his Ars Magna Elfnote."]
     }
   ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-9-advanced-format/": [
+    {
+      "t": "p",
+      "r": ["We’re entering the final Swiss round of today’s Advanced Format competition! Here’s a look at the top tables."]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the breakdown by the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Elfnote","10"],["Angelechy","9"],["Mitsurugi","5"],["Light and Darkness Ritual","5"],["Power Patron Elfnote","4"],["@Ignister Maliss","2"],["Phantom Knights","1"],["Dark Magician","1"],["Power Patron Artmage","1"],["Dogmatika Branded","1"],["Radiant Typhoon Sky Striker","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["Elfnote and Angelechy Decks have solidly claimed the top spots for the day, while Mitsurugi and L&D Ritual Decks are close behind. We continue to see a variety of rogue strategies hanging on at the top tables as well, all with a great shot at the Top 8 cut tomorrow."]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-3-feature-match-travis-lynch-vs-charles-ekwueme/": [
     {
       "t": "p",
@@ -4573,28 +4595,6 @@
     {
       "t": "p",
       "r": [{"who":"Travis Drelle Lynch","t":"Travis Lynch"}," uses his Tenpai Dragon cards to take a quick win in the second Duel, advancing to Round 4 with an undefeated record!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2026/ycs/double-qualifying-duelists-3/": [
-    {
-      "t": "p",
-      "r": ["We had many Duelists test their skills in both the Advanced Format and Genesys Main Events, and a select few had what it takes to qualify for Sunday’s competition in ",{"i":"both"}," tournaments! These Duelists had to make a decision: which tournament will they continue in today?"]
-    },
-    {
-      "t": "p",
-      "r": ["These are the Duelists that qualified for Day 2 of both events, as well as which event they chose to continue Dueling in."]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Continued in Advanced:"},"\n",{"who":"Shunping Xu","t":"Shunping Xu"},"\n",{"who":"Shelby Ray Redmon","t":"Shelby Ray"}," Redman\n",{"who":"Edwin Martin Strom IV","t":"Edwin Martin Strom IV"},"\n",{"who":"William John Lewis","t":"William John Lewis"},"\nAnil Gangapersuad\n",{"who":"Rehan Ahmed Saeed","t":"Rehan Ahmed"}," Saaed\nHazmah Malik\n",{"who":"Lennard Joakim Klein","t":"Lennard Joakim Klein"},"\n",{"who":"Brandon Joseph Miotke","t":"Brandon Joseph Miotke"},"\n",{"who":"Tayveon Garrett Crowley","t":"Tayveon Garrett Crowley"},"\n",{"who":"Bryce Thomas Sharp","t":"Bryce Thomas Sharp"}]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Continued in Genesys:"},"\n",{"who":"Mason Taylor Broussard","t":"Mason Taylor Broussard"},"\n",{"who":"Jeremy Ryan Glassman","t":"Jeremy Ryan Glassman"},"\n",{"who":"Mitchell Ryan Garcia","t":"Mitchell Ryan Garcia"},"\n",{"who":"Andre Joseph Mroz","t":"Andre Joseph Mroz"},"\n",{"who":"Matthew Evan Harris Vanden Heuvel","t":"Matthew Evan"}," Harris Canden Huevel\n",{"who":"Juan Sebastian Andrade Castro","t":"Juan Sebastian Andrade Castro"},"\n",{"who":"Logan Michael Kite","t":"Logan Michael Kite"},"\nRaycal Rodriguez"]
-    },
-    {
-      "t": "p",
-      "r": ["Congratulations, Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-4-feature-match-miles-valentino-vs-michael-park/": [
@@ -4675,30 +4675,26 @@
       "r": ["Miles ",{"who":"James Miles Valentino","t":"Valentino"}," takes the Match with Maliss!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-4/": [
+  "https://yugiohblog.konami.com/2026/ycs/double-qualifying-duelists-3/": [
     {
       "t": "p",
-      "r": ["Our live stream just revealed the fourth part of the October 19th Forbidden & Limited List!"]
+      "r": ["We had many Duelists test their skills in both the Advanced Format and Genesys Main Events, and a select few had what it takes to qualify for Sunday’s competition in ",{"i":"both"}," tournaments! These Duelists had to make a decision: which tournament will they continue in today?"]
     },
     {
       "t": "p",
-      "r": [{"u":"Newly Forbidden:\n"}," Magicians’ Souls\nSpell Canceller\nCrystal Wing Synchro Dragon\nF.A. Dawn Dragster\nNaturia Beast\nNumber 41: Bagooska the Terribly Tired Tapir\nNumber 60: Dugares the Timeless"]
+      "r": ["These are the Duelists that qualified for Day 2 of both events, as well as which event they chose to continue Dueling in."]
     },
     {
       "t": "p",
-      "r": [{"u":"Newly Limited:\n"}," Griffoh\nSuperdreadnought Rail Cannon Gustav Max"]
+      "r": [{"b":"Continued in Advanced:"},"\n",{"who":"Shunping Xu","t":"Shunping Xu"},"\n",{"who":"Shelby Ray Redmon","t":"Shelby Ray"}," Redman\n",{"who":"Edwin Martin Strom IV","t":"Edwin Martin Strom IV"},"\n",{"who":"William John Lewis","t":"William John Lewis"},"\nAnil Gangapersuad\n",{"who":"Rehan Ahmed Saeed","t":"Rehan Ahmed"}," Saaed\nHazmah Malik\n",{"who":"Lennard Joakim Klein","t":"Lennard Joakim Klein"},"\n",{"who":"Brandon Joseph Miotke","t":"Brandon Joseph Miotke"},"\n",{"who":"Tayveon Garrett Crowley","t":"Tayveon Garrett Crowley"},"\n",{"who":"Bryce Thomas Sharp","t":"Bryce Thomas Sharp"}]
     },
     {
       "t": "p",
-      "r": ["To read up on the other upcoming changes, read here:"]
+      "r": [{"b":"Continued in Genesys:"},"\n",{"who":"Mason Taylor Broussard","t":"Mason Taylor Broussard"},"\n",{"who":"Jeremy Ryan Glassman","t":"Jeremy Ryan Glassman"},"\n",{"who":"Mitchell Ryan Garcia","t":"Mitchell Ryan Garcia"},"\n",{"who":"Andre Joseph Mroz","t":"Andre Joseph Mroz"},"\n",{"who":"Matthew Evan Harris Vanden Heuvel","t":"Matthew Evan"}," Harris Canden Huevel\n",{"who":"Juan Sebastian Andrade Castro","t":"Juan Sebastian Andrade Castro"},"\n",{"who":"Logan Michael Kite","t":"Logan Michael Kite"},"\nRaycal Rodriguez"]
     },
     {
       "t": "p",
-      "r": ["Part 1\nPart 2\nPart 3"]
-    },
-    {
-      "t": "p",
-      "r": ["There will be one more announcement later today, for the full list F&L changes!"]
+      "r": ["Congratulations, Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-5-feature-match-lucas-sacco-vs-trevor-parker/": [
@@ -4755,22 +4751,30 @@
       "r": ["Lucas ",{"who":"George Lucas Sacco","t":"Sacco"}," takes a 2-0 win with his Angelechy Deck and advances with a 5-0 record!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-10-advanced/": [
+  "https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-4/": [
     {
       "t": "p",
-      "r": ["We’re entering the first Swiss round of Day 2’s Advanced competition! Here’s a look at the top tables."]
+      "r": ["Our live stream just revealed the fourth part of the October 19th Forbidden & Limited List!"]
     },
     {
       "t": "p",
-      "r": ["Here’s the breakdown by the numbers:"]
-    },
-    {
-      "t": "table",
-      "rows": [["Deck Types","Count"],["Elfnote","14"],["Angelechy","9"],["Light and Darkness Ritual","5"],["Mitsurugi","3"],["Branded","3"],["Angelechy Elfnote","1"],["Dark Magician","1"],["Power Patron Artmage","1"],["Invoked","1"],["Earth Machine R.B.","1"],["Radiant Typhoon Sky Striker","1"]]
+      "r": [{"u":"Newly Forbidden:\n"}," Magicians’ Souls\nSpell Canceller\nCrystal Wing Synchro Dragon\nF.A. Dawn Dragster\nNaturia Beast\nNumber 41: Bagooska the Terribly Tired Tapir\nNumber 60: Dugares the Timeless"]
     },
     {
       "t": "p",
-      "r": ["Elfnote and Angelechy Decks are claiming more than half of the top spots going into Round 10, while Mitsurugi and L&D Ritual Decks are close behind. There are still a nice variety of strategies with a great shot at making it into the Top 8 cut later today."]
+      "r": [{"u":"Newly Limited:\n"}," Griffoh\nSuperdreadnought Rail Cannon Gustav Max"]
+    },
+    {
+      "t": "p",
+      "r": ["To read up on the other upcoming changes, read here:"]
+    },
+    {
+      "t": "p",
+      "r": ["Part 1\nPart 2\nPart 3"]
+    },
+    {
+      "t": "p",
+      "r": ["There will be one more announcement later today, for the full list F&L changes!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/round-6-feature-match-milos-bukarica-vs-yunliang-cao/": [
@@ -4855,22 +4859,22 @@
       "r": [{"who":"Milos B. Bukarica","t":"Milos Bukarica"}," is the victor, with Sacred Beasts!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-9-genesys/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-10-advanced/": [
     {
       "t": "p",
-      "r": ["We are now in Round 9 of Genesys here at YCS Houston! Here’s the breakdown of Decks starting the day off at the top 20 tables.\n"]
+      "r": ["We’re entering the first Swiss round of Day 2’s Advanced competition! Here’s a look at the top tables."]
     },
     {
       "t": "p",
-      "r": ["Here’s how it looks by the numbers:"]
+      "r": ["Here’s the breakdown by the numbers:"]
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Blitzclique","9"],["Angelechy Blitzclique","5"],["Angelechy","5"],["Ancient Fairy Angelechy","3"],["Magistus Fairy Tail","3"],["HERO Destiny HERO","2"],["Light and Darkness Ritual","2"],["Dark Time Wizard Radiant Typhoon","1"],["Kaiju Blitzclique","1"],["Invoked","1"],["Kaiju K9 Radiant Typhoon","1"],["Trains","1"],["Zombie Vampire Pumpking","1"],["Atlantis","1"],["Labrynth","1"],["Dracotail Labrynth","1"],["Snake-Eye Elfnote","1"],["Chimera Invoked","1"]]
+      "rows": [["Deck Types","Count"],["Elfnote","14"],["Angelechy","9"],["Light and Darkness Ritual","5"],["Mitsurugi","3"],["Branded","3"],["Angelechy Elfnote","1"],["Dark Magician","1"],["Power Patron Artmage","1"],["Invoked","1"],["Earth Machine R.B.","1"],["Radiant Typhoon Sky Striker","1"]]
     },
     {
       "t": "p",
-      "r": ["Blitzclique Decks are still dominating the top tables, with almost a quarter of the Decks being a pure Blitzclique strategy. Following behind Blitzclique is Angelechy, a strategy that gained a huge boost in support from ",{"i":"Beyond the Brave"}," and is currently showing success in both Genesys and Advanced this weekend. While those two strategies are the most represented, there is still a nice variety of strategies being played, including Destiny HERO, Dark Time Wizard, and Atlantis! Follow the coverage to see which Decks ultimately make it into today’s Top 8!"]
+      "r": ["Elfnote and Angelechy Decks are claiming more than half of the top spots going into Round 10, while Mitsurugi and L&D Ritual Decks are close behind. There are still a nice variety of strategies with a great shot at making it into the Top 8 cut later today."]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-4-feature-match-jimmy-chang-vs-jamie-hunter/": [
@@ -5003,10 +5007,10 @@
       "r": [{"who":"Jamie Lewis Hunter","t":"Jamie Hunter"}," stays undefeated with his Angelechy Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-10-genesys/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-9-genesys/": [
     {
       "t": "p",
-      "r": ["We’re in Round 10 of the Genesys Main Event here at YCS Houston! Here’s the breakdown of Decks currently at the top 20 tables!"]
+      "r": ["We are now in Round 9 of Genesys here at YCS Houston! Here’s the breakdown of Decks starting the day off at the top 20 tables.\n"]
     },
     {
       "t": "p",
@@ -5014,11 +5018,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Blitzclique","7"],["Angelechy Blitzclique","6"],["Angelechy","5"],["Magistus Fairy Tail","3"],["HERO Destiny HERO","2"],["Ancient Fairy Angelechy","2"],["Jurrac Snake-Eye Fire King","1"],["Chimera Invoked","1"],["Angelechy White Forest","1"],["Chimera","1"],["Artmage","1"],["Kaiju K9 Radiant Typhoon","1"],["Dark Time Wizard","1"],["B.E.S. Angelechy","1"],["Labrynth","1"],["Snake-Eye Elfnote","1"],["Kaiju Blitzclique","1"],["Dracotail Labrynth","1"],["Invoked","1"],["Trains","1"],["Kairyu-Shin","1"]]
+      "rows": [["Deck Types","Count"],["Blitzclique","9"],["Angelechy Blitzclique","5"],["Angelechy","5"],["Ancient Fairy Angelechy","3"],["Magistus Fairy Tail","3"],["HERO Destiny HERO","2"],["Light and Darkness Ritual","2"],["Dark Time Wizard Radiant Typhoon","1"],["Kaiju Blitzclique","1"],["Invoked","1"],["Kaiju K9 Radiant Typhoon","1"],["Trains","1"],["Zombie Vampire Pumpking","1"],["Atlantis","1"],["Labrynth","1"],["Dracotail Labrynth","1"],["Snake-Eye Elfnote","1"],["Chimera Invoked","1"]]
     },
     {
       "t": "p",
-      "r": ["Blitzclique Decks and Angelechy strategies continue to dominate in the Genesys Main Event at YCS Houston! Lots of other strategies also remain at the top tables, including Labrynth, Invoked, and Dark Time Wizard. Follow the coverage to see which Decks ultimately make the cut to the Top 8 in the Genesys Main Event!"]
+      "r": ["Blitzclique Decks are still dominating the top tables, with almost a quarter of the Decks being a pure Blitzclique strategy. Following behind Blitzclique is Angelechy, a strategy that gained a huge boost in support from ",{"i":"Beyond the Brave"}," and is currently showing success in both Genesys and Advanced this weekend. While those two strategies are the most represented, there is still a nice variety of strategies being played, including Destiny HERO, Dark Time Wizard, and Atlantis! Follow the coverage to see which Decks ultimately make it into today’s Top 8!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-7-feature-match-randy-moreno-vs-rudra-vidyasagar/": [
@@ -5083,22 +5087,22 @@
       "r": [{"who":"Randy Osmar Moreno","t":"Randy Moreno"}," takes a 2-1 victory with his ",{"b":"Dark Magician"}," Deck and advances in the tournament with a 7-0 record!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-11-advanced/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-10-genesys/": [
     {
       "t": "p",
-      "r": ["We’re in Round 11 of the Advanced Main Event at YCS Houston! Here’s a breakdown of the Decks Dueling at the top 20 tables!"]
+      "r": ["We’re in Round 10 of the Genesys Main Event here at YCS Houston! Here’s the breakdown of Decks currently at the top 20 tables!"]
     },
     {
       "t": "p",
-      "r": ["Here’s the breakdown by the numbers:"]
+      "r": ["Here’s how it looks by the numbers:"]
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Ars Magna Elfnote","14"],["Angelechy","11"],["Light and Darkness Ritual","7"],["Branded","2"],["Mitsurugi Light and Darkness","2"],["Invoked","1"],["Dark Magician","1"],["@Ignister Maliss","1"],["Radiant Typhoon Sky Striker","1"]]
+      "rows": [["Deck Types","Count"],["Blitzclique","7"],["Angelechy Blitzclique","6"],["Angelechy","5"],["Magistus Fairy Tail","3"],["HERO Destiny HERO","2"],["Ancient Fairy Angelechy","2"],["Jurrac Snake-Eye Fire King","1"],["Chimera Invoked","1"],["Angelechy White Forest","1"],["Chimera","1"],["Artmage","1"],["Kaiju K9 Radiant Typhoon","1"],["Dark Time Wizard","1"],["B.E.S. Angelechy","1"],["Labrynth","1"],["Snake-Eye Elfnote","1"],["Kaiju Blitzclique","1"],["Dracotail Labrynth","1"],["Invoked","1"],["Trains","1"],["Kairyu-Shin","1"]]
     },
     {
       "t": "p",
-      "r": ["Ars Magna Elfnote Decks are the most represented at the top 20 tables, but Angelechy Decks aren’t far behind with more than a quarter of the Duelists at the top 20 tables piloting the Angelechy strategy. Various other strategies also remain in contention for a Top 8 finish. Follow the coverage to see which Duelists and Decks ultimately make it into the Top 8 cut!"]
+      "r": ["Blitzclique Decks and Angelechy strategies continue to dominate in the Genesys Main Event at YCS Houston! Lots of other strategies also remain at the top tables, including Labrynth, Invoked, and Dark Time Wizard. Follow the coverage to see which Decks ultimately make the cut to the Top 8 in the Genesys Main Event!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-6-feature-match-michael-henry-vs-abel-ramos/": [
@@ -5251,22 +5255,22 @@
       "r": [{"who":"Abel Ramos Jr.","t":"Abel Ramos"}," continues 5-1 with his Dark Magician Light and Darkness Ritual Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-11-genesys/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-11-advanced/": [
     {
       "t": "p",
-      "r": ["We’re in Round 11 of the Genesys Main Event here at YCS Houston! Here’s the breakdown of Decks currently at the top 20 tables!"]
+      "r": ["We’re in Round 11 of the Advanced Main Event at YCS Houston! Here’s a breakdown of the Decks Dueling at the top 20 tables!"]
     },
     {
       "t": "p",
-      "r": ["Here’s how it looks by the numbers:"]
+      "r": ["Here’s the breakdown by the numbers:"]
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Blitzclique","8"],["Angelechy","6"],["Angelechy Blitzclique","6"],["Ancient Fairy Angelechy","3"],["Magistus Fairy Tail","3"],["HERO Destiny HERO","2"],["Chimera","1"],["Synchron Junk Assault Mode","1"],["Light and Darkness Ritual","1"],["Exosister","1"],["Invoked","1"],["Trains","1"],["Dracotail Labrynth","1"],["Angelechy White Forest","1"],["Kaiju K9 Radiant Typhoon","1"],["Kairyu-Shin","1"],["Snake-Eye Elfnote","1"],["Kaiju Blitzclique","1"]]
+      "rows": [["Deck Types","Count"],["Ars Magna Elfnote","14"],["Angelechy","11"],["Light and Darkness Ritual","7"],["Branded","2"],["Mitsurugi Light and Darkness","2"],["Invoked","1"],["Dark Magician","1"],["@Ignister Maliss","1"],["Radiant Typhoon Sky Striker","1"]]
     },
     {
       "t": "p",
-      "r": ["Blitzclique Decks and Angelechy strategies still lead the pack in Round 11, but a variety of strategies remain at the top tables! Follow the coverage to see which Decks ultimately make the cut to the Top 8 in the Genesys Main Event!"]
+      "r": ["Ars Magna Elfnote Decks are the most represented at the top 20 tables, but Angelechy Decks aren’t far behind with more than a quarter of the Duelists at the top 20 tables piloting the Angelechy strategy. Various other strategies also remain in contention for a Top 8 finish. Follow the coverage to see which Duelists and Decks ultimately make it into the Top 8 cut!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-8-feature-match-stephen-crouse-vs-jermaine-leach/": [
@@ -5327,10 +5331,10 @@
       "r": [{"who":"Jermaine Timmothy Leach","t":"Jermaine Leach"}," is victorious with R.B. Cyber Dragons!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-12-genesys/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-11-genesys/": [
     {
       "t": "p",
-      "r": ["We’re in the final Swiss Round of the Genesys Main Event here at YCS Houston! Here’s the breakdown of Decks currently at the top 20 tables!"]
+      "r": ["We’re in Round 11 of the Genesys Main Event here at YCS Houston! Here’s the breakdown of Decks currently at the top 20 tables!"]
     },
     {
       "t": "p",
@@ -5338,11 +5342,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Blitzclique","9"],["Angelechy","6"],["Angelechy Blitzclique","6"],["Ancient Fairy Angelechy","3"],["Magistus Fairy Tail","3"],["HERO Destiny HERO","2"],["Zombie Vampire Pumpking","1"],["Spright Blitzclique","1"],["Invoked","1"],["Dracotail Labrynth","1"],["Snake-Eye Elfnote","1"],["Angelechy White Forest","1"],["Kaiju K9 Radiant Typhoon","1"],["Exosister","1"],["Kairyu-Shin","1"],["Trains","1"],["Kaiju Blitzclique","1"]]
+      "rows": [["Deck Types","Count"],["Blitzclique","8"],["Angelechy","6"],["Angelechy Blitzclique","6"],["Ancient Fairy Angelechy","3"],["Magistus Fairy Tail","3"],["HERO Destiny HERO","2"],["Chimera","1"],["Synchron Junk Assault Mode","1"],["Light and Darkness Ritual","1"],["Exosister","1"],["Invoked","1"],["Trains","1"],["Dracotail Labrynth","1"],["Angelechy White Forest","1"],["Kaiju K9 Radiant Typhoon","1"],["Kairyu-Shin","1"],["Snake-Eye Elfnote","1"],["Kaiju Blitzclique","1"]]
     },
     {
       "t": "p",
-      "r": ["Blitzclique Decks extend their dominance at the top tables in this final Swiss Round! Follow the coverage to see which strategies make it into the Top 8 of the Genesys Main Event here at YCS Houston!"]
+      "r": ["Blitzclique Decks and Angelechy strategies still lead the pack in Round 11, but a variety of strategies remain at the top tables! Follow the coverage to see which Decks ultimately make the cut to the Top 8 in the Genesys Main Event!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-9-feature-match-steven-trifunoski-vs-james-valentino/": [
@@ -5387,22 +5391,22 @@
       "r": [{"who":"Steven Trifunoski","t":"Steven Trifunoski"}," amasses an impressive field before his first turn even begins, prompting ",{"who":"James Miles Valentino","t":"Valentino"}," to concede! ",{"who":"Steven Trifunoski","t":"Steven Trifunoski"}," wins 2-0 in Round 9 to finish the Swiss Rounds with an 8-1 record!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-12-advanced/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-12-genesys/": [
     {
       "t": "p",
-      "r": ["We’re in Round 12 of the Advanced Main Event at YCS Houston! Here’s a breakdown of the Decks Dueling at the top 20 tables!"]
+      "r": ["We’re in the final Swiss Round of the Genesys Main Event here at YCS Houston! Here’s the breakdown of Decks currently at the top 20 tables!"]
     },
     {
       "t": "p",
-      "r": ["Here’s the breakdown by the numbers:"]
+      "r": ["Here’s how it looks by the numbers:"]
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Elfnote","9"],["Angelechy","8"],["Light and Darkness Ritual","5"],["Mitsurugi","4"],["Power Patron Elfnote","3"],["Branded","2"],["K9","1"],["Light and Darkness Ritual Orcust","1"],["Power Patron","1"],["Sacred Beast","1"],["Dark Magician","1"],["Dogmatika Branded","1"],["@Ignister Maliss","1"],["Invoked","1"],["Radiant Typhoon Sky Striker","1"]]
+      "rows": [["Deck Types","Count"],["Blitzclique","9"],["Angelechy","6"],["Angelechy Blitzclique","6"],["Ancient Fairy Angelechy","3"],["Magistus Fairy Tail","3"],["HERO Destiny HERO","2"],["Zombie Vampire Pumpking","1"],["Spright Blitzclique","1"],["Invoked","1"],["Dracotail Labrynth","1"],["Snake-Eye Elfnote","1"],["Angelechy White Forest","1"],["Kaiju K9 Radiant Typhoon","1"],["Exosister","1"],["Kairyu-Shin","1"],["Trains","1"],["Kaiju Blitzclique","1"]]
     },
     {
       "t": "p",
-      "r": ["Elfnote and Angelechy strategies continue to be the most popular at the top tables, but various other strategies including those based around ",{"b":"Light and Darkness Ritual"}," and ",{"b":"Dark Magician"}," remain present at the top of the competition! Follow the coverage to see which Decks ultimately make it into the Top 8 of the Advanced Main Event at YCS Houston!"]
+      "r": ["Blitzclique Decks extend their dominance at the top tables in this final Swiss Round! Follow the coverage to see which strategies make it into the Top 8 of the Genesys Main Event here at YCS Houston!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-format-round-9-feature-match-mario-de-micco-vs-kobe-short/": [
@@ -5555,10 +5559,10 @@
       "r": [{"who":"Kobe Louis Short","t":"Kobe Short"}," advances to Day 2 in the Advanced Format with his Branded Light and Darkness Ritual Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-13-advanced/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-12-advanced/": [
     {
       "t": "p",
-      "r": ["The penultimate Swiss Round of the Advanced Main Event at YCS Houston is underway! Here’s a breakdown of the Decks at the top 20 tables!"]
+      "r": ["We’re in Round 12 of the Advanced Main Event at YCS Houston! Here’s a breakdown of the Decks Dueling at the top 20 tables!"]
     },
     {
       "t": "p",
@@ -5566,11 +5570,11 @@
     },
     {
       "t": "table",
-      "rows": [["Deck Types","Count"],["Angelechy","10"],["Elfnote","8"],["Light and Darkness Ritual","7"],["Power Patron Elfnote","4"],["Mitsurugi","2"],["Dark Magician","1"],["D/D/D","1"],["Branded Dracotail","1"],["K9","1"],["Yummy","1"],["Light and Darkness Ritual Orcust","1"],["Dogmatika Branded","1"],["Branded","1"],["Radiant Typhoon Sky Striker","1"]]
+      "rows": [["Deck Types","Count"],["Elfnote","9"],["Angelechy","8"],["Light and Darkness Ritual","5"],["Mitsurugi","4"],["Power Patron Elfnote","3"],["Branded","2"],["K9","1"],["Light and Darkness Ritual Orcust","1"],["Power Patron","1"],["Sacred Beast","1"],["Dark Magician","1"],["Dogmatika Branded","1"],["@Ignister Maliss","1"],["Invoked","1"],["Radiant Typhoon Sky Striker","1"]]
     },
     {
       "t": "p",
-      "r": ["Angelechy Decks now make up a quarter of the Decks at the top tables. Meanwhile, 8 Duelists at the top tables are using a dedicated Elfnote Deck, with 4 more Duelists incorporating a Power Patron engine into their Elfnote Deck, making the Elfnote strategy one of the most rampant at the top tables. Decks built around ",{"b":"Light and Darkness Ritual"}," also have a strong presence with 7 Duelists at the top tables using the strategy. Lots of other Decks including D/D/D, K9, and Yummy remain at the top tables too. Follow the coverage to see which Decks ultimately make it into the Top 8!"]
+      "r": ["Elfnote and Angelechy strategies continue to be the most popular at the top tables, but various other strategies including those based around ",{"b":"Light and Darkness Ritual"}," and ",{"b":"Dark Magician"}," remain present at the top of the competition! Follow the coverage to see which Decks ultimately make it into the Top 8 of the Advanced Main Event at YCS Houston!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-round-10-feature-match-matthew-bauer-vs-peter-brown/": [
@@ -5635,18 +5639,22 @@
       "r": [{"who":"Peter Edward Brown","t":"Peter Brown"}," advances with an 8-2 record in the Advanced Main Event at YCS Houston!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-sundays-dragon-duel-top-4/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-top-tables-update-round-13-advanced/": [
     {
       "t": "p",
-      "r": ["We have our Top 4 for Sunday’s Dragon Duel Tournament at YCS Houston!"]
+      "r": ["The penultimate Swiss Round of the Advanced Main Event at YCS Houston is underway! Here’s a breakdown of the Decks at the top 20 tables!"]
     },
     {
       "t": "p",
-      "r": ["From left to right:\n1st Place – Vincent F.\n2nd Place – Maxwell S.\n3rd Place – Fergus G.\n4th Place – Alfred G."]
+      "r": ["Here’s the breakdown by the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Angelechy","10"],["Elfnote","8"],["Light and Darkness Ritual","7"],["Power Patron Elfnote","4"],["Mitsurugi","2"],["Dark Magician","1"],["D/D/D","1"],["Branded Dracotail","1"],["K9","1"],["Yummy","1"],["Light and Darkness Ritual Orcust","1"],["Dogmatika Branded","1"],["Branded","1"],["Radiant Typhoon Sky Striker","1"]]
     },
     {
       "t": "p",
-      "r": ["Congratulations to our Dragon Duelists!"]
+      "r": ["Angelechy Decks now make up a quarter of the Decks at the top tables. Meanwhile, 8 Duelists at the top tables are using a dedicated Elfnote Deck, with 4 more Duelists incorporating a Power Patron engine into their Elfnote Deck, making the Elfnote strategy one of the most rampant at the top tables. Decks built around ",{"b":"Light and Darkness Ritual"}," also have a strong presence with 7 Duelists at the top tables using the strategy. Lots of other Decks including D/D/D, K9, and Yummy remain at the top tables too. Follow the coverage to see which Decks ultimately make it into the Top 8!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-round-9-feature-match-dawson-schawang-vs-wesley-wilbur/": [
@@ -5719,38 +5727,18 @@
       "r": [{"who":"Dawson James Schawang","t":"Dawson Schawang"}," is victorious with Trains!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-5/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-sundays-dragon-duel-top-4/": [
     {
       "t": "p",
-      "r": ["The final update to the October 19th Forbidden & Limited List has been revealed on our live stream! Here it is:"]
+      "r": ["We have our Top 4 for Sunday’s Dragon Duel Tournament at YCS Houston!"]
     },
     {
       "t": "p",
-      "r": [{"u":"Newly Forbidden:\n"}," Elfnote Tinia\nAzamina Ilia Silvia\nRed-Eyes Dark Dragoon\nAme no Habakiri no Mitsurugi\nVarudras, the Final Bringer of the End Times\nCrossout Designator\nTriple Tactics Talent"]
+      "r": ["From left to right:\n1st Place – Vincent F.\n2nd Place – Maxwell S.\n3rd Place – Fergus G.\n4th Place – Alfred G."]
     },
     {
       "t": "p",
-      "r": [{"u":"Newly Limited:\n"}," Branded in High Spirits"]
-    },
-    {
-      "t": "p",
-      "r": [{"b":"Newly Semi-Limited:"},"\nSky Striker Mobilize – Engage!"]
-    },
-    {
-      "t": "p",
-      "r": ["Here are the other updates for the full reveal:"]
-    },
-    {
-      "t": "p",
-      "r": ["Part 1\nPart 2\nPart 3\nPart 4"]
-    },
-    {
-      "t": "p",
-      "r": ["Click here to find the complete Forbidden & Limited List, with the new list added shortly after our broadcast."]
-    },
-    {
-      "t": "p",
-      "r": ["Get your Deck ready for a changed Dueling landscape starting October 19th!"]
+      "r": ["Congratulations to our Dragon Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-round-11-feature-match-brandon-diez-vs-raycel-rodriguez/": [
@@ -5823,14 +5811,38 @@
       "r": [{"who":"Brandon Joseph Diez","t":"Brandon Diez"}," wins the Match with his Destiny HERO Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-1st-place-after-swiss-duelist-genesys/": [
+  "https://yugiohblog.konami.com/2026/ycs/forbidden-limited-list-update-part-5/": [
     {
       "t": "p",
-      "r": ["At YCS events, the Duelist that places 1st after all Swiss Rounds are completed receives an oversized version of the current YCS prize card!"]
+      "r": ["The final update to the October 19th Forbidden & Limited List has been revealed on our live stream! Here it is:"]
     },
     {
       "t": "p",
-      "r": ["This weekend, Arunnaveesiri Ittipat from Toronto, Canada received that honor. He finished the Swiss Rounds of the Genesys Main Event in first place with his Magistus Fairy Tail Deck! He’s taking home an oversized version of the ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," prize card. Congratulations!"]
+      "r": [{"u":"Newly Forbidden:\n"}," Elfnote Tinia\nAzamina Ilia Silvia\nRed-Eyes Dark Dragoon\nAme no Habakiri no Mitsurugi\nVarudras, the Final Bringer of the End Times\nCrossout Designator\nTriple Tactics Talent"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Newly Limited:\n"}," Branded in High Spirits"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Newly Semi-Limited:"},"\nSky Striker Mobilize – Engage!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here are the other updates for the full reveal:"]
+    },
+    {
+      "t": "p",
+      "r": ["Part 1\nPart 2\nPart 3\nPart 4"]
+    },
+    {
+      "t": "p",
+      "r": ["Click here to find the complete Forbidden & Limited List, with the new list added shortly after our broadcast."]
+    },
+    {
+      "t": "p",
+      "r": ["Get your Deck ready for a changed Dueling landscape starting October 19th!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-round-10-feature-match-aj-jones-vs-nathan-chau/": [
@@ -5935,10 +5947,14 @@
       "r": [{"who":"Nathan Cao Chau","t":"Nathan Chau"}," wins the match with his Blitzclique Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/check-out-the-semi-finals-and-finals-of-ycs-houston-on-konamis-official-stream/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-1st-place-after-swiss-duelist-genesys/": [
     {
       "t": "p",
-      "r": ["The Semi-Finals and Finals of the Advanced Main Event and Genesys Main Event at YCS Houston will be available to watch on Konami’s official live stream! You can find it on YouTube and Twitch. Tune in and be the first to find out which Duelists will become champions this weekend!"]
+      "r": ["At YCS events, the Duelist that places 1st after all Swiss Rounds are completed receives an oversized version of the current YCS prize card!"]
+    },
+    {
+      "t": "p",
+      "r": ["This weekend, Arunnaveesiri Ittipat from Toronto, Canada received that honor. He finished the Swiss Rounds of the Genesys Main Event in first place with his Magistus Fairy Tail Deck! He’s taking home an oversized version of the ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," prize card. Congratulations!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-round-12-feature-match-carlo-carrillo-vs-chance-larson/": [
@@ -6079,14 +6095,10 @@
       "r": [{"who":"Chance James Larson","t":"Chance Larson"}," continues on with a 10-2 record with his Branded Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-1st-place-after-swiss-duelist-advanced/": [
+  "https://yugiohblog.konami.com/2026/ycs/check-out-the-semi-finals-and-finals-of-ycs-houston-on-konamis-official-stream/": [
     {
       "t": "p",
-      "r": ["At YCS events, the Duelist that places 1st after all Swiss Rounds are completed receives an oversized version of the current YCS prize card!"]
-    },
-    {
-      "t": "p",
-      "r": ["This weekend, ",{"who":"Jamie Lewis Hunter","t":"Jamie Hunter"}," from the United Kingdom received that honor. He finished the Swiss Rounds of the Advanced Main Event in first place with a 13-1 record using his Angelechy Deck! He’s taking home an oversized version of the ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," prize card. Congratulations!"]
+      "r": ["The Semi-Finals and Finals of the Advanced Main Event and Genesys Main Event at YCS Houston will be available to watch on Konami’s official live stream! You can find it on YouTube and Twitch. Tune in and be the first to find out which Duelists will become champions this weekend!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-round-11-feature-match-aeres-james-alexander-ham-vs-ivan-alberto-robledo-villa/": [
@@ -6151,74 +6163,14 @@
       "r": [{"who":"Aeres James Alexander Ham","t":"Aeres Ham"}," takes this Match with Angelechy!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-dragon-duel-championship-vincent-f-vs-maxwell-s/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-1st-place-after-swiss-duelist-advanced/": [
     {
       "t": "p",
-      "r": ["It all comes down to this! We have the two top Dragon Duelists from this weekend! Hailing from Lafayette, we have Vincent F. with a Dark Magician Deck focused around ",{"b":"Light and Darkness Ritual"},". He’s facing Maxwell S., from right here in Houston, using a Mitsurugi ",{"b":"Red Dragon Archfiend"}," Deck. The winner here will take home the Super Rare ",{"b":"Number 93: Utopia Kaiser"},", the trophy, and the title of YCS Houston Dragon Duel Champion!"]
+      "r": ["At YCS events, the Duelist that places 1st after all Swiss Rounds are completed receives an oversized version of the current YCS prize card!"]
     },
     {
       "t": "p",
-      "r": [{"u":"Duel 1"}]
-    },
-    {
-      "t": "p",
-      "r": ["Maxwell won the dice roll and chose to play first. Vincent had a hand of ",{"b":"Black Chaos"},"; ",{"b":"Mulcharmy Fuwalos"},"; ",{"b":"Crossout Designator"},"; ",{"b":"The Fallen & The Virtuous"},"; and ",{"b":"Dark Magician, the Pharaoh’s Servant"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["Maxwell S."]
-    },
-    {
-      "t": "p",
-      "r": ["Maxwell Special Summoned ",{"b":"Bone Archfiend"}," by discarding ",{"b":"Crimson Resonator"},". ",{"b":"Bone Archfiend"}," sent ",{"b":"Vision Resonator"}," to the Graveyard, and Vincent responded with Fuwalos to start drawing cards if Maxwell continued his plays. Maxwell added ",{"b":"Crimson Gaia"}," to his hand with Vision’s effect, and he played that to add ",{"b":"Soul Resonator"},". He Normal Summoned Soul to add ",{"b":"Darkness Resonator"}," to his hand. He Synchro Summoned ",{"b":"Red Rising Dragon"},", and Rising brought ",{"b":"Crimson Resonator"}," to the field, which in turn brought ",{"b":"Synkron Resonator"}," and ",{"b":"Soul Resonator"}," to the field. Maxwell Synchro Summoned ",{"b":"Scarred Dragon Archfiend"},", then ",{"b":"Hot Red Dragon Archfiend Abyss"},". Scarred brought ",{"b":"Red Dragon Archfiend"}," to the field. He tried to Special Summon ",{"b":"Darkness Resonator"},", but was hit by Vincent’s ",{"b":"Dominus Impulse"},". He played ",{"b":"Pre-Preparation of Rites"},", adding ",{"b":"Mitsurugi Mirror"}," and ",{"b":"Ame no Habakiri no Mitsurugi"}," to his hand. He used Habakiri’s effect to Special Summon ",{"b":"Mitsurugi no Mikoto, Saji"},", and Tributed it. Saji’s effect added ",{"b":"Mitsurugi Prayers"}," to his hand. He played ",{"b":"Mitsurugi Ritual"},", Tributing ",{"b":"Mitsurugi no Mikoto, Aramasa"}," and ",{"b":"Mitsurugi no Mikoto, Kusanagi"}," from his Deck to Ritual Summon Habakiri. Kusanagi returned Saji to his hand, and Aramasa added ",{"b":"Ame no Murakumo no Mitsurugi"}," to his hand. He played ",{"b":"Mitsurugi Mirror"},", Tributing Habakiri to Ritual Summon Murakumo, and Habakiri’s effect let him add ",{"b":"Mitsurugi Great Purification"}," to his hand. He Set one back row card, then stacked ",{"b":"Red Dragon Archfiend"}," and Murakumo for ",{"b":"The Zombie Vampire"},". He tried to use its effect by detaching Murakumo, but was hit by ",{"b":"Infinite Impermanence"},". Maxwell played Prayers, taking 800 damage to Special Summon Murakumo."]
-    },
-    {
-      "t": "p",
-      "r": ["After all that, Fuwalos had let Vincent draw ",{"b":"Secrets of Dark Magic"},", ",{"b":"Celtic Mystic"},", a second Black Chaos, ",{"b":"Magician’s Rod"},", ",{"b":"Dark Magical Circle"},", plus the ",{"b":"Infinite Impermanence"}," and ",{"b":"Dominus Impulse"}," he’d already used this turn."]
-    },
-    {
-      "t": "p",
-      "r": ["Vincent drew another Fuwalos. He Special Summoned ",{"b":"Dark Magician, the Pharaoh’s Servant"}," by revealing ",{"b":"Crossout Designator"},", then added ",{"b":"Dark Magical Circle"}," to his hand. He activated its Quick Effect next, discarding ",{"b":"Crossout Designator"},", and Maxwell negated it with ",{"b":"Hot Red Dragon Archfiend Abyss"},". Vincent Normal Summoned ",{"b":"Magician’s Rod"},", Maxwell Chained Murakumo to force Vincent to discard, and he discarded Fuwalos. Rod added ",{"b":"Dark Magical Curtain"}," to his hand. He used ",{"b":"Black Chaos"},"’s effect to place ",{"b":"Mind Shuffle"}," on the field. He used its effect, and Maxwell flipped Great Purification by Tributing Murakumo to negate and destroy ",{"b":"Mind Shuffle"},". Murakumo’s effect let Maxwell add Prayers to his hand, then he Special Summoned Murakumo. Murakumo now wiped out all of Vincent’s monsters! Vincent continued, flipping up ",{"b":"Dark Magical Circle"}," and using Curtain to Special Summon ",{"b":"Dark Magician"}," and add ",{"b":"The Gaze of Timaeus"}," to his hand. ",{"b":"Dark Magical Circle"}," then banished Murakumo! He banished ",{"b":"Dark Magician"}," to Special Summon ",{"b":"Dark Magician of Destruction"},"! He added ",{"b":"Illusion of Chaos"}," to his hand. He used Illusion’s effect to add ",{"b":"Magicians’ Souls"}," to his hand, and put ",{"b":"Celtic Mystic"}," on top of his Deck. He Special Summoned ",{"b":"Black Chaos"}," by shuffling ",{"b":"Illusion of Chaos"}," into the Deck. Maxwell revealed ",{"b":"Nibiru, the Primal Being"},"! Vincent’s monsters were gone, replaced with a 12,900 ATK /11,000 DEF Primal Being Token. Maxwell now activated ",{"b":"Vision Resonator"},"’s effect to add ",{"b":"Red Reign"}," to his hand. Vincent Special Summoned ",{"b":"Magicians’ Souls"}," by sending ",{"b":"Magician of Dark Chaos – Black Chaos"}," to the Graveyard. He used its effect, sending Circle and ",{"b":"The Fallen & The Virtuous"}," to the Graveyard to draw ",{"b":"Griffoh"}," and ",{"b":"Ash Blossom & Joyous Spring"},". He activated ",{"b":"The Gaze of Timaeus"},"! He returned ",{"b":"Dark Magician of Destruction"}," from the Graveyard to Special Summon ",{"b":"Red-Eyes Dark Dragoon"},"! He activated ",{"b":"Griffoh"}," to Set ",{"b":"Mind Shuffle"},". He used the Primal Being Token and ",{"b":"Magicians’ Souls"}," to Link Summon ",{"b":"Dharc the Dark Charmer, Gloomy"},", and used it to Special Summon ",{"b":"Hot Red Dragon Archfiend Abyss"},"! Finally, he moved to the Battle Phase. Hot Red Dragon attacked Nibiru, and Dragoon attacked directly, dropping Maxwell to 2150 Life Points."]
-    },
-    {
-      "t": "p",
-      "r": ["Maxwell activated ",{"b":"Crimson Gaia"},"’s effect, and Vincent responded with ",{"b":"Mind Shuffle"},". He added ",{"b":"Skull Archfiend of Chaos"}," to his hand and discarded it. ",{"b":"Crimson Gaia"}," then put a ",{"b":"Fiend Piece Golem"}," in his hand. Skull Archfiend’s effect sent ",{"b":"Light and Darkness Ritual"}," to Vincent’s Graveyard and put ",{"b":"Black Luster Soldier – Soldier of Light and Darkness"}," in his hand. Maxwell Special Summoned ",{"b":"Bone Archfiend"}," by discarding Saji. He Special Summoned ",{"b":"Darkness Resonator"},", then Special Summoned ",{"b":"Fiend Piece Golem"},". He activated Prayers, and Vincent negated it with Ash Blossom. Maxwell used ",{"b":"Darkness Resonator"}," and ",{"b":"Fiend Piece Golem"}," to Synchro Summon ",{"b":"Draco Berserker of the Tenyi"},". He Set one back row card and moved to the Battle Phase. Vincent flipped ",{"b":"Dark Magical Curtain"}," to Special Summon ",{"b":"Black Chaos"},". Maxwell sent Draco Berserker to attack Dharc, gaining 1150 ATK, and it then attacked Dragoon."]
-    },
-    {
-      "t": "p",
-      "r": ["Vincent drew ",{"b":"Celtic Mystic"},". He added ",{"b":"Light and Darkness Ritual"}," and ",{"b":"Magician of Dark Chaos – Black Chaos"}," to his hand, and played it to Ritual Summon the Magician by Tributing Black Luster. He used his Magician’s effect, adding ",{"b":"The Gaze of Timaeus"}," to his hand. He activated the effect of Skull Archfiend, returning Dragoon, Black Luster, and his banished ",{"b":"Dark Magician"}," to Special Summon the Skull Archfiend. He banished his Ritual Monster to Special Summon ",{"b":"Dark Magician of Destruction"},", adding ",{"b":"Dark Magical Curtain"}," to his hand, and he played that to Special Summon ",{"b":"Dark Magician"},". He activated Gaze, using ",{"b":"Dark Magician"}," to bring forth ",{"b":"Red-Eyes Dark Dragoon"},"! He negated Draco Berserker with Hot Red Dragon, then activated Dragoon’s effect to destroy Draco Berserker! Maxwell tried to use ",{"b":"Red Reign"},", but Dragoon negated and destroyed it! Vincent sent everything to attack and end the first Duel!"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel 2"}]
-    },
-    {
-      "t": "p",
-      "r": ["Maxwell played first for this Duel. Vincent had a hand of ",{"b":"Griffoh"},", ",{"b":"Mulcharmy Fuwalos"},", two copies of ",{"b":"Kuriboh – Multiply!"},", and ",{"b":"Ragged Records of Rites"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["Vincent F."]
-    },
-    {
-      "t": "p",
-      "r": ["Maxwell led with ",{"b":"Pre-Preparation of Rites"},", and Vincent Chained Fuwalos. Maxwell added Habakiri and ",{"b":"Mitsurugi Ritual"}," to his hand. He played ",{"b":"Crimson Gaia"},", adding ",{"b":"Soul Resonator"},". He Normal Summoned Soul, and activated its effect. Vincent Chained to Special Summon his Kuriboh, and Maxwell added ",{"b":"Bone Archfiend"},". He Special Summoned ",{"b":"Bone Archfiend"},", discarding Prayers. He activated ",{"b":"Bone Archfiend"},", Vincent Chained the Kuriboh’s effect, and then Chained ",{"b":"Griffoh"},"’s effect. Vincent Set ",{"b":"Mind Shuffle"},", then Special Summoned a second ",{"b":"Kuriboh – Multiply!"}," from his Deck, and ",{"b":"Bone Archfiend"}," sent ",{"b":"Crimson Resonator"}," to the Graveyard. Maxwell Synchro Summoned ",{"b":"Red Rising Dragon"},". Vincent drew ",{"b":"Dark Magical Curtain"}," with Fuwalos, and Chained to Red Rising’s effect with ",{"b":"Mind Shuffle"},"’s effect, and Maxwell activated ",{"b":"Droll & Lock Bird"}," (since Vincent had drawn from Fuwalos). ",{"b":"Mind Shuffle"}," couldn’t resolve under Droll’s effect, and Red Rising brought ",{"b":"Crimson Resonator"}," to the field. He used Crimson to Special Summon ",{"b":"Synkron Resonator"}," and ",{"b":"Vision Resonator"},". He Synchro Summoned ",{"b":"Scarred Dragon Archfiend"},", then used it to Synchro Summon ",{"b":"Hot Red Dragon Archfiend Abyss"},". Scarred brought ",{"b":"Red Dragon Archfiend"}," to the field. He Special Summoned Vision and ",{"b":"Fiend Piece Golem"},". He Synchro Summoned ",{"b":"Crimson Blade Dragon"},", activating its effect. Vincent Chained his Kuriboh, and it was negated by Hot Red Dragon. ",{"b":"Crimson Blade Dragon"}," let Maxwell Special Summon Murakumo from the Deck with its effects negated. He Synchro Summoned ",{"b":"Bystial Dis Pater"},". He activated ",{"b":"Mitsurugi Ritual"},", Tributing Saji and Aramasa from his Deck to Ritual Summon Habakiri from his hand."]
-    },
-    {
-      "t": "p",
-      "r": ["Vincent drew ",{"b":"The Gaze of Timaeus"},". He used one of his Kuribohs to Link Summon ",{"b":"Relinquished Anima"},", pointing at ",{"b":"Crimson Blade Dragon"},", and used its effect to equip it. Then he Link Summoned ",{"b":"S:P Little Knight"},", targeting Murakumo to banish it. Vincent played Ragged Records, but Maxwell negated it with Hot Red Dragon. Vincent played Curtain to Special Summon ",{"b":"Black Chaos"},", using its effect to banish two of Maxwell’s cards. Maxwell Chained Dis Pater, and Vincent responded with ",{"b":"S:P Little Knight"}," to banish ",{"b":"Black Chaos"}," and Hot Red Dragon temporarily. Finally, ",{"b":"Black Chaos"}," banished Dis Pater and Habakiri. Vincent Normal Summoned ",{"b":"Kuriboh – Multiply!"},", then activated ",{"b":"Mind Shuffle"},"’s effect. He added Skull Archfiend and discarded it. Skull Archfiend then sent ",{"b":"Light and Darkness Ritual"}," to the Graveyard to add ",{"b":"Magician of Dark Chaos – Black Chaos"}," to his hand. He activated ",{"b":"Light and Darkness Ritual"},"’s effect, returning it to his hand along with ",{"b":"Griffoh"},". He played ",{"b":"Light and Darkness Ritual"},", using ",{"b":"Griffoh"}," as the Tribute for his Magician. He activated the Magician’s effect to add ",{"b":"Light and Darkness Ritual"}," back to his hand. He used Magician to banish ",{"b":"Crimson Gaia"}," face-down. He banished the Magician to Special Summon ",{"b":"Dark Magician of Destruction"},", which added ",{"b":"Magicians’ Souls"}," to his hand. He Special Summoned Souls by sending ",{"b":"Black Chaos"}," to the Graveyard. He activated its effect, sending ",{"b":"Light and Darkness Ritual"}," to the Graveyard to draw ",{"b":"Dark Magician"},". He used ",{"b":"S:P Little Knight"}," and Souls to Link Summon ",{"b":"Selene, Queen of the Master Magicians"},", and put 6 Spell Counters on it. He used Selene’s effect to Special Summon ",{"b":"Black Chaos"},". He used Selene and ",{"b":"Black Chaos"}," to Link Summon Dharc, and used it to Special Summon Scarred from Maxwell’s Graveyard. He activated ",{"b":"The Gaze of Timaeus"},", sending ",{"b":"Dark Magician of Destruction"}," back to the Extra Deck to bring forth ",{"b":"Red-Eyes Dark Dragoon"},". He Special Summoned ",{"b":"Skull Archfiend of Chaos"}," from the Graveyard by returning ",{"b":"Griffoh"},", Gaze, and Curtain to the bottom of his Deck. He used Dharc and Kuriboh to Link Summon ",{"b":"W:P Fancy Ball"}," to finish the turn. In the End Phase, Hot Red Dragon returned to Maxwell’s field, and ",{"b":"Black Chaos"}," returned to Vincent’s field."]
-    },
-    {
-      "t": "p",
-      "r": ["Maxwell discarded ",{"b":"Droll & Lock Bird"}," to Special Summon ",{"b":"Bone Archfiend"}," from the Graveyard, and Vincent negated it with Dragoon. Maxwell sent Hot Red Dragon to attack Dragoon, destroying it in battle."]
-    },
-    {
-      "t": "p",
-      "r": ["Vincent drew Fuwalos. He used ",{"b":"Light and Darkness Ritual"},"’s effect, returning it and ",{"b":"Black Chaos"}," to his hand. Vincent used ",{"b":"W:P Fancy Ball"}," and Skull Archfiend to Link Summon ",{"b":"Accesscode Talker"},"! He used its effect to destroy Hot Red Dragon, and Maxwell banished ",{"b":"Soul Resonator"}," to protect his monster. Vincent used its effect again to destroy Hot Red Dragon, clearing the way for him to attack!"]
-    },
-    {
-      "t": "p",
-      "r": ["Vincent F. is your YCS Houston Dragon Duel Champion!"]
+      "r": ["This weekend, ",{"who":"Jamie Lewis Hunter","t":"Jamie Hunter"}," from the United Kingdom received that honor. He finished the Swiss Rounds of the Advanced Main Event in first place with a 13-1 record using his Angelechy Deck! He’s taking home an oversized version of the ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," prize card. Congratulations!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-round-13-feature-match-safwaan-muhammed-rahman-vs-pedro-luis-rodriguez/": [
@@ -6305,6 +6257,146 @@
     {
       "t": "p",
       "r": [{"who":"Safwaan Muhammed Rahman","t":"Safwaan Rahman"}," takes this Match with his ",{"b":"Dark Time Wizard"}," K9’s!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-dragon-duel-championship-vincent-f-vs-maxwell-s/": [
+    {
+      "t": "p",
+      "r": ["It all comes down to this! We have the two top Dragon Duelists from this weekend! Hailing from Lafayette, we have Vincent F. with a Dark Magician Deck focused around ",{"b":"Light and Darkness Ritual"},". He’s facing Maxwell S., from right here in Houston, using a Mitsurugi ",{"b":"Red Dragon Archfiend"}," Deck. The winner here will take home the Super Rare ",{"b":"Number 93: Utopia Kaiser"},", the trophy, and the title of YCS Houston Dragon Duel Champion!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 1"}]
+    },
+    {
+      "t": "p",
+      "r": ["Maxwell won the dice roll and chose to play first. Vincent had a hand of ",{"b":"Black Chaos"},"; ",{"b":"Mulcharmy Fuwalos"},"; ",{"b":"Crossout Designator"},"; ",{"b":"The Fallen & The Virtuous"},"; and ",{"b":"Dark Magician, the Pharaoh’s Servant"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["Maxwell S."]
+    },
+    {
+      "t": "p",
+      "r": ["Maxwell Special Summoned ",{"b":"Bone Archfiend"}," by discarding ",{"b":"Crimson Resonator"},". ",{"b":"Bone Archfiend"}," sent ",{"b":"Vision Resonator"}," to the Graveyard, and Vincent responded with Fuwalos to start drawing cards if Maxwell continued his plays. Maxwell added ",{"b":"Crimson Gaia"}," to his hand with Vision’s effect, and he played that to add ",{"b":"Soul Resonator"},". He Normal Summoned Soul to add ",{"b":"Darkness Resonator"}," to his hand. He Synchro Summoned ",{"b":"Red Rising Dragon"},", and Rising brought ",{"b":"Crimson Resonator"}," to the field, which in turn brought ",{"b":"Synkron Resonator"}," and ",{"b":"Soul Resonator"}," to the field. Maxwell Synchro Summoned ",{"b":"Scarred Dragon Archfiend"},", then ",{"b":"Hot Red Dragon Archfiend Abyss"},". Scarred brought ",{"b":"Red Dragon Archfiend"}," to the field. He tried to Special Summon ",{"b":"Darkness Resonator"},", but was hit by Vincent’s ",{"b":"Dominus Impulse"},". He played ",{"b":"Pre-Preparation of Rites"},", adding ",{"b":"Mitsurugi Mirror"}," and ",{"b":"Ame no Habakiri no Mitsurugi"}," to his hand. He used Habakiri’s effect to Special Summon ",{"b":"Mitsurugi no Mikoto, Saji"},", and Tributed it. Saji’s effect added ",{"b":"Mitsurugi Prayers"}," to his hand. He played ",{"b":"Mitsurugi Ritual"},", Tributing ",{"b":"Mitsurugi no Mikoto, Aramasa"}," and ",{"b":"Mitsurugi no Mikoto, Kusanagi"}," from his Deck to Ritual Summon Habakiri. Kusanagi returned Saji to his hand, and Aramasa added ",{"b":"Ame no Murakumo no Mitsurugi"}," to his hand. He played ",{"b":"Mitsurugi Mirror"},", Tributing Habakiri to Ritual Summon Murakumo, and Habakiri’s effect let him add ",{"b":"Mitsurugi Great Purification"}," to his hand. He Set one back row card, then stacked ",{"b":"Red Dragon Archfiend"}," and Murakumo for ",{"b":"The Zombie Vampire"},". He tried to use its effect by detaching Murakumo, but was hit by ",{"b":"Infinite Impermanence"},". Maxwell played Prayers, taking 800 damage to Special Summon Murakumo."]
+    },
+    {
+      "t": "p",
+      "r": ["After all that, Fuwalos had let Vincent draw ",{"b":"Secrets of Dark Magic"},", ",{"b":"Celtic Mystic"},", a second Black Chaos, ",{"b":"Magician’s Rod"},", ",{"b":"Dark Magical Circle"},", plus the ",{"b":"Infinite Impermanence"}," and ",{"b":"Dominus Impulse"}," he’d already used this turn."]
+    },
+    {
+      "t": "p",
+      "r": ["Vincent drew another Fuwalos. He Special Summoned ",{"b":"Dark Magician, the Pharaoh’s Servant"}," by revealing ",{"b":"Crossout Designator"},", then added ",{"b":"Dark Magical Circle"}," to his hand. He activated its Quick Effect next, discarding ",{"b":"Crossout Designator"},", and Maxwell negated it with ",{"b":"Hot Red Dragon Archfiend Abyss"},". Vincent Normal Summoned ",{"b":"Magician’s Rod"},", Maxwell Chained Murakumo to force Vincent to discard, and he discarded Fuwalos. Rod added ",{"b":"Dark Magical Curtain"}," to his hand. He used ",{"b":"Black Chaos"},"’s effect to place ",{"b":"Mind Shuffle"}," on the field. He used its effect, and Maxwell flipped Great Purification by Tributing Murakumo to negate and destroy ",{"b":"Mind Shuffle"},". Murakumo’s effect let Maxwell add Prayers to his hand, then he Special Summoned Murakumo. Murakumo now wiped out all of Vincent’s monsters! Vincent continued, flipping up ",{"b":"Dark Magical Circle"}," and using Curtain to Special Summon ",{"b":"Dark Magician"}," and add ",{"b":"The Gaze of Timaeus"}," to his hand. ",{"b":"Dark Magical Circle"}," then banished Murakumo! He banished ",{"b":"Dark Magician"}," to Special Summon ",{"b":"Dark Magician of Destruction"},"! He added ",{"b":"Illusion of Chaos"}," to his hand. He used Illusion’s effect to add ",{"b":"Magicians’ Souls"}," to his hand, and put ",{"b":"Celtic Mystic"}," on top of his Deck. He Special Summoned ",{"b":"Black Chaos"}," by shuffling ",{"b":"Illusion of Chaos"}," into the Deck. Maxwell revealed ",{"b":"Nibiru, the Primal Being"},"! Vincent’s monsters were gone, replaced with a 12,900 ATK /11,000 DEF Primal Being Token. Maxwell now activated ",{"b":"Vision Resonator"},"’s effect to add ",{"b":"Red Reign"}," to his hand. Vincent Special Summoned ",{"b":"Magicians’ Souls"}," by sending ",{"b":"Magician of Dark Chaos – Black Chaos"}," to the Graveyard. He used its effect, sending Circle and ",{"b":"The Fallen & The Virtuous"}," to the Graveyard to draw ",{"b":"Griffoh"}," and ",{"b":"Ash Blossom & Joyous Spring"},". He activated ",{"b":"The Gaze of Timaeus"},"! He returned ",{"b":"Dark Magician of Destruction"}," from the Graveyard to Special Summon ",{"b":"Red-Eyes Dark Dragoon"},"! He activated ",{"b":"Griffoh"}," to Set ",{"b":"Mind Shuffle"},". He used the Primal Being Token and ",{"b":"Magicians’ Souls"}," to Link Summon ",{"b":"Dharc the Dark Charmer, Gloomy"},", and used it to Special Summon ",{"b":"Hot Red Dragon Archfiend Abyss"},"! Finally, he moved to the Battle Phase. Hot Red Dragon attacked Nibiru, and Dragoon attacked directly, dropping Maxwell to 2150 Life Points."]
+    },
+    {
+      "t": "p",
+      "r": ["Maxwell activated ",{"b":"Crimson Gaia"},"’s effect, and Vincent responded with ",{"b":"Mind Shuffle"},". He added ",{"b":"Skull Archfiend of Chaos"}," to his hand and discarded it. ",{"b":"Crimson Gaia"}," then put a ",{"b":"Fiend Piece Golem"}," in his hand. Skull Archfiend’s effect sent ",{"b":"Light and Darkness Ritual"}," to Vincent’s Graveyard and put ",{"b":"Black Luster Soldier – Soldier of Light and Darkness"}," in his hand. Maxwell Special Summoned ",{"b":"Bone Archfiend"}," by discarding Saji. He Special Summoned ",{"b":"Darkness Resonator"},", then Special Summoned ",{"b":"Fiend Piece Golem"},". He activated Prayers, and Vincent negated it with Ash Blossom. Maxwell used ",{"b":"Darkness Resonator"}," and ",{"b":"Fiend Piece Golem"}," to Synchro Summon ",{"b":"Draco Berserker of the Tenyi"},". He Set one back row card and moved to the Battle Phase. Vincent flipped ",{"b":"Dark Magical Curtain"}," to Special Summon ",{"b":"Black Chaos"},". Maxwell sent Draco Berserker to attack Dharc, gaining 1150 ATK, and it then attacked Dragoon."]
+    },
+    {
+      "t": "p",
+      "r": ["Vincent drew ",{"b":"Celtic Mystic"},". He added ",{"b":"Light and Darkness Ritual"}," and ",{"b":"Magician of Dark Chaos – Black Chaos"}," to his hand, and played it to Ritual Summon the Magician by Tributing Black Luster. He used his Magician’s effect, adding ",{"b":"The Gaze of Timaeus"}," to his hand. He activated the effect of Skull Archfiend, returning Dragoon, Black Luster, and his banished ",{"b":"Dark Magician"}," to Special Summon the Skull Archfiend. He banished his Ritual Monster to Special Summon ",{"b":"Dark Magician of Destruction"},", adding ",{"b":"Dark Magical Curtain"}," to his hand, and he played that to Special Summon ",{"b":"Dark Magician"},". He activated Gaze, using ",{"b":"Dark Magician"}," to bring forth ",{"b":"Red-Eyes Dark Dragoon"},"! He negated Draco Berserker with Hot Red Dragon, then activated Dragoon’s effect to destroy Draco Berserker! Maxwell tried to use ",{"b":"Red Reign"},", but Dragoon negated and destroyed it! Vincent sent everything to attack and end the first Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 2"}]
+    },
+    {
+      "t": "p",
+      "r": ["Maxwell played first for this Duel. Vincent had a hand of ",{"b":"Griffoh"},", ",{"b":"Mulcharmy Fuwalos"},", two copies of ",{"b":"Kuriboh – Multiply!"},", and ",{"b":"Ragged Records of Rites"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["Vincent F."]
+    },
+    {
+      "t": "p",
+      "r": ["Maxwell led with ",{"b":"Pre-Preparation of Rites"},", and Vincent Chained Fuwalos. Maxwell added Habakiri and ",{"b":"Mitsurugi Ritual"}," to his hand. He played ",{"b":"Crimson Gaia"},", adding ",{"b":"Soul Resonator"},". He Normal Summoned Soul, and activated its effect. Vincent Chained to Special Summon his Kuriboh, and Maxwell added ",{"b":"Bone Archfiend"},". He Special Summoned ",{"b":"Bone Archfiend"},", discarding Prayers. He activated ",{"b":"Bone Archfiend"},", Vincent Chained the Kuriboh’s effect, and then Chained ",{"b":"Griffoh"},"’s effect. Vincent Set ",{"b":"Mind Shuffle"},", then Special Summoned a second ",{"b":"Kuriboh – Multiply!"}," from his Deck, and ",{"b":"Bone Archfiend"}," sent ",{"b":"Crimson Resonator"}," to the Graveyard. Maxwell Synchro Summoned ",{"b":"Red Rising Dragon"},". Vincent drew ",{"b":"Dark Magical Curtain"}," with Fuwalos, and Chained to Red Rising’s effect with ",{"b":"Mind Shuffle"},"’s effect, and Maxwell activated ",{"b":"Droll & Lock Bird"}," (since Vincent had drawn from Fuwalos). ",{"b":"Mind Shuffle"}," couldn’t resolve under Droll’s effect, and Red Rising brought ",{"b":"Crimson Resonator"}," to the field. He used Crimson to Special Summon ",{"b":"Synkron Resonator"}," and ",{"b":"Vision Resonator"},". He Synchro Summoned ",{"b":"Scarred Dragon Archfiend"},", then used it to Synchro Summon ",{"b":"Hot Red Dragon Archfiend Abyss"},". Scarred brought ",{"b":"Red Dragon Archfiend"}," to the field. He Special Summoned Vision and ",{"b":"Fiend Piece Golem"},". He Synchro Summoned ",{"b":"Crimson Blade Dragon"},", activating its effect. Vincent Chained his Kuriboh, and it was negated by Hot Red Dragon. ",{"b":"Crimson Blade Dragon"}," let Maxwell Special Summon Murakumo from the Deck with its effects negated. He Synchro Summoned ",{"b":"Bystial Dis Pater"},". He activated ",{"b":"Mitsurugi Ritual"},", Tributing Saji and Aramasa from his Deck to Ritual Summon Habakiri from his hand."]
+    },
+    {
+      "t": "p",
+      "r": ["Vincent drew ",{"b":"The Gaze of Timaeus"},". He used one of his Kuribohs to Link Summon ",{"b":"Relinquished Anima"},", pointing at ",{"b":"Crimson Blade Dragon"},", and used its effect to equip it. Then he Link Summoned ",{"b":"S:P Little Knight"},", targeting Murakumo to banish it. Vincent played Ragged Records, but Maxwell negated it with Hot Red Dragon. Vincent played Curtain to Special Summon ",{"b":"Black Chaos"},", using its effect to banish two of Maxwell’s cards. Maxwell Chained Dis Pater, and Vincent responded with ",{"b":"S:P Little Knight"}," to banish ",{"b":"Black Chaos"}," and Hot Red Dragon temporarily. Finally, ",{"b":"Black Chaos"}," banished Dis Pater and Habakiri. Vincent Normal Summoned ",{"b":"Kuriboh – Multiply!"},", then activated ",{"b":"Mind Shuffle"},"’s effect. He added Skull Archfiend and discarded it. Skull Archfiend then sent ",{"b":"Light and Darkness Ritual"}," to the Graveyard to add ",{"b":"Magician of Dark Chaos – Black Chaos"}," to his hand. He activated ",{"b":"Light and Darkness Ritual"},"’s effect, returning it to his hand along with ",{"b":"Griffoh"},". He played ",{"b":"Light and Darkness Ritual"},", using ",{"b":"Griffoh"}," as the Tribute for his Magician. He activated the Magician’s effect to add ",{"b":"Light and Darkness Ritual"}," back to his hand. He used Magician to banish ",{"b":"Crimson Gaia"}," face-down. He banished the Magician to Special Summon ",{"b":"Dark Magician of Destruction"},", which added ",{"b":"Magicians’ Souls"}," to his hand. He Special Summoned Souls by sending ",{"b":"Black Chaos"}," to the Graveyard. He activated its effect, sending ",{"b":"Light and Darkness Ritual"}," to the Graveyard to draw ",{"b":"Dark Magician"},". He used ",{"b":"S:P Little Knight"}," and Souls to Link Summon ",{"b":"Selene, Queen of the Master Magicians"},", and put 6 Spell Counters on it. He used Selene’s effect to Special Summon ",{"b":"Black Chaos"},". He used Selene and ",{"b":"Black Chaos"}," to Link Summon Dharc, and used it to Special Summon Scarred from Maxwell’s Graveyard. He activated ",{"b":"The Gaze of Timaeus"},", sending ",{"b":"Dark Magician of Destruction"}," back to the Extra Deck to bring forth ",{"b":"Red-Eyes Dark Dragoon"},". He Special Summoned ",{"b":"Skull Archfiend of Chaos"}," from the Graveyard by returning ",{"b":"Griffoh"},", Gaze, and Curtain to the bottom of his Deck. He used Dharc and Kuriboh to Link Summon ",{"b":"W:P Fancy Ball"}," to finish the turn. In the End Phase, Hot Red Dragon returned to Maxwell’s field, and ",{"b":"Black Chaos"}," returned to Vincent’s field."]
+    },
+    {
+      "t": "p",
+      "r": ["Maxwell discarded ",{"b":"Droll & Lock Bird"}," to Special Summon ",{"b":"Bone Archfiend"}," from the Graveyard, and Vincent negated it with Dragoon. Maxwell sent Hot Red Dragon to attack Dragoon, destroying it in battle."]
+    },
+    {
+      "t": "p",
+      "r": ["Vincent drew Fuwalos. He used ",{"b":"Light and Darkness Ritual"},"’s effect, returning it and ",{"b":"Black Chaos"}," to his hand. Vincent used ",{"b":"W:P Fancy Ball"}," and Skull Archfiend to Link Summon ",{"b":"Accesscode Talker"},"! He used its effect to destroy Hot Red Dragon, and Maxwell banished ",{"b":"Soul Resonator"}," to protect his monster. Vincent used its effect again to destroy Hot Red Dragon, clearing the way for him to attack!"]
+    },
+    {
+      "t": "p",
+      "r": ["Vincent F. is your YCS Houston Dragon Duel Champion!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/advanced-round-14-feature-match-creighton-pree-vs-odnam-gallardo/": [
+    {
+      "t": "p",
+      "r": [{"who":"Creighton Jevon Pree","t":"Creighton Pree"}," from Arlington, Texas and ",{"who":"Odnam Gallardo","t":"Odnam Gallardo"}," from Fort Worth, Texas both have 10-3 records in the Advanced Main Event at YCS Houston, and now they’re Dueling against one another in this final Swiss Round! ",{"who":"Creighton Jevon Pree","t":"Pree"}," is using an Angelechy Deck, while ",{"who":"Odnam Gallardo","t":"Gallardo"}," is using a Deck built around ",{"b":"Light and Darkness Ritual"},". These Duelists attend the same local tournaments in Texas, so they know each other – and one another’s Decks – quite well. Nevertheless, they’ll be giving this Match their all in order to secure the best tournament finish that they can get! It’s time to Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel One"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Odnam Gallardo","t":"Gallardo"}," started off Duel 1 by activating the effect of ",{"b":"Griffoh"}," in the Draw Phase to Set ",{"b":"Mind Shuffle"}," from his Deck."]
+    },
+    {
+      "t": "p",
+      "r": ["He activated it and used its effect to add ",{"b":"Black Chaos"}," from his Deck to his hand and discard ",{"b":"Skull Archfiend of Chaos"},". He used the Skull Archfiend’s effect by sending ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and added ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand. ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated ",{"b":"Angelechy Opening to e4"}," in the Standby Phase. He placed ",{"b":"Angelechy Endgame Problem"}," in his Field Spell Zone, Special Summoned ",{"b":"Angelechy Enlisted"},", and placed ",{"b":"Angelechy Castellan"}," into his Spell & Trap Card Zone. He activated Castellan’s effect, but lost out to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s ",{"b":"The Fallen & The Virtuous"},", which sent ",{"b":"Albion the Branded Dragon"}," from the Extra Deck to the Graveyard to destroy Castellan. ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his Main Phase and used the effect of the ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with the ",{"b":"Griffoh"}," in his Graveyard. Next, he activated ",{"b":"Ragged Records of Rites"},". He revealed ",{"b":"Light and Darkness Ritual"}," from his hand to add ",{"b":"Celtic Mystic"}," from his Deck to his hand. He Normal Summoned the ",{"b":"Celtic Mystic"}," and activated its effect. He revealed his hand and drew 3 cards before discarding ",{"b":"Black Chaos"}," and ",{"b":"Mulcharmy Fuwalos"},". He Special Summoned ",{"b":"Fallen of the White Dragon"}," from his hand by sending ",{"b":"Rindbrumm the Striking Dragon"}," from his Extra Deck to his Graveyard. Next, he used his Fallen’s effect to Special Summon ",{"b":"Incredible Ecclesia, the Virtuous"}," from his Deck. He Special Summoned ",{"b":"Black Chaos"}," by returning Magician of Dark Chaos from his hand to his Deck and then used ",{"b":"Black Chaos’s"}," effect to banish Enlisted and Endgame Problem from the Duel. Next, he sent Incredible Ecclesia and ",{"b":"Fallen of the White Dragon"}," to the Graveyard to Synchro Summon ",{"b":"Ecclesia and the Dark Dragon"},". He activated its effect, and ",{"who":"Creighton Jevon Pree","t":"Pree"}," Chained the effect of ",{"b":"Nibiru, the Primal Being"},"! He Tributed all monsters on the field to Special Summon Nibiru and leave ",{"who":"Odnam Gallardo","t":"Gallardo"}," with a ",{"b":"Primal Being Token"}," with 6900 ATK and 7000 DEF in Attack Position. ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his End Phase and used the effect of the Incredible Ecclesia in his Graveyard to return it to his hand. He also used Albion’s effect to Set ",{"b":"The Fallen & The Virtuous"}," from his Deck."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Creighton Jevon Pree","t":"Pree"}," drew ",{"b":"Angelechy Strategy Score"}," and added it to his hand of ",{"b":"Angelechy Disturbance"},", ",{"b":"Angelechy Opposition"},", and another Strategy Score. In his Draw Phase, ",{"who":"Odnam Gallardo","t":"Gallardo"}," activated the effect of ",{"b":"Mind Shuffle"}," to add ",{"b":"Black Luster Soldier – Soldier of Light and Darkness"}," from his Deck to his hand and discard Incredible Ecclesia. ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated Opposition in Main Phase 1 to Special Summon ",{"b":"Angelechy Seneschal"}," to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s field and place ",{"b":"Angelechy Bastion"}," in his Spell & Trap Card Zone. The effects of Seneschal and Bastion activated, and ",{"who":"Odnam Gallardo","t":"Gallardo"}," Chained ",{"b":"The Fallen & The Virtuous"}," by sending ",{"b":"Titaniklad the Ash Dragon"}," from his Extra Deck to his Graveyard to destroy Bastion. ",{"who":"Creighton Jevon Pree","t":"Pree"}," Special Summoned ",{"b":"Angelechy Bastion"}," from his Extra Deck with Seneschal’s effect. Next, ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated Strategy Score to add ",{"b":"Angelechy Problem"}," from his Deck to his hand. He activated Problem, prompting ",{"who":"Odnam Gallardo","t":"Gallardo"}," to activate the effect of the Rindbrumm in his Graveyard. He banished it to Special Summon ",{"b":"Fallen of the White Dragon"}," and then used the Fallen’s effect to Special Summon Incredible Ecclesia from his Deck. He Tributed Incredible Ecclesia to Special Summon ",{"b":"Fallen of Albaz"}," and then discarded ",{"b":"Light and Darkness Ritual"}," to activate its effect. He fused ",{"b":"Fallen of Albaz"}," with Bastion to Summon ",{"b":"Mirrorjade the Iceblade Dragon"},". ",{"who":"Creighton Jevon Pree","t":"Pree"}," discarded Disturbance to activate Problem’s effect. He Special Summoned Enlisted from his Extra Deck and placed Shatranga in his Spell & Trap Card Zone. ",{"who":"Creighton Jevon Pree","t":"Pree"}," used Shatranga’s effect to add ",{"b":"Angelechy Verdict"}," from his Deck to his hand. ",{"who":"Creighton Jevon Pree","t":"Pree"}," used the effect of Enlisted to try to banish Mirrorjade, and ",{"who":"Odnam Gallardo","t":"Gallardo"}," Chained Mirrorjade’s effect by sending ",{"b":"The Dragon that Devours the Dogma"}," from his Extra Deck to his Graveyard to banish Enlisted. Mirrorjade’s effect activated to destroy ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s monsters in the End Phase. Next, ",{"who":"Creighton Jevon Pree","t":"Pree"}," banished Disturbance from his Graveyard to add ",{"b":"Angelechy Opening to e4"}," from his Deck to his hand. He banished Opposition from his Graveyard next, using its effect to return 5 of the Angelechy cards in his Graveyard and banishment to his Deck. ",{"who":"Creighton Jevon Pree","t":"Pree"}," entered his Battle Phase and attacked ",{"b":"Fallen of the White Dragon"}," to destroy it. ",{"who":"Creighton Jevon Pree","t":"Pree"}," Set 2 cards to his back row and then passed. In the End Phase, Mirrorjade’s effect destroyed Nibiru and ",{"who":"Odnam Gallardo","t":"Gallardo"}," used Incredible Ecclesia’s effect to return Incredible Ecclesia from his Graveyard to his hand and used Titaniklad’s effect to add ",{"b":"Fallen of the White Dragon"}," from his Deck to his hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Odnam Gallardo","t":"Gallardo"}," drew a card and then ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated Opening to e4 in his Standby Phase. He placed Endgame Problem from his Deck onto his field, Special Summoned Enlisted, and then placed Castellan in his Spell & Trap Card Zone. He activated Castellan’s effect to send ",{"b":"Angelechy Verdict"}," from his Deck to his Graveyard and then used Endgame Problem’s effect to draw ",{"b":"Angelechy Disturbance"}," from his Deck. He banished Verdict from his Graveyard and sent Disturbance from his hand to his Graveyard to place Bastion in his Spell & Trap Card Zone next, and used Bastion’s effect to place Shatranga from his Extra Deck into his Spell & Trap Card Zone. He used Shatranga’s effect to add another copy of Opening to e4 from his Deck to his hand. ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his Main Phase and used the effect of ",{"b":"Incredible Ecclesia and the Dark Dragon"}," in his Graveyard. He tried to return it to his Deck along with Albion and with ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s face-down Verdict, but ",{"who":"Creighton Jevon Pree","t":"Pree"}," Chained the Verdict to banish all cards on ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s field! ",{"who":"Odnam Gallardo","t":"Gallardo"}," activated the effect of ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with ",{"b":"Black Chaos"},". He then used ",{"b":"Griffoh’s"}," effect to Set ",{"b":"Mind Shuffle"}," from his Deck. He flipped it up and used its effect to add Magician of Dark Chaos from his Deck to his hand and discard ",{"b":"Droll & Lock Bird"},". He used ",{"b":"Light and Darkness Ritual"}," to Ritual Summon ",{"b":"Magician of Dark Chaos – Black Chaos"}," by banishing ",{"b":"Griffoh"}," from his Graveyard. He used Magician of Dark Chaos’s effect to return ",{"b":"Light and Darkness Ritual"}," from his Graveyard to his hand and then Special Summoned ",{"b":"Black Chaos"}," from his hand by returning ",{"b":"Black Luster Soldier – Soldier of Light and Darkness"}," from his hand to his Deck. ",{"who":"Creighton Jevon Pree","t":"Pree"}," used his Endgame Problem’s effect to banish ",{"b":"Dark Chaos"},", which was vulnerable without ",{"b":"Light and Darkness Ritual"}," in the Graveyard! He used Magician of Dark Chaos’s effect to banish Endgame Problem next and then Special Summoned ",{"b":"Skull Archfiend of Chaos"}," from his Graveyard by activating its effect. That was his fifth monster effect that he activated during his turn, which meant Shatranga’s effect was preventing him from activating any more. He Normal Summoned Incredible Ecclesia next. He attacked Enlisted with Skull Archfiend to destroy it and then attacked directly with his Magician and Incredible Ecclesia, dropping ",{"who":"Creighton Jevon Pree","t":"Pree"}," down to 3700 Life Points. In Main Phase 2, he Tuned his Skull Archfiend with Ecclesia to Synchro Summon ",{"b":"Chaos Angel"},". In the End Phase, ",{"who":"Creighton Jevon Pree","t":"Pree"}," banished Disturbance from his Graveyard to add ",{"b":"Angelechy Opposition"}," from his Deck to his hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Creighton Jevon Pree","t":"Pree"}," drew a card and then ",{"who":"Odnam Gallardo","t":"Gallardo"}," used the effect of ",{"b":"Mind Shuffle"}," in the Draw Phase. He added ",{"b":"Black Luster Soldier – Soldier of Light and Darkness"}," to his hand and discarded ",{"b":"Light and Darkness Ritual"},". ",{"who":"Creighton Jevon Pree","t":"Pree"}," banished Strategy Score from his Graveyard in his Main Phase to return Castellan from his back row to his Extra Deck and then Special Summon it. Next, he activated Opposition. He Special Summoned Seneschal to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s field and placed Destrier in his back row. Seneschal and Destrier activated their effects. ",{"who":"Creighton Jevon Pree","t":"Pree"}," added ",{"b":"Angelechy Problem"}," to his hand and Special Summoned Enlisted, and ",{"who":"Odnam Gallardo","t":"Gallardo"}," lost 500 Life Points due to Destrier’s effect. ",{"who":"Creighton Jevon Pree","t":"Pree"}," Tuned Enlisted with Castellan to Synchro Summon ",{"b":"Assault Blackwing – Kusanagi the Gathering Storm"}," with 6500 ATK. ",{"who":"Odnam Gallardo","t":"Gallardo"}," conceded, realizing that Kusanagi’s attacks would wipe out his remaining Life Points."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Creighton Jevon Pree","t":"Creighton Pree"}," wins the first Duel of the Match with his Angelechy Deck!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel Two"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Odnam Gallardo","t":"Gallardo"}," started off Duel 2 and ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated Opening to e4 in his Standby Phase. ",{"who":"Creighton Jevon Pree","t":"Pree"}," placed ",{"b":"Angelechy Endgame Problem"}," on his field, Special Summoned Enlisted from his Extra Deck, and placed Bastion into his Spell & Trap Card Zone. He declined to activate Bastion’s effect. ",{"who":"Odnam Gallardo","t":"Gallardo"}," activated the effect of ",{"b":"Griffoh"}," in the Standby Phase to Set ",{"b":"Mind Shuffle"}," from his Deck and immediately flipped it up. He activated its effect, but lost out to ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s ",{"b":"Dominus Purge"},", which destroyed the ",{"b":"Mind Shuffle"},". ",{"who":"Creighton Jevon Pree","t":"Pree"}," drew a card with Endgame Problem’s effect. ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his Main Phase and used ",{"b":"Ragged Records of Rites"},". He revealed ",{"b":"Light and Darkness Ritual"}," from his Deck to add ",{"b":"Celtic Mystic"}," from his Deck to his hand. He Normal Summoned it and activated its effect. He revealed his hand to draw 3 cards and then discard Black Luster Soldier and ",{"b":"Ghost Ogre & Snow Rabbit"},". He Special Summoned ",{"b":"Black Chaos"}," from his hand and used its effect to banish Endgame Problem and Bastion. He Set 2 cards to his back row and then ended his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Creighton Jevon Pree","t":"Pree"}," drew Strategy Score and added it to his hand of ",{"b":"Angelechy Verdict"},", ",{"b":"Angelechy Disturbance"},", Opening to e4, and ",{"b":"Dominus Impulse"},". In his Draw Phase, ",{"who":"Odnam Gallardo","t":"Gallardo"}," activated ",{"b":"Griffoh’s"}," effect to Set ",{"b":"Mind Shuffle"}," from his Deck. He flipped it and then activated its effect to add Skull Archfiend from his Deck to his hand and discard it. He used the Skull Archfiend’s effect by sending ",{"b":"Light and Darkness Ritual"}," from his Deck to his hand and added Black Luster Soldier from his Deck to his hand. ",{"who":"Creighton Jevon Pree","t":"Pree"}," entered his Main Phase and activated Strategy Score to add Opposition from his Deck to his hand. He activated Opposition to Special Summon Seneschal to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s field and place ",{"b":"Angelechy Castellan"}," into his Spell & Trap Card Zone. The effects of Seneschal and Castellan activated to send ",{"b":"Angelechy Verdict"}," from ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s Deck to his Graveyard and Special Summon Destrier from his Extra Deck. He Tuned Enlisted with Destrier to Summon Kusanagi and then entered his Battle Phase. ",{"who":"Odnam Gallardo","t":"Gallardo"}," immediately flipped ",{"b":"The Fallen & The Virtuous"}," and sent Titaniklad from his Extra Deck to the Graveyard to destroy Kusanagi. In Main Phase 2, ",{"who":"Creighton Jevon Pree","t":"Pree"}," banished Verdict from his Graveyard to activate its effect. ",{"who":"Odnam Gallardo","t":"Gallardo"}," Chained his ",{"b":"Mind Shuffle’s"}," effect by returning ",{"b":"Black Chaos"}," to his hand and Special Summoned Black Luster Soldier from his hand. ",{"who":"Creighton Jevon Pree","t":"Pree"}," sent Disturbance to his Graveyard to place Shatranga in his Spell & Trap Card Zone with Verdict’s effect, and then ",{"who":"Odnam Gallardo","t":"Gallardo"}," flipped ",{"b":"Spell Shattering Sword"},", prompting ",{"who":"Creighton Jevon Pree","t":"Pree"}," to concede."]
+    },
+    {
+      "t": "p",
+      "r": ["The Match is moving on to a third and final Duel with just 7 minutes left in the round!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel Three"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Creighton Jevon Pree","t":"Pree"}," opened up Duel 3 with ",{"b":"Dominus Spark"},", ",{"b":"Artifact Lancea"},", ",{"b":"Vanity’s Fiend"},", and two copies of ",{"b":"Dominus Spiral"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["He Set a Spark and a Spiral and then ended his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Odnam Gallardo","t":"Gallardo"}," activated ",{"b":"Branded in High Spirits"}," discarding Skull Archfiend from his hand and adding ",{"b":"Fallen of the White Dragon"}," to his hand. He used the Skull Archfiend’s effect to send ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and add ",{"b":"Magician of Dark Chaos – Black Chaos"}," to his hand. He activated ",{"b":"Light and Darkness Ritual"}," and ",{"who":"Creighton Jevon Pree","t":"Pree"}," Chained the effect of ",{"b":"Artifact Lancea"},". ",{"who":"Odnam Gallardo","t":"Gallardo"}," Tributed monsters from his hand to Special Summon ",{"b":"Magician of Dark Chaos – Black Chaos"},". After a few quick plays, ",{"who":"Odnam Gallardo","t":"Gallardo"}," built up a field and ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated ",{"b":"Dominus Spiral"}," to return ",{"b":"Magician of Dark Chaos – Black Chaos"}," to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s hand. ",{"who":"Odnam Gallardo","t":"Gallardo"}," Special Summoned Skull Archfiend from his Graveyard with Spiral’s effect. ",{"who":"Odnam Gallardo","t":"Gallardo"}," Ritual Summoned ",{"b":"Magician of Dark Chaos – Black Chaos"}," once again, and moments later, ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his Battle Phase with ",{"b":"Magician of Dark Chaos – Black Chaos"},", ",{"b":"Fallen of the White Dragon"},", ",{"b":"Incredible Ecclesia the Virtuous"},", and ",{"b":"Skull Archfiend of Chaos"}," in Attack Position. Direct attacks from all of them wiped out ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s Life Points!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Odnam Gallardo","t":"Odnam Gallardo"}," wins the Match with his Deck built around ",{"b":"Light and Darkness Ritual"}," and finishes the Swiss Rounds with an 11-3 record!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/event-information/ycs-houston-tx-2026-main-event-information/": [
@@ -6997,90 +7089,6 @@
       "r": ["KDE-US makes no representations that it has taken any safety precautions that relate to infectious diseases or exposure, and even if KDE-US did proactively take preventative measures, KDE-US has made no representation that those measures will in any way reduce or prevent the risks associated with exposure. Attendees release KDE-US, its employees and representatives, and all persons involved WITH RESPECT TO ANY AND ALL ILLNESS, DISABILITY, DEATH, or loss or damage to person or property, to the fullest extent permitted by law. BY ATTENDING IN THIS EVENT, ATTENDEES ARE DEEMED TO HAVE GIVEN A FULL RELEASE OF LIABILITY TO KDE-US TO THE FULLEST EXTENT PERMITTED BY LAW."]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/advanced-round-14-feature-match-creighton-pree-vs-odnam-gallardo/": [
-    {
-      "t": "p",
-      "r": [{"who":"Creighton Jevon Pree","t":"Creighton Pree"}," from Arlington, Texas and ",{"who":"Odnam Gallardo","t":"Odnam Gallardo"}," from Fort Worth, Texas both have 10-3 records in the Advanced Main Event at YCS Houston, and now they’re Dueling against one another in this final Swiss Round! ",{"who":"Creighton Jevon Pree","t":"Pree"}," is using an Angelechy Deck, while ",{"who":"Odnam Gallardo","t":"Gallardo"}," is using a Deck built around ",{"b":"Light and Darkness Ritual"},". These Duelists attend the same local tournaments in Texas, so they know each other – and one another’s Decks – quite well. Nevertheless, they’ll be giving this Match their all in order to secure the best tournament finish that they can get! It’s time to Duel!"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel One"}]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Odnam Gallardo","t":"Gallardo"}," started off Duel 1 by activating the effect of ",{"b":"Griffoh"}," in the Draw Phase to Set ",{"b":"Mind Shuffle"}," from his Deck."]
-    },
-    {
-      "t": "p",
-      "r": ["He activated it and used its effect to add ",{"b":"Black Chaos"}," from his Deck to his hand and discard ",{"b":"Skull Archfiend of Chaos"},". He used the Skull Archfiend’s effect by sending ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and added ",{"b":"Magician of Dark Chaos – Black Chaos"}," from his Deck to his hand. ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated ",{"b":"Angelechy Opening to e4"}," in the Standby Phase. He placed ",{"b":"Angelechy Endgame Problem"}," in his Field Spell Zone, Special Summoned ",{"b":"Angelechy Enlisted"},", and placed ",{"b":"Angelechy Castellan"}," into his Spell & Trap Card Zone. He activated Castellan’s effect, but lost out to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s ",{"b":"The Fallen & The Virtuous"},", which sent ",{"b":"Albion the Branded Dragon"}," from the Extra Deck to the Graveyard to destroy Castellan. ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his Main Phase and used the effect of the ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with the ",{"b":"Griffoh"}," in his Graveyard. Next, he activated ",{"b":"Ragged Records of Rites"},". He revealed ",{"b":"Light and Darkness Ritual"}," from his hand to add ",{"b":"Celtic Mystic"}," from his Deck to his hand. He Normal Summoned the ",{"b":"Celtic Mystic"}," and activated its effect. He revealed his hand and drew 3 cards before discarding ",{"b":"Black Chaos"}," and ",{"b":"Mulcharmy Fuwalos"},". He Special Summoned ",{"b":"Fallen of the White Dragon"}," from his hand by sending ",{"b":"Rindbrumm the Striking Dragon"}," from his Extra Deck to his Graveyard. Next, he used his Fallen’s effect to Special Summon ",{"b":"Incredible Ecclesia, the Virtuous"}," from his Deck. He Special Summoned ",{"b":"Black Chaos"}," by returning Magician of Dark Chaos from his hand to his Deck and then used ",{"b":"Black Chaos’s"}," effect to banish Enlisted and Endgame Problem from the Duel. Next, he sent Incredible Ecclesia and ",{"b":"Fallen of the White Dragon"}," to the Graveyard to Synchro Summon ",{"b":"Ecclesia and the Dark Dragon"},". He activated its effect, and ",{"who":"Creighton Jevon Pree","t":"Pree"}," Chained the effect of ",{"b":"Nibiru, the Primal Being"},"! He Tributed all monsters on the field to Special Summon Nibiru and leave ",{"who":"Odnam Gallardo","t":"Gallardo"}," with a ",{"b":"Primal Being Token"}," with 6900 ATK and 7000 DEF in Attack Position. ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his End Phase and used the effect of the Incredible Ecclesia in his Graveyard to return it to his hand. He also used Albion’s effect to Set ",{"b":"The Fallen & The Virtuous"}," from his Deck."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Creighton Jevon Pree","t":"Pree"}," drew ",{"b":"Angelechy Strategy Score"}," and added it to his hand of ",{"b":"Angelechy Disturbance"},", ",{"b":"Angelechy Opposition"},", and another Strategy Score. In his Draw Phase, ",{"who":"Odnam Gallardo","t":"Gallardo"}," activated the effect of ",{"b":"Mind Shuffle"}," to add ",{"b":"Black Luster Soldier – Soldier of Light and Darkness"}," from his Deck to his hand and discard Incredible Ecclesia. ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated Opposition in Main Phase 1 to Special Summon ",{"b":"Angelechy Seneschal"}," to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s field and place ",{"b":"Angelechy Bastion"}," in his Spell & Trap Card Zone. The effects of Seneschal and Bastion activated, and ",{"who":"Odnam Gallardo","t":"Gallardo"}," Chained ",{"b":"The Fallen & The Virtuous"}," by sending ",{"b":"Titaniklad the Ash Dragon"}," from his Extra Deck to his Graveyard to destroy Bastion. ",{"who":"Creighton Jevon Pree","t":"Pree"}," Special Summoned ",{"b":"Angelechy Bastion"}," from his Extra Deck with Seneschal’s effect. Next, ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated Strategy Score to add ",{"b":"Angelechy Problem"}," from his Deck to his hand. He activated Problem, prompting ",{"who":"Odnam Gallardo","t":"Gallardo"}," to activate the effect of the Rindbrumm in his Graveyard. He banished it to Special Summon ",{"b":"Fallen of the White Dragon"}," and then used the Fallen’s effect to Special Summon Incredible Ecclesia from his Deck. He Tributed Incredible Ecclesia to Special Summon ",{"b":"Fallen of Albaz"}," and then discarded ",{"b":"Light and Darkness Ritual"}," to activate its effect. He fused ",{"b":"Fallen of Albaz"}," with Bastion to Summon ",{"b":"Mirrorjade the Iceblade Dragon"},". ",{"who":"Creighton Jevon Pree","t":"Pree"}," discarded Disturbance to activate Problem’s effect. He Special Summoned Enlisted from his Extra Deck and placed Shatranga in his Spell & Trap Card Zone. ",{"who":"Creighton Jevon Pree","t":"Pree"}," used Shatranga’s effect to add ",{"b":"Angelechy Verdict"}," from his Deck to his hand. ",{"who":"Creighton Jevon Pree","t":"Pree"}," used the effect of Enlisted to try to banish Mirrorjade, and ",{"who":"Odnam Gallardo","t":"Gallardo"}," Chained Mirrorjade’s effect by sending ",{"b":"The Dragon that Devours the Dogma"}," from his Extra Deck to his Graveyard to banish Enlisted. Mirrorjade’s effect activated to destroy ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s monsters in the End Phase. Next, ",{"who":"Creighton Jevon Pree","t":"Pree"}," banished Disturbance from his Graveyard to add ",{"b":"Angelechy Opening to e4"}," from his Deck to his hand. He banished Opposition from his Graveyard next, using its effect to return 5 of the Angelechy cards in his Graveyard and banishment to his Deck. ",{"who":"Creighton Jevon Pree","t":"Pree"}," entered his Battle Phase and attacked ",{"b":"Fallen of the White Dragon"}," to destroy it. ",{"who":"Creighton Jevon Pree","t":"Pree"}," Set 2 cards to his back row and then passed. In the End Phase, Mirrorjade’s effect destroyed Nibiru and ",{"who":"Odnam Gallardo","t":"Gallardo"}," used Incredible Ecclesia’s effect to return Incredible Ecclesia from his Graveyard to his hand and used Titaniklad’s effect to add ",{"b":"Fallen of the White Dragon"}," from his Deck to his hand."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Odnam Gallardo","t":"Gallardo"}," drew a card and then ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated Opening to e4 in his Standby Phase. He placed Endgame Problem from his Deck onto his field, Special Summoned Enlisted, and then placed Castellan in his Spell & Trap Card Zone. He activated Castellan’s effect to send ",{"b":"Angelechy Verdict"}," from his Deck to his Graveyard and then used Endgame Problem’s effect to draw ",{"b":"Angelechy Disturbance"}," from his Deck. He banished Verdict from his Graveyard and sent Disturbance from his hand to his Graveyard to place Bastion in his Spell & Trap Card Zone next, and used Bastion’s effect to place Shatranga from his Extra Deck into his Spell & Trap Card Zone. He used Shatranga’s effect to add another copy of Opening to e4 from his Deck to his hand. ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his Main Phase and used the effect of ",{"b":"Incredible Ecclesia and the Dark Dragon"}," in his Graveyard. He tried to return it to his Deck along with Albion and with ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s face-down Verdict, but ",{"who":"Creighton Jevon Pree","t":"Pree"}," Chained the Verdict to banish all cards on ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s field! ",{"who":"Odnam Gallardo","t":"Gallardo"}," activated the effect of ",{"b":"Light and Darkness Ritual"}," in his Graveyard to return it to his hand along with ",{"b":"Black Chaos"},". He then used ",{"b":"Griffoh’s"}," effect to Set ",{"b":"Mind Shuffle"}," from his Deck. He flipped it up and used its effect to add Magician of Dark Chaos from his Deck to his hand and discard ",{"b":"Droll & Lock Bird"},". He used ",{"b":"Light and Darkness Ritual"}," to Ritual Summon ",{"b":"Magician of Dark Chaos – Black Chaos"}," by banishing ",{"b":"Griffoh"}," from his Graveyard. He used Magician of Dark Chaos’s effect to return ",{"b":"Light and Darkness Ritual"}," from his Graveyard to his hand and then Special Summoned ",{"b":"Black Chaos"}," from his hand by returning ",{"b":"Black Luster Soldier – Soldier of Light and Darkness"}," from his hand to his Deck. ",{"who":"Creighton Jevon Pree","t":"Pree"}," used his Endgame Problem’s effect to banish ",{"b":"Dark Chaos"},", which was vulnerable without ",{"b":"Light and Darkness Ritual"}," in the Graveyard! He used Magician of Dark Chaos’s effect to banish Endgame Problem next and then Special Summoned ",{"b":"Skull Archfiend of Chaos"}," from his Graveyard by activating its effect. That was his fifth monster effect that he activated during his turn, which meant Shatranga’s effect was preventing him from activating any more. He Normal Summoned Incredible Ecclesia next. He attacked Enlisted with Skull Archfiend to destroy it and then attacked directly with his Magician and Incredible Ecclesia, dropping ",{"who":"Creighton Jevon Pree","t":"Pree"}," down to 3700 Life Points. In Main Phase 2, he Tuned his Skull Archfiend with Ecclesia to Synchro Summon ",{"b":"Chaos Angel"},". In the End Phase, ",{"who":"Creighton Jevon Pree","t":"Pree"}," banished Disturbance from his Graveyard to add ",{"b":"Angelechy Opposition"}," from his Deck to his hand."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Creighton Jevon Pree","t":"Pree"}," drew a card and then ",{"who":"Odnam Gallardo","t":"Gallardo"}," used the effect of ",{"b":"Mind Shuffle"}," in the Draw Phase. He added ",{"b":"Black Luster Soldier – Soldier of Light and Darkness"}," to his hand and discarded ",{"b":"Light and Darkness Ritual"},". ",{"who":"Creighton Jevon Pree","t":"Pree"}," banished Strategy Score from his Graveyard in his Main Phase to return Castellan from his back row to his Extra Deck and then Special Summon it. Next, he activated Opposition. He Special Summoned Seneschal to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s field and placed Destrier in his back row. Seneschal and Destrier activated their effects. ",{"who":"Creighton Jevon Pree","t":"Pree"}," added ",{"b":"Angelechy Problem"}," to his hand and Special Summoned Enlisted, and ",{"who":"Odnam Gallardo","t":"Gallardo"}," lost 500 Life Points due to Destrier’s effect. ",{"who":"Creighton Jevon Pree","t":"Pree"}," Tuned Enlisted with Castellan to Synchro Summon ",{"b":"Assault Blackwing – Kusanagi the Gathering Storm"}," with 6500 ATK. ",{"who":"Odnam Gallardo","t":"Gallardo"}," conceded, realizing that Kusanagi’s attacks would wipe out his remaining Life Points."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Creighton Jevon Pree","t":"Creighton Pree"}," wins the first Duel of the Match with his Angelechy Deck!"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel Two"}]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Odnam Gallardo","t":"Gallardo"}," started off Duel 2 and ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated Opening to e4 in his Standby Phase. ",{"who":"Creighton Jevon Pree","t":"Pree"}," placed ",{"b":"Angelechy Endgame Problem"}," on his field, Special Summoned Enlisted from his Extra Deck, and placed Bastion into his Spell & Trap Card Zone. He declined to activate Bastion’s effect. ",{"who":"Odnam Gallardo","t":"Gallardo"}," activated the effect of ",{"b":"Griffoh"}," in the Standby Phase to Set ",{"b":"Mind Shuffle"}," from his Deck and immediately flipped it up. He activated its effect, but lost out to ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s ",{"b":"Dominus Purge"},", which destroyed the ",{"b":"Mind Shuffle"},". ",{"who":"Creighton Jevon Pree","t":"Pree"}," drew a card with Endgame Problem’s effect. ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his Main Phase and used ",{"b":"Ragged Records of Rites"},". He revealed ",{"b":"Light and Darkness Ritual"}," from his Deck to add ",{"b":"Celtic Mystic"}," from his Deck to his hand. He Normal Summoned it and activated its effect. He revealed his hand to draw 3 cards and then discard Black Luster Soldier and ",{"b":"Ghost Ogre & Snow Rabbit"},". He Special Summoned ",{"b":"Black Chaos"}," from his hand and used its effect to banish Endgame Problem and Bastion. He Set 2 cards to his back row and then ended his turn."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Creighton Jevon Pree","t":"Pree"}," drew Strategy Score and added it to his hand of ",{"b":"Angelechy Verdict"},", ",{"b":"Angelechy Disturbance"},", Opening to e4, and ",{"b":"Dominus Impulse"},". In his Draw Phase, ",{"who":"Odnam Gallardo","t":"Gallardo"}," activated ",{"b":"Griffoh’s"}," effect to Set ",{"b":"Mind Shuffle"}," from his Deck. He flipped it and then activated its effect to add Skull Archfiend from his Deck to his hand and discard it. He used the Skull Archfiend’s effect by sending ",{"b":"Light and Darkness Ritual"}," from his Deck to his hand and added Black Luster Soldier from his Deck to his hand. ",{"who":"Creighton Jevon Pree","t":"Pree"}," entered his Main Phase and activated Strategy Score to add Opposition from his Deck to his hand. He activated Opposition to Special Summon Seneschal to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s field and place ",{"b":"Angelechy Castellan"}," into his Spell & Trap Card Zone. The effects of Seneschal and Castellan activated to send ",{"b":"Angelechy Verdict"}," from ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s Deck to his Graveyard and Special Summon Destrier from his Extra Deck. He Tuned Enlisted with Destrier to Summon Kusanagi and then entered his Battle Phase. ",{"who":"Odnam Gallardo","t":"Gallardo"}," immediately flipped ",{"b":"The Fallen & The Virtuous"}," and sent Titaniklad from his Extra Deck to the Graveyard to destroy Kusanagi. In Main Phase 2, ",{"who":"Creighton Jevon Pree","t":"Pree"}," banished Verdict from his Graveyard to activate its effect. ",{"who":"Odnam Gallardo","t":"Gallardo"}," Chained his ",{"b":"Mind Shuffle’s"}," effect by returning ",{"b":"Black Chaos"}," to his hand and Special Summoned Black Luster Soldier from his hand. ",{"who":"Creighton Jevon Pree","t":"Pree"}," sent Disturbance to his Graveyard to place Shatranga in his Spell & Trap Card Zone with Verdict’s effect, and then ",{"who":"Odnam Gallardo","t":"Gallardo"}," flipped ",{"b":"Spell Shattering Sword"},", prompting ",{"who":"Creighton Jevon Pree","t":"Pree"}," to concede."]
-    },
-    {
-      "t": "p",
-      "r": ["The Match is moving on to a third and final Duel with just 7 minutes left in the round!"]
-    },
-    {
-      "t": "p",
-      "r": [{"u":"Duel Three"}]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Creighton Jevon Pree","t":"Pree"}," opened up Duel 3 with ",{"b":"Dominus Spark"},", ",{"b":"Artifact Lancea"},", ",{"b":"Vanity’s Fiend"},", and two copies of ",{"b":"Dominus Spiral"},"."]
-    },
-    {
-      "t": "p",
-      "r": ["He Set a Spark and a Spiral and then ended his turn."]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Odnam Gallardo","t":"Gallardo"}," activated ",{"b":"Branded in High Spirits"}," discarding Skull Archfiend from his hand and adding ",{"b":"Fallen of the White Dragon"}," to his hand. He used the Skull Archfiend’s effect to send ",{"b":"Light and Darkness Ritual"}," from his Deck to his Graveyard and add ",{"b":"Magician of Dark Chaos – Black Chaos"}," to his hand. He activated ",{"b":"Light and Darkness Ritual"}," and ",{"who":"Creighton Jevon Pree","t":"Pree"}," Chained the effect of ",{"b":"Artifact Lancea"},". ",{"who":"Odnam Gallardo","t":"Gallardo"}," Tributed monsters from his hand to Special Summon ",{"b":"Magician of Dark Chaos – Black Chaos"},". After a few quick plays, ",{"who":"Odnam Gallardo","t":"Gallardo"}," built up a field and ",{"who":"Creighton Jevon Pree","t":"Pree"}," activated ",{"b":"Dominus Spiral"}," to return ",{"b":"Magician of Dark Chaos – Black Chaos"}," to ",{"who":"Odnam Gallardo","t":"Gallardo"},"’s hand. ",{"who":"Odnam Gallardo","t":"Gallardo"}," Special Summoned Skull Archfiend from his Graveyard with Spiral’s effect. ",{"who":"Odnam Gallardo","t":"Gallardo"}," Ritual Summoned ",{"b":"Magician of Dark Chaos – Black Chaos"}," once again, and moments later, ",{"who":"Odnam Gallardo","t":"Gallardo"}," entered his Battle Phase with ",{"b":"Magician of Dark Chaos – Black Chaos"},", ",{"b":"Fallen of the White Dragon"},", ",{"b":"Incredible Ecclesia the Virtuous"},", and ",{"b":"Skull Archfiend of Chaos"}," in Attack Position. Direct attacks from all of them wiped out ",{"who":"Creighton Jevon Pree","t":"Pree"},"’s Life Points!"]
-    },
-    {
-      "t": "p",
-      "r": [{"who":"Odnam Gallardo","t":"Odnam Gallardo"}," wins the Match with his Deck built around ",{"b":"Light and Darkness Ritual"}," and finishes the Swiss Rounds with an 11-3 record!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2026/ycs/get-ready-for-a-massive-forbidden-limited-list-update/": [
-    {
-      "t": "p",
-      "r": ["It’s almost time for all to be revealed! Big changes are coming to the Advanced Format Forbidden & Limited List for the Yu-Gi-Oh! TRADING CARD GAME, and they will be revealed during the livestream on YouTube and Twitch here at YCS Houston!"]
-    },
-    {
-      "t": "p",
-      "r": ["In total, 34 cards will be added to the Forbidden List in the new Forbidden & Limited List update, and 8 cards will be added to the Limited List. The new update will be revealed in parts throughout the livestream. A partial reveal will take place on the livestream today. Two more partial reveals will occur on Saturday, and then the last two reveals will take place on the livestream on Sunday. By the end of the weekend, Duelists watching Konami’s official YCS Houston livestream will know all 34 cards that will be added to the Forbidden List, as well as all 8 cards that will be added to the Limited List."]
-    },
-    {
-      "t": "p",
-      "r": ["Be the first to find out all of the cards that will be added to the Forbidden & Limited List in the new update by watching Konami’s official livestream for YCS Houston!"]
-    }
-  ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-top-8-feature-match-jamie-hunter-vs-dylan-dallmeyer/": [
     {
       "t": "p",
@@ -7147,46 +7155,18 @@
       "r": [{"who":"Jamie Lewis Hunter","t":"Jamie Hunter"}," is moving on to the Top 4 of the Advanced Main Event at YCS Houston!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-new-items-at-the-prize-wall/": [
+  "https://yugiohblog.konami.com/2026/ycs/get-ready-for-a-massive-forbidden-limited-list-update/": [
     {
       "t": "p",
-      "r": ["Here’s a look at this weekend’s Prize Wall, including some brand new offerings!"]
+      "r": ["It’s almost time for all to be revealed! Big changes are coming to the Advanced Format Forbidden & Limited List for the Yu-Gi-Oh! TRADING CARD GAME, and they will be revealed during the livestream on YouTube and Twitch here at YCS Houston!"]
     },
     {
       "t": "p",
-      "r": ["Duelists who participate in Public Events will earn Public Events Tickets. Those tickets can then be exchanged for amazing prizes at the Prize Wall! Here’s a look at the options at YCS Houston, including some brand new items"]
+      "r": ["In total, 34 cards will be added to the Forbidden List in the new Forbidden & Limited List update, and 8 cards will be added to the Limited List. The new update will be revealed in parts throughout the livestream. A partial reveal will take place on the livestream today. Two more partial reveals will occur on Saturday, and then the last two reveals will take place on the livestream on Sunday. By the end of the weekend, Duelists watching Konami’s official YCS Houston livestream will know all 34 cards that will be added to the Forbidden List, as well as all 8 cards that will be added to the Limited List."]
     },
     {
       "t": "p",
-      "r": ["Our first new item is a Yu-Gi-Oh! MASTER DUEL backpack! You can rep your favorite digital game while storing your physical cards at the same time!"]
-    },
-    {
-      "t": "p",
-      "r": ["Here we have some new Game Mats!"]
-    },
-    {
-      "t": "p",
-      "r": ["These new mats featuring ",{"b":"Mulcharmy Meowls"},", ",{"b":"Zalen the Shackled Dragon"},", and ",{"b":"Ashtraja Susanoo"},", are exclusive to the Prize Wall."]
-    },
-    {
-      "t": "p",
-      "r": ["For the next new items, we have gold plated metal cards!"]
-    },
-    {
-      "t": "p",
-      "r": ["We’ve got ",{"b":"Time Wizard"},", ",{"b":"Kuriboh"},", and ",{"b":"Gaia the Fierce Knight"},"!"]
-    },
-    {
-      "t": "p",
-      "r": ["That’s all the new prizes, but we also have a ton of returning favorites. Here we have a variety of GIANT card rewards!"]
-    },
-    {
-      "t": "p",
-      "r": ["Here we have an assortment of Dueling accessories. There are Game Mats, Deck boxes, and the amazing ",{"b":"Kuriboh"}," Arty bag!"]
-    },
-    {
-      "t": "p",
-      "r": ["Finally, we have a huge variety of returning Game Mats! These come from past Regional Qualifiers, Win-A-Mat events, and much more!"]
+      "r": ["Be the first to find out all of the cards that will be added to the Forbidden & Limited List in the new update by watching Konami’s official livestream for YCS Houston!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/genesys-top-8-feature-match-juan-andrade-vs-jesse-kotton/": [
@@ -7333,6 +7313,48 @@
     {
       "t": "p",
       "r": [{"who":"Juan Sebastian Andrade Castro","t":"Juan Andrade"}," is moving on to the Top 4 with his Angelechy Deck!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-houston-new-items-at-the-prize-wall/": [
+    {
+      "t": "p",
+      "r": ["Here’s a look at this weekend’s Prize Wall, including some brand new offerings!"]
+    },
+    {
+      "t": "p",
+      "r": ["Duelists who participate in Public Events will earn Public Events Tickets. Those tickets can then be exchanged for amazing prizes at the Prize Wall! Here’s a look at the options at YCS Houston, including some brand new items"]
+    },
+    {
+      "t": "p",
+      "r": ["Our first new item is a Yu-Gi-Oh! MASTER DUEL backpack! You can rep your favorite digital game while storing your physical cards at the same time!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here we have some new Game Mats!"]
+    },
+    {
+      "t": "p",
+      "r": ["These new mats featuring ",{"b":"Mulcharmy Meowls"},", ",{"b":"Zalen the Shackled Dragon"},", and ",{"b":"Ashtraja Susanoo"},", are exclusive to the Prize Wall."]
+    },
+    {
+      "t": "p",
+      "r": ["For the next new items, we have gold plated metal cards!"]
+    },
+    {
+      "t": "p",
+      "r": ["We’ve got ",{"b":"Time Wizard"},", ",{"b":"Kuriboh"},", and ",{"b":"Gaia the Fierce Knight"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["That’s all the new prizes, but we also have a ton of returning favorites. Here we have a variety of GIANT card rewards!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here we have an assortment of Dueling accessories. There are Game Mats, Deck boxes, and the amazing ",{"b":"Kuriboh"}," Arty bag!"]
+    },
+    {
+      "t": "p",
+      "r": ["Finally, we have a huge variety of returning Game Mats! These come from past Regional Qualifiers, Win-A-Mat events, and much more!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/advanced-attack-of-the-giant-top-3/": [

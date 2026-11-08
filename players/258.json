@@ -310,10 +310,6 @@
   "Jayming CA Moua": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Kenneth Alfredo Benitez": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2026-central-america-wcq"}
-  ],
   "Larry Kevin Valdivia": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-remote-duel-ycs-north-america"},
@@ -524,6 +520,9 @@
   ],
   "Adrian Minh Tri Do": [
     {"e":"2026-08-quebec","f":"Advanced"}
+  ],
+  "Kenneth Alfredo Benitez": [
+    {"e":"2026-central-america-wcq"}
   ],
   "Argani Jhaszid": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}

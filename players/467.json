@@ -42,7 +42,6 @@
     {"e":"2019-ycs-portland"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2020-uds-invitational-tulsa-ok"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -557,7 +556,6 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Genesys"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Matthew Carlos Ramos Lopes": [
@@ -632,7 +630,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Kyle Christopher Bailey Jr.": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

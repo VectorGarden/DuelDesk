@@ -219,7 +219,6 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-pasadena"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -642,7 +641,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -673,7 +671,6 @@
   ],
   "Dimitri Xavier Butler": [
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Adventurer Virtual World"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

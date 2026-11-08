@@ -338,11 +338,12 @@
     {"e":"2020-team-ycs-las-vegas"}
   ],
   "Darrin Adderley": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
+    {"e":"2022-02-north-america-remote-duel-ycs"}
+  ],
+  "Thomas David Hardin": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
   "Eric Andre Underwood II": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2023-05-ycs-philadelphia"},
@@ -351,10 +352,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"na-ygoc-2022"}
-  ],
-  "Thomas David Hardin": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Matheus Coelho De Moura Ribeiro": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -558,16 +555,16 @@
   "Leonardo B.": {
     "as": "Leonardo Luan Barbosa Bitterncourt"
   },
-  "Bradul O.": {
-    "as": "Bradul Antonyo Ortiz"
-  },
   "Gauge B.": {
     "as": "Gauge Brand Baxter"
   },
-  "Mikaylah K.": {
-    "as": "Mikaylah Anne Krebbs"
+  "Bradul O.": {
+    "as": "Bradul Antonyo Ortiz"
   },
   "Alexander A.": {
     "as": "Alexander Joshua Aviles"
+  },
+  "Mikaylah K.": {
+    "as": "Mikaylah Anne Krebbs"
   }
 }

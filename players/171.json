@@ -317,7 +317,6 @@
   ],
   "Caleb Lee Venegas": [
     {"e":"2019-north-america-wcq"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-north-america-wcq"},
@@ -391,15 +390,13 @@
     {"e":"2019-ycs-portland"}
   ],
   "Vanderson William Langjahr": [
-    {"e":"2019-ycs-portland"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2019-ycs-portland"}
   ],
   "John CA Torres Mercado": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
   "Wesley Michael Moir": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Anthony February Gomez": [
     {"e":"2022-11-ycs-pasadena"},
@@ -578,7 +575,6 @@
   ],
   "Naomi Marie Kim": [
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Lihuen Figueroa": [
@@ -619,10 +615,10 @@
   "Jose Maria Quintanilla Gareca": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Alan W.": {
-    "as": "Alan Lechao Wang"
-  },
   "Enrique B.": {
     "as": "Enrique Balvastro"
+  },
+  "Alan W.": {
+    "as": "Alan Lechao Wang"
   }
 }

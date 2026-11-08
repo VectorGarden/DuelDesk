@@ -537,16 +537,14 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Cedrick Devontae Freeman": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
-  "Mario Junior Marchese Acevedo": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Isidro Lara Guillen": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Mario Junior Marchese Acevedo": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Andy Almanzar Baldera": [
     {"e":"remote-duel-ycs-february-2025"}
@@ -554,11 +552,11 @@
   "Facundo Chayle": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Alfredo H.": {
-    "as": "Alfredo Herrera"
-  },
   "Dylan M.": {
     "as": "Dylan Matthew Mauceri"
+  },
+  "Alfredo H.": {
+    "as": "Alfredo Herrera"
   },
   "Eric C.": {
     "as": "Eric Karl Cardwell"

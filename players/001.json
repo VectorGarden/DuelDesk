@@ -306,8 +306,7 @@
   ],
   "Justin Anthony Thomas-Clerie": [
     {"e":"2018-11-sao-paulo-brazil"},
-    {"e":"2018-north-america-wcq"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2018-north-america-wcq"}
   ],
   "Tristen Navarro Tedder": [
     {"e":"2018-ycs-atlanta"}
@@ -395,7 +394,6 @@
   ],
   "Ken Gilbert": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2023-north-america-remote-duel-ycs"},
     {"e":"na-ygoc-2022"}
@@ -441,7 +439,6 @@
     {"e":"2023-ycs-indianapolis"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Alejandro Gomez Galindo": [
@@ -591,7 +588,6 @@
   ],
   "Freddy Elvira": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -682,16 +678,16 @@
   "Hiromi Kudou": [
     {"e":"yu-gi-oh-world-championship-2013","cut":"Top 8"}
   ],
-  "Morley T.": {
-    "as": "Morley Kim Taing"
-  },
   "Keegan S.": {
     "as": "Keegan Dane Spotts"
   },
-  "Ethan C.": {
-    "as": "Ethan Scott Crowe"
+  "Morley T.": {
+    "as": "Morley Kim Taing"
   },
   "Andrew W.": {
     "as": "Andrew Robert Walch"
+  },
+  "Ethan C.": {
+    "as": "Ethan Scott Crowe"
   }
 }

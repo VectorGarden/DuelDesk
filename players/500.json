@@ -370,16 +370,15 @@
   "Daniel CA Jacinto Diego": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Jake Varga": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Luis Ruben Solis": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-03-team-ycs-las-vegas"}
+  ],
+  "Jake Varga": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Joel Scot Patton": [
     {"e":"2022-ycs-charlotte"},
@@ -573,7 +572,6 @@
   "Alexander Dante Lacerna": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -633,19 +631,19 @@
   "Sonia Flores Maquera": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Tevin L.": {
-    "as": "Tevin Anthony Lam"
+  "Amy K.": {
+    "as": "Amy Catherine Kelly"
   },
   "Ezequiel A.": {
     "as": "Ezequiel Arevalo"
   },
-  "Amy K.": {
-    "as": "Amy Catherine Kelly"
-  },
-  "Omar G.": {
-    "as": "Omar Guevara"
+  "Tevin L.": {
+    "as": "Tevin Anthony Lam"
   },
   "Eric M.": {
     "as": "Eric Alexander Mack"
+  },
+  "Omar G.": {
+    "as": "Omar Guevara"
   }
 }

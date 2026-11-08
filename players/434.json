@@ -48,7 +48,6 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2019-uds-invitational-las-vegas-nv"},
     {"e":"2019-ycs-ft-worth"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"}
   ],
   "Raymond Kendal Brown Jr.": [
@@ -129,7 +128,6 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -447,7 +445,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -529,12 +526,11 @@
   "Tristan Hayden Cook": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Blake Spencer Osman": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Kenneth Louis Cordero": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Blake Spencer Osman": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sebastian Benites Munive": [
     {"e":"remote-duel-ycs-january-2024"}
@@ -551,10 +547,10 @@
   "Gustavo P.": {
     "as": "Gustavo Cassiano Pereira"
   },
-  "Dominic C.": {
-    "as": "Dominic Eduardo Couch"
-  },
   "Jack C.": {
     "as": "Jack Elliot Cates"
+  },
+  "Dominic C.": {
+    "as": "Dominic Eduardo Couch"
   }
 }

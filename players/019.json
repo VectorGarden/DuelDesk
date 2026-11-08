@@ -439,7 +439,6 @@
   "Miguel Angel Gonzalez": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -510,17 +509,17 @@
   "Nilo Edson Menezes Da Silva": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Zachary P.": {
-    "as": "Zachary Alexander Patterson"
+  "Oscar V.": {
+    "as": "Oscar Uriel Velez"
   },
   "Kristofer M.": {
     "as": "Kristofer Allen MacNeal"
   },
+  "Zachary P.": {
+    "as": "Zachary Alexander Patterson"
+  },
   "Angelique R.": {
     "as": "Angelique Nicole Rivera"
-  },
-  "Oscar V.": {
-    "as": "Oscar Uriel Velez"
   },
   "Kade S.": {
     "as": "Kade Mikel Stanley"

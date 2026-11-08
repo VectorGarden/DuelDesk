@@ -367,7 +367,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -435,7 +434,6 @@
   ],
   "Teddy Kurniawan Santoso": [
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
@@ -693,11 +691,11 @@
   "Miguel Angel Marroquin Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Cameron S.": {
-    "as": "Cameron David Smith"
-  },
   "Forbes K.": {
     "as": "Forbes Elliot Ku"
+  },
+  "Cameron S.": {
+    "as": "Cameron David Smith"
   },
   "Arturo A.": {
     "as": "Arturo Arestegui"

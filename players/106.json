@@ -384,12 +384,11 @@
   "Nathaniel Alexander Graffice": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Simon Pierre Richard": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Indy Collard": [
     {"e":"2022-11-ycs-pasadena"}
+  ],
+  "Simon Pierre Richard": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Laura Mesa": [
     {"e":"2022-ycs-bogota-colombia"},
@@ -495,7 +494,6 @@
   "Sebastian XZaviar Leonard Tucker": [
     {"e":"2024-02-team-ycs-las-vegas-nv"},
     {"e":"2025-03-team-ycs-las-vegas"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

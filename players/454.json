@@ -278,7 +278,6 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -373,22 +372,17 @@
     {"e":"2024-team-ycs-san-jose-costa-rica"},
     {"e":"2024-undisputed-uds-championship"},
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
-  ],
-  "Lachezar D. Todorov": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-niagara-falls"}
-  ],
-  "Christopher Jeoung-Ku Lee": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Matthew Rains Carson": [
     {"e":"2022-ycs-charlotte"}
   ],
   "Stephen Harold Irwin": [
     {"e":"2022-ycs-minneapolis"}
+  ],
+  "Lachezar D. Todorov": [
+    {"e":"2022-ycs-niagara-falls"}
   ],
   "Thiago Fonteles": [
     {"e":"2022-ycs-rio-de-janeiro"}

@@ -75,7 +75,6 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joel Satcher Adams": [
@@ -573,7 +572,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Stacy Chad Turner": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

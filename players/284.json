@@ -485,7 +485,6 @@
   ],
   "Luis Alberto J. Torres": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -556,10 +555,10 @@
   "Vinicius J.": {
     "as": "Vinicius Jato"
   },
-  "Brandon G.": {
-    "as": "Brandon Michael Geren"
-  },
   "Cole S.": {
     "as": "Cole Edward Sears"
+  },
+  "Brandon G.": {
+    "as": "Brandon Michael Geren"
   }
 }

@@ -462,10 +462,6 @@
   "Anthony Lam AZ Vo": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "O’Brian Alistair Blackwood": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Jayson Jaimean Valentin": [
     {"e":"2022-11-ycs-pasadena"}
   ],
@@ -474,6 +470,9 @@
     {"e":"2023-ycs-vancouver"},
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-north-america-wcq"}
+  ],
+  "O’Brian Alistair Blackwood": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Jordan Malon Scott": [
     {"e":"2022-january-remote-duel-ycs"}

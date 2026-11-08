@@ -1,4 +1,76 @@
 {
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-saturdays-top-4-dragon-duelists/": [
+    {
+      "t": "p",
+      "r": ["Here are today’s Dragon Duel Top 4!"]
+    },
+    {
+      "t": "p",
+      "r": ["Starting from the left, we have:"]
+    },
+    {
+      "t": "p",
+      "r": ["1st Place: Simon B.\n2nd Place: Sebastian R.\n3rd Place: Karl G.\n4th Place: Aidan B."]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations, Dragon Duelists! Simon will return to face Sunday’s Dragon Duel winner in the Dragon Duel Championship!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-advanced-tech-update/": [
+    {
+      "t": "p",
+      "r": ["Here are some of the trends we’re seeing in YCS Orlando’s Advanced event!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Destroying Cards On Your Opponent’s Turn"}]
+    },
+    {
+      "t": "p",
+      "r": ["We’ve found ",{"b":"Typhoon"}," to be in Side Decks across the board. While you typically don’t need to be destroying Spell or Trap Cards during your opponent’s turn, things have changed in the current meta. Angelechy are the biggest reason to be playing ",{"b":"Typhoon"},", letting you destroy an Angelechy while it’s being treated as a Continuous Spell. You can even destroy ",{"b":"Angelechy Problem"}," after they’ve discarded a card, costing them a resource while preventing Problem from resolving."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Typhoon"}," is also solid against the Magistus Fairy Tail Decks, since they typically have multiple cards like ",{"b":"Fairy Tail Ball"},", ",{"b":"Empire of Endymion"},", and equipped Magistus monsters that allow you to activate ",{"b":"Typhoon"}," on the first turn."]
+    },
+    {
+      "t": "p",
+      "r": ["For similar reasons, we’re seeing more ",{"b":"Ghost Ogre & Snow Rabbit"}," in Decks. If your opponent places ",{"b":"Angelechy Destrier"}," in their Spell & Trap Zone and you have ",{"b":"Ash Blossom & Joyous Spring"},", you’ll prevent them from adding a Spell to their hand but continue taking 500 damage from Destrier’s other effect. Ghost Ogre solves both problems – Since Continuous Spells need to remain on the field to resolve their effects, destroying Destrier with Ghost Ogre stops the effect while also removing the damage dealing threat. This applies to most Angelechy cards, of course, but Ghost Ogre is useful in most matchups. It’s rarely bad to destroy your opponent’s cards, after all."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Big Board Breakers"}]
+    },
+    {
+      "t": "p",
+      "r": ["Duelists are looking for ways to go after multiple cards at once, and we’ve found several ways – including one that’s pretty creative. The infamous ",{"b":"Nibiru, the Primal Being"}," is on the rise again, though not as much as its former heyday. Nibiru sometimes struggles when the opponent can keep playing through it. Nibiru also gets stopped by cards like ",{"b":"Number 90: Galaxy-Eyes Photon Lord"},", making it tricky to find the right window for its effect."]
+    },
+    {
+      "t": "p",
+      "r": ["So while Nibiru is seeing a bit more play, those issues are why we are also seeing much more of ",{"b":"The Great Gallant Bandit"},". The Bandit’s Tribute Summon pushes through almost any kind of protection, while coming with two useful ways to interact with your opponent."]
+    },
+    {
+      "t": "p",
+      "r": ["The last board breaker is a little trickier – it’s ",{"b":"Shiina, Twin Tempests of Celestial Thunder"},". You need a WIND monster to use the effect of Shiina, so Duelists are using this as their way to counter Angelechy Decks. Why Angelechy, you ask? Because ",{"b":"Angelechy Seneschal"}," allows each player to Special Summon a Fairy Synchro Monster. So, players are including ",{"b":"Maple Maiden"}," in their Extra Decks to Special Summon with Seneschal, getting Shiina’s effect online! No matter which of Shiina’s effects you apply, it’s going to be a brutal tempo swing against an Angelechy opponent."]
+    },
+    {
+      "t": "p",
+      "r": ["The final board breaker is a lot simpler. ",{"b":"Hey, Space Trunade!"}," is a clean way to clear out two cards from the field with no strings attached. It doesn’t target, and your opponent loses another card from their hand if they want to keep a card you returned. It isn’t flashy, but it’s powerful and flexible – just what you need in a Side Deck card."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"The Limited List? Nice try."}]
+    },
+    {
+      "t": "p",
+      "r": ["While ",{"b":"Droll & Lock Bird"}," was put on the Limited List in the most recent F&L List change, some Duelists have taken that as a challenge. In Spellcaster focused Decks like those with ",{"b":"Light and Darkness Ritual"},", some players are using ",{"b":"Dark Magical Curtain"}," as a way to Special Summon ",{"b":"Witch of the Black Forest"},". By using the Witch as a material, such as a Link Summon, you can find ",{"b":"Droll & Lock Bird"}," or a monster like ",{"b":"Ash Blossom & Joyous Spring"},". You can’t use the effects of what you add to your hand during this turn, so cards like Droll and Ash Blossom are perfect to find for your opponent’s turn."]
+    },
+    {
+      "t": "p",
+      "r": ["These are a few of the trends we’re seeing here at YCS Orlando, but how will they play out? We’ve got several more Swiss rounds between today and tomorrow, so we’ll see if any of these strategies make it into the Top Cut tomorrow!"]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-prize-wall-including-new-items/": [
     {
       "t": "p",

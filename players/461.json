@@ -402,9 +402,6 @@
     {"e":"2024-11-north-america-remote-duel-ycs","cut":"Top 32"},
     {"e":"2025-04-ycs-houston"}
   ],
-  "Shaun Thor": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Salvador Rodriguez Navarro": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -551,7 +548,6 @@
   ],
   "Cameron Lucas Rucker": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -633,12 +629,11 @@
   "Herberth Styben Ochoa Ticun": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
-  "Nicholas Alexander Booth": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Elias Thomas Haraksin": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Nicholas Alexander Booth": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Melissa Michelle Rivas Montoya": [
     {"e":"uds-2016-elsalvador"}

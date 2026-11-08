@@ -342,9 +342,6 @@
   "Joshua Terrell Dussuau": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Jacob Austin Gattuso": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Kalil Missagia Garcia": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2022-ycs-rio-de-janeiro","cut":"Top 32","deck":"Danger! Tearlaments"}
@@ -593,12 +590,11 @@
     {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
-  "Richard John Young": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Logan Aaron Sherman": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Richard John Young": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Kevin Matthew Dabney": [
     {"e":"na-ygoc-2022"}
@@ -618,20 +614,20 @@
   "Devon Boyd": {
     "as": "Devon L. Boyd"
   },
-  "Spencer Y.": {
-    "as": "Spencer Young"
-  },
-  "Connor Z.": {
-    "as": "Connor Storm Zaborowski"
-  },
   "Alfredo C.": {
     "as": "Alfredo Carlos"
   },
   "Bader A.": {
     "as": "Bader Abdullah Mahamad Alshahrani"
   },
+  "Spencer Y.": {
+    "as": "Spencer Young"
+  },
   "Surya K.": {
     "as": "Surya Kumaraguru"
+  },
+  "Connor Z.": {
+    "as": "Connor Storm Zaborowski"
   },
   "Ryhan J.": {
     "as": "Ryhan Chakim Jabri"

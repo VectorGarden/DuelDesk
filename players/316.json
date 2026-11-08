@@ -513,7 +513,6 @@
   ],
   "Eric Bryan Simpson": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sean Riley Parr": [
@@ -541,7 +540,6 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Centur-Ion White Forest"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Diego Leonel Damas Rodriguez": [
@@ -604,10 +602,10 @@
   "Diego Raphael Bejarano Becerra": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Adam T.": {
-    "as": "Adam Tapia"
-  },
   "Alberto L.": {
     "as": "Alberto October Lopez"
+  },
+  "Adam T.": {
+    "as": "Adam Tapia"
   }
 }

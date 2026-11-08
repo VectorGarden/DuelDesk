@@ -104,7 +104,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -629,7 +628,6 @@
   ],
   "Carl Ryan Eby": [
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Cesar Daniel Linares Mier": [
@@ -666,20 +664,20 @@
   "Caique F.": {
     "as": "Caique Souza Ferreira"
   },
-  "Russell C.": {
-    "as": "Russell Foster Chizek"
+  "Evan B.": {
+    "as": "Evan Matthew Burlaga"
   },
   "Daniel P.": {
     "as": "Daniel Palacios"
-  },
-  "Evan B.": {
-    "as": "Evan Matthew Burlaga"
   },
   "Bradd C.": {
     "as": "Bradd Richard Cyr"
   },
   "Justin S.": {
     "as": "Justin Andrew Singh"
+  },
+  "Russell C.": {
+    "as": "Russell Foster Chizek"
   },
   "Alan D.": {
     "as": "Alan Evan Dale"

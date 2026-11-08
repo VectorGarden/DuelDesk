@@ -400,7 +400,6 @@
   ],
   "Andres Arocho": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"}
   ],
   "Bill Ming Pok": [
@@ -408,9 +407,6 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2025-10-ycs-anaheim"}
-  ],
-  "Raymond Rosas Reyes": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Matheus Camilo Rodrigues": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -637,11 +633,11 @@
   "Carlos Alberto Lopez Juanchaya": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Yichong S.": {
-    "as": "Yichong Shen"
-  },
   "Angelo S.": {
     "as": "Angelo Pantig Sibal"
+  },
+  "Yichong S.": {
+    "as": "Yichong Shen"
   },
   "Nathan C.": {
     "as": "Nathan Tyler Christensen"

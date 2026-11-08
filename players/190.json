@@ -22,7 +22,6 @@
     {"e":"2019-08-uds-summer-invitational-2019-indianapolis-in"},
     {"e":"2019-ycs-chicago"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-minneapolis","cut":"Top 32","deck":"Spright Tearlaments"},
     {"e":"202205-ycs-hartford-ct"},
@@ -334,9 +333,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"}
-  ],
-  "Joshua Tyler Bennett": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Miguel Alejandro Mendoza": [
     {"e":"2022-january-remote-duel-ycs"}

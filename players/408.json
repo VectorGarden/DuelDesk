@@ -401,7 +401,6 @@
   "Ariel Steven Davis": [
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-north-america-remote-duel-ycs"},
     {"e":"2023-north-america-wcq"},
     {"e":"2023-ycs-indianapolis"},
@@ -657,10 +656,10 @@
   "Brandon Javier Villanueva": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
-  "Alejandro E.": {
-    "as": "Alejandro Valdez Estrada"
-  },
   "Niravkumar T.": {
     "as": "Niravkumar Dharmesn Tandel"
+  },
+  "Alejandro E.": {
+    "as": "Alejandro Valdez Estrada"
   }
 }

@@ -374,8 +374,7 @@
     {"e":"2025-10-ycs-anaheim"}
   ],
   "Quinn John Spooner": [
-    {"e":"2019-ycs-portland"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2019-ycs-portland"}
   ],
   "Adam Nguyen": [
     {"e":"2019-ycs-portland"}
@@ -465,7 +464,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -668,13 +666,13 @@
   "Josias Velazquez Velasco": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Asad F.": {
-    "as": "Asad Farooq"
-  },
   "Trevor R.": {
     "as": "Trevor James Reid"
   },
   "Jair G.": {
     "as": "Jair Alejandro Garcia"
+  },
+  "Asad F.": {
+    "as": "Asad Farooq"
   }
 }

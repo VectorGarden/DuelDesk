@@ -355,9 +355,6 @@
   "Ernesto Martin Romero": [
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Jonathan M. Halbrook": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Alexis Elias Lepe Rivas": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -533,7 +530,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -569,7 +565,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Noah Algernon Greer": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -582,10 +577,10 @@
   "Fernando M.": {
     "as": "Fernando Massahiro Alves Murata"
   },
-  "Jamal J.": {
-    "as": "Jamal James"
-  },
   "Angel R.": {
     "as": "Angel Rodriguez-Cruz"
+  },
+  "Jamal J.": {
+    "as": "Jamal James"
   }
 }

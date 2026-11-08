@@ -349,8 +349,7 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Gabriel Eduardo Medina": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Andrew Dean Vanderplas": [
     {"e":"2022-11-ycs-pasadena"}
@@ -485,7 +484,6 @@
   ],
   "Dennis Eugine Godfrey": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Jameel Noormohamed": [
@@ -547,10 +545,10 @@
   "Kethya K.": {
     "as": "Kethya Kas"
   },
-  "Noah C.": {
-    "as": "Noah Cervantes"
-  },
   "Maciej M.": {
     "as": "Maciej Jan Michalec"
+  },
+  "Noah C.": {
+    "as": "Noah Cervantes"
   }
 }

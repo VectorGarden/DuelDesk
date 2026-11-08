@@ -435,9 +435,6 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-north-america-wcq"}
   ],
-  "Kevin Rivera": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Joshua Michael Ridgeway": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
@@ -522,7 +519,6 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Magistus Dracotail"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

@@ -204,7 +204,6 @@
     {"e":"2019-ycs-ft-worth"},
     {"e":"2019-ycs-portland"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-team-ycs-las-vegas"},
@@ -212,7 +211,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -289,7 +287,6 @@
   ],
   "Matthew Keith Arias": [
     {"e":"2019-north-america-wcq"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"202205-ycs-hartford-ct"},
     {"e":"na-ygoc-2022"}
@@ -471,7 +468,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -532,7 +528,6 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Peyton Zachary Paul": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

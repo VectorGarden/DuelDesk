@@ -288,19 +288,6 @@
   "Austin Lee Harris": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Jorge Luis Pagan Ostolaza": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-niagara-falls","cut":"Top 32"},
-    {"e":"202205-ycs-hartford-ct"},
-    {"e":"2023-north-america-wcq"},
-    {"e":"2023-team-ycs-las-vegas"},
-    {"e":"2024-north-america-wcq"},
-    {"e":"2024-ycs-raleigh"},
-    {"e":"2025-02-ycs-orlando"},
-    {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"},
-    {"e":"na-ygoc-2022"}
-  ],
   "Hugo Fernando Hidalgo Badillo": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2025-ycs-mexico-city-mexico"}
@@ -350,6 +337,18 @@
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-ycs-vancouver"},
     {"e":"2025-ycs-vancouver"}
+  ],
+  "Jorge Luis Pagan Ostolaza": [
+    {"e":"2022-ycs-niagara-falls","cut":"Top 32"},
+    {"e":"202205-ycs-hartford-ct"},
+    {"e":"2023-north-america-wcq"},
+    {"e":"2023-team-ycs-las-vegas"},
+    {"e":"2024-north-america-wcq"},
+    {"e":"2024-ycs-raleigh"},
+    {"e":"2025-02-ycs-orlando"},
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-north-america-wcq"},
+    {"e":"na-ygoc-2022"}
   ],
   "Gabriel Cavalcante": [
     {"e":"2022-ycs-rio-de-janeiro"},
@@ -546,17 +545,17 @@
   "Daniel Hernandez Rodriguez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Benjamin C.": {
-    "as": "Benjamin Ho Chau"
-  },
-  "Joseph D.": {
-    "as": "Joseph Francis Dietrich"
+  "Kevin W.": {
+    "as": "Kevin Wu"
   },
   "Kyle L.": {
     "as": "Kyle Robert Lo"
   },
-  "Kevin W.": {
-    "as": "Kevin Wu"
+  "Joseph D.": {
+    "as": "Joseph Francis Dietrich"
+  },
+  "Benjamin C.": {
+    "as": "Benjamin Ho Chau"
   },
   "Chuan T.": {
     "as": "Chuan Tong"

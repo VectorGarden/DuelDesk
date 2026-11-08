@@ -374,9 +374,6 @@
   "Henry AZ Olivarez": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Ahmed Hussein Alajdah": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Fernando Reyes Tiburcio": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-central-america-wcq"},
@@ -541,7 +538,6 @@
   ],
   "Colby Austin Flynn": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -588,10 +584,10 @@
   "Gabriel L.": {
     "as": "Gabriel Ramos Luiz"
   },
-  "Ryan F.": {
-    "as": "Ryan Fletcher"
-  },
   "Reno R.": {
     "as": "Reno Jet Ramsey"
+  },
+  "Ryan F.": {
+    "as": "Ryan Fletcher"
   }
 }

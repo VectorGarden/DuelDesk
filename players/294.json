@@ -325,7 +325,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Dracotail"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -594,10 +593,10 @@
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Robby F.": {
-    "as": "Robby William Fish"
-  },
   "Bryan C.": {
     "as": "Bryan Dejesus Collazo"
+  },
+  "Robby F.": {
+    "as": "Robby William Fish"
   }
 }

@@ -352,7 +352,6 @@
   "Elbert L. Wu": [
     {"e":"2018-north-america-wcq"},
     {"e":"2020-uds-invitational-tulsa-ok"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-north-america-wcq"},
@@ -369,7 +368,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -482,7 +480,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -667,10 +664,10 @@
   "Jose Eduardo Coria Ramirez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Ruben R.": {
-    "as": "Ruben Ilai Rodriguez"
-  },
   "Edmund B.": {
     "as": "Edmund Philip Beltran"
+  },
+  "Ruben R.": {
+    "as": "Ruben Ilai Rodriguez"
   }
 }

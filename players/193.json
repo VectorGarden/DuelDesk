@@ -118,7 +118,6 @@
     {"e":"2015-north-american-wcq"},
     {"e":"2015-ycs-tacoma","cut":"Top 32"},
     {"e":"201611-anaheim-ca"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -408,19 +407,6 @@
   "Cengizhan Gergef": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Jarod Michael Ladnier": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-ycs-indianapolis"},
-    {"e":"2024-ycs-indianapolis"},
-    {"e":"2026-05-ycs-columbus","f":"Advanced"}
-  ],
-  "Mason Davis Vang": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-remote-duel-ycs-north-america"},
-    {"e":"2022-ycs-minneapolis"},
-    {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
-  ],
   "Duvier Andres Garnica Suta": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2022-ycs-bogota-colombia"},
@@ -433,6 +419,12 @@
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+  ],
+  "Mason Davis Vang": [
+    {"e":"2022-remote-duel-ycs-north-america"},
+    {"e":"2022-ycs-minneapolis"},
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-north-america-wcq"}
   ],
   "Diego Andres Gamboa Diaz": [
     {"e":"2022-ycs-bogota-colombia"}
@@ -482,7 +474,6 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Kevin J. Choi": [
@@ -544,6 +535,11 @@
   "John Paul Pacalda Andresio": [
     {"e":"2023-ycs-indianapolis"},
     {"e":"2025-04-ycs-houston"}
+  ],
+  "Jarod Michael Ladnier": [
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2024-ycs-indianapolis"},
+    {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Dylan Samuel Becker": [
     {"e":"2023-ycs-indianapolis"},
@@ -613,7 +609,6 @@
   ],
   "Rene Arturo Gajardo": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Bennet James DeChellis": [
@@ -684,10 +679,10 @@
   "Dalvinhg Enrique Villaverde Oliva": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Cristian C.": {
-    "as": "Cristian Jared Cloud"
-  },
   "Luis P.": {
     "as": "Luis Manuel Perez"
+  },
+  "Cristian C.": {
+    "as": "Cristian Jared Cloud"
   }
 }

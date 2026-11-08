@@ -488,7 +488,6 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2024-10-ycs-niagara-falls"},
     {"e":"2024-ycs-indianapolis"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -560,7 +559,6 @@
   ],
   "Jesus Alberto Lopez": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Anthony Tyler Cochran Hoskins": [
@@ -637,16 +635,16 @@
   "Matias Fernandez Silva": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Solomon M.": {
-    "as": "Solomon Moses Moran"
-  },
   "Kenny L.": {
     "as": "Kenny Mongzong Lo"
   },
-  "Barry B.": {
-    "as": "Barry Bennett Broadhead"
+  "Solomon M.": {
+    "as": "Solomon Moses Moran"
   },
   "Cristian D.": {
     "as": "Cristian Martin Dimas"
+  },
+  "Barry B.": {
+    "as": "Barry Bennett Broadhead"
   }
 }

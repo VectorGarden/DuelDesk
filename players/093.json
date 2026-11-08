@@ -322,7 +322,6 @@
     {"e":"2023-north-america-remote-duel-ycs"}
   ],
   "Michael Alexander Surat": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2026-08-quebec","f":"Advanced"},
@@ -521,13 +520,12 @@
   "Denilzon Brayan Vilca Fernandez": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
-  "Maria Louise Gibson": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Bryan Richard Wilson": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Maria Louise Gibson": [
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Dylan Avimael Perez Saravia": [
     {"e":"remote-duel-ycs-january-2026"}
@@ -538,13 +536,13 @@
   "Landon Oliver": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
+  "Paul D.": {
+    "as": "Paul Ivan Diaz"
+  },
   "Tristan R.": {
     "as": "Tristan James Reep"
   },
   "Bryson W.": {
     "as": "Bryson Roger Williams"
-  },
-  "Paul D.": {
-    "as": "Paul Ivan Diaz"
   }
 }

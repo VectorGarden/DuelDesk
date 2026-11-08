@@ -78,7 +78,6 @@
     {"e":"2019-ycs-portland"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2020-uds-invitational-tulsa-ok"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena","cut":"Top 16","deck":"Ishizu Tearlaments"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte","cut":"Top 32","deck":"Shaddoll Dogmatika"},
@@ -484,7 +483,6 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Vanquish Soul K9"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced","cut":"Top 8","deck":"Light and Darkness Ritual"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -590,7 +588,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ludwig Van Altagracia Nolasco": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

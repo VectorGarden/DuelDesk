@@ -437,10 +437,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"}
   ],
-  "Janet Sivlee Say": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-niagara-falls"}
-  ],
   "Jesus Enrique Garriga": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -453,6 +449,9 @@
   "Aaron Valdez Estrada": [
     {"e":"2022-ycs-guadalajara-mexico"},
     {"e":"2024-10-cancun-mexico"}
+  ],
+  "Janet Sivlee Say": [
+    {"e":"2022-ycs-niagara-falls"}
   ],
   "Robert Joseph Billotte": [
     {"e":"202205-ycs-hartford-ct"}

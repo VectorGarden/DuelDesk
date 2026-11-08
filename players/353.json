@@ -52,7 +52,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -118,7 +117,6 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -179,7 +177,6 @@
     {"e":"2019-08-uds-summer-invitational-2019-indianapolis-in"},
     {"e":"2019-ycs-chicago"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-niagara-falls","cut":"Top 16","deck":"Spright Frog Live Twin"},
@@ -636,10 +633,10 @@
   "Declan Craig Matthews": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Australia","cut":"Top 4"}
   ],
-  "Trevor H.": {
-    "as": "Trevor Chanai Hicken"
-  },
   "Po W.": {
     "as": "Po Han Barry Wu"
+  },
+  "Trevor H.": {
+    "as": "Trevor Chanai Hicken"
   }
 }

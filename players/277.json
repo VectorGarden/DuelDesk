@@ -138,7 +138,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Branded Springans"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Final","deck":"Blitzclique"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Lars Athair Rua Jacobson": [
@@ -496,7 +495,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-12-rdycs-na"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -601,10 +599,10 @@
   "Eliott C.": {
     "as": "Eliott Jesus Campa"
   },
-  "Jonnatan L.": {
-    "as": "Jonnatan Alexis Lopez"
-  },
   "Junhao D.": {
     "as": "Junhao Dong"
+  },
+  "Jonnatan L.": {
+    "as": "Jonnatan Alexis Lopez"
   }
 }

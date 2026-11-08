@@ -75,7 +75,6 @@
     {"e":"2019-ycs-ft-worth"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"na-ygoc-2022"}
   ],
@@ -101,7 +100,6 @@
     {"e":"2018-north-america-wcq","cut":"Top 16"},
     {"e":"2019-ycs-chicago"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2022-ycs-niagara-falls"}
   ],
@@ -219,7 +217,6 @@
     {"e":"2019-ycs-knoxville"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -475,9 +472,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"}
   ],
-  "Michael Alsobrook": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Luca Insinna": [
     {"e":"2022-remote-duel-ycs-north-america","cut":"Top 32","deck":"Bystial Spright"}
   ],
@@ -653,6 +647,9 @@
   "John Alexander Wilken": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Canada","cut":"Top 8"}
   ],
+  "Erkam Y.": {
+    "as": "Erkam Omer Yilmaz"
+  },
   "Andrew L.": {
     "as": "Andrew Lam"
   },
@@ -661,9 +658,6 @@
   },
   "Braxton H.": {
     "as": "Braxton Kendall Hodges"
-  },
-  "Erkam Y.": {
-    "as": "Erkam Omer Yilmaz"
   },
   "Triston M.": {
     "as": "Triston Michael Mendez"

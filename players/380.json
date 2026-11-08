@@ -553,7 +553,6 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -664,7 +663,6 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Aaron Scott Anderson": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -683,13 +681,13 @@
   "Georgiy K.": {
     "as": "Georgiy Andreyevich Kachurin"
   },
-  "Francis N.": {
-    "as": "Francis Huy Nguyen"
-  },
   "Kyle R.": {
     "as": "Kyle Alan Rohrer"
   },
   "Jesus C.": {
     "as": "Jesus Chavez Campas"
+  },
+  "Francis N.": {
+    "as": "Francis Huy Nguyen"
   }
 }

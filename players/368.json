@@ -259,7 +259,6 @@
   ],
   "David Andrew Beauregard Brazell": [
     {"e":"2018-ycs-atlanta"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Nicholas Bradley Poe": [
@@ -370,9 +369,6 @@
   "Mustafa Azher El Attar": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2025-10-ycs-anaheim"}
-  ],
-  "Raemon Michael Henry": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Felix Gabriel Parra Suarez": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -644,16 +640,16 @@
   "João A.": {
     "as": "João Vitor Abrahão"
   },
+  "Lyric B.": {
+    "as": "Lyric Bruner"
+  },
   "Tyler M.": {
     "as": "Tyler Mackenzie Mocklin"
-  },
-  "Luca C.": {
-    "as": "Luca Mathew Jin Soo Choi"
   },
   "Joo A.": {
     "as": "Joo Ho Ahn"
   },
-  "Lyric B.": {
-    "as": "Lyric Bruner"
+  "Luca C.": {
+    "as": "Luca Mathew Jin Soo Choi"
   }
 }

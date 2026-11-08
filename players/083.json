@@ -358,9 +358,6 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
-  "Ki David Darrell Dixon": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Miguel Duran Montes": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-team-ycs-mexico-city"}
@@ -552,11 +549,11 @@
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Zachary O.": {
-    "as": "Zachary Vincent Owens"
-  },
   "Ilijan P.": {
     "as": "Ilijan Paurevic"
+  },
+  "Zachary O.": {
+    "as": "Zachary Vincent Owens"
   },
   "Jackson R.": {
     "as": "Jackson Dillon Rauch"

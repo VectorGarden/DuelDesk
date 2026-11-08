@@ -398,7 +398,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -529,7 +528,6 @@
   ],
   "Mike Anthony Davila": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Carlos Eduardo Gonzalez Gonzalez": [
@@ -545,7 +543,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
   ],
   "Kaleb Austin Morgan": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Victor Castro Nacif De Faria": [

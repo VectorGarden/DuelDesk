@@ -309,10 +309,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
-  "Andy Nah Yang": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-minneapolis"}
-  ],
   "Benjamin de Jesus Federico Naranjo Salcedo": [
     {"e":"2022-ycs-guadalajara-mexico"}
   ],
@@ -322,6 +318,9 @@
   "Rodrigo Rojas Guzman": [
     {"e":"2022-ycs-guadalajara-mexico"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
+  ],
+  "Andy Nah Yang": [
+    {"e":"2022-ycs-minneapolis"}
   ],
   "Jerry Lee Anderson Jr.": [
     {"e":"2022-ycs-minneapolis"}
@@ -505,10 +504,10 @@
   "Hurnake D.": {
     "as": "Hurnake Singh Dhillon"
   },
-  "Giovanny G.": {
-    "as": "Giovanny Alexander Gonzalez"
-  },
   "Eric H.": {
     "as": "Eric Zacarias Freeman Hansen"
+  },
+  "Giovanny G.": {
+    "as": "Giovanny Alexander Gonzalez"
   }
 }

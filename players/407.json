@@ -353,7 +353,6 @@
     {"e":"2019-uds-invitational-las-vegas-nv"},
     {"e":"2019-ycs-pasadena"},
     {"e":"2019-ycs-portland","cut":"Final"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
@@ -489,8 +488,7 @@
     {"e":"2020-team-ycs-las-vegas"}
   ],
   "Alan Merwyn Weston": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Alberto David Gomez": [
     {"e":"2022-11-ycs-pasadena"},
@@ -700,14 +698,13 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Brandon Issac Morales": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
-  "Angel L.": {
-    "as": "Angel Alexander Lucas"
-  },
   "Ondrae M.": {
     "as": "Ondrae Charles Mathews"
+  },
+  "Angel L.": {
+    "as": "Angel Alexander Lucas"
   }
 }

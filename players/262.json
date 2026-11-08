@@ -544,7 +544,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -615,20 +614,19 @@
   "Daniel July Cruz": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Scott Edward Vukelic": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "German Rodriguez": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Scott Edward Vukelic": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Guangnan L.": {
     "as": "Guangnan Liu"
   },
-  "Scott S.": {
-    "as": "Scott Joseph Sheahan"
-  },
   "Jose Z.": {
     "as": "Jose A. Zarate"
+  },
+  "Scott S.": {
+    "as": "Scott Joseph Sheahan"
   }
 }

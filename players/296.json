@@ -212,7 +212,6 @@
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Mitchell Tyler Schultz Garrett": [
@@ -312,7 +311,6 @@
     {"e":"2019-ycs-chicago"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2019-ycs-knoxville","cut":"Top 32"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2024-ycs-raleigh"},
@@ -431,7 +429,6 @@
   ],
   "Gavin Alan Meyer": [
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"},
@@ -447,9 +444,6 @@
   ],
   "Matthew Jiwoo Kim": [
     {"e":"2022-02-north-america-remote-duel-ycs"}
-  ],
-  "David M Hernandez": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Jose Antonio Segovia Ramirez": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -672,19 +666,19 @@
   "Siri Antonio Pineda Jaramillo": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Carson C.": {
-    "as": "Carson Joseph Cichocki"
-  },
   "Peter C.": {
     "as": "Peter Man Chun Chung"
   },
   "Marko K.": {
     "as": "Marko Kovacevic"
   },
-  "Yiming H.": {
-    "as": "Yiming Huang"
+  "Carson C.": {
+    "as": "Carson Joseph Cichocki"
   },
   "Belle N.": {
     "as": "Belle Song Nguyen"
+  },
+  "Yiming H.": {
+    "as": "Yiming Huang"
   }
 }

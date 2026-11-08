@@ -364,7 +364,6 @@
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Samuel Stuart": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"}
   ],
   "Bryan Ivan Juarez Quinones": [
@@ -546,7 +545,6 @@
   "Ryan Richard Bielefeld": [
     {"e":"2025-north-america-wcq"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

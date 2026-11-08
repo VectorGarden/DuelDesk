@@ -413,12 +413,6 @@
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-north-america-wcq"}
   ],
-  "Thomas Chris Wilson": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-niagara-falls"},
-    {"e":"2023-team-ycs-las-vegas"},
-    {"e":"2025-04-ycs-houston"}
-  ],
   "Ubaldo Vergara": [
     {"e":"2022-ycs-bogota-colombia"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
@@ -426,6 +420,11 @@
   ],
   "Andres Tapia": [
     {"e":"2022-ycs-guadalajara-mexico"}
+  ],
+  "Thomas Chris Wilson": [
+    {"e":"2022-ycs-niagara-falls"},
+    {"e":"2023-team-ycs-las-vegas"},
+    {"e":"2025-04-ycs-houston"}
   ],
   "Alex Anthony Joslin": [
     {"e":"202205-ycs-hartford-ct"}
@@ -488,7 +487,6 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Leosdany Espinosa Alvarez": [

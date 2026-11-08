@@ -244,14 +244,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-team-ycs-las-vegas"}
   ],
-  "Jacob Taylor Brees": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-north-america-wcq"},
-    {"e":"2024-north-america-wcq"},
-    {"e":"2025-03-team-ycs-las-vegas"},
-    {"e":"2025-north-america-wcq"},
-    {"e":"2026-north-america-wcq"}
-  ],
   "Justin Ryan Kubat": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
@@ -311,6 +303,13 @@
   "Andrew Nicholas McInturff": [
     {"e":"2023-north-america-wcq"},
     {"e":"2024-ycs-raleigh"}
+  ],
+  "Jacob Taylor Brees": [
+    {"e":"2023-north-america-wcq"},
+    {"e":"2024-north-america-wcq"},
+    {"e":"2025-03-team-ycs-las-vegas"},
+    {"e":"2025-north-america-wcq"},
+    {"e":"2026-north-america-wcq"}
   ],
   "Nicholas William Weaver": [
     {"e":"2023-north-america-wcq"},
@@ -445,12 +444,11 @@
   "Christian Alfonso Tobalina Pinargote": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
-  "Harris Ethan Lansky Plofsky": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Jose Arsenio Ocasio": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Harris Ethan Lansky Plofsky": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Christian David Villegas Gonzalez": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

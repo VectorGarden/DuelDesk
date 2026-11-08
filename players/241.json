@@ -378,7 +378,7 @@
     {"e":"2025-ycs-buenos-aires-argentina"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","won":true,"cut":"Final"}
   ],
   "Rodrigo Guedes De Souza": [
     {"e":"2022-latin-america-remote-duel-ycs"}

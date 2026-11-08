@@ -221,7 +221,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-04-ycs-houston"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -352,9 +351,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-04-ycs-houston"}
-  ],
-  "Finn Pedersen": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Angel Alejandro Sucasas Goncalves": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -604,13 +600,13 @@
   "Fabricio Santana Campodonio": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Bradley P.": {
-    "as": "Bradley Robert Peters"
-  },
   "Jacob N.": {
     "as": "Jacob Scott Nelson"
   },
   "Pete N.": {
     "as": "Pete Joseph Navarro"
+  },
+  "Bradley P.": {
+    "as": "Bradley Robert Peters"
   }
 }

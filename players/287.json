@@ -109,7 +109,6 @@
     {"e":"2018-ycs-memphis","cut":"Top 32"},
     {"e":"2019-ycs-ft-worth"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"202205-ycs-hartford-ct"},
@@ -621,7 +620,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Axel Zayas Jr.": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Anthony Rudolf Torbisco Chota": [

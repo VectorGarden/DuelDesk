@@ -301,7 +301,6 @@
   "Dylan Thomas Thong George": [
     {"e":"2018-north-america-wcq"},
     {"e":"2019-north-america-wcq"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-north-america-wcq"},
@@ -638,7 +637,6 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Christian Jovanny Bravo": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

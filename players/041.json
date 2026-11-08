@@ -131,7 +131,6 @@
     {"e":"2019-ycs-knoxville"},
     {"e":"2019-ycs-pasadena"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
@@ -461,9 +460,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"na-ygoc-2022","cut":"Top 32","deck":"Tenyi Swordsoul"}
-  ],
-  "Thomas Everett Pears": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Renne Kavassaki Targino": [
     {"e":"2022-latin-america-remote-duel-ycs"}

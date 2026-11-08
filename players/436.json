@@ -429,9 +429,6 @@
   "Mikhail Anthony Stefan Dennis": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Ashlynn Ophelia Levenick": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Maikon Luan Lima Quintian": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2025-ycs-sao-paulo-brazil"},
@@ -570,7 +567,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Sebastian Robert DeLaney": [
@@ -655,10 +651,10 @@
   "Vinicius S.": {
     "as": "Vinicius Rodrigues da Silva"
   },
-  "John A.": {
-    "as": "John Daniel Alexander"
-  },
   "Francisco M.": {
     "as": "Francisco Misael Montes"
+  },
+  "John A.": {
+    "as": "John Daniel Alexander"
   }
 }

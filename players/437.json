@@ -139,7 +139,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -347,7 +346,6 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"K9 Vanquish Soul"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -439,11 +437,6 @@
   "Lyric Gennaro DeBruyn": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Matthew Alexander Gorton": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"}
-  ],
   "Marcel Dominik Weissert": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2024-ycs-indianapolis"}
@@ -456,6 +449,10 @@
   ],
   "Brandon James Boylan-Peck": [
     {"e":"2022-january-remote-duel-ycs"}
+  ],
+  "Matthew Alexander Gorton": [
+    {"e":"2022-january-remote-duel-ycs"},
+    {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"}
   ],
   "Constantino Norman Pearl Rivera": [
     {"e":"2022-latin-america-remote-duel-ycs"}

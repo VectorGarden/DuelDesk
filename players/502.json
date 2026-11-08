@@ -104,7 +104,6 @@
     {"e":"2017-ycs-toronto"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-niagara-falls"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-niagara-falls"}
   ],
   "Dakota Shane Smith": [
@@ -450,7 +449,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -540,13 +538,13 @@
   "Garret S.": {
     "as": "Garret Alexander Soto Schier"
   },
-  "Eric A.": {
-    "as": "Eric Alexander Avila"
+  "Ignacio L.": {
+    "as": "Ignacio Ramon Lopez"
   },
   "Stefan D.": {
     "as": "Stefan Tanner Durrant"
   },
-  "Ignacio L.": {
-    "as": "Ignacio Ramon Lopez"
+  "Eric A.": {
+    "as": "Eric Alexander Avila"
   }
 }

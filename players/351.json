@@ -151,7 +151,6 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -343,7 +342,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -581,19 +579,19 @@
   "Yuuki Shibata": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Top 8","deck":"Sky Striker"}
   ],
+  "Brian L.": {
+    "as": "Brian Patrick Lentini"
+  },
+  "Alex Y.": {
+    "as": "Alex Jordan Yeager"
+  },
+  "Blake R.": {
+    "as": "Blake Andrew Root"
+  },
   "Allen T.": {
     "as": "Allen Tong"
   },
   "Angel S.": {
     "as": "Angel Manuel Sixto"
-  },
-  "Alex Y.": {
-    "as": "Alex Jordan Yeager"
-  },
-  "Brian L.": {
-    "as": "Brian Patrick Lentini"
-  },
-  "Blake R.": {
-    "as": "Blake Andrew Root"
   }
 }

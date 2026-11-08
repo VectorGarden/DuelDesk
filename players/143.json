@@ -361,9 +361,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
-  "Joshua Bravo": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "David Alfonso Solano Leon": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -596,6 +593,9 @@
   "Caio S.": {
     "as": "Caio Martins Silva Sanches"
   },
+  "Mitchel N.": {
+    "as": "Mitchel Adam Noto"
+  },
   "Andy M.": {
     "as": "Andy November Morales"
   },
@@ -604,9 +604,6 @@
   },
   "Edgar B.": {
     "as": "Edgar Enrique Barajas"
-  },
-  "Mitchel N.": {
-    "as": "Mitchel Adam Noto"
   },
   "Alexis L.": {
     "as": "Alexis Lemus"

@@ -58,7 +58,6 @@
     {"e":"2017-ycs-seattle","cut":"Top 32"},
     {"e":"2018-north-america-wcq"},
     {"e":"2018-ycs-memphis"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-north-america-wcq"},
     {"e":"2024-north-america-wcq"},
@@ -499,7 +498,6 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Aric LeOnse Gray": [

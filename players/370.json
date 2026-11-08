@@ -121,7 +121,6 @@
     {"e":"2014-ycs-philadelphia-pa"},
     {"e":"2016-north-american-wcq"},
     {"e":"2016-ycs-providence-rhode-island"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"202205-ycs-hartford-ct"},
@@ -282,7 +281,6 @@
     {"e":"2018-11-sao-paulo-brazil"},
     {"e":"2019-ycs-pasadena"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-12-ycs-anaheim"},
@@ -529,7 +527,6 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

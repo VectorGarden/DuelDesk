@@ -213,7 +213,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -329,7 +328,6 @@
     {"e":"2017-ycs-toronto"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-niagara-falls"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2023-ycs-vancouver"},
     {"e":"2024-10-ycs-niagara-falls"},
@@ -816,10 +814,10 @@
   "Tulio A.": {
     "as": "Tulio Joaquim Altoe"
   },
-  "Jeffrey J.": {
-    "as": "Jeffrey Michael Alexander Jones"
-  },
   "Geoffrey F.": {
     "as": "Geoffrey Christian Fox"
+  },
+  "Jeffrey J.": {
+    "as": "Jeffrey Michael Alexander Jones"
   }
 }

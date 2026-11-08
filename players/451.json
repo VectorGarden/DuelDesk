@@ -464,12 +464,6 @@
   "Oscar D. Baez": [
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Jacob Robert Ladnier": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-north-america-wcq"},
-    {"e":"2023-ycs-indianapolis"},
-    {"e":"2024-ycs-indianapolis"}
-  ],
   "Demetrius Jermaine Dominek": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
@@ -530,6 +524,11 @@
   "Evan Reed Hickson": [
     {"e":"2023-north-america-wcq"}
   ],
+  "Jacob Robert Ladnier": [
+    {"e":"2023-north-america-wcq"},
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2024-ycs-indianapolis"}
+  ],
   "Kevin Kwong Hay Ing": [
     {"e":"2023-north-america-wcq"},
     {"e":"2023-ycs-vancouver"},
@@ -572,7 +571,6 @@
     {"e":"2025-05-ycs-providence"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -702,16 +700,16 @@
   "Douglas P.": {
     "as": "Douglas Felix Pretto"
   },
-  "Taj A.": {
-    "as": "Taj Eugene Allen"
+  "Devon F.": {
+    "as": "Devon Wayne Filos"
   },
   "Connor M.": {
     "as": "Connor R. Maguire"
   },
-  "Devon F.": {
-    "as": "Devon Wayne Filos"
-  },
   "Anthony J.": {
     "as": "Anthony Isaiah Jones"
+  },
+  "Taj A.": {
+    "as": "Taj Eugene Allen"
   }
 }

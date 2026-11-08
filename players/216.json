@@ -190,7 +190,6 @@
     {"e":"2018-uds-invitational-kansas-city-mo"},
     {"e":"2019-ycs-chicago","cut":"Top 32","deck":"Thunder Dragon"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2022-ycs-minneapolis"},
@@ -641,13 +640,11 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Joseph Austin Dull": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Andres O.": [
@@ -674,11 +671,11 @@
   "Jonathan S.": {
     "as": "Jonathan Thomas Smith"
   },
-  "Cameron B.": {
-    "as": "Cameron Michael Bernard"
-  },
   "Joseph O.": {
     "as": "Joseph Anthony Oblena"
+  },
+  "Cameron B.": {
+    "as": "Cameron Michael Bernard"
   },
   "Hursh J.": {
     "as": "Hursh Raj Jha"

@@ -472,7 +472,6 @@
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Regenesis Vanquish Soul","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Diego Cesar Espinosa Gutierrez": [
@@ -632,7 +631,6 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Scott Thomas Watkins": [
@@ -692,11 +690,11 @@
   "Tim Gräfe": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Brendan O.": {
-    "as": "Brendan Russell Outlaw"
-  },
   "Quentin J.": {
     "as": "Quentin Lemar Jenkins"
+  },
+  "Brendan O.": {
+    "as": "Brendan Russell Outlaw"
   },
   "Oliver N.": {
     "as": "Oliver Nghiem Nguyen"

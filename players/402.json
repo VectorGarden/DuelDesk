@@ -488,25 +488,22 @@
   ],
   "Wayne Earl Thomas": [
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2023-yu-gi-oh-tcg-remote-duel-extravaganza-main-event"}
-  ],
-  "Tristan Anthony Varga": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2024-10-ycs-niagara-falls"},
-    {"e":"2025-ycs-vancouver"}
-  ],
-  "Garrett Wayne Braegelmann": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Luis Enrique Trevi?o": [
     {"e":"2022-11-ycs-pasadena"}
   ],
+  "Garrett Wayne Braegelmann": [
+    {"e":"2022-january-remote-duel-ycs"}
+  ],
   "Tommy Lieval": [
     {"e":"2022-january-remote-duel-ycs"}
+  ],
+  "Tristan Anthony Varga": [
+    {"e":"2022-january-remote-duel-ycs"},
+    {"e":"2024-10-ycs-niagara-falls"},
+    {"e":"2025-ycs-vancouver"}
   ],
   "Eduardo Andres Moreira Lopez": [
     {"e":"2022-latin-america-remote-duel-ycs"},

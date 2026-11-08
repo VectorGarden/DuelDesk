@@ -98,7 +98,6 @@
     {"e":"2019-ycs-knoxville"},
     {"e":"2019-ycs-niagara-falls"},
     {"e":"2019-ycs-pasadena"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"202205-ycs-hartford-ct"},
@@ -278,7 +277,6 @@
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}

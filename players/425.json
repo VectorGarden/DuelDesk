@@ -330,11 +330,6 @@
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"na-ygoc-2022"}
   ],
-  "Dylan Thomas Reep": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-team-ycs-las-vegas"},
-    {"e":"2025-04-ycs-houston"}
-  ],
   "Francisco Jose Castillo Hernandez": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -385,6 +380,10 @@
   ],
   "Yesenia Elena Flores": [
     {"e":"2023-250th-ycs-in-los-angeles"}
+  ],
+  "Dylan Thomas Reep": [
+    {"e":"2023-team-ycs-las-vegas"},
+    {"e":"2025-04-ycs-houston"}
   ],
   "Luis Enrique Torres Becerril": [
     {"e":"2023-team-ycs-mexico-city"}
@@ -518,14 +517,14 @@
   "Luis Fernando Zamora Zempoalteca": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
+  "Casey M.": {
+    "as": "Casey Ray Martin"
+  },
   "Marcus B.": {
     "as": "Marcus Leon Brown"
   },
   "An N.": {
     "as": "An Duy Nguyen"
-  },
-  "Casey M.": {
-    "as": "Casey Ray Martin"
   },
   "Draven C.": {
     "as": "Draven Michael Chapple"

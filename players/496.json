@@ -636,7 +636,6 @@
   ],
   "Jaden Luis Serrano": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -667,10 +666,10 @@
   "Leon Gonzalo Sebastian Ochoa Saenz": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Patrick O.": {
-    "as": "Patrick Hoyd OQuinn"
-  },
   "Steven G.": {
     "as": "Steven Ramond Grillo"
+  },
+  "Patrick O.": {
+    "as": "Patrick Hoyd OQuinn"
   }
 }

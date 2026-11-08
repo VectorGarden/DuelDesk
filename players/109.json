@@ -120,7 +120,6 @@
     {"e":"2023-05-ycs-philadelphia"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -518,9 +517,6 @@
   "Blair Edward Flores": {
     "as": "Blair Edward G. Flores"
   },
-  "Long V.": {
-    "as": "Long Ngoc Vu"
-  },
   "Andrei A.": {
     "as": "Andrei Perez Ativo"
   },
@@ -529,6 +525,9 @@
   },
   "Calvin C.": {
     "as": "Calvin Tam Chow"
+  },
+  "Long V.": {
+    "as": "Long Ngoc Vu"
   },
   "Elliot H.": {
     "as": "Elliot Arthur Horowitz"

@@ -373,17 +373,6 @@
     {"e":"2024-north-america-wcq"},
     {"e":"2025-03-team-ycs-las-vegas"}
   ],
-  "Stephane Nadeau": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-remote-duel-ycs-north-america"},
-    {"e":"2023-05-ycs-philadelphia"},
-    {"e":"2025-02-ycs-orlando"}
-  ],
-  "Benjamin Paul Michener": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "German Diaz Jr.": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -393,6 +382,15 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-02-team-ycs-las-vegas-nv"}
+  ],
+  "Benjamin Paul Michener": [
+    {"e":"2022-january-remote-duel-ycs"}
+  ],
+  "Stephane Nadeau": [
+    {"e":"2022-january-remote-duel-ycs"},
+    {"e":"2022-remote-duel-ycs-north-america"},
+    {"e":"2023-05-ycs-philadelphia"},
+    {"e":"2025-02-ycs-orlando"}
   ],
   "Efren Alberto Perez Rosales": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -624,10 +622,10 @@
   "Travis G.": {
     "as": "Travis Marion Goff"
   },
-  "Lorenzo M.": {
-    "as": "Lorenzo Muselli"
-  },
   "Carlos G.": {
     "as": "Carlos Alberto Guillen"
+  },
+  "Lorenzo M.": {
+    "as": "Lorenzo Muselli"
   }
 }

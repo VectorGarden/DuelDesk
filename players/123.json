@@ -305,10 +305,6 @@
   "Valerio Ferlaino": [
     {"e":"2022-02-north-america-remote-duel-ycs","cut":"Top 16","deck":"Destiny HERO Megalith Drytron Cyber Angel"}
   ],
-  "Skyler Michael Brown": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Sylvia A. Beltran": [
     {"e":"2022-11-ycs-pasadena"}
   ],
@@ -336,6 +332,9 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-12-ycs-anaheim"}
+  ],
+  "Skyler Michael Brown": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Rodrigo Olivera Navia": [
     {"e":"2022-latin-america-remote-duel-ycs"}

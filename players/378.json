@@ -301,16 +301,15 @@
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"}
   ],
-  "Ethan Lin": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs","cut":"Top 32"},
-    {"e":"202205-ycs-hartford-ct"}
-  ],
   "Tyler Kazuyoshi Taketa": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2024-08-ycs-sacramento"},
     {"e":"2024-north-america-wcq"},
     {"e":"2025-10-ycs-anaheim"}
+  ],
+  "Ethan Lin": [
+    {"e":"2022-january-remote-duel-ycs","cut":"Top 32"},
+    {"e":"202205-ycs-hartford-ct"}
   ],
   "Jorge Ivan Penaflor Franco": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -504,10 +503,10 @@
   "Jose Leonardo Pinto": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jay S.": {
-    "as": "Jay Brandon Santiago"
-  },
   "Hayden B.": {
     "as": "Hayden Jacob Baker"
+  },
+  "Jay S.": {
+    "as": "Jay Brandon Santiago"
   }
 }

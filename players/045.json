@@ -127,7 +127,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -288,7 +287,6 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -491,7 +489,6 @@
   "Jeovanni Adreyan Queidon Flores": [
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Omar Alejandro Martinez Rodriguez": [
@@ -515,11 +512,11 @@
   "Miguel Enrique Chevez": [
     {"e":"2026-ycs-guayaquil-ecuador-advance"}
   ],
-  "Mason B.": {
-    "as": "Mason William Blake"
-  },
   "Sean D.": {
     "as": "Sean Gary Mollyneaux Dean"
+  },
+  "Mason B.": {
+    "as": "Mason William Blake"
   },
   "Manuel M.": {
     "as": "Manuel Alejandro Meza"

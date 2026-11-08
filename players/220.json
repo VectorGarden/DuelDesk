@@ -376,9 +376,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
-  "Mieru Hochum": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Ryan Madson": [
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2023-north-america-remote-duel-ycs"}
@@ -443,7 +440,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Tomas Rosemberg Espinoza": [

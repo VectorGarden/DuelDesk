@@ -402,15 +402,10 @@
     {"e":"2020-team-ycs-las-vegas"}
   ],
   "Conner Lee Hoffman": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Kenneth Alfredo Bentez": [
     {"e":"2022-january-remote-duel-ycs"}
-  ],
-  "Jiang He Zhu": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-niagara-falls"}
   ],
   "Hixroy Orlando Scott Jr.": [
     {"e":"2022-remote-duel-ycs-north-america"},
@@ -427,6 +422,9 @@
   "Bazil Mingun Batise": [
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-north-america-wcq"}
+  ],
+  "Jiang He Zhu": [
+    {"e":"2022-ycs-niagara-falls"}
   ],
   "Paulo Francisco da Silva Freitas": [
     {"e":"2022-ycs-rio-de-janeiro"}
@@ -527,7 +525,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -560,7 +557,6 @@
   ],
   "Shane Patrick Campbell": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

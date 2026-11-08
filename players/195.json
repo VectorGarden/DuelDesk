@@ -288,7 +288,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Mitsurugi Sky Striker","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -300,8 +299,7 @@
     {"e":"2019-ycs-chicago"}
   ],
   "Conrad Stephen Selig": [
-    {"e":"2019-ycs-chicago"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2019-ycs-chicago"}
   ],
   "Ked de Leon Consing": [
     {"e":"2019-ycs-chicago"}

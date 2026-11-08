@@ -255,8 +255,7 @@
     {"e":"2019-ycs-ft-worth"}
   ],
   "Brian Zhen": [
-    {"e":"2019-ycs-niagara-falls"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2019-ycs-niagara-falls"}
   ],
   "Dorian Erceg": [
     {"e":"2019-ycs-pasadena"},
@@ -300,8 +299,16 @@
   "Juan Jesus NV Morales": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
+  "Gerardo Cazares Mendoza": [
+    {"e":"2022-11-ycs-pasadena"}
+  ],
+  "Jim An Do": [
+    {"e":"2022-11-ycs-pasadena"},
+    {"e":"2022-remote-duel-ycs-north-america"},
+    {"e":"2023-north-america-remote-duel-ycs"},
+    {"e":"2023-team-ycs-las-vegas"}
+  ],
   "Anthony Xu": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs","cut":"Top 16"},
     {"e":"2022-remote-duel-ycs-north-america","cut":"Top 16","deck":"Tearlaments"},
@@ -323,15 +330,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"na-ygoc-2022"}
-  ],
-  "Gerardo Cazares Mendoza": [
-    {"e":"2022-11-ycs-pasadena"}
-  ],
-  "Jim An Do": [
-    {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-remote-duel-ycs-north-america"},
-    {"e":"2023-north-america-remote-duel-ycs"},
-    {"e":"2023-team-ycs-las-vegas"}
   ],
   "Paulo Junior Ohashi de Souza": [
     {"e":"2022-latin-america-remote-duel-ycs"}

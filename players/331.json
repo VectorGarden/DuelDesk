@@ -370,13 +370,6 @@
   "Daniel Sevilla Galarza": [
     {"e":"2019-ycs-quito-ecuador"}
   ],
-  "Caleb Matthew Shook": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-ycs-indianapolis"},
-    {"e":"2024-ycs-indianapolis"},
-    {"e":"2025-04-ycs-houston"},
-    {"e":"na-ygoc-2022"}
-  ],
   "Nelson Alfredo Ceron Armas": [
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq"}
@@ -502,6 +495,12 @@
   ],
   "Henrique Vergili De Freitas Dias": [
     {"e":"2023-team-ycs-sao-paulo"}
+  ],
+  "Caleb Matthew Shook": [
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2024-ycs-indianapolis"},
+    {"e":"2025-04-ycs-houston"},
+    {"e":"na-ygoc-2022"}
   ],
   "Micheal James Brown": [
     {"e":"2023-ycs-indianapolis"}

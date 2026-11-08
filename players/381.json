@@ -154,7 +154,6 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
@@ -316,8 +315,7 @@
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
   "Arturo Gonzalez": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
+    {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Brian Cabral": [
     {"e":"2022-11-ycs-pasadena"},
@@ -513,11 +511,11 @@
   "Brad Harol Ore Mallma": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Johny V.": {
-    "as": "Johny Tran Vu"
-  },
   "Julie T.": {
     "as": "Julie Jin Tomanio"
+  },
+  "Johny V.": {
+    "as": "Johny Tran Vu"
   },
   "Travis R.": {
     "as": "Travis Dean Rippey"

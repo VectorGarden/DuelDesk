@@ -538,7 +538,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -610,13 +609,12 @@
   "Jorge Daniel Rojas": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
-  "Curtis Edward Carlton": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Alexander Ray Barlow": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Curtis Edward Carlton": [
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Antonio Maria Bello Martucci": [
     {"e":"2026-ycs-orlando","f":"Advanced"}

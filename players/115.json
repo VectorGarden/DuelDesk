@@ -292,13 +292,12 @@
   "Keishawn Backmon": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Andrew David Gonzalez": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Silvestre Antonio Naranjo Jr.": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2024-08-ycs-sacramento"}
+  ],
+  "Andrew David Gonzalez": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Sebastian Gamboa Mora": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -547,7 +546,6 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Jonathan Shaine Alley": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

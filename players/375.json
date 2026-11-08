@@ -78,7 +78,6 @@
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -157,7 +156,6 @@
     {"e":"202205-ycs-hartford-ct"},
     {"e":"2025-05-ycs-providence"},
     {"e":"2026-08-quebec","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Luca Souza Soares": [
@@ -323,11 +321,6 @@
   "William Dani Russell": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
-  "Bryce James Meckes": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-ycs-indianapolis"},
-    {"e":"na-ygoc-2022"}
-  ],
   "Mert Ozbek": [
     {"e":"2022-remote-duel-ycs-north-america","cut":"Top 16","deck":"Floowandereeze"},
     {"e":"2022-ycs-niagara-falls"},
@@ -442,6 +435,10 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-02-300th-na","f":"Genesys","deck":"Gishki"},
     {"e":"2026-north-america-wcq"}
+  ],
+  "Bryce James Meckes": [
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"na-ygoc-2022"}
   ],
   "Jakob Michael John Mojeske": [
     {"e":"2023-ycs-indianapolis"},
@@ -610,7 +607,6 @@
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
   "Nicholas Lira Lages": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

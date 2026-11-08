@@ -338,7 +338,6 @@
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -515,7 +514,6 @@
   ],
   "Jonathan Edgar Espilco": [
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -567,11 +565,11 @@
   "Tomas Ferreyros Sylvester": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Luciano G.": {
-    "as": "Luciano Frank Greco"
-  },
   "Darren N.": {
     "as": "Darren Vu Nguyen"
+  },
+  "Luciano G.": {
+    "as": "Luciano Frank Greco"
   },
   "Denny K.": {
     "as": "Denny Kim"

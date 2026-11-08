@@ -106,7 +106,6 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2024-ycs-indianapolis"},
@@ -479,7 +478,6 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -494,7 +492,6 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2025-north-america-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -640,17 +637,17 @@
   "wins Stefano Sluis": [
     {"e":"wcs-2010","deck":"Infernity"}
   ],
-  "Adrian E.": {
-    "as": "Adrian Joshua Alas Echane"
-  },
-  "Tam N.": {
-    "as": "Tam Thanh Nguyen"
-  },
   "Hai N.": {
     "as": "Hai Si Hoang Nguyen"
   },
   "Takuma C.": {
     "as": "Takuma Ken Chipman"
+  },
+  "Tam N.": {
+    "as": "Tam Thanh Nguyen"
+  },
+  "Adrian E.": {
+    "as": "Adrian Joshua Alas Echane"
   },
   "Abel S.": {
     "as": "Abel Salgado"

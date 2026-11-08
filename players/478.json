@@ -53,7 +53,6 @@
     {"e":"2019-ycs-portland","cut":"Top 32"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq","cut":"Top 4","deck":"Kashtira"},
     {"e":"2025-03-team-ycs-las-vegas"},
@@ -386,15 +385,6 @@
   "Roy Yang": [
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Nicholas Aksel Massinen": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-north-america-wcq"},
-    {"e":"2023-ycs-vancouver"},
-    {"e":"2024-02-team-ycs-las-vegas-nv"},
-    {"e":"2025-11-ycs-pittsburgh-pa"},
-    {"e":"2025-north-america-wcq"},
-    {"e":"2025-ycs-vancouver"}
-  ],
   "Jose Luis Laurencio Lara Hernandez": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2024-central-america-wcq"},
@@ -481,6 +471,14 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"na-ygoc-2022"}
+  ],
+  "Nicholas Aksel Massinen": [
+    {"e":"2023-north-america-wcq"},
+    {"e":"2023-ycs-vancouver"},
+    {"e":"2024-02-team-ycs-las-vegas-nv"},
+    {"e":"2025-11-ycs-pittsburgh-pa"},
+    {"e":"2025-north-america-wcq"},
+    {"e":"2025-ycs-vancouver"}
   ],
   "Omar N. Paladines Valverde": [
     {"e":"2023-north-america-wcq"}
@@ -608,7 +606,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Ian William Robinson": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -624,11 +621,11 @@
   "Carlos K.": {
     "as": "Carlos Eduardo Kazunori Kobayashi"
   },
-  "Alec M.": {
-    "as": "Alec Bryce Madden"
-  },
   "Alberto G.": {
     "as": "Alberto David Gomez"
+  },
+  "Alec M.": {
+    "as": "Alec Bryce Madden"
   },
   "Darian C.": {
     "as": "Darian Lynn Crevier"

@@ -48,7 +48,6 @@
     {"e":"2019-ycs-quito-ecuador","cut":"Top 32"},
     {"e":"2020-team-ycs-las-vegas","cut":"Top 8","deck":"Dragon Link"},
     {"e":"2020-uds-invitational-tulsa-ok"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
@@ -288,7 +287,6 @@
     {"e":"2018-ycs-secaucus"},
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-north-america-wcq"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-05-ycs-philadelphia","cut":"Top 16","deck":"Tearlaments"},
@@ -736,13 +734,13 @@
   "Ronald Renato Salgado Cabada": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Jim L.": {
-    "as": "Jim Cody Lott"
+  "Christopher A.": {
+    "as": "Christopher Bryan Avila"
   },
   "Alex S.": {
     "as": "Alex Douglas Stoddard"
   },
-  "Christopher A.": {
-    "as": "Christopher Bryan Avila"
+  "Jim L.": {
+    "as": "Jim Cody Lott"
   }
 }

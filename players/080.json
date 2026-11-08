@@ -619,7 +619,6 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"}
   ],
   "Jose Luis Aguirre": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Diego Alonso Vargas Sanz": [
@@ -631,10 +630,10 @@
   "Rafael R.": {
     "as": "Rafael Mariano Reich"
   },
-  "Abraham R.": {
-    "as": "Abraham Daniel Romero"
-  },
   "Mark M.": {
     "as": "Mark William Melander"
+  },
+  "Abraham R.": {
+    "as": "Abraham Daniel Romero"
   }
 }

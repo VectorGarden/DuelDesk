@@ -424,7 +424,6 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -518,13 +517,12 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance"},
     {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
   ],
-  "Cody Mathew Stevens": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Benjamin Joseph Maurer": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Cody Mathew Stevens": [
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Angel David Pulido Alvarado": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

@@ -485,7 +485,6 @@
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -522,7 +521,6 @@
   ],
   "Landin Duane Gillman": [
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -548,13 +546,13 @@
   "Fernando F.": {
     "as": "Fernando Maciel Ferreira"
   },
-  "Junlong W.": {
-    "as": "Junlong Wu"
-  },
   "Alejandro H.": {
     "as": "Alejandro Hernandez"
   },
   "Joseph V.": {
     "as": "Joseph Michael Vianello"
+  },
+  "Junlong W.": {
+    "as": "Junlong Wu"
   }
 }

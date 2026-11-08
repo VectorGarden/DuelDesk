@@ -312,7 +312,6 @@
   ],
   "Frederic Brazeau": [
     {"e":"2019-ycs-portland"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-niagara-falls"}
   ],
   "Cesar Jarod Pilataxi Portilla": [
@@ -328,9 +327,6 @@
     {"e":"2025-south-america-wcq","cut":"Top 16"},
     {"e":"2026-02-300th-na"},
     {"e":"2026-ycs-cartagena-colombia"}
-  ],
-  "Nicolas Comeau": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Alonso Ivan Arancibia Herrera": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -559,7 +555,6 @@
   ],
   "Mark Allan Benton": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

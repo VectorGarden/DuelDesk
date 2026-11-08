@@ -373,9 +373,6 @@
     {"e":"2023-ycs-richmond"},
     {"e":"2026-02-300th-na","f":"Advanced"}
   ],
-  "Jose Antonio Garcia": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Dorian Raul Figueroa Bacovich": [
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
@@ -569,10 +566,10 @@
   "Ian E.": {
     "as": "Ian Gerald Engel"
   },
-  "Zach L.": {
-    "as": "Zach Mason Levin"
-  },
   "Julien K.": {
     "as": "Julien Leo Kehon"
+  },
+  "Zach L.": {
+    "as": "Zach Mason Levin"
   }
 }

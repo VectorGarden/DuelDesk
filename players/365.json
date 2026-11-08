@@ -355,12 +355,6 @@
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2024-north-america-wcq"}
   ],
-  "Skyla Wayne Miller": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2023-250th-ycs-in-los-angeles"},
-    {"e":"2023-ycs-indianapolis"},
-    {"e":"2024-02-team-ycs-las-vegas-nv"}
-  ],
   "Benjamin Ricardo Miranda Cardenas": [
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
@@ -392,6 +386,11 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-ycs-indianapolis"},
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Skyla Wayne Miller": [
+    {"e":"2023-250th-ycs-in-los-angeles"},
+    {"e":"2023-ycs-indianapolis"},
+    {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
   "David Alan Cruz": [
     {"e":"2023-250th-ycs-in-los-angeles"},
@@ -532,13 +531,12 @@
   "Julian Jose Nunez": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Carl Jacobs": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Johnny George Carlson": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Carl Jacobs": [
+    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Paul Mirbach Ponce": [
     {"e":"na-ygoc-2022"}
@@ -552,10 +550,10 @@
   "Jovani P.": {
     "as": "Jovani Joel Perea"
   },
-  "Lucas H.": {
-    "as": "Lucas James Henigan"
-  },
   "Vishnu P.": {
     "as": "Vishnu Pandian"
+  },
+  "Lucas H.": {
+    "as": "Lucas James Henigan"
   }
 }

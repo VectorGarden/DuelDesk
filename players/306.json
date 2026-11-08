@@ -329,13 +329,12 @@
   "Ngoc-gia-thinh Nguyen": [
     {"e":"2020-uds-invitational-tulsa-ok"}
   ],
-  "Joe De la Cruz": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Juan Francisco Torres": [
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"}
+  ],
+  "Joe De la Cruz": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Jose Axel Avila Soto": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -474,7 +473,6 @@
   ],
   "Austin Blade Douglas": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "BOTB": [
@@ -538,7 +536,6 @@
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Matthew Gilbert Rivera": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

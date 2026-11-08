@@ -278,7 +278,6 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-knoxville"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2022-ycs-minneapolis"},
@@ -563,7 +562,6 @@
   ],
   "Tabrin Louis Aldi": [
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -579,13 +577,13 @@
   "Juan Diego Arce Velasquez": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Levi D.": {
+    "as": "Levi James Dudley"
+  },
   "Timothy A.": {
     "as": "Timothy Kelly Andrews"
   },
   "Jesse W.": {
     "as": "Jesse Miguel Wood"
-  },
-  "Levi D.": {
-    "as": "Levi James Dudley"
   }
 }

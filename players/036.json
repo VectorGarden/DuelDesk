@@ -468,7 +468,6 @@
   "Hayden Thorne Pressel": [
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -560,13 +559,11 @@
   "Doll House": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
-  "Christopher Anthony Smith": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
+  "Noah Tyler Shively": [
+    {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
-  "Noah Tyler Shively": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Advanced"},
+  "Christopher Anthony Smith": [
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Roberto Dall’orto Gallegos": [
@@ -578,10 +575,10 @@
   "Kristopher Patrick Stewart": {
     "as": "Kristopher J Patrick Stewart"
   },
-  "Duane G.": {
-    "as": "Duane Lamont Graves"
-  },
   "Joshua F.": {
     "as": "Joshua Chad Forbis"
+  },
+  "Duane G.": {
+    "as": "Duane Lamont Graves"
   }
 }

@@ -320,7 +320,6 @@
   "David Ngo": [
     {"e":"2019-north-america-wcq"},
     {"e":"2019-ycs-niagara-falls"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
@@ -654,11 +653,11 @@
   "Kevin Enrrique Rubio": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Isacc Z.": {
-    "as": "Isacc Aaron Zepeda"
-  },
   "Nicolo M.": {
     "as": "Nicolo Matela Magallanes"
+  },
+  "Isacc Z.": {
+    "as": "Isacc Aaron Zepeda"
   },
   "Mohammad S.": {
     "as": "Mohammad Ishaq Sumaira"

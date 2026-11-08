@@ -429,10 +429,6 @@
     {"e":"2025-ycs-vancouver"},
     {"e":"2026-04-team-ycs-las-vegas","deck":"@Ignister Radiant Typhoon Maliss"}
   ],
-  "Zachary James Mangum": [
-    {"e":"2022-january-remote-duel-ycs"},
-    {"e":"2022-ycs-charlotte"}
-  ],
   "Daniel Joseph Westerveld": [
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2025-04-ycs-houston"},
@@ -452,6 +448,9 @@
     {"e":"2022-latin-america-remote-duel-ycs"}
   ],
   "Antonio Vicente Lopez": [
+    {"e":"2022-ycs-charlotte"}
+  ],
+  "Zachary James Mangum": [
     {"e":"2022-ycs-charlotte"}
   ],
   "Israel David Camarena Gomez": [
@@ -655,12 +654,11 @@
   "Kevin Rolando Vicente Escobar": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
-  "Ulises Salinas": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Trever Scott Centeio": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Ulises Salinas": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Craig S.": {
     "as": "Craig Johnston Smith"

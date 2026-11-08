@@ -377,7 +377,6 @@
   ],
   "Justin Michael Courts": [
     {"e":"2019-ycs-niagara-falls"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-niagara-falls"},
     {"e":"2024-10-ycs-niagara-falls"},
     {"e":"2026-08-quebec","f":"Genesys"}
@@ -385,7 +384,6 @@
   "Josue Rafael Cuc": [
     {"e":"2019-ycs-pasadena"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-team-ycs-las-vegas"}
   ],
@@ -413,9 +411,6 @@
   ],
   "Ernesto Verdugo Ramirez": [
     {"e":"2022-11-ycs-pasadena"}
-  ],
-  "Jace Cadon Alford": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Erick Michel Gomez Limon": [
     {"e":"2022-latin-america-remote-duel-ycs"},
@@ -663,10 +658,10 @@
   "Kyler S.": {
     "as": "Kyler J. Spiwak"
   },
-  "Julio V.": {
-    "as": "Julio Cesar Valente"
-  },
   "Dawson S.": {
     "as": "Dawson James Schawang"
+  },
+  "Julio V.": {
+    "as": "Julio Cesar Valente"
   }
 }

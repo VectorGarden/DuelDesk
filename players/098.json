@@ -71,7 +71,6 @@
     {"e":"2019-03-atlanta-ga"},
     {"e":"2019-north-america-wcq"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2022-ycs-minneapolis"},
     {"e":"2023-05-ycs-philadelphia"},
@@ -313,7 +312,6 @@
     {"e":"2020-team-ycs-las-vegas"}
   ],
   "Emmanuel Ryan Lilly": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"2023-05-ycs-philadelphia"},

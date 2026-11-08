@@ -34,7 +34,6 @@
     {"e":"2013-north-american-wcq"},
     {"e":"2016-north-american-wcq"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -346,7 +345,6 @@
     {"e":"2019-ycs-portland"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"na-ygoc-2022"}
   ],
@@ -656,7 +654,6 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Tomas Garza": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],

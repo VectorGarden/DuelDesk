@@ -551,7 +551,6 @@
   "Noah North": [
     {"e":"2025-02-ycs-orlando"},
     {"e":"2025-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -606,7 +605,6 @@
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
   "Scott Warren Whitescarver": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Manuel Diaz Sanchez": [

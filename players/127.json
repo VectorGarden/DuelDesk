@@ -347,12 +347,11 @@
   "Richardo CA Cardozo": [
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Randy San Nicolas": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
   "Karim Andres Ortiz": [
     {"e":"2022-11-ycs-pasadena"}
+  ],
+  "Randy San Nicolas": [
+    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Daniel Vitor Rodrigues Braatz": [
     {"e":"2022-latin-america-remote-duel-ycs"}
@@ -558,10 +557,10 @@
   "Joaquin P.": {
     "as": "Joaquin Pojaghi"
   },
-  "Christopher S.": {
-    "as": "Christopher Ryan Springer"
-  },
   "Nathan B.": {
     "as": "Nathan James Buck"
+  },
+  "Christopher S.": {
+    "as": "Christopher Ryan Springer"
   }
 }

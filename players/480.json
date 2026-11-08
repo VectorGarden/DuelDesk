@@ -314,7 +314,6 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2019-uds-invitational-las-vegas-nv"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-north-america-wcq"},
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-08-ycs-sacramento"},
@@ -644,11 +643,11 @@
   "MAteus O.": {
     "as": "MAteus Takes Okasaki"
   },
-  "Zachary M.": {
-    "as": "Zachary Michael Moede"
-  },
   "Ruben S.": {
     "as": "Ruben June Salazar"
+  },
+  "Zachary M.": {
+    "as": "Zachary Michael Moede"
   },
   "Thomas W.": {
     "as": "Thomas John Williams"

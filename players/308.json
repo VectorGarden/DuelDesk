@@ -123,7 +123,6 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
@@ -166,7 +165,6 @@
     {"e":"2019-08-uds-summer-invitational-2019-indianapolis-in"},
     {"e":"2019-north-america-wcq"},
     {"e":"2020-team-ycs-las-vegas","cut":"Top 4","deck":"Salamangreat"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
     {"e":"202205-ycs-hartford-ct"},
@@ -325,7 +323,6 @@
   ],
   "Muhammad Hamza Ather": [
     {"e":"2019-north-america-wcq"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2026-08-quebec","f":"Advanced"}
   ],
@@ -367,7 +364,6 @@
     {"e":"2022-02-north-america-remote-duel-ycs"}
   ],
   "Kellen Daniel O’Connell": [
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"na-ygoc-2022"}
   ],
@@ -462,7 +458,6 @@
     {"e":"2024-ycs-raleigh"},
     {"e":"2025-02-ycs-orlando"},
     {"e":"2026-02-300th-na","f":"Advanced"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Emory Quinn Spence": [

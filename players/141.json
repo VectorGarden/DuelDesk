@@ -443,7 +443,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Top 8","deck":"Blitzclique"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -599,12 +598,11 @@
   "Teagan James Franklin Rix": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Matthew Dylan Massey": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Christopher Morgan Evans": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Matthew Dylan Massey": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Christopher Michael Brozstek": [
     {"e":"na-ygoc-2022"}
@@ -615,10 +613,10 @@
   "David Tarazona": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Traviis M.": {
-    "as": "Traviis Terrell Massengale"
-  },
   "Hongji Y.": {
     "as": "Hongji Yang"
+  },
+  "Traviis M.": {
+    "as": "Traviis Terrell Massengale"
   }
 }

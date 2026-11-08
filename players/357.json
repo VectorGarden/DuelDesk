@@ -262,7 +262,6 @@
     {"e":"2019-north-america-wcq"},
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-north-america-wcq"},
     {"e":"2023-team-ycs-las-vegas"},
@@ -358,9 +357,6 @@
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2023-team-ycs-las-vegas"}
-  ],
-  "Maddox Lawrence Bauer": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Carlos Emmanuel Rojas Laynez": [
     {"e":"2022-latin-america-remote-duel-ycs"}

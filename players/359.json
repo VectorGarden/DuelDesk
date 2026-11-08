@@ -128,7 +128,6 @@
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2023-250th-ycs-in-los-angeles"}
   ],
   "Leonard Rodriguez": [
@@ -240,7 +239,6 @@
     {"e":"2019-ycs-chicago"},
     {"e":"2019-ycs-knoxville"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte","won":true,"cut":"Final","deck":"Destiny Adventurer Prank-Kids"},
     {"e":"2022-ycs-minneapolis"},
@@ -538,7 +536,6 @@
   ],
   "Devon Zachary Westphal": [
     {"e":"2025-02-ycs-orlando"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Kim I borrow that?": [
@@ -609,17 +606,17 @@
   "Lucas T.": {
     "as": "Lucas Cardoso Toniol"
   },
-  "Raul M.": {
-    "as": "Raul Machuca"
-  },
   "Delbert F.": {
     "as": "Delbert Lee Feltenberger"
+  },
+  "Zackary W.": {
+    "as": "Zackary Jacob Wilkinson"
   },
   "Logan J.": {
     "as": "Logan Patrick Johnson"
   },
-  "Zackary W.": {
-    "as": "Zackary Jacob Wilkinson"
+  "Raul M.": {
+    "as": "Raul Machuca"
   },
   "Andre C.": {
     "as": "Andre Hou Gin Chan"

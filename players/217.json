@@ -70,7 +70,6 @@
   ],
   "Trenton Scott Gross": [
     {"e":"2014-north-american-wcq"},
-    {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-remote-duel-ycs-north-america"},
     {"e":"2023-north-america-wcq"},
     {"e":"2023-ycs-indianapolis"},
@@ -280,7 +279,6 @@
     {"e":"2025-11-ycs-pittsburgh-pa"},
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -610,10 +608,10 @@
   "Rafael T.": {
     "as": "Rafael Humberto Tormena"
   },
-  "Gannon P.": {
-    "as": "Gannon Donald David Price"
-  },
   "Travis P.": {
     "as": "Travis Leroy Powell"
+  },
+  "Gannon P.": {
+    "as": "Gannon Donald David Price"
   }
 }

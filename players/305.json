@@ -515,10 +515,6 @@
   "Reynaldo Guerra Jr.": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Benjamin Alexander Simpson": [
-    {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
-  ],
   "Kevin Bryan Ellis Ortiz": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
@@ -527,6 +523,9 @@
   ],
   "Carlos Alberto Zelaya": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
+  ],
+  "Benjamin Alexander Simpson": [
+    {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
   "Juan Carlos Sandoval Leon": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}

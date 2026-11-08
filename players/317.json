@@ -328,7 +328,6 @@
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -377,9 +376,6 @@
     {"e":"2022-11-ycs-pasadena"}
   ],
   "Anthony Patano": [
-    {"e":"2022-january-remote-duel-ycs"}
-  ],
-  "Jose Maria Bueno": [
     {"e":"2022-january-remote-duel-ycs"}
   ],
   "Eduardo Augusto Matos de Souza": [
@@ -546,10 +542,10 @@
   "Andres Escobari Ocampo": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
-  "Cyle G.": {
-    "as": "Cyle Timothy Garcia"
-  },
   "Chris B.": {
     "as": "Chris Blower"
+  },
+  "Cyle G.": {
+    "as": "Cyle Timothy Garcia"
   }
 }

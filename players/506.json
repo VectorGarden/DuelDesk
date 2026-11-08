@@ -180,7 +180,6 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2019-north-america-wcq"},
     {"e":"2020-team-ycs-las-vegas"},
-    {"e":"2022-02-north-america-remote-duel-ycs"},
     {"e":"2022-11-ycs-pasadena"},
     {"e":"2022-january-remote-duel-ycs"},
     {"e":"2022-ycs-charlotte"},
@@ -397,9 +396,6 @@
     {"e":"2023-team-ycs-las-vegas"},
     {"e":"2024-12-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"}
-  ],
-  "Ayyoub Falahi": [
-    {"e":"2022-january-remote-duel-ycs"}
   ],
   "Miguel Gutierrez Escalona": [
     {"e":"2022-latin-america-remote-duel-ycs"},

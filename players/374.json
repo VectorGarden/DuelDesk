@@ -72,7 +72,6 @@
     {"e":"2016-yu-gi-oh-championship-series-atlanta-georgia"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-north-america-genesys-championship","f":"Genesys"},
-    {"e":"2026-ycs-houston","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
@@ -585,16 +584,16 @@
   "Sebastian Catalan Munoz": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Edmond W.": {
-    "as": "Edmond Jinfeng Wu"
-  },
   "Jakob H.": {
     "as": "Jakob Donald Hardin"
   },
-  "Hao W.": {
-    "as": "Hao Yi Wang"
+  "Edmond W.": {
+    "as": "Edmond Jinfeng Wu"
   },
   "Philip W.": {
     "as": "Philip Weidinger"
+  },
+  "Hao W.": {
+    "as": "Hao Yi Wang"
   }
 }

@@ -3569,14 +3569,22 @@
       "r": [{"who":"Mackey Chung","t":"Mackey Chung"}," is moving on with Blitzcliques!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/and-the-genesys-winner-is/": [
+  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/sunday-genesys-attack-of-the-giant-card-winners-2/": [
     {
       "t": "p",
-      "r": ["We have our YCS Montréal Genesis Champion!"]
+      "r": ["Sunday’s Genesys ATTACK OF THE GIANT CARD!! has concluded, and we have our winners!"]
     },
     {
       "t": "p",
-      "r": [{"who":"Anil Gangapersaud","t":"Anil Gangapersaud"}," is your Genesys Champion! He took his Blitzclique Deck all the way to the top, winning a tense final battle against ",{"who":"Khari Isiaih Goosby","t":"Khari Goosby"},"’s Toy White Forest Deck!"]
+      "r": ["From left to right, we have:"]
+    },
+    {
+      "t": "p",
+      "r": ["1st place: ",{"who":"Marshall Emery Demorest III","t":"Marshall Demorest"},", with a GIANT ",{"b":"Hi-Speedroid Clear Wing Rider"},"\n2nd place: ",{"who":"Yu Hao Ye","t":"Yu Hao Ye"},", with an oversized ",{"b":"Lunalight Perfume Dancer"},"\n3rd place: ",{"who":"Jean Philippe Grignon","t":"Jean Grignon"},", with an oversized ",{"b":"Hi-Speedroid Clear Wing Rider\n"}," 4th place: ",{"who":"Richer Daigneault","t":"Richer Daigneault"},", with an oversized ",{"b":"Lunalight Scarlet Tiger"}]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations, Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-top-tables-update-round-9-genesys-format/": [
@@ -3659,22 +3667,18 @@
       "r": [{"who":"Jacob Peter Vincent","t":"Jacob Vincent"}," wins the Match with his Atlantean Mermail Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/sunday-genesys-attack-of-the-giant-card-winners-2/": [
+  "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-points-playoff-winner/": [
     {
       "t": "p",
-      "r": ["Sunday’s Genesys ATTACK OF THE GIANT CARD!! has concluded, and we have our winners!"]
+      "r": ["The Points Playoff has been decided!"]
     },
     {
       "t": "p",
-      "r": ["From left to right, we have:"]
+      "r": ["Every YCS, our Public Events players accumulate points toward the Points Playoff at the end of the event. The winner gets a Super Rare Prize Card, and we have our latest winner!"]
     },
     {
       "t": "p",
-      "r": ["1st place: ",{"who":"Marshall Emery Demorest III","t":"Marshall Demorest"},", with a GIANT ",{"b":"Hi-Speedroid Clear Wing Rider"},"\n2nd place: ",{"who":"Yu Hao Ye","t":"Yu Hao Ye"},", with an oversized ",{"b":"Lunalight Perfume Dancer"},"\n3rd place: ",{"who":"Jean Philippe Grignon","t":"Jean Grignon"},", with an oversized ",{"b":"Hi-Speedroid Clear Wing Rider\n"}," 4th place: ",{"who":"Richer Daigneault","t":"Richer Daigneault"},", with an oversized ",{"b":"Lunalight Scarlet Tiger"}]
-    },
-    {
-      "t": "p",
-      "r": ["Congratulations, Duelists!"]
+      "r": ["Congratulations to ",{"who":"Christopher Jordan LeBlanc","t":"Christopher LeBlanc"},", the new owner of a Super Rare ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," Prize Card!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-top-tables-update-round-10-genesys-format/": [
@@ -3765,18 +3769,14 @@
       "r": ["With the victory, ",{"who":"Humza Zafar Minhas","t":"Minhas"}," improves to 10-2 at YCS Montréal!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-points-playoff-winner/": [
+  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/public-events-random-playoff-winner-21/": [
     {
       "t": "p",
-      "r": ["The Points Playoff has been decided!"]
+      "r": ["By entering Public Events, you have the chance of randomly being selected for a 4 Duelist playoff. The winner of the playoff wins a copy of the current YCS Prize Card, an alternate art printing of ",{"b":"Black Luster Soldier – Envoy of the Beginning"},"! Here is our winner!"]
     },
     {
       "t": "p",
-      "r": ["Every YCS, our Public Events players accumulate points toward the Points Playoff at the end of the event. The winner gets a Super Rare Prize Card, and we have our latest winner!"]
-    },
-    {
-      "t": "p",
-      "r": ["Congratulations to ",{"who":"Christopher Jordan LeBlanc","t":"Christopher LeBlanc"},", the new owner of a Super Rare ",{"b":"Black Luster Soldier – Envoy of the Beginning"}," Prize Card!"]
+      "r": ["Congratulations to ",{"who":"Ivan Kolomiyets","t":"Ivan Kolomiyets"},"!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-top-tables-update-round-11-advanced-format/": [
@@ -3863,14 +3863,22 @@
       "r": [{"who":"Aviel Getter","t":"Aviel Getter"}," wins the Match and advances to the Top 4 of the Genesys Main Event with his Blitzclique Deck!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/public-events-random-playoff-winner-21/": [
+  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-advanced-attack-of-the-giant-card-winners/": [
     {
       "t": "p",
-      "r": ["By entering Public Events, you have the chance of randomly being selected for a 4 Duelist playoff. The winner of the playoff wins a copy of the current YCS Prize Card, an alternate art printing of ",{"b":"Black Luster Soldier – Envoy of the Beginning"},"! Here is our winner!"]
+      "r": ["We have our Top 4 from Saturday’s Advanced Format ATTACK OF THE GIANT CARD!! event here at YCS Montréal!"]
     },
     {
       "t": "p",
-      "r": ["Congratulations to ",{"who":"Ivan Kolomiyets","t":"Ivan Kolomiyets"},"!"]
+      "r": ["From left to right, we have:"]
+    },
+    {
+      "t": "p",
+      "r": ["1st place: ",{"who":"Jose Maria Cardenas Bonitto","t":"Jose Maria Cardenas Bonitto"},", with a GIANT ",{"b":"Odd-Eyes Solblaze Dragon"},"\n2nd place: ",{"who":"Mohammed Zaki","t":"Mohammed Zaki"},", with an oversized ",{"b":"Odd-Eyes Override Dragon"},"\nTied for 3rd place: ",{"who":"Jefferson Colin","t":"Jefferson Colin"}," and ",{"who":"Curtis Jordan Imrie Langer","t":"Curtis Jordan Imrie Langer"},", each with an oversized ",{"b":"Odd-Eyes Solblaze Dragon"}]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations, Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-top-tables-update-round-11-genesys-format/": [
@@ -3953,10 +3961,10 @@
       "r": [{"who":"Michael Joseph Albanese","t":"Albanese"}," is moving on to the Top 4 here at YCS Montréal!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-advanced-attack-of-the-giant-card-winners/": [
+  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-genesys-attack-of-the-giant-card-winners-2/": [
     {
       "t": "p",
-      "r": ["We have our Top 4 from Saturday’s Advanced Format ATTACK OF THE GIANT CARD!! event here at YCS Montréal!"]
+      "r": ["We have our Top 4 from Saturday’s Genesys Format ATTACK OF THE GIANT CARD!! event here at YCS Montréal!"]
     },
     {
       "t": "p",
@@ -3964,7 +3972,7 @@
     },
     {
       "t": "p",
-      "r": ["1st place: ",{"who":"Jose Maria Cardenas Bonitto","t":"Jose Maria Cardenas Bonitto"},", with a GIANT ",{"b":"Odd-Eyes Solblaze Dragon"},"\n2nd place: ",{"who":"Mohammed Zaki","t":"Mohammed Zaki"},", with an oversized ",{"b":"Odd-Eyes Override Dragon"},"\nTied for 3rd place: ",{"who":"Jefferson Colin","t":"Jefferson Colin"}," and ",{"who":"Curtis Jordan Imrie Langer","t":"Curtis Jordan Imrie Langer"},", each with an oversized ",{"b":"Odd-Eyes Solblaze Dragon"}]
+      "r": ["1st place: ",{"who":"Julian Philipp Rupp","t":"Julian Philipp Rupp"},", with a GIANT ",{"b":"Lunalight Perfume Dancer"},"\n2nd place: ",{"who":"Justin Michael Courts","t":"Justin Michael Courts"},", with an oversized ",{"b":"Lunalight Perfume Dancer"},"\n3rd place: ",{"who":"Andrew Joseph LoPresti","t":"Andrew Joseph LoPresti"},", with an oversized ",{"b":"Lunalight Scarlet Tiger"},"\n4th place: Massinissa Rabouhi, with an oversized ",{"b":"Hi-Speedroid Clear Wing Rider"}]
     },
     {
       "t": "p",
@@ -4071,10 +4079,10 @@
       "r": [{"who":"Khari Isiaih Goosby","t":"Khari Goosby"},"’s headed to the Top 4 with Toy White Forest!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/saturday-genesys-attack-of-the-giant-card-winners-2/": [
+  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/friday-advanced-attack-of-the-giant-card-winners/": [
     {
       "t": "p",
-      "r": ["We have our Top 4 from Saturday’s Genesys Format ATTACK OF THE GIANT CARD!! event here at YCS Montréal!"]
+      "r": ["We have our Top 4 from Friday’s Advanced Format ATTACK OF THE GIANT CARD!! event here at YCS Montréal!"]
     },
     {
       "t": "p",
@@ -4082,7 +4090,7 @@
     },
     {
       "t": "p",
-      "r": ["1st place: ",{"who":"Julian Philipp Rupp","t":"Julian Philipp Rupp"},", with a GIANT ",{"b":"Lunalight Perfume Dancer"},"\n2nd place: ",{"who":"Justin Michael Courts","t":"Justin Michael Courts"},", with an oversized ",{"b":"Lunalight Perfume Dancer"},"\n3rd place: ",{"who":"Andrew Joseph LoPresti","t":"Andrew Joseph LoPresti"},", with an oversized ",{"b":"Lunalight Scarlet Tiger"},"\n4th place: Massinissa Rabouhi, with an oversized ",{"b":"Hi-Speedroid Clear Wing Rider"}]
+      "r": ["1st place: ",{"who":"Dave Vecht","t":"Dave Vecht"},", with a GIANT ",{"b":"Odd-Eyes Override Dragon"},"\n2nd place: ",{"who":"Humza Zafar Minhas","t":"Humza Zafar Minhas"},", with an oversized ",{"b":"Odd-Eyes Override Dragon"},"\n3rd place: ",{"who":"Domenico Pileggi","t":"Domenico Pileggi"},", with an oversized ",{"b":"Speedroid Darumaknocker"},"\n4th place: Eric Ji, with an oversized ",{"b":"Odd-Eyes Solblaze Dragon"}]
     },
     {
       "t": "p",
@@ -4181,18 +4189,14 @@
       "r": [{"who":"Francisco Andres Osorio Bobadilla","t":"Bobadilla"}," is moving on to the Finals of YCS Montréal!"]
     }
   ],
-  "https://yugiohblog.konami.com/2026/ycs/2026-08-quebec/friday-advanced-attack-of-the-giant-card-winners/": [
+  "https://yugiohblog.konami.com/2026/ycs/friday-genesys-attack-of-the-giant-card-winners-2/": [
     {
       "t": "p",
-      "r": ["We have our Top 4 from Friday’s Advanced Format ATTACK OF THE GIANT CARD!! event here at YCS Montréal!"]
+      "r": ["Here are the winners from today’s Genesys ATTACK OF THE GIANT CARD!! event!"]
     },
     {
       "t": "p",
-      "r": ["From left to right, we have:"]
-    },
-    {
-      "t": "p",
-      "r": ["1st place: ",{"who":"Dave Vecht","t":"Dave Vecht"},", with a GIANT ",{"b":"Odd-Eyes Override Dragon"},"\n2nd place: ",{"who":"Humza Zafar Minhas","t":"Humza Zafar Minhas"},", with an oversized ",{"b":"Odd-Eyes Override Dragon"},"\n3rd place: ",{"who":"Domenico Pileggi","t":"Domenico Pileggi"},", with an oversized ",{"b":"Speedroid Darumaknocker"},"\n4th place: Eric Ji, with an oversized ",{"b":"Odd-Eyes Solblaze Dragon"}]
+      "r": ["In the center with a GIANT ",{"b":"Lunalight Scarlet Tiger"},", we have ",{"who":"Kevin Joseph Murphy","t":"Kevin Murphy"},"! On the left with an Oversized ",{"b":"Lunalight Perfume Dancer"},", it’s ",{"who":"Pedro Vicente Alvarez Jr.","t":"Pedro Alvarez"},"! And on the right with an Oversized ",{"b":"Lunalight Scarlet Tiger"},", we have ",{"who":"Sera Navaria Wilbur","t":"Sera Wilbur"},"!"]
     },
     {
       "t": "p",
@@ -4273,20 +4277,6 @@
     {
       "t": "p",
       "r": ["World Champion ",{"who":"Julien Leo Kehon","t":"Julien Kehon"}," is advancing to the Finals of the Advanced Main Event at YCS Montréal!"]
-    }
-  ],
-  "https://yugiohblog.konami.com/2026/ycs/friday-genesys-attack-of-the-giant-card-winners-2/": [
-    {
-      "t": "p",
-      "r": ["Here are the winners from today’s Genesys ATTACK OF THE GIANT CARD!! event!"]
-    },
-    {
-      "t": "p",
-      "r": ["In the center with a GIANT ",{"b":"Lunalight Scarlet Tiger"},", we have ",{"who":"Kevin Joseph Murphy","t":"Kevin Murphy"},"! On the left with an Oversized ",{"b":"Lunalight Perfume Dancer"},", it’s ",{"who":"Pedro Vicente Alvarez Jr.","t":"Pedro Alvarez"},"! And on the right with an Oversized ",{"b":"Lunalight Scarlet Tiger"},", we have ",{"who":"Sera Navaria Wilbur","t":"Sera Wilbur"},"!"]
-    },
-    {
-      "t": "p",
-      "r": ["Congratulations, Duelists!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-montreal-advanced-main-event-top-4/": [
