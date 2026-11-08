@@ -821,8 +821,11 @@ def _merge_same_qualifier(found: list, slack_days: int) -> list:
     return rest
 
 
-# The formats a YCS runs in, which Konami writes into the tournament's name.
-FORMAT_WORDS = frozenset({"genesys", "advanced"})
+# The formats a YCS runs in, which Konami writes into the tournament's name --
+# and "advance" because Konami writes that too: YCS Guayaquil 2026 published
+# its Advanced tournament as "ycs-guayaquil-ecuador-advance-...", and it stood
+# as a second event beside its Genesys half until this said so.
+FORMAT_WORDS = frozenset({"genesys", "advanced", "advance"})
 
 
 def _merge_formats(found: list, slack_days: int) -> list:
