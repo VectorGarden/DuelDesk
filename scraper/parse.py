@@ -330,11 +330,21 @@ def page_title(doc: str) -> str:
     return _SITE_NAME.sub("", _text(m.group(1))).strip()
 
 
+# The Advanced format, as Konami sometimes spells it: YCS Guayaquil 2026 is
+# "Advance" in every one of its twenty-five posts -- "YCS Guayaquil, Ecuador --
+# Advance: Round 9 Pairings" -- and read as no format at all it was built as an
+# event of its own beside its Genesys half. A whole word, because "advanced" is
+# matched as a substring already and "advancement" is not a format; and not
+# the booster set Duelist's Advance, the one other thing on the blog that word
+# names: "Tech Update: New Support in Duelist's Advance".
+_ADVANCE = re.compile(r"(?<!duelist’s )(?<!duelist's )(?<!duelists )(?<!duelist )\badvance\b")
+
+
 def detect_format(text: str) -> str | None:
     low = _words(text)
     if "genesys" in low:
         return "Genesys"
-    if "advanced" in low:
+    if "advanced" in low or _ADVANCE.search(low):
         return "Advanced"
     return None
 

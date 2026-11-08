@@ -11095,3 +11095,38 @@ class TestAPostFiledUnderTheWrongEvent(unittest.TestCase):
         self.assertEqual(ranked[0][0], "2026-ycs-orlando")
         ended = {slug: end for slug, _, end in ranked}
         self.assertLess(ended["2026-ycs-houston"], "2026-10-25")
+
+
+class TestAdvanceIsAdvanced(unittest.TestCase):
+    """YCS Guayaquil 2026 spelled its Advanced tournament "Advance" in every one
+    of its twenty-five posts, and stood as a second event beside its Genesys
+    half -- which, being newer, was the one rebuilt, so the Advanced half went
+    without its last day of coverage until a full rebuild found it.
+    """
+
+    def test_the_heading_says_advance(self):
+        from parse import detect_format
+        self.assertEqual(detect_format("YCS Guayaquil, Ecuador – Advance: Round 9 Pairings"), "Advanced")
+        self.assertEqual(detect_format("ycs-guayaquil-ecuador-advance-round-9-pairings"), "Advanced")
+
+    def test_the_booster_set_is_not_the_format(self):
+        # Duelist's Advance is a set, and the one other thing on the blog the
+        # word names. Konami writes it with and without the apostrophe.
+        from parse import detect_format
+        for t in ("Tech Update: New Support in Duelist’s Advance",
+                  "QQ: What's Your Favourite New Card from Duelist's Advance?",
+                  "qq-whats-your-favourite-new-card-from-duelists-advance"):
+            self.assertIsNone(detect_format(t), t)
+
+    def test_only_the_word(self):
+        from parse import detect_format
+        self.assertIsNone(detect_format("Advancement of the Top 8"))
+        self.assertEqual(detect_format("Advanced Format Round 3 Feature Match"), "Advanced")
+
+    def test_both_halves_are_one_event(self):
+        rows = [(f"2026/ycs/ycs-guayaquil-ecuador-genesys-round-{i}-pairings", "2026-10-03")
+                for i in range(1, 8)]
+        rows += [(f"2026/ycs/ycs-guayaquil-ecuador-advance-round-{i}-pairings", "2026-10-03")
+                 for i in range(1, 8)]
+        got = {r["event"] for r in assign_events(parse_post_sitemap(urlset(*rows)))}
+        self.assertEqual(len(got), 1, got)

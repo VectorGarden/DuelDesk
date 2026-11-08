@@ -370,7 +370,13 @@ def round_key(post) -> tuple[str, Any]:
 #     the site. Now the table whose Duelists played the event beats a fuller
 #     one, a table of another event's Duelists goes to that event, and posts
 #     that went up long after an event, while another ran, do not date it.
-BUILD_VERSION = 68
+#  69 "Advance" is the Advanced format. YCS Guayaquil 2026 spelled it that way
+#     in all twenty-five of its Advanced posts, which read as no format at
+#     all, so its two tournaments stood as two events and the Advanced one,
+#     being the older, was not rebuilt after the morning of its last day. One
+#     event with both formats now -- not counting the booster set Duelist's
+#     Advance, the one other thing the word names on the blog.
+BUILD_VERSION = 69
 
 
 @dataclass
