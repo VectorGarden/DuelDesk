@@ -206,9 +206,6 @@
   "Cesar Angel Reyes": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Quayum": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Misael Aaron Acosta": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-ycs-chicago"}
@@ -579,19 +576,19 @@
   "Yuuki Shibata": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Top 8","deck":"Sky Striker"}
   ],
-  "Brian L.": {
-    "as": "Brian Patrick Lentini"
-  },
   "Alex Y.": {
     "as": "Alex Jordan Yeager"
-  },
-  "Blake R.": {
-    "as": "Blake Andrew Root"
   },
   "Allen T.": {
     "as": "Allen Tong"
   },
   "Angel S.": {
     "as": "Angel Manuel Sixto"
+  },
+  "Brian L.": {
+    "as": "Brian Patrick Lentini"
+  },
+  "Blake R.": {
+    "as": "Blake Andrew Root"
   }
 }

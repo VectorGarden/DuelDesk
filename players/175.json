@@ -136,12 +136,6 @@
   "Kristoffher Loayan Tinoy Shawn Gallardo": [
     {"e":"201703-uds-winter-invitational-las-vegas"}
   ],
-  "Master": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Ramos": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "William Elisha Witt": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-north-america-wcq"}
@@ -405,22 +399,22 @@
   "John Roger Gutierrez Tavares": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Thiago M.": {
-    "as": "Thiago Correa Mendes"
-  },
   "Joaquin L.": {
     "as": "Joaquin Alfonso Lichtig"
   },
+  "Thiago M.": {
+    "as": "Thiago Correa Mendes"
+  },
   "Logan K.": {
     "as": "Logan Michael Kite"
+  },
+  "Cash C.": {
+    "as": "Cash Alexander Crites"
   },
   "Tom K.": {
     "as": "Tom Kleinegriber"
   },
   "Timoti B.": {
     "as": "Timoti Baggio"
-  },
-  "Cash C.": {
-    "as": "Cash Alexander Crites"
   }
 }

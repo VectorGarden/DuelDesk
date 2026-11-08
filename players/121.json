@@ -252,18 +252,6 @@
   "Dylan Jarrod Holman": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Coovert": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Bellido Jr.": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Jones": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Nash": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Joseph B Nguyen": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -612,16 +600,16 @@
   "Alejandro Jose Rodriguez Loayza": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Kevin H.": {
-    "as": "Kevin Hsu Ping Huang"
-  },
   "Leonard C.": {
     "as": "Leonard Chun Yi Chu"
   },
-  "Colby T.": {
-    "as": "Colby James Taylor"
+  "Kevin H.": {
+    "as": "Kevin Hsu Ping Huang"
   },
   "Avery M.": {
     "as": "Avery Moreno"
+  },
+  "Colby T.": {
+    "as": "Colby James Taylor"
   }
 }

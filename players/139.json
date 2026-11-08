@@ -234,9 +234,6 @@
   "Nick Gerardo Alvarado": [
     {"e":"201704-ycs-bogota-colombia"}
   ],
-  "McCarthy": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Kyle James Tarrant": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -593,10 +590,10 @@
   "Nikhil Malekal": {
     "as": "Nikhil K. Malekal"
   },
-  "Hyro B.": {
-    "as": "Hyro de Guzman Banayad"
-  },
   "Nelson F.": {
     "as": "Nelson Lolong Federipe"
+  },
+  "Hyro B.": {
+    "as": "Hyro de Guzman Banayad"
   }
 }

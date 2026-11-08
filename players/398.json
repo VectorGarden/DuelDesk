@@ -206,9 +206,6 @@
     {"e":"2026-north-america-wcq"},
     {"e":"na-ygoc-2022"}
   ],
-  "Hunt": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Magdiel Bahena Medina": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
     {"e":"2025-ycs-mexico-city-mexico"}
@@ -549,10 +546,10 @@
   "Ryuki Shitagaki": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Japan"}
   ],
-  "Andrew X.": {
-    "as": "Andrew David Xie"
-  },
   "John M.": {
     "as": "John Taylor McDaniel"
+  },
+  "Andrew X.": {
+    "as": "Andrew David Xie"
   }
 }

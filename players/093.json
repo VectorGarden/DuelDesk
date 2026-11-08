@@ -231,12 +231,6 @@
   "Steven John Varghese": [
     {"e":"2017-ycs-dallas"}
   ],
-  "Kaplantzes": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Pham": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Erik Castro Matus": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
     {"e":"2018-central-america-wcq"},
@@ -536,13 +530,13 @@
   "Landon Oliver": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
+  "Bryson W.": {
+    "as": "Bryson Roger Williams"
+  },
   "Paul D.": {
     "as": "Paul Ivan Diaz"
   },
   "Tristan R.": {
     "as": "Tristan James Reep"
-  },
-  "Bryson W.": {
-    "as": "Bryson Roger Williams"
   }
 }

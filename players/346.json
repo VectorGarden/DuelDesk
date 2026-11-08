@@ -281,9 +281,6 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2024-ycs-medellin-colombia"}
   ],
-  "Jordan": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Alfredo Anthony Scuderi": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-secaucus"},
@@ -741,11 +738,11 @@
   "Marlon S.": {
     "as": "Marlon Elgardo Salazar"
   },
-  "Jason B.": {
-    "as": "Jason Willard Bai"
-  },
   "Gabriel H.": {
     "as": "Gabriel Devonte Headley"
+  },
+  "Jason B.": {
+    "as": "Jason Willard Bai"
   },
   "Sebastian G.": {
     "as": "Sebastian Andres Guerra"

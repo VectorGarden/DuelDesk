@@ -217,9 +217,6 @@
   "Kyle Jacob French": [
     {"e":"2017-ycs-toronto"}
   ],
-  "Banville": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Jorge Emmanuel Santos Jimenez": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
   ],
@@ -640,16 +637,16 @@
   "João A.": {
     "as": "João Vitor Abrahão"
   },
-  "Lyric B.": {
-    "as": "Lyric Bruner"
-  },
-  "Tyler M.": {
-    "as": "Tyler Mackenzie Mocklin"
+  "Luca C.": {
+    "as": "Luca Mathew Jin Soo Choi"
   },
   "Joo A.": {
     "as": "Joo Ho Ahn"
   },
-  "Luca C.": {
-    "as": "Luca Mathew Jin Soo Choi"
+  "Tyler M.": {
+    "as": "Tyler Mackenzie Mocklin"
+  },
+  "Lyric B.": {
+    "as": "Lyric Bruner"
   }
 }

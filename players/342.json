@@ -286,9 +286,6 @@
   "Rodrigo Sergio Sebastian Sarco": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Hartung": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Simon Wang": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-north-america-wcq","cut":"Top 32"},
@@ -646,11 +643,11 @@
   "Josh Kelly": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Final","deck":"Light and Darkness Ritual"}
   ],
-  "Etienne B.": {
-    "as": "Etienne Jose Bonin"
-  },
   "Dylan G.": {
     "as": "Dylan Maxwell Graves"
+  },
+  "Etienne B.": {
+    "as": "Etienne Jose Bonin"
   },
   "Peter N.": {
     "as": "Peter Phuong Nguyen"

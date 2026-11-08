@@ -233,9 +233,6 @@
     {"e":"2017-ycs-pittsburgh"},
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
-  "Dwor": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Eddie Michael Chin": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2023-ycs-richmond"},
@@ -555,16 +552,16 @@
   "Leonardo B.": {
     "as": "Leonardo Luan Barbosa Bitterncourt"
   },
-  "Gauge B.": {
-    "as": "Gauge Brand Baxter"
-  },
   "Bradul O.": {
     "as": "Bradul Antonyo Ortiz"
   },
-  "Alexander A.": {
-    "as": "Alexander Joshua Aviles"
+  "Gauge B.": {
+    "as": "Gauge Brand Baxter"
   },
   "Mikaylah K.": {
     "as": "Mikaylah Anne Krebbs"
+  },
+  "Alexander A.": {
+    "as": "Alexander Joshua Aviles"
   }
 }

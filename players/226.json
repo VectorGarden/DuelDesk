@@ -214,9 +214,6 @@
     {"e":"2019-uds-invitational-las-vegas-nv"},
     {"e":"2020-team-ycs-las-vegas"}
   ],
-  "Ng": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Christopher Laurence Zarmbus": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -610,16 +607,16 @@
   "Jose Juan Arias Coronado": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Sterling F.": {
-    "as": "Sterling Lathe Burke Flesner"
-  },
   "Aaron J.": {
     "as": "Aaron Xavier Jarrett"
   },
-  "Eduardo G.": {
-    "as": "Eduardo Enrique May Gomez"
+  "Sterling F.": {
+    "as": "Sterling Lathe Burke Flesner"
   },
   "Tyson D.": {
     "as": "Tyson Matthew Darn"
+  },
+  "Eduardo G.": {
+    "as": "Eduardo Enrique May Gomez"
   }
 }

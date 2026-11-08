@@ -254,9 +254,6 @@
     {"e":"2025-ycs-buenos-aires-argentina"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Maeda": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Sohithesh Reddy Chebireddy": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-secaucus"}
@@ -616,10 +613,10 @@
   "Nate Joseph Chastain": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
-  "Isiah B.": {
-    "as": "Isiah Allen Bourdeau"
-  },
   "Ayden P.": {
     "as": "Ayden Chase Patricelli"
+  },
+  "Isiah B.": {
+    "as": "Isiah Allen Bourdeau"
   }
 }

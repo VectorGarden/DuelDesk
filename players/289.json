@@ -382,15 +382,6 @@
   "Jose Antonio Valverde Polo": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Noel": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Kim": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Pannozzo": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Nathan Luke Champ McCormick": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -787,10 +778,10 @@
   "Abelardo R.": {
     "as": "Abelardo Reyes Ramirez"
   },
-  "Noe L.": {
-    "as": "Noe Enrique Luna"
-  },
   "Skyeler P.": {
     "as": "Skyeler John Pitcher"
+  },
+  "Noe L.": {
+    "as": "Noe Enrique Luna"
   }
 }

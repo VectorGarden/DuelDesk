@@ -294,9 +294,6 @@
   "Carlos Damian Galliano": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Barthehmy": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Matthew Schummer": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -691,16 +688,16 @@
   "Adam N.": {
     "as": "Adam Zaid Sameer Najarbashi"
   },
-  "Jongwon L.": {
-    "as": "Jongwon John Lee"
-  },
   "Jesse B.": {
     "as": "Jesse Calvin Boyer"
   },
-  "Brenden W.": {
-    "as": "Brenden Christin Alexander Whittier"
+  "Jongwon L.": {
+    "as": "Jongwon John Lee"
   },
   "Marcel M.": {
     "as": "Marcel Antwaun Mulder"
+  },
+  "Brenden W.": {
+    "as": "Brenden Christin Alexander Whittier"
   }
 }

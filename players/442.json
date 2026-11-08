@@ -263,9 +263,6 @@
   "Adrian Nahuel Cannes": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Hasu": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Steven Thomas Senko": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-secaucus"},
@@ -697,13 +694,13 @@
   "Alexandre A.": {
     "as": "Alexandre Alonso"
   },
-  "Jayming M.": {
-    "as": "Jayming Moua"
-  },
   "Josh V.": {
     "as": "Josh Vicente Villaflor"
   },
   "Elizabeth C.": {
     "as": "Elizabeth Chantel Childers"
+  },
+  "Jayming M.": {
+    "as": "Jayming Moua"
   }
 }

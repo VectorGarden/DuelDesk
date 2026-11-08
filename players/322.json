@@ -236,9 +236,6 @@
   "Philippe Brandon Chagnon": [
     {"e":"2017-ycs-toronto"}
   ],
-  "Bellido": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Anthony Thomas DiSimone II": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"202205-ycs-hartford-ct"},
@@ -545,10 +542,10 @@
   "Kethya K.": {
     "as": "Kethya Kas"
   },
-  "Maciej M.": {
-    "as": "Maciej Jan Michalec"
-  },
   "Noah C.": {
     "as": "Noah Cervantes"
+  },
+  "Maciej M.": {
+    "as": "Maciej Jan Michalec"
   }
 }

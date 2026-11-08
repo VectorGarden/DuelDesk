@@ -197,9 +197,6 @@
     {"e":"2023-250th-ycs-in-los-angeles"},
     {"e":"2024-02-team-ycs-las-vegas-nv"}
   ],
-  "Paskovatyi": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Mitchell Paul Masterson II": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-north-america-wcq"},
@@ -547,10 +544,10 @@
   "Jean Paul Ocampo Ortega": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Oscar O.": {
-    "as": "Oscar David Ortiz"
-  },
   "Vittorio G.": {
     "as": "Vittorio Enrique Genovese"
+  },
+  "Oscar O.": {
+    "as": "Oscar David Ortiz"
   }
 }

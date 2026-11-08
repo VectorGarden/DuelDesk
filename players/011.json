@@ -355,9 +355,6 @@
   "William Hernan Vallejos": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Simoes": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Alejandro Camacho Francisco": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
   ],
@@ -664,11 +661,11 @@
   "Valerio Rozza": [
     {"e":"yu-gi-oh-world-championship-2013"}
   ],
-  "Sean M.": {
-    "as": "Sean Michael McQuillan"
-  },
   "Noah O.": {
     "as": "Noah James Ochs"
+  },
+  "Sean M.": {
+    "as": "Sean Michael McQuillan"
   },
   "Sam J.": {
     "as": "Sam Mingyan Jiang"
@@ -676,10 +673,10 @@
   "Jeremiah J.": {
     "as": "Jeremiah Buyco Jose"
   },
-  "Pierry C.": {
-    "as": "Pierry Sebastien Cange"
-  },
   "Kasey C.": {
     "as": "Kasey Ryan Corneliusen"
+  },
+  "Pierry C.": {
+    "as": "Pierry Sebastien Cange"
   }
 }

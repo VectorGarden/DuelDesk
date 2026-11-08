@@ -220,13 +220,6 @@
   "Robert Micah Bruce": [
     {"e":"2017-ycs-pittsburgh"}
   ],
-  "Johnson": [
-    {"e":"201712-buenos-aires-argentina"},
-    {"e":"2022-ycs-charlotte"}
-  ],
-  "Avuampato": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "John Davis Cuevas Quinones": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -353,6 +346,9 @@
   "Derrek Christopher Gonzalez": [
     {"e":"2022-ycs-charlotte"},
     {"e":"2023-north-america-wcq"}
+  ],
+  "Johnson": [
+    {"e":"2022-ycs-charlotte"}
   ],
   "Gerardo Gutierrez Perez": [
     {"e":"2022-ycs-guadalajara-mexico"}

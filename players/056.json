@@ -248,9 +248,6 @@
   "Lucas Leonardo Miranda": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Cortina": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Jeremias Torres": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-ycs-niagara-falls"},
@@ -665,10 +662,10 @@
   "Andrew G.": {
     "as": "Andrew Joshua Gross"
   },
-  "Noah J.": {
-    "as": "Noah Benjamin Jymison"
-  },
   "Nathaniel V.": {
     "as": "Nathaniel GIavani Vasquez"
+  },
+  "Noah J.": {
+    "as": "Noah Benjamin Jymison"
   }
 }

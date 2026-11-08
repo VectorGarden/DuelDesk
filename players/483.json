@@ -272,9 +272,6 @@
   "Justin Demarcus Dunbar": [
     {"e":"2017-ycs-seattle"}
   ],
-  "Chow": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Chedeke J. Penn": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -658,10 +655,10 @@
   "Kyler S.": {
     "as": "Kyler J. Spiwak"
   },
-  "Dawson S.": {
-    "as": "Dawson James Schawang"
-  },
   "Julio V.": {
     "as": "Julio Cesar Valente"
+  },
+  "Dawson S.": {
+    "as": "Dawson James Schawang"
   }
 }

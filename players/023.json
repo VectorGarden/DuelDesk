@@ -284,9 +284,6 @@
   "Martin Braga": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Ragard Jr.": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Kailyn Cage Cooksey-Garcia": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-north-america-wcq"},
@@ -602,10 +599,10 @@
   "Brandon R.": {
     "as": "Brandon Xavier Ramos"
   },
-  "I H.": {
-    "as": "I Hao Hsu"
-  },
   "Nathaniel C.": {
     "as": "Nathaniel Paul Clifton"
+  },
+  "I H.": {
+    "as": "I Hao Hsu"
   }
 }

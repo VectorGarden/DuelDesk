@@ -248,9 +248,6 @@
   "Johnny Liao": [
     {"e":"2017-ycs-toronto"}
   ],
-  "Mendonca": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Andrew Wayne Diehl": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-memphis"},
@@ -603,10 +600,10 @@
   "Jacob N.": {
     "as": "Jacob Scott Nelson"
   },
-  "Pete N.": {
-    "as": "Pete Joseph Navarro"
-  },
   "Bradley P.": {
     "as": "Bradley Robert Peters"
+  },
+  "Pete N.": {
+    "as": "Pete Joseph Navarro"
   }
 }

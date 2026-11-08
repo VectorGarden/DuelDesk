@@ -269,9 +269,6 @@
   "Jorge Luis Robledo": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Chan": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Terrance Johnson": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -614,10 +611,10 @@
   "Hung Luu": {
     "as": "Hung G. Luu"
   },
-  "Julien L.": {
-    "as": "Julien Lin"
-  },
   "Manuel R.": {
     "as": "Manuel Antonio Rodriguez"
+  },
+  "Julien L.": {
+    "as": "Julien Lin"
   }
 }

@@ -241,9 +241,6 @@
     {"e":"2019-south-america-wcq"},
     {"e":"2025-ycs-buenos-aires-argentina"}
   ],
-  "Kuang": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Bryan Tyler Young": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-north-america-wcq"}
@@ -628,16 +625,16 @@
   "Gerardo G.": {
     "as": "Gerardo Garza"
   },
-  "Rich C.": {
-    "as": "Rich Cheng"
-  },
   "Quoc H.": {
     "as": "Quoc Minh Huynh"
   },
-  "Marshall M.": {
-    "as": "Marshall James Marengo"
+  "Rich C.": {
+    "as": "Rich Cheng"
   },
   "Jesus L.": {
     "as": "Jesus Landeros Loera"
+  },
+  "Marshall M.": {
+    "as": "Marshall James Marengo"
   }
 }

@@ -208,9 +208,6 @@
   "Kog Mel": [
     {"e":"2017-ycs-pittsburgh"}
   ],
-  "Zhou": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Anthony Francesco Cacciatore": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -567,16 +564,16 @@
   "William J.": {
     "as": "William Donald Johnson"
   },
-  "Matthew F.": {
-    "as": "Matthew Arden Fox"
-  },
-  "Vincent P.": {
-    "as": "Vincent Quoc Pham"
-  },
   "Dominic W.": {
     "as": "Dominic Lee Whalawitsa"
   },
   "Alexander R.": {
     "as": "Alexander Rey Roman"
+  },
+  "Matthew F.": {
+    "as": "Matthew Arden Fox"
+  },
+  "Vincent P.": {
+    "as": "Vincent Quoc Pham"
   }
 }

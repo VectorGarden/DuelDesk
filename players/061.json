@@ -193,9 +193,6 @@
     {"e":"201712-buenos-aires-argentina"},
     {"e":"2025-ycs-buenos-aires-argentina"}
   ],
-  "Corcoran": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Dylan Jacob Cole": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -620,10 +617,10 @@
   "Simon H.": {
     "as": "Simon Yu Xiang He"
   },
-  "Brandon B.": {
-    "as": "Brandon Jordan Baldonado"
-  },
   "Dario T.": {
     "as": "Dario Xadani Trevino"
+  },
+  "Brandon B.": {
+    "as": "Brandon Jordan Baldonado"
   }
 }

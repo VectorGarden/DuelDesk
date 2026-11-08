@@ -192,12 +192,6 @@
   "Jonathan Mayron Ramirez": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Barone": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Mohamed": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Kenneth Leslie Carroll Jr.": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2024-ycs-indianapolis"}
@@ -538,13 +532,13 @@
   "Garret S.": {
     "as": "Garret Alexander Soto Schier"
   },
-  "Ignacio L.": {
-    "as": "Ignacio Ramon Lopez"
-  },
   "Stefan D.": {
     "as": "Stefan Tanner Durrant"
   },
   "Eric A.": {
     "as": "Eric Alexander Avila"
+  },
+  "Ignacio L.": {
+    "as": "Ignacio Ramon Lopez"
   }
 }

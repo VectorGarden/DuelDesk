@@ -209,10 +209,6 @@
     {"e":"2019-south-america-wcq"},
     {"e":"2025-ycs-buenos-aires-argentina"}
   ],
-  "Joseph": [
-    {"e":"201712-buenos-aires-argentina"},
-    {"e":"2024-ycs-raleigh"}
-  ],
   "Jacob Alexander Wainwright": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-north-america-wcq"},
@@ -419,6 +415,9 @@
   "Javier Alvarez Jr.": [
     {"e":"2024-ycs-raleigh"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"}
+  ],
+  "Joseph": [
+    {"e":"2024-ycs-raleigh"}
   ],
   "Fernando Olano Vazquez": [
     {"e":"2025-02-ycs-orlando"},

@@ -295,9 +295,6 @@
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2026-ycs-cartagena-colombia"}
   ],
-  "Rideout": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Charles Arthur Reid": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -665,11 +662,11 @@
   "Marshaun Lugo": {
     "as": "Marshaun J. Lugo"
   },
-  "Esteban S.": {
-    "as": "Esteban Andres Sanchez"
-  },
   "Cortney M.": {
     "as": "Cortney Jamaal David Mattson"
+  },
+  "Esteban S.": {
+    "as": "Esteban Andres Sanchez"
   },
   "Pathum M.": {
     "as": "Pathum Weerabandara Madigapola"

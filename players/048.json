@@ -229,9 +229,6 @@
   "Rick Beaulieu": [
     {"e":"2017-ycs-toronto"}
   ],
-  "Middleton": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Zachary Bradley Cox": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-north-america-wcq"},
@@ -561,10 +558,10 @@
   "Jayden C.": {
     "as": "Jayden Ray Carvalho"
   },
-  "Azazel A.": {
-    "as": "Azazel Valentino Anzaldo"
-  },
   "Victor B.": {
     "as": "Victor Manuel Barragan"
+  },
+  "Azazel A.": {
+    "as": "Azazel Valentino Anzaldo"
   }
 }

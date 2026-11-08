@@ -241,9 +241,6 @@
     {"e":"201711-san-diego-ca"},
     {"e":"2019-ycs-pasadena"}
   ],
-  "Jablonski": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Rodrigo Hernandez Herrera": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
   ],
@@ -493,10 +490,10 @@
   "Ryan S.": {
     "as": "Ryan Edward Soesbe"
   },
-  "Andrew T.": {
-    "as": "Andrew Tien Thien Tran"
-  },
   "Pierre B.": {
     "as": "Pierre Burgals"
+  },
+  "Andrew T.": {
+    "as": "Andrew Tien Thien Tran"
   }
 }

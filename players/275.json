@@ -214,12 +214,6 @@
   "Victor Leonel Gaitan": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Tran": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Po": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Aldair David Juarez Soto": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"},
     {"e":"2025-central-america-wcq"},
@@ -468,10 +462,10 @@
   "Kevin Miranda De La Cruz": [
     {"e":"remote-duel-ycs-january-2024"}
   ],
-  "Ramiro D.": {
-    "as": "Ramiro Delatorre"
-  },
   "Grigor K.": {
     "as": "Grigor Kupchyan"
+  },
+  "Ramiro D.": {
+    "as": "Ramiro Delatorre"
   }
 }

@@ -295,18 +295,6 @@
   "Siwei Liu": [
     {"e":"2017-ycs-toronto"}
   ],
-  "Ran": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Persaud Jr.": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Zavlounov": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Gebefugi": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Bradley Joseph Loomis": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -653,11 +641,11 @@
   "Marcos D.": {
     "as": "Marcos Damaceno"
   },
-  "Jet X.": {
-    "as": "Jet Xiao"
-  },
   "Caulin B.": {
     "as": "Caulin David Bradshaw"
+  },
+  "Jet X.": {
+    "as": "Jet Xiao"
   },
   "Rocky V.": {
     "as": "Rocky V. Vo"

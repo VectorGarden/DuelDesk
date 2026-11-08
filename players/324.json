@@ -205,9 +205,6 @@
     {"e":"201711-san-diego-ca"},
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Simpson": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Max Steven Brito": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2023-05-ycs-philadelphia"},
@@ -536,14 +533,14 @@
   "Izumi Yoshi": [
     {"e":"yu-gi-oh-world-championship-2016","f":"Dragon Duel","deck":"Japan","cut":"Top 8"}
   ],
-  "Jacquelyn Y.": {
-    "as": "Jacquelyn Aubrey Yeager"
-  },
   "Adam A.": {
     "as": "Adam Michael Healiiolani Akiu"
   },
   "Edgar C.": {
     "as": "Edgar Felipe Cortes"
+  },
+  "Jacquelyn Y.": {
+    "as": "Jacquelyn Aubrey Yeager"
   },
   "Logen T.": {
     "as": "Logen Andrew Thornton"

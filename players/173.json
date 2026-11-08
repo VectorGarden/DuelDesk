@@ -290,9 +290,6 @@
   "Justin Heywood": [
     {"e":"2017-ycs-toronto"}
   ],
-  "Andary": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Jorge Alberto Torres": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-secaucus"}
@@ -638,11 +635,11 @@
   "Jahaciel de Jesus Molina Candelaria": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Darren D.": {
-    "as": "Darren Dyal"
-  },
   "Minsu P.": {
     "as": "Minsu Park"
+  },
+  "Darren D.": {
+    "as": "Darren Dyal"
   },
   "Manuel A.": {
     "as": "Manuel Raymond Alvarez"

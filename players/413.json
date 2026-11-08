@@ -263,12 +263,6 @@
   "Dustin Na Yu": [
     {"e":"2017-ycs-denver"}
   ],
-  "Watler": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Kostesku": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Jonathan Castillo Hurtado": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
   ],
@@ -740,10 +734,10 @@
   "Charles Rose": [
     {"e":"na-ygoc-2022"}
   ],
-  "Jeremy A.": {
-    "as": "Jeremy Alan AmRhein"
-  },
   "Levi S.": {
     "as": "Levi Thomas Mathew Steffen"
+  },
+  "Jeremy A.": {
+    "as": "Jeremy Alan AmRhein"
   }
 }

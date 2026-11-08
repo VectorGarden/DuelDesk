@@ -264,12 +264,6 @@
   "Alexis Cespedes": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Diaz": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Langsford": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Blake Andrew Jackson": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-atlanta"}
@@ -616,10 +610,10 @@
   "Luan D.": {
     "as": "Luan Kinh Duong"
   },
-  "Jesse V.": {
-    "as": "Jesse Ray Valle"
-  },
   "Nicholas M.": {
     "as": "Nicholas Aksel Massinen"
+  },
+  "Jesse V.": {
+    "as": "Jesse Ray Valle"
   }
 }

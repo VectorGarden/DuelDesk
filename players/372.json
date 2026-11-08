@@ -224,12 +224,6 @@
   "Nicole Rae Murrin": [
     {"e":"2017-ycs-atlanta"}
   ],
-  "Hackl": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Reza": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Willie Leon McGregor": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-atlanta"},
@@ -570,11 +564,11 @@
   "Dunnie Matthews Bernedo Rios": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Dominic A.": {
-    "as": "Dominic Frank Azevedo"
-  },
   "Martin P.": {
     "as": "Martin Ivan Perez"
+  },
+  "Dominic A.": {
+    "as": "Dominic Frank Azevedo"
   },
   "Kazuma Y.": {
     "as": "Kazuma Yamamoto"

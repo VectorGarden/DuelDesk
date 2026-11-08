@@ -246,18 +246,6 @@
     {"e":"2018-11-sao-paulo-brazil"},
     {"e":"2022-11-ycs-pasadena"}
   ],
-  "Mak": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Aceret": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Beg": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Askey": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Kane Alexander West": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -554,10 +542,10 @@
   "Juan Jose Jorge Lopez": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Joseph S.": {
-    "as": "Joseph Thomas Steinhauer"
-  },
   "Trent B.": {
     "as": "Trent Buras"
+  },
+  "Joseph S.": {
+    "as": "Joseph Thomas Steinhauer"
   }
 }

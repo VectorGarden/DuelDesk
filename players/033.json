@@ -223,9 +223,6 @@
   "Martin Gomez Palavecino": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Wijayaratnam": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Christopher Hernandez-Linares": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -500,10 +497,10 @@
   "Matheus Martins De Oliveira": [
     {"e":"remote-duel-ycs-february-2025"}
   ],
-  "Bryan L.": {
-    "as": "Bryan Zachary LaBrecque"
-  },
   "Saulo F.": {
     "as": "Saulo Jared Flores"
+  },
+  "Bryan L.": {
+    "as": "Bryan Zachary LaBrecque"
   }
 }

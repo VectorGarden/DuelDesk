@@ -399,9 +399,6 @@
   "Mariano Sandoval": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Leach": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Erik Vanddergrijn": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -766,10 +763,10 @@
   "Jean Pierre Salcedo Ramirez": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Ernest O.": {
-    "as": "Ernest Richard Oliphant"
-  },
   "Marshall N.": {
     "as": "Marshall Blade Navarro"
+  },
+  "Ernest O.": {
+    "as": "Ernest Richard Oliphant"
   }
 }

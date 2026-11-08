@@ -191,9 +191,6 @@
     {"e":"2025-10-ycs-anaheim"},
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
-  "Tang": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "John Felix Hernandez": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2025-11-ycs-pittsburgh-pa"},
@@ -501,11 +498,11 @@
   "Ignacio Alejandro Covarrubias Hermosilla": [
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Vitor M.": {
-    "as": "Vitor Mattos Milioni"
-  },
   "Matheus K.": {
     "as": "Matheus Kirian"
+  },
+  "Vitor M.": {
+    "as": "Vitor Mattos Milioni"
   },
   "Ryley G.": {
     "as": "Ryley Ayman Goff"

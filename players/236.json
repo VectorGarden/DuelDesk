@@ -217,15 +217,6 @@
   "Thomas Luyan Zhang": [
     {"e":"2017-ycs-toronto"}
   ],
-  "Frazier": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Vo": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Boucher": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Victor Martinez Pizarro": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
   ],
@@ -548,11 +539,11 @@
   "Mitzy Ormeño Soria": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Ronald Y.": {
-    "as": "Ronald Do Young"
-  },
   "Emanuel R.": {
     "as": "Emanuel Ramirez"
+  },
+  "Ronald Y.": {
+    "as": "Ronald Do Young"
   },
   "Shaun M.": {
     "as": "Shaun Bruce McDonald"

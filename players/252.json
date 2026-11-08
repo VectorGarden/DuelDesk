@@ -346,9 +346,6 @@
   "Marina Mercedes Maciel": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Alton": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Miguel Angel Landa Rodriguez": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-ycs-ft-worth"}
@@ -704,10 +701,10 @@
   "James Wolff": {
     "as": "James R. Wolff"
   },
-  "Shane K.": {
-    "as": "Shane Ketchum"
-  },
   "Ramon F.": {
     "as": "Ramon Benito Flores"
+  },
+  "Shane K.": {
+    "as": "Shane Ketchum"
   }
 }

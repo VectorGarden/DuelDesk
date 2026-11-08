@@ -168,9 +168,6 @@
   "Alexis Jovann Mendez Prieto": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Flores Camacho": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Justin Tyler Stuart": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -469,10 +466,10 @@
   "Kai K.": {
     "as": "Kai Samson Koester"
   },
-  "Thomas K.": {
-    "as": "Thomas Patrick Kelly"
-  },
   "Raymond J.": {
     "as": "Raymond B. James"
+  },
+  "Thomas K.": {
+    "as": "Thomas Patrick Kelly"
   }
 }

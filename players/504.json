@@ -218,15 +218,6 @@
     {"e":"2025-03-team-ycs-las-vegas"},
     {"e":"2025-north-america-wcq"}
   ],
-  "Collier-Ridge": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Vinson": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Kwong": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Jaime Martinez Perez": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
   ],
@@ -607,13 +598,13 @@
   "Charles R.": {
     "as": "Charles Thomas Russel Roberts"
   },
-  "Marcus S.": {
-    "as": "Marcus Jairo Siu"
+  "Jonathan O.": {
+    "as": "Jonathan Gaetano Orlando"
   },
   "Khoa P.": {
     "as": "Khoa Van Phan"
   },
-  "Jonathan O.": {
-    "as": "Jonathan Gaetano Orlando"
+  "Marcus S.": {
+    "as": "Marcus Jairo Siu"
   }
 }

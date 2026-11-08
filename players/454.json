@@ -197,14 +197,6 @@
   "Juan Gabriel Corredor Cuervo": [
     {"e":"201704-ycs-bogota-colombia"}
   ],
-  "Michael": [
-    {"e":"201712-buenos-aires-argentina"},
-    {"e":"2022-ycs-charlotte"},
-    {"e":"2024-ycs-raleigh"}
-  ],
-  "Yousuf": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Austin Michael Ault": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -377,6 +369,10 @@
   ],
   "Matthew Rains Carson": [
     {"e":"2022-ycs-charlotte"}
+  ],
+  "Michael": [
+    {"e":"2022-ycs-charlotte"},
+    {"e":"2024-ycs-raleigh"}
   ],
   "Stephen Harold Irwin": [
     {"e":"2022-ycs-minneapolis"}

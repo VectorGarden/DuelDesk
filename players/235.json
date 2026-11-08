@@ -262,9 +262,6 @@
     {"e":"2018-north-america-wcq"},
     {"e":"2019-ycs-pasadena"}
   ],
-  "Paraszczak": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Tyler James Stevens": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-atlanta"},
@@ -584,13 +581,13 @@
   "Alef S.": {
     "as": "Alef Jonathan Souza"
   },
+  "Owen P.": {
+    "as": "Owen Nathaniel Pritchard"
+  },
   "Damien P.": {
     "as": "Damien Estevan Pena"
   },
   "Dakota A.": {
     "as": "Dakota Clint Angeloff"
-  },
-  "Owen P.": {
-    "as": "Owen Nathaniel Pritchard"
   }
 }

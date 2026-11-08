@@ -263,9 +263,6 @@
     {"e":"2020-team-ycs-las-vegas"},
     {"e":"2024-08-ycs-sacramento"}
   ],
-  "Bachoumis": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Luis Gerardo Reyes Hernadez": [
     {"e":"2018-09-200th-ycs-mexico-city-mexico"}
   ],
@@ -641,10 +638,10 @@
   "Derek M.": {
     "as": "Derek Charles Mead"
   },
-  "Weijian F.": {
-    "as": "Weijian Fang"
-  },
   "Samuel Y.": {
     "as": "Samuel Siwon You"
+  },
+  "Weijian F.": {
+    "as": "Weijian Fang"
   }
 }

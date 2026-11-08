@@ -210,9 +210,6 @@
   "Timothy Robert Tolmie": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Roman": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Orval Orlen Murray": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -584,16 +581,16 @@
   "Brian Dionicio Quinones Vargas": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Guillermo S.": {
-    "as": "Guillermo Eder Sotelo"
-  },
   "Cody E.": {
     "as": "Cody Thomas Evans"
   },
-  "Koby N.": {
-    "as": "Koby Quang Huy Ngo"
+  "Guillermo S.": {
+    "as": "Guillermo Eder Sotelo"
   },
   "Anmol S.": {
     "as": "Anmol Ram Sharma"
+  },
+  "Koby N.": {
+    "as": "Koby Quang Huy Ngo"
   }
 }

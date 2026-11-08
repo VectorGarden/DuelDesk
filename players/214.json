@@ -229,9 +229,6 @@
   "Victor Casillas Gallegos": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Bizzell": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Jacob Michael Greear": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -619,10 +616,10 @@
   "Mauricio Edward Castañeda Celis": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Manuel S.": {
-    "as": "Manuel Alejandro Sagastizado"
-  },
   "Jaylen S.": {
     "as": "Jaylen Maurice Santos"
+  },
+  "Manuel S.": {
+    "as": "Manuel Alejandro Sagastizado"
   }
 }

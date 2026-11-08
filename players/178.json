@@ -311,9 +311,6 @@
   "Ruben Dario Suarez": [
     {"e":"201704-ycs-bogota-colombia"}
   ],
-  "Schaffer": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "John Peter Gero": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -659,10 +656,10 @@
   "Alonso B.": {
     "as": "Alonso Capone Baca"
   },
-  "Dustin S.": {
-    "as": "Dustin Ulrich Snow"
-  },
   "Kristin S.": {
     "as": "Kristin Alexandra Soler"
+  },
+  "Dustin S.": {
+    "as": "Dustin Ulrich Snow"
   }
 }

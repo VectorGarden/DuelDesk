@@ -200,9 +200,6 @@
   "Jessee Marvin Coblentz": [
     {"e":"2017-ycs-denver"}
   ],
-  "Hillan": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Eleazar Almanza": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -498,10 +495,10 @@
   "Tsun-Yu Hsiao": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Taiwan"}
   ],
-  "Zackary F.": {
-    "as": "Zackary Dean Felix"
-  },
   "Tri C.": {
     "as": "Tri Wynn Cao"
+  },
+  "Zackary F.": {
+    "as": "Zackary Dean Felix"
   }
 }

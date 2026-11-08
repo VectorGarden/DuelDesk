@@ -316,12 +316,6 @@
     {"e":"201704-ycs-bogota-colombia"},
     {"e":"2022-ycs-bogota-colombia"}
   ],
-  "Khemraj": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Bishop": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Nathan Shelby Goolsby": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-03-atlanta-ga"}
@@ -609,16 +603,16 @@
   "Hugo Eduardo Cervantes Posadas": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
-  "Rennick B.": {
-    "as": "Rennick Jeffers Bruno"
-  },
   "Dzung Q.": {
     "as": "Dzung Phan Quach"
   },
-  "Dev K.": {
-    "as": "Dev Kapur"
+  "Rennick B.": {
+    "as": "Rennick Jeffers Bruno"
   },
   "Delanie F.": {
     "as": "Delanie Desdemona Freeze"
+  },
+  "Dev K.": {
+    "as": "Dev Kapur"
   }
 }

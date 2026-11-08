@@ -192,12 +192,6 @@
   "Marina Danae Fields": [
     {"e":"2017-ycs-seattle"}
   ],
-  "Aguero": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Lessard-LeBlanc": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Jacob Allen Clouse": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -524,13 +518,13 @@
   "Bruce M.": {
     "as": "Bruce Edward Michael Menard"
   },
-  "Pernell S.": {
-    "as": "Pernell Don Sayre"
-  },
   "Paul H.": {
     "as": "Paul Anh Tuan Huynh"
   },
   "Ethan G.": {
     "as": "Ethan Tyler Gualano"
+  },
+  "Pernell S.": {
+    "as": "Pernell Don Sayre"
   }
 }

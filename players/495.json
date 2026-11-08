@@ -251,9 +251,6 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2025-ycs-sao-paulo-brazil"}
   ],
-  "Leigh": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Alexander Scott Reaster": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-ycs-chicago"},
@@ -637,17 +634,17 @@
   "wins Stefano Sluis": [
     {"e":"wcs-2010","deck":"Infernity"}
   ],
-  "Hai N.": {
-    "as": "Hai Si Hoang Nguyen"
-  },
-  "Takuma C.": {
-    "as": "Takuma Ken Chipman"
-  },
   "Tam N.": {
     "as": "Tam Thanh Nguyen"
   },
+  "Hai N.": {
+    "as": "Hai Si Hoang Nguyen"
+  },
   "Adrian E.": {
     "as": "Adrian Joshua Alas Echane"
+  },
+  "Takuma C.": {
+    "as": "Takuma Ken Chipman"
   },
   "Abel S.": {
     "as": "Abel Salgado"

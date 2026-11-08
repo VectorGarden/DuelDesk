@@ -194,12 +194,6 @@
   "Jake Seifert": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Ing": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Lukomski": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Michaelviet H Ngo": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -579,10 +573,10 @@
   "Zhen L.": {
     "as": "Zhen Hao Lee"
   },
-  "Rennard W.": {
-    "as": "Rennard Renfred Whitehead"
-  },
   "Tristan F.": {
     "as": "Tristan Aric Franz"
+  },
+  "Rennard W.": {
+    "as": "Rennard Renfred Whitehead"
   }
 }

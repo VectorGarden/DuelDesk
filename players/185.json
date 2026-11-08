@@ -284,9 +284,6 @@
   "Nicolas Uriarte": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Songin": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Fernando Ernesto Damblu Jr.": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-north-america-wcq"},
@@ -620,6 +617,9 @@
   "Ismael Isaac Huarcaya Vilcañaupa": [
     {"e":"ycs-lima-peru-2023"}
   ],
+  "Lance A.": {
+    "as": "Lance Alix"
+  },
   "Alexander G.": {
     "as": "Alexander John Padilla Green"
   },
@@ -628,9 +628,6 @@
   },
   "Devon B.": {
     "as": "Devon Burnley"
-  },
-  "Lance A.": {
-    "as": "Lance Alix"
   },
   "Jack P.": {
     "as": "Jack Patrick Donald Pruit"

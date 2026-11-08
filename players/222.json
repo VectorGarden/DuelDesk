@@ -326,9 +326,6 @@
   "Nahuel Jeremias Ponce": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "McLean": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Matthew Remy Aguirre": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -650,11 +647,11 @@
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"}
   ],
-  "Samuel A.": {
-    "as": "Samuel Arone Crescini Ramos Amaro"
-  },
   "Marcelo B.": {
     "as": "Marcelo Bruno"
+  },
+  "Samuel A.": {
+    "as": "Samuel Arone Crescini Ramos Amaro"
   },
   "Sean N.": {
     "as": "Sean Neon Nguyen"

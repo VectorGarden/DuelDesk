@@ -322,9 +322,6 @@
     {"e":"2025-team-ycs-san-salvador-el-salvador"},
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
-  "Yan": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "David Aubrey Franklin East": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2018-ycs-atlanta"},
@@ -663,10 +660,10 @@
   "Gabriel Netz": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Raleigh J.": {
-    "as": "Raleigh John Jungemann"
-  },
   "Deylan P.": {
     "as": "Deylan James Pitkin"
+  },
+  "Raleigh J.": {
+    "as": "Raleigh John Jungemann"
   }
 }

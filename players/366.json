@@ -351,12 +351,6 @@
     {"e":"2025-ycs-buenos-aires-argentina","won":true,"cut":"Final"},
     {"e":"2025-ycs-lima-peru"}
   ],
-  "Guerrero": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Winston": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Garrett Michael Abboud": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -740,19 +734,19 @@
   "Julio G.": {
     "as": "Julio Gomes"
   },
-  "Leo F.": {
-    "as": "Leo Feria"
+  "Demario J.": {
+    "as": "Demario Montae Jester"
   },
   "Aidan C.": {
     "as": "Aidan Alexander Clarke"
   },
-  "Demario J.": {
-    "as": "Demario Montae Jester"
-  },
-  "Brady S.": {
-    "as": "Brady James Stockdale"
+  "Leo F.": {
+    "as": "Leo Feria"
   },
   "Rico E.": {
     "as": "Rico Carlos Eichelberger"
+  },
+  "Brady S.": {
+    "as": "Brady James Stockdale"
   }
 }

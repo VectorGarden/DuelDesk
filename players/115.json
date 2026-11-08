@@ -201,9 +201,6 @@
   "Max Aleksandr Valenzuela Corona": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Xie": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Aaron Daniel Graham": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-03-atlanta-ga"},
@@ -561,10 +558,10 @@
   "Joshua Joseph Distura": {
     "as": "Joshua Joseph Z. Distura"
   },
-  "Gustavo C.": {
-    "as": "Gustavo Vilella Maia do Carmo"
-  },
   "Jadson S.": {
     "as": "Jadson Dos Santos"
+  },
+  "Gustavo C.": {
+    "as": "Gustavo Vilella Maia do Carmo"
   }
 }

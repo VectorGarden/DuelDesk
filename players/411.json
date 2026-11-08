@@ -137,12 +137,6 @@
   "Jesse Victor Guilbeault": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Guo": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Tavares": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Michael Joseph Valentine": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -470,16 +464,16 @@
   "Javiera Constanza Jofre Videla": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Angel C.": {
-    "as": "Angel Jesus Cuevas"
-  },
-  "Isaac D.": {
-    "as": "Isaac Vicente Daniel"
+  "Nicholas Z.": {
+    "as": "Nicholas James Zopfi"
   },
   "Bryant S.": {
     "as": "Bryant Antony Salcedo"
   },
-  "Nicholas Z.": {
-    "as": "Nicholas James Zopfi"
+  "Isaac D.": {
+    "as": "Isaac Vicente Daniel"
+  },
+  "Angel C.": {
+    "as": "Angel Jesus Cuevas"
   }
 }

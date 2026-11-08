@@ -196,9 +196,6 @@
   "Jorge Sebastian Silva Sesca": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Tehrani": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Johnnie Lee Daugherty": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2025-north-america-wcq"},
@@ -609,10 +606,10 @@
   "MingRui C.": {
     "as": "MingRui Cai"
   },
-  "Matthew T.": {
-    "as": "Matthew Shawn Terry"
-  },
   "Jalon F.": {
     "as": "Jalon Genaro Kaimana Flores"
+  },
+  "Matthew T.": {
+    "as": "Matthew Shawn Terry"
   }
 }

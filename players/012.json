@@ -221,12 +221,6 @@
   "Ladiance Peng": [
     {"e":"2017-ycs-toronto"}
   ],
-  "Rubino": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Au": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Elijah Forrest Phillips": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-ycs-chicago"},
@@ -634,25 +628,25 @@
   "Giuliano U.": {
     "as": "Giuliano Massuhiro Uehara"
   },
-  "Vivek V.": {
-    "as": "Vivek Mohan Vattyam"
-  },
-  "Trung L.": {
-    "as": "Trung Minh Le"
-  },
   "Tamir B.": {
     "as": "Tamir Lawrence Brown"
-  },
-  "Gavin J.": {
-    "as": "Gavin Yiting Jiang"
   },
   "Yi Z.": {
     "as": "Yi Hui Zheng"
   },
-  "Quaye K.": {
-    "as": "Quaye Song Kennerly"
+  "Trung L.": {
+    "as": "Trung Minh Le"
+  },
+  "Vivek V.": {
+    "as": "Vivek Mohan Vattyam"
+  },
+  "Gavin J.": {
+    "as": "Gavin Yiting Jiang"
   },
   "Tino A.": {
     "as": "Tino London Aguinaldo"
+  },
+  "Quaye K.": {
+    "as": "Quaye Song Kennerly"
   }
 }

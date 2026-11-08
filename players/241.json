@@ -243,16 +243,6 @@
     {"e":"201712-buenos-aires-argentina"},
     {"e":"2025-ycs-buenos-aires-argentina"}
   ],
-  "Lauther": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "LeClerc": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Tan": [
-    {"e":"201712-buenos-aires-argentina"},
-    {"e":"2024-ycs-raleigh"}
-  ],
   "Jibriel Nabil Hasan": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-north-america-wcq"}
@@ -506,6 +496,9 @@
   "Forrest Cameron Beal": [
     {"e":"2024-ycs-raleigh"}
   ],
+  "Tan": [
+    {"e":"2024-ycs-raleigh"}
+  ],
   "Amanda Soleil Rodriguez": [
     {"e":"2025-02-ycs-orlando"}
   ],
@@ -593,10 +586,10 @@
   "Rubner Josue Sanchez": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
-  "Richard T.": {
-    "as": "Richard Lee Tipton"
-  },
   "Bradley M.": {
     "as": "Bradley Wayne McLean"
+  },
+  "Richard T.": {
+    "as": "Richard Lee Tipton"
   }
 }

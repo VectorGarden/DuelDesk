@@ -315,15 +315,6 @@
   "Federico Raul Oxley": [
     {"e":"201712-buenos-aires-argentina"}
   ],
-  "Dequeiroz": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Sinhradsvong": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
-  "Barangan": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Gage Riley Brown": [
     {"e":"2018-09-200th-ycs-columbus-oh"},
     {"e":"2019-08-uds-summer-invitational-2019-indianapolis-in"},
@@ -736,16 +727,16 @@
   "Grabiel M.": {
     "as": "Grabiel Jose Molina"
   },
-  "Mitchell D.": {
-    "as": "Mitchell Eugene Drake"
-  },
   "Jonathon N.": {
     "as": "Jonathon Michael Nagel"
   },
-  "Zohair K.": {
-    "as": "Zohair Ismail Khan"
+  "Mitchell D.": {
+    "as": "Mitchell Eugene Drake"
   },
   "Benjamin D.": {
     "as": "Benjamin John Dunn"
+  },
+  "Zohair K.": {
+    "as": "Zohair Ismail Khan"
   }
 }

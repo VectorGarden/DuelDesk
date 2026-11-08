@@ -242,9 +242,6 @@
   "Armando A. Guzman": [
     {"e":"201711-san-diego-ca"}
   ],
-  "Najs": [
-    {"e":"201712-buenos-aires-argentina"}
-  ],
   "Bryant Ruiz Martinez": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
   ],
@@ -620,19 +617,19 @@
   "Lenon M.": {
     "as": "Lenon De Miranda"
   },
-  "Jomar O.": {
-    "as": "Jomar Octaviani"
-  },
   "Dallen H.": {
     "as": "Dallen Dewayne Harrell"
   },
-  "Howard D.": {
-    "as": "Howard Clayton Davis"
+  "Jomar O.": {
+    "as": "Jomar Octaviani"
   },
   "Sunny C.": {
     "as": "Sunny Hau Chau"
   },
   "Michael D.": {
     "as": "Michael James Dorn"
+  },
+  "Howard D.": {
+    "as": "Howard Clayton Davis"
   }
 }
