@@ -34,7 +34,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scraper"))
 
 from fetch import SITEMAP, Fetcher, newest_sitemap  # noqa: E402
 from index import parse_post_sitemap, parse_sitemap_index  # noqa: E402
-from parse import lead  # noqa: E402
+from parse import lead, parse_post  # noqa: E402
+from build import Source, seated  # noqa: E402
 
 CACHE = ".scrape-state/cache"
 
@@ -55,7 +56,8 @@ def sitemap_entries(cache: str, refresh: bool = True):
     entries = []
     for url in subs:
         entries += parse_post_sitemap(f.get(url, refresh=refresh and url == newest_sitemap(index)))
-    return entries, len(subs), lambda url: lead(f.get(url))
+    return (entries, len(subs), lambda url: lead(f.get(url)),
+            lambda url: seated(Source(url, parse_post(f.get(url), url))))
 
 
 def stored() -> dict[str, str]:
@@ -68,29 +70,52 @@ def stored() -> dict[str, str]:
     return out
 
 
-def assign_with(ref: str | None, entries, read=None):
-    """Run assign_events from a given commit, or from the working tree."""
+def _placed(index, run, entries, read, names):
+    """Where production puts every post: assignment, then the step run.py takes
+    after it -- a post filed under one event that was played at another is
+    moved before anything is ranked. A commit from before that step has no
+    run.misfiled, and is measured as it was: assignment alone."""
+    out = {r["url"]: r.get("event") for r in index.assign_events(entries, read=read)}
+    if run is not None and hasattr(run, "misfiled") and names is not None:
+        for slug, posts, _ in run.events_by_recency(entries, read, names):
+            for post in posts:
+                out[post["url"]] = slug
+    return out
+
+
+def _scraper_modules() -> list[str]:
+    here = Path(__file__).resolve().parent.parent / "scraper"
+    return [f.stem for f in here.glob("*.py") if not f.stem.startswith("test_")]
+
+
+def assign_with(ref: str | None, entries, read=None, names=None):
+    """Place every post with a given commit's rules, or the working tree's."""
+    mods = _scraper_modules()
     if ref is None:
-        import index
-        return {r["url"]: r.get("event") for r in index.assign_events(entries, read=read)}
+        import index, run
+        return _placed(index, run, entries, read, names)
     with tempfile.TemporaryDirectory() as tmp:
-        for name in ("index.py", "parse.py", "fetch.py", "archive.py", "cards.py", "build.py"):
-            src = subprocess.run(["git", "show", f"{ref}:scraper/{name}"],
-                                 capture_output=True, text=True)
-            if src.returncode == 0:
-                Path(tmp, name).write_text(src.stdout)
+        listed = subprocess.run(["git", "ls-tree", "--name-only", ref, "scraper/"],
+                                capture_output=True, text=True).stdout.split()
+        for path in listed:
+            if path.endswith(".py") and not Path(path).name.startswith("test_"):
+                src = subprocess.run(["git", "show", f"{ref}:{path}"], capture_output=True, text=True)
+                if src.returncode == 0:
+                    Path(tmp, Path(path).name).write_text(src.stdout)
+        saved = {m: sys.modules.pop(m) for m in list(sys.modules) if m in mods}
         sys.path.insert(0, tmp)
-        for name in [m for m in list(sys.modules) if m in
-                     ("index", "parse", "fetch", "archive", "cards", "build")]:
-            del sys.modules[name]
         try:
-            import index as old
-            return {r["url"]: r.get("event") for r in old.assign_events(entries, read=read)}
+            import index as old_index
+            try:
+                import run as old_run
+            except Exception:
+                old_run = None
+            return _placed(old_index, old_run, entries, read, names)
         finally:
             sys.path.remove(tmp)
-            for name in [m for m in list(sys.modules) if m in
-                         ("index", "parse", "fetch", "archive", "cards", "build")]:
-                del sys.modules[name]
+            for m in [m for m in list(sys.modules) if m in mods]:
+                del sys.modules[m]
+            sys.modules.update(saved)
 
 
 def main() -> int:
@@ -104,12 +129,12 @@ def main() -> int:
     ap.add_argument("--quiet", action="store_true", help="counts only, no list")
     args = ap.parse_args()
 
-    entries, subs, read = sitemap_entries(args.cache, refresh=not args.offline)
+    entries, subs, read, names = sitemap_entries(args.cache, refresh=not args.offline)
     print(f"Indexed {len(entries):,} posts from {subs} sub-sitemaps")
 
-    now = assign_with(None, entries, read)
+    now = assign_with(None, entries, read, names)
     if args.against:
-        was = assign_with(args.against, entries, read)
+        was = assign_with(args.against, entries, read, names)
         label = f"{args.against}'s rules"
     else:
         was = stored()

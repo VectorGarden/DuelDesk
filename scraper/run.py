@@ -26,7 +26,7 @@ import archive                                            # noqa: E402
 from article import (holds_decks, link_names, rejoin,     # noqa: E402
                      read as read_article, readable)
 import cards                                              # noqa: E402
-from build import BUILD_VERSION, Source, build_event      # noqa: E402
+from build import BUILD_VERSION, Source, build_event, seated      # noqa: E402
 from cadence import is_ongoing                            # noqa: E402
 from fetch import (BASE, SITEMAP, Fetcher, newest_sitemap,  # noqa: E402
                    parse_lastmod)
@@ -35,8 +35,8 @@ from index import (assign_events, event_profiles, parse_post_sitemap,  # noqa: E
                    parse_sitemap_index, settled_end, tight_window)
 from feed import build_feed                              # noqa: E402
 from naming import canonical_name, event_name            # noqa: E402
-from parse import (coverage_format, detect_kind, entry, lead,  # noqa: E402
-                   parse_post)
+from parse import (coverage_format, detect_kind, detect_round, entry,  # noqa: E402
+                   lead, parse_post)
 
 # The kinds that are writing. A pairings or standings post is a table the
 # archive already stores and the page already draws, and they are 44% of every
@@ -117,7 +117,90 @@ def article_people(kind: str, url: str, field: list[str],
 DRAWS_ABOLISHED = date(2025, 9, 2)
 
 
-def events_by_recency(entries, read=None) -> list[tuple[str, list[dict], str]]:
+# How much of a post's table has to be one event's field, and how little the
+# other's, before the post is moved between them.
+PLAYED_THERE = 0.5
+
+# How long after its own event ended a post has to go up before it is asked
+# whether it was another's. Events side by side -- a WCQ and the Genesys
+# Championship of the same weekend -- and events on consecutive weekends file
+# into each other's dates all the time, and are not this; five hundred posts
+# met the rule without it. A week, two weeks or ten days leave the same
+# nineteen posts on the whole blog.
+MISFILED_AFTER_DAYS = 7
+
+
+def late_elsewhere(grouped: dict[str, list[dict]]) -> dict[str, str]:
+    """Posts that went up long after their own event, on a day another ran.
+
+    URL to the event running that day. Asked of every post but cheap to ask --
+    dates only -- and narrow in what it finds: nineteen posts on the whole blog
+    with a table in them. Most of the posts it names are edits, which Konami
+    makes long after: one of the 2025 North America WCQ's was edited in July
+    2026. Some are another event's, published under the wrong name.
+    """
+    running = {ev: tight_window([p["lastmod"] for p in posts]) for ev, posts in grouped.items()}
+    day = lambda d: date.fromisoformat(d[:10]).toordinal()
+    out = {}
+    for ev, posts in grouped.items():
+        for post in posts:
+            hosts = [h for h, (lo, hi) in running.items()
+                     if h != ev and lo <= post["lastmod"] <= hi]
+            if len(hosts) != 1:
+                continue
+            lo, hi = running[hosts[0]]
+            own = [q["lastmod"] for q in posts if not lo <= q["lastmod"] <= hi]
+            if own and day(post["lastmod"]) - day(tight_window(own)[1]) >= MISFILED_AFTER_DAYS:
+                out[post["url"]] = hosts[0]
+    return out
+
+
+def misfiled(grouped: dict[str, list[dict]], names) -> list[tuple[dict, str, str]]:
+    """Posts filed under one event that were played at another, and where to.
+
+    A post is filed by its slug, and Konami's slugs are copied from the last
+    event's: nine of YCS Orlando's posts in November 2026 went up from YCS
+    Houston's template, titled and slugged as Houston's, holding Orlando's
+    tables. Filed by name they were Houston's, three weeks after Houston ended,
+    and dated into the weekend Orlando ran -- which made Houston the newest
+    event, so every scheduled run rebuilt it and Orlando's first day never
+    reached the site.
+
+    Nothing in a slug says otherwise. The table does: its Duelists are the
+    ones who played. Asked only of the posts late_elsewhere finds, and decided
+    only when the table is clearly one event's field and clearly not the
+    other's -- a post edited weeks later belongs where it was, and its
+    Duelists say so.
+    """
+    late = late_elsewhere(grouped)
+    fields: dict[str, set[str]] = {}
+
+    def field(ev: str) -> set[str]:
+        # Round 1, which every Duelist in the event played.
+        if ev not in fields:
+            first = [p for p in grouped[ev] if p["kind"] == "pairings"
+                     and detect_round(p["slug"], "pairings") == 1]
+            fields[ev] = set().union(*((names(p["url"]) or set()) for p in first))
+        return fields[ev]
+
+    moves = []
+    for ev, posts in grouped.items():
+        for post in posts:
+            # Only a post with a table can say who played.
+            if post["url"] not in late or not (
+                    post["kind"] in ("pairings", "standings") or "table" in post["slug"]):
+                continue
+            host = late[post["url"]]
+            seated = names(post["url"]) or set()
+            if len(seated) < 4:
+                continue
+            fit = lambda f: len(seated & f) / len(seated) if f else 0.0
+            if fit(field(host)) >= PLAYED_THERE and fit(field(ev)) < PLAYED_THERE:
+                moves.append((post, ev, host))
+    return moves
+
+
+def events_by_recency(entries, read=None, names=None) -> list[tuple[str, list[dict], str]]:
     """Every identified event, its posts, and the day its coverage ended.
 
     That last date is taken from the event's window rather than from the newest
@@ -143,9 +226,29 @@ def events_by_recency(entries, read=None) -> list[tuple[str, list[dict], str]]:
             a["kind"] = detect_kind(a["slug"])
             grouped[a["event"]].append(a)
 
+    # Before anything is dated or ranked by them. See misfiled.
+    if names is not None:
+        for post, was, now in misfiled(grouped, names):
+            grouped[was].remove(post)
+            grouped[now].append(post)
+            post["event"] = now
+            print(f"  {post['slug']}: filed under {was}, played at {now}")
+
+    # Whatever went up long after an event, on days another was running, is
+    # not when it ran -- edited, or somebody else's under its name -- and must
+    # not make it the newest. Three of YCS Orlando's posts stayed filed as YCS
+    # Houston's, their tables unreadable, and dated Houston into the weekend
+    # Orlando was being played.
+    late = late_elsewhere(grouped)
+    for posts in grouped.values():
+        for post in posts:
+            if post["url"] in late:
+                post["late"] = True
+
     def ended(slug: str, posts: list[dict]) -> str:
         end = (profiles[slug].window[1] if slug in profiles
-               else tight_window([p["lastmod"] for p in posts])[1])
+               else tight_window([p["lastmod"] for p in posts if p["url"] not in late]
+                                 or [p["lastmod"] for p in posts])[1])
         # And not the day somebody edited one post afterwards. This is the
         # date the event is listed and sorted under, and for events either
         # side of the day ties were abolished it decides whether their records
@@ -173,7 +276,7 @@ def worth_building(posts: list[dict]) -> bool:
 
 def plan(entries, done: set[str], backfill: int,
          rebuild: int = 0, behind: set[str] | frozenset = frozenset(),
-         read=None) -> list[tuple[str, list[dict], str]]:
+         read=None, names=None) -> list[tuple[str, list[dict], str]]:
     """Which events this run builds: the newest, plus older ones.
 
     The newest event is rebuilt every time because it may still be running. The
@@ -188,7 +291,7 @@ def plan(entries, done: set[str], backfill: int,
     either way: if a rebuild is interrupted, the events most likely to be
     looked at are the ones already corrected.
     """
-    ranked = [e for e in events_by_recency(entries, read) if worth_building(e[1])]
+    ranked = [e for e in events_by_recency(entries, read, names) if worth_building(e[1])]
     if not ranked:
         return []
     chosen = [ranked[0]]
@@ -254,6 +357,19 @@ def select_posts(posts: list[dict], limit: int) -> list[dict]:
     return chosen[:limit]
 
 
+def newest_post(sources: list[Source], posts: list[dict]) -> datetime | None:
+    """When an event's coverage last moved, which says whether it is running.
+
+    Not counting a post that went up long afterwards while another event was
+    on -- events_by_recency marks those. Three of YCS Orlando's were still
+    filed as YCS Houston's, and had Houston in progress three weeks after it
+    ended.
+    """
+    late = {p["url"] for p in posts if p.get("late")}
+    return max((parse_lastmod(s.posted) for s in sources if s.posted and s.url not in late),
+               default=None, key=lambda d: d or datetime.min.replace(tzinfo=timezone.utc))
+
+
 def build_one(f, slug: str, posts: list[dict], ended: str,
               limit: int, known=None
               ) -> tuple[dict, list[dict], dict[str, list], list[str]]:
@@ -309,8 +425,7 @@ def build_one(f, slug: str, posts: list[dict], ended: str,
     name, location = canonical_name(name, slug, ended, named=name != fallback)
     # Whether a round may be shown as in progress. Read from the coverage rather
     # than assumed: the newest post of a finished event is days old.
-    newest = max((parse_lastmod(s.posted) for s in sources if s.posted),
-                 default=None, key=lambda d: d or datetime.min.replace(tzinfo=timezone.utc))
+    newest = newest_post(sources, posts)
     ongoing = is_ongoing(newest, datetime.now(timezone.utc))
     print(f"  {name}: newest post {newest.isoformat() if newest else 'unknown'}, "
           f"{'ongoing' if ongoing else 'finished'}")
@@ -467,7 +582,8 @@ def main() -> int:
     # event's window holds its date -- ten posts on the blog, and cached like
     # every other fetch after the first run.
     chosen = plan(entries, done, args.backfill, args.rebuild, stale,
-                  read=lambda url: lead(f.get(url)))
+                  read=lambda url: lead(f.get(url)),
+                  names=lambda url: seated(Source(url, parse_post(f.get(url), url))))
     if not chosen:
         print("No event with both pairings and standings could be identified.")
         return 0
