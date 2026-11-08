@@ -1,4 +1,26 @@
 {
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-9-advanced/": [
+    {
+      "t": "p",
+      "r": ["Here’s a look at our top tables in the final Swiss round of the day!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the newest breakdown:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Power Patron Elfnote Ars Magna","13"],["Angelechy","8"],["Power Patron Ars Magna Artmage","6"],["Angelechy Blitzclique","3"],["Radiant Typhoon Sky Striker","2"],["Artmage Ars Magna","1"],["Light and Darkness Ritual","1"],["Sky Striker","1"],["Dracotail","1"],["Horus Light and Darkness Ritual","1"],["Crimson King L&D Ritual","1"],["Power Patron Ars Magna","1"],["Radiant Typhoon","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["The Elfnote Decks have overtaken the Artmage Decks this round, with Angelechy as the other strong contender. We have a few ",{"b":"Light and Darkness Ritual"}," Decks of various flavors, plus a handful of other strategies including Sky Striker and Radiant Typhoon Decks."]
+    },
+    {
+      "t": "p",
+      "r": ["This is our final Top Tables Update for today – come back tomorrow for more coverage of YCS Orlando!"]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-saturdays-top-4-dragon-duelists/": [
     {
       "t": "p",
@@ -69,6 +91,44 @@
     {
       "t": "p",
       "r": ["These are a few of the trends we’re seeing here at YCS Orlando, but how will they play out? We’ve got several more Swiss rounds between today and tomorrow, so we’ll see if any of these strategies make it into the Top Cut tomorrow!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-genesys-tech-update/": [
+    {
+      "t": "p",
+      "r": ["We’re back to continue our Genesys coverage! Here’s a look some trends we saw on Day 1."]
+    },
+    {
+      "t": "p",
+      "r": ["The thing that ties all these cards together is their lack of point value. Finding strong utility for 0 points is a huge benefit for any Genesys Deck, letting you focus your points on more important cards to advance your Deck’s plan."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Typhoon"}]
+    },
+    {
+      "t": "p",
+      "r": ["Much like in the Advanced event, ",{"b":"Typhoon"}," is a popular Side Deck choice. It has several applications, but it’s primarily used as an anti-Angelechy option. They’ll pretty much always have multiple Spells/Traps on the field to let you activate ",{"b":"Typhoon"}," during their turn, destroying a key Angelechy in their back row or one of their Field Spells."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Veidos the Eruption Dragon of Extinction"}]
+    },
+    {
+      "t": "p",
+      "r": ["Speaking of Field Spells, ",{"b":"Veidos the Eruption Dragon of Extinction"}," is a common Side Deck option, with its Quick Effect to take on any Deck that relies on a Field Spell. That means Angelechy, Blitzclique, Fairy Tail, and more. It’s tricky to remove Veidos without setting off its eruption to destroy all your monsters, so it’s a great option when going second. Your opponent will have to risk expending all their resources into a Veidos eruption, or pass without developing their field to the fullest."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Gordian Slicer"}]
+    },
+    {
+      "t": "p",
+      "r": ["Our final card is another Side Deck option for when you’re going second. ",{"b":"Gordian Slicer"}," is a phenomenal way to pick apart your opponent’s opening field, primarily for Decks like Blitzclique that don’t require an Extra Deck to function. Slicer can’t be negated, so it’ll clear out nearly any problem – just as long as it isn’t something like ",{"b":"Lunalight Leo Dancer"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["We’re continuing the Genesys Swiss rounds soon, so we’ll see which of these trends, or others, will get our Duelists into the Top 8!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-prize-wall-including-new-items/": [
