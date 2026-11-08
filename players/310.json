@@ -293,8 +293,8 @@
     {"e":"2025-ycs-buenos-aires-argentina"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
   "Cristian Santiago Albuja Manosalvas": [

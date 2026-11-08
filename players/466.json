@@ -428,7 +428,7 @@
   ],
   "Luis Fernando Chicaiza": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Marlon Diaz Ramirez": [
     {"e":"2024-ycs-raleigh"},
@@ -501,16 +501,16 @@
   "Ali Reda Boudadi": [
     {"e":"2026-ycs-orlando","f":"Genesys"}
   ],
-  "Alexandre L.": {
-    "as": "Alexandre Lebel"
+  "Alex R.": {
+    "as": "Alex Bryan Ramirez"
   },
   "Jensen S.": {
     "as": "Jensen Ciara Smillie"
   },
-  "Alex R.": {
-    "as": "Alex Bryan Ramirez"
-  },
   "Owen L.": {
     "as": "Owen Quentin Love"
+  },
+  "Alexandre L.": {
+    "as": "Alexandre Lebel"
   }
 }

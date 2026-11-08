@@ -546,7 +546,7 @@
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Felipe Santibanez Vargas": [
     {"e":"2023-250th-ycs-in-bogota-colombia"},
@@ -702,10 +702,10 @@
   "Poe J.": {
     "as": "Poe Jiang"
   },
-  "Samuel C.": {
-    "as": "Samuel Saegin Cheon"
-  },
   "David S.": {
     "as": "David Scott Stewart"
+  },
+  "Samuel C.": {
+    "as": "Samuel Saegin Cheon"
   }
 }

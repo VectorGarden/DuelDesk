@@ -245,7 +245,7 @@
     {"e":"2025-south-america-wcq","cut":"Top 32"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Phillip Adam-Abel Boothby": [
     {"e":"2022-11-ycs-pasadena"}
@@ -428,7 +428,7 @@
     {"e":"2026-04-team-ycs-las-vegas"}
   ],
   "Rolando Javier Soriano": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Khaled Khodor": [
     {"e":"2026-ycs-houston","f":"Advanced"},
@@ -455,14 +455,14 @@
   "Theo T.": {
     "as": "Theo Victor Tavares"
   },
-  "Ethan S.": {
-    "as": "Ethan Robert Senecal"
+  "Blake J.": {
+    "as": "Blake Michael Jones"
   },
   "Gerardo R.": {
     "as": "Gerardo Isaac Rubalcava"
   },
-  "Blake J.": {
-    "as": "Blake Michael Jones"
+  "Ethan S.": {
+    "as": "Ethan Robert Senecal"
   },
   "Aiden G.": {
     "as": "Aiden Gastelum"

@@ -377,7 +377,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Michael Jonathan Rico": [
     {"e":"2022-ycs-bogota-colombia"}
@@ -609,10 +609,10 @@
   "Andres David Duschatzky": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
-  "Giorgos R.": {
-    "as": "Giorgos Sebastian Ramirez"
-  },
   "Alan K.": {
     "as": "Alan Leung Wah Kwok"
+  },
+  "Giorgos R.": {
+    "as": "Giorgos Sebastian Ramirez"
   }
 }

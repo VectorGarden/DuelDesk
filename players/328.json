@@ -482,8 +482,8 @@
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"},
     {"e":"ycs-lima-peru-2023","cut":"Top 16"}
   ],
@@ -606,10 +606,10 @@
   "MingRui C.": {
     "as": "MingRui Cai"
   },
-  "Matthew T.": {
-    "as": "Matthew Shawn Terry"
-  },
   "Jalon F.": {
     "as": "Jalon Genaro Kaimana Flores"
+  },
+  "Matthew T.": {
+    "as": "Matthew Shawn Terry"
   }
 }

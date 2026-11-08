@@ -499,7 +499,7 @@
   ],
   "Mattheo Alexander Robayo Sanchez": [
     {"e":"2023-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Sterling Lathe Flesner": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -618,7 +618,7 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Juan Alfredo Crespo": [
     {"e":"2025-ycs-buenos-aires-argentina"}
@@ -674,16 +674,16 @@
   "Walter A.": {
     "as": "Walter Omar Angel"
   },
-  "Nicholas W.": {
-    "as": "Nicholas John Wetmore"
-  },
   "Joshua L.": {
     "as": "Joshua Ryan Levine"
+  },
+  "Jeremy C.": {
+    "as": "Jeremy David Cummins"
   },
   "Patrick A.": {
     "as": "Patrick Connor Ainsworth"
   },
-  "Jeremy C.": {
-    "as": "Jeremy David Cummins"
+  "Nicholas W.": {
+    "as": "Nicholas John Wetmore"
   }
 }

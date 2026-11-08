@@ -533,7 +533,7 @@
   "Arturo Xavier Cadena Arce": [
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2025-ycs-buenos-aires-argentina"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Johnathan Dale Wallingford": [
     {"e":"2024-ycs-indianapolis"},
@@ -618,10 +618,10 @@
   "Tomas D.": {
     "as": "Tomas Dughera"
   },
-  "Jesse A.": {
-    "as": "Jesse Amador"
-  },
   "Marco L.": {
     "as": "Marco Antonio Raul Lujano"
+  },
+  "Jesse A.": {
+    "as": "Jesse Amador"
   }
 }

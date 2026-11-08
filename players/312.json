@@ -529,7 +529,7 @@
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-guatemala-city-guatemala","cut":"Final"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
@@ -643,7 +643,7 @@
   ],
   "Jose Fernando Armijos Menendes": [
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Kevin Andres Ordonez": [
     {"e":"2026-ycs-guatemala-city-guatemala"}
@@ -660,10 +660,10 @@
   "Steve H.": {
     "as": "Steve Enrique Hernandez"
   },
-  "Vishon B.": {
-    "as": "Vishon Sam Bhatia"
-  },
   "Craig S.": {
     "as": "Craig Johnston Smith"
+  },
+  "Vishon B.": {
+    "as": "Vishon Sam Bhatia"
   }
 }

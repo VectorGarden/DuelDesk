@@ -384,7 +384,7 @@
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
@@ -629,7 +629,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Gabriel Alejandro Plaza Plaza": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Brian Oswaldo Faucheux Contreras": [
     {"e":"ycs-lima-peru-2023"}
@@ -637,16 +637,16 @@
   "João A.": {
     "as": "João Vitor Abrahão"
   },
-  "Joo A.": {
-    "as": "Joo Ho Ahn"
+  "Luca C.": {
+    "as": "Luca Mathew Jin Soo Choi"
   },
   "Tyler M.": {
     "as": "Tyler Mackenzie Mocklin"
   },
-  "Luca C.": {
-    "as": "Luca Mathew Jin Soo Choi"
-  },
   "Lyric B.": {
     "as": "Lyric Bruner"
+  },
+  "Joo A.": {
+    "as": "Joo Ho Ahn"
   }
 }

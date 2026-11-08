@@ -555,10 +555,10 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Josue David Cherres": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Lindao Kevin": [
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Qasem Anwar Alkhatib": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
@@ -569,11 +569,11 @@
   "Sara S.": {
     "as": "Sara Sarao"
   },
-  "Alexis P.": {
-    "as": "Alexis Augusto Pinedo"
-  },
   "Eric F.": {
     "as": "Eric Jonathan Francis"
+  },
+  "Alexis P.": {
+    "as": "Alexis Augusto Pinedo"
   },
   "Connor W.": {
     "as": "Connor Bruce Walch"

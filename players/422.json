@@ -423,7 +423,7 @@
   "Pedro Israel Vallejo": [
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Matthew Hermann Westphall": [
     {"e":"2024-ycs-indianapolis"},
@@ -491,7 +491,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Alex David Contreras Arana": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Alberto Carlos Aponte Jr.": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
@@ -517,11 +517,11 @@
   "Hudson V.": {
     "as": "Hudson Fernandes Viana"
   },
-  "Jenna D.": {
-    "as": "Jenna Eliabeth Daroszewski"
-  },
   "Steven O.": {
     "as": "Steven Osorio"
+  },
+  "Jenna D.": {
+    "as": "Jenna Eliabeth Daroszewski"
   },
   "Soham T.": {
     "as": "Soham Mandar Tamhane"

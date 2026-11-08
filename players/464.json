@@ -176,8 +176,8 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Noah Michael Stima": [
     {"e":"2017-ycs-atlanta"},
@@ -606,8 +606,8 @@
   ],
   "Gino Stefano Poggi": [
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Igor Danrley Silva": [
     {"e":"2026-south-america-wcq"}
@@ -616,7 +616,7 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Edgar Elias Ceballos Vicuna": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Sulmon Qureshi": [
     {"e":"na-ygoc-2022"}

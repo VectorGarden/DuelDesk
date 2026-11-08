@@ -127,8 +127,8 @@
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2025-south-america-wcq","cut":"Top 64"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Roger Lee Martinez": [
     {"e":"2016-ycs-houston-texas"}
@@ -640,10 +640,10 @@
   "Adeilson F.": {
     "as": "Adeilson Ferreira Freitas"
   },
-  "Brooke M.": {
-    "as": "Brooke Roy Mason"
-  },
   "Elijah Q.": {
     "as": "Elijah Graham Quinby"
+  },
+  "Brooke M.": {
+    "as": "Brooke Roy Mason"
   }
 }

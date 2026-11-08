@@ -43,7 +43,7 @@
     {"e":"2013-south-american-wcq-championships"},
     {"e":"2015-south-american-wcq"},
     {"e":"2016-sa-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Levhin Paulo Cugat Grospe": [
     {"e":"2013-yu-gi-oh-championship-series-san-diego-california"}
@@ -630,7 +630,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Marco Antonio Avalos": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Kyle Robert Suter": [
     {"e":"2026-ycs-houston","f":"Advanced"}

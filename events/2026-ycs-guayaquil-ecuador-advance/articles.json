@@ -1,1 +1,765 @@
-{}
+{
+  "https://yugiohblog.konami.com/2026/event-information/ycs-guayaquil-ecuador-2026-main-event-information/": [
+    {
+      "t": "p",
+      "r": [{"b":"Yu-Gi-Oh! Championship Series Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Genesys Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Genesys Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Advanced Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Advanced Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Main Event Prizing Images"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Travel"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"COVID-19 Restrictions"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Yu-Gi-Oh! Championship Series Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Where is YCS Guayaquil, Ecuador?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," YCS Guayaquil, Ecuador 2026 will be held at:\n\nHotel Hilton Colón – Salón Gran Isabela I, II, III\nAv. Francisco de Orellana Guayaquil, Ecuador"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the attendance capacity for this YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Due to safety, health, and fire regulations, we have seating for up to 600 Duelists for this YCS (this is the total Duelist venue capacity). We urge you to pre-register online to have a better chance of being able to play in the Main Events. If the venue reaches capacity, additional Duelists will not be allowed to enter the hall. As space opens up from the Main Events, we will offer numerous Public Events that you will still be able to participate in throughout the weekend."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Main Events will be at YCS Guayaquil, Ecuador?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," YCS Guayaquil, Ecuador will feature two Main Events. The Genesys Main Event Day 1 will be held on Friday, October 2",{"s":"nd"}," and Day 2 on Sunday, October 4",{"s":"th"},". The Advanced Main Event Day 1 will be held on Saturday, October 3",{"s":"rd"}," and Day 2 on Sunday, October 4",{"s":"th"},". If a Duelist makes Day 2 for both events, they will need to decide which Day 2 they want to compete in and inform the Main Scorekeeper once the standings are posted at the end of Saturday, October 3",{"s":"rd"}," before the event hall is cleared."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What are the Deck-building requirements for the Main Events?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Duelists can find detailed information about Deck-building for Advanced and Genesys on the Deck construction page, https://www.yugioh-card.com/en/limited/"]
+    },
+    {
+      "t": "p",
+      "r": ["Here is the basic information:"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Advanced"}]
+    },
+    {
+      "t": "p",
+      "r": ["Decks must follow the Forbidden & Limited List, which can be viewed at https://www.yugioh-card.com/en/limited/list_2026-05-18/"]
+    },
+    {
+      "t": "p",
+      "r": ["For information on how to submit your Advanced Deck List, please see ",{"b":"When do I turn in my Deck List for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Genesys"}]
+    },
+    {
+      "t": "p",
+      "r": ["Genesys rules are simple:"]
+    },
+    {
+      "t": "li",
+      "r": ["No Link Monsters or Pendulum Monsters are allowed. All other cards are allowed. The original field layout is used, with no Extra Monster Zones nor Pendulum Zones."]
+    },
+    {
+      "t": "li",
+      "r": ["The standard Forbidden & Limited Cards list is not used. All those cards can be used, except Link Monsters and Pendulum Monsters. Usual limit of 3 copies max of any card still applies."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck construction uses a point system. Some cards are assigned a point value; most cards cost zero points. The total point cost of cards in your Main Deck, Extra Deck, and Side Deck (combined) cannot exceed the point cap for that event."]
+    },
+    {
+      "t": "p",
+      "r": ["For the Genesys Main Event, we will use the 100 Points cap for Deck-building. Click the link below for the current Genesys Points list. Genesys Deck List must be submitted through NEURON, the Yu-Gi-Oh! TCG support app."]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.yugioh-card.com/en/genesys"]
+    },
+    {
+      "t": "p",
+      "r": ["For information on how to submit your Genesys Deck List, please see ",{"b":"How do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Rounds will the Yu-Gi-Oh! Championship Series have?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The total number of Duelists in each of the Main Events, Advanced and Genesys, will determine the number of Rounds that are played in that specific Main Event."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Duelists will advance to Day 2?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," If there are 32 or fewer Duelists registered for the YCS, then the Top 8 Duelists will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 33 – 64 Duelists registered for the YCS, then the Top 16 Duelists or Duelists with a minimum of 15 points, whichever is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 65 – 128 Duelists registered for the YCS, then the Top 32 Duelists or Duelists with a minimum of 15 points, whichever is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 129 – 256 Duelists registered for the YCS, then the Top 64 Duelists OR Duelists with a minimum of 15 points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 257 – 512 Duelists registered for the YCS, then the Top 64 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 513 – 1024 Duelists registered for the YCS, then the Top 128 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 1025 – 2048 Duelists registered for the YCS, then the Top 256 Duelists OR Duelists with a minimum of 21 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 2049 or more Duelists registered for the YCS, then the Top 256 Duelists OR Duelists with a minimum of 21 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What cards are legal for play?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Please check the “Products” page online at https://www.yugioh‐card.com/en/products/ for the most current legality dates of Yu-Gi-Oh! TRADING CARD GAME product releases, prior to preparing your Deck for the event."]
+    },
+    {
+      "t": "p",
+      "r": ["Cards that have been altered from their original appearance with surface decoration may be used for play"]
+    },
+    {
+      "t": "p",
+      "r": ["only if the alterations do not obscure any portion of the card text, make the illustration difficult to recognize, or make the card distinguishable from other cards in the Deck while it is face-down."]
+    },
+    {
+      "t": "p",
+      "r": ["If a card’s surface decoration renders the card unrecognizable at first glance, then the card is not allowed for tournament play."]
+    },
+    {
+      "t": "p",
+      "r": ["The Head Judge of the event has final arbitration on whether or not altered cards may be used at the tournament. Duelists are responsible for determining whether or not their altered cards are acceptable for use before the start of the tournament."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Will there be meal breaks during the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," As there will be food and drinks available inside the tournament hall, there will not be any meal breaks scheduled into the tournament."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Who should I contact if I have questions about the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Tournament Organizer Company:"}," Battle Tower"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"E-mail:"}," battletower.ec@gmail.com"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Whatsapp:"}," +593987406123"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"KDE-US Representative"}]
+    },
+    {
+      "t": "p",
+      "r": ["Email: la-opsupport@kde-us.com with the subject “Question for YCS Guayaquil 2026”"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Will there be coverage of the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Yes! There will be online coverage with Feature Matches and other updates at the YCS available here:"]
+    },
+    {
+      "t": "p",
+      "r": ["Event Coverage blog – Event updates, Quick Questions, Pairings, and Standings"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When is the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the Booster Pack purchase requirement to register for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," At check in, Duelists will pay $24.00 USD to receive four (4) booster packs and registration in the event. This is the cost of four (4) booster packs in the host country, including any taxes and fees.\n\nCash and Credit Cards will be the methods of payment accepted for YCS – Guayaquil, Ecuador and all Public Events. Gift cards and checks will not be accepted"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the registration schedule for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The registration schedule for the Genesys Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Schedules are subject to change and may be updated before the event begins. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Online registration is open till the End Time and Date listed above or until available seats sell out, whichever comes first. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Deck Lists MUST be submitted by the Deck List Due Date via NEURON. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["See ",{"b":"How do I turn in my Deck List for the Genesys Main Event?"}," For more information"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When can I register for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," For this YCS, Duelists will need to register online to secure a seat to compete in the Genesys Main Event."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists can register online here:"]
+    },
+    {
+      "t": "li",
+      "r": ["https://registration.yugioh-card.com/"]
+    },
+    {
+      "t": "li",
+      "r": ["If you have not used the site to register for a YCS or WCQ event, you will need to create an account in order to register. You can do this at any time, you do not need to wait for the event registration to open to register an account."]
+    },
+    {
+      "t": "li",
+      "r": ["Registration will remain open until either all available seats in the Genesys Main Event are sold out or until Thursday, October 1, 2026 at 12:00 PM ECT (whichever comes first)."]
+    },
+    {
+      "t": "li",
+      "r": ["Space is limited."]
+    },
+    {
+      "t": "li",
+      "r": [{"b":"Duelists who successfully register must still arrive at the YCS and check in on Thursday, October 1, 2026 between 3:00 PM ECT and 6:30 PM ECT to confirm their seat in the Tournament or their seat will be forfeited. Duelists who have also registered for the Advanced Main Event can also check in for the Advanced Main Event at this time."}]
+    },
+    {
+      "t": "li",
+      "r": ["If you are not able to check in on Thursday, October 1, 2026 prior to 6:30 PM ECT due to travel or other issues, you will need to contact the Tournament Organizer at battletower.ec@gmail.com no later than 10:00 AM ECT on Thursday, October 1, 2026 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "li",
+      "r": ["Any Duelist that does not attend a YCS they registered for and does not reach out to the Tournament Organizer beforehand will be blocked from registering online for future YCS events."]
+    },
+    {
+      "t": "p",
+      "r": ["We urge you to register online for the event due to seating capacity."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Once you have registered for the Genesys Main Event you will need to go into NEURON and submit your Genesys Deck List."]
+    },
+    {
+      "t": "p",
+      "r": ["The YCS Guayaquil, Ecuador Genesys Main Event will appear in the Confirm/Manage My Tournaments section on the Events tab between 24 and 48 hours after you register for the event."]
+    },
+    {
+      "t": "li",
+      "r": ["If it has been more than 48 hours since you registered and the event is not showing up in NEURON please contact la-opsupport@kde-us.com. Please provide your full name and the CARD GAME ID you used to register for YCS Guayaquil 2026 Genesys Main Event."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the Deck List deadline of 2:00 PM ECT Thursday, October 1, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Deck Lists are due through NEURON by 2:00 PM ECT on Thursday, October 1, 2026."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists who do not turn in their Deck Lists by this deadline, will ",{"b":"automatically"}," forfeit their seat. Any Duelist that does not attend a YCS they registered for and does not reach out to the Tournament Organizer at battletower.ec@gmail.com beforehand will be blocked from registering online for future YCS/WCQ events."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck Lists must be submitted through NEURON. Physical copies of a Deck List will not be accepted onsite for the YCS."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the registration deadline of 2:00 PM ECT on Thursday, October 1, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": ["Q: ",{"b":"What is the event schedule for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The event schedule for the Genesys Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["* Duelists who are competing in both Genesys and Advanced may also check in for Advanced on Thursday. Advanced Deck Lists must be submitted to check in but can still beupdated and resubmitted up until the Advanced Deck List deadline of 10:00 AM ECT on Friday, October 1, 2026."]
+    },
+    {
+      "t": "p",
+      "r": ["** Alternate On-Site Check-In is only for Duelists who email the Tournament Organizer to arrange it if they are unable to arrive at the venue by 6:30 PM ECT on Thursday, October 1, 2026. Duelists MUST email the Tournament Organizer at battletower.ec@gmail.com no later than 10:00 AM ECT on Thursday, October 1, 2026 to secure this Alternate Check-In***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I check in for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Pre-registered Duelists just need to arrive on-site at the venue between 3:00 PM and 6:30 PM ECT on Thursday, October 1, and follow the signs to check in and confirm their seat in the YCS. At this time, Duelists will be asked to pay $24.00 USD to receive four (4) booster packs once they are confirmed at check in."]
+    },
+    {
+      "t": "p",
+      "r": ["If you are not able to check in on Thursday, October 1 prior to 6:30 PM due to travel or other issues, you will need to contact the Tournament Organizer at battletower.ec@gmail.com no later than 10:00 AM ECT on Thursday, October 1 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": ["*In addition to the other prizes for 1st place, the winner will receive complimentary travel and accommodation for the next Genesys Championship in their territory (North and Latin America only)."]
+    },
+    {
+      "t": "p",
+      "r": ["** Not all Yu-Gi-Oh! Cards can be made into Giant Cards see https://www.yugioh-card.com/en/events/faq/event_prizing/ for details."]
+    },
+    {
+      "t": "p",
+      "r": ["*** The YCS Prize Card Pack will be available starting at the 1st Round of Swiss on Day 2 based on standings announced at the end of Day 1. Duelists may pick up their packs at the main stage from the start of the 1st Round of Swiss on Day 2 up until the start of Top 8."]
+    },
+    {
+      "t": "p",
+      "r": ["The Ultra Rare YCS Prize Card and Super Rare YCS Prize Card will be awarded after Final Swiss Standings are determined, prior to the Top 8 cut. Duelists must still be enrolled in the tournament at the end of the final Round of Swiss and ranked in the Top 16 or Top 32 respectively to receive these Prize Cards."]
+    },
+    {
+      "t": "p",
+      "r": ["▶ ",{"b":"Main Event Prizing Images are here"},"!"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Advanced Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When is the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": ["Duelists participating in the Genesys Main Event may also check in for the Advanced Main Event on Thursday October 1 when they are checking in for Genesys."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the Booster Pack purchase requirement to register for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," At check in, Duelists will pay $24.00 USD to receive four (4) booster packs and registration in the event. This is the cost of four (4) booster packs in the host country, including any taxes and fees.\n\nCash and Credit Cards will be the methods of payment accepted for YCS – Guayaquil, Ecuador and all Public Events. Gift cards and checks will not be accepted"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the registration schedule for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The registration schedule for the Advanced Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Schedules are subject to change and may be updated before the event begins. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Online registration is open till the End Time and Date listed above or until available seats sell out, whichever comes first. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Deck Lists MUST be submitted by the Deck List Due Date via the website where you registered. ***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When can I register for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," For this YCS, Duelists will need to register online to secure a seat to compete in the Advanced Main Event."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists can register online here:"]
+    },
+    {
+      "t": "li",
+      "r": ["https://registration.yugioh-card.com/"]
+    },
+    {
+      "t": "li",
+      "r": ["If you have not used the site to register for a YCS or WCQ event, you will need to create an account in order to register. You can do this at any time, you do not need to wait for the event registration to open to register an account."]
+    },
+    {
+      "t": "li",
+      "r": ["Registration will remain open until either all available seats in the Advanced Main Event are sold out or until Friday, October 2, 2026 at 12:00 PM ECT (whichever comes first)."]
+    },
+    {
+      "t": "li",
+      "r": ["Space is limited."]
+    },
+    {
+      "t": "li",
+      "r": [{"b":"Duelists who successfully register must still arrive at the YCS and check in on Friday, October 2, 2026 between 12:00 PM ECT and 6:00 PM ECT to confirm their seat in the Tournament or their seat will be forfeited. If you are also playing in the Genesys Main Event, you may also check in for the Advanced Main Event on Thursday, October 1, 2026 between 3:00 PM ECT and 6:30 PM ECT."}," You must already have submitted a Deck List for the Advanced Main Event, but you can make changes to your Deck List until Friday 10AM ECT. You do not need to check in on Friday for the Advanced Main Event if you check in on Thursday."]
+    },
+    {
+      "t": "li",
+      "r": ["If you are not able to check in on Friday, October 2, 2026 prior to 6:00 PM ECT due to travel or other issues, you will need to contact the Tournament Organizer at battletower.ec@gmail.com no later than 10:00 AM ECT on Friday, October 2, 2026 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "li",
+      "r": ["Any Duelist that does not attend a YCS they registered for and does not reach out to the Tournament Organizer at battletower.ec@gmail.com beforehand will be blocked from registering online for future YCS/WCQ events."]
+    },
+    {
+      "t": "p",
+      "r": ["We urge you to register online for the event due to seating capacity."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When do I turn in my Deck List for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Deck Lists are due online by 10:00 AM ECT on Friday, October 2, 2026."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists who do not turn in their Deck Lists by this deadline, will ",{"b":"automatically"}," forfeit their seat. Any Duelist that does not attend a YCS they registered for and does not reach out to the Tournament Organizer at battletower.ec@gmail.com beforehand will be blocked from registering online for future YCS/WCQ events."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck Lists must be submitted through the online system. Physical copies of a Deck List will not be accepted onsite for the YCS."]
+    },
+    {
+      "t": "li",
+      "r": ["Even if you are participating in the Genesys Main Event on Friday, this Deck submission deadline still applies."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the registration deadline of 10:00 AM ECT on Friday, October 2, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the event schedule for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": ["A: The event schedule for the Advanced Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["* Duelists that are competing in both Genesys and Advanced may also check in for Advanced on Thursday, October 1. Advanced Deck Lists must be submitted to check in but can still beupdated and resubmitted up until the Advanced Deck List deadline of 10:00 AM ECT on Friday, October 2, 2026."]
+    },
+    {
+      "t": "p",
+      "r": ["** Alternate On-Site Check-In is only for Duelists who email the event contact to arrange it if they are unable to arrive at the venue by 6:00 PM ECT on Friday October 2, 2026. Duelists MUST email battletower.ec@gmail.com no later than 10:00 AM ECT on Friday, October 2, 2026 to secure this Alternate Check-In***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I check in for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Pre-registered Duelists just need to arrive on-site at the venue between 12:00 PM and 6:00 PM ECT on Friday, October 2, and follow the signs to check in and confirm their seat in the YCS. At this time, Duelists will be asked to pay $24.00 USD to receive four (4) booster packs once they are confirmed at check in."]
+    },
+    {
+      "t": "p",
+      "r": ["If you are not able to check in on Friday, October 2 prior to 6:00 PM due to travel or other issues, you will need to contact the Tournament Organizer at Tournament Organizer at battletower.ec@gmail.com no later than 10:00 AM ECT on Friday, October 1 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "p",
+      "r": ["If you are also competing in the Genesys Main Event, you can check in for both during the Genesys Main Event check in on Thursday, October 1. Please see ",{"b":"Genesys Main Event Information"}," for details."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Advanced Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": ["*In addition to the other prizes for 1st place, the winner will receive complimentary travel and accommodation for the next WCQ in their territory (North and Latin America only)."]
+    },
+    {
+      "t": "p",
+      "r": ["** Not all Yu-Gi-Oh! Cards can be made into Giant Cards see https://www.yugioh-card.com/en/events/faq/event_prizing/ for details."]
+    },
+    {
+      "t": "p",
+      "r": ["*** The YCS Prize Card Pack will be available starting at the 1st Round of Swiss on Day 2 based on standings announced at the end of Day 1. Duelists may pick up their packs at the main stage from the start of the 1st Round of Swiss on Day 2 up until the start of Top 8."]
+    },
+    {
+      "t": "p",
+      "r": ["The Ultra Rare YCS Prize Card and Super Rare YCS Prize Card will be awarded after Final Swiss Standings are determined, prior to the Top 8 cut. Duelists must still be enrolled in the tournament at the end of the final Round of Swiss and ranked in the Top 16 or Top 32 respectively to receive these Prize Cards."]
+    },
+    {
+      "t": "p",
+      "r": ["▶ ",{"b":"Main Event Prizing Images are here"},"!"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Main Event Prizing Images"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Trophy"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Messenger Bag"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"ROG Xbox Ally 16 GB RAM 512GB SSD"}," (color may vary)"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Sleeves"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Metal Dice Set – 1"},{"s":"st "},{"b":"Place"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Metal Dice Set"}," (color will vary)"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Game Mat"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"Place Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"2"},{"s":"nd "},{"b":"to 4"},{"s":"th "},{"b":"Place Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Top 16 Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Top 32 Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Day 2 Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"After Advanced Swiss Rounds Giant Card"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"After Genesys Swiss Rounds Giant Card"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Travel"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the closest airport for this YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Nearest Airport(s):"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What’s the best way to get to the tournament from the airports?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The venue is located less than three kilometers away from the airport. The most direct way to leave the airport is via taxi. A taxi from the airport to the venue can cost you between $8 – $10 USD."]
+    },
+    {
+      "t": "p",
+      "r": ["Uber and other ride share apps are also available in Guayaquil and the ride to the venue can cost from $3-$7 USD."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Are there any nearby Hotels?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The event itself will be held at a hotel, so you can inquire whether there is any availability for immediate access to the venue."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Hilton Colon Guayaquil"},"\nhttps://www.hilton.com/en/hotels/gyehihf-hilton-colon-guayaquil"]
+    },
+    {
+      "t": "p",
+      "r": ["Other Hotels in the Area:"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Wyndham Garden Guayaquil:"},"\nWyndham Garden Guayaquil – Guest Reservations"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Hotel Livingston Inn:"},"\nhttps://hotels.cloudbeds.com/reservation/9yURpJ#checkin=2024-10-15&checkout=2024-10-16"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Hotel MC Suites:"},"\nhttps://www.mcsuites.com.ec"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Infectious Diseases"}]
+    },
+    {
+      "t": "p",
+      "r": ["Konami Digital Entertainment, Inc. (KDE-US) strongly encourages, but does not require, all attendees to be fully vaccinated against infectious diseases and to wear a mask. However, KDE-US reserves the right to implement a mandatory mask and/or vaccine requirement for any event on short notice, if deemed necessary. If this event does require attendees to wear a mask, KDE-US will make all available efforts to notify all attendees."]
+    },
+    {
+      "t": "p",
+      "r": ["Any attendee who has or develops symptoms consistent with any infectious disease, regardless of vaccination status or other measures taken, should refrain from attending this event. If symptoms develop during this event, attendees should immediately notify event staff, withdraw from this event and leave the venue. If event staff observe symptoms consistent with any infectious disease, they may direct impacted individuals to leave the venue. This can include the symptomatic individual and those who were in close proximity with such individuals for extended periods of time."]
+    },
+    {
+      "t": "p",
+      "r": ["By attending this event in person, all attendees understand and acknowledge that they risk exposure to and contraction of potentially dangerous diseases and viruses, including the coronavirus disease (COVID-19), severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), and any other diseases or viruses not listed, while traveling to, from, and during the event. By attending this event, all attendees agree to knowingly and freely assume all such risks and enter the venue at their own risk. KDE-US makes no representations that it has taken any safety precautions that relate to infectious diseases or exposure, and even if KDE-US did proactively take preventative measures, KDE-US has made no representation that those measures will in any way reduce or prevent the risks associated with exposure. Attendees release KDE-US, its employees and representatives, and all persons involved WITH RESPECT TO ANY AND ALL ILLNESS, DISABILITY, DEATH, or loss or damage to person or property, to the fullest extent permitted by law. BY ATTENDING IN THIS EVENT, ATTENDEES ARE DEEMED TO HAVE GIVEN A FULL RELEASE OF LIABILITY TO KDE-US TO THE FULLEST EXTENT PERMITTED BY LAW."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "p",
+      "r": [{"i":"How did you like this content?"}]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/important-notice-for-the-premiere-events-this-weekend/": [
+    {
+      "t": "p",
+      "r": ["Attention Duelists,"]
+    },
+    {
+      "t": "p",
+      "r": ["Due to production issues, while all stores should have the Yu-Gi-Oh! TRADING CARD GAME ",{"i":"Beyond the Brave"}," booster packs, some stores will not receive the Premiere! Event Kit, containing the promotional items."]
+    },
+    {
+      "t": "p",
+      "r": ["If you are a participant, or a winner, you will be able to collect the promotional items from the stores later this week."]
+    },
+    {
+      "t": "p",
+      "r": ["Please note that some stores may elect to reschedule the Premiere! Event to host a Release Celebration event instead. Please check with your store before attending."]
+    },
+    {
+      "t": "p",
+      "r": ["We sincerely apologize for this delay and appreciate your understanding in advance."]
+    }
+  ]
+}

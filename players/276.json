@@ -540,7 +540,7 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Aaron Munoz": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Joseph Anthony Mercado Jr.": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
@@ -548,11 +548,11 @@
   "Brandon Rodriguez": {
     "as": "Brandon D. Rodriguez"
   },
-  "Kristoffher G.": {
-    "as": "Kristoffher Shawn Laoyan Tinoy Gallardo"
-  },
   "Johnny N.": {
     "as": "Johnny Nguyen"
+  },
+  "Kristoffher G.": {
+    "as": "Kristoffher Shawn Laoyan Tinoy Gallardo"
   },
   "John F.": {
     "as": "John William Fielding"

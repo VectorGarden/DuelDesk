@@ -587,7 +587,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Jimmy Daniel Giler Mendoza": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Caleb Allgeyer Soriano": [
     {"e":"2026-ycs-houston","f":"Advanced"}
@@ -595,11 +595,11 @@
   "Trevor Joe Kelty": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Jonathan O.": {
-    "as": "Jonathan Gaetano Orlando"
-  },
   "Charles R.": {
     "as": "Charles Thomas Russel Roberts"
+  },
+  "Jonathan O.": {
+    "as": "Jonathan Gaetano Orlando"
   },
   "Marcus S.": {
     "as": "Marcus Jairo Siu"

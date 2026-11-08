@@ -546,13 +546,13 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Andres Ronaldo Ramirez": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Bryan Ivan Loor": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Jordan Villacis": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Brett Anthony Blakney": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
@@ -566,10 +566,10 @@
   "Ian E.": {
     "as": "Ian Gerald Engel"
   },
-  "Julien K.": {
-    "as": "Julien Leo Kehon"
-  },
   "Zach L.": {
     "as": "Zach Mason Levin"
+  },
+  "Julien K.": {
+    "as": "Julien Leo Kehon"
   }
 }

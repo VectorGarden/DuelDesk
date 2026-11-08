@@ -321,7 +321,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Alejandro de Jesus Aspiazu Yepez": [
     {"e":"2019-ycs-quito-ecuador"}
@@ -544,7 +544,7 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Sebastian David Hidrovo": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Raul Ortega": [
     {"e":"na-ygoc-2022"}

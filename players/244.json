@@ -383,7 +383,7 @@
   "Esteban Nicolas Rubio Baquerizo": [
     {"e":"2023-south-america-wcq"},
     {"e":"2025-south-america-wcq","cut":"Top 32"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Noah Brandon": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -443,7 +443,7 @@
   ],
   "Daniel Alberto Coello Garcia": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Mathis Magane": [
     {"e":"2024-ycs-indianapolis"},
@@ -531,10 +531,10 @@
   "Enrique Vega Mallorca": {
     "as": "Enrique L. Vega Mallorca"
   },
-  "Conrad S.": {
-    "as": "Conrad Lee Sanders"
-  },
   "Miles H.": {
     "as": "Miles Alan Hammons"
+  },
+  "Conrad S.": {
+    "as": "Conrad Lee Sanders"
   }
 }

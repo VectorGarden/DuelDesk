@@ -394,7 +394,7 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Manuel Ricardo Leal Romero": [
     {"e":"2022-ycs-bogota-colombia"},
@@ -560,7 +560,7 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Cristhian David Espin Cevallos": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Trace Paul Cowan": [
     {"e":"2026-ycs-houston","f":"Genesys"}

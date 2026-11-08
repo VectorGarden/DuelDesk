@@ -522,7 +522,7 @@
   "Cesar Alexander Gonzalez Ayovi": [
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Elijah Thomas Edward Clark": [
     {"e":"2025-02-ycs-orlando"},
@@ -594,10 +594,10 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Jefferson Enrique Chile Soto": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Jose Maximiliano Suarez Alvarado": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Olivia Rose Boleman Nelson": [
     {"e":"2026-ycs-orlando","f":"Advanced"},

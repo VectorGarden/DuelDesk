@@ -457,8 +457,8 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2024-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Juan Sebastian Lopez Ariza": [
     {"e":"2022-ycs-bogota-colombia"}
@@ -660,7 +660,7 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"}
   ],
   "Elvis Enrique Marin Cordova": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Joaquin Roberto Cardenas Tassano": [
     {"e":"ycs-lima-peru-2023"}
@@ -668,16 +668,16 @@
   "Cielo Alban Merino": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Nicolas C.": {
-    "as": "Nicolas Fiore Colella"
-  },
   "Raymond G.": {
     "as": "Raymond Ignacio Gonzales"
   },
-  "Xavier R.": {
-    "as": "Xavier James Robinson"
+  "Nicolas C.": {
+    "as": "Nicolas Fiore Colella"
   },
   "Yandi R.": {
     "as": "Yandi Sebastian Rodriguez Rios"
+  },
+  "Xavier R.": {
+    "as": "Xavier James Robinson"
   }
 }

@@ -348,7 +348,7 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2024-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Daniel Palacios": [
     {"e":"2022-11-ycs-pasadena"},
@@ -378,7 +378,7 @@
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-medellin-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Kevin Alexander Vasquez Huera": [
     {"e":"2022-team-ycs-quito"}
@@ -599,7 +599,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Anthonny Bryan Del Hierro Flores": [
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"}
   ],
   "Walkleir De Souza Ferreira": [
@@ -617,19 +617,19 @@
   "Lenon M.": {
     "as": "Lenon De Miranda"
   },
-  "Howard D.": {
-    "as": "Howard Clayton Davis"
-  },
   "Jomar O.": {
     "as": "Jomar Octaviani"
   },
-  "Dallen H.": {
-    "as": "Dallen Dewayne Harrell"
+  "Howard D.": {
+    "as": "Howard Clayton Davis"
+  },
+  "Sunny C.": {
+    "as": "Sunny Hau Chau"
   },
   "Michael D.": {
     "as": "Michael James Dorn"
   },
-  "Sunny C.": {
-    "as": "Sunny Hau Chau"
+  "Dallen H.": {
+    "as": "Dallen Dewayne Harrell"
   }
 }

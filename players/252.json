@@ -647,7 +647,7 @@
   ],
   "Jose Guillermo Diaz Penafiel": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Blake Lee Jerome Olson": [
     {"e":"2024-ycs-indianapolis"}
@@ -701,10 +701,10 @@
   "James Wolff": {
     "as": "James R. Wolff"
   },
-  "Shane K.": {
-    "as": "Shane Ketchum"
-  },
   "Ramon F.": {
     "as": "Ramon Benito Flores"
+  },
+  "Shane K.": {
+    "as": "Shane Ketchum"
   }
 }

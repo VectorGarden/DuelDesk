@@ -439,7 +439,7 @@
   ],
   "Jordy Adrian Hernandez Paez": [
     {"e":"2023-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Ian Scott Kerr": [
     {"e":"2023-team-ycs-las-vegas"}
@@ -581,8 +581,11 @@
   "Paulo D.": {
     "as": "Paulo Roberto De Carvalho Duque"
   },
-  "Farukh B.": {
-    "as": "Farukh Ali Bhatti"
+  "Andy B.": {
+    "as": "Andy Bazzi"
+  },
+  "Arvin B.": {
+    "as": "Arvin Bhattacharya"
   },
   "Marcus F.": {
     "as": "Marcus Shaheed Fontice"
@@ -590,11 +593,8 @@
   "Yaozhong L.": {
     "as": "Yaozhong Liu"
   },
-  "Andy B.": {
-    "as": "Andy Bazzi"
-  },
-  "Arvin B.": {
-    "as": "Arvin Bhattacharya"
+  "Farukh B.": {
+    "as": "Farukh Ali Bhatti"
   },
   "Derek N.": {
     "as": "Derek Nguyen"

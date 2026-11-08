@@ -352,8 +352,8 @@
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys","won":true,"cut":"Final"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys","won":true,"cut":"Final"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 16"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"},
@@ -513,7 +513,7 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Byron Sebastian Tulcanazo Hernandez": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Miguel Adolfo Torrez Daura": [
     {"e":"wcq-2016-mexico","cut":"Top 64"}

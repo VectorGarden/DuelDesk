@@ -262,7 +262,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026","cut":"Top 8"}
   ],
@@ -483,7 +483,7 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Steve Kevin Hidalgo": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Andre Cao Chau": [
     {"e":"2026-ycs-houston","f":"Advanced"},

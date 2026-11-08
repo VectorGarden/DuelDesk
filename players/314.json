@@ -685,7 +685,7 @@
   "Miguel Hernando Bulla Bolivar": [
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Lucas Nahuel Andueza": [
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
@@ -707,7 +707,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Daniel Enrique Letamendi Hinojosa": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Yunliang Cao": [
     {"e":"2026-ycs-houston","f":"Advanced"}
@@ -725,11 +725,11 @@
   "Quang H.": {
     "as": "Quang Nhat Hoang"
   },
-  "Derrick F.": {
-    "as": "Derrick Lee Fox"
-  },
   "Johnathon T.": {
     "as": "Johnathon Keith Taylor"
+  },
+  "Derrick F.": {
+    "as": "Derrick Lee Fox"
   },
   "Gonzalo L.": {
     "as": "Gonzalo Magallon Lopez"

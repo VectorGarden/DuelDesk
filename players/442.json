@@ -614,8 +614,8 @@
   ],
   "Ronald Cruz Medina": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Scott Vanderkooi": [
     {"e":"2024-ycs-indianapolis"}
@@ -694,13 +694,13 @@
   "Alexandre A.": {
     "as": "Alexandre Alonso"
   },
+  "Josh V.": {
+    "as": "Josh Vicente Villaflor"
+  },
   "Elizabeth C.": {
     "as": "Elizabeth Chantel Childers"
   },
   "Jayming M.": {
     "as": "Jayming Moua"
-  },
-  "Josh V.": {
-    "as": "Josh Vicente Villaflor"
   }
 }

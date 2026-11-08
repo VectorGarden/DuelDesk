@@ -331,7 +331,7 @@
   "Luis Gustavo Chavez Heredia": [
     {"e":"2022-ycs-bogota-colombia"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Tyler S. Harris": [
     {"e":"2022-ycs-charlotte"}
@@ -584,7 +584,7 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Angel Hernan Espinoza Paz": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "David Gabriel Fernandez": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
@@ -592,10 +592,10 @@
   "Ezequiel Leites": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Dustin L.": {
-    "as": "Dustin Leonhardt"
-  },
   "Eva P.": {
     "as": "Eva Jolene Padilla"
+  },
+  "Dustin L.": {
+    "as": "Dustin Leonhardt"
   }
 }

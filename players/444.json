@@ -630,7 +630,7 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Eduardo Andres Coello": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Isaac Allen Brown": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
@@ -647,10 +647,10 @@
   "Timothy C.": {
     "as": "Timothy Ty Cha"
   },
-  "Samson N.": {
-    "as": "Samson Nguyen"
-  },
   "Tobie P.": {
     "as": "Tobie John Pickell"
+  },
+  "Samson N.": {
+    "as": "Samson Nguyen"
   }
 }

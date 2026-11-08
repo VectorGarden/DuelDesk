@@ -332,7 +332,7 @@
     {"e":"2024-ycs-guayaquil-ecuador","cut":"Top 32"},
     {"e":"2025-south-america-wcq"},
     {"e":"2025-ycs-lima-peru"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Antonio TX Aguilar": [
     {"e":"2020-team-ycs-las-vegas"}
@@ -412,7 +412,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "The Cream Team": [
     {"e":"2023-team-ycs-las-vegas"}

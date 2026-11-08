@@ -568,7 +568,7 @@
     {"e":"2026-south-america-wcq"}
   ],
   "Aaron Andres Loor Anchundia": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Alexander Jose Rodriguez": [
     {"e":"2026-ycs-houston","f":"Advanced"}
@@ -588,10 +588,10 @@
   "Edward Benny Soto Aybar": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Hector O.": {
-    "as": "Hector Josue Orellana"
-  },
   "Andy G.": {
     "as": "Andy July Garcia"
+  },
+  "Hector O.": {
+    "as": "Hector Josue Orellana"
   }
 }

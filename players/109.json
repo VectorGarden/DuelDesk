@@ -429,7 +429,7 @@
   ],
   "Kenneth Ricardo Huertas Ormaza": [
     {"e":"2024-ycs-medellin-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Roberto Navarro Jr.": [
     {"e":"2024-ycs-raleigh"},
@@ -514,11 +514,11 @@
   "Blair Edward Flores": {
     "as": "Blair Edward G. Flores"
   },
-  "Scott A.": {
-    "as": "Scott Christian Adiconis"
-  },
   "Andrei A.": {
     "as": "Andrei Perez Ativo"
+  },
+  "Scott A.": {
+    "as": "Scott Christian Adiconis"
   },
   "Long V.": {
     "as": "Long Ngoc Vu"

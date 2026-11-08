@@ -448,7 +448,7 @@
     {"e":"2025-ycs-sao-paulo-brazil"},
     {"e":"2026-south-america-wcq","cut":"Final"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 8"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance","cut":"Final"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced","cut":"Final"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 32"},
     {"e":"remote-duel-ycs-january-2024","cut":"Top 32"},
     {"e":"remote-duel-ycs-january-2026"},
@@ -631,7 +631,7 @@
   ],
   "Kevin Marcelo Hernandez Maya": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Matthew Daniel Kerner": [
     {"e":"2024-ycs-indianapolis"}
@@ -738,10 +738,10 @@
   "Diego Alonso Pinto": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Ricardo Q.": {
-    "as": "Ricardo Quintanilla"
-  },
   "Corey B.": {
     "as": "Corey Joseph Bown"
+  },
+  "Ricardo Q.": {
+    "as": "Ricardo Quintanilla"
   }
 }

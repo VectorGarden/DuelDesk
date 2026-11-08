@@ -466,8 +466,8 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-south-america-genesys-championship","f":"Genesys","cut":"Final"},
     {"e":"2026-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"ycs-lima-peru-2023"}
@@ -671,7 +671,7 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys"}
   ],
   "Plinio Macklides Verdezoto Aguila": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Dayton Scott Shegog": [
     {"e":"2026-ycs-houston","f":"Advanced"}

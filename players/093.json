@@ -287,7 +287,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
   "Solomon Grand Skaulkicak": [
@@ -530,11 +530,11 @@
   "Landon Oliver": [
     {"e":"yu-gi-oh-tcg-world-championship-2024"}
   ],
-  "Tristan R.": {
-    "as": "Tristan James Reep"
-  },
   "Paul D.": {
     "as": "Paul Ivan Diaz"
+  },
+  "Tristan R.": {
+    "as": "Tristan James Reep"
   },
   "Bryson W.": {
     "as": "Bryson Roger Williams"

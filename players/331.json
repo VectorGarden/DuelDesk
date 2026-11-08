@@ -377,8 +377,8 @@
   "Luis Antonio Delgado Murillo": [
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Fabricio Bermudez": [
     {"e":"2022-team-ycs-quito"},
@@ -553,7 +553,7 @@
   ],
   "Joel Isaac Perez": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Michael Steven Sylvester": [
     {"e":"2024-ycs-indianapolis"}

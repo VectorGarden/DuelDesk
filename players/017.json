@@ -356,7 +356,7 @@
     {"e":"2025-south-america-wcq"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Alejandro Tayabas Castillo": [
     {"e":"2022-ycs-guadalajara-mexico"}
@@ -462,8 +462,8 @@
   ],
   "Ricardo David Salazar Secaira": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Justin Daniel Morgan": [
     {"e":"2024-ycs-raleigh"},
@@ -544,7 +544,7 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Anthony Javier Delgado": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Demetrius Terrell Woods": [
     {"e":"2026-ycs-orlando","f":"Advanced"},

@@ -508,7 +508,7 @@
   ],
   "Fabian Agustin Rebolledo Patino": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Zachary Dane Senter": [
     {"e":"2024-ycs-raleigh"}
@@ -602,7 +602,7 @@
     {"e":"2026-central-america-wcq"}
   ],
   "Milton Alfredo Teran": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "David Solomon Tamirat": [
     {"e":"2026-ycs-houston","f":"Advanced"}

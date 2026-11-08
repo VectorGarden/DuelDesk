@@ -316,7 +316,7 @@
     {"e":"2019-team-ycs-lima-peru"},
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2025-ycs-lima-peru"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"remote-duel-ycs-january-2024"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -363,7 +363,7 @@
     {"e":"2024-ycs-medellin-colombia"},
     {"e":"2025-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Joshua Adam CA Friedman": [
@@ -608,17 +608,17 @@
   "Rodrigo Calixto Santos": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Dustin B.": {
-    "as": "Dustin Michael Butcher"
+  "Zackery T.": {
+    "as": "Zackery Clyde Twork"
   },
   "Brandon D.": {
     "as": "Brandon Joseph Diez"
   },
+  "Dustin B.": {
+    "as": "Dustin Michael Butcher"
+  },
   "Marc L.": {
     "as": "Marc Andre LeBlond"
-  },
-  "Zackery T.": {
-    "as": "Zackery Clyde Twork"
   },
   "Matthew K.": {
     "as": "Matthew Geonwoo Kim"

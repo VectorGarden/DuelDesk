@@ -542,7 +542,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Martin Alfredo Salazar": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Alan Dominique Morelos": [
     {"e":"na-ygoc-2022"}
@@ -550,11 +550,11 @@
   "Yoshiki Saito": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Reece B.": {
-    "as": "Reece Joseph Bijou"
-  },
   "Siming Y.": {
     "as": "Siming Yang"
+  },
+  "Reece B.": {
+    "as": "Reece Joseph Bijou"
   },
   "Daryl R.": {
     "as": "Daryl Jimmy Reese"

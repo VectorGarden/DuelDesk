@@ -562,7 +562,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Aldo Alexander Mero Paredes": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Voulis Kyriakos Exezidis": [
     {"e":"2026-ycs-houston","f":"Advanced"}
@@ -576,19 +576,19 @@
   "Yuuki Shibata": [
     {"e":"yu-gi-oh-tcg-world-championship-2026","cut":"Top 8","deck":"Sky Striker"}
   ],
+  "Brian L.": {
+    "as": "Brian Patrick Lentini"
+  },
   "Blake R.": {
     "as": "Blake Andrew Root"
-  },
-  "Allen T.": {
-    "as": "Allen Tong"
   },
   "Alex Y.": {
     "as": "Alex Jordan Yeager"
   },
-  "Brian L.": {
-    "as": "Brian Patrick Lentini"
-  },
   "Angel S.": {
     "as": "Angel Manuel Sixto"
+  },
+  "Allen T.": {
+    "as": "Allen Tong"
   }
 }

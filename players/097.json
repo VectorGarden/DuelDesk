@@ -427,7 +427,7 @@
     {"e":"2019-ycs-quito-ecuador"},
     {"e":"2022-team-ycs-quito"},
     {"e":"2023-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Ethan James Meyers": [
     {"e":"2022-02-north-america-remote-duel-ycs"}
@@ -661,14 +661,14 @@
   "Kriss De la Cruz": {
     "as": "Kriss M. De la Cruz"
   },
-  "Evan P.": {
-    "as": "Evan Ponce"
+  "Duncan B.": {
+    "as": "Duncan Alexander Bruce"
   },
   "Mitchell M.": {
     "as": "Mitchell Ryan Martin"
   },
-  "Duncan B.": {
-    "as": "Duncan Alexander Bruce"
+  "Evan P.": {
+    "as": "Evan Ponce"
   },
   "Mavrick B.": {
     "as": "Mavrick Michael Bartle"

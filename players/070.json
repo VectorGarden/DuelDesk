@@ -368,7 +368,7 @@
   "Sebastian Hoyos": [
     {"e":"2019-uds-invitational-medellin-colombia"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Malcolm D. Lee": [
     {"e":"2019-ycs-chicago"}
@@ -437,7 +437,7 @@
   "Gabriel Antonio Puig Perez": [
     {"e":"2022-team-ycs-quito"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Joseph William Piacesi": [
     {"e":"2022-ycs-charlotte"}

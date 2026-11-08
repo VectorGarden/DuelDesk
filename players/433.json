@@ -408,7 +408,7 @@
   "Pedro Antonio Ruiz Mata": [
     {"e":"2022-team-ycs-quito"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Alan Gabriel Barron Rangel": [
     {"e":"2022-ycs-guadalajara-mexico"},
@@ -611,10 +611,10 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Christopher Brayan Rodriguez": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Alan Aldahir Ayala": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Maxwell Christion Gordon": [
     {"e":"2026-ycs-orlando","f":"Advanced"},
@@ -623,11 +623,11 @@
   "Matthew Adam Casiero": [
     {"e":"yu-gi-oh-world-championship-2016","deck":"Australia","cut":"Top 4"}
   ],
-  "Keaton S.": {
-    "as": "Keaton Lawrence Serna"
-  },
   "Julius W.": {
     "as": "Julius Wanjala Wandabwa"
+  },
+  "Keaton S.": {
+    "as": "Keaton Lawrence Serna"
   },
   "Nelson T.": {
     "as": "Nelson Tam"

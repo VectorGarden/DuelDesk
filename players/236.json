@@ -528,7 +528,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Luis Miguel GenoveseTinoco": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Victor Armando Valenzuela": [
     {"e":"na-ygoc-2022"}
@@ -539,11 +539,11 @@
   "Mitzy Ormeño Soria": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Emanuel R.": {
-    "as": "Emanuel Ramirez"
-  },
   "Ronald Y.": {
     "as": "Ronald Do Young"
+  },
+  "Emanuel R.": {
+    "as": "Emanuel Ramirez"
   },
   "Shaun M.": {
     "as": "Shaun Bruce McDonald"

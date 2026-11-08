@@ -286,13 +286,13 @@
     {"e":"2024-ycs-medellin-colombia","cut":"Top 32"},
     {"e":"2025-south-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-lima-peru"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Maglio Vicente Cusme Mejia": [
     {"e":"2019-ycs-quito-ecuador"},
     {"e":"2024-south-america-wcq"},
     {"e":"2025-south-america-wcq"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Tadeo Jose Noboa Factos": [
     {"e":"2019-ycs-quito-ecuador"}
@@ -617,16 +617,16 @@
   "Seigo Enokizono": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Blake T.": {
-    "as": "Blake Austin Taylor"
-  },
   "Dablessin W.": {
     "as": "Dablessin Jaquise Wilson"
   },
-  "William E.": {
-    "as": "William Joseph Melgoza Espinosa"
+  "Blake T.": {
+    "as": "Blake Austin Taylor"
   },
   "Artan L.": {
     "as": "Artan Lajqi"
+  },
+  "William E.": {
+    "as": "William Joseph Melgoza Espinosa"
   }
 }

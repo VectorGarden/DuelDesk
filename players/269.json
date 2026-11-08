@@ -43,7 +43,7 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "William H. L. Wong": [
     {"e":"2013-yu-gi-oh-championship-series-san-diego-california"}
@@ -609,7 +609,7 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Bryan Edmundo Rubio Chang": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Joshua David Moreno": [
     {"e":"2026-ycs-houston","f":"Advanced"},
@@ -627,20 +627,20 @@
   "Saulo S.": {
     "as": "Saulo Rangel dos Santos Silva"
   },
-  "Inderpal D.": {
-    "as": "Inderpal Singh Dhaliwal"
+  "Christopher D.": {
+    "as": "Christopher Chen Ning Duong"
   },
   "Cristian G.": {
     "as": "Cristian Mitchell Gutierrez"
   },
-  "Christopher D.": {
-    "as": "Christopher Chen Ning Duong"
-  },
-  "Martin G.": {
-    "as": "Martin Marvyn Guillen"
+  "Inderpal D.": {
+    "as": "Inderpal Singh Dhaliwal"
   },
   "Joshua S.": {
     "as": "Joshua Jordan Smith"
+  },
+  "Martin G.": {
+    "as": "Martin Marvyn Guillen"
   },
   "Cody B.": {
     "as": "Cody Cameron Bartz"

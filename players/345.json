@@ -414,7 +414,7 @@
     {"e":"2022-ycs-bogota-colombia"},
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Frederick Nicolas Moreno Hidrobo": [
     {"e":"2022-ycs-bogota-colombia"},
@@ -636,10 +636,10 @@
   "Zhen Pei Teoh": [
     {"e":"yu-gi-oh-world-championship-2013"}
   ],
-  "Derrick L.": {
-    "as": "Derrick Khai Le"
-  },
   "Samuel B.": {
     "as": "Samuel Scott Blair"
+  },
+  "Derrick L.": {
+    "as": "Derrick Khai Le"
   }
 }

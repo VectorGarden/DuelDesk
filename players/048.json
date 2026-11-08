@@ -323,7 +323,7 @@
   "Andres Fernando Llerena Onate": [
     {"e":"2019-ycs-quito-ecuador"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Martin Issac Velazquez-Montoya": [
     {"e":"2022-11-ycs-pasadena"}
@@ -558,10 +558,10 @@
   "Jayden C.": {
     "as": "Jayden Ray Carvalho"
   },
-  "Victor B.": {
-    "as": "Victor Manuel Barragan"
-  },
   "Azazel A.": {
     "as": "Azazel Valentino Anzaldo"
+  },
+  "Victor B.": {
+    "as": "Victor Manuel Barragan"
   }
 }

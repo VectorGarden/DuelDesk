@@ -648,16 +648,16 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "John Jeremias Montoya Espana": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Kevin Enrrique Rubio": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Isacc Z.": {
-    "as": "Isacc Aaron Zepeda"
-  },
   "Nicolo M.": {
     "as": "Nicolo Matela Magallanes"
+  },
+  "Isacc Z.": {
+    "as": "Isacc Aaron Zepeda"
   },
   "Mohammad S.": {
     "as": "Mohammad Ishaq Sumaira"

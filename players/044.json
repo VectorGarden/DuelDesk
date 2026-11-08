@@ -633,7 +633,7 @@
   ],
   "Jordy Josue Merino Cedeno": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Samuel Gonzalez Gonzalez": [
     {"e":"2024-ycs-indianapolis"},
@@ -706,14 +706,14 @@
   "Luis Alberto Arce Llantoy": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Ryan V.": {
-    "as": "Ryan Douglas Villwock"
-  },
   "Julian V.": {
     "as": "Julian Edwardo Valero"
   },
   "Uhan C.": {
     "as": "Uhan Nazirtregeon Clarke"
+  },
+  "Ryan V.": {
+    "as": "Ryan Douglas Villwock"
   },
   "Bryce S.": {
     "as": "Bryce Thomas Sharp"

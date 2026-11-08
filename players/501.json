@@ -309,7 +309,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"remote-duel-ycs-january-2024"}
   ],
@@ -586,17 +586,17 @@
   "Christian Villaneda": [
     {"e":"na-ygoc-2022"}
   ],
-  "Aleksander R.": {
-    "as": "Aleksander Roytburd"
-  },
   "Jesus F.": {
     "as": "Jesus Reyes July Flores"
   },
-  "Alberto A.": {
-    "as": "Alberto Juaquin Almanza"
+  "Aleksander R.": {
+    "as": "Aleksander Roytburd"
   },
   "Aiden S.": {
     "as": "Aiden Christopher Springer"
+  },
+  "Alberto A.": {
+    "as": "Alberto Juaquin Almanza"
   },
   "Cameron T.": {
     "as": "Cameron DeWayne Trice"

@@ -469,7 +469,7 @@
     {"e":"2023-south-america-wcq"},
     {"e":"2024-south-america-wcq"},
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Luis Alejandro Lizarraga Miranda": [
     {"e":"2020-team-ycs-las-vegas"},
@@ -630,7 +630,7 @@
   ],
   "Nelson Ivan Ortega Cortez": [
     {"e":"2024-ycs-guayaquil-ecuador"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Damien Colt Hartke": [
     {"e":"2024-ycs-indianapolis"},
@@ -732,10 +732,10 @@
   "Eriq Joshua Hopkins": {
     "as": "Eriq Joshua W. Hopkins"
   },
-  "Taiel F.": {
-    "as": "Taiel Fernandez"
-  },
   "Arthur B.": {
     "as": "Arthur Pereira da Silva Bermann"
+  },
+  "Taiel F.": {
+    "as": "Taiel Fernandez"
   }
 }

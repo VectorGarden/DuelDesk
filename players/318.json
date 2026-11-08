@@ -487,7 +487,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"}
   ],
   "Jose Vicente Palacios Hurtado": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Alain J. Romero": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
@@ -502,11 +502,11 @@
   "Christian Danilo Penagos Rojas": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Philip D.": {
-    "as": "Philip Win Duong"
-  },
   "Erick G.": {
     "as": "Erick Serrano Gutierrez"
+  },
+  "Philip D.": {
+    "as": "Philip Win Duong"
   },
   "Darea Y.": {
     "as": "Darea Timmy You"

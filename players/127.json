@@ -540,10 +540,10 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Julian Andres Montoya": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Carlos Luis Moreno Alava": [
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Juan Alonso Garcia Olivarez": [
     {"e":"wcq-2016-mexico"}

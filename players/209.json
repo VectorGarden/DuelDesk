@@ -126,7 +126,7 @@
     {"e":"2025-south-america-wcq","cut":"Top 64"},
     {"e":"2025-ycs-lima-peru"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
     {"e":"ycs-lima-peru-2023"}
   ],
   "Salvador Noe Villegas Olvera": [
@@ -317,7 +317,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"ycs-lima-peru-2023"}
   ],

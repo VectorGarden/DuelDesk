@@ -530,13 +530,13 @@
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
   "Christopher Miller Reinoso Tomala": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Samuel isaias Rodriguez Norona": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Arodi Vera": [
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
   "Rudra Vinayak Vidyasagar": [
     {"e":"2026-ycs-houston","f":"Advanced"},

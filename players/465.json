@@ -659,7 +659,7 @@
     {"e":"2026-ycs-cartagena-colombia"}
   ],
   "Zeno Augusto Neto": [
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Larry Paul Michael": [
     {"e":"2026-ycs-houston","f":"Advanced"}
@@ -670,20 +670,20 @@
   "Juan Carlos Jesus Jramillo Yupanqui": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Yucheng L.": {
-    "as": "Yucheng Li"
-  },
-  "Wyatt B.": {
-    "as": "Wyatt Leland Brannock"
-  },
-  "Vivek S.": {
-    "as": "Vivek Naresh Sreenivasan"
-  },
   "Kyle N.": {
     "as": "Kyle Aidan Nance"
   },
   "Brandon F.": {
     "as": "Brandon Bryan Ferrell"
+  },
+  "Vivek S.": {
+    "as": "Vivek Naresh Sreenivasan"
+  },
+  "Wyatt B.": {
+    "as": "Wyatt Leland Brannock"
+  },
+  "Yucheng L.": {
+    "as": "Yucheng Li"
   },
   "Max C.": {
     "as": "Max Cardenas"

@@ -98,7 +98,7 @@
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Advanced"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"}
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"}
   ],
   "Natalia Montero": [
     {"e":"201504-bogota-d-c-colombia"}
@@ -629,11 +629,11 @@
   "Tej Amin": {
     "as": "Tej C. Amin"
   },
-  "Daniel L.": {
-    "as": "Daniel Frumer Levin"
-  },
   "Seth K.": {
     "as": "Seth Lee King"
+  },
+  "Daniel L.": {
+    "as": "Daniel Frumer Levin"
   },
   "Maxim G.": {
     "as": "Maxim Guillotte"

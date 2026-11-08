@@ -412,8 +412,8 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-08-quebec","f":"Genesys"},
     {"e":"2026-ycs-cartagena-colombia"},
-    {"e":"2026-ycs-guayaquil-ecuador-advance"},
-    {"e":"2026-ycs-guayaquil-ecuador-genesys","f":"Genesys"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
+    {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
@@ -573,13 +573,13 @@
   "Daniel Saleme Vila": {
     "as": "Daniel I Saleme Vila"
   },
-  "Stephen M.": {
-    "as": "Stephen Neil Muldoon Marquez"
+  "Bradlly K.": {
+    "as": "Bradlly James Keierleber"
   },
   "Matthew M.": {
     "as": "Matthew Mace McKinney"
   },
-  "Bradlly K.": {
-    "as": "Bradlly James Keierleber"
+  "Stephen M.": {
+    "as": "Stephen Neil Muldoon Marquez"
   }
 }
