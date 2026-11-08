@@ -17831,7 +17831,7 @@
           "id": "Top8",
           "label": "Top 8",
           "phase": "Top cut",
-          "state": "live",
+          "state": "done",
           "order": 160,
           "tables": 4,
           "posted": "12:29",
@@ -17845,6 +17845,39 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-8-pairings-with-deck-types-advanced/"
+        },
+        {
+          "id": "Top4",
+          "label": "Top 4",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 161,
+          "tables": 2,
+          "posted": "14:31",
+          "standingsAfter": 14,
+          "pairings": [
+            {"table":1,"a":"Logan Michael Kite","aRec":{"wins":9,"losses":6,"draws":0,"confidence":"derived"},"aDeck":"Angelechy","b":"Brandon James Hagen","bRec":{"wins":8,"losses":7,"draws":0,"confidence":"derived"},"bDeck":"Angelechy"},
+            {"table":2,"a":"Joseph Thomas Bellafiore","aRec":{"wins":8,"losses":7,"draws":0,"confidence":"derived"},"aDeck":"Elfnote Ars Magna","b":"Patrick Jefferson Hoban","bRec":{"wins":10,"losses":5,"draws":0,"confidence":"derived"},"bDeck":"Power Patron Elfnote Ars Magna"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-4-pairings-with-deck-types-advanced/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 164,
+          "tables": 1,
+          "posted": "15:32",
+          "standingsAfter": 14,
+          "pairings": [
+            {"table":1,"a":"Joseph Thomas Bellafiore","aRec":{"wins":9,"losses":7,"draws":0,"confidence":"derived"},"aDeck":"Elfnote Ars Magna","b":"Logan Michael Kite","bRec":{"wins":10,"losses":6,"draws":0,"confidence":"derived"},"bDeck":"Angelechy"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-final-pairing-with-deck-types-advanced/"
         }
       ]
     },
@@ -22981,10 +23014,10 @@
           "id": "Top8",
           "label": "Top 8",
           "phase": "Top cut",
-          "state": "live",
+          "state": "done",
           "order": 160,
           "tables": 4,
-          "posted": "11:36",
+          "posted": "13:06",
           "standingsAfter": 12,
           "pairings": [
             {"table":1001,"a":"Jesse Dean Kotton","aRec":{"wins":8,"losses":4,"draws":0,"confidence":"derived"},"aDeck":"Magistus Fairy Tail","b":"Paulo Roberto Goncalves da Silva","bRec":{"wins":7,"losses":5,"draws":0,"confidence":"derived"},"bDeck":"Assault Mode Snake-Eye Elfnote"},
@@ -22995,6 +23028,39 @@
           "standings": [],
           "features": [],
           "source": "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-8-pairings-with-deck-types-genesys/"
+        },
+        {
+          "id": "Top4",
+          "label": "Top 4",
+          "phase": "Top cut",
+          "state": "done",
+          "order": 161,
+          "tables": 2,
+          "posted": "14:12",
+          "standingsAfter": 12,
+          "pairings": [
+            {"table":1001,"a":"Jesse Dean Kotton","aRec":{"wins":9,"losses":4,"draws":0,"confidence":"derived"},"aDeck":"Magistus Fairy Tail","b":"Wilfredo Michael Flores","bRec":{"wins":8,"losses":5,"draws":0,"confidence":"derived"},"bDeck":"Ashtra Invoked Blitzclique"},
+            {"table":1002,"a":"Timothy Kenneth Michael Dahl","aRec":{"wins":8,"losses":5,"draws":0,"confidence":"derived"},"aDeck":"Ashtra Blizclique","b":"Khari Isiaih Goosby","bRec":{"wins":8,"losses":5,"draws":0,"confidence":"derived"},"bDeck":"Magistus Fairy Tail"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-4-pairings-with-deck-types-genesys/"
+        },
+        {
+          "id": "Final",
+          "label": "Final",
+          "phase": "Top cut",
+          "state": "live",
+          "order": 164,
+          "tables": 1,
+          "posted": "14:13",
+          "standingsAfter": 12,
+          "pairings": [
+            {"table":1001,"a":"Jesse Dean Kotton","aRec":{"wins":10,"losses":4,"draws":0,"confidence":"derived"},"aDeck":"Magistus Fairy Tail","b":"Timothy Kenneth Michael Dahl","bRec":{"wins":9,"losses":5,"draws":0,"confidence":"derived"},"bDeck":"Ashtra Blizclique"}
+          ],
+          "standings": [],
+          "features": [],
+          "source": "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-final-pairing-with-deck-types-genesys/"
         }
       ]
     }

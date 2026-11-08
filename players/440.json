@@ -298,7 +298,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys","cut":"Top 8","deck":"(No decklist)"}
+    {"e":"2026-ycs-orlando","f":"Genesys","cut":"Final","deck":"(No decklist)"}
   ],
   "Hameed Kamau Paul": [
     {"e":"2023-05-ycs-philadelphia"}
@@ -455,10 +455,10 @@
   "Gerald Alexis Castaneda Lozano": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Issac P.": {
-    "as": "Issac Javier Peralez"
-  },
   "Travis L.": {
     "as": "Travis James Ludd"
+  },
+  "Issac P.": {
+    "as": "Issac Javier Peralez"
   }
 }

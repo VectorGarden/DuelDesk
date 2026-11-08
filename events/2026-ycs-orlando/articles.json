@@ -531,6 +531,26 @@
       "r": ["Congratulations to our Dragon Duelists! We’ll be seeing Simon face off with Grant in the YCS Orlando Dragon Duel Championship later today!"]
     }
   ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-genesys-top-4/": [
+    {
+      "t": "p",
+      "r": ["Say hello to our Top 4 Genesys Duelists!"]
+    },
+    {
+      "t": "p",
+      "r": ["From left to right, we have ",{"who":"Timothy Kenneth Michael Dahl","t":"Timothy Dahl"},", ",{"who":"Khari Isiaih Goosby","t":"Khari Goosby"},", ",{"who":"Jesse Dean Kotton","t":"Jesse Kotton"},", and ",{"who":"Wilfredo Michael Flores","t":"Wilfredo Flores"},"! Soon, one of these Duelists will be our YCS Orlando Genesys Champion!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-1st-place-after-swiss-duelist-advanced/": [
+    {
+      "t": "p",
+      "r": ["At YCS events, 1st Place Duelist after the Swiss rounds receives an oversized version of the current YCS prize card!"]
+    },
+    {
+      "t": "p",
+      "r": ["It was ",{"who":"Rico Carlos Eichelberger","t":"Rico Carlos Eichelberger"}," who claimed the oversized ",{"b":"Black Luster Soldier – Envoy of the Beginning"},"! He finished with a phenomenal 13-1 record, landing ahead of 1,416 other Duelists!"]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-first-timers-in-orlando/": [
     {
       "t": "p",

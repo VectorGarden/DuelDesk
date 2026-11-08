@@ -78,7 +78,7 @@
     {"e":"2026-team-ycs-la-paz-bolivia","won":true,"cut":"Final"},
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Advanced","cut":"Top 8","deck":"Power Patron Elfnote Ars Magna"},
+    {"e":"2026-ycs-orlando","f":"Advanced","cut":"Top 4","deck":"Power Patron Elfnote Ars Magna"},
     {"e":"na-ygoc-2022"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 32"},
     {"e":"ycs-lima-peru-2023"},
@@ -780,11 +780,11 @@
   "Luahn De Souza Pereira": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Kelvin Y.": {
-    "as": "Kelvin Ye"
-  },
   "Ariel D.": {
     "as": "Ariel Steven Davis"
+  },
+  "Kelvin Y.": {
+    "as": "Kelvin Ye"
   },
   "Dylan I.": {
     "as": "Dylan Nasem Issak"

@@ -165,7 +165,7 @@
     {"e":"2026-02-300th-na","f":"Advanced"},
     {"e":"2026-05-ycs-columbus","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
-    {"e":"2026-ycs-orlando","f":"Advanced","cut":"Top 8","deck":"Elfnote Ars Magna"},
+    {"e":"2026-ycs-orlando","f":"Advanced","cut":"Final","deck":"Elfnote Ars Magna"},
     {"e":"na-ygoc-2022"}
   ],
   "Joseph F. Rose": [
@@ -635,10 +635,10 @@
   "Melissa Michelle Rivas Montoya": [
     {"e":"uds-2016-elsalvador"}
   ],
-  "Korbin A.": {
-    "as": "Korbin Taylor Alexis"
-  },
   "Kevin A.": {
     "as": "Kevin Anthony Avalos"
+  },
+  "Korbin A.": {
+    "as": "Korbin Taylor Alexis"
   }
 }

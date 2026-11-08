@@ -444,7 +444,7 @@
     {"e":"2026-north-america-genesys-championship","f":"Genesys","cut":"Top 8","deck":"Blitzclique"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys","cut":"Top 8","deck":"Ashtra Invoked Blitzclique"}
+    {"e":"2026-ycs-orlando","f":"Genesys","cut":"Top 4","deck":"Ashtra Invoked Blitzclique"}
   ],
   "Raymond Maceda Lopez": [
     {"e":"2023-north-america-wcq"},
@@ -613,10 +613,10 @@
   "David Tarazona": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
-  "Hongji Y.": {
-    "as": "Hongji Yang"
-  },
   "Traviis M.": {
     "as": "Traviis Terrell Massengale"
+  },
+  "Hongji Y.": {
+    "as": "Hongji Yang"
   }
 }
