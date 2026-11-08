@@ -6,29 +6,370 @@
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Nov 2026 16:15:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 20:29:47 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
     <item>
-      <title>YCS Orlando: YCS Houston: Standings After Round 6 (Genesys)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-6-genesys/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-6-genesys/</guid>
+      <title>YCS Orlando: Top 8 Pairings with Deck Types (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-8-pairings-with-deck-types-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-8-pairings-with-deck-types-advanced/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 20:29:47 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Sunday’s Top 4 Dragon Duelists!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-sundays-top-4-dragon-duelists/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-sundays-top-4-dragon-duelists/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Dragon Duel</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 20:25:16 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 14 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-14-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-14-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 20:16:01 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 13 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-13-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-13-advanced/</guid>
       <category>Standings</category>
       <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
+      <category domain="format">Advanced</category>
       <category domain="event">2026-ycs-orlando</category>
-      <pubDate>Sun, 08 Nov 2026 16:15:23 +0000</pubDate>
+      <pubDate>Sun, 08 Nov 2026 20:09:51 +0000</pubDate>
       <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Orlando: YCS Houston: Standings After Round 7 (Genesys)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-7-genesys/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-7-genesys/</guid>
+      <title>YCS Orlando: Round 14 Pairings (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-14-pairings-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-14-pairings-advanced/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 20:08:17 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 13 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-13-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-13-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 20:01:16 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top 8 Pairings with Deck Types (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-8-pairings-with-deck-types-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-8-pairings-with-deck-types-genesys/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 19:36:45 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Round 13 Pairings (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-13-pairings-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-13-pairings-advanced/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 19:25:15 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 12 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-12-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-12-advanced/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 19:23:51 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Round 12 Pairings (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-12-pairings-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-12-pairings-genesys/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 17:28:24 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 11 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-11-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-11-genesys/</guid>
       <category>Standings</category>
       <category domain="kind">standings</category>
       <category domain="format">Genesys</category>
       <category domain="event">2026-ycs-orlando</category>
-      <pubDate>Sun, 08 Nov 2026 16:15:17 +0000</pubDate>
+      <pubDate>Sun, 08 Nov 2026 17:21:46 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Round 9 Genesys Feature Match: Danny Street vs. Victor Suarez</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/round-9-genesys-feature-match-danny-street-vs-victor-suarez/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/round-9-genesys-feature-match-danny-street-vs-victor-suarez/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 17:14:19 +0000</pubDate>
+      <description>Feature match from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 12 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-12-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-12-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 17:09:40 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 11 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-11-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-11-genesys/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 17:05:27 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 6 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-6/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 17:00:42 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 7 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-7/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-7/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 17:00:03 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 8 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-8/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-8/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:59:51 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 10 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-10/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-10/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:59:30 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Round 12 Pairings (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-12-pairings-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-12-pairings-advanced/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:38:57 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 11 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-11-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-11-advanced/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:34:59 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 10 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-10-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-10-genesys/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:33:40 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Round 11 Pairings (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-11-pairings-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-11-pairings-genesys/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:21:20 +0000</pubDate>
+      <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 11 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-11-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-11-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:19:41 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 8 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-8-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-8-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:53 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 7 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-7-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-7-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:48 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 6 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-6-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-6-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:42 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Top Tables Update: Round 5 (Advanced)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-5-advanced/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-5-advanced/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:36 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 7 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-7-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-7-genesys/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:31 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 6 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-6-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-6-genesys/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:26 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 5 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-5-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-5-genesys/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:19 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 4 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-4-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-4-genesys/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:13 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 3 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-3-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-3-genesys/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:07 +0000</pubDate>
+      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Standings After Round 2 (Genesys)</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-2-genesys/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-standings-after-round-2-genesys/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 16:16:01 +0000</pubDate>
       <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
@@ -85,6 +426,16 @@
       <category domain="event">2026-ycs-orlando</category>
       <pubDate>Sun, 08 Nov 2026 15:44:56 +0000</pubDate>
       <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Day 3 at YCS Orlando</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/day-3-at-ycs-orlando/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/day-3-at-ycs-orlando/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 15:06:09 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>YCS Orlando: Round 10 Pairings (Advanced)</title>
@@ -151,6 +502,16 @@
       <category domain="event">2026-ycs-orlando</category>
       <pubDate>Sun, 08 Nov 2026 04:02:53 +0000</pubDate>
       <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: ’s Double Qualifying Duelists</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlandos-double-qualifying-duelists/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlandos-double-qualifying-duelists/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sun, 08 Nov 2026 03:53:04 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>YCS Orlando: Genesys Tech Update</title>
@@ -329,6 +690,17 @@
       <description>News from YCS Houston, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
+      <title>YCS Orlando: Advanced Round 3 Feature Match: Grant Zelinka vs. Allen Vera</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/advanced-round-3-feature-match-grant-zelinka-vs-allen-vera/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/advanced-round-3-feature-match-grant-zelinka-vs-allen-vera/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Advanced</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 21:29:47 +0000</pubDate>
+      <description>Feature match from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
       <title>YCS Orlando: Round 5 Pairings (Advanced)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-5-pairings-advanced/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-5-pairings-advanced/</guid>
@@ -395,6 +767,16 @@
       <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
+      <title>YCS Orlando: YCS First-Timers in Orlando!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-first-timers-in-orlando/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-first-timers-in-orlando/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 17:10:51 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
       <title>YCS Orlando: Round 2 Pairings (Advanced)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-2-pairings-advanced/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-2-pairings-advanced/</guid>
@@ -417,6 +799,16 @@
       <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
+      <title>YCS Orlando: The GIANT Cards of YCS Orlando!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/the-giant-cards-of-ycs-orlando/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/the-giant-cards-of-ycs-orlando/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 03:47:34 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
       <title>YCS Orlando: Prize Wall – Including New Items!</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-prize-wall-including-new-items/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-prize-wall-including-new-items/</guid>
@@ -425,6 +817,17 @@
       <category domain="event">2026-ycs-orlando</category>
       <pubDate>Sat, 07 Nov 2026 03:11:32 +0000</pubDate>
       <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Round 4 Genesys Feature Match: Nicolas Ramlal vs. Daniel Shogan</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/round-4-genesys-feature-match-nicolas-ramlal-vs-daniel-shogan/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/round-4-genesys-feature-match-nicolas-ramlal-vs-daniel-shogan/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Sat, 07 Nov 2026 01:06:58 +0000</pubDate>
+      <description>Feature match from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>YCS Orlando: Round 8 Pairings (Genesys)</title>
@@ -460,15 +863,24 @@
       <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Orlando: YCS Houston: Standings After Round 5 (Genesys)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-5-genesys/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-5-genesys/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
+      <title>YCS Orlando: Implementing Yu-Gi-Oh! NEURON at YCS Orlando</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/implementing-yu-gi-oh-neuron-at-ycs-orlando/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/implementing-yu-gi-oh-neuron-at-ycs-orlando/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
       <category domain="event">2026-ycs-orlando</category>
-      <pubDate>Fri, 06 Nov 2026 22:27:56 +0000</pubDate>
-      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+      <pubDate>Fri, 06 Nov 2026 22:23:33 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: Welcome to YCS Orlando!</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-orlando-florida-2026/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-orlando-florida-2026/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Fri, 06 Nov 2026 21:25:49 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>YCS Orlando: Round 5 Pairings (Genesys)</title>
@@ -482,17 +894,6 @@
       <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Orlando: YCS Houston: Standings After Round 4 (Genesys)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-4-genesys/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-4-genesys/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-ycs-orlando</category>
-      <pubDate>Fri, 06 Nov 2026 20:37:09 +0000</pubDate>
-      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
       <title>YCS Orlando: Round 4 Pairings (Genesys)</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-4-pairings-genesys/</link>
       <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-orlando-round-4-pairings-genesys/</guid>
@@ -504,15 +905,15 @@
       <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
-      <title>YCS Orlando: YCS Houston: Standings After Round 3 (Genesys)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-3-genesys/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-3-genesys/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
+      <title>YCS Orlando: Round 1 Genesys Feature Match: Jesse Kotton vs. Scott Vukelic</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/round-1-genesys-feature-match-jesse-kotton-vs-scott-vukelic/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/round-1-genesys-feature-match-jesse-kotton-vs-scott-vukelic/</guid>
+      <category>Feature match</category>
+      <category domain="kind">feature</category>
       <category domain="format">Genesys</category>
       <category domain="event">2026-ycs-orlando</category>
-      <pubDate>Fri, 06 Nov 2026 19:21:49 +0000</pubDate>
-      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+      <pubDate>Fri, 06 Nov 2026 18:41:55 +0000</pubDate>
+      <description>Feature match from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>YCS Orlando: Round 3 Pairings (Genesys)</title>
@@ -524,17 +925,6 @@
       <category domain="event">2026-ycs-orlando</category>
       <pubDate>Fri, 06 Nov 2026 18:34:17 +0000</pubDate>
       <description>Pairings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Orlando: YCS Houston: Standings After Round 2 (Genesys)</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-2-genesys/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-houston-standings-after-round-2-genesys/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-ycs-orlando</category>
-      <pubDate>Fri, 06 Nov 2026 18:24:59 +0000</pubDate>
-      <description>Standings from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
       <title>YCS Orlando: Round 2 Pairings (Genesys)</title>
@@ -577,6 +967,16 @@
       <category domain="format">Public Events</category>
       <category domain="event">2026-ycs-orlando</category>
       <pubDate>Thu, 05 Nov 2026 01:21:05 +0000</pubDate>
+      <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Orlando: YCS Santiago, Chile 2026 – Main Event Information</title>
+      <link>https://yugiohblog.konami.com/2026/event-information/ycs-santiago-chile-2026-main-event-information/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/event-information/ycs-santiago-chile-2026-main-event-information/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-orlando</category>
+      <pubDate>Thu, 05 Nov 2026 01:05:08 +0000</pubDate>
       <description>News from YCS Orlando, published by Konami. Follow the link for the original post.</description>
     </item>
     <item>
@@ -2880,400 +3280,6 @@
       <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
       <pubDate>Sun, 20 Sep 2026 00:32:09 +0000</pubDate>
       <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 7 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-7-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-7-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 23:16:56 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 6</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-6/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-6/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 23:15:59 +0000</pubDate>
-      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 5</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-4-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-4-2/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 23:14:25 +0000</pubDate>
-      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 6 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-6-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-6-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 23:13:59 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 5 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-5-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-5-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 21:12:59 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Standings after Round 4</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-4/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-standings-after-round-4/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 21:12:11 +0000</pubDate>
-      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 1 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-1-pairings-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-1-pairings-2/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 20:40:50 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 2 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-2-pairings-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-2-pairings-2/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 20:40:27 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 4 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-4-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-round-4-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 20:39:29 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Round 3 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-3-pairings-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-3-pairings-2/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 20:38:51 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Welcome to the Latin America Advanced Remote Duel YCS</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-advanced-remote-duel-ycs/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-advanced-remote-duel-ycs/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sat, 19 Sep 2026 20:34:10 +0000</pubDate>
-      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Standings after Round 7</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-7/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-7/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 23:30:31 +0000</pubDate>
-      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 7 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-7-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-7-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 22:11:19 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Standings after Round 6</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-6/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-6/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 22:10:19 +0000</pubDate>
-      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 6 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-6-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-6-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 20:57:49 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Standings after Round 5</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-5/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-5/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 20:53:07 +0000</pubDate>
-      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 5 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-5-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-5-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 20:52:12 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Standings after Round 4</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-4/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-4/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 20:49:39 +0000</pubDate>
-      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 4 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-4-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-4-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 18:45:27 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Standings after Round 3</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-3/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-standings-after-round-3/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 18:43:49 +0000</pubDate>
-      <description>Standings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 3 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-3-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-3-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 18:42:50 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 2 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-2-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-2-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 18:17:24 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Round 1 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-1-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-round-1-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 18:02:04 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Welcome to the Latin America Genesys Remote Duel YCS</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-genesys-remote-duel-ycs/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-the-latin-america-genesys-remote-duel-ycs/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Fri, 18 Sep 2026 18:01:43 +0000</pubDate>
-      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Finals Pairing</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-finals-pairing/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-finals-pairing/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sun, 30 Aug 2026 02:12:42 +0000</pubDate>
-      <description>Pairings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Top 8 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-top-8-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-top-8-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 09:33:48 +0000</pubDate>
-      <description>Pairings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Final Standings after Swiss Rounds</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-final-standings-after-swiss-rounds/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-final-standings-after-swiss-rounds/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 09:32:03 +0000</pubDate>
-      <description>Standings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Standings after Round 6</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-6/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-6/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 07:36:36 +0000</pubDate>
-      <description>Standings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Round 7 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-7-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-7-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 07:35:50 +0000</pubDate>
-      <description>Pairings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Standings after Round 5</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-5/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-5/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 06:30:00 +0000</pubDate>
-      <description>Standings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Round 6 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-6-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-6-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 06:29:31 +0000</pubDate>
-      <description>Pairings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Standings after Round 4</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-4/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-4/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 05:24:10 +0000</pubDate>
-      <description>Standings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Round 5 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-5-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-5-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 05:23:38 +0000</pubDate>
-      <description>Pairings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Standings after Round 3</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-3/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-3/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 04:13:54 +0000</pubDate>
-      <description>Standings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Round 4 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-4-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-4-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 04:12:09 +0000</pubDate>
-      <description>Pairings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Standings after Round 2</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-standings-after-round-2/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 02:42:29 +0000</pubDate>
-      <description>Standings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>World Championship 2026: Yu-Gi-Oh! TCG WORLD CHAMPIONSHIP 2026 Round 3 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-3-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/championships/yu-gi-oh-tcg-world-championship-2026-round-3-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="event">yu-gi-oh-tcg-world-championship-2026</category>
-      <pubDate>Sat, 29 Aug 2026 02:42:00 +0000</pubDate>
-      <description>Pairings from World Championship 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

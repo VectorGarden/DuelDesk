@@ -289,7 +289,7 @@
     {"e":"2026-04-team-ycs-las-vegas","deck":"Branded Mitsurugi Sky Striker","cut":"Top 8"},
     {"e":"2026-05-ycs-columbus","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Genesys"}
+    {"e":"2026-ycs-orlando","f":"Genesys","cut":"Top 8","deck":"Angelechy Magistus Elfnote"}
   ],
   "Jacob Thomas Sobeck": [
     {"e":"2019-ycs-chicago"},
@@ -548,10 +548,10 @@
   "Felipe N.": {
     "as": "Felipe Nienkotter"
   },
-  "Conner M.": {
-    "as": "Conner Santino Medina"
-  },
   "Mustapha G.": {
     "as": "Mustapha Sean Ghanem"
+  },
+  "Conner M.": {
+    "as": "Conner Santino Medina"
   }
 }

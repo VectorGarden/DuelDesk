@@ -77,7 +77,7 @@
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced","cut":"Top 8","deck":"Angelechy"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
     {"e":"na-ygoc-2022"}
   ],
@@ -533,14 +533,11 @@
   "Diego Alessandro Aguirre Barreño": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Junior C.": {
-    "as": "Junior J. Chala"
-  },
-  "Hamzeh S.": {
-    "as": "Hamzeh Hassan Salti"
-  },
   "Ryne H.": {
     "as": "Ryne Michael Macari Hanson"
+  },
+  "Junior C.": {
+    "as": "Junior J. Chala"
   },
   "Skyla M.": {
     "as": "Skyla Wayne Miller"
@@ -548,10 +545,13 @@
   "Chris N.": {
     "as": "Chris Chi Tsun Ng"
   },
-  "Jonathan T.": {
-    "as": "Jonathan Alexander Tamayo"
+  "Hamzeh S.": {
+    "as": "Hamzeh Hassan Salti"
   },
   "Warner M.": {
     "as": "Warner Ottoneil Morales"
+  },
+  "Jonathan T.": {
+    "as": "Jonathan Alexander Tamayo"
   }
 }

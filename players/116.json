@@ -83,7 +83,7 @@
     {"e":"2026-08-quebec","f":"Advanced"},
     {"e":"2026-north-america-wcq"},
     {"e":"2026-ycs-houston","f":"Advanced"},
-    {"e":"2026-ycs-orlando","f":"Advanced"},
+    {"e":"2026-ycs-orlando","f":"Advanced","cut":"Top 8","deck":"Angelechy"},
     {"e":"na-ygoc-2022"}
   ],
   "Joshua Tyler Sapp": [
@@ -587,10 +587,10 @@
   "Ji K.": {
     "as": "Ji Sang Kim"
   },
-  "Jeremy L.": {
-    "as": "Jeremy James Leishman"
-  },
   "Christian M.": {
     "as": "Christian Xavier Montez"
+  },
+  "Jeremy L.": {
+    "as": "Jeremy James Leishman"
   }
 }

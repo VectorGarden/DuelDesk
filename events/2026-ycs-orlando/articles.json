@@ -1,4 +1,402 @@
 {
+  "https://yugiohblog.konami.com/2026/ycs/round-9-genesys-feature-match-danny-street-vs-victor-suarez/": [
+    {
+      "t": "p",
+      "r": ["Welcome to Day 3 of YCS Orlando! We’re kicking things off with a Genesys Feature Match. These Duelists finished Friday’s rounds with an 8-1 record, putting them in a great position to make the Top 8. ",{"who":"Danny Lee Street","t":"Danny Street"}," is here from Bristol, VA, playing a Radiant Typhoon ",{"b":"Dark Time Wizard"}," Deck. He’s facing ",{"who":"Victor Javier Suarez","t":"Victor Suarez"},", from Ft. Lauderdale, FL, using Darklords!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 1"}]
+    },
+    {
+      "t": "p",
+      "r": ["We just so happened to be using the ",{"b":"Forbidden Crown"}," Regional Qualifier Game Mat for our Feature Match, and ",{"who":"Victor Javier Suarez","t":"Suarez"},"’s very first draw was ",{"b":"Forbidden Crown"},". An omen, perhaps? The rest of his hand was ",{"b":"Darklord Dance"},", ",{"b":"Darklord Ixhel"},", ",{"b":"Herald of Orange Light"},", and ",{"b":"Darklord Morningstar"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Danny Lee Street","t":"Danny Street"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Danny Lee Street","t":"Street"}," won the dice roll and played first, leading by Special Summoning ",{"b":"Alligator’s Dragon Knight"},", revealing ",{"b":"Graceful & Skull Dice"},". It hit the field, and ",{"who":"Victor Javier Suarez","t":"Suarez"}," used ",{"b":"Herald of Orange Light"},", discarding Morningstar to negate and destroy the Dragon Knight! ",{"who":"Danny Lee Street","t":"Street"}," Set three cards in his back row and passed."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Victor Javier Suarez","t":"Suarez"}," drew ",{"b":"Prohibited Power Patron Portal – Terminus"}," and activated it, sending ",{"b":"Jupiter the Power Patron of Destruction"}," to the Graveyard to add ",{"b":"Darklord Gulgolet"}," to his hand. He used Ixhel’s effect, discarding Gulgolet to draw ",{"b":"Herald of Green Light"}," and ",{"b":"Super Duper Polymerization"},". Gulgolet’s effect added ",{"b":"Banishment of the Darklords"},". He activated ",{"b":"Darklord Dance"},", and ",{"who":"Danny Lee Street","t":"Street"}," flipped ",{"b":"Foolish Graverobber"}," to send ",{"b":"Dark Time Wizard"}," to the Graveyard, then Special Summon Ixhel from ",{"who":"Victor Javier Suarez","t":"Suarez"},"’s Graveyard. Dance resolved, fusing Gulgolet and Morningstar into ",{"b":"Darklord Eveningstar"},". Its effect Set ",{"b":"Darklord Contact"}," and ",{"b":"The Sanctified Darklord"}," on the field. He activated Banishment to add ",{"b":"Darklord Djehuty"},". He Normal Summoned Djehuty, which let him Special Summon ",{"b":"Indulged Darklord"},". That let him Special Summon a Djehuty on ",{"who":"Danny Lee Street","t":"Street"},"’s side of the field, adding Morningstar to his hand. He stacked Djehuty and ",{"b":"Indulged Darklord"}," to Xyz Summon ",{"b":"Minerva, the Exalted Lightsworn"},". He used its effect to send two more copies of ",{"b":"Herald of Orange Light"}," and ",{"b":"Ghost Ogre & Snow Rabbit"}," to the Graveyard. ",{"who":"Danny Lee Street","t":"Street"}," now decided to flip ",{"b":"Mystical Space Typhoon"}," to destroy the Set ",{"b":"Darklord Contact"},". ",{"who":"Victor Javier Suarez","t":"Suarez"}," played ",{"b":"Super Duper Polymerization"},", bringing ",{"b":"The First Darklord"}," to the field and fusing it with Ixhel from ",{"who":"Danny Lee Street","t":"Street"},"’s field into another ",{"b":"Darklord Eveningstar"},". He used its effect to copy the ",{"b":"Darklord Contact"}," in his Graveyard and Special Summon Ixhel. He used Ixhel to copy Banishment’s effect, adding a Gulgolet to his hand. He Set ",{"b":"Forbidden Crown"}," to finish his turn, unable to attack due to Terminus. In the End Phase, ",{"who":"Danny Lee Street","t":"Street"}," banished ",{"b":"Foolish Graverobber"}," from the Graveyard to Set ",{"b":"Dark Time Wizard"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["In ",{"who":"Danny Lee Street","t":"Street"},"’s Draw Phase, he activated ",{"b":"Radiant Typhoon Ascendance"}," to add the ",{"b":"Mystical Space Typhoon"}," from his Graveyard to his hand. He activated that to target ",{"who":"Victor Javier Suarez","t":"Suarez"},"’s ",{"b":"Forbidden Crown"},". He thought about activating it, but decided not to. ",{"who":"Danny Lee Street","t":"Street"}," activated ",{"b":"Dark Time Wizard"},", trying to destroy ",{"who":"Victor Javier Suarez","t":"Suarez"},"’s monsters, but ",{"who":"Victor Javier Suarez","t":"Suarez"}," negated it with ",{"b":"Herald of Green Light"},"! He discarded Gulgolet for this, which added ",{"b":"Darklord Dance"}," to his hand. ",{"who":"Danny Lee Street","t":"Street"}," continued his turn by Special Summoning ",{"b":"Radiant Typhoon Swen"},", and ",{"who":"Victor Javier Suarez","t":"Suarez"}," negated it with ",{"b":"The Sanctified Darklord"},", discarding Morningstar, and gained 1600 Life Points. ",{"who":"Danny Lee Street","t":"Street"}," was out of gas, and conceded the first Duel in the face of the Darklord army!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 2"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Danny Lee Street","t":"Street"}," chose to play first again this time. ",{"who":"Victor Javier Suarez","t":"Suarez"}," had a hand of Gulgolet, ",{"b":"Indulged Darklord"},", Ixhel, and two copies of Terminus."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Victor Javier Suarez","t":"Victor Suarez"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Danny Lee Street","t":"Street"}," started this time with ",{"b":"Dark Time Wizard"}," to add ",{"b":"Alligator’s Dragon Knight"}," to his hand. He Special Summoned ",{"b":"Radiant Typhoon Swen"}," and added ",{"b":"Radiant Typhoon Chant"}," to his hand, then used that to get ",{"b":"Radiant Typhoon Eldam"},". He Special Summoned Eldam to add ",{"b":"Radiant Typhoon Fonix, the Great Flame"},". He used Swen and Eldam to Xyz Summon ",{"b":"Xyz Armor Torpedo"},", using its effect to draw a card. He used Torpedo to play ",{"b":"Xyz Armor Fortress"},", which added ",{"b":"Full-Armored Xyz"}," to his hand. He Special Summoned ",{"b":"Alligator’s Dragon Knight"}," by revealing ",{"b":"Jinzo – Energy Shocker"},", adding ",{"b":"Foolish Graverobber"}," and ",{"b":"Reversal Box"}," to his hand and discarding the Jinzo. He Set ",{"i":"five"}," Spell/Traps, then used ",{"b":"Xyz Armor Fortress"}," to play ",{"b":"Full Armored Dark Knight Lancer"},". In the End Phase, he returned ",{"b":"Dark Time Wizard"}," to his hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Victor Javier Suarez","t":"Suarez"}," drew ",{"b":"Super Duper Polymerization"},". ",{"who":"Danny Lee Street","t":"Street"}," flipped up ",{"b":"Reversal Box"}," and rolled a 3. ",{"who":"Victor Javier Suarez","t":"Suarez"}," led with Ixhel, discarding Gulgolet, and ",{"who":"Danny Lee Street","t":"Street"}," flipped ",{"b":"Foolish Graverobber"}," to send ",{"b":"Graceful & Skull Dice"}," to the Graveyard and Special Summon Gulgolet. Ixhel let ",{"who":"Victor Javier Suarez","t":"Suarez"}," draw ",{"b":"Forbidden Droplet"}," and Djehuty. ",{"who":"Victor Javier Suarez","t":"Suarez"}," couldn’t use Gulgolet’s effect since it left the Graveyard before it could activate. ",{"who":"Victor Javier Suarez","t":"Suarez"}," simply activated ",{"b":"Super Duper Polymerization"},"! He Special Summoned ",{"b":"The First Darklord"},", then fused it with Gulgolet for ",{"b":"Darklord Eveningstar"},"! Gulgolet added ",{"b":"Darklord Dance"},", then Eveningstar Set Banishment and ",{"b":"Fallen Angel in Darkness"},". He flipped up Banishment to add Morningstar, then played Dance to fuse ",{"b":"The First Darklord"}," and Gulgolet from the Graveyard and Morningstar from the hand into ",{"b":"The First Darklord"},"! Its effect activated to destroy all of ",{"who":"Danny Lee Street","t":"Street"},"’s cards! ",{"who":"Danny Lee Street","t":"Street"}," Chained ",{"b":"Sleepy Scapegoats"}," before he lost everything. Then, in a new Chain, he was able to Special Summon Fonix from his hand. ",{"b":"The First Darklord"}," had 5000 ATK since it was Fusion Summoned with ",{"b":"Darklord Dance"},", and it smashed into Fonix. Eveningstar attacked directly. Then, ",{"who":"Victor Javier Suarez","t":"Suarez"}," used Eveningstar’s effect to use ",{"b":"Darklord Dance"}," again, dropping another Eveningstar to attack and end the Match!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Victor Javier Suarez","t":"Victor Suarez"}," takes this Match with Darklords!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-6/": [
+    {
+      "t": "p",
+      "r": ["Now that we’re well into the competition, here’s a look at the Genesys Decks played at the top tables."]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the breakdown by the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Ancient Fairy Angelechy","6"],["Magistus Fairy Tail","5"],["Ashtra Angelechy","5"],["Angelechy","4"],["Blitzclique Angelechy","4"],["Angelechy Adamancipator","2"],["Angelechy Ashtra Blitzclique","2"],["Ashtra Blitzclique","1"],["Ashtra Invoked Blitzclique","1"],["Hecahands Chimera","1"],["Zoodiac Lunalight","1"],["Centur-Ion Angelechy","1"],["Radiant Typhoon Dark Time Wizard","1"],["Angelechy Darklord","1"],["Chimera Dark Time Wizard","1"],["Chimera Hecahands","1"],["Ashtra Angelechy Blitzclique","1"],["White Forest Blitzclique","1"],["Blitzclique","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["While we have a huge variety of individual Decks, it’s Angelechy at the top of the pack. With all variants combined, we have 26 total Angelechy Decks! The Ancient Fairy variants are the most popular so far, using ",{"b":"Ancient Fairy Dragon"}," as a way to find ",{"b":"Angelechy Problem"}," to get your gameplan moving. There’s still a lot of time to see how these numbers change – the Duelists who prepared for the Angelechy matchup will be the ones to succeed."]
+    },
+    {
+      "t": "p",
+      "r": ["Beyond that, we have a huge spread of Decks. Magistus Fairy Tail is the next most popular Deck, along with a variety of Ashtra and Blitzclique Decks. Check back for more updates to see which Decks are at the top!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/advanced-round-3-feature-match-grant-zelinka-vs-allen-vera/": [
+    {
+      "t": "p",
+      "r": ["We’re in Round 3, and the VIP Duelists have entered the fray!"]
+    },
+    {
+      "t": "p",
+      "r": ["We’ve got ",{"who":"Grant David Zelinka","t":"Grant Zelinka"}," here, from Bakersfield, California, playing a Magistus Fairy Tail Deck. He’s facing our VIP Duelist ",{"who":"Allen Clark Vera","t":"Allen Vera"},", using a K9 ",{"b":"Dark Time Wizard"}," Deck. ",{"who":"Allen Clark Vera","t":"Vera"}," earned his VIP status on his home turf at Cool Stuff Games in Miami. That means he got a bye in Rounds 1 and 2 today, plus special seating in the VIP area. That hard work paid off, but now it’s time to Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 1"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Vera"}," won the dice roll and chose to play first. He had a hand of ",{"b":"Ghost Ogre & Snow Rabbit"},", ",{"b":"Graceful & Skull Dice"},", ",{"b":"K9-X Forced Release"},", ",{"b":"Mulcharmy Fuwalos"},", and ",{"b":"Radiant Typhoon Swen"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Allen Vera"}]
+    },
+    {
+      "t": "p",
+      "r": ["He Special Summoned Swen and added ",{"b":"Radiant Typhoon Chant"}," to his hand. He activated Chant to add ",{"b":"Radiant Typhoon Eldam"}," to his hand. He Special Summoned Eldam and added ",{"b":"Mystical Space Typhoon"},". He stacked his monsters for ",{"b":"M-X-Saber Invoker"},", using it to Special Summon ",{"b":"Swiftwind Panther Warrior"},". He used the Panther to Tribute his Fuwalos and Special Summon ",{"b":"Alligator’s Dragon Knight"},". That let him add ",{"b":"Dark Time Wizard"}," and ",{"b":"Foolish Graverobber"}," to his hand, then discarded ",{"b":"Graceful & Skull Dice"},". He activated ",{"b":"Dark Time Wizard"}," to add another ",{"b":"Alligator’s Dragon Knight"}," to his hand, then Special Summoned it. He used both Dragon Knights to Xyz Summon ",{"b":"K9-17 “Ripper”"},", which added ",{"b":"K9-17 Izuna"}," to his hand. He used Invoker and Panther to Link Summon ",{"b":"I:P Masquerena"},", then Set all his spells and traps. In the End Phase, he added ",{"b":"Dark Time Wizard"}," from his Graveyard to his hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Grant David Zelinka","t":"Zelinka"}," started with ",{"b":"Fairy Tail Ball"},", and ",{"who":"Allen Clark Vera","t":"Vera"}," flipped ",{"b":"Mystical Space Typhoon"}," to destroy it before it could resolve. ",{"who":"Grant David Zelinka","t":"Zelinka"}," Normal Summoned ",{"b":"Fairy Tail – Luna"}," and activated its effect, and ",{"who":"Allen Clark Vera","t":"Vera"}," banished ",{"b":"Graceful & Skull Dice"}," from his Graveyard for its effect. ",{"who":"Grant David Zelinka","t":"Zelinka"}," Chained ",{"b":"Super Polymerization"},"! He discarded ",{"b":"Ash Blossom & Joyous Spring"},", fusing Luna and Ripper into ",{"b":"Magistus Chorozo"},"! ",{"who":"Allen Clark Vera","t":"Vera"},"’s Dice rolled a 6, but Luna was no longer on the field. Luna’s effect then put ",{"b":"Genia of the Ring"}," in ",{"who":"Grant David Zelinka","t":"Zelinka"},"’s hand. He Special Summoned Genia from his hand, and ",{"who":"Allen Clark Vera","t":"Vera"}," Special Summoned Izuna from his hand. Izuna sent ",{"b":"K9-ØØ Lupis"}," to ",{"who":"Allen Clark Vera","t":"Vera"},"’s Graveyard, and he Special Summoned that. He used Lupis’s effect to let him Xyz Summon a new Ripper. Then, ",{"who":"Allen Clark Vera","t":"Vera"}," flipped ",{"b":"Foolish Graverobber"}," to send a new ",{"b":"Graceful & Skull Dice"}," to the Graveyard, then Special Summoned ",{"b":"Alligator’s Dragon Knight"},". That let him add ",{"b":"Dark Time Wizard"}," and his third ",{"b":"Graceful & Skull Dice"}," to his hand, discarding the Dice. He now used Masquerena’s effect, using it and Dragon Knight to Link Summon ",{"b":"S:P Little Knight"}," and banish Genia. ",{"who":"Grant David Zelinka","t":"Zelinka"}," activated ",{"b":"Spenta, the Magistus Sealer"},"’s effect, and ",{"who":"Allen Clark Vera","t":"Vera"}," negated it with Ripper. ",{"who":"Grant David Zelinka","t":"Zelinka"}," passed, and ",{"who":"Allen Clark Vera","t":"Vera"}," banished ",{"b":"Foolish Graverobber"}," from his Graveyard to Set a copy of his Dice."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Vera"}," drew Panther and Normal Summoned it. ",{"who":"Grant David Zelinka","t":"Zelinka"},"’s plays had all been interrupted and he knew this Duel was about to be over – he conceded!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 2"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Vera"}," began the second Duel with Lupis, ",{"b":"Graceful & Skull Dice"},", Eldam, and two copies of ",{"b":"Alligator’s Dragon Knight"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Grant David Zelinka","t":"Zelinka"}," started this Duel with ",{"b":"Spell Power Mastery"}," to add ",{"b":"Regulus, the Prince of Endymion"}," to his hand. He Special Summoned Regulus by revealing ",{"b":"Fairy Tail – Snow"}," in his hand, taking 1200 damage. Regulus then added ",{"b":"Empire of Endymion"}," to his hand. He played Empire to add ",{"b":"Verre, the Maid of Endymion"}," to his hand. He Special Summoned Verre and added ",{"b":"Verre Magic – Lacrima of Light"}," to his hand. He Xyz Summoned ",{"b":"Fairy Tail – Wiccat"},", using its effect to send ",{"b":"Fairy Tail – Matchgiru"}," and ",{"b":"Tails of the Fairy Tails"}," to the Graveyard. He Special Summoned Matchgiru, which added ",{"b":"Fairy Tail Ball"}," to his hand. He activated that to add ",{"b":"Fairy Tail – Luna"}," to his hand. He equipped ",{"b":"Tails of the Fairy Tails"}," from his Graveyard, then used its effect to fuse Matchgiru and Wiccat into ",{"b":"Teller of Fairy Tails"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Grant David Zelinka","t":"Grant Zelinka"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Grant David Zelinka","t":"Zelinka"}," Normal Summoned Luna to add another Luna to his hand. Then he used Luna to Link Summon ",{"b":"Artemis, the Magistus Moon Maiden"},", which let him activate Lacrima of Light to send ",{"b":"Witchcrafter Genni"}," to the Graveyard. He used Genni’s effect in the Graveyard to apply Lacrima of Light’s effect, letting him Special Summon ",{"b":"Zoroa, the Magistus of Flame"},". He used Zoroa’s effect to equip ",{"b":"Ninaruru, the Magistus Glass Goddess"},", then used Zoroa and Artemis to Link Summon ",{"b":"Endymion, the Crescent Magistus"},". It equipped Artemis, and Artemis’s effect let him add ",{"b":"Crowley, the Gifted Magistus"}," to his hand. He Special Summoned Crowley, using its effect to fuse Endymion with Crowley into ",{"b":"Zoroa, the Magistus Verethragna"},". He used Zoroa’s effect to equip Artemis. He Set one back row card to finish."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Vera"}," drew ",{"b":"Ash Blossom & Joyous Spring"},". In the Draw Phase, he activated ",{"b":"Graceful & Skull Dice"},", rolling an 8 to reduce ",{"who":"Grant David Zelinka","t":"Zelinka"},"’s monsters by 1600 ATK and DEF. He Normal Summoned Eldam, and ",{"who":"Grant David Zelinka","t":"Zelinka"}," hit it with Ash Blossom. ",{"who":"Allen Clark Vera","t":"Vera"}," activated Lupis’s effect in his hand, and ",{"who":"Grant David Zelinka","t":"Zelinka"}," used Zoroa to negate Lupis and destroy Eldam. ",{"who":"Allen Clark Vera","t":"Vera"}," Special Summoned ",{"b":"Alligator’s Dragon Knight"}," (revealing the second Dragon), and ",{"who":"Grant David Zelinka","t":"Zelinka"}," negated and destroyed it with ",{"b":"Teller of Fairy Tails"},". Facing interruptions at every turn, ",{"who":"Allen Clark Vera","t":"Vera"}," conceded!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 3"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Vera"}," began the final Duel with ",{"b":"Solemn Accusation"},", ",{"b":"Dark Time Wizard"},", ",{"b":"Mystical Space Typhoon"},", ",{"b":"Skull Meister"},", and ",{"b":"Ash Blossom & Joyous Spring"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["He activated Dark Time Wizard, and ",{"who":"Grant David Zelinka","t":"Zelinka"}," negated it with Ash Blossom. ",{"who":"Allen Clark Vera","t":"Vera"}," Set Accusation and MST."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Grant David Zelinka","t":"Zelinka"}," Special Summoned Regulus by revealing ",{"b":"Genni, the Maid of Endymion"},", and took 300 damage. He activated Empire, and ",{"who":"Allen Clark Vera","t":"Vera"}," used Ash Blossom. ",{"who":"Grant David Zelinka","t":"Zelinka"}," Normal Summoned another Regulus, then Xyz Summoned Wiccat. He used its effect to send Matchgiru and ",{"b":"Tails of the Fairy Tails"}," to the Graveyard. He tried to Special Summon Matchgiru, and ",{"who":"Allen Clark Vera","t":"Vera"}," negated it with ",{"b":"Skull Meister"},". ",{"who":"Grant David Zelinka","t":"Zelinka"}," equipped Tails from the Graveyard and tried to Fusion Summon, but ",{"who":"Allen Clark Vera","t":"Vera"}," destroyed Tails with MST. ",{"who":"Grant David Zelinka","t":"Zelinka"}," attacked directly with Wiccat to finish his turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Vera"}," had no cards in hand, and drew ",{"b":"Radiant Typhoon Vison"}," – he decided to channel his inner Joey and gamble by activating it! He drew ",{"b":"Ghost Ogre & Snow Rabbit"}," and ",{"b":"Radiant Typhoon Eldam"},", discarding the Eldam. He passed."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Grant David Zelinka","t":"Zelinka"}," Normal Summoned ",{"b":"Witchcrafter Genni"},". He activated Matchgiru’s effect to Special Summon it from the Graveyard, and used its effect to add ",{"b":"Fairy Tail Ball"},". He activated Ball, and ",{"who":"Allen Clark Vera","t":"Vera"}," flipped ",{"b":"Solemn Accusation"},", paying 1500 Life Points to negate and destroy it. ",{"who":"Grant David Zelinka","t":"Zelinka"}," used Genni to Link Summon Artemis, and used that and Matchgiru to Link Summon ",{"b":"Endymion, the Crested Magistus"},". He used its effect, and ",{"who":"Allen Clark Vera","t":"Vera"}," destroyed Endymion with Ghost Ogre! ",{"who":"Grant David Zelinka","t":"Zelinka"}," simply sent Wiccat to attack directly, dropping ",{"who":"Allen Clark Vera","t":"Vera"}," to 2800 Life Points."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Vera"}," had no cards in hand or on the field, and drew ",{"b":"Swiftwind Panther Warrior"},"! He Normal Summoned it, using its effect to Tribute it and Special Summon ",{"b":"Alligator’s Dragon Knight "},{"i":"(Note: "},{"b":"Swiftwind Panther Warrior "},{"i":"must Tribute another monster, not itself. Unfortunately, this was not caught by either Duelist during the Duel)"},". He used Dragon Knight’s effect to add ",{"b":"Dark Time Wizard"}," and ",{"b":"Foolish Graverobber"},", discarding the latter. He activated ",{"b":"Dark Time Wizard"}," and flipped a heads to destroy Wiccat, dealing 925 damage! He Tributed Dragon Knight to bring forth ",{"b":"Red-Eyes Black Dragon Exceed"},"! That let him Special Summon Eldam from the Graveyard, which added Swen to his hand. He Special Summoned Swen thanks to the MST in his Graveyard, and added Chant. He sent everything to attack directly, dropping ",{"who":"Grant David Zelinka","t":"Zelinka"}," to 475 Life Points! He stacked Swen and Eldam for ",{"b":"Totem Bird"},", then activated Chant to add MST to his hand, and Set it. He banished ",{"b":"Foolish Graverobber"}," to Set ",{"b":"Dark Time Wizard"},". Before the Main Phase ended, ",{"who":"Grant David Zelinka","t":"Zelinka"}," activated ",{"b":"Nibiru, the Primal Being"},"! ",{"b":"Totem Bird"}," was Tributed, but Red-Eyes was unaffected. ",{"who":"Allen Clark Vera","t":"Vera"}," received a 1400 ATK/1700 DEF Primal Being Token."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Grant David Zelinka","t":"Zelinka"}," sent Nibiru to destroy the Primal Being Token in battle. In the End Phase, ",{"who":"Allen Clark Vera","t":"Vera"}," flipped ",{"b":"Dark Time Wizard"}," to add ",{"b":"Alligator’s Dragon Knight"}," to his hand, then returned ",{"b":"Dark Time Wizard"}," to his hand."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Vera"}," drew ",{"b":"Radiant Typhoon Vision"},". He Special Summoned ",{"b":"Alligator’s Dragon Knight"},", and ",{"who":"Grant David Zelinka","t":"Zelinka"}," negated it with Ash Blossom. However, it still had the ability to attack directly, wiping out ",{"who":"Grant David Zelinka","t":"Zelinka"},"’s final Life Points!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Allen Clark Vera","t":"Allen Vera"}," takes this Match with K9 ",{"b":"Dark Time Wizard"},"!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-7/": [
+    {
+      "t": "p",
+      "r": ["Round 7 is underway, and we’ve got another look at the top tables."]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the breakdown by the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Magistus Fairy Tail","6"],["Ancient Fairy Angelechy","5"],["Blitzclique Angelechy","5"],["Angelechy","5"],["Ashtra Angelechy","4"],["Blitzclique","2"],["Chimera Dark Time Wizard","2"],["Angelechy Ashtra Blitzclique","2"],["DoomZ","1"],["White Forest Blitzclique","1"],["Ashtra Invoked Blitzclique","1"],["Centur-Ion Angelechy","1"],["Dark Time Wizard Angelechy","1"],["Blitzclique Ashtra","1"],["Radiant Typhoon Dark Time Wizard","1"],["Dogmatika Labrynth","1"],["Assault Mode Snake-Eye Elfnote","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["Magistus Fairy Tail is the most popular unique Deck at the top tables, but the many variants of Angelechy are still the most popular overall. We’ve got plenty of other Decks as well, including Blitzclique and ",{"b":"Dark Time Wizard"}," Decks to name a few. We’ve got one more round today, so check back to get the last top table updates for the day!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/round-1-genesys-feature-match-jesse-kotton-vs-scott-vukelic/": [
+    {
+      "t": "p",
+      "r": ["Welcome to Round 1 of Genesys here at YCS Orlando! We’re here with ",{"who":"Jesse Dean Kotton","t":"Jesse Kotton"},", the Toronto Duelist who’s a YCS Champion, a World Champion, and the Ultimate Duelist – he’s got titles to spare! ",{"who":"Jesse Dean Kotton","t":"Kotton"},"’s playing Magistus Fairy Tail today, which he used for a Top 8 finish at YCS Houston. His opponent is ",{"who":"Scott Edward Vukelic","t":"Scott Vukelic"},", an Orlando local attending his first YCS! Halloween has come and gone, but ",{"who":"Scott Edward Vukelic","t":"Vukelic"},"’s still rocking a Pumpking Deck in today’s competition."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 1"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Scott Edward Vukelic","t":"Vukelic"}," won the dice roll and chose to play first. ",{"who":"Jesse Dean Kotton","t":"Kotton"}," began with ",{"b":"Fairy Tail Ball"},"; ",{"b":"Regulus, the Prince of Endymion"},"; ",{"b":"Mulcharmy Fuwalos"},"; ",{"b":"Genni, the Maid of Endymion"},"; and ",{"b":"Rilliona, the Magistus of Verre"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Scott Edward Vukelic","t":"Scott Vukelic"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Scott Edward Vukelic","t":"Vukelic"}," led ",{"b":"Uni-Zombie"},", using its effect to increase its Level and send ",{"b":"Doomking Balerdroch"}," to the Graveyard. He then used ",{"b":"Uni-Zombie"},"’s other effect, discarding ",{"b":"Glow-Up Bloom"}," to increase its Level. Bloom’s effect put ",{"b":"Pumpking the King of Grave Ghosts"}," in his hand, and he used that to Set ",{"b":"Call of the Haunted"}," and discard Pumpking. He flipped up ",{"b":"Call of the Haunted"}," to Special Summon Pumpking, and ",{"who":"Jesse Dean Kotton","t":"Kotton"}," Chained Fuwalos’s effect. ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," used Pumpking’s effect to Special Summon ",{"b":"Hubrow, Founder of the Ominous Observers"},", and ",{"who":"Jesse Dean Kotton","t":"Kotton"},"’s Fuwalos let him draw ",{"b":"Gordian Slicer"},". ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," used Hubrow to send ",{"b":"Stare of the Snake Hair"}," to the Graveyard and added it to his hand. He Xyz Summoned ",{"b":"Pumpking the Great Ghost King"},", and ",{"who":"Jesse Dean Kotton","t":"Kotton"}," drew ",{"b":"Witchcrafter Creation"},". ",{"b":"Pumpking the Great Ghost King"}," added ",{"b":"Call of the Forgotten"}," to his hand. He used Stare’s effect to add ",{"b":"Vortex of Time"}," to his hand. He used ",{"b":"Pumpking the Great Ghost King"},"’s effect, detaching a material to return ",{"b":"Call of the Haunted"}," to his hand. He activated ",{"b":"Call of the Forgotten"}," to Set two more copies of ",{"b":"Call of the Haunted"}," from his Deck. He Set two more cards from his hand and passed the turn."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jesse Dean Kotton","t":"Kotton"}," drew ",{"b":"Verre Magic – Lacrima of Light"},". In the Draw Phase, ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," flipped ",{"b":"Call of the Haunted"}," to Special Summon Pumpking, which brought ",{"b":"Officiating Reverie"}," to the field. In the Standby Phase, he then Special Summoned ",{"b":"Doomking Balerdroch"}," from the Graveyard. ",{"who":"Jesse Dean Kotton","t":"Kotton"}," activated Regulus’s effect to Special Summon it, then ",{"b":"added Empire of Endymion"}," to his hand. He activated Empire, adding ",{"b":"Verre, Maid of Endymion"}," to his hand, and Special Summoned Rilliona. That let him add ",{"b":"Magistus Invocation"}," to his hand. He Xyz Summoned ",{"b":"Evilswarm Exciton Knight"},"! He activated its effect, and ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," flipped up ",{"b":"Vortex of Time"},"! He flipped Tails, changing Exciton’s effect to banish it! ",{"who":"Jesse Dean Kotton","t":"Kotton"}," continued by Special Summoning Verre, which added ",{"b":"Verre Magic – Lacrima of Light"}," to his hand. He Special Summoned Genni, then activated ",{"b":"Fairy Tail Ball"}," to add ",{"b":"Fairy Tail – Luna"}," to his hand. He Normal Summoned Luna, and added ",{"b":"Genia of the Ring"}," to his hand. He Special Summoned Genia, usifang it and Verre to Xyz Summon ",{"b":"Fairy Tail – Wiccat"},". Wiccat’s effect sent ",{"b":"Fairy Tail – Matchgiru"}," and ",{"b":"Fairy Tail – Snow"}," to the Graveyard. He Special Summoned Matchgiru, adding ",{"b":"Tails of the Fairy Tails"}," to his hand. He played ",{"b":"Witchcrafter Creation"}," to add ",{"b":"Witchcrafter Genni"}," to his hand, and played ",{"b":"Magistus Invocation"},". He fused ",{"b":"Witchcrafter Genni"}," with Wiccat into ",{"b":"Weaver of Fairy Tails"},". Its effect let him Special Summon Fairy Tail – Luna, but the Weaver couldn’t target ",{"who":"Scott Edward Vukelic","t":"Vukelic"},"’s monsters due to the effect of ",{"b":"Pumpking the Great Ghost King"},". ",{"who":"Jesse Dean Kotton","t":"Kotton"}," was unphased, equipping ",{"b":"Tails of the Fairy Tails"}," to one of his monsters. Thanks to ",{"b":"Fairy Tail Ball"},", he attacked directly with everything to end the first Duel!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 2"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jesse Dean Kotton","t":"Kotton"}," started this time with ",{"b":"Genia of the Ring"},", ",{"b":"Tails of the Fairy Tails"},", Regulus, ",{"b":"Empire of Endymion"},", and ",{"b":"Mulcharmy Fuwalos"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jesse Dean Kotton","t":"Jesse Kotton"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Scott Edward Vukelic","t":"Vukelic"}," began by Normal Summoning Hubrow, sending Pumpking to the Graveyard and adding it to his hand. He activated Pumpking’s effect, and ",{"who":"Jesse Dean Kotton","t":"Kotton"}," Chained Fuwalos. Pumpking’s effect Set ",{"b":"Call of the Haunted"},", then discarded the same Pumpking. ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," flipped ",{"b":"Call of the Haunted"}," to Special Summon Pumpking, which brought ",{"b":"Officiating Reverie"}," to the field – ",{"who":"Jesse Dean Kotton","t":"Kotton"}," drew ",{"b":"Cosmic Cyclone"},". ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," used ",{"b":"Stare of the Snake Hair"},"’s effect to add ",{"b":"Vortex of Time"}," to his hand. He used Hubrow and Pumpking to Xyz Summon ",{"b":"Pumpking the Great Ghost King"},", and ",{"who":"Jesse Dean Kotton","t":"Kotton"}," drew ",{"b":"Verre Magic – Lacrima of Light"},". Great Ghost King’s effect added ",{"b":"Call of the Forgotten"}," to ",{"who":"Scott Edward Vukelic","t":"Vukelic"},"’s hand. He used Pumpking’s effect to return ",{"b":"Call of the Haunted"}," and Reverie to his hand. He used Reverie’s effect, discarding Balerdroch to Special Summon Reverie. He activated ",{"b":"Call of the Forgotten"}," to Set two more copies of ",{"b":"Call of the Haunted"},". He Set another two cards in his back row."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jesse Dean Kotton","t":"Kotton"}," drew ",{"b":"Verre Magic – Lacrima of Light"},". In the Draw Phase, he used ",{"b":"Cosmic Cyclone"},", trying to banish ",{"b":"Call of the Forgotten"},". ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," responded with ",{"b":"Vortex of Time"},", flipping Tails. ",{"b":"Cosmic Cyclone"}," failed to banish ",{"who":"Scott Edward Vukelic","t":"Vukelic"},"’s Field Spell. ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," now used ",{"b":"Call of the Haunted"}," to Special Summon ",{"b":"Pumpking the King of Grave Ghosts"},", which in turn let him Special Summon Hubrow. Hubrow sent ",{"b":"Great Mammoth of the Netherworld"}," to the Graveyard, returning ",{"b":"Stare of the Snake Hair"}," to his hand. In the Standby Phase, ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," Special Summoned Balerdroch. Hubrow then let him use Pumpking and Reverie to Xyz Summon ",{"b":"Officiator of Doom Samuel"},"! ",{"who":"Jesse Dean Kotton","t":"Kotton"}," Special Summoned Regulus from his hand, and ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," used ",{"b":"Ash Blossom & Joyous Spring"}," to negate its effect on the field. ",{"who":"Jesse Dean Kotton","t":"Kotton"}," played Empire to add Verre to his hand, and Special Summoned ",{"b":"Genia of the Ring"},". He Special Summoned Verre, then activated its effect. ",{"who":"Scott Edward Vukelic","t":"Vukelic"}," Chained Samuel’s effect, and ",{"who":"Jesse Dean Kotton","t":"Kotton"}," Chained Lacrima of Light to send ",{"b":"Witcrafter Genni"}," to the Graveyard, blocking ",{"b":"Doomking Balerdroch"}," from activating its effect. Samuel brought Mammoth to the field and negated Verre. In a new Chain, Mammoth targeted ",{"b":"Genia of the Ring"},". Trying to block Balerdroch again, ",{"who":"Jesse Dean Kotton","t":"Kotton"}," Chained his second Lacrima of Light to Special Summon ",{"b":"Zoroa, the Magistus of Flame"}," from his Deck. Mammoth destroyed ",{"b":"Genia of the Rin"},"g. ",{"who":"Jesse Dean Kotton","t":"Kotton"}," used Verre and Regulus to Xyz Summon Wiccat, which sent Matchgiru and Snow to the Graveyard. He Special Summoned Matchgiru, and added ",{"b":"Fairy Tail Ball"}," to his hand. He activated Ball to add Luna to his hand. He Normal Summoned Luna and added another Luna to his hand. He used Matchgiru’s effect to make ",{"b":"Pumpking the Great Ghost King"}," into a lesser royalty, changing its name to “Prince of Fairies”. ",{"who":"Jesse Dean Kotton","t":"Kotton"}," equipped ",{"b":"Tails of the Fairy Tails"}," to Luna and moved to the Battle Phase. He attacked directly with everything thanks to ",{"b":"Fairy Tail Ball"},", then Special Summoned Snow from his Graveyard. Snow attacked to end the Match!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Jesse Dean Kotton","t":"Jesse Kotton"}," is the victor with Magistus Fairy Tails!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-8/": [
+    {
+      "t": "p",
+      "r": ["Our final Swiss round of the day has begun! Here’s a look at the top tables."]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the full breakdown by the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Ancient Fairy Angelechy","4"],["Angelechy","4"],["Centur-Ion Angelechy","3"],["Magistus Fairy Tail","3"],["Blitzclique","2"],["Exosister","2"],["Blitzclique Angelechy","3"],["Ashtra Angelechy","2"],["Vanquish Soul","1"],["Angelechy Magistus Elfnote","1"],["Ashtra Blitzclique","2"],["Invoked","1"],["Yummy Blitzclique","1"],["Chimera Dark Time Wizard","1"],["Ashtra Invoked Blitzclique","1"],["Dogmatika Labrynth","1"],["Assault Mode Snake-Eye Elfnote","1"],["Angelechy Darklord","1"],["Radiant Typhoon Dark Time Wizard","1"],["DoomZ","1"],["Angelechy Ashtra Blitzclique","2"],["Dark Time Wizard Angelechy","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["The many flavors of Angelechy are still holding strong, but we keep seeing unique strategies like Dogmatika Labrynth and Assault Mode Snake-Eye Elfnote filling in the other spots. Despite the strength of Angelechy, we’re seeing a lot of variety amongst the other strategies. Which of these will go all the way on Sunday? Stay tuned to the coverage to find out!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/round-4-genesys-feature-match-nicolas-ramlal-vs-daniel-shogan/": [
+    {
+      "t": "p",
+      "r": ["We’re in Round 4 with another Genesys Feature Match! ",{"who":"Nicolas Vishal Ramlal","t":"Nicolas Ramlal"}," is from nearby Lake Nona, playing an Ashtra Tombkeeper Deck! ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," is normally a fixture of the Judge Program, but with YCS Orlando on his doorstep, he had to participate! His opponent is ",{"who":"Daniel Peter Shogan","t":"Daniel Shogan"},", here from Harrisonburg, Virginia. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," is running with Centur-Ion Angelechy, a variant of one of the most successful Decks in the event so far."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 1"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Daniel Peter Shogan","t":"Shogan"}," won the dice roll and chose to play first. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," had an opening hand of ",{"b":"Apophis the Serpent"},", ",{"b":"Akasuna the Battle Ashtra"},", ",{"b":"Mikumari the Banisher Ashtra"},", and two copies of ",{"b":"Treasures of the Kings"},"."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Nicolas Vishal Ramlal","t":"Nicolas Ramlal"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Daniel Peter Shogan","t":"Shogan"}," led with ",{"b":"Angelechy Strategy Score"}," to add ",{"b":"Angelechy Opposition"}," to his hand. He played that, handing over ",{"b":"Angelechy Seneschal"}," to ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," and put ",{"b":"Angelechy Destrier"}," in his back row. Destrier added ",{"b":"Angelechy Brilliant Move"}," to ",{"who":"Daniel Peter Shogan","t":"Shogan"},"’s hand. Seneschal’s effect let ",{"who":"Daniel Peter Shogan","t":"Shogan"}," Special Summon his own Seneschal, while ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Special Summoned ",{"b":"Odin, Father of the Aesir"},". Since it was ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," activating the gifted Seneschal’s effect, Destrier burned ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," for 500 damage. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," played ",{"b":"Angelechy Problem"},", sending Brilliant Move to the Graveyard to Special Summon ",{"b":"Angelechy Enlisted"}," and put ",{"b":"Angelechy Shatranga"}," in his back row. He added ",{"b":"Angelechy Verdict"}," to his hand. Then, he Synchro Summoned ",{"b":"Centur-Ion Auxila"},", adding ",{"b":"Centur-Ion Phalanx"}," to his hand. He Normal Summoned ",{"b":"Centur-Ion Primera"}," and added ",{"b":"Wake Up Centur-Ion!"}," to his hand. He played Wake Up to Special Summon a Level 4 Centur-Ion Token, and used Primera and the Token to Synchro Summon ",{"b":"Centur-Ion Primera Primus"},". That let him add ",{"b":"Emblema Oath"}," to his hand, then destroyed Destrier and Odin (Destrier was not destroyed thanks to Auxila). He played Oath to put ",{"b":"Centur-Ion Atrii"}," in his back row, then Special Summoned it and drew a card. He used Atrii and Primera Primus for ",{"b":"Centur-Ion Legatia"},", destroying Seneschal and drawing another card. He replaced ",{"b":"Angelechy Problem"}," with ",{"b":"Stand Up Centur-Ion!"},", then Set two back row cards. In the End Phase, Auxila placed Atrii in his back row."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," drew ",{"b":"Anubis the Last Judge"},". He discarded Anubis to add ",{"b":"The Man with the Mark"}," to his hand. He activated Treasures, and ",{"who":"Daniel Peter Shogan","t":"Shogan"}," Chained ",{"b":"Angelechy Verdict"}," to negate it. For every one of ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"},"’s effects, Destrier was dishing out 500 damage. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Normal Summoned ",{"b":"The Man with the Mark"},", adding ",{"b":"Temple of the Kings"}," to his hand. He Set Temple, then returned it to his hand to Special Summon Mikumari, which added ",{"b":"Yoa the Plague Ashtra"}," to his hand. He Set ",{"b":"Temple of the Kings"}," again, returning it once more to Special Summon Yoa and Set ",{"b":"Ashtra’s Domain"}," on the field. He activated ",{"b":"Temple of the Kings"},", and ",{"who":"Daniel Peter Shogan","t":"Shogan"}," Special Summoned Atrii to draw a card. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Set ",{"b":"Apophis the Serpent"},", and immediately activated it thanks to ",{"b":"Temple of the Kings"},". ",{"b":"Apophis the Serpent"}," Set ",{"b":"Apophis the Swamp Deity"},", and he flipped it immediately to Special Summon it and negate Shatranga. He used both his trap monsters to bring forth ",{"b":"Divine Serpent Apophis"},", and ",{"who":"Daniel Peter Shogan","t":"Shogan"}," banished it with ",{"b":"Centur-Ion Phalanx"},". ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," returned ",{"b":"Ashtra’s Domain"}," to Special Summon Akasuna. He moved to the Battle Phase, sending Yoa to destroy Legatia and Mikumari to destroy Atrii. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Set ",{"b":"Ashtra’s Domain"},", and used Akasuna’s effect to Set ",{"b":"Ashtra’s Howl"},"."]
+    },
+    {
+      "t": "p",
+      "r": ["In ",{"who":"Daniel Peter Shogan","t":"Shogan"},"’s turn, ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," flipped Howl to Special Summon it as a Tuner. He tuned it to Akasuna for ",{"b":"Ashtraja Susanoo"},". He banished three traps from his Graveyard to banish Auxila, Destrier, and Shatranga! ",{"who":"Daniel Peter Shogan","t":"Shogan"}," banished Opposition from his Graveyard to return four of his Angelechy cards to the Deck and Extra Deck. He Normal Summoned ",{"b":"Kewl Tune Mix"},", and ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Chained Yoa’s effect to reduce Mix’s Level. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," added ",{"b":"Kewl Tune Reco"}," to his hand. He activated a new Stand Up, and ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," flipped up ",{"b":"Ashtra’s Domain"}," to Special Summon it as a Tuner. He tuned it to Mikumari for ",{"b":"Ashtraya Mikumari-no-Mikoto"},". Mikumari returned Domain to the field, and Mikumari-no-Mikoto sent ",{"b":"Ashtra’s Web"}," to the Graveyard. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," activated Strategy Score, adding Opposition to his hand. He played Opposition, handing over Seneschal and putting Destrier in his back row. Destrier added Problem to his hand, and Seneschal let ",{"who":"Daniel Peter Shogan","t":"Shogan"}," Special Summon another Destrier. He banished Verdict from the Graveyard to replace his back row Destrier with Shatranga. That added ",{"b":"Angelechy Disturbance"}," to his hand. He activated Problem, discarding Disturbance to Special Summon Enlisted and place Seneschal in his back row. He tuned Enlisted to Destrier for ",{"b":"Assault Blackwing – Kusanagi the Gathering Storm"},". Kusanagi gained 4000 ATK and wiped out the last of ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"},"’s Life Points!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Duel 2"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," chose to play second for this Duel – a surprising choice for a trap-based Deck, but he probably was hoping trip up his opponent’s Side Deck choices. He started with a hand of ",{"b":"Typhoon"},", ",{"b":"Anubis the Last Judge"},", ",{"b":"Ashtra’s Web"},", and two copies of Mikumari."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Daniel Peter Shogan","t":"Daniel Shogan"}]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Daniel Peter Shogan","t":"Shogan"}," started with Opposition, giving Seneschal to ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," while placing Destrier in his back row. Destrier added Problem to his hand. Seneschal brought a Seneschal to ",{"who":"Daniel Peter Shogan","t":"Shogan"},"’s field and Odin to ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"},"’s, and ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," took 500 damage from Destrier. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," played Strategy Score to add Disturbance, then played Problem. He used its effect by discarding Disturbance, and ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," activated Typhoon to destroy ",{"b":"Angelechy Problem"},". Problem failed to resolve, but Destrier dealt another 500 damage. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," played ",{"b":"Stand Up Centur-Ion!"},", using it to send a ",{"b":"Lava Golem"}," to the Graveyard and place ",{"b":"Centur-Ion Trudea"}," in his back row. He Special Summoned Trudea, using its effect to return it to the back row and get Primera in the back row. He Special Summoned Primera, which added Wake Up to his hand. He played Wake Up to Special Summon a Level 4 Centur-Ion Token, and Synchro Summoned Primera Primus. That let him add ",{"b":"Emblema Oath"}," to his hand, then destroyed his own Trudea and ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"},"’s Odin. He activated ",{"b":"Emblema Oath"}," to place ",{"b":"Centur-Ion Gargoyle II"}," in his back row. He Special Summoned Gargoyle II, reducing its Level to 4. He used it and Primera Primus to Synchro Summon Auxila. Gargoyle II returned to his hand, and Auxila added Phalanx. He activated ",{"b":"Synchro Overtake"},", revealing ",{"b":"Kewl Tune RS"}," to Special Summon ",{"b":"Kewl Tune Reco"},", which added ",{"b":"Kewl Tune Mix"}," to his hand. He used both monsters to Synchro Summon ",{"b":"Kewl Tune Remix"},", returning ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"},"’s Seneschal to the Extra Deck. He Set one card in his back row to finish. In the End Phase, Auxila placed Primera in the back row."]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," drew ",{"b":"Dominus Spiral"},". He used Anubis to add ",{"b":"The Man with the Mark"}," to his hand, and he Normal Summoned it to add ",{"b":"Treasures of the Kings"},". Destrier continued dealing 500 damage to ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," with each effect. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," used Remix’s effect to Synchro Summon ",{"b":"Kewl Tune RS"},", destroy The Man with Mix’s effect. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," played Treasures, and RS negated it. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Set ",{"b":"Ashtra’s Web"}," and returned it to Special Summon Mikumari. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," banished it temporarily with Phalanx. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Set Web and ",{"b":"Dominus Spiral"},". At the end of the Main Phase, ",{"who":"Daniel Peter Shogan","t":"Shogan"}," Special Summoned Primera from his back row and added a Trudea to his hand."]
+    },
+    {
+      "t": "p",
+      "r": ["In the Standby Phase, ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Special Summoned his banished Mikumari from ",{"b":"Centur-Ion Phalanx"},"’s effect. ",{"who":"Daniel Peter Shogan","t":"Shogan"}," activated ",{"b":"Duelist Genesis"}," to add ",{"b":"Synchro Overtake"}," to his hand. He Normal Summoned Trudea, using it and Primera to Synchro Summon Primera Primus. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," flipped ",{"b":"Dominus Spiral"}," targeting ",{"b":"Kewl Tune RS"},", and ",{"who":"Daniel Peter Shogan","t":"Shogan"}," Chained RS to try and negate Spiral. ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," Chained ",{"b":"Ashtra’s Web"}," to Special Summon it as a Tuner, and Synchro Summoned Mikumari-no-Mikoto. Primera Primus finally resolved to destroy Stand Up and Mikumari-no-Mikoto (Stand Up survived thanks to its effect). ",{"who":"Nicolas Vishal Ramlal","t":"Ramlal"}," had no monsters, and ",{"who":"Daniel Peter Shogan","t":"Shogan"}," had enough ATK to end the Match!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Daniel Peter Shogan","t":"Daniel Shogan"}," takes this Match with Centur-Ion Angelechy!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-5-advanced/": [
+    {
+      "t": "p",
+      "r": ["Here’s a look at the Decks at the top tables of YCS Orlando!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here it is by the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Power Patron Elfnote Ars Magna","11"],["Angelechy","6"],["Radiant Typhoon Sky Striker","5"],["Light and Darkness Ritual","3"],["Elfnote Ars Magna","2"],["Radiant Typhoon","2"],["Power Patron Ars Magna Artmage","2"],["Dark Time Wizard Radiant Typhoon","1"],["Ashtra","1"],["Invoked","1"],["Power Patron Ars Magna","1"],["Ars Magna Elfnote Light and Darkness Ritual","1"],["Magistus Fairy Tail","1"],["Angelechy Blitzclique","1"],["Lunalight","1"],["Branded Dracotail","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["The Ars Magna strategies are here in full force, with the Power Patron Elfnote Ars Magna Deck as the current leader. We’re also seeing Ars Magna paired with Artmages and ",{"b":"Light and Darkness Ritual"}," Decks. We’re only halfway into today’s action, so we’ll see how these numbers shift as the competitors Duel for dominance!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-6-advanced/": [
+    {
+      "t": "p",
+      "r": ["Here’s the latest look at our top tables!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the breakdown:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Power Patron Elfnote Ars Magna","12"],["Power Patron Ars Magna Artmage","6"],["Angelechy","5"],["Radiant Typhoon","2"],["Invoked","2"],["Radiant Typhoon Sky Striker","2"],["Clown Crew","2"],["Invoked Magistus Fairy Tail","2"],["Branded Dracotail","1"],["Power Patron Ars Magna","1"],["Ars Magna Sacred Beast","1"],["Ashtra","1"],["Angelechy Blitzclique","1"],["Ars Magna Light and Darkness Ritual","1"],["Horus Light and Darkness Ritual","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["The Power Patron Elfnote Ars Magna strategies are holding strong, with Power Patron Ars Magna Artmage just behind in the numbers. Angelechy is next, followed by a big mix of Decks ranging from Ashtra to Clown Crew to Invoked."]
+    },
+    {
+      "t": "p",
+      "r": ["Check back for another top tables update next round!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-7-advanced/": [
+    {
+      "t": "p",
+      "r": ["Here’s Round 7’s top tables!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the new breakdown:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Angelechy","7"],["Power Patron Ars Magna Artmage","5"],["Elfnote Ars Magna","4"],["Power Patron Elfnote Ars Magna","4"],["Radiant Typhoon","4"],["Invoked","2"],["Angelechy Blitzclique","2"],["Dogmatika Despia Branded","1"],["Artmage Ars Magna","1"],["Magistus Invoked Dracotail","1"],["HERO Destiny HERO","1"],["Ars Magna","1"],["Magistus Fairy Tail","1"],["Horus Light and Darkness Ritual","1"],["Ars Magna Elfnote","1"],["Clown Crew","1"],["Elfnote","1"],["Lunalight","1"],["Dracotail","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["Angelechy has taken over as the biggest Deck at the top tables, but the many Ars Magna variants are holding strong! Keep checking back for more top table updates today!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-8-advanced/": [
+    {
+      "t": "p",
+      "r": ["Here’s a look at Round 8’s top tables!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the breakdown by the numbers:"]
+    },
+    {
+      "t": "p",
+      "r": ["Deck TypesCount"]
+    },
+    {
+      "t": "table",
+      "rows": [["Power Patron Ars Magna Artmage","15"],["Angelechy","9"],["Angelechy Blitzclique","2"],["Radiant Typhoon Sky Striker","2"],["Radiant Typhoon","2"],["Light and Darkness Ritual","2"],["Sacred Beast","1"],["Dogmatika Despia Branded","1"],["Red Dragon Archfiend","1"],["Lunalight","1"],["Ars Magna Sacred Beast","1"],["Power Patron Ars Magna Elfnote","1"],["Dracotail","1"],["Onomat Ryzeal","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["Artmage Decks have taken over, powered by the Power Patrons and Ars Magna. Angelechy Decks are just behind those, followed by a huge spread of various strategies. We’ve got one more round today, so check back for our final Top Tables Update!"]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-9-advanced/": [
     {
       "t": "p",
@@ -19,6 +417,176 @@
     {
       "t": "p",
       "r": ["This is our final Top Tables Update for today – come back tomorrow for more coverage of YCS Orlando!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/day-3-at-ycs-orlando/": [
+    {
+      "t": "p",
+      "r": ["The dust has settled, and our top Duelists have advanced to the final portions of YCS Orlando!"]
+    },
+    {
+      "t": "p",
+      "r": ["256 Advanced Duelists have moved on to today’s competition, where we’ll see 5 additional Swiss rounds before we cut to the Top 8. Ars Magna are the big stars of the tournament thus far, paired with Power Patrons to augment Elfnote and Artmage strategies. There’s also a strong Angelechy presence, plus a wide variety of Decks after that – we’ll have to wait and see what makes it to the Top Cut."]
+    },
+    {
+      "t": "p",
+      "r": ["64 Genesys Duelists have qualified from Friday, with 4 more Swiss rounds today. We’ve had plenty of Angelechy, Magistus Fairy Tail, and Blitzclique Decks at the top tables, along with several rogue strategies like DoomZ and Labrynth. Stay tuned to see what Decks prevail into our Top 8!"]
+    },
+    {
+      "t": "p",
+      "r": ["The Duelists are seated, and we’re ready to dive back into both of these events. It’s time to Duel!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/genesys-top-tables-update-round-10/": [
+    {
+      "t": "p",
+      "r": ["Here’s a fresh look at the Genesys top tables!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the breakdown by the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Blitzclique Angelechy","5"],["Angelechy","4"],["Blitzclique","4"],["Magistus Fairy Tail","4"],["Centur-Ion Angelechy","3"],["Ashtra Angelechy","2"],["Ancient Fairy Angelechy","2"],["Chimera Dark Time Wizard","2"],["Ashtra Angelechy Blitzclique","2"],["Ashtra Ancient Fairy Angelechy","1"],["Ashtra Dark Time Wizard","1"],["Angelechy Magistus Elfnote","1"],["Radiant Typhoon Dark Time Wizard","1"],["Ashtra Invoked Blitzclique","1"],["White Forest Blitzclique","1"],["Vanquish Soul","1"],["Assault Mode Snake-Eye Elfnote","1"],["Darklord","1"],["Dogmatika Labrynth","1"],["DoomZ","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["There are only a few Swiss rounds to go, so this is a good look at the kinds of Decks we might see in the Top 8. Angelechy variants are going strong, along with Blitzclique and Magistus Fairy Tail near the top. We’ll continue updating as we head into the final Swiss rounds!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-11-advanced/": [
+    {
+      "t": "p",
+      "r": ["Our Advanced event is in full swing – here’s a look at the top tables."]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the full breakdown:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Power Patron Elfnote Ars Magna","12"],["Angelechy","10"],["Magistus Fairy Tail","4"],["Power Patron Ars Magna Artmage","4"],["Light and Darkness Ritual","3"],["HERO Destiny HERO","2"],["Sky Striker","2"],["Dogmatika Branded Dracotail","1"],["Onomat Ryzeal","1"],["Radiant Typhoon","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["We’ve got a strong presence from the Decks powered by Ars Magna and Power Patrons, with Elfnote builds in the lead. Angelechy are just behind those, followed by Magistus Fairy Tail and ",{"b":"Light and Darkness Ritual"}," Decks. There’s still plenty of Dueling to go before we cut to our Top 8, so stick around to see how these numbers evolve!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-11-genesys/": [
+    {
+      "t": "p",
+      "r": ["Here’s the latest look at our top tables!"]
+    },
+    {
+      "t": "p",
+      "r": ["By the numbers:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Blitzclique","6"],["Blitzclique Angelechy","4"],["Angelechy","4"],["Ancient Fairy Angelechy","3"],["Magistus Fairy Tail","3"],["Ashtra Angelechy","2"],["Chimera Dark Time Wizard","2"],["Ashtra Angelechy Blitzclique","2"],["White Forest Angelechy","1"],["Dark Time Wizard Angelechy","1"],["Centur-Ion Angelechy","1"],["Radiant Typhoon Dark Time Wizard","1"],["Radiant Typhoon","1"],["DoomZ","1"],["Ashtra Invoked Blitzclique","1"],["Angelechy Magistus Elfnote","1"],["White Forest Blitzclique","1"],["Vanquish Soul","1"],["Dogmatika Labrynth","1"],["Darklord","1"],["Assault Mode Snake-Eye Elfnote","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["The most popular individual Deck at the top is Blitzclique, though the many Angelechy variants are the most populous overall. We’ll have our Top Cut in just a couple rounds, and any of these many strategies could still make it!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-top-tables-update-round-12-advanced/": [
+    {
+      "t": "p",
+      "r": ["Here’s a look at our Advanced top tables!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here’s the full breakdown:"]
+    },
+    {
+      "t": "table",
+      "rows": [["Deck Types","Count"],["Angelechy","11"],["Power Patron Elfnote Ars Magna","13"],["Power Patron Ars Magna Artmage","6"],["Sky Striker","2"],["Onomat Ryzeal","1"],["Magistus Fairy Tail","1"],["Ars Magna","1"],["Angelechy Blitzclique","1"],["Invoked","1"],["Destiny HERO","1"],["Sacred Beast","1"],["Radiant Typhoon","1"]]
+    },
+    {
+      "t": "p",
+      "r": ["We continue to see the Ars Magna prove their strength, with many Elfnote and Artmage strategies near the top. Angelechy continue to hang with them. That’s followed by a huge mix of Decks, all with a great shot at making the Top 8."]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-sundays-top-4-dragon-duelists/": [
+    {
+      "t": "p",
+      "r": ["Here are today’s Dragon Duel Top 4!"]
+    },
+    {
+      "t": "p",
+      "r": ["Here are our Dragon Duelists, who requested to be joined by Dragon Duel Head Judge Steven!"]
+    },
+    {
+      "t": "p",
+      "r": ["From the left, we have:"]
+    },
+    {
+      "t": "p",
+      "r": ["1st Place: Simon B.\n2nd Place: Grant P.\n3rd Place: Abel B.\n4th Place: Karl G."]
+    },
+    {
+      "t": "p",
+      "r": ["Congratulations to our Dragon Duelists! We’ll be seeing Simon face off with Grant in the YCS Orlando Dragon Duel Championship later today!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-first-timers-in-orlando/": [
+    {
+      "t": "p",
+      "r": ["A YCS is a proving ground for the greatest Duelists, but every journey begins with one step. These Duelists are attending their first ever YCS! Let’s meet them!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Noah Tyler Shively","t":"Noah Shively"}," with the Purrely team!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Noah Tyler Shively","t":"Noah Shively"}," made the drive here from Birmingham, Alabama. He started Dueling just last summer, with his first tournament the weekend ",{"i":"Duelist’s Advance"}," released. He played in the Genesys event yesterday using his Purrely Deck, saying he really enjoyed Genesys despite not having tried it much before. He especially liked how Genesys is a way to play with Decks that might not be seen in Advanced. So far he’s been enjoying the event, and liked meeting people he’d seen in the coverage of past events – he even got Jeff Leonard to sign his copy of ",{"b":"Exodia the Forbidden One"},". He’ll be playing his Ars Magna Elfnote Deck in the Advanced tournament today."]
+    },
+    {
+      "t": "p",
+      "r": ["Noah’s favorite card is ",{"b":"Epurrely Happiness"},", and he has the Yu-Gi-Oh! Day Game Mat to show it off in every Duel!"]
+    },
+    {
+      "t": "p",
+      "r": ["Mike Kelly and the Rescute Rescue Squad!"]
+    },
+    {
+      "t": "p",
+      "r": ["Mike Kelly is here from West Palm Beach, Florida, with several friends from the same local tournament scene. Mike said he got started in Yu-Gi-Oh! back in 2011 when Dino Rabbit and Wind-Ups were the strongest Decks. He’s playing an Ars Magna ",{"b":"Light and Darkness Ritual"}," Deck today, commenting on how strong the Ars Magna cards are with ",{"b":"Mediclius the Extraordinary Power Patron"},". He was very happy to come to this event and find that YCS Champions were very welcoming, and happy to talk and give tips."]
+    },
+    {
+      "t": "p",
+      "r": ["Mike’s favorite card is ",{"b":"Rescue Rabbit"}," thanks to his early days playing the Dino Rabbit Deck. We didn’t have a copy at the ready, so instead he posed with our ",{"b":"Rescue Rabbit"}," banner while showing another favorite: ",{"b":"Dark Magician of Destruction"},"!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Joseph Eric Patalano","t":"Joseph Patalano"}," and ",{"who":"Maria Louise Gibson","t":"Maria Gibson"}," with repping their favorites!"]
+    },
+    {
+      "t": "p",
+      "r": [{"who":"Joseph Eric Patalano","t":"Joseph Patalano"}," and ",{"who":"Maria Louise Gibson","t":"Maria Gibson"}," are in the same group as Mike, here from West Palm Beach. They got started Dueling just a few months ago with ",{"i":"Chaos Origins"},"! Maria is using Lunalight in both Genesys and Advanced this weekend, which was the second Deck she learned after Melffys. She’d played some other trading card games before, and loved how Yu-Gi-Oh! is such a unique experience with a lot of challenge and depth. She initially wasn’t planning to play in the YCS, but jumped in at the last minute to join her brother and the others who travelled here together."]
+    },
+    {
+      "t": "p",
+      "r": ["Maria said her favorite card is ",{"b":"Cupsy☆Yummy"},", and showed off her custom Yummy nails! There’s ",{"b":"Cupsy☆Yummy"}," and ",{"b":"Marshmao☆Yummy"}," with a candy theme!"]
+    },
+    {
+      "t": "p",
+      "r": ["That’s dedication, and I now expect more Duelists to do the same. Don’t let me down, readers!"]
+    },
+    {
+      "t": "p",
+      "r": ["Joseph said he got started because he had a lot of friends who played. He was drawn to the Blitzclique Deck, really enjoying the midrange gameplay style where you can pick apart your opponent’s field and not rely on the Extra Deck. He said it’s been a lot of fun at the YCS, where he’s playing Blitzclique in both the Genesys and Advanced events. Joseph, Maria, and Mike aren’t the only ones from their local area – three of this weekend’s Bounty Duelists are also from the same scene! Joseph reflected that having many strong Duelists in his area has been great for his own improvement."]
+    },
+    {
+      "t": "p",
+      "r": ["Joseph’s favorite card is ",{"b":"Whisker Blitzclique"},", a card he’s happy to draw every time. He posed with the whole Blitzclique crew for our photo!"]
+    },
+    {
+      "t": "p",
+      "r": ["It’s always a delight to meet Duelists taking their first step in their YCS experience! Good luck, first-timers!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-saturdays-top-4-dragon-duelists/": [
@@ -131,6 +699,108 @@
       "r": ["We’re continuing the Genesys Swiss rounds soon, so we’ll see which of these trends, or others, will get our Duelists into the Top 8!"]
     }
   ],
+  "https://yugiohblog.konami.com/2026/ycs/ycs-orlandos-double-qualifying-duelists/": [
+    {
+      "t": "p",
+      "r": ["Some Duelists were so skilled, they qualified for Sunday’s competition in both Advanced AND Genesys!"]
+    },
+    {
+      "t": "p",
+      "r": ["Since both events are running simultaneously, these Duelists will now need to make a decision for which tournament to continue in. Here are our Duelists that qualified for both, and which event they’re going to keep playing in."]
+    },
+    {
+      "t": "p",
+      "r": ["Lewis, ",{"who":"Avery Mark Lewis","t":"Avery Mark"}," – Genesys\nRussell, ",{"who":"Justin Chase Russell","t":"Justin Chase"}," – Genesys\nKite, ",{"who":"Logan Michael Kite","t":"Logan Michael"}," – Advanced\nMorrow, ",{"who":"Chandler Eugene Morrow","t":"Chandler Eugene"}," – Advanced\nNeal, ",{"who":"Cameron Taylor Neal","t":"Cameron Taylor"}," – Advanced\nOutlaw, ",{"who":"Brendan Russell Outlaw","t":"Brendan Russell"}," – Genesys\nDharap, ",{"who":"Aditya Shirish Dharap","t":"Aditya Shirish"}," – Advanced\nCrowley, ",{"who":"Tayveon Garrett Crowley","t":"Tayveon Garrett"}," – Genesys\nBlake, Mason William – Advanced\nSimon, ",{"who":"Nicholas Ellis Simon","t":"Nicholas Ellis"}," – Genesys\nPettit, ",{"who":"Corey Wayne Pettit","t":"Corey Wayne"}," – Advanced\nRios, ",{"who":"Antonio Miguel Rios","t":"Antonio Miguel"}," – Gensys\nNiebrzydowski, Alexander – Advanced\nNguyen, Derek – Advanced\nWilkin, ",{"who":"John Alexander Wilkin","t":"John Alexander"}," – Advanced\nEichelberger, ",{"who":"Rico Carlos Eichelberger","t":"Rico Carlos"}," – Advanced\nVecht, Dave – Advanced\nKlein, ",{"who":"Lennard Joakim Klein","t":"Lennard Joakim"}," – Advanced\nReich, ",{"who":"Rafael Mariano Reich","t":"Rafael Mariano"}," – Advanced"]
+    },
+    {
+      "t": "p",
+      "r": ["We look forward to seeing these Duelists continue tomorrow!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-orlando-florida-2026/": [
+    {
+      "t": "p",
+      "r": ["Get ready for the final North American YCS of 2026!"]
+    },
+    {
+      "t": "p",
+      "r": ["Read more: Welcome to YCS Orlando!"]
+    },
+    {
+      "t": "p",
+      "r": ["We’re hot on the heels of YCS Houston, where we saw ",{"who":"Trevor Lee Parker","t":"Trevor Parker"}," win the Advanced event with his ",{"b":"Dark Magician"}," Deck packing ",{"b":"Light and Darkness Ritual"},". A lot has changed in just a few short weeks, with a new Forbidden & Limited List that has shaken up the top strategies. YCS Orlando is in a unique position, between the F&L List changes and next week’s ",{"i":"Magnificent Maestros"},". It’ll take a talented Duelist to find the perfect way to approach the new Advanced Format in this window."]
+    },
+    {
+      "t": "p",
+      "r": ["But all that will have to wait until tomorrow – today is for Genesys! While we didn’t see a big change in Genesys like we did in Advanced, there’s still plenty to be excited about. We just had the big 1st anniversary points update in Genesys shortly before YCS Houston, and Duelists were still getting a feel for the updates. Now that a month has passed, we can see more refined Genesys strategies with these new points. YCS Houston saw ",{"who":"Enzo Maximiliano Fiallos Velasco","t":"Enzo Fiallos"}," winning it all with Blitzclique, along with Angelechy, Magistus Fairy Tail, Destiny HERO, and ",{"b":"Dark Time Wizard"}," Decks among the top strategies. We’ll see what performs this time before ",{"i":"Magnificent Maestros"}," shakes things up!"]
+    },
+    {
+      "t": "p",
+      "r": ["Genesys Round 1 is about to begin! Check back for all the updates from today’s action, and follow along on our live stream on YouTube or Twitch!"]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/implementing-yu-gi-oh-neuron-at-ycs-orlando/": [
+    {
+      "t": "p",
+      "r": ["YCS Orlando is the first major event to use Yu-Gi-Oh! NEURON for Duelists. Let’s dive in and see what that entails."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Your Entire Tournament in One App"}]
+    },
+    {
+      "t": "p",
+      "r": ["The most immediate effect Duelists will experience is having their whole tournament in one location. Under the Events tab, you’ll find your active tournaments. That will show your pairings, including the table number for you to head to. No need to congregate around a paper posting – it’s all in your hand. Once your Match concludes, you’ll even report directly in the app, eliminating the need for Match slips and waiting for a judge."]
+    },
+    {
+      "t": "p",
+      "r": ["Even more paperwork is cut out with Yu-Gi-Oh! NEURON, starting with your Deck registration. When you’ve signed up for an event, you’ll have an option to register your Deck directly in the app. No need to write one up, no troubles with handwriting, it’s all handled digitally."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Deck Building Made Easy"}]
+    },
+    {
+      "t": "p",
+      "r": ["Speaking of Deck registration, Yu-Gi-Oh! NEURON is a great resource to build your Decks. You can choose between the Forbidden & Limited List, the Genesys points list, or the Yu-Gi-Oh! MASTER DUEL Forbidden & Limited List. This makes it so no matter what media or format you’re in, you’ve got the right cards available. It’s especially useful for Genesys, because every card’s points will be visible directly on the card, with your current point total at the top. In this example, you can see that ",{"b":"Ash Blossom & Joyous Spring"}," cost 18 points, and the current point total is 90."]
+    },
+    {
+      "t": "p",
+      "r": ["You can also apply categories and tags to your Decks. This helps if you make the Deck publicly viewable, so other Duelists can narrow down their search and find your creation. There’s another feature using these categories, which we’ll cover in just a moment."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Gameplay Tools"}]
+    },
+    {
+      "t": "p",
+      "r": ["Since you’re already using Yu-Gi-Oh! NEURON for the rest of the tournament, you can also use the Dueling tools! You can track your Life Points, including a log feature to show changes throughout the Duel. Dice rolling and coin flips can also be handled in the app, and you can even scan a card to bring it up in the database (such as for a translation)."]
+    },
+    {
+      "t": "p",
+      "r": ["All this with multiple styles from across the many Yu-Gi-Oh! series!"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Profile Features"}]
+    },
+    {
+      "t": "p",
+      "r": ["You can show off your Dueling history in your profile with in-app achievements! These achievements will take data directly from your tournament results. This is where your Deck categories come back in the picture. There are achievements for winning using different categories of Decks – for example, I’ve displayed here some achievements for using Hungry Burger, Centur-Ion, and Evil★Twin. The badges will even include the date you earned the achievement!"]
+    },
+    {
+      "t": "p",
+      "r": ["This information comes from the Deck you register in Yu-Gi-Oh! NEURON for any given event. Make sure you register a Deck that’s marked with the right categories to start getting these medals!"]
+    },
+    {
+      "t": "p",
+      "r": ["There are even more achievements available for different challenges, such as playing in many events in total, or winning several times in a row. Do your best and make your profile shine!"]
+    },
+    {
+      "t": "p",
+      "r": ["We’re thrilled to bring Yu-Gi-Oh! NEURON to the big stage at YCS Orlando!"]
+    }
+  ],
   "https://yugiohblog.konami.com/2026/ycs/ycs-orlando-prize-wall-including-new-items/": [
     {
       "t": "p",
@@ -199,6 +869,44 @@
     {
       "t": "p",
       "r": ["And of course, we’ve got all kinds of Dueling extras like portfolios and card cases."]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/ycs/the-giant-cards-of-ycs-orlando/": [
+    {
+      "t": "p",
+      "r": ["Here’s the brand new GIANT cards for the ATTACK OF THE GIANT CARD!! events this weekend!"]
+    },
+    {
+      "t": "p",
+      "r": ["ATTACK OF THE GIANT CARD!! is one of the most popular events at every YCS, with one Advanced and one Genesys tournament held each day. The first place Duelist will take home a one-of-a-kind GIANT card, while the rest of the Top 4 will claim oversized cards (still very big, but not quite GIANT). Here are the available cards at YCS Orlando!"]
+    },
+    {
+      "t": "p",
+      "r": ["Let’s kick things off with the Advanced event. The first option is ",{"b":"Akasuna the Battle Ashtra"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["Perhaps you prefer another Ashtra option? We also have ",{"b":"Ashtraja Susanoo"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["The final Advanced prize is the incredible ",{"b":"Mediclius the Extraordinary Power Patron"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["Now for our Genesys prizes – first is the amazing ",{"b":"Dark Time Wizard"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["The most dark and brooding GIANT card is ",{"b":"Destiny HERO – Dreadnought Master"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["Finally, we have a GIANT ",{"b":"Verre, the Maid of Endymion"},"!"]
+    },
+    {
+      "t": "p",
+      "r": ["Good luck to the Duelists battling for these amazing prizes!"]
     }
   ],
   "https://yugiohblog.konami.com/2026/event-information/ycs-orlando-fl-2026-public-event-information/": [
@@ -1414,6 +2122,712 @@
     {
       "t": "p",
       "r": ["KDE-US makes no representations that it has taken any safety precautions that relate to infectious diseases or exposure, and even if KDE-US did proactively take preventative measures, KDE-US has made no representation that those measures will in any way reduce or prevent the risks associated with exposure. Attendees release KDE-US, its employees and representatives, and all persons involved WITH RESPECT TO ANY AND ALL ILLNESS, DISABILITY, DEATH, or loss or damage to person or property, to the fullest extent permitted by law. BY ATTENDING IN THIS EVENT, ATTENDEES ARE DEEMED TO HAVE GIVEN A FULL RELEASE OF LIABILITY TO KDE-US TO THE FULLEST EXTENT PERMITTED BY LAW."]
+    }
+  ],
+  "https://yugiohblog.konami.com/2026/event-information/ycs-santiago-chile-2026-main-event-information/": [
+    {
+      "t": "p",
+      "r": [{"b":"Yu-Gi-Oh! Championship Series Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Genesys Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Genesys Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Advanced Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Advanced Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Main Event Prizing Images"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Travel"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Infectious Diseases"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Yu-Gi-Oh! Championship Series Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Where is YCS Santiago, Chile?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," YCS Santiago, Chile 2026 will be held at:"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Centro Cultural Estación Mapocho"},"\nPlaza de la Cultura s/n, Ex Estación de Trenes, Metro Puente Cal y Canto\nSantiago, Chile\n"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the attendance capacity for this YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Due to safety, health, and fire regulations, we have seating for up to 600 Duelists for this YCS (this is the total Duelist venue capacity). We urge you to pre-register online to have a better chance of being able to play in the Main Events. If the venue reaches capacity, additional Duelists will not be allowed to enter the hall. As space opens up from the Main Events, we will offer numerous Public Events that you will still be able to participate in throughout the weekend."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Main Events will be at YCS Santiago, Chile?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," YCS Santiago, Chile will feature two Main Events. The Genesys Main Event Day 1 will be held on Friday, November 27",{"s":"th"}," and Day 2 on Sunday, November 29",{"s":"th"},". The Advanced Main Event Day 1 will be held on Saturday, November 28",{"s":"th"}," and Day 2 on Sunday, November 29",{"s":"th"},". If a Duelist makes Day 2 for both events, they will need to decide which Day 2 they want to compete in and inform the Main Scorekeeper once the standings are posted at the end of Saturday, November 28",{"s":"th"}," before the event hall is cleared."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What are the Deck-building requirements for the Main Events?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Duelists can find detailed information about Deck-building for Advanced and Genesys on the Deck construction page, https://www.yugioh-card.com/en/limited/"]
+    },
+    {
+      "t": "p",
+      "r": ["Here is the basic information:"]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Advanced"}]
+    },
+    {
+      "t": "p",
+      "r": ["Decks must follow the Forbidden & Limited List, which can be viewed at https://www.yugioh-card.com/en/limited/list_2026-10-19/"]
+    },
+    {
+      "t": "p",
+      "r": ["For information on how to submit your Advanced Deck List, please see ",{"b":"When do I turn in my Deck List for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Genesys"}]
+    },
+    {
+      "t": "p",
+      "r": ["Genesys rules are simple:"]
+    },
+    {
+      "t": "li",
+      "r": ["No Link Monsters or Pendulum Monsters are allowed. All other cards are allowed. The original field layout is used, with no Extra Monster Zones nor Pendulum Zones."]
+    },
+    {
+      "t": "li",
+      "r": ["The standard Forbidden & Limited Cards list is not used. All those cards can be used, except Link Monsters and Pendulum Monsters. Usual limit of 3 copies max of any card still applies."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck construction uses a point system. Some cards are assigned a point value; most cards cost zero points. The total point cost of cards in your Main Deck, Extra Deck, and Side Deck (combined) cannot exceed the point cap for that event."]
+    },
+    {
+      "t": "p",
+      "r": ["For the Genesys Main Event, we will use the 100 Points cap for Deck-building. Click the link below for the current Genesys Points list. Genesys Deck List must be submitted through https://registration.yugioh-card.com/"]
+    },
+    {
+      "t": "p",
+      "r": ["https://www.yugioh-card.com/en/genesys"]
+    },
+    {
+      "t": "p",
+      "r": ["For information on how to submit your Genesys Deck List, please see ",{"b":"How do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Rounds will the Yu-Gi-Oh! Championship Series have?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The total number of Duelists in each of the Main Events, Advanced and Genesys, will determine the number of Rounds that are played in that specific Main Event."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How many Duelists will advance to Day 2?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," If there are 32 or fewer Duelists registered for the YCS, then the Top 8 Duelists will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 33 – 64 Duelists registered for the YCS, then the Top 16 Duelists or Duelists with a minimum of 15 points, whichever is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 65 – 128 Duelists registered for the YCS, then the Top 32 Duelists or Duelists with a minimum of 15 points, whichever is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 129 – 256 Duelists registered for the YCS, then the Top 64 Duelists OR Duelists with a minimum of 15 points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 257 – 512 Duelists registered for the YCS, then the Top 64 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 513 – 1024 Duelists registered for the YCS, then the Top 128 Duelists OR Duelists with a minimum of 18 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 1025 – 2048 Duelists registered for the YCS, then the Top 256 Duelists OR Duelists with a minimum of 21 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": ["If there are 2049 or more Duelists registered for the YCS, then the Top 256 Duelists OR Duelists with a minimum of 21 Points, whichever number is larger, will advance to Day 2."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What cards are legal for play?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Please check the “Products” page online at https://www.yugioh‐card.com/en/products/ for the most current legality dates of Yu-Gi-Oh! TRADING CARD GAME product releases, prior to preparing your Deck for the event."]
+    },
+    {
+      "t": "p",
+      "r": ["Cards that have been altered from their original appearance with surface decoration may be used for play"]
+    },
+    {
+      "t": "p",
+      "r": ["only if the alterations do not obscure any portion of the card text, make the illustration difficult to recognize, or make the card distinguishable from other cards in the Deck while it is face-down."]
+    },
+    {
+      "t": "p",
+      "r": ["If a card’s surface decoration renders the card unrecognizable at first glance, then the card is not allowed for tournament play."]
+    },
+    {
+      "t": "p",
+      "r": ["The Head Judge of the event has final arbitration on whether or not altered cards may be used at the tournament. Duelists are responsible for determining whether or not their altered cards are acceptable for use before the start of the tournament."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Will there be meal breaks during the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," As there will be food and drinks available inside the tournament hall, there will not be any meal breaks scheduled into the tournament."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Who should I contact if I have questions about the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Tournament Organizer Company:"}," TCG Life"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"E-mail:"}," tcglifetienda@gmail.com"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Whatsapp:"}," +56 9 4358 5893"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"KDE-US Representative"},"\nEmail: la-opsupport@kde-us.com with the subject “Question for YCS Santiago 2026”"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Will there be coverage of the YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Yes! There will be online coverage and other updates at the YCS available here:"]
+    },
+    {
+      "t": "p",
+      "r": ["Event Coverage blog – Event updates, Pairings, and Standings"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When is the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the Booster Pack purchase requirement to register for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," At check in, Duelists will pay CLP 20,000 to receive four (4) booster packs and registration in the event. This is the cost of four (4) booster packs in the host country, including any taxes and fees.\n\nCash and Credit Cards will be the methods of payment accepted for YCS – Santiago, Chile and all Public Events. Gift cards and checks will not be accepted"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the registration schedule for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The registration schedule for the Genesys Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Schedules are subject to change and may be updated before the event begins. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Online registration is open till the End Time and Date listed above or until available seats sell out, whichever comes first. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Deck Lists MUST be submitted by the Deck List Due Date via the website where you registered. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["See ",{"b":"How do I turn in my Deck List for the Genesys Main Event?"}," For more information"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When can I register for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," For this YCS, Duelists will need to register online to secure a seat to compete in the Genesys Main Event."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists can register online here: https://registration.yugioh-card.com/"]
+    },
+    {
+      "t": "li",
+      "r": ["If you have not used the site to register for a YCS or WCQ event, you will need to create an account in order to register. You can do this at any time, you do not need to wait for the event registration to open to register an account."]
+    },
+    {
+      "t": "li",
+      "r": ["Registration will remain open until either all available seats in the Genesys Main Event are sold out or until Thursday, November 26, 2026 at 12:00 PM CLST (whichever comes first)."]
+    },
+    {
+      "t": "li",
+      "r": ["Space is limited."]
+    },
+    {
+      "t": "li",
+      "r": [{"b":"Duelists who successfully register must still arrive at the YCS and check in on Thursday, November 26, 2026 between 3:00 PM CLST and 6:30 PM CLST to confirm their seat in the Tournament or their seat will be forfeited. Duelists who have also registered for the Advanced Main Event can also check in for the Advanced Main Event at this time."}]
+    },
+    {
+      "t": "li",
+      "r": ["If you are not able to check in on Thursday, November 26, 2026 prior to 6:30 PM CLST due to travel or other issues, you will need to contact the Tournament Organizer at tcglifetienda@gmail.com no later than 10:00 AM CLST on Thursday, November 26, 2026 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "li",
+      "r": ["Any Duelist that does not attend a YCS they registered for and does not reach out to the Tournament Organizer beforehand will be blocked from registering online for future YCS events."]
+    },
+    {
+      "t": "p",
+      "r": ["We urge you to register online for the event due to seating capacity."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Once you have registered for the Genesys Main Event you must go through https://registration.yugioh-card.com/ and submit your Genesys Deck List."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the Deck List deadline of 2:00 PM CLST Thursday, November 26, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": ["Deck Lists must be submitted through https://registration.yugioh-card.com/ Physical copies of a Deck List will not be accepted onsite for the YCS."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When do I turn in my Deck List for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Deck Lists are due through https://registration.yugioh-card.com/ by 2:00 PM CLST on Thursday, November 26, 2026."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists who do not turn in their Deck Lists by this deadline, will ",{"b":"automatically"}," forfeit their seat. Any Duelist that does not attend a YCS they registered for and does not reach out to the Tournament Organizer at tcglifetienda@gmail.com beforehand will be blocked from registering online for future YCS/WCQ events."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck Lists must be submitted through https://registration.yugioh-card.com/. Physical copies of a Deck List will not be accepted onsite for the YCS."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the registration deadline of 2:00 PM CLST on Thursday, November 26, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": ["Q: ",{"b":"What is the event schedule for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The event schedule for the Genesys Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["* Duelists who are competing in both Genesys and Advanced may also check in for Advanced on Thursday. Advanced Deck Lists must be submitted to check in but can still be updated and resubmitted up until the Advanced Deck List deadline of 10:00 AM CLST on Friday, November 26, 2026."]
+    },
+    {
+      "t": "p",
+      "r": ["** Alternate On-Site Check-In is only for Duelists who email the Tournament Organizer to arrange it if they are unable to arrive at the venue by 6:30 PM CLST on Thursday, November 26, 2026. Duelists MUST email the Tournament Organizer at tcglifetienda@gmail.com no later than 10:00 AM CLST on Thursday, November 26, 2026 to secure this Alternate Check-In***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I check in for the Genesys Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Pre-registered Duelists just need to arrive on-site at the venue between 3:00 PM and 6:30 PM CLST on Thursday, November 26, and follow the signs to check in and confirm their seat in the YCS. At this time, Duelists will be asked to pay CLP 20,000 to receive four (4) booster packs once they are confirmed at check in."]
+    },
+    {
+      "t": "p",
+      "r": ["If you are not able to check in on Thursday, November 26 prior to 6:30 PM due to travel or other issues, you will need to contact the Tournament Organizer at tcglifetienda@gmail.com no later than 10:00 AM CLST on Thursday, November 26 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Genesys Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": ["*In addition to the other prizes for 1st place, the winner will receive complimentary travel and accommodation for the next Genesys Championship in their territory (North and Latin America only)."]
+    },
+    {
+      "t": "p",
+      "r": ["** Not all Yu-Gi-Oh! Cards can be made into Giant Cards see https://www.yugioh-card.com/en/events/faq/event_prizing/ for details."]
+    },
+    {
+      "t": "p",
+      "r": ["*** The YCS Prize Card Pack will be available starting at the 1st Round of Swiss on Day 2 based on standings announced at the end of Day 1. Duelists may pick up their packs at the main stage from the start of the 1st Round of Swiss on Day 2 up until the start of Top 8."]
+    },
+    {
+      "t": "p",
+      "r": ["The Ultra Rare YCS Prize Card and Super Rare YCS Prize Card will be awarded after Final Swiss Standings are determined, prior to the Top 8 cut. Duelists must still be enrolled in the tournament at the end of the final Round of Swiss and ranked in the Top 16 or Top 32 respectively to receive these Prize Cards and any other Top 16 or Top 32 prizes."]
+    },
+    {
+      "t": "p",
+      "r": ["▶ ",{"b":"Main Event Prizing Images are here"},"!"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Advanced Main Event Information"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When is the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}]
+    },
+    {
+      "t": "p",
+      "r": ["Duelists participating in the Genesys Main Event may also check in for the Advanced Main Event on Thursday November 26 when they are checking in for Genesys."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the Booster Pack purchase requirement to register for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," At check in, Duelists will pay CLP 20,000 to receive four (4) booster packs and registration in the event. This is the cost of four (4) booster packs in the host country, including any taxes and fees.\n\nCash and Credit Cards will be the methods of payment accepted for YCS – Santiago, Chile and all Public Events. Gift cards and checks will not be accepted"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the registration schedule for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The registration schedule for the Advanced Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Schedules are subject to change and may be updated before the event begins. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Online registration is open till the End Time and Date listed above or until available seats sell out, whichever comes first. ***"]
+    },
+    {
+      "t": "p",
+      "r": ["*** Deck Lists MUST be submitted by the Deck List Due Date via the Yu-Gi-Oh! Premier Event Registration Site . ***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When can I register for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," For this YCS, Duelists will need to register online to secure a seat to compete in the Advanced Main Event."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists can register online here: https://registration.yugioh-card.com/"]
+    },
+    {
+      "t": "li",
+      "r": ["If you have not used the site to register for a YCS or WCQ event, you will need to create an account in order to register. You can do this at any time, you do not need to wait for the event registration to open to register an account."]
+    },
+    {
+      "t": "li",
+      "r": ["Registration will remain open until either all available seats in the Advanced Main Event are sold out or until Friday, November 27, 2026 at 12:00 PM CLST (whichever comes first)."]
+    },
+    {
+      "t": "li",
+      "r": ["Space is limited."]
+    },
+    {
+      "t": "li",
+      "r": [{"b":"Duelists who successfully register must still arrive at the YCS and check in on Friday, November 27, 2026 between 12:00 PM CLST and 6:00 PM CLST to confirm their seat in the Tournament or their seat will be forfeited. If you are also playing in the Genesys Main Event, you may also check in for the Advanced Main Event on Thursday, November 26, 2026 between 3:00 PM CLST and 6:30 PM CLST."}," You must already have submitted a Deck List for the Advanced Main Event, but you can make changes to your Deck List until Friday 10AM CLST. You do not need to check in on Friday for the Advanced Main Event if you check in on Thursday."]
+    },
+    {
+      "t": "li",
+      "r": ["If you are not able to check in on Friday, November 27, 2026 prior to 6:00 PM CLST due to travel or other issues, you will need to contact the Tournament Organizer at tcglifetienda@gmail.com no later than 10:00 AM CLST on Friday, November 27, 2026 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "li",
+      "r": ["Any Duelist that does not attend a YCS they registered for and does not reach out to the Tournament Organizer at tcglifetienda@gmail.com beforehand will be blocked from registering online for future YCS/WCQ events."]
+    },
+    {
+      "t": "p",
+      "r": ["We urge you to register online for the event due to seating capacity."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: When do I turn in my Deck List for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Deck Lists are due online by 10:00 AM CLST on Friday, November 27, 2026."]
+    },
+    {
+      "t": "li",
+      "r": ["Duelists who do not turn in their Deck Lists by this deadline, will ",{"b":"automatically"}," forfeit their seat. Any Duelist that does not attend a YCS they registered for and does not reach out to the Tournament Organizer at tcglifetienda@gmail.com beforehand will be blocked from registering online for future YCS/WCQ events."]
+    },
+    {
+      "t": "li",
+      "r": ["Deck Lists must be submitted through the Yu-Gi-Oh! Premier Event Registration Site: https://registration.yugioh-card.com/ website."]
+    },
+    {
+      "t": "li",
+      "r": ["Physical copies of a Deck List will not be accepted onsite for the YCS."]
+    },
+    {
+      "t": "li",
+      "r": ["Even if you are participating in the Genesys Main Event on Friday, this Deck submission deadline still applies."]
+    },
+    {
+      "t": "p",
+      "r": [{"u":"Once a Deck List has been submitted, you can update and resubmit it up until the registration deadline of 10:00 AM CLST on Friday, November 27, 2026."}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the event schedule for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": ["A: The event schedule for the Advanced Main Event is:"]
+    },
+    {
+      "t": "p",
+      "r": ["* Duelists that are competing in both Genesys and Advanced may also check in for Advanced on Thursday, November 26. Advanced Deck Lists must be submitted to check in but can still beupdated and resubmitted up until the Advanced Deck List deadline of 10:00 AM CLST on Friday, November 27, 2026."]
+    },
+    {
+      "t": "p",
+      "r": ["** Alternate On-Site Check-In is only for Duelists who email the event contact to arrange it if they are unable to arrive at the venue by 6:00 PM CLST on Friday November 27, 2026. Duelists MUST email tcglifetienda@gmail.com no later than 10:00 AM CLST on Friday, November 27, 2026 to secure this Alternate Check-In***"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: How do I check in for the Advanced Main Event?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Pre-registered Duelists just need to arrive on-site at the venue between 12:00 PM and 6:00 PM CLST on Friday, November 27, and follow the signs to check in and confirm their seat in the YCS. At this time, Duelists will be asked to pay CLP 20,000 to receive four (4) booster packs once they are confirmed at check in."]
+    },
+    {
+      "t": "p",
+      "r": ["If you are not able to check in on Friday, November 27 prior to 6:00 PM due to travel or other issues, you will need to contact the Tournament Organizer at Tournament Organizer at tcglifetienda@gmail.com no later than 10:00 AM CLST on Friday, November 26 to make alternative check-in arrangements."]
+    },
+    {
+      "t": "p",
+      "r": ["If you are also competing in the Genesys Main Event, you can check in for both during the Genesys Main Event check in on Thursday, November 26. Please see ",{"b":"Genesys Main Event Information"}," for details."]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Advanced Main Event Prizing"}]
+    },
+    {
+      "t": "p",
+      "r": ["*In addition to the other prizes for 1st place, the winner will receive complimentary travel and accommodation for the next WCQ in their territory (North and Latin America only)."]
+    },
+    {
+      "t": "p",
+      "r": ["** Not all Yu-Gi-Oh! Cards can be made into Giant Cards see https://www.yugioh-card.com/en/events/faq/event_prizing/ for details."]
+    },
+    {
+      "t": "p",
+      "r": ["*** The YCS Prize Card Pack will be available starting at the 1st Round of Swiss on Day 2 based on standings announced at the end of Day 1. Duelists may pick up their packs at the main stage from the start of the 1st Round of Swiss on Day 2 up until the start of Top 8."]
+    },
+    {
+      "t": "p",
+      "r": ["The Ultra Rare YCS Prize Card and Super Rare YCS Prize Card will be awarded after Final Swiss Standings are determined, prior to the Top 8 cut. Duelists must still be enrolled in the tournament at the end of the final Round of Swiss and ranked in the Top 16 or Top 32 respectively to receive these Prize Cards and any other Top 16 or Top 32 prizes."]
+    },
+    {
+      "t": "p",
+      "r": ["▶ ",{"b":"Main Event Prizing Images are here"},"!"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Main Event Prizing Images"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Trophy"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Messenger Bag"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"ROG Xbox Ally 16 GB RAM 512GB SSD"}," (color may vary)"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Sleeves"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Metal Dice Set – 1"},{"s":"st "},{"b":"Place"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Metal Dice Set"}," (color will vary)"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"YCS Game Mat"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"Place Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"2"},{"s":"nd "},{"b":"to 4"},{"s":"th "},{"b":"Place Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Top 16 Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Top 32 Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Day 2 Prize Card and Envelope"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"After Advanced Swiss Rounds Giant Card"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"1"},{"s":"st "},{"b":"After Genesys Swiss Rounds Giant Card"}]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Travel"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What is the closest airport for this YCS?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," Nearest Airport(s):"]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: What’s the best way to get to the tournament from the airports?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The venue is approximately 17-21 km (11-13 miles) from the airport, depending on the route. The most direct way to travel from the airport to the venue is by taxi or rideshare service. A taxi typically takes about 15-20 minutes and costs approximately US$24-29 (CLP 22,000-27,000) ."]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"Q: Are there any nearby Hotels?"}]
+    },
+    {
+      "t": "p",
+      "r": [{"b":"A:"}," The following hotels are located within walking distance or a short rideshare trip from the tournament venue:"]
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h",
+      "r": [{"b":"Infectious Diseases"}]
+    },
+    {
+      "t": "p",
+      "r": ["Konami Digital Entertainment, Inc. (KDE-US) strongly encourages, but does not require, all attendees to be fully vaccinated against infectious diseases and to wear a mask. However, KDE-US reserves the right to implement a mandatory mask and/or vaccine requirement for any event on short notice, if deemed necessary. If this event does require attendees to wear a mask, KDE-US will make all available efforts to notify all attendees."]
+    },
+    {
+      "t": "p",
+      "r": ["Any attendee who has or develops symptoms consistent with any infectious disease, regardless of vaccination status or other measures taken, should refrain from attending this event. If symptoms develop during this event, attendees should immediately notify event staff, withdraw from this event and leave the venue. If event staff observe symptoms consistent with any infectious disease, they may direct impacted individuals to leave the venue. This can include the symptomatic individual and those who were in close proximity with such individuals for extended periods of time."]
+    },
+    {
+      "t": "p",
+      "r": ["By attending this event in person, all attendees understand and acknowledge that they risk exposure to and contraction of potentially dangerous diseases and viruses, including the coronavirus disease (COVID-19), severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), and any other diseases or viruses not listed, while traveling to, from, and during the event. By attending this event, all attendees agree to knowingly and freely assume all such risks and enter the venue at their own risk."]
+    },
+    {
+      "t": "p",
+      "r": ["KDE-US makes no representations that it has taken any safety precautions that relate to infectious diseases or exposure, and even if KDE-US did proactively take preventative measures, KDE-US has made no representation that those measures will in any way reduce or prevent the risks associated with exposure. Attendees release KDE-US, its employees and representatives, and all persons involved WITH RESPCLST TO ANY AND ALL ILLNESS, DISABILITY, DEATH, or loss or damage to person or property, to the fullest extent permitted by law. BY ATTENDING IN THIS EVENT, ATTENDEES ARE DEEMED TO HAVE GIVEN A FULL RELEASE OF LIABILITY TO KDE-US TO THE FULLEST EXTENT PERMITTED BY LAW."]
     }
   ]
 }

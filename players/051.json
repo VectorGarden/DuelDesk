@@ -123,7 +123,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-houston","f":"Advanced"},
     {"e":"2026-ycs-houston","f":"Genesys"},
-    {"e":"2026-ycs-orlando","f":"Genesys"},
+    {"e":"2026-ycs-orlando","f":"Genesys","cut":"Top 8","deck":"Assault Mode Snake-Eye Elfnote"},
     {"e":"remote-duel-ycs-february-2025","cut":"Top 32"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"},
     {"e":"ycs-lima-peru-2023","cut":"Top 16"}
