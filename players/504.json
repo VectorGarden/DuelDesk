@@ -595,6 +595,9 @@
   "Trevor Joe Kelty": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
+  "Khoa P.": {
+    "as": "Khoa Van Phan"
+  },
   "Jonathan O.": {
     "as": "Jonathan Gaetano Orlando"
   },
@@ -603,8 +606,5 @@
   },
   "Charles R.": {
     "as": "Charles Thomas Russel Roberts"
-  },
-  "Khoa P.": {
-    "as": "Khoa Van Phan"
   }
 }
