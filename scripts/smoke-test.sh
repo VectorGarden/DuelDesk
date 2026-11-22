@@ -175,11 +175,26 @@ done <<< "$(python3 "$(dirname "$0")/../.github/scripts/check-references.py" --l
 [ "$missing" -eq 0 ] && [ "$checked" -gt 0 ] && echo "  ok    all $checked referenced files serve 200"
 
 # --- 4. the artifact is the site, not the repository -------------------------
+# A file is published when the site serves it, which is a 200. Not when the
+# edge fails to answer: GitHub Pages' CDN gives a 503 the first time it is
+# asked for a path it has no copy of, and a 404 every time after -- the body of
+# that 503 is Pages' own "Page not found". Read as "not a 404, so published",
+# that failed five of ten scheduled deploys in November 2026, each one naming
+# a different handful of files that were never in the artifact. So an answer
+# that is neither 404 nor 200 is asked again, and only a 200 is a leak.
 leaked=0
 for path in /package.json /package-lock.json /README.md /test/harness.mjs \
             /scripts/build-icons.sh /icons/icon.svg /design/icon.svg; do
-  code="$(status "$BASE/${path#/}")"
-  [ "$code" = "404" ] || { fail "$path is published ($code); the artifact should be the site only"; leaked=1; }
+  for i in 1 2 3 4 5; do
+    code="$(status "$BASE/${path#/}")"
+    case "$code" in 404|200) break ;; esac
+    [ "$i" -lt 5 ] && sleep 2
+  done
+  case "$code" in
+    404) ;;
+    200) fail "$path is published; the artifact should be the site only"; leaked=1 ;;
+    *)   fail "$path could not be checked: still $code after 5 tries"; leaked=1 ;;
+  esac
 done
 [ "$leaked" -eq 0 ] && echo "  ok    no source files published"
 
