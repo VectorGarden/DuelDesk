@@ -34,7 +34,7 @@ jobs:
       cancel-in-progress: false
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_2.outputs.page_url || steps.deployment_3.outputs.page_url || steps.deployment_4.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -122,7 +122,36 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+      # Asked up to four times, because the first ask can come too soon.
+      # deploy-pages finds the artifact by listing this run's, and that listing
+      # can lag the upload it follows by several seconds: two of eight deploys
+      # here failed "No artifacts named github-pages were found" with the
+      # artifact uploaded the same second, and it is actions/deploy-pages#451
+      # for everybody who uploads and deploys in one job. Not a sleep -- the
+      # lag has outgrown fixed delays others tried -- and not a re-run of the
+      # job, which uploads a second artifact and then fails on finding two. The
+      # step again, in the same job, against the same artifact. A run whose
+      # first ask works pays nothing.
       - id: deployment
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 10
+      - id: deployment_2
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - if: steps.deployment_2.outcome == 'failure'
+        run: sleep 30
+      - id: deployment_3
+        if: steps.deployment_2.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - if: steps.deployment_3.outcome == 'failure'
+        run: sleep 60
+      # The last ask fails the job as before, and says so in its own name.
+      - id: deployment_4
+        if: steps.deployment_3.outcome == 'failure'
         uses: actions/deploy-pages@v5
 
       # Closes the loop. Everything above proves the code is good and the
@@ -130,4 +159,4 @@ jobs:
       # Deploys were silently broken for two merges once, with CI green
       # throughout, because nothing ever asked production a question.
       - name: Smoke test the deployed site
-        run: ./scripts/smoke-test.sh "${{ steps.deployment.outputs.page_url }}" _site
+        run: ./scripts/smoke-test.sh "${{ steps.deployment.outputs.page_url || steps.deployment_2.outputs.page_url || steps.deployment_3.outputs.page_url || steps.deployment_4.outputs.page_url }}" _site
