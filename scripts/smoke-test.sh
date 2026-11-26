@@ -182,19 +182,31 @@ done <<< "$(python3 "$(dirname "$0")/../.github/scripts/check-references.py" --l
 # that failed five of ten scheduled deploys in November 2026, each one naming
 # a different handful of files that were never in the artifact. So an answer
 # that is neither 404 nor 200 is asked again, and only a 200 is a leak.
+#
+# Asked as long as every other check here waits -- ATTEMPTS rounds, ten seconds
+# apart -- and in rounds, every unsettled path once a round, so a site that is
+# down fails in that time and not in seven times it. Five tries two seconds
+# apart was not enough: on 22 November README.md still answered 503 fifteen
+# seconds after it was first asked.
 leaked=0
-for path in /package.json /package-lock.json /README.md /test/harness.mjs \
-            /scripts/build-icons.sh /icons/icon.svg /design/icon.svg; do
-  for i in 1 2 3 4 5; do
+pending="/package.json /package-lock.json /README.md /test/harness.mjs
+         /scripts/build-icons.sh /icons/icon.svg /design/icon.svg"
+for i in $(seq 1 "$ATTEMPTS"); do
+  still=""
+  for path in $pending; do
     code="$(status "$BASE/${path#/}")"
-    case "$code" in 404|200) break ;; esac
-    [ "$i" -lt 5 ] && sleep 2
+    case "$code" in
+      404) ;;
+      200) fail "$path is published; the artifact should be the site only"; leaked=1 ;;
+      *)   still="$still $path:$code" ;;
+    esac
   done
-  case "$code" in
-    404) ;;
-    200) fail "$path is published; the artifact should be the site only"; leaked=1 ;;
-    *)   fail "$path could not be checked: still $code after 5 tries"; leaked=1 ;;
-  esac
+  [ -z "$still" ] && break
+  pending="$(for p in $still; do echo "${p%%:*}"; done)"
+  [ "$i" -lt "$ATTEMPTS" ] && sleep 10
+done
+for p in $still; do
+  fail "${p%%:*} could not be checked: still ${p##*:} after $ATTEMPTS tries"; leaked=1
 done
 [ "$leaked" -eq 0 ] && echo "  ok    no source files published"
 
