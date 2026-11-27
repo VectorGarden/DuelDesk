@@ -228,6 +228,7 @@
     {"e":"2022-latin-america-remote-duel-ycs"},
     {"e":"2023-ycs-santiago-chile"},
     {"e":"2024-team-ycs-santiago-chile"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -725,11 +726,11 @@
   "Jose Abraham Ochoa Garcia": [
     {"e":"wcq-2016-mexico"}
   ],
-  "Charles C.": {
-    "as": "Charles Hunter Cramer"
-  },
   "Gary S.": {
     "as": "Gary Fidel Sanchez"
+  },
+  "Charles C.": {
+    "as": "Charles Hunter Cramer"
   },
   "Orlando Q.": {
     "as": "Orlando Lawrence Quevedo"

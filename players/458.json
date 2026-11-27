@@ -506,6 +506,7 @@
   ],
   "Carlos David Roa Campillay": [
     {"e":"2023-ycs-santiago-chile"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Manuel Sebastian Meza Varela": [
@@ -653,11 +654,11 @@
   "Kevin Enrrique Rubio": [
     {"e":"2026-ycs-houston","f":"Advanced"}
   ],
-  "Isacc Z.": {
-    "as": "Isacc Aaron Zepeda"
-  },
   "Nicolo M.": {
     "as": "Nicolo Matela Magallanes"
+  },
+  "Isacc Z.": {
+    "as": "Isacc Aaron Zepeda"
   },
   "Mohammad S.": {
     "as": "Mohammad Ishaq Sumaira"

@@ -275,6 +275,7 @@
     {"e":"2024-south-america-wcq"},
     {"e":"2024-team-ycs-santiago-chile"},
     {"e":"2026-south-america-wcq"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022","cut":"Top 64"}
   ],
   "Fabio Ledesma Munoz": [
@@ -559,11 +560,11 @@
   "Tomas Ferreyros Sylvester": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Darren N.": {
-    "as": "Darren Vu Nguyen"
-  },
   "Luciano G.": {
     "as": "Luciano Frank Greco"
+  },
+  "Darren N.": {
+    "as": "Darren Vu Nguyen"
   },
   "Denny K.": {
     "as": "Denny Kim"

@@ -90,6 +90,7 @@
     {"e":"2026-central-america-wcq"},
     {"e":"2026-latin-america-genesys-remote-duel-ycs","f":"Genesys"},
     {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"wcq-2016-mexico"}
   ],
@@ -586,6 +587,9 @@
   "Emmanuel Roberto LaRosa": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
+  "Alicia Cornejo Vergara": [
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
+  ],
   "Roman Enrrique Aguilar Campos": [
     {"e":"central-america-yu-gi-oh-tcg-championship-2022"}
   ],
@@ -598,10 +602,10 @@
   "Aurelio R.": {
     "as": "Aurelio Issler de Azevedo Ribeiro"
   },
-  "Kamarun M.": {
-    "as": "Kamarun Albert Maraccini"
-  },
   "Ulises A.": {
     "as": "Ulises Remigio Aispuro"
+  },
+  "Kamarun M.": {
+    "as": "Kamarun Albert Maraccini"
   }
 }

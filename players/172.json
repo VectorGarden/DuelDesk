@@ -559,7 +559,8 @@
     {"e":"2026-north-america-wcq"}
   ],
   "Bernardo Evaristo Fernandez Penilla": [
-    {"e":"2025-ycs-buenos-aires-argentina"}
+    {"e":"2025-ycs-buenos-aires-argentina"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Luis Humberto Presuel Camelo": [
     {"e":"2025-ycs-merida-mexico"}

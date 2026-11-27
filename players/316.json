@@ -590,6 +590,9 @@
   "Sean Michael Jeffrey Tillman": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
+  "Juan Andres Zarate": [
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
+  ],
   "Josue Ottoniel Mazariegos Soto": [
     {"e":"remote-duel-ycs-january-2026"}
   ],
@@ -602,10 +605,10 @@
   "Diego Raphael Bejarano Becerra": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Alberto L.": {
-    "as": "Alberto October Lopez"
-  },
   "Adam T.": {
     "as": "Adam Tapia"
+  },
+  "Alberto L.": {
+    "as": "Alberto October Lopez"
   }
 }

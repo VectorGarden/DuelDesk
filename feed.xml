@@ -1,14 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Duel Desk — YCS Orlando</title>
+    <title>Duel Desk — YCS Santiago</title>
     <link>https://dueldesk.reizu.dev/</link>
     <atom:link href="https://dueldesk.reizu.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Round-by-round coverage of Yu-Gi-Oh! TCG events, indexed from Konami&#x27;s official event coverage. Every item links to the original post. Not affiliated with or endorsed by Konami.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Nov 2026 17:00:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 20:42:20 +0000</lastBuildDate>
     <generator>Duel Desk</generator>
     <copyright>Coverage is Konami&#x27;s. This feed indexes and links to it and claims no rights in it.</copyright>
+    <item>
+      <title>YCS Santiago: , Chile 2026 – Main Event Information</title>
+      <link>https://yugiohblog.konami.com/2026/event-information/ycs-santiago-chile-2026-main-event-information/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/event-information/ycs-santiago-chile-2026-main-event-information/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 20:42:20 +0000</pubDate>
+      <description>News from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Round 7 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-7-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-7-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 18:56:13 +0000</pubDate>
+      <description>Pairings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Standings after Round 6</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-6/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-6/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 18:53:30 +0000</pubDate>
+      <description>Standings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Round 6 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-6-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-6-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 18:41:18 +0000</pubDate>
+      <description>Pairings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Standings after Round 5</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-5/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-5/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 18:00:45 +0000</pubDate>
+      <description>Standings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Round 5 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-5-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-5-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 17:45:38 +0000</pubDate>
+      <description>Pairings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Standings after Round 4</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-4/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-4/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 17:44:28 +0000</pubDate>
+      <description>Standings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Round 4 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-4-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-4-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 16:26:53 +0000</pubDate>
+      <description>Pairings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Standings after Round 3</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-3/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-3/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 16:20:50 +0000</pubDate>
+      <description>Standings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Round 3 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-3-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-3-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 15:06:44 +0000</pubDate>
+      <description>Pairings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Standings after Round 2</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-standings-after-round-2/</guid>
+      <category>Standings</category>
+      <category domain="kind">standings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 15:04:28 +0000</pubDate>
+      <description>Standings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: , Chile – Genesys: Round 2 Pairings</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-2-pairings/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-santiago-chile-genesys-round-2-pairings/</guid>
+      <category>Pairings</category>
+      <category domain="kind">pairings</category>
+      <category domain="format">Genesys</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 14:20:38 +0000</pubDate>
+      <description>Pairings from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
+    <item>
+      <title>YCS Santiago: Welcome to YCS Santiago, Chile</title>
+      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-santiago-chile-2/</link>
+      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-santiago-chile-2/</guid>
+      <category>News</category>
+      <category domain="kind">news</category>
+      <category domain="event">2026-ycs-santiago-chile-genesys</category>
+      <pubDate>Fri, 27 Nov 2026 14:11:48 +0000</pubDate>
+      <description>News from YCS Santiago, published by Konami. Follow the link for the original post.</description>
+    </item>
     <item>
       <title>YCS Orlando: Event Table of Contents</title>
       <link>https://yugiohblog.konami.com/2026/ycs/ycs-orlando-event-table-of-contents/</link>
@@ -3135,148 +3276,6 @@
       <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
       <pubDate>Fri, 02 Oct 2026 22:56:09 +0000</pubDate>
       <description>Standings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Guayaquil: , Ecuador – Genesys: Round 4 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-4-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-4-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
-      <pubDate>Fri, 02 Oct 2026 22:55:15 +0000</pubDate>
-      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Guayaquil: , Ecuador – Genesys: Standings after Round 3</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-standings-after-round-3/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-standings-after-round-3/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
-      <pubDate>Fri, 02 Oct 2026 22:46:56 +0000</pubDate>
-      <description>Standings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Guayaquil: , Ecuador – Genesys: Round 3 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-3-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-3-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
-      <pubDate>Fri, 02 Oct 2026 22:45:19 +0000</pubDate>
-      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Guayaquil: , Ecuador – Genesys: Standings after Round 2</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-standings-after-round-2/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-standings-after-round-2/</guid>
-      <category>Standings</category>
-      <category domain="kind">standings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
-      <pubDate>Fri, 02 Oct 2026 22:44:24 +0000</pubDate>
-      <description>Standings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Guayaquil: , Ecuador – Genesys: Round 2 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-2-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-2-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
-      <pubDate>Fri, 02 Oct 2026 22:41:23 +0000</pubDate>
-      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Guayaquil: , Ecuador – Genesys: Round 1 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-1-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/ycs-guayaquil-ecuador-genesys-round-1-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
-      <pubDate>Fri, 02 Oct 2026 22:38:13 +0000</pubDate>
-      <description>Pairings from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>YCS Guayaquil: Welcome to YCS Guayaquil, Ecuador</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-guayaquil-ecuador/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/welcome-to-ycs-guayaquil-ecuador/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="event">2026-ycs-guayaquil-ecuador-advance</category>
-      <pubDate>Fri, 02 Oct 2026 21:32:21 +0000</pubDate>
-      <description>News from YCS Guayaquil, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – We have a winner!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-we-have-a-winner/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-we-have-a-winner/</guid>
-      <category>Results</category>
-      <category domain="kind">result</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Mon, 21 Sep 2026 00:06:28 +0000</pubDate>
-      <description>Results from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Final Match</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-final-match/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-final-match/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Mon, 21 Sep 2026 00:00:20 +0000</pubDate>
-      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS – Top 4 Pairings</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-top-4-pairings/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-advanced-remote-duel-ycs-top-4-pairings/</guid>
-      <category>Pairings</category>
-      <category domain="kind">pairings</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sun, 20 Sep 2026 23:14:03 +0000</pubDate>
-      <description>Pairings from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – We have a winner!</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-we-have-a-winner/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-we-have-a-winner/</guid>
-      <category>Results</category>
-      <category domain="kind">result</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sun, 20 Sep 2026 23:09:48 +0000</pubDate>
-      <description>Results from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Genesys Remote Duel YCS – Final Match</title>
-      <link>https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-final-match/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/ycs/latin-america-genesys-remote-duel-ycs-final-match/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Genesys</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sun, 20 Sep 2026 22:02:15 +0000</pubDate>
-      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
-    </item>
-    <item>
-      <title>Latin America Remote Duel YCS September 2026: Latin America Advanced Remote Duel YCS 2026 – Main Event Information</title>
-      <link>https://yugiohblog.konami.com/2026/event-information/latin-america-advanced-remote-duel-ycs-2026-main-event-information/</link>
-      <guid isPermaLink="true">https://yugiohblog.konami.com/2026/event-information/latin-america-advanced-remote-duel-ycs-2026-main-event-information/</guid>
-      <category>News</category>
-      <category domain="kind">news</category>
-      <category domain="format">Advanced</category>
-      <category domain="event">2026-latin-america-genesys-remote-duel-ycs</category>
-      <pubDate>Sun, 20 Sep 2026 21:59:12 +0000</pubDate>
-      <description>News from Latin America Remote Duel YCS September 2026, published by Konami. Follow the link for the original post.</description>
     </item>
   </channel>
 </rss>

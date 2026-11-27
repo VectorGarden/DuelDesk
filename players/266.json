@@ -602,7 +602,8 @@
     {"e":"2025-ycs-buenos-aires-argentina"}
   ],
   "Gabriel Erich Ulbrich": [
-    {"e":"2025-ycs-sao-paulo-brazil"}
+    {"e":"2025-ycs-sao-paulo-brazil"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Gustavo De Castro": [
     {"e":"2025-ycs-sao-paulo-brazil"}
@@ -630,11 +631,11 @@
   "Carlos Alberto Lopez Juanchaya": [
     {"e":"ycs-lima-peru-2023"}
   ],
-  "Angelo S.": {
-    "as": "Angelo Pantig Sibal"
-  },
   "Yichong S.": {
     "as": "Yichong Shen"
+  },
+  "Angelo S.": {
+    "as": "Angelo Pantig Sibal"
   },
   "Nathan C.": {
     "as": "Nathan Tyler Christensen"

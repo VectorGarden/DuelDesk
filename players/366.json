@@ -349,7 +349,8 @@
     {"e":"201712-buenos-aires-argentina"},
     {"e":"2025-south-america-wcq","cut":"Top 32"},
     {"e":"2025-ycs-buenos-aires-argentina","won":true,"cut":"Final"},
-    {"e":"2025-ycs-lima-peru"}
+    {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Garrett Michael Abboud": [
     {"e":"2018-09-200th-ycs-columbus-oh"}
@@ -734,19 +735,19 @@
   "Julio G.": {
     "as": "Julio Gomes"
   },
-  "Leo F.": {
-    "as": "Leo Feria"
-  },
   "Demario J.": {
     "as": "Demario Montae Jester"
+  },
+  "Leo F.": {
+    "as": "Leo Feria"
   },
   "Aidan C.": {
     "as": "Aidan Alexander Clarke"
   },
-  "Brady S.": {
-    "as": "Brady James Stockdale"
-  },
   "Rico E.": {
     "as": "Rico Carlos Eichelberger"
+  },
+  "Brady S.": {
+    "as": "Brady James Stockdale"
   }
 }

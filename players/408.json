@@ -428,7 +428,8 @@
   "Joao Guilherme Ribeiro Silva": [
     {"e":"2022-ycs-rio-de-janeiro"},
     {"e":"2023-250th-ycs-in-bogota-colombia"},
-    {"e":"2026-02-300th-na","f":"Advanced"}
+    {"e":"2026-02-300th-na","f":"Advanced"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Marcelo Alves da Silva": [
     {"e":"2022-ycs-rio-de-janeiro"},
@@ -653,10 +654,10 @@
   "Brandon Javier Villanueva": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
-  "Niravkumar T.": {
-    "as": "Niravkumar Dharmesn Tandel"
-  },
   "Alejandro E.": {
     "as": "Alejandro Valdez Estrada"
+  },
+  "Niravkumar T.": {
+    "as": "Niravkumar Dharmesn Tandel"
   }
 }

@@ -537,7 +537,8 @@
     {"e":"2025-team-ycs-san-salvador-el-salvador"}
   ],
   "Bruno Pasutti": [
-    {"e":"2025-ycs-buenos-aires-argentina"}
+    {"e":"2025-ycs-buenos-aires-argentina"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Jo?o Victor Araujo Ferreira": [
     {"e":"2025-ycs-sao-paulo-brazil"}
@@ -573,11 +574,11 @@
   "DongWon Ha": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Tanner T.": {
-    "as": "Tanner Riley Louie Thompson"
-  },
   "Austin A.": {
     "as": "Austin Lawrence Anthony"
+  },
+  "Tanner T.": {
+    "as": "Tanner Riley Louie Thompson"
   },
   "Daniel J.": {
     "as": "Daniel Serrano Jr."

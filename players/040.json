@@ -404,6 +404,7 @@
   ],
   "Diego Alejandro Ovando Berrios": [
     {"e":"2022-latin-america-remote-duel-ycs"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Jose Antonio Godoy Reyes": [
@@ -602,14 +603,14 @@
   "Qamar S.": {
     "as": "Qamar Abbas Stationwala"
   },
-  "Kamran A.": {
-    "as": "Kamran Aghaseyedali"
-  },
   "Javier R.": {
     "as": "Javier Ruiz"
   },
   "Kody M.": {
     "as": "Kody Masataka Manabe"
+  },
+  "Kamran A.": {
+    "as": "Kamran Aghaseyedali"
   },
   "Emmanuel H.": {
     "as": "Emmanuel Eugene Hayes"

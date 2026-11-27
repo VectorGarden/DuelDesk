@@ -672,6 +672,12 @@
   "Cristopher Brandom Villa Manzaneda": [
     {"e":"2026-team-ycs-la-paz-bolivia"}
   ],
+  "Nicolas Rodolfo Fouere Corral": [
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
+  ],
+  "Bruno Ignacio Velazquez Romero": [
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
+  ],
   "Julio Cesar Rodriguez": [
     {"e":"na-ygoc-2022"}
   ],
@@ -681,11 +687,11 @@
   "Tim Gräfe": [
     {"e":"yu-gi-oh-tcg-world-championship-2026"}
   ],
-  "Quentin J.": {
-    "as": "Quentin Lemar Jenkins"
-  },
   "Brendan O.": {
     "as": "Brendan Russell Outlaw"
+  },
+  "Quentin J.": {
+    "as": "Quentin Lemar Jenkins"
   },
   "Oliver N.": {
     "as": "Oliver Nghiem Nguyen"

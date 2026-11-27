@@ -525,7 +525,8 @@
     {"e":"2023-ycs-santiago-chile"}
   ],
   "Victor Fabian Salinas Badrie": [
-    {"e":"2023-ycs-santiago-chile"}
+    {"e":"2023-ycs-santiago-chile"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Luna Cameron Glover": [
     {"e":"2024-02-team-ycs-las-vegas-nv"}
@@ -655,10 +656,10 @@
   "Kyler S.": {
     "as": "Kyler J. Spiwak"
   },
-  "Dawson S.": {
-    "as": "Dawson James Schawang"
-  },
   "Julio V.": {
     "as": "Julio Cesar Valente"
+  },
+  "Dawson S.": {
+    "as": "Dawson James Schawang"
   }
 }

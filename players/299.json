@@ -301,6 +301,7 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia","cut":"Top 8"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"ycs-lima-peru-2023"}
   ],
   "Matthew Taylor Kovac": [
@@ -663,10 +664,10 @@
   "Jair G.": {
     "as": "Jair Alejandro Garcia"
   },
-  "Asad F.": {
-    "as": "Asad Farooq"
-  },
   "Trevor R.": {
     "as": "Trevor James Reid"
+  },
+  "Asad F.": {
+    "as": "Asad Farooq"
   }
 }

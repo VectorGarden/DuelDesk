@@ -353,7 +353,8 @@
     {"e":"2023-250th-ycs-in-bogota-colombia"}
   ],
   "Camilo Adrian Toro Contreras": [
-    {"e":"2019-south-america-wcq"}
+    {"e":"2019-south-america-wcq"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Kenneth A. Johnson": [
     {"e":"2019-ycs-chicago"}
@@ -542,10 +543,10 @@
   "Zachary B.": {
     "as": "Zachary Fox Blauvelt"
   },
-  "Corin L.": {
-    "as": "Corin James Lozano"
-  },
   "Ivin C.": {
     "as": "Ivin Ryan Dixon Collins"
+  },
+  "Corin L.": {
+    "as": "Corin James Lozano"
   }
 }

@@ -563,19 +563,22 @@
   "Njerick Daaman Gomez": [
     {"e":"2026-ycs-orlando","f":"Advanced"}
   ],
+  "Benjamin Mateo Figueroa Pereira": [
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
+  ],
   "Jonathan Rosario": {
     "as": "Jonathan D. Rosario"
   },
   "Artur S.": {
     "as": "Artur Silva Santos"
   },
-  "Wenbo G.": {
-    "as": "Wenbo Gao"
-  },
   "Miguel G.": {
     "as": "Miguel Angel Gutierrez"
   },
   "Braedon H.": {
     "as": "Braedon Dale Hooker"
+  },
+  "Wenbo G.": {
+    "as": "Wenbo Gao"
   }
 }

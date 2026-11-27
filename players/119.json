@@ -451,7 +451,8 @@
     {"e":"2025-south-america-wcq"}
   ],
   "Mathaus Erich Ramos": [
-    {"e":"2025-ycs-lima-peru"}
+    {"e":"2025-ycs-lima-peru"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Alvaro Astete": [
     {"e":"2025-ycs-lima-peru"}
@@ -490,10 +491,10 @@
   "Ryan S.": {
     "as": "Ryan Edward Soesbe"
   },
-  "Andrew T.": {
-    "as": "Andrew Tien Thien Tran"
-  },
   "Pierre B.": {
     "as": "Pierre Burgals"
+  },
+  "Andrew T.": {
+    "as": "Andrew Tien Thien Tran"
   }
 }

@@ -40,6 +40,7 @@
     {"e":"2018-ycs-santiago-chile"},
     {"e":"2019-south-america-wcq"},
     {"e":"2023-ycs-santiago-chile"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"}
   ],
   "Davion Jabree Haynes": [
@@ -623,10 +624,10 @@
   "Blake T.": {
     "as": "Blake Austin Taylor"
   },
-  "William E.": {
-    "as": "William Joseph Melgoza Espinosa"
-  },
   "Artan L.": {
     "as": "Artan Lajqi"
+  },
+  "William E.": {
+    "as": "William Joseph Melgoza Espinosa"
   }
 }

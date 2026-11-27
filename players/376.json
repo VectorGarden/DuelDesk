@@ -294,6 +294,7 @@
     {"e":"2026-south-america-wcq"},
     {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-january-2026"}
   ],
   "Andre Vincenzo Castro Bonelli": [
@@ -559,16 +560,16 @@
   "Juan Pablo Vera": [
     {"e":"wcs-2010","deck":"Frog OTK"}
   ],
-  "Ethan M.": {
-    "as": "Ethan Douglass Mammen"
+  "Khoakevin V.": {
+    "as": "Khoakevin Quoc Vo"
   },
   "Riley W.": {
     "as": "Riley Michael Wilhelm"
   },
+  "Ethan M.": {
+    "as": "Ethan Douglass Mammen"
+  },
   "Thomas P.": {
     "as": "Thomas Dang Pham"
-  },
-  "Khoakevin V.": {
-    "as": "Khoakevin Quoc Vo"
   }
 }

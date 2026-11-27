@@ -578,7 +578,8 @@
   ],
   "Carlos Matias Cavallo": [
     {"e":"2024-team-ycs-santiago-chile"},
-    {"e":"2025-ycs-buenos-aires-argentina"}
+    {"e":"2025-ycs-buenos-aires-argentina"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"}
   ],
   "Jaime Vladimir Garcia Galvez": [
     {"e":"2024-ycs-guadalajara-mexico"}
@@ -667,13 +668,13 @@
   "Garbiel Alejandro Nava Mateos": [
     {"e":"2026-central-america-wcq"}
   ],
+  "Sammy J.": {
+    "as": "Sammy James Johnson Jr."
+  },
   "Ira L.": {
     "as": "Ira Eliot Lifland"
   },
   "David Q.": {
     "as": "David Manuel Quintero"
-  },
-  "Sammy J.": {
-    "as": "Sammy James Johnson Jr."
   }
 }

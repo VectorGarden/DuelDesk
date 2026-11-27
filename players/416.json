@@ -331,6 +331,7 @@
     {"e":"2026-ycs-guatemala-city-guatemala"},
     {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"},
     {"e":"2026-ycs-orlando","f":"Genesys"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"remote-duel-ycs-february-2025"},
     {"e":"south-america-yu-gi-oh-tcg-championship-2022"},
     {"e":"ycs-lima-peru-2023"}
@@ -611,10 +612,10 @@
   "James Ricotta": {
     "as": "James P. Ricotta"
   },
-  "Colby N.": {
-    "as": "Colby Man Tsun Ng"
-  },
   "Karan S.": {
     "as": "Karan Sharma"
+  },
+  "Colby N.": {
+    "as": "Colby Man Tsun Ng"
   }
 }

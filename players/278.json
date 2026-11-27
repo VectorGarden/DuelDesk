@@ -616,6 +616,7 @@
     {"e":"2026-south-america-genesys-championship","f":"Genesys"},
     {"e":"2026-south-america-wcq"},
     {"e":"2026-team-ycs-la-paz-bolivia"},
+    {"e":"2026-ycs-santiago-chile-genesys","f":"Genesys"},
     {"e":"yu-gi-oh-world-championship-2016","deck":"Peru"}
   ],
   "Benjamin Ignacio Mancilla Salinas": [
@@ -625,13 +626,13 @@
     {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Advanced"},
     {"e":"2026-ycs-guayaquil-ecuador-advance","f":"Genesys"}
   ],
-  "Armaan K.": {
-    "as": "Armaan Singh Kohli"
+  "Johnathan M.": {
+    "as": "Johnathan Michael Murray McDonald"
   },
   "Charlie A.": {
     "as": "Charlie Willam Arias"
   },
-  "Johnathan M.": {
-    "as": "Johnathan Michael Murray McDonald"
+  "Armaan K.": {
+    "as": "Armaan Singh Kohli"
   }
 }
